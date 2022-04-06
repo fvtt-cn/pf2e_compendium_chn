@@ -1,0 +1,24 @@
+name: Check Chinese Placeholder
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'en-US/*.json'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check Chinese Placeholder
+        run: |
+          node ./.github/workflows/update.js
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v7.2.1
+        with:
+          add: "zh-CN/*"
+          branch: main
