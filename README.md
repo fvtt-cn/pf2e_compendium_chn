@@ -7,14 +7,23 @@
 有想要优先翻译的资源可以在discussions内提出
 
 目前进度
+
 族裔：精灵，人类，狐妖
+
 职业：发明家，魔战士，吟游诗人，神卫，炼金术士，法师
+
 动作：crb(90%)
+
 状态：完成
+
 专长：CRB,APG
+
 道具，武器，防具：CRB
+
 法术：CRB,APG
+
 仪式：CRB，APG，B1
+
 造物：CRB
 
 > PF2e 系统中文化项目地址： https://github.com/fvtt-cn/pf2_cn
