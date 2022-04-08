@@ -15,8 +15,8 @@
 - [x] 状态：完成
 - [ ] 专长：CRB,APG
 - [ ] 道具，武器，防具：CRB
-- [ ] 法术：CRB,APG
-- [ ] 仪式：CRB，APG，B1
+- [ ] 法术：CRB,APG,SoM
+- [ ] 仪式：CRB,APG,B1,SoM
 - [ ] 造物：CRB
 
 > PF2e 系统中文化项目地址： https://github.com/fvtt-cn/pf2_cn
