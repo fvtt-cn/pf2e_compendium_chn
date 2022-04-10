@@ -1,28 +1,19 @@
-# Foundry VTT PF2E 合集包中文化
-清单文件地址： https://github.com/fvtt-cn/pf2e_compendium_chn/releases/latest/download/module.json
+# Foundry VTT PF2e 合集包中文化
+![downloads](https://img.shields.io/github/downloads/fvtt-cn/pf2e_compendium_chn/total)
 
+本模组为 FVTT 的 Pathfinder 2e 系统合集包提供了中文翻译。
 
-正在逐步翻译PF2E整合包的内容。翻译文本来自纯美苹果园（谢谢果园的各位翻译大佬们！）
+## 安装
+- [x] 模组管理器中，粘贴清单文件地址： [https://raw.githubusercontent.com/fvtt-cn/pf2e_compendium_chn/main/module.json](https://raw.githubusercontent.com/fvtt-cn/pf2e_compendium_chn/main/module.json)
+- [x] 模组管理器中，搜索 `Translation: 中文 [PF2e（合集包）]`
+- [x] 下载 https://github.com/fvtt-cn/pf2e_compendium_chn/releases/latest/download/pf2e_compendium_chn.zip 并解压至 `modules/pf2e_compendium_chn` 文件夹下
 
-欢迎协作
+## 加入我们
+- QQ 频道： https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=3cheK&appChannel=share&businessType=9&from=246610&biz=ka
+- Discord 服务器： https://discord.gg/7UrkEg634m
 
-有想要优先翻译的资源可以在Issues内提出
-
-### 目前进度
-- [ ] 族裔：精灵，人类，狐妖
-- [ ] 职业：发明家，魔战士，吟游诗人，神卫，炼金术士，法师
-- [ ] 动作：crb(90%)
-- [x] 状态：完成
-- [ ] 专长：CRB,APG
-- [ ] 道具，武器，防具：CRB
-- [ ] 法术：CRB,APG,SoM
-- [ ] 仪式：CRB,APG,B1,SoM
-- [ ] 造物：CRB
-
-> PF2e 系统中文化项目地址： https://github.com/fvtt-cn/pf2_cn
-
-## 如何参与到翻译中
-本项目使用 [Weblate](https://weblate.dickytwister.org/engage/pf2_cn/) 进行翻译工作，使用 Weblate 无需拥有任何 Git 使用知识，只需在界面上进行中英对照翻译即可！
+### 如何参与到翻译中
+本项目使用 [Weblate](https://hosted.weblate.org/) 进行翻译工作，使用 Weblate 无需拥有任何 Git 使用知识，只需在界面上进行中英对照翻译即可！
 
 <a href="https://weblate.dickytwister.org/engage/pf2_cn/">
 <img src="https://weblate.dickytwister.org/widgets/pf2_cn/-/open-graph.png" alt="翻译状态" />
