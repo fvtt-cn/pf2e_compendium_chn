@@ -119,7 +119,7 @@
         },
         "Adhyabhau": {
             "name": "Adhyabhau",
-            "description": "<p>You descend from the rare psychic vampires known as vetalaranas. Your forebear gained sustenance from the mental and emotional energy of living creatures, which manifests in you as powerful resistance to such effects. You gain a +1 circumstance bonus to Will saves against effects with the emotion trait, and when you roll a success on a saving throw against such an effect, you get a critical success instead.</p>"
+            "description": "<p>You descend from the rare psychic vampires known as vetalaranas. Your forebear gained sustenance from the mental and emotional energy of living creatures, which manifests in you as powerful resistance to such effects.</p>\n<p>You gain a +1 circumstance bonus to Will saves against effects with the emotion trait, and when you roll a success on a saving throw against such an effect, you get a critical success instead.</p>"
         },
         "Adopted Ancestry": {
             "name": "异族情谊 Adopted Ancestry",
@@ -707,7 +707,7 @@
         },
         "Arcane Propulsion": {
             "name": "Arcane Propulsion",
-            "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You redirect energy from your core to ports on your back or feet, allowing you to fly for a short time. You can maintain this redirected energy for 5 minutes. You gain a fly Speed equal to your Speed while redirecting the energy.</p>\n<p><strong>Enhancement</strong> You can maintain your flight for longer. You can redirect your energy at all times, allowing you to fly whenever you want, rather than just once per day for 5 minutes.</p>"
+            "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You redirect energy from your core to ports on your back or feet, allowing you to fly for a short time. You can maintain this redirected energy for 5 minutes. You gain a fly Speed equal to your Speed while redirecting the energy.</p>\n<p><strong>Enhancement</strong> You can maintain your flight for longer. You can redirect your energy at all times, allowing you to fly whenever you want, rather than just once per day for 5 minutes.</p>\n<p>@Compendium[pf2e.feat-effects.EVRcdGt4awWPgXla]{Effect: Arcane Propulsion}</p>"
         },
         "Arcane Safeguards": {
             "name": "Arcane Safeguards",
@@ -959,7 +959,7 @@
         },
         "Augment Senses": {
             "name": "Augment Senses",
-            "description": "<p>You open vestigial eyes, unfurl tympanic flaps of skin, or otherwise enhance your senses. Until the start of your next turn, you gain the following benefits: you can't be flanked; when you Seek for creatures, you can scan a 60-foot cone or a 30-foot burst instead of the normal area; and when you Seek for hidden objects, you can search a 15-foot square instead of the normal area.</p>"
+            "description": "<p>You open vestigial eyes, unfurl tympanic flaps of skin, or otherwise enhance your senses. Until the start of your next turn, you gain the following benefits: you can't be flanked; when you Seek for creatures, you can scan a @Template[type:cone|distance:60] or a @Template[type:burst|distance:30] instead of the normal area; and when you Seek for hidden objects, you can search a 15-foot square instead of the normal area.</p>\n<p>@Compendium[pf2e.feat-effects.JwDCoBIwyhOFnDGZ]{Effect: Augment Senses}</p>"
         },
         "Aura Of Despair": {
             "name": "绝望灵气 Aura Of Despair",
@@ -1607,7 +1607,7 @@
         },
         "Boulder Roll": {
             "name": "Boulder Roll",
-            "description": "<p>Your dwarven build allows you to push foes around, just like a mighty boulder tumbles through a subterranean cavern. Take a @Compendium[pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Step} into the square of a foe that is your size or smaller, and the foe must move into the empty space directly behind it. The foe must move even if doing so places it in harm's way. The foe can attempt a Fortitude saving throw against your Athletics DC to block your Step. If the foe attempts this saving throw, unless it critically succeeds, it takes bludgeoning damage equal to your level plus your Strength modifier. If the foe can't move into an empty space (if it is surrounded by solid objects or other creatures, for example), your Boulder Roll has no effect.</p>"
+            "description": "<p>Your dwarven build allows you to push foes around, just like a mighty boulder tumbles through a subterranean cavern.</p>\n<p>Take a @Compendium[pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Step} into the square of a foe that is your size or smaller, and the foe must move into the empty space directly behind it. The foe must move even if doing so places it in harm's way. The foe can attempt a @Check[type:fortitude|dc:resolve(10+@actor.data.data.skills.ath.value)]{Fortitude saving throw} against your Athletics DC to block your Step.</p>\n<p>If the foe attempts this saving throw, unless it critically succeeds, it takes bludgeoning damage equal to [[/r (@actor.level)+(@actor.abilities.str.mod)]]{your level plus your Strength modifier}. If the foe can't move into an empty space (if it is surrounded by solid objects or other creatures, for example), your Boulder Roll has no effect.</p>"
         },
         "Bounce Back": {
             "name": "强健复苏 Bounce Back",
@@ -4191,7 +4191,7 @@
         },
         "Eternal Boost": {
             "name": "永恒激励 Eternal Boost",
-            "description": "<p>你与幻灵的联结十分坚韧，你总是能够激励你的幻灵。你永远@Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{加速}；你只能使用加速的额外动作施展<em>激励幻灵 boost eidolon<em>或<em>援护幻灵 reinforce eidolon</em>。</p>\n<p>在探索模式中，即使你在使用另一个探索行动，你也可以声明你仍然在持续性地施展<em>激励幻灵 boost eidolon<em>或<em>援护幻灵 reinforce eidolon</em>。如果你这么做，即使在战斗遭遇中你的第一回合之前，该戏法也一直生效，如同你在之前一个回合中施展了该戏法一样。</p>"
+            "description": "<p>你与幻灵的联结十分坚韧，你总是能够激励你的幻灵。你永远@Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{加速}；你只能使用加速的额外动作施展<em>激励幻灵 boost eidolon</em>或<em>援护幻灵 reinforce eidolon</em>。</p>\n<p>在探索模式中，即使你在使用另一个探索行动，你也可以声明你仍然在持续性地施展<em>激励幻灵 boost eidolon</em>或<em>援护幻灵 reinforce eidolon</em>。如果你这么做，即使在战斗遭遇中你的第一回合之前，该戏法也一直生效，如同你在之前一个回合中施展了该戏法一样。</p>"
         },
         "Eternal Composition": {
             "name": "永恒组曲 Eternal Composition",
@@ -7399,7 +7399,7 @@
         },
         "Magic Arrow": {
             "name": "灌魔箭矢 Magic Arrow",
-            "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p>你将魔力灌入到弹药中。当你选取该专长时，从<em>核心手册</em>或G&G中选择3种常见魔法弹药（common magical ammunition），这些弹药的等级为4级或更低。你的GM可以允许你选择其他类型的魔法弹药，比如罕见弹药或者其他书中的弹药。</p>\n<p>当你使用灌魔箭矢时，你将非魔法箭矢（arrow）或弩失（bolt）变化为你所选择的1类弹药。你必须在你的回合结束之前发射这些弹药，否则魔法便会消散。若弹药具有启动（Activate）一栏，你仍旧需要花费相应的动作在射出弹药前启动它。</p>\n<p>当你使用灌魔箭矢时，能够选择将1类魔法弹药应用至通常来说不适用、且你正在使用的弹药类型上——举例说明，你可以把@Compendium[pf2e.equipment-srd.n5L7HE9H8jn8ftQy]{攀爬矢 Climbing Bolt}应用到箭矢（arrow）上，即便该类魔法弹药通常来说只出现在弩失（bolts）也可以。</p>\n<p><strong>特殊</strong> 你能够多次选取该专长。每当你选取该专长时，要按照上述限制选择3种额外的弹药类型。</p>"
+            "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p>你将魔力灌入到弹药中。当你选取该专长时，从<em>核心手册</em>或G&G中选择3种常见魔法弹药（common magical ammunition），这些弹药的等级为4级或更低。你的GM可以允许你选择其他类型的魔法弹药，比如罕见弹药或者其他书中的弹药。</p>\n<p>当你使用灌魔箭矢时，你将非魔法箭矢（arrow）或弩失（bolt）变化为你所选择的1类弹药。你必须在你的回合结束之前发射这些弹药，否则魔法便会消散。若弹药具有启动（Activate）一栏，你仍旧需要花费相应的动作在射出弹药前启动它。</p>\n<p>当你使用灌魔箭矢时，能够选择将1类魔法弹药应用至通常来说不适用、且你正在使用的弹药类型上——举例说明，你可以把@Compendium[pf2e.equipment-srd.n5L7HE9H8jn8ftQy]{攀爬矢 Climbing Bolt}应用到箭矢（arrow）上，即便该类魔法弹药通常来说只出现在弩失（bolts）也可以。</p>\n<p><strong>特殊<</strong> 你能够多次选取该专长。每当你选取该专长时，要按照上述限制选择3种额外的弹药类型。</p>"
         },
         "Magic Finder": {
             "name": "Magic Finder",
