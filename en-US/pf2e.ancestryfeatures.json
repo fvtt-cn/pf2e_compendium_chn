@@ -1,6 +1,10 @@
 {
 	"label": "Ancestry Features",
 	"entries": {
+		"Advanced Undead Benefits": {
+			"name": "Advanced Undead Benefits",
+			"description": "<p><strong>Darkvision:</strong> You gain darkvision if you don't already have it.</p>\n<p><strong>Greater Disease and Poison Protection:</strong> Your bonus against disease and poison increases to +2. You gain poison resistance equal to half your level.</p>\n<p><strong>Paralysis and Sleep Protection:</strong> You gain a +1 circumstance bonus to saving throws (or any other defense) against effects that would make you @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} or have the sleep trait.</p>"
+		},
 		"Aquatic Adaptation": {
 			"name": "Aquatic Adaptation",
 			"description": "<p>Your reptilian biology allows you to hold your breath for a long time. You gain the @Compendium[pf2e.feats-srd.aJUXbe9HJVvv0Mxa]{Breath Control} general feat as a bonus feat.</p>"
@@ -8,6 +12,10 @@
 		"Automaton Core": {
 			"name": "Automaton Core",
 			"description": "<p>Your body contains an automaton core infused with planar quintessence that grants you power to perform various tasks and houses your soul and life energy. This life energy flows through you much like the blood of humanoids. As a result, you are a living creature. You don't have the typical construct immunities, can be affected by effects that target a living creature, and can recover Hit Points normally via positive energy. Additionally, you are not destroyed when reduced to 0 Hit Points. Instead, your life energy attempts to keep you active even in dire straits; you are knocked out and begin dying when reduced to 0 Hit Points.</p>"
+		},
+		"Basic Undead Benefits": {
+			"name": "Basic Undead Benefits",
+			"description": "<p><strong>Necril:</strong> You know the Necril language.</p>\n<p><strong>Undead Vision:</strong> You gain low-light vision, or you gain darkvision if your ancestry already has low-light vision.</p>\n<p><strong>Negative Healing:</strong> You are damaged by positive damage and aren't healed by positive healing effects. You don't take negative damage and are healed by negative effects that heal undead.</p>\n<p><strong>Negative Survival:</strong> Unlike normal undead, you aren't destroyed when reduced to 0 Hit Points. Instead, powerful negative energy attempts to keep you from being destroyed even in dire straits. You are knocked out and begin dying when reduced to 0 Hit Points. Because you're undead, many methods of bringing someone back from dying, such as stabilize, don't benefit you. When you would die, you're destroyed rather than dead, just like other undead.</p>\n<p><strong>Immunity to Death Effects:</strong> You're immune to death effects. This keeps you from being automatically killed or from having your dying value automatically increase, but it doesn't make you immune to other parts of the spell or effect. For example, you can still take mental damage and become frightened by a phantasmal killer, you just don't instantly die from it.</p>\n<p><strong>Disease and Poison Protection:</strong> You gain a +1 circumstance bonus to saving throws (or any other defense) against disease and poison.</p>\n<p><strong>Undead Hunger:</strong> While you don't eat or drink the same food as humanoids do, you usually have thirsts and hungers related to your undead state, such as a ghoul's hunger for humanoid flesh, a zombie's craving for brains, and a vampire's desire for blood. Additionally, while you don't sleep, you enter a state of quiescence for at least 4 hours a day to recuperate, which lets your undead flesh reknit and recover naturally. Many undead choose to rest when the sun is at its highest.</p>"
 		},
 		"Bite": {
 			"name": "Bite",
@@ -97,13 +105,21 @@
 			"name": "Plant Nourishment",
 			"description": "<p>You gain nourishment in the same way that the plants or fungi that match your body type normally do, through some combination of photosynthesis, absorbing minerals with your roots, or scavenging decaying matter. You typically do not need to pay for food. If you normally rely on photosynthesis and go without sunlight for 1 week, you begin to starve. You can derive nourishment from specially formulated bottles of sunlight instead of natural sunlight, but these bottles cost 10 times as much as standard rations (or 40 sp).</p>"
 		},
+		"Revulsion": {
+			"name": "Revulsion",
+			"description": "<p>You can't voluntarily come within 10 feet of brandished garlic or a religious symbol of a non-evil deity. A creature must Interact to brandish garlic or a religious symbol for 1 round (similar to Raising a Shield). If you involuntarily come within 10 feet of an object of your revulsion, you gain the @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the subject of your revulsion until you end an action beyond 10 feet of it. After 1 round of being exposed to the subject of your revulsion, you can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, you overcome your revulsions for [[/r 1d6 #Overcome Revulsion Duration]]{1d6 rounds}, or 1 hour on a critical success.</p>"
+		},
 		"Sharp Beak": {
 			"name": "Sharp Beak",
 			"description": "<p>With your Sharp Beak, you are never without a weapon. You have a beak unarmed attack that deals [[/r {1d6}[piercing]]]{1d6 piercing damage}. Your beak is in the brawling weapon group and has the finesse and unarmed traits.</p>"
 		},
+		"Sunlight": {
+			"name": "Sunlight",
+			"description": "<p>If exposed to direct sunlight, you immediately become @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. The slowed value increases by 1 each time you end your turn in sunlight. If you lose all your actions in this way, you are destroyed. Due to your supernatural aversion to light, you don't cast shadows or show a reflection in mirrors.</p>"
+		},
 		"Sunlight Healing": {
 			"name": "Sunlight Healing",
-			"description": "<p>A conrasu can enter a meditative, healing state as a 10-minute activity when exposed to direct sunlight, in which case they recover 1d8 Hit Points. At 3rd level, and every 2 levels thereafter, this healing increases by 1d8. Once a conrasu has recovered Hit Points in this way, they are temporarily immune to further uses of Sunlight Healing for 1 day.</p>"
+			"description": "<p>A conrasu can enter a meditative, healing state as a 10-minute activity when exposed to direct sunlight, in which case they recover 1d8 Hit Points. At 3rd level, and every 2 levels thereafter, this healing increases by 1d8. [[/r ceil(@actor.level/2))d8[healing]]]{Levelled healing}</p>\n<p>Once a conrasu has recovered Hit Points in this way, they are temporarily immune to further uses of Sunlight Healing for 1 day.</p>"
 		},
 		"Swim": {
 			"name": "Swim",
