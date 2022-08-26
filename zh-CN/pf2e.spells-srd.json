@@ -3862,7 +3862,7 @@
             "description": "<p>你令该区域扭曲，溶化，断层，缠绕，总体产生一种怪异的空间几何。法术区域的立方体之间不能相邻。当你施放该法术时处于某个立方体中的生物，以及在法术生效时进入区域之一的生物必须尝试一次意志豁免，这具有下列效果。与幻想交互的生物也会如常获得一次意志豁免来不相信幻觉。</p>\n<hr />\n<p><strong>成功</strong> 该生物不相信该幻觉。</p>\n<p><strong>失败</strong> 所有在立方体中的地形对该生物均为困难地形，如果该生物在飞行也包括空中，如果该生物在攀爬也包括墙壁，以此类推。当该生物将离开某个立方体是，它会从一个由GM决定的随机立方体出来。这是一个传送效果。它可以选择从这个立方体的任一边缘离开。当选择随机立方体时，GM应当排除任何和生物所处地形不对应的立方体；例如，如果生物沿着地面离开，GM应当排除任何不含地面出口的立方体。</p>"
         },
         "Stumbling Curse": {
-            "name": "Stumbling Curse",
+            "name": "蹒跚诅咒 Stumbling Curse",
             "description": "<p>With a twist of a finger, you send a creature careening on a haphazard trajectory. The target must attempt a Reflex save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes a –2 status penalty to Athletics and Acrobatics checks.</p>\n<p><strong>Failure</strong> As success, and each time the target Strides, it uses the first 5 feet of movement of the Stride to move 5 feet in a random direction (this is forced movement). This has no effect on a creature with only 5 feet of movement.</p>\n<p><strong>Critical Failure</strong> As failure, except you control the direction of the target's first 5 feet of movement of the Stride.</p>"
         },
         "Subconscious Suggestion": {
@@ -4720,6 +4720,18 @@
         "Sign of Conviction": {
             "name": "判决圣印 Sign of Conviction",
             "description": "<p>你将你神祇的圣徽召唤至你所在空间上方的空中，运用信仰的力量来打击你的敌人。该圣徽不会移动，由纯粹魔法力量构成，无法被伤害。只要你维持判决圣印，你的AC和豁免骰将获得+1状态加值，并且被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。任何迫使你离开当前空间的效果（例如@Compendium[pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}动作）其DC等于你的法术DC或通常DC，二者以更高的为准。如果你不再被禁足或者你被移出空间，<em>判决圣印</em>立即结束。</p>\n<p>当你施法并且每次维持该法术时，圣徽会对100尺内的1个目标射出一道能量。进行一次法术攻击骰，如果成功命中则造成2d10伤害（伤害类型详见后文），如果重击则造成双倍伤害。你在同一轮中能多次维持法术，射出多道能量。</p>\n<p>如果你信仰善良神祇，该法术获得善良和光亮特征，造成由你选择的善良或火焰伤害，并且在@Template[type:burst|distance:20]范围内投下明亮光照。如果你信仰邪恶神祇，法术获得邪恶和黑暗特征，造成你所选择的邪恶或寒冷伤害，并且将@Template[type:burst|distance:20]范围内的明亮光照减弱为昏暗光照。如果你信仰中立神祇，法术获得力场特征，并且造成力场伤害。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 伤害增加1d10</p>"
+        },
+        "Boneshaker": {
+            "name": "颤骨 Boneshaker",
+            "description": "<p>你伸出一只手，从远处握住某个生物的骨骼，伤害他们的身体，并尽可能地扭曲他们的骨头，并且违背主人意愿地移动它们。当你施放此法术时，你的动作数量决定了法术的效果。无论你花费多少动作来施法，目标必须尝试强韧豁免。</p>\n<p><span class=\"pf2-icon\">2</span> （姿势, 语言）你握紧拳头，挤压目标的拳头并且造成3d8钝击伤害。</p>\n<p><span class=\"pf2-icon\">3</span> （材料, 姿势, 语言）类似2动作版本，并且你能牵动目标的骨头，仿佛目标是你的提线木偶一般。此移动遵循强制移动规则。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标受到一半伤害。如果你施展3动作版本，你能移动目标5尺；它能选择@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}来避免移动。</p>\n<p><strong>失败</strong> 目标受到全伤害并陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。如果你施展3动作版本，你能移动目标15尺；它能选择倒地来避免移动。</p>\n<p><strong>大失败</strong> 目标受到双倍伤害并陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。如果你施展3动作版本，你能移动目标25尺，然后击倒目标；如果你尝试将目标移动至危害地形，例如酸液池或悬崖外，它能选择倒地来避免移动。</p>\n<hr />\n<p><strong>升阶（+2）</strong> 伤害增加3d8。</p>"
+        },
+        "Kinetic Ram": {
+            "name": "动能撞击 Kinetic Ram",
+            "description": "<p>你聚集动能，把这股力量聚焦成一条直线或分散成一个环状的涟漪。任何遭受此法术的生物必须通过一次强韧检定，否则被推离你10尺（大失败时被推离你20尺）。你使用多少个动作施法将决定本法术的范围、射程和目标数量。</p>\n<hr />\n<p><span class=\"pf2-icon\">1</span> 该法术瞄准距离15尺内的单一目标。</p>\n<p><span class=\"pf2-icon\">2</span> 该法术瞄准距离30尺内的单一目标。目标检定失败时被推开的距离翻倍，大失败时目标被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}并受到[[/r {1d6}[bludgeoning]]]{1D6钝击伤害}。</p>\n<p><span class=\"pf2-icon\">3</span> 该法术以@Template[type:emanation|distance:5]{5尺弥漫范围}内的所有生物为目标。</p>"
+        },
+        "Loose Time's Arrow": {
+            "description": "<p>一撒，一放，你如同拨弄弓弦一般操纵着时间流，然后看目标生物如箭矢般飞去。所有受到影响的目标获得@Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态。它们只能使用此额外动作快步或行走。</p>",
+            "name": "离弦光阴 Loose Time's Arrow"
         }
     }
 }
