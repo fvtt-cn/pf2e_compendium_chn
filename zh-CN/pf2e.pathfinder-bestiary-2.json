@@ -1,1 +1,197 @@
-{}
+{
+	"label": "怪物图鉴 Bestiary 2",
+	"mapping":{
+		"publicNotes":"data.details.publicNotes",
+		"dr":"data.traits.dr",
+		"allSaves":"data.attributes.allSaves.value",
+		"senses":"data.traits.senses.value",
+		"hp":"data.attributes.hp.details",
+		"hazarddisable":"data.details.disable",
+		"hazarddescription":"data.details.description",
+		"hazardreset":"data.details.reset",
+		"hazardroutine":"data.details.routine"
+	},
+	"entries": {
+		"Choker": {
+			"name": "锁喉怪 Choker",
+			"publicNotes": "<p>拥有长长的软质四肢和灰色的皮肤，锁喉怪可以很容易地藏在石质的凹槽，岩石的裂缝和昏暗的楼梯下埋伏他们的猎物。这种奇怪的小型异怪更喜欢选择弱小和落单的生物，特别是那些从他们的团体或社群走散的生物下手。一只锁喉怪长长的，海绵状的手臂是柔软的，并不像看上去那么强壮。他们的手指可以迅速地收紧并且布满脊状的牙齿一般的钉刺，能为他们提供一次强有力的攫抓。一只锁喉怪通常会将它的猎物勒死，然后拖走他的尸体或者用粗糙的工具将大型的难以搬运的猎物肢解。如果与人对峙或者敌人众多，锁喉怪会尝试挤进一条狭窄的通道逃走。锁喉怪遇到类人生物时，会对其文化，社群，工业产物和艺术品充满好奇心。这种好奇心并不是非常强烈——这只是锁喉怪想要杀死他们并收集类似珠宝，华服或者文献这类精致道具导致的结果。</p>\n<p>锁喉怪有时候会在聚落聚集，通常会溜进贫民窟或者被遗弃的建筑。这些锁喉怪在夜晚偷偷接近，猛然冲下屋顶，钻进窗户并且穿行在下水道，水沟和烟囱里来获得他们的猎物。一只在城市里的锁喉怪在狩猎时会经常发现猎物——一只流浪的宠物，一个独自出行的人——也许还会花费夜里剩下的时间来满足它对这些社群产物的好奇心。一只好奇的锁喉怪可能会偷盗各种类型的老旧物品，从酒馆的标志到图书馆的书再到屋顶的瓦片。一只锁喉怪通常一次只偷取一个物品，但是随着它的收藏越来越多，它可能需要找到一个更大的巢穴来存放这些收藏，然后它就会一个接一个地将这些收藏搬到新家。</p>",
+			"senses":"黑暗视觉",
+			"items":{
+				"xS1M3nE7TiguYe63":{
+					"name": "手臂 Arm"
+				},
+				"pP0EwdXTDTjgDpZA":{
+					"name": "黑暗视觉 Darkvision"
+				},
+				"n5uTPxg5zF7PKMZF":{
+					"name": "猛拉 Yank",
+					"description":"<p><strong>触发</strong> 一个敌人用一次攻击将锁喉怪指定为目标</p>\n<hr />\n<p><strong>效果</strong> 锁喉怪尝试将它@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或者@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物拉进这次攻击里。锁喉怪进行一次运动检定，允许使用他的擒抱加值来进行一次@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}。如果他对抗被擒抱或束缚生物的强韧DC成功，锁喉怪将这次攻击转移到那个生物身上，并且攻击者将攻击投骰结果对抗新目标的AC。锁喉怪必须将生物移动至与它相邻的空间内。这个生物同样需要移动到攻击者的攻击范围内来对抗一次近战攻击或者移动到攻击者和锁喉怪之间来对抗一次远程攻击。锁喉怪不能用此能力将攻击转移给攻击者，即使它正在擒抱或者压制着攻击者。</p>"
+				},
+				"z8DPFDp5ksGcM6bT":{
+					"name": "紧勒 Constrict",
+					"description":"<p>[[/r {1d6+3}[bludgeoning]]]{1d6+3 钝击}, @Check[type:fortitude|dc:19|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"WIlbTCI5PaEEizfq":{
+					"name": "藏匿移动 Hidden Movement",
+					"description":"<p>如果锁喉怪回合开始时对一个生物是@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}或者@Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 状态，那个生物在对抗锁喉怪攻击时为@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态直到回合结束。</p>"
+				},
+				"vuAvJlvQLWub8gyW":{
+					"name": "绞杀手指 Strangling Fingers",
+					"description":"<p>任何被锁喉怪手臂命中的生物自动进入被@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态，并且锁喉怪开始绞杀目标。该生物开始窒息并且在被绞杀时不能说话。这会阻止他施放需要语言成分的法术或者激活需要命令启动的物品。</p>"
+				}
+			}
+		},
+		"Crawling Hand": {
+			"name": "伏行之手 Crawling Hand",
+			"hp":"负能量治疗",
+			"publicNotes": "<p>一般来说，当被切断的手被邪恶的亡灵能力赋予了模糊的感知能力，并被转化成成不知疲倦的杀手时，伏行之手就诞生了。当然，当一个生物在一个充满亡灵能力或负能量的地方失去了自己的手时，它的手也有可能自发转化成伏行之手。</p>\n<hr />\n<p>伏行之手是来自中型生物的手掌，它们快速而灵巧，在阴影中快速移动，然后突袭猎物。</p>",
+			"senses":"生命感知30尺, 震颤感知（模糊感官）30尺",
+			"items":{
+				"HvL4pznzaaZwsFkA":{
+					"name": "爪抓 Claw"
+				},
+				"kN2uT5XwOWMjkzA5":{
+					"name": "震颤感知（模糊感官）30尺"
+				},
+				"twuwqjXSZmaqi54S":{
+					"name": "生命感知30尺 Lifesense 30 feet"
+				},
+				"rCFV63sVu1lfxToK":{
+					"name": "负能量治疗 Negative Healing"
+				},
+				"iThujq9Fhag6Jad2":{
+					"name": "锁喉 Grip Throat",
+					"description":"<p>中型或更小体型的生物被伏行之手@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}时很难说话，进行带有语言特征的动作时需要额外花费一个动作。</p>"
+				},
+				"gOjlMNwWXWNHohGo":{
+					"name": "标记猎物 Mark Quarry",
+					"description":"<p>在伏行之手上涂上一滴指定目标的血液可以让伏行之手追踪指定猎物。若伏行之手当前没有猎物，那么下个被他伤害的生物会自动成为他的猎物。伏行之手在@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}猎物时的察觉检定，@Compendium[pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Tracks}猎物时的生存检定、打击猎物时的伤害检定上获得+1环境加值。</p>"
+				}
+			}
+		},
+		"Mandragora": {
+			"name": "曼德拉草 Mandragora",
+			"publicNotes": "<p>曼德拉草看起来就像一个刚拔出来的块茎，长成了一个孩子的畸形，有着怪异的脸和狰狞臃肿的身体。这些阴险的小植物通常在曼德拉草被恶魔的血液浇灌后形成。吸收了恶魔之血的超凡属性后，根部就会有生命力，并被迫寻找血液来充饥，以免渴死。</p>\n<p>曼德拉草总是饥肠辘辘，为了寻找食物，他们过着痛苦的生活，为了获得他们渴望的血液，他们做出卑鄙和绝望的行为。虽然他们更喜欢被带有魔法的血液，如独角兽、精灵或法师的血液，他们也能够以药水、炼金炸弹和其他魔法药水为食，但曼德拉草能够以非魔法生物的血液为生。他们发现世俗的血液味道平淡而苦涩，而且他们并不吝于向他们所喝的生物表达这些抱怨。</p>\n<p>虽然典型的曼德拉草只有人类小孩的大小，但这些邪恶的植物中有些会继续生长，达到与巨人更相似的大小。有时，随着它们的生长，它们会形成额外的肢体或逐渐成形的脸部，最终变成对人形丑恶且粗劣可笑的模仿。</p>",
+			"senses":"血液感知, 昏暗视觉",
+			"items":{
+				"Ar58HUSjCtqUCBWd":{
+					"name": "啃咬 Jaws"
+				},
+				"xqB9FvxJUsDUDs15":{
+					"name": "带刺藤蔓 Thorny Vine"
+				},
+				"ExsxFy6Bmcgsy0GX":{
+					"name": "昏暗视觉 Low-Light Vision"
+				},
+				"ZvqnxVWvm9QdJZVi":{
+					"name": "血液感知 Blood Scent",
+					"description":"<p>曼德拉草能够在30英尺的范围内闻到带血的生物的气味，作为一种模糊感官，而它可以在30英尺的范围内闻到恶魔、精类和术士的血味，作为一种精准感官。</p>"
+				},
+				"uQFiXxjHXOCxLHe8":{
+					"name": "超自然黑暗易伤 Vulnerability to Supernatural Darkness",
+					"description":"<p>每当曼德拉草在魔法黑暗区域开始其回合时，它在该回合承受@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
+				},
+				"sfWdhP3dRBdtmiol":{
+					"name": "吸血 Blood Drain",
+					"description":"<p><strong>需求</strong> 曼德拉草@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}一个生物 </p>\n<hr />\n<p><strong>效果</strong> 曼德拉草从它抓住的生物身上吸血，造成[[/r 2d6]]伤害。如果该生物是恶魔、精类或术士，曼德拉草会获得与所受伤害相等的临时生命值。</p>\n<p>被曼德拉草拉吸血的生物会承受@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，直到它得到任何种类的治疗。</p>"
+				},
+				"wrisTXltKN2ggF1B":{
+					"name": "曼德拉草毒液 Mandragora Venom",
+					"description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}, @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, 和@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}, @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, 和@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1轮)</p>"
+				},
+				"w0XMZ6GmkzJcCRyO":{
+					"name": "刺耳尖叫 Piercing Shriek",
+					"description":"<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 曼德拉草发出令人不安的尖叫声。 @Template[type:emanation|distance:30]{30英尺范围}内的每个非曼德拉草生物必须尝试@Check[type:will|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物承受@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物承受@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 生物承受@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。 只要该生物仍处于恶心状态，该缓慢状态值就不能降低到1以下。</p>"
+				},
+				"vda7kHsnuwSQWtXd":{
+					"name": "攫抓 Grab"
+				}
+			}
+		},
+		"Necrophidius": {
+			"name": "人髑骨蛇 Necrophidius",
+			"publicNotes": "<p>虽然人髑骨蛇是一种无心智的构装体，不具备理解善恶复杂性的能力，但这些外表凶恶的构装体的创造者通常都是邪恶或令人毛骨悚然的家伙，他们试图将一种骇人的审美灌输给自己的守卫。</p>\n<p>源于人和蛇中取出的骨头，一条人髑骨蛇由异能魔法而非反生命活化。每条人髑骨蛇都建于一条巨蟒的骨架之上，但它的头骨已被替换成类人生物的髑髅。一些死亡邪教或特别残忍的工匠寻找他们记恨之人的颅骨，供给他们的人髑骨蛇。构造它的最后一步是改变（头骨的）牙齿和下颚，给它更接近蛇类的面貌，并附上毒牙。</p>\n<p>如果一条人髑骨蛇的创造者死了，它就会遵循被给予的最后一系列命令。倘若它做不到，人髑骨蛇就会在它最后为主人服务的地方漫无目的的游荡，并袭击任何遇到的生物。有些人相信那些知道人髑骨蛇起源之秘的人可以指挥它，只要它最初的创造者已不存在，并且现在没有其他人在指挥它。也有一些报告提及有着不可思议的意识与智慧的人髑骨蛇，它们带着一个目的漫游，并追踪或狩猎特定的生物，它们将其解释为先前暗杀任务的目标。</p>",
+			"senses":"黑暗视觉",
+			"items":{
+				"iKjpMK3lSakpUkFY":{
+					"name": "蛇颚 Jaws"
+				},
+				"qfYFz5QrJfsbmJng":{
+					"name": "黑暗视觉 Darkvision"
+				},
+				"6B5ZXZm5DwAILPJ2":{
+					"name": "死亡之舞 Dance of Death",
+					"description":"<p>人髑骨蛇摇摆起来，它的蛇形身躯以一种催眠的节奏波浪起伏、咔嗒作响。每个目击舞蹈的生物必须进行@Check[type:will|dc:18]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 此生物不受影响并临时免疫此能力24小时。</p>\n<p><strong>成功</strong> 此生物被摇摆弄得烦躁不安，他陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直至人髑骨蛇的下个回合结束。</p>\n<p><strong>失败</strong> 此生物被摇摆分心，他获得@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。在他从震慑中恢复后，他陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直至人髑骨蛇的下个回合结束。</p>\n<p><strong>大失败</strong> 如同失败，但是获得@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+				},
+				"CswqTh16aa0KDlDF":{
+					"name": "骨蛇麻痹 Necrophidic Paralysis",
+					"description":"<p>被人髑骨蛇咬到的生物必须通过@Check[type:fortitude|dc:20]鉴定否则陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。此生物可以在每个回合结束时尝试一次新的豁免，每次豁免的DC会递减1。豁免成功的生物将暂时免疫此能力24小时。</p>"
+				}
+			}
+		},
+		"Vampiric Mist": {
+			"name": "吸血魔雾 Vampiric Mist",
+			"publicNotes": "<p>虽然吸血魔雾常被误认为是变化为气态的吸血鬼或一种不常见的气元素，但它们实际上是一种奇怪的异怪类生物。因为这些生物的身体由流体和空气组成，所以生活在不太容易让自己受到高温损害的沼泽或潮湿的地底。尽管如此，它们还是喜欢在这些地区的边界附近藏身，因为吸血鬼的雾气需要不断地供应新鲜血液来维持生命。虽然从动物身上吸取到的血液也和其他生物身上的血液一样具有营养，但这些虐待狂怪物更喜欢有思维的智慧生物的血液的味道。就像鬼火（will-o -wisps）一样，吸血魔雾发现恐惧会使受害者的血液更美味，尽管被惊吓的受害者除了血的味道更可口以外并没有什么其他特别的好处。</p>\n<p>虽然有些智慧，但吸血魔雾并不能形成社会组织。它们有时会群组狩猎，但即使这样，他们对彼此协作也没什么兴趣。吸血魔雾大部分时间都在寻找猎物——在这一点上它们可谓相当具有创造力。吸血魔雾喜欢把自己伪装成模糊的、像某种骷髅一样的生物，这更进一步增加了它们在那些被他们吸血的族群里的神秘感，并引发了它们和亡灵颇有渊源的谣言。事实上，许多吸血魔雾喜欢利用这个常见的谬误让自己获得优势，引导敌人在战术上犯错——例如欺骗施法者认为他们是不死生物，从而让敌人用正能量去对付它们。</p>",
+			"senses":"黑暗视觉, 血液感知（模糊感官）60尺",
+			"items":{
+				"ABqHj13JWyqTUohA":{
+					"name": "迷雾卷须 Misty Tendril"
+				},
+				"DuUso0h1BlAS0Ch3":{
+					"name": "黑暗视觉 Darkvision"
+				},
+				"ba5N4O9vroJScmAq":{
+					"name": "血雾形态 Misty Form",
+					"description":"<p>吸血魔雾的身体由一种像厚泡沫那样粘稠的半凝固的红色血雾组成。这让吸血魔雾可以穿过仅1寸宽的空间，而不降低其速度。但是吸血魔雾无法穿戴物品或与物品交互。它也无法进入水中或其他液体，并且在判断风对它的影响时被视作超小型（Tiny）生物。</p>"
+				},
+				"QBq3x8HUuGt0wVZm":{
+					"name": "血液感知60尺 Sense Blood (Imprecise) 60 feet",
+					"description":"<p>吸血魔雾能感知到60尺内拥有血液系统的生物。它还能感知到1英里之内未被掩盖的血迹。</p>"
+				},
+				"ojlZFCKNrXd0MjTG":{
+					"name": "鲜血虹吸 Blood Siphon",
+					"description":"<p>当吸血魔雾用迷雾卷须打击一个生物并造成伤害时，该生物必须尝试@Check[type:fortitude|dc:20]豁免。如果该打击造成重击，该生物的豁免结果会比投掷结果降低一个成功级别。吸血魔雾从鲜血虹吸中获得的临时生命值在1小时后消失。</p>\n<hr />\n<p><strong>成功</strong> 目标生物不受影响。</p>\n<p><strong>失败</strong> 目标生物陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，吸血魔雾获得[[/r 5 #Temporary Hit Points]]{5临时生命值}。</p>\n<p><strong>大失败</strong> 目标生物陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}。吸血魔雾获得[[/r 10 #Temporary Hit Points]]{10临时生命值}，并且身上的血色变得越发鲜艳，直到它的下一回合结束。在此期间，它获得的AC和豁免检定获得+2状态加值，并且获得@Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态。它只能用额外动作进行打击。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.ceOkHxhJNTcvZkCy]{效果: 鲜血虹吸(大失败)}</p>"
+				}
+			}
+		},
+		"Wood Golem": {
+			"name": "木魔像 Wood Golem",
+			"publicNotes": "<p>木魔像通常会被塑造成模糊的人形，几乎像是用木柴的碎片和废弃的树瘤拼凑而成。一些罕见的木魔像被经过艺术加工，例如表面雕花，或被雕塑成不同生物的形状，以满足其主人的口味。众所周知，富有的购买者会委托制造者精心雕刻木魔像，使其看起来像他们自己或他们的祖先，将保护自己和维护面子作为双重目的，然而大部分制造者都不太在乎这点。德鲁伊或森林生物，例如树人（arboreals）通常会将木魔像视为侮辱或令人憎恶之物，类似于人类面对腐尸魔像时的反感和恐惧。因此，尽管这些魔像的外观和精类（fey）或德鲁伊们的圣地高度契合，但是几乎不会作圣地守护者而存在。</p>\n<hr />\n<p>魔像的外观和结构只受其工匠的力量和创造力的限制。随着时间的推移，熟练的头脑和双手已经完善了创造特定类型的魔像的公式，导致了其常见类型进一步发展。创造不同类型的魔像的秘密可能被保护在著名的魔像工厂或许多被遗忘的图书馆里。</p>",
+			"senses":"黑暗视觉",
+			"dr":[
+				{
+					"exceptions": "除了精金",
+					"type": "physical",
+					"value": 5
+				}	
+			],
+			"items":{
+				"3CKGWY5tOmbNJznT":{
+					"name": "拳头 Fist"
+				},
+				"TzQpE2J6oD8ijpuC":{
+					"name": "裂片 Splinter"
+				},
+				"VOzKuytxsOHWyPEJ":{
+					"name": "黑暗视觉 Darkvision"
+				},
+				"L8tZphaG7qnpPLpQ":{
+					"name": "魔像抗魔 Golem Antimagic",
+					"description":"<p> 被伤害：火焰（[[/r {4d8}]]{4d8伤害}，范围或持续性伤害[[/r {2d6}]]{2d6伤害}）；被治疗：植物（范围伤害回复[[/r {2d6}[healing]]]{2d6 HP}）；被减速：土</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如\"寒冷和水\"）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+				},
+				"CquGR1meZf8Szzmo":{
+					"name": "裂片 Splinter",
+					"description":"<p><strong>触发</strong> 木魔像受到物理伤害</p>\n<hr />\n<p><strong>效果</strong> 锯齿状的木头裂片射向攻击木魔像的生物。木魔像对一个相邻的生物进行一次裂片打击，并且不会触发反应动作。</p>"
+				},
+				"CGd3B4KwGynCutU4":{
+					"name": "法术弱点-塑木术 Vulnerable to Shape Wood",
+					"description":"<p>被<em>@Compendium[pf2e.spells-srd.CXICME10TkEJxz0P]{塑木术 Shape Wood}</em>法术作为目标的木魔像受到每环级[[/r {2d8}]]{2d8伤害}，基础强韧豁免，对抗施法者的法术DC。</p>\n<p>如果大失败，木魔像还会被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}[[/br 1d4 #Shape Wood Immobilization]]{1d4轮}。</p>"
+				},
+				"D1R03gCQbWQLLgtL":{
+					"name": "裂片齐射 Splinter Volley",
+					"description":"<p>木魔像进行最多四次裂片打击，每次针对不同的目标。</p>\n<p>这些攻击都会计入木魔像的多重攻击减值，但是多重攻击减值直到木魔像所有打击都结束之后才会增加。</p>"
+				}
+			}
+		}
+	}
+}
