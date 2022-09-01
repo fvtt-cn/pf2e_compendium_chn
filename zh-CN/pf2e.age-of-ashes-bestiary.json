@@ -1,7 +1,12 @@
 {
 	"label": "灰烬之年 Age of Ashes",
 	"mapping":{
-		"publicNotes":"data.details.publicNotes"
+		"publicNotes":"data.details.publicNotes",
+		"stealth":"data.attributes.stealth.details",
+		"disable":"data.details.disable",
+		"description":"data.details.description",
+		"reset":"data.details.reset",
+		"routine":"data.details.routine"
 	},
 	"entries": {
 		"Accursed Forge-Spurned": {
@@ -233,7 +238,29 @@
 			"name": "Hermean Mutant"
 		},
 		"Heuberk Thropp": {
-			"name": "Heuberk Thropp"
+			"name": "霍博克·斯洛普 Heuberk Thropp",
+			"items":{
+				"3ZIUyyCzEz5jwled":{
+					"name":"带有红三一徽记的手铐（普通）",
+					"description":"<p>根据生物的大小和你应用的手铐数量，你可以将一个愿意或以其他方式怜悯你的人铐起来，花费约10-30秒时间。一个双腿被铐住的的两足生物在速度上受到-15尺环境减值，并且双手被铐住的两手生物必须在任何进行操作动作的时候进行DC 5的纯粹检定，否则该动作将失败。根据手铐约束手的紧密程度，该DC可能更高。被铐到到静止物体上的生物不能移动。对于具有更多或更少肢体的生物，由GM确定手铐有什么效果。将一个生物从普通手铐中解放出来需要四次成功的DC27贼活检定</p>"
+				},
+				"rVWeTEhRpSWDcpVJ":{
+					"name":"法术书 Spellbook",
+					"description":"<p>法术书包含学习和准备各种法术所必需的书面知识，这是法师的必需品（通常会免费获得一本）和寻求学习额外法术的其他施法者的有用奢侈品。每本法术书最多可以容纳100个法术。此处列出的是一本空白的法术书的价格。</p>"
+				},
+				"jZFyZg8r1I1EWoBY":{
+					"name":"适时扰乱 Timely Distraction",
+					"description":"<p><strong>触发</strong> 有霍博克能看到且处于霍博克近战触及范围内的生物对霍博克作出近战打击，但是攻击失手</p>\n<hr />\n<p><strong>效果</strong> 霍博克对该生物尝试@Compendium[pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feint}。若此时并非霍博克的回合而且他的虚招成功，那么该效果适用于他的下个回合</p>"
+				},
+				"hZNyCnxdujLVMKqb":{
+					"name":"寻找突破口 Identify an Opening",
+					"description":"<p><strong>需求</strong> 有生物在对抗霍博克的下次近战攻击时陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}</p>\n<hr />\n<p><strong>效果</strong> 霍博克指出该生物防御上的漏洞。霍博克的所有听到并理解该指令的盟友对该生物尝试的全部近战攻击均会将该生物视为陷入措手不及（flat-footed），持续至霍博克的下个回合开始为止。</p>"
+				},
+				"Oqy1IXCABemD4A9g":{
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>",
+					"name":"偷袭 Sneak Attack"
+				}
+			}
 		},
 		"Hezle": {
 			"name": "Hezle"
@@ -416,7 +443,24 @@
 			"name": "Town Hall Fire"
 		},
 		"Trapped Lathe": {
-			"name": "Trapped Lathe"
+			"name": "机床陷阱 Trapped Lathe",
+			"stealth":"<p>(专家); @Check[type:perception|dc:29|name:Notice the Line of Cord|traits:complex,mechanical,trap,hazard] 能注意到有一条线绳从机床的触发器上一直延伸至通往区域<strong>A2</strong>的门后。</p>",
+			"disable":"<p>@Check[type:thievery|dc:31|name:Release the Spring Tension|traits:complex,mechanical,trap,hazard] (专家) 能够在车床上的弹簧张力施放掉的同时却不触动上面的刀片和齿轮。</p>",
+			"description":"<p>这台动力机床上的弹簧绷得很紧，当它被推撞或触发时，机床会一下子松开，将刀片、齿轮和锋利的金属片一股脑向着房间各处迸射。</p>",
+			"routine":"<p>（4 个动作） 机床尝试 4 次尖锐零件攻击对抗房间内的生物，从区域A1 内所有可选目标中随机选择 1 个目标。陷阱的任何攻击都不会承受多重攻击减值（multiple attack penalties）。随着弹簧的力量被释放出来变得越来越松，陷阱每个回合会失去 1 个动作，最终在只具有0 个动作时便会被解除（disabled）。</p>",
+			"items":{
+				"Da7jV5DGeFRpV5qb":{
+					"name":"零件喷发 Unleash Fragments",
+					"description":"<p><strong>触发</strong> 机床被碰撞（jostled）、受到伤害（damaged）或有人从远处拉扯它的触发器。</p>\n<hr />\n<p><strong>效果</strong> 陷阱对区域<strong>A1</strong>内的 1 名随机目标进行尖锐零件打击，之后投掷先攻。</p>"
+				},
+				"zVCalXk0BtUnOMfM":{
+					"name":"尖锐零件 Sharpened Fragment"
+				},
+				"USQ16Z86qZYqJDkV":{
+					"name":"重击时持续流血Persistent Bleed Critical",
+					"description":"<p>尖锐零件重击时额外造成@Localize[PF2E.PersistentDamage.Bleed1d8.success]。</p>"
+				}
+			}
 		},
 		"Tree of Dreadful Dreams": {
 			"name": "Tree of Dreadful Dreams"
