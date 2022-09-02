@@ -1,7 +1,8 @@
 # Foundry VTT PF2e 合集包中文化
 ![downloads](https://img.shields.io/github/downloads/fvtt-cn/pf2e_compendium_chn/total)
 
-本模组为 FVTT 的 Pathfinder 2e 系统合集包提供了中文翻译。
+本模组为 FVTT 的 Pathfinder 2e 系统合集包提供了中文翻译。  
+需搭配[PF2系统汉化mod](https://github.com/fvtt-cn/pf2_cn)一同使用
 
 ## 安装
 - [x] 模组管理器中，粘贴清单文件地址： [https://raw.githubusercontent.com/fvtt-cn/pf2e_compendium_chn/main/module.json](https://raw.githubusercontent.com/fvtt-cn/pf2e_compendium_chn/main/module.json)
