@@ -12,6 +12,42 @@
 		"hazardroutine":"data.details.routine"
 	},
 	"entries": {
+		"Osyluth":{
+            "name":"骨魔 （奥塞魔） Osyluth",
+            "allSaves":"对所有魔法效果的豁免有+1状态加值 +1 status to all saves vs. magic",
+            "publicNotes":"<p>骨魔是无与伦比的审判官，喜欢陶醉在施虐和酷刑中，名声传遍整个地狱。这些魔鬼的职责是在凡人和其他魔族中寻找异端分子——它们以坚定不移的热情贯彻着这一戒律。这类魔鬼诞生于地狱第五层，斯泰吉亚（Stygia）那被冥河水注满的泥沼中；异端者和异教徒的灵魂在这里迟滞不前，最终被转化为骨魔。在同一层地狱更偏远的角落里，骨魔建造了巨大的、钙化的巢穴，它们在那里进行卑劣的审讯，并在较为低阶的魔鬼和祈并者（petitioners）身上完善它们的折磨艺术。</p>\n<hr />\n<p>每种类型的魔鬼都在地狱的官僚机构和等级制度中扮演着特殊的角色，尽管有些魔鬼的职能远比其他魔鬼更专业。</p>",
+            "sense":"高等黑暗视觉",
+            "items":{
+                "4ujIS89zTfcMbbaX":{"name":"啃咬 Jaws"},
+                "y7LC1NdSY22WtjWg":{"name":"爪抓 Claw"},
+                "JwstH3hUkDgNqT21":{"name":"尾刺 Stinger"},
+                "UUVUKTE7xQsPxDNy":{"name":"骨片 Bone Shard"},
+                "yRuXhvVShtatFwyU":{
+                    "name":"心灵感应 100尺 Telepathy 100 feet",
+                    "description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
+                "UgqU2m5UQKRKewoU":{
+                    "description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}, @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {3d6}[poison]]]{3d6毒素伤害}和力竭1 (1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {3d6}[poison]]]{3d6毒素伤害}和@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)。一旦生物达到阶段3，它对抗@Compendium[pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{胁迫 Coerce}的意志豁免承受-4减值，持续1小时（这是一个心灵效果）。</p>",
+                    "name":"骨魔毒液 Osyluth Venom"
+                },
+                "jtcRrpxqpR8quMII":{
+                    "name":"快速隐形 Quick Invisibility",
+                    "description":"<p>骨魔仅需1个动作就可以施展内在的<em>@Compendium[pf2e.spells-srd.XXqE1eY3w3z6xJCB]{隐形术 Invisibility}</em>。</p>"
+                },
+                "WzWOnae18jvHd2C0":{
+                    "name":"虐待打击 Sadistic Strike",
+                    "description":"<p>骨魔打击命中陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled}、@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}或@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}的生物时，造成额外[[/r {2d6}]]{2d6伤害}。</p>"
+                },
+                "aQUfPBPzpqLlkRM0":{
+                    "name":"黄泉审判官 Stygian Inquisitor",
+                    "description":"<p>骨魔以心灵感应的方式向一个受到<em>@Compendium[pf2e.spells-srd.aewxsale5xWEPKLk]{诚实之域 Zone of Truth}</em>效果影响的生物提问。在1轮之后，如果生物拒绝回答，它受到[[/r {2d6}[mental]]]{2d6心灵伤害}。</p>"
+                },
+                "ws9YoHlMJ3zrjnM1":{
+                    "name":"尾扫 Tail Sweep",
+                    "description":"<p>骨魔用尾巴横扫@Template[type:cone|distance:15]区域，范围内的每个生物都必须通过@Check[type:reflex|dc:26]检定，否则被@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{击倒 Prone}。</p>"
+                }
+            }
+        },
 		"Choker": {
 			"name": "锁喉怪 Choker",
 			"publicNotes": "<p>拥有长长的软质四肢和灰色的皮肤，锁喉怪可以很容易地藏在石质的凹槽，岩石的裂缝和昏暗的楼梯下埋伏他们的猎物。这种奇怪的小型异怪更喜欢选择弱小和落单的生物，特别是那些从他们的团体或社群走散的生物下手。一只锁喉怪长长的，海绵状的手臂是柔软的，并不像看上去那么强壮。他们的手指可以迅速地收紧并且布满脊状的牙齿一般的钉刺，能为他们提供一次强有力的攫抓。一只锁喉怪通常会将它的猎物勒死，然后拖走他的尸体或者用粗糙的工具将大型的难以搬运的猎物肢解。如果与人对峙或者敌人众多，锁喉怪会尝试挤进一条狭窄的通道逃走。锁喉怪遇到类人生物时，会对其文化，社群，工业产物和艺术品充满好奇心。这种好奇心并不是非常强烈——这只是锁喉怪想要杀死他们并收集类似珠宝，华服或者文献这类精致道具导致的结果。</p>\n<p>锁喉怪有时候会在聚落聚集，通常会溜进贫民窟或者被遗弃的建筑。这些锁喉怪在夜晚偷偷接近，猛然冲下屋顶，钻进窗户并且穿行在下水道，水沟和烟囱里来获得他们的猎物。一只在城市里的锁喉怪在狩猎时会经常发现猎物——一只流浪的宠物，一个独自出行的人——也许还会花费夜里剩下的时间来满足它对这些社群产物的好奇心。一只好奇的锁喉怪可能会偷盗各种类型的老旧物品，从酒馆的标志到图书馆的书再到屋顶的瓦片。一只锁喉怪通常一次只偷取一个物品，但是随着它的收藏越来越多，它可能需要找到一个更大的巢穴来存放这些收藏，然后它就会一个接一个地将这些收藏搬到新家。</p>",

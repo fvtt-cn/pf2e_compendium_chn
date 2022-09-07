@@ -81,7 +81,31 @@
 			"name": "Black Powder Bomb"
 		},
 		"Blood Boar": {
-			"name": "Blood Boar"
+			"name": "寻血野猪 Blood Boar",
+			"publicNotes":"<p>寻血野猪是一类由切利亚斯（Cheliax）培育的骇人猪类，其只为一个目的而生：追捕潜逃的奴隶。该物种源自栖息于奈多（Nidal）那阴暗的乌斯克森林（Uskwood）中的一类体型巨大且凶暴的野猪，寻血野猪保留了它们祖先的灰色皮毛、红色眼睛和特殊的感官。为培育寻血野猪所采用的精细化的饲养方式——通过选择性地使用魔法——赋予了它们无与伦比的血液感知，包括精确地探测身上沾血的动物的位置和行动的能力，使得这些野猪能在一英里外追踪猎物。</p>\n<p>寻血野猪的饲养员为它们梳洗并标记，让它们本就令人不安的外表更加可怖。虽然从远处看，寻血野猪可能会被误认为是普通的猪，但靠近了看，它们之间的区别显而易见。血红的眼睛、灰白的鬃毛和非自然的锋利獠牙点缀在组成了了这具躯体的百磅肌肉上，透过这头野猪煞白的血肉，能看见它的一条条血管。锁链、镣铐和尖刺都是寻血野猪身上常见的配饰，用于确保这头野猪尽可能的吓人。</p>\n<p>寻血野猪仅凭目标的血液气味就能追踪猎物的能力一直是许多小偷、强盗、有时候还是一些出轨者的心病，但没有人比追求自由的奴隶更害怕这些野兽。如果寻血野猪已经嗅到了气味，即使洗掉溅出来的血也无法阻止它的追逐。因此，铃花会（Bellflower Network）中的许多半身人热衷于练习卸除武装和非致命的格斗技术，就是为了避免在逃跑期间意外流血。</p>",
+			"items":{
+				"F2trczQsM5ejlXEm":{"name":"啃咬 Jaws"},
+				"RiXHSOTCKfKIONvP":{
+					"name":"嗅觉 (暧昧) 30 尺",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"pWNu3N2Ovu0m978Z":{
+					"name":"循血追猎 Blood Quarry",
+					"description":"<p>当闻到某个生物的血时，寻血野猪可以指定该生物为它的猎物。寻血野猪在一英里外都能闻到该猎物的气味。一头寻血野猪一次只能有一个猎物。</p>"
+				},
+				"ZYT8B7LGfrmxllL4":{
+					"description":"<p>寻血野猪能精确地感知到 60 尺内流血的生物。</p>",
+					"name":"血液感知 Bloodsense"
+				},
+				"GynHyVx5cEZ0vb9p":{
+					"name":"追捕 Chase Down",
+					"description":"<p>寻血野猪向它的猎物行走，无视困难地形，这次移动在速度上获+10 尺环境加值。</p>"
+				},
+				"7LPUMs664rIwb4pr":{
+					"description":"<p>寻血野猪发出一声令人毛骨悚然的尖叫。30 尺内的生物必须成功通过@Check[type:will|dc:23]豁免否则获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。</p>\n<p>如果寻血野猪在合使用追捕后的同一回使用骇人尖啸，意志豁免DC改为@Check[type:will|dc:25]。</p>",
+					"name":"骇人尖啸 Terrifying Squeal"
+				}
+			}
 		},
 		"Bloody Blade Mercenary": {
 			"name": "Bloody Blade Mercenary"
@@ -383,7 +407,32 @@
 			"name": "Rinnarv Bontimar"
 		},
 		"Rusty Mae": {
-			"name": "Rusty Mae"
+			"name": "拉斯蒂·梅 Rusty Mae",
+			"items":{
+				"WIq9iFyHE2YJoFwA":{
+					"name":"爪抓 Claw"
+				},
+				"w481TRk2bURCXIxx":{
+					"name":"巫团 Coven",
+					"description":"<p>拉斯蒂·梅将<em>@Compendium[pf2e.spells-srd.gPvtmKMRpg9I9D7H]{地缚术 Earthbind}</em>, <em>@Compendium[pf2e.spells-srd.115Xp9E38CJENhNS]{穿墙术 Passwall}</em>和<em>@Compendium[pf2e.spells-srd.8Umt1AzYfFbC4fui]{法力崩裂 Spellwrack}</em>加入到她的巫团法术中。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+				},
+				"DH9wyO9XNqPjz1gc":{
+					"name":"钢铁囚笼 Bonds of Iron",
+					"description":"<p>每日一次，拉斯蒂·梅从最多30尺远的虚空中召唤一个寒铁囚笼，她尝试一次@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}检定对抗目标的强韧DC；如果目标有寒铁弱点，拉斯蒂·梅该次检定有+2环境加值。和一般擒抱不同的是，拉斯蒂·梅擒抱的目标不需要在其触及范围内，并且自身可以随意移动。囚笼一直持续直到目标生物成功逃脱（DC 29）并且牢笼化为尘土。任何生物能尝试通过攻击破坏该囚笼。该囚笼的AC 25，硬度14，有56点生命值。</p>"
+				},
+				"lRGKk5oP862ZMOI3":{
+					"description":"<p>拉斯蒂·梅能变化成任意中型女性类人生物。这不会改变她的速度或它打击的攻击加值和伤害加值，但是能改变她打击的伤害类型（例如钝击）。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+					"name":"变身 Change Shape"
+				},
+				"ODRNG6vG9zjC3Etf":{
+					"name":"撕裂 Rend",
+					"description":"<p>爪抓 Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+				},
+				"1mhGkpmF4fQNlduu":{
+					"description":"<p>拉斯蒂·梅的爪抓会使得金属迅速锈蚀并遭到腐蚀。若她成功进行爪抓打击（clawsStrike）或@Compendium[pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}，则除了对目标造成她的爪抓伤害之外，还额外会对目标当前穿戴或持用的金属物品造成[[/r {2d6}]]{2d6伤害}（重击翻倍），忽略其硬度。若她命中了一件无主金属物品（unattended metalitem），该物品会自动承受[[/r {2d6}]]{2d6伤害}。若有生物使用金属盾牌进行盾牌格挡（Shield Block）反射动作对抗拉斯蒂·梅的爪抓攻击，盾牌会自动@Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken}，但此次攻击不会影响其他物品。</p>",
+					"name":"锈蚀 Rust"
+				}
+			}
 		},
 		"Saggorak Poltergeist": {
 			"name": "Saggorak Poltergeist"
@@ -423,6 +472,10 @@
 				"sKH86qpUBKLIW8ls":{
 					"description":"<p><strong>需求</strong> 有镣铐在探子的手上且探子与一名生物相邻。</p>\n<hr />\n<p><strong>效果</strong> 探子尝试用镣铐束缚该生物的手腕或脚踝。若探子成功通过[[/r 1d20+16 #Manacles]]{+16}调整值的攻击检定对抗目标的AC，则对其拷上镣铐。</p>",
 					"name":"高效抓捕 Efficient Capture"
+				},
+				"SJg4gN7fByvyyHi4":{
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>",
+					"name":"偷袭 Sneak Attack"
 				}
 			}
 		},
@@ -483,7 +536,25 @@
 			}
 		},
 		"Tree of Dreadful Dreams": {
-			"name": "Tree of Dreadful Dreams"
+			"name": "恐怖梦境之树 Tree of Dreadful Dreams",
+			"stealth":"<p>(专家)</p>",
+			"disable":"<p>@Check[type:athletics|dc:25|name:Force Open a Branch|traits:complex,magical,trap,hazard,action:force-open]或@Check[type:thievery|dc:25|name:Lever Open a Branch|traits:complex,magical,trap,hazard] (受训)能够用蛮力或用杠杆的方式撬开单根树枝，解除这根树枝并解放被困于其中的任何生物。@Check[type:thievery|dc:29|name:Disrupt the Tree's Magical Animation|traits:complex,magical,trap,hazard] (专家) 能够扰乱柳树的魔法流通，关闭它，并释放所有被困的生物。将<em>梦境石</em>安置在树干上需要 2 个交互（Interact）动作，而这会使陷阱关闭，释放所有被困的生物。若将区域<strong> B4 </strong>内的<em>被诅咒的梦境石</em>放置到树干上反而会将柳树每个回合的动作增加到 4 个，并使它在所有豁免检定以及攻击检定中获得+2 物品加值。</p>",
+			"description":"<p>柳树雕塑活化起来，它的枝条试图抓住区域<strong>B2</strong>内的任何人。</p>",
+			"reset":"<p>当没有生物被陷阱@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，房间内也没有生物可供攻击时，则陷阱关闭并重置。若未被诅咒的<em>梦境石</em>被安置在树干上，该雕像就不会被再次激活。</p>",
+			"routine":"<p>(3个动作) 雕像会使用每个动作来尝试树枝打击（branch Strike）对抗1 名房间内还未被@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的随机生物。若没有生物可供攻击，但至少有 1 名生物被擒抱的话，它会使用紧勒（Constricts）取代树枝打击动作。该陷阱至多擒抱 6 名生物。</p>",
+			"items":{
+				"agvYAJn23dKfPmcI":{
+					"name":"树枝 Branch"
+				},
+				"M0hdta5U4NIGRZAD":{
+					"name":"恐怖幻象 Terrifying Visions",
+					"description":"<p>若生物的回合开始时被陷阱擒抱的话，会体验生动的真实事件的扭曲幻象，必须成功通过@Check[type:will|dc:31|traits:damaging-effect]豁免，失败则会承受 [[/r {4d8}[mental]]]{4d8 点心灵伤害}。大失败时，该生物还会陷入@Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。成功通过豁免的生物会获得持续 24 小时的临时免疫。</p>"
+				},
+				"KYpQ8TgZcmUrKnjC":{
+					"name":"独立枝条 Independent Limbs",
+					"description":"<p>任何被树枝 Branch打击的生物都会被@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。而且树枝 Branch打击不承受多重攻击减值。</p>"
+				}
+			}
 		},
 		"Uri Zandivar": {
 			"name": "Uri Zandivar"
