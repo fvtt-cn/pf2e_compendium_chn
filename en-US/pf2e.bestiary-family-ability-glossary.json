@@ -33,6 +33,102 @@
 			"name": "(Clockwork Creature) Wind-Up",
 			"description": "<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
 		},
+		"(Coven) Contribute Spell": {
+			"name": "(Coven) Contribute Spell",
+			"description": "<p>The coven member contributes to the casting of a coven spell; this is a spellcasting action with the verbal trait. If two members of the coven perform this action, a third member can cast any coven spell with the normal spellcasting actions; this spell must be cast within one round of two coven members taking this action, and the creature Casting the Spell must be within 30 feet of them.</p>"
+		},
+		"(Coven) Locate Coven": {
+			"name": "(Coven) Locate Coven",
+			"description": "<p>The creature selects one other member of their coven; they can sense the location and conditions of that coven member regardless of distance, even if they're on different planes of existence.</p>"
+		},
+		"(Coven) Share Senses": {
+			"name": "(Coven) Share Senses",
+			"description": "<p>The creature selects one other member of their coven; they can sense what the other member is sensing at that time regardless of distance, even if they're on different planes of existence.</p>"
+		},
+		"(Cryptid, Experimental) Augmented": {
+			"name": "(Cryptid, Experimental) Augmented",
+			"description": "<p>An experimental cryptid is partially artificial and designed in a way to specifically prevent biological afflictions and instant death. It gains a +2 circumstance bonus to saving throws against death effects, disease, and poison.</p>"
+		},
+		"(Cryptid, Experimental) Clobber": {
+			"name": "(Cryptid, Experimental) Clobber",
+			"description": "<p>The experimental cryptid Strikes a creature. On a hit, the creature is pushed 5 feet (10 feet on a critical hit) and knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If this causes the creature to collide with a solid object, the creature takes an additional [[/r 1d10]]{1d10 damage}. If the experimental cryptid is at least 5th level, this Strike deals one additional weapon damage die of damage, and if the experimental cryptid is at least 15th level, this Strike deals two additional weapon damage dice of damage.</p>"
+		},
+		"(Cryptid, Experimental) Energy Wave": {
+			"name": "(Cryptid, Experimental) Energy Wave",
+			"description": "<p>The experimental cryptid unleashes a @Template[type:line|distance:30] of energy of a type specific to the experimental cryptid (typically electricity or fire). Creatures in the area take [[/r {1d6}[damageType]]]{1d6 damage per level of the cryptid} with a @Check[type:reflex|dc:|basic:true] save. The experimental cryptid can use this ability once every [[/r 1d4 #Energy Wave Recharge]]{1d4 rounds}. This action has the damage type's trait. If the experiments that reshaped the creature were magical, this action also has the evocation trait and the trait matching the magical tradition of the experiments (arcane, divine, occult, or primal).</p>"
+		},
+		"(Cryptid, Experimental) Operational Flaw": {
+			"name": "(Cryptid, Experimental) Operational Flaw",
+			"description": "<p>An experimental cryptid has a flaw in its construction that can be identified with a successful Perception check to @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} against the hard DC of the creature's level. An experimental cryptid has weakness equal to its level to the attacks of any creature that has successfully located the experiment's operational flaw.</p>"
+		},
+		"(Cryptid, Experimental) Power Surge": {
+			"name": "(Cryptid, Experimental) Power Surge",
+			"description": "<p>The experimental cryptid draws on its augmentations to empower its attacks. It attempts a @Check[type:flat|dc:5]. On a success, the experimental cryptid deals 1d6 additional damage with its Strikes until the end of its turn. On a failure, the experimental cryptid takes that much damage instead. The damage and traits for Power Surge are the same as those of Energy Wave. This additional damage increases to 2d6 if the experimental cryptid is 9th level or higher, 3d6 if the experimental cryptid is 15th level or higher, and 4d6 if the experimental cryptid is 18th level or higher.</p>"
+		},
+		"(Cryptid, Mutant) Explosive End": {
+			"name": "(Cryptid, Mutant) Explosive End",
+			"description": "<p>The mutant cryptid's death reveals one last surprise as it explodes into flame, acid, a pile of toxic goop, or something stranger still. Choose a damage type appropriate for the mutant cryptid. When it dies, it explodes, dealing [[/r {1d6}[damageType]]]{1d6 damage of the chosen type} to each creature in a @Template[type:emanation|distance:10], with a @Check[type:reflex|dc:|basic:true] save against a standard DC of the creature's level. The damage increases by 1d6 at 3rd level and every odd level thereafter.</p>"
+		},
+		"(Cryptid, Mutant) Marrowlance": {
+			"name": "(Cryptid, Mutant) Marrowlance",
+			"description": "<p>The mutant cryptid can make wicked spears of bone erupt from its body. The creature can make marrowlance ranged unarmed attacks. Use the highest attack modifier from the creature's highest ranged Strike, as well as the damage from that Strike. If it has no ranged attacks, use moderate accuracy and low damage for the creature's level. Marrowlance unarmed attacks have a range of 60 feet and the versatile S trait.</p>"
+		},
+		"(Cryptid, Mutant) Shifting Iridescence": {
+			"name": "(Cryptid, Mutant) Shifting Iridescence",
+			"description": "<p>Whenever the mutant cryptid takes energy damage to which it isn't resistant or immune, after taking the damage normally, it gains resistance 5 to that damage type. If it had a resistance to a different damage type from shifting iridescence, it replaces the old resistance with the new resistance. The resistance increases to 10 at 9th level and 15 at 17th level.</p>"
+		},
+		"(Cryptid, Mutant) Unusual Bane": {
+			"name": "(Cryptid, Mutant) Unusual Bane",
+			"description": "<p>The mutant cryptid gains an unusual weakness to a specific bane-such as aversion to saffron or to the sound of children's laughter. The first time each round the creature comes within 15 feet of its bane or interacts with its bane (such as stepping over a line of saffron or hearing children laugh) it takes an amount of mental damage equal to its level and must attempt a @Check[type:will|dc:] save with a hard DC for its level. On a failure, it's @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure).</p>"
+		},
+		"(Cryptid, Primeval) Broken Arsenal": {
+			"name": "(Cryptid, Primeval) Broken Arsenal",
+			"description": "<p>Fragments of broken blades and spears, the remnants of countless failed attempts to fell the primeval cryptid, remain lodged in its flesh. When an adjacent creature hits the primeval cryptid with a melee attack or otherwise touches it, that creature takes piercing damage equal to half the primeval cryptid's level (minimum 1 damage).</p>"
+		},
+		"(Cryptid, Primeval) Grasp for Life": {
+			"name": "(Cryptid, Primeval) Grasp for Life",
+			"description": "<p><strong>Frequency</strong> once per week</p>\n<p><strong>Trigger</strong> The primeval cryptid would be reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The cryptid's will to live is second nature, and its second wind has allowed it to survive when others of its kind went extinct. The creature shrugs off death. Instead of being reduced to 0 Hit Points, its Hit Points become equal to four times its level (or 4 Hit Points for a level 0 creature).</p>"
+		},
+		"(Cryptid, Primeval) Shockwave": {
+			"name": "(Cryptid, Primeval) Shockwave",
+			"description": "<p>The primeval cryptid creates a shockwave by stomping on the ground, beating its tail on the ground, or making another similarly violent, percussive slam. Creatures on the ground within 30 feet of the primeval cryptid take [[/r {1d6}[bludgeoning]]]{1d6 bludgeoning damage} per level of the primeval cryptid (minimum 2d6 damage), with a @Check[type:reflex|dc:|basic:true]. On a critical failure, a creature is also knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+		},
+		"(Cryptid, Primeval) Stench": {
+			"name": "(Cryptid, Primeval) Stench",
+			"description": "<p>@Template[type:emanation|distance:30] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the emanation or starting its turn in the emanation must succeed at a @Check[type:fortitude|dc:] save against the standard DC for the creature's level or become @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (plus @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure). While within the emanation, affected creatures take a -2 circumstance penalty to saves against diseases and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
+		},
+		"(Cryptid, Rumored) Burning Eyes": {
+			"name": "(Cryptid, Rumored) Burning Eyes",
+			"description": "<p>The cryptid's eyes are distinctive; perhaps they burn bright red in the dark night. The rumored cryptid gains darkvision. If the base creature already has darkvision, it gains greater darkvision.</p>"
+		},
+		"(Cryptid, Rumored) Creature Obscura": {
+			"name": "(Cryptid, Rumored) Creature Obscura",
+			"description": "<p>The cryptid appears in so many urban legends, it can be identified using Society or a Lore skill connected to a nearby settlement, in addition to the normal skills. However, much of the information known about it is dubious. The DC to identify a rumored cryptid is incredibly hard (rather than very hard for most rare creatures), but all failures to identify a rumored cryptid gain the effects of the @Compendium[pf2e.feats-srd.1Bt7uCW2WI4sM84P]{Dubious Knowledge} skill feat.</p>"
+		},
+		"(Cryptid, Rumored) Howl": {
+			"name": "(Cryptid, Rumored) Howl",
+			"description": "<p>The rumored cryptid calls out with a wretched sound no living creature should make. Each creature in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:] save. A creature that fails is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (or @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). A creature that succeeds is temporarily immune for 1 minute. The DC is the high DC for a creature of the rumored cryptid's level.</p>"
+		},
+		"(Cryptid, Rumored) Hybrid Form": {
+			"name": "(Cryptid, Rumored) Hybrid Form",
+			"description": "<p>The cryptid's form morphs to be like a specific animal as the tales get longer. The rumored cryptid gains either a burrow, climb, or swim Speed equal to its land Speed.</p>"
+		},
+		"(Cryptid, Rumored) Obscura Vulnerability": {
+			"name": "(Cryptid, Rumored) Obscura Vulnerability",
+			"description": "<p>The cryptid is weakened by those who seek its truth. Whenever a creature succeeds at a Recall Knowledge check to identify the rumored cryptid, the rumored cryptid becomes @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (or @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} if the Recall Knowledge check was a critical success).</p>"
+		},
+		"(Cryptid, Rumored) Shifting Form": {
+			"name": "(Cryptid, Rumored) Shifting Form",
+			"description": "<p>The cryptid is sustained by localized tales or reports from witnesses. As a result, its appearance morphs between different appearances. If all records of the rumored cryptid are destroyed or all witnesses die, the rumored cryptid ceases to exist.</p>"
+		},
+		"(Cryptid, Rumored) Stalk": {
+			"name": "(Cryptid, Rumored) Stalk",
+			"description": "<p><strong>Requirements</strong> The rumored cryptid is undetected</p>\n<hr />\n<p><strong>Effect</strong> The rumored cryptid swiftly stalks prey from hiding. It Strides, then Strikes.</p>"
+		},
+		"(Cryptid, Rumored) Vanishing Escape": {
+			"name": "(Cryptid, Rumored) Vanishing Escape",
+			"description": "<p>The rumored cryptid breaks away and fades into the background. It Strides, then Hides.</p>"
+		},
 		"(Divine Warden) Divine Destruction": {
 			"name": "(Divine Warden) Divine Destruction",
 			"description": "<p>When the divine warden is reduced to 0 HP, it erupts with divine energy in a @Template[type:emanation|distance:30], dealing [[/r {1d6}[damage]]]{1d6 damage} per level. This damage is either positive or negative, determined by the patron deity's divine font (chosen at the divine warden's creation if the deity offers a choice), and this ability gains the corresponding trait. Each creature in the area must attempt a @Check[type:will|dc:|traits:damaging-effect] save with the following outcomes.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes half damage.</p>\n<p><strong>Success</strong> The creature takes full damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} and @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature becomes @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
@@ -665,9 +761,73 @@
 			"name": "(Vampire, Jiang-Shi, Minister) Tumult of the Blood",
 			"description": "<p>The third time a jiang-shi successfully Drains Qi within a single minute, they become @Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. They can use their extra action only to Strike or Stride.</p>"
 		},
+		"(Vampire, Noferatu Overlord) Air of Sickness": {
+			"name": "(Vampire, Noferatu Overlord) Air of Sickness",
+			"description": "<p>@Template[type:emanation|distance:30] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A creature entering or starting its turn in the aura must attempt a @Check[type:fortitude|dc:] save with a moderate DC for the nosferatu's level. On a failure, the creature is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} and takes a -2 status penalty to saves made to resist diseases and remove the sickened condition for 1 hour.</p>"
+		},
+		"(Vampire, Noferatu Overlord) Paralytic Fear": {
+			"name": "(Vampire, Noferatu Overlord) Paralytic Fear",
+			"description": "<p><strong>Requirements</strong> The nosferatu overlord's last action was a successful claw Strike</p>\n<hr />\n<p><strong>Effect</strong> The nosferatu drags the target of the Strike close and freezes its mind in terror. The target must attempt a @Check[type:will|dc:] save with a moderate DC for the nosferatu's level.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} by fear until the end of the nosferatu's next turn.</p>\n<p><strong>Failure</strong> The target is @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} and takes a -2 circumstance penalty to its Fortitude DC against the nosferatu's Drink Blood ability until the end of the nosferatu's next turn.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+		},
+		"(Vampire, Noferatu Thrall) Fast Healing": {
+			"name": "(Vampire, Noferatu Thrall) Fast Healing",
+			"description": "<p>A nosferatu thrall gains fast healing 5 from being sustained by their master's blood.</p>"
+		},
+		"(Vampire, Noferatu Thrall) Mindbound": {
+			"name": "(Vampire, Noferatu Thrall) Mindbound",
+			"description": "<p>A nosferatu master exerts a fierce hold over their thrall's mind. If any creature other than the thrall's master targets them with an effect that would give them the @Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} condition, the thrall's master rolls a counteract check against it using their Dominate DC - 10 as the counteract check modifier.</p>"
+		},
+		"(Vampire, Noferatu Thrall) Mortal Shield": {
+			"name": "(Vampire, Noferatu Thrall) Mortal Shield",
+			"description": "<p><strong>Trigger</strong> The thrall's master would take damage from a Strike or spell attack and is in an adjacent square</p>\n<hr />\n<p><strong>Effect</strong> The thrall throws themself in front of their master, taking half the damage of the attack (before applying any weaknesses or resistances). The thrall's master takes the remaining damage, applying any weaknesses or resistances as normal.</p>"
+		},
+		"(Vampire, Noferatu Thrall) Rally": {
+			"name": "(Vampire, Noferatu Thrall) Rally",
+			"description": "<p><strong>Trigger</strong> The thrall ends their turn more than 30 feet away from their master</p>\n<hr />\n<p><strong>Effect</strong> The thrall Strides up to their Speed toward their master.</p>"
+		},
+		"(Vampire, Noferatu Thrall) Weakness": {
+			"name": "(Vampire, Noferatu Thrall) Weakness",
+			"description": "<p>The strain of being controlled wears on the nosferatu thrall's mind, giving them weakness 10 to mental damage.</p>"
+		},
+		"(Vampire, Nosferatu Overlord) Divine Innate Spells": {
+			"name": "(Vampire, Nosferatu Overlord) Divine Innate Spells",
+			"description": "<p>The nosferatu can cast <em>@Compendium[pf2e.spells-srd.tpLTLbJUrYcMWGld]{Telekinetic Haul}</em> (heightened to half their level rounded up) three times per day and <em>@Compendium[pf2e.spells-srd.fd31tAHSSGXyOxW6]{Vampiric Exsanguination}</em> twice per day as a divine innate spell. They use a high DC for their level.</p>"
+		},
+		"(Vampire, Nosferatu) Change Shape": {
+			"name": "(Vampire, Nosferatu) Change Shape",
+			"description": "<p>The nosferatu transforms into a swarm of pale-gray rats. They gain a land Speed of 30 feet and a climb Speed of 10 feet, and they become Large. Each enemy in the swarm's space takes [[/r {2d10}[piercing]]]{2d10 piercing damage} and must attempt a @Check[type:reflex|dc:|basic:true] save with a high DC for the creature's level. A creature that fails its save is exposed to plague of ancients.</p>"
+		},
+		"(Vampire, Nosferatu) Command Thrall": {
+			"name": "(Vampire, Nosferatu) Command Thrall",
+			"description": "<p><strong>Requirements</strong> One of the nosferatu's thralls is present and can hear the nosferatu</p>\n<hr />\n<p><strong>Effect</strong> The nosferatu gives a single command to one of their thralls, which the thrall follows to the best of its ability during its next turn.</p>"
+		},
+		"(Vampire, Nosferatu) Divine Innate Spells": {
+			"name": "(Vampire, Nosferatu) Divine Innate Spells",
+			"description": "<p>The nosferatu can cast <em>@Compendium[pf2e.spells-srd.tpLTLbJUrYcMWGld]{Telekinetic Haul}</em> (heightened to half their level rounded up) three times per day as a divine innate spell. They use a high DC for their level.</p>"
+		},
+		"(Vampire, Nosferatu) Dominate": {
+			"name": "(Vampire, Nosferatu) Dominate",
+			"description": "<p>The nosferatu can cast <em>@Compendium[pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{Dominate}</em> at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (@Check[type:will|dc:]). The save DC uses a high DC for the nosferatu's level, and a creature that succeeds is temporarily immune to that nosferatu's Dominate for 24 hours. Fully destroying the nosferatu ends the domination, but merely reducing the nosferatu to 0 HP is insufficient to break the spell.</p>"
+		},
+		"(Vampire, Nosferatu) Drink Blood": {
+			"name": "(Vampire, Nosferatu) Drink Blood",
+			"description": "<p><strong>Requirements</strong> The nosferatu's last action was a successful fangs Strike</p>\n<hr />\n<p><strong>Effect</strong> The nosferatu sinks their fangs into the targeted creature to drink its blood. This requires an Athletics check against the creature's Fortitude DC. On a success, the creature becomes @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}, and the nosferatu regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the nosferatu, but increases the creature's drained condition value by 1. A nosferatu can also consume blood that's been emptied into a vessel for sustenance, but they gain no HP from doing so.</p>\n<p>The target creature's drained condition value decreases by 1 per week. A blood transfusion, which requires a successful @Check[type:medicine|dc:20] check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.</p>"
+		},
+		"(Vampire, Nosferatu) Nosferatu Vulnerabilities": {
+			"name": "(Vampire, Nosferatu) Nosferatu Vulnerabilities",
+			"description": "<ul>\n<li><strong>Revulsion</strong> A nosferatu can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a non-evil deity. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the nosferatu involuntarily comes within 10 feet of an object of their revulsion, they gain the @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a nosferatu can attempt a @Check[type:will|dc:25|traits:concentrate] save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for [[/r 1d6 #Overcome Revulsions]]{1d6 rounds} (or 1 hour on a critical success).</li>\n<li><strong>Stake</strong> A magical wooden stake (such as one affected by a weapon potency rune, magic weapon, or similar magic) driven through the nosferatu's heart drops the nosferatu to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a nosferatu requires 3 actions and works only if the nosferatu is @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}. If the stake is removed, the nosferatu can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the nosferatu's head is severed and anointed with holy water while the stake is in place, the nosferatu is destroyed.</li>\n<li><strong>Sunlight</strong> If exposed to direct sunlight, a nosferatu immediately becomes @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. The slowed value increases by 1 each time the nosferatu ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the nosferatu loses all their actions in this way, they're destroyed.</li>\n</ul>"
+		},
+		"(Vampire, Nosferatu) Plague of Ancients": {
+			"name": "(Vampire, Nosferatu) Plague of Ancients",
+			"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:] (use a high DC for the nosferatu's level)</p>\n<hr />\n<p><strong>Onset</strong> 1 day</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 1}, @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 3}, and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 day)</p>\n<p><strong>Stage 4</strong> @Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 2}, drained 3, and enfeebled 3 (1 day)</p>\n<p><strong>Stage 5</strong> @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} (1 day)</p>\n<p><strong>Stage 6</strong> death</p>"
+		},
+		"(Vampire, Nosferatu) Plagued Coffin Restoration": {
+			"name": "(Vampire, Nosferatu) Plagued Coffin Restoration",
+			"description": "<p>Unlike other undead, a nosferatu isn't destroyed at 0 HP. Instead, they disperse into an immense number of individual rats heading in every direction in an attempt to return to their coffin. If even a single rat reaches the coffin, the nosferatu can recover. A nosferatu regains their strength through resting in earth taken from the grave of a creature who died of plague. If their body rests in their earth-filled coffin for 1 hour, the nosferatu gains 1 HP, after which their fast healing begins to function normally. If the coffin doesn't contain this plagued grave dirt, they instead need to rest in their coffin for 1 day before they gain 1 HP and regain their fast healing.</p>"
+		},
 		"(Vampire, Strigoi Progenitor) Create Spawn": {
 			"name": "(Vampire, Strigoi Progenitor) Create Spawn",
-			"description": "<p>If a creature dies after being reduced to 0 HP by Drink Essence or Domain of Dusk, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(10+@actor.data.data.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>\n<p>A victim that is 8th level or higher becomes a strigoi servant, while a lower-level victim instead becomes a moroi vampire</p>"
+			"description": "<p>If a creature dies after being reduced to 0 HP by Drink Essence or Domain of Dusk, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>\n<p>A victim that is 8th level or higher becomes a strigoi servant, while a lower-level victim instead becomes a moroi vampire</p>"
 		},
 		"(Vampire, Strigoi Progenitor) Drink Essence": {
 			"name": "(Vampire, Strigoi Progenitor) Drink Essence",
@@ -695,7 +855,7 @@
 		},
 		"(Vampire, Strigoi) Strigoi Weaknesses": {
 			"name": "(Vampire, Strigoi) Strigoi Weaknesses",
-			"description": "<p>All strigoi possess the following weaknesses:</p>\n<ul>\n<li><strong>Revulsion</strong> Strigoi are uncomfortable near mirrors or sources of bright light. Only a strigoi's shadow reflects in a mirror, and this often compels them to cover or destroy mirrors in their presence rather than risk their true nature being displayed. A strigoi can't voluntarily come within 10 feet of a brandished mirror or source of bright light. To brandish a mirror or light source, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the strigoi involuntarily comes within 10 feet of a brandished mirror or light source, it gains the @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the brandished object until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a strigoi can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/r 1d6 #Overcome Revulsions Duration]]{1d6 rounds} (or 1 hour on a critical success). A strigoi can move normally around mirrors or bright light sources that are not brandished, although doing so causes them discomfort that can be noticed with a successful Perception check to @Compendium[pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Sense Motive}.</li>\n<li><strong>Sunlight</strong> When exposed to direct sunlight, a strigoi immediately becomes @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and falls to the ground. It appears to be dead: it doesn't breathe, its body temperature matches its surroundings, and it doesn't react to pain or other stimuli. A successful @Check[type:perception|dc:resolve(10+@actor.data.data.saves.reflex.value)] check against the strigoi's Reflex DC is enough to note one anomaly: the shadow cast by its \"dead\" body shifts and moves slightly, its edges twisting and active. Spells like <em>@Compendium[pf2e.spells-srd.QnTtGCAvdWRU4spv]{Detect Evil}</em>, senses like lifesense, and the \"corpse\" taking damage from positive energy still function normally, and could reveal the truth without needing a successful Perception check. Viewing the \"corpse\" in a mirror's reflection can also reveal the truth, for only the body's shadow reflects. While in sunlight and unconscious, the strigoi loses its resistance to physical damage. If the strigoi takes enough damage that it would be reduced to 0 Hit Points, its body quickly decomposes, and the strigoi is destroyed.</li>\n<li><strong>Water Revulsion</strong> A strigoi cannot cross a significant source of running water (such as a creek, river, or waves on a seashore). A strigoi capable of flight can cross running water provided it approaches no closer than 10 feet to the liquid's surface. If forced into running water against its will, the strigoi becomes @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} and gains the fleeing condition as long as it remains in the water. At the end of any turn in which the strigoi remains in running water, it must succeed at a @Check[type:flat|dc:5] or be destroyed.</li>\n</ul>"
+			"description": "<p>All strigoi possess the following weaknesses:</p>\n<ul>\n<li><strong>Revulsion</strong> Strigoi are uncomfortable near mirrors or sources of bright light. Only a strigoi's shadow reflects in a mirror, and this often compels them to cover or destroy mirrors in their presence rather than risk their true nature being displayed. A strigoi can't voluntarily come within 10 feet of a brandished mirror or source of bright light. To brandish a mirror or light source, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the strigoi involuntarily comes within 10 feet of a brandished mirror or light source, it gains the @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} condition, running from the brandished object until it ends an action beyond 10 feet. After 1 round of being exposed to the subject of its revulsion, a strigoi can attempt a @Check[type:will|dc:25] save as a single action, which has the concentrate trait. On a success, it overcomes its revulsions for [[/r 1d6 #Overcome Revulsions Duration]]{1d6 rounds} (or 1 hour on a critical success). A strigoi can move normally around mirrors or bright light sources that are not brandished, although doing so causes them discomfort that can be noticed with a successful Perception check to @Compendium[pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Sense Motive}.</li>\n<li><strong>Sunlight</strong> When exposed to direct sunlight, a strigoi immediately becomes @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and falls to the ground. It appears to be dead: it doesn't breathe, its body temperature matches its surroundings, and it doesn't react to pain or other stimuli. A successful @Check[type:perception|dc:resolve(10+@actor.system.saves.reflex.value)] check against the strigoi's Reflex DC is enough to note one anomaly: the shadow cast by its \"dead\" body shifts and moves slightly, its edges twisting and active. Spells like <em>@Compendium[pf2e.spells-srd.QnTtGCAvdWRU4spv]{Detect Evil}</em>, senses like lifesense, and the \"corpse\" taking damage from positive energy still function normally, and could reveal the truth without needing a successful Perception check. Viewing the \"corpse\" in a mirror's reflection can also reveal the truth, for only the body's shadow reflects. While in sunlight and unconscious, the strigoi loses its resistance to physical damage. If the strigoi takes enough damage that it would be reduced to 0 Hit Points, its body quickly decomposes, and the strigoi is destroyed.</li>\n<li><strong>Water Revulsion</strong> A strigoi cannot cross a significant source of running water (such as a creek, river, or waves on a seashore). A strigoi capable of flight can cross running water provided it approaches no closer than 10 feet to the liquid's surface. If forced into running water against its will, the strigoi becomes @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} and gains the fleeing condition as long as it remains in the water. At the end of any turn in which the strigoi remains in running water, it must succeed at a @Check[type:flat|dc:5] or be destroyed.</li>\n</ul>"
 		},
 		"(Vampire, True) Change Shape": {
 			"name": "(Vampire, True) Change Shape",
@@ -707,7 +867,7 @@
 		},
 		"(Vampire, True) Create Spawn": {
 			"name": "(Vampire, True) Create Spawn",
-			"description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(@actor.data.data.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>"
+			"description": "<p>If a creature dies after being reduced to 0 HP by Drink Blood, the vampire can turn this victim into a vampire by donating some of its own blood to the victim and burying the victim in earth for 3 nights.</p>\n<p>If the new vampire is lower level than its creator, it is under the creator's control. If a vampire controls too many spawn at once (as determined by the GM), strong-willed spawn can free themselves by succeeding at a @Check[type:will|dc:resolve(@actor.system.saves.will.value)|name:Escape Thralldom] saving throw against the vampire's Will DC.</p>"
 		},
 		"(Vampire, True) Dominate": {
 			"name": "(Vampire, True) Dominate",
@@ -841,6 +1001,26 @@
 			"name": "(Worm That Walks) Swarm Shape",
 			"description": "<p>The worm that walks collapses into a shapeless swarm of worms. It drops all held, worn, and carried items.</p>\n<p>While discorporated, the worm that walks can't use attack actions and can't cast spells, but it can move through areas small enough for its individual worms to fit without having to Squeeze. It can use the same action to coalesce back into its normal form.</p>"
 		},
+		"(Zombie, Shock) Arcing Strikes": {
+			"name": "(Zombie, Shock) Arcing Strikes",
+			"description": "<p>When a shock zombie hits a creature with a melee attack, an arc of lighting leaps to a second creature, dealing [[/r {1d12}[electricity]]]{1d12 electricity damage}. This secondary target must be within 10 feet of the shock zombie's original target and must be the creature closest to the original target (if multiple creatures are equidistant, the shock zombie chooses which to affect).</p>"
+		},
+		"(Zombie, Shock) Breath Weapon": {
+			"name": "(Zombie, Shock) Breath Weapon",
+			"description": "<p>The shock zombie breathes lightning, dealing [[/r {4d12}[electricity]]]{4d12 electricity damage} in a @Template[type:line|distance:40] (@Check[type:reflex|dc:24|basic:true]). It can't use its Breath Weapon again for 1 minute.</p>"
+		},
+		"(Zombie, Shock) Electromechanical Phasing": {
+			"name": "(Zombie, Shock) Electromechanical Phasing",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The shock zombie activates its electromechanical components and begins phasing in and out of reality. The shock zombie casts <em>@Compendium[pf2e.spells-srd.zR67Rt3UMHKC5evy]{Blink}</em> as a 4th-level divine innate spell.</p>"
+		},
+		"(Zombie, Shock) Lightning Rod": {
+			"name": "(Zombie, Shock) Lightning Rod",
+			"description": "<p><strong>Trigger</strong> A spell or ability with the electricity trait is used within 30 feet of the shock zombie</p>\n<hr />\n<p><strong>Effect</strong> The shock zombie attempts to counteract the spell or ability (counteract level 3, counteract modifier [[/r 1d20+17 #Counteract]]{+17}), harmlessly redirecting the electricity into one of its electricity coils.</p>"
+		},
+		"(Zombie) Ankle Biter": {
+			"name": "(Zombie) Ankle Biter",
+			"description": "<p>This zombie fights just as well on the ground as it does standing. While @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, the zombie isn't @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}, it ignores the status penalty to its attack rolls, and it gains a +2 circumstance bonus to Athletics checks to @Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip}. The zombie can also move up to half its Speed when it Crawls.</p>"
+		},
 		"(Zombie) Disgusting Pustules": {
 			"name": "(Zombie) Disgusting Pustules",
 			"description": "<p>The zombie is covered in pustules that rupture when it takes any piercing damage or any critical hit.</p>\n<p>In either case, adjacent creatures are hit with vile fluid, causing them to become @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} unless they succeed at a @Check[type:fortitude|dc:|name:Disgusting Pustules] save.</p>"
@@ -853,9 +1033,17 @@
 			"name": "(Zombie) Infested Zombie",
 			"description": "<p>The zombie's flesh is infested with swarming vermin. When the zombie is hit with a critical hit or destroyed, the swarm is set free. Its initiative is immediately after the zombie's. If the swarm is 4 or more levels lower than the zombie, it isn't worth XP (and doesn't add its XP to the encounter budget).</p>"
 		},
+		"(Zombie) Persistent Limbs": {
+			"name": "(Zombie) Persistent Limbs",
+			"description": "<p>The first time the zombie is critically hit with a melee or ranged Strike, a limb falls off its body and continues to attack. The limb acts on the zombie's initiative; each round it can Stride up to half the zombie's Speed and make a Strike. The limb uses and contributes to the zombie's multiple attack penalty.</p>"
+		},
 		"(Zombie) Plague-Ridden": {
 			"name": "(Zombie) Plague-Ridden",
 			"description": "<p>The zombie carries a plague that can create more of its own kind.</p>\n<p>This functions as the @Compendium[pf2e.pathfinder-bestiary.KxN9aGFGPxl6oLGF]{Plague Zombie's} zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.</p>\n<hr />\n<p><strong>Zombie Rot</strong></p>\n<p>An infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:|name:Zombie Rot]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[negative]]]{1d6 negative damage} (1 day)</p>\n<p><strong>Stage 3</strong> [[/r {1d6}[negative]]]{1d6 negative damage} (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {1d6}[negative]]]{1d6 negative damage} (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as another of the zombie's type immediately</p>"
+		},
+		"(Zombie) Putrid Stench": {
+			"name": "(Zombie) Putrid Stench",
+			"description": "<p>@Template[type:emanation|distance:15] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>The zombie's rotting flesh is particularly malodorous. A creature that enters the area must attempt a @Check[type:fortitude|dc:] save. On a failure, the creature is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure, the creature also takes a -5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all zombies' putrid stenches for 1 minute.</p>"
 		},
 		"(Zombie) Rotting Aura": {
 			"name": "(Zombie) Rotting Aura",
@@ -868,6 +1056,10 @@
 		"(Zombie) Tearing Grapple": {
 			"name": "(Zombie) Tearing Grapple",
 			"description": "<p>The zombies work in groups to rip foes to pieces. Whenever a zombie with this ability successfully @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapples} a foe that's already @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} by another zombie with this ability, they violently struggle over the poor victim, dealing fist damage (or a similar Strike's damage if the zombie doesn't have a fist Strike). If the grapple is a critical success, the target takes double damage and ceases being grabbed or restrained by any other creatures. If the zombie has the @Compendium[pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab} ability, using Grab deals half its fist Strike damage to the target.</p>"
+		},
+		"(Zombie) Unholy Speed": {
+			"name": "(Zombie) Unholy Speed",
+			"description": "<p>The zombie gains a +10 status bonus to all its Speeds.</p>"
 		},
 		"(Zombie) Unkillable": {
 			"name": "(Zombie) Unkillable",
