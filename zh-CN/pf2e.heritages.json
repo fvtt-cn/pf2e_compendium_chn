@@ -95,7 +95,7 @@
         },
         "Charhide Goblin": {
             "name": "焦皮地精 Charhide Goblin",
-            "description": "<p>你的祖先总是与火关系密切，还长着能抵抗灼烧的厚厚皮肤。你获得等于你等级一半的火焰抗性（最低1点）。你还更容易扑灭身上的火焰。你用于移除持续性火焰伤害的纯检定（flat check）DC为10而非15，如果有其他生物用特别合适的动作帮助你，则该DC降低到5。</p>"
+            "description": "<p>你的祖先总是与火关系密切，还长着能抵抗灼烧的厚厚皮肤。你获得等于你等级一半的火焰抗性（最低1点）。你还更容易扑灭身上的火焰。你用于移除持续性火焰伤害的纯检定（flat check）DC为@Check[type:flat|dc:10]而非15，如果有其他生物用特别合适的动作帮助你，则该DC降低到@Check[type:flat|dc:5]。</p>"
         },
         "Clawed Catfolk": {
             "name": "长爪猫族 Clawed Catfolk",
@@ -355,7 +355,7 @@
         },
         "Liminal Fetchling": {
             "name": "阈限窃影鬼 Liminal Fetchling",
-            "description": "<p>你的血脉与灵界或阴影位面有更紧密的联系，并且你可以将这样的联系投射到在位面之间不可见的领域。当你通过搜索（Seek）动作来定位60尺内的 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 生物时，你获得+1环境加值。当你以 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 的生物作为目标时，你的纯骰鉴定DC为3而不是5，当你以无踪的生物作为目标时，你的纯骰鉴定DC为9而不是11。</p>"
+            "description": "<p>你的血脉与灵界或阴影位面有更紧密的联系，并且你可以将这样的联系投射到在位面之间不可见的领域。当你通过搜索（Seek）动作来定位60尺内的 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 生物时，你获得+1环境加值。当你以 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 的生物作为目标时，你的纯骰检定DC为@Check[type:flat|dc:3]而不是5，当你以无踪的生物作为目标时，你的纯骰检定DC为@Check[type:flat|dc:9]而不是11。</p>"
         },
         "Longsnout Rat": {
             "name": "长鼻鼠族 Longsnout Rat",
@@ -367,11 +367,11 @@
         },
         "Lotus Leshy": {
             "name": "Lotus Leshy",
-            "description": "<p>You effortlessly float on the surface of water. You can walk on the surface of still water and other non-damaging liquids, moving at half your normal Speed. You can attempt to walk along the surface of flowing water as well, still moving at half Speed, but doing so requires a successful Acrobatics check to Balance using the DC of a Swim check to move through the water; on a failure, you fall into the water. This Acrobatics check doesn't use an action.</p>"
+            "description": ""
         },
         "Luminous Sprite": {
             "name": "萤火妖精 Luminous Sprite",
-            "description": "<p>你闪耀着魔法光辉，如自然地发出火炬一样的光亮；这种光亮具有塑能、光和原能特性。你可以用一个动作来熄灭、重新点燃或改变这种光的颜色，这个动作具有专注特性。</p>"
+            "description": "<p>你闪耀着魔法光辉，如自然地发出@Compendium[pf2e.equipment-srd.8Jdw4yAzWYylGePS]{火炬 Torch}一样的光亮；这种光亮具有塑能、光和原能特性。你可以用一个动作来熄灭、重新点燃或改变这种光的颜色，这个动作具有专注特性。</p>"
         },
         "Mage Automaton": {
             "name": "施法型灵导械 Mage Automaton",
@@ -391,11 +391,11 @@
         },
         "Murkeyed Azarketi": {
             "name": "浊水阿扎克缇人 Murkeyed Azarketi",
-            "description": "<p>你生活在浑浊的水域，已经习惯了在低能见度的环境中生活。当你瞄准隐蔽（concealed）的生物时，你只需要成功地进行DC 3裸骰检定，而当瞄准藏匿（hidden）的生物时，则需要成功地进行DC 9裸骰检定。</p>"
+            "description": "<p>你生活在浑浊的水域，已经习惯了在低能见度的环境中生活。当你瞄准隐蔽（concealed）的生物时，你只需要成功地进行@Check[type:flat|dc:3]检定，而当瞄准藏匿（hidden）的生物时，则需要成功地进行@Check[type:flat|dc:9]检定。</p>"
         },
         "Mutated Fleshwarp": {
             "name": "突变塑肉体 Mutated Fleshwarp",
-            "description": "<p>你起源于法力废墟（Mana Wastes）或其他不受控制的狂乱魔法区域，并被魔法影响而变异。归功于你变强或增生的器官，你从持续流血伤害中恢复的纯骰鉴定DC从15降低为10。如果你在恢复流血伤害的过程中得到了有效的协助，则DC从10降低到5。</p>"
+            "description": "<p>你起源于法力废墟（Mana Wastes）或其他不受控制的狂乱魔法区域，并被魔法影响而变异。归功于你变强或增生的器官，你从持续流血伤害中恢复的纯骰鉴定DC从15降低为@Check[type:flat|dc:10]{10}。如果你在恢复流血伤害的过程中得到了有效的协助，则DC从10降低到@Check[type:flat|dc:5]{5}。</p>"
         },
         "Nightglider Strix": {
             "name": "夜翔枭鬼 Nightglider Strix",
@@ -559,7 +559,7 @@
         },
         "Smokeworker Hobgoblin": {
             "name": "行军大地精 Smokeworker Hobgoblin",
-            "description": "<p>你的家族好几代都是炼金术士、工程师、以及科学家，持续钻研着用于将火焰和烟雾带到战场上的军事项目。你获得等同于你等级一半的火焰抗性（最低1点）。你在瞄准一个只受到烟雾造成的 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}的生物时需要进行的DC 5的纯骰检定中自动成功。</p>"
+            "description": "<p>你的家族好几代都是炼金术士、工程师、以及科学家，持续钻研着用于将火焰和烟雾带到战场上的军事项目。你获得等同于你等级一半的火焰抗性（最低1点）。你在瞄准一个只受到烟雾造成的 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}的生物时需要进行的@Check[type:flat|dc:5]检定中自动成功。</p>"
         },
         "Snaptongue Grippli": {
             "name": "利舌树蛙人 Snaptongue Grippli",
@@ -599,7 +599,7 @@
         },
         "Steelskin Hobgoblin": {
             "name": "钢皮大地精 Steelskin Hobgoblin",
-            "description": "<p>当你被割伤或烧伤时，你的身体会产生反应，生成一种强韧又柔软的茧包复创口。久而久之，这让你身体上最脆弱的地方变得更坚硬，能抵抗更多的伤害。许多钢皮大地精会刻意用刀刃和火焰在自己的身体上留下错综复杂的疤痕图纹，但这并不普遍。你从持续型物理（包括流血）、能量或毒素伤害中恢复的纯骰检定的DC是13（替换15），在得到特别有效的辅助时，纯骰检定DC变为8。</p>"
+            "description": "<p>当你被割伤或烧伤时，你的身体会产生反应，生成一种强韧又柔软的茧包复创口。久而久之，这让你身体上最脆弱的地方变得更坚硬，能抵抗更多的伤害。许多钢皮大地精会刻意用刀刃和火焰在自己的身体上留下错综复杂的疤痕图纹，但这并不普遍。你从持续型物理（包括流血）、能量或毒素伤害中恢复的纯骰检定的DC是@Check[type:flat|dc:13]{13}（替换15），在得到特别有效的辅助时，纯骰检定DC变为@Check[type:flat|dc:8]{8}。</p>"
         },
         "Stickytoe Grippli": {
             "name": "黏趾树蛙人 Stickytoe Grippli",
