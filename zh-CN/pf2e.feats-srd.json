@@ -13708,7 +13708,8 @@
             "description": "<p><strong>触发</strong> 你进行心力解放。</p>\n<hr />\n<p>当你心力解放时，你所有的愤怒和苦痛——你心灵中献给残酷报复的那部分——随之而来。</p>\n<p>当你心力解放时、以及整个心力解放期间，你的暗黑人格的负面情绪不断地冲击着@Template[type:emanation|distance:30]{30尺弥漫}范围内的所有生物。生物在第一次进入该扩散范围时，或在你进行该动作时处于扩散范围内时，必须对抗你的法术DC进行@Check[type:will|dc:resolve(@actor.system.attributes.spellDC.value)]；它不需要再次尝试豁免，即使它离开区域后返回。因你的暗黑人格存在而惊惧的生物，在范围不能将其惊惧值降低到1以下。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 该生物@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 该生物@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>\n<p>在你心力解放时，你的暗黑人格一心专注于毁灭。你只能@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施展 Cast a Spell}直接伤害敌人或物品，或造成负面状态/减值的法术。</p>"
         },
         "Deep Roots": {
-            "name": "深植于心 Deep Roots"
+            "name": "深植于心 Deep Roots",
+            "description": "<p>你的心灵控制法术深深地扎根于心灵之中，即使在被移除或者正常结束时也会撕裂目标的心灵。当你施展一个造成@Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{被控制 Controlled}状态或用其他方式强迫目标执行某些动作（例如<em>@Compendium[pf2e.spells-srd.aIHY2DArKFweIrpf]{命令术 Command}</em>）的法术时，你可以选择1个在豁免中大失败的目标。当这个目标完成了法术要求的任何命令之后，或当法术被解除或反制之后，他受到每法术环级[[/r {1d6}[mental]]]{1d6心灵伤害}。</p>"
         },
         "Foreseen Failure": {
             "name": "预观败局 Foreseen Failure",
@@ -13741,6 +13742,50 @@
         "Homing Beacon": {
             "name": "导向信标 Homing Beacon",
             "description": "<p>当你的法术打击了目标，你在他的心灵中植入了一个信标，将他的存在广播给周围的人。用这个增幅替换心能戏法通常的增幅条目。增幅法术必须有1个或多个目标，且必须需要一个法术攻击骰或豁免骰。</p>\n<hr />\n<p><strong>增幅</strong> 选择1个被法术命中的生物（如果法术有法术攻击骰）或1个在对抗法术的豁免中失败的生物（如果法术需要一个豁免）。心能信标释放出信号，让观察者自然注意到该生物，使该生物在1分钟内更容易被发现。如果该生物@Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}，他在1分钟内变成@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。如果该生物隐蔽，他在1分钟内不再隐蔽。</p>"
+        },
+        "Unlimited Potential": {
+            "name": "无限潜能 Unlimited Potential",
+            "description": "<p><strong>频率</strong> 每分钟1次</p>\n<hr />\n<p>魔法的法则只在你需要它们时才能限制你的思想，而你已经成长到不需要这种限制了。如果你的下一个动作是使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}动作施放一个不高于5环且没有持续时间的法术，你不会在施放这个法术时消耗法术位。</p>"
+        },
+        "Become Thought": {
+            "name": "形灭神存 Become Thought",
+            "description": "<p>你褪去了一些物质形态，化为纯粹的思念体，这带来以下效果：</p>\n<ul>\n<li>你获得对物理伤害的10点抗力，但获得对心灵伤害的5点弱点以及对任何专门会对灵魂造成伤害的效果(如<em>@Compendium[pf2e.spells-srd.PHVHBbdHeQRfjLmE]{灵魂冲击 Spirit Blast}</em>)的10点弱点。</li>\n<li>你可以在一念之间改变外貌。这需要一个有专注特征的单动作，效果如同法术<em>@Compendium[pf2e.spells-srd.i35dpZFI7jZcRoBo]{幻象伪装 Illusory Disguise}</em>，并持续到你再次改变外貌。</li>\n<li>每年1次，当你死亡，只要在你的位面上有一个活着的知觉生物记得你，你就可以在第二天自动重生；这些记忆让你可以从他们的思念中重新塑造自己。你出现在一个对你思念最为强烈的生物身边。</li>\n</ul>"
+        },
+        "Shatter Space": {
+            "name": "撕裂空间 Shatter Space",
+            "description": "<p>你的心能魔法强大的威力撕裂现实。用这个增幅替换心能戏法通常的增幅条目。这个戏法必须使用2个或更多动作施展。</p>\n<hr />\n<p><strong>增幅</strong> 你或法术的一个目标被撕裂的空间漩涡所环绕。这是一个灵光，你选择其范围，最大20尺。在灵光内开始回合或在其回合中进入灵光范围的生物受到该戏法环级[[/r {1d6}[slashing]]]{1d6挥砍伤害}，使用基础反射豁免对抗你的法术DC。如果生物在豁免中大失败，撕裂的空间令它失去平衡并@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。灵光持续到你的下一回合开始。你可以选择灵光是否影响位于弥漫中心的生物。</p>"
+        },
+        "Deepest Wellspring": {
+            "name": "至深法源 Deepest Wellspring",
+            "description": "<p>你窥见了意识最深之处。将你的聚能池中的聚能点数量提升1点。如果你在上次再聚能后花费了至少3点聚能点，你在再聚能时恢复3点聚能点，即使你将聚能点花费在心能者能力之外的用途上。</p>"
+        },
+        "All in Your Head": {
+            "name": "尽由此心 All in Your Head",
+            "description": "<p><strong>触发</strong> 你将要进行一次反射或强韧豁免。</p>\n<hr />\n<p>烈火灼身，猛毒入体——你拒绝相信它们存在，而只要你不相信，就没有什么能影响你。你尝试用意志豁免而非强韧或反射来对抗触发的效果。在这次豁免中，你不会获得心智坚壁或心智堡垒的好处。</p>"
+        },
+        "Mind Over Matter": {
+            "name": "心胜于物 Mind Over Matter",
+            "description": "<p>你心灵的限制只取决于你的想象力。你获得一个额外的10环法术位。</p>"
+        },
+        "Constant Levitation": {
+            "name": "常时临空 Constant Levitation",
+            "description": "<p>你的力量将你从脚下的大地解放出来。你持续受到<em>@Compendium[pf2e.spells-srd.A2JfEKe6BZcTG1S8]{飞行术 Fly}</em>的影响，当你心力解放时，你在飞行速度上获得10尺状态加值。</p>"
+        },
+        "Cranial Detonation": {
+            "name": "颅爆 Cranial Detonation",
+            "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>触发</strong> 你成功用法术将一个或更多的有心智敌人降到0生命值</p>\n<hr />\n<p>当你的心力压垮一个生物时，你能利用他飘渺的意识，从该生物的头内释放心能能量的爆炸。每个被你降至0生命值的敌人死亡，且它的头颅爆炸。爆炸在该敌人的@Template[type:emanation|distance:15]{15尺弥漫}范围内产生冲击波。弥漫范围内的每个生物都承受[[/r {10d6}[bludgeoning]]]{10d6钝击伤害}，适用@Check[type:reflex|dc:resolve(@actor.system.attributes.spellDC.value)|basic:true]。如果爆炸伤害将一个生物降低到0生命值，它的头也会爆炸，这可能会伤害到更多生物并引发更多颅爆。每个生物只能在一次颅爆能力的使用中受到一次伤害。</p>"
+        },
+        "Target of Psychic Ire": {
+            "name": "心怒聚焦 Target of Psychic Ire",
+            "description": "<p>你的魔法使周围的环境充满了仇恨的精神能量。使用这个增幅代替戏法的通常增幅条目，该戏法必须需要2个或更多动作才能施放，并且以生物为目标。</p>\n<hr />\n<p><strong>增幅</strong> 选择法术的一个目标。种种精神现象向这一目标发难——例如，物件忽然撞向生物。在目标的每个回合开始时，它将受到每法术环级[[/r {1d4}[bludgeoning]]]{1d4钝击伤害}，适用基础反射豁免。目标将在3个回合中持续受到心怒聚焦的标记。即使你@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或离开该区域，该效果也会持续。</p>"
+        },
+        "Wandering Thoughts": {
+            "name": "飘渺游思 Wandering Thoughts",
+            "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 你最近的一个动作是施法@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}。</p>\n<hr />\n<p>当你心力解放时，每次施法迸发的魔力曲折你身周的空间，而你可以经由空间折叠移动。你传送15尺到你能看见的一个方格。</p>"
+        },
+        "Twin Psyche": {
+            "name": "双发心力 Twin Psyche",
+            "description": "<p>你将心力分隔开来，使其协同发效。当你进行心力解放时，你将其持续时间翻倍。</p>"
         }
     }
 }
