@@ -4070,7 +4070,7 @@
         },
         "Enhanced Familiar": {
             "name": "强化魔宠 Enhanced Familiar",
-            "description": "<p><strong>(德鲁伊)</strong> 你将额外的魔法能量注入到你的魔宠体内。</p>\n<p><strong>(魔战士)</strong> 你向你的魔宠灌注魔法能量。</p>\n<p><strong>(术士，法师，女巫)</strong> 你为你的魔宠注入额外的魔力。</p>\n<p><strong>(Thaumaturge)</strong> By applying the best of multiple traditions of magic, you’ve found a more efficient way for your familiar to store its energy.</p>\n<hr />\n<p>你每天可以选择四个魔宠或主人（master）能力（ability），而非原来的两个。</p>"
+            "description": "<p><strong>(德鲁伊)</strong> 你将额外的魔法能量注入到你的魔宠体内。</p>\n<p><strong>(魔战士)</strong> 你向你的魔宠灌注魔法能量。</p>\n<p><strong>(术士，法师，女巫)</strong> 你为你的魔宠注入额外的魔力。</p>\n<p><strong>(奇术师)</strong> 通过应用多根源魔法中最精华的部分，你找到一种方式能更有效地在你的魔宠中储存能量。</p>\n<hr />\n<p>你每天可以选择四个魔宠或主人（master）能力（ability），而非原来的两个。</p>"
         },
         "Enigma's Knowledge": {
             "name": "谜知识 Enigma's Knowledge",
@@ -4487,7 +4487,7 @@
         },
         "Familiar": {
             "name": "魔宠 Familiar",
-            "description": "<p><strong>(魔战士, 术士, 法师)</strong> 你与生物建立契约，为你服务并协助你施法。你获得一个魔宠。</p>\n<p><strong>(Thaumaturge)</strong> Whether by following occult rituals, piecing together scraps of arcane theory, or some other method, you've called forth a creature that now serves as your constant companion in your studies of the supernatural. You gain a familiar.</p>"
+            "description": "<p><strong>(魔战士, 术士, 法师)</strong> 你与生物建立契约，为你服务并协助你施法。你获得一个魔宠。</p>\n<p><strong>(奇术师)</strong> 无论是通过异能仪式，还是把奥术理论的残片组合起来，或者是通过其他手段，你呼唤了一个生物作为你的长期伙伴在超自然研究上为你服务。你获得一个魔宠。</p>"
         },
         "Familiar Conduit": {
             "name": "导魔魔宠 Familiar Conduit",
@@ -13842,6 +13842,166 @@
         "Storming Breath": {
             "name": "风暴吐息 Storming Breath",
             "description": "<p>你释放出能量吐息或音波咆哮。你对@Template[type:cone|distance:30]{30尺锥形}内所有生物造成[[/r 4d6 #Damage]]{4d6 damage}，超过6级之后每级还能再增加1d6伤害，@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]。</p>\n<p>[[/r ((-2+@actor.level)d6]]]{按等级计算的伤害}</p>\n<hr />\n<p><strong>觉醒</strong> 你强大的爆发力量冲击敌人。豁免大失败的生物还会@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>觉醒</strong> 爆发的反作用力让你快速逃离。当你使用此能力时，你朝着相反的方向直线飞行15尺。该移动不会触发那些由移动动作触发的反应动作。</p>"
+        },
+        "Unlimited Demesne": {
+            "name": "无拘领地 Unlimited Demesne",
+            "description": "<p>你可以到处移动你的领地，在你的旅程中随身携带。你的领地扩展到最大10,000平方尺。每天一次，你可以呼唤你的领地，这个过程要花费1分钟。这具有<em>@Compendium[pf2e.spells-srd.KPDHmmjJiw7PhTYF]{璀璨豪宅 Resplendent Mansion}</em>法术效果，但它是将你的领地从原来的位置召唤过来，将@Compendium[pf2e.feats-srd.rHV8GUqqt8WLgTJp]{奇术领地 Thaumaturge's Demesne}的所有效果额外添加到该法术的效果之上。你必须能够宣称新的区域作为你的领地，有着和奇术领地相同的限制。</p>"
+        },
+        "Root to Life": {
+            "description": "<p>万寿菊，彼岸花，薄荷——许多原能根源将鲜花和植物与生死之间的边界联系在一起，你可以改变这种联系，让一个盟友留在边线的这边。你在邻接的@Compendium[pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying}生物旁边放置一株小植物或类似的标志，立刻稳定他的伤势；该生物不再濒死，改为在0生命值的情况下@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。</p>\n<p>如果你花费2个动作而非1个，你通过一声明快的民间祝福赋予这个动作更多的力量以驱逐持续中的痛苦，并在该动作上添加听觉特征。当你这么做，尝试纯骰检定以移除影响目标的每种来源的持续伤害；由于这种帮助特别有效，纯骰检定的DC是10而非15。</p>",
+            "name": "根植生命 Root to Life"
+        },
+        "Scroll Esoterica": {
+            "name": "卷轴秘藏 Scroll Esoterica",
+            "description": "<p>你的秘藏包含了一些卷轴的残片、魔法书卷、德鲁伊标记、以及其他类似的物品，你可以使用这些物品来创造临时性的卷轴。每天在你的每日准备期间，你可以创造一个包含了任意根源的1环法术的临时卷轴。该法术必须是常见的，或你必须用某种方法获得该法术的访问许可。这种卷轴是不稳定的，临时性的物品，如果你在下一次每日准备之前还没有使用该卷轴，它就会失去魔法效力。它无法被用来@Compendium[pf2e.actionspf2e.Q5iIYCFdqJFM31GW]{学习法术 Learn the Spell}。</p>\n<p>在8级，添加第二个包含了一个2环法术的临时卷轴。</p>"
+        },
+        "Scroll Thaumaturgy": {
+            "name": "卷轴奇术 Scroll Thaumaturgy",
+            "description": "<p>你对魔法的广泛研究意味着你轻易就知道如何启动卷轴中的魔法。你可以启动任意魔法根源的卷轴，使用你的奇术师职业DC作为卷轴的DC，而非特定的法术DC。如果一个法术位于多个根源的法术表上，你在启动卷轴时选择使用哪个根源。你可以使用正持握着奇具的手取出并启动卷轴，十分类似你对秘藏的做法。</p>"
+        },
+        "Seven-Part Link": {
+            "name": "七星链 Seven-Part Link",
+            "description": "<p>许多传统都将数字7赋予了重要意义。通过分配由七部分组成的秘藏的这些部件，你创造了一张魔网，让你的盟友可以跨过一段距离互相影响。当你在你的每日准备期间使用@Compendium[pf2e.feats-srd.S5vOQ7J8DKR8sEj0]{对偶链 Paired Link}时，你可以将用于链接的秘藏分给最多6名自愿的盟友，并自己保留1片。在对偶链的通常效果之外，如果1个链接的盟友施展了一个射程为触及的法术，他可以用该法术瞄准一个30尺内的链接盟友。</p>"
+        },
+        "Sever Magic": {
+            "name": "斩断魔法 Sever Magic",
+            "description": "<p><strong>需求</strong> 你正持握着一个奇具。</p>\n<hr />\n<p>你附上磨损的细线，符箓的灰烬，或类似的已消耗的咒具，然后你挥舞着以破坏法术。对一个敌人进行一次近战打击。如果你命中并造成伤害，你尝试反制在目标身上启动着的一个法术（由你选择）。你的反制等级等于你等级的一半（向上取整），你的反制检定调整值等于你职业DC-10。</p>"
+        },
+        "Share Weakness": {
+            "name": "共享弱点 Share Weakness",
+            "description": "<p><strong>需求</strong> 你使用凡体弱点发掘了一个生物的弱点。</p>\n<hr />\n<p>你从你的秘藏中选择了一件对你来说具有重大个人价值的物品，例如吊坠盒或珍贵的戒指，然后你将其给予一个盟友，并与之建立了一种个人链接，让他能够像你一样影响一名敌人。该盟友的打击能从你的凡体弱点中，按照和你的打击一样的方式触发弱点。在你的弱点发掘终止时，或你再次使用共享弱点时，该增益终止。</p>"
+        },
+        "Divine Disharmony": {
+            "description": "<p>你从你收集的宗教杂物中取出对立的神圣物品——例如两个互为仇敌的神祇的宗教标志——然后将它们组合在一起展示，并导致一种神圣能量的失调，尤其能干扰那些信徒。你选择进行一个欺骗或威吓检定，对抗一个60尺范围内你可以看得到的一个生物的意志DC，并带有下述结果。如果该生物特别忠于一名神祇，例如它是一名牧师、天族、观察者、魔族、或其他拥有神术法术的生物，你在你的技能检定上获得+2环境加值。GM可以决定一个轻视所有神祇的生物，例如阿尔古苏，不受该能力的影响。</p>\n<hr />\n<p><strong>大成功</strong> 该生物对你的攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到你下一回合结束。</p>\n<p><strong>成功</strong> 该生物对你的攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到你当前回合结束。</p>",
+            "name": "神力失谐 Divine Disharmony"
+        },
+        "Shared Warding": {
+            "name": "共享守护 Shared Warding",
+            "description": "<p>每当你对自己施加针对敌人的守护时，你也能从这些敌人的攻击中守护你的盟友。当你从秘传守护Esoteric Warden中获得AC和豁免上状态加值时，你可以选择为30尺内的所有盟友提供相同的增益。</p>"
+        },
+        "Thaumaturge's Investiture": {
+            "name": "奇术绑定 Thaumaturge's Investiture",
+            "description": "<p>魔法装备是你的买卖工具，你知道你需要尽可能多的工具来帮助你对抗超自然。你获得@Compendium[pf2e.feats-srd.4vu6P3cYoOOeUbLK]{额外绑定 Incredible Investiture}技能专长，将你可以绑定物品的数量限制从10提升至12。如果你的魅力达到18，限制提升至14个，魅力20则16个，魅力22则18个，魅力24则20个。</p>"
+        },
+        "Thaumaturge's Demesne": {
+            "name": "奇术领地 Thaumaturge's Demesne",
+            "description": "<p>你宣称一个区域或地点是你的领地，为你提供守护它的力量。当你选择该专长时，选择一个领地，这是一个不超过2,000平方尺的区域。你必须合法地拥有这个区域，如果这是一片公共区域，你必须对这片区域提出占有要求，并没有任何人对此提出抗议。</p>\n<p>一旦你选择了你的领地，它自动受到<em>@Compendium[pf2e.spells-srd.onjZCEHs3JJJRTD0]{隐秘领域 Private Sanctum}</em>奥术法术的保护，持续时间无限，升阶到你等级的一半（取高）；如果需要，使用你的奇术师职业DC替换法术DC。另外，领地被3个隐形仆役照看，如同施展了一个成功的<em>@Compendium[pf2e.spells-srd.uuoPmbjEtqzWZs0v]{隐形仆役群 Unseen Custodians}</em>仪式，且区域内的一件物品获得一个元素哨卫，如同施展了一个成功的<em>@Compendium[pf2e.spells-srd.rOwOLlfVgLMg1FND]{元素哨卫 Elemental Sentinel}</em>仪式。</p>"
+        },
+        "Talisman Esoterica": {
+            "name": "护符秘藏 Talisman Esoterica",
+            "description": "<p>你知道如何将你秘藏中的超自然物品组合成一些临时的护符。每天在你的每日准备期间，你可以制作2个护符，其物品等级不高于你等级的一半。你必须知道每件护符的公式。由这种方法创造的护符是临时物品，并会在你下一次进行每日准备时失去其魔法效力。</p>\n<p>你知道核心规则书中等级不高于你的所有常见护符的公式。你通过口头传统或助记法来记忆你的护符公式，因此你不需要为这些护符使用公式书。</p>"
+        },
+        "Thaumaturgic Ritualist": {
+            "name": "奇术主祭 Thaumaturgic Ritualist",
+            "description": "<p>你对超自然的研究结果形成了关于仪式的完备知识。你在执行仪式时的所有主要检定中获得+2环境加值。你学会2个等级不高于你等级一半的罕见仪式；你必须满足施展仪式的所有先决条件才能选择该仪式。你可以作为主施法者施展仪式，但你不能将仪式教授给其他人，也不能让其他人担任主施法者，除非他也知晓这个仪式。</p>\n<p>在8级及之后每4级，你学会另一个等级不高于你等级一半的罕见仪式，你也需要满足该仪式的先决条件。</p>"
+        },
+        "Trespass Teleportation": {
+            "name": "介入传送 Trespass Teleportation",
+            "description": "<p><strong>需求</strong> 你正受益于弱点发掘。</p>\n<p><strong>触发</strong> 你弱点发掘的目标位于120尺内，并使用了一个传送效果。</p>\n<hr />\n<p>你可以追捕你的敌人到天涯海角。你跟着敌人一起传送，出现在传送前相对它相同的方向和距离上（如果你的目的地被占据，则出现在最近的未被占据的空间）。任何受到@Compendium[pf2e.feats-srd.a2VAaXMzlQqALJeH]{共享弱点 Share Weakness}或@Compendium[pf2e.feats-srd.LCrBGoMGat2ZXuOo]{全链弱点 Ubiquitous Weakness}影响的盟友（如果你拥有这些能力），如果位于该敌人的120尺内，也可以选择跟着该敌人一起传送。</p>"
+        },
+        "Turn Away Misfortune": {
+            "description": "<p><strong>触发</strong> 你即将尝试一次受厄运效果影响的掷骰。</p>\n<hr />\n<p>你表演一种迷信仪式，例如在你的肩膀上撒盐以阻挡厄运。扭转厄运的幸运特征可以取消掉厄运效果，让你能够正常掷骰。如常，你只能在一次掷骰上应用一个幸运能力，因此如果你在一次攻击骰上使用了扭转厄运，你也无法使用例如半身人幸运这样的能力继续改变掷骰。</p>",
+            "name": "扭转厄运 Turn Away Misfortune"
+        },
+        "Twin Weakness": {
+            "name": "孪生弱点 Twin Weakness",
+            "description": "<p><strong>需求</strong> 你正持握着一个奇具和一把武器，你正在通过凡体弱点或个体克制来使用弱点发掘，且目标生物同时位于你的奇具和武器的触及之内。</p>\n<hr />\n<p>在你进行一次由你的秘藏强化过的攻击时，你也将你的奇具按在该生物上，你奇具的能量烧灼着该生物的血肉，并触发了它的弱点。对你弱点发掘的生物进行一次近战打击。当攻击骰的结果不是大失败时，你也将你的奇具按在目标身上，自动造成来自弱点发掘的额外伤害。这额外添加在你的打击造成的任何伤害之上，包括这次打击触发的来自弱点发掘的弱点。在计算你的多次攻击减值时，这算做2次攻击。 </p>"
+        },
+        "Ubiquitous Weakness": {
+            "description": "<p>你培养了与同志之间的牵绊，让你能够分享你的秘藏提供的增益。当你使用@Compendium[pf2e.actionspf2e.fodJ3zuwQsYnBbtk]{弱点发掘 Exploit Vulnerability}并选择了凡体弱点Mortal Weakness，选择你30尺内的任意数量的盟友。他们的打击能和你的打击以相同的方式触发来自凡体弱点的弱点。该增益在你停止从弱点发掘中获益时终止。由于该效果基于你与盟友之间魔法般强化过的牵绊，只有经过了1天或多天时间和你建立了密切关系的盟友可以获得该增益。</p>",
+            "name": "全链弱点 Ubiquitous Weakness"
+        },
+        "Implement's Flight": {
+            "name": "奇具飞行 Implement's Flight",
+            "description": "<p>通过削弱和地面的联系并强化与天空的联系，你知晓了如何在空中翱翔，你的奇具就像飞行扫帚或飞杵一样载着你飞。只要你持握着你的奇术师奇具，你获得等于你陆地速度的飞行速度。</p>"
+        },
+        "Implement's Assault": {
+            "description": "<p><strong>需求</strong> 你正持握着一个奇具。</p>\n<hr />\n<p>你的奇具将能量引导到你的武器上，令其得以惊人地发动齐射或切开你的敌人。用你的武器对30尺内的每个敌人进行一次打击。在完成全部攻击之前都不要提升你的多次攻击罚值。如果你的武器是近战武器，且任意一次攻击超出了你的触及，你在进行这些打击之前会先放开你的武器，然后它在打击全部结束后会回到你的手中。如果在武器回来时你没有空闲的手，武器会掉落在你的方格中。</p>",
+            "name": "奇具突袭 Implement's Assault"
+        },
+        "Incredible Familiar (Thaumaturge)": {
+            "description": "<p>通过利用每个魔法根源中最精华的部分，你找到了一种方法可以为你的魔宠提供比其他魔宠还要更多的能力。你每天可以选择6个魔宠或主人能力，而非4个。</p>",
+            "name": "惊人魔宠(奇术师) Incredible Familiar (Thaumaturge)"
+        },
+        "Instructive Strike": {
+            "name": "启示打击 Instructive Strike",
+            "description": "<p>你攻击你的敌人并分析它会如何反应。进行一次打击。命中时，你可以立刻尝试一次检定以对目标进行回忆知识。重击时，你在这次用于回忆知识的检定中获得+2环境加值。</p>"
+        },
+        "Intensify Investiture": {
+            "name": "绑定增幅 Intensify Investiture",
+            "description": "<p><strong>频率</strong> 每10分钟1次</p>\n<hr />\n<p>你与绑定物品之间的纽带让你能够将自身更多地置入物品之中。如果你的下一个动作是启动一件有着豁免骰DC的绑定物品，如果你的奇术师职业DC更高，你可以以此替换该物品的DC。</p>"
+        },
+        "Intense Implement": {
+            "name": "强效奇具 Intense Implement",
+            "description": "<p>你对你的第三奇具有了额外的联系。你获得第三奇具的行家增益。</p>"
+        },
+        "One More Activation": {
+            "name": "再开一次 One More Activation",
+            "description": "<p>你在你和你的绑定物品之间铸造了一种更深的纽带，让你能够比通常情况更多地启动它们。每天一次，你可以启动一件你已经绑定的物品，即使你已经用尽了它频率所限制的最大使用次数。你只有在该物品的等级不大于你等级的一半、该启动的频率是每天一次或更加频繁的次数、且你在这一轮内还没有使用该启动的时候，你才可以这么做。</p>"
+        },
+        "Diverse Lore": {
+            "name": "多样学识 Diverse Lore",
+            "description": "<p>你在四方流浪中的学习意味着你听过关于几乎所有主题的传言或理论……但老实说，你学习的来源并不总是最可靠的。你可以在使用秘传学识Esoteric Lore进行的回忆知识检定上承受-2减值，以在任何主题上进行回忆知识，而不仅仅是在秘传学识通常可用的主题上。另外，当你在弱点发掘检定中成功，将你的秘传学识检定结果与对该生物进行回忆知识时所需的DC相比较；如果这个数字是一次成功或大成功，你如同在回忆知识检定中成功一般获得信息。</p>"
+        },
+        "Esoteric Warden": {
+            "name": "秘传守护 Esoteric Warden",
+            "description": "<p>当你成功对一个生物应用了克制性的材料时，你也能保护自己对抗其下一次攻击。当你在弱点发掘的检定中成功，你在对抗该生物的下一次攻击的AC上获得+1状态加值，并在你对抗该生物的下一次豁免骰上获得+1状态加值；如果你大成功，这些加值改为+2。你每天针对一个特定生物只能获得这些加值一次，且如果你再次使用弱点发掘，该增益终止。</p>"
+        },
+        "Esoteric Reflexes": {
+            "name": "秘传反射 Esoteric Reflexes",
+            "description": "<p>你与奇具的联系如此强烈，你几乎可以本能地使用它们的反应能力。在你回合开始时，你获得一个额外的反应，你只能用这个反应来进行奇具为你提供的反应。</p>"
+        },
+        "Wonder Worker": {
+            "description": "<p>你在奇术师的道途上登峰造极，得以创造奇迹。每天一次，你可以排列你的秘藏以施展8环或更低，且花费1，2，或3个动作来施展的法术。该法术必须是常见的，或你已经获得许可的。你可以选择你在关联技能上达到传奇的任意根源的法术（奥术对应奥法，原能对应自然，异能对应神秘，神术对应宗教）。使用你的奇术师职业DC替换任何需要的法术DC，将你的奇术师职业DC-10替换任何需要的反制调整值或法术攻击调整值。</p>",
+            "name": "奇迹创造者 Wonder Worker"
+        },
+        "Paired Link": {
+            "description": "<p>你将一个像是天然磁石或翡翠垂饰这样的小玩意儿掰成两半，在这两半之间建立了一种能桥接彼此的交感链接。在你的每日准备期间，你执行一个简短的仪式，将两半饰品的其中一半赠予一个自愿的盟友。你在对那个盟友施展或使用射程为接触的法术或奇术师能力时，可以将射程改为30尺，且该盟友也可以以30尺的射程对你施展射程为接触的法术。只要你和该盟友拥有自己的一半，该效果就能持续下去；如果任意一半不再为你们所有，哪怕只有一小会儿，或如果你与一名新的盟友在每日准备期间建立了一个链接，则该链接破裂。</p>",
+            "name": "对偶链 Paired Link"
+        },
+        "Ammunition Thaumaturgy": {
+            "name": "弹药奇术 Ammunition Thaumaturgy",
+            "description": "<p>你非常熟悉如何在战火之中运用你的奇具、武器、和秘藏，装填一些子弹或箭矢对你来说并不需要承受额外的负担。你可以使用持握着奇具的手进行交互动作以装填一把武器。</p>"
+        },
+        "Breached Defenses": {
+            "name": "破穿防御 Breached Defenses",
+            "description": "<p>你可以找到一个生物的鳞甲、防护、或护甲上的一个脆弱部位，以穿透它的抵抗力。当你在弱点发掘中成功，你了解到了该生物身上能够被避开的最高抗力（例如，该生物可能有针对物理伤害（银除外）的抗力），如果该生物确实有这样的抗力。如果你愿意，你可以选择下列增益以替换弱点发掘通常的两个增益。</p>\n<hr />\n<p><strong>破穿防御 Breached Defenses</strong> 只有当你在弱点发掘中成功，且了解到该生物有至少一个能够被避开的抗力时，才可以选择该增益。选择一种这样的抗力。你的无武装和武器打击能避开所选的抗力。</p>"
+        },
+        "Call Implement": {
+            "name": "呼唤奇具 Call Implement",
+            "description": "<p><strong>需求</strong> 你有一只空闲的手。</p>\n<hr />\n<p>你猛地拉扯你和奇具之间的建立在所有关系上的纽带，令它找到回归你的路径。你低头一看，然后发现你的奇具神奇地出现在你的空手上，只要它在1英里内且和你处于同一个位面。如果你的奇具被其他生物占有，该生物可以阻止奇具传送，只要他成功通过对抗你职业DC的@Check[type:will|dc:resolve(@actor.system.attributes.classDC.value)]检定。如果该生物成功，你不能再次尝试呼唤该奇具；你只能追踪该生物的位置以拿回奇具。</p>"
+        },
+        "Cursed Effigy": {
+            "name": "诅咒雕像 Cursed Effigy",
+            "description": "<p><strong>需求</strong> 你上一个动作是一次对你弱点发掘目标成功进行的打击，且这次打击造成了物理伤害。</p>\n<hr />\n<p>在你攻击后，你攫取了些许血液、断发、或其他目标生物身上的碎块。你讲这些材料融入一具预制的人偶、纸人、或其他雕像中以创造一种能让它更难以抵抗你的能力的交感链接。只要你正受益于对该目标的弱点发掘，它在对抗奇术师能力，或使用了你的奇术师职业DC的物品时的豁免骰中承受-2状态减值。</p>"
+        },
+        "Elaborate Talisman Esoterica": {
+            "name": "丰富护符秘藏 Elaborate Talisman Esoterica",
+            "description": "<p>随着你继续收集可以用来制作护符的秘藏，你也加强了你制造临时护符的能力。你每天可以制造4个护符，而非2个。</p>\n<hr />\n<p><strong>特殊</strong> 如果你达到14级或更高等级，你可以第二次选择该专长，让你每天可以制造6个护符，而非4个。</p>"
+        },
+        "Elaborate Scroll Esoterica": {
+            "name": "丰富卷轴秘藏 Elaborate Scroll Esoterica",
+            "description": "<p>你收集了更多魔法文本的残片，加强了你的临时卷轴。在你来自卷轴秘藏Scroll Esoterica的每日卷轴之外，添加一个3环法术的卷轴。在14级时，添加一个4环法术的卷轴。16级时，添加一个5环法术的卷轴。</p>"
+        },
+        "Haunt Ingenuity": {
+            "name": "灵祟诡术 Haunt Ingenuity",
+            "description": "<p>当一个灵魂经过并留下了一种作祟，你狡猾的知识能够注意到这个灵魂的情绪回声。即使你在探索模式中没有搜索，GM会为你进行一次秘密检定以注意到那些通常要求你进行搜索才能注意到的作祟。</p>\n<p>你可以解除需要在一个技能上达成大师熟练度才能解除的作祟，只要你在该技能上至少达成受训。如果你在该技能上拥有大师熟练度，你可以解除需要传奇熟练度才能解除的作祟。</p>"
+        },
+        "Sympathetic Vulnerabilities": {
+            "name": "交感弱点 Sympathetic Vulnerabilities",
+            "description": "<p>当你集中意志引发一个弱点时，产生的结果变得更加强大，你引发的弱点从你的主要目标身上荡出网状的波纹，影响了大范围的生物。这个能力能产生两种效果之一，取决于你引发的弱点类型。</p>\n<p>当你应用了凡体弱点Mortal Weakness，你的打击也能将该弱点应用在任何拥有该弱点的生物身上，而不仅仅针对类型完全相同的生物。例如，如果你对一只红龙使用了凡体弱点，以将其对寒冷的弱点应用在你的打击上，这些打击也能触发火元素或其他拥有寒冷弱点的生物的寒冷弱点。</p>\n<p>当你将个体克制Personal Antithesis应用到一个非类人生物的生物上时，你可以将你的自定义弱点应用到类型完全相同的所有生物身上。例如，如果你对一个小魔鬼使用了个体克制，这个自定义弱点也能应用到其他小魔鬼身上，但不能应用到其他非小魔鬼的魔鬼身上。</p>"
+        },
+        "Know-It-All": {
+            "description": "<p>你听闻过每条传言或书本中的故事，你明白，如果你一开始就听说了某件事，你可能早就充分地听说过了。当你在一次回忆知识的检定中成功，你获得关于给定主体的额外信息或上下文。当你在一次回忆知识的检定中大成功，根据GM的判断，你可能能获得比平常还要多的额外信息或上下文。</p>",
+            "name": "无所不知 Know-It-All"
+        },
+        "Grand Talisman Esoterica": {
+            "name": "豪华护符秘藏 Grand Talisman Esoterica",
+            "description": "<p>你完成了学习秘传护符的旅程，得以将多个护符置入一件物品之中。通常来说，对一件物品附着多个护符会导致这些护符都被压制，但当你@Compendium[pf2e.actionspf2e.UAaQk93a30nx0nYY]{附着护符 Affix a Talisman}时，你可以特别地对待一件你正在处理的物品，让它能够同时容纳2个启动的护符。这种特殊的处置在你使用该能力进行附着护符以对另一件物品进行特殊处置时终止。</p>"
+        },
+        "Grand Scroll Esoterica": {
+            "name": "豪华卷轴秘藏 Grand Scroll Esoterica",
+            "description": "<p>你完成了对卷轴秘藏的第三次也是最后一次消化，为你提供极其强力的每日卷轴。在你从@Compendium[pf2e.feats-srd.OqObuRB8oVSAEKFR]{卷轴秘藏 Scroll Esoterica}和@Compendium[pf2e.feats-srd.nWd7m0yRcIEVUy7O]{丰富卷轴秘藏 Elaborate Scroll Esoterica}获得的每日卷轴之外，添加一个6环法术的卷轴。在20级时，添加一个7环法术的卷轴。</p>"
         }
     }
 }
