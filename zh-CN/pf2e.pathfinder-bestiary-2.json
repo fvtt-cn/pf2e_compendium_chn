@@ -1,17 +1,43 @@
 {
 	"label": "怪物图鉴 Bestiary 2",
 	"mapping":{
-		"publicNotes":"data.details.publicNotes",
-		"dr":"data.traits.dr",
-		"allSaves":"data.attributes.allSaves.value",
-		"senses":"data.traits.senses.value",
-		"hp":"data.attributes.hp.details",
-		"hazarddisable":"data.details.disable",
-		"hazarddescription":"data.details.description",
-		"hazardreset":"data.details.reset",
-		"hazardroutine":"data.details.routine"
+		"publicNotes":"system.details.publicNotes",
+		"dr":"system.traits.dr",
+		"allSaves":"system.attributes.allSaves.value",
+		"senses":"system.traits.senses.value",
+		"hp":"system.attributes.hp.details",
+		"hazarddisable":"system.details.disable",
+		"hazarddescription":"system.details.description",
+		"hazardreset":"system.details.reset",
+		"hazardroutine":"system.details.routine",
+		"blurb":"system.details.blurb",
+		"speed":"system.attributes.speed.details",
+		"languages":"system.traits.languages.custom",
+		"stealth":"system.attributes.stealth"
 	},
 	"entries": {
+		"Giant Snapping Turtle":{
+			"name":"巨鳄龟 Giant Snapping Turtle",
+			"senses":"昏暗视觉，嗅觉（模糊感官）30尺",
+			"publicNotes": "<p>如果一般大小的鳄龟只是脾气暴躁，那么巨鳄龟貌似会以暴力回敬任何胆敢入侵它领地的生物。估测长度有20尺长，数千磅重的这种巨型生物能一口吞下整个类人生物。定居在沼泽的社会，尤其是沼蜍人（boggards）和蜥蜴人（lizardfolk）往往会试图驯养巨鳄龟作为强大的守护兽。但是在大多数情况下这种尝试只会导致巨大的伤亡。那些不幸被巨鳄龟一口吞下的人会发现，这种动物的胃和铠甲一样坚硬，很难从里面切开。</p>",
+			"items":{
+				"lPV8I6T6I09MjTy3":{
+					"name": "啃咬 Jaws"
+				},
+				"FcafMwq1Bll5o21K":{
+					"name": "深呼吸 Deep Breath",
+					"description":"<p>巨鳄龟能屏息2小时。</p>"
+				},
+				"eE4KRcdYFo35NqFR":{
+					"name": "倾覆 Capsize",
+					"description":"<p>巨鳄龟尝试倾复一艘体型相同或小于它的、与它相邻的水面船只。巨鳄龟必须成功通过一次@Check[type:athletics|dc:35]检定（目标船只的体型每比巨鳄龟小一级，DC减少5点）或驾驶者的航海学识DC，二者以较高者为准。</p>"
+				},
+				"YRXnBeKMp7iUfdDz":{
+					"name": "龟壳防御 Shell Defense",
+					"description":"<p>巨鳄龟将它的四肢和头缩回龟壳里，然后结束它的回合。这能将其AC增加至30，但它无法再进行其他动作，除非它再用一个单动作从龟壳里出来。</p>"
+				}
+			}
+		},
 		"Osyluth":{
             "name":"骨魔 （奥塞魔） Osyluth",
             "allSaves":"对所有魔法效果的豁免有+1状态加值 +1 status to all saves vs. magic",
