@@ -1,15 +1,19 @@
 {
     "label": "怪物图鉴 Bestiary 1",
     "mapping": {
-        "publicNotes": "data.details.publicNotes",
-        "dr": "data.traits.dr",
-        "allSaves": "data.attributes.allSaves.value",
-        "senses": "data.traits.senses.value",
-        "hp": "data.attributes.hp.details",
-        "hazarddisable": "data.details.disable",
-        "hazarddescription": "data.details.description",
-        "hazardreset": "data.details.reset",
-        "hazardroutine": "data.details.routine"
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "hazarddisable": "system.details.disable",
+        "hazarddescription": "system.details.description",
+        "hazardreset": "system.details.reset",
+        "hazardroutine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealth":"system.attributes.stealth"
     },
     "entries": {
         "Annis Hag": {
@@ -1828,7 +1832,39 @@
             "name": "河栖龙兽 River Drake"
         },
         "Roc": {
-            "name": "大鹏 Roc"
+            "name": "大鹏 Roc",
+            "senses":"昏暗视觉",
+            "publicNotes": "<p>大鹏这种传说中体型巨大的猛禽能够捕猎大象，通常从喙到尾巴长约30尺，翼展达80尺以上。它们的狩猎策略是用它们强有力的爪子抓住猎物，然后在进食前从高处将其扔下，再用带钩的喙从骨头上撕下肉来。这种方法会产生大量的腐肉，这会导致一群见机行事食腐动物紧跟在大鹏后面，比如乌鸦和秃鹰，它们很容易就能偷偷啄食残渣。大多数情况下，大鹏并不介意这些生物，它们有时会和死掉的猎物一起被吃掉。</p>\n<p>大鹏通常在山顶和崖壁上筑巢，只有最勇敢的陆地居民才能找到其所在。它们捕食的时候会飞很远，在陆地和海洋捕食大型猎物，以维持自己和幼仔的生命。大鹏是孤僻的独行捕食者，会在空中互相激斗以保护领土。大约每十年一次，一对交配的夫妻会一起抚养他们的幼雏。一旦雏鸟长大到可以独立捕食的年龄，父母就会分开，再次单独捕食。</p>\n<p>特别有技巧的德鲁伊或游侠可能会捕获并训练大鹏作为飞行坐骑或狩猎伙伴，尽管此等令人难以置信的壮举很难找到几个实例。最简单的方法就是在它刚孵化的那一刻，从幼雏出生时看到的第一个生物的印象开始。然而，获得一枚大鹏的蛋绝非易事，对于想要抢蛋的人来说，这往往意味着给自己判了死刑。</p>",
+            "items":{
+                "DOWxg5PQXXUG8Ddy":{
+                    "name": "喙啄 Beak"
+                },
+                "Ka4LviiNUhy4FNzo":{
+                    "name": "爪击 Talon"
+                },
+                "sA9IvnRiBKdOegEF":{
+                    "name": "翼击 Wing"
+                },
+                "xwHcXDjVTSiAD1kB":{
+                    "name": "翼返 Wing Rebuff",
+                    "description":"<p><strong>触发</strong> 一个位于大鹏翼击触及范围之外的生物进入大鹏的翼击触及范围。</p>\n<hr />\n<p><strong>效果</strong> 大鹏对触发生物进行一次翼击打击。如果大鹏推离Push目标，则目标的移动动作被打断。</p>"
+                },
+                "4N1vw9fFoiAgxSn1":{
+                    "name": "飞掠 Flying Strafe",
+                    "description":"<p>大鹏以它的飞行速度飞行，并在这一行动中的任何时刻进行两次爪击打击。每次打击必须针对不同的生物。每次攻击正常计算多重攻击减值。</p>"
+                },
+                "fLIOuEGoDxmXYqNf":{
+                    "name": "小菜 Snack",
+                    "description":"<p>大鹏攻击被自己脚爪@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物时在攻击检定上获得+2环境加值。</p>"
+                },
+                "L1NeMv3ZDcttKLw2":{
+                    "name": "抓握 Snatch",
+                    "description":"<p>大鹏用一只或两只脚爪@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物的时候能以一半的速度飞行，并带着目标一起移动。</p>"
+                },
+                "yrKXLmbaekza05cd":{
+                    "name": "精通推离10尺 Improved Push 10 feet"
+                }
+            }
         },
         "Roper": {
             "name": "树绳怪 Roper"
