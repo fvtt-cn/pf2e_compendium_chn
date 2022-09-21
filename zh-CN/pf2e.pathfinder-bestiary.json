@@ -1577,7 +1577,41 @@
             "name": "鼠化人 Wererat"
         },
         "Wraith": {
-            "name": "缚灵 Wraith"
+            "name": "缚灵 Wraith",
+            "allSaves":"对抗正能量豁免时+1状态加值",
+            "senses":"黑暗视觉，生命感知 60尺",
+            "dr":[
+                {
+                    "exceptions": "除力场、幽冥或正能量；对抗非魔法攻击时抗力翻倍",
+                    "type": "all",
+                    "value": 5
+                }
+            ],
+            "publicNotes": "<p>缚灵是一种汲取生命和阳光的恶毒的不死生物。它们阴暗、无形的身体上点缀着灼烧的眼睛，表达着对生者的仇恨，它们那晦暗的爪子是足以从敌人那里偷走活力的武器。缚灵可能由秽恶的死灵术创造，但它们更常由那些遁世（hermitic）的杀人犯或破坏狂（mutilator）中产生，这些人即便在死后也不愿停下他们的邪恶行径。让事情变得更棘手的是，缚灵通过吞噬并将生者转化为它们秽恶的同类而成倍增长——这意味着一小撮不受约束的缚灵可以很轻易地变为一只黑暗大军。</p>\n<p>缚灵没有重量，而且不会受到大多数物理攻击的伤害。它们出没于任何能够以生命为食的地方，尽管它们在阳光下的脆弱限制了它们只能活动于世界的阴暗之处——在那里它们可以无缝地融入环境，然后悄悄地吞没它们的猎物。</p>\n<p>在那些死亡和骚乱司空见惯的地方——被战争蹂躏的乡村、被罪犯首脑统治的地下世界、或是举行残酷邪教仪式的场地，缚灵会和其他同类结伙。在这些地方，活人只有依照携带有日光杖的强大牧师的指引才能过得好。由于缚灵仅能在夜晚或黑暗的地方狩猎，废墟、下水道和遗弃的建筑在白天为缚灵提供了避难所。缚灵足够聪明到在战斗中利用它们的虚体优势，因此它们呆在曲折的洞穴或者有走廊的建筑并避开空旷地带。</p>\n<p>因为它们纯粹由负能量位面的反生命构成，缚灵遍布那些亵渎的区域。在不死生物统治的国家和城镇中，缚灵有着刺客和间谍的地位。在盖布（Geb）它们属于统治阶级，但乌斯塔拉夫（Ustalav）有着更多的缚灵，在那里成群的缚灵徘徊于坟地和雾气弥漫的小径上，吞噬整个村庄的人口。在世界上的其他地方，缚灵往往不会四处游荡并把它们的活动限制于更小的区域，通常它们只在自己选择的地方及其周围环境出没。</p>",
+            "items":{
+                "lYeYZZa66BG9v3KY":{
+                    "name": "幽魂之手 Spectral Hand",
+                    "description":""
+                },
+                "XXiHxjwFvBeHoJUK":{
+                    "name": "生命感知60尺 Lifesense 60 feet"
+                },
+                "PoFwl1bniXcbhkld":{
+                    "name": "对抗正能量豁免时+1状态加值"
+                },
+                "6tSYdMbuSY1NSMOt":{
+                    "name": "阳光失能 Sunlight Powerlessness",
+                    "description":"<p>在日光下的缚灵获得@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+                },
+                "zD3l2lGfHmnHF8iq":{
+                    "name": "汲取生命 Drain Life",
+                    "description":"<p>当缚灵使用幽魂之手伤害一个活着的生物时，缚灵获得[[/r 5 #Temporary Hit Points]]{5点临时生命值}，并且目标必须通过@Check[type:fortitude|dc:23]豁免否则获得@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。缚灵造成的进一步伤害将使流失状态值在再次豁免失败时增加1，最多达到流失4。</p>"
+                },
+                "cqn01fpxgrAl4NvI":{
+                    "name": "缚灵衍体 Wraith Spawn",
+                    "description":"<p>被缚灵的幽魂之手杀死的生物[[/br 1d4 #Wraith Spawn Transformation]]{1d4轮}之后变成一个新的@Compendium[pf2e.pathfinder-bestiary.HbROgIcU9Z9m6XuD]{缚灵衍体 Wraith Spawn}。这个缚灵衍体听命于将他杀死的缚灵。当它处于缚灵衍体的状态时，没有吸取生命和制造缚灵衍体的能力，并且一直拥有@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果缚灵衍体的制造者死亡，则该衍体变成完全的、有自主意识的缚灵；它此时获得吸取生命和制造缚灵衍体的能力，并且不再笨拙。</p>"
+                }
+            }
         },
         "White Kobold Dragon Mage": {
             "name": "白鳞狗头人龙术士 White Kobold Dragon Mage"
