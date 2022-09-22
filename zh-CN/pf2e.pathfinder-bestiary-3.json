@@ -1,17 +1,55 @@
 {
     "label": "怪物图鉴 Bestiary 3",
     "mapping": {
-        "publicNotes": "data.details.publicNotes",
-        "dr": "data.traits.dr",
-        "allSaves": "data.attributes.allSaves.value",
-        "senses": "data.traits.senses.value",
-        "hp": "data.attributes.hp.details",
-        "hazarddisable": "data.details.disable",
-        "hazarddescription": "data.details.description",
-        "hazardreset": "data.details.reset",
-        "hazardroutine": "data.details.routine"
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "hazarddisable": "system.details.disable",
+        "hazarddescription": "system.details.description",
+        "hazardreset": "system.details.reset",
+        "hazardroutine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealth":"system.attributes.stealth"
     },
     "entries": {
+        "Kongamato":{
+            "name":"碎舟龙 Kongamato",
+            "senses":"黑暗视觉",
+            "publicNotes": "<p>虽然碎舟龙与翼龙相似，并且来自近似的时代，但它们其实是龙类的一个原始分支。它们脑子不算很好使，也缺乏龙族所拥有的的强大魔法，但碎舟龙拥有一个超自然坚硬的喙，可以凿穿任何难以置信的致密物质。虽然它的喙看起来是非常棒的战利品，但碎舟龙死后喙上的魔法也就消失了，所以用它的喙制造武器的尝试都以失败告终。</p>\n<p>虽然它们生活在沼泽和其他相对安静的水域，但碎舟龙更喜欢在河流和小溪环境中捕猎，因为活水总会吸引新的猎物。它们捕猎一切，并且很清楚它们强大的喙能击沉船只和木法。它们具有像龙一样贪婪的外表。虽然碎舟龙对物质财富和社会权力漠不关心，但它们占据大片猎场，会暴力攻击任何潜在的竞争对手，贪婪地屠戮领地内的大型动物，留下只吃了一半的尸体，根本不考虑将来还有没有食物。</p>\n<p>当碎舟龙所声称的领土中包含某个社区时，那里的人别无选择，只能想办法捕杀邪恶的捕食者，或雇佣冒险者来完成这个任务。碎舟龙如此饥肠辘辘，一只就能毁灭整群的牲畜，威胁整个社区的安全。和它们的龙类亲戚不同，碎舟龙从不讨价还价，通过祭祀来安抚它们的尝试也不会有任何效果。</p>",
+            "items":{
+                "dSIKXmZhpwoDtoh3":{
+                    "name": "喙啄 Beak"
+                },
+                "MzIjuOCLnKBWgj5w":{
+                    "name": "爪抓 Claw"
+                },
+                "wP25CSpHH1XfhQZV":{
+                    "name": "翼拍 Wing"
+                },
+                "6OT1Cj34QvB0zv3Q":{
+                    "name": "甩尾 Tail"
+                },
+                "O1nBRrEFZ3T6AQYn":{
+                    "name": "借机攻击(仅甩尾) Attack of Opportunity (Tail Only)"
+                },
+                "gtLlO4bF2NESErTl":{
+                    "name": "破船者 Boat Breaker",
+                    "description":"<p>碎舟龙的喙异常坚硬。它们的喙啄打击无视任何物品的一半硬度。</p>"
+                },
+                "VECsjpvEAaMDK0IJ":{
+                    "name": "飞掠 Flying Strafe",
+                    "description":"<p>碎舟龙以最大速度飞行，并且在行动中的任意地点进行两次翼拍打击。每次打击必须针对不同目标。</p>"
+                },
+                "vyrmCD1p0HDQDVzt":{
+                    "name": "哀鸣俯冲 Wailing Dive",
+                    "description":"<p>碎舟龙飞行，并且发出可怕的尖叫。每个碎舟龙飞过的生物必须通过@Check[type:will|dc:30]豁免，否则陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败则@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。</p>\n<p>进行豁免后，生物暂时免疫此能力1小时。在移动结束之后，碎舟龙可以进行一次喙啄打击。</p>"
+                }
+            }
+        },
         "Grioth Cultist": {
             "name": "格里欧斯邪教徒 Grioth Cultist",
             "publicNotes": "<p>格里欧斯邪教徒代表了他们最低层的无悔信徒——古老神话的崇拜者，他们的任务是领导进入新世界的侦查任务。虽然在指挥系统中阶级高于斥侯，但他们在整个宗教阶级制度中只占据了低下的位置。 虽然低语的传言描述了将世界从太阳中剥离所需的传奇仪式，但这些邪教徒并没有学习这种强大的魔法。这样的秘密留给了格里欧斯的大祭司，他们总是最后一个到达被殖民的世界。</p>\n<p>大多数格里欧斯崇拜外神（Outer God）奈亚拉托提普的众多化身之一，尽管有些格里欧斯崇拜古老神话中的其他实体，如阿撒托斯（Azathoth）、宁布洛斯（Nhimbaloth）或犹格·索托斯（Yog-Sothoth）。在极为罕见的情况下，如果一个格里欧斯被从他们的社会中切断，并有机会探索其他宗教，他们仍然会倾向于与星星或夜晚有关的信仰，如黛丝娜（Desna）或宗-库山（Zon-Kuthon）。然而，这些格里欧斯被他们的同类所厌恶，被视为危险的异端分子。</p>\n<hr />\n<p>漂离其恒星轨道的行星在飘过黑色帷幕（Dark Tapestry）时变得寒冷而没有生命力。 这些死寂的世界被称为格里欧斯的可怕生物所觊觎，他们在这些漂泊的世界上忍受着可怕的寒冷，并将它们转化为专门供奉古老神话（Elder Mythos）中黑暗之神的行星神庙。从这些冰冻黑暗的堡垒中，格里欧斯寻找温暖的、有生命力的世界，通过禁忌的仪式将它们从各自的太阳上扯弄出来，这个过程往往需要数代人的时间。</p>\n<p>一个邪教徒通常会带领一支格里欧斯斥侯队，这支队伍在农村居民区的边缘寻找一个废弃或被遗忘的地方作为他们最初的入侵点。经过数代人的努力，格里欧斯的定居点逐渐强大，并征服了周围的文化，最终，强大的格里欧斯从星空中降临，开始下一阶段的星球征服。</p>\n<p>格里欧斯讲一种由颤音和咔嚓声组成的语言。虽然能够说其他语言，但他们以干涩、粗哑的声音来发声。由于格里欧斯有翅膀、蠕动的尾巴和四眼蝙蝠般的面孔，许多文化人误以为它们与邪恶的外层位面（Outer Planes）有关，但它们在很大程度上属于这个现实。</p>",
