@@ -9,9 +9,65 @@
 		"hazarddisable":"system.details.disable",
 		"hazarddescription":"system.details.description",
 		"hazardreset":"system.details.reset",
-		"hazardroutine":"system.details.routine"
+		"hazardroutine":"system.details.routine",
+		"blurb":"system.details.blurb",
+		"speed":"system.attributes.speed.details",
+		"languages":"system.traits.languages.custom",
+		"stealth":"system.attributes.stealth"
 	},
 	"entries": {
+		"Spinosaurus":{
+			"name": "棘龙 Spinosaurus",
+			"senses":"昏暗视觉，嗅觉（模糊感官）30尺",
+			"publicNotes": "<p>棘龙不仅是最大的食肉恐龙之一，它也是外表最不寻常的一种，它的脊背上长着巨大的帆状鳍。这种帆通常鲜艳多彩，它可以帮助棘龙吸引异性，能帮助它游泳，也能让它看起来比实际更为巨大。游泳的棘龙也可以用它的船帆作为一种独特的攻击手段，用它拍打水面，制造出毁灭性的波浪，使猎物惊愕。</p>\n<p>棘龙既能在水中生存，也能在陆地上生存，它长长的长着无数牙齿的喉咙非常适合捕捉游泳的猎物。巨人们捕捉棘龙作为守护者的尝试通常都以失败告终，因为这些顽固的恐龙不能很好地驯服。他们粗暴的态度和引人注目的外表使他们更适合进行血腥的运动，这让它们深受那些专门从事让角斗士与饥饿的动物或野兽战斗的人的欢迎。当然，如果一只愤怒的棘龙被迫为了取悦他人而战斗，那么对它来说无论是竞技场里的还是看台上的人都将沦为它的食物。</p>\n<p>长久以来，那些热衷将动物变成魔法守护者的施法者们一直被棘龙的潜能所吸引。棘龙所经受过的塑肉仪式、怪物杂交或其他魔法改造恐怕比任何其他恐龙都要多，这些尝试都是为了提高它们作为守护者的战斗力。</p>\n<p>棘龙可以长达60尺，重25000磅。</p>",
+			"items":{
+				"fysusPtWaa25MvUW":{
+					"name": "爪抓 Claw"
+				},
+				"oQcnbbUjvuJ6yIaK":{
+					"name": "深呼吸 Deep Breath",
+					"description":"<p>棘龙能屏息达2小时。</p>"
+				},
+				"BYqZd7dW5USVQMnx":{
+					"name": "横冲直撞 Rip and Tear",
+					"description":"<p><strong>需求</strong> 棘龙口中@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}着一个生物。</p>\n<hr />\n<p><strong>效果</strong> 棘龙抬起前爪撕扯被擒抱的生物，造成[[/r {4d8}[slashing]]]{4d8挥砍伤害}（@Check[type:reflex|dc:30|basic:true]豁免）和@Localize[PF2E.PersistentDamage.Bleed1d6.success]。</p>"
+				},
+				"t0On0v7gyVoScNyY":{
+					"name": "巨浪翻腾 Staggering Sail",
+					"description":"<p><strong>需求</strong> 棘龙在水面上游泳</p>\n<hr />\n<p><strong>效果</strong> 棘龙侧过身，用强有力的背帆拍打水面，制造一道压倒性的水波，对30尺锥形范围内的生物造成[[/r {6d6}[bludgeoning]]]{6d6钝击伤害}。区域中的每个生物必须尝试1次@Check[type:reflex|dc:30|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害且直到它下一回合结束，陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+				},
+				"sW9lqWGbyXr7xeXh":{
+					"name": "活吞 Swallow Whole",
+					"description":"<p>中型，[[/r {2d12}[bludgeoning]]]{2d12+12钝击伤害}，破裂 19</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				}
+			}
+		},
+		"Giant Snapping Turtle":{
+			"name":"巨鳄龟 Giant Snapping Turtle",
+			"senses":"昏暗视觉，嗅觉（模糊感官）30尺",
+			"publicNotes": "<p>如果一般大小的鳄龟只是脾气暴躁，那么巨鳄龟貌似会以暴力回敬任何胆敢入侵它领地的生物。估测长度有20尺长，数千磅重的这种巨型生物能一口吞下整个类人生物。定居在沼泽的社会，尤其是沼蜍人（boggards）和蜥蜴人（lizardfolk）往往会试图驯养巨鳄龟作为强大的守护兽。但是在大多数情况下这种尝试只会导致巨大的伤亡。那些不幸被巨鳄龟一口吞下的人会发现，这种动物的胃和铠甲一样坚硬，很难从里面切开。</p>",
+			"items":{
+				"lPV8I6T6I09MjTy3":{
+					"name": "啃咬 Jaws"
+				},
+				"FcafMwq1Bll5o21K":{
+					"name": "深呼吸 Deep Breath",
+					"description":"<p>巨鳄龟能屏息2小时。</p>"
+				},
+				"eE4KRcdYFo35NqFR":{
+					"name": "倾覆 Capsize",
+					"description":"<p>巨鳄龟尝试倾复一艘体型相同或小于它的、与它相邻的水面船只。巨鳄龟必须成功通过一次@Check[type:athletics|dc:35]检定（目标船只的体型每比巨鳄龟小一级，DC减少5点）或驾驶者的航海学识DC，二者以较高者为准。</p>"
+				},
+				"YRXnBeKMp7iUfdDz":{
+					"name": "龟壳防御 Shell Defense",
+					"description":"<p>巨鳄龟将它的四肢和头缩回龟壳里，然后结束它的回合。这能将其AC增加至30，但它无法再进行其他动作，除非它再用一个单动作从龟壳里出来。</p>"
+				},
+				"9wiqhTppGBReF5MG":{
+					"name": "践踏 Trample",
+					"description":"<p>超大型或更小，脚踩, @Check[type:reflex|dc:29|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
+		},
 		"Augur":{
 			"name":"邪窥魔 Augur",
 			"publicNotes":"<p>这些由强壮的肌肉、锯齿状的刀片和染血的金属组成的球体是影界最常见的链魔。每个邪窥魔只有一只眼睛，他们从这只眼睛里可以看到其他链魔造成的恐怖。在经过其他链魔的调教之后，邪窥魔期待并懂得欣赏这种痛苦。邪窥魔直径1尺，重约30磅。</p>",
