@@ -13,7 +13,8 @@
 		"blurb":"system.details.blurb",
 		"speed":"system.attributes.speed.details",
 		"languages":"system.traits.languages.custom",
-		"stealth":"system.attributes.stealth"
+		"stealth":"system.attributes.stealth",
+		"ac":"system.attributes.ac.details"
 	},
 	"entries": {
 		"Abbot Tsujon": {
@@ -190,7 +191,99 @@
 			}
 		},
 		"Blue Viper (Level 14)": {
-			"name": "Blue Viper (Level 14)"
+			"name": "蓝蝮蛇(14级) Blue Viper (Level 14)",
+			"blurb": "男性鼠族投毒者",
+			"senses":"昏暗视觉",
+			"items":{
+				"nhjh7GuFUGuOjMxp":{
+					"name": "高等强酸瓶(灌注物品) Acid Flask (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>这个装满强酸的烧瓶会造成1点酸液伤害，3d6点酸液持续伤害和3点酸液溅射伤害。你在攻击骰上获得+2的物品加值。</p>"
+				},
+				"mVPyVqeA0xYvhjeD":{
+					"name": "高等炽火胶(灌注物品) Alchemist's Fire (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>炽火胶是一种接触空气就会剧烈燃烧的爆炸性液体混合物。你在攻击骰上获得+2的物品加值。这枚炸弹造成3d8点火焰伤害，3点火焰持续伤害和3点火焰溅射伤害。</p>"
+				},
+				"2vuUf8SxcSM9MsWy":{
+					"name": "高等瓶装闪电(灌注物品) Bottled Lightning (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>瓶装闪电里面装满了一接触空气就会创造出强烈电流的不稳定液体试剂。一旦命中，目标还会在你的下一回合开始前陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。你在攻击骰上获得+2的物品加值。这枚炸弹造成3d6点闪电伤害和3点闪电溅射伤害。</p>"
+				},
+				"t65VniXitAG3dnAv":{
+					"name": "高等霜冻瓶(灌注物品) Frost Vial (Greater) (Infused)",
+					"description":"<p>这瓶试剂中的液体在接触空气时会迅速吸收周围的热量。一旦命中，目标直到它的下一回合结束为止，都会在它的速度上承受状态减值。</p>\n<p>你在攻击骰上获得+2的物品加值。这枚炸弹造成3d6点寒冷伤害和3点寒冷溅射伤害，目标承受-10尺的减值。</p>\n<hr />\n<p>@Compendium[pf2e.equipment-effects.nJRoiSyd67eQ1dYj]效果: 高等霜冻瓶}</p>"
+				},
+				"vqJxIQL873yU5LDb":{
+					"name": "+1抗力探索者服饰 +1 Resilient Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"ljAsYwPMN3rYSpsH":{
+					"name": "龙胆汁 Dragon Bile (Applied to Body)",
+					"description":"<p>这种消化液和绿龙毒腺的混合物能让受害者呕吐不止，仿佛它的肉体从内部被消化一般。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1轮)</p>\n<p><strong>阶段 2</strong> [[/r {7d6}[poison]]]{7d6毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3} (1轮)</p>\n<p><strong>阶段 3</strong> [[/r {9d6}[poison]]]{9d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 4}(1轮)</p>"
+				},
+				"wUJCWvjc3BWDUddX":{
+					"name": "燃疫松香(灌注物品) Blightburn Resin (Infused)",
+					"description":"<p>这坨黏糊的硬化树液由感染了菌枯病（fungal blights）的树木上收割而来，并已经过明火灼烧。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {8d6}[poison]]]{8d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {10d6}[poison]]]{10d6毒素伤害} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {15d6}[poison]]]{15d6毒素伤害} (1轮)</p>"
+				},
+				"zRrvoX1Y5HwEDiYk":{
+					"name": "死帽粉(灌注物品) Deathcap Powder (Infused)",
+					"description":"<p>有毒的死帽蕈可以经由晾晒、研磨制成无味且更具毒性的粉末。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (摄入)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 10分钟</p>\n<p><strong>最大持续时间</strong> 6分钟</p>\n<p><strong>阶段 1</strong> [[/r {13d6}[poison]]]{13d6 毒素伤害} (1 分钟)</p>\n<p><strong>阶段 2</strong> [[/r {17d6}[poison]]]{17d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1 分钟)</p>\n<p><strong>阶段 3</strong> [[/r {20d6}[poison]]]{20d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}(1 分钟)</p>"
+				},
+				"A3BJD8j1RQns5h5G":{
+					"name": "高等生命灵药(灌注物品) Elixir of Life (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复 [[/r {7d6+18}[healing]]]{7d6+18 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+2物品加值。</p>\n<p>@Compendium[pf2e.equipment-effects.Z9oPh462q82IYIZ6]{效果: 高等生命灵药}</p>"
+				},
+				"fvOFP2wsG8H8xzgz":{
+					"name": "烈赤根糊(灌注物品) Malyass Root Paste (Infused)",
+					"description":"<p>烈赤根糊可能被用于在运动比赛中阻碍对手，此外也有用于间谍和追踪活动。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">T</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 分钟</p>\n<p><strong>阶段 1</strong> @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} 和针对所有速度（Speeds）的-10尺状态减值 (1 分钟)</p>\n<p><strong>阶段 2</strong> 笨拙clumsy 2 和针对所有速度的-20尺状态减值 (1 分钟)</p>\n<p><strong>阶段 3</strong> 笨拙clumsy 3, @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}, 和针对所有速度的-30尺状态减值</p>"
+				},
+				"vt5uH4LtH7cQuNK8":{
+					"name": "紫虫毒(灌注物品) Purple Worm Venom (Infused)",
+					"description":"<p>来自庞大紫虫的毒液会让受害者陷入虚弱。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {5d6}[poison]]]{5d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}(1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)</p>"
+				},
+				"gUg1rLaVM9Uo0yCx":{
+					"name": "阴影精华(灌注物品) Shadow Essence (Infused)",
+					"description":"<p>这种由阴影位面蒸馏而来的油状物质能将晦暗之力施加于受害者。来自阴影精华的力竭状态持续24小时。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害} 和 [[/r {2d6}[poison]]]{2d6 毒素伤害} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害}, [[/r {2d6}[poison]]]{2d6 毒素伤害}, 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害}, [[/r {2d6}[poison]]]{2d6 毒素伤害}, 和 力竭enfeebled 2 (1 轮)</p>"
+				},
+				"nCunB6H2GFAWxoHc":{
+					"name": "蜘丝根(灌注物品) Spider Root (Infused)",
+					"description":"<p>将某种爬藤细小的丝状根部研磨成糊后制成的蛛丝根能让受害者变得笨拙又愚钝。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 分钟</p>\n<p><strong>阶段 1</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1 分钟)</p>\n<p><strong>阶段 2</strong> [[/r {9d6}[poison]]]{9d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1 分钟)</p>\n<p><strong>阶段 3</strong> [[/r {10d6}[poison]]]{10d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3} (1 分钟)</p>"
+				},
+				"1ytm10EBunourBmr":{
+					"name": "高等强酸瓶 Greater Acid Flask"
+				},
+				"x6m0LbmWc8Cn84Lu":{
+					"name": "高等炽火胶 Greater Alchemist's Fire"
+				},
+				"EfrEtVXaCW3qrooZ":{
+					"name": "高等瓶装闪电 Greater Bottled Lightning"
+				},
+				"J5M688CLiZAfnf7K":{
+					"name": "高等霜冻瓶 Greater Frost Vial"
+				},
+				"LF5gi4818bCXaIHR":{
+					"name": "灌注物品 Infused Items",
+					"description":"<p>蓝蝮蛇携带有下列灌注物品：：2瓶@Compendium[pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{高等强酸瓶 Acid Flask (Greater)}，4瓶@Compendium[pf2e.equipment-srd.n5yTlTs63o53n3k6]{高等炽火胶 Alchemist's Fire (Greater)}，6瓶@Compendium[pf2e.equipment-srd.Cc4SokzVBoBCkHId]{燃疫松香 Blightburn Resin}，4瓶@Compendium[pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{高等瓶装闪电 Bottled Lightning (Greater)}，3份@Compendium[pf2e.equipment-srd.87AzvRja9uQOLJCC]{死帽粉 Deathcap Powder}，4瓶@Compendium[pf2e.equipment-srd.mYozcVg9fQY6zO7C]{高等生命灵药 Elixir of Life (Greater)}，2瓶@Compendium[pf2e.equipment-srd.intVPcEzbE9o4NQd]{高等霜冻瓶 Frost Vial (Greater)}，3份@Compendium[pf2e.equipment-srd.76T49dJYfxIrPvQe]{烈赤根糊 Malyass Root Paste}，9份@Compendium[pf2e.equipment-srd.iRDCa4OVSTGUD3vi]{紫虫毒 Purple Worm Venom}，6份@Compendium[pf2e.equipment-srd.Wjkw0lEUOhypYvzo]{阴影精华 Shadow Essence}，3份@Compendium[pf2e.equipment-srd.oOXvk18K4izaJzG7]{蛛丝根 Spider Root}。这些物品在24小时内有效，或直到蓝蝮蛇下一次每日准备时有效。</p>"
+				},
+				"aT1K6zkwI73D4tJ8":{
+					"name": "染毒外套 Poisoned Coat",
+					"description":"<p><strong>触发</strong> 邻接蓝蝮蛇的生物用近战无武装攻击命中他。</p>\n<hr />\n<p><strong>效果</strong> 触发生物暴露在@Compendium[pf2e.equipment-srd.6swrLimere2nZtz9]{龙胆汁 Dragon Bile}效果中。这会消耗这一份毒素，蓝蝮蛇在消耗10 分钟将下一份接触或伤口毒素涂抹到外套前，无法使用此反应动作。</p>"
+				},
+				"G1wu8KW1gALb7KbD":{
+					"name": "精准下毒 Pinpoint Poisoner",
+					"description":"<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
+				},
+				"Tt37ijMg1fiX7fGx":{
+					"name": "毒素喷射 Poison Spray",
+					"description":"<p><strong>需求</strong> 蓝蝮蛇正手持一份接触或伤口毒素。</p>\n<hr />\n<p><strong>效果</strong> 蓝蝮蛇口含该毒药，然后用嘴喷出，影响@Template[type:cone|distance:15]{15尺锥形}范围所有生物。蓝蝮蛇自己不会暴露在该毒素中。范围内所有生物立刻感染该毒素，每个生物都必须进行强韧豁免对抗该毒素。</p>"
+				},
+				"rbtSqixbTXvvcmJc":{
+					"name": "强效制毒师 Potent Poisoner",
+					"description":"<p>蓝蝮蛇的灌注毒素DC为34。</p>"
+				},
+				"UUgL7mamcQM9PkU0":{
+					"name": "快速应用 Quick Application",
+					"description":"<p>蓝蝮蛇以交互抽哦出一份伤口都要并立刻给持握的一把武器涂毒。</p>"
+				}
+			}
 		},
 		"Blue Viper (Level 16)": {
 			"name": "Blue Viper (Level 16)"
@@ -218,7 +311,41 @@
 			"name": "Bul-Gae"
 		},
 		"Butterfly Blade Warrior": {
-			"name": "Butterfly Blade Warrior"
+			"name": "蝶刃战士 Butterfly Blade Warrior",
+			"blurb": "人类忠诚刺客",
+			"items":{
+				"jCmLHcpebaggKboj":{
+					"name": "蝶刃 Butterfly Sword",
+					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃——技艺精湛的过峡刺客的首选武器。</p>"
+				},
+				"Y6K7hW8pefr98Xgk":{
+					"name": "+1抗力镶嵌皮甲 +1 Resilient Studded Leather Armor",
+					"description":"<p>这种皮甲用金属铆钉加固，有时也用小金属板加固，使皮甲保留大部分的柔韧性的同时得到更有力的保护。</p>"
+				},
+				"FgZBxJr0uazPJd8V":{
+					"name": "蝶刃 Butterfly Sword",
+					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃——技艺精湛的过峡刺客的首选武器。</p>"
+				},
+				"ugb6n0QNUCteNVeB":{
+					"name": "蝶吻 Butterfly's Kiss",
+					"description":"<p>蝶刃战士使用蝶刃进行非致命攻击不需要承受相关攻击减值。</p>"
+				},
+				"GHnydFlMyHwFOHtH":{
+					"name": "策识眼 Mastermind's Eye",
+					"description":"<p>当蝶刃战士成功通过回忆知识动作鉴定目标生物时，该生物直到自己的下一回合开始，对蝶刃战士的攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。若蝶刃战士大成功，该生物在1分钟内对蝶刃战士的攻击措手不及。</p>"
+				},
+				"q88lqgzMMO0yY9PK":{
+					"name": "偷袭 Sneak Attack",
+					"description":"蝶刃战士打击措手不及的生物额外造成[[/r 1d6]]{1d6精准伤害}。\n<hr />\n@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]"
+				},
+				"nbaWVxcqV74vIiGN":{
+					"name": "策识之击 Studied Strike",
+					"description":"<p>蝶刃战士对目标进行的攻击让他更了解目标。他进行一次近战打击。若命中，他立刻对目标进行一次回忆知识。若攻击大成功，该次回忆知识获得+2环境加值。目标会对策识之击临时免疫1天。</p>"
+				},
+				"dEMUM22Ke1Ah5KZD":{
+					"name": "过峡学识"
+				}
+			}
 		},
 		"Canopy Elder": {
 			"name": "Canopy Elder"
@@ -1234,7 +1361,45 @@
 			}
 		},
 		"Koto Zekora": {
-			"name": "Koto Zekora"
+			"name": "琴·禅古罗 Koto Zekora",
+			"hp":"再生15（被酸或火中止）",
+			"allSaves":"对魔法全豁免+1状态加值",
+			"blurb": "女性鬼道士帝皇血脉术士",
+			"senses":"黑暗视觉",
+			"items":{
+				"2YsgkSpxPr5k633t":{
+					"name": "奥术自发法术 Spontaneous Arcane Spells"
+				},
+				"lakHxBya0Tud6OmM":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"olvF5RYCoINLngzv":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"XFjtfvQm6JOkumKy":{
+					"name": "隐形术(随意施法,仅自己) Invisibility (at will, self only)",
+					"description":"<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+				},
+				"EwdkOsd6FURaJqYl":{
+					"name": "+2抗力半身甲 +2 Resilient Half Plate",
+					"description":"<p>半身甲由大部分全身甲的上半身板件组成，用较轻或较薄的钢板保护臂和腿。它既提供了一部分全身甲的保护，同时兼顾了更大的灵活性和速度。这种盔甲包含一套内衬的布甲和一双手套。</p>"
+				},
+				"O3FlJkeqZNFI6MD7":{
+					"name": "血统奥秘 Bloodline Magic",
+					"description":"<p>当琴·禅古罗施放一个如下血统法术时（<em>@Compendium[pf2e.spells-srd.VlNcjmYyu95vOUe8]{次元门 Dimension Door}</em>，<em>@Compendium[pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>，<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>，<em>@Compendium[pf2e.spells-srd.o6YCGx4lycsYpww4]{加速术 Haste}</em>，<em>@Compendium[pf2e.spells-srd.gKKqvLohtrSJj3BM]{魔法飞弹 Magic Missile}</em>，<em>@Compendium[pf2e.spells-srd.d6o52BnjViNz7Gub]{虹光喷射 Prismatic Spray}</em>，<em>@Compendium[pf2e.spells-srd.Ek5XI0aEdZhBgm21]{窥视魔眼 Prying Eye}</em>，<em>@Compendium[pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{迷宫术 Maze}</em>），它的技能检定获得+1状态加值，持续1轮。<br />@Compendium[pf2e.bestiary-effects.tvybMInVm415jA3p]{效果: 血统奥秘}</p>"
+				},
+				"xduDoD6XqwWesLRQ":{
+					"name": "对魔法全豁免+1状态加值"
+				},
+				"mi4iZW5Ggypto2mg":{
+					"name": "再生15（被酸或火中止）"
+				},
+				"nxdr8kif69hRmy9m":{
+					"name": "变身 Change Shape",
+					"description":"鬼道士可以变为食人魔（ogre）的外形。这不会改变其速度，打击攻击和伤害。"
+				}
+			}
 		},
 		"Kun": {
 			"name": "Kun"
@@ -1426,10 +1591,47 @@
 			"name": "Phuthi"
 		},
 		"Planar Terra-cotta Soldier": {
-			"name": "Planar Terra-cotta Soldier"
+			"name": "次元兵马俑士兵 Planar Terra-cotta Soldier",
+			"ac":"32 with shield raised",
+			"languages":"(无法说任何语言)",
+			"blurb": "变体兵马俑士兵",
+			"publicNotes": "<p>兵马俑守护古代统治者的陵墓，在那里不休不眠地警戒，只有当入有入侵者闯入盗墓或玷污陵墓时才会活动起来。每个战士都是用粘土精心制作而成，并各自具有独特的特征。</p>\n<hr />\n<p>兵马俑有6英尺高，600磅重。</p>",
+			"items":{
+				"uTQwt6vV8Jw92Whh":{
+					"name": "次元快步 Planar Step",
+					"description":"<p>次元兵马俑士兵可以在主物质位面的裂缝中穿行，立刻将自己传送到60尺内一个地方。它在[[/br 1d4 #Planar Step Recharge]]{1d4轮}内无法再次使用次元快步。</p>"
+				}
+			}
 		},
 		"Planar Terra-cotta Squadron": {
-			"name": "Planar Terra-cotta Squadron"
+			"name": "次元兵马俑卫队 Planar Terra-cotta Squadron",
+			"hp":"部队防御(200/100)",
+			"ac":"举盾时39",
+			"blurb": "变体兵马俑卫队",
+			"languages":"(无法说任何语言)",
+			"publicNotes": "<p>兵马俑守护古代统治者的陵墓，在那里不休不眠地警戒，只有当入有入侵者闯入盗墓或玷污陵墓时才会活动起来。每个战士都是用粘土精心制作而成，并各自具有独特的特征。</p>\n<hr />\n<p>这些被制造出来的战士作为训练有素的小队紧密协作，击退入侵者。</p>",
+			"items":{
+				"8VkXSkdo2QljL0s2":{
+					"name": "次元快步 Planar Step",
+					"description":"<p>兵马俑卫队可以在主物质位面的裂缝中穿行，立刻将自己传送到90尺内一个地方。它们在[[/br 1d4 #Planar Step Recharge]]{1d4轮}内无法再次使用次元快步。</p>"
+				},
+				"OgFZ82Cgk6qKkD9l":{
+					"name": "弓箭齐发 Aim as One",
+					"description":"<p>部队进行一次远程齐射，射程100尺，对@Template[type:burst|distance:10]{10尺爆发}范围造成[[/r 3d8+13]]伤害（@Check[type:reflex|dc:33|basic:true]豁免）。如果卫队规模被缩减至8格或更小，则爆发范围减少为@Template[type:burst|distance:5]{5尺}。</p>"
+				},
+				"moI2lATWRRsnrF0Z":{
+					"name": "举起盾墙 Raise Shields",
+					"description":"<p>部队举起盾墙，效果如同单个生物@Compendium[pf2e.actionspf2e.xjGwis0uaC2305pm]{举起盾牌 Raise a Shield}。</p>"
+				},
+				"Vx9iqVf4ismUN743":{
+					"name": "整齐划一 Strike as One",
+					"description":"<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮1次</p>\n<hr />\n<p><strong>效果</strong> 卫队对5尺内的所有生物进行近战攻击（@Check[type:reflex|dc:30|basic:true]豁免）。该伤害取决于花费的动作：</p>\n<p><span class=\"pf2-icon\">A</span> [[/r {2d8}[slashing]]]2d8挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">D</span> [[/r {3d8+13}[slashing]]]{3d8+13挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">T</span> [[/r {4d8+16}[slashing]]]{4d8+16挥砍伤害}。</p>"
+				},
+				"4y0Im0eAbj4YFOII":{
+					"name": "部队移动 Troop Movement",
+					"description":"<p>当部队行走时，它首先以一个自由动作重整队列，聚集成20尺*20尺方格的队列（减去任何损失的方格），然后以满速度移动。它在移动时如同一个巨形生物那般；举例来说，如果任何方格进入了困难地形，则整个部队都需要花费额外的移动力。</p>"
+				}
+			}
 		},
 		"Portal Eater": {
 			"name": "Portal Eater"
@@ -1444,7 +1646,34 @@
 			"name": "Rai Sho Postulant"
 		},
 		"Ran-to (Level 14)": {
-			"name": "Ran-to (Level 14)"
+			"name": "捣达(14级) Ran-to (Level 14)",
+			"blurb": "男性雪地精摔跤手",
+			"senses":"黑暗视觉",
+			"items":{
+				"fWgbC74pAipVC9q1":{
+					"name": "+1抗力镶嵌皮甲 +1 Resilient Studded Leather Armor",
+					"description":"<p>这种盔甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。</p>"
+				},
+				"fkempowsMrEXyJXO":{
+					"name": "身体投掷 Body Slam",
+					"description":"<p><strong>需求</strong> 捣达正擒抱一个生物。</p>\n<hr />\n<p><strong>效果</strong> 捣达将该生物摔投到地面上。该生物受到[[/r {8d6}[bludgeoning]]]{8d6钝击伤害}并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。擒抱结束。</p>"
+				},
+				"OF7SKGyvLUcwnUIT":{
+					"name": "飞扑 Leaping Catch",
+					"description":"<p>捣达在飞跃中抓住敌人对其擒抱。他进行一次@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}、@Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@Compendium[pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。他必须如常进行运动技能检定来执行这个动作，但无论是何种，DC都等于他在空中移动的尺数。在该次跳跃中任何一点，捣达可以进行一次运动检定@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}一个目标。在跳跃的检定完成后，他（若擒抱成功，还有被擒抱的生物）一同倒地。二者都不会从这次坠落中受到伤害。</p>"
+				},
+				"CdGPXloc7jdvHNUb":{
+					"name": "巨人摔角术 Titan Wrestler",
+					"description":"<p>捣达可以对最多比自己大两个体型的生物使用@Compendium[pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@Compendium[pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}或@Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}。</p>"
+				},
+				"J5cP8MRBTAdyZFDq":{
+					"name": "人肉大风车 Whirlwind Toss",
+					"description":"<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 捣达正@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 捣达将擒抱的生物抓牢，旋转起来用他攻击触及内的任何生物，最后把他丢出去。捣达进行一次运动检定，对抗被擒抱生物的强韧豁免DC。</p>\n<hr />\n<p><strong>大成功</strong> 捣达将他甩出很远。擒抱结束。被擒抱生物被甩飞到10尺内一格，受到[[/r {10d6}[bludgeoning]]]{10d6钝击伤害}，并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。所有邻接捣达的生物受到等量钝击伤害（@Check[type:reflex|dc:34|basic:true]豁免）。</p>\n<p><strong>成功</strong> 如同大成功，不过被擒抱生物只会被甩飞到5尺内一格，且伤害为[[/r {6d6}[bludgeoning]]]{6d6钝击伤害}。</p>\n<p><strong>失败</strong> 捣达没有成功制住目标。擒抱结束，被擒抱生物倒地。</p>\n<p><strong>大失败</strong> 捣达失去了对目标的控制，擒抱结束。</p>"
+				},
+				"j5YeAHaP8v8rDPhq":{
+					"name": "摔跤学识"
+				}
+			}
 		},
 		"Ran-to (Level 16)": {
 			"name": "Ran-to (Level 16)"
@@ -1493,7 +1722,30 @@
 			"name": "Shadow Yai"
 		},
 		"Shino Hakusa (Level 14)": {
-			"name": "Shino Hakusa (Level 14)"
+			"name": "白谷真野(14级) Shino Hakusa (Level 14)",
+			"blurb": "女性天舒人刺客",
+			"items":{
+				"0lwMSJcnzgWd1hcw":{
+					"name": "+2强击重拳缠手带 +2 Greater Striking Handwraps of Mighty Blows",
+					"description":"<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"e9QsTTUVu8r1v5Kk":{
+					"name": "惑敌飞跃 Disorienting Tumble",
+					"description":"<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				},
+				"bmknajpxNBKh5qrx":{
+					"name": "强力拳 Powerful Fists",
+					"description":"<p>白谷的拳头打击造成致命伤时不会受到非致命的攻击减值。白谷的拳头打击视为寒铁和银制。</p>"
+				},
+				"b1CXbdxuM0TsLGtM":{
+					"name": "压痛点攻击 Pressure Point Attack",
+					"description":"<p>白谷针对目标的压痛点发动攻击来削弱对方。白虎进行一次拳头打击。若命中，目标正常受到伤害，同时需要进行一次@Check[type:fortitude|dc:35]豁免检定。无论豁免结果如何，目标对压痛点攻击获得1分钟的临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标临时弱化。在1轮内，目标获得@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且使用具有操作特征的动作时需进行@Check[type:flat|dc:5]检定，失败则失去动作。</p>\n<p><strong>失败</strong> 如成功，但持续1 分钟。</p>\n<p><strong>大失败</strong> 如成功，但持续1 分钟，且@Check[type:flat|dc:11]检定DC11，同时目标在1分钟内速度获得-10尺状态减值。</p>"
+				},
+				"rOHpfvwV5FzVy4kx":{
+					"name": "偷袭 Sneak Attack",
+					"description":"白谷打击措手不及的目标额外造成3d6点精准伤害。\n<hr />\n@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]"
+				}
+			}
 		},
 		"Shino Hakusa (Level 16)": {
 			"name": "Shino Hakusa (Level 16)"
@@ -1549,7 +1801,39 @@
 			"name": "Syndara the Sculptor"
 		},
 		"Syu Tak-nwa (Level 14)": {
-			"name": "Syu Tak-nwa (Level 14)"
+			"name": "苏塔奴(14级) Syu Tak-nwa (Level 14)",
+			"blurb": "女性嬛族白发女巫",
+			"items":{
+				"67zu7lZWfNjOFGws":{
+					"name": "异能准备法术 Prepared Occult Spells"
+				},
+				"hwx4Q8YmVaOhfkhN":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"R95zLZt6AC0Skn0E":{
+					"name": "尖笑 Cackle",
+					"description":"<p>你以简短的笑声延长你产生的魔法效果。你用自由动作进行 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}。</p>"
+				},
+				"S2QTreaW7kY6hp4d":{
+					"name": "+2高等强击宝剑 +2 Greater Striking Jian",
+					"description":"<p>数据如短剑</p>\n<p>这种宝剑有不同的形状和样式，它们通常2尺长。</p>"
+				},
+				"4BQjVqK90WiniYts":{
+					"name": "活发 Hair"
+				},
+				"dDsXiFw7Yz34rtG1":{
+					"name": "宝剑 Jian"
+				},
+				"gzFVsti15mvfMvM5":{
+					"name": "魔宠 Familiar",
+					"description":"苏塔奴的魔宠是名为勇锁的象鹰。勇锁拥有40尺飞行速度，黑暗视觉，作为模糊感官的30尺灵敏嗅觉。"
+				},
+				"fygrnuQNEcBuXcIu":{
+					"name": "强化活发 Empowered Hair",
+					"description":"<p>苏塔奴在使用活发上的造诣独树一帜。她的活发可以用来执行精确动作，比如开锁甚至简单的交互动作，并且她能用活发自动进行攫抓（Grab），如同名怪物能力。她可通过活发传递巫术。当苏塔奴成功施放需要2个或更多动作且无需攻击骰的巫术聚能法术时，若目标在触及内，作为施法动作的一部分，在应用巫术效果前，她可选择对该目标进行一次活发打击。若打击未命中，巫术不生效。</p>"
+				}
+			}
 		},
 		"Syu Tak-nwa (Level 16)": {
 			"name": "Syu Tak-nwa (Level 16)"
