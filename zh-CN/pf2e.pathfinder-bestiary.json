@@ -506,7 +506,60 @@
             "name": "鸡蛇兽 Cockatrice"
         },
         "Crimson Worm": {
-            "name": "红虫 Crimson Worm"
+            "name": "红虫 Crimson Worm",
+            "hp":"火焰治疗",
+            "senses":"黑暗视觉, 震颤感知（模糊）100尺",
+            "publicNotes": "<p>红虫是最危险的洞穴蠕虫种类之一。除了比蓝虫更大之外，红虫还喜欢在火山地区挖掘洞穴。世代更迭，火山给红虫带来了与火元素位面的超自然联系。红虫在活火山的熔火核心里筑巢，就像在黑暗之地的最深处发现的那大片沸腾的岩浆地脉一样。在古文明、矮人先民以及火元素位面居民的一些传说中，红虫填满了居民点周围的熔岩护城河，这可能是有些事实依据的。但是在这之前，他们首先得有某种方法来控制这些“护城河蠕虫”并避免红虫先把他们自己的堡垒给挖穿了。</p>\n<p>红虫经常会出现在火山温泉等地热活动频繁的地表区域，但即便如此，它们还是喜欢用更多的时间来挖洞，无休止地寻找食物。在红虫的领地内的地表土地有相当显眼的特征——到处都堆积着它们挖洞时排出地表的越堆越高的土堆。</p>\n<hr />\n<p>洞穴蠕虫是超级巨大的食腐动物，它们钻到世界深处，吞食找到的任何东西。这些蠕虫以各自独特的颜色而得名，它们非常贪婪，且破坏力强大。不同颜色和能力的洞穴蠕虫潜伏在世界上更偏远的角落——比如传说中居住在巨大冰川或冰山中的白虫，和在早已被遗忘的废墟的墓葬中钻洞的灰虫。</p>",
+            "items":{
+                "HGrl3b1F23RjZkR7":{
+                    "name": "牙咬 Jaws"
+                },
+                "0fQVIqLvgnfSP4JM":{
+                    "name": "针刺 Stinger"
+                },
+                "yOxa8PKiBE6PbRBA":{
+                    "name": "虫体 Body"
+                },
+                "IyKWWIgBkLnO2AXB":{
+                    "name": "震颤感知（模糊）100尺 Tremorsense (Imprecise) 100 feet"
+                },
+                "FsFg8KtMHYPQyyIC":{
+                    "name": "火焰治疗 Fire Healing",
+                    "description":"<p>只要红虫接触到至少和它体型一样大的火焰或岩浆体，它就能获得@Compendium[pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速治疗20 Fast Healing 20}。当它被除自身之外的任何魔法火焰效果击中时，红虫会恢复相当于该效果造成火焰伤害的一半的生命值。</p>"
+                },
+                "tphsLfLbrYV16pth":{
+                    "name": "势不可挡 Inexorable",
+                    "description":"<p>当红虫的回合结束时，从@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}、@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}状态中恢复。它对减少移动速度和@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态免疫，并且无视困难地形和高等困难地形。</p>"
+                },
+                "Y5momV4CWpuw5vhk":{
+                    "name": "摆脱 Shake It Off",
+                    "description":"<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 红虫将要受到某种状态或不利效果影响（例如<em>@Compendium[pf2e.spells-srd.dN8QBNuTiaBHCKUe]{恶意变形术 Baleful Polymorph}</em>）。</p>\n<hr />\n<p><strong>效果</strong> 红虫使触发此能力的效果无效。来自神器、神祇或类似的力量造成的效果无法用此能力避免。</p>"
+                },
+                "hdZW9dGdp8kUzUjv":{
+                    "name": "吐息 Breath Weapon",
+                    "description":"<p>红虫进行吐息，对@Template[type:cone|distance:60]{60尺锥形}范围内的所有生物造成[[/r {18d6}[fire]]]{18d6火焰伤害}（@Check[type:reflex|dc:41|basic:true]豁免）。红虫在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息。</p>"
+                },
+                "t1G2FbWy88tYUk7w":{
+                    "name": "红虫毒液 Crimson Worm Venom",
+                    "description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:41]</p>\n<hr />\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}(1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮).</p>"
+                },
+                "fifv91vxtwlIpzXx":{
+                    "name": "快速吞咽 Fast Swallow",
+                    "description":"<p><strong>触发</strong> 红虫@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 红虫使用活吞能力。</p>"
+                },
+                "NBXY2jJ5QKUZlI60":{
+                    "name": "掘洞者 Rock Tunneler",
+                    "description":"<p> 红虫能在坚硬的岩石中以20尺的速度掘进。如果它愿意的话，可以在行经路线上留下隧道，事实上红虫通常就是这么做的。</p>"
+                },
+                "8VCoSCtEbUqhtmnI":{
+                    "name": "活吞 Swallow Whole",
+                    "description":"<p>超大型, [[/r {3d10+10}[bludgeoning] + {2d6}[fire]]]{3d10+10钝击+2d6火焰伤害}, 破裂36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "D1ZUrE1107HIW39r":{
+                    "name": "连环击 Thrash",
+                    "description":"<p>红虫能对触及范围内的所有生物进行一次打击。它可以最多进行一次牙咬打击、一次针刺打击和无数次虫体打击。每次攻击都计入红虫的多重攻击减值，但是在此项行动的全部攻击动作都结束之后生效。</p>"
+                }
+            }
         },
         "Crag Linnorm": {
             "name": "峭壁蛇龙 Crag Linnorm"
