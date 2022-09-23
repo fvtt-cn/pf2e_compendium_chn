@@ -32,7 +32,38 @@
             "name": "黑布丁怪 Black Pudding"
         },
         "Boggard Swampseer": {
-            "name": "沼蜍沼泽先知 Boggard Swampseer"
+            "name": "沼蜍沼泽先知 Boggard Swampseer",
+            "senses":"黑暗视觉",
+            "speed":"swamp stride",
+            "publicNotes": "<p>沼蜍沼泽先知通过信仰恶魔领主果甘蜍来获得施法力量的馈赠，他们用自己的力量统治沼蜍人村庄，协调其余村庄的秩序并计划袭击周边的社群。</p>\n<hr />\n<p>沼蜍人是好斗的两栖类人生物，他们生活在沼泽、湿地甚至部分雨林中。沼蜍人的成长过程首先从卵孵化为蝌蚪，他们会激烈地争夺食物甚至会在这场斗争中吃掉自己的兄弟姐妹。在接下来的3年里，幸存下来的沼蜍人在学习狩猎、制造和战争的基础知识——一切在力量至上的社会中幸存所需要的理解的知识——的同时，长出双手、双腿和肺部。大多数沼蜍人社会的顶端阶级是身胖体肥的沼泽先知（swampseer），他们懂得如何使用邪恶的神术。</p>",
+            "items":{
+                "pFruogrBBB4pvImp":{
+                    "name": "原能准备法术 Primal Prepared Spells"
+                },
+                "4gP2dSNnL1rudfAt":{
+                    "name": "蛙舌 Tongue"
+                },
+                "9SboqcQona3PXQIx":{
+                    "name": "破灭鸣叫 Destructive Croak",
+                    "description":"<p>沼泽先知发出强力的嘶鸣，这会对@Template[type:emanation|distance:15]{15尺弥漫}范围的非沼蜍人生物造成[[/r {4d6}[sonic]]]{4d6音波伤害}（@Check[type:fortitude|dc:19|basic:true]豁免）。</p>\n<p>任何处于@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物都会承受额外音波伤害，伤害数值为惊惧状态数值的两倍。</p>\n<p>沼泽先知在之后的[[/br 1d4 #rounds]]{1d4轮}内无法再次使用破灭鸣叫。</p>"
+                },
+                "80CuEcGtDQ6fUIyY":{
+                    "name": "淹没之音 Drowning Drone",
+                    "description":"<p><strong>触发</strong> 沼泽先知或他的60尺内的1名盟友尝试豁免检定对抗听觉或音波效果</p>\n<hr />\n<p><strong>效果</strong> 沼泽先知会发出低沉的鸣叫压过其他声音。他要投掷1次@Check[type:performance]检定。若沼泽先知和他位于区域内的沼蜍盟友可以进行选择，在沼泽先知的表演检定和他们的豁免结果中取较高的数值，并以此来判断对抗听觉或音波效果后产生的效果。</p>"
+                },
+                "xBIoPO0Yl00JwtXW":{
+                    "name": "沼泽奔行 Swamp Stride",
+                    "description":"<p>沼蜍先知能忽略由于沼泽地形特征产生的困难地形。</p>"
+                },
+                "z8bl09rqF4yCJDy4":{
+                    "name": "恐惧鸣叫 Terrifying Croak",
+                    "description":"<p>沼蜍先知发出可怕的鸣叫声。@Template[type:emanation|distance:30]{30尺范围}内的任何非沼蜍人都会陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，除非他们能够成功通过@Check[type:will|dc:19]豁免。</p>\n<p>豁免中掷出大成功的生物会在1分钟内临时免疫该能力。</p>"
+                },
+                "A33mGw1DCgRJRDSe":{
+                    "name": "蛙舌攫抓 Tongue Grab",
+                    "description":"<p>若沼蜍先知用蛙舌命中1个生物，那么该生物会被他@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。生物可以通过命中AC 15并造成至少4点挥砍伤害来切开蛙舌。</p>\n<p>尽管这么做不会对沼蜍先知造成伤害，但它可以使沼蜍先知无法再次使用蛙舌打击，直至沼蜍先知通过1星期的休息才能够重新使用蛙舌。</p>"
+                }
+            }
         },
         "Chuul": {
             "name": "甲伏怪 Chuul"
@@ -1187,7 +1218,27 @@
             "name": "野猪 Boar"
         },
         "Boggard Warrior": {
-            "name": "沼蜍勇士 Boggard Warrior"
+            "name": "沼蜍勇士 Boggard Warrior",
+            "senses":"黑暗视觉",
+            "speed":"沼泽奔行",
+            "publicNotes": "<p>沼蜍勇士强化了单人作战的能力，而且他们更倾向于单打独斗，因为这样就没人和他争抢杀戮的机会了。他们以在追捕逃兵所具备的近乎达到超自然程度的专注力而闻名。</p>\n<hr />\n<p>沼蜍人是好斗的两栖类人生物，他们生活在沼泽、湿地甚至部分雨林中。沼蜍人的成长过程首先从卵孵化为蝌蚪，他们会激烈地争夺食物甚至会在这场斗争中吃掉自己的兄弟姐妹。在接下来的3年里，幸存下来的沼蜍人在学习狩猎、制造和战争的基础知识——一切在力量至上的社会中幸存所需要的理解的知识——的同时，长出双手、双腿和肺部。大多数沼蜍人社会的顶端阶级是身胖体肥的沼泽先知（swampseer），他们懂得如何使用邪恶的神术。</p>",
+            "items":{
+                "mw30E878JJp7tVVh":{
+                    "name": "蛙舌 Tongue"
+                },
+                "momzHh7zAZRC7Hob":{
+                    "name": "沼泽奔行 Swamp Stride",
+                    "description":"<p>沼蜍勇士能忽略由于沼泽地形特征产生的困难地形。</p>"
+                },
+                "up8Xcig2FrwgbFfb":{
+                    "name": "恐惧鸣叫 Terrifying Croak",
+                    "description":"<p>沼蜍勇士发出可怕的鸣叫声。@Template[type:emanation|distance:30]{30尺范围}内的任何非沼蜍人都会陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，除非他们能够成功通过@Check[type:will|dc:18]豁免。</p>\n<p>豁免中掷出大成功的生物会在1分钟内临时免疫该能力。</p>"
+                },
+                "MEAPfylvHHHbTqOf":{
+                    "name": "蛙舌攫抓 Tongue Grab",
+                    "description":"<p>若沼蜍勇士用蛙舌命中1个生物，那么该生物会被他@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。生物可以通过命中AC 15并造成至少3点挥砍伤害来切开蛙舌。</p>\n<p>尽管这么做不会对沼蜍勇士造成伤害，但它可以使沼蜍勇士无法再次使用蛙舌打击，直至沼蜍勇士通过1星期的休息才能够重新使用蛙舌。</p>"
+                }
+            }
         },
         "Brain Collector": {
             "name": "集脑怪 Brain Collector"
