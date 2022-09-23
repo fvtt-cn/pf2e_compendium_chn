@@ -13,7 +13,8 @@
         "blurb":"system.details.blurb",
         "speed":"system.attributes.speed.details",
         "languages":"system.traits.languages.custom",
-        "stealth":"system.attributes.stealth"
+        "stealth":"system.attributes.stealth",
+        "di":"system.traits.di.custom"
     },
     "entries": {
         "Ankhrav": {
@@ -258,7 +259,39 @@
             "name": "蝰蛇 Viper"
         },
         "Stone Golem": {
-            "name": "石魔像 Stone Golem"
+            "name": "石魔像 Stone Golem",
+            "senses":"黑暗视觉",
+            "di":"魔法(见魔像抗魔)",
+            "dr":[
+                {
+                    "exceptions": "除精金",
+                    "type": "physical",
+                    "value": 10
+                }
+            ],
+            "publicNotes": "<p>石魔像是缓慢而坚固的构装体，通常由大理石或花岗岩雕刻而成。它们通常在静止时被当做艺术品，因此一些石魔像的制造者会雇佣雕刻大师来确保将这些构装体造成美丽的雕塑。较古老的石魔像可能会风化，表面有磨损或裂纹，或者断鼻断指，但这种风化并不会影响石像的功能。</p>\n<p>传说表明巨大的石魔像存在于某些古代遗迹中。这些巨大的石魔像比一般石魔像要强大的得多。它们至少有15级，体型不会少于超大型——大多数甚至为巨型。因为它们的体型如此之大，而它们所居住的建筑是如此破败，以至于这样的石魔像觉醒会导致周围建筑倒塌、古老的地基塌陷、天花板落下砸向敌人。除了这里列出的数据之外，这些巨大的石魔像攻击范围更广，一记横扫就可以同时击倒多个目标。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
+            "items":{
+                "eYD6EiiIYvny4Vq2":{
+                    "name": "魔像抗魔 Golem Antimagic",
+                    "description":"<p>被伤害：寒冷和水([[/r {5d10}]]{5d10伤害}, 区域效果或可持续伤害则为[[/r {2d8}]]{2d8伤害}；被治疗：酸液(区域效果[[/r {2d8}[healing]]]{2d8点生命值})；被减速：土</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                },
+                "Jg5WkDHWpi1JRQ9k":{
+                    "name": "法术弱点：解除石化 Vulnerable to Stone to Flesh",
+                    "description":"<p>对石魔像施放<em>@Compendium[pf2e.spells-srd.Pr1ruNTbzGn3H9w5]{解除石化 Stone to Flesh}</em>法术能使魔像抗魔和物理抗力无效化，持续1轮。<em>@Compendium[pf2e.spells-srd.znv4ECL7ZtuiagtA]{石化术 Flesh to Stone}</em>能立即逆转此效果。</p>"
+                },
+                "RlajqjwuSiKB8NGC":{
+                    "name": "附加麻痹 Impose Paralysis",
+                    "description":"<p><strong>触发</strong> 石魔像击中一个陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}的生物。</p>\n<hr />\n<p><strong>效果</strong> 该生物必须通过@Check[type:fortitude|dc:30]豁免，否则@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。</p>"
+                },
+                "bKmTRJI4PjS70sWZ":{
+                    "name": "势不可挡 Inexorable March",
+                    "description":"<p>石魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。</p>\n<p>一个生物可以尝试通过@Check[type:fortitude|dc:34|traits:damaging-effect]检定来阻挡其前进。如果豁免大成功，则阻挡的生物不受伤害；在其他情况下该生物受到石魔像的拳击伤害。</p>"
+                },
+                "11mRPoFSEt1nYAnE":{
+                    "name": "减速脉冲 Slowing Pulse",
+                    "description":"<p>@Template[type:emanation|distance:10]{10尺弥漫}范围内的每个生物必须通过@Check[type:fortitude|dc:30]检定，否则陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1分钟。</p>\n<p>魔像在[[/br 1d4 #Slowing Pulse Recharge]]{1d4轮}内无法再次使用减速脉冲。</p>"
+                }
+            }
         },
         "Young Silver Dragon": {
             "name": "青年银龙 Young Silver Dragon"
@@ -911,7 +944,43 @@
             "name": "隐形追踪者 Invisible Stalker"
         },
         "Iron Golem": {
-            "name": "铁魔像 Iron Golem"
+            "name": "铁魔像 Iron Golem",
+            "senses":"黑暗视觉",
+            "di":"魔法(见魔像抗魔)",
+            "dr":[
+                {
+                    "exceptions": "除精金",
+                    "type": "physical",
+                    "value": 15
+                }
+            ],
+            "publicNotes": "<p>传统上来说，铁魔像是精湛技艺的产物，它们会被打造为巨大盔甲或强大动物的外形。它们的铰链关节和坚固的装甲外壳都需要精密的制造工艺，并且还需要定期清洗和上油来确保它们不会生锈。只要不被多事的冒险者破坏的话，铁魔像可以在上千年中保持良好的状态，并被主人代代相传下去。除了难以置信的力量之外，铁魔像还拥有强大的毒气吐息，通常足以消灭整支队伍。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
+            "items":{
+                "fqwCiWMkfhbYojJI":{
+                    "name": "魔像抗魔 Golem Antimagic",
+                    "description":"<p>被伤害：酸液([[/r {6d10}]]{6d10伤害}，区域效果或可持续伤害[[/r {2d8}]]{2d8伤害})；被治疗：火焰 (区域效果[[/r {2d8}[healing]]]{2d8生命值})；被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                },
+                "aMNM0X0dVvVRdlZT":{
+                    "name": "法术弱点：中和毒性 Vulnerable to Neutralize Poison",
+                    "description":"<p>对铁魔像施放<em>@Compendium[pf2e.spells-srd.SUKaxVZW2TlM8lu0]{中和毒性 Neutralize Poison}</em>法术能使它的吐息无效化，持续1分钟。</p>"
+                },
+                "SJraLZmz7x1C04ki":{
+                    "name": "法术弱点：锈蚀魔法 Vulnerable to Rust",
+                    "description":"<p>魔法锈蚀效果，例如锈蚀怪的触须打击，能正常对铁魔像造成效果。</p>"
+                },
+                "HkUjt1e6CiwdfHoy":{
+                    "name": "吐息 Breath Weapon",
+                    "description":"<p>铁魔像以占据方格的一个角为圆心，对10尺半径范围喷出毒气，毒气存在1轮。任何呆在范围内的生物（或之后进入范围的生物）将暴露在铁魔像毒气中。铁魔像在[[/r 1d4 #rounds]]{1d4轮}内无法再次吐息。</p>"
+                },
+                "otWGnycqKoeQC7U9":{
+                    "name": "势不可挡 Inexorable March",
+                    "description":"<p>铁魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过@Check[type:fortitude|dc:37|traits:damaging-effect]检定来阻挡其前进。</p>\n<p>如果豁免大成功，则阻挡的生物不受伤害；在其他情况下该生物受到铁魔像的拳击伤害。</p>"
+                },
+                "RSzJjCjwpz8jIS3J":{
+                    "name": "铁魔像毒气 Iron Golem Poison",
+                    "description":"<p>此毒素造成的@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态值每小时减少1点。</p>\n<p><strong>豁免</strong> @Check[type:fortitude|dc:33]</p>\n<hr />\n<p><strong>最大持续 </strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {4d6}[poison]]]{4d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {8d6}[poison]]]{8d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)</p>"
+                }
+            }
         },
         "Janni": {
             "name": "小巨灵 Janni"
