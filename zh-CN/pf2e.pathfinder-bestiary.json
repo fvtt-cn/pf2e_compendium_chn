@@ -568,7 +568,33 @@
             "name": "黑暗娜迦 Dark Naga"
         },
         "Deadly Mantis": {
-            "name": "夺命螳螂 Deadly Mantis"
+            "name": "夺命螳螂 Deadly Mantis",
+            "senses":"黑暗视觉",
+            "publicNotes": "<p>这些巨大的螳螂在丛林深处或和史前森林里筑巢，在那里它们捕食和自己同样巨大的猎物。</p>\n<hr />\n<p>这些体型巨大的可怕昆虫是寂静无声的掠食者，前肢如闪电般敏捷，一咬就能把骨头啃断。</p>",
+            "items":{
+                "SDPanMrj394qVPdp":{
+                    "name": "虫颚 Mandibles"
+                },
+                "7WxioYo3ZgMSuL5O":{
+                    "name": "镰爪 Leg"
+                },
+                "rQVfc5bR7Xpe25cT":{
+                    "name": "抛掷 Fling",
+                    "description":"<p>夺命螳螂将被它@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物抛向空中，抛到距螳螂最多30尺高30尺远的地方（该生物正常遭受坠落伤害）。如果被抛掷的生物落在另一个生物身上，被砸中的生物将受到等量的钝击伤害，被砸中的生物可以尝试通过 @Check[type:reflex|dc:31|basic:true]检定豁免来躲避。</p>"
+                },
+                "vXxTQUxFEXV4Ldxm":{
+                    "name": "跳跃攫抓 Leaping Grab",
+                    "description":"<p>夺命螳螂能跳跃最多40尺高、20尺远的距离。在跳跃过程中任意时刻，它可以进行一次镰爪打击。如果命中，则自动@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}目标，并且带着目标移动到跳跃的最终落点。</p>"
+                },
+                "ZyTjl37PC8e0rtsy":{
+                    "name": "裂甲之颚 Rending Mandibles",
+                    "description":"<p> 夺命螳螂对被它@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物进行一次虫颚打击，如果打击命中，并且目标生物所穿的护甲硬度为12或更低，此护甲@Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken}。此打击不会对已经破损的护甲造成更多伤害。</p>"
+                },
+                "CUZdx9N2AmVtEjB4":{
+                    "name": "突袭 Sudden Strike",
+                    "description":"<p>在战斗第一轮，尚未行动的敌人对夺命螳螂视为@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                }
+            }
         },
         "Deep Gnome Rockwarden": {
             "name": "地底侏儒岩卫 Deep Gnome Rockwarden"
@@ -763,7 +789,39 @@
             "name": "哥布林勇士 Goblin Warrior"
         },
         "Goliath Spider": {
-            "name": "巨硕蜘蛛 Goliath Spider"
+            "name": "巨硕蜘蛛 Goliath Spider",
+            "senses":"黑暗视觉, 蛛网感知",
+            "publicNotes": "<p>巨硕蜘蛛生活在丛林的最深处，在那里它们织出神殿那么大的网，捕食像河马那么大的猎物。</p>\n<hr />\n<p>很少有害虫能像声名狼藉的蜘蛛那样让人如此恐惧。</p>",
+            "items":{
+                "sJEzuYy6exvJPlpq":{
+                    "name": "牙咬 Fangs",
+                    "description":""
+                },
+                "gCMdnmRVTS96OQxR":{
+                    "name": "蛛网 Web",
+                    "description":""
+                },
+                "oXZ3YdyxyoVGRGJs":{
+                    "name": "蛛网感知 Web Sense",
+                    "description":"<p>巨硕蜘蛛可以通过@Compendium[pf2e.bestiary-ability-glossary-srd.j2wsK6IsW5yMW1jW]{震颤感知 Tremorsense}（模糊感官）来感知到生物触碰它蛛网时产生的振动。</p>"
+                },
+                "aAGnyUk4Vj6iSM7n":{
+                    "name": "饿蛛扑食 Spring Upon Prey",
+                    "description":"<p><strong>需求</strong> 尚未投掷先攻</p>\n<p><strong>触发</strong> 当猎蛛位于它的蛛网上时，一个生物触碰到蛛网</p>\n<hr />\n<p><strong>效果</strong> 猎蛛自动注意到该生物，并在投掷先攻前，可以在蛛网上进行行走、攀爬或下降动作。</p>"
+                },
+                "x1hzvAiCUjfrEaZO":{
+                    "name": "蛛网垂降 escend on a Web",
+                    "description":"<p>巨硕蜘蛛用网绳把自己吊在空中，可以垂直下降最多120尺。它可以挂在蛛网上，也可以从蛛网上坠落。它从蛛网上下降的距离不计入坠落伤害。</p>\n<p>如果一个生物成功击中蛛网（AC20，硬度5，20HP）时，可以砍断蜘蛛网，导致蜘蛛坠落。</p>"
+                },
+                "Be8ZCKKmNDNPgCM0":{
+                    "name": "巨硕蜘蛛毒 Goliath Spider Venom",
+                    "description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:30]</p>\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {2d6}[poison]]]{2d6毒素}和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {2d6}[poison]]]{2d6毒素}和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} (1轮)</p>\n<p><strong>阶段3</strong> @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，持续[[/br 2d4 #hours]]{2d4小时}</p>"
+                },
+                "Eu72dpTXiYJQD7Hm":{
+                    "name": "蛛网捆缚 Web Tether",
+                    "description":"<p>被巨硕蜘蛛蛛网打击命中的生物被@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，并且和巨硕蜘蛛拴在一起，无法拉开和蜘蛛的距离。</p>\n<p>巨硕蜘蛛一次只能拴住一个生物。@Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}或@Compendium[pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}蛛网的DC为30。蛛网可以被一次打击切断（AC 20，硬度5，HP 20），但这不能释放被束缚的生物。</p>"
+                }
+            }
         },
         "Gorilla": {
             "name": "大猩猩 Gorilla"
