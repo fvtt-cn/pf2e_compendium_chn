@@ -13,9 +13,228 @@
 		"blurb":"system.details.blurb",
 		"speed":"system.attributes.speed.details",
 		"languages":"system.traits.languages.custom",
-		"stealth":"system.attributes.stealth"
+		"stealth":"system.attributes.stealth",
+		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Duneshaker Solifugid":{
+			"name": "撼沙避日蛛 Duneshaker Solifugid",
+			"senses":"黑暗视觉, 震颤感知（模糊感官）30尺",
+			"publicNotes": "<p>作为体型最大的避日蛛，撼沙避日蛛体型是如此巨大，它们的每次移动都能让周围的地面震动。它们可以捕食猛犸象，甚至更大的猎物。</p>",
+			"items":{
+				"coCCw9uVbyTHhKfl":{
+					"name": "啃咬 Jaws"
+				},
+				"Vm3TYdn6BMYCQ0MR":{
+					"name": "爪抓 Claw"
+				},
+				"5QMBo1Vy2JZTTsNV":{
+					"name": "震颤感知 Tremorsense",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+				},
+				"xKGmyTmllHIjiYO0":{
+					"name": "撼地者 Earth Shaker",
+					"description":"<p>每一回合，当撼沙避日蛛第一次进行移动动作，只要它在移动过程中和1个体型不大于大型的生物相邻，该生物就必须通@Check[type:reflex|dc:39]豁免，否则会陷入@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"qwrA1CcDM9QaJlc5":{
+					"name": "猛扑 Pounce",
+					"description":"<p>撼沙避日蛛行走，然后在移动结束后进行1次打击。如果撼沙避日蛛在开始此动作前处于@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，它会一直保持藏匿直到该次打击结束。</p>"
+				},
+				"KkNlymsNYCYGKgtS":{
+					"name": "撕裂 Rend",
+					"description":"<p>爪抓</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+				},
+				"dUfRUEqARe3yHUZM":{
+					"name": "毒液喷雾 Venom Spray",
+					"description":"<p>撼沙避日蛛喷出一道@Template[type:cone|distance:30]{30尺锥形}范围的毒雾。此范围内的每个生物都会受到[[/r {10d6}[poison]]]{10d6毒素伤害}伤害（@Check[type:fortitude|dc:39|basic:true]豁免）。豁免失败的生物还会@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}[[/br 1d6 #rounds]]{1d6轮}（大失败则永久目盲）。</p>\n<p>撼沙避日蛛在[[/r 1d4 #rounds]]{1d4轮}内无法再次使用毒液喷雾能力。</p>"
+				}
+			}
+		},
+		"Catoblepas":{
+			"name": "卡托布莱帕斯 Catoblepas",
+			"senses":"黑暗视觉",
+			"publicNotes": "<p>即便是在最好的情况下，卡托布莱帕斯也是一种好斗的魔兽。它们更喜欢在沼泽和森林中觅食，留下被其恶臭的呼吸和有毒废物污染的狩猎场，导致其他捕食者和猎物在几天甚至几周后都不会去那里。卡托布莱帕斯会欺凌那些和它旗鼓相当的生物，并且吃掉每个更弱的对手。</p>\n<p>卡托布莱帕斯有15尺长，2200磅重。</p>",
+			"items":{
+				"61EkmT4Ba451hMDC":{
+					"name": "啃咬 Jaws"
+				},
+				"76jTiA45mzSvkuz1":{
+					"name": "鹿角 Antler"
+				},
+				"B2rF8mguredueRbP":{
+					"name": "蹄子 Hoof"
+				},
+				"x8pzzu8VRuRa5sdg":{
+					"name": "恶臭 Stench",
+					"description":"<p>30尺。</p>\n<p>进入灵光范围或在灵光中开始回合的生物，必须通过@Check[type:fortitude|dc:30]豁免，否则陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败还会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。</p>\n<p>当位于灵光中时，受影响的生物在对抗疾病或恢复恶心状态时的强韧豁免-2环境减值。成功通过豁免的生物在1分钟内临时免疫。</p>"
+				},
+				"VDW4W2k1N88INhBp":{
+					"name": "吐息 Breath Weapon",
+					"description":"<p> 卡托布莱帕斯喷出@Template[type:cone|distance:60]{60尺锥形}骇人的毒雾，造成[[/r {13d6}[poison]]]{13d6毒素伤害}（@Check[type:fortitude|dc:32|basic:true]豁免）。当位于水下时，该范围减少至30尺锥形。豁免失败的生物同时还会陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败则@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>\n<p>卡托布莱帕斯在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息。</p>"
+				},
+				"lPlAVVeLD4qqvZ8q":{
+					"name": "践踏 Trample",
+					"description":"<p>中型或更小体型，蹄子，@Check[type:reflex|dc:32|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
+		},
+		"Cairn Linnorm":{
+			"name": "石冢蛇龙 Cairn Linnorm",
+			"hp":"再生15（寒铁使其失效）",
+			"allSaves":"对抗魔法时所有豁免+1状态加值",
+			"senses":"黑暗视觉，60尺灵敏嗅觉（模糊），真视术",
+			"publicNotes": "<p>即便以蛇龙的标准来说，石冢蛇龙也是让人感到不安的存在。他们在古代的坟场、公墓以及经历过残酷杀戮的大型战场上安家。有人指出石冢蛇龙以蹒跚的死灵为食，从而为生灵们服务，但这些野兽其实并不挑食，而且乐于吞下任何生物——无论他们是否还在喘气。</p>\n<p>在一些传说中，石冢蛇龙不会——或者不能——在未经死者后代同意（或者在死者已经被唤起的时候，则要经过这些亡灵本人的同意）的情况下进入坟墓。同样，一旦石冢蛇龙进入到墓穴之中，也无法在未经许的情况下离开。这些传说是真是假谁也说不清；尽管如此，关于石冢蛇龙在左近徘徊的传闻依旧足够拦住那些最为鲁莽的盗墓人，使其甚至不敢对着墓室或陵寝多瞧一眼。</p>",
+			"items":{
+				"IxVJURBO9NY3Og9k":{
+					"name": "原能内在法术 Primal Innate Spells"
+				},
+				"bXd6K0aIwu8oNq40":{
+					"name": "行动自如(常驻) Freedom of Movement (Constant)",
+					"description":"<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+				},
+				"anKjfgYsttUshhxM":{
+					"name": "真视术(常驻) True Seeing (Constant)",
+					"description":"<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"U4uu4gkB12yKgjWl":{
+					"name": "啃咬 Jaws"
+				},
+				"SIJWWzmQ2ZLmATdy":{
+					"name": "爪抓 Claw"
+				},
+				"SQM0OqkayL2Oywmm":{
+					"name": "尾扫 Tail"
+				},
+				"mUjeve67uKUXgiEz":{
+					"name": "再生15（寒铁使其失效）"
+				},
+				"atrOWDXVF87vS3KI":{
+					"name": "扭杖诅咒 Curse of the Crooked Cane",
+					"description":"<p>当有生物杀死石冢蛇龙时，他必须成功通过@Check[type:will|dc:44]豁免，失败则会永久陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。此外，受害者的衰老速率加快，每日衰老1岁，若无法尽快处理诅咒，则会最终死于衰老。</p>"
+				},
+				"7D3xnmgdDZGumRA4":{
+					"name": "喷吐武器 Breath Weapon",
+					"description":"<p>石冢蛇龙释出@Template[type:cone|distance:60]{60尺锥形}区域的酸液——负能量溶于这些液体之中，这会对区域内的生物造成[[/r {19d6}[acid]]]{19d6酸液伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。这些酸液还会让受影响的生物生命衰竭。在蛇龙的下个回合开始时，每个反射豁免失败的生物必须成功通过@Check[type:fortitude|dc:40|traits:damaging-effect]豁免，失败则会陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败则为@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}）。</p>\n<p>石冢蛇龙在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>"
+				},
+				"8yVRt0M6F9WbgdWV":{
+					"name": "石冢蛇龙毒 Cairn Linnorm Venom",
+					"description":"<p><strong>豁免检定</strong> @Check[type:fortitude|dc:41]</p>\n<p><strong>最大持续</strong> 10轮</p>\n<p><strong>阶段1</strong> [[/r {6d6}[acid]]]{6d6酸液伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {8d6}[acid]]]{8d6酸液伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>"
+				}
+			}
+		},
+		"Black Scorpion":{
+			"name": "黑蝎 Black Scorpion",
+			"senses":"黑暗视觉, 震颤感知（模糊感官）90尺",
+			"publicNotes": "<p>这种巨大的蝎子有着表面光滑的黑曜石色的甲壳，喜欢攻击村庄，是沙漠中最可怕的掠食者之一。黑蝎从前端到蝎尾的根部有60尺之长。</p>",
+			"items":{
+				"5OLDndk87U2qEJ5p":{
+					"name": "螯钳 Pincer"
+				},
+				"hPjYRtGf041nnmLw":{
+					"name": "钉刺 Stinger"
+				},
+				"cGXZfGlgZYjzMBP8":{
+					"name": "震颤感知 Tremorsense",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+				},
+				"PBcYVDE3HZByWRI7":{
+					"name": "黑蝎毒液 Black Scorpion Venom",
+					"description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {2d12}[poison]]]{2d12毒素伤害}和@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {3d12}[poison]]]{3d12毒素伤害}, @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {4d12}[poison]]]{4d12毒素伤害}, @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 4}，和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} (1轮)</p>"
+				},
+				"KovaVbwNiKoGj4DJ":{
+					"name": "高等紧勒 Greater Constrict",
+					"description":"<p>[[/r {2d12+12}[bludgeoning]]]{2d12+12钝击伤害}, @Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+				},
+				"bk1rrI0FiHN6P4an":{
+					"name": "急刺 Rapid Stinging",
+					"description":"<p>黑蝎进行3次钉刺打击，每次针对不同的目标。它的每次攻击都会计入多重攻击减值，但是多重攻击减值在所有攻击都结束后才会增加。</p>"
+				}
+			}
+		},
+		"Aolaz":{
+			"name": "巨兽像 Aolaz",
+			"senses":"昏暗视觉，完美听觉",
+			"dr":[
+				{
+					"exceptions": "除精金",
+					"type": "physical",
+					"value": 15
+				}
+			],
+			"publicNotes": "<p>巨兽像是用石头和金属制成的巨大野兽，以魔法为其灌注了生命本质。它们的创造方法是个遗失已久的秘密，而它们也如此罕见让学者也没有机会去研究活动的样本。最为世人所知的巨兽像都是博物馆中的残片和被摧毁或是在许久之前便已停止活动的战场遗迹，虽然残存的记录表明有更多的巨兽像被制造出来过并仍可能留存，尚待出土。</p>\n<p>巨大多数巨兽像都以巨型陆生野兽的形态建成，例如大象，犀牛或恐龙。不管是什么类型的生物，巨兽像都有着相似的构造，它不需要像模仿的动物那样行走在地面上——它被注入了可以踏水甚至飞行的魔法能力。只有极少数人能在激怒巨兽像后逃脱。</p>",
+			"items":{
+				"pE48e3bWFRDs19oA":{
+					"name": "奥术内在法术 Arcane Innate Spells"
+				},
+				"4Pg0aWLpvKg5oEEp":{
+					"name": "凌空而行(常驻) Air Walk (Constant)",
+					"description":"<p>目标可以在空气中行走，如同在坚实地面上。它可以如此上升与下降，最大45度角。</p>"
+				},
+				"v3MNBWrVRN9SQv9V":{
+					"name": "水面行走(常驻) Water Walk (Constant)",
+					"description":"<p>目标能在水面以及其他液体表面行走，且不会坠入其中。如果它想，也可以进入水中，但此时它必须如常游泳（Swim）。该法术不会赋予在水中呼吸的能力。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术的射程增加到30尺，持续时间增加到1小时，并且你能以至多10个生物为目标。</p>"
+				},
+				"0Y47YuHl29LzryME":{
+					"name": "象鼻 Trunk"
+				},
+				"YMLwRoRwaGIKGsjv":{
+					"name": "足踏 Foot"
+				},
+				"bEnEcBaXcq0xrckT":{
+					"name": "完美听觉 Flawless Hearing",
+					"description":"<p>巨兽像拥有难以置信的听觉。它能够如同距离声源只有5尺远听到1000尺内发出的任何声音，以及如同距离声源只有30尺远听到1英里内的发出的任何声音。巨兽像的听觉是一种精确感官。</p>"
+				},
+				"QleXAKxC6oYMhWIK":{
+					"name": "滚动 Roll",
+					"description":"<p>巨兽像卷起头，滚动成一个装甲球。当滚动时，巨兽像具有AC 44， 强韧 +37， 反射 +29， 意志 +33， 且速度 100 尺，但它不能使用象鼻打击或超音爆。它在滚动时可以使用足踏打击，但只能作为@Compendium[pf2e.bestiary-ability-glossary-srd.UNah0bxXxkcZjxO3]{践踏 Trample}的一部分。巨兽像可以再次使用该动作来解除滚动恢复其站立姿态。</p>"
+				},
+				"KmdxRqIdBe3pc6XL":{
+					"name": "践踏 Trample",
+					"description":"<p>超大型或更小体型，足踏，@Check[type:reflex|dc:40|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				},
+				"IZ5Q9oQE8jylYahf":{
+					"name": "超音爆 Ultrasonic Blast",
+					"description":"<p>巨兽像用其象鼻发出一道@Template[type:line|distance:150]{150尺线形}的超巨大音爆，造成[[/r {12d10}[sonic]]]{12d10音波伤害}。音波的频率高到让类人生物完全无法感知，但它造成的伤害显而易见。区域内每个生物必须尝试一次@Check[type:fortitude|dc:40|traits:damaging-effect]豁免。</p>\n<p>巨兽像不能在[[/br 1d4 #rounds]]{1d4轮}内再次使超音爆。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害且陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 生物受到全部伤害且陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>\n<p><strong>大失败</strong> 生物受到两倍伤害且陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+				}
+			}
+		},
+		"Ankou":{
+			"name": "死魂精 Ankou",
+			"senses":"生命感知120尺，昏暗视觉",
+			"languages":"心灵感应100尺",
+			"publicNotes": "<p>死魂精是阴影般的杀手，为强大的精类生物甚至是第一世界（First World）的半神们——精类始祖（Eldest）服务。在始祖或强大精类统治者的法庭中，这些邪恶的刺客潜伏在空中，等待行动的命令——它们潜在的威胁类似于高悬于皇家大厅的致命武器。死魂精从不大声言语；当它们觉得有必要时，他们会用心灵感应的耳语直接侵入受害者的思维。而死魂精的身体是有奇怪的肉质组成的，它们爪子和翅膀上的残忍倒钩是由剃刀般锋利的寒铁构成。这一特质让他们在其他精类中备受畏惧。典型的死魂精有10尺高，翼展8尺，但体重不到80磅。</p>\n<p>大多数死魂精侍奉强大的主人，但这些凶残的精类中的一些却放任自流，只侍奉他们自己的反复无常和残忍的奇想。在一些情况下，可能是因为他们的主人被杀，另一些情况下，死魂精可能因为各种原因被驱逐。这些死魂精随心所欲地放纵自己，往往是所有死魂精里最危险的那群。</p>",
+			"items":{
+				"SPkIUm3665kXInNU":{
+					"name": "原能内在法术 Primal Innate Spells"
+				},
+				"Aeu3hLK3x9HeXzhD":{
+					"name": "黑暗术(随意施法) Darkness (At Will)",
+					"description":"<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"IvFL4oT7wjrxQZqw":{
+					"name": "爪抓 Claw"
+				},
+				"JdsDXPVL1v4JEQt5":{
+					"name": "翼拍 Wing"
+				},
+				"PjBdBCA31o7FcQvI":{
+					"name": "心灵感应 Telepathy",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+				},
+				"V8J7D9aK5N4MpaBI":{
+					"name": "生命感知 Lifesense",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
+				},
+				"Q0VRtsqm6etoZxCa":{
+					"name": "阴影替身 Shadow Doubles",
+					"description":"<p>(1 到 3 动作)</p>\n<p><strong>频率</strong> 每日一次</p>\n<hr />\n<p><strong>效果</strong> 死魂精使用此能力时每使用一个动作，它就能在60尺内创造一个自己的阴影替身。阴影替身和死魂精本体拥有相同的数据，但带有召唤（summoned）特征，有84点生命值，无法使用阴影替身能力，也无法使用内在法术，攻击加值为+25。当阴影替身尝试对光亮（light）效果进行豁免的时候，无法得到比失败更好的结果。每个替身存在1轮后消失，或直到生命值减少为0，或直到它和死魂精的距离超过120尺，以先发生的为准。在使用能力之后的每一轮，死魂精都能以带有专注特征的单动作延长替身的存在时间1轮，最多能维持1分钟。死魂精能通过所有替身的眼睛同时进行观察。进行@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seeks}动作的角色能通过@Check[type:perception|dc:39]检定成功判别出死魂精是否为阴影替身。</p>"
+				},
+				"Bpm9xvzcp3dBpCvp":{
+					"name": "偷袭 Sneak Attack",
+					"description":"<p>死魂精对措手不及的生物造成2d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
+		},
 		"Spinosaurus":{
 			"name": "棘龙 Spinosaurus",
 			"senses":"昏暗视觉，嗅觉（模糊感官）30尺",
