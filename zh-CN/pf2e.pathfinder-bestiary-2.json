@@ -17,6 +17,34 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Catoblepas":{
+			"name": "卡托布莱帕斯 Catoblepas",
+			"senses":"黑暗视觉",
+			"publicNotes": "<p>即便是在最好的情况下，卡托布莱帕斯也是一种好斗的魔兽。它们更喜欢在沼泽和森林中觅食，留下被其恶臭的呼吸和有毒废物污染的狩猎场，导致其他捕食者和猎物在几天甚至几周后都不会去那里。卡托布莱帕斯会欺凌那些和它旗鼓相当的生物，并且吃掉每个更弱的对手。</p>\n<p>卡托布莱帕斯有15尺长，2200磅重。</p>",
+			"items":{
+				"61EkmT4Ba451hMDC":{
+					"name": "啃咬 Jaws"
+				},
+				"76jTiA45mzSvkuz1":{
+					"name": "鹿角 Antler"
+				},
+				"B2rF8mguredueRbP":{
+					"name": "蹄子 Hoof"
+				},
+				"x8pzzu8VRuRa5sdg":{
+					"name": "恶臭 Stench",
+					"description":"<p>30尺。</p>\n<p>进入灵光范围或在灵光中开始回合的生物，必须通过@Check[type:fortitude|dc:30]豁免，否则陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败还会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。</p>\n<p>当位于灵光中时，受影响的生物在对抗疾病或恢复恶心状态时的强韧豁免-2环境减值。成功通过豁免的生物在1分钟内临时免疫。</p>"
+				},
+				"VDW4W2k1N88INhBp":{
+					"name": "吐息 Breath Weapon",
+					"description":"<p> 卡托布莱帕斯喷出@Template[type:cone|distance:60]{60尺锥形}骇人的毒雾，造成[[/r {13d6}[poison]]]{13d6毒素伤害}（@Check[type:fortitude|dc:32|basic:true]豁免）。当位于水下时，该范围减少至30尺锥形。豁免失败的生物同时还会陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败则@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>\n<p>卡托布莱帕斯在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息。</p>"
+				},
+				"lPlAVVeLD4qqvZ8q":{
+					"name": "践踏 Trample",
+					"description":"<p>中型或更小体型，蹄子，@Check[type:reflex|dc:32|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
+		},
 		"Cairn Linnorm":{
 			"name": "石冢蛇龙 Cairn Linnorm",
 			"hp":"再生15（寒铁使其失效）",
