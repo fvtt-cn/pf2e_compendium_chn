@@ -13,7 +13,8 @@
 		"blurb":"system.details.blurb",
 		"speed":"system.attributes.speed.details",
 		"languages":"system.traits.languages.custom",
-		"stealth":"system.attributes.stealth"
+		"stealth":"system.attributes.stealth",
+		"ac":"system.attributes.ac.details"
 	},
 	"entries": {
 		"Abbot Tsujon": {
@@ -52,7 +53,33 @@
 			"name": "Amihan"
 		},
 		"Angoyang": {
-			"name": "Angoyang"
+			"name": "旺宅猫 Angoyang",
+			"senses":"皮屑感官（1英里、模糊），黑暗视觉",
+			"publicNotes": "<p>旺宅猫外观上就像个长有老虎黑纹的白花猫。它们有漂亮的丝质皮毛，锐利的蓝眼睛和长长的毛茸尾巴。然而，这看上去如画一般的猫咪伴侣实际上和外观大相径庭，旺宅猫是一种骇人的生物，其能剥开脸上的肉质层，露出大量长而带齿的触须。</p>\n<p>尽管大部分猫都会躲开旺宅猫出没的地区，那些不幸碰见它们的猫会被带齿的触须缠住并吃掉。在旺宅猫居住的城镇里，养猫的人可能会发现他们心爱的宠物失踪了，但很快却会有一只毛茸茸的黑白花猫碰巧出现在他们的门口，睁着大眼睛看着他们，可爱地喵喵叫。旺宅猫几乎从不攻击它们的看护人，它们把看护人看作给自己喂食、清洁身体、并宠爱它们的忠实仆人，这些生物也因此会保护它们家里的人不受任何潜在的入侵者所伤。然而，一位忽视或者虐待旺宅猫的看护人往往会遭遇可怕的命运。不止一名验尸官或掘墓人在被指派清理前“主人”支离破碎的遗体后，无意中继承了一只旺宅猫。</p>",
+			"items":{
+				"yP8N5ydP57ekFb7f":{
+					"name": "猫爪 Claw"
+				},
+				"AwiLNjzdtPNHA9wi":{
+					"name": "触手 Tentacles"
+				},
+				"W1semZZ6YLbQVux4":{
+					"name": "皮屑感官（1英里，模糊） Dander Scent (Imprecise) 1 mile",
+					"description":"<p>旺宅猫能模糊地感知到1英里内任何曾经接触过它皮毛的生物的位置。</p>"
+				},
+				"70itZreZrqVqgHoE":{
+					"name": "我是只猫 I Am A Cat",
+					"description":"<p>旺宅猫在伪装成一只猫的时候欺骗检定值和DC自动取47。</p>"
+				},
+				"XCvOLwCs66IDTOcI":{
+					"name": "寂静怒号 Silent Yowl",
+					"description":"<p>旺宅猫张开它的嘴，卸下天真的伪装，释放出可怕的触须，并发出一声令人毛骨悚然的尖叫，以一个它能看到的生物为目标，造成[[/r {8d10}[mental]]]{8d10心灵伤害}。只有目标才能听到这声尖叫。目标必须成功通过@Check[type:will|dc:30|traits:damaging-effect]豁免，因为吼声撕裂了他们的心智。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受伤害并在24小时内免疫此能力。</p>\n<p><strong>成功</strong> 目标受到一半伤害。</p>\n<p><strong>失败</strong> 目标受到全部伤害并获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 目标受到双倍伤害并获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
+				},
+				"6lO7VYF4S01H8jkg":{
+					"name": "缓慢眨眼 Slow Blink",
+					"description":"<p>旺宅猫轻轻地喵一声，慢慢地对着一个生物眨两次眼。目标必须进行@Check[type:will|dc:31]豁免。大成功时目标不受影响并在24小时内免疫此能力。否则，这只动物就会被抚摸旺宅猫丝绸般皮毛的冲动所征服，被它@Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}。如果旺宅猫攻击该生物，该生物可以在下回合开始时尝试一次新的豁免。</p>"
+				}
+			}
 		},
 		"Anugobu Apprentice": {
 			"name": "阿努学徒 Anugobu Apprentice",
@@ -190,7 +217,99 @@
 			}
 		},
 		"Blue Viper (Level 14)": {
-			"name": "Blue Viper (Level 14)"
+			"name": "蓝蝮蛇(14级) Blue Viper (Level 14)",
+			"blurb": "男性鼠族投毒者",
+			"senses":"昏暗视觉",
+			"items":{
+				"nhjh7GuFUGuOjMxp":{
+					"name": "高等强酸瓶(灌注物品) Acid Flask (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>这个装满强酸的烧瓶会造成1点酸液伤害，3d6点酸液持续伤害和3点酸液溅射伤害。你在攻击骰上获得+2的物品加值。</p>"
+				},
+				"mVPyVqeA0xYvhjeD":{
+					"name": "高等炽火胶(灌注物品) Alchemist's Fire (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>炽火胶是一种接触空气就会剧烈燃烧的爆炸性液体混合物。你在攻击骰上获得+2的物品加值。这枚炸弹造成3d8点火焰伤害，3点火焰持续伤害和3点火焰溅射伤害。</p>"
+				},
+				"2vuUf8SxcSM9MsWy":{
+					"name": "高等瓶装闪电(灌注物品) Bottled Lightning (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>瓶装闪电里面装满了一接触空气就会创造出强烈电流的不稳定液体试剂。一旦命中，目标还会在你的下一回合开始前陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。你在攻击骰上获得+2的物品加值。这枚炸弹造成3d6点闪电伤害和3点闪电溅射伤害。</p>"
+				},
+				"t65VniXitAG3dnAv":{
+					"name": "高等霜冻瓶(灌注物品) Frost Vial (Greater) (Infused)",
+					"description":"<p>这瓶试剂中的液体在接触空气时会迅速吸收周围的热量。一旦命中，目标直到它的下一回合结束为止，都会在它的速度上承受状态减值。</p>\n<p>你在攻击骰上获得+2的物品加值。这枚炸弹造成3d6点寒冷伤害和3点寒冷溅射伤害，目标承受-10尺的减值。</p>\n<hr />\n<p>@Compendium[pf2e.equipment-effects.nJRoiSyd67eQ1dYj]效果: 高等霜冻瓶}</p>"
+				},
+				"vqJxIQL873yU5LDb":{
+					"name": "+1抗力探索者服饰 +1 Resilient Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"ljAsYwPMN3rYSpsH":{
+					"name": "龙胆汁 Dragon Bile (Applied to Body)",
+					"description":"<p>这种消化液和绿龙毒腺的混合物能让受害者呕吐不止，仿佛它的肉体从内部被消化一般。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1轮)</p>\n<p><strong>阶段 2</strong> [[/r {7d6}[poison]]]{7d6毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3} (1轮)</p>\n<p><strong>阶段 3</strong> [[/r {9d6}[poison]]]{9d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 4}(1轮)</p>"
+				},
+				"wUJCWvjc3BWDUddX":{
+					"name": "燃疫松香(灌注物品) Blightburn Resin (Infused)",
+					"description":"<p>这坨黏糊的硬化树液由感染了菌枯病（fungal blights）的树木上收割而来，并已经过明火灼烧。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {8d6}[poison]]]{8d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {10d6}[poison]]]{10d6毒素伤害} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {15d6}[poison]]]{15d6毒素伤害} (1轮)</p>"
+				},
+				"zRrvoX1Y5HwEDiYk":{
+					"name": "死帽粉(灌注物品) Deathcap Powder (Infused)",
+					"description":"<p>有毒的死帽蕈可以经由晾晒、研磨制成无味且更具毒性的粉末。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (摄入)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 10分钟</p>\n<p><strong>最大持续时间</strong> 6分钟</p>\n<p><strong>阶段 1</strong> [[/r {13d6}[poison]]]{13d6 毒素伤害} (1 分钟)</p>\n<p><strong>阶段 2</strong> [[/r {17d6}[poison]]]{17d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1 分钟)</p>\n<p><strong>阶段 3</strong> [[/r {20d6}[poison]]]{20d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}(1 分钟)</p>"
+				},
+				"A3BJD8j1RQns5h5G":{
+					"name": "高等生命灵药(灌注物品) Elixir of Life (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复 [[/r {7d6+18}[healing]]]{7d6+18 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+2物品加值。</p>\n<p>@Compendium[pf2e.equipment-effects.Z9oPh462q82IYIZ6]{效果: 高等生命灵药}</p>"
+				},
+				"fvOFP2wsG8H8xzgz":{
+					"name": "烈赤根糊(灌注物品) Malyass Root Paste (Infused)",
+					"description":"<p>烈赤根糊可能被用于在运动比赛中阻碍对手，此外也有用于间谍和追踪活动。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">T</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 分钟</p>\n<p><strong>阶段 1</strong> @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} 和针对所有速度（Speeds）的-10尺状态减值 (1 分钟)</p>\n<p><strong>阶段 2</strong> 笨拙clumsy 2 和针对所有速度的-20尺状态减值 (1 分钟)</p>\n<p><strong>阶段 3</strong> 笨拙clumsy 3, @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}, 和针对所有速度的-30尺状态减值</p>"
+				},
+				"vt5uH4LtH7cQuNK8":{
+					"name": "紫虫毒(灌注物品) Purple Worm Venom (Infused)",
+					"description":"<p>来自庞大紫虫的毒液会让受害者陷入虚弱。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {5d6}[poison]]]{5d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}(1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)</p>"
+				},
+				"gUg1rLaVM9Uo0yCx":{
+					"name": "阴影精华(灌注物品) Shadow Essence (Infused)",
+					"description":"<p>这种由阴影位面蒸馏而来的油状物质能将晦暗之力施加于受害者。来自阴影精华的力竭状态持续24小时。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害} 和 [[/r {2d6}[poison]]]{2d6 毒素伤害} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害}, [[/r {2d6}[poison]]]{2d6 毒素伤害}, 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害}, [[/r {2d6}[poison]]]{2d6 毒素伤害}, 和 力竭enfeebled 2 (1 轮)</p>"
+				},
+				"nCunB6H2GFAWxoHc":{
+					"name": "蜘丝根(灌注物品) Spider Root (Infused)",
+					"description":"<p>将某种爬藤细小的丝状根部研磨成糊后制成的蛛丝根能让受害者变得笨拙又愚钝。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 分钟</p>\n<p><strong>阶段 1</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1 分钟)</p>\n<p><strong>阶段 2</strong> [[/r {9d6}[poison]]]{9d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1 分钟)</p>\n<p><strong>阶段 3</strong> [[/r {10d6}[poison]]]{10d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3} (1 分钟)</p>"
+				},
+				"1ytm10EBunourBmr":{
+					"name": "高等强酸瓶 Greater Acid Flask"
+				},
+				"x6m0LbmWc8Cn84Lu":{
+					"name": "高等炽火胶 Greater Alchemist's Fire"
+				},
+				"EfrEtVXaCW3qrooZ":{
+					"name": "高等瓶装闪电 Greater Bottled Lightning"
+				},
+				"J5M688CLiZAfnf7K":{
+					"name": "高等霜冻瓶 Greater Frost Vial"
+				},
+				"LF5gi4818bCXaIHR":{
+					"name": "灌注物品 Infused Items",
+					"description":"<p>蓝蝮蛇携带有下列灌注物品：：2瓶@Compendium[pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{高等强酸瓶 Acid Flask (Greater)}，4瓶@Compendium[pf2e.equipment-srd.n5yTlTs63o53n3k6]{高等炽火胶 Alchemist's Fire (Greater)}，6瓶@Compendium[pf2e.equipment-srd.Cc4SokzVBoBCkHId]{燃疫松香 Blightburn Resin}，4瓶@Compendium[pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{高等瓶装闪电 Bottled Lightning (Greater)}，3份@Compendium[pf2e.equipment-srd.87AzvRja9uQOLJCC]{死帽粉 Deathcap Powder}，4瓶@Compendium[pf2e.equipment-srd.mYozcVg9fQY6zO7C]{高等生命灵药 Elixir of Life (Greater)}，2瓶@Compendium[pf2e.equipment-srd.intVPcEzbE9o4NQd]{高等霜冻瓶 Frost Vial (Greater)}，3份@Compendium[pf2e.equipment-srd.76T49dJYfxIrPvQe]{烈赤根糊 Malyass Root Paste}，9份@Compendium[pf2e.equipment-srd.iRDCa4OVSTGUD3vi]{紫虫毒 Purple Worm Venom}，6份@Compendium[pf2e.equipment-srd.Wjkw0lEUOhypYvzo]{阴影精华 Shadow Essence}，3份@Compendium[pf2e.equipment-srd.oOXvk18K4izaJzG7]{蛛丝根 Spider Root}。这些物品在24小时内有效，或直到蓝蝮蛇下一次每日准备时有效。</p>"
+				},
+				"aT1K6zkwI73D4tJ8":{
+					"name": "染毒外套 Poisoned Coat",
+					"description":"<p><strong>触发</strong> 邻接蓝蝮蛇的生物用近战无武装攻击命中他。</p>\n<hr />\n<p><strong>效果</strong> 触发生物暴露在@Compendium[pf2e.equipment-srd.6swrLimere2nZtz9]{龙胆汁 Dragon Bile}效果中。这会消耗这一份毒素，蓝蝮蛇在消耗10 分钟将下一份接触或伤口毒素涂抹到外套前，无法使用此反应动作。</p>"
+				},
+				"G1wu8KW1gALb7KbD":{
+					"name": "精准下毒 Pinpoint Poisoner",
+					"description":"<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
+				},
+				"Tt37ijMg1fiX7fGx":{
+					"name": "毒素喷射 Poison Spray",
+					"description":"<p><strong>需求</strong> 蓝蝮蛇正手持一份接触或伤口毒素。</p>\n<hr />\n<p><strong>效果</strong> 蓝蝮蛇口含该毒药，然后用嘴喷出，影响@Template[type:cone|distance:15]{15尺锥形}范围所有生物。蓝蝮蛇自己不会暴露在该毒素中。范围内所有生物立刻感染该毒素，每个生物都必须进行强韧豁免对抗该毒素。</p>"
+				},
+				"rbtSqixbTXvvcmJc":{
+					"name": "强效制毒师 Potent Poisoner",
+					"description":"<p>蓝蝮蛇的灌注毒素DC为34。</p>"
+				},
+				"UUgL7mamcQM9PkU0":{
+					"name": "快速应用 Quick Application",
+					"description":"<p>蓝蝮蛇以交互抽哦出一份伤口都要并立刻给持握的一把武器涂毒。</p>"
+				}
+			}
 		},
 		"Blue Viper (Level 16)": {
 			"name": "Blue Viper (Level 16)"
@@ -218,7 +337,41 @@
 			"name": "Bul-Gae"
 		},
 		"Butterfly Blade Warrior": {
-			"name": "Butterfly Blade Warrior"
+			"name": "蝶刃战士 Butterfly Blade Warrior",
+			"blurb": "人类忠诚刺客",
+			"items":{
+				"jCmLHcpebaggKboj":{
+					"name": "蝶刃 Butterfly Sword",
+					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃——技艺精湛的过峡刺客的首选武器。</p>"
+				},
+				"Y6K7hW8pefr98Xgk":{
+					"name": "+1抗力镶嵌皮甲 +1 Resilient Studded Leather Armor",
+					"description":"<p>这种皮甲用金属铆钉加固，有时也用小金属板加固，使皮甲保留大部分的柔韧性的同时得到更有力的保护。</p>"
+				},
+				"FgZBxJr0uazPJd8V":{
+					"name": "蝶刃 Butterfly Sword",
+					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃——技艺精湛的过峡刺客的首选武器。</p>"
+				},
+				"ugb6n0QNUCteNVeB":{
+					"name": "蝶吻 Butterfly's Kiss",
+					"description":"<p>蝶刃战士使用蝶刃进行非致命攻击不需要承受相关攻击减值。</p>"
+				},
+				"GHnydFlMyHwFOHtH":{
+					"name": "策识眼 Mastermind's Eye",
+					"description":"<p>当蝶刃战士成功通过回忆知识动作鉴定目标生物时，该生物直到自己的下一回合开始，对蝶刃战士的攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。若蝶刃战士大成功，该生物在1分钟内对蝶刃战士的攻击措手不及。</p>"
+				},
+				"q88lqgzMMO0yY9PK":{
+					"name": "偷袭 Sneak Attack",
+					"description":"蝶刃战士打击措手不及的生物额外造成[[/r 1d6]]{1d6精准伤害}。\n<hr />\n@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]"
+				},
+				"nbaWVxcqV74vIiGN":{
+					"name": "策识之击 Studied Strike",
+					"description":"<p>蝶刃战士对目标进行的攻击让他更了解目标。他进行一次近战打击。若命中，他立刻对目标进行一次回忆知识。若攻击大成功，该次回忆知识获得+2环境加值。目标会对策识之击临时免疫1天。</p>"
+				},
+				"dEMUM22Ke1Ah5KZD":{
+					"name": "过峡学识"
+				}
+			}
 		},
 		"Canopy Elder": {
 			"name": "Canopy Elder"
@@ -263,7 +416,18 @@
 			"name": "Cloudsplitter"
 		},
 		"Collapsing Structure": {
-			"name": "Collapsing Structure"
+			"name": "崩塌的建筑 Collapsing Structure",
+			"stealth":"<p>+20（大师）注意到魔加鲁接近时墙上出现的裂纹。</p>",
+			"hazarddisable": "<p>@Check[type:athletics|dc:43|name:加固建筑]（大师），@Check[type:crafting|dc:43|name:加固建筑]（大师），或@Check[type:engineering-lore|dc:43|name:加固建筑]{工程学识}（大师）加固建筑以减少崩塌风险，直到生物的下回合结束。如果成功，此轮的纯骰检定（详见例行程序）DC+4，如果大成功则+8。将纯骰检定DC增加到21以上能让建筑稳固，从而结束该危害。</p>",
+			"hazarddescription": "<p>魔加鲁撞上一座建筑，严重影响了建筑的稳定性，并可能导致其倒塌。</p>",
+			"hazardreset": "<p>建筑在稳固之后的[[/r 1d6]]{1d6轮}之后，会再次受到分崩离析的影响。</p>",
+			"hazardroutine": "<p>（1动作）GM投掷@Check[type:flat|dc:9]检定来判断建筑是否崩塌，增加DC的情况如上文所述。如果检定成功，建筑内部和周围30尺范围的灰尘和碎片纷纷落下，提供隐蔽，并且对[[/r 1d4]]个随机目标造成[[/r {6d6}[bludgeoning]]]{6d6钝击伤害}（@Check[type:reflex|dc:35|basic:true]豁免；如果豁免大失败，生物被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}）。如果大成功，效果相同，但是碎片崩落对[[/r 2d4]]个随机目标造成[[/r {12d6}[bludgeoning]]]{12d6钝击伤害}（@Check[type:reflex|dc:35|basic:true]豁免，如果豁免大失败，生物被碎石掩埋直到被解救，破拆DC38，逃脱DC35）。</p>",
+			"items":{
+				"2HYs6bwPR6eSgF5p":{
+					"name": "分崩离析 Shake Apart",
+					"description":"<p><strong>触发</strong> 魔加鲁对建筑施加力道</p>\n<hr />\n<p><strong>效果</strong> 建筑开始颤抖。建筑的地板和建筑30尺内的街道变为困难地形；此困难地形中的生物在攻击骰、AC和技能检定上有-2环境减值。危害投掷先攻。</p>"
+				}
+			}
 		},
 		"Dancing Night Parade": {
 			"name": "Dancing Night Parade"
@@ -347,7 +511,32 @@
 			}
 		},
 		"Elder Cauthooj": {
-			"name": "Elder Cauthooj"
+			"name": "老年迷音鸟 Elder Cauthooj",
+			"senses":"思维感知（模糊感官）60尺",
+            "languages":"(不能说任何语言)",
+			"blurb": "变体迷音鸟",
+			"publicNotes": "<p>这些巨大的、不会飞的鸟类虽然身体高长、步态滑稽，但其实出人意料的灵活。他们是独行的掠食者，用他们具有迷惑性的鸟鸣让猎物陷入疯狂，操纵他们互相攻击，这样它们就能尽情享用它们的遗骸了。</p>\n<p>一些学者将它们成为“人偶师鸟”，另一些人则称其为“尖叫伯劳”。迷音鸟为大多数聪明的类人生物所唾骂，部分原因是因为这些鸟更喜欢狩猎类人生物。当地人目击到迷音鸟之后通常会组织一个捕猎队，在它再次杀戮之前追踪他的行踪，猎人们通常会把耳朵塞满蜡，以免被它的叫声所影响。那些有幸从这种叫声中幸存下来的人表示，这种声音特别让人紧张不安，甚至没有什么声音比它更为可怕。</p>\n<p>虽然人们可能会认为迷音鸟是一种愚蠢的动物，但这些生物实际上比它们看起来要聪明的多。迷音鸟会在偏远的定居点外围跟踪孤独的旅行者，以让自己能饱餐一顿。这些有耐心的生物直到填饱肚子之前能一直埋伏很久。他们甚至能理解一些基本的木族语，尽管它们无法清晰地说话，但这不能阻止迷音鸟试图模仿它听到的声音，当它这么做的时候，它的野蛮的原始天性增强了这种行为，这让它拥有了能控制思维并造成混乱的能力，迷音鸟的智力让它足以理解自身这种特性，并乐在其中。</p>",
+			"items":{
+				"MF3wGJmHdgsg1PY3":{
+					"name": "喙啄 Beak"
+				},
+				"Idn0opr2yxzpyeDM":{
+					"name": "思维感知（模糊感官）60尺",
+					"description":"<p>迷音鸟能感受到距离内的生物思维。</p>"
+				},
+				"LnCX5HAN8VUMv1f5":{
+					"name": "跳跃闪避 Hop-Dodge",
+					"description":"<p><strong>触发</strong> 迷音鸟是近战打击的目标，且与另一个同样位于该近战打击触及范围内的敌人相邻。</p>\n<hr />\n<p><strong>效果</strong> 迷音鸟敏捷地跳跃，使得触发此能力的近战打击的目标变成与迷音鸟相邻的敌人。迷音鸟以半速行走，并且此移动不触发任何反应动作。</p>"
+				},
+				"q1LhwW1syAxORXNt":{
+					"name": "颤音打击 Staccato Strike",
+					"description":"<p>迷音鸟通过微妙声调变化，可以指挥一个因为颤音之歌而@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}的生物进行一次打击。这参照一般陷入困惑的生物进行的打击，只是迷音鸟可以指定打击的目标。如果目标的触及范围内没有目标，或目标因为其他原因无法进行打击，则此能力无效。</p>"
+				},
+				"U5MbQmKNml15Qbr3":{
+					"name": "颤音之歌 Warbling Song",
+					"description":"<p>迷音鸟发出一种奇怪的悲泣，导致附近的生物变得狂躁和失控。@Template[type:emanation|distance:120]{120尺弥散}范围内的所有生物都必须进行@Check[type:will|dc:34]豁免来抵抗该效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响且临时免疫该能力一分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>\n<p><strong>大失败</strong> 目标@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮并立即攻击目标自己（采用困惑状态时通常的攻击方式）。这次攻击并不能让目标因为受伤而尝试用纯骰检定来从混乱状态恢复。</p>"
+				}
+			}
 		},
 		"Floating Flamethrower": {
 			"name": "Floating Flamethrower"
@@ -822,7 +1011,26 @@
 			}
 		},
 		"Gomwai": {
-			"name": "Gomwai"
+			"name": "工崴 Gomwai",
+			"blurb": "男性大地精武道会执行者",
+			"senses":"黑暗视觉",
+			"items":{
+				"DVNSGTGvqAN5A1dp":{
+					"name": "+1强击重拳缠手带 +1 Striking Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"5tIPhpanSP2Bvks9":{
+					"name": "强力拳 Powerful Fists",
+					"description":"<p>工崴的拳头打击视为寒铁和银，且在造成致命伤时不会受到非致命的攻击减值。</p>"
+				},
+				"vFBg0KY0lbHq8BNe":{
+					"name": "震慑拳 Stunning Fist",
+					"description":"<p>连击集中力道更能盖过敌人。当工崴@Compendium[pf2e.actionspf2e.nbfNETdpee8CVM17]{疾风连击 Flurry of Blows}两次打击选择同一生物为目标后，可以尝试震慑它。若疾风连击中有打击命中且造成了伤害，目标必须进行一次@Check[type:fortitude|dc:30]豁免检定，失败会获得@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（若大失败则@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}）。这是一个失能效果。</p>"
+				},
+				"034fL5hFLpmu6x36":{
+					"name": "黑街学识"
+				}
+			}
 		},
 		"Grandfather Mantis": {
 			"name": "Grandfather Mantis"
@@ -871,7 +1079,26 @@
 			"name": "Halspin the Stung"
 		},
 		"Hana's Hundreds": {
-			"name": "Hana's Hundreds"
+			"name": "花之百人众 Hana's Hundreds",
+			"hp":"部队防御(180/90)",
+			"items":{
+				"WUB7lulreTgWqFs0":{
+					"name": "部队移动 Troop Movement",
+					"description":"<p>当花之百人众行走时，部队会首先自由动作使用重整队列变成20尺见方的队形（正常减去损失的格子），然后按照速度移动。它和巨型生物移动判定类似；例如，若队伍任一格子进入困难地形，，额外移动消耗会对整个部队生效。</p>"
+				},
+				"f4G7Q9LKy3OXsxWz":{
+					"name": "刀刃之雨 Rain of Knives",
+					"description":"<p>花之百人众投掷出飞刀雨，对50 尺内的一个@Template[type:burst|distance:10]{10尺爆发}范围造成[[/r {4d6+13}[piercing]]]{4d6+13穿刺伤害}（@Check[type:reflex|dc:33|basic:true]豁免）。当部队只剩下8 格或更少时，爆发范围缩小至@Template[type:burst|distance:5]{5尺爆发}。</p>"
+				},
+				"fIl5mjQ9QlP5xgnM":{
+					"name": "闯过他们! Run Them Over!",
+					"description":"<p>花之百人众尝试践踏路上所有敌人。部队进行一次重整队列然后行走两次，移动穿过中型或更小生物占据的空间。每个被穿过的生物受到[[/r {4d8+14}[bludgeoning]]]{4d8+14钝击伤害}（@Check[type:reflex|dc:33|basic:true]豁免）。若豁免大失败，该生物会@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"eo8iqqPAWtfCmzx8":{
+					"name": "剑刃风暴 Whirlwind of Blades",
+					"description":"<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<p>花之百人众部队挥舞刀刃，对邻接的每个敌人进行攻击（@Check[type:reflex|dc:33|basic:true]豁免）。伤害基于使用的动作数。</p>\n<hr />\n<p><span class=\"pf2-icon\">1 </span>[[/r {2d8}[slashing]]]{2d8挥砍伤害}</p>\n<p><span class=\"pf2-icon\">2 </span> [[/r {3d8+13}[slashing]]]{3d8+13挥砍伤害}</p>\n<p><span class=\"pf2-icon\">3 </span> [[/r {4d8+16}[slashing]]]{4d8+16挥砍伤害}</p>"
+				}
+			}
 		},
 		"Hantu Belian": {
 			"name": "欲从 Hantu Belian",
@@ -1171,10 +1398,89 @@
 			}
 		},
 		"Koto Zekora": {
-			"name": "Koto Zekora"
+			"name": "琴·禅古罗 Koto Zekora",
+			"hp":"再生15（被酸或火中止）",
+			"allSaves":"对魔法全豁免+1状态加值",
+			"blurb": "女性鬼道士帝皇血脉术士",
+			"senses":"黑暗视觉",
+			"items":{
+				"2YsgkSpxPr5k633t":{
+					"name": "奥术自发法术 Spontaneous Arcane Spells"
+				},
+				"lakHxBya0Tud6OmM":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"olvF5RYCoINLngzv":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"XFjtfvQm6JOkumKy":{
+					"name": "隐形术(随意施法,仅自己) Invisibility (at will, self only)",
+					"description":"<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+				},
+				"EwdkOsd6FURaJqYl":{
+					"name": "+2抗力半身甲 +2 Resilient Half Plate",
+					"description":"<p>半身甲由大部分全身甲的上半身板件组成，用较轻或较薄的钢板保护臂和腿。它既提供了一部分全身甲的保护，同时兼顾了更大的灵活性和速度。这种盔甲包含一套内衬的布甲和一双手套。</p>"
+				},
+				"O3FlJkeqZNFI6MD7":{
+					"name": "血统奥秘 Bloodline Magic",
+					"description":"<p>当琴·禅古罗施放一个如下血统法术时（<em>@Compendium[pf2e.spells-srd.VlNcjmYyu95vOUe8]{次元门 Dimension Door}</em>，<em>@Compendium[pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>，<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>，<em>@Compendium[pf2e.spells-srd.o6YCGx4lycsYpww4]{加速术 Haste}</em>，<em>@Compendium[pf2e.spells-srd.gKKqvLohtrSJj3BM]{魔法飞弹 Magic Missile}</em>，<em>@Compendium[pf2e.spells-srd.d6o52BnjViNz7Gub]{虹光喷射 Prismatic Spray}</em>，<em>@Compendium[pf2e.spells-srd.Ek5XI0aEdZhBgm21]{窥视魔眼 Prying Eye}</em>，<em>@Compendium[pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{迷宫术 Maze}</em>），它的技能检定获得+1状态加值，持续1轮。<br />@Compendium[pf2e.bestiary-effects.tvybMInVm415jA3p]{效果: 血统奥秘}</p>"
+				},
+				"xduDoD6XqwWesLRQ":{
+					"name": "对魔法全豁免+1状态加值"
+				},
+				"mi4iZW5Ggypto2mg":{
+					"name": "再生15（被酸或火中止）"
+				},
+				"nxdr8kif69hRmy9m":{
+					"name": "变身 Change Shape",
+					"description":"鬼道士可以变为食人魔（ogre）的外形。这不会改变其速度，打击攻击和伤害。"
+				}
+			}
 		},
 		"Kun": {
-			"name": "Kun"
+			"name": "鲲 Kun",
+			"senses":"黑暗视觉，强光致盲，水波感知60尺",
+			"languages":"(无法开口说任何语言)",
+			"publicNotes": "<p>饥肠辘辘又满腔怒火，恶毒的鲲是神话中的鱼形怪物，栖息于最遥远、最寒冷的深海。倘若它们愿意，这些无比强大的生物能轻易统治一片水下领土，但鲲也以其绝对的自我专注与对其他生命形态的矛盾心理而著称。一头鲲能离其他生物多远就有多远，只和自己冰冷的仇恨一起过活。它们能进食并消化猎物，但这通常出于偶然。大多数鲲保持无知与冷漠，将自己隐藏于黑暗中，无视周围任何的生命迹象，偶尔则会怀着恶意猛烈出击。</p>",
+			"items":{
+				"gYNvlca79PvotIgx":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"L5Jc5YxoBiDg1FZT":{
+					"name": "操控水位(随意施法) Control Water (at will)",
+					"description":"<p>通过将你的意志赋予水体，你可以抬升或者降低选择区域内的水位10尺。区域内具有水特征的生物承受 <em>@Compendium[pf2e.spells-srd.WsUwpfmhKrKwoIe3]{缓慢术 Slow}</em>的效果。</p>\n<hr />\n<p><strong>区域</strong> 50尺长50尺宽</p>"
+				},
+				"dYuXHaQm9YEdf6x7":{
+					"name": "黑暗术(随意施法) Darkness (at will)",
+					"description":"<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"HX7W9MlyzUkNaGyQ":{
+					"name": "鱼颚 Jaws"
+				},
+				"8nwY1jWkjrugckqa":{
+					"name": "鱼尾 Tail"
+				},
+				"vXJpAcwi5BCUXuET":{
+					"name": "水波感知60尺 Wavesense 60ft"
+				},
+				"UO4bLIzPKpq9nwv3":{
+					"name": "恶意 Spite",
+					"description":"<p><strong>触发</strong> 在鲲的鱼尾触及范围内的生物使用一个动作攻击或治疗另一个生物（包括鲲在内）</p>\n<hr />\n<p><strong>效果</strong> 鲲用它的尾巴拍打触发生物，进行一次鱼尾打击。若命中，触发此能力的动作被打断，被命中的生物则被推开10尺。</p>"
+				},
+				"4JiyMheydENIkmhZ":{
+					"name": "热能导流 Funnel",
+					"description":"<p>鲲猛吸一口气，吞没@Template[type:cone|distance:60]{60尺锥形}范围内的生物与热量。该区域内的生物必须成功通过@Check[type:fortitude|dc:33|traits:damaging-effect]检定，否则将受到[[/r {10d8}[cold]]]{10d8寒冷伤害}。鲲在[[/br 1d4 #rounds]]{1d4回合}内不能再次使用此能力。</p>\n<hr />\n<p><strong>大成功</strong> 此生物不受影响。</p>\n<p><strong>成功</strong> 此生物受到一半伤害。</p>\n<p><strong>失败</strong> 此生物受到全部伤害，并被拉向鲲30尺。</p>\n<p><strong>大失败</strong> 此生物受到双倍伤害，并被拉向鲲60尺。</p>"
+				},
+				"XFVUhC4iIx7OnnA3":{
+					"name": "黑暗之心 Heart of Darkness",
+					"description":"<p>每当鲲在黑暗术范围中发动攻击，它的攻击会额外造成2d6邪恶伤害。</p>"
+				},
+				"xm0nQmg2QIXlVTAI":{
+					"name": "活吞 Swallow Whole",
+					"description":"<p>超大型, [[/r {3d12+7}[bludgeoning]]]{3d12+7钝击伤害}, 破裂 30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				}
+			}
 		},
 		"Lantondo": {
 			"name": "Lantondo"
@@ -1273,7 +1579,16 @@
 			"name": "Melodic Squall"
 		},
 		"Mogaru's Breath": {
-			"name": "Mogaru's Breath"
+			"name": "魔加鲁的吐息 Mogaru's Breath",
+			"hazarddisable": "<p>@Check[type:performance|dc:50|name:转移魔加鲁的注意]（传奇）或 @Check[type:deception|dc:53|name:转移魔加鲁的注意]（传奇）片刻转移魔加鲁的注意。</p>",
+			"hazarddescription": "<p>魔加鲁喷出炽热烈焰，扫清区域内所有挡路的渣渣。</p>",
+			"hazardreset": "<p>魔加鲁必须等待[[/br 1d4 #rounds]]{1d4轮}才能进行另一次喷火。</p>",
+			"items":{
+				"mdp8vBq6ZOiNg1Zt":{
+					"name": "猛烈吐息 Volcanic Breath",
+					"description":"<p><strong>触发</strong> 一个生物对魔加鲁进行敌对行为，制造可见的区域效果，或在魔加鲁120尺范围内飞行</p>\n<hr />\n<p><strong>效果</strong> 魔加鲁对目标喷出@Template[type:cone|distance:120]{120尺锥形}火焰。该地区的易燃物立即被点燃，石头或金属地表会融化为困难地形。该地区的生物受到[[/r {20d6}[fire]]]{20d6火焰伤害}（@Check[type:reflex|dc:44|basic:true]豁免）。如果豁免失败或大失败，生物还会受到[[/r {3d6}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+				}
+			}
 		},
 		"Muckish Creep": {
 			"name": "淤泥蹒跚怪 Muckish Creep",
@@ -1310,7 +1625,47 @@
 			}
 		},
 		"Nai Yan Fei": {
-			"name": "Nai Yan Fei"
+			"name": "奈燕妃 Nai Yan Fei",
+			"blurb": "女性天舒人女皇",
+			"items":{
+				"q9bEw6MxLjdqb8RQ":{
+					"name": "蝴蝶刀 Butterfly Sword",
+					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃（Butterfly Blades）——技艺精湛的过峡刺客的首选武器。</p>"
+				},
+				"YdVEiekS8A4oqtsT":{
+					"name": "+2高等抗力贵族服装 +2 Greater Resilient Aristocrat's Clothing",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"jbXgp798w9mkieaO":{
+					"name": "蝴蝶刀 Butterfly Sword",
+					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃（Butterfly Blades）——技艺精湛的过峡刺客的首选武器。</p>"
+				},
+				"Se53bpbLQVBavu5z":{
+					"name": "快速变装 Quick Change",
+					"description":"<p>奈燕妃伪装成一个普通人，看起来就像一个中立阵营且有着一份平常职业，例如普通工人、牧民或者农民，的平庸之人。她可以在任何时候通过再次使用快速变装回归她作为女皇的通常外貌。</p>"
+				},
+				"AJWBrF8k93sPpCiT":{
+					"name": "衰弱打击 Debilitating Strike",
+					"description":"<p><strong>触发</strong> 奈燕妃攻击一个措手不及生物并造成伤害。</p>\n<hr />\n<p><strong>效果</strong> 奈燕妃使用一项以下列举的衰弱效果，持续到她下个回合结束。</p>\n<p>• <strong>衰弱</strong> 目标速度受到-10尺状态减值。</p>\n<p>• <strong>衰弱</strong> 目标获得@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p>• <strong>衰弱</strong> 目标不能夹击其他生物，并且也不能给他的盟友提供夹击。</p>\n<p>•<strong>衰弱</strong> 目标不能从举起盾牌动作中获得AC环境加值；强效掩蔽（greater cover）或者寻找掩蔽动作只能让它的AC获得+2环境加值。</p>\n<p>@Compendium[pf2e.feat-effects.yBTASi3FvnReAwHy]{效果: 衰弱打击}</p>"
+				},
+				"NCYjm0t24Miq4JkP":{
+					"name": "大师一击 Master Strike",
+					"description":"<p><strong>触发</strong> 奈燕妃攻击一个措手不及的生物并造成伤害。</p>\n<hr />\n<p><strong>效果</strong> 目标尝试一次@Check[type:fortitude|dc:39]豁免。之后1 天，目标免疫奈燕妃的大师一击。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到奈燕妃下个回合结束。</p>\n<p><strong>失败</strong> 目标@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮。</p>\n<p><strong>大失败</strong> 目标@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4 轮，或@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}2小时，或者被杀（由奈燕妃选择）。</p>"
+				},
+				"AYUQ4VXbDByFiQNQ":{
+					"name": "偷袭 Sneak Attack",
+					"description":"<p>奈燕妃对措手不及的生物造成额外4d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"VqlmcA8mbwRPwWPj":{
+					"name": "过峡学识"
+				},
+				"wohEWLl2eVsMhxnM":{
+					"name": "法律学识"
+				},
+				"NQj5efGU5Hd9oMP3":{
+					"name": "黑街学识"
+				}
+			}
 		},
 		"Old Man Statue": {
 			"name": "老衲像 Old Man Statue",
@@ -1357,22 +1712,110 @@
 			"name": "Orochi"
 		},
 		"Peng": {
-			"name": "Peng"
+			"name": "大鹏 Peng",
+			"speed":"驭风者",
+			"senses":"苍穹之眼",
+			"publicNotes": "<p>鹏是一种巨大的鸟类，能毫不费力地飞翔在最高的云层间。它们明亮的羽毛让人很难在蔚蓝的空中瞥见它们的身形，但只要有耐心，观测者就可能注意到一些速度快到不可能是云的移动物。</p>\n<p>美丽且优雅的鹏有着最不可思议的起源：残忍的鲲，一条充满怨恨的鱼怪，其对大海深处的偏好与鹏对明亮、开阔的天空的热爱互相对照。在鲲为获得一颗高贵的心而通过沐浴于阳光下来牺牲自己的力量后，它们变成了这种壮丽的鸟，其会尽力避免暴力，除非它们必须战斗以保持自由。鹏不求危险或刺激；他们只想继续自己的漫长旅行，并不受干扰地飞翔。</p>\n<p>鹏那冷静与平和的天性是如此强大，以至于仅是它的存在就能平息风暴与狂风。水手和领航员们认为，看到鹏是好运的象征。每当天空湛蓝、天气在很长一段时间都很温和的时候，人们就会把这种好海况归功于一位看不见的鹏。</p>",
+			"items":{
+				"4doYTauqOzpdMTt7":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"E8gEkhEZqxf4Juq6":{
+					"name": "风墙术(随意施法) Wall of Wind (at will)",
+					"description":"<p>你创造一层会干扰所有通过事物的暴风墙。这面由旋风组成的墙有5尺厚，60尺长，30尺高。该墙为竖直的，但你可以指定其形态。虽然风墙会搅动空气，但不会阻碍视觉。该墙壁具有下列效果。</p>\n<ul>\n<li>来自物理远程攻击的弹药（例如箭，矢，投石索弹丸，以及其他类似大小的物体）无法穿过该墙。更大的远程武器的攻击，例如标枪，如果其路线通过该墙壁，则其在攻击骰上承受-2环境减值。重型远程武器和不创造实体物体的法术效果可以不受减值地通过该墙。</li>\n<li>该墙对尝试从地面通过它的生物为困难地形。气体，以及处于气体的生物，无法穿过墙壁。</li>\n<li>尝试使用移动动作飞过墙壁的生物必须尝试一次强韧豁免。</li>\n</ul>\n<hr />\n<p><strong>大成功</strong> 该生物本回合可以正常移动穿过该墙。</p>\n<p><strong>成功</strong> 该飞行生物本回合可以正常移动穿过该墙，但是该墙为困难地形。</p>\n<p><strong>失败</strong> 该墙阻挡飞行生物的移动，并且当前动作的剩余移动力被浪费。</p>\n<p><strong>大失败</strong> 如同失败，并且该生物会被推离该墙10尺。</p>"
+				},
+				"IwOoDjWlwRXUkUmZ":{
+					"name": "造风术(随意施法) Gust of Wind (at will)",
+					"description":"<p>一团暴风从你的掌中喷出，从你施放法术时所在位置直吹到线形终点。这团风吹灭所有小的非魔法火焰，吹散云和雾，吹起负载轻或者更低的物体，并且会推动更大的物体。区域中大型或者更小的生物必须尝试一次强韧豁免。在之后进入风中的大型或者更小的生物也必须在进入时尝试该豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物无法顶风移动。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果它在飞行，它改为承受大失败效果。</p>\n<p><strong>大失败</strong> 该生物被沿风向推离30尺，倒地，并且承受2d6钝击伤害。</p>"
+				},
+				"FTCnEaypJuglhT6O":{
+					"name": "鸟喙 Beak"
+				},
+				"hXMjRBT7StmhwWNg":{
+					"name": "鸟爪 Talon"
+				},
+				"qeAA0MrubbWA2ybq":{
+					"name": "平和天气灵光 Calm Weather Aura",
+					"description":"<p>1英里@Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}。</p>\n<hr />\n<p>一头鹏周围的天气总是略有云彩、微风怡人，气温总是处于本季节中温暖的水平。试图在此光环中改变天气的生物（例如使用操控天气仪式或造风术 等局部效果）必须成功通过@Check[type:will|dc:33]豁免。否则（改变天气的）效果就会被打断。鹏可以通过单动作激活或关闭灵光（这个动作具有专注特征）。</p>"
+				},
+				"ibrs1SfHXiSzP0TG":{
+					"name": "苍穹之眼 Heaven's View",
+					"description":"<p>云不会阻碍鹏的视觉。</p>"
+				},
+				"pB40Arkv2E9RNW8f":{
+					"name": "驭风者 Windslice",
+					"description":"<p>鹏能在任何风中从容不迫地飞行。鹏忽略由风引起的困难地形，也不需要在大风中进行空中机动受训技能动作。</p>"
+				},
+				"aM2dAbsj3WL2w3SB":{
+					"name": "云层掩蔽 Cloud Cover",
+					"description":"<p>鹏呼出一片密云，把自己笼罩在云雾中。鹏在下一轮结束前都获得@Compendium[pf2e.other-effects.I9lfZUiCwMiGogVi]{掩蔽 Cover}。</p>"
+				},
+				"HNDwQNd55Yh0zWou":{
+					"name": "振翅 Flap Wings",
+					"description":"<p>鹏拍打翅膀，创造出一股强大的寒气，将敌人推开。距鹏10尺内的所有生物受到[[/r {3d6}[bludgeoning]]]{3d6钝击伤害}和[[/r {3d6}[cold]]]{3d6寒冷伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。豁免失败的生物会被推离10尺；大失败则被推离20尺并被击至@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。鹏在[[/br 1d4 #rounds]]{1d4轮}内不能再次使用此能力。</p>"
+				}
+			}
 		},
 		"Phuthi": {
 			"name": "Phuthi"
 		},
 		"Planar Terra-cotta Soldier": {
-			"name": "Planar Terra-cotta Soldier"
+			"name": "次元兵马俑士兵 Planar Terra-cotta Soldier",
+			"ac":"32 with shield raised",
+			"languages":"(无法说任何语言)",
+			"blurb": "变体兵马俑士兵",
+			"publicNotes": "<p>兵马俑守护古代统治者的陵墓，在那里不休不眠地警戒，只有当入有入侵者闯入盗墓或玷污陵墓时才会活动起来。每个战士都是用粘土精心制作而成，并各自具有独特的特征。</p>\n<hr />\n<p>兵马俑有6英尺高，600磅重。</p>",
+			"items":{
+				"uTQwt6vV8Jw92Whh":{
+					"name": "次元快步 Planar Step",
+					"description":"<p>次元兵马俑士兵可以在主物质位面的裂缝中穿行，立刻将自己传送到60尺内一个地方。它在[[/br 1d4 #Planar Step Recharge]]{1d4轮}内无法再次使用次元快步。</p>"
+				}
+			}
 		},
 		"Planar Terra-cotta Squadron": {
-			"name": "Planar Terra-cotta Squadron"
+			"name": "次元兵马俑卫队 Planar Terra-cotta Squadron",
+			"hp":"部队防御(200/100)",
+			"ac":"举盾时39",
+			"blurb": "变体兵马俑卫队",
+			"languages":"(无法说任何语言)",
+			"publicNotes": "<p>兵马俑守护古代统治者的陵墓，在那里不休不眠地警戒，只有当入有入侵者闯入盗墓或玷污陵墓时才会活动起来。每个战士都是用粘土精心制作而成，并各自具有独特的特征。</p>\n<hr />\n<p>这些被制造出来的战士作为训练有素的小队紧密协作，击退入侵者。</p>",
+			"items":{
+				"8VkXSkdo2QljL0s2":{
+					"name": "次元快步 Planar Step",
+					"description":"<p>兵马俑卫队可以在主物质位面的裂缝中穿行，立刻将自己传送到90尺内一个地方。它们在[[/br 1d4 #Planar Step Recharge]]{1d4轮}内无法再次使用次元快步。</p>"
+				},
+				"OgFZ82Cgk6qKkD9l":{
+					"name": "弓箭齐发 Aim as One",
+					"description":"<p>部队进行一次远程齐射，射程100尺，对@Template[type:burst|distance:10]{10尺爆发}范围造成[[/r 3d8+13]]伤害（@Check[type:reflex|dc:33|basic:true]豁免）。如果卫队规模被缩减至8格或更小，则爆发范围减少为@Template[type:burst|distance:5]{5尺}。</p>"
+				},
+				"moI2lATWRRsnrF0Z":{
+					"name": "举起盾墙 Raise Shields",
+					"description":"<p>部队举起盾墙，效果如同单个生物@Compendium[pf2e.actionspf2e.xjGwis0uaC2305pm]{举起盾牌 Raise a Shield}。</p>"
+				},
+				"Vx9iqVf4ismUN743":{
+					"name": "整齐划一 Strike as One",
+					"description":"<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮1次</p>\n<hr />\n<p><strong>效果</strong> 卫队对5尺内的所有生物进行近战攻击（@Check[type:reflex|dc:30|basic:true]豁免）。该伤害取决于花费的动作：</p>\n<p><span class=\"pf2-icon\">A</span> [[/r {2d8}[slashing]]]2d8挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">D</span> [[/r {3d8+13}[slashing]]]{3d8+13挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">T</span> [[/r {4d8+16}[slashing]]]{4d8+16挥砍伤害}。</p>"
+				},
+				"4y0Im0eAbj4YFOII":{
+					"name": "部队移动 Troop Movement",
+					"description":"<p>当部队行走时，它首先以一个自由动作重整队列，聚集成20尺*20尺方格的队列（减去任何损失的方格），然后以满速度移动。它在移动时如同一个巨形生物那般；举例来说，如果任何方格进入了困难地形，则整个部队都需要花费额外的移动力。</p>"
+				}
+			}
 		},
 		"Portal Eater": {
 			"name": "Portal Eater"
 		},
 		"Quaking Footfall": {
-			"name": "Quaking Footfall"
+			"name": "撼地步伐 Quaking Footfall",
+			"hazarddisable": "<p>通过3次@Check[type:athletics|dc:39|name:加固一个小型建筑或地表]（受训），@Check[type:crafting|dc:39|name:加固一个小型建筑或地表]（受训），或@Check[type:engineering|dc:39|name:加固一个小型建筑或地表]{Engineering Lore}（受训） 检定加固一个小型建筑或地表来减少地震对区域的影响；@Check[type:performance|dc:41|name:让魔加鲁冷静]（传奇）让魔加鲁短暂地冷静。</p>",
+			"hazarddescription": "<p>魔加鲁加快步伐，它周围的大地颤抖起来，就像一场猛烈的地震。</p>",
+			"hazardreset": "<p>魔加鲁停止猛冲[[/br 1d4 #rounds]]{1d4轮}之后。</p>",
+			"items":{
+				"0NiOsqio8Wx4X3Mb":{
+					"name": "撼地 Quake",
+					"description":"<p><strong>触发</strong> 魔加鲁移动至少60尺</p>\n<hr />\n<p><strong>效果</strong> 从魔加鲁所在空间弥漫@Template[type:emanation|distance:120]{120尺范围}内的会发生地震。这会造成多种不同的效果，取决于玩家角色在地震时处于什么地点。</p>\n<p>在城市的大部分地区，地表变成困难地形，在地面上的生物陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续1轮。</p>\n<p>在城市中有地下空间的地区（例如下水道、天坑或地下陵墓）,地表会形成裂隙，在这些地区的生物除非通过@Check[type:reflex|dc:40]豁免，否则将掉进40尺深的洞里。</p>\n<p>在海湾、海滩和其他面积相对较大但较浅的水域，魔加鲁的移动会产生危险的巨浪。水里的生物和距离海岸线60尺范围内的生物会被巨浪冲击，造成[[/r {3d8}[bludgeoning]]]{3d8钝击伤害}（@Check[type:reflex|dc:35|basic:true]豁免）。如果豁免大失败，生物还会被瞬间卷入60尺外、60尺深的海里。</p>"
+				}
+			}
 		},
 		"Rai Sho Disciple": {
 			"name": "Rai Sho Disciple"
@@ -1381,7 +1824,34 @@
 			"name": "Rai Sho Postulant"
 		},
 		"Ran-to (Level 14)": {
-			"name": "Ran-to (Level 14)"
+			"name": "捣达(14级) Ran-to (Level 14)",
+			"blurb": "男性雪地精摔跤手",
+			"senses":"黑暗视觉",
+			"items":{
+				"fWgbC74pAipVC9q1":{
+					"name": "+1抗力镶嵌皮甲 +1 Resilient Studded Leather Armor",
+					"description":"<p>这种盔甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。</p>"
+				},
+				"fkempowsMrEXyJXO":{
+					"name": "身体投掷 Body Slam",
+					"description":"<p><strong>需求</strong> 捣达正擒抱一个生物。</p>\n<hr />\n<p><strong>效果</strong> 捣达将该生物摔投到地面上。该生物受到[[/r {8d6}[bludgeoning]]]{8d6钝击伤害}并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。擒抱结束。</p>"
+				},
+				"OF7SKGyvLUcwnUIT":{
+					"name": "飞扑 Leaping Catch",
+					"description":"<p>捣达在飞跃中抓住敌人对其擒抱。他进行一次@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}、@Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@Compendium[pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。他必须如常进行运动技能检定来执行这个动作，但无论是何种，DC都等于他在空中移动的尺数。在该次跳跃中任何一点，捣达可以进行一次运动检定@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}一个目标。在跳跃的检定完成后，他（若擒抱成功，还有被擒抱的生物）一同倒地。二者都不会从这次坠落中受到伤害。</p>"
+				},
+				"CdGPXloc7jdvHNUb":{
+					"name": "巨人摔角术 Titan Wrestler",
+					"description":"<p>捣达可以对最多比自己大两个体型的生物使用@Compendium[pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@Compendium[pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}或@Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}。</p>"
+				},
+				"J5cP8MRBTAdyZFDq":{
+					"name": "人肉大风车 Whirlwind Toss",
+					"description":"<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 捣达正@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 捣达将擒抱的生物抓牢，旋转起来用他攻击触及内的任何生物，最后把他丢出去。捣达进行一次运动检定，对抗被擒抱生物的强韧豁免DC。</p>\n<hr />\n<p><strong>大成功</strong> 捣达将他甩出很远。擒抱结束。被擒抱生物被甩飞到10尺内一格，受到[[/r {10d6}[bludgeoning]]]{10d6钝击伤害}，并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。所有邻接捣达的生物受到等量钝击伤害（@Check[type:reflex|dc:34|basic:true]豁免）。</p>\n<p><strong>成功</strong> 如同大成功，不过被擒抱生物只会被甩飞到5尺内一格，且伤害为[[/r {6d6}[bludgeoning]]]{6d6钝击伤害}。</p>\n<p><strong>失败</strong> 捣达没有成功制住目标。擒抱结束，被擒抱生物倒地。</p>\n<p><strong>大失败</strong> 捣达失去了对目标的控制，擒抱结束。</p>"
+				},
+				"j5YeAHaP8v8rDPhq":{
+					"name": "摔跤学识"
+				}
+			}
 		},
 		"Ran-to (Level 16)": {
 			"name": "Ran-to (Level 16)"
@@ -1390,22 +1860,189 @@
 			"name": "Ran-to (Level 20)"
 		},
 		"Razu": {
-			"name": "Razu"
+			"name": "拉祖 Razu",
+			"blurb": "男性天狗大师吟游诗人",
+			"senses":"昏暗视觉",
+			"items":{
+				"FOcxEQ3Qgh0Ujn2t":{
+					"name": "吟游诗人组曲法术 Bard Composition Spells"
+				},
+				"flhx8BOplUKqlBal":{
+					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"GxHbUpZV6Kz3UI0u":{
+					"name": "+3高等强击二胡琴弓 +3 Greater Striking Erhu Bow",
+					"description":"<p>拉祖挥舞着它乐器上独特的镶嵌了符文的琴弓作为致命武器他历经数十载的训练让他能够用自己的战斗呼号来增强它，因此它还能造成音波伤害。通过将琴弓的弓套固定在末端，它能将其当做一把类似短矛的武器使用，造成穿刺伤害。任何其他使用二胡琴弓的生物都无法用它造成音波伤害，但该武器依然拥有上面所列出的各项特征。如果除去符文，这把琴弓值50gp。</p>"
+				},
+				"740knilqhTwsJZ6K":{
+					"name": "+3高等抗力镶嵌皮甲 +3 Greater Resilient Studded Leather Armor",
+					"description":"<p>这种皮甲用金属铆钉加固，有时也用小金属板加固，使皮甲保留大部分的柔韧性的同时得到更有力的保护。</p>"
+				},
+				"3u0KoPevm8UUG8Jf":{
+					"name": "高等大师乐器(二胡) Greater Maestro's Instrument (Erhu)",
+					"description":"<p>任何一种形式的手持乐器都能被做成大师乐器。当使用大师乐器演奏音乐时，这件乐器会为表演检定提供+3物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你可以通过演奏这一乐器来产生8环<em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>(DC 38)的效果。</p>\n<hr />\n<p><strong>制造需求</strong> 提供对应等级的<em>魅惑术 Charm</em>施法。</p>"
+				},
+				"PzVxPMAuO9FO1D1f":{
+					"name": "二胡弓 Erhu Bow"
+				},
+				"DU5wnmxBLRLh2bjc":{
+					"name": "琴弓痛击者 Bow Basher",
+					"description":"<p>拉祖挥舞着它乐器上独特的镶嵌了符文的琴弓作为致命武器。他历经数十载的训练让他能够用自己的战斗呼号来增强它，因此它还能造成音波伤害。通过将琴弓的弓套固定在末端，它能将其当做一把类似短矛的武器使用，造成穿刺伤害。任何其他使用二胡琴弓的生物都无法用它造成音波伤害，但该武器依然拥有上面所列出的各项特征。如果除去符文，这把琴弓值50gp。</p>"
+				},
+				"PQOXpeGRy31sWJaj":{
+					"name": "惊人音量 Incredible Volume",
+					"description":"<p>正常情况下射程不超过60尺或弥漫范围不超过60尺半径的听觉效果，经由拉祖施放后，其射程或弥漫半径增幅到300尺。正常情况下射程超过60尺或弥漫半径超过60尺的听觉效果，经由拉祖施放后，其射程或弥漫半径增幅到1200尺（除非该效果本身比这更远）。他的表演最远在10英里外都能听见。</p>"
+				},
+				"xNejvbsVQx1GkLD5":{
+					"name": "过峡学识"
+				},
+				"uDVkt7NzLzST51gf":{
+					"name": "戏剧学识"
+				},
+				"zTjhSfpSV7gaaUl2":{
+					"name": "战争学识"
+				}
+			}
 		},
 		"Rivka (Cimurlian)": {
-			"name": "Rivka (Cimurlian)"
+			"name": "怪兽螨(西穆利安) Rivka (Cimurlian)",
+			"publicNotes": "<p>怪兽螨是一类依附于怪兽（Kaiju）体表的寄生性怪物。它们的本来面貌好似巨型蟑螂，长着8只剃刀般的足和两张嘴——一张生在两个凶恶的钳子之间，另一张开在下腹部的则大得多。通过这第二张嘴，它们得以吸食自己依附的怪兽的原初能量。</p>\n<p>紧跟着怪兽的袭击，怪兽螨在那之后会从宿主的身体上分离，介入灾区，以怪兽使者的身份向毫无戒心的民众索要祭品。据这个残忍的老骗子所言，只有鲜血和黄金才能安抚它们的主人——但当然，怪兽螨在这些献礼送到怪兽手上前就卷走祭品跑路了（但不管怎样，这些祭品对怪兽来说本就没什么意义）。最为可憎的怪兽螨会搜寻废墟中的死者来模仿，用魔法以受人爱戴的城市长者或牧师的面貌示人，好激发市民们的偏执。</p>\n<p>饮下怪兽的血液会对怪兽螨的解剖结构产生奇妙的效果，宿主的原初能量能够增强它的防御与进攻能力。其他生物也曾尝试喝下怪兽的血来复制这种现象，但效果总是很糟糕。很显然，怪兽螨是通过与怪兽一同进化，才能代谢它们古老的血液。</p>",
+			"items":{
+				"VyKXOTWcsObyT8Iu":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"wHnU91Jwyfnpmsux":{
+					"name": "魅惑术(随意施法) Charm (at will)",
+					"description":"<p>在目标看来，你的言语甜蜜动听，你的形象笼罩在梦幻般的光晕中。目标必须尝试一次意志豁免，如果你或者你的盟友最近威胁它或者对它进行了敌对行为，会获得+4环境加值。</p>\n<p>你可以解消该法术。如果你对目标使用任何敌对动作，法术终止。当该法术结束时，目标不一定会意识到自己被魅惑了，除非它和你的友好关系，或者你说服它去做的事情与其期望发生冲突。这也即是说你可以通过常规的方法说服目标继续作为你的朋友。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且意识到你尝试魅惑它。</p>\n<p><strong>成功</strong> 该目标不受影响，但是认为你的法术是某种无害的东西，而不是魅惑术，除非它能识别该法术（通常通过辨识法术（Identifying Spells））。</p>\n<p><strong>失败</strong> 目标对你的态度变为 @Compendium[pf2e.conditionitems.v66R7FdOf11l94im]{友好 Friendly}）。如果已经是友好，则变为 @Compendium[pf2e.conditionitems.v44P3WUcU1j0115l]{乐于帮助 Helpful}。它不能对你做出敌对行为。</p>\n<p><strong>大失败</strong> 目标变为乐于帮助（helpful）并且不能对你做出敌对行为。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备。</p>\n<p><strong>升阶 (8环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备，并且你能以至多10个生物作为目标。</p>"
+				},
+				"QqCth3NE2rqxQBhB":{
+					"name": "虫爪 Claw"
+				},
+				"Rx2durAP6QXQimzo":{
+					"name": "怪兽之血 Kaiju Blood",
+					"description":"<p>每只怪兽螨都通过吸食怪兽的血液来获得抗力与进攻能力。怪兽螨抵抗的伤害类型与它的怪兽射线能力所造成的伤害取决于它上次吸血的怪兽。一些最常见的怪兽螨包括吸食了<strong>西穆利安Cimurlian</strong>（寒冷），<strong>贾卡布Kujiba</strong>（负能量），<strong>埃格隆Igroon</strong>（酸液），<strong>魔加鲁Mogaru</strong>（火焰），或<strong>约拉克Yorak</strong>（电击）的家伙。</p>"
+				},
+				"HOXFQHYsWcrUwyEu":{
+					"name": "剔骨 Eviscerate",
+					"description":"<p><strong>需求</strong> 怪兽螨在本轮中尚未进行攻击</p>\n<hr />\n<p><strong>效果</strong> 怪兽螨猛挥它的四个剃刀般的爪子。它进行四次打击：第一次使用最高的攻击加值，后两次攻击骰有-4减值，最后一次则是-8减值。在计算多重攻击减值时此能力视为四次攻击。</p>"
+				},
+				"rWhNJr9egSsmPSBG":{
+					"name": "怪兽射线 Kaiju Ray",
+					"description":"<p>怪兽螨张开它肚子上的嘴，射出一道范围@Template[type:line|distance:60]{60尺线形}的原能能量，造成[[/r {14d6}[cold]]]{14d6寒冷伤害}（@Check[type:reflex|dc:32|basic:true|traits:cold]豁免）。射线造成的伤害类型取决于怪兽螨最近吸了哪只怪兽的血。怪兽螨在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
+				}
+			}
 		},
 		"Rivka (Igroon)": {
-			"name": "Rivka (Igroon)"
+			"name": "怪兽螨(埃格隆) Rivka (Igroon)",
+			"publicNotes": "<p>怪兽螨是一类依附于怪兽（Kaiju）体表的寄生性怪物。它们的本来面貌好似巨型蟑螂，长着8只剃刀般的足和两张嘴——一张生在两个凶恶的钳子之间，另一张开在下腹部的则大得多。通过这第二张嘴，它们得以吸食自己依附的怪兽的原初能量。</p>\n<p>紧跟着怪兽的袭击，怪兽螨在那之后会从宿主的身体上分离，介入灾区，以怪兽使者的身份向毫无戒心的民众索要祭品。据这个残忍的老骗子所言，只有鲜血和黄金才能安抚它们的主人——但当然，怪兽螨在这些献礼送到怪兽手上前就卷走祭品跑路了（但不管怎样，这些祭品对怪兽来说本就没什么意义）。最为可憎的怪兽螨会搜寻废墟中的死者来模仿，用魔法以受人爱戴的城市长者或牧师的面貌示人，好激发市民们的偏执。</p>\n<p>饮下怪兽的血液会对怪兽螨的解剖结构产生奇妙的效果，宿主的原初能量能够增强它的防御与进攻能力。其他生物也曾尝试喝下怪兽的血来复制这种现象，但效果总是很糟糕。很显然，怪兽螨是通过与怪兽一同进化，才能代谢它们古老的血液。</p>",
+			"items":{
+				"LOgKr3T5wbATylBi":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"wHnU91Jwyfnpmsux":{
+					"name": "魅惑术(随意施法) Charm (at will)",
+					"description":"<p>在目标看来，你的言语甜蜜动听，你的形象笼罩在梦幻般的光晕中。目标必须尝试一次意志豁免，如果你或者你的盟友最近威胁它或者对它进行了敌对行为，会获得+4环境加值。</p>\n<p>你可以解消该法术。如果你对目标使用任何敌对动作，法术终止。当该法术结束时，目标不一定会意识到自己被魅惑了，除非它和你的友好关系，或者你说服它去做的事情与其期望发生冲突。这也即是说你可以通过常规的方法说服目标继续作为你的朋友。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且意识到你尝试魅惑它。</p>\n<p><strong>成功</strong> 该目标不受影响，但是认为你的法术是某种无害的东西，而不是魅惑术，除非它能识别该法术（通常通过辨识法术（Identifying Spells））。</p>\n<p><strong>失败</strong> 目标对你的态度变为 @Compendium[pf2e.conditionitems.v66R7FdOf11l94im]{友好 Friendly}）。如果已经是友好，则变为 @Compendium[pf2e.conditionitems.v44P3WUcU1j0115l]{乐于帮助 Helpful}。它不能对你做出敌对行为。</p>\n<p><strong>大失败</strong> 目标变为乐于帮助（helpful）并且不能对你做出敌对行为。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备。</p>\n<p><strong>升阶 (8环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备，并且你能以至多10个生物作为目标。</p>"
+				},
+				"QqCth3NE2rqxQBhB":{
+					"name": "虫爪 Claw"
+				},
+				"Rx2durAP6QXQimzo":{
+					"name": "怪兽之血 Kaiju Blood",
+					"description":"<p>每只怪兽螨都通过吸食怪兽的血液来获得抗力与进攻能力。怪兽螨抵抗的伤害类型与它的怪兽射线能力所造成的伤害取决于它上次吸血的怪兽。一些最常见的怪兽螨包括吸食了<strong>西穆利安Cimurlian</strong>（寒冷），<strong>贾卡布Kujiba</strong>（负能量），<strong>埃格隆Igroon</strong>（酸液），<strong>魔加鲁Mogaru</strong>（火焰），或<strong>约拉克Yorak</strong>（电击）的家伙。</p>"
+				},
+				"HOXFQHYsWcrUwyEu":{
+					"name": "剔骨 Eviscerate",
+					"description":"<p><strong>需求</strong> 怪兽螨在本轮中尚未进行攻击</p>\n<hr />\n<p><strong>效果</strong> 怪兽螨猛挥它的四个剃刀般的爪子。它进行四次打击：第一次使用最高的攻击加值，后两次攻击骰有-4减值，最后一次则是-8减值。在计算多重攻击减值时此能力视为四次攻击。</p>"
+				},
+				"rWhNJr9egSsmPSBG":{
+					"name": "怪兽射线 Kaiju Ray",
+					"description":"<p>怪兽螨张开它肚子上的嘴，射出一道范围@Template[type:line|distance:60]{60尺线形}的原能能量，造成[[/r {14d6}[acid]]]{14d6酸液伤害}（@Check[type:reflex|dc:32|basic:true|traits:acid]豁免）。射线造成的伤害类型取决于怪兽螨最近吸了哪只怪兽的血。怪兽螨在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
+				}
+			}
 		},
 		"Rivka (Kujiba)": {
-			"name": "Rivka (Kujiba)"
+			"name": "怪兽螨(贾卡布) Rivka (Kujiba)",
+			"publicNotes": "<p>怪兽螨是一类依附于怪兽（Kaiju）体表的寄生性怪物。它们的本来面貌好似巨型蟑螂，长着8只剃刀般的足和两张嘴——一张生在两个凶恶的钳子之间，另一张开在下腹部的则大得多。通过这第二张嘴，它们得以吸食自己依附的怪兽的原初能量。</p>\n<p>紧跟着怪兽的袭击，怪兽螨在那之后会从宿主的身体上分离，介入灾区，以怪兽使者的身份向毫无戒心的民众索要祭品。据这个残忍的老骗子所言，只有鲜血和黄金才能安抚它们的主人——但当然，怪兽螨在这些献礼送到怪兽手上前就卷走祭品跑路了（但不管怎样，这些祭品对怪兽来说本就没什么意义）。最为可憎的怪兽螨会搜寻废墟中的死者来模仿，用魔法以受人爱戴的城市长者或牧师的面貌示人，好激发市民们的偏执。</p>\n<p>饮下怪兽的血液会对怪兽螨的解剖结构产生奇妙的效果，宿主的原初能量能够增强它的防御与进攻能力。其他生物也曾尝试喝下怪兽的血来复制这种现象，但效果总是很糟糕。很显然，怪兽螨是通过与怪兽一同进化，才能代谢它们古老的血液。</p>",
+			"items":{
+				"VyKXOTWcsObyT8Iu":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"celMSuz8A076g4Kg":{
+					"name": "魅惑术(随意施法) Charm (at will)",
+					"description":"<p>在目标看来，你的言语甜蜜动听，你的形象笼罩在梦幻般的光晕中。目标必须尝试一次意志豁免，如果你或者你的盟友最近威胁它或者对它进行了敌对行为，会获得+4环境加值。</p>\n<p>你可以解消该法术。如果你对目标使用任何敌对动作，法术终止。当该法术结束时，目标不一定会意识到自己被魅惑了，除非它和你的友好关系，或者你说服它去做的事情与其期望发生冲突。这也即是说你可以通过常规的方法说服目标继续作为你的朋友。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且意识到你尝试魅惑它。</p>\n<p><strong>成功</strong> 该目标不受影响，但是认为你的法术是某种无害的东西，而不是魅惑术，除非它能识别该法术（通常通过辨识法术（Identifying Spells））。</p>\n<p><strong>失败</strong> 目标对你的态度变为 @Compendium[pf2e.conditionitems.v66R7FdOf11l94im]{友好 Friendly}）。如果已经是友好，则变为 @Compendium[pf2e.conditionitems.v44P3WUcU1j0115l]{乐于帮助 Helpful}。它不能对你做出敌对行为。</p>\n<p><strong>大失败</strong> 目标变为乐于帮助（helpful）并且不能对你做出敌对行为。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备。</p>\n<p><strong>升阶 (8环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备，并且你能以至多10个生物作为目标。</p>"
+				},
+				"QqCth3NE2rqxQBhB":{
+					"name": "虫爪 Claw"
+				},
+				"Rx2durAP6QXQimzo":{
+					"name": "怪兽之血 Kaiju Blood",
+					"description":"<p>每只怪兽螨都通过吸食怪兽的血液来获得抗力与进攻能力。怪兽螨抵抗的伤害类型与它的怪兽射线能力所造成的伤害取决于它上次吸血的怪兽。一些最常见的怪兽螨包括吸食了<strong>西穆利安Cimurlian</strong>（寒冷），<strong>贾卡布Kujiba</strong>（负能量），<strong>埃格隆Igroon</strong>（酸液），<strong>魔加鲁Mogaru</strong>（火焰），或<strong>约拉克Yorak</strong>（电击）的家伙。</p>"
+				},
+				"HOXFQHYsWcrUwyEu":{
+					"name": "剔骨 Eviscerate",
+					"description":"<p><strong>需求</strong> 怪兽螨在本轮中尚未进行攻击</p>\n<hr />\n<p><strong>效果</strong> 怪兽螨猛挥它的四个剃刀般的爪子。它进行四次打击：第一次使用最高的攻击加值，后两次攻击骰有-4减值，最后一次则是-8减值。在计算多重攻击减值时此能力视为四次攻击。</p>"
+				},
+				"rWhNJr9egSsmPSBG":{
+					"name": "怪兽射线 Kaiju Ray",
+					"description":"<p>怪兽螨张开它肚子上的嘴，射出一道范围@Template[type:line|distance:60]{60尺线形}的原能能量，造成[[/r {14d6}[negative]]]{14d6负能量伤害}（@Check[type:reflex|dc:32|basic:true|traits:negative]豁免）。射线造成的伤害类型取决于怪兽螨最近吸了哪只怪兽的血。怪兽螨在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
+				}
+			}
 		},
 		"Rivka (Mogaru)": {
-			"name": "Rivka (Mogaru)"
+			"name": "怪兽螨(摩加鲁) Rivka (Mogaru)",
+			"publicNotes": "<p>怪兽螨是一类依附于怪兽（Kaiju）体表的寄生性怪物。它们的本来面貌好似巨型蟑螂，长着8只剃刀般的足和两张嘴——一张生在两个凶恶的钳子之间，另一张开在下腹部的则大得多。通过这第二张嘴，它们得以吸食自己依附的怪兽的原初能量。</p>\n<p>紧跟着怪兽的袭击，怪兽螨在那之后会从宿主的身体上分离，介入灾区，以怪兽使者的身份向毫无戒心的民众索要祭品。据这个残忍的老骗子所言，只有鲜血和黄金才能安抚它们的主人——但当然，怪兽螨在这些献礼送到怪兽手上前就卷走祭品跑路了（但不管怎样，这些祭品对怪兽来说本就没什么意义）。最为可憎的怪兽螨会搜寻废墟中的死者来模仿，用魔法以受人爱戴的城市长者或牧师的面貌示人，好激发市民们的偏执。</p>\n<p>饮下怪兽的血液会对怪兽螨的解剖结构产生奇妙的效果，宿主的原初能量能够增强它的防御与进攻能力。其他生物也曾尝试喝下怪兽的血来复制这种现象，但效果总是很糟糕。很显然，怪兽螨是通过与怪兽一同进化，才能代谢它们古老的血液。</p>",
+			"items":{
+				"VyKXOTWcsObyT8Iu":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"Dgemu26adQhYO2RF":{
+					"name": "魅惑术(随意施法) Charm (at will)",
+					"description":"<p>在目标看来，你的言语甜蜜动听，你的形象笼罩在梦幻般的光晕中。目标必须尝试一次意志豁免，如果你或者你的盟友最近威胁它或者对它进行了敌对行为，会获得+4环境加值。</p>\n<p>你可以解消该法术。如果你对目标使用任何敌对动作，法术终止。当该法术结束时，目标不一定会意识到自己被魅惑了，除非它和你的友好关系，或者你说服它去做的事情与其期望发生冲突。这也即是说你可以通过常规的方法说服目标继续作为你的朋友。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且意识到你尝试魅惑它。</p>\n<p><strong>成功</strong> 该目标不受影响，但是认为你的法术是某种无害的东西，而不是魅惑术，除非它能识别该法术（通常通过辨识法术（Identifying Spells））。</p>\n<p><strong>失败</strong> 目标对你的态度变为 @Compendium[pf2e.conditionitems.v66R7FdOf11l94im]{友好 Friendly}）。如果已经是友好，则变为 @Compendium[pf2e.conditionitems.v44P3WUcU1j0115l]{乐于帮助 Helpful}。它不能对你做出敌对行为。</p>\n<p><strong>大失败</strong> 目标变为乐于帮助（helpful）并且不能对你做出敌对行为。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备。</p>\n<p><strong>升阶 (8环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备，并且你能以至多10个生物作为目标。</p>"
+				},
+				"QqCth3NE2rqxQBhB":{
+					"name": "虫爪 Claw"
+				},
+				"Rx2durAP6QXQimzo":{
+					"name": "怪兽之血 Kaiju Blood",
+					"description":"<p>每只怪兽螨都通过吸食怪兽的血液来获得抗力与进攻能力。怪兽螨抵抗的伤害类型与它的怪兽射线能力所造成的伤害取决于它上次吸血的怪兽。一些最常见的怪兽螨包括吸食了<strong>西穆利安Cimurlian</strong>（寒冷），<strong>贾卡布Kujiba</strong>（负能量），<strong>埃格隆Igroon</strong>（酸液），<strong>魔加鲁Mogaru</strong>（火焰），或<strong>约拉克Yorak</strong>（电击）的家伙。</p>"
+				},
+				"HOXFQHYsWcrUwyEu":{
+					"name": "剔骨 Eviscerate",
+					"description":"<p><strong>需求</strong> 怪兽螨在本轮中尚未进行攻击</p>\n<hr />\n<p><strong>效果</strong> 怪兽螨猛挥它的四个剃刀般的爪子。它进行四次打击：第一次使用最高的攻击加值，后两次攻击骰有-4减值，最后一次则是-8减值。在计算多重攻击减值时此能力视为四次攻击。</p>"
+				},
+				"rWhNJr9egSsmPSBG":{
+					"name": "怪兽射线 Kaiju Ray",
+					"description":"<p>怪兽螨张开它肚子上的嘴，射出一道范围@Template[type:line|distance:60]{60尺线形}的原能能量，造成[[/r {14d6}[fire]]]{14d6火焰伤害}（@Check[type:reflex|dc:32|basic:true|traits:fire]豁免）。射线造成的伤害类型取决于怪兽螨最近吸了哪只怪兽的血。怪兽螨在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
+				}
+			}
 		},
 		"Rivka (Yorak)": {
-			"name": "Rivka (Yorak)"
+			"name": "怪兽螨(约拉克) Rivka (Yorak)",
+			"publicNotes": "<p>怪兽螨是一类依附于怪兽（Kaiju）体表的寄生性怪物。它们的本来面貌好似巨型蟑螂，长着8只剃刀般的足和两张嘴——一张生在两个凶恶的钳子之间，另一张开在下腹部的则大得多。通过这第二张嘴，它们得以吸食自己依附的怪兽的原初能量。</p>\n<p>紧跟着怪兽的袭击，怪兽螨在那之后会从宿主的身体上分离，介入灾区，以怪兽使者的身份向毫无戒心的民众索要祭品。据这个残忍的老骗子所言，只有鲜血和黄金才能安抚它们的主人——但当然，怪兽螨在这些献礼送到怪兽手上前就卷走祭品跑路了（但不管怎样，这些祭品对怪兽来说本就没什么意义）。最为可憎的怪兽螨会搜寻废墟中的死者来模仿，用魔法以受人爱戴的城市长者或牧师的面貌示人，好激发市民们的偏执。</p>\n<p>饮下怪兽的血液会对怪兽螨的解剖结构产生奇妙的效果，宿主的原初能量能够增强它的防御与进攻能力。其他生物也曾尝试喝下怪兽的血来复制这种现象，但效果总是很糟糕。很显然，怪兽螨是通过与怪兽一同进化，才能代谢它们古老的血液。</p>",
+			"items":{
+				"VyKXOTWcsObyT8Iu":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"50CmAkCw7cXs5avN":{
+					"name": "魅惑术(随意施法) Charm (at will)",
+					"description":"<p>在目标看来，你的言语甜蜜动听，你的形象笼罩在梦幻般的光晕中。目标必须尝试一次意志豁免，如果你或者你的盟友最近威胁它或者对它进行了敌对行为，会获得+4环境加值。</p>\n<p>你可以解消该法术。如果你对目标使用任何敌对动作，法术终止。当该法术结束时，目标不一定会意识到自己被魅惑了，除非它和你的友好关系，或者你说服它去做的事情与其期望发生冲突。这也即是说你可以通过常规的方法说服目标继续作为你的朋友。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且意识到你尝试魅惑它。</p>\n<p><strong>成功</strong> 该目标不受影响，但是认为你的法术是某种无害的东西，而不是魅惑术，除非它能识别该法术（通常通过辨识法术（Identifying Spells））。</p>\n<p><strong>失败</strong> 目标对你的态度变为 @Compendium[pf2e.conditionitems.v66R7FdOf11l94im]{友好 Friendly}）。如果已经是友好，则变为 @Compendium[pf2e.conditionitems.v44P3WUcU1j0115l]{乐于帮助 Helpful}。它不能对你做出敌对行为。</p>\n<p><strong>大失败</strong> 目标变为乐于帮助（helpful）并且不能对你做出敌对行为。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备。</p>\n<p><strong>升阶 (8环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备，并且你能以至多10个生物作为目标。</p>"
+				},
+				"QqCth3NE2rqxQBhB":{
+					"name": "虫爪 Claw"
+				},
+				"Rx2durAP6QXQimzo":{
+					"name": "怪兽之血 Kaiju Blood",
+					"description":"<p>每只怪兽螨都通过吸食怪兽的血液来获得抗力与进攻能力。怪兽螨抵抗的伤害类型与它的怪兽射线能力所造成的伤害取决于它上次吸血的怪兽。一些最常见的怪兽螨包括吸食了<strong>西穆利安Cimurlian</strong>（寒冷），<strong>贾卡布Kujiba</strong>（负能量），<strong>埃格隆Igroon</strong>（酸液），<strong>魔加鲁Mogaru</strong>（火焰），或<strong>约拉克Yorak</strong>（电击）的家伙。</p>"
+				},
+				"HOXFQHYsWcrUwyEu":{
+					"name": "剔骨 Eviscerate",
+					"description":"<p><strong>需求</strong> 怪兽螨在本轮中尚未进行攻击</p>\n<hr />\n<p><strong>效果</strong> 怪兽螨猛挥它的四个剃刀般的爪子。它进行四次打击：第一次使用最高的攻击加值，后两次攻击骰有-4减值，最后一次则是-8减值。在计算多重攻击减值时此能力视为四次攻击。</p>"
+				},
+				"rWhNJr9egSsmPSBG":{
+					"name": "怪兽射线 Kaiju Ray",
+					"description":"<p>怪兽螨张开它肚子上的嘴，射出一道范围@Template[type:line|distance:60]{60尺线形}的原能能量，造成[[/r {14d6}[electricity]]]{14d6电击伤害}（@Check[type:reflex|dc:32|basic:true|traits:electricity]豁免）。射线造成的伤害类型取决于怪兽螨最近吸了哪只怪兽的血。怪兽螨在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
+				}
+			}
 		},
 		"Sand Whirlwind": {
 			"name": "沙旋风 Sand Whirlwind",
@@ -1427,10 +2064,67 @@
 			"name": "Sanzuwu"
 		},
 		"Shadow Yai": {
-			"name": "Shadow Yai"
+			"name": "影巨鬼 Shadow Yai",
+			"hp":"再生15（酸液或火焰使之失效）",
+			"senses":"高等黑暗视觉",
+			"publicNotes": "<p>那些化身为影巨人的恶鬼被称作影巨鬼。许多影巨鬼渴求获得音乐的乐趣，并因此不遗余力地去弄到吟游诗人或有音乐天赋的祈求者（supplicants）。那些拒绝屈服于影巨鬼的渺小生命将会遭受痛苦、延缓、奇异而美丽的死亡，因为影巨鬼有一种特殊的方式来从他们的受害者中唤出旋律优美的哭泣与尖叫：一曲名副其实的痛苦交响乐。陪伴影巨鬼的人若是有特定的音乐技能，就会发现这种体验获益良多且相当充实——只要他们不得罪恶鬼君主就行。</p>",
+			"items":{
+				"OtJU2gZn5IoFtPJY":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"usuiDSVV3x9uoBy5":{
+					"name": "注目术(随意施法) Enthrall (at will)",
+					"description":"<p>你的言语令目标迷魂。你在施法和持续时间中持续演说或者歌唱。注意到你的演说或者歌唱的目标可能会失去注意力；每个目标必须尝试一次意志豁免。如果目标的信仰，族裔，政治观念对立，或者其他它不远认同你的说法的情况，GM可能赋予一个环境加值（最大为+4）。</p>\n<p>在你维持法术时，每个进入射程的生物必须尝试一次豁免。如果你在演说，注目术获得语言特征。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且注意到你尝试使用魔法。</p>\n<p><strong>成功</strong> 目标不必注意，但是也没发现你在使用魔法（他也许发现其他人被注目术影响）。</p>\n<p><strong>失败</strong> 目标对你 @Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}。当它发现其不认同的行为或者说法时，它可以尝试另一次意志豁免。如果它成功，他不再迷魂，并且暂时免疫1小时。如果目标成为敌对行为的目标，或者其他生物对其尝试交涉或者威吓，迷魂会立即结束。</p>\n<p><strong>大失败</strong> 如同失败，但是目标不会在其不认同你时尝试豁免以结束迷魂。</p>"
+				},
+				"WGkN0vnllWzvYp12":{
+					"name": "隐形术(随意施法,仅限自身) Invisibility (at will, self only)",
+					"description":"<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+				},
+				"UjbKhGa4siYKxcmB":{
+					"name": "音波飞弹 Sonic Missile"
+				},
+				"au8VDQ9FZKal5Uri":{
+					"name": "阴影步 Shadow Step",
+					"description":"<p><strong>需求</strong> 影巨鬼正站在昏暗光照或黑暗区域，又或者她正站在一个大型或更大物体投下的影子里</p>\n<hr />\n<p><strong>效果</strong> 影巨鬼立即传送到60尺内一处昏暗光照区域、黑暗区域、或者一个大型或更大的物体投下的影子里。</p>"
+				},
+				"vZSCXVNxO71rPBjH":{
+					"name": "再生15（酸液或火焰使之失效） Regeneration 15 (Deactivated by Acid or Fire)"
+				},
+				"WjYWTGRJ4kB1kSEm":{
+					"name": "变身 Change Shape",
+					"description":"<p>影巨鬼变为@Compendium[pf2e.pathfinder-bestiary-2.SpnJQIHLeiJOjEWR]{影巨人 Shadow Giant}的外形。这不会改变其速度，打击攻击和伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"k5mVqRL1avS7ESAd":{
+					"name": "阴影之触 Shadow Touch",
+					"description":"<p>影巨鬼的触碰除了伤害这个生物的肉体外，还会伤害他的灵魂精华。被影巨鬼的拳头打击伤害的生物必须进行@Check[type:will|dc:36]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 此生物不受影响。</p>\n<p><strong>成功</strong> 此生物受到[[/r {2d6}[negative]]]{2d6负能量伤害}。</p>\n<p><strong>失败</strong> 此生物获得@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}并受到[[/r {3d6}[negative]]]{3d6负能量伤害}。只要此生物还因为此能力而处于流失状态，他就不能说比耳语更响的话。每当该生物试图施展带有语言成份的法术时，它必须成功通过一个纯骰检定否则法术被打断。纯骰DC等于5+此生物的流失值（例如，此生物流失2则DC为7）。</p>\n<p><strong>大失败</strong> 如同失败，但此生物获得@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}并受到[[/r {6d6}[negative]]]{6d6负能量伤害}。</p>"
+				}
+			}
 		},
 		"Shino Hakusa (Level 14)": {
-			"name": "Shino Hakusa (Level 14)"
+			"name": "白谷真野(14级) Shino Hakusa (Level 14)",
+			"blurb": "女性天舒人刺客",
+			"items":{
+				"0lwMSJcnzgWd1hcw":{
+					"name": "+2强击重拳缠手带 +2 Greater Striking Handwraps of Mighty Blows",
+					"description":"<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"e9QsTTUVu8r1v5Kk":{
+					"name": "惑敌飞跃 Disorienting Tumble",
+					"description":"<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				},
+				"bmknajpxNBKh5qrx":{
+					"name": "强力拳 Powerful Fists",
+					"description":"<p>白谷的拳头打击造成致命伤时不会受到非致命的攻击减值。白谷的拳头打击视为寒铁和银制。</p>"
+				},
+				"b1CXbdxuM0TsLGtM":{
+					"name": "压痛点攻击 Pressure Point Attack",
+					"description":"<p>白谷针对目标的压痛点发动攻击来削弱对方。白虎进行一次拳头打击。若命中，目标正常受到伤害，同时需要进行一次@Check[type:fortitude|dc:35]豁免检定。无论豁免结果如何，目标对压痛点攻击获得1分钟的临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标临时弱化。在1轮内，目标获得@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且使用具有操作特征的动作时需进行@Check[type:flat|dc:5]检定，失败则失去动作。</p>\n<p><strong>失败</strong> 如成功，但持续1 分钟。</p>\n<p><strong>大失败</strong> 如成功，但持续1 分钟，且@Check[type:flat|dc:11]检定DC11，同时目标在1分钟内速度获得-10尺状态减值。</p>"
+				},
+				"rOHpfvwV5FzVy4kx":{
+					"name": "偷袭 Sneak Attack",
+					"description":"白谷打击措手不及的目标额外造成3d6点精准伤害。\n<hr />\n@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]"
+				}
+			}
 		},
 		"Shino Hakusa (Level 16)": {
 			"name": "Shino Hakusa (Level 16)"
@@ -1480,13 +2174,136 @@
 			"name": "Surjit Hamelan"
 		},
 		"Swatting Tail": {
-			"name": "Swatting Tail"
+			"name": "重拍之尾 Swatting Tail",
+			"hazarddisable": "<p>@Check[type:performance|dc:45|name:转移魔加鲁的注意]（传奇）或 @Check[type:deception|dc:48|name:转移魔加鲁的注意]（传奇）片刻转移魔加鲁的注意</p>",
+			"hazarddescription": "<p>魔加鲁的尾部向前横扫，对@Template[type:cone|distance:60]{60尺锥形}范围造成毁灭。</p>",
+			"hazardreset": "<p>魔加鲁在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用尾部重拍。</p>",
+			"items":{
+				"yW1zq1AuOImW36SW":{
+					"name": "尾部重拍 Tail Swat",
+					"description":"<p><strong>触发</strong> 个生物对魔加鲁进行敌对行为，制造可见的区域效果，或在魔加鲁120尺范围内飞行</p>\n<hr />\n<p><strong>效果</strong> 区域中的生物必须通过@Check[type:reflex|dc:40]豁免，否则受到[[/r {6d10+28}[bludgeoning]]]{6d10+28钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害并被推离20尺。如果正在飞行，则下降20尺。</p>\n<p><strong>失败</strong> 生物受到全伤害，被推离40尺，并且下降60尺（如正在飞行）或被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，被推离60尺，并且下降120尺（如正在飞行）或被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，并且陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>"
+				}
+			}
 		},
 		"Syndara the Sculptor": {
-			"name": "Syndara the Sculptor"
+			"name": "雕匠辛达拉 Syndara the Sculptor",
+			"hp":"快速愈合20",
+			"allSaves":"对抗混乱时所有豁免具有+2状态加值",
+			"senses":"空间感知，凌空而行",
+			"items":{
+				"6nmmJj2H9dXi2wXU":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"ffZBaR0kNAzbxokJ":{
+					"name": "凌空而行(永久) Air Walk (Constant)",
+					"description":"<p>目标可以在空气中行走，如同在坚实地面上。它可以如此上升与下降，最大45度角。</p>"
+				},
+				"VVkEaTjaqNUZZh9Z":{
+					"name": "掌击 Palm"
+				},
+				"8wAbtCWNC8oU1DBi":{
+					"name": "手刀 Knifehand"
+				},
+				"TLoJoqAT9mWEbPg0":{
+					"name": "元素折跃(酸液) Elemental Gateway (Acid)"
+				},
+				"7REDd3wY9c8AO5OJ":{
+					"name": "元素折跃(寒冷) Elemental Gateway (Cold)"
+				},
+				"JpXjBUOBF3xnisHf":{
+					"name": "元素折跃(电击) Elemental Gateway (Electricity)"
+				},
+				"k8wpqGYhmssGLu9Z":{
+					"name": "元素折跃(火焰) Elemental Gateway (Fire)"
+				},
+				"DMNKfGAALmbt1yaq":{
+					"name": "元素折跃(音波) Elemental Gateway (Sonic)"
+				},
+				"Gx6U0uhAZqRqns0c":{
+					"name": "光屋守护者 Keeper of the Lighthouse",
+					"description":"<p>辛达拉可以选择其是否受到世界领域（worldspheres）影响。</p>"
+				},
+				"0R91Xrww4KkX2os5":{
+					"name": "转向传送 Portal Redirection",
+					"description":"<p><strong>触发</strong> 一次远程的打击或法术攻击骰将辛达拉作为目标</p>\n<hr />\n<p><strong>效果</strong> 辛达拉在将至的飞行物前开启传送门，随后在附近开启另一个传送门用飞行物攻击他60尺范围内其他生物。他不会受到触发攻击伤害，并进行一次具有+43加值的远程打击。根据触发能力决定打击造成的伤害。</p>"
+				},
+				"U7y9xQFt237yGtMb":{
+					"name": "空间感知 Spatial Sense",
+					"description":"<p>辛达拉本能知晓琉璃光屋中所有生物和物品的位置，其是一种精确感官。他的感官不能延伸到跨位面空间，即使进入这些空间的入口就在琉璃光屋内（例如，携带有次元袋的生物）。</p>"
+				},
+				"dBUpMNA6jdIjGiWq":{
+					"name": "对抗混乱时所有豁免具有+2状态加值"
+				},
+				"I1HW6GLHHLzVSARv":{
+					"name": "快速愈合20"
+				},
+				"BwqLC9l3XRUzeiYU":{
+					"name": "精华镜像 Essence Reflection",
+					"description":"<p> 辛达拉和他的镜像是两个彼此相链的存在。如果其中之一被有害效果影响，他们可以通过一个自由动作将有害效果转移到对方，即使在他们无法行动时。</p>"
+				},
+				"DKODgSSppVR1pK2W":{
+					"name": "异次元免疫 Extradimensional Immunity",
+					"description":"<p>辛达拉可以挫败任何使用位面力量对抗他的尝试。他免疫所有异次元（extradimensional）效果，例如<em>@Compendium[pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{迷宫术 Maze}</em>，但是也可以选择是否如常受到影响。</p>"
+				},
+				"LPEmiljFa52Qpans":{
+					"name": "折跃轰击 Gateway Onslaught",
+					"description":"<p><strong>需求</strong> 辛达拉处于琉璃光屋中</p>\n<hr />\n<p><strong>效果</strong> 辛达拉折叠琉璃光屋的现实纬度，然后开启数扇喷涌出危险元素的次元门。他传送回其王座，无视距离，随后进行三次元素折跃打击。每次打击必须以不同生物为目标。他无法再次使用折跃轰击[[/br 1d4 #rounds]]{1d4轮}。</p>"
+				},
+				"fNZJ6zX3sKTikjmd":{
+					"name": "位面重塑 Planar Restructuring",
+					"description":"<p><strong>需求</strong> 辛达拉处于琉璃光屋中</p>\n<hr />\n<p><strong>效果</strong> 辛达拉将其意志施加于琉璃光屋之上，以释放数种效应之一。此效果是魔法性的，但是辛达拉在使用动作时不使用魔法，而只是触发其事先准备好的魔法效果。这些效果的等级（level）为10，并且任何豁免DC均为45。辛达拉或辛达拉的镜像不能使用位面重塑 [[/br 1d4 #rounds]]{1d4轮}。</p>\n<p>- 加速/减速 辛达拉影响目标60尺范围内的时间流，他们受到加速术（haste）或缓慢术（slow）效果影响。</p>\n<p>- 否决 辛达拉否认非其所属的力量存在，目标受到解离术（disjunction）效果影响。</p>\n<p>- 倒回 辛达拉倒回时间以重置伤口。他或他的镜像受到两动作版本治疗术（heal）或复原术（restoration）效果影响。</p>\n<p>- 升起 辛达拉创建了一个反重力（reverse gravity）的重力枢纽点。</p>\n<p>- 隔离 辛达拉折叠空间，生物受到弹力法球（resilient sphere）效果影响。</p>"
+				},
+				"Tw5zLedbZPCJUXOf":{
+					"name": "瞬时风暴 Temporal Flurry",
+					"description":"<p><strong>频率</strong> 一轮一次</p>\n<hr />\n<p><strong>效果</strong> 辛达拉扭曲时间以进行多次攻击。他进行三次无武装攻击。如果多次攻击打击同一个生物，将其伤害合并以计算抗力和弱点。</p>"
+				},
+				"G91glv6yQKQIi54b":{
+					"name": "恶毒打击 Vicious Impact",
+					"description":"<p>辛达拉拥有永恒时间以思考自身弱点和其他人弱点。如果他近战打击重击，他能以眼、关节，或其他薄弱处为目标，添加所选的下列效应之一除非目标成功通过@Check[type:fortitude|dc:46]豁免。</p>\n<p>- 目标陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续1分钟。</p>\n<p>- 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1分钟。</p>\n<p>- 目标受到@Localize[PF2E.PersistentDamage.Bleed3d6.success]。</p>\n<p>- 目标无法快步，持续1分钟。</p>"
+				},
+				"cBzZIOSMTaFYSiaM":{
+					"name": "螺旋步 Walk the Spiral",
+					"description":"<p><strong>需求</strong> 辛达拉处于琉璃光屋中</p>\n<p><strong>触发</strong> 辛达拉在其回合打击一个生物</p>\n<hr />\n<p><strong>效果</strong> 辛达拉旋转其周身的琉璃光屋空间，让其立刻来到远处。他行走两次。这个动作不会触发反应。如果他下个动作是攻击非触发生物的目标，他在攻击中获得+1环境加值；同一回合内其每次螺旋步，这个加值都会+1，最多+3。</p>"
+				},
+				"XRQqPpbcKxQZtcAr":{
+					"name": "半位面学识"
+				}
+			}
 		},
 		"Syu Tak-nwa (Level 14)": {
-			"name": "Syu Tak-nwa (Level 14)"
+			"name": "苏塔奴(14级) Syu Tak-nwa (Level 14)",
+			"blurb": "女性嬛族白发女巫",
+			"items":{
+				"67zu7lZWfNjOFGws":{
+					"name": "异能准备法术 Prepared Occult Spells"
+				},
+				"hwx4Q8YmVaOhfkhN":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"R95zLZt6AC0Skn0E":{
+					"name": "尖笑 Cackle",
+					"description":"<p>你以简短的笑声延长你产生的魔法效果。你用自由动作进行 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}。</p>"
+				},
+				"S2QTreaW7kY6hp4d":{
+					"name": "+2高等强击宝剑 +2 Greater Striking Jian",
+					"description":"<p>数据如短剑</p>\n<p>这种宝剑有不同的形状和样式，它们通常2尺长。</p>"
+				},
+				"4BQjVqK90WiniYts":{
+					"name": "活发 Hair"
+				},
+				"dDsXiFw7Yz34rtG1":{
+					"name": "宝剑 Jian"
+				},
+				"gzFVsti15mvfMvM5":{
+					"name": "魔宠 Familiar",
+					"description":"苏塔奴的魔宠是名为勇锁的象鹰。勇锁拥有40尺飞行速度，黑暗视觉，作为模糊感官的30尺灵敏嗅觉。"
+				},
+				"fygrnuQNEcBuXcIu":{
+					"name": "强化活发 Empowered Hair",
+					"description":"<p>苏塔奴在使用活发上的造诣独树一帜。她的活发可以用来执行精确动作，比如开锁甚至简单的交互动作，并且她能用活发自动进行攫抓（Grab），如同名怪物能力。她可通过活发传递巫术。当苏塔奴成功施放需要2个或更多动作且无需攻击骰的巫术聚能法术时，若目标在触及内，作为施法动作的一部分，在应用巫术效果前，她可选择对该目标进行一次活发打击。若打击未命中，巫术不生效。</p>"
+				}
+			}
 		},
 		"Syu Tak-nwa (Level 16)": {
 			"name": "Syu Tak-nwa (Level 16)"
@@ -1495,7 +2312,50 @@
 			"name": "Syu Tak-nwa (Level 20)"
 		},
 		"Taiga Yai": {
-			"name": "Taiga Yai"
+			"name": "寒林巨鬼 Taiga Yai",
+			"hp":"再生15（火焰使之失效）",
+			"allSaves":"对抗魔法所有豁免+1状态加值",
+			"senses":"高等黑暗视觉",
+			"languages":"动物交谈",
+			"publicNotes": "<p>披着寒林巨人的外貌。寒林巨鬼通常孤身一人四处游荡，永远渴望着新的体验与目的地。他们热衷于自己对大自然最纯粹的爱，并在继续前进之前愉快地摧毁他们遇到的任何业已建立的文明。</p>",
+			"items":{
+				"qVvGOrI5DbUvbKhA":{
+					"name": "原能内在法术 Innate Primal Spells"
+				},
+				"RbqTjLRLrXz6zrTi":{
+					"name": "纠缠术(随意施法) Entangle (at will)",
+					"description":"<p>区域中的植物会纠缠生物。该区域视为困难地形。每轮当某个生物在区域中开始回合时，它必须尝试一次反射豁免。在失败时，其在速度上承受-10尺环境减值，直到其离开区域，在大失败时，它也会获得 @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，持续1轮。生物可以尝试逃脱对抗纠缠术的DC，以移除这些效果。</p>"
+				},
+				"PCNkpVlmOHDZNMRH":{
+					"name": "隐形术(随意施法,仅限自己) Invisibility (at will, self only)",
+					"description":"<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+				},
+				"sZ9Bz6DNeqtWdq6e":{
+					"name": "动物交谈(永久) Speak with Animals (constant)",
+					"description":"<p>你可以对动物提出问题，从动物获得回答，以对动物及使用交涉（Diplomacy）技能。该法术不会令动物比正常更为友好。聪明的动物喜欢简要直说或者避而不谈，不那么聪明的则通常会做出傻瓜式的回复。</p>"
+				},
+				"41Pkc5M1SUb8W35t":{
+					"name": "酸液飞弹 Acid Missile"
+				},
+				"frXoSlduBV8WhsoJ":{
+					"name": "植物干扰 Botanic Interruption",
+					"description":"<p><strong>触发</strong> 寒林巨鬼正站在一片天然植物或灌木丛中，并被近战攻击选为目标</p>\n<hr />\n<p><strong>效果</strong> 寒林巨鬼将他们的能量注入周围的植物中，使植物迅速生长并形成一个保护屏障。在对抗触发攻击的攻击骰时，寒林巨鬼的AC获得+2环境加值。如果攻击未命中，攻击者必须进行@Check[type:reflex|dc:33]豁免。豁免失败则因被植物缠住而@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮；大失败的话，攻击者还会被击至@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"OV6tSZOBQXPzE58n":{
+					"name": "对抗魔法所有豁免+1状态加值"
+				},
+				"R6JvT0avo1LeaFDw":{
+					"name": "再生15（火焰使之失效）"
+				},
+				"jhZiio0El32uM7CS":{
+					"name": "变身 Change Shape",
+					"description":"<p>寒林巨鬼变为@Compendium[pf2e.pathfinder-bestiary-2.W1OXnXGF22uybovO]{寒林巨人 Taiga Giant}的外形。这不会改变其速度，打击攻击和伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"splf2Bg9krRw5Scf":{
+					"name": "回归自然 Return to Nature",
+					"description":"<p>寒林巨鬼号令地底的植物根系将一个生物向地下拖入60尺。目标必须成功通过@Check[type:fortitude|dc:35]豁免，否则将@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}[[/br 1d4 #rounds]]{1d4轮}。在这之后此生物被埋于土中；其处于@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态并开始窒息，只要还埋在地下，每轮就会受到[[/r {4d6}[bludgeoning]]]{4d6钝击伤害}。无论是想逃离禁足还是擒抱状态，该生物都必须通过DC 35@Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}检定，邻接他的盟友也能够通过一次成功的@Check[type:athletics|dc:33]检定来将其拉出。</p>"
+				}
+			}
 		},
 		"Takatorra (Daitengu Form)": {
 			"name": "Takatorra (Daitengu Form)"
@@ -1883,7 +2743,37 @@
 			"name": "Yarrika Mulandez"
 		},
 		"Yoh Souran": {
-			"name": "Yoh Souran"
+			"name": "叶索兰 Yoh Souran",
+			"ac":"驾驶阳舰二号时42",
+			"allSaves":"驾驶阳舰二号时全豁免+4",
+			"items":{
+				"SsLK2tGBiHAb784J":{
+					"name": "加速 Punch It",
+					"description":"<p><strong>频率</strong> 每小时一次</p>\n<p><strong>需求</strong> 叶索兰正在驾驶空中载具</p>\n<hr />\n<p><strong>效果</strong>  叶索兰加速飞艇，让其速度在一轮中变为三倍。加速结束后，飞艇停滞——虽然它在原地悬浮，但直到它用一轮时间恢复自身动力前其无法移动。</p>"
+				},
+				"7KVyaHgB8ZdUAKQC":{
+					"name": "远古飞艇链接 Ancestral Airship Link",
+					"description":"<p>阳舰二号将叶索兰视作其创造者的后人，这艘魔法飞艇强化了一般驾驶物所能给予他的防护。如果叶索兰驾驶阳舰二号，他的AC和豁免都增加4。</p>"
+				},
+				"fH16wlrnHfTktX3t":{
+					"name": "小心颠簸！ Shake 'Em!",
+					"description":"<p><strong>需求</strong> 叶索兰正在驾驶空中载具</p>\n<p><strong>触发</strong> 一个或多个登上叶索兰载具的生物被一次攻击作为目标或尝试一次敏捷豁免骰，而攻击者并未登上载具</p>\n<hr />\n<p><strong>效果</strong> 叶索兰尝试机动规避。所有登上载具的生物对抗触发效应的AC和豁免骰获得 +2 状态加值。</p>"
+				},
+				"WlJ1X90yzVBdZRwG":{
+					"name": "装配对抗措施 Deploy Countermeasures",
+					"description":"<p><strong>频率</strong> 每小时一次</p>\n<p><strong>需求</strong> 叶索兰驾驶阳舰二号</p>\n<hr />\n<p><strong>效果</strong> 纵然阳舰二号并不是战斗载具，但它依然配有魔法性补充的用于胜利游行和类似情况的烟花。叶索兰对60尺内@Template[type:burst|distance:20]{20尺爆发}范围的生物开火。区域内生物受到[[/r {3d6}[fire]]]{3d6火焰伤害}和[[/r {3d6}[sonic]]]{3d6音波伤害}，并进行一次强韧豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标受到一半伤害并@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}一轮。</p>\n<p><strong>失败</strong> 目标受到全部伤害并@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}3轮。</p>\n<p><strong>大失败</strong> 目标受到两倍伤害，并受到[[/r {3d4}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}，@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1分钟。</p>"
+				},
+				"l3Jye2wtDn71XMXP":{
+					"name": "我会将你送达！ I'll Get You into Position!",
+					"description":"<p><strong>需求</strong> 叶索兰正在驾驶空中载具</p>\n<hr />\n<p><strong>效果</strong> 叶索兰急踩刹车，快速倾斜，或者进行其他空中机动以在敌人头上降落。他进行一次驾驶知识（Piloting Lore）检定对抗敌人的察觉 DC。如果他成功，敌人对船上生物的下一次攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，只要攻击是在叶索兰下一轮前进行。所有注意到机动操作的敌人临时免疫1天。</p>"
+				},
+				"Z6iJLnWxjo46j565":{
+					"name": "驾驶学识"
+				},
+				"Go0i8Osecc4d0Q8S":{
+					"name": "赤凰武道会学识"
+				}
+			}
 		}
 	}
 }

@@ -13,7 +13,8 @@
         "blurb":"system.details.blurb",
         "speed":"system.attributes.speed.details",
         "languages":"system.traits.languages.custom",
-        "stealth":"system.attributes.stealth"
+        "stealth":"system.attributes.stealth",
+        "di":"system.traits.di.custom"
     },
     "entries": {
         "Ankhrav": {
@@ -32,7 +33,38 @@
             "name": "黑布丁怪 Black Pudding"
         },
         "Boggard Swampseer": {
-            "name": "沼蜍沼泽先知 Boggard Swampseer"
+            "name": "沼蜍沼泽先知 Boggard Swampseer",
+            "senses":"黑暗视觉",
+            "speed":"swamp stride",
+            "publicNotes": "<p>沼蜍沼泽先知通过信仰恶魔领主果甘蜍来获得施法力量的馈赠，他们用自己的力量统治沼蜍人村庄，协调其余村庄的秩序并计划袭击周边的社群。</p>\n<hr />\n<p>沼蜍人是好斗的两栖类人生物，他们生活在沼泽、湿地甚至部分雨林中。沼蜍人的成长过程首先从卵孵化为蝌蚪，他们会激烈地争夺食物甚至会在这场斗争中吃掉自己的兄弟姐妹。在接下来的3年里，幸存下来的沼蜍人在学习狩猎、制造和战争的基础知识——一切在力量至上的社会中幸存所需要的理解的知识——的同时，长出双手、双腿和肺部。大多数沼蜍人社会的顶端阶级是身胖体肥的沼泽先知（swampseer），他们懂得如何使用邪恶的神术。</p>",
+            "items":{
+                "pFruogrBBB4pvImp":{
+                    "name": "原能准备法术 Primal Prepared Spells"
+                },
+                "4gP2dSNnL1rudfAt":{
+                    "name": "蛙舌 Tongue"
+                },
+                "9SboqcQona3PXQIx":{
+                    "name": "破灭鸣叫 Destructive Croak",
+                    "description":"<p>沼泽先知发出强力的嘶鸣，这会对@Template[type:emanation|distance:15]{15尺弥漫}范围的非沼蜍人生物造成[[/r {4d6}[sonic]]]{4d6音波伤害}（@Check[type:fortitude|dc:19|basic:true]豁免）。</p>\n<p>任何处于@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物都会承受额外音波伤害，伤害数值为惊惧状态数值的两倍。</p>\n<p>沼泽先知在之后的[[/br 1d4 #rounds]]{1d4轮}内无法再次使用破灭鸣叫。</p>"
+                },
+                "80CuEcGtDQ6fUIyY":{
+                    "name": "淹没之音 Drowning Drone",
+                    "description":"<p><strong>触发</strong> 沼泽先知或他的60尺内的1名盟友尝试豁免检定对抗听觉或音波效果</p>\n<hr />\n<p><strong>效果</strong> 沼泽先知会发出低沉的鸣叫压过其他声音。他要投掷1次@Check[type:performance]检定。若沼泽先知和他位于区域内的沼蜍盟友可以进行选择，在沼泽先知的表演检定和他们的豁免结果中取较高的数值，并以此来判断对抗听觉或音波效果后产生的效果。</p>"
+                },
+                "xBIoPO0Yl00JwtXW":{
+                    "name": "沼泽奔行 Swamp Stride",
+                    "description":"<p>沼蜍先知能忽略由于沼泽地形特征产生的困难地形。</p>"
+                },
+                "z8bl09rqF4yCJDy4":{
+                    "name": "恐惧鸣叫 Terrifying Croak",
+                    "description":"<p>沼蜍先知发出可怕的鸣叫声。@Template[type:emanation|distance:30]{30尺范围}内的任何非沼蜍人都会陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，除非他们能够成功通过@Check[type:will|dc:19]豁免。</p>\n<p>豁免中掷出大成功的生物会在1分钟内临时免疫该能力。</p>"
+                },
+                "A33mGw1DCgRJRDSe":{
+                    "name": "蛙舌攫抓 Tongue Grab",
+                    "description":"<p>若沼蜍先知用蛙舌命中1个生物，那么该生物会被他@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。生物可以通过命中AC 15并造成至少4点挥砍伤害来切开蛙舌。</p>\n<p>尽管这么做不会对沼蜍先知造成伤害，但它可以使沼蜍先知无法再次使用蛙舌打击，直至沼蜍先知通过1星期的休息才能够重新使用蛙舌。</p>"
+                }
+            }
         },
         "Chuul": {
             "name": "甲伏怪 Chuul"
@@ -140,7 +172,54 @@
             "name": "契约魔 Phistophilus"
         },
         "Purple Worm": {
-            "name": "紫虫 Purple Worm"
+            "name": "紫虫 Purple Worm",
+            "senses":"黑暗视觉, 震颤感知（模糊）100尺",
+            "publicNotes": "<p>The purple worm is the most common and infamous of the cave worms, a much-feared monster wandering the twisting tunnels of the Darklands that is capable of carving out entire cave systems. Tunnels bored by a purple worm don't always last long after these creature's passage, and areas where they nest are maddening mazes of passageways that lead nowhere, yet navigating the labyrinth to find the worm's central nest often yields amazing treasures left behind by the worm's prior victims.</p>\n<hr />\n<p>洞穴蠕虫是超级巨大的食腐动物，它们钻到世界深处，吞食找到的任何东西。这些蠕虫以各自独特的颜色而得名，它们非常贪婪，且破坏力强大。不同颜色和能力的洞穴蠕虫潜伏在世界上更偏远的角落——比如传说中居住在巨大冰川或冰山中的白虫，和在早已被遗忘的废墟的墓葬中钻洞的灰虫。</p>",
+            "items":{
+                "HRuAKCIYZlriHOGv":{
+                    "name": "牙咬 Jaws"
+                },
+                "hj2HivadIMJbB0cD":{
+                    "name": "针刺 Stinger"
+                },
+                "fkSqSiW3qLpaq6hp":{
+                    "name": "虫体 Body"
+                },
+                "9AEzHj5y2T93e7EF":{
+                    "name": "反刍 Regurgitate"
+                },
+                "BJ1PhJfeJAlUL4sL":{
+                    "name": "震颤感知（模糊）100尺 Tremorsense (Imprecise) 100 feet"
+                },
+                "IoAJluZoGb9mgLGv":{
+                    "name": "势不可挡 Inexorable",
+                    "description":"<p>当紫虫的回合结束时，从@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}、@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}状态中恢复。它对减少移动速度和@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态免疫，并且无视困难地形和高等困难地形。</p>"
+                },
+                "y0G6Hcirsc4uakIL":{
+                    "name": "摆脱 Shake It Off",
+                    "description":"<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 紫虫将要受到某种状态或不利效果影响（例如<em>@Compendium[pf2e.spells-srd.dN8QBNuTiaBHCKUe]{恶意变形术 Baleful Polymorph}</em>）。</p>\n<hr />\n<p><strong>效果</strong> 紫虫使触发此能力的效果无效。来自神器、神祇或类似的力量造成的效果无法用此能力避免。</p>"
+                },
+                "rGTmjeER3V1KY02w":{
+                    "name": "快速吞咽 Fast Swallow",
+                    "description":"<p><strong>触发</strong> 紫虫@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 紫虫使用活吞能力。</p>"
+                },
+                "crXV18abZr2DcEh8":{
+                    "name": "反刍 Regurgitate",
+                    "description":"<p>紫虫能将它吞下的生物或巨石猛烈地呕吐出来作为一次远程打击。此打击造成钝击伤害，数值取决于抛射物的体型：超小型[[/r {2d6+13}[bludgeoning]]]{2d6+13}, 小型[[/r {3d6+13}[bludgeoning]]]{3d6+13}, 中型[[/r {4d6+13}[bludgeoning]]]{4d6+13}, 大型[[/r {5d6+13}[bludgeoning]]]{5d6+13}, 和 超大型[[/r {6d6+13}[bludgeoning]]]{6d6+13}。被反刍的生物受到坠落伤害，高度取决于和目标的高度差或20尺，以两者中较大的为准。</p>\n<p>巨石在紫虫的胃中占据空间相当于同体型的生物。紫虫通常会在平时吞下几块巨石备用。紫虫可以使用一个单动作来吞咽新的巨石。</p>"
+                },
+                "8EY2qfk7YZdvckfJ":{
+                    "name": "掘洞者 Rock Tunneler",
+                    "description":"<p>紫虫能在坚硬的岩石中以20尺的速度掘进。如果它愿意的话，可以在行经路线上留下隧道，事实上紫虫通常就是这么做的。</p>"
+                },
+                "zEZW1atU8KQCSsNi":{
+                    "name": "连环击 Thrash",
+                    "description":"<p>紫虫能对触及范围内的所有生物进行一次打击。它可以最多进行一次牙咬打击、一次针刺打击和无数次虫体打击。每次攻击都计入紫虫的多重攻击减值，但是在此项行动的全部攻击动作都结束之后生效。</p>"
+                },
+                "rTDme0840mDZkokU":{
+                    "name": "活吞 Swallow Whole",
+                    "description":"<p>超大型，[[/r {3d6+9}[bludgeoning]]]{3d6+9钝击伤害}，破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                }
+            }
         },
         "Riding Dog": {
             "name": "骑乘犬 Riding Dog"
@@ -227,7 +306,39 @@
             "name": "蝰蛇 Viper"
         },
         "Stone Golem": {
-            "name": "石魔像 Stone Golem"
+            "name": "石魔像 Stone Golem",
+            "senses":"黑暗视觉",
+            "di":"魔法(见魔像抗魔)",
+            "dr":[
+                {
+                    "exceptions": "除精金",
+                    "type": "physical",
+                    "value": 10
+                }
+            ],
+            "publicNotes": "<p>石魔像是缓慢而坚固的构装体，通常由大理石或花岗岩雕刻而成。它们通常在静止时被当做艺术品，因此一些石魔像的制造者会雇佣雕刻大师来确保将这些构装体造成美丽的雕塑。较古老的石魔像可能会风化，表面有磨损或裂纹，或者断鼻断指，但这种风化并不会影响石像的功能。</p>\n<p>传说表明巨大的石魔像存在于某些古代遗迹中。这些巨大的石魔像比一般石魔像要强大的得多。它们至少有15级，体型不会少于超大型——大多数甚至为巨型。因为它们的体型如此之大，而它们所居住的建筑是如此破败，以至于这样的石魔像觉醒会导致周围建筑倒塌、古老的地基塌陷、天花板落下砸向敌人。除了这里列出的数据之外，这些巨大的石魔像攻击范围更广，一记横扫就可以同时击倒多个目标。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
+            "items":{
+                "eYD6EiiIYvny4Vq2":{
+                    "name": "魔像抗魔 Golem Antimagic",
+                    "description":"<p>被伤害：寒冷和水([[/r {5d10}]]{5d10伤害}, 区域效果或可持续伤害则为[[/r {2d8}]]{2d8伤害}；被治疗：酸液(区域效果[[/r {2d8}[healing]]]{2d8点生命值})；被减速：土</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                },
+                "Jg5WkDHWpi1JRQ9k":{
+                    "name": "法术弱点：解除石化 Vulnerable to Stone to Flesh",
+                    "description":"<p>对石魔像施放<em>@Compendium[pf2e.spells-srd.Pr1ruNTbzGn3H9w5]{解除石化 Stone to Flesh}</em>法术能使魔像抗魔和物理抗力无效化，持续1轮。<em>@Compendium[pf2e.spells-srd.znv4ECL7ZtuiagtA]{石化术 Flesh to Stone}</em>能立即逆转此效果。</p>"
+                },
+                "RlajqjwuSiKB8NGC":{
+                    "name": "附加麻痹 Impose Paralysis",
+                    "description":"<p><strong>触发</strong> 石魔像击中一个陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}的生物。</p>\n<hr />\n<p><strong>效果</strong> 该生物必须通过@Check[type:fortitude|dc:30]豁免，否则@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。</p>"
+                },
+                "bKmTRJI4PjS70sWZ":{
+                    "name": "势不可挡 Inexorable March",
+                    "description":"<p>石魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。</p>\n<p>一个生物可以尝试通过@Check[type:fortitude|dc:34|traits:damaging-effect]检定来阻挡其前进。如果豁免大成功，则阻挡的生物不受伤害；在其他情况下该生物受到石魔像的拳击伤害。</p>"
+                },
+                "11mRPoFSEt1nYAnE":{
+                    "name": "减速脉冲 Slowing Pulse",
+                    "description":"<p>@Template[type:emanation|distance:10]{10尺弥漫}范围内的每个生物必须通过@Check[type:fortitude|dc:30]检定，否则陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1分钟。</p>\n<p>魔像在[[/br 1d4 #Slowing Pulse Recharge]]{1d4轮}内无法再次使用减速脉冲。</p>"
+                }
+            }
         },
         "Young Silver Dragon": {
             "name": "青年银龙 Young Silver Dragon"
@@ -419,7 +530,30 @@
             "name": "猫族突袭者 Catfolk Pouncer"
         },
         "Cauthooj": {
-            "name": "迷音鸟 Cauthooj"
+            "name": "迷音鸟 Cauthooj",
+            "senses":"思维感知（模糊感官）60尺",
+            "languages":"(不能说任何语言)",
+            "publicNotes": "<p>这些巨大的、不会飞的鸟类虽然身体高长、步态滑稽，但其实出人意料的灵活。他们是独行的掠食者，用他们具有迷惑性的鸟鸣让猎物陷入疯狂，操纵他们互相攻击，这样它们就能尽情享用它们的遗骸了。</p>\n<p>一些学者将它们成为“人偶师鸟”，另一些人则称其为“尖叫伯劳”。迷音鸟为大多数聪明的类人生物所唾骂，部分原因是因为这些鸟更喜欢狩猎类人生物。当地人目击到迷音鸟之后通常会组织一个捕猎队，在它再次杀戮之前追踪他的行踪，猎人们通常会把耳朵塞满蜡，以免被它的叫声所影响。那些有幸从这种叫声中幸存下来的人表示，这种声音特别让人紧张不安，甚至没有什么声音比它更为可怕。</p>\n<p>虽然人们可能会认为迷音鸟是一种愚蠢的动物，但这些生物实际上比它们看起来要聪明的多。迷音鸟会在偏远的定居点外围跟踪孤独的旅行者，以让自己能饱餐一顿。这些有耐心的生物直到填饱肚子之前能一直埋伏很久。他们甚至能理解一些基本的木族语，尽管它们无法清晰地说话，但这不能阻止迷音鸟试图模仿它听到的声音，当它这么做的时候，它的野蛮的原始天性增强了这种行为，这让它拥有了能控制思维并造成混乱的能力，迷音鸟的智力让它足以理解自身这种特性，并乐在其中。</p>",
+            "items":{
+                "qe55DvvyEW3AC1KT":{
+                    "name": "思维感知（模糊感官）60尺"
+                },
+                "MF3wGJmHdgsg1PY3":{
+                    "name": "喙啄 Beak"
+                },
+                "LnCX5HAN8VUMv1f5":{
+                    "name": "跳跃闪避 Hop-Dodge",
+                    "description":"<p><strong>触发</strong> 迷音鸟是近战打击的目标，且与另一个同样位于该近战打击触及范围内的敌人相邻。</p>\n<hr />\n<p><strong>效果</strong> 迷音鸟敏捷地跳跃，使得触发此能力的近战打击的目标变成与迷音鸟相邻的敌人。迷音鸟以半速行走，并且此移动不触发任何反应动作。</p>"
+                },
+                "q1LhwW1syAxORXNt":{
+                    "name": "颤音打击 Staccato Strike",
+                    "description":"<p>迷音鸟通过微妙声调变化，可以指挥一个因为颤音之歌而@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}的生物进行一次打击。这参照一般陷入困惑的生物进行的打击，只是迷音鸟可以指定打击的目标。如果目标的触及范围内没有目标，或目标因为其他原因无法进行打击，则此能力无效。</p>"
+                },
+                "21tFYXEcsuyuh5GQ":{
+                    "name": "颤音之歌 Warbling Song",
+                    "description":"<p>迷音鸟发出一种奇怪的悲泣，导致附近的生物变得狂躁和失控。@Template[type:emanation|distance:120]{120尺弥散}范围内的所有生物都必须进行@Check[type:will|dc:32]豁免来抵抗该效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响且临时免疫该能力一分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>\n<p><strong>大失败</strong> 目标@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮并立即攻击目标自己（采用困惑状态时通常的攻击方式）。这次攻击并不能让目标因为受伤而尝试用纯骰检定来从混乱状态恢复。</p>"
+                }
+            }
         },
         "Cave Bear": {
             "name": "穴熊 Cave Bear"
@@ -452,7 +586,60 @@
             "name": "鸡蛇兽 Cockatrice"
         },
         "Crimson Worm": {
-            "name": "红虫 Crimson Worm"
+            "name": "红虫 Crimson Worm",
+            "hp":"火焰治疗",
+            "senses":"黑暗视觉, 震颤感知（模糊）100尺",
+            "publicNotes": "<p>红虫是最危险的洞穴蠕虫种类之一。除了比蓝虫更大之外，红虫还喜欢在火山地区挖掘洞穴。世代更迭，火山给红虫带来了与火元素位面的超自然联系。红虫在活火山的熔火核心里筑巢，就像在黑暗之地的最深处发现的那大片沸腾的岩浆地脉一样。在古文明、矮人先民以及火元素位面居民的一些传说中，红虫填满了居民点周围的熔岩护城河，这可能是有些事实依据的。但是在这之前，他们首先得有某种方法来控制这些“护城河蠕虫”并避免红虫先把他们自己的堡垒给挖穿了。</p>\n<p>红虫经常会出现在火山温泉等地热活动频繁的地表区域，但即便如此，它们还是喜欢用更多的时间来挖洞，无休止地寻找食物。在红虫的领地内的地表土地有相当显眼的特征——到处都堆积着它们挖洞时排出地表的越堆越高的土堆。</p>\n<hr />\n<p>洞穴蠕虫是超级巨大的食腐动物，它们钻到世界深处，吞食找到的任何东西。这些蠕虫以各自独特的颜色而得名，它们非常贪婪，且破坏力强大。不同颜色和能力的洞穴蠕虫潜伏在世界上更偏远的角落——比如传说中居住在巨大冰川或冰山中的白虫，和在早已被遗忘的废墟的墓葬中钻洞的灰虫。</p>",
+            "items":{
+                "HGrl3b1F23RjZkR7":{
+                    "name": "牙咬 Jaws"
+                },
+                "0fQVIqLvgnfSP4JM":{
+                    "name": "针刺 Stinger"
+                },
+                "yOxa8PKiBE6PbRBA":{
+                    "name": "虫体 Body"
+                },
+                "IyKWWIgBkLnO2AXB":{
+                    "name": "震颤感知（模糊）100尺 Tremorsense (Imprecise) 100 feet"
+                },
+                "FsFg8KtMHYPQyyIC":{
+                    "name": "火焰治疗 Fire Healing",
+                    "description":"<p>只要红虫接触到至少和它体型一样大的火焰或岩浆体，它就能获得@Compendium[pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速治疗20 Fast Healing 20}。当它被除自身之外的任何魔法火焰效果击中时，红虫会恢复相当于该效果造成火焰伤害的一半的生命值。</p>"
+                },
+                "tphsLfLbrYV16pth":{
+                    "name": "势不可挡 Inexorable",
+                    "description":"<p>当红虫的回合结束时，从@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}、@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}状态中恢复。它对减少移动速度和@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态免疫，并且无视困难地形和高等困难地形。</p>"
+                },
+                "Y5momV4CWpuw5vhk":{
+                    "name": "摆脱 Shake It Off",
+                    "description":"<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 红虫将要受到某种状态或不利效果影响（例如<em>@Compendium[pf2e.spells-srd.dN8QBNuTiaBHCKUe]{恶意变形术 Baleful Polymorph}</em>）。</p>\n<hr />\n<p><strong>效果</strong> 红虫使触发此能力的效果无效。来自神器、神祇或类似的力量造成的效果无法用此能力避免。</p>"
+                },
+                "hdZW9dGdp8kUzUjv":{
+                    "name": "吐息 Breath Weapon",
+                    "description":"<p>红虫进行吐息，对@Template[type:cone|distance:60]{60尺锥形}范围内的所有生物造成[[/r {18d6}[fire]]]{18d6火焰伤害}（@Check[type:reflex|dc:41|basic:true]豁免）。红虫在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息。</p>"
+                },
+                "t1G2FbWy88tYUk7w":{
+                    "name": "红虫毒液 Crimson Worm Venom",
+                    "description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:41]</p>\n<hr />\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}(1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮).</p>"
+                },
+                "fifv91vxtwlIpzXx":{
+                    "name": "快速吞咽 Fast Swallow",
+                    "description":"<p><strong>触发</strong> 红虫@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 红虫使用活吞能力。</p>"
+                },
+                "NBXY2jJ5QKUZlI60":{
+                    "name": "掘洞者 Rock Tunneler",
+                    "description":"<p> 红虫能在坚硬的岩石中以20尺的速度掘进。如果它愿意的话，可以在行经路线上留下隧道，事实上红虫通常就是这么做的。</p>"
+                },
+                "8VCoSCtEbUqhtmnI":{
+                    "name": "活吞 Swallow Whole",
+                    "description":"<p>超大型, [[/r {3d10+10}[bludgeoning] + {2d6}[fire]]]{3d10+10钝击+2d6火焰伤害}, 破裂36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "D1ZUrE1107HIW39r":{
+                    "name": "连环击 Thrash",
+                    "description":"<p>红虫能对触及范围内的所有生物进行一次打击。它可以最多进行一次牙咬打击、一次针刺打击和无数次虫体打击。每次攻击都计入红虫的多重攻击减值，但是在此项行动的全部攻击动作都结束之后生效。</p>"
+                }
+            }
         },
         "Crag Linnorm": {
             "name": "峭壁蛇龙 Crag Linnorm"
@@ -461,7 +648,33 @@
             "name": "黑暗娜迦 Dark Naga"
         },
         "Deadly Mantis": {
-            "name": "夺命螳螂 Deadly Mantis"
+            "name": "夺命螳螂 Deadly Mantis",
+            "senses":"黑暗视觉",
+            "publicNotes": "<p>这些巨大的螳螂在丛林深处或和史前森林里筑巢，在那里它们捕食和自己同样巨大的猎物。</p>\n<hr />\n<p>这些体型巨大的可怕昆虫是寂静无声的掠食者，前肢如闪电般敏捷，一咬就能把骨头啃断。</p>",
+            "items":{
+                "SDPanMrj394qVPdp":{
+                    "name": "虫颚 Mandibles"
+                },
+                "7WxioYo3ZgMSuL5O":{
+                    "name": "镰爪 Leg"
+                },
+                "rQVfc5bR7Xpe25cT":{
+                    "name": "抛掷 Fling",
+                    "description":"<p>夺命螳螂将被它@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物抛向空中，抛到距螳螂最多30尺高30尺远的地方（该生物正常遭受坠落伤害）。如果被抛掷的生物落在另一个生物身上，被砸中的生物将受到等量的钝击伤害，被砸中的生物可以尝试通过 @Check[type:reflex|dc:31|basic:true]检定豁免来躲避。</p>"
+                },
+                "vXxTQUxFEXV4Ldxm":{
+                    "name": "跳跃攫抓 Leaping Grab",
+                    "description":"<p>夺命螳螂能跳跃最多40尺高、20尺远的距离。在跳跃过程中任意时刻，它可以进行一次镰爪打击。如果命中，则自动@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}目标，并且带着目标移动到跳跃的最终落点。</p>"
+                },
+                "ZyTjl37PC8e0rtsy":{
+                    "name": "裂甲之颚 Rending Mandibles",
+                    "description":"<p> 夺命螳螂对被它@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物进行一次虫颚打击，如果打击命中，并且目标生物所穿的护甲硬度为12或更低，此护甲@Compendium[pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken}。此打击不会对已经破损的护甲造成更多伤害。</p>"
+                },
+                "CUZdx9N2AmVtEjB4":{
+                    "name": "突袭 Sudden Strike",
+                    "description":"<p>在战斗第一轮，尚未行动的敌人对夺命螳螂视为@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                }
+            }
         },
         "Deep Gnome Rockwarden": {
             "name": "地底侏儒岩卫 Deep Gnome Rockwarden"
@@ -656,7 +869,39 @@
             "name": "哥布林勇士 Goblin Warrior"
         },
         "Goliath Spider": {
-            "name": "巨硕蜘蛛 Goliath Spider"
+            "name": "巨硕蜘蛛 Goliath Spider",
+            "senses":"黑暗视觉, 蛛网感知",
+            "publicNotes": "<p>巨硕蜘蛛生活在丛林的最深处，在那里它们织出神殿那么大的网，捕食像河马那么大的猎物。</p>\n<hr />\n<p>很少有害虫能像声名狼藉的蜘蛛那样让人如此恐惧。</p>",
+            "items":{
+                "sJEzuYy6exvJPlpq":{
+                    "name": "牙咬 Fangs",
+                    "description":""
+                },
+                "gCMdnmRVTS96OQxR":{
+                    "name": "蛛网 Web",
+                    "description":""
+                },
+                "oXZ3YdyxyoVGRGJs":{
+                    "name": "蛛网感知 Web Sense",
+                    "description":"<p>巨硕蜘蛛可以通过@Compendium[pf2e.bestiary-ability-glossary-srd.j2wsK6IsW5yMW1jW]{震颤感知 Tremorsense}（模糊感官）来感知到生物触碰它蛛网时产生的振动。</p>"
+                },
+                "aAGnyUk4Vj6iSM7n":{
+                    "name": "饿蛛扑食 Spring Upon Prey",
+                    "description":"<p><strong>需求</strong> 尚未投掷先攻</p>\n<p><strong>触发</strong> 当猎蛛位于它的蛛网上时，一个生物触碰到蛛网</p>\n<hr />\n<p><strong>效果</strong> 猎蛛自动注意到该生物，并在投掷先攻前，可以在蛛网上进行行走、攀爬或下降动作。</p>"
+                },
+                "x1hzvAiCUjfrEaZO":{
+                    "name": "蛛网垂降 escend on a Web",
+                    "description":"<p>巨硕蜘蛛用网绳把自己吊在空中，可以垂直下降最多120尺。它可以挂在蛛网上，也可以从蛛网上坠落。它从蛛网上下降的距离不计入坠落伤害。</p>\n<p>如果一个生物成功击中蛛网（AC20，硬度5，20HP）时，可以砍断蜘蛛网，导致蜘蛛坠落。</p>"
+                },
+                "Be8ZCKKmNDNPgCM0":{
+                    "name": "巨硕蜘蛛毒 Goliath Spider Venom",
+                    "description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:30]</p>\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {2d6}[poison]]]{2d6毒素}和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {2d6}[poison]]]{2d6毒素}和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} (1轮)</p>\n<p><strong>阶段3</strong> @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，持续[[/br 2d4 #hours]]{2d4小时}</p>"
+                },
+                "Eu72dpTXiYJQD7Hm":{
+                    "name": "蛛网捆缚 Web Tether",
+                    "description":"<p>被巨硕蜘蛛蛛网打击命中的生物被@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，并且和巨硕蜘蛛拴在一起，无法拉开和蜘蛛的距离。</p>\n<p>巨硕蜘蛛一次只能拴住一个生物。@Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}或@Compendium[pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}蛛网的DC为30。蛛网可以被一次打击切断（AC 20，硬度5，HP 20），但这不能释放被束缚的生物。</p>"
+                }
+            }
         },
         "Gorilla": {
             "name": "大猩猩 Gorilla"
@@ -746,7 +991,43 @@
             "name": "隐形追踪者 Invisible Stalker"
         },
         "Iron Golem": {
-            "name": "铁魔像 Iron Golem"
+            "name": "铁魔像 Iron Golem",
+            "senses":"黑暗视觉",
+            "di":"魔法(见魔像抗魔)",
+            "dr":[
+                {
+                    "exceptions": "除精金",
+                    "type": "physical",
+                    "value": 15
+                }
+            ],
+            "publicNotes": "<p>传统上来说，铁魔像是精湛技艺的产物，它们会被打造为巨大盔甲或强大动物的外形。它们的铰链关节和坚固的装甲外壳都需要精密的制造工艺，并且还需要定期清洗和上油来确保它们不会生锈。只要不被多事的冒险者破坏的话，铁魔像可以在上千年中保持良好的状态，并被主人代代相传下去。除了难以置信的力量之外，铁魔像还拥有强大的毒气吐息，通常足以消灭整支队伍。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
+            "items":{
+                "fqwCiWMkfhbYojJI":{
+                    "name": "魔像抗魔 Golem Antimagic",
+                    "description":"<p>被伤害：酸液([[/r {6d10}]]{6d10伤害}，区域效果或可持续伤害[[/r {2d8}]]{2d8伤害})；被治疗：火焰 (区域效果[[/r {2d8}[healing]]]{2d8生命值})；被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                },
+                "aMNM0X0dVvVRdlZT":{
+                    "name": "法术弱点：中和毒性 Vulnerable to Neutralize Poison",
+                    "description":"<p>对铁魔像施放<em>@Compendium[pf2e.spells-srd.SUKaxVZW2TlM8lu0]{中和毒性 Neutralize Poison}</em>法术能使它的吐息无效化，持续1分钟。</p>"
+                },
+                "SJraLZmz7x1C04ki":{
+                    "name": "法术弱点：锈蚀魔法 Vulnerable to Rust",
+                    "description":"<p>魔法锈蚀效果，例如锈蚀怪的触须打击，能正常对铁魔像造成效果。</p>"
+                },
+                "HkUjt1e6CiwdfHoy":{
+                    "name": "吐息 Breath Weapon",
+                    "description":"<p>铁魔像以占据方格的一个角为圆心，对10尺半径范围喷出毒气，毒气存在1轮。任何呆在范围内的生物（或之后进入范围的生物）将暴露在铁魔像毒气中。铁魔像在[[/r 1d4 #rounds]]{1d4轮}内无法再次吐息。</p>"
+                },
+                "otWGnycqKoeQC7U9":{
+                    "name": "势不可挡 Inexorable March",
+                    "description":"<p>铁魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过@Check[type:fortitude|dc:37|traits:damaging-effect]检定来阻挡其前进。</p>\n<p>如果豁免大成功，则阻挡的生物不受伤害；在其他情况下该生物受到铁魔像的拳击伤害。</p>"
+                },
+                "RSzJjCjwpz8jIS3J":{
+                    "name": "铁魔像毒气 Iron Golem Poison",
+                    "description":"<p>此毒素造成的@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态值每小时减少1点。</p>\n<p><strong>豁免</strong> @Check[type:fortitude|dc:33]</p>\n<hr />\n<p><strong>最大持续 </strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {4d6}[poison]]]{4d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {8d6}[poison]]]{8d6毒素伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)</p>"
+                }
+            }
         },
         "Janni": {
             "name": "小巨灵 Janni"
@@ -1164,7 +1445,27 @@
             "name": "野猪 Boar"
         },
         "Boggard Warrior": {
-            "name": "沼蜍勇士 Boggard Warrior"
+            "name": "沼蜍勇士 Boggard Warrior",
+            "senses":"黑暗视觉",
+            "speed":"沼泽奔行",
+            "publicNotes": "<p>沼蜍勇士强化了单人作战的能力，而且他们更倾向于单打独斗，因为这样就没人和他争抢杀戮的机会了。他们以在追捕逃兵所具备的近乎达到超自然程度的专注力而闻名。</p>\n<hr />\n<p>沼蜍人是好斗的两栖类人生物，他们生活在沼泽、湿地甚至部分雨林中。沼蜍人的成长过程首先从卵孵化为蝌蚪，他们会激烈地争夺食物甚至会在这场斗争中吃掉自己的兄弟姐妹。在接下来的3年里，幸存下来的沼蜍人在学习狩猎、制造和战争的基础知识——一切在力量至上的社会中幸存所需要的理解的知识——的同时，长出双手、双腿和肺部。大多数沼蜍人社会的顶端阶级是身胖体肥的沼泽先知（swampseer），他们懂得如何使用邪恶的神术。</p>",
+            "items":{
+                "mw30E878JJp7tVVh":{
+                    "name": "蛙舌 Tongue"
+                },
+                "momzHh7zAZRC7Hob":{
+                    "name": "沼泽奔行 Swamp Stride",
+                    "description":"<p>沼蜍勇士能忽略由于沼泽地形特征产生的困难地形。</p>"
+                },
+                "up8Xcig2FrwgbFfb":{
+                    "name": "恐惧鸣叫 Terrifying Croak",
+                    "description":"<p>沼蜍勇士发出可怕的鸣叫声。@Template[type:emanation|distance:30]{30尺范围}内的任何非沼蜍人都会陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，除非他们能够成功通过@Check[type:will|dc:18]豁免。</p>\n<p>豁免中掷出大成功的生物会在1分钟内临时免疫该能力。</p>"
+                },
+                "MEAPfylvHHHbTqOf":{
+                    "name": "蛙舌攫抓 Tongue Grab",
+                    "description":"<p>若沼蜍勇士用蛙舌命中1个生物，那么该生物会被他@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。生物可以通过命中AC 15并造成至少3点挥砍伤害来切开蛙舌。</p>\n<p>尽管这么做不会对沼蜍勇士造成伤害，但它可以使沼蜍勇士无法再次使用蛙舌打击，直至沼蜍勇士通过1星期的休息才能够重新使用蛙舌。</p>"
+                }
+            }
         },
         "Brain Collector": {
             "name": "集脑怪 Brain Collector"
