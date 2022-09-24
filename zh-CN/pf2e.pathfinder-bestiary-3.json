@@ -14,9 +14,78 @@
         "speed":"system.attributes.speed.details",
         "languages":"system.traits.languages.custom",
         "stealth":"system.attributes.stealth",
-        "ac":"system.attributes.ac.details"
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
     },
     "entries": {
+        "Ancient Underworld Dragon":{
+            "name": "古老伏藏龙 Ancient Underworld Dragon",
+            "senses":"黑暗视觉，灵敏嗅觉（模糊感官）60尺，烟视",
+            "allSaves":"对抗魔法的豁免+1状态加值",
+            "publicNotes": "<p>伏藏龙体现着构造板块间的压力，热泉后的热力，和世界成型时点燃的火光。作为天生的炼金术师，他们与生俱来就了解反应物和催化剂。虽然有些龙在研究金属反应中魔法的影响，但大多数伏藏龙都专心囤积财宝。他们满世界寻找切割过的宝石和用珍贵金属制作的神器，这两者他们都视作大地馈赠的精华所在。</p>\n<p>伏藏龙看上去粗犷而锋利；他们的鳞片发着光仿若内部过热，他们的毛发摇曳着如同火舌。他们的目光后有着强烈的火焰燃烧，暗示着他们一个念头即可燃物，他们的呼吸让空气产生涟漪即是他们体内蕴含热量的最好证明。</p>\n<hr />\n<p>帝龙，得名于龙帝国（the Dragon Empires），是人形种族到来之前的天夏（Tian Xia）守护者，五种强大而对的立力量的具现。与其他真龙不同，帝龙深度参与着人类事务。其中一些依然维持神秘感，装作隐士，而另一些则保持高调，公开统治着某些势力。天夏的文化也相应地崇敬着龙，将龙描绘成神明，或则他们的先祖。但不是所有龙都被崇拜，因为这些生物大多数都行事邪恶。</p>\n<p><strong>龙之五行 Draconic Cycles</strong></p>\n<p>五种元素是帝龙魔力的基石，影响着他们与一切事物的关系，特别是与他们之中不同种类的关系。这些元素以两个循环相互联系。第一个循环中，每个元素两两相生：木生火，火生土，土生金，金生水，水生木。第二个循环中，则两两相克：木克土，土克水，水克火，火克金，金克木。</p>\n<p>每种帝龙都代表着一种元素，并拥有四种与相生相克有关的能力。比如，森龙——与木相通——生火，由水所生，克土，为金所克。</p>",
+            "items":{
+                "aT8anQIUKNtDMO8Y":{
+                    "name": "奥术内在法术 Arcane Innate Spells"
+                },
+                "rvv40f4QmFMFlF5L":{
+                    "name": "颚咬 Jaws",
+                    "description":"<p>若未为水所克，额外造成3d6火焰伤害。</p>"
+                },
+                "uuZFA4waTTmjGuf7":{
+                    "name": "爪抓 Claw"
+                },
+                "VW8DMx7itpBNELJa":{
+                    "name": "尾击 Tail"
+                },
+                "LupnDs04lfZkJ52r":{
+                    "name": "灵敏嗅觉（模糊感官） 60尺"
+                },
+                "h2v7VpyXTPjTzVX1":{
+                    "name": "烟视 Smoke Vision",
+                    "description":"<p>烟不会削弱伏藏龙的视觉；他们忽视由烟带来的@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+                },
+                "WMiSz943Mp34MPxS":{
+                    "name": "为水所克 Countered by Water",
+                    "description":"<p>如果伏藏龙受到了具有寒冷或水特征法术的伤害，他们体内的火属相魔法将被暂时抑制。</p>\n<p>直到他们下个回合结束，他们攻击骰承受-1环境惩罚，他们的颚咬攻击不再造成火焰伤害，失去闷热灵光。</p>\n<p>如果龙使用了吐息则限制结束。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.81XYZZ3H0GL8thdQ]{效果: 为水所克}</p>"
+                },
+                "ZFhHkksQnaNOI9Rk":{
+                    "name": "由木所生 Fed by Wood",
+                    "description":"<p>当伏藏龙被一个木制武器攻击或被带有植物特征的法术影响，龙内在的火焰本质将因获得燃料而旺盛。他们的吐息获得充能，龙的颚咬附带的火焰伤害增加一个伤害骰直到龙的下个回合结束。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.4FMFRlEC923CnLI7]{效果: 由木所生}</p>"
+                },
+                "Oo1ff4ERhvPS7Bhw":{
+                    "name": "气势凶猛 Frightful Presence",
+                    "description":"<p>@Template[type:emanation|distance:90]{90尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "cPRyXJDPZFJ7bHKq":{
+                    "name": "闷热 Sweltering Heat",
+                    "description":"<p>@Template[type:emanation|distance:10]{10尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>每个在灵光范围内结束回合的生物必须成功通过一次@Check[type:fortitude|dc:35]豁免，否则在灵光范围内会陷入@Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态。</p>"
+                },
+                "OshjLmAWIWTiJZoR":{
+                    "name": "精金爪 Adamantine Claws",
+                    "description":"<p>龙的爪子中灌入了精金。他们的爪抓打击忽略物体一半的硬度。</p>"
+                },
+                "YBLgLADsWKQWYwXJ":{
+                    "name": "吐息 Breath Weapon",
+                    "description":"<p>龙向60尺内射出一个对@Template[type:burst|distance:30]{30尺爆发}范围造成[[/r {14d6}[fire]]]{14d6火焰伤害}的火球（@Check[type:reflex|dc:39|basic:true]豁免）。豁免失败的生物还将受到@Localize[PF2E.PersistentDamage.Fire3d6.success]。</p>\n<p>龙不能在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内再次使用吐息。</p>"
+                },
+                "d8kaihBUHhOfdpSO":{
+                    "name": "盘绕狂暴 Coiling Frenzy",
+                    "description":"<p>龙以任意顺序进行一次爪抓和尾击打击，两次打击须选择相同目标。如果任意打击命中，龙自动@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}目标。</p>"
+                },
+                "bMrJDUmLpocEes2w":{
+                    "name": "龙之威势 Draconic Momentum",
+                    "description":"<p>当龙在一次打击中造成重击时，它立刻为吐息充能。</p>"
+                },
+                "atierys9eTCKzPyz":{
+                    "name": "高等紧勒 Greater Constrict",
+                    "description":"<p>[[/r {3d10+9}[bludgeoning]]]{3d10+9钝击}, @Check[type:fortitude|dc:37|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                },
+                "mFrFiI59EQmtyVk8":{
+                    "name": "焦土 Scorch Earth",
+                    "description":"<p>龙钻入地下，以掘地速度掘地移动，然后烧灼@Template[type:emanation|distance:60]{60尺弥漫}范围的土地。</p>\n<p>区域内地表上的生物受到[[/r {8d6}[fire]]]{8d6火焰伤害}（@Check[type:fortitude|dc:37|basic:true]豁免），大失败将陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}一分钟。</p>"
+                }
+            }
+        },
         "Terra-Cotta Garrison":{
             "name":"兵马俑卫队 Terra-Cotta Garrison",
             "hp":"部队防御",
