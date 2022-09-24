@@ -17,6 +17,25 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Tick Swarm":{
+			"name": "蜱虫群 Tick Swarm",
+			"senses":"黑暗视觉",
+			"publicNotes": "<p>成千上万只拳头大小的蜱虫聚集在一起，形成了一张由肿胀的昆虫组成的移动地毯——这是多么令人作呕和害怕的情景。</p>",
+			"items":{
+				"nKL6rZMmn2WdRk3g":{
+					"name": "附着 Cling",
+					"description":"<p><strong>触发</strong> 一个生物离开蜱虫群占据的空间</p>\n<hr />\n<p><strong>效果</strong> 蜱虫群的一部分附着在生物身上对其进行不断的噬咬，它自身受到[[/r {1d6}]]{1d6伤害}，对目标造成@Localize[PF2E.PersistentDamage.Bleed3d6.success]。当受害者浸没在水中时，结束持续性伤害的纯骰检定DC减少至5，受害者受到的任何区域伤害都能杀死这些附着的蜱虫。</p>"
+				},
+				"fVaZtygxTBUfppLk":{
+					"name": "虫群噬咬 Swarming Bites",
+					"description":"<p>在蜱虫群占据空间内的每个敌人都受到[[/r {3d6}[piercing]]]{3d6穿刺伤害}（@Check[type:reflex|dc:28|basic:true]豁免），外加附着，并暴露在蜱虫热疫的影响下。</p>"
+				},
+				"PQ87JPdxzlCptXn6":{
+					"name": "蜱虫热疫 Tick Fever",
+					"description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>潜伏期</strong> 1天</p>\n<p><strong>阶段1</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1天)</p>\n<p><strong>阶段2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1天)</p>"
+				}
+			}
+		},
 		"Thrasfyr":{
 			"name": "熊蛇怪 Thrasfyr",
 			"hp":"再生25（由强酸或寒冷失效）",
