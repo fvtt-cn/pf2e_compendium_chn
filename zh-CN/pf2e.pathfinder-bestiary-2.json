@@ -17,6 +17,68 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Thrasfyr":{
+			"name": "熊蛇怪 Thrasfyr",
+			"hp":"再生25（由强酸或寒冷失效）",
+			"allSaves":"对抗魔法时所有豁免+1状态加值",
+			"senses":"黑暗视觉, 识破隐形",
+			"dr":[
+				{
+					"exceptions": "除寒铁",
+					"type": "physical",
+					"value": 15
+				}
+			],
+			"publicNotes": "<p>熊蛇怪外表怪异却凶猛异常，他们形如长有六臂的熊，有着公牛一样的角，龙一样的鳞片，以及一条喷火蛇作为尾巴。每一只熊蛇怪被与其心智相连的活化锁链缠绕着。</p>",
+			"items":{
+				"m079lrhvpcahyNqy":{
+					"name": "原能内在法术 Primal Innate Spells"
+				},
+				"eaAeSDb88zeKI7ii":{
+					"name": "传送术(仅限自身和骑手) Teleport (Self and rider only)",
+					"description":"<p>你和目标会立即传送到射程内的任何位置，只要你能通过该地点到你起始地点的相对位置，以及其外观（或者典型特征）来精确定位该地点。关于该地点外观的错误的知识会令法术失败，但它也可能导致传送到非预想地点或者造成其他由GM决定的事故。传送术在距离很远时无法保证精确。目标会在距离目标地大约总旅行距离1%的地方出现，其偏移方向由GM决定。对于短途旅行，这种误差可以忽略，但是对于长距旅行这可能达到1英里。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 你和其他目标可以传送到1000英里内的任何地点。</p>\n<p><strong>升阶 (8环级)</strong> 你和其他目标可以传送到同一星球上的任何地点。如果你旅行超过1000英里，你只会偏移目标10英里。</p>\n<p><strong>升阶 (9环级)</strong> 你和其他目标可以传送到同一行星系中任何其他行星上的任意地点。若你对该地点的位置和外观有准确的知识，你会到达该星球上偏移目标100英里的位置。</p>\n<p><strong>升阶 (10环级)</strong> 如9环级版本，但是你和其他目标可以旅行到同一恒星系中的任何行星上。</p>"
+				},
+				"6vHpvXfI8ykMKIr4":{
+					"name": "凌空而行(常驻) Air Walk (Constant)",
+					"description":"<p>目标可以在空气中行走，如同在坚实地面上。它可以如此上升与下降，最大45度角。</p>"
+				},
+				"PbnYiMI8IGyrAIej":{
+					"name": "锁链 Chain"
+				},
+				"D7nU92x03rn3cnoU":{
+					"name": "啃咬 Jaws"
+				},
+				"W0OH5fsPmoPURYsD":{
+					"name": "爪抓 Claw"
+				},
+				"swUZOpPbIdXVMQ1X":{
+					"name": "角撞 Horn"
+				},
+				"sSkLpLlTDlkKIKAw":{
+					"name": "位面适应 Planar Acclimation",
+					"description":"<p>熊蛇怪总是将当前所处位面视作位于故乡位面。</p>"
+				},
+				"hwQlpkEec2QqnSxR":{
+					"name": "再生25（由强酸或寒冷失效）"
+				},
+				"AGDYcCgG4mkmvihe":{
+					"name": "吐息武器 Breath Weapon",
+					"description":"<p>熊蛇怪的蛇尾吐出一道@Template[type:cone|distance:50]{50尺锥形}的火焰，造成[[/r {10d12}[fire]]]{10d12火焰伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。</p>\n<p>它在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息武器。</p>"
+				},
+				"bMW69DQKTMLqLasp":{
+					"name": "骑手联结 Rider's Bond",
+					"description":"<p>熊蛇怪通过使用爪子接触来指定一个生物作为其骑手。熊蛇怪与骑手能够在同一位面内任意距离内使用心灵感应彼此交流，并且可以知晓彼此的当前状态，方位，之间的距离，和任何状态效果。</p>"
+				},
+				"sbPAeP8uZ3oiRj7q":{
+					"name": "锁链乱舞 Tangling Chains",
+					"description":"<p>熊蛇怪朝四面八方挥舞其锁链。@Template[type:emanation|distance:15]{15尺弥漫}范围内每个生物受到[[/r {18d6}[bludgeoning]]]{18d6钝击伤害}（@Check[type:reflex|dc:38|basic:true]豁免）；豁免失败的生物将陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}直到熊蛇怪下个回合开始。</p>\n<p>熊蛇怪在[[/br 1d4 #rounds]]{1d4轮}内不能再次使用锁链乱舞或进行锁链打击。</p>"
+				},
+				"3IExZ0tOTpB3Neuc":{
+					"name": "回旋狂暴 Whirling Frenzy",
+					"description":"<p>熊蛇怪进行一次啃咬打击，一次角撞打击，以及两次爪抓打击，每次针对不同目标。每次攻击都将累积熊蛇怪的多重攻击罚值，但只有在所有攻击完成后罚值才会增加。</p>"
+				}
+			}
+		},
 		"Sand Sentry":{
 			"name": "黄沙哨兵 Sand Sentry",
 			"senses":"黑暗视觉，震颤感知（模糊感官）60尺",
