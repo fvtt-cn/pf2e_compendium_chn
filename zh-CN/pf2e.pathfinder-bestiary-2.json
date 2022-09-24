@@ -17,6 +17,35 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Viper Vine":{
+			"name": "蝰蛇藤 Viper Vine",
+			"senses":"昏暗视觉，震颤感知（模糊感官）60尺",
+			"publicNotes": "<p>蝰蛇藤是一种贪婪的食肉植物，在它从浓密的、多叶的蛇形藤蔓中有一朵巨大的花从中间伸出来。当这种植物通过它敏感的、浅埋的根系察觉到合适的猎物靠近时，它会像一条激动的蛇一样弓起身子，展开色彩鲜艳的花朵，释放出一团使头脑麻木的花粉。一直以来都有某种说法，说蝰蛇藤通过一种催眠性的摇摆来影响猎物，但实际上这种效果是由肉眼难以察觉的花粉所导致的。</p>\n<p>由于蝰蛇藤通过吃生物而不是通过吸收水分和土壤获得营养，它已经发展出了基本的运动能力，可以用触手状的根拖着自己在地面上行走。它甚至有基本的感官，这使得它不仅能辨别猎物的区别，做出有限的战术决策，还能避开特别大或看起来特别危险的动物。</p>\n<p>蝰蛇藤的猎场周围经常散落着被部分吞噬的受害者的遗体。野生动物腐烂的尸体、命运多舛的冒险者、甚至在附近的巨人都很常见，尸体上还零星存有一些偶然留下的宝藏。蝰蛇很少会把注意力放在它之前杀死的动物的尸体上，而更喜欢猎取新鲜的肉。</p>",
+			"items":{
+				"3jVmH3McNsX8B0Od":{
+					"name": "啃咬 Jaws"
+				},
+				"frIks1GEvtVQAPPw":{
+					"name": "藤蔓 Vine"
+				},
+				"S7QInhdroOaf7k84":{
+					"name":"震颤感知 Tremorsense",
+					"description":"@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]"
+				},
+				"cDS4azJaDaRZITrQ":{
+					"name": "寒冷弱点 Cold Vulnerability",
+					"description":"<p>当暴露于寒冷效果时，蝰蛇藤会变得行动迟缓，陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 1d4 #rounds]]{1d4轮}。</p>"
+				},
+				"UcQu3REAJGDNFfE0":{
+					"name": "迷人花粉 Captivating Pollen",
+					"description":"<p>蝰蛇藤向@Template[type:emanation|distance:60]{60尺弥漫}范围播撒不可见的花粉，漂浮在四周的空气中，持续5轮，只有中等或更强的风力才能吹散。进入范围或在范围内开始回合的每个生物都必须通过@Check[type:will|dc:33]豁免，否则被迷住。</p>\n<p>蝰蛇藤在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用迷人花粉。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响，并且在24小时内对迷人花粉临时免疫。</p>\n<p><strong>成功</strong> 生物陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。/p>\n<p><strong>失败</strong> 生物陷入@Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并且它必须花费每一个动作去靠近蝰蛇藤，并且在这个过程中避开显而易见的危险。如果被迷住的生物和蝰蛇藤相邻，它会站在原地，并且不会做出任何动作。如果它在回合结束时不再位于花粉范围内，它的迷魂状态会终止。</p>\n<p><strong>大失败</strong> 类似失败，但生物还会陷入24小时的@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。</p>"
+				},
+				"MWff0Ro0CLotg930":{
+					"name": "紧勒 Constrict",
+					"description":"<p>[[/r {3d8+8}[bludgeoning]]]{3d8+8钝击伤害}, @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				}
+			}
+		},
 		"Tick Swarm":{
 			"name": "蜱虫群 Tick Swarm",
 			"senses":"黑暗视觉",
