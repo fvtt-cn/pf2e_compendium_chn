@@ -17,6 +17,39 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Duneshaker Solifugid":{
+			"name": "撼沙避日蛛 Duneshaker Solifugid",
+			"senses":"黑暗视觉, 震颤感知（模糊感官）30尺",
+			"publicNotes": "<p>作为体型最大的避日蛛，撼沙避日蛛体型是如此巨大，它们的每次移动都能让周围的地面震动。它们可以捕食猛犸象，甚至更大的猎物。</p>",
+			"items":{
+				"coCCw9uVbyTHhKfl":{
+					"name": "啃咬 Jaws"
+				},
+				"Vm3TYdn6BMYCQ0MR":{
+					"name": "爪抓 Claw"
+				},
+				"5QMBo1Vy2JZTTsNV":{
+					"name": "震颤感知 Tremorsense",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+				},
+				"xKGmyTmllHIjiYO0":{
+					"name": "撼地者 Earth Shaker",
+					"description":"<p>每一回合，当撼沙避日蛛第一次进行移动动作，只要它在移动过程中和1个体型不大于大型的生物相邻，该生物就必须通@Check[type:reflex|dc:39]豁免，否则会陷入@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"qwrA1CcDM9QaJlc5":{
+					"name": "猛扑 Pounce",
+					"description":"<p>撼沙避日蛛行走，然后在移动结束后进行1次打击。如果撼沙避日蛛在开始此动作前处于@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，它会一直保持藏匿直到该次打击结束。</p>"
+				},
+				"KkNlymsNYCYGKgtS":{
+					"name": "撕裂 Rend",
+					"description":"<p>爪抓</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+				},
+				"dUfRUEqARe3yHUZM":{
+					"name": "毒液喷雾 Venom Spray",
+					"description":"<p>撼沙避日蛛喷出一道@Template[type:cone|distance:30]{30尺锥形}范围的毒雾。此范围内的每个生物都会受到[[/r {10d6}[poison]]]{10d6毒素伤害}伤害（@Check[type:fortitude|dc:39|basic:true]豁免）。豁免失败的生物还会@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}[[/br 1d6 #rounds]]{1d6轮}（大失败则永久目盲）。</p>\n<p>撼沙避日蛛在[[/r 1d4 #rounds]]{1d4轮}内无法再次使用毒液喷雾能力。</p>"
+				}
+			}
+		},
 		"Catoblepas":{
 			"name": "卡托布莱帕斯 Catoblepas",
 			"senses":"黑暗视觉",
