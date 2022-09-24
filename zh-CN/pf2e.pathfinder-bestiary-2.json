@@ -17,6 +17,110 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Radiant Warden":{
+			"name": "辐光守卫 Radiant Warden",
+			"senses":"黑暗视觉",
+			"languages":"任意一种古代语言",
+			"dr":[
+				{
+					"label": "Mental",
+					"type": "mental",
+					"value": "15"
+				},
+				{
+					"exceptions": "除精金",
+					"type": "physical",
+					"value": 15
+				}
+			],
+			"publicNotes": "<p>神秘而奇异的辐光守卫是数千年前建造的，用来保护天文台和学者们免受被称为黑色支配者（Dominion of the Black）的外星人入侵。随着时间的推移，它们的守护职责已经开展到更大的领域，包括监视任何时间和空间法则遭到削弱的区域，特别是那些连接星球、位面、空间之间的传送门和永久性通道附近的地区。</p>\n<p>它们得名于组成他们身体的同心圆环所具有的辐光特性，以及在攻击时迸发出的炫彩光辉。辐光守卫肩负着它们的职责，一心一意地保卫着基地不受入侵。</p>",
+			"items":{
+				"cjXnGrEMkDDki8sC":{
+					"name": "异能内在法术 Occult Innate Spells"
+				},
+				"aTbUZmqX3wxWV8hR":{
+					"name": "次元门(随意施法) Dimension Door (At will)",
+					"description":"<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+				},
+				"iRmxw9CTYdvk3WOX":{
+					"name": "守门灵光 Gatekeeper Aura",
+					"description":"<p> 60尺。</p>\n<p>如果1个生物在灵光范围内使用传送（teleportation）能力，或通过传送能力进入灵光范围内，则必须通过@Check[type:will|dc:38]检定，否则陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，并且他的目的地会被辐光守卫更改为灵光弥散范围内的任意地点。一旦豁免成功，目标能正常抵达目的地，但依旧陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>"
+				},
+				"S31hZB9EKGtsEZ7B":{
+					"name": "星象仪 Orrery",
+					"description":"<p>直到它行动之前，辐光守卫能让自己看起来像一座星象仪（或类似的大型机械装置，例如天文望远镜）。在伪装成此类装置的情况下，它的欺骗检定结果和DC自动取53。</p>"
+				},
+				"xOfT1xQ4weGRsYHu":{
+					"name": "辐光爆发 Radiant Blast",
+					"description":"<p>辐光守卫对@Template[type:cone|distance:50]{50尺锥形}范围释放一道耀眼的能量波，造成[[/r {10d12}[force]]]{10d12力场伤害}（@Check[type:reflex|dc:38|basic:true]豁免）。辐光守卫在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用辐光爆发。</p>"
+				},
+				"vu4nBmfeMF19jeah":{
+					"name": "辐光闪耀 Radiant Blow",
+					"description":"<p> 如果1个生物被辐光守卫的锤击打击命中，一股辐光能量会试图将该生物锚定在原地。生物必须尝试一次@Check[type:will|dc:38]检定；如果失败，目标在1分钟之内无法使用具有传送特征的效果；如果大失败，目标还会陷入永久@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}。</p>"
+				},
+				"4s8ELNWXmsGfFB7V":{
+					"name": "天文学识"
+				}
+			}
+		},
+		"Leydroth":{
+			"name": "莱卓斯 Leydroth",
+			"ac":"对抗非魔法时36",
+			"senses":"黑暗视觉, 魔力视界(模糊感官)60尺",
+			"allSaves":"对抗魔法效果全豁免+2状态加值",
+			"dr":[
+				{
+					"exceptions": "除了非魔法",
+					"type": "all",
+					"value": 15
+				}
+			],
+			"publicNotes": "<p>在远古时代，一个由原始主义者的阴谋集团用超自然的力量和对魔法本身的仇恨灌注制作了魔兽的混合体，希望获得一种强大的武器来对抗奥术施法者。成果出乎意料，第一批莱卓斯获得自由，扑向他们的创造者。更糟糕的是，莱卓斯是纯系繁殖，而这些隐居的掠食者早就比它们的原始创造者长寿了。</p>\n<p>莱卓斯看起来像变形的猿类猫科动物，后脑勺长出许多分支的角。它们肌肉发达的四肢末端是发光的爪子。</p>",
+			"items":{
+				"ULCc7i4GlRFlcgmM":{
+					"name": "原能内在法术 Primal Innate Spells"
+				},
+				"BNtTt4rbMDmj6cYA":{
+					"name": "解除魔法(随意施法) Dispel Magic (At will)",
+					"description":"<p>你干扰法术或者效果中的魔法力量。尝试一次反制检定，对抗目标。如果你成功对抗一个法术效果，你将其反制。如果你成功对抗一个魔法物品，该物品成为该类型的普通物品，持续10分钟。这不会改变物体的非魔法性质。如果目标是一件神器或者类似的物品，你自动失败。</p>"
+				},
+				"gVLqh4wDw9v6njkz":{
+					"name": "啃咬 Jaws"
+				},
+				"xnaTB4eWK8MokhN6":{
+					"name": "爪击 Claw"
+				},
+				"zJyMYGQVmegoEJJR":{
+					"name": "角挥 Horn Sweep"
+				},
+				"OlwLivQfLQIh0ut7":{
+					"name": "魔力感知 Magic Sense",
+					"description":"<p>莱卓斯能够发现60尺内所有魔法根源的效果，包括它们的具体根源和学派，这是一种模糊感官。</p>"
+				},
+				"JxE1ccJO8ctrpivc":{
+					"name": "对抗魔法效果全豁免+2状态加值"
+				},
+				"G7P9My2HYy017m1O":{
+					"name": "对抗非魔法时AC36"
+				},
+				"fKqimVsLOPsE2xN0":{
+					"name": "威胁施法 Menace to Magic",
+					"description":"<p><strong>触发</strong> 一个60尺内的生物进行施法行动</p>\n<hr />\n<p><strong>效果</strong> 莱卓斯尝试一次威吓检定来反制触发法术。</p>"
+				},
+				"Ixt0Bpsg2FgwTGiy":{
+					"name": "除法咆哮 Dispelling Roar",
+					"description":"<p>莱卓斯发出兽性咆哮，在@Template[type:emanation|distance:30]{30尺弥漫}范围内不断回响。它进行一次威吓检定，造成@Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}效果，对抗范围内每个生物的意志DC。</p>\n<p>它还能用此掷骰结果造成<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>的效果，针对反制范围内的每个法术或魔法效应，或者范围内每个生物身上的一件道具或魔法的效应。</p>\n<p>莱卓斯在[[/br 1d4 #rounds]]{1d4轮}内无法再使用除法咆哮。</p>"
+				},
+				"Q3683RHwk5skFzWi":{
+					"name": "除法打击 Dispelling Strike",
+					"description":"<p><strong>频率</strong> 每轮一次</p>\n<p><strong>触发</strong> 莱卓斯的打击击中一个生物、物品或法术效果</p>\n<hr />\n<p><strong>效果</strong> 莱卓斯对被击中生物身上的一个效果施展它的内在法术<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>。</p>"
+				},
+				"j4OHhvOuFnXfbDjB":{
+					"name": "反射法术 Spell Feedback",
+					"description":"<p>莱卓斯每次反制一个法术或道具，法术的施展者或持有道具的生物受到[[/r {8d6}[mental]]]{8d6心灵伤害}（@Check[type:will|dc:38|basic:true]豁免）。</p>"
+				}
+			}
+		},
 		"Duneshaker Solifugid":{
 			"name": "撼沙避日蛛 Duneshaker Solifugid",
 			"senses":"黑暗视觉, 震颤感知（模糊感官）30尺",
