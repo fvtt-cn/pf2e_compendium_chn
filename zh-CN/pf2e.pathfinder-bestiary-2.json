@@ -17,6 +17,50 @@
 		"di":"system.traits.di.custom"
 	},
 	"entries": {
+		"Cairn Linnorm":{
+			"name": "石冢蛇龙 Cairn Linnorm",
+			"hp":"再生15（寒铁使其失效）",
+			"allSaves":"对抗魔法时所有豁免+1状态加值",
+			"senses":"黑暗视觉，60尺灵敏嗅觉（模糊），真视术",
+			"publicNotes": "<p>即便以蛇龙的标准来说，石冢蛇龙也是让人感到不安的存在。他们在古代的坟场、公墓以及经历过残酷杀戮的大型战场上安家。有人指出石冢蛇龙以蹒跚的死灵为食，从而为生灵们服务，但这些野兽其实并不挑食，而且乐于吞下任何生物——无论他们是否还在喘气。</p>\n<p>在一些传说中，石冢蛇龙不会——或者不能——在未经死者后代同意（或者在死者已经被唤起的时候，则要经过这些亡灵本人的同意）的情况下进入坟墓。同样，一旦石冢蛇龙进入到墓穴之中，也无法在未经许的情况下离开。这些传说是真是假谁也说不清；尽管如此，关于石冢蛇龙在左近徘徊的传闻依旧足够拦住那些最为鲁莽的盗墓人，使其甚至不敢对着墓室或陵寝多瞧一眼。</p>",
+			"items":{
+				"IxVJURBO9NY3Og9k":{
+					"name": "原能内在法术 Primal Innate Spells"
+				},
+				"bXd6K0aIwu8oNq40":{
+					"name": "行动自如(常驻) Freedom of Movement (Constant)",
+					"description":"<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+				},
+				"anKjfgYsttUshhxM":{
+					"name": "真视术(常驻) True Seeing (Constant)",
+					"description":"<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"U4uu4gkB12yKgjWl":{
+					"name": "啃咬 Jaws"
+				},
+				"SIJWWzmQ2ZLmATdy":{
+					"name": "爪抓 Claw"
+				},
+				"SQM0OqkayL2Oywmm":{
+					"name": "尾扫 Tail"
+				},
+				"mUjeve67uKUXgiEz":{
+					"name": "再生15（寒铁使其失效）"
+				},
+				"atrOWDXVF87vS3KI":{
+					"name": "扭杖诅咒 Curse of the Crooked Cane",
+					"description":"<p>当有生物杀死石冢蛇龙时，他必须成功通过@Check[type:will|dc:44]豁免，失败则会永久陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。此外，受害者的衰老速率加快，每日衰老1岁，若无法尽快处理诅咒，则会最终死于衰老。</p>"
+				},
+				"7D3xnmgdDZGumRA4":{
+					"name": "喷吐武器 Breath Weapon",
+					"description":"<p>石冢蛇龙释出@Template[type:cone|distance:60]{60尺锥形}区域的酸液——负能量溶于这些液体之中，这会对区域内的生物造成[[/r {19d6}[acid]]]{19d6酸液伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。这些酸液还会让受影响的生物生命衰竭。在蛇龙的下个回合开始时，每个反射豁免失败的生物必须成功通过@Check[type:fortitude|dc:40|traits:damaging-effect]豁免，失败则会陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败则为@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}）。</p>\n<p>石冢蛇龙在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>"
+				},
+				"8yVRt0M6F9WbgdWV":{
+					"name": "石冢蛇龙毒 Cairn Linnorm Venom",
+					"description":"<p><strong>豁免检定</strong> @Check[type:fortitude|dc:41]</p>\n<p><strong>最大持续</strong> 10轮</p>\n<p><strong>阶段1</strong> [[/r {6d6}[acid]]]{6d6酸液伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {8d6}[acid]]]{8d6酸液伤害}和@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>"
+				}
+			}
+		},
 		"Black Scorpion":{
 			"name": "黑蝎 Black Scorpion",
 			"senses":"黑暗视觉, 震颤感知（模糊感官）90尺",
