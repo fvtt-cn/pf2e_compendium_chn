@@ -14,9 +14,186 @@
         "speed":"system.attributes.speed.details",
         "languages":"system.traits.languages.custom",
         "stealth":"system.attributes.stealth",
-        "ac":"system.attributes.ac.details"
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
     },
     "entries": {
+        "Mobogo":{
+            "name": "沼原魔蟾 Mobogo",
+            "hp":"再生30（被酸液、寒冷或火焰失效)",
+            "speed":"沼泽阔步",
+            "senses":"黑暗视觉",
+            "languages":"动物交谈",
+            "publicNotes": "<p>沼原魔蟾是一种巨大的、居住在沼泽中的怪物，它集巨大蟾蜍和邪恶龙的最坏的特点于一身。懒惰、残忍、贪婪，这些可恶的生物在最古老、最原始的沼泽中筑巢。以这些地方为家的沼蜍人崇拜沼原魔蟾，把他们当做活着的半神，定期带来食物和贵重的祭品，以免自己成为沼原魔蟾永远填不满的胃口的下一个牺牲品。</p>",
+            "items":{
+                "pnpGNDrmV8CyjhSv":{
+                    "name": "原能内在法术 Primal Innate Spells"
+                },
+                "y4UpuUDROj0C4IwL":{
+                    "name": "仪式 Rituals"
+                },
+                "TyNwnoKUhyGas8Wo":{
+                    "name": "造水术(随意施法) Create Water (At Will)",
+                    "description":"<p>你将手捧起，水从中涌出。你创造2加仑的水。如果没有人饮用它，水会在1天后蒸发。</p>"
+                },
+                "iOzRMfJKn0e6Jy4z":{
+                    "name": "音鸣爆(随意施法) Sound Burst (At Will)",
+                    "description":"<p>刺耳的噪音迸裂而出，造成2d10音波伤害。每个生物必须尝试一次强韧豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物承受一半伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害，并且 @Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened} 1轮。</p>\n<p><strong>大失败</strong> 该生物承受双倍伤害，获得耳聋1分钟，并且 @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d10。</p>"
+                },
+                "nduFKdMpY2qkjpPY":{
+                    "name": "行踪无迹(常驻) Pass Without Trace (Constant)",
+                    "description":"<p>你令留下的痕迹模糊不清，并令其他人追踪你非常困难。追踪（Track）你的检定DC获得+4状态加值，或者等于你的法术DC，取较高DC。你同时只会从一个行踪无迹中受益。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 该持续时间增加到8小时。</p>\n<p><strong>升阶 (4环级)</strong> 该持续时间增加到8小时。该法术射程为20尺，并且具有20尺弥漫区域，影响该区域中至多10个由你选择的生物。</p>"
+                },
+                "3XxIUxIzapyhAqSl":{
+                    "name": "动物交谈(常驻) Speak with Animals (Constant)",
+                    "description":"<p>你可以对动物提出问题，从动物获得回答，以对动物及使用交涉（Diplomacy）技能。该法术不会令动物比正常更为友好。聪明的动物喜欢简要直说或者避而不谈，不那么聪明的则通常会做出傻瓜式的回复。</p>"
+                },
+                "jMQ5yo71IDbzIoiV":{
+                    "name": "啃咬 Jaws"
+                },
+                "SgXWjRi0fOvCndJM":{
+                    "name": "蛙舌 Tongue"
+                },
+                "cXcE5HUwD2KD7fgp":{
+                    "name": "再生30（被酸液、寒冷或火焰失效）"
+                },
+                "YQs3tTvZeC9rNSZB":{
+                    "name": "沼泽之歌 Song of the Swamp",
+                    "description":"<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p><strong>效果</strong> 沼原魔蟾发出响亮的蛙鸣。50尺内所有沼蜍人和沼原魔蟾在伤害骰、对抗恐惧效果的豁免检定上获得+2状态加值，持续1轮。范围内的其他生物必须尝试@Check[type:will|dc:27]豁免。</p>\n<p><strong>成功</strong> 生物不受影响，并且临时免疫24小时。</p>\n<p><strong>失败</strong> 生物陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 1d4 #rounds]]{1d4轮}。</p>\n<p><strong>大失败</strong> 生物陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，持续[[/br 1d4 #rounds]]{1d4轮}。</p>"
+                },
+                "Ad7v2ldIjRYpmP6V":{
+                    "name": "活吞 Swallow Whole",
+                    "description":"<p>大型, [[/r {2d12+6}[bludgeoning]]]{2d12+6钝击伤害}, 破裂19</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "2BRmODyR3yH6ev3Q":{
+                    "name": "沼泽阔步 Swamp Stride",
+                    "description":"<p>沼原魔蟾无视沼泽地形特征造成的困难地形。</p>"
+                },
+                "xPc5xxHX62bKWgkk":{
+                    "name": "蛙舌攫抓 Tongue Grab",
+                    "description":"<p>若沼原魔蟾用蛙舌命中1个生物，那么该生物会被@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的擒抱不同，该生物不会陷入禁足，但是也无法移动至沼原魔蟾的蛙舌触及范围之外。</p>\n<p>生物可以通过命中AC 27并造成至少10点挥砍伤害来切断蛙舌。尽管这么做不会对沼蜍斥候造成伤害，但它可以使沼原魔蟾无法再次使用蛙舌打击，直至沼原魔蟾在1轮后重新长出蛙舌。</p>\n<p>沼原魔蟾可以在不解除擒抱的前提下移动，只要被擒抱的生物位于它蛙舌的触及范围内。</p>"
+                },
+                "phtWMfKuIsMCi5cE":{
+                    "name": "蛙舌移位 Tongue Reposition",
+                    "description":"<p>沼原魔蟾尝试移动被它蛙舌攫抓的一个生物。沼原魔蟾投掷一次运动检定，对抗目标的强韧DC。</p>\n<p>如果成功，沼原魔蟾可以将生物拽至蛙舌触及范围内的任一空间内。如果它愿意的话，可以将被舌头擒抱的生物改为用它的嘴来擒抱。</p>"
+                }
+            }
+        },
+        "Dramofir":{
+            "name": "织梦妖 Dramofir",
+            "senses":"高等黑暗视觉",
+            "languages":"心灵感应100尺,巧言术",
+            "publicNotes": "<p>织梦妖这种生物拥有难以理解的意图和不可思议的力量，它们来自梦园(Dreamlands)，在多元宇宙中蹒跚前行，寻找梦境融入他们宽大的长袍。在主物质位面，很少有人敢轻视织梦妖；人们尊重它们，满心希望它们带走选定受害者的梦境就立刻离开。大部分时候，事情正如人们所愿。然而，时不时，在吸取某人梦境时，织梦妖会在毫无理由的情况下毫无预警地杀害它们的受害者。</p>",
+            "items":{
+                "Hj7vX0JdYOvuiOk2":{
+                    "name": "异能内在法术 Occult Innate Spells"
+                },
+                "ZVB4BE6xf6rF4Gl7":{
+                    "name": "巧言术(常驻) Tongues (Constant)",
+                    "description":"<p>无论什么语言，目标都可以理解其所有的词语，并且向其他生物用该语言交流。当处于一群各异的生物中时，每次目标将要说话，他可以选择一个生物，并使用一种该生物理解的语言来讲述，即使该目标不知道这语言具体是什么。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 持续时间为8小时。</p>"
+                },
+                "DVNHPkNXh0og7150":{
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description":"<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "VdO5uUx6bNJDvhK4":{
+                    "name": "梦魇术 Nightmare",
+                    "description":"<p>你向目标送去一段恼人的噩梦。在目标下一次入睡时，它必须尝试一次意志豁免。如果你知道目标的名字但是从未遇见过它，目标在意志豁免上获得+4环境加值。</p>\n<hr />\n<p><strong>大成功</strong> 目标不承受任何负面效果，并暂时免疫1星期。</p>\n<p><strong>成功</strong> 目标经历了噩梦，但不会承受除了糟糕回忆以外的负面效果。</p>\n<p><strong>失败</strong> 目标经历噩梦，并且在醒来时 @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}。</p>\n<p><strong>大失败</strong> 目标经历噩梦，醒来时疲乏，并且获得 @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} 直到不再疲乏。</p>"
+                },
+                "bqDyC6IKtXktariv":{
+                    "name": "针 Needle"
+                },
+                "zFOxLexJnjqhpWy0":{
+                    "name": "针 Needle"
+                },
+                "PB6GFQeZfrHdNRmj":{
+                    "name": "心灵感应100尺"
+                },
+                "ENpP2o2H3ia9c6NJ":{
+                    "name": "超现实解剖学 Surreal Anatomy",
+                    "description":"<p>织梦妖对精准伤害和重击额外伤害拥有10点抗性。若抗性值高于额外伤害值，织梦妖将额外伤害减至0，但这不减少打击的正常伤害。</p>"
+                },
+                "BskkanKxSINfDBr9":{
+                    "name": "苦乐交织的梦 Bittersweet Dreams",
+                    "description":"<p>织梦妖挥动它们的长袍，将长袍中的梦栩栩如生地展现在观众眼前。@Template[type:emanation|distance:30]{30尺弥漫}内的每个生物都必须尝试@Check[type:will|dc:34]豁免，否则将被厌倦支配。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响，且对苦乐交织的梦临时免疫24小时。</p>\n<p><strong>成功</strong> 生物在攻击、豁免、技能检定上获得-1状态减值，且生物身上的情绪效果被压制，持续1轮。</p>\n<p><strong>失败</strong> 如同成功，但生物还获得@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 1d4 #Duration Bittersweet Dreams]]{1d4轮}。</p>\n<p><strong>大失败</strong> 如同成功，但生物还获得@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，状态减值为-2，持续1分钟。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.4FginnDcOt4wfedf]{效果: 苦乐交织的梦}</p>"
+                },
+                "LtMnRFGdEZ9u0QFh":{
+                    "name": "采梦 Pluck Dream",
+                    "description":"<p><strong>需求</strong> 织梦妖与一个@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或睡眠中的生物邻接。</p>\n<hr />\n<p><strong>效果</strong> 织梦妖舔了舔这个生物的前额，将手放在舔舐过的地方，吸出这个生物的梦境融入长袍。</p>\n<p>如果目标受到任何改变其梦境的心灵效果的影响，例如@Compendium[pf2e.pathfinder-bestiary-2.Y9SDbANT1DWI1DKU]{活化梦境 Animate Dream's}的无尽噩梦诅咒或<em>@Compendium[pf2e.spells-srd.Uqj344bezBq3ESdq]{梦魇术 Nightmare}</em>法术，则织梦妖会尝试反制该效果（反制调整值[[/r 1d20+26 #Counteract]]{+26}）。否则，织梦妖会从该生物身上吸走一个美梦，而目标必须尝试一次@Check[type:will|dc:36]豁免。</p>\n<hr />\n<p><strong>成功</strong> 生物不受影响。</p>\n<p><strong>失败</strong> 生物陷入@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，直到完成一次完整休息。</p>\n<p><strong>大失败</strong> 如同失败，但生物陷入@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，且织梦妖对生物施放6环法术<em>@Compendium[pf2e.spells-srd.FhOaQDTSnsY7tiam]{修改记忆 Modify Memory}</em>。</p>"
+                },
+                "8ZmjmY8SXUuq9HVi":{
+                    "name": "梦园学识"
+                }
+            }
+        },
+        "Ancient Underworld Dragon":{
+            "name": "古老伏藏龙 Ancient Underworld Dragon",
+            "senses":"黑暗视觉，灵敏嗅觉（模糊感官）60尺，烟视",
+            "allSaves":"对抗魔法的豁免+1状态加值",
+            "publicNotes": "<p>伏藏龙体现着构造板块间的压力，热泉后的热力，和世界成型时点燃的火光。作为天生的炼金术师，他们与生俱来就了解反应物和催化剂。虽然有些龙在研究金属反应中魔法的影响，但大多数伏藏龙都专心囤积财宝。他们满世界寻找切割过的宝石和用珍贵金属制作的神器，这两者他们都视作大地馈赠的精华所在。</p>\n<p>伏藏龙看上去粗犷而锋利；他们的鳞片发着光仿若内部过热，他们的毛发摇曳着如同火舌。他们的目光后有着强烈的火焰燃烧，暗示着他们一个念头即可燃物，他们的呼吸让空气产生涟漪即是他们体内蕴含热量的最好证明。</p>\n<hr />\n<p>帝龙，得名于龙帝国（the Dragon Empires），是人形种族到来之前的天夏（Tian Xia）守护者，五种强大而对的立力量的具现。与其他真龙不同，帝龙深度参与着人类事务。其中一些依然维持神秘感，装作隐士，而另一些则保持高调，公开统治着某些势力。天夏的文化也相应地崇敬着龙，将龙描绘成神明，或则他们的先祖。但不是所有龙都被崇拜，因为这些生物大多数都行事邪恶。</p>\n<p><strong>龙之五行 Draconic Cycles</strong></p>\n<p>五种元素是帝龙魔力的基石，影响着他们与一切事物的关系，特别是与他们之中不同种类的关系。这些元素以两个循环相互联系。第一个循环中，每个元素两两相生：木生火，火生土，土生金，金生水，水生木。第二个循环中，则两两相克：木克土，土克水，水克火，火克金，金克木。</p>\n<p>每种帝龙都代表着一种元素，并拥有四种与相生相克有关的能力。比如，森龙——与木相通——生火，由水所生，克土，为金所克。</p>",
+            "items":{
+                "aT8anQIUKNtDMO8Y":{
+                    "name": "奥术内在法术 Arcane Innate Spells"
+                },
+                "rvv40f4QmFMFlF5L":{
+                    "name": "颚咬 Jaws",
+                    "description":"<p>若未为水所克，额外造成3d6火焰伤害。</p>"
+                },
+                "uuZFA4waTTmjGuf7":{
+                    "name": "爪抓 Claw"
+                },
+                "VW8DMx7itpBNELJa":{
+                    "name": "尾击 Tail"
+                },
+                "LupnDs04lfZkJ52r":{
+                    "name": "灵敏嗅觉（模糊感官） 60尺"
+                },
+                "h2v7VpyXTPjTzVX1":{
+                    "name": "烟视 Smoke Vision",
+                    "description":"<p>烟不会削弱伏藏龙的视觉；他们忽视由烟带来的@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+                },
+                "WMiSz943Mp34MPxS":{
+                    "name": "为水所克 Countered by Water",
+                    "description":"<p>如果伏藏龙受到了具有寒冷或水特征法术的伤害，他们体内的火属相魔法将被暂时抑制。</p>\n<p>直到他们下个回合结束，他们攻击骰承受-1环境惩罚，他们的颚咬攻击不再造成火焰伤害，失去闷热灵光。</p>\n<p>如果龙使用了吐息则限制结束。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.81XYZZ3H0GL8thdQ]{效果: 为水所克}</p>"
+                },
+                "ZFhHkksQnaNOI9Rk":{
+                    "name": "由木所生 Fed by Wood",
+                    "description":"<p>当伏藏龙被一个木制武器攻击或被带有植物特征的法术影响，龙内在的火焰本质将因获得燃料而旺盛。他们的吐息获得充能，龙的颚咬附带的火焰伤害增加一个伤害骰直到龙的下个回合结束。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.4FMFRlEC923CnLI7]{效果: 由木所生}</p>"
+                },
+                "Oo1ff4ERhvPS7Bhw":{
+                    "name": "气势凶猛 Frightful Presence",
+                    "description":"<p>@Template[type:emanation|distance:90]{90尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:35]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "cPRyXJDPZFJ7bHKq":{
+                    "name": "闷热 Sweltering Heat",
+                    "description":"<p>@Template[type:emanation|distance:10]{10尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>每个在灵光范围内结束回合的生物必须成功通过一次@Check[type:fortitude|dc:35]豁免，否则在灵光范围内会陷入@Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态。</p>"
+                },
+                "OshjLmAWIWTiJZoR":{
+                    "name": "精金爪 Adamantine Claws",
+                    "description":"<p>龙的爪子中灌入了精金。他们的爪抓打击忽略物体一半的硬度。</p>"
+                },
+                "YBLgLADsWKQWYwXJ":{
+                    "name": "吐息 Breath Weapon",
+                    "description":"<p>龙向60尺内射出一个对@Template[type:burst|distance:30]{30尺爆发}范围造成[[/r {14d6}[fire]]]{14d6火焰伤害}的火球（@Check[type:reflex|dc:39|basic:true]豁免）。豁免失败的生物还将受到@Localize[PF2E.PersistentDamage.Fire3d6.success]。</p>\n<p>龙不能在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内再次使用吐息。</p>"
+                },
+                "d8kaihBUHhOfdpSO":{
+                    "name": "盘绕狂暴 Coiling Frenzy",
+                    "description":"<p>龙以任意顺序进行一次爪抓和尾击打击，两次打击须选择相同目标。如果任意打击命中，龙自动@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}目标。</p>"
+                },
+                "bMrJDUmLpocEes2w":{
+                    "name": "龙之威势 Draconic Momentum",
+                    "description":"<p>当龙在一次打击中造成重击时，它立刻为吐息充能。</p>"
+                },
+                "atierys9eTCKzPyz":{
+                    "name": "高等紧勒 Greater Constrict",
+                    "description":"<p>[[/r {3d10+9}[bludgeoning]]]{3d10+9钝击}, @Check[type:fortitude|dc:37|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                },
+                "mFrFiI59EQmtyVk8":{
+                    "name": "焦土 Scorch Earth",
+                    "description":"<p>龙钻入地下，以掘地速度掘地移动，然后烧灼@Template[type:emanation|distance:60]{60尺弥漫}范围的土地。</p>\n<p>区域内地表上的生物受到[[/r {8d6}[fire]]]{8d6火焰伤害}（@Check[type:fortitude|dc:37|basic:true]豁免），大失败将陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}一分钟。</p>"
+                }
+            }
+        },
         "Terra-Cotta Garrison":{
             "name":"兵马俑卫队 Terra-Cotta Garrison",
             "hp":"部队防御",
