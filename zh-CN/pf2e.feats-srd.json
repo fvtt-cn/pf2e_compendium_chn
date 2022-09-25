@@ -3472,7 +3472,7 @@
         },
         "Dragon's Rage Breath": {
             "name": "狂暴龙息 Dragon's Rage Breath",
-            "description": "<p><strong>需求</strong> 你自上次狂暴之后尚未施展过此能力</p>\n<hr />\n<p>你深呼吸后喷出30英尺锥形或60英尺线形的剧烈能量，造成[[/r (@actor.level)d6#Dragon's Rage Breath]]{每等级1d6点伤害}。其范围和伤害类型与你所选龙类相符（见@Compendium[pf2e.classfeatures.VDot7CDcXElxmkkz]{表3-4}）。</p>\n<p>若你在过去一小时内曾施展过此能力，范围和伤害减半（15英尺锥形或30英尺线形；[[/r (floor(@actor.level/2))d6#Dragon's Rage Breath]]{每2级1d6点伤害}）。</p>\n<p>范围内的每个生物必须尝试一次基础反射豁免。</p>"
+            "description": "<p><strong>需求</strong> 你自上次狂暴之后尚未施展过此能力</p>\n<hr />\n<p>你深呼吸后喷出30英尺锥形或60英尺线形的剧烈能量，造成[[/r (@actor.level)d6#Dragon's Rage Breath]]{每等级1d6点伤害}。其范围和伤害类型与你所选龙类相符（见@Compendium[pf2e.classfeatures.VDot7CDcXElxmkkz]{表3-4}）。</p>\n<p>若你在过去一小时内曾施展过此能力，范围和伤害减半（15英尺锥形或30英尺线形；[[/r (floor(@actor.level/2))d6#Dragon's Rage Breath]]{每2级1d6点伤害}）。</p>\n<p>范围内的每个生物必须尝试一次@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免。</p>"
         },
         "Dragon's Rage Wings": {
             "name": "怒龙之翼 Dragon's Rage Wings",
@@ -13975,7 +13975,7 @@
         },
         "Call Implement": {
             "name": "呼唤奇具 Call Implement",
-            "description": "<p><strong>需求</strong> 你有一只空闲的手。</p>\n<hr />\n<p>你猛地拉扯你和奇具之间的建立在所有关系上的纽带，令它找到回归你的路径。你低头一看，然后发现你的奇具神奇地出现在你的空手上，只要它在1英里内且和你处于同一个位面。如果你的奇具被其他生物占有，该生物可以阻止奇具传送，只要他成功通过对抗你职业DC的@Check[type:will|dc:resolve(@actor.system.attributes.classDC.value)]检定。如果该生物成功，你不能再次尝试呼唤该奇具；你只能追踪该生物的位置以拿回奇具。</p>"
+            "description": "<p><strong>需求</strong> 你有一只空闲的手。</p>\n<hr />\n<p>你猛地拉扯你和奇具之间的建立在所有关系上的纽带，令它找到回归你的路径。你低头一看，然后发现你的奇具神奇地出现在你的空手上，只要它在1英里内且和你处于同一个位面。如果你的奇具被其他生物占有，该生物可以阻止奇具传送，只要他成功通过对抗你职业DC的@Check[type:will|dc:resolve(@actor.system.proficiencies.classDCs.thaumaturge.value)]检定。如果该生物成功，你不能再次尝试呼唤该奇具；你只能追踪该生物的位置以拿回奇具。</p>"
         },
         "Cursed Effigy": {
             "name": "诅咒雕像 Cursed Effigy",
