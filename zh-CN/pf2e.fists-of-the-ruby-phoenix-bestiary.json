@@ -14,7 +14,8 @@
 		"speed":"system.attributes.speed.details",
 		"languages":"system.traits.languages.custom",
 		"stealth":"system.attributes.stealth",
-		"ac":"system.attributes.ac.details"
+		"ac":"system.attributes.ac.details",
+		"di":"system.traits.di.custom"
 	},
 	"entries": {
 		"Abbot Tsujon": {
@@ -37,6 +38,14 @@
 				},
 				"FXmdnpVAfwGGAGZL":{
 					"name": "任一环境学识"
+				},
+				"LfYdKJKFMistfUrI":{
+					"name": "灵巧躲避 Nimble Dodge",
+					"description":"<p><strong>触发</strong> 灵巧战士被自己看得见的攻击者进行一次近战或远程攻击</p>\n<hr />\n<p><strong>效果</strong> 灵巧战士对抗触发攻击的AC获得+2环境加值。</p>"
+				},
+				"nbgJYAHNB8hArPvH":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>灵巧战士对措手不及的目标造成额外[[/r {2d6}[precision]]]{2d6精准伤害}。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				}
 			}
 		},
@@ -44,13 +53,86 @@
 			"name": "Agile Warrior (Nightmares)"
 		},
 		"Air Rift": {
-			"name": "Air Rift"
+			"name": "气流裂隙 Air Rift",
+			"stealth":"<p>(大师) 注意到剧场中突然发生的意外</p>",
+			"hazarddisable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air]（大师）用魔法将裂隙缝合；@Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air]或@Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air]（传奇）打开足够多的门窗，降低狂风的烈度；或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（反制等级7 级；反制DC34）反制气流裂隙。</p>",
+			"hazarddescription": "<p>舞台上撕开了一个通往气元素位面的入口，导致咆哮的风撕裂整个剧院。</p>",
+			"hazardroutine": "<p>（1 动作）风在该区域内以随机方向吹动，气流裂隙导致50尺内的生物和物品向上、下、北、南、东或西方向被吹走（投掷d6来决定具体方向）。该区域内的生物和物体必须尝试@Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard]豁免。如果一个生物撞上了另一个同样受此效果影响的物品或生物，则双方都会因为冲击而受到[[/r {3d8+15}[bludgeoning]]]{3d8+15钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推离10尺，但是仅受到一半的冲击伤害。</p>\n<p><strong>失败</strong> 生物被推离20尺，被击倒地，受到全额冲击伤害。</p>\n<p><strong>大失败</strong> 生物被推离40尺，被击倒，受到双倍冲击伤害。</p>",
+			"items":{
+				"kk1MskNbJzxZTiUb":{
+					"name": "对抗反应动作和远程武器攻击为40"
+				},
+				"3vRlGmy1BbFY0bJW":{
+					"name": "岩土易伤 Earth Vulnerability",
+					"description": "<p>气元素位面是土元素位面的对立面。任何带有土特征的法术或魔法效果，在瞄准裂隙50尺内的目标或区域时，每个法术环级（魔法物品、专长等每2个等级）都能对裂隙造成10点伤害。例如，对裂隙附近的生物施放3环<em>@Compendium[pf2e.spells-srd.gPvtmKMRpg9I9D7H]{地缚术 Earthbind}</em>能对裂隙造成30点伤害。</p>"
+				},
+				"3Z7QykHo25ouKv1W":{
+					"name": "失重 Weightlessness",
+					"description":"<p><strong>触发</strong> 一个生物进入裂隙50尺范围内</p>\n<hr />\n<p><strong>效果</strong> 气流裂隙在生物周围制造一个个体化的反重力场，持续1分钟。该生物能通过一个带有专注特征的自由动作，选择让重力将它们拉向任意方向。该生物可以沿着任何表面行走，或者选择一个方向在空中直线飞行。对于无主物品和无心智生物来说，这是微重力环境：它们会在原地漂浮，除非被推离表面。</p>"
+				}
+			}
 		},
 		"Akila Stormheel": {
-			"name": "Akila Stormheel"
+			"name": "阿基拉·暴风踵 Akila Stormheel",
+			"allSaves":"抓住边缘+2",
+			"blurb": "女性半身人翠绿玉枝旁听生",
+			"senses":"昏暗视觉",
+			"items":{
+				"0uuZDSHZiXUjce3N":{
+					"name": "轻身落 Agile Faller",
+					"description": "<p>阿基拉受到的坠落伤害减半。</p>"
+				},
+				"vbJAvWjij5n27otM":{
+					"name": "变形 Change Shape",
+					"description":"<p>阿基拉的面具和她的脸融合在了一起，她变成一只花豹，或变回半身人形态。在花豹形态下她只能使用啃咬打击（造成[[/r {3d6+10}[piercing]]]{3d6+10穿刺伤害}，外加攫抓）或带有灵巧特征的爪抓打击（造成[[/r {3d4+10}[slashing]]]{3d4+10挥砍伤害}）</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"zrjGLDGKhAJ9NXOK":{
+					"name": "猛扑 Pounce",
+					"description": "<p>阿基拉行走，然后打击。如果她此动作开始时为@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，则她在打击完成后依然保持藏匿。</p>"
+				},
+				"sTHsY1WM7PVn4n55":{
+					"name": "强力跳 Powerful Leap",
+					"description":"<p>阿基拉跳跃最多50尺远10尺高，或最多25尺高10尺远。她能在跳跃途中的任意一点进行一次打击。如果她命中，她附带的冲击力会造成额外[[/r {8}[bludgeoning]]]{8点钝击伤害}。</p>"
+				},
+				"jHPVh8C4zWd3Pvep":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>阿基拉的打击对措手不及的目标造成额外1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Amihan": {
-			"name": "Amihan"
+			"name": "阿米汉 Amihan",
+			"ac":"(举盾时AC39)",
+			"blurb": "女性天辛族战舞者",
+			"items":{
+				"RnRENAHTmiSk48sb":{
+					"name": "高等炽火胶 Greater Alchemist's Fire"
+				},
+				"LCYNJHWL7NYjWnRj":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Xkb0A0eb7R40FSTM":{
+					"name": "盾牌格挡 Shield Block",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
+				},
+				"h4lgTxDSEuy51dcs":{
+					"name": "及时备战 Quick Draw",
+					"description":"战舞者以交互动作拔出武器，然后用它进行一次打击。"
+				},
+				"d3lB3jsGsGDrFd3o":{
+					"name": "击打盾牌 Shield Drum",
+					"description":"<p>战舞者举盾，然后对敌人@Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralizes}。</p>"
+				},
+				"GlzE8aPPISQLkToK":{
+					"name": "威胁之舞 Threatening Dance",
+					"description": "<p>战舞者选择先快步后@Compendium[pf2e.actionspf2e.EEDElIyin4z60PXx]{表演 Performs}，或者先表演后快步。将表演检定结果和战舞者触及内一个生物的意志DC 相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物对所有攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到战舞者的下个回合开始。</p>\n<p><strong>成功</strong> 生物对战舞者之外的生物做出的下一次攻击措手不及，直到战舞者下回合开始。</p>"
+				},
+				"Xkb0A0eb7R40FSTM":{
+					"name": "盾牌格挡 Shield Block",
+					"description": "<p><strong>触发</strong> 你正处于举盾状态，并因为一次物理攻击而承受伤害</p>\n<hr />\n<p>你快速调整盾牌的角度，抵御一次猛烈的直击。你的盾牌会为你减免相当于它的硬度（Hardness）的伤害，但你和你的盾牌都必须承受相当于减免数值扣去以后的剩余伤害——这可能会导致你的盾牌破损或是被摧毁。</p>"
+				}
+			}
 		},
 		"Angoyang": {
 			"name": "旺宅猫 Angoyang",
@@ -178,19 +260,142 @@
 			}
 		},
 		"Arms of Balance (Jivati Rovat)": {
-			"name": "Arms of Balance (Jivati Rovat)"
+			"name": "吉瓦蒂·罗瓦特(八臂调和) Arms of Balance (Jivati Rovat)",
+			"ac":"针对远程攻击AC37",
+			"blurb": "女性蝮血裔武僧",
+			"items":{
+				"LbTt0cEbX1vHiPcI":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"MdIiT5LvJFotRboA":{
+					"name": "风行跃 Wind Jump",
+					"description": "<p>你获得等同于速度的飞行速度。你必须在坚实的地面上结束回合，否则会坠落。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 在你的回合结束，你可以尝试一次@Check[type:acrobatics|dc:30]检定在空中找到借力点。若成功，你就不会坠落。</p>\n<p>@Compendium[pf2e.spell-effects.5MI2c9IgxfSeGZQo]{法术效果：风行跃}</p>"
+				},
+				"BkUWq2do6knbcAmi":{
+					"name": "+2高等强击炽焰重拳缠手带 +2 Greater Striking Flaming Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"X5uAgkp3zxAGNKah":{
+					"name": "狂风席卷 Tornado Lunge"
+				},
+				"sDZ4Ni8K7NK1hq7V":{
+					"name": "旋风冲锋 Wind Crash"
+				},
+				"IG9x5CCRJ66lkxTJ":{
+					"name": "熔岩之握 Magma's Grasp",
+					"description":"<p>武僧释放出一股强劲的气，具体效果取决于武僧所协调的能量类型。武僧无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用此能力。</p>\n<p>吉瓦蒂的吐息灼烧10尺内每个生物的灵魂，造成[[/r {8d6}[fire]]]{8d6火焰伤害}，每个生物都必须尝试@Check[type:will|dc:33|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害和[[/r {1d6}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}，并且失去1个聚能点。如果目标没有聚能点，生物会失去一个还未施放随机的最高环位的准备法术或法术位（最高6环）。</p>\n<p><strong>大失败</strong> 类似失败，但是生物受到双倍伤害和[[/r {2d6}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+				}
+			}
 		},
 		"Arms of Balance (Pravan Majinapti)": {
-			"name": "Arms of Balance (Pravan Majinapti)"
+			"name": "普拉万·马吉纳普蒂(八臂调和) Arms of Balance (Pravan Majinapti)",
+			"ac":"针对远程攻击AC37",
+			"blurb": "男性人类武僧",
+			"items":{
+				"LbTt0cEbX1vHiPcI":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"MdIiT5LvJFotRboA":{
+					"name": "风行跃 Wind Jump",
+					"description": "<p>你获得等同于速度的飞行速度。你必须在坚实的地面上结束回合，否则会坠落。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 在你的回合结束，你可以尝试一次@Check[type:acrobatics|dc:30]检定在空中找到借力点。若成功，你就不会坠落。</p>\n<p>@Compendium[pf2e.spell-effects.5MI2c9IgxfSeGZQo]{法术效果：风行跃}</p>"
+				},
+				"7BVVramWGCbj0dc0":{
+					"name": "+2高等强击寒霜重拳缠手带 +2 greater Striking Frost Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"X5uAgkp3zxAGNKah":{
+					"name": "狂风席卷 Tornado Lunge"
+				},
+				"sDZ4Ni8K7NK1hq7V":{
+					"name": "旋风冲锋 Wind Crash"
+				},
+				"WhjU9VyNWAsGZORc":{
+					"name": "冰川之息 Breath of the Glacier",
+					"description":"<p>武僧释放出一股强劲的气，具体效果取决于武僧所协调的能量类型。武僧无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用此能力。</p>\n<p>普拉万打出一阵寒风，对@Template[type:cone|distance:30]{30尺锥形}造成[[/r {10d6}[cold]]]{10d6寒冷伤害}。区域内的生物会全身结冰，必须尝试一次@Check[type:reflex|dc:33|traits:damaging-effect]豁免，由此能力带来的速度惩罚或禁足效果持续到生物破拆冰块或脱逃（DC都是37），或直到生物受到至少30火焰伤害为止。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，并且速度遭受-5状态减值。</p>\n<p><strong>失败</strong> 生物受到全伤害并且速度遭受-15尺状态减值。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>"
+				}
+			}
 		},
 		"Arms of Balance (Ranya Shibhatesh)": {
-			"name": "Arms of Balance (Ranya Shibhatesh)"
+			"name": "兰雅·什瓦纳特丝(八臂调和) Arms of Balance (Ranya Shibhatesh)",
+			"ac":"针对远程攻击AC37",
+			"blurb": "女性人类武僧",
+			"items":{
+				"LbTt0cEbX1vHiPcI":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"MdIiT5LvJFotRboA":{
+					"name": "风行跃 Wind Jump",
+					"description": "<p>你获得等同于速度的飞行速度。你必须在坚实的地面上结束回合，否则会坠落。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 在你的回合结束，你可以尝试一次@Check[type:acrobatics|dc:30]检定在空中找到借力点。若成功，你就不会坠落。</p>\n<p>@Compendium[pf2e.spell-effects.5MI2c9IgxfSeGZQo]{法术效果：风行跃}</p>"
+				},
+				"aXz93WXQY0qGeLwp":{
+					"name": "+2高等强击电击重拳缠手带 +2 Greater Striking Shock Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"X5uAgkp3zxAGNKah":{
+					"name": "狂风席卷 Tornado Lunge"
+				},
+				"sDZ4Ni8K7NK1hq7V":{
+					"name": "旋风冲锋 Wind Crash"
+				},
+				"ikXFKhjiVrAnIQMw":{
+					"name": "电光牵引 Draw of the Aurora",
+					"description": "<p>武僧释放出一股强劲的气，具体效果取决于武僧所协调的能量类型。武僧无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用此能力。</p>\n<p>兰雅射出四道闪电，使生物带电磁化并被拉向自己。四根@Template[type:line|distance:60]{60尺直线}范围的电流，从兰雅所在处前后左右四个互成直角的方向延伸出来，造成[[/r {4d12}[electricity]]]{4d12电击伤害}。影响区域内的每个生物必须尝试@Check[type:reflex|dc:33|traits:damaging-effect]豁免。如果该能力让某个无踪的生物发光，该生物对那些能看见他所在空间的生物来说视为藏匿（即便它隐形或潜行）。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，会发光直到兰娅的下个回合结束，并且被拉向兰娅5尺。</p>\n<p><strong>失败</strong> 生物受到全伤害，会发光直到武僧的下个回合结束，并且被拉向兰娅15尺。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，发光1分钟，并且被拉向兰娅30尺。</p>"
+				}
+			}
 		},
 		"Arms of Balance (Usvani)": {
-			"name": "Arms of Balance (Usvani)"
+			"name": "乌斯瓦利(八臂调和) Arms of Balance (Usvani)",
+			"ac":"针对远程攻击AC37",
+			"blurb": "男性灵猴族武僧",
+			"items":{
+				"LbTt0cEbX1vHiPcI":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"MdIiT5LvJFotRboA":{
+					"name": "风行跃 Wind Jump",
+					"description": "<p>你获得等同于速度的飞行速度。你必须在坚实的地面上结束回合，否则会坠落。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 在你的回合结束，你可以尝试一次@Check[type:acrobatics|dc:30]检定在空中找到借力点。若成功，你就不会坠落。</p>\n<p>@Compendium[pf2e.spell-effects.5MI2c9IgxfSeGZQo]{法术效果：风行跃}</p>"
+				},
+				"Tl0T0mH9OvztIudm":{
+					"name": "+2高等强击腐蚀重拳缠手带 +2 Greater Striking Corrosive Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"X5uAgkp3zxAGNKah":{
+					"name": "狂风席卷 Tornado Lunge"
+				},
+				"sDZ4Ni8K7NK1hq7V":{
+					"name": "旋风冲锋 Wind Crash"
+				},
+				"pvqmeCjX7qvH9wJF":{
+					"name": "火山之息 Breath of the Volcano",
+					"description":"<p>武僧释放出一股强劲的气，具体效果取决于武僧所协调的能量类型。武僧无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用此能力。</p>\n<p>乌斯瓦利喷出一阵酸性毒烟，填满@Template[type:emanation|distance:15]{15 尺弥漫}范围。在此范围内开始回合的生物受到[[/r {12d6}[acid]]]{12d6酸液伤害}，并且必须尝试@Check[type:fortitude|dc:33|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，并且@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害，并且@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> The creature takes double damage and is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3}.</p>"
+				}
+			}
 		},
 		"Artus Rodrivan": {
-			"name": "Artus Rodrivan"
+			"name": "阿图斯·罗德里万 Artus Rodrivan",
+			"blurb": "男性半精灵灵魂射手",
+			"items":{
+				"sCyPZT7uS092oFJY":{
+					"name": "+1抗力冒险者服装 +1 Resilient Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"k24P6PGDrlTJbz5h":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"KF77DQOArA4aqWmI":{
+					"name": "灵魂之箭 Soul Arrow",
+					"description": "<p>当阿图斯以长弓进行打击时，他能射出一支由他的灵魂所做成的箭。这支箭看起来像由纯净的光制成，在@Template[type:burst|distance:20]{20尺爆发}范围内造成明亮光照（在额外20尺范围内造成昏暗光照）。当阿图斯以灵魂之箭进行打击时掷出重击，目标会陷入@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，直到阿图斯的下个回合结束。</p>"
+				},
+				"73SLvdaXcSxA5l0K":{
+					"name": "逆转失手 Veering Miss",
+					"description": "<p><strong>触发</strong> 阿图斯以灵魂之箭进行长弓打击，结果失手，但是并没有大失败</p>\n<hr />\n<p><strong>效果</strong> 箭矢转向，再次尝试攻击目标。阿图斯尝试一次新远程打击，使用和失手那次打击相同的多重攻击减值。转向的箭矢不计入阿图斯的多重攻击减值。这次新的攻击无视掩蔽和高等掩蔽。</p>"
+				}
+			}
 		},
 		"Berberoka": {
 			"name": "夸巴洛卡 Berberoka",
@@ -201,6 +406,10 @@
 				"7U9m1FIcumFSBawO":{
 					"name": "深呼吸 Deep Breath",
 					"description":"<p>夸巴洛卡可以屏住呼吸2个小时。</p>"
+				},
+				"QXiKX7sF5uDGBqWr":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				},
 				"PxlpRBvsadwyRvFg":{
 					"name": "螃蟹恐惧 Fear of Crabs",
@@ -307,12 +516,108 @@
 				},
 				"UUgL7mamcQM9PkU0":{
 					"name": "快速应用 Quick Application",
-					"description":"<p>蓝蝮蛇以交互抽哦出一份伤口都要并立刻给持握的一把武器涂毒。</p>"
+					"description":"<p>蓝蝮蛇以交互动作抽出一份伤口都要并立刻给持握的一把武器涂毒。</p>"
 				}
 			}
 		},
 		"Blue Viper (Level 16)": {
-			"name": "Blue Viper (Level 16)"
+			"name": "蓝蝮蛇(16级) Blue Viper (Level 16)",
+			"blurb": "男性鼠族投毒者",
+			"senses": "昏暗视觉",
+			"items":{
+				"PoVyC6Mvi2YZOhJA":{
+					"name": "高等强酸瓶(灌注物品) Acid Flask (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>这个装满强酸的烧瓶会造成1点酸液伤害，3d6点酸液持续伤害和3点酸液溅射伤害。你在攻击骰上获得+2的物品加值。</p>"
+				},
+				"fTsBxUREuesIMRlU":{
+					"name": "高等炽火胶(灌注物品) Alchemist's Fire (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>炽火胶是一种接触空气就会剧烈燃烧的爆炸性液体混合物。你在攻击骰上获得+2的物品加值。这枚炸弹造成3d8点火焰伤害，3点火焰持续伤害和3点火焰溅射伤害。</p>"
+				},
+				"08jMyPI4COfk5aeG":{
+					"name": "高等瓶装闪电(灌注物品) Bottled Lightning (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 打击</p>\n<p>瓶装闪电里面装满了一接触空气就会创造出强烈电流的不稳定液体试剂。一旦命中，目标还会在你的下一回合开始前陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。你在攻击骰上获得+2的物品加值。这枚炸弹造成3d6点闪电伤害和3点闪电溅射伤害。</p>"
+				},
+				"LoWGiUUAz2T4nR7R":{
+					"name": "高等霜冻瓶(灌注物品) Frost Vial (Greater) (Infused)",
+					"description":"<p>这瓶试剂中的液体在接触空气时会迅速吸收周围的热量。一旦命中，目标直到它的下一回合结束为止，都会在它的速度上承受状态减值。</p>\n<p>你在攻击骰上获得+2的物品加值。这枚炸弹造成3d6点寒冷伤害和3点寒冷溅射伤害，目标承受-10尺的减值。</p>\n<hr />\n<p>@Compendium[pf2e.equipment-effects.nJRoiSyd67eQ1dYj]效果: 高等霜冻瓶}</p>"
+				},
+				"vqJxIQL873yU5LDb":{
+					"name": "+2抗性探险者服装 +2 Resilient Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"cHwG6EKTlyMwi7RS":{
+					"name": "燃疫松香(灌注物品) Blightburn Resin (Infused)",
+					"description":"<p>这坨黏糊的硬化树液由感染了菌枯病（fungal blights）的树木上收割而来，并已经过明火灼烧。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {8d6}[poison]]]{8d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {10d6}[poison]]]{10d6毒素伤害} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {15d6}[poison]]]{15d6毒素伤害} (1轮)</p>"
+				},
+				"KuE0S4ZyiqHbSfvx":{
+					"name": "死帽粉(灌注物品) Deathcap Powder (Infused)",
+					"description":"<p>有毒的死帽蕈可以经由晾晒、研磨制成无味且更具毒性的粉末。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (摄入)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 10分钟</p>\n<p><strong>最大持续时间</strong> 6分钟</p>\n<p><strong>阶段 1</strong> [[/r {13d6}[poison]]]{13d6 毒素伤害} (1 分钟)</p>\n<p><strong>阶段 2</strong> [[/r {17d6}[poison]]]{17d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1 分钟)</p>\n<p><strong>阶段 3</strong> [[/r {20d6}[poison]]]{20d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}(1 分钟)</p>"
+				},
+				"9EsRCYx3AFtCZRrY":{
+					"name": "高等生命灵药(灌注物品) Elixir of Life (Greater) (Infused)",
+					"description":"<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复 [[/r {7d6+18}[healing]]]{7d6+18 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+2物品加值。</p>\n<p>@Compendium[pf2e.equipment-effects.Z9oPh462q82IYIZ6]{效果: 高等生命灵药}</p>"
+				},
+				"QaC0GPWy0uvhg0Fi":{
+					"name": "烈赤根糊(灌注物品) Malyass Root Paste (Infused)",
+					"description":"<p>烈赤根糊可能被用于在运动比赛中阻碍对手，此外也有用于间谍和追踪活动。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">T</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 分钟</p>\n<p><strong>阶段 1</strong> @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} 和针对所有速度（Speeds）的-10尺状态减值 (1 分钟)</p>\n<p><strong>阶段 2</strong> 笨拙clumsy 2 和针对所有速度的-20尺状态减值 (1 分钟)</p>\n<p><strong>阶段 3</strong> 笨拙clumsy 3, @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}, 和针对所有速度的-30尺状态减值</p>"
+				},
+				"hvEbv5Fc39YQvjbA":{
+					"name": "紫虫毒(灌注物品) Purple Worm Venom (Infused)",
+					"description":"<p>来自庞大紫虫的毒液会让受害者陷入虚弱。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {5d6}[poison]]]{5d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}(1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 轮)</p>"
+				},
+				"JDcm0nA7FnWLcc3u":{
+					"name": "阴影精华(灌注物品) Shadow Essence (Infused)",
+					"description":"<p>这种由阴影位面蒸馏而来的油状物质能将晦暗之力施加于受害者。来自阴影精华的力竭状态持续24小时。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害} 和 [[/r {2d6}[poison]]]{2d6 毒素伤害} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害}, [[/r {2d6}[poison]]]{2d6 毒素伤害}, 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {3d6}[negative]]]{3d6 负能量伤害}, [[/r {2d6}[poison]]]{2d6 毒素伤害}, 和 力竭enfeebled 2 (1 轮)</p>"
+				},
+				"iK0TuuqSgMqAGl3j":{
+					"name": "蜘丝根(灌注物品) Spider Root (Infused)",
+					"description":"<p>将某种爬藤细小的丝状根部研磨成糊后制成的蛛丝根能让受害者变得笨拙又愚钝。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:34]</p>\n<p><strong>潜伏期</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 分钟</p>\n<p><strong>阶段 1</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1 分钟)</p>\n<p><strong>阶段 2</strong> [[/r {9d6}[poison]]]{9d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1 分钟)</p>\n<p><strong>阶段 3</strong> [[/r {10d6}[poison]]]{10d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3} (1 分钟)</p>"
+				},
+				"0wpoSMlbDUIz1ugC":{
+					"name": "龙胆汁 Dragon Bile (Applied to Body)",
+					"description":"<p>这种消化液和绿龙毒腺的混合物能让受害者呕吐不止，仿佛它的肉体从内部被消化一般。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 (接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:37]</p>\n<p><strong>Onset</strong> 1 分钟</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1轮)</p>\n<p><strong>阶段 2</strong> [[/r {7d6}[poison]]]{7d6毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3} (1轮)</p>\n<p><strong>阶段 3</strong> [[/r {9d6}[poison]]]{9d6 毒素伤害} 和 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 4}(1轮)</p>"
+				},
+				"1ytm10EBunourBmr":{
+					"name": "高等强酸瓶 Greater Acid Flask"
+				},
+				"x6m0LbmWc8Cn84Lu":{
+					"name": "高等炽火胶 Greater Alchemist's Fire"
+				},
+				"EfrEtVXaCW3qrooZ":{
+					"name": "高等瓶装闪电 Greater Bottled Lightning"
+				},
+				"J5M688CLiZAfnf7K":{
+					"name": "高等霜冻瓶 Greater Frost Vial"
+				},
+				"LF5gi4818bCXaIHR":{
+					"name": "灌注物品 Infused Items",
+					"description":"<p>蓝蝮蛇携带有下列灌注物品：2瓶@Compendium[pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{高等强酸瓶 Acid Flask (Greater)}，4瓶@Compendium[pf2e.equipment-srd.n5yTlTs63o53n3k6]{高等炽火胶 Alchemist's Fire (Greater)}，6瓶@Compendium[pf2e.equipment-srd.Cc4SokzVBoBCkHId]{燃疫松香 Blightburn Resin}，4瓶@Compendium[pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{高等瓶装闪电 Bottled Lightning (Greater)}，3份@Compendium[pf2e.equipment-srd.87AzvRja9uQOLJCC]{死帽粉 Deathcap Powder}，4瓶@Compendium[pf2e.equipment-srd.mYozcVg9fQY6zO7C]{高等生命灵药 Elixir of Life (Greater)}，2瓶@Compendium[pf2e.equipment-srd.intVPcEzbE9o4NQd]{高等霜冻瓶 Frost Vial (Greater)}，3份@Compendium[pf2e.equipment-srd.76T49dJYfxIrPvQe]{烈赤根糊 Malyass Root Paste}，9份@Compendium[pf2e.equipment-srd.iRDCa4OVSTGUD3vi]{紫虫毒 Purple Worm Venom}，6份@Compendium[pf2e.equipment-srd.Wjkw0lEUOhypYvzo]{阴影精华 Shadow Essence}，3份@Compendium[pf2e.equipment-srd.oOXvk18K4izaJzG7]{蛛丝根 Spider Root}。这些物品在24小时内有效，或直到蓝蝮蛇下一次每日准备时有效。</p>"
+				},
+				"aT1K6zkwI73D4tJ8":{
+					"name": "染毒外套 Poisoned Coat",
+					"description":"<p><strong>触发</strong> 邻接蓝蝮蛇的生物用近战无武装攻击命中他。</p>\n<hr />\n<p><strong>效果</strong> 触发生物暴露在@Compendium[pf2e.equipment-srd.6swrLimere2nZtz9]{龙胆汁 Dragon Bile}效果中。这会消耗这一份毒素，蓝蝮蛇在消耗10 分钟将下一份接触或伤口毒素涂抹到外套前，无法使用此反应动作。</p>"
+				},
+				"G1wu8KW1gALb7KbD":{
+					"name": "精准下毒 Pinpoint Poisoner",
+					"description":"<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
+				},
+				"Tt37ijMg1fiX7fGx":{
+					"name": "毒素喷射 Poison Spray",
+					"description":"<p><strong>需求</strong> 蓝蝮蛇正手持一份接触或伤口毒素。</p>\n<hr />\n<p><strong>效果</strong> 蓝蝮蛇口含该毒药，然后用嘴喷出，影响@Template[type:cone|distance:15]{15尺锥形}范围所有生物。蓝蝮蛇自己不会暴露在该毒素中。范围内所有生物立刻感染该毒素，每个生物都必须进行强韧豁免对抗该毒素。</p>"
+				},
+				"rbtSqixbTXvvcmJc":{
+					"name": "强效制毒师 Potent Poisoner",
+					"description":"<p>蓝蝮蛇的灌注毒素DC为37。</p>"
+				},
+				"UUgL7mamcQM9PkU0":{
+					"name": "快速应用 Quick Application",
+					"description":"<p>蓝蝮蛇以交互动作抽出一份伤口都要并立刻给持握的一把武器涂毒。</p>"
+				},
+				"KNsjthb0m0ASdoMo":{
+					"name": "毒烟脱逃 Toxic Escape",
+					"description": "<p>蓝蝮蛇以交互动作抽出一份吸入毒素，将其散布为一团可以在@Template[type:emanation|distance:5]{5尺弥漫}范围内提供隐蔽状态的毒烟，然后以最大速度@Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneaks}。他不会暴露在吸入毒素的影响下。</p>"
+				}
+			}
 		},
 		"Blue Viper (Level 20)": {
 			"name": "Blue Viper (Level 20)"
@@ -341,7 +646,7 @@
 			"blurb": "人类忠诚刺客",
 			"items":{
 				"jCmLHcpebaggKboj":{
-					"name": "蝶刃 Butterfly Sword",
+					"name": "蝴蝶刀 Butterfly Sword",
 					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃——技艺精湛的过峡刺客的首选武器。</p>"
 				},
 				"Y6K7hW8pefr98Xgk":{
@@ -349,7 +654,7 @@
 					"description":"<p>这种皮甲用金属铆钉加固，有时也用小金属板加固，使皮甲保留大部分的柔韧性的同时得到更有力的保护。</p>"
 				},
 				"FgZBxJr0uazPJd8V":{
-					"name": "蝶刃 Butterfly Sword",
+					"name": "蝴蝶刀 Butterfly Sword",
 					"description":"<p>这种短的单刃刀典型特征就是可以交叉格挡迎面而来的攻击。它是蝶刃——技艺精湛的过峡刺客的首选武器。</p>"
 				},
 				"ugb6n0QNUCteNVeB":{
@@ -370,6 +675,10 @@
 				},
 				"dEMUM22Ke1Ah5KZD":{
 					"name": "过峡学识"
+				},
+				"axsjoUSkCVnMfbVq":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
@@ -439,7 +748,50 @@
 			"name": "Dimensional Darkside Mirror"
 		},
 		"Drake Courser": {
-			"name": "Drake Courser"
+			"name": "骑驭龙兽 Drake Courser",
+			"blurb": "变种霜龙兽",
+			"senses":"黑暗视觉，灵敏嗅觉（模糊感官）30尺，降雪视觉",
+			"speed":"冰面攀爬",
+			"items":{
+				"M6zs0ZmCJlyphS5N":{
+					"name": "尖牙 Fangs",
+					"description":""
+				},
+				"9aYwSAhxxa0rnngi":{
+					"name": "扫尾 Tail"
+				},
+				"Vd5YH5g8xQrR87Mv":{
+					"name": "灵敏嗅觉（模糊感官）30 尺"
+				},
+				"7XIYM7XKRyeIRUn6":{
+					"name": "降雪视觉 Snow Vision",
+					"description":"<p>雪天不会阻碍霜龙兽的视觉；它会忽略降雪带来的@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealment}。</p>"
+				},
+				"JX4uHtluMzx2RYc4":{
+					"name": "战舞 Battle Dance",
+					"description":"<p>骑驭龙兽以任意顺序进行两次尖牙打击和一次扫尾打击。它能将任意这些打击替换为@Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}或@Compendium[pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{快步 Step}动作。</p>"
+				},
+				"2tMf0hI5hRH03C4s":{
+					"name": "冲击爆发 Buffeting Surge",
+					"description":"<p><strong>频率</strong> 每日3次</p>\n<hr />\n<p><strong>效果</strong> 骑驭龙兽至多以其速度的2倍进行移动。在此移动中的任意一点，它能尝试用扫尾@Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}一次。</p>"
+				},
+				"GcJJKFDfrv0jW0K3":{
+					"name": "霜雾吐息 Freezing Mist Breath",
+					"description":"<p>龙兽吐出一个液体球，对至多60 尺远范围的位置爆发出@Template[type:burst|distance:20]{半径20尺爆发}区域的霜冻云雾。爆发区域内的生物会承受[[/r {13d6}[cold]]]{13d6点寒冷伤害}（@Check[type:reflex|dc:31|basic:true]豁免）。霜雾会在区域内的所有表面上凝结成一层光滑的冰面，将该区域转化为困难地形，持续[[/br 2d4 #rounds]]{2d4轮}。龙兽在[[/br 1d6 #rounds]]{1d6轮}内无法再次使用霜雾吐息。</p>"
+				},
+				"dRF3nPzB91HYIbXx":{
+					"name": "冰面攀爬35尺 Ice Climb (35 feet)",
+					"description":"<p>骑驭龙兽能够按照上文中列出的攀爬速度在冰面上攀爬。它忽略由于冰和雪形成的困难地形和高等困难地形，而且它攀爬冰面时不会有坠落的风险。</p>"
+				},
+				"RCAHf4ajzslat95H":{
+					"name": "击倒 Knockdown",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
+				},
+				"eYsmsN7yBlG4NrOK":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description":"<p>仅限扫尾。如果造成重击，目标被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}；如果目标正在使用移动动作，该动作被打断。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				}
+			}
 		},
 		"Dread Roc": {
 			"name": "恐惧大鹏 Dread Roc",
@@ -1033,7 +1385,29 @@
 			}
 		},
 		"Grandfather Mantis": {
-			"name": "Grandfather Mantis"
+			"name": "螳螂爷爷 Grandfather Mantis",
+			"blurb": "雅利卡的魂魄守卫",
+			"languages":"心灵感应100尺",
+			"items":{
+				"OP16WYPutQSTwnO4":{
+					"name": "异能内在法术 Innate Occult Spells"
+				},
+				"1vkRwvLFM3YAEtVG":{
+					"name": "飞行术 Fly",
+					"description":"<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"8RQi2JKLZeyluJpJ":{
+					"name": "爪抓 Claw"
+				},
+				"DbOLvRJb1092JQkZ":{
+					"name": "螳螂伏击 Mantis Ambush",
+					"description": "<p><strong>触发</strong> 一个在螳螂爷爷触及范围内的敌人被盟友的近战打击命中</p>\n<hr />\n<p><strong>效果</strong> 螳螂爷爷对触发的生物进行一次爪抓打击。</p>"
+				},
+				"GRo9JVnFw24DFzx4":{
+					"name": "猛扑 Pounce",
+					"description": "<p>螳螂爷爷行走，然后打击。</p>"
+				}
+			}
 		},
 		"Grave Spinosaurus": {
 			"name": "死墓棘龙 Grave Spinosaurus",
@@ -1076,7 +1450,56 @@
 			"name": "Gumiho"
 		},
 		"Halspin the Stung": {
-			"name": "Halspin the Stung"
+			"name": "哈尔斯丁·刺痛 Halspin the Stung",
+			"blurb": "男性猫族野兽歌手",
+			"senses":"昏暗视觉",
+			"items":{
+				"TJHyjkRvLrXnd0xr":{
+					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"K3kGOVQTTZBZhvRX":{
+					"name": "吟游诗人组曲法术 Bard Composition Spells"
+				},
+				"TfC2EjaXddmGxrek":{
+					"name": "快板曲 Allegro",
+					"description": "<p>你可以通过快节奏的表演让盟友获得加速效果。该盟友获得 @Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{加速 Quickened} 效果，并且可以使用额外动作进行打击、移动或快步。</p>"
+				},
+				"AA8JzSFUGKgHXH6M":{
+					"name": "抚慰叙事诗 Soothing Ballad",
+					"description": "<p>你获取缪斯的力量，抚慰你的盟友。选择以下三个效果之一</p>\n<ul>\n<li>法术尝试反制目标身上的恐惧效果。</li>\n<li>法术尝试反制目标身上的强制麻痹效果。</li>\n<li>法术给目标回复7d8生命值</li>\n</ul>\n<hr />\n<p><strong>升阶 (+1)</strong> 用来治疗的情况下，抚慰叙事诗可以恢复额外1d8生命值</p>"
+				},
+				"b4CtzB0Ie2yAiHnB":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"Sz9TP9FahgfZGFie":{
+					"name": "激发英勇 Inspire Heroics",
+					"description": "<p>你呼唤你的缪斯，极大的提升你和盟友受到的 <em>@Compendium[pf2e.spells-srd.IAjvwqgiDr3qGYxY]{激发勇气 Inspire Courage}</em> 或 <em>@Compendium[pf2e.spells-srd.bH0kPuf7UKxRvi2P]{激发防御 Inspire Defense}</em> 的效果。如果你的下一个动作是施展激发勇气或者激发防御，则尝试一次表演检定。该检定的DC通常等同于你组曲最高等级目标的非常困难DC，但是DM可以根据环境设置不同的DC。你激发勇气或者激发防御的效果取决于你检定的结果。</p>\n<hr />\n<p><strong>大成功</strong> 你激发勇气或者激发防御的状态加值提高到+3.</p>\n<p>@Compendium[pf2e.spell-effects.VFereWC1agrwgzPL]{激发勇气(大成功)}, @Compendium[pf2e.spell-effects.BKam63zT98iWMJH7]{激发防御(大成功)}</p>\n<p><strong>成功</strong> 你激发勇气或者激发防御的状态加值提高到+2.</p>\n<p>@Compendium[pf2e.spell-effects.kZ39XWJA3RBDTnqG]{激发勇气(成功)}, @Compendium[pf2e.spell-effects.Chol7ExtoN2T36mP]{激发防御(成功)}</p>\n<p><strong>失败</strong> 你的激发勇气或者激发防御只提供正常的+1加值，但你不需要花费施展这个法术的聚能值。</p>"
+				},
+				"JisdzM6NECDWeM1r":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"GJjHyNP7EY7U0MyP":{
+					"name": "+2 强击重拳缠手带 +2 Striking Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"CIJ0DCr6TTexR9bv":{
+					"name": "+1抗力皮甲 +1 Resilient Leather Armor",
+					"description":"<p>这种盔甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。</p>"
+				},
+				"Fe2M1zkMgYPXbmAq":{
+					"name": "马头琴 Morin Khurr",
+					"description":"<p>手持乐器包括风笛、小套编钟、小鼓、小提琴和弦乐器、长笛和龠、小竖琴、琵琶、小号和类似大小的乐器。GM可能会裁定一个特别大的手持仪器（如大号）具有更大的负载。诸如大鼓、全套编钟和键盘乐器之类的大型乐器不太方便携带，并且通常在演奏时需要静止。</p>"
+				},
+				"canSYxrQdUPmX0e7":{
+					"name": "爪抓 Claw"
+				},
+				"BVGX88wKGPX2xVzW":{
+					"name": "猫之幸运 Cat's Luck",
+					"description":"<p><strong>频率</strong> 每日一次</p>\n<p><strong>触发</strong> 哈尔斯丁反射豁免失败或大失败 </p>\n<hr />\n<p>哈尔斯丁重新投掷反射豁免，并使用较好的结果。</p>"
+				}
+			}
 		},
 		"Hana's Hundreds": {
 			"name": "花之百人众 Hana's Hundreds",
@@ -1161,14 +1584,68 @@
 				"YA1DlNWkyG964fUz":{
 					"name": "恐吓嚎鸣 Terrifying Cry",
 					"description":"<p>物灵·怨迹爆发出动物长啸来恐吓四周生物。在@Template[type:emanation|distance:120]{120尺弥漫}范围内每个生物必须进行一@Check[type:will|dc:27] 豁免并且随后免疫怨迹的恐吓嚎鸣1分钟。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物陷入1轮@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态并且@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物陷入1轮@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态并且@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
+				},
+				"2aRvF7IZPwf7N3pW":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>怨迹对@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}或措手不及生物的打击造成额外2d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"3GHUNFp47w8iIaPy":{
+					"name": "尖牙 Fangs",
+					"description":""
 				}
 			}
 		},
 		"Huldrin Skolsdottir": {
-			"name": "Huldrin Skolsdottir"
+			"name": "胡尔德林·斯科尔斯多蒂 Huldrin Skolsdottir",
+			"ac": "(举盾时36)",
+			"blurb": "女性人类盾女",
+			"items":{
+				"8uOSfgwTbpll6zR5":{
+					"name": "+2抗力革甲 +2 Resilient Hide Armor",
+					"description":"<p>这种盔甲混合了毛皮、结实的皮革，有时还有成型的熟皮，它的多层皮革提供了保护，尽管它的笨重会减慢穿戴者的速度，并降低其活动性。</p>"
+				},
+				"mI3F6MCHSPdyIdBg":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description":"<p>胡尔德林每回合获得一个额外反应动作，但只能用于借机攻击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"ib0TKDHkYeutQoKJ":{
+					"name": "盾牌格挡 Shield Block",
+					"description":"<p>当一个和胡尔德林相邻的盟友受到攻击伤害，或当胡尔德林尝试反射豁免后受到任何伤害时（甚至非物理伤害），同样也能触发此反应动作。根据情况，这能抵挡该名盟友或胡尔德林受到的伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
+				},
+				"V3y5waC94YousN5b":{
+					"name": "铁女架势 Iron Maiden Stance",
+					"description": "<p><strong>需求</strong> 胡尔德林持握盾牌</p>\n<hr />\n<p><strong>效果</strong> 胡尔德林获得@Compendium[pf2e.actionspf2e.xjGwis0uaC2305pm]{举起盾牌 Raise a Shield}的好处，直到她不再满足此架势的需求。当在此架势中时，每当盟友的打击对胡尔德林触及范围内的敌人造成伤害，该敌人受到[[/r {1d6}[piercing]]]{1d6穿刺伤害}。</p>"
+				},
+				"MNWki3hX0DvXAhW7":{
+					"name": "精通击倒 Improved Knockdown",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedKnockdown]</p>"
+				},
+				"PwFhdS1lxAn0KSyy":{
+					"name": "战争学识"
+				}
+			}
 		},
 		"Hummingbird": {
-			"name": "Hummingbird"
+			"name": "无境·蜂鸟 Hummingbird",
+			"blurb": "女性豺狼人承流学会化形者",
+			"senses":"黑暗视觉",
+			"items":{
+				"Ko4aNbEgnBzlpPk6":{
+					"name": "奥术准备法术 Prepared Arcane Spells"
+				},
+				"ML2bav0qGG70VWAS":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"L9i47CHaoNmdm5OZ":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"wdjGItceQjeRcTN6":{
+					"name": "变形 Change Shape",
+					"description": "<p>化形者变成中型气元素，或变回豺狼人形态。在元素形态下，她拥有飞行速度60尺，她的移动不会触发反应动作，并且她唯一能使用的打击是带有灵巧特征的狂风打击（造成[[/r {3d8+5}[bludgeoning]]]{3d8+5钝击伤害}，外加@Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}）。她在此形态下无法施法。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				}
+			}
 		},
 		"Inmyeonjo": {
 			"name": "Inmyeonjo"
@@ -1207,7 +1684,44 @@
 			"name": "Ji-yook (Gumiho Form)"
 		},
 		"Ji-yook (Level 13)": {
-			"name": "Ji-yook (Level 13)"
+			"name": "纪幽(13级) Ji-yook (Level 13)",
+			"blurb": "女性狐妖忍者",
+			"senses": "昏暗视觉",
+			"items":{
+				"kdSdQw1km4sjuCZV":{
+					"name": "神术内在法术 Innate Divine Spells"
+				},
+				"kK2Gq7DhRgZp3cDc":{
+					"name": "+2高等强击重拳缠手带，+2 Greater Striking Handwraps of Mighty Blows",
+					"description":"<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"NBUlKm3GztSseKbH":{
+					"name": "+1探险者服装 +1 Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"rMVBgXOADdN1F9Hh":{
+					"name": "爪抓 Claw"
+				},
+				"HNBFbHBCfRBGl9Dh":{
+					"name": "狐火 Foxfire"
+				},
+				"HfnoeVfnj8IRLiMx":{
+					"name": "化形 Change Shape",
+					"description":"<p>纪幽变回人类形态。使用化形算作是用欺骗技能的乔装（Impersonate）动作来创造伪装。纪幽可以一直保持在人类形态下，并可用该动作迅速回归真正的狐妖形态。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"44KacVRJuamqSH2x":{
+					"name": "狐火爆发 Foxfire Blast",
+					"description": "<p>纪幽进行一次拳头打击。若命中，目标额外受到[[/r {3d4}[electricity]]]{3d4点电击伤害}并被击退5尺。若重击，目标除被击退外还会被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"Jzn5fdGgdcmOg3Rh":{
+					"name": "固定射击 Pinning Shot",
+					"description":"<p>纪幽将敌人的衣服固定在墙体或地面上。纪幽进行一次飞镖打击。若命中，不造成伤害，改为将目标固定到一个邻接平面上。目标获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，必须用一个交互动作尝试@Check[type:athletics|dc:10|name:Pull Dart Free]检定拔出飞镖才能解除该禁足；解除之前目标无法离开该平面。若该次飞镖打击重击，目标必须通过两次运动技能检定才能拔出飞镖。目标以此法被禁足时处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-footed}状态。</p>" 
+				},
+				"UiEZKE5pwENRQFcr":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>纪幽的打击对措手不及的生物额外造成3d6点精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Ji-yook (Level 9)": {
 			"name": "纪幽(9级) Ji-yook (Level 9)",
@@ -1244,10 +1758,78 @@
 			"name": "Jin-hae"
 		},
 		"Joon-seo": {
-			"name": "Joon-seo"
+			"name": "俊森 Joon-seo",
+			"blurb": "男性轮回者诵击师",
+			"items":{
+				"3PEXf3YB7AgRS7zY":{
+					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"762R5Rki0QtilKRy":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"0AS9qDrB1Y7qNcCE":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"YURQRTk7AUnIbC4o":{
+					"name": "激发英勇 Inspire Heroics",
+					"description": "<p>你呼唤你的缪斯，极大的提升你和盟友受到的 <em>@Compendium[pf2e.spells-srd.IAjvwqgiDr3qGYxY]{激发勇气 Inspire Courage}</em> 或 <em>@Compendium[pf2e.spells-srd.bH0kPuf7UKxRvi2P]{激发防御 Inspire Defense}</em> 的效果。如果你的下一个动作是施展激发勇气或者激发防御，则尝试一次表演检定。该检定的DC通常等同于你组曲最高等级目标的非常困难DC，但是DM可以根据环境设置不同的DC。你激发勇气或者激发防御的效果取决于你检定的结果。</p>\n<hr />\n<p><strong>大成功</strong> 你激发勇气或者激发防御的状态加值提高到+3.</p>\n<p>@Compendium[pf2e.spell-effects.VFereWC1agrwgzPL]{激发勇气(大成功)}, @Compendium[pf2e.spell-effects.BKam63zT98iWMJH7]{激发防御(大成功)}</p>\n<p><strong>成功</strong> 你激发勇气或者激发防御的状态加值提高到+2.</p>\n<p>@Compendium[pf2e.spell-effects.kZ39XWJA3RBDTnqG]{激发勇气(成功)}, @Compendium[pf2e.spell-effects.Chol7ExtoN2T36mP]{激发防御(成功)}</p>\n<p><strong>失败</strong> 你的激发勇气或者激发防御只提供正常的+1加值，但你不需要花费施展这个法术的聚能值。</p>"
+				},
+				"gQAQ9DK0UD0lStW3":{
+					"name": "激发防御 Inspire Defense",
+					"description": "<p>你激励盟友更为有效的保护自己。你和区域内的盟友在AC豁免上获得+1状态加值，并且获得物理伤害抗力，等同于施法者等级的一半。</p>\n<p>@Compendium[pf2e.spell-effects.DLwTvjjnqs2sNGuG]{法术效果：激发防御}</p>"
+				},
+				"Wpd9QrFisPYxMAMl":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"bXKZJvRz9y0PLNB8":{
+					"name": "绕梁组曲 Lingering Composition",
+					"description": "<p>你给组曲中加入华丽的修饰，使其效果时间延长。如果你的下一个动作是施展一个持续时间为1轮的戏法组曲，尝试一次表演检定。该检定的DC通常等同于你组曲最高等级目标的普通难度DC，但是GM可以根据环境设置不同的DC。效果取决于你检定的结果。</p>\n<hr /><strong>大成功</strong> 组曲持续4轮\n<p><strong>成功</strong> 组曲持续3轮</p>\n<p><strong>失败</strong> 组曲持续1轮，但你不需要花费施展这个法术的聚能值。</p>"
+				},
+				"ShTgIJnpS5DtbhNt":{
+					"name": "+1抗力镶嵌皮甲 +1 Resilient Studded Leather Armor",
+					"description":"<p>这种皮甲用金属铆钉加固，有时也用小金属板加固，使皮甲保留大部分的柔韧性的同时得到更有力的保护。</p>"
+				},
+				"xrssNVnlllXDibnc":{
+					"name": "音爆 Sound Blast"
+				}
+			}
 		},
 		"Juspix Rammel": {
-			"name": "Juspix Rammel"
+			"name": "朱斯皮克斯·拉梅尔 Juspix Rammel",
+			"blurb": "男性半身人男巫",
+			"senses": "锐眼",
+			"items":{
+				"EDwLmZrzV7UKSmVT":{
+					"name": "原能准备法术 Prepared Primal Spells"
+				},
+				"TWHIXASInyOgYomw":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"0JofZo30SO9OmvMB":{
+					"name": "尖笑 Cackle",
+					"description": "<p>你以简短的笑声延长你产生的魔法效果。你用自由动作进行 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}。</p>"
+				},
+				"lNCdWC6w3YmFoduo":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"LmI7FQgv2nUQnmTK":{
+					"name": "无间幽影 Ceaseless Shadows",
+					"description": "<p>朱斯皮克斯尝试@Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}时不需要隐蔽或掩蔽。如果他被其他生物遮挡而获得弱效掩蔽（lessercover），则他被视为具有掩蔽（cover），并且可以进行@Compendium[pf2e.actionspf2e.ust1jJSCZQUhBZIz]{寻找掩蔽 Take Cover}动作。</p>"
+				},
+				"6DjILDjhThyP9eJB":{
+					"name": "魔宠 Familiar",
+					"description": "<p>朱斯皮克斯的魔宠是一只叫做翁蒂奥克（Ontiok）的野猫。翁蒂奥克速度40 尺，黑暗视觉，具有@Compendium[pf2e.familiar-abilities.K5OLRDsGCfPZ6mO6]{回避伤害：反射 Damage Avoidance: Reflex}魔宠能力。朱斯皮克斯具有@Compendium[pf2e.familiar-abilities.deC1yIM2S5szGdzT]{生命链接 Lifelink}和@Compendium[pf2e.familiar-abilities.wOgvBymJOVQDSm1Q]{法术传递 Spell Delivery}两个主人能力。</p>"
+				},
+				"GCcvHUUziY7d9auU":{
+					"name": "女巫庇护主 Witch Patron",
+					"description": "<p>凛冬</p>"
+				}
+			}
 		},
 		"Kannitri": {
 			"name": "卡尼翠 Kannitri",
@@ -1289,7 +1871,48 @@
 			}
 		},
 		"Kas Xi Rai": {
-			"name": "Kas Xi Rai"
+			"name": "卡熙莱 Kas Xi Rai",
+			"blurb": "女性天舒族高阶罪犯",
+			"ac":"(对反应动作和远程武器攻击AC42)",
+			"items":{
+				"0h3Hzq30mCIzXcop":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"GfO9PCaIW76I1fZF":{
+					"name": "风行跃 Wind Jump",
+					"description":"<p>你获得等同于速度的飞行速度。你必须在坚实的地面上结束回合，否则会坠落。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 在你的回合结束，你可以尝试一次@Check[type:acrobatics|dc:30]检定在空中找到借力点。若成功，你就不会坠落。</p>\n<p>@Compendium[pf2e.spell-effects.5MI2c9IgxfSeGZQo]{法术效果：风行跃}</p>"
+				},
+				"4QmvDr3RLNV6OYis":{
+					"name": "爆气冲刺 Ki Rush",
+					"description":"<p>运气加速，健步如飞的你身影甚是模糊。进行2次移动：2次行走，2次快步，或1次行走1次快步（顺序自定）。</p>\n<p>你在该移动中和直到你下一回合开始，都会获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 状态。</p>"
+				},
+				"ifWk7fzxrVcTeDbM":{
+					"name": "斗气击 Ki Strike",
+					"description":"<p>运气集中化为魔力攻击。进行一次无武装打击或疾风连击（这不会改变绝招每回合只能使用1次的限制）。</p>\n<p>打击的攻击骰获得+1状态加值，且打击造成1d6点额外伤害。该伤害可从下列类型中选择其一作为伤害类型，在每次进行打击时选择：力场、秩序（只有当你守序时）、负能量或正能量。</p>\n<p>@Compendium[pf2e.spell-effects.8olfnTmWh0GGPDqX]{法术效果：斗气击}</p>\n<hr />\n<p><strong>升阶 (+4)</strong> 额外伤害增加1d6。</p>"
+				},
+				"aTjYL60fDsG2Dzsq":{
+					"name": "+2 高等强击高等腐蚀重拳缠手带+2 Gerater Striking Greater Corrosive Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"FN1jPZvyzmDeGbK1":{
+					"name": "枝扫 Lashing Branch"
+				},
+				"XIcgtyDG2R4Ita9b":{
+					"name": "对反应动作和远程武器攻击AC42"
+				},
+				"n3rhHu2WPvGH8Mkv":{
+					"name": "盘根摔绊 Tangled Forest Trip",
+					"description":"<p><strong>需求</strong> 卡熙莱处于盘根架势</p>\n<p><strong>触发</strong> 一个生物离开卡熙莱触及范围内的空间</p>\n<hr />\n<p><strong>效果</strong> 触发生物必须尝试@Check[type:reflex|dc:37]豁免、@Check[type:acrobatics|dc:37]检定或@Check[type:athletics|dc:37]检定，如果失败，生物在该动作中被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>"
+				},
+				"kJ78e3R1iGB8OqPY":{
+					"name": "力竭疾风 Exhausting Flurry",
+					"description":"<p>当卡熙莱以疾风连击对同一个目标进行两次打击，并且至少其中一次命中且造成伤害时，目标必须通过@Check[type:fortitude|dc:39]豁免，否则陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并且在力竭期间，陆地速度受到-5尺状态减值。如果大失败，该生物陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且在力竭期间，陆地速度受到-10尺状态减值。</p>"
+				},
+				"11HPHRUkwye0ljJh":{
+					"name": "犯罪学识"
+				}
+			}
 		},
 		"Ki Adept": {
 			"name": "内家好手 Ki Adept",
@@ -1407,6 +2030,14 @@
 				"2YsgkSpxPr5k633t":{
 					"name": "奥术自发法术 Spontaneous Arcane Spells"
 				},
+				"EphoRbFbHdHPbRCy":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"LAN2qDet78zGuLjm":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
 				"lakHxBya0Tud6OmM":{
 					"name": "聚能法术 Focus Spells",
 					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
@@ -1483,7 +2114,28 @@
 			}
 		},
 		"Lantondo": {
-			"name": "Lantondo"
+			"name": "兰托多 Lantondo",
+			"blurb": "无性别汲魂木哈罗牌师",
+			"items":{
+				"LBZtK1LB374osBxN":{
+					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"elH0FgXTZzZkedeI":{
+					"name": "木质哈罗套牌 Wooden Harrow Deck",
+					"description": "<p>被赌博者和占卜者喜爱的这种套牌有多个种类。</p>\n<hr />\n<p>普通哈罗套牌以高质量纸张和配图制成——哈罗牌解读者通常使用这种套牌。</p>"
+				},
+				"0bDfvAaxJn9v9oiN":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"soYdtxDGxI1PkvMu":{
+					"name": "哈罗牌 Harrow Card"
+				},
+				"EEn1jXnRodaq9ybL":{
+					"name": "操控哈罗牌 Control Harrow Cards",
+					"description": "<p>只要兰托多能看到它的目标，就能以它的任意一张哈罗牌进行打击。当兰托多以哈罗牌进行打击时，它能选择将卡片留在目标所在空间的任何平面上，也可以在动作结束时将牌收回自己的牌库中。</p>"
+				}
+			}
 		},
 		"Laruhao": {
 			"name": "Laruhao"
@@ -1492,10 +2144,85 @@
 			"name": "Lophiithu"
 		},
 		"Maalya": {
-			"name": "Maalya"
+			"name": "马尔雅 Maalya",
+			"ac":"(举盾时AC39)",
+			"blurb": "女性天辛族战舞者",
+			"items":{
+				"RnRENAHTmiSk48sb":{
+					"name": "高等炽火胶 Greater Alchemist's Fire"
+				},
+				"h4lgTxDSEuy51dcs":{
+					"name": "及时备战 Quick Draw",
+					"description":"战舞者以交互动作拔出武器，然后用它进行一次打击。"
+				},
+				"d3lB3jsGsGDrFd3o":{
+					"name": "击打盾牌 Shield Drum",
+					"description":"<p>战舞者举盾，然后对敌人@Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralizes}。</p>"
+				},
+				"GlzE8aPPISQLkToK":{
+					"name": "威胁之舞 Threatening Dance",
+					"description": "<p>战舞者选择先快步后@Compendium[pf2e.actionspf2e.EEDElIyin4z60PXx]{表演 Performs}，或者先表演后快步。将表演检定结果和战舞者触及内一个生物的意志DC 相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物对所有攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到战舞者的下个回合开始。</p>\n<p><strong>成功</strong> 生物对战舞者之外的生物做出的下一次攻击措手不及，直到战舞者下回合开始。</p>"
+				},
+				"Xkb0A0eb7R40FSTM":{
+					"name": "盾牌格挡 Shield Block",
+					"description": "<p><strong>触发</strong> 你正处于举盾状态，并因为一次物理攻击而承受伤害</p>\n<hr />\n<p>你快速调整盾牌的角度，抵御一次猛烈的直击。你的盾牌会为你减免相当于它的硬度（Hardness）的伤害，但你和你的盾牌都必须承受相当于减免数值扣去以后的剩余伤害——这可能会导致你的盾牌破损或是被摧毁。</p>"
+				},
+				"LCYNJHWL7NYjWnRj":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Xkb0A0eb7R40FSTM":{
+					"name": "盾牌格挡 Shield Block",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
+				}
+			}
 		},
 		"Mafika Ayuwari": {
-			"name": "Mafika Ayuwari"
+			"name": "马菲卡·阿尤瓦里 Mafika Ayuwari",
+			"blurb": "男性桑吉人岚阳法盟调和语者",
+			"items":{
+				"QzcjjUQvqSghbMV3":{
+					"name": "奥术准备法术 Prepared Arcane Spells"
+				},
+				"hi6kYuM8cd45aJJC":{
+					"name": "德鲁伊派系法术 Druid Order Spells"
+				},
+				"IlYCHm6OXl3FXB7h":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"Dx1W5l8xcDYDjZ6S":{
+					"name": "锐刺荆棘 Impaling Briars",
+					"description": "<p>区域内的地面会转化为大量危险的荆棘，它们会攻击并妨碍你的敌人。当你每轮维持法术时，能够从后述效果中选择其一，使其发生在法术区域内。</p>\n<ul>\n<li><strong>围捕 Ensnare</strong> 荆棘丛会包围你的敌人，尝试将其固定住。区域内的敌人（或者在区域上空至多20尺的高度飞行的敌人）必须尝试1次反射豁免。失败会使得所有速度在1轮内承受-10尺的环境减值（circumstance penalty），大失败则会被 @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} 1轮（除非目标从中逃脱）。</li>\n<li><strong>阻碍 Impede</strong> 荆棘开始扭曲和蠕动，使得整个区域都变为困难地形（difficult terrain）。</li>\n<li><strong>筑墙 Wall</strong> 一个棘墙术（wall of thorns）出现在区域内，持续1轮。这段棘墙是高等困难地形（greater difficult terrain），以取代原本的困难地形。</li>\n</ul>\n<p>此外，每轮1次，你能够指使荆棘刺穿区域内的任意目标（或者在区域上空至多20尺的高度飞行的敌人），这需要你能够看到目标且使用1个单动作，这么做具有专注和操作特征。进行1次法术攻击检定。成功时，目标承受10d6点穿刺伤害，并会使得所有速度在1轮内承受-10尺的环境减值，持续1轮；大成功时，目标会被禁足1轮（除非目标从中逃脱）。</p>"
+				},
+				"C3SCJkplJ7UggrPO":{
+					"name": "预警术 Foresight",
+					"description": "<p>你获得一种能知晓法术目标即将遇到的危险的第六感。如果对于法术目标你选择一个生物而不是自身，你会创造一个精神链接；通过该链接你能告知目标危险将至。该链接是一个心灵效果。由于该法术需要你处理大量的信息，你无法令超过一个预警术同时生效。再次施放预警术会结束之前的预警术。当预警术生效时，目标在其先攻骰上获得+2状态加值，并且对 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 生物或者被夹击时不视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} 。除此之外，你获得下列反应动作： @Compendium[pf2e.actionspf2e.VOEWhPQfN3lvHivK]{预警 Foresight}</p>"
+				},
+				"tSm1Hrsv7Iuf7Yh0":{
+					"name": "飞行术 Fly",
+					"description":"<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"bFx43z2br94er34t":{
+					"name": "妙语连珠 Brilliant Wordplay",
+					"description":"<p><strong>触发</strong> 马菲卡被一个语言效果作为目标</p>\n<hr />\n<p><strong>效果</strong> 马菲卡尝试反制效果（反制调整值+30）。如果他成功反制该语言效果，他能为该语言效果选择一个30尺内的新目标。</p>"
+				},
+				"7ZieZ35Tgd7gIsuj":{
+					"name": "岚阳法盟魔力大盾 Tempest-Sun Shielding",
+					"description": "<p><strong>触发</strong> 马菲卡或30 尺内的盟友受到伤害 </p>\n<hr />\n<p>马菲卡立刻将未使用的法术能量转化为护身大盾。马菲卡消耗法术位中一个已准备的法术。他针对触发的伤害，抵消相当于法术环级4倍的伤害。</p>"
+				},
+				"7ujew2EzD9OLSix5":{
+					"name": "平和如潮 Halcyon Surge",
+					"description": "<p>马菲卡施放一个不超过两个施法动作的奥术法术，然后施放一个不超过两个施法动作的德鲁伊领域法术（依然如同往常那样要消耗1个聚能点）。</p>"
+				},
+				"Dxnav3OiQkCtGKmV":{
+					"name": "转移法术 Shift Spell",
+					"description": "<p><strong>需求</strong> 马菲卡有某个正在持续生效且造成范围效果的法术，并且他在法术的射程内</p>\n<hr />\n<p>马菲卡将法术范围移动至120尺内的某个新源点。法术的剩余持续时间减半。法术已经造成的瞬间效果或永久效果（例如伤害或治疗）不受影响，也不会再次发生。</p>"
+				},
+				"byr952UDIuIKszEb":{
+					"name": "学术学识"
+				}
+			}
 		},
 		"Mage of Many Styles": {
 			"name": "巧变法师 Mage of Many Styles",
@@ -1503,6 +2230,10 @@
 				"CMSkH2mq7FD8PZSt":{
 					"name": "聚能法术 Focus Spells",
 					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"1Ru0trv2O39EQmoe":{
+					"name": "学徒之手 Hand of the Apprentice",
+					"description": "<p>你将一把自己持握且已受训的近战武器对目标投掷出去，进行1次法术攻击检定。成功时，你造成武器的伤害，就如同你用近战攻击命中敌人一般，不过伤害附加的是你的施法属性调整值，而非你的力量调整值。大成功时，你造成双倍伤害，并附加武器的重击专精效果（critical specialization effect）。无论结果如何，武器都会飞回身边，返回到你的手上。</p>"
 				},
 				"tTY6LIUTTZcgdkBY":{
 					"name": "奥术准备法术"
@@ -1573,7 +2304,22 @@
 			}
 		},
 		"Master Xun": {
-			"name": "Master Xun"
+			"name": "大师勋 Master Xun",
+			"blurb": "天舒族黄金盟流氓",
+			"items":{
+				"VOt7byVN0Y1EHTi5":{
+					"name": "持久衰弱打击 Lasting Debilitating Strike",
+					"description":"<p><strong>触发</strong> 勋的打击对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的敌人造成伤害</p>\n<hr />\n<p><strong>效果</strong> 勋从以下衰弱效果中选择一种，直到勋的下回合结束；如果勋造成重击，则持续一周。</p>\n<p><strong>衰弱</strong> 目标的速度受到-10尺状态减值。</p>\n<p><strong>衰弱</strong> 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>"
+				},
+				"CaFY5kyjRXQON92N":{
+					"name": "逼近威胁 Looming Threat",
+					"description":"<p>大师勋@Compendium[pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{快步 Steps}或@Compendium[pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feints}， 然后进行一次@Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralizes}。</p>"
+				},
+				"htMmxOMY7QoAXqje":{
+					"name": "偷袭 Sneak Attack",
+					"description":"<p>大师勋对措手不及的敌人造成额外3d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Melodic Squall": {
 			"name": "Melodic Squall"
@@ -1757,11 +2503,30 @@
 			}
 		},
 		"Phuthi": {
-			"name": "Phuthi"
+			"name": "普希·努瓦 Phuthi",
+			"blurb": "女性豺狼人承流学会化形者",
+			"senses":"黑暗视觉",
+			"items":{
+				"Ko4aNbEgnBzlpPk6":{
+					"name": "奥术准备法术 Prepared Arcane Spells"
+				},
+				"3FZDPpPCEne5zWXG":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"5xA01gfNHtOGVxEe":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"wdjGItceQjeRcTN6":{
+					"name": "变形 Change Shape",
+					"description": "<p>化形者变成中型气元素，或变回豺狼人形态。在元素形态下，她拥有飞行速度60尺，她的移动不会触发反应动作，并且她唯一能使用的打击是带有灵巧特征的狂风打击（造成[[/r {3d8+5}[bludgeoning]]]{3d8+5钝击伤害}，外加@Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}）。她在此形态下无法施法。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				}
+			}
 		},
 		"Planar Terra-cotta Soldier": {
 			"name": "次元兵马俑士兵 Planar Terra-cotta Soldier",
-			"ac":"32 with shield raised",
+			"ac":"举盾时32",
 			"languages":"(无法说任何语言)",
 			"blurb": "变体兵马俑士兵",
 			"publicNotes": "<p>兵马俑守护古代统治者的陵墓，在那里不休不眠地警戒，只有当入有入侵者闯入盗墓或玷污陵墓时才会活动起来。每个战士都是用粘土精心制作而成，并各自具有独特的特征。</p>\n<hr />\n<p>兵马俑有6英尺高，600磅重。</p>",
@@ -1769,6 +2534,14 @@
 				"uTQwt6vV8Jw92Whh":{
 					"name": "次元快步 Planar Step",
 					"description":"<p>次元兵马俑士兵可以在主物质位面的裂缝中穿行，立刻将自己传送到60尺内一个地方。它在[[/br 1d4 #Planar Step Recharge]]{1d4轮}内无法再次使用次元快步。</p>"
+				},
+				"1vK61e5tiUHGEF7i":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"MS8VRrrPU2Us5eB9":{
+					"name": "盾牌格挡 Shield Block",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
 				}
 			}
 		},
@@ -1799,6 +2572,14 @@
 				"4y0Im0eAbj4YFOII":{
 					"name": "部队移动 Troop Movement",
 					"description":"<p>当部队行走时，它首先以一个自由动作重整队列，聚集成20尺*20尺方格的队列（减去任何损失的方格），然后以满速度移动。它在移动时如同一个巨形生物那般；举例来说，如果任何方格进入了困难地形，则整个部队都需要花费额外的移动力。</p>"
+				},
+				"ncklibzh6Dfp2LTc":{
+					"name": "盾牌格挡 Shield Block",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
+				},
+				"YfW3hmqsouC0M5an":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
@@ -1850,11 +2631,42 @@
 				},
 				"j5YeAHaP8v8rDPhq":{
 					"name": "摔跤学识"
+				},
+				"qtIeNtQG9GuuaPbT":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>当有生物触发捣达的借机攻击时，他可以选择用运动技能@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}触发生物代替这次近战打击。若擒抱成功，同样可以打断触发的操作动作。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
 		"Ran-to (Level 16)": {
-			"name": "Ran-to (Level 16)"
+			"name": "捣达(16级) Ran-to (Level 16)",
+			"blurb": "男性雪地精摔跤手",
+			"senses":"黑暗视觉",
+			"items":{
+				"fWgbC74pAipVC9q1":{
+					"name": "+2抗力镶嵌皮甲 +2 Resilient Studded Leather Armor",
+					"description":"<p>这种皮甲用金属铆钉加固，有时也用小金属板加固，使皮甲保留大部分的柔韧性的同时得到更有力的保护。</p>"
+				},
+				"fkempowsMrEXyJXO":{
+					"name": "身体投掷 Body Slam",
+					"description":"<p><strong>需求</strong> 捣达正擒抱或束缚一个生物。</p>\n<hr />\n<p><strong>效果</strong> 捣达将该生物摔投到地面上。该生物受到[[/r {10d6}[bludgeoning]]]{10d6钝击伤害}（@Check[type:fortitude|dc:37|basic:true]豁免）并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。擒抱结束。</p>"
+				},
+				"zoBYHNzOOk4csjIn":{
+					"name": "高等飞扑 Greater Leaping Catch",
+					"description": "<p>捣达纵身一跃，在腾飞途中尝试对敌人擒抱。他进行一次@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}、@Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@Compendium[pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。他的最大距离为75 尺。他必须如常进行运动技能检定来执行这个动作，但无论是何种，DC 都等于他在空中移动的尺数的一半。在该次跳跃中任何一点，捣达可以进行一次运动检定@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}一个目标。在跳跃检定完成后，他（若擒抱成功，还有被擒抱的生物）一同倒地。捣达不会在使用此能力时受到坠落伤害，但擒抱的目标会受到和坠落距离相配的坠落伤害。</p>"
+				},
+				"9IuYBABfjiSu0kC2":{
+					"name": "人肉大风车 Whirlwind Toss",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 捣达正@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}着一个生物。</p>\n<hr />\n<p><strong>效果</strong> 捣达将擒抱的生物抓牢，旋转起来用他攻击触及内的任何生物，最后把他丢出去。捣达进行一次运动检定，对抗被擒抱生物的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 捣达将他甩出很远。擒抱结束。被擒抱生物被甩飞到10 尺内一格，受到[[/r {12d6}[bludgeoning]]]{12d6点钝击伤害}，并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。所有邻接捣达的生物受到等量钝击伤害（@Check[type:reflex|dc:37|basic:true]豁免）。</p>\n<p><strong>成功</strong> 如同大成功，不过被擒抱生物只会被甩飞到5尺内一格，且伤害为[[/r {8d6}[bludgeoning]]]{8d6钝击伤害}。</p>\n<p><strong>失败</strong> 捣达没有成功制住目标。擒抱结束，被擒抱生物倒地。</p>\n<p><strong>大失败</strong> 捣达失去了对目标的控制，擒抱结束。</p>"
+				},
+				"j5YeAHaP8v8rDPhq":{
+					"name": "摔跤学识"
+				},
+				"qtIeNtQG9GuuaPbT":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>当有生物触发捣达的借机攻击时，他可以选择用运动技能@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}触发生物代替这次近战打击。若擒抱成功，同样可以打断触发的操作动作。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				}
+			}
 		},
 		"Ran-to (Level 20)": {
 			"name": "Ran-to (Level 20)"
@@ -1869,6 +2681,22 @@
 				},
 				"flhx8BOplUKqlBal":{
 					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"zrpa4AMfrAcfJtCE":{
+					"name": "末日丧歌 Dirge of Doom",
+					"description": "<p>区域内的敌人获得 @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。 他们如果还在这个区域当中就不能将惊惧值降低到1以下。</p>"
+				},
+				"agSMofrnbv9HQYK8":{
+					"name": "三拍子 Triple Time",
+					"description": "<p>你以活跃的节奏起舞，加速你盟友的移动。你和所有区域内的盟友的所有速度获得+10尺状态加值，持续1轮。</p>\n<p>@Compendium[pf2e.spell-effects.HtaDbgTIzdiTiKLX]{法术效果：三拍子}</p>"
+				},
+				"t8cwpQWT40Bx7TIX":{
+					"name": "绕梁组曲 Lingering Composition",
+					"description": "<p>你给组曲中加入华丽的修饰，使其效果时间延长。如果你的下一个动作是施展一个持续时间为1轮的戏法组曲，尝试一次表演检定。该检定的DC通常等同于你组曲最高等级目标的普通难度DC，但是GM可以根据环境设置不同的DC。效果取决于你检定的结果。</p>\n<hr /><strong>大成功</strong> 组曲持续4轮\n<p><strong>成功</strong> 组曲持续3轮</p>\n<p><strong>失败</strong> 组曲持续1轮，但你不需要花费施展这个法术的聚能值。</p>"
+				},
+				"9N4J4q3DrkBoTHHT":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
 				},
 				"GxHbUpZV6Kz3UI0u":{
 					"name": "+3高等强击二胡琴弓 +3 Greater Striking Erhu Bow",
@@ -1936,10 +2764,10 @@
 			"name": "怪兽螨(埃格隆) Rivka (Igroon)",
 			"publicNotes": "<p>怪兽螨是一类依附于怪兽（Kaiju）体表的寄生性怪物。它们的本来面貌好似巨型蟑螂，长着8只剃刀般的足和两张嘴——一张生在两个凶恶的钳子之间，另一张开在下腹部的则大得多。通过这第二张嘴，它们得以吸食自己依附的怪兽的原初能量。</p>\n<p>紧跟着怪兽的袭击，怪兽螨在那之后会从宿主的身体上分离，介入灾区，以怪兽使者的身份向毫无戒心的民众索要祭品。据这个残忍的老骗子所言，只有鲜血和黄金才能安抚它们的主人——但当然，怪兽螨在这些献礼送到怪兽手上前就卷走祭品跑路了（但不管怎样，这些祭品对怪兽来说本就没什么意义）。最为可憎的怪兽螨会搜寻废墟中的死者来模仿，用魔法以受人爱戴的城市长者或牧师的面貌示人，好激发市民们的偏执。</p>\n<p>饮下怪兽的血液会对怪兽螨的解剖结构产生奇妙的效果，宿主的原初能量能够增强它的防御与进攻能力。其他生物也曾尝试喝下怪兽的血来复制这种现象，但效果总是很糟糕。很显然，怪兽螨是通过与怪兽一同进化，才能代谢它们古老的血液。</p>",
 			"items":{
-				"LOgKr3T5wbATylBi":{
+				"VyKXOTWcsObyT8Iu":{
 					"name": "原能内在法术 Innate Primal Spells"
 				},
-				"wHnU91Jwyfnpmsux":{
+				"LOgKr3T5wbATylBi":{
 					"name": "魅惑术(随意施法) Charm (at will)",
 					"description":"<p>在目标看来，你的言语甜蜜动听，你的形象笼罩在梦幻般的光晕中。目标必须尝试一次意志豁免，如果你或者你的盟友最近威胁它或者对它进行了敌对行为，会获得+4环境加值。</p>\n<p>你可以解消该法术。如果你对目标使用任何敌对动作，法术终止。当该法术结束时，目标不一定会意识到自己被魅惑了，除非它和你的友好关系，或者你说服它去做的事情与其期望发生冲突。这也即是说你可以通过常规的方法说服目标继续作为你的朋友。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且意识到你尝试魅惑它。</p>\n<p><strong>成功</strong> 该目标不受影响，但是认为你的法术是某种无害的东西，而不是魅惑术，除非它能识别该法术（通常通过辨识法术（Identifying Spells））。</p>\n<p><strong>失败</strong> 目标对你的态度变为 @Compendium[pf2e.conditionitems.v66R7FdOf11l94im]{友好 Friendly}）。如果已经是友好，则变为 @Compendium[pf2e.conditionitems.v44P3WUcU1j0115l]{乐于帮助 Helpful}。它不能对你做出敌对行为。</p>\n<p><strong>大失败</strong> 目标变为乐于帮助（helpful）并且不能对你做出敌对行为。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备。</p>\n<p><strong>升阶 (8环级)</strong> 该法术持续时间为持续到下次你进行你的日常准备，并且你能以至多10个生物作为目标。</p>"
 				},
@@ -2072,6 +2900,10 @@
 				"OtJU2gZn5IoFtPJY":{
 					"name": "原能内在法术 Innate Primal Spells"
 				},
+				"RMVwXfUCVP5j7Qpq":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
 				"usuiDSVV3x9uoBy5":{
 					"name": "注目术(随意施法) Enthrall (at will)",
 					"description":"<p>你的言语令目标迷魂。你在施法和持续时间中持续演说或者歌唱。注意到你的演说或者歌唱的目标可能会失去注意力；每个目标必须尝试一次意志豁免。如果目标的信仰，族裔，政治观念对立，或者其他它不远认同你的说法的情况，GM可能赋予一个环境加值（最大为+4）。</p>\n<p>在你维持法术时，每个进入射程的生物必须尝试一次豁免。如果你在演说，注目术获得语言特征。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响，并且注意到你尝试使用魔法。</p>\n<p><strong>成功</strong> 目标不必注意，但是也没发现你在使用魔法（他也许发现其他人被注目术影响）。</p>\n<p><strong>失败</strong> 目标对你 @Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}。当它发现其不认同的行为或者说法时，它可以尝试另一次意志豁免。如果它成功，他不再迷魂，并且暂时免疫1小时。如果目标成为敌对行为的目标，或者其他生物对其尝试交涉或者威吓，迷魂会立即结束。</p>\n<p><strong>大失败</strong> 如同失败，但是目标不会在其不认同你时尝试豁免以结束迷魂。</p>"
@@ -2112,6 +2944,10 @@
 					"name": "惑敌飞跃 Disorienting Tumble",
 					"description":"<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
 				},
+				"wHwMvdbIfrswdggw":{
+					"name": "灵巧躲避 Nimble Dodge",
+					"description": "<p><strong>触发</strong> 白谷被一个她能看到的攻击者作为近战或远程攻击的目标。</p>\n<hr />\n<p><strong>效果</strong> 白谷对抗该次攻击的AC获得+2环境加值。</p>"
+				},
 				"bmknajpxNBKh5qrx":{
 					"name": "强力拳 Powerful Fists",
 					"description":"<p>白谷的拳头打击造成致命伤时不会受到非致命的攻击减值。白谷的拳头打击视为寒铁和银制。</p>"
@@ -2127,7 +2963,34 @@
 			}
 		},
 		"Shino Hakusa (Level 16)": {
-			"name": "Shino Hakusa (Level 16)"
+			"name": "白谷真野(16级) Shino Hakusa (Level 16)",
+			"blurb": "女性天舒人刺客",
+			"items":{
+				"Po0SiD02SeV8i9lX":{
+					"name": "+2高等强击高等电击重拳缠手带 +2 Greater Striking Greater Shock Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"zHNwPjBJPQjc6zc1":{
+					"name": "灵巧躲避 Nimble Dodge",
+					"description": "<p><strong>触发</strong> 白谷被一个她能看到的攻击者作为近战或远程攻击的目标。</p>\n<hr />\n<p><strong>效果</strong> 白谷对抗该次攻击的AC获得+2环境加值。</p>"
+				},
+				"e9QsTTUVu8r1v5Kk":{
+					"name": "惑敌飞跃 Disorienting Tumble",
+					"description":"<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				},
+				"bmknajpxNBKh5qrx":{
+					"name": "强力拳 Powerful Fists",
+					"description":"<p>白谷的拳头打击造成致命伤时不会受到非致命的攻击减值。白谷的拳头打击视为寒铁和银制。</p>"
+				},
+				"b1CXbdxuM0TsLGtM":{
+					"name": "压痛点攻击 Pressure Point Attack",
+					"description":"<p>白谷针对目标的压痛点发动攻击来削弱对方。白虎进行一次拳头打击。若命中，目标正常受到伤害，同时需要进行一次@Check[type:fortitude|dc:38]豁免检定。无论豁免结果如何，目标对压痛点攻击获得1分钟的临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标临时弱化。在1轮内，目标获得@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且使用具有操作特征的动作时需进行@Check[type:flat|dc:5]检定，失败则失去动作。</p>\n<p><strong>失败</strong> 如成功，但持续1 分钟。</p>\n<p><strong>大失败</strong> 如成功，但持续1 分钟，且@Check[type:flat|dc:11]检定DC11，同时目标在1分钟内速度获得-10尺状态减值。</p>"
+				},
+				"DAJ52x6r7a8XLWgF":{
+					"name": "偷袭 Sneak Attack",
+					"description":"白谷打击措手不及的目标额外造成4d6点精准伤害。\n<hr />\n@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]"
+				}
+			}
 		},
 		"Shino Hakusa (Level 20)": {
 			"name": "Shino Hakusa (Level 20)"
@@ -2140,6 +3003,18 @@
 			"items":{
 				"Hqk3Fkvq4XWZvng8":{
 					"name": "扫尾 Tail"
+				},
+				"fVfVD1mCxzdOlLAd":{
+					"name": "利爪 Claws",
+					"description":""
+				},
+				"7lOrdawc6xArbSdj":{
+					"name": "尖牙 Fangs",
+					"description": ""
+				},
+				"iffe9TUd9KOLBc36":{
+					"name": "击倒 Knockdown",
+					"description":"@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]"
 				},
 				"3sGOIcfYzt3l36nR":{
 					"name": "嗅觉（模糊）30尺"
@@ -2159,7 +3034,43 @@
 			}
 		},
 		"Sixth Pillar Student": {
-			"name": "Sixth Pillar Student"
+			"name": "第六柱学徒 Sixth Pillar Student",
+			"blurb": "娜迦裔和人类术法武僧",
+			"senses":"黑暗视觉",
+			"allSaves":"针对魔法的豁免有+1状态加值",
+			"items":{
+				"uMz0RtoUgvpPoKW6":{
+					"name": "奥术自发法术 Spontaneous Arcane Spells"
+				},
+				"HWV6wMeJoNGLiKS7":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"63pPqK8bI1CuXafX":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"kLYVtq6oLl60zmzo":{
+					"name": "元素爆破(气) Elemental Blast (air)",
+					"description":"<p><strong>区域</strong> @Template[type:burst|distance:10], @Template[type:cone|distance:30]或@Template[type:line|distance:60]</p>\n<hr />\n<p>你聚集元素的能量并且以你决定的形态轰炸你的敌人，造成8d6钝击伤害（如果你的元素是火，则为火焰伤害）。此法术拥有你的元素特征。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加2d6点。</p>"
+				},
+				"S2LybclAuBOHQs2U":{
+					"name": "元素机动(气) Elemental Motion (air)",
+					"description": "<p>你呼唤元素来推动自己，根据你的元素类型来改善你的速度。</p>\n<ul>\n<li>@Compendium[pf2e.spell-effects.iqtjMVl6rGQhX2k8]{风 Air}你获得等同于你速度的飞行速度。</li>\n<li>@Compendium[pf2e.spell-effects.qbOpis7pIkXJbM2B]{地 Earth}你获得等同于你速度的挖掘速度。</li>\n<li>@Compendium[pf2e.spell-effects.q4EEYltjqpRGiLsP]{火 Fire}你获得等同于你速度的飞行速度。</li>\n<li>@Compendium[pf2e.spell-effects.D0Qj5tC1hGUjzQc4]{水 Water}你获得等同于你速度的游泳速度，并且能够在水下呼吸。</li>\n</ul>\n<hr />\n<p><strong>升阶 (6环级)</strong> 你在速度上获得一个10尺的状态加值。</p>\n<p><strong>升阶 (9环级)</strong> 状态加值增加至20尺。</p>"
+				},
+				"enKFNYH1uXkHkSkU":{
+					"name": "元素投掷(气) Elemental Toss (air)",
+					"description":"<p>你的手腕一记轻挥，一团元素物质就被抛向了你的敌人。进行一次法术攻击骰，在成功时造成1d8钝击伤害（如果你的元素是火，则为火焰伤害），在大成功时造成双倍伤害。此法术拥有你的元素特征。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加1d8点。</p>"
+				},
+				"AwFYUeIzqWfnAMED":{
+					"name": "+2高等强击重拳缠手带 +2 Greater Striking Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"hmQqc1WWSebjduDS":{
+					"name": "钝击能量 Bludgeoning Energy",
+					"description":"<p>学徒将元素能量和身体的力量结合起来，用强劲的气浪而非一般的能量类型来打击对手。学徒施放的任何造成能量伤害的法术（例如火球术、燃烧之手、冰冻射线等）都造成钝击伤害，代替原本伤害类型。</p>"
+				}
+			}
 		},
 		"Spinel Leviathan Syndara": {
 			"name": "Spinel Leviathan Syndara"
@@ -2171,7 +3082,43 @@
 			"name": "Sthira"
 		},
 		"Surjit Hamelan": {
-			"name": "Surjit Hamelan"
+			"name": "苏吉特·哈梅兰 Surjit Hamelan",
+			"blurb": "男性侏儒雨幕书会旁听生",
+			"senses":"昏暗视觉",
+			"items":{
+				"QNrS8LaZujg7xNpW":{
+					"name": "钩剑 Hook Sword",
+					"description":"<p>这种顶部有钩子的长剑可以轻易勾住敌人或他们的武器。</p>"
+				},
+				"REgkjoAto0ZC7I0E":{
+					"name": "钩剑 Hook Sword",
+					"description":"<p>这种顶部有钩子的长剑可以轻易勾住敌人或他们的武器。</p>"
+				},
+				"GEuHJzey2mGFUYrg":{
+					"name": "伪装 Camouflage",
+					"description": "<p>身处自然环境中时，苏吉特能在@Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}状态下@Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}。</p>"
+				},
+				"gTD4VEkGz2veh2m5":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description":"<p>苏吉特能使用远程武器进行借机攻击，就如同他在使用10尺触及的武器一般。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Ps8Cme5VgpZmRxZP":{
+					"name": "能查无形 Sense the Unseen",
+					"description": "<p><strong>触发</strong> 苏吉特在@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}时察觉检定失败。</p>\n<hr />\n<p><strong>效果</strong> 苏吉特能自动察觉到任何搜索区域内的@Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}生物，这些生物只对他变为@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。</p>"
+				},
+				"SkfTUNlafcn5QAxv":{
+					"name": "清除雨林 Clear the Rain",
+					"description":"<p>苏吉特行走两次。困难地形不会降低他的速度。苏吉特所进入的任何地形变为正常地形，而不是困难地形（或从高等困难地形变为困难地形），直到他的下个回合开始。</p>"
+				},
+				"qBmStn4qVEVjuW1j":{
+					"name": "雨幕之箭 Rain-Scribe Arrow",
+					"description": "<p>当苏吉特以远程武器重击一个生物，或在同一回合中以远程攻击第二层击中同一个生物时，苏吉特能尝试反制生物身上的一个魔法效果（反制等级7环）。他使用攻击调整值作为他的反制调整值。</p>"
+				},
+				"IbG6EsCannEnXRo0":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>苏吉特对措手不及的目标造成额外2d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Swatting Tail": {
 			"name": "重拍之尾 Swatting Tail",
@@ -2267,6 +3214,10 @@
 				},
 				"XRQqPpbcKxQZtcAr":{
 					"name": "半位面学识"
+				},
+				"PhGgas3V3uhQa4A0":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
@@ -2306,7 +3257,43 @@
 			}
 		},
 		"Syu Tak-nwa (Level 16)": {
-			"name": "Syu Tak-nwa (Level 16)"
+			"name": "苏塔奴(16级) Syu Tak-nwa (Level 16)",
+			"blurb": "女性嬛族白发女巫",
+			"items":{
+				"67zu7lZWfNjOFGws":{
+					"name": "异能准备法术 Prepared Occult Spells"
+				},
+				"hwx4Q8YmVaOhfkhN":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"Wj6e1VKTZ3IU3NNa":{
+					"name": "尖笑 Cackle",
+					"description":"<p>你以简短的笑声延长你产生的魔法效果。你用自由动作进行 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}。</p>"
+				},
+				"lIy6WpTO9RxwEtxy":{
+					"name": "+3高等强击宝剑 +3 Greater Striking Jian",
+					"description": "<p>数据如短剑</p>\n<p>这种宝剑有不同的形状和样式，它们通常2尺长。</p>"
+				},
+				"4BQjVqK90WiniYts":{
+					"name": "活发 Hair"
+				},
+				"dDsXiFw7Yz34rtG1":{
+					"name": "宝剑 Jian"
+				},
+				"gzFVsti15mvfMvM5":{
+					"name": "魔宠 Familiar",
+					"description": "<p>苏塔奴的魔宠是名为勇锁（Yon-so）的象鹰。勇锁拥有40尺飞行速度，黑暗视觉，30尺灵敏嗅觉（模糊感官）。</p>"
+				},
+				"qwDEiZBnLDUWn4ym":{
+					"name": "窒息活发 Choking Hair",
+					"description": "<p>只要苏塔奴用她的头发持续擒抱一个生物，该生物就无法呼吸，并且在尝试任何需要说话的动作时（这包括语言效果和施展包含言语要素的法术），必须尝试@Check[type:flat|dc:5]检定。如果失败，该动作被打断。</p>"
+				},
+				"fygrnuQNEcBuXcIu":{
+					"name": "强化活发 Empowered Hair",
+					"description": "<p>苏塔奴在使用活发上的造诣独树一帜。她的活发可以用来执行精确动作，比如开锁甚至简单的交互动作，并且她能用活发自动进行攫抓（Grab），如同名怪物能力。她可通过活发传递巫术。当苏塔奴成功施放需要2个或更多动作且无需攻击骰的巫术聚能法术时，若目标在触及内，作为施法动作的一部分，在应用巫术效果前，她可选择对该目标进行一次活发打击。若打击未命中，巫术不生效。</p>"
+				}
+			}
 		},
 		"Syu Tak-nwa (Level 20)": {
 			"name": "Syu Tak-nwa (Level 20)"
@@ -2354,6 +3341,10 @@
 				"splf2Bg9krRw5Scf":{
 					"name": "回归自然 Return to Nature",
 					"description":"<p>寒林巨鬼号令地底的植物根系将一个生物向地下拖入60尺。目标必须成功通过@Check[type:fortitude|dc:35]豁免，否则将@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}[[/br 1d4 #rounds]]{1d4轮}。在这之后此生物被埋于土中；其处于@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态并开始窒息，只要还埋在地下，每轮就会受到[[/r {4d6}[bludgeoning]]]{4d6钝击伤害}。无论是想逃离禁足还是擒抱状态，该生物都必须通过DC 35@Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}检定，邻接他的盟友也能够通过一次成功的@Check[type:athletics|dc:33]检定来将其拉出。</p>"
+				},
+				"RxDZR4G2rNzOtUor":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
@@ -2361,7 +3352,37 @@
 			"name": "Takatorra (Daitengu Form)"
 		},
 		"Takatorra (Level 13)": {
-			"name": "Takatorra (Level 13)"
+			"name": "鹰虎(13级) Takatorra (Level 13)",
+			"blurb": "非二元性别天狗剑圣",
+			"senses": "昏暗视觉",
+			"items":{
+				"1YfqINfkYNfo672z":{
+					"name": "+1抗力皮甲 +1 Resilient Hide Armor",
+					"description":"<p>这种盔甲混合了毛皮、结实的皮革，有时还有成型的熟皮，它的多层皮革提供了保护，尽管它的笨重会减慢穿戴者的速度，并降低其活动性。</p>"
+				},
+				"SDaiauhRUkXKSVTW":{
+					"name": "天狗风刃 Tengu gale blade"
+				},
+				"FRXtWzTxZB6XNyar":{
+					"name": "喙啄 Beak"
+				},
+				"iIfPcJYhQdIStdAD":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>如果鹰虎的借机攻击造成重击，除了造成伤害外，他还能选择对目标进行一次@Compendium[pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"qJ076zEgFCWVZExw":{
+					"name": "振翅冲天 Soaring Flight",
+					"description":"<p><strong>频率</strong> 每日一次</p>\n<hr />\n<p>鹰虎振翅而飞，在5分钟内获得25尺@Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Fly}。</p>"
+				},
+				"GfqJlycpJcVCanhY":{
+					"name": "剑幕如雨 Blade Barrage",
+					"description":"<p>鹰虎进行五次近战打击。它的多重攻击减值正常计算。每次成功的打击都能让后续打击在伤害骰上获得+2环境加值。若一个目标被至少2次该打击命中，该目标额外受到@Localize[PF2E.PersistentDamage.Bleed2d6.success]。目标直到它的下个回合开始前，会陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+				},
+				"gsPHz5TFhWFd9O10":{
+					"name": "断兵如轮 Disarming Whirl",
+					"description": "<p>鹰虎旋转着攻击敌人们的武器。鹰虎进行一次@Compendium[pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}运动检定对抗他近战触及内所有敌人。每次卸武尝试都会增加他的多次攻击减值，但只在所有卸武检定完成后适用。</p>"
+				}
+			}
 		},
 		"Takatorra (Level 9)": {
 			"name": "鹰虎(9级) Takatorra (Level 9)",
@@ -2380,6 +3401,10 @@
 				"qJ076zEgFCWVZExw":{
 					"name": "振翅冲天 Soaring Flight",
 					"description":"<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>身为天狗怎可被脚下地面给束缚。你召出魔法羽翼，或是使既存的翅膀延伸。鹰虎振翅而飞，在5分钟内获得25尺@Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Fly}速度。</p>"
+				},
+				"uoEMHLm7YNrmwEb3":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				},
 				"GfqJlycpJcVCanhY":{
 					"name": "剑幕如雨 Blade Barrage",
@@ -2438,7 +3463,53 @@
 			"name": "Tino (Oni Form)"
 		},
 		"Tino Tung (Level 13)": {
-			"name": "Tino Tung (Level 13)"
+			"name": "千野·董(13级) Tino Tung (Level 13)",
+			"allSaves":"对抗疾病的所有豁免有+1状态加值",
+			"blurb": "男性天舒族,义洛里的圣武士",
+			"items":{
+				"JwTHNda4LwzqStWL":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"wWq7ugtLA6Ce3ARn":{
+					"name": "真气波 Ki Blast",
+					"description": "<p>你释放出的气形成强大的力场冲击，造成2d6点力场伤害。</p>\n<p>若你用2个动作使用真气波，范围增加为30尺锥形，伤害增加为[[/r {3d6}[force]]]。</p>\n<p>若你用3个动作使用真气波，范围增加为60尺锥形，伤害增加为[[/r {4d6}[force]]]。</p>\n<p>每个范围内的生物必须进行一次强韧豁免：</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到的伤害减半。</p>\n<p><strong>失败</strong> 生物受全额伤害且被推离5尺。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害且被推离10尺。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加1d6，若为2或3动作版本则增加[[/r 2d6]]。</p>"
+				},
+				"Uu2I5xP3gn9WtnBd":{
+					"name": "斗气击 Ki Strike",
+					"description": "<p>运气集中化为魔力攻击。进行一次无武装打击或疾风连击（这不会改变绝招每回合只能使用1次的限制）。</p>\n<p>打击的攻击骰获得+1状态加值，且打击造成1d6点额外伤害。该伤害可从下列类型中选择其一作为伤害类型，在每次进行打击时选择：力场、秩序（只有当你守序时）、负能量或正能量。</p>\n<p>@Compendium[pf2e.spell-effects.8olfnTmWh0GGPDqX]{法术效果：斗气击}</p>\n<hr />\n<p><strong>升阶 (+4)</strong> 额外伤害增加1d6。</p>"
+				},
+				"kyKFywK2AZ5Hgz4n":{
+					"name": "+2高等强击重拳缠手带 +2 Greater Striking Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"bUsIg74aMMuMt5gH":{
+					"name": "+1抗力探险者服装 +1 Resilient Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"CGlyzaCHtp5W7oSc":{
+					"name": "对抗疾病的所有豁免有+1状态加值"
+				},
+				"4AV9ZEHJScDbUsud":{
+					"name": "报应打击 Retributive Strike",
+					"description":"<p><strong>触发</strong> 一名敌人伤害了你的盟友，并且他们都在你周围15尺的范围内。</p>\n<hr />\n<p>你保护你的盟友并痛击你的敌人。这位盟友在对抗触发这次报应打击的伤害时获得针对所有伤害的抗力，数值等同于2+你的等级。如果这名敌人在你的触及范围之内，你对其进行一次近战打击（Strike）。</p>\n<p>如果千野的报应打击命中，目标还受到[[/r {3}[persistent,good]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续善良伤害}。</p>\n<p>如果千野的报应打击没有大失败，目标直到它的下个回合结束前，视为满足千野的挑衅推撞能力的发动需求。</p>"
+				},
+				"TkCINz21LRgFP4yR":{
+					"name": "挑衅推撞 Defiant Shove",
+					"description":"<p><strong>需求</strong> 千野从他的前一个回合开始到现在使用过报应打击，并确实尝试过打击目标，并且没有大失败</p>\n<hr />\n<p><strong>效果</strong> 千野身体发力向前猛力一推。他将目标向任意方向移动5尺，并且尝试@Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}目标。这是一个强制移动效果。</p>"
+				},
+				"lKnBoH1cX5JdlSYZ":{
+					"name": "神圣制裁 Divine Smite",
+					"description":"<p>如果千野的报应打击命中，目标还受到[[/r {3}[persistent,good]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续善良伤害}。</p>"
+				},
+				"h5dXFeWPRXvEeW6c":{
+					"name": "强力拳 Powerful Fists",
+					"description":"<p>千野的拳头打击造成致命伤时不会受到非致命的攻击减值。</p>"
+				},
+				"T4nEUVeNILhnok6G":{
+					"name": "义洛里学识"
+				}
+			}
 		},
 		"Tino Tung (Level 9)": {
 			"name": "千野·董(9级) Tino Tung (Level 9)",
@@ -2472,12 +3543,35 @@
 				},
 				"s8p9vwdR2KO1eb7F":{
 					"name": "斗气击 Ki Strike",
-					"description":"<p>运气集中化为魔力攻击。进行一次无武装打击或疾风连击（这不会改变绝招每回合只能使用1次的限制）。</p>\n<p>打击的攻击骰获得+1状态加值，且打击造成1d6点额外伤害。该伤害可从下列类型中选择其一作为伤害类型，在每次进行打击时选择：力场、秩序（只有当你守序时）、负能量或正能量。</p>\n<hr />\n<p><strong>升阶 (+4)</strong> 额外伤害增加1d6。</p>\n<p>@Compendium[pf2e.spell-effects.vLdt7vdUPv3Jdkgq]{法术效果:斗气击(力场)}</p>\n<p>@Compendium[pf2e.spell-effects.X2BGmuKdGVj4YYyp]{法术效果:斗气击(守序)}</p>\n<p>@Compendium[pf2e.spell-effects.ubT5UGReu1PoeCL0]{法术效果:斗气击(负能量)}</p>\n<p>@Compendium[pf2e.spell-effects.BQAb290GJQHiXtSW]{法术效果:斗气击(正能量)}</p>"
+					"description":"<p>运气集中化为魔力攻击。进行一次无武装打击或疾风连击（这不会改变绝招每回合只能使用1次的限制）。</p>\n<p>打击的攻击骰获得+1状态加值，且打击造成1d6点额外伤害。该伤害可从下列类型中选择其一作为伤害类型，在每次进行打击时选择：力场、秩序（只有当你守序时）、负能量或正能量。</p>\n<hr />\n<p><strong>升阶 (+4)</strong> 额外伤害增加1d6。</p>\n<p>@Compendium[pf2e.spell-effects.8olfnTmWh0GGPDqX]{法术效果：斗气击}</p>"
 				}
 			}
 		},
 		"Troff Frostknuckles": {
-			"name": "Troff Frostknuckles"
+			"name": "特罗夫·霜指 Troff Frostknuckles",
+			"blurb": "男性大地精拳师",
+			"senses": "黑暗视觉",
+			"items":{
+				"zItNhmNjS4wVdwWY":{
+					"name": "+2强击寒霜重拳缠手带 +2 Striking Frost Handwraps of Mighty Blows",
+					"description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
+				},
+				"tSarOldwU95b0USG":{
+					"name": "凿落冰凌 Icicle Gouge"
+				},
+				"U1uqr0HgPoIr8ash":{
+					"name": "雪崩拳 Avalanche Pummel",
+					"description": "<p>特罗夫对一个@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物进行一次凿落冰凌打击。如果命中，该生物@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。如果重击，生物@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}。无论哪种情况，效果持续到特罗夫的下个回合开始。如果打击失手（但是没有大失败），特罗夫依然对目标造成[[/r {13}[piercing]]]{13穿刺伤害}。</p>"
+				},
+				"54wMKEbOXBHvnjXX":{
+					"name": "寒颤猛击 Chattering Blow",
+					"description": "<p><strong>需求</strong> 特罗夫位于一个自从特罗夫上个回合结束后受到过寒冷伤害的生物的触及范围内</p>\n<hr />\n<p><strong>效果</strong> 特罗夫猛戳被寒冷削弱的生物的穴位。生物必须尝试@Check[type:fortitude|dc:31|traits:damaging-effect]豁免，否则它的皮肤被冻结，四肢变得迟钝和笨拙。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r {2d4}[persistent,cold]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续寒冷伤害}并且速度受到-5尺状态减值，直到持续性寒冷伤害结束。对该生物造成火焰伤害是一种特别有效的帮助（允许生物尝试一次新的DC10纯骰检定来结束持续伤害）。</p>\n<p><strong>失败</strong> 类似成功，但是伤害为[[/r {4d4}[persistent,cold]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续寒冷伤害}并且速度减值为-15尺。</p>\n<p><strong>大失败</strong> 类似成功，但是伤害为[[/r {6d4}[persistent,cold]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续寒冷伤害}并且生物被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>"
+				},
+				"a2Ht2VRQHOf9f798":{
+					"name": "冰凌架势 Icicle Stance",
+					"description": "<p><strong>触发</strong> 特罗夫投掷先攻或他的回合开始</p>\n<hr />\n<p><strong>效果</strong> 特罗夫准备好像冰凌一样突然出击。在此架势下，特罗夫能进行凿落冰凌打击。当特罗夫位于一个生物上方并且在此架势中时，该生物对他@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				}
+			}
 		},
 		"Tyrannosaurus Imperator": {
 			"name": "帝皇暴龙 Tyrannosaurus Imperator",
@@ -2509,14 +3603,88 @@
 				"ATuHWb9pil4pkYgX":{
 					"name": "践踏 Trample",
 					"description":"<p>超大型或更小，脚踩, @Check[type:reflex|dc:34|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				},
+				"LqiyG9U9vgSjT5du":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>中型，[[/r {4d6+8}[bludgeoning]]]{4d6+8钝击伤害}，破裂34</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
 		"Umbasi": {
-			"name": "Umbasi"
+			"name": "乌木巴西 Umbasi",
+			"blurb": "泛性别精灵传智学派旁听生",
+			"senses": "昏暗视觉",
+			"items":{
+				"a0jyApznb6JGX8pG":{
+					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"bILXnh7P2iR8oCVj":{
+					"name": "吟游诗人组曲法术 Bard Composition Spells"
+				},
+				"xvuaaGIH6hLksDcc":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7th)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"gpVggRP8GcSDnidv":{
+					"name": "激发英勇 Inspire Heroics",
+					"description": "<p>你呼唤你的缪斯，极大的提升你和盟友受到的 <em>@Compendium[pf2e.spells-srd.IAjvwqgiDr3qGYxY]{激发勇气 Inspire Courage}</em> 或 <em>@Compendium[pf2e.spells-srd.bH0kPuf7UKxRvi2P]{激发防御 Inspire Defense}</em> 的效果。如果你的下一个动作是施展激发勇气或者激发防御，则尝试一次表演检定。该检定的DC通常等同于你组曲最高等级目标的非常困难DC，但是DM可以根据环境设置不同的DC。你激发勇气或者激发防御的效果取决于你检定的结果。</p>\n<hr />\n<p><strong>大成功</strong> 你激发勇气或者激发防御的状态加值提高到+3.</p>\n<p>@Compendium[pf2e.spell-effects.VFereWC1agrwgzPL]{激发勇气(大成功)}, @Compendium[pf2e.spell-effects.BKam63zT98iWMJH7]{激发防御(大成功)}</p>\n<p><strong>成功</strong> 你激发勇气或者激发防御的状态加值提高到+2.</p>\n<p>@Compendium[pf2e.spell-effects.kZ39XWJA3RBDTnqG]{激发勇气(成功)}, @Compendium[pf2e.spell-effects.Chol7ExtoN2T36mP]{激发防御(成功)}</p>\n<p><strong>失败</strong> 你的激发勇气或者激发防御只提供正常的+1加值，但你不需要花费施展这个法术的聚能值。</p>"
+				},
+				"7y9KOJJxzLC1JUEi":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"QDIN4KlhtMN9xIyy":{
+					"name": "激发防御 Inspire Defense",
+					"description": "<p>你激励盟友更为有效的保护自己。你和区域内的盟友在AC豁免上获得+1状态加值，并且获得物理伤害抗力，等同于施法者等级的一半。</p>\n<p>@Compendium[pf2e.spell-effects.DLwTvjjnqs2sNGuG]{法术效果：激发防御}</p>"
+				},
+				"GibFEq8pCxkdT8m0":{
+					"name": "+1抗力探险者服装 +1 Resilient Explorer's Clothing",
+					"description": "<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"szWmWOcZ0TbncrBc":{
+					"name": "勇气传说 Story of Valor",
+					"description":"<p>乌木巴西阐述了勇气和尊重的价值观。它能减少30尺内所有盟友的@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态值1点并且移除@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态。如果它在战斗中第一次使用该动作，乌木巴西便能自动让观众为自己的队伍欢呼一次。</p>"
+				},
+				"TQvR7dKxAIPQIml3":{
+					"name": "逸闻学识"
+				}
+			}
 		},
 		"Urnak Lostwind": {
-			"name": "Urnak Lostwind"
+			"name": "乌尔纳克·遗风 Urnak Lostwind",
+			"blurb": "男性半兽人维京海盗",
+			"items":{
+				"G70R72Ln58Fy7CXQ":{
+					"name": "+2抗力革甲 +2 Resilient Hide Armor",
+					"description": "<p>这种盔甲混合了毛皮、结实的皮革，有时还有成型的熟皮，它的多层皮革提供了保护，尽管它的笨重会减慢穿戴者的速度，并降低其活动性。</p>"
+				},
+				"HAvxDv107y0dqUmy":{
+					"name": "砍倒投掷 Felling Throw"
+				},
+				"ZTfMBs2NCDJjE799":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>乌尔纳克每回合获得1个额外反应动作，但只能用于借机攻击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"XEVrkrNZKdT3zzoN":{
+					"name": "蛮力卸武 Brutally Disarm",
+					"description":"<p><strong>需求</strong> 乌尔纳克双手持握一把双手武器</p>\n<hr />\n<p><strong>效果</strong> 乌尔纳克尝试@Compendium[pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}触及范围内的一个生物。如果成功或大成功，乌尔纳克对被卸武的生物造成[[/r 13]]点武器伤害类型的伤害。如果卸武失败，他能得到成功的结果。</p>"
+				},
+				"WC2dA8FW4LywK9Yf":{
+					"name": "砍倒投掷 Felling Throw",
+					"description": "<p>乌尔纳克用巨斧进行一次远程打击。此次打击攻击调整值为+25，巨斧的射程增量为40尺。如果他伤害了一个飞行生物，它下降120尺，并且有可能坠落在地面上。</p>"
+				},
+				"LZ5o2ZRIpJq9VpQy":{
+					"name": "回弹投掷 Ricochet Throw",
+					"description": "<p>当乌尔纳克使用砍倒投掷能力，他的巨斧能在动作结束后飞回来，并且他能以一个自由动作接住它。如果他在回合结束前再次使用砍倒投掷能力（即便改变目标也可以），则该次攻击无视所有掩蔽（cover）效果。</p>"
+				},
+				"9JcfgzykcfREw33p":{
+					"name": "扫到一边 Sweep Aside",
+					"description":"<p>乌尔纳克进行一次巨斧近战打击。如果他命中一个体型不超过他的生物，他能将目标向任意方向移动5尺，重击则为10尺。</p>"
+				},
+				"05eyHk2rruusNYUw":{
+					"name": "航海学识"
+				}
+			}
 		},
 		"Watchtower Poltergeist": {
 			"name": "哨塔骚灵 Watchtower Poltergeist",
@@ -2635,6 +3803,10 @@
 					"name": "幽魂之手 Spectral Hand",
 					"description":""
 				},
+				"afC7IDJuPP68X8GT":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
 				"LcusQxZFcBKdYQCO":{
 					"name": "生命感知60尺 Lifesense 60ft"
 				},
@@ -2674,6 +3846,10 @@
 					"name": "决斗经验 Dueling Expertise",
 					"description":"<p>武器大师对不邻接盟友也不邻接其他敌人的目标发动的攻击，造成额外[[/r 2d10]]伤害。</p>"
 				},
+				"oaD4wWhNGSE34z3J":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
 				"tbVob5tVawjFlBKz":{
 					"name": "拔刀击 Swift Blow",
 					"description":"<p><strong>需求</strong> 武器大师并未持握武器</p>\n<hr />\n<p><strong>效果</strong> 武器大师不触发反应动作使用交互拔出一把近战武器，然后用该武器进行一次近战打击。目标对该次打击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。武器大师该次打击额外造成@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
@@ -2705,15 +3881,53 @@
 			"name": "Yabin (White Serpent Form)"
 		},
 		"Yabin the Just (Level 13)": {
-			"name": "Yabin the Just (Level 13)"
+			"name": "“正义的”亚彬(13级) Yabin the Just (Level 13)",
+			"allSaves":"对抗毒素的所有豁免有+1 状态加值",
+			"blurb": "男性娜迦裔龙术士",
+			"senses":"昏暗视觉",
+			"items":{
+				"Xaj9dUbvzoGBzRij":{
+					"name": "奥术自发法术 Spontaneous Arcane Spells"
+				},
+				"nDE7wexhV3rkU80x":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"ZnwQXnAfjZCA7iwf":{
+					"name": "聚能法术 Focus Spells",
+					"description":"<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
+				},
+				"IMYItzTKkIHQtCIX":{
+					"name": "龙息(黄铜) Dragon Breath (Brass)",
+					"description":"<p>你从口中喷吐出能量，对60尺线型范围内造成5d6点火焰伤害，基础反射豁免。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加2d6点。</p>"
+				},
+				"JJlCAWPV48tVtpDY":{
+					"name": "+2探险者服装 +2 Clothing (Explorer's)",
+					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
+				},
+				"FHJceyBd1d5FPlxS":{
+					"name": "毒液 Venom"
+				},
+				"AuDDAa0I6mRgVsie":{
+					"name": "对抗毒素的所有豁免有+1状态加值"
+				},
+				"qlMQBInOHpzFZkp6":{
+					"name": "娜迦裔毒液 Nagaji Venom",
+					"description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:30]</p>\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {2d6}[poison]]]{2d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {3d6}[poison]]]{3d6毒素伤害}和@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {4d6}[poison]]]{4d6毒素伤害}和@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} (1轮)</p>"
+				}
+			}
 		},
 		"Yabin the Just (Level 9)": {
-			"name": "“正义”的亚彬(9级) Yabin the Just (Level 9)",
+			"name": "“正义的”亚彬(9级) Yabin the Just (Level 9)",
 			"allSaves":"对毒素+1全豁免",
 			"blurb": "男性娜迦龙术士",
 			"items":{
 				"Xaj9dUbvzoGBzRij":{
 					"name": "奥术自发施法 Spontaneous Arcane Spells"
+				},
+				"ut91twEuwOVi4dA5":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
 				},
 				"ZnwQXnAfjZCA7iwf":{
 					"name": "聚能法术 Focus Spells",
@@ -2740,7 +3954,32 @@
 			}
 		},
 		"Yarrika Mulandez": {
-			"name": "Yarrika Mulandez"
+			"name": "雅利卡·穆兰德兹 Yarrika Mulandez",
+			"blurb": "女性人类唤魂师",
+			"items":{
+				"LoUN6INq8RaCLK2O":{
+					"name": "异能自发法术 Spontaneous Occult Spells"
+				},
+				"3UEJwPH2gazClmOv":{
+					"name": "+1抗力皮甲 +1 Resilient Leather Armor",
+					"description": "<p>这种盔甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。</p>"
+				},
+				"wo2fvf5SaBTvZDpY":{
+					"name": "螳螂拳 Mantis Strike"
+				},
+				"BUTDVoZov86N4Svh":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"gYVXSzsxenxYX5Zx":{
+					"name": "螳螂伏击 Mantis Ambush",
+					"description": "<p><strong>触发</strong> 一个在雅利卡触及范围内的敌人被盟友的近战打击命中</p>\n<hr />\n<p><strong>效果</strong> 雅利卡对触发的生物进行一次螳螂拳打击。</p>"
+				},
+				"Vx3zXLX8lE4NfPPA":{
+					"name": "异能打击 Occult Strike",
+					"description": "<p><strong>触发</strong> 雅利卡施展异能法术</p>\n<hr />\n<p><strong>效果</strong> 雅利卡对触及内的一个生物进行一次拳击打击。</p>"
+				}
+			}
 		},
 		"Yoh Souran": {
 			"name": "叶索兰 Yoh Souran",
