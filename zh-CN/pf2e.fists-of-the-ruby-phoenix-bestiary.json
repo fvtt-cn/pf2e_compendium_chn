@@ -13,7 +13,7 @@
 		"blurb":"system.details.blurb",
 		"speed":"system.attributes.speed.details",
 		"languages":"system.traits.languages.custom",
-		"stealth":"system.attributes.stealth",
+		"stealthdetails":"system.attributes.stealth.details",
 		"ac":"system.attributes.ac.details",
 		"di":"system.traits.di.custom"
 	},
@@ -54,7 +54,7 @@
 		},
 		"Air Rift": {
 			"name": "气流裂隙 Air Rift",
-			"stealth":"<p>(大师) 注意到剧场中突然发生的意外</p>",
+			"stealthdetails":"<p>(大师) 注意到剧场中突然发生的意外</p>",
 			"hazarddisable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air]（大师）用魔法将裂隙缝合；@Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air]或@Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air]（传奇）打开足够多的门窗，降低狂风的烈度；或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（反制等级7 级；反制DC34）反制气流裂隙。</p>",
 			"hazarddescription": "<p>舞台上撕开了一个通往气元素位面的入口，导致咆哮的风撕裂整个剧院。</p>",
 			"hazardroutine": "<p>（1 动作）风在该区域内以随机方向吹动，气流裂隙导致50尺内的生物和物品向上、下、北、南、东或西方向被吹走（投掷d6来决定具体方向）。该区域内的生物和物体必须尝试@Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard]豁免。如果一个生物撞上了另一个同样受此效果影响的物品或生物，则双方都会因为冲击而受到[[/r {3d8+15}[bludgeoning]]]{3d8+15钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推离10尺，但是仅受到一半的冲击伤害。</p>\n<p><strong>失败</strong> 生物被推离20尺，被击倒地，受到全额冲击伤害。</p>\n<p><strong>大失败</strong> 生物被推离40尺，被击倒，受到双倍冲击伤害。</p>",
@@ -628,9 +628,7 @@
 			"hazarddescription": "<p>幻影袭击者掀翻桌椅，将其甩飞在空中，推搡殴打房间内的生物。</p>",
 			"hazardreset": "<p>作祟会持续1分钟。它每天会在同一时间自动重置，即早上7点和晚上7点，这个僧人们进行早餐和晚餐的时点。若至少两个人在厨房中制作了一餐饭，并将饭食摆放到食堂中，并在进食前进行义洛里祷告，作祟就能被永久超度不再出现。</p>",
 			"hazardroutine": "<p>(1动作)作祟使房间内的物品漫天飞舞。所有身处房间内的生物都会避之不及被砸中，受到[[/r {3d10+14}[force]]]{3d10+14力场伤害}（@Check[type:reflex|dc:36|basic:true]豁免）。 </p>",
-			"stealth":{
-				"details": "<p>(受训)</p>"
-			},
+			"stealthdetails":"<p>(受训)</p>",
 			"items":{
 				"unRMsmyHgUc7VDnx":{
 					"name": "鬼灵擒拿 Ghostly Pull",
@@ -726,7 +724,7 @@
 		},
 		"Collapsing Structure": {
 			"name": "崩塌的建筑 Collapsing Structure",
-			"stealth":"<p>+20（大师）注意到魔加鲁接近时墙上出现的裂纹。</p>",
+			"stealthdetails":"<p>+20（大师）注意到魔加鲁接近时墙上出现的裂纹。</p>",
 			"hazarddisable": "<p>@Check[type:athletics|dc:43|name:加固建筑]（大师），@Check[type:crafting|dc:43|name:加固建筑]（大师），或@Check[type:engineering-lore|dc:43|name:加固建筑]{工程学识}（大师）加固建筑以减少崩塌风险，直到生物的下回合结束。如果成功，此轮的纯骰检定（详见例行程序）DC+4，如果大成功则+8。将纯骰检定DC增加到21以上能让建筑稳固，从而结束该危害。</p>",
 			"hazarddescription": "<p>魔加鲁撞上一座建筑，严重影响了建筑的稳定性，并可能导致其倒塌。</p>",
 			"hazardreset": "<p>建筑在稳固之后的[[/r 1d6]]{1d6轮}之后，会再次受到分崩离析的影响。</p>",
@@ -891,13 +889,36 @@
 			}
 		},
 		"Floating Flamethrower": {
-			"name": "Floating Flamethrower"
+			"name": "浮动喷火器 Floating Flamethrower",
+			"stealthdetails":"<p>+23（专家）或@Check[type:perception|dc:38|traits:action:seek]（大师）骷髅的运行轨迹</p>",
+			"hazarddisable": "<p>三次@Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire]（传奇）；或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（7环；反制DC 40），每次成功都能抽出或解除一个隐藏在烈焰骷髅内的元素核心：分别位于左眼、右眼和嘴部。</p>",
+			"hazarddescription": "<p>一个漂浮的烈焰骷髅在竞技场以环形轨道周围盘旋，向随机方向喷出烈焰。</p>",
+			"hazardroutine": "<p>（3 动作）每成功解除一次，陷阱就损失一个动作。浮动喷火器使用第一个动作喷出@Template[type:cone|distance:15]{15尺锥形}火焰，造成[[/r {4d6+4}[fire]]]{4d6+4火焰伤害}（@Check[type:reflex|dc:40|basic:true]豁免），它的第二个动作是进行一次U形随机方向的飞行，它的第三个动作是再次喷出烈焰。</p>",
+			"items":{
+				"gHHe473InFt8KHS2":{
+					"name": "烈焰 Blaze",
+					"description":"<p><strong>触发</strong> 郝金发出比赛开始的信号</p>\n<hr />\n<p><strong>效果</strong> 陷阱喷出火焰，投掷先攻。</p>"
+				},
+				"naExmUwTL8vkSeQQ":{
+					"name": "速度:飞行50尺"
+				}
+			}
 		},
 		"Flying Mountain Kaminari": {
 			"name": "Flying Mountain Kaminari"
 		},
 		"Freezing Floor Tiles": {
-			"name": "Freezing Floor Tiles"
+			"name": "寒冰地砖 Freezing Floor Tiles",
+			"stealthdetails":"<p>+23（专家）或@Check[type:perception|dc:38|traits:action:seek]（大师）注意到四个传感器</p>",
+			"hazarddisable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 38) to disable one of the sensors</p>",
+			"hazarddescription": "<p>在竞技场的每个角落有4个传感器，可以从竞技场的随机地板上中释放冰冻魔法，阻止生物前进。</p>",
+			"hazardroutine": "<p>（4 动作）每成功解除一个传感器，陷阱就损失一个动作。在每个动作中，陷阱会随机让10尺见方的竞技场地砖变为寒冰。寒冰区域内的每个生物开始回合时都会受到[[/r {2d6+2}[cold]]]{2d6+2寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。豁免大失败的生物还会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮；如果它已经陷入缓慢，生物则被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} 轮。任意数量的火焰伤害都可以移除生物的缓慢或禁足状态。在陷阱的下个回合开始时，寒冰地板会解冻。</p>",
+			"items":{
+				"rxzKPSkZ4m2BBbQJ":{
+					"name": "寒冰地板 Frigid Floor",
+					"description":"<p><strong>触发</strong> 郝金发出比赛开始的信号</p>\n<hr />\n<p><strong>效果</strong> 陷阱投掷先攻。</p>"
+				}
+			}
 		},
 		"Ghost Monk": {
 			"name": "鬼灵武僧 Ghost Monk",
@@ -2322,7 +2343,43 @@
 			}
 		},
 		"Melodic Squall": {
-			"name": "Melodic Squall"
+			"name": "旋律暴风 Melodic Squall",
+			"speed": "迅捷",
+			"blurb": "变种风之旋律",
+			"senses":"黑暗视觉",
+			"publicNotes": "<p>这片由歌声组成的云团随风而动。虽然风中旋律（被一些人成为歌之元素，但是事实上已知的多元宇宙中并不存在乐曲位面之类的地方）也许能享受音乐之美，但它本质上也是一种具有破坏性力量的元素。</p>",
+			"items":{
+				"QaWyk1afljYBga0c":{
+					"name": "旋风 Wind Gust"
+				},
+				"HpLHoXbsdK98PiDh":{
+					"name": "固体音符 Solid Refrain"
+				},
+				"T0vnmUhrqmtMKLQD":{
+					"name": "敌意二重奏 Hostile Duet",
+					"description": "<p><strong>触发</strong> 1个30尺内的敌对生物，使用一个带有听觉特征的效果来为它或它的盟友提供加值</p>\n<hr />\n<p><strong>效果</strong> 旋律暴风模仿该具有听觉特征的源效果，为它和它的盟友带来同样的加值，持续时间和源效果相同。</p>"
+				},
+				"rSpxgtewFq1FNp4L":{
+					"name": "重新调音 Retune",
+					"description": "<p><strong>触发</strong> 旋律暴风被一个带有听觉特征的法术作为目标</p>\n<hr />\n<p><strong>效果</strong> 旋律暴风尝试反制该法术。如果成功，该法术效果就会被一阵风吹回起点，影响法术施放者。除旋律暴风之外，该触发效果的其他目标依然会正常受到影响。</p>"
+				},
+				"RJUajmwcmdSx0tQb":{
+					"name": "催眠旋律 Mesmerizing Melody",
+					"description": "<p>旋律暴风发出洪亮的合唱声。任何位于@Template[type:emanation|distance:30]{30尺弥散}范围内的生物必须尝试1次@Check[type:will|dc:36]检定来抵抗旋律暴风的迷魂效果。豁免成功的生物将在24小时内对催眠旋律临时免疫。T</p>\n<hr />\n<p><strong>大成功</strong> 目标生物不受影响。</p>\n<p><strong>成功</strong> 目标陷入@Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，持续1轮。</p>\n<p><strong>失败</strong> 目标陷入@Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，持续[[/br 1d4 #rounds]]{1d4轮}。</p>"
+				},
+				"YA860LZZWe43vErM":{
+					"name": "次声爆炸 Subsonic Burst",
+					"description": "<p>旋律暴风将猛烈的听不见的次声波聚焦于@Template[type:line|distance:100]{100尺直线}范围。支线中的每个生物都必须尝试@Check[type:fortitude|dc:34]豁免。</p>\n<p><strong>成功</strong> 目标生物不受影响。</p>\n<p><strong>失败</strong> 目标生物陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 目标生物陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，并且还会陷入@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}，直到旋律暴风的下个回合开始。</p>"
+				},
+				"rOyG05jMYSlAcSS5":{
+					"name": "迅捷 Swiftness",
+					"description": "<p>旋律暴风在移动时不会触发反应动作。</p>"
+				},
+				"B0ACGOBzm6iH5fdI":{
+					"name": "推离10尺 Push 10ft",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Push]</p>"
+				}
+			}
 		},
 		"Mogaru's Breath": {
 			"name": "魔加鲁的吐息 Mogaru's Breath",
@@ -2584,7 +2641,60 @@
 			}
 		},
 		"Portal Eater": {
-			"name": "Portal Eater"
+			"name": "传送门吞噬者 Portal Eater",
+			"allSaves": "对抗魔法的豁免有+1状态加值",
+			"blurb": "异次元能量的宇宙吞噬者",
+			"senses": "高等黑暗视觉",
+			"languages":"心灵感应100尺",
+			"dr":[
+				{
+					"exceptions": "除了力场和物理",
+					"type": "all",
+					"value": 10
+				}
+			],
+			"items":{
+				"CsZGpbZYWRFO31In":{
+					"name": "鸟喙 Beak"
+				},
+				"Cu7ROCjHqfXcefHy":{
+					"name": "爪抓 Claw"
+				},
+				"d1YMQp83OPxBefTy":{
+					"name": "斗篷 Cloak"
+				},
+				"fIjg6Pf4ymvNYM4Y":{
+					"name": "食门 Eat Portal",
+					"description": "<p><strong>需求</strong> 传送门吞噬者的鸟喙并未攫抓生物</p>\n<p><strong>触发</strong> 一个生物在传送门吞噬者50尺内的地方传送或被召唤</p>\n<hr />\n<p><strong>效果</strong> 传送门吞噬者尝试吞噬传送门。它对触发的效果尝试一次反制检定（反制调整值+33，反制等级9级）。如果效果被成功反制，该生物出现在传送门吞噬者的鸟喙中，并且传送门吞噬者自动@Compendium[pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{攫抓 Grabs}该生物。</p>"
+				},
+				"SFzcBQfEh3crg3Of":{
+					"name": "超巨型 Enormous",
+					"description": "<p>传送门吞噬者是特别巨大的生物，它占据10乘10的方格（50尺乘50尺）。</p>"
+				},
+				"fARhqajUVFBbWKlV":{
+					"name": "对抗魔法的豁免有+1状态加值"
+				},
+				"bg3KyoKWKOPLTmOy":{
+					"name": "拉拽20尺 Pull 20ft",
+					"description": "<p>20尺</p>"
+				},
+				"Q3P4o3w6fiG3YWe5":{
+					"name": "反射法术 Reflect Spell",
+					"description":"<p><strong>触发</strong> 一个生物将传送门吞噬者作为施法目标</p>\n<hr />\n<p><strong>效果</strong> 传送门吞噬者尝试反制该法术（反制调整值+32，反制等级9级）。如果法术被成功反制，施法者将被作为法术目标。</p>"
+				},
+				"Lpp6SrBxyA8cOgeJ":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>巨型，[[/r {17d6+8}[force]]]{17d6+8力场伤害}，破裂33</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				},
+				"FzHLjs4ilmapsHFn":{
+					"name": "展开实相 Unfurl Realities",
+					"description": "<p>传送门吞噬者展开它的窃取实相水晶斗篷，释放出一波宇宙能量，施展@Template[type:emanation|distance:60]{60尺弥漫}范围的<em>@Compendium[pf2e.spells-srd.d6o52BnjViNz7Gub]{虹光喷射 Prismatic Spray}</em>，DC39。传送门吞噬者无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用展开实相。</p>"
+				},
+				"UfBUHsR1Q2mPcIZH":{
+					"name": "精通推离20尺 Improved Push 20ft",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedPush]</p>"
+				}
+			}
 		},
 		"Quaking Footfall": {
 			"name": "撼地步伐 Quaking Footfall",
@@ -2874,9 +2984,7 @@
 		},
 		"Sand Whirlwind": {
 			"name": "沙旋风 Sand Whirlwind",
-			"stealth":{
-				"details": "<p>(受训)</p>"
-			},
+			"stealthdetails":"<p>(受训)</p>",
 			"hazarddisable": "<p>@Check[type:religon|dc:38|name:阐明义洛里哲学|traits:haunt]{宗教}（专家）阐明只有认识到自己不完美才能抵达完美这一义洛里哲学，或@Check[type:occultism|dc:41|name:制作防止作祟的结界|traits:haunt]（大师）制作出防止作祟再发生的结界。 </p>",
 			"hazarddescription": "<p>猛烈狂风卷起黄沙在房间里撕裂空气。</p>",
 			"hazardreset": "<p>作祟显形后持续1分钟，并可在1小时后再次显形。当至少两名生物用房间内沙子创作出一幅沙画后，作祟会立刻停止并永久不再出现。创作沙画需要成功通过@Check[type:crafting|dc:30|name:创作沙画]检定或@Check[type:thievery|dc:30|name:创作沙画]检定。</p>",
@@ -3864,9 +3972,7 @@
 		},
 		"Wronged Monk's Wrath": {
 			"name": "枉僧之怒 Wronged Monk's Wrath",
-			"stealth":{
-				"details": "<p>(受训)</p>"
-			},
+			"stealthdetails":"<p>(受训)</p>",
 			"hazarddisable": "<p>@Check[type:irori-lore|dc:32|name:将祈祷法器们放回合适的位置|traits:haunt]{义洛里学识}（受训）可知要打扫房间并将祈祷法器们放回合适的位置，@Check[type:religion|dc:37|name:念诵义洛里的和平祷言]（专家）可知念诵义洛里的和平祷言能使作祟安息，@Check[type:occultism|dc:40|name:制作防止作祟再发生的结界]（大师）可以制作出防止作祟再发生的结界。 </p>",
 			"hazarddescription": "<p>一位痛苦的武僧精魂攻击入侵者。</p>",
 			"hazardreset": "<p>作祟在1小时可再次触发。若有生物点燃房间内所有蜡烛并向义洛里献上祈祷，则作祟会立刻停止并永久不再出现。</p>",
