@@ -1474,7 +1474,46 @@
             "name": "巴尔伊斯 Balisse"
         },
         "Banshee": {
-            "name": "报丧女妖 Banshee"
+            "name": "报丧女妖 Banshee",
+            "hp": "负能量治疗",
+            "senses":"60尺洞见心跳（模糊），黑暗视觉",
+            "dr": [
+                {
+                    "type": "all",
+                    "value": 12,
+                    "exceptions": "除力场、幽冥或正能量；对抗非魔法时双倍抗力"
+                }
+            ],
+            "publicNotes": "<p>报丧女妖是愤怒且痛苦的灵魂，她们是在生命的最后时刻由于被背叛而束缚在主物质位面的精灵。部分报丧女妖的诞生是因为精灵被最信任的同伴和朋友所杀害，或者是在临终时被所爱之人所背叛。而另一些由精灵衍生出的报丧女妖则是因为其死前的背信行为在灵魂上留下了污点。无论报丧女妖自身的起源是哪个种类，她们都会蔑视生灵。这种对生者的仇恨往往是其生前性格的可怖翻转。有人猜测越是善良热心的精灵（在遭遇越发痛苦的背叛后），由其诞生的报丧女妖越是残忍无情。</p>\n<p>报丧女妖很少远离自身的殒命之地，她们通常会在阳光很少能照耀的地点作祟，比如茂密的森林或昏暗的沼泽。在精灵之国奇奥尼（Kyonin）可以找到许多报丧女妖，尤其是在扭曲棘林（Tanglebriar）——恶魔毁木者（Treerazer）的邪恶领地。同样地，幽暗地域（Darklands）的卓尔定居点周边也潜伏着大量的报丧女妖，因为卓尔文化中不乏大量残忍的背叛行为。</p>\n<p>报丧女妖仅靠碰触就能带来痛苦与源自内心的原始恐惧，那些暴露在她们悲伤哀嚎中的人很难存活下来。</p>",
+            "items":{
+                "860MOhDdvHc8KanP":{
+                    "name": "手摸 Hand"
+                },
+                "74wDKknM5LCOcK73":{
+                    "name": "60尺洞见心跳（模糊）",
+                    "description": "<p>报丧女妖能听到60尺范围内的心跳声（模糊感官）。</p>"
+                },
+                "rQT7KUvA4yzEm4PO":{
+                    "name": "阳光削弱 Sunlight Powerlessness",
+                    "description": "<p>在阳光的直射下，报丧女妖会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，且无法使用具有攻击特征的动作。</p>"
+                },
+                "NKs8hoGb4IyfFWCw":{
+                    "name": "复仇之怨 Vengeful Spite",
+                    "description": "<p><strong>触发</strong> 有敌人对报丧女妖造成重击或者报丧女妖在对抗敌人的伤害性效果时投掷出了大失败。</p>\n<hr />\n<p><strong>效果</strong> 报丧女妖向折磨她的人进行反击，对其造成[[/r {4d10+14}[mental]]]{4d10+14心灵伤害}（@Check[type:will|dc:38|basic:true]豁免），并根据相同的意志豁免结果将惊骇之触的效果应用至目标。</p>"
+                },
+                "q8ASqdiBd9SflYVU":{
+                    "name": "幽体涟漪 Spectral Ripple",
+                    "description": "<p>当报丧女妖行走了至少10尺时，她们会获得@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}直至其下个回合开始为止。</p>"
+                },
+                "ePRrl3MsWtcXXzD7":{
+                    "name": "惊骇之触 Terrifying Touch",
+                    "description": "<p>被报丧女妖的触摸所伤害且还未陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}的生物必须尝试一次@Check[type:will|dc:38]豁免（若她的攻击造成重击则为@Check[type:will|dc:43]）。若目标生物豁免失败，则会陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}；大失败时还会因恐惧而畏缩，陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 4}。若该生物由于法术或魔法物品的保护而可以对抗恐惧的话，报丧女妖的触摸首先会尝试反制该保护效果，该效果相当于9环的<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>法术。</p>"
+                },
+                "IFPnmQpUJLW9TJa9":{
+                    "name": "哀嚎 Wail",
+                    "description": "<p>报丧女妖发出了让人心悸的<em>@Compendium[pf2e.spells-srd.FEsuyf203wTNE2et]{女妖之嚎 Wail of the Banshee}</em>（@Check[type:fortitude|dc:38]）。这声哀嚎会克服5环或更低环级的<em>@Compendium[pf2e.spells-srd.gIdDLrbswTV3OBJy]{沉默术 Silence}</em>或类似效果。报丧女妖可以使用三动作的行动来替代哀嚎的行动，这使得她能够克服至多8环的上述效果。</p>\n<p>报丧女妖的哀嚎会在1轮内持续共鸣，在此期间进入此区域的任何生物都必须尝试一次豁免对抗该效果。同一名生物不会被同一个哀嚎影响多次。</p>\n<p>报丧女妖在[[/br 1d4 #Recharge Wail]]{1d4轮}内无法再次进行哀嚎。</p>"
+                }
+            }
         },
         "Baomal": {
             "name": "巴莫 Baomal"
