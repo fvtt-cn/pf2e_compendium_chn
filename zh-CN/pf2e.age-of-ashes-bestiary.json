@@ -1,12 +1,12 @@
 {
 	"label": "灰烬之年 Age of Ashes",
 	"mapping":{
-		"publicNotes":"data.details.publicNotes",
-		"stealth":"data.attributes.stealth.details",
-		"disable":"data.details.disable",
-		"description":"data.details.description",
-		"reset":"data.details.reset",
-		"routine":"data.details.routine"
+		"publicNotes":"system.details.publicNotes",
+		"stealth":"system.attributes.stealth.details",
+		"disable":"system.details.disable",
+		"description":"system.details.description",
+		"reset":"system.details.reset",
+		"routine":"system.details.routine"
 	},
 	"entries": {
 		"Accursed Forge-Spurned": {
@@ -34,7 +34,18 @@
 			"name": "Barushak Il-Varashma"
 		},
 		"Barzillai's Hounds": {
-			"name": "Barzillai's Hounds"
+			"name": "巴基莱的猎犬 Barzillai's Hounds",
+			"disable":"<p>@Check[type:religion|dc:24|name:Exorcise the Hounds|traits:complex,haunt,hazard]4（专家）来驱魔（这么做需要 2 个动作）</p>",
+			"description":"<p>对除了受害者以外所有人来说都是隐形的地狱犬（Hell hound）将会焚烧他们的目标</p>",
+			"reset": "<p>若指定目标死亡或者猎犬无法在 1 回合内触及到指定目标，猎犬便会消失在令人生厌的烟雾中，但它们会在下次日落之后再次出现在这座城市的其他地点</p>",
+			"routine": "<p>（2 个动作） 猎犬会使用它的第一个动作行走（Stride），若指定目标在它的触及范围，则用第二个动作对其指定目标作出啃咬打击（jaws Strike）。若目标不在触及范围内，猎犬便会重置（resets）</p>",
+			"items":{
+				"1sYunHFicjStIbRN":{
+					"name":"开始狩猎 Begin the Hunt",
+					"description":"<p><strong>触发</strong> 一名没有公开佩戴阿斯摩蒂斯（Asmodeus）徽记的生物进入距离作祟初始位置 60 尺范围内时</p>\n<hr />\n<p><strong>效果</strong> 猎犬出现在被选择的目标面前，并开始疯狂地嚎叫并追赶该生物。作祟投掷先攻。其他人无法听到或看到狂吠的猎犬而且必须进行@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}来判断猎犬的位置</p>"
+				},
+				"hI3zcHdUBaFLeoZX":{"name":"啃咬 Jaws"}
+			}
 		},
 		"Belmazog": {
 			"name": "贝尔玛佐格 Belmazog",
@@ -409,10 +420,47 @@
 			"name": "Nketiah"
 		},
 		"Nolly Peltry": {
-			"name": "Nolly Peltry"
+			"name": "诺利·珀尔翠 Nolly Peltry",
+			"items":{
+				"VihElpjLJNASMTWo":{
+					"name":"诺利的锄头（+1 混沌强击半身人投石杖） Nolly's Hoe (+1 Striking Anarchic Halfling Sling Staff)",
+					"description":"<p>木杖末端是Y型分岔，挂着一根吊索。当用双手通过吊索投掷石块或弹丸时，长杖提供了极好的杠杆作用力。</p>"
+				},
+				"FLhJ8AT87HUFtG5w":{
+					"name":"+1皮甲 +1 Leather Armor",
+					"description":"这种盔甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。"
+				},
+				"PTLfrf6aBtRzqBS1":{"name":"诺利的锄头 Nolly's Hoe"},
+				"g6yamqCVKN9pYELp":{
+					"name":"鼓舞人心 Inspiring Presence",
+					"description":"<p>@Template[type:emanation|distance:30]{30 尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光 Aura}</p>\n<hr />\n<p>诺利周围 30 尺内的盟友在对抗恐惧效果时的豁免检定有+2 环境加值。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.UxeoSRmPbD5hjiEi]{效果：鼓舞人心}</p>"
+				},
+				"Nu8j6VpdlorVM75S":{
+					"name":"指定铃花会庄稼 Designate Bellflower Crop",
+					"description":"<p>诺利把 30 尺内的一个盟友指定为铃花会“庄稼”。诺利能同时拥有 10 个“庄稼”成员；新加入的“庄稼”成员数量如果超过上限，诺利之前添加的“庄稼”成员将会被移除。当诺利或“庄稼”成员对其他成员进行@Compendium[pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{协助 Aids}时成功，他们将得到大成功的结果。</p>\n<p>当诺利 60 尺内的“庄稼”成员在对抗可能导致@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}或@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}的效果时豁免检定失败，该“庄稼”成员能以反应动作重新投掷豁免检定，并取两次中较高的结果。这是一个幸运效果。</p>"
+				},
+				"PcDH3sH6RU74yewe":{
+					"name":"Liberating Trick",
+					"description":"<p>诺利让自己或触及范围内的盟友从@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态中解脱出来。</p>"
+				},
+				"TpYZfRAOyWTWC5du":{
+					"name":"Quick Movements",
+					"description":"<p>诺利的移动动作或任何需要使用贼活技能的动作不会触发反应动作。</p>"
+				}
+			}
 		},
 		"Phantom Bells": {
-			"name": "Phantom Bells"
+			"name": "幽冥丧钟 vPhantom Bells",
+			"disable":"<p>@Check[type:religion|dc:27|name:Recite Against the Power of Hell|traits:auditory,complex,haunt,sonic,hazard]（专家）来吟诵经文打破诅咒，对抗来自地狱的钟声（需要 2 个动作），或者@Check[type:performance|dc:22|name:Perform an Opposing Composition|traits:auditory,complex,haunt,sonic,hazard]（专家）来表演（Perform）以对抗这些声音</p>",
+			"description": "<p>恶魔般的丧钟鸣响回荡，喧嚣的回响使人骨骼震荡</p>",
+			"reset": "<p>若 30 尺范围内没有活物，丧钟便会停止鸣响</p>",
+			"routine": "<p>（1 个动作） 丧钟鸣响，对@Template[type:emanation|distance:30]{30尺}内的每名活物造成[[/r {4d6}[sonic]]]{4d6音波伤害}（@Check[type:fortitude|dc:24|basic:true|name:Phantom Bells Toll|traits:auditory,complex,haunt,sonic,hazard]豁免）</p>",
+			"items":{
+				"nPeM50gZBykCKDxe":{
+					"name":"悠远钟鸣 Distant Ringing",
+					"description":"<p><strong>触发</strong> 一名活物出现在 30 尺范围内</p>\n<hr />\n<p><strong>效果</strong> 随着幽冥丧钟开始摇摆，吱呀作响的金属声充满了这片区域，作祟投掷先攻</p>"
+				}
+			}
 		},
 		"Precentor": {
 			"name": "Precentor"
@@ -430,7 +478,19 @@
 			"name": "Ralldar"
 		},
 		"Remnant of Barzillai": {
-			"name": "Remnant of Barzillai"
+			"name": "巴基莱残魂 Remnant of Barzillai",
+			"publicNotes":"<p>尽管银渡鸦（the Silver Ravens）在邪恶的暴君巴基莱·斯戎（Barzillai Thrune）完全实现成为（金塔格的）地灵（genius loci）的目标之前将其击败，但他残存的魂魄依然遍布瑞瓦诺（Ravounel）地区。偶尔，这些有知觉的碎片会在附近的一小部分地区内形成一个巴基莱形状的模糊躯体，但当接近作祟之地时，幽灵之力可以从这些作祟的地方抽取灵质，从而聚合成一个更清晰的身体。无论为哪种形态，残魂都会携带着巴基莱的燃焰大锤，在残魂被摧毁一小时后，燃烧大锤会溶解成薄雾。</p>\n<p>巴基莱残魂能在瑞瓦诺（Ravounel）的任何地方显现，甚至在一个残魂被击败后，另一个可能会立即出现。想要让这位亡灵审判者永远安息，只有在他的大锤消失前取回它，然后将它埋于由善良牧师祝圣的地方至少一年，期间不受打扰。</p>\n<p>虽然巴基莱残魂能从任何与它建立联系的作祟中汲取力量，但残魂倾向于在特定作祟附近这么做。明日当焚27-28页上列出的作祟通常与巴基莱残魂有关。然而，这些远不是巴基莱能创造的全部作祟；银渡鸦（the Silver Ravens）的记录提到了许多与不死之物有关的现象，其中一些涉及各种各样的鸟，薄荷和茶叶的香气，以及身披重甲、宛若鬼魅的人型。</p>",
+			"items":{
+				"wTrhi9PyRoPxh06i":{"name":"燃焰大锤 Burning Mace"},
+				"hrt10usZTV3s3uKQ":{
+					"name":"作祟形态 Haunted Form",
+					"description":"<p>巴基莱残魂汲取作祟中的能量，当他接近作祟时能借此增强自己的力量。巴基莱残魂距一个作祟60尺内时，他的抗力提升至 全伤害 12。当巴基莱60英尺范围内的一个作祟被破坏时，他会因反冲而受到[[/r {20}[force]]]{20点力场伤害}。</p>"
+				},
+				"zFmXqrFJBmQGs6z5":{
+					"name":"创造作祟 Create Haunt",
+					"description":"<p><strong>频率</strong> 每日三次</p>\n<p><strong>需求</strong> 巴基莱残魂身处瑞瓦诺（Ravounel）境内</p>\n<hr />\n<p><strong>效果</strong> 巴基莱残魂扰动并增强了此地不安的魂魄，在他现在所处之处创造一个6级或等级更低的作祟。这个作祟永久存在，直到它或巴基莱残魂被摧毁。</p>"
+				}
+			}
 		},
 		"Renali": {
 			"name": "Renali"
@@ -510,7 +570,24 @@
 			"name": "Scarlet Triad Mage"
 		},
 		"Scarlet Triad Poisoner": {
-			"name": "Scarlet Triad Poisoner"
+			"name": "红三一投毒者 Scarlet Triad Poisoner",
+			"allSaves":"对抗毒素时所有豁免获得+1状态加值",
+			"items":{
+				"rzMtRbnW5Hj2wyGz":{
+					"name":"有红三一标记的优质镣铐 Manacles (Good) (Marked with the Symbol of the Scarlet Triad)",
+					"description":"<p>根据生物的大小和你应用的手铐数量，你可以将一个愿意或以其他方式怜悯你的人铐起来，花费约10-30秒时间。一个双腿被铐住的的两足生物在速度上受到-15尺环境减值，并且双手被铐住的两手生物必须在任何进行操作动作的时候进行@Check[type:flat|dc:5]检定，否则该动作将失败。根据手铐约束手的紧密程度，该DC可能更高。被铐到到静止物体上的生物不能移动。对于具有更多或更少肢体的生物，由GM确定手铐有什么效果。将一个生物从优质手铐中解放出来需要五次成功的@Check[type:thievery|dc:32|traits:action:pick-a-lock]检定</p>"
+				},
+				"DqY7L33t5uJuYvA3":{"name":"镣铐的钥匙 Key to Manacles"},
+				"9yiCjxLdJV4KSZ7b":{
+					"name":"巨蝎毒（涂抹至矢） Giant Scorpion Venom(Applied to Bolts)",
+					"description":"<p>蝎毒能够带来剧烈的疼痛并使受害者变得虚弱。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">D</span> 交互 (受伤)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {1d10}[poison]]]{1d10 毒素伤害} 和 @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {2d10}[poison]]]{2d10 毒素伤害} 和 力竭enfeebled 1 (1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {2d10}[poison]]]{2d10 毒素伤害} 和 力竭enfeebled 2 (1 轮)</p>"
+				},
+				"yCCEm7HEqedgAAhD":{"name":"对抗毒素时所有豁免获得+1状态加值 +1 Status to All Saves vs. Poison"},
+				"B2pWjBsWDmisLrz0":{
+					"name":"疾行毒击 Running Poison Strike",
+					"description":"<p><strong>频率</strong> 每天三次</p>\n<hr />\n<p><strong>效果</strong> 投毒者行走（Stride），在移动的过程中给武器涂毒。投毒者移动至多等同于其速度的距离，之后作出 1 次会造成[[/r {2d8}[poison]]]{2d8点额外毒素伤害}的近战打击（Strike）。这对已经能造成毒素伤害的打击没有效果。</p>"
+				}
+			}
 		},
 		"Scarlet Triad Sneak": {
 			"name": "红三一探子 Scarlet Triad Sneak",
