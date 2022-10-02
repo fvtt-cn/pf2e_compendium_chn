@@ -1013,7 +1013,19 @@
             "name": "鹰身女妖 Harpy"
         },
         "Hell Hound": {
-            "name": "地狱犬 Hell Hound"
+            "name": "地狱犬 Hell Hound",
+            "publicNotes":"<p>地狱犬的外表消除了所有关于它的起源是否来自地狱的疑问——它的血肉像燃烧着的沥青，牙齿如同其他魔族一般尖利，全身被永远燃烧着的火焰包裹——这些都是它的标志性特征。</p>\n<hr />\n<p>地狱猎犬是邪恶的，跨位面的犬科动物，在深渊中嚎叫着追捕猎物，并可以喷出超自然的滚滚烈焰。它们喜怒无常，对攻击性行为反应迅速。</p>",
+            "items":{
+                "IvEp0FjtG1bxA4Xw":{"name":"爪击 Jaws"},
+                "eG1Bf18XYFvkALTq":{
+                    "name":"灵敏嗅觉（模糊感官）60尺 Scent (Imprecise) 60 feet",
+                    "description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+                },
+                "GsQeeSV97T6FPvoY":{
+                    "name":"吐息 Breath Weapon",
+                    "description":"<p>地狱犬喷出烈焰，对15尺锥形范围内所有生物造成4d6火焰伤害（基础反射豁免DC 19）。</p>\n<p>地狱犬在[[/r 1d4 #rounds]]{1d4轮}内无法再次吐息。 假如地狱犬受到火焰伤害或者被火焰效果影响，则吐息能力会重新充能。"
+                }
+            }
         },
         "Hobgoblin Archer": {
             "name": "大地精射手 Hobgoblin Archer"
@@ -1586,7 +1598,33 @@
             "name": "巴莫 Baomal"
         },
         "Barbazu": {
-            "name": "胡须魔 Barbazu"
+            "name": "胡须魔 Barbazu",
+            "allSaves":"对所有魔法效果的豁免有+1状态加值",
+            "publicNotes":"<p>巴霸魔，通常也被称为胡须魔或步兵魔，是一种嗜杀成性的魔鬼，它们充当炼狱军队的步兵来满足自己的毁灭欲望，通常会带领成群的下级魔鬼例如小魔鬼或劣魔加入战斗。胡须魔会挥舞着带锯刃的大砍刀，造成锯齿状的伤口能抵抗治疗法术，造成大量失血。当地人靠的太近时，胡须魔会用它们蠕动的尖刺胡须发起攻击，造成一种叫做“地狱热疫”的可怕疾病，它们也会津津有味地看着猎物的力量从内部被慢慢地吞噬。</p>\n<p>胡须魔总是野蛮地沉迷于来自地狱各层的地狱领主们的邪恶念头，热衷于为它们散播谋杀、悲惨和痛苦。</p>\n<hr />\n<p>作为散播腐败和征服的大师，魔鬼们试图诱惑凡人生命加入它们对亵渎事物的追求中来，并将暴政传播到各个世界。它们向人类提出各种条件，从签署一份地狱契约而获取的强大力量，到向邪神低语换来的扭曲恩惠，甚至还有许多更微妙的交易。那些屈服于这些诱惑的人，会发现自己死后会在地狱的深坑中遭受无尽的折磨，在那里唯一逃脱的希望就是晋升为地狱中的魔鬼。从士兵、学者到检察官、律师、法官和刽子手，每一种恶魔在维持冷酷无情的地狱官僚机器上扮演着特定的角色，这就是地狱。低级的劣魔和小魔鬼服从于更强大和专业的恶魔，比如契约魔和狂怒魔，做着卑下的工作，而最强大的深狱炼魔指挥着整个地狱军团。</p>",
+            "items":{
+                "99jBJtnLmD48VOSS":{"name":"爪击 Claw"},
+                "kwMV2uj1jCdvIm7J":{"name":"胡须 Beard"},
+                "fDmw9feXNMKuAci4":{
+                    "name":"心灵感应100尺 Telepathy 100 feet",
+                    "description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+                },
+                "GZ55vWFhwaHyhnfM":{
+                    "name":"地狱热疫 Avernal Fever",
+                    "description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>阶段 1</strong> 携带疾病但是不受影响（1 日）</p>\n<p><strong>阶段 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 天)</p>\n<p><strong>阶段 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 天)</p>"
+                },
+                "SNJ0RSCREyP9YYKY":{
+                    "name":"地狱创伤 Infernal Wound",
+                    "description":"<p>胡须魔的大砍刀打击也会造成@Localize[PF2E.PersistentDamage.Bleed1d6.success]，并且能抵抗对流血伤害的治疗尝试。</p>\n<p>终止流血伤害的纯骰检定@Check[type:flat|dc:20]。只有当流血生物得到盟友成功进行协助之后该DC才会减少到@Check[type:flat|dc:15]。对有地狱创伤生物@Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{进行急救 Administer First Aid}的DC增加5。</p>\n<p>施法者或物品试图对受到地狱创伤的生物使用治疗魔法时，必须通过DC 21的反制检定，否则法术无法生效。</p>"
+                },
+                "zQUhdB7kvudfGv5Z":{
+                    "name":"移位 Reposition",
+                    "description":"<p><strong>触发</strong> 魔鬼的大砍刀打击命中目标</p>\n<hr />\n<p><strong>效果</strong> 魔鬼将目标朝任意方向移动5尺。目的地方格必须在魔鬼大砍刀的触及范围内。</p>\n<p>此移动不会触发反应动作。</p>"
+                },
+                "6zbiPHhWaAV5pJd6":{
+                    "name":"蠕动胡须 Wriggling Beard",
+                    "description":"<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 胡须魔进行一次胡须打击。此打击不受多重攻击减值，并且也不计入多重攻击减值。</p>"
+                }
+            }
         },
         "Basilisk": {
             "name": "石化蜥蜴 Basilisk"
