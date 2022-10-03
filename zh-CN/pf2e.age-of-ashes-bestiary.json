@@ -278,7 +278,35 @@
 			"name": "Gerhard Pendergrast"
 		},
 		"Ghastly Bear": {
-			"name": "Ghastly Bear"
+			"name": "惨白穴熊 Ghastly Bear",
+			"items":{
+				"LT73ykCcsBulHrcy":{"name":"啃咬 Jaws"},
+				"pvaF5cf0XkH3cCbK":{"name":"爪抓 Claw"},
+				"7wgXd0InH2pMtroD":{
+					"name":"30 尺灵敏嗅觉（模糊） Scent (Imprecise) 30 feet",
+					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"Am5pbCNVDkDBNz5Y":{
+					"name":"恶臭 Stench",
+					"description":"<p>@Template[type:emanation|distance:10]{10 尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光 Aura}</p>\n<hr />\n<p>有生物进入灵光区域或在其回合开始时位于灵光区域内时，必须成功通过@Check[type:fortitude|dc:26]豁免，失败则会陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时只要处于它的恶心状态就会附加@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。</p>\n<p>在处于灵光内时，受影响的生物在对抗疾病的豁免以及从恶心状态恢复的豁免中承受-2 环境减值。成功通过豁免的生物会在 1 分钟内临时免疫该效果。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{效果：恶臭}</p>"
+				},
+				"DEoIu6kGyGbwbSn3":{
+					"name":"啃肉 Consume Flesh",
+					"description":"<p><strong>需求</strong> 惨白穴熊与某个在过去 1 小时内死亡的生物的尸体相邻</p>\n<hr />\n<p><strong>效果</strong> 惨白穴熊啃下一大块尸体并恢复[[/r {6d6}[healing]]]{6d6生命值}。</p>\n<p>它只能从每个尸体恢复1次生命值。</p>"
+				},
+				"j3NCaHUgoOUiHpye":{
+					"name":"妖鬼热 Ghast Fever",
+					"description":"<p><strong>豁免骰</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>阶段 1</strong> 携带病原但没有不良效果（1 日）；</p>\n<p><strong>阶段 2</strong> [[/r {3d8}[negative]]]{3d8负能量伤害}且从任何治疗获得的生命值恢复均减半（1日）</p>\n<p><strong>阶段 3</strong> 同阶段2（1 日）</p>\n<p><strong>阶段 4</strong> [[/r {3d8}[negative]]]{3d8负能量伤害}且无法从治疗获得任何好处（1 日）</p>\n<p><strong>阶段 5</strong> 同阶段 4（1 日）</p>\n<p><strong>阶段 6</strong> 死亡，并在下一日的午夜以@Compendium[pf2e.pathfinder-bestiary.VC7rtYR4hLxwg7WZ]{妖鬼 Ghast}复生</p>"
+				},
+				"gncjMzeBqmNqD4vz":{
+					"name":"擅长搏击 Mauler",
+					"description":"<p>惨白穴熊在对抗被它@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物时，伤害检定获得+4环境加值。</p>"
+				},
+				"eCRAMtpF3k73LRFd":{
+					"name":"麻痹 Paralysis",
+					"description":"<p>任何被惨白穴熊的攻击命中的活物必须成功进行@Check[type:fortitude|dc:26]豁免，失败则会陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物能够在每次自身回合结束时尝试一次新的豁免，每次尝试上述豁免都会使得 DC 累计降低 1 点。</p>"
+				}
+			}
 		},
 		"Gloomglow Mushrooms": {
 			"name": "Gloomglow Mushrooms"
@@ -354,7 +382,33 @@
 			"name": "Ishti"
 		},
 		"Jaggaki": {
-			"name": "Jaggaki"
+			"name": "贾伽基 Jaggaki",
+			"allSaves":"对抗正能量的所有豁免获得+1状态加值",
+			"items":{
+				"MZVij16ep6tHatWC":{
+					"name":"+1强击高等死灵法杖 +1 Striking Staff of Necromancy (Greater)",
+					"description":"<p>这根冰冷扭曲的法杖上雕刻着骷髅头和骨骼的图案。持握它时，你在鉴别死灵系法术的检定上获得+2环境加值。</p>\n<p><strong>启动</strong> 施放法术</p>\n<hr />\n<p><strong>效果</strong> 你消耗一定充能从法杖法术列表中施放法术。</p>\n<ul>\n<li><strong>戏法</strong> <em>@Compendium[pf2e.spells-srd.mAMEt4FFbdqoRnkN]{恐吓之触 Chill Touch}</em></li>\n<li><strong>1环</strong><em>@Compendium[pf2e.spells-srd.k34hDOfIIMAxNL4a]{邪影触须 Grim Tendrils}</em>, <em>@Compendium[pf2e.spells-srd.J7Y7tl0bbdz7TcCc]{衰弱射线 Ray of Enfeeblement}</em></li>\n<li><strong>2环</strong> <em>@Compendium[pf2e.spells-srd.fZPCv2VHuM2yPbC8]{耳聋术 Deafness}</em>, <em>@Compendium[pf2e.spells-srd.xRgU9rrhmGAgG4Rc]{遗体防腐 Gentle Repose}</em></li>\n<li><strong>3环</strong> <em>@Compendium[pf2e.spells-srd.VosLNn2M8S7JH67D]{目盲术 Blindness}</em>, <em>@Compendium[pf2e.spells-srd.N1Z1oLPdBxaSgrEE]{吸血鬼之触 Vampiric Touch}</em></li>\n<li><strong>4环</strong> <em>@Compendium[pf2e.spells-srd.k34hDOfIIMAxNL4a]{邪影触须 Grim Tendrils}</em>, <em>@Compendium[pf2e.spells-srd.N1Z1oLPdBxaSgrEE]{吸血鬼之触 Vampiric Touch}</em></li>\n</ul>\n<p><strong>制造需求</strong> 为列表上所有法术提供1次对应环级的施法</p>"
+				},
+				"DlwhGb66IrdDlQFU":{"name":"手掌 Hand"},
+				"MaPDXpGVOauOwVc8":{"name":"投石 Rock"},
+				"gKRDi4EHuz4qIfX0":{"name":"对抗正能量的所有豁免获得+1状态加值 +1 Status to All Saves vs. Positive"},
+				"BCcVa7LcDbfMataD":{
+					"name":"复生 Rejuvenation",
+					"description":"<p>当巫妖被摧毁时，其灵魂会立即转移到内。<em>@Compendium[pf2e.equipment-srd.NEbr7nKuiluJgBHT]{命匣 Soul Cage}</em>只有先找到并摧毁巫妖的<em></em>命匣，才能永久摧毁该命匣对应的巫妖。</p>"
+				},
+				"gca4Y5kOq7GHUaJp":{
+					"name":"石之骨 Bones of Stone",
+					"description":"<p><strong>需求</strong> 目标站在石质表面上或者与石质表面相邻</p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 贾伽基召唤大地中的骚动精魂，让一只由锯齿状的石头构成的巨人骸骨手臂从60尺范围内的石质表面上伸向相邻的 1 名生物。贾伽基通过这支石质手臂作出手摸打击对抗目标，而非使用自己的手臂。若打击命中，它会造成额外[[/r {4d6}[bludgeoning]]]{4d6点钝击伤害}。</p>"
+				},
+				"T3t1bWcAoYCVuiiE":{
+					"name":"汲取命匣 Drain Soul Cage",
+					"description":"<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 贾伽基释放其<em>@Compendium[pf2e.equipment-srd.NEbr7nKuiluJgBHT]{命匣 Soul Cage's}</em>的力量，以此来施放任意奥术法术，该法术的环级最高为贾伽基自身所能施放法术的最高环级，该法术即便不在贾伽基的已准备法术内也可以施放。</p>\n<p>贾伽基使用该能力不需要其命匣在场。</p>"
+				},
+				"pLURCvEu8rYktiZE":{
+					"name":"Paralyzing Touch",
+					"description":"<p>被贾伽基的手摸打击所伤害的生物必须通过强韧豁免对抗@Check[type:fortitude|dc:29]。</p>\n<p>失败则会陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，持续1轮。大失败时，该生物会被永久麻痹，@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}且看起来与死了无异。通过@Check[type:medicine|dc:25|name:Diagnose Paralysis]检定能揭示出该受害者还活着。</p>"
+				}
+			}
 		},
 		"Jahsi": {
 			"name": "Jahsi"
