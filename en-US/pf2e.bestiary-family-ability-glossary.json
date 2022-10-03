@@ -29,6 +29,18 @@
 			"name": "(Beheaded) Whispering",
 			"description": "<p>@Template[type:emanation|distance:30] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The beheaded constantly whispers twisted incantations in unknown languages secret and foul. Foes that enter or begin their turn in the area must succeed at a Will save or be @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1}. The aura uses the moderate DC for the beheaded's level.</p>"
 		},
+		"(Clockwork Creature) Malfunction - Backfire": {
+			"name": "(Clockwork Creature) Malfunction - Backfire",
+			"description": "<p>The clockwork rolls a @Check[type:flat|dc:5] at the start of each of its turns. On a failure, it backfires, dealing [[/r {2d6}[fire]]]{2d6 fire damage} in a @Template[type:cone|distance:15], including to itself (@Check[type:reflex|basic:true|dc:0] save at the standard DC for its level), and is @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} this turn.</p>"
+		},
+		"(Clockwork Creature) Malfunction - Damaged Propulsion": {
+			"name": "(Clockwork Creature) Malfunction - Damaged Propulsion",
+			"description": "<p>The clockwork loses [[/br 1d4 #Lost Hours]]{1d4 hours} of operational time at the end of each of its turns.</p>"
+		},
+		"(Clockwork Creature) Malfunction - Loose Screws": {
+			"name": "(Clockwork Creature) Malfunction - Loose Screws",
+			"description": "<p>When damaged, the clockwork attempts a @Check[type:flat|dc:5]. On a failure, a plate of its armor falls loose. It takes a status penalty to AC equal to the number of lost plates (up to -4).</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.lt2t24E4hiByHhi3]{Effect: Lost Plates}</p>"
+		},
 		"(Clockwork Creature) Wind-Up": {
 			"name": "(Clockwork Creature) Wind-Up",
 			"description": "<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
@@ -761,37 +773,37 @@
 			"name": "(Vampire, Jiang-Shi, Minister) Tumult of the Blood",
 			"description": "<p>The third time a jiang-shi successfully Drains Qi within a single minute, they become @Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} for 1 minute. They can use their extra action only to Strike or Stride.</p>"
 		},
-		"(Vampire, Noferatu Overlord) Air of Sickness": {
-			"name": "(Vampire, Noferatu Overlord) Air of Sickness",
+		"(Vampire, Nosferatu Overlord) Air of Sickness": {
+			"name": "(Vampire, Nosferatu Overlord) Air of Sickness",
 			"description": "<p>@Template[type:emanation|distance:30] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A creature entering or starting its turn in the aura must attempt a @Check[type:fortitude|dc:] save with a moderate DC for the nosferatu's level. On a failure, the creature is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} and takes a -2 status penalty to saves made to resist diseases and remove the sickened condition for 1 hour.</p>"
-		},
-		"(Vampire, Noferatu Overlord) Paralytic Fear": {
-			"name": "(Vampire, Noferatu Overlord) Paralytic Fear",
-			"description": "<p><strong>Requirements</strong> The nosferatu overlord's last action was a successful claw Strike</p>\n<hr />\n<p><strong>Effect</strong> The nosferatu drags the target of the Strike close and freezes its mind in terror. The target must attempt a @Check[type:will|dc:] save with a moderate DC for the nosferatu's level.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} by fear until the end of the nosferatu's next turn.</p>\n<p><strong>Failure</strong> The target is @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} and takes a -2 circumstance penalty to its Fortitude DC against the nosferatu's Drink Blood ability until the end of the nosferatu's next turn.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
-		},
-		"(Vampire, Noferatu Thrall) Fast Healing": {
-			"name": "(Vampire, Noferatu Thrall) Fast Healing",
-			"description": "<p>A nosferatu thrall gains fast healing 5 from being sustained by their master's blood.</p>"
-		},
-		"(Vampire, Noferatu Thrall) Mindbound": {
-			"name": "(Vampire, Noferatu Thrall) Mindbound",
-			"description": "<p>A nosferatu master exerts a fierce hold over their thrall's mind. If any creature other than the thrall's master targets them with an effect that would give them the @Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} condition, the thrall's master rolls a counteract check against it using their Dominate DC - 10 as the counteract check modifier.</p>"
-		},
-		"(Vampire, Noferatu Thrall) Mortal Shield": {
-			"name": "(Vampire, Noferatu Thrall) Mortal Shield",
-			"description": "<p><strong>Trigger</strong> The thrall's master would take damage from a Strike or spell attack and is in an adjacent square</p>\n<hr />\n<p><strong>Effect</strong> The thrall throws themself in front of their master, taking half the damage of the attack (before applying any weaknesses or resistances). The thrall's master takes the remaining damage, applying any weaknesses or resistances as normal.</p>"
-		},
-		"(Vampire, Noferatu Thrall) Rally": {
-			"name": "(Vampire, Noferatu Thrall) Rally",
-			"description": "<p><strong>Trigger</strong> The thrall ends their turn more than 30 feet away from their master</p>\n<hr />\n<p><strong>Effect</strong> The thrall Strides up to their Speed toward their master.</p>"
-		},
-		"(Vampire, Noferatu Thrall) Weakness": {
-			"name": "(Vampire, Noferatu Thrall) Weakness",
-			"description": "<p>The strain of being controlled wears on the nosferatu thrall's mind, giving them weakness 10 to mental damage.</p>"
 		},
 		"(Vampire, Nosferatu Overlord) Divine Innate Spells": {
 			"name": "(Vampire, Nosferatu Overlord) Divine Innate Spells",
 			"description": "<p>The nosferatu can cast <em>@Compendium[pf2e.spells-srd.tpLTLbJUrYcMWGld]{Telekinetic Haul}</em> (heightened to half their level rounded up) three times per day and <em>@Compendium[pf2e.spells-srd.fd31tAHSSGXyOxW6]{Vampiric Exsanguination}</em> twice per day as a divine innate spell. They use a high DC for their level.</p>"
+		},
+		"(Vampire, Nosferatu Overlord) Paralytic Fear": {
+			"name": "(Vampire, Nosferatu Overlord) Paralytic Fear",
+			"description": "<p><strong>Requirements</strong> The nosferatu overlord's last action was a successful claw Strike</p>\n<hr />\n<p><strong>Effect</strong> The nosferatu drags the target of the Strike close and freezes its mind in terror. The target must attempt a @Check[type:will|dc:] save with a moderate DC for the nosferatu's level.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} by fear until the end of the nosferatu's next turn.</p>\n<p><strong>Failure</strong> The target is @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} and takes a -2 circumstance penalty to its Fortitude DC against the nosferatu's Drink Blood ability until the end of the nosferatu's next turn.</p>\n<p><strong>Critical Failure</strong> As failure, and the target is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>"
+		},
+		"(Vampire, Nosferatu Thrall) Fast Healing": {
+			"name": "(Vampire, Nosferatu Thrall) Fast Healing",
+			"description": "<p>A nosferatu thrall gains fast healing 5 from being sustained by their master's blood.</p>"
+		},
+		"(Vampire, Nosferatu Thrall) Mindbound": {
+			"name": "(Vampire, Nosferatu Thrall) Mindbound",
+			"description": "<p>A nosferatu master exerts a fierce hold over their thrall's mind. If any creature other than the thrall's master targets them with an effect that would give them the @Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} condition, the thrall's master rolls a counteract check against it using their Dominate DC - 10 as the counteract check modifier.</p>"
+		},
+		"(Vampire, Nosferatu Thrall) Mortal Shield": {
+			"name": "(Vampire, Nosferatu Thrall) Mortal Shield",
+			"description": "<p><strong>Trigger</strong> The thrall's master would take damage from a Strike or spell attack and is in an adjacent square</p>\n<hr />\n<p><strong>Effect</strong> The thrall throws themself in front of their master, taking half the damage of the attack (before applying any weaknesses or resistances). The thrall's master takes the remaining damage, applying any weaknesses or resistances as normal.</p>"
+		},
+		"(Vampire, Nosferatu Thrall) Rally": {
+			"name": "(Vampire, Nosferatu Thrall) Rally",
+			"description": "<p><strong>Trigger</strong> The thrall ends their turn more than 30 feet away from their master</p>\n<hr />\n<p><strong>Effect</strong> The thrall Strides up to their Speed toward their master.</p>"
+		},
+		"(Vampire, Nosferatu Thrall) Weakness": {
+			"name": "(Vampire, Nosferatu Thrall) Weakness",
+			"description": "<p>The strain of being controlled wears on the nosferatu thrall's mind, giving them weakness 10 to mental damage.</p>"
 		},
 		"(Vampire, Nosferatu) Change Shape": {
 			"name": "(Vampire, Nosferatu) Change Shape",

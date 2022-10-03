@@ -3949,6 +3949,10 @@
 			"name": "Dubious Knowledge",
 			"description": "<p>You're a treasure trove of information, but not all of it comes from reputable sources. When you fail (but don't critically fail) a Recall Knowledge check using any skill, you learn a bit of true knowledge and a bit of erroneous knowledge, but you don't have any way to differentiate which is which.</p>"
 		},
+		"Duel Spell Advantage": {
+			"name": "Duel Spell Advantage",
+			"description": "<p>When you start a psychic duel, you gain a third natural psychic spell. You can't choose the same spell twice.</p>\n<p>If you're 9th level or higher, add the following spells to the list of natural psychic spells you can choose:</p>\n<ul>\n<li><em>@Compendium[pf2e.spells-srd.LiGbewa9pO0yjbsY]{Confusion}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.GaRQlC9Yw1BGKHfN]{Crushing Despair}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.U58aQWJ47VrI36yP]{Hallucination}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.BilnTGuXrof9Dt9D]{Synaptic Pulse}</em></li>\n<li><em>@Compendium[pf2e.spells-srd.OAt2ZEns1gIOCgrn]{Synesthesia}</em></li>\n</ul>"
+		},
 		"Dueling Dance (Fighter)": {
 			"name": "Dueling Dance (Fighter)",
 			"description": "<p><strong>Requirements</strong> You are wielding only a single one-handed melee weapon and have your other hand or hands free.</p>\n<hr />\n<p>Using your free hand as pivot and balance, you both attack and defend with your weapon. While you are in this stance, you constantly have the benefits of @Compendium[pf2e.feats-srd.n7nQQR940OvFbw7T]{Dueling Parry}.</p>"
@@ -7221,6 +7225,10 @@
 			"name": "Instant Return",
 			"description": "<p><strong>Trigger</strong> An enemy misses you with a ranged attack using a type of ammunition appropriate to your weapon (a bullet if you're wielding a firearm).</p>\n<p><strong>Requirements</strong> You're wielding an unloaded firearm or crossbow.</p>\n<hr />\n<p>With a single fluid gesture, you catch a projectile out of the air, load it in your weapon, and shoot it back at the attacker. Interact to load the projectile into your weapon, then make a Strike with the required weapon against the triggering opponent. Since you're using the foe's ammunition, this Strike applies any special effects that ammunition would have (for instance, if it was @Compendium[pf2e.equipment-srd.rKknk8odXDBpON5l]{Explosive Ammunition}, it would explode in a burst of fire if your Strike hits).</p>"
 		},
+		"Instigate Psychic Duel": {
+			"name": "Instigate Psychic Duel",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You attempt to enter a psychic duel with a creature within 100 feet. The target can attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your spell DC or class DC. If it enters the duel willingly, use the result for a critical failure.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The two of you enter a psychic duel, but it ends automatically at the end of your next turn. As normal for a psychic duel, the duel ends if one participant is knocked out, as well as under any other conditions to which both participants agree. If you're in initiative when you Instigate the Psychic Duel, you keep the same initiative positions. You can each choose a psychic center for any skill in which you're trained, as you would if you were using that skill to roll initiative for the duel.</p>\n<p><strong>Failure</strong> As a success, except instead of ending at the end of your next turn, the target can attempt a new save to end the duel at the end of each of your turns, starting with your next turn.</p>\n<p><strong>Critical Failure</strong> As a success, except the duel doesn't end until it reaches one of the normal end conditions for a psychic duel.</p>"
+		},
 		"Instinct Ability": {
 			"name": "Instinct Ability",
 			"description": "<p>You gain the instinct ability for the instinct you chose for Barbarian Dedication.</p>"
@@ -10088,6 +10096,10 @@
 		"Psychic Dedication": {
 			"name": "Psychic Dedication",
 			"description": "<p>You feel something awaken within your mind. You become trained in Occultism; if you were already trained in Occultism, you become trained in a skill of your choice. You cast spells like a psychic and gain the @Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} activity; as you don't have a subconscious mind, your thought components are simple intentions. Choose a conscious mind. You gain a spell repertoire with one standard psi cantrip of your choice from your conscious mind, which you cast as a psi cantrip. You gain the normal benefits and the amp for this psi cantrip, but not any other benefits from the conscious mind. If you don't have one, you gain a focus pool of 1 Focus Point, which you can use to amp your psi cantrips, and you can Refocus by meditating on your new powers. If you already have a focus pool, increase the number of points in your pool by 1. You're trained in occult spell attack rolls and occult spell DCs. Your key spellcasting ability for psychic archetype spells is the ability you used to qualify for the archetype, and they are occult psychic spells.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the psychic archetype.</p>"
+		},
+		"Psychic Duelist Dedication": {
+			"name": "Psychic Duelist Dedication",
+			"description": "<p>Through experience and in-depth visualizations of mental battles, you've grown adept at psychic duels. You gain a +2 circumstance bonus to your initiative rolls for psychic duels. Each time you enter a psychic duel, choose one of the following benefits for the duration of that duel.</p>\n<ul>\n<li><strong>Mind Mace</strong> You gain a status bonus to mental damage with spells you cast equal to the spell's level.</li>\n<li><strong>Psychic Fist</strong> You can use your standard ability modifier for Strike damage instead of your highest mental modifier, and you can use your full AC instead of using your Will DC in place of your AC.</li>\n</ul>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the psychic duelist archetype.</p>"
 		},
 		"Psychic Rapport": {
 			"name": "Psychic Rapport",
@@ -13208,6 +13220,10 @@
 		"Suplex": {
 			"name": "Suplex",
 			"description": "<p><strong>Requirements</strong> You have a creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>Flexing your entire body, you heave your opponent over your head and slam them into the ground. Make an unarmed melee Strike against the creature you have grabbed or restrained; on a success, the target lands @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, and on a critical success, the target lands prone and takes an additional [[/r {2d6}[bludgeoning]]]{2d6 bludgeoning damage}. Regardless of whether the Strike is successful, you immediately release your hold on the target.</p>"
+		},
+		"Supreme Psychic Center": {
+			"name": "Supreme Psychic Center",
+			"description": "<p><strong>Trigger</strong> Your turn in a psychic duel begins.</p>\n<hr />\n<p>With the merest thought, you realign your mental defenses to your duel's circumstances. You @Compendium[pf2e.actionspf2e.5p2AMqM9bOVnhwPT]{Recenter}.</p>"
 		},
 		"Supreme Spellstrike": {
 			"name": "Supreme Spellstrike",
