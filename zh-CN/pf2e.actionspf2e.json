@@ -74,8 +74,8 @@
             "description": "<p><strong>触发</strong> A creature within 30 feet Casts a Spell that has a verbal component or Activates an Item using a command Activation</p>\n<hr />\n<p><strong>效果</strong> You set off a firework to explode with a loud screech near the creature. The creature must attempt a Will save.</p>\n<hr />\n<p><strong>成功</strong> The creature is unaffected.</p>\n<p><strong>失败</strong> The creature must use an additional action on the triggering action or activity, or it's disrupted.</p>\n<p><strong>大失败</strong> The triggering action is disrupted.</p>"
         },
         "Barbed Quills": {
-            "name": "Barbed Quills",
-            "description": "<p><strong>频率</strong> once per day</p>\n<p><strong>Trigger</strong> You are hit with an unarmed strike or a strike with a non-reach melee weapon.</p>\n<hr />\n<p>You break off quills in your attacker's flesh. You deal [[/r {1d8}[piercing]]]{1d8 piercing damage} to the triggering creature (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher.) On a critical failure, the creature also takes @Localize[PF2E.PersistentDamage.Bleed1d4.success] as your quills hook into its flesh. At 3rd level, and every 2 levels thereafter, this damage increases by 1d8 and the persistent piercing damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r {1d4+ceil(@actor.level/2)-1}[persistent,bleed]]]{Levelled} @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}</p>\n<hr />\n<p><em>Note: +1 bonus from Bristle is not added automatically</em></p>"
+            "name": "带刺羽尖 Barbed Quills",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r {1d8}[piercing]]]{1d8穿刺伤害}（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r {1d4+ceil(@actor.level/2)-1}[persistent,bleed]]]{按等级计算的} @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
@@ -190,8 +190,8 @@
             "description": "<p><strong>触发</strong> You attempt a saving throw against a magical effect, but you haven't rolled yet</p>\n<hr />\n<p>Your ancestors' innate resistance to magic surges, before slowly ebbing down. You gain a +1 circumstance bonus to the triggering saving throw and until the end of this turn.</p>"
         },
         "Call to Axis": {
-            "name": "Call to Axis",
-            "description": "<p>Given by Rite of Knowing</p>\n<p><strong>频率</strong> once per day</p>\n<p><strong>需求</strong> You are about to attempt a check to Recall Knowledge. You call upon the knowledge of Axis to ensure the accuracy of your information. You roll a second time and use the higher result. If you roll a critical failure, you get a failure instead. If you roll a success, you get a critical success instead.</p>"
+            "name": "沟通轴心城 Call to Axis",
+            "description": "<p>由知识仪式族裔传承获得。</p>\n<p><strong>频率</strong> 每日一次</p>\n<p><strong>需求</strong> 你即将尝试一次回忆知识动作。</p>\n<hr />\n<p>你寻求轴心城的知识连确保信息的准确性。掷骰两次，取更高的结果。如果检定大失败，则能得到失败的结果。如果检定成功，则能得到大成功的结果。</p>"
         },
         "Cast a Spell": {
             "name": "施放法术 Cast a Spell",
@@ -202,20 +202,20 @@
             "description": "<p><strong>触发</strong> determined by your catharsis emotion</p>\n<hr />\n<p><strong>效果</strong> You gain the catharsis activation effects listed for your catharsis emotion. You gain that emotion's emotional fervor benefits for 3 rounds. When your emotional fervor ends, you suffer the listed emotional fallout. After using Catharsis, you can't use it again until you use the @Compendium[pf2e.actionspf2e.EhLvRWFKhZ3HtrZO]{Settle Emotions} activity.</p>"
         },
         "Change Shape (Anadi)": {
-            "name": "化形（半蛛人） Change Shape (Anadi)",
-            "description": "<p>You change into your human or spider shape. Each shape has a specific, persistent appearance.</p>\n<p>In your human shape, you can't use unarmed attacks granted by your ancestry. You aren't flat footed when climbing in your spider shape.</p>\n<p>However, in your spider shape you can't use weapons, shields, or other held items of any sort, and you are limited in what actions you can take that have the manipulate trait. The only manipulate actions you can take are to @Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell}with somatic components, weave silk or webbing, or simple @Compendium[pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} actions such as opening an unlocked door. Your spider legs can't perform actions that require fingers or significant manual dexterity, including any action that would require a check to accomplish. The GM might determine other manipulate actions are appropriate for your spider legs.</p>"
+            "name": "变形（半蛛人） Change Shape (Anadi)",
+            "description": "<p>你可以在人类或蜘蛛的外形中切换。每种形态都拥有一个特定的、固定的外观。</p>\n<p>在你的人类形态下，你不能使用族裔给与你的非武装攻击（尖牙）。在你的蜘蛛形态下，你在攀爬时不会措手不及。</p>\n<p>但是你在蜘蛛形态下无法使用武器、盾牌或任何其他需要持握的物品，你所能进行的带有操作特征的动作也受到限制。你只能进行下列操作动作：@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放 Cast a Spell}带有姿势成分的法术、编织丝线和网、或简单的@Compendium[pf2e.actionspf2e.pvQ5rY2zrtPI614F]{交互 Interact}动作（例如打开一扇未上锁的门）。你的蜘蛛腿无法执行那些需要手指或灵巧双手的操作，包括任何需要检查才能完成的动作。GM可以裁定你的蜘蛛腿是否能完成其他操作动作。</p>"
         },
         "Change Shape (Beastkin)": {
-            "name": "Change Shape (Beastkin)",
-            "description": "<p>You change into your humanoid or hybrid shape. Each shape has a specific, persistent appearance, and most beastkin remain in their hybrid shapes by default.</p>\n<p>In hybrid shape, you appear as a mix between your ancestry and your inherent animal. While in hybrid shape, you gain a jaws unarmed Strike resembling the features of your inherent animal (fangs for bats, beaks for eagles, mandibles for wasps, and so on). Your jaws deal 1d4 piercing damage, have the agile, finesse, and unarmed traits, and are in the brawling weapon group.</p>\n<p>In your humanoid shape, you retain the appearance of your original ancestry.</p>"
+            "name": "变形(兽化裔) Change Shape (Beastkin)",
+            "description": "<p>你变成类人形态或人兽混合形态。每种形态都拥有特定的、固有的外观，大多兽化裔都在默认情况下保持混合形态。在混合形态下，你的外表看起来同时具有你的族裔和本源动物的特征。</p>\n<p>当你处于混合形态时，你获得啃咬作为非武装打击，这取决于你所选的本源动物（蝙蝠为尖牙、鹰为鸟喙、黄蜂为虫颚，以此类推）。你的啃咬造成1d4穿刺伤害，拥有灵巧、娴熟和非武装特征，并且属于搏击武器组。</p>\n<p>而在类人形态下，你保持原本族裔的外观。</p>"
         },
         "Change Shape (Kitsune)": {
             "name": "化形（狐妖） Change Shape (Kitsune)",
             "description": "<p>你变成另一种由传承决定的型态。如果你的传承没有列出型态，则你的变化型态是无尾型态，呈现为你成长背景中常见的中型类人生物族裔（通常是人类）。此型态的年龄和身材都和你的真实型态相同，毛色等体貌特征也大致相似。使用化形算作是用欺骗（Deception）技能的乔装（Impersonate）动作来创造伪装。处在此型态时，你会失去由狐妖传承或族裔专长得到的非武装打击。你维持变化型态的时间不受限制，只要再次使用此能力，就可以变回真正的狐妖型态。</p>"
         },
         "Chassis Deflection": {
-            "name": "Chassis Deflection",
-            "description": "<p><strong>Trigger</strong> A critical hit deals physical damage to you.</p>\n<hr />\n<p>Attempt a @Check[type:flat|dc:17]. If you are successful, the attack becomes a normal hit.</p>"
+            "name": "外壳偏斜 Chassis Deflection",
+            "description": "<p><strong>触发</strong> 一次重击对你造成物理伤害</p>\n<hr />\n<p>进行一次@Check[type:flat|dc:17]检定。如果你成功，这次攻击变为普通命中。</p>"
         },
         "Cleanse Soul Path": {
             "name": "拂拭灵魂道途 Cleanse Soul Path",
@@ -246,8 +246,8 @@
             "description": "<p>你可以贴身藏起一件较小的物品（比如一件重量单位为L的武器）。如果你尝试将这件贴身藏好的物品不被人注意地带到什么地方，GM会为你带的这一件物品给你暗骰一次隐秘检定，用本次检定的结果来对抗所有可能注意到你的潜在的观察者。如果有生物积极地搜寻你暗藏的物品，他进行一次察觉检定对抗你的隐秘技能DC，成功则发现你隐藏的物品。</p>\n<p>你也可以在不是随身的其他地方——比如一处茂密的树丛或是一件家具的夹层里——隐藏一件物品。如果是这种情况，尝试找到这件物品的对象通过一个搜索动作进行察觉检定对抗你的隐秘技能DC，根据结果判断是否发现你隐藏的物品。</p>\n<hr />\n<p><strong>成功</strong> 你隐秘地随身藏着这件物品</p>\n<p><strong>失败</strong>搜查者发现了你带着的物品</p>"
         },
         "Conduct Energy": {
-            "name": "Conduct Energy",
-            "description": "<p><strong>需求</strong> Your last action or spell this turn had the acid, cold, electricity, fire, or sonic trait.</p>\n<hr />\n<p>You channel energy into your weapon. The weapon deals 1 additional damage per weapon damage die until the start of your next turn. This damage type matches the trait of the triggering action or spell. If your triggering action or spell had multiple eligible traits, you select one of those traits.</p>"
+            "name": "引导能量 Conduct Energy",
+            "description": "<p><strong>需求</strong> 你在本回合中的上一个动作或法术拥有酸、寒冷、 电击、火焰或音波特性。</p>\n<hr />\n<p>你把能量注入你的武器。直到你的下一个回合开始，该武器额外造成每个伤害骰1点伤害。这种伤害类型与触发动作或法术的特性相匹配。如果你的触发动作或法术拥有多个符合条件的特性，你可以选择其中一个。</p>"
         },
         "Confident Finisher": {
             "name": "稳妥终结 Confident Finisher",
@@ -645,7 +645,8 @@
             "description": "<p><strong>触发</strong> 你在自己的回合内使用了@Compendium[pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{狂暴 Rage}动作。</p>\n<hr />\n<p>使用一个具有狂暴特征的动作。此外，你可以将用于触发的狂暴所耗费的动作数量提高到2个，从而改为使用一个具有“狂暴”特征的2动作行动。 </p>"
         },
         "Mist Blending": {
-            "name": "Mist Blending"
+            "name": "融身于雾 Mist Blending",
+            "description": "<p><strong>触发</strong> 一个生物试图通过纯骰检定来瞄准你，而你因为雾、霾、水雾或烟雾得到@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}或@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态。</p>\n<hr />\n<p><strong>效果</strong> 你将自己笼罩在烟雾中，使你的敌人更难击中你。如果你是隐蔽的，纯骰检定的DC从5增加到@Check[type:flat|dc:7]；如果你是藏匿的，从11增加到@Check[type:flat|dc:13]。</p>"
         },
         "Mount": {
             "name": "骑乘 Mount",
@@ -812,8 +813,8 @@
             "description": "<p><strong>触发</strong> 你尝试一次针对魔法效果的豁免骰，但尚未掷骰。</p>\n<hr />\n<p>你针对魔法的族裔抗力保护着你。你在触发的豁免骰中获得+1环境加值。如果触发的效果是奥术，你获得+2环境加值。</p>"
         },
         "Resist Magic": {
-            "name": "Resist Magic",
-            "description": "<p><strong>触发</strong> You attempt a saving throw against a harmful magical effect but haven't rolled yet.</p>\n<hr />\n<p>Your innate magic protects you. You gain a +1 circumstance bonus to the triggering saving throw. Additionally, if the triggering effect is arcane, if you roll a success, you get a critical success instead.</p>"
+            "name": "抵抗魔法 Resist Magic",
+            "description": "<p><strong>触发</strong> 你尝试一次对抗有害法术效果的豁免检定但还未掷骰。</p>\n<hr />\n<p>你的内在魔力护佑了你。你在触发效果的豁免检定上获得+1环境加值。额外的，如果触发效果为奥秘且你获得成功，你以大成功取代掷骰结果。</p>"
         },
         "Retraining": {
             "name": "Retraining",
@@ -828,7 +829,8 @@
             "description": "<p><strong>需求</strong> You are piloting a vehicle.</p>\n<p>(reckless) You try to run over creatures with your vehicle, possibly also ramming one larger creature or object. If you maintain control of your vehicle, the vehicle moves up to twice its Speed in a straight line at the vehicle's current heading. You attempt to run over any creatures in your path two sizes smaller than the vehicle or smaller, and you can attempt to ram one target creature or object in your path one size smaller than the vehicle or larger.</p>\n<p>Each creature in your path, including a rammed target, takes the vehicle's collision damage (basic Reflex save at vehicle's collision DC). If the rammed target is a vehicle, its pilot can attempt a piloting check in place of this Reflex save, with the same results. If the target of your ram takes damage, you and your vehicle each take collision damage (no save) and your movement ends.</p>"
         },
         "Salt Wound": {
-            "name": "Salt Wound"
+            "name": "伤口涂盐 Salt Wound",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个有血液，且生命值不满的生物以近战攻击击中你</p>\n<hr />\n<p><strong>效果</strong> 你将你血液中的盐和盐水导入该生物的伤口。该生物必须尝试进行对抗你的等级DC或法术DC（以较高者为准）的@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免。如果失败，该生物会受到[[/r {1d6}[persistent,acid]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续强酸伤害}，并因疼痛而受到@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。在大失败的情况下，它将受到[[/r {2d6}[persistent,acid]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续强酸伤害}，并@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
         },
         "Scout": {
             "name": "侦察 Scout",
@@ -891,7 +893,8 @@
             "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@Compendium[pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@Compendium[pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r {3d8}[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@Compendium[pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡（parry）特征则改为+2环境加值，这2个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
         },
         "Smoke Blending": {
-            "name": "Smoke Blending"
+            "name": "融身于烟 Smoke Blending",
+            "description": "<p><strong>触发</strong> 一个生物试图通过纯骰检定来瞄准你，而你因为雾、霾、水雾或烟雾得到@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}或@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态。</p>\n<hr />\n<p><strong>效果</strong> 你将自己笼罩在烟雾中，使你的敌人更难击中你。如果你是隐蔽的，纯骰检定的DC从5增加到@Check[type:flat|dc:7]；如果你是藏匿的，从11增加到@Check[type:flat|dc:13]。</p>"
         },
         "Sneak": {
             "name": "潜行 Sneak",
@@ -1013,8 +1016,8 @@
             "description": "<p>该目标释放出一段强劲的声音。在10尺弥漫范围内的每个敌人承受4d8音波伤害，这有一次对抗你的法术DC的基础意志豁免。在其意志豁免中失败的生物也会@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<hr />\n<p><strong>升阶(+2)</strong> 伤害增加2d8。</p>"
         },
         "Toxic Skin": {
-            "name": "Toxic Skin",
-            "description": "<p><strong>频率</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you.</p>\n<hr />\n<p>You exude a deadly toxin. The triggering creature takes [[/r {1d4}[poison]]]{1d4 poison damage} (@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison] using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{Levelled} poison damage</p>"
+            "name": "毒性皮肤 Toxic Skin",
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 一个生物接触了你，比如擒抱了你，用无武装攻击成功命中你，或对你使用接触射程的法术。</p>\n<hr />\n<p>你释放一种致命的毒素。触发生物受到[[/r {1d4}[poison]]]{1d4毒素伤害}（@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison]豁免使用你的职业DC或法术DC，取两者较高一项）。在3级以及此后每升2级，伤害增加1d4。</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{按等级计算的}毒素伤害</p>"
         },
         "Track": {
             "name": "追踪 Track",
@@ -1135,6 +1138,14 @@
         "Host Spirit":{
             "name": "降灵 Host Spirit",
             "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你尝试一次技能检定，以进行一个探索行动，即使通常情况下你必须受训才能进行这个动作。你在这个技能上获得受训熟练等级，时间长至恰好足够完成单次检定（但上限为10分钟）。</p>\n<p>不论检定是否成功，在24小时内你必须帮那个协助你的灵魂一个小忙来安慰它，由GM决定这个小忙的内容（一般是些和感觉有关的内容，比如品尝特定的事物、听某首指定的歌，或是抽根烟。）除非你帮了灵魂这个忙，否则你不能再次进行降灵动作。如果你在24小时内没有帮这个忙，那么你@Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，直到你完成了你应尽的帮忙义务。</p>"
+        },
+        "Empty Vessel": {
+            "name": "空无容器 Empty Vessel",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你受到心灵伤害或被一个心灵效果影响</p>\n<hr />\n<p><strong>效果</strong> 你对于触发效果在意志豁免上获得+2环境加值，以及等同于你等级的心灵伤害抗力。这只适用于初始效果，而不适用于持续效果，持续心灵伤害，或其他重复效果。</p>"
+        },
+        "Mirror-Trickery": {
+            "name": "镜子诡术 Mirror-Trickery",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被一次打击命中</p>\n<hr />\n<p><strong>效果</strong> 你在最后一刻创造出一个幻术复制体，并尝试欺骗你的敌人攻击它而非你。攻击者尝试一次@Check[type:flat|dc:11]检定；如果失败，攻击命中复制体，将攻击结果由大成功改为成功或由成功改为失败。</p>"
         }
     }
 }
