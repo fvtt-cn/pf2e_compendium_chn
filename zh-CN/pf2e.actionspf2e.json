@@ -15,11 +15,11 @@
         },
         "Administer First Aid": {
             "name": "进行急救 Administer First Aid",
-            "description": "<p><strong>需求</strong> 你持握 @Compendium[pf2e.equipment-srd.s1vB3HdXjMigYAnY]{医疗工具 Healer's Tools}，或你穿戴着医疗工具且有一只空手</p>\n<hr />\n<p>你对一个邻接（Adjacent）你，处于 @Compendium[pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死} 或 @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{流血}状态的生物进行紧急救治。如果该生物同时濒死和流血，你必须在进行检定前选择其中之一来进行急救。在此之后，你可以选择另一个状态进行急救尝试。</p>\n<ul>\n<li><strong>稳定伤势</strong> 对于一个生命值为0且处于濒死状态的生物，你可以尝试一个医疗检定稳定其伤势。这个检定DC等于5+该生物尝试恢复稳定的恢复检定（Recovery Roll）DC（通常为15+该生物承受的濒死等级 Dying Vaule）</li>\n<li><strong>止血</strong> 你可以对一个正在承受持续流血伤害的生物尝试一个医疗检定，如果成功，他可以获得一次再进行一次无修正测试来尝试移除该持续伤害的机会。本医疗检定的DC和原本造成该生物流血的效果DC通常相同。</li>\n</ul>\n<hr />\n<p><strong>成功</strong> 如果你尝试稳定伤势，那么你急救的生物不再处于濒死状态（但仍然 @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{昏迷}）。如果你尝试止血，那么生物可以再进行一次无修正测试来尝试移除流血。</p>\n<p><strong>大失败</strong> 如果你尝试稳定伤势，那么你急救的生物濒死等级+1。如果你尝试止血，那么生物立刻承受一次等于他承受的持续流血伤害数值的伤害</p>"
+            "description": "<p><strong>需求</strong> 你持握 @Compendium[pf2e.equipment-srd.s1vB3HdXjMigYAnY]{医疗工具 Healer's Tools}，或你穿戴着医疗工具且有一只空手</p>\n<hr />\n<p>你对一个邻接你，处于 @Compendium[pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying} 或 @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{流失 Drained}状态的生物进行紧急救治。如果该生物同时濒死和流血，你必须在进行检定前选择其中之一来进行急救。在此之后，你可以选择另一个状态进行急救尝试。</p>\n<ul>\n<li><strong>稳定伤势</strong> 对于一个生命值为0且处于濒死状态的生物，你可以尝试一个医疗检定稳定其伤势。这个检定DC等于5+该生物尝试恢复稳定的恢复检定（Recovery Roll）DC（通常为15+该生物承受的濒死等级）</li>\n<li><strong>止血</strong> 你可以对一个正在承受持续流血伤害的生物尝试一个医疗检定，如果成功，他可以获得一次再进行一次无修正测试来尝试移除该持续伤害的机会。本医疗检定的DC和原本造成该生物流血的效果DC通常相同。</li>\n</ul>\n<hr />\n<p><strong>成功</strong> 如果你尝试稳定伤势，那么你急救的生物不再处于濒死状态（但仍然 @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}）。如果你尝试止血，那么生物可以再进行一次无修正测试来尝试移除流血。</p>\n<p><strong>大失败</strong> 如果你尝试稳定伤势，那么你急救的生物濒死等级+1。如果你尝试止血，那么生物立刻承受一次等于他承受的持续流血伤害数值的伤害</p>"
         },
         "Affix a Fulu": {
             "name": "粘贴符箓 Affix a Fulu",
-            "description": "<p>你把符箓贴在一件护甲（armor）、武器（weapon）、盾牌（shield）、生物（creature）或建筑（structure）上，粘贴对象必须在你身边（beside）或者与你处于相同的方格内。生物可以用单动作（single action）从自己身上或者触及范围内的一件无主物体上移除一张符箓。</p>"
+            "description": "<p>你把符箓贴在一件护甲、武器、盾牌、生物或建筑上，粘贴对象必须在你身边或者与你处于相同的方格内。生物可以用单动作从自己身上或者触及范围内的一件无主物体上移除一张符箓。</p>"
         },
         "Affix a Talisman": {
             "name": "附着护符 Affix a Talisman",
@@ -43,7 +43,7 @@
         },
         "Arcane Cascade": {
             "name": "奥术奔涌 Arcane Cascade",
-            "description": "<p><strong>需求</strong> 你已使用你最近的动作来施放法术（Cast a Spell）或进行法术打击（Spellstrike）</p>\n<p><strong>获得</strong> @Compendium[pf2e.feat-effects.fsjO5oTKttsbpaKl]{架势：奥术奔涌}</p>\n<hr />\n<p>你转换一部分法术的魔法力量并通过使用特化的架式、吐纳和步法，让其在你的躯体和武器间循环。 当你处于架式中时，你的近战打击造成 [[/r {1}]]{1点额外伤害}。如果你具有武器专精（weapon specialization），这个伤害增加到2。如果你具有高等武器专精（greater weapon specialization），则增加到3。任何受益于此的打击都获得奥术（arcane）特征，使其魔法化（magical）。</p>\n<p>如果你进入架式前最近的法术是一个可以造成伤害的类型，来自于架式的伤害具有和这个法术造成伤害的相同类型（或者如果法术可以造成多种伤害类型则由你选择类型）。如果这个法术不能造成伤害，架式的额外伤害取决于法术学派。</p>\n<ul>\n<li><strong>防护 Abjuration</strong> 或 <strong>塑能 Evocation</strong> 力场</li>\n<li><strong>咒法 Conjuration</strong> 或 <strong>变化 Transmutation</strong> 与你武器或无武装攻击相同的类型</li>\n<li><strong>语言 Divination</strong>, <strong>惑控 Enchantment</strong>, 或 <strong>幻术 Illusion</strong> 心灵</li>\n<li><strong>死灵 Necromancy</strong> 负能量</li>\n</ul>"
+            "description": "<p><strong>需求</strong> 你已使用你最近的动作来施放法术（Cast a Spell）或进行法术打击（Spellstrike）</p>\n<p><strong>获得</strong> @Compendium[pf2e.feat-effects.fsjO5oTKttsbpaKl]{架势：奥术奔涌}</p>\n<hr />\n<p>你转换一部分法术的魔法力量并通过使用特化的架式、吐纳和步法，让其在你的躯体和武器间循环。 当你处于架式中时，你的近战打击造成 [[/r {1}]]{1点额外伤害}。如果你具有武器专精，这个伤害增加到2。如果你具有高等武器专精，则增加到3。任何受益于此的打击都获得奥术特征，使其魔法化。</p>\n<p>如果你进入架式前最近的法术是一个可以造成伤害的类型，来自于架式的伤害具有和这个法术造成伤害的相同类型（或者如果法术可以造成多种伤害类型则由你选择类型）。如果这个法术不能造成伤害，架式的额外伤害取决于法术学派。</p>\n<ul>\n<li><strong>防护 Abjuration</strong> 或 <strong>塑能 Evocation</strong> 力场</li>\n<li><strong>咒法 Conjuration</strong> 或 <strong>变化 Transmutation</strong> 与你武器或无武装攻击相同的类型</li>\n<li><strong>语言 Divination</strong>, <strong>惑控 Enchantment</strong>, 或 <strong>幻术 Illusion</strong> 心灵</li>\n<li><strong>死灵 Necromancy</strong> 负能量</li>\n</ul>"
         },
         "Armor Up!": {
             "name": "上战甲！ Armor Up!",
@@ -67,7 +67,7 @@
         },
         "Balance": {
             "name": "保持平衡 Balance",
-            "description": "<p><strong>需求</strong> 你身处一个具有狭窄的落脚平面，高低不平的地面，或类似不稳定表面的方格中。</p>\n<hr />\n<p>你移动穿越一个狭窄或是高低不平的平面，尝试一次 <span data-pf2-action=\"balance\" data-pf2-glyph=\"A\">特技</span> 检定对抗所需的保持平衡检定DC。 当处于狭窄或是高低不平的·平面时，你处于措手不及（Flat-Footed）状态。</p>\n<hr />\n<p><strong>大成功</strong> 你可以以完整的移动速度（Speed）移动。</p>\n<p><strong>成功</strong> 你可以以完整的移动速度移动，但视为穿越困难地形（Difficult Terrain，每移动5尺需要消耗10尺移动速度）。</p>\n<p><strong>失败</strong> 你必须保持静止来维持身体的平衡（技能动作被浪费掉），否则你摔倒（Fall）。如果你摔倒，你的行动回合（Turn）立刻结束。</p>\n<p><strong>大失败</strong> 你摔倒，你的行动回合立刻结束。</p><h2 class=\"title\">范例保持平衡情景</h2>\n<ul>\n<li><strong>未受训</strong> 满地老树根，遍布大小岩块的石地</li>\n<li><strong>受训</strong> 木制脚手架</li>\n<li><strong>专家</strong> 一坑松散的小碎石</li>\n<li><strong>大师</strong> 钢丝，冰面</li>\n<li><strong>传奇</strong> 剃刀之缘，正在半空坠落中的建筑物残片</li>\n</ul>"
+            "description": "<p><strong>需求</strong> 你身处一个具有狭窄的落脚平面，高低不平的地面，或类似不稳定表面的方格中。</p>\n<hr />\n<p>你移动穿越一个狭窄或是高低不平的平面，尝试一次 <span data-pf2-action=\"balance\" data-pf2-glyph=\"A\">特技</span> 检定对抗所需的保持平衡检定DC。 当处于狭窄或是高低不平的·平面时，你处于措手不及状态。</p>\n<hr />\n<p><strong>大成功</strong> 你可以以完整的移动速度移动。</p>\n<p><strong>成功</strong> 你可以以完整的移动速度移动，但视为穿越困难地形。</p>\n<p><strong>失败</strong> 你必须保持静止来维持身体的平衡（技能动作被浪费掉），否则你摔倒。如果你摔倒，你的行动回合立刻结束。</p>\n<p><strong>大失败</strong> 你摔倒，你的行动回合立刻结束。</p><h2 class=\"title\">范例保持平衡情景</h2>\n<ul>\n<li><strong>未受训</strong> 满地老树根，遍布大小岩块的石地</li>\n<li><strong>受训</strong> 木制脚手架</li>\n<li><strong>专家</strong> 一坑松散的小碎石</li>\n<li><strong>大师</strong> 钢丝，冰面</li>\n<li><strong>传奇</strong> 剃刀之缘，正在半空坠落中的建筑物残片</li>\n</ul>"
         },
         "Banshee Cry": {
             "name": "Banshee Cry",
@@ -79,7 +79,7 @@
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
-            "description": "<p>你作出1次优雅且致命的攻击。作出1次打击（Strike）；若命中且你的武器符合@Compendium[pf2e.classfeatures.RQH6vigvhmiYKKjg]{精确打击 Precise Strike}的先决条件，那么你会通过精确打击造成完整的[[/r {1d6}]]{1d6点伤害}。</p>"
+            "description": "<p>你作出一次优雅且致命的攻击。作出一次打击；若命中且你的武器符合@Compendium[pf2e.classfeatures.RQH6vigvhmiYKKjg]{精确打击 Precise Strike}的先决条件，那么你会通过精确打击造成完整的[[/r {1d6}]]{1d6点伤害}。</p>"
         },
         "Beast's Charge": {
             "name": "Beast's Charge",
@@ -99,11 +99,11 @@
         },
         "Boarding Assault": {
             "name": "登船袭击 Boarding Assault",
-            "description": "<p>你进行2次行走（Stride）或尝试1次特技（Acrobatics）检定（DC取决于GM，但通常来说为DC20）来顺着绳索摆荡至多2倍于你的速度的距离。</p>\n<p>若你在此移动过程中从船只或类似的载具上登船或登陆的话，则能够作出1次近战打击（Strike），且该次打击能造成1个额外武器伤害骰（weapon damage die）。</p>"
+            "description": "<p>你进行两次行走或尝试一次特技检定（DC取决于GM，但通常来说为DC20）来顺着绳索摆荡至多2倍于你的速度的距离。</p>\n<p>若你在此移动过程中从船只或类似的载具上登船或登陆的话，则能够作出一次近战打击，且该次打击能造成一个额外武器伤害骰。</p>"
         },
         "Borrow an Arcane Spell": {
             "name": "借阅一个奥术法术 Borrow an Arcane Spell",
-            "description": "<p>如果你是一个使用法术书准备法术的奥术施法者，你可以尝试用另一个人的法术书准备一个书中的法术。GM根据法术的环级和罕见程度来决定技能检定的DC；这样做通常会比从头 @Compendium[pf2e.actionspf2e.Q5iIYCFdqJFM31GW]{学习法术}要简单一些。</p>\n<hr />\n<p><strong>成功</strong> 你如常地用借来的法术书准备了你要的那个法术。</p>\n<p><strong>失败</strong> 你未能准备法术，但你的法术位（Spell Slot）仍然空闲，让你可以准备另一个法术。直到下次你准备法术时，你不能再尝试准备你失败的这个法术。</p>"
+            "description": "<p>如果你是一个使用法术书准备法术的奥术施法者，你可以尝试用另一个人的法术书准备一个书中的法术。GM根据法术的环级和罕见程度来决定技能检定的DC；这样做通常会比从头 @Compendium[pf2e.actionspf2e.Q5iIYCFdqJFM31GW]{学习法术}要简单一些。</p>\n<hr />\n<p><strong>成功</strong> 你如常地用借来的法术书准备了你要的那个法术。</p>\n<p><strong>失败</strong> 你未能准备法术，但你的法术位仍然空闲，让你可以准备另一个法术。直到下次你准备法术时，你不能再尝试准备你失败的这个法术。</p>"
         },
         "Breath Weapon": {
             "name": "Breath Weapon",
@@ -175,7 +175,7 @@
         },
         "Call Companion": {
             "name": "呼唤伙伴 Call Companion",
-            "description": "<p>你花费1分钟时间呼唤1只不同的动物伙伴，将你的活跃伙伴（active companion）切换为你的另一只动物伙伴。</p>"
+            "description": "<p>你花费1分钟时间呼唤一只不同的动物伙伴，将你的活跃伙伴切换为你的另一只动物伙伴。</p>"
         },
         "Call Gun": {
             "name": "召唤枪支 Call Gun",
@@ -195,7 +195,7 @@
         },
         "Cast a Spell": {
             "name": "施放法术 Cast a Spell",
-            "description": "<p>你施放一个你已经准备的或者在你的法术库中的法术。施放法术是一种特殊行动，根据法术不同，它会消耗不同数量的动作，这在法术的数据栏中列出。当施放动作完成时，法术效果生效。</p>\n<p>部分法术以准备动作或者自由动作施放。在这种情况中，你以一个反应动作或者自由动作（根据对应情况）施放法术行动而不是行动。这些情况会在法术的数据栏中列明——例如， \"[反应动作] 语言施法。\"</p>\n<p><strong>长时间施法</strong> 部分法术需要花费数分钟或者数小时来施放。这些法术的施放法术行动由列出的法术成分混合而成，且无需分解特定时间你正在提供哪种成分。在施放这样的法术时，你不能使用其他的动作或者反应动作，根据GM的判断，你可能可以说几句话。类似其他花费长时间的行动，这些法术具有探索（exploration）特征，并且不能再遭遇中施放这些法术。如果你在施放这样的法术时发生战斗，你的法术被打断（见303页打断和失去法术）。</p>\n<p><strong>法术成分</strong> 每个法术会在动作标志或者文本后列出其施放所需的法术成分，例如 \"[三动作] 材料，姿势，语言。\" 法术成分，会如下文所述增加特征和需求到施放法术动作中。如果你无法提供成分，你在施放法术中失败。</p>\n<ul>\n<li>材料 (操作)</li>\n<li>姿势 (操作)</li>\n<li>语言 (专注)</li>\n<li>器材 (操作)</li>\n</ul>\n<p><strong>打断和失去法术</strong> 部分能力和法术能打断法术，令法术没有效果并失去。当你失去一个法术时，你已经花费了法术位，花费了法术花费和动作，并且已使用了施放法术动作。如果法术在 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell} 中被打断，法术立即结束。</p>"
+            "description": "<p>你施放一个你已经准备的或者在你的法术库中的法术。施放法术是一种特殊行动，根据法术不同，它会消耗不同数量的动作，这在法术的数据栏中列出。当施放动作完成时，法术效果生效。</p>\n<p>部分法术以准备动作或者自由动作施放。在这种情况中，你以一个反应动作或者自由动作（根据对应情况）施放法术行动而不是行动。这些情况会在法术的数据栏中列明——例如， \"[反应动作] 语言施法。\"</p>\n<p><strong>长时间施法</strong> 部分法术需要花费数分钟或者数小时来施放。这些法术的施放法术行动由列出的法术成分混合而成，且无需分解特定时间你正在提供哪种成分。在施放这样的法术时，你不能使用其他的动作或者反应动作，根据GM的判断，你可能可以说几句话。类似其他花费长时间的行动，这些法术具有探索特征，并且不能再遭遇中施放这些法术。如果你在施放这样的法术时发生战斗，你的法术被打断（见303页打断和失去法术）。</p>\n<p><strong>法术成分</strong> 每个法术会在动作标志或者文本后列出其施放所需的法术成分，例如 \"[三动作] 材料，姿势，语言。\" 法术成分，会如下文所述增加特征和需求到施放法术动作中。如果你无法提供成分，你在施放法术中失败。</p>\n<ul>\n<li>材料 (操作)</li>\n<li>姿势 (操作)</li>\n<li>语言 (专注)</li>\n<li>器材 (操作)</li>\n</ul>\n<p><strong>打断和失去法术</strong> 部分能力和法术能打断法术，令法术没有效果并失去。当你失去一个法术时，你已经花费了法术位，花费了法术花费和动作，并且已使用了施放法术动作。如果法术在 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell} 中被打断，法术立即结束。</p>"
         },
         "Catharsis": {
             "name": "Catharsis",
@@ -211,7 +211,7 @@
         },
         "Change Shape (Kitsune)": {
             "name": "化形（狐妖） Change Shape (Kitsune)",
-            "description": "<p>你变成另一种由传承决定的型态。如果你的传承没有列出型态，则你的变化型态是无尾型态，呈现为你成长背景中常见的中型类人生物族裔（通常是人类）。此型态的年龄和身材都和你的真实型态相同，毛色等体貌特征也大致相似。使用化形算作是用欺骗（Deception）技能的乔装（Impersonate）动作来创造伪装。处在此型态时，你会失去由狐妖传承或族裔专长得到的非武装打击。你维持变化型态的时间不受限制，只要再次使用此能力，就可以变回真正的狐妖型态。</p>"
+            "description": "<p>你变成另一种由传承决定的型态。如果你的传承没有列出型态，则你的变化型态是无尾型态，呈现为你成长背景中常见的中型类人生物族裔（通常是人类）。此型态的年龄和身材都和你的真实型态相同，毛色等体貌特征也大致相似。使用化形算作是用欺骗技能的乔装动作来创造伪装。处在此型态时，你会失去由狐妖传承或族裔专长得到的非武装打击。你维持变化型态的时间不受限制，只要再次使用此能力，就可以变回真正的狐妖型态。</p>"
         },
         "Chassis Deflection": {
             "name": "外壳偏斜 Chassis Deflection",
@@ -227,11 +227,11 @@
         },
         "Climb": {
             "name": "攀爬 Climb",
-            "description": "<p><strong>需求</strong> 你的双手都空着。</p>\n<hr />\n<p>你可以在一个非地平表面上爬上，爬下或左右爬。除非情况异常的容易，通常你都需要通过一个 <span data-pf2-action=\"climb\" data-pf2-glyph=\"A\">运动</span> 检定来攀爬。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及} 状态。</p>\n<hr />\n<p><strong>大成功</strong> 你可以垂直或水平攀爬，或安全降下（5+5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，10尺；对于陆地移动速度小于20尺的角色来说则是5尺）</p>\n<p><strong>成功</strong> 你可以垂直或水平攀爬，或安全降下（5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，5尺；对于陆地移动速度小于20尺的角色来说也是最少5尺）</p>\n<p><strong>大失败</strong> 你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态。</p>\n<h2>范例攀爬情景</h2>\n<ul>\n<li><strong>未受训</strong> 梯子，陡坡，低矮多枝桠的树</li>\n<li><strong>受训</strong> 船帆索具，绳子，普通的树</li>\n<li><strong>专家</strong> 有一些细小支撑点和坑洼的墙壁</li>\n<li><strong>大师</strong> 有抓手处的天花板，普通石墙</li>\n<li><strong>传奇</strong> 光可鉴人的墙壁</li>\n</ul>"
+            "description": "<p><strong>需求</strong> 你的双手都空着。</p>\n<hr />\n<p>你可以在一个非地平表面上爬上，爬下或左右爬。除非情况异常的容易，通常你都需要通过一个 <span data-pf2-action=\"climb\" data-pf2-glyph=\"A\">运动</span> 检定来攀爬。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} 状态。</p>\n<hr />\n<p><strong>大成功</strong> 你可以垂直或水平攀爬，或安全降下（5+5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，10尺；对于陆地移动速度小于20尺的角色来说则是5尺）</p>\n<p><strong>成功</strong> 你可以垂直或水平攀爬，或安全降下（5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，5尺；对于陆地移动速度小于20尺的角色来说也是最少5尺）</p>\n<p><strong>大失败</strong> 你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>\n<h2>范例攀爬情景</h2>\n<ul>\n<li><strong>未受训</strong> 梯子，陡坡，低矮多枝桠的树</li>\n<li><strong>受训</strong> 船帆索具，绳子，普通的树</li>\n<li><strong>专家</strong> 有一些细小支撑点和坑洼的墙壁</li>\n<li><strong>大师</strong> 有抓手处的天花板，普通石墙</li>\n<li><strong>传奇</strong> 光可鉴人的墙壁</li>\n</ul>"
         },
         "Clue In": {
             "name": "提供线索 Clue In",
-            "description": "<p><strong>频率</strong> 每10分钟1次</p>\n<p><strong>触发</strong> 另一个生物尝试调查你所追查的方向并进行检定</p>\n<hr />\n<p>你和触发的生物分享资讯。</p>\n<p>他们在触发检定上获得与你@Compendium[pf2e.actionspf2e.xTK2zsWFyxSJvYbX]{追查方向 Pursue a Lead}检定上相同的环境加值。GM可以根据情况在这个反应动作中加入任何相关的特性，例如，如果你用口头传达信息，则可以加入听觉(auditory)和语言(linguistic)。</p>\n<p>@Compendium[pf2e.feat-effects.vhSYlQiAQMLuXqoc]{效果：提供线索}</p>"
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<p><strong>触发</strong> 另一个生物尝试调查你所追查的方向并进行检定</p>\n<hr />\n<p>你和触发的生物分享资讯。</p>\n<p>他们在触发检定上获得与你@Compendium[pf2e.actionspf2e.xTK2zsWFyxSJvYbX]{追查方向 Pursue a Lead}检定上相同的环境加值。GM可以根据情况在这个反应动作中加入任何相关的特性，例如，如果你用口头传达信息，则可以加入听觉(auditory)和语言(linguistic)。</p>\n<p>@Compendium[pf2e.feat-effects.vhSYlQiAQMLuXqoc]{效果：提供线索}</p>"
         },
         "Coerce": {
             "name": "胁迫 Coerce",
@@ -239,7 +239,7 @@
         },
         "Command an Animal": {
             "name": "指挥动物 Command an Animal",
-            "description": "<p>你对一只动物发出指令。进行一个<span data-pf2-action=\"commandAnAnimal\" data-pf2-glyph=\"A\">自然 Nature</span>技能检定对抗动物的意志豁免DC。如果动物对你的态度特别友善，或是它目前的行动动机和你的指示一致，又或是你奖励它以合适的食物，GM可能会考虑调整这个检定DC。</p>\n<p>如果动物对你的态度为敌对（Hostile）或不友善（Unfriendly），你的技能检定自动失败。如果动物对你的态度为乐于帮助（Helpful），提升一级你的技能检定结果。特定的专长如 @Compendium[pf2e.feats-srd.Rq5wkA8DtsmbzoGV]{骑手 Ride}专长可以为你在特定的指挥动物检定上提供加值。</p>\n<p>大多数动物可以进行卧倒（Drop Prone）、跳跃（Leap），搜索（Seek），站立（Stand），跑动和攻击基本动作。如果动物可以进行其他特定动作，如马可以进行的驰骋（Gallop）动作，你也可以指挥动物执行这些动作——但动物每需要一个动作执行这些行动，你就必须相应的用同等数量的动作进行指挥动物。你也可以使用多重动作（Multiple Actions）指挥动物在它的下一个回合进行数个连贯的行动。比如，你可以使用3个动作指挥动物连续跑动三次，或是跑动两次然后攻击一次。</p>\n<hr />\n<p><strong>成功</strong> 动物会按照你指令的内容在它的下回合行动。</p>\n<p><strong>失败</strong> 动物对你没有兴趣或是抵抗，什么都不做。</p>\n<p><strong>大失败</strong> 动物误解了你的指令。GM决定它会做什么怪事。</p>"
+            "description": "<p>你对一只动物发出指令。进行一个<span data-pf2-action=\"commandAnAnimal\" data-pf2-glyph=\"A\">自然 Nature</span>技能检定对抗动物的意志豁免DC。如果动物对你的态度特别友善，或是它目前的行动动机和你的指示一致，又或是你奖励它以合适的食物，GM可能会考虑调整这个检定DC。</p>\n<p>如果动物对你的态度为敌对（Hostile）或不友善（Unfriendly），你的技能检定自动失败。如果动物对你的态度为乐于帮助（Helpful），提升一级你的技能检定结果。特定的专长如 @Compendium[pf2e.feats-srd.Rq5wkA8DtsmbzoGV]{骑手 Ride}专长可以为你在特定的指挥动物检定上提供加值。</p>\n<p>大多数动物可以进行卧倒、跳跃，搜索，站立，跑动和攻击基本动作。如果动物可以进行其他特定动作，如马可以进行的驰骋（Gallop）动作，你也可以指挥动物执行这些动作——但动物每需要一个动作执行这些行动，你就必须相应的用同等数量的动作进行指挥动物。你也可以使用多重动作（Multiple Actions）指挥动物在它的下一个回合进行数个连贯的行动。比如，你可以使用3个动作指挥动物连续跑动三次，或是跑动两次然后攻击一次。</p>\n<hr />\n<p><strong>成功</strong> 动物会按照你指令的内容在它的下回合行动。</p>\n<p><strong>失败</strong> 动物对你没有兴趣或是抵抗，什么都不做。</p>\n<p><strong>大失败</strong> 动物误解了你的指令。GM决定它会做什么怪事。</p>"
         },
         "Conceal an Object": {
             "name": "隐藏物件 Conceal an Object",
@@ -263,7 +263,7 @@
         },
         "Cover Tracks": {
             "name": "掩盖行踪 Cover Tracks",
-            "description": "<p>你可以在使用陆地旅行速度（Travel Speed，见本书478页）半速移动的情况下，同时清除掉你在路径上留下的痕迹。这样做不需要你进行生存技能检定，但你的对手在尝试追踪你的时候，如果你的生存DC比在通常情况下追踪你需要的生存技能检定DC更高，他们必须成功对抗你的生存DC来尝试 @Compendium[pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪}你。</p>\n<p> 如果在某些情况下你必须在战斗遭遇中掩盖你的行踪，那么这个行动需要一个动作且失去探索特性。</p>"
+            "description": "<p>你可以在使用陆地旅行速度半速移动的情况下，同时清除掉你在路径上留下的痕迹。这样做不需要你进行生存技能检定，但你的对手在尝试追踪你的时候，如果你的生存DC比在通常情况下追踪你需要的生存技能检定DC更高，他们必须成功对抗你的生存DC来尝试 @Compendium[pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪}你。</p>\n<p> 如果在某些情况下你必须在战斗遭遇中掩盖你的行踪，那么这个行动需要一个动作且失去探索特性。</p>"
         },
         "Covered Reload": {
             "name": "掩蔽装填 Covered Reload",
@@ -271,7 +271,7 @@
         },
         "Craft": {
             "name": "制作 Craft",
-            "description": "<p>你可以使用原材料制作一件完成的物品。如果要制作炼金物品，你需要拥有 @Compendium[pf2e.feats-srd.is3Oz9wt11lNq62K]{制作炼金物品 Alchemical Crafting} 技能专长（Skill Feat），或是拥有 @Compendium[pf2e.feats-srd.xWY5omyIcILNR7y1]{制作魔导具 Magical Crafting} 技能专长来制作魔法物品，又或是 @Compendium[pf2e.feats-srd.DMetdzt1VJL2Y62i]{制作圈套 Snare Crafting} 技能专长来制作圈套。</p>\n<p>如果要制作一件物品，你必须满足以下这些条件：</p>\n<ul>\n<li>这件物品的物品等级（Item Level）不能高于你的人物等级。没有被列出的物品视为0级。如果你想要制作至少物品等级有9级的物品，你在手艺技能上的熟练度必须达到大师级；如果你想要制作至少物品等级有16级的物品，你在手艺技能上的熟练度必须达到传奇级。</li>\n<li>你需要拥有这件物品的设计图。</li>\n<li>你需要拥有合适制作某一件物品的工具以及——很多时候——一个设施完备的工坊。举例来说，你需要一个铁匠铺才能尝试打造金属护甲和武器，你需要一个 @Compendium[pf2e.equipment-srd.k6xZkDUpF7E1Totd]{炼金实验室}才能制造炼金物品。</li>\n<li>你需要准备相当于你欲制作的物品价格一半的原材料来开始制作物品，如果你的手艺技能检定成功，你一定会消耗掉这些原材料。一般情况下，你都可以在你所生活的定居点市场中买到这些材料——除非这些材料过于珍惜或罕见。</li>\n</ul>\n<p>你需要花费4天时间进行制作工作。在这段时间结束时，进行一个 <span data-pf2-action=\"craft\">手艺</span> 技能检定。GM根据你欲制作的物品的物品等级，稀有度（Rarity）和其他可能的调整情况决定这个检定的DC。</p>\n<p>如果你成功的制作了物品，那么你准备的那一半原材料会被消耗掉。在这个阶段，你可以选择立刻支付相当于物品价格另一半的原材料，即刻完成这件物品；或者，你可以花费更多的休整期天数继续加工。如果你选择花费额外的时间，每一天你多工作的时间都可以减少一定的你原本需要支付的另一半原材料的价格。参照表：你值多少钱来计算每天你可以节约的材料价格，使用你的手艺技能熟练等级，并使用你的人物等级替代原表的任务等级来计算。总之，你可能会花费一些额外的时间来节约材料，任何再支付其他欠缺的原材料价格。如果你用来制作物品的休整期天数被打断，你可以在返回后继续工作，直到完成你的工作（见范例）.</p>\n<hr />\n<p><strong>大成功</strong> 你成功的制作了你想要的物品，并且如果你花费额外的工作天数以节省材料，在计算你每天节约的材料价格时，使用你的角色等级+1和你在手艺技能上的熟练等级计算。</p>\n<p><strong>成功</strong> 你成功的制作了你想要的物品，并且如果你花费额外的工作天数以节省材料，在计算你每天节约的材料价格时，使用你的角色等级和你在手艺技能上的熟练等级计算。</p>\n<p><strong>失败</strong> 你没有做成物品，但你也没有浪费任何准备的原材料。如果你想要重试制作这件物品，你必须从头开始整个过程。</p>\n<p><strong>大失败</strong> 你没有做成物品，而且你浪费了你准备的原材料总价格的10%。如果你想要重试制作这件物品，你必须从头开始整个过程。</p>"
+            "description": "<p>你可以使用原材料制作一件完成的物品。如果要制作炼金物品，你需要拥有 @Compendium[pf2e.feats-srd.is3Oz9wt11lNq62K]{制作炼金物品 Alchemical Crafting} 技能专长，或是拥有 @Compendium[pf2e.feats-srd.xWY5omyIcILNR7y1]{制作魔导具 Magical Crafting} 技能专长来制作魔法物品，又或是 @Compendium[pf2e.feats-srd.DMetdzt1VJL2Y62i]{制作圈套 Snare Crafting} 技能专长来制作圈套。</p>\n<p>如果要制作一件物品，你必须满足以下这些条件：</p>\n<ul>\n<li>这件物品的物品等级（Item Level）不能高于你的人物等级。没有被列出的物品视为0级。如果你想要制作至少物品等级有9级的物品，你在手艺技能上的熟练度必须达到大师级；如果你想要制作至少物品等级有16级的物品，你在手艺技能上的熟练度必须达到传奇级。</li>\n<li>你需要拥有这件物品的设计图。</li>\n<li>你需要拥有合适制作某一件物品的工具以及——很多时候——一个设施完备的工坊。举例来说，你需要一个铁匠铺才能尝试打造金属护甲和武器，你需要一个 @Compendium[pf2e.equipment-srd.k6xZkDUpF7E1Totd]{炼金实验室}才能制造炼金物品。</li>\n<li>你需要准备相当于你欲制作的物品价格一半的原材料来开始制作物品，如果你的手艺技能检定成功，你一定会消耗掉这些原材料。一般情况下，你都可以在你所生活的定居点市场中买到这些材料——除非这些材料过于珍惜或罕见。</li>\n</ul>\n<p>你需要花费4天时间进行制作工作。在这段时间结束时，进行一个 <span data-pf2-action=\"craft\">手艺</span> 技能检定。GM根据你欲制作的物品的物品等级，稀有度（Rarity）和其他可能的调整情况决定这个检定的DC。</p>\n<p>如果你成功的制作了物品，那么你准备的那一半原材料会被消耗掉。在这个阶段，你可以选择立刻支付相当于物品价格另一半的原材料，即刻完成这件物品；或者，你可以花费更多的休整期天数继续加工。如果你选择花费额外的时间，每一天你多工作的时间都可以减少一定的你原本需要支付的另一半原材料的价格。参照表：你值多少钱来计算每天你可以节约的材料价格，使用你的手艺技能熟练等级，并使用你的人物等级替代原表的任务等级来计算。总之，你可能会花费一些额外的时间来节约材料，任何再支付其他欠缺的原材料价格。如果你用来制作物品的休整期天数被打断，你可以在返回后继续工作，直到完成你的工作（见范例）.</p>\n<hr />\n<p><strong>大成功</strong> 你成功的制作了你想要的物品，并且如果你花费额外的工作天数以节省材料，在计算你每天节约的材料价格时，使用你的角色等级+1和你在手艺技能上的熟练等级计算。</p>\n<p><strong>成功</strong> 你成功的制作了你想要的物品，并且如果你花费额外的工作天数以节省材料，在计算你每天节约的材料价格时，使用你的角色等级和你在手艺技能上的熟练等级计算。</p>\n<p><strong>失败</strong> 你没有做成物品，但你也没有浪费任何准备的原材料。如果你想要重试制作这件物品，你必须从头开始整个过程。</p>\n<p><strong>大失败</strong> 你没有做成物品，而且你浪费了你准备的原材料总价格的10%。如果你想要重试制作这件物品，你必须从头开始整个过程。</p>"
         },
         "Craft Disharmonic Instrument": {
             "name": "Craft Disharmonic Instrument",
@@ -283,7 +283,7 @@
         },
         "Crawl": {
             "name": "爬行 Crawl",
-            "description": "<p><strong>需求</strong> 你处于倒地（prone）状态且速度至少为10尺。</p>\n<hr />\n<p>你爬行移动5尺，保持 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态。</p>"
+            "description": "<p><strong>需求</strong> 你处于倒地状态且速度至少为10尺。</p>\n<hr />\n<p>你爬行移动5尺，保持 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>"
         },
         "Create Forgery": {
             "name": "伪造文书 Create Forgery",
@@ -291,7 +291,7 @@
         },
         "Create a Diversion": {
             "name": "分神 Create a Diversion",
-            "description": "<p>你摆出一个架势，施展一个花招或是利用挑逗性的话术让你面前的对手分神注意其他地方。如果你选择摆出姿势或是玩出花招，这个动作还会获得【操作】特性。如果你使用话术，这个动作获得【声音】和【语言】特性。</p>\n<p>尝试进行一次欺骗技能检定(<span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\">话术分神</span>, <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\">姿势分神</span>, or <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\">花招分神</span>) 对抗你要使其分神的生物的察觉DC。无论你这次检定是否成功，在接下来的1分钟时间内，你继续该生物在对抗你使其分神的察觉DC上获得+4环境加值。</p>\n<hr />\n<p><strong>成功</strong> 对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{隐匿} 状态，并可以开始尝试 @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行} 。这个效果持续到你的回合结束或是进行任何除了 @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏} ，潜行或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及} ，然后你立刻对其变得 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。</p>\n<p><strong>失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。</p>"
+            "description": "<p>你摆出一个架势，施展一个花招或是利用挑逗性的话术让你面前的对手分神注意其他地方。如果你选择摆出姿势或是玩出花招，这个动作还会获得【操作】特性。如果你使用话术，这个动作获得【声音】和【语言】特性。</p>\n<p>尝试进行一次欺骗技能检定(<span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\">话术分神</span>, <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\">姿势分神</span>, or <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\">花招分神</span>) 对抗你要使其分神的生物的察觉DC。无论你这次检定是否成功，在接下来的1分钟时间内，你继续该生物在对抗你使其分神的察觉DC上获得+4环境加值。</p>\n<hr />\n<p><strong>成功</strong> 对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{隐匿} 状态，并可以开始尝试 @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行} 。这个效果持续到你的回合结束或是进行任何除了 @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide} ，潜行或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} ，然后你立刻对其变得 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。</p>\n<p><strong>失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。</p>"
         },
         "De-Animating Gestures (False)": {
             "name": "De-Animating Gestures (False)",
@@ -306,7 +306,7 @@
         },
         "Decipher Writing": {
             "name": "解译文书 Decipher Writing",
-            "description": "<p>当你面对一份尤其古奥或是信息隐秘的文本时，GM可能会要求你进行一个解译文书检定看你是否能理解他的意思。你需要在相应的技能上拥有受训熟练等级才能解译相关的文书——例如，用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社交技能解译密码或是古代书写等。</p>\n<p>本检定的DC标准基于GM判断你要解译的文书的复杂程度。GM可能允许你检定一次来解译一篇相对较短的文本，或者进行多次检定来分段解译一篇较长的文本。</p>\n<hr />\n<p><strong> 大成功</strong> 你理解了文本的确切含义。</p>\n<p><strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。</p>\n<p><strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值（Circumstance Penalty）。</p>\n<p><strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。</p><h2 class=\"title\">解译文书任务例子</h2>\n<ul>\n<li><strong>受训</strong> 入门级哲学名著</li>\n<li><strong>专家</strong> 复杂的文本，如加密文本</li>\n<li><strong>大师</strong> 大师级间谍的暗文或深奥的研究笔记</li>\n<li><strong>传奇</strong> 古代天界人写下的艰涩的平面文字</li>\n</ul>"
+            "description": "<p>当你面对一份尤其古奥或是信息隐秘的文本时，GM可能会要求你进行一个解译文书检定看你是否能理解他的意思。你需要在相应的技能上拥有受训熟练等级才能解译相关的文书——例如，用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社交技能解译密码或是古代书写等。</p>\n<p>本检定的DC标准基于GM判断你要解译的文书的复杂程度。GM可能允许你检定一次来解译一篇相对较短的文本，或者进行多次检定来分段解译一篇较长的文本。</p>\n<hr />\n<p><strong> 大成功</strong> 你理解了文本的确切含义。</p>\n<p><strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。</p>\n<p><strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值。</p>\n<p><strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。</p><h2 class=\"title\">解译文书任务例子</h2>\n<ul>\n<li><strong>受训</strong> 入门级哲学名著</li>\n<li><strong>专家</strong> 复杂的文本，如加密文本</li>\n<li><strong>大师</strong> 大师级间谍的暗文或深奥的研究笔记</li>\n<li><strong>传奇</strong> 古代天界人写下的艰涩的平面文字</li>\n</ul>"
         },
         "Defend": {
             "name": "防卫 Defend",
@@ -334,7 +334,7 @@
         },
         "Devise a Stratagem": {
             "name": "出谋划策 Devise a Stratagem",
-            "description": "<p><strong>频率</strong> 每轮1次</p>\n<hr />\n<p>你能在战斗中评估敌人的弱点，据此制定攻击计划。选择一个你看得到生物并骰一颗D20。如果你在本轮之后打击(Strike)所选的生物，你必须使用出谋划策 的D20结果作为你打击的攻击骰。这个取代只在本轮对所选生物做出的第一次打击生效，而不会用在接下来的所有攻击上。</p>\n<p>在你使用这个取代时，如果你的打击使用的武器是一件(agile)或(finesse)的近战武器、是(agile)或(finesse)的非武装攻击、一件远程武器(如果这武器是拥有投掷特性的近战武器，那就还要是(agile)或(finesse)特性才行)或一把@Compendium[pf2e.equipment-srd.TLQErnOpM9Luy7rL]{闷棍 Sap}，那你还能把你的智力而非力量或敏捷的调整值加到你的攻击骰上。</p>\n<p>如果你意识到你选择的生物是你追捕的客体，你能以自由动作使用此能力。</p>"
+            "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p>你能在战斗中评估敌人的弱点，据此制定攻击计划。选择一个你看得到生物并骰一颗D20。如果你在本轮之后打击所选的生物，你必须使用出谋划策 的D20结果作为你打击的攻击骰。这个取代只在本轮对所选生物做出的第一次打击生效，而不会用在接下来的所有攻击上。</p>\n<p>在你使用这个取代时，如果你的打击使用的武器是一件灵巧或娴熟的近战武器、是灵巧或娴熟的非武装攻击、一件远程武器(如果这武器是拥有投掷特性的近战武器，那就还要是灵巧或娴熟特性才行)或一把@Compendium[pf2e.equipment-srd.TLQErnOpM9Luy7rL]{闷棍 Sap}，那你还能把你的智力而非力量或敏捷的调整值加到你的攻击骰上。</p>\n<p>如果你意识到你选择的生物是你追捕的客体，你能以自由动作使用此能力。</p>"
         },
         "Disable Device": {
             "name": "解除装置 Disable Device",
@@ -342,7 +342,7 @@
         },
         "Disarm": {
             "name": "卸武 Disarm",
-            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人一只手中拿着的东西扭下来。尝试一个 <span data-pf2-action=\"disarm\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。</p>\n<p><strong>成功</strong> 你震得对手虎口发麻。直到这个生物的回合开始前，接下来对该生物的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定承受-2环境减值。</p>\n<p>@Compendium[pf2e.equipment-effects.z3ATL8DcRVrT0Uzt]{效果：卸武(成功)}</p>\n<p><strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及} 状态。</p>"
+            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人一只手中拿着的东西扭下来。尝试一个 <span data-pf2-action=\"disarm\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。</p>\n<p><strong>成功</strong> 你震得对手虎口发麻。直到这个生物的回合开始前，接下来对该生物的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定承受-2环境减值。</p>\n<p>@Compendium[pf2e.equipment-effects.z3ATL8DcRVrT0Uzt]{效果：卸武(成功)}</p>\n<p><strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} 状态。</p>"
         },
         "Dismiss": {
             "name": "解消 Dismiss",
@@ -378,7 +378,7 @@
         },
         "Drop Prone": {
             "name": "趴下 Drop Prone",
-            "description": "<p>你变为 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态。</p>"
+            "description": "<p>你变为 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>"
         },
         "Dutiful Retaliation": {
             "name": "Dutiful Retaliation",
@@ -386,11 +386,11 @@
         },
         "Earn Income": {
             "name": "赚取收入 Earn Income",
-            "description": "<p>你可以使用合适的技能——通常是手艺，学识或是表演技能——来在休整期中赚钱。你必须在相应的技能上受训才能这样做。尝试赚钱需要你花时间去找工作，而且你能赚到多少取决于你在相应技能上的熟练度等级和所进行工作是否有利可图。因为这项活动需要你在冒险以外的周期内投入大量的时间和保持连续性，可能你不是在每次冒险战役中都有机会去赚钱。</p>\n<p>在个别情况下，GM也许会允许你的人物使用较为特殊的技能来以专业工种的形式赚取收入，比如，也许你可以通过宗教（Religion）技能在寺院里钻研经卷来赚钱，但在尝试在教会主持弥撒仍然属于使用表演而非宗教技能。当然，你也许也能使用一些基于体能的技能去赚钱——比如使用特技动作（Acrobatics）技能在马戏团表演杂技或是使用贼活（Thievery）技能扒窃。如果你使用并非手艺、学识或是表演技能赚取收入，你所需通过的技能检定DC会比通常情况提高很多。</p>\n<h2 class=\"title\">使用技能</h2>\n<p><strong>手艺 Crafting</strong> 制作商品</p>\n<p><strong>学识 Lore</strong> 专业工作</p>\n<p><strong>表演 Performance</strong> 演出</p>\n<h2 class=\"title\">赚取收入</h2>\n<p><span class=\"trait\" title=\"An activity with this trait takes a day or more, and can be used only during downtime.\">休整期</span></p>\n<hr />\n<p>你使用你的一项技能在休整期中尝试赚钱。GM会设定一个代表赚的最多的任务等级，但你也可以去找相对比较简单，报酬也较低的工作，但GM会决定你是否有得选。有时你可以想办法去打探一份比一开始能找到的报酬更理想一些的工作，但这需要你花额外的时间使用交涉（Diplomacy）技能去搜集信息（Gather Information），或是自己研究和寻找社会关系。</p>\n<p>当你接受一份工作以后，GM会暗中设定这份工作的技能检定DC。当你完成第一天的工作以后，进行一次检定来看你有没有赚到钱，根据检定结果，任务等级和你的技能熟练度来决定你获得的收入（见下表：你值多少钱）。</p>\n<p>在接下来的工作日程中你无需继续进行技能检定 - 你每天都使用第一天的技能检定结果来计算，直到整个工作周期完成。GM会决定你具体需要多长时间去完成整个工作计划——通常是一两个星期，但也可能成月甚至整年时间。</p>\n<h2>你值多少钱</h2>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>任务等级</th>\n<th>失败收入</th>\n<th>受训收入</th>\n<th>专家收入</th>\n<th>大师收入</th>\n<th>传奇收入</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>1 cp</td>\n<td>5 cp</td>\n<td>5 cp</td>\n<td>5 cp</td>\n<td>5 cp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2 cp</td>\n<td>2 sp</td>\n<td>2 sp</td>\n<td>2 sp</td>\n<td>2 sp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>4 cp</td>\n<td>3 sp</td>\n<td>3 sp</td>\n<td>3 sp</td>\n<td>3 sp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>8 cp</td>\n<td>5 sp</td>\n<td>5 sp</td>\n<td>5 sp</td>\n<td>5 sp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>1 sp</td>\n<td>7 sp</td>\n<td>8 sp</td>\n<td>8 sp</td>\n<td>8 sp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>2 sp</td>\n<td>9 sp</td>\n<td>1 gp</td>\n<td>1 gp</td>\n<td>1 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>3 sp</td>\n<td>1 gp, 5 sp</td>\n<td>2 gp</td>\n<td>2 gp</td>\n<td>2 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>4 sp</td>\n<td>2 gp</td>\n<td>2 gp, 5 sp</td>\n<td>2 gp, 5 sp</td>\n<td>2 gp, 5 sp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>5 sp</td>\n<td>2 gp, 5 sp</td>\n<td>3 gp</td>\n<td>3 gp</td>\n<td>3 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6 sp</td>\n<td>3 gp</td>\n<td>4 gp</td>\n<td>4 gp</td>\n<td>4 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7 sp</td>\n<td>4 gp</td>\n<td>5 gp</td>\n<td>6 gp</td>\n<td>6 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>8 sp</td>\n<td>5 gp</td>\n<td>6 gp</td>\n<td>8 gp</td>\n<td>8 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>9 sp</td>\n<td>6 gp</td>\n<td>8 gp</td>\n<td>10 gp</td>\n<td>10 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>1 gp</td>\n<td>7 gp</td>\n<td>10 gp</td>\n<td>15 gp</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>1 gp, 5 sp</td>\n<td>8 gp</td>\n<td>15 gp</td>\n<td>20 gp</td>\n<td>20 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>2 gp</td>\n<td>10 gp</td>\n<td>20 gp</td>\n<td>28 gp</td>\n<td>28 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>2 gp, 5 sp</td>\n<td>13 gp</td>\n<td>25 gp</td>\n<td>36 gp</td>\n<td>40 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>3 gp</td>\n<td>15 gp</td>\n<td>30 gp</td>\n<td>45 gp</td>\n<td>55 gp</td>\n</tr>\n<tr>\n<td>18</td>\n<td>4 gp</td>\n<td>20 gp</td>\n<td>45 gp</td>\n<td>70 gp</td>\n<td>90 gp</td>\n</tr>\n<tr>\n<td>19</td>\n<td>6 gp</td>\n<td>30 gp</td>\n<td>60 gp</td>\n<td>100 gp</td>\n<td>130 gp</td>\n</tr>\n<tr>\n<td>20</td>\n<td>8 gp</td>\n<td>40 gp</td>\n<td>75 gp</td>\n<td>150 gp</td>\n<td>200 gp</td>\n</tr>\n<tr>\n<td>20 (大成功时)</td>\n<td> </td>\n<td>50 gp</td>\n<td>90 gp</td>\n<td>175 gp</td>\n<td>300 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>大成功</strong> 你超赞的！获得相当于对应下表列出的任务等级+1以及对应你的熟练度的现金收入。</p>\n<p><strong>成功</strong> 进展不错。获得相当于对应下表列出的任务等级以及对应你的熟练度的现金收入。</p>\n<p><strong>失败</strong> 你有够废。获得下表列出的任务等级中对应“失败”结果的现金收入。GM可能会减少你接下来可以继续工作的时间。</p>\n<p><strong>大失败</strong> 你又穷，又衰样。你一毛钱都没赚到而且被老板炒了。你的名声也臭了，怕是以后都难在这片地方找份像样的工作。</p>\n<h2 class=\"title\">范例赚取收入情景</h2>\n<p>以下是使用酒类学识在酒吧工作和使用法律学识研究法律来尝试在各熟练度等级赚取收入的例子。</p>\n<ul>\n<li><strong>受训</strong> 酒保，法律调查</li>\n<li><strong>专家</strong> 专业调酒师，接手一些小诉讼案件</li>\n<li><strong>大师</strong> 经营一个大酒场，参与重要诉讼案件</li>\n<li><strong>传奇</strong> 运营一个国际连锁酒庄，在九层地狱打官司</li>\n</ul>\n<h2 class=\"title\">制作商品Crafting goods for the Market（手艺技能）</h2>\n<p>你可以使用手艺技能来制作普通的商品，在市场上卖掉换钱。通常来说，你可以很容易地找到一份制作的基础物品等级比所在的定居点等级（见本书504页的赚取收入部分）低1-2级的工作。制作比这更高级的物品意味着你接受顾客对某件特别物品的订单，用手艺技能进行“制作”休整期行动（Craft Downtime Activity）并全价卖出你做好的物品。当然，这种机会并不常见，需要你具备特殊的才能——并且，如果你失败了，你财大气粗的客户可能不会只给你一个差评那么简单。</p>\n<h2 class=\"title\">专业工作 Practicing a Trade（学识技能）</h2>\n<p>你利用你的某项专门的学识技能参加专职工作，在休整期赚取自己的薪水。像是商贸，法律，航海这类的学识通常会比较有优势（因为总有市场需求）。如果你使用较为不常见的学识进行赚取收入检定，GM通常会给你提供一些可以降低DC的低任务等级选项。除此之外，你可能还需要一些特殊装备来对应相应的职业，比如矿工的采矿工具或是商人用来称量珍贵货物的的天平。</p>\n<h2 class=\"title\">演出Staging a Performance（表演技能）</h2>\n<p>你向特定的观众表演来赚取报酬。你所尝试取悦的观众人群取决于你工作的任务等级——越大款的观众通常更难被打动，但成功以后给钱也更多。GM会根据目前可能的观众人群决定你可以接受演出的任务等级。在大街上面向普通人的卖艺演出通常是一个0级任务；向有一定品味的艺术鉴赏者表演则会提高到2或3级。向富商，贵族或皇室表演则会让任务等级更高。你检定的成功等级决定了你的表演是否有打动观众——以及最后你收获的是喝彩还是臭鸡蛋。</p>"
+            "description": "<p>你可以使用合适的技能——通常是手艺，学识或是表演技能——来在休整期中赚钱。你必须在相应的技能上受训才能这样做。尝试赚钱需要你花时间去找工作，而且你能赚到多少取决于你在相应技能上的熟练度等级和所进行工作是否有利可图。因为这项活动需要你在冒险以外的周期内投入大量的时间和保持连续性，可能你不是在每次冒险战役中都有机会去赚钱。</p>\n<p>在个别情况下，GM也许会允许你的人物使用较为特殊的技能来以专业工种的形式赚取收入，比如，也许你可以通过宗教（Religion）技能在寺院里钻研经卷来赚钱，但在尝试在教会主持弥撒仍然属于使用表演而非宗教技能。当然，你也许也能使用一些基于体能的技能去赚钱——比如使用特技动作（Acrobatics）技能在马戏团表演杂技或是使用贼活技能扒窃。如果你使用并非手艺、学识或是表演技能赚取收入，你所需通过的技能检定DC会比通常情况提高很多。</p>\n<h2 class=\"title\">使用技能</h2>\n<p><strong>手艺 Crafting</strong> 制作商品</p>\n<p><strong>学识 Lore</strong> 专业工作</p>\n<p><strong>表演 Performance</strong> 演出</p>\n<h2 class=\"title\">赚取收入</h2>\n<p><span class=\"trait\" title=\"An activity with this trait takes a day or more, and can be used only during downtime.\">休整期</span></p>\n<hr />\n<p>你使用你的一项技能在休整期中尝试赚钱。GM会设定一个代表赚的最多的任务等级，但你也可以去找相对比较简单，报酬也较低的工作，但GM会决定你是否有得选。有时你可以想办法去打探一份比一开始能找到的报酬更理想一些的工作，但这需要你花额外的时间使用交涉（Diplomacy）技能去搜集信息（Gather Information），或是自己研究和寻找社会关系。</p>\n<p>当你接受一份工作以后，GM会暗中设定这份工作的技能检定DC。当你完成第一天的工作以后，进行一次检定来看你有没有赚到钱，根据检定结果，任务等级和你的技能熟练度来决定你获得的收入（见下表：你值多少钱）。</p>\n<p>在接下来的工作日程中你无需继续进行技能检定 - 你每天都使用第一天的技能检定结果来计算，直到整个工作周期完成。GM会决定你具体需要多长时间去完成整个工作计划——通常是一两个星期，但也可能成月甚至整年时间。</p>\n<h2>你值多少钱</h2>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>任务等级</th>\n<th>失败收入</th>\n<th>受训收入</th>\n<th>专家收入</th>\n<th>大师收入</th>\n<th>传奇收入</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>1 cp</td>\n<td>5 cp</td>\n<td>5 cp</td>\n<td>5 cp</td>\n<td>5 cp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2 cp</td>\n<td>2 sp</td>\n<td>2 sp</td>\n<td>2 sp</td>\n<td>2 sp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>4 cp</td>\n<td>3 sp</td>\n<td>3 sp</td>\n<td>3 sp</td>\n<td>3 sp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>8 cp</td>\n<td>5 sp</td>\n<td>5 sp</td>\n<td>5 sp</td>\n<td>5 sp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>1 sp</td>\n<td>7 sp</td>\n<td>8 sp</td>\n<td>8 sp</td>\n<td>8 sp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>2 sp</td>\n<td>9 sp</td>\n<td>1 gp</td>\n<td>1 gp</td>\n<td>1 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>3 sp</td>\n<td>1 gp, 5 sp</td>\n<td>2 gp</td>\n<td>2 gp</td>\n<td>2 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>4 sp</td>\n<td>2 gp</td>\n<td>2 gp, 5 sp</td>\n<td>2 gp, 5 sp</td>\n<td>2 gp, 5 sp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>5 sp</td>\n<td>2 gp, 5 sp</td>\n<td>3 gp</td>\n<td>3 gp</td>\n<td>3 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6 sp</td>\n<td>3 gp</td>\n<td>4 gp</td>\n<td>4 gp</td>\n<td>4 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7 sp</td>\n<td>4 gp</td>\n<td>5 gp</td>\n<td>6 gp</td>\n<td>6 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>8 sp</td>\n<td>5 gp</td>\n<td>6 gp</td>\n<td>8 gp</td>\n<td>8 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>9 sp</td>\n<td>6 gp</td>\n<td>8 gp</td>\n<td>10 gp</td>\n<td>10 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>1 gp</td>\n<td>7 gp</td>\n<td>10 gp</td>\n<td>15 gp</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>1 gp, 5 sp</td>\n<td>8 gp</td>\n<td>15 gp</td>\n<td>20 gp</td>\n<td>20 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>2 gp</td>\n<td>10 gp</td>\n<td>20 gp</td>\n<td>28 gp</td>\n<td>28 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>2 gp, 5 sp</td>\n<td>13 gp</td>\n<td>25 gp</td>\n<td>36 gp</td>\n<td>40 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>3 gp</td>\n<td>15 gp</td>\n<td>30 gp</td>\n<td>45 gp</td>\n<td>55 gp</td>\n</tr>\n<tr>\n<td>18</td>\n<td>4 gp</td>\n<td>20 gp</td>\n<td>45 gp</td>\n<td>70 gp</td>\n<td>90 gp</td>\n</tr>\n<tr>\n<td>19</td>\n<td>6 gp</td>\n<td>30 gp</td>\n<td>60 gp</td>\n<td>100 gp</td>\n<td>130 gp</td>\n</tr>\n<tr>\n<td>20</td>\n<td>8 gp</td>\n<td>40 gp</td>\n<td>75 gp</td>\n<td>150 gp</td>\n<td>200 gp</td>\n</tr>\n<tr>\n<td>20 (大成功时)</td>\n<td> </td>\n<td>50 gp</td>\n<td>90 gp</td>\n<td>175 gp</td>\n<td>300 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>大成功</strong> 你超赞的！获得相当于对应下表列出的任务等级+1以及对应你的熟练度的现金收入。</p>\n<p><strong>成功</strong> 进展不错。获得相当于对应下表列出的任务等级以及对应你的熟练度的现金收入。</p>\n<p><strong>失败</strong> 你有够废。获得下表列出的任务等级中对应“失败”结果的现金收入。GM可能会减少你接下来可以继续工作的时间。</p>\n<p><strong>大失败</strong> 你又穷，又衰样。你一毛钱都没赚到而且被老板炒了。你的名声也臭了，怕是以后都难在这片地方找份像样的工作。</p>\n<h2 class=\"title\">范例赚取收入情景</h2>\n<p>以下是使用酒类学识在酒吧工作和使用法律学识研究法律来尝试在各熟练度等级赚取收入的例子。</p>\n<ul>\n<li><strong>受训</strong> 酒保，法律调查</li>\n<li><strong>专家</strong> 专业调酒师，接手一些小诉讼案件</li>\n<li><strong>大师</strong> 经营一个大酒场，参与重要诉讼案件</li>\n<li><strong>传奇</strong> 运营一个国际连锁酒庄，在九层地狱打官司</li>\n</ul>\n<h2 class=\"title\">制作商品Crafting goods for the Market（手艺技能）</h2>\n<p>你可以使用手艺技能来制作普通的商品，在市场上卖掉换钱。通常来说，你可以很容易地找到一份制作的基础物品等级比所在的定居点等级（见赚取收入部分）低1-2级的工作。制作比这更高级的物品意味着你接受顾客对某件特别物品的订单，用手艺技能进行“制作”休整期行动并全价卖出你做好的物品。当然，这种机会并不常见，需要你具备特殊的才能——并且，如果你失败了，你财大气粗的客户可能不会只给你一个差评那么简单。</p>\n<h2 class=\"title\">专业工作 Practicing a Trade（学识技能）</h2>\n<p>你利用你的某项专门的学识技能参加专职工作，在休整期赚取自己的薪水。像是商贸，法律，航海这类的学识通常会比较有优势（因为总有市场需求）。如果你使用较为不常见的学识进行赚取收入检定，GM通常会给你提供一些可以降低DC的低任务等级选项。除此之外，你可能还需要一些特殊装备来对应相应的职业，比如矿工的采矿工具或是商人用来称量珍贵货物的的天平。</p>\n<h2 class=\"title\">演出Staging a Performance（表演技能）</h2>\n<p>你向特定的观众表演来赚取报酬。你所尝试取悦的观众人群取决于你工作的任务等级——越大款的观众通常更难被打动，但成功以后给钱也更多。GM会根据目前可能的观众人群决定你可以接受演出的任务等级。在大街上面向普通人的卖艺演出通常是一个0级任务；向有一定品味的艺术鉴赏者表演则会提高到2或3级。向富商，贵族或皇室表演则会让任务等级更高。你检定的成功等级决定了你的表演是否有打动观众——以及最后你收获的是喝彩还是臭鸡蛋。</p>"
         },
         "Eldritch Shot": {
             "name": "魔弹射击 Eldritch Shot",
-            "description": "<p><strong>需求</strong> 你正持用一把弓（bow）</p>\n<hr />\n<p>你@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Cast a Spell}，该法术要花费1或2个动作来施放，并且需要进行1次法术攻击检定。法术效果不会立刻产生，而是会灌入你正持握的弓中。</p>\n<p>使用这把弓作出1次打击（Strike）。你的法术会随着弹药发射出去，使用你的攻击检定结果来同时判断打击（Strike）和法术的效果。在判断你的多次攻击减值（multiple attack penalty）时，此行动被视为2次攻击，但是在你完成这2次攻击之后才会应用多次攻击减值。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把弓弩</p>\n<hr />\n<p>你@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Cast a Spell}，该法术要花费1或2个动作来施放，并且需要进行一次法术攻击检定。法术效果不会立刻产生，而是会灌入你正持握的弓中。</p>\n<p>使用这把弓作出一次打击。你的法术会随着弹药发射出去，使用你的攻击检定结果来同时判断打击和法术的效果。在判断你的多次攻击减值时，此行动被视为两次攻击，但是在你完成这两次攻击之后才会应用多次攻击减值。</p>"
         },
         "Encouraging Words": {
             "name": "Encouraging Words",
@@ -414,7 +414,7 @@
         },
         "Expeditious Inspection": {
             "name": "迅速检验 Expeditious Inspection",
-            "description": "<p><strong>频率</strong> 每10分钟1次</p>\n<hr />\n<p>你用超凡的速度对周遭进行观察与评估。你进行@Compendium[pf2e.actionspf2e.KygTSeDvsFoSO6HW]{回忆知识 Recall Knowledge}、@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}或@Compendium[pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{察言观色 Sense Motive}。</p>"
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p>你用超凡的速度对周遭进行观察与评估。你进行@Compendium[pf2e.actionspf2e.KygTSeDvsFoSO6HW]{回忆知识 Recall Knowledge}、@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}或@Compendium[pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{察言观色 Sense Motive}。</p>"
         },
         "Explode": {
             "name": "爆炸 Explode",
@@ -422,7 +422,7 @@
         },
         "Feint": {
             "name": "虚招 Feint",
-            "description": "<p><strong>需求</strong> 你必须处于你欲对它发动虚招的生物的近战触及范围（Melee Reach）以内。</p>\n<hr />\n<p>你虚晃一枪，让对手急着回应这次虚招而对你真正的攻击空门大开。进行一次 <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">欺骗</span> 技能检定来对抗这个对手的察觉DC。</p>\n<hr />\n<p><strong>大成功</strong> 对手被你完全搞糊涂了，并且一时都来不及反应。直到你的下一个回合结束，这个对手对你的近战攻击都视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及}。</p>\n<p><strong>成功</strong> 对手对你露了个破绽，但及时回护了。直到你目前的这个回合结束，这个对手对你的近战攻击视为措手不及。</p>\n<p><strong>大失败</strong> 哈哈哈你看看你。直到你的下一个回合结束，你自己都对这个对手的近战攻击视为措手不及状态。</p>"
+            "description": "<p><strong>需求</strong> 你必须处于你欲对它发动虚招的生物的近战触及范围（Melee Reach）以内。</p>\n<hr />\n<p>你虚晃一枪，让对手急着回应这次虚招而对你真正的攻击空门大开。进行一次 <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">欺骗</span> 技能检定来对抗这个对手的察觉DC。</p>\n<hr />\n<p><strong>大成功</strong> 对手被你完全搞糊涂了，并且一时都来不及反应。直到你的下一个回合结束，这个对手对你的近战攻击都视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>成功</strong> 对手对你露了个破绽，但及时回护了。直到你目前的这个回合结束，这个对手对你的近战攻击视为措手不及。</p>\n<p><strong>大失败</strong> 哈哈哈你看看你。直到你的下一个回合结束，你自己都对这个对手的近战攻击视为措手不及状态。</p>"
         },
         "Fey's Fortune": {
             "name": "精类幸运 Fey's Fortune",
@@ -450,15 +450,15 @@
         },
         "Flurry of Blows": {
             "name": "疾风连击 Flurry of Blows",
-            "description": "<p>进行2次无武装打击。若2次命中同一个生物，计算抗力和弱点时将伤害合计。每次打击正常应用多次攻击减值。因其拥有绝技特征，每回合你只能使用疾风连击1次。</p>"
+            "description": "<p>进行两次无武装打击。若两次命中同一个生物，计算抗力和弱点时将伤害合计。每次打击正常应用多次攻击减值。因其拥有绝技特征，每回合你只能使用疾风连击一次。</p>"
         },
         "Fly": {
             "name": "飞行 Fly",
-            "description": "<p><strong>需求</strong> 你拥有飞行速度。</p>\n<hr />\n<p>你在空中飞行至多等于飞行速度的距离。向上飞行（垂直向上或斜向上）使用在困难地形移动的规则。每消耗5尺移动可以垂直下降10尺距离。若你飞行到地面上，不会受到坠落伤害。你可以使用1个该动作飞行0尺以保持悬停在空中。若你在回合结束时处于空中而次回合没有使用过该飞行动作，你会坠落。</p>"
+            "description": "<p><strong>需求</strong> 你拥有飞行速度。</p>\n<hr />\n<p>你在空中飞行至多等于飞行速度的距离。向上飞行（垂直向上或斜向上）使用在困难地形移动的规则。每消耗5尺移动可以垂直下降10尺距离。若你飞行到地面上，不会受到坠落伤害。你可以使用一个该动作飞行0尺以保持悬停在空中。若你在回合结束时处于空中而次回合没有使用过该飞行动作，你会坠落。</p>"
         },
         "Follow the Expert": {
             "name": "跟随专家 Follow the Expert",
-            "description": "<p>选择一名在探索模式期间尝试反复进行技能检定的盟友（如攀爬的时候）或执行其他需要技能的探索战术（exploration tactic）的盟友（比如 @Compendium[pf2e.actionspf2e.IE2nThCmoyhQA0Jn]{避人耳目}）。该盟友必须在该技能达到专家（Expert）熟练度，并且愿意为你提供帮助。在跟随专家期间，你会与她们的战术相配合（match their tactic）或尝试类似的技能检定。得益于盟友的帮助，你可以在相关的技能检定上加上熟练加值（proficiency bonus），数值与你的等级相同，即便你在该技能上未受训也如此。此外，基于该盟友的熟练度，你还会在技能检定上获得环境加值（专家+2，大师+3，传奇+4）。</p>\n<p>@Compendium[pf2e.other-effects.VCSpuc3Tf3XWMkd3]{效果：跟随专家}</p>"
+            "description": "<p>选择一名在探索模式期间尝试反复进行技能检定的盟友（如攀爬的时候）或执行其他需要技能的探索战术的盟友（比如 @Compendium[pf2e.actionspf2e.IE2nThCmoyhQA0Jn]{避人耳目}）。该盟友必须在该技能达到专家熟练度，并且愿意为你提供帮助。在跟随专家期间，你会与她们的战术相配合或尝试类似的技能检定。得益于盟友的帮助，你可以在相关的技能检定上加上熟练加值，数值与你的等级相同，即便你在该技能上未受训也如此。此外，基于该盟友的熟练度，你还会在技能检定上获得环境加值（专家+2，大师+3，传奇+4）。</p>\n<p>@Compendium[pf2e.other-effects.VCSpuc3Tf3XWMkd3]{效果：跟随专家}</p>"
         },
         "Force Open": {
             "name": "破拆 Force Open",
@@ -470,7 +470,7 @@
         },
         "Furious Strike": {
             "name": "狂怒打击 Furious Strike",
-            "description": "<p>你的幻灵将愤怒引导进一次狂怒的攻击。它进行一次近战打击，且在计算多次攻击罚值时记为两次攻击。如果这次打击命中，你的幻灵造成1个额外的武器伤害骰，并在伤害骰上获得+1环境加值。</p>\n<p>如果你有至少10级，提高到2个额外骰以及+2环境加值；如果你有至少18级，提高到3个额外骰以及+3环境加值。</p>"
+            "description": "<p>你的幻灵将愤怒引导进一次狂怒的攻击。它进行一次近战打击，且在计算多次攻击罚值时记为两次攻击。如果这次打击命中，你的幻灵造成一个额外的武器伤害骰，并在伤害骰上获得+1环境加值。</p>\n<p>如果你有至少10级，提高到2个额外骰以及+2环境加值；如果你有至少18级，提高到3个额外骰以及+3环境加值。</p>"
         },
         "Gather Information": {
             "name": "搜集信息 Gather Information",
@@ -494,7 +494,7 @@
         },
         "Grapple": {
             "name": "擒拿 Grapple",
-            "description": "<p><strong>需求</strong> 你需要至少有一只空手，或你的目标正被你擒抱或被你束缚。你的目标的体型（Size）最多比你大不超过1级。</p>\n<hr />\n<p>你尝试用手扭住一个敌人。进行一次 <span data-pf2-action=\"grapple\" data-pf2-glyph=\"A\">运动</span> 技能检定，对抗目标的强韧DC。你也可以对已经被你擒抱（grabbed）或被你束缚（restrained）的生物继续进行擒拿以保持对他的擒抱。</p>\n<hr />\n<p><strong>大成功</strong> 直到你的下一个回合结束，你的对手陷入 @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚} 状态，除非在此期间你进行移动或是对手成功进行 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱}动作。</p>\n<p><strong>成功</strong> 直到你的下一个回合结束，你的对手陷入 @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱}状态，除非在此期间你进行移动或是对手成功进行逃脱动作。</p>\n<p><strong>失败</strong> 你没有擒住你的对手。如果你的对手因为你的擒拿而已经陷入束缚或擒抱状态，它不再承受这些状态。</p>\n<p><strong>大失败</strong> 如果你的对手因为你的擒拿而陷入束缚或擒抱状态，它立刻挣脱。这个生物可以立刻使你进入擒抱状态，如同成功对你发动了擒拿，或是将你击倒坠落至 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态。</p>"
+            "description": "<p><strong>需求</strong> 你需要至少有一只空手，或你的目标正被你擒抱或被你束缚。你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试用手扭住一个敌人。进行一次 <span data-pf2-action=\"grapple\" data-pf2-glyph=\"A\">运动</span> 技能检定，对抗目标的强韧DC。你也可以对已经被你擒抱（grabbed）或被你束缚（restrained）的生物继续进行擒拿以保持对他的擒抱。</p>\n<hr />\n<p><strong>大成功</strong> 直到你的下一个回合结束，你的对手陷入 @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚} 状态，除非在此期间你进行移动或是对手成功进行 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱}动作。</p>\n<p><strong>成功</strong> 直到你的下一个回合结束，你的对手陷入 @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱}状态，除非在此期间你进行移动或是对手成功进行逃脱动作。</p>\n<p><strong>失败</strong> 你没有擒住你的对手。如果你的对手因为你的擒拿而已经陷入束缚或擒抱状态，它不再承受这些状态。</p>\n<p><strong>大失败</strong> 如果你的对手因为你的擒拿而陷入束缚或擒抱状态，它立刻挣脱。这个生物可以立刻使你进入擒抱状态，如同成功对你发动了擒拿，或是将你击倒坠落至 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>"
         },
         "Grim Swagger": {
             "name": "恫疑虚喝 Grim Swagger",
@@ -506,19 +506,19 @@
         },
         "Hide": {
             "name": "躲藏 Hide",
-            "description": "<p>你 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{躲藏}一处掩蔽，高级掩蔽或是隐身在隐蔽物中，避开观察者的视线变得不 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。GM会给你暗骰一次 <span data-pf2-action=\"hide\" data-pf2-glyph=\"A\">隐秘</span> 检定，用本次检定的结果来分别对抗所有可以看得到你，但你对他们拥有掩蔽，高级掩蔽，或是隐蔽的观察者的察觉DC。如果你使用掩蔽或是高级掩蔽来藏匿，你可以从它们上获得加值。</p>\n<hr />\n<p><strong>成功</strong> 对其他原本可以看到你的生物，现在你获得藏匿状态而非可见状态。如果你在原本就对某生物来说处于藏匿或 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪}状态下再次尝试藏匿，你保持原状态不变。</p>\n<p>如果你成功地获得对某生物的藏匿状态，但在此之后失去了对其拥有的掩蔽，高级掩蔽或隐蔽，你会重新对其回到可见状态。进行任何除了躲藏， @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行}潜行或是快步以外的动作也会使你不再处于藏匿状态。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及} ，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意。</p>\n<p>如果其他生物成功地通过 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 动作发现了你而使你对其可见，那么你必须重新尝试躲藏行动来对其获得藏匿状态。</p>"
+            "description": "<p>你 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{躲藏 Hide}一处掩蔽，高级掩蔽或是隐身在隐蔽物中，避开观察者的视线变得不 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。GM会给你暗骰一次 <span data-pf2-action=\"hide\" data-pf2-glyph=\"A\">隐秘</span> 检定，用本次检定的结果来分别对抗所有可以看得到你，但你对他们拥有掩蔽，高级掩蔽，或是隐蔽的观察者的察觉DC。如果你使用掩蔽或是高级掩蔽来藏匿，你可以从它们上获得加值。</p>\n<hr />\n<p><strong>成功</strong> 对其他原本可以看到你的生物，现在你获得藏匿状态而非可见状态。如果你在原本就对某生物来说处于藏匿或 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪}状态下再次尝试藏匿，你保持原状态不变。</p>\n<p>如果你成功地获得对某生物的藏匿状态，但在此之后失去了对其拥有的掩蔽，高级掩蔽或隐蔽，你会重新对其回到可见状态。进行任何除了躲藏， @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行}潜行或是快步以外的动作也会使你不再处于藏匿状态。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} ，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意。</p>\n<p>如果其他生物成功地通过 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 动作发现了你而使你对其可见，那么你必须重新尝试躲藏行动来对其获得藏匿状态。</p>"
         },
         "High Jump": {
             "name": "跳高 High Jump",
-            "description": "<p>你跑动一次，然后垂直跳跃，同时尝试一个DC30的 <span data-pf2-action=\"highJump\" data-pf2-glyph=\"D\">运动</span> 技能检定尝试增加你跳跃的高度。如果你跑动移动的距离不超过10尺，那么你的检定自动失败。根据GM的判断，他可以根据实际情景来增加或降低这个技能检定的DC。</p>\n<hr />\n<p><strong>大成功</strong> 你最高可以跳到8尺高，或是跳最高到5尺高，同时10尺远。</p>\n<p><strong>成功</strong> 你最高可以跳到5尺高。</p>\n<p><strong>失败</strong> 你只能跳到普通高度。</p>\n<p><strong>大失败</strong> 你不但没能跳高，还摔了个马趴，在你占据的空间中陷入@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地} 状态。</p>"
+            "description": "<p>你跑动一次，然后垂直跳跃，同时尝试一个DC30的 <span data-pf2-action=\"highJump\" data-pf2-glyph=\"D\">运动</span> 技能检定尝试增加你跳跃的高度。如果你跑动移动的距离不超过10尺，那么你的检定自动失败。根据GM的判断，他可以根据实际情景来增加或降低这个技能检定的DC。</p>\n<hr />\n<p><strong>大成功</strong> 你最高可以跳到8尺高，或是跳最高到5尺高，同时10尺远。</p>\n<p><strong>成功</strong> 你最高可以跳到5尺高。</p>\n<p><strong>失败</strong> 你只能跳到普通高度。</p>\n<p><strong>大失败</strong> 你不但没能跳高，还摔了个马趴，在你占据的空间中陷入@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} 状态。</p>"
         },
         "Hunt Prey": {
             "name": "猎杀目标 Hunt Prey",
-            "description": "<p>你指定一个生物为猎杀目标，专注于攻击该生物。你必须能够看到或者听到你的目标，或者在探索时追踪这一猎物。</p>\n<p>你搜索（seek）你的猎杀目标的察觉检定上获得+2环境加值，你在@Compendium[pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}你的猎杀目标的生存检定上获得+2环境加值。你还会在对抗你的猎杀目标时忽略远程攻击的第二个射程增量减值。</p>\n<p>你同一时间只能指定一个猎物。如果你在已经指定了一个生物之后对另一个生物使用猎杀目标，你会失去对之前生物的目标指定，而新的生物成为你的目标。你的指定持续到第二次进行每日准备。</p>"
+            "description": "<p>你指定一个生物为猎杀目标，专注于攻击该生物。你必须能够看到或者听到你的目标，或者在探索时追踪这一猎物。</p>\n<p>你搜索你的猎杀目标的察觉检定上获得+2环境加值，你在@Compendium[pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}你的猎杀目标的生存检定上获得+2环境加值。你还会在对抗你的猎杀目标时忽略远程攻击的第二个射程增量减值。</p>\n<p>你同一时间只能指定一个猎物。如果你在已经指定了一个生物之后对另一个生物使用猎杀目标，你会失去对之前生物的目标指定，而新的生物成为你的目标。你的指定持续到第二次进行每日准备。</p>"
         },
         "Hustle": {
             "name": "强行军 Hustle",
-            "description": "<p>你竭力以自身旅行速度（travel speed）的两倍进行移动。你能够强行军的分钟数等同于你的体质调整值 x 10（最低10分钟）。若你们组成队伍（group）来进行强行军的话，则使用其中最低体质调整值的人来判断该队伍能够一同以多快的速度来进行强行军。</p>"
+            "description": "<p>你竭力以自身旅行速度的两倍进行移动。你能够强行军的分钟数等同于你的体质调整值 x 10（最低10分钟）。若你们组成队伍来进行强行军的话，则使用其中最低体质调整值的人来判断该队伍能够一同以多快的速度来进行强行军。</p>"
         },
         "Identify Alchemy": {
             "name": "辨识炼金术 Identify Alchemy",
@@ -526,7 +526,7 @@
         },
         "Identify Magic": {
             "name": "辨识魔法 Identify Magic",
-            "description": "<p>如果你发现一件物品，一个地点或是一个持续性的现象具有魔法性质，那么你可以花费10分钟时间尝试分析出它们所蕴含魔法的特质。如果你的尝试被打断，那么你必须从头来过。GM会为这次检定设置合适的DC。被诅咒或是极为奇诡的物品可能会有比一般情况更高的DC或者无法单纯依靠本行动发现其魔法特质。如果一个法术拥有升阶（Heightening），辨识它的DC不会因此而提高</p>\n<hr />\n<p><strong>大成功</strong> 你完完全全地理解了这个魔法效果，包括它的名字（如果是一个魔法现象），它的原理和机制，如何正确地启动它（如果是一件魔法物品）以及它是否被诅咒了。</p>\n<p><strong>成功</strong> 对于物品或是地点，你对于他的运作原理和启动方法有了一个模糊的认识。如果是一个持续性的魔法现象（比如一个持续生效的法术），你知道它的名字和效果。你不能重试检定来搏大成功。</p>\n<p><strong>失败</strong> 你未能辨识该魔法效果，一天以内不能再次尝试。</p>\n<p><strong>大失败</strong> 你误以为这是另一个魔法效果，GM决定你把它看成了什么东西。</p>"
+            "description": "<p>如果你发现一件物品，一个地点或是一个持续性的现象具有魔法性质，那么你可以花费10分钟时间尝试分析出它们所蕴含魔法的特质。如果你的尝试被打断，那么你必须从头来过。GM会为这次检定设置合适的DC。被诅咒或是极为奇诡的物品可能会有比一般情况更高的DC或者无法单纯依靠本行动发现其魔法特质。如果一个法术拥有升阶，辨识它的DC不会因此而提高</p>\n<hr />\n<p><strong>大成功</strong> 你完完全全地理解了这个魔法效果，包括它的名字（如果是一个魔法现象），它的原理和机制，如何正确地启动它（如果是一件魔法物品）以及它是否被诅咒了。</p>\n<p><strong>成功</strong> 对于物品或是地点，你对于他的运作原理和启动方法有了一个模糊的认识。如果是一个持续性的魔法现象（比如一个持续生效的法术），你知道它的名字和效果。你不能重试检定来搏大成功。</p>\n<p><strong>失败</strong> 你未能辨识该魔法效果，一天以内不能再次尝试。</p>\n<p><strong>大失败</strong> 你误以为这是另一个魔法效果，GM决定你把它看成了什么东西。</p>"
         },
         "Impersonate": {
             "name": "乔装 Impersonate",
@@ -550,7 +550,7 @@
         },
         "Investigate": {
             "name": "调查 Investigate",
-            "description": "<p>你在以半速移动的同时，从周遭环境中搜集信息。你会对自身在旅途中有过接触或能够看到的各种事物使用回忆知识（Recall Knowledge）并从中发现线索，但这是个秘密检定（Secret Checks）。你能够在调查中使用具有回忆知识动作的任意技能，但你能找到的线索是否与该技能相关是由GM判定的。</p>"
+            "description": "<p>你在以半速移动的同时，从周遭环境中搜集信息。你会对自身在旅途中有过接触或能够看到的各种事物使用回忆知识并从中发现线索，但这是个秘密检定（Secret Checks）。你能够在调查中使用具有回忆知识动作的任意技能，但你能找到的线索是否与该技能相关是由GM判定的。</p>"
         },
         "Invigorating Fear": {
             "name": "幸惊乐惧 Invigorating Fear",
@@ -566,7 +566,7 @@
         },
         "Jinx": {
             "name": "霉运招来 Jinx",
-            "description": "<p><strong>频率</strong> 每日一次</p>\n<hr />\n<p>你能诅咒别人变得笨手笨脚。此诅咒的范围为30尺，而且你必须能够看到你的目标。目标获得1次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免检定来抵抗霉运招来，使用你的职业DC或法术DC，取用其中较高者。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响，并且在24小时内获得临时免疫。</p>\n<p><strong>失败</strong> 目标会在1分钟内陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>\n<p><strong>大失败</strong> 目标会在1分钟内陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+            "description": "<p><strong>频率</strong> 每日一次</p>\n<hr />\n<p>你能诅咒别人变得笨手笨脚。此诅咒的范围为30尺，而且你必须能够看到你的目标。目标获得一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免检定来抵抗霉运招来，使用你的职业DC或法术DC，取用其中较高者。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响，并且在24小时内获得临时免疫。</p>\n<p><strong>失败</strong> 目标会在1分钟内陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>\n<p><strong>大失败</strong> 目标会在1分钟内陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
         },
         "Jumping Jenny": {
             "name": "Jumping Jenny",
@@ -582,15 +582,15 @@
         },
         "Learn Name": {
             "name": "获知名字 Learn Name",
-            "description": "<p>你花费一个星期来试图揭露和获取一个生物的名字。你尝试的具体形式取决于你使用的技能、能够调用的资源以及其他的各种情况。决定你是搜寻某个特定个体的名字，还是些宽泛的名字。如果你寻找一个个体的名字，你必须能够清晰地识别出那个个体；例如，“指挥入侵的将军”是足够了，但是在你不知道是谁谋害了公爵夫人的情况下，“杀害公爵夫人的人”就不行了。如果你想在宽泛的范围内搜寻名字，则指名出一种生物类别。</p>\n<p>由GM来选择DC，通常会基于所询问的生物的等级。如果你在宽泛地搜寻名字，DC一般基于GM决定提供的生物的等级，通常是所选类型里与你等级相同或是更低等级的生物。GM可能会根据你可调用的资源、使用一个特别合适或不合适的技能、或是其他情况来调整任务的DC。尝试使用一个能够回忆知识（Recall Knowledge）的与该生物相关的技能来进行检定。在尝试获取名字之后，你通常无法再次尝试对同一个个体使用获取名字，除非你在DM的判断下获取了大量新的信息源。</p>\n<hr />\n<p><strong>大成功</strong> 你获取了一个或多个你所选择的特定个体的私人名，或是你所选生物类型中等同于任务等级的一个生物的私人名。你还发现了关于他们真名的破片，在GM的判断下，你可能会找到一条指引你踏上冒险之路的线索，在那里你可以知道真名的其余部分。</p>\n<p><strong>成功</strong> 如同大成功，只是你只能发现一个私人名，并且无法找到真名破片。</p>\n<p><strong>大失败</strong> 如果你正在搜寻某个特定个体的名字，那么你无法发现任何新信息，并且该个体会察觉到你的尝试。如果你在宽泛地搜寻某个特定种类中的名字，你所发现的生物的名字可能会给你带来麻烦，也可能一个完全不同种类的生物的名字。</p>"
+            "description": "<p>你花费一个星期来试图揭露和获取一个生物的名字。你尝试的具体形式取决于你使用的技能、能够调用的资源以及其他的各种情况。决定你是搜寻某个特定个体的名字，还是些宽泛的名字。如果你寻找一个个体的名字，你必须能够清晰地识别出那个个体；例如，“指挥入侵的将军”是足够了，但是在你不知道是谁谋害了公爵夫人的情况下，“杀害公爵夫人的人”就不行了。如果你想在宽泛的范围内搜寻名字，则指名出一种生物类别。</p>\n<p>由GM来选择DC，通常会基于所询问的生物的等级。如果你在宽泛地搜寻名字，DC一般基于GM决定提供的生物的等级，通常是所选类型里与你等级相同或是更低等级的生物。GM可能会根据你可调用的资源、使用一个特别合适或不合适的技能、或是其他情况来调整任务的DC。尝试使用一个能够回忆知识的与该生物相关的技能来进行检定。在尝试获取名字之后，你通常无法再次尝试对同一个个体使用获取名字，除非你在DM的判断下获取了大量新的信息源。</p>\n<hr />\n<p><strong>大成功</strong> 你获取了一个或多个你所选择的特定个体的私人名，或是你所选生物类型中等同于任务等级的一个生物的私人名。你还发现了关于他们真名的破片，在GM的判断下，你可能会找到一条指引你踏上冒险之路的线索，在那里你可以知道真名的其余部分。</p>\n<p><strong>成功</strong> 如同大成功，只是你只能发现一个私人名，并且无法找到真名破片。</p>\n<p><strong>大失败</strong> 如果你正在搜寻某个特定个体的名字，那么你无法发现任何新信息，并且该个体会察觉到你的尝试。如果你在宽泛地搜寻某个特定种类中的名字，你所发现的生物的名字可能会给你带来麻烦，也可能一个完全不同种类的生物的名字。</p>"
         },
         "Learn a Spell": {
             "name": "学习法术 Learn a Spell",
-            "description": "<p><strong>需求</strong> 你拥有法术职业能力，并且你欲学习的法术处于你的职业所属的魔法宗派的法术列表中。</p>\n<hr />\n<p>你可以向一个知晓某个法术的人或是记载有该法术的书面材料，如法术书或是卷轴来学习某一个你需要的法术。如果你可以施放多个宗派的法术，你也可以学习所以这些宗派的法术——前提是你拥有与该宗派相对应的技能。比如，你是一个兼职吟游诗人（Bard Multiclass）的牧师（Cleric），你不能使用宗教技能为吟游诗人的法术剧目（Spell Repertoire）添加法术。</p>\n<p>要学习法术，你必须满足以下条件：</p>\n<ul>\n<li>花费该法术每环级1小时的时间。在此期间，你需要和教授你法术的人保持交流，或是认真研读记载了法术的材料。</li>\n<li>准备了一定价值的材料。</li>\n<li>进行一个和你欲学习的法术宗派相对应的技能检定（DC由GM决定）。罕见（Uncommon）和稀有（Rare）特性的法术会需要更高的学习检定DC，</li>\n</ul>\n<p> 如果你使用一本法术书，那么学习法术动作可以允许你将该法术加入你的法术书。如果你从一个已知法术列表中准备法术，将法术加入你的已知法术列表；如果你使用法术剧目准备法术，那么你可以将此法术添加或交换到你的法术剧目。</p>\n<hr />\n<p><strong>大成功</strong> 你学到了法术，并只花费了一半的材料价格。</p>\n<p><strong>成功</strong> 你花费材料价格并学到了法术。</p>\n<p><strong>失败</strong> 你未能学习到法术（可以在下次提升等级时再尝试），但省下了材料。</p>\n<p><strong>大失败</strong> 和失败相同，但你还浪费了一半价格的材料。</p>"
+            "description": "<p><strong>需求</strong> 你拥有法术职业能力，并且你欲学习的法术处于你的职业所属的魔法宗派的法术列表中。</p>\n<hr />\n<p>你可以向一个知晓某个法术的人或是记载有该法术的书面材料，如法术书或是卷轴来学习某一个你需要的法术。如果你可以施放多个宗派的法术，你也可以学习所以这些宗派的法术——前提是你拥有与该宗派相对应的技能。比如，你是一个兼职吟游诗人的牧师，你不能使用宗教技能为吟游诗人的法术库添加法术。</p>\n<p>要学习法术，你必须满足以下条件：</p>\n<ul>\n<li>花费该法术每环级1小时的时间。在此期间，你需要和教授你法术的人保持交流，或是认真研读记载了法术的材料。</li>\n<li>准备了一定价值的材料。</li>\n<li>进行一个和你欲学习的法术宗派相对应的技能检定（DC由GM决定）。罕见和稀有特性的法术会需要更高的学习检定DC，</li>\n</ul>\n<p> 如果你使用一本法术书，那么学习法术动作可以允许你将该法术加入你的法术书。如果你从一个已知法术列表中准备法术，将法术加入你的已知法术列表；如果你使用法术剧目准备法术，那么你可以将此法术添加或交换到你的法术剧目。</p>\n<hr />\n<p><strong>大成功</strong> 你学到了法术，并只花费了一半的材料价格。</p>\n<p><strong>成功</strong> 你花费材料价格并学到了法术。</p>\n<p><strong>失败</strong> 你未能学习到法术（可以在下次提升等级时再尝试），但省下了材料。</p>\n<p><strong>大失败</strong> 和失败相同，但你还浪费了一半价格的材料。</p>"
         },
         "Liberating Step": {
             "name": "自由快步 Liberating Step",
-            "description": "<p><strong>触发</strong> 一名敌人伤害、 @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{攫抓 Grabs}或 @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapples}你的盟友，并且他们都在你周围15尺的范围内。</p>\n<hr />\n<p>你的盟友从束缚中重获自由。</p>\n<p>如果触发条件为盟友受到伤害，那么这名盟友在对抗触发这次自由快步的伤害时获得针对所有伤害的抗力，数值等同于2+你的等级。</p>\n<p>如果这名盟友被某个效果擒抱（Grabbing），束缚（Restraining）， @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilizing}或 @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzing}，他们可以尝试重获自由。他们可以尝试一个新的豁免检定对抗上述效果中允许豁免的一个，或是以一个自由动作尝试从一个效果中 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 。</p>\n<p>如果他们能够移动，这名盟友可以以自由动作进行快步（Step），哪怕他们并不需要逃离敌人。</p>"
+            "description": "<p><strong>触发</strong> 一名敌人伤害、 @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{攫抓 Grabs}或 @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapples}你的盟友，并且他们都在你周围15尺的范围内。</p>\n<hr />\n<p>你的盟友从束缚中重获自由。</p>\n<p>如果触发条件为盟友受到伤害，那么这名盟友在对抗触发这次自由快步的伤害时获得针对所有伤害的抗力，数值等同于2+你的等级。</p>\n<p>如果这名盟友被某个效果擒抱（Grabbing），束缚（Restraining）， @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilizing}或 @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzing}，他们可以尝试重获自由。他们可以尝试一个新的豁免检定对抗上述效果中允许豁免的一个，或是以一个自由动作尝试从一个效果中 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 。</p>\n<p>如果他们能够移动，这名盟友可以以自由动作进行快步，哪怕他们并不需要逃离敌人。</p>"
         },
         "Lie": {
             "name": "说谎 Lie",
@@ -602,15 +602,15 @@
         },
         "Living Fortification": {
             "name": "肉身工事 Living Fortification",
-            "description": "<p><strong>触发</strong> 你投掷先攻骰。</p>\n<hr />\n<p>你如同一座行走的堡垒一般用火器或弩摆出防御姿势，进行交互动作拔出一把火器或弩，然后使用该武器摆出防御姿态，直到你的第一个回合开始前AC获得+1环境加值，如果所选武器拥有格挡（parry）特征则改为+2环境加值。</p>"
+            "description": "<p><strong>触发</strong> 你投掷先攻骰。</p>\n<hr />\n<p>你如同一座行走的堡垒一般用火器或弩摆出防御姿势，进行交互动作拔出一把火器或弩，然后使用该武器摆出防御姿态，直到你的第一个回合开始前AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值。</p>"
         },
         "Long Jump": {
             "name": "跳远 Long Jump",
-            "description": "<p>你跑动一次，然后水平跳跃，同时尝试一个 <span data-pf2-action=\"longJump\" data-pf2-glyph=\"D\">运动</span> 技能检定尝试增加你跳跃的距离。这个运动检定的DC等同于你希望能跳跃多少尺的长度（比如你希望跳远总共20尺，则跳远DC为20）。你可以跳远的距离不能超过你的移动速度。</p>\n<p>如果你跑动移动的距离不超过10尺，那么你的检定自动失败。根据GM的判断，他可以根据实际情景来增加或降低这个技能检定的DC。</p>\n<hr />\n<p><strong>成功</strong> 你可以的 @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳远} 最远距离提升到你自己希望的距离，而非普通情况的距离。</p>\n<p><strong>失败</strong>你只能跳到普通距离。</p>\n<p><strong>大失败</strong> 你正常的跳了普通距离，但摔了个屁股墩，在你落地时陷入 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}态。</p>"
+            "description": "<p>你跑动一次，然后水平跳跃，同时尝试一个 <span data-pf2-action=\"longJump\" data-pf2-glyph=\"D\">运动</span> 技能检定尝试增加你跳跃的距离。这个运动检定的DC等同于你希望能跳跃多少尺的长度（比如你希望跳远总共20尺，则跳远DC为20）。你可以跳远的距离不能超过你的移动速度。</p>\n<p>如果你跑动移动的距离不超过10尺，那么你的检定自动失败。根据GM的判断，他可以根据实际情景来增加或降低这个技能检定的DC。</p>\n<hr />\n<p><strong>成功</strong> 你可以的 @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳远} 最远距离提升到你自己希望的距离，而非普通情况的距离。</p>\n<p><strong>失败</strong>你只能跳到普通距离。</p>\n<p><strong>大失败</strong> 你正常的跳了普通距离，但摔了个屁股墩，在你落地时陷入 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}态。</p>"
         },
         "Long Term Rest": {
             "name": "长期休息 Long Term Rest",
-            "description": "<p>在休整模式期间，你能花一天一夜的的时间进行休息来恢复生命值（Hit Points），恢复的数值为你的体质调整值（最低1点）乘以你的等级的两倍。</p>"
+            "description": "<p>在休整模式期间，你能花一天一夜的的时间进行休息来恢复生命值，恢复的数值为你的体质调整值（最低1点）乘以你的等级的两倍。</p>"
         },
         "Make an Impression": {
             "name": "建立印象 Make an Impression",
@@ -630,11 +630,11 @@
         },
         "Mark for Death": {
             "name": "死亡标记 Mark for Death",
-            "description": "<p><strong>需求</strong> 你能看到和听到自己打算标记的生物。</p>\n<hr />\n<p><strong>效果</strong> 你指定单个生物作为标记目标。这持续至标记目标死亡或你再次使用死亡标记为止。你在使用察觉检定@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}标记目标以及使用欺骗检定对标记目标进行@Compendium[pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feint}时，检定获得+2环境加值。</p>\n<p>当你攻击标记目标时，你的灵巧（agile）和娴熟（finesse）武器以及非武装（unarmed）攻击获得背刺（backstabber）以及致命d6（deadly d6）武器特性。</p>\n<p>若武器或非武装攻击已经具有致命特性，那么致命伤害骰的大小增大1级以取代使其获得致命d6特性。</p>"
+            "description": "<p><strong>需求</strong> 你能看到和听到自己打算标记的生物。</p>\n<hr />\n<p><strong>效果</strong> 你指定单个生物作为标记目标。这持续至标记目标死亡或你再次使用死亡标记为止。你在使用察觉检定@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}标记目标以及使用欺骗检定对标记目标进行@Compendium[pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feint}时，检定获得+2环境加值。</p>\n<p>当你攻击标记目标时，你的灵巧和娴熟武器以及非武装攻击获得背刺以及致命d6武器特性。</p>\n<p>若武器或非武装攻击已经具有致命特性，那么致命伤害骰的大小增大1级以取代使其获得致命d6特性。</p>"
         },
         "Master Strike": {
             "name": "大师一击 Master Strike",
-            "description": "<p><strong>触发</strong> 你的打击命中1个@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物并对它造成伤害。</p>\n<hr />\n<p>目标必须通过1次对抗你职业DC的强韧检定。之后他在1天之内对大师一击临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 无效果。</p>\n<p><strong>成功</strong> 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你下回合结束。</p>\n<p><strong>失败</strong> 目标陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮。</p>\n<p><strong>大失败</strong> 目标陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮，@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}2小时，或是被杀死（由你选择）。</p>"
+            "description": "<p><strong>触发</strong> 你的打击命中一个@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物并对它造成伤害。</p>\n<hr />\n<p>目标必须通过一次对抗你职业DC的强韧检定。之后他在1天之内对大师一击临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 无效果。</p>\n<p><strong>成功</strong> 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你下回合结束。</p>\n<p><strong>失败</strong> 目标陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮。</p>\n<p><strong>大失败</strong> 目标陷入@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮，@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}2小时，或是被杀死（由你选择）。</p>"
         },
         "Mesmerizing Performance": {
             "name": "Mesmerizing Performance",
@@ -714,15 +714,15 @@
         },
         "Pursue a Lead": {
             "name": "追查方向 Pursue a Lead",
-            "description": "<p><strong>频率</strong> 每10分钟1次</p>\n<hr />\n<p>你花一分钟调查一个你可能的线索的细节，指定一个与线索有关的客体作为你主动调查的目标。这个客体通常是一个单一生物、物品，或较小的场所(如房间或走廊)，但GM可能允许你有不同的调查范围。你无须能知晓客体的身份、目的或本质，但是你需要意识到它的存在。例如，找到一个脚印就足以对留下足迹的生物进行调查，看到一件物品或地点的潦草素描就足以让你展开对客体的调查。</p>\n<p>当你尝试用一次察觉或技能检定来调查指定的客体时，你会在该检定上获得+1的环境加值。具体的检定取决于你如何调查，并由GM决定，但调查的检定通常使用察觉技能，或者使用基于智力、感知或魅力的技能检定。</p>\n<p>同一时间你只能维持两个主动调查。如果你维持两个后又追查另一个方向(Pursue another Lead)，你必须指定一个与当前调查不同的客体(或者，就你所知，他们必须是不同的)，并放弃一个当前的客体。一旦你放弃你要追查的客体，在下次你做日常准备之前，你不能再次追查该客体。</p>"
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p>你花一分钟调查一个你可能的线索的细节，指定一个与线索有关的客体作为你主动调查的目标。这个客体通常是一个单一生物、物品，或较小的场所(如房间或走廊)，但GM可能允许你有不同的调查范围。你无须能知晓客体的身份、目的或本质，但是你需要意识到它的存在。例如，找到一个脚印就足以对留下足迹的生物进行调查，看到一件物品或地点的潦草素描就足以让你展开对客体的调查。</p>\n<p>当你尝试用一次察觉或技能检定来调查指定的客体时，你会在该检定上获得+1的环境加值。具体的检定取决于你如何调查，并由GM决定，但调查的检定通常使用察觉技能，或者使用基于智力、感知或魅力的技能检定。</p>\n<p>同一时间你只能维持两个主动调查。如果你维持两个后又追查另一个方向(Pursue another Lead)，你必须指定一个与当前调查不同的客体(或者，就你所知，他们必须是不同的)，并放弃一个当前的客体。一旦你放弃你要追查的客体，在下次你做日常准备之前，你不能再次追查该客体。</p>"
         },
         "Quick Alchemy": {
             "name": "高速炼金 Quick Alchemy",
-            "description": "<p><strong>花费</strong> 1批灌注试剂</p>\n<p><strong>需求</strong> 拥有@Compendium[pf2e.equipment-srd.4ftXXUCBHcf4b0MH]{炼金工具 Alchemist's Tools}，你所创造的炼金物品的公式，以及一只空闲的手。</p>\n<hr />\n<p>你迅速调制出一件炼金物品以便立即使用。你创造出单独一件记载于公式簿上的，等级不高于你的高阶炼金术等级的物品，并且不必为这件物品通常所需的炼金试剂支付货币成本，也不需要尝试手艺（Crafting）检定。这件物品具有灌注（Infused）特征，但它的效力只会持续到你下一回合开始。</p>"
+            "description": "<p><strong>花费</strong> 1批灌注试剂</p>\n<p><strong>需求</strong> 拥有@Compendium[pf2e.equipment-srd.4ftXXUCBHcf4b0MH]{炼金工具 Alchemist's Tools}，你所创造的炼金物品的公式，以及一只空闲的手。</p>\n<hr />\n<p>你迅速调制出一件炼金物品以便立即使用。你创造出单独一件记载于公式簿上的，等级不高于你的高阶炼金术等级的物品，并且不必为这件物品通常所需的炼金试剂支付货币成本，也不需要尝试手艺检定。这件物品具有灌注特征，但它的效力只会持续到你下一回合开始。</p>"
         },
         "Quick Tincture": {
             "name": "快速酊剂 Quick Tincture",
-            "description": "<p><strong>消耗</strong> 1个多用途瓶</p>\n<p><strong>需求</strong> 你知道你要创造的炼金物品的公式，并且你要握着或穿着炼金工具，同时还要有一只自由的手。</p>\n<hr />\n<p>你快速调制出一份临时酊剂。你创造一件等于或低于你等级，同时无须支付炼金试剂需要的金钱，也不需要尝试工艺检定。此物品拥有灌注特性，但它只在当前回合结束前有效。</p>"
+            "description": "<p><strong>消耗</strong> 一个多用途瓶</p>\n<p><strong>需求</strong> 你知道你要创造的炼金物品的公式，并且你要握着或穿着炼金工具，同时还要有一只自由的手。</p>\n<hr />\n<p>你快速调制出一份临时酊剂。你创造一件等于或低于你等级，同时无须支付炼金试剂需要的金钱，也不需要尝试工艺检定。此物品拥有灌注特性，但它只在当前回合结束前有效。</p>"
         },
         "Raconteur's Reload": {
             "name": "嘴炮装填 Raconteur's Reload",
@@ -754,35 +754,35 @@
         },
         "Recall Knowledge (Arcana)": {
             "name": "回忆知识 （奥法）Recall Knowledge (Arcana)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>奥法 Arcana</strong> 奥术理论，奥术魔法宗派，拥有奥术力量的生物，奥法性质的异界</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>奥法 Arcana</strong> 奥术理论，奥术魔法宗派，拥有奥术力量的生物，奥法性质的异界</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Crafting)": {
             "name": "回忆知识（手艺） Recall Knowledge (Crafting)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>手艺 Crafting</strong> 炼金术术式和炼金术生物，物品定价，工程学，稀有材料，构造体生物</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>手艺 Crafting</strong> 炼金术术式和炼金术生物，物品定价，工程学，稀有材料，构造体生物</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Lore)": {
             "name": "回忆知识（学识） Recall Knowledge (Lore)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>学识 Lore</strong> 关于特定学识门类的知识</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>学识 Lore</strong> 关于特定学识门类的知识</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Medicine)": {
             "name": "回忆知识（医疗） Recall Knowledge (Medicine)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>医疗 Medicine</strong> 疾病，毒物，尸检</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>医疗 Medicine</strong> 疾病，毒物，尸检</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Nature)": {
             "name": "回忆知识（自然） Recall Knowledge (Nature)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>自然 Nature</strong> 自然环境，动物，植物，自然地理，天气，自然界的生物，自然性质的异界</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>自然 Nature</strong> 自然环境，动物，植物，自然地理，天气，自然界的生物，自然性质的异界</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Occultism)": {
             "name": "回忆知识（神秘） Recall Knowledge (Occultism)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>神秘 Occultism</strong>远古奥秘，隐晦的哲学思想，拥有神秘力量的生物，神秘性质的异界</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>神秘 Occultism</strong>远古奥秘，隐晦的哲学思想，拥有神秘力量的生物，神秘性质的异界</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Religion)": {
             "name": "回忆知识（宗教） Recall Knowledge (Religion)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>宗教 Religion</strong> 神圣生物，神域，神学，秘密教义，宗教意义的生物</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>宗教 Religion</strong> 神圣生物，神域，神学，秘密教义，宗教意义的生物</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Recall Knowledge (Society)": {
             "name": "回忆知识（社群） Recall Knowledge (Society)",
-            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>社群 Society</strong> 地方历史，重要人物，法律，社会结构，人型生物</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技（Acrobatics）技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
+            "description": "<p>你可以通过回忆知识动作来思考关于某一事物的有用信息。通常来说，关于一个事物尽人皆知的事情不需要你去进行技能检定，但使用回忆知识则不同：朋友，请停一停，然后你仔细提取出了一些对于眼前的情景具有实用性价值的具体知识。有时，你还会需要一些额外的时间调查具体的事物，同时回忆知识。比如说为了调查一具尸体的死因，你会需要花一些时间对尸体进行尸检，然后使用医疗技能来进行回忆知识。</p>\n<p>以下这些技能可以用于回忆知识。 在某些情况下，你可以在GM的允许下用别的相关技能来进行检定，这往往会导致DC变高。有些情报类型会出现在多个技能中，但他们会提供不同类型的情报。举个例子，奥法会告诉你魔像的魔法防御，而手艺会告诉你它的对物理攻击的抗性。</p>\n<p><strong>社群 Society</strong> 地方历史，重要人物，法律，社会结构，人型生物</p>\n<p>GM也可以根据情况允许另一些技能被用来回忆知识，比如，通过特技技能来了解一个动作是否可以通过高超的体术做到。如果你要用一个基于体能的动作来进行回忆知识检定（比如上面的例子），GM一般会要求你使用一项心智属性（多数情况是智力属性）取代该技能原本的属性调整值。</p>\n<hr />\n<p><strong>大成功</strong> 你准确清晰地回忆起了特定的知识，并且你还想起了一些额外的信息和背景。</p>\n<p><strong>成功</strong> 你准确清晰地回忆起了特定的知识，并且你还得到了一个与目前情况相关的有用线索。</p>\n<p><strong>大失败</strong> 你想到的东西完全不对，或是得到了谬误百出，亦或是南辕北辙的线索。</p><h2 class=\"title\">范例回忆知识情景</h2>\n<p>以下情景是使用宗教或社群技能来回忆知识。</p>\n<ul>\n<li><strong>未受训</strong> 统治者的姓名，重要贵族，主要神祇</li>\n<li><strong>受训</strong> 大贵族世家的继承谱序，主要神祇的教义</li>\n<li><strong>专家</strong> 小贵族的家世，某一上古祭司的教导</li>\n<li><strong>大师</strong> 某一元素贵族的位阶，某一神祇在异界的神庙位置</li>\n<li><strong>传奇</strong> 某一灭亡已久的贵族末裔的存在，某一教会的秘密教义</li>\n</ul>"
         },
         "Refocus": {
             "name": "再聚能 Refocus",
@@ -802,7 +802,7 @@
         },
         "Repeat a Spell": {
             "name": "复唱法术 Repeat a Spell",
-            "description": "<p>你在以半速移动的同时，反复施放相同的法术。通常来说，该法术是个你希望在战斗发生时即获得该法术效果的戏法（cantrip），且此法术必须只使用2个或更少的动作就能施放。为了防止重复施法所带来的疲劳，你可能只会在某些异于寻常的情况发生时才会使用此探索行动。</p>\n<p>你还能用该探索行动来在一段时间内 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术} 或 @Compendium[pf2e.actionspf2e.XSGlLjI80LDCimAP]{维持启动} 。大多数此类法术或物品效果都可以维持10分钟，不过某些特定说明会注明此类效果能够维持不同的持续时间。</p>"
+            "description": "<p>你在以半速移动的同时，反复施放相同的法术。通常来说，该法术是个你希望在战斗发生时即获得该法术效果的戏法，且此法术必须只使用2个或更少的动作就能施放。为了防止重复施法所带来的疲劳，你可能只会在某些异于寻常的情况发生时才会使用此探索行动。</p>\n<p>你还能用该探索行动来在一段时间内 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术} 或 @Compendium[pf2e.actionspf2e.XSGlLjI80LDCimAP]{维持启动} 。大多数此类法术或物品效果都可以维持10分钟，不过某些特定说明会注明此类效果能够维持不同的持续时间。</p>"
         },
         "Request": {
             "name": "提出请求 Request",
@@ -822,7 +822,7 @@
         },
         "Retributive Strike": {
             "name": "报复打击 Retributive Strike",
-            "description": "<p><strong>触发</strong> 一名敌人伤害了你的盟友，并且他们都在你周围15尺的范围内。</p>\n<hr />\n<p>你保护你的盟友并痛击你的敌人。这位盟友在对抗触发这次报应打击的伤害时获得针对所有伤害的抗力，数值等同于2+你的等级。如果这名敌人在你的触及范围之内，你对其进行一次近战打击（Strike）。</p>"
+            "description": "<p><strong>触发</strong> 一名敌人伤害了你的盟友，并且他们都在你周围15尺的范围内。</p>\n<hr />\n<p>你保护你的盟友并痛击你的敌人。这位盟友在对抗触发这次报应打击的伤害时获得针对所有伤害的抗力，数值等同于2+你的等级。如果这名敌人在你的触及范围之内，你对其进行一次近战打击。</p>"
         },
         "Run Over": {
             "name": "Run Over",
@@ -838,7 +838,7 @@
         },
         "Search": {
             "name": "搜索 Search",
-            "description": "<p>你细致地 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 着密门（hidden doors）、隐藏的危害（concealed hazards）等事物。通常来说你可以作出有根据的推测（educated guess）来判断最好应该检查哪个位置并以半速进行搜索，但如果你想进行彻底搜索并确保自己检查过所有东西，则需要以不超过300尺/分钟的速度旅行，但是只有在你的速度不超过150尺/分钟时，才能够在自己移动进入对象范围内之前检查所有东西。你在进行搜索时总是能够以更慢的速度移动来更彻底地探寻你经过的区域，而 @Compendium[pf2e.feats-srd.GdZLxDtFXaQI3Fop]{迅速搜索 Expeditious Search} 专长可以提高这么做的最高速度。若你在搜索时遇到了密门、物品或危害，GM会尝试1次无消耗的秘密检定（free Secret Checks），来判断你是否注意到隐藏的物体或危害。若某个地点内具有许多对象可以进行搜索，那你就必须停下来并花费更多的时间来进行彻底的搜索。</p>"
+            "description": "<p>你细致地 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 着密门（hidden doors）、隐藏的危害（concealed hazards）等事物。通常来说你可以作出有根据的推测（educated guess）来判断最好应该检查哪个位置并以半速进行搜索，但如果你想进行彻底搜索并确保自己检查过所有东西，则需要以不超过300尺/分钟的速度旅行，但是只有在你的速度不超过150尺/分钟时，才能够在自己移动进入对象范围内之前检查所有东西。你在进行搜索时总是能够以更慢的速度移动来更彻底地探寻你经过的区域，而 @Compendium[pf2e.feats-srd.GdZLxDtFXaQI3Fop]{迅速搜索 Expeditious Search} 专长可以提高这么做的最高速度。若你在搜索时遇到了密门、物品或危害，GM会尝试一次无消耗的秘密检定（free Secret Checks），来判断你是否注意到隐藏的物体或危害。若某个地点内具有许多对象可以进行搜索，那你就必须停下来并花费更多的时间来进行彻底的搜索。</p>"
         },
         "Seek": {
             "name": "搜索 Seek",
@@ -886,11 +886,11 @@
         },
         "Shove": {
             "name": "推撞 Shove",
-            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你试图将敌人推开。尝试一个 <span data-pf2-action=\"shove\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 你可以将敌人打退10尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。</p>\n<p><strong>成功</strong> 你可以将敌人打退5尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态</p>"
+            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你试图将敌人推开。尝试一个 <span data-pf2-action=\"shove\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 你可以将敌人打退10尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。</p>\n<p><strong>成功</strong> 你可以将敌人打退5尺远。同时，你可以立刻跟着他跑动，但必须保持和它被击退相同的方向并移动相同的距离。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态</p>"
         },
         "Siegebreaker": {
             "name": "爆射破围 Siegebreaker",
-            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@Compendium[pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@Compendium[pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r {3d8}[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@Compendium[pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡（parry）特征则改为+2环境加值，这2个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@Compendium[pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@Compendium[pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r {3d8}[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@Compendium[pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这2个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
         },
         "Smoke Blending": {
             "name": "融身于烟 Smoke Blending",
@@ -898,7 +898,7 @@
         },
         "Sneak": {
             "name": "潜行 Sneak",
-            "description": "<p>你尝试保持 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{隐秘}状态，从一点移动到另一点而不被察觉。你可以在潜行状态下跑动（Stride，或是通过掘地，游泳，攀爬或飞行方式而非跑动，前提是你拥有这些移动方式）不超过你的移动速度一半的距离。</p>\n<p>如果你对于一个生物处于无踪状态且它没有可以用来观察你的方式（对于通常的生物来说，这些条件包括但不限于：你处于 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形}状态、观察你的生物 @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲}，或是你处于黑暗环境中但你的对手无法看穿黑暗）。如果你在潜行行动的检定上骰出大失败，你只会获得失败的结果。如果你不再对目标生物拥有掩蔽、高级掩蔽或是 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽}，你也仍然对其处于无踪状态。</p>\n<p>在你的移动结束时，GM暗骰你的 <span data-pf2-action=\"sneak\" data-pf2-glyph=\"A\">隐秘</span> 技能检定，并将其结果分别用来对抗每一个在你进行移动前对其视为拥有 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿} 或无踪状态的生物的察觉DC。如果你在潜行中的跑动动作一直没有使你离开任何掩蔽或高级掩蔽的遮挡，你可以对有遮挡的生物在潜行检定上获得+2（高级掩蔽+4）环境加值，但因为你在移动，你不能从 @Compendium[pf2e.actionspf2e.ust1jJSCZQUhBZIz]{找掩护} 动作中再获得额外的加值。如果在你结束潜行移动时，如果你对一个生物既不拥有隐蔽也不拥有掩蔽/高等掩蔽，你不需对其进行潜行检定——你自动对它视为 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。</p>\n<hr />\n<p><strong>成功</strong> 在你的移动期间和结束移动后你都对对方视为无踪状态。</p>\n<p>但如果你再进行躲藏、潜行、快步以外的动作，你会立刻变得可见。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及}，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意，但这样做通常会需要一个额外的隐秘检定。如果你说话或发出不适当的响亮噪音，你从无踪状态变为藏匿状态。</p>\n<p>如果其他生物对你使用 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 行动并使你对他从无踪变成藏匿，你需要成功的进行潜行行动才可能回到无踪状态。</p>\n<p><strong>失败</strong> 你发出声音或是留下蛛丝马迹，让观察者注意到有人在他们鼻子下面猫猫祟祟地行动——但他们还看不到你。在你的移动期间和结束移动后你都对对方视为藏匿状态。</p>\n<p><strong>大失败</strong> 你被发现了！在你的移动期间和结束移动后你都对对方视为可见状态。如果你处于隐形状态且对观察你的生物视为拥有隐匿，那么在你的移动期间和结束移动后你都对对方视为藏匿而非可见状态。</p>"
+            "description": "<p>你尝试保持 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{隐秘}状态，从一点移动到另一点而不被察觉。你可以在潜行状态下跑动（Stride，或是通过掘地，游泳，攀爬或飞行方式而非跑动，前提是你拥有这些移动方式）不超过你的移动速度一半的距离。</p>\n<p>如果你对于一个生物处于无踪状态且它没有可以用来观察你的方式（对于通常的生物来说，这些条件包括但不限于：你处于 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形}状态、观察你的生物 @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲}，或是你处于黑暗环境中但你的对手无法看穿黑暗）。如果你在潜行行动的检定上骰出大失败，你只会获得失败的结果。如果你不再对目标生物拥有掩蔽、高级掩蔽或是 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽}，你也仍然对其处于无踪状态。</p>\n<p>在你的移动结束时，GM暗骰你的 <span data-pf2-action=\"sneak\" data-pf2-glyph=\"A\">隐秘</span> 技能检定，并将其结果分别用来对抗每一个在你进行移动前对其视为拥有 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿} 或无踪状态的生物的察觉DC。如果你在潜行中的跑动动作一直没有使你离开任何掩蔽或高级掩蔽的遮挡，你可以对有遮挡的生物在潜行检定上获得+2（高级掩蔽+4）环境加值，但因为你在移动，你不能从 @Compendium[pf2e.actionspf2e.ust1jJSCZQUhBZIz]{找掩护} 动作中再获得额外的加值。如果在你结束潜行移动时，如果你对一个生物既不拥有隐蔽也不拥有掩蔽/高等掩蔽，你不需对其进行潜行检定——你自动对它视为 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。</p>\n<hr />\n<p><strong>成功</strong> 在你的移动期间和结束移动后你都对对方视为无踪状态。</p>\n<p>但如果你再进行躲藏、潜行、快步以外的动作，你会立刻变得可见。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意，但这样做通常会需要一个额外的隐秘检定。如果你说话或发出不适当的响亮噪音，你从无踪状态变为藏匿状态。</p>\n<p>如果其他生物对你使用 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 行动并使你对他从无踪变成藏匿，你需要成功的进行潜行行动才可能回到无踪状态。</p>\n<p><strong>失败</strong> 你发出声音或是留下蛛丝马迹，让观察者注意到有人在他们鼻子下面猫猫祟祟地行动——但他们还看不到你。在你的移动期间和结束移动后你都对对方视为藏匿状态。</p>\n<p><strong>大失败</strong> 你被发现了！在你的移动期间和结束移动后你都对对方视为可见状态。如果你处于隐形状态且对观察你的生物视为拥有隐匿，那么在你的移动期间和结束移动后你都对对方视为藏匿而非可见状态。</p>"
         },
         "Soaring Flight": {
             "name": "Soaring Flight",
@@ -910,7 +910,7 @@
         },
         "Spellstrike": {
             "name": "法术打击 Spellstrike",
-            "description": "<p><strong>频率</strong> 直到被再充能（recharged）（见下）</p>\n<hr />\n<p>你注入法术力量到拳头或剑尖中，以进行一次混合攻击。你施放（Cast a Spell）那些花费1或2个动作并需要一次法术攻击骰的法术。这个法术效应不会立刻显现，取而代之的是灌注到你的攻击中。使用武器或无武装攻击进行一次近战打击（Strike）。你的法术与攻击相结合，使用你的攻击骰结果来决定打击和法术两者的效果。在计算多重攻击减值时，这一动作被计算为两次攻击，但是你不会应用这一减值直到你完成法术打击后为止。灌注而入的法术能量赋予你的打击奥术（arcane）特征，使其魔法化（magical）。</p>\n<p>在你使用法术打击后，直到你使用一个具有专注（concentrate）特征的单动作（single action）来再充能（recharge）你的法术打击为止，你都不能再次使用。当你释放一个需要花费至少一个动作释放的汇聚法术（conflux spell）（p.40）时，你也可以再充能你的法术打击；释放一个其他类型的聚能法术不能再充能你的法术打击。</p>"
+            "description": "<p><strong>频率</strong> 直到被再充能（recharged）（见下）</p>\n<hr />\n<p>你注入法术力量到拳头或剑尖中，以进行一次混合攻击。你施放（Cast a Spell）那些花费1或2个动作并需要一次法术攻击骰的法术。这个法术效应不会立刻显现，取而代之的是灌注到你的攻击中。使用武器或无武装攻击进行一次近战打击。你的法术与攻击相结合，使用你的攻击骰结果来决定打击和法术两者的效果。在计算多重攻击减值时，这一动作被计算为两次攻击，但是你不会应用这一减值直到你完成法术打击后为止。灌注而入的法术能量赋予你的打击奥术特征，使其魔法化（magical）。</p>\n<p>在你使用法术打击后，直到你使用一个具有专注（concentrate）特征的单动作来再充能（recharge）你的法术打击为止，你都不能再次使用。当你释放一个需要花费至少一个动作释放的汇聚法术（conflux spell）（p.40）时，你也可以再充能你的法术打击；释放一个其他类型的聚能法术不能再充能你的法术打击。</p>"
         },
         "Spin Tale": {
             "name": "Spin Tale",
@@ -926,7 +926,7 @@
         },
         "Stand": {
             "name": "站立Stand",
-            "description": "<p>你从 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态中站起来。</p>"
+            "description": "<p>你从 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态中站起来。</p>"
         },
         "Steal": {
             "name": "盗窃 Steal",
@@ -981,7 +981,7 @@
         },
         "Take Cover": {
             "name": "寻找掩蔽 Take Cover",
-            "description": "<p><strong>需求</strong> 你处于掩蔽中、邻接能让你寻找掩蔽的事物、处于 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地}状态中。</p>\n<hr />\n<p>若你已有标准掩蔽，你改为获得强效掩蔽，这会给AC提供+4环境加值、给对抗区域效果的反射豁免+4环境加值、给 @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏}, @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行}和其它避开侦查的隐秘简单提供+4环境加值。其它状况下，你获得 @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{掩蔽}。这持续到你从当前位置移走、使用攻击动作、变为失去意识、以自由动作解除掩蔽状态。</p>"
+            "description": "<p><strong>需求</strong> 你处于掩蔽中、邻接能让你寻找掩蔽的事物、处于 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态中。</p>\n<hr />\n<p>若你已有标准掩蔽，你改为获得强效掩蔽，这会给AC提供+4环境加值、给对抗区域效果的反射豁免+4环境加值、给 @Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}, @Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行}和其它避开侦查的隐秘简单提供+4环境加值。其它状况下，你获得 @Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{掩蔽}。这持续到你从当前位置移走、使用攻击动作、变为失去意识、以自由动作解除掩蔽状态。</p>"
         },
         "Take a Breather": {
             "name": "Take a Breather",
@@ -1021,7 +1021,7 @@
         },
         "Track": {
             "name": "追踪 Track",
-            "description": "<p>你可以在使用陆地旅行速度（Travel Speed，见本书478页）半速移动的情况下，同时追踪目标的行踪。如果你成功的通过了一次追踪检定，那么你可以保持半速移动并同时追踪1小时。如果在某些情况下你必须在战斗遭遇中进行追踪，那么这个行动需要一个动作且失去探索关键字。如果情景较为紧急复杂，追踪检定的频率可能也会需要的更加频繁。具体的检定频率由GM决定。</p>\n<p>你需要在追踪开始，追踪持续进行的每一个小时，以及追踪路径上出现某些特别重要的变数时进行一次 <span data-pf2-action=\"track\">生存 Survival</span>技能检定。GM会根据踪迹的新鲜程度，天气状况以及地面的状况来设定合适的检定DC。</p>\n<hr />\n<p><strong>成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。</p>\n<p><strong>失败</strong> 你搞丢了目标留下的行踪，必须等1小时后才能再次尝试追踪。</p>\n<p><strong>大失败</strong>你完全搞丢了目标，必须等24小时后才能再次尝试追踪。</p>\n<h2 class=\"title\">范例追踪情景</h2>\n<ul>\n<li><strong>未受训</strong> 一支军队沿着大路开过的痕迹</li>\n<li><strong>受训</strong>比较新鲜的，一群熊在平原上袭击其他生物的痕迹</li>\n<li><strong>专家</strong>被雨水冲刷过后的，一只矫健的豹子穿越雨林留下的踪迹</li>\n<li><strong>大师</strong> 被大雪复盖的踪迹、微小的（如布布或更小的）生物留下的痕迹，或是像硬石板这样难以留下痕迹的表面上的生物踪迹</li>\n<li><strong>传奇</strong>变化不定，风暴肆虐的沙漠中一条古老通路，或是在暴风或暴雪中尝试追踪</li>\n</ul>"
+            "description": "<p>你可以在使用陆地旅行速度半速移动的情况下，同时追踪目标的行踪。如果你成功的通过了一次追踪检定，那么你可以保持半速移动并同时追踪1小时。如果在某些情况下你必须在战斗遭遇中进行追踪，那么这个行动需要一个动作且失去探索关键字。如果情景较为紧急复杂，追踪检定的频率可能也会需要的更加频繁。具体的检定频率由GM决定。</p>\n<p>你需要在追踪开始，追踪持续进行的每一个小时，以及追踪路径上出现某些特别重要的变数时进行一次 <span data-pf2-action=\"track\">生存 Survival</span>技能检定。GM会根据踪迹的新鲜程度，天气状况以及地面的状况来设定合适的检定DC。</p>\n<hr />\n<p><strong>成功</strong> 你找到了某些踪迹，或是能够继续稳定地追踪手头上的踪迹。</p>\n<p><strong>失败</strong> 你搞丢了目标留下的行踪，必须等1小时后才能再次尝试追踪。</p>\n<p><strong>大失败</strong>你完全搞丢了目标，必须等24小时后才能再次尝试追踪。</p>\n<h2 class=\"title\">范例追踪情景</h2>\n<ul>\n<li><strong>未受训</strong> 一支军队沿着大路开过的痕迹</li>\n<li><strong>受训</strong>比较新鲜的，一群熊在平原上袭击其他生物的痕迹</li>\n<li><strong>专家</strong>被雨水冲刷过后的，一只矫健的豹子穿越雨林留下的踪迹</li>\n<li><strong>大师</strong> 被大雪复盖的踪迹、微小的（如布布或更小的）生物留下的痕迹，或是像硬石板这样难以留下痕迹的表面上的生物踪迹</li>\n<li><strong>传奇</strong>变化不定，风暴肆虐的沙漠中一条古老通路，或是在暴风或暴雪中尝试追踪</li>\n</ul>"
         },
         "Treat Disease": {
             "name": "治疗疾病 Treat Disease",
@@ -1037,15 +1037,15 @@
         },
         "Trip": {
             "name": "摔绊 Trip",
-            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个 <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地} 状态，并承受 [[/r {1d6}[bludgeoning]]]{1d6点钝击伤害。}。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
+            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个 <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} 状态，并承受 [[/r {1d6}[bludgeoning]]]{1d6点钝击伤害。}。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
         },
         "Tumble Through": {
             "name": "翻滚 Tumble Through",
-            "description": "<p>你可以以最快不超过你的移动速度的速度跑动（Stride）。在此次移动中，你可以尝试穿越被一个敌人占据的空间。当你尝试进入该敌人占据的空间时，进行一次 <span data-pf2-action=\"tumbleThrough\" data-pf2-glyph=\"A\">特技</span> 检定，对抗该敌人的反射DC（Reflex DC）。根据进行尝试的具体环境，你可以使用 @Compendium[pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬}, @Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行}, @Compendium[pf2e.actionspf2e.c8TGiZ48ygoSPofx]{游泳}或是其他合适的行动代替跑动行动来发动翻滚尝试。</p>\n<hr />\n<p><strong>成功</strong> 你穿过敌人，它占据的方格对你视为困难地形（每移动5尺需要消耗10尺移动速度）。如果你的速度不足以完整地穿过敌人占据的空间，视为失败结果。</p>\n<p><strong>失败</strong> 你立刻结束移动，并且你可能触发敌人的反应动作（Reaction），如同你从开始尝试翻滚的方格移动离开一样。</p>"
+            "description": "<p>你可以以最快不超过你的移动速度的速度行走。在此次移动中，你可以尝试穿越被一个敌人占据的空间。当你尝试进入该敌人占据的空间时，进行一次 <span data-pf2-action=\"tumbleThrough\" data-pf2-glyph=\"A\">特技</span> 检定，对抗该敌人的反射DC（Reflex DC）。根据进行尝试的具体环境，你可以使用 @Compendium[pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬}, @Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行}, @Compendium[pf2e.actionspf2e.c8TGiZ48ygoSPofx]{游泳}或是其他合适的行动代替跑动行动来发动翻滚尝试。</p>\n<hr />\n<p><strong>成功</strong> 你穿过敌人，它占据的方格对你视为困难地形（每移动5尺需要消耗10尺移动速度）。如果你的速度不足以完整地穿过敌人占据的空间，视为失败结果。</p>\n<p><strong>失败</strong> 你立刻结束移动，并且你可能触发敌人的反应动作，如同你从开始尝试翻滚的方格移动离开一样。</p>"
         },
         "Upstage": {
             "name": "抢镜 Upstage",
-            "description": "<p><strong>触发</strong> 1名敌人尝试1次技能检定，且没有得到大成功</p>\n<hr />\n<p>在敌人已经尽了最大努力之后，你会给所有人展现真正的技巧。尝试1次检定，此次检定使用与触发此反应动作相同的技能。</p>\n<hr />\n<p><strong>大成功</strong> 你在攻击检定、察觉检定、豁免检定和技能检定上获得+1状态加值，这些加值持续至你的下个回合结束为止。</p>\n<p><strong>成功</strong> 同大成功，不过你只有在触发生物的技能检定失败时才会获得上述好处。</p>"
+            "description": "<p><strong>触发</strong> 一名敌人尝试一次技能检定，且没有得到大成功</p>\n<hr />\n<p>在敌人已经尽了最大努力之后，你会给所有人展现真正的技巧。尝试一次检定，此次检定使用与触发此反应动作相同的技能。</p>\n<hr />\n<p><strong>大成功</strong> 你在攻击检定、察觉检定、豁免检定和技能检定上获得+1状态加值，这些加值持续至你的下个回合结束为止。</p>\n<p><strong>成功</strong> 同大成功，不过你只有在触发生物的技能检定失败时才会获得上述好处。</p>"
         },
         "Visions of Sin": {
             "name": "Visions of Sin",
@@ -1073,10 +1073,10 @@
         },
         "Attack of Opportunity": {
             "name": "借机攻击 Attack of Opportunity",
-            "description": "<p><strong>触发</strong> 在你触及范围内的一个生物使用一个操作动作（manipulate action）或者移动动作，进行远程攻击，或者在使用移动动作中经过一个范围内的方格</p>\n<hr />\n<p>你攻击露出破绽的敌人。对触发此动作的目标进行一次普通攻击（Strike）。如果你的攻击发生重击，并且触发此动作的是一个操作动作，你令此动作中断。此次普通攻击不会计入你的多次攻击减值，并且你的多次攻击减值不应用于此次普通攻击上。</p>"
+            "description": "<p><strong>触发</strong> 在你触及范围内的一个生物使用一个操作动作或者移动动作，进行远程攻击，或者在使用移动动作中经过一个范围内的方格</p>\n<hr />\n<p>你攻击露出破绽的敌人。对触发此动作的目标进行一次普通打击。如果你的攻击发生重击，并且触发此动作的是一个操作动作，你令此动作中断。此次普通攻击不会计入你的多次攻击减值，并且你的多次攻击减值不应用于此次普通攻击上。</p>"
         },
         "Glimpse Vulnerability": {
-            "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 你正持握着你的奇具</p>\n<hr />\n<p><strong>效果</strong> 你瞥见了一处隐藏的弱点，然后通过加剧它来为你提供帮助。选择一个你能看见的生物。在你再次一瞥弱点之前，该目标在对抗你的无武装和武器打击（Strikes）时获得弱点2。</p>",
+            "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 你正持握着你的奇具</p>\n<hr />\n<p><strong>效果</strong> 你瞥见了一处隐藏的弱点，然后通过加剧它来为你提供帮助。选择一个你能看见的生物。在你再次一瞥弱点之前，该目标在对抗你的无武装和武器打击时获得弱点2。</p>",
             "name": "一瞥弱点 Glimpse Vulnerability"
         },
         "Calculate Threats": {
