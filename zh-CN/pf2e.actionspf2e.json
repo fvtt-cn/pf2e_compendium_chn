@@ -94,8 +94,8 @@
             "description": "<p><strong>频率</strong> once per day</p>\n<p><strong>触发</strong> You take 40 or more physical damage from a single attack</p>\n<hr />\n<p><strong>效果</strong> You discorporate into a whirling blizzard for up to 3 rounds. During this time, you gain resistance 10 to physical damage and weakness 10 to force damage. You gain a fly speed of 40 feet, but the only action you can take is to @Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{Fly}. The first time each round you enter another creature's space while discorporated, or the first time a creature enters your space, that creature takes [[/r {4d8}[cold]]]{4d8 cold damage} and must succeed at a Fortitude saving throw against your class DC or spell DC, whichever is higher, or else be @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}. At the start of your turn, you can end this effect as a free action.</p>\n<p>@Compendium[pf2e.feat-effects.JF2xCqL6t4UJZtUi]{Effect: Blizzard Evasion}</p>"
         },
         "Board": {
-            "name": "Board",
-            "description": "<p><strong>需求</strong> You are adjacent to a point of entry on the vehicle you are attempting to board.</p>\n<p>You board a vehicle through an open top, a door, a portal, or a hatch; if you're already on board, you can instead use this action to disembark into an empty space adjacent to the vehicle's point of entry. Using this action while the vehicle is in motion is challenging, requiring a successful Acrobatics or Athletics check with a DC equal to the vehicle's AC.</p>"
+            "name": "搭乘 Board",
+            "description": "<p><strong>需求</strong> 你与载具搭乘点相邻</p>\n<p>你通过敞篷、门、通道或舱口登上车辆；如果你已经在车上，你可以改为使用此动作下车到靠近车辆入口的空地。在车辆行驶时使用此动作具有挑战性，需要成功的特技或运动检定，DC等于车辆的AC。</p>"
         },
         "Boarding Assault": {
             "name": "登船袭击 Boarding Assault",
@@ -373,8 +373,8 @@
             "description": "<p>你一边渡步穿越战场，一边击倒途中的敌人。@Compendium[pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}一次，在此移动中任意一点攻击至多3次。每次攻击都必须指定一个不同的目标敌人并且需要使用单手火器、单手弩、单手近战武器或无武装攻击，每一次攻击都会正常计入多重攻击减值，但直到你完成全部的三次攻击前，你不会在这些攻击上承受多重攻击减值。你的移动不会触发任何反应动作。</p>"
         },
         "Drive": {
-            "name": "Drive",
-            "description": "<p><strong>需求</strong> You are piloting a vehicle. You pilot your vehicle to move.</p>\n<p>Decide how many actions you intend to spend before you begin Driving. The effects depend on the number of actions you spend. You can't Drive through spaces occupied by creatures, even if they are allies.</p>\n<p><span class=\"pf2-icon\">1</span> Attempt a piloting check. On a success, the vehicle moves up to its Speed and can turn normally. On a failure, the vehicle moves its Speed in a straight line. On a critical failure, the vehicle moves its Speed in a straight line and becomes uncontrolled</p>\n<p><span class=\"pf2-icon\">2 </span>(reckless) The vehicle moves up to twice its Speed in a straight line at the vehicle's current heading.</p>\n<p><span class=\"pf2-icon\">3</span> (reckless) You take a –5 penalty on your piloting check to maintain control of the vehicle. The vehicle moves up to three times its Speed in a straight line at the vehicle's current heading.</p>"
+            "name": "驾驶 Drive",
+            "description": "<p><strong>需求</strong> 你正在驾驶一辆载具，并驾驶它移动。</p>\n<p>在移动前，决定你准备在驾驶上使用几个动作。驾驶效果取决于消耗的动作数量。你无法驾驶通过被其他生物占据的空间，即便他们是你的盟友。</p>\n<p><span class=\"pf2-icon\">1</span> 尝试一次驾驶检定。成功时，载具移动等同于其移动速度的距离，可以正常转向。失败时，载具直线移动等同于其移动速度的距离。大失败时，载具直线以东等于其移动速度的距离，并且失去控制。</p>\n<p><span class=\"pf2-icon\">2 </span>(鲁莽) 载具向着当前行进方向，直线移动等于两倍其移动速度的距离。</p>\n<p><span class=\"pf2-icon\">3</span> (鲁莽) 你进行一次-5的驾驶检定，以维持对载具的控制。载具向着当前行进方向，直线移动等于三倍其移动速度的距离。</p>"
         },
         "Drop Prone": {
             "name": "趴下 Drop Prone",
@@ -390,7 +390,7 @@
         },
         "Eldritch Shot": {
             "name": "魔弹射击 Eldritch Shot",
-            "description": "<p><strong>需求</strong> 你正持用一把弓弩</p>\n<hr />\n<p>你@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Cast a Spell}，该法术要花费1或2个动作来施放，并且需要进行一次法术攻击检定。法术效果不会立刻产生，而是会灌入你正持握的弓中。</p>\n<p>使用这把弓作出一次打击。你的法术会随着弹药发射出去，使用你的攻击检定结果来同时判断打击和法术的效果。在判断你的多次攻击减值时，此行动被视为两次攻击，但是在你完成这两次攻击之后才会应用多次攻击减值。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把弓弩</p>\n<hr />\n<p>你@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Cast a Spell}，该法术要花费1或两个动作来施放，并且需要进行一次法术攻击检定。法术效果不会立刻产生，而是会灌入你正持握的弓中。</p>\n<p>使用这把弓作出一次打击。你的法术会随着弹药发射出去，使用你的攻击检定结果来同时判断打击和法术的效果。在判断你的多次攻击减值时，此行动被视为两次攻击，但是在你完成这两次攻击之后才会应用多次攻击减值。</p>"
         },
         "Encouraging Words": {
             "name": "Encouraging Words",
@@ -470,7 +470,7 @@
         },
         "Furious Strike": {
             "name": "狂怒打击 Furious Strike",
-            "description": "<p>你的幻灵将愤怒引导进一次狂怒的攻击。它进行一次近战打击，且在计算多次攻击罚值时记为两次攻击。如果这次打击命中，你的幻灵造成一个额外的武器伤害骰，并在伤害骰上获得+1环境加值。</p>\n<p>如果你有至少10级，提高到2个额外骰以及+2环境加值；如果你有至少18级，提高到3个额外骰以及+3环境加值。</p>"
+            "description": "<p>你的幻灵将愤怒引导进一次狂怒的攻击。它进行一次近战打击，且在计算多次攻击罚值时记为两次攻击。如果这次打击命中，你的幻灵造成一个额外的武器伤害骰，并在伤害骰上获得+1环境加值。</p>\n<p>如果你有至少10级，提高到两个额外骰以及+2环境加值；如果你有至少18级，提高到3个额外骰以及+3环境加值。</p>"
         },
         "Gather Information": {
             "name": "搜集信息 Gather Information",
@@ -642,7 +642,7 @@
         },
         "Mighty Rage": {
             "name": "强力狂暴 Mighty Rage",
-            "description": "<p><strong>触发</strong> 你在自己的回合内使用了@Compendium[pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{狂暴 Rage}动作。</p>\n<hr />\n<p>使用一个具有狂暴特征的动作。此外，你可以将用于触发的狂暴所耗费的动作数量提高到2个，从而改为使用一个具有“狂暴”特征的2动作行动。 </p>"
+            "description": "<p><strong>触发</strong> 你在自己的回合内使用了@Compendium[pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{狂暴 Rage}动作。</p>\n<hr />\n<p>使用一个具有狂暴特征的动作。此外，你可以将用于触发的狂暴所耗费的动作数量提高到两个，从而改为使用一个具有“狂暴”特征的2动作行动。 </p>"
         },
         "Mist Blending": {
             "name": "融身于雾 Mist Blending",
@@ -802,7 +802,7 @@
         },
         "Repeat a Spell": {
             "name": "复唱法术 Repeat a Spell",
-            "description": "<p>你在以半速移动的同时，反复施放相同的法术。通常来说，该法术是个你希望在战斗发生时即获得该法术效果的戏法，且此法术必须只使用2个或更少的动作就能施放。为了防止重复施法所带来的疲劳，你可能只会在某些异于寻常的情况发生时才会使用此探索行动。</p>\n<p>你还能用该探索行动来在一段时间内 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术} 或 @Compendium[pf2e.actionspf2e.XSGlLjI80LDCimAP]{维持启动} 。大多数此类法术或物品效果都可以维持10分钟，不过某些特定说明会注明此类效果能够维持不同的持续时间。</p>"
+            "description": "<p>你在以半速移动的同时，反复施放相同的法术。通常来说，该法术是个你希望在战斗发生时即获得该法术效果的戏法，且此法术必须只使用两个或更少的动作就能施放。为了防止重复施法所带来的疲劳，你可能只会在某些异于寻常的情况发生时才会使用此探索行动。</p>\n<p>你还能用该探索行动来在一段时间内 @Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术} 或 @Compendium[pf2e.actionspf2e.XSGlLjI80LDCimAP]{维持启动} 。大多数此类法术或物品效果都可以维持10分钟，不过某些特定说明会注明此类效果能够维持不同的持续时间。</p>"
         },
         "Request": {
             "name": "提出请求 Request",
@@ -825,8 +825,8 @@
             "description": "<p><strong>触发</strong> 一名敌人伤害了你的盟友，并且他们都在你周围15尺的范围内。</p>\n<hr />\n<p>你保护你的盟友并痛击你的敌人。这位盟友在对抗触发这次报应打击的伤害时获得针对所有伤害的抗力，数值等同于2+你的等级。如果这名敌人在你的触及范围之内，你对其进行一次近战打击。</p>"
         },
         "Run Over": {
-            "name": "Run Over",
-            "description": "<p><strong>需求</strong> You are piloting a vehicle.</p>\n<p>(reckless) You try to run over creatures with your vehicle, possibly also ramming one larger creature or object. If you maintain control of your vehicle, the vehicle moves up to twice its Speed in a straight line at the vehicle's current heading. You attempt to run over any creatures in your path two sizes smaller than the vehicle or smaller, and you can attempt to ram one target creature or object in your path one size smaller than the vehicle or larger.</p>\n<p>Each creature in your path, including a rammed target, takes the vehicle's collision damage (basic Reflex save at vehicle's collision DC). If the rammed target is a vehicle, its pilot can attempt a piloting check in place of this Reflex save, with the same results. If the target of your ram takes damage, you and your vehicle each take collision damage (no save) and your movement ends.</p>"
+            "name": "碾压 Run Over",
+            "description": "<p><strong>需求</strong> 你正在驾驶一辆载具</p>\n<p>(鲁莽) 你试图用你的载具碾过生物，可能同时撞到一个更大的生物或物体。如果你保持对载具的控制，载具会在当前行进方向直线上以两倍的速度移动。你尝试在你的行进路径中碾过任何比车辆小两个体型或更多的生物，并且你可以尝试撞击你行进路径上的一个比载具小一个体型或更多的生物或物体。</p>\n<p>每个你路径上的生物，包括被撞击生物都承受载具的碰撞伤害(基础反射豁免，使用载具的碰撞DC)。如果被撞击的目标是一辆载具，它的驾驶员可以进行一次驾驶检定取代反射豁免，不影响结果等级的判断。如果你撞击的目标受到伤害，你和你的载具均受到碰撞伤害（无豁免），且你的移动结束。</p>"
         },
         "Salt Wound": {
             "name": "伤口涂盐 Salt Wound",
@@ -890,7 +890,7 @@
         },
         "Siegebreaker": {
             "name": "爆射破围 Siegebreaker",
-            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@Compendium[pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@Compendium[pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r {3d8}[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@Compendium[pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这2个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@Compendium[pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@Compendium[pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r {3d8}[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@Compendium[pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这两个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
         },
         "Smoke Blending": {
             "name": "融身于烟 Smoke Blending",
@@ -910,7 +910,7 @@
         },
         "Spellstrike": {
             "name": "法术打击 Spellstrike",
-            "description": "<p><strong>频率</strong> 直到被再充能（recharged）（见下）</p>\n<hr />\n<p>你注入法术力量到拳头或剑尖中，以进行一次混合攻击。你施放（Cast a Spell）那些花费1或2个动作并需要一次法术攻击骰的法术。这个法术效应不会立刻显现，取而代之的是灌注到你的攻击中。使用武器或无武装攻击进行一次近战打击。你的法术与攻击相结合，使用你的攻击骰结果来决定打击和法术两者的效果。在计算多重攻击减值时，这一动作被计算为两次攻击，但是你不会应用这一减值直到你完成法术打击后为止。灌注而入的法术能量赋予你的打击奥术特征，使其魔法化（magical）。</p>\n<p>在你使用法术打击后，直到你使用一个具有专注（concentrate）特征的单动作来再充能（recharge）你的法术打击为止，你都不能再次使用。当你释放一个需要花费至少一个动作释放的汇聚法术（conflux spell）（p.40）时，你也可以再充能你的法术打击；释放一个其他类型的聚能法术不能再充能你的法术打击。</p>"
+            "description": "<p><strong>频率</strong> 直到被再充能（recharged）（见下）</p>\n<hr />\n<p>你注入法术力量到拳头或剑尖中，以进行一次混合攻击。你施放（Cast a Spell）那些花费1或两个动作并需要一次法术攻击骰的法术。这个法术效应不会立刻显现，取而代之的是灌注到你的攻击中。使用武器或无武装攻击进行一次近战打击。你的法术与攻击相结合，使用你的攻击骰结果来决定打击和法术两者的效果。在计算多重攻击减值时，这一动作被计算为两次攻击，但是你不会应用这一减值直到你完成法术打击后为止。灌注而入的法术能量赋予你的打击奥术特征，使其魔法化（magical）。</p>\n<p>在你使用法术打击后，直到你使用一个具有专注（concentrate）特征的单动作来再充能（recharge）你的法术打击为止，你都不能再次使用。当你释放一个需要花费至少一个动作释放的汇聚法术（conflux spell）（p.40）时，你也可以再充能你的法术打击；释放一个其他类型的聚能法术不能再充能你的法术打击。</p>"
         },
         "Spin Tale": {
             "name": "Spin Tale",
@@ -941,7 +941,8 @@
             "description": "<p><strong>需求</strong> 你的速度至少为10尺。</p>\n<hr />\n<p>你小心移动5尺。和大多数移动类型不同，快步不会触发那些因移动动作或进出格子而触发的反应动作，例如 @Compendium[pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{借机攻击}。</p>\n<p>你无法快步进入困难地形，也无法使用陆地速度之外的速度进行快步。</p>"
         },
         "Stop": {
-            "description": "<p><strong>需求</strong> You are piloting a vehicle in motion.</p>\n<p>You bring the vehicle to a stop.</p>"
+            "name": "停止 Stop",
+            "description": "<p><strong>需求</strong> 你是移动中载具的驾驶员。</p>\n<p>你使载具停止。</p>"
         },
         "Stride": {
             "name": "行走 Stride",
@@ -976,8 +977,8 @@
             "description": "<p><strong>频率</strong> 每日一次</p>\n<p><strong>需求</strong> 你正持用一件穿刺或挥砍武器</p>\n<hr />\n<p>你将尾巴上的毒素涂抹到一件穿刺或挥砍武器上。如果你的下个打击使用该武器命中并造成伤害，且该动作在你的下个回合结束前作出的话，你还会对目标造成@Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续毒素伤害}，数值等同于你的等级。 </p>"
         },
         "Take Control": {
-            "name": "Take Control",
-            "description": "<p><strong>需求</strong> You are aboard the vehicle and adjacent to its controls.</p>\n<p>You grab the reins, the wheel, or some other mechanism to control the vehicle. Attempt a piloting check; on a success, you become the vehicle's pilot, or regain control of the vehicle if it was uncontrolled. Some vehicles have complicated controls that cause this action to become a multi-action activity.</p>"
+            "name": "接管 Take Control",
+            "description": "<p><strong>需求</strong> 你已经登上载具，并与它的控制台相邻。</p>\n<p>你抓住缰绳、车轮或其他一些装置来控制载具。尝试驾驶检定；成功时，你成为载具的驾驶员，或者重新控制载具，如果它之前处于失控状态。一些载具的操控方式十分复杂，这种情况下接管动作将成为一个多动作行动。</p>"
         },
         "Take Cover": {
             "name": "寻找掩蔽 Take Cover",
@@ -1097,7 +1098,7 @@
         },
         "Unleash Psyche": {
             "name": "心力解放 Unleash Psyche",
-            "description": "<p><strong>触发</strong> 你的回合开始。</p>\n<hr />\n<p><strong>需求</strong> 你在一次遭遇中，你在上一回合施展过法术，并且你不处于@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied}状态。</p>\n<hr />\n<p>你唤起内心深处的力量，使得心能之力泉涌而出。你进入持续2轮的心力解放状态，或直到你@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，以先发生的为准。你不能主动解除你的心力解放。当你的心力被解放时，会出现以下效果。</p>\n<ul>\n<li>你时刻被你心能魔法的视觉表现所包围。</li>\n<li>当你施展伤害性的法术时，你在法术伤害骰上获得法术环级两倍的状态加值。这只适用于没有持续时间的法术和你心能者施法能力施放的法术。</li>\n<li>你可以使用具有心力特征的行动。在心力解放消退后，你的心灵必须从引导其全部力量的压力中恢复。你在2个回合内不能再次使用心力解放，并且在2个回合内陷入@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。</li>\n</ul>\n<p>@Compendium[pf2e.feature-effects.939OHjW9y8uCmDk3]{效果: 心力解放}</p>"
+            "description": "<p><strong>触发</strong> 你的回合开始。</p>\n<hr />\n<p><strong>需求</strong> 你在一次遭遇中，你在上一回合施展过法术，并且你不处于@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied}状态。</p>\n<hr />\n<p>你唤起内心深处的力量，使得心能之力泉涌而出。你进入持续2轮的心力解放状态，或直到你@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，以先发生的为准。你不能主动解除你的心力解放。当你的心力被解放时，会出现以下效果。</p>\n<ul>\n<li>你时刻被你心能魔法的视觉表现所包围。</li>\n<li>当你施展伤害性的法术时，你在法术伤害骰上获得法术环级两倍的状态加值。这只适用于没有持续时间的法术和你心能者施法能力施放的法术。</li>\n<li>你可以使用具有心力特征的行动。在心力解放消退后，你的心灵必须从引导其全部力量的压力中恢复。你在两个回合内不能再次使用心力解放，并且在两个回合内陷入@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。</li>\n</ul>\n<p>@Compendium[pf2e.feature-effects.939OHjW9y8uCmDk3]{效果: 心力解放}</p>"
         },
         "Amulet's Abeyance": {
             "name": "符止 Amulet's Abeyance",
