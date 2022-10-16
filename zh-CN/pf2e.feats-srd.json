@@ -14521,6 +14521,34 @@
         "Corpse Stench": {
             "name": "尸臭 Corpse Stench",
             "description": "<p>你的身体在@Template[type:emanation|distance:10]{半径10尺弥漫}区域散发出压倒一切的腐烂恶臭，在此范围内产生的味道恶心到让人呕吐。任何生物若在此灵光范围内开始其回合的话，则必须进行一次@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC)]豁免对抗你的职业DC或法术DC（以较高者为准），失败则会陷入@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，大失败时额外再加上@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。只要身处灵光范围内，生物就会在对抗疾病以及从恶心状态中恢复的豁免中承受-2环境减值。豁免成功的生物会在一分钟内临时免疫尸臭。</p>\n<p>@Compendium[pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{效果: 恶臭}</p>"
+        },
+        "Lich Dedication": {
+            "name": "巫妖入门 Lich Dedication",
+            "description": "<p>在多年的学习和精心计划后，你最终完成了命匣以容纳你的灵魂，并成功执行了仪式将自身转变成了一名巫妖。现在，即便是死亡和时间都无法阻止你继续研习和达成你的伟大夙愿。你获得不死特征和@Compendium[pf2e.ancestryfeatures.SAbzItAI4uwbdnQk]{基础不死增益 Basic Undead Benefits}。你的不死渴求是寻求知识。</p>\n<p>你得到一件容纳着你灵魂的独特<em>@Compendium[pf2e.equipment-srd.qFVPeeJ70B1u2n81]{命匣 Soul Cage}</em>魔法物品。每当你将要死亡，你的灵魂会逃回命匣以允许你再度重构。只要你的命匣存在，你就不会真正被摧毁。</p>\n<p><strong>特殊</strong> 直至选取另外两个巫妖变体的专长之前，你无法再选择任何其他入门专长。</p>"
+        },
+        "Drain Soul Cage": {
+            "name": "汲取命匣 Drain Soul Cage",
+            "description": "<p>你将命匣转变为你的连结物品，使你可以利用其中充沛的魔力。每天一次，当你使用@Compendium[pf2e.actionspf2e.v82XtjAVN4ffgVVR]{汲取连结物品 Drain Bonded Item}时，你可以选择你的法术书中任意你能够施放的法术，即便你当天没有准备或施放过它。你的命匣在你使用汲取连结物品时不需要在你身上。如果你的命匣破碎或被摧毁，你不能使用汲取命匣。即便你每天可以汲取连接物品超过一次，例如你是一名通才法师，你仍然只能每天一次选择一个你没有准备和施放过的法术。</p>"
+        },
+        "Enshroud Soul Cage": {
+            "name": "掩藏命匣 Enshroud Soul Cage",
+            "description": "<p>你将命匣放在一团不断扩大的混淆幻术和保护性防护法术中，来将它从你敌人眼中隐藏。你讲命匣伪装成一件与命匣同负载的非魔法物品，它获得<em>@Compendium[pf2e.spells-srd.PRrZ7anETWPm90YY]{魔法灵光 Magic Aura}</em>和<em>@Compendium[pf2e.spells-srd.EoKBlgf6Smt8opaU]{回避侦测 Nondetection}</em>法术效果。这些效果具有无限持续时间，并升阶至你等级的一半向上取整，使用你的法术DC来对抗任何对其的反制尝试。魔法灵光让你的命匣看起来如同非魔法物品，在对待你自己的命匣时你忽略所有这些法术效果。当你的命匣受到伤害时，你在心灵上会感到警觉。</p>"
+        },
+        "Hand of the Lich": {
+            "name": "巫妖之手 Hand of the Lich",
+            "description": "<p>负能量增强了你的不死形态，让你真正地触摸到了生命的对立面。你获得@Compendium[pf2e.ancestryfeatures.YGk41WV42aTM7CQV]{进阶不死增益 Advanced Undead Benefits}。你的拳头伤害骰从1d4变为1d6，造成负能量伤害而非钝击伤害，失去非致命特征。你的拳头获得魔法特征。</p>\n<p>当你用拳头打击对一个活着的生物造成重击时，该生物陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到其下回合结束，除非它成功通过一次对抗你法术DC的@Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)]豁免。这是一个重击专精效果。</p>"
+        },
+        "Bolster Soul Cage": {
+            "name": "加固命匣 Bolster Soul Cage",
+            "description": "<p>你不断努力来加强和完善你的命匣，对它进行了加固。你的命匣具有等同于你等级的硬度，和四倍于你等级的HP。你的命匣重构你身体的时间从1d10天减少到[[/r 1d6 #重构身体]]{1d6天}。</p>\n<p>在20级时，你的命匣重构你身体的时间减少至[[/r 2d12+12 #重构身体所需小时]]小时。</p>"
+        },
+        "Spell Gem": {
+            "name": "法术石 Spell Gem",
+            "description": "<p>受到有时会出现的你衰退的半巫妖同类启发，你在额头上嵌入一枚宝石，融合进你坏死的肉体中。这枚宝石经过特殊打磨以容纳下列法术中的一个：<em>@Compendium[pf2e.spells-srd.yrZA4k2VAqEP8xx7]{排斥术 Repulsion}</em>，<em>@Compendium[pf2e.spells-srd.r784cIz17eWujtQj]{探知 Scrying}</em>，或<em>@Compendium[pf2e.spells-srd.uqlxMQQeSGWEVjki]{真视术 True Seeing}</em>。你必须在接受这个专长时就选择你的宝石中容纳何种法术；改变法术需要重训专长。每天一次，你可以汲取宝石中的魔力不消耗法术位来施放法术。</p>\n<p>18级时，你可以将你所选的法术升阶至7环。20级时，你可以将你所选的法术升阶至8环；无论你选择的是何种法术，你都可以改为汲取宝石中的魔力不消耗法术位来施放8环的法术反转（spell turning）。</p>"
+        },
+        "Frightful Aura": {
+            "name": "恐惧灵光 Frightful Aura",
+            "description": "<p>你被一种明显的威压感包围，具有让看见你的人感到恐惧的力量。灵光为@Template[type:emanation|distance:15]{15尺弥漫}范围。任何进入灵光或在灵光中结束回合的敌人必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)]豁免来对抗你的法术DC和职业DC中更高的一项。</p>\n<p><strong>成功</strong> 生物不受影响且对你的恐惧灵光暂时免疫1分钟。</p>\n<p><strong>失败</strong> 生物陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 生物陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>"
         }
     }
 }
