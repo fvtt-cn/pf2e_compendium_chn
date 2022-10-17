@@ -3477,8 +3477,8 @@
             "description": "<p>该防护法术会将对你施放的法术反射给其施法者。当一个法术指定你为目标时，你可以花费一个反应动作来尝试反射它。此处使用反制该法术的规则，但如果该法术成功被反制，该法术会反射给施法者。无论反制尝试是否成功，法术反转在那之后结束。法术反转无法影响没有目标的法术（例如区域法术）。如果法术反转反射了一个同样处于法术反转影响下的施法者，其法术反转亦可以尝试将它自己的法术再反射给你；如果它们如此做，其反制检定自动成功。</p>"
         },
         "Spellmaster's Ward": {
-            "name": "Spellmaster's Ward",
-            "description": "<p><strong>Duration</strong> sustained up to 1 minute</p>\n<hr />\n<p>You create one or more glowing protective runes that revolve around you. For each additional action you use when Casting the Spell, increase the number of runes you create by one, to a maximum of three runes for 3 actions.</p>\n<p>When you next take damage from a spell, a rune is expended to prevent [[/r {2d6}[damage]]]{2d6 of that spell's damage}. If damage from the triggering spell remains, additional runes are expended until the damage is completely negated, or until all runes have been spent, whichever comes first.</p>\n<hr />\n<p><strong>升阶 (+1)</strong> Each rune prevents an additional [[/r {1}[damage]]]{1 damage}.</p>"
+            "name": "术法大师的防护 Spellmaster's Ward",
+            "description": "<p><strong>持续时间</strong> 维持至多1分钟。</p>\n<hr />\n<p>你创造一个或多个环绕你的保护性发光符文。当你施法时，每使用1个动作就增加1个符文，3动作版本最多增加3个符文。</p>\n<p>当你下次将要受到某个法术的伤害时，将消耗一枚符文来阻挡来自该法术的[[/r {2d6}[damage]]]{来自该法术的2d6伤害}。如果触发的法术依然有伤害，则会消耗额外的符文，直到伤害被完全抵消，或所有符文耗尽为止，以先发生的为准。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 每个符文能阻挡额外[[/r {1}[damage]]]{1点伤害}。</p>"
         },
         "Spellwrack": {
             "name": "法力迸裂 Spellwrack",
@@ -3976,8 +3976,8 @@
             "description": "<p>当你接触目标时，一个月亮的标志在其额头浮现，散发出月亮的光芒。该目标在20尺半径中产生昏暗光照（dim light）他也会根据月相获得好处，月相从新月开始，并在其每个回合结束时转换到下个月相。</p>\n<ul>\n<li><strong>新月 New Moon</strong> 目标不受任何好处。</li>\n<li><strong>上弦月 Waxing Moon</strong> 目标在攻击骰上获得+1状态加值，在伤害骰上获得+4状态加值。</li>\n<li><strong>满月 Full Moon</strong> 目标在攻击骰、AC、和豁免骰上获得+1状态加值，在伤害骰上获得+4状态加值。</li>\n<li><strong>下弦月 Waning Moon</strong> 目标在AC和豁免骰上获得+1状态加值。在这个月相之后，回到新月。</li>\n</ul>"
         },
         "Transcribe Moment": {
-            "name": "Transcribe Moment",
-            "description": "<p>You instantly create a small, permanent scroll that contains a magically precise written description of your current surroundings in every direction. Any creature who spends 1 minute to read the scroll-written in a language of your choice that you know-immediately sees and experiences your surroundings during the moment that you recorded (including whatever events transpired that round) exactly as you experienced it. This depiction records only what you can sense yourself. For example, if you can't see invisible creatures, the depiction doesn't reveal them even to a reader who could normally see them; a reader can't use their Perception to notice details you missed, but they can attempt a check to Recall Knowledge based on what they just experienced if they have knowledge that you lack. You can have multiple scrolls from transcribe moment in existence at the same time, up to a number equal to your Intelligence modifier. If you Cast the Spell again while already at the maximum number of scrolls, choose one of the current scrolls to lose its magic, then create the new one.</p>"
+            "name": "记录瞬间 Transcribe Moment",
+            "description": "<p>你立刻就能创造出一个小的、永久存在的卷轴，其中用魔法记录下对当前环境各个方面的精准文字描述。任何花费1分钟阅读卷轴（由你所选择的一种语言写成）的生物，能立即看见并体验你在那一刻记录下的周遭一切（包括那轮时间内所发生的任何事）。这种描述只记录了你自己的感官所感受到的东西。举个例子，如果你无法看见隐形生物，你的描述也不会透露他们的存在，哪怕读者本身能识破隐形；读者也无法通过察觉检定来发现那些被你遗漏额细节，但他们能对刚体验的事情进行一次回忆知识，并且可以使用你自身不具备的知识。你可以同时拥有多个卷轴，直到和你智力调整值相同。如果你在卷轴数量达到上限之后再次施展这个法术，你可以选择毁掉一个现存的卷轴，然后再创建一个新的。</p>"
         },
         "Transmute Rock And Mud": {
             "name": "石泥转化 Transmute Rock And Mud",
@@ -4760,6 +4760,10 @@
         "Waking Dream": {
             "name": "清明幻梦 Waking Dream",
             "description": "<p>你用生动且梦幻一般的景象扰乱了目标的思想，故而使其难以区分眼前的威胁是真实的还是想象中的。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 幻象分散了目标的注意力，在一轮内其他生物对于目标而言都是@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，你不能维持该法术以增加其持续时间。</p>\n<p><strong>失败</strong> 目标处于@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}状态。除了真实存在的生物外，目标也会疯狂地攻击空气并试图击退梦境中的幻象。目标在其回合结束时可以再次投掷豁免以结束困惑状态。即使困惑状态提早结束，在之后一轮内其他生物对于目标而言都是隐蔽状态。</p>\n<p><strong>大失败</strong> 同失败，但是目标回合结束时不能投掷豁免以提早结束困惑状态。</p>"
+        },
+        "Familiar Form": {
+            "name": "魔宠形态 Familiar Form",
+            "description": "<p>你将自己变成施法者的魔宠一般的超小型动物。你获得法术害兽形态（pest form）的效果，将其升阶至魔宠形态相同的环级。但是，你只能变成蝙蝠、猫、渡鸦、蛇或其他能充当施法者魔宠的超小型动物。</p>\n<p>当你在此形态下，尽管会受到变形战斗形态的限制，但你依然可以施放不超过1环的法术，并且只能是没有材料成分的法术。你依然无法在害兽形态下进行任何打击或其他攻击动作。</p>\n<hr />\n<p><strong>升阶 (6环) </strong> 你保留施放不超过2环法术的能力，而不是1环。但是你依然只能施放没有材料成分的法术。此外，魔宠形态的持续时间增加到10分钟。</p>\n<p><strong>升阶 (8环)</strong> 你保留施放不超过3环法术的能力，而不是1环。但是你依然只能施放没有材料成分的法术。此外，魔宠形态的持续时间增加到10分钟。</p>"
         }
     }
 }
