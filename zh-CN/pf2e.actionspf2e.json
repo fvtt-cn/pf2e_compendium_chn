@@ -1175,6 +1175,30 @@
         "Lay Down Arms": {
             "name": "卸下手臂 Lay Down Arms",
             "description": "<p>你把手臂扯下来，将其无害地从你身上分离开来，并丢进相邻的方格内。你也可以使用该动作重新接上已经分离的手臂，但前提是它要与你相邻；该肢体可以立即如常产生功效。若分离的肢体的生命值降低至0点，则需要10分钟才能重新接上，以取代原本的单动作。</p>"
+        },
+        "Assume a Role": {
+            "name": "代入身份 Assume a Role",
+            "description": "<p><strong>需求</strong> 在最近3天内，你已花费至少1小时研究一个你打算复制其身份的生物。这包括直接见面、跟踪、监视、利用魔法观察或其他方法以便于你研究该身份，只要信息来源是可让你看见其即可。</p>\n<hr />\n<p><strong>效果</strong> 你又快又准地学会如何完美模仿这个凡人身份或是模仿得足够逼真。你所选择扮演的身份可以有多种形式——从厨师、清洁工、图书管理员到邪教成员、牧师或公爵都可——但你模仿得只是一个身份，而非一个具体的人。</p>\n<p>你在@Compendium[pf2e.actionspf2e.AJstokjdG6iDjVjE]{乔装 Impersonate}成目标身份的技能检定以及在此身份中的所有欺骗技能检定都获得+1环境加值。该动作依旧会花费你在执行乔装动作时所需的时间。此外，你选择一个与你所模仿的身份相对应的学识技能（例如农夫对应农业学识）。当你处于模仿该身份的状态时，你在该学识技能上获得+1环境加值，若你在该学识技能上未受训，你可以在该技能中将你的等级作为你的熟练加值。在执行该动作的24小时后，若你研究另一个身份或是选择中止继续执行该动作，都会令该动作中止。</p>"
+        },
+        "Binding Vow": {
+            "name": "约束誓言 Binding Vow",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你正式的说出一句约束誓言，借此约束自己的行为。随着你吐出誓言，超自然的力量流过你的身体并蔓延到你周围，所有在场且听到誓言的都从本质上理解了这句誓言确实约束了你。违背誓言对你来说是禁忌，如果你自愿违背了誓言，你失去所有立契者带来的增益，直到你履行了你的誓言；如果你不可能履行，你需要参加一次赎罪术Atone仪式。誓言无法防止非自愿的违背，也无法用来规避心灵控制魔法、困惑、或类似的，你没有完全按照自己的意愿执行的动作。约束誓言在你成功履行它之前都不会终止。即使你死了，誓言也仍会在你复活之后约束你。誓言不会强迫你进行像牺牲自己这样荒唐的极端行为以履行你的誓言，除非你特别发誓了要走向极端。尝试通过做出自私的承诺（例如向盟友发誓你会杀掉某个你原本就想杀掉的人）以推翻你的约束誓言本身就是对你誓言的违背，如同你试图推翻你做出的其他誓言一样（例如那些来自立契者专长或神卫准则的誓言）。当你为履行你的誓言而直接进行请求或@Compendium[pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{胁迫 Coerce}时，你对任何知晓你的誓言的生物在你的检定中获得+1环境加值。</p>"
+        },
+        "Dragon Breath": {
+            "name": "龙息 Dragon Breath",
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 你深深地吸了一口气，喷出一股线状或锥状的强力吐息，十分类似你与之签订契约的巨龙。如果巨龙拥有锥形吐息武器，你的吐息武器是@Template[type:cone|distance:30]{30尺锥形}。如果他有线形吐息武器，你的吐息武器是@Template[type:line|distance:60]{60尺线形}。如果他有爆发形状的吐息武器，你的吐息武器是60尺内的@Template[type:burst|distance:10]{10尺爆发}。无论形状为何，都会造成[[/r (@actor.level)d6]]{每等级1d6点伤害}，伤害类型与巨龙的吐息武器相同，并有@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]豁免，使用你职业DC或法术DC中更高的DC。该动作拥有和你与之签订契约的巨龙所拥有的吐息武器相同的特征。</p>"
+        },
+        "Expel Maelstrom": {
+            "name": "驱逐漩涡 Expel Maelstrom",
+            "description": "<p><strong>需求</strong> 你处于诅咒漩涡状态</p>\n<hr />\n<p><strong>效果</strong> 你将漩涡从你体内驱逐出去，将它的能量送往60尺内一个不幸生物的体内。你的诅咒漩涡状态终止。其结果基于该生物的意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响，诅咒的能量无害地消散。</p>\n<p><strong>成功</strong> 该生物接纳了漩涡的怒火。他在所有豁免骰和技能检定上承受-1状态减值，持续1分钟。</p>\n<p><strong>失败</strong> 漩涡深深地打击了该生物的灵魂。它在所有豁免骰和技能检定上承受-2状态减值，持续10分钟。</p>\n<p><strong>大失败</strong> 漩涡将该生物推向彻底的厄运，然后钻入它的灵魂。如同失败，但该生物也必须在它的下一次豁免骰或技能检定中投骰两次，并选择更低的结果；这是一个厄运效果。</p>"
+        },
+        "Psychic Defense": {
+            "name": "心能防御 Psychic Defense",
+            "description": "<p><strong>触发</strong> 你的对手使用一种心能显化现象对抗你。</p>\n<p><strong>需求</strong> 你处于心灵决斗中，并具有心能集中状态。</p>\n<hr />\n<p>你获得与你心能集中状态相应的增益效果对抗触发的显化现象。随后你的心能集中状态被消耗。</p>\n<p><strong>顿悟铠甲(察觉) Armor of Insight (Perception)</strong> 感知到来临的攻击，你获得数值等于你等级一半的心灵伤害抗力（最小为1）对抗触发的效应。如果你在察觉上具有大师熟练度，则抗力变为双倍，如果为传奇熟练度，则为三倍。</p>\n<p><strong>移情并轨(交涉) Empathic Orbit (Diplomacy)</strong> 展现同理之心，你在攻击者心中播撒怀疑的种子，减弱他们心灵决斗的决心。直到其回合结束前，对手获得@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}状态，如果你在交涉上具有传奇熟练度，则为@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。</p>\n<p><strong>愤怒利矛(威吓) Ire's Spear (Intimidation)</strong> 你的心中燃起熊熊怒火，对伤害你的人进行反击。如果显化现象对你造成伤害，对手受到数值等于其对你所使用的显化现象反制等级的伤害。如果你在威吓上具有大师熟练度，则抗力变为双倍，如果为传奇熟练度，则为三倍。</p>\n<p><strong>理性迷宫(神秘) Rational Labyrinth (Occultism)</strong> 将攻击理性分析拆解，你重整心灵防御，让其成为迷惑攻击的谜题。你的意志豁免和意志DC获得+2状态加值，如果触发效果具有情绪特征则为+4状态加值。</p>\n<p><strong>感观幻想(欺骗) Sensory Phantasm (Deception)</strong> 利用你的诡计，你通过与敌人的心灵链接传输心灵幻想，使你的身形难以确定。直到其回合结束前，你相对敌人获得@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}。</p>"
+        },
+        "Recenter": {
+            "name": "再集中 Recenter",
+            "description": "<p><strong>需求</strong> 你处于心能决斗中，并且在你所选心能集中状态对应的技能上受训。</p>\n<hr />\n<p>你获得了与你所选情绪对应的心能集中状态。如果你已经处于心能集中状态，你失去旧的心能集中状态，同时获得新的状态。</p>"
         }
     }
 }
