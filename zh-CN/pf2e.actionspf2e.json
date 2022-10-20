@@ -54,8 +54,8 @@
             "description": "<p><strong>触发</strong> 你处于坠落中。</p>\n<p><strong>需求</strong> 你拥有飞行速度。</p>\n<hr />\n<p>你尝试一次特技检定来缓冲坠落。DC通常为15，但根据风力风向或其它环境因素，DC可以被提高。</p>\n<hr />\n<p><strong>成功</strong> 你正常轻轻落地，不受到这次坠落伤害。</p>"
         },
         "Automaton Aim": {
-            "name": "Automaton Aim",
-            "description": "<p>You steady your body and observe the events of the battlefield to maximize the range of your next shot. You reduce the penalty for firing into your weapon's second range increment from -2 to 0 for the next ranged attack you make this turn. You can use this action a second time in the same turn to reduce the penalty from firing into your weapon's third range increment from -4 to 0 for the next ranged attack you make this turn.</p>"
+            "name": "灵导械瞄准 Automaton Aim",
+            "description": "<p>你稳定自身躯体并观察战场上事态来最大化你下次射击的最大射程。本轮中，你下次使用武器在第二射程增量内的远程攻击射击减值从 -2 降到 0。你可以在同一轮中再次使用这个动作，使本轮中武器的下次第三射程增量内的远程攻击射击减值从 -4 降到 0。</p>"
         },
         "Avert Gaze": {
             "name": "转移目光 Avert Gaze",
@@ -82,8 +82,8 @@
             "description": "<p>你作出一次优雅且致命的攻击。作出一次打击；若命中且你的武器符合@Compendium[pf2e.classfeatures.RQH6vigvhmiYKKjg]{精确打击 Precise Strike}的先决条件，那么你会通过精确打击造成完整的[[/r {1d6}]]{1d6点伤害}。</p>"
         },
         "Beast's Charge": {
-            "name": "Beast's Charge",
-            "description": "<p>Your eidolon rushes forward, using its momentum to increase the power of its attack. Your eidolon Strides twice and then Strikes. If the eidolon moved at least 20 feet away from its starting position and moved entirely in a straight line, it gains a +1 circumstance bonus to this attack roll.</p>"
+            "name": "野兽冲锋 Beast's Charge",
+            "description": "<p>你的幻灵向前冲刺，并借助动能增加幻灵的攻击的力量。你的幻灵行走两次，并在之后进行打击，只要幻灵从起始位置远离了至少20尺，且完全走在一条直线上，则这次攻击骰上获得+1环境加值。</p>"
         },
         "Bend Time": {
             "name": "扭曲时间 Bend Time",
@@ -110,60 +110,60 @@
             "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals 1d6 damage to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r (ceil(@actor.level/2))d6]]{Levelled Damage}</p>"
         },
         "Breath Weapon (Acid) (Cone)": {
-            "name": "Breath Weapon (Acid) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[acid]]]{1d6 acid damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[acid]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(酸液锥形) Breath Weapon (Acid) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Acid) (Line)": {
-            "name": "Breath Weapon (Acid) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[acid]]]{1d6 acid damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[acid]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(酸液线形) Breath Weapon (Acid) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r {1d6}[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Cone)": {
-            "name": "Breath Weapon (Cold) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[cold]]]{1d6 cold damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[cold]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(寒冷锥形) Breath Weapon (Cold) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Line)": {
-            "name": "Breath Weapon (Cold) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[cold]]]{1d6 cold damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[cold]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(寒冷线形) Breath Weapon (Cold) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r {1d6}[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Cone)": {
-            "name": "Breath Weapon (Electricity) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[electricity]]]{1d6 electricity damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[electricity]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(电击锥形) Breath Weapon (Electricity) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Line)": {
-            "name": "Breath Weapon (Electricity) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[electricity]]]{1d6 electricity damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[electricity]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(电击线形) Breath Weapon (Electricity) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[/r {1d6}[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Cone)": {
-            "name": "Breath Weapon (Fire) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[fire]]]{1d6 fire damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[fire]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(火焰锥形) Breath Weapon (Fire) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Line)": {
-            "name": "Breath Weapon (Fire) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[fire]]]{1d6 fire damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[fire]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(火焰线形) Breath Weapon (Fire) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r {1d6}[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Cone)": {
-            "name": "Breath Weapon (Negative) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[negative]]]{1d6 negative damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[negative]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(负能量锥形) Breath Weapon (Negative) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Line)": {
-            "name": "Breath Weapon (Negative) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[negative]]]{1d6 negative damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[negative]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(负能量线形) Breath Weapon (Negative) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r {1d6}[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Cone)": {
-            "name": "Breath Weapon (Piercing) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[piercing]]]{1d6 piercing damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[piercing]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(穿刺锥形) Breath Weapon (Piercing) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Line)": {
-            "name": "Breath Weapon (Piercing) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[piercing]]]{1d6 piercing damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[piercing]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(穿刺线形) Breath Weapon (Piercing) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r {1d6}[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Cone)": {
-            "name": "Breath Weapon (Poison) (Cone)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[poison]]]{1d6 poison damage} to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[poison]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(毒素锥形) Breath Weapon (Poison) (Cone)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r {1d6}[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Line)": {
-            "name": "Breath Weapon (Poison) (Line)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[poison]]]{1d6 poison damage} to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[poison]]]{Levelled Damage}</p>"
+            "name": "喷吐武器(毒素线形) Breath Weapon (Poison) (Line)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r {1d6}[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Bullet Dancer Stance": {
             "name": "弹舞架式 Bullet Dancer Stance",
@@ -357,16 +357,16 @@
             "description": "<p><strong>需求</strong> 你并不免疫电击伤害</p>\n<p><strong>触发</strong> 一个距你不超过30尺的生物被一个电击效果作为目标，或位于电击效果的范围中</p>\n<hr />\n<p><strong>效果</strong> 你将电击引向自己来保护目标。如果触发的效果需要选取目标，则你代替触发生物成为新的目标。如果触发的效果是个范围效果，则它会从触发生物的空间跳转到你所在的空间。这不会影响被电击效果当做目标的其他生物，或位于电击效果范围内的其他生物。你将自动被电击效果命中，或在对抗该效果的豁免检定中自动失败。你在[[/r 1d4 #rounds]]{1d4 轮}内无法再次吸引闪电。</p>"
         },
         "Draconic Frenzy": {
-            "name": "Draconic Frenzy",
-            "description": "<p>Your eidolon makes one Strike with their primary unarmed attack and two Strikes with their secondary unarmed attack (in any order). If any of these attacks critically hits an enemy, your eidolon instantly recovers the use of their Breath Weapon.</p>"
+            "name": "龙之狂怒 Draconic Frenzy",
+            "description": "<p>你的幻灵用主要无武装攻击进行一次打击，并用次要无武装攻击进行两次打击（顺序任意）。如果这些攻击中的任意一个对敌人造成重击，幻灵立刻恢复喷吐武器的使用能力。</p>"
         },
         "Drain Bonded Item": {
             "name": "汲取连结物品 Drain Bonded Item",
             "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你释放你携带着的连结物品中储存的能量。在你的回合中，你会获得施放一个你今天有准备并且已经放过的法术的能力，并且无须使用法术位。你还是需要@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Cast the Spell}并满足法术的其他需求。</p>"
         },
         "Dream Research": {
-            "name": "Dream Research",
-            "description": "<p><strong>触发</strong> You fall asleep within 5 miles of Xarwin Manor.</p>\n<p><strong>频率</strong> once per 12 hours</p>\n<hr />\n<p>While you sleep, you experience dreams that verge on nightmares. In these dreams, your mind drifts from your soul, and everything you know feels like it's being drawn up into the dark places between the stars to be devoured. During the dream, you can concentrate on one research topic you've unlocked that you haven't fully investigated. If you choose a topic for which the party has already discovered all research thresholds, you can immediately switch to a different topic.</p>\n<p>The skill you use and the DC for the check depend on the topic, as detailed in that topic's Dreams venue. If you're not dreaming within the manor grounds, the spiritual link to the malevolence is lessened and you take a –2 status penalty to the check.</p>\n<hr />\n<p><strong>大成功</strong> You gain 2 RP.</p>\n<p><strong>成功</strong> You gain 1 RP.</p>\n<p><strong>大失败</strong> You peer too far into the malevolence, which notices your attempt. You manage to break the mental link just before you lose some memories to its ravenous appetite. Increase your malevolence condition value by 1.</p>"
+            "name": "梦中研究 Dream Research",
+            "description": "<p><strong>触发</strong> 你在夏尔文庄园5 英里范围内睡着了。</p>\n<p><strong>频率</strong> 每12 小时一次</p>\n<hr />\n<p>当你入眠时，你会经历那些近乎梦魇一般的噩梦。在这些梦里，你感觉你的心智被从灵魂中抽离，你所知的一切都仿佛被星辰间黑暗的宇宙吞噬。在梦境里，你可以专注于某个尚未研究完成的课题。如果队友在梦中研究完了这个课题，你可以立即切换为另一个课题。</p>\n<p>你所使用的技能和DC 依据每个课题而有所不同，详见每个课题的梦境节点。如果你不是在庄园内部做梦，和咒怨的心灵连接就会变弱，你的研究检定会承受-2 减值。</p>\n<hr />\n<p><strong>大成功</strong> 你获得2 RP。</p>\n<p><strong>成功</strong> 你获得1 RP。</p>\n<p><strong>大失败</strong> 你对咒怨的探究过于深入了，它已盯上了你。在你的一部分记忆被它贪婪地吞噬之前，你必须设法打破心灵连接。你的咒怨状态值上升1 点。</p>"
         },
         "Drifter's Wake": {
             "name": "漫步觉醒 Drifter's Wake",
@@ -381,8 +381,8 @@
             "description": "<p>你变为 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>"
         },
         "Dutiful Retaliation": {
-            "name": "Dutiful Retaliation",
-            "description": "<p><strong>触发</strong> An enemy within 15 feet of you hits you with a Strike and deals damage to you.</p>\n<p><strong>需求</strong> Your eidolon is within 15 feet of you.</p>\n<p>Your eidolon instinctively flashes with ectoplasmic energy, allowing them to strike back against an enemy who dares to harm you. Your eidolon makes a melee unarmed Strike against the triggering enemy, even if that enemy isn't within your eidolon's reach.</p>"
+            "name": "尽忠反击 Dutiful Retaliation",
+            "description": "<p><strong>触发</strong> 离你15尺内的一名敌人用一次打击命中了你，并对你造成了伤害</p>\n<p><strong>需求</strong> 你的幻灵在你的15尺范围内</p>\n<p>你的幻灵本能地放出灵质能量，允许他对胆敢伤害你的敌人回敬一次打击。你的幻灵对触发的敌人进行一次近战无武装打击，即使该敌人不在幻灵的触及内。</p>"
         },
         "Earn Income": {
             "name": "赚取收入 Earn Income",
@@ -429,8 +429,8 @@
             "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你尝试一次技能检定，且还未掷骰。</p>\n<hr />\n<p><strong>效果</strong> 骰两次技能检定，取较高的结果。</p>"
         },
         "Field of Roots": {
-            "name": "Field of Roots",
-            "description": "<p>Your eidolon extends its roots underground to entangle and possibly damage all foes nearby. All enemies within your eidolon's reach take damage of the same type and amount as your eidolon's most damaging Strike, depending on their Reflex saves. Any ongoing effects of the save last until the enemy either Escapes or leaves your eidolon's reach.</p>\n<p>After using Field of Roots, your eidolon is @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} until it takes a single action, which has the manipulate trait, to detach from the ground; this also ends any remaining effects on enemies from Field of Roots.</p>\n<hr />\n<p><strong>大成功</strong> The enemy is unaffected.</p>\n<p><strong>成功</strong> The enemy takes no damage, but takes a -10 foot circumstance penalty to its Speeds.</p>\n<p><strong>失败</strong> The enemy takes half damage, takes a -10-foot circumstance penalty to its Speeds, and, at the end of each of its turns, takes half damage again.</p>\n<p><strong>大失败</strong> The enemy is immobilized, takes full damage, and, at the end of each of its turns, takes full damage again.</p>"
+            "name": "根生领域 Field of Roots",
+            "description": "<p>你的幻灵将根植入地底，纠缠并可能伤害所有附近的敌人。所有在幻灵触及内的敌人承受伤害，类型和数值相当于幻灵伤害最高的打击，且具体效果根据反射豁免结果确定。任何持续性的豁免效果持续到敌人成功逃脱或离开了幻灵的触及。</p>\n<p>使用根生领域后，你的幻灵陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它进行了一个具有操作特征的单动作与地面分离；这也会终止敌人身上来自根生领域的剩余效果。</p>\n<hr />\n<p><strong>大成功</strong> 敌人不受影响。</p>\n<p><strong>成功</strong> 敌人不承受伤害，但在速度上承受-10尺环境罚值。</p>\n<p><strong>失败</strong> 敌人承受一半的伤害，速度承受-10尺环境罚值，以及，在他的每个回合结束时，再次承受一半的伤害。</p>\n<p><strong>大失败</strong> 敌人被禁足，承受完整的伤害，以及，在他的每个回合结束时，再次承受完整的伤害。</p>"
         },
         "Fight with Fear": {
             "name": "恐惧为武 Fight with Fear",
@@ -533,8 +533,8 @@
             "description": "<p>你乔装改扮成另一个人，或是其他一个你想要易容成的特定角色或什么东西。你需要拥有一副 @Compendium[pf2e.equipment-srd.Jvp0x2Sc82WVpExT]{易容工具包}和10分钟时间才能为自己进行足够精细的化妆。如果你只是需要简单的改扮一下而不是需要打扮成某个特定的人，GM可以考虑降低这些要求。</p>\n<p>在通常情况下，其他生物有可能通过 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 动作进行一次察觉检定来对抗你的欺骗DC来尝试看穿你的伪装。如果你在乔装时和另一个生物发生直接的互动，那么GM则是暗骰你的 <span data-pf2-action=\"impersonate\">欺骗</span> 检定来对抗对方的察觉DC看对方是否看破你的伪装。如果和你交流的生物对于你乔装的那个人特别熟悉，GM可能会为他看破你伪装的检定给予加值，或是即使你并未直接与他们互动也必须进行暗骰的欺骗检定。</p>\n<hr />\n<p><strong>成功</strong> 你成功蒙骗了对方，让他误以为你是你乔装的那个人。如果你的行为在之后产生显著的变化，你可能会需要进行新的欺骗检定。</p>\n<p><strong>失败</strong> 对方不相信你伪装的身份。</p>\n<p><strong>大失败</strong> 对方不相信你伪装的身份。如果他认识你，他立刻知道是你在冒充他人。</p>"
         },
         "Instinctive Obfuscation": {
-            "name": "Instinctive Obfuscation",
-            "description": "<p><strong>Prerequisites</strong> At least one arcane or occult innate spell gained from a gnome heritage or gnome ancestry feat</p>\n<p><strong>频率</strong> Once per day</p>\n<p><strong>触发</strong> You are attacked by a foe</p>\n<hr />\n<p>The magic within you manifests as a natural reaction to threats. You gain the effects of <em>@Compendium[pf2e.spells-srd.j8vIoIEWElvpwkcI]{Mirror Image}</em> but with two images instead of three. The tradition of this action matches the tradition of your gnome ancestry options.</p>"
+            "name": "应激重影 Instinctive Obfuscation",
+            "description": "<p><strong>先决条件</strong> 你至少从侏儒传承或侏儒族裔专长获取一个奥术或异能内在法术</p>\n<p><strong>频率</strong> 每日一次</p>\n<p><strong>触发</strong> 你被一名敌人攻击</p>\n<hr />\n<p>你体内的魔力对威胁产生了直觉性的反应。你获得<em>@Compendium[pf2e.spells-srd.j8vIoIEWElvpwkcI]{镜影术 Mirror Image}</em>的效果，但仅有2个幻象以取代原本的3个。此行动的根源与你在用于先决条件中的侏儒族裔选项所给的根源相符。</p>"
         },
         "Interact": {
             "name": "交互 Interact",
@@ -561,8 +561,8 @@
             "description": "<p><strong>触发</strong> 你准备对一个神术效果投掷豁免，但尚未掷骰。</p>\n<hr />\n<p>你超越了触发能力的效果，拒绝受其伤害。直到你的下回合开始，你在面对触发此能力，以及任何你尝试抵抗的神术效果，豁免掷骰都获得+1环境加值。</p>"
         },
         "Iron Command": {
-            "name": "Iron Command",
-            "description": "<p><strong>触发</strong> An enemy within 15 feet damages you</p>\n<hr />\n<p><strong>效果</strong> You put an impertinent foe who dared harm you in their proper place. You command your enemy to kneel before you in obedience. If they dare to refuse, they must pay the price in pain and anguish. The foe must choose one of the following options.</p>\n<ul>\n<li>The enemy kneels, dropping @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} as a free action.</li>\n<li>The enemy refuses, and you deal [[/r {1d6}[mental]]]{1d6 mental damage} to it. This damage increases to [[/r {2d6}[mental]]]{2d6 mental damage} at 5th level, [[/r {3d6}[mental]]]{3d6 mental damage} at 9th level, [[/r {4d6}[mental]]]{4d6 mental damage} at 12th level, [[/r {5d6}[mental]]]{5d6 mental damage} at 16th level, and [[/r {6d6}[mental]]]{6d6 mental damage} at 19th level.</li>\n</ul>\n<p>In addition, your Strikes against the triggering creature deal [[/r {1}]]{1 extra damage} until the end of your next turn. You choose whether the damage type is evil or negative each time you use this reaction. This extra damage increases to [[/r {2}]]{2 extra damage} at 9th level and [[/r {3}]]{3 extra damage} at 16th level.</p>"
+            "name": "残酷纪律 Iron Command",
+            "description": "<p><strong>触发</strong> 一个敌人伤害了你，并且他在你周围15尺的范围内。</p>\n<hr />\n<p><strong>效果</strong> 你让那个胆敢冒犯伤害你的敌人认清自己的身分。你命令你的敌人向你跪拜，向你臣服。如果他们胆坦拒绝，他们必须付出痛苦和折磨的代价。敌人必须选择下面一种效果： </p>\n<ul>\n<li>敌人跪拜，用一个自由动作进入@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n<li>敌人拒绝，你对他造成[[/r {1d6}[mental]]]{1d6心灵伤害}。伤害5级变成[[/r {2d6}[mental]]]{2d6心灵伤害}、9级变成[[/r {3d6}[mental]]]{3d6心灵伤害} 、12级变成[/r {4d6}[mental]]]{4d6心灵伤害}、16级变成[[/r {5d6}[mental]]]{5d6心灵伤害}， 19级变成[[/r {6d6}[mental]]]{6d6心灵伤害}。</li>\n</ul>\n<p>此外，直到你下一回合结束，你对触发生物的打击额外造成[[/r {1}]]{1点伤害}。你每次使用这个反应动作都要选择伤害类型是邪恶还是负能量。9级时这个额外伤害变成[[/r {2}]]{2点伤害}，16级变成[[/r {3}]]{3点伤害}。</p>"
         },
         "Jinx": {
             "name": "霉运招来 Jinx",
@@ -701,8 +701,8 @@
             "description": "<p><strong>Requirement</strong> You are a conversant or lore-speaker.</p>\n<hr />\n<p>You identify something interesting in the field and perform special research on it. This requires an appropriate check, which the GM will describe when the opportunity arises. The results of the check vary. While they typically include all the benefits of the Study activity, some opportunities for Practical Research also offer unique benefits, such as access to new character options.</p>"
         },
         "Primal Roar": {
-            "name": "Primal Roar",
-            "description": "<p>Your eidolon unleashes a primal roar or other such terrifying noise that fits your eidolon's form. Your eidolon attempts Intimidation checks to @Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} each enemy that can hear the roar; these Demoralize attempts don't take any penalty for not sharing a language.</p>"
+            "name": "原始咆哮 Primal Roar",
+            "description": "<p>你的幻灵释放出原始的怒吼或其他与幻灵形态相符的令人恐惧的噪音。你的幻灵对能听见咆哮的30尺内的每个敌人进行威吓检定以@Compendium[pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。这次挫败士气不会因语言不通而承受罚值。</p>"
         },
         "Prophecy's Pawn": {
             "name": "预言之卒 Prophecy's Pawn",
@@ -741,8 +741,8 @@
             "description": "<p><strong>先决条件</strong> 交涉、威吓或表演技能受训</p>\n<hr />\n<p>你花1分钟鼓励你的盟友。虽然此行动通常有听觉与语言特征，若你以表演技能执行此行动，则GM可调整该次行动的特征使之符合你的表演类型的特征。</p>\n<p>进行DC15的技能检定。GM可依照情境调整此DC，例如试图振励才刚刚屈辱大败的盟友。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>成功</strong> 你可持续鼓励该盟友直到耗时满10分钟。若你如此做，则该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>大失败</strong> 该盟友承受[[/r {1d8}[mental]]]{1d8心灵伤害}，此伤害只会扣减耐力值，永不影响生命值。</p>"
         },
         "Rampaging Ferocity": {
-            "name": "Rampaging Ferocity",
-            "description": "<p><strong>触发</strong> You use @Compendium[pf2e.feats-srd.PlhPpdwIV0rIAJ8K]{Orc Ferocity}</p>\n<hr />\n<p>You lash out viciously even as you fend off death. Make a single melee Strike. If this Strike brings a foe to 0 Hit Points, this activation of Orc Ferocity doesn't count against its frequency.</p>"
+            "name": "决死蛮勇 Rampaging Ferocity",
+            "description": "<p><strong>触发</strong> 你使用@Compendium[pf2e.feats-srd.PlhPpdwIV0rIAJ8K]{兽人凶猛 Orc Ferocity}</p>\n<hr />\n<p>即便在弥留之际，你也能够进行凶猛的回击。作出单次近战打击。若此次打击使得某个敌人的生命值降至0点，此次兽人凶猛的激活就不算消耗了它的每日使用次数。</p>"
         },
         "Ready": {
             "name": "准备 Ready",
@@ -845,12 +845,12 @@
             "description": "<p>你搜索一块区域中的生物或物体。若你搜索的是生物，选择一块区域。若精确感官允许，GM可以允许你搜索视觉线内@Template[type:cone|distance:30]或@Template[type:burst|distance:15]范围。若所选区域过远，你可能会承受减值。</p>\n<p>若你使用搜索动作寻找物体（例如密门或危害），你最多能搜索临近你的一个10尺见方的区域。若你搜索的是特别杂乱的区域，GM可以让你的搜索是一个行动，需要花费更多动作甚至数分钟乃至小时来进行。</p>\n<p>GM为你进行一次秘密 <span data-pf2-action=\"seek\" data-pf2-glyph=\"A\">察觉 Perception</span> 检定，将检定结果和区域内所有 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 和 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden} 生物的隐秘DC、区域内所有可被搜索出物体的察觉DC（由GM自定或由 @Compendium[pf2e.actionspf2e.qVNVSmsgpKFGk9hV]{隐藏物件 Concealing the Object}). 若你使用的是模糊感官或某效果阻止目标变为 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}（例如 (such as <em>@Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形术 Invisible}</em>），搜索到的生物就依然保持藏匿状态而不会变为可见。</p>\n<hr />\n<p><strong>大成功</strong> 若你搜索生物，所有你对其大成功的无踪或藏匿的生物对你变为可见。若你搜索物体，你得知其位置。</p>\n<p><strong>成功</strong> 若你搜索生物，所有你对其成功的无踪生物对你变为藏匿，所有你对其成功的藏匿生物对你变为可见。若你搜索物体，你得知其位置或获得一些线索，具体由GM判断。</p>"
         },
         "Seething Frenzy": {
-            "name": "Seething Frenzy",
-            "description": "<p>Your eidolon's fury boils over into a reckless, out-of-control frenzy. While frenzied, your eidolon is affected by <em>boost eidolon</em> and gains temporary Hit Points equal to your level, but it takes a -2 penalty to AC. Your eidolon can't voluntarily end the frenzy or start another frenzy while in the frenzy.</p>\n<p>The frenzy lasts for 1 minute, after which it's @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} for 1 minute and can't start another frenzy for 1 minute.</p>"
+            "name": "沸腾狂怒 Seething Frenzy",
+            "description": "<p>你的幻灵的愤怒沸腾成了一种鲁莽、失控的狂怒。狂怒中，你的幻灵受到<em>激励幻灵</em>的影响，并获得等同于你等级的临时生命值，但在AC上承受-2罚值。你的幻灵无法自愿终止狂怒，或者在狂怒中开始另一个狂怒。</p>\n<p>暴怒持续1分钟，之后它会@Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}1分钟，而且在1分钟内无法开始另一个狂怒。</p>"
         },
         "Selfish Shield": {
-            "name": "Selfish Shield",
-            "description": "<p><strong>触发</strong> An enemy within 15 feet damages you</p>\n<hr />\n<p>Your self-interest keeps you safe. You gain resistance against the triggering damage equal to 2 + half your level, regardless of damage type.</p>\n<p>In addition, your Strikes against the triggering creature deal [[/r {1}]]{1 damage} extra damage until the end of your next turn. You choose whether this extra damage is evil or negative each time you use this reaction. This extra damage increases to [[/r {2}]]{2 damage} at 9th level and [[/r {3}]]{3 damage} at 16th level.</p>"
+            "name": "自私卫盾 Selfish Shield",
+            "description": "<p><strong>触发</strong> 一个敌人伤害了你，并且他都在你周围15尺的范围内。</p>\n<hr />\n<p>你极其自私，只顾自己。你在对抗触发条件的伤害时获得2+你等级一半数值得抗力，无论伤害类型为何。</p>\n<p>此外，直到你下一回合结束，你对触发生物的打击额外造成[[/r {1}]]{1点伤害}。你每次使用这个反应动作都要选择伤害类型是邪恶还是负能量。9级时这个额外伤害变成[[/r {2}]]{2} ，16级变成[[/r {3}]]{3}。</p>"
         },
         "Sense Direction": {
             "name": "辨别方向 Sense Direction",
@@ -901,8 +901,8 @@
             "description": "<p>你尝试保持 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{隐秘}状态，从一点移动到另一点而不被察觉。你可以在潜行状态下跑动（Stride，或是通过掘地，游泳，攀爬或飞行方式而非跑动，前提是你拥有这些移动方式）不超过你的移动速度一半的距离。</p>\n<p>如果你对于一个生物处于无踪状态且它没有可以用来观察你的方式（对于通常的生物来说，这些条件包括但不限于：你处于 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形}状态、观察你的生物 @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲}，或是你处于黑暗环境中但你的对手无法看穿黑暗）。如果你在潜行行动的检定上骰出大失败，你只会获得失败的结果。如果你不再对目标生物拥有掩蔽、高级掩蔽或是 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽}，你也仍然对其处于无踪状态。</p>\n<p>在你的移动结束时，GM暗骰你的 <span data-pf2-action=\"sneak\" data-pf2-glyph=\"A\">隐秘</span> 技能检定，并将其结果分别用来对抗每一个在你进行移动前对其视为拥有 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿} 或无踪状态的生物的察觉DC。如果你在潜行中的跑动动作一直没有使你离开任何掩蔽或高级掩蔽的遮挡，你可以对有遮挡的生物在潜行检定上获得+2（高级掩蔽+4）环境加值，但因为你在移动，你不能从 @Compendium[pf2e.actionspf2e.ust1jJSCZQUhBZIz]{找掩护} 动作中再获得额外的加值。如果在你结束潜行移动时，如果你对一个生物既不拥有隐蔽也不拥有掩蔽/高等掩蔽，你不需对其进行潜行检定——你自动对它视为 @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见}。</p>\n<hr />\n<p><strong>成功</strong> 在你的移动期间和结束移动后你都对对方视为无踪状态。</p>\n<p>但如果你再进行躲藏、潜行、快步以外的动作，你会立刻变得可见。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意，但这样做通常会需要一个额外的隐秘检定。如果你说话或发出不适当的响亮噪音，你从无踪状态变为藏匿状态。</p>\n<p>如果其他生物对你使用 @Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索} 行动并使你对他从无踪变成藏匿，你需要成功的进行潜行行动才可能回到无踪状态。</p>\n<p><strong>失败</strong> 你发出声音或是留下蛛丝马迹，让观察者注意到有人在他们鼻子下面猫猫祟祟地行动——但他们还看不到你。在你的移动期间和结束移动后你都对对方视为藏匿状态。</p>\n<p><strong>大失败</strong> 你被发现了！在你的移动期间和结束移动后你都对对方视为可见状态。如果你处于隐形状态且对观察你的生物视为拥有隐匿，那么在你的移动期间和结束移动后你都对对方视为藏匿而非可见状态。</p>"
         },
         "Soaring Flight": {
-            "name": "Soaring Flight",
-            "description": "<p><strong>频率</strong> Once per day</p>\n<hr />\n<p>To be a tengu is to be unburdened by the concerns of the world below. You grow a pair of magical wings or expand your existing ones. For 5 minutes, you gain a @Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{Fly} Speed equal to your land Speed or 20 feet, whichever is greater.</p>"
+            "name": "振翅冲天 Soaring Flight",
+            "description": "<p><strong>频率</strong> 每日一次</p>\n<hr />\n<p>身为天狗怎可被脚下地面给束缚。你召出魔法羽翼，或是使既存的翅膀延伸。你在5分钟的期间内获得等同于陆地速度或20英尺的@Compendium[pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Fly}速度，两者取高。</p>"
         },
         "Spellsling": {
             "name": "抛射法术 Spellsling",
@@ -997,8 +997,8 @@
             "description": "<p><strong>触发</strong> 你投掷先攻骰。</p>\n<hr />\n<p>你以闪电般的速度应对任何麻烦，恰到好处地调整自己的位置。你的先攻检定获得+2环境加值，你可以进行交互动作掏出一把单手火器或单手弩。作为你第一个回合的第一个行动，你可以以自由动作@Compendium[pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{快步 Step}至多10尺。</p>"
         },
         "Tendril Strike": {
-            "name": "Tendril Strike",
-            "description": "<p>Stretching to extend its body to its limits, your eidolon attacks a foe that would normally be beyond its reach. Your eidolon makes a melee unarmed Strike, increasing its reach by 5 feet for that Strike.</p>\n<p>If the unarmed attack has the disarm, shove, or trip trait, the eidolon can use the corresponding action instead of a Strike.</p>"
+            "name": "藤条打击 Tendril Strike",
+            "description": "<p>你的幻灵将身体伸展到极限，攻击通常无法触及到的敌人。你的幻灵进行一次近战无武装打击，将这次打击的触及延伸5尺。</p>\n<p>如果这个无武装打击具有卸武、猛推或摔绊特征，幻灵也可以使用对应的动作取代打击。</p>"
         },
         "That's My Number": {
             "name": "就这个数！ That's My Number",
@@ -1049,8 +1049,8 @@
             "description": "<p><strong>触发</strong> 一名敌人尝试一次技能检定，且没有得到大成功</p>\n<hr />\n<p>在敌人已经尽了最大努力之后，你会给所有人展现真正的技巧。尝试一次检定，此次检定使用与触发此反应动作相同的技能。</p>\n<hr />\n<p><strong>大成功</strong> 你在攻击检定、察觉检定、豁免检定和技能检定上获得+1状态加值，这些加值持续至你的下个回合结束为止。</p>\n<p><strong>成功</strong> 同大成功，不过你只有在触发生物的技能检定失败时才会获得上述好处。</p>"
         },
         "Visions of Sin": {
-            "name": "Visions of Sin",
-            "description": "<p><strong>频率</strong> once per 10 minutes</p>\n<p>Your eidolon summons images of its sin into the mind of a target creature within 30 feet, tormenting and confusing the target. The target must attempt a Will save against your spell DC with the following effects. The effects last until the end of your next turn, but your eidolon can use a single action, which has the concentrate trait, to extend the effects until the end of your next turn (like Sustaining a Spell), to a maximum duration of 1 minute.</p>\n<p>If the target is evil, it takes a -2 circumstance penalty to its save. Regardless of whether it succeeds, the target becomes temporarily immune for 1 day.</p>\n<hr />\n<p><strong>大成功</strong> The target is unaffected.</p>\n<p><strong>成功</strong> The target can't use reactions.</p>\n<p><strong>失败</strong> The target is @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>\n<p><strong>大失败</strong> As failure, and the target is also @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round. The confusion can't be extended, but the other effects can.</p>"
+            "name": "罪恶异象 Visions of Sin",
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<p>你的幻灵在30尺内1个目标生物的心中召唤出其罪恶的景象，折磨并扰乱目标。目标必须进行一个意志豁免对抗你的法术DC，效果如下所示。该效果持续到你的下一回合结束，但你的幻灵可以使用1个具有专注特征的单动作将效果延长到你的再下一个回合结束（如维持法术），直到1分钟的最大持续时间。 </p>\n<p>如果目标邪恶，则在豁免骰中承受-2环境罚值。无论是否成功，目标都获得1天的临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标无法使用反应。</p>\n<p><strong>失败</strong> 目标陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}而且无法使用反应</p>\n<p><strong>大失败</strong> 和失败一样，而且目标也@Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。困惑无法被延长，但其他效果可以。</p>"
         },
         "Vital Shot": {
             "name": "要害射击 Vital Shot",
@@ -1061,16 +1061,16 @@
             "description": "<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>触发</strong> 你尝试一次对抗魔法效果的豁免检定，但还未掷骰。</p>\n<hr />\n<p><strong>效果</strong> 你呼唤身上怪异的保护印记的力量，它闪出耀眼的光芒，而后慢慢黯淡。你触发此能力的豁免检定获得+2环境加值，如果该效果是诅咒，则为+3环境加值。</p>"
         },
         "Whirlwind Maul": {
-            "name": "Whirlwind Maul",
-            "description": "<p>Your eidolon lashes out in all directions. It makes a melee unarmed Strike against up to four enemies within reach. It can choose different unarmed attacks for each enemy. Each attack counts toward your multiple attack penalty, but you don't increase your penalty until the eidolon has made all its attacks.</p>"
+            "name": "旋风撕咬 Whirlwind Maul",
+            "description": "<p>你的幻灵对所有方向同时发动攻击。它对触及内的最多4名敌人进行1次近战无武装打击。幻灵可以对每个敌人选择不同的无武装攻击。每次攻击都会算入你的多重攻击罚值，但直到幻灵完成全部攻击之前，罚值都不会提升。</p>"
         },
         "Wish for Luck": {
             "name": "期望好运 Wish for Luck",
             "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 进行攻击检定，豁免，或技能检定时</p>\n<hr />\n<p><strong>效果</strong> 你大声祈愿自己成功。在检定中骰两次并采取较高的结果。</p>"
         },
         "Wyrm's Breath": {
-            "name": "Wyrm's Breath",
-            "description": "<p><strong>频率</strong> once per minute</p>\n<p>Your eidolon gathers the power of the mightiest wyrms to make its magical breath even more spectacular. If your eidolon's next action is to use Breath Weapon, both the number of damage dice and area of the Breath Weapon are doubled.</p>"
+            "name": "巨龙吐息 Wyrm's Breath",
+            "description": "<p><strong>频率</strong> 每分钟一次</p>\n<p>你的幻灵聚集最强大的巨龙的力量，以令魔法喷吐变得更壮观。如果你的幻灵的下一个动作是使用喷吐武器，喷吐武器的伤害和范围都加倍。</p>"
         },
         "Attack of Opportunity": {
             "name": "借机攻击 Attack of Opportunity",
@@ -1210,6 +1210,102 @@
         },
         "Steel Your Resolve": {
             "name": "破釜沉舟 Steel Your Resolve"
+        },
+        "Breath Weapon (Riding Drake)": {
+            "name": "喷吐武器(骑乘龙兽) Breath Weapon (Riding Drake)",
+            "description": "<p>骑乘龙兽喷出@Template[type:cone|distance:30]{30尺锥形}的火焰，对区域内的所有生物（基础反射豁免）造成[[/r ((ceil(@actor.level/2))d6)[fire]]]{每2个龙兽等级1d6点火焰伤害}。该能力基于受训熟练等级计算DC并使用龙兽的体质调整值，若龙兽被特化（specialization）则基于专家熟练等级计算DC。</p>"
+        },
+        "Bribe Contact": {
+            "name": "贿赂联络人 Bribe Contact",
+            "description": "<p><strong>开销</strong> 贿赂的价值最少为表10-9：基于等级的团队财富（CRB P509）中每个额外PC货币列中金额的1/10。将金额加倍会在检定上获得+2环境加值。</p>\n<p><strong>需求</strong> 你已成功获得一个联系人。你向联络人行贿，并让他以某种方式为渗透提供帮助。尝试一次困难或非常困难的唬骗或交涉检定。</p>\n<hr />\n<p><strong>成功</strong> 联络人接受了贿赂，你获得1EP。</p>\n<p><strong>失败</strong> 你认为你成功贿赂了联络人，并获得1EP。但实际上该联系人将未遂的贿赂告诉了敌方，从而为渗透行动增加了1AP。只要满足故事的需要，GM可以在在渗透行动中的任意时刻透露此EP无法获得好处。</p>\n<p><strong>大失败</strong> 如同失败，但增加2AP。</p>\n<hr />\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>NPC等级</th>\n<th>最低</th>\n<th>+2加值</th>\n<th>NPC等级</th>\n<th>最低</th>\n<th>+2加值</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1 gp</td>\n<td>2 gp</td>\n<td>11</td>\n<td>70 gp</td>\n<td>140 gp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>1 gp, 8 sp</td>\n<td>3gp, 6sp</td>\n<td>12</td>\n<td>100 gp</td>\n<td>200 gp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3 gp</td>\n<td>6 gp</td>\n<td>13</td>\n<td>150 gp</td>\n<td>300 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>5 gp</td>\n<td>10 gp</td>\n<td>14</td>\n<td>225 gp</td>\n<td>450 gp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>8 gp</td>\n<td>16 gp</td>\n<td>15</td>\n<td>325 gp</td>\n<td>650 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>12 gp, 5 sp</td>\n<td>25 gp</td>\n<td>16</td>\n<td>500 gp</td>\n<td>1,000 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>18 gp</td>\n<td>36 gp</td>\n<td>17</td>\n<td>750 gp</td>\n<td>1,500 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>25 gp</td>\n<td>50 gp</td>\n<td>18</td>\n<td>1,200 gp</td>\n<td>2,400 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>35 gp</td>\n<td>70 gp</td>\n<td>19</td>\n<td>2,000 gp</td>\n<td>4,000 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>50 gp</td>\n<td>100 gp</td>\n<td>20</td>\n<td>3,500 gp</td>\n<td>7,000 gp</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "Bullying Press": {
+            "name": "强势威压 Bullying Press",
+            "description": "<p><strong>触发</strong> 你对你的敌人进行一次近战攻击，但还没有掷骰。</p>\n<p><strong>需求</strong> 你在决斗中，你在威吓技能有受训，同时你在这轮用威吓检定当先攻。</p>\n<hr />\n<p>如果你打中了，你的敌人获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。如果你用此能力时，你的敌人是用察觉当先攻，那他获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>"
+        },
+        "Deceptive Sidestep": {
+            "name": "巧诈闪身 Deceptive Sidestep",
+            "description": "<p><strong>触发</strong> 敌人用近战攻击打中你了，但没有重击你。</p>\n<p><strong>需求</strong> 你在决斗中，你在欺骗技能有受训，同时你在这轮用欺骗检定当先攻。</p>\n<hr />\n<p>你诱敌深入却又在最后关头抽身而出。触发的敌人必须重骰然后使用重骰的结果。如果使用这能力时你的敌人使用威吓当先攻，他还会在重骰上承受-2环境罚值。</p>"
+        },
+        "Discover": {
+            "name": "刺探 Discover",
+            "description": "<p>你观察或研究NPC，试图发掘目标的偏好。指定一个NPC，并进行察觉检定或GM认为适当的技能检定来刺探之。检定的DC一般会记述在NPC的影响属性表中。</p>\n<hr />\n<p><strong>大成功</strong> 从成功的选项中选择两个条目。你可选择同个条目两次，来获得两个同类的情报。</p>\n<p><strong>成功</strong> 从下列选项中选择一个条目：你发掘可用以影响该NPC的技能中，检定DC最低的一个项目（忽略已知的技能）；该NPC的一个成见；该NPC的一个抗力；该NPC的一个弱点。</p>\n<p><strong>失败</strong> 你不获得该NPC的任何情报。</p>\n<p><strong>大失败</strong> 如同成功一般选择一个条目，但获得错误的情报。例如误以为该NPC有抗力的吹捧为弱点。</p>"
+        },
+        "Energy Emanation (Electricity)": {
+            "name": "能量爆发(电击) Energy Emanation (Electricity)",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>能量从你身体中爆发出来。你对所有邻接生物造成1d6点电击伤害（@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免，在你的职业DC和法术DC中取较高的一个）。3级和之后每2级，伤害增加1d6点。</p>\n<p>[[/r (ceil(@actor.level/2))d6[electricity]]]{按等级计算的伤害}</p>"
+        },
+        "Energy Emanation (Fire)": {
+            "name": "能量爆发(火焰) Energy Emanation (Fire)",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>能量从你身体中爆发出来。你对所有邻接生物造成1d6点火焰伤害（@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免，在你的职业DC和法术DC中取较高的一个）。3级和之后每2级，伤害增加1d6点。</p>\n<p>[[/r (ceil(@actor.level/2))d6[fire]]]{按等级计算的伤害}</p>"
+        },
+        "Forge Documents": {
+            "name": "伪造文件 Forge Documents",
+            "description": "<p>你准备可能被视为可信道具的伪造品。尝试一次困难或非常困难的社群检定。</p>\n<hr />\n<p><strong>成功</strong> 你制作出令人信服的伪造品并获得1EP，仅能在呈递某种形式的文书时使用。</p>\n<p><strong>失败</strong> 你制作出难以令人信服的文档并获得1点在使用时无法获得好处的EP（但你并不知道）。</p>\n<p><strong>大失败</strong> 如同失败，但试图使用此EP的角色会大失败，即使他们是在骰出失败后使用这点EP。</p>"
+        },
+        "Fortify Camp": {
+            "name": "补强营地 Fortify Camp",
+            "description": "<p>你花费一些时间为你们的营地构筑一些防御工事，进行手艺检定(DC一般为受训或专家DC)，成功时看守营地的人在先攻及搜索意图潜行进营地的生物的察觉检定上获得+2环境加值。</p>"
+        },
+        "Gain Contact": {
+            "name": "获取联络人 Gain Contact",
+            "description": "<p>你尝试与能够在渗透行动中帮助你的个人建立联系。尝试一个普通，困难或非常困难的交涉或社群检定，或者与潜在联络人相适应的学识检定。</p>\n<hr />\n<p><strong>成功</strong> 你成功建立了联系并获得1EP。</p>\n<p><strong>失败</strong> 你无法建立联系。</p>\n<p><strong>大失败</strong> 你以某种方式侮辱或欺骗了联系人。之后的尝试会承受-2环境减值。</p>\n<hr />\n<p><strong>特殊</strong> 多次大失败可能会造成该联系人在某种程度上与队伍发生冲突，这可能会造成队伍的警觉点增加。</p>"
+        },
+        "Gossip": {
+            "name": "闲言碎语 Gossip",
+            "description": "<p>你打听有关渗透目标的谣言。尝试一次普通，困难或非常困难的交涉检定。</p>\n<hr />\n<p><strong>大成功</strong> 你获得了你想要尝试渗透的地点或群体的内部信息。你在之后为渗透进行准备行动的检定上获得+2环境加值。如果你共享信息，那么被分享者也获得此加值。</p>\n<p><strong>成功</strong> 你获得了你想要尝试渗透的地点或群体的内部信息，这有助于你进行计划。</p>\n<p><strong>失败</strong> 你一无所获。</p>\n<p><strong>大失败</strong> 你听到了一些错误的谣言，你下一个准备行动所尝试的检定承受-2环境减值。流言在你追问的群体或个人周围散播，你的警觉点提升1点。</p>"
+        },
+        "Influence": {
+            "name": "影响 Influence",
+            "description": "<p>你试图获取NPC的好印象，或说服他支持你的目标。指定一个NPC，并进行技能检定来影响之。检定的DC以及成功的可能性，随该NPC的偏好而定（一般会记述在NPC的影响属性表中）。</p>\n<hr />\n<p><strong>大成功</strong> 你获得该NPC的2点影响力点数。</p>\n<p><strong>成功</strong> 你获得该NPC的1点影响力点数。</p>\n<p><strong>失败</strong> 你不获得该NPC的影响力点数。</p>\n<p><strong>大失败</strong> 你失去该NPC的1点影响力点数。</p>"
+        },
+        "Reconnoiter": {
+            "name": "探勘 Reconnoiter",
+            "description": "<p>你们研究并调查特定的地区。探勘地貌景观，寻找反常特性与特定地点。探勘地格所需的行动数与穿越该种地格所需的旅行行动数相同：普通地形1、困难地形2、进阶困难地形3，但是沿着道路探勘并不会改善地形难度。在你们成功对地格进行探勘后，方可进行绘制地图行动(见下)来降低在该地格迷失方向的机率。你们自动发现不需要检定即可发现的所有地貌特性，而自此可进行适当的检定来寻找隐藏的地貌特性。</p>\n<p>举例来说，你们在丘陵寻找某个明显的岩石景观时，在该地格进行2次探勘行动后便会自动找到。但在寻找森林深处的隐密天狗寺院时，除了2次探勘行动以外，还需要作为探勘的一部份另外通过察觉检定才能找到。</p>"
+        },
+        "Research": {
+            "name": "研究 Research",
+            "description": "<p>你彻底疏理资讯，对手边的课题深入领悟。选择你的研究主题、图书馆区域或依据研究形式的其他区分方式，然后进行技能检定。使用什么技能，DC为何，取决于你的决定。</p>\n<hr />\n<p><strong>大成功</strong> 你获得2RP。</p>\n<p><strong>成功</strong> 你获得1RP。</p>\n<p><strong>大失败</strong> 你发现的东西是错的，还失去1RP。</p>"
+        },
+        "Scout Location": {
+            "name": "侦查地点 Scout Location",
+            "description": "<p>你花时间观察想要渗透的地点或团体。尝试一个普通，困难或非常困难的察觉、社群或潜行检定。</p>\n<hr />\n<p><strong>成功</strong> 你的观察提供1EP。</p>\n<p><strong>失败</strong> 你没有观察到任何值得值得注意的东西。</p>\n<p><strong>大失败</strong> 你对你观察到的某些方面产生了误判。获得1点使用时会造成大失败而不是成功的EP，即使角色是在骰出失败后使用这点EP。</p>"
+        },
+        "Secure Disguises": {
+            "name": "获取伪装 Secure Disguises",
+            "description": "<p>你寻求购买或制作伪装。尝试一个普通、困难或非常困难的工艺、唬骗、表演或社群检定。</p>\n<hr />\n<p><strong>成功</strong> 你成功购买或制作了伪装，获得1点只能用于掩护身份的EP。</p>\n<p><strong>失败</strong> 你只获得了无法使用的伪装。</p>"
+        },
+        "Energy Emanation (Acid)": {
+            "name": "能量爆发(酸液) Energy Emanation (Acid)",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>能量从你身体中爆发出来。你对所有邻接生物造成1d6点酸液伤害（@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免，在你的职业DC和法术DC中取较高的一个）。3级和之后每2级，伤害增加1d6点。</p>\n<p>[[/r (ceil(@actor.level/2))d6[acid]]]{按等级计算的伤害}</p>"
+        },
+        "Energy Emanation (Cold)": {
+            "name": "能量爆发(寒冷) Energy Emanation (Cold)",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>能量从你身体中爆发出来。你对所有邻接生物造成1d6点寒冷伤害（@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免，在你的职业DC和法术DC中取较高的一个）。3级和之后每2级，伤害增加1d6点。</p>\n<p>[[/r (ceil(@actor.level/2))d6[cold]]]{按等级计算的伤害}</p>"
+        },
+        "Sense Weakness": {
+            "name": "识破弱点 Sense Weakness",
+            "description": "<p><strong>触发</strong> 你对你的敌人进行一次近战攻击，但还没有掷骰。</p>\n<p><strong>需求</strong> 你在决斗中，你在察觉技能有受训，同时你在这轮用察觉检定当先攻。</p>\n<hr />\n<p>你抓准时机进行攻击，占据优势。你的敌人对这次攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。如果你用此能力时，你的敌人是用欺骗当先攻，他会措手不及到他下一回合开始。</p>"
+        },
+        "Travel": {
+            "name": "旅行 Travel",
+            "description": "<p>你们移动并进入邻接的地格。在普通地形(例如平原)里，只需要1个旅行行动就可以移动并进入邻接的地格。在困难地形(例如森林或沙漠)里，需要2个旅行行动才可以移动并进入邻接的地格。在进阶困难地形(例如山脉或沼泽)里，需要3个旅行行动才可以移动并进入邻接的地格。沿着道路移动能将所在地格的地形视为比实际好1阶。举例来说，沿着登山道穿越山脉时，视为在困难地形而非进阶困难地形中移动。</p>\n<p>旅行行动假设了PC在地面移动，若你们在飞行或是在水上移动，则大部分的地格都算是普通地形。飞进风暴或强风中视为困难地形或进阶困难地形。在河川顺流而下是普通地形，逆流而上是困难地形或进阶困难地形。</p>"
+        },
+        "Dueling Counter": {
+            "name": "决斗反制 Dueling Counter",
+            "description": "<p><strong>触发</strong> 你的对手施放法术时，他的根源跟你的根源专攻一样。</p>\n<p><strong>需求</strong> 你在决斗中，同时有一个根源专攻。</p>\n<hr />\n<p>使用一个准备好的法术或法术位。接着你可以用消耗的法术尝试反制目标法术。</p>"
+        },
+        "Change Tradition Focus": {
+            "name": "改变根源专攻 Change Tradition Focus",
+            "description": "<p><strong>需求</strong> 你在决斗中，并且你在想更改的根源上的技能需要受训（奥法对应奥术、自然对应原能、神秘对应异能、宗教对应神术）</p>\n<hr />\n<p>你把你的根源专攻改成另一个根源。</p>"
+        },
+        "Map the Area": {
+            "name": "绘制地图 Map the Area",
+            "description": "<p>在你的队伍成功探勘某地格后，你可以此行动进行生存检定(DC一般为受训或专家DC)来绘制该地格的精准地图，成功时获得该地格的地图，持有该地图者在该地格移动时的所有导向检定的DC降低-2。</p>"
+        },
+        "Shadow Step": {
+            "name": "影步 Shadow Step",
+            "description": "<p><strong>需求</strong> 你的魔宠在昏暗或黑暗之中</p>\n<hr />\n<p><strong>效果</strong> 魔宠将自己传送至多30尺。目的地必须位于昏暗或黑暗中，而且必须处于魔宠的视线和效果线内。</p>\n<p>该动作具有和你的魔法根源相匹配的特征，如果你不是施法者，则为异能特征。</p>"
         }
     }
 }
