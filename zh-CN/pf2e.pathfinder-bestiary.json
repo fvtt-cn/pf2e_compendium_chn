@@ -139,10 +139,93 @@
             }
         },
         "Barghest": {
-            "name": "犬魔 Barghest"
+            "name": "犬魔 Barghest",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "dr":[
+                {
+                    "type": "fire",
+                    "value": 5
+                },
+                {
+                    "exceptions": "除魔法",
+                    "type": "physical",
+                    "value": 5
+                }
+            ],
+            "publicNotes": "<p>Typical barghests are ravenous gluttons of life who feed and grow on the fat of mortals, their bodies changing in ways none can predict as they use the flesh and blood of their victims to achieve grisly transformations into greater barghests. Barghests often make use of their shapechanging abilities to rule tribes of goblinoids or to discreetly hunt in rural areas in the guise of unnaturally intelligent wolves. They do not work well together, as each barghest wants all the kills for itself; cannibalism is the typical result of too many barghests in one small area.</p>\n<hr />\n<p>Barghests are lupine fiends with goblinoid faces and humanoid hands. They stalk the Material Plane in search of souls to sate their demonic hunger. Eons ago, barghests dwelled in the pits of Hell and served Asmodeus, but after Lamashtu abducted and adopted the four most powerful of their kind to serve as pets (and in time, as a pantheon of hero-gods worshipped by evil goblins), barghests' loyalties and philosophical nature changed significantly. Today, while barghests retain their connection to goblinoids, they serve none but their own appetites.</p>",
+            "items":{
+                "BuvtHVq16FzLQ1Fi":{
+                    "name": "Divine Innate Spells"
+                },
+                "W5lF6i5jG8ky5PSh":{
+                    "name": "Blink (At Will)",
+                    "description": "<p>You blink quickly between the Material Plane and the Ethereal Plane. You gain resistance 5 to all damage (except force). You can Sustain the Spell to vanish and reappear 10 feet away in a random direction determined by the GM; the movement doesn't trigger reactions. At the end of your turn, you vanish and reappear as above.</p>\n<p>@Compendium[pf2e.spell-effects.ZlsuhS9J0S3PuvCO]{Spell Effect: Blink}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 3.</p>"
+                },
+                "5PWV3tdENKwFgwRx":{
+                    "name": "Dimension Door (Self Only)",
+                    "description": "<p>Opening a door that bypasses normal space, you instantly transport yourself and any items you're wearing and holding from your current space to a clear space within range you can see. If this would bring another creature with you-even if you're carrying it in an extradimensional container-the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are temporarily immune for 1 hour.</p>"
+                },
+                "dHcsjNvdIZCsP0zY":{
+                    "name": "Levitate (At Will)",
+                    "description": "<p>You defy gravity and levitate the target 5 feet off the ground. For the duration of the spell, you can move the target up or down 10 feet with a single action, which has the concentrate trait. A creature floating in the air from levitate takes a -2 circumstance penalty to attack rolls. A floating creature can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If the target is adjacent to a fixed object or terrain of suitable stability, it can move across the surface by climbing (if the surface is vertical, like a wall) or crawling (if the surface is horizontal, such as a ceiling). The GM determines which surfaces can be climbed or crawled across.</p>"
+                },
+                "BblU1XBSC9IdeWlp":{
+                    "name": "Jaws"
+                },
+                "hr88vSwb8UXcgsA0":{
+                    "name": "Claw"
+                },
+                "vh1w0Pk1NCyqaccM":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "7ZnWKFvAT28mjh65":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "pkCKdy44WRzMrMB3":{
+                    "name": "Change Shape",
+                    "description": "<p>The barghest takes on the shape of a goblinoid (a goblin, hobgoblin, or bugbear) or a wolf, or it transforms back into its true form. When the barghest is a goblinoid, it loses its jaws and claw Strikes, it becomes Small if it is a goblin, and its Speed changes to 20 feet. When the barghest is a wolf, its Speed changes to 40 feet and its jaws gain @Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{Knockdown}. Each individual barghest has only one goblinoid form and one wolf form.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.o6ZI01zZBQDASuaw]{Effect: Wolf Shape}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "e800cwjTJcAqZ2x0":{
+                    "name": "Feed",
+                    "description": "<p>Once per month, a barghest can spend 1 minute to devour a corpse, gaining a permanent +1 status bonus to its checks and DCs. Each subsequent time it feeds, this bonus increases by 1. The fourth time a barghest feeds, it sheds its skin and mutates into a @Compendium[pf2e.pathfinder-bestiary.DlRe4c2XlBSpwmms]{Greater Barghest}, and the status bonus ends.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.i4S6h5c1KK4FLq6w]{Effect: Feed}</p>"
+                }
+            }
         },
         "Black Pudding": {
-            "name": "黑布丁怪 Black Pudding"
+            "name": "黑布丁怪 Black Pudding",
+            "speed": "suction",
+            "senses": "motion sense 60 feet, no vision",
+            "publicNotes": "<p>Most often found below ground, these oozes scour caves for objects to dissolve with their corrosive secretions. This caustic acid is particularly dangerous to creatures that attack a pudding, as it can quickly damage and destroy gear.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
+            "items":{
+                "n2BHwPEdFYp07VvG":{
+                    "name": "Pseudopod"
+                },
+                "DI6Nw0XKEZZJLY8D":{
+                    "name": "Motion Sense 60 feet",
+                    "description":"<p>A black pudding can sense nearby motion through vibration and air movement.</p>"
+                },
+                "pRRtkR99srCWUO1j":{
+                    "name": "Corrosive Mass",
+                    "description": "<p>A creature that hits the pudding with a metal or wooden weapon must succeed at a @Check[type:reflex|dc:22] save or the weapon takes [[/r {2d6}[acid]]]{2d6 acid damage} (after dealing damage to the black pudding as normal). Thrown weapons and ammunition take this damage automatically with no save.</p>"
+                },
+                "SeJXe222cuooTJUx":{
+                    "name": "Split",
+                    "description": "<p>When the black pudding is hit by an attack that would deal slashing or piercing damage and has 10 or more HP, it splits into two identical puddings, each with half the original's HP.</p>\n<p>One pudding is in the same space as the original, and the other appears in an adjacent unoccupied space. If no adjacent space is unoccupied, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>"
+                },
+                "dH7eKw8pDJQDkR3P":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d8+7}[bludgeoning]+{1d6}[acid]]]{1d8+7 bludgeoning damage plus 1d6 acid damage}, @Check[type:fortitude|dc:26|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "x3yCpybINerCQY3Q":{
+                    "name": "测试 Corrosive Touch",
+                    "description": "<p>When the pudding hits a creature with its pseudopod, any acid damage is dealt to the creature's armor or clothing as well as the creature.</p>"
+                },
+                "iIggw0JAX98xzjTY":{
+                    "name": "Suction",
+                    "description": "<p>The pudding can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain for it.</p>"
+                }
+            }
         },
         "Boggard Swampseer": {
             "name": "沼蜍沼泽先知 Boggard Swampseer",
@@ -179,16 +262,124 @@
             }
         },
         "Chuul": {
-            "name": "甲伏怪 Chuul"
+            "name": "甲伏怪 Chuul",
+            "senses": "darkvision, tremorsense (imprecise) 30 feet",
+            "languages": "(or Undercommon for Darklands variants)",
+            "publicNotes": "<p>Also known as chu'ulothis, these large, armor-plated, crustacean predators lurk beneath the surface of pools, mires, and ponds, waiting to snatch up prey with their massive claws before paralyzing them with their tentacles. At that point, they begin to feed, eating their quarry alive.</p>\n<p>Chuuls can live in fresh or saltwater, and indeed are found in aquatic environs the world over-even in the subterranean oceans and lakes of the Darklands. While chuuls are good swimmers, they prefer terrestrial prey. Their preferred method of hunting is by lunging out of the water, paralyzing their victims with their poison-coated tentacles, then gleefully dragging their twitching food into the water to drown if they cannot simply eat such morsels alive. Chuuls that dwell aboveground prefer to dine on lizardfolk, while those swimming the subterranean lakes of the Darklands readily eat anything but xulgaths, whose flavor and stink they find off-putting.</p>\n<p>Chuuls are capable of speech and reason, but these creatures rarely speak with those outside their species except to taunt their food. Before it begins consuming its prey, a chuul often speaks in a gurgling, nearly incomprehensible dialect about how it will enjoy feasting on the creature's flesh. Perhaps chuuls believe that insults and degradation lead to more tender and tastier food, but the truth will likely never be known; almost all chuuls stubbornly refuse any meaningful conversation, even when imprisoned and compelled by treats or pain.</p>\n<p>It is unknown if a chuul society exists beyond their frenzied mating season. Chuuls' intellects seem devoted only toward eating, causing psychological pain to sentient creatures, decorating their lairs with mementos of their favorite meals and victories, and breeding.</p>",
+            "items":{
+                "u0WWqexz5TB2gEqn":{
+                    "name": "利爪 Claws",
+                    "description": ""
+                },
+                "gzYwg0Ob1iEiRCDc":{
+                    "name": "Tremorsense (Imprecise) 30 feet"
+                },
+                "tiL9cpK0I2gzpQne":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "fZTQMVZbBOPoJ37I":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d8+9}[bludgeoning]]]{1d8+9 bludgeoning damage}, @Check[type:fortitude|dc:25|basic:true] save (@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by claws only)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "MScqq1IasW1Ei33T":{
+                    "name": "Mandibles",
+                    "description": "<p><strong>Requirement</strong> A creature is @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} and @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} by the chuul's tentacles.</p>\n<hr />\n<p><strong>Effect</strong> The creature takes [[/r {3d6}[piercing]]]{3d6 piercing damage}.</p>"
+                },
+                "NM1DnsbI55f4G1ix":{
+                    "name": "Paralytic Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+                },
+                "uOtLx35G2OFWHztX":{
+                    "name": "Tentacle Transfer",
+                    "description": "<p><strong>Requirement</strong> The chuul has a creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Effect</strong> The chuul transfers the grabbed creature from its claws to its tentacles, or vice versa. A creature is exposed to the chuul's paralytic venom when transferred into the tentacles and at the start of each of the chuul's turns if it remains grabbed by the tentacles.</p>"
+                }
+            }
         },
         "Cinder Rat": {
-            "name": "煤渣鼠 Cinder Rat"
+            "name": "煤渣鼠 Cinder Rat",
+            "senses": "darkvision, smoke vision",
+            "publicNotes": "<p>These oversized rodents are made of smoldering charcoal and elemental fire, and noxious fumes continually bellow from their flaming flesh.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire.</p>",
+            "items":{
+                "SNb64KWDBMrTorTI":{
+                    "name": "Jaws"
+                },
+                "wqhHoIIgE3jfAgCx":{
+                    "name": "Smoke Vision",
+                    "description": "<p>The cinder rat ignores the @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+                },
+                "vhcrEIRKkfTwrwDs":{
+                    "name": "Fetid Fumes",
+                    "description": "<p>@Template[type:emanation|distance:5]{5 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that enters the aura or begins its turn there must succeed at a @Check[type:fortitude|dc:22] save or become @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p>Everything within the aura, including the cinder rat, is @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} by smoke.</p>"
+                }
+            }
         },
         "Cloaker": {
-            "name": "蛰伏伪怪 Cloaker"
+            "name": "蛰伏伪怪 Cloaker",
+            "senses": "darkvision",
+            "publicNotes": "<p>Weird and paranoid creatures that dwell in the Darklands, cloakers resemble hideous, flying manta rays. Crafty and careful hunters, their motivations, their patterns of attack, and even their societies and history are often an inscrutable jumble of contradicting reports, confused rumors, and terrifying accounts.</p>\n<p>Like many of the stranger creatures of Golarion, cloakers were originally created by the alghollthus, who bred them to spy on their Azlanti thralls. Upon the fall of the Azlanti empire, the alghollthus cast out their cloaker creations, who, in turn, fled to the lower reaches of the Darklands. Amid the vaults and twisted corridors of their new home, their attitudes-particularly regarding their apprehension toward their former masters-changed dramatically. Suspicion became paranoia, egotism, sadism, and much worse. Now, most cloakers lead solitary lives, stalking the Darklands for easy prey and delving deeper into internal horrors. Their paranoia is so great that they interact only rarely even with their own kind, encountering another cloaker only briefly to mate before flitting back to isolation.</p>\n<p>But there are exceptions. Every so often, a charismatic cloaker priest can call together a dark cabal of these creatures and other Darklands denizens to worship unspeakable ancient gods. These rare cloakers whip their acolytes and followers into a frenzy of dark rituals and heinous acts. While these cults are depraved and destructive, they rarely survive longer than their founder.</p>",
+            "items":{
+                "Vpr4X9t4ia5n8MLO":{
+                    "name": "Jaws"
+                },
+                "la6YsHRtpkwWWHV7":{
+                    "name": "Tail"
+                },
+                "JzE14vwBQYTNvg3Q":{
+                    "name": "Shadow Shift",
+                    "description": "<p>Cloakers are @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} in dim light even to creatures with @Compendium[pf2e.bestiary-ability-glossary-srd.fFu2sZz4KB01fVRc]{Low-Light Vision} and @Compendium[pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6]{Darkvision}.</p>"
+                },
+                "P0Q4Hgs9e8hwRX5G":{
+                    "name": "Envelop",
+                    "description": "<p>The cloaker makes an attack roll with a [[/r 1d20+14 #Envelop Attack]]{+14 bonus} against an adjacent creature's Reflex DC. If it succeeds, it envelops the target, who is @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}. Attacks that hit an enveloping cloaker deal half their damage to the cloaker and half to the trapped victim. The cloaker can't Fly, and when it moves using its land Speed it moves the enveloped creature with it. The cloaker can make only jaws Strikes against the restrained creature but can make tail Strikes against other creatures.</p>\n<p>A creature that voluntarily puts on the cloaker becomes engulfed automatically. A cloaker can engulf only Large or smaller creatures, and no more than one creature at a time.</p>"
+                },
+                "7DB79rjng9ShAwNU":{
+                    "name": "Infrasonic Moan",
+                    "description": "<p>The cloaker lets out an infrasonic moan that has one of the effects below. A creature that succeeds at a Will save is unaffected. Any creature that attempts this save becomes temporarily immune for 1 hour. Because the moan is infrasonic, most humanoids don't detect the source of their plight if they aren't already aware of the cloaker.</p>\n<ul>\n<li><strong>Fear</strong> (fear, incapacitation) @Check[type:will|dc:22|traits:fear,incapacitation] Each creature within a @Template[type:emanation|distance:30] becomes @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (or, on a critical failure, @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn).</li>\n<li><strong>Nausea</strong> @Check[type:will|dc:22] Each creature within a @Template[type:emanation|distance:30] falls @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} and become @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</li>\n<li><strong>Stupor</strong> @Check[type:will|dc:22] The cloaker targets a single creature within 30 feet. The creature becomes @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} and @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute.</li>\n</ul>"
+                }
+            }
         },
         "Cloud Giant": {
-            "name": "云巨人 Cloud Giant"
+            "name": "云巨人 Cloud Giant",
+            "senses": "low-light vision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>The graceful and regal cloud giants have skin of milky white to powdery blue. Unlike most giants, cloud giants are quite morally diverse. A handful are neutral, but of the others, roughly half are good, while the other half are evil. Good cloud giants are often civic-minded builders of roads and settlements, and are interested in trading goods as well as cultural innovations. It's not uncommon for such giants to approach their neighbors with diplomacy and build strong relationships with other peaceful peoples. Conversely, evil cloud giants are often isolationist and xenophobic. Preferring hidden mountain valleys and settlements in the caves and among the crags of lonely peaks, they raid for what they want and treat other creatures like inconsequential insects. These opposing philosophies can generate a great deal of strife among neighboring cloud giant communities, and the raiders often threaten the trade deals of their peaceful cousins.</p>\n<p>Legends persist of floating cities ruled by magically gifted cloud giant queens and kings. While most cloud giants plainly state that such claims are pure fantasy, others are mysteriously tight-lipped or evasive about the matter.</p>\n<hr />\n<p>Giants are massive humanoid creatures who live in remote regions throughout the world. They are divided into a number of subtypes.</p>",
+            "items":{
+                "SC5giI24l8gEnx5E":{
+                    "name": "Primal Innate Spells"
+                },
+                "Gtqiu1gMAKSCHwT2":{
+                    "name": "Levitate (At Will)",
+                    "description": "<p>You defy gravity and levitate the target 5 feet off the ground. For the duration of the spell, you can move the target up or down 10 feet with a single action, which has the concentrate trait. A creature floating in the air from levitate takes a -2 circumstance penalty to attack rolls. A floating creature can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If the target is adjacent to a fixed object or terrain of suitable stability, it can move across the surface by climbing (if the surface is vertical, like a wall) or crawling (if the surface is horizontal, such as a ceiling). The GM determines which surfaces can be climbed or crawled across.</p>"
+                },
+                "1HAY92fkCJghVqP3":{
+                    "name": "Obscuring Mist (At Will)",
+                    "description": "<p>You call forth a cloud of mist. All creatures within the mist become @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>"
+                },
+                "dknkWfjE6V1wz9bK":{
+                    "name": "Sack for Holding Rocks"
+                },
+                "r5bsJhi6sEolEyLe":{
+                    "name": "Rock"
+                },
+                "AFuY9kW00fzj7WH5":{
+                    "name": "刺叉 Ranseur",
+                    "description": ""
+                },
+                "ziFuQqCKpWrgkyes":{
+                    "name": "Rock"
+                },
+                "a0noDtcOBbRDMiow":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "c3nJwvrVvJlQrgWU":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "6iyj26yHFPai9vr3":{
+                    "name": "Wind Strike",
+                    "description": "<p>The cloud giant Strikes a creature with its ranseur, surrounded in a roar of rushing air. On a hit, the target takes an additional [[/r {4d8}[bludgeoning]]]{4d8 bludgeoning damage} and is @Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. Whether or not the Strike hits, each non-cloud giant within a @Template[type:emanation|distance:20]{20-foot emanation}, including the target of the Strike, is buffeted by roaring winds and must attempt a @Check[type:fortitude|dc:30|traits:damaging-effect] saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r {2d8}[sonic]]]{2d8 sonic damage}.</p>\n<p><strong>Failure</strong> The creature takes [[/r {4d8}[sonic]]]{4d8 sonic damage} and is @Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but double damage and also knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+                }
+            }
         },
         "Crocodile": {
             "name": "鳄鱼 Crocodile"
