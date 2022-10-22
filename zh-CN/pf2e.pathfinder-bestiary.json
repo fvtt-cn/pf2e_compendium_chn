@@ -144,12 +144,12 @@
             "dr":[
                 {
                     "type": "fire",
-                    "value": 5
+                    "description": 5
                 },
                 {
                     "exceptions": "除魔法",
                     "type": "physical",
-                    "value": 5
+                    "description": 5
                 }
             ],
             "publicNotes": "<p>Typical barghests are ravenous gluttons of life who feed and grow on the fat of mortals, their bodies changing in ways none can predict as they use the flesh and blood of their victims to achieve grisly transformations into greater barghests. Barghests often make use of their shapechanging abilities to rule tribes of goblinoids or to discreetly hunt in rural areas in the guise of unnaturally intelligent wolves. They do not work well together, as each barghest wants all the kills for itself; cannibalism is the typical result of too many barghests in one small area.</p>\n<hr />\n<p>Barghests are lupine fiends with goblinoid faces and humanoid hands. They stalk the Material Plane in search of souls to sate their demonic hunger. Eons ago, barghests dwelled in the pits of Hell and served Asmodeus, but after Lamashtu abducted and adopted the four most powerful of their kind to serve as pets (and in time, as a pantheon of hero-gods worshipped by evil goblins), barghests' loyalties and philosophical nature changed significantly. Today, while barghests retain their connection to goblinoids, they serve none but their own appetites.</p>",
@@ -382,40 +382,454 @@
             }
         },
         "Crocodile": {
-            "name": "鳄鱼 Crocodile"
+            "name": "鳄鱼 Crocodile",
+            "senses": "low-light vision",
+            "publicNotes": "<p>Crocodiles can be found basking on riverbanks, lurking in swamps, or floating in lakes. They are usually are indistinguishable from logs when viewed from afar-at least until they attack. Alligators have similar statistics, but because they often live in more temperate climates, they endure cold temperatures better. Unlike alligators, crocodiles can tolerate salt water. Both are formidable predators that are likely to devour careless adventurers who fail to watch where they step.</p>\n<hr />\n<p>Powerful and primeval in appearance, crocodiles are dangerous natural predators that dwell in marshes, riverbeds, swamps, and other wetlands.</p>",
+            "items":{
+                "7Tl0EsClc5Q8xh8G":{
+                    "name": "Jaws"
+                },
+                "gjQiQcNp4NjkcKFX":{
+                    "name": "Tail"
+                },
+                "AbbMWup6eJg0RC0O":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "A0HAbzH4Gjn59ZLw":{
+                    "name": "Deep Breath",
+                    "description": "<p>The crocodile can hold its breath for about 2 hours.</p>"
+                },
+                "eGGqJI9VH7B5iZnC":{
+                    "name": "水下伏击 Aquatic Ambush",
+                    "description": "<p>35 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+                },
+                "WLCM7iPJWfoRusL5":{
+                    "name": "Death Roll",
+                    "description": "<p><strong>Requirement</strong> The crocodile must have a creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p><strong>Effect</strong> The crocodile tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If it fails, it releases the creature.</p>"
+                }
+            }
         },
         "Cyclops": {
-            "name": "独眼巨人 Cyclops"
+            "name": "独眼巨人 Cyclops",
+            "senses": "low-light vision",
+            "publicNotes": "<p>The kingdoms of the cyclopes date to an age before the rise of humanity, when dragons and giants and serpentfolk ruled the world. The cyclopes built enormous stone cities and prayed to ancient gods of brutality and wrath, but their power to foresee the future failed them, and their civilization collapsed. Today, most cyclopes have virtually no knowledge of the former glory of their kind, even though it is not uncommon for them to dwell among the ruins of their greatness. Cyclops cities include monuments and imposing murals which depict their peoples' history, but few now among them can read or interpret these relics of the past.</p>\n<p>In addition to their single eye, cyclopes are also famous for their never-ending hunger, an appetite so all-consuming that some scholars theorize it may in fact be some kind of curse. The ever-present hunger of the cyclopes seems to have some connection to the death of their civilization-though whether this voracity was the cause or a side-effect of their people's downfall is likely destined to remain a mystery.</p>\n<p>Although details of the cyclopes' gods have largely been lost to the annals of time, what little is known about these deities suggests they were vindictive and petty enough to curse their own people if they felt neglected or badly served.</p>\n<hr />\n<p>The cyclopes are violent giants with a tragic past. Although they possess only one eye, they could once see far more than most, possessing occult wisdom and divinatory magic that gave them the mystic ability of foresight. But their legendary oracular powers failed to prevent the fall of their society, and the vast kingdoms of the cyclops long ago collapsed into ruin. Today, cyclopes have forgotten much of what they once knew, and they skulk among the crumbling remains of their fallen cities like forgotten kings and queens gone mad.</p>",
+            "items":{
+                "9Aa0Gupq2BHChPd3":{
+                    "name": "巨斧 Greataxe",
+                    "description": ""
+                },
+                "tdX5F9iFFF0sboNA":{
+                    "name": "重弩 Heavy Crossbow",
+                    "description": ""
+                },
+                "Q1WWRiadk7sX7Gor":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "DxRFNpdsIZg6cyAK":{
+                    "name": "Flash of Insight",
+                    "description": "<p><strong>Frequency</strong> once per day.</p>\n<p><strong>Trigger</strong> The cyclops is about to roll a d20.</p>\n<hr />\n<p><strong>Effect</strong> The cyclops peers into an occluded spectrum of possible futures. It gets a success (but not a critical success) on the roll instead of rolling.</p>"
+                },
+                "cpZUZlhLCvv2qK9o":{
+                    "name": "Swipe",
+                    "description": "<p>The cyclops makes a melee Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within its melee reach and adjacent to each other. Roll damage only once and apply it to each creature hit. A Swipe counts as two attacks for the cyclops's multiple attack penalty.</p>"
+                },
+                "D8YVoU1kV2jo3cyx":{
+                    "name": "Fortune-Telling Lore"
+                }
+            }
         },
         "Daeodon": {
-            "name": "恐猪 Daeodon"
+            "name": "恐猪 Daeodon",
+            "senses": "low-light vision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>Where the typical boar is merely ill-tempered and generally unfriendly, the towering daeodon is legitimately hateful and ruthlessly violent. Although omnivorous, the daeodon prefers to feed on flesh. Primarily a scavenger, the daeodon isn't adverse to attacking creatures it encounters while searching for easier meals, or to protect any perceived encroachment into its lair or feeding grounds. Particularly brave or skilled orcs are fond of using daeodons as mounts or war-trained battle beasts; orc cavalry mounted on daeodons is a fearsome force indeed.</p>\n<p>A typical adult daeodon is 10 feet long and 7 feet tall at the shoulder. It weighs approximately 2,000 pounds.</p>\n<hr />\n<p>While domesticated pigs are a staple of farm life, wild boars are much more dangerous. Foul-tempered warthogs are relatively common, while the lumbering, primeval beasts known as daeodons are less so. Voracious eaters, boars can ravage the countryside in which they live. Boars breed freely, and a pair of boars can rapidly grow to a large family. Boars are a particular nuisance to farmers, as they break into food stores and root through gardens to sate their hunger.</p>",
+            "items":{
+                "hr7MMe0oUKYOwUNV":{
+                    "name": "Tusk"
+                },
+                "kBOVK9j2yxJEBYt7":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "WZrWbGf8dD3tbKfR":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "TEn7gmE6LHEqbMLJ":{
+                    "name": "Daeodon Charge",
+                    "description": "<p>The daeodon Strides twice and then makes a tusk Strike. As long as it moved at least 20 feet, it gains a +2 circumstance bonus to its attack roll. A Medium or smaller creature struck by this attack must succeed at a @Check[type:reflex|dc:19] save or be knocked @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} by the force of the blow.</p>"
+                }
+            }
         },
         "Dandasuka": {
-            "name": "毒噬罗刹 Dandasuka"
+            "name": "毒噬罗刹 Dandasuka",
+            "senses": "darkvision",
+            "allSaves": "+2 status to all saves vs. magic, +3 status to all saves vs. divine magic",
+            "dr": [
+                {
+                    "exceptions": "except piercing",
+                    "type": "physical",
+                    "description": 5
+                }
+            ],
+            "publicNotes": "<p>Known as \"biters\" among the more powerful rakshasa castes, dandasukas serve as spies and assassins for rakshasa clans or powerful spellcasters who have found methods to bind one of these fiends to their will. Born to manipulate and murder, these half-sized terrors revel in their work and delight in the sight of blood. They often dress in extravagant clothes dyed with ostentatious colors and wear numerous elaborate accessories, whether in their true form or in disguise as human children, halfling merchants, or anything else that helps them blend into their targeted society.</p>\n<p>A dandasuka rakshasa is constantly haunted by a monstrous hunger that gnaws at its hyperactive body, forcing it to feed often. In combat, a dandasuka might pause to lick a bloody blade or lap at a pool of spilled blood on the floor. These creatures settle for other meat when they must, but much prefer the taste of mortal humanoid flesh. Regular offers of such victuals can keep a dandasuka loyal to anyone willing to provide frequent meals, but care must be taken in keeping a dandasuka, for many stories tell of them being overly eager to serve an adored benefactor, taking off-hand remarks too literally, and performing services of violence that were never intended.</p>\n<hr />\n<p>Rakshasas are evil spirits that cloak themselves in the guises of humanoid creatures, that they might walk unseen among their prey. They embody what is taboo among most societies, and in the shape of those they seek to defile, rakshasas gorge themselves on these hideous acts. A wide range of rakshasas exist; presented below are the diminutive, sinister dandasuka rakshasa and the infamous raja rakshasa, who are the most widespread and commonly encountered of these fiends.</p>",
+            "items":{
+                "zlPeMmaUBpOYNjEw":{
+                    "name": "Occult Spontaneous Spells"
+                },
+                "iuyu0qM1TjakNK8f":{
+                    "name": "Occult Innate Spells"
+                },
+                "TYPM6Hiecz1NvBZD":{
+                    "name": "Mind Reading (At Will)",
+                    "description": "<p>With a cursory mental touch, you attempt to read the target's mind. It must attempt a Will save. The target then becomes temporarily immune to your mind reading for 1 hour.</p>\n<hr /><strong>Critical Success</strong> The target perceives vague surface thoughts from you when you Cast the Spell.\n<p><strong>Success</strong> You find out whether the target's Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Failure</strong> You perceive vague surface thoughts from the target when you Cast the Spell, and you find out whether its Intelligence modifier is higher than, equal to, or lower than yours.</p>\n<p><strong>Critical Failure</strong> As failure, and for the duration of the spell, you can Sustain the Spell to detect the target's surface thoughts again. The target doesn't receive any additional saves.</p>"
+                },
+                "oxs9nIwbmurMk47p":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你可以侦测一个生物是否分泌毒素或者具有毒素，或者一件物体是否是毒素或者已经被下毒。你无法判断目标是否有多种毒素，也无法了解毒素的种类。特定的物质，例如铅或者酒精，是毒素，并会遮盖其他毒素。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你会得知毒素的数量和类型。</p>"
+                },
+                "ce9aKxH1S1gitPNO":{
+                    "name": "Fangs",
+                    "description": "@Localize[PF2E.PersistentDamage.Bleed1d6.success]"
+                },
+                "MJ00yNypQKm6JLmB":{
+                    "name": "Claw"
+                },
+                "gZXfTOLjvJ7GkHxM":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "kswB083sGau5ZaJ5":{
+                    "name": "+2 Status to All Saves vs. Magic"
+                },
+                "REiNYp4cWbH6OcX2":{
+                    "name": "+3 Status to All Saves vs. Divine Magic"
+                },
+                "bYG1y6PsSmulLnqZ":{
+                    "name": "Change Shape",
+                    "description": "<p>The dandasuka takes on the appearance of any Small humanoid. This doesn't change the dandasuka's Speed or its attack and damage modifiers with its Strikes, but it might change the damage type its Strikes deal (typically to bludgeoning). It typically loses its fangs Strike unless the humanoid form has fangs or a similar unarmed attack.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "dlQJzPWPs48f9b4c":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The dandasuka deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            }
         },
         "Dero Strangler": {
-            "name": "癫儒压制者 Dero Strangler"
+            "name": "癫儒压制者 Dero Strangler",
+            "senses": "darlvision",
+            "publicNotes": "<p>Dero stranglers specialize in capturing living victims, and they are often called upon to aid in abductions.</p>\n<hr />\n<p>Deros are short, wiry humanoids with milky white eyes, gray-blue skin, and wild shocks of off-white or gray hair. The descendants of a mysterious type of fey abandoned in the deepest, darkest caverns of Golarion, deros are the subject of fearful legends and folk tales to most of the world's surface races. They skulk beneath major metropolitan areas, performing cruel and twisted experiments on unwilling subjects. A dero is 3 feet tall and weighs approximately 70 pounds.</p>",
+            "items":{
+                "osyjgXeJV4vv5i3F":{
+                    "name": "Occult Innate Spells"
+                },
+                "E9yEjfkAzFYDW6Iy":{
+                    "name": "Darkness (At Will)",
+                    "description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+                },
+                "NzbLKc9kj7IBRhxp":{
+                    "name": "Aklys",
+                    "description": "<p>The aklys is a throwing club with a hook on one end and a lengthy cord attached to the other. Though aklyses aren't available in most shops, one might be purchased for 5 gp from a vendor that specializes in strange weapons.</p>"
+                },
+                "CtYKJciKGy9Wtza1":{
+                    "name": "Aklys"
+                },
+                "mvM0UYDSareH0kWj":{
+                    "name": "Aklys"
+                },
+                "5HRKFbIvbD2qXTXD":{
+                    "name": "手弩 Hand Crossbow",
+                    "description": ""
+                },
+                "LLJiTLsfaDzD1nZo":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "uldVZLVdwiLD1q6v":{
+                    "name": "Vulnerable to Sunlight",
+                    "description": "<p>A dero strangler takes [[/r {8}]]{8 damage} for every hour they're exposed to sunlight.</p>"
+                },
+                "ZDJkjnIor7qxsiSU":{
+                    "name": "Strangle",
+                    "description": "<p><strong>Requirement</strong> The dero must have two free hands, or be wielding an aklys and have one hand free.</p>\n<hr />\n<p><strong>Effect</strong> The dero attempts an @Check[type:athletics|traits:action:grapple,action:strangle] check to @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grab} with a +2 circumstance bonus. On a success, the target takes [[/r {1d6+6}[bludgeoning]]]{1d6+6 bludgeoning damage}. Double the damage on a critical success.</p>"
+                }
+            }
         },
         "Desert Drake": {
-            "name": "沙漠龙兽 Desert Drake"
+            "name": "沙漠龙兽 Desert Drake",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "speed": "burrow sand only",
+            "publicNotes": "<p>Distant cousins of blue dragons that lack their relatives' magical talents and intelligence, these desert-dwelling drakes are nonetheless dangerous ambush predators, preying upon isolated desert travelers and outposts for food and supplies. They retain their true-blooded forebears' resistance to electricity and affinity for sandy environs. Desert drakes' scales range in coloration from rust-brown to light tan and ocher shades, mimicking the colors of the dunes they call home.</p>\n<p>Desert drakes are among the lightest and most compact of the drakes, though this shouldn't be mistaken for frailty. Their swooped-back horns and feather-thin wings are adapted to make burrowing as easy as possible. Indeed, a desert drake's powerful neck makes wriggling through sand and other loose scree as easy as walking for it.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct-drakes are primitive draconic monsters who bear a fraction of the terrifying might of their larger cousins but little (if any) of the cunning. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties-small social groups fittingly called \"rampages\"-makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them only their formidable jaws and thick-scaled tails with which to attack if engaged at melee range. Most drakes would rather avoid close combat, however, preferring to use their breath weapons to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>",
+            "items":{
+                "C6VJPsP2T62aUaDR":{
+                    "name": "Fangs",
+                    "description": ""
+                },
+                "pMqdrNgUYaFMO0PK":{
+                    "name": "Tail"
+                },
+                "xUwxwWrzgPri548T":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "AkGZKjw58GNy5tNW":{
+                    "name": "Scent (Imprecise) 30 feet",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+                },
+                "KddvbFPsHJAfqGAc":{
+                    "name": "Wing Deflection",
+                    "description": "<p><strong>Trigger</strong> The desert drake is targeted with an attack.</p>\n<hr />\n<p><strong>Effect</strong> The desert drake raises its wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the desert drake is flying at the time it is attacked, it descends 10 feet after the attack is complete.</p>"
+                },
+                "y03xyojSlEvE4nQh":{
+                    "name": "Draconic Frenzy",
+                    "description": "<p>The desert drake makes two Fangs Strikes and one Tail Strike in any order.</p>"
+                },
+                "AzIejcCA4nY9zlmB":{
+                    "name": "Sandstorm Breath",
+                    "description": "<p>The desert drake spits a ball of electrically charged sand to a range of 60 feet that explodes into a cloud with a @Template[type:burst|distance:15]. Creatures in the area take [[/r {9d6}[electricity]]]{9d6 electricity damage} (@Check[type:reflex|dc:27|basic:true] save). The cloud remains for [[/br 1d4 #Duration Sandstorm]]{1d4 rounds}, granting @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealment} to everything within.</p>\n<p>The desert drake can't use Sandstorm Breath again for [[/br 1d6 #Recharge Sandstorm Breath]]{1d6 rounds}.</p>"
+                },
+                "W1EiRfnWuUIq6KoC":{
+                    "name": "Speed Surge",
+                    "description": "<p>The desert drake moves up to twice its Speed. It can do this three times per day.</p>"
+                },
+                "63a8hHsiAUlNCTdu":{
+                    "name": "Surprise Attacker",
+                    "description": "<p>On the first round of combat, creatures that haven't acted yet are @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to the desert drake.</p>"
+                }
+            }
         },
         "Dezullon": {
-            "name": "大猪笼草 Dezullon"
+            "name": "大猪笼草 Dezullon",
+            "senses": "low-light vision",
+            "hp": "regeneration 15 (deactivated by fire)",
+            "publicNotes": "<p>Dezullons are dangerous carnivorous pitcher plants that dwell in forested regions with thick canopies. They hunt for meat along the forest's understory when not sunning themselves in the boughs above. Dezullons are smart enough to notice that some creatures are attracted by shiny things, and sometimes use such objects to set up ambushes. To assume that the dezullon's ambulations are slow simply because the creature has a root structure is a foolish mistake; many an adventurer has been crushed to death by this surprisingly agile plant. In addition, these dangerous plants are expert climbers, making their pursuit even more difficult to escape from.</p>\n<p>A hungry dezullon keeps prey off-balance by spilling its putrid, psychoactive digestive juices from its central pitcher. In addition to being highly acidic, the enzymes in a dezullon's digestive tract, once expelled, inflict a victim with powerful hallucinations and amnesia. This secondary effect makes dezullons highly sought after in some circles, including avid drug users, experimental doctors, and criminals who deal in poisons.</p>\n<p>Many varieties of dezullon exist, including lumbering giants of incredible size, those that have tiny, cup-shaped pitchers that proliferate along lengths of creeping ivy like suckers on a squid's tentacles, and others with hundreds of blood-red, razor-sharp leaves that protrude from the inside of their pitchers like a leech's teeth. This latter variety is especially dangerous, since the leaves can all but eviscerate creatures that become ensconced inside their pitchers.</p>",
+            "items":{
+                "jt6yBdIcUHJLCmAw":{
+                    "name": "Vine"
+                },
+                "3X0mRQVlCkn2NC2d":{
+                    "name": "Acid Glob"
+                },
+                "npH3O5fYofr6M5MP":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "XwFOwvH7yRyD2Pn6":{
+                    "name": "Regeneration 15 (Deactivated by Fire)"
+                },
+                "9falExFfOIxN5EKp":{
+                    "name": "Stench",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the emanation must attempt a @Check[type:fortitude|dc:27] save. On a failure, the creature is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure is also @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at the save is temporarily immune to this effect for 1 minute.</p>"
+                },
+                "cFtfekZXzWpLtSzL":{
+                    "name": "Amnesia Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> flat-footed and @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused}, flat-footed, and @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
+                },
+                "IL3VPaw5B0JI2Rce":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {2d6+2}[bludgeoning]]]{2d6+2 bludgeoning damage}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "LG7PBXCgNj0UWIb8":{
+                    "name": "Root",
+                    "description": "<p>Until the next time it acts, the dezullon appears to be a normal pitcher plant. It has an automatic result of 41 (44 in forests or swamps) on Deception checks and DCs to pass as a non-creature plant.</p>"
+                }
+            }
         },
         "Drow Priestess": {
-            "name": "卓尔女祭司 Drow Priestess"
+            "name": "卓尔女祭司 Drow Priestess",
+            "ac": "22 with shield raised",
+            "senses": "darkvision",
+            "allSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental",
+            "publicNotes": "<p>Many drow priestesses venerate demon lords and other foul divinities.</p>\n<hr />\n<p>The first drow were elves who fled into the depths of the world from a devastating cataclysm thousands of years ago. In their journey below, they fell to bickering and in-fighting, drawing the attention of sinister intelligences beyond their own. Whether it was the influence of a specific demon lord, the Rough Beast Rovagug, or some other fell force is unknown, but in that time the elves transformed both spiritually and physically, tainting their hearts with desires for cruelty, sadism, and violence. The hues of their eyes became sinister red or bleached white, and their flesh adopted an unearthly lavender sheen that made the drow instantly recognizable. The drow also developed potent magical abilities and resistances that further empowered them, if at the cost of their souls.</p>\n<p>Over the centuries to follow, the drow developed into a powerful, if violently dysfunctional society, influenced by the worship of demon lords and focused on providing power and glory to a relatively small collection of noble houses. Many of these noble houses are matriarchal in nature and all hold allegiance to a specific demon lord patron-but traditions of worship, warfare, and wizardry help to bind the oft-bickering houses together enough that drow society doesn't simply consume itself from within. Fear of earning the wrath of one's superior-be it a teacher, a parent, a commander, or the demon one worships-is the real bond holding drow society together, and this system is held in esteem by the lowliest drow servant and by the most powerful drow priestess alike.</p>\n<p>The drow are infamous throughout the world, but until recently most assumed stories of demon-worshipping, underground-dwelling elves were spooky legends crafted to share around a campfire. Today, the existence of drow is an understood truth, and while their presence in the dark caverns deep below is unsettling, they seem content to leave the surface world alone for now.</p>",
+            "items":{
+                "xBWfY8gxHjGavgBq":{
+                    "name": "Divine Prepared Spells"
+                },
+                "hnjL5DfkOGkcdjPb":{
+                    "name": "Divine Innate Spells"
+                },
+                "c5VUg13xjwOgh0QQ":{
+                    "name": "Darkness (At Will)",
+                    "description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+                },
+                "nufYCaM1XvwwNNWe":{
+                    "name": "Faerie Fire (At Will)",
+                    "description": "<p>在你施放该法术时，处于区域中的所有生物在法术持续时间内会被有色的，无热度的火焰所勾勒出轮廓。该颜色由你选择。可见的生物在受妖火术影响时无法获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 。如果该生物 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}，在被妖火术影响时为隐蔽，而不是 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}。</p>"
+                },
+                "f0Ymg46dc5u2BPA6":{
+                    "name": "Command (At Will)",
+                    "description": "<p>你喊出一句难以被忽视的命令。你可以命令目标接近你，逃离你（如同获得 @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing} 状态），扔下持有物， @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{俯卧在地 Prone}，或者站立在原地。它不能延后（Delay）或者使用任何反应动作，直到它服从你的命令为止。法术效果基于目标的意志豁免。</p>\n<hr /><strong>成功</strong> 目标不受影响。\n<p><strong>失败</strong> 作为该生物下个回合的第一个动作，其必须用一个单动作来完成你的命令。</p>\n<p><strong>大失败</strong> 目标必须使用其下个回合的全部动作来完成你的命令。</p>\n<hr /><strong>升阶 (5环级)</strong> 你能以至多10个生物为目标。"
+                },
+                "draiqXqnYG0Je05Y":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "6ii2IeWpDJ46u3xM":{
+                    "name": "细剑 Rapier",
+                    "description": ""
+                },
+                "XPgz4pQn9aYVvddX":{
+                    "name": "手弩 Hand Crossbow",
+                    "description": ""
+                },
+                "ade7S9RWaPXF7KmF":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "6vLerwjydBOU4Iv7":{
+                    "name": "+2 Status to All Saves vs. Mental"
+                },
+                "Eejxi0k01WzbvUUh":{
+                    "name": "盾牌格挡 Shield Block",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]"
+                }
+            }
         },
         "Drow Fighter": {
-            "name": "卓尔战士 Drow Fighter"
+            "name": "卓尔战士 Drow Fighter",
+            "senses": "darkvision",
+            "allSaves": "+1 status to all saves vs. magic, +2 status to all saves vs. mental",
+            "publicNotes": "<p>Drow fighters train to master techniques that inflict deep, bleeding wounds and use poisoned crossbow bolts to exhaust enemies.</p>\n<hr />\n<p>The first drow were elves who fled into the depths of the world from a devastating cataclysm thousands of years ago. In their journey below, they fell to bickering and in-fighting, drawing the attention of sinister intelligences beyond their own. Whether it was the influence of a specific demon lord, the Rough Beast Rovagug, or some other fell force is unknown, but in that time the elves transformed both spiritually and physically, tainting their hearts with desires for cruelty, sadism, and violence. The hues of their eyes became sinister red or bleached white, and their flesh adopted an unearthly lavender sheen that made the drow instantly recognizable. The drow also developed potent magical abilities and resistances that further empowered them, if at the cost of their souls.</p>\n<p>Over the centuries to follow, the drow developed into a powerful, if violently dysfunctional society, influenced by the worship of demon lords and focused on providing power and glory to a relatively small collection of noble houses. Many of these noble houses are matriarchal in nature and all hold allegiance to a specific demon lord patron-but traditions of worship, warfare, and wizardry help to bind the oft-bickering houses together enough that drow society doesn't simply consume itself from within. Fear of earning the wrath of one's superior-be it a teacher, a parent, a commander, or the demon one worships-is the real bond holding drow society together, and this system is held in esteem by the lowliest drow servant and by the most powerful drow priestess alike.</p>\n<p>The drow are infamous throughout the world, but until recently most assumed stories of demon-worshipping, underground-dwelling elves were spooky legends crafted to share around a campfire. Today, the existence of drow is an understood truth, and while their presence in the dark caverns deep below is unsettling, they seem content to leave the surface world alone for now.</p>",
+            "items":{
+                "6NxJOtjBC8UhEkqr":{
+                    "name": "Divine Innate Spells"
+                },
+                "F99N1qLgQghEZNBq":{
+                    "name": "Darkness (At Will)",
+                    "description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+                },
+                "AWm9hzQmJPQ8BWn0":{
+                    "name": "Faerie Fire (At Will)",
+                    "description": "<p>在你施放该法术时，处于区域中的所有生物在法术持续时间内会被有色的，无热度的火焰所勾勒出轮廓。该颜色由你选择。可见的生物在受妖火术影响时无法获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 。如果该生物 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}，在被妖火术影响时为隐蔽，而不是 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}。</p>"
+                },
+                "iTaObjgnXpF66Sz5":{
+                    "name": "细剑 Rapier",
+                    "description": ""
+                },
+                "RZBxog3E2iCbQY5r":{
+                    "name": "格挡匕首 Main-Gauche",
+                    "description": ""
+                },
+                "XDq62TH6LQA4rgny":{
+                    "name": "手弩 Hand Crossbow",
+                    "description": ""
+                },
+                "zZ7YQvZHZDePNYfh":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "JRWZ0pJnxuJyvINn":{
+                    "name": "+2 Status to All Saves vs. Mental"
+                },
+                "UUnzaMbka2DY7uDu":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "uznmLfSkP5j9qOEA":{
+                    "name": "Quick Draw",
+                    "description": "<p>The drow fighter draws a weapon using the Interact action, then Strikes with that weapon.</p>"
+                },
+                "ix1KQX8Ji2g1e9ID":{
+                    "name": "Skewer",
+                    "description": "<p>The drow fighter Strikes with its rapier, and gains a +1 circumstance bonus to the attack roll. A creature damaged by the attack takes @Localize[PF2E.PersistentDamage.Bleed1d6.success].</p>"
+                }
+            }
         },
         "Earth Mephit": {
-            "name": "土魔蝠 Earth Mephit"
+            "name": "土魔蝠 Earth Mephit",
+            "hp": "fast healing 2 (while underground)",
+            "senses": "darkvision, tremorsense (imprecise) 30 feet",
+            "publicNotes": "<p>Earth mephits are humorless and trudge about their tasks with little enthusiasm. They are somewhat more stout than other mephits, and their dark-brown or gray bodies are always coated with layers of dirt and filth. An earth mephit can fly, just as any other mephit, but the act of flight is uncomfortable and unnerving to them-they rarely ascend higher than 5 feet off the ground if they can help it.</p>\n<hr />\n<p>Mephits-sometimes known as elemental scamps-are little bipedal critters with bat-like wings who serve stronger elementals on the Elemental Planes or neophyte spellcasters who summon them to the Material Plane. All mephits have an inkling of magical power as well as a breath weapon.</p>",
+            "items":{
+                "qN64iiPewb1CIOTo":{
+                    "name": "Arcane Innate Spells"
+                },
+                "DzVgAESVeOVKmXjF":{
+                    "name": "Enlarge (Self Only)",
+                    "description": "<p>受到魔法能量的强化，目标增大到大型。其装备随之增大，但是在脱离后会回复原始大小。该生物获得 @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。其触及增加5尺（或者10尺，如果初始为超小型），并且它在近战伤害上获得+2状态加值。该法术对于大型或者更大的生物无效。</p>\n<p>@Compendium[pf2e.spell-effects.sPCWrhUHqlbGhYSD]{法术效果：变巨术}</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> T该生物改为增长到超大型体型。该对近战伤害的状态加值增加到+4，生物的触及增加10尺（或者15尺，如果该生物初始为超小型）。该法术对超大型或者更大的生物无效。 @Compendium[pf2e.spell-effects.41WThj17MZBXTO2X]{法术效果：变巨术 (升阶 4环级)}</p>\n<p><strong>升阶 (6环级)</strong> 选择2环级或者4环级版本的本法术，并将其效果应用于10个自愿生物。</p>"
+                },
+                "2BBPsLk2YiOeDwpm":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "KrjSsDuS9l6Y69eQ":{
+                    "name": "Tremorsense (Imprecise) 30 feet"
+                },
+                "6CWD9zTeiLEB09vN":{
+                    "name": "Fast Healing 2 (While Underground)"
+                },
+                "0OOTRB9nI9G0zd8v":{
+                    "name": "Breath Weapon",
+                    "description": "<p>The earth mephit breathes rocks in a @Template[type:cone|distance:15] that deals [[/r {2d6}[bludgeoning]]]{2d6 bludgeoning damage} to each creature within the area (@Check[type:reflex|dc:17|basic:true] save).</p>\n<p>The earth mephit can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                }
+            }
         },
         "Efreeti": {
-            "name": "火巨灵 Efreeti"
+            "name": "火巨灵 Efreeti",
+            "senses": "darkvision; detect magic",
+            "publicNotes": "<p>The efreet are hateful and merciless genies from the Plane of Fire, where they build metropolises and massive trade centers that draw extraplanar travelers from across the multiverse. They are cruel slavers, vengeful warmongers, and sinister wish-masters; there are many tales of mortals who made pacts with efreet only to have their words twisted to suit a genie's capricious and malevolent whims.</p>\n<p>Efreet do not readily treat with other genies; they share an eternal feud with the djinn, disdain marids, regard jann as weaklings unworthy of the genie title, and only occasionally tolerate alliances with shaitans. At 12 feet tall and weighing 2,000 pounds, efreet are formidable opponents and cow their chosen victims with a glance.</p>\n<hr />\n<p>A unique type of genie exists for each Elemental Plane, and the bodies of genies are formed out of elemental matter corresponding to their native plane: djinn are formed from wind, clouds, and storms; efreet are fire made flesh; marids are beings of water; and shaitans are composed of metal, gems, and stone. Lastly, the jann are formed out of all four elements, and are the weakest of geniekind.</p>",
+            "items":{
+                "6HOLWC4q1wPrnZql":{
+                    "name": "Arcane Innate Spells"
+                },
+                "iRnNuTXaYCxU3pTc":{
+                    "name": "Plane Shift (At Will) (to Astral Plane, Elemental Planes, or Material Plane Only)",
+                    "description": "<p>你和你的盟友穿过位面之间的屏障。目标移动到另一个位面，例如火焰位面（Plane of Fire），阴影位面（Shadow Plane），或者深渊（Abyss）。你必须对目的地位面有所了解，并且使用该位面的材料制作的魔法共鸣音叉作为该法术的器材。多数主要位面的共鸣音叉，如同异界传送法术本身一样，罕贵度为罕见。鲜为人知的位面和半位面的共鸣音叉通常罕贵度为稀有。该法术非常不精确，你会在某个目标（由你选择）上次到达该位面时所在的位置相距1d20×25英里的位置出现。如果对所有目标而言均是第一次旅行到特定位面，你会在位面上的一个随机位置出现。异界传送 不会提供返程的方法，但是通过再次施放异界传送令你能回到你之前所在的位面，除非有什么另外情况。</p>"
+                },
+                "q70BgV7abbPeYT1b":{
+                    "name": "Detect Magic (Constant)",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "azSRd7to2x2eVjTv":{
+                    "name": "弯刀 Scimitar",
+                    "description": ""
+                },
+                "msrruiotI1gRnWN9":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "gVHdzhF7CYS5L3SK":{
+                    "name": "Burning Grasp",
+                    "description": "<p>When the efreeti grabs a creature, that creature takes [[/r {2d6}[fire]]]{2d6 fire damage}, and takes [[/r {2d6}[fire]]]{2d6 fire damage} at the end of each of its turns as long as it remains @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
+                },
+                "zHL2E4bkH3vVvqSD":{
+                    "name": "Change Size",
+                    "description": "<p><strong>Frequency</strong> Once per day.</p>\n<hr />\n<p><strong>Effect</strong> The efreeti changes a creature's size. This works as a 4th-level <em>@Compendium[pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge}</em> or <em>@Compendium[pf2e.spells-srd.PjhUmyKnq6K5uDby]{Shrink}</em> spell but can target an unwilling creature (@Check[type:fortitude|dc:29] save negates).</p>"
+                },
+                "36UmeWHlowHAjVXV":{
+                    "name": "Combat Grab",
+                    "description": "<p><strong>Requirements</strong> The efreeti has one hand free.</p>\n<hr />\n<p><strong>Effect</strong> The efreeti makes a melee Strike while keeping one hand free. If the Strike hits, the target is @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} in the efreeti's free hand.</p>"
+                }
+            }
         },
         "Elananx": {
-            "name": "林焰猞猁 Elananx"
+            "name": "林焰猞猁 Elananx",
+            "languages": "(Can't Speak Any Language)",
+            "publicNotes": "<p>These strange, fey felines resemble large, broad bobcats from a distance, but a closer view reveals something amiss. Their forms ripple and billow with heat, and their eyes glow from within as if they contain tiny, flickering flames. The pungent scent of rotting leaves smoldering in a bonfire clings to their fur. Yet those who have the chance to watch elananxes hunt or attack prey witness the greatest indication that these creatures are something more than mere predators, for they act with cruel and savvy instincts, reveling in the pain they infiict.</p>\n<p>Elananxes typically hunt alone, but sometimes these cunning and malicious hunters of the First World roam in packs called \"billows\" to take down large prey. Like many house cats, elananxes are not content to merely track and devour prey, but prefer to toy with their victims, drawing joy and excitement from the fear and pain of those they capture. To this end, elananxes rarely use their cinder dispersal ability to evade their targets, instead opting to foil their quarry just before the end of the hunt-though, as selfish creatures who wish to live to hunt again, elananxes often reserve one use of this ability, just in case.</p>\n<p>Because of their clever and malicious ways, elananxes are favored as hunting companions by redcaps, who go out of their way to befriend or make deals with these creatures. Redcaps also flnd great sport in hunts where competing elananxes chase a single creature. Although they're large enough to serve as mounts for redcaps, elananxes despise being ridden and resist such attempts-little is as sure to cause a supposedly friendly elananx to turn on its redcap ally than a foolhardy attempt to treat the fey cat as a horse!</p>\n<p>Elananxes have a strange affinity to forest fires. Because they are immune to the damage caused by flickering flames, they enjoy capering and caterwauling through the smoky, burning ruins of forest infernos. Some have even been known to use their burning bites to deliberately light undergrowth on fire, simply so they might experience the beauty of the flames combined with the inevitable pain such disasters inflict on other creatures.</p>",
+            "items":{
+                "kTCYz9Dnx9Zw1RHa":{
+                    "name": "Jaws"
+                },
+                "ohDZuFtUD8Y2pTMN":{
+                    "name": "Claw"
+                },
+                "uyX0PXYhDtx37aB0":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "grrOo0mi2kz2urJF":{
+                    "name": "Cinder Dispersal",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The elananx takes damage from a hostile source.</p>\n<hr />\n<p><strong>Effect</strong> The elananx disperses into a cloud of smoke and cinders, filling its space and a @Template[type:emanation|distance:20]. While in this form, the elananx can't be attacked or targeted, and it doesn't take up space. Anything inside this cloud is @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and any creature ending its turn there takes [[/r {2d6}[fire]]]{2d6 fire damage}. At the start of its turn, the elananx returns to its normal form in any square the cloud covered. If the elananx Strikes a creature using its first action after returning to its normal form, the target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} and the Strike deals an extra [[/r {1d6}[fire]]]{1d6 fire damage}.</p>"
+                },
+                "izty6IGZL6BowyUS":{
+                    "name": "Pack Attack",
+                    "description": "<p>The elananx's Strikes deal an extra [[/r {1d6}]]{1d6 damage} to creatures within the reach of at least two of its allies.</p>"
+                },
+                "ST2LDOW64VO0qAVl":{
+                    "name": "Pounce",
+                    "description": "<p>The elananx Strides and makes a Strike at the end of that movement. If the elananx began this action @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, it remains hidden until after the attack.</p>"
+                }
+            }
         },
         "Elemental Inferno": {
             "name": "元素炼狱 Elemental Inferno",
@@ -681,7 +1095,7 @@
                 {
                     "exceptions": "除精金",
                     "type": "physical",
-                    "value": 10
+                    "description": 10
                 }
             ],
             "publicNotes": "<p>石魔像是缓慢而坚固的构装体，通常由大理石或花岗岩雕刻而成。它们通常在静止时被当做艺术品，因此一些石魔像的制造者会雇佣雕刻大师来确保将这些构装体造成美丽的雕塑。较古老的石魔像可能会风化，表面有磨损或裂纹，或者断鼻断指，但这种风化并不会影响石像的功能。</p>\n<p>传说表明巨大的石魔像存在于某些古代遗迹中。这些巨大的石魔像比一般石魔像要强大的得多。它们至少有15级，体型不会少于超大型——大多数甚至为巨型。因为它们的体型如此之大，而它们所居住的建筑是如此破败，以至于这样的石魔像觉醒会导致周围建筑倒塌、古老的地基塌陷、天花板落下砸向敌人。除了这里列出的数据之外，这些巨大的石魔像攻击范围更广，一记横扫就可以同时击倒多个目标。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
@@ -1543,7 +1957,7 @@
                 {
                     "exceptions": "除精金",
                     "type": "physical",
-                    "value": 15
+                    "description": 15
                 }
             ],
             "publicNotes": "<p>传统上来说，铁魔像是精湛技艺的产物，它们会被打造为巨大盔甲或强大动物的外形。它们的铰链关节和坚固的装甲外壳都需要精密的制造工艺，并且还需要定期清洗和上油来确保它们不会生锈。只要不被多事的冒险者破坏的话，铁魔像可以在上千年中保持良好的状态，并被主人代代相传下去。除了难以置信的力量之外，铁魔像还拥有强大的毒气吐息，通常足以消灭整支队伍。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
@@ -1956,7 +2370,7 @@
                 {
                     "exceptions": "除力场、幽冥或正能量；对抗非魔法攻击时抗力翻倍",
                     "type": "all",
-                    "value": 5
+                    "description": 5
                 }
             ],
             "publicNotes": "<p>缚灵是一种汲取生命和阳光的恶毒的不死生物。它们阴暗、无形的身体上点缀着灼烧的眼睛，表达着对生者的仇恨，它们那晦暗的爪子是足以从敌人那里偷走活力的武器。缚灵可能由秽恶的死灵术创造，但它们更常由那些遁世（hermitic）的杀人犯或破坏狂（mutilator）中产生，这些人即便在死后也不愿停下他们的邪恶行径。让事情变得更棘手的是，缚灵通过吞噬并将生者转化为它们秽恶的同类而成倍增长——这意味着一小撮不受约束的缚灵可以很轻易地变为一只黑暗大军。</p>\n<p>缚灵没有重量，而且不会受到大多数物理攻击的伤害。它们出没于任何能够以生命为食的地方，尽管它们在阳光下的脆弱限制了它们只能活动于世界的阴暗之处——在那里它们可以无缝地融入环境，然后悄悄地吞没它们的猎物。</p>\n<p>在那些死亡和骚乱司空见惯的地方——被战争蹂躏的乡村、被罪犯首脑统治的地下世界、或是举行残酷邪教仪式的场地，缚灵会和其他同类结伙。在这些地方，活人只有依照携带有日光杖的强大牧师的指引才能过得好。由于缚灵仅能在夜晚或黑暗的地方狩猎，废墟、下水道和遗弃的建筑在白天为缚灵提供了避难所。缚灵足够聪明到在战斗中利用它们的虚体优势，因此它们呆在曲折的洞穴或者有走廊的建筑并避开空旷地带。</p>\n<p>因为它们纯粹由负能量位面的反生命构成，缚灵遍布那些亵渎的区域。在不死生物统治的国家和城镇中，缚灵有着刺客和间谍的地位。在盖布（Geb）它们属于统治阶级，但乌斯塔拉夫（Ustalav）有着更多的缚灵，在那里成群的缚灵徘徊于坟地和雾气弥漫的小径上，吞噬整个村庄的人口。在世界上的其他地方，缚灵往往不会四处游荡并把它们的活动限制于更小的区域，通常它们只在自己选择的地方及其周围环境出没。</p>",
@@ -2152,7 +2566,7 @@
             "dr": [
                 {
                     "type": "all",
-                    "value": 12,
+                    "description": 12,
                     "exceptions": "除力场、幽冥或正能量；对抗非魔法时双倍抗力"
                 }
             ],
@@ -2907,7 +3321,7 @@
                 {
                     "exceptions": "除了力场、幽冥或正能量；此抗力对非魔法时翻倍",
                     "type": "all",
-                    "value": 5
+                    "description": 5
                 }
             ],
             "items": {
@@ -2967,7 +3381,7 @@
                 {
                     "exceptions": "除了力场、幽冥、正能量；对抗非魔法时抗力翻倍",
                     "type": "all",
-                    "value": 5
+                    "description": 5
                 }
             ],
             "items": {
