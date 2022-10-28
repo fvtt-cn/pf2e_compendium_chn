@@ -5825,52 +5825,633 @@
             }
         },
         "Animated Statue": {
-            "name": "活化雕像 Animated Statue"
+            "name": "活化雕像 Animated Statue",
+            "ac": "(15 when broken); construct armor",
+            "senses": "darkvision",
+            "publicNotes": "<p>Animated statues are often used to guard crypts, small shrines, or areas in government buildings where they can be positioned amid normal statues to hide their true nature until an intruder arouses their ire. Adventurers' suspicions regarding statues suddenly animating and attacking has led many less scrupulous adventurers to automatically attack any statues they encounter, ruining harmless, ancient relics.</p>\n<hr />\n<p>Granted a semblance of life through the use of rituals or other strange magic, animated objects take many forms and serve a variety of uses. A few examples of typical animated objects are listed below. Many of these creatures serve as guardians, surprising unsuspecting adventurers when they suddenly attack. Others serve as idle distractions for the exceptionally rich, simple servants created to handle odd jobs, and the like.</p>",
+            "items":{
+                "Rk71VDo2VsvkYsEO":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "dkfqFFDoPeLbQKNp":{
+                    "name": "Construct Armor (Hardness 6)",
+                    "description": "<p>Like normal objects, an animated statue has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness.</p>\n<p>Once an animated statue is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 15.</p>"
+                }
+            }
         },
         "Ankylosaurus": {
-            "name": "甲龙 Ankylosaurus"
+            "name": "甲龙 Ankylosaurus",
+            "senses": "low-light vision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>Squat, heavily armored quadrupeds, ankylosauruses are stubborn and irascible. Although they're herbivores, they have been known to attack other creatures that trespass within territory simply out of ill temper.</p>\n<p>Ankylosauruses have few natural predators, as their bony hides are covered in spiked nubs that jut in many different directions to discourage larger creatures from biting them. They have mighty tails ending in an immense knot of bone, which they use to whip at threats with incredible speed and power. While these low-to-the-ground dinosaurs can trample human-sized or smaller foes, their relatively squat stance prevents them from doing so against larger targets. An ankylosaurus is about 30 feet long, 10 feet tall at the shoulder, and weighs over 3 tons.</p>\n<p>The ankylosaurus is the largest of the heavily armored dinosaurs called ankylosaurids, but smaller versions exist as well. Still Large in size, these smaller dinosaurs, such as the 16-foot long pinacosaurus, lack the trample ability and are rarely above 4th level. Regardless of size, ankylosaurids tend to be relatively muted in coloration, with mixes of black, brown, and gray. When captive, an ankylosaurus's keeper might paint its scales bright colors to signify to others that is not a wild creature.</p>\n<hr />\n<p>Remnants from the world's primeval era, these enormous reptilian animals still exist in large numbers in isolated and remote wildernesses or far underground within magical Darklands caverns. Lizardfolk, orcs, giants, and other monstrous humanoids sometimes use dinosaurs as mounts, guards, or hunting animals. Humans and other ancestries have also been known to collect dinosaurs, be it to display them in menageries or keep them as exotic pets or guardians. Such activities are generally pursuits of the rich or eccentric, but certain druids and other guardians of nature feel strong kinships with dinosaurs as well and take them on as companions. When dinosaurs establish themselves in regions beyond their normal habitats, it is generally the result of these captive creatures escaping into the wild.</p>",
+            "items":{
+                "inK7m9JBf4286NW2":{
+                    "name": "Tail"
+                },
+                "BlUA1CHpOuotxrV7":{
+                    "name": "Foot"
+                },
+                "pcv6j9xM8Qcw0h9R":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "uPrkt0x7Qt0nbh7U":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "hbr6Uqs0GRk0t1JI":{
+                    "name": "Punishing Tail",
+                    "description": "<p>A creature struck by the anklyosaurus's tail must attempt a @Check[type:fortitude|dc:24] save.</p>\n<p>On a failure, it's @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn; on a critical failure, it's @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} until the end of its next turn.</p>"
+                },
+                "qZG63nOxzyyLxiMs":{
+                    "name": "践踏 Trample",
+                    "description": "<p>Medium or smaller, foot, @Check[type:reflex|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                }
+            }
         },
         "Arbiter": {
-            "name": "仲裁者 Arbiter"
+            "name": "仲裁者 Arbiter",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "darkvision, detect alignment (chaotic only), locate inevitable",
+            "publicNotes": "<p>These spherical inevitables are scouts and diplomats. Found throughout the multiverse, they have traditionally kept watch over on chaos and its agents. With the announcement of the Convergence, many arbiters now serve as go-betweens among the aeon alliance and its mortal associates.</p>\n<hr />\n<p>Aeons have always been the caretakers of reality and defenders of the natural order of balance. Each type of aeon takes on some form of duality in its manifestation and works either to shape the multiverse within the aspects of this duality in some way, or to correct imbalances to the perfect order of existence. Aeons can bring weal or woe when they appear in a region, and their machinations can raise a nation, raze it, or restore it from ruin. Their reasons are their own, and they rarely share their motivations with others-they simply create the results they insist through their strange envisioning communication are necessary to maintain the balance of the multiverse.</p>\n<p>As a result of recent shifts in reality, aeons have begun to reassert a presence in the perfect planar city of Axis. To the aeons, this is merely the latest in a recurring cycle, albeit one that mortals have not yet borne witness to. Once regarded as an independent faction, the living machines known as inevitables are now revealed as having been agents of the aeons all along, and while inevitables have their own shared themes and features, they are very much living but constructed manifestations of the aeons' war against imbalance-particularly with regard to how this war is waged against the forces of chaos.</p>\n<p>Aeons have a name for this cyclic return, in which they welcome the industrious axiomites back to their fold and bring the inevitables once again under their control: the \"Convergence.\" At the onset of the Convergence, a council of pleroma aeons appeared in the Eternal City of Axis, where they revealed that axiomites were wayward aeons, split off long ago to pursue the act of creation. With the latest cycle of change it was time for the axiomites and their creations, the inevitables, to rejoin the aeon cause. While most axiomites and inevitables fell in line, realizing perhaps on a fundamental level of reality that what the aeons said was the truth, some refused to heed the call and waited for the wrath of the aeons-but that wrath has yet to come. The dual-natured aeons have responded to those who have declined in confusing ways. With some they treat and even bargain, while a handful of others they have destroyed, and a few have been exterminated by the axiomites and allied inevitables. But most of these quiet insurgents they leave alone, allowing these axiomites to continue to create in peace and the inevitables to continue with their duties. How-or if-this Convergence will end is as little understood as the aeons themselves.</p>",
+            "items":{
+                "mS16mfAS5hbK048v":{
+                    "name": "Divine Innate Spells"
+                },
+                "YjdrDwRb0TLvzMqQ":{
+                    "name": "侦测阵营(随意施法,仅限混乱) Detect Alignment (At Will) (Chaotic Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "iJVGp2XuaslAOfcc":{
+                    "name": "短剑 Shortsword",
+                    "description": ""
+                },
+                "CAyvne51mSjL5IzV":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "xH8E3TYe6R3G6KEv":{
+                    "name": "Locate Inevitable",
+                    "description": "<p>An arbiter can always sense the direction of the nearest non-arbiter inevitable on the plane, but it cannot sense the range of the inevitable.</p>"
+                },
+                "Qc7duDVeN4puhd9w":{
+                    "name": "Electrical Burst",
+                    "description": "<p>The arbiter releases an electrical burst from its body that deals [[/r {3d6}[electricity]]]{3d6 electricity damage} (@Check[type:reflex|dc:17|basic:true] save).</p>\n<p>Following such a burst, the arbiter becomes @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} for 24 hours.</p>"
+                },
+                "6qvzXeFuSeJ64OSj":{
+                    "name": "Axis Lore"
+                }
+            }
         },
         "Arboreal Regent": {
-            "name": "树精王 Arboreal Regent"
+            "name": "树精王 Arboreal Regent",
+            "senses": "low-light vision",
+            "languages": "Speak with Plants",
+            "publicNotes": "<p>Arboreal regents-also called treants-are lumbering, solitary creatures responsible for guarding an entire forest. They take an especially long view of affairs and never act brashly or without much deliberation. They occasionally come together in small groups called groves to share news and pass their wisdom down to the arboreal wardens that have sprouted under their watch. In times of grave danger, all the groves in a region may gather for a great months-long meeting to plan and, eventually, act upon a threat.</p>\n<p>The typical arboreal regent is 30 feet tall, has a trunk 2 feet in diameter, and weighs 4,500 pounds.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk-even elves are fugacious in the eyes of arboreals-and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build-a trait that serves vengeful members of their kind well.</p>",
+            "items":{
+                "qqqYIHulqpSQmjAc":{
+                    "name": "Primal Innate Spells"
+                },
+                "JgLAUNOR58PPWtCz":{
+                    "name": "植物交谈(恒定法术) Speak with Plants (Constant)",
+                    "description": "<p>你可以对植物提出问题，从植物获得回答，但该法术不会令植物比正常更为友好或者比正常更有智慧。大多数通常植物对周围的世界仅有直觉的认识，所以它们无法认出生物的细节，或者了解任何其周围环境以外的世界。聪明的植物怪物喜欢简要直说或者避而不谈，不那么聪明的则通常会做出傻瓜式的回复。</p>"
+                },
+                "oSq2qYAln4B4sFY0":{
+                    "name": "Branch"
+                },
+                "WeXirhh6gD0DCTGB":{
+                    "name": "Root"
+                },
+                "2T8gBoUiFYXYQ2wp":{
+                    "name": "Rock"
+                },
+                "gRnmV8LgZS6qZ09j":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "esNHCG2RP8SOfTuA":{
+                    "name": "Axe Vulnerability",
+                    "description": "<p>The arboreal regent takes 5 additional damage from axes.</p>"
+                },
+                "9ROgeFg0LqFYjWto":{
+                    "name": "Awaken Tree",
+                    "description": "<p>The arboreal regent causes a tree within 180 feet to uproot itself and fight as a minion using the statistics for an @Compendium[pf2e.pathfinder-bestiary.oBMIc2S8ekmDgPpi]{Awakened Tree}. The arboreal regent can control up to two awakened trees at a time, and it can issue commands to both trees as a single action, which has the concentrate and auditory traits.</p>"
+                },
+                "0BMCA9P7mLMAMs10":{
+                    "name": "Sunder Objects",
+                    "description": "<p>When an arboreal regent damages an item or structure, it deals an additional [[/r {2d10}]]{2d10 damage} to that item or structure.</p>"
+                }
+            }
         },
         "Astradaemon": {
-            "name": "星界邪魔 Astradaemon"
+            "name": "星界邪魔 Astradaemon",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "darkvision, lifesense 30 feet; true seeing",
+            "languages": "Telepathy 100 feet",
+            "publicNotes": "<p>These unnerving, almost reptilian daemons represent death by direct assault against a soul or life-force-the same numbing death they bring with their fell touch. Rarely seen on the Material Plane, astradaemons spend most of their time hunting the pathways between the living world and the afterlife. There, they capture migrating souls, snatching them from their rightful rewards or punishments and dragging them to Abaddon as tribute to their undying masters. These horrifying predators of the dead can also be found stalking the banks of the River of Souls in the Astral Plane, where they constantly hunt for new victims. Psychopomps have a particular hatred of astradaemons as a result, and clashes between them and these eerie hunters of the recently departed are indeed the stuff of legend.</p>\n<p>Not all astradaemons limit their hunt to souls. The most notorious of their kind serve the Horsemen themselves as assassins.</p>\n<hr />\n<p>Denizens of the bleak and terrible plane of Abaddon, daemons are shaped by and devoted to the destruction of life in all its forms. They seek the death of every mortal being by the most painful and horrible means possible, all in service to the apocalyptic entities known as the Four Horsemen. Each kind of daemon represents a different way to die, and their powers are nearly always aimed at spreading that particular form of death. Through the use of these powers, they seek to drag all existence down into a pit of hopelessness and despair, and to commit all souls to oblivion.</p>\n<p>While those who summon daemons to the Material Plane usually seek to use the creatures' destructive and corrupting powers for their own ends, daemons always look for ways to spread fear, doubt, and despair wherever they go. Often, daemons disguise their plots as the workings of other fiends, knowing that such confusion compounds mortals' fear.</p>\n<p>While all fiends seek to tempt mortals into lives of evil to increase their own numbers and power on their native planes, daemons are further driven by a supernatural hunger for mortal souls and use a variety of methods-not least of which is the cacodaemons' soul gems-to entrap them. On Abaddon and in other forbidding places across the multiverse, souls are simultaneously a delicacy, a trade good, and a source of magical power, and the daemons are among the greatest gluttons, merchants, and abusers of this spiritual \"resource.\"</p>",
+            "items":{
+                "Rxv5Fh6XLsy8yyXk":{
+                    "name": "Divine Innate Spells"
+                },
+                "YhrNZj9qOxhmr7qj":{
+                    "name": "真视术(恒定法术) True Seeing (Constant)",
+                    "description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+                },
+                "L0ZwpIxnrQrYM4sK":{
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "A2jJk9jpF7BYcn0P":{
+                    "name": "侦测阵营(随意施法,仅限善良) Detect Alignment (At Will) (Good Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "57lDKo6dcd3jNhcT":{
+                    "name": "Jaws"
+                },
+                "RI1LAadtF6vq96g2":{
+                    "name": "Claw"
+                },
+                "Yh9EKYQqgpz6wFJx":{
+                    "name": "Tail"
+                },
+                "CHt0fL7eCWfy5Rm7":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "ydtRuz8pJkmMi4Uh":{
+                    "name": "Telepathy 100 feet"
+                },
+                "6QbeDmIcvY8S3ldj":{
+                    "name": "Lifesense 30 feet"
+                },
+                "GJh2y3nd5dKEWe8I":{
+                    "name": "Displacement",
+                    "description": "<p>An astradaemon bends light, appearing shifted from its true position, though still in the same space. Creatures targeting the astradaemon must attempt a @Check[type:flat|dc:11] check, as if the astradaemon were @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, even though it remains @Compendium[pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed}. Effects such as the Blind-Fight feat and halfling's keen eyes that apply on the flat check against hidden creatures also apply against a displaced astradaemon.</p>"
+                },
+                "vJdzS91Cmz3WZZXD":{
+                    "name": "灵魂虹吸 Soul Siphon",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>An astradaemon draws power from the souls of the recently slain. If a Small or larger living creature dies within its aura, the astradaemon gains 5 temporary Hit Points and a status bonus to attack and damage rolls for 1 round, unless the creature was slain by an astradaemon's Devour Soul ability.</p>\n<p>Incorporeal undead and living spirits traveling outside the body take [[/r {1d8}[force]]]{1d8 force damage} each round within the daemon's aura from the spiritual pressure as the astradaemon pulls in fragments of their soul.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.SjrM6XVTLySToS12]{Effect: Soul Siphon}</p>"
+                },
+                "KyPmodj8yfI4cI99":{
+                    "name": "Devour Soul",
+                    "description": "<p><strong>Requirements</strong> The astradaemon hasn't used an action with the attack trait yet this turn.</p>\n<hr />\n<p><strong>Effect</strong> The astradaemon draws out and consumes the soul of a living creature it has @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}. The creature must succeed at a @Check[type:fortitude|dc:35] save or instantly die. If it dies, the astradaemon gains 10 temporary Hit Points and a +2 status bonus to attack and damage rolls for 1 minute, or for 1 day if the victim was 15th level or higher. A victim slain in this way can be returned to life normally. A creature that survives is temporarily immune for 1 minute.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.QpG9AaYpXJzDEjZA]{Effect: Devour Soul}</p>\n<p>@Compendium[pf2e.bestiary-effects.S38CM3hyr7DnsmRR]{Effect: Devour Soul (Victim Level 15 or Higher)}</p>"
+                },
+                "YoEkR6sBza4UBMYy":{
+                    "name": "Essence Drain",
+                    "description": "<p>When an astradaemon hits with its claw, jaws, or tail, it drains the target's spiritual and vital essences. The target takes [[/r {2d10}[negative]]]{2d10 negative energy damage} and the astradaemon regains an equal number of Hit Points. The target must succeed at a @Check[type:fortitude|dc:37] save or become @Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 1} and @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. If the target was already drained or doomed, it instead increases both conditions' value by 1, to a maximum of 4.</p>"
+                }
+            }
         },
         "Astral Deva": {
-            "name": "星界神使 Astral Deva"
+            "name": "星界神使 Astral Deva",
+            "allSaves": "+1 status to all saves vs. magic",
+            "languages": "Tongues",
+            "senses": "darkvision",
+            "publicNotes": "<p>Astral devas are the elite messengers and emissaries of the celestial realms, serving deities and celestial armies by delivering messages, performing reconnaissance, and providing support for those in need of aid. They watch over planar travelers and take powerful mortals under their wings to mentor them. Astral devas carry scrolls containing important messages and other celestial secrets.</p>\n<p>Astral devas can form spontaneously from the souls of exceptional good-aligned mortals, but are also sometimes created from such souls intentionally by deities or demigods. In the later cases, astral devas often bear physical features that mark them as closely affiliated with that deity. An astral deva created by Sarenrae, for example, might have hair made of fire, while one created by Torag might look more dwarven, and one created by Desna could have butterfly wings instead of feathered wings. It's not unusual for astral devas created by lawful good or chaotic good deities to share their creators' alignment.</p>\n<hr />\n<p>The celestial hosts of angels are messengers and warriors, divided into choirs based on their abilities and purviews. The majority of angels are neutral good and live in Nirvana, the plane of virtue and enlightenment. However, some angels, including several angelic deities, have different alignments, and some even dwell on other planes. Regardless of alignment, angels remain benevolent messengers possessed with magical auras to aid their allies.</p>",
+            "items":{
+                "e8oPQH0Ss9z5oimc":{
+                    "name": "Divine Innate Spells"
+                },
+                "73IYPzz4xQBDqyCv":{
+                    "name": "Divine Rituals"
+                },
+                "P9xeBnqa1Hg3dsTX":{
+                    "name": "巧言术(恒定法术) Tongues (Constant)",
+                    "description": "<p>无论什么语言，目标都可以理解其所有的词语，并且向其他生物用该语言交流。当处于一群各异的生物中时，每次目标将要说话，他可以选择一个生物，并使用一种该生物理解的语言来讲述，即使该目标不知道这语言具体是什么。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 持续时间为8小时。</p>"
+                },
+                "JqkLVZDjUtyAhPnf":{
+                    "name": "辨识谎言(随意施法) Discern Lies (At Will)",
+                    "description": "<p>谎言如同不和谐音一般在你的耳中鸣响。你在对某人撒谎的觉察检定上获得+4状态加值。</p>"
+                },
+                "EnaHR33bWeO1hz4Z":{
+                    "name": "隐形术(随意施法,仅限自身) Invisibility (At Will) (Self Only)",
+                    "description": "<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+                },
+                "F4uFCludKReEZgYt":{
+                    "name": "侦测阵营(随意施法,仅限邪恶) Detect Alignment (At Will) (Evil Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "UJlQ2v4Mw6QsmvJY":{
+                    "name": "Holy Warhammer"
+                },
+                "G5jsqgUC6MzdXURo":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "pPuHLDfAI4W6qEr6":{
+                    "name": "Messenger's Amnesty",
+                    "description": "<p>An astral deva with a message to deliver is continually protected by the effect of <em>@Compendium[pf2e.spells-srd.8xRzLhwGL7Dgy3EZ]{Sanctuary}</em> (DC 32). If the deva breaks the <em>@Compendium[pf2e.spells-srd.8xRzLhwGL7Dgy3EZ]{Sanctuary}</em>, the effect returns if the deva ceases hostility for 10 minutes.</p>"
+                },
+                "3BMDL7DFtWP5HozZ":{
+                    "name": "Traveler's Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Creatures in the astral deva's aura are protected from ambient environmental damage from any plane, including severe and extreme heat and cold as well as more exotic dangers. The astral deva is never @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to creatures within its aura.</p>"
+                },
+                "KXqIPpRkKZEFXqNo":{
+                    "name": "Divine Armament",
+                    "description": "<p>Any weapon gains the effect of a @Compendium[pf2e.equipment-srd.DH0kB9Wbr5pDeunX]{Holy} property rune while an astral deva wields it.</p>"
+                },
+                "QEdIkRZIUAbC6n2O":{
+                    "name": "Stunning Strike",
+                    "description": "<p><strong>Requirements</strong> The astral deva hit a foe earlier this turn with a weapon Strike.</p>\n<hr />\n<p><strong>Effect</strong> The astral deva makes a weapon Strike against the foe. On a success, the foe must succeed at a @Check[type:fortitude|dc:34] save or become @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}. On a critical failure, the foe is @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} instead.</p>"
+                }
+            }
         },
         "Axiomite": {
-            "name": "奇匠族 Axiomite"
+            "name": "奇匠族 Axiomite",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "darkvision",
+            "publicNotes": "<p>According to the axiomites, their kind rose from the raw mathematical underpinnings of the universe, manifesting as great builders who created the ancient, colossal cities of the Outer Planes and gave life to the mechanical inevitables. According to the aeons, axiomites are part of the Monad, having both risen from and rebelled against it long ago. Since the Convergence, most axiomites have recognized this as a fundamental truth, particularly after the aeons showed the axiomites how the Utopian language has formed as an amalgam of aeon envisioning and formulaic mathematical expression. Most axiomites live in the perfect city of Axis, which they continually act to improve, thus refining the concept of perfection itself.</p>\n<p>A particular axiomite may look like any humanoid creature, though the particular form it takes on does not affect its abilities. Beneath this assumed form, all axiomites are the same-clouds of glowing, crystalline dust that constantly swirls and congeals into complex tangles of symbols and equations, evincing their existence as literal creatures of pure mathematical law.</p>\n<p>Axiomites arise from the souls of lawful neutral mortals, particularly those who were, in life, mathematicians, architects, crafters, or philosophers. While these souls do not retain any memories of their lives in the transition into axiomites, their life skills and experiences nevertheless serve a valuable metaphysical resource during formation.</p>\n<hr />\n<p>Aeons have always been the caretakers of reality and defenders of the natural order of balance. Each type of aeon takes on some form of duality in its manifestation and works either to shape the multiverse within the aspects of this duality in some way, or to correct imbalances to the perfect order of existence. Aeons can bring weal or woe when they appear in a region, and their machinations can raise a nation, raze it, or restore it from ruin. Their reasons are their own, and they rarely share their motivations with others-they simply create the results they insist through their strange envisioning communication are necessary to maintain the balance of the multiverse.</p>\n<p>As a result of recent shifts in reality, aeons have begun to reassert a presence in the perfect planar city of Axis. To the aeons, this is merely the latest in a recurring cycle, albeit one that mortals have not yet borne witness to. Once regarded as an independent faction, the living machines known as inevitables are now revealed as having been agents of the aeons all along, and while inevitables have their own shared themes and features, they are very much living but constructed manifestations of the aeons' war against imbalance-particularly with regard to how this war is waged against the forces of chaos.</p>\n<p>Aeons have a name for this cyclic return, in which they welcome the industrious axiomites back to their fold and bring the inevitables once again under their control: the \"Convergence.\" At the onset of the Convergence, a council of pleroma aeons appeared in the Eternal City of Axis, where they revealed that axiomites were wayward aeons, split off long ago to pursue the act of creation. With the latest cycle of change it was time for the axiomites and their creations, the inevitables, to rejoin the aeon cause. While most axiomites and inevitables fell in line, realizing perhaps on a fundamental level of reality that what the aeons said was the truth, some refused to heed the call and waited for the wrath of the aeons-but that wrath has yet to come. The dual-natured aeons have responded to those who have declined in confusing ways. With some they treat and even bargain, while a handful of others they have destroyed, and a few have been exterminated by the axiomites and allied inevitables. But most of these quiet insurgents they leave alone, allowing these axiomites to continue to create in peace and the inevitables to continue with their duties. How-or if-this Convergence will end is as little understood as the aeons themselves.</p>",
+            "items":{
+                "kCfoRidunIYcTXeZ":{
+                    "name": "Divine Innate Spells"
+                },
+                "dw2vQuK7O2lZihH8":{
+                    "name": "神圣狂怒(守序) Divine Wrath (Lawful)",
+                    "description": "<p>你引导你的神祇的怒火，攻击对立阵营的敌人。选择一个你的神祇具有的阵营。（混乱，邪恶，善良，或者秩序）。如果你没有神祇，或者你的神祇是绝对中立，你无法施放该法术。该法术具有你选择的阵营的特征。你造成你所选阵营类型的4d10伤害；每个区域中的生物必须尝试一次强韧豁免。对应你所选阵营的生物不受影响。既不对应也不对立的生物将其豁免骰结果视为更好一级。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物承受一半伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害，并且 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>大失败</strong> 该生物承受全部伤害，并且 @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}; 当其恶心时，也会 @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d10。</p>"
+                },
+                "ZrwNjjoKGEvYhiL4":{
+                    "name": "克敌机先(随意施法) True Strike (At Will)",
+                    "description": "<p>对未来的一瞥令你下一次攻击得到确保。在你的回合结束前，你下一次尝试攻击骰时，这次攻击骰骰两次，并使用较好的结果。该攻击会忽视对攻击骰的环境减值，以及其他任何目标 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 或 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}所导致的纯骰检定。</p>\n<p>@Compendium[pf2e.spell-effects.fpGDAz2v5PG0zUSl]{法术效果：克敌机先}</p>"
+                },
+                "2vkb6KDhuhqgqrlz":{
+                    "name": "战锤 Warhammer",
+                    "description": ""
+                },
+                "Hxm0zO7GdMBB0p4S":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "WYRi6VyNroGIrEk6":{
+                    "name": "Crystalline Dust Form",
+                    "description": "<p>The axiomite shifts between its humanoid form and that of a cloud of crystalline dust in which strange symbols and equations flash.</p>\n<p>In this form it gains a fly Speed of 40 feet and can fit through even tiny apertures, similarly to <em>@Compendium[pf2e.spells-srd.V8wXOsoejQhe6CyG]{Gaseous Form}</em>. It can cast spells, but it can't make melee or ranged attacks in this state.</p>\n<p>It can return to its humanoid form by using this action while in crystalline dust form.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.C9nb9XbnQgbnXpTq]{Effect: Crystalline Dust Form}</p>"
+                },
+                "h5kqITuSgXelPoIz":{
+                    "name": "Axis Lore"
+                }
+            }
         },
         "Boggard Scout": {
-            "name": "沼蜍斥候 Boggard Scout"
+            "name": "沼蜍斥候 Boggard Scout",
+            "speed": "swamp stride",
+            "senses": "darkvision",
+            "publicNotes": "<p>Often tasked with patrolling the borders of their lands, boggard scouts learn to speak another language (typically Common) to make it easier to issue threats and insults toward trespassers.</p>\n<hr />\n<p>Boggards are aggressive humanoid amphibians that thrive in swamps, marshes, and even some rain forests. Boggards hatch from eggs into tadpoles, fiercely competing for food and even consuming their siblings in that struggle. Over 3 years, the surviving boggards develops arms, legs, and lungs while learning the rudiments of hunting, crafts, and warfare-everything needed to survive in their might-makes-right society. At the top of most boggard hierarchies lords a hulking swampseer imbued with sinister divine magic.</p>",
+            "items":{
+                "b9p4QWRBH39ePPdV":{
+                    "name": "钉头锤 Morningstar",
+                    "description": ""
+                },
+                "jL2ksRd3mnetwWV2":{
+                    "name": "Tongue"
+                },
+                "GIxGQeMwhYMa5aqt":{
+                    "name": "投石索 Sling",
+                    "description": ""
+                },
+                "DOr9FvQdsMfK9He0":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "VxA7WerDGElBkdYj":{
+                    "name": "Swamp Stride",
+                    "description": "<p>A boggard scout ignores difficult terrain caused by swamp terrain features.</p>"
+                },
+                "8LvVStEHJB30KVCE":{
+                    "name": "Terrifying Croak",
+                    "description": "<p>The boggard scout unleashes a terrifying croak. Any non-boggard within @Template[type:emanation|distance:30]{30 feet} becomes @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} unless they succeed at a @Check[type:will|dc:17] save.</p>\n<p>Those who critically succeed are temporarily immune for 1 minute.</p>"
+                },
+                "kGQg9F0ZgW7fp4DB":{
+                    "name": "Tongue Grab",
+                    "description": "<p>If the boggard scout hits a creature with its tongue, that creature becomes @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by the boggard. Unlike with a normal grab, the creature isn't @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, but it can't move beyond the reach of the boggard's tongue.</p>\n<p>A creature can sever the tongue by hitting AC 13 and dealing at least 2 slashing damage. Though this doesn't deal any damage to the boggard, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week.</p>"
+                }
+            }
         },
         "Bugbear Thug": {
-            "name": "熊地精暴徒 Bugbear Thug"
+            "name": "熊地精暴徒 Bugbear Thug",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>The more common bugbear thug specializes in the art of lurking in the shadows.</p>\n<hr />\n<p>These stealthy and cruel goblinoid creatures delight in spreading fear and tormenting their victims. Bugbears are the monsters lurking in the closet and hiding under the bed. Preying on remote farmsteads, bugbears reveal their presence with thumps in the night or creaks of boards to build lurking dread and arouse suspicion and fear.</p>",
+            "items":{
+                "zyYihJ8eYGtYRh9u":{
+                    "name": "变种剑 Bastard Sword",
+                    "description": ""
+                },
+                "KlVVVsJad72RahoI":{
+                    "name": "标枪 Javelin",
+                    "description": ""
+                },
+                "sz9GGQOjyrluDIX3":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "Jxa5SzH4ybrGFB9q":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "e8BUlHLevzRJnHEc":{
+                    "name": "Bushwhack",
+                    "description": "<p>The bugbear thug Strides up to 10 feet and attempts to @Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} a creature they're @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} by. If they succeed, they also deal fist damage to that creature.</p>"
+                },
+                "naotn6A029XPnJc1":{
+                    "name": "Mauler",
+                    "description": "<p>The bugbear thug gains a +3 circumstance bonus to damage rolls against creatures they have @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>"
+                }
+            }
         },
         "Bugbear Tormentor": {
-            "name": "熊地精折磨者 Bugbear Tormentor"
+            "name": "熊地精折磨者 Bugbear Tormentor",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>The bugbear tormentor seeks to torture their prey as much through psychological intimidation as through physical harm. The longer a bugbear tormentor can keep their victim alive and terrified, the better they feel.</p>\n<hr />\n<p>These stealthy and cruel goblinoid creatures delight in spreading fear and tormenting their victims. Bugbears are the monsters lurking in the closet and hiding under the bed. Preying on remote farmsteads, bugbears reveal their presence with thumps in the night or creaks of boards to build lurking dread and arouse suspicion and fear.</p>",
+            "items":{
+                "QX0Ta7fQzEhuiCCB":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "i0HAcFnNZ6dlKhwT":{
+                    "name": "镰刀 Sickle",
+                    "description": ""
+                },
+                "0xfJmXxtDph8nDjZ":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "MUtrSZzTqwA22XOa":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "FLKA2EOS4qdy02od":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "YMj2YteKtdg79DoF":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The bugbear tormentor deals 1d6 extra precision damage to flatfooted creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "bpECAdKNxGcT7pXU":{
+                    "name": "Twin Feint",
+                    "description": "<p>The bugbear tormentor makes a dazzling series of attacks with two weapons, using the first attack to throw their foe off guard against a second attack at a different angle. They make one Strike with each of their two melee weapons, both against the same target. The target is automatically @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against the second attack. Apply the bugbear tormentor's multiple attack penalty to the Strikes normally.</p>"
+                }
+            }
         },
         "Bulette": {
-            "name": "鲨蜥兽 Bulette"
+            "name": "鲨蜥兽 Bulette",
+            "speed": "powerful jumper",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>Bulettes are fearsome predators that roam just beneath the surface of desolate wilderness areas. When they burrow through the ground, only the fin of their thickly armored backs protrudes above-at least until they are ready to leap out and strike their prey. Their appearance, appetite, and iconic dorsal fin have earned the nickname \"landshark.\"</p>\n<p>A typical bulette claims a territory of approximately 500 square miles. When it finds an area rich in food, such as a farming village, it adds that area to its regular patrol route. Over the course of a few months, it can wipe entire settlements off the map. Bulettes are fiercely competitive creatures that battle relentlessly with other predators in their territory. They actively avoid contact or conflict with other members of their kind unless seeking a mate. Bulette pairs share territory and mate for life-a mated pair of bulettes being the only known exception to the creature's penchant for solitude. They rear their young for a short period of time. The mated pair instruct the young bulette how to hunt, teaching their spawn which creatures are easiest to kill and which creatures to avoid. The mated pair drive off their young after its first successful hunt.</p>\n<p>The first bulettes were magically created guardians, intended to serve as frightening pets for a power-hungry and sadistic wizard. The technique for their creation, as well as their original purpose, has since been lost to history, and multiple conflicting accounts of ancient texts exist with dozens of wizards claiming to have been the first inventor of the notorious beast. Some sages postulate that the original inventor may have been an elf-a theory born out of little more than the curious fact that bulettes, for all their ravenous nature, seem to find elf flesh unpalatable. Unfortunately for elves who stumble into a bulette's path, bulettes are no less likely to kill them than any other intruder, simply leaving the bodies unconsumed where they fall.</p>",
+            "items":{
+                "mRElwzY41P9cR0SN":{
+                    "name": "Jaws"
+                },
+                "xCmuYVEvMqVlGxIw":{
+                    "name": "Claw"
+                },
+                "utu2oawY1G8K7q6g":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "KZgYdjuQuicrfTgT":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "9OItti667EywItzF":{
+                    "name": "Favored Prey",
+                    "description": "<p>A bulette gains a +1 circumstance bonus to attack and damage rolls with its jaws against a specific type of creature designated as its favorite food. Unless otherwise stated, a bulette's favored prey is halflings. Elves are never a favored prey for bulettes.</p>"
+                },
+                "woCB9gbBdvxg3WX0":{
+                    "name": "Leaping Charge",
+                    "description": "<p>The bulette attempts a @Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump} or @Compendium[pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump}. If it's adjacent to an enemy at the apex of its High Jump or at the end of its Long Jump, it can make a claw Strike against the enemy at that moment. If the bulette jumps at least 5 feet vertically or at least 20 feet horizontally, it can attempt two claw Strikes instead of one. The bulette's multiple attack penalty doesn't increase until it has made all the claw Strikes that are part of its Leaping Charge.</p>"
+                },
+                "aat9fAhVKzDZsfyl":{
+                    "name": "Powerful Jumper",
+                    "description": "<p>A bulette jumps 10 feet up on a successful @Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump}, or 20 feet up on a critical success.</p>"
+                }
+            }
         },
         "Bunyip": {
-            "name": "水兽 Bunyip"
+            "name": "水兽 Bunyip",
+            "senses": "blood scent, darkvision, scent (imprecise) 100 feet",
+            "publicNotes": "<p>Bunyips are dangerous aquatic predators that resemble a cross between a shark and a seal. Found in freshwater inlets or saltwater coves worldwide, bunyips hunt where prey is plentiful, often to the consternation of coastal residents and fisherfolk.</p>\n<p>Despite their outlandish appearance and tendency to defend their territory with loud, bellowing roars that echo for great distances, bunyips are very rarely sighted by humanoids, leaving many to question their existence. For hundreds of years, bunyips were widely regarded as nothing more than folk tales, and even now that their existence as a species has been proven, the existence of any particular bunyip in a local area is often met with heavy skepticism. While their limited shapechanging abilities are no doubt a significant part of the reason for this air of mystery, another major factor is that the aquatic creatures rarely hunt humanoids, preferring to eat smaller animals. Most bunyips avoid human contact, except when one wanders too close to their den or favorite hunting spot, at which point the territorial bunyip attacks with swift and terrible ferocity. Many scholars agree that a large number of unexplained disappearances near coastal areas are the result of unreported bunyip aggression.</p>\n<p>In some ports, bunyips have learned that delicious prizes can be had from the chum and garbage discarded by fishing boats and merchant vessels. They lurk close to the shore and carefully choose their victims, plucking them off docks and small boats. These bunyips are particularly careful to keep their true forms hidden, but this does little to dull rumors of monster-infested waters.</p>",
+            "items":{
+                "XsEpINoWybq0qnQN":{
+                    "name": "Jaws"
+                },
+                "M6OcH3aIVdTWr7gq":{
+                    "name": "Tail"
+                },
+                "sRHkNxD3UkLsrrJp":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "i8xGkDyTBirx7HaW":{
+                    "name": "Blood Scent",
+                    "description": "<p>The bunyip can smell blood in the water from up to 1 mile away.</p>"
+                },
+                "s4VdQZkBvye1Qm6o":{
+                    "name": "Scent (Imprecise) 100 feet"
+                },
+                "zbg9eaOONakDkuma":{
+                    "name": "Aquatic Opportunity",
+                    "description": "<p>As Attack of Opportunity, but both the bunyip and the triggering creature must be in water.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "8WFwsPMOCNHrJBF8":{
+                    "name": "Blood Frenzy",
+                    "description": "<p><strong>Requirements</strong> The bunyip is not @Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} or already in a frenzy.</p>\n<p><strong>Trigger</strong> The bunyip deals bleed damage to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The bunyip flies into a frenzy that lasts 1 minute. While frenzied, the bunyip gains a +4 status bonus to damage rolls with its jaws, gains 8 temporary HP that go away at the end of the frenzy, and takes a -2 penalty to AC.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.ScZ8tlV5zS0Jwnqn]{Effect: Blood Frenzy}</p>"
+                },
+                "bdrrSnIH32ERMP25":{
+                    "name": "Roar",
+                    "description": "<p>The bunyip lets out a loud and horrifying roar. Other creatures within @Template[type:emanation|distance:100]{100 feet} must succeed at a @Check[type:will|dc:21] save or become @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} (@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure,@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} on a success, or unaffected on a critical success).</p>\n<p>No matter the result, the creature is temporarily immune to the effect for 1 minute.</p>"
+                },
+                "yFqMLM1iygDqwiZC":{
+                    "name": "Shift Form",
+                    "description": "<p>A bunyip can alter its form slightly to gain an advantage and make it harder to recognize. When it does, its teeth shrink and its Jaws Strike doesn't deal the @Localize[PF2E.PersistentDamage.Bleed1d6.success]. It can choose to gain either a long snake tail, granting its tail Strike reach 10 feet and Grab, or squat crocodile legs, increasing its land Speed to 20 feet. If it uses Shift Form again, the bunyip can return to normal or switch between a long tail or crocodile legs.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.USMuxi8ACBJRUrdS]{Effect: Crocodile Form}</p>\n<p>@Compendium[pf2e.bestiary-effects.YIXeQFdrt0vPvmsW]{Effect: Snake Form}</p>"
+                }
+            }
         },
         "Cacodaemon": {
-            "name": "狂躁邪魔 Cacodaemon"
+            "name": "狂躁邪魔 Cacodaemon",
+            "senses": "darkvision",
+            "languages": "Telepathy 100 feet",
+            "publicNotes": "<p>These embodiments of demented violence and spite are spawned from eddies of angry and warped souls amid Abaddon's mists. Cacodaemons constantly hunger for mortal souls and yearn to create suffering. As gnashing spheres of teeth, fins, and spines, they are the weakest of daemonkind, an amalgam of various petty forms of death without the strength that comes from focusing on a single cause of demise.</p>\n<hr />\n<p>Denizens of the bleak and terrible plane of Abaddon, daemons are shaped by and devoted to the destruction of life in all its forms. They seek the death of every mortal being by the most painful and horrible means possible, all in service to the apocalyptic entities known as the Four Horsemen. Each kind of daemon represents a different way to die, and their powers are nearly always aimed at spreading that particular form of death. Through the use of these powers, they seek to drag all existence down into a pit of hopelessness and despair, and to commit all souls to oblivion.</p>\n<p>While those who summon daemons to the Material Plane usually seek to use the creatures' destructive and corrupting powers for their own ends, daemons always look for ways to spread fear, doubt, and despair wherever they go. Often, daemons disguise their plots as the workings of other fiends, knowing that such confusion compounds mortals' fear.</p>\n<p>While all fiends seek to tempt mortals into lives of evil to increase their own numbers and power on their native planes, daemons are further driven by a supernatural hunger for mortal souls and use a variety of methods-not least of which is the cacodaemons' soul gems-to entrap them. On Abaddon and in other forbidding places across the multiverse, souls are simultaneously a delicacy, a trade good, and a source of magical power, and the daemons are among the greatest gluttons, merchants, and abusers of this spiritual \"resource.\"</p>",
+            "items":{
+                "kkOWzP3DmckLh5vC":{
+                    "name": "Divine Innate Spells"
+                },
+                "IeYHBdNAWLIqzRuF":{
+                    "name": "隐形术(随意施法,仅限自身) Invisibility (At Will) (Self Only)",
+                    "description": "<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+                },
+                "pDnKPlqU39ZA6bTX":{
+                    "name": "侦测阵营(随意施法,仅限善良) Detect Alignment (At Will) (Good Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "L225wlWMZnWKniMQ":{
+                    "name": "侦测魔法(随意施法) Detect Magic (At Will)",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "aeJceILHyteCIR57":{
+                    "name": "Jaws"
+                },
+                "ikE6Os9KaQ3E0ApZ":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "M1Iy4WjF2HRmGv0e":{
+                    "name": "Telepathy 100 feet"
+                },
+                "1N7APEdVVZHtrMup":{
+                    "name": "Cacodaemonia",
+                    "description": "<p>The cacodaemon can telepathically communicate with the afflicted creature at any distance on the same plane.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Stage 1</strong> carrier (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 day)</p>"
+                },
+                "6OspJylC319MBk17":{
+                    "name": "Change Shape",
+                    "description": "<ul>\n<li><strong>Lizard</strong>\n<ul>\n<li><strong>Speed</strong> 20 feet</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Jaws]]{Jaws +8} (agile, finesse), <strong>Damage</strong> [[/r {1d8+1}[piercing]]]{1d8+1 piercing}</li>\n</ul>\n</li>\n<li><strong>Octopus</strong>\n<ul>\n<li><strong>Size</strong> small</li>\n<li><strong>Speed</strong> 20 feet, swim 30 feet</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Tentacle]]{Tentacle +8} (finesse), <strong>Damage</strong> [[/r {1d8+1}[bludgeoning]]]{1d8+1 bludgeoning} plus @Compendium[pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab}</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Beak]]{Beak +8} (agile, finesse), <strong>Damage</strong> [[/r {1d6}[piercing] + {2}[poison] # Beak]]{1d6 piercing plus 2 poison}</li>\n</ul>\n</li>\n<li><strong>Scorpion</strong>\n<ul>\n<li><strong>Size</strong> small</li>\n<li><strong>Speed</strong> 30 feet</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Pincer]]{Pincer +8} (agile, finesse), <strong>Damage</strong> [[/r {1d6+1}[bludgeoning]]]{1d6+1 bludgeoning} plus @Compendium[pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab}</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Stinger]]{Stinger +8} (agile, finesse), <strong>Damage</strong> [[/r {1d6}[piercing] + {1d4}[poison] # Stinger]]{1d6 piercing plus 1d4 poison}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "glwIs2UR3O1wG0tc":{
+                    "name": "Soul Lock",
+                    "description": "<p>Once per day, a cacodaemon can ingest the soul of a sentient creature within 30 feet that died within the last minute. When it does, the cacodaemon grows a fist-sized soul gem (Hardness 2, HP 8) in its gut and can regurgitate it at any time as an Interact action.</p>\n<p>Destroying the gem frees the soul within but does not return the deceased creature to life. The caster of a spell to return a creature to life whose soul is trapped within a soul gem must succeed at a @Check[type:religion|dc:30] check. On a success, the soul gem shatters and the creature is returned to life as normal for the spell.</p>\n<p>By using an Interact action, a fiend can ingest a soul gem it is holding, condemning the soul to the fiend's home plane. The fiend gains @Compendium[pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing 5} for 1 minute.</p>"
+                }
+            }
         },
         "Caligni Creeper": {
-            "name": "卡利尼伏行者 Caligni Creeper"
+            "name": "卡利尼伏行者 Caligni Creeper",
+            "hp": "death flash",
+            "senses": "greater darkvision, light blindness",
+            "publicNotes": "<p>The most widespread of the caligni are the mischievous caligni creepers.</p>\n<hr />\n<p>Calignis lurk in subterranean cities, creeping to the surface to steal, stalk, or make mischief. Each caligni serves in a specific role and grows into a specific form as determined by supernatural traditions and influences in caligni society. Regardless of their size or role, all calignis are gaunt, with pale flesh and white eyes. Some surface dwellers call the caligni \"dark folk,\" a term they dislike because it doesn't reflect either their appearance or character, only their environment.</p>",
+            "items":{
+                "HFETDQgqq1x4amjT":{
+                    "name": "Occult Innate Spells"
+                },
+                "haaQ5lL943som2So":{
+                    "name": "黑暗术(随意施法) Darkness (At Will)",
+                    "description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+                },
+                "RT6nchjr7tJKb1wV":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "hJXJHuAtyXXiOxBO":{
+                    "name": "Black Smear Poison",
+                    "description": "<p>Many calignis use a debilitating poison crafted from subterranean fungi.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> As stage 1</p>\n<p><strong>Stage 3</strong> [[/r {1d6}[poison]]]{1d6 poison damage}, and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                },
+                "qFvtSo4GpY09J6wr":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "tBCaXMwzwsRxvg1U":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "oAM6tsN2NTZwvnTf":{
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "hIxE6LMA92SPk1eC":{
+                    "name": "Death Flash",
+                    "description": "<p>When the caligni creeper dies, their body combusts in a flash of bright light.</p>\n<p>All creatures in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:17] save or be @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d6 #rounds]]{1d6 rounds}.</p>\n<p>Creatures with @Compendium[pf2e.bestiary-ability-glossary-srd.I0HYG0ctCLP5JRsW]{Light Blindness} who successfully save are still blinded for 1 round.</p>\n<p>The creeper's gear and treasure are left in a pile where they died. As this isn't a magical effect, the light has no effect within magical darkness.</p>"
+                },
+                "OVmDA2DweiDfmQwN":{
+                    "name": "Light Blindness"
+                },
+                "UipChONJlSGScaQZ":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The caligni creeper deals 1d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            }
         },
         "Caligni Dancer": {
-            "name": "卡利尼舞者 Caligni Dancer"
+            "name": "卡利尼舞者 Caligni Dancer",
+            "hp": "death flare",
+            "senses": "greater darkvision, light blindness",
+            "publicNotes": "<p>Caligni dancers serve as intermediaries between caligni clans.</p>\n<hr />\n<p>Calignis lurk in subterranean cities, creeping to the surface to steal, stalk, or make mischief. Each caligni serves in a specific role and grows into a specific form as determined by supernatural traditions and influences in caligni society. Regardless of their size or role, all calignis are gaunt, with pale flesh and white eyes. Some surface dwellers call the caligni \"dark folk,\" a term they dislike because it doesn't reflect either their appearance or character, only their environment.</p>",
+            "items":{
+                "pZX2G1Vh8XNn8DCw":{
+                    "name": "Occult Innate Spells"
+                },
+                "gb4nDUEQffh7bVIu":{
+                    "name": "反制表演(仅限视觉) Counter Performance (Visual Only)",
+                    "description": "<p><strong>触发</strong> 你或者一个60尺内的盟友掷骰对抗视觉或听觉效果</p>\n<hr />\n<p>你的表演保护着你和盟友。进行一次你所知类型的表演掷骰：如果触发源为视觉效果则为视觉表演，如果触发源为听觉效果则为听觉表演。你和该区域内的盟友可以使用你的表演检定和豁免骰中较好的结果。</p>"
+                },
+                "rztSmsGE00F86gz4":{
+                    "name": "Baton (Light Mace)",
+                    "description": "<p>A light mace has a short wooden or metal shaft ending with a dense metal head. Used much like a club, it delivers heavy bludgeoning blows, but with extra power derived from the head's metal ridges or spikes.</p>"
+                },
+                "s1vorlaJQl2JXBN2":{
+                    "name": "Baton"
+                },
+                "Sj3qaBkh1exbNXJY":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "0Hf2BPIsl4GkboQ4":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "2gy1EqZ99rbJPoec":{
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "tNVPutTbdl3sPaGf":{
+                    "name": "Death Flare",
+                    "description": "<p>When the dancer dies, their body combusts in a flare of white light. All creatures in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:17] save or be @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p>Calignis that fail this save are also @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}. The dancer's gear and treasure are left in a pile where they died. As this isn't a magical effect, the light has no effect within magical darkness.</p>"
+                },
+                "2eV3trm8nKeqQ2Z4":{
+                    "name": "Distracting Frolic",
+                    "description": "<p><strong>Trigger</strong> An ally within 10 feet of the dancer rolls a saving throw against a mental or illusion effect.</p>\n<hr />\n<p><strong>Effect</strong> The target ally can roll the save twice and take the better result.</p>\n<p>@Compendium[pf2e.bestiary-effects.E10qJgInN8Fx3yhW]{Effect: Distracting Frolic}</p>"
+                },
+                "UKfFDeN7IDKW1okj":{
+                    "name": "Dancer's Curse",
+                    "description": "<p>The caligni dancer touches a foe and curses it.</p>\n<p>If the target fails a @Check[type:will|dc:18] save, it gains @Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} and @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p>The target is then temporarily immune for 24 hours.</p>\n<p>These conditions persist until the curse is removed. The victim can attempt a new @Check[type:will|dc:18] save once per hour to end the curse.</p>"
+                },
+                "23duj3dLvK5Gn9tK":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The caligni dancer deals 1d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            }
         },
         "Caligni Stalker": {
-            "name": "卡利尼追踪者 Caligni Stalker"
+            "name": "卡利尼追踪者 Caligni Stalker",
+            "hp": "death flame",
+            "senses": "greater darkvision, light blindness",
+            "publicNotes": "<p>Caligni stalkers are often leaders of caligni enclaves.</p>\n<hr />\n<p>Calignis lurk in subterranean cities, creeping to the surface to steal, stalk, or make mischief. Each caligni serves in a specific role and grows into a specific form as determined by supernatural traditions and influences in caligni society. Regardless of their size or role, all calignis are gaunt, with pale flesh and white eyes. Some surface dwellers call the caligni \"dark folk,\" a term they dislike because it doesn't reflect either their appearance or character, only their environment.</p>",
+            "items":{
+                "mKaR7LWvVhRIbJCG":{
+                    "name": "Occult Innate Spells"
+                },
+                "uqDhwoaUPCRyB1if":{
+                    "name": "黑暗术(随意施法) Darkness (At Will)",
+                    "description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+                },
+                "PUSzBjopjmdEqswm":{
+                    "name": "隐雾术(随意施法) Obscuring Mist (At Will)",
+                    "description": "<p>你唤来一团迷雾。在雾中的所有生物获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，并且在雾外的所有生物对其内的生物获得隐蔽。你可以解消这团云雾。</p>"
+                },
+                "FEtnIGSBP6UDBF00":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "j67v58b1JnGdHgaW":{
+                    "name": "Black Smear Poison",
+                    "description": "<p>Many calignis use a debilitating poison crafted from subterranean fungi.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">T</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> As stage 1</p>\n<p><strong>Stage 3</strong> [[/r {1d6}[poison]]]{1d6 poison damage}, and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                },
+                "ovaI2nqsEYxoo4Ys":{
+                    "name": "短剑 Shortsword",
+                    "description": ""
+                },
+                "7SNUgV6SLqC5TzXJ":{
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "KFObwL3fuLfRhdtm":{
+                    "name": "Death Flame",
+                    "description": "<p>When the stalker dies, their body combusts in a flash of white-hot flame. All creatures in a @Template[type:emanation|distance:20] take [[/r {5d6}[fire]]]{5d6 fire damage} (@Check[type:reflex|dc:21|basic:true] save).</p>\n<p>The stalker's gear and treasure are unaffected by the flames and are left in a pile where they died.</p>"
+                },
+                "TBlcp9L0tEkA3jyF":{
+                    "name": "Double Slice",
+                    "description": "<p>The caligni stalker makes two Strikes against the same target, one with each of their shortswords. The stalker combines the damage of any attacks that hit and applies precision damage, resistances, and weaknesses only once. Both attacks count toward the stalker's multiple attack penalty, but the penalty increases only after both attacks.</p>"
+                },
+                "Wa8dbVwSNL2tEHKt":{
+                    "name": "Encircling Command",
+                    "description": "<p>Each caligni creeper within @Template[type:emanation|distance:30]{30 feet} of the stalker can Step. Each creeper can benefit from Encircling Command only once per round.</p>"
+                },
+                "MjvAem9y7U9Z9AnV":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The caligni stalker deals 1d6 extra precision damage to flat‑footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            }
         },
         "Cassisian": {
             "name": "圣盔天使 Cassisian"
