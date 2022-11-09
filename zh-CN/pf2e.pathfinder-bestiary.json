@@ -17295,61 +17295,712 @@
             }
         },
         "Marilith": {
-            "name": "六臂蛇魔 Marilith"
+            "name": "六臂蛇魔 Marilith",
+            "speed": "from fly spell",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "darkvision; true seeing",
+            "languages": "Telepathy 100 feet",
+            "publicNotes": "<p>Mariliths are the generals of the Abyss, formed from the souls of proud evil mortals, often warlords and despots. They appear as tall and powerfully built humans from the waist up with snake tails and six arms. Because of Lamashtu's prominence over other demonic deities, most pride demons encountered by mortals take female form, but they can be of any gender.</p>\n<p>Mariliths are among the greatest tacticians in the Abyss, and they have an almost supernatural knack for understanding the ripples of chaos and the unpredictable nature of demonic life. Their ability to command armies rises as much from their commanding presence as it does their ability to read into the potential results of any possible act and a sufficient understanding of the flow of entropy to allow them to predict likely outcomes.</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Abyss, it can become a deadly fiend-a demon. Demons are living incarnations of sin-be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold-the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Abyss.</p>",
+            "items":{
+                "yM2uUCjL6GUDVlF0":{
+                    "name": "Divine Innate Spells"
+                },
+                "IkgoKqzoPL0WKSGG":{
+                    "name": "Divine Rituals"
+                },
+                "1NXWQAJohaHClByj":{
+                    "name": "真视术(恒定法术) True Seeing (Constant)",
+                    "description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+                },
+                "ydxJEhxUHDUufocn":{
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "PekoTdQc6oDRhqlf":{
+                    "name": "飞行术(恒定法术) Fly (Constant)",
+                    "description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7环)</strong> 该持续时间增加到1小时。</p>"
+                },
+                "6aID4H750Zqy0EOH":{
+                    "name": "Cold Iron Silver Longsword"
+                },
+                "Q3hmK1bo6Sh5wQEk":{
+                    "name": "Tail"
+                },
+                "wDlRAMig5HNlqg3q":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "WE5R0TF08XSDSPjw":{
+                    "name": "Telepathy 100 feet"
+                },
+                "iEPnPUyNUxfYs63B":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "<p>A marilith gains 5 extra reactions per round that they can use only to make Attacks of Opportunity. The demon can't use more than one on the same triggering action, even if a creature leaves several squares in the marilith's reach, and the marilith must use a different weapon for each Attack of Opportunity.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "Fz4qoI14He66tmpf":{
+                    "name": "Commander's Aura",
+                    "description": "<p>@Template[type:emanation|distance:100]{100 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Commanded or allied evil creatures in the aura of lower level than the marilith gain a +1 circumstance bonus to attack rolls, damage rolls, AC, saves, and skill checks.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.5NSWRxAsJuvwyl0E]{Effect: Commander's Aura}</p>"
+                },
+                "xD2fbKZSefTlgsmQ":{
+                    "name": "Failure Vulnerability",
+                    "description": "<p>A marilith's pride feeds their strength, so the sting of failure wounds them. If the marilith uses a damaging spell or makes a Strike on their turn but doesn't deal any damage that turn, they take [[/r {3d6+10}[mental]]]{3d6+10 mental damage} at the end of their turn and their commander's aura deactivates until the end of their next turn.</p>"
+                },
+                "QReEjgBjoIXn5NnC":{
+                    "name": "Bladestorm",
+                    "description": "<p>The marilith makes up to six longsword Strikes, each against a different target. These attacks count toward the marilith's multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks.</p>"
+                },
+                "YeXnVtwRynKtKDVy":{
+                    "name": "Defensive Assault",
+                    "description": "<p>The marilith makes two Strikes, each with a different weapon, and they use the remaining weapons for protection. The demon gains a circumstance bonus to AC for 1 round equal to the number of weapons not used for attacks. If the marilith later uses any of those weapons to attack (including for an Attack of Opportunity), the bonus to AC decreases by 1 for each weapon used.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.pMPe01GWvfwcYwUR]{Effect: Defensive Assault}</p>"
+                },
+                "NSJZXBcVLdrnmMBh":{
+                    "name": "Focused Assault",
+                    "description": "<p>The marilith attacks a single target with all the weapons they wield in their arms, overwhelming the target with multiple attacks and leaving almost nowhere to dodge. The demon makes a longsword Strike. On a successful attack, the marilith deals longsword damage to the target, plus an additional [[/r {1d8}[slashing]]]{1d8 slashing damage} for every longsword they wield beyond the first (typically [[/r {5d8}[slashing]]]{5d8 extra slashing damage}). Even on a failed attack, the marilith deals the damage from one longsword to the target, though they still miss completely on a critical failure. This counts toward the marilith's multiple attack penalty as a number of attacks equal to the number of longswords the pride demon wields.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.7wDH2q0UcFdu2w58]{Effect: Focused Assault}</p>"
+                },
+                "1xcDVCY3sx0uDDys":{
+                    "name": "高等紧勒 Greater Constrict",
+                    "description": "<p>[[/r {2d12+13}[bludgeoning]]]{2d12+13 bludgeoning damage}, @Check[type:fortitude|dc:39|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                },
+                "53xmmigXl7qYER3Y":{
+                    "name": "Infuse Weapons",
+                    "description": "<p>Any weapon becomes a <em>+2 @Compendium[pf2e.equipment-srd.KCQRFvUgbyclvOGi]{Striking} weapon</em> made of cold iron and silver while a marilith wields it. The marilith can change its evil damage to chaotic whenever it attacks.</p>"
+                },
+                "5uceub19IdfqJ0Ze":{
+                    "name": "Warfare Lore"
+                }
+            }
         },
         "Medusa": {
-            "name": "美杜莎 Medusa"
+            "name": "美杜莎 Medusa",
+            "ac": "all-around vision",
+            "senses": "darkvision",
+            "publicNotes": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>",
+            "items":{
+                "z9bTah65DoASEDhP":{
+                    "name": "短剑 Shortsword",
+                    "description": ""
+                },
+                "ltvMN7K0itu2l3WZ":{
+                    "name": "Snake Fangs"
+                },
+                "F8wXzsUNliJVU8bv":{
+                    "name": "复合短弓 Composite Shortbow",
+                    "description": ""
+                },
+                "NcZMn3pf8nbMeY8x":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "zGXZKhk95VPsSdKN":{
+                    "name": "Biting Snakes",
+                    "description": "<p><strong>Trigger</strong> A creature ends its turn adjacent to the medusa.</p>\n<hr />\n<p><strong>Effect</strong> The medusa makes a snake fangs Strike against the creature.</p>"
+                },
+                "hSGaU1UT8mzmPFWl":{
+                    "name": "Petrifying Gaze",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>When a creature ends its turn in the aura, it must attempt a @Check[type:fortitude|dc:25] save. If the creature fails, it becomes @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>"
+                },
+                "2lGYb3ZO8pwxgMhD":{
+                    "name": "Focus Gaze",
+                    "description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[type:fortitude|dc:25] save against the medusa's petrifying gaze. If the creature was already @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} by petrifying gaze before attempting its save, a failed save causes it to be @Compendium[pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>\n<p>After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>"
+                },
+                "FuDdgAP7wwq6LCFO":{
+                    "name": "Serpent Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                }
+            }
         },
         "Megalodon": {
-            "name": "巨齿鲨 Megalodon"
+            "name": "巨齿鲨 Megalodon",
+            "senses": "blood scent, scent (imprecise) 100 feet",
+            "publicNotes": "<p>Prehistoric sharks of incredible size, strength, and ferocity, megalodons scour waters deep and shallow to sate their considerable hunger. The presence of a megalodon undeniably affects the local aquatic ecosystem.</p>\n<hr />\n<p>Sharks of all shapes and sizes have stalked the oceans, largely unchanged, since primordial times. They are efficient, ruthless predators with multiple rows of razor-sharp teeth capable of rending prey in an instant. Their uncanny ability to smell blood in the water means sharks might show up at any scene of aquatic carnage.</p>",
+            "items":{
+                "EaebstxdYxHFj1bR":{
+                    "name": "Jaws"
+                },
+                "0IZG1AJ5MeYSR9mc":{
+                    "name": "Tail"
+                },
+                "5yDMt3Vna9iVApvJ":{
+                    "name": "Blood Scent",
+                    "description": "<p>The megaladon can smell blood in the water from up to 1 mile away.</p>"
+                },
+                "rjGVnVgJiMZZR6zk":{
+                    "name": "Scent (Imprecise) 100 feet"
+                },
+                "91Bz1Au1eeA0F5Kc":{
+                    "name": "Breach",
+                    "description": "<p>The megalodon Swims up to its swim Speed, then @Compendium[pf2e.actionspf2e.d5I6018Mci2SWokk]{Leaps} vertically out of the water up to 25 feet high, making a Strike against a creature at any point during the jump (this lets it attack a creature within 35 feet of the water's surface or 40 feet with its tail). After the Strike, the megalodon splashes back down into the water.</p>"
+                },
+                "a4bag8JDNGO7xCiD":{
+                    "name": "Savage",
+                    "description": "<p><strong>Requirement</strong> The megalodon hit with a jaws Strike on its most recent action this turn.</p>\n<hr />\n<p><strong>Effect</strong> The creature the megalodon hit takes [[/r {2d12}[slashing]]]{2d12 slashing damage}.</p>"
+                },
+                "gC0TpsGsMQ5RDDau":{
+                    "name": "活吞 Swallow Whole",
+                    "description": "<p>Huge, [[/r {2d8+5}[bludgeoning]]]{2d8+5 bludgeoning}, Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "JWS021oC5szbCrAS":{
+                    "name": "Push 15 feet"
+                }
+            }
         },
         "Megaprimatus": {
-            "name": "大金刚 Megaprimatus"
+            "name": "大金刚 Megaprimatus",
+            "senses": "low-light vision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>The megaprimatus is among the mightiest of apes, quick to confront any perceived intrusions into its domain. With a height of 40 feet, it towers over even most giants, and is used to being the top-tier predator in the region.</p>\n<hr />\n<p>While many apes exhibit peaceful or reclusive behavior, gorillas can be territorial, and the megaprimatus is especially aggressive and dangerous.</p>",
+            "items":{
+                "dsA6QTAsFP5Juo0N":{
+                    "name": "Jaws"
+                },
+                "JfUL91jTnBSObypg":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "eqROgg0bgVWksPcZ":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "ZxIVdGLdVzJ1RVHi":{
+                    "name": "Mangling Rend",
+                    "description": "<p>A megaprimatus makes two fist Strikes against the same target. If both hit, the attack deals an additional [[/r {2d6}[bludgeoning]]]{2d6 bludgeoning damage}, the target is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}, and the target takes a -20-foot status penalty to all Speeds until the end of its next turn.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.5roCV7EbPx1G5xOd]{Effect: Mangling Rend}</p>"
+                },
+                "AuM50DWRYYFugkl6":{
+                    "name": "Terrifying Display",
+                    "description": "<p>The megaprimatus beats its chest in a terrifying display. Creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:27|name:Frightening Display] save.</p>\n<p>While a creature is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} by this ability, it is @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to the megaprimatus and to gorillas.</p>\n<hr />\n<p><strong>Critical Success</strong> No effect and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} until the end of its next turn.</p>"
+                }
+            }
         },
         "Naunet": {
-            "name": "纳乌奈特 Naunet"
+            "name": "纳乌奈特 Naunet",
+            "hp": "fast healing 2",
+            "speed": "freedom of movement",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "entropy sense (imprecise) 30 feet, darkvision",
+            "publicNotes": "<p>Pugnacious and powerfully muscled, naunets serve as scouts and rank-and-file troops of protean armies. Resembling a thick salamander with a wide head, a powerful tail, and tentacles tipped with snapping jaws in place of rear legs, naunets are the most bestial of the proteans and occupy one of their lowest castes. Naunets are 12 feet long and weigh 900 pounds.</p>\n<p>All proteans are prone to unpredictable fits and unexpected action, but compared to most others, naunets are much more bestial. Always ready for a fight, naunets pride themselves in acting swiftly and striking before unpleasant distractions like diplomacy can blunt a combat's beginning.</p>\n<hr />\n<p>Guardians of disorder and natives of the primal plane of chaos known as the Maelstrom, proteans consider it their calling to spread bedlam and hasten entropic ends. The most powerful proteans are demigods known collectively as the protean lords, although they are mysterious entities whose cults on the Material Plane tend to be obscure and secretive.</p>\n<p>Proteans divide themselves into a loose caste system and possess a dizzying variety of powers. Most proteans have a serpentine body with the head of a primeval beast. Scholars have long been intrigued by this fact-that scions of dissolution and disorder would share so many features-pointing out that even in the purest chaos there is some semblance of order. Others note that the serpentine form is one of the most primeval shapes, perhaps suggesting that in a reality at the dawn of time, such shapes were all that could exist. The proteans themselves have little to say on the matter, which, perhaps ironically, only adds to the confusion and lack of consensus surrounding their kind. After all, if even chaos cannot be trusted to be chaotic, would that not be the purest form of entropy?</p>",
+            "items":{
+                "pm2fdTcLLvGAYrvI":{
+                    "name": "Divine Innate Spells"
+                },
+                "H8p1fVftX2xCpcdM":{
+                    "name": "行动自如(恒定法术) Freedom of Movement (Constant)",
+                    "description": "<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+                },
+                "NSZBHCyCvmYgDUpL":{
+                    "name": "隐雾术(随意施法) Obscuring Mist (At Will)",
+                    "description": "<p>你唤来一团迷雾。在雾中的所有生物获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，并且在雾外的所有生物对其内的生物获得隐蔽。你可以解消这团云雾。</p>"
+                },
+                "Kp4bo7vO06rxYNfy":{
+                    "name": "粉碎音波(随意施法) Shatter (At Will)",
+                    "description": "<p>高频音波攻击击碎附近的一件物体。你对该物体造成2d10音波伤害，如果物体的硬度为4或者更低，忽视该硬度。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d10，法术所能忽视的硬度增加2。</p>"
+                },
+                "Oy7DyDa1Fc1uUyJg":{
+                    "name": "侦测阵营(随意施法,仅限守序) Detect Alignment (At Will) (Lawful Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "LwPsr1H56GuAEnbm":{
+                    "name": "Jaws"
+                },
+                "y8ve2tORULDkXFSu":{
+                    "name": "Tail"
+                },
+                "NvaOvaZnru4aSp7g":{
+                    "name": "Tentacle"
+                },
+                "jrRWYmGu9vVkAfdv":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "PWV65LaMZJtQOg9d":{
+                    "name": "Entropy Sense (Imprecise) 30 feet",
+                    "description": "<p>A naunet can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. A creature under the effects of <em>@Compendium[pf2e.spells-srd.EoKBlgf6Smt8opaU]{Nondetection}</em> or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
+                },
+                "gQsn9Gd92k5s2c0r":{
+                    "name": "Fast Healing 2"
+                },
+                "UVREJWrU0MjhSxLs":{
+                    "name": "Protean Anatomy",
+                    "description": "<p>A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} or @Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened}, the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.c6SiBB3mzV8lZUQr]{Effect: Protean Anatomy}</p>"
+                },
+                "zoTuvqovtFZqbEp6":{
+                    "name": "Adaptive Strike",
+                    "description": "<p>The naunet chooses adamantine, cold iron, or silver; its melee Strikes count as that type for 1 minute or until it uses Adaptive Strike again.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.361dIAAhiZE0wg8v]{Effect: Adaptive Strike}</p>"
+                },
+                "sNxY0Neqlt313iVL":{
+                    "name": "Change Shape",
+                    "description": "<p>The naunet can take the appearance of any Small, Medium, or Large animal, beast, or humanoid. This doesn't change its Speed or its attack and damage bonuses with its Strikes but might change the damage type its Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "YaAoatEoLAq9KaoR":{
+                    "name": "Confounding Slam",
+                    "description": "<p>A creature hit by the naunet's tentacle Strike is @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for [[/br 1d4 #rounds]]{1d4 rounds} (@Check[type:will|dc:24] negates). If the creature was already stupefied in this way, the duration extends by 1 round instead. A chaotic creature is only @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} instead.</p>"
+                },
+                "NDdkhcyKoaZMjFh6":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d8+8}[bludgeoning]]]{1d8+8 bludgeoning damage}, @Check[type:fortitude|dc:26|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                }
+            }
         },
         "Ofalth": {
-            "name": "残渣怪 Ofalth"
+            "name": "残渣怪 Ofalth",
+            "hp": "filth wallow",
+            "senses": "darkvision",
+            "languages": "(Can't Speak Any Language)",
+            "publicNotes": "<p>Found in castle dung heaps, city dumps, and sewers, ofalths are thought to be cousins of shamblers. But whereas shamblers are living heaps of soggy vegetation, ofalths are living heaps of matter from an altogether more unpleasant source: these monsters look like 9-foot-tall amalgamations of wet detritus, sewage, and rubbish with long tentacular arms and stout legs. It can be difficult to tell where an ofalth's body ends and the foul contents of the cesspit they wallow within begins. They move through refuse heaps in search of organic material in their endless quest to sate their hunger.</p>\n<p>Though ofalths have a limited intellect, they still exhibit a vile curiosity. They are no strangers to dissecting their prey after it has succumbed to their wasting disease-a terrible and aptly named affliction that causes the victim's blood to seep from its pores. When an ofalth manages to secure a victim alive, it may even torture its food by consuming it bit by bit while it shrieks for mercy.</p>\n<p>Ofalths' domains typically overlap with those of otyughs, who fear ofalths, though otyughs have also been known to band together in order to take down an ofalth for its rubbery flesh, which the otyughs consider an intoxicating delicacy. On the other hand, ofalths seem to particularly enjoy taking otyughs apart one piece at a time. They have been known to keep a captured otyugh alive for days or even weeks, forcing the otyugh to endure the cloying scent of its own body decaying before the ofalth feeds.</p>",
+            "items":{
+                "Vdx4lOd9PGzzo18M":{
+                    "name": "Fling Offal"
+                },
+                "0oxd4GYRm9A47FeP":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "3A8TmAuVP2C3XDsX":{
+                    "name": "Refuse Pile",
+                    "description": "<p>When it's not in danger, an ofalth can spend 1 minute settling into a 10-foot pile that looks like a heap of garbage. While doing so, the ofalth gains a +2 circumstance bonus to AC but can't use attack, manipulate, or move actions. A creature that enters the area of the garbage heap or interacts with it must attempt a save against the ofalth's putrid stench and wretched weeps disease. An ofalth can leave this form using a single action.</p>"
+                },
+                "CDkktCbVeomEuX4D":{
+                    "name": "Filth Wallow",
+                    "description": "<p>A ofalth gains @Compendium[pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing 2} when in an area with a high concentration of debris, junk, or excrement, such as a refuse heap or sewer.</p>"
+                },
+                "h3RAiOfN4DCwKqV0":{
+                    "name": "Putrid Stench",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the aura must succeed at a @Check[type:fortitude|dc:28] save or become @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} until the end of its turn (plus @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for as long as it is sickened on a critical failure). While within the aura, an affected creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{Effect: Stench}</p>"
+                },
+                "qcaLKbJ4n5L9k9Vc":{
+                    "name": "Wretched Weeps",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Localize[PF2E.PersistentDamage.Bleed2d8.success] every hour and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Localize[PF2E.PersistentDamage.Bleed2d8.success] every hour and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                }
+            }
         },
         "Ogre Boss": {
-            "name": "食人魔老大 Ogre Boss"
+            "name": "食人魔老大 Ogre Boss",
+            "senses": "darkvision",
+            "publicNotes": "<p>In ogre society, might makes more than right-it makes the rules. The strongest or most violent ogre in a family is invariably that family's boss. Quick to hook fallen foes on their weapons, even other ogres fear the repercussions of displeasing an ogre boss. When an ogre boss barks out commands, the other members of the family move quickly to obey.</p>\n<hr />\n<p>Ogres embody brutish, amoral violence and cruelty. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. Ogres are sadists that enjoy remorseless murder, torture, degradation, and mutilation in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller and more beautiful, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp. But for all their creativity in developing methods of violence, ogres often remain too dim-witted to realize that their playthings lack an ogre's robust fortitude and high pain tolerance, so most captives die far sooner than the ogres might prefer. Such a fate is perhaps preferable however, as those who survive too long as ogres' playthings suffer lasting mental scars from the horrifying abuse. A captive able to keep their wits can sometimes trick the brutes by promising treasure, meatier captives, or other crude amusements, taking advantage of an ogre's limited intellect to engineer opportunities to escape.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. Ogres practice incest regularly, believing that it makes for stronger familial bonds, and most ogres are misshapen or mutated from generations of inbreeding. The most powerful ogre in any family is the \"boss\"-usually the family's patriarch or matriarch-while other ogres in the family learn to obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. These lairs are filthy and frequently contain all-too-recognizable evidence of their depravity.</p>",
+            "items":{
+                "yfLFfSeyPeThnDPE":{
+                    "name": "Ogre Hook",
+                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
+                },
+                "K8rZwgv45XvIe8vL":{
+                    "name": "Ogre Hook",
+                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
+                },
+                "BXuDhj7X68wG6zma":{
+                    "name": "标枪 Javelin",
+                    "description": ""
+                },
+                "6xrvE4IdhDnQNzDW":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "RKyutDZZD9yAhzjX":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "KxNiF9bYl6kA6FRd":{
+                    "name": "Bellowing Command",
+                    "description": "<p>The ogre boss issues a command to hasten their fellows. Each ogre ally who hears and understands this command becomes @Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} until the end of that ally's next turn, but can use the extra action only to Step or Stride.</p>"
+                },
+                "cg8c4dIdBFiff9le":{
+                    "name": "Sweeping Hook",
+                    "description": "<p><strong>Trigger</strong> The ogre boss successfully @Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trips} a creature using an ogre hook.</p>\n<hr />\n<p><strong>Effect</strong> The ogre boss makes an ogre hook Strike against the creature they tripped.</p>"
+                }
+            }
         },
         "Ogre Glutton": {
-            "name": "贪食食人魔 Ogre Glutton"
+            "name": "贪食食人魔 Ogre Glutton",
+            "senses": "darkvision",
+            "publicNotes": "<p>Ogre gluttons take the act of feeding to a horrific extreme, capable of extending their already cavernous mouths wide enough to gulp down a halfling. Stories of ogre gluttons being tricked into eating razor-edged shields or barrels filled with poisoned meat are common, but such tales are of little consolation to those who have been gobbled down whole by these ravenous giants. In addition to their sadistic table manners, ogre gluttons have a disturbing knack for coming up with violent \"games\" that are little more than drawn-out torments, yet those who somehow manage to beat a glutton at the rules of its own game can often enrage and frustrate the ogre enough that the resulting tantrum is more than enough distraction to afford a last-ditch escape from doom.</p>\n<hr />\n<p>Ogres embody brutish, amoral violence and cruelty. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. Ogres are sadists that enjoy remorseless murder, torture, degradation, and mutilation in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller and more beautiful, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp. But for all their creativity in developing methods of violence, ogres often remain too dim-witted to realize that their playthings lack an ogre's robust fortitude and high pain tolerance, so most captives die far sooner than the ogres might prefer. Such a fate is perhaps preferable however, as those who survive too long as ogres' playthings suffer lasting mental scars from the horrifying abuse. A captive able to keep their wits can sometimes trick the brutes by promising treasure, meatier captives, or other crude amusements, taking advantage of an ogre's limited intellect to engineer opportunities to escape.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. Ogres practice incest regularly, believing that it makes for stronger familial bonds, and most ogres are misshapen or mutated from generations of inbreeding. The most powerful ogre in any family is the \"boss\"-usually the family's patriarch or matriarch-while other ogres in the family learn to obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. These lairs are filthy and frequently contain all-too-recognizable evidence of their depravity.</p>",
+            "items":{
+                "qXMpQcdrpm3l454K":{
+                    "name": "巨斧 Greataxe",
+                    "description": ""
+                },
+                "D4kBzUzbrcoM0VDr":{
+                    "name": "Jaws"
+                },
+                "k45QQ0xBwRtwJCeF":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "SzfxfFohnnwRyEeK":{
+                    "name": "Glutton's Feast",
+                    "description": "<p>If the ogre glutton damages a living creature with their jaws Strike, they gain [[/r 1d4 #Temporary Hit Points]]{1d4 temporary Hit Points} for 1 minute.</p>"
+                },
+                "DvjFG8xZGQmhN7AK":{
+                    "name": "Glutton's Rush",
+                    "description": "<p>The ogre glutton Strides twice and makes a jaws Strike. If they damage a living creature with this Strike, the temporary Hit Points they receive from Glutton's Feast is increased to [[/r {2d4}[temporary hit points]]]{2d4}.</p>"
+                },
+                "OQICdYHqGHNlnuut":{
+                    "name": "活吞 Swallow Whole",
+                    "description": "<p>Small, [[/r {2d4+4}[bludgeoning]]]{2d4+4 bludgeoning damage}, Rupture 14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                }
+            }
         },
         "Ogre Warrior": {
-            "name": "食人魔战士 Ogre Warrior"
+            "name": "食人魔战士 Ogre Warrior",
+            "senses": "darkvision",
+            "publicNotes": "<p>The simplest of ogres are slabs of muscle with hatefully beady eyes, misshapen visages, and malformed bodies. Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin.</p>\n<hr />\n<p>Ogres embody brutish, amoral violence and cruelty. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. Ogres are sadists that enjoy remorseless murder, torture, degradation, and mutilation in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller and more beautiful, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp. But for all their creativity in developing methods of violence, ogres often remain too dim-witted to realize that their playthings lack an ogre's robust fortitude and high pain tolerance, so most captives die far sooner than the ogres might prefer. Such a fate is perhaps preferable however, as those who survive too long as ogres' playthings suffer lasting mental scars from the horrifying abuse. A captive able to keep their wits can sometimes trick the brutes by promising treasure, meatier captives, or other crude amusements, taking advantage of an ogre's limited intellect to engineer opportunities to escape.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. Ogres practice incest regularly, believing that it makes for stronger familial bonds, and most ogres are misshapen or mutated from generations of inbreeding. The most powerful ogre in any family is the \"boss\"-usually the family's patriarch or matriarch-while other ogres in the family learn to obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. These lairs are filthy and frequently contain all-too-recognizable evidence of their depravity.</p>",
+            "items":{
+                "uK2zvEwcP8cWJG6x":{
+                    "name": "Ogre Hook",
+                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
+                },
+                "qjYI8SCJrXWZopn6":{
+                    "name": "Ogre Hook",
+                    "description": "<p>Ogres are known for using immense, curved picks called ogre hooks.</p>"
+                },
+                "kN3B1jnfTS7LsbUS":{
+                    "name": "标枪 Javelin",
+                    "description": ""
+                },
+                "nQAtVtNKfvmpm1T4":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                }
+            }
         },
         "Orc Brute": {
-            "name": "兽人蛮兵 Orc Brute"
+            "name": "兽人蛮兵 Orc Brute",
+            "senses": "darkvision",
+            "publicNotes": "<p>If orc armies are rarely well organized, this shortcoming can likely be traced to the furious and undisciplined rank-and-file brutes who make up the bulk of an orc warband.</p>\n<hr />\n<p>Orcs are violent, monstrous humanoids that live by the rule that might makes right. They amass in brutal warbands both large and small, decimating and robbing those unlucky enough to cross their path. Countless small settlements, outposts, and forts have fallen at the hands of orc raiders, whose fecundity and sheer destructiveness leave an indelible mark on the lands they conquer. Survivors of orc invasions are as likely to be fed to the orcs' war beasts as they are to be taken as slaves. Unspeakable atrocities await any outsiders brought back to orc encampments, and to many, death is a far more preferable outcome compared to capture by orcs.</p>\n<p>Physically, orcs tower over most humanoids and look practically custom-made for violence with their rough flesh, sturdy bone, and iron-hard muscle. For all their tough looks, however, orcs are far from invincible. They lack the discipline to conduct large-scale campaigns, for one thing, and they typically lose their heads in the heat of battle. Even their skin scars easily-though this is a source of pride to the orc people, since scars signify strength and experience in battle. To orcs, the crisscross of old wounds are a much a badge of pride and honor as any beheaded foe or claimed trophy.</p>\n<p>Orcs are a people of violent passions in all that they do, not just war. Bonds of blood are especially strong among orcs, and lineage is important. The strongest orc bands are typically made up of brothers and sisters in more than arms; orcs fight harder when they are protecting their own kinsfolk, and orc warriors will fight tirelessly to avenge fallen family members. This emphasis on bloodlines is not an altruistic one, however, and is in fact a double-edged sword. Orcs whose families have been killed find themselves at the bottom of the clan's totem pole, and even a famous chieftain can become powerless overnight if their brethren aren't there to back them up.</p>\n<p>The chaotic and fractious nature of orc culture results in a great variety of beliefs, superstitions, and legacies among different clans. This cultural divergence causes substantial infighting among orc bands, in many cases preventing the rise of larger orc nations. It can also frustrate many attempts at diplomacy, as the taboos of one band may be commonplace and thoroughly accepted practices among others. Navigating a specific band's culture can often mean the difference between life and death to those who deal with orcs off the field of war. Although orcs, as a rule, rarely deal with outsiders, they recognize the benefits of trade and willingly swap resources with other violent peoples like hobgoblins, drow, and many humans.</p>",
+            "items":{
+                "RUBYPaAp1dlf9rWN":{
+                    "name": "Shoddy Breastplate",
+                    "description": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half‑plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+                },
+                "DmNGJHLmXcMGdmUS":{
+                    "name": "兽人指匕 Orc Knuckle Dagger",
+                    "description": ""
+                },
+                "TS7iVUZNmP0Szdfh":{
+                    "name": "标枪 Javelin",
+                    "description": ""
+                },
+                "slCMgd2stlwxBKdg":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                }
+            }
         },
         "Orc Warrior": {
-            "name": "兽人勇士 Orc Warrior"
+            "name": "兽人勇士 Orc Warrior",
+            "senses": "darkvision",
+            "publicNotes": "<p>The typical orc warrior is a violent combatant familiar to many adventurers. Orc warriors fight for their clan, for riches, and- perhaps most of all-for personal glory.</p>\n<hr />\n<p>Orcs are violent, monstrous humanoids that live by the rule that might makes right. They amass in brutal warbands both large and small, decimating and robbing those unlucky enough to cross their path. Countless small settlements, outposts, and forts have fallen at the hands of orc raiders, whose fecundity and sheer destructiveness leave an indelible mark on the lands they conquer. Survivors of orc invasions are as likely to be fed to the orcs' war beasts as they are to be taken as slaves. Unspeakable atrocities await any outsiders brought back to orc encampments, and to many, death is a far more preferable outcome compared to capture by orcs.</p>\n<p>Physically, orcs tower over most humanoids and look practically custom-made for violence with their rough flesh, sturdy bone, and iron-hard muscle. For all their tough looks, however, orcs are far from invincible. They lack the discipline to conduct large-scale campaigns, for one thing, and they typically lose their heads in the heat of battle. Even their skin scars easily-though this is a source of pride to the orc people, since scars signify strength and experience in battle. To orcs, the crisscross of old wounds are a much a badge of pride and honor as any beheaded foe or claimed trophy.</p>\n<p>Orcs are a people of violent passions in all that they do, not just war. Bonds of blood are especially strong among orcs, and lineage is important. The strongest orc bands are typically made up of brothers and sisters in more than arms; orcs fight harder when they are protecting their own kinsfolk, and orc warriors will fight tirelessly to avenge fallen family members. This emphasis on bloodlines is not an altruistic one, however, and is in fact a double-edged sword. Orcs whose families have been killed find themselves at the bottom of the clan's totem pole, and even a famous chieftain can become powerless overnight if their brethren aren't there to back them up.</p>\n<p>The chaotic and fractious nature of orc culture results in a great variety of beliefs, superstitions, and legacies among different clans. This cultural divergence causes substantial infighting among orc bands, in many cases preventing the rise of larger orc nations. It can also frustrate many attempts at diplomacy, as the taboos of one band may be commonplace and thoroughly accepted practices among others. Navigating a specific band's culture can often mean the difference between life and death to those who deal with orcs off the field of war. Although orcs, as a rule, rarely deal with outsiders, they recognize the benefits of trade and willingly swap resources with other violent peoples like hobgoblins, drow, and many humans.</p>",
+            "items":{
+                "mHS7Uj0GKGKhQiNo":{
+                    "name": "兽人斩首斧 Orc Necksplitter",
+                    "description": ""
+                },
+                "54j0gybWlIAueFkZ":{
+                    "name": "短剑 Shortsword",
+                    "description": ""
+                },
+                "freYXZtmDhD5zIrA":{
+                    "name": "标枪 Javelin",
+                    "description": ""
+                },
+                "V9zIFbIReO27zwGu":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "AsGPSfdLJ7pQhwZZ":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                }
+            }
         },
         "Owlbear": {
-            "name": "枭熊 Owlbear"
+            "name": "枭熊 Owlbear",
+            "senses": "low-light vision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>With the body of a powerful brown bear and the keen senses of an owl, the owlbear is a dangerous territorial predator, fearlessly attacking any creature that strays into its domain. Those who run afoul of an owlbear hear its terrifying screech only seconds before the massive creature is upon them, ripping them apart with deadly talons and a powerful beak.</p>\n<p>Although their origin is lost to time, owlbears are assumed to be the result of a magical experiment to make a more cunning predator. According to the legend, the wizard was too successful and ended up being the flrst victim of the beast. Today, owlbears can be found around the world, with a variety of features. While the most common subspecies looks like a brown bear with the features of a great horned owl, owlbears from the frozen north might resemble polar bears mixed with snowy owls, and in temperate rain forests they might resemble black bears with the heads of barn owls.</p>\n<p>Most owlbears live solitary lives, gathering only to mate and raise cubs, which are hatched from eggs. An owlbear's territory usually extends to around 5 miles from its lair, with clear signs of its habitat appearing with 1 mile (clawed up trees, gigantic feathers, and shredded carcasses). The lair of an owlbear rarely holds anything of value, but some adventurers have found trinkets, coins, and even jewelry in the massive pellets of undigested bones these monsters leave behind.</p>",
+            "items":{
+                "sqceAJWlpdKGnHvx":{
+                    "name": "Talon"
+                },
+                "LIdmD7VqztundfTh":{
+                    "name": "Beak"
+                },
+                "r5yruYZzaDx9MoHR":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "VQW9KJrLdz5lDjJ9":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "vTXaShzYmcNbRjzk":{
+                    "name": "Bloodcurdling Screech",
+                    "description": "<p>The owlbear unleashes a loud screech that terrifies its prey. Each creature in an @Template[type:emanation|distance:80] must attempt a @Check[type:will|dc:20] save. Regardless of the result, creatures are temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round and @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                },
+                "vudcfpUT9un2pDOP":{
+                    "name": "Gnaw",
+                    "description": "<p><strong>Requirements</strong> The owlbear has a creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} with its talons.</p>\n<hr />\n<p><strong>Effect</strong> The owlbear attempts to disembowel the creature with a beak Strike. If the Strike hits, the target must attempt a @Check[type:will|dc:22] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The target is sickened 1 and @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it remains sickened.</p>"
+                },
+                "qCmKPruRObzVL1Dr":{
+                    "name": "Screeching Advance",
+                    "description": "<p>The owlbear makes a Bloodcurdling Screech and Strides twice. All creatures within @Template[type:emanation|distance:80]{80 feet} of the owlbear at any point during this movement are subjected to the effects of Bloodcurdling Screech.</p>"
+                }
+            }
         },
         "Pegasus": {
-            "name": "天马 Pegasus"
+            "name": "天马 Pegasus",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "languages": "(Can't Speak Any Language)",
+            "publicNotes": "<p>The pegasus is a winged horse prized for its capacity to serve as an aerial mount. Unfortunately for those who desire a saddle-trained pegasus, pegasi are wild creatures and do not readily accept even well-intentioned riders. Pegasi actively resist being mounted or controlled by evil creatures, attempting to buck an unwanted rider at every opportunity. A typical pegasus stands 6 feet high at the shoulder, weighs 1,500 pounds, and has a wingspan of 20 feet.</p>\n<p>Pegasi are highly intelligent beasts and have a strong sense of pride and honor. The best way to entreat a pegasus is by speaking to it with grace and offering gifts appropriate to a creature of such majesty. Prospective riders who seek the mount for a worthy cause or virtuous quest have a much easier time coaxing a pegasus into granting its favor. Regardless, a pegasus never accepts a bit or saddle, for reasons both practical and purely egotistical.</p>\n<p>In the wild, pegasi live in small herds and establish territories on remote mountains where they are relatively safe from hunters and slavers. They mature at the same rate as horses and can even breed with other equines, though the outcome of such unions is typically a foal with the traits of its least magical parent. On rare occasions, the interbreeding of a pegasus and a unicorn may result in a winged unicorn with characteristics of both parents and an unrivaled sense of righteousness.</p>\n<p>Some pegasi carry in them the blood of a mighty and heroic ancestor. These champions of pegasus-kind dedicate their long lives to the pursuit of justice. They possess powerful supernatural abilities to aid them in this fight, such as resistance to fire and poison, immunity to petrification, and holy hoof attacks.</p>",
+            "items":{
+                "2fZ7E297Z4PtEWQg":{
+                    "name": "Hoof"
+                },
+                "eDMgpSPjK69nCKMZ":{
+                    "name": "Wing"
+                },
+                "fTIWo8M9tHghfIgU":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "hXmPoWQ69iXdq42A":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "bqcTHqymDNnpRDg9":{
+                    "name": "甩脱 Buck",
+                    "description": "<p>@Check[type:reflex|dc:19]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+                },
+                "YdXTRnJYFdbi7JTh":{
+                    "name": "Assisted Mount",
+                    "description": "<p><strong>Requirement</strong> The pegasus is Flying without a rider.</p>\n<hr />\n<p><strong>Effect</strong> The pegasus Flies. At any point during the movement, it can allow a willing adjacent creature to @Compendium[pf2e.actionspf2e.PM5jvValFkbFH3TV]{Mount} it. That creature must use a reaction to do so.</p>"
+                },
+                "kHo1nNFrNvhFTdVm":{
+                    "name": "Gallop",
+                    "description": "<p>The pegasus uses 2 move actions, each of which can be either Stride or Fly. It gains a +20-foot circumstance bonus to its Speeds during a Gallop.</p>"
+                }
+            }
         },
         "Plague Zombie": {
-            "name": "瘟疫丧尸 Plague Zombie"
+            "name": "瘟疫丧尸 Plague Zombie",
+            "hp": "negative healing",
+            "senses": "darkvision",
+            "publicNotes": "<p>Plague zombies are infested with hideous contagions.</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed.</p>",
+            "items":{
+                "MuiyXm8KyQF57NaW":{
+                    "name": "Jaws",
+                    "description": "<p><strong>Requirement</strong> The zombie has a creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}.</p>"
+                },
+                "fTPjypXzhscP42dn":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "a2pZeef5wn9y5xAA":{
+                    "name": "Slow",
+                    "description": "<p>A zombie is permanently @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+                },
+                "RhGXKyPEo0bWS5D1":{
+                    "name": "Zombie Rot",
+                    "description": "<p>An infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[negative]]]{1d6 negative damage} (1 day)</p>\n<p><strong>Stage 3</strong> [[/r {1d6}[negative]]]{1d6 negative damage} (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {1d6}[negative]]]{1d6 negative damage} (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as a plague zombie immediately</p>"
+                }
+            }
         },
         "Quasit": {
-            "name": "小恶魔 Quasit"
+            "name": "小恶魔 Quasit",
+            "senses": "darkvision",
+            "languages": "Telepathy (Touch)",
+            "publicNotes": "<p>Unlike other demons, quasits are formed when a mortal spellcaster sheds a portion of their own sinful soul to create a familiar or companion. When these quasits outlive their creators, they become free willed and seek methods of returning to the Abyss, a task that requires pledging servitude to more powerful demons, so many quasits instead opt to remain on the Material Plane to promote evil and hope for chance and luck to someday provide them with a method of reaching the Abyss on their own.</p>",
+            "items":{
+                "NFnbEaaMOHmME3CN":{
+                    "name": "Divine Innate Spells"
+                },
+                "8e3vdJRcFBLL1E8q":{
+                    "name": "隐形术(随意施法,仅限自身) Invisibility (At Will) (Self Only)",
+                    "description": "<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+                },
+                "JcNx2oSCr0ITXfqs":{
+                    "name": "侦测阵营(随意施法,仅限善良) Detect Alignment (At Will) (Good Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "cNFzUdZr8X6PFBwV":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "YsodmcYoo9fl86Bj":{
+                    "name": "Claw"
+                },
+                "2arq3zK9f6JQ5ZcN":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "mAzjVKaBRjpMwszN":{
+                    "name": "Telepathy (Touch)"
+                },
+                "E6yHKgr49GpD3BXa":{
+                    "name": "Abyssal Knowledge",
+                    "description": "<p>When a quasit offers @Compendium[pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aid} for an Arcana or Religion check, it gets the critical success result on any success and gets the critical failure result on any failure.</p>"
+                },
+                "GdWAi69mvxSgSJOn":{
+                    "name": "Virtue Aversion",
+                    "description": "<p>The quasit's link to a mortal soul gave it birth, but it presents a vulnerability. Once per round, a creature can present an object related to something virtuous or good in the life of the quasit's creator (such as a beloved daughter's doll) as an Interact action to automatically deal the quasit [[/r {2d6}[mental]]]{2d6 mental damage}.</p>"
+                },
+                "9boiwlXx7yggBu6F":{
+                    "name": "Abyssal Healing",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The quasit restores [[/r {1d6}[healing]]]{1d6 HP} to itself.</p>"
+                },
+                "o7HPbnFCe1XPngQQ":{
+                    "name": "Change Shape",
+                    "description": "<ul>\n<li><strong>Bat</strong>\n<ul>\n<li><strong>Senses</strong> Echolocation 40 feet</li>\n<li><strong>Speed</strong> 15 feet, fly 30 feet</li>\n<li><strong>Melee</strong> fangs [[/r 1d20+7 #Fangs]]{+7}/[[/r 1d20+3 #Fangs]]{+3}/[[/r 1d20-1 #Fangs]]{-1} (agile), <strong>Damage</strong> [[/r {1d4-1}[piercing]]]{1d4-1 piercing damage}</li>\n<li><strong>Melee</strong> wing [[/r 1d20+7 #Wing]]{+7}/[[/r 1d20+3 #Wing]]{+3}/[[/r 1d20-1 #Wing]]{-1} (agile), <strong>Damage</strong> [[/r {1d4-1}[bludgeoning]]]{1d4-1 bludgeoning damage}</li>\n</ul>\n</li>\n<li><strong>Centipede</strong>\n<ul>\n<li><strong>Speed</strong> 10 feet, climb 10 feet</li>\n<li><strong>Melee</strong> mandibles [[/r 1d20+7 #Mandibles]]{+7}/[[/r 1d20+2 #Mandibles]]{+2}/[[/r 1d20-3 #Mandibles]]{-3} (poison), <strong>Damage</strong> [[/r {1}[piercing]+{1d4}[poison]]]{1 piercing damage + 1d4 poison damage}</li>\n</ul>\n</li>\n<li><strong>Toad</strong>\n<ul>\n<li><strong>Senses</strong> @Compendium[pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r]{Scent} (Imprecise) 30 feet</li>\n<li><strong>Speed</strong> 5 feet</li>\n<li><strong>Melee</strong> jaws [[/r 1d20+7 #Jaws]]{+7}/[[/r 1d20+2 #Jaws]]{+2}/[[/r 1d20-3 #Jaws]]{-3}, <strong>Damage</strong> [[/r {1}[bludgeoning]]]{1 bludgeoning damage}</li>\n</ul>\n</li>\n<li><strong>Wolf</strong>\n<ul>\n<li><strong>Size</strong> Medium</li>\n<li><strong>Senses</strong> @Compendium[pf2e.bestiary-ability-glossary-srd.rqfnQ5VHT5hxm25r]{Scent} (Imprecise) 30 feet</li>\n<li><strong>Speed</strong> 40 feet, climb 10 feet</li>\n<li><strong>Melee</strong> jaws [[/r 1d20+7 #Jaws]]{+7}/[[/r 1d20+2 #Jaws]]{+2}/[[/r 1d20-3 #Jaws]]{-3}, <strong>Damage</strong> [[/r {1d10-1}[piercing]]]{1d10-1 piercing damage} plus @Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{Knockdown}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                },
+                "PJbq8TKDuFGf9n7l":{
+                    "name": "Quasit Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>"
+                },
+                "lxNScLMLEw8NbtpU":{
+                    "name": "Knockdown (Wolf Form)"
+                }
+            }
         },
         "Quatoid": {
-            "name": "人面章鱼 Quatoid"
+            "name": "人面章鱼 Quatoid",
+            "senses": "darkvision",
+            "publicNotes": "<p>Quatoids are peculiar, mysterious elementals native to the Plane of Water that resemble four-tentacled octopuses with eerily humanoid faces on their mantles.</p>\n<hr />\n<p>Water elementals can be very destructive, but often not intentionally so; just as water can bring life to those in need on the Material Plane, its waves can pound shores and rains can flood cities. Water elementals are similarly difficult to predict.</p>",
+            "items":{
+                "2PnyMPtvBpBFJJyw":{
+                    "name": "Primal Innate Spells"
+                },
+                "Zo1gKFEHyKae5EQL":{
+                    "name": "水流冲击(随意施法) Hydraulic Push (At Will)",
+                    "description": "<p>你唤来一团强力的高压水流，撞击目标并令其后退。尝试一次远程法术攻击骰。</p>\n<hr />\n<p><strong>大成功</strong> 目标承受6d6钝击伤害，并且被击退10尺。</p>\n<p><strong>成功</strong> 目标承受3d6钝击伤害，并且被击退5尺。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+                },
+                "8JKL1RJJmQI5QjnF":{
+                    "name": "Tentacle"
+                },
+                "wHTcTY8XLxxGwUU9":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "QphofWAqcVVsApgN":{
+                    "name": "Calming Bioluminescence",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The aura sheds dim light. Creatures in the emanation gain a +2 circumstance bonus to saving throws against emotion effects. The quatoid can activate or deactivate its calming bioluminescence as a single action, which has the concentrate trait.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.pfG1S7yShwkHT9e0]{Effect: Calming Bioluminescence}</p>"
+                },
+                "ryo9HmpaThFAUxD6":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d12+6}[bludgeoning]]]{1d12+6 bludgeoning}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "cszQAZpBpMXrkQrA":{
+                    "name": "元素学识",
+                    "description": ""
+                }
+            }
         },
         "Redcap": {
-            "name": "红帽精 Redcap"
+            "name": "红帽精 Redcap",
+            "hp": "fast healing 10",
+            "senses": "low-light vision",
+            "publicNotes": "<p>Redcaps are sadistic and capricious fey who thrill in bloodletting and murder. While they are most famous for appearing as wizened, bearded men, redcap women are no less fearsome or cruel. Redcaps are ultimately craven bullies, cowed by anything more powerful than themselves, a trait that leads them to fear and despise the symbols of good deities. Many fairy tales explain how the redcaps draw power from dipping the hats for which they are named in fresh blood. Just as iconic to these cruel little fey are their iron-clad boots, and the clanging sound of their metal soles clanking on stone floors is both discordant and disconcerting-especially to those who recognize the sound for what it is. Redcaps typically stand only 3 feet tall, with hunched frames, pointed ears, crooked teeth, and long, white, tangled hair.</p>",
+            "items":{
+                "9K08qcNrvT5fefj0":{
+                    "name": "Iron Boots"
+                },
+                "qxeMxKzn8k64O7D0":{
+                    "name": "Red Cap"
+                },
+                "8CNN6le6tEVrWmR5":{
+                    "name": "巨镰 Scythe",
+                    "description": ""
+                },
+                "r4Qkdy83VOkw6r0p":{
+                    "name": "Boot"
+                },
+                "yzX7FLSgvEvMeqQY":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "2OPayJrYVYfP1LZk":{
+                    "name": "Red Cap",
+                    "description": "<p>A redcap's woolen hat is dyed with the blood of its victims. If the redcap loses its cap, it no longer benefits from fast healing and takes a -4 status penalty to its damage rolls. It can create a new cap in 10 minutes, but that cap doesn't grant its powers until the redcap has turned it red with Blood Soak. A cap has no benefit for creatures other than the redcap who made it.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.s5mS7CyE0oOYlecv]{Effect: Lost Red Cap}</p>"
+                },
+                "xxGqls5RMZVYvmHf":{
+                    "name": "Fast Healing 10"
+                },
+                "7XdX39vruCh59MIe":{
+                    "name": "Divine Revulsion",
+                    "description": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The redcap is unaffected</p>\n<p><strong>Success</strong> The redcap is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}</p>\n<p><strong>Failure</strong> The redcap gains the @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} condition for 1 round and is @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4}</p>"
+                },
+                "ivsgBmmJjZW5Wr5S":{
+                    "name": "Blood Soak",
+                    "description": "<p>The redcap dips its cap in the blood of a slain foe. The foe must have died in the last minute, and the redcap must have helped kill it. The redcap gains a +4 status bonus to damage rolls for 1 minute.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.wPIGBcpCqCWgrCiq]{Effect: Blood Soak}</p>"
+                },
+                "Q9TQFtMzhVqywWrB":{
+                    "name": "Deadly Cleave",
+                    "description": "<p><strong>Trigger</strong> The redcap reduces a creature to 0 Hit Points with a scythe Strike.</p>\n<hr />\n<p><strong>Effect</strong> The redcap makes another scythe Strike against a different creature, using the same multiple attack penalty as the scythe Strike that triggered this reaction. This counts toward its multiple attack penalty.</p>"
+                },
+                "P7S7nuGr7qWkygVT":{
+                    "name": "Stomp",
+                    "description": "<p>The redcap Strides up to half its Speed and makes a boot Strike at any point during that movement. If the boot Strike hits a @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} creature, it deals an extra @Localize[PF2E.PersistentDamage.Bleed2d6.success].</p>"
+                }
+            }
         },
         "Reefclaw": {
-            "name": "礁爪怪 Reefclaw"
+            "name": "礁爪怪 Reefclaw",
+            "senses": "darkvision",
+            "languages": "(Can't Speak Any Language)",
+            "publicNotes": "<p>Reefclaws are aquatic monsters that resemble huge shrimp or lobsters. As one might expect from its name, a reefclaw's oversized claws are powerful weapons with their vicelike grip and the ability to inject potent venom into unfortunate prey.</p>\n<p>While reefclaws can't speak, they are intelligent enough to understand the local language of humanoids near their hunting grounds. The creatures sometimes listen to conversations, either to gain intelligence on the best place to ambush aquatic or land-dwelling prey, or merely for entertainment value-reefclaws are particularly fond of listening to people with high-pitched voices. Reefclaws are usually solitary hunters, but small swarms of female reefclaws have been known to gather around a single male for mating purposes or together for the communal raising of their broods. In the latter case, the females will perform widespread hunts in order to bring back a large enough bounty to feed their young. Such hunting parties are extremely dangerous-they've been known to tip over small flshing boats and attack those who fall overboard.</p>\n<p>Once a reefclaw has decided upon a course of action, it follows through even if doing so spells its own end. More than one reefclaw survivor has said that the creature released its bone-crushing grasp only after its brains were leaking from its broken skull, and even then the reefclaw was able to perform a terrible last slash as part of its dying breath. During mating season, female reefclaws are often a little more pragmatic and release their prey before endangering themselves and their offspring.</p>\n<p>Despite their intelligence and the accompanying moral quandaries, reefclaws frequently find their way onto the dinner plates of land-dwelling hunters such as humans and hobgoblins. According to those who have a taste for reefclaw flesh, the meat is either delectably sweet or slightly tangy (in the case of warm-water reefclaws). Most civilized people who know of reefclaws' intellect find the act of eating them distasteful, but this does not dissuade unscrupulous nobles in coastal regions, for whom reefclaw meat is a delicacy well worth the expense. Likewise, fisherfolk whose focus is on the bottom line of their ledgers are more than willing to hunt the dangerous creatures-or, even better, hire out the task to naive adventurers.</p>",
+            "items":{
+                "oGR3hLNhUlAR66Kw":{
+                    "name": "Claw"
+                },
+                "LMiVMxKOuhUjGd45":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "D2ezhwANZLcMNbz9":{
+                    "name": "Death Frenzy",
+                    "description": "<p><strong>Trigger</strong> The reefclaw is reduced to 0 Hit Points.</p>\n<hr />\n<p><strong>Effect</strong> The reefclaw makes a claw Strike before dying.</p>"
+                },
+                "eIQH5yy2l8qe0bvR":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d6}[bludgeoning]]]{1d6 bludgeoning}, @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "We6LladGR4C687q0":{
+                    "name": "Reefclaw Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+                }
+            }
         },
         "Remorhaz": {
-            "name": "百足魔虫 Remorhaz"
+            "name": "百足魔虫 Remorhaz",
+            "senses": "darkvision, tremorsense (imprecise) 60 feet",
+            "languages": "(Can't Speak Any Language)",
+            "publicNotes": "<p>A remorhaz is an enormous arctic predator that resembles a multilegged insect with draconic features. This monster has chitinous plates and more than a score segmented legs, a multipartite maw, and winglike growths fianking its head. The most unusual aspect of the creature, however, is its internal heat, which burns with such intensity that it causes the armored plates on the creature's back to become superheated whenever the beast is agitated.</p>\n<p>Remorhazes are carnivores. Their diet includes arctic animals such as elk, but a hungry remorhaz readily devours anything it can catch and kill. It commonly lurks beneath ice or snow and ambushes prey with a sudden upward strike. Many victims die before even knowing what attacked them.</p>\n<p>Those who survive the worm's initial onslaught must face not only its deadly jaws, but also its hideously hot body. This heat can melt weapons, scorch armor, and burn flesh-all tactics the remorhaz uses to disable and defeat its foes. A remorhaz's internal fire allows it to burrow through ice and snow with ease. It leaves smooth tunnels in its wake as melted ice refreezes to leave the telltale signs of its passage. Most people underestimate a remorhaz's intelligence, assuming it to be a mere animal. However, remorhazes are capable of learning languages. Frost giants in particular use this trait to form alliances with them. The giants provide food, protection, and shelter for the worm, and in return the remorhaz acts as a guard beast and helps the giants build fortresses and forge metal weapons. The giants also employ the worms as war beasts, using them to undermine enemy positions.</p>",
+            "items":{
+                "w5FhuQgOnX0i92Y3":{
+                    "name": "Jaws"
+                },
+                "by7p3pdmrMKbVYk8":{
+                    "name": "Tail"
+                },
+                "7PTn0lPspj6Mo8E7":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "pzRCNxN7IHDbV6Wv":{
+                    "name": "Tremorsense (Imprecise) 60 feet"
+                },
+                "jZ8U8eTiEuKU6toZ":{
+                    "name": "Heat",
+                    "description": "<p>@Template[type:emanation|distance:5]{5 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura takes [[/r {1d6}[fire]]]{1d6 fire damage}. Whenever the remorhaz takes damage from an enemy, this damage increases to [[/r {2d6}[fire]]]{2d6 fire damage} until the start of its next turn. Any creature that hits a remorhaz with an unarmed Strike takes [[/r {2d6}[fire]]]{2d6 fire damage}, and a weapon that hits a remorhaz takes [[/r {2d6}[fire]]]{2d6 fire damage}.</p>"
+                },
+                "nvkbBLwKlX05vPo2":{
+                    "name": "Breath Weapon",
+                    "description": "<p>The remorhaz unleashes a gout of flame that deals [[/r {8d6}[fire]]]{8d6 fire damage} in a @Template[type:cone|distance:30] (@Check[type:reflex|dc:26|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #Recharge Breath Weapon]]{1d4 rounds}.</p>"
+                },
+                "AcBYEH0GxgM4iV5v":{
+                    "name": "Ice Tunneler",
+                    "description": "<p>A remorhaz can leave a tunnel when it burrows through ice or snow, and it usually does.</p>"
+                },
+                "ex0dTLedYlwxNB3T":{
+                    "name": "活吞 Swallow Whole",
+                    "description": "<p>Large, [[/r {2d8+5}[bludgeoning]+{2d6}[fire]]]{2d8+5 bludgeoning damage plus 2d6 fire damage}, Rupture 12</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "8RIFanFu6JDiIRH1":{
+                    "name": "Thrash",
+                    "description": "<p>The remorhaz Strikes once with its jaws and once with its tail, each targeting a different creature. Each attack counts toward the remorhaz's multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks have been made.</p>"
+                }
+            }
         },
         "Riding Pony": {
             "name": "矮种骑乘马 Riding Pony",
@@ -17370,7 +18021,41 @@
             }
         },
         "River Drake": {
-            "name": "河栖龙兽 River Drake"
+            "name": "河栖龙兽 River Drake",
+            "senses": "darkvision, scent (imprecise) 30 feet",
+            "publicNotes": "<p>Although the glistening scales and sleek, fin-like wings on these drakes give them an appearance reminiscent of river fish, they are actually distant relatives of the black dragon. While smaller than most drakes, river drakes are more than capable of plaguing river travelers and are equally at home above and below the water's surface. This flexibility allows them to catch a wide variety of prey, from fish and boggards to deer and the occasional ferry passenger.</p>\n<hr />\n<p>Ravenous, bestial, and driven by instinct-drakes are primitive draconic monsters who bear a fraction of the terrifying might of their larger cousins but little (if any) of the cunning. While they're weaker, slower, and less inclined toward reason than dragons, drakes are nonetheless a menace to creatures and settlements around them. Their propensity for forming raiding parties-small social groups fittingly called \"rampages\"-makes them all the more dangerous; a single rampage of river drakes can quickly lay waste to a waterside village, and roving rampages of desert drakes are a plague to caravan traders.</p>\n<p>Drakes share a number of physical characteristics that unite them as one species despite their wide variety of habitats and abilities. For example, drakes lack forearms, leaving them only their formidable jaws and thick-scaled tails with which to attack if engaged at melee range. Most drakes would rather avoid close combat, however, preferring to use their breath weapons to wreak havoc in wide swaths from comfortable distances while flying overhead. Finally, all drakes have small reservoirs of their ancestral draconic power that they can tap into to perform incredible feats of speed.</p>",
+            "items":{
+                "lg0ZOYopXDTR0Atj":{
+                    "name": "尖牙 Fangs",
+                    "description": ""
+                },
+                "NHmjLWLocmpqvoi9":{
+                    "name": "Tail"
+                },
+                "HXXy2GteYPnNjM0H":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "WWnDflwvjpP5jAyW":{
+                    "name": "Scent (Imprecise) 30 feet"
+                },
+                "jbjsVEFvVsslwVHa":{
+                    "name": "Tail Lash",
+                    "description": "<p><strong>Trigger</strong> A creature within reach of the river drake's tail uses an action to Strike or attempt a skill check.</p>\n<hr />\n<p><strong>Effect</strong> The river drake attempts to Strike the triggering creature with its tail. If it hits, the creature takes a -2 circumstance penalty to the triggering roll.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.QqC9xymSXSVunDgl]{Effect: Tail Lash (Attack Roll)}</p>\n<p>@Compendium[pf2e.bestiary-effects.4HJJdogS751Z04lD]{Effect: Tail Lash (Skill Check)}</p>"
+                },
+                "xheziaVMnj1iAjP5":{
+                    "name": "Caustic Mucus",
+                    "description": "<p>The river drake spits a ball of caustic mucus up to a range of 50 feet that explodes in a @Template[type:burst|distance:10]. Creatures within the burst take [[/r {4d6}[acid]]]{4d6 acid damage} (@Check[type:reflex|dc:19|basic:true] save). Those that fail this save also take @Localize[PF2E.PersistentDamage.Acid1d6.success] and take a -5-foot status penalty to their Speed. This Speed reduction ends with the persistent acid damage.</p>\n<p>The river drake can't use Caustic Mucus again for [[/br 1d6 #Recharge Caustic Mucus]]{1d6 rounds}.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.TbmkcfpKIs558skY]{Effect: Caustic Mucus}</p>"
+                },
+                "GsSxwd5EPNBqxdWC":{
+                    "name": "Draconic Frenzy",
+                    "description": "<p>The river drake makes one Fangs Strike and two Tail Strikes in any order.</p>"
+                },
+                "qugqAWTLubz9fcj2":{
+                    "name": "Speed Surge",
+                    "description": "<p>The river drake moves up to twice its Speed. It can do this three times per day.</p>"
+                }
+            }
         },
         "Roc": {
             "name": "大鹏 Roc",
@@ -17408,7 +18093,45 @@
             }
         },
         "Roper": {
-            "name": "树绳怪 Roper"
+            "name": "树绳怪 Roper",
+            "allSaves": "+2 status to all saves vs. magic",
+            "senses": "darkvision",
+            "publicNotes": "<p>To all but the most sharp-eyed underground explorers, a roper appears to be nothing more than a large stalactite, stalagmite, or pillar of ice. Cunning and patient ambush predators, ropers use this to their advantage.</p>\n<p>Ropers do not form large societies (although they can often be found living alongside other deep-dwelling denizens), but they often congregate in small clusters and sometimes hunt in groups. Particularly interested in the philosophy of life and death and the flner points of the more cruel and sinister religions of the world, a roper can talk or argue for hours with those it initially sought merely to eat. Quick-thinking spelunkers can sometimes stave off a roper's appetite by entertaining it with stories or discussions of philosophy, but ropers do not willingly allow such intriguing prey to escape alive. Stories speak of particularly skilled debaters and philosophers who have been kept for days or even years as pets or conversational companions by roper clusters, but in the end, if such pets don't eventually escape, the ropers' appetites win out over their intellectual curiosity-especially in cases where the pets constantly outmaneuver their keepers' wits and patience. A roper is 9 feet tall and weighs 2,200 pounds.</p>",
+            "items":{
+                "OjJQfX1hTXQZsKNH":{
+                    "name": "Jaws"
+                },
+                "VBQJPk4ZTjKYg7E1":{
+                    "name": "Strand"
+                },
+                "D6yxsFtZFG5ysaek":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "vJxCPyKdG9Aaedkx":{
+                    "name": "+2 Status to All Saves vs. Magic"
+                },
+                "E0hXra1OswZG4gQM":{
+                    "name": "Reactive Lash",
+                    "description": "<p><strong>Trigger</strong> A creature within reach of the roper's strand leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The roper makes a strand Strike against the triggering creature.</p>"
+                },
+                "DZQzqTM8bO1vt4ps":{
+                    "name": "Extend Strands",
+                    "description": "<p>The roper extends or retracts six thin, sticky tendrils from its body. While the strands are extended, the roper takes a -4 circumstance penalty to Stealth checks, and while they're retracted, it can't use its strand Strikes.</p>"
+                },
+                "2JiFczs0m1iIKqPZ":{
+                    "name": "Flurry of Strands",
+                    "description": "<p>The roper makes a strand Strike with each of its strands (except those that are @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilizing} creatures). Each attack must be against a different target. These attacks count toward the roper's multiple attack penalty, but its multiple attack penalty doesn't increase until after all the attacks.</p>"
+                },
+                "H85aThyyHpy8z06u":{
+                    "name": "Pull the Strands",
+                    "description": "<p>The roper pulls every creature @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by its strands toward itself. The roper rolls a single @Check[type:athletics] check and compares the result to each @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} creature's Fortitude DC. The roper pulls each creature it succeeds against up to 25 feet closer and each creature it critically succeeds against up to 50 feet closer.</p>"
+                },
+                "FyUL1Dfsy8YJIJH4":{
+                    "name": "Sticky Strand",
+                    "description": "<p>Any creature hit by a roper's strand is @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} and @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}. Each additional hit from a strand increases the enfeebled condition value by 1 (to a maximum of enfeebled 4). This enfeebled value decreases by 1 every 8 hours. The roper can move while it has a creature grabbed with a strand, but it automatically releases the creature if it moves beyond the strand's reach. The roper can release an grabbed creature as a free action. A creature can sever a strand with a target attack that hits AC 27 and deals at least 18 slashing damage. This doesn't deal any damage to the roper itself, though it can no longer attack with a severed strand.</p>"
+                }
+            }
         },
         "Rune Giant": {
             "name": "符文巨人 Rune Giant",
@@ -17461,22 +18184,263 @@
             }
         },
         "Rust Monster": {
-            "name": "锈蚀怪 Rust Monster"
+            "name": "锈蚀怪 Rust Monster",
+            "senses": "darkvision, metal scent 30 feet",
+            "publicNotes": "<p>Found in lost dungeons, deep caves, and abandoned mines, rust monsters are a bane to any adventurers who rely on armor, weapons, or other metal items. These strange-looking creatures grow to about 5 feet long, with four insectile legs and a long tail ending in a four-pronged appendage resembling a tiny windmill. However, it is the rust monster's feathery antennae that strike fear in the hearts of battle-hardened warriors, for a single touch from even just one antenna can reduce an adventurer's most valuable tools to a useless pile of rust.</p>\n<p>Rust monsters aren't inherently aggressive creatures, but they're voracious oxidivores, meaning they consume the rust created by their antennae. The creatures savagely attack anything that gets between them and a possible meal, and they relentlessly pursue any source of metal. A rust monster can be distracted by a single metal-rich item, but they are often encountered in groups of three or more, sharply raising the cost of escape.</p>\n<p>Rust monsters are a terrible scourge in mining communities. If a group of rust monsters discovers rich veins of ore, they can multiply quickly. By weakening tunnels, attacking workers, and consuming the source of the miners' livelihood, these aberrations have created many mountainside ghost towns.</p>",
+            "items":{
+                "lmmVhyJxHrIHi4Je":{
+                    "name": "Antenna"
+                },
+                "X4qGxyWYxGqKvBsG":{
+                    "name": "Mandibles"
+                },
+                "KD8sQ1IJ6El9ImGR":{
+                    "name": "Tail"
+                },
+                "gdUSuIptZvtLZ7ts":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "fLzaGzA3jMdzslmt":{
+                    "name": "Metal Scent 30 feet",
+                    "description": "<p>A rust monster can smell metal as a precise sense.</p>"
+                },
+                "RYEcc50Tn0g5GE6m":{
+                    "name": "Tail Trip",
+                    "description": "<p><strong>Trigger</strong> A creature carrying a metal item attempts to move out of a square within reach of the rust monster's tail.</p>\n<hr />\n<p><strong>Effect</strong> The rust monster makes a tail Strike against the triggering creature.</p>"
+                },
+                "3EkDCh4CkGrgHhlf":{
+                    "name": "Antenna Disarm",
+                    "description": "<p>The rust monster attempts to @Compendium[pf2e.action-macros.ooiO59Ch2QaebOmc]{Disarm} a metal item a creature is holding using its antenna (with the same modifier as an antenna Strike).</p>\n<p>On a success, the item is subject to the rust monster's rust ability in addition to the effects of the Disarm, and if the check to Disarm is a critical success, the rust monster drops the item on the ground in its own space.</p>"
+                },
+                "aeZh7jl8AKKWs8Qv":{
+                    "name": "Rust",
+                    "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals [[/r {2d6}]]{2d6 damage} (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the @Compendium[pf2e.feats-srd.jM72TjJ965jocBV8]{Shield Block} reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>"
+                },
+                "7pYPgvPhNqIQ9RwA":{
+                    "name": "精通击倒 Improved Knockdown",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedKnockdown]</p>"
+                }
+            }
         },
         "Salamander": {
-            "name": "火蜥蜴 Salamander"
+            "name": "火蜥蜴 Salamander",
+            "senses": "darkvision",
+            "publicNotes": "<p>Salamanders have serpentine lower torsos, but humanoid upper bodies with toothy reptilian snouts. Their affinity for cruelty and violence puts them in close alliance with the demons of the Abyss.</p>\n<hr />\n<p>Fire elementals are destructive manifestations of the scorching Plane of Fire.</p>",
+            "items":{
+                "oA3OqSUqWQPylGlB":{
+                    "name": "刺叉 Ranseur",
+                    "description": ""
+                },
+                "m5FtOPWhFYV34o9q":{
+                    "name": "Tail"
+                },
+                "UP6X4AexjR3Xwwq4":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "MOmmOyY0sUO8EEIX":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "osaWxy5RrqJdKuni":{
+                    "name": "Armor of Flames",
+                    "description": "<p>The salamander stokes its internal flames. Until the start of its next turn, it gains a +2 circumstance bonus to AC, and when an adjacent creature touches it or hits it with a physical attack, that creature takes [[/r {2d6}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} unless it succeeds at a @Check[type:reflex|dc:25|traits:damaging-effect] save.</p>"
+                },
+                "5P26T61QIn85Jbfk":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d8+4}[bludgeoning] + {1d6}[fire]]]{1d8+4 bludgeoning plus 1d6 fire}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                }
+            }
         },
         "Satyr": {
-            "name": "萨堤尔 Satyr"
+            "name": "萨堤尔 Satyr",
+            "senses": "low-light vision",
+            "publicNotes": "<p>To a satyr, life is a party and everyone is invited. Notorious for their hedonism, these fey believe there's no greater beauty than can be found in song, drink, indulgent meals, and carnal pleasures. Satyrs use their enchanting songs and natural charm to encourage all manner of people to follow their true desires and free themselves from society's rules. This usually involves enticing mortals to join raucous parties or engage in trysts in moonlit glades. If a potential companion rejects a satyr's advances, however, the satyr has little interest in continuing a conversation and goes off to find more amenable revelers.</p>\n<p>The lifestyle of a satyr leaves no room for ongoing affairs or long-term friends. Once his party is over or his lust is satiated, the satyr disappears back into the forest. The offspring satyrs leave behind are satyrs themselves, and usually end up being taken from their cradles by other fey rather than being left in mortals' care. Satyrs are always male.</p>\n<p>The untouched beauty of the forest is sacred and precious to a satyr. Brutish intruders who clear-cut trees or massacre animals without eating them risk drawing a satyr's ire. A satyr so provoked uses his spells to undermine foes and attempts to dispatch them either with brutal ambushes or by leading a rush of forest animals to attack.</p>\n<p>Other fey, particularly good fey, look upon satyrs as loutish, embarrassing cousins. They're rarely hostile toward satyrs, but most find them insufferable and advise any mortals they like to steer clear of satyrs' glades.</p>",
+            "items":{
+                "GA9tSWJmy7KFgUjB":{
+                    "name": "Primal Innate Spells"
+                },
+                "VPctIxAu5NWL32Aq":{
+                    "name": "三拍子 Triple Time",
+                    "description": "<p>你以活跃的节奏起舞，加速你盟友的移动。你和所有区域内的盟友的所有速度获得+10尺状态加值，持续1轮。</p>\n<p>@Compendium[pf2e.spell-effects.HtaDbgTIzdiTiKLX]{法术效果：三拍子}</p>"
+                },
+                "whnlIeB6kAxCZ72U":{
+                    "name": "激发表现 Inspire Competence",
+                    "description": "<p>你的鼓舞激励盟友完成任务。这视为进行了完善的准备援助盟友进行你所选定的一个技能检定，无视环境因素。当你之后使用援助动作时，你可以投掷表演检定而非通常的技能检定，如果你投出失败，你会反而获得成功。如果你在表演中为传奇等级，你自动获得大成功。</p>\n<p>GM可以规定若你的表演会干涉队友的技能检定，则无法使用这一能力援助队友（比如在安静情况下使用隐匿或者维持易容）。</p>"
+                },
+                "AFXLJNAW0dhc0PkH":{
+                    "name": "Wineskin"
+                },
+                "uRp6lGDTd0IPfdWI":{
+                    "name": "Panpipes"
+                },
+                "jInvivt7qyjg6Q4R":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "hT4tTJSS8Sm6qFZz":{
+                    "name": "短弓 Shortbow",
+                    "description": ""
+                },
+                "UDSpeDfwP5gNIdMY":{
+                    "name": "匕首 Dagger",
+                    "description": ""
+                },
+                "FaGxK1ootpG6uFmP":{
+                    "name": "昏暗视觉 Low-Light Vision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+                },
+                "h4qPfDnAjrfUEFX6":{
+                    "name": "Sylvan Wine",
+                    "description": "<p>A satyr's wineskin magically enchants any alcohol inside. With an Interact action, a living creature can imbibe the alcohol and gain a +1 item bonus to Will saves and a +3 item bonus to Will saves against fear effects for the following hour. When the wineskin is removed from a satyr's person, the magic remains only until the wine spoils. The wineskin holds up to eight drafts of wine.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.QDs8t1U1IepzYlyi]{Effect: Sylvan Wine}</p>"
+                },
+                "hbBhekpAkC55ljY1":{
+                    "name": "Fleet Performer",
+                    "description": "<p>When the satyr Plays the Pipes to cast a spell, he can Step or Stride as part of the activity.</p>"
+                },
+                "vius8NahqzVZYRSE":{
+                    "name": "Play the Pipes",
+                    "description": "<p><strong>Requirements</strong> The satyr is holding a musical instrument.</p>\n<hr />\n<p><strong>Effect</strong> The satyr plays a melody on his instrument to cast <em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{Charm}</em>, <em>@Compendium[pf2e.spells-srd.4koZzrnMXhhosn0D]{Fear}</em>, <em>@Compendium[pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Sleep}</em>, or <em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</em> without expending the spell slot and using his music in place of providing the spell's component actions. The spell gains the auditory trait and targets all creatures in a @Template[type:emanation|distance:60] instead of its usual targets. A creature that succeeds at its Will save against any spell is then temporarily immune from spells played from that satyr's pipes for 1 minute. Satyrs are immune to this music.</p>"
+                }
+            }
         },
         "Scorpion Swarm": {
-            "name": "蝎群 Scorpion Swarm"
+            "name": "蝎群 Scorpion Swarm",
+            "senses": "darkvision",
+            "publicNotes": "<p>While a single scorpion is itself a menace, swarms of these vermin can be outright devastating. These skittering droves of death swiftly bring down their prey before devouring everything short of the victim's bones.</p>\n<hr />\n<p>Chitinous scourges of deserts, forests, savannas, and badlands, scorpions are deadly arachnids with powerful pincers and a painful sting. Scorpions can be found in nearly every climate, where they hunt their prey with a mixture of patient stealth and raw strength. Most scorpions live in underground burrows, either as lone hunters or part of a larger colony. These arachnids are so feared and dangerous that in many cultures, they are treated as deities or dualistic symbols of both death and protection from said death.</p>",
+            "items":{
+                "PrtfnlNRqEPNsEDh":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "APm9xzjMvRMHIYon":{
+                    "name": "Scorpion Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+                },
+                "tZ39PkV2oWLySkOs":{
+                    "name": "Swarming Stings",
+                    "description": "<p>Each enemy in the swarm's space takes [[/r {2d8}[piercing]]]{2d8 piercing damage} (@Check[type:reflex|dc:21|basic:true] save) and is exposed to scorpion venom.</p>"
+                }
+            }
         },
         "Simurgh": {
-            "name": "西牟鸟 Simurgh"
+            "name": "西牟鸟 Simurgh",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "darkvision",
+            "languages": "Tongues",
+            "publicNotes": "<p>Desert-dwelling people consider the sight of a simurgh a herald to a lifetime's worth of luck, and those who are unfamiliar with the majestic beast might mistake it for the avatar of a deity. Beautiful, graceful, and truly gargantuan, the simurgh resembles nothing so much as a massive multicolored bird with the head of an equally enormous and regal lupine. Simurghs act as intermediaries in world-threatening conflicts, serving as agents of good deities or vigilantes who spread their own brand of justice, typically by obliterating or banishing evil extraplanar beings.</p>\n<p>Simurghs can live for thousands of years, and because these ancient beings are so rare many doubt their existence. But they are very real, as those who have been aided by a simurgh can enthusiastically attest. A simurgh does not show itself often, but when it does, it is typically in response to a truly grave threat, such as the incursion of an undead army or the rampage of some truly epic monster. Simurghs are nothing if not paragons of righteousness, and goodly heroes can hardly find a better ally in their quest to vanquish evil than a simurgh.</p>",
+            "items":{
+                "G4HjijhXg27QNTqn":{
+                    "name": "Divine Innate Spells"
+                },
+                "aIlJ68HccllslBhH":{
+                    "name": "巧言术(恒定法术) Tongues (Constant)",
+                    "description": "<p>无论什么语言，目标都可以理解其所有的词语，并且向其他生物用该语言交流。当处于一群各异的生物中时，每次目标将要说话，他可以选择一个生物，并使用一种该生物理解的语言来讲述，即使该目标不知道这语言具体是什么。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 持续时间为8小时。</p>"
+                },
+                "ff4wdxelwlYQwvOS":{
+                    "name": "诚实之域(随意施法) Zone of Truth (At Will)",
+                    "description": "<p>你指定一个区域，此区域中生物被迫只能说出真话。处于区域中或者进入区域中的生物难以撒谎。每个会被影响的生物必须在法术被施放时、或者它第一次进入该区域时，尝试一次意志豁免。如果它离开并再次进入该区域，它会使用相同的豁免结果。受影响的生物会知晓此惑控效果的存在；因此，它们会避免回答那些它们通常以撒谎来回应的问题，或者在说真话的范围内闪烁其词。</p>\n<hr /><strong>大成功</strong> 目标不受影响。\n<p><strong>成功</strong> 目标在欺骗（Deception）检定上承受-2状态减值。</p>\n<p><strong>失败</strong> 该目标无法说出任何故意的谎言，并且在欺骗（Deception）检定上承受-2状态减值。</p>\n<p><strong>大失败</strong> 该目标无法说出任何故意的谎言，并且在欺骗（Deception）检定上承受-4状态减值。</p>"
+                },
+                "K6Ty6fjWIqDqupgg":{
+                    "name": "侦测阵营(随意施法,仅限邪恶) Detect Alignment (At Will) (Evil Only)",
+                    "description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+                },
+                "LExzjKETFlcOY6aw":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "zucHNDwfKldM9TpE":{
+                    "name": "Jaws"
+                },
+                "xHuOFLF02tZy7mwZ":{
+                    "name": "Claw"
+                },
+                "4hDLxVe3DC4KrgiS":{
+                    "name": "Tail"
+                },
+                "Xem818Dy2SdT8fjI":{
+                    "name": "Glaring Ray"
+                },
+                "OvbTCZLdp8qg7KX2":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "JRoSNngd9XENOzDl":{
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "QqqqheeizksJ9NkJ":{
+                    "name": "Aura of Peace",
+                    "description": "<p>@Template[type:emanation|distance:50]{50 feet} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura must attempt a @Check[type:will|dc:37] save or be affected by <em>@Compendium[pf2e.spells-srd.b515AZlB0sridKSq]{Calm Emotions}</em>. Creatures that successfully save are unaffected, but must attempt another save each turn they start in the aura.</p>"
+                },
+                "EQs2G0f4rbGphFRv":{
+                    "name": "Banishing Swipe",
+                    "description": "<p>If a creature hit by the simurgh's tail Strike is not currently on its home plane, it must succeed at a @Check[type:will|dc:42] save or be affected by <em>@Compendium[pf2e.spells-srd.bay4AfSu2iIozNNW]{Banishment}</em>, except that if the creature critically succeeds its save the simurgh is not @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned}.</p>"
+                },
+                "lKC4So6E50bV5RRz":{
+                    "name": "Radiant Feathers",
+                    "description": "<p><strong>Frequency</strong> Once per day</p>\n<hr />\n<p><strong>Effect</strong> The simurgh fans out its glimmering tail feathers and blasts its foes with a @Template[type:cone|distance:100] of radiant light. Aside from the size of the cone, this effect is identical to <em>@Compendium[pf2e.spells-srd.d6o52BnjViNz7Gub]{Prismatic Spray}</em> (DC 42).</p>"
+                }
+            }
         },
         "Sphinx": {
-            "name": "斯芬克斯 Sphinx"
+            "name": "斯芬克斯 Sphinx",
+            "senses": "darkvision; detect magic, see invisibility",
+            "languages": "Comprehend Language",
+            "publicNotes": "<p>Sphinxes are mystical beings with the body of a lion, the wings of a great bird, and the upper torso and head of a human. They are often maligned in legends as nothing more than monsters, and though they are quick to anger and are capable of exacting deadly retribution for perceived slights, they are also very intelligent.</p>\n<p>Sphinxes are often associated with desert regions, but they can dwell in more moderate climates as well. They form small groups consisting of a single, extended family that hunts and works together to protect and teach their young. As they mature, sphinxes develop a wanderlust, a drive to gather hidden lore and solve the world's greatest riddles-the trait that is perhaps most often identified with their kind.</p>\n<p>While sometimes bound into service as guardians for powerful spellcasters, lone sphinxes may also be encountered on journeys of discovery and as purveyors of esoteric lore. If treated with the proper respect-and fed well-a sphinx can demonstrate a willingness to exchange information. Their favorite currency is, of course, riddles and secrets. One who can trade knowledge for knowledge has a much better chance of succeeding while bargaining with a sphinx. However, a sphinx's insatiable thirst for new riddles as well their extensive collection of secrets accumulated over hundreds of years of life-makes it difficult to offer them something they don't already know. Those who attempt to trade petty insight and stale riddles may invoke a sphinx's ire and will not live long enough to regret it.</p>",
+            "items":{
+                "pxfevBUBi49C9LID":{
+                    "name": "Occult Innate Spells"
+                },
+                "lt3BOPlp3xHdHIpR":{
+                    "name": "巧言术(恒定法术) Tongues (Constant)",
+                    "description": "<p>无论什么语言，目标都可以理解其所有的词语，并且向其他生物用该语言交流。当处于一群各异的生物中时，每次目标将要说话，他可以选择一个生物，并使用一种该生物理解的语言来讲述，即使该目标不知道这语言具体是什么。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 持续时间为8小时。</p>"
+                },
+                "0PvvdloURD8opkYS":{
+                    "name": "鹰眼术(随意施法) Clairvoyance (At Will)",
+                    "description": "<p>你在射程内创造出一个 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的悬浮眼睛（它甚至可以在你的视觉线或者效果线之外）。这只眼睛不能移动，但是你可以从该处看到所有方向，如同使用你通常的视觉感官。</p>"
+                },
+                "wLITcsSw02suvEfW":{
+                    "name": "锐耳术(随意施法) Clairaudience (At Will)",
+                    "description": "<p>你在射程内创造出一个 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的悬浮耳朵（它甚至可以在你的视觉线或者效果线之外）。它不能移动，但是你可以通过该耳朵听到声音，如同你通常的听觉感官。</p>"
+                },
+                "kQ3f06MvY2faGWKA":{
+                    "name": "识破隐形(恒定法术) See Invisibility (Constant)",
+                    "description": "<p>你能看见 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible} 的生物和物体。对你而言它们看起来如同半透明一般，并且对你视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该法术的持续时间为8小时。</p>\n<p>@Compendium[pf2e.spell-effects.T5bk6UH7yuYog1Fp]{法术效果：识破隐形}</p>"
+                },
+                "02y19dbrh9JOvh5r":{
+                    "name": "侦测魔法 Detect Magic",
+                    "description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+                },
+                "TfNCbBu8oaMSaeTO":{
+                    "name": "Claw"
+                },
+                "7DhYY8OTjN08dR6B":{
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "B9QrAlNM1MoP8sDk":{
+                    "name": "Bardic Lore",
+                    "description": "<p>Sphinxes are naturally curious, and their love of puzzles and mysteries leads them to gather information on a broad range of topics. Sphinxes have the @Compendium[pf2e.feats-srd.uVXEZblPRuCyPRua]{Bardic Lore} bard feat, allowing them to Recall Knowledge on any topic.</p>"
+                },
+                "1uZuWVNr0woQanKG":{
+                    "name": "Claw Rake",
+                    "description": "<p>The sphinx rears back on their hind legs and makes two claw Strikes at the same target, using the same attack bonus as their highest melee attack. If both attacks deal damage, the target takes extra damage equal to one claw Strike.</p>"
+                },
+                "XbyGgxrnfchvOdm3":{
+                    "name": "Pounce",
+                    "description": "<p>The sphinx Strides and makes a Strike at the end of that movement. If the sphinx began this action @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, they remain hidden until after the attack.</p>"
+                },
+                "Vyc7HceERBcZQuXT":{
+                    "name": "Warding Glyph",
+                    "description": "<p>Once per week, a Sphinx can create a magical symbol as though casting a heightened <em>@Compendium[pf2e.spells-srd.o0l57UfBm9ScEUMW]{Glyph of Warding}</em> spell. The sphinx usually shapes the glyph to take the form of a written riddle, and sets the password to the answer. A creature that gives the wrong answer or tries to pass without answering must succeed at a @Check[type:will|dc:26] save or suffer one of the following spell effects, chosen by the sphinx when creating the symbol: <em>@Compendium[pf2e.spells-srd.BilnTGuXrof9Dt9D]{Synaptic Pulse}</em> (5th), <em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{Charm}</em> (4th), <em>@Compendium[pf2e.spells-srd.4koZzrnMXhhosn0D]{Fear}</em> (3rd), <em>@Compendium[pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em> (3rd), <em>@Compendium[pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Sleep}</em> (3rd). The sphinx learns the identity of any creature that answers the riddle and tends to be friendly to them.</p>"
+                },
+                "Ktfy8eNRSg3A28w4":{
+                    "name": "Bardic Lore",
+                    "description": ""
+                }
+            }
         },
         "Spider Swarm": {
             "name": "蜘蛛群 Spider Swarm"
