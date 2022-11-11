@@ -55,6 +55,70 @@
         "(Ghost) Revenant": {
             "name": "(幽灵)回归人世 (Ghost) Revenant",
             "description": "<p>幽灵附身并转变一具相邻的尸体（附身自己的尸体需要2动作，否则需要1小时）。</p>\n<p>被附身的尸体数据为比幽灵等级低2级的非虚体不死生物的数据，幽灵附身的效果类似于使用<em>@Compendium[pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>法术。具体的不死生物类型由幽灵和尸体的性质决定——常见的有@Compendium[pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{食尸鬼 Ghouls}、@Compendium[pf2e.pathfinder-bestiary.ZPjQkKVMi3xoPcU0]{尸妖 Wights}和@Compendium[pf2e.pathfinder-bestiary.0SJqmk4ItwL31Rg9]{无头骑士 Dullahans}，不过几乎任何不死生物都是有可能的。</p>\n<p>如果幽灵放弃附身尸体，那么该实体不死生物会立即毁灭。</p>"
+        },
+        "(Graveknight) Graveknight's Curse": {
+            "description": "<p>诅咒会影响任何穿戴死墓骑士的护甲超过1小时以上的生物。</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:] save</p>\n<hr />\n<p><strong>潜伏期</strong> 1小时</p>\n<p><strong>阶段1</strong> @Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}并且无法脱下护甲(1天)</p>\n<p><strong>阶段2</strong> @Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭Doomed 2}，速度降低10，并且无法脱下护甲(1天)</p>\n<p><strong>阶段3</strong> 死亡并转化为护甲的死墓骑士</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.6rnB7nK6J6zF4vea]{效果: 死墓骑士诅咒}</p>",
+            "name": "(死墓骑士)死墓骑士诅咒 (Graveknight) Graveknight's Curse"
+        },
+        "(Graveknight) Channel Magic": {
+            "name": "(死墓骑士)引导魔法 (Graveknight) Channel Magic",
+            "description": "<p>死墓骑士通过护甲引导魔法能量，这让它能通过攻击施法。</p>\n<p>死墓骑士施放一个1-2动作且需要一次法术攻击骰的法术。法术效果不会立刻发生，而是被灌注进一次攻击。死墓骑士接着用武器或无武装攻击进行一次近战打击。法术被附加在攻击上，使用攻击检定结果来决定打击和法术效果。</p>\n<p>这在计算多重攻击减值时被计算为两次攻击，但直到引导魔法结束不增加多重攻击减值。</p>\n<p>死墓骑士无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用引导魔法。</p>"
+        },
+        "(Graveknight) Clutching Armor": {
+            "name": "(死墓骑士)缠结护甲 (Graveknight) Clutching Armor",
+            "description": "<p><strong>触发</strong> 一个生物尝试离开死墓骑士</p>\n<hr />\n<p><strong>效果</strong> 死墓骑士的护甲活化并尝试@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}触发的生物。它进行一次用于擒抱的运动检定，使用死墓骑士的运动加值-2作为调整值。护甲可以如常继续擒抱该生物。</p>\n<p>因为是护甲在抓着该生物，所以死墓骑士不需要空出一只手来使用此能力。</p>"
+        },
+        "(Graveknight) Betrayed Revivification": {
+            "description": "<p>死墓骑士死于深重的背叛。</p>\n<p>取代死墓骑士对于某类能量伤害的免疫，他变得免疫心灵伤害，其武器会造成[[/r {1d6}[mental]]]{1d6点额外心灵伤害}，毁灭爆震能力也会造成心灵伤害，并使用意志豁免替代反射豁免。</p>",
+            "name": "(死墓骑士)被辜负者 (Graveknight) Betrayed Revivification"
+        },
+        "(Graveknight) Create Grave Squire": {
+            "name": "(死墓骑士)创造死墓侍从 (Graveknight) Create Grave Squire",
+            "description": "<p>死墓骑士能将自身的护甲碎片赠予自愿的盟友，后者会成为他的死墓侍从。</p>\n<p>死墓骑士可以在任意距离与侍从通过心灵感应进行沟通，通过侍从的感官观察，能通过心灵感应链接以神术内在法术随意对其施放<em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{暗示术 Suggestion}</em>；侍从会将其豁免成功度视为更差的1阶。</p>\n<p>若死墓骑士的主护甲被摧毁，侍从的护甲碎片会在[[/br 1d10 #days]]{1d10天}后复盖他的身体，在此之后这便成为了死墓骑士的新身体。</p>\n<p>死墓骑士在同一时间只能具有1名侍从，若他想创造1名新侍从，则必须先回收先前赠予的护甲碎片。</p>"
+        },
+        "(Graveknight) Empty Save for Dust": {
+            "name": "(死墓骑士)只余尘土 (Graveknight) Empty Save for Dust",
+            "description": "<p>在死墓骑士护甲包裹下的只是一些飞扬的尘土，它们从这副铠甲的关节处漫出。接触或被死墓骑士接触的生物（包括被死墓骑士的拳头打击命中的生物）必须成功通过@Check[type:reflex|dc:]豁免，否则会被灰尘污染。被污染的生物获得@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，并获得对死墓骑士的能量的弱点，弱点数值等于死墓骑士等级一半。在1分钟后或当生物被水浸湿时，污染结束，以先发生的为准。</p>"
+        },
+        "(Graveknight) Dark Deliverance": {
+            "name": "(死墓骑士)暗之救赎 (Graveknight) Dark Deliverance",
+            "description": "<p>死墓骑士具有等同于其等级的正能量抗力。</p>"
+        },
+        "(Graveknight) Devastating Blast": {
+            "name": "(死墓骑士)毁灭爆震 (Graveknight) Devastating Blast",
+            "description": "<p>死墓骑士释放出@Template[type:cone|distance:30]能量。区域内的生物受到[[/r {1d12}[damageType]]]{1d12伤害}，外加每2个死墓骑士等级额外1d12点（@Check[type:reflex|dc:|basic:true]豁免）。</p>\n<p>死墓骑士每[[/br 1d4 #Recharge Devastating Blast]]{1d4轮}只能使用1次该能力。</p>\n<p>该能量伤害与其破灭武器的能量类型相同；<em>毁灭爆震获得与其相关能量类型的特征</em>。</p>"
+        },
+        "(Graveknight) Eager for Battle": {
+            "name": "(死墓骑士)渴求战斗 (Graveknight) Eager for Battle",
+            "description": "<p>当死墓骑士骰先攻时，它骰两次并取较好的骰点。在骰先攻后的第一轮，死墓骑士获得@Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened} 状态，并可用额外行动来快步、行走、打击。</p>"
+        },
+        "(Graveknight) Phantom Mount": {
+            "name": "(死墓骑士)魅影坐骑 (Graveknight) Phantom Mount",
+            "description": "<p>HP __; AC __, Fort +__, Ref +__, Will +__</p>\n<hr />\n<p>死墓骑士召唤出1匹超自然坐骑，就如同<em>@Compendium[pf2e.spells-srd.WPKJOhEihhcIm2uQ]{魅影驹 Phantom Steed}</em>一般，该法术会升阶至的法术环级等同于死墓骑士等级的一半。</p>\n<p>与<em>魅影驹</em>不同的是，坐骑的AC和豁免检定加值均比死墓骑士的数值低4点，坐骑的生命值为死墓骑士生命值的三分之一（向下取整）。</p>\n<p>若坐骑被摧毁，死墓骑士必须等待1小时才能再次使用该能力。</p>"
+        },
+        "(Graveknight) Sacrilegious Aura": {
+            "description": "<p>@Template[type:emanation|distance:30]{30尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当有生物在灵光范围内使用正能量法术或能力时，死墓骑士会自动按照此能力条目下列出的反制调整值[[/r 1d20+0 #Counteract]]{+x}尝试反制它。</p>",
+            "name": "(死墓骑士)亵渎灵光 (Graveknight) Sacrilegious Aura"
+        },
+        "(Graveknight) Graveknight's Shield": {
+            "name": "(死墓骑士)死墓骑士盾牌 (Graveknight) Graveknight's Shield",
+            "description": "<p>死墓骑士的诅咒延伸至它们的盾牌上，或者死墓骑士护甲用自己的一部分来制造一面盾牌。</p>\n<p>死墓骑士有一面盾牌，其使用等级不高于死墓骑士等级-1的<em>@Compendium[pf2e.equipment-srd.f9ygr5Cjrmop8LWV]{百炼盾 Sturdy Shield}</em>的数据。</p>\n<p>盾牌准独立于死墓骑士，并会自动保护死墓骑士不受伤害。当这面盾牌被举起时，它会自动使用盾牌格挡来减少每轮第一次对死墓骑士的攻击造成的伤害，死墓骑士无需为这次格挡花费反应动作。</p>\n<p>盾牌会自动和死墓骑士的剩余部分一起复生，想要摧毁它必须用和摧毁死墓骑士护甲同样的方式。</p>"
+        },
+        "(Graveknight) Rejuvenation": {
+            "name": "(死墓骑士)复生 (Graveknight) Rejuvenation",
+            "description": "<p>当死墓骑士被摧毁时，其护甲会在[[/br 1d10 #days]]{1d10天}内重塑身体——若护甲被活着的宿主穿戴则会更加迅速（见后文中的死墓骑士护甲）。若身体在此之前被破坏，重塑过程将重新开始。</p>\n<p>只有摧毁护甲（比如使用<em>@Compendium[pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>）、把死墓骑士传送至正能量位面、或者丢进火山之中才能够永久摧毁死墓骑士。</p>"
+        },
+        "(Graveknight) Portentous Glare": {
+            "name": "(死墓骑士)不详怒视 (Graveknight) Portentous Glare",
+            "description": "<p>@Template[type:emanation|distance:30] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>死墓骑士的面容带来了势不可挡的骇人气氛。当一个生物在灵光范围内结束回合时，他必须进行一次@Check[type:will|dc:]豁免。豁免失败的生物获得@Compendium[pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}（大失败获得毁灭1和@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。死墓骑士可以通过一个交互动作开关头盔面罩进而开关此能力。</p>"
+        },
+        "(Graveknight) Ruinous Weapons": {
+            "name": "(死墓骑士)破灭武器 (Graveknight) Ruinous Weapons",
+            "description": "<p>在死墓骑士被创造时，他要从后述能量类型中选择与其生前或死亡息息相关的一种：酸、寒冷、电击或火焰。</p>\n<p>死墓骑士所持用的任意武器均会获得酸蚀、冻寒、电击或炽焰武器符文，外加+1强击武器符文。</p>\n<p>若死墓骑士的等级为14或更高的话，其武器会获得上述同种符文的高等版本作为替代。</p>"
+        },
+        "(Graveknight) Weapon Master": {
+            "name": "(死墓骑士)武器大师 (Graveknight) Weapon Master",
+            "description": "<p>死墓骑士无论持用何种武器，均可以使用该武器的重击专精效果。</p>\n<p><em>因NPC的攻击并不是从其武器中生成，此效果无法自动化。您需要手动为死墓骑士的打击添加\"Note\"元素来应用重击专精效果。例子已被提供。</em></p>"
         }
     }
 }
