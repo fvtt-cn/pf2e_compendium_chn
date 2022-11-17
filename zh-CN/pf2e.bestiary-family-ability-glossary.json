@@ -611,6 +611,54 @@
         "(Werecreature) Curse of the Werecreature": {
             "name": "(化形生物)化形诅咒 (Werecreature) Curse of the Werecreature",
             "description": "<p>此诅咒仅能影响类人生物。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:|name:Curse of the Werecreature] 强韧DC的化形生物的新等级-1时的标准DC。</p>\n<p>在每个月圆之夜，被诅咒的生物必须尝试另一次强韧豁免，失败则会变化为同种类的化形生物，直至黎明。</p>\n<p>该生物会在GM的控制之下，并在后半夜横冲直撞，直至天明并失去知觉。</p>"
+        },
+        "(Zombie) Plague-Ridden": {
+            "name": "(丧尸)瘟疫缠身 (Zombie) Plague-Ridden",
+            "description": "<p>丧尸身上携带着瘟疫，能够创造出更多同类。</p>\n<p>此能力的作用就如同@Compendium[pf2e.pathfinder-bestiary.KxN9aGFGPxl6oLGF]{瘟疫丧尸 Plague Zombie's}的尸化瘟疫一般，不过在阶段5，受害者会复苏成为其他类型的丧尸，而非瘟疫丧尸。</p>\n<hr />\n<p><strong>尸化瘟疫 Zombie Rot</strong></p>\n<p>被感染的生物直至疾病被治愈之前，无法治疗由尸化瘟疫造成的伤害。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:|name:Zombie Rot]</p>\n<p><strong>阶段1</strong> 受体无不良反应 (1天)</p>\n<p><strong>阶段2</strong> [[/r {1d6}[negative]]]{1d6负能量伤害} (1天)</p>\n<p><strong>阶段3</strong> [[/r {1d6}[negative]]]{1d6负能量伤害} (1天)</p>\n<p><strong>阶段4</strong> [[/r {1d6}[negative]]]{1d6负能量伤害} (1天)</p>\n<p><strong>阶段5</strong> 死亡，并立即作为感染种类的丧尸复生</p>"
+        },
+        "(Zombie) Putrid Stench": {
+            "name": "(丧尸)腐烂恶臭 (Zombie) Putrid Stench",
+            "description": "<p>@Template[type:emanation|distance:15] @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>这只丧尸的烂肉极其难闻。一个进入此范围的生物必须进行@Check[type:fortitude|dc:]豁免。失败时，这个生物获得@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，若大失败则在一轮内额外获得速度-5尺状态减值。只要在灵光范围内，该生物在从恶心状态中恢复的豁免获得-2环境减值。一个成功通过豁免的生物在1分钟内暂时免疫所有丧尸的腐烂恶臭。</p>"
+        },
+        "(Zombie) Rotting Aura": {
+            "name": "(丧尸)腐败灵光 (Zombie) Rotting Aura",
+            "description": "<p>@Template[type:emanation|distance:10]{10尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>丧尸散发出充盈着腐败与疾病的灵光，它使得伤口溃烂腐坏。</p>\n<p>任意活物若在回合开始时位于丧尸10尺范围内，且生命值不满时，便会由于伤口溃烂而受到[[/r {1d6}]]{1d6伤害}。丧尸的等级每提高6级，这个伤害便会增加1d6点。</p>\n<p>若有生物被此丧尸重击，也会立即受到该伤害。</p>"
+        },
+        "(Zombie) Spitting Zombie": {
+            "name": "(丧尸)吐酸丧尸 (Zombie) Spitting Zombie",
+            "description": "<p>丧尸具有吐酸远程打击，射程30尺。此打击的攻击加值等同于丧尸已有的攻击加值中最高的；丧尸每有3级，该打击就造成[[/r {1d12}[acid]]]{1d12酸液伤害}（若丧尸等级低于3则造成[[/r {1d6}[acid]]]{1d6酸液伤害}）。该打击重击时，目标还会受到每3级丧尸等级[[/r {1d4}[persistent,acid]]]{1d4} @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}。一旦使用，丧尸就需要花费一个动作来咳出足够的酸液才能再次使用此技能。</p>"
+        },
+        "(Zombie) Persistent Limbs": {
+            "description": "<p>当丧尸第一次受到近战或远程重击时，它的一条肢体脱离躯干并继续攻击。这条肢体以该丧尸的先攻行动；每轮它能移动至多原丧尸的半速并进行一次打击。这条肢体使用并增加丧尸的多重攻击减值。</p>",
+            "name": "(丧尸)顽强四肢 (Zombie) Persistent Limbs"
+        },
+        "(Zombie) Unkillable": {
+            "description": "<p>此类丧尸几乎不能被摧毁。丧尸失去对挥砍的弱点，获得对抗所有伤害的抗力，其数值等同于其等级（最低3点），此外它还会获得对抗重击的弱点，数值为其等级的两倍（最低6点）。</p>\n<p>若你赋予丧尸该能力，则立即为丧尸的等级增加1级。</p>",
+            "name": "(丧尸)不灭 (Zombie) Unkillable"
+        },
+        "(Zombie) Ankle Biter": {
+            "description": "<p>这只丧尸趴在地上也能和站着时打得一样好。当@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}时，丧尸不会@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，它无视它的攻击骰的状态减值，并在@Compendium[pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}的运动鉴定中获得+2环境加值。丧尸还能在它爬行的时候以最高半速移动。</p>",
+            "name": "(丧尸)啮踵专家 (Zombie) Ankle Biter"
+        },
+        "(Zombie) Disgusting Pustules": {
+            "description": "<p>丧尸被脓疱所覆盖，当它承受任意穿刺伤害或重击时，这些脓疱便会破裂。</p>\n<p>无论哪种情况，相邻生物都会被脓液命中，除非这些生物能够成功通过@Check[type:fortitude|dc:|name:Disgusting Pustules]豁免，否则便会变为@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>",
+            "name": "(丧尸)恶臭脓疱 (Zombie) Disgusting Pustules"
+        },
+        "(Zombie) Feast": {
+            "description": "<p>若丧尸与无助或失去意识的生物、或者死亡不超过1小时的已死生物相邻的话，丧尸能够吞食该生物的血肉来治疗自身。</p>\n<p>这将恢复与丧尸等级相同的生命值。若该生物是活物，丧尸会对其造成等同于其啃咬、拳头或爪子的伤害。</p>",
+            "name": "(丧尸)食肉 (Zombie) Feast"
+        },
+        "(Zombie) Infested Zombie": {
+            "description": "<p>丧尸的腐肉被成群的害虫侵染。当丧尸受到重击或被摧毁时，集群就会被释放。虫群的先攻紧接着丧尸的。如果这个集群的等级比它们寄宿的丧尸低4级或更多，该集群没有XP（也不会将它的XP增加到遭遇的总XP中）。</p>",
+            "name": "(丧尸)虫染 (Zombie) Infested Zombie"
+        },
+        "(Zombie) Tearing Grapple": {
+            "name": "(丧尸)撕裂擒拿 (Zombie) Tearing Grapple",
+            "description": "<p>丧尸成群结队地将敌人撕成碎片。每当一只具有此能力的丧尸成功@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapples}一个已经被另一个具有此能力的丧尸@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的敌人时，它会猛烈地摇晃可怜的受害者，对其造成拳头打击的伤害（如果丧尸没有拳头打击，则会造成类似打击的伤害）如果擒抱大成功，目标会受到双倍伤害并且不再被任何其他生物擒抱或束缚。如果僵尸有@Compendium[pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{攫抓 Grab}怪物通用能力，使用攫抓会对目标造成一半的拳头打击伤害。</p>"
+        },
+        "(Zombie) Unholy Speed": {
+            "name": "(丧尸)不洁之速 (Zombie) Unholy Speed",
+            "description": "<p>丧尸在它的所有速度上获得+10状态加值。</p>"
         }
     }
 }
