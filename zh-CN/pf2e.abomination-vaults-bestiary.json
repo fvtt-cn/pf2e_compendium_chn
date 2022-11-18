@@ -1,5 +1,5 @@
 {
-	"label": "憎恨魔窟 Abomination Vaults",
+    "label": "憎恨魔窟 Abomination Vaults",
     "mapping": {
         "publicNotes": "system.details.publicNotes",
         "dr": "system.traits.dr",
@@ -10,702 +10,701 @@
         "hazarddescription": "system.details.description",
         "hazardreset": "system.details.reset",
         "hazardroutine": "system.details.routine",
-        "blurb":"system.details.blurb",
-        "speed":"system.attributes.speed.details",
-        "languages":"system.traits.languages.custom",
-        "stealth":"system.attributes.stealth",
-        "di":"system.traits.di.custom"
+        "blurb": "system.details.blurb",
+        "speed": "system.attributes.speed.details",
+        "languages": "system.traits.languages.custom",
+        "stealth": "system.attributes.stealth",
+        "di": "system.traits.di.custom"
     },
-	"entries": {
-		"Afflicted Irnakurse": {
-			"name": "Afflicted Irnakurse",
-			"senses": "darkvision",
-			"languages": "(Can't Speak Any Language)",
-			"publicNotes": "<p>Irnakurse are surface elves who drow have subjected to particularly cruel and humiliating fleshwarping practices, as drow take special delight in the torment of their surface-dwelling kin. The process of crafting an irnakurse involves twisting an unfortunate elf into a deformed mass of misplaced limbs, loose flesh, and bony protrusions-parts that should be internal are often left on full display to the world. Irnakurse are subject to mental conditioning that causes them to hate their prior forms, and these creatures prefer to attack surface elves over all other targets.</p>\n<hr />\n<p>Horrid abominations reshaped by vile alchemical magic, the two fleshwarps presented here were created by drow, who transform captured elves or xulgaths into twisted monstrosities that can then be loosed to cause havoc and terror.</p>",
-			"items":{
-				"gH06P6rp2bswuGya":{
-					"name": "Jaws"
-				},
-				"kJAxB9HM1zsPkPDC":{
-					"name": "Tentacle"
-				},
-				"iPIBtZVZ5TaPEFp6":{
-					"name": "黑暗视觉 Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
-				},
-				"bxjYZ892TLi9AizW":{
-					"name": "借机攻击 Attack of Opportunity",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
-				},
-				"PXA2uFcT0VRiQkBO":{
-					"name": "Fearful Curse",
-					"description": "<p>The irnakurse is permanently @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}, which lowers its effective level by 1.</p>"
-				},
-				"o40ddeHAtx8cJ0uY":{
-					"name": "Mind Lash",
-					"description": "<p>A non-evil creature hit by an irnakurse's tentacle is overwhelmed with corrupted images of a ruined life and must succeed at a @Check[type:will|dc:28] save or be @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} (or @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 4} on a critical failure).</p>\n<p>After attempting this save, a creature is temporarily immune to Mind Lash for 24 hours.</p>"
-				},
-				"3AqKPdexSndZxd5X":{
-					"name": "Rend",
-					"description": "<p>Tentacle</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
-				},
-				"jr6lRjG0ZeZgW116":{
-					"name": "Soul Scream",
-					"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The irnakurse unleashes an alien shriek of nightmarish horror and pain. All non-evil creatures within a @Template[type:emanation|distance:10] must attempt a @Check[type:will|dc:28] save. The irnakurse can Sustain Soul Scream for up to 6 rounds; each time it does, it repeats the effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to Soul Scream for 24 hours.</p>\n<p><strong>Success</strong> The creature is @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1. Further failed saves against Soul Scream increase the condition value by 1, to a maximum of stupefied 4. Each time the character gets a full night's rest, the stupefied condition gained from Soul Scream decreases by 1.</p>\n<p><strong>Critical Failure</strong> As failure, except the stupefied value increases by 2 instead of by 1.</p>"
-				},
-				"ml69ZMPwkVsbCTC7":{
-					"name": "Storm of Tentacles",
-					"description": "<p>The irnakurse makes up to four tentacle Strikes, each against a different target. These attacks count toward the irnakurse's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all of its attacks.</p>"
-				}
-			}
-		},
-		"Aller Rosk": {
-			"name": "Aller Rosk",
-			"hp": "negative healing",
-			"blurb": "Male ghoul tattoo artist",
-			"senses": "darkvision",
-			"items":{
-				"NiDXROLnOZXSEpNC":{
-					"name": "Jaws"
-				},
-				"b6FIdRGaxea1KX6k":{
-					"name": "Claw"
-				},
-				"7QmN8VFF7J1MzXXO":{
-					"name": "黑暗视觉 Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
-				},
-				"rzTC3Hz3hT9xd3W9":{
-					"name": "Consume Tattooed Flesh",
-					"description": "<p><strong>Requirements</strong> Aller is adjacent to a tattooed scrap of flesh or to the corpse of a creature that died within the last hour</p>\n<p>Aller devours a bite of flesh and regains [[/r {4d6}[healing]]]{4d6 Hit Points}. If the piece of flesh was tattooed, he is also @Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened 1} and can use this extra action to make a jaws Strike.</p>\n<p>Aller then can't Consume Flesh for [[/br 1d4 #Consume Flesh Recharge]]{1d4 rounds}. He has one piece of tattooed flesh on his person.</p>"
-				},
-				"H61mcURmEhYdmt9L":{
-					"name": "Ghoul Fever",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @Compendium[pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
-				},
-				"WCcurB9iEOCcU58H":{
-					"name": "Paralysis",
-					"description": "<p>Any living, non-elf creature hit by Aller's attack must succeed at a @Check[type:fortitude|dc:22] save or become @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
-				},
-				"5YFP1XKwVqEkmjZV":{
-					"name": "Swift Leap",
-					"description": "<p>Aller jumps up to half his Speed. This movement doesn't trigger reactions.</p>"
-				}
-			}
-		},
-		"Augrael": {
-			"name": "Augrael",
-			"blurb": "Male morlock ghoul exile",
-			"senses": "darkvision",
-			"hp": "negative healing",
-			"items":{
-				"hwoQ4oeElvvImKgQ":{
-					"name": "Jaws"
-				},
-				"SuNMXHWTyC2lF2Pa":{
-					"name": "Claw"
-				},
-				"p9kCNA8Mq9cXm23t":{
-					"name": "黑暗视觉 Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
-				},
-				"NyXCVjhHwWZtpfOI":{
-					"name": "Consume Flesh",
-					"description": "<p><strong>Requirements</strong> Augrael is adjacent to the corpse of an undead creature that was destroyed within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Augrael devours a chunk of the destroyed undead creature and regains [[/r {2d6}[healing]]]{2d6 Hit Points}.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>"
-				},
-				"XKiDDCClxzUDYSO8":{
-					"name": "Ghoul Fever",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @Compendium[pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
-				},
-				"0QhLcUbXJtWWVCmp":{
-					"name": "Paralysis",
-					"description": "<p>Any living, non-elf creature hit by Augrael's attack must succeed at a @Check[type:fortitude|dc:20] save or become @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
-				},
-				"D8o83tvKi46maS3U":{
-					"name": "偷袭 Sneak Attack",
-					"description": "<p>Augrael deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
-				},
-				"zZQXw3WG7NLAQrux":{
-					"name": "Swift Leap",
-					"description": "<p>Augrael jumps up to half his Speed. This movement doesn't trigger reactions.</p>"
-				}
-			}
-		},
-		"Azvalvigander": {
-			"name": "Azvalvigander",
-			"allSaves": "+1 status to all saves vs. magic",
-			"blurb": "Female zebub quartermaster",
-			"publicNotes": "<p>Zebubs serve as Hell's messengers and spies. Their ability to share what they've seen with other creatures makes them especially useful-not only to other devils, but also to mortal conjurers. Some infernal lords unleash them in enormous, horrid swarms upon unsuspecting lands to debase flesh and land alike while collecting secrets the infernal host might later put to use. Zebubs use any opportunity to manipulate weak-willed or easily tempted mortals into serving the zebubs' whims. While arrogant and deceitful, zebubs lack the cunning and confidence of most devils, and thus their schemes often focus on satisfying self-serving or self-destructive ambitions. Zebubs form from the souls of childish and craven mortals, reshaped by the archdevil Baalzebul in the frozen, filthy wastes of Hell's seventh layer, Cocytus.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
-			"senses": "greater darkvision",
-			"languages": "Telepathy 100 feet",
-			"dr": [
-				{
-					"exceptions": "except silver",
-					"type": "physical",
-					"value": 5
-				},
-				{
-					"type": "poison",
-					"value": 5
-				}
-			],
-			"items":{
-				"Z60YSknQUrMbR4mB":{
-					"name": "Divine Innate Spells"
-				},
-				"peS8oEAOCjaeRDhC":{
-					"name": "Rituals"
-				},
-				"BkBEhqLM3mXNI13M":{
-					"name": "次元门(随意施法) Dimension Door (At Will)",
-					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
-				},
-				"lQzCQf7gDhv2S88W":{
-					"name": "隐形术(随意施法,仅限自身) Invisibility (At Will) (Self Only)",
-					"description": "<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
-				},
-				"JLbHt0LM9WGhFhGj":{
-					"name": "召唤动物(仅限集群) Summon Animal (Swarm creatures only)",
-					"description": "<p>你创造一个为你而战的动物。你召唤一个具有动物特征的常见生物，其等级为-1。升阶该法术会增加你能召唤的生物的最大等级。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 等级 1</p>\n<p><strong>升阶 (3环级)</strong> 等级 2</p>\n<p><strong>升阶 (4环级)</strong> 等级 3</p>\n<p><strong>升阶 (5环级)</strong> 等级 5</p>\n<p><strong>升阶 (6环级)</strong> 等级 7</p>\n<p><strong>升阶 (7环级)</strong> 等级 9</p>\n<p><strong>升阶 (8环级)</strong> 等级 11</p>\n<p><strong>升阶 (9环级)</strong> 等级 13</p>\n<p><strong>升阶 (10环级)</strong> 等级 15</p>"
-				},
-				"x1k0ByrnVRL8cPMH":{
-					"name": "Key",
-					"description": "<p>key to area D4a</p>"
-				},
-				"eDZZSOhzP0LwbDLp":{
-					"name": "Fragment of Urevian's Pendant"
-				},
-				"DlQoJTMEjgmsWgCa":{
-					"name": "Mandibles"
-				},
-				"POLjXIhCSeQBrvcV":{
-					"name": "高等黑暗视觉 Greater Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
-				},
-				"eZt77JcDJLXdqusp":{
-					"name": "Telepathy 100 feet"
-				},
-				"MhPq4EOlBLppwQeu":{
-					"name": "Cocytan Filth",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Onset</strong> [[/r 1d4 #days]]{1d4 days}</p>\n<hr />\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 day)</p>"
-				},
-				"LNbjPm5a6CTl4lko":{
-					"name": "Infernal Eye",
-					"description": "<p>The zebub records everything they see, and though they don't remember all observations, they can pass them along to another creature.</p>\n<p>The zebub replays 10 minutes of witnessed events to a touched willing creature, which receives the memories in a flash of information. By remaining in contact, the zebub can spend additional 3-action activities to replay more information.</p>\n<p>After relaying their visions to another, the zebub can't ever recall those events again.</p>"
-				},
-				"QZup3O3zcKH6TFZd":{
-					"name": "偷袭 Sneak Attack",
-					"description": "<p>The zebub's Strikes deal an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
-				}
-			}
-		},
-		"Barbazu (AV-C24)": {
-			"name": "Barbazu (AV-C24)",
-			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "greater darkvision",
-			"languages": "Telepathy 100 feet",
-			"dr": [
-				{
-					"exceptions": "except silver",
-					"type": "physical",
-					"value": 5
-				},
-				{
-					"type": "poison",
-					"value": 10
-				}
-			],
-			"publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-			"items":{
-				"6F6RBqJmz0JUvLc3":{
-					"name": "Divine Innate Spells"
-				},
-				"nNGqk0aQljFVuL8g":{
-					"name": "Rituals"
-				},
-				"j5nOoy2JdxGbg96d":{
-					"name": "次元门(随意施法) Dimension Door (At Will)",
-					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
-				},
-				"jiUi7cG1ldGKfHsM":{
-					"name": "Hellforged Glaive",
-					"description": "<p>This polearm consists of a long, single‑edged blade on the end of a 7‑foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
-				},
-				"DzJcNWKMqkWqtgAX":{
-					"name": "Hellforged Glaive"
-				},
-				"99jBJtnLmD48VOSS":{
-					"name": "Claw"
-				},
-				"kwMV2uj1jCdvIm7J":{
-					"name": "Beard"
-				},
-				"fOXEVyfWiHQRSyiC":{
-					"name": "高等黑暗视觉 Greater Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
-				},
-				"fDmw9feXNMKuAci4":{
-					"name": "Telepathy 100 feet"
-				},
-				"T108hwN1OhACYQdQ":{
-					"name": "借机攻击 Attack of Opportunity",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
-				},
-				"GZ55vWFhwaHyhnfM":{
-					"name": "Avernal Fever",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
-				},
-				"SNJ0RSCREyP9YYKY":{
-					"name": "Infernal Wound",
-					"description": "<p>A bearded devil's glaive Strike also deals @Localize[PF2E.PersistentDamage.Bleed1d6.success] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>"
-				},
-				"zQUhdB7kvudfGv5Z":{
-					"name": "Reposition",
-					"description": "<p><strong>Trigger</strong> The devil hits a creature with a glaive Strike.</p>\n<hr />\n<p><strong>Effect</strong> The devil moves the creature 5 feet in any direction. The destination square must be within reach of the devil's glaive.</p>\n<p>This movement doesn't trigger reactions.</p>"
-				},
-				"6zbiPHhWaAV5pJd6":{
-					"name": "Wriggling Beard",
-					"description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
-				}
-			}
-		},
-		"Barbazu (AV-D3)": {
-			"name": "Barbazu (AV-D3)",
-			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "greater darkvision",
-			"languages": "Telepathy 100 feet",
-			"dr": [
-				{
-					"exceptions": "except silver",
-					"type": "physical",
-					"value": 5
-				},
-				{
-					"type": "poison",
-					"value": 10
-				}
-			],
-			"publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-			"items":{
-				"6F6RBqJmz0JUvLc3":{
-					"name": "Divine Innate Spells"
-				},
-				"nNGqk0aQljFVuL8g":{
-					"name": "Rituals"
-				},
-				"j5nOoy2JdxGbg96d":{
-					"name": "次元门(随意施法) Dimension Door (At Will)",
-					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
-				},
-				"DzJcNWKMqkWqtgAX":{
-					"name": "大砍刀 Glaive",
-					"description": ""
-				},
-				"99jBJtnLmD48VOSS":{
-					"name": "Claw"
-				},
-				"kwMV2uj1jCdvIm7J":{
-					"name": "Beard"
-				},
-				"fOXEVyfWiHQRSyiC":{
-					"name": "高等黑暗视觉 Greater Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
-				},
-				"fDmw9feXNMKuAci4":{
-					"name": "Telepathy 100 feet"
-				},
-				"T108hwN1OhACYQdQ":{
-					"name": "借机攻击 Attack of Opportunity",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
-				},
-				"GZ55vWFhwaHyhnfM":{
-					"name": "Avernal Fever",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
-				},
-				"Vo6AHVWsAnxqkwLW":{
-					"name": "赶畜皮带 Drover's Band",
-					"description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将意识施加到30尺内的一个无心智生物上。如果目标是一个等级不超过3级的无心智生物，它必须通过@Check[type:will|dc:20]豁免。如果你是魔鬼，目标的豁免结果的成功度将下降一个级别。</p>\n<hr />\n<p><strong>大成功</strong> 目标生物不受影响</p>\n<p><strong>成功</strong> 由于被你的命令扰乱，目标生物陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮</p>\n<p><strong>失败</strong> 目标生物在1小时内@Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{被控制 Controlled}，但它不会遵从明显会导致自我毁灭的命令。</p>\n<p><strong>大失败</strong> 类似失败，但是持续时间为1天。</p>"
-				},
-				"SNJ0RSCREyP9YYKY":{
-					"name": "Infernal Wound",
-					"description": "<p>A bearded devil's glaive Strike also deals @Localize[PF2E.PersistentDamage.Bleed1d6.success] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>"
-				},
-				"zQUhdB7kvudfGv5Z":{
-					"name": "Reposition",
-					"description": "<p><strong>Trigger</strong> The devil hits a creature with a glaive Strike.</p>\n<hr />\n<p><strong>Effect</strong> The devil moves the creature 5 feet in any direction. The destination square must be within reach of the devil's glaive.</p>\n<p>This movement doesn't trigger reactions.</p>"
-				},
-				"6zbiPHhWaAV5pJd6":{
-					"name": "Wriggling Beard",
-					"description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
-				}
-			}
-		},
-		"Barbazu (AV-D5)": {
-			"name": "Barbazu (AV-D5)",
-			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "greater darkvision",
-			"languages": "Telepathy 100 feet",
-			"dr": [
-				{
-					"exceptions": "except silver",
-					"type": "physical",
-					"value": 5
-				},
-				{
-					"type": "poison",
-					"value": 10
-				}
-			],
-			"publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
-			"items":{
-				"6F6RBqJmz0JUvLc3":{
-					"name": "Divine Innate Spells"
-				},
-				"nNGqk0aQljFVuL8g":{
-					"name": "Rituals"
-				},
-				"j5nOoy2JdxGbg96d":{
-					"name": "次元门(随意施法) Dimension Door (At Will)",
-					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
-				},
-				"jiUi7cG1ldGKfHsM":{
-					"name": "+1 Flaming Striking Hellforged Glaive",
-					"description": "<p>This polearm consists of a long, single‑edged blade on the end of a 7‑foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
-				},
-				"DzJcNWKMqkWqtgAX":{
-					"name": "Flaming Hellforged Glaive"
-				},
-				"99jBJtnLmD48VOSS":{
-					"name": "Claw"
-				},
-				"kwMV2uj1jCdvIm7J":{
-					"name": "Beard"
-				},
-				"fOXEVyfWiHQRSyiC":{
-					"name": "高等黑暗视觉 Greater Darkvision",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
-				},
-				"fDmw9feXNMKuAci4":{
-					"name": "Telepathy 100 feet"
-				},
-				"T108hwN1OhACYQdQ":{
-					"name": "借机攻击 Attack of Opportunity",
-					"description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
-				},
-				"GZ55vWFhwaHyhnfM":{
-					"name": "Avernal Fever",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
-				},
-				"SNJ0RSCREyP9YYKY":{
-					"name": "Infernal Wound",
-					"description": "<p>A bearded devil's glaive Strike also deals @Localize[PF2E.PersistentDamage.Bleed1d6.success] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>"
-				},
-				"zQUhdB7kvudfGv5Z":{
-					"name": "Reposition",
-					"description": "<p><strong>Trigger</strong> The devil hits a creature with a glaive Strike.</p>\n<hr />\n<p><strong>Effect</strong> The devil moves the creature 5 feet in any direction. The destination square must be within reach of the devil's glaive.</p>\n<p>This movement doesn't trigger reactions.</p>"
-				},
-				"6zbiPHhWaAV5pJd6":{
-					"name": "Wriggling Beard",
-					"description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
-				}
-			}
-		},
-		"Barcumbuk": {
-			"name": "Barcumbuk"
-		},
-		"Befuddling Gas Trap": {
-			"name": "Befuddling Gas Trap"
-		},
-		"Belcorra Haruvex": {
-			"name": "Belcorra Haruvex"
-		},
-		"Blast Tumbler": {
-			"name": "Blast Tumbler"
-		},
-		"Blood of Belcorra": {
-			"name": "Blood of Belcorra"
-		},
-		"Bloodsiphon": {
-			"name": "Bloodsiphon"
-		},
-		"Bone Gladiator": {
-			"name": "Bone Gladiator"
-		},
-		"Boss Skrawng": {
-			"name": "Boss Skrawng"
-		},
-		"Bright Walker": {
-			"name": "Bright Walker"
-		},
-		"Caligni Defender": {
-			"name": "Caligni Defender"
-		},
-		"Canker Cultist": {
-			"name": "Canker Cultist"
-		},
-		"Carman Rajani": {
-			"name": "Carman Rajani"
-		},
-		"Chafkhem": {
-			"name": "Chafkhem"
-		},
-		"Chandriu Invisar": {
-			"name": "Chandriu Invisar"
-		},
-		"Corpselight": {
-			"name": "Corpselight"
-		},
-		"Cratonys": {
-			"name": "Cratonys"
-		},
-		"Daemonic Fog": {
-			"name": "Daemonic Fog"
-		},
-		"Deepwater Dhuthorex": {
-			"name": "Deepwater Dhuthorex"
-		},
-		"Dhuthorex Sage": {
-			"name": "Dhuthorex Sage"
-		},
-		"Doom of Tomorrow": {
-			"name": "Doom of Tomorrow"
-		},
-		"Dragon's Blood Puffball": {
-			"name": "Dragon's Blood Puffball"
-		},
-		"Dread Dhuthorex": {
-			"name": "Dread Dhuthorex"
-		},
-		"Dread Wisp": {
-			"name": "Dread Wisp"
-		},
-		"Dreshkan": {
-			"name": "Dreshkan"
-		},
-		"Drow Cavern Seer": {
-			"name": "Drow Cavern Seer"
-		},
-		"Drow Hunter": {
-			"name": "Drow Hunter"
-		},
-		"Drow Shootist": {
-			"name": "Drow Shootist"
-		},
-		"Drow Warden": {
-			"name": "Drow Warden"
-		},
-		"Dulac": {
-			"name": "Dulac"
-		},
-		"Dune Candle": {
-			"name": "Dune Candle"
-		},
-		"Elder Child Of Belcorra": {
-			"name": "Elder Child Of Belcorra"
-		},
-		"Erinys (AV-D7)": {
-			"name": "Erinys (AV-D7)"
-		},
-		"Flickerwisp": {
-			"name": "Flickerwisp"
-		},
-		"Galudu": {
-			"name": "Galudu"
-		},
-		"Gibtanius": {
-			"name": "Gibtanius"
-		},
-		"Gibtas Bounder": {
-			"name": "Gibtas Bounder"
-		},
-		"Gibtas Spawn Swarm": {
-			"name": "Gibtas Spawn Swarm"
-		},
-		"Groetan Candle": {
-			"name": "Groetan Candle"
-		},
-		"Gulzash": {
-			"name": "Gulzash"
-		},
-		"Images of Failure": {
-			"name": "Images of Failure"
-		},
-		"Images of Powerlessness": {
-			"name": "Images of Powerlessness"
-		},
-		"Jafaki": {
-			"name": "Jafaki"
-		},
-		"Jarelle Kaldrian": {
-			"name": "Jarelle Kaldrian"
-		},
-		"Jaul Mezmin": {
-			"name": "Jaul Mezmin"
-		},
-		"Jaul's Wolf": {
-			"name": "Jaul's Wolf"
-		},
-		"Khurfel": {
-			"name": "Khurfel"
-		},
-		"Kragala": {
-			"name": "Kragala"
-		},
-		"Lady's Whisper": {
-			"name": "Lady's Whisper"
-		},
-		"Mister Beak": {
-			"name": "Mister Beak"
-		},
-		"Morlock (AV)": {
-			"name": "Morlock (AV)"
-		},
-		"Morlock Cultist": {
-			"name": "Morlock Cultist"
-		},
-		"Morlock Engineer": {
-			"name": "Morlock Engineer"
-		},
-		"Morlock Scavenger": {
-			"name": "Morlock Scavenger"
-		},
-		"Mulventok": {
-			"name": "Mulventok"
-		},
-		"Murschen": {
-			"name": "Murschen"
-		},
-		"Nhakazarin": {
-			"name": "Nhakazarin"
-		},
-		"Nhimbaloth's Cutter": {
-			"name": "Nhimbaloth's Cutter"
-		},
-		"Nox": {
-			"name": "Nox"
-		},
-		"Otari Ilvashti": {
-			"name": "Otari Ilvashti"
-		},
-		"Padli": {
-			"name": "Padli"
-		},
-		"Painful Suggestion Trap": {
-			"name": "Painful Suggestion Trap"
-		},
-		"Paralyzing Light Trap": {
-			"name": "Paralyzing Light Trap"
-		},
-		"Quara Orshendiel": {
-			"name": "Quara Orshendiel"
-		},
-		"Reaper Skull Puffball": {
-			"name": "Reaper Skull Puffball"
-		},
-		"Rusty Grate Pit": {
-			"name": "Rusty Grate Pit"
-		},
-		"Ryta": {
-			"name": "Ryta"
-		},
-		"Sacuishu": {
-			"name": "Sacuishu"
-		},
-		"Salaisa Malthulas": {
-			"name": "Salaisa Malthulas"
-		},
-		"Sarglagon (AV)": {
-			"name": "Sarglagon (AV)"
-		},
-		"Scalathrax": {
-			"name": "Scalathrax"
-		},
-		"Seugathi Guard": {
-			"name": "Seugathi Guard"
-		},
-		"Seugathi Reality Warper": {
-			"name": "Seugathi Reality Warper"
-		},
-		"Seugathi Researcher": {
-			"name": "Seugathi Researcher"
-		},
-		"Seugathi Researcher (C20)": {
-			"name": "Seugathi Researcher (C20)"
-		},
-		"Seugathi Servant": {
-			"name": "Seugathi Servant"
-		},
-		"Shanrigol Behemoth": {
-			"name": "Shanrigol Behemoth"
-		},
-		"Shanrigol Heap": {
-			"name": "Shanrigol Heap"
-		},
-		"Shuffling Scythe Blades": {
-			"name": "Shuffling Scythe Blades"
-		},
-		"Siora Fallowglade": {
-			"name": "Siora Fallowglade"
-		},
-		"Skeleton Guard (AV-Graveyard)": {
-			"name": "Skeleton Guard (AV-Graveyard)"
-		},
-		"Specter (AV C2)": {
-			"name": "Specter (AV C2)"
-		},
-		"Spellvoid": {
-			"name": "Spellvoid"
-		},
-		"Spike Launcher": {
-			"name": "Spike Launcher"
-		},
-		"Stonescale Spirits": {
-			"name": "Stonescale Spirits"
-		},
-		"Urdefhan Blood Mage": {
-			"name": "Urdefhan Blood Mage"
-		},
-		"Urdefhan Death Scout": {
-			"name": "Urdefhan Death Scout"
-		},
-		"Urdefhan Lasher": {
-			"name": "Urdefhan Lasher"
-		},
-		"Urevian": {
-			"name": "Urevian"
-		},
-		"Vengeful Furnace": {
-			"name": "Vengeful Furnace"
-		},
-		"Vischari": {
-			"name": "Vischari"
-		},
-		"Viscous Black Pudding": {
-			"name": "Viscous Black Pudding"
-		},
-		"Voidbracken Chuul": {
-			"name": "Voidbracken Chuul"
-		},
-		"Voidglutton": {
-			"name": "Voidglutton"
-		},
-		"Volluk Azrinae": {
-			"name": "Volluk Azrinae"
-		},
-		"Watching Wall": {
-			"name": "Watching Wall"
-		},
-		"Will-o'-the-Deep": {
-			"name": "Will-o'-the-Deep"
-		},
-		"Witchfire Warden": {
-			"name": "Witchfire Warden"
-		},
-		"Wrin Sivinxi": {
-			"name": "Wrin Sivinxi"
-		},
-		"Ysondkhelir": {
-			"name": "Ysondkhelir"
-		}
-	}
+    "entries": {
+        "Afflicted Irnakurse": {
+            "name": "Afflicted Irnakurse",
+            "senses": "darkvision",
+            "languages": "(Can't Speak Any Language)",
+            "publicNotes": "<p>Irnakurse are surface elves who drow have subjected to particularly cruel and humiliating fleshwarping practices, as drow take special delight in the torment of their surface-dwelling kin. The process of crafting an irnakurse involves twisting an unfortunate elf into a deformed mass of misplaced limbs, loose flesh, and bony protrusions-parts that should be internal are often left on full display to the world. Irnakurse are subject to mental conditioning that causes them to hate their prior forms, and these creatures prefer to attack surface elves over all other targets.</p>\n<hr />\n<p>Horrid abominations reshaped by vile alchemical magic, the two fleshwarps presented here were created by drow, who transform captured elves or xulgaths into twisted monstrosities that can then be loosed to cause havoc and terror.</p>",
+            "items": {
+                "gH06P6rp2bswuGya": {
+                    "name": "Jaws"
+                },
+                "kJAxB9HM1zsPkPDC": {
+                    "name": "Tentacle"
+                },
+                "iPIBtZVZ5TaPEFp6": {
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "bxjYZ892TLi9AizW": {
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "PXA2uFcT0VRiQkBO": {
+                    "name": "Fearful Curse",
+                    "description": "<p>The irnakurse is permanently @Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}, which lowers its effective level by 1.</p>"
+                },
+                "o40ddeHAtx8cJ0uY": {
+                    "name": "Mind Lash",
+                    "description": "<p>A non-evil creature hit by an irnakurse's tentacle is overwhelmed with corrupted images of a ruined life and must succeed at a @Check[type:will|dc:28] save or be @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} (or @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 4} on a critical failure).</p>\n<p>After attempting this save, a creature is temporarily immune to Mind Lash for 24 hours.</p>"
+                },
+                "3AqKPdexSndZxd5X": {
+                    "name": "Rend",
+                    "description": "<p>Tentacle</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+                },
+                "jr6lRjG0ZeZgW116": {
+                    "name": "Soul Scream",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The irnakurse unleashes an alien shriek of nightmarish horror and pain. All non-evil creatures within a @Template[type:emanation|distance:10] must attempt a @Check[type:will|dc:28] save. The irnakurse can Sustain Soul Scream for up to 6 rounds; each time it does, it repeats the effect.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, and is temporarily immune to Soul Scream for 24 hours.</p>\n<p><strong>Success</strong> The creature is @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The creature is stupefied 1. Further failed saves against Soul Scream increase the condition value by 1, to a maximum of stupefied 4. Each time the character gets a full night's rest, the stupefied condition gained from Soul Scream decreases by 1.</p>\n<p><strong>Critical Failure</strong> As failure, except the stupefied value increases by 2 instead of by 1.</p>"
+                },
+                "ml69ZMPwkVsbCTC7": {
+                    "name": "Storm of Tentacles",
+                    "description": "<p>The irnakurse makes up to four tentacle Strikes, each against a different target. These attacks count toward the irnakurse's multiple attack penalty, but the multiple attack penalty doesn't increase until after it makes all of its attacks.</p>"
+                }
+            }
+        },
+        "Aller Rosk": {
+            "name": "Aller Rosk",
+            "hp": "negative healing",
+            "blurb": "Male ghoul tattoo artist",
+            "senses": "darkvision",
+            "items": {
+                "NiDXROLnOZXSEpNC": {
+                    "name": "Jaws"
+                },
+                "b6FIdRGaxea1KX6k": {
+                    "name": "Claw"
+                },
+                "7QmN8VFF7J1MzXXO": {
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "rzTC3Hz3hT9xd3W9": {
+                    "name": "Consume Tattooed Flesh",
+                    "description": "<p><strong>Requirements</strong> Aller is adjacent to a tattooed scrap of flesh or to the corpse of a creature that died within the last hour</p>\n<p>Aller devours a bite of flesh and regains [[/r {4d6}[healing]]]{4d6 Hit Points}. If the piece of flesh was tattooed, he is also @Compendium[pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened 1} and can use this extra action to make a jaws Strike.</p>\n<p>Aller then can't Consume Flesh for [[/br 1d4 #Consume Flesh Recharge]]{1d4 rounds}. He has one piece of tattooed flesh on his person.</p>"
+                },
+                "H61mcURmEhYdmt9L": {
+                    "name": "Ghoul Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @Compendium[pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+                },
+                "WCcurB9iEOCcU58H": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living, non-elf creature hit by Aller's attack must succeed at a @Check[type:fortitude|dc:22] save or become @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "5YFP1XKwVqEkmjZV": {
+                    "name": "Swift Leap",
+                    "description": "<p>Aller jumps up to half his Speed. This movement doesn't trigger reactions.</p>"
+                }
+            }
+        },
+        "Augrael": {
+            "name": "Augrael",
+            "blurb": "Male morlock ghoul exile",
+            "senses": "darkvision",
+            "hp": "negative healing",
+            "items": {
+                "hwoQ4oeElvvImKgQ": {
+                    "name": "Jaws"
+                },
+                "SuNMXHWTyC2lF2Pa": {
+                    "name": "Claw"
+                },
+                "p9kCNA8Mq9cXm23t": {
+                    "name": "黑暗视觉 Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+                },
+                "NyXCVjhHwWZtpfOI": {
+                    "name": "Consume Flesh",
+                    "description": "<p><strong>Requirements</strong> Augrael is adjacent to the corpse of an undead creature that was destroyed within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> Augrael devours a chunk of the destroyed undead creature and regains [[/r {2d6}[healing]]]{2d6 Hit Points}.</p>\n<p>He can regain Hit Points from any given corpse only once.</p>"
+                },
+                "XKiDDCClxzUDYSO8": {
+                    "name": "Ghoul Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a @Compendium[pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{Ghoul} the next midnight.</p>"
+                },
+                "0QhLcUbXJtWWVCmp": {
+                    "name": "Paralysis",
+                    "description": "<p>Any living, non-elf creature hit by Augrael's attack must succeed at a @Check[type:fortitude|dc:20] save or become @Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>"
+                },
+                "D8o83tvKi46maS3U": {
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>Augrael deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "zZQXw3WG7NLAQrux": {
+                    "name": "Swift Leap",
+                    "description": "<p>Augrael jumps up to half his Speed. This movement doesn't trigger reactions.</p>"
+                }
+            }
+        },
+        "Azvalvigander": {
+            "name": "Azvalvigander",
+            "allSaves": "+1 status to all saves vs. magic",
+            "blurb": "Female zebub quartermaster",
+            "publicNotes": "<p>Zebubs serve as Hell's messengers and spies. Their ability to share what they've seen with other creatures makes them especially useful-not only to other devils, but also to mortal conjurers. Some infernal lords unleash them in enormous, horrid swarms upon unsuspecting lands to debase flesh and land alike while collecting secrets the infernal host might later put to use. Zebubs use any opportunity to manipulate weak-willed or easily tempted mortals into serving the zebubs' whims. While arrogant and deceitful, zebubs lack the cunning and confidence of most devils, and thus their schemes often focus on satisfying self-serving or self-destructive ambitions. Zebubs form from the souls of childish and craven mortals, reshaped by the archdevil Baalzebul in the frozen, filthy wastes of Hell's seventh layer, Cocytus.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
+            "senses": "greater darkvision",
+            "languages": "Telepathy 100 feet",
+            "dr": [
+                {
+                    "exceptions": "except silver",
+                    "type": "physical",
+                    "value": 5
+                },
+                {
+                    "type": "poison",
+                    "value": 5
+                }
+            ],
+            "items": {
+                "Z60YSknQUrMbR4mB": {
+                    "name": "Divine Innate Spells"
+                },
+                "peS8oEAOCjaeRDhC": {
+                    "name": "Rituals"
+                },
+                "BkBEhqLM3mXNI13M": {
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "lQzCQf7gDhv2S88W": {
+                    "name": "隐形术(随意施法,仅限自身) Invisibility (At Will) (Self Only)",
+                    "description": "<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
+                },
+                "JLbHt0LM9WGhFhGj": {
+                    "name": "召唤动物(仅限集群) Summon Animal (Swarm creatures only)",
+                    "description": "<p>你创造一个为你而战的动物。你召唤一个具有动物特征的常见生物，其等级为-1。升阶该法术会增加你能召唤的生物的最大等级。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 等级 1</p>\n<p><strong>升阶 (3环级)</strong> 等级 2</p>\n<p><strong>升阶 (4环级)</strong> 等级 3</p>\n<p><strong>升阶 (5环级)</strong> 等级 5</p>\n<p><strong>升阶 (6环级)</strong> 等级 7</p>\n<p><strong>升阶 (7环级)</strong> 等级 9</p>\n<p><strong>升阶 (8环级)</strong> 等级 11</p>\n<p><strong>升阶 (9环级)</strong> 等级 13</p>\n<p><strong>升阶 (10环级)</strong> 等级 15</p>"
+                },
+                "x1k0ByrnVRL8cPMH": {
+                    "name": "Key",
+                    "description": "<p>key to area D4a</p>"
+                },
+                "eDZZSOhzP0LwbDLp": {
+                    "name": "Fragment of Urevian's Pendant"
+                },
+                "DlQoJTMEjgmsWgCa": {
+                    "name": "Mandibles"
+                },
+                "POLjXIhCSeQBrvcV": {
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "eZt77JcDJLXdqusp": {
+                    "name": "Telepathy 100 feet"
+                },
+                "MhPq4EOlBLppwQeu": {
+                    "name": "Cocytan Filth",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Onset</strong> [[/r 1d4 #days]]{1d4 days}</p>\n<hr />\n<p><strong>Stage 1</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} (1 day)</p>"
+                },
+                "LNbjPm5a6CTl4lko": {
+                    "name": "Infernal Eye",
+                    "description": "<p>The zebub records everything they see, and though they don't remember all observations, they can pass them along to another creature.</p>\n<p>The zebub replays 10 minutes of witnessed events to a touched willing creature, which receives the memories in a flash of information. By remaining in contact, the zebub can spend additional 3-action activities to replay more information.</p>\n<p>After relaying their visions to another, the zebub can't ever recall those events again.</p>"
+                },
+                "QZup3O3zcKH6TFZd": {
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The zebub's Strikes deal an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                }
+            }
+        },
+        "Barbazu (AV-C24)": {
+            "name": "Barbazu (AV-C24)",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "greater darkvision",
+            "languages": "Telepathy 100 feet",
+            "dr": [
+                {
+                    "exceptions": "except silver",
+                    "type": "physical",
+                    "value": 5
+                },
+                {
+                    "type": "poison",
+                    "value": 10
+                }
+            ],
+            "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
+            "items": {
+                "6F6RBqJmz0JUvLc3": {
+                    "name": "Divine Innate Spells"
+                },
+                "nNGqk0aQljFVuL8g": {
+                    "name": "Rituals"
+                },
+                "j5nOoy2JdxGbg96d": {
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "jiUi7cG1ldGKfHsM": {
+                    "name": "Hellforged Glaive",
+                    "description": "<p>This polearm consists of a long, single‑edged blade on the end of a 7‑foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
+                },
+                "DzJcNWKMqkWqtgAX": {
+                    "name": "Hellforged Glaive"
+                },
+                "99jBJtnLmD48VOSS": {
+                    "name": "Claw"
+                },
+                "kwMV2uj1jCdvIm7J": {
+                    "name": "Beard"
+                },
+                "fOXEVyfWiHQRSyiC": {
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "fDmw9feXNMKuAci4": {
+                    "name": "Telepathy 100 feet"
+                },
+                "T108hwN1OhACYQdQ": {
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "GZ55vWFhwaHyhnfM": {
+                    "name": "Avernal Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                },
+                "SNJ0RSCREyP9YYKY": {
+                    "name": "Infernal Wound",
+                    "description": "<p>A bearded devil's glaive Strike also deals @Localize[PF2E.PersistentDamage.Bleed1d6.success] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>"
+                },
+                "zQUhdB7kvudfGv5Z": {
+                    "name": "Reposition",
+                    "description": "<p><strong>Trigger</strong> The devil hits a creature with a glaive Strike.</p>\n<hr />\n<p><strong>Effect</strong> The devil moves the creature 5 feet in any direction. The destination square must be within reach of the devil's glaive.</p>\n<p>This movement doesn't trigger reactions.</p>"
+                },
+                "6zbiPHhWaAV5pJd6": {
+                    "name": "Wriggling Beard",
+                    "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
+                }
+            }
+        },
+        "Barbazu (AV-D3)": {
+            "name": "Barbazu (AV-D3)",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "greater darkvision",
+            "languages": "Telepathy 100 feet",
+            "dr": [
+                {
+                    "exceptions": "except silver",
+                    "type": "physical",
+                    "value": 5
+                },
+                {
+                    "type": "poison",
+                    "value": 10
+                }
+            ],
+            "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
+            "items": {
+                "6F6RBqJmz0JUvLc3": {
+                    "name": "Divine Innate Spells"
+                },
+                "nNGqk0aQljFVuL8g": {
+                    "name": "Rituals"
+                },
+                "j5nOoy2JdxGbg96d": {
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "DzJcNWKMqkWqtgAX": {
+                    "name": "大砍刀 Glaive"
+                },
+                "99jBJtnLmD48VOSS": {
+                    "name": "Claw"
+                },
+                "kwMV2uj1jCdvIm7J": {
+                    "name": "Beard"
+                },
+                "fOXEVyfWiHQRSyiC": {
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "fDmw9feXNMKuAci4": {
+                    "name": "Telepathy 100 feet"
+                },
+                "T108hwN1OhACYQdQ": {
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "GZ55vWFhwaHyhnfM": {
+                    "name": "Avernal Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                },
+                "Vo6AHVWsAnxqkwLW": {
+                    "name": "赶畜皮带 Drover's Band",
+                    "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将意识施加到30尺内的一个无心智生物上。如果目标是一个等级不超过3级的无心智生物，它必须通过@Check[type:will|dc:20]豁免。如果你是魔鬼，目标的豁免结果的成功度将下降一个级别。</p>\n<hr />\n<p><strong>大成功</strong> 目标生物不受影响</p>\n<p><strong>成功</strong> 由于被你的命令扰乱，目标生物陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮</p>\n<p><strong>失败</strong> 目标生物在1小时内@Compendium[pf2e.conditionitems.9qGBRpbX9NEwtAAr]{被控制 Controlled}，但它不会遵从明显会导致自我毁灭的命令。</p>\n<p><strong>大失败</strong> 类似失败，但是持续时间为1天。</p>"
+                },
+                "SNJ0RSCREyP9YYKY": {
+                    "name": "Infernal Wound",
+                    "description": "<p>A bearded devil's glaive Strike also deals @Localize[PF2E.PersistentDamage.Bleed1d6.success] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>"
+                },
+                "zQUhdB7kvudfGv5Z": {
+                    "name": "Reposition",
+                    "description": "<p><strong>Trigger</strong> The devil hits a creature with a glaive Strike.</p>\n<hr />\n<p><strong>Effect</strong> The devil moves the creature 5 feet in any direction. The destination square must be within reach of the devil's glaive.</p>\n<p>This movement doesn't trigger reactions.</p>"
+                },
+                "6zbiPHhWaAV5pJd6": {
+                    "name": "Wriggling Beard",
+                    "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
+                }
+            }
+        },
+        "Barbazu (AV-D5)": {
+            "name": "Barbazu (AV-D5)",
+            "allSaves": "+1 status to all saves vs. magic",
+            "senses": "greater darkvision",
+            "languages": "Telepathy 100 feet",
+            "dr": [
+                {
+                    "exceptions": "except silver",
+                    "type": "physical",
+                    "value": 5
+                },
+                {
+                    "type": "poison",
+                    "value": 10
+                }
+            ],
+            "publicNotes": "<p>Barbazus, known also as bearded devils or infantry devils, are murderous fiends who satiate their lust for annihilation by serving as the foot soldiers of Hell's armies, often leading hordes of lesser devils such as imps and lemures into battle. Bearded devils wield serrated glaives to inflict jagged gashes that resist healing magic, resulting in tremendous blood loss. When enemies come too close, bearded devils strike with the spines of their wriggling beards to deliver a wretched contagion called Avernal fever, savoring the sight of their victim's strength being slowly devoured from within.</p>\n<p>Barbazus can be found savagely indulging the whims of evil infernal lords from all layers of Hell, rejoicing as they disseminate murder, misery, and anguish as they see fit.</p>\n<hr />\n<p>Masters of corruption and architects of conquest, devils seek both to tempt mortal life to join in their pursuit of all things profane and to spread tyranny throughout all worlds. The temptations they offer mortals range from great powers granted by the signing of an infernal contract to twisted favors following a whispered pledge to a diabolic patron, or any number of even subtler exchanges. Those who succumb to these temptations find themselves consigned to an afterlife of endless torment in the pits of Hell, wherein the only hope of escape lies in the chance of being promoted to become a devil in the infernal ranks. Every devil has a specific role to play in the upkeep of the remorseless bureaucratic machine that is Hell, from soldiers and scholars to inquisitors, lawyers, judges, and executioners. Lowly lemures and imps perform subservient labor to more powerful and specialized devils, such as contract devils and erinyes, while the greatest pit fiends command entire infernal armies.</p>",
+            "items": {
+                "6F6RBqJmz0JUvLc3": {
+                    "name": "Divine Innate Spells"
+                },
+                "nNGqk0aQljFVuL8g": {
+                    "name": "Rituals"
+                },
+                "j5nOoy2JdxGbg96d": {
+                    "name": "次元门(随意施法) Dimension Door (At Will)",
+                    "description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+                },
+                "jiUi7cG1ldGKfHsM": {
+                    "name": "+1 Flaming Striking Hellforged Glaive",
+                    "description": "<p>This polearm consists of a long, single‑edged blade on the end of a 7‑foot pole. It is extremely effective at delivering lethal cuts at a distance.</p>"
+                },
+                "DzJcNWKMqkWqtgAX": {
+                    "name": "Flaming Hellforged Glaive"
+                },
+                "99jBJtnLmD48VOSS": {
+                    "name": "Claw"
+                },
+                "kwMV2uj1jCdvIm7J": {
+                    "name": "Beard"
+                },
+                "fOXEVyfWiHQRSyiC": {
+                    "name": "高等黑暗视觉 Greater Darkvision",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+                },
+                "fDmw9feXNMKuAci4": {
+                    "name": "Telepathy 100 feet"
+                },
+                "T108hwN1OhACYQdQ": {
+                    "name": "借机攻击 Attack of Opportunity",
+                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
+                },
+                "GZ55vWFhwaHyhnfM": {
+                    "name": "Avernal Fever",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 3</strong> @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 day)</p>"
+                },
+                "SNJ0RSCREyP9YYKY": {
+                    "name": "Infernal Wound",
+                    "description": "<p>A bearded devil's glaive Strike also deals @Localize[PF2E.PersistentDamage.Bleed1d6.success] that resists attempts to heal it.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @Compendium[pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 21 counteract check or the magic fails to heal the creature.</p>"
+                },
+                "zQUhdB7kvudfGv5Z": {
+                    "name": "Reposition",
+                    "description": "<p><strong>Trigger</strong> The devil hits a creature with a glaive Strike.</p>\n<hr />\n<p><strong>Effect</strong> The devil moves the creature 5 feet in any direction. The destination square must be within reach of the devil's glaive.</p>\n<p>This movement doesn't trigger reactions.</p>"
+                },
+                "6zbiPHhWaAV5pJd6": {
+                    "name": "Wriggling Beard",
+                    "description": "<p><strong>Frequency</strong> once per round.</p>\n<hr />\n<p><strong>Effect</strong> The barbazu makes a beard Strike. This Strike ignores their multiple attack penalty and doesn't count toward that penalty.</p>"
+                }
+            }
+        },
+        "Barcumbuk": {
+            "name": "Barcumbuk"
+        },
+        "Befuddling Gas Trap": {
+            "name": "Befuddling Gas Trap"
+        },
+        "Belcorra Haruvex": {
+            "name": "Belcorra Haruvex"
+        },
+        "Blast Tumbler": {
+            "name": "Blast Tumbler"
+        },
+        "Blood of Belcorra": {
+            "name": "Blood of Belcorra"
+        },
+        "Bloodsiphon": {
+            "name": "Bloodsiphon"
+        },
+        "Bone Gladiator": {
+            "name": "Bone Gladiator"
+        },
+        "Boss Skrawng": {
+            "name": "Boss Skrawng"
+        },
+        "Bright Walker": {
+            "name": "Bright Walker"
+        },
+        "Caligni Defender": {
+            "name": "Caligni Defender"
+        },
+        "Canker Cultist": {
+            "name": "Canker Cultist"
+        },
+        "Carman Rajani": {
+            "name": "Carman Rajani"
+        },
+        "Chafkhem": {
+            "name": "Chafkhem"
+        },
+        "Chandriu Invisar": {
+            "name": "Chandriu Invisar"
+        },
+        "Corpselight": {
+            "name": "Corpselight"
+        },
+        "Cratonys": {
+            "name": "Cratonys"
+        },
+        "Daemonic Fog": {
+            "name": "Daemonic Fog"
+        },
+        "Deepwater Dhuthorex": {
+            "name": "Deepwater Dhuthorex"
+        },
+        "Dhuthorex Sage": {
+            "name": "Dhuthorex Sage"
+        },
+        "Doom of Tomorrow": {
+            "name": "Doom of Tomorrow"
+        },
+        "Dragon's Blood Puffball": {
+            "name": "Dragon's Blood Puffball"
+        },
+        "Dread Dhuthorex": {
+            "name": "Dread Dhuthorex"
+        },
+        "Dread Wisp": {
+            "name": "Dread Wisp"
+        },
+        "Dreshkan": {
+            "name": "Dreshkan"
+        },
+        "Drow Cavern Seer": {
+            "name": "Drow Cavern Seer"
+        },
+        "Drow Hunter": {
+            "name": "Drow Hunter"
+        },
+        "Drow Shootist": {
+            "name": "Drow Shootist"
+        },
+        "Drow Warden": {
+            "name": "Drow Warden"
+        },
+        "Dulac": {
+            "name": "Dulac"
+        },
+        "Dune Candle": {
+            "name": "Dune Candle"
+        },
+        "Elder Child Of Belcorra": {
+            "name": "Elder Child Of Belcorra"
+        },
+        "Erinys (AV-D7)": {
+            "name": "Erinys (AV-D7)"
+        },
+        "Flickerwisp": {
+            "name": "Flickerwisp"
+        },
+        "Galudu": {
+            "name": "Galudu"
+        },
+        "Gibtanius": {
+            "name": "Gibtanius"
+        },
+        "Gibtas Bounder": {
+            "name": "Gibtas Bounder"
+        },
+        "Gibtas Spawn Swarm": {
+            "name": "Gibtas Spawn Swarm"
+        },
+        "Groetan Candle": {
+            "name": "Groetan Candle"
+        },
+        "Gulzash": {
+            "name": "Gulzash"
+        },
+        "Images of Failure": {
+            "name": "Images of Failure"
+        },
+        "Images of Powerlessness": {
+            "name": "Images of Powerlessness"
+        },
+        "Jafaki": {
+            "name": "Jafaki"
+        },
+        "Jarelle Kaldrian": {
+            "name": "Jarelle Kaldrian"
+        },
+        "Jaul Mezmin": {
+            "name": "Jaul Mezmin"
+        },
+        "Jaul's Wolf": {
+            "name": "Jaul's Wolf"
+        },
+        "Khurfel": {
+            "name": "Khurfel"
+        },
+        "Kragala": {
+            "name": "Kragala"
+        },
+        "Lady's Whisper": {
+            "name": "Lady's Whisper"
+        },
+        "Mister Beak": {
+            "name": "Mister Beak"
+        },
+        "Morlock (AV)": {
+            "name": "Morlock (AV)"
+        },
+        "Morlock Cultist": {
+            "name": "Morlock Cultist"
+        },
+        "Morlock Engineer": {
+            "name": "Morlock Engineer"
+        },
+        "Morlock Scavenger": {
+            "name": "Morlock Scavenger"
+        },
+        "Mulventok": {
+            "name": "Mulventok"
+        },
+        "Murschen": {
+            "name": "Murschen"
+        },
+        "Nhakazarin": {
+            "name": "Nhakazarin"
+        },
+        "Nhimbaloth's Cutter": {
+            "name": "Nhimbaloth's Cutter"
+        },
+        "Nox": {
+            "name": "Nox"
+        },
+        "Otari Ilvashti": {
+            "name": "Otari Ilvashti"
+        },
+        "Padli": {
+            "name": "Padli"
+        },
+        "Painful Suggestion Trap": {
+            "name": "Painful Suggestion Trap"
+        },
+        "Paralyzing Light Trap": {
+            "name": "Paralyzing Light Trap"
+        },
+        "Quara Orshendiel": {
+            "name": "Quara Orshendiel"
+        },
+        "Reaper Skull Puffball": {
+            "name": "Reaper Skull Puffball"
+        },
+        "Rusty Grate Pit": {
+            "name": "Rusty Grate Pit"
+        },
+        "Ryta": {
+            "name": "Ryta"
+        },
+        "Sacuishu": {
+            "name": "Sacuishu"
+        },
+        "Salaisa Malthulas": {
+            "name": "Salaisa Malthulas"
+        },
+        "Sarglagon (AV)": {
+            "name": "Sarglagon (AV)"
+        },
+        "Scalathrax": {
+            "name": "Scalathrax"
+        },
+        "Seugathi Guard": {
+            "name": "Seugathi Guard"
+        },
+        "Seugathi Reality Warper": {
+            "name": "Seugathi Reality Warper"
+        },
+        "Seugathi Researcher": {
+            "name": "Seugathi Researcher"
+        },
+        "Seugathi Researcher (C20)": {
+            "name": "Seugathi Researcher (C20)"
+        },
+        "Seugathi Servant": {
+            "name": "Seugathi Servant"
+        },
+        "Shanrigol Behemoth": {
+            "name": "Shanrigol Behemoth"
+        },
+        "Shanrigol Heap": {
+            "name": "Shanrigol Heap"
+        },
+        "Shuffling Scythe Blades": {
+            "name": "Shuffling Scythe Blades"
+        },
+        "Siora Fallowglade": {
+            "name": "Siora Fallowglade"
+        },
+        "Skeleton Guard (AV-Graveyard)": {
+            "name": "Skeleton Guard (AV-Graveyard)"
+        },
+        "Specter (AV C2)": {
+            "name": "Specter (AV C2)"
+        },
+        "Spellvoid": {
+            "name": "Spellvoid"
+        },
+        "Spike Launcher": {
+            "name": "Spike Launcher"
+        },
+        "Stonescale Spirits": {
+            "name": "Stonescale Spirits"
+        },
+        "Urdefhan Blood Mage": {
+            "name": "Urdefhan Blood Mage"
+        },
+        "Urdefhan Death Scout": {
+            "name": "Urdefhan Death Scout"
+        },
+        "Urdefhan Lasher": {
+            "name": "Urdefhan Lasher"
+        },
+        "Urevian": {
+            "name": "Urevian"
+        },
+        "Vengeful Furnace": {
+            "name": "Vengeful Furnace"
+        },
+        "Vischari": {
+            "name": "Vischari"
+        },
+        "Viscous Black Pudding": {
+            "name": "Viscous Black Pudding"
+        },
+        "Voidbracken Chuul": {
+            "name": "Voidbracken Chuul"
+        },
+        "Voidglutton": {
+            "name": "Voidglutton"
+        },
+        "Volluk Azrinae": {
+            "name": "Volluk Azrinae"
+        },
+        "Watching Wall": {
+            "name": "Watching Wall"
+        },
+        "Will-o'-the-Deep": {
+            "name": "Will-o'-the-Deep"
+        },
+        "Witchfire Warden": {
+            "name": "Witchfire Warden"
+        },
+        "Wrin Sivinxi": {
+            "name": "Wrin Sivinxi"
+        },
+        "Ysondkhelir": {
+            "name": "Ysondkhelir"
+        }
+    }
 }
