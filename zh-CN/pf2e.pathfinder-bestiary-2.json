@@ -60,7 +60,7 @@
 				},
 				"QD2iwjozawGYYqOf":{
 					"name": "借机攻击 Attack of Opportunity",
-					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				},
 				"dmYyiqu2DVxTAvbq":{
 					"name": "拷问学识"
@@ -102,7 +102,7 @@
 				},
 				"QSxWcw9SiRdGtKM7":{
 					"name": "借机攻击 Attack of Opportunity",
-					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
@@ -211,7 +211,7 @@
 				},
 				"ZWe69IC3j34b3dqx":{
 					"name": "借机攻击 Attack of Opportunity",
-					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				},
 				"ujbUCBlQf3V81dRB":{
 					"name": "拷问学识"
@@ -396,7 +396,7 @@
 				},
 				"MEtJibVB3AjSqu2W":{
 					"name": "精通击倒 Improved Knockdown",
-					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedKnockdown]</p>"
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedKnockdown]</p>"
 				}
 			}
 		},
@@ -435,7 +435,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "15"
+					"description": "15"
 				},
 				{
 					"exceptions": "除精金",
@@ -663,7 +663,7 @@
 				},
 				"AQeKaKMvD6zIOMpq":{
 					"name": "借机攻击 Attack of Opportunity",
-					"value": "<p>仅限尾扫</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+					"description": "<p>仅限尾扫</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				}
 			}
 		},
@@ -852,7 +852,7 @@
 				},
 				"LGmgWdigRZKEMwNq":{
 					"name": "活吞 Swallow Whole",
-					"value": "<p>大型, [[/r {2d12+7}[bludgeoning]]]{2d12+7钝击伤害}, 破裂30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>大型, [[/r {2d12+7}[bludgeoning]]]{2d12+7钝击伤害}, 破裂30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -1157,350 +1157,1567 @@
 		"Aapoph Serpentfolk": {
 			"name": "Aapoph Serpentfolk",
 			"publicNotes": "<p>Aapophs possess greater strength and stronger venom than their zyss kin, but they lack zyss' intelligence and innate magic. Unlike their selfish superiors, aapophs are communal and group together to hunt, wrestle, and sleep curled together in pits. Though they're looked down upon and insulted by zyss, most aapophs lack the higher brain functions to recognize when they're being insulted, much less plan or execute a rebellion. Aapophs often have unusual physical mutations-horns, vestigial tails, or spines protruding from their scales-yet these variations have little impact on their overall combat prowess- and combat prowess is the measure by which zyss judge them.</p>",
-			"dr": [
-				{
-					"label": "Poison",
-					"type": "poison",
-					"value": "5"
-				}
-			],
 			"allSaves": "+2 status vs. mental",
 			"senses": "darkvision, scent (imprecise) 30 feet",
-			"hp": "",
-			"blurb": "",
 			"languages": "Telepathy 100 feet",
-			"ac": "",
-			"di": ""
+			"items":{
+				"p5OQLHvMklzKmrbR":{
+					"name": "弯刀 Scimitar",
+					"description": ""
+				},
+				"5rN2CIypbGA4N34M":{
+					"name": "尖牙 Fangs",
+					"description": ""
+				},
+				"icFkORI0Y4bNqBbP":{
+					"name": "Tail"
+				},
+				"ugIVlLPaqyvekXgN":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"N5T2rvrlqZmn4pNy":{
+					"name": "Scent (Imprecise) 30 feet"
+				},
+				"xumH4auLNLHoCwRg":{
+					"name": "Telepathy 100 feet"
+				},
+				"5EcCWK4rV7lqrPqY":{
+					"name": "+2 Status Bonus on Saves vs. Mental"
+				},
+				"AUp2Wnd4EQNf6jKb":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"HTGkYCrWWOoIvAja":{
+					"name": "Serpentfolk Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d4}[poison]]]{2d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+				},
+				"0ToPGrofmnFDeqOe":{
+					"name": "Slithering Attack",
+					"description": "<p>The aapoph serpentfolk makes one scimitar or fangs Strike and one tail Strike, each targeting a different creature. These attacks both count toward the aapoph's multiple attack penalty, but the penalty doesn't increase until after the aapoph makes both attacks.</p>"
+				},
+				"I2ICHtXckQoNKHcm":{
+					"name": "击倒 Knockdown",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Knockdown]</p>"
+				}
+			}
 		},
 		"Adult Brine Dragon": {
 			"name": "Adult Brine Dragon",
 			"publicNotes": "<p>Brine dragons are usually blue-green in color, with shiny scales, crests that help them glide through the water, and sweeping neck frills. They care little for either good or evil. As they are both opinionated and willing to impose their sense of order on others, many brine dragons eventually seek to rule over a meticulously crafted community. These communities are orderly and well-planned, with rigid standards of courtesy and unchanging laws set down by the dragon themself. A settlement seeded by a brine dragon can be made of members of almost any ancestry, but the most common inhabitants are humans, merfolk, tengus, or sahuagin.</p>\n<p>Depending on the dragon's personality, their community members might view their brine dragon ruler as anything from a benevolent force of order to a fearful tyrant. Regardless, the typical brine dragon has little patience for kindness or philanthropy, and the strength and health of their settlement as a whole are of greater concern than individuals' well-being. A notable exception to this dispassion rises when an outside force encroaches on their lands. In these cases, the brine dragon is quick to step in and aid in the defense of their community.</p>\n<p>Although brine dragons enjoy cultivating settlements, they rarely make their lairs within the city limits, instead preferring to dwell in sea caves or cliffside grottoes overlooking the coastline. Here they can retreat for privacy as needed, or can accumulate and display their gathered wealth in a place where they feel safe spreading out their treasures. Brine dragon hoards often consist of a mix of offerings and taxes paid by those they rule over and strange discoveries salvaged from sunken ships.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"zhHzZbCi9Wd6r7hj":{
+					"name": "Primal Innate Spells"
+				},
+				"6Sms9YOa60rjevVP":{
+					"name": "Jaws"
+				},
+				"20d4bCP4x4uHaNkd":{
+					"name": "Claw"
+				},
+				"1w9sOvRdSaIEpLNe":{
+					"name": "Tail"
+				},
+				"tFkVmhokDW1zCny4":{
+					"name": "Wing"
+				},
+				"AtW9S7uW8rnbEEtY":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"uGdTa0kjSsx6O3yO":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"jZkG8pIe4dAne06Q":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"uJuFK46gaxSPryGB":{
+					"name": "Brine Spit",
+					"description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p>\n<hr />\n<p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes [[/r {5d6}[acid]]]{5d6 acid damage} (@Check[type:reflex|dc:30|basic:true] save). On a failure, the concentrate action is disrupted.</p>"
+				},
+				"R2ziTTF38PwKFQr7":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"h68Rp5GCPIpGGeyq":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a spray of acidic salt water that deals [[/r {13d6}[acid]]]{13d6 acid damage} in a @Template[type:line|distance:100] (@Check[type:reflex|dc:32|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"GcxVApKgeD5WO9Wh":{
+					"name": "Desiccating Bite",
+					"description": "<p>The dragon makes a jaws Strike. On a hit, the target takes [[/r {4d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} from the pain of salt and brine in its wounds.</p>"
+				},
+				"ax8IJyIaesSgfUVD":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>"
+				},
+				"V5Py4m6Gm8m9Z8I2":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				}
+			}
 		},
 		"Adult Brine Dragon (Spellcaster)": {
 			"name": "Adult Brine Dragon (Spellcaster)",
 			"publicNotes": "<p>Brine dragons are usually blue-green in color, with shiny scales, crests that help them glide through the water, and sweeping neck frills. They care little for either good or evil. As they are both opinionated and willing to impose their sense of order on others, many brine dragons eventually seek to rule over a meticulously crafted community. These communities are orderly and well-planned, with rigid standards of courtesy and unchanging laws set down by the dragon themself. A settlement seeded by a brine dragon can be made of members of almost any ancestry, but the most common inhabitants are humans, merfolk, tengus, or sahuagin.</p>\n<p>Depending on the dragon's personality, their community members might view their brine dragon ruler as anything from a benevolent force of order to a fearful tyrant. Regardless, the typical brine dragon has little patience for kindness or philanthropy, and the strength and health of their settlement as a whole are of greater concern than individuals' well-being. A notable exception to this dispassion rises when an outside force encroaches on their lands. In these cases, the brine dragon is quick to step in and aid in the defense of their community.</p>\n<p>Although brine dragons enjoy cultivating settlements, they rarely make their lairs within the city limits, instead preferring to dwell in sea caves or cliffside grottoes overlooking the coastline. Here they can retreat for privacy as needed, or can accumulate and display their gathered wealth in a place where they feel safe spreading out their treasures. Brine dragon hoards often consist of a mix of offerings and taxes paid by those they rule over and strange discoveries salvaged from sunken ships.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"YYnsAUH8Foo8uFnr":{
+					"name": "Primal Prepared Spells"
+				},
+				"zhHzZbCi9Wd6r7hj":{
+					"name": "Primal Innate Spells"
+				},
+				"X2nKS5Ld4GeMYfEc":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"6Sms9YOa60rjevVP":{
+					"name": "Jaws"
+				},
+				"20d4bCP4x4uHaNkd":{
+					"name": "Claw"
+				},
+				"1w9sOvRdSaIEpLNe":{
+					"name": "Tail"
+				},
+				"tFkVmhokDW1zCny4":{
+					"name": "Wing"
+				},
+				"AtW9S7uW8rnbEEtY":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"uGdTa0kjSsx6O3yO":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"jZkG8pIe4dAne06Q":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"uJuFK46gaxSPryGB":{
+					"name": "Brine Spit",
+					"description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p>\n<hr />\n<p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes [[/r {5d6}[acid]]]{5d6 acid damage} (@Check[type:reflex|dc:30|basic:true] save). On a failure, the concentrate action is disrupted.</p>"
+				},
+				"R2ziTTF38PwKFQr7":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"h68Rp5GCPIpGGeyq":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a spray of acidic salt water that deals [[/r {13d6}[acid]]]{13d6 acid damage} in a @Template[type:line|distance:100] (@Check[type:reflex|dc:32|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"GcxVApKgeD5WO9Wh":{
+					"name": "Desiccating Bite",
+					"description": "<p>The dragon makes a jaws Strike. On a hit, the target takes [[/r {4d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} from the pain of salt and brine in its wounds.</p>"
+				}
+			}
 		},
 		"Adult Cloud Dragon": {
 			"name": "Adult Cloud Dragon",
 			"publicNotes": "<p>At heart, cloud dragons are wanderers, explorers, and travelers who enjoy nothing more than seeing new lands and meeting unusual creatures. Cloud dragons range in color from light blue to a pale, milky white and have thick, curling horns and rather short snouts. They keep lairs among the extreme altitudes of the highest mountain peaks but are away on their many journeys as often as they're at home. Cloud dragons spend long hours surveying the lands they fly over from great heights, but they are creatures of whim, making it hard to predict what will pique their curiosity and bring them winging down to converse or investigate something on the ground. Cloud dragons seldom perform acts of outright malice, but they are not often charitable either. A cloud dragon is as likely to simply pluck something they desire off the ground and fly away with it as they are to bargain fairly.</p>\n<p>A cloud dragon's ever-changing interests never seem to stray toward the complicated schemes and long-term plans of other dragons. These rovers are creatures of the moment, and although they are as mentally gifted as other true dragons, their interests remain in the here and now. Yet the cloud dragon's penchant for living in the moment is not a personality flaw-they're more than capable of anticipating long-term results of their actions and won't make foolish choices simply to pursue a current interest. At the same time, cloud dragons have little interest in worrying about the future and are as confident in their ability to handle tomorrow's problems as they are today's.</p>\n<p>Cloud dragon hoards tend to be well-guarded or well-hidden, as a natural result of their roving habits often taking them away from their lairs for extended periods. Their treasuries include a wide variety of items-they are driven to gather a broad range of prizes rather than collecting one type of item intensively. To a cloud dragon, a diversified hoard is a perfect hoard.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, mist vision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "cloud walk",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"gzQlpS0D81W4iCub":{
+					"name": "Primal Innate Spells"
+				},
+				"LvgsOjqlWG5jltps":{
+					"name": "造风术(随意施法) Gust of Wind (At Will)",
+					"description": "<p>一团暴风从你的掌中喷出，从你施放法术时所在位置直吹到线形终点。这团风吹灭所有小的非魔法火焰，吹散云和雾，吹起负载轻或者更低的物体，并且会推动更大的物体。区域中大型或者更小的生物必须尝试一次强韧豁免。在之后进入风中的大型或者更小的生物也必须在进入时尝试该豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物无法顶风移动。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果它在飞行，它改为承受大失败效果。</p>\n<p><strong>大失败</strong> 该生物被沿风向推离30尺，倒地，并且承受2d6钝击伤害。</p>"
+				},
+				"hQdMdV8u5o7eWZEV":{
+					"name": "Jaws"
+				},
+				"D5p47qiv8jIAcjoL":{
+					"name": "Claw"
+				},
+				"numgrwQUdlF3fy51":{
+					"name": "Tail"
+				},
+				"072UUA8WXrWV6tPc":{
+					"name": "Horn"
+				},
+				"K7yXQ4PZPINLQXnj":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"OhlQui33tv2Wq8Ur":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"NDhBBYbkfa48lqzj":{
+					"name": "Mist Vision",
+					"description": "<p>Fog and mist don't impair a cloud dragon's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from fog and mist.</p>"
+				},
+				"FBO25NSysfQagiQl":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"T4cC9H9vxNTUqnco":{
+					"name": "Deflecting Cloud",
+					"description": "<p><strong>Trigger</strong> The dragon is the target of a ranged attack</p>\n<p><strong>Requirements</strong> The dragon is aware of the attack and has a free wing</p>\n<hr />\n<p><strong>Effect</strong> The cloud dragon flexes a wing and creates a billowing cloud of mist. The dragon is treated as if they were @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} for the purposes of resolving the triggering attack, so normally the attacker must succeed at a @Check[type:flat|dc:11] to target them. The dragon also gains a +4 circumstance bonus to AC against the triggering attack.</p>"
+				},
+				"vID81IzA60CV6yD2":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:32]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"4KxhR1H4vfF5teNe":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a thundercloud that deals [[/r {15d6}[electricity]]]{15d6 electricity damage} in a @Template[type:cone|distance:50] (@Check[type:reflex|dc:35|basic:true] save). They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"0v7H9KCVbUUdkdU7":{
+					"name": "Cloud Form",
+					"description": "<p>The cloud dragon's body becomes vaporous and misty. They gain the effects of <em>@UUID[Compendium.pf2e.spells-srd.V8wXOsoejQhe6CyG]{Gaseous Form}</em>, except their fly Speed remains unchanged. The cloud dragon can use this action again to return to physical form.</p>"
+				},
+				"LUG7zInRwnS0c3vJ":{
+					"name": "Cloud Walk",
+					"description": "<p>The cloud dragon can tread on clouds or fog as though on solid ground.</p>"
+				},
+				"UQft7JhW6zhtWCy2":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one horn Strike in any order.</p>"
+				},
+				"GkMCAxjpf2Y5nfdv":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				}
+			}
 		},
 		"Adult Cloud Dragon (Spellcaster)": {
 			"name": "Adult Cloud Dragon (Spellcaster)",
 			"publicNotes": "<p>At heart, cloud dragons are wanderers, explorers, and travelers who enjoy nothing more than seeing new lands and meeting unusual creatures. Cloud dragons range in color from light blue to a pale, milky white and have thick, curling horns and rather short snouts. They keep lairs among the extreme altitudes of the highest mountain peaks but are away on their many journeys as often as they're at home. Cloud dragons spend long hours surveying the lands they fly over from great heights, but they are creatures of whim, making it hard to predict what will pique their curiosity and bring them winging down to converse or investigate something on the ground. Cloud dragons seldom perform acts of outright malice, but they are not often charitable either. A cloud dragon is as likely to simply pluck something they desire off the ground and fly away with it as they are to bargain fairly.</p>\n<p>A cloud dragon's ever-changing interests never seem to stray toward the complicated schemes and long-term plans of other dragons. These rovers are creatures of the moment, and although they are as mentally gifted as other true dragons, their interests remain in the here and now. Yet the cloud dragon's penchant for living in the moment is not a personality flaw-they're more than capable of anticipating long-term results of their actions and won't make foolish choices simply to pursue a current interest. At the same time, cloud dragons have little interest in worrying about the future and are as confident in their ability to handle tomorrow's problems as they are today's.</p>\n<p>Cloud dragon hoards tend to be well-guarded or well-hidden, as a natural result of their roving habits often taking them away from their lairs for extended periods. Their treasuries include a wide variety of items-they are driven to gather a broad range of prizes rather than collecting one type of item intensively. To a cloud dragon, a diversified hoard is a perfect hoard.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, mist vision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "cloud walk",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"jWt4W1OUjOcKKBNI":{
+					"name": "Primal Prepared Spells"
+				},
+				"gzQlpS0D81W4iCub":{
+					"name": "Primal Innate Spells"
+				},
+				"LvgsOjqlWG5jltps":{
+					"name": "造风术(随意施法) Gust of Wind (At Will)",
+					"description": "<p>一团暴风从你的掌中喷出，从你施放法术时所在位置直吹到线形终点。这团风吹灭所有小的非魔法火焰，吹散云和雾，吹起负载轻或者更低的物体，并且会推动更大的物体。区域中大型或者更小的生物必须尝试一次强韧豁免。在之后进入风中的大型或者更小的生物也必须在进入时尝试该豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物无法顶风移动。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果它在飞行，它改为承受大失败效果。</p>\n<p><strong>大失败</strong> 该生物被沿风向推离30尺，倒地，并且承受2d6钝击伤害。</p>"
+				},
+				"zAxbPqEdppgllPqT":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"hQdMdV8u5o7eWZEV":{
+					"name": "Jaws"
+				},
+				"D5p47qiv8jIAcjoL":{
+					"name": "Claw"
+				},
+				"numgrwQUdlF3fy51":{
+					"name": "Tail"
+				},
+				"072UUA8WXrWV6tPc":{
+					"name": "Horn"
+				},
+				"K7yXQ4PZPINLQXnj":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"OhlQui33tv2Wq8Ur":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"NDhBBYbkfa48lqzj":{
+					"name": "Mist Vision",
+					"description": "<p>Fog and mist don't impair a cloud dragon's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from fog and mist.</p>"
+				},
+				"FBO25NSysfQagiQl":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"T4cC9H9vxNTUqnco":{
+					"name": "Deflecting Cloud",
+					"description": "<p><strong>Trigger</strong> The dragon is the target of a ranged attack</p>\n<p><strong>Requirements</strong> The dragon is aware of the attack and has a free wing</p>\n<hr />\n<p><strong>Effect</strong> The cloud dragon flexes a wing and creates a billowing cloud of mist. The dragon is treated as if they were @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} for the purposes of resolving the triggering attack, so normally the attacker must succeed at a @Check[type:flat|dc:11] to target them. The dragon also gains a +4 circumstance bonus to AC against the triggering attack.</p>"
+				},
+				"vID81IzA60CV6yD2":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:32]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"4KxhR1H4vfF5teNe":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a thundercloud that deals [[/r {15d6}[electricity]]]{15d6 electricity damage} in a @Template[type:cone|distance:50] (@Check[type:reflex|dc:35|basic:true] save). They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"0v7H9KCVbUUdkdU7":{
+					"name": "Cloud Form",
+					"description": "<p>The cloud dragon's body becomes vaporous and misty. They gain the effects of <em>@UUID[Compendium.pf2e.spells-srd.V8wXOsoejQhe6CyG]{Gaseous Form}</em>, except their fly Speed remains unchanged. The cloud dragon can use this action again to return to physical form.</p>"
+				},
+				"LUG7zInRwnS0c3vJ":{
+					"name": "Cloud Walk",
+					"description": "<p>The cloud dragon can tread on clouds or fog as though on solid ground.</p>"
+				}
+			}
 		},
 		"Adult Crystal Dragon": {
 			"name": "Adult Crystal Dragon",
 			"publicNotes": "<p>Good-natured but vain, crystal dragons are beautiful creatures with brilliant hides made of multicolored crystal and gemstone. Their beauty is a source of great pride but is also something of a weakness, as crystal dragons are easily angered by insults about their appearance. Despite their relatively benign natures when compared to other true dragons, crystal dragons can be short tempered and prone to finding insults where none were intended. Although their opinions are changeable, crystal dragons prefer orderly environments and are not fond of sudden interruptions or distractions.</p>\n<p>Crystal dragons build their lairs in underground grottoes, where they cultivate environments of great beauty. Their exacting standards and vivid imaginations mean that they are always working to improve the appearance or layout of some part of their lair. These lairs are unique to each individual crystal dragon, but there are always plenty of reflective surfaces that allow the dragon to observe their own appearance. These range from crystals to reflecting pools to finely crafted mirrors, which are arranged throughout the lair in a pleasing array. Gifts of well-crafted or magical mirrors are an excellent way to curry favor with a crystal dragon.</p>\n<p>Although crystal dragons are easily distracted by their sparkling collections or their vanity, they remain good-hearted creatures at the core and make friends quickly. While a crystal dragon tends to find evil creatures uncouth and unpleasant, any other nearby denizen or inhabitant of their home could become fast friends or beloved pets, depending upon the creature's capacity for conversation (and for providing the frequent praise and compliments that crystal dragons hunger for).</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 30 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"5p5UO2vVsNmY2INe":{
+					"name": "Primal Innate Spells"
+				},
+				"Ar1bSS3EJOZsaTMx":{
+					"name": "Jaws"
+				},
+				"FXPT5cs0LSYkZOku":{
+					"name": "Claw"
+				},
+				"aT4z6HhNe6Rlop3y":{
+					"name": "Tail"
+				},
+				"3F8tYJDQeeHlPY6p":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"cWj2CNZYq3EWCKZF":{
+					"name": "Tremorsense (Imprecise) 30 feet"
+				},
+				"4LgyNabFsMIjCO9s":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"4d37i0818MYTgBAF":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"2hyOsL9cmbYO1koQ":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"so21bQRtejWVxF5S":{
+					"name": "Twisting Tail",
+					"description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail uses a move action or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The dragon makes a tail Strike at the creature with a -2 penalty. If it hits, the dragon disrupts the creature's action.</p>"
+				},
+				"jEaI3soXVIxnAcPe":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a flurry of piercing crystals that deal [[/r {12d6}[piercing]]]{12d6 piercing damage} in a @Template[type:cone|distance:40] (@Check[type:reflex|dc:30|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #Breath Weapon Recharge]]{1d4 rounds}.</p>"
+				},
+				"jC3hvioFdJ495oDv":{
+					"name": "Crystallize Flesh",
+					"description": "<p><strong>Trigger</strong> The crystal dragon damages a creature made of flesh with a jaws Strike</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon embeds transformative crystals in the creature's flesh. The creature must attempt a @Check[type:fortitude|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as portions of its flesh turn crystalline.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition value increases by 1 (or by 2 on a critical failure). A successful save reduces the slowed condition value by 1. A creature unable to act due to the slowed condition from Crystallize Flesh is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently, transforming into a crystalline statue. The effect ends if the creature is petrified or the slowed condition is removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+				},
+				"0SmjbTrLS51rwGcc":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>"
+				},
+				"FZaWBsctyw8LDdfD":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they critically hit with a Strike.</p>"
+				}
+			}
 		},
 		"Adult Crystal Dragon (Spellcaster)": {
 			"name": "Adult Crystal Dragon (Spellcaster)",
 			"publicNotes": "<p>Good-natured but vain, crystal dragons are beautiful creatures with brilliant hides made of multicolored crystal and gemstone. Their beauty is a source of great pride but is also something of a weakness, as crystal dragons are easily angered by insults about their appearance. Despite their relatively benign natures when compared to other true dragons, crystal dragons can be short tempered and prone to finding insults where none were intended. Although their opinions are changeable, crystal dragons prefer orderly environments and are not fond of sudden interruptions or distractions.</p>\n<p>Crystal dragons build their lairs in underground grottoes, where they cultivate environments of great beauty. Their exacting standards and vivid imaginations mean that they are always working to improve the appearance or layout of some part of their lair. These lairs are unique to each individual crystal dragon, but there are always plenty of reflective surfaces that allow the dragon to observe their own appearance. These range from crystals to reflecting pools to finely crafted mirrors, which are arranged throughout the lair in a pleasing array. Gifts of well-crafted or magical mirrors are an excellent way to curry favor with a crystal dragon.</p>\n<p>Although crystal dragons are easily distracted by their sparkling collections or their vanity, they remain good-hearted creatures at the core and make friends quickly. While a crystal dragon tends to find evil creatures uncouth and unpleasant, any other nearby denizen or inhabitant of their home could become fast friends or beloved pets, depending upon the creature's capacity for conversation (and for providing the frequent praise and compliments that crystal dragons hunger for).</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 30 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"yZN2Ny1Owqd7mZr4":{
+					"name": "Primal Prepared Spells"
+				},
+				"5p5UO2vVsNmY2INe":{
+					"name": "Primal Innate Spells"
+				},
+				"PjRN6h4xGlFjtGAS":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"Ar1bSS3EJOZsaTMx":{
+					"name": "Jaws"
+				},
+				"FXPT5cs0LSYkZOku":{
+					"name": "Claw"
+				},
+				"aT4z6HhNe6Rlop3y":{
+					"name": "Tail"
+				},
+				"3F8tYJDQeeHlPY6p":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"cWj2CNZYq3EWCKZF":{
+					"name": "Tremorsense (Imprecise) 30 feet"
+				},
+				"4LgyNabFsMIjCO9s":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"4d37i0818MYTgBAF":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"2hyOsL9cmbYO1koQ":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"6dcoGxoSd8A6QFv2":{
+					"name": "Twisting Tail",
+					"description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail uses a move action or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The dragon makes a tail Strike at the creature with a -2 penalty. If it hits, the dragon disrupts the creature's action.</p>"
+				},
+				"jEaI3soXVIxnAcPe":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a flurry of piercing crystals that deal [[/r {12d6}[piercing]]]{12d6 piercing damage} in a @Template[type:cone|distance:40] (@Check[type:reflex|dc:30|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"jC3hvioFdJ495oDv":{
+					"name": "Crystallize Flesh",
+					"description": "<p><strong>Trigger</strong> The crystal dragon damages a creature made of flesh with a jaws Strike</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon embeds transformative crystals in the creature's flesh. The creature must attempt a @Check[type:fortitude|dc:30] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as portions of its flesh turn crystalline.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition value increases by 1 (or by 2 on a critical failure). A successful save reduces the slowed condition value by 1. A creature unable to act due to the slowed condition from Crystallize Flesh is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently, transforming into a crystalline statue. The effect ends if the creature is petrified or the slowed condition is removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+				}
+			}
 		},
 		"Adult Magma Dragon": {
 			"name": "Adult Magma Dragon",
 			"publicNotes": "<p>Magma dragons have a reputation among other dragons for being unpredictable and brash. Their temperament and tendency for violent outbursts ensure that the typical magma dragon lives a solitary life, with hatchlings often bickering or fighting to establish dominance among themselves before they leave the nest. A magma dragon always has a reason for their outbursts and can always justify their sudden turns in mood, yet they rarely feel the need to do so.</p>\n<p>Magma dragons build lairs within volcanically active mountains or deep underground amid vast lakes of bubbling magma. As with all true dragons, magma dragons keep hoards of treasure, but the nature of their searing lairs limits the type of valuables they collect to metals, gems, and items capable of resisting the heat of a volcano's core.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "magma swim",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"eO5aWydhyXcR1nGE":{
+					"name": "Primal Innate Spells"
+				},
+				"OlEMHzm2vPkpFx3l":{
+					"name": "燃烧之手(随意施法) Burning Hands (At Will)",
+					"description": "<p>一团火焰从你的手中喷出。你对区域内的每个生物造成2d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+				},
+				"RmX8OdrO08JM0AmG":{
+					"name": "火墙术(随意施法) Wall of Fire (At Will)",
+					"description": "<p>你创造一面火焰墙壁，它会灼烧穿过它的生物。你创造至多60尺长的10尺高5尺厚的直线型火焰墙壁，或者5尺厚，10尺半径10尺高环形火焰。该墙无论哪种形态均为竖直墙；如果你想的话，墙的高度可以更小。墙一侧的任何事物对于另一侧的生物而言均为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。任何穿过该墙或者在回合开始时占据墙的区域的生物承受4d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该火焰伤害增加1d6。</p>"
+				},
+				"5QK8En6tcwzzpyVx":{
+					"name": "燃火术(6环) Produce Flame (6th)",
+					"description": "<p>一小团火焰在你的手心产生，你可以通过近战或者远程将其射出。进行一次法术攻击骰，对抗你的目标的AC。这通常是一次远程攻击，但是你也可以对你无武装触及中的生物尝试一次近战攻击。</p>\n<p>在成功时，你造成1d4火焰伤害，加上你的施法属性调整值。在大成功时，目标承受双倍伤害，以及 [[/r {1d4}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}.</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d4，以及重击时的 @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续伤害} 增加1d4。</p>"
+				},
+				"b342tA8Gkde6f6zo":{
+					"name": "Jaws"
+				},
+				"G6O55FgFD95SRjPP":{
+					"name": "Claw"
+				},
+				"adAFWbGgq7jnZcih":{
+					"name": "Tail"
+				},
+				"TZC0DNY97EGRDFbD":{
+					"name": "Horns"
+				},
+				"d5CWT1AwKpYtsajX":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"VDFewubyHTGzI0bL":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"N1bssKPKGqtiKwNk":{
+					"name": "Magma Swim",
+					"description": "<p>A magma dragon's swim Speed functions only when the dragon is Swimming through magma or molten lava.</p>"
+				},
+				"TxgMLxy2ap1ZIMWz":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"BsxGfhkuyAGxetGI":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"1lYZ7v9sRWUarCls":{
+					"name": "Wing Deflection",
+					"description": "<p><strong>Trigger</strong> The dragon is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The dragon raises a wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the dragon is Flying, they descend 10 feet after the attack.</p>"
+				},
+				"GBMDJeuQSv0Q6T5o":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a blast of magma that deals [[/r {9d6}[fire]]]{9d6 fire damage} and [[/r {4d12}[bludgeoning]]]{4d12 bludgeoning damage} in a @Template[type:cone|distance:40] (@Check[type:reflex|dc:33|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"JLgWzofKmiq0ajpJ":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one horn Strike in any order.</p>"
+				},
+				"tO053EeFkQRNiOBR":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				},
+				"is74odjgQwqelbqi":{
+					"name": "Volcanic Purge",
+					"description": "<p>If the next action the dragon uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>"
+				}
+			}
 		},
 		"Adult Magma Dragon (Spellcaster)": {
 			"name": "Adult Magma Dragon (Spellcaster)",
 			"publicNotes": "<p>Magma dragons have a reputation among other dragons for being unpredictable and brash. Their temperament and tendency for violent outbursts ensure that the typical magma dragon lives a solitary life, with hatchlings often bickering or fighting to establish dominance among themselves before they leave the nest. A magma dragon always has a reason for their outbursts and can always justify their sudden turns in mood, yet they rarely feel the need to do so.</p>\n<p>Magma dragons build lairs within volcanically active mountains or deep underground amid vast lakes of bubbling magma. As with all true dragons, magma dragons keep hoards of treasure, but the nature of their searing lairs limits the type of valuables they collect to metals, gems, and items capable of resisting the heat of a volcano's core.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "magma swim",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"SLi7KeKZZiNBPdi5":{
+					"name": "Primal Prepared Spells"
+				},
+				"eO5aWydhyXcR1nGE":{
+					"name": "Primal Innate Spells"
+				},
+				"OlEMHzm2vPkpFx3l":{
+					"name": "燃烧之手(随意施法) Burning Hands (At Will)",
+					"description": "<p>一团火焰从你的手中喷出。你对区域内的每个生物造成2d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+				},
+				"RmX8OdrO08JM0AmG":{
+					"name": "火墙术(随意施法) Wall of Fire (At Will)",
+					"description": "<p>你创造一面火焰墙壁，它会灼烧穿过它的生物。你创造至多60尺长的10尺高5尺厚的直线型火焰墙壁，或者5尺厚，10尺半径10尺高环形火焰。该墙无论哪种形态均为竖直墙；如果你想的话，墙的高度可以更小。墙一侧的任何事物对于另一侧的生物而言均为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。任何穿过该墙或者在回合开始时占据墙的区域的生物承受4d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该火焰伤害增加1d6。</p>"
+				},
+				"k9iyidrtMml2fiPN":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"5QK8En6tcwzzpyVx":{
+					"name": "燃火术(6环) Produce Flame (6th)",
+					"description": "<p>一小团火焰在你的手心产生，你可以通过近战或者远程将其射出。进行一次法术攻击骰，对抗你的目标的AC。这通常是一次远程攻击，但是你也可以对你无武装触及中的生物尝试一次近战攻击。</p>\n<p>在成功时，你造成1d4火焰伤害，加上你的施法属性调整值。在大成功时，目标承受双倍伤害，以及 [[/r {1d4}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}.</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d4，以及重击时的 @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续伤害} 增加1d4。</p>"
+				},
+				"b342tA8Gkde6f6zo":{
+					"name": "Jaws"
+				},
+				"G6O55FgFD95SRjPP":{
+					"name": "Claw"
+				},
+				"adAFWbGgq7jnZcih":{
+					"name": "Tail"
+				},
+				"TZC0DNY97EGRDFbD":{
+					"name": "Horns"
+				},
+				"d5CWT1AwKpYtsajX":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"VDFewubyHTGzI0bL":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"N1bssKPKGqtiKwNk":{
+					"name": "Magma Swim",
+					"description": "<p>A magma dragon's swim Speed functions only when the dragon is Swimming through magma or molten lava.</p>"
+				},
+				"TxgMLxy2ap1ZIMWz":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"BsxGfhkuyAGxetGI":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:30]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"1lYZ7v9sRWUarCls":{
+					"name": "Wing Deflection",
+					"description": "<p><strong>Trigger</strong> The dragon is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The dragon raises a wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the dragon is Flying, they descend 10 feet after the attack.</p>"
+				},
+				"GBMDJeuQSv0Q6T5o":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a blast of magma that deals [[/r {9d6}[fire]]]{9d6 fire damage} and [[/r {4d12}[bludgeoning]]]{4d12 bludgeoning damage} in a @Template[type:cone|distance:40] (@Check[type:reflex|dc:33|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"is74odjgQwqelbqi":{
+					"name": "Volcanic Purge",
+					"description": "<p>If the next action the dragon uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>"
+				}
+			}
 		},
 		"Adult Umbral Dragon": {
 			"name": "Adult Umbral Dragon",
 			"publicNotes": "<p>While the other primal dragons hail from the Elemental Planes, the cruel and unceasingly malicious umbral dragons originate in the depths of the Shadow Plane. Their sleek black scales and serpentine grace allow them to strike from hiding, and they are known for playing with their prey before finally finishing it. These creatures of shadowy energy and unwholesome appetites prefer the necrotic flesh of undead creatures to any other meal. This strange hunger can be of accidental benefit to nearby humanoid societies, but ultimately they hunt and kill undead creatures for the taste, rather than out of any desire to protect others from the undead. The benefit is always short-lived, however. When umbral dragons exhaust their preferred prey, they turn on whatever living creatures happen to be nearby. Umbral dragons sometimes go to great lengths to obtain their favorite meals, even creating undead creatures that they then feast upon.</p>\n<p>For all their power, umbral dragons are uninterested in fair battles. When faced with foes that pose any kind of actual danger to them, umbral dragons flee into the shadows and seek to strike back through pawns or minions rather than risk their own lives. Their treasure hoards are varied and diverse, often augmented by loot stolen from crypts the dragons have turned into feeding grounds. They have a strong respect for and interest in traditions and heirlooms, and they often seek to augment their hoards with items of great value that have been handed down through the generations of those whose corpses and ghosts they've fed upon.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "greater darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"tO16N6Get5HonzDM":{
+					"name": "Primal Innate Spells"
+				},
+				"D1Dv5T7CBXZtJx8F":{
+					"name": "黑暗术(随意施法) Darkness (At Will)",
+					"description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"dzZAf5uXwiK3tApd":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"TlRvAbAXlF8M2LXl":{
+					"name": "Jaws"
+				},
+				"HphLKNRNlCVczAuz":{
+					"name": "Claw"
+				},
+				"Bo7Y34vNrq537uhA":{
+					"name": "Tail"
+				},
+				"DL16zUuUzuYySm31":{
+					"name": "Wing"
+				},
+				"yFIIVeKjDVqU6qlw":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"1zvM86hRPPnGLOEW":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"TPKGkvgCAQz8TKeC":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"mUpNn76jylw99mXr":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"sDghWo7WoJwJ3FPJ":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"58HvfTTw56mTEDsj":{
+					"name": "Breath Weapon",
+					"description": "<p>The umbral dragon breathes in one of two ways. They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Negative</strong> The dragon breathes a blast of darkness in a @Template[type:cone|distance:40] that deals [[/r {16d6}[negative]]]{16d6 negative damage} (@Check[type:reflex|dc:36|basic:true] save). Undead creatures take [[/r {19d6}[force]]]{19d6 force damage} instead of the negative damage.</li>\n<li><strong>Shadows</strong> The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[type:fortitude|dc:36] save.\n<ul>\n<li><strong>Critical Success</strong> The creature is unaffected. </li>\n<li><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round. </li>\n<li><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. </li>\n<li><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</li>\n</ul>\n</li>\n</ul>"
+				},
+				"j8GeF2Jp36lFRgyF":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>"
+				},
+				"VwEDItuYmaW2BAkI":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				},
+				"jtcA1Dklz2pAKWhI":{
+					"name": "Ghost Bane",
+					"description": "<p>An umbral dragon's Strikes affect incorporeal creatures with the effects of a @UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property rune, and an umbral dragon's jaws deal an additional [[/r {6d6}[force]]]{6d6 force damage} to undead.</p>"
+				}
+			}
 		},
 		"Adult Umbral Dragon (Spellcaster)": {
 			"name": "Adult Umbral Dragon (Spellcaster)",
 			"publicNotes": "<p>While the other primal dragons hail from the Elemental Planes, the cruel and unceasingly malicious umbral dragons originate in the depths of the Shadow Plane. Their sleek black scales and serpentine grace allow them to strike from hiding, and they are known for playing with their prey before finally finishing it. These creatures of shadowy energy and unwholesome appetites prefer the necrotic flesh of undead creatures to any other meal. This strange hunger can be of accidental benefit to nearby humanoid societies, but ultimately they hunt and kill undead creatures for the taste, rather than out of any desire to protect others from the undead. The benefit is always short-lived, however. When umbral dragons exhaust their preferred prey, they turn on whatever living creatures happen to be nearby. Umbral dragons sometimes go to great lengths to obtain their favorite meals, even creating undead creatures that they then feast upon.</p>\n<p>For all their power, umbral dragons are uninterested in fair battles. When faced with foes that pose any kind of actual danger to them, umbral dragons flee into the shadows and seek to strike back through pawns or minions rather than risk their own lives. Their treasure hoards are varied and diverse, often augmented by loot stolen from crypts the dragons have turned into feeding grounds. They have a strong respect for and interest in traditions and heirlooms, and they often seek to augment their hoards with items of great value that have been handed down through the generations of those whose corpses and ghosts they've fed upon.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "greater darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"JpDIWcdXAS2ZFRY1":{
+					"name": "Primal Prepared Spells"
+				},
+				"tO16N6Get5HonzDM":{
+					"name": "Primal Innate Spells"
+				},
+				"D1Dv5T7CBXZtJx8F":{
+					"name": "黑暗术(随意施法) Darkness (At Will)",
+					"description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"dzZAf5uXwiK3tApd":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"TlRvAbAXlF8M2LXl":{
+					"name": "Jaws"
+				},
+				"HphLKNRNlCVczAuz":{
+					"name": "Claw"
+				},
+				"Bo7Y34vNrq537uhA":{
+					"name": "Tail"
+				},
+				"DL16zUuUzuYySm31":{
+					"name": "Wing"
+				},
+				"yFIIVeKjDVqU6qlw":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"1zvM86hRPPnGLOEW":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"TPKGkvgCAQz8TKeC":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"mUpNn76jylw99mXr":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"sDghWo7WoJwJ3FPJ":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"58HvfTTw56mTEDsj":{
+					"name": "Breath Weapon",
+					"description": "<p>The umbral dragon breathes in one of two ways. They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Negative</strong> The dragon breathes a blast of darkness in a @Template[type:cone|distance:40] that deals [[/r {16d6}[negative]]]{16d6 negative damage} (@Check[type:reflex|dc:36|basic:true] save). Undead creatures take [[/r {19d6}[force]]]{19d6 force damage} instead of the negative damage.</li>\n<li><strong>Shadows</strong> The dragon breathes a blast of shadows in a @Template[type:cone|distance:40]. Each creature within the cone must attempt a @Check[type:fortitude|dc:36] save.\n<ul>\n<li><strong>Critical Success</strong> The creature is unaffected. </li>\n<li><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 round. </li>\n<li><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute. </li>\n<li><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 minute and @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</li>\n</ul>\n</li>\n</ul>"
+				},
+				"jtcA1Dklz2pAKWhI":{
+					"name": "Ghost Bane",
+					"description": "<p>An umbral dragon's Strikes affect incorporeal creatures with the effects of a @UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property rune, and an umbral dragon's jaws deal an additional [[/r {6d6}[force]]]{6d6 force damage} to undead.</p>"
+				}
+			}
 		},
 		"Ahuizotl": {
 			"name": "Ahuizotl",
 			"publicNotes": "<p>The ahuizotl is a vicious, semi-aquatic predator that resembles a hideous cross between a badger and an otter, with disturbingly web-fingered paws supplemented by a fifth hand at the end of a long, serpentine tail. A clever and stealthy hunter, the ahuizotl lures unwary prey to their doom by mimicking the cries of people in distress. The ahuizotl's macabre habit of feeding on a victim's eyes, fingernails, and teeth leaves the corpses of its kills uniquely mutilated. Some say the creatures consider these body parts delicacies, while others insist ahuizotls collect them as tribute to a powerful but unknown entity. The fact that an ahuizotl does not eat the actual flesh of its victims, instead depositing their savaged and waterlogged corpses in locations where the remains are sure to be found by friends or family, points to a third and perhaps more likely possibility-the ahuizotl simply enjoys using its violent dietary quirks to spread fear and despair.</p>\n<p>An ahuizotl walks on all fours, but its hands are capable of manipulating simple tools and other objects. Ahuizotls have roughly mustelid features and an extra membrane covering their eyes, giving their eyes a dull color suggestive of cataracts and somewhat blunting the creature's vision. Yet despite their bestial appearance, ahuizotls are nearly as intelligent as the average human, and wiser than most. Although they don't form societies of their own, they have been known to ally with violent cults or conclaves of monsters, and even to found small shrines and temples to sinister deities. The cult of Charon, the horseman of Death, is particularly popular among certain ahuizotls, who look forward to an afterlife spent wallowing in the waters of the River Styx.</p>",
-			"dr": [],
-			"allSaves": "",
 			"senses": "darkvision",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"FsgtuZo9KF7fxlp5":{
+					"name": "Jaws"
+				},
+				"XCFOQ29kYuqzushV":{
+					"name": "Claw"
+				},
+				"SaS7qHeGtLYWa1rX":{
+					"name": "Tail Claw"
+				},
+				"IzbfeuZKm6hz1cWS":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"hkgYTbnzCzYBfP7k":{
+					"name": "Voice Imitation",
+					"description": "<p>An ahuizotl can mimic the sounds of a person in distress by attempting a Deception check to @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{Lie}. The ahuizotl has a +4 circumstance bonus to this check.</p>"
+				},
+				"4OphdUKxBpxPyBKN":{
+					"name": "Tail Drag",
+					"description": "<p><strong>Requirements</strong> The ahuizotl has a Medium or smaller creature grabbed with its tail claw</p>\n<hr />\n<p><strong>Effect</strong> The ahuizotl attempts an Athletics check against the creature's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> If the creature is 10 feet away from the ahuizotl, it is dragged into a square adjacent to the ahuizotl. The ahuizotl can make a jaws Strike against the creature.</p>\n<p><strong>Success</strong> If the creature is 10 feet away from the ahuizotl, it is dragged into a square adjacent to the ahuizotl.</p>\n<p><strong>Failure</strong> The creature is not dragged.</p>\n<p><strong>Critical Failure</strong> The creature is not dragged and the ahuizotl no longer has the creature grabbed.</p>"
+				},
+				"AYVzOquWiUdDuNN3":{
+					"name": "精通攫抓 Improved Grab"
+				}
+			}
 		},
 		"Akata": {
 			"name": "Akata",
 			"publicNotes": "<p>An akata is a hairless, blue-skinned quadruped with fearsome jaws, glowing eyes, a pair of thin tails, and a mane of writhing tentacles. It is a strangely silent beast, as it lacks the lungs and vocal chords necessary to vocalize. It also lacks ears, but it has heightened visual and olfactory senses.</p>\n<p>When food is scarce, an akata secretes a resin from its pores that forms into a sturdy cocoon of pale green crystal-the skymetal noqual. An akata can hibernate in this cocoon without needing to eat or drink for centuries, though it retains a rudimentary sense of its surroundings and can break out in only a few minutes' time. These cocoons allow the creatures to travel through the void of space, seeking new worlds where they can infect suitable humanoid hosts with their larval young. Once a victim succumbs to this infection, the offspring fight among themselves until one proves the strongest. The surviving akata then animates the corpse-now a void zombie-which shambles about of its own accord.</p>",
-			"dr": [
-				{
-					"label": "Fire",
-					"type": "fire",
-					"value": "5"
-				},
-				{
-					"label": "Poison",
-					"type": "poison",
-					"value": "5"
-				}
-			],
-			"allSaves": "",
 			"senses": "darkvision, no hearing, scent (imprecise) 30 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"gu96K11Wqu5OcYew":{
+					"name": "Jaws"
+				},
+				"tKbplFnGrHjbOkKF":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"sIL9AEoQV1qcrskK":{
+					"name": "Scent (Imprecise) 30 feet"
+				},
+				"sYzEwjtXD4GsP03b":{
+					"name": "Hibernation",
+					"description": "<p>After 3 or more days without eating, an akata can secrete resin that encases it in a noqual cocoon. The cocoon has Hardness 9, 40 HP, and a Broken Threshold of 18. It has resistance 5 to damage from magical sources. As long as the cocoon remains intact, the akata can't be harmed, and it doesn't need to eat or drink.</p>\n<p>While inside the cocoon, the akata gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.sebk9XseMCRkDqRg]{Lifesense} 30 feet.</p>\n<p>The akata remains in a state of hibernation until it is exposed to extreme heat or senses a living creature, at which point it can burst free of its cocoon in [[/r 1d4 #minutes]]{1d4 minutes}.</p>"
+				},
+				"rsf1q6ooMNJFjdfh":{
+					"name": "No Hearing",
+					"description": "<p>An akata has no auditory senses. It is immune to auditory effects, automatically critically fails Perception checks that require it to hear, and takes a -2 status penalty to Perception checks (but not initiative rolls) that involve sound but also rely on other senses.</p>"
+				},
+				"D13sjvjuSrxFEe35":{
+					"name": "No Breath",
+					"description": "<p>An akata doesn't breathe and is immune to effects that require breathing (such as an inhaled poison).</p>"
+				},
+				"AMnTAvqDDSvhK4rN":{
+					"name": "Salt Water Vulnerability",
+					"description": "<p>Salt water acts as an extremely strong acid to an akata. Full immersion in salt water deals [[/r {4d6}[acid]]]{4d6 acid damage} per round.</p>"
+				},
+				"L17R2FDChGWE5pgD":{
+					"name": "Void Death",
+					"description": "<p>An akata implants its parasitic larval young into any creature it bites, but only Medium or Small humanoids make suitable hosts; all other creatures are immune to this disease</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect 1 (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> drained 2 and @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead and corpse rises as a void zombie in [[/br 2d4 #hours]]{2d4 hours}</p>"
+				}
+			}
 		},
 		"Akizendri": {
 			"name": "Akizendri",
 			"publicNotes": "<p>Akizendris gnaw at sources of knowledge and lore, gleefully corrupting and altering them to vex scholars and sages across the planes with contradictions and untruths. These proteans appear as cackling, serpentine creatures with elongated crocodilian faces, luminous eyes, and arms that vanish at the elbows into swirling clouds of runes before reforming into solid talons.</p>\n<p>Akizendris amuse themselves by rearranging or deleting texts, placing insulting acrostics in poetic verses, and penning crude insults upon title pages. Libraries in such places as Heaven, Axis, and Hell are especially keen to avoid such contamination, knowing that their records are choice targets for every akizendri in existence.</p>",
-			"dr": [
-				{
-					"label": "Precision",
-					"type": "precision",
-					"value": "3"
-				},
-				{
-					"label": "Protean Anatomy",
-					"type": "protean anatomy",
-					"value": "6"
-				}
-			],
-			"allSaves": "",
 			"senses": "darkvision, entropy sense (imprecise) 30 feet",
 			"hp": "fast healing 1",
-			"blurb": "",
 			"speed": "freedom of movement",
 			"languages": "Telepathy (touch)",
-			"ac": "",
-			"di": ""
+			"items":{
+				"kbVyC3rbr7rfXsxu":{
+					"name": "Divine Innate Spells"
+				},
+				"OFeWf6HdNT5mBfJj":{
+					"name": "行动自如(恒定法术) Freedom of Movement (Constant)",
+					"description": "<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+				},
+				"7UB9CyvhkK4ZhIuW":{
+					"name": "侦测阵营(随意施法,仅限守序) Detect Alignment (At will) (Lawful only)",
+					"description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+				},
+				"WTUxYAzq1Nr3FFwN":{
+					"name": "Jaws"
+				},
+				"NOvlBahz080PaM4R":{
+					"name": "Tail"
+				},
+				"Qj1AizQTHLeRQxPV":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"7PG4MVtAvT1kH55R":{
+					"name": "Telepathy (Touch)"
+				},
+				"um06dCu0E8W9LRDd":{
+					"name": "Entropy Sense (Imprecise) 30 feet",
+					"description": "<p>An akizendri can anticipate the most likely location of a creature through their supernatural insight into the forces of chaotic probabilities and chance. This grants the akizendri the ability to sense creatures within the listed range. A creature under the effects of <em>@UUID[Compendium.pf2e.spells-srd.EoKBlgf6Smt8opaU]{Nondetection}</em> or that is otherwise shielded from divinations and predictions cannot be noticed via entropy sense.</p>"
+				},
+				"teonM0iI5aOvey0N":{
+					"name": "Fast Healing 1"
+				},
+				"3WqEPpUcLFd5pJv6":{
+					"name": "Protean Anatomy 6",
+					"description": "<p>An akizendri's vital organs shift and change shape and position constantly. Immediately after the akizendri takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first.</p>\n<p>The akizendri is immune to polymorph effects unless it is a willing target. If @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} or @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened}, the akizendri automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.</p>"
+				},
+				"tH3f4GsDerHRNPik":{
+					"name": "Change Shape",
+					"description": "<p>The akizendri takes on the appearance of any Small or smaller creature. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"iKpGYrRKqAjGDO9B":{
+					"name": "紧勒 Constrict",
+					"description": "<p>[[/r {1d8+3}[bludgeoning]]]{1d8+3 bludgeoning damage}, @Check[type:fortitude|dc:20|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"rB0kJuC158tvKsmj":{
+					"name": "Garbled Thoughts",
+					"description": "<p>A creature hit by the akizendri's bite Strike must attempt a @Check[type:will|dc:20] save.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round.</p>"
+				},
+				"nIDe1OaPgWDPyBej":{
+					"name": "Text Immersion",
+					"description": "<p>When the akizendri casts <em>@UUID[Compendium.pf2e.spells-srd.VVAZPCvd4d90qVA1]{Secret Page}</em>, it can physically immerse itself in the text, changing the message of the text in the process. It can exit the book at any point by Dismissing <em>secret page</em>, at which point it appears in a space adjacent to the text. If it does so to begin combat, it rolls a Deception check for initiative. As long as it remains immersed in the text, the akizendri has no body. It can communicate telepathically with a creature as long as the creature touches the book or scroll that contains the secret page. It can sense nearby creatures using its entropy sense, but not in any other way, nor can it use any attack, manipulate, or move actions or speak aloud. If the object it is immersed in is destroyed, the akizendri reappears in an adjacent square and is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+				}
+			}
 		},
 		"Amoeba Swarm": {
 			"name": "Amoeba Swarm",
 			"publicNotes": "<p>An amoeba swarm consists of thousands of individual single-celled organisms held together by acrid-smelling slime. As ravenous as they are mindless, amoeba swarms use no tactics.</p>",
-			"dr": [
-				{
-					"label": "Slashing",
-					"type": "slashing",
-					"value": "4"
-				},
-				{
-					"label": "Piercing",
-					"type": "piercing",
-					"value": "4"
-				}
-			],
-			"allSaves": "",
 			"senses": "motion sense 60 feet, no vision",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"fO8E1sNI1DHDU5Dq":{
+					"name": "Motion Sense 60 feet",
+					"description": "<p>An amoeba swarm can sense nearby creatures through vibration and air or water movement.</p>"
+				},
+				"DsM9HKBiut2efUZZ":{
+					"name": "Swarming Slither",
+					"description": "<p>The amoeba swarm slithers over each creature in its space, dealing [[/r {1d6}[acid]]]{1d6 acid damage} (@Check[type:reflex|dc:14|basic:true] save). A creature that critically fails is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+				},
+				"zEg1F3xL2SCNwVj7":{
+					"name": "Weak Acid",
+					"description": "<p>An amoeba's acid damages only organic material-not metal, stone, or other inorganic substances.</p>"
+				}
+			}
 		},
 		"Anancus": {
 			"name": "Anancus",
 			"publicNotes": "<p>The anancus is an ancient species of elephant with unusually long tusks and a trunk shorter than its more modern cousins.</p>",
-			"dr": [],
-			"allSaves": "",
 			"senses": "low-light vision, scent (imprecise) 30 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"vC8tzGqfa79am1Xm":{
+					"name": "Tusk"
+				},
+				"0wGgpxEStAnmfi0k":{
+					"name": "Foot"
+				},
+				"pVbWqNxbj50FvZ38":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"E9FVtTu2qyp5HgnY":{
+					"name": "Scent (Imprecise) 30 feet"
+				},
+				"JIAc2IH8Ot3uIXfD":{
+					"name": "践踏 Trample",
+					"description": "<p>Large or smaller, foot, @Check[type:reflex|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				},
+				"6vnexEfGJBfKrtHp":{
+					"name": "Tusk Sweep",
+					"description": "<p>The anancus sweeps its long tusks back and forth, dealing [[/r {4d6}[bludgeoning]]]{4d6 bludgeoning damage} to all creatures in a @Template[type:cone|distance:15], who must make a @Check[type:reflex|dc:27|basic:true] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage and is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Critical Failure</strong> The target takes double damage, is knocked prone, and is pushed 5 feet away from the anancus.</p>"
+				}
+			}
 		},
 		"Ancient Brine Dragon": {
 			"name": "Ancient Brine Dragon",
 			"publicNotes": "<p>Brine dragons are usually blue-green in color, with shiny scales, crests that help them glide through the water, and sweeping neck frills. They care little for either good or evil. As they are both opinionated and willing to impose their sense of order on others, many brine dragons eventually seek to rule over a meticulously crafted community. These communities are orderly and well-planned, with rigid standards of courtesy and unchanging laws set down by the dragon themself. A settlement seeded by a brine dragon can be made of members of almost any ancestry, but the most common inhabitants are humans, merfolk, tengus, or sahuagin.</p>\n<p>Depending on the dragon's personality, their community members might view their brine dragon ruler as anything from a benevolent force of order to a fearful tyrant. Regardless, the typical brine dragon has little patience for kindness or philanthropy, and the strength and health of their settlement as a whole are of greater concern than individuals' well-being. A notable exception to this dispassion rises when an outside force encroaches on their lands. In these cases, the brine dragon is quick to step in and aid in the defense of their community.</p>\n<p>Although brine dragons enjoy cultivating settlements, they rarely make their lairs within the city limits, instead preferring to dwell in sea caves or cliffside grottoes overlooking the coastline. Here they can retreat for privacy as needed, or can accumulate and display their gathered wealth in a place where they feel safe spreading out their treasures. Brine dragon hoards often consist of a mix of offerings and taxes paid by those they rule over and strange discoveries salvaged from sunken ships.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"wea1MnyUIhvtedhE":{
+					"name": "Primal Innate Spells"
+				},
+				"c19tAQpDeptWNyHM":{
+					"name": "水流冲击(随意施法) Hydraulic Push (At Will)",
+					"description": "<p>你唤来一团强力的高压水流，撞击目标并令其后退。尝试一次远程法术攻击骰。</p>\n<hr />\n<p><strong>大成功</strong> 目标承受6d6钝击伤害，并且被击退10尺。</p>\n<p><strong>成功</strong> 目标承受3d6钝击伤害，并且被击退5尺。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+				},
+				"aO9yC0TQ3hBNeO78":{
+					"name": "隐雾术(随意施法) Obscuring Mist (At Will)",
+					"description": "<p>你唤来一团迷雾。在雾中的所有生物获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，并且在雾外的所有生物对其内的生物获得隐蔽。你可以解消这团云雾。</p>"
+				},
+				"Pxxr235CKBdgLZ6y":{
+					"name": "Jaws"
+				},
+				"GWbkONUjqsTF8hP7":{
+					"name": "Claw"
+				},
+				"nceXlZk44iBehzvl":{
+					"name": "Tail"
+				},
+				"8sphOZAnVIS4eVZ6":{
+					"name": "Wing"
+				},
+				"ZDynxQcPOYUqgupw":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"LKQ6v7y7Jr6HEaPh":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"8BGsf6kEIrCtKGgo":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"CSHQvYrfiR0GmczO":{
+					"name": "Brine Spit",
+					"description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p>\n<hr />\n<p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes [[/r {7d6}[acid]]]{7d6 acid damage} (@Check[type:reflex|dc:36|basic:true] save). On a failure, the concentrate action is disrupted.</p>"
+				},
+				"gozNFecLMRX00Wzz":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:36]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"oMj0SiABPgORm6t3":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a spray of acidic salt water that deals [[/r {18d6}[acid]]]{18d6 acid damage} in a @Template[type:line|distance:120] (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"qV74gNViCaiEVUy2":{
+					"name": "Capsize",
+					"description": "<p>The dragon tries to capsize an adjacent aquatic vessel of their size or smaller. They must succeed at an Athletics check with a DC of 35 (reduced by 5 for each size smaller the vessel is than the turtle) or the pilot's Sailing Lore DC, whichever is higher.</p>"
+				},
+				"KtjrcbTPGagKVhSc":{
+					"name": "Desiccating Bite",
+					"description": "<p>The dragon makes a jaws Strike. On a hit, the target takes [[/r {6d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3} from the pain of salt and brine in its wounds.</p>"
+				},
+				"2IZWaM2O4amLWbye":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>"
+				},
+				"xJOBW00PxizZ4M8X":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				},
+				"gPCpNSHZ6SvXUhij":{
+					"name": "Painful Strikes",
+					"description": "<p>The brine dragon's body is encrusted with salty, acidic crystals. When a target takes damage from one of the dragon's melee Strikes, it must succeed at a @Check[type:fortitude|dc:38] Save or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The target then becomes temporarily immune for 1 minute.</p>"
+				}
+			}
 		},
 		"Ancient Brine Dragon (Spellcaster)": {
 			"name": "Ancient Brine Dragon (Spellcaster)",
 			"publicNotes": "<p>Brine dragons are usually blue-green in color, with shiny scales, crests that help them glide through the water, and sweeping neck frills. They care little for either good or evil. As they are both opinionated and willing to impose their sense of order on others, many brine dragons eventually seek to rule over a meticulously crafted community. These communities are orderly and well-planned, with rigid standards of courtesy and unchanging laws set down by the dragon themself. A settlement seeded by a brine dragon can be made of members of almost any ancestry, but the most common inhabitants are humans, merfolk, tengus, or sahuagin.</p>\n<p>Depending on the dragon's personality, their community members might view their brine dragon ruler as anything from a benevolent force of order to a fearful tyrant. Regardless, the typical brine dragon has little patience for kindness or philanthropy, and the strength and health of their settlement as a whole are of greater concern than individuals' well-being. A notable exception to this dispassion rises when an outside force encroaches on their lands. In these cases, the brine dragon is quick to step in and aid in the defense of their community.</p>\n<p>Although brine dragons enjoy cultivating settlements, they rarely make their lairs within the city limits, instead preferring to dwell in sea caves or cliffside grottoes overlooking the coastline. Here they can retreat for privacy as needed, or can accumulate and display their gathered wealth in a place where they feel safe spreading out their treasures. Brine dragon hoards often consist of a mix of offerings and taxes paid by those they rule over and strange discoveries salvaged from sunken ships.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"Q7E6X7VR38S4QJfL":{
+					"name": "Primal Prepared Spells"
+				},
+				"wea1MnyUIhvtedhE":{
+					"name": "Primal Innate Spells"
+				},
+				"c19tAQpDeptWNyHM":{
+					"name": "Hydraulic Push (At Will)",
+					"description": "<p>你唤来一团强力的高压水流，撞击目标并令其后退。尝试一次远程法术攻击骰。</p>\n<hr />\n<p><strong>大成功</strong> 目标承受6d6钝击伤害，并且被击退10尺。</p>\n<p><strong>成功</strong> 目标承受3d6钝击伤害，并且被击退5尺。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+				},
+				"aO9yC0TQ3hBNeO78":{
+					"name": "Obscuring Mist (At Will)",
+					"description": "<p>You call forth a cloud of mist. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the mist become Concealed to creatures within it. You can Dismiss the cloud.</p>"
+				},
+				"mdPb0kbXvG3kvAQT":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"Pxxr235CKBdgLZ6y":{
+					"name": "Jaws"
+				},
+				"GWbkONUjqsTF8hP7":{
+					"name": "Claw"
+				},
+				"nceXlZk44iBehzvl":{
+					"name": "Tail"
+				},
+				"8sphOZAnVIS4eVZ6":{
+					"name": "Wing"
+				},
+				"ZDynxQcPOYUqgupw":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"LKQ6v7y7Jr6HEaPh":{
+					"name": "嗅觉 Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"8BGsf6kEIrCtKGgo":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"CSHQvYrfiR0GmczO":{
+					"name": "Brine Spit",
+					"description": "<p><strong>Trigger</strong> A creature the brine dragon observes within 30 feet uses a concentrate action</p>\n<hr />\n<p><strong>Effect</strong> The dragon spits a glob of caustic salt water at the creature. The creature takes [[/r {7d6}[acid]]]{7d6 acid damage} (@Check[type:reflex|dc:36|basic:true] save). On a failure, the concentrate action is disrupted.</p>"
+				},
+				"gozNFecLMRX00Wzz":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:36]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"oMj0SiABPgORm6t3":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a spray of acidic salt water that deals [[/r {18d6}[acid]]]{18d6 acid damage} in a @Template[type:line|distance:120] (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"qV74gNViCaiEVUy2":{
+					"name": "Capsize",
+					"description": "<p>The dragon tries to capsize an adjacent aquatic vessel of their size or smaller. They must succeed at an Athletics check with a DC of 35 (reduced by 5 for each size smaller the vessel is than the turtle) or the pilot's Sailing Lore DC, whichever is higher.</p>"
+				},
+				"KtjrcbTPGagKVhSc":{
+					"name": "Desiccating Bite",
+					"description": "<p>The dragon makes a jaws Strike. On a hit, the target takes [[/r {6d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3} from the pain of salt and brine in its wounds.</p>"
+				},
+				"gPCpNSHZ6SvXUhij":{
+					"name": "Painful Strikes",
+					"description": "<p>The brine dragon's body is encrusted with salty, acidic crystals. When a target takes damage from one of the dragon's melee Strikes, it must succeed at a @Check[type:fortitude|dc:38] Save or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). The target then becomes temporarily immune for 1 minute.</p>"
+				}
+			}
 		},
 		"Ancient Cloud Dragon": {
 			"name": "Ancient Cloud Dragon",
 			"publicNotes": "<p>At heart, cloud dragons are wanderers, explorers, and travelers who enjoy nothing more than seeing new lands and meeting unusual creatures. Cloud dragons range in color from light blue to a pale, milky white and have thick, curling horns and rather short snouts. They keep lairs among the extreme altitudes of the highest mountain peaks but are away on their many journeys as often as they're at home. Cloud dragons spend long hours surveying the lands they fly over from great heights, but they are creatures of whim, making it hard to predict what will pique their curiosity and bring them winging down to converse or investigate something on the ground. Cloud dragons seldom perform acts of outright malice, but they are not often charitable either. A cloud dragon is as likely to simply pluck something they desire off the ground and fly away with it as they are to bargain fairly.</p>\n<p>A cloud dragon's ever-changing interests never seem to stray toward the complicated schemes and long-term plans of other dragons. These rovers are creatures of the moment, and although they are as mentally gifted as other true dragons, their interests remain in the here and now. Yet the cloud dragon's penchant for living in the moment is not a personality flaw-they're more than capable of anticipating long-term results of their actions and won't make foolish choices simply to pursue a current interest. At the same time, cloud dragons have little interest in worrying about the future and are as confident in their ability to handle tomorrow's problems as they are today's.</p>\n<p>Cloud dragon hoards tend to be well-guarded or well-hidden, as a natural result of their roving habits often taking them away from their lairs for extended periods. Their treasuries include a wide variety of items-they are driven to gather a broad range of prizes rather than collecting one type of item intensively. To a cloud dragon, a diversified hoard is a perfect hoard.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, mist vision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "cloud walk",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"mQUpigRG6jKJbeLx":{
+					"name": "Primal Innate Spells"
+				},
+				"rJ7AdRxufg0jAASh":{
+					"name": "造风术(随意施法) Gust of Wind (At Will)",
+					"description": "<p>一团暴风从你的掌中喷出，从你施放法术时所在位置直吹到线形终点。这团风吹灭所有小的非魔法火焰，吹散云和雾，吹起负载轻或者更低的物体，并且会推动更大的物体。区域中大型或者更小的生物必须尝试一次强韧豁免。在之后进入风中的大型或者更小的生物也必须在进入时尝试该豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物无法顶风移动。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果它在飞行，它改为承受大失败效果。</p>\n<p><strong>大失败</strong> 该生物被沿风向推离30尺，倒地，并且承受2d6钝击伤害。</p>"
+				},
+				"zpCGLXqUH07afHBV":{
+					"name": "风墙术(随意施法) Wall of Wind (At Will)",
+					"description": "<p>你创造一层会干扰所有通过事物的暴风墙。这面由旋风组成的墙有5尺厚，60尺长，30尺高。该墙为竖直的，但你可以指定其形态。虽然风墙会搅动空气，但不会阻碍视觉。该墙壁具有下列效果。</p>\n<ul>\n<li>来自物理远程攻击的弹药（例如箭，矢，投石索弹丸，以及其他类似大小的物体）无法穿过该墙。更大的远程武器的攻击，例如标枪，如果其路线通过该墙壁，则其在攻击骰上承受-2环境减值。重型远程武器和不创造实体物体的法术效果可以不受减值地通过该墙。</li>\n<li>该墙对尝试从地面通过它的生物为困难地形。气体，以及处于气体的生物，无法穿过墙壁。</li>\n<li>尝试使用移动动作飞过墙壁的生物必须尝试一次强韧豁免。</li>\n</ul>\n<hr />\n<p><strong>大成功</strong> 该生物本回合可以正常移动穿过该墙。</p>\n<p><strong>成功</strong> 该飞行生物本回合可以正常移动穿过该墙，但是该墙为困难地形。</p>\n<p><strong>失败</strong> 该墙阻挡飞行生物的移动，并且当前动作的剩余移动力被浪费。</p>\n<p><strong>大失败</strong> 如同失败，并且该生物会被推离该墙10尺。</p>"
+				},
+				"IVUIIQ9KDB8DHfvL":{
+					"name": "Jaws"
+				},
+				"wwbxcuqrl4U2FZiP":{
+					"name": "Claw"
+				},
+				"tisbaQ4bvix6pdXR":{
+					"name": "Tail"
+				},
+				"XCa5wvlPu21MNSQl":{
+					"name": "Horn"
+				},
+				"LbTesuVUtAbIzLRY":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"H6WOpA1s4iRwT9Ik":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"JIKJPPU6aBax4pjD":{
+					"name": "Mist Vision",
+					"description": "<p>Fog and mist don't impair a cloud dragon's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from fog and mist.</p>"
+				},
+				"tAdSWqK8N7bxwjab":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"gJMFRPJuO2fffH1c":{
+					"name": "Deflecting Cloud",
+					"description": "<p><strong>Trigger</strong> The dragon is the target of a ranged attack</p>\n<p><strong>Requirements</strong> The dragon is aware of the attack and has a free wing</p>\n<hr />\n<p><strong>Effect</strong> The cloud dragon flexes a wing and creates a billowing cloud of mist. The dragon is treated as if they were @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} for the purposes of resolving the triggering attack, so normally the attacker must succeed at a @Check[type:flat|dc:11] to target them. The dragon also gains a +4 circumstance bonus to AC against the triggering attack.</p>"
+				},
+				"xgEzGbuJSMIIkD79":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"hvQmC6GTFeQoVTYG":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a thundercloud that deals [[/r {20d6}[electricity]]]{20d6 electricity damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:41|basic:true] save). This cloud remains in the area for [[/br 1d4 #rounds]]{1d4 rounds}, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.9XHmC2JgTUIQ1CCm]{Obscuring Mist}</em>. A creature that ends its turn inside of the cloud takes [[/r {10d6}[electricity]]]{10d6 electricity damage} (@Check[type:reflex|dc:41|basic:true] save).</p>\n<p>The cloud dragon can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"cuHB5zR7MVWma2MD":{
+					"name": "Cloud Form",
+					"description": "<p>The cloud dragon's body becomes vaporous and misty. They gain the effects of <em>@UUID[Compendium.pf2e.spells-srd.V8wXOsoejQhe6CyG]{Gaseous Form}</em>, except their fly Speed remains unchanged. The cloud dragon can use this action again to return to physical form.</p>"
+				},
+				"EuS6s6eoD5RfY7jI":{
+					"name": "Cloud Walk",
+					"description": "<p>The cloud dragon can tread on clouds or fog as though on solid ground.</p>"
+				},
+				"vBhPWXgs8q8icc85":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one horn Strike in any order.</p>"
+				},
+				"RSov7mEf6h3jgcfL":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				},
+				"msIyAn6AsHKdGxMu":{
+					"name": "Thundering Bite",
+					"description": "<p>An ancient cloud dragon's jaws Strike creates a deafening clap of thunder when it damages a foe. A creature that takes damage from the dragon's jaws Strike must succeed at a @Check[type:fortitude|dc:41] save or be @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (or permanently on a critical failure).</p>"
+				}
+			}
 		},
 		"Ancient Cloud Dragon (Spellcaster)": {
 			"name": "Ancient Cloud Dragon (Spellcaster)",
 			"publicNotes": "<p>At heart, cloud dragons are wanderers, explorers, and travelers who enjoy nothing more than seeing new lands and meeting unusual creatures. Cloud dragons range in color from light blue to a pale, milky white and have thick, curling horns and rather short snouts. They keep lairs among the extreme altitudes of the highest mountain peaks but are away on their many journeys as often as they're at home. Cloud dragons spend long hours surveying the lands they fly over from great heights, but they are creatures of whim, making it hard to predict what will pique their curiosity and bring them winging down to converse or investigate something on the ground. Cloud dragons seldom perform acts of outright malice, but they are not often charitable either. A cloud dragon is as likely to simply pluck something they desire off the ground and fly away with it as they are to bargain fairly.</p>\n<p>A cloud dragon's ever-changing interests never seem to stray toward the complicated schemes and long-term plans of other dragons. These rovers are creatures of the moment, and although they are as mentally gifted as other true dragons, their interests remain in the here and now. Yet the cloud dragon's penchant for living in the moment is not a personality flaw-they're more than capable of anticipating long-term results of their actions and won't make foolish choices simply to pursue a current interest. At the same time, cloud dragons have little interest in worrying about the future and are as confident in their ability to handle tomorrow's problems as they are today's.</p>\n<p>Cloud dragon hoards tend to be well-guarded or well-hidden, as a natural result of their roving habits often taking them away from their lairs for extended periods. Their treasuries include a wide variety of items-they are driven to gather a broad range of prizes rather than collecting one type of item intensively. To a cloud dragon, a diversified hoard is a perfect hoard.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, mist vision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "cloud walk",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"223kLr85XBsNkrd0":{
+					"name": "Primal Prepared Spells"
+				},
+				"mQUpigRG6jKJbeLx":{
+					"name": "Primal Innate Spells"
+				},
+				"rJ7AdRxufg0jAASh":{
+					"name": "造风术(随意施法) Gust of Wind (At Will)",
+					"description": "<p>一团暴风从你的掌中喷出，从你施放法术时所在位置直吹到线形终点。这团风吹灭所有小的非魔法火焰，吹散云和雾，吹起负载轻或者更低的物体，并且会推动更大的物体。区域中大型或者更小的生物必须尝试一次强韧豁免。在之后进入风中的大型或者更小的生物也必须在进入时尝试该豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物无法顶风移动。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果它在飞行，它改为承受大失败效果。</p>\n<p><strong>大失败</strong> 该生物被沿风向推离30尺，倒地，并且承受2d6钝击伤害。</p>"
+				},
+				"zpCGLXqUH07afHBV":{
+					"name": "风墙术(随意施法) Wall of Wind (At Will)",
+					"description": "<p>你创造一层会干扰所有通过事物的暴风墙。这面由旋风组成的墙有5尺厚，60尺长，30尺高。该墙为竖直的，但你可以指定其形态。虽然风墙会搅动空气，但不会阻碍视觉。该墙壁具有下列效果。</p>\n<ul>\n<li>来自物理远程攻击的弹药（例如箭，矢，投石索弹丸，以及其他类似大小的物体）无法穿过该墙。更大的远程武器的攻击，例如标枪，如果其路线通过该墙壁，则其在攻击骰上承受-2环境减值。重型远程武器和不创造实体物体的法术效果可以不受减值地通过该墙。</li>\n<li>该墙对尝试从地面通过它的生物为困难地形。气体，以及处于气体的生物，无法穿过墙壁。</li>\n<li>尝试使用移动动作飞过墙壁的生物必须尝试一次强韧豁免。</li>\n</ul>\n<hr />\n<p><strong>大成功</strong> 该生物本回合可以正常移动穿过该墙。</p>\n<p><strong>成功</strong> 该飞行生物本回合可以正常移动穿过该墙，但是该墙为困难地形。</p>\n<p><strong>失败</strong> 该墙阻挡飞行生物的移动，并且当前动作的剩余移动力被浪费。</p>\n<p><strong>大失败</strong> 如同失败，并且该生物会被推离该墙10尺。</p>"
+				},
+				"zyMHbj8a72ccnnoG":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"IVUIIQ9KDB8DHfvL":{
+					"name": "Jaws"
+				},
+				"wwbxcuqrl4U2FZiP":{
+					"name": "Claw"
+				},
+				"tisbaQ4bvix6pdXR":{
+					"name": "Tail"
+				},
+				"XCa5wvlPu21MNSQl":{
+					"name": "Horn"
+				},
+				"LbTesuVUtAbIzLRY":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"H6WOpA1s4iRwT9Ik":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"JIKJPPU6aBax4pjD":{
+					"name": "Mist Vision",
+					"description": "<p>Fog and mist don't impair a cloud dragon's vision; they ignore the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from fog and mist.</p>"
+				},
+				"tAdSWqK8N7bxwjab":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"gJMFRPJuO2fffH1c":{
+					"name": "Deflecting Cloud",
+					"description": "<p><strong>Trigger</strong> The dragon is the target of a ranged attack</p>\n<p><strong>Requirements</strong> The dragon is aware of the attack and has a free wing</p>\n<hr />\n<p><strong>Effect</strong> The cloud dragon flexes a wing and creates a billowing cloud of mist. The dragon is treated as if they were @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} for the purposes of resolving the triggering attack, so normally the attacker must succeed at a @Check[type:flat|dc:11] to target them. The dragon also gains a +4 circumstance bonus to AC against the triggering attack.</p>"
+				},
+				"xgEzGbuJSMIIkD79":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"hvQmC6GTFeQoVTYG":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a thundercloud that deals [[/r {20d6}[electricity]]]{20d6 electricity damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:41|basic:true] save). This cloud remains in the area for [[/br 1d4 #rounds]]{1d4 rounds}, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.9XHmC2JgTUIQ1CCm]{Obscuring Mist}</em>. A creature that ends its turn inside of the cloud takes [[/r {10d6}[electricity]]]{10d6 electricity damage} (@Check[type:reflex|dc:41|basic:true] save).</p>\n<p>The cloud dragon can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"cuHB5zR7MVWma2MD":{
+					"name": "Cloud Form",
+					"description": "<p>The cloud dragon's body becomes vaporous and misty. They gain the effects of <em>@UUID[Compendium.pf2e.spells-srd.V8wXOsoejQhe6CyG]{Gaseous Form}</em>, except their fly Speed remains unchanged. The cloud dragon can use this action again to return to physical form.</p>"
+				},
+				"EuS6s6eoD5RfY7jI":{
+					"name": "Cloud Walk",
+					"description": "<p>The cloud dragon can tread on clouds or fog as though on solid ground.</p>"
+				},
+				"msIyAn6AsHKdGxMu":{
+					"name": "Thundering Bite",
+					"description": "<p>An ancient cloud dragon's jaws Strike creates a deafening clap of thunder when it damages a foe. A creature that takes damage from the dragon's jaws Strike must succeed at a @Check[type:fortitude|dc:41] save or be @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (or permanently on a critical failure).</p>"
+				}
+			}
 		},
 		"Ancient Crystal Dragon": {
 			"name": "Ancient Crystal Dragon",
 			"publicNotes": "<p>Good-natured but vain, crystal dragons are beautiful creatures with brilliant hides made of multicolored crystal and gemstone. Their beauty is a source of great pride but is also something of a weakness, as crystal dragons are easily angered by insults about their appearance. Despite their relatively benign natures when compared to other true dragons, crystal dragons can be short tempered and prone to finding insults where none were intended. Although their opinions are changeable, crystal dragons prefer orderly environments and are not fond of sudden interruptions or distractions.</p>\n<p>Crystal dragons build their lairs in underground grottoes, where they cultivate environments of great beauty. Their exacting standards and vivid imaginations mean that they are always working to improve the appearance or layout of some part of their lair. These lairs are unique to each individual crystal dragon, but there are always plenty of reflective surfaces that allow the dragon to observe their own appearance. These range from crystals to reflecting pools to finely crafted mirrors, which are arranged throughout the lair in a pleasing array. Gifts of well-crafted or magical mirrors are an excellent way to curry favor with a crystal dragon.</p>\n<p>Although crystal dragons are easily distracted by their sparkling collections or their vanity, they remain good-hearted creatures at the core and make friends quickly. While a crystal dragon tends to find evil creatures uncouth and unpleasant, any other nearby denizen or inhabitant of their home could become fast friends or beloved pets, depending upon the creature's capacity for conversation (and for providing the frequent praise and compliments that crystal dragons hunger for).</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"lUhvPsYzVAYDYIIZ":{
+					"name": "Primal Innate Spells"
+				},
+				"buj6GwDfNq7DUnUI":{
+					"name": "催眠图纹(随意施法) Hypnotic Pattern (At Will)",
+					"description": "<p>你创造一个漂浮在空中的在几何图形般云雾中变换色彩的图纹。在图纹中的生物 @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。除此之外，在你施放时处于图纹中的生物，进入图纹中的生物，在图纹中结束回合的生物，或者对图纹使用搜索（Seek）或者交互（Interact）动作的生物在此时必须尝试一次意志豁免。已经被图纹 @Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated} 的生物无需尝试新的豁免。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标被该图纹迷魂。</p>\n<p><strong>大失败</strong> 目标被该图纹迷魂。只要其仍迷魂，它无法使用反应动作。</p>"
+				},
+				"4irhhdrSS6R8cngA":{
+					"name": "闪光尘(随意施法) Glitterdust (At Will)",
+					"description": "<p>区域内的生物被闪烁的粉尘勾勒出外形。每个生物必须尝试一次反射豁免。如果某个生物的隐形会被该法术取消，它会改为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 而不是 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}。如果目标生物已经隐形，或者在该法术取消隐形的效果结束之前受到新的隐形效果，这都会生效。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标的隐形被取消2轮。</p>\n<p><strong>失败</strong> 目标 @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} 1分钟，并且隐形被取消1分钟。</p>\n<p><strong>大失败</strong> 目标 @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} 1轮，并且目眩（dazzled）10分钟。其隐形被取消10分钟。</p>"
+				},
+				"0ODNsZ6th57SXfiA":{
+					"name": "七彩喷射(随意施法) Color Spray (At Will)",
+					"description": "<p>旋转变化的色彩根据看到的人的意志豁免影响它们。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物 @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} 1轮。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}, @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，并且目眩（dazzled）1分钟。</p>\n<p><strong>大失败</strong> 该生物震慑（stunned）1轮，目盲（blinded）1分钟。</p>"
+				},
+				"2HOhVTSCzGdbcfjr":{
+					"name": "Jaws"
+				},
+				"s1CEAQqJM8T6nqR4":{
+					"name": "Claw"
+				},
+				"rasNjBJHTsaP5LFC":{
+					"name": "Tail"
+				},
+				"oifiHjSHVsJGyQiE":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"onjhPnLTGiThJjTI":{
+					"name": "Tremorsense (Imprecise) 60 feet"
+				},
+				"eyEiaf2KwHBA5miS":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"jKCuP9xlPQoqlnGq":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"eb6RXroslhq0fMd9":{
+					"name": "Extra Reaction",
+					"description": "<p>The dragon gains 2 reactions at the start of each of their turns.</p>"
+				},
+				"PbQYJStaqe1nhRUn":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"JLqzN2RUPFKa8beH":{
+					"name": "Reflect Spell",
+					"description": "<p><strong>Trigger</strong> The crystal dragon is targeted by a ranged spell attack roll</p>\n<hr />\n<p><strong>Effect</strong> The crystal dragon adjusts a wing to try to reflect the spell and gains a +4 circumstance bonus to AC against the triggering attack. If the attack misses, the spell is reflected back at the caster, who must roll a second ranged spell attack roll against their own AC to determine if the spell hits them instead.</p>"
+				},
+				"f7niepbS8VyknoBK":{
+					"name": "Scintillating Aura",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A swirling vortex of reflected color and light shimmers around the crystal dragon. Creatures in this aura's emanation are @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}. Each creature that ends its turn in the emanation must succeed at a @Check[type:will|dc:34] saving throw or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). Once a creature succeeds at this save, it is temporarily immune to the stunning effect for 1 minute. The crystal dragon can turn this aura on or off using a single action, which has the concentrate trait, and it can choose not to affect allies.</p>"
+				},
+				"o19lnL3xo6DpdVgZ":{
+					"name": "Twisting Tail",
+					"description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail uses a move action or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The dragon makes a tail Strike at the creature with a -2 penalty. If it hits, the dragon disrupts the creature's action.</p>"
+				},
+				"h69jYWXNKYbuTyzE":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a flurry of piercing crystals that deals [[/r {17d6}[piercing]]]{17d6 piercing damage} in a @Template[type:cone|distance:50] (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Ot3tRiGqqRheUAKs":{
+					"name": "Crystallize Flesh",
+					"description": "<p><strong>Trigger</strong> The crystal dragon damages a creature made of flesh with a jaws Strike</p>\n<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon embeds transformative crystals in the creature's flesh. The creature must attempt a @Check[type:fortitude|dc:37] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as portions of its flesh turn crystalline.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition value increases by 1 (or by 2 on a critical failure). A successful save reduces the slowed condition value by 1. A creature unable to act due to the slowed condition from Crystallize Flesh is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently, transforming into a crystalline statue. The effect ends if the creature is petrified or the slowed condition is removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+				},
+				"1M2I2905EVmXay9H":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one tail Strike in any order.</p>"
+				},
+				"Vf0GMSeZbKtccykV":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they critically hit with a Strike.</p>"
+				}
+			}
 		},
 		"Ancient Crystal Dragon (Spellcaster)": {
 			"name": "Ancient Crystal Dragon (Spellcaster)",
 			"publicNotes": "<p>Good-natured but vain, crystal dragons are beautiful creatures with brilliant hides made of multicolored crystal and gemstone. Their beauty is a source of great pride but is also something of a weakness, as crystal dragons are easily angered by insults about their appearance. Despite their relatively benign natures when compared to other true dragons, crystal dragons can be short tempered and prone to finding insults where none were intended. Although their opinions are changeable, crystal dragons prefer orderly environments and are not fond of sudden interruptions or distractions.</p>\n<p>Crystal dragons build their lairs in underground grottoes, where they cultivate environments of great beauty. Their exacting standards and vivid imaginations mean that they are always working to improve the appearance or layout of some part of their lair. These lairs are unique to each individual crystal dragon, but there are always plenty of reflective surfaces that allow the dragon to observe their own appearance. These range from crystals to reflecting pools to finely crafted mirrors, which are arranged throughout the lair in a pleasing array. Gifts of well-crafted or magical mirrors are an excellent way to curry favor with a crystal dragon.</p>\n<p>Although crystal dragons are easily distracted by their sparkling collections or their vanity, they remain good-hearted creatures at the core and make friends quickly. While a crystal dragon tends to find evil creatures uncouth and unpleasant, any other nearby denizen or inhabitant of their home could become fast friends or beloved pets, depending upon the creature's capacity for conversation (and for providing the frequent praise and compliments that crystal dragons hunger for).</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"wlmBL32OvWdlwr0B":{
+					"name": "Primal Prepared Spells"
+				},
+				"lUhvPsYzVAYDYIIZ":{
+					"name": "Primal Innate Spells"
+				},
+				"buj6GwDfNq7DUnUI":{
+					"name": "催眠图纹(随意施法) Hypnotic Pattern (At Will)",
+					"description": "<p>你创造一个漂浮在空中的在几何图形般云雾中变换色彩的图纹。在图纹中的生物 @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。除此之外，在你施放时处于图纹中的生物，进入图纹中的生物，在图纹中结束回合的生物，或者对图纹使用搜索（Seek）或者交互（Interact）动作的生物在此时必须尝试一次意志豁免。已经被图纹 @Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated} 的生物无需尝试新的豁免。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标被该图纹迷魂。</p>\n<p><strong>大失败</strong> 目标被该图纹迷魂。只要其仍迷魂，它无法使用反应动作。</p>"
+				},
+				"4irhhdrSS6R8cngA":{
+					"name": "闪光尘(随意施法) Glitterdust (At Will)",
+					"description": "<p>区域内的生物被闪烁的粉尘勾勒出外形。每个生物必须尝试一次反射豁免。如果某个生物的隐形会被该法术取消，它会改为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 而不是 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}。如果目标生物已经隐形，或者在该法术取消隐形的效果结束之前受到新的隐形效果，这都会生效。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标的隐形被取消2轮。</p>\n<p><strong>失败</strong> 目标 @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} 1分钟，并且隐形被取消1分钟。</p>\n<p><strong>大失败</strong> 目标 @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} 1轮，并且目眩（dazzled）10分钟。其隐形被取消10分钟。</p>"
+				},
+				"0ODNsZ6th57SXfiA":{
+					"name": "七彩喷射(随意施法) Color Spray (At Will)",
+					"description": "<p>旋转变化的色彩根据看到的人的意志豁免影响它们。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物 @Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} 1轮。</p>\n<p><strong>失败</strong> 该生物 @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}, @Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，并且目眩（dazzled）1分钟。</p>\n<p><strong>大失败</strong> 该生物震慑（stunned）1轮，目盲（blinded）1分钟。</p>"
+				},
+				"00xdGcgaVj95miE1":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"2HOhVTSCzGdbcfjr":{
+					"name": "Jaws"
+				},
+				"s1CEAQqJM8T6nqR4":{
+					"name": "Claw"
+				},
+				"rasNjBJHTsaP5LFC":{
+					"name": "Tail"
+				},
+				"oifiHjSHVsJGyQiE":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"onjhPnLTGiThJjTI":{
+					"name": "Tremorsense (Imprecise) 60 feet"
+				},
+				"eyEiaf2KwHBA5miS":{
+					"name": "Scent (Imprecise) 60 feet"
+				},
+				"jKCuP9xlPQoqlnGq":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"eb6RXroslhq0fMd9":{
+					"name": "Extra Reaction",
+					"description": "<p>The dragon gains 2 reactions at the start of each of their turns.</p>"
+				},
+				"PbQYJStaqe1nhRUn":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"JLqzN2RUPFKa8beH":{
+					"name": "Reflect Spell",
+					"description": "<p><strong>Trigger</strong> The crystal dragon is targeted by a ranged spell attack roll</p>\n<hr />\n<p><strong>Effect</strong> The crystal dragon adjusts a wing to try to reflect the spell and gains a +4 circumstance bonus to AC against the triggering attack. If the attack misses, the spell is reflected back at the caster, who must roll a second ranged spell attack roll against their own AC to determine if the spell hits them instead.</p>"
+				},
+				"f7niepbS8VyknoBK":{
+					"name": "Scintillating Aura",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A swirling vortex of reflected color and light shimmers around the crystal dragon. Creatures in this aura's emanation are @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}. Each creature that ends its turn in the emanation must succeed at a @Check[type:will|dc:34] saving throw or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure). Once a creature succeeds at this save, it is temporarily immune to the stunning effect for 1 minute. The crystal dragon can turn this aura on or off using a single action, which has the concentrate trait, and it can choose not to affect allies.</p>"
+				},
+				"o19lnL3xo6DpdVgZ":{
+					"name": "Twisting Tail",
+					"description": "<p><strong>Trigger</strong> A creature within reach of the dragon's tail uses a move action or leaves a square during a move action it's using</p>\n<hr />\n<p><strong>Effect</strong> The dragon makes a tail Strike at the creature with a -2 penalty. If it hits, the dragon disrupts the creature's action.</p>"
+				},
+				"h69jYWXNKYbuTyzE":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a flurry of piercing crystals that deals [[/r {17d6}[piercing]]]{17d6 piercing damage} in a @Template[type:cone|distance:50] (@Check[type:reflex|dc:38|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Ot3tRiGqqRheUAKs":{
+					"name": "Crystallize Flesh",
+					"description": "<p><strong>Trigger</strong> The crystal dragon damages a creature made of flesh with a jaws Strike</p>\n<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The dragon embeds transformative crystals in the creature's flesh. The creature must attempt a @Check[type:fortitude|dc:37] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round as portions of its flesh turn crystalline.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition value increases by 1 (or by 2 on a critical failure). A successful save reduces the slowed condition value by 1. A creature unable to act due to the slowed condition from Crystallize Flesh is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently, transforming into a crystalline statue. The effect ends if the creature is petrified or the slowed condition is removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is initially @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2}.</p>"
+				}
+			}
 		},
 		"Ancient Magma Dragon": {
 			"name": "Ancient Magma Dragon",
 			"publicNotes": "<p>Magma dragons have a reputation among other dragons for being unpredictable and brash. Their temperament and tendency for violent outbursts ensure that the typical magma dragon lives a solitary life, with hatchlings often bickering or fighting to establish dominance among themselves before they leave the nest. A magma dragon always has a reason for their outbursts and can always justify their sudden turns in mood, yet they rarely feel the need to do so.</p>\n<p>Magma dragons build lairs within volcanically active mountains or deep underground amid vast lakes of bubbling magma. As with all true dragons, magma dragons keep hoards of treasure, but the nature of their searing lairs limits the type of valuables they collect to metals, gems, and items capable of resisting the heat of a volcano's core.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "magma swim",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"esTHEOJBat1zXzXY":{
+					"name": "Primal Innate Spells"
+				},
+				"boE5n1kGWU3PGXxn":{
+					"name": "燃烧之手(随意施法) Burning Hands (At Will)",
+					"description": "<p>一团火焰从你的手中喷出。你对区域内的每个生物造成2d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+				},
+				"Ump4s3SQmPTp8c0K":{
+					"name": "火墙术(随意施法) Wall of Fire (At Will)",
+					"description": "<p>你创造一面火焰墙壁，它会灼烧穿过它的生物。你创造至多60尺长的10尺高5尺厚的直线型火焰墙壁，或者5尺厚，10尺半径10尺高环形火焰。该墙无论哪种形态均为竖直墙；如果你想的话，墙的高度可以更小。墙一侧的任何事物对于另一侧的生物而言均为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。任何穿过该墙或者在回合开始时占据墙的区域的生物承受4d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该火焰伤害增加1d6。</p>"
+				},
+				"2s2y3NKDRdpdH6gx":{
+					"name": "火焰护盾(恒定法术) Fire Shield (Constant)",
+					"description": "<p>你用闪烁的火焰环绕自身，获得寒冷抗力5。除此之外，每当与你相邻的生物通过近战攻击命中你时，以及生物接触你时，或者生物通过无武装攻击命中你时，该生物承受2d6火焰伤害。</p>\n<p>@Compendium[pf2e.spell-effects.1RsScTvNdGD9zGWe]{法术效果：火焰护盾}</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 寒冷抗力提升5，火焰伤害增加1d6。</p>"
+				},
+				"AAyJQ8CViWWMXWPU":{
+					"name": "Jaws"
+				},
+				"VaxEKl3gTn1iAnvf":{
+					"name": "Claw"
+				},
+				"reBkTZBqwYPgsiFb":{
+					"name": "Tail"
+				},
+				"O0YSsVnEBCg6oJnT":{
+					"name": "Horns"
+				},
+				"X5uycRcoYkauIGYQ":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"MZE5l2QagOF7ICxV":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"0IfzoP16zRxLRIJ3":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"Cl2tanuHvlyyksIz":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"TUaSPYJP2yuCkKh9":{
+					"name": "Wing Deflection",
+					"description": "<p><strong>Trigger</strong> The dragon is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The dragon raises a wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the dragon is Flying, they descend 10 feet after the attack.</p>"
+				},
+				"0eRwevoxA5zdvqb9":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a blast of magma that deals [[/r {10d6}[fire]]]{10d6 fire damage} and [[/r {5d12}[bludgeoning]]]{5d12 bludgeoning damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:40|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"TVOxysBVf9C1u5wF":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one horn Strike in any order.</p>"
+				},
+				"4mqhPMJ1Yzc6mTFk":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				},
+				"fx1cIpK2KgNbm7Rz":{
+					"name": "Magma Swim",
+					"description": "<p>A magma dragon's swim Speed functions only when the dragon is Swimming through magma or molten lava.</p>"
+				},
+				"Ab1sWqDegn71eEve":{
+					"name": "Magma Tomb",
+					"description": "<p>Once per day, the dragon can spit a molten boulder at a target within 120 feet. This deals [[/r {12d6}[fire]]]{12d6 fire damage} and [[/r {5d12}[bludgeoning]]]{5d12 bludgeoning damage}, with a @Check[type:reflex|dc:42|basic:true] save. If the creature fails its save, it's encased in magma that instantly cools and has Hardness 10, HP 40, and BT 20. The encased creature can't breathe and is @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} (Escape DC 42).</p>"
+				},
+				"lZ9B89A9j1PjYcdf":{
+					"name": "Volcanic Purge",
+					"description": "<p>If the next action the dragon uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r {5d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>"
+				}
+			}
 		},
 		"Ancient Magma Dragon (Spellcaster)": {
 			"name": "Ancient Magma Dragon (Spellcaster)",
 			"publicNotes": "<p>Magma dragons have a reputation among other dragons for being unpredictable and brash. Their temperament and tendency for violent outbursts ensure that the typical magma dragon lives a solitary life, with hatchlings often bickering or fighting to establish dominance among themselves before they leave the nest. A magma dragon always has a reason for their outbursts and can always justify their sudden turns in mood, yet they rarely feel the need to do so.</p>\n<p>Magma dragons build lairs within volcanically active mountains or deep underground amid vast lakes of bubbling magma. As with all true dragons, magma dragons keep hoards of treasure, but the nature of their searing lairs limits the type of valuables they collect to metals, gems, and items capable of resisting the heat of a volcano's core.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
 			"speed": "magma swim",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"dEH0bojR7ga9l8vX":{
+					"name": "Primal Prepared Spells"
+				},
+				"esTHEOJBat1zXzXY":{
+					"name": "Primal Innate Spells"
+				},
+				"boE5n1kGWU3PGXxn":{
+					"name": "燃烧之手(随意施法) Burning Hands (At Will)",
+					"description": "<p>一团火焰从你的手中喷出。你对区域内的每个生物造成2d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d6。</p>"
+				},
+				"Ump4s3SQmPTp8c0K":{
+					"name": "火墙术(随意施法) Wall of Fire (At Will)",
+					"description": "<p>你创造一面火焰墙壁，它会灼烧穿过它的生物。你创造至多60尺长的10尺高5尺厚的直线型火焰墙壁，或者5尺厚，10尺半径10尺高环形火焰。该墙无论哪种形态均为竖直墙；如果你想的话，墙的高度可以更小。墙一侧的任何事物对于另一侧的生物而言均为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。任何穿过该墙或者在回合开始时占据墙的区域的生物承受4d6火焰伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该火焰伤害增加1d6。</p>"
+				},
+				"2s2y3NKDRdpdH6gx":{
+					"name": "火焰护盾(恒定法术) Fire Shield (Constant)",
+					"description": "<p>你用闪烁的火焰环绕自身，获得寒冷抗力5。除此之外，每当与你相邻的生物通过近战攻击命中你时，以及生物接触你时，或者生物通过无武装攻击命中你时，该生物承受2d6火焰伤害。</p>\n<p>@Compendium[pf2e.spell-effects.1RsScTvNdGD9zGWe]{法术效果：火焰护盾}</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 寒冷抗力提升5，火焰伤害增加1d6。</p>"
+				},
+				"9Wl6UuMjvzjVxaTY":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"AAyJQ8CViWWMXWPU":{
+					"name": "Jaws"
+				},
+				"VaxEKl3gTn1iAnvf":{
+					"name": "Claw"
+				},
+				"reBkTZBqwYPgsiFb":{
+					"name": "Tail"
+				},
+				"O0YSsVnEBCg6oJnT":{
+					"name": "Horns"
+				},
+				"X5uycRcoYkauIGYQ":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"MZE5l2QagOF7ICxV":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"0IfzoP16zRxLRIJ3":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"Cl2tanuHvlyyksIz":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"TUaSPYJP2yuCkKh9":{
+					"name": "Wing Deflection",
+					"description": "<p><strong>Trigger</strong> The dragon is targeted with an attack</p>\n<hr />\n<p><strong>Effect</strong> The dragon raises a wing, gaining a +2 circumstance bonus to AC against the triggering attack. If the dragon is Flying, they descend 10 feet after the attack.</p>"
+				},
+				"0eRwevoxA5zdvqb9":{
+					"name": "Breath Weapon",
+					"description": "<p>The dragon breathes a blast of magma that deals [[/r {10d6}[fire]]]{10d6 fire damage} and [[/r {5d12}[bludgeoning]]]{5d12 bludgeoning damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:40|basic:true] save).</p>\n<p>They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"fx1cIpK2KgNbm7Rz":{
+					"name": "Magma Swim",
+					"description": "<p>A magma dragon's swim Speed functions only when the dragon is Swimming through magma or molten lava.</p>"
+				},
+				"Ab1sWqDegn71eEve":{
+					"name": "Magma Tomb",
+					"description": "<p>Once per day, the dragon can spit a molten boulder at a target within 120 feet. This deals [[/r {12d6}[fire]]]{12d6 fire damage} and [[/r {5d12}[bludgeoning]]]{5d12 bludgeoning damage}, with a @Check[type:reflex|dc:42|basic:true] save. If the creature fails its save, it's encased in magma that instantly cools and has Hardness 10, HP 40, and BT 20. The encased creature can't breathe and is @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} (Escape DC 42).</p>"
+				},
+				"lZ9B89A9j1PjYcdf":{
+					"name": "Volcanic Purge",
+					"description": "<p>If the next action the dragon uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r {5d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>"
+				}
+			}
 		},
 		"Ancient Umbral Dragon": {
 			"name": "Ancient Umbral Dragon",
 			"publicNotes": "<p>While the other primal dragons hail from the Elemental Planes, the cruel and unceasingly malicious umbral dragons originate in the depths of the Shadow Plane. Their sleek black scales and serpentine grace allow them to strike from hiding, and they are known for playing with their prey before finally finishing it. These creatures of shadowy energy and unwholesome appetites prefer the necrotic flesh of undead creatures to any other meal. This strange hunger can be of accidental benefit to nearby humanoid societies, but ultimately they hunt and kill undead creatures for the taste, rather than out of any desire to protect others from the undead. The benefit is always short-lived, however. When umbral dragons exhaust their preferred prey, they turn on whatever living creatures happen to be nearby. Umbral dragons sometimes go to great lengths to obtain their favorite meals, even creating undead creatures that they then feast upon.</p>\n<p>For all their power, umbral dragons are uninterested in fair battles. When faced with foes that pose any kind of actual danger to them, umbral dragons flee into the shadows and seek to strike back through pawns or minions rather than risk their own lives. Their treasure hoards are varied and diverse, often augmented by loot stolen from crypts the dragons have turned into feeding grounds. They have a strong respect for and interest in traditions and heirlooms, and they often seek to augment their hoards with items of great value that have been handed down through the generations of those whose corpses and ghosts they've fed upon.</p>",
-			"dr": [],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "greater darkvision, scent (imprecise) 60 feet, tremorsense (imprecise) 60 feet",
-			"hp": "",
-			"blurb": "",
-			"languages": "",
-			"ac": "",
-			"di": ""
+			"items":{
+				"DFZPLEk0MQcqSi9v":{
+					"name": "Primal Innate Spells"
+				},
+				"QjN3u2G28u81Hmuc":{
+					"name": "Rituals"
+				},
+				"zSJNdELBxJk00I4X":{
+					"name": "黑暗术(随意施法) Darkness (At Will)",
+					"description": "<p>你创造一片黑暗的帷幕，光线无法穿透，并且光源无法在区域中发光。光线无法进入该区域，并且任何非魔法光源，例如火炬或者提灯，在区域中不会发出任何光线，即使其光照可能到达黑暗术之外也是如此。这也会压制等于或低于你的黑暗术环级的魔法光亮。光线无法穿透，所以在区域中的生物无法看到外面。对于外面，这看起来如同一团纯粹黑暗的球。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 即使具有黑暗视觉的生物（但不包括高等黑暗视觉）也几乎无法看穿这黑暗。它们透过黑暗看到的生物视为 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"B2XsgB3WjM0q9j54":{
+					"name": "唤起死灵() Create Undead (Shadows Only)",
+					"description": "<p>你将目标转化为不死生物（undead creature），该不死生物的等级最高为表内所限定的等级。该仪式具有多个版本，每个版本都对应着特定种类的不死生物（一个版本对应所有僵尸、一个版本对应骷髅、一个版本对应食尸鬼，等等），而且唤起稀有不死生物的仪式同样也很罕见。部分形式的不死生物，比如巫妖，是使用自身独具的独特方式（unique methods）来形成的，无法使用某个版本的<em>唤起死灵 Create Undead</em>来创造。</p>\n<h2>表:创造生物仪式</h2>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>生物等级</th>\n<th>最低法术环级</th>\n<th>开销</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>-1 or 0</td>\n<td>2</td>\n<td>15 gp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>2</td>\n<td>60 gp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>3</td>\n<td>105 gp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>3</td>\n<td>180 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>300 gp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>4</td>\n<td>480 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>5</td>\n<td>750 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5</td>\n<td>1,080 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>6</td>\n<td>1,500 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>6</td>\n<td>2,100 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>7</td>\n<td>3,000 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>7</td>\n<td>4,200 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>8</td>\n<td>6,000 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>8</td>\n<td>9,000 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>9</td>\n<td>13,500 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>9</td>\n<td>19,500 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>10</td>\n<td>30,000 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>10</td>\n<td>45,000 gp</td>\n</tr>\n</tbody>\n</table>\n<p><strong>大成功</strong> 目标变为对应类型的不死生物。若它的等级至少比你低4级，那么你可以把它化为仆从（minion）。这会赋予它仆从特征，意味着它在你下令之后能够使用两个动作，下达命令是具有听觉（auditory）和专注（concentrate）特征的单动作。你最多能同时具有4个仆从在自己的控制之下。如果它具有智能（intelligent）且没有成为仆从，并且由于你唤起了它，它对你的态度会变为乐于帮助（helpful），不过它仍然是一名可怖且邪恶的生物。若它不具有智能并且没有成为仆从，你可以给它下达单次命令。它会一心不二地专注于该目标，并无视你所下达的任何后续命令。</p>\n<p><strong>成功</strong> 同大成功，不过具有智能（intelligent）且没有成为仆从的不死生物对你的态度仅仅是友善（friendly），未能成为仆从的无智能不死生物会独自离开你（除非你主动对其发起攻击）。它会袭击周边区域而非服从你的命令。</p>\n<p><strong>失败</strong> 你无法将该生物转化为不死生物。</p>\n<p><strong>大失败</strong> 你将该生物转化为不死生物，但是它的灵魂被你那肮脏的死灵法术所折磨，这个生物满溢着对你的憎恨。它会试图消灭你。</p>"
+				},
+				"ogGSbdU8ci6UjW0v":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"A9SIfdrB8Hk28o23":{
+					"name": "Jaws"
+				},
+				"0TCobRYKQCosWffG":{
+					"name": "Claw"
+				},
+				"l0J79vRF4TUP2DXP":{
+					"name": "Tail"
+				},
+				"znnYZfV4tw03wze8":{
+					"name": "Wing"
+				},
+				"stSp4FJbtoFzokE9":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"neGWW2ZDslwlxS5Y":{
+					"name": "Tremorsense",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+				},
+				"uuI2Msz0ObGGd1kj":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"Qx0Uh3ktQIh1dVKT":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"k7IjtCkUuIzOv0dz":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:40]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"kDZcpk5GUe5jUU73":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"SXISaBxf4jsnV512":{
+					"name": "Breath Weapon",
+					"description": "<p>The umbral dragon breathes in one of two ways. They can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Negative</strong> The dragon breathes a blast of darkness in a @Template[type:cone|distance:50] that deals [[/r {21d6}[negative]]]{21d6 negative damage} (@Check[type:reflex|dc:42|basic:true] save). Undead creatures take [[/r {25d6}[force]]]{25d6 force damage} instead of the negative damage.</li>\n<li><strong>Shadows</strong> The dragon breathes a blast of shadows in a @Template[type:cone|distance:50]. Each creature within the cone must attempt a @Check[type:fortitude|dc:42] save.\n<ul>\n<li><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 round.</p></li>\n<li><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 minute. </li>\n<li><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} for 1 minute and @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</li>\n</ul>\n</li>\n</ul>"
+				},
+				"A5NdjSB3IdJS5DAb":{
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>"
+				},
+				"BRAhQrI56OQkBhNy":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges their Breath Weapon whenever they score a critical hit with a Strike.</p>"
+				},
+				"jJMWnNtJ3dst8bcj":{
+					"name": "Drain Vigor",
+					"description": "<p>When the dragon deals negative damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary Hit Points and the creature must succeed at a @Check[type:fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}. Further damage dealt by the dragon's jaws Strike increases the enfeebled condition value by 2 on a failed save, to a maximum of enfeebled 4.</p>"
+				},
+				"wYU3mjAP9KQSofkn":{
+					"name": "Ghost Bane",
+					"description": "<p>An umbral dragon's Strikes affect incorporeal creatures with the effects of a @UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property rune, and an umbral dragon's jaws deal an additional [[/r {8d6}[force]]]{8d6 force damage} to undead.</p>"
+				}
+			}
 		},
 		"Ancient Umbral Dragon (Spellcaster)": {
 			"name": "Ancient Umbral Dragon (Spellcaster)",
@@ -1539,17 +2756,17 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "2"
+					"description": "2"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -1603,7 +2820,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "15"
+					"description": "15"
 				},
 				{
 					"exceptions": "except cold iron",
@@ -1638,12 +2855,12 @@
 				{
 					"label": "Precision",
 					"type": "precision",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Protean Anatomy",
 					"type": "protean anatomy",
-					"value": "8"
+					"description": "8"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -1661,7 +2878,7 @@
 				{
 					"label": "Acid",
 					"type": "acid",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "+1 to all saves vs. magic",
@@ -1875,7 +3092,7 @@
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "2"
+					"description": "2"
 				}
 			],
 			"allSaves": "",
@@ -1935,7 +3152,7 @@
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -1965,7 +3182,7 @@
 				{
 					"label": "Electricity",
 					"type": "electricity",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -1983,17 +3200,17 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "2"
+					"description": "2"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2113,12 +3330,12 @@
 				{
 					"label": "Negative",
 					"type": "negative",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -2172,7 +3389,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"exceptions": "except cold iron",
@@ -2207,17 +3424,17 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "2"
+					"description": "2"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2235,7 +3452,7 @@
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2300,7 +3517,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "3"
+					"description": "3"
 				},
 				{
 					"exceptions": "except cold iron",
@@ -2405,7 +3622,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+2 status to all saves vs. fear",
@@ -2423,7 +3640,7 @@
 				{
 					"label": "Negative",
 					"type": "negative",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -2441,7 +3658,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "3"
+					"description": "3"
 				}
 			],
 			"allSaves": "",
@@ -2573,12 +3790,12 @@
 				{
 					"label": "Negative",
 					"type": "negative",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2596,17 +3813,17 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "2"
+					"description": "2"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2648,22 +3865,22 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "9"
+					"description": "9"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "9"
+					"description": "9"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2705,7 +3922,7 @@
 				{
 					"label": "Acid",
 					"type": "acid",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -2926,12 +4143,12 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -2985,7 +4202,7 @@
 				{
 					"label": "Acid",
 					"type": "acid",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -3015,7 +4232,7 @@
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -3111,7 +4328,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -3141,12 +4358,12 @@
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -3283,7 +4500,7 @@
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -3301,7 +4518,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"exceptions": "except silver",
@@ -3396,17 +4613,17 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Physical",
 					"type": "physical",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -3490,7 +4707,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "1"
+					"description": "1"
 				}
 			],
 			"allSaves": "",
@@ -3520,12 +4737,12 @@
 				{
 					"label": "Precision",
 					"type": "precision",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Protean Anatomy",
 					"type": "protean anatomy",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -3597,7 +4814,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -3616,7 +4833,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "20"
+					"description": "20"
 				}
 			],
 			"allSaves": "",
@@ -3669,7 +4886,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -3699,12 +4916,12 @@
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "15"
+					"description": "15"
 				},
 				{
 					"label": "Sonic",
 					"type": "sonic",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -3943,12 +5160,12 @@
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -4020,7 +5237,7 @@
 				{
 					"label": "Acid",
 					"type": "acid",
-					"value": "3"
+					"description": "3"
 				},
 				{
 					"exceptions": "except bludgeoning",
@@ -4067,7 +5284,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -4145,7 +5362,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"exceptions": "except cold iron",
@@ -4573,7 +5790,7 @@
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -4709,7 +5926,7 @@
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "3"
+					"description": "3"
 				}
 			],
 			"allSaves": "",
@@ -4781,7 +5998,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "15"
+					"description": "15"
 				},
 				{
 					"exceptions": "except slashing",
@@ -4862,12 +6079,12 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -4945,7 +6162,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"exceptions": "except cold iron",
@@ -5040,7 +6257,7 @@
 				{
 					"label": "Physical",
 					"type": "physical",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -5124,17 +6341,17 @@
 				{
 					"label": "Bludgeoning",
 					"type": "bludgeoning",
-					"value": "3"
+					"description": "3"
 				},
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "7"
+					"description": "7"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "7"
+					"description": "7"
 				}
 			],
 			"allSaves": "",
@@ -5176,7 +6393,7 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -5320,12 +6537,12 @@
 				{
 					"label": "Piercing",
 					"type": "piercing",
-					"value": "5"
+					"description": "5"
 				},
 				{
 					"label": "Slashing",
 					"type": "slashing",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -5367,7 +6584,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "15"
+					"description": "15"
 				},
 				{
 					"exceptions": "except cold iron",
@@ -5390,7 +6607,7 @@
 				{
 					"label": "Sonic",
 					"type": "sonic",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -5456,7 +6673,7 @@
 				{
 					"label": "Sonic",
 					"type": "sonic",
-					"value": "15"
+					"description": "15"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -5498,7 +6715,7 @@
 				{
 					"label": "Mental",
 					"type": "mental",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. mental",
@@ -5552,7 +6769,7 @@
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
@@ -5570,12 +6787,12 @@
 				{
 					"label": "Negative",
 					"type": "negative",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -5593,12 +6810,12 @@
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Electricity",
 					"type": "electricity",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -5616,12 +6833,12 @@
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "20"
+					"description": "20"
 				},
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "20"
+					"description": "20"
 				}
 			],
 			"allSaves": "",
@@ -5735,12 +6952,12 @@
 				{
 					"label": "Cold",
 					"type": "cold",
-					"value": "10"
+					"description": "10"
 				},
 				{
 					"label": "Fire",
 					"type": "fire",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -5818,7 +7035,7 @@
 				{
 					"label": "Force",
 					"type": "force",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": null,
@@ -5872,7 +7089,7 @@
 				{
 					"label": "Physical",
 					"type": "physical",
-					"value": "10"
+					"description": "10"
 				}
 			],
 			"allSaves": "",
@@ -5902,12 +7119,12 @@
 				{
 					"label": "Negative",
 					"type": "negative",
-					"value": "20"
+					"description": "20"
 				},
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "20"
+					"description": "20"
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
@@ -6143,7 +7360,7 @@
 				{
 					"label": "Poison",
 					"type": "poison",
-					"value": "5"
+					"description": "5"
 				}
 			],
 			"allSaves": "",
