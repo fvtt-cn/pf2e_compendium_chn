@@ -1,0 +1,128 @@
+{
+	"label": "黑暗档案怪物图鉴 Dark Archive Bestiary",
+    "mapping": {
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "hazarddisable": "system.details.disable",
+        "hazarddescription": "system.details.description",
+        "hazardreset": "system.details.reset",
+        "hazardroutine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealth":"system.attributes.stealth",
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
+    },
+	"entries": {
+		"Bounding Hounds": {
+			"name": "Bounding Hounds"
+		},
+		"Call of the Void": {
+			"name": "Call of the Void"
+		},
+		"Clone Mirrors": {
+			"name": "Clone Mirrors"
+		},
+		"Cocoon of Lucid Potential": {
+			"name": "Cocoon of Lucid Potential"
+		},
+		"Confounding Portal": {
+			"name": "Confounding Portal"
+		},
+		"Constricting Hall": {
+			"name": "Constricting Hall"
+		},
+		"Disorienting Illusions": {
+			"name": "Disorienting Illusions"
+		},
+		"Distortion Mirror": {
+			"name": "Distortion Mirror"
+		},
+		"Entrapping Chair": {
+			"name": "Entrapping Chair"
+		},
+		"Exhaling Portal": {
+			"name": "Exhaling Portal"
+		},
+		"False Floor": {
+			"name": "False Floor"
+		},
+		"False Step Floor": {
+			"name": "False Step Floor"
+		},
+		"K. H. W.'s Echo": {
+			"name": "K. H. W.'s Echo"
+		},
+		"Mirror Door": {
+			"name": "Mirror Door"
+		},
+		"Mother Mitera": {
+			"name": "Mother Mitera"
+		},
+		"Quartz-Spawned Shadow": {
+			"name": "Quartz-Spawned Shadow"
+		},
+		"Reflected Desires": {
+			"name": "Reflected Desires"
+		},
+		"Reflection": {
+			"name": "Reflection"
+		},
+		"Shrinking Hall": {
+			"name": "Shrinking Hall"
+		},
+		"Shrouded Assailant": {
+			"name": "Shrouded Assailant"
+		},
+		"Shuffling Hall": {
+			"name": "Shuffling Hall"
+		},
+		"Sigil of Deepest Fears": {
+			"name": "Sigil of Deepest Fears"
+		},
+		"Spirit Window": {
+			"name": "Spirit Window"
+		},
+		"Thalassophobic Pool": {
+			"name": "Thalassophobic Pool"
+		},
+		"The Morrowkin": {
+			"name": "来日魔 The Morrowkin",
+			"items":{
+				"41MourwRyz9uDnd8":{
+					"name": "爪抓 Claw"
+				},
+				"C5zKC61h7GcivnD5":{
+					"name": "厌恶食物 Disgusted by Food",
+					"value": "<p>来日魔吞噬梦境和潜能，而非食物。一个生物可以花费一个动作来在来日魔面前挥舞食物，会使得来日魔自动陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（或增加其恶心状态值1，最大到恶心6），如通常的恶心状态一样，降低来日魔的AC，攻击骰，豁免，技能，和属性DC。来日魔无法通过呕吐来减少其恶心状态值。</p>"
+				},
+				"GufPL7fXAz1R4tFA":{
+					"name": "不息 Endless",
+					"value": "<p>如果来日魔减少至0生命值或陷入失去意识超过数轮，它会消失。1分钟后，它完全恢复再次现身，如同上一场战斗根本没有发生过，它恢复满生命值，清除它身上所有效果，且其吞噬未来能力也准备就绪可以再次使用。</p>"
+				},
+				"Vcb2fzxMkjOhWNPz":{
+					"name": "汲取潜能 Drain Potential",
+					"value": "<p>来日魔试图汲取其目标的积极性，目标必须尝试一次@Check[type:fortitude|dc:31]的强韧豁免。如果目标豁免失败，它将陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}（大失败时为@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}），且在1分钟内所有检定上必须掷骰两次采用较差的结果。穿戴有希望护符（hope talisman）的生物不受影响。</p>"
+				},
+				"sxD01nPswudJsjzS":{
+					"name": "吞噬未来 Swallow Future",
+					"value": "<p>来日魔吸取抓住周围所有生物的未来行为。来日魔@Template[type:emanation|distance:30]范围内的所有生物受到[[/r {6d8 + 18}[mental]]]{6d8 + 18心灵伤害}，且必须尝试一次@Check[type:will|dc:39]豁免。</p>\n<p>来日魔无法在1分钟内再次使用吞噬未来。</p>\n<p>穿戴有希望护符的生物可以在看到意志豁免结果后，选择让他们的希望护符破碎来忽视此效果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一半伤害并陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。</p>\n<p><strong>失败</strong> 生物受到全额伤害并陷入毁灭2@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 4}（可能导致其立即死亡）。</p>"
+				},
+				"pAa1q5ts9oP6qdky":{
+					"name": "明日狂暴 Tomorrow's Fury",
+					"value": "<p>来日魔对其触及范围内任意数量的目标进行爪抓攻击。爪抓攻击会计入来日魔的多重攻击减值，但只有在所有攻击完成后才会累积减值。</p>"
+				}
+			}
+		},
+		"The Weaver in Dreams": {
+			"name": "The Weaver in Dreams"
+		},
+		"Verdure's Moonflower": {
+			"name": "Verdure's Moonflower"
+		}
+	}
+}

@@ -1,3 +1,448 @@
 {
-    "label": "危害(规则书) Hazards (Rulebooks)"
+    "label": "危害(规则书) Hazards (Rulebooks)",
+    "mapping":{
+        "publicNotes":"system.details.publicNotes",
+        "hazarddisable":"system.details.disable",
+        "hazarddescription":"system.details.description",
+        "hazardreset":"system.details.reset",
+        "hazardroutine":"system.details.routine",
+        "stealthdetails":"system.attributes.stealth.details"
+    },
+    "entries": {
+        "Armageddon Orb": {
+            "name": "Armageddon Orb",
+            "hazarddisable": "<p>@Check[type:thievery|dc:48|name:Imbue Thieves' Tools|traits:action:disable-a-device] (legendary) to imbue thieves' tools with aspects representing Asmodeus and Sarenrae and use them to drain away the orb's power over 10 minutes; the character attempting this check takes 5 fire damage each round until the orb is depleted</p>",
+            "hazarddescription": "<p>A roiling red orb, forged from a drop of the god Rovagug's blood, rains fire from the sky when a specified condition is met.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "or <i>detect magic</i>"
+        },
+        "Banshee's Symphony": {
+            "name": "Banshee's Symphony",
+            "hazarddisable": "<p>@Check[type:thievery|dc:42|name:Pierce Larynx|traits:action:disable-a-device] (master) to pierce the invisible larynx so precisely that the magic releases in a trickle before the trap activates, @Check[type:thievery|dc:44|name:Deconstruct Larynx|traits:action:disable-a-device] (legendary) three times to deconstruct the larynx while the trap is active in such a way that it tears the spell apart, or spell DC 38 (9th level) to counteract the <em>wail of the banshee</em> before the trap activates</p>",
+            "hazarddescription": "<p>A magically contagious <em>wail of the banshee</em> spell is trapped in the larynx of an invisible, mummified elf.</p>",
+            "hazardreset": "<p>The trap ends when the trap is unable to make a creature scream (usually because no creature failed its save on the previous turn or because all creatures have critically succeeded in the past). It then resets over 24 hours, as a new scream builds up in the mummified larynx.</p>",
+            "hazardroutine": "<p>(1 action) The trap uses its action to force one random creature that failed its save against <em>wail of the banshee</em> last turn to emit a <em>wail of the banshee</em> with the same statistics as the initial one. The creature wails even if it is dead or unable to speak, no matter how far away from the trap it is. Unlike a casting of the spell, the drained condition from this trap's <em>wail of the banshee</em> spells increases the targets' drained condition values. A creature that critically succeeds at any of its saves can still be affected by the trap on future rounds, but can't be forced to wail by the trap.</p></p>",
+            "stealthdetails": "<p>(legendary)</p>"
+        },
+        "Bloodthirsty Urge": {
+            "name": "Bloodthirsty Urge",
+            "hazarddisable": "<p>@Check[type:religion|dc:29|name:Exorcise Spirit] (master) to exorcise the spirit or @Check[type:diplomacy|dc:31|name:Talk Down the Spirit] (专家) to talk it down</p>",
+            "hazarddescription": "<p>An object haunted by the echoes of a vicious mind attempts to kill someone who comes near.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Bottomless Pit": {
+            "name": "Bottomless Pit",
+            "hazarddisable": "<p>@Check[type:thievery|dc:28|name:Remove Trapdoor|traits:action:disable-a-device] (受训) to remove the trapdoor</p>",
+            "hazarddescription": "<p>An iron trapdoor covers an infinitely deep 10-foot-square pit.</p>",
+            "hazardreset": "<p>The trap still causes creatures to fall forever if they fall in, but the trapdoor must be reset manually for the trap to become hidden again.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(or 0 if the trapdoor is disabled or broken) or <i>detect magic</i></p>"
+        },
+        "Brown Mold": {
+            "name": "Brown Mold",
+            "hazarddisable": "<p>@Check[type:survival|dc:18|name:Remove Brown Mold|traits:environmental,fungus] (受训) to safely remove the mold</p>",
+            "hazarddescription": "<p>This unassuming fungus leeches heat out of the air.</p>",
+            "hazardreset": "<p>After expanding, the brown mold can't grow again for 1 day.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Confounding Betrayal": {
+            "name": "Confounding Betrayal",
+            "hazarddisable": "<p>@Check[type:deception|dc:28|name:Confound the Haunt] (专家) twice to confound the haunt with your own deceptions, or @Check[type:occultism|dc:28|name:Create a Ward Against Influence] (受训) twice to create a ward against the haunt's mental influence</p>",
+            "hazarddescription": "<p>Allies appear to shed their disguises and reveal themselves to be malevolent monsters.</p>",
+            "hazardreset": "<p>The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.</p>",
+            "hazardroutine": "<p>(1 action, illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a @Check[type:will|dc:26].</p>\n<p><strong>Critical Success</strong> The creature is unaffected and temporarily immune for 1 minute.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is confused for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is confused for 1 minute.</p>",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Dance Of Death": {
+            "name": "Dance Of Death",
+            "hazarddisable": "<p>@Check[type:intimidation|dc:42|name:Frighten the Orchestra|traits:action:demoralize] (专家) three times to frighten dancers and spectral musicians alike away from participating in the deadly performance, @Check[type:performance|dc:40|name:Disrupt Compulsion] (master) twice to produce a tune discordant enough to disrupt the compulsion, or @Check[type:religion|dc:42|name:Banish Spirits] (master) three times to banish the spirits with prayers</p>",
+            "hazarddescription": "<p>An eerie orchestra compels all who hear it to dance until they collapse from exhaustion.</p>",
+            "hazardreset": "<p>The eerie orchestra spends an hour retuning its phantasmal instruments, after which it is ready to begin its routine again.</p>",
+            "hazardroutine": "<p>(1 action, auditory, enchantment, incapacitation, occult) The orchestra performs a raucous tune, compelling all creatures that can hear it to spend actions dancing. Each round, creature must attempt a @Check[type:will|dc:37]; the results of this save modify the number of actions that the creature must spend dancing each round. If this would cause the creature to spend more actions dancing than it can use on its turn, the creature takes 10d6 damage (or double that on a critical failure) from moving faster than its body can manage.</p>\n<p><strong>Critical Success</strong> The creature decreases the number of actions it must spend dancing by 1.</p>\n<p><strong>Success</strong> No effect.</p>\n<p><strong>Failure</strong> The creature increases the actions it must spend dancing by 1.</p>\n<p><strong>Critical Failure</strong> The creature increases the actions it must spend dancing by 2.</p>",
+            "stealthdetails": "<p>(master)</p>"
+        },
+        "Darkside Mirror": {
+            "name": "Darkside Mirror",
+            "hazarddisable": "<p>@Check[type:thievery|dc:34|name:Retrieve Creature from Other Dimension|traits:action:disable-a-device] (legendary) to retrieve a creature from the other dimension within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:39|name:Permanently Disable Mirror|traits:action:disable-a-device] (master) to permanently disable the mirror once all mirror duplicates are dead, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 32) to counteract the mirror for 1 minute and prevent additional replacements during that time</p>",
+            "hazarddescription": "<p>A magic mirror replaces characters with evil mirror duplicates from another dimension.</p>",
+            "hazardreset": "<p>The mirror is always ready to absorb creatures into the other dimension. Ten minutes after a creature is sucked into the mirror, if an ally doesn't rescue the creature with Thievery, it reaches the other dimension, where it might be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can't destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like <i>plane shift</i> can't reach them.</p>",
+            "hazardroutine": "<p>(1 action) The mirror absorbs another reflected creature into the mirror and replaces it with a mirror duplicate. Mirror duplicates attack on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change). A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to.</p>",
+            "stealthdetails": "<p>(master) to notice it isn't a regular mirror</p>"
+        },
+        "Drowning Pit": {
+            "name": "Drowning Pit",
+            "hazarddisable": "<p>@Check[type:thievery|dc:18] (受训) to seal each water spout, @Check[type:thievery|dc:22] (受训) to open the trapdoor, or @Check[type:athletics|dc:22] to @UUID[Compendium.pf2e.action-macros.yMTKMnaYSGtDz4wk]{Force Open: Athletics} the trapdoor</p>",
+            "hazarddescription": "<p>A trapdoor covers a 10-foot-square pit that's 30 feet deep and has 5 feet of water at the bottom. Four water spouts in the walls connect to hidden water tanks. Each water spout extends out of a different wall, 6 inches from the top of the pit.</p>",
+            "hazardreset": "<p>The trap can be reset if the door is manually reengaged and the water tanks refilled; it can be reset without draining the pit, but doing so renders it less effective.</p>",
+            "hazardroutine": "<p>(4 actions) The trap loses 1 action each turn for each disabled water spout. On each of the trap's actions, a spout pours water, increasing the depth of the water by 5 feet. Once the pit is full of water, the pit stops using actions, but creatures in the pit begin drowning.</p>",
+            "stealthdetails": "<p>(受训); @Check[type:perception|dc:22|traits:action:seek] (专家) to notice the water spouts once the pit opens</p>"
+        },
+        "Electric Latch Rune": {
+            "name": "Electric Latch Rune",
+            "hazarddisable": "<p>@Check[type:thievery|dc:20|name:Scratch Out the Rune|traits:action:disable-a-device] (专家) to scratch out the rune without allowing electricity to flow, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 18) to counteract the rune</p>",
+            "hazarddescription": "<p>An invisible rune imprinted on a door latch releases a powerful electric discharge.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Eternal Flame": {
+            "name": "Eternal Flame",
+            "hazarddisable": "<p>@Check[type:diplomacy|dc:27|name:Calm the Spirit's Rage] (专家) to temporarily calm the rage of one of the three spirits, or @Check[type:religion|dc:30|name:Exorcise Spirit] (受训) to exorcise one of the spirits; three total successes are required to disable the haunt</p>",
+            "hazarddescription": "<p>A raging spectral inferno arises out of thin air, strengthening all undead creatures within its area. This haunt most often arises from the charred remains of a group of three people who burned to death, whether in a terrible accident or a deliberate execution, and their unavenged souls burn with rage.</p>",
+            "hazardreset": "<p>The flames cease 1 minute after all living creatures leave the area, but after 1 hour, the anger and pain simmer up and the haunt is ready to trigger again.</p>",
+            "hazardroutine": "<p>(1 action) Phantom flames rage across the haunted area, dealing 4d6 fire damage to each living creature within the area (@Check[type:will|dc:23|basic:true]). Undead creatures in the area are infused with flames for the following round. They gain the fire trait and immunity to fire, and all their attacks deal an additional 1d6 fire damage. Objects in the area are unaffected.</p>",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Fireball Rune": {
+            "name": "Fireball Rune",
+            "hazarddisable": "<p>@Check[type:thievery|dc:22|name:Erase the Rune] (专家) to erase the rune without triggering the sensor, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 20) to counteract the rune</p>",
+            "hazarddescription": "<p>An invisible rune creates an invisible, spherical magical sensor with a 20-foot radius.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Flensing Blades": {
+            "name": "Flensing Blades",
+            "hazarddisable": "<p>@Check[type:thievery|dc:35|name:Adjust Blades|traits:action:disable-a-device] (master) to precisely adjust the blades so that they destroy each other, or @Check[type:religion|dc:38|name:Weaken the Haunt] (专家) to weaken the haunt; four successes are required to disable it</p>",
+            "hazarddescription": "<p>A whirling tornado of spectrally propelled glass and steel slices whatever it touches to ribbons.</p>",
+            "hazardreset": "<p>The haunt draws jagged shards back into its area over the course of an hour, after which it can trigger again.</p>",
+            "hazardroutine": "<p>(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing 2d10+10 slashing damage. Each creature in its path must attempt a @Check[type:reflex|dc:33].</p>\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage plus @Localize[PF2E.PersistentDamage.Bleed1d10.success].</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and @Localize[PF2E.PersistentDamage.Bleed1d10.success]. It also becomes wounded 1 (or increases its wounded value by 1, if it is already wounded).</p>\n<p>Each successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.</p>",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Frozen Moment": {
+            "name": "Frozen Moment",
+            "hazarddisable": "<p>@Check[type:thievery|dc:38|name:Disassemble Spell Components|traits:action:disable-a-device] (legendary) to rapidly disassemble the spell's myriad components in a single blink of an eye; or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 36) to counteract the trap before it triggers or to counteract the effect on one creature after the trap is triggered</p>",
+            "hazarddescription": "<p>Warding magic attempts to trap intruders or would-be thieves in a disrupted time flow.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(master)</p>"
+        },
+        "Ghostly Choir": {
+            "name": "Ghostly Choir",
+            "hazarddisable": "<p>@Check[type:performance|dc:28|name:Sing a Different Tune|traits:haunt] (受训) to disrupt the song's resonance with another tune or @Check[type:religion|dc:28|name:Ritually Silence the Haunt|traits:haunt] (受训) to ritually silence the spirits</p>",
+            "hazarddescription": "<p>A choir of lost souls rises out of the floor, singing an eerie chant that terrifies its listeners and buffets their bodies with walls of sound.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Grasp Of The Damned": {
+            "name": "Grasp Of The Damned",
+            "hazarddisable": "<p>@Check[type:religion|dc:46|name:Call For Divine Intervention] (master) to inspire a deity to intervene and counteract the ritual</p>",
+            "hazarddescription": "<p>These desperate spirits are the echoes of people who committed great atrocities in the name of an evil god. Now, they are left with only the knowledge that their souls have been damned, and the unwavering belief that they can better their fate by providing powerful sacrifices for their fiendish masters.</p>",
+            "hazardreset": "<p>1 day</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(master)</p>"
+        },
+        "Gravehall Trap": {
+            "name": "Gravehall Trap",
+            "hazarddisable": "<p>@Check[type:thievery|dc:24|name:Disrupt Magical Trigger|traits:action:disable-a-device] (专家) to disrupt the magical trigger before the hazard rolls initiative, or @Check[type:religion|dc:18|name:Overwhelm the Area with Positive Energy] (受训) to overwhelm the area with positive energy and prevent the hazard from using its routine for 1 round; on the third successful Religion check, the necromantic energies are disrupted and the hazard is destroyed.</p>",
+            "hazarddescription": "<p>When a living creature crosses the midpoint of the trapped tunnel, necromantic magic partially animates the corpses buried in the walls and ceiling.</p>",
+            "hazardreset": "",
+            "hazardroutine": "<p><span class=\"pf2-icon\">1</span> Undead fists assail all creatures in the hall, dealing [[/r {4d6}[bludgeoning]]]{4d6 bludgeoning damage}. Creatures in the hall must attempt a @Check[type:reflex|dc:21].</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage.</p>\n<p><strong>Failure</strong> The target takes full damage, and its Speeds are reduced by 10 feet (to a minimum of 5 feet) for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</p>",
+            "stealthdetails": ""
+        },
+        "Green Slime": {
+            "name": "Green Slime",
+            "hazarddisable": "<p>@Check[type:survival|dc:33|name:Peel the Slime Off the Ceiling] (专家) to carefully peel the slime off the ceiling without touching it</p>",
+            "hazarddescription": "<p>A caustic green film clings to the ceiling above, watching for prey to pass beneath it.</p>",
+            "hazardreset": "<p>1 hour, as the slime feasts and then slowly creeps back up to the ceiling</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Hallucination Powder Trap": {
+            "name": "Hallucination Powder Trap",
+            "hazarddisable": "<p>@Check[type:thievery|dc:26|name:Disable Hammer|traits:action:disable-a-device] (专家) to disable the hammer that strikes the percussion cap</p>",
+            "hazarddescription": "<p>A tube of hallucinogenic powder armed with a miniature explosive is connected to a doorknob or similar latch.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Hammer Of Forbiddance": {
+            "name": "Hammer Of Forbiddance",
+            "hazarddisable": "<p>@Check[type:thievery|dc:28|name:Prevent Hammer from Swinging|traits:action:disable-a-device] (专家) once on the hammer itself and once on its joint to prevent the hammer from swinging</p>",
+            "hazarddescription": "<p>An enormous hammer at an edifice's entrance swings down in an attempt to damage a creature entering an area, push it back, and prevent it from going any further.</p>",
+            "hazardreset": "<p>The trap resets over the course of the round, and is ready to swing again 1 round later.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Hampering Web": {
+            "name": "Hampering Web",
+            "hazarddisable": "<p>@Check[type:survival|dc:17|name:Dislodge Web] (受训) to dislodge it</p>",
+            "hazarddescription": "<p>Semitransparent sheets of webbing span the entryway, ready to capture small insects or hamper larger creatures that pass through.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Hidden Pit": {
+            "name": "Hidden Pit",
+            "hazarddisable": "@Check[type:thievery|dc:12|name:Remove the Trapdoor] to remove the trapdoor",
+            "hazarddescription": "<p>A wooden trapdoor covers a pit that's 10 feet square and 20 feet deep.</p>",
+            "hazardreset": "<p>Creatures can still fall into the trap, but the trapdoor must be reset manually for the trap to become hidden again.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(or 0 if the trapdoor is disabled or broken)</p>"
+        },
+        "Insistent Privacy Fence": {
+            "name": "Insistent Privacy Fence",
+            "hazarddisable": "<p>@Check[type:thievery|dc:28|name:Disconnect the coil from the fence|traits:electricity,hazard,trap,mechanical] (专家) to carefully disconnect the coil from the fence or @Check[type:crafting|dc:30|name:Jury-rig a grounding device|traits:electricity,hazard,trap,mechanical] (master) to jury-rig a grounding device to nullify the shock</p>",
+            "hazarddescription": "<p>A stretch of fence is electrified by a hidden Stasian coil.</p>",
+            "hazardreset": "<p>The trap deactivates and resets after 1 minute.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Jealous Abjurer": {
+            "name": "Jealous Abjurer",
+            "hazarddisable": "<p>@Check[type:arcana|dc:36|name:Convince the Spirit], @Check[type:nature|dc:36|name:Convince the Spirit], @Check[type:occultism|dc:36|name:Convince the Spirit], or @Check[type:religion|dc:36|name:Convince the Spirit] (master) to convince the spirit that the target's magical knowledge is too great to be trifled with</p>",
+            "hazarddescription": "<p>A robe-clad spirit rises out of the floor, pointing an accusing finger.</p>",
+            "hazardreset": "<p>1 hour</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(master)</p>"
+        },
+        "Lava Flume Tube": {
+            "name": "Lava Flume Tube",
+            "hazarddisable": "<p>@Check[type:thievery|dc:29|name:Block a Channel|traits:action:disable-a-device] (专家) to block a channel, or @Check[type:thievery|dc:31|name:Release Floor Latch|traits:action:disable-a-device] (master) to release the floor latch and escape to the chamber below</p>",
+            "hazarddescription": "<p>Four gated channels carved into stone allow lava to flow into a 15-foot-tall room; the floor can withdraw to allow the hardened lava to fall into a chamber beneath.</p>",
+            "hazardreset": "<p>The trap deactivates and resets after 1 hour by withdrawing the floor, cracking and dumping the hardened lava (and any creatures trapped inside) into the chamber. Creatures fall 40 feet, taking falling damage (typically 17 bludgeoning damage).</p>",
+            "hazardroutine": "<p>(4 actions) The trap loses 1 action per disabled channel each turn. On each action, a different channel spews lava, dealing 4d6 fire damage to each creature within 10 feet of the channel (@Check[type:reflex|dc:27|basic:true]), and increasing the depth of the lava in the room by 1 foot (4 feet per round if all the channels are active).</p>\n<p>A creature that starts its turn in lava takes 8d6 fire damage and is immobilized until it Escapes the hardening lava (DC 27). The creature might suffocate if covered in lava.</p>\n<p>Lava from the previous round hardens fully at the start of the trap's turn, effectively raising the floor of the room. Once the room is full of lava, the trap stops taking actions, but creatures in the room remain stuck until the floor opens and the trap resets.</p>",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Malevolent Mannequins": {
+            "name": "Malevolent Mannequins",
+            "hazarddisable": "<p>@Check[type:thievery|dc:37|name:Jam a mannequin's clockwork mechanisms|traits:clockwork,haunt,mechanical,hazard]{Thievery (master)} to jam a mannequin's clockwork mechanisms or a @Check[type:religion|dc:35|name:Exorcise a spirit from a mannequin|traits:clockwork,haunt,mechanical,hazard]{Religion (专家)} twice to exorcise a spirit from a mannequin.</p>",
+            "hazarddescription": "<p>A host of violent spirits possess three clockwork mannequins, and each lashes out at any creatures that dare walk near.</p>",
+            "hazardreset": "<p>The haunt deactivates after it has no target creatures and resets, usually over the course of 1 round, as the mannequins move to their original positions. If a mannequin is more than 150 feet from its original position, the haunt takes longer to reset, as the mannequin moves back 150 feet each round.</p>",
+            "hazardroutine": "<p><strong>Routine</strong> (9 actions) Each of the mannequins uses three of the haunt's actions on each turn, and the haunt loses three actions each turn for every disabled or destroyed mannequin. Each mannequin uses its first action to Stride up to 50 feet and its remaining two actions to make clockwork fist Strikes. Each has its own separate multiple attack penalty.</p>",
+            "stealthdetails": ""
+        },
+        "Perilous Flash Flood": {
+            "name": "Perilous Flash Flood",
+            "hazarddisable": "<p>Three @Check[type:athletics|dc:35|name:Move Barricade], @Check[type:crafting|dc:35|name:Construct Barricade], or @Check[type:survival|dc:35|name:Construct Barricade] checks to move or construct barricades strong enough to create a shelter from the flood. While this creates a safe place to stand, creatures outside of the barricaded area may still be in danger depending on the nature and the source of the flood.</p>",
+            "hazarddescription": "<p>Whether made up of water rushing through the streets that sweeps up dangerous debris along the way or a less natural substance bursting free of its container, this relentless flood batters everything in its path.</p>",
+            "hazardreset": "",
+            "hazardroutine": "<p>(1 action) The flood advances forward 60 feet, crashing into all creatures within its area. Each creature must attempt a @Check[type:fortitude|dc:30] save as the floodwaters pummel them and pull them downstream. The amount and type of damage dealt are based on the nature of the flood, and certain types of floods impose additional effects. The turbulent waters mean creatures within the area of the flood must attempt a @Check[type:athletics|dc:20|name:Swim|traits:action:swim] check to Swim in order to move, and those who do not succeed at a check to Swim each round may drown.</p>\n<hr>\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is moved 10 feet along with the water.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is moved 20 feet along with the water.</p>\n<hr>\n<ul>\n<li><strong>Acidic Runoff</strong> This caustic flood dissolves flesh as it moves, dealing [[/r {1d12}[bludgeoning]+{1d12+8}[acid]]]{1d12 bludgeoning damage and 1d12+8 acid damage}. Additionally, it deals [[/r {2d6}[persistent,acid]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent acid Damage} to creatures who critically fail their Fortitude saves.</li>\n<li><strong>Battering Waves</strong> This flood of rushing water deals [[/r {2d12+10}[bludgeoning]]]{2d12+10 bludgeoning damage}.</li>\n<li><strong>Repulsive Refuse</strong> This flood has picked up tainted or disease-ridden objects like sewer runoff or rotting food. It deals [[/r {2d12+8}[bludgeoning]]]{2d12+8 bludgeoning damage}. Each creature exposed to the flood must attempt a @Check[type:fortitude|dc:29] save, becoming @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} on a failure or @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure. Additionally, creatures who come into contact with the flood waters are exposed to filth fever (@Check[type:fortitude|dc:20]).</li>\n<li><strong>Sharp Debris</strong> The waters have picked up various objects, some of which are particularly sharp. The flood deals [[/r {1d12}[bludgeoning]]]{1d12 bludgeoning damage} and [[/r {1d12+12}[piercing]]]{1d12+12 piercing damage}.</li>\n<li><strong>Sticky Goo</strong> The substance is particularly sticky. It deals [[/r {2d12+6}[bludgeoning]]]{2d12+6 bludgeoning damage}. Additionally, each creature in the flood must attempt a @Check[type:reflex|dc:29] save at the beginning of their turn each round. On a failed saving throw, they take a -10-foot circumstance penalty to all their Speeds for 1 round. On a critical failure, they are instead @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round.</li>\n</ul>",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Pharaoh's Ward": {
+            "name": "Pharaoh's Ward",
+            "hazarddisable": "<p>@Check[type:thievery|dc:27|name:Remove the Lintel] (master) to painstakingly remove the lintel without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 25) to counteract the rune</p>",
+            "hazarddescription": "<p>A curse is imbued on an entryway's threshold.</p>",
+            "hazardreset": "<p>The trap resets when the door is shut.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Planar Rift": {
+            "name": "Planar Rift",
+            "hazarddisable": "<p>@Check[type:thievery|dc:33|name:Assemble a Rift Seal|traits:action:disable-a-device] (master) to assemble a rift seal using objects strongly grounded to your plane, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 31) to counteract the rift</p>",
+            "hazarddescription": "<p>A rift attempts to draw creatures into another plane (the GM chooses the specific plane).</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Plummeting Doom": {
+            "name": "Plummeting Doom",
+            "hazarddisable": "<p>@Check[type:athletics|dc:40|name:Forcefully Push Spirits Back] (受训) to push back so forcefully that the spirits fear being thrown off the cliff, or @Check[type:religion|dc:40|name:Seal the Spirits] (专家) to temporarily seal the spirits away</p>",
+            "hazarddescription": "<p>Four vengeful spirits grab interlopers and toss them off the edge of a nearby 120-foot-tall cliff.</p>",
+            "hazardreset": "<p>1 hour</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(master) to hear the echoes of a faraway object crashing into the ground</p>"
+        },
+        "Poisoned Dart Gallery": {
+            "name": "Poisoned Dart Gallery",
+            "hazarddisable": "<p>@Check[type:thievery|dc:21|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (专家) on the control panel deactivates the trap.</p>",
+            "hazarddescription": "<p>Countless holes to launch poison darts from line a long hallway with a hidden control panel on the far end.</p>",
+            "hazardreset": "<p>The trap deactivates and resets after 1 minute.</p>",
+            "hazardroutine": "<p>(1 action) The trap launches one dart against every creature in the gallery as 1 action. Because it launches darts continuously, the trap can also use the Continuous Barrage free action (see below) to launch darts at each creature during that creature's turn.</p>",
+            "stealthdetails": "<p>(专家) or @Check[type:perception|dc:31|traits:action:seek] (master) to notice the control panel</p>"
+        },
+        "Poisoned Lock": {
+            "name": "Poisoned Lock",
+            "hazarddisable": "<p>@Check[type:thievery|dc:17|name:Disarm Lock Trap|traits:mechanical,trap] (受训) on the spring mechanism</p>",
+            "hazarddescription": "<p>A spring-loaded, poisoned spine is hidden near the keyhole of a lock. Disabling or breaking the trap does not disable or break the lock.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Polymorph Trap": {
+            "name": "Polymorph Trap",
+            "hazarddisable": "<p>@Check[type:thievery|dc:32|name:Drain Glyph's Power|traits:action:disable-a-device] (master) to drain the glyph's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 30) to counteract the glyph</p>",
+            "hazarddescription": "<p>A Druidic glyph tries to transforms a trespasser into an animal.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Quicksand": {
+            "name": "Quicksand",
+            "hazarddisable": "<p>@Check[type:survival|dc:18|name:Safely Disturb the Surface] (受训) to disturb the surface</p>",
+            "hazarddescription": "<p>A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.</p>",
+            "hazardreset": "<p>The hazard still submerges anyone who walks in, but the surface doesn't become hidden again until it settles over the course of 24 hours.</p>",
+            "hazardroutine": "<p>(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation.</p>\n<p>A creature in the quicksand can attempt a @Check[type:athletics|dc:20|traits:action:swim] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step.</p>\n<p>A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:20|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
+            "stealthdetails": "<p>(受训) (or -10 and no minimum proficiency if the surface is disturbed)</p>"
+        },
+        "Scythe Blades": {
+            "name": "Scythe Blades",
+            "hazarddisable": "<p>@Check[type:thievery|dc:21|name:Disable a Blade] (受训) to disable each blade</p>",
+            "hazarddescription": "<p>Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.</p>",
+            "hazardreset": "<p>The trap resets after 15 minutes.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Second Chance": {
+            "name": "Second Chance",
+            "hazarddisable": "<p>@Check[type:thievery|dc:46|name:Dismantle Spell|traits:action:disable-a-device] (legendary) to take apart the spell one tiny piece at a time, with eyes closed, while recalling every vivid life memory in order, starting from the earliest memory</p>",
+            "hazarddescription": "<p>Powerful warding magic tied to an object or location tries to regress the ages of a creature and its allies.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(legendary)</p>"
+        },
+        "Shrieker": {
+            "name": "Shrieker",
+            "hazarddisable": "<p>@Check[type:survival|dc:18|name:Disable Air Sac|traits:environmental,fungus] to carefully approach and cut the mushroom's air sac without triggering the shrieker</p>",
+            "hazarddescription": "<p>This human-sized purple mushroom emits a piercing shriek when disturbed.</p>",
+            "hazardreset": "<p>1 minute</p>",
+            "hazardroutine": "",
+            "stealthdetails": ""
+        },
+        "Slamming Door": {
+            "name": "Slamming Door",
+            "hazarddisable": "<p>@Check[type:thievery|dc:15|name:Disable Floor Panel] (受训) on the floor panels before the slab falls</p>",
+            "hazarddescription": "<p>Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway's ceiling.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Snowfall": {
+            "name": "Snowfall",
+            "hazarddisable": "<p>@Check[type:survival|dc:19|name:Safely Dislodge the Snow] (受训) to safely dislodge the snow, or deal any amount of fire damage to destroy the hazard without triggering it</p>",
+            "hazarddescription": "<p>Loose snow and ice have built up on a high surface, such as a tree branch or a rooftop. Its grip on the surface is tenuous, and it is likely to fall if the surface moves.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Spear Launcher": {
+            "name": "Spear Launcher",
+            "hazarddisable": "<p>@Check[type:thievery|dc:18|name:Disable Thievery] (受训) on the floor tile or wall socket</p>",
+            "hazarddescription": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Spectral Reflection": {
+            "name": "Spectral Reflection",
+            "hazarddisable": "<p>@Check[type:religion|dc:23|name:Exorcise Spirit] (受训) to exorcise the spirit, or @Check[type:thievery|dc:23|name:Cover the Mirror|traits:action:disable-a-device] (受训) to quickly cover the mirror</p>",
+            "hazarddescription": "<p>The reflection in the mirror subtly twists and distorts, its expression taking on an unnerving sneer of malice.</p>",
+            "hazardreset": "<p>The haunt re-forms after 1 minute, manifesting in any mirror within its infused area (see Special below).</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Spinning Blade Pillar": {
+            "name": "Spinning Blade Pillar",
+            "hazarddisable": "<p>@Check[type:thievery|dc:21|name:Disable Pillar|traits:action:disable-a-device] (受训) twice on the pillar, or @Check[type:thievery|dc:19|name:Disable Trap (Control Panel)|traits:action:disable-a-device] (专家) once on the control panel deactivates the whole trap. Breaking the control panel prevents anyone from disabling the trap using the control panel and prevents the trap from deactivating automatically.</p>",
+            "hazarddescription": "<p>A metal pole with three razor-sharp spinning blades is hidden in the floor, connected to trigger plates in up to eight floor tiles and a hidden control panel within 30 feet.</p>",
+            "hazardreset": "<p>The trap deactivates and resets after 1 minute.</p>",
+            "hazardroutine": "<p>(3 actions) The trap uses its first action to make a spinning blade Strike against each adjacent creature, its second action to move straight in a random direction (roll 1d4 to determine the direction), and its third action to make a spinning blade Strike against each adjacent creature. This trap doesn't take a multiple attack penalty.</p>",
+            "stealthdetails": "<p>(受训) or @Check[type:perception|dc:26|traits:action:seek] (专家) to notice the control panel</p>"
+        },
+        "Sportlebore": {
+            "name": "Sportlebore",
+            "hazarddisable": "<p>A creature that notices the sportlebore can remove it from the food it is hidden within automatically as an Interact action.</p>",
+            "hazarddescription": "<p>A sportlebore hides amid the victuals on a plate of food or within a pack of trail rations.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Steam Vents": {
+            "name": "Steam Vents",
+            "hazarddisable": "<p>@Check[type:thievery|dc:22|name:Disconnect the trip wire|traits:mechanical,trap,hazard]{Thievery (受训)} to disconnect the trip wire or a @Check[type:crafting|dc:24|name:Reduce the pressure|traits:mechanical,trap,hazard]{Crafting (专家)} to carefully reduce the pressure and prevent the blast</p>",
+            "hazarddescription": "<p>Large pressurized pipes connected to a trip wire are rigged to release a blast of steam on trespassers.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Summoning Rune": {
+            "name": "Summoning Rune",
+            "hazarddisable": "<p>@Check[type:acrobatics|dc:15|name:Approach Rune] to approach without triggering the trap followed by @Check[type:thievery|dc:17|name:Erase Rune|traits:action:disable-a-device] (受训) to erase the rune, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st level; counteract DC 15) to counteract the rune</p>",
+            "hazarddescription": "<p>A cloud of invisible magical sensors in a 10-foot radius surrounds an invisible wall or floor rune the size of the creature to be summoned.</p>",
+            "hazardreset": "<p>The trap resets each day at dawn.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Telekinetic Swarm Trap": {
+            "name": "Telekinetic Swarm Trap",
+            "hazarddisable": "<p>@Check[type:thievery|dc:27|name:Take Apart Cloud|traits:action:disable-a-device] (专家) to take apart a telekinetic cloud, @Check[type:thievery|dc:32|name:Disable Telekinetic Decoration|traits:action:disable-a-device] (master) to disable each telekinetic decoration, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 30) to counteract each telekinetic decoration</p>",
+            "hazarddescription": "<p>Three innocuous decorations instilled with telekinetic magic pull objects and pieces of the room itself into spinning clouds of debris that attack all creatures in the room.</p>",
+            "hazardreset": "<p>The trap deactivates and resets 10 minutes after it has no target creatures (because the creatures either moved too far away or died).</p>",
+            "hazardroutine": "<p>(9 actions) Each decoration uses 3 of the trap's actions each turn, and the trap loses 3 actions each turn for every decoration that is disabled. A decoration uses its first action to move its cloud of objects up to 200 feet, its second action to make the objects Strike, and its third action to add more objects to the cloud, increasing its damage by 1d12 (to a maximum of 4d12+10). If a decoration's cloud is already at maximum damage, it does nothing with its third action.</p>\n<p>If a decoration's cloud has been destroyed, the decoration instead spends its first action to create a new cloud of objects inside the room (using the starting damage value) and then its second and third actions to have the cloud move and attack.</p>",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Titanic Flytrap": {
+            "name": "Titanic Flytrap",
+            "hazarddisable": "<p>@Check[type:survival|dc:22|name:Mislead the Flytrap's Senses] (受训) to mislead the flytrap's sense of weight and pressure</p>",
+            "hazarddescription": "<p>On the surface, a titanic flytrap appears to be a patch of the more common flytrap plant, but beneath murky waters it hides a far larger set of jaws, reaching 10 feet across and reinforced with woody branches and lined with paralytic hairs.</p>",
+            "hazardreset": "<p>1 hour (or longer, after a large meal)</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Treacherous Scree": {
+            "name": "Treacherous Scree",
+            "hazarddisable": "<p>@Check[type:survival|dc:20|name:Navigate Safe Path] (受训) to navigate a safe path</p>",
+            "hazarddescription": "<p>The footing on this sloped ground appears to be stable at first glance, but the tiny rocks that cover it are loosely packed and prone to slipping.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        },
+        "Vorpal Executioner": {
+            "name": "Vorpal Executioner",
+            "hazarddisable": "<p>@Check[type:thievery|dc:41|name:Jame Saw Blade|traits:action:disable-a-device] (专家) at four different junctions to jam all the saw blade's possible paths, preventing it from traveling through the room</p>",
+            "hazarddescription": "<p>A wickedly sharp saw blade descends and travels along grooves in a complex path throughout the room, attempting to decapitate everyone within.</p>",
+            "hazardreset": "<p>The trap resets over the course of the round and can be triggered again 1 round later.</p>",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(专家)</p>"
+        },
+        "Web Lurker Deadfall": {
+            "name": "伏网怪落石陷阱 Web Lurker Deadfall",
+            "hazarddisable": "<p>生存（受训）或贼活（专家）DC 20可调整触发陷阱的绳索。</p>",
+            "hazarddescription": "<p>一个拌足绳圈使得拦网松脱，导致一堆岩石落到10尺边长方格内的所有目标上。</p>",
+            "stealthdetails": "<p>DC 23</p>",
+            "items":{
+                "j3QvHDCU1gvOInG4":{
+                    "name": "落石陷阱 Deadfall",
+                    "description": "<p><strong>触发</strong> 有生物进入拌足绳圈所在的方格。</p>\n<hr />\n<p><strong>效果</strong> 陷阱所在10尺边长方格内的所有生物受到[[/r {2d6}[bludgeoning]]]{2d6钝击伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。 </p>"
+                }
+            }
+        },
+        "Web Lurker Noose": {
+            "name": "伏网怪套索 Web Lurker Noose",
+            "hazarddisable": "<p>@Check[type:survival|dc:18|name:Rearrange the Webbing|traits:mechanical,trap](受训)或@Check[type:thievery|dc:18|name:Rearrange the Webbing|traits:mechanical,trap](专家)可调整触发陷阱的绳索。</p>",
+            "hazarddescription": "<p>谨慎摆放在喉咙高度的绳索会在生物走入陷阱时将其套住。</p>",
+            "items":{
+                "LZTjCUaLv54zwB8W":{
+                    "name": "蛛网套索 Web Noose",
+                    "description": "<p><strong>触发</strong> 有生物走入拌足绳圈所在的方格。</p>\n<hr />\n<p><strong>效果</strong> 伏网怪套索作出套索打击对抗触发陷阱的生物。</p>"
+                },
+                "VNaaW87S24zzxXZh":{
+                    "name": "套索 Noose",
+                    "description": "<p>命中时造成3d6钝击伤害，目标被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}并拽离地面（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC22）。</p>\n<p>只要目标被套索捕捉着，目标就会在其每个回合结束时承受[[/r {1d6}[bludgeoning]]]{1d6钝击伤害}。</p>"
+                }
+            }
+        },
+        "Wheel Of Misery": {
+            "name": "Wheel Of Misery",
+            "hazarddisable": "<p>@Check[type:thievery|dc:26|name:Stop Wheel from Spinning|traits:action:disable-a-device] (专家) on the wheel to stop it from spinning, @Check[type:thievery|dc:22|name:Erase Rune|traits:action:disable-a-device] (master) to erase each rune, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 22) to counteract each rune</p>",
+            "hazarddescription": "<p>An ornate wheel set into a wall-divided into six segments with colored runes on each-is controlled by a magical sensor that detects any creature within 100 feet in front of it.</p>",
+            "hazardreset": "<p>The trap deactivates and resets if 1 minute passes without any creature moving within range of its sensor.</p>",
+            "hazardroutine": "<p>(2 actions) On its initiative, the trap uses its first action to spin, then stops. Roll 1d6 to determine which segment is topmost when the wheel stops spinning. The wheel uses its second action to replicate the spell listed for that segment (3rd level, DC 24, spell attack roll +14). This spell's target is centered on or otherwise includes the nearest creature in the area. This increases the spell's range to 100 feet if necessary. Any spell cast by this trap is arcane.</p>\n<p><strong>1</strong><em>@UUID[Compendium.pf2e.spells-srd.o4lRVTwSxnOOn5vl]{Sleep}</em></p>\n<p><strong>2</strong><em>@UUID[Compendium.pf2e.spells-srd.DCQHaLrYXMI37dvW]{Paralyze}</em></p>\n<p><strong>3</strong><em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{Lightning Bolt}</em> (100-foot line)</p>\n<p><strong>4</strong><em>@UUID[Compendium.pf2e.spells-srd.VosLNn2M8S7JH67D]{Blindness}</em></p>\n<p><strong>5</strong><em>@UUID[Compendium.pf2e.spells-srd.f8hRqLJaxBVhF1u0]{Acid Arrow}</em></i></p>\n<p><strong>6</strong><em>@UUID[Compendium.pf2e.spells-srd.J7Y7tl0bbdz7TcCc]{Ray of Enfeeblement}</em></p>",
+            "stealthdetails": "<p>(专家) to detect the magical sensor; noticing the wheel has a DC of 0</p>"
+        },
+        "Yellow Mold": {
+            "name": "Yellow Mold",
+            "hazarddisable": "<p>@Check[type:survival|dc:26|name:Remove the Mold] (专家) to remove the mold without triggering the spores</p>",
+            "hazarddescription": "<p>Poisonous mold spores assault nearby creatures.</p>",
+            "hazardreset": "",
+            "hazardroutine": "",
+            "stealthdetails": "<p>(受训)</p>"
+        }
+    }
 }
