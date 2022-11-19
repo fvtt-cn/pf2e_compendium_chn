@@ -18189,14 +18189,14 @@
         },
         "Rust Monster": {
             "name": "锈蚀怪 Rust Monster",
-            "senses": "黑暗视觉, metal scent 30尺",
-            "publicNotes": "<p>Found in lost dungeons, deep caves, and abandoned mines, rust monsters are a bane to any adventurers who rely on armor, weapons, or other metal items. These strange-looking creatures grow to about 5 feet long, with four insectile legs and a long tail ending in a four-pronged appendage resembling a tiny windmill. However, it is the rust monster's feathery antennae that strike fear in the hearts of battle-hardened warriors, for a single touch from even just one antenna can reduce an adventurer's most valuable tools to a useless pile of rust.</p>\n<p>Rust monsters aren't inherently aggressive creatures, but they're voracious oxidivores, meaning they consume the rust created by their antennae. The creatures savagely attack anything that gets between them and a possible meal, and they relentlessly pursue any source of metal. A rust monster can be distracted by a single metal-rich item, but they are often encountered in groups of three or more, sharply raising the cost of escape.</p>\n<p>Rust monsters are a terrible scourge in mining communities. If a group of rust monsters discovers rich veins of ore, they can multiply quickly. By weakening tunnels, attacking workers, and consuming the source of the miners' livelihood, these aberrations have created many mountainside ghost towns.</p>",
+            "senses": "黑暗视觉, 嗅探金属30尺",
+            "publicNotes": "<p>你可以在失落的地城、深邃的洞穴和废弃矿井里找到锈蚀怪，他们对于任何依赖护甲、武器或其他金属制品的冒险者来说都是灾难般的存在。这些样貌奇特的生物能长到5尺长，生有四条昆虫一般的四肢和长长的尾巴，尾部末端伸出四个分叉的附肢宛如风车一般。然而，真正让久经阵战的战士们恐惧的是修饰怪羽毛般的触须，哪怕只是被触须轻触一下，就能把冒险者最有价值的工具化为一堆无用的锈铁。</p>\n<p>锈蚀怪并非天性好斗的生物，但他们却是贪食的杂食性生物，这意味着他们会以触须所创造的锈蚀金属为食。这些生物会野蛮地攻击任何挡在他们与可能变为一顿美餐的金属之间的敌人，并且会无情地追逐着任何金属来源。锈蚀怪可能会因富含金属元素的物品而分心，但他们通常会结成三只以上的团体来行动，使得逃离他们所需要的成本急剧提高。</p>\n<p>锈蚀怪对矿业社区来说是一场可怕的灾难。如果一群锈蚀怪发现了丰富的铁矿，这些生物便会迅速增殖。他们破坏隧道，攻击工人，并将维系矿工生计的资源吞噬殆尽，这些异怪最终创造了无数建在山腰的城镇废墟。</p>",
             "items":{
                 "lmmVhyJxHrIHi4Je":{
-                    "name": "Antenna"
+                    "name": "触须 Antenna"
                 },
                 "X4qGxyWYxGqKvBsG":{
-                    "name": "Mandibles"
+                    "name": "颚咬 Mandibles"
                 },
                 "KD8sQ1IJ6El9ImGR":{
                     "name": "甩尾 Tail"
@@ -18206,20 +18206,20 @@
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
                 },
                 "fLzaGzA3jMdzslmt":{
-                    "name": "Metal Scent 30尺",
-                    "description": "<p>A rust monster can smell metal as a precise sense.</p>"
+                    "name": "嗅探金属30尺",
+                    "description": "<p>锈蚀怪能能闻到金属，并将此作为精确感官。</p>"
                 },
                 "RYEcc50Tn0g5GE6m":{
-                    "name": "Tail Trip",
-                    "description": "<p><strong>触发</strong> A creature carrying a metal item attempts to move out of a square within reach of the rust monster's tail.</p>\n<hr />\n<p><strong>效果</strong> The rust monster makes a tail Strike against the triggering creature.</p>"
+                    "name": "尾扫摔拌 Tail Trip",
+                    "description": "<p><strong>触发</strong> 携带金属物品的生物尝试从锈蚀怪的尾扫的触及范围内的方格中移动出去</p>\n<hr />\n<p><strong>效果</strong> 锈蚀怪作出尾扫打击对抗触发生物。</p>"
                 },
                 "3EkDCh4CkGrgHhlf":{
-                    "name": "Antenna Disarm",
-                    "description": "<p>The rust monster attempts to @Compendium[pf2e.action-macros.ooiO59Ch2QaebOmc]{Disarm} a metal item a creature is holding using its antenna (with the same modifier as an antenna Strike).</p>\n<p>On a success, the item is subject to the rust monster's rust ability in addition to the effects of the Disarm, and if the check to Disarm is a critical success, the rust monster drops the item on the ground in its own space.</p>"
+                    "name": "触须缴械 Antenna Disarm",
+                    "description": "<p>锈蚀怪尝试使用触须@Compendium[pf2e.action-macros.ooiO59Ch2QaebOmc]{卸武 Disarm}1件由其他生物正在持用的金属物品（这与他的触须打击具有相同的调整值）。</p>\n<p>若成功，那么除了卸武的效果以外，该物品会成为锈蚀怪的锈蚀能力的目标，而且当缴械掷出大成功时，锈蚀怪会将该物品丢到自身所占据的空间中。</p>"
                 },
                 "aeZh7jl8AKKWs8Qv":{
-                    "name": "Rust",
-                    "description": "<p>A rust monster's antenna causes metal to rapidly rust and corrode.</p>\n<p>If it succeeds at an antenna Strike or Disarm attempt with its antenna, the rust monster deals [[/r {2d6}]]{2d6伤害} (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness.</p>\n<p>If the rust monster hits an unattended metal item, the item takes this damage automatically.</p>\n<p>If a creature uses the @Compendium[pf2e.feats-srd.jM72TjJ965jocBV8]{Shield Block} reaction with a metal shield against an antenna attack, the shield is automatically broken, but no other item is rusted on that attack.</p>"
+                    "name": "锈蚀 Rust",
+                    "description": "<p>锈蚀怪的触须导致金属快速地被腐蚀和生锈。</p>\n<p>若他成功使用触须打击或者用触须尝试缴械，那么锈蚀怪会对目标穿戴或持用的1件金属物品造成[[/r {2d6}]]{2d6伤害}（重击翻倍），忽略其硬度。</p>\n<p>若锈蚀怪命中无主金属物品，该物品会自动承受此伤害。</p>\n<p>若有生物使用@Compendium[pf2e.feats-srd.jM72TjJ965jocBV8]{盾牌格挡 Shield Block}反应动作对抗触须攻击，且格挡用的盾牌是金属盾牌的话，该盾牌会自动破损，但该次攻击不会导致其他物品被锈蚀。</p>"
                 },
                 "7pYPgvPhNqIQ9RwA":{
                     "name": "精通击倒 Improved Knockdown",
@@ -18230,7 +18230,7 @@
         "Salamander": {
             "name": "火蜥蜴 Salamander",
             "senses": "黑暗视觉",
-            "publicNotes": "<p>Salamanders have serpentine lower torsos, but humanoid upper bodies with toothy reptilian snouts. Their affinity for cruelty and violence puts them in close alliance with the demons of the Abyss.</p>\n<hr />\n<p>火元素是灼热的火元素位面的破坏性的具现。</p>",
+            "publicNotes": "<p>火蜥蜴下半身是蛇形的躯干，但上半身如同人类，有爬行动物的牙齿和鼻子。它们的残忍和暴力让它们跟容易和来自深渊位面的恶魔组成紧密的同盟。</p>\n<hr />\n<p>火元素是灼热的火元素位面的破坏性的具现。</p>",
             "items":{
                 "oA3OqSUqWQPylGlB":{
                     "name": "刺叉 Ranseur",
@@ -18248,19 +18248,19 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
                 "osaWxy5RrqJdKuni":{
-                    "name": "Armor of Flames",
-                    "description": "<p>The salamander stokes its internal flames. Until the start of its next turn, it gains a +2 circumstance bonus to AC, and when an adjacent creature touches it or hits it with a physical attack, that creature takes [[/r {2d6}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害} unless it succeeds at a @Check[type:reflex|dc:25|traits:damaging-effect] save.</p>"
+                    "name": "烈焰护甲 Armor of Flames",
+                    "description": "<p>火蜥蜴燃烧体内的火焰。直到它的下一轮开始，它的AC获得+2 环境加值，当一个相邻的生物触碰它或以物理攻击命中它时，如果该生物没有通过@Check[type:reflex|dc:25|traits:damaging-effect]豁免，将受到[[/r {2d6}[persistent,fire]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
                 },
                 "5P26T61QIn85Jbfk":{
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r {1d8+4}[bludgeoning] + {1d6}[fire]]]{1d8+4 bludgeoning plus 1d6 fire}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>[[/r {1d8+4}[bludgeoning] + {1d6}[fire]]]{1d8+4钝击+1d6火焰}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 }
             }
         },
         "Satyr": {
             "name": "萨堤尔 Satyr",
             "senses": "昏暗视觉",
-            "publicNotes": "<p>To a satyr, life is a party and everyone is invited. Notorious for their hedonism, these fey believe there's no greater beauty than can be found in song, drink, indulgent meals, and carnal pleasures. Satyrs use their enchanting songs and natural charm to encourage all manner of people to follow their true desires and free themselves from society's rules. This usually involves enticing mortals to join raucous parties or engage in trysts in moonlit glades. If a potential companion rejects a satyr's advances, however, the satyr has little interest in continuing a conversation and goes off to find more amenable revelers.</p>\n<p>The lifestyle of a satyr leaves no room for ongoing affairs or long-term friends. Once his party is over or his lust is satiated, the satyr disappears back into the forest. The offspring satyrs leave behind are satyrs themselves, and usually end up being taken from their cradles by other fey rather than being left in mortals' care. Satyrs are always male.</p>\n<p>The untouched beauty of the forest is sacred and precious to a satyr. Brutish intruders who clear-cut trees or massacre animals without eating them risk drawing a satyr's ire. A satyr so provoked uses his spells to undermine foes and attempts to dispatch them either with brutal ambushes or by leading a rush of forest animals to attack.</p>\n<p>Other fey, particularly good fey, look upon satyrs as loutish, embarrassing cousins. They're rarely hostile toward satyrs, but most find them insufferable and advise any mortals they like to steer clear of satyrs' glades.</p>",
+            "publicNotes": "<p>对于一个萨堤尔而言，生活就是一场邀请了所有人的派对。他们的纵欲寻欢可是相当的臭名昭著，这些精类相信这世上没有能够比歌曲、美酒、胡吃海塞和淫糜之乐更加美好的事物了。萨堤尔利用他们迷人的歌曲和天生的魅力来鼓励各式各样的人们去追随他们真正的欲望，从社会规则的枷锁中解放自己。这通常包括引诱凡人参加喧闹的聚会或是在月光下的林中幽会。然而，如果一个潜在的伴侣拒绝了萨堤尔的求欢，他便不再有兴趣继续谈话，转而去寻找更为顺从的欢宴者。</p>\n<p>萨堤尔的生活方式不会给持续的风流韵事或是长期的朋友关系留下任何空间。一旦他的宴会结束、或是他的欲望得到了满足，萨堤尔就会返回并消失在森林之中。萨堤尔留下的子嗣也都是萨堤尔，通常最后都会被其他的精类从摇篮中带走，而不是留给凡人来照料。萨堤尔总是男性。</p>\n<p>森林的原始之美对于萨堤尔而言是神圣而珍贵的。砍伐树木、屠戮动物却又不食用它们的野蛮入侵者可能会引发萨堤尔的愤怒。一名被激怒的萨堤尔会使用他的法术来削弱敌人，并且试图通过凶残的伏击或是引领一群森林动物的攻击来消灭他们。</p>\n<p>其他精类，尤其是善良的精类，将萨堤尔看做是粗野的、令人尴尬的表亲。他们很少会对萨堤尔怀有敌意，但是他们的大多数都对其感到难以忍受，并且建议凡人避开萨堤尔的林中空地。</p>",
             "items":{
                 "GA9tSWJmy7KFgUjB":{
                     "name": "原能内在法术 Primal Innate Spells"
@@ -18274,10 +18274,10 @@
                     "description": "<p>你的鼓舞激励盟友完成任务。这视为进行了完善的准备援助盟友进行你所选定的一个技能检定，无视环境因素。当你之后使用援助动作时，你可以投掷表演检定而非通常的技能检定，如果你投出失败，你会反而获得成功。如果你在表演中为传奇等级，你自动获得大成功。</p>\n<p>GM可以规定若你的表演会干涉队友的技能检定，则无法使用这一能力援助队友（比如在安静情况下使用隐匿或者维持易容）。</p>"
                 },
                 "AFXLJNAW0dhc0PkH":{
-                    "name": "Wineskin"
+                    "name": "酒囊 Wineskin"
                 },
                 "uRp6lGDTd0IPfdWI":{
-                    "name": "Panpipes"
+                    "name": "排箫 Panpipes"
                 },
                 "jInvivt7qyjg6Q4R":{
                     "name": "匕首 Dagger",
@@ -18296,35 +18296,35 @@
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
                 },
                 "h4qPfDnAjrfUEFX6":{
-                    "name": "Sylvan Wine",
-                    "description": "<p>A satyr's wineskin magically enchants any alcohol inside. With an Interact action, a living creature can imbibe the alcohol and gain a +1 item bonus to Will saves and a +3 item bonus to Will saves against fear effects for the following hour. When the wineskin is removed from a satyr's person, the magic remains only until the wine spoils. The wineskin holds up to eight drafts of wine.</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.QDs8t1U1IepzYlyi]{效果: Sylvan Wine}</p>"
+                    "name": "萨提尔珍酿 Sylvan Wine",
+                    "description": "<p>萨提尔的酒囊能够对何装入其中的酒注入魔力。通过一个交互动作，一名活物可以喝下酒，并且在意志豁免上获得+1物品加值，在对抗恐惧的意志豁免上获得+3物品加值，持续一个小时。当酒囊被从萨堤尔身上取下后，该魔法依旧得以保留，直至酒变质为止。这个酒囊里可以装进八杯酒。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.QDs8t1U1IepzYlyi]{效果: 萨提尔珍酿}</p>"
                 },
                 "hbBhekpAkC55ljY1":{
-                    "name": "Fleet Performer",
-                    "description": "<p>When the satyr Plays the Pipes to cast a spell, he can Step or Stride as part of the activity.</p>"
+                    "name": "疾驰乐师 Fleet Performer",
+                    "description": "<p>当萨堤尔使用吹奏管笛来施放法术时，他可以将快步或行进作为该动作的一部分。</p>"
                 },
                 "vius8NahqzVZYRSE":{
-                    "name": "Play the Pipes",
-                    "description": "<p><strong>需求</strong> The satyr is holding a musical instrument.</p>\n<hr />\n<p><strong>效果</strong> The satyr plays a melody on his instrument to cast <em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>, <em>@Compendium[pf2e.spells-srd.4koZzrnMXhhosn0D]{Fear}</em>, <em>@Compendium[pf2e.spells-srd.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>, or <em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{暗示术 Suggestion}</em> without expending the spell slot and using his music in place of providing the spell's component actions. The spell gains the auditory trait and targets all creatures in a @Template[type:emanation|distance:60] instead of its usual targets. A creature that succeeds at its Will save against any spell is then temporarily immune from spells played from that satyr's pipes for 1 minute. Satyrs are immune to this music.</p>"
+                    "name": "吹奏管笛 Play the Pipes",
+                    "description": "<p><strong>需求</strong> 萨提尔正持握着一件乐器。</p>\n<hr />\n<p><strong>效果</strong> 萨提尔使用乐器演奏出一段旋律来施放<em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>、<em>@Compendium[pf2e.spells-srd.4koZzrnMXhhosn0D]{恐惧术 Fear}</em>、<em>@Compendium[pf2e.spells-srd.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>、或<em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{暗示术 Suggestion}</em>，而无需消耗法术位，并且使用他的音乐来取代提供法术成分的动作。该法术获得听觉特征，并且以@Template[type:emanation|distance:60]范围内所有的生物为目标取代其通常的目标。在此次对任意法术的意志豁免中成功的生物在1分钟内暂时免疫萨提尔通过吹奏管笛所施放的法术。萨提尔对这种音乐免疫。</p>"
                 }
             }
         },
         "Scorpion Swarm": {
             "name": "蝎群 Scorpion Swarm",
             "senses": "黑暗视觉",
-            "publicNotes": "<p>While a single scorpion is itself a menace, swarms of these vermin can be outright devastating. These skittering droves of death swiftly bring down their prey before devouring everything short of the victim's bones.</p>\n<hr />\n<p>蝎子是生活在沙漠、森林、热带稀树大草原和荒地的包复着甲壳的虫害，它们是致命的蛛形纲动物，有着强大的钳子和令人痛苦的尾刺。蝎子在几乎所有的气候带中出没，它们以耐心的潜行和原始的蛮力捕食猎物。大多数蝎子生活在地下洞穴里，要么作为独行猎手，要么组成蝎群。这些蛛形纲动物是如此可怕和危险，以至于在许多文化中，它们被视为神或死亡和防卫的二元论象征。</p>",
+            "publicNotes": "<p>虽然普通蝎子本身就是具有危险，但成群的这种害虫可能会造成彻底的毁灭。这些横扫而过的死亡动物会迅速将猎物击倒，然后吃得只剩骨头。</p>\n<hr />\n<p>蝎子是生活在沙漠、森林、热带稀树大草原和荒地的包复着甲壳的虫害，它们是致命的蛛形纲动物，有着强大的钳子和令人痛苦的尾刺。蝎子在几乎所有的气候带中出没，它们以耐心的潜行和原始的蛮力捕食猎物。大多数蝎子生活在地下洞穴里，要么作为独行猎手，要么组成蝎群。这些蛛形纲动物是如此可怕和危险，以至于在许多文化中，它们被视为神或死亡和防卫的二元论象征。</p>",
             "items":{
                 "PrtfnlNRqEPNsEDh":{
                     "name": "黑暗视觉 Darkvision",
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
                 },
                 "APm9xzjMvRMHIYon":{
-                    "name": "Scorpion Venom",
+                    "name": "蝎毒 Scorpion Venom",
                     "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:18]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>"
                 },
                 "tZ39PkV2oWLySkOs":{
-                    "name": "Swarming Stings",
-                    "description": "<p>Each enemy in the swarm's space takes [[/r {2d8}[piercing]]]{2d8穿刺伤害} (@Check[type:reflex|dc:21|basic:true]豁免) and is exposed to scorpion venom.</p>"
+                    "name": "虫群叮刺 Swarming Stings",
+                    "description": "<p>每个处于蝎群占据方格内的敌人受到[[/r {2d8}[piercing]]]{2d8穿刺伤害}（@Check[type:reflex|dc:21|basic:true]豁免）。检定失败的生物还会中蝎毒。</p>"
                 }
             }
         },
@@ -18333,7 +18333,7 @@
             "allSaves": "对抗魔法全豁免获得+1状态加值",
             "senses": "黑暗视觉",
             "languages": "巧言术",
-            "publicNotes": "<p>Desert-dwelling people consider the sight of a simurgh a herald to a lifetime's worth of luck, and those who are unfamiliar with the majestic beast might mistake it for the avatar of a deity. Beautiful, graceful, and truly gargantuan, the simurgh resembles nothing so much as a massive multicolored bird with the head of an equally enormous and regal lupine. Simurghs act as intermediaries in world-threatening conflicts, serving as agents of good deities or vigilantes who spread their own brand of justice, typically by obliterating or banishing evil extraplanar beings.</p>\n<p>Simurghs can live for thousands of years, and because these ancient beings are so rare many doubt their existence. But they are very real, as those who have been aided by a simurgh can enthusiastically attest. A simurgh does not show itself often, but when it does, it is typically in response to a truly grave threat, such as the incursion of an undead army or the rampage of some truly epic monster. Simurghs are nothing if not paragons of righteousness, and goodly heroes can hardly find a better ally in their quest to vanquish evil than a simurgh.</p>",
+            "publicNotes": "<p>沙漠居民认为看见西牟鸟预示着一生的好运，对于那些不熟悉这些威严的魔兽的人来说可能会误认为是神的化身。西牟鸟美丽、优雅且体型巨大，有着五彩斑斓的巨型鸟身和同样巨大的、威严的狼头。西牟鸟在威胁世界的冲突中扮演中间人的角色，作为善良神祇代言人或自发传播它们正义价值观的卫道者，消灭或放逐那些跨位面的邪恶存在。</p>\n<p>西牟鸟能活上千年，这些古老的生物使如此罕见，以至于很多人怀疑它们是否真的存在。但它们其实是真实存在的，那些得到过西牟鸟帮助的人可以满腔热情地证明这一点。西牟鸟并不经常出现，但当它出现时，常常意味着镇子严重的威胁，例如不死军团入侵或传奇怪物的暴走。西牟鸟是正义的典范，善良的英雄们在征服邪恶的过程中很难找到比西牟鸟更好的盟友。</p>",
             "items":{
                 "G4HjijhXg27QNTqn":{
                     "name": "神术内在法术 Divine Innate Spells"
@@ -18364,7 +18364,7 @@
                     "name": "甩尾 Tail"
                 },
                 "Xem818Dy2SdT8fjI":{
-                    "name": "Glaring Ray"
+                    "name": "灼目射线 Glaring Ray"
                 },
                 "OvbTCZLdp8qg7KX2":{
                     "name": "黑暗视觉 Darkvision",
@@ -18375,24 +18375,24 @@
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
                 "QqqqheeizksJ9NkJ":{
-                    "name": "Aura of Peace",
-                    "description": "<p>@Template[type:emanation|distance:50]{50尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>A creature that starts its turn in the aura must attempt a @Check[type:will|dc:37] save or be affected by <em>@Compendium[pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>. Creatures that successfully save are unaffected, but must attempt another save each turn they start in the aura.</p>"
+                    "name": "平静灵光 Aura of Peace",
+                    "description": "<p>@Template[type:emanation|distance:50]{50尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>灵光范围内的生物每回合开始时必须尝试@Check[type:will|dc:37]检定，否则受到<em>@Compendium[pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>效果影响。豁免成功的生物不受影响，但是只要生物在灵光范围内，每回合开始时都必须进行一次豁免。</p>"
                 },
                 "EQs2G0f4rbGphFRv":{
-                    "name": "Banishing Swipe",
-                    "description": "<p>If a creature hit by the simurgh's tail Strike is not currently on its home plane, it must succeed at a @Check[type:will|dc:42] save or be affected by <em>@Compendium[pf2e.spells-srd.bay4AfSu2iIozNNW]{Banishment}</em>, except that if the creature critically succeeds its save the simurgh is not @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}.</p>"
+                    "name": "放逐挥击 Banishing Swipe",
+                    "description": "<p>如果一个生物被西牟鸟的尾击打击命中，且它不在自己的家乡位面，则它必须通过@Check[type:will|dc:42]检定视同被<em>@Compendium[pf2e.spells-srd.bay4AfSu2iIozNNW]{放逐术 Banishment}</em>影响，除非它意志豁免大成功，否则西牟鸟不会被@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}。</p>"
                 },
                 "lKC4So6E50bV5RRz":{
-                    "name": "Radiant Feathers",
-                    "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> The simurgh fans out its glimmering tail feathers and blasts its foes with a @Template[type:cone|distance:100] of radiant light. Aside from the size of the cone, this effect is identical to <em>@Compendium[pf2e.spells-srd.d6o52BnjViNz7Gub]{Prismatic Spray}</em> (DC 42).</p>"
+                    "name": "辐光尾羽 Radiant Feathers",
+                    "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 西牟鸟扇动它闪闪发光的尾羽，用@Template[type:cone|distance:100]辐光照射它的敌人。除了锥形范围的大小不同之外，其余效果等同<em>@Compendium[pf2e.spells-srd.d6o52BnjViNz7Gub]{虹光喷射 Prismatic Spray}</em>(DC 42)。</p>"
                 }
             }
         },
         "Sphinx": {
             "name": "斯芬克斯 Sphinx",
-            "senses": "黑暗视觉; detect magic, see invisibility",
-            "languages": "Comprehend Language",
-            "publicNotes": "<p>Sphinxes are mystical beings with the body of a lion, the wings of a great bird, and the upper torso and head of a human. They are often maligned in legends as nothing more than monsters, and though they are quick to anger and are capable of exacting deadly retribution for perceived slights, they are also very intelligent.</p>\n<p>Sphinxes are often associated with desert regions, but they can dwell in more moderate climates as well. They form small groups consisting of a single, extended family that hunts and works together to protect and teach their young. As they mature, sphinxes develop a wanderlust, a drive to gather hidden lore and solve the world's greatest riddles-the trait that is perhaps most often identified with their kind.</p>\n<p>While sometimes bound into service as guardians for powerful spellcasters, lone sphinxes may also be encountered on journeys of discovery and as purveyors of esoteric lore. If treated with the proper respect-and fed well-a sphinx can demonstrate a willingness to exchange information. Their favorite currency is, of course, riddles and secrets. One who can trade knowledge for knowledge has a much better chance of succeeding while bargaining with a sphinx. However, a sphinx's insatiable thirst for new riddles as well their extensive collection of secrets accumulated over hundreds of years of life-makes it difficult to offer them something they don't already know. Those who attempt to trade petty insight and stale riddles may invoke a sphinx's ire and will not live long enough to regret it.</p>",
+            "senses": "黑暗视觉; 侦测魔法, 识破隐形",
+            "languages": "通晓语言",
+            "publicNotes": "<p>斯芬克斯是一种神秘的生物，有狮子的身体，大鸟的翅膀，人类的上半身的头部。在传说中他们常被讹传成一般的怪物，虽然它们确实容易被激怒，并且能在受到侮辱后以致命的手段回敬之，但它们其实非常睿智。</p>\n<p>斯芬克斯常常与沙漠地区联系在一起，但是它们其实也生活在气候较温和的地区。它们会组成一个由数个大家庭组成的小群体，一起狩猎或工作，保护它们年轻的后代。当后代成熟的时候，斯芬克斯的流浪癖会驱使它们离开群体去收集隐秘的知识，并征服世界上最难的谜题——这成为了它们种族最为显著的一个特征。</p>\n<p>虽然斯芬克斯有时会成为强大施法者的守护者，但独行的斯芬克斯也会作为隐秘知识的提供者出现在冒险旅途中。如果斯芬克斯得到适当的尊重和良好的供奉，它会表现出可以交换信息的意愿。他们最喜欢的交易物当然是谜语和秘密。一个能用知识换取知识的人，在和斯芬克斯讨价还价时成功的概率要大得多。然而，斯芬克斯对新谜语的渴求，以及他们几百年以来积累的大量秘密，让冒险者们很难说出它不知道的东西。那些试图用狭隘的见解和过时的谜语来糊弄斯芬克斯的人，可能会招致斯芬克斯的愤怒，并且来不及后悔。</p>",
             "items":{
                 "pxfevBUBi49C9LID":{
                     "name": "异能内在法术 Occult Innate Spells"
@@ -18425,58 +18425,58 @@
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
                 },
                 "B9QrAlNM1MoP8sDk":{
-                    "name": "Bardic Lore",
-                    "description": "<p>Sphinxes are naturally curious, and their love of puzzles and mysteries leads them to gather information on a broad range of topics. Sphinxes have the @Compendium[pf2e.feats-srd.uVXEZblPRuCyPRua]{Bardic Lore} bard feat, allowing them to Recall Knowledge on any topic.</p>"
+                    "name": "逸闻知识 Bardic Lore",
+                    "description": "<p>斯芬克斯天生具有好奇心，它们对谜题和神秘事物的热爱使他们收集各种信息。斯芬克斯拥有吟游诗人的@Compendium[pf2e.feats-srd.uVXEZblPRuCyPRua]{逸闻知识 Bardic Lore}专长，这让它们能针对任何主题进行回忆知识。</p>"
                 },
                 "1uZuWVNr0woQanKG":{
-                    "name": "Claw Rake",
-                    "description": "<p>The sphinx rears back on their hind legs and makes two claw Strikes at the same target, using the same attack bonus as their highest melee attack. If both attacks deal damage, the target takes extra damage equal to one claw Strike.</p>"
+                    "name": "耙抓 Claw Rake",
+                    "description": "<p>斯芬克斯用两条后腿站立并对同一目标进行两次爪抓打击，使用同样的攻击检定，等同于斯芬克斯的最高近战加值。如果两次攻击都造成伤害，目标还会受到额外的一次爪抓打击伤害。</p>"
                 },
                 "XbyGgxrnfchvOdm3":{
-                    "name": "Pounce",
-                    "description": "<p>The sphinx Strides and makes a Strike at the end of that movement. If the sphinx began this action @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}, they remain hidden until after the attack.</p>"
+                    "name": "猛扑 Pounce",
+                    "description": "<p>斯芬克斯行走，行走结束后进行一次打击。如果斯芬克斯在此动作前处于@Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，它们会一直保持藏匿直到攻击结束。</p>"
                 },
                 "Vyc7HceERBcZQuXT":{
-                    "name": "Warding Glyph",
-                    "description": "<p>Once per week, a Sphinx can create a magical symbol as though casting a heightened <em>@Compendium[pf2e.spells-srd.o0l57UfBm9ScEUMW]{Glyph of Warding}</em> spell. The sphinx usually shapes the glyph to take the form of a written riddle, and sets the password to the answer. A creature that gives the wrong answer or tries to pass without answering must succeed at a @Check[type:will|dc:26] save or suffer one of the following spell effects, chosen by the sphinx when creating the symbol: <em>@Compendium[pf2e.spells-srd.BilnTGuXrof9Dt9D]{Synaptic Pulse}</em> (5th), <em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em> (4th), <em>@Compendium[pf2e.spells-srd.4koZzrnMXhhosn0D]{Fear}</em> (3rd), <em>@Compendium[pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em> (3rd), <em>@Compendium[pf2e.spells-srd.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em> (3rd). The sphinx learns the identity of any creature that answers the riddle and tends to be friendly to them.</p>"
+                    "name": "守卫刻纹 Warding Glyph",
+                    "description": "<p>每周一次，斯芬克斯可以创造一个魔法刻纹，如同一个升环的<em>@Compendium[pf2e.spells-srd.o0l57UfBm9ScEUMW]{守卫刻文 Glyph of Warding}</em>法术。斯芬克斯通常会把刻纹塑造成书面谜语的形式，并设置答案的密码。如果一个生物给出错误的答案，或者试图不回答直接通过，则必须通过@Check[type:will|dc:26]检定，否则会遭受以下魔法效果之一，具体由斯芬克斯在创建刻纹时决定：<em>@Compendium[pf2e.spells-srd.BilnTGuXrof9Dt9D]{神经脉冲 Synaptic Pulse}</em>（5环），<em>@Compendium[pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>（4环），<em>@Compendium[pf2e.spells-srd.4koZzrnMXhhosn0D]{恐惧术 Fear}</em>（3环），<em>@Compendium[pf2e.spells-srd.R8bqnYiThB6MYTxD]{幻痛 Phantom Pain}</em>（3环），<em>@Compendium[pf2e.spells-srd.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>（3环）。斯芬克斯能知晓任何解开谜语的生物的身份，并倾向于对他们持友好态度。</p>"
                 },
                 "Ktfy8eNRSg3A28w4":{
-                    "name": "Bardic Lore",
+                    "name": "逸闻学识",
                     "description": ""
                 }
             }
         },
         "Spider Swarm": {
             "name": "蜘蛛群 Spider Swarm",
-            "senses": "黑暗视觉, web sense",
-            "publicNotes": "<p>An abundance of food, the sudden hatching of a clutch of eggs, or magical influence can cause smaller spiders to gather in terrifying, deadly masses.</p>\n<hr />\n<p>很少有害虫能像声名狼藉的蜘蛛那样让人如此恐惧。</p>",
+            "senses": "黑暗视觉, 蛛网感知",
+            "publicNotes": "<p>一顿丰盛的食物、突然孵化的一窝蜘蛛卵、或魔法导致的结果，都能让一大群小蜘蛛聚集成可怕而致命的集群。</p>\n<hr />\n<p>很少有害虫能像声名狼藉的蜘蛛那样让人如此恐惧。</p>",
             "items":{
                 "1RIzUNU0v2cfgsjD":{
                     "name": "黑暗视觉 Darkvision",
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
                 },
                 "bmmCoxENGAgHtWP1":{
-                    "name": "Web Sense",
-                    "description": "<p>The spider swarm has imprecise @Compendium[pf2e.bestiary-ability-glossary-srd.j2wsK6IsW5yMW1jW]{震颤感知 Tremorsense} to detect the vibrations of creatures touching its web.</p>"
+                    "name": "蛛网感知 Web Sense",
+                    "description": "<p>蜘蛛群可以通过@Compendium[pf2e.bestiary-ability-glossary-srd.j2wsK6IsW5yMW1jW]{震颤感知 Tremorsense}（模糊感官）来感知到生物触碰它们蛛网时产生的振动。</p>"
                 },
                 "bLrblJlMOfhn39My":{
                     "name": "母巢思维 Swarm Mind",
                     "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.SwarmMind]</p>"
                 },
                 "NIgj8uAlgosxMdVf":{
-                    "name": "Spider Swarm Venom",
+                    "name": "蜘蛛群毒 Spider Swarm Venom",
                     "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r 1 #poison]]{1毒素}和@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d4}[poison]]]{1d4毒素}和@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>"
                 },
                 "bEsmMOS1PqhLHHbh":{
-                    "name": "Swarming Bites",
-                    "description": "<p>Each enemy in the spider swarm's space takes [[/r {1d4}[piercing]]]{1d4穿刺伤害} with a @Check[type:reflex|dc:14|basic:true] save.</p>\n<p>A creature that fails its save is exposed to spider swarm venom.</p>"
+                    "name": "虫群噬咬 Swarming Bites",
+                    "description": "<p>每个处于蜘蛛群占据方格内的敌人受到[[/r {1d4}[piercing]]]{1d4穿刺伤害}（@Check[type:reflex|dc:14|basic:true]豁免）。</p>\n<p>检定失败的生物还会中蜘蛛群毒。</p>"
                 }
             }
         },
         "Sprite": {
             "name": "小妖精 Sprite",
             "senses": "昏暗视觉",
-            "publicNotes": "<p>Common sprites are primeval guardians that latch onto a person, place, or object and defend it for their own inscrutable reasons. Their dispositions vary from kind to spiteful, but all sprites have a capricious streak. Being only about 9 inches tall, they are wary of animals that might hunt them, particularly house cats, and prefer flight to a fight. On the other hand, sprites are incredibly curious about all forms of magic and heedlessly gather around ley line nexuses or other places of power.</p>\n<hr />\n<p>飘忽、热情、难以捉摸的小妖精是许多村夫在听到“精类”或“妖精”一词时首先想到的东西。尽管性格各不相同，从亲切的格利精到喜欢恶作剧的皮克精，所有小妖精都具备和魔法的内在联系以及微小的体格。这个精类家族中最罕见与人口最多的成员都有着共同的名称——以最常见的小妖精命名。</p>",
+            "publicNotes": "<p>常见的小妖精是依附于人、地点或物体的原始守护者，他们会为了自身的某些神秘原因而保护这些对象。他们的性格多种多样，有善有恶，但是所有小妖精都反复无常。这种生物只有9英寸高，对那些可能捕猎自身的动物（尤其是家猫）十分警惕，并倾向于在遭遇此类生物时逃跑而非正面战斗。另一方面，小妖精对所有形式的魔法都有着强烈的好奇心，并且会不自觉地聚集在灵脉交汇点或其他能量场周围。</p>\n<hr />\n<p>飘忽、热情、难以捉摸的小妖精是许多村夫在听到“精类”或“妖精”一词时首先想到的东西。尽管性格各不相同，从亲切的格利精到喜欢恶作剧的皮克精，所有小妖精都具备和魔法的内在联系以及微小的体格。这个精类家族中最罕见与人口最多的成员都有着共同的名称——以最常见的小妖精命名。</p>",
             "items":{
                 "ja5ZUKm30pmuCb0m":{
                     "name": "原能内在法术 Primal Innate Spells"
@@ -18490,28 +18490,28 @@
                     "description": ""
                 },
                 "q9WAG2gpmBXA8cfi":{
-                    "name": "Luminous Spark"
+                    "name": "璀璨火花 Luminous Spark"
                 },
                 "jYjpln4mc6udm6oF":{
                     "name": "昏暗视觉 Low-Light Vision",
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
                 },
                 "h7p7zhkW6OBX6N85":{
-                    "name": "Luminous Fire",
-                    "description": "<p>A sprite naturally sheds light like a torch. The sprite can extinguish, rekindle, or change the color of this light using a single action, which has the concentrate trait. While this light is extinguished, the sprite's Strikes don't deal fire damage and they can't use their luminous spark Strike.</p>"
+                    "name": "璀璨之火 Luminous Fire",
+                    "description": "<p>小妖精天生能够发出如同火炬一般的光芒。小妖精能以单动作熄灭、重新点燃或改变光芒的颜色，这些动作具有专注特征。当此光芒熄灭时，小妖精的打击不会造成火焰伤害，也无法使用璀璨火花打击。</p>"
                 }
             }
         },
         "Stegosaurus": {
             "name": "剑龙 Stegosaurus",
             "senses": "昏暗视觉, 灵敏嗅觉(模糊感官) 30尺",
-            "publicNotes": "<p>The stegosaurus is easily recognized by its twin rows of diamond-shaped dorsal plates that run down its spine, and thick tail adorned with four large spikes. This strange configuration protects this herbivore from predators, as the stegosaurus can hunker down to interpose its dorsal plates between an attacker and its thick body. A stegosaurus defends itself by swinging its spiked tail at larger foes and trampling smaller opponents underfoot.</p>\n<p>The stegosaurus often inhabits grasslands, where nutritious vegetation is plentiful and only its dorsal plates rise above waving fields of tall grass. The stegosaurus is among the most curious of dinosaurs, and hunters often find it easy to bait them with shiny trinkets or strange noises. A stegosaurus is about 30 feet long, 16 feet high at the top of its highest dorsal plate, and weighs between 2 and 3 tons.</p>\n<p>The stegosaurus is generally more even-tempered and even gentle, despite its size, than the ankylosaurus. This combination makes it even more popular as a trained pet or guard, but even then one should take care to not annoy the dinosaur-an angry or annoyed stegosaurus can lash out with its tail with little warning. Often, it's wiser to train smaller variants, such as the kentrosaurus. Regardless, their dorsal plates make this dinosaur a poor choice as a mount.</p>\n<hr />\n<p>这些巨大的爬行动物是世界原始时代的遗留物，现在仍然大量存在于偏僻的荒野中，或者在黑暗之地Darklands 的地下魔法洞穴中。蜥蜴族、半兽人、巨人和其他人形生物有时会把恐龙当作坐骑、守卫或猎兽。众所周知，人类和其他族裔也收集恐龙，把它们放在动物园里展出，或把它们当作异域宠物或守卫。这通常是富人或怪咖喜欢干的事情，但确实也有一些德鲁伊和其他自然的守护者能与恐龙亲密相处，甚至把它们作为动物伙伴。当恐龙在它们正常栖息地以外的地区安家时，通常可能是因为被圈养的恐龙逃进荒野造成的。</p>",
+            "publicNotes": "<p>剑龙很容易被认出来，因为它的脊骨上有两排菱形的背板，厚实的尾巴上有两对尖刺。这种奇怪的结构保护了这种食草动物不受捕食者的伤害，因为剑龙可以伏下身子，用它的背板阻挡攻击者并保护它们厚实的身体。剑龙通过挥舞带刺的尾巴来保护自己，并将较小的对手踩在脚下。</p>\n<p>剑龙经常生活在草原上，那里有丰沛的高营养植物，只有它的背板能从起伏的高草丛中露出来。剑龙是最好奇的恐龙之一，猎人常常用闪亮的小饰品或奇怪的声音作为诱饵来吸引它们。剑龙体长约30尺，背部最高的骨板能达到16尺高，体重2-3吨。</p>\n<p>尽管剑龙体型更大，但通常比甲龙更温顺、和平。这两种特性的结合使它容易成为训练有素的宠物或守卫。但即便如此，也不应随意惹恼剑龙——恼怒的剑龙可以毫无预警地用尾巴进行猛烈攻击。通常，更明智的做法是训练较小的剑龙变种，比如克特洛特龙ceratopids。不管怎样，它们的背板让这种恐龙不适合作为坐骑。</p>\n<hr />\n<p>这些巨大的爬行动物是世界原始时代的遗留物，现在仍然大量存在于偏僻的荒野中，或者在黑暗之地Darklands 的地下魔法洞穴中。蜥蜴族、半兽人、巨人和其他人形生物有时会把恐龙当作坐骑、守卫或猎兽。众所周知，人类和其他族裔也收集恐龙，把它们放在动物园里展出，或把它们当作异域宠物或守卫。这通常是富人或怪咖喜欢干的事情，但确实也有一些德鲁伊和其他自然的守护者能与恐龙亲密相处，甚至把它们作为动物伙伴。当恐龙在它们正常栖息地以外的地区安家时，通常可能是因为被圈养的恐龙逃进荒野造成的。</p>",
             "items":{
                 "Lt7N9rIlyS76DtRj":{
                     "name": "甩尾 Tail"
                 },
                 "VbE9aK6V1gA4Fbv9":{
-                    "name": "Foot"
+                    "name": "脚踩 Foot"
                 },
                 "m6E1gSnAhXp72yBC":{
                     "name": "昏暗视觉 Low-Light Vision",
@@ -18521,12 +18521,12 @@
                     "name": "灵敏嗅觉（模糊感官）30尺"
                 },
                 "sSd80IXHhedyt6q5":{
-                    "name": "Dorsal Deflection",
-                    "description": "<p><strong>触发</strong> The stegosaurus is targeted with a melee attack.</p>\n<hr />\n<p><strong>效果</strong> The stegosaurus leans its dorsal plates into the attack, gaining a +2 circumstance bonus to its AC against the triggering attack. If the attack misses, the stegosaurus Steps after the attack.</p>"
+                    "name": "背骨偏斜 Dorsal Deflection",
+                    "description": "<p><strong>触发</strong> 剑龙被当做近战攻击目标。</p>\n<hr />\n<p><strong>效果</strong> 剑龙善于用自己背上的骨板御敌。剑龙对触发此能力的攻击，AC获得+2环境加值，并且在攻击结束后可以进行一次快步。</p>"
                 },
                 "GoUIra7KXFd9kUhH":{
-                    "name": "Trample",
-                    "description": "<p>Large or smaller, foot, @Check[type:reflex|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+                    "name": "践踏 Trample",
+                    "description": "<p>大型或更小体型, 脚踩, @Check[type:reflex|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
                 }
             }
         },
@@ -18554,9 +18554,9 @@
         },
         "Vampire Spawn Rogue": {
             "name": "吸血鬼子嗣游荡者 Vampire Spawn Rogue",
-            "hp": "coffin restoration, fast healing 5, negative healing",
+            "hp": "寝于棺木，快速愈合5, 负能量治疗",
             "senses": "黑暗视觉",
-            "languages": "Plus One Regional Language",
+            "languages": "外加一门区域语言",
             "dr": [
                 {
                     "exceptions": "除了银",
@@ -18564,7 +18564,7 @@
                     "value": 5
                 }
             ],
-            "publicNotes": "<p>Vampires use their spawn for infiltration and reconnaissance.</p>\n<hr />\n<p>吸血鬼是一种以活物鲜血为食的不死生物。</p>",
+            "publicNotes": "<p>吸血鬼利用他们的子嗣进行渗透和侦查。</p>\n<hr />\n<p>吸血鬼是一种以活物鲜血为食的不死生物。</p>",
             "items":{
                 "fG5TPYbHYwwOdPbD":{
                     "name": "爪抓 Claw"
@@ -18585,27 +18585,27 @@
                     "description": "<p>所有吸血鬼都具有以下弱点。</p>\n<ul>\n<li><strong>强制力 Compulsions</strong> 吸血鬼受制于某些奇妙而又无法解释的强制力。典型的吸血鬼除非被藏在它的棺木中，否则无法自愿穿过流水；无法进入私宅，除非受到房主邀请。根据你的裁定，吸血鬼可能还会拥有各种其他的强制力——例如一只海盗吸血鬼也行无法在未受邀的情况下踏上陆地。吸血鬼仍可能受迫去做这些事情，并且可能如同克服厌恶那样克服强制力。</li>\n<li><strong>厌恶 Revulsion</strong> 吸血鬼不能自愿接近被挥舞着的大蒜或是非邪恶神祇的圣徽10尺以内。生物必须以一个交互动作挥舞大蒜或者圣徽，并且起效一轮（类似举起盾牌）。如果吸血鬼非自愿地来到了厌恶对象的10尺范围内，它获得@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，逃离至其厌恶对象的10尺以外。在暴露于其厌恶之物下的一轮之后，吸血鬼可以花费一个拥有专注特征的动作尝试一次@Check[type:will|dc:25|name:Overcome Revulsion]检定。一旦成功，它能在[[/br 1d6 #rounds]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>木桩 Stake</strong> 一根刺穿吸血鬼心脏的木桩能够将吸血鬼的HP降至0点，并且阻止其在0HP时受到的治疗效果，就算它躺在棺木中也是如此。用木桩刺穿吸血鬼需要花费三动作，并且仅能在吸血鬼昏迷的时候才能如此做。如果将木桩拔出，并且它还在自己的棺木中休息了1小时以后，那么吸血鬼便能够再次恢复至0HP以上。如果在吸血鬼被木桩钉穿时将其脑袋砍下后再涂上<em>@Compendium[pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em>，便能彻底摧毁这只吸血鬼。</li>\n<li><strong>阳光 Sunlight</strong> 如果暴露于阳光直射下，吸血鬼将立即变成@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。每次吸血鬼在阳光下结束其回合，缓慢值都将增加1点。如果吸血鬼因此失去了其所有动作，它被摧毁。由于吸血鬼对于光的超自然的厌恶，它们不会投下影子，也不会照映在镜子里。</li>\n</ul>"
                 },
                 "hn5GBufYeA5C1oOg":{
-                    "name": "Drink Blood",
-                    "description": "<p><strong>需求</strong> 一名被@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}、或是自愿的生物处于吸血鬼的触及范围内。</p>\n<hr />\n<p><strong>效果</strong> 吸血鬼用尖牙刺入该生物的体内吸食其血液。如果受害者被擒抱，吸血鬼需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。</p>\n<p>The victim is @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} and the vampire regains [[/r {5}[healing]]]{5生命值},而多余的生命值则作为临时生命。从已经获得流失状态的生物身上吸血不会使吸血鬼回复任何生命值，但是受害者的仍会增加1点流失状态值。吸血鬼同样可以通过饮下被保存在容器内的血液并以此维生，但是这样做并不会增加其生命值。</p>\n<p>受害者的流失状态每周减少1点。在拥有足够的血液或是一名献血者的情况下，可以通过一次@Check[type:medicine|dc:20|name:Blood Transfusion]检定进行一次输血，并在10分钟后减少1点流失状态值。</p>"
+                    "name": "吸血 Drink Blood",
+                    "description": "<p><strong>需求</strong> 一名被@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@Compendium[pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}、或是自愿的生物处于吸血鬼的触及范围内。</p>\n<hr />\n<p><strong>效果</strong> 吸血鬼用尖牙刺入该生物的体内吸食其血液。如果受害者被擒抱，吸血鬼需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。</p>\n<p>被害者获得@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，同时吸血鬼获得[[/r {5}[healing]]]{5生命值}，而多余的生命值则作为临时生命。从已经获得流失状态的生物身上吸血不会使吸血鬼回复任何生命值，但是受害者的仍会增加1点流失状态值。吸血鬼同样可以通过饮下被保存在容器内的血液并以此维生，但是这样做并不会增加其生命值。</p>\n<p>受害者的流失状态每周减少1点。在拥有足够的血液或是一名献血者的情况下，可以通过一次@Check[type:medicine|dc:20|name:Blood Transfusion]检定进行一次输血，并在10分钟后减少1点流失状态值。</p>"
                 },
                 "1jREnmv7xdTiRRHp":{
                     "name": "偷袭 Sneak Attack",
-                    "description": "<p>The vampire spawn deals 1d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "description": "<p>子嗣对措手不及的敌人造成1d6点额外精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
             }
         },
         "Veiled Master": {
-            "name": "面纱之主 Veiled Master",
+            "name": "幕后尊主 Veiled Master",
             "languages": "巧言术",
             "allSaves": "在所有对魔法的豁免上获得+2状态加值",
             "senses": "黑暗视觉",
-            "publicNotes": "<p>The powerful vidileths are the insidious veiled masters of the alghollthus. These manipulators of mind and body alike lead their species in the open, using their ability to change form to walk among and deceive humans and other sapient species. Many veiled masters are even more powerful than the typical specimen presented here and can use a wide range of arcane or occult spells and rituals. While veiled masters command significant combat prowess and impressive magical skills, the greatest danger they pose to others is their uncanny ability to infiltrate into societies much different than their own. The most paranoid of adventurers and conspiracy scholars worry that every major city has been infested by secret cabals of vidileths, while others dismiss this as hogwash and fearmongering. The truth is likely somewhere in between, but it doesn't take many veiled masters pulling the strings behind the scenes to wreak havoc upon an entire nation!</p>\n<hr />\n<p>在过去的几千年里，水生怪物阿尔古苏使用它们的神秘力量征服并统治了全世界大部分地区。它们的帝国里有无数被当做牲畜的奴隶。阿尔古苏们利用精神控制和肉体塑造的魔法创造了这些奴隶和忠于它们的其他族群。从无面潜伏者到拟形怪（mimics）都能溯源出被阿尔古苏影响的痕迹。阿尔古苏的统治者们，即所谓的“幕后尊主”，不断通过改造被控制的族群的形态来进一步塑造自身的社会。无论是位高权重的权贵亦或愁云惨雾的贫民，这些幕后尊主按照它们自己的黑暗计划操纵着这些社会，并以奴役、杀戮、以及恐怖的改造来对付那些发现自己计划或试图奋起反抗的人们。</p>\n<p>随着时间的推移，阿尔古苏对它们昔日奴隶的崛起感到失望，并试图抹去过去犯下的错误——既能让一切回归原点，又能惩罚那些任性而背叛的种族。因此它们用不可思议的魔法力量发动了一场灾难，希望摧毁那些过去被它们操纵但是如今背叛了它们的社区。然而，它们错误地估计了信仰的力量以及自己曾经的爪牙和奴隶们的生存意志，最终整个世界恢复了元气，再次变得强大起来——这一次不再有阿尔古苏在背后影响它们了。</p>\n<p>如今，阿尔古苏已经从它们曾经操纵过的地表世界中大规模地撤退，并且它们中的大部分只在深海区域活动，在那里它们依然是无可动摇的统治者。然而它们并没有完全放弃它们的阴谋，像无面潜伏者这样的奴隶种族重新出现在世界上就证明了这种可怕的可能性——阿尔古苏们那仇视的目光已经再次盯上了地表世界。</p>",
+            "publicNotes": "<p>强大的幕后尊主是阿尔古苏阴险的幕后主宰。这些思维和身体的操纵着们似乎是它们种族的领袖，利用自身的变形能力，行走在人类或各种类人生物之间，并欺骗它们。许多幕后尊主都比这里展示的标准样本更为强大，它们可以使用各种各样的奥术和异能法术、仪式。幕后尊主不仅拥有非凡的战斗能力和令人深刻的魔法技能，它们对凡人最大的威胁是能够渗透进和自身截然不同的社会中去。最偏执的冒险家和阴谋论者担心，在每个大城市中都有潜伏者的幕后尊主出没，而有些人则认为这是无稽之谈和危言耸听。真相可能介乎于两者之间，但是只要有少数几个幕后尊主就足够能对整个国家造成破坏了！</p>\n<hr />\n<p>在过去的几千年里，水生怪物阿尔古苏使用它们的神秘力量征服并统治了全世界大部分地区。它们的帝国里有无数被当做牲畜的奴隶。阿尔古苏们利用精神控制和肉体塑造的魔法创造了这些奴隶和忠于它们的其他族群。从无面潜伏者到拟形怪（mimics）都能溯源出被阿尔古苏影响的痕迹。阿尔古苏的统治者们，即所谓的“幕后尊主”，不断通过改造被控制的族群的形态来进一步塑造自身的社会。无论是位高权重的权贵亦或愁云惨雾的贫民，这些幕后尊主按照它们自己的黑暗计划操纵着这些社会，并以奴役、杀戮、以及恐怖的改造来对付那些发现自己计划或试图奋起反抗的人们。</p>\n<p>随着时间的推移，阿尔古苏对它们昔日奴隶的崛起感到失望，并试图抹去过去犯下的错误——既能让一切回归原点，又能惩罚那些任性而背叛的种族。因此它们用不可思议的魔法力量发动了一场灾难，希望摧毁那些过去被它们操纵但是如今背叛了它们的社区。然而，它们错误地估计了信仰的力量以及自己曾经的爪牙和奴隶们的生存意志，最终整个世界恢复了元气，再次变得强大起来——这一次不再有阿尔古苏在背后影响它们了。</p>\n<p>如今，阿尔古苏已经从它们曾经操纵过的地表世界中大规模地撤退，并且它们中的大部分只在深海区域活动，在那里它们依然是无可动摇的统治者。然而它们并没有完全放弃它们的阴谋，像无面潜伏者这样的奴隶种族重新出现在世界上就证明了这种可怕的可能性——阿尔古苏们那仇视的目光已经再次盯上了地表世界。</p>",
             "items":{
                 "I6M7YvqndCsq8oLj":{
                     "name": "异能内在法术 Occult Innate Spells"
                 },
                 "eoAPr8flq8fSsMDX":{
-                    "name": "Occult Rituals"
+                    "name": "异能仪式 Occult Rituals"
                 },
                 "Nt7T41ncTB9oAvqg":{
                     "name": "投影术(随意施法) Project Image (At Will)",
@@ -18655,52 +18655,52 @@
                     "description": ""
                 },
                 "jfGKdhMjdkxsNHCf":{
-                    "name": "Tentacle"
+                    "name": "触手 Tentacle"
                 },
                 "zzzLK4jcgGesR9Yt":{
                     "name": "黑暗视觉 Darkvision",
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
                 },
                 "X7eyVZD1ZflrSoj8":{
-                    "name": "Mucus Cloud",
-                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>While underwater, a veiled master exudes a cloud of transparent slime. An air-breathing creature adjacent to a veiled master must succeed at a @Check[type:fortitude|dc:36] save each round or lose the ability to breathe air but gain the ability to breathe water for 24 hours.</p>"
+                    "name": "粘液云 Mucus Cloud",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当在水下时，幕后尊主能渗出半透明的粘液云。一个需要呼吸的生物如果和幕后尊主相邻，则每轮都必须通过@Check[type:fortitude|dc:36]检定，否则失去呼吸空气的能力，但获得水中呼吸的能力。效果持续24小时。</p>"
                 },
                 "d574MMQ1MIrxdW3F":{
                     "name": "在所有对魔法的豁免上获得+2状态加值"
                 },
                 "xX27SX9rrvhMXhIZ":{
-                    "name": "Change Shape",
-                    "description": "<p>Once per round, a veiled master can take on the appearance of a humanoid of Large, Medium, or Small size or resume its true form. While in humanoid form, the veiled master's Speed is 30尺, and it loses its mucus cloud aura and swim Speed. If the humanoid form assumed lacks the aquatic trait, the veiled master loses its own aquatic trait as well. In humanoid form, the veiled master can use weapons, or it can make Strikes that work like its tentacle attack but use the reach of its current form. If the assumed form has fangs or claws, the veiled master can also make such Strikes, but these attacks lack the veiled master's slime.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "name": "变形 Change Shape",
+                    "description": "<p>每轮一次，幕后尊主能将外貌变形成大型、中型或小型的类人生物，或变回原来的样貌。当变成类人生物时，幕后尊主的速度为30尺，并且失去粘液云和游泳速度。如果该类人生物没有水栖特征，则幕后尊主也会失去自身的水栖特征。在类人形态下，幕后尊主可以使用武器，也可以使用触手打击，但其触及取决于当前形态。如果化形有牙咬或爪抓，幕后尊主也可以使用这些打击，但不会附带粘液。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "1EXMfAvy6zP7X2ix":{
-                    "name": "Consume Memories",
-                    "description": "<p>When a veiled master makes a fangs Strike against a creature, it can consume some of that creature's memories. The target must succeed at a @Check[type:fortitude|dc:37] saving throw or become @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}. A veiled master regains 5 Hit Points each time it successfully consumes memories. When a veiled master consumes memories, it learns some of the creature's memories (subject to the GM's discretion).</p>"
+                    "name": "吞噬记忆 Consume Memories",
+                    "description": "<p>当幕后尊主对生物进行一次牙咬打击时，它能吞噬该生物的部分记忆。目标必须通过@Check[type:fortitude|dc:37]检定，否则陷入@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。幕后尊主每次成功发动吞噬记忆时都能恢复5点HP。当幕后尊主吞噬记忆时，它能获得目标生物的一部分记忆（内容由GM自行决定）。</p>"
                 },
                 "7ivzzqnDwOSXosG5":{
-                    "name": "Delayed Suggestion",
-                    "description": "<p>When a veiled master successfully casts <em>@Compendium[pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{支配术 Dominate}</em> on a creature, a <em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{暗示术 Suggestion}</em> spell triggers when the <em>dominate</em> spell ends. This <em>suggestion</em> usually causes the target to return to the veiled master, so the creature can cast <em>dominate</em> again, but a veiled master can set the <em>suggestion</em> to different orders if it wishes.</p>"
+                    "name": "延迟暗示 Delayed Suggestion",
+                    "description": "<p>当幕后尊主成功对一个生物释放<em>@Compendium[pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{支配术 Dominate}</em>时，一个<em>@Compendium[pf2e.spells-srd.qwlh6aDgi86U3Q7H]{暗示术 Suggestion}</em>会在<em>支配术</em>效果结束后被触发。该<em>暗示术</em>通常会让目标生物返回幕后尊主身边，这样幕后尊主就能再次对其使用<em>支配术</em>。但是幕后尊主也可以选择以不同的命令进行暗示。</p>"
                 },
                 "fP1MPx5mw7OZ0cma":{
-                    "name": "Slime",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:36]</p>\n<hr />\n<p><strong>阶段1</strong> no ill effect (1轮)</p>\n<p><strong>阶段2</strong> the victim's skin softens, inflicting @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段3</strong> the victim's skin transforms into a clear, slimy membrane, inflicting @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} until the curse ends; every hour this membrane remains dry, the creature's drained condition increases by 1 (permanent). A <em>@Compendium[pf2e.spells-srd.RneiyehRO6f7LP44]{Remove Disease}</em> spell can counteract this curse, but immunity to disease offers no protection against it</p>"
+                    "name": "粘液 Slime",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:36]</p>\n<hr />\n<p><strong>阶段1</strong> 没有影响 (1轮)</p>\n<p><strong>阶段2</strong> 受害者的皮肤变得柔软，陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段3</strong> 受害者的皮肤变成透明、黏滑的薄膜，并且陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}状态，直到诅咒结束；如果薄膜没有保持湿润，它将变干，该生物每个小时流失状态值都会增加1（永久）。<em>@Compendium[pf2e.spells-srd.RneiyehRO6f7LP44]{移除疾病 Remove Disease}</em>法术可以反制该诅咒，但是疾病免疫对此不起作用。</p>"
                 },
                 "4eIvZ5FrB8u5CTbJ":{
-                    "name": "Tentacle Flurry",
-                    "description": "<p>The veiled master thrashes about with its tentacles. Make a tentacle Strike against each creature within its reach. Roll only one attack roll, and roll the damage only once for all targets.</p>"
+                    "name": "触手旋风 Tentacle Flurry",
+                    "description": "<p>幕后尊主用触手四处抽打。进行一次单独的触手打击，对抗触及内的每个生物。幕后尊主只进行一次攻击检定，并且对所有目标只需进行一次伤害检定。</p>"
                 },
                 "EwP4uiI1GXQ7aYst":{
-                    "name": "Thoughtlance",
-                    "description": "<p>A creature touched by the veiled master's tentacles, whether those tentacles deal damage or not, must attempt a @Check[type:will|dc:34] save, becoming @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} on a failure or @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} on a critical failure. Each time the affected creature ends its turn, its slowed value decreases by 1.</p>"
+                    "name": "思维冲击 Thoughtlance",
+                    "description": "<p>被幕后尊主触手接触到的生物，无论这些触手是否造成伤害，目标都必须通过@Check[type:will|dc:34]检定，如果失败陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，大失败则陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}。受影响的生物每次结束回合时，它的缓慢状态值减少1。</p>"
                 },
                 "ofZG0kDOYskLWahT":{
-                    "name": "Lore (any one subcategory)"
+                    "name": "任意子题学识"
                 }
             }
         },
         "Velociraptor": {
             "name": "伶盗龙 Velociraptor",
             "senses": "昏暗视觉, 灵敏嗅觉(模糊感官) 30尺",
-            "publicNotes": "<p>A smaller cousin of the deinonychus, the velociraptor is a swift, cunning pack hunter. It has no fear of larger creatures, and a group of these dinosaurs won't hesitate to attack creatures the size of a horse. Velociraptors are social animals, and tend to live in groups of up to a dozen other velociraptors. They have manes of feathery plumage that extend down their backs and along the sides of their arms, legs, and tail, while their underbellies and flanks are scaly. These feathers allow them to blend into their natural terrains with ease, but when excited, attempting to intimidate, or seeking a mate, a velociraptor can puff and frill this plumage to expose much brighter colors normally covered by the longer feathers. A typical velociraptor is 1-1/2 feet tall, 7 feet long, and weighs 35 pounds.</p>\n<hr />\n<p>这些巨大的爬行动物是世界原始时代的遗留物，现在仍然大量存在于偏僻的荒野中，或者在黑暗之地Darklands 的地下魔法洞穴中。蜥蜴族、半兽人、巨人和其他人形生物有时会把恐龙当作坐骑、守卫或猎兽。众所周知，人类和其他族裔也收集恐龙，把它们放在动物园里展出，或把它们当作异域宠物或守卫。这通常是富人或怪咖喜欢干的事情，但确实也有一些德鲁伊和其他自然的守护者能与恐龙亲密相处，甚至把它们作为动物伙伴。当恐龙在它们正常栖息地以外的地区安家时，通常可能是因为被圈养的恐龙逃进荒野造成的。</p>",
+            "publicNotes": "<p>伶盗龙是恐爪龙的近亲，是一种敏捷而狡猾的群体猎手。它不畏惧体型更大的生物，一群恐龙会毫不犹豫地攻击马匹大小的生物。伶盗龙是一种群居动物，通常以十多只为一群生活。它们身上复有羽毛，从背上延伸到胳膊、腿和尾巴的两侧，而它们的腹部和侧翼则是有鳞的。这些羽毛让它们能够轻松地融入自然地形，但当它们兴奋、试图恐吓或寻求配偶时，伶盗龙可以将羽毛蓬松起来，露出通常位于较长羽毛复盖之下的更鲜艳的颜色。普通的伶盗龙有1-1.5英尺高，7英尺长，35磅重。</p>\n<hr />\n<p>这些巨大的爬行动物是世界原始时代的遗留物，现在仍然大量存在于偏僻的荒野中，或者在黑暗之地Darklands 的地下魔法洞穴中。蜥蜴族、半兽人、巨人和其他人形生物有时会把恐龙当作坐骑、守卫或猎兽。众所周知，人类和其他族裔也收集恐龙，把它们放在动物园里展出，或把它们当作异域宠物或守卫。这通常是富人或怪咖喜欢干的事情，但确实也有一些德鲁伊和其他自然的守护者能与恐龙亲密相处，甚至把它们作为动物伙伴。当恐龙在它们正常栖息地以外的地区安家时，通常可能是因为被圈养的恐龙逃进荒野造成的。</p>",
             "items":{
                 "FrOech6HlG52AZBy":{
                     "name": "啮咬 Jaws"
@@ -18716,31 +18716,31 @@
                     "name": "灵敏嗅觉（模糊感官）30尺"
                 },
                 "FoGyFrPjwdSydW4U":{
-                    "name": "Leaping Charge",
-                    "description": "<p>The velociraptor Strides up to 10尺, ignoring difficult terrain as it leaps over obstacles. It then makes a Strike with its talons, gaining a +1 circumstance bonus to its attack roll.</p>"
+                    "name": "跳跃冲锋 Leaping Charge",
+                    "description": "<p>伶盗龙行走至多10尺，跃过障碍物，无视困难地形，然后发起一次爪击打击，此打击攻击检定有+1环境加值。</p>"
                 },
                 "RibPgalaxUxyuwym":{
-                    "name": "Pack Attack",
-                    "description": "<p>The velociraptor deals [[/r {1d4}]]{1d4额外伤害} to any creature that's within reach of at least two of the velociraptor's allies.</p>"
+                    "name": "群起攻之 Pack Attack",
+                    "description": "<p>如果伶盗龙的目标处于另外两只友方伶盗龙触及范围内，则造成[[/r {1d4}]]{1d4额外伤害}。</p>"
                 }
             }
         },
         "Voidworm": {
             "name": "虚空虫 Voidworm",
             "hp": "快速愈合1",
-            "senses": "熵力感知(模糊)30尺, darkvision",
+            "senses": "熵力感知(模糊)30尺, 黑暗视觉",
             "dr": [
                 {
                     "type": "precision",
                     "value": 3
                 },
                 {
-                    "type": "幻蛇体质 Protean Anatomy",
+                    "type": "protean anatomy",
                     "value": 5
                 }
             ],
-            "speed": "freedom of movement",
-            "publicNotes": "<p>Other proteans don't consider the flying, iridescent beings known as voidworms to be part of a protean caste at all, but instead merely a shameful side effect of the Maelstrom's constantly churning energy. To call a voidworm a protean in the presence of a more powerful protean is as sure a way to instigate combat as any.</p>\n<p>Voidworms themselves have little interest in whether anyone sees them as proteans. They maintain a thriving ecology in the Maelstrom, frolicking in schools of up to 20 and playing in the chaos of constantly shifting realities. Elsewhere (such as on the Material Plane), voidworms are mesmerized by the principle of object permanence; many latch onto specific features of a region (such as a hillside or pond) and flit through the air around it for months or even years as they wait for the object of their curiosity to change. Minor changes- such as a tree's change of color in the fall, a corpse's slow decay, or periodic venting of steam from a geyser-all fascinate voidworms. A voidworm is about 2 feet long and weighs 2 pounds.</p>\n<hr />\n<p>幻蛇是混乱的捍卫者，被称为大漩涡（the Maelstrom）的混沌原初位面的原住民，他们将散播混乱与加速熵的终结视为自己的使命。最强大的幻蛇是被集体称之为幻蛇领主（protean lords）的半神，然而这些变幻莫测的存在在主物质位面中的信仰往往暧昧不明且藏于暗处。</p>\n<p>幻蛇按照一种松散的种姓制度划分自身族群，并掌握着令人眼花缭乱的多样能力。大多数幻蛇拥有蛇形的躯体和原初猛兽的头颅。学者们一直着迷于这个事实——即这些无序分裂的后代为何会有如此多具备共性的特征——因此他们指出，即便在最纯粹的混沌中，也存在着某些秩序的表象。而其他人则注意到蛇形是最为原始的形态之一，这也许是在暗示一个事实，即在时间的起点，此类形态可能是唯一的存在。幻蛇自身对此并没有任何好说的，而讽刺的是，这种态度反而使得人们对其种群的说法缺乏共识并加深了人们的困惑。毕竟，连混沌本身都不能信赖混沌，难道这不才是熵的最纯粹形式么？</p>",
+            "speed": "行动自如",
+            "publicNotes": "<p>对于这种名为虚空虫的会飞的荧光存在，幻蛇们甚至不会将其视为幻蛇中一分子，只把它们当做大漩涡（the Maelstrom）不断搅动的能量所产生的可耻副产品。在更为强大的幻蛇面前把虚空虫称为幻蛇无异是在煽动战斗。</p>\n<p>而虚空虫自身则对自己是否被当做幻蛇这件事缺乏兴趣。它们在大漩涡中维持着繁荣的生态，结成至多20尾的鱼群，在现实不断被变化搅动的混沌中尽情嬉戏。在其他地方（比如在主物质位面），虚空虫会被物质的恒久存续所迷惑；许多虚空虫会锁定某个地区的特定地貌（比如山坡或池塘），在周遭的空气中盘旋数月甚至数年之久，只为在对象周遭等待以满足自身对于对象所能产生的变化的好奇心。微小的变化——比如树木在秋季的颜色变换、尸体缓慢腐烂、或者间歇泉定期喷出蒸汽——都能让虚空虫着迷。虚空虫约有2尺长，重约2磅。</p>\n<hr />\n<p>幻蛇是混乱的捍卫者，被称为大漩涡（the Maelstrom）的混沌原初位面的原住民，他们将散播混乱与加速熵的终结视为自己的使命。最强大的幻蛇是被集体称之为幻蛇领主（protean lords）的半神，然而这些变幻莫测的存在在主物质位面中的信仰往往暧昧不明且藏于暗处。</p>\n<p>幻蛇按照一种松散的种姓制度划分自身族群，并掌握着令人眼花缭乱的多样能力。大多数幻蛇拥有蛇形的躯体和原初猛兽的头颅。学者们一直着迷于这个事实——即这些无序分裂的后代为何会有如此多具备共性的特征——因此他们指出，即便在最纯粹的混沌中，也存在着某些秩序的表象。而其他人则注意到蛇形是最为原始的形态之一，这也许是在暗示一个事实，即在时间的起点，此类形态可能是唯一的存在。幻蛇自身对此并没有任何好说的，而讽刺的是，这种态度反而使得人们对其种群的说法缺乏共识并加深了人们的困惑。毕竟，连混沌本身都不能信赖混沌，难道这不才是熵的最纯粹形式么？</p>",
             "items":{
                 "eczygEywMNK3dNd7":{
                     "name": "神术内在法术 Divine Innate Spells"
@@ -18779,12 +18779,12 @@
                     "description": "<p>幻蛇的要害器官会不断地变形和改变位置。当幻蛇承受酸、电击、或音波伤害后，它会立即获得抗力数据中所列数值的对应伤害抗力。这会持续1小时或直至幻蛇承受上述伤害类型中的其他种类为止（在这种情况下，幻蛇的抗力会再度变换并与该类型相匹配），以较先发生者为准。除非幻蛇自身是自愿的目标，否则它对变形效果免疫。若陷入@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}或@Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，幻蛇会在它的下个回合结束时自动恢复，因为新的感受器官已经形成并取代了受损的器官。</p>\n<hr />\n<p>@Compendium[pf2e.bestiary-effects.c6SiBB3mzV8lZUQr]{效果: 幻蛇体质}</p>"
                 },
                 "IGHgjWHfJlqh674F":{
-                    "name": "Change Shape",
-                    "description": "<p>The voidworm takes on the appearance of a Tiny animal. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "name": "变形 Change Shape",
+                    "description": "<p>虚空虫呈现出超小型动物的外观。这不会改变它的速度，或者其打击的攻击与伤害加值，但可能会改变打击造成的伤害类型。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "cL0kuYeKKUFMb9w0":{
-                    "name": "Confounding Lash",
-                    "description": "<p>A creature hit by the voidworm's tail Strike is @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} for 1 round (@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} on a critical hit). A successful @Check[type:will|dc:16] save negates this effect and grants temporary immunity to confounding lash for 1 minute.</p>"
+                    "name": "错乱鞭笞 Confounding Lash",
+                    "description": "<p>被虚空虫的尾扫打击命中的生物会陷入@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}持续1轮（重击时为@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。成功通过@Check[type:will|dc:16]豁免能让该效果无效，并且在1分钟内临时免疫错乱鞭笞。</p>"
                 }
             }
         },
@@ -18793,7 +18793,7 @@
             "allSaves": "对抗魔法全豁免获得+1状态加值",
             "languages": "心灵感应100尺",
             "senses": "黑暗视觉",
-            "publicNotes": "<p>When the gates to the Abyss swing wide, the first demons through are often vrocks, vulture-headed scions of rage who wheel through the air on black wings or dance with the exultation of their fiendish power. Their hatred for mortals is matched only by their desire to inflict suffering through their horrible screech or their devastating dance. Vrocks form from the souls of hateful mortals who are thus given another chance to inflict their rage on the world.</p>\n<p>Vrocks often travel in small groups so as to make the best use of their dance of ruin ability, but they rarely appear in groups larger than four. Against small groups and individuals, they swoop down without fear, hoping to play with their prey before going for the kill. Against formidable foes, they are just as happy to fly above, using their dance of ruin to cast a storm of lightning down on them.</p>\n<hr />\n<p>当一个有罪之人的灵魂受到审判并被送至无底深渊时，它会成为致命的魔族——恶魔。恶魔是罪恶的化身，从一般的罪恶例如愤怒、暴食，到更“特别”的堕落，例如对酷刑的痴迷或对祖国的背叛。恶魔一经诞生，它们便被双重目的驱动：其一是不断积累力量变得更强，其二是腐化凡人的灵魂让其被罪恶玷污。通过这种方式恶魔保证了有源源不断的新恶魔来支持它们在深渊中不断扩张的军队。</p>",
+            "publicNotes": "<p>当通向深渊的大门被打开时，第一个冲出来的恶魔往往是鹫魔。它们是长着秃鹫脑袋的愤怒之子，扇动黑色的翅膀呼啸而过，或带着对自己恶魔力量的狂喜翩翩起舞。它们对凡人的憎恨通过可怕的尖叫和毁灭性的舞蹈来施加给凡人们。鹫魔诞生自那些充满憎恨的凡人灵魂，因此成为恶魔之后它们得到了把愤怒倾泻到世界上的机会。</p>\n<p>鹫魔通常组成小队行动，充分利用它们毁灭之舞能力，但是它们很少组成超过4只的大群。面对小股或落单的敌人时，它们毫无畏惧地俯冲下来，在猎杀之前先玩弄猎物一番。在面对强大的敌人时它们也乐于在敌人头顶飞翔盘旋，用它们的毁灭之舞向敌人投下暴风骤雨般的闪电。</p>\n<hr />\n<p>当一个有罪之人的灵魂受到审判并被送至无底深渊时，它会成为致命的魔族——恶魔。恶魔是罪恶的化身，从一般的罪恶例如愤怒、暴食，到更“特别”的堕落，例如对酷刑的痴迷或对祖国的背叛。恶魔一经诞生，它们便被双重目的驱动：其一是不断积累力量变得更强，其二是腐化凡人的灵魂让其被罪恶玷污。通过这种方式恶魔保证了有源源不断的新恶魔来支持它们在深渊中不断扩张的军队。</p>",
             "items":{
                 "eqiwUtaFLOTC1oND":{
                     "name": "神术内在法术 Divine Innate Spells"
@@ -18823,23 +18823,23 @@
                 },
                 "FUwL7sL45SGQB0N6":{
                     "name": "借机攻击 Attack of Opportunity",
-                    "description": "<p>If the vrock is flying and a creature triggers an attack of opportunity, the vrock can make 2 Strikes with its talons against that creature instead of 1 Strike.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                    "description": "<p>如果鹫魔正在飞行且有生物触发借机攻击，则鹫魔能对目标生物进行2次爪击打击，而非1次。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
                 "6h9jexgK3OdaDWsq":{
-                    "name": "Peace Vulnerability",
-                    "description": "<p>A vrock's wrath is the heart of their essence, and forcing peace upon them wrenches at their soul. If they fail a save against <em>@Compendium[pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em> or a similar effect forcing them to be peaceful, a vrock takes [[/r {4d6}[mental]]]{4d6心灵伤害}.</p>"
+                    "name": "反感平和 Peace Vulnerability",
+                    "description": "<p>鹫魔的愤怒是它们的核心本质，强行让它们平静下来会撕裂它们的灵魂。如果它们在对抗<em>@Compendium[pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>法术或其他类似的能让它们强制平静情绪的效果时豁免失败，则会受到[[/r {4d6}[mental]]]{4d6心灵伤害}。</p>"
                 },
                 "pSi2yAlBjhVTBwq8":{
-                    "name": "Dance of Ruin",
-                    "description": "<p>The vrock dances in flight and chants to create a ruinous explosion of electricity. If more vrocks within 30 feet want to join the dance, the vrock can delay the dance to wait for more vrocks; in that case, the effect occurs after the last vrock uses Dance of Ruin or one of the vrocks chooses to complete that round of the dance. Each non-demon creature in a @Template[type:emanation|distance:20] from any of the dancing vrocks takes [[/r {2d12}[electricity]]]{2d12电击伤害} (@Check[type:reflex|dc:28|basic:true]豁免). For each additional vrock that joins the dance, the damage increases by 1d12 and the save DC increases by 1 (to a maximum of four vrocks dealing 5d12 electricity damage with a DC 31豁免). The vrocks can continue dancing by using Dance of Ruin each round, for up to 3 rounds in total. The emanation's size increases by 20 feet each round, and the damage increases by 1d12 per vrock each round.</p>\n<hr />\n<ul>\n<li><strong>1 Vrock Dancing</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {2d12}[electricity]]]{2d12电击伤害} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {3d12}[electricity]]]{3d12电击伤害} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {4d12}[electricity]]]{4d12电击伤害} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>2 Vrocks Dancing</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {3d12}[electricity]]]{3d12电击伤害} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {5d12}[electricity]]]{5d12电击伤害} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {7d12}[electricity]]]{7d12电击伤害} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>3 Vrocks Dancing</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {4d12}[electricity]]]{4d12电击伤害} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {7d12}[electricity]]]{7d12电击伤害} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {10d12}[electricity]]]{10d12电击伤害} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>4 Vrocks Dancing</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Round</th>\n<th>Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {5d12}[electricity]]]{5d12电击伤害} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {9d12}[electricity]]]{9d12电击伤害} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {13d12}[electricity]]]{13d12电击伤害} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>"
+                    "name": "毁灭之舞 Dance of Ruin",
+                    "description": "<p>鹫魔在飞行中舞蹈并吟唱，制造一次毁灭性的电能爆炸。如果30尺内的更多鹫魔想加入舞蹈，鹫魔可以延后该舞蹈的效果来让更多鹫魔加入；在这种情况下，当最后一名鹫魔使用毁灭之舞能力后，或其中一名鹫魔选择结束该轮的舞蹈，则舞蹈的效果会被释放：任意一名跳舞的鹫魔@Template[type:emanation|distance:20]范围内的所有非恶魔生物受到[[/r {2d12}[electricity]]]{2d12电击伤害}（@Check[type:reflex|dc:28|basic:true]豁免）。每有一名额外的鹫魔加入舞蹈，伤害就增加1d12且豁免DC加1（最大达到4名鹫魔造成5d12伤害且豁免DC 31）。鹫魔每轮都可以选择继续进行毁灭之舞，最多三轮。该弥散范围每轮增加20尺，并且每轮每个鹫魔增加1d12伤害。</p>\n<hr />\n<ul>\n<li><strong>1名鹫魔</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>轮</th>\n<th>效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {2d12}[electricity]]]{2d12电击伤害} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {3d12}[electricity]]]{3d12电击伤害} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {4d12}[electricity]]]{4d12电击伤害} @Check[type:reflex|dc:28|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>2名鹫魔</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>轮</th>\n<th>效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {3d12}[electricity]]]{3d12电击伤害} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {5d12}[electricity]]]{5d12电击伤害} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {7d12}[electricity]]]{7d12电击伤害} @Check[type:reflex|dc:29|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>3名鹫魔</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>轮</th>\n<th>效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {4d12}[electricity]]]{4d12电击伤害} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {7d12}[electricity]]]{7d12电击伤害} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {10d12}[electricity]]]{10d12电击伤害} @Check[type:reflex|dc:30|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n<li><strong>4名鹫魔</strong>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>轮</th>\n<th>效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>@Template[type:emanation|distance:20] [[/r {5d12}[electricity]]]{5d12电击伤害} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@Template[type:emanation|distance:40] [[/r {9d12}[electricity]]]{9d12电击伤害} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>@Template[type:emanation|distance:60] [[/r {13d12}[electricity]]]{13d12电击伤害} @Check[type:reflex|dc:31|basic:true]</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>"
                 },
                 "rCo3WVukDgsbPhLD":{
-                    "name": "Spore Cloud",
-                    "description": "<p>The vrock emits a cloud of spores from their body, dealing [[/r {2d8}[poison]]]{2d8毒素伤害} to all adjacent creatures. Each creature damaged this way must succeed at a @Check[type:fortitude|dc:28|traits:damaging-effect] save or take [[/r {2d8}[persistent,piercing]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续穿刺伤害} as the spores penetrate its skin and grow into thick, green vines. The vines cease growing after 10 rounds, and they wither away in [[/br 1d4 #Spore Cloud Duration]]{1d4天} if not shaved off before then. The vines can be destroyed if the creature is affected by a good spell or if <em>@Compendium[pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em> is applied to the vines (with an Interact action).</p>\n<p>Once the vrock uses Spore Cloud, the ability can't be used for [[/br 1d6 #Recharge Spore Cloud]]{1d6轮}.</p>"
+                    "name": "孢子云 Spore Cloud",
+                    "description": "<p>鹫魔从身体释放一团孢子云，对所有相邻生物造成[[/r {2d8}[poison]]]{2d8毒素伤害}。每个被孢子云伤害的生物必须成功通过@Check[type:fortitude|dc:28|traits:damaging-effect]检定，否则孢子渗入皮肤，受到[[/r {2d8}[persistent,piercing]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续穿刺伤害}，并在受害者身体表面发育成绿色的藤蔓。藤蔓会在10轮之后长大，如果没有被外力清除，则会在[[/br 1d4 #Spore Cloud Duration]]{1d4天}之后自然枯萎并脱落。如果受害者受到善良法术影响，或藤蔓被淋上<em>@Compendium[pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em>（以一个交互动作），则藤蔓被摧毁。</p>\n<p>一旦鹫魔使用孢子云能力之后，它在[[/br 1d6 #Recharge Spore Cloud]]{1d6轮}内无法再次使用该能力。</p>"
                 },
                 "nLB0CpyqlvJpfjnr":{
-                    "name": "Stunning Screech",
-                    "description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> The vrock emits a shrill screech. Each non-demon creature within a @Template[type:burst|distance:30] must attempt a @Check[type:fortitude|dc:28] save. On a failure, the creature is @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}, and on a critical failure, it's @Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}.</p>"
+                    "name": "震慑尖叫 Stunning Screech",
+                    "description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 鹫魔发出一阵刺耳的尖叫。@Template[type:burst|distance:30]范围内的所有非恶魔必须尝试@Check[type:fortitude|dc:28]豁免检定。一旦失败，目标生物陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}，如果大失败则陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
                 }
             }
         },
@@ -18877,7 +18877,7 @@
                 },
                 "yYFISOz912MYdEDd":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>The dragon breathes a spray of acid that deals [[/r {8d6}[acid]]]{8d6酸液伤害} in a @Template[type:line|distance:60]{60尺线形} (@Check[type:reflex|dc:25|basic:true]豁免).</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
+                    "description": "<p>龙喷出一股酸雾，对@Template[type:line|distance:60]{60尺线形}区域内的生物造成[[/r {8d6}[acid]]]{8d6酸液伤害}（@Check[type:reflex|dc:25|basic:true]豁免）。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
                 },
                 "0FCCLjtCWvBlUoFA":{
                     "name": "龙之狂怒 Draconic Frenzy",
@@ -18929,7 +18929,7 @@
                 },
                 "fchD9qieGM9L8Vag":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>青铜龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>闪电 Lightning</strong> The dragon breathes lightning in a @Template[type:line|distance:60|traits:arcane,electricity,evocation,damaging-effect]{60尺线形} that deals [[/r {6d12}[electricity]]]{6d12电击伤害} (@Check[type:reflex|dc:28|basic:true]豁免).</li>\n<li><strong>驱人气体 Repulsion Gas</strong> The dragon breathes a @Template[type:line|distance:60|traits:arcane,abjuration,incapacitation,mental]{60尺线形} of repulsive gas. Each creature in the area must succeed at a @Check[type:will|dc:28] save or become @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing} from the dragon for 1 round (or 2 rounds on a critical failure).</li>\n</ul>"
+                    "description": "<p>青铜龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>闪电 Lightning</strong> 龙喷出一束闪电，对@Template[type:line|distance:60|traits:arcane,electricity,evocation,damaging-effect]{60尺线形}区域内的生物造成[[/r {6d12}[electricity]]]{6d12电击伤害}（@Check[type:reflex|dc:28|basic:true]豁免）。</li>\n<li><strong>驱人气体 Repulsion Gas</strong> 龙对@Template[type:line|distance:60|traits:arcane,abjuration,incapacitation,mental]{60尺线形}区域内喷出一股驱人气体。在线形区域内的每个生物必须成功通过一次@Check[type:will|dc:28]检定，否则将会从龙这里@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮，在大失败时则为2轮。</li>\n</ul>"
                 },
                 "TpHVJUZhgcIfmmBv":{
                     "name": "龙之狂怒 Draconic Frenzy",
@@ -18941,7 +18941,7 @@
                 },
                 "PMBSc3Ypq9HMYeKR":{
                     "name": "水之主 Water Mastery",
-                    "description": "<p>For up to 30 minutes per day, the dragon, along with allied creatures and vessels within 50尺, can move at double their normal Speed in water.</p>"
+                    "description": "<p>每天最多30分钟，龙以及50尺内的盟友生物和载具能够在水中以两倍的普通速度移动。</p>"
                 }
             }
         },
@@ -18991,7 +18991,7 @@
                 },
                 "EwYIwG40atiWUwhI":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>金龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>烈焰 Flame</strong> The dragon breathes a blast of flame in a @Template[type:cone|distance:30|traits:arcane,evocation,fire,damaging-effect] that deals [[/r {11d6}[fire]]]{11d6火焰伤害} (@Check[type:reflex|dc:31|basic:true]豁免).</li>\n<li><strong>衰弱气体 Weakening Gas</strong> The dragon breathes a blast of weakening gas. Each creature within a @Template[type:cone|distance:30|traits:arcane,necromancy] must succeed at a @Check[type:fortitude|dc:31] save or become @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} for 1 minute (or @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} on a critical failure).</li>\n</ul>"
+                    "description": "<p>金龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>烈焰 Flame</strong> 龙喷出一片烈焰，对@Template[type:cone|distance:30|traits:arcane,evocation,fire,damaging-effect]区域内的生物造成[[/r {11d6}[fire]]]{11d6火焰伤害}（@Check[type:reflex|dc:31|basic:true]豁免）。</li>\n<li><strong>衰弱气体 Weakening Gas</strong> 龙喷出一片能使人衰弱的气体。每个处于@Template[type:cone|distance:30|traits:arcane,necromancy]区域内的生物必须成功通过一次@Check[type:fortitude|dc:31]检定，否则将会在分钟内@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（在大失败时则为@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}）。</li>\n</ul>"
                 },
                 "lLkkEbmwGunnyE2e":{
                     "name": "龙之狂怒 Draconic Frenzy",
@@ -19044,7 +19044,7 @@
                 },
                 "yYFISOz912MYdEDd":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>The dragon breathes a spray of acid that deals [[/r {8d6}[acid]]]{8d6酸液伤害} in a @Template[type:line|distance:60]{60尺线形} (@Check[type:reflex|dc:25|basic:true]豁免).</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
+                    "description": "<p>龙喷出一股酸雾，对@Template[type:line|distance:60]{60尺线形}区域内的生物造成[[/r {8d6}[acid]]]{8d6酸液伤害}（@Check[type:reflex|dc:25|basic:true]豁免）。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
                 }
             }
         },
@@ -19095,11 +19095,11 @@
                 },
                 "fchD9qieGM9L8Vag":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>青铜龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>闪电 Lightning</strong> The dragon breathes lightning in a @Template[type:line|distance:60|traits:arcane,electricity,evocation,damaging-effect]{60尺线形} that deals [[/r {6d12}[electricity]]]{6d12电击伤害} (@Check[type:reflex|dc:28|basic:true]豁免).</li>\n<li><strong>驱人气体 Repulsion Gas</strong> The dragon breathes a @Template[type:line|distance:60|traits:arcane,abjuration,incapacitation,mental]{60尺线形} of repulsive gas. Each creature in the area must succeed at a @Check[type:will|dc:28] save or become @Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing} from the dragon for 1 round (or 2 rounds on a critical failure).</li>\n</ul>"
+                    "description": "<p>青铜龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>闪电 Lightning</strong> 龙喷出一束闪电，对@Template[type:line|distance:60|traits:arcane,electricity,evocation,damaging-effect]{60尺线形}区域内的生物造成[[/r {6d12}[electricity]]]{6d12电击伤害}（@Check[type:reflex|dc:28|basic:true]豁免）。</li>\n<li><strong>驱人气体 Repulsion Gas</strong> 龙对@Template[type:line|distance:60|traits:arcane,abjuration,incapacitation,mental]{60尺线形}区域内喷出一股驱人气体。在线形区域内的每个生物必须成功通过一次@Check[type:will|dc:28]检定，否则将会从龙这里@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮，在大失败时则为2轮。</li>\n</ul>"
                 },
                 "PMBSc3Ypq9HMYeKR":{
                     "name": "水之主 Water Mastery",
-                    "description": "<p>For up to 30 minutes per day, the dragon, along with allied creatures and vessels within 50尺, can move at double their normal Speed in water.</p>"
+                    "description": "<p>每天最多30分钟，龙以及50尺内的盟友生物和载具能够在水中以两倍的普通速度移动。</p>"
                 }
             }
         },
@@ -19154,7 +19154,7 @@
                 },
                 "RRFUmIxRsdfJqd8F":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>赤铜龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>酸液</strong> The dragon breathes acid in a @Template[type:line|distance:60|traits:acid,arcane,evocation,damaging-effect] that deals [[/r {8d6}[acid]]]{8d6酸液伤害} (@Check[type:reflex|dc:26|basic:true]豁免).</li>\n<li><strong>迟缓气体</strong> The dragon breathes a @Template[type:line|distance:60|traits:arcane,transmutation] of slowing gas. Each creature in the area must succeed at a @Check[type:fortitude|dc:26] save or be @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 round (or @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2} on a critical failure).</li>\n</ul>"
+                    "description": "<p>赤铜龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>酸液</strong> 龙喷出一股酸液，对@Template[type:line|distance:60|traits:acid,arcane,evocation,damaging-effect]区域内的生物造成[[/r {8d6}[acid]]]{8d6酸液伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。</li>\n<li><strong>迟缓气体</strong> 龙对@Template[type:line|distance:60|traits:arcane,transmutation]区域内喷出一股迟缓气体。在线型区域内的每个生物必须成功通过一次@Check[type:fortitude|dc:26]检定，否则将会在1轮内@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（在大失败时则为@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。</li>\n</ul>"
                 }
             }
         },
@@ -19211,13 +19211,13 @@
                 },
                 "EwYIwG40atiWUwhI":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>金龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>烈焰 Flame</strong> The dragon breathes a blast of flame in a @Template[type:cone|distance:30|traits:arcane,evocation,fire,damaging-effect] that deals [[/r {11d6}[fire]]]{11d6火焰伤害} (@Check[type:reflex|dc:31|basic:true]豁免).</li>\n<li><strong>衰弱气体 Weakening Gas</strong> The dragon breathes a blast of weakening gas. Each creature within a @Template[type:cone|distance:30|traits:arcane,necromancy] must succeed at a @Check[type:fortitude|dc:31] save or become @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} for 1 minute (or @Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} on a critical failure).</li>\n</ul>"
+                    "description": "<p>金龙从两种方式中选择一种吐息。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>\n<ul>\n<li><strong>烈焰 Flame</strong> 龙喷出一片烈焰，对@Template[type:cone|distance:30|traits:arcane,evocation,fire,damaging-effect]区域内的生物造成[[/r {11d6}[fire]]]{11d6火焰伤害}（@Check[type:reflex|dc:31|basic:true]豁免）。</li>\n<li><strong>衰弱气体 Weakening Gas</strong> 龙喷出一片能使人衰弱的气体。每个处于@Template[type:cone|distance:30|traits:arcane,necromancy]区域内的生物必须成功通过一次@Check[type:fortitude|dc:31]检定，否则将会在分钟内@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（在大失败时则为@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}）。</li>\n</ul>"
                 }
             }
         },
         "Young Green Dragon": {
             "name": "青年绿龙 Young Green Dragon",
-            "speed": "穿林步 Woodland Stride",
+            "speed": "穿林步",
             "senses": "黑暗视觉, 灵敏嗅觉(模糊感官) 60尺",
             "publicNotes": "<p>绿龙是彩色龙中最为喜好沉思的，同样也是最为平易近人的那一类。理解绿龙的关键是要先理解它们对于知识和自律的执著。只要能够小心谨慎地利用绿龙的执迷，任何一场遭遇都可能以外交的方式收场，然而只要有一丁点的过失或怠慢都可能会将交涉变为一场暴虐的袭击。与绝大多数的彩色龙一样，绿龙无法忍受任何蠢货，只是它们对于“不蠢”的要求着实是太高了一些。</p>\n<p>尽管绿龙比起它的彩色龙表亲而言在和其他生物或龙打交道的时候显得相当外放，但它们实际上更偏爱过上与世隔绝的平静生活。它们倾向于栖息在森林中被层层叠叠的灌木所环绕着的最为峻险的区域，或是待在那些阴沉峡谷的深处。如果地形合适，一些绿龙会在自然形成的洞窟中安家，然后对其进行拓展以满足自身的需求。</p>\n<p>绿龙的骄傲使得它们尽可能的保护它们的森林家园。它们觉得一片郁郁葱葱的密林都是它们独自耕耘的结果。这也使得一些绿龙会走上德鲁伊教的道路，不过它们中的大多数依旧更喜欢研究奥术技艺和神秘知识。绝大部分的绿龙都会在某个特定的研究领域中穷根究底，并且通过不暴露自己真身的笔名来与该领域中其他的学者们通信。无论聚焦于哪个领域，绿龙都会努力提升自己，对于知识的渴望使得他们更愿意和其他生物采取外交的态度以能够获得各种新讯息。</p>\n<p>它们的收藏通常都被保管的井井有条，并且充斥着由于它们自身那难以理解的原因而收集到的古代学术卷册和魔法卷轴。这些珍宝中有许多来自世界各地，不少冒险者通过付出稀有的古董或是失落文明的学识来满足绿龙的自我意识从而得以在与它们的遭遇中幸存。</p>\n<hr />\n<p>从强大无比的位面龙到奇幻诡谲的灵域龙，尽管这世上龙的种类多种多样，却少有一类龙能够像彩色龙那样广为人知却又令人恐惧。爪抓、齿咬、吐息，即使鳞片的颜色各不相同，每种彩色龙都会以其独有的风格散布它们各自的暴虐。与大部分的生物不同，龙只会随着年龄的增长而变得愈发强大。对财宝的贪婪，对食物的饥渴，对鲜血的渴望，对权势的欲望，这些都是属于它们的传说。拥有着无可匹敌的强韧肉身，这些龙类大多道德败坏，并且常常扮演者犯罪黑幕、邪恶暴君或是贪婪掠夺者的角色。</p>",
             "items":{
@@ -19304,7 +19304,7 @@
                 },
                 "k72C42LOvjUNSP6f":{
                     "name": "冰结之血 Freezing Blood",
-                    "description": "<p><strong>触发</strong> 一个相邻的生物对龙造成了穿刺或者挥砍伤害。</p>\n<hr />\n<p><strong>效果</strong> The dragon's blood sprays on the creature, dealing [[/r {1d6}[cold]]]{1d6寒冷伤害}. A creature that takes cold damage in this way is @Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 round.</p>"
+                    "description": "<p><strong>触发</strong> 一个相邻的生物对龙造成了穿刺或者挥砍伤害。</p>\n<hr />\n<p><strong>效果</strong> 龙的血飞溅到该生物身上，造成[[/r {1d6}[cold]]]{1d6寒冷伤害}。一个因此受到寒冷伤害的生物被@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
                 },
                 "0d64w4IL9e8s6Tft":{
                     "name": "气势凶猛 Frightful Presence",
@@ -19312,11 +19312,11 @@
                 },
                 "7CwkOMYGSOhef0ns":{
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>The dragon breathes a cloud of frost that deals [[/r {7d6}[cold]]]{7d6寒冷伤害} in a @Template[type:cone|distance:30]{30尺锥形} (@Check[type:reflex|dc:24|basic:true]豁免).</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
+                    "description": "<p>龙喷出一片霜云，对@Template[type:cone|distance:30]{30尺锥形}区域内的生物造成[[/r {7d6}[cold]]]{7d6寒冷伤害}（@Check[type:reflex|dc:24|basic:true]豁免）。</p>\n<p>它在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
                 },
                 "SFJ6XAQzgQGC5zVV":{
                     "name": "震地一击 Ground Slam",
-                    "description": "<p>The dragon slams into the ground. It can do this if it's on the ground or Flying within 10 feet of the ground. Each creature on the ground within @Template[type:emanation|distance:10]{10尺} must succeed at a @Check[type:reflex|dc:24|traits:damaging-effect] save or fall @Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} and take [[/r {2d6}[bludgeoning]]]{2d6钝击伤害}.</p>\n<p>The dragon can then Step.</p>"
+                    "description": "<p>龙猛烈地撞击地面。它可以在地面上或离地10尺飞行的时候使用这一动作。每个在地面上且位于@Template[type:emanation|distance:10]{10尺}之内的生物必须成功通过一次@Check[type:reflex|dc:24|traits:damaging-effect]豁免，否则将会@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}并且承受[[/r {2d6}[bludgeoning]]]{2d6钝击伤害}。</p>\n<p>而后，龙可以进行一次快步。</p>"
                 },
                 "1yMkzmd8oyagICBZ":{
                     "name": "冰面攀爬 Ice Climb",
@@ -19340,7 +19340,7 @@
                 },
                 "S6FJYbxVlzTTwn0T":{
                     "name":"烟雾视觉 Smoke Vision",
-                    "description":"<p>烟雾（smoke）不会阻碍焰龙兽的视觉；他会忽略烟雾带来的@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealment}</p>"
+                    "description":"<p>烟雾不会阻碍焰龙兽的视觉；他会忽略烟雾带来的@Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealment}。</p>"
                 },
                 "IuK4DrLEyP6BmKi2":{
                     "name":"龙之狂怒 Draconic Frenzy",
@@ -19421,7 +19421,7 @@
             "senses": "黑暗视觉",
             "items":{
                 "aFTYkeNI6jd2TfGi":{
-                    "name":"异界传送（仅自身跟骑手）",
+                    "name":"异界传送（仅自身跟骑手） Plane Shift",
                     "description":"<p>你和你的盟友穿过位面之间的屏障。目标移动到另一个位面，例如火焰位面（Plane of Fire），阴影位面（Shadow Plane），或者深渊（Abyss）。你必须对目的地位面有所了解，并且使用该位面的材料制作的魔法共鸣音叉作为该法术的器材。多数主要位面的共鸣音叉，如同异界传送法术本身一样，罕贵度为罕见。鲜为人知的位面和半位面的共鸣音叉通常罕贵度为稀有。该法术非常不精确，你会在某个目标（由你选择）上次到达该位面时所在的位置相距1d20×25英里的位置出现。如果对所有目标而言均是第一次旅行到特定位面，你会在位面上的一个随机位置出现。异界传送 不会提供返程的方法，但是通过再次施放异界传送令你能回到你之前所在的位面，除非有什么另外情况。</p>"
                 },
                 "hvrW7fEOtezPrmRv":{
@@ -19551,8 +19551,8 @@
                     "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
                 },
                 "aWM3N85sMlll5djQ":{
-                    "name": "Abyssal Plague",
-                    "description": "<p>A creature can't recover from drained until abyssal plague is cured.</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:28]</p>\n<p><strong>阶段1</strong> @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1天)</p>\n<p><strong>阶段2</strong> @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained} increases by 2 (1天)</p>"
+                    "name": "深渊瘟疫 Abyssal Plague",
+                    "description": "<p>生物的流失状态不会自我恢复，直到疾病被治愈。.</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:28]</p>\n<p><strong>阶段1</strong> @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1天)</p>\n<p><strong>阶段2</strong> @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态值增加2 (1天)</p>"
                 }
             }
         },
@@ -19687,7 +19687,7 @@
                     "name": "黑暗视觉 Darkvision"
                 },
                 "NXmjfJq99Q2rTjVD": {
-                    "name": "生命感知60尺 Lifesense 60尺"
+                    "name": "生命感知60尺"
                 },
                 "C2pJTs2tt6oHDcFW": {
                     "name": "变形 Change Shape",
@@ -19856,7 +19856,7 @@
             }
         },
         "Chimera (Red Dragon)": {
-            "name": "奇美拉（红龙） Chimera (Red Dragon)",
+            "name": "奇美拉(红龙) Chimera (Red Dragon)",
             "senses": "黑暗视觉, 灵敏嗅觉(模糊)30尺",
             "publicNotes": "<p>奇美拉是一种典型的非自然怪物，由各种不同生物的部分组合而成：在这里的例子中，它由狮子、龙和山羊组成。奇美拉野蛮、可憎、饥肠辘辘，会吃掉任何它看到的生物，但有时意志强大的主人能迫使奇美拉成为守卫甚至坐骑。</p>",
             "items": {
@@ -19995,7 +19995,7 @@
                 },
                 "mnmPiXMTDMbeqRnI": {
                     "name": "借机攻击 Attack of Opportunity",
-                    "description": "<p>仅能使用啮咬 Jaws</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                    "description": "<p>仅能使用啮咬</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
                 "y1CWoANqqDtCbae7": {
                     "name": "气势凶猛 Frightful Presence",
