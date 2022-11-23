@@ -13033,69 +13033,312 @@
 		"Spirit Naga": {
 			"name": "Spirit Naga",
 			"publicNotes": "<p>In naga culture, the foul-tempered, unkempt spirit naga holds a contemptible place similar to that of hags in humanoid cultures. These decrepit creatures live out lives of solitude, sought out only by those who are foolish or brave enough to think they can benefit from the spirit naga's powers without paying a heavy price-for most who dare to show such hubris, the price is their own lives.</p>\n<p>Spirit nagas seek out desolate ruins and places long associated with death and corruption. These sinister, serpentine beings can be found in abandoned graveyards, crumbled fortresses, rotting swamps, and blighted woodlands. Though they may know little of the actual history of such places, the nagas are nonetheless attracted to the psychic remnants of evil deeds and tormented spirits that remain within the earth and stones there.</p>\n<p>Despite their hideous appearance and treatment as pariahs by other nagas, spirit nagas feel a profound pride in their abilities and even in their hermetic existences. They see themselves as connected to a greater force whose mysteries are revealed only to those who can cast off the trappings and morals of \"civilized\" society. Even so, spirit nagas gleefully accept the worship of other creatures willing to bow to their capricious whims. They often form cults around themselves, using their charm spells and rituals to ensnare the minds of a few key individuals who spread the nagas' foul influence throughout a community.</p>\n<hr />\n<p>Nagas are identifiable by their serpentine bodies and strange, humanlike heads. All nagas have magical abilities and great intelligence, which they combine to advance their own agendas.</p>",
-			"senses": "darkvision"
+			"senses": "darkvision",
+			"items":{
+				"ZCOJIf8Nr9RxA4Pj":{
+					"name": "Occult Spontaneous Spells"
+				},
+				"VymBhTUzz0FQ2E7u":{
+					"name": "Rituals"
+				},
+				"DOihMsQlvxGBJLxK":{
+					"name": "Coven Spells"
+				},
+				"22SLn01ObWPs2wrH":{
+					"name": "Coven Ritual"
+				},
+				"yXsCXHBtJlv801hG":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7环)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"JAkbON2RxsaUuRL8":{
+					"name": "卜筮术 Augury",
+					"description": "<p>你瞥见未来的模糊片段。在施放该法术时，询问一个特定行为的结果。该法术可以预测30分钟内的未来的结果，并且会揭示GM认为最为可能的后续结果。</p>\n<ul>\n<li><strong>吉</strong> 该结果将会是好的。</li>\n<li><strong>凶</strong> 该结果可能不妙。</li>\n<li><strong>吉且凶</strong> 该结果好坏参半。</li>\n<li><strong>平</strong> 不会有明显好或坏的结果。</li>\n</ul>\n<p>GM暗骰@Check[type:flat|dc:6|traits:secret]检定。如果失败，结果永远是 \"平\" 。这令 \"平\" 的结果究竟是否准确无法被判明。如果任何人询问和先前施放的卜筮术相同的主题，使用第一次施放时得到的暗骰结果。如果环境情况发生变化，有可能会得到不同的结果。</p>"
+				},
+				"bhHtf5BItsngQL42":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"1BD5jRohvhbGdDwq":{
+					"name": "尖牙 Fangs",
+					"description": ""
+				},
+				"mMCpgVRLUjGayWTB":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"Jspfa7SNI6gNhPK4":{
+					"name": "巫团 Coven",
+					"description": "<p>A spirit naga adds <em>@UUID[Compendium.pf2e.spells-srd.U58aQWJ47VrI36yP]{Hallucination}</em>, <em>@UUID[Compendium.pf2e.spells-srd.9BnhadUO8FMLmeZ3]{Mind Probe}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</em> to their coven's spells.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+				},
+				"QTnEqxIt2MaL0WlZ":{
+					"name": "Spirit Naga Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:28]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+				}
+			}
 		},
 		"Sportlebore Swarm": {
 			"name": "Sportlebore Swarm",
 			"publicNotes": "<p>A swarm of sportlebores is a much more dangerous foe than a single insect.</p>",
-			"dr": [
-				{
-					"label": "Bludgeoning",
-					"type": "bludgeoning",
-					"description": "3"
+			"senses": "low-light vision",
+			"items":{
+				"38rv8OhglPWCKDoM":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
 				},
-				{
-					"label": "Piercing",
-					"type": "piercing",
-					"description": "7"
+				"wugLYHXdCUg05j8X":{
+					"name": "Sportlebore Infestation",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 hour)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 hour)</p>\n<p><strong>Stage 4</strong> [[/r {4d6}[bludgeoning]]]{4d6 bludgeoning damage} (@Check[type:fortitude|dc:25|basic:true] save) as the host painfully vomits out a sportlebore swarm and returns to stage 1</p>"
 				},
-				{
-					"label": "Slashing",
-					"type": "slashing",
-					"description": "7"
+				"8RpmS3nHFfxBiGaY":{
+					"name": "母巢思维 Swarm Mind"
+				},
+				"dl10m47AKrgF3eVj":{
+					"name": "Pour Down Throat",
+					"description": "<p><strong>Trigger</strong> A creature in the sportlebore swarm's area speaks, uses a verbal component, or opens its mouth</p>\n<hr />\n<p><strong>Effect</strong> A portion of the sportlebore swarm attempts to surge down the throat of the triggering creature, which must attempt a @Check[type:fortitude|dc:25|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature gets a mouthful of sportlebores. It spits the insects out and avoids further damage, but it can't speak for 1 round, and if it was performing a verbal spellcasting action, the spell fails and the caster wastes the action.</p>\n<p><strong>Failure</strong> The creature takes [[/r {4d6}[piercing]]]{4d6 piercing damage} from sportlebore bites, can't speak for 1 round, and loses a spell as noted under Success.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also exposed to sportlebore infestation.</p>"
+				},
+				"zE1qMdAfyFxOdrrK":{
+					"name": "Swarming Bites",
+					"description": "<p>Each creature in the sportlebore swarm's area takes [[/r {4d6}[piercing]]]{4d6 piercing damage} (@Check[type:reflex|dc:25|basic:true] save).</p>"
 				}
-			],
-			"senses": "low-light vision"
+			}
 		},
 		"Spriggan Bully": {
 			"name": "Spriggan Bully",
 			"publicNotes": "<p>The typical spriggan is a bully who prefers to take live prisoners in fights, but only to ensure that they have a large stock of living victims to torment, tease, and abuse. They train to use weapons in nonlethal ways that inflict the maximum amount of pain even as they guard against accidental death. When not bullying prisoners or hunting for new victims, spriggan bullies enjoy drinking, watching others fight, and fighting among themselves.</p>",
-			"senses": "low-light vision"
+			"senses": "low-light vision",
+			"items":{
+				"kM1AoSQF8Q3phCJt":{
+					"name": "Primal Innate Spells"
+				},
+				"FBYVc1nHfCqd2hLL":{
+					"name": "钉头锤 Morningstar",
+					"description": ""
+				},
+				"rkayE4XQbhVQPYCS":{
+					"name": "弩 Crossbow",
+					"description": ""
+				},
+				"T0KOWsF7QwJ1oDQq":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"bN7RCHuZpCHYpb2L":{
+					"name": "Enraged Growth",
+					"description": "<p><strong>Trigger</strong> The spriggan bully takes damage</p>\n<hr />\n<p><strong>Effect</strong> The spriggan bully grows to Large size, along with their equipment (which returns to natural size if removed). The spriggan bully's reach increases by 5 feet. They regain 5 Hit Points and gain a +2 status bonus to melee attacks and damage rolls. This effect continues until the end of the spriggan bully's next turn, but on any turn in which the spriggan bully deals damage to another creature and is not @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}, the effect extends until the end of the following turn.</p>\n<p>When Enraged Growth ends, the spriggan bully is fatigued for 1 hour.</p>"
+				},
+				"5CgVbeYygEXhZf6y":{
+					"name": "Bully's Bludgeon",
+					"description": "<p>The spriggan bully makes a morningstar Strike with a +2 circumstance bonus to its attack roll. This attack is nonlethal.</p>"
+				},
+				"9bkFg1e33lRT8urN":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>The spriggan bully's Strikes deal an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Spriggan Warlord": {
 			"name": "Spriggan Warlord",
 			"publicNotes": "<p>While the leaders of larger spriggan enclaves tend to be uniquely trained warriors with highly specialized skills, spriggan warlords are fond of the traditional spriggan weaponry of morningstar and crossbow, valuing this traditional fighting style for its simplicity and for using both weapons to their full potential. Spriggan warlords often serve as sub-commanders in large groups, filling roles in spriggan society akin to captains of the guard or bodyguards to spriggan royalty. In smaller groups or remote outposts, a single spriggan warlord is typically in charge of a band of spriggan bullies.</p>",
-			"senses": "low-light vision"
+			"senses": "low-light vision",
+			"items":{
+				"IoKSTbFElqXPiGiX":{
+					"name": "Primal Innate Spells"
+				},
+				"shoUZGVA0Hg78nbc":{
+					"name": "飞行术 Fly",
+					"description": "<p>目标能够在空气中穿梭，获得等于其速度或者20尺的飞行速度，取较高者。</p>\n<hr />\n<p><strong>升阶 (7环)</strong> 该持续时间增加到1小时。</p>"
+				},
+				"iHz93nPS055VlpTQ":{
+					"name": "+1 Crossbow",
+					"description": "<p>This ranged weapon has a bow-like assembly mounted on a handled frame called a tiller. The tiller has a mechanism to lock the bowstring in place, attached to a trigger mechanism that releases the tension and launches a bolt.</p>"
+				},
+				"xrKfhlv0heNZjJQl":{
+					"name": "+1 Morningstar",
+					"description": "<p>This weapon has a short shaft ending in a metal ball studded with spikes.</p>"
+				},
+				"uYqNB5URDvfKjzHe":{
+					"name": "钉头锤 Morningstar",
+					"description": ""
+				},
+				"9k7o784yI4Bka8ys":{
+					"name": "弩 Crossbow",
+					"description": ""
+				},
+				"T0KOWsF7QwJ1oDQq":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"OKH1R1FoBSEm3oKP":{
+					"name": "Enraged Growth",
+					"description": "<p><strong>Trigger</strong> The spriggan warlord takes damage</p>\n<hr />\n<p><strong>Effect</strong> The spriggan warlord grows to size Large, along with their equipment (which returns to natural size if removed). The spriggan warlord's reach increases by 5 feet. They regain 15 Hit Points and gain a +2 status bonus to melee attack and damage rolls.</p>\n<p>This effect continues until the end of the spriggan warlord's next turn, but on any turn in which the spriggan warlord deals damage to another creature and is not @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}, the effect extends until the end of the following turn.</p>\n<p>When Enraged Growth ends, the spriggan warlord is fatigued for 1 hour.</p>"
+				},
+				"YHmyiWDMvEgujfl1":{
+					"name": "Bully's Bludgeon",
+					"description": "<p>The spriggan warlord makes a morningstar Strike with a +2 circumstance bonus to its attack roll. This attack is nonlethal.</p>"
+				},
+				"7kGu1ORgE4Nay79B":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>The spriggan warlord's Strikes deal an additional 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"FapwAUPhHeXc1NKj":{
+					"name": "Warlord's Training",
+					"description": "<p>A spriggan warlord has access to the critical specialization effects for crossbows and morningstars, and the reload of any crossbow they wield is reduced by 1 (to a minimum of 0).</p>"
+				}
+			}
 		},
 		"Star Archon": {
 			"name": "Star Archon",
 			"publicNotes": "<p>Embodiments of the virtue of prudence, star archons serve as philosophers and administrators, and in times of war as the tacticians, strategists, and generals of archon armies. Star archons burn with the glory and intensity of a sun, and their sense of duty and desire to defeat evil are as indefatigable as the light of the stars. While their dazzling intellects and unmatched strategic cunning make them most useful in war rooms rather than on battlefields, star archons are fierce opponents when motivated to enter the fray. Those who witness the self-sacrifice of a star archon and live to tell the tale describe the experience in terms that might befit the sight of a supernova at the instant the star collapses in on itself.</p>",
-			"dr": [
-				{
-					"label": "Fire",
-					"type": "fire",
-					"description": "15"
-				}
-			],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, true seeing",
-			"languages": "Tongues"
+			"languages": "Tongues",
+			"items":{
+				"oJLAT2NTlht6zFtA":{
+					"name": "Divine Innate Spells"
+				},
+				"mzVH7SLTrdxDaZ3j":{
+					"name": "真视术(恒定法术) True Seeing (Constant)",
+					"description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"y12tfuxEBFbR9qgU":{
+					"name": "巧言术(恒定法术) Tongues (Constant)",
+					"description": "<p>无论什么语言，目标都可以理解其所有的词语，并且向其他生物用该语言交流。当处于一群各异的生物中时，每次目标将要说话，他可以选择一个生物，并使用一种该生物理解的语言来讲述，即使该目标不知道这语言具体是什么。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 持续时间为8小时。</p>"
+				},
+				"mjBHvn4bdXCaG65R":{
+					"name": "次元门(随意施法) Dimension Door (At will)",
+					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+				},
+				"KRlaXOK9VXp9mlCh":{
+					"name": "+2 Greater Striking Starknife",
+					"description": "<p>From a central metal ring, four tapering metal blades extend like points on a compass rose. When gripping a starknife from the center, the wielder can use it as a melee weapon. It can also be thrown short distances.</p>"
+				},
+				"3KU5Y0WaS2TkXwb0":{
+					"name": "+2 Greater Resilient Full Plate",
+					"description": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>"
+				},
+				"lgHFmVhsmZOzCgFm":{
+					"name": "Returning Starknife"
+				},
+				"2NXWhRmjG27cSo87":{
+					"name": "星刃 Starknife",
+					"description": ""
+				},
+				"taEoZD9fGbhrr6G9":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"GmbRFl9ktqpdH1WE":{
+					"name": "随意施法 At-Will Spells"
+				},
+				"agTNdZe3k9VHuHav":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"LPLiXKoxMuJu4ifi":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"xmYe9vSGZokROsE8":{
+					"name": "Blinding Soul",
+					"description": "<p>Whenever the star archon takes slashing damage, bright light pours from their wounds. Non-archons within 10 feet must attempt a @Check[type:fortitude|dc:38] save.</p>\n<p>On a failure, a creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d4 #rounds]]{1d4 rounds} instead.</p>\n<p>The creature is then temporarily immune for 1 round.</p>"
+				},
+				"XuX1YKa36ctJmZJH":{
+					"name": "Explosive Rebirth",
+					"description": "<p>When killed, the star archon explodes in a blinding flash of holy energy that deals [[/r {12d6}[fire]]]{12d6 fire damage} and [[/r {12d6}[good]]]{12d6 good damage} to anything in a @Template[type:emanation|distance:100], with a @Check[type:reflex|dc:40|basic:true] save.</p>\n<p>A non-archon creature that sees the explosion and critically fails its save is permanently @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} as well.</p>\n<p>The slain star archon reincarnates [[/br 1d4 #rounds]]{1d4 rounds} later as a shield archon.</p>"
+				},
+				"x3aksJFYweZk98OP":{
+					"name": "Retributive Strike",
+					"description": "<p><strong>Damage Reduction</strong> 21</p>\n<p>A star archon can also make a Retributive Strike by throwing its starknife, and the enemy and ally can be within 60 feet instead of 15 feet.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.RetributiveStrike]</p>"
+				},
+				"NqdW9zuvmBwHZScr":{
+					"name": "Archon's Door",
+					"description": "<p>Once per day, if an archon sees another creature cast dimension door, the archon can use <em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{Dimension Door}</em> (heightened to 5th level) within 1 round to attempt to follow that creature to the maximum distance of the archon's dimension door. If the archon's dimension door has enough distance, the archon appears the same distance and direction from the creature as before either creature used dimension door.</p>"
+				},
+				"OJA9CljFVtmCuzlZ":{
+					"name": "Prudent Asterism",
+					"description": "<p>The star archon calculates a celestial constellation and sends their starknife flying along that path from one foe to the next. It makes a starknife Strike against a target within 60 feet. If the Strike hits, it can make another Strike at a different target within 60 feet of the first target, and so on, until it misses with a Strike or runs out of targets it hasn't attacked within range of the most recent target.</p>\n<p>The star archon can attack a given target only once per use of this ability. These attacks don't apply any range increment penalty, and the star archon resolves all the attacks before increasing the multiple attack penalty.</p>"
+				},
+				"YjPhCJNyJk71S8rV":{
+					"name": "Warfare Lore"
+				}
+			}
 		},
 		"Steam Mephit": {
 			"name": "Steam Mephit",
 			"publicNotes": "<p>These brash and arrogant creatures are among the more energetic mephits. They are quick to nominate themselves the leaders of any group, barking out orders in shrill, high-pitched voices and insisting on having everything done their way. Even when they aren't bossing others around, the constant hiss of steam escaping from their pores ensures that there is never a quiet moment.</p>",
 			"senses": "darkvision, steam vision",
-			"hp": "(fast healing 2 (in boiling water or steam))"
+			"hp": "(fast healing 2 (in boiling water or steam))",
+			"items":{
+				"Lc0XTAOFODosmzys":{
+					"name": "Arcane Innate Spells"
+				},
+				"bNbPPpEgnT6EWV5B":{
+					"name": "Claw"
+				},
+				"jK8jhXaoNnEEDRLV":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"0IwQxSLxEqwPcB3q":{
+					"name": "Steam Vision",
+					"description": "<p>The steam mephit ignores the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from mist and steam.</p>"
+				},
+				"CpVMSme8RWwiT0UY":{
+					"name": "Fast Healing 2 (in boiling water or steam)"
+				},
+				"uyXWXmerHoFxX1jU":{
+					"name": "Boiling Rain",
+					"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The steam mephit calls down a rain boiling water that surrounds them in a @Template[type:emanation|distance:10]. Creatures in the area take [[/r {2d8}[fire]]]{2d8 fire damage} (@Check[type:reflex|dc:17|basic:true] save), and small unattended flames (such as torches) are extinguished.</p>"
+				},
+				"j9L9BPR6t7eHpHAt":{
+					"name": "Breath Weapon",
+					"description": "<p>The steam mephit spits a cloud of steam in a @Template[type:cone|distance:15] that deals [[/r {2d6}[fire]]]{2d6 fire damage} to each creature within the area (@Check[type:reflex|dc:17|basic:true] save).</p>\n<p>The steam mephit can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Stingray": {
 			"name": "Stingray",
 			"publicNotes": "<p>Found in salt or fresh water, stingrays are normally passive creatures, but when threatened or cornered, they lash out with their tails to lance foes with their toxic stingers. Stingrays often bury themselves in mud, sand, or sea grass, and unfortunately for those wading in shallow waters, stepping on an unseen stingray is a surefire way to receive a painful sting.</p>",
-			"senses": "electrolocation (imprecise) 30 feet, low-light vision"
+			"senses": "electrolocation (imprecise) 30 feet, low-light vision",
+			"items":{
+				"TpfBgK9H4iQNfMgS":{
+					"name": "Sting"
+				},
+				"tcE3BBuNT8JtsDJQ":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"r3hGo7TAQ3TtGwLY":{
+					"name": "Electrolocation",
+					"description": "<p>A stingray in water can use its electrolocation as an imprecise sense at the listed range to detect living creatures that are in the same body of water as itself.</p>"
+				},
+				"c2nQF7qTMD3mwnrM":{
+					"name": "Stingray Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
+				}
+			}
 		},
 		"Striding Fire": {
 			"name": "Striding Fire",
 			"publicNotes": "<p>An embodiment of the speed and chaos of a spreading blaze, a striding fire appears as a lithe and long-limbed humanoid composed of shifting-hued flames churning within a skeleton-like framework.</p>",
-			"senses": "darkvision, smoke vision"
+			"senses": "darkvision, smoke vision",
+			"items":{
+				"AoE6IxAfyxcUD4Jo":{
+					"name": "拳头 Fist",
+					"description": "<p>@Localize[PF2E.PersistentDamage.Fire1d6.success]</p>"
+				},
+				"V5AYyUYH7UjuXk8T":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"7B1Q0p1BKuDwOEoo":{
+					"name": "Smoke Vision",
+					"description": "<p>The striding fire ignores the @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} condition from smoke.</p>"
+				},
+				"up0HVVMUk86V0DdT":{
+					"name": "Burning Rush",
+					"description": "<p>The striding fire Strides up to double its Speed in a straight line. Its movement during this Stride doesn't trigger reactions. Any creature the striding fire was adjacent to at any point during this Stride must attempt a @Check[type:reflex|dc:24|basic:true] save. If it critically fails, it is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} by a wave of heated air.</p>\n<p>The striding fire can't use Burning Rush for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Stygira": {
 			"name": "Stygira",
@@ -13108,72 +13351,453 @@
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "gemsight"
+			"senses": "gemsight",
+			"items":{
+				"SITpZWO5sj03l95G":{
+					"name": "Occult Innate Spells"
+				},
+				"uRbNro9mLAqvYrrE":{
+					"name": "卜筮术 Augury",
+					"description": "<p>你瞥见未来的模糊片段。在施放该法术时，询问一个特定行为的结果。该法术可以预测30分钟内的未来的结果，并且会揭示GM认为最为可能的后续结果。</p>\n<ul>\n<li><strong>吉</strong> 该结果将会是好的。</li>\n<li><strong>凶</strong> 该结果可能不妙。</li>\n<li><strong>吉且凶</strong> 该结果好坏参半。</li>\n<li><strong>平</strong> 不会有明显好或坏的结果。</li>\n</ul>\n<p>GM暗骰@Check[type:flat|dc:6|traits:secret]检定。如果失败，结果永远是 \"平\" 。这令 \"平\" 的结果究竟是否准确无法被判明。如果任何人询问和先前施放的卜筮术相同的主题，使用第一次施放时得到的暗骰结果。如果环境情况发生变化，有可能会得到不同的结果。</p>"
+				},
+				"5ImSwYK5kXJKpZbH":{
+					"name": "Gemstone"
+				},
+				"IWSVjUBcLTretOIM":{
+					"name": "Claw"
+				},
+				"fiKhFiynAYN8X5if":{
+					"name": "Gemsight",
+					"description": "<p>As long as the stygira holds a gemstone, they can see through the gem with @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6]{Darkvision} and the effects of <em>@UUID[Compendium.pf2e.spells-srd.uqlxMQQeSGWEVjki]{True Seeing}</em>. The stygira is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} when they are not holding a gem in a hand.</p>"
+				},
+				"LqnyBEmxdZr7oIfJ":{
+					"name": "Light Sickness",
+					"description": "<p>A stygira in an area of bright light is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+				},
+				"gYBpkJDYJYKODQRK":{
+					"name": "Gem Gaze",
+					"description": "<p>The stygira holds aloft a gem and gazes into the mind of a creature within 30 feet, infusing the creature's thoughts with visions of the creature's own dead body slowly petrifying.</p>\n<p>The creature must succeed at a @Check[type:will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+				},
+				"pSl7SmKRkTYkQI1N":{
+					"name": "Stone Curse",
+					"description": "<p>Wounds dealt by the stygira's claws leave the flesh bleached of color and turn the blood that runs from them dark gray. Each time a creature is damaged by the stygira's claw Strike, it must succeed at a @Check[type:fortitude|dc:25] save or become permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (slowed 2 on a critical failure) as its flesh stiffens like stone. If a creature is reduced to 0 Hit Points from the stygira's claw Strike and fails the saving throw against stone curse, it is @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified}. A creature that spends 8 hours in direct sunlight can attempt a new saving throw to remove the effects of stone curse, even if it has been petrified.</p>"
+				},
+				"SEbaazZFQvxYSyns":{
+					"name": "Gem Lore"
+				}
+			}
 		},
 		"Suli Dune Dancer": {
 			"name": "Suli Dune Dancer",
 			"publicNotes": "<p>Because their genie forebears are native to the Material Plane, sulis are by and large the most common geniekin on the Material Plane. They are often artisans and peace brokers, compelled to try and bring harmony and balance in a world wrought with discord.</p>\n<p>Sulis have a natural charm that often eludes other geniekin, but tend to layer on a level of boastful pride or even arrogance as a personal quirk or humorous facade. Few non-sulis realize that bragging is not simply the symptom of a puffed-up ego for sulis, but instead is a cultural institution easily comparable to human poetry. Sulis' boasts not only glorify themselves, but also secure their companions' and families' accomplishments in history, with the ultimate goal of spinning stories that will be retold for generations. This is especially true for sulis who have lived with other geniekin and have been seen as lesser for not having a strong connection to an Elemental Plane.</p>\n<p>Suli dune dancers are but one way these geniekin seek to integrate with other humanoid societies. They work to hone their skills at boasting to an extent that their claims help to bolster those they travel with. Suli from regions other than deserts adjust their names to match their terrains, but regardless of whether they prefer forests, hills, or arctic plains, their boasts remain as compelling.</p>",
-			"senses": ""
+			"items":{
+				"qXSjj6mmQyNoxHDN":{
+					"name": "Occult Spontaneous Spells"
+				},
+				"nktnO0aAYu7JllFI":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"pIbaFSljYvozaZdG":{
+					"name": "Tambourine (Handheld Musical Instrument)",
+					"description": "<p>Handheld instruments include bagpipes, a small set of chimes, small drums, fiddles and viols, flutes and recorders, small harps, lutes, trumpets, and similarly sized instruments. The GM might rule that an especially large handheld instrument (like a tuba) has greater Bulk. Heavy instruments such as large drums, a full set of chimes, and keyboard instruments are less portable and generally need to be stationary while played.</p>"
+				},
+				"GHbCLo2MkEFt1qai":{
+					"name": "弯刀 Scimitar",
+					"description": ""
+				},
+				"D89GcjloR9CLNbq8":{
+					"name": "Elemental Bulwark",
+					"description": "<p><strong>Trigger</strong> An enemy is about to damage the dune dancer with cold, electricity, or fire, or with a spell that has the air, earth, fire, or water trait</p>\n<hr />\n<p><strong>Effect</strong> The dune dancer gain resistance 2 against the triggering damage</p>"
+				},
+				"1Kmvtn64DZibqUls":{
+					"name": "Elemental Assault",
+					"description": "<p>Elemental magic fills the dune dancer's body or weapon. The dune dancer chooses one element and makes a melee Strike. The Strike deals an additional [[/r {1d4}]]{1d4 damage} of the indicated type and has the trait corresponding to the element:</p>\n<ul>\n<li><strong>Air</strong> electricity</li>\n<li><strong>Earth</strong> bludgeoning</li>\n<li><strong>Fire</strong> fire</li>\n<li><strong>Water</strong> cold</li>\n</ul>"
+				}
+			}
 		},
 		"Sunflower Leshy": {
 			"name": "Sunflower Leshy",
 			"publicNotes": "<p>Sunflower leshys are the ambassadors and social leaders of their kind. Their petals radiate from their heads in various hues with a serrated, leafy, beard-like ruff. When particularly excited, their eyes and petals glow with collected sunlight, and when they become depressed or saddened, their usually vibrant coloration grows correspondingly muted. These shifts in coloration are echoed in sunflower leshy art, which can lead to unexpected color palettes for artworks. For example, a human artist might illustrate Hell as a place of glowing lava and flickering flames, drawing upon many vibrant colors, but to a sunflower leshy, the only proper way to depict a place like Hell is in morose grays, blacks, and whites.</p>\n<p>The more adventurous sunflower leshys leave their communities to grow bonds with nearby settlements of humanoids. When interacting with humanoids, sunflower leshys are some of the most likely to act friendly and give strangers a chance to prove their good intentions, though they remain cautious. They're often accompanied by other, more powerful leshys.</p>",
 			"senses": "darkvision",
-			"languages": "Speak With Plants (Sunflowers Only)"
+			"languages": "Speak With Plants (Sunflowers Only)",
+			"items":{
+				"E283z5pYuHL8XdzA":{
+					"name": "Primal Innate Spells"
+				},
+				"pT1xpkQICFklLesg":{
+					"name": "Tendril"
+				},
+				"6Mfkl1CejuYcVcXf":{
+					"name": "Seed"
+				},
+				"cJFgwvR7wtsldJBw":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"LQBlltvEb0rVnJYA":{
+					"name": "Heliotrope",
+					"description": "<p>20 feet</p>\n<p><strong>Requirements</strong> The sunflower leshy begins its turn in an area of bright light</p>\n<hr />\n<p><strong>Effect</strong> The sunflower leshy reflects the sun or another source of bright light from their face. Each creature that ends its turn in the emanation must attempt a @Check[type:will|dc:16] save.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune to heliotrope for 24 hours.</p>\n<p><strong>Failure</strong> The creature is distracted by the light, becoming @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>"
+				},
+				"G3Qoqz5IMBvs9EYb":{
+					"name": "Verdant Burst",
+					"description": "<p>When a sunflower leshy dies, a burst of primal energy explodes from its body, restoring [[/r {1d8}[healing]]]{1d8 Hit Points} to each plant creature in a @Template[type:emanation|distance:30]. This area immediately fills with sunflowers, becoming difficult terrain.</p>\n<p>If the terrain is not a viable environment for these sunflowers, they wither after 24 hours.</p>"
+				},
+				"LwAD4kqFgkuoaJ0b":{
+					"name": "Change Shape",
+					"description": "<p>The sunflower leshy transforms into a Small flower. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"h20KMmp1wuDSm1Oa":{
+					"name": "Seed Spray",
+					"description": "<p>The sunflower leshy launches a deluge of seeds from their head in a @Template[type:cone|distance:15], dealing [[/r {2d6}[bludgeoning]]]{2d6 bludgeoning damage} to creatures within the area (@Check[type:reflex|dc:16|basic:true] save).</p>\n<p>It gains a +2 status bonus to this damage against @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} creatures.</p>\n<p>The sunflower leshy can't use Seed Spray again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Sylph Sneak": {
 			"name": "Sylph Sneak",
 			"publicNotes": "<p>Born with elemental gales coursing through their breath, sylphs are wispy planar scions whose bodies seem caught in a perpetual, gentle breeze. Born of unions between mortals and djinn, sylphs are quick-witted and creative, but they are prone to flights of fancy and tend to be easily distracted.</p>\n<p>Sylphs are notorious for their practice of \"listening to the wind,\" which most others dismiss as a fancy name for eavesdropping. Yet this custom means much more to sylphs, who spend hours listening to the stories brought to them on the proverbial breeze. While some less scrupulous sylphs may use the information they learn to blackmail or abuse others, most of them see listening to the wind as their way of staying connected to the world around them while still keeping it comfortably at arm's length. Certainly the typical sylph sneak doesn't seek to use what they learn for ill, but instead tries to warn others of dangers yet unrealized or to prepare themself for a dangerous task.</p>",
-			"senses": ""
+			"items":{
+				"lB6z7CfDLMd5lPpG":{
+					"name": "星刃 Starknife",
+					"description": ""
+				},
+				"rajOpAe3FLG1J8uc":{
+					"name": "星刃 Starknife",
+					"description": ""
+				},
+				"sRJgd3DpiEABxebP":{
+					"name": "Deflecting Gale",
+					"description": "<p><strong>Trigger</strong> The sylph sneak is the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> The sylph sneak is aware of the attack</p>\n<hr />\n<p><strong>Effect</strong> A swift gale whips up between the sylph sneak and the source of the ranged attack, giving the sneak a +3 status bonus to AC against the triggering attack. If the attack misses, the wind deflected it. The wind can't deflect unusually large or heavy ranged projectiles (such as boulders or ballista bolts).</p>"
+				},
+				"HhUiMTB8Qa8ySlVM":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>The sylph sneak's Strikes deal 1d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"DcQizfyqoLcJASk7":{
+					"name": "Surprise Attacker",
+					"description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to the sylph sneak.</p>"
+				},
+				"U64zKLjgQG2MzhAS":{
+					"name": "Wind's Guidance",
+					"description": "<p>When the sylph sneak attacks with a thrown weapon, the range increment increases by 10 feet.</p>"
+				}
+			}
 		},
 		"Taiga Giant": {
 			"name": "Taiga Giant",
 			"publicNotes": "<p>Taiga giants prefer a nomadic lifestyle, both to keep from depleting any one area's resources while satiating their massive appetites and to satisfy a constant wanderlust. They are deeply spiritual and frequently commune with their ancestors' spirits for guidance and knowledge. Taiga giants are happiest when they are left alone to live out their traditional lives, and their impressive size and strength are enough to persuade all but the most dangerous foes to do so.</p>\n<p>Taiga giants subsist on migratory herds of aurochs, mammoths, and elk. They occasionally raid humanoid villages, but such cases are opportunistic rather than malicious, with a focus on stealing away livestock for food rather than people. Nevertheless, the arrival of a group of taiga giants is a potentially devastating event to any town or village, so many communities attempt to placate the giants by creating a yearly offering at those times when they know the giants are scheduled to come close.</p>\n<p>Most taiga giants venerate their ancestors and seek to honor their works in everything they do. This deep connection makes them ferociously proud of those legacies, and little can compel taiga giants to go to war more swiftly than insulting their ancestors. Merely mentioning the false rumors that ancient taiga giant spellcasters were responsible for the creation of the first rune giants is a surefire way to earn a taiga giant's unending wrath.</p>\n<p>A taiga giant stands 20 feet tall and weighs 10,000 pounds.</p>",
 			"allSaves": "+2 status to all saves vs. enchantment and illusion effects",
-			"senses": "low-light vision, see invisibility"
+			"senses": "low-light vision, see invisibility",
+			"items":{
+				"BxpAAUmfrga656x8":{
+					"name": "Sack of Rocks"
+				},
+				"wFvcOmqLVFa5RuAY":{
+					"name": "长矛 Longspear",
+					"description": ""
+				},
+				"iWjW5DElqzkofyBS":{
+					"name": "拳头 Fist"
+				},
+				"dyis1hyzjJyWz9Sg":{
+					"name": "Rock"
+				},
+				"MLvT2QA997KCHesX":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"dNIO5C35HeSGtxDD":{
+					"name": "See Invisibility",
+					"description": "<p>A taiga giant can see invisible creatures and objects as translucent shapes, and they are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to the taiga giant.</p>"
+				},
+				"x1avaIq02Cr7LmNs":{
+					"name": "+2 Status Bonus on Saves vs. Enchantment and Illusion Effects"
+				},
+				"mOfIGDW3g48Ft7w8":{
+					"name": "接石 Catch Rock"
+				},
+				"XrJk8sW9W9FE8rtL":{
+					"name": "Guardian Spirit",
+					"description": "<p><strong>Trigger</strong> The taiga giant has Ancestral Guardian active and would take energy or mental damage</p>\n<hr />\n<p><strong>Effect</strong> The taiga giant's ancestral spirits intervene and protect the giant from taking up to 20 energy damage or 30 mental damage. The giant takes any remaining damage; if it does, the spirits depart and the giant is no longer protected by the ancestors.</p>"
+				},
+				"TW4FUgjb7YgD89jt":{
+					"name": "Ancestral Guardian",
+					"description": "<p><strong>Requirements</strong> The taiga giant must be protected by the ancestors</p>\n<hr />\n<p><strong>Effect</strong> The taiga giant calls upon their ancestors' spirits to rise up and protect them, causing a cloak of spectral faces to shimmer and swirl around them. The taiga giant's AC increases to 34 until the start of its next turn.</p>"
+				},
+				"Ir6SQ9XsXTFTSPKi":{
+					"name": "Protected by the Ancestors",
+					"description": "<p>A taiga giant's prayers to their ancestors grant them spiritual protection. If a taiga giant loses this protection (such as by taking too much damage when using Guardian Spirit, or if the ancestors are counteracted by <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em>), it loses its immunity to the @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} condition and its status bonus to saving throws against enchantment and illusion effects. A taiga giant can once again be Protected by the Ancestors by performing a 10-minute prayer as an activity that has the concentrate trait.</p>"
+				},
+				"2wZs6OKCKOsMAU1a":{
+					"name": "投石 Throw Rock"
+				},
+				"q0drSu1C5WWWuGEa":{
+					"name": "Genealogy Lore"
+				}
+			}
 		},
 		"Taiga Linnorm": {
 			"name": "Taiga Linnorm",
 			"publicNotes": "<p>Taiga linnorms are covered in hundreds of quill-like black spines as sharp as spears. Wise hunters native to linnorm-infested lands know to watch for spines stuck in the bark of conifers-a sure sign that a taiga linnorm has recently passed through. Sometimes this means of tracking isn't enough to avoid an encounter, however; taiga linnorms, like their tarn and tor brethren, are skilled stalkers. They prefer to lurk in half-frozen bogs or swampy marshlands with their heads poking just above the water's surface, ever watchful for unwary prey.</p>",
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet, true seeing",
-			"hp": "regeneration 15 (deactivated by cold iron)"
+			"hp": "regeneration 15 (deactivated by cold iron)",
+			"items":{
+				"hTqMUAAnd9iTtvQW":{
+					"name": "Primal Innate Spells"
+				},
+				"k8jXY7QubcoSOAYR":{
+					"name": "行动自如(恒定法术) Freedom of Movement (Constant)",
+					"description": "<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+				},
+				"fh90HLxqhj0ijf1r":{
+					"name": "真视术(恒定法术) True Seeing (Constant)",
+					"description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"l25YrJUMqQDtE3NT":{
+					"name": "Jaws"
+				},
+				"eu0SQkCWm2vp3Yy6":{
+					"name": "Claw"
+				},
+				"drwHha4i2p4cqBa7":{
+					"name": "Tail"
+				},
+				"rnvfOLxvrsqRTH2s":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"dkeTBVoAjjtnQkuW":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"TA0G6wsaR62bthsu":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"HViM44dkUyHEWK31":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"090u49BTBz9TdQi7":{
+					"name": "Regeneration 15 (deactivated by cold iron)"
+				},
+				"h4MdAekw9ZoGZc2Q":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Tail only.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"mcsK2cK4pMrDIfZJ":{
+					"name": "Curse of Endless Storms",
+					"description": "<p>When a creature slays a taiga linnorm, it must succeed at a @Check[type:will|dc:46] save or permanently gain weakness 20 to electricity.</p>"
+				},
+				"g41jvLpQ6exKQBgd":{
+					"name": "Spines",
+					"description": "<p>Any creature that makes a melee attack against a taiga linnorm is stabbed by the taiga linnorm's spines and takes [[/r {1d6}[piercing]]]{1d6 piercing damage} per attack. A melee weapon with reach protects the user against these spines.</p>"
+				},
+				"kli2QsKUO2VSz2oy":{
+					"name": "Breath Weapon",
+					"description": "<p>The taiga linnorm breathes a @Template[type:cone|distance:60] of electrified vapor, dealing [[/r {20d6}[electricity]]]{20d6 electricity damage} to creatures in the area (@Check[type:reflex|dc:41|basic:true] save). The electrified mist persists for [[/br 1d4 #rounds]]{1d4 rounds}, dealing [[/r {6d6}[electricity]]]{6d6 electricity damage} (@Check[type:reflex|dc:41|basic:true] save) to each creature that ends its turn in the mist.</p>\n<p>The taiga linnorm can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"qCZyXHHj5OMACPYY":{
+					"name": "Taiga Linnorm Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:42]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> [[/r {7d6}[electricity]]]{7d6 electricity damage} and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {10d6}[electricity]]]{10d6 electricity damage} and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} (1 round)</p>"
+				},
+				"r7aL4DHJpi1R2n6Z":{
+					"name": "精通攫抓 Improved Grab"
+				}
+			}
 		},
 		"Tatzlwyrm": {
 			"name": "Tatzlwyrm",
 			"publicNotes": "<p>Tatzlwyrms resemble human-sized snakes with two arms and a dragon's head. Distant relatives of true dragons, tatzlwyrms possess only a meager level of intelligence. They can speak Draconic (with a thick, hissing accent), but their ability to reason is limited and they can't use magic. They do possess a level of cunning, however, and some have been known to build rudimentary traps and even lairs. They are not treasure-hoarders, though, so don't expect to find a tatzlwyrm sitting atop a bed of coins.</p>\n<p>Some tatzlwyrms have managed to forge working relationships with dragons, though it's a rare occurrence. From time to time, dragons have used them as messengers (because they can speak their language, however crudely), scouts (due to their smaller size), guides (when they're familiar with a particular mountain), and even muscle (harassing foes not worthy of a dragon's direct attention).</p>\n<p>Tatzlwyrms don't work with kobolds, though-tatzlwyrms eat kobolds.</p>\n<p>Tatzlwyrms hibernate in cold weather, and when they feel winter approaching they seek out underground lairs, mountain crevices, or even hay lofts. On one notable occasion, townsfolk reported being briefly overrun by tatzlwyrms after a conflict between spellcasters in the nearby hills caused a sudden blizzard. Local scholars still debate whether the cause of the influx was the sudden change in weather or if the creatures were drawn to one of the other magic users staying in town who were part of the same pilgrimage as those doing battle.</p>\n<p>When confronted, tatzlwyrms are more likely to attack than retreat. Indeed, they sometimes lie in wait on purpose, taking advantage of their scales' natural camouflage and awaiting the chance to unleash their signature move: belching poisonous vapor into an opponent's face. Since this breath attack doesn't have much range, the wyrms usually need to grab their foes first and bring them close to their mouth.</p>",
-			"senses": "darkvision"
+			"senses": "darkvision",
+			"items":{
+				"Cp1loMnqFXw0uGPS":{
+					"name": "Jaws"
+				},
+				"NSdZME2VBfcmBDQA":{
+					"name": "Claw"
+				},
+				"FKgN8Ya6AS8vCOry":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"sN3JKaIDG5kFRAvC":{
+					"name": "Natural Camouflage",
+					"description": "<p>A tatzlwyrm's green, gray, and brown scales provide it natural camouflage. In areas of dense undergrowth, a tatzlwyrm can move at its full Speed when @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneaking}, and it gains a +4 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}.</p>"
+				},
+				"8prRtWLrblxto9pO":{
+					"name": "Poison Gasp",
+					"description": "<p>The tatzlwyrm belches a puff of poisonous vapor into the face of an adjacent creature, which must attempt a @Check[type:fortitude|dc:15|traits:damaging-effect] save; the creature takes a -2 circumstance penalty to this save if it's @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}.</p>\n<p>The tatzlwyrm can't use Poison Gasp again for 2 rounds.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The target takes [[/r {2d6}[poison]]]{2d6 poison damage} and is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target takes [[/r {4d6}[poison]]]{4d6 poison damage} and is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute.</p>"
+				}
+			}
 		},
 		"Tendriculos": {
 			"name": "Tendriculos",
 			"publicNotes": "<p>These strange amalgams of plant and fungus with animal tendencies form where the natural world is corrupted by foul magic or frayed planar boundaries. Tendriculoses are instinctive ambush predators who seek out lightly traveled forest paths and lie in wait in the undergrowth. A tendriculos swallows its prey as quickly as possible and lets its paralytic digestive juices finish the meal, while swiftly restoring itself with the nourishment provided by the trapped creature. When collected, neutralized, and refined, the digestive fluids of a tendriculos form a lacquer that retains some of the tendriculos's acid resistance.</p>\n<p>A tendriculos comes into being with a rudimentary understanding of the Sylvan language, but in some cases it might manifest knowing a different tongue, such as Aklo, Draconic, or even Necril. Regardless, tendriculoses have little patience for chattering from potential meals, though some determined fey and primal spellcasters have been known to form alliances or even closer bonds with tendriculoses. Befriending a tendriculos requires great patience and plentiful food-and these the gifts of food must be alive when handed over.</p>\n<p>When it has finished feeding and is out of combat, a tendriculos slips into a quiescent state for a full day, one of the few times it is safe to approach. Upon rousing, it seeks the deep forest to regurgitate the less digestible portions of its meal. These remains may contain valuables that survived digestion and indicate that a tendriculos's hunting grounds lie nearby.</p>\n<p>Tendriculoses dwell in deep woods and jungles. Those too near populated areas soon draw unwanted attention with their ravenous appetites. Well-fed tendriculoses develop fruiting bodies that cast forth millions of spores. Spores that happen to alight on carrion grow into new tendriculoses.</p>",
-			"dr": [
-				{
-					"label": "Piercing",
-					"type": "piercing",
-					"description": "5"
+			"senses": "low-light vision",
+			"items":{
+				"3AK8xWwQNAfn8GZR":{
+					"name": "啮咬 Bite",
+					"description": ""
 				},
-				{
-					"label": "Slashing",
-					"type": "slashing",
-					"description": "5"
+				"UhnqMxX22JlPHncP":{
+					"name": "Tentacle"
+				},
+				"ieuwqdM4zXO2i22Z":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"z8CeXCEQdHlFMc0u":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Tentacle only.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Gbcpa6lIhj2KUyH4":{
+					"name": "Rampant Growth",
+					"description": "<p><strong>Requirements</strong> A creature the tendriculos has Swallowed Whole has taken damage since the end of the tendriculos's last turn, and the tendriculos hasn't used any other actions this turn</p>\n<hr />\n<p><strong>Effect</strong> The tendriculos regains [[/r {3d8}[healing]]]{3d8 Hit Points} and recovers from the @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} conditions. It reduces any @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled} value it has by 2.</p>"
+				},
+				"1zSROTRkSluSvmzR":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>Large, [[/r {2d10+7}[acid]]]{2d10+7 acid damage} plus tendriculos venom, Rupture 14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				},
+				"XHjjW9wEW3pVVm5K":{
+					"name": "Tendriculos Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} (1 round)</p>"
+				},
+				"HDyQbtYQNxLarefS":{
+					"name": "攫抓 Grab"
 				}
-			],
-			"senses": "low-light vision"
+			}
 		},
 		"Thanadaemon": {
 			"name": "Thanadaemon",
 			"publicNotes": "<p>Also known as the deacons of death, thanadaemons represent death via old age. They are among the most patient daemons, and prefer to bide their time to enact far-reaching, decades-long plans rather than fight (though they are still deadly foes). Like the Horseman of Death, they ply the waters of the River Styx in search of wayward souls. Rarely are thanadaemons seen without a trademark oar (which they wield as a bo staff), a tool they use to navigate the river's muck-ridden channels and turbulent rapids.</p>\n<hr />\n<p>Daemons form from the most despicable souls and personify forms of death.</p>",
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, true seeing",
-			"languages": "Telepathy 100 feet"
+			"languages": "Telepathy 100 feet",
+			"items":{
+				"6mCb1o0EW6yQ0NfB":{
+					"name": "Divine Innate Spells"
+				},
+				"5RHTa6Ml3zvYtqVN":{
+					"name": "Rituals"
+				},
+				"lPHvBGYu9z42HqQj":{
+					"name": "凌空而行(恒定法术) Air Walk (Constant)",
+					"description": "<p>目标可以在空气中行走，如同在坚实地面上。它可以如此上升与下降，最大45度角。</p>"
+				},
+				"CTeOUny3G8ZgKMct":{
+					"name": "异界传送() Plane Shift (At Will; Self Plus Skiff and Passengers Only; Astral, Ethereal, and Evil Planes Only)",
+					"description": "<p>你和你的盟友穿过位面之间的屏障。目标移动到另一个位面，例如火焰位面（Plane of Fire），阴影位面（Shadow Plane），或者深渊（Abyss）。你必须对目的地位面有所了解，并且使用该位面的材料制作的魔法共鸣音叉作为该法术的器材。多数主要位面的共鸣音叉，如同异界传送法术本身一样，罕贵度为罕见。鲜为人知的位面和半位面的共鸣音叉通常罕贵度为稀有。该法术非常不精确，你会在某个目标（由你选择）上次到达该位面时所在的位置相距1d20×25英里的位置出现。如果对所有目标而言均是第一次旅行到特定位面，你会在位面上的一个随机位置出现。异界传送 不会提供返程的方法，但是通过再次施放异界传送令你能回到你之前所在的位面，除非有什么另外情况。</p>"
+				},
+				"9ejFXBhPxifD2amI":{
+					"name": "真视术(恒定法术) True Seeing (Constant)",
+					"description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"iDFRh2jZ2ogL63IM":{
+					"name": "次元门(随意施法) Dimension Door (At Will)",
+					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+				},
+				"BuPE1MFIbw6ZThvx":{
+					"name": "侦测阵营(随意施法,仅限善良) Detect Alignment (Good Only) (At Will)",
+					"description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+				},
+				"jF73rxKIbYkxXiUW":{
+					"name": "+1 Striking Bo Staff",
+					"description": "<p>This strong but slender staff is tapered at the ends and well balanced. It's designed to be an offensive and defensive weapon.</p>"
+				},
+				"1n37HSEuc8iJMxun":{
+					"name": "Soul Gem"
+				},
+				"PwSEiS1mqX6rqjJa":{
+					"name": "长棒 Bo Staff",
+					"description": ""
+				},
+				"KYPHjX89IxHU4Sz3":{
+					"name": "Claw"
+				},
+				"FHQiK6c7jZUggMXg":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"ENtN1odPFGnOKcBk":{
+					"name": "心灵感应 Telepathy",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+				},
+				"EEVNlijtDn2A6Y9J":{
+					"name": "随意施法 At-Will Spells"
+				},
+				"iRZgPtkf6Lw3MzYm":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"GHcUVfhfs6mcm7mS":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"5fPhzfjVfDH0Ssgz":{
+					"name": "Terrifying Gaze",
+					"description": "<p>30 feet</p>\n<p>When a creature ends its turn in the aura, it must attempt a @Check[type:will|dc:30] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}. The creature is then temporarily immune to terrifying gaze (but not Focus Gaze) for 24 hours.</p>"
+				},
+				"yHiEUWvnlHVJLlCA":{
+					"name": "Draining Strike",
+					"description": "<p>When a thanadaemon damages a living creature with a melee Strike, the creature must succeed at a @Check[type:fortitude|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the thanadaemon increases the drained condition value by 1 on a failed save, to a maximum of @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 4}.</p>"
+				},
+				"e7rgKN11dqX1fsSq":{
+					"name": "Focus Gaze",
+					"description": "<p>The thanadaemon glares at a single creature they can see within 30 feet. If the target wasn't already @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}, they must immediately attempt a @Check[type:will|dc:33] save against the thanadaemon's terrifying gaze. If the target was already frightened, they must attempt a @Check[type:will|dc:33] save or become @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for [[/br 1d4 #rounds]]{1d4 rounds}; this second effect has the incapacitation trait. After attempting its save, the creature is temporarily immune to this ability until the start of the thanadaemon's next turn.</p>"
+				},
+				"mKh47XLxTvXG71TF":{
+					"name": "Soul Crush",
+					"description": "<p><strong>Requirements</strong> The thanadaemon has a soul gem</p>\n<hr />\n<p><strong>Effect</strong> The thanadaemon crushes the soul gem in one hand and gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing} 15 for 1 minute.</p>"
+				},
+				"MgWcgCTxwxAVsQWD":{
+					"name": "Styx Lore"
+				}
+			}
 		},
 		"Theletos": {
 			"name": "Theletos",
 			"publicNotes": "<p>Theletoses maintain the balance between fate and free will. A theletos is a roughly spherical mass of crystals from which emerge four limbs, each split at the elbow and ending in three-fingered hands. A pair of crystalline tentacles also emerges from its body. Those who have been damaged by a theletos's tentacles describe a disorienting dilemma as they simultaneously feel forced to make a single choice while also being overwhelmed by the endless options available to choose from. Theletoses are more likely than most aeons to interfere in non-aeon societies, particularly in regions with draconian laws. Their involvement is twofold; a theletos concerns itself with both the freedom of individuals and the laws that restrict these individuals, even when the two are in opposition.</p>",
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision",
-			"languages": "Envisioning"
+			"languages": "Envisioning",
+			"items":{
+				"ziM5W7Pshzb5HJ4L":{
+					"name": "Divine Innate Spells"
+				},
+				"OKyiXz5W5KY62CbT":{
+					"name": "Rituals"
+				},
+				"mLsKErBN02PEpFEb":{
+					"name": "卜筮术(随意施法) Augury (At will)",
+					"description": "<p>你瞥见未来的模糊片段。在施放该法术时，询问一个特定行为的结果。该法术可以预测30分钟内的未来的结果，并且会揭示GM认为最为可能的后续结果。</p>\n<ul>\n<li><strong>吉</strong> 该结果将会是好的。</li>\n<li><strong>凶</strong> 该结果可能不妙。</li>\n<li><strong>吉且凶</strong> 该结果好坏参半。</li>\n<li><strong>平</strong> 不会有明显好或坏的结果。</li>\n</ul>\n<p>GM暗骰@Check[type:flat|dc:6|traits:secret]检定。如果失败，结果永远是 \"平\" 。这令 \"平\" 的结果究竟是否准确无法被判明。如果任何人询问和先前施放的卜筮术相同的主题，使用第一次施放时得到的暗骰结果。如果环境情况发生变化，有可能会得到不同的结果。</p>"
+				},
+				"zzv3YiVwAfvq91jl":{
+					"name": "拳头 Fist"
+				},
+				"wveW1LFrPr2tdNpt":{
+					"name": "Tentacle"
+				},
+				"JqoRYjfcXOg9zHSr":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"RFPvW7U5w3NRyp3q":{
+					"name": "Envisioning",
+					"description": "<p>When a theletos conveys information, it does so wordlessly through psychic projections. This acts as @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.kdhbPaBMK1d1fpbA]{Telepathy} with a range of 100 feet but is understandable to all creatures regardless of whether they have a language. The meaning to non-aeons can be vague and is often mysterious. A theletos can use this ability to communicate flawlessly with any other aeon on the same plane.</p>"
+				},
+				"x0tIw8t8mhFgH7ab":{
+					"name": "随意施法 At-Will Spells"
+				},
+				"wSYxanQKAbTVaazk":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"f3X4SLxmMSok3p65":{
+					"name": "Fate Drain",
+					"description": "<p>A creature damaged by the theletos's tentacle must succeed at a @Check[type:will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1}.</p>\n<p>As long as the creature is stupefied, it can no longer benefit from fortune effects. If the target fails additional saves against this ability, the condition value increases by 1 (to a maximum of stupefied 4). This condition value decreases by 1 every 24 hours.</p>"
+				},
+				"sA3oeWc14avc7CPO":{
+					"name": "Wrath of Fate",
+					"description": "<p>The theletos releases a @Template[type:cone|distance:60] of energy from its center. Creatures in the cone become overwhelmed with the knowledge of various fates that destiny has in store for them and lack of clear pathways to these potential futures. They must succeed at a @Check[type:will|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} indefinitely.</p>\n<p>An affected creature can choose to roll twice when it attempts an attack, saving throw, or skill check and take the lower result. Regardless of the outcome, that creature is no longer slowed after that roll.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.QSy3KaLI1AYTR7rP]{Effect: Wrath of Fate}</p>\n<p>The theletos can't use Wrath of Fate again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Thulgant": {
 			"name": "Thulgant",
@@ -13191,18 +13815,79 @@
 				}
 			],
 			"senses": "greater darkvision, true seeing",
-			"languages": "Telepathy 100 feet"
+			"languages": "Telepathy 100 feet",
+			"items":{
+				"fEKfgiJvpDVUGTI9":{
+					"name": "Occult Innate Spells"
+				},
+				"kkYmGwJzPuPObgOM":{
+					"name": "Rituals"
+				},
+				"yhlcSZF88RwErXcb":{
+					"name": "神圣灵光(仅限混乱) Divine Aura (Chaotic only)",
+					"description": "<p>神圣的能量保护目标，每个目标在区域内时，赋予其AC和豁免上的+1状态加值。</p>\n<p>选择一个你的神祇具有的阵营。（混乱，邪恶，善良，或者秩序）。如果你没有神祇，或者你的神祇是绝对中立，你无法施放该法术。该法术具有你选择的阵营的特征。在对抗由法术所对立的阵营（你选择混乱时为守序，选择善良时为邪恶）的生物的攻击，以及这样的生物创造的效果时，法术赋予的加值提升到+2。在对抗由这样的生物所创造的，会赋予你的神圣灵光的目标 @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{被控制 Controlled} 状态效果，以及对抗与你的神圣灵光所对立阵营的效果所召唤的生物时，该加值增加到+4。</p>\n<p>当一个对立阵营的生物通过近战攻击命中目标时，该生物必须成功通过一次意志豁免，否则会 @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} 1分钟。然后它会暂时免疫1分钟。</p>\n<p>当你每轮第一次维持该法术时，神圣灵光的半径增加10尺。</p>"
+				},
+				"5kY50OvZXGwzw1RS":{
+					"name": "神圣裁决(仅限混乱) Divine Decree (Chaotic only)",
+					"description": "<p>你呢喃你信仰中的一段强大祷词，这是会伤害对立你的信念之人的敕令。选择一个你的神祇具有的阵营。（混乱，邪恶，善良，或者秩序）。如果你没有神祇，或者你的神祇是绝对中立，你无法施放该法术。该法术具有你选择的阵营的特征。你对区域内生物造成7d10伤害；每个生物必须尝试一次强韧豁免。具有你所选择的阵营的生物不受法术影响。阵营既不对应也不对立的目标，将其豁免结果视为更好一级，并且不会承受伤害以外的额外效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物承受一半伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害，并且获得 @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续1分钟。</p>\n<p><strong>大失败</strong> 该生物承受双倍伤害，并且获得 @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} ，持续1分钟。在你的原属位面，一个在豁免中大失败生物生物会如同在 <em>@UUID[Compendium.pf2e.spells-srd.bay4AfSu2iIozNNW]{放逐术 Banishment}</em> 豁免中失败一般被放逐。10级或者更低的生物必须尝试一次意志豁免。在失败时，它会 @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} 1分钟；在大失败时，它会死亡。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d10，并且在豁免大失败时必须尝试第二次豁免的生物等级增加2。</p>"
+				},
+				"Dc4o0DNBB2mCvOPt":{
+					"name": "行动自如(恒定法术) Freedom of Movement (Constant)",
+					"description": "<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+				},
+				"Vz2xdhsoi4Vg6Gej":{
+					"name": "真视术(恒定法术) True Seeing (Constant)",
+					"description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"haHyNwNcOTBVXk4D":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"ErIhDSVTBd7aGHeC":{
+					"name": "Stinger"
+				},
+				"0q3s792vZI0wANuc":{
+					"name": "Tentacle"
+				},
+				"GIj7axAUfLMpl5DN":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"P4BV5OJUyj3rfr1E":{
+					"name": "心灵感应 Telepathy",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+				},
+				"qWb7LRbSfICoEdcJ":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"0dNqhk5KI3nAaTlu":{
+					"name": "Demon Hunter",
+					"description": "<p>The thulgant causes a demon within 30 feet to suffer the effect of its sinful vulnerability.</p>"
+				},
+				"2R71xX6zTcFcPntf":{
+					"name": "高等紧勒 Greater Constrict",
+					"description": "<p>[[/r {2d6+17}[bludgeoning]]]{2d6+17 bludgeoning damage} and [[/r {1d6}[acid]]]{1d6 acid damage}, DC 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+				},
+				"34NmTbXjw24GQVju":{
+					"name": "Mind-Rending Sting",
+					"description": "<p><strong>Requirements</strong> The thulgant hits the same enemy with two consecutive sting Strikes in the same round</p>\n<hr />\n<p><strong>Effect</strong> The thulgant deals [[/r {3d12+17}[mental]]]{3d12+17 mental damage} to the enemy. If the enemy is affected by thulgant venom, that poison gains the virulent trait.</p>"
+				},
+				"uY2J1JrUYcVbFp2j":{
+					"name": "Stunning Display",
+					"description": "<p>The thulgant rises up on its twitching limbs and presents its numerous tentacles and stingers in a horrifying display of awfulness. Creatures in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:40] save, after which they are temporarily immune to further Stunning Displays for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 4}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 8}.</p>"
+				},
+				"p1rxtsKx33vjytn0":{
+					"name": "Thulgant Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:40]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {3d6}[poison]]]{3d6 poison damage} and the victim gains one of the following at random: @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1}, or @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {6d6}[poison]]]{6d6 poison damage} and the victim gains two of the following at random: @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}, or @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {9d6}[poison]]]{9d6 poison damage} and the victim gains all three of the following: @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 3}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3}, and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3} (1 round)</p>"
+				},
+				"1BrHXN7JmOnmyeOk":{
+					"name": "攫抓 Grab"
+				}
+			}
 		},
 		"Thunderbird": {
 			"name": "Thunderbird",
 			"publicNotes": "<p>Thunderbirds bring storms on their wings. In times of drought, they are welcomed. Other times, they are offered gifts in hopes they might leave before flooding begins. When angered, they call down hurricanes and lay waste to entire villages, so many settlements conduct extensive rites to appease and honor local thunderbirds.</p>\n<p>Thunderbird parents carry their newly hatched offspring to hidden mountaintop nests, where the young are struck by their first bolts of lightning and learn the mysteries of the storm.</p>",
-			"dr": [
-				{
-					"label": "Sonic",
-					"type": "sonic",
-					"description": "10"
-				}
-			],
 			"senses": "darkvision, stormsight"
 		},
 		"Titan Centipede": {
@@ -13219,7 +13904,6 @@
 		"Triton": {
 			"name": "Triton",
 			"publicNotes": "<p>While sometimes understandably mistaken for merfolk-both species live underwater and have a blend of features from both humans and fish-tritons have two legs instead of a tail. This gives tritons the ability to operate on land, though they are neither as comfortable nor as skilled above water as below.</p>\n<p>The arms and legs of a triton feature fins that assist in swimming, and their entire body is covered in fine scales that range in color from silver to cerulean blue to seaweed green. Their amphibious nature shows in the webbing between the digits of their feet and hands, as well as the fact that they have both gills and a human-shaped nose and mouth. Triton hair grows in wide strands like seagrass, commonly green in shade but in some cases blue or white. Their eyes range in color from sea blue to golden.</p>\n<p>Many tritons see themselves as defenders of the deep, dedicating their lives to protecting the inhabitants of the seas from evil creatures and intruders-whether they come from underwater or the surface world. Primary among triton foes are sea devils and alghollthu, both of whom have amphibious forces that tritons have had to fight underwater and on land.</p>\n<p>In their quest to fight underwater evil, tritons sometimes ally with dolphins and sea turtles (both of which make excellent mounts), water elemental, and sometimes even sharks and sea serpents. Tritons can summon such allies using a conch shell as a trumpet. When it comes to other intelligent undersea species, however, tritons take pride in their self-sufficiency, rarely trading with other underwater peoples such as merfolk, and even more rarely forming established alliances.</p>\n<p>Tritons live in natural-grown villages on the sea floor, forging dwellings out of colorful coral reefs, in rift valleys heated by volcanic activity, and even in underwater canyons- though they avoid settling in extreme depths due to the risk of encountering krakens or worse. They like to decorate their homes with aquatic plants, bioluminescent fish, and attractive trinkets recovered from shipwrecks.</p>",
-			"allSaves": null,
 			"senses": "darkvision"
 		},
 		"Trollhound": {
@@ -13268,8 +13952,7 @@
 		},
 		"Undine Hydromancer": {
 			"name": "Undine Hydromancer",
-			"publicNotes": "<p>Undines are infused with elemental water-the churning power of the briny deep flows through them. These planar scions are often athletic and lithe, but they are easily distracted by auditory sensations because of how much louder and clearer sound rings above the waves.</p>\n<p>Undines are perhaps the most settled of all geniekin, often forming communities along the coast or even on the water itself. In the latter case, they prefer to settle in ship-towns that sometimes number dozens of vessels in all shapes and sizes. The undines who fill these communities are similarly diverse, bringing aspects of multiple cultures together to form one whole. Ship-towns are permanent, but fluid-they grow, recede, and migrate constantly as undine families add their ships to or remove them from the flotilla. An undine town like this may remain at sea for years, its residents coming ashore only on rare occasions to collect wood for cookfires or to repair their homes. The paradoxically ever-shifting permanence of these communities reflects the undine virtues of adaptability and freedom, while also maintaining the prime importance of the community.</p>\n<p>Undine hydromancers are quite valued on these floating settlements, if only for their ability to create fresh drinking water while adrift on the sea.</p>",
-			"senses": ""
+			"publicNotes": "<p>Undines are infused with elemental water-the churning power of the briny deep flows through them. These planar scions are often athletic and lithe, but they are easily distracted by auditory sensations because of how much louder and clearer sound rings above the waves.</p>\n<p>Undines are perhaps the most settled of all geniekin, often forming communities along the coast or even on the water itself. In the latter case, they prefer to settle in ship-towns that sometimes number dozens of vessels in all shapes and sizes. The undines who fill these communities are similarly diverse, bringing aspects of multiple cultures together to form one whole. Ship-towns are permanent, but fluid-they grow, recede, and migrate constantly as undine families add their ships to or remove them from the flotilla. An undine town like this may remain at sea for years, its residents coming ashore only on rare occasions to collect wood for cookfires or to repair their homes. The paradoxically ever-shifting permanence of these communities reflects the undine virtues of adaptability and freedom, while also maintaining the prime importance of the community.</p>\n<p>Undine hydromancers are quite valued on these floating settlements, if only for their ability to create fresh drinking water while adrift on the sea.</p>"
 		},
 		"Urdefhan Tormentor": {
 			"name": "Urdefhan Tormentor",
