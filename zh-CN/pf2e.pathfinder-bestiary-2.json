@@ -12042,7 +12042,52 @@
 			"name": "Sandpoint Devil",
 			"publicNotes": "<p>While some creatures have been fused to create a new entity that's graceful and beautiful, the Sandpoint Devil is the opposite. It has the hooves and body of a powerful horse, but it walks on its hind legs in a perverse parody of a humanoid gait. Its equine face has been distorted and elongated with skeletal, yellowed fangs and milky eyes. The pox-spotted hide along the creature's back bears a draconic tail with dark, spiny plates and two torn, bat-like wings.</p>\n<p>The legendary Sandpoint Devil appears only on moonless nights when mists gather around the coast. Most encounters end with missing livestock or children, with little left behind other than oddly placed hoofprints that reek of brimstone.</p>",
 			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "greater darkvision, scent (imprecise) 30 feet"
+			"senses": "greater darkvision, scent (imprecise) 30 feet",
+			"items":{
+				"CApABKQSTABj5rMd":{
+					"name": "Occult Innate Spells"
+				},
+				"92vCOzCAnkOL6uGy":{
+					"name": "造风术(随意施法) Gust of Wind (At will)",
+					"description": "<p>一团暴风从你的掌中喷出，从你施放法术时所在位置直吹到线形终点。这团风吹灭所有小的非魔法火焰，吹散云和雾，吹起负载轻或者更低的物体，并且会推动更大的物体。区域中大型或者更小的生物必须尝试一次强韧豁免。在之后进入风中的大型或者更小的生物也必须在进入时尝试该豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物无法顶风移动。</p>\n<p><strong>失败</strong> 该生物 @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果它在飞行，它改为承受大失败效果。</p>\n<p><strong>大失败</strong> 该生物被沿风向推离30尺，倒地，并且承受2d6钝击伤害。</p>"
+				},
+				"nKHp4Fk7EvpSS3N9":{
+					"name": "Jaws"
+				},
+				"WKRlqiMNA7n19s8U":{
+					"name": "Hoof"
+				},
+				"h3krrxTbAiZjVs8m":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"vvGfXGSxCsVkyVlu":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"OygWVWtANgUBztcL":{
+					"name": "随意施法 At-Will Spells"
+				},
+				"GL5oMe9C6pcXxqcU":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"xcs2mYc8h9YshZle":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Hoof only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"QuXauTCFwPyxjFZ6":{
+					"name": "Accursed Breath",
+					"description": "<p>The Sandpoint Devil breathes a @Template[type:cone|distance:30] of flame that deals [[/r {6d10}[fire]]]{6d10 fire damage}. Each creature in the area must attempt a @Check[type:reflex|dc:26|traits:damaging-effect] save.</p>\n<p>The Sandpoint Devil can't use Accursed Breath for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p>Failure The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} by the agonizing pain of its burns.</p>\n<p><strong>Critical Failure</strong> The creature takes full damage and is cursed. The victim's flesh appears charred and burned, and the pain of being burned alive never fully vanishes. The cursed creature takes a -2 status penalty to all checks from the constant pain. Healing doesn't alter the appearance of the burns or lessen the penalty, but removing the curse does.</p>"
+				},
+				"1gwUpyZY3w0LloLq":{
+					"name": "Devil's Howl",
+					"description": "<p>The Sandpoint Devil unleashes a bloodcurdling howl that can be heard for miles. Each creature within a @Template[type:emanation|distance:100] must succeed at a @Check[type:will|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} and fleeing as long as it remains frightened on a critical failure).</p>\n<p>Creatures that attempt this Will save are then immune to Devil's Howl for 24 hours.</p>"
+				},
+				"B6PM6Ak7BCncLxYT":{
+					"name": "践踏 Trample",
+					"description": "<p>Medium or smaller, hoof, @Check[type:reflex|dc:23|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Sard": {
 			"name": "Sard",
@@ -12060,7 +12105,67 @@
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "low-light vision, tremorsense 120 feet"
+			"senses": "low-light vision, tremorsense 120 feet",
+			"items":{
+				"OKh9LnvuAtiEOz1f":{
+					"name": "Primal Innate Spells"
+				},
+				"TqDGO6yjP9Ab0tmJ":{
+					"name": "Rituals"
+				},
+				"qUW0IwnKj9NAkPZu":{
+					"name": "操控天气(不需要次要施法者) Control Weather (Doesn't require secondary casters)",
+					"description": "<p>你改变了天气，让它变得平静并更符合当前季节，或者根据季节来选择两种效果。</p>\n<p>你无法细致地控制这些气象，比如龙卷风的确切行进路线或者雷电落在哪里。</p>\n<ul>\n<li><strong>秋季 Autumn</strong> 凉爽（cold weather），雾（fog），炎热（mild heat），霰（sleet）</li>\n<li><strong>春季 Spring</strong> 细雨（drizzle），高温（heat），飓风（hurricane），霰（sleet），雷暴雨（thunderstorm），龙卷风（tornado）</li>\n<li><strong>夏季 Summer</strong> 细雨（drizzle），大雨（downpour），炽热（extreme heat），冰雹（hail），高温（heat）</li>\n<li><strong>冬季 Winter</strong> 暴风雪（blizzard），寒（mild cold），极寒（extreme cold），融雪（thaw）</li>\n</ul>\n<hr />\n<p><strong>大成功</strong> 你能够根据需要改变天气，并且能够影响更远的区域（至多半径5英里的圆形区域）、或者让仪式持续时间更长（任意数量个额外d12小时，至多为16d12）。</p>\n<p><strong>成功</strong> 你能够根据需要改变天气。</p>\n<p><strong>失败</strong> 你没能根据需要改变天气。</p>\n<p><strong>大失败</strong> 天气以一种意想不到的方式产生了变化，变化方式由GM决定，不过通常会与你的真实愿望相悖（比如当你想要好天气的时候，会出现极强的风暴）。</p>\n<hr />\n<p><strong>升阶 (9环级)</strong> 你能够制造出不合时节的天气以及矛盾的气候效果，比如极端寒冷和飓风。你能够把气候变为对于其他季节来说平静且正常的样子，或者从任意季节列表中选取天气效果。</p>"
+				},
+				"HGVXqBgfTKK0Gu4n":{
+					"name": "Trunk",
+					"description": "<p>[[/r {3d6}[persistent,electricity]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Electricity Damage}</p>"
+				},
+				"UjQN53iNiipJJkHh":{
+					"name": "Branch"
+				},
+				"EO9iiH6RJCSv55DM":{
+					"name": "Root"
+				},
+				"ReQtBIuf6WBTNwEH":{
+					"name": "Thorn"
+				},
+				"vZ2zVHToKsyYJOTI":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"fHcej8vlhHnCFoab":{
+					"name": "震颤感知 Tremorsense",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>"
+				},
+				"G2PIvLQqH98WKNaK":{
+					"name": "Planar Acclimation",
+					"description": "<p>The sard treats the plane it is located on as its home plane.</p>"
+				},
+				"KQ5qTss6bA4fQLVK":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"FFRvTDGH1FEnAKjH":{
+					"name": "Splintering Death",
+					"description": "<p>When the sard dies, its body explodes in a @Template[type:emanation|distance:30]. All creatures in the area take [[/r {10d6}[electricity]]]{10d6 electricity damage} and [[/r {10d6}[piercing]]]{10d6 piercing damage} (@Check[type:reflex|dc:43|basic:true] save). Any creature that takes piercing damage is also exposed to sard venom.</p>"
+				},
+				"UE4WlNSLrotRauZG":{
+					"name": "Lightning-Struck Curse",
+					"description": "<p><strong>Trigger</strong> The sard is about to damage a creature that has electricity resistance</p>\n<hr />\n<p><strong>Effect</strong> An instant before the target takes the electricity damage from the triggering event, the sard's electrical sparks glow red. The target must succeed at a @Check[type:will|dc:41] save or lose any electricity resistance it has until this curse is lifted.</p>"
+				},
+				"R2a5AYr0RbUoKiK3":{
+					"name": "Sard Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:41]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d6}[electricity]]]{2d6 electricity damage}, [[/r {2d6}[poison]]]{2d6 poison damage}, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {3d6}[electricity]]]{3d6 electricity damage}, [[/r {3d6}[poison]]]{3d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {4d6}[electricity]]]{4d6 electricity damage}, [[/r {4d6}[poison]]]{4d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2}, and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>"
+				},
+				"LXMgaHhqx5CpVHAu":{
+					"name": "Thorn Volley",
+					"description": "<p>The sard makes up to four thorn Strikes, each against a different target. The sard's multiple attack penalty doesn't increase until after all the attacks have been made.</p>"
+				},
+				"uDxnASCZGKnXfoQw":{
+					"name": "践踏 Trample",
+					"description": "<p>Huge or smaller, root, @Check[type:reflex|dc:39|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Sarglagon": {
 			"name": "Sarglagon",
@@ -12078,7 +12183,62 @@
 			],
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "greater darkvision; see invisibility",
-			"languages": "Telepathy 100 feet"
+			"languages": "Telepathy 100 feet",
+			"items":{
+				"xxK8rXRDWK5Rwj9i":{
+					"name": "Divine Innate Spells"
+				},
+				"ioqicnfviMKvXg9T":{
+					"name": "Rituals"
+				},
+				"mxpkzQTw0tzSwaUL":{
+					"name": "次元门(随意施法) Dimension Door (At Will)",
+					"description": "<p>你通过开启一扇绕过通常空间的门，将自身以及任何你穿戴和持握的物品从你当前所在的空间立刻传送到你能看见的范围内的开阔空间。如果此时另一个生物会与你随行—即使你使用异次元存储空间—你会失去该法术。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该射程增加到1英里。你无须看见你的目标，只要你曾经去过那里，并且了解其与你的相对位置和距离。你会暂时免疫1小时。</p>"
+				},
+				"oIJY4ycXpaF4IjIM":{
+					"name": "识破隐形(恒定法术) See Invisibility (Constant)",
+					"description": "<p>你能看见 @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible} 的生物和物体。对你而言它们看起来如同半透明一般，并且对你视为 @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 。</p>\n<hr />\n<p><strong>升阶 (5环级)</strong> 该法术的持续时间为8小时。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.T5bk6UH7yuYog1Fp]{法术效果：识破隐形}</p>"
+				},
+				"LbkW4zjvlyreuGX1":{
+					"name": "尖牙 Fangs",
+					"description": ""
+				},
+				"TfHuj8LvtfwsXfXQ":{
+					"name": "Tentacle Arm"
+				},
+				"BMv1jkvT4dSbEL8X":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"7NjsgQKMg0FvxDmJ":{
+					"name": "Telepathy 100 feet"
+				},
+				"kUtQvCE4ePTqjluS":{
+					"name": "随意施法 At-Will Spells"
+				},
+				"tIvtO7TbZgSNlr3F":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"GoYV1mj4XKxDiBOM":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"tqSmdxFVDmY2CLns":{
+					"name": "Heavy Aura",
+					"description": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that enters the heavy aura must attempt a @Check[type:will|dc:23] save. It is then temporarily immune for 10 minutes.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.D5mg6Tc7Jzrj6ro7]{Encumbered} while it remains in the area. If the creature is already encumbered, it is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} while it remains within the aura.</p>\n<p><strong>Critical Failure</strong> As failure, but the effect persists for 3 rounds after leaving the aura.</p>"
+				},
+				"myXt3SwrT2L8VMW4":{
+					"name": "Stygian Guardian",
+					"description": "<p><strong>Trigger</strong> A creature or object within the sarglagon's reach is targeted by an attack</p>\n<hr />\n<p><strong>Effect</strong> The sarglagon interposes themself, giving the creature or object @UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{Standard Cover} against the attack (+2 circumstance bonus to AC), or @UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{Greater Cover} (+4 circumstance bonus to AC) if the sarglagon was already granting it lesser cover.</p>"
+				},
+				"nBbFutvNlcdf1cgZ":{
+					"name": "Drown",
+					"description": "<p>The sarglagon conjures murky water to fill the lungs of a creature that can't breathe water within 30 feet. The target must attempt a @Check[type:fortitude|dc:26] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target coughs up water and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The target is holding its breath. The only action it can take is to attempt a Fortitude save against Drown to expel the water, which is a single action.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and begins suffocating. If the target succeeds at its Fortitude save while suffocating, it coughs up the water and can breathe again.</p>"
+				},
+				"5Vw9VTB3I1sie1g1":{
+					"name": "Sarglagon Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong>[[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong>[[/r {3d6}[poison]]]{3d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
+				}
+			}
 		},
 		"Scarecrow": {
 			"name": "Scarecrow",
@@ -12090,7 +12250,32 @@
 					"value": 5
 				}
 			],
-			"senses": "darkvision"
+			"senses": "darkvision",
+			"items":{
+				"cS4RQnXm1y1xugCt":{
+					"name": "Claw"
+				},
+				"j45FbeObppNsRIhN":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"TAIcUgt3JKg5c7fV":{
+					"name": "Scarecrow's Leer",
+					"description": "<p>40 feet.</p>\n<p>The scarecrow's eyes flicker with an unnerving glow. A creature can't reduce its @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} condition below 1 as long as it is in the aura's emanation. When a creature enters or starts its turn in the aura, it must attempt a @Check[type:will|dc:18] save. Birds and other avian creatures take a -2 circumstance penalty to this save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is then temporarily immune for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by the scarecrow until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+				},
+				"1V1IFVEwiJA8p72B":{
+					"name": "Baleful Glow",
+					"description": "<p>The scarecrow's head bursts into ghostly, heatless flame that sheds bright light in a @Template[type:emanation|distance:20] and dim light to the next 20 feet). If the scarecrow uses this ability on the first round of combat, any creature that has not acted yet is startled and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against the scarecrow for 1 round. It can suppress the light by using this action again.</p>"
+				},
+				"oYtncLyCKuBAQThk":{
+					"name": "Clawing Fear",
+					"description": "<p>The scarecrow's strikes deal an additional [[/r {1d6}[mental]]]{1d6 mental damage} to @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} creatures.</p>"
+				},
+				"NTWIBx9lvUwV7F1W":{
+					"name": "Mundane Appearance",
+					"description": "<p>Until it acts, the scarecrow resembles an ordinary scarecrow. It has an automatic result of 32 on Deception checks and DCs to pass as an ordinary scarecrow.</p>"
+				}
+			}
 		},
 		"Sceaduinar": {
 			"name": "Sceaduinar",
@@ -12103,51 +12288,296 @@
 				}
 			],
 			"allSaves": "+1 status to all saves vs. magic",
-			"senses": "greater darkvision, lifesense 120 feet"
+			"senses": "greater darkvision, lifesense 120 feet",
+			"items":{
+				"9AHoo6l3g2enrpEz":{
+					"name": "Occult Innate Spells"
+				},
+				"zDdJpAQ7FmnjLelY":{
+					"name": "Jaws"
+				},
+				"HilJh22elkeshhLj":{
+					"name": "Wing"
+				},
+				"pwHxPg0sBxXkBROU":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"7GHhkRMg6SxILo1W":{
+					"name": "生命感知 Lifesense",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Lifesense]</p>"
+				},
+				"sGGppAnKyKB4kipq":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"bJVD9JQb7YrlkdAs":{
+					"name": "Void Child",
+					"description": "<p>Sceaduinars have neither souls nor the ability to create. A sceaduinar is immune to effects that target a soul (such as bind soul or resurrect) or that require knowledge of a creature's identity (such as scrying), and critically fails Crafting checks.</p>"
+				},
+				"pXVSNEwIRE2uBaw6":{
+					"name": "Wing Flash",
+					"description": "<p><strong>Trigger</strong> A creature attempts a melee attack against a sceaduinar or an Acrobatics check to @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Tumble Through} the sceaduinar's space</p>\n<hr />\n<p><strong>Effect</strong> The sceaduinar flexes its wings to emit a brief pulse of negative energy that deals [[/r {4d6}[negative]]]{4d6 negative damage} to the triggering creature (@Check[type:reflex|dc:22|basic:true] save).</p>"
+				},
+				"H3y3IbgMpQWevqRk":{
+					"name": "Drain Life",
+					"description": "<p>When the sceaduinar damages a living creature with its jaws Strike, the sceaduinar gains 5 temporary Hit Points and the creature must succeed at a @Check[type:fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>Further damage dealt to the creature by the sceaduinar increases the drained value by 1 on a failed save, to a maximum of drained 4.</p>"
+				},
+				"SNtv0J2CRa2RFhi9":{
+					"name": "Entropic Touch",
+					"description": "<p>Negative damage dealt by a sceaduinar damages undead and creatures with negative healing as if it were positive damage. The sceaduinar's melee Strikes have the benefits of the @UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{Ghost Touch} property rune on attacks against incorporeal undead.</p>"
+				}
+			}
 		},
 		"Scythe Tree": {
 			"name": "Scythe Tree",
 			"publicNotes": "<p>Malevolent, vicious, and cruel, scythe trees pose as normal trees near deep forest paths, where they wait to slaughter passersby. Instead of drawing sustenance from light and soil, scythe trees gorge themselves on the flesh, blood, and bone of sapient creatures. Nothing is more delectable to scythe trees than a kind-hearted gnome or an altruistic dryad who believes that a scythe tree can be redeemed. The screams and whimpers of these victims are music to these cruel plants and add an extra dimension of flavor to the meal.</p>\n<p>Scythe trees are solitary creatures by nature, and their size and power mean that they don't need to compete for food with other carnivorous plants. Once food sources dwindle in an area, scythe trees move on to another location. When a scythe tree dwells in a location for many months or years, it leaves traces of its bark and roots in the soil. Over time, these blood-nourished fragments might grow into a new scythe tree, but the progenitor will most likely have already moved on to new hunting grounds long before the new scythe tree reaches maturity.</p>\n<p>Scythe trees appear as dead or dying deciduous trees with long, twisted branches that end in scythe-like blades. These carnivorous plants have dark-brown bark that is nearly black near the bottom of the trunk and rusty brown leaves that remain attached year-round. Scythe trees' disturbing mouths remain closed when not eating, appearing as a jagged gash on the trunk. When scythe trees deign to speak, their voices are rough, deep, and mocking, particularly when discussing arboreals, whom scythe trees universally find to be insufferable and worthy of little more than being hacked to pieces.</p>",
-			"dr": [
-				{
-					"label": "Bludgeoning",
-					"type": "bludgeoning",
-					"description": "5"
+			"senses": "lifesense 30 feet, low-light vision",
+			"items":{
+				"JfR3IkhT8g6aU9ry":{
+					"name": "Scythe Branch"
 				},
-				{
-					"label": "Piercing",
-					"type": "piercing",
-					"description": "5"
+				"fm5cOYL11qhzHV3G":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"hwXxwT85s7KyKoWq":{
+					"name": "Lifesense 30 feet"
+				},
+				"VyJyNz5V3NR5Gylr":{
+					"name": "Axe Vulnerability 5",
+					"description": "<p>A scythe tree takes 5 additional damage from axes.</p>"
+				},
+				"ALbbJNuSFbicqOfo":{
+					"name": "Ripping Disarm",
+					"description": "<p><strong>Trigger</strong> A creature rolls a critical failure on a melee weapon Strike against the scythe tree</p>\n<hr />\n<p><strong>Effect</strong> The scythe tree attempts to @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} the creature.</p>"
+				},
+				"hFDR91zB1cjh1UHv":{
+					"name": "Dead Tree",
+					"description": "<p>Until the scythe tree acts, it appears to be a dead tree. It has an automatic result of 35 on Deception checks and DCs to pass as a dead tree.</p>"
+				},
+				"XCr9jxxE59Egb2R1":{
+					"name": "Woodland Ambush",
+					"description": "<p><strong>Requirements</strong> The scythe tree is using Dead Tree in forested terrain, and a creature that hasn't detected it is within 30 feet</p>\n<hr />\n<p><strong>Effect</strong> The scythe tree Strides up to 25 feet toward the triggering creature. Once the creature is in reach, the scythe tree makes a scythe branch Strike against it. The creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against this Strike.</p>"
 				}
-			],
-			"senses": "lifesense 30 feet, low-light vision"
+			}
 		},
 		"Sea Drake": {
 			"name": "Sea Drake",
 			"publicNotes": "<p>Long and slender, sea drakes have fins down the length of their backs and webbing between their talons, making them just as adapted for gliding through ocean waves as the skies above. More solitary than most drakes, they hunt and live alone. Although most sea drakes make their roosts high on ocean-facing cliffs, it isn't unheard of for them to dwell in underwater caves, living entirely aquatic lives.</p>\n<hr />\n<p>Distant cousins to dragons, drakes menace and terrorize settlements.</p>",
-			"senses": "darkvision, scent (imprecise) 30 feet"
+			"senses": "darkvision, scent (imprecise) 30 feet",
+			"items":{
+				"ZnwcqtkzrHYsNa9W":{
+					"name": "Jaws"
+				},
+				"2uyZOjTUnURaOWQp":{
+					"name": "Tail"
+				},
+				"Eqk7JKBf2mGkZbCf":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"jXl0E4vOdMPzQ3Hi":{
+					"name": "Scent (Imprecise) 30 feet"
+				},
+				"Hsh9yw0IW6kN2n8t":{
+					"name": "Electrified Blood",
+					"description": "<p><strong>Trigger</strong> An adjacent creature deals piercing or slashing damage to the sea drake</p>\n<hr />\n<p><strong>Effect</strong> An arc of electricity courses through the sea drake's blood. The triggering creature takes [[/r {1d6}[electricity]]]{1d6 electricity damage}.</p>"
+				},
+				"hTuKXeGWvUSUobx7":{
+					"name": "Ball Lightning Breath",
+					"description": "<p>The sea drake spews a ball of electricity that strikes a primary target within 100 feet, dealing [[/r {7d6}[electricity]]]{7d6 electricity damage} (@Check[type:reflex|dc:24|basic:true] save). The lightning then arcs to up to three secondary targets within 30 feet of the primary target, striking the closest available targets first. The secondary bolts each strike one secondary target and deal the same rolled damage value as the primary bolt (@Check[type:reflex|dc:22|basic:true] save).</p>\n<p>The sea drake can't use Ball Lightning Breath again for [[/br 1d6 #rounds]]{1d6 rounds}.</p>"
+				},
+				"iWYCpNJjdadjk8JX":{
+					"name": "Briny Wound",
+					"description": "<p>A sea drake's saliva carries a large quantity of salt, making its bite wounds even more painful. When a creature takes damage from a sea drake's jaws Strike, the creature must attempt a @Check[type:fortitude|dc:24] save; the creature is then temporarily immune to briny wound for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is Sickened 2 and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened.</p>"
+				},
+				"uhW4OwaKUkyMz6W3":{
+					"name": "Capsize",
+					"description": "<p>The drake tries to capsize an adjacent aquatic vessel of its size or smaller. The drake must succeed at an Athletics check with a DC of 25 (reduced by 5 for each size smaller the vessel is than the drake) or the pilot's Sailing Lore DC, whichever is higher.</p>"
+				},
+				"gBFFibeJFk4MB72C":{
+					"name": "Draconic Frenzy",
+					"description": "<p>The sea drake makes one jaws Strike and two tail Strikes in any order.</p>"
+				},
+				"AbCU1QPQN43QSP6d":{
+					"name": "Speed Surge",
+					"description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The sea drake Strides, Flies, or Swims twice.</p>"
+				}
+			}
 		},
 		"Sea Snake": {
 			"name": "Sea Snake",
 			"publicNotes": "<p>These lithe snakes like to frequent the shallow waters of tropical seas. Their 4-foot-long, blue-green bodies easily blend into the water where they lurk to ambush prey. Tales speak of massive sea snakes that swim in deeper waters and follow ships, waiting for sailors to fall overboard or climbing the side to snatch them from the deck.</p>",
-			"senses": "low-light vision, scent (imprecise) 30 feet"
+			"senses": "low-light vision, scent (imprecise) 30 feet",
+			"items":{
+				"QHvw3fI9gFNac33v":{
+					"name": "尖牙 Fangs",
+					"description": ""
+				},
+				"E7WX10Amh46NUWCC":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"OB8l4HRZ5Zc4G42p":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"Dax6qfY1KhJqryzV":{
+					"name": "Deep Breath",
+					"description": "<p>The sea snake can hold its breath for about an hour.</p>"
+				},
+				"Qhdl7tHPD3bhAihm":{
+					"name": "Lash Out",
+					"description": "<p><strong>Trigger</strong> A creature within the sea snake's reach uses a move action</p>\n<hr />\n<p><strong>Effect</strong> The sea snake makes a bite Strike against the attacker.</p>"
+				},
+				"QoOV8oVWiooAilxA":{
+					"name": "Sea Snake Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+				}
+			}
 		},
 		"Shadow Drake": {
 			"name": "Shadow Drake",
 			"publicNotes": "<p>Shadow drakes are typically among the smallest and least powerful of their species. Most stand as tall and long as house cats and have charcoal-colored scales and membranous wings just translucent enough to pass for shadows. Attracted to shiny materials, they employ deception, teamwork, and even rudimentary traps to create opportunities to make off with ill-gotten gains. Shadow drakes have a particular fascination and admiration for umbral dragons-a notable exception to the norm for drakes and dragons.</p>",
-			"senses": "darkvision, scent (imprecise) 30 feet"
+			"senses": "darkvision, scent (imprecise) 30 feet",
+			"items":{
+				"C6LpIB1Gy5mjBk2G":{
+					"name": "Jaws"
+				},
+				"i1qGIf7bGKRu3RUq":{
+					"name": "Tail"
+				},
+				"wleIqE8aRKNBcgOU":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"1RpmI2FY6QNDsOVh":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"hg3lMJ6qrkw8WpZ3":{
+					"name": "强光致盲 Light Blindness"
+				},
+				"QNy9Hrx2ib5tkQKt":{
+					"name": "Shadow Blend",
+					"description": "<p>The shadow drake's form shifts and blends reflexively with surrounding shadows. A shadow drake gains an additional reaction each round, but it can use this reaction only for Shadow Evade.</p>"
+				},
+				"0VNX7MbrCqRSKYkE":{
+					"name": "Shadow Evade",
+					"description": "<p><strong>Trigger</strong> A creature attacks the shadow drake while it is in an area of dim light</p>\n<hr />\n<p><strong>Effect</strong> The shadow drake further obscures its position. The attacker must succeed at a @Check[type:flat|dc:11] check in order to affect the shadow drake, as if the drake were @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} for the triggering attack.</p>"
+				},
+				"wnZi8QCOMG86Db4l":{
+					"name": "Draconic Frenzy",
+					"description": "<p>The shadow drake makes one bite Strike and two tail Strikes in any order.</p>"
+				},
+				"usIKpszaYrCWfN8r":{
+					"name": "Shadow Breath",
+					"description": "<p>A shadow drake spits a ball of black liquid that explodes into a cloud of frigid black shadow. This attack has a range of 40 feet and explodes in a 5-foot-radius burst. Creatures within the burst take [[/r {3d6}[cold]]]{3d6 cold damage} (@Check[type:reflex|dc:18|basic:true] save). The explosion of shadow also snuffs out mundane light sources the size of a torch, lantern, or smaller, and attempts to counteract magical light with a +10 counteract modifier.</p>\n<p>The shadow drake can't use Shadow Breath again for [[/r 1d6]] rounds.</p>"
+				},
+				"5IixHzakyftZgS0g":{
+					"name": "Speed Surge",
+					"description": "<p><strong>Frequency</strong> three times per day</p>\n<hr />\n<p><strong>Effect</strong> The shadow drake Strides or Flies twice.</p>"
+				}
+			}
 		},
 		"Shoal Linnorm": {
 			"name": "Shoal Linnorm",
 			"publicNotes": "<p>Shoal linnorms occupy rocky shoreline shallows and slither along lonely coastlines. While they do not intentionally seek out large settlements, these linnorms nonetheless beleaguer fishers headed out from small coastal towns, and they may even follow skiffs back to their home port to appraise the town's defenses and plan a raid. Shoal linnorms tend to hunt large prey, both underwater and on land. Their preferred quarries includes giant squid and grizzly bears-meals rich in fat, which the linnorms metabolize into the fiery steam that courses through their veins.</p>",
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, scent (imprecise) 60 feet, true seeing",
-			"hp": "regeneration 10 (deactivated by cold iron)"
+			"hp": "regeneration 10 (deactivated by cold iron)",
+			"items":{
+				"QbjjKmqSkCf93Xw5":{
+					"name": "Primal Innate Spells"
+				},
+				"C3660uLElTZLdhwb":{
+					"name": "行动自如(恒定法术) Freedom of Movement (Constant)",
+					"description": "<p>你驱散可能会阻碍一个生物或者令其移动减慢的效果。当处于该法术效果中时，法术目标忽视会赋予其速度环境减值的效果。当法术目标尝试 @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} 一个令其 @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的效果时，它自动成功，除非该效果是魔法性的，并且其环级比行动自如更高。</p>"
+				},
+				"lIhRNM5msYgcZJCL":{
+					"name": "真视术(恒定法术) True Seeing (Constant)",
+					"description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"goYkQxQdewpmD26j":{
+					"name": "Jaws"
+				},
+				"VrxOb3MaxvXl1OR3":{
+					"name": "Claw"
+				},
+				"9H6kMOzk61FQZoC9":{
+					"name": "Tail"
+				},
+				"pL08UYEZoKBSYUzv":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"puOX1L9eYq450jRo":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"5UFt8Dv6NCEOpZlE":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"Q6Z6sPX8M68AUOXI":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"4CyhH5ZkHNlxJtIP":{
+					"name": "Regeneration 10 (deactivated by cold iron)"
+				},
+				"UuDDHSI5hH9lHpZv":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Tail only.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"2oTY3Ohbh0C59vOv":{
+					"name": "Curse of Drowning",
+					"description": "<p>When a creature slays a shoal linnorm, it must succeed at a @Check[type:will|dc:38] save or become cursed. As long as the curse of drowning persists, the character must spend 3 actions when drinking any liquid. Attempting to drink liquid faster causes the victim to begin drowning, immediately running out of air and falling unconscious.</p>"
+				},
+				"CThMS3QhSA3Obh7Z":{
+					"name": "Breath Weapon",
+					"description": "<p>The shoal linnorm exhales scalding steam that deals [[/r {12d8}[fire]]]{12d8 fire damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:36|basic:true] save). The steam lingers until the end of the linnorm's next turn; anyone who enters the area or begins their turn in the area takes [[/r {6d8}[fire]]]{6d8 fire damage} (@Check[type:reflex|dc:36|traits:damaging-effect] save negates). During this time, the steam is so thick that it impedes movement as well as sight, turning the area into difficult terrain. All creatures in the steam become @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the steam become concealed to creatures within it.</p>\n<p>The shoal linnorm can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"hREXXxR78zjxAtPW":{
+					"name": "Shoal Linnorm Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:36]</p>\n<p><strong>Maximum Duration</strong> 10 rounds</p>\n<p><strong>Stage 1</strong> [[/r {4d6}[fire]]]{4d6 fire damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {6d6}[fire]]]{6d6 fire damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round).</p>"
+				},
+				"Y24jpiGNojJwV4RQ":{
+					"name": "精通攫抓 Improved Grab"
+				}
+			}
 		},
 		"Shocker Lizard": {
 			"name": "Shocker Lizard",
 			"publicNotes": "<p>These brightly colored reptiles share the rough size and pack mentality of guard dogs, roaming in small groups. Shocker lizards have specialized glands under their scales that accumulate static electricity, and they can unleash blasts of lightning strong enough to harm significantly larger foes. Though they're meek and docile when encountered alone, shocker lizards are significantly more aggressive in packs, when they can amplify each other's electrical attacks.</p>\n<p>Shocker lizards are notoriously difficult to domesticate because they're dangerously hostile as part of a pack, but will also swiftly wither and die if kept alone in captivity without constant attention. A shocker lizard is 3 feet long and weighs 25 pounds.</p>",
-			"senses": "low-light vision, greater electrolocation 20 feet"
+			"senses": "low-light vision, greater electrolocation 20 feet",
+			"items":{
+				"ki1JmOjsmc5eRI42":{
+					"name": "Jaws"
+				},
+				"Q7nRRCF8dXONTqKt":{
+					"name": "Shock",
+					"description": ""
+				},
+				"XcpCwjEjd7OKbKnx":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"6qDqRA2Nq93rsvx9":{
+					"name": "Greater Electrolocation",
+					"description": "<p>A shocker lizard can sense minute electrical charges in living creatures, which it can use as a precise sense at a range of 20 feet. This distance increases to 100 feet against any creature that has used an electricity effect within the last minute.</p>"
+				},
+				"le0p8FsNfX4jkVzn":{
+					"name": "Amplify Voltage",
+					"description": "<p><strong>Trigger</strong> A shocker lizard within 20 feet makes a shock Strike or uses Discharge</p>\n<hr />\n<p><strong>Effect</strong> The shocker lizard lends some of its electrical power to the nearby lizard. This either causes the other lizard's shock Strike to lose the nonlethal trait or increases the DC of its Discharge to 20.</p>"
+				},
+				"IPLCR3K5wWzQiSHK":{
+					"name": "Discharge",
+					"description": "<p>The shocker lizard releases a blast of lightning from its body. Creatures within a @Template[type:emanation|distance:10] take [[/r {3d6}[electricity]]]{3d6 electricity damage} (@Check[type:reflex|dc:18|basic:true] save).</p>\n<p>The shocker lizard can't use Discharge for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"JakacQ9SCpgoCpCp":{
+					"name": "Shocking Burst",
+					"description": "<p>The shocker lizard hunkers down and begins to spark with electricity, which it releases in a @Template[type:emanation|distance:10] that deals [[/r {3d8}[electricity]]]{3d8 electricity damage} (@Check[type:reflex|dc:18|basic:true] save).</p>\n<p>The shocker lizard can't use Shocking Burst again for 1 minute.</p>\n<p>Up to four shocker lizards can combine their Shocking Bursts. In this case, the lizards can delay the release of their electricity until any other shocker lizard within 30 feet completes its Shocking Burst. The combined Shocking Bursts create an emanation with the combined area from all participating shocker lizards. For each additional shocker lizard that joins the burst, the damage increases by 3d8 and the save DC increases by 1 (to a maximum of four lizards dealing 12d8 damage with a DC 21 save).</p>"
+				}
+			}
 		},
 		"Shoggti": {
 			"name": "Shoggti",
@@ -12165,33 +12595,189 @@
 				}
 			],
 			"senses": "darkvision",
-			"languages": "Telepathy 100 feet"
+			"languages": "Telepathy 100 feet",
+			"items":{
+				"8yvIS9Nt5mat9qnA":{
+					"name": "Occult Innate Spells"
+				},
+				"TI8XxzDQbTfM2D3M":{
+					"name": "侦测魔法 Detect Magic",
+					"description": "<p>你发出一股标记魔法存在的脉冲。你不会获得魔法存在或不存在以外的任何信息。你可以选择忽略你完全知晓的魔法，例如你或者你盟友的魔法物品以及持续法术。</p>\n<p>仅当幻术魔法的环级低于你的侦测魔法环级时，你才能侦测幻术魔法。但是，具有幻术灵光但是没有在外表上做伪装的物品（例如一瓶隐形术药水），通常能够正常侦测。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 你会了解法术侦测区域中最高环级的效果的学派。如果有相同强度的多个效果，GM决定你了解的为哪一个。</p>\n<p><strong>升阶 (4环级)</strong> 如3环级，你也能指出最高环级魔法的来源。如同一种模糊感官（imprecise sense），你不会了解具体的位置，但是可以将来源锁定到5尺立方（或者最近的那个五尺立方，如果来源体积比这个区域更大）。</p>"
+				},
+				"6ZtjeB9jdEW4o2QJ":{
+					"name": "啮咬 Bite",
+					"description": ""
+				},
+				"Dsz0LBZEAi6Jkmmo":{
+					"name": "Pincer"
+				},
+				"UcRrxW2Ay0vhDBrn":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"eWih1h98kRb5uo3E":{
+					"name": "心灵感应 Telepathy",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>"
+				},
+				"hwX8mlw73yOCgwYw":{
+					"name": "Braincloud",
+					"description": "<p>The shoggti caresses a creature with a tentacle and supernaturally erodes the creature's capability for thought as it does so. The target must succeed at a @Check[type:will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}, with an unlimited duration. The target can attempt the save to remove the stupefied condition again once per day when it makes its daily preparations.</p>"
+				},
+				"3gCf4mj9ynEcSXVi":{
+					"name": "紧勒 Constrict",
+					"description": "<p>[[/r {1d10+8}[bludgeoning]]]{1d10+8 bludgeoning damage}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"KpGCXx2t9NN3a85q":{
+					"name": "Fascinating Display",
+					"description": "<p>The shoggti writhes its tentacles and shifts its coloration to put on an unnaturally fascinating hypnotic display. Creatures in a @Template[type:emanation|distance:30] must attempt a @Check[type:will|dc:25] save, after which they are temporarily immune to further Fascinating Displays for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} for 1 minute. Once the fascination effect ends, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is fascinated for 1 minute, can't use reactions while fascinated, and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} once the fascination ends.</p>"
+				},
+				"G5e1Cf5jNqFiqF6y":{
+					"name": "攫抓 Grab"
+				}
+			}
 		},
 		"Skaveling": {
 			"name": "Skaveling",
 			"publicNotes": "<p>Hideous necromantic rituals give rise to skavelings, or ghoul bats, monstrosities that are not true ghouls but instead are specifically crafted undead creatures. Their creators are the bloodsucking urdefhans of the Darklands, who create skavelings from giant bats specially raised on diets of toxic fungus and the flesh of ghouls-especially brains harvested from these undead. Upon reaching maturity, these giant bats are ritually slain via the use of cytillesh oil. While this poison simply rots away the flesh of most creatures, one of these specially prepared bats will immediately rise from death as a skaveling after succumbing to its effects.</p>\n<p>Despite its tattered wings and sagging skin, a skaveling is more than capable of flight, even when carrying a creature mounted on its back-urdefhans often use skavelings as mounts in this way. Their intelligence is more advanced than that of the typical giant bat, and in combat they function more as allies than as mere mounts, capable of making their own tactical decisions. Yet even though they can reason and think, skavelings remain loyal to the urdefhans who created them, and they never take actions in a fight that would knowingly put their masters in harm's way.</p>",
-			"senses": "darkvision, echolocation 40 feet"
+			"senses": "darkvision, echolocation 40 feet",
+			"items":{
+				"ChobeFNcesw2DX01":{
+					"name": "尖牙 Fangs",
+					"description": ""
+				},
+				"rMTD8eLYVnpfvpCd":{
+					"name": "Wing"
+				},
+				"wKTyf3x01s0VjUOw":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"h35hRTaiSXOfVZFA":{
+					"name": "Echolocation",
+					"description": "<p>A skaveling can use its hearing as a precise sense at the listed range</p>"
+				},
+				"x183YuDiYXsrOlKc":{
+					"name": "Bone-Chilling Screech",
+					"description": "<p>The skaveling unleashes a horrifying screech that chills the very bones of those close enough to feel it. The screech can be heard for miles, but each creature in a @Template[type:emanation|distance:20] must also attempt a @Check[type:will|dc:22] save.</p>\n<p>The skaveling can't use Bone-Chilling Screech again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to Bone- Chilling Screech for 24 hours.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} by fear.</p>"
+				},
+				"aOFgYZJ7qXDOoWDH":{
+					"name": "Ghoul Fever",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and regains half as many Hit Points from all healing (1 day)</p>\n<p><strong>Stage 3</strong> as stage 2 (1 day)</p>\n<p><strong>Stage 4</strong> [[/r {2d6}[negative]]]{2d6 negative damage} and gains no benefit from healing (1 day)</p>\n<p><strong>Stage 5</strong> as stage 4 (1 day)</p>\n<p><strong>Stage 6</strong> dead, and rises as a ghoul the next midnight</p>"
+				},
+				"2doPyPIBLoDzjzk9":{
+					"name": "Paralysis",
+					"description": "<p>Any creature hit by the skaveling's Strikes must attempt a @Check[type:fortitude|dc:22] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. It can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each save.</p>"
+				}
+			}
 		},
 		"Skrik Nettle": {
 			"name": "Skrik Nettle",
 			"publicNotes": "<p>The expansive skies of the First World are home to skrik nettles-delicate, bizarre-looking creatures that resemble large jellyfishes. A fringe of brightly colored feathers circles their bodies, and long tendrils trail from their center, each ending in a snapping beak. Known for their eerie, chirping melodies, skrik nettles soar above the First World in flocks of a dozen or more, diligently scavenging for food in the fey realm's cutthroat ecosystem. When hunting or provoked, skrik nettles attack their foes by injecting them with a magical poison that causes the victim to float helplessly up into the sky. Skrik nettles continuously inject this poison into their helpless prey until it dies or is so high up that the skrik nettle needs only wait for the poison to end, its meal crashing helplessly to the ground below.</p>\n<p>Skrik nettles that find their way to the Material Plane tend to be much more aggressive, for the planar energies that they find comforting and soothing on the First World are conspicuously absent. The first few minutes after a skrik nettle arrives on any plane but the First World tend to be filled with violence and fear, as the panicking creature lashes out at any nearby creatures in the mistaken notion that these others are somehow responsible for the discomforting change. After 10 minutes or so, assuming the skrik nettle survives its bout of violence, the creature calms down somewhat and does its best to acclimate to its new home. Yet even skrik nettles who find themselves marooned beyond the First World for years never lose their longing for home, and they instinctively seek out portals to this plane for the rest of their lives.</p>",
 			"senses": "motionsense 30 feet",
-			"hp": "(fast healing 5)"
+			"hp": "(fast healing 5)",
+			"items":{
+				"Wrwp9diMkabKorJn":{
+					"name": "Beak"
+				},
+				"FKpHGfQVea81uMo2":{
+					"name": "Motionsense",
+					"description": "<p>A flying skrik nettle can detect the movement of nearby creatures and objects from the tiny gusts of wind created by their movements. This is a precise sense at the listed range, but it works only against creatures and objects that moved through air in the previous round.</p>"
+				},
+				"FYiiFhvRvIKkTu5v":{
+					"name": "Fast Healing 5"
+				},
+				"4CALESo8Bdrqe3vE":{
+					"name": "Spill Venom",
+					"description": "<p><strong>Trigger</strong> The skrik nettle takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The skrik nettle ejects its venom onto an adjacent creature. That creature is exposed to skrik nettle venom.</p>"
+				},
+				"oAxtReNr1iwTRmKX":{
+					"name": "Negate Levitation",
+					"description": "<p>The skrik nettle attempts to counteract (with a modifier of +17) a single effect currently levitating a creature it can detect with its motionsense.</p>"
+				},
+				"APChG7D4rcYDlQ8m":{
+					"name": "Skrik Nettle Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} and levitate upward 5 feet (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and levitate upward 10 feet (1 round)</p>\n<p>A levitating creature takes a -2 circumstance penalty to attack rolls. It can spend an Interact action to stabilize itself and negate this penalty for the remainder of its turn. If it's adjacent to a fixed object or stable terrain, it can move across the surface by climbing (if the surface is vertical) or crawling (if the surface is horizontal, such as a ceiling).</p>\n<p>A flying creature can move normally but still increases its altitude as appropriate from the venom. A creature that can't fly falls as soon as it recovers from skrik nettle venom.</p>"
+				}
+			}
 		},
 		"Skulk": {
 			"name": "Skulk",
 			"publicNotes": "<p>The cowardly and lazy skulks live on the fringes of organized societies and steal from others without a second thought. Even murder is merely another necessity, and they think nothing of creeping into a house, dispatching the residents, and taking what they want.</p>\n<p>Their chameleon-like ability to blend into their surroundings makes skulks difficult to detect, so their ever-present populations around the periphery of large settlements are nearly impossible to dislodge permanently. They typically travel in small groups of no more than 16 individuals, since groups larger than that tend to break into violence directed at one other. While skulks see themselves as sharing a common history of being cast out and hated, this is not a strong enough bond to hold large groups of the creatures together with a shared purpose for very long.</p>\n<p>Entrances and exits from cities, especially less-guarded access ways around sewers and the like, are skulks' favorite stomping grounds. These sites allow them to closely observe who comes and goes from the city while also affording them swift escape options, should the authorities uncover their presence. On rare occasions, a well-disciplined skulk can rise to prominence within the local thieves' guild and become sought after for difficult jobs. Their repugnant personalities and overwhelming selfishness, however, usually means they are unable to secure long-lasting leadership roles.</p>\n<p>A typical skulk is 6 feet tall with similar body structure to a gangly human. Skulks mature quickly and can live up to 50 years, although most meet a violent end long before then. The rare skulk who manages to escape their society of violence and craven bitterness can be of any alignment, but those skulks who remain bound by their traditions always see these self-imposed exiles as the worst kind of traitors, and the exiles are often targeted for eradication to the exclusion of all other victims. More than one band of skulks has accidentally engineered its own doom after throwing caution to the wind and exposing its existence to the authorities in an ill-planned but violently passionate attempt to track down such an exile.</p>",
-			"senses": "low-light vision"
+			"senses": "low-light vision",
+			"items":{
+				"CiQKBNNHPATwPDUX":{
+					"name": "短剑 Shortsword",
+					"description": ""
+				},
+				"3z9Sgd2sbQUaFIUK":{
+					"name": "匕首 Dagger",
+					"description": ""
+				},
+				"Aq9Qe7xGRm2JMoFA":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"HLOEvF4GMvQEPHct":{
+					"name": "Camouflaged Step",
+					"description": "<p>The skulk gains the benefit of the @UUID[Compendium.pf2e.actionspf2e.SB7cMECVtE06kByk]{Cover Tracks} action in forests and subterranean settings without moving at half Speed.</p>"
+				},
+				"vMUHP7DevP54tmz4":{
+					"name": "Chameleon Skin",
+					"description": "<p>The skulk's skin shifts and changes to match the surroundings. As long as most of their body is not covered by clothing or armor, the skulk gains a +2 circumstance bonus to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}.</p>"
+				},
+				"gbsLwd2FBQal3xdZ":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>A skulk's Strikes deal an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Slime Mold": {
 			"name": "Slime Mold",
 			"publicNotes": "<p>A slime mold appears as a mound of earth and detritus covered in a thick layer of fungus that exudes a faint stink of decay. The fungus actually shares a symbiotic relationship with the slime mold, serving as an external digestive system while gaining access to the nutrients it needs. The ooze remains perfectly still until living prey passes within reach, then it lashes out with disgusting pseudopods. With a touch, a slime mold can infect its prey with a foul contagion known as slime rot, a horrific disease that painfully breaks down a victim's flesh. At first, the disease manifests as painful rashes and agonized joints. In the later stages, though, the flesh of the affected creature actually begins to liquefy and run in rivulets as the creature's spores continue to work. Death, when it occurs, swiftly causes the resulting body to split open and release a brand new slime mold.</p>\n<hr />\n<p>Due to their bizarre physical structures and ability to break down and feed on a wide variety of materials, oozes are able to adapt to nearly any climate, especially when assisted by magical or alchemical tinkering. As a result, explorers frequently encounter new and terrifying varieties of these amorphous creatures.</p>",
-			"senses": "motion sense 60 feet, no vision"
+			"senses": "motion sense 60 feet, no vision",
+			"items":{
+				"a3cYrmsIGVchwgtR":{
+					"name": "Pseudopod"
+				},
+				"IieLHPPUSUSDsN8d":{
+					"name": "Motion Sense 60 feet",
+					"description": "<p>A slime mold can sense nearby creatures through vibration and air or water movement.</p>"
+				},
+				"kkVojFishI8AxnVn":{
+					"name": "Slime Rot",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Onset</strong> [[/br 1d4 #days]]{1d4 days}</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 day)</p>\n<p><strong>Stage 2</strong> as stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}, and @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} (1 day)</p>\n<p><strong>Stage 4</strong> as stage 3 (1 day)</p>\n<p><strong>Stage 5</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} plus @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} (no Perception check to wake up) (1 day)</p>\n<p><strong>Stage 6</strong> dead, and the body erupts to release a new slime mold</p>"
+				}
+			}
 		},
 		"Snapping Turtle": {
 			"name": "Snapping Turtle",
 			"publicNotes": "<p>Snapping turtles are freshwater reptiles with a long flexible neck, a sharp piercing beak, and a confrontational temperament that doesn't prevent some spellcasters from choosing these creatures as familiars. They weigh about 20 pounds and have shells around 18 inches in length.</p>",
-			"senses": "low-light vision, scent (imprecise) 30 feet"
+			"senses": "low-light vision, scent (imprecise) 30 feet",
+			"items":{
+				"F4z6xO5BYtoag9hK":{
+					"name": "Jaws"
+				},
+				"ubHtu9kCddCNuEjt":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"zMgcdf4D6sTVSdON":{
+					"name": "Scent",
+					"description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
+				},
+				"P0EyFCnT4og9udgU":{
+					"name": "Deep Breath",
+					"description": "<p>The snapping turtle can hold its breath for 30 minutes.</p>"
+				},
+				"J4SHx8p5wCH9xlMo":{
+					"name": "Clench Jaws",
+					"description": "<p><strong>Requirements</strong> The snapping turtle damaged a creature with a jaws Strike in its previous action</p>\n<hr />\n<p><strong>Effect</strong> The snapping turtle clenches its jaws down and automatically deals an additional [[/r {1d4}[bludgeoning]]]{1d4 bludgeoning damage} to the creature it just bit.</p>"
+				},
+				"E4bINR3oniilC0ba":{
+					"name": "Shell Defense",
+					"description": "<p>The snapping turtle retracts its limbs and head into its shell and ends its turn. This increases its AC to 18, but it can't act except to reemerge, which it can do as a single action.</p>"
+				}
+			}
 		},
 		"Solar": {
 			"name": "Solar",
@@ -12199,29 +12785,170 @@
 			"allSaves": "+1 status to all saves vs. magic",
 			"senses": "darkvision, true seeing",
 			"hp": "regeneration 20 (deactivated by evil)",
-			"languages": "Tongues"
+			"languages": "Tongues",
+			"items":{
+				"ZuY8xngBTZhm5ag1":{
+					"name": "Divine Innate Spells"
+				},
+				"u0ECBCkcFFfHWfRP":{
+					"name": "Rituals"
+				},
+				"h0EZFRSOjyHLlf5b":{
+					"name": "侦测阵营(恒定法术,仅限邪恶) Detect Alignment (Constant) (Evil only)",
+					"description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
+				},
+				"Fzzx1tAOIDLb7AC0":{
+					"name": "巧言术(恒定法术) Tongues (Constant)",
+					"description": "<p>无论什么语言，目标都可以理解其所有的词语，并且向其他生物用该语言交流。当处于一群各异的生物中时，每次目标将要说话，他可以选择一个生物，并使用一种该生物理解的语言来讲述，即使该目标不知道这语言具体是什么。</p>\n<hr />\n<p><strong>升阶 (7环级)</strong> 持续时间为8小时。</p>"
+				},
+				"cMsllioMOMLPtc53":{
+					"name": "真视术(恒定法术) True Seeing (Constant)",
+					"description": "<p>你可以看见60尺内的事物的本来面貌。GM秘密骰反制检定，对抗区域中的所有幻术或者变形效果，但这只会决定你是否能看破它（例如，如果该检定成功对抗了一个变形法术，你可以看见该生物的本来形态，但你不会结束该变形法术）。</p>"
+				},
+				"lSIa7PfqOouOg8nP":{
+					"name": "解除魔法(随意施法) Dispel Magic (At will)",
+					"description": "<p>你干扰法术或者效果中的魔法力量。尝试一次反制检定，对抗目标。如果你成功对抗一个法术效果，你将其反制。如果你成功对抗一个魔法物品，该物品成为该类型的普通物品，持续10分钟。这不会改变物体的非魔法性质。如果目标是一件神器或者类似的物品，你自动失败。</p>"
+				},
+				"jRw5SkXrC7GWOpXb":{
+					"name": "移除恐惧(随意施法) Remove Fear (At will)",
+					"description": "<p>你通过一次接触来平缓一个生物的恐惧。你可以尝试反制目标正承受的一个恐惧效果。这只会令目标得到解脱，不包括该恐惧效果的其他目标。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 该法术的射程增加到30尺，并且你能以至多10个生物为目标。</p>"
+				},
+				"b88vNXkalAte3tvf":{
+					"name": "复原术(随意施法) Restoration (At will)",
+					"description": "<p>回复魔法反制目标上的毒素或者状态，令其得以全力施展其能力。当你施放复原术时，选择缩减状态或者弱化毒素。一个生物每天只能从一个复原术中受益，并且它的某一次感染毒素只能受益于复原术一次。</p>\n<ul>\n<li><strong>弱化毒素</strong> 减少目标正承受的一种毒素的阶段1级。这无法将阶段降低到1级以下或者治愈该苦难。</li>\n<li><strong>缩减状态</strong> 减少目标的 @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled} 或 @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied} 状态2点。你可以改为减少两种所列的状态各1点。</li>\n</ul>\n<hr />\n<p><strong>升阶 (4环级)</strong> 将 @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained} 状态增加到你能缩减的状态列表中。当你弱化毒素时，减少阶段2级。你可以获得第三个选项，你可以减少目标的 @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed} 值1点。你不能使用这个选项来减少永久毁灭状态。</p>\n<p><strong>升阶 (6环级)</strong> 如4环级复原术，但是如果你在施放该法术时增加一个施法动作和一个材料成分，并在此时提供100gp的钻石尘作为消耗，你可以减少一个永久毁灭状态。</p>"
+				},
+				"NjjDQDdWwJEhS8MF":{
+					"name": "次元锚(随意施法) Dimensional Anchor (At will)",
+					"description": "<p>你妨碍目标传送以及在次元之间旅行的能力。次元锚会尝试反制任何传送效果，以及任何移动目标到另一个位面的效果。法术持续时间由目标的意志豁免决定。</p>\n<hr /><strong>大成功</strong> 目标不受影响。\n<p><strong>成功</strong> 该效果持续时间为1分钟。</p>\n<p><strong>失败</strong> 该效果持续时间为10分钟。</p>\n<p><strong>大失败</strong> 该效果持续时间为1小时。</p>"
+				},
+				"iQNp3D21Ql8PiDZA":{
+					"name": "+3 Major Striking Greatsword",
+					"description": "<p>This immense two‑handed sword is nearly as tall as its wielder. Its lower blade is often somewhat dulled to allow it to be gripped for extra leverage in close‑quarter fights.</p>"
+				},
+				"mANOW81qmnDzn8ZY":{
+					"name": "+3 Major Striking Longbow",
+					"description": "<p>This 5‑foot‑tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>"
+				},
+				"KO7ETr6PiZ0HJeHK":{
+					"name": "Holy Greatsword"
+				},
+				"ObPZcbNErqRJbu6p":{
+					"name": "Holy Longbow"
+				},
+				"0vrX1z0w3GFCktsF":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"HMmnA0DwFNibve0c":{
+					"name": "随意施法 At-Will Spells"
+				},
+				"QQgEGkDjynHqQ53g":{
+					"name": "恒定法术 Constant Spells"
+				},
+				"qHEzK4MngkQB6vhD":{
+					"name": "在所有对魔法的豁免上获得+1状态加值 +1 Status to All Saves vs. Magic"
+				},
+				"oUmLwF6HrGb0Y9yj":{
+					"name": "Regeneration 20 (deactivated by evil)"
+				},
+				"ZiB2QG6oo1w3v4H2":{
+					"name": "Aura of Protection",
+					"description": "<p>20 feet.</p>\n<p>Allies in the solar's aura gain a +2 status bonus to AC against evil creatures and a +2 status bonus to saves against effects from evil creatures. The bonus increases to +4 against control by evil creatures and attacks by evil summoned creatures. When the solar or an ally is hit by an attack from a creature in the aura, that foe must succeed at a @Check[type:will|dc:43|traits:incapacitation] save or be blinded for 1 minute (this is an incapacitation effect). It's then temporarily immune for 1 minute.</p>"
+				},
+				"Y9QK094iVscecdmW":{
+					"name": "Animate Weapon",
+					"description": "<p><strong>Trigger</strong> The solar hits with a melee weapon Strike while Animate Weapon is not already in effect</p>\n<hr />\n<p><strong>Effect</strong> The solar's weapon leaps into the air and moves with the solar as if held with both hands. The weapon gains the effects of the dancing weapon rune for 1 minute.</p>"
+				},
+				"NZRABrBe5xEzlWlP":{
+					"name": "Arrow of Mortality",
+					"description": "<p>The solar doesn't need to provide ammunition for their bow. When they draw their bow, they create a magical arrow of light that sheds bright light in a 20-foot radius until the end of the solar's next turn.</p>\n<p>On a critical hit with the arrow, if the target has 75 or fewer Hit Points after taking the damage, it drops to 0 Hit Points and becomes @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying 1} (or, if it was already dying, increases its dying value by 3).</p>"
+				},
+				"92YIjzpVzdYw3ZQC":{
+					"name": "Change Shape",
+					"description": "<p>The solar can take on the appearance of any Small or Medium humanoid. This doesn't change their Speed or Strikes.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"gnL5MFzMfrbfAapT":{
+					"name": "Holy Armaments",
+					"description": "<p>Any weapon gains the effect of a @UUID[Compendium.pf2e.equipment-srd.DH0kB9Wbr5pDeunX]{Holy} property rune while a solar wields it.</p>"
+				}
+			}
 		},
 		"Soul Eater": {
 			"name": "Soul Eater",
 			"publicNotes": "<p>Only the most desperate or foolhardy conjurers call upon the aid of these strange fiends from the inky swamps of Abaddon.</p>",
-			"dr": [
-				{
-					"label": "Physical",
-					"type": "physical",
-					"description": "10"
+			"senses": "greater darkvision",
+			"items":{
+				"zbxStPzCzfkdF5cZ":{
+					"name": "Claw"
+				},
+				"AJ75IwgP2pUKWDa2":{
+					"name": "高等黑暗视觉 Greater Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]"
+				},
+				"Lt5U1QzZ5Wx4rMiJ":{
+					"name": "Caster Link",
+					"description": "<p>A conjured soul eater forms a mental link with its conjurer. While both are on the same plane, the soul eater knows the location of its conjurer per its find target ability. If the soul eater's target dies before the soul eater can drain its soul, or if the soul eater is defeated (but not destroyed) by the target, the soul eater returns to its conjurer and tries to kill them.</p>"
+				},
+				"YS1pxmdE8Ebmyy23":{
+					"name": "Find Target",
+					"description": "<p>When a soul eater is conjured to the Material Plane to find a specific creature, it gains the benefits of a 5th-level <em>@UUID[Compendium.pf2e.spells-srd.LQzlKbYjZSMFQawP]{Locate}</em> spell that isn't blocked by lead or running water. The conjurer must have seen the target and must speak the target's name while conjuring the soul eater in order to grant this ability.</p>"
+				},
+				"lqG3xn6Di5qPS55E":{
+					"name": "Drain Soul",
+					"description": "<p><strong>Requirements</strong> The soul eater is adjacent to a @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} creature</p>\n<hr />\n<p><strong>Effect</strong> The soul eater attempts to devour the dying creature's soul. The creature must attempt a @Check[type:will|dc:25] save. A creature that dies as a result of Drain Soul can't be restored to life except by a spell or ritual of 8th level or higher. If the soul eater that used Drain Soul on a creature is slain within 100 feet of that creature's corpse and the creature has been dead no longer than 1 minute, the creature's soul returns to its body and is restored to life, leaving the creature @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and dying 1 but no longer @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 1}, or increases its doomed value by 1 if it was already doomed.</p>\n<p><strong>Failure</strong> As success, but @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 2}.</p>\n<p><strong>Critical Failure</strong> As success, but @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed 3}.</p>"
+				},
+				"CwxYoKcoC0dSFuhX":{
+					"name": "Mind-Numbing Touch",
+					"description": "<p>When a soul eater hits a creature with its claw Strike, the creature must succeed at a @Check[type:fortitude|dc:23] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} on a critical failure).</p>\n<p>Further damage dealt by the soul eater increases the stupefied value by 1 on a failed save, to a maximum of stupefied 4. This condition value decreases by 1 each time the creature gets a full night's rest. As long as the creature is stupefied by a soul eater, rest does not decrease any @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{Doomed} value that creature might have.</p>"
+				},
+				"5H5M7ucca4W3guPv":{
+					"name": "Abaddon Lore"
 				}
-			],
-			"senses": "greater darkvision"
+			}
 		},
 		"Spark Bat": {
 			"name": "Spark Bat",
 			"publicNotes": "<p>Spark bats congregate around volatile weather in the Plane of Air.</p>",
-			"senses": "darkvision"
+			"senses": "darkvision",
+			"items":{
+				"GVFq98KDosC4rgkt":{
+					"name": "Jaws"
+				},
+				"LTcf2lgijfe0Cv96":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"qbm10J9qDUiFCQDn":{
+					"name": "Arc Lightning",
+					"description": "<p>The spark bat transforms into lightning that arcs to a large piece of metal within 100 feet, such as a suit of metal armor or a metal weapon. The bat then returns to its normal form in a space adjacent to the metal. This movement doesn't trigger reactions.</p>"
+				}
+			}
 		},
 		"Spear Frog": {
 			"name": "Spear Frog",
 			"publicNotes": "<p>The spear frog is named for its toxin, which is traditionally used to envenom thrown projectiles like spears and daggers.</p>",
-			"senses": "low-light vision"
+			"senses": "low-light vision",
+			"items":{
+				"Zvjunjzq6eA7veaV":{
+					"name": "Jaws"
+				},
+				"S6Avv1gbTIidozSY":{
+					"name": "昏暗视觉 Low-Light Vision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]"
+				},
+				"40BuHxitDl0hJDTK":{
+					"name": "Toxic Skin",
+					"description": "<p>Anytime a creature touches the spear frog or an adjacent creature Strikes the spear frog with a melee attack, that creature is exposed to spear frog venom.</p>"
+				},
+				"kzg3qoq55PGMljc3":{
+					"name": "Spear Frog Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>"
+				},
+				"aYcG8JHXY8UJvVcF":{
+					"name": "Sticky Feet",
+					"description": "<p>Spear frogs are not flat-footed when @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Balancing} on a narrow surface, and they gain a +4 bonus to Reflex saves to avoid falling.</p>"
+				}
+			}
 		},
 		"Specter": {
 			"name": "Specter",
@@ -12235,13 +12962,73 @@
 			],
 			"senses": "darkvision",
 			"hp": "negative healing",
-			"languages": "Telepathy 100 feet (With Spectral Thralls Only)"
+			"languages": "Telepathy 100 feet (With Spectral Thralls Only)",
+			"items":{
+				"zjVbARImBBAx6EKv":{
+					"name": "Vile Touch"
+				},
+				"12e8csvZLJdg2OS8":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"V9Ei1dwq0RUilrjT":{
+					"name": "Telepathy 100 feet (With Spectral Thralls Only)"
+				},
+				"wtvDPCazUVSsqJ2O":{
+					"name": "负能量治疗 Negative Healing"
+				},
+				"9wolaUuOroFk0cOg":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"RGaUdIjwMpgnNYGg":{
+					"name": "Pain Starvation",
+					"description": "<p>A specter that goes for more than a month without dealing negative damage to a living humanoid becomes desperate and almost feral. It changes alignment from lawful evil to chaotic evil, loses control of any corrupted thralls it might have, and becomes @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened}. It can use its additional action only to make vile touch Strikes against humanoid targets. At the end of any turn in which it deals any amount of negative damage to a living humanoid, it reverts to lawful evil and is no longer quickened, but any thralls it lost control of remain free.</p>"
+				},
+				"qh8LFXVLWjILfZZx":{
+					"name": "Sunlight Powerlessness",
+					"description": "<p>A specter caught in sunlight is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} for as long as it remains in the sunlight.</p>"
+				},
+				"OSiq1CXChzTT7udW":{
+					"name": "Spectral Corruption",
+					"description": "<p>The specter makes a Vile Touch Strike. If it damages a living creature, the specter gains [[/r 5 #Temporary Hit Points]]{5 temporary Hit Points} and the target creature must attempt a @Check[type:will|dc:24] save to avoid becoming corrupted.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to spectral corruption for 1 minute.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p>\n<p><strong>Failure</strong> The creature succumbs to the corruption and becomes a spectral thrall temporarily. The creature is @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} by the specter, obeying the specter's telepathic or spoken orders, though a spectral thrall does not obey obviously self-destructive orders. This lasts until the end of the thrall's next turn, at which point it is no longer controlled but becomes stupefied 2 for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but the duration is unlimited. The thrall can attempt a new Will save at the end of each of its turns; on a success, it is no longer controlled by the specter but becomes stupefied 2 for 1 hour.</p>"
+				}
+			}
 		},
 		"Spiral Centurion": {
 			"name": "Spiral Centurion",
 			"publicNotes": "<p>These mechanical constructs were created to serve as guardians in an ancient and bygone era, although exactly who made them and the secrets of their construction have long since been lost to history. From the waist up, they resemble humanoids made of metal, but from the waist down their bodies take the form of spinning metal tops ringed with blades, which excel at cutting down nearby foes. Most spiral centurions can be directed to stand down with a password, although often these command phrases have been lost to the mists of time. In rare cases, a spiral centurion may also wield manufactured weapons or a shield in addition to its built-in weapons, giving it access to additional actions besides those listed below.</p>\n<p>Most spiral centurions are hundreds or even thousands of years old, only staying functional because of the powerful magic used in their creation. Still, millennia of neglect have caused many spiral centurions to develop small glitches or malfunctions.</p>",
 			"senses": "darkvision",
-			"hp": "Hardness 10"
+			"hp": "Hardness 10",
+			"items":{
+				"injH2iWqg5QjQiqs":{
+					"name": "Blade"
+				},
+				"7dxhRfITiiUW00kr":{
+					"name": "黑暗视觉 Darkvision",
+					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
+				},
+				"gPcAYqbYyOADoHwc":{
+					"name": "Top-Heavy",
+					"description": "<p>A spiral centurion's top-like design makes it susceptible to effects that would cause it to fall prone. The DC of any attempt to knock the spiral centurion @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} is reduced by 5. If the spiral centurion attempts a check or saving throw to resist being knocked prone, it takes a -5 status penalty. A spiral centurion that has been knocked prone can't use any actions other than to attempt to Stand, but it must succeed at a @Check[type:acrobatics|dc:30] check to do so.</p>"
+				},
+				"xijGvHanHygeHGCM":{
+					"name": "Hurl Blade",
+					"description": "<p>The spiral centurion hurls one of its blades with an angled spin to ensure a swooping flight path. The blade deals [[/r {6d6}[slashing]]]{6d6 slashing damage} to each creature in a @Template[type:line|distance:40] (@Check[type:reflex|dc:30|basic:true] save).</p>\n<p>At the start of the spiral centurion's next turn, the blade swoops around and returns along the same flight path, again dealing [[/r {6d6}[slashing]]]{6d6 slashing damage} (@Check[type:reflex|dc:30|basic:true] save) to each creature along the same line.</p>"
+				},
+				"LOsTy4ZSFM2RSN4k":{
+					"name": "Rev Up",
+					"description": "<p><strong>Requirements</strong> The spiral centurion has not acted yet this turn</p>\n<hr />\n<p><strong>Effect</strong> The spiral centurion Strides up to its Speed. It then gains a +2 circumstance bonus to attack and damage rolls until the end of its turn.</p>"
+				},
+				"xPid5CwljZFADBGF":{
+					"name": "践踏 Trample",
+					"description": "<p>Medium or smaller, blade, @Check[type:reflex|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				},
+				"3cCzIUJ7cXhefnQ1":{
+					"name": "Whirling Death",
+					"description": "<p>The spiral centurion spins furiously in place, its blades extended to slice through nearby creatures. It makes up to five melee blade Strikes. No single creature can be targeted by more than one blade Strike during one use of this ability. These attacks count toward the spiral centurion's multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks are made.</p>"
+				}
+			}
 		},
 		"Spirit Naga": {
 			"name": "Spirit Naga",
