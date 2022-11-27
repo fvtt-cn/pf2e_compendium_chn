@@ -659,6 +659,30 @@
         "(Zombie) Unholy Speed": {
             "name": "(丧尸)不洁之速 (Zombie) Unholy Speed",
             "description": "<p>丧尸在它的所有速度上获得+10状态加值。</p>"
+        },
+        "(Ravener) Consume Soul": {
+            "name": "(掠劫亡龙)吞噬灵魂 (Ravener) Consume Soul",
+            "description": "<p><strong>触发</strong> 一个活物死在掠劫亡龙30尺内。</p>\n<hr />\n<p><strong>效果</strong> 掠劫亡龙扯出这个生物的灵魂并囫囵吞下。这个濒死生物必须进行等于掠劫亡龙吐息DC的@Check[type:fortitude|dc:|name:Consume Soul]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 掠劫亡龙从这个生物的灵魂上撕下了一小块。如果这个生物被复活，在复活的副作用以外他们还会受到@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。掠劫亡龙的护体之魂增加等同于此生物等级一半的HP。</p>\n<p><strong>失败</strong> 如同成功，但是这个生物的灵魂已被毁坏。这个生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3}，掠劫亡龙的护体之魂增加等于此生物等级的HP。</p>\n<p><strong>大失败</strong> 如同失败，但是掠劫亡龙吞噬了全部灵魂。只要掠劫亡龙尚存，受害者就不能复活，除非使用10级效果如<em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>或<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>，掠劫亡龙的护体之魂增加等于此生物等级两倍的HP。</p>"
+        },
+        "(Ravener) Cowering Fear": {
+            "name": "(掠劫亡龙)恐惧畏缩 (Ravener) Cowering Fear",
+            "description": "<p>@Template[type:emanation|distance:0]{0尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:|name:Cowering Fear]</p>\n<p>一条掠劫亡龙的气势凶猛还会使得受影响的生物在恐惧中畏缩。只要一个生物因为掠劫亡龙的气势凶猛而获得至少@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，他还会因恐惧而@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+        },
+        "(Ravener) Discorporate": {
+            "name": "(掠劫亡龙)化整为灵 (Ravener) Discorporate",
+            "description": "<p><strong>触发</strong> 掠劫亡龙的护体之魂受到转嫁的伤害且护体之魂剩余HP不少于51。</p>\n<hr />\n<p><strong>效果</strong> 掠劫亡龙深深地吸入它的护体之魂，将它的身体分解灵魂能量以便逃跑。掠劫亡龙的护体之魂受到50点伤害，而它的物理身躯消失，[[/r 1d4 #hours]]{1d4小时}后在它使用化整为灵的地点1英里半径内的随机地点再次出现。</p>"
+        },
+        "(Ravener) Soulsense": {
+            "description": "<p>一条掠劫亡龙能感知到列出的距离内的活物和不死生物的精魂精华。那些物质身躯和他们的灵魂是一体的生物，如天族和魔族，在这个感官中显得更明亮。</p>",
+            "name": "(掠劫亡龙)探知灵魂 (Ravener) Soulsense"
+        },
+        "(Ravener) Soul Ward": {
+            "name": "(掠劫亡龙)护体之魂 (Ravener) Soul Ward",
+            "description": "<p>一个无形的死灵能量场保护着一条掠劫亡龙不被完全摧毁。护体之魂有着150点最大HP，如果掠劫亡龙的等级是21或更高的话为200 点。</p>\n<p>当掠劫亡龙的HP将降至1以下，除了将它降至1点HP的伤害之外的伤害值都会转嫁给护体之魂。如果转嫁的伤害能将护体之魂的HP降至0以下，掠劫亡龙就会被消灭。</p>\n<p>护体之魂的HP只能通过特定的掠劫亡龙能力来恢复，如吞噬灵魂、掠劫吐息和恶毒重击。一条超过一周没有成功使用吞噬灵魂能力享用一个濒死生物的灵魂的掠劫亡龙陷入饥饿，它的护体之魂每日失去[[/r {1d4} #Soul Ward Decay]]{1d4生命值}直至它吃下灵魂。倘若掠劫亡龙的护体之魂失去了所有的HP而掠劫亡龙还有大于1点的HP，它就会变成@UUID[Compendium.pf2e.pathfinder-bestiary-2.Yv0005Vym1peVKHq]{掠劫亡龙空骸 Ravener Husk}。</p>"
+        },
+        "(Ravener) Vicious Criticals": {
+            "name": "(掠劫亡龙)恶毒重击 (Ravener) Vicious Criticals",
+            "description": "<p>只要攻击骰命中，掠劫亡龙将19和20骰点都视为重击。当掠劫亡龙的打击造成重击时，目标必须通过@Check[type:fortitude|dc:|name:Vicious Criticals]豁免否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。如果目标的流失值已经大于0，则其流失值将增加1，最大为流失4。</p>\n<p>每当掠劫亡龙以这种方式吸取一个生物的生命力时，他们的护体之魂将获得5点生命值。</p>"
         }
     }
 }
