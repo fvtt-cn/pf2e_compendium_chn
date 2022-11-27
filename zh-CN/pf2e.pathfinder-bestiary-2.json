@@ -9684,25 +9684,25 @@
 			}
 		},
 		"Moonflower": {
-			"name": "Moonflower",
-			"publicNotes": "<p>These enormous plants have thick, knotted trunks festooned with fanged blossoms. A gaping mouth sits at the top of the trunk, capable of swallowing most creatures smaller than the moonflower whole. Moonflowers can move slowly on their powerful roots or use them to attack, but usually they dig them deeply into the surrounding ground and remain stationary to await prey.</p>\n<p>Though moonflowers can't speak in the conventional sense, they communicate telepathically with other moonflowers. Explorers who encounter a single moonflower can thus be assured that any other moonflowers in the vicinity will be prepared for them. Those who manage to intercept a moonflower's telepathic communications are assaulted by visions of dreadful, primeval jungles ruled over by titanic plant life. Whether this is some vision of the past or a dream of the future shared by all moonflowers is unknown.</p>\n<p>Moonflowers are alien life-forms from a long-dead planet, but their proliferation throughout the galaxy has been ensured through the machinations of the Dominion of the Black, a sinister, alien organization from the dark places between the stars.</p>",
+			"name": "月光花 Moonflower",
+			"publicNotes": "<p>这些庞大的植物上生长着粗壮、多节的树干，上面装点并绽放着长着尖牙的花朵。树干的顶端长着一张敞开的巨口，能够吞下大多数体格比月光花更小的生物。月光花可以利用自身那强壮的根茎缓慢地移动，或者利用根茎发动攻击，但通常来说他们会将根部深深地扎进周遭的土地里，一动不动地等待猎物上门。</p>\n<p>尽管月光花无法按照常规的感官进行对话，但它们能够利用心灵感应和其他月光花进行交流。当探险家遭遇落单的月光花时，应当能确认周边地区的其他月光花都已经为他们的到来做好了准备。而那些设法截断月光花的心灵通信之人，都会被可怖、原始的丛林幻境所侵袭，那是庞大的植物生命处于统治地位的景象。目前还无法确认这是所有月光花共同对于过往的构想亦或者是对于未来的梦想。</p>\n<p>月光花是一种异星生命形式，来自许久以前死亡的行星，但它们在银河系之中的增殖则源于黑色支配者的阴谋，这个邪恶的异星组织来自群星之间的黑暗地带。</p>",
 			"dr": [
 				{
-					"exceptions": "except slashing",
+					"exceptions": "除挥砍",
 					"type": "physical",
 					"value": 10
 				}
 			],
 			"senses": "黑暗视觉",
 			"hp": "快速愈合10",
-			"languages": "心灵感应1 mile (Other Moonflowers Only)",
+			"languages": "心灵感应1英里(仅限其他月光花)",
 			"items":{
 				"SDF2zWv6zGkmcQH9":{
 					"name": "啮咬 Bite",
 					"description": ""
 				},
 				"MvwGFLtsnf8ZFqhG":{
-					"name": "Root"
+					"name": "根茎 Root"
 				},
 				"4SqlNn1QJhVGrfJb":{
 					"name": "黑暗视觉 Darkvision",
@@ -9712,20 +9712,20 @@
 					"name": "快速愈合10"
 				},
 				"JVxGmdUEcMuZmGlg":{
-					"name": "Light Pulse",
-					"description": "<p>@Template[type:emanation|distance:50]{50尺}</p>\n<p>The moonflower releases a pulse of bright light. Each non-moonflower creature in the emanation must attempt a @Check[type:fortitude|dc:23] save.</p>\n<p>The moonflower can't use Light Pulse again for [[/br 1d4 #Recharge Light Pulse]]{1d4轮}.</p>\n<hr />\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} for [[/br 1d4 #Duration Dazzled]]{1d4轮}.</p>\n<p><strong>大失败</strong> The creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} for [[/br 1d4 #Duration Blinded]]{1d4轮}.</p>"
+					"name": "强光脉冲 Light Pulse",
+					"description": "<p>@Template[type:emanation|distance:50]{50尺}</p>\n<p>月光花放射出明亮光线构成的脉冲。发散（emanation）范围中的非月光花生物必须尝试@Check[type:fortitude|dc:23]豁免。</p>\n<p>月光花在[[/br 1d4 #Recharge Light Pulse]]{1d4轮}内无法再次使用强光脉冲。</p>\n<hr />\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，持续[[/br 1d4 #Duration Dazzled]]{1d4轮}。</p>\n<p><strong>大失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}，持续[[/br 1d4 #Duration Blinded]]{1d4轮}。</p>"
 				},
 				"6Psn5RSYm8UGDpwM":{
-					"name": "Pod Prison",
-					"description": "<p><strong>触发</strong> The moonflower has swallowed a creature</p>\n<hr />\n<p><strong>效果</strong> The swallowed creature is wrapped in a tight cocoon and extruded from the moonflower's body into an adjacent square. The creature continues to be Swallowed Whole. It can't use Acrobatics to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} a pod, but other creatures can attempt to 破裂the pod. The cocooned creature takes half damage from any damage dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.</p>"
+					"name": "荚囊囚牢 Pod Prison",
+					"description": "<p><strong>触发</strong> 月光花活吞了一个生物。</p>\n<hr />\n<p><strong>效果</strong> 被活吞的生物会被紧紧地包裹在茧中，然后被喷到与月光花的身体相邻的方格内。该生物会被继续视同为被活吞。他无法使用特技来@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}荚囊，但是其他生物可以尝试使其破裂。若对茧造成任何伤害，则被包裹的生物也会承受伤害，数值为茧受到伤害的一半。当茧破裂后，它就会立即泄气并腐烂。</p>"
 				},
 				"Uoxf8sSuS6pG7QQF":{
-					"name": "Pod Spawn",
-					"description": "<p>Should a Small or larger creature die within a pod prison, the pod transforms into an adult moonflower with full Hit Points after [[/br 1d4 #Moonflower Transformation]]{1d4小时} of growth.</p>\n<p>The newly formed moonflower has its own consciousness, but some aspect of its trunk or blossoms resembles the creature that died within. The dead creature's equipment remains inside the new moonflower and can be retrieved if the moonflower is slain.</p>"
+					"name": "荚生衍体 Pod Spawn",
+					"description": "<p>当小型或更大的生物由于荚囊囚牢而死亡时，荚囊会在[[/br 1d4 #Moonflower Transformation]]{1d4小时}的成长后转变为一株生命值全满的成年月光花。</p>\n<p>新形成的月光花具有自己的意识，但它的树干或花在某些方面与其体内死亡的生物类似。死亡生物的装备会留存在新生月光花的体内，当月光花被杀死后可以将其回收。</p>"
 				},
 				"kjaeBRLTBCSOl9cS":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>大型, [[/r {2d10 + 10}[bludgeoning] + {2d6}[acid]]]{2d10 + 10 bludgeoning and 2d6 acid}, 破裂21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>大型, [[/r {2d10 + 10}[bludgeoning] + {2d6}[acid]]]{2d10+10钝击和2d6 酸液}, 破裂21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"0D7DkzCzV4iv9Q0r":{
 					"name": "攫抓 Grab"
@@ -9733,9 +9733,9 @@
 			}
 		},
 		"Morlock": {
-			"name": "Morlock",
-			"publicNotes": "<p>Originating from humans long lost from the world of light, morlocks are brutal monsters that dwell in the tangled tunnels of the upper reaches of the Darklands. Their wiry frames mask the strength of their limbs and their swift reactions, and their arms are long enough that they can drop into an uncanny, four-limbed shuffle for speed or stealth. They no longer remember the lives their ancestors led on the surface, although many morlocks still dwell in the shattered ruins of their ancient homes. Some morlocks worship the statues of humans from these bygone eras as gods, but others now worship Lamashtu, Rovagug, or other violent deities.</p>\n<p>Morlock young are insatiable and clamor for even the slightest morsel of food, even consuming their siblings if no other meal presents itself. Most morlocks encourage the practice to ensure their ancestral group as a whole grows stronger.</p>\n<p>A typical morlock stands just over 5 feet tall and weighs roughly 150 pounds.</p>",
-			"allSaves": "+2 status to all saves vs. disease and poison",
+			"name": "摩洛克 Morlock",
+			"publicNotes": "<p>摩洛克起源于被长年累月隔绝在地下的人类，他们住在幽暗地域上层错综复杂的坑道里。他们纤细的骨架往往后让人轻视它们四肢的力量和反应速度，他们的手臂足够长，能以四肢着的怪异姿态行走，以达到快速移动或隐秘移动的目的。摩洛克们不再记得祖先在地面上的生活，尽管许多摩洛克仍然住在他们古老家园的破碎废墟中。一些摩洛克人把这些过去时代的人类雕像作为神来崇拜，但另一些现在崇拜拉玛什图（Lamashtu），洛瓦古格（Rovagug），或其他暴力的神祇。</p>\n<p>摩洛克幼崽贪得无厌，哪怕是仅有的一点食物也会吵着要，如果没有其他食物，它们甚至会吞食自己的兄弟姐妹。大多数摩洛克支持这种做法，以确保他们的族裔作为一个整体变得更强大。</p>\n<p>典型的摩洛克站立时身高约有5尺，重约150磅。</p>",
+			"allSaves": "对抗疾病和毒素时所有豁免检定+2状态加值",
 			"senses": "黑暗视觉",
 			"items":{
 				"EK9tHuUdNF8lzwwK":{
@@ -9757,29 +9757,29 @@
 					"name": "强光致盲 Light Blindness"
 				},
 				"G412UtVloe7PIpa4":{
-					"name": "+2 Status to All Saves vs. Disease and Poison"
+					"name": "对抗疾病和毒素时所有豁免检定+2状态加值"
 				},
 				"3vycv9ThXOQbgNBf":{
-					"name": "Instinctual Tinker",
-					"description": "<p>The morlock tinkers with an adjacent construct or mechanical hazard. They attempt a @Check[type:crafting] check against the construct's or hazard's Fortitude DC. The morlock can't succeed if the target's level is more than double the morlock's.</p>\n<hr />\n<p><strong>大成功</strong> The target gains [[/r {4d6}[healing]]]{4d6生命值} and a +1 circumstance bonus to attack rolls for 1 minute.</p>\n<p><strong>成功</strong> The target gains [[/r {2d6}[healing]]]{2d6生命值}.</p>\n<p><strong>大失败</strong> The morlock injures itself, taking [[/r {2d6}]]{2d6伤害} (typically bludgeoning, piercing, or slashing, but potentially a different type at the GM's discretion).</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.TEzLEXBZzNCp6flg]{效果: Instinctual Tinker (Critical Success)}</p>"
+					"name": "修修补补 Instinctual Tinker",
+					"description": "<p>摩洛克尝试修理一件相邻的构装体或机械陷阱。它尝试1次@Check[type:crafting]检定，对抗该构装体或陷阱的强韧DC。如果目标的等级为摩洛克的2倍以上，摩洛克就无法得到比失败更好的结果。</p>\n<hr />\n<p><strong>大成功</strong> 目标恢复[[/r {4d6}[healing]]]{4d6生命值}并且在1分钟之内，攻击检定有+1环境加值。</p>\n<p><strong>成功</strong> 目标恢复[[/r {2d6}[healing]]]{2d6生命值}。</p>\n<p><strong>大失败</strong> 摩洛克弄伤它自己，受到[[/r {2d6}]]{2d6伤害}（一般是钝击、穿刺或挥砍，但是GM可以自由决定其他伤害类型）。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.TEzLEXBZzNCp6flg]{效果: 修修补补(大成功)}</p>"
 				},
 				"HaYQ8Cd4C0hYSFdc":{
-					"name": "Leap Attack",
-					"description": "<p>The morlock Strides up to twice its Speed, during which it attempts a @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump} or a @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump}. At any point during its movement, the morlock can make a melee Strike against an enemy in its reach.</p>\n<p>The morlock then can't use Leap Attack for 1 round.</p>"
+					"name": "跳跃攻击 Leap Attack",
+					"description": "<p>摩洛克以最多2倍速度行走，在此期间它尝试一次@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。在它的这次行动中的任何一点，摩洛克都能对其触及范围内的敌人进行1次近战打击。</p>\n<p>摩洛克在1轮内无法再次进行跳跃攻击。</p>"
 				},
 				"NXk6QjCfO8eW6Txp":{
 					"name": "偷袭 Sneak Attack",
-					"description": "<p>A morlock's Strikes deal an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>摩洛克的打击对措手不及的生物造成额外1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				},
 				"Y6Rqq2ahFM07WKRm":{
-					"name": "Swarming Stance",
-					"description": "<p>A morlock can share the same space as another morlock, but no more than two morlocks can occupy the same space. When morlocks share the same space, they gain a +1 circumstance bonus to attack rolls.</p>"
+					"name": "集群姿态 Swarming Stance",
+					"description": "<p>摩洛克能将占据的空间分享给其他摩洛克，但是同一空间内最多不能有超过两只摩洛克。当摩洛克共享空间时，他们在攻击骰上获得+1环境加值。</p>"
 				}
 			}
 		},
 		"Movanic Deva": {
-			"name": "Movanic Deva",
-			"publicNotes": "<p>Movanic devas are stewards of the flow of good creatures' souls through the cycle of life and death, from the point a creature is born to the day it dies. These angels arise from the souls of stalwart nurturers and protectors, and share a specific connection with a creature's vital essence-its life force. Movanic devas are most concerned with guiding and protecting good creatures during their mortal lives, so once a soul has passed into the River of Souls, the movanic deva leaves its protection to the soul angels, or monadic devas. As part of their stewardship over good creatures, movanic devas can waken within animals a level of sapience to allow them to become kindly and benevolent as well, thus increasing the flow of goodness into the afterlife. They also spend time patrolling the Positive Energy Plane and Negative Energy Plane, seeking to contain significant threats to life.</p>",
+			"name": "生命神使 Movanic Deva",
+			"publicNotes": "<p>生命神使是善良生物灵魂跨越生死轮回途中的监护人，从生物诞生那一刻直到他死亡的那一天。这些天使诞生于坚定的养育者和保护者的灵魂，并与生物存在的必要要素——其生命力产生了特殊联系。生命神使最为关心的便是在善良生物度过其凡间一生时指引并保护它，而一旦灵魂跨进灵魂之河，生命神使便会将其保护职责让渡给灵魂天使，或则说死亡神使。作为他们对于善良生物的监护职责的一部分，生命神使可以启蒙动物一定水平的智力，同时让它们变得友好仁慈，这会增加前往来世的善良生命数量。他们也会花时间巡逻正能量位面和负能量位面，搜寻并遏制对生命的重大威胁。</p>",
 			"allSaves": "在所有对魔法的豁免上获得+1状态加值",
 			"senses": "黑暗视觉",
 			"languages": "巧言术",
@@ -9803,7 +9803,7 @@
 					"description": "<p>当你感受到阵营灵光时，视野中会闪动光芒。选择混乱，邪恶，善良或者秩序。你侦测该阵营的灵光。你不会获得存在或不存在以外的任何信息。你可以选择不侦测你知晓已经有该阵营的生物或者效果。</p>\n<p>只有6或者更高等级的生物具有阵营灵光——除非是神术施法者，不死生物，或者外层位面（Outer Sphere的存在）。</p>\n<hr />\n<p><strong>升阶 (2环级)</strong> 你能了解到各个灵光的位置和强度。</p>"
 				},
 				"VHBwi6X1gEpQ8YsT":{
-					"name": "Flaming Bastard Sword"
+					"name": "炽焰变种剑 Flaming Bastard Sword"
 				},
 				"MKjlk8JpKxpWjpPW":{
 					"name": "黑暗视觉 Darkvision",
@@ -9819,22 +9819,22 @@
 					"name": "在所有对魔法的豁免上获得+1状态加值"
 				},
 				"jDvNUVTVAmMni2Va":{
-					"name": "Aura of Vitality",
-					"description": "<p>20尺。 Allies in the movanic deva's aura gain a +1 status bonus to all saving throws, resistance 10 to positive and negative damage, and are unharmed by the effects of a plane's positive and negative traits. Animals in the aura of 12th level or lower don't attack the movanic deva or the deva's allies unless they are controlled or otherwise forced to attack.</p>"
+					"name": "生命灵光 Aura of Vitality",
+					"description": "<p>20尺。生命神使灵光范围内的盟友在所有豁免骰上获得+1状态加值，对正能量和负能量伤害的抗力10，以及免受位面的具有正能量和负能量特征的效果影响。灵光范围内12级及以下的动物无法攻击生命神使和神使的盟友，除非它们被控制或以其他方式强制攻击。</p>"
 				},
 				"NEWDCp6ZApgJEtMx":{
-					"name": "Dispelling Field",
-					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> The movanic deva attempts to unravel unwelcome magic effects on allies within its aura of vitality to protect them from malevolent forces. The movanic deva attempts a counteract check against as many spell effects affecting allies in the area as it wishes with a +19 counteract modifier and a counteract level of 4, rolling once for the selected effects.</p>"
+					"name": "破咒力场 Dispelling Field",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 生命神使尝试解除其生命灵光范围内盟友身上的有害魔法效果，来保护他们免受邪恶力量伤害。生命神使依照其意愿，尝试一次反制检定对抗灵光范围内受影响盟友身上的多个法术效果，具有+19反制修正，以及4级反制等级，只需要为所选效果掷骰一次。</p>"
 				},
 				"VnUmVnOCMIOvu7ja":{
-					"name": "Flaming Armaments",
-					"description": "<p>When a movanic deva wields a weapon, that weapon gains the effect of a @UUID[Compendium.pf2e.equipment-srd.XszNvxnymWYRaoTp]{Flaming} rune.</p>"
+					"name": "炽焰武装 Flaming Armaments",
+					"description": "<p>当生命神使持用一件武器时，该武器获得@UUID[Compendium.pf2e.equipment-srd.XszNvxnymWYRaoTp]{炽焰 Flaming}符文效果。</p>"
 				}
 			}
 		},
 		"Mudwretch": {
-			"name": "Mudwretch",
-			"publicNotes": "<p>In its resting form, a mudwretch looks like a large puddle of thick, dark mud, heaped at the center in a slightly drier patch of loam. When a living creature approaches, though, the mudwretch lurches upward, piling its muddy flesh upon itself to form a roughly humanoid shape, often in vague mockery of the approaching creature's general form in cases where the creature is a humanoid itself.</p>\n<p>Mudwretches possess a low level of intellect, and while they do not form societies or cultures of their own, they are attracted to ruins or abandoned settlements. They have little need to eat, but without a constant source of moisture, a mudwretch dries out, suffering from low throbbing aches until it can resaturate. Often, blood from living creatures has to do-a dried mudwretch is more dangerous to intruders than one that's comfortably wallowing on a river bank.</p>",
+			"name": "泥人 Mudwretch",
+			"publicNotes": "<p>在静止状态下，泥人看起来就像是一滩厚实的黑色泥潭，铺在一块略显干燥的土壤的中央。然而，一旦有生物靠近，泥人就会猛地站起来，把烂泥的血肉堆在自己身上，形成一个大致类似于人体的形状，如果接近的生物本身就是类人生物，那么泥人的这种形态通常会是对于这一生物模糊且有拙劣的模仿。</p>\n<p>泥人的智力水平很低，虽然它们不会形成属于其自身的社会或者文化，但依旧会被废弃的定居点所吸引。它们几乎无需进食，但是如果没有持续的水分来源，一个泥人就会变干，遭受到轻微的悸动性疼痛，直至其再度饱和。通常情况下，来自活物的血液就能达成这种效果——所以对于那些入侵者来说，干燥的泥人比起泡在河岸上的泥人更为危险。</p>",
 			"dr": [
 				{
 					"label": "Acid",
@@ -9842,7 +9842,7 @@
 					"description": "3"
 				},
 				{
-					"exceptions": "except bludgeoning",
+					"exceptions": "除钝击",
 					"type": "physical",
 					"value": 3
 				}
@@ -9857,28 +9857,28 @@
 					"description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
 				},
 				"8wrcvKK8xk5AIIva":{
-					"name": "Muddy Field",
-					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>The ground in the area is difficult terrain for all non-mudwretch creatures.</p>"
+					"name": "泥泞领域 Muddy Field",
+					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>该区域对于所有非泥人的生物而言是困难地形。</p>"
 				},
 				"FlbbYL5EQllXYKjc":{
-					"name": "Susceptible to Desiccation",
-					"description": "<p>If a mudwretch takes any damage from <em>@UUID[Compendium.pf2e.spells-srd.M0jQlpQYUr0pp2Sv]{Horrid Wilting}</em> or a similar effect, takes 10 or more fire damage from a single effect, or spends more than 24 hours outside of a source of sufficient hydration (such as a swamp, river, well, or recent rainfall), it becomes dehydrated.</p>\n<p>While dehydrated, the mudwretch can't Spew Mud, is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}, and is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} until it either fully immerses in water, spends 1 minute in the rain, or rehydrates in another way (such as via Gory Hydration).</p>"
+					"name": "易受干燥 Susceptible to Desiccation",
+					"description": "<p>如果泥人受到了源自<em>@UUID[Compendium.pf2e.spells-srd.M0jQlpQYUr0pp2Sv]{枯萎术 Horrid Wilting}</em>或是类似效果的任何伤害，或者因单一效果而受到了10点或更多的火焰伤害，或者在一个拥有充足水分的场所（例如沼泽、河流、水井或是近期降雨）之外的地方待了超过24小时，它变为脱水状态。</p>\n<p>在脱水时，泥人无法喷射泥浆，同时@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}、@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，直至其完全浸入水中，在雨中待上1分钟，或是用其他方式补充水分（例如使用淋血汲水）。</p>"
 				},
 				"zWcMhsfvgxLXuw4D":{
 					"name": "紧勒 Constrict",
 					"description": "<p>[[/r {1d8+2}[bludgeoning]]]{1d8+2钝击伤害}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"wdSBw6qGzwcD9eZu":{
-					"name": "Gory Hydration",
-					"description": "<p><strong>需求</strong> The mudwretch is dehydrated</p>\n<p><strong>触发</strong> The mudwretch deals Constrict damage to a living creature that has blood</p>\n<hr />\n<p><strong>效果</strong> The mudwretch squeezes harder, dealing @Localize[PF2E.PersistentDamage.Bleed1d6.success] to the target. The mudwretch absorbs this blood, removing any penalties it had as a result of being dehydrated.</p>"
+					"name": "淋血汲水 Gory Hydration",
+					"description": "<p><strong>需求</strong> 泥人处于脱水状态。</p>\n<p><strong>触发</strong> 泥人对一个拥有血液的生物造成紧勒伤害。</p>\n<hr />\n<p><strong>效果</strong> 泥人用力压榨目标，对该生物造成@Localize[PF2E.PersistentDamage.Bleed1d6.success]。泥人会吸收这些血液，移除任何因脱水而承受的惩罚。</p>"
 				},
 				"gmtlsmLh9eNdpNrk":{
-					"name": "Mud Puddle",
-					"description": "<p>Until it next acts, the mudwretch appears to be an ordinary puddle of mud. It has an automatic result of 20 on Deception checks to pass as a mud puddle and can make a fist Strike against a creature that walks onto the mud puddle as a reaction.</p>"
+					"name": "泥潭 Mud Puddle",
+					"description": "<p>在其下次执行行动之前，泥人看上去只是一滩普通的烂泥。它在假装成一个泥潭的欺骗检定上自动以20为结果，并且可以对走到泥潭上的生物以一个反应动作进行一次拳头打击。</p>"
 				},
 				"EDGqAUdAUwkbCzQK":{
-					"name": "Spew Mud",
-					"description": "<p>The mudwretch spews a @Template[type:line|distance:20] of pressurized mud that deals [[/r {2d10}[bludgeoning]]]{2d10钝击伤害} (@Check[type:reflex|dc:18|basic:true] save). On a critical failure, a creature also takes a -10-foot status penalty to its Speeds for 1 round.</p>\n<p>The mudwretch can't Spew Mud again for [[/br 1d4 #rounds]]{1d4轮}.</p>"
+					"name": "喷射泥浆 Spew Mud",
+					"description": "<p>泥人喷射出一股@Template[type:line|distance:20]的高压泥浆，造成[[/r {2d10}[bludgeoning]]]{2d10钝击伤害}（@Check[type:reflex|dc:18|basic:true]豁免）。当大失败时，该生物还要在其速度上承受-10尺的状态罚值，持续1轮。</p>\n<p>泥人在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷射泥浆。</p>"
 				},
 				"lvSGUnxmrOKOF2tT":{
 					"name": "攫抓 Grab"
