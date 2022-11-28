@@ -1687,7 +1687,7 @@
         },
         "Composite Longbow": {
             "name": "复合长弓 Composite Longbow",
-            "description": "<p>这种抛射武器是由角、木头和肌腱复合而成，以增加其拉力和抛射力。像所有长弓一样，它的巨大尺寸也增加了弓的射程和力量。你必须用两只手去射击，而且它不能在骑乘时使用。任何被特别限制于长弓上的能力，比如Erastil的偏好武器，也同时适用于复合长弓，除非另有说明。</p>"
+            "description": "<p>这种抛射武器是由角、木头和肌腱复合而成，以增加其拉力和抛射力。像所有长弓一样，它的巨大尺寸也增加了弓的射程和力量。你必须用两只手去射击，而且它不能在骑乘时使用。任何被特别限制于长弓上的能力，比如埃拉斯蒂尔的偏好武器，也同时适用于复合长弓，除非另有说明。</p>"
         },
         "Composite Shortbow": {
             "name": "复合短弓 Composite Shortbow",
@@ -9742,7 +9742,8 @@
             "description": "<p>看似不可思议的紫罗兰射线管是线圈科技带给世界的众多奇妙设备之一。医生们声称，头痛、胃痛、恶心、耳聋等症状都可以通过这种简单而无痛的治疗方法得到缓解。该设备是一个真空的玻璃管，上面有一个绝缘的把手连接着一个小型斯塔西亚线圈。当通电时，玻璃管就会发出紫光，摸起感觉温暖。将管子压在身体上据说可以促进血液循环、排出毒素、以及带来许多其他有益的治疗效果。紫罗兰射线管的作用相当于一套医疗工具，并且对@UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{进行急救 Administer First Aid}、@UUID[Compendium.pf2e.actionspf2e.TC7OcDa7JlWbqMaN]{治疗疾病 Treat Disease}、@UUID[Compendium.pf2e.actionspf2e.KjoCEEmPGTeFE4hh]{治疗中毒 Treat Poison}、@UUID[Compendium.pf2e.actionspf2e.1kGNdIIhuglAjIp9]{治疗伤害 reat Wounds}时的医疗检定有+2物品加值。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将紫罗兰射线管应用于相邻的生物，并试图反制目标的@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy}、@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}、@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}、@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}、@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled}、@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened}或@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied}状态，反制等级为6级，反制调整值为[[/r 1d20+22 #counteract]]{+22}，并依照状态的来源来决定该状态的反制等级和DC。如果状态是有一个持续生效的效果导致的，你无法彻底移除该状态，该状态会在1分钟后重新出现。每次使用此能力时只能反制一个单独的状态。</p>"
         },
         "Violet Venom": {
-            "name": "Violet Venom"
+            "name": "紫蕈毒液 Violet Venom",
+            "description": "<p>从紫蕈中提取毒素的精细过程导致这种毒液的毒性被稀释了。炼金术士仍在寻找这种剧毒最纯净的版本。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互(接触)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>潜伏期</strong> 1分钟</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和力竭1 (1轮)</p>"
         },
         "Viper Arrow": {
             "name": "蝰蛇箭 Viper Arrow",
@@ -10403,8 +10404,8 @@
             "description": "<p>经过适当地收割和腌制，这种来自于双足飞龙钉刺的毒素具备高效且直白的毒害效果。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 交互 (伤口)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<p><strong>最大持续时间</strong> 6 轮</p>\n<p><strong>阶段 1</strong> [[/r {5d6}[poison]]]{5d6 毒素伤害} (1 轮)</p>\n<p><strong>阶段 2</strong> [[/r {6d6}[poison]]]{6d6 毒素伤害} (1 轮)</p>\n<p><strong>阶段 3</strong> [[/r {8d6}[poison]]]{8d6 毒素伤害} (1 轮)</p>"
         },
         "Yellow Musk Poison": {
-            "name": "Yellow Musk Poison",
-            "description": "<p>The powdered pollen from a yellow musk creeper addles the mind.</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> Interact (Inhaled)</p>\n<p><strong>Saving Throw</strong> @Check[type:will|dc:16]</p>\n<p><strong>最大持续时间</strong> 2 rounds</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by the poison cloud (1 round)</p>\n<p><strong>阶段2</strong> fascinated by the poison cloud, and can use no actions but to move closer to the cloud's point of origin (1 round)</p>"
+            "name": "黄麝香毒 Yellow Musk Poison",
+            "description": "<p>源自于黄麝香匍匐者的花粉粉末能够搅乱心智。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互(吸入)</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:16]</p>\n<p><strong>最大持续时间</strong> 2轮</p>\n<p><strong>阶段1</strong> 被毒云@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}(1轮)</p>\n<p><strong>阶段2</strong> 被毒云迷魂，并且除了移动靠近毒云的源点外无法使用其他动作 (1轮)</p>"
         },
         "Zerk": {
             "name": "泽科 Zerk",
