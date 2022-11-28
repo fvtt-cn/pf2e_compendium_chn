@@ -346,12 +346,20 @@
             "stealthdetails": "<p>(受训) or @Check[type:perception|dc:26|traits:action:seek] (专家) to notice the control panel</p>"
         },
         "Sportlebore": {
-            "name": "Sportlebore",
-            "hazarddisable": "<p>A creature that notices the sportlebore can remove it from the food it is hidden within automatically as an Interact action.</p>",
-            "hazarddescription": "<p>A sportlebore hides amid the victuals on a plate of food or within a pack of trail rations.</p>",
-            "hazardreset": "",
-            "hazardroutine": "",
-            "stealthdetails": "<p>(专家)</p>"
+            "name": "拟餐虫 Sportlebore",
+            "hazarddisable": "<p>一名发现拟餐虫的生物可以使用一个交互动作把它从藏身的食物中剔除。</p>",
+            "hazarddescription": "<p>拟餐虫会藏在一盘食物或一袋干粮内</p>",
+            "stealthdetails": "<p>(专家)</p>",
+            "items":{
+                "WleycA2DC7Pz8RYR":{
+                    "name": "拟态食物 Mimic Food",
+                    "description": "<p><strong>触发</strong> 一名生物食用了拟餐虫藏身其中的食物。</p>\n<hr />\n<p><strong>效果</strong> 拟餐虫在宿主胃部快速增殖，使得宿主获得拟餐虫感染。</p>"
+                },
+                "nCcx1LK7XrbDnVXI":{
+                    "name": "拟餐虫感染 Sportlebore Infestation",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1小时)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1小时)</p>\n<p><strong>阶段4</strong> [[/r {4d6}[bludgeoning]]]{4d6钝击伤害} (@Check[type:fortitude|dc:25|basic:true]豁免)，与此同时宿主痛苦地呕吐出一团拟餐虫群并回到阶段 1。</p>"
+                }
+            }
         },
         "Steam Vents": {
             "name": "Steam Vents",
