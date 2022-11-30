@@ -1,11 +1,11 @@
 {
-  "name": "pf2e_compendium_chn",
   "title": "Translation: 中文 [PF2e（合集包）]",
   "description": "PF2e 系统的合集包翻译，需要 Babele。",
   "authors": [
     {
       "name": "FVTT-CN",
-      "email": "fvtt-cn@dickytwister.org"
+      "email": "fvtt-cn@dickytwister.org",
+      "flags": {}
     }
   ],
   "compatibility": {
@@ -13,21 +13,32 @@
     "verified": "10"
   },
   "scripts": [
-    "./babele.js"
+    "npc/NPCTranslator.js"
   ],
-  "systems": [
-    "pf2e"
+  "esmodules": [
+    "babele.js"
   ],
-  "dependencies": [
-    {
-      "name": "babele",
-      "type": "module",
-      "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json"
-    }
-  ],
-  "changelog": "Auto replaced",
-  "version": "Auto replaced",
-  "url": "Auto replaced",
-  "manifest": "Auto replaced",
-  "download": "Auto replaced"
+  "changelog": "https://github.com/fvtt-cn/pf2e_compendium_chn/releases/tag/1.0.1",
+  "version": "1.0.1",
+  "url": "https://github.com/fvtt-cn/pf2e_compendium_chn",
+  "manifest": "https://github.com/fvtt-cn/pf2e_compendium_chn/releases/latest/download/module.json",
+  "download": "https://github.com/fvtt-cn/pf2e_compendium_chn/releases/download/1.0.1/pf2e_compendium_chn.zip",
+  "id": "pf2e_compendium_chn",
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
+        "compatibility": {}
+      }
+    ],
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
 }
