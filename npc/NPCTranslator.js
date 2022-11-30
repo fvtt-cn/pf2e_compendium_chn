@@ -717,9 +717,9 @@ class Dictionary {
 
         let value = parseInt(str);
         if (value) {
-            if (str.search(/mile/g) > -1) return `${value} Meile/${value * 1.5} km`;
-            else if (str.search(/miles/g) > -1) return `${value} Meilen/${value * 1.5} km`;
-            else if (str.search(/feet/g) > -1) return `${value} Fuß/${value * 0.3} m`;
+            if (str.search(/mile/g) > -1) return `${value} 英里/${value * 1.5} km`;
+            else if (str.search(/miles/g) > -1) return `${value} 英里/${value * 1.5} km`;
+            else if (str.search(/feet/g) > -1) return `${value} 尺/${value * 0.3} m`;
             else return str;
         } else return str;
     }
