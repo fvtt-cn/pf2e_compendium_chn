@@ -1,6 +1,23 @@
 {
     "label": "怪物图鉴 Bestiary 3",
     "mapping": {
+        "name": "name",
+        "portrait": {
+            "path": "img",
+            "converter": "npc-portrait-path"
+        },
+        "token": {
+            "path": "prototypeToken",
+            "converter": "npc-token-translation"
+        },
+        "data": {
+            "path": "system",
+            "converter": "npc-data-translation"
+        },
+        "items": {
+            "path": "items",
+            "converter": "npc-item-translation"
+        },
         "publicNotes":"system.details.publicNotes",
         "dr":"system.traits.dr",
         "allSaves":"system.attributes.allSaves.value",

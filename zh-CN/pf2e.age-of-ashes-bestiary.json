@@ -1,6 +1,23 @@
 {
 	"label": "灰烬之年 Age of Ashes",
 	"mapping":{
+		"name": "name",
+        "portrait": {
+            "path": "img",
+            "converter": "npc-portrait-path"
+        },
+        "token": {
+            "path": "prototypeToken",
+            "converter": "npc-token-translation"
+        },
+        "data": {
+            "path": "system",
+            "converter": "npc-data-translation"
+        },
+        "items": {
+            "path": "items",
+            "converter": "npc-item-translation"
+        },
 		"publicNotes":"system.details.publicNotes",
 		"stealth":"system.attributes.stealth.details",
 		"disable":"system.details.disable",

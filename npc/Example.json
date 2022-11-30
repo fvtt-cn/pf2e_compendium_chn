@@ -1,0 +1,104 @@
+{
+    "label": "Example",
+    "mapping": {
+        "name": "name",
+        "portrait": {
+            "path": "img",
+            "converter": "npc-portrait-path"
+        },
+        "token": {
+            "path": "prototypeToken",
+            "converter": "npc-token-translation"
+        },
+        "data": {
+            "path": "system",
+            "converter": "npc-data-translation"
+        },
+        "items": {
+            "path": "items",
+            "converter": "npc-item-translation"
+        }
+    },
+    "entries": {
+        "Example Creature": {
+            "name": "Translated Name",
+            "data": {
+                "blurb": "some blurb text",
+                "tokenName": "the token name",
+                "description": {
+                    "NPCName": "special name to show up  only in notes",
+                    "NPCDescription": "<p>The NPC description. Regarding the other fields: the special name, family name blurb and token name are all optional</p>",
+                    "FamilyName": "Example Creature Family",
+                    "FamilyDescription": "<p>The description text for the creature family, e.g. the text regarding devils in general. Both family name and description are optional</p>",
+                    "AdditionalInfo": {
+                        "location0": {
+                            "Caption Text":"<p>the sidebar information. The different types use different icons in npc/icons</p>"
+                        },
+                        "lore0": {
+                            "Caption Text":"<p>the sidebar information. The different types use different icons in npc/icons</p>"
+                        },
+                        "monster0": {
+                            "Caption Text":"<p>the sidebar information. The different types use different icons in npc/icons</p>"
+                        },
+                        "rule0": {
+                            "Caption Text":"<p>the sidebar information. The different types use different icons in npc/icons</p>"
+                        },
+                        "trap0": {
+                            "Caption Text":"<p>the sidebar information. The different types use different icons in npc/icons</p>"
+                        },
+                        "treasure0": {
+                            "Caption Text":"<p>the sidebar information. The different types use different icons in npc/icons</p>"
+                        },
+                        "location1": {
+                            "Caption Text 2":"<p>of course you can have multiple entries for each type</p>"
+                        }
+                    }
+                }
+            },
+            "items": {
+                "English ability": {
+                    "name": "translated name",
+                    "description": "<p>the ability description; basically you only need to translate items (abilities, strikes, equipment, …) that don't exist within a compendium - or if you want a standard ability to have additional text (see attack of opportunity below)</p>"
+                },
+                "Attack of Opportunity": {
+                    "name": "Gelegenheitsangriff",
+                    "description": "<p>some modified attack of opportunity. You only have to add such things if you want an individual text - otherwise the coding uses the one from the bestiary glossary and you don't have to add it at all.</p>\n<hr>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+                },
+                "one more ability": {
+                    "name": "translated name 2",
+                    "description": "<p>A lot of data within the npc sheets is translated using the data within the NPCDictionary - hp details, ac details, senses, speed details, save bonuses, regeneration, lore, skill variant labels, additions to spell names like (At Will),… As your first step you should localize the data found there, then have a look at your npcs and add missing things</p>"
+                },
+                "strike-a strike": {
+                    "name": "translated strike",
+                    "description": "<p>A lot of npc strikes should already get translated using the data provided within the NPCDictionary. However, if if have something special or a strike with additional description text, you can also add it here as an ability with the prefix</p>"
+                },
+                "equipment-an equipment": {
+                    "name": "translated equipment",
+                    "description": "<p>same es strikes. Most equipment is localized using the equipment compendium. However, some npcs also have special stuff that does not exist in a compendium. If it is something you might use multiple times you can add it to the NPCDictionary, otherwise you can also just add it here</p>"
+                },
+                "some sense": {
+                    "name": "some translated sense",
+                    "description": "<p>The basic senses as well as basic language entries like telepathy get automaticalls translated. Special senses should be entered here, however</p>"
+                }
+            }
+        },
+        "Example Hazard": {
+            "name": "translated Hazard",
+            "data": {
+                "disable": "<p>The disable entry</p>",
+                "reset": "<p>The reset entry</p>",
+                "routine": "<p>The routine entry</p>",
+                "stealth": "<p>The stealth entry</p>",
+                "description": {
+                    "NPCDescription": "<p>You can also localize hazards</p>"
+                }
+            },
+            "items": {
+                "a hazard ability": {
+                    "name": "translated name",
+                    "description": "<p>ability description</p>"
+                }
+            }
+        }
+    }
+}
