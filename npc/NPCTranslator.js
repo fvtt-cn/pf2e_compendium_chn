@@ -1,8 +1,8 @@
 // Register token setting
 Hooks.once("init", () => {
     game.settings.register("pf2e_compendium_chn", "token", {
-        name: "Portraitbild als Token",
-        hint: "Soll beim Import eines übersetzten NSCs aus einem Kompendium das Portraitbild als Token genutzt werden statt des regulären Token-Bilds?",
+        name: "是否将肖像设置为指示物Token",
+        hint: "从合集包中导入翻译NPC时，是否使用肖像作为指示物Token，而不是常规Token？",
         scope: "world",
         type: Boolean,
         config: false,
@@ -717,9 +717,9 @@ class Dictionary {
 
         let value = parseInt(str);
         if (value) {
-            if (str.search(/mile/g) > -1) return `${value} Meile/${value * 1.5} km`;
-            else if (str.search(/miles/g) > -1) return `${value} Meilen/${value * 1.5} km`;
-            else if (str.search(/feet/g) > -1) return `${value} Fuß/${value * 0.3} m`;
+            if (str.search(/mile/g) > -1) return `${value} 英里`;
+            else if (str.search(/miles/g) > -1) return `${value} 英里`;
+            else if (str.search(/feet/g) > -1) return `${value} 尺`;
             else return str;
         } else return str;
     }
