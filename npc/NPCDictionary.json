@@ -1,6 +1,7 @@
 {
     "AcDetails": {
         "+1 status vs. evil creatures": "对抗邪恶生物时+1状态加值",
+        "+ 1status vs. evil creatures": "对抗邪恶生物时+1状态加值",
         "after construct armor breaks": "构装护甲破损后",
         "all-around vision": "全域视野",
         "against prey; see Hunt Prey": "对抗猎杀目标时；详见猎杀目标",
@@ -293,6 +294,10 @@
             "baseItem": "Religious Symbol (Silver)",
             "name": "伊德修斯的圣徽(银制) Religious Symbol (Silver)"
         },
+        "defiled religious symbol of pharasma (wooden)":{
+            "baseItem": "Religious Symbol (Silver)",
+            "name": "被玷污的法莱斯玛圣徽(木制) Defiled Religious Symbol of Pharasma (Wooden)"
+        },
         "rhoka sword": {
             "name": "双叉剑 Rhoka Sword"
         },
@@ -380,6 +385,10 @@
             "baseItem": "Musical Instrument (Virtuoso handheld)",
             "name": "古典竖琴 Virtuoso Harp"
         },
+        "flute":{
+            "baseItem": "Musical Instrument (Virtuoso handheld)",
+            "name": "长笛 Flute"
+        },
         "wand of heal (level 2)": {
             "name": "治疗术魔杖(2环) wand of heal (level 2)",
             "baseItem": "Magic Wand (1st-Level Spell)",
@@ -411,8 +420,47 @@
             "name": "浮夸帽子 Outrageous Hat"
         },
         "Full Plate (see Death Blaze)":{
-            "name": "Full Plate (see Death Blaze)",
+            "name": "全身甲(见) Full Plate (see Death Blaze)",
             "baseItem": "Full Plate"
+        },
+        "Amulet":{
+            "name": "附身符 Amulet",
+            "baseItem": "Dragonscale Amulet",
+            "description": "<p><em>随着圣物持有者的力量增长，圣物的力量也随之增长。圣物的完整规则见游戏主持人指南94页。</em></p>"
+        },
+        "+2 resilient glamered full plate":{
+            "name": "+2抗力无相全身甲 +2 resilient glamered full plate",
+            "baseItem": "Full Plate"
+        },
+        "toenail cutter":{
+            "name": "Toenail Cutter"
+        },
+        "pitchfork":{
+            "name": "Pitchfork"
+        },
+        "+2 greater resilient breastplate":{
+            "name": "+2高等抗力胸甲 +2 greater resilient breastplate",
+            "baseItem": "Breastplate"
+        },
+        "+1 resilient hide armor":{
+            "name": "+1抗力革甲 +1 resilient hide armor",
+            "baseItem": "Hide Armor"
+        },
+        "satchel for holding rocks":{
+            "name": "石头袋 Satchel for Holding Rocks"
+        },
+        "elegant cane (as mace)":{
+            "name": "优雅手杖(如硬头锤) Elegant Cane (As Mace)",
+            "baseItem": "Mace"
+        },
+        "legal ledgers":{
+            "name": "法律卷宗 Legal Ledgers"
+        },
+        "spiritual rope":{
+            "name": "魂魄之绳 Spiritual Rope"
+        },
+        "silver scissors":{
+            "name": "银剪刀 Silver Scissors"
         }
     },
 
@@ -729,7 +777,7 @@
     "Range": {
         "touch": "接触",
         "within their entire bound granary or storeroom": "within their entire bound granary or storeroom",
-        "within their entire bound home": "within their entire bound home",
+        "within their entire bound home": "在被束缚的家中",
         "within their entire bound yard": "within their entire bound yard"
 
     },
@@ -784,7 +832,8 @@
         "slashing": "除挥砍",
         "sonic": "除音波",
         "unarmed attacks": "除无武装攻击",
-        "vorpal adamantine": "除斩首精金"
+        "vorpal adamantine": "除斩首精金",
+        "force, ghost touch, or negative; double resistance vs. non-magical":"除力场、幽冥或负能量；此抗力对抗非魔法时翻倍"
     },
     
     "SaveDetails": {
@@ -837,6 +886,7 @@
         "+4 status to all saves vs. mental or divine": "对抗心灵或神术时+4状态加值",
         "+4 status to all saves vs. sonic": "对抗音波效果时全豁免+4状态加值",
         "+4 status to will saves vs. mental": "对抗心灵效果时意志豁免+4状态加值",
+        "+4 to will saves vs. fear": "对抗恐惧效果时意志豁免+4加值",
         "circle of protection": "防护法阵",
         "guarded thoughts": "思维防护",
         "lazurite-infused flesh": "lazurite-infused flesh",
@@ -917,8 +967,7 @@
         "wavesense": "水波感知",
         "web sense": "蛛网感知",
         "windsense": "御风感知",
-        "wrath scent": "嗅探愤怒原罪",
-        "regeneration": "再生"
+        "wrath scent": "嗅探愤怒原罪"
     },
 
     "SensePrecision": {
@@ -983,6 +1032,7 @@
         "to create forgery": "伪造时",
         "to demoralize with threatening lunge": "用威胁语句挫败士气",
         "to disarm, grapple, or avoid being disarmed": "卸武、擒抱或对抗卸武",
+        "to disarm, grappe, or avoid being disarmed": "卸武、擒抱或对抗卸武",
         "to disarm a metal item": "对金属物体卸武",
         "to disarm stone or metal objects": "对石质或金属物品卸武",
         "to escape": "逃脱",
@@ -1066,13 +1116,16 @@
         "occult focus spells": "异能聚能法术",
         "focus spells": "聚能法术",
         "champion devotion spells": "神卫虔诚法术",
+        "champion focus spells":"神卫聚能法术",
         "coven spells": "巫团法术",
         "coven ritual": "巫团仪式",
         "divine font": "神力源泉",
         "healing font": "治疗源泉",
         "damaging font": "伤害源泉",
         "school spells": "学派法术",
-        "wizard school spells": "法师学派法术"
+        "wizard school spells": "法师学派法术",
+        "cleric domain spells":"牧师领域法术",
+        "nature's chosen":"Nature's Chosen"
     },
 
     "SpellOffset": {
@@ -1114,7 +1167,11 @@
         "see forest shape":"见森林形态",
         "forest terrain only":"只在森林地形生效",
         "good or evil only":"仅限善良或邪恶",
-        "image resembles the brainchild":"Image Resembles the Brainchild"
+        "image resembles the brainchild":"Image Resembles the Brainchild",
+        "doesn't require secondary casters and can target a willing creature of any level":"不需要次要施法者,且能以任意等级的自愿生物为目标",
+        "see idols of stone":"见石制偶像",
+        "undead only":"仅限不死生物",
+        "spiders only":"仅限蜘蛛"
     },
 
     "SpeedDetails": {
@@ -1155,7 +1212,8 @@
         "unstoppable burrow": "畅挖无阻",
         "water walk": "水面行走",
         "while waterlogged": "while waterlogged",
-        "woodland stride": "穿林步"
+        "woodland stride": "穿林步",
+        "snowstep":"踏雪步"
     },
 
     "Strike": {
@@ -1245,6 +1303,7 @@
         "sling": "投石索 Sling",
         "spear": "矛 Spear",
         "spike": "钉刺 Spike",
+        "spikes":"钉刺 Spikes",
         "staff": "木杖 Staff",
         "starknife": "星刃 Starknife",
         "sting": "叮咬 Sting",
@@ -1275,9 +1334,24 @@
         "limb":"Limb",
         "warping ray":"Warping Ray",
         "spit":"吐痰 Spit",
+        "thorn":"荆棘 Thorn",
         "thorns":"荆棘 Thorns",
         "illusory weapon":"Illusory Weapon",
-        "spine":"尖刺 Spine"
+        "spine":"尖刺 Spine",
+        "flame":"烈焰 Flame",
+        "adamantine jaws":"精金爪 Adamantine Jaws",
+        "Launched Blade":"刀刃发射 Launched Blade",
+        "greatpick":"巨镐 Greatpick",
+        "quills":"棘刺 Quills",
+        "snout":"Snout",
+        "radiant ray":"光耀射线 Radiant Ray",
+        "void weapon":"虚空武器 Void Weapon",
+        "sunset ribbon":"日光缎带 Sunset Ribbon",
+        "sunset ray":"日光射线 Sunset Ray",
+        "touch":"触碰 Touch",
+        "foxfire":"狐火 Foxfire",
+        "spiked chain":"刺链 Spiked Chain",
+        "silver scissors":"银剪刀 Silver Scissors"
     },
 
     "Trait": {}
