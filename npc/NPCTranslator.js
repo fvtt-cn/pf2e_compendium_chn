@@ -674,9 +674,9 @@ class Dictionary {
             }
 
             translatedItem.name = propertyRune
+                .concat(striking)
                 .concat(prefixRunes.sort().join())
                 .concat(suffixRunes.sort().join())
-                .concat(striking)
                 .concat(translatedItem.name);
 
             // Standard compendium translation
