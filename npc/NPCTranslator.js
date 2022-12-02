@@ -674,10 +674,10 @@ class Dictionary {
             }
 
             translatedItem.name = propertyRune
+                .concat(striking)
                 .concat(prefixRunes.sort().join())
-                .concat(translatedItem.name)
                 .concat(suffixRunes.sort().join())
-                .concat(striking);
+                .concat(translatedItem.name);
 
             // Standard compendium translation
         } else {

@@ -1,11 +1,12 @@
 {
     "AcDetails": {
         "+1 status vs. evil creatures": "对抗邪恶生物时+1状态加值",
+        "+ 1status vs. evil creatures": "对抗邪恶生物时+1状态加值",
         "after construct armor breaks": "构装护甲破损后",
         "all-around vision": "全域视野",
         "against prey; see Hunt Prey": "对抗猎杀目标时；详见猎杀目标",
         "construct armor": "构装护甲",
-        "fed by metal": "fed by metal",
+        "fed by metal": "由金所生",
         "from inside the dimensional pit": "from inside the dimensional pit",
         "or 36 vs. non-magical": "对抗非魔法时36",
         "when broken": "破损时",
@@ -47,20 +48,21 @@
 
     "HpDetails": {
         "all-around vision": "全域视野",
-        "blood leech": "blood leech",
+        "blood leech": "吸血",
         "coffin restoration": "寝于棺木",
+        "death implosion":"死之内爆",
         "death blaze": "death blaze",
-        "death flame": "death flame",
-        "death flare": "death flare",
-        "death flash": "death flash",
+        "death flame": "死之白焰",
+        "death flare": "死之闪光",
+        "death flash": "死之强光",
         "death umbra": "death umbra",
         "explosion": "爆炸",
         "fast healing": "快速愈合",
-        "filth wallow": "filth wallow",
+        "filth wallow": "粪坑打滚",
         "fire healing": "火焰愈合",
         "hardness": "硬度",
-        "head regrowth": "head regrowth",
-        "hydra regeneration": "hydra regeneration",
+        "head regrowth": "头部重生",
+        "hydra regeneration": "多头蛇再生",
         "immortal flesh": "immortal flesh",
         "lightning drinker": "吞电饮雷",
         "negative healing": "负能量治疗",
@@ -68,8 +70,8 @@
         "primal purpose": "primal purpose",
         "regeneration": "再生",
         "rejuvenation": "复生",
-        "repair mode": "repair mode",
-        "self-resurrection": "self-resurrection",
+        "repair mode": "修理模式",
+        "self-resurrection": "浴火重生",
         "temp hp from false life": "虚假生命的临时生命值",
         "troop defenses": "部队防御"
     },
@@ -209,14 +211,15 @@
         },
         "baton (light mace)": {
             "baseItem": "Light Mace",
-            "name": "baton (light mace)"
+            "name": "指挥棒(轻型硬头锤) Baton (Light Mace)"
         },
         "blowgun darts (1 coated in giant centipede venom)": {
             "baseItem": "Blowgun Darts",
-            "name": "blowgun darts (1 coated in giant centipede venom)"
+            "name": "吹箭(其中1枚涂有巨蜈蚣毒) Blowgun Darts (1 coated in giant centipede venom)"
         },
         "bola bolts": {
-            "name": "bola bolts"
+            "name": "束缚箭 Bola Bolts",
+            "description": "<p>这种箭矢不会造成伤害，但命中目标时，目标必须成功通过@Check[type:reflex|dc:16]豁免，失败则会@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}并@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直至成功通过DC 15的@Compendium[pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}为止。目标或者与目标相邻的生物都可以尝试该检定。</p>"
         },
         "doubling rings (+1)": {
             "baseItem": "Doubling Rings",
@@ -263,7 +266,7 @@
             "name": "铁鞋 Iron Boots"
         },
         "large bark shield": {
-            "name": "large bark shield"
+            "name": "大皮盾 Large Bark Shield"
         },
         "leng ruby": {
             "name": "冷原红宝石 Leng Ruby"
@@ -291,6 +294,10 @@
             "baseItem": "Religious Symbol (Silver)",
             "name": "伊德修斯的圣徽(银制) Religious Symbol (Silver)"
         },
+        "defiled religious symbol of pharasma (wooden)":{
+            "baseItem": "Religious Symbol (Silver)",
+            "name": "被玷污的法莱斯玛圣徽(木制) Defiled Religious Symbol of Pharasma (Wooden)"
+        },
         "rhoka sword": {
             "name": "双叉剑 Rhoka Sword"
         },
@@ -308,39 +315,48 @@
         },
         "scroll of faerie fire (level 2)": {
             "baseItem": "Scroll of 2nd-level Spell",
-            "name": "妖火术卷轴(2环) scroll of faerie fire (level 2)"
+            "name": "妖火术卷轴(2环) scroll of faerie fire (level 2)",
+            "description": "@Compendium[pf2e.spells-srd.HRb2doyaLtaoCfi3]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of familiar's face (level 3)": {
             "baseItem": "Scroll of 3rd-level Spell",
-            "name": "scroll of familiar's face (level 3)"
+            "name": "宠伴之面卷轴(3环) scroll of familiar's face (level 3)",
+            "description": "@Compendium[pf2e.spells-srd.9GkOWDFDEMuV3hJr]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of grim tendrils (level 1)": {
             "baseItem": "Scroll of 1st-level Spell",
-            "name": "scroll of grim tendrils (level 1)"
+            "name": "邪影触须卷轴(1环) scroll of grim tendrils (level 1)",
+            "description": "@Compendium[pf2e.spells-srd.k34hDOfIIMAxNL4a]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of magic weapon (level 1)": {
             "baseItem": "Scroll of 1st-level Spell",
-            "name": "scroll of magic weapon (level 1)"
+            "name": "魔化武器卷轴(1环) scroll of magic weapon (level 1)",
+            "description": "@Compendium[pf2e.spells-srd.TFitdEOpQC4SzKQQ]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of nondetection (level 3)": {
             "baseItem": "Scroll of 3rd-level Spell",
-            "name": "scroll of nondetection (level 3)"
+            "name": "回避侦测卷轴(3环) scroll of nondetection (level 3)",
+            "description": "@Compendium[pf2e.spells-srd.EoKBlgf6Smt8opaU]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of pet cache (level 1)": {
             "baseItem": "Scroll of 1st-level Spell",
-            "name": "scroll of pet cache (level 1)"
+            "name": "宠伴存储卷轴(1环) scroll of pet cache (level 1)",
+            "description": "@Compendium[pf2e.spells-srd.F1nlmqOIucch3Cmt]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of resist energy (level 2)": {
             "baseItem": "Scroll of 2nd-level Spell",
-            "name": "scroll of resist energy (level 2)"
+            "name": "抵抗能量伤害卷轴(2环) scroll of resist energy (level 2)",
+            "description": "@Compendium[pf2e.spells-srd.Fr58LDSrbndgld9n]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of restoration (level 2)": {
             "baseItem": "Scroll of 2nd-level Spell",
-            "name": "scroll of restoration (level 2)"
+            "name": "复原术卷轴(2环) scroll of restoration (level 2)",
+            "description": "@Compendium[pf2e.spells-srd.SnaLVgxZ9ryUFmUr]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "scroll of teleport (level 6)": {
             "baseItem": "Scroll of 6th-level Spell",
-            "name": "scroll of teleport (level 6)"
+            "name": "传送术卷轴(6环) scroll of teleport (level 6)",
+            "description": "@Compendium[pf2e.spells-srd.69L70wKfGDY66Mk9]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法Cast a Spell行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法Cast a Spell，该法术必须出现在你的法术表中。因为是你在施法Cast a Spell，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术Arcane，神术Divine，异能Occult，原能Primal）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法Cast a Spell时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "shoddy breastplate": {
             "baseItem": "Breastplate",
@@ -359,7 +375,7 @@
         },
         "sturdy shield (minor) (shield ally)": {
             "baseItem": "Sturdy Shield (Minor)",
-            "name": "sturdy shield (minor) (shield ally)"
+            "name": "下等百炼盾(坚盾盟友) sturdy shield (minor) (shield ally)"
         },
         "tambourine (handheld musical instrument)": {
             "baseItem": "Musical Instrument (Handheld)",
@@ -369,24 +385,82 @@
             "baseItem": "Musical Instrument (Virtuoso handheld)",
             "name": "古典竖琴 Virtuoso Harp"
         },
+        "flute":{
+            "baseItem": "Musical Instrument (Virtuoso handheld)",
+            "name": "长笛 Flute"
+        },
         "wand of heal (level 2)": {
-            "name": "wand of heal (level 2)",
-            "baseItem": "Magic Wand (1st-Level Spell)"
+            "name": "治疗术魔杖(2环) wand of heal (level 2)",
+            "baseItem": "Magic Wand (1st-Level Spell)",
+            "description": "@Compendium[pf2e.spells-srd.rfZpqmj0AIIdkVIs]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
         },
         "wand of mage armor (level 1)": {
-            "name": "wand of mage armor (level 1)",
-            "baseItem": "Magic Wand (1st-Level Spell)"
+            "name": "法师护甲魔杖(1环) wand of mage armor (level 1)",
+            "baseItem": "Magic Wand (1st-Level Spell)",
+            "description": "@Compendium[pf2e.spells-srd.aAbfKn8maGjJjk2W]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
         },
         "wand of magic missile (level 1)": {
-            "name": "wand of magic missile (level 1)",
-            "baseItem": "Magic Wand (1st-Level Spell)"
+            "name": "魔法飞弹魔杖(1环) wand of magic missile (level 1)",
+            "baseItem": "Magic Wand (1st-Level Spell)",
+            "description": "@Compendium[pf2e.spells-srd.gKKqvLohtrSJj3BM]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
         },
         "wand of mending (level 1)": {
-            "name": "wand of mending (level 1)",
-            "baseItem": "Magic Wand (1st-Level Spell)"
+            "name": "修复术魔杖(1环) wand of mending (level 1)",
+            "baseItem": "Magic Wand (1st-Level Spell)",
+            "description": "@Compendium[pf2e.spells-srd.dINQzhqGmIsqGMUY]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
         },
         "wineskin": {
             "name": "酒袋 Wineskin"
+        },
+        "voidglass kukri":{
+            "name": "虚空玻璃反曲刀 Voidglass Kukri",
+            "description": "<p>这把一英尺长的小刀，向内弯曲，刀柄上没有刀镡。</p>"
+        },
+        "outrageous hat":{
+            "name": "浮夸帽子 Outrageous Hat"
+        },
+        "Full Plate (see Death Blaze)":{
+            "name": "全身甲(见) Full Plate (see Death Blaze)",
+            "baseItem": "Full Plate"
+        },
+        "Amulet":{
+            "name": "附身符 Amulet",
+            "baseItem": "Dragonscale Amulet",
+            "description": "<p><em>随着圣物持有者的力量增长，圣物的力量也随之增长。圣物的完整规则见游戏主持人指南94页。</em></p>"
+        },
+        "+2 resilient glamered full plate":{
+            "name": "+2抗力无相全身甲 +2 resilient glamered full plate",
+            "baseItem": "Full Plate"
+        },
+        "toenail cutter":{
+            "name": "Toenail Cutter"
+        },
+        "pitchfork":{
+            "name": "Pitchfork"
+        },
+        "+2 greater resilient breastplate":{
+            "name": "+2高等抗力胸甲 +2 greater resilient breastplate",
+            "baseItem": "Breastplate"
+        },
+        "+1 resilient hide armor":{
+            "name": "+1抗力革甲 +1 resilient hide armor",
+            "baseItem": "Hide Armor"
+        },
+        "satchel for holding rocks":{
+            "name": "石头袋 Satchel for Holding Rocks"
+        },
+        "elegant cane (as mace)":{
+            "name": "优雅手杖(如硬头锤) Elegant Cane (As Mace)",
+            "baseItem": "Mace"
+        },
+        "legal ledgers":{
+            "name": "法律卷宗 Legal Ledgers"
+        },
+        "spiritual rope":{
+            "name": "魂魄之绳 Spiritual Rope"
+        },
+        "silver scissors":{
+            "name": "银剪刀 Silver Scissors"
         }
     },
 
@@ -427,17 +501,17 @@
         "speak with arthropods": "节肢动物交谈",
         "speak with bats": "蝙蝠交谈",
         "speak with plants": "植物交谈",
-        "speak with plants (carnivorous plants only)": "植物交谈(nur mit fleischfressenden Pflanzen)",
+        "speak with plants (carnivorous plants only)": "植物交谈(仅限食虫植物)",
         "speak with plants (fungi only)": "植物交谈(仅限真菌)",
         "speak with plants (gourds only)": "植物交谈(仅限葫芦)",
-        "speak with plants (plants with vines only)": "植物交谈(plants with vines only)",
-        "speak with plants (seaweed only)": "植物交谈(seaweed only)",
-        "speak with plants (succulents only)": "植物交谈(succulents only)",
+        "speak with plants (plants with vines only)": "植物交谈(仅限藤蔓类植物)",
+        "speak with plants (seaweed only)": "植物交谈(仅限海藻)",
+        "speak with plants (succulents only)": "植物交谈(仅限多肉植物)",
         "speak with plants (sunflowers only)": "植物交谈(仅限向日葵)",
         "speak with plants (trees only)": "植物交谈(仅限数目)",
         "speak with snakes": "蛇类交谈",
         "spider speak": "蜘蛛交谈",
-        "stone tell": "stone tell",
+        "stone tell": "石言术",
         "telepathy": "心灵感应",
         "telepathy (touch)": "心灵感应(接触)",
         "telepathy (touch only)": "心灵感应(仅限接触)",
@@ -447,7 +521,7 @@
         "truespeech": "巧言",
         "two other languages": "两种其他语言",
         "understands its creator": "能明白其创造者使用的语言",
-        "universal language": "universal language",
+        "universal language": "万能语言",
         "voice of the storm": "voice of the storm",
         "wolf empathy": "狼类认同",
         "Zungen, one or more planar languages": "Zungen, one or more planar languages",
@@ -492,7 +566,7 @@
         "festival lore": "节日学识",
         "fire lore": "火焰学识",
         "forest lore": "森林学识",
-        "forest lore (applies to the arboreal archive's territory)": "森林学识(applies to the arboreal archive's territory)",
+        "forest lore (applies to the arboreal archive's territory)": "森林学识(适用于树精智库所在的领地)",
         "fortune-telling lore": "预言学识",
         "geology lore": "地理学识",
         "gold lore": "黄金学识",
@@ -502,7 +576,7 @@
         "herbalism lore": "草药学识",
         "hermea lore": "赫迷亚学识",
         "hills lore": "山丘学识",
-        "household lore": "学识(household)",
+        "household lore": "居家学识",
         "iruxi lore": "艾鲁西学识",
         "jewelry lore": "珠宝学识",
         "kovlar lore": "寇夫拉学识",
@@ -520,9 +594,9 @@
         "mercantile lore": "商贸学识",
         "meteorology lore": "气象学识",
         "midwifery lore": "产妇学识",
-        "millinery lore": "学识(millinery)",
+        "millinery lore": "女帽学识",
         "mining lore": "矿工学识",
-        "monastic lore": "学识(monastic)",
+        "monastic lore": "僧院学识",
         "nirvana lore": "涅槃境学识",
         "ocean lore": "海洋学识",
         "one or more lore skills related to a specific plane": "一项或更多与特定位面相关的学识",
@@ -532,16 +606,16 @@
         "plane of fire lore": "火元素位面学识",
         "plane of water lore": "水元素位面学识",
         "positive energy plane lore": "正能量位面学识",
-        "ruins lore (applies only to their home ruins)": "学识(ruins lore (applies only to their home ruins))",
+        "ruins lore (applies only to their home ruins)": "废墟学识(只适用于其故乡废墟)",
         "saggorak lore": "萨戈拉克学识",
         "sailing lore": "航海学识",
         "settlement lore": "聚居地学识",
         "scribing lore": "抄写学识",
         "shadow plane lore": "影界学识",
-        "skeletal lore": "学识(skeletal)",
+        "skeletal lore": "骷髅学识",
         "slaver lore": "贩奴者学识",
         "spider lore": "蜘蛛学识",
-        "stealth (see clacking exoskeleton)": "stealth (see clacking exoskeleton)",
+        "stealth (see clacking exoskeleton)": "隐秘(见噼啪响的外骨骼)",
         "tanning lore": "制皮学识",
         "theatre lore": "戏剧学识",
         "torture lore": "拷问学识",
@@ -703,7 +777,7 @@
     "Range": {
         "touch": "接触",
         "within their entire bound granary or storeroom": "within their entire bound granary or storeroom",
-        "within their entire bound home": "within their entire bound home",
+        "within their entire bound home": "在被束缚的家中",
         "within their entire bound yard": "within their entire bound yard"
 
     },
@@ -753,12 +827,13 @@
         "magical wood": "除魔法木质",
         "non-magical": "除非魔法",
         "piercing": "除穿刺",
-        "see choose weakness": "see choose weakness",
+        "see choose weakness": "见选择弱点",
         "silver": "除了银",
         "slashing": "除挥砍",
         "sonic": "除音波",
         "unarmed attacks": "除无武装攻击",
-        "vorpal adamantine": "除斩首精金"
+        "vorpal adamantine": "除斩首精金",
+        "force, ghost touch, or negative; double resistance vs. non-magical":"除力场、幽冥或负能量；此抗力对抗非魔法时翻倍"
     },
     
     "SaveDetails": {
@@ -811,10 +886,11 @@
         "+4 status to all saves vs. mental or divine": "对抗心灵或神术时+4状态加值",
         "+4 status to all saves vs. sonic": "对抗音波效果时全豁免+4状态加值",
         "+4 status to will saves vs. mental": "对抗心灵效果时意志豁免+4状态加值",
+        "+4 to will saves vs. fear": "对抗恐惧效果时意志豁免+4加值",
         "circle of protection": "防护法阵",
-        "guarded thoughts": "guarded thoughts",
+        "guarded thoughts": "思维防护",
         "lazurite-infused flesh": "lazurite-infused flesh",
-        "iron mind": "iron mind",
+        "iron mind": "钢铁意志",
         "perfect will": "perfect will"
     },
 
@@ -956,13 +1032,14 @@
         "to create forgery": "伪造时",
         "to demoralize with threatening lunge": "用威胁语句挫败士气",
         "to disarm, grapple, or avoid being disarmed": "卸武、擒抱或对抗卸武",
+        "to disarm, grappe, or avoid being disarmed": "卸武、擒抱或对抗卸武",
         "to disarm a metal item": "对金属物体卸武",
         "to disarm stone or metal objects": "对石质或金属物品卸武",
         "to escape": "逃脱",
         "to grapple": "擒抱",
         "to hide and sneak while in a tree": "在树中躲藏和潜行",
         "to hide in dim light": "昏暗光照下躲藏",
-        "to hide or sneak amoung inscriptions": "在铭文中躲藏或潜行",
+        "to hide or sneak among inscriptions": "在铭文中躲藏或潜行",
         "to high jump or long jump": "跳高或跳远",
         "to imitate stone": "拟形石头",
         "to impersonate": "乔装",
@@ -1039,13 +1116,16 @@
         "occult focus spells": "异能聚能法术",
         "focus spells": "聚能法术",
         "champion devotion spells": "神卫虔诚法术",
+        "champion focus spells":"神卫聚能法术",
         "coven spells": "巫团法术",
         "coven ritual": "巫团仪式",
         "divine font": "神力源泉",
         "healing font": "治疗源泉",
         "damaging font": "伤害源泉",
         "school spells": "学派法术",
-        "wizard school spells": "法师学派法术"
+        "wizard school spells": "法师学派法术",
+        "cleric domain spells":"牧师领域法术",
+        "nature's chosen":"Nature's Chosen"
     },
 
     "SpellOffset": {
@@ -1058,7 +1138,7 @@
         "chaotic only": "仅限混乱",
         "constant": "恒定法术",
         "doesn't require secondary casters": "不需要次要施法者",
-        "no secondary castor required": "不需要次要施法者",
+        "no secondary caster required": "不需要次要施法者",
         "evil only": "仅限邪恶",
         "evil or good only": "仅限邪恶或善良",
         "fire elemental only": "仅限火元素",
@@ -1083,7 +1163,15 @@
         "to shadow plane only": "仅限影界",
         "vs undead": "对抗邪恶生物",
         "vs. undead": "对抗邪恶生物",
-        "will-o'-wisp only": "仅限鬼火"
+        "will-o'-wisp only": "仅限鬼火",
+        "see forest shape":"见森林形态",
+        "forest terrain only":"只在森林地形生效",
+        "good or evil only":"仅限善良或邪恶",
+        "image resembles the brainchild":"Image Resembles the Brainchild",
+        "doesn't require secondary casters and can target a willing creature of any level":"不需要次要施法者,且能以任意等级的自愿生物为目标",
+        "see idols of stone":"见石制偶像",
+        "undead only":"仅限不死生物",
+        "spiders only":"仅限蜘蛛"
     },
 
     "SpeedDetails": {
@@ -1109,22 +1197,23 @@
         "magma swim": "熔岩泳者",
         "mountain stride": "mountain stride",
         "nimble stride": "nimble stride",
-        "powerful jumper": "powerful jumper",
+        "powerful jumper": "强力弹跳者",
         "sand glide": "潜沙",
         "smooth swimmer": "smooth swimmer",
         "snowstep": "snowstep",
-        "suction": "suction",
+        "suction": "吸附",
         "swamp stride": "沼泽穿行",
         "swift steps": "swift steps",
         "swiftness": "迅捷",
         "tenebral form": "tenebral form",
         "trackless step": "无踪步",
-        "trickster's step": "trickster's step",
+        "trickster's step": "诡步",
         "troop movement": "部队移动",
-        "unstoppable burrow": "unstoppable burrow",
+        "unstoppable burrow": "畅挖无阻",
         "water walk": "水面行走",
         "while waterlogged": "while waterlogged",
-        "woodland stride": "穿林步"
+        "woodland stride": "穿林步",
+        "snowstep":"踏雪步"
     },
 
     "Strike": {
@@ -1132,7 +1221,7 @@
         "alchemical bomb": "炼金炸弹 Alchemical Bomb",
         "antler": "角抵 Antler",
         "arm": "腕击 Arm",
-        "barb": "barb",
+        "barb": "尖刺 Barb",
         "bastard sword": "变种剑 Bastard Sword",
         "baton": "指挥棒 Baton",
         "battle axe": "战斧 Battle Axe",
@@ -1170,18 +1259,18 @@
         "hand": "手 Hand",
         "hand crossbow": "手弩 Hand Crossbow",
         "hatchet": "短柄斧 Hatchet",
-        "headbutt": "headbutt",
+        "headbutt": "头槌 Headbutt",
         "heavy crossbow": "重弩 Heavy Crossbow",
         "hoof": "蹄踢 Hoof",
         "horn": "角抵 Horn",
         "horns": "角抵 Horns",
         "horsechopper": "horsechopper",
         "hurled barb": "hurled barb",
-        "javelin": "Wurfspeer",
+        "javelin": "标枪 Javelin",
         "jaw": "啃咬 Jaw",
         "jaws": "啃咬 Jaws",
-        "katar": "katar",
-        "lance": "lance",
+        "katar": "Katar",
+        "lance": "长枪 Lance",
         "leg": "腿击 Leg",
         "light hammer": "轻锤 Light Hammer",
         "light mace": "轻型硬头锤 Light Mace",
@@ -1192,13 +1281,13 @@
         "mace": "硬头锤 Mace",
         "main-gauche": "格挡匕首 Main-Gauche",
         "mandibles": "虫颚 Mandibles",
-        "maul": "maul",
+        "maul": "大锤 Maul",
         "morningstar": "钉头锤 Morningstar",
         "ogre hook": "食人魔铁钩 Ogre Hook",
         "orc knuckle dagger": "兽人指匕 Orc Knuckle Dagger",
         "orc necksplitter": "兽人斩首斧 Orc Necksplitter",
         "pick": "镐 Pick",
-        "pincer": "螯钳 Pincer",
+        "pincer": "鳌夹 Pincer",
         "pseudopod": "伪足 Pseudopod",
         "ranseur": "刺叉 Ranseur",
         "rapier": "细剑 Rapier",
@@ -1213,7 +1302,8 @@
         "sickle": "镰刀 Sickle",
         "sling": "投石索 Sling",
         "spear": "矛 Spear",
-        "spike": "spike",
+        "spike": "钉刺 Spike",
+        "spikes":"钉刺 Spikes",
         "staff": "木杖 Staff",
         "starknife": "星刃 Starknife",
         "sting": "叮咬 Sting",
@@ -1235,7 +1325,33 @@
         "web": "蛛网 Web",
         "whip": "鞭子 Whip",
         "wing": "翼击 Wing",
-        "wings": "翼击 Wings"
+        "wings": "翼击 Wings",
+        "kukri": "反曲刀 Kukri",
+        "hand of despair": "绝望之手 Hand of Despair",
+        "hurled debris": "投掷碎片 Hurled Debris",
+        "psychic shard":"心灵碎片 Psychic Shard",
+        "elven curve blade":"精灵曲刃 Elven Curve Blade",
+        "limb":"Limb",
+        "warping ray":"Warping Ray",
+        "spit":"吐痰 Spit",
+        "thorn":"荆棘 Thorn",
+        "thorns":"荆棘 Thorns",
+        "illusory weapon":"Illusory Weapon",
+        "spine":"尖刺 Spine",
+        "flame":"烈焰 Flame",
+        "adamantine jaws":"精金爪 Adamantine Jaws",
+        "Launched Blade":"刀刃发射 Launched Blade",
+        "greatpick":"巨镐 Greatpick",
+        "quills":"棘刺 Quills",
+        "snout":"Snout",
+        "radiant ray":"光耀射线 Radiant Ray",
+        "void weapon":"虚空武器 Void Weapon",
+        "sunset ribbon":"日光缎带 Sunset Ribbon",
+        "sunset ray":"日光射线 Sunset Ray",
+        "touch":"触碰 Touch",
+        "foxfire":"狐火 Foxfire",
+        "spiked chain":"刺链 Spiked Chain",
+        "silver scissors":"银剪刀 Silver Scissors"
     },
 
     "Trait": {}
