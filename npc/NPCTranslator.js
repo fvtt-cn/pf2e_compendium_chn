@@ -500,7 +500,7 @@ class Dictionary {
             if (data.name.search(RegExp(`(Fast Healing)`, "g")) > -1) {
                 const rgx = new RegExp("Fast Healing ?(\\d+)?(?: \\(([^\\)]+)\\))?", "g");
                 translatedName = data.name.replace(rgx, (match, value, restriction) => {
-                    match = "Schnelle Heilung";
+                    match = "快速愈合";
                     if (value) match = match.concat(` ${value}`);
                     if (restriction)
                         match = match.concat(` (${this.translateFastHealingRestriction(restriction.toLowerCase())})`);
@@ -523,7 +523,7 @@ class Dictionary {
             } else if (data.name.search(RegExp(`(Regeneration)`, "g")) > -1) {
                 const rgx = new RegExp("Regeneration ?(\\d+)?(?: \\(([^\\)]+)\\))?", "g");
                 translatedName = data.name.replace(rgx, (match, value, deactivation) => {
-                    match = "Regeneration";
+                    match = "再生";
                     if (value) match = match.concat(` ${value}`);
                     if (deactivation)
                         match = match.concat(` (${this.translateRegenerationDeactivate(deactivation.toLowerCase())})`);
