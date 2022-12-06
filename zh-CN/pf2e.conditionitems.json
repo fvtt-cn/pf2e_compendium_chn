@@ -35,7 +35,7 @@
         },
         "Hidden": {
             "name": "藏匿 Hidden",
-            "description": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的 @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}动作而进入藏匿状态。若只用不精确的感官 @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seeking}你，则你依然能保持藏匿状态，而不会变成 @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}状态。你对其为藏匿状态的生物，对你也为 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态，且其攻击、法术或其它效果瞄准你时，必须通过 @Check[type:flat|dc:11] 检定，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索（Seek）动作尝试观察到你</p>"
+            "description": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的 @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}动作而进入藏匿状态。若只用不精确的感官 @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seeking}你，则你依然能保持藏匿状态，而不会变成 @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}状态。你对其为藏匿状态的生物，对你也为 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态，且其攻击、法术或其它效果瞄准你时，必须通过 @Check[type:flat|dc:11] 检定，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索动作尝试观察到你</p>"
         },
         "Hostile": {
             "name": "敌对 Hostile",
@@ -67,7 +67,7 @@
         },
         "Restrained": {
             "name": "束缚 Restrained",
-            "description": "<p>你被绑住几乎无法动弹，或某生物压制住了你。你获得 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和 @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，且你无法使用任何拥有攻击或操纵特征的动作，除了 @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}或 @UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}束缚这俩动作。束缚状态复盖 @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态。</p>"
+            "description": "<p>你被绑住几乎无法动弹，或某生物压制住了你。你获得 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和 @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，且你无法使用任何拥有攻击或操纵特征的动作，除了 @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}或 @UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}束缚这俩动作。束缚状态覆盖 @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态。</p>"
         },
         "Sickened": {
             "name": "恶心 Sickened",
@@ -163,11 +163,11 @@
         },
         "Stunned": {
             "name": "震慑 Stunned",
-            "description": "<p>短暂失去知觉。震慑时你无法行动。震慑通常拥有状态值，表明你到底失去了多少个动作。震慑通常能保持数个回合。每次你恢复动作（在自己回合开始时），所能恢复的动作减少震慑值的个数，然后将震慑值减少你所失去的动作的个数。举个例子，若你是震慑4状态，你在自己回合开始失去全部3个动作，然后变为震慑1；在你下一回合，你只会失去1个动作，还能恢复2个动作。震慑也可以附带持续时间而非状态值，写法类似 \"震慑1分钟\"。这种状况下，所列持续时间内你会一直失去所有动作。</p>\n<p>震慑状态复盖 @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}状态。若震慑持续时间结束时你依然缓慢，你将因震慑失去的动作计入缓慢会失去的动作数中。因此，若在你回合开始时若你为震慑1和缓慢2，你因震慑失去1个动作，再因缓慢失去1个动作，该回合你能保留1个动作。</p>"
+            "description": "<p>短暂失去知觉。震慑时你无法行动。震慑通常拥有状态值，表明你到底失去了多少个动作。震慑通常能保持数个回合。每次你恢复动作（在自己回合开始时），所能恢复的动作减少震慑值的个数，然后将震慑值减少你所失去的动作的个数。举个例子，若你是震慑4状态，你在自己回合开始失去全部3个动作，然后变为震慑1；在你下一回合，你只会失去1个动作，还能恢复2个动作。震慑也可以附带持续时间而非状态值，写法类似 \"震慑1分钟\"。这种状况下，所列持续时间内你会一直失去所有动作。</p>\n<p>震慑状态覆盖 @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}状态。若震慑持续时间结束时你依然缓慢，你将因震慑失去的动作计入缓慢会失去的动作数中。因此，若在你回合开始时若你为震慑1和缓慢2，你因震慑失去1个动作，再因缓慢失去1个动作，该回合你能保留1个动作。</p>"
         },
         "Undetected": {
             "name": "无踪 Undetected",
-            "description": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果复盖到。当你对某生物处于无踪状态时，该生物对你 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要 @Check[type:flat|dc:11] 纯骰检定），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用 @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}动作尝试找到你。</p>"
+            "description": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果覆盖到。当你对某生物处于无踪状态时，该生物对你 @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要 @Check[type:flat|dc:11] 纯骰检定），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用 @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}动作尝试找到你。</p>"
         }
     }
 }
