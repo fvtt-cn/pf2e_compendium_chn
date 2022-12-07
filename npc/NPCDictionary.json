@@ -110,6 +110,10 @@
             "baseItem": "Full Plate",
             "name": "+1全身甲 Full Plate"
         },
+        "+2 resilient full plate":{
+            "baseItem": "Full Plate",
+            "name": "+2抗力全身甲 Full Plate"
+        },
         "+1 half plate": {
             "baseItem": "Half Plate",
             "name": "+1半身甲 Half Plate"
@@ -194,6 +198,10 @@
             "baseItem": "Scale Mail",
             "name": "+2抗力鳞甲 Scale Mail"
         },
+        "+1 scale mail":{
+            "baseItem": "Scale Mail",
+            "name": "+1鳞甲 Scale Mail"
+        },
         "+2 striking katana": {
             "baseItem": "Katana",
             "name": "+2强击打刀 Katana"
@@ -236,6 +244,10 @@
         "flute - musical instrument (handheld)": {
             "baseItem": "Musical Instrument (Handheld)",
             "name": "长笛-乐器(手持) Musical Instrument (Handheld)"
+        },
+        "Fiddle":{
+            "baseItem": "Musical Instrument (Handheld)",
+            "name": "小提琴 Fiddle"
         },
         "formula book": {
             "baseItem": "Formula Book (Blank)",
@@ -302,6 +314,18 @@
         "defiled religious symbol of pharasma (wooden)":{
             "baseItem": "Religious Symbol (Silver)",
             "name": "被玷污的法莱斯玛圣徽(木制) Defiled Religious Symbol of Pharasma (Wooden)"
+        },
+        "defiled religious symbol of nethys":{
+            "baseItem": "Religious Symbol (Silver)",
+            "name": "被玷污的内希斯圣徽 Defiled Religious Symbol of Nethys"
+        },
+        "defiled religious symbol of kazutal":{
+            "baseItem": "Religious Symbol (Silver)",
+            "name": "被玷污的卡祖塔尔圣徽 Defiled Religious Symbol of Kazutal"
+        },
+        "religious symbol of urgathoa":{
+            "baseItem": "Religious Symbol (Silver)",
+            "name": "厄加图娅的圣徽 Religious Symbol of Urgathoa"
         },
         "rhoka sword": {
             "name": "双叉剑 Rhoka Sword"
@@ -696,6 +720,17 @@
         "+3 major striking kanabo":{
             "name": "+3上等强击金棒 Kanabo",
             "baseItem": "GreatClub"
+        },
+        "ceremonial robes":{
+            "name": "仪式长袍 Ceremonial Robes",
+            "baseItem": "Clothing (Fine)"
+        },
+        "crystal flower crown":{
+            "name": "水晶花冠 Crystal Flower Crown"
+        },
+        "bag of holding (type 1)":{
+            "name": "I型次元袋 Bag of Holding (Type 1)",
+            "baseItem": "Bag of Holding (Type I)"
         }
     },
 
@@ -765,7 +800,11 @@
         "(munavris only)": "(munavris only)",
         "(myceloids and those afflicted by purple pox only)": "(仅对菌体人和紫痘感染者生效)",
         "(other moonflowers only)": "(仅限其他月光花)",
-        "(with spectral thralls only)": "(with spectral thralls only)"
+        "(with spectral thralls only)": "(with spectral thralls only)",
+        "plus any one language spoken in life":"及一门生前会说的语言",
+        "any one language they knew in life":"一门生前会说的语言",
+        "any four languages (typically ancient languages)":"任意四种语言(一般是古代语言)",
+        "auran, ignan, one planar language (typically aquan, or terran)":"风族语、火族语和一种位面语言（通常是水族语或土族语）"
     },
 
     "Lore": {
@@ -827,6 +866,7 @@
         "lore (its home settlement or country)": "故乡聚居地或国家学识",
         "manticore lore": "蝎狮学识",
         "mercantile lore": "商贸学识",
+        "mercantile": "商贸学识",
         "meteorology lore": "气象学识",
         "midwifery lore": "产妇学识",
         "millinery lore": "女帽学识",
@@ -873,7 +913,16 @@
         "piloting lore":"驾驶学识",
         "ruby phoenix tournament lore":"赤凰武道会学识",
         "dancing lore":"舞蹈学识",
-        "all lores":"所有学识"
+        "all lores":"所有学识",
+        "esoteric lore":"秘传学识",
+        "ludovica lore":"露多维卡学识",
+        "games lore":"游戏学识",
+        "flying mountains lore": "flying mountains lore",
+        "driving lore":"驾驶学识",
+        "nethys lore":"内希斯学识",
+        "kazutal lore":"卡祖塔尔学识",
+        "soothsaying lore":"占卜学识",
+        "gladiatorial lore":"角斗学识"
     },
 
     "MagicWeapons": {
@@ -939,23 +988,113 @@
                 "m": "混沌",
                 "n": "混沌"
             },
+            "anchoring":{
+                "order": "prefix",
+                "f": "锚定",
+                "m": "锚定",
+                "n": "锚定"
+            },
+            "ancestralEchoing":{
+                "order": "prefix",
+                "f": "先祖回音",
+                "m": "先祖回音",
+                "n": "先祖回音"
+            },
+            "axiomatic":{
+                "order": "prefix",
+                "f": "公理",
+                "m": "公理",
+                "n": "公理"
+            },
+            "bane":{
+                "order": "prefix",
+                "f": "破敌",
+                "m": "破敌",
+                "n": "破敌"
+            },
+            "bloodbane":{
+                "order": "prefix",
+                "f": "血仇",
+                "m": "血仇",
+                "n": "血仇"
+            },
+            "bloodthirsty":{
+                "order": "prefix",
+                "f": "嗜血",
+                "m": "嗜血",
+                "n": "嗜血"
+            },
+            "brilliant":{
+                "order": "prefix",
+                "f": "光能",
+                "m": "光能",
+                "n": "光能"
+            },
+            "conducting":{
+                "order": "prefix",
+                "f": "传导",
+                "m": "传导",
+                "n": "传导"
+            },
             "corrosive": {
                 "order": "prefix",
                 "f": "酸蚀",
                 "m": "酸蚀",
                 "n": "酸蚀"
             },
+            "crushing":{
+                "order": "prefix",
+                "f": "粉碎",
+                "m": "粉碎",
+                "n": "粉碎"
+            },
+            "cunning":{
+                "order": "prefix",
+                "f": "狡诈",
+                "m": "狡诈",
+                "n": "狡诈"
+            },
+            "dancing":{
+                "order": "prefix",
+                "f": "舞空",
+                "m": "舞空",
+                "n": "舞空"
+            },
+            "disrupting":{
+                "order": "prefix",
+                "f": "瓦解",
+                "m": "瓦解",
+                "n": "瓦解"
+            },
+            "energizing":{
+                "order": "prefix",
+                "f": "鼓舞",
+                "m": "鼓舞",
+                "n": "鼓舞"
+            },
+            "extending":{
+                "order": "prefix",
+                "f": "延展",
+                "m": "延展",
+                "n": "延展"
+            },
+            "fanged":{
+                "order": "prefix",
+                "f": "獠牙",
+                "m": "獠牙",
+                "n": "獠牙"
+            },
+            "fearsome":{
+                "order": "prefix",
+                "f": "可怖",
+                "m": "可怖",
+                "n": "可怖"
+            },
             "greaterCorrosive": {
                 "order": "prefix",
                 "f": "高等酸蚀",
                 "m": "高等酸蚀",
                 "n": "高等酸蚀"
-            },
-            "disrupting": {
-                "order": "prefix",
-                "f": "瓦解",
-                "m": "瓦解",
-                "n": "瓦解"
             },
             "flaming": {
                 "order": "prefix",
@@ -1028,6 +1167,156 @@
                 "f": "高等电击",
                 "m": "高等电击",
                 "n": "高等电击"
+            },
+            "grievous":{
+                "order": "prefix",
+                "f": "深化",
+                "m": "深化",
+                "n": "深化"
+            },
+            "greaterAnchoring":{
+                "order": "prefix",
+                "f": "高等锚定",
+                "m": "高等锚定",
+                "n": "高等锚定"
+            },
+            "greaterBloodbane":{
+                "order": "prefix",
+                "f": "高等血仇",
+                "m": "高等血仇",
+                "n": "高等血仇"
+            },
+            "greaterBrilliant":{
+                "order": "prefix",
+                "f": "高等光能",
+                "m": "高等光能",
+                "n": "高等光能"
+            },
+            "greaterCrushing":{
+                "order": "prefix",
+                "f": "高等粉碎",
+                "m": "高等粉碎",
+                "n": "高等粉碎"
+            },
+            "greaterDisrupting":{
+                "order": "prefix",
+                "f": "高等瓦解",
+                "m": "高等瓦解",
+                "n": "高等瓦解"
+            },
+            "greaterExtending":{
+                "order": "prefix",
+                "f": "高等延展",
+                "m": "高等延展",
+                "n": "高等延展"
+            },
+            "greaterFanged":{
+                "order": "prefix",
+                "f": "高等獠牙",
+                "m": "高等獠牙",
+                "n": "高等獠牙"
+            },
+            "greaterFearsome":{
+                "order": "prefix",
+                "f": "高等可怖",
+                "m": "高等可怖",
+                "n": "高等可怖"
+            },
+            "greaterHauling":{
+                "order": "prefix",
+                "f": "高等拖拽",
+                "m": "高等拖拽",
+                "n": "高等拖拽"
+            },
+            "greaterImpactful":{
+                "order": "prefix",
+                "f": "高等冲击",
+                "m": "高等冲击",
+                "n": "高等冲击"
+            },
+            "greaterThundering":{
+                "order": "prefix",
+                "f": "高等雷鸣",
+                "m": "高等雷鸣",
+                "n": "高等雷鸣"
+            },
+            "hauling":{
+                "order": "prefix",
+                "f": "拖拽",
+                "m": "拖拽",
+                "n": "拖拽"
+            },
+            "hopeful":{
+                "order": "prefix",
+                "f": "希望",
+                "m": "希望",
+                "n": "希望"
+            },
+            "impactful":{
+                "order": "prefix",
+                "f": "冲击",
+                "m": "冲击",
+                "n": "冲击"
+            },
+            "keen":{
+                "order": "prefix",
+                "f": "锐锋",
+                "m": "锐锋",
+                "n": "锐锋"
+            },
+            "kinWarding":{
+                "order": "prefix",
+                "f": "亲卫",
+                "m": "亲卫",
+                "n": "亲卫"
+            },
+            "majorFanged":{
+                "order": "prefix",
+                "f": "上等獠牙",
+                "m": "上等獠牙",
+                "n": "上等獠牙"
+            },
+            "pacifying":{
+                "order": "prefix",
+                "f": "和平",
+                "m": "和平",
+                "n": "和平"
+            },
+            "serrating":{
+                "order": "prefix",
+                "f": "锯齿",
+                "m": "锯齿",
+                "n": "锯齿"
+            },
+            "shifting":{
+                "order": "prefix",
+                "f": "变型",
+                "m": "变型",
+                "n": "变型"
+            },
+            "speed":{
+                "order": "prefix",
+                "f": "加速",
+                "m": "加速",
+                "n": "加速"
+            },
+            "spellStoring":{
+                "order": "prefix",
+                "f": "储法",
+                "m": "储法",
+                "n": "储法"
+            },
+            "vorpal":{
+                "order": "prefix",
+                "f": "斩首",
+                "m": "斩首",
+                "n": "斩首"
+            },
+            "wounding":{
+                "order": "prefix",
+                "f": "血光",
+                "m": "血光",
+                "n": "血光"
             }
         },
         "StrikingRunes": {
@@ -1113,7 +1402,8 @@
         "sonic": "除音波",
         "unarmed attacks": "除无武装攻击",
         "vorpal adamantine": "除斩首精金",
-        "force, ghost touch, or negative; double resistance vs. non-magical":"除力场、幽冥或负能量；此抗力对抗非魔法时翻倍"
+        "force, ghost touch, or negative; double resistance vs. non-magical":"除力场、幽冥或负能量；此抗力对抗非魔法时翻倍",
+        "pf2e.traitforce, ghost touch, or pf2e.traitpositive; double resistance to non-magical":"除力场、幽冥或正能量；此抗力对抗非魔法时翻倍"
     },
     
     "SaveDetails": {
@@ -1319,6 +1609,7 @@
         "to craft traps and snares": "制作陷阱和圈套",
         "to create forgery": "伪造时",
         "to demoralize with threatening lunge": "用威胁语句挫败士气",
+        "to disarm": "卸武",
         "to disarm, grapple, or avoid being disarmed": "卸武、擒抱或对抗卸武",
         "to disarm, grappe, or avoid being disarmed": "卸武、擒抱或对抗卸武",
         "to disarm a metal item": "对金属物体卸武",
@@ -1357,7 +1648,8 @@
         "to impersonate a small mound or island in its native environ":"在出身环境中乔装成小山或小岛",
         "to impersonate a past self": "乔装成过去的自己",
         "in ruins":"废墟中",
-        "flying mountains lore": "flying mountains lore"
+        "to track anyone involved in the desecration that created them":"追踪任何与创造他们的亵渎仪式有关之人",
+        "when skinless":"无皮肤时"
     },
 
     "Source": {
@@ -1483,7 +1775,9 @@
         "animals, fungi, and plants only":"仅限动物、真菌和植物",
         "with jin-hae only":"with Jin-Hae only",
         "manifests snowfall instead of mist":"表现为降雪而非雾气",
-        "hail only each round":"hail only each round"
+        "hail only each round":"hail only each round",
+        "only while within the area to which the bhuta is bound":"only while within the area to which the bhuta is bound",
+        "drawing in moisture rather than blood":"汲取水分而非血液"
     },
 
     "SpeedDetails": {
@@ -1756,7 +2050,12 @@
         "head":"头槌 Head",
         "kanabo": "金棒 Kanabo",
         "tengu gale blade":"天狗风刃 Tengu Gale Blade",
-        "venom":"毒液 Venom"
+        "venom":"毒液 Venom",
+        "rope dart":"Rope Dart",
+        "mandible":"虫颚 Mandible",
+        "fire fist":"炎拳 Fire Fist",
+        "machete":"开山刀 Machete",
+        "war flail":"战用链伽 War Flail"
     },
 
     "Trait": {}
