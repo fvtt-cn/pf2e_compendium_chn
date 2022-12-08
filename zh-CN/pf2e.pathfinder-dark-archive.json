@@ -36,17 +36,17 @@
     },
 	"entries": {
 		"Bounding Hounds": {
-			"name": "Bounding Hounds",
-			"hp": "60 HP per hound",
-			"disable": "<p>@Check[type:nature|dc:36|name:Calm Hound] (expert) to calm each hound, or @Check[type:occultism|dc:38|name:Banish Hound] (master) to banish each hound</p>",
-			"hazarddescription": "<p>Three phantom hounds chase down intruders, damaging any they pass through.</p>",
-			"reset": "<p>1 hour</p>",
-			"routine": "<p>(9 actions) The trap loses 3 actions each round for each hound disabled. Each hound uses three actions to Stride 40 feet after creatures in the room, passing through corporeal creatures during this movement if possible. Each creature the hound moves through during its movement takes [[/r {2d8 + 7}[negative]]]{2d8 + 7负能量伤害} (@Check[type:reflex|dc:37|traits:damaging-effect] negates). A creature can only be damaged by each hound once each round, no matter how many times the hound moves through their space.</p>",
+			"name": "跃迁猎犬 Bounding Hounds",
+			"hp": "每只猎犬60HP",
+			"disable": "<p>@Check[type:nature|dc:36|name:Calm Hound]（专家）安抚每只猎犬，或@Check[type:occultism|dc:38|name:Banish Hound]（大师）放逐每只猎犬。</p>",
+			"hazarddescription": "<p>三只魅影猎犬追捕入侵者，伤害其略过之物。</p>",
+			"reset": "<p>1小时</p>",
+			"routine": "<p>(9个动作)该危害每有一只猎犬被解决，则每轮失去三个动作。每条猎犬使用三个动作行走40尺穿越那些房间中的生物，并在移动中经过尽可能多的实体。每个被猎犬移动走穿过的生物收到[[/r {2d8 + 7}[negative]]]{2d8 + 7负能量伤害}（@Check[type:reflex|dc:37|traits:damaging-effect]通过则无效）一个生物在一轮内只会受到每只猎犬的一次伤害，无论猎犬穿过他所在的空间多少次。</p>",
 			"data":{},
 			"items":{
 				"Bay":{
-					"name": "Bay",
-					"description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>效果</strong> The hounds manifest and bay loudly, dealing [[/r {3d10 + 16}[sonic]]]{3d10 + 16 sonic伤害} to all creatures within 30 feet of the hounds (@Check[type:fortitude|dc:33|basic:true]). On a failed check, a creature is additionally @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}. The trap then rolls initiative.</p>"
+					"name": "嘶鸣 Bay",
+					"description": "<p><strong>触发</strong> 一个生物进入这片区域。</p>\n<hr />\n<p><strong>效果</strong> 猎犬们现出身形并大声嘶鸣，对猎犬30尺内的所有生物造成[[/r {3d10 + 16}[sonic]]]{3d10 + 16音波伤害}（@Check[type:fortitude|dc:33|basic:true]豁免），若失败该生物会额外获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，然后陷阱进行先攻检定。</p>"
 				}
 			}
 		},
@@ -61,22 +61,22 @@
 			"items":{
 				"Leap into the Unknown":{
 					"name": "Leap into the Unknown",
-					"description": "<p><strong>Trigger</strong> A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes</p>\n<hr />\n<p><strong>效果</strong> The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a @Check[type:will|dc:34] save or @Check[type:acrobatics|dc:32|traits:action:balance] check to @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Balance} or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually [[/r {50}[bludgeoning]]]{50 bludgeoning伤害}). The call of the void then rolls initiative.</p>"
+					"description": "<p><strong>触发</strong> A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes</p>\n<hr />\n<p><strong>效果</strong> The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a @Check[type:will|dc:34] save or @Check[type:acrobatics|dc:32|traits:action:balance] check to @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Balance} or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually [[/r {50}[bludgeoning]]]{50钝击伤害}). The call of the void then rolls initiative.</p>"
 				}
 			}
 		},
 		"Clone Mirrors": {
-			"name": "Clone Mirrors",
-			"hp": "per mirror",
-			"disable": "<p>@Check[type:thievery|dc:28|name:Reposition Mirror|traits:action:disable-a-device] (expert) to reposition each mirror, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 25) to counteract each mirror</p>",
-			"hazarddescription": "<p>Two opposing mirrors spawn illusory duplicates of creatures in the hall in an unending tide.</p>",
-			"reset": "<p>1 day</p>",
-			"routine": "<p>(2 actions) This trap loses 1 action for each mirror disabled. Each mirror uses 1 action to Spawn a Reflection of a creature reflected in the mirror. The hazard can have a maximum of four reflections spawned at once.</p>",
+			"name": "克隆魔镜 Clone Mirrors",
+			"hp": "每个镜子",
+			"disable": "<p>@Check[type:thievery|dc:28|name:Reposition Mirror|traits:action:disable-a-device]（专家）复原每张镜子；<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（3环；反制DC25）反制每张魔镜中的魔法</p>",
+			"hazarddescription": "<p>两张镜面相对的魔镜在长廊中涌现海量的幻术复制体。</p>",
+			"reset": "<p>1天</p>",
+			"routine": "<p>(2个动作)该危害每有一张魔镜被解除，则每轮失去一个动作。每张魔镜用1个动作对满足触发条件的生物使用镜像涌出。该危害最多在同一时间拥有4个镜像衍体。</p>",
 			"data":{},
 			"items":{
 				"Spawn Reflection":{
-					"name": "Spawn Reflection",
-					"description": "<p><strong>Trigger</strong> A creature is reflected in the mirror</p>\n<hr />\n<p><strong>效果</strong> The mirror creates a @UUID[Compendium.pf2e.pathfinder-dark-archive.ICdVjs6JEs0YAefl]{Reflection} of the triggering creature, which Steps out of the mirror and into the hall. The trap then rolls initiative.</p>"
+					"name": "镜像涌出 Spawn Reflection",
+					"description": "<p><strong>触发</strong> 一个生物的身影出现在镜中。</p>\n<hr />\n<p><strong>效果</strong> 魔镜制造出一个触发者的@UUID[Compendium.pf2e.pathfinder-dark-archive.ICdVjs6JEs0YAefl]{镜像 Reflection}，其从镜中走出，进入到长廊内，然后陷阱进行先攻检定。</p>"
 				}
 			}
 		},
@@ -93,7 +93,7 @@
 				},
 				"Give of Oneself":{
 					"name": "Give of Oneself",
-					"description": "<p><strong>Trigger</strong> The Weaver would be reduced to 0 Hit Points</p>\n<hr />\n<p><strong>效果</strong> The cocoon's vitality is linked to the Weaver's. It loses [[/r 30]] Hit Points, restoring [[/r {15}[Healing]]]{15 Hit Points} to the Weaver. It can use this ability even if it would otherwise be unable to act.</p>"
+					"description": "<p><strong>触发</strong> The Weaver would be reduced to 0 Hit Points</p>\n<hr />\n<p><strong>效果</strong> The cocoon's vitality is linked to the Weaver's. It loses [[/r 30]] Hit Points, restoring [[/r {15}[Healing]]]{15 Hit Points} to the Weaver. It can use this ability even if it would otherwise be unable to act.</p>"
 				},
 				"In There Somewhere":{
 					"name": "In There Somewhere",
@@ -106,114 +106,113 @@
 			}
 		},
 		"Confounding Portal": {
-			"name": "Confounding Portal",
-			"disable": "<p>@Check[type:thievery|dc:17|name:Scratch Out Runes|traits:action:disable-a-device] to scratch out the runes, or @Check[type:arcana|dc:16|name:Destroy the Runes] to destroy the runes</p>",
-			"hazarddescription": "<p>Tiny runes carved around a doorframe or on a hall's walls surreptitiously confound creatures into circling the room or hallway they attempted to exit or pass through.</p>",
-			"reset": "<p>Automatic</p>",
+			"name": "困惑入口 Confounding Portal",
+			"disable": "<p>@Check[type:thievery|dc:17|name:Scratch Out Runes|traits:action:disable-a-device]来划去符文；@Check[type:arcana|dc:16|name:Destroy the Runes]以摧毁符文</p>",
+			"hazarddescription": "<p>那些雕刻在门框或廊壁上的微小符文将生物困在离开房间或穿越走廊的循环中。</p>",
+			"reset": "<p>自动</p>",
 			"data":{},
 			"items":{
 				"Confounding Misdirection":{
-					"name": "Confounding Misdirection",
-					"description": "<p><strong>Trigger</strong> A creature passes through the rune-carved doorway or hallway</p>\n<hr />\n<p><strong>效果</strong> The creature is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} by the illusions and directed back into the room they attempted to exit through another doorway or back to the hallway's beginning. This feels no different to the triggering creature than walking through the doorway or hallway, and onlookers are similarly befuddled. A creature who succeeds at a @Check[type:will|dc:19] save resists this illusion and exits the room or proceeds down the hall without being misdirected.</p>"
+					"name": "困惑误导 Confounding Misdirection",
+					"description": "<p><strong>触发</strong> 一个生物通过带有符文雕刻的门框或走廊</p>\n<hr />\n<p><strong>效果</strong> 该生物因幻象@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}，径直地走回他们想要离开的房间或是回到走廊的入口。对于触发者这个过程与正常行进无异，旁观者也会同样被迷惑。成功通过@Check[type:will|dc:19]豁免的生物可以抵抗这种幻觉的影响，并正常地在不受困惑的情况下离开房间或穿过走廊继续前进。</p>"
 				}
 			}
 		},
 		"Constricting Hall": {
-			"name": "Constricting Hall",
-			"disable": "<p>@Check[type:thievery|dc:28|name:Stabilize Wall|traits:action:disable-a-device] (trained) to stabilize each wall, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (4th level; counteract DC 26) to counteract each wall</p>",
-			"hazarddescription": "<p>A hall's four walls become fluid and elastic when a creature reaches the hall's midpoint.</p>",
-			"reset": "<p>1 hour</p>",
-			"routine": "<p>(4 actions) This trap loses 1 action each round for each wall that has been disabled. Each wall uses 1 action to slam back and forth rapidly, pummeling one creature in the hall with a wall Strike. On a hit, the target is additionally knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. The walls distribute the attacks as evenly as possible among creatures in the hall, and the Strikes don't apply the trap's multiple attack penalty.</p>",
+			"name": "紧勒长廊 Constricting Hall",
+			"disable": "<p>@Check[type:thievery|dc:28|name:Stabilize Wall|traits:action:disable-a-device] (受训) 以稳固每面墙体，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（4环；反制DC26）反制每面墙体。</p>",
+			"hazarddescription": "<p>当一个生物行至长廊中央时，四壁变成富有弹性的流体。</p>",
+			"reset": "<p>1小时</p>",
+			"routine": "<p>(4个动作) 如果陷阱每有一面墙体被解除，则每回合减少一个动作。每面墙体使用一个动作以猛地后撤又快速冲出，用墙体捶打通处于长廊中一个生物，若命中，目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。墙体会尽可能均匀地攻击长廊中的每个生物并且每次攻击不应用陷阱的多重攻击减值。</p>",
 			"data":{},
 			"items":{
 				"Lose Form":{
-					"name": "Lose Form",
-					"description": "<p><strong>Trigger</strong> A creature reaches the hall's midpoint</p>\n<hr />\n<p><strong>效果</strong> The hall's walls lose their rigidity, becoming fluid and elastic. The hall becomes difficult terrain, and each creature in the hall is knocked Archive @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} unless they succeed at a @Check[type:reflex|dc:26] save. The trap then rolls initiative.</p>"
+					"name": "失形 Lose Form",
+					"description": "<p><strong>触发</strong> 一个生物到达长廊中央。</p>\n<hr />\n<p><strong>效果</strong> 长廊的墙壁失去刚性，变成富有弹性的流体。长廊变为困难地形，位于长廊的每个生物被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，除非其成功通过一次@Check[type:reflex|dc:26]豁免。然后陷阱进行先攻检定。</p>"
 				},
 				"URApeqv0vXz0Usnr":{
-					"name": "Wall"
+					"name": "墙 Wall"
 				}
 			}
 		},
 		"Disorienting Illusions": {
-			"name": "Disorienting Illusions",
-			"disable": "<p>@Check[type:crafting|dc:17|name:Calculate the Room's Dimensions] (trained) to calculate the room's dimensions despite the illusions, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (1st level; counteract DC 17) to counteract the illusions</p>",
-			"hazarddescription": "<p>Illusions cloaking this chamber cause it to appear distorted and constantly shifting, with the room and all its contents appearing tilted, irregular, and in motion.</p>",
-			"reset": "<p>1 minute</p>",
+			"name": "迷失幻景 Disorienting Illusions",
+			"disable": "<p>@Check[type:crafting|dc:17|name:Calculate the Room's Dimensions] (trained)（受训）在幻象中计算房间实际的维度，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（1环；反制DC17）以反制幻象</p>",
+			"hazarddescription": "<p>笼罩着这个房间的幻象扭曲变化，使房间及其内饰看起来倾斜歪曲、杂乱无序甚至在缓慢移动。</p>",
+			"reset": "<p>1分钟</p>",
 			"data":{},
 			"items":{
 				"Disorient":{
-					"name": "Disorient",
-					"description": "<p><strong>Trigger</strong> A creature enters the room</p>\n<hr />\n<p><strong>效果</strong> Illusions cause the appearance of the room and the objects inside it to constantly warp, shift, bend, and distort for 1 minute. Each creature in the room while it's distorting must attempt a @Check[type:perception|dc:17|action:seek] check.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature disbelieves the illusions and is unaffected.</p>\n<p><strong>Success</strong> The creature disbelieves the illusions but still sees them. It treats the room as difficult terrain.</p>\n<p><strong>Failure</strong> The creature is fooled by the illusions. It treats the room as difficult terrain and becomes @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}. As long as it remains in the room, it can't reduce its sickened value below 1.</p>\n<p><strong>Critical Failure</strong> As failure, but each time the creature Archive attempts a move action, it must succeed at a @Check[type:flat|dc:5] or they lose the action, and on a critical failure, it also falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+					"name": "迷失方向 Disorient",
+					"description": "<p><strong>触发</strong> 一个生物进入房间</p>\n<hr />\n<p><strong>效果</strong> 幻象使这个房间及其陈列在1分钟内不断变形挪动、弯折扭曲。每个在房间扭曲时进入的生物必须通过@Check[type:perception|dc:17|action:seek]检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不相信幻觉，不受影响。</p>\n<p><strong>成功</strong> 目标不相信幻觉但仍能看见它们。将这个房间视为困难地形。</p>\n<p><strong>失败</strong> 目标被幻象愚弄。将这个房间视为困难地形并获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，并且只要他还停留在房间内就无法将恶心状态降低到1以下。</p>\n<p><strong>大失败</strong> 如同失败，但每次目标尝试使用移动动作时，他必须尝试一次@Check[type:flat|dc:5]检定，否则失去这个动作，如果在纯骰中出现大失败，目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
 		"Distortion Mirror": {
-			"name": "Distortion Mirror",
-			"disable": "<p>@Check[type:thievery|dc:38|name:Deface the Mirror|traits:action:disable-a-device] (master) to deface the mirror's pane, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level; counteract DC 36) to dispel the mirror or counteract the transformation</p>",
-			"hazarddescription": "<p>Fun-house mirrors distort a viewer's reflection, painfully reshaping their body to match what appears in the reflected images.</p>",
-			"reset": "<p>1 day</p>",
-			"stealthdetails": "<p>0 to notice the mirror</p>",
+			"name": "哈哈镜 Distortion Mirror",
+			"disable": "<p>@Check[type:thievery|dc:38|name:Deface the Mirror|traits:action:disable-a-device]（大师）以污损镜面；或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（7环；反制DC36）以驱散镜中的魔法或是反制其带来的转变。</p>",
+			"hazarddescription": "<p>哈哈镜扭曲了观察者的镜像，痛苦地重塑他们的肉体以与镜中景象相符。</p>",
+			"reset": "<p>1天</p>",
+			"stealthdetails": "<p>（注意到镜子本身的DC为0）</p>",
 			"data":{},
 			"items":{
 				"Painful Transformation":{
-					"name": "Painful Transformation",
-					"description": "<p><strong>Trigger</strong> A creature is reflected in the mirror</p>\n<hr />\n<p><strong>效果</strong> The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes [[/r {6d10 + 30}[force]]]{6d10 + 30 force伤害} and must attempt a @Check[type:fortitude|dc:39|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} for 1 round.</p>\n<p><strong>Failure</strong> The target takes full damage and is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} for 4 rounds.</p>\n<p><strong>Critical Failure</strong> The target takes double damage and is clumsy 2 and enfeebled 2 for 1 minute. As long as the creature is clumsy or enfeebled, it additionally takes a -10-foot status penalty to its Speeds.</p>\n<p>When the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.</p>"
+					"name": "痛苦转变 Painful Transformation",
+					"description": "<p><strong>触发</strong> 一个生物的影子出现在镜中；</p>\n<hr />\n<p><strong>效果</strong> 该生物的肉体被痛苦地挤压拉伸，重塑成镜中景象。该生物受到[[/r {6d10 + 30}[force]]]{6d10 + 30力场伤害}并必须通过@Check[type:fortitude|dc:39|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受一半的伤害并在1轮中获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>失败</strong> 目标承受完整伤害并在4轮中获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。</p>\n<p><strong>大失败</strong> 目标承受两倍伤害并在1分钟中获得笨拙2和力竭2，只要该生物仍处于笨拙或力竭，其速度上承受-10尺状态减值</p>\n<p>当陷阱的影响结束后，目标生物的转变结束，其身体恢复到自然状态。</p>"
 				}
 			}
 		},
 		"Entrapping Chair": {
-			"name": "Entrapping Chair",
-			"disable": "<p>@Check[type:thievery|dc:23|name:Disrupt the Tracks|traits:action:disable-a-device] (expert) to disrupt the tracks</p>",
-			"hazarddescription": "<p>A chair on concealed tracks surges forward, knocking a creature into the chair's seat and trapping them in place with clamping armrests.</p>",
-			"reset": "<p>The trap resets automatically over 2 rounds if the chair is unoccupied.</p>",
-			"stealthdetails": "<p>(0 to notice the chair)</p>",
+			"name": "诱捕椅 Entrapping Chair",
+			"disable": "<p>@Check[type:thievery|dc:23|name:Disrupt the Tracks|traits:action:disable-a-device]（专家）以拆除轨道</p>",
+			"hazarddescription": "<p>隐秘轨道上的座椅开始冲刺，将一个生物撞到椅面上并用扶手伸出的夹板囚禁他们。</p>",
+			"reset": "<p>如果椅子空置，陷阱将在2轮后重置。</p>",
+			"stealthdetails": "<p>（注意到椅子本身的DC为0）</p>",
 			"data":{},
 			"items":{
 				"Take a Seat!":{
-					"name": "Take a Seat!",
-					"description": "<p><strong>Trigger</strong> A creature steps on the track</p>\n<hr />\n<p><strong>效果</strong> The chair rockets forward along the track and slams into the triggering creature, dealing [[/r {3d8 + 15}[bludgeoning]]]{3d8 + 15 bludgeoning伤害}. A creature who succeeds at a @Check[type:reflex|dc:22|traits:damaging-effect] save takes no damage and moves out of the chair's path into a random adjacent square not containing the track. A creature who fails this saving throw is knocked into the chair's seat and immediately captured by the armrests, becoming @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} (@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} on a critical failure; Escape DC 26).</p>"
+					"name": "请坐！ Take a Seat!",
+					"description": "<p><strong>触发</strong> 一个生物踩上轨道；</p>\n<hr />\n<p><strong>效果</strong> 座椅如同火箭般飞射出去，猛击触发危害的生物，造成[[/r {3d8 + 15}[bludgeoning]]]{3d8 + 15钝击伤害}。成功通过@Check[type:reflex|dc:22|traits:damaging-effect]豁免的生物不会收到伤害，并从座椅的路径上移动至非轨道的随机邻近格。在豁免中失败的生物将会被撞到椅面上，迅速地被扶手伸出的夹板捕获，他被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（大失败则@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，逃脱DC26）。</p>"
 				}
 			}
 		},
 		"Exhaling Portal": {
-			"name": "Exhaling Portal",
-			"disable": "<p>@Check[type:thievery|dc:30|name:Scratch Out Runes|traits:action:disable-a-device] (expert) twice to scratch out the runes, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (5th level; counteract DC 30) to counteract the planar runes; @Check[type:athletics|dc:32|name:Shut the Door] to shut the door if it's open (using Athletics only stops the trap, it doesn't fully disable it)</p>",
-			"hazarddescription": "<p>Magic runes carved into a doorframe connect a door to the Plane of Air when opened, blowing creatures down the connecting hall.</p>",
-			"reset": "<p>Automatic after the door is shut</p>",
-			"routine": "<p>(1 action) The trap uses 1 action to blow powerful winds down the hall. Each creature in the hall must attempt a @Check[type:fortitude|dc:32] save with the same results as Gust. If this forced movement would cause a creature to collide with a solid object or fall downstairs or out a window, that creature takes an additional [[/r {2d10 + 11}[bludgeoning]]]{2d10 + 11 bludgeoning伤害} (or [[/r {20}[bludgeoning]]]{20伤害} due to a fall).</p>",
+			"name": "吹息界门 Exhaling Portal",
+			"disable": "<p>@Check[type:thievery|dc:30|name:Scratch Out Runes|traits:action:disable-a-device] (专家) 两次以刮坏符文；<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（5环；反制DC30）反制位面传送符文；@Check[type:athletics|dc:32|name:Shut the Door]以在门已经敞开的情况下关闭它（使用运动仅能停止陷阱的运转，并不能完全解除它）</p>",
+			"hazarddescription": "<p>雕刻于门框上的魔法符文将在门敞开后连通到气元素位面，把生物吹到邻接的走廊中。</p>",
+			"reset": "<p>在门被关上后自动复原</p>",
+			"routine": "<p> (1个动作) 陷阱使用一个动作鼓动更强大的暴风席卷走廊。每个在走廊里的生物必须通过@Check[type:fortitude|dc:32]豁免，其结果与暴风迸发相同。如果这次强制移动将造成一个生物与固体相撞、摔下楼梯或飞出窗外，该生物将收到额外的[[/r {2d10 + 11}[bludgeoning]]]{2d10 + 11钝击伤害}（或来自坠落的[[/r {20}[bludgeoning]]]{20伤害}）。</p>",
 			"data":{},
 			"items":{
 				"Gust":{
-					"name": "Gust",
-					"description": "<p><strong>Trigger</strong> A creature opens the door</p>\n<hr />\n<p><strong>效果</strong> The hall is buffeted by powerful winds for as long as the door remains open. A creature must succeed at a @Check[type:athletics|dc:32] check to move toward the door. A creature who fails at this check is pushed back 5 feet and falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p>Additionally, the triggering creature is blasted by a powerful gust of wind and must attempt a @Check[type:fortitude|dc:32] save. The trap then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The creature is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The creature is pushed back 10 feet and knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+					"name": "暴风迸发 Gust",
+					"description": "<p><strong>触发</strong> 一个生物开打这扇门。</p>\n<hr />\n<p><strong>效果</strong> 只要门开着，大厅里就会充斥着强劲的风暴。一个生物必须在@Check[type:athletics|dc:32]检定中成功后才能向门移动，失败则会被击退5尺后@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p>除此之外，触发者被一阵强风轰飞并必须通过@Check[type:fortitude|dc:32]豁免、然后陷阱进行先攻检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标被推回5尺。</p>\n<p><strong>失败</strong> 目标被推回10尺。</p>\n<p><strong>大失败</strong> 目标被推回10尺并被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
 		"False Floor": {
-			"name": "False Floor",
-			"disable": "<p>Succeeding on a Perception check against the Stealth DC of 21 (including the check to find the trap) disbelieves the illusory floor, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 18) to dispel the illusory floor; <em>dispel magic</em> (2nd level; counteract DC 20) to dispel the magical silence</p>",
-			"hazarddescription": "<p>The floor in this chamber is an illusion, which conceals a 40-foot drop to the true floor below. Additionally, the area beneath the floor is magically silenced-no sound is audible within nor does sound leave this space.</p>",
-			"reset": "<p>Automatic</p>",
-			"stealthdetails": "<p>(trained; or 0 if the illusory floor is dispelled)</p>",
+			"name": "虚假地板 False Floor",
+			"disable": "<p>通过察觉检定对抗DC21的隐秘（已经通过寻找陷阱检定）以不相信这片虚假的地板或通过解除魔法（2环；反制DC18）以反制地板的幻影；<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（2环；反制DC20）以反制魔法沉默</p>",
+			"hazarddescription": "<p>房间里的地板由幻象构成，其下是40尺深的真实地板。除此之外，这片区域还被魔法沉默所笼罩——在房间里面听不到任何声音，也没有声音可以传出这片空间。</p>",
+			"reset": "<p>自动</p>",
+			"stealthdetails": "<p>（受训；地板的幻象被解除后DC为0）</p>",
 			"data":{},
 			"items":{
 				"Drop":{
-					"name": "Drop",
-					"description": "<p><strong>Trigger</strong> A creature walks onto the illusory floor</p>\n<hr />\n<p><strong>效果</strong> The triggering creature falls through the illusory floor and takes falling damage (typically [[/r {20}[bludgeoning]]]{20 bludgeoning伤害}). That creature can use the @UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling. The DC to @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb} the walls (@Check[type:athletics|dc:20|traits:action:climb]) or Grab an Edge is @Check[type:reflex|dc:20|traits:action:grab-an-edge].</p>"
+					"name": "坠落 Drop",
+					"description": "<p><strong>触发</strong> 一个生物踏入虚假地板；</p>\n<hr />\n<p><strong>效果</strong> 生物坠入虚假地板并受到坠落伤害（一般为[[/r {20}[bludgeoning]]]{20钝击伤害}）。该生物可以进行一次@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}的反应动作来避免坠落。@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}或抓住边缘的DC为@Check[type:athletics|dc:20|traits:action:climb]@Check[type:reflex|dc:20|traits:action:grab-an-edge]。</p>"
 				}
 			}
 		},
 		"False Step Floor": {
-			"name": "False Step Floor",
-			"disable": "<p>@Check[type:thievery|dc:28|name:Disrupt the Magical Energy|traits:action:disable-a-device] (trained) to disrupt the magical energy, or @Check[type:arcana|dc:27|name:Realign the Magic] or @Check[type:occultism|dc:27|name:Realign the Magic] (trained) to realign the magical energy</p>",
-			"hazarddescription": "<p>Each time a creature enters the room, it slips through the floor, tumbles through an interdimensional void, and falls back into the room through the ceiling, landing on the floor.</p>",
-			"reset": "",
+			"name": "虚假楼层 False Step Floor",
+			"disable": "<p>@Check[type:thievery|dc:28|name:Disrupt the Magical Energy|traits:action:disable-a-device]（受训）以破坏魔法能量；@Check[type:arcana|dc:27|name:Realign the Magic]或@Check[type:occultism|dc:27|name:Realign the Magic]（受训）以调整魔法能量</p>",
+			"hazarddescription": "<p>每当一个生物踏入房间，他会滑入地板，卷入另一维度并开始坠落，最终从天花板下出现，摔落在地板上。</p>",
 			"data":{},
 			"items":{
 				"False Step":{
-					"name": "False Step",
-					"description": "<p><strong>Trigger</strong> A creature enters the room and steps onto the floor</p>\n<p><strong>效果</strong> The creature slips through the floor; it tumbles through an interdimensional void before falling back into the room through the ceiling and landing on the floor. The triggering creature takes [[/r {40}[bludgeoning]]]{40 bludgeoning伤害} from the fall. That creature can try to @UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{Grab an Edge} (DC 24) to avoid falling.</p>"
+					"name": "坠落 False Step",
+					"description": "<p><strong>触发</strong> 一个生物进入房间并踏上地板。</p>\n<p><strong>效果</strong> 生物滑入地板，卷入另一维度并开始坠落，最终从天花板下出现，摔落在地板上。触发危害的生物受到来自坠落的[[/r {40}[bludgeoning]]]{40钝击伤害}。该生物可以进行一次@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}（DC24）的反应动作来避免坠落。</p>"
 				}
 			}
 		},
@@ -243,7 +242,7 @@
 				},
 				"Contingency Oathday-Nine-Rova":{
 					"name": "Contingency Oathday-Nine-Rova",
-					"description": "<p><strong>频率</strong> once per day</p>\n<p><strong>Trigger</strong> The Echo's turn begins and he's stunned, slowed, @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, or otherwise can't act</p>\n<hr />\n<p><strong>效果</strong> The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.</p>"
+					"description": "<p><strong>频率</strong> once per天</p>\n<p><strong>触发</strong> The Echo's turn begins and he's stunned, slowed, @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}, or otherwise can't act</p>\n<hr />\n<p><strong>效果</strong> The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.</p>"
 				},
 				"Reconstitute from Thought":{
 					"name": "Reconstitute from Thought",
@@ -256,15 +255,15 @@
 			}
 		},
 		"Mirror Door": {
-			"name": "Mirror Door",
-			"disable": "<p>@Check[type:thievery|dc:18|name:Open the Door|traits:action:disable-a-device] to open the door while viewing the reflection</p>",
-			"hazarddescription": "<p>The reflection of a wall shows a phantom door where none exists. This door can only be manipulated while viewed through the mirror's reflection.</p>",
-			"reset": "<p>Automatic</p>",
+			"name": "镜中门 Mirror Door",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Open the Door|traits:action:disable-a-device]可以在看破镜影的情况下打开这扇门</p>",
+			"hazarddescription": "<p>墙面反射的镜像展示了一扇不存在于世间的幻影门，只有在镜影中看到它的人可以与它互动。</p>",
+			"reset": "<p>自动</p>",
 			"data":{},
 			"items":{
 				"Appear":{
-					"name": "Appear",
-					"description": "<p><strong>Trigger</strong> A creature views the wall through a mirror's reflection</p>\n<hr />\n<p><strong>效果</strong> A door appears in the mirror's reflection of the wall. The triggering creature can open and manipulate this door only as long as they view it through the mirror and only by succeeding at a @Check[type:thievery|dc:18|name:Disable the Trap|traits:action:disable-a-device] check to disable the trap.</p>"
+					"name": "显现 Appear",
+					"description": "<p><strong>触发</strong> 一个生物通过镜面反射观察这堵墙。</p>\n<hr />\n<p><strong>效果</strong> 一扇门出现墙反射出的镜影中。只能在触发者观察镜子从而这扇门出现在镜子里的时候，它才会出现且可被互动，并且只有过@Check[type:thievery|dc:18|name:Disable the Trap|traits:action:disable-a-device]检定上成功才可以解除这个陷阱。</p>"
 				}
 			}
 		},
@@ -306,100 +305,100 @@
 			}
 		},
 		"Reflected Desires": {
-			"name": "Reflected Desires",
-			"disable": "<p>@Check[type:thievery|dc:18|name:Shroud the Mirror|traits:action:disable-a-device] (trained) to shroud the mirror without looking at it, or @Check[type:occultism|dc:17|name:Erect Mental Barriers] (trained) to erect mental barriers</p>",
-			"hazarddescription": "<p>This mirror reflects the viewer's deepest desires.</p>",
-			"reset": "<p>Automatic</p>",
-			"stealthdetails": "<p>(0 to notice the mirror)</p>",
+			"name": "欲望之镜 Reflected Desires",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Shroud the Mirror|traits:action:disable-a-device]（受训）在不看镜子的情况下盖住它，或@Check[type:occultism|dc:17|name:Erect Mental Barriers]（受训）搭建心灵屏障</p>",
+			"hazarddescription": "<p>这面魔镜映照出注视者内心最深的欲望。</p>",
+			"reset": "<p>自动</p>",
+			"stealthdetails": "<p>（注意到镜子本身的DC为0）</p>",
 			"data":{},
 			"items":{
 				"Tempt":{
-					"name": "Tempt",
-					"description": "<p><strong>Trigger</strong> A creature looks into the mirror</p>\n<hr />\n<p><strong>效果</strong> The triggering creature sees themselves enjoying their deepest desires in the mirror's reflection, becoming @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} (@Check[type:will|dc:20] negates). This fascination ends automatically when the mirror is broken or covered up.</p>"
+					"name": "诱惑 Tempt",
+					"description": "<p><strong>触发</strong> 一个生物看向镜子；</p>\n<hr />\n<p><strong>效果</strong> 触发者从镜影中看到了自己正享受最渴望之物的景象，他被@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}（通过@Check[type:will|dc:20]豁免则不受影响），迷魂状态将在镜子被破坏或被遮住的情况下自动结束。</p>"
 				}
 			}
 		},
 		"Reflection": {
-			"name": "Reflection",
+			"name": "镜像 Reflection",
 			"data":{},
 			"items":{
 				"TpYNcJKE1v9ktu1H":{
-					"name": "Reflected Weapon"
+					"name": "镜像武器 Reflected Weapon"
 				},
 				"Reflection Routine":{
-					"name": "Reflection Routine",
-					"description": "<p>Each reflection has 2 actions which it uses to Step, Stride, or Strike (in any combination). Reflections can act on the same turn they're created.</p>"
+					"name": "镜像例行程序 Reflection Routine",
+					"description": "<p>每个镜像有两个用于快步、移动、打击（任意组合）的行动。镜像可以在他们被创造的同轮行动。</p>"
 				}
 			}
 		},
 		"Shrinking Hall": {
-			"name": "Shrinking Hall",
-			"disable": "<p>@Check[type:thievery|dc:21|name:Jam the Scales|traits:action:disable-a-device] (trained) to jam the scales built into the floor</p>",
-			"hazarddescription": "<p>This hallway is designed to shrink as creatures traverse it, making access to the door at the hall's end impossible.</p>",
-			"reset": "<p>After 10 minutes without weight being placed on this hall's floor, this trap resets, returning the hall to its original size.</p>",
+			"name": "渐缩走廊 Shrinking Hall",
+			"disable": "<p>@Check[type:thievery|dc:21|name:Jam the Scales|traits:action:disable-a-device]（受训）以卡住地板下面的测重器</p>",
+			"hazarddescription": "<p>走廊被设计成只有超小型生物才可以穿越，这使得通过走廊尽头的门是一件不可能做到的事。</p>",
+			"reset": "<p>在走廊的地板不承受重量后的10分钟后，陷阱会重置，将整条走廊复原成它原来的模样。</p>",
 			"data":{},
 			"items":{
 				"Shrink":{
-					"name": "Shrink",
-					"description": "<p><strong>Trigger</strong> 100 pounds of weight or more is placed on the hallway's floor</p>\n<hr />\n<p><strong>效果</strong> The hall's last 40 feet of walls angle inward, causing the hall to shrink and contract down, reaching 6 inches in height and width at the hall's far end and completely blocking access to the hall's exit door for anything but a Tiny creature Squeezing.</p>"
+					"name": "缩小 Shrink",
+					"description": "<p><strong>触发</strong> 走廊的地板承受100磅或以上重量；</p>\n<hr />\n<p><strong>效果</strong> 走廊最后40尺的墙壁向内倾陷，使得整条走廊开始收缩。走廊尽头的高度与宽度被缩小为6英寸，阻挡了除超小型外的一切生物继续前进。</p>"
 				}
 			}
 		},
 		"Shrouded Assailant": {
-			"name": "Shrouded Assailant",
-			"hp": "spirit",
-			"disable": "<p>@Check[type:thievery|dc:43|name:Steal the Cloth|traits:action:disable-a-device] (master) to steal the cloth before the spirit manifests, or @Check[type:athletics|dc:47|name:Pull the Cloth Off] to pull the cloth off the spirit after it manifests</p>",
-			"hazarddescription": "<p>A spirit steps out of a covered mirror, pulling off and becoming shrouded in the cloth, which reveals the mirror. The shrouded figure attacks the living until the cloth is yanked off, which banishes the formless spirit.</p>",
-			"reset": "<p>The haunt can be reset if the mirror is covered in a cloth or shroud.</p>",
-			"routine": "<p>(3 actions) The spirit uses 3 actions to Step, fly 60 feet, or Strike, in any order. On a successful Strike the spirit's target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}, and on a critical success, the target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>",
+			"name": "布裹袭击者 Shrouded Assailant",
+			"hp": "魂魄",
+			"disable": "<p>@Check[type:thievery|dc:43|name:Steal the Cloth|traits:action:disable-a-device] (大师) 在魂魄现形前偷走盖布，或@Check[type:athletics|dc:47|name:Pull the Cloth Off]在魂魄现形后扯走其披盖。</p>",
+			"hazarddescription": "<p>在白布盖着的镜中，一个魂魄缓缓走出，将镜上的布掀做自己的衣裳， 原先被覆盖的镜面显露出在其身后。这被布裹着的人形持续袭击活物，直到有人将其身上的布扯掉，以此放逐这个没有形体的魂魄。</p>",
+			"reset": "<p>作祟可以在镜子被布或其他物体盖上后重置。</p>",
+			"routine": "<p>(3个动作) 魂魄有三个用于快步、飞行60尺、打击的动作（任意顺序），成功的打击后目标被@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，若大成功则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>",
 			"data":{},
 			"items":{
 				"Don Shroud":{
-					"name": "Don Shroud",
-					"description": "<p><strong>Trigger</strong> A creature enters the area</p>\n<hr />\n<p><strong>效果</strong> The spirit steps out of the mirror, wearing the cloth as a shroud and revealing the mirror. The triggering creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} unless they succeed at a @Check[type:will|dc:38] save. The haunt then rolls initiative.</p>"
+					"name": "披上寿衣 Don Shroud",
+					"description": "<p><strong>触发</strong> 一个生物进入该区域。</p>\n<hr />\n<p><strong>效果</strong> 一个魂魄从镜中缓缓走出，将镜上的布掀做自己的衣裳， 原先被复盖的镜面显露出在其身后。触发者获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}除非他们在@Check[type:will|dc:38]豁免中成功。然后作祟进行先攻检定。</p>"
 				},
 				"HOnJVrqXXtc3EGEu":{
-					"name": "Shrouded Touch"
+					"name": "帷幕之触 Shrouded Touch"
 				}
 			}
 		},
 		"Shuffling Hall": {
-			"name": "Shuffling Hall",
-			"disable": "<p>@Check[type:thievery|dc:12|name:Deactivate a Plate|traits:action:disable-a-device] to deactivate one pressure plate</p>",
-			"hazarddescription": "<p>Four pressure plates along this mirrored hall rotate vertically when stepped on, sending a creature on the pressure plate tipping into an adjacent featureless room while simultaneously replacing the pressure plate and walls in the hall. Each pressure plate dumps creatures into a different room.</p>",
-			"reset": "<p>Automatic</p>",
+			"name": "旋转大厅 Shuffling Hall",
+			"disable": "<p>@Check[type:thievery|dc:12|name:Deactivate a Plate|traits:action:disable-a-device]解除一块压力板</p>",
+			"hazarddescription": "<p>四块分布于对称大厅的压力板在被踏上后时沿着中轴垂直旋转，将踏上压力板的生物送到一间邻接的无特征房间，并立刻重置大厅里的压力板和墙壁。每块压力板都会将生物倒向不同的房间。</p>",
+			"reset": "<p>自动</p>",
 			"data":{},
 			"items":{
 				"Flip":{
-					"name": "Flip",
-					"description": "<p><strong>Trigger</strong> A creature steps on a pressure plate</p>\n<hr />\n<p><strong>效果</strong> The floor and adjoining wall rotate up and over on a central axle, tipping the triggering creature into an adjacent featureless room and simultaneously replacing the pressure plate and wall with another set on the same axle. The triggering creature is pushed into an adjoining room, takes [[/r {1d8}[bludgeoning]]]{1d8 bludgeoning伤害}, and lands @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. A creature who succeeds at a @Check[type:reflex|dc:19|traits:damaging-effect] save takes no damage and rolls out of the way of the trap, returning to the space they were in before stepping on the pressure plate.</p>"
+					"name": "转起来 Flip",
+					"description": "<p><strong>触发</strong> 一个生物踩到了压力板。</p>\n<hr />\n<p><strong>效果</strong> 整层地板与邻接着的墙壁沿着大厅的中轴垂直旋转，将触发危害的生物扔到相邻的无特征房间，并以同轴上的其他压力板、墙取代触发过的位置。生物被推入相邻房间，受到[[/r {1d8}[bludgeoning]]]{1d8钝击伤害}并@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。成功通过@Check[type:reflex|dc:19|traits:damaging-effect]豁免的生物不受伤害并从陷阱中脱出，回到他们踏上压力板前所在的房间。</p>"
 				}
 			}
 		},
 		"Sigil of Deepest Fears": {
-			"name": "Sigil of Deepest Fears",
-			"disable": "<p>@Check[type:thievery|dc:43|name:Drain the Sigil's Power|traits:action:disable-a-device] (master) to drain the sigil's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (9th level; counteract DC 42) to counteract the sigil</p>",
-			"hazarddescription": "<p>An arcane sigil forces creatures to confront their greatest fear.</p>",
-			"reset": "<p>1 day</p>",
-			"stealthdetails": "<p>(master)</p>",
+			"name": "穷极恐惧之印 Sigil of Deepest Fears",
+			"disable": "<p>@Check[type:thievery|dc:43|name:Drain the Sigil's Power|traits:action:disable-a-device]（大师）让魔法印记的力量流失至无害；或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（9环；反制DC43）反制印记</p>",
+			"hazarddescription": "<p>这魔印将让人直面他最深邃的恐惧。</p>",
+			"reset": "<p>1天</p>",
+			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
 			"items":{
 				"Face Your Fear":{
-					"name": "Face Your Fear",
-					"description": "<p><strong>Trigger</strong> A creature moves within 10 feet of the sigil</p>\n<hr />\n<p><strong>效果</strong> All creatures within 120 feet of the sigil are affected by a <em>@UUID[Compendium.pf2e.spells-srd.qDjeG6dxT4aEEC6J]{Weird}</em> spell (@Check[type:will|dc:40|traits:damaging-effect] save).</p>"
+					"name": "直面你所恐惧之物 Face Your Fear",
+					"description": "<p><strong>触发</strong> 一个生物接近印记十尺内。</p>\n<hr />\n<p><strong>效果</strong> 所有印记120尺内的生物受到法术<em>@UUID[Compendium.pf2e.spells-srd.qDjeG6dxT4aEEC6J]{怪影杀手 Weird}</em>（@Check[type:will|dc:40|traits:damaging-effect]豁免）的效果。</p>"
 				}
 			}
 		},
 		"Spirit Window": {
-			"name": "Spirit Window",
-			"disable": "<p>@Check[type:occultism|dc:48|name:Free the Spirits] (legendary) to free the spirits from the mirror, or @Check[type:religion|dc:48|name:Banish the Spirits] (legendary) to banish the spirits</p>",
-			"hazarddescription": "<p>Spirits trapped inside a haunted window harm those who touch the window.</p>",
-			"reset": "<p>1 round</p>",
+			"name": "魂魄囚窗 Spirit Window",
+			"disable": "<p>@Check[type:occultism|dc:48|name:Free the Spirits]（传奇）从镜中释放那些魂魄；@Check[type:religion|dc:48|name:Banish the Spirits]（传奇）以驱逐魂魄</p>",
+			"hazarddescription": "<p>魂魄们被囚禁在窗中，随时准备伤害那些触碰到窗户的人。</p>",
+			"reset": "<p>1轮</p>",
 			"data":{},
 			"items":{
 				"Siphon Soul":{
-					"name": "Siphon Soul",
-					"description": "<p><strong>Trigger</strong> A creature touches the window</p>\n<hr />\n<p><strong>效果</strong> The triggering creature takes [[/r {8d10 + 44}[negative]]]{8d10 + 44负能量伤害} (@Check[type:will|dc:42|basic:true]) as the window attempts to steal their soul. If this damage would kill the target, its soul is trapped inside the window with the effects of <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em>.</p>"
+					"name": "汲取灵魂 Siphon Soul",
+					"description": "<p><strong>触发</strong> 一个生物触碰窗户。</p>\n<hr />\n<p><strong>效果</strong> 触发危害的生物受到[[/r {8d10 + 44}[negative]]]{8d10 + 44负能量伤害}（@Check[type:will|dc:42|basic:true]豁免）作为囚窗企图窃走他们灵魂的效果，如果这次伤害足以杀死目标，他的灵魂如同受到<em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{缚魂术 Bind Soul}</em>的效果被囚于窗中。</p>"
 				}
 			}
 		},
@@ -408,13 +407,13 @@
 			"disable": "<p>@Check[type:diplomacy|dc:32|name:Calm the Pool] (master) or @Check[type:deception|dc:32|name:Calm the Pool] (master) to quell the fear and calm the pool or @Check[type:intimidation|dc:35|name:Scare the Pool] to give the pool something worse to fear; three successes required.</p>",
 			"hazarddescription": "<p>The pool sucks in creatures that fall into it, making them sink into its endless depths.</p>",
 			"reset": "<p>The trap resets once there are no moving creatures in it.</p>",
-			"routine": "<p>(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take [[/r {1d6}[bludgeoning]]]{1d6 bludgeoning伤害}. As the pool has no bottom, creatures in it can fall down indefinitely; they must @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim} up to avoid drowning, but the water is especially choppy, so the Athletics DC is @Check[type:athletics|dc:25|traits:action:swim]. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes @Check[type:athletics|dc:10|traits:action:swim].</p>",
+			"routine": "<p>(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take [[/r {1d6}[bludgeoning]]]{1d6钝击伤害}. As the pool has no bottom, creatures in it can fall down indefinitely; they must @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim} up to avoid drowning, but the water is especially choppy, so the Athletics DC is @Check[type:athletics|dc:25|traits:action:swim]. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes @Check[type:athletics|dc:10|traits:action:swim].</p>",
 			"stealthdetails": "<p>(trained)</p>",
 			"data":{},
 			"items":{
 				"Downpour":{
 					"name": "Downpour",
-					"description": "<p><strong>Trigger</strong> A creature falls into the pool</p>\n<hr />\n<p><strong>效果</strong> More water pours forth from the chalice. Creatures in the pool become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}, and they can't decrease their clumsy condition so long as they remain in the pool. The trap then rolls initiative.</p>"
+					"description": "<p><strong>触发</strong> A creature falls into the pool</p>\n<hr />\n<p><strong>效果</strong> More water pours forth from the chalice. Creatures in the pool become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and they can't decrease their clumsy condition so long as they remain in the pool. The trap then rolls initiative.</p>"
 				}
 			}
 		},
@@ -432,11 +431,11 @@
 				},
 				"Nameless Nightmare":{
 					"name": "Nameless Nightmare",
-					"description": "<p>The Weaver has torn off his own name to become a being of fear. He is immune to linguistic effects and any effect that would impose the @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} condition. Without a name, he is difficult for phenomena to affect; the Weaver recovers from the @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}, and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of his turn, and his flat check to clear persistent damage is @Check[type:flat|dc:5]{5}. If anyone utters, writes, or otherwise attempts to record his name, that creature automatically takes [[/r {10}[mental]]]{10 mental伤害} and the attempt fails.</p>"
+					"description": "<p>The Weaver has torn off his own name to become a being of fear. He is immune to linguistic effects and any effect that would impose the @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened} condition. Without a name, he is difficult for phenomena to affect; the Weaver recovers from the @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}, and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of his turn, and his flat check to clear persistent damage is @Check[type:flat|dc:5]{5}. If anyone utters, writes, or otherwise attempts to record his name, that creature automatically takes [[/r {10}[mental]]]{10 mental伤害} and the attempt fails.</p>"
 				},
 				"Stitch Into the Web":{
 					"name": "Stitch Into the Web",
-					"description": "<p><strong>Trigger</strong> The Weaver is moved against his will, or a creature attempts to leave a square within 20 feet of him by any means, including teleportation</p>\n<hr />\n<p><strong>效果</strong> The Weaver's silk stitches a body in place to prevent movement. The creature stops moving and the action is disrupted. The disruption doesn't affect astral bodies.</p>"
+					"description": "<p><strong>触发</strong> The Weaver is moved against his will, or a creature attempts to leave a square within 20 feet of him by any means, including teleportation</p>\n<hr />\n<p><strong>效果</strong> The Weaver's silk stitches a body in place to prevent movement. The creature stops moving and the action is disrupted. The disruption doesn't affect astral bodies.</p>"
 				},
 				"Separate Astral Body":{
 					"name": "Separate Astral Body",
@@ -448,7 +447,7 @@
 				},
 				"Stalker in Dreams":{
 					"name": "Stalker in Dreams",
-					"description": "<p><strong>Trigger</strong> The Weaver becomes @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to all creatures within 60 feet or is not observed by any creatures within 60 feet</p>\n<hr />\n<p><strong>效果</strong> The Weaver's presence on the Material Plane is connected to others' perception of him, and when that perception falters, he can skitter to a new location. The Weaver teleports to an unoccupied space within 60 feet not within line of sight of any creatures within 60 feet. If the Weaver became concealed or unobserved as part of a movement action he was taking, he can resume its movement after teleporting. A creature who Averts its Gaze from the Weaver is not observing him.</p>"
+					"description": "<p><strong>触发</strong> The Weaver becomes @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to all creatures within 60 feet or is not observed by any creatures within 60 feet</p>\n<hr />\n<p><strong>效果</strong> The Weaver's presence on the Material Plane is connected to others' perception of him, and when that perception falters, he can skitter to a new location. The Weaver teleports to an unoccupied space within 60 feet not within line of sight of any creatures within 60 feet. If the Weaver became concealed or unobserved as part of a movement action he was taking, he can resume its movement after teleporting. A creature who Averts its Gaze from the Weaver is not observing him.</p>"
 				},
 				"String Astral Body":{
 					"name": "String Astral Body",
