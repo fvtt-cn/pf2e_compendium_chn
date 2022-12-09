@@ -1,128 +1,508 @@
 {
 	"label": "黑暗档案怪物图鉴 Dark Archive Bestiary",
     "mapping": {
+        "name": "name",
+        "portrait": {
+            "path": "img",
+            "converter": "npc-portrait-path"
+        },
+        "token": {
+            "path": "prototypeToken",
+            "converter": "npc-token-translation"
+        },
+        "data": {
+            "path": "system",
+            "converter": "npc-data-translation"
+        },
+        "items": {
+            "path": "items",
+            "converter": "npc-item-translation"
+        },
         "publicNotes": "system.details.publicNotes",
         "dr": "system.traits.dr",
         "allSaves": "system.attributes.allSaves.value",
         "senses": "system.traits.senses.value",
         "hp": "system.attributes.hp.details",
-        "hazarddisable": "system.details.disable",
+        "disable": "system.details.disable",
         "hazarddescription": "system.details.description",
-        "hazardreset": "system.details.reset",
-        "hazardroutine": "system.details.routine",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
         "blurb":"system.details.blurb",
         "speed":"system.attributes.speed.details",
         "languages":"system.traits.languages.custom",
-        "stealth":"system.attributes.stealth",
+        "stealthdetails":"system.attributes.stealth.details",
         "ac":"system.attributes.ac.details",
         "di":"system.traits.di.custom"
     },
 	"entries": {
 		"Bounding Hounds": {
-			"name": "Bounding Hounds"
+			"name": "跃迁猎犬 Bounding Hounds",
+			"hp": "每只猎犬60HP",
+			"disable": "<p>@Check[type:nature|dc:36|name:Calm Hound]（专家）安抚每只猎犬，或@Check[type:occultism|dc:38|name:Banish Hound]（大师）放逐每只猎犬。</p>",
+			"hazarddescription": "<p>三只魅影猎犬追捕入侵者，伤害其略过之物。</p>",
+			"reset": "<p>1小时</p>",
+			"routine": "<p>(9个动作)该危害每有一只猎犬被解决，则每轮失去三个动作。每条猎犬使用三个动作行走40尺穿越那些房间中的生物，并在移动中经过尽可能多的实体。每个被猎犬移动走穿过的生物收到[[/r {2d8 + 7}[negative]]]{2d8 + 7负能量伤害}（@Check[type:reflex|dc:37|traits:damaging-effect]通过则无效）一个生物在一轮内只会受到每只猎犬的一次伤害，无论猎犬穿过他所在的空间多少次。</p>",
+			"data":{},
+			"items":{
+				"Bay":{
+					"name": "嘶鸣 Bay",
+					"description": "<p><strong>触发</strong> 一个生物进入这片区域。</p>\n<hr />\n<p><strong>效果</strong> 猎犬们现出身形并大声嘶鸣，对猎犬30尺内的所有生物造成[[/r {3d10 + 16}[sonic]]]{3d10 + 16音波伤害}（@Check[type:fortitude|dc:33|basic:true]豁免），若失败该生物会额外获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，然后陷阱进行先攻检定。</p>"
+				}
+			}
 		},
 		"Call of the Void": {
-			"name": "Call of the Void"
+			"name": "Call of the Void",
+			"disable": "<p>@Check[type:occultism|dc:34|name:Expel Magical Compulsion] or @Check[type:arcana|dc:36|name:Expel Magical Compulsion] to expel the magical compulsion from the current island and from any of the red ropes directly attached to it, darkening the rope in color. The Echo also automatically disables the hazard from any island he's standing on, and any of the red ropes directly attached to it, when he Reconstitutes from Thought on that island.</p>",
+			"hazarddescription": "<p>A supernatural compulsion to leap into the unknown exerts itself on anyone who approaches the ledge.</p>",
+			"reset": "<p>The call of the void persists as long as the Echo exists, though it doesn't activate until the Echo has rolled initiative. The hazard resets each day.</p>",
+			"routine": "<p>(1 action) The call targets all creatures adjacent to a ledge or on one of the red ropes and tugs at their minds. A creature who has already fallen this round is immune.</p>",
+			"stealthdetails": "<p>(expert) to notice a slight tugging feeling</p>",
+			"data":{},
+			"items":{
+				"Leap into the Unknown":{
+					"name": "Leap into the Unknown",
+					"description": "<p><strong>触发</strong> A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes</p>\n<hr />\n<p><strong>效果</strong> The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a @Check[type:will|dc:34] save or @Check[type:acrobatics|dc:32|traits:action:balance] check to @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Balance} or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually [[/r {50}[bludgeoning]]]{50钝击伤害}). The call of the void then rolls initiative.</p>"
+				}
+			}
 		},
 		"Clone Mirrors": {
-			"name": "Clone Mirrors"
+			"name": "克隆魔镜 Clone Mirrors",
+			"hp": "每个镜子",
+			"disable": "<p>@Check[type:thievery|dc:28|name:Reposition Mirror|traits:action:disable-a-device]（专家）复原每张镜子；<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（3环；反制DC25）反制每张魔镜中的魔法</p>",
+			"hazarddescription": "<p>两张镜面相对的魔镜在长廊中涌现海量的幻术复制体。</p>",
+			"reset": "<p>1天</p>",
+			"routine": "<p>(2个动作)该危害每有一张魔镜被解除，则每轮失去一个动作。每张魔镜用1个动作对满足触发条件的生物使用镜像涌出。该危害最多在同一时间拥有4个镜像衍体。</p>",
+			"data":{},
+			"items":{
+				"Spawn Reflection":{
+					"name": "镜像涌出 Spawn Reflection",
+					"description": "<p><strong>触发</strong> 一个生物的身影出现在镜中。</p>\n<hr />\n<p><strong>效果</strong> 魔镜制造出一个触发者的@UUID[Compendium.pf2e.pathfinder-dark-archive.ICdVjs6JEs0YAefl]{镜像 Reflection}，其从镜中走出，进入到长廊内，然后陷阱进行先攻检定。</p>"
+				}
+			}
 		},
 		"Cocoon of Lucid Potential": {
-			"name": "Cocoon of Lucid Potential"
+			"name": "Cocoon of Lucid Potential",
+			"data":{},
+			"items":{
+				"jHHE5GG2biaCiVYC":{
+					"name": "Psychic Scream"
+				},
+				"Anchored in Silk":{
+					"name": "Anchored in Silk",
+					"description": "<p>The cocoon is incapable of movement beyond slight wriggling in place. It has no Speed and can't move or be moved, even through means such as teleportation, as the Weaver's threads tether it in place physically and astrally. The cocoon casts any spells psychically, substituting verbal and somatic components for expressions of pure unbridled will and removing the manipulate trait from its Cast a Spell action.</p>"
+				},
+				"Give of Oneself":{
+					"name": "Give of Oneself",
+					"description": "<p><strong>触发</strong> The Weaver would be reduced to 0 Hit Points</p>\n<hr />\n<p><strong>效果</strong> The cocoon's vitality is linked to the Weaver's. It loses [[/r 30]] Hit Points, restoring [[/r {15}[Healing]]]{15 Hit Points} to the Weaver. It can use this ability even if it would otherwise be unable to act.</p>"
+				},
+				"In There Somewhere":{
+					"name": "In There Somewhere",
+					"description": "<p>Killia's individuality still rests within the cocoon, yet trying to resist assimilation. If a PC succeeds at a @Check[type:diplomacy|dc:32] check on the cocoon, the cocoon takes [[/r {5d6}[mental]]]{5d6 mental伤害} and is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} as Killia's consciousness fights the Weaver. The cocoon can't be affected in this way more than once per turn.</p>"
+				},
+				"Of Same Essence":{
+					"name": "Of Same Essence",
+					"description": "<p>The cocoon and the Weaver share the same essence. Its spells never affect the Weaver if they would harm him, and the Weaver can ignore the any of the cocoon's active spell effects if he desires (such as <em>@UUID[Compendium.pf2e.spells-srd.tSosbMsftXcRaQgT]{Sea of Thought}</em>).</p>"
+				}
+			}
 		},
 		"Confounding Portal": {
-			"name": "Confounding Portal"
+			"name": "困惑入口 Confounding Portal",
+			"disable": "<p>@Check[type:thievery|dc:17|name:Scratch Out Runes|traits:action:disable-a-device]来划去符文；@Check[type:arcana|dc:16|name:Destroy the Runes]以摧毁符文</p>",
+			"hazarddescription": "<p>那些雕刻在门框或廊壁上的微小符文将生物困在离开房间或穿越走廊的循环中。</p>",
+			"reset": "<p>自动</p>",
+			"data":{},
+			"items":{
+				"Confounding Misdirection":{
+					"name": "困惑误导 Confounding Misdirection",
+					"description": "<p><strong>触发</strong> 一个生物通过带有符文雕刻的门框或走廊</p>\n<hr />\n<p><strong>效果</strong> 该生物因幻象@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}，径直地走回他们想要离开的房间或是回到走廊的入口。对于触发者这个过程与正常行进无异，旁观者也会同样被迷惑。成功通过@Check[type:will|dc:19]豁免的生物可以抵抗这种幻觉的影响，并正常地在不受困惑的情况下离开房间或穿过走廊继续前进。</p>"
+				}
+			}
 		},
 		"Constricting Hall": {
-			"name": "Constricting Hall"
+			"name": "紧勒长廊 Constricting Hall",
+			"disable": "<p>@Check[type:thievery|dc:28|name:Stabilize Wall|traits:action:disable-a-device] (受训) 以稳固每面墙体，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（4环；反制DC26）反制每面墙体。</p>",
+			"hazarddescription": "<p>当一个生物行至长廊中央时，四壁变成富有弹性的流体。</p>",
+			"reset": "<p>1小时</p>",
+			"routine": "<p>(4个动作) 如果陷阱每有一面墙体被解除，则每回合减少一个动作。每面墙体使用一个动作以猛地后撤又快速冲出，用墙体捶打通处于长廊中一个生物，若命中，目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。墙体会尽可能均匀地攻击长廊中的每个生物并且每次攻击不应用陷阱的多重攻击减值。</p>",
+			"data":{},
+			"items":{
+				"Lose Form":{
+					"name": "失形 Lose Form",
+					"description": "<p><strong>触发</strong> 一个生物到达长廊中央。</p>\n<hr />\n<p><strong>效果</strong> 长廊的墙壁失去刚性，变成富有弹性的流体。长廊变为困难地形，位于长廊的每个生物被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，除非其成功通过一次@Check[type:reflex|dc:26]豁免。然后陷阱进行先攻检定。</p>"
+				},
+				"URApeqv0vXz0Usnr":{
+					"name": "墙 Wall"
+				}
+			}
 		},
 		"Disorienting Illusions": {
-			"name": "Disorienting Illusions"
+			"name": "迷失幻景 Disorienting Illusions",
+			"disable": "<p>@Check[type:crafting|dc:17|name:Calculate the Room's Dimensions] (trained)（受训）在幻象中计算房间实际的维度，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（1环；反制DC17）以反制幻象</p>",
+			"hazarddescription": "<p>笼罩着这个房间的幻象扭曲变化，使房间及其内饰看起来倾斜歪曲、杂乱无序甚至在缓慢移动。</p>",
+			"reset": "<p>1分钟</p>",
+			"data":{},
+			"items":{
+				"Disorient":{
+					"name": "迷失方向 Disorient",
+					"description": "<p><strong>触发</strong> 一个生物进入房间</p>\n<hr />\n<p><strong>效果</strong> 幻象使这个房间及其陈列在1分钟内不断变形挪动、弯折扭曲。每个在房间扭曲时进入的生物必须通过@Check[type:perception|dc:17|action:seek]检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不相信幻觉，不受影响。</p>\n<p><strong>成功</strong> 目标不相信幻觉但仍能看见它们。将这个房间视为困难地形。</p>\n<p><strong>失败</strong> 目标被幻象愚弄。将这个房间视为困难地形并获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，并且只要他还停留在房间内就无法将恶心状态降低到1以下。</p>\n<p><strong>大失败</strong> 如同失败，但每次目标尝试使用移动动作时，他必须尝试一次@Check[type:flat|dc:5]检定，否则失去这个动作，如果在纯骰中出现大失败，目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				}
+			}
 		},
 		"Distortion Mirror": {
-			"name": "Distortion Mirror"
+			"name": "哈哈镜 Distortion Mirror",
+			"disable": "<p>@Check[type:thievery|dc:38|name:Deface the Mirror|traits:action:disable-a-device]（大师）以污损镜面；或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（7环；反制DC36）以驱散镜中的魔法或是反制其带来的转变。</p>",
+			"hazarddescription": "<p>哈哈镜扭曲了观察者的镜像，痛苦地重塑他们的肉体以与镜中景象相符。</p>",
+			"reset": "<p>1天</p>",
+			"stealthdetails": "<p>（注意到镜子本身的DC为0）</p>",
+			"data":{},
+			"items":{
+				"Painful Transformation":{
+					"name": "痛苦转变 Painful Transformation",
+					"description": "<p><strong>触发</strong> 一个生物的影子出现在镜中；</p>\n<hr />\n<p><strong>效果</strong> 该生物的肉体被痛苦地挤压拉伸，重塑成镜中景象。该生物受到[[/r {6d10 + 30}[force]]]{6d10 + 30力场伤害}并必须通过@Check[type:fortitude|dc:39|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受一半的伤害并在1轮中获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>失败</strong> 目标承受完整伤害并在4轮中获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。</p>\n<p><strong>大失败</strong> 目标承受两倍伤害并在1分钟中获得笨拙2和力竭2，只要该生物仍处于笨拙或力竭，其速度上承受-10尺状态减值</p>\n<p>当陷阱的影响结束后，目标生物的转变结束，其身体恢复到自然状态。</p>"
+				}
+			}
 		},
 		"Entrapping Chair": {
-			"name": "Entrapping Chair"
+			"name": "诱捕椅 Entrapping Chair",
+			"disable": "<p>@Check[type:thievery|dc:23|name:Disrupt the Tracks|traits:action:disable-a-device]（专家）以拆除轨道</p>",
+			"hazarddescription": "<p>隐秘轨道上的座椅开始冲刺，将一个生物撞到椅面上并用扶手伸出的夹板囚禁他们。</p>",
+			"reset": "<p>如果椅子空置，陷阱将在2轮后重置。</p>",
+			"stealthdetails": "<p>（注意到椅子本身的DC为0）</p>",
+			"data":{},
+			"items":{
+				"Take a Seat!":{
+					"name": "请坐！ Take a Seat!",
+					"description": "<p><strong>触发</strong> 一个生物踩上轨道；</p>\n<hr />\n<p><strong>效果</strong> 座椅如同火箭般飞射出去，猛击触发危害的生物，造成[[/r {3d8 + 15}[bludgeoning]]]{3d8 + 15钝击伤害}。成功通过@Check[type:reflex|dc:22|traits:damaging-effect]豁免的生物不会收到伤害，并从座椅的路径上移动至非轨道的随机邻近格。在豁免中失败的生物将会被撞到椅面上，迅速地被扶手伸出的夹板捕获，他被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（大失败则@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，逃脱DC26）。</p>"
+				}
+			}
 		},
 		"Exhaling Portal": {
-			"name": "Exhaling Portal"
+			"name": "吹息界门 Exhaling Portal",
+			"disable": "<p>@Check[type:thievery|dc:30|name:Scratch Out Runes|traits:action:disable-a-device] (专家) 两次以刮坏符文；<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（5环；反制DC30）反制位面传送符文；@Check[type:athletics|dc:32|name:Shut the Door]以在门已经敞开的情况下关闭它（使用运动仅能停止陷阱的运转，并不能完全解除它）</p>",
+			"hazarddescription": "<p>雕刻于门框上的魔法符文将在门敞开后连通到气元素位面，把生物吹到邻接的走廊中。</p>",
+			"reset": "<p>在门被关上后自动复原</p>",
+			"routine": "<p> (1个动作) 陷阱使用一个动作鼓动更强大的暴风席卷走廊。每个在走廊里的生物必须通过@Check[type:fortitude|dc:32]豁免，其结果与暴风迸发相同。如果这次强制移动将造成一个生物与固体相撞、摔下楼梯或飞出窗外，该生物将收到额外的[[/r {2d10 + 11}[bludgeoning]]]{2d10 + 11钝击伤害}（或来自坠落的[[/r {20}[bludgeoning]]]{20伤害}）。</p>",
+			"data":{},
+			"items":{
+				"Gust":{
+					"name": "暴风迸发 Gust",
+					"description": "<p><strong>触发</strong> 一个生物开打这扇门。</p>\n<hr />\n<p><strong>效果</strong> 只要门开着，大厅里就会充斥着强劲的风暴。一个生物必须在@Check[type:athletics|dc:32]检定中成功后才能向门移动，失败则会被击退5尺后@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p>除此之外，触发者被一阵强风轰飞并必须通过@Check[type:fortitude|dc:32]豁免、然后陷阱进行先攻检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标被推回5尺。</p>\n<p><strong>失败</strong> 目标被推回10尺。</p>\n<p><strong>大失败</strong> 目标被推回10尺并被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				}
+			}
 		},
 		"False Floor": {
-			"name": "False Floor"
+			"name": "虚假地板 False Floor",
+			"disable": "<p>通过察觉检定对抗DC21的隐秘（已经通过寻找陷阱检定）以不相信这片虚假的地板或通过解除魔法（2环；反制DC18）以反制地板的幻影；<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（2环；反制DC20）以反制魔法沉默</p>",
+			"hazarddescription": "<p>房间里的地板由幻象构成，其下是40尺深的真实地板。除此之外，这片区域还被魔法沉默所笼罩——在房间里面听不到任何声音，也没有声音可以传出这片空间。</p>",
+			"reset": "<p>自动</p>",
+			"stealthdetails": "<p>（受训；地板的幻象被解除后DC为0）</p>",
+			"data":{},
+			"items":{
+				"Drop":{
+					"name": "坠落 Drop",
+					"description": "<p><strong>触发</strong> 一个生物踏入虚假地板；</p>\n<hr />\n<p><strong>效果</strong> 生物坠入虚假地板并受到坠落伤害（一般为[[/r {20}[bludgeoning]]]{20钝击伤害}）。该生物可以进行一次@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}的反应动作来避免坠落。@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}或抓住边缘的DC为@Check[type:athletics|dc:20|traits:action:climb]@Check[type:reflex|dc:20|traits:action:grab-an-edge]。</p>"
+				}
+			}
 		},
 		"False Step Floor": {
-			"name": "False Step Floor"
+			"name": "虚假楼层 False Step Floor",
+			"disable": "<p>@Check[type:thievery|dc:28|name:Disrupt the Magical Energy|traits:action:disable-a-device]（受训）以破坏魔法能量；@Check[type:arcana|dc:27|name:Realign the Magic]或@Check[type:occultism|dc:27|name:Realign the Magic]（受训）以调整魔法能量</p>",
+			"hazarddescription": "<p>每当一个生物踏入房间，他会滑入地板，卷入另一维度并开始坠落，最终从天花板下出现，摔落在地板上。</p>",
+			"data":{},
+			"items":{
+				"False Step":{
+					"name": "坠落 False Step",
+					"description": "<p><strong>触发</strong> 一个生物进入房间并踏上地板。</p>\n<p><strong>效果</strong> 生物滑入地板，卷入另一维度并开始坠落，最终从天花板下出现，摔落在地板上。触发危害的生物受到来自坠落的[[/r {40}[bludgeoning]]]{40钝击伤害}。该生物可以进行一次@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}（DC24）的反应动作来避免坠落。</p>"
+				}
+			}
 		},
 		"K. H. W.'s Echo": {
-			"name": "K. H. W.'s Echo"
+			"name": "K. H. W.'s Echo",
+			"data":{},
+			"hp": "destabilized form",
+			"items":{
+				"6LPHouUKdhwChveQ":{
+					"name": "Rope Dart"
+				},
+				"Attack of Opportunity":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>The Echo has reach 15 for the purpose of determining when Attack of Opportunity triggers and when making Attacks of Opportunity.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Destabilized Form":{
+					"name": "Destabilized Form",
+					"description": "<p>When the Echo has fewer than 140 Hit Points, his form destabilizes, large chunks disintegrating from his face, limbs, and torso. White moths constantly stream from the missing spaces, creating a @Template[type:emanation|distance:10] that deals [[/r {6d6}[mental]]]{6d6 mental伤害} with a @Check[type:will|dc:34|basic:true].</p>\n<p>As long as the aura persists, he can dissolve into moths and re-form at another location within 15 feet as a free action at the beginning of each of his turns; this has the occult, conjuration, and teleportation traits.</p>"
+				},
+				"Astral Spindel Implement":{
+					"name": "Astral Spindel Implement",
+					"description": "<p>The Echo carries a drop spindle that constantly spins red astral thread, which is both his thaumaturgic implement and weapon. If his <em>rope dart</em> is lost or broken, he can re-form it with an Interact action. If he critically succeeds at a <em>rope dart</em> Strike, overwhelming thoughts and figments flow down the thread into the target's mind. The target becomes @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} for 1 round.</p>"
+				},
+				"Astral Thread Control":{
+					"name": "Astral Thread Control",
+					"description": "<p><strong>频率</strong> once per round</p>\n<p><strong>需求</strong> The Echo's previous action was a successful thrown rope dart Strike</p>\n<hr />\n<p><strong>效果</strong> The Echo flicks his wrist and makes a follow-up thrown rope dart Strike at a different target within 30 feet of the first target, using the same multiple attack penalty as his previous Strike. Regardless of whether his attack hits, he then retrieves the weapon.</p>"
+				},
+				"Contingency Oathday-Nine-Rova":{
+					"name": "Contingency Oathday-Nine-Rova",
+					"description": "<p><strong>频率</strong> once per天</p>\n<p><strong>触发</strong> The Echo's turn begins and he's stunned, slowed, @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}, or otherwise can't act</p>\n<hr />\n<p><strong>效果</strong> The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.</p>"
+				},
+				"Reconstitute from Thought":{
+					"name": "Reconstitute from Thought",
+					"description": "<p><strong>需求</strong> The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened</p>\n<hr />\n<p><strong>效果</strong> The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains [[/r {45}[healing]]]{45 Hit Points} and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the @UUID[Compendium.pf2e.pathfinder-dark-archive.0AdtolhMWrPlzVZY]{Call of the Void} hazard on that island.</p>"
+				},
+				"Spindle's Web":{
+					"name": "Spindle's Web",
+					"description": "<p>The Echo's spindle revolves faster and faster until it's a blur, lashing red threads in every direction. The threads deal [[/r {7d6}[slashing] + {7d6}[mental]]]]]{7d6 slashing damage and 7d6 mental伤害} to all creatures in a @Template[type:emanation|distance:30], with a @Check[type:reflex|dc:34|basic:true]. If a creature fails its save, the threads awaken the mindscape an</p>\n<p>chor within it, affecting it differently based on which anchor that creature used to gain access to the center of the mindscape. (If there is a PC who didn't absorb a mindscape anchor, for instance because there are more than four PCs in the party, then use the anchor of the PC closest to them.)</p>\n<p>The Echo then can't use Spindle's Web for [[/br 1d4 #rounds]]{1d4轮}.</p>\n<ul>\n<li><strong>Lantern</strong> The lantern outlines the creature with searing <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em> that deals [[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire伤害}.</li>\n<li><strong>Mirror</strong> The mirror reflects the creature to another location, teleporting them to a clear space within 25 feet of their current location.</li>\n<li><strong>Chalice</strong> The chalice drains life force, granting the Echo temporary HP equal to half the damage dealt.</li>\n<li><strong>Tome</strong> The tome floods the creature's mind with information; the target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 round.</li>\n</ul>"
+				}
+			}
 		},
 		"Mirror Door": {
-			"name": "Mirror Door"
+			"name": "镜中门 Mirror Door",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Open the Door|traits:action:disable-a-device]可以在看破镜影的情况下打开这扇门</p>",
+			"hazarddescription": "<p>墙面反射的镜像展示了一扇不存在于世间的幻影门，只有在镜影中看到它的人可以与它互动。</p>",
+			"reset": "<p>自动</p>",
+			"data":{},
+			"items":{
+				"Appear":{
+					"name": "显现 Appear",
+					"description": "<p><strong>触发</strong> 一个生物通过镜面反射观察这堵墙。</p>\n<hr />\n<p><strong>效果</strong> 一扇门出现墙反射出的镜影中。只能在触发者观察镜子从而这扇门出现在镜子里的时候，它才会出现且可被互动，并且只有过@Check[type:thievery|dc:18|name:Disable the Trap|traits:action:disable-a-device]检定上成功才可以解除这个陷阱。</p>"
+				}
+			}
 		},
 		"Mother Mitera": {
-			"name": "Mother Mitera"
+			"name": "教母密特拉 Mother Mitera",
+			"hp": "水晶生命连接",
+			"data":{},
+			"items":{
+				"Crystal Vitality Link":{
+					"name": "水晶生命连接 Crystal Vitality Link",
+					"description": "<p>岛屿的能量将密特拉的生命与她的信徒连接着。只要三个石英结构完好无损，当密特拉受到伤害时，10英里内任何其信徒都将失去等量的生命值。</p>"
+				},
+				"Ascension is Near":{
+					"name": "晋升将近 Ascension is Near",
+					"description": "<p><strong>频率</strong> 每次晋升仪式一次。</p>\n<hr />\n<p><strong>效果</strong> 密特拉激活月光花与她信徒的联系。30尺内任何对抗月光花茶豁免失败的信徒陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。任何大失败且没有得到解药的人将会爆炸（如果PC们没有成功给予解药的话大约是密特拉会众的一半人）。如果任何人的身体爆炸，密特拉获得30临时生命值以及@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态持续3轮；她每轮只能使用该额外动作进行打击或行走。</p>"
+				}
+			}
 		},
 		"Quartz-Spawned Shadow": {
-			"name": "Quartz-Spawned Shadow"
+			"name": "石英衍体幽影 Quartz-Spawned Shadow",
+			"publicNotes": "<p>被称为幽影的神秘不死生物潜伏在黑暗中，以那些远离光明的人为食。那些躲在发光武器的光芒庇护之下和幽影进行交涉的人往往能了解很多秘密，因为幽影是理想的间谍。</p>",
+			"data":{},
+			"items":{
+				"x47iDfIE9albveGl":{
+					"name": "幽影之手 Shadow Hand"
+				},
+				"Light Vulnerability":{
+                    "name": "光亮弱点 Light Vulnerability",
+                    "description": "<p>发出魔法光亮的物品（例如施加了<em>@Compendium[pf2e.spells-srd.WBmvzNDfpwka3qT4]{光亮术 Light}</em>）在攻击幽影时视为具有魔法特征。</p>"
+                },
+				"Crystal Siphon":{
+					"name": "水晶虹吸 Crystal Siphon",
+					"description": "<p><strong>需求</strong> 幽影与目标均位于衍生出阴影的水晶40尺内，且水晶没有被遮盖或阻碍。</p>\n<hr />\n<p><strong>效果</strong> 幽影的影子触须缠绕上目标，吸出一部分目标的生命力，将其虹吸进水晶中。目标承受[[/r {4d6}[negative]]]{4d6负能量伤害}（@Check[type:fortitude|dc:21|basic:true]豁免）。失败时，他还将陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。该力竭状态会与来自石英衍体幽影的力竭状态叠加，最高到力竭4。如果水晶虹吸增加生物的力竭状态值到3及以上，目标的影子将被拉入幽影的水晶中。</p>\n<p>当目标的影子被捕获时，他会感觉到一根@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的系绳将自己与水晶连接，当他远离水晶超过40尺时将陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。因水晶虹吸获得的力竭状态无法在水晶被破坏前减少；如果水晶被破坏，效果立即结束。</p>"
+				},
+				"Slink in Shadows":{
+                    "name": "潜于阴影 Slink in Shadows",
+                    "description": "<p>幽影可以在生物或物体的影子中@Compendium[pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或作为@Compendium[pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}的终点。</p>"
+                }
+			}
 		},
 		"Reflected Desires": {
-			"name": "Reflected Desires"
+			"name": "欲望之镜 Reflected Desires",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Shroud the Mirror|traits:action:disable-a-device]（受训）在不看镜子的情况下盖住它，或@Check[type:occultism|dc:17|name:Erect Mental Barriers]（受训）搭建心灵屏障</p>",
+			"hazarddescription": "<p>这面魔镜映照出注视者内心最深的欲望。</p>",
+			"reset": "<p>自动</p>",
+			"stealthdetails": "<p>（注意到镜子本身的DC为0）</p>",
+			"data":{},
+			"items":{
+				"Tempt":{
+					"name": "诱惑 Tempt",
+					"description": "<p><strong>触发</strong> 一个生物看向镜子；</p>\n<hr />\n<p><strong>效果</strong> 触发者从镜影中看到了自己正享受最渴望之物的景象，他被@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}（通过@Check[type:will|dc:20]豁免则不受影响），迷魂状态将在镜子被破坏或被遮住的情况下自动结束。</p>"
+				}
+			}
 		},
 		"Reflection": {
-			"name": "Reflection"
+			"name": "镜像 Reflection",
+			"data":{},
+			"items":{
+				"TpYNcJKE1v9ktu1H":{
+					"name": "镜像武器 Reflected Weapon"
+				},
+				"Reflection Routine":{
+					"name": "镜像例行程序 Reflection Routine",
+					"description": "<p>每个镜像有两个用于快步、移动、打击（任意组合）的行动。镜像可以在他们被创造的同轮行动。</p>"
+				}
+			}
 		},
 		"Shrinking Hall": {
-			"name": "Shrinking Hall"
+			"name": "渐缩走廊 Shrinking Hall",
+			"disable": "<p>@Check[type:thievery|dc:21|name:Jam the Scales|traits:action:disable-a-device]（受训）以卡住地板下面的测重器</p>",
+			"hazarddescription": "<p>走廊被设计成只有超小型生物才可以穿越，这使得通过走廊尽头的门是一件不可能做到的事。</p>",
+			"reset": "<p>在走廊的地板不承受重量后的10分钟后，陷阱会重置，将整条走廊复原成它原来的模样。</p>",
+			"data":{},
+			"items":{
+				"Shrink":{
+					"name": "缩小 Shrink",
+					"description": "<p><strong>触发</strong> 走廊的地板承受100磅或以上重量；</p>\n<hr />\n<p><strong>效果</strong> 走廊最后40尺的墙壁向内倾陷，使得整条走廊开始收缩。走廊尽头的高度与宽度被缩小为6英寸，阻挡了除超小型外的一切生物继续前进。</p>"
+				}
+			}
 		},
 		"Shrouded Assailant": {
-			"name": "Shrouded Assailant"
+			"name": "布裹袭击者 Shrouded Assailant",
+			"hp": "魂魄",
+			"disable": "<p>@Check[type:thievery|dc:43|name:Steal the Cloth|traits:action:disable-a-device] (大师) 在魂魄现形前偷走盖布，或@Check[type:athletics|dc:47|name:Pull the Cloth Off]在魂魄现形后扯走其披盖。</p>",
+			"hazarddescription": "<p>在白布盖着的镜中，一个魂魄缓缓走出，将镜上的布掀做自己的衣裳， 原先被覆盖的镜面显露出在其身后。这被布裹着的人形持续袭击活物，直到有人将其身上的布扯掉，以此放逐这个没有形体的魂魄。</p>",
+			"reset": "<p>作祟可以在镜子被布或其他物体盖上后重置。</p>",
+			"routine": "<p>(3个动作) 魂魄有三个用于快步、飞行60尺、打击的动作（任意顺序），成功的打击后目标被@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，若大成功则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>",
+			"data":{},
+			"items":{
+				"Don Shroud":{
+					"name": "披上寿衣 Don Shroud",
+					"description": "<p><strong>触发</strong> 一个生物进入该区域。</p>\n<hr />\n<p><strong>效果</strong> 一个魂魄从镜中缓缓走出，将镜上的布掀做自己的衣裳， 原先被复盖的镜面显露出在其身后。触发者获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}除非他们在@Check[type:will|dc:38]豁免中成功。然后作祟进行先攻检定。</p>"
+				},
+				"HOnJVrqXXtc3EGEu":{
+					"name": "帷幕之触 Shrouded Touch"
+				}
+			}
 		},
 		"Shuffling Hall": {
-			"name": "Shuffling Hall"
+			"name": "旋转大厅 Shuffling Hall",
+			"disable": "<p>@Check[type:thievery|dc:12|name:Deactivate a Plate|traits:action:disable-a-device]解除一块压力板</p>",
+			"hazarddescription": "<p>四块分布于对称大厅的压力板在被踏上后时沿着中轴垂直旋转，将踏上压力板的生物送到一间邻接的无特征房间，并立刻重置大厅里的压力板和墙壁。每块压力板都会将生物倒向不同的房间。</p>",
+			"reset": "<p>自动</p>",
+			"data":{},
+			"items":{
+				"Flip":{
+					"name": "转起来 Flip",
+					"description": "<p><strong>触发</strong> 一个生物踩到了压力板。</p>\n<hr />\n<p><strong>效果</strong> 整层地板与邻接着的墙壁沿着大厅的中轴垂直旋转，将触发危害的生物扔到相邻的无特征房间，并以同轴上的其他压力板、墙取代触发过的位置。生物被推入相邻房间，受到[[/r {1d8}[bludgeoning]]]{1d8钝击伤害}并@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。成功通过@Check[type:reflex|dc:19|traits:damaging-effect]豁免的生物不受伤害并从陷阱中脱出，回到他们踏上压力板前所在的房间。</p>"
+				}
+			}
 		},
 		"Sigil of Deepest Fears": {
-			"name": "Sigil of Deepest Fears"
+			"name": "穷极恐惧之印 Sigil of Deepest Fears",
+			"disable": "<p>@Check[type:thievery|dc:43|name:Drain the Sigil's Power|traits:action:disable-a-device]（大师）让魔法印记的力量流失至无害；或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（9环；反制DC43）反制印记</p>",
+			"hazarddescription": "<p>这魔印将让人直面他最深邃的恐惧。</p>",
+			"reset": "<p>1天</p>",
+			"stealthdetails": "<p>(大师)</p>",
+			"data":{},
+			"items":{
+				"Face Your Fear":{
+					"name": "直面你所恐惧之物 Face Your Fear",
+					"description": "<p><strong>触发</strong> 一个生物接近印记十尺内。</p>\n<hr />\n<p><strong>效果</strong> 所有印记120尺内的生物受到法术<em>@UUID[Compendium.pf2e.spells-srd.qDjeG6dxT4aEEC6J]{怪影杀手 Weird}</em>（@Check[type:will|dc:40|traits:damaging-effect]豁免）的效果。</p>"
+				}
+			}
 		},
 		"Spirit Window": {
-			"name": "Spirit Window"
+			"name": "魂魄囚窗 Spirit Window",
+			"disable": "<p>@Check[type:occultism|dc:48|name:Free the Spirits]（传奇）从镜中释放那些魂魄；@Check[type:religion|dc:48|name:Banish the Spirits]（传奇）以驱逐魂魄</p>",
+			"hazarddescription": "<p>魂魄们被囚禁在窗中，随时准备伤害那些触碰到窗户的人。</p>",
+			"reset": "<p>1轮</p>",
+			"data":{},
+			"items":{
+				"Siphon Soul":{
+					"name": "汲取灵魂 Siphon Soul",
+					"description": "<p><strong>触发</strong> 一个生物触碰窗户。</p>\n<hr />\n<p><strong>效果</strong> 触发危害的生物受到[[/r {8d10 + 44}[negative]]]{8d10 + 44负能量伤害}（@Check[type:will|dc:42|basic:true]豁免）作为囚窗企图窃走他们灵魂的效果，如果这次伤害足以杀死目标，他的灵魂如同受到<em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{缚魂术 Bind Soul}</em>的效果被囚于窗中。</p>"
+				}
+			}
 		},
 		"Thalassophobic Pool": {
-			"name": "Thalassophobic Pool"
-		},
-		"The Morrowkin": {
-			"name": "来日魔 The Morrowkin",
+			"name": "Thalassophobic Pool",
+			"disable": "<p>@Check[type:diplomacy|dc:32|name:Calm the Pool] (master) or @Check[type:deception|dc:32|name:Calm the Pool] (master) to quell the fear and calm the pool or @Check[type:intimidation|dc:35|name:Scare the Pool] to give the pool something worse to fear; three successes required.</p>",
+			"hazarddescription": "<p>The pool sucks in creatures that fall into it, making them sink into its endless depths.</p>",
+			"reset": "<p>The trap resets once there are no moving creatures in it.</p>",
+			"routine": "<p>(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take [[/r {1d6}[bludgeoning]]]{1d6钝击伤害}. As the pool has no bottom, creatures in it can fall down indefinitely; they must @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim} up to avoid drowning, but the water is especially choppy, so the Athletics DC is @Check[type:athletics|dc:25|traits:action:swim]. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes @Check[type:athletics|dc:10|traits:action:swim].</p>",
+			"stealthdetails": "<p>(trained)</p>",
+			"data":{},
 			"items":{
-				"41MourwRyz9uDnd8":{
-					"name": "爪抓 Claw"
-				},
-				"C5zKC61h7GcivnD5":{
-					"name": "厌恶食物 Disgusted by Food",
-					"description": "<p>来日魔吞噬梦境和潜能，而非食物。一个生物可以花费一个动作来在来日魔面前挥舞食物，会使得来日魔自动陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（或增加其恶心状态值1，最大到恶心6），如通常的恶心状态一样，降低来日魔的AC，攻击骰，豁免，技能，和属性DC。来日魔无法通过呕吐来减少其恶心状态值。</p>"
-				},
-				"GufPL7fXAz1R4tFA":{
-					"name": "不息 Endless",
-					"description": "<p>如果来日魔减少至0生命值或陷入失去意识超过数轮，它会消失。1分钟后，它完全恢复再次现身，如同上一场战斗根本没有发生过，它恢复满生命值，清除它身上所有效果，且其吞噬未来能力也准备就绪可以再次使用。</p>"
-				},
-				"Vcb2fzxMkjOhWNPz":{
-					"name": "汲取潜能 Drain Potential",
-					"description": "<p>来日魔试图汲取其目标的积极性，目标必须尝试一次@Check[type:fortitude|dc:31]的强韧豁免。如果目标豁免失败，它将陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}（大失败时为@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}），且在1分钟内所有检定上必须掷骰两次采用较差的结果。穿戴有希望护符（hope talisman）的生物不受影响。</p>"
-				},
-				"sxD01nPswudJsjzS":{
-					"name": "吞噬未来 Swallow Future",
-					"description": "<p>来日魔吸取抓住周围所有生物的未来行为。来日魔@Template[type:emanation|distance:30]范围内的所有生物受到[[/r {6d8 + 18}[mental]]]{6d8 + 18心灵伤害}，且必须尝试一次@Check[type:will|dc:39]豁免。</p>\n<p>来日魔无法在1分钟内再次使用吞噬未来。</p>\n<p>穿戴有希望护符的生物可以在看到意志豁免结果后，选择让他们的希望护符破碎来忽视此效果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一半伤害并陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。</p>\n<p><strong>失败</strong> 生物受到全额伤害并陷入毁灭2@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 4}（可能导致其立即死亡）。</p>"
-				},
-				"pAa1q5ts9oP6qdky":{
-					"name": "明日狂暴 Tomorrow's Fury",
-					"description": "<p>来日魔对其触及范围内任意数量的目标进行爪抓攻击。爪抓攻击会计入来日魔的多重攻击减值，但只有在所有攻击完成后才会累积减值。</p>"
+				"Downpour":{
+					"name": "Downpour",
+					"description": "<p><strong>触发</strong> A creature falls into the pool</p>\n<hr />\n<p><strong>效果</strong> More water pours forth from the chalice. Creatures in the pool become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and they can't decrease their clumsy condition so long as they remain in the pool. The trap then rolls initiative.</p>"
 				}
 			}
 		},
 		"The Weaver in Dreams": {
-			"name": "The Weaver in Dreams"
+			"name": "The Weaver in Dreams",
+			"speed": "Stalker in Dreams",
+			"data":{},
+			"items":{
+				"UPEC8mJThmuoRkKJ":{
+					"name": "Astral Silk"
+				},
+				"Dreams Unraveling":{
+					"name": "Dreams Unraveling",
+					"description": "<p>When the Weaver has fewer than 155 Hit Points, his form partially unravels, revealing patches of pure horror acute enough to leave physical wounds. This creates a @Template[type:emanation|distance:10] that deals [[/r {3d6}[mental]+{3d6}[slashing]]]{3d6 mental damage and 3d6 slashing伤害}, with a @Check[type:will|dc:36|basic:true]. A creature Averting its Gaze is immune to the aura.</p>"
+				},
+				"Nameless Nightmare":{
+					"name": "Nameless Nightmare",
+					"description": "<p>The Weaver has torn off his own name to become a being of fear. He is immune to linguistic effects and any effect that would impose the @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened} condition. Without a name, he is difficult for phenomena to affect; the Weaver recovers from the @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}, and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of his turn, and his flat check to clear persistent damage is @Check[type:flat|dc:5]{5}. If anyone utters, writes, or otherwise attempts to record his name, that creature automatically takes [[/r {10}[mental]]]{10 mental伤害} and the attempt fails.</p>"
+				},
+				"Stitch Into the Web":{
+					"name": "Stitch Into the Web",
+					"description": "<p><strong>触发</strong> The Weaver is moved against his will, or a creature attempts to leave a square within 20 feet of him by any means, including teleportation</p>\n<hr />\n<p><strong>效果</strong> The Weaver's silk stitches a body in place to prevent movement. The creature stops moving and the action is disrupted. The disruption doesn't affect astral bodies.</p>"
+				},
+				"Separate Astral Body":{
+					"name": "Separate Astral Body",
+					"description": "<p>The Weaver buries a silk thread in the target's psyche and tugs, wrenching the target's astral form out of their body. Unless the target succeeds at a @Check[type:will|dc:36] save, their astral form is pulled out, causing a ghostly image of them to appear in an adjacent space of the Weaver's choosing. An astral body is immune to physical damage but affected normally by mental effects, force effects, and effects that directly target the spirit. The target remains connected to their physical body by a silver cord, which is always visible and possibly foils attempts to Hide. Separation from one's astral body takes a toll on the psyche, imposing a -1 status penalty to Will saves and dealing [[/r {1d6}[persistent,mental]]]{1d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent mental伤害} for as long as the body is separated; this increases to 3d6 if the target is ever more than 30 feet from its astral body. The target can use a single action, which has the concentrate trait, to move their astral body an amount equal to their Speed. When the target stops taking persistent mental damage from this ability, the astral body snaps back to the physical body, ending the effect. If a target is carrying silver, then the first time this ability is used on them, the ability fails and any silver they're carrying larger than a coin tarnishes-while this doesn't outright destroy items like weapons or thaumaturge implements, it does prevent them from protecting against this ability more than once.</p>"
+				},
+				"Sever Astral Threads":{
+					"name": "Sever Astral Threads",
+					"description": "<p>The Weaver uses a claw to cut the silver cord connecting a creature's astral and physical bodies. This deals [[/r {16d6}[mental]]]{16d6 mental伤害} to any target affected by Separate Astral Body whose physical or astral body is within 10 feet of the Weaver (@Check[type:will|dc:37|basic:true]). After being targeted by this ability, the astral body slams violently back into the target's physical body, causing the target's vision to swim and blinding them until the start of their next turn unless they critically succeeded at their saving throw.</p>"
+				},
+				"Stalker in Dreams":{
+					"name": "Stalker in Dreams",
+					"description": "<p><strong>触发</strong> The Weaver becomes @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to all creatures within 60 feet or is not observed by any creatures within 60 feet</p>\n<hr />\n<p><strong>效果</strong> The Weaver's presence on the Material Plane is connected to others' perception of him, and when that perception falters, he can skitter to a new location. The Weaver teleports to an unoccupied space within 60 feet not within line of sight of any creatures within 60 feet. If the Weaver became concealed or unobserved as part of a movement action he was taking, he can resume its movement after teleporting. A creature who Averts its Gaze from the Weaver is not observing him.</p>"
+				},
+				"String Astral Body":{
+					"name": "String Astral Body",
+					"description": "<p>The Weaver attaches strings to a creature's astral body to move it. He forcefully moves an exposed astral body within reach of his astral silk Strike up to 20 feet, with no saving throw.</p>"
+				}
+			}
 		},
 		"Verdure's Moonflower": {
-			"name": "Verdure's Moonflower"
+			"name": "苍翠岛的月光花 Verdure's Moonflower",
+			"publicNotes": "<p>这些庞大的植物上生长着粗壮、多节的树干，上面装点并绽放着长着尖牙的花朵。树干的顶端长着一张敞开的巨口，能够吞下大多数体格比月光花更小的生物。月光花可以利用自身那强壮的根茎缓慢地移动，或者利用根茎发动攻击，但通常来说他们会将根部深深地扎进周遭的土地里，一动不动地等待猎物上门。</p>\n<p>尽管月光花无法按照常规的感官进行对话，但它们能够利用心灵感应和其他月光花进行交流。当探险家遭遇落单的月光花时，应当能确认周边地区的其他月光花都已经为他们的到来做好了准备。而那些设法截断月光花的心灵通信之人，都会被可怖、原始的丛林幻境所侵袭，那是庞大的植物生命处于统治地位的景象。目前还无法确认这是所有月光花共同对于过往的构想亦或者是对于未来的梦想。</p>\n<p>月光花是一种异星生命形式，来自许久以前死亡的行星，但它们在银河系之中的增殖则源于黑色支配者的阴谋，这个邪恶的异星组织来自群星之间的黑暗地带。</p>",
+			"data":{},
+			"items":{
+				"Pod Prison":{
+					"name": "荚囊囚牢 Pod Prison",
+					"description": "<p><strong>触发</strong> 月光花活吞了一个生物。</p>\n<hr />\n<p><strong>效果</strong> 被活吞的生物会被紧紧地包裹在茧中，然后被喷到与月光花的身体相邻的方格内。该生物会被继续视同为被活吞。他无法使用特技来@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}荚囊，但是其他生物可以尝试使其破裂。若对茧造成任何伤害，则被包裹的生物也会承受伤害，数值为茧受到伤害的一半。当茧破裂后，它就会立即泄气并腐烂。</p>"
+				},
+				"Pod Spawn":{
+					"name": "荚生衍体 Pod Spawn",
+					"description": "<p>当小型或更大的生物由于荚囊囚牢而死亡时，荚囊会在[[/br 1d4 #Moonflower Transformation]]{1d4小时}的成长后转变为一株生命值全满的成年月光花。</p>\n<p>新形成的月光花具有自己的意识，但它的树干或花在某些方面与其体内死亡的生物类似。死亡生物的装备会留存在新生月光花的体内，当月光花被杀死后可以将其回收。</p>"
+				},
+				"Spray Blossoms":{
+					"name": "喷射花瓣 Spray Blossoms",
+					"description": "<p><strong>效果</strong> 月光花向@Template[type:cone|distance:30]区域射出扭曲心智的花瓣。区域内的生物受到[[/r {4d6}[mental] + {4d6}[poison]]]{4d6心灵伤害和4d6毒素伤害}（@Check[type:will|dc:26|basic:true]豁免）。失败时，他们将陷入1分钟的@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，大失败时，还将陷入@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>\n<p>月光花不能在[[/br 1d4 #rounds]]{1d4轮}内再次使用喷射花瓣。</p>"
+				},
+				"Swallow Whole":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>大型, [[/r {2d10 + 10}[bludgeoning] + {2d6}[acid]]]{2d10 + 10钝击和2d6酸液}, 破裂21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				}
+			}
+		},
+		"The Morrowkin": {
+			"name": "来日魔 The Morrowkin",
+			"data":{},
+			"items":{
+				"Disgusted by Food":{
+					"name": "厌恶食物 Disgusted by Food",
+					"description": "<p>来日魔吞噬梦境和潜能，而非食物。一个生物可以花费一个动作来在来日魔面前挥舞食物，会使得来日魔自动陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（或增加其恶心状态值1，最大到恶心6），如通常的恶心状态一样，降低来日魔的AC，攻击骰，豁免，技能，和属性DC。来日魔无法通过呕吐来减少其恶心状态值。</p>"
+				},
+				"Endless":{
+					"name": "不息 Endless",
+					"description": "<p>如果来日魔减少至0生命值或陷入失去意识超过数轮，它会消失。1分钟后，它完全恢复再次现身，如同上一场战斗根本没有发生过，它恢复满生命值，清除它身上所有效果，且其吞噬未来能力也准备就绪可以再次使用。</p>"
+				},
+				"Drain Potential":{
+					"name": "汲取潜能 Drain Potential",
+					"description": "<p>来日魔试图汲取其目标的积极性，目标必须尝试一次@Check[type:fortitude|dc:31]的强韧豁免。如果目标豁免失败，它将陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}（大失败时为@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}），且在1分钟内所有检定上必须掷骰两次采用较差的结果。穿戴有希望护符（hope talisman）的生物不受影响。</p>"
+				},
+				"Swallow Future":{
+					"name": "吞噬未来 Swallow Future",
+					"description": "<p>来日魔吸取抓住周围所有生物的未来行为。来日魔@Template[type:emanation|distance:30]范围内的所有生物受到[[/r {6d8 + 18}[mental]]]{6d8 + 18心灵伤害}，且必须尝试一次@Check[type:will|dc:39]豁免。</p>\n<p>来日魔无法在1分钟内再次使用吞噬未来。</p>\n<p>穿戴有希望护符的生物可以在看到意志豁免结果后，选择让他们的希望护符破碎来忽视此效果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一半伤害并陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。</p>\n<p><strong>失败</strong> 生物受到全额伤害并陷入毁灭2@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 4}（可能导致其立即死亡）。</p>"
+				},
+				"Tomorrow's Fury":{
+					"name": "明日狂暴 Tomorrow's Fury",
+					"description": "<p>来日魔对其触及范围内任意数量的目标进行爪抓攻击。爪抓攻击会计入来日魔的多重攻击减值，但只有在所有攻击完成后才会累积减值。</p>"
+				}
+			}
 		}
 	}
 }
