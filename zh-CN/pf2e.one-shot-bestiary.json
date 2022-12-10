@@ -49,7 +49,7 @@
 		        },
 		        "Invoke Alocer":{
 		        	"name": "Invoke Alocer",
-		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r {3d6+7}[healing]]]{3d6+7 Hit Points}, gains a fly speed of 25 feet, and deals an additional [[/r {1d6}[fire]]]{1d6 fire damage} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r {3d6+7}[healing]]]{3d6+7生命值}, gains a fly speed of 25 feet, and deals an additional [[/r {1d6}[fire]]]{1d6火焰伤害} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
 		        },
 		        "Cruel Shot":{
 		        	"name": "Cruel Shot",
@@ -58,17 +58,17 @@
 			}
 		},
 		"Bad Vibrations": {
-			"name": "Bad Vibrations",
-			"hp": "HP per crystal",
-			"disable": "<p>@Check[type:thievery|dc:17] (trained) or @Check[type:occultism|dc:17] (trained) to disrupt the magic enchanting one of the crystals, or @Check[type:performance|dc:20] (trained) by a character who can cast <em>@UUID[Compendium.pf2e.spells-srd.WILXkjU5Yq3yw10r]{Counter Performance}</em> to use sound to redirect the noise back into the crystal, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level, DC 18) to counteract a crystal.</span></p>",
-			"hazarddescription": "<p>The three larger crystals on the table begin to vibrate and emit a swiftly growing peal of sound.</p>",
-			"routine": "<p>(3 actions) The hazard loses 1 action for each crystal that's disabled or destroyed. On each of the trap's actions, one of the crystals fires a blast of sound at a single Small or larger creature in the room. The target is randomly determined and takes [[/r {1d8}[sonic]]]{1d8 sonic damage} (@Check[type:fortitude|dc:20|basic:true]); a target who critically fails this save is @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute. At the end of the hazard's routine, attempt a @Check[type:flat|dc:10|name:Destroy a Crystal]. On a success, one of the crystals shatters and is destroyed.</p>",
+			"name": "强音振动 Bad Vibrations",
+			"hp": "每个水晶的HP",
+			"disable": "<p>@Check[type:thievery|dc:17] (受训)或@Check[type:occultism|dc:17] (受训)可以中断其中一个水晶上的魔法，或一名角色施放<em>@UUID[Compendium.pf2e.spells-srd.WILXkjU5Yq3yw10r]{反制表演 Counter Performance}</em>并通过@Check[type:performance|dc:20] (受训)来用声音将噪声重新导回到晶体内，或通过<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> （2环，反制DC18）来反制一个水晶。</span></p>",
+			"hazarddescription": "<p>桌子上那三个较大的晶体开始振动并发出迅速变响的声音。</p>",
+			"routine": "<p>（3 动作）每有一个晶体被解除或摧毁，危害便损失一个动作。在危害的每一个动作中，其中一个晶体都会向房间内某个单独的小型或更大体型的生物发射音爆。目标是随机决定的，其承受[[/r {1d8}[sonic]]]{1d8音波伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）；在此次豁免骰中大失败的目标将@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟。在危害的例行程序结束时，进行一次@Check[type:flat|dc:10|name:Destroy a Crystal]检定。在成功时，其中一个晶体将被粉碎、摧毁。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
 				"Shrill Chime":{
-					"name": "Shrill Chime",
-					"description": "<p><strong>触发</strong> A creature other than Darius or one of his homonculi approaches within 5 feet of the table or attempts to Interact with the crystals in any way other than to attempt to disable the hazard.</p>\n<hr />\n<p><strong>效果</strong> The three large crystals on the table begin vibrating and humming. The hazard rolls initiative.</p>"
+					"name": "刺耳鸣响 Shrill Chime",
+					"description": "<p><strong>触发</strong> 达利斯和他的人造人之外的某个生物进入到桌子的5尺范围内或试图与晶体交互（不包括解除危害的尝试）；</p>\n<hr />\n<p><strong>效果</strong> 桌子上那三块大晶体开始振动并且嗡嗡尖鸣，随后危害进行先攻检定。</p>"
 				}
 			}
 		},
@@ -92,27 +92,21 @@
 			"items":{}
 		},
 		"Darius": {
-			"name": "Darius",
-			"blurb": "Male human alchemist",
+			"name": "达利斯 Darius",
+			"blurb": "男性人类炼金术士",
 			"data":{},
 			"items":{
-				"Singed leather apron and Clothing":{
-					"name": "物品Singed leather apron and Clothing"
-				},
-				"Improvised Wax Sprayer":{
-					"name": "物品Improvised Wax Sprayer"
-				},
 				"Metabolize Mutagen":{
-					"name": "Metabolize Mutagen",
-					"description": "<p>Darius metabolizes the power of an active mutagen to regain [[/r {2d6} #hit points]]{2d6 Hit Points}. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p>"
+					"name": "代谢突变剂 Metabolize Mutagen",
+					"description": "<p>达利斯代谢掉一份正在起作用的突变剂，并借此回复[[/r {2d6} #hit points]]{2d6生命值}。若他这样做（除此之外的一种情况是：他在有机会喝下突变剂之前便撞见了PC们的隐秘小队），他失去啃咬以及利爪无武装攻击，他在运动检定上的加值减少2点，他的AC增加1点，他的反射豁免加值增加2点。</p>"
 				},
 				"Crystaline Mutation":{
-					"name": "Crystaline Mutation",
-					"description": "<p>When Darius drinks any mutagen, his teeth and fingernails grow sharp crystalline edges.</p>"
+					"name": "晶化突变 Crystaline Mutation",
+					"description": "<p>每当达利斯喝下任何突变剂，他的牙齿和指甲便会长出锋利的晶状边缘。</p>"
 				},
 				"Spray Hot Wax":{
-					"name": "Spray Hot Wax",
-					"description": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[type:cone|distance:15]. All creatures in the area must attempt a @Check[type:reflex|dc:20] save. Scented candles homonoculi in the area take no damage, instead [[/r {2d6}[healing]]]{healing 2d6 damage}. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes [[/r {2d6}[fire]]]{2d6 fire damage}.</p>\n<p><strong>Failure</strong> The creature takes [[/r {3d6}[fire]]]{3d6 fire damage} plus [[/r {1d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r {5d6}[fire]]]{5d6 fire damage} plus [[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>"
+					"name": "喷洒热蜡 Spray Hot Wax",
+					"description": "<p>达利斯用他临时制作的热蜡喷洒器将灼热的熔蜡喷洒到一个@Template[type:cone|distance:15]范围内。该区域内的所有生物都必须尝试一次@Check[type:reflex|dc:20]豁免，该区域内的香烛人造人不会受到伤害，反之还能[[/r {2d6}[healing]]]{治愈其2d6所受伤害}。在使用完热蜡“加农炮”后，达利斯不能再继续使用它，直到他邻近冒泡的蜡锅并且采取两个交互动作来重新装填喷洒器。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物承受[[/r {2d6}[fire]]]{2d6火焰伤害}。</p>\n<p><strong>失败</strong> 生物承受[[/r {3d6}[fire]]]{3d6火焰伤害}和[[/r {1d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>\n<p><strong>大失败</strong> 生物承受[[/r {5d6}[fire]]]{5d6火焰伤害}和[[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
 				}
 			}
 		},
@@ -182,20 +176,20 @@
 			}
 		},
 		"Grazing Deer": {
-			"name": "Grazing Deer",
-			"hp": "(if the grazing deer take this much damage, but they do flee into the woods and don't return), they aren't killed",
-			"disable": "<p>@Check[type:diplomacy|dc:17|name:Befriend the Deer]{Diplomacy (with Wild Empathy)) to befriend the deer and convince them that leshys aren't for nibbling, or @Check[type:intimidation|dc:20|name:Scare the Deer Away]{Intimidation} to scare away the deer.</p>",
-			"hazarddescription": "<p>A herd of deer exits the woods to investigate the delicious-looking leshys.</p>",
-			"routine": "<p>(2 actions) The grazing deer takes one action to move about, and then one action to eagerly nibble at a randomly chosen NPC. A character who spends three actions on their turn to Stride can avoid being nibbled by the grazing deer during the hazard's next turn. If all of the PCs do so, attempt a @Check[type:flat|dc:5|name:Escape the Deer]-on a success, the party escapes the deer and can proceed onward to Petalbrook, but they become delayed as a result of having to flee the pack of ravenous deer.</p>",
+			"name": "吃草的鹿 Grazing Deer",
+			"hp": "(若食草鹿承受了此数量的伤害，它们不会被杀死，但它们会逃进树林里并且不再回来)",
+			"disable": "<p>@Check[type:diplomacy|dc:17|name:Befriend the Deer]{交涉(需要野性认同)}来与鹿友善相处并让它们相信莱西不是用来啃的东西，或者通过@Check[type:intimidation|dc:20|name:Scare the Deer Away]{威吓}来把鹿吓跑</p>",
+			"hazarddescription": "<p>一群鹿离开树林来研究这群看上去很美味的莱西。</p>",
+			"routine": "<p>（2动作）吃草的鹿用一个动作进行移动，再用一个动作迫不及待地啃向一名随机决定的PC。若一个角色在他们的回合中用三个动作进行行走便可在危害的下一个回合中避免被吃草的鹿啃咬。若所有PC 都选择如此，则进行一次@Check[type:flat|dc:5|name:Escape the Deer]检定——在检定成功的情况下，小队逃离了鹿并继续前往花溪村，但他们会因为不得不费力避开那贪吃的鹿而遭受延误。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
 				"Approach and Taste":{
-					"name": "Approach and Taste",
-					"description": "<p><strong>触发</strong> The PCs emerge from the forest's edge</p>\n<hr />\n<p><strong>效果</strong> A deer approaches the party and attempts a nibble Strike against a randomly determined PC. THe grazing deer rolls initiative.</p>"
+					"name": "靠近尝一尝 Approach and Taste",
+					"description": "<p><strong>触发</strong> PC们从森林边缘出现；</p>\n<hr />\n<p><strong>效果</strong> 一头鹿接近小队并对一名随机的PC进行一次啃咬打击，随后食草鹿投掷先攻。</p>"
 				},
 				"jRyHe0gkU99THj1F":{
-					"name": "Nibble"
+					"name": "啃咬 Nibble"
 				}
 			}
 		},
@@ -254,92 +248,92 @@
 			}
 		},
 		"Meliosa's Leshy": {
-			"name": "Meliosa's Leshy",
+			"name": "梅莉奥萨的莱西 Meliosa's Leshy",
 			"data":{},
 			"items":{
 				"Verdant Burst":{
-					"name": "Verdant Burst",
-					"description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r {2d8}[healing]]]{2d8 Hit Points} to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+					"name": "翠绿绽放 Verdant Burst",
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>"
+					"description": "<p>莱西将自己变化为一株小型植物，该能力在其它方面的效果与<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术 Tree Shape}</em>一致。</p>"
 				}
 			}
 		},
 		"Meliosa's Leshy (Golden Bamboo)": {
-			"name": "Meliosa's Leshy (Golden Bamboo)",
+			"name": "梅莉奥萨的金竹莱西 Meliosa's Leshy (Golden Bamboo)",
 			"data":{},
 			"items":{
 				"Verdant Burst":{
-					"name": "Verdant Burst",
-					"description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r {2d8}[healing]]]{2d8 Hit Points} to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+					"name": "翠绿绽放 Verdant Burst",
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Bend Back":{
-					"name": "Bend Back",
-					"description": "<p>The golden bamboo leshy uses an action to bend itself back, ready to whip forward, increasing its reach with its fists to 10 feet. After the golden bamboo Strikes with its fist, it's no longer Bent Back.</p>"
+					"name": "后弯 Bend Back",
+					"description": "<p>金竹莱西使用一个动作将自己向后弯卷，并准备好向前鞭打，以此将自己的触及增加到10尺。在金竹莱西使用拳头打击后，他将不再处于后弯状态。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>"
+					"description": "<p>莱西将自己变化为一株小型植物，该能力在其它方面的效果与<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术 Tree Shape}</em>一致。</p>"
 				},
 				"Coiled Opportunity":{
-					"name": "Coiled Opportunity",
-					"description": "<p>As @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.hFtNbo1LKYCoDy2O]{Attack of Opportunity}, but the golden bamboo leshy can use this reaction only if it's Bent Back.</p>"
+					"name": "卷曲借机 Coiled Opportunity",
+					"description": "<p>效果与@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.hFtNbo1LKYCoDy2O]{借机攻击 Attack of Opportunity}相同，但金竹莱西只能在后弯状态中使用此反应。</p>"
 				}
 			}
 		},
 		"Meliosa's Leshy (Minkaian Honeysuckle Leshy)": {
-			"name": "Meliosa's Leshy (Minkaian Honeysuckle Leshy)",
+			"name": "梅莉奥萨的明海种忍冬莱西 Meliosa's Leshy (Minkaian Honeysuckle Leshy)",
 			"data":{},
 			"items":{
 				"Agile Leshy":{
-					"name": "Agile Leshy",
-					"description": "<p>The honeysuckle leshy gains a +1 status bonus to Reflex and Fortitude saves and DCs against trip and forced movement.</p>"
+					"name": "灵巧莱西 Agile Leshy",
+					"description": "<p>忍冬莱西在反射和强韧豁免掷骰中获得+1状态加值，此加值也适用于其对抗摔绊和强迫移动的DC上。</p>"
 				},
 				"Verdant Burst":{
-					"name": "Verdant Burst",
-					"description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r {2d8}[healing]]]{2d8 Hit Points} to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+					"name": "翠绿绽放 Verdant Burst",
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>"
+					"description": "<p>莱西将自己变化为一株小型植物，该能力在其它方面的效果与<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术 Tree Shape}</em>一致。</p>"
 				}
 			}
 		},
 		"Meliosa's Leshy (Mint Leshy)": {
-			"name": "Meliosa's Leshy (Mint Leshy)",
+			"name": "梅莉奥萨的薄荷莱西 Meliosa's Leshy (Mint Leshy)",
 			"data":{},
 			"items":{
 				"Verdant Burst":{
-					"name": "Verdant Burst",
-					"description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r {2d8}[healing]]]{2d8 Hit Points} to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+					"name": "翠绿绽放 Verdant Burst",
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>"
+					"description": "<p>莱西将自己变化为一株小型植物，该能力在其它方面的效果与<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术 Tree Shape}</em>一致。</p>"
 				},
 				"Engulf":{
 					"name": "包卷 Engulf",
-					"description": "<p>@Check[type:reflex|dc:18], [[/r {1d6}[bludgeoning]+{1d6}[poison]]]{1d6 bludgeoning plus 1d6 poison damage}, Escape DC 18, Rupture 6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+					"description": "<p>@Check[type:reflex|dc:18], [[/r {1d6}[bludgeoning]+{1d6}[poison]]]{1d6钝击和1d6毒素伤害}, 逃脱DC 18, 破裂6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
 				}
 			}
 		},
 		"Meliosa's Leshy (Wisteria Leshy)": {
-			"name": "Meliosa's Leshy (Wisteria Leshy)",
+			"name": "梅莉奥萨的紫藤莱西 Meliosa's Leshy (Wisteria Leshy)",
 			"data":{},
 			"items":{
 				"Verdant Burst":{
-					"name": "Verdant Burst",
-					"description": "<p>When a leshy dies, a burst of primal energy explodes from its body, restoring [[/r {2d8}[healing]]]{2d8 Hit Points} to each plant creature within a @Template[type:emanation|distance:30]. This area is filled with plants of the same type as the leshy, becoming difficult terrain. If the terrain isn't a viable environment for these plants, they wither after 24 hours.</p>"
+					"name": "翠绿绽放 Verdant Burst",
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>The leshy transforms into a Small plant. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>"
+					"description": "<p>莱西将自己变化为一株小型植物，该能力在其它方面的效果与<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术 Tree Shape}</em>一致。</p>"
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r {1d6+4}[bludgeoning]]]{1d6+4 bludgeoning}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>[[/r {1d6+4}[bludgeoning]]]{1d6+4钝击}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				}
 			}
 		},
@@ -418,25 +412,25 @@
 			}
 		},
 		"Scented Candle Homunculus": {
-			"name": "Scented Candle Homunculus",
-			"blurb": "Variant homunculus",
+			"name": "香烛人造人 Scented Candle Homunculus",
+			"blurb": "变体人造人",
 			"data":{},
 			"items":{
 				"WrgYaUmRHEPgpUAn":{
-					"name": "Wax Glob",
-					"description": "<p>[[/r {1d4}[persistent,fire]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+					"name": "蜡滴 Wax Glob",
+					"description": "<p>[[/r {1d4}[persistent,fire]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>"
 				},
 				"Master Link":{
-					"name": "Master Link",
-					"description": "<p>A homunculus can't speak, but it is telepathically linked to its creator. It can share information back and forth, including its master's knowledge and everything the homunculus hears. The range of this link is 1,500 feet. The homunculus adopts the same alignment as its creator and is utterly faithful. If the homunculus is destroyed, the master takes [[/r {2d10}[mental]]]{2d10心灵伤害}. If the master is slain, the homunculus becomes mindless, claims its current location as its lair, and instinctively attacks anyone who comes near.</p>"
+					"name": "系于其主 Master Link",
+					"description": "<p>一个人造人不能说话，但它与它的创造者间有心灵感应。它可以来回分享信息，包括主人的知识和人造人听到的一切。这个连接的距离是1500尺。人造人的阵营等同于它的创造者，并且完全忠于后者。如果人造人被摧毁，它的主人会受到[[/r {2d10}[mental]]]{2d10心灵伤害}。如果主人被杀死，人造人就会变为无心智生物，将它当前的位置据为巢穴，并本能地攻击任何靠近的人。</p>"
 				},
 				"Perfume Aura":{
-					"name": "Perfume Aura",
-					"description": "<p>@Template[type:emanation|distance:5]{5 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>The scented candle homunculus's fragrance of lavender is overwhelmingly intense. Any creature other than the homunculus's master who enters the aura must attempt a @Check[type:fortitude|dc:15] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is temporarily immune to the homunculus's aura for 24 hours.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round and sickened 1.</p>"
+					"name": "香薰灵光 Perfume Aura",
+					"description": "<p>@Template[type:emanation|distance:5]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>香烛人造人散发的薰衣草香味异常浓郁。进入灵光的任何生物（除了人造人的主人）都必须尝试一次@Check[type:fortitude|dc:15]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物获得对人造人灵光的24小时临时免疫。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>大失败</strong> 该生物获得1轮@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，并且获得恶心1。</p>"
 				},
 				"Dunk in Wax":{
-					"name": "Dunk in Wax",
-					"description": "<p>A scented candle homunculus who is adjacent to the large wax cauldron can dunk itself in wax, [[/r {2d6}[healing]]]{healing 2d6 damage}.</p>"
+					"name": "浴蜡而生 Dunk in Wax",
+					"description": "<p>邻近大蜡锅的香烛人造人能够将自己浸泡在蜡中，[[/r {2d6}[healing]]]{治愈2d6所受伤害}。</p>"
 				}
 			}
 		},
