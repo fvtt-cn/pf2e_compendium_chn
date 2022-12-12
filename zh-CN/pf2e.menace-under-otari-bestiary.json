@@ -242,18 +242,18 @@
 			}
 		},
 		"Envenomed Lock (BB)": {
-			"name": "Envenomed Lock (BB)",
-			"disable": "<p>@Check[type:thievery|dc:17|traits:hazard|name:Disable the Spring Mechanism] on the spring mechanism</p>",
-			"hazarddescription": "<p>A spring-loaded, poisoned spine is hidden near the keyhole of a lock. @UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]{Disabling} or breaking the trap doesn't disable or break the lock.</p>",
+			"name": "毒锁 Envenomed Lock (BB)",
+			"disable": "<p>@Check[type:thievery|dc:17|traits:hazard|name:Disable the Spring Mechanism]可以解除弹簧</p>",
+			"hazarddescription": "<p>这把锁的钥匙孔附近藏着一根带有弹簧的毒刺。@UUID[Compendium.pf2e.actionspf2e.cYdz2grcOcRt4jk6]{解除 Disabling}或破坏陷阱并不能解除或者破坏这把锁。</p>",
 			"data":{},
 			"items":{
 				"Spring":{
-					"name": "Spring",
-					"description": "<p>When a creature tries to unlock or Pick the Lock, a spine extends to attack that creature with a Spine attack.</p>"
+					"name": "弹簧 Spring",
+					"description": "<p>一个生物尝试开锁时，毒针刺出，用尖刺打击该生物。</p>"
 				},
 				"strike-Spine":{
 					"name": "尖刺 Spine",
-					"description": "<p><strong>Success:</strong> @Localize[PF2E.PersistentDamage.Poison1d6.success]</p>\n<p><strong>Critical Success:</strong> @Localize[PF2E.PersistentDamage.Poison1d6.criticalSuccess]</p>"
+					"description": "<p><strong>成功：</strong> @Localize[PF2E.PersistentDamage.Poison1d6.success]</p>\n<p><strong>大成功：</strong> @Localize[PF2E.PersistentDamage.Poison1d6.criticalSuccess]</p>"
 				}
 			}
 		},
@@ -478,15 +478,15 @@
 			}
 		},
 		"Hidden Pit (BB)": {
-			"name": "Hidden Pit (BB)",
-			"disable": "<p>@Check[type:thievery|dc:12|traits:hazard|name:Remove the Trapdoor] to remove the trapdoor.</p>",
-			"hazarddescription": "<p>A wooden trapdoor covers a 10-foot square pit that's 20 feet deep.</p>",
-			"stealthdetails": "<p>(or @Check[type:perception|dc:0|traits:hazard] if the trapdoor is disabled or broken)</p>",
+			"name": "陷坑 Hidden Pit (BB)",
+			"disable": "<p>@Check[type:thievery|dc:12|traits:hazard|name:Remove the Trapdoor]可以移除活板门</p>",
+			"hazarddescription": "<p>木制的活板门覆盖着一个10尺见方，20尺深的坑。</p>",
+			"stealthdetails": "<p>(（活板门被解除或者破坏则为@Check[type:perception|dc:0|traits:hazard])</p>",
 			"data":{},
 			"items":{
 				"Pitfall":{
-					"name": "Pitfall",
-					"description": "<p>If a creature walks onto the trapdoor, that creature falls in unless it succeeds at a @Check[type:reflex|dc:16] save to grab hold of the edge. The pit is 20 feet deep, dealing [[/r {10}[bludgeoning]]]{10钝击伤害} to anyone who falls to the bottom.</p>"
+					"name": "陷坑 Pitfall",
+					"description": "<p>如果一个生物踩上活板门，除非在@Check[type:reflex|dc:16]豁免中成功抓住边缘，否则生物坠入陷坑。陷坑20尺深，对任何坠入底部的生物造成[[/r {10}[bludgeoning]]]{10钝击伤害}。</p>"
 				}
 			}
 		},
@@ -729,14 +729,14 @@
 			}
 		},
 		"Scythe Blades (BB)": {
-			"name": "Scythe Blades (BB)",
-			"disable": "<p>@Check[type:thievery|dc:21|traits:hazard|name:Disable Blade] to disable each blade.</p>",
-			"hazarddescription": "<p>Two blades, each hidden in a 15-foot-long ceiling groove, are both connected to a trip wire.</p>",
+			"name": "摆镰 Scythe Blades (BB)",
+			"disable": "<p>@Check[type:thievery|dc:21|traits:hazard|name:Disable Blade]解除每一片镰刃。</p>",
+			"hazarddescription": "<p>两片镰刃，隐藏在15尺长的天花板凹槽里，都与一根绊线相连。</p>",
 			"data":{},
 			"items":{
 				"Falling Scythes":{
-					"name": "Falling Scythes",
-					"description": "<p>When the trip wire is pulled or severed, both blades swing down, each one attacking all creatures under the ceiling grooves with a Scythe attack. The trap makes a Scythe melee attack with each blade. There's no multiple attack penalty on these attacks.</p>"
+					"name": "摆镰 Falling Scythes",
+					"description": "<p>当绊线被拉动或被切断，两片镰刃同时向下摆动，每片镰刃都用巨镰打击攻击天花板凹槽下的所有生物。这些攻击没有多重攻击减值。</p>"
 				}
 			}
 		},
@@ -804,14 +804,14 @@
 			"items":{}
 		},
 		"Slamming Door (BB)": {
-			"name": "Slamming Door (BB)",
-			"disable": "<p>@Check[type:thievery|dc:15|traits:hazard|name:Disable Floor Panels] on the floor panels before the slab falls.</p>",
-			"hazarddescription": "<p>Pressure-sensitive panels in the floor connect to a stone slab hidden in a hallway's ceiling.</p>",
+			"name": "瓮中捉鳖 Slamming Door (BB)",
+			"disable": "<p>在石板落下前，通过@Check[type:thievery|dc:15|traits:hazard|name:Disable Floor Panels]可以解除压力板。</p>",
+			"hazarddescription": "<p>地面的压力地板连接到一块隐藏在走廊天花板上的石板。</p>",
 			"data":{},
 			"items":{
 				"Slam Shut":{
-					"name": "Slam Shut",
-					"description": "<p>When pressure is placed on any floor tile, the door falls, closing off the hallway. The stone slab deals [[/r {3d8}[bludgeoning]]]{3d8钝击伤害} to anyone beneath or adjacent to the slab when it drops and pushes them out of its space in a random direction. A creature that succeeds at a @Check[type:reflex|dc:17|traits:damaging-effect,hazard] save takes no damage and rolls out of the way in a random direction. On a critical success, they roll out of the way and can choose which direction.</p>\n<p>Lifting the fallen slab requires a successful @Check[type:athletics|dc:25|traits:hazard] check. Hitting the floor panels triggers the trap. The slab uses the same AC and saves as the trap, but it has Hardness 12, HP 48 (BT 24).</p>"
+					"name": "突然落下 Slam Shut",
+					"description": "<p>任何地砖受到压力时，走廊两边的门落下并关闭。石板会对其下方区域或相邻的任何生物造成[[/r {3d8}[bludgeoning]]]{3d8钝击伤害}，并将它们按随机方向推离其所在空间。成功通过@Check[type:reflex|dc:17|traits:damaging-effect]豁免的生物不受伤害，并沿随机方向滚出。如果该生物大成功，它可以选择翻滚的方向。</p>\n<p>抬起落下的石板需要进行成功的@Check[type:athletics|dc:25|name:Lift a Slab Athletics|showDC:all]检定。命中压力板会触发陷阱，石板与陷阱的AC和豁免相同，但是它拥有硬度 12, HP 48 (BT 24)。</p>"
 				}
 			}
 		},
@@ -835,14 +835,14 @@
 			}
 		},
 		"Spear Launcher (BB)": {
-			"name": "Spear Launcher (BB)",
-			"disable": "<p>@Check[type:thievery|dc:18|traits:hazard|name:Disable Mechanism] on the floor tile or wall socket.</p>",
-			"hazarddescription": "<p>A wall socket loaded with a spear connects to a floor tile in one 5-foot square.</p>",
+			"name": "矛墙 Spear Launcher (BB)",
+			"disable": "<p>@Check[type:thievery|dc:18|traits:hazard|name:Disable Mechanism]可以解除地砖或墙孔</p>",
+			"hazarddescription": "<p>墙上设有安装了矛的墙孔，它和一块5英尺见方的地砖相连。</p>",
 			"data":{},
 			"items":{
 				"Spear":{
 					"name": "矛 Spear",
-					"description": "<p>When pressure is applied to the floor tile, the trap shoots a spear, making an attack against the creature or object on the floor tile. The trap makes a ranged Spear attack.</p>"
+					"description": "<p>地砖受到压力时，矛从墙孔里射出，攻击地板的生物或物品。陷阱进行远程矛打击。</p>"
 				}
 			}
 		},
