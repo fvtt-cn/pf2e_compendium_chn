@@ -18,12 +18,21 @@
             "path": "items",
             "converter": "npc-item-translation"
         },
-		"publicNotes":"system.details.publicNotes",
-		"stealth":"system.attributes.stealth.details",
-		"disable":"system.details.disable",
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "disable": "system.details.disable",
         "hazarddescription": "system.details.description",
-		"reset":"system.details.reset",
-		"routine":"system.details.routine"
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealthdetails":"system.attributes.stealth.details",
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
 	},
 	"entries": {
 		"Accursed Forge-Spurned": {
@@ -51,20 +60,9 @@
 			"name": "巴鲁沙克·依克瓦什玛 Barushak Il-Varashma",
 			"data":{},
 			"items":{
-				"cCgcYbkQbcYvPXDB":{
-					"name":"+1 冒险者服装 Clothing (Explorer's)",
-					"description":"<p>探索服装足够结实，可以被增强以保护你，即便它不是盔甲。它有多种形式，但最常见的种类看起来像牧师服，僧侣服装或巫师的长袍，因为这三个职业都尽可能避免穿盔甲。</p>"
-				},
-				"qIJ5KclBfbHjmuzk":{
-					"name":"跨位面记录 The Extraplanar Registry",
-					"description":"<p>这本书名为跨位面记录（The ExtraplanarRegistry），内文由炼狱语书写而成。任何能够阅读这部细致的著作的人都会在关于异界生物（outsiders）的回忆知识（Recall Knowledge）检定中获得+2 物品加值，然而这本书中还包含着更具价值的内容——它的书页中包含了 3 种仪式的完整内容：<em>@Compendium[pf2e.spells-srd.7DN13ILADW2N9Z1t]{通神术 Commune}</em>、<em>@Compendium[pf2e.spells-srd.2CNqkt2s2IYkVnv6]{禁锢术 Imprisonment}</em>和<em>@Compendium[pf2e.spells-srd.vgy00hnqxN9VoeoF]{异界盟友 Planar Ally}</em>。跨位面记录价值 1500gp。</p>"
-				},
-				"X5l0KEVyuHvwriD3":{
-					"name":"有红三一标记的优质镣铐 Manacles (Good) (Marked with the Symbol of the Scarlet Triad)",
-					"description":"<p>根据生物的大小和你应用的手铐数量，你可以将一个愿意或以其他方式怜悯你的人铐起来，花费约10-30秒时间。一个双腿被铐住的的两足生物在速度上受到-15尺环境减值，并且双手被铐住的两手生物必须在任何进行操作动作的时候进行@Check[type:flat|dc:5]检定，否则该动作将失败。根据手铐约束手的紧密程度，该DC可能更高。被铐到到静止物体上的生物不能移动。对于具有更多或更少肢体的生物，由GM确定手铐有什么效果。将一个生物从优质手铐中解放出来需要五次成功的@Check[type:thievery|dc:32|traits:action:pick-a-lock]检定</p>"
-				},
-				"omPyHCBiVsSmjHtN":{
-					"name":"能开启每扇宿舍门和奴隶镣铐的钥匙 Keys to Each Dormitory Door and Slave Manacles"
+				"yggAbFpFmUKjj7Bz":{
+					"name":"汲取连结物品 Drain Bonded Item",
+					"description":"<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 巴鲁沙克本回合还未行动</p>\n<hr />\n<p><strong>效果</strong> 本回合，巴鲁沙克能施放一个他在当日已经施放过的已准备法术而不会消耗法术位。他仍需施法（CasttheSpell）并满足法术的其他要求。</p>"
 				},
 				"0z7Fxpm5UuCECxe5":{
 					"name":"高效抓捕 Efficient Capture",
@@ -77,6 +75,9 @@
 				"MYgT9dmiyGDI48Hx":{
 					"name":"高阶召唤师 Superlative Summoner",
 					"description":"<p>若其他生物的反应动作（reaction）将要打断巴鲁沙克的施法动作（spellcasting action），巴鲁沙克能尝试 1 次 @Check[type:flat|dc:15]检定。若他检定成功，则该动作不会被打断。</p>"
+				},
+				"omPyHCBiVsSmjHtN":{
+					"name":"能开启每扇宿舍门和奴隶镣铐的钥匙"
 				}
 			}
 		},
@@ -359,10 +360,6 @@
 					"name":"带有红三一徽记的手铐（普通）",
 					"description":"<p>根据生物的大小和你应用的手铐数量，你可以将一个愿意或以其他方式怜悯你的人铐起来，花费约10-30秒时间。一个双腿被铐住的的两足生物在速度上受到-15尺环境减值，并且双手被铐住的两手生物必须在任何进行操作动作的时候进行DC 5的纯粹检定，否则该动作将失败。根据手铐约束手的紧密程度，该DC可能更高。被铐到到静止物体上的生物不能移动。对于具有更多或更少肢体的生物，由GM确定手铐有什么效果。将一个生物从普通手铐中解放出来需要四次成功的DC27贼活检定</p>"
 				},
-				"rVWeTEhRpSWDcpVJ":{
-					"name":"法术书 Spellbook",
-					"description":"<p>法术书包含学习和准备各种法术所必需的书面知识，这是法师的必需品（通常会免费获得一本）和寻求学习额外法术的其他施法者的有用奢侈品。每本法术书最多可以容纳100个法术。此处列出的是一本空白的法术书的价格。</p>"
-				},
 				"jZFyZg8r1I1EWoBY":{
 					"name":"适时扰乱 Timely Distraction",
 					"description":"<p><strong>触发</strong> 有霍博克能看到且处于霍博克近战触及范围内的生物对霍博克作出近战打击，但是攻击失手</p>\n<hr />\n<p><strong>效果</strong> 霍博克对该生物尝试@Compendium[pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feint}。若此时并非霍博克的回合而且他的虚招成功，那么该效果适用于他的下个回合</p>"
@@ -370,10 +367,6 @@
 				"hZNyCnxdujLVMKqb":{
 					"name":"寻找突破口 Identify an Opening",
 					"description":"<p><strong>需求</strong> 有生物在对抗霍博克的下次近战攻击时陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}</p>\n<hr />\n<p><strong>效果</strong> 霍博克指出该生物防御上的漏洞。霍博克的所有听到并理解该指令的盟友对该生物尝试的全部近战攻击均会将该生物视为陷入措手不及（flat-footed），持续至霍博克的下个回合开始为止。</p>"
-				},
-				"Oqy1IXCABemD4A9g":{
-					"description":"<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>",
-					"name":"偷袭 Sneak Attack"
 				},
 				"kn7uZpzyYXn8aUO7":{
 					"name":"手铐的钥匙"
