@@ -1645,97 +1645,400 @@
             "publicNotes": "<p>Quara will likely become an ally of the heroes, as she knows useful partners when she sees them. She's interested in avenging her father and sister, but she knows that whatever goal her father was pursuing with the Ochre Fulcrum Lens could prove critical in freeing Yldaris from Belcorra's control forever. She has learned that the ochre lens was only one of three lenses that Belcorra entrusted to allies in the region centuries ago, and she sets the heroes on the trail of recovering them and finding out more. The most important lead Quara provides to the heroes is that her father was headed toward an ancient vault at the edge of the lake, so the heroes can find out more at that location.</p>\n<p>The heroes might see drow as enemies and assault Yldaris. In this case, Quara does her best to protect her people, relying on the shootist training that still lingers in her quick fingers. She likely won't trust the heroes with any information after such aggressions, but they might find some clues in her quarters.</p>",
             "blurb": "Female drow leader",
             "data":{},
-            "items":{}
+            "items":{
+                "Commanding Aura":{
+                    "name": "Commanding Aura",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Drow around Quara are heartened by her presence. Her drow allies in the aura gain a +1 status bonus to attack rolls and skill checks.</p>"
+                },
+                "Deny Advantage":{
+                    "name": "Deny Advantage",
+                    "description": "<p>Quara isn't flat-footed to hidden, undetected, or flanking creatures of 11th level or lower, or to creatures of 11th level or lower using Surprise Attack.</p>"
+                },
+                "Evasion":{
+                    "name": "Evasion",
+                    "description": "<p>When Quara rolls a success on a Reflex saving throw, she gets a critical success instead.</p>"
+                },
+                "Defensive Shooter":{
+                    "name": "Defensive Shooter",
+                    "description": "<p>Quara's ranged attacks don't trigger reactions.</p>"
+                },
+                "Poison Weapon":{
+                    "name": "Poison Weapon",
+                    "description": "<p><strong>Requirements</strong> Quara is holding a piercing or slashing weapon and has a free hand</p>\n<hr />\n<p><strong>Effect</strong> Quara applies poison to the weapon.</p>"
+                },
+                "Reloading Trick":{
+                    "name": "Reloading Trick",
+                    "description": "<p><strong>Requirements</strong> Quara is holding an unloaded repeating hand crossbow</p>\n<hr />\n<p><strong>Effect</strong> Quara Interacts to reload the repeating hand crossbow and Strikes with it.</p>"
+                },
+                "Shootist's Draw":{
+                    "name": "Shootist's Draw",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Quara Interacts to draw a loaded repeating hand crossbow and Strikes with it, or Strikes with a loaded repeating hand crossbow she's holding and then Interacts to stow it.</p>"
+                },
+                "Skirmishing Dash":{
+                    "name": "Skirmishing Dash",
+                    "description": "<p>Quara Strides or Steps, then Strikes. This Strike deals an additional [[/r {3d6}]]{3d6 damage}.</p>"
+                },
+                "Stupor Poison":{
+                    "name": "Stupor Poison",
+                    "description": "<p>Stupor poison is a more potent distillation of @UUID[Compendium.pf2e.equipment-srd.zo0ophqfKunJFxZN]{Lethargy Poison}. Further exposure to stupor poison doesn't require the target to attempt additional saving throws; only failing a saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20|traits:alchemical,incapacitation,injury,poison,sleep]</p>\n<p><strong>Maximum Duration</strong> 6 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} and flat-footed (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/r 1d6 #hours]]{1d6 hours})</p>"
+                }
+            }
         },
         "Reaper Skull Puffball": {
             "name": "Reaper Skull Puffball",
             "publicNotes": "<p>Many benign puffball fungi cling to the detritus of forest floors in Darklands caverns. These fungi's giant versions are more mobile and dangerous.</p>\n<hr />\n<p>When this fungus detects prey, its tendrils writhe and exude a paralytic toxin.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Motion Sense 60 feet":{
+                    "name": "Motion Sense 60 feet",
+                    "description": "<p>The monster senses motion through vibrations and air movement.</p>"
+                },
+                "Spore Explosion":{
+                    "name": "Spore Explosion",
+                    "description": "<p>When the reaper skull puffball dies, it explodes, dealing [[/r {8d8}[poison]]]{8d8 poison damage} to each creature in a @Template[type:emanation|distance:20] (@Check[type:fortitude|dc:28|basic:true] save).</p>\n<p>Creatures that fail their save are exposed to skull rot.</p>"
+                },
+                "Paralysis":{
+                    "name": "Paralysis",
+                    "description": "<p>A creature hit by the puffball's tendril must succeed a @Check[type:fortitude|dc:28] save or become @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}. The paralyzed creature can attempt a new save at the end of each of its turns.</p>"
+                },
+                "Skull Rot":{
+                    "name": "Skull Rot",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:28]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d8}[poison]]]{1d8 poison damage} plus @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d8}[poison]]]{2d8 poison damage} plus enfeebled 2 and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {3d8}[poison]]]{3d8 poison damage} plus enfeebled 2 and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} ([[/br 1d4 #Duration Skull Rot]]{1d4 rounds})</p>"
+                },
+                "Spore Cloud":{
+                    "name": "Spore Cloud",
+                    "description": "<p>The puffball releases a @Template[type:cone|distance:30] of spores that deals [[/r {4d8}[poison]]]{4d8 poison damage} (@Check[type:fortitude|dc:28|basic:true] save) to creatures in the cone.</p>\n<p>Creatures that fail this save are also exposed to skull rot.</p>"
+                }
+            }
         },
         "Rusty Grate Pit": {
             "name": "Rusty Grate Pit",
             "disable": "<p>@Check[type:thievery|dc:18|name:Harmlessly Trigger Trap] to harmlessly trigger the trap by nudging the gate or the dangling winch, or @Check[type:thievery|dc:24|name:Stabilize Grate] to stabilize the grate so it doesn't collapse.</p>",
             "hazarddescription": "<p>The rusty grate covers a pit that's 10 feet in diameter and 40 feet deep.</p>",
-            "reset": "",
-            "stealthdetails": "",
             "data":{},
-            "items":{}
+            "items":{
+                "Pitfall":{
+                    "name": "Pitfall",
+                    "description": "<p><strong>Trigger</strong> A creature walks onto the grate</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature falls in and takes falling damage ([[/r {20}[bludgeoning]]]{20 bludgeoning damage}). That creature can use the @UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{Grab an Edge} reaction to avoid falling.</p>\n<p>Whether or not the creature Grabs an Edge, the rusty winch above crashes down atop the triggering creature, dealing [[/r {3d10}[bludgeoning]]]{3d10 bludgeoning damage} and dislodging its grip (@Check[type:reflex|dc:24|basic:true] save). The creature can still try to Grab an Edge again.</p>"
+                }
+            }
         },
         "Ryta": {
             "name": "Ryta",
             "blurb": "Female ratfolk lutenist",
             "data":{},
-            "items":{}
+            "items":{
+                "Dance Moves":{
+                    "name": "Dance Moves",
+                    "description": "<p><strong>Trigger</strong> Ryta is targeted with a melee or ranged attack by an attacker she can see.</p>\n<hr />\n<p><strong>Effect</strong> Ryta Steps and gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+                },
+                "Cheek Pouches":{
+                    "name": "Cheek Pouches",
+                    "description": "<p>Ryta has stretchy cheek pouches that can store up to 1 cubic foot of objects (though no more than four light items). She can remove or store an item using the Interact action. As long as she has at least one object in her cheek pouches, her speech is noticeably difficult to understand.</p>"
+                },
+                "Swarming":{
+                    "name": "Swarming",
+                    "description": "<p>Ryta can end her movement in the same square as an ally that also has this ability. Only two such creatures can share the same space.</p>"
+                },
+                "Vocal Warm-Up":{
+                    "name": "Vocal Warm-Up",
+                    "description": "<p>Ryta sets up devastating vibrations that echo in her throat and her cheek pouches. Until the start of her next turn, her fangs Strikes deal an additional [[/r {2d8}[sonic]]]{2d8 sonic damage}.</p>\n<p>Ryta can't use Vocal Warm-up if she has an object in her cheek pouches.</p>"
+                }
+            }
         },
         "Sacuishu": {
             "name": "Sacuishu",
             "blurb": "Female will-o'-wisp spy",
             "data":{},
-            "items":{}
+            "items":{
+                "Glow":{
+                    "name": "Glow",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Sacuishu is naturally @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} but glows with a sickly green light, casting bright light in the aura and making her visible.</p>"
+                },
+                "Magic Immunity":{
+                    "name": "Magic Immunity",
+                    "description": "<p>Sacuishu is immune to all spells except <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em>, <em>@UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{Glitterdust}</em>, <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{Maze}</em>.</p>"
+                },
+                "Feed on Magic":{
+                    "name": "Feed on Magic",
+                    "description": "<p><strong>Requirement</strong> A creature who can cast spells is within 15 feet of Sacuishu</p>\n<hr />\n<p><strong>Effect</strong> Sacuishu feeds on the creature's magic. Sacuishu regains [[/r {2d8}[healing]]]{2d8 Hit Points}, and the target must attempt a @Check[type:will|dc:28] save. The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time the target Casts a Spell before the start of the Sacuishu's next turn, the spell is disrupted unless the target succeeds at a @Check[type:flat|dc:15] check.</p>\n<p><strong>Failure</strong> As success, but the effect applies the first time the target Casts a Spell within the next minute.</p>\n<p><strong>Critical Failure</strong> As success, but the effect applies each time the target Casts a Spell within the next minute. In addition, Sacuishu doubles the Hit Points it regains</p>"
+                },
+                "Go Dark":{
+                    "name": "Go Dark",
+                    "description": "<p>Sacuishu extinguishes her glow, becoming @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}. She can end this effect with another use of this action. If she uses her shock attack while invisible, the arc of electricity lets any observer determine her location, making Sacuishu @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to observers only until she moves.</p>"
+                }
+            }
         },
         "Salaisa Malthulas": {
             "name": "Salaisa Malthulas",
             "blurb": "Female drow head warden",
             "data":{},
-            "items":{}
+            "items":{
+                "Attack Now!":{
+                    "name": "Attack Now!",
+                    "description": "<p>Salaisa shouts, and a drow ally within 30 feet that can see or hear Salaisa makes a melee or ranged Strike as a reaction.</p>"
+                },
+                "Storm of Blades":{
+                    "name": "Storm of Blades",
+                    "description": "<p>Salaisa Strides up to her Speed. She can make up to three longsword Strikes at any point during this movement, each against a different target within reach. These attacks count toward her multiple attack penalty, but the multiple attack penalty doesn't increase until after she makes all of her attacks. If she moves half her speed or less during , that movement doesn't trigger reactions.</p>"
+                },
+                "Stupor Poison":{
+                    "name": "Stupor Poison",
+                    "description": "<p>Stupor poison is a more potent distillation of @UUID[Compendium.pf2e.equipment-srd.zo0ophqfKunJFxZN]{Lethargy Poison}. Further exposure to stupor poison doesn't require the target to attempt additional saving throws; only failing a saving throw against an ongoing exposure can progress its stage.</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20|traits:alchemical,incapacitation,injury,poison,sleep]</p>\n<p><strong>Maximum Duration</strong> 6 hours</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} and flat-footed (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} with no Perception check to wake up (1 round)</p>\n<p><strong>Stage 4</strong> unconscious with no Perception check to wake up ([[/r 1d6 #hours]]{1d6 hours})</p>"
+                }
+            }
         },
         "Sarglagon (AV)": {
             "name": "Sarglagon (AV)",
             "publicNotes": "<p>Sarglagons dwell in Hell's myriad waterways, lakes, and oceans. They serve as guardians of the Academy of Lies-the repository of secrets in Stygia, the fifth layer of Hell. Sarglagons breathe water and air with equal ease, and can move through water, land, and even air with uncanny swiftness. Few fiends travel the waterways of the multiverse, but where a river crosses the planes, odds are sarglagons have traveled it to further their infernal machinations. The only body of water they avoid is the River Styx, as the fiends have yet to develop any defense against that waterway's memory-sapping qualities. Mortal spellcasters sometimes bind sarglagons as guardians of precious secrets or treasures, particularly in aquatic areas. Most strangely, sarglagons sometimes act as unnerving caretakers to mortals who have no idea what they did to earn their unwanted protectors' attention. The constant uninvited vigilance of these devils is often disturbing and stifling to their wards.</p>\n<hr />\n<p>Each type of devil plays a particular role in Hell's bureaucracies and hierarchies, though some have far more specialized functions than others.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "equipment-Fragment of Urevian's Pendant":{
+                    "name": "Fragment of Urevian's Pendant"
+                },
+                "strike-Tentacle Arm":{
+                    "name": "Tentacle Arm"
+                },
+                "Heavy Aura":{
+                    "name": "Heavy Aura",
+                    "description": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that enters the heavy aura must attempt a @Check[type:will|dc:23] save. It is then temporarily immune for 10 minutes.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.D5mg6Tc7Jzrj6ro7]{Encumbered} while it remains in the area. If the creature is already encumbered, it is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} while it remains within the aura.</p>\n<p><strong>Critical Failure</strong> As failure, but the effect persists for 3 rounds after leaving the aura.</p>"
+                },
+                "Stygian Guardian":{
+                    "name": "Stygian Guardian",
+                    "description": "<p><strong>Trigger</strong> A creature or object within the sarglagon's reach is targeted by an attack</p>\n<hr />\n<p><strong>Effect</strong> The sarglagon interposes themself, giving the creature or object @UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{Standard Cover} against the attack (+2 circumstance bonus to AC), or @UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{Greater Cover} (+4 circumstance bonus to AC) if the sarglagon was already granting it lesser cover.</p>"
+                },
+                "Drown":{
+                    "name": "Drown",
+                    "description": "<p>The sarglagon conjures murky water to fill the lungs of a creature that can't breathe water within 30 feet. The target must attempt a @Check[type:fortitude|dc:26] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target coughs up water and is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Failure</strong> The target is holding its breath. The only action it can take is to attempt a Fortitude save against Drown to expel the water, which is a single action.</p>\n<p><strong>Critical Failure</strong> The target falls @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and begins suffocating. If the target succeeds at its Fortitude save while suffocating, it coughs up the water and can breathe again.</p>"
+                },
+                "Sarglagon Venom":{
+                    "name": "Sarglagon Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong>[[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong>[[/r {3d6}[poison]]]{3d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
+                }
+            }
         },
         "Scalathrax": {
             "name": "Scalathrax",
             "publicNotes": "<p>These slippery, scaly horrors dwell in remote cave networks in the Darklands, preferring to nest in narrow fissures. When on the hunt, they flick barbs from their long legs, or spray down their foes with a clear, toxic oil. The same oil coats the scalathrax's body, all of which is quite flammable-whether it's coating a victim or the scalathrax itself.</p>\n<p>While a scalathrax appears feral, it's more intelligent than it seems and is capable of speaking in a wet, slithery voice. The vast majority of scalathraxes are foul-tempered and quick to anger, and most of them enjoy killing. It's possible to forge an alliance with a scalathrax, but doing so requires either constant bribes of new creatures to kill or a particularly intimidating personality-scalathraxes often respect bullies, seeing in them a mirror of their own cruel values.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "strike-Leg Quill":{
+                    "name": "Leg Quill"
+                },
+                "Oily Scales":{
+                    "name": "Oily Scales",
+                    "description": "<p>A scalathrax constantly sweats a glistening oil that makes it exceptionally slick. It treats the results of Acrobatics checks to @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze} or of any skill check to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} as one degree of success greater than the rolled result.</p>\n<p>A scalathrax loses this benefit for 1 minute after it takes any amount of fire damage.</p>"
+                },
+                "Scalathrax Venom":{
+                    "name": "Scalathrax Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 2</strong> clumsy 1 and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (1 round)</p>\n<p><strong>Stage 3</strong> clumsy 1 and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} (1 round)</p>"
+                },
+                "Spray Toxic Oil":{
+                    "name": "Spray Toxic Oil",
+                    "description": "<p>The scalathrax disgorges a gout of toxic oil from its mouth in a @Template[type:cone|distance:15]. Creatures in the area must attempt a @Check[type:reflex|dc:21|traits:damaging-effect] save.</p>\n<p>The scalathrax can't use Toxic Oil Spray again for [[/br 1d4 #Recharge Spray Toxic Oil]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes [[/r {1d8}[poison]]]{1d8 poison damage}.</p>\n<p><strong>Failure</strong> The creature takes [[/r {2d8}[poison]]]{2d8 poison damage}. For 1 minute, the creature gains weakness to fire 5, and whenever the creature critically fails with an attack roll with a wielded weapon, it drops the weapon.</p>\n<p><strong>Critical Failure</strong> As failure, but [[/r {4d8}[poison]]]{4d8 poison damage}.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.75B7z49jfQbWcSy9]{Effect: Spray Toxic Oil}</p>"
+                }
+            }
         },
         "Seugathi Guard": {
             "name": "Seugathi Guard",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "blurb": "Seugathi servant",
             "data":{},
-            "items":{}
+            "items":{
+                "Command Confusion":{
+                    "name": "Command Confusion",
+                    "description": "<p><strong>Trigger</strong> A creature fails its save against the seugathi's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> The seugathi determines who the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM.</p>\n<p>If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[type:will|dc:21] save; on a success, its target is determined randomly as normal for confusion, and on a critical success the target is no longer confused.</p>"
+                },
+                "Mindfog Aura":{
+                    "name": "Mindfog Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura must succeed at a @Check[type:will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. A seugathi can suppress or activate this aura as a with the concentrate trait.</p>"
+                },
+                "Envenom Weapon":{
+                    "name": "Envenom Weapon",
+                    "description": "<p>The seugathi applies their seugathi venom to one weapon they wield.</p>"
+                },
+                "Magic Item Mastery":{
+                    "name": "Magic Item Mastery",
+                    "description": "<p>A seugathi can Cast a Spell from a magic item even if the spell isn't on their spell list. All such spells are occult spells and use the seugathi's innate spell DC and attack modifier.</p>"
+                },
+                "Seugathi Venom":{
+                    "name": "Seugathi Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+                }
+            }
         },
         "Seugathi Reality Warper": {
             "name": "Seugathi Reality Warper",
             "publicNotes": "<p>Seugathi reality warpers create and destroy inhospitable environments on a small scale by manipulating the forces of raw chaos. A neothelid might spawn such a seugathi to create habitats for unique slaves or guests, or to destroy the ecosystem of a troublesome species. Darklands scholars refer to reality warpers as veterans in the seugathi ranks, but they're more accurately compared to aggressive landscape architects.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Command Confusion":{
+                    "name": "Command Confusion",
+                    "description": "<p><strong>Trigger</strong> A creature fails its save against the seugathi's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> The seugathi determines who the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM.</p>\n<p>If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[type:will|dc:25] save; on a success, its target is determined randomly as normal for confusion, and on a critical success the target is no longer confused.</p>"
+                },
+                "Mindfog Aura":{
+                    "name": "Mindfog Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura must succeed at a @Check[type:will|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. A seugathi can suppress or activate this aura as a with the concentrate trait.</p>"
+                },
+                "Envenom Weapon":{
+                    "name": "Envenom Weapon",
+                    "description": "<p>The seugathi applies their seugathi venom to one weapon they wield.</p>"
+                },
+                "Magic Item Mastery":{
+                    "name": "Magic Item Mastery",
+                    "description": "<p>A seugathi can Cast a Spell from a magic item even if the spell isn't on their spell list. All such spells are occult spells and use the seugathi's innate spell DC and attack modifier.</p>"
+                },
+                "Seugathi Venom":{
+                    "name": "Seugathi Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+                },
+                "Warp Reality":{
+                    "name": "Warp Reality",
+                    "description": "<p>The seugathi bends reality in their choice of a @Template[type:emanation|distance:10] or a @Template[type:line|distance:60], altering the terrain of the area. The terrain becomes a different type of terrain (such as aquatic, arctic, or desert) and becomes normal or difficult terrain, as the seugathi chooses. Structures, general geographic features, and creatures in the area aren't transformed, but creatures in the area take [[/r {5d6}[chaotic]]]{5d6 chaotic damage} (@Check[type:fortitude|dc:28|basic:true] save) as reality tries to bend them along with the terrain.</p>\n<p>Though changes to the area are permanent, the natural environment might eventually revert the land back to its original state (aquatic areas drain, arctic areas thaw, and so on).</p>"
+                }
+            }
         },
         "Seugathi Researcher": {
             "name": "Seugathi Researcher",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "blurb": "Seugathi servant",
             "data":{},
-            "items":{}
+            "items":{
+                "equipment-Writing Slate":{
+                    "name": "Writing Slate"
+                },
+                "Command Confusion":{
+                    "name": "Command Confusion",
+                    "description": "<p><strong>Trigger</strong> A creature fails its save against the seugathi's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> The seugathi determines who the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM.</p>\n<p>If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[type:will|dc:21] save; on a success, its target is determined randomly as normal for confusion, and on a critical success the target is no longer confused.</p>"
+                },
+                "Mindfog Aura":{
+                    "name": "Mindfog Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura must succeed at a @Check[type:will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. A seugathi can suppress or activate this aura as a with the concentrate trait.</p>"
+                },
+                "Envenom Weapon":{
+                    "name": "Envenom Weapon",
+                    "description": "<p>The seugathi applies their seugathi venom to one weapon they wield.</p>"
+                },
+                "Magic Item Mastery":{
+                    "name": "Magic Item Mastery",
+                    "description": "<p>A seugathi can Cast a Spell from a magic item even if the spell isn't on their spell list. All such spells are occult spells and use the seugathi's innate spell DC and attack modifier.</p>"
+                },
+                "Seugathi Venom":{
+                    "name": "Seugathi Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+                }
+            }
         },
         "Seugathi Researcher (C20)": {
             "name": "Seugathi Researcher (C20)",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "blurb": "Seugathi servant",
             "data":{},
-            "items":{}
+            "items":{
+                "equipment-Research Book":{
+                    "name": "Research Book"
+                },
+                "equipment-Quill":{
+                    "name": "Quill"
+                },
+                "equipment-Key":{
+                    "name": "Key",
+                    "description": "<p>key to area <strong>C25</strong></p>"
+                },
+                "Command Confusion":{
+                    "name": "Command Confusion",
+                    "description": "<p><strong>Trigger</strong> A creature fails its save against the seugathi's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> The seugathi determines who the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM.</p>\n<p>If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[type:will|dc:21] save; on a success, its target is determined randomly as normal for confusion, and on a critical success the target is no longer confused.</p>"
+                },
+                "Mindfog Aura":{
+                    "name": "Mindfog Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura must succeed at a @Check[type:will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. A seugathi can suppress or activate this aura as a with the concentrate trait.</p>"
+                },
+                "Envenom Weapon":{
+                    "name": "Envenom Weapon",
+                    "description": "<p>The seugathi applies their seugathi venom to one weapon they wield.</p>"
+                },
+                "Magic Item Mastery":{
+                    "name": "Magic Item Mastery",
+                    "description": "<p>A seugathi can Cast a Spell from a magic item even if the spell isn't on their spell list. All such spells are occult spells and use the seugathi's innate spell DC and attack modifier.</p>"
+                },
+                "Seugathi Venom":{
+                    "name": "Seugathi Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+                }
+            }
         },
         "Seugathi Servant": {
             "name": "Seugathi Servant",
             "publicNotes": "<p>The most common seugathis spawned by neothelids are seugathi servants. Their masters equip them with tools useful in their tasks (often a wand and a weapon), and they rarely value other material things beyond their usefulness in completing their imprinted mission.</p>\n<hr />\n<p>The wicked, alien @UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{Neothelids} impregnate themselves through ritualistic magic to produce wormlike servitor creatures called seugathis. These creatures spawn with a strong psychic drive to complete some task on behalf of the neothelids' far-reaching plans. These directives are diverse, strange, and usually cruel toward humanoid life.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Command Confusion":{
+                    "name": "Command Confusion",
+                    "description": "<p><strong>Trigger</strong> A creature fails its save against the seugathi's mindfog aura</p>\n<hr />\n<p><strong>Effect</strong> The seugathi determines who the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} creature attacks for that round, instead of the target being randomly determined by the GM.</p>\n<p>If the chosen target is the confused creature's ally, the creature can immediately attempt a @Check[type:will|dc:21] save; on a success, its target is determined randomly as normal for confusion, and on a critical success the target is no longer confused.</p>"
+                },
+                "Mindfog Aura":{
+                    "name": "Mindfog Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that starts its turn in the aura must succeed at a @Check[type:will|dc:21] save or become @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round; on a success, that creature is temporarily immune for 1 minute. A seugathi can suppress or activate this aura as a with the concentrate trait.</p>"
+                },
+                "Envenom Weapon":{
+                    "name": "Envenom Weapon",
+                    "description": "<p>The seugathi applies their seugathi venom to one weapon they wield.</p>"
+                },
+                "Magic Item Mastery":{
+                    "name": "Magic Item Mastery",
+                    "description": "<p>A seugathi can Cast a Spell from a magic item even if the spell isn't on their spell list. All such spells are occult spells and use the seugathi's innate spell DC and attack modifier.</p>"
+                },
+                "Seugathi Venom":{
+                    "name": "Seugathi Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>"
+                }
+            }
         },
         "Shanrigol Behemoth": {
             "name": "Shanrigol Behemoth",
             "publicNotes": "<p>Shanrigols that grow with the additions of many living victims can become truly enormous in size and pose a greater danger in their expanding hunting territories. Subterranean communities have collapsed entire tunnels to prevent the creatures from reaching their settlements.</p>\n<p>Many shanrigol behemoths absorb enough brain matter to form crude intelligences and take a serpentine or humanoid shape. They're more varied in their abilities than shanrigol heaps, as they often gain abilities from their constituent creatures. The shanrigol behemoth presented below contains flesh from driders and urdefhans, giving it a web attack and necrotic decay ability. Not all shanrigol behemoths have these two abilities, but should have other abilities to replace them.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Necrotic Decay":{
+                    "name": "Necrotic Decay",
+                    "description": "<p>When the shanrigol behemoth dies, its flesh rots away and sublimates into a foul-smelling gas that fills a @Template[type:emanation|distance:5] around the body. This gas deals [[/r {9d6}[negative]]]{9d6 negative damage} to creatures in this area as their flesh curdles and rots as well (@Check[type:fortitude|dc:27|basic:true] save).</p>"
+                },
+                "Sapping Squeeze":{
+                    "name": "Sapping Squeeze",
+                    "description": "<p><strong>Requirements</strong> The shanrigol has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> The shanrigol squeezes the life essence from its target, dealing [[/r {1d10+11}[bludgeoning]]]{1d10+11 bludgeoning} and @Localize[PF2E.PersistentDamage.Bleed1d6.success] (@Check[type:fortitude|dc:25|basic:true] save).</p>\n<p>The shanrigol regains temporary Hit Points equal to half the amount of bludgeoning damage a single target takes; these temporary Hit Points last for 1 minute.</p>"
+                },
+                "Shred Flesh":{
+                    "name": "Shred Flesh",
+                    "description": "<p>A shanrigol behemoth's attacks brutally rend its foes. Creatures critically hit by the shanrigol's fleshy slap Strike take an additional @Localize[PF2E.PersistentDamage.Bleed2d6.success] and are @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for as long as they are bleeding.</p>"
+                },
+                "Undulating Step":{
+                    "name": "Undulating Step",
+                    "description": "<p>The shanrigol separates its flesh from its bones to fit through small spaces. It Strides, ignoring difficult terrain and fitting through tight spaces as though it were a Tiny creature.</p>\n<p>It can't use any actions other than Undulating Step until it occupies an area large enough for its normal form.</p>"
+                },
+                "Web Trap":{
+                    "name": "Web Trap",
+                    "description": "<p>A creature hit by the shanrigol behemoth's web attack is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it can Escape (DC 25).</p>"
+                }
+            }
         },
         "Shanrigol Heap": {
             "name": "Shanrigol Heap",
             "publicNotes": "<p>The most basic and common type of shanrigol is called, based on its general shape, a shanrigol heap. These amalgamations of warped flesh and shattered bone establish hunting grounds by accident rather than design, remaining where prey has been plentiful in the past so they can grow larger and larger as they add to their jumbled forms. Only rare fleshwarpers create these abominations willingly, as they ignore all commands and containment to seek out prey.</p>\n<hr />\n<p>Fleshwarpers, regardless of their origin or training, create a shocking amount of waste. When the discarded remnants of aberrant flesh are heaped together with an accidental mixture of alchemical compounds or odious energy, the mass can quicken and regain life. Without the guidance of a fleshwarper, these aberrant body parts form into a shanrigol, a mess of bone, muscle, and sinew.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Sapping Squeeze":{
+                    "name": "Sapping Squeeze",
+                    "description": "<p><strong>Requirements</strong> The shanrigol has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The shanrigol squeezes the life essence from its target, dealing [[/r {1d6+5}[bludgeoning]]]{1d6+5 bludgeoning} and @Localize[PF2E.PersistentDamage.Bleed1d4.success] (@Check[type:fortitude|dc:18|basic:true] save).</p>\n<p>The shanrigol regains temporary Hit Points equal to half the amount of bludgeoning damage a single target takes; these temporary Hit Points last for 1 minute.</p>"
+                },
+                "Shred Flesh":{
+                    "name": "Shred Flesh",
+                    "description": "<p>A shanrigol rips flesh away from targets in great chunks. Creatures critically hit by the shanrigol's fleshy slap Strike take an additional @Localize[PF2E.PersistentDamage.Bleed1d6.success] and are @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for as long as they are bleeding.</p>"
+                },
+                "Undulating Step":{
+                    "name": "Undulating Step",
+                    "description": "<p>The shanrigol separates its flesh from its bones to fit through small spaces. It Strides, ignoring difficult terrain and fitting through tight spaces as though it were a Tiny creature. It can't use any actions other than until it occupies an area large enough for its normal form.</p>"
+                }
+            }
         },
         "Shuffling Scythe Blades": {
             "name": "Shuffling Scythe Blades",
@@ -1745,14 +2048,52 @@
             "routine": "<p>(7 actions) The trap spends 1 action for each of its blades; a blade makes a scythe Strike against each creature in its region. With its final action, the trap uses Scythe Shuffle. Reduce the number of actions the trap can take by 1 for each destroyed blade.</p>",
             "stealthdetails": "<p>(expert)</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Dicing Scythes":{
+                    "name": "Dicing Scythes",
+                    "description": "<p><strong>Trigger</strong> A creature steps in the 15-footby-25-foot area where the branching hallways connect</p>\n<hr />\n<p><strong>Effect</strong> The trap uses Scythe Shuffle; each blade makes a scythe Strike against each creature in its region, then it uses Scythe Shuffle again. The trap then rolls for initiative.</p>"
+                },
+                "Scythe Shuffle":{
+                    "name": "Scythe Shuffle",
+                    "description": "<p>The blades travel erratically throughout the hallway's branches, out of sight under the floors or behind the walls. For each blade, roll [[/br 1d4 #Direction Scythe Blade]]{1d4} to determine the region in which it next makes scythe Strikes. A creature can @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} (@Check[type:perception|dc:22|traits:action:seek]) to learn clues about blades in the region they're currently occupying. On a success, the creature knows how many blades are currently in its region.</p>\n<p>1. Main intersection (the 15-foot-by-25-foot area where the hallways connect, as marked on area <strong>B20</strong>)</p>\n<p>2. North branch (from the main intersection to the secret door to area <strong>B14</strong>)</p>\n<p>3. Central hall (from the main intersection to the secret door to area <strong>B24</strong>)</p>\n<p>4. South branch (from the main intersection to the wall shared with area <strong>B25</strong>)</p>"
+                },
+                "strike-Scythe":{
+                    "name": "巨镰 Scythe",
+                    "description": "<p>No MAP applies to strikes made by scythe attacks</p>"
+                },
+                "No MAP":{
+                    "name": "No MAP",
+                    "description": "<p>The Scythe Strikes do not apply a MAP.</p>"
+                }
+            }
         },
         "Siora Fallowglade": {
             "name": "Siora Fallowglade",
             "publicNotes": "<p>Shadows that spend long amounts of time on the Shadow Plane and absorb its magic become greater shadows.</p>\n<hr />\n<p>The mysterious undead known as shadows lurk in dark places and feed on those who stray too far from the light. Those who parley with shadows, typically by keeping them at bay with a glowing weapon, may learn great secrets, for they are ideal spies.</p>",
             "blurb": "Female greater shadow",
             "data":{},
-            "items":{}
+            "items":{
+                "Light Vulnerability":{
+                    "name": "Light Vulnerability",
+                    "description": "<p>An object shedding magical light (such as from the <em>@UUID[Compendium.pf2e.spells-srd.WBmvzNDfpwka3qT4]{Light}</em> spell) is treated as magical when used to attack the shadow.</p>"
+                },
+                "Mark for Death":{
+                    "name": "Mark for Death",
+                    "description": "<p><strong>Requirements</strong> Siora can see the target she intends to mark</p>\n<hr />\n<p><strong>Effect</strong> Siora designates a single target as her mark. She gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} her target, and her spectral hand Strikes against her target gain the deadly d8 weapon trait.</p>"
+                },
+                "Shadow Spawn":{
+                    "name": "Shadow Spawn",
+                    "description": "<p>When a creature's shadow is pulled free by Steal Shadow, it becomes a @UUID[Compendium.pf2e.pathfinder-bestiary.XrmHgbKgcHDi4OnK]{Shadow Spawn} under the command of the shadow that created it. This shadow spawn doesn't have Steal Shadow. If the creature the shadow spawn was pulled from dies, the shadow spawn becomes a full-fledged, autonomous shadow. If the creature recovers from its @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeeblement}, its shadow returns to it and the shadow spawn is extinguished.</p>"
+                },
+                "Slink in Shadows":{
+                    "name": "Slink in Shadows",
+                    "description": "<p>The shadow can @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} or end its @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak} in a creature's or object's shadow.</p>"
+                },
+                "Steal Shadow":{
+                    "name": "Steal Shadow",
+                    "description": "<p><strong>Requirement</strong> The shadow hit a living creature with a shadow hand Strike on its previous action.</p>\n<hr />\n<p><strong>Effect</strong> The shadow pulls at the target's shadow, making the creature @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} on a critical hit). This is cumulative with other enfeebled conditions from shadows, to a maximum of enfeebled 4. If this increases a creature's enfeebled value to 3 or more, the target's shadow is separated from its body. Enfeebled from Steal Shadow decreases by 1 every hour.</p>"
+                }
+            }
         },
         "Skeleton Guard (AV-Graveyard)": {
             "name": "Skeleton Guard (AV-Graveyard)",
@@ -1764,22 +2105,68 @@
             "name": "Specter (AV C2)",
             "publicNotes": "<p>When an evil mortal creature dies, it sometimes returns to haunt the area of its death as a specter, a hateful remnant, always seeking to slay others-particularly humanoids-in an attempt to distribute its pain among as many souls as it can. A specter maintains a strange semblance of its prior identity, but with a corrupted sense of purpose. It cannot be reasoned with.</p>\n<p>A specter denied the opportunity to harm living humanoids grows increasingly agonized and irrational, akin to the mindset of a starving person forever denied a release from agony through death.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "strike-Vile Touch":{
+                    "name": "Vile Touch"
+                },
+                "strike-Vile Blowgun":{
+                    "name": "Vile Blowgun"
+                },
+                "telepathy (with spectral thralls only)":{
+                    "name": "telepathy (with spectral thralls only)"
+                },
+                "Frightful Presence":{
+                    "name": "气势凶猛 Frightful Presence",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "Pain Starvation":{
+                    "name": "Pain Starvation",
+                    "description": "<p>A specter that goes for more than a month without dealing negative damage to a living humanoid becomes desperate and almost feral. It changes alignment from lawful evil to chaotic evil, loses control of any corrupted thralls it might have, and becomes @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened}. It can use its additional action only to make vile touch Strikes against humanoid targets. At the end of any turn in which it deals any amount of negative damage to a living humanoid, it reverts to lawful evil and is no longer quickened, but any thralls it lost control of remain free.</p>"
+                },
+                "Sunlight Powerlessness":{
+                    "name": "Sunlight Powerlessness",
+                    "description": "<p>A specter caught in sunlight is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} for as long as it remains in the sunlight.</p>"
+                },
+                "Spectral Corruption":{
+                    "name": "Spectral Corruption",
+                    "description": "<p>The specter makes a vile touch Strike. If it damages a living creature, the specter gains 5 temporary Hit Points and the target creature must attempt a @Check[type:will|dc:24] save to avoid becoming corrupted.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to spectral corruption for 1 minute.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p>\n<p><strong>Failure</strong> The creature succumbs to the corruption and becomes a spectral thrall temporarily. The creature is @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} by the specter, obeying the specter's telepathic or spoken orders, though a spectral thrall does not obey obviously self-destructive orders. This lasts until the end of the thrall's next turn, at which point it is no longer controlled but becomes @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p>\n<p><strong>Critical Failure</strong> As failure, but the duration is unlimited. The thrall can attempt a new Will save at the end of each of its turns; on a success, it is no longer controlled by the specter but becomes @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} for 1 hour.</p>"
+                }
+            }
         },
         "Spellvoid": {
             "name": "Spellvoid",
             "publicNotes": "<p>Malevolent balls of colored light, will-o'-wisps haunt lonely marshes and forests where they lure unsuspecting travelers into danger. Will-o'-wisps can vary the color and illumination they shed, and delight in mimicking bobbing lanterns or distant fires to draw lost or disoriented travelers off of safe trails. They can extinguish their illumination entirely to become invisible, and they enjoy doing so once their victims are wholly lost and have realized that the bobbing light in the distance isn't, in fact, leading them to safety. Even invisible, however, a will-o'-wisp rarely ventures far from its target, as it feasts upon the panic and dread felt by its victims.</p>\n<p>Beneath its glow, a will-o'-wisp's body is a spongy ball approximately 1 foot in diameter and weighing less than 5 pounds. Although most will-o'-wisps are merely translucent, featureless orbs, gaining definition only in the shifting illumination they create, a few have dark mottling that makes them resemble a skull when viewed closely. Will-o'-wisps have no need for mundane nourishment, and in fact lack the ability to consume matter of any kind; they find all the sustenance they need in the terror of nearby creatures. For this reason, they like to work alongside undead that produce terror in their victims. Will-o'-wisps are long-lived, if not effectively immortal, and they have good memories. A cowed or defeated will-o'-wisp can be a good source of lore and information, though acquiring such cooperation from such a sinister monster is no easy feat.</p>\n<p>Will-o'-wisps inhabit desolate swamps and forests and are generally active at twilight and after dark. They are therefore reluctant to lead victims into immediately fatal areas such as deadfalls, but instead prefer hazards where their victims suffer over a long time, such as pockets of stale or poisonous air, patches of quicksand, and dens of bigger monsters. According to will-o'-wisps, different types of fear have subtle differences in flavor. The lurking dread in the pit of the stomach that gnaws at those who slowly become aware of the fact that they're lost produces a much different taste than the sudden stark terror of imminent death in the face of a towering monster. Because of this, will-o'-wisps try to vary the ways in which they induce terror in their prey, to ensure they don't tire of certain flavors of fear.</p>\n<hr />\n<p>Feeding not on fear but on the ephemeral potentiality of magic lodged in the minds of their victims, these will-o'-wisps are a bane to casters of all types. They usually leave non-spellcasters alone and sometimes follow adventuring groups without spellcasters on the hope of being led to creatures they find more appetizing.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Glow":{
+                    "name": "Glow",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A will-o'-wisp is itself naturally invisible, but glows with a colored light, casting bright light in the aura and making it visible.</p>"
+                },
+                "Magic Immunity":{
+                    "name": "Magic Immunity",
+                    "description": "<p>A will-o'-wisp is immune to all spells except <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em>, <em>@UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{Glitterdust}</em>, <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{Maze}</em>.</p>"
+                },
+                "Feed on Magic":{
+                    "name": "Feed on Magic",
+                    "description": "<p><strong>Requirement</strong> A creature who can cast spells is within 15 feet of the spellvoid</p>\n<hr />\n<p><strong>Effect</strong> The spellvoid feeds on the creature's magic. The spellvoid regains [[/r {2d8}[healing]]]{2d8 Hit Points}, and the target must attempt a @Check[type:will|dc:24] save.</p>\n<p>The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The first time the target Casts a Spell before the start of the spellvoid's next turn, the spell is disrupted unless the target succeeds at a @Check[type:flat|dc:15] check.</p>\n<p><strong>Failure</strong> As success, but the effect applies the first time the target Casts a Spell within the next minute.</p>\n<p><strong>Critical Failure</strong> As success, but the effect applies each time the target Casts a Spell within the next minute. In addition, the spellvoid doubles the Hit Points it regains.</p>"
+                },
+                "Go Dark":{
+                    "name": "Go Dark",
+                    "description": "<p>The will-o'-wisp extinguishes its glow, becoming invisible. It can end this effect with another use of this action. If it uses its shock attack while invisible, the arc of electricity lets any observer determine its location, making the will-o'-wisp only hidden to all observers until it moves.</p>"
+                }
+            }
         },
         "Spike Launcher": {
             "name": "Spike Launcher",
             "disable": "<p>@Check[type:thievery|dc:16|name:Disable Launcher|traits:mechanical,trap] to disable one of the four launchers or @Check[type:acrobatics|dc:12|name:Avoid Trip Line|traits:mechanical,trap] to step over a trip line (this doesn't disarm the trap, but avoids triggering it)</p>",
             "hazarddescription": "<p>A jagged spike of metal shoots from a hidden launcher.</p>",
-            "reset": "",
-            "stealthdetails": "",
             "data":{},
-            "items":{}
+            "items":{
+                "Spike":{
+                    "name": "钉刺 Spike",
+                    "description": "<p><strong>Trigger</strong> A creature crosses one of the trip lines</p>\n<hr />\n<p><strong>Effect</strong> A spike launches along the trip line's path against the triggering creature, making a ranged Strike.</p>"
+                }
+            }
         },
         "Stonescale Spirits": {
             "name": "Stonescale Spirits",
@@ -1789,31 +2176,104 @@
             "routine": "<p>(1 action) The spirits swoop together toward one creature in area <strong>A7</strong> who's @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}, instilling feelings of betrayal and confusion. The target takes [[/r {1d10+4}[mental]]]{1d10+4 mental damage} (@Check[type:will|dc:18|basic:true] save).</p>",
             "stealthdetails": "<p>(trained)</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Confusing Confrontation":{
+                    "name": "Confusing Confrontation",
+                    "description": "<p><strong>Trigger</strong> A creature enters a square either fully or partially filled with rubble in the middle of the room</p>\n<hr />\n<p><strong>Effect</strong> Six ghostly kobolds surge out of the rubble with eerie yowls. Each creature in area <strong>A7</strong> must attempt a @Check[type:will|dc:18] save with the following results. The haunt then rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected, is temporarily immune to Confusing Confrontation for 24 hours, and realizes that a display of intimidating dominance might quell the ghostly kobolds' assault.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 1 round and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} for 2 rounds and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+                }
+            }
         },
         "Urdefhan Blood Mage": {
             "name": "Urdefhan Blood Mage",
             "publicNotes": "<p>Hardened masters of occult power, urdefhan blood mages trade their blood for magical might. A heavily scarred blood mage is held in esteem by their fellow urdefhans, as it shows they have survived many bargains with eerie occult patrons.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Necrotic Decay":{
+                    "name": "Necrotic Decay",
+                    "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[type:emanation|distance:5] around the body.</p>\n<p>This gas deals [[/r {8d6}[negative]]]{8d6 negative damage} to creatures in this area as their flesh curdles and rots as well (@Check[type:fortitude|dc:24|basic:true] save).</p>"
+                },
+                "Blood Offering":{
+                    "name": "Blood Offering",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The blood mage cuts themself and takes [[/r {8}[slashing]]]{8 slashing damage}. If the blood mage's next action is to Cast a Spell, the action can't be disrupted, and if the spell has a range, the blood mage can increase that spell's range by 30 feet.</p>"
+                },
+                "Wicked Bite":{
+                    "name": "Wicked Bite",
+                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[type:fortitude|dc:26] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains [[/r {10}[healing]]]{10 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains [[/r {20}[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[type:fortitude|dc:26|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                }
+            }
         },
         "Urdefhan Death Scout": {
             "name": "Urdefhan Death Scout",
             "publicNotes": "<p>Death scouts train as spies and assassins for their cult. Other urdefhans scorn their stealthy methods, but none can argue with their results.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Necrotic Decay":{
+                    "name": "Necrotic Decay",
+                    "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[type:emanation|distance:5] around the body.</p>\n<p>This gas deals [[/r {6d6}[negative]]]{6d6 negative damage} to creatures in this area as their flesh curdles and rots as well (@Check[type:fortitude|dc:23|basic:true] save).</p>"
+                },
+                "Shauth Bite":{
+                    "name": "Shauth Bite",
+                    "description": "<p>The death scout deals an additional @Localize[PF2E.PersistentDamage.Bleed1d6.success] with shauth blades and can use their Wicked Bite through magical shauth weapon Strikes.</p>"
+                },
+                "Sneak Attack":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>The death scout deals an extra 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "Wicked Bite":{
+                    "name": "Wicked Bite",
+                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[type:fortitude|dc:24] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains [[/r {5}[healing]]]{5 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains [[/r {10}[healing]]]{10 HP}).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[type:fortitude|dc:24|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                }
+            }
         },
         "Urdefhan Lasher": {
             "name": "Urdefhan Lasher",
             "publicNotes": "<p>Trained from a young age with the strange and powerful shauth lashes, urdefhan lashers would rather die than retreat from combat.</p>\n<hr />\n<p>Translucent-skinned scourges of the Darklands, urdefhans are remorseless killers and foot soldiers of the world's end.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Necrotic Decay":{
+                    "name": "Necrotic Decay",
+                    "description": "<p>When an urdefhan dies, its invisible flesh quickly rots away and sublimates into a foul-smelling gas that fills a @Template[type:emanation|distance:5] around the body.</p>\n<p>This gas deals [[/r {7d6}[negative]]]{7d6 negative damage} to creatures in this area as their flesh curdles and rots as well (@Check[type:fortitude|dc:24|basic:true] save).</p>"
+                },
+                "Constrict":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d8+7}[slashing]]]{1d8+7 slashing damage}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "Shauth Seize":{
+                    "name": "Shauth Seize",
+                    "description": "<p>The lasher gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab} ability with a shauth lash and can use their Wicked Bite through magical shauth weapon Strikes.</p>"
+                },
+                "Wicked Bite":{
+                    "name": "Wicked Bite",
+                    "description": "<p><strong>Requirements</strong> The urdefhan damaged a creature with a jaws Strike on its last action</p>\n<hr />\n<p><strong>Effect</strong> The urdefhan maintains contact, turning the creature's flesh translucent around the site of the injury. The urdefhan chooses one of two options, each of which requires a fortitude save. If the jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> @Check[type:fortitude|dc:25] The urdefhan drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and the urdefhan regains [[/r {10}[healing]]]{10 HP} (or, on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} and the urdefhan regains [[/r {20}[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> (necromancy) @Check[type:fortitude|dc:25|traits:necromancy] The urdefhan draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                }
+            }
         },
         "Urevian": {
             "name": "Urevian",
             "blurb": "Male phistophilus field commander",
             "data":{},
-            "items":{}
+            "items":{
+                "Distracting Declaration":{
+                    "name": "Distracting Declaration",
+                    "description": "<p>Urevian keeps a few sly words at the ready to distract enemies. He always uses Deception for initiative.</p>"
+                },
+                "Ward Contract":{
+                    "name": "Ward Contract",
+                    "description": "<p>Any signed contract Urevian carries (including any draped over his horns) is immune to damage from creatures other than Urevian. In addition, Urevian is immune to mental effects that would make him alter, nullify, or destroy a contract.</p>"
+                },
+                "Draft Contract":{
+                    "name": "Draft Contract",
+                    "description": "<p>Urevian produces an infernal contract for a single living mortal. This contract can grant a wide range of abilities and effects, akin to the power of a <em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em> spell but fulfilled to the letter by Urevian. To receive any of those benefits, the mortal must willingly sign its true name to the contract. At that point, the mortal's soul is bound to Urevian and to Hell.</p>\n<p>While the contract is in effect, the mortal can't be restored to life except by wish or similar magic. If the mortal is restored to life by those means, Urevian knows which mortal came to life and can locate the creature or creatures who restored the mortal to life for 1 year, gaining the effects of a <em>@UUID[Compendium.pf2e.spells-srd.LQzlKbYjZSMFQawP]{Locate}</em> spell with unlimited range. Avoiding the terms of an infernal contract is difficult and often dangerous.</p>"
+                },
+                "Infernal Wound":{
+                    "name": "Infernal Wound",
+                    "description": "<p>Urevian's Strikes also deal @Localize[PF2E.PersistentDamage.Bleed2d6.success] that resists attempts to heal them.</p>\n<p>The flat check to stop the bleeding starts at @Check[type:flat|dc:20]. The DC is reduced to @Check[type:flat|dc:15] only if the bleeding creature or an ally successfully assists with the recovery. The DC to @UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{Administer First Aid} to a creature with an infernal wound is increased by 5.</p>\n<p>A spellcaster or item attempting to use healing magic on a creature suffering from an infernal wound must succeed at a DC 28 counteract check or the magic fails to heal the creature.</p>"
+                },
+                "Right of Inspection":{
+                    "name": "Right of Inspection",
+                    "description": "<p>Urevian can cast his innate <em>@UUID[Compendium.pf2e.spells-srd.r784cIz17eWujtQj]{Scrying}</em> spell at will, but only to target a creature with which he has a contract, a specific creature named in a contract he has, or a descendant of any of those creatures. The outcome of the target's saving throw is one step worse than the result it rolled.</p>"
+                }
+            }
         },
         "Vengeful Furnace": {
             "name": "Vengeful Furnace",
@@ -1823,38 +2283,162 @@
             "routine": "<p>(3 actions) The burning ghosts lash at a random @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied} creature in the room (or any random creature, if no creatures in the room are stupefied).</p>",
             "stealthdetails": "<p>(expert)</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Burn Knowledge":{
+                    "name": "Burn Knowledge",
+                    "description": "<p>The target of the haunt's initial Ghostly Assault, as well as any creature later hit by a burning lash Strike, loses random memories, as if these thoughts were incinerated like pages in a burning book.</p>\n<p>The creature must attempt a @Check[type:will|dc:23] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute while they forget random memories, as if these thoughts were incinerated like pages in a burning book.</p>\n<p><strong>Failure</strong> As success, but the stupefied 1 condition persists for 24 hours.</p>\n<p><strong>Critical Failure</strong> As failure, but @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}.</p>"
+                },
+                "strike-Burning Lash":{
+                    "name": "Burning Lash"
+                },
+                "Ghostly Assault":{
+                    "name": "Ghostly Assault",
+                    "description": "<p><strong>Trigger</strong> A living creature with an Intelligence score of 15 or higher enters the room, or any creature touches the furnace</p>\n<hr />\n<p><strong>Effect</strong> Burning ghosts burst from the furnace, exposing the triggering creature to the haunt's burn knowledge effect. The haunt rolls initiative.</p>"
+                }
+            }
         },
         "Vischari": {
             "name": "Vischari",
             "blurb": "Female urdefhan pugilist",
             "data":{},
-            "items":{}
+            "items":{
+                "Necrotic Decay":{
+                    "name": "Necrotic Decay",
+                    "description": "<p>When Vischari dies, her invisible flesh rots away and sublimates into a foul-smelling gas that fills a @Template[type:emanation|distance:5] around her body. This gas deals [[/r {7d6}[negative]]]{7d6 negative damage} to creatures in this area as their flesh curdles and rots (@Check[type:fortitude|dc:24|basic:true] save).</p>"
+                },
+                "Immobilizing Blow":{
+                    "name": "Immobilizing Blow",
+                    "description": "<p>Vischari makes a fist Strike that shuts down her target's motor control. The target must make a @Check[type:fortitude|dc:25] save. If the Strike was a critical hit, treat the target's save result as one degree worse. The target is then temporarily immune for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is paralyzed for 1 minute. At the end of each of its turns, it can attempt a new Fortitude save to reduce the remaining duration by 1 round or end it entirely on a critical success.</p>"
+                },
+                "Wicked Bite":{
+                    "name": "Wicked Bite",
+                    "description": "<p><strong>Requirements</strong> Vischari damaged a creature with a jaws Strike on her last action</p>\n<hr />\n<p><strong>Effect</strong> Vischari maintains contact, turning the creature's flesh translucent around the site of the injury. Vischari chooses one of two options, each of which requires the target to attempt a @Check[type:fortitude|dc:25] save. If her jaws Strike was a critical hit, the creature suffers both effects, using the same save result for both.</p>\n<ul>\n<li><strong>Drain Blood</strong> Vischari drinks some of the creature's blood. On a failed save, the creature is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} and Vischari regains [[/r {10}[healing]]]{10 HP} (on a critical failure, it's @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} and Vischari regains [[/r {20}[healing]]]{20 HP}).</li>\n<li><strong>Drain Vitality</strong> Vischari draws out some of the creature's vital essence. The creature becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 hour on a failed save (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} for 1 hour on a critical failure).</li>\n</ul>"
+                }
+            }
         },
         "Viscous Black Pudding": {
             "name": "Viscous Black Pudding",
             "publicNotes": "<p>Most often found below ground, these oozes scour caves for objects to dissolve with their corrosive secretions. This caustic acid is particularly dangerous to creatures that attack a pudding, as it can quickly damage and destroy gear.</p>\n<hr />\n<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
             "blurb": "Variant black pudding",
             "data":{},
-            "items":{}
+            "items":{
+                "Motion Sense 60 feet":{
+                    "name": "Motion Sense 60 feet",
+                    "description": "<p>A black pudding can sense nearby motion through vibration and air movement.</p>"
+                },
+                "Adjust Shape":{
+                    "name": "Adjust Shape",
+                    "description": "<p>A viscous black pudding is thicker than most black puddings and can heap its body upon itself or spread itself out again. The pudding changes its size to Medium, Large, or Huge. If the pudding is Medium, its density reduces its Speeds to 10 feet, but this ability doesn't otherwise change its Strikes or its Speed. If the viscous black pudding Splits, both of the new puddings have the same size as it had at that time, until they Adjust their Shape.</p>"
+                },
+                "Corrosive Mass":{
+                    "name": "Corrosive Mass",
+                    "description": "<p>A creature that hits the pudding with a metal or wooden weapon must succeed at a @Check[type:reflex|dc:22] save or the weapon takes [[/r {2d6}[acid]]]{2d6 acid damage} (after dealing damage to the black pudding as normal). Thrown weapons and ammunition take this damage automatically with no save.</p>"
+                },
+                "Split":{
+                    "name": "Split",
+                    "description": "<p>When the black pudding is hit by an attack that would deal slashing or piercing damage and has 10 or more HP, it splits into two identical puddings, each with half the original's HP.</p>\n<p>One pudding is in the same space as the original, and the other appears in an adjacent unoccupied space. If no adjacent space is unoccupied, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push).</p>"
+                },
+                "Constrict":{
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r {1d8+7}[bludgeoning]+{1d6}[acid]]]{1d8+7 bludgeoning damage plus 1d6 acid damage}, @Check[type:fortitude|dc:26|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "Corrosive Touch":{
+                    "name": "Corrosive Touch",
+                    "description": "<p>When the pudding hits a creature with its pseudopod, any acid damage is dealt to the creature's armor or clothing as well as the creature.</p>"
+                },
+                "Suction":{
+                    "name": "Suction",
+                    "description": "<p>The pudding can climb on ceilings and other inverted surfaces, though such surfaces are difficult terrain for it.</p>"
+                }
+            }
         },
         "Voidbracken Chuul": {
             "name": "Voidbracken Chuul",
             "blurb": "Variant chuul",
             "data":{},
-            "items":{}
+            "items":{
+                "Constrict (Grabbed by Claws only)":{
+                    "name": "Constrict (Grabbed by Claws only)",
+                    "description": "<p>[[/r {1d8+12}[bludgeoning]]]{1d8+12 bludgeoning damage}, DC 28</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "Draining Venom":{
+                    "name": "Draining Venom",
+                    "description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:28]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> drained 1 (1 round)</p>\n<p><strong>Stage 2</strong> drained 2 (1 round)</p>"
+                },
+                "Mind Feeding":{
+                    "name": "Mind Feeding",
+                    "description": "<p><strong>Requirements</strong> A drained creature is grabbed by the chuul's tentacles</p>\n<hr />\n<p><strong>Effect</strong> The creature takes [[/r {3d6}[mental]]]{3d6 mental damage}.</p>"
+                },
+                "Swamp Stride":{
+                    "name": "Swamp Stride",
+                    "description": "<p>The Voidbracken chuul ignores difficult terrain and greater difficult terrain in swamps.</p>"
+                },
+                "Tentacle Transfer":{
+                    "name": "Tentacle Transfer",
+                    "description": "<p><strong>Requirements</strong> The Voidbracken chuul has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> The chuul transfers the grabbed creature from its claws to its tentacles, or vice versa. The creature is exposed to the chuul's draining venom when transferred into the tentacles and at the start of each of the chuul's turns if it remains grabbed by the tentacles.</p>"
+                }
+            }
         },
         "Voidglutton": {
             "name": "Voidglutton",
             "publicNotes": "<p>A voidglutton is a powerful type of will-o'-wisp that haunts a site where misery dwells-such as a graveyard, prison camp, or recent battlefield. A voidglutton appears as a seething sphere of glowing eyes swirling around an empty black vortex 4 feet wide. From within this vortex extend long, semi-transparent tendrils that end in seven-fingered, needled hands.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "strike-Ectoplasmic Web":{
+                    "name": "Ectoplasmic Web"
+                },
+                "Glow":{
+                    "name": "Glow",
+                    "description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The tips of a voidglutton's fingers and its seven eyes glow, casting bright light in the area and making it visible if it was @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}.</p>"
+                },
+                "Consume Light":{
+                    "name": "Consume Light",
+                    "description": "<p><strong>Trigger</strong> The voidglutton casts <em>@UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{Darkness}</em></p>\n<hr />\n<p><strong>Effect</strong> The voidglutton extinguishes its Glow as part of Casting the Spell. It becomes @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} as long as it remains in the area of darkness. If the voidglutton uses a hostile action, its invisibility ends as soon as the hostile action is completed.</p>"
+                },
+                "Ectoplasmic Web Trap":{
+                    "name": "Ectoplasmic Web Trap",
+                    "description": "<p>A creature hit by the voidglutton's ectoplasmic web trap is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it succeeds at a DC 26 check to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}. Ectoplasmic Web Trap can immobilize incorporeal creatures.</p>"
+                },
+                "Fearful Strike":{
+                    "name": "Fearful Strike",
+                    "description": "<p>When the voidglutton damages a creature with its claw Strike, the creature must succeed at a @Check[type:will|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+                },
+                "Feed on Fear":{
+                    "name": "Feed on Fear",
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirement</strong> An enemy is affected by a fear effect or has the frightened or dying condition, and is within 25 feet of the voidglutton</p>\n<hr />\n<p><strong>Effect</strong> The voidglutton feeds on the creature's terror. It regains [[/r {3d4}[healing]]]{3d4 Hit Points} and its Glow reignites if it had been extinguished.</p>\n<p>It cannot use Consume Light again for [[/br 1d4 #Recharge Consume Light]]{1d4 rounds}, as it is too glutted on fear to suppress its Glow.</p>"
+                },
+                "Magic Immunity":{
+                    "name": "Magic Immunity",
+                    "description": "<p>A voidglutton is immune to all spells except <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em>, <em>@UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{Glitterdust}</em>, <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{Maze}</em>, and spells with the light trait.</p>"
+                }
+            }
         },
         "Volluk Azrinae": {
             "name": "Volluk Azrinae",
             "blurb": "Male worm that walks occultist",
             "data":{},
-            "items":{}
+            "items":{
+                "strike-Tendril":{
+                    "name": "卷须 Tendril",
+                    "description": "<p><strong>Damage:</strong> @Localize[PF2E.PersistentDamage.Piercing2d8+8.success]</p>\n<p><strong>Critical Damage:</strong> @Localize[PF2E.PersistentDamage.Piercing2d8+8.criticalSuccess]</p>"
+                },
+                "Discorporate":{
+                    "name": "Discorporate",
+                    "description": "<p>Slow-moving leeches give the heroes 2 rounds, rather than 1 round, to dispatch the fleeing vermin before they escape.</p>\n<hr />\n<p>When the worm that walks is reduced to 0 HP, it discorporates and the component worms that make up its body disperse in every direction. If even a single worm escapes, the worm that walks will eventually re-form using a process that typically takes [[/br 1d10 #Re-Form]]{1d10 days}.</p>\n<p>While the exact circumstances and surroundings determine how long the worm that walks's foes have to dispatch the fleeing worms before they escape, usually its foes have only a single round.</p>\n<p>Typically, this requires the application of an area effect or splash weapon within 1 round to the space where the worm that walks collapsed. After any amount of area or splash damage is dealt to that space, the character dealing the damage must attempt a @Check[type:flat|dc:15] check. Each subsequent area or splash damage effect performed on the area reduces the DC of this flat check by 2, to a minimum of DC 5. If any of these flat checks succeed, none of the worms escape, and the worm that walks is destroyed permanently.</p>\n<p>At the GM's discretion, clever means of trapping or otherwise detaining the vermin may extend the time allowed to finish off the worm that walks.</p>"
+                },
+                "Hateful Memories":{
+                    "name": "Hateful Memories",
+                    "description": "<p>If Volluk can see an accurate depiction of his former appearance as a living drow at the start of his turn, he must attempt a @Check[type:will|dc:28] save or become filled with self-loathing and become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round.</p>"
+                },
+                "Squirming Embrace":{
+                    "name": "Squirming Embrace",
+                    "description": "<p>Volluk Strides, ending his movement sharing a space with a creature, and deals [[/r {3d8}[piercing]]]{3d8 piercing damage} to the creature. The creature can attempt a @Check[type:reflex|dc:23|basic:true] save.</p>"
+                },
+                "Swarm Shape":{
+                    "name": "Swarm Shape",
+                    "description": "<p>Volluk collapses into a shapeless swarm of leeches. He drops all held, worn, and carried items. While discorporated, he can't use attack actions and can't cast spells, but he can move through areas small enough for his individual leeches to fit without having to @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze}. He can use the same action to coalesce back into his normal form.</p>"
+                }
+            }
         },
         "Watching Wall": {
             "name": "Watching Wall",
@@ -1864,26 +2448,96 @@
             "routine": "<p>(1 action) The eye glances about, and those it can see (whether in area <strong>C4</strong> or outside of it) take [[/r {4d6}[mental]]]{4d6 mental damage} (@Check[type:will|dc:21|basic:true|traits:haunt] save) as fears of being watched impart ripples of pain.</p>\n<p>A creature that takes mental damage from this effect doesn't reduce their @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} value at the end of their next turn.</p>",
             "stealthdetails": "<p>(expert)</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Someone is Watching":{
+                    "name": "Someone is Watching",
+                    "description": "<p><strong>Trigger</strong> A living creature remains in area <strong>C4</strong> for at least 1 round</p>\n<hr />\n<p><strong>Effect</strong> An overwhelming wave of paranoia fills area <strong>C4</strong>. Each creature in the room must attempt a @Check[type:will|dc:25] save, with the following results. An eerie red eye then opens in the center of the western wall, looking about the room, and the haunt rolls initiative.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} and feels like someone or something is watching them for as long as they remain frightened.</p>\n<p><strong>Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and treats no one as an ally as long as they remain frightened.</p>\n<p><strong>Critical Failure</strong> The creature becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3} and is @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} as long as they remain frightened.</p>"
+                }
+            }
         },
         "Will-o'-the-Deep": {
             "name": "Will-o'-the-Deep",
             "publicNotes": "<p>Malevolent balls of colored light, will-o'-wisps haunt lonely marshes and forests where they lure unsuspecting travelers into danger. Will-o'-wisps can vary the color and illumination they shed, and delight in mimicking bobbing lanterns or distant fires to draw lost or disoriented travelers off of safe trails. They can extinguish their illumination entirely to become invisible, and they enjoy doing so once their victims are wholly lost and have realized that the bobbing light in the distance isn't, in fact, leading them to safety. Even invisible, however, a will-o'-wisp rarely ventures far from its target, as it feasts upon the panic and dread felt by its victims.</p>\n<p>Beneath its glow, a will-o'-wisp's body is a spongy ball approximately 1 foot in diameter and weighing less than 5 pounds. Although most will-o'-wisps are merely translucent, featureless orbs, gaining definition only in the shifting illumination they create, a few have dark mottling that makes them resemble a skull when viewed closely. Will-o'-wisps have no need for mundane nourishment, and in fact lack the ability to consume matter of any kind; they find all the sustenance they need in the terror of nearby creatures. For this reason, they like to work alongside undead that produce terror in their victims. Will-o'-wisps are long-lived, if not effectively immortal, and they have good memories. A cowed or defeated will-o'-wisp can be a good source of lore and information, though acquiring such cooperation from such a sinister monster is no easy feat.</p>\n<p>Will-o'-wisps inhabit desolate swamps and forests and are generally active at twilight and after dark. They are therefore reluctant to lead victims into immediately fatal areas such as deadfalls, but instead prefer hazards where their victims suffer over a long time, such as pockets of stale or poisonous air, patches of quicksand, and dens of bigger monsters. According to will-o'-wisps, different types of fear have subtle differences in flavor. The lurking dread in the pit of the stomach that gnaws at those who slowly become aware of the fact that they're lost produces a much different taste than the sudden stark terror of imminent death in the face of a towering monster. Because of this, will-o'-wisps try to vary the ways in which they induce terror in their prey, to ensure they don't tire of certain flavors of fear.</p>\n<hr />\n<p>Aquatic will-o'-wisps, will-o'-the-deeps dwell within oceans and even terrestrial lakes, and strings of them can create profoundly beautiful vistas. Their propensity to draw ships toward reefs and whirlpools or to swarm smaller vessels makes them a deadly hazard.</p>",
             "data":{},
-            "items":{}
+            "items":{
+                "Glow":{
+                    "name": "Glow",
+                    "description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A will-o'-wisp is itself naturally invisible, but glows with a colored light, casting bright light in the aura and making it visible.</p>"
+                },
+                "Magic Immunity":{
+                    "name": "Magic Immunity",
+                    "description": "<p>A will-o'-wisp is immune to all spells except <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em>, <em>@UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{Glitterdust}</em>, <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{Maze}</em>.</p>"
+                },
+                "Aquatic Ambush":{
+                    "name": "水下伏击 Aquatic Ambush",
+                    "description": "<p>60 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+                },
+                "Feed on Fear":{
+                    "name": "Feed on Fear",
+                    "description": "<p><strong>Requirement</strong> An enemy is under a fear effect or @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} within 15 feet of the will-o'-wisp.</p>\n<hr />\n<p><strong>Effect</strong> The will-o'wisp feeds on the creature's terror. It regains [[/r {2d4}[healing]]]{2d4 Hit Points}, and if it has Gone Dark, its glow reignites.</p>\n<p>A will-o'-wisp can take this action only once per round.</p>"
+                },
+                "Go Dark":{
+                    "name": "Go Dark",
+                    "description": "<p>The will-o'-wisp extinguishes its glow, becoming invisible. It can end this effect with another use of this action. If it uses its shock attack while invisible, the arc of electricity lets any observer determine its location, making the will-o'-wisp only hidden to all observers until it moves.</p>"
+                }
+            }
         },
         "Witchfire Warden": {
             "name": "Witchfire Warden",
             "publicNotes": "<p>Manifesting as a sinuous form wreathed in sickly green flames, this incorporeal undead forms when a powerful hag or witch dies in agony or rage. The body at the center of the flames usually resembles the witch's idealized self-image, regardless of their age and appearance at the time of their death.</p>\n<p>A witchfire often resides in a bog or swamp, which slowly blackens and decays around them. These regions are often plagued by will-o'-wisps, which seem to have an uncanny relationship with the resident witchfire. A witchfire might visit villages on the edge of their home terrain to lure away villagers, but always attack victims within earshot to make sure that other villagers hear the screams. A witchfire might also ally with other hags or witches and even join their covens, but a witchfire is incapable of forming covens entirely on their own.</p>",
             "blurb": "Witchfire",
             "data":{},
-            "items":{}
+            "items":{
+                "strike-Witchflame Caress":{
+                    "name": "Witchflame Caress"
+                },
+                "strike-Witchflame Bolt":{
+                    "name": "Witchflame Bolt"
+                },
+                "Coven":{
+                    "name": "巫团 Coven",
+                    "description": "<p>The witchfire adds <em>@UUID[Compendium.pf2e.spells-srd.Uqj344bezBq3ESdq]{Nightmare}</em>, <em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em>, <em>@UUID[Compendium.pf2e.spells-srd.0XP2XOxT9VSiXFDr]{Phantasmal Calamity}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.i1TvBID5QLyXrUCa]{Summon Entity}</em> to their coven's spells.</p>\n<p>A coven can contain one or more witchfires, but it must also include at least one living creature capable of forming a coven; three witchfires cannot form a coven.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Coven]</p>"
+                },
+                "Opportune Witchflame":{
+                    "name": "Opportune Witchflame",
+                    "description": "<p><strong>Trigger</strong> A creature makes a melee Strike against or touches the witchfire</p>\n<hr />\n<p><strong>Effect</strong> The witchfire makes a witchflame caress Strike against the triggering creature.</p>"
+                },
+                "Rejuvenation":{
+                    "name": "Rejuvenation",
+                    "description": "<p>When the witchfire warden is destroyed, and as long as any creatures remain in stasis in this room, she reforms in [[/br 1d4 #Rejuvenation]]{1d4 days} at the soot-blackened pillar, fully healed.</p>"
+                },
+                "Witchflame":{
+                    "name": "Witchflame",
+                    "description": "<p>Any creature that takes negative damage from a witchfire's Strike must attempt a @Check[type:will|dc:26] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune to witchflame for 1 hour.</p>\n<p><strong>Success</strong> The creature appears to catch fire with sickly green flames. These flames deal no damage on their own, but as long as the flames burn, the creature can't be @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} (@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} creatures are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} rather than being @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}) and gains weakness 5 to fire for 1 round.</p>\n<p><strong>Failure</strong> As success, but the effect is permanent until removed.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature gains weakness 10 to fire.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.NHwmrSyF0e8HUE3m]{Effect: Witchflame (Success)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.L7SiTshdimUPWfnB]{Effect: Witchflame (Failure)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.McawF8weCe7O81um]{Effect: Witchflame (Critical Failure)}</p>"
+                },
+                "Witchflame Kindling":{
+                    "name": "Witchflame Kindling",
+                    "description": "<p><strong>Requirements</strong> A creature within 30 feet of the witchfire burns with witchflame</p>\n<hr />\n<p><strong>Effect</strong> The witchfire's eyes and mouth glow brightly, and the witchflame on the target creature momentarily burns much hotter, dealing [[/r {5d6}[fire]+{5d6}[negative]]]{5d6 fire damage and 5d6 negative damage} to that creature (@Check[type:fortitude|dc:28|basic:true] save).</p>\n<p>The witchfire can't use Witchflame Kindling for [[/br 1d4 #Recharge Witchflame Kindling]]{1d4 rounds}.</p>"
+                }
+            }
         },
         "Wrin Sivinxi": {
             "name": "Wrin Sivinxi",
             "blurb": "Female tiefling elf oddities merchant",
             "data":{},
-            "items":{}
+            "items":{
+                "Claustrophobia":{
+                    "name": "Claustrophobia",
+                    "description": "<p>Wrin becomes overwhelmed when she's underground, or when she's in an indoor space that's smaller than 10 feet in diameter.</p>\n<p>At these times, she is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} and can't reduce her sickened condition until she's outside of the enclosed area.</p>"
+                },
+                "Spirit Sight (Precise) 30 feet":{
+                    "name": "Spirit Sight (Precise) 30 feet",
+                    "description": "<p>Wrin can see creatures with the spirit trait within 30 feet, regardless of whether they are visible to the naked eye. This ability sometimes allows Wrin to notice other supernatural auras, such as the buildup of spiritual energy atop Gauntlight.</p>"
+                },
+                "Blood Magic":{
+                    "name": "Blood Magic",
+                    "description": "<p>When Wrin casts <em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{Charm}</em>, <em>@UUID[Compendium.pf2e.spells-srd.IihxWhRfpsBgQ5jS]{Enthrall}</em>, <em>@UUID[Compendium.pf2e.spells-srd.IkS3lDGUpIOMug7v]{Faerie Dust}</em>, <em>@UUID[Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a]{Ghost Sound}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.tlSE7Ly8vi1Dgddv]{Hideous Laughter}</em>, fey glamours dance around Wrin or one target of the spell, causing them to be @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} for 1 round. Such obvious concealment can't be used to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}.</p>"
+                },
+                "Read the Stars":{
+                    "name": "Read the Stars",
+                    "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Wrin attempts to read the future in the stars by spending an hour studying the night sky-she can't use this ability during the day, on an overcast night, or when she can't otherwise study the stars. Although Wrin usually performs this reading for an individual person or to answer a pressing question she has, for the purposes of this campaign she reads the stars for the party as a whole. She attempts an Astrology Lore check, using the DC appropriate for the heroes' current level.</p>\n<hr />\n<p><strong>Critical Success</strong> The results of Wrin's astrological readings have the effects of <em>@UUID[Compendium.pf2e.spells-srd.pkcOby5prOausy1k]{Read Omens}</em>, and the heroes gain a +1 circumstance bonus to saving throws for 24 hours.</p>\n<p><strong>Success</strong> The results of Wrin's astrological readings have the effects of <em>@UUID[Compendium.pf2e.spells-srd.41TZEjhO6D1nWw2X]{Augury}</em>, but can predict results up to 24 hours into the future.</p>\n<p><strong>Failure</strong> No reading.</p>\n<p><strong>Critical Failure</strong> Wrin brushes against hostile spiritual forces, and cannot for 1 week.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.rbgXQqXbpaQCcNNx]{Effect: Read the Stars (Critical Success)}</p>"
+                }
+            }
         },
         "Ysondkhelir": {
             "name": "Ysondkhelir",
@@ -1891,7 +2545,27 @@
             "publicNotes": "<p>Slavers and raiders from the cold, windswept dimension of Leng, these malevolent humanoids range across reality in ominous black ships capable of sailing beyond the borders of dimensions and planes. Although most denizens of Leng seek slaves and plunder like any pirate, others operate as self-styled ambassadors and merchants, sowing discord with far-ranging plots. While the inscrutable denizens dress themselves in flowing robes, veils, and broad turbans to appear human, their aberrant physiology, when glimpsed, is evident from their crown of stubby horns and tentacled jaws to their furry, goat-like legs.</p>\n<p>Above the fierce captains who command the infamous black ships are an even higher caste of denizens of Leng. These cultists and musicians serve as high priests, laboring to appease the frightening gods who look down upon the Nightmare Realm with cold malice.</p>",
             "blurb": "Male denizen of leng",
             "data":{},
-            "items":{}
+            "items":{
+                "equipment-Fragment of Urevian's Pendant":{
+                    "name": "Fragment of Urevian's Pendant"
+                },
+                "hr8UQcvJzWfTNGoH":{
+                    "name": "Planar 快速愈合 5",
+                    "description": "<p>A denizen of Leng maintains a connection to Leng at all times, and when away from Leng, they have @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{Fast Healing 5}. They lose this ability on Leng or in areas where planar connections do not function. If killed, their body dissolves into nothingness in [[/br 1d4 #Dissolve Body]]{1d4 rounds}, leaving behind their equipment. A slain denizen reforms in Leng; they can be permanently killed only when their planar fast healing doesn't function.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
+                },
+                "No Breath":{
+                    "name": "No Breath",
+                    "description": "<p>Denizens of Leng don't need to breathe.</p>"
+                },
+                "Debilitating Bite":{
+                    "name": "Debilitating Bite",
+                    "description": "<p>A creature that takes damage from a denizen's bite must succeed at a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}. Each time a target fails an additional save against this ability, the condition value increases by 1 (to a maximum of Clumsy 4). This condition value decreases by 1 every 24 hours.</p>"
+                },
+                "Leng Ruby":{
+                    "name": "Leng Ruby",
+                    "description": "<p>Many denizens of Leng carry strange rubies mined from quarries in Leng. As long as a creature holds a Leng ruby that it willingly accepted as a gift or payment from a denizen of Leng, any denizen of Leng can target that creature with <em>@UUID[Compendium.pf2e.spells-srd.KSAEhNfZyXMO7Z7V]{Outcast's Curse}</em>, <em>@UUID[Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD]{Phantom Pain}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.KHnhPHL4x1AQHfbC]{Mind Reading}</em> at a range of 1 mile, and the bearer uses an outcome one degree of success worse than the result of its saving throw against <em>Outcast's Curse</em>.</p>"
+                }
+            }
         }
     }
 }
