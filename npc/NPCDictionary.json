@@ -127,6 +127,7 @@
             "baseItem": "Leather Armor",
             "name": "+1皮甲 Leather Armor"
         },
+
         "+1 longbow": {
             "baseItem": "longbow",
             "name": "+1长弓 Longbow"
@@ -269,6 +270,10 @@
             "baseItem": "Acid Flask (Moderate)",
             "name": "灌注中等强酸瓶 Acid Flask (Moderate)"
         },
+        "acid flask (moderate, infused)":{
+            "baseItem": "Acid Flask (Moderate)",
+            "name": "灌注中等强酸瓶 Acid Flask (Moderate)"
+        },
         "infused alchemist's fire (lesser)": {
             "baseItem": "Alchemist's Fire (Lesser)",
             "name": "灌注次等炽火胶 Alchemist's Fire (Lesser)"
@@ -277,7 +282,15 @@
             "baseItem": "Alchemist's Fire (Moderate)",
             "name": "灌注中等炽火胶 Alchemist's Fire (moderate)"
         },
+        "alchemist's fire (moderate, infused)":{
+            "baseItem": "Alchemist's Fire (Moderate)",
+            "name": "灌注中等炽火胶 Alchemist's Fire (moderate)"
+        },
         "infused frost vial (moderate)": {
+            "baseItem": "Frost Vial (Moderate)",
+            "name": "灌注中等霜冻瓶 Frost Vial (Moderate)"
+        },
+        "frost vial (moderate, infused)":{
             "baseItem": "Frost Vial (Moderate)",
             "name": "灌注中等霜冻瓶 Frost Vial (Moderate)"
         },
@@ -685,6 +698,10 @@
             "name": "+3高等抗力镶嵌皮甲 Studded Leather Armor",
             "baseItem": "Studded Leather Armor"
         },
+        "+1 studded leather armor":{
+            "name": "+1镶嵌皮甲 Studded Leather Armor",
+            "baseItem": "Studded Leather Armor"
+        },
         "+3 greater striking erhu bow":{
             "name": "+3高等强击二胡弓 Erhu Bow",
             "description":"<p>拉祖挥舞着它乐器上独特的镶嵌了符文的琴弓作为致命武器。他历经数十载的训练让他能够用自己的战斗呼号来增强它，因此它还能造成音波伤害。通过将琴弓的弓套固定在末端，它能将其当做一把类似短矛的武器使用，造成穿刺伤害。任何其他使用二胡琴弓的生物都无法用它造成音波伤害，但该武器依然拥有上面所列出的各项特征。如果除去符文，这把琴弓值50 gp。</p>"
@@ -1002,6 +1019,10 @@
             "name": "灌注次等瓶装闪电 Bottled Lightning (Lesser) (Infused)",
             "baseItem": "Bottled Lightning (Lesser)"
         },
+        "bottled lightning (moderate, infused)":{
+            "name": "灌注中等瓶装闪电 Bottled Lightning (Lesser) (Infused)",
+            "baseItem": "Bottled Lightning (Moderate)"
+        },
         "frost vial (lesser) (infused)":{
             "name": "灌注次等霜冻瓶 Frost Vial (Lesser) (Infused)",
             "baseItem": "Frost Vial (Lesser)"
@@ -1029,6 +1050,14 @@
         "elixir of life (lesser) (infused)":{
             "name": "灌注次等生命灵药 Elixir of Life (Lesser) (Infused)",
             "baseItem": "Elixir of Life (Lesser)"
+        },
+        "elixir of life (lesser, infused)":{
+            "name": "灌注次等生命灵药 Elixir of Life (Lesser) (Infused)",
+            "baseItem": "Elixir of Life (Lesser)"
+        },
+        "tanglefoot bag (lesser, infused)":{
+            "name": "灌注次等绊足包 Tanglefoot Bag (Lesser, Infused)",
+            "baseItem": "Tanglefoot Bag (Lesser)"
         },
         "work coat":{
             "name": "工作服 Work Coat",
@@ -1186,11 +1215,15 @@
         },
         "giant scorpion venom (applied to bolts)":{
             "name":"巨蝎毒（涂抹至矢） Giant Scorpion Venom (Applied to Bolts)",
-            "baseItem":"Giant Scorpion Venom"
+            "baseItem": "Giant Scorpion Venom"
         },
         "bloodseeker beak (affixed to rapier)":{
             "name":"觅血者之针（附着至细剑） Bloodseeker Beak (Affixed to Rapier)",
-            "baseItem":"Bloodseeker Beak"
+            "baseItem": "Bloodseeker Beak"
+        },
+        "acid energy mutagen (lesser)":{
+            "name": "次等酸液能量突变药剂 Acid Energy Mutagen (Lesser)",
+            "baseItem": "Energy Mutagen (Lesser)"
         }
     },
 
@@ -1279,7 +1312,8 @@
         "speak with plants (golden bamboo only)":"植物交谈(仅限金竹)",
         "speak with plants (same type as leshy)":"植物交谈(仅限和莱西同种类的植物)",
         "speak with plants (minkaian honeysuckle only)":"植物交谈(仅限明海种忍冬)",
-        "speak with plants (wisteria only)":"植物交谈(仅限紫藤)"
+        "speak with plants (wisteria only)":"植物交谈(仅限紫藤)",
+        "empathy link":"情感连接"
     },
 
     "Lore": {
@@ -2183,7 +2217,8 @@
         "to climb in hybrid or spider form":"在真实形态或蜘蛛形态下攀爬",
         "or jungles":"或丛林中",
         "against demons":"对抗恶魔",
-        "against devils":"对抗魔鬼"
+        "against devils":"对抗魔鬼",
+        "if hiding inside a body":"藏在一具尸体内时"
     },
 
     "Source": {
@@ -2640,7 +2675,10 @@
         "thrown debris":"投掷杂物 Thrown Debris",
         "wax stirring stick":"搅蜡棒 Wax Stirring Stick",
         "alchemist's fire":"炽火胶 Alchemist's Fire",
-        "poisoned dart":"毒镖 Poisoned Dart"
+        "poisoned dart":"毒镖 Poisoned Dart",
+        "acid flask":"强酸瓶 Acid Flask",
+        "alchemical crossbow":"炼金弩 Alchemical Crossbow",
+        "tanglefoot bag":"绊足包 Tanglefoot Bag"
     },
 
     "Trait": {}
