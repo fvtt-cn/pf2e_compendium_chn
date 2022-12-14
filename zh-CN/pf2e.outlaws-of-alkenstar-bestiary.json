@@ -42,11 +42,11 @@
 			"items":{
 				"Scoundrel's Feint":{
 					"name": "Scoundrel's Feint",
-					"value": "<p>When Lanks successfully @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feints}, his target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against his attacks until the end of his next turn. On a critical success, the target is flat‑footed against all attacks until the end of Lanks's next turn.</p>"
+					"description": "<p>When Lanks successfully @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feints}, his target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against his attacks until the end of his next turn. On a critical success, the target is flat‑footed against all attacks until the end of Lanks's next turn.</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
-					"value": "<p>Lanks deals an additional 2d6 precision damage to flat‑footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>Lanks deals an additional 2d6 precision damage to flat‑footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				}
 			}
 		},
@@ -54,86 +54,363 @@
 			"name": "Akrida",
 			"blurb": "Male Mana Wastes mutated giant termite hive boss",
 			"data":{},
-			"items":{}
+			"items":{
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>Akrida spits a gout of slimy green acid in a @Template[type:line|distance:30] that deals [[/r {5d6}[acid]]]{5d6 acid damage} (@Check[type:reflex|dc:20|basic:true]).</p>\n<p>Akrida can't use Breath Weapon again for [[/br 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>"
+				},
+				"Frantic Scramble":{
+					"name": "Frantic Scramble",
+					"description": "<p>Akrida makes three claw Strikes against a single creature within reach. His multiple attack penalty doesn't increase until after he makes all three Strikes.</p>"
+				}
+			}
 		},
 		"Alethsia": {
 			"name": "Alethsia",
 			"publicNotes": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare.</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life.</p>",
 			"blurb": "Variant elite medusa",
 			"data":{},
-			"items":{}
+			"items":{
+				"Biting Snakes":{
+					"name": "Biting Snakes",
+					"description": "<p><strong>Trigger</strong> A creature ends its turn adjacent to the medusa.</p>\n<hr />\n<p><strong>Effect</strong> The medusa makes a snake fangs Strike against the creature.</p>"
+				},
+				"Glass Gaze":{
+					"name": "Glass Gaze",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>When a creature ends its turn in the aura, it must attempt a @Check[type:fortitude|dc:25] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait.</p>"
+				},
+				"Focus Gaze":{
+					"name": "Focus Gaze",
+					"description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[type:fortitude|dc:25] save against the medusa's glass gaze. If the creature was already @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} by glass gaze before attempting its save, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently.</p>\n<p>After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn.</p>"
+				},
+				"Serpent Venom":{
+					"name": "Serpent Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d6}[poison]]]{2d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+				}
+			}
 		},
 		"Ambrost Mugland": {
 			"name": "Ambrost Mugland",
 			"blurb": "Male halfling criminal mogul",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deny Advantage":{
+					"name": "Deny Advantage",
+					"description": "<p>Mugland isn't @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to creatures of 8th level or lower that are @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using Surprise Attack.</p>"
+				},
+				"Evasion":{
+					"name": "Evasion",
+					"description": "<p>When Mugland rolls a success on a Reflex save, he gets a critical success instead.</p>"
+				},
+				"Exploit Blunder":{
+					"name": "Exploit Blunder",
+					"description": "<p><strong>Trigger</strong> A creature within 30 feet rolls a critical failure to Strike Mugland</p>\n<hr />\n<p><strong>Effect</strong> With a sneer, Mugland takes advantage of the opening. He makes a ranged dueling pistol or cane pistol Strike against the triggering creature. The creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to Mugland's attacks (including this one) until the beginning of its next turn. This attack doesn't count toward Mugland's multiple attack penalty, and his multiple attack penalty doesn't apply to this attack.</p>"
+				},
+				"Slippery Dodge":{
+					"name": "Slippery Dodge",
+					"description": "<p><strong>Trigger</strong> Mugland is hit by a Strike, but wouldn't be hit with a +2 circumstance bonus to AC</p>\n<hr />\n<p><strong>Effect</strong> Mugland gains a +2 circumstance bonus to AC against the triggering attack and the attack misses.</p>"
+				},
+				"Quick Draw":{
+					"name": "Quick Draw",
+					"description": "<p>Mugland Interacts to draw a weapon, then Strikes with that weapon.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Mugland deals an extra 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Anjelique Loveless": {
 			"name": "Anjelique Loveless",
 			"blurb": "Female elf changeling shieldmarshal deputy",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Blazons of Shared Power (attached to pistol and reinforced stock)":{
+					"name": "共享力量纹章 Blazons of Shared Power (attached to pistol and reinforced stock)",
+					"description": "<p>这些黄铜徽章有各种各样的设计，通常由用户定制成家族或行会纹章的样式。一套<em>共享力量纹章</em>分为三枚，你需要在胸前佩戴其中一枚，然后将剩余两枚附着到一对单手武器上，选择一把为主武器，另一把为副武器。这些武器可以是近战或远程武器。只要你同时持用主武器和副武器，副武器就能获得主武器上的基础符文所带来的的好处。一把武器同时只能在上面附着一套共享力量纹章。</p>"
+				},
+				"equipment-Infused Pyronite Charge":{
+					"name": "Infused Pyronite Charge"
+				},
+				"strike-Reinforced Stock":{
+					"name": "Reinforced Stock"
+				},
+				"strike-Hex Blaster":{
+					"name": "Hex Blaster"
+				},
+				"strike-Redeemer's Pistol":{
+					"name": "Redeemer's Pistol"
+				},
+				"Stubborn Resolve":{
+					"name": "Stubborn Resolve",
+					"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Anjelique fails or critically fails a saving throw</p>\n<hr />\n<p><strong>Effect</strong> Anjelique treats a critical failure as a failure, or a failure as a success.</p>"
+				},
+				"Firearms Critical Specialization":{
+					"name": "Firearms Critical Specialization",
+					"description": "<p>When Anjelique makes a critical hit with a firearm, the target must succeed a @Check[type:fortitude|dc:34] save or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+				},
+				"Lawbringer's Pursuit":{
+					"name": "Lawbringer's Pursuit",
+					"description": "<p>Anjelique Strides and then either Interacts to reload her gun or makes an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} a foe.</p>"
+				},
+				"Mentor's Curse":{
+					"name": "Mentor's Curse",
+					"description": "<p>The grace of Anjelique's champion mentor inhabits the redeemer's pistol she carries, passing judgment on her actions. If she attempts to make a redeemer's pistol Strike against a good-aligned creature, she must succeed at a @Check[type:flat|dc:5] or the gun misfires.</p>"
+				},
+				"Parting Shot":{
+					"name": "Parting Shot",
+					"description": "<p><strong>Trigger</strong> Anjelique would die or gain the dying condition</p>\n<hr />\n<p><strong>Effect</strong> Anjelique reloads her currently wielded firearm if necessary and makes a ranged Strike against an enemy, treating a successful attack as a critical hit. Whether successful or not, after making this attack, Anjelique dies.</p>"
+				},
+				"Plant Pyronite Charge":{
+					"name": "Plant Pyronite Charge",
+					"description": "<p>After making a successful melee Strike against a creature, Anjelique makes a Thievery check against the target's Perception DC. On a success, she activates and secretly plants a specially formulated sticky pyronite charge on the creature. This charge detonates after 3 rounds, dealing [[/r {4d8}[fire]]]{4d8 fire damage} to all creatures within a @Template[type:emanation|distance:10]{10-foot radius} (@Check[type:reflex|dc:34|basic:true]) and detonating any other pyronite charges within the area. After making a successful ranged Strike against a creature stuck with a planted charge, Anjelique can choose to shoot a bullet through the charge, dealing normal damage and detonating the charge immediately. A creature can use an Interact action to find and remove a planted charge from itself or an adjacent creature. These pyronite charges have the infused trait and are inert until activated by Anjelique.</p>"
+				},
+				"Tormenting Shot":{
+					"name": "Tormenting Shot",
+					"description": "<p>Anjelique makes a ranged Strike and deals an additional [[/r {2d8}[piercing]]]{2d8 piercing damage} on a hit. If the target is frightened, it also takes @Localize[PF2E.PersistentDamage.Bleed2d6.success] on a hit.</p>"
+				}
+			}
 		},
 		"Atticus": {
 			"name": "Atticus",
 			"senses": "+ 20 to Sense Motive or vs. Conceal An Object",
 			"blurb": "Male human corrupt shieldmarshal",
 			"data":{},
-			"items":{}
+			"items":{
+				"Firearms Critical Specialization":{
+					"name": "Firearms Critical Specialization",
+					"description": "<p>When the shieldmarshal makes a critical hit with a firearm weapon, the target must succeed at a @Check[type:fortitude|dc:25] save or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>"
+				},
+				"Lawbringer":{
+					"name": "Lawbringer",
+					"description": "<p>The shieldmarshal marks a foe for judgment, granting the shieldmarshal a +10-foot circumstance bonus to Speed whenever it Strides toward that creature. The shieldmarshal's Strikes against that creature deal an additional 2d8 precision damage.</p>"
+				},
+				"Reloading Strike":{
+					"name": "Reloading Strike",
+					"description": "<p>The shieldmarshal makes a melee Strike against an opponent within reach and Interacts to reload a firearm in their other hand.</p>"
+				}
+			}
 		},
 		"Brighite Herexen": {
 			"name": "Brighite Herexen",
 			"publicNotes": "<p>When a cleric rebels against their deity and dies in the grip of blasphemous rage, the heresies they committed in life may fuel their transformation into an undead herexen. Herexens seek vengeance against the deity they once worshipped, defiling temples, slaying the faithful, and rallying lesser undead and death cultists to aid them in their unholy quests. Though a herexen's divine gifts have mostly been corrupted into the vileness of undeath, they stubbornly cling to remnants of their former power, still wielding magic and armaments favored by the deity they so greatly despise.</p>\n<p>Groups of herexens that blasphemed against the same deity sometimes combine to form a mockery of a congregation, conducting blasphemous rites with something approaching euphoria. These congregations are more often formed from a blasphemous cult who practiced their heresy together in life and died together, though some gather independent herexens of the same former faith.</p>",
 			"blurb": "Elite herexen",
 			"data":{},
-			"items":{}
+			"items":{
+				"Final Blasphemy":{
+					"name": "Final Blasphemy",
+					"description": "<p>When the herexen is destroyed, it explodes in a wave of negative energy with the effects of a 3-action <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> spell (@Check[type:fortitude|dc:20|basic:true]).</p>\n<p>The herexen is destroyed, so it doesn't gain any Hit Points from this use of <em>harm</em>, and it doesn't need to have any <em>harm</em> spells remaining to use this ability.</p>"
+				},
+				"Heretic's Smite":{
+					"name": "Heretic's Smite",
+					"description": "<p>While wielding the favored weapon of its former deity (such as a light hammer for an ex-Brigh herexen), the herexen's Strikes deal an additional [[/r {1d6}[evil]]]{1d6 evil damage} against creatures that can cast divine spells.</p>"
+				}
+			}
 		},
 		"Bristlebane": {
 			"name": "Bristlebane",
 			"blurb": "Female gnoll pack leader",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Crude map of Alkenstar sewers":{
+					"name": "Crude map of Alkenstar sewers"
+				},
+				"Weeping Wounds":{
+					"name": "Weeping Wounds",
+					"description": "<p>The fluid in Bristlebane's pustules is harmful to other creatures. Whenever a creature hits Bristlebane with a melee attack, the attacker must succeed at a @Check[type:reflex|dc:14] save or take [[/r {1}[acid]]]{1 acid Damage} ([[/r {2}[acid]]]{2 acid damage} on a critical failure).</p>"
+				},
+				"Express Meal":{
+					"name": "Express Meal",
+					"description": "<p>Bristlebane makes a whip Strike against one creature within reach, on a success she pulls the target into an adjacent square. This is forced movement. She then Strikes the pulled target with her jaws. Both attacks count against her multiple attack penalty but don't apply until after both attacks.</p>"
+				},
+				"Pack Attack":{
+					"name": "Pack Attack",
+					"description": "<p>A gnoll deals 1d4 extra damage to any creature that's within reach of at least two of the gnoll's allies.</p>"
+				},
+				"Whip Whirlwind":{
+					"name": "Whip Whirlwind",
+					"description": "<p>Bristlebane uses her whip to @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm}, Strike, or @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} each creature within her reach. She can select a different action for each target. She takes a -2 circumstance penalty on the check for each action, and each action counts against her multiple attack penalty, but her multiple attack penalty doesn't increase until after all the actions.</p>"
+				}
+			}
 		},
 		"Broken Centurion": {
 			"name": "Broken Centurion",
 			"publicNotes": "<p>These mechanical constructs were created to serve as guardians in an ancient and bygone era, although exactly who made them and the secrets of their construction have long since been lost to history. From the waist up, they resemble humanoids made of metal, but from the waist down their bodies take the form of spinning metal tops ringed with blades, which excel at cutting down nearby foes. Most spiral centurions can be directed to stand down with a password, although often these command phrases have been lost to the mists of time. In rare cases, a spiral centurion may also wield manufactured weapons or a shield in addition to its built-in weapons, giving it access to additional actions besides those listed below.</p>\n<p>Most spiral centurions are hundreds or even thousands of years old, only staying functional because of the powerful magic used in their creation. Still, millennia of neglect have caused many spiral centurions to develop small glitches or malfunctions.</p>",
 			"blurb": "Variant weak spiral centurion",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Dulled Blade":{
+					"name": "Dulled Blade"
+				},
+				"strike-Cannon":{
+					"name": "Cannon"
+				},
+				"Misaligned Gears":{
+					"name": "Misaligned Gears",
+					"description": "<p>The spiral centurion loses access to its Rev Up ability, and if it Strides more than once per round, it takes [[/r 1d10]] damage per Stride after the first.</p>"
+				},
+				"Top-Heavy":{
+					"name": "Top-Heavy",
+					"description": "<p>A spiral centurion's top-like design makes it susceptible to effects that would cause it to fall prone. The DC of any attempt to knock the spiral centurion @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} is reduced by 5. If the spiral centurion attempts a check or saving throw to resist being knocked prone, it takes a -5 status penalty. A spiral centurion that has been knocked prone can't use any actions other than to attempt to Stand, but it must succeed at a @Check[type:acrobatics|dc:30] check to do so.</p>"
+				},
+				"Hurl Blade":{
+					"name": "Hurl Blade",
+					"description": "<p>The spiral centurion hurls one of its blades with an angled spin to ensure a swooping flight path. The blade deals [[/r {6d6}[slashing]]]{6d6 slashing damage} to each creature in a @Template[type:line|distance:40] (@Check[type:reflex|dc:30|basic:true] save).</p>\n<p>At the start of the spiral centurion's next turn, the blade swoops around and returns along the same flight path, again dealing [[/r {6d6}[slashing]]]{6d6 slashing damage} (@Check[type:reflex|dc:30|basic:true] save) to each creature along the same line.</p>"
+				},
+				"Reload Guns":{
+					"name": "Reload Guns",
+					"description": "<p>The spiral centurion loads ammo into its many guns.</p>"
+				},
+				"Trample":{
+					"name": "践踏 Trample",
+					"description": "<p>Medium or smaller, blade, @Check[type:reflex|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				},
+				"Whirling Death":{
+					"name": "Whirling Death",
+					"description": "<p>The spiral centurion spins furiously in place, its blades extended to slice through nearby creatures. It makes up to five melee blade Strikes. No single creature can be targeted by more than one blade Strike during one use of this ability. These attacks count toward the spiral centurion's multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks are made.</p>"
+				},
+				"Whirling Fire":{
+					"name": "Whirling Fire",
+					"description": "<p><strong>Requirements</strong> The spiral centurion has used Reload Guns three times since the last time it used Whirling Fire</p>\n<hr />\n<p><strong>Effect</strong> The spiral centurion spins furiously in place, firing its guns wildly and dealing [[/r {8d6}[piercing]]]{8d6 piercing damage} to creatures in a @Template[type:emanation|distance:60]{60-foot radius} (@Check[type:reflex|dc:28|basic:true]). Creatures further than 30 feet away gain a +4 circumstance bonus on their save against this attack.</p>"
+				}
+			}
 		},
 		"Captured Dezullon": {
 			"name": "Captured Dezullon",
 			"publicNotes": "<p>Dezullons are dangerous carnivorous pitcher plants that dwell in forested regions with thick canopies. They hunt for meat along the forest's understory when not sunning themselves in the boughs above. Dezullons are smart enough to notice that some creatures are attracted by shiny things, and sometimes use such objects to set up ambushes. To assume that the dezullon's ambulations are slow simply because the creature has a root structure is a foolish mistake; many an adventurer has been crushed to death by this surprisingly agile plant. In addition, these dangerous plants are expert climbers, making their pursuit even more difficult to escape from.</p>\n<p>A hungry dezullon keeps prey off-balance by spilling its putrid, psychoactive digestive juices from its central pitcher. In addition to being highly acidic, the enzymes in a dezullon's digestive tract, once expelled, inflict a victim with powerful hallucinations and amnesia. This secondary effect makes dezullons highly sought after in some circles, including avid drug users, experimental doctors, and criminals who deal in poisons.</p>\n<p>Many varieties of dezullon exist, including lumbering giants of incredible size, those that have tiny, cup-shaped pitchers that proliferate along lengths of creeping ivy like suckers on a squid's tentacles, and others with hundreds of blood-red, razor-sharp leaves that protrude from the inside of their pitchers like a leech's teeth. This latter variety is especially dangerous, since the leaves can all but eviscerate creatures that become ensconced inside their pitchers.</p>",
 			"blurb": "Weak dezullon",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Acid Glob":{
+					"name": "Acid Glob"
+				},
+				"Stench":{
+					"name": "Stench",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature entering the emanation must attempt a @Check[type:fortitude|dc:27] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and on a critical failure is also @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at the save is temporarily immune to this effect for 1 minute.</p>"
+				},
+				"Amnesia Venom":{
+					"name": "Amnesia Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> flat-footed and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} (1 round)</p>"
+				},
+				"Constrict":{
+					"name": "紧勒 Constrict",
+					"description": "<p>[[/r {2d6+2}[bludgeoning]]]{2d6+2 bludgeoning damage}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"Root":{
+					"name": "根须 Root",
+					"description": "<p>Until the next time it acts, the dezullon appears to be a normal pitcher plant. It has an automatic result of 41 (44 in forests or swamps) on Deception checks and DCs to pass as a non-creature plant.</p>"
+				},
+				"Vomit":{
+					"name": "Vomit",
+					"description": "<p><strong>Trigger</strong> The dezullon is damaged by an attack</p>\n<hr />\n<p><strong>Effect</strong> The dezullon vomits the contents of its stomach into an adjacent unoccupied space, filling the space with either a dead body or still-moving zombie (a body is in one of the dezullons, a zombie is in the other). Creatures adjacent to the dezullon must succeed at a @Check[type:reflex|dc:28] save or be splashed with a dose of the dezullon's amnesia venom.</p>"
+				}
+			}
 		},
 		"Chemical Zombie": {
 			"name": "Chemical Zombie",
 			"publicNotes": "<p>Necromancers most often create these mindless undead as obedient, expendable servitors. Left to its own devices, a zombie seeks only to consume the living, stopping only when its rotting body can no longer hold together.</p>\n<hr />\n<p>Glowing with a dull amber light, these odious creatures spawn from a combination of necromancy and fire. These destructive creations sow chaos and demolish fortifications, making them the bane of besieged cities.</p>",
 			"blurb": "Variant sulfur zombies",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Fist":{
+					"name": "拳击 Fist",
+					"description": "<p>[[/r {1d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+				},
+				"Quenchable Death Throes":{
+					"name": "Quenchable Death Throes",
+					"description": "<p>When a chemical zombie dies, its body explodes in a @Template[type:burst|distance:30] of fire and debris that deals [[/r {2d10}[bludgeoning]+{2d10}[fire]]]{2d10 bludgeoning and 2d10 fire damage} to each creature in the area (@Check[type:reflex|dc:21|basic:true]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like <em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{Hydraulic Push}</em>), the chemicals are neutralized and this ability doesn't trigger.</p>"
+				},
+				"Slow":{
+					"name": "Slow",
+					"description": "<p>A sulfur zombie is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} and can't use reactions.</p>"
+				},
+				"Blinding Sulfur":{
+					"name": "Blinding Sulfur",
+					"description": "<p>A sulfur zombie burns with putrid inner fire. A creature hit by a sulfur zombie's fist Strike must attempt a @Check[type:fortitude|dc:22] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round, or for 1 minute on a critical failure.</p>"
+				}
+			}
 		},
 		"Chimeric Manticore": {
 			"name": "Chimeric Manticore",
 			"blurb": "Genderless chimera‑manticore hybrid",
 			"data":{},
-			"items":{}
+			"items":{
+				"Three-Headed":{
+					"name": "Three-Headed",
+					"description": "<p>Any ability that would sever a chimera's head (such as a critical hit with a @UUID[Compendium.pf2e.equipment-srd.6xaxxKfvXED6LfIY]{Vorpal} Weapon) severs one head at random. Losing a head doesn't kill a chimera (as long as it has one head left), but it does prevent it from making Strikes with the lost head or using the head's Breath Weapon.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>The chimeric manticore's blue‑dragon head breathes a @Template[type:line|distance:60] of electricity that deals [[/r {8d6}[electricity]]]{8d6 electricity damage} to all creatures in the area (@Check[type:reflex|dc:25|basic:true]).</p>\n<p>The chimeric manticore can't use Breath Weapon again for [[/br 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>"
+				},
+				"Spike Volley":{
+					"name": "Spike Volley",
+					"description": "<p>The manticore flings up to two spikes from its tail, targeting either two different creatures or a single creature. If the manticore targets two different creatures, these creatures must be within 20 feet of one another, and the manticore makes a separate Strike against each; this counts as only one Strike for the manticore's multiple attack penalty, and the penalty doesn't increase until after both attacks. If the manticore fires both spikes at the same creature, it makes a single Strike. If the attack hits, it deals the damage of a single spike, but the target is pinned in place, rendering it @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}. A creature that succeeds at a @Check[type:athletics|dc:25] check (attempted as a single action) can pull the spike free.</p>\n<p>A manticore can hurl no more than 12 spikes in 24 hours.</p>"
+				},
+				"Three-Headed Strike":{
+					"name": "Three-Headed Strike",
+					"description": "<p>The chimera makes a Strike with its dragon jaws, lion jaws, and goat horns, each at a -2 penalty and targeting a different creature. These Strikes count as only one attack for the chimera's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks.</p>"
+				},
+				"Triple Opportunity":{
+					"name": "Triple Opportunity",
+					"description": "<p>A chimera gains 2 extra reactions each round that it can use only to make Attacks of Opportunity. It must use a different head for each reaction, and it can't use more than one on the same triggering action. If it loses one of its heads, it also loses one of these extra reactions.</p>"
+				}
+			}
 		},
 		"Clearwater Cleaner": {
 			"name": "Clearwater Cleaner",
 			"publicNotes": "<p>Often found assisting practitioners of nature magic, leshys are sentient flora that protect the natural world and sacred spaces within forests, fields, and other environments. Leshys are nature spirits inhabiting bodies constructed of plant matter fused together by a primal ritual.</p>\n<hr />\n<p>Irrepressible vine leshys love to explore and collect tales to share. They're curious without being reckless. Other cultures interest them greatly, and they can build friendships quickly as they trade stories with traveling companions. They also feel a pull toward protection, much like other leshys. Vine leshys, though, tend to protect a ward for only a brief period of danger before the leshy's wanderlust drives them onward into the unknown.</p>",
 			"blurb": "male and female vine leshys",
 			"data":{},
-			"items":{}
+			"items":{
+				"Verdant Burst":{
+					"name": "Verdant Burst",
+					"description": "<p>When a vine leshy dies, a burst of primal energy explodes from its body, restoring [[/r 1d4]] Hit Points to each plant creature in a @Template[type:emanation|distance:30]. This area fills with tangling vines, becoming difficult terrain. If the terrain is not a viable environment for the vines, they wither after 24 hours.</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>The vine leshy transforms into a Small plant with vines. This ability otherwise uses the effects of <em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{Tree Shape}</em>.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Extend Vines":{
+					"name": "Extend Vines",
+					"description": "<p>The vine leshy Interacts to extend or shorten their arms. With limbs extended, the vine leshy has a 10-foot reach. The leshy can't use weapons that already have reach in this way, because they would be unable to keep their balance.</p>"
+				},
+				"Heft Crate":{
+					"name": "Heft Crate",
+					"description": "<p><strong>Requirements</strong> The Clearwater Cleaner is adjacent to a crate</p>\n<hr />\n<p><strong>Effect</strong> The Clearwater Cleaner picks up a crate and heaves it up to 15 feet. Upon landing, the crate breaks open in a @Template[type:burst|distance:5]. Each creature within the area takes [[/r {2d6}[bludgeoning]]]{2d6 bludgeoning damage} (@Check[type:reflex|dc:13|basic:true]), and the area becomes difficult terrain until cleared.</p>"
+				}
+			}
 		},
 		"Clockwork Brewer": {
 			"name": "Clockwork Brewer",
 			"publicNotes": "<p>Clockwork creatures are as common in Alkenstar as carts and horses are in most Inner Sea region cities. In the City of Smog, clockworks perform many of the simple, repetitive tasks that sentient workers find boring, as well as dangerous jobs such as private security or riot control.</p>\n<p>With the rise of the automated workforce in Alkenstar came the \"professional\" line of clockworks, capable of carrying out more complex tasks and even interacting with the public. These clockworks were given modules inscribed with information and procedures for carrying out a specific profession. The clockwork brewer is one such example, capable of extracting wort, stirring a fermenter, or monitoring a boiling temperature. As many other types of clockwork professional exist as there are professions; clockworks have been programmed to reshelf library books, swab ship decks, and fill holes in heavily trafficked roads.</p>\n<p>Clockwork professionals made by reputable manufacturers are generally considered safe to interact with the public. Accidents have been known to occur, however, particularly when careless engineers fail to perform regular maintenance checks or when operators program a clockwork with insufficiently specific directives. Flesh and blood laborers forced to work in close proximity to a clockwork professional tend to keep a wide berth.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Mini-Keg":{
+					"name": "Mini-Keg",
+					"description": "<p>A clockwork brewer can hold up to 5 gallons of liquid in a built-in tank. By default, this tank contains the clockwork brewer's beer.</p>"
+				},
+				"Standard Greeting":{
+					"name": "Standard Greeting",
+					"description": "<p>Clockwork brewers have a limited set of pre-recorded phrases they can use to interact with clientele, based on their instructions. The audio is recorded on an embedded gemstone worth 5 gp. Removing a gemstone from or installing a gemstone into a clockwork brewer requires a successful @Check[type:thievery|dc:18|traits:action:disable-a-device] check to Disable a Device; on a failure, the gemstone is undamaged, but any recorded sounds are erased.</p>"
+				},
+				"Wind-Up":{
+					"name": "Wind-Up",
+					"description": "<p>24 hours, @Check[type:thievery|dc:18|traits:action:disable-a-device] check, standby</p>\n<hr />\n<p>For a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.</p>\n<p>A clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).</p>\n<p>A creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.</p>"
+				},
+				"Bottoms Up":{
+					"name": "Bottoms Up",
+					"description": "<p><strong>Requirements</strong> The clockwork brewer has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{grappled}</p>\n<hr />\n<p><strong>Effect</strong> The clockwork brewer force- feeds the grappled creature 1 serving of whatever liquid is in the clockwork brewer's tank (typically beer such as Smokeside Sour). The creature is exposed to the liquid's effects, and it can't breathe or speak until the start of its turn.</p>"
+				},
+				"Pre-Programmed Greeting":{
+					"name": "Pre-Programmed Greeting",
+					"description": "<p>The clockwork brewer clearly delivers a disarmingly friendly greeting to a creature within 30 feet. The creature attempts a @Check[type:will|dc:17] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against the clockwork brewer's next attack before the end of the brewer's next turn. The target is then immune to Pre-Programmed Greeting for 1 day.</p>"
+				},
+				"Smokeside Sour":{
+					"name": "Smokeside Sour",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:12]</p>\n<p><strong>Maximum Duration</strong> 1 hour</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (10 minutes)</p>\n<p><strong>Stage 2</strong> clumsy 1 and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (10 minutes)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2}, @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}, and sickened (40 minutes)</p>"
+				}
+			}
 		},
 		"Clockwork Buccaneer": {
 			"name": "Clockwork Buccaneer",
