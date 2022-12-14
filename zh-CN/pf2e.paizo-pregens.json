@@ -17,7 +17,9 @@
         "items": {
             "path": "items",
             "converter": "npc-item-translation"
-        }
+        },
+		"backstory":"system.details.biography.backstory",
+		"gender":"system.details.gender.value"
     },
 	"entries": {
 		"Booker Kaar": {
@@ -26,7 +28,22 @@
 		},
 		"Bottlespeaker": {
 			"name": "响葫芦 Bottlespeaker",
-			"data":{}
+			"data":{},
+			"gender":"男性",
+			"backstory":"<p>不以实体化自然精魂的大小或强弱所转移，响葫芦都是这一群体的狂热拥趸，他同时也自认为是其它莱西的保护者。在从他仪式学意义上的“母亲”那里学会了创造莱西的基本原理后，响葫芦成功让一个弱小到本不足以独立显现的精魂在仪式中拥有了躯体——这便是他的魔宠，孪芽仔。他把孪芽仔当作心爱的女儿看待，并通常让她待在自己的葫芦脑袋里。</p>\n<p>孪芽仔既活泼又好奇，总爱去瞅一瞅碰一碰那些她所不熟悉的新鲜事物，这有时会给她带去麻烦。当受到惊吓或感到害怕的时候，她就会躲进响葫芦的脑袋里。</p>",
+			"items":{
+				"equipment-Wondrous Figurine (Onyx Dog named Midnight)":{
+					"name":"奇妙雕像（一条叫“午夜”的玛瑙犬）",
+					"descrption":"<p>每个小雕像都高1寸，由特定的材料雕刻成特定的动物。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> 命令，交互</p>\n<hr />\n<p><strong>效果</strong> 你把雕像放在坚固的地上然后说出它的名字，使其变化成活生生的动物。在动物形态下，雕像拥有仆从特征。它能理解你的语言，并且当你使用动作命令它时，它会尽其所能地服从命令。每个动物的详情和启动频率（如果有的话）都陈列在后续各自的条目中。</p>\n<p>如果雕像在动物形态下被杀死，它将恢复成雕像形态，并且只有在一周之后才能再次启动。如果雕像在雕像形态下被损毁，那么它将碎裂并且失去魔力。</p>\n<hr />\n<p>这座简单的玛瑙雕像变成了一只 @UUID[Compendium.pf2e.pathfinder-bestiary.QRRX82FIjBKd8pzs]{看门狗 Guard Dog}。</p>\n<p>这只狗在追踪时的生存检定上有+4的环境加值，并且拥有黑暗视觉。当这只狗用嗅觉闻到一个藏匿hidden生物时，此生物的藏匿hidden状态变为可见observed及隐蔽concealed。</p>\n<p>玛瑙犬每周可启动1次，并且维持动物形态最多6小时。</p>"
+				},
+				"9BqbAjlVZTgSBe1a":{
+					"name":"变形（仅孪芽仔） Change Shape (Twinsprout Only)",
+					"description":"<p>孪芽仔把自己变化成一株超小型的树。该能力在其他方面的效果与<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术Tree Shape}</em>一致。</p>"
+				},
+				"uw6ogiXjOX4hzntn":{
+					"name":"莱西学识 Leshy Lore"
+				}
+			}
 		},
 		"Doc Featherton": {
 			"name": "Doc Featherton",
@@ -50,7 +67,15 @@
 		},
 		"Fluff Fang": {
 			"name": "绒牙芳 Fluff Fang",
-			"data":{}
+			"data":{},
+			"items":{
+				"equipment-Sapphire Ring":{
+					"name":"蓝宝石戒指 Sapphire Ring"
+				},
+				"zORfedT5APOKKg6A":{
+					"name":"间谍学识 Espionage Lore"
+				}
+			}
 		},
 		"Grimmnir": {
 			"name": "Grimmnir",
@@ -115,6 +140,12 @@
 				"yUR3uVbpuZfLQjLg":{
 					"name":"灵敏嗅觉 Acute Scent",
 					"description":"<p>狂暴时，你的嗅觉感官得到加强。你获得30尺范围的模糊嗅觉。 </p>"
+				},
+				"equipment-Bottle of ground peppercorns":{
+					"name":"一瓶胡椒粉 Bottle of ground peppercorns"
+				},
+				"equipment-Jar of salted lemons":{
+					"name":"一罐咸柠檬 Jar of salted lemons"
 				}
 			}
 		},
@@ -128,7 +159,9 @@
 		},
 		"Reaching Rings": {
 			"name": "达环菇 Reaching Rings",
-			"data":{}
+			"data":{},
+			"gender":"非二元性别",
+			"backstory":"<p>诞生之初，达环菇更喜欢在树上舒适地休息并思考一些哲学问题，但在与创造者布里波比克斯（一名侏儒德鲁伊）的谈心中，他们内心的行动欲终于被激发。也许通过帮助布里波比克斯与森林中的威胁作斗争，并向其中的居民们做出证明，或许他们就真的能够让布里波比克斯成为森林里的调解人。就这样，他们与布里波比克斯一同出发前往瓦杜兰森林北部，去消灭那些非自然的腐化，去赶走那些试图霸占森林恩赐的人。</p>\n<p>不幸的是，在一次类似的任务中，布里波比克斯被夺去了生命，在受刺激后达环菇又重新回到当初那种安静的沉思中。在与世隔绝几十年后，他们再次从沉思中走出，徘徊在森林里，寻找那些用得上他们帮助的地方。</p>"
 		},
 		"Rhin": {
 			"name": "Rhin",
@@ -147,7 +180,7 @@
 			"data":{}
 		},
 		"Twinsprout": {
-			"name": "Twinsprout",
+			"name": "孪芽仔 Twinsprout",
 			"data":{}
 		},
 		"Ufi": {
