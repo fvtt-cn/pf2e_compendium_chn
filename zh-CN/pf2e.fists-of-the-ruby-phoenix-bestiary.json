@@ -936,6 +936,10 @@
                 "nbgJYAHNB8hArPvH": {
                     "name": "偷袭 Sneak Attack",
                     "description": "<p>灵巧战士对措手不及的目标造成额外[[/r {2d6}[precision]]]{2d6精准伤害}。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "equipment-Shuriken":{
+                    "name": "+1强击回力手里剑 Shuriken",
+                    "description": "这种“投掷的星星”是一块刀刃锋利的扁平金属，设计通过抖腕或弹指投掷出去。"
                 }
             }
         },
@@ -1209,6 +1213,10 @@
                 "Flurry of Blows": {
                     "name": "疾风连击 Flurry of Blows",
                     "description": "<p>武僧进行两次无武装打击。若两次命中同一个生物，计算抗力和弱点时将伤害合计。</p>"
+                },
+                "equipment-+2 Greater Striking Shock Handwraps of Mighty Blows":{
+                    "name": "+2高等强击电击重拳缠手带 Handwraps of Mighty Blows",
+                    "description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
                 }
             }
         },
@@ -1653,11 +1661,11 @@
             "data":{},
             "name": "寒冰地砖 Freezing Floor Tiles",
             "stealthdetails": "<p>+23（专家）或@Check[type:perception|dc:38|traits:action:seek]（大师）注意到四个传感器</p>",
-            "hazarddisable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (legendary) or <em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 38) to disable one of the sensors</p>",
+            "hazarddisable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (传奇)或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (6环；反制DC38)来解除其中一个传感器</p>",
             "hazarddescription": "<p>在竞技场的每个角落有4个传感器，可以从竞技场的随机地板上中释放冰冻魔法，阻止生物前进。</p>",
             "hazardroutine": "<p>（4 动作）每成功解除一个传感器，陷阱就损失一个动作。在每个动作中，陷阱会随机让10尺见方的竞技场地砖变为寒冰。寒冰区域内的每个生物开始回合时都会受到[[/r {2d6+2}[cold]]]{2d6+2寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。豁免大失败的生物还会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮；如果它已经陷入缓慢，生物则被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} 轮。任意数量的火焰伤害都可以移除生物的缓慢或禁足状态。在陷阱的下个回合开始时，寒冰地板会解冻。</p>",
             "items": {
-                "rxzKPSkZ4m2BBbQJ": {
+                "Frigid Floor": {
                     "name": "寒冰地板 Frigid Floor",
                     "description": "<p><strong>触发</strong> 郝金发出比赛开始的信号</p>\n<hr />\n<p><strong>效果</strong> 陷阱投掷先攻。</p>"
                 }
@@ -2191,7 +2199,7 @@
                     "name": "神术内在法术 Innate Divine Spells"
                 },
                 "kK2Gq7DhRgZp3cDc": {
-                    "name": "+2高等强击重拳缠手带，+2 Greater Striking Handwraps of Mighty Blows",
+                    "name": "+2高等强击重拳缠手带 +2 Greater Striking Handwraps of Mighty Blows",
                     "description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
                 },
                 "NBUlKm3GztSseKbH": {
@@ -2359,27 +2367,11 @@
             "blurb": "女性天舒族高阶罪犯",
             "ac": "(对反应动作和远程武器攻击AC42)",
             "items": {
-                "0h3Hzq30mCIzXcop": {
-                    "name": "聚能法术 Focus Spells",
-                    "description": "<p>聚能法术是一种特殊的法术，它通过学习研究、神祇或者其他特定来源获得。你只能通过特殊的职业能力或者专场来学会聚能法术，而不是从法术列表中选择。除此之外，你使用一个特殊的聚能点（Focus Point）池来释放聚能法术。你不能在法术位中准备聚能法术，也不能使用法术位来施放聚能法术；类似的，你不能使用聚能点来施放非聚能法术的法术。即使部分职业并没有施法能力，例如神卫（champion）和武僧（monk），这些职业也能提供聚能法术。 </p>\n<p>聚能法术会自动升阶到你的等级的一半，向上取整，类似戏法一般。如果聚能法术的最低环级超过你的等级的一半向上取整，你不能施放该聚能法术，即使你通过某种方式获得了它。 </p>\n<p>施放你的任何聚能法术消耗1聚能点。当你第一次获得赋予你聚能法术的能力时，你自动获得具有1点聚能点的聚能池。</p>\n<p>在你日常准备时，你重获聚能池中所有的聚能点。你也可以使用再聚能行动来祈祷，研究，冥想或者通过其他方式来调整自身连接到聚能魔力，以重新获取一个聚能点。</p>\n<p>部分能力令你能够增加聚能池中的聚能点到超过1点。通常而言，这些专长会赋予你新的聚能法术，并且增加你的聚能池1点。你的聚能池容量不能超过3聚能点，即使增加聚能池的专长会令其超过这个数值</p>\n<hr />\n<p>要恢复聚能点，请见@Compendium[pf2e.actionspf2e.OSefkMgojBLqmRDh]{再聚能 Refocus}行动。</p>\n<hr />\n<h1>具有聚能法术的施法者</h1>\n<p>根源<strong>见核心规则书302页</strong></p>\n<p>如果你是一个施法者，你的聚能法术的根源与赋予你聚能法术的职业的法术根源相同。吟游诗人是@Compendium[pf2e.classfeatures.fEOj0eOBe34qYdAa]{异能 Occult}，牧师是@Compendium[pf2e.classfeatures.AvNbdGSOTWNRgcxs]{神术 Divine}，德鲁伊是@Compendium[pf2e.classfeatures.b8pnRxGuNzG0buuh]{原能 Primal}，法师是@Compendium[pf2e.classfeatures.S6WW4Yyg4XonXGHD]{奥术 Arcane}，术士由其血脉决定。</p>\n<h1>具有聚能法术的非施法者</h1>\n<p>根源 <strong>见核心规则书302页</strong></p>\n<p>如果你从一个不提供施法能力的职业或者其他来源获得了聚能法术（例如，如果你是选择了@Compendium[pf2e.feats-srd.3a07jkWezSuORSpS]{真气击 Ki Strike}专长的武僧），该能力同时也会提供你在法术攻击骰和法术DC上的熟练度，以及你聚能法术的魔法根源。你能使用@Compendium[pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施法 Cast a Spell}行动并花费必要的施法动作来施放你的聚能法术。但是，你不适用要求你是一名施法者的专长或者其他规则。</p>"
-                },
-                "GfO9PCaIW76I1fZF": {
-                    "name": "风行跃 Wind Jump",
-                    "description": "<p>你获得等同于速度的飞行速度。你必须在坚实的地面上结束回合，否则会坠落。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 在你的回合结束，你可以尝试一次@Check[type:acrobatics|dc:30]检定在空中找到借力点。若成功，你就不会坠落。</p>\n<p>@Compendium[pf2e.spell-effects.5MI2c9IgxfSeGZQo]{法术效果：风行跃}</p>"
-                },
-                "4QmvDr3RLNV6OYis": {
-                    "name": "爆气冲刺 Ki Rush",
-                    "description": "<p>运气加速，健步如飞的你身影甚是模糊。进行2次移动：2次行走，2次快步，或1次行走1次快步（顺序自定）。</p>\n<p>你在该移动中和直到你下一回合开始，都会获得 @Compendium[pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed} 状态。</p>"
-                },
-                "ifWk7fzxrVcTeDbM": {
-                    "name": "斗气击 Ki Strike",
-                    "description": "<p>运气集中化为魔力攻击。进行一次无武装打击或疾风连击（这不会改变绝招每回合只能使用1次的限制）。</p>\n<p>打击的攻击骰获得+1状态加值，且打击造成1d6点额外伤害。该伤害可从下列类型中选择其一作为伤害类型，在每次进行打击时选择：力场、秩序（只有当你守序时）、负能量或正能量。</p>\n<p>@Compendium[pf2e.spell-effects.8olfnTmWh0GGPDqX]{法术效果：斗气击}</p>\n<hr />\n<p><strong>升阶 (+4)</strong> 额外伤害增加1d6。</p>"
-                },
-                "aTjYL60fDsG2Dzsq": {
-                    "name": "+2 高等强击高等腐蚀重拳缠手带+2 Gerater Striking Greater Corrosive Handwraps of Mighty Blows",
+                "equipment-+2 Gerater Striking Greater Corrosive Handwraps of Mighty Blows": {
+                    "name": "+2 高等强击高等腐蚀重拳缠手带 +2 Gerater Striking Greater Corrosive Handwraps of Mighty Blows",
                     "description": "<p>在你绑定这些刺绣的布带时，你必须慢慢仔细地将其包裹住你的双手。这些缠手带可以附加武器符文，为你的无武装攻击提供符文带来的好处，使其如魔法武器一般工作。例如，<em>+1强击重拳缠手带</em>能够为你的无武装攻击的攻击骰提供+1物品加值，并将你的无武装攻击的伤害从一个武器骰提升至两个（通常是从1d4提升至2d4，但如果你的拳头有着不同的武器伤害骰，或者你有其他类型的无武装攻击，则使用那个武器伤害骰）。 </p>\n<p>你可以升级或添加缠手带上的符文，你也可以将符文转移到缠手带上，或将其从缠手带上转移出去，就如你处理一件武器一样。你也可以在缠手带上附加护符。在这些情况下，你需要将缠手带视为一件近战武器，属于搏击武器组，并具有轻负载。性能符文只能应用在你所使用的符合条件的无武装攻击上。例如，一个必须应用在挥砍武器上的性能符文不会作用于你的拳头攻击，但如果你使用爪击或其他挥砍无武装攻击，你就能得到该符文的好处。</p>"
                 },
-                "FN1jPZvyzmDeGbK1": {
+                "strike-Lashing Branch": {
                     "name": "枝扫 Lashing Branch"
                 },
                 "XIcgtyDG2R4Ita9b": {
@@ -2392,9 +2384,6 @@
                 "kJ78e3R1iGB8OqPY": {
                     "name": "力竭疾风 Exhausting Flurry",
                     "description": "<p>当卡熙莱以疾风连击对同一个目标进行两次打击，并且至少其中一次命中且造成伤害时，目标必须通过@Check[type:fortitude|dc:39]豁免，否则陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并且在力竭期间，陆地速度受到-5尺状态减值。如果大失败，该生物陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，并且在力竭期间，陆地速度受到-10尺状态减值。</p>"
-                },
-                "11HPHRUkwye0ljJh": {
-                    "name": "犯罪学识"
                 }
             }
         },
@@ -3852,7 +3841,7 @@
             "name": "鹰虎(9级) Takatorra (Level 9)",
             "blurb": "男性天狗剑圣",
             "items": {
-                "1YfqINfkYNfo672z": {
+                "equipment-+1 Hide Armor": {
                     "name": "+1革甲 +1 Hide Armor",
                     "description": "<p>这种盔甲混合了毛皮、结实的皮革，有时还有成型的熟皮，它的多层皮革提供了保护，尽管它的笨重会减慢穿戴者的速度，并降低其活动性。</p>"
                 },
@@ -3952,6 +3941,10 @@
                 "Flurry of Blows": {
                     "name": "疾风连击 Flurry of Blows",
                     "description": "<p>千野进行两次无武装打击。若两次命中同一个生物，计算抗力和弱点时将伤害合计。</p>"
+                },
+                "equipment-Temple Sword":{
+                    "name": "+1强击炽焰仪剑 Temple Sword",
+                    "description": "<p>这把沉重的剑受到宗教场所护卫的偏爱。它有着独特的新月形刀刃，似乎是镰刀和剑的混合体。通常会在剑刃或剑柄上钻孔，以便将铃铛或其他神圣的物品附着在武器上，以帮助祈祷或仲裁。</p>"
                 }
             }
         },
