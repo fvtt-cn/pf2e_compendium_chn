@@ -1,15 +1,32 @@
 {
 	"label": "咒怨 Malevolence",
 	"mapping":{
-		"publicNotes":"data.details.publicNotes",
-		"dr":"data.traits.dr",
-		"allSaves":"data.attributes.allSaves.value",
-		"senses":"data.traits.senses.value",
-		"hp":"data.attributes.hp.details",
-		"hazarddisable":"data.details.disable",
-		"hazarddescription":"data.details.description",
-		"hazardreset":"data.details.reset",
-		"hazardroutine":"data.details.routine"
+        "name": "name",
+        "portrait": {
+            "path": "img",
+            "converter": "npc-portrait-path"
+        },
+        "token": {
+            "path": "prototypeToken",
+            "converter": "npc-token-translation"
+        },
+        "data": {
+            "path": "system",
+            "converter": "npc-data-translation"
+        },
+        "items": {
+            "path": "items",
+            "converter": "npc-item-translation"
+        },
+		"publicNotes":"system.details.publicNotes",
+		"dr":"system.traits.dr",
+		"allSaves":"system.attributes.allSaves.value",
+		"senses":"system.traits.senses.value",
+		"hp":"system.attributes.hp.details",
+		"hazarddisable":"system.details.disable",
+		"hazarddescription":"system.details.description",
+		"hazardreset":"system.details.reset",
+		"hazardroutine":"system.details.routine"
 	},
 	"entries": {
 		"Algea": {
@@ -18,13 +35,6 @@
 			"allSaves": "对抗魔法的所有豁免拥有+1状态加值",
 			"senses": "黑暗视觉，生命感知60尺，识破魔法",
 			"items":{
-				"MMUnQ4sqzntfVl13":{
-					"name":"异界传送 Plane Shift (仅限自身和携带的灵魂，只能传送到骨园)",
-					"description":"<p>你和你的盟友穿过位面之间的屏障。目标移动到另一个位面，例如火焰位面（Plane of Fire），阴影位面（Shadow Plane），或者深渊（Abyss）。你必须对目的地位面有所了解，并且使用该位面的材料制作的魔法共鸣音叉作为该法术的器材。多数主要位面的共鸣音叉，如同异界传送法术本身一样，罕贵度为罕见。鲜为人知的位面和半位面的共鸣音叉通常罕贵度为稀有。该法术非常不精确，你会在某个目标（由你选择）上次到达该位面时所在的位置相距1d20×25英里的位置出现。如果对所有目标而言均是第一次旅行到特定位面，你会在位面上的一个随机位置出现。异界传送 不会提供返程的方法，但是通过再次施放异界传送令你能回到你之前所在的位面，除非有什么另外情况。</p>"
-				},
-				"WCb4RZFtgoB0Va63":{
-					"name":"黑暗视觉 Darkvision"
-				},
 				"iAp1BgBeTFhgvNEP":{
 					"name":"悲苦灵光 Grieving Aura",
 					"description":"<p>@Template[type:emanation|distance:30]{30尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光 Aura}</p>\n<hr />\n<p>在灵光范围内开始回合的生物必须尝试一次@Check[type:will|dc:27]豁免。不死生物的豁免遭受-2环境减值。然后生物在1小时内对悲苦灵光临时免疫。</p>\n<p><strong>成功</strong> 生物不受影响。</p>\n<p><strong>失败</strong> 生物无法抑制地开始抽泣，在1轮内，生物无法使用反应动作并且陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>大失败</strong> 类似失败，但是生物离开灵光范围后效果还将继续持续1分钟。</p>"
@@ -50,27 +60,16 @@
 				"dCra4dM2DaOP8GAK":{
 					"name": "灵魂囚笼 Soul Cage",
 					"description":"<p>被疯狂乱啄击中的虚体不死生物必须尝试一次@Check[type:will|dc:30]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 不死生物不受影响且在24 小时内临时免疫。</p>\n<p><strong>成功</strong> 不死生物的速度在1 轮内遭受-10 尺状态减值。</p>\n<p><strong>失败</strong> 类似成功，但是不死生物陷入@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1 轮，它可以尝试一次逃脱检定（DC 30）。</p>\n<p><strong>大失败</strong> 不死生物被束缚1 轮。悲苦鸦群可以尝试携带@Compendium[pf2e.conditionitems.VcDeM8A5oI6VqhbM]{被束缚 Restrained}的不死生物进行异界传送，即使是在对方非自愿的情况下。非自愿的不死生物能尝试一次意志豁免来抵抗<em>@Compendium[pf2e.spells-srd.5bTt2CvYHPvaR7QQ]{异界传送 Plane Shift}</em>。如果成功，悲苦鸦群自身进行异界传送，但是不死生物将被留在原地，并且不再被束缚。</p>"
-				},
-				"moosBrxtijnM7YuU":{
-					"name": "骨园学识"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Anitoli Nostraema": {
 			"name": "安尼托里·诺斯特莱玛 Anitoli Nostraema",
 			"senses": "黑暗视觉",
 			"items":{
-				"mgipsToIbvBrXPfV":{
-					"name": "啃咬 Jaws"
-				},
-				"cpGnoTqfKreSjXiE":{
+				"strike-Bony Hand":{
 					"name": "纤瘦骨手 Bony Hand"
-				},
-				"DFBIAtBP98tsdq4P":{
-					"name": "黑暗视觉 Darkvision"
-				},
-				"1ubiMFx1X0bEvumW":{
-					"name": "负能量治疗 Negative Healing"
 				},
 				"C6cMjmVitcFqX2HU":{
 					"name": "绝望低语 Whispered Despair",
@@ -88,7 +87,8 @@
 					"name": "偷窃声音 Steal Voice",
 					"description":"<p>当安尼托里·诺斯特莱玛用瘦弱的骨手打击命中一个生物时，它会试图将受害者的声音拉自己的灵气中。受害者必须尝试进行一次@Check[type:will|dc:24]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标的声音变得虚弱。任何时候它尝试一个带有听觉（auditory）特征的动作时，进行@Check[type:flat|dc:5]检定，如果失败则动作丢失。</p>\n<p><strong>失败</strong> 目标失去说话能力，持续1小时，如果诅咒被移除，或阁楼低语者被摧毁，则效果提前结束。在此期间，阁楼低语者可以完美的模仿目标的声音，而目标对阁楼低语者的啜泣灵光的豁免遭受-2环境减值。</p>\n<p><strong>大失败</strong> 如同失败，但是只有当诅咒被移除，或阁楼低语者被摧毁时效果才能结束。</p>"
 				}
-			}	
+			},
+			"data":{}
 		},
 		"Architect and Hunter": {
 			"name": "建筑师和猎人 Architect and Hunter",
@@ -112,7 +112,8 @@
 				"LPPvSs0hxEr1SjNX":{
 					"name": "1D8持续心灵伤害"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Carrion Vortex": {
 			"name": "腐尸漩涡 Carrion Vortex",
@@ -125,24 +126,16 @@
 					"name": "招魂者挽歌 Psychopomp Dirge",
 					"description":"<p><strong>触发</strong> 三个或更多生物进入D2区，或者任何人试图收集或摧毁鸟的残骸。</p>\n<hr />\n<p><strong>效果</strong> 腐尸漩涡使D2区域充满了听起来像成千上万只三声夜莺鸟的叫声，但这种嘈杂声在这间房间之外是听不到的。D2 区的生物必须尝试一次@Check[type:will|dc:21]豁免（法莱斯玛的信徒或那些与招魂者有联系的人在这次豁免中获得+4 环境加值）。然后，作祟骰先攻。</p>\n<hr />\n<p><strong>大成功</strong> 该PC 理解了这首哀歌也是一种警告和对赦免的绝望请求。该PC可以感知到D5和E4区腐化招魂者的存在，如同受到定位术影响，持续24 小时。只要这个效果持续存在，角色在对这些区域的腐化招魂者进行的攻击检定、豁免和技能检定中获得+1状态加值。</p>\n<p><strong>成功</strong> 同大成功一样，但定位术只持续10 分钟。该生物因内心充满悲伤和绝望的感觉而受到[[/r {2d8}[mental]]]{2d8心灵伤害}。</p>\n<p><strong>失败</strong> 该生物因内心充满悲伤和绝望的感觉而受到[[/r {4d8}[mental]]]{4d8心灵伤害}。</p>\n<p><strong>大失败</strong> 该生物因内心充满悲伤和绝望情绪而受到[[/r {6d8}[mental]]]{6d8心灵伤害}，并且只要作祟仍处于激活状态，并且他们仍在D2区域，该角色获得@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，因为他们要被迫每轮用一个动作啜泣。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Corrupted Nosoi": {
 			"name": "腐化疫鸟 Corrupted Nosoi",
 			"senses": "黑暗视觉，生命感知60尺",
 			"hp":"负能量治疗",
 			"items":{
-				"62EEApSPWilOAJGE":{
-					"name": "喙啄 Beak"
-				},
-				"w9dbnWlDHHH9m9cM":{
-					"name": "黑暗视觉 Darkvision"
-				},
 				"mj6SWij6O5cLmBul":{
 					"name": "生命感知60尺 Lifesense 60 feet"
-				},
-				"RZfMWcVtBQVi2pCA":{
-					"name": "负能量治疗 Negative Healing"
 				},
 				"qarlOKy2gtbDmhfN":{
 					"name": "腐化之触 Corrupted Touch",
@@ -152,33 +145,18 @@
 					"name": "作祟旋律 Haunting Melody",
 					"description":"<p>疫鸟鸣唱让人入迷的歌声,\"<em>领主在下面沉睡，你们只不过是他的梦，当领主醒来时，你们会知道结局！</em>\"。@Template[type:emanation|distance:60]{60尺弥散范围}内的每个活物或不死生物都必须尝试@Check[type:will|dc:18]豁免。该效果持续1轮，但疫鸟能在随后的轮里再次使用该能力，用于将所有受影响生物的持续时间延长1轮。成功通过任何豁免的生物都会在24小时内临时免疫该效果。尽管这是个心灵效果，但该能力也能影响无心智的不死生物。招魂者免疫该能力。</p>\n<hr />\n<p><strong>失败</strong> 该生物陷入@Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}。</p>\n<p><strong>大失败</strong> 同失败，且该生物必须在其回合内花费自身的每个动作来尽可能地靠近疫鸟，于此同时该生物也会避开明显的危险。若被@Compendium[pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}的生物与疫鸟相邻，那么他就会站在原地且不做行动。若该生物受到攻击，迷魂便会结束。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Esobok Ghoul": {
 			"name": "埃斯波克食尸鬼 Esobok Ghoul",
 			"senses":"黑暗视觉，生命感知60尺，嗅觉（模糊）60尺",
 			"items":{
-				"PVvyMGCape7oiInX":{
-					"name": "隐形术(仅限自身) Invisibility (Self Only)",
-					"description":"<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
-				},
-				"FdSJMVwpVdTAipaD":{
-					"name": "啃咬 Jaws"
-				},
-				"h2Pe9lhvR2cmDEIG":{
-					"name": "爪抓 Claw"
-				},
-				"uEGXUxgI4HzdFHvE":{
-					"name": "黑暗视觉 Darkvision"
-				},
 				"p0YI4JxsoitKsRx5":{
-					"name": "嗅觉（模糊）60尺 Scent (Imprecise) 60 feet"
+					"name": "嗅觉（模糊）60尺"
 				},
 				"GqSUGGDq0PMDoaK4":{
-					"name": "生命感知60尺 Lifesense 60 feet"
-				},
-				"JLT0Zn4WkF51Fz5B":{
-					"name": "负能量治疗 Negative Healing"
+					"name": "生命感知60尺"
 				},
 				"IS7sAzIDvMgfptk8":{
 					"name": "啃食尸体 Consume Flesh",
@@ -200,18 +178,13 @@
 					"name": "猛扑 Pounce",
 					"description":"<p>埃斯波克食尸鬼行走，然后爪抓打击。如果它开始这个动作时是藏匿状态，那么它直到攻击结束前仍处于藏匿状态。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Haunted Nosoi": {
 			"name": "作祟疫鸟 Haunted Nosoi",
 			"senses":"黑暗视觉，生命感知60尺",
 			"items":{
-				"62EEApSPWilOAJGE":{
-					"name": "喙啄 Beak"
-				},
-				"w9dbnWlDHHH9m9cM":{
-					"name": "黑暗视觉 Darkvision"
-				},
 				"mj6SWij6O5cLmBul":{
 					"name": "生命感知60尺 Lifesense 60 feet"
 				},
@@ -223,7 +196,8 @@
 					"name": "复仇爆发 Vengeful Burst",
 					"description":"<p><strong>触发</strong> 作祟疫鸟被摧毁，或者进入与D5区招魂者邻接的方格</p>\n<hr />\n<p><strong>效果</strong> 作祟疫鸟爆发出一阵正能量同时死亡。这会对十英尺内所有活着的生物产生[[/r {3d6}[positive]]]{3D6正能量治疗}，如果在D5 区域被触发，复仇爆发对该区域内的任何腐化招魂者造成[[/r {2d12}[negative]]]{2d12 负能量伤害}（@Check[type:will|dc:18|basic:true]豁免）。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Ioseff Xarwin": {
 			"name": "约瑟夫·夏尔文 Ioseff Xarwin",
@@ -273,32 +247,14 @@
 				"6mMJCH3VP87wzthp":{
 					"name":"断肢幻影 Phantasmal Amputation",
 					"description":"<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 约瑟夫举起他的左臂残肢，流淌的血液开始形成一只幽灵般的手，然后他用这只手指向30 英尺内的一个类人生物。该生物必须尝试@Check[type:fortitude|dc:28|traits:necromancy,occult]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物的左手突然感到剧痛，获得@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>成功</strong> 与大成功一样，但该生物还受到[[/r {2d6}[slashing]]]{2d6挥砍伤害}，并且获得持续1轮的@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，同时他们觉得自己的左手好像被一把斧头砍掉了。</p>\n<p><strong>失败</strong> 该生物获得@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}，受到[[/r {5d6}[slashing]]]{5d6挥砍伤害}，并获得持续1分钟的@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，同时他们觉得自己的左手好像被斧头砍掉了。</p>\n<p><strong>大失败</strong> PC 获得@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}，受到[[/r {8d6}[slashing]]]{8d6挥砍伤害}和@Localize[PF2E.PersistentDamage.Bleed2d6.success]{2d6持续流血伤害}，同时他们的左手似乎被拆卸，掉到地上，然后瞬间腐烂成骨头。PC 获得@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@Compendium[pf2e.conditionitems.Yl48xTdMh3aeQYL2]{受伤 Wounded 1}。一旦这个受伤状态被移除，PC 的手就会奇迹般地恢复，并且笨拙状态结束。</p>"
-				},
-				"GCPgpwElCHLQVIOo":{
-					"name":"天文学识"
-				},
-				"PNqYkMjgT8qLINIr":{
-					"name":"切利亚斯学识"
-				},
-				"1tOcTw3wNC7NrglW":{
-					"name":"梦魇术 Nightmare",
-					"description":"<p>你向目标送去一段恼人的噩梦。在目标下一次入睡时，它必须尝试一次意志豁免。如果你知道目标的名字但是从未遇见过它，目标在意志豁免上获得+4环境加值。</p>\n<hr />\n<p><strong>大成功</strong> 目标不承受任何负面效果，并暂时免疫1星期。</p>\n<p><strong>成功</strong> 目标经历了噩梦，但不会承受除了糟糕回忆以外的负面效果。</p>\n<p><strong>失败</strong> 目标经历噩梦，并且在醒来时获得@Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}。</p>\n<p><strong>大失败</strong> 目标经历噩梦，醒来时@Compendium[pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，并且获得 @Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} 直到不再疲乏。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Ixirizmid": {
 			"name": "伊西里兹米德 Ixirizmid",
 			"senses":"昏暗视觉，震撼感知（精确感官）30尺",
 			"items":{
-				"G0gVWOYLReMpFQrP":{
-					"name": "爪抓 Claw"
-				},
-				"kdkQkuAE694sbEoo":{
-					"name": "昏暗视觉 Low-Light Vision"
-				},
-				"4a4AwC6MVxafM5dq":{
-					"name": "震颤感知（精确感官）30尺 Tremorsense (Precise) 30 feet"
-				},
 				"OpIusm2cr2cYc7x5":{
 					"name": "精明伪装 Clever Disguises",
 					"description":"<p>伊西里兹米德可以使用乔装来冒充任何中型类人生物，尽管制造这样的伪装需要1 小时。他们不能用这种能力伪装成特定的个体。</p>"
@@ -310,15 +266,9 @@
 				"FeDt6jCafBdwS5tk":{
 					"name": "摘除内脏 Eviscerate",
 					"description":"<p>伊西里兹米德向一个被擒抱或束缚，或是处于禁足状态的生物施展一次迅速而痛苦的手术，尝试一次医疗检定对抗目标的强韧DC 。无论结果如何，目标都将暂时免疫24小时。</p>\n<hr />\n<p><strong>大成功</strong> 目标受到[[/r {8d6}[slashing]]]{8d6挥砍伤害}，陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} 一轮，且24小时内陷入@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}、@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，或是@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（由米戈选择）。</p>\n<p><strong>成功</strong> 目标受到[[/r {5d6}[slashing]]]{5d6挥砍伤害}且因为疼痛而陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}一轮。</p>\n<p><strong>失败</strong> 目标受到[[/r {3d6}[slashing]]]{3d6挥砍伤害}。</p>\n<p><strong>大失败</strong> 目标不受伤害。</p>"
-				},
-				"uffOMQdKncfhcXF7":{
-					"name": "偷袭 Sneak Attack",
-					"description":"<p>当敌人无法有效防御时，你可以借此造成额外伤害。你可以对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物造成额外攻击。如果你用灵巧或娴熟近战武器，灵巧或娴熟的无武装攻击，远程武器攻击，或远程无武装攻击来对措手不及的生物进行打击，你可以造成1d6额外精准伤害。用投掷武器来远程攻击的场合，该武器必须为灵巧或娴熟。</p>\n<p>当你游荡者等级提升时，偷袭骰的数目也会提升。在5级，11级，17级会成长一次。</p>"
-				},
-				"pEzlMP5bZb18T57c":{
-					"name": "攫抓 Grab"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Lured to Ashes": {
 			"name": "诱入灰烬 Lured to Ashes",
@@ -331,7 +281,8 @@
 					"name": "引诱 Lure",
 					"description":"<p><strong>触发</strong> 一个生物进入房间超过5英尺</p>\n<hr />\n<p><strong>效果</strong> B18区的所有生物，以及与B18区域相邻的敞开的门或窗户10尺内所有生物听到一个很有吸引力的声音，邀请他们进入房间，讨论未来搬回切利亚斯中心。</p>\n<p>每个生物都必须尝试@Check[type:will|dc:22|name:Lure to Ashes]豁免（B18区外的生物在此豁免中获得+2环境加值）。如果失败，该生物将被强迫进入B18区并坐在其中一个沙发上。</p>\n<p>豁免成功的生物不会被吸引过去，而且能看到房间的被烧毁的本来面貌。然后，作祟骰先攻。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Mouth of Tchekuth": {
 			"name": "切库斯之口 Mouth of Tchekuth",
@@ -343,31 +294,26 @@
 					"name": "饥渴之舌 Hungry Tongue",
 					"description":"<p><strong>触发</strong> 一个生物穿越裂口</p>\n<hr />\n<p><strong>效果</strong> 一个巨大的、长满獠牙的大嘴似乎在下面张开，一条长长的、带着倒刺的舌头冲上来攻击触发生物，后者必须尝试一次@Check[type:will|dc:24]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物意识到作祟只是吓人的幻象，实际上不会伤害到他们，因此没有受到伤害。</p>\n<p><strong>成功</strong> 该生物躲开了那条带着倒刺的舌头，但却因此从桥上摔了下来，因为坠落受到10 点伤害（该生物可以通过@Check[type:reflex|dc:24|name:Grab an Edge|traits:damaging-effect]豁免抓住边缘）。</p>\n<p><strong>失败</strong> 短短一瞬间，生物感受到带着倒刺的舌头刷过他们时的可怕触感，它舔去了记忆，该生物变成@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续24 小时。该生物随后坠落（同成功所述）。</p>\n<p><strong>大失败</strong> 该生物感觉到舌头缠绕着他们，然后体验到被向下拉扯的可怕感觉，持续了似乎有好几天那么久，但实际上只有一瞬间。该生物变成@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续24小时，在此期间他无法记住自己的名字。该生物的咒怨状态值增加1，然后坠落（同成功所述）。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Nils Kelveken": {
 			"name": "尼尔斯·凯尔维肯 Nils Kelveken",
 			"hp":"负能量治疗",
 			"senses":"黑暗视觉",
 			"items":{
-				"uvkdzaUjo0rU2j1H":{
+				"equipment-Leather Carpenter's Apron":{
 					"name": "皮制木匠围裙 Leather Carpenter's Apron",
 					"description":"<p>(作用如同皮甲)</p>\n<p>这种护甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。</p>"
 				},
-				"8OlcuXSogVDa374Y":{
+				"equipment-Hand Drill":{
 					"name": "手钻 Hand Drill"
 				},
-				"DTY8lCkw0ALXQYai":{
+				"equipment-Keys to all non-secret doors on ground floor":{
 					"name": "钥匙圈（包含一楼所有非密门的钥匙）"
 				},
-				"JBPlK9wlt3BY2QhE":{
+				"strike-Hand Drill":{
 					"name": "手钻 Hand Drill"
-				},
-				"3ZQhZkotGdT9Bz6I":{
-					"name": "黑暗视觉 Darkvision"
-				},
-				"MmC60npHVmzvUVuO":{
-					"name": "负能量治疗 Negative Healing"
 				},
 				"5RVQgrRnkm4C0Y2q":{
 					"name": "深钻 Drill Deeper",
@@ -377,7 +323,8 @@
 					"name": "我看见你做了什么！ I See What Ye Did!",
 					"description":"<p>尼尔斯以自己的速度向30 尺内的一个目标行走，在接近时对他们尖叫道：\"我看见你做了什么！\"。目标进行@Check[type:will|dc:22|name:I Seen What Ye Did!]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标对尼尔斯可能看到的东西感到不安，陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 类似成功，但目标陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 目标陷入幻觉般的噩梦状态，时间似乎变慢了，同时无法思考逃跑以外的事情，然而当他们试图逃跑的时候，尼尔斯可以轻松地追上。目标下回合开始变成@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，并且获得持续到下回合结束的@Compendium[pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Tanglebones": {
 			"name": "缠结骨堆 Tanglebones",
@@ -385,15 +332,9 @@
 			"publicNotes": "<p>有时候，凶手将大量受害者埋葬在同一个坟堆里，那些被杀的复仇之魂也会彼此交缠在一起。这些灵魂无法彼此拆解，于是他们会放弃寻找自己的肉身，反而融合成一堆可怕的骨头和黑色焦油状污泥的混合物——缠结骨堆。</p>\n<p>根据换一个可怕的传说，一个痛苦的老寡妇得知，她那六亲不认的女儿通过法律漏洞将她的财产全部都划归到了自己名下。于是她杀害了13 名仆人，将他们的尸体埋在地下室，继续扮演着慈母的角色，在规定时间内交出了庄园的钥匙。一天晚上，这位老寡妇的暴行引发的混沌杀死了女儿全家。当当局得知此事内情时，这位老寡妇早就逃离了自己的国家，在某个版本的故事里，她改名换姓并在不久之后便重新飞黄腾达——并且，贵为女王。</p>",
 			"senses":"黑暗视觉",
 			"items":{
-				"iB4FIdMc9Bnj1cOR":{
-					"name": "爪抓 Claw"
-				},
 				"WwHuWnYG7Z1eRfCv":{
 					"name": "投骨 Hurled Bone",
 					"description":"<p>射程30尺</p>"
-				},
-				"DDjzBBdsdTMNCX0U":{
-					"name": "黑暗视觉 Darkvision"
 				},
 				"qBfZKEJPVngf5Zs4":{
 					"name": "灵质纤维 Ectoplasmic Filament",
@@ -406,9 +347,9 @@
 				"iHIW94X3Fnp31s1a":{
 					"name": "负能量治疗 Negative Healing"
 				},
-				"7GZSmH33lacIjGRG":{
+				"Gnaw":{
 					"name": "啃噬 Gnaw",
-					"description":"<p>有足够时间和决心，你几乎可以咬穿任何物品。你对一个无人看管的、无生命物体造成双倍于啃咬的伤害。</p>"
+					"description": "<p><strong>需求</strong> 纠缠骨堆擒抱一个敌人；</p>\n<hr />\n<p><strong>效果</strong>纠缠骨堆用它的众多骨头啃咬被擒抱的敌人，造成[[/r {2d6+8}[piercing]]]{2d6+8穿刺伤害}（@Check[type:fortitude|dc:23|basic:true]豁免）。如果大失败，生物还会因为疼痛陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>"
 				},
 				"uWMjBNMf2i8vkJza":{
 					"name": "骸骨风暴 Skeletal Storm",
@@ -417,11 +358,9 @@
 				"dvswlRsKg8EGBzsU":{
 					"name": "伸展骨堆 Sprawled Bones",
 					"description":"<p>直到它进行下一个动作之前，缠结骨堆能让自己看起来像一堆杂乱无章的骨头。当它伪装成一堆看似无害的骨头时，其欺骗检定结果和DC自动取35。</p>"
-				},
-				"J7SGCpmm8PUjDGsg":{
-					"name": "攫抓 Grab"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Undead Brain Collector": {
 			"name": "亡灵集脑怪 Undead Brain Collector",
@@ -429,24 +368,9 @@
 			"allSaves":"对抗魔法的所有豁免拥有+1状态加值",
 			"senses":"黑暗视觉",
 			"items":{
-				"2hOUtgCM9lj7z4TB":{
-					"name": "啃咬 Jaws"
-				},
-				"wIfegH9lKXPcfiA2":{
-					"name": "爪 Claws"
-				},
-				"Xk8o7gTKk7DJgdIs":{
-					"name": "黑暗视觉 Darkvision"
-				},
 				"SqGN2C6WwW664mJx":{
 					"name": "吸收幻脑 Absorb Phantom Brain",
 					"description":"<p><strong>触发</strong> 亡灵集脑怪在使用脑猛击以后至少拥有1 个幻脑.</p>\n<hr />\n<p><strong>效果</strong> 亡灵集脑怪吸收[[/r 1d4 #Phantom Brains]]{1d4}个幻脑，每吸收一个幻脑获得[[/r 1d8 #Temporary Hit Points]]{1d8临时生命值}。</p>"
-				},
-				"2ehHjufAVPMIZ8U2":{
-					"name": "对抗魔法的所有豁免拥有+1状态加值"
-				},
-				"zDmN2GNIClzY8q9J":{
-					"name": "负能量治疗 Negative Healing"
 				},
 				"CDTtHeFOvz7H1Jqo":{
 					"name": "脑猛击 Brainlash",
@@ -456,7 +380,8 @@
 					"name": "腐心毒 Mind-Rotting Toxin",
 					"description":"<p><strong>豁免</strong> @Check[type:fortitude|dc:25|basic:true]</p>\n<p><strong>最大持续</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r {1d6}[negative]]]{1d6负能量}及@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d6}[negative]]]{1d6负能量}，@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[negative]]]{2d6负能量}, @Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}和@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}(1轮)</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Wrathful Hatchet": {
 			"name": "狂怒斧头 Wrathful Hatchet",
@@ -472,7 +397,8 @@
 				"J88670eDfpomkkvm":{
 					"name": "狂怒斧头 Wrathful Hatchet"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Xarwin Caul": {
 			"name": "夏尔文网膜 Xarwin Caul",
@@ -484,7 +410,8 @@
 					"name": "仇恨爆发 Burst of Hatrid",
 					"description":"<p><strong>触发</strong> 一个生物打开任何门或窗户进入夏尔文庄园，或者任何生物或物体从外面穿过网膜进入庄园。</p>\n<hr />\n<p><strong>效果</strong> 网膜像油性泡泡一样炸开，瞬间消失在恶臭的烟雾中。一阵阵的腥臭味传遍了整个区域，所有的活物都会突然感到对鸟类的无限憎恨，这种感觉只持续一个心跳的时间。在夏尔文庄园@Template[type:emanation|distance:300]{300英尺弥漫范围}内的所有自然鸟类（但不包括庄园内或地下的鸟类）都会受到[[/r {15d6}[mental]]]{15d6心灵伤害}（@Check[type:fortitude|dc:33|basic:true|name:Xarwin Caul]豁免）。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Xarwin Manor Phantasm": {
 			"name": "夏尔文庄园幻影 Xarwin Manor Phantasm",
@@ -495,7 +422,8 @@
 					"name": "预兆幻视 Haunting Vision",
 					"description":"<p><strong>触发</strong>一个生物在幻象的5英尺范围内</p>\n<hr />\n<p><strong>效果</strong>扰人幻象制造了闹鬼景象。触发生物必须尝试使用@Check[type:will|dc:19]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 如果该生物没有咒怨状态，它的咒怨状态值加1。</p>\n<p><strong>大失败</strong> 该生物的咒怨状态增加1。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Xarwin Portraits": {
 			"name": "夏尔文画像 Xarwin Portraits",
@@ -508,7 +436,8 @@
 					"name": "施加痛苦 Inflict Agony",
 					"description":"<p><strong>触发</strong> 至少有四个角色在B22区域，或者有人触碰或试图破坏一幅画</p>\n<hr />\n<p><strong>效果</strong> B22 区域的所有角色必须尝试@Check[type:will|dc:27]豁免来抵抗突如其来的痛苦（智力最高的人在左手腕感到这种疼痛，而其他人则在头部感到这种痛苦）。如果失败，PC就会因痛苦而获得@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败则@Compendium[pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。然后作祟骰先攻。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Xarwin's Manifestation": {
 			"name": "夏尔文的显现 Xarwin's Manifestation",
@@ -522,19 +451,16 @@
 				}
 			],
 			"items":{
-				"1NEYm5Xcmcypev16":{
-					"name": "黑暗视觉 Darkvision"
-				},
 				"CAI4Mth4W18hZyag":{
 					"name": "幽魂之手 Spectral Hand",
-					"description":"伤害2d8+7 负能量加吸取记忆。"
+					"description":"伤害2d8+7负能量加吸取记忆。"
 				},
 				"cWM3q0yWZ3nV2UKw":{
 					"name": "吸取记忆 Drain Memory",
 					"description":"<p>当显现用它的幽魂之手伤害一个生物时，显形会获得5 点临时生命值，目标必须在@Check[type:fortitude|dc:23|basic:true]豁免中成功，否则会获得@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。每次它对一个生物造成伤害，如果豁免失败，该生物的呆滞状态会增加1，最高为呆滞4。</p>"
 				},
 				"erB7z23ENjwroBai":{
-					"name": "生命感知60尺 Lifesense 60 feet"
+					"name": "生命感知60尺"
 				},
 				"0AEJAJ3AgrV5j4kM":{
 					"name": "庄园束缚 Manor Bound",
@@ -542,9 +468,6 @@
 				},
 				"AOPfqLyhf0Xvpueq":{
 					"name": "对所有针对正能量的豁免检定拥有+1状态加值"
-				},
-				"zjasConlgzOqCTnt":{
-					"name": "负能量治疗 Negative Healing"
 				},
 				"3f4ySQfrmtsGbvjo":{
 					"name": "畏惧 Recoil",
@@ -554,7 +477,8 @@
 					"name": "作祟之触 Haunting Touch",
 					"description":"<p>当显形用它的幽魂之手重击一个生物时，该生物的咒怨状态值会增加1。</p>"
 				}
-			}
+			},
+			"data":{}
 		},
 		"Yianyin": {
 			"name": "厌阴 Yianyin",
@@ -569,21 +493,9 @@
 					"name": "隐形术(任意施法,只能对自身施放) Invisibility (At Will) (Self Only)",
 					"description":"<p>目标被幻术包复，变得 @Compendium[pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}. 这令该生物对所有生物 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪Undetected} ，但生物可以尝试寻找目标，令其改为 @Compendium[pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。如果目标使用敌对动作，法术在敌对动作完成后结束。</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该法术持续1分钟，但目标使用敌对动作时该法术不会结束。</p>"
 				},
-				"09TNtg4ODRPndxNb":{
-					"name": "黑暗视觉 Darkvision"
-				},
-				"Z1kI1lIR3yl4kS3A":{
-					"name": "生命感知60尺 Lifesense 60 feet"
-				},
 				"Ls9yE1H6FkT1OJYn":{
 					"name": "可怖存在 Unnerving Presence",
 					"description":"<p>@Template[type:emanation|distance:30]{30尺} @Compendium[pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光 Aura}</p>\n<hr />\n<p>在灵光内开始其回合的生物必须尝试@Check[type:will|dc:22|basic:true]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响，并在24 小时内暂时免疫于可怖存在。</p>\n<p><strong>成功</strong> 该生物的攻击检定承受-1状态减值，持续1回合。</p>\n<p><strong>失败</strong> 该生物感觉到厌阴的无眼目光在注视着他们，而且知道还有更危险和更可怕的东西在通过这些空洞的眼眶注视着他们。这种外星智能生物的可怕存在导致生物在恐惧中颤抖，因而变为@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>大失败</strong> 如同失败，但该生物改为@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，并且知道了通过那些空洞的眼睛里看着他们的东西的名字：切库斯。</p>"
-				},
-				"x4Uq0y8h1rnBkWQa":{
-					"name": "随意施法 At-Will Spells"
-				},
-				"nT581p1wTDqsWA0W":{
-					"name": "所有对抗魔法的豁免获得+1状态加值"
 				},
 				"45tIfcu3EgUSitRf":{
 					"name": "致命诱惑 Compel Condemned",
@@ -596,11 +508,9 @@
 				"kATbmBX9Ub3C8BqX":{
 					"name": "死亡之吻 Kiss of Death",
 					"description":"<p>厌阴给一个@Compendium[pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或自愿的生物一个长而热情的吻，造成[[/r {4d6}[negative]]]{4d6负能量伤害}。</p>\n<p>任何被厌阴的死亡之吻连续3轮伤害的生物都会失去意识并承受@Compendium[pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying 1}。</p>"
-				},
-				"CaUXX1KAzOzLwfmw":{
-					"name": "骨园学识"
 				}
-			}
+			},
+			"data":{}
 		}
 	}
 }
