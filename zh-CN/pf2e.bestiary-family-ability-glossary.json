@@ -129,7 +129,7 @@
             "name": "(吸血鬼,诺斯费拉图霸主)惊惶爪 (Vampire, Nosferatu Overlord) Paralytic Fear"
         },
         "(Vampire, Nosferatu) Change Shape": {
-            "description": "<p>诺斯费拉图变成一群浅灰色的老鼠。它们获得30尺陆地速度和10尺攀爬速度，体型变为大型。位于集群内部的敌人受到[[/r {2d10}[piercing]]]{2d10穿刺伤害}，且必须进行一个@Check[type:reflex|dc:|basic:true]豁免，DC取该生物等级对应的强DC。豁免失败的生物会暴露在远古瘟疫中。</p>",
+            "description": "<p>诺斯费拉图变成一群浅灰色的老鼠。它们获得30尺陆地速度和10尺攀爬速度，体型变为大型。位于集群内部的敌人受到[[/r {2d10}[piercing]]]{2d10穿刺伤害}，且必须进行一个@Check[type:reflex|dc:|basic:true]豁免，DC取该生物等级对应的强DC。豁免失败的生物会暴露在远古瘟疫中。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
             "name": "(吸血鬼,诺斯费拉图)改变形体 (Vampire, Nosferatu) Change Shape"
         },
         "(Vampire, Nosferatu) Dominate": {
@@ -218,15 +218,15 @@
         },
         "(Vampire, Nosferatu) Drink Blood": {
             "name": "(吸血鬼,诺斯费拉图)吸血 (Vampire, Nosferatu) Drink Blood",
-            "description": "<p><strong>需求</strong> 诺斯费拉图的最后一个动作是一次成功的尖牙打击</p>\n<hr />\n<p><strong>效果</strong> 诺斯费拉图将尖牙刺入那个生物的体内来吸他的血。它需要进行一次运动技能鉴定对抗那个生物的强韧DC。成功后那个生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，诺斯费拉图恢复数量等同于它最大HP10%的HP，任何溢出的生命值都变成临时生命。从一个已经流失的生物身上吸血不会让诺斯费拉图获得生命值，但是会让这个生物的流失值加1。诺斯费拉图同样可以饮下保存于容器中的血来维生，但是它不会从中恢复HP。</p>\n<p>受害者的流失值每周减少1点。在拥有足够的血液或是一名献血者的情况下，可以通过一次@Check[type:medicine|dc:20]检定进行一次输血，并在10分钟后减少1点流失值。</p>"
+            "description": "<p><strong>需求</strong> 诺斯费拉图的最后一个动作是一次成功的尖牙打击</p>\n<hr />\n<p><strong>效果</strong> 诺斯费拉图将尖牙刺入那个生物的体内来吸他的血。它需要进行一次@Check[type:athletics]检定对抗那个生物的强韧DC。成功后那个生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，诺斯费拉图恢复数量等同于它最大HP10%的HP，任何溢出的生命值都变成临时生命。从一个已经流失的生物身上吸血不会让诺斯费拉图获得生命值，但是会让这个生物的流失值加1。诺斯费拉图同样可以饮下保存于容器中的血来维生，但是它不会从中恢复HP。</p>\n<p>受害者的流失值每周减少1点。在拥有足够的血液或是一名献血者的情况下，可以通过一次@Check[type:medicine|dc:20]检定进行一次输血，并在10分钟后减少1点流失值。</p>"
         },
         "(Vampire, Nosferatu) Nosferatu Vulnerabilities": {
             "name": "(吸血鬼,诺斯费拉图)诺斯费拉图弱点 (Vampire, Nosferatu) Nosferatu Vulnerabilities",
-            "description": "<ul>\n<li><strong>厌恶 Revulsion</strong> 诺斯费拉图不能主动接近一个被挥舞着的大蒜或是非邪恶神祇的圣徽10尺以内。生物必须以一个交互动作挥舞大蒜或者圣徽，并且起效一轮（类似举起盾牌）。如果诺斯费拉图非自愿地来到了厌恶对象的10尺范围内，它获得@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，逃离至其厌恶对象的10尺以外。在暴露于其厌恶之物下一轮之后，吸血鬼可以花费一个拥有专注特征的动作尝试一次@Check[type:will|dc:25|traits:concentrate]检定。一旦成功，它能在[[/r 1d6 #Overcome Revulsions]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>木桩 Stake</strong> 一根刺穿诺斯费拉图心脏的魔法木桩（例如一个受武器潜力符文、魔化武器或类似魔法影响的木桩）能够将它的HP降至0点，并且阻止其在0HP时受到的治疗效果，就算它躺在棺木中也是如此。用木桩刺穿诺斯费拉图需要花费三动作，并且仅能在吸血鬼@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}的时候才能如此做。如果将木桩拔出，并且它还在自己的棺木中休息了1小时以后，那么诺斯费拉图便能够再次恢复至0HP以上。如果在诺斯费拉图被木桩钉穿时将其脑袋砍下后再涂上圣水，便能彻底摧毁它。</li>\n<li><strong>阳光 Sunlight</strong> 如果暴露于阳光直射下，诺斯费拉图将立刻获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。每当它在阳光下结束其回合，缓慢值都将增加1点，如果它不再处于阳光照射下，此条件结束。如果诺斯费拉图因此失去了其所有动作，它被摧毁。</li>\n</ul>"
+            "description": "<ul>\n<li><strong>厌恶 Revulsion</strong> 诺斯费拉图不能主动接近一个被挥舞着的大蒜或是非邪恶神祇的圣徽10尺以内。生物必须以一个交互动作挥舞大蒜或者圣徽，并且起效一轮（类似举起盾牌）。如果诺斯费拉图非自愿地来到了厌恶对象的10尺范围内，它获得@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，逃离至其厌恶对象的10尺以外。在暴露于其厌恶之物下一轮之后，吸血鬼可以花费一个拥有专注特征的动作尝试一次@Check[type:will|dc:25|traits:concentrate]检定。一旦成功，它能在[[/br 1d6 #Overcome Revulsions]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>木桩 Stake</strong> 一根刺穿诺斯费拉图心脏的魔法木桩（例如一个受武器潜力符文、魔化武器或类似魔法影响的木桩）能够将它的HP降至0点，并且阻止其在0HP时受到的治疗效果，就算它躺在棺木中也是如此。用木桩刺穿诺斯费拉图需要花费三动作，并且仅能在吸血鬼@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}的时候才能如此做。如果将木桩拔出，并且它还在自己的棺木中休息了1小时以后，那么诺斯费拉图便能够再次恢复至0HP以上。如果在诺斯费拉图被木桩钉穿时将其脑袋砍下后再涂上<em>@UUID[Compendium.pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em>，便能彻底摧毁它。</li>\n<li><strong>阳光 Sunlight</strong> 如果暴露于阳光直射下，诺斯费拉图将立刻获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。每当它在阳光下结束其回合，缓慢值都将增加1点，如果它不再处于阳光照射下，此条件结束。如果诺斯费拉图因此失去了其所有动作，它被摧毁。</li>\n</ul>"
         },
         "(Vampire, Nosferatu) Plagued Coffin Restoration": {
             "name": "(吸血鬼,诺斯费拉图)寝于疫土之棺 (Vampire, Nosferatu) Plagued Coffin Restoration",
-            "description": "<p>与其他不死生物不同，诺斯费拉图不会在HP为0时被摧毁。取而代的是，它的身体崩解成大量的老鼠，这群各自独立的老鼠朝着各个方向逃跑，以期能返回它们的棺材。哪怕只有一只老鼠抵达棺材，诺斯费拉图也能开始恢复。诺斯费拉图通过在死于疫病之人的墓土中休息来恢复它们的力量。如果它的身体在填满了土的棺木中休息1小时，则诺斯费拉图将获得1点生命值，紧接着它的快速愈合能力开始正常生效。但如果棺材里没有装着疫亡者的墓土的话，它就需要在棺木里休息1天才会获得1点生命值并重获它的快速愈合能力。</p>"
+            "description": "<p>与其他不死生物不同，诺斯费拉图不会在HP为0时被摧毁。取而代的是，它的身体崩解成大量的老鼠，这群各自独立的老鼠朝着各个方向逃跑，以期能返回它们的棺材。哪怕只有一只老鼠抵达棺材，诺斯费拉图也能开始恢复。诺斯费拉图通过在死于疫病之人的墓土中休息来恢复它们的力量。如果它的身体在填满了土的棺木中休息1小时，则诺斯费拉图将获得1点生命值，紧接着它的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing}能力开始正常生效。但如果棺材里没有装着疫亡者的墓土的话，它就需要在棺木里休息1天才会获得1点生命值并重获它的快速愈合能力。</p>"
         },
         "(Vampire, Strigoi Progenitor) Drink Essence": {
             "name": "(吸血鬼,斯特里戈伊始祖)吸吮精华 (Vampire, Strigoi Progenitor) Drink Essence",
@@ -253,7 +253,7 @@
             "description": "<p>吸血鬼如同使用<em>@UUID[Compendium.pf2e.spells-srd.V8wXOsoejQhe6CyG]{气化形体 Gaseous Form}</em>一般化为一团雾气，或者恢复原形。当处于气化形态时吸血鬼失去@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing}能力。</p>\n<p>吸血鬼可以无限期地保持这种形态。</p>"
         },
         "(Vampire, True) Dominate": {
-            "description": "<p>吸血鬼将<em>@UUID[Compendium.pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{支配术 Dominate}</em>作为神术内在法术，并且可以随意施放。因为吸血鬼需要凝视目标的眼睛来施放此法术，所以这使得法术带有视觉特征。豁免DC使用吸血鬼的等级DC，豁免成功的生物在24小时内免疫吸血鬼的支配能力。</p>\n<p>完全摧毁吸血鬼可以终止其支配，但是仅仅将吸血鬼的HP降低到0点则不足以破坏此法术。</p>",
+            "description": "<p>吸血鬼将<em>@UUID[Compendium.pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{支配术 Dominate}</em>作为神术内在法术，并且可以随意施放。因为吸血鬼需要凝视目标的眼睛来施放此法术，所以这使得法术带有视觉特征 (@Check[type:will|dc:])。豁免DC使用吸血鬼的等级DC，豁免成功的生物在24小时内免疫吸血鬼的支配能力。</p>\n<p>完全摧毁吸血鬼可以终止其支配，但是仅仅将吸血鬼的HP降低到0点则不足以破坏此法术。</p>",
             "name": "(吸血鬼,纯血)支配 (Vampire, True) Dominate"
         },
         "(Vampire, Vetalarana, Manipulator) Paralyzing Claws": {
@@ -302,11 +302,11 @@
         },
         "(Vampire, Nosferatu Overlord) Air of Sickness": {
             "name": "(吸血鬼,诺斯费拉图霸主)呕逆瘴气 (Vampire, Nosferatu Overlord) Air of Sickness",
-            "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>在此灵光内开始他们的回合的生物必须进行@Check[type:fortitude|dc:]豁免，DC使用诺斯费拉图的等级对应的适中DC。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}且在1小时内抵抗疾病和移除恶心的骰点获得-2状态减值。</p>"
+            "description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在此灵光内开始他们的回合的生物必须进行@Check[type:fortitude|dc:]豁免，DC使用诺斯费拉图的等级对应的适中DC。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}且在1小时内抵抗疾病和移除恶心的骰点获得-2状态减值。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.XSXMGb5h4Um6YXiT]{效果：呕逆瘴气}</p>"
         },
         "(Vampire, Nosferatu Thrall) Fast Healing": {
             "name": "(吸血鬼,诺斯费拉图血奴)快速愈合 (Vampire, Nosferatu Thrall) Fast Healing",
-            "description": "<p>诺斯费拉图血奴通过他们主子的血液获得并维持快速愈合5。</p>"
+            "description": "<p>诺斯费拉图血奴通过他们主子的血液获得并维持@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 5}。</p>"
         },
         "(Vampire, Nosferatu Thrall) Mindbound": {
             "name": "(吸血鬼,诺斯费拉图血奴)心灵束缚 (Vampire, Nosferatu Thrall) Mindbound",
@@ -618,7 +618,7 @@
         },
         "(Zombie) Putrid Stench": {
             "name": "(丧尸)腐烂恶臭 (Zombie) Putrid Stench",
-            "description": "<p>@Template[type:emanation|distance:15] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>这只丧尸的烂肉极其难闻。一个进入此范围的生物必须进行@Check[type:fortitude|dc:]豁免。失败时，这个生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，若大失败则在一轮内额外获得速度-5尺状态减值。只要在灵光范围内，该生物在从恶心状态中恢复的豁免获得-2环境减值。一个成功通过豁免的生物在1分钟内暂时免疫所有丧尸的腐烂恶臭。</p>"
+            "description": "<p>@Template[type:emanation|distance:15] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>这只丧尸的烂肉极其难闻。一个进入此范围的生物必须进行@Check[type:fortitude|dc:]豁免。失败时，这个生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，若大失败则在一轮内额外获得速度-5尺状态减值。只要在灵光范围内，该生物在从恶心状态中恢复的豁免获得-2环境减值。一个成功通过豁免的生物在1分钟内暂时免疫所有丧尸的腐烂恶臭。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.xmES7HVxM7L3j1EN]{效果：腐烂恶臭}</p>"
         },
         "(Zombie) Rotting Aura": {
             "name": "(丧尸)腐败灵光 (Zombie) Rotting Aura",
