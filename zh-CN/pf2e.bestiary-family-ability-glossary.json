@@ -683,6 +683,18 @@
         "(Ravener) Vicious Criticals": {
             "name": "(掠劫亡龙)恶毒重击 (Ravener) Vicious Criticals",
             "description": "<p>只要攻击骰命中，掠劫亡龙将19和20骰点都视为重击。当掠劫亡龙的打击造成重击时，目标必须通过@Check[type:fortitude|dc:|name:Vicious Criticals]豁免否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。如果目标的流失值已经大于0，则其流失值将增加1，最大为流失4。</p>\n<p>每当掠劫亡龙以这种方式吸取一个生物的生命力时，他们的护体之魂将获得5点生命值。</p>"
+        },
+        "(Mana Wastes Mutant) Energy Resistance": {
+            "name": "(法力废土突变体)能量抗力 Energy Resistance",
+            "description": "<p>变种生物拥有奇怪的皮肤和毛发颜色，并且对某种单一能量类型具备抗力。获得的能量抗力取决于变种生物的等级。</p>\n<table style=\"width: 100.018%; height: 88.889px;\" border=\"1\"><colgroup><col style=\"width: 73.5726%;\"><col style=\"width: 26.2643%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">突变体等级</td>\n<td style=\"height: 17.7778px;\">能量抗力</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">2或更低</td>\n<td style=\"height: 17.7778px;\">2</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">3-7</td>\n<td style=\"height: 17.7778px;\">5</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">8-14</td>\n<td style=\"height: 17.7778px;\">10</td>\n</tr>\n<tr style=\"height: 17.7778px;\">\n<td style=\"height: 17.7778px;\">15+</td>\n<td style=\"height: 17.7778px;\">15</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "(Mana Wastes Mutant) Increased Speed": {
+            "name": "(法力废土突变体)增加速度 Increased Speed",
+            "description": "<p>突变体的四肢变长，或者因为变异长出额外新肢体。将其现有的任何一种速度增加20尺，或增加某种新速度（例如飞行或游泳）15尺。</p>"
+        },
+        "(Mana Wastes Mutant) Energy Blast": {
+            "name": "(法力废土突变体)能量爆发 Energy Blast",
+            "description": "<p>选择一种能量伤害类型；此能力获得该能量类型的特征。突变体在身体外观上呈现某种特征，暗示它如何释放能量爆发。这可能是它身上冒出的数不清的瘤子，也可能是额外的肢体，或者它的喉咙里有一个用来释放吐息的额外缺口。为该能力选择@Template[type:line|distance:60]范围或@Template[type:cone|distance:30]范围。该能量造成[[/r ((@actor.level)d6)[energy]]]{每等级1d6伤害}，@Check[type:reflex|dc:|basic:true]豁免。突变体在[[/r 1d4 #Energy Blast Recharge]]{1d4轮}内无法再次使用该能力。</p>"
         }
     }
 }
