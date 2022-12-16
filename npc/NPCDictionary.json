@@ -89,7 +89,8 @@
         "sneak attack": "偷袭",
         "immune to all damage while any mirror duplicate is alive":"任一镜像副本存活时，免疫所有伤害",
         "ward contract":"守护契约",
-        "ingested poisons":"摄入毒药"
+        "ingested poisons":"摄入毒药",
+        "critical hits (except slashing)":"重击(除挥砍)"
     },
 
     "Item": {
@@ -129,7 +130,10 @@
             "baseItem": "Leather Armor",
             "name": "+1皮甲 Leather Armor"
         },
-
+        "+2 leather armor":{
+            "baseItem": "Leather Armor",
+            "name": "+2皮甲 Leather Armor"
+        },
         "+1 longbow": {
             "baseItem": "longbow",
             "name": "+1长弓 Longbow"
@@ -374,6 +378,10 @@
             "baseItem": "Religious Symbol (Silver)",
             "name": "赛特的圣徽 Religious Symbol of Set"
         },
+        "religious symbol (silver) of norgorber":{
+            "name": "诺格巴的圣徽(银制) Religious Symbol (Silver) of Norgorber",
+            "baseItem": "Religious Symbol (Silver)"
+        },
         "religious symbol of nethys":{
             "baseItem": "Religious Symbol (Silver)",
             "name": "内希斯的圣徽 Religious Symbol of Nethys"
@@ -564,6 +572,10 @@
             "name": "行会首领制服 Guildmaster's Uniform",
             "baseItem": "Hide Armor"
         },
+        "+1 hide":{
+            "name": "+1革甲 Hide",
+            "baseItem": "Hide Armor"
+        },
         "satchel for holding rocks":{
             "name": "石头袋 Satchel for Holding Rocks"
         },
@@ -601,6 +613,18 @@
         },
         "+1 striking felt shears (as dagger)":{
             "name": "+1 Striking Felt Shears (as Dagger)",
+            "baseItem": "Dagger"
+        },
+        "+1 striking dagger":{
+            "name": "+1强击匕首 Dagger",
+            "baseItem": "Dagger"
+        },
+        "+1 dagger":{
+            "name": "+1匕首 Dagger",
+            "baseItem": "Dagger"
+        },
+        "+2 greater striking dagger":{
+            "name": "+2高等强击匕首 Dagger",
             "baseItem": "Dagger"
         },
         "+1 breastplate":{
@@ -870,6 +894,10 @@
             "name": "佩有宫殿徽章的链甲衫 Chain Mail with Palace Insignia",
             "baseItem": "Chain Mail"
         },
+        "+1 chain mail":{
+            "name": "+1链甲衫 Chain Mail",
+            "baseItem": "Chain Mail"
+        },
         "wand of wall of force (level 6)":{
             "name": "力墙术 Wall of Force 魔杖 (等级 6)",
             "description": "@Compendium[pf2e.spells-srd.7Iela4GgVeO3LfAo]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
@@ -1089,6 +1117,10 @@
             "name": "铲子 Shovel",
             "baseItem": "Shoony Shovel"
         },
+        "+1 striking shovel":{
+            "name": "+1强击铲子 Shovel",
+            "baseItem": "Shoony Shovel"
+        },
         "bottled lightning (lesser) (infused)":{
             "name": "灌注次等瓶装闪电 Bottled Lightning (Lesser) (Infused)",
             "baseItem": "Bottled Lightning (Lesser)"
@@ -1237,6 +1269,10 @@
             "name": "Obsidian Sickle",
             "baseItem": "Sickle"
         },
+        "+1 striking sickle":{
+            "name": "+1强击镰刀 Sickle",
+            "baseItem": "Sickle"
+        },
         "blowgun darts (poisoned)":{
             "name": "吹箭镖(涂毒) Blowgun Darts (Poisoned)",
             "baseItem": "Blowgun Darts"
@@ -1323,6 +1359,10 @@
             "name": "+1强击连发手弩 Repeating Hand Crossbow",
             "baseItem": "Repeating Hand Crossbow"
         },
+        "+2 greater striking hand crossbow":{
+            "name": "+2高等强击手弩 Hand Crossbow",
+            "baseItem": "Hand Crossbow"
+        },
         "+1 striking kukri":{
             "name": "+1强击反曲刀 Kukri",
             "baseItem": "Kukri"
@@ -1338,6 +1378,86 @@
         "+1 striking mace multipistol (integrated)":{
             "name": "+1强击硬头锤多管手枪 Mace Multipistol (融合)",
             "baseItem": "Mace Multipistol"
+        },
+        "+1 greatpick":{
+            "name": "+1巨镐 Greatpick",
+            "baseItem": "Greatpick"
+        },
+        "spellstrike ammunition (type iii) (blindness) (dc 24)":{
+            "name": "III型法袭弹药(目盲术, DC24) Spellstrike Ammunition (Type III)",
+            "baseItem": "Spellstrike Ammunition (Type III)"
+        },
+        "spellstrike ammunition (type i) (magic missile)":{
+            "name": "I型法袭弹药(魔法飞弹) Spellstrike Ammunition (Type I) (Magic Missile)",
+            "baseItem": "Spellstrike Ammunition (Type I)"
+        },
+        "+1 striking sap":{
+            "name": "+1强击闷棍 Sap",
+            "baseItem": "Sap"
+        },
+        "+1 striking main-gauche":{
+            "name": "+1强击格挡匕首 Main-Gauche",
+            "baseItem": "Main-Gauche"
+        },
+        "+1 striking rapier":{
+            "name": "+1强击细剑 Rapier",
+            "baseItem": "Rapier"
+        },
+        "+1 striking crossbow":{
+            "name": "+1强击弩 Crossbow",
+            "baseItem": "Crossbow"
+        },
+        "+1 striking shortsword":{
+            "name": "+1强击短剑 Shortsword",
+            "baseItem": "Shortsword"
+        },
+        "shining bolt":{
+            "name": "闪光矢 Shining Bolt",
+            "baseItem": "Shining Ammunition"
+        },
+        "explosive bolt":{
+            "name": "爆炸矢 Explosive Bolt",
+            "baseItem": "Explosive Ammunition"
+        },
+        "+1 spear":{
+            "name": "+1矛 Spear",
+            "baseItem": "Spear"
+        },
+        "standard skeleton key":{
+            "name": "标准万能钥匙 Standard Skeleton Key",
+            "baseItem": "Skeleton Key"
+        },
+        "+1 striking composite shortbow":{
+            "name": "+1强击复合短弓 Composite Shortbow",
+            "baseItem": "Composite Shortbow"
+        },
+        "+1 rapier":{
+            "name": "+1细剑 Rapier",
+            "baseItem": "Rapier"
+        },
+        "+1 longsword (huge)":{
+            "name": "+1长剑 Longsword (超大型)",
+            "baseItem": "Longsword"
+        },
+        "+1 striking scimitar":{
+            "name": "+1强击弯刀 Scimitar",
+            "baseItem": "Scimitar"
+        },
+        "+1 shortsword":{
+            "name": "+1短剑 Shortsword",
+            "baseItem": "Shortsword"
+        },
+        "+1 striking elven curve blade":{
+            "name": "+1强击精灵曲刃 Elven Curve Blade",
+            "baseItem": "Elven Curve Blade"
+        },
+        "+1 striking cleaver":{
+            "name": "+1强击斩肉刀 Cleaver",
+            "baseItem": "Orc Necksplitter"
+        },
+        "modified spiked chain":{
+            "name": "改良刺链 Modified Spiked Chain",
+            "baseItem": "Spiked Chain"
         }
     },
 
@@ -1597,7 +1717,11 @@
         "banking lore":"银行学识",
         "geb lore":"盖布学识",
         "gunpowder lore":"火药学识",
-        "spellscar desert lore":"法痕荒漠学识"
+        "spellscar desert lore":"法痕荒漠学识",
+        "norgorber lore":"诺格巴学识",
+        "alchemy lore":"炼金学识",
+        "gang lore":"帮派学识",
+        "sports lore":"体育学识"
     },
 
     "MagicWeapons": {
@@ -2042,7 +2166,8 @@
         "deactivated by sonic": "音波使其失效",
         "deactivated by vorpal weapons": "斩首武器使其失效",
         "deactivated by chaos, mental or orichalcum": "混乱、心灵或山铜使其失效",
-        "deactivated by bludgeoning":"钝击使其失效"
+        "deactivated by bludgeoning":"钝击使其失效",
+        "deactivated by fire or acid": "火焰或酸液使其失效"
     },
 
     "ResistanceException": {
@@ -2079,7 +2204,8 @@
         "(magic bludgeoning)":"除魔法钝击",
         "magical silver weapons or magical weapons shedding bright light":"除魔法银质武器和散发明亮光的魔法武器",
         "silver or weapons shedding bright light":"除银质武器和散发明亮光的武器",
-        "xcept adamantine or orichalcum":"除精金或山铜"
+        "xcept adamantine or orichalcum":"除精金或山铜",
+        "double vs. non-magical":"此抗力对抗非魔法时翻倍"
     },
     
     "SaveDetails": {
@@ -2367,7 +2493,10 @@
         "to disarm or grapple":"卸武或擒抱",
         "in areas of rusty objects":"堆积生锈物体的区域中",
         "to hide":"躲藏",
-        "to trip and tangle":"摔绊和绊足"
+        "to trip and tangle":"摔绊和绊足",
+        "to create a diversion":"分神",
+        "or swim":"或游泳",
+        "to track a creature at half its hit points or fewer":"追踪生命值为一半或更低的生物"
     },
 
     "Source": {
@@ -2891,7 +3020,11 @@
         "dwarven scattergun":"矮人霰弹枪 Dwarven Scattergun",
         "jax":"贾克斯 Jax",
         "slide pistol":"排琴手枪 Slide Pistol",
-        "shrapnel":"霰弹 Shrapnel"
+        "shrapnel":"霰弹 Shrapnel",
+        "hook claw":"钩爪 Hook Claw",
+        "war razor":"战剃刀 War Razor",
+        "shield bash":"盾击 Shield Bash",
+        "cleaver":"斩肉刀 Cleaver"
     },
 
     "Trait": {}
