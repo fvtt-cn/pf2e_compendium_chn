@@ -37,7 +37,7 @@
 	"entries": {
 		"Acidic Poison Cloud Trap": {
 			"name": "酸性毒云陷阱 Acidic Poison Cloud Trap",
-			"hp": "以摧毁一个喷嘴；<strong>毒气罐硬度</strong> 20; <strong>毒气罐HP</strong> 100 (BT 50)以损毁毒气罐，阻止它喷出气体；",
+			"hp": "以摧毁一个喷嘴；毒气罐硬度：20; 毒气罐HP： 100 (BT 50)以损毁毒气罐，阻止它喷出气体；",
 			"disable": "<p>@Check[type:thievery|dc:35|name:Block One Nozzle|traits:action:disable-a-device](专家)以阻塞一个喷嘴或@Check[type:thievery|dc:40|name:Shut Off the Tank|traits:action:disable-a-device](大师)以关上毒气罐。在5轮后，毒气罐排空，陷阱失效。</p>",
 			"hazarddescription": "<p>隐藏在公寓天花板上的五个喷嘴将藏在墙后的毒气罐中的赌气喷出，形成浓重的酸性毒云。</p>",
 			"routine": "<p>(1动作) 当它被触发时，陷阱有五个激活的喷嘴，但在每一轮它的回合结束时，一个随机的喷嘴失效。在陷阱的回合中，还激活的喷嘴会喷出一团酸性毒气，扩张到整个公寓中。毒云对房间中的每个生物和物体造成[[/r {1d6}[acid]]]{1d6酸液伤害}和[[/r {1d6}[poison]]]{1d6毒素伤害}（@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison]豁免）。无人看管的物体会在针对伤害的豁免中自动失败。</p>",
@@ -72,6 +72,7 @@
 		},
 		"Almiraj": {
 			"name": "阿尔米拉吉 Almiraj",
+			"allSaves":"对抗异能法术时全豁免-2状态加值",
 			"data":{},
 			"items":{
 				"Magic Susceptibility":{
@@ -811,7 +812,7 @@
 		},
 		"Franca Laurentz": {
 			"name": "弗兰卡·劳伦茨 Franca Laurentz",
-			"senses": "对抗毒素时全豁免+2环境加值",
+			"allSaves": "对抗毒素时全豁免+2环境加值",
 			"data":{},
 			"items":{
 				"+2 circumstance bonus on saves vs. poison":{
@@ -1169,7 +1170,7 @@
 		},
 		"Iron Maiden Trap": {
 			"name": "铁处女陷阱 Iron Maiden Trap",
-			"hp": "<strong>铁处女硬度</strong> 12; <strong>铁处女HP</strong> 46 (BT 23)",
+			"hp": "铁处女硬度：12; 铁处女HP：46 (BT 23)",
 			"disable": "<p>@Check[type:thievery|dc:28|name:Disable Pressure Plate|traits:action:disable-a-device]以解除压力板。</p>",
 			"hazarddescription": "<p>触发隐藏在铁处女前的地面上的压力板，折磨装置会突然合拢并将触发的生物困在里面。</p>",
 			"reset": "<p>压力板必须被手动重置。</p>",
@@ -1294,7 +1295,7 @@
 		},
 		"Life Magnet": {
 			"name": "生物磁体 Life Magnet",
-			"hp": "<strong>栅栏HP</strong> 40 (BT 20), <strong>栅栏硬度</strong> 15",
+			"hp": "栅栏HP：40 (BT 20), 栅栏硬度：15",
 			"disable": "<p>@Check[type:thievery|dc:29|name:Deactivate Panel|traits:action:disable-a-device](专家)以拆除嵌板，或使用<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（4环；反制DC22）来反制嵌板上的魔法</p>",
 			"hazarddescription": "<p>隐藏在房间角落的嵌板后有一块神奇的磁体，会将生物而不是金属拉向它，并忽略途中的任何障碍。</p>",
 			"reset": "<p>在铁栅栏没有接触任何生物1分钟后，陷阱解除并重置。</p>",
