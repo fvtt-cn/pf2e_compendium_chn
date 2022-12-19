@@ -1,3 +1,1726 @@
 {
-    "label": "万千之力 Strength of Thousands"
+	"label": "万千之力 Strength of Thousands",
+    "mapping": {
+        "name": "name",
+        "portrait": {
+            "path": "img",
+            "converter": "npc-portrait-path"
+        },
+        "token": {
+            "path": "prototypeToken",
+            "converter": "npc-token-translation"
+        },
+        "data": {
+            "path": "system",
+            "converter": "npc-data-translation"
+        },
+        "items": {
+            "path": "items",
+            "converter": "npc-item-translation"
+        },
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "disable": "system.details.disable",
+        "hazarddescription": "system.details.description",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealthdetails":"system.attributes.stealth.details",
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
+    },
+	"entries": {
+		"Abendego Brute": {
+			"name": "Abendego Brute",
+			"blurb": "Human bruiser",
+			"data":{},
+			"items":{}
+		},
+		"Abendego Jailer": {
+			"name": "Abendego Jailer",
+			"blurb": "Human prison guard",
+			"data":{},
+			"items":{}
+		},
+		"Abendego Priest": {
+			"name": "Abendego Priest",
+			"blurb": "Human priest of Norgorber",
+			"data":{},
+			"items":{}
+		},
+		"Agitated Carnivorous Plants": {
+			"name": "Agitated Carnivorous Plants",
+			"disable": "<p>@Check[type:survival|dc:25|name:Distract or Trick the Plants|traits:uncommon,environmental] (trained) to distract or trick the plants or @Check[type:nature|dc:22|name:Calm the Plants|traits:uncommon,environmental] (expert) to calm the plants</p>",
+			"hazarddescription": "<p>Many carnivorous plants that were once kept satiated now hunger for any meat they can get, even lashing out onto the path to get it.</p>",
+			"stealthdetails": "<p>(trained)</p>",
+			"data":{},
+			"items":{
+				"Trapping Vines":{
+					"name": "Trapping Vines",
+					"description": "<p><strong>Trigger</strong> A creature moves within reach of the carnivorous plants' vines</p>\n<hr />\n<p><strong>Effect</strong> The vines wrap around the triggering creature. The creature must succeed at a @Check[type:reflex|dc:22|traits:uncommon,enviornmental] save or be @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until it Escapes (DC 22). Whether or not the creature is grabbed, the plants make a gnawing plants Strike against the creature.</p>"
+				},
+				"strike-Gnawing Plants":{
+					"name": "Gnawing Plants"
+				}
+			}
+		},
+		"Ajbal Kimon": {
+			"name": "Ajbal Kimon",
+			"blurb": "NE male human gang leader",
+			"data":{},
+			"items":{}
+		},
+		"Alapolo": {
+			"name": "Alapolo",
+			"publicNotes": "<p>Short-lived, strange creatures called alapolos cling to the shadows in eerie moonlight, inviting others to dance. Although these \"shadow dancers\" aren't actively malevolent, they become petulant when others won't dance with them.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Alate Ant": {
+			"name": "Alate Ant",
+			"data":{},
+			"items":{}
+		},
+		"Anadi Fateweaver": {
+			"name": "Anadi Fateweaver",
+			"publicNotes": "<p>The anadis manipulate the threads of fate as easily as they spin silk.</p>\n<hr />\n<p>Anadis have three distinct forms-human, spider, and a beautiful but unnerving hybrid shape that is their true form. Despite their unsettling arachnid features, anadis are peaceful and form tight-knit communities.</p>",
+			"data":{},
+			"items":{
+				"Spin Silk":{
+					"name": "Spin Silk",
+					"description": "<p>By spending several minutes, an anadi can produce silk to craft items made of cloth. An anadi can produce enough silk in a day to craft a single garment.</p>"
+				},
+				"Fate's Threads":{
+					"name": "Fate's Threads",
+					"description": "<p><strong>Frequency</strong> three times per day</p>\n<p><strong>Trigger</strong> An ally within 30 feet of the anadi fateweaver that they can see makes a skill check or a saving throw</p>\n<hr />\n<p><strong>Effect</strong> The creature rerolls the triggering check and takes the new result.</p>"
+				},
+				"Anadi Venom":{
+					"name": "Anadi Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>The anadi changes into their hybrid, spider, or human form. The above statistics assume the anadi is in hybrid form. While in human form, the anadi seeker loses their climb Speed and can't use their fangs attack. When in spider form, they can't use weapons.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				}
+			}
+		},
+		"Anadi Lurker": {
+			"name": "Anadi Lurker",
+			"publicNotes": "<p>These anadis lurkers combine their innate magical talents and wilderness lore to snare prey.</p>\n<hr />\n<p>Anadis have three distinct forms-human, spider, and a beautiful but unnerving hybrid shape that is their true form. Despite their unsettling arachnid features, anadis are peaceful and form tight-knit communities.</p>",
+			"data":{},
+			"items":{
+				"Spin Silk":{
+					"name": "Spin Silk",
+					"description": "<p>By spending several minutes, an anadi can produce silk to craft items made of cloth. An anadi can produce enough silk in a day to craft a single garment.</p>"
+				},
+				"Anadi Venom":{
+					"name": "Anadi Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>The anadi changes into their hybrid, spider, or human form. The above statistics assume the anadi is in hybrid form. While in human form, the anadi seeker loses their climb Speed and can't use their fangs attack. When in spider form, they can't use weapons.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>The anadi lurker deals an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
+		},
+		"Anadi Seeker": {
+			"name": "Anadi Seeker",
+			"publicNotes": "<p>Anadi seekers are knowledge seekers who often brave the outside world.</p>\n<hr />\n<p>Anadis have three distinct forms-human, spider, and a beautiful but unnerving hybrid shape that is their true form. Despite their unsettling arachnid features, anadis are peaceful and form tight-knit communities.</p>",
+			"data":{},
+			"items":{
+				"Spin Silk":{
+					"name": "Spin Silk",
+					"description": "<p>By spending several minutes, an anadi can produce silk to craft items made of cloth. An anadi can produce enough silk in a day to craft a single garment.</p>"
+				},
+				"Anadi Venom":{
+					"name": "Anadi Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>The anadi changes into their hybrid, spider, or human form. The above statistics assume the anadi is in hybrid form. While in human form, the anadi seeker loses their climb Speed and can't use their fangs attack. When in spider form, they can't use weapons.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				}
+			}
+		},
+		"Ancient Rivener": {
+			"name": "Ancient Rivener",
+			"publicNotes": "<p>Ikeshtis who eschew their society are exiled and quickly devolve into violent creatures known as riveners.</p>\n<hr />\n<p>Ikeshtis are reptilian humanoids native to Akiton's wastelands. Smaller than Golarion's iruxi, ikeshtis organize around distinct societal roles.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Apocalypse Ant Swarm": {
+			"name": "Apocalypse Ant Swarm",
+			"blurb": "Variant army ant swarm",
+			"data":{},
+			"items":{}
+		},
+		"Aspect of Hunger": {
+			"name": "Aspect of Hunger",
+			"publicNotes": "<p>Among the most dangerous cave worms are the fiery crimson worms. In addition to being even larger than azure or purple worms, the crimson worm has a penchant for burrowing through volcanic regions that, over the generations, have infused it with a supernatural link to the Elemental Plane of Fire. The molten heart of an active volcano is an attractive lair for a crimson worm, as are the sprawling fields of bubbling magma found in the deepest reaches of the Darklands. Legends from ancient peoples, precursor dwarven societies, and colonists of the Elemental Planes populated moats of lava with crimson worms likely have some basis in truth, although the methods such ancients used to keep these \"moat worms\" contained and prevented them from chewing their way through fortress foundations must have been significant.</p>\n<p>Crimson worms sometimes frequent areas on the surface where volcanism creates hot springs or other geothermal features, but even then they prefer to spend most of their time burrowing through the ground in their never-ending search for sustenance. Surface lands claimed by crimson worms are notable for the mound-shaped burrows these creatures leave behind as they dig.</p>\n<hr />\n<p>Cave worms are gigantic scavengers that bore through the depths of the world, eating whatever material they find. Named for their distinctive colorations, these worms are ravenous and display overwhelming destructive capabilities. Cave worms of different colors and abilities lurk in the more remote corners of the world-tales speak of white worms that dwell within immense glaciers or icebergs and gray worms that burrow through the boneyards of long-forgotten ruins, to name a few.</p>",
+			"blurb": "Variant crimson worm",
+			"data":{},
+			"items":{}
+		},
+		"Aspect of Immortality": {
+			"name": "Aspect of Immortality",
+			"publicNotes": "<p>The Grim Reaper is the unflinching personification of death. Silent as the grave and as inevitable as time itself, this legendary being hunts down and finishes creatures that have evaded death for far too long. Sometimes the Grim Reaper comes without warning, while at others it comes to finish the work that other creatures could not. The Grim Reaper serves no god, fiend, or aeon. It is both despised and feared by psychopomps and celestials, but few-if any-dare to stand in its way. Like some eternal plague, it kills those who try to cure the multiverse of its presence. It stands alone and holds only its own council, and the pleading and reasoning of mortals and immortals alike fall on deaf ears once the Grim Reaper closes on its quarry. Its own reasoning is silent to mortal ears and inscrutable to the mortal mind, but no matter the reason, the result is unyielding and final.</p>\n<p>While some legends hold that the Grim Reaper appears before everyone as they die, the truth is quite a bit more disturbing. Such vigils in fact lie within the providence of the psychopomps, a race of immortals charged with the protection and guidance of mortal souls through the afterlife. The Grim Reaper has little interest in protecting souls or guiding them. It is instead compelled by sinister agendas arising within the nighted realm of Abaddon, where the Horsemen of the Apocalypse rule. Indeed there are many similarities in shape and form between the Grim Reaper and Charon, the Horseman of Death, but no recorded instance exists of these two powerful entities working together. Instead, the Grim Reaper serves as something of a manifestation of Abaddon itself, and in this regard is believed by some to be an incarnation of the mysterious First Horseman. When the Grim Reaper comes to a world, it does so not as an angel of mercy, but as a relentless harvester of life. Those who fall to the Grim Reaper were not destined to die as much as they were selected, hunted, and murdered.</p>\n<p>Perhaps the most frightening legends surrounding the Grim Reaper concern its nature as a singular entity, for some believe that more than one grim reaper exists in the Great Beyond. These whispers tell of a cabal of at least nine of these creatures that stalk reality, culling the living as inexplicable servants of true entropy. According to the teaching of some death cults, the final goal of the Grim Reaper is to end the entire cycle of life and death and serve as a silent lord of an empty universe.</p>",
+			"blurb": "Variant grim reaper",
+			"data":{},
+			"items":{}
+		},
+		"Aspect of Insects": {
+			"name": "Aspect of Insects",
+			"publicNotes": "<p>Fearsome centipede-like creatures, mukradis are three-headed predators with a devastating array of breath weapons. A Darklands version of the mukradi is rumored to exist. It's said these variant mukradis have black scales, and all of their heads spew a black, acidic goo that animates before being reabsorbed by the mukradis.</p>",
+			"blurb": "Variant mukradi",
+			"data":{},
+			"items":{}
+		},
+		"Auto-Turret": {
+			"name": "Auto-Turret",
+			"disable": "<p>@Check[type:thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (master) to disconnect the turret from its ammo supply system, or @Check[type:arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (master) to neutralize the magical targeting system.</p>\n<p>Tan‑Takneh can also deactivate one or both auto‑turrets remotely with a special command word.</p>",
+			"hazarddescription": "<p>A mounted gun equipped with a magical targeting system and integrated ammo supply.</p>",
+			"routine": "<p>(3 actions) With each action, the auto‑turret makes a longrifle Strike against a creature within 60 feet of Tan‑Takneh's campsite (other than Tan-Takneh). If there are no such creatures, the auto‑turret instead uses its action to sprout mechanical legs, totter 20 feet in the direction of its last target, and then plant itself into the ground again. Programmed to spread its fire around, the auto‑turret doesn't attack any creature it's already attacked in the round.</p>\n<p>After making 15 Strikes, the auto‑turret depletes its ammunition and automatically deactivates.</p>",
+			"stealthdetails": "<p>(expert); darkvision</p>",
+			"data":{},
+			"items":{}
+		},
+		"Avatar Of Walkena": {
+			"name": "Avatar Of Walkena",
+			"data":{},
+			"items":{}
+		},
+		"Ba'aupa Mdoudu": {
+			"name": "Ba'aupa Mdoudu",
+			"data":{},
+			"items":{}
+		},
+		"Bharlen Sajor": {
+			"name": "Bharlen Sajor",
+			"blurb": "Female graveknight",
+			"data":{},
+			"items":{}
+		},
+		"Biloko Reaver": {
+			"name": "Biloko Reaver",
+			"data":{},
+			"items":{}
+		},
+		"Binji": {
+			"name": "Binji",
+			"publicNotes": "<p>Gremlins arose long ago in the First World, living embodiments of nature's ability to wear away, erode, and decompose. On the Material Plane, their encounters with mortal civilizations twisted them into creatures devoted to chaos, sabotage, and traps, each variety specializing in a particular brand of mayhem.</p>\n<hr />\n<p>Even more than most gremlins, grimples resent the trappings of civilization: inn common rooms with their rowdy singalongs, livery yards with their whinnying horses, church steeples with their clanging bells. Grimples live to spoil these conventions, dropping tavern signs on patrons, urinating in rain barrels, and opening stable doors. When all else fails, they literally vomit their disdain on passersby.</p>\n<p>Grimples resemble humanoid, mange-ridden opossums, with boar-like tusks that aid them in rooting through garbage heaps for food. They are agile climbers who glide from eave to eave on the loose flaps of skin between their limbs. Savvy gremlin-hunters know to look for the skin flakes and fur grimples shed from their parasite-infested hides.</p>",
+			"data":{},
+			"items":{
+				"So Many Lice":{
+					"name": "So Many Lice",
+					"description": "<p>Whenever a living creature touches or is touched by a Binji (including via a successful unarmed melee Strike), it must succeed at a @Check[type:reflex|dc:15] save or become infested by gremlin lice.</p>\n<p>While infested, the targeted creature is distracted by the itching sensation and is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1}, though it can use an @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} action to scratch at the itching lice to suppress the stupefied condition from the lice for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p>The infestation ends after 24 hours or until the creature is submerged in water or exposed to a severe cold environment, whichever comes first.</p>"
+				},
+				"Putrid Vomit":{
+					"name": "Putrid Vomit",
+					"description": "<p>The binji spews a @Template[type:line|distance:30] of vomit. Each creature in the line must succeed at a @Check[type:fortitude|dc:16] save or become @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure).</p>\n<p>The binji can't use Putrid Vomit again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
+		},
+		"Bog Mummy Amalgamation": {
+			"name": "Bog Mummy Amalgamation",
+			"data":{},
+			"items":{}
+		},
+		"Boggard Hunter": {
+			"name": "Boggard Hunter",
+			"data":{},
+			"items":{}
+		},
+		"Boulder Deadfall Trap": {
+			"name": "Boulder Deadfall Trap",
+			"disable": "<p>@Check[type:crafting|dc:27|name:Disable the Plate|traits:mechanical,trap] (expert) or @Check[type:thievery|dc:25|name:Disable the Plate|traits:mechanical,trap] (expert) to find and disconnect the plate from the tipping mechanism</p>",
+			"hazarddescription": "<p>A weight-sensitive plate buried underneath sand pulls a boulder over a cliff ledge, causing it to fall on targets within the entrance.</p>",
+			"reset": "<p>Resetting the boulders in the trap is a labor-intensive project that takes 2 hours.</p>",
+			"stealthdetails": "<p>(trained); DC 0 to spot the balanced boulders</p>",
+			"data":{},
+			"items":{
+				"Deadfall":{
+					"name": "Deadfall",
+					"description": "<p><strong>Trigger</strong> A creature enters the area without taking care to avoid the hidden trigger plate</p>\n<hr />\n<p><strong>Effect</strong> Creatures within 10 feet of the cave entrance take [[/r {4d10+18}[bludgeoning]]]{4d10+18 bludgeoning damage} (@Check[type:reflex|dc:25|basic:true|name:Dodge Falling Rocks|traits:mechanical,trap] save).</p>"
+				}
+			}
+		},
+		"Bramblehand Champion Construct": {
+			"name": "Bramblehand Champion Construct",
+			"data":{},
+			"items":{
+				"equipment-Wooden Maul":{
+					"name": "Wooden Maul"
+				},
+				"strike-Wooden Maul":{
+					"name": "Wooden Maul"
+				},
+				"Critical Vulnerability":{
+					"name": "Critical Vulnerability",
+					"description": "<p>A critical hit damages the construct's controls, making it @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} until repaired. Additional critical hits increase this value, up to @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 4}.</p>"
+				},
+				"Ridden Construct":{
+					"name": "Ridden Construct",
+					"description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.BeptBpCJ4Ny4biOH]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+				},
+				"Hammer Block":{
+					"name": "Hammer Block",
+					"description": "<p><strong>Trigger</strong> An ally within the bramble champion's reach is targeted by an attack, and the bramble champion can see the attacker</p>\n<hr />\n<p><strong>Effect</strong> The bramble champion interposes with its hammer, giving the ally a +2 circumstance bonus to AC against the triggering attack.</p>"
+				}
+			}
+		},
+		"Cataclysm Beetle": {
+			"name": "Cataclysm Beetle",
+			"data":{},
+			"items":{}
+		},
+		"Centipede Carcasses Trap": {
+			"name": "Centipede Carcasses Trap",
+			"disable": "<p>@Check[type:nature|dc:23|name:Bend Carapace|traits:mechanical,trap] (trained) to bend the centipede carapace so the wire can't pull out any more legs, or @Check[type:thievery|dc:21|name:Cut Wires|traits:mechanical,trap] (expert) to cut the springy wires. After all three carcasses are disabled (regardless of the check used), the trap is deactivated. The trap automatically deactivates after 10 rounds.</p>",
+			"hazarddescription": "<p>Three giant centipede carcasses have wire springs that pull out and fling their sharpened legs around the room.</p>",
+			"routine": "<p>(1 action) Each creature within 30 feet of a centipede carcass that hasn't been disabled takes [[/r {6d4}[piercing]]]{6d4 piercing damage} (@Check[type:reflex|dc:22|basic:true|name:Avoid Carapace Strike|traits:mechanical,trap] save).</p>",
+			"stealthdetails": "<p>(trained)</p>",
+			"data":{},
+			"items":{
+				"Volley of Legs":{
+					"name": "Volley of Legs",
+					"description": "<p><strong>Trigger</strong> A carcass is touched or jostled</p>\n<hr />\n<p><strong>Effect</strong> Each creature within 30 feet of any centipede carcass takes [[/r {4d4}[piercing]]]{4d4 piercing damage} (@Check[type:reflex|dc:22|basic:true|name:Avoid Carapace Strike|traits:mechanical,trap] save), and the area becomes difficult terrain due to the many sharpened legs on the ground. Each creature that Strides more than 10 feet through the area must succeed at a @Check[type:acrobatics|dc:20|name:Avoid Piercing Terrain|traits:mechanical,trap] check or take [[/r {1d4}[piercing]]]{1d4 piercing damage}.</p>\n<p>The trap then rolls initiative.</p>"
+				}
+			}
+		},
+		"Chromatic Ooze": {
+			"name": "Chromatic Ooze",
+			"publicNotes": "<p>Chromatic oozes result from the worst kind of alchemical mishaps: attempts to combine as many types of elemental damage as possible into a single alchemical substance. Although the source of these alchemical concatenations are as varied as the alchemists who attempt to distill them, one of the most common methods for creating them involves combining the essences of multiple types of chromatic dragons together using eldritch alchemical processes. When this type of experimentation goes dangerously wrong-as it often does-the result is a combination of terrible elemental power with the mindless destructive power of an ooze. A chromatic ooze is a rippling, seething substance that shifts through several different colors, but chemical reactions within the ooze can lock its energy and its color into a specific phase for a short time. Whether a chromatic ooze's destructive urges derive from the frustrated ingenuity of an alchemist creator or from the hunger of the chromatic dragons that so often constitute these oozes' forms, the best way to deal with a chromatic ooze is to stay out of its way.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Clockwork Clock Tower": {
+			"name": "Clockwork Clock Tower",
+			"publicNotes": "<p>Clockworks are machines built by engineers and augmented with magic. A clock tower reconfigured as an animated clockwork can rotate slices of time.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Contemplative": {
+			"name": "Contemplative",
+			"publicNotes": "<p>Even the average contemplative demonstrates an intellect that far surpasses those of most other beings.</p>\n<hr />\n<p>The ancestors of the Contemplatives of Ashok were humanoids of vast intellect who unlocked occult powers. They deliberately evolved their mental faculties at the expense of their physical forms, and their atrophied bodies dangle beneath giant brains.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Contemplative Meditant": {
+			"name": "Contemplative Meditant",
+			"publicNotes": "<p>Contemplative meditants focus their meditations and research on the vexing topic of time itself.</p>\n<hr />\n<p>The ancestors of the Contemplatives of Ashok were humanoids of vast intellect who unlocked occult powers. They deliberately evolved their mental faculties at the expense of their physical forms, and their atrophied bodies dangle beneath giant brains.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Contemplative Mentor": {
+			"name": "Contemplative Mentor",
+			"publicNotes": "<p>As they near the next phase of their journey through existence, contemplative mentors split their time between unlocking the highest secrets of time and space, and guiding their students and less-talented peers.</p>\n<hr />\n<p>The ancestors of the Contemplatives of Ashok were humanoids of vast intellect who unlocked occult powers. They deliberately evolved their mental faculties at the expense of their physical forms, and their atrophied bodies dangle beneath giant brains.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Cookie": {
+			"name": "Cookie",
+			"publicNotes": "<p>In rough Akitonian cities like Seldo, shobhad bruisers and fist-fighters act as protection for businesses and enforcers for crime bosses. Shobhad enforcers are more rare and far more dangerous. In the wilds of Akiton, shobhad enforcers protect wealthy caravans using combat techniques honed and proven over multiple generations to devastate any creature that might mistake the caravan as an attractive target for a raid. \"Enforcer\" is a loose translation of a word in the Shobhad language that is only granted to a warrior who has proven themselves in combat against one of the deadly threats of the Akitonian desert, such as gluttonworms or ikeshti riveners. Every enforcer is a battle-tested veteran with the scars to prove their prowess.</p>\n<hr />\n<p>These four-armed humanoids often live as nomads on Akiton. Self-sufficient and able to construct the equipment they need to survive from natural materials, shobhads traditionally avoid large cities and the smaller people of the planet, except to engage in trade. Some shobhads eschew these traditions, finding life in urban centers to be more appealing. Rifts between these shobhads and those who continue to lead nomadic lives in the Akitonian wilderness sometimes lead to clashes when members of the two societies meet.</p>\n<p>Shobhads are highly sought after for their martial expertise, unparalleled knowledge of Akiton's wilds, and unbreakable codes of honor. These warriors may operate independently, in their traditional clans, or in modern mercenary companies that blend ancestral traditions with the needs of modern military freelancers.</p>",
+			"blurb": "Male shobhad enforcer",
+			"data":{},
+			"items":{}
+		},
+		"Crawling Slurry": {
+			"name": "Crawling Slurry",
+			"publicNotes": "<p>Acid damage can scar stone and reduce flesh to pitted chunks, but some organic compounds are resistant to acid and respond by combining into a mass of roiling, living slurry. These scarred clumps hunger to consume anything they can sense. They move with quick, darting contractions that surprise those used to facing slow-moving oozes.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Crimson Acolyte": {
+			"name": "Crimson Acolyte",
+			"blurb": "Human devotee",
+			"data":{},
+			"items":{}
+		},
+		"Cyclops Bully": {
+			"name": "Cyclops Bully",
+			"blurb": "Cyclops bruisers",
+			"data":{},
+			"items":{}
+		},
+		"Dajermube": {
+			"name": "Dajermube",
+			"publicNotes": "<p>This undead guardian stands amid a whirling swarm of shackled spirits that rage against their fate. Bound by a profane necromantic ritual, a nemhaith and its servitors maintain watch over an object or place so important they embraced undeath to guard it. This ritual binds connected beings-friends, family, fellow worshippers, or even sacrificed innocents-to form a single nemhaith.</p>\n<p>Most nemhaiths were, in life, priests or protectors who sought immortality to protect the temple they served or guard an important landmark. Others follow an endless and even impossible quest beyond the bounds of life and death. A nemhaith is not always evil at first, but the inherent evil and violence of a nemhaith's existence inevitably darkens even the brightest light.</p>",
+			"blurb": "Female elite nemhaith",
+			"data":{},
+			"items":{}
+		},
+		"Damibwa": {
+			"name": "Damibwa",
+			"publicNotes": "<p>Damibwas are domesticated hounds capable of detecting prey or predators via echolocation thanks to their exceptionally large ears and keen hearing. Adept swimmers, damibwas have sleek bodies, short limbs, webbed feet, and long muscular tails that enable them to maneuver underwater with grace and speed.</p>\n<p>Trained as specialized hunting hounds, damibwas primarily catch fish, although they're also adept at diving for lobsters, crabs, and clams. While hunting, damibwas wait near the water's edge, typically on a boat or along the shore, listening for choice prey. When they detect prey in range, they dive down below the water, catch the animal in their jaws, and drag it back up to the surface. When large or dangerous aquatic predators approach, damibwas retreat to land and howl a warning, making them desirable guard dogs in coastal or riverside communities. Damibwas rarely attack terrestrial creatures unless they're threatened and unable to make an escape.</p>\n<p>Damibwas are popular pets along rivers, lakes, and swamps throughout Golarion, particularly in the River Kingdoms, Wanshou, and the canals of Nantambu in the Mwangi Expanse. Some Erutaki in Avistan's far north hunt seals alongside a particular hardy breed covered in thick fur and a layer of blubber. They are only universally called damibwas in the Mwangi Expanse, and are often called \"diving dogs\" in other regions.</p>",
+			"data":{},
+			"items":{
+				"Deep Breath":{
+					"name": "Deep Breath",
+					"description": "<p>A damibwa can hold its breath for 5 minutes.</p>"
+				},
+				"Echolocation 60 feet":{
+					"name": "Echolocation 60 feet",
+					"description": "<p>A damibwa's hearing is a precise sense at the listed range.</p>"
+				},
+				"Fetch":{
+					"name": "Fetch",
+					"description": "<p><strong>Requirements</strong> The damibwa has a Small or smaller creature grabbed in water</p>\n<hr />\n<p><strong>Effect</strong> The damibwa attempts an @Check[type:athletics|name:Drag grabbed Creature Check|showDC:all] check against the creature's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The damibwa moves up to its swim Speed, dragging the @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} creature along with it.</p>\n<p><strong>Success</strong> The damibwa moves up to half its swim Speed, dragging the grabbed creature along with it.</p>\n<p><strong>Failure</strong> The damibwa doesn't move and the creature isn't dragged.</p>\n<p><strong>Critical Failure</strong> The damibwa no longer has the creature grabbed.</p>"
+				},
+				"Predatory Dive":{
+					"name": "Predatory Dive",
+					"description": "<p><strong>Requirements</strong> The damibwa is in or adjacent to water</p>\n<hr />\n<p><strong>Effect</strong> The damibwa moves up to double its swim Speed, descending at least 10 feet, and then makes a jaws Strike. If it was @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} at the start of predatory dive, it remains undetected until after the attack.</p>"
+				}
+			}
+		},
+		"Deathly Dream": {
+			"name": "Deathly Dream",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (master) to seal the rift using materials strongly grounded to the Material Plane, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th‑level, counteract DC 33) to counteract the portal.</p>",
+			"hazarddescription": "<p>Sinister runes adorn the doorway, opening a portal to a realm of nightmares if anyone other than Dwandek opens the door.</p>",
+			"reset": "<p>The deathly dream trap resets automatically as long as it hasn't been disabled or destroyed. Each time it resets, the tiny pocket plane of nightmare it sends its victim into resets as well, so no two victims will ever share the same deathly dream.</p>",
+			"stealthdetails": "<p>(master)</p>",
+			"data":{},
+			"items":{}
+		},
+		"Dimari-Diji": {
+			"name": "Dimari-Diji",
+			"blurb": "Male arboreal nature-speaker",
+			"data":{},
+			"items":{}
+		},
+		"Drenchdead": {
+			"name": "Drenchdead",
+			"data":{},
+			"items":{}
+		},
+		"Dwandek": {
+			"name": "Dwandek",
+			"publicNotes": "<p>A wizard whose insatiable desire for arcane power eclipsed their mortal life, the lich is a truly devious and versatile spellcaster.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a <em>soul cage</em>, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history-both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its <em>soul cage</em>, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its <em>soul cage</em> is a sure way to gain the upper hand in such a negotiation.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Electrified Water Ward": {
+			"name": "Electrified Water Ward",
+			"disable": "<p>@Check[type:thievery|dc:26|name:Bleed away trap energy|traits:complex,magical,trap] (expert), @Check[type:arcana|dc:28|name:Bleed away trap energy|traits:complex,magical,trap] (expert), or @Check[type:occultism|dc:28|name:Bleed away trap energy|traits:complex,magical,trap] (expert) to harmlessly bleed away the electrical energy from the rune. Once the trap has been activated, the electrical energy is stronger, so three successful checks (of any combination of the relevant skills) are necessary to deactivate it, but these checks can be attempted from anywhere in the room.</p>",
+			"hazarddescription": "<p>Passing over an invisible rune on the floor between the north and south doors triggers a dancing burst of electricity.</p>",
+			"reset": "<p>The pulses stop as soon as no creatures are in the hallway, and then reset after 1 hour.</p>",
+			"routine": "<p>(1 action) The trap deals [[/r {4d10}[electricity]]]{4d10 electricity damage} (@Check[type:reflex|dc:26|basic:true|name:Avoid Electrical Shock|traits:complex,magical,trap,arcane,electricity,evocation] save) to all creatures in the room. A creature that fails the save is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). A creature that isn't touching the water treats the result of its saving throw as one degree of success better.</p>",
+			"stealthdetails": "<p>(expert)</p>",
+			"data":{},
+			"items":{
+				"Electrocution":{
+					"name": "Electrocution",
+					"description": "<p><strong>Trigger</strong> A creature passes over the invisible underwater rune between the north and south doors</p>\n<hr />\n<p><strong>Effect</strong> The trap deals [[/r {4d10}[electricity]]]{4d10 electricity damage} (@Check[type:reflex|dc:26|basic:true|name:Avoid Electrical Shock|traits:complex,magical,trap] save) to creatures touching the water, and then rolls initiative.</p>"
+				}
+			}
+		},
+		"Entropy Choir": {
+			"name": "Entropy Choir",
+			"disable": "<p>@Check[type:religion|dc:40|name:Exorcise the Spirits|traits:haunt,hazard] (master) to exorcise the spirits and break the power binding them into a single entity, or @Check[type:performance|dc:35|name:Counter the Choir|traits:haunt,hazard] (expert) to counter the choir and nullify the destructive elements of its song</p>",
+			"hazarddescription": "<p>A choir of ghostly shadows fill the benches in this room, chanting a haunting and unearthly melody.</p>",
+			"reset": "<p>The entropy choir resets automatically after 24 hours, even if it has been disabled or destroyed. It fades away forever once Dwandek and other members of the cult to which it sings its praises are destroyed.</p>",
+			"routine": "<p>(3 actions; auditory, divine, evocation, sonic) The choir continues to sing its grim dirge every round until it is disabled or destroyed. If there are any non‑slowed living creatures in area <strong>A3</strong> when its turn starts, it first uses Call to Nothingness as a single action.</p>\n<p>It uses its remaining actions (or all three actions if there are slowed living creatures in the room already) to focus soul‑shattering choruses onto individual targets.</p>\n<p>The choir can target any living creature in area <strong>A3</strong> with an action, but never more than once per round per creature. It prefers to attack slowed creatures over all others, but it targets non‑slowed creatures if they're the only viable targets. A targeted creature must attempt a @Check[type:fortitude|dc:36|traits:auditory,divine,evocation,sonic] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes [[/r {5d6}[sonic]]]{5d6 sonic damage}.</p>\n<p><strong>Failure</strong> The target takes [[/r {10d6}[sonic]]]{10d6 sonic damage}.</p>\n<p><strong>Critical Failure</strong> The target takes [[/r {15d6}[sonic]]]{15d6 sonic damage} and increases their @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained} condition by 1, to a maximum of drained 4.</p>",
+			"stealthdetails": "<p><strong>Performance</strong> +33 (master); creatures in the area automatically notice the eerily swaying shadows</p>",
+			"data":{},
+			"items":{}
+		},
+		"Fire-pot Ubanu": {
+			"name": "Fire-pot Ubanu",
+			"data":{},
+			"items":{
+				"equipment-Smock":{
+					"name": "Smock",
+					"description": "<p>This smock acts as padded armor.</p>\n<hr />\n<p>This armor is simply a layer of heavy, quilted cloth, but it is sometimes used because it's so inexpensive. Padded armor is easier to damage and destroy than other types of armor. Heavy armor comes with a padded armor undercoat included in its Price, though it loses the comfort trait when worn under heavy armor. You can wear just that padded armor or undercoat to sleep in, if your heavy armor is destroyed, or when otherwise not wearing the full heavy armor. This allows you to keep the armor invested and benefit from the power of any runes on the associated heavy armor, but no one else can wear your heavy armor without the padded undercoat.</p>"
+				},
+				"Infused Items":{
+					"name": "Infused Items",
+					"description": "<p>Ubanu carries these infused items: 8 moderate alchemist's fires, 2 lesser elixirs of life, and 2 moderate tanglefoot bags. These items last for 24 hours, or until the next time Ubanu makes his daily preparations.</p>"
+				},
+				"Distracting Spells":{
+					"name": "Distracting Spells",
+					"description": "<p>Creatures who fail a saving throw against one of Ubanu's spells are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to his attacks until the end of his turn or until the end of his next turn on a critical failure.</p>"
+				},
+				"Quick Bomber":{
+					"name": "Quick Bomber",
+					"description": "<p>Ubanu Interacts to draw a bomb, then Strikes with it.</p>"
+				}
+			}
+		},
+		"Flensing Chute": {
+			"name": "Flensing Chute",
+			"disable": "<p>@Check[type:thievery|dc:35|name:Decouple Mechanisms|traits:mechanical,trap,hazard] (master) to decouple several mechanisms barely accessible through gaps between the shifting risers, or @Check[type:perception|dc:38|name:mechanical,trap,hazard|traits:Note Stairs Wear Patterns DC] to note which stairs have slightly different wear patterns to know which ones are safe to step on</p>",
+			"hazarddescription": "<p>The stairs collapse into a downward spiral.</p>",
+			"reset": "<p>The flensing chute resets automatically.</p>",
+			"stealthdetails": "<p>(master)</p>",
+			"data":{},
+			"items":{}
+		},
+		"Formian Mageslayer": {
+			"name": "Formian Mageslayer",
+			"publicNotes": "<p>Grim, twisted formians forced into existence through the machinations of the King of Biting Ants, formian mageslayers are created for the express purpose of neutralizing and destroying enemy spellcasters. Wired to never sleep, mageslayers are tortured hunters and guardians whose only relief is found in tearing apart the magic and flesh of spellcasters who oppose the King of Biting Ants. Formian mageslayers have wings resembling those of dragonflies and longer, sleeker bodies than most formians.</p>\n<hr />\n<p>Formians resemble unusually large ants with an insectile humanoid's upper torso. More powerful or influential formians are physically larger; common formian workers are roughly the height of a gnome, while the largest formians, such as taskmasters and queens, rival a giant in size.</p>\n<p>Formian society is a strict matriarchy. Though each hive's queen is theoretically independent and her rule absolute, allegiances are common, and less powerful hives often (grudgingly) defer to more powerful matriarchs.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Formian Queen": {
+			"name": "Formian Queen",
+			"publicNotes": "<p>The formian queen is the center of the formian hive. The queen identifies and attends to the hive's needs, laying egg clusters that vary from a single formian born to a particular task to hundreds of workers at a time. All formians are born with an instinctive deference for the queen that borders on slavish devotion, though this urge can be corrupted, as with the King of Biting Ants' mutant mageslayers.</p>\n<hr />\n<p>Formians resemble unusually large ants with an insectile humanoid's upper torso. More powerful or influential formians are physically larger; common formian workers are roughly the height of a gnome, while the largest formians, such as taskmasters and queens, rival a giant in size.</p>\n<p>Formian society is a strict matriarchy. Though each hive's queen is theoretically independent and her rule absolute, allegiances are common, and less powerful hives often (grudgingly) defer to more powerful matriarchs.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Formian Worker": {
+			"name": "Formian Worker",
+			"publicNotes": "<p>By far the most common formian on Akiton, workers are focused and industrious, naturally skilled at manual labor and coordinating with peers.</p>\n<hr />\n<p>Formians resemble unusually large ants with an insectile humanoid's upper torso. More powerful or influential formians are physically larger; common formian workers are roughly the height of a gnome, while the largest formians, such as taskmasters and queens, rival a giant in size.</p>\n<p>Formian society is a strict matriarchy. Though each hive's queen is theoretically independent and her rule absolute, allegiances are common, and less powerful hives often (grudgingly) defer to more powerful matriarchs.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Froglegs": {
+			"name": "Froglegs",
+			"data":{},
+			"items":{
+				"strike-Habu's Cudgel":{
+					"name": "Habu's Cudgel"
+				},
+				"Deny Advantage":{
+					"name": "Deny Advantage",
+					"description": "<p>Froglegs isn't @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to creatures of 8th level or lower that are @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using surprise attack.</p>"
+				},
+				"Knife Fighter":{
+					"name": "Knife Fighter",
+					"description": "<p>Froglegs deals an additional 2d6 precision damage with weapons from the knife group, and knives gain the deadly d10 weapon property while she wields them. (Already added to dagger attacks)</p>"
+				},
+				"Roll and Snatch":{
+					"name": "Roll and Snatch",
+					"description": "<p><strong>Trigger</strong> Froglegs successfully Tumbles Through an enemy's space</p>\n<hr />\n<p><strong>Effect</strong> Froglegs attempts to @UUID[Compendium.pf2e.action-macros.ooiO59Ch2QaebOmc]{Disarm: Athletics} or @UUID[Compendium.pf2e.action-macros.gRj7xUfcpUZQLrOC]{Trip: Athletics} the enemy. She can use her tongue for this attempt and does not need to have a free hand.</p>"
+				},
+				"Twin Slash":{
+					"name": "Twin Slash",
+					"description": "<p>Froglegs makes two dagger Strikes.</p>"
+				}
+			}
+		},
+		"Gambulami": {
+			"name": "Gambulami",
+			"data":{},
+			"items":{}
+		},
+		"Gbahali": {
+			"name": "Gbahali",
+			"publicNotes": "<p>Resembling an enormous, long-legged alligator, the gbahali is larger, stronger, faster, and more cunning than all but the largest of its crocodilian kin. Gbahalis will range far from the banks of the rivers they inhabit to seek prey. With a powerful, squat snout, a gbahali viciously bites their quarry, while their powerful hind legs allow them to leap upon fleeing creatures or stride away to safety when threatened.</p>\n<p>Gbahalis are solitary creatures, splitting their time between the rivers that offer easy meals of fish and aquatic snakes and stalking the edges of the hunting territories of larger, meatier prey. Given the option, gbahalis much prefer warm-blooded food, but a hungry or injured gbahali remains near a river where it can more easily consume large fish, snakes, or even crocodiles until it's ready to hunt its preferred quarry once again. An adult gbahali can quickly take down and consume livestock, leaving no sign of its meals but enormous scuffed tracks in the ground, as its jaws are large enough to swallow many creatures whole.</p>\n<p>Gbahalis have a basic understanding of humanoid behavior. A gbahali learns quickly to evade trackers and traps, and can skillfully hunt along the fringes of a settlement for months before its presence becomes known. They usually avoid humanoid prey, even when hungry; they know that humanoid communities may hunt them in dogged retaliation for feasting upon a humanoid. Gbahalis therefore prefer to hunt far-ranging livestock like ranch or grazing animals. If another predator threatens a gbahali's territory, it might attack a humanoid, leave messy remains strewn about, and then retreat from the area for several weeks. In this time, it hopes the angry humanoids will hunt and kill its rival, leaving the gbahali an uncontested hunting ground when it returns.</p>",
+			"data":{},
+			"items":{
+				"Deep Breath":{
+					"name": "Deep Breath",
+					"description": "<p>A gbahali can hold its breath for 2 hours.</p>"
+				},
+				"Aquatic Ambush 40 feet":{
+					"name": "Aquatic Ambush 40 feet",
+					"description": "<p>40 feet</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
+				},
+				"Powerful Jumper":{
+					"name": "Powerful Jumper",
+					"description": "<p>A gbahali jumps 10 feet up on a successful @UUID[Compendium.pf2e.action-macros.v3dlDjFlOmT5T2gC]{High Jump: Athletics} or 20 feet up on a critical success.</p>"
+				},
+				"Swallow Whole":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>Medium, [[/r {2d8+7}[bludgeoning]]]{2d8+7 bludgeoning}, Rupture 20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				}
+			}
+		},
+		"Giant Goliath Beetle": {
+			"name": "Giant Goliath Beetle",
+			"data":{},
+			"items":{
+				"Trample":{
+					"name": "践踏 Trample",
+					"description": "<p>Medium or smaller, foot, @Check[type:reflex|dc:19|basic:true|name:Avoid Trample]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
+		},
+		"Giant Mining Bee": {
+			"name": "Giant Mining Bee",
+			"publicNotes": "<p>Giant mining bees have smaller bodies than giant worker bees but sometimes look larger due to their bristles, which resemble fur. They dig tunnels in sand, old wood, or stone to create nests and aggressively defend their lairs. Although not truly subterranean, giant mining bees are the most likely type of giant bees to be found underground, and some dwarf apiarists breed and train them.</p>\n<hr />\n<p>Like their smaller counterparts, giant bees are highly territorial. Many types of giant bees construct hives in caves or abandoned buildings and are quick to attack creatures that they deem a threat to the single fertile queen, who almost never leaves the hive. Although most common in warm biomes with lots of vegetation, some giant bees live in arid or cold environments and are solitary rather than hive-dwelling.</p>",
+			"data":{},
+			"items":{
+				"Smoke Susceptibility":{
+					"name": "Smoke Susceptibility",
+					"description": "<p>A giant bee is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round if it starts its turn in heavy smoke.</p>"
+				}
+			}
+		},
+		"Giant Silverfish": {
+			"name": "Giant Silverfish",
+			"publicNotes": "<p>It's uncommon for silverfish to congregate in sufficient numbers to constitute a swarm, but forgotten libraries or similar out-of-the-way places might harbor a multitude of the voracious pests.</p>\n<hr />\n<p>A common pest with a silvery carapace and an undulating, fishlike scuttle, the nocturnal silverfish infests homes and libraries throughout Golarion. These insects aren't typically dangerous, but their tendency to devour books and clothing often puts them at odds with larger creatures.</p>",
+			"data":{},
+			"items":{
+				"Voracious Consumption":{
+					"name": "Voracious Consumption",
+					"description": "<p>Action 1 minute</p>\n<p>A giant silverfish consumes up to 1 Bulk of paper, cloth, or similar material. It can consume up to 8 Bulk each day.</p>"
+				},
+				"Wriggle":{
+					"name": "Wriggle",
+					"description": "<p><strong>Trigger</strong> A creature the giant silverfish can see targets it with an attack</p>\n<hr />\n<p><strong>Effect</strong> The giant silverfish gains a +2 circumstance bonus to AC against the triggering attack. After the attack resolves, the silverfish Steps.</p>"
+				}
+			}
+		},
+		"Giant Tsetse Fly": {
+			"name": "Giant Tsetse Fly",
+			"publicNotes": "<p>This blood-sucking fly, the size of a horse, is widely despised as a harbinger of disease. Giant tsetse flies rarely congregate in large numbers, as they require gallons of blood each day to survive and thus crowd out or drive away rivals. Any group of creatures large enough to sustain multiple tsetse flies, such as a herd of dinosaurs, are quite likely to dominate the surrounding ecosystem on their own right.</p>\n<p>A single giant tsetse fly can kill an entire herd of large animals within a few weeks, and those they don't kill often succumb to disease. When not hunting, giant tsetse flies prefer to hide in warm, dark places in forests and swamps, though they sometimes inhabit wet cave systems where prey is plentiful. The thrumming drone of their wings echoes around such cave systems, warning travelers familiar with the noise that the creatures are lairing nearby.</p>\n<p>If food becomes scarce, a giant tsetse fly relocates elsewhere. They tend to follow rivers, animal tracks, or even roads to find food. This can take them to the fringes of civilization, where farms and ranches often have livestock that draws their attention. Settlers who find evidence of a giant tsetse fly should quickly seek out help to eliminate the pests, as all their animals (and, indeed, their families) are in jeopardy as long as the hungry insect is near.</p>\n<p>Giant tsetse flies are only moderately smarter than ordinary flies, but some creatures have learned that they can train the creatures with frequent offerings of fresh blood. Giant tsetse flies might therefore be put to use as guardians or even mounts, but any potential trainer must take care not to become the voracious insect's next meal.</p>",
+			"data":{},
+			"items":{
+				"9jgsemNqiooGONxn":{
+					"name": "血液嗅觉",
+					"description": "<p>The giant tsetse fly can detect blood within 30 feet. This is a precise sense against creatures within 30 feet that are bleeding.</p>"
+				},
+				"Blood Draw":{
+					"name": "Blood Draw",
+					"description": "<p>If the fly's last action was a successful proboscis Strike, it sucks its target's blood. The target takes @Localize[PF2E.PersistentDamage.Bleed1d4.success] (or @Localize[PF2E.PersistentDamage.Bleed1d6.success] if the target is an animal).</p>"
+				},
+				"Sleeping Sickness":{
+					"name": "Sleeping Sickness",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 day)</p>\n<p><strong>Stage 2</strong> enfeebled 1 and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}</p>\n<p>(1 day)</p>\n<p><strong>Stage 4</strong> as Stage 3 (1 day)</p>\n<p><strong>Stage 5</strong> dead</p>"
+				}
+			}
+		},
+		"Giant Worker Bee": {
+			"name": "Giant Worker Bee",
+			"publicNotes": "<p>Worker bees, exclusively female, exist to feed and defend a hive. They have no qualms about sacrificing their lives when confronting intruders in their territory. Worker bees can fight singly, in small groups, or in swarms of dozens. Giant worker bees inject a venom with their stings, but this venom is rarely dangerous except to people sensitive to it. Other worker bees have no stinger and only bite their enemies.</p>\n<hr />\n<p>Like their smaller counterparts, giant bees are highly territorial. Many types of giant bees construct hives in caves or abandoned buildings and are quick to attack creatures that they deem a threat to the single fertile queen, who almost never leaves the hive. Although most common in warm biomes with lots of vegetation, some giant bees live in arid or cold environments and are solitary rather than hive-dwelling.</p>",
+			"data":{},
+			"items":{
+				"Smoke Susceptibility":{
+					"name": "Smoke Susceptibility",
+					"description": "<p>A giant bee is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round if it starts its turn in heavy smoke.</p>"
+				}
+			}
+		},
+		"Gluttonworm": {
+			"name": "Gluttonworm",
+			"publicNotes": "<p>Akiton's gluttonworms share many features of Golarion's cave worms, yet these immense predators are their own distinct species. Gluttonworms \"swim\" through the vast deserts of Akiton, moving almost like whales through the ocean as they forage for their next meals.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Gnagrif": {
+			"name": "Gnagrif",
+			"publicNotes": "<p>Squat, surly, and perpetually covered in wet mud, gnagrifs are gremlins that infest and destroy homes. They possess sharklike faces and two sets of jaws, allowing them to open their mouths 180 degrees and clamp onto flat rocks and walls. They delight in keeping their presence hidden, chewing holes into walls and foundations that weaken structures but don't bring them down until their inhabitants slam their doors too hard or step in the wrong place. Soon as the unwitting victims spring the trap, the building collapses around them.</p>\n<p>Like all fey, gnagrifs detest iron. Gnagrifs become obsessively vengeful if they accidentally swallow an iron nail or hinge, terrorizing families or whole villages for generations over the slight.</p>\n<hr />\n<p>Gremlins are malicious fey that infest and prey upon mortal communities. They live in tunnels, beneath eaves, and in abandoned buildings, stealing what they need from their neighbors instead of creating for themselves.</p>\n<p>While there are gremlins of any and every gender, their appearances don't differ by gender. Young gremlins grow to maturity with alarming speed. Their entire nest raises them communally, though they are often encouraged to wander unsupervised and create mischief away from home instead of inside it.</p>",
+			"data":{},
+			"items":{
+				"Rubble Stride":{
+					"name": "Rubble Stride",
+					"description": "<p>A gnagrif ignores difficult terrain caused by rocks or rubble, including squares affected by their Stomp Around.</p>"
+				},
+				"Soften Stone":{
+					"name": "Soften Stone",
+					"description": "<p><strong>Trigger</strong> A creature Strides or Steps into difficult terrain adjacent to the gnagrif</p>\n<hr />\n<p><strong>Effect</strong> The gnagrif gives the ground a hearty pound and it shifts beneath the triggering creature's feet. The triggering creature must succeed on a @Check[type:reflex|dc:18] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				},
+				"Stomp Around":{
+					"name": "Stomp Around",
+					"description": "<p>The gnagrif huffs and stamps its feet, churning the ground around it. The square it is in and all unoccupied adjacent squares become difficult terrain.</p>"
+				},
+				"Lurk":{
+					"name": "Lurk",
+					"description": "<p><strong>Requirements</strong> A structure made from stone or earth is within the gnagrif's reach</p>\n<hr />\n<p><strong>Effect</strong> The gnagrif partially melds with the stone. It Takes Cover in the stone and makes a Stealth check to @UUID[Compendium.pf2e.action-macros.FlM3HvpnsZpCKawG]{Hide: Stealth}.</p>"
+				},
+				"Eat Rocks":{
+					"name": "Eat Rocks",
+					"description": "<p>The gnagrif gnashes and tears at an object or structure, dealing [[/r {2d4+2}[piercing]]]{2d4+2 piercing damage} and ignoring Hardness 2 or lower.</p>"
+				},
+				"Wrecker":{
+					"name": "Wrecker",
+					"description": "<p>Whenever two or more gnagrifs use Eat Rocks on the same object or structure, the value of Hardness they can ignore increases by 1 for every gnagrif, to a maximum of Hardness 10.</p>"
+				}
+			}
+		},
+		"Gold Defender": {
+			"name": "Gold Defender",
+			"data":{},
+			"items":{}
+		},
+		"Gold Defender Garrison": {
+			"name": "Gold Defender Garrison",
+			"data":{},
+			"items":{}
+		},
+		"Golgopo": {
+			"name": "Golgopo",
+			"publicNotes": "<p>As their empire crumbled and fell into ruin, many cyclopes turned to increasingly depraved and vicious rituals to enhance their divinations and oracular powers. Some, especially those too fearful or suspicious of their fellow cyclopes to collaborate, constructed servants known as golgopos to aid in their rituals. These squat creatures are made from ancient bones dredged from fetid swamps and packed with mud to resemble a squat humanoid. Their heads are little more than the skull of whatever creature's bones were used in their creation with an extra eye socket punched in the forehead, glowing with eerie light.</p>\n<p>Golgopos spend most of their time perched on the shoulder of a cyclops master, acting as secondary casters for foul rituals and casting spells to aid them as needed. Golgopos are generally not evil, however, and one whose master has abandoned them or been destroyed might be convinced to employ their knowledge of ritual magic in service of another.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Grave Karina": {
+			"name": "Grave Karina",
+			"data":{},
+			"items":{}
+		},
+		"Graveknight Captain": {
+			"name": "Graveknight Captain",
+			"data":{},
+			"items":{}
+		},
+		"Graveknight Champion": {
+			"name": "Graveknight Champion",
+			"data":{},
+			"items":{}
+		},
+		"Great Grodair": {
+			"name": "Great Grodair",
+			"data":{},
+			"items":{
+				"Death Flood":{
+					"name": "Death Flood",
+					"description": "<p>When the great grodair dies, his body explodes in a blast of pressurized water that deals [[/r {6d6}[bludgeoning]]]{6d6 bludgeoning damage} to creatures within a @Template[type:emanation|distance:15] (@Check[type:reflex|dc:25|basic:true|traits:amphibious,beast,fey] save). A creature that fails its save is pushed 5 feet (or 10 feet on a critical failure).</p>"
+				},
+				"Muddy Field":{
+					"name": "Muddy Field",
+					"description": "<p>The great grodair transforms all soil, sand, or similar sediment in a @Template[type:emanation|distance:10] into mud for 1 round. This mud is difficult terrain for creatures other than grodairs.</p>"
+				},
+				"Organ of Endless Water":{
+					"name": "Organ of Endless Water",
+					"description": "<p>The great grodair causes water to pour from a magical sac on his spine, either a stream of water at a rate of 1 gallon per round, or a fountain in a 5-foot-long stream at a rate of 5 gallons per round. He can stop the flow of water as a single action.</p>"
+				}
+			}
+		},
+		"Grippli Jinxer": {
+			"name": "Grippli Jinxer",
+			"publicNotes": "<p>Baneback gripplis with innate magical ability may find themselves drawn to vile magic dealing with poison, vermin, and ill luck. Those who revel in the dreadful legends surrounding their kind often worship evil gods or demons associated with poison, tattooing themselves with mystic symbols to gain powerful control over toxins.</p>\n<hr />\n<p>Gripplis are small, frog-like humanoids native to tropical rainforests. Most gripplis live in tight-knit treetop villages and survive primarily as hunters and gatherers. While most communities are peaceful and harmonious, a lingering superstition has led to a unique group of these people being cut off from their communal bonds and forced to make their own way in the world.</p>\n<p>Among the many gripplis who possess poison glands, a rare subset secrete mind-altering chemicals. These gripplis aren't immune to this toxin, and over many years it may render them erratic at best and selfishly misanthropic at worst. Other gripplis view these \"banebacks\" as cursed and react to their presence with fear and mistrust, which usually leads to their censure and exile. They soon find that their natural skills as hunters, combined with an unlimited supply of their potent toxin, make them ideally suited to taking on work as mercenaries, bandits, or assassins.</p>",
+			"data":{},
+			"items":{
+				"Hypnotic Tattoos":{
+					"name": "Hypnotic Tattoos",
+					"description": "<p><strong>Trigger</strong> A hostile creature targets the jinxer with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Tattoos on the jinxer's body swirl and shift in mesmerizing patterns. The creature must attempt a @Check[type:will|dc:22|name:Hypnotic Pattern|traits:grippli,humanoid] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected and is temporarily immune for 1 hour.</p>\n<p><strong>Success</strong> The creature is unaffected and is temporarily immune for 1 minute.</p>\n<p><strong>Failure</strong> The creature treats the jinxer as @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} until the end of its turn.</p>\n<p><strong>Critical Failure</strong> The creature treats the jinxer as @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} until the end of its turn.</p>"
+				},
+				"Baneback Poison":{
+					"name": "Baneback Poison",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:24]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d4}[poison]]]{1d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {3d4}[poison]]]{2d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {4d4}[poison]]]{2d4 poison damage}, @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3}, and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>"
+				},
+				"Curse of Baneful Venom":{
+					"name": "Curse of Baneful Venom",
+					"description": "<p>The jinxer magically intensifies toxins in their foes. Creatures within 30 feet of the jinxer that are currently afflicted by a poison immediately attempt their next saving throw against the poison with a -2 status penalty, then are temporarily immune to Curse of Baleful Venom for 1 hour.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Tkf33YglEZcZ6gOT]{Effect: Curse of the Baneful Venom}</p>"
+				},
+				"Jungle Stride":{
+					"name": "Jungle Stride",
+					"description": "<p>Gripplis ignore difficult terrain in forests and jungles.</p>"
+				}
+			}
+		},
+		"Grippli Skirmisher": {
+			"name": "Grippli Skirmisher",
+			"publicNotes": "<p>Skirmishers are jittery baneback hunters or ambushers. Although they often fight in groups, they aren't loyal to each other and sometimes leave one member of the group behind to face punishment while the others flee.</p>\n<hr />\n<p>Gripplis are small, frog-like humanoids native to tropical rainforests. Most gripplis live in tight-knit treetop villages and survive primarily as hunters and gatherers. While most communities are peaceful and harmonious, a lingering superstition has led to a unique group of these people being cut off from their communal bonds and forced to make their own way in the world.</p>\n<p>Among the many gripplis who possess poison glands, a rare subset secrete mind-altering chemicals. These gripplis aren't immune to this toxin, and over many years it may render them erratic at best and selfishly misanthropic at worst. Other gripplis view these \"banebacks\" as cursed and react to their presence with fear and mistrust, which usually leads to their censure and exile. They soon find that their natural skills as hunters, combined with an unlimited supply of their potent toxin, make them ideally suited to taking on work as mercenaries, bandits, or assassins.</p>",
+			"data":{},
+			"items":{
+				"Springing Step":{
+					"name": "Springing Step",
+					"description": "<p>When the skirmisher uses the Step action they ignore difficult terrain and may move up to 10 feet instead of 5 feet.</p>"
+				},
+				"Hopping Dodge":{
+					"name": "Hopping Dodge",
+					"description": "<p><strong>Trigger</strong> A creature misses the skirmisher with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The skirmisher quickly takes advantage of the attacker's error and Steps.</p>"
+				},
+				"Baneback Poison":{
+					"name": "Baneback Poison",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d4}[poison]]]{2d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {2d4}[poison]]]{2d4 poison damage}, @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3}, and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>"
+				},
+				"Jungle Stride":{
+					"name": "Jungle Stride",
+					"description": "<p>Gripplis ignore difficult terrain in forests and jungles.</p>"
+				},
+				"Wily Attack":{
+					"name": "Wily Attack",
+					"description": "<p>The skirmisher deals an extra 1d6 precision damage to @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} creatures and creatures afflicted by a poison.</p>"
+				}
+			}
+		},
+		"Grouloop": {
+			"name": "Grouloop",
+			"blurb": "Female boggard ritualist",
+			"data":{},
+			"items":{}
+		},
+		"Halbrux Far-sight": {
+			"name": "Halbrux Far-sight",
+			"blurb": "Female cyclops historian",
+			"data":{},
+			"items":{}
+		},
+		"Hivebound Arboreal": {
+			"name": "Hivebound Arboreal",
+			"blurb": "Variant arboreal regent",
+			"data":{},
+			"items":{}
+		},
+		"I'iko Dragon": {
+			"name": "I'iko Dragon",
+			"publicNotes": "<p>I'iko dragons are greedy bullies with long muscular bodies, stubby legs, small wings, and shimmering glass-like scales. From their treetop nests overhanging well-traveled rivers, i'iko dragons land on passing watercrafts and extort the passengers, threatening to capsize boats if not paid with bright treasure. When faced with a well-armed group guarding their desired trinkets, they instead resort to stealth, stealing them under cover of darkness, using their claws to pick locks and disable traps as needed.</p>\n<p>I'iko dragons reside in the jungles of the Mwangi Expanse, particularly in Nantambu where they live under the tall arching bridges that cross the city's many canals, building roosts in the bridge supports. I'iko dragons eat fish and birds, and have a taste for glass, crystals, and gemstones, which they consume to harden and color their scales. Incredibly vain, i'iko dragons collect the most colorful glass they can find to transform their scales into a resplendent rainbow.</p>",
+			"data":{},
+			"items":{
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>The i'iko dragon breathes a spray of jagged glass shards that deals [[/r {7d6}[piercing]]]{7d6 piercing damage} in a @Template[type:cone|distance:15] (@Check[type:reflex|dc:24|basic:true] save). They can't use Breath Weapon again for [[/br 1d4 #round]]{1d4 rounds}.</p>"
+				},
+				"Cunning Capsize":{
+					"name": "Cunning Capsize",
+					"description": "<p>The i'iko dragon attempts to capsize an aquatic vessel of Medium size or smaller that they're on or adjacent to. They must succeed at an @Check[type:athletics|dc:25|name:Capsize a Boat] check with a DC of 25 or the pilot's Sailing Lore DC, whichever is higher.</p>"
+				},
+				"Draconic Grandeur":{
+					"name": "Draconic Grandeur",
+					"description": "<p>The i'iko dragon spreads their wings, bares their teeth, and threatens their opponent in a terrifying display of draconic majesty. All creatures within 30 feet must attempt a @Check[type:will|dc:24] save. Regardless of the result of the saving throw, the creatures are temporarily immune to Draconic Grandeur for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4}.</p>"
+				},
+				"Tackle":{
+					"name": "Tackle",
+					"description": "<p>The i'iko dragon Flies up to their fly Speed, descending at least 10 feet, and then makes a jaws Strike. If the jaws Strike hits and the target is Medium or smaller, the target is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				}
+			}
+		},
+		"Ikeshti Brood-Minder": {
+			"name": "Ikeshti Brood-Minder",
+			"publicNotes": "<p>Ikeshti young are near-mindless carnivores. They are watched over by brood-minders, male ikeshtis with a talent for influencing the ravenous spawn, who protect the tiny creatures until they grow into responsible adults.</p>\n<hr />\n<p>Ikeshtis are reptilian humanoids native to Akiton's wastelands. Smaller than Golarion's iruxi, ikeshtis organize around distinct societal roles.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Iobane Magus": {
+			"name": "Iobane Magus",
+			"blurb": "Human magus",
+			"data":{},
+			"items":{}
+		},
+		"Ironclad Annihilator Beetle": {
+			"name": "Ironclad Annihilator Beetle",
+			"data":{},
+			"items":{}
+		},
+		"Ixamè": {
+			"name": "Ixamè",
+			"blurb": "Female poison-wracked young cloud dragon",
+			"data":{},
+			"items":{}
+		},
+		"Jackal Guard": {
+			"name": "Jackal Guard",
+			"data":{},
+			"items":{}
+		},
+		"Karumzek": {
+			"name": "Karumzek",
+			"data":{},
+			"items":{}
+		},
+		"Karumzek Swarm": {
+			"name": "Karumzek Swarm",
+			"data":{},
+			"items":{}
+		},
+		"Khefak Scuttler": {
+			"name": "Khefak Scuttler",
+			"publicNotes": "<p>These small creatures are ubiquitous vermin found across much of Akiton.</p>\n<hr />\n<p>This unusual arthropod resembles an amalgam of a centipede and a crab. Hard-shelled and perfectly suited to life on Akiton, khefaks are so incredibly useful that a visitor to the planet might assume they were custom engineered for their environs. Such visitors would, in fact, be correct. While khefaks can be found naturally on Akiton, a new species has recently gained a foothold on the planet: alchemically engineered khefaks who excrete a refined substance that can be used as fuel to power advanced engines and devices.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Kilia Mwibo": {
+			"name": "Kilia Mwibo",
+			"data":{},
+			"items":{}
+		},
+		"King of Biting Ants": {
+			"name": "King of Biting Ants",
+			"blurb": "Male worm that walks sorcerer",
+			"data":{},
+			"items":{}
+		},
+		"Kiru": {
+			"name": "Kiru",
+			"data":{},
+			"items":{
+				"Knife Jab":{
+					"name": "Knife Jab",
+					"description": "<p>Creatures hit by Kiru's dagger Strike must succeed at a @Check[type:fortitude|dc:20|traits:agile,versatile-s,damaging-effect]{Fortitude (Strike was a Success)}@Check[type:fortitude|dc:25|traits:agile,versatile-s,damaging-effect]{Fortitude (Strike was a Critical Success)} save or become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round (1 minute on a critical failure).</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Kiru deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+				},
+				"Surprise Attack":{
+					"name": "Surprise Attack",
+					"description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to Kiru.</p>"
+				}
+			}
+		},
+		"Kolbo": {
+			"name": "Kolbo",
+			"data":{},
+			"items":{
+				"equipment-Strongbox Key":{
+					"name": "Strongbox Key"
+				},
+				"A Quick Word":{
+					"name": "A Quick Word",
+					"description": "<p>If Kolbo is aware of his opponents and isn't prevented from speaking, he rolls Deception for initiative.</p>"
+				},
+				"Deny Advantage":{
+					"name": "Deny Advantage",
+					"description": "<p>Kolbo isn't @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to creatures of 6th level or lower that are @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using surprise attack.</p>"
+				},
+				"Low Blow":{
+					"name": "Low Blow",
+					"description": "<p><strong>Requirements</strong> Kolbo successfully Feints an opponent</p>\n<hr />\n<p><strong>Effect</strong> The foe is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Kolbo deals an extra 2d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+				}
+			}
+		},
+		"Kreekoss": {
+			"name": "Kreekoss",
+			"data":{},
+			"items":{
+				"Evasion":{
+					"name": "Evasion",
+					"description": "<p>When Kreekoss rolls a success on a Reflex save, he gets a critical success instead.</p>"
+				},
+				"Eagle Dive":{
+					"name": "Eagle Dive",
+					"description": "<p>Kreekoss Flies up to double his fly Speed in a straight line, descending at least 10 feet, and then makes a talon Strike.</p>"
+				},
+				"Snatch":{
+					"name": "Snatch",
+					"description": "<p>Kreekoss can Fly at half Speed while he has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} in his talons, carrying that creature along with it.</p>"
+				}
+			}
+		},
+		"Kurshkin": {
+			"name": "Kurshkin",
+			"senses": "+ 2 to hear things, 黑暗视觉",
+			"data":{},
+			"items":{
+				"ij0e4BCwcNMUzALR":{
+					"name": "+2 to perception to hear things"
+				},
+				"Unluck Aura":{
+					"name": "Unluck Aura",
+					"description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Creatures other than animals, gremlins, and gnolls in the aura become extremely unlucky (@Check[type:will|dc:20] save; creature must roll this Will save twice and take the worse result). On a successful save, the creature is temporarily immune to pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice and take the worse result on all checks as long as it is within the aura.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.yxgHWK2rTZKKAzDN]{Effect: Unluck Aura}</p>"
+				},
+				"Collateral Damage":{
+					"name": "Collateral Damage",
+					"description": "<p><strong>Trigger</strong> A Strike critically misses Kurshkin</p>\n<hr />\n<p><strong>Effect</strong> Kurshkin redirects the strike to an adjacent creature. The attacker rerolls the Strike against that creature.</p>"
+				},
+				"Lucky Stabs":{
+					"name": "Lucky Stabs",
+					"description": "<p>Kurshkin deals an additional [[/r {1d6}]]{1d6 damage} with her melee Strikes against creatures affected by her unluck aura.</p>"
+				},
+				"Natural Thief":{
+					"name": "Natural Thief",
+					"description": "<p>When attacking with a finesse melee weapon, Kurshkin adds her Dexterity modifier to damage rolls instead of her Strength modifier.</p>"
+				}
+			}
+		},
+		"Lignified Adamantine Golem": {
+			"name": "Lignified Adamantine Golem",
+			"blurb": "Variant adamantine golem",
+			"data":{},
+			"items":{}
+		},
+		"Living Sun-Spire": {
+			"name": "Living Sun-Spire",
+			"data":{},
+			"items":{}
+		},
+		"Loakan": {
+			"name": "Loakan",
+			"data":{},
+			"items":{
+				"equipment-Recipe Books":{
+					"name": "Recipe Books"
+				},
+				"Battering Tail":{
+					"name": "Battering Tail",
+					"description": "<p>Loakan makes a <em>greatclub</em> Strike and two tail Strikes against the same creature. If the <em>greatclub</em> Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against both tail Strikes.</p>"
+				},
+				"Deep Breath":{
+					"name": "Deep Breath",
+					"description": "<p>Loakan can hold her breath for 200 rounds (20 minutes).</p>"
+				}
+			}
+		},
+		"Mashkudu The Bully": {
+			"name": "Mashkudu The Bully",
+			"data":{},
+			"items":{
+				"Opportunistic Maneuver":{
+					"name": "Opportunistic Maneuver",
+					"description": "<p><strong>Trigger</strong> Mashkudu Shoves, Trips, or Disarms a creature</p>\n<hr />\n<p><strong>Effect</strong> Mashkudu attempts a Thievery check to Steal an object the target carries.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Mashkudu deals an extra 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+				},
+				"Surprise Attack":{
+					"name": "Surprise Attack",
+					"description": "<p>On the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to Mashkudu.</p>"
+				}
+			}
+		},
+		"Mpeshi": {
+			"name": "Mpeshi",
+			"publicNotes": "<p>In the heights of the world, where the hills and mountains reach up to touch the clouds, mpeshis fall to the earth in flashes of lightning and thunder. Most return to the heavens on the gossamer strands of web on which they descend, but those few that remain cry out, lamenting their inability to return to their homes in the sky.</p>\n<p>A mpeshi appears to be a monstrous goat with the foreclaws, hindquarters, and tail of a crocodile. Electricity arcs around its sharp horns, which it can use to both batter and gore with equal facility. Although mpeshis are always seeking methods to return to their homes in the clouds, they aggressively defend their earthbound lairs from outsiders.</p>\n<p>Mpeshis are generally solitary, though some congregate as pairs or small groups that watch cloud movements together. They can sometimes be seen trying to join reach the storm clouds, leaping from high places such as hills, mountains, or cliffs. Though these attempts are rarely successful, the mpeshis always resolve to try again-and some do manage succeed at returning to their mysterious homes amongst the clouds.</p>\n<p>Mpeshis are utterly unafraid of rocs, dragons, or other monstrous flying creatures, usually seeing them as competition. Mpeshis are crafty, though, and sometimes try to negotiate transportation back to the clouds from flying creatures larger than they are.</p>",
+			"data":{},
+			"items":{
+				"Lightning Aura":{
+					"name": "Lightning Aura",
+					"description": "<p>@Template[type:emanation|distance:5]{5 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A buzzing static electricity surrounds the mpeshi. When a creature within the aura takes electricity damage, the damage arcs to a random adjacent creature, dealing [[/r {1d6}[electricity]]]{1d6 electricity damage}. A creature can only receive arcing damage once from each attack or effect.</p>"
+				},
+				"Thunderous Fall":{
+					"name": "Thunderous Fall",
+					"description": "<p><strong>Trigger</strong> The mpeshi falls at least 10 feet</p>\n<hr />\n<p><strong>Effect</strong> The mpeshi reorients itself to slam headfirst into the ground with a thundering crash. Creatures within 10 feet of the mpeshi take sonic damage equal to the bludgeoning damage the mpeshi took from the fall (@Check[type:fortitude|dc:23|basic:true|traits:sonic,rare,beast] save). Creatures that fail this save are @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure).</p>"
+				},
+				"Charging Leap":{
+					"name": "Charging Leap",
+					"description": "<p>The mpeshi leaps up to 40 feet in any direction, including straight up. The mpeshi makes a horn Strike at any point during this leap.</p>"
+				},
+				"Cloud Walk":{
+					"name": "Cloud Walk",
+					"description": "<p>The mpeshi can tread on clouds or fog as though on solid ground.</p>"
+				}
+			}
+		},
+		"Mpondo": {
+			"name": "Mpondo",
+			"blurb": "Male human guardian",
+			"data":{},
+			"items":{}
+		},
+		"Mutated Sewer Ooze": {
+			"name": "Mutated Sewer Ooze",
+			"data":{},
+			"items":{
+				"strike-Pseudopod":{
+					"name": "伪足 Pseudopod",
+					"description": "<p>plus [[/r {1d4}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Acid Damage}</p>"
+				},
+				"Motion Sense 60 feet":{
+					"name": "Motion Sense 60 feet",
+					"description": "<p>A sewer ooze can sense nearby motion through vibration and air movements.</p>"
+				},
+				"noxious scent":{
+					"name": "noxious scent",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>A creature that enters the area must attempt a @Check[type:fortitude|dc:23] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2} on a critical failure). A creature taking persistent acid damage from the ooze's pseudopod can't recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.</p>"
+				},
+				"Filth Wave":{
+					"name": "Filth Wave",
+					"description": "<p><strong>Frequency</strong> once per minute</p>\n<hr />\n<p><strong>Effect</strong> The sewer ooze unleashes a wave of filth, covering all creatures within a @Template[type:emanation|distance:20]. Each creature in the area must succeed at a @Check[type:reflex|dc:24|traits:damaging,ooze-effect] save or take [[/r {1d4}[acid]]]{1d4 acid damage} and a -10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}). A creature can spend an Interact action to clean someone off, decreasing the Speed penalty by 5 feet with each action.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Qomp2EujVCbzJb4X]{Effect: Filth Wave}</p>"
+				}
+			}
+		},
+		"Nairu": {
+			"name": "Nairu",
+			"publicNotes": "<p>Assassins commit murder, either for pay or due to their belief in a cause, such as a religion or a political movement. Some assassins work alone and choose their own victims. Others are members of assassins' guilds, organizations that accept contracts to kill in return for money, favors, or both.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Nkiruka": {
+			"name": "Nkiruka",
+			"data":{},
+			"items":{}
+		},
+		"Norgorberite Spy": {
+			"name": "Norgorberite Spy",
+			"blurb": "Human infiltrator",
+			"data":{},
+			"items":{}
+		},
+		"Old Thrasher": {
+			"name": "Old Thrasher",
+			"data":{},
+			"items":{
+				"Death Roll":{
+					"name": "Death Roll",
+					"description": "<p><strong>Requirements</strong> Old Thrasher must have a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p><strong>Effect</strong> Old Thrasher tucks its legs and rolls rapidly, twisting its victim. It makes a jaws Strike with a +2 circumstance bonus to the attack roll against the grabbed creature. If it hits, it also knocks the creature @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If it fails, it releases the creature.</p>"
+				},
+				"Deep Breath":{
+					"name": "Deep Breath",
+					"description": "<p>Old Thrasher can hold its breath for about 4 hours.</p>"
+				},
+				"Into the Deep":{
+					"name": "Into the Deep",
+					"description": "<p><strong>Requirements</strong> Old Thrasher must have a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> Old Thrasher Swims, bringing its victim along with it.</p>"
+				},
+				"Thunderous Tail":{
+					"name": "Thunderous Tail",
+					"description": "<p>Old Thrasher makes up to three tail Strikes against different targets. Any target hit must succeed at a @Check[type:fortitude|dc:25|name:animal]{Fortitude (success)}(@Check[type:fortitude|dc:30|name:animal]{Fortitude (critical success)}) save or be knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				}
+			}
+		},
+		"Onyiji": {
+			"name": "Onyiji",
+			"blurb": "Female half-orc staff warrior",
+			"data":{},
+			"items":{}
+		},
+		"Pugwampi (SoT)": {
+			"name": "Pugwampi (SoT)",
+			"publicNotes": "<p>Mean, dog-faced, and craven, pugwampis take disproportionate enjoyment from the accidents and missteps of other creatures-something that happens often due to the supernatural aura of ill fortune these gremlins project. They enjoy preparing pranks involving spikes, excrement, pits full of spiders, and the like. Pugwampis are somewhat deaf and thus often yell loudly to each other when not hiding. Many pugwampis worship gnolls as gods and aspire to be more like gnolls, although gnolls hate pugwampis even more than most creatures do, due to their sycophantic fawning.</p>\n<hr />\n<p>Gremlins are cruel fey tricksters and saboteurs who have fully acclimated to life on the Material Plane, finding distinct niches for their inventive destructiveness. All gremlins delight in ruining or breaking things, whether it's something physical like a device or vehicle or something intangible such as an alliance or relationship. A gremlin's greatest joy is watching the collapse of complex creations, preferably after the lightest and slightest, carefully targeted push from the gremlin. Gremlins tend to denigrate, bully, or even slaughter their lesser kin, particularly mitflits, whom gremlins (and many others) derisively call \"mites.\"</p>",
+			"data":{},
+			"items":{
+				"NdeZPbdp9J9q4sCB":{
+					"name": "-2 to Perception to hear things"
+				},
+				"Unluck Aura":{
+					"name": "Unluck Aura",
+					"description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Creatures other than animals, gremlins, and gnolls in the aura become extremely unlucky (@Check[type:will|dc:16] save; creature must roll this Will save twice and take the worse result). On a successful save, the creature is temporarily immune to pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice and take the worse result on all checks as long as it is within the aura.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.yxgHWK2rTZKKAzDN]{Effect: Unluck Aura}</p>"
+				}
+			}
+		},
+		"Ravager Of Tindalos": {
+			"name": "Ravager Of Tindalos",
+			"publicNotes": "<p>Lean and athirst, the hounds of Tindalos are drawn to those who tamper with the flow of time, travel through time, or use magic or rare alchemical drugs to send their thoughts or perception back or forward in time. Powerful spellcasters can draw them from the Dimension of Time via rare rituals, but doing so attracts the hounds' ire, so few who traffic in such rituals live long enough to spread their knowledge. While the hounds possess great cunning and cruel intellect, they rarely interact with other creatures-other than to hunt and destroy those who have attracted their unblinking attention.</p>\n<p>Once a hound catches scent of a mortal to hunt, it calls others of its ilk. The pack then pursues its victim through all space and time until it catches, slays and devours them. Those pursued can escape only by avoiding all angles, as hounds of Tindalos could step through them from nothingness at any time.</p>",
+			"blurb": "Variant hound of Tindalos",
+			"data":{},
+			"items":{}
+		},
+		"Reborn Sun Hunter": {
+			"name": "Reborn Sun Hunter",
+			"data":{},
+			"items":{}
+		},
+		"Reborn Sun Mage": {
+			"name": "Reborn Sun Mage",
+			"data":{},
+			"items":{}
+		},
+		"Reborn Sun Warrior": {
+			"name": "Reborn Sun Warrior",
+			"data":{},
+			"items":{}
+		},
+		"Red Commander Ant": {
+			"name": "Red Commander Ant",
+			"data":{},
+			"items":{}
+		},
+		"Red Guard Ant": {
+			"name": "Red Guard Ant",
+			"data":{},
+			"items":{}
+		},
+		"Red Queen": {
+			"name": "Red Queen",
+			"data":{},
+			"items":{}
+		},
+		"Reth": {
+			"name": "Reth",
+			"data":{},
+			"items":{
+				"Deadly Bolts":{
+					"name": "Deadly Bolts",
+					"description": "<p><strong>Requirements</strong> Reth is wielding a crossbow</p>\n<hr />\n<p><strong>Effect</strong> Reth gains a deadly focus with crossbows while in this stance. His crossbow Strikes deal an additional 3d8 precision damage. He doesn't provoke reactions for making ranged Strikes with crossbows.</p>"
+				},
+				"Deep Breath":{
+					"name": "Deep Breath",
+					"description": "<p>Reth can hold his breath for 200 rounds (20 minutes).</p>"
+				},
+				"Running Reload":{
+					"name": "Running Reload",
+					"description": "<p>Reth Strides, Steps, or Sneaks, then Interacts to reload.</p>"
+				},
+				"Skirmishing Shot":{
+					"name": "Skirmishing Shot",
+					"description": "<p>Reth Strides or Steps, then Strikes with his hand crossbow.</p>"
+				}
+			}
+		},
+		"Riding Frog": {
+			"name": "Riding Frog",
+			"blurb": "Variant elite giant frog",
+			"data":{},
+			"items":{}
+		},
+		"Rigged Ramen Cart": {
+			"name": "Rigged Ramen Cart",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Disable the Detonation Trigger|traits:hazard,alchemical,mechanical,trap] (master) to disable the detonation trigger</p>",
+			"hazarddescription": "<p>A seemingly innocent ramen cart is rigged to detonate if moved from its current location.</p>",
+			"stealthdetails": "<p>(expert)</p>",
+			"data":{},
+			"items":{}
+		},
+		"Salathiss": {
+			"name": "Salathiss",
+			"data":{},
+			"items":{
+				"strike-Morphic Weapon":{
+					"name": "Morphic Weapon"
+				},
+				"Morphic Weapon":{
+					"name": "Morphic Weapon",
+					"description": "<p>Salathiss transforms one of his hands into a tentacle with a blade at the end, allowing him to make morphic weapon Strikes. If he's disguised, whether by magical or mundane means, his disguise immediately ends. He can return his hand to normal with another use of this ability, but doing so doesn't restore his disguise.</p>"
+				},
+				"Peerless Duplicate":{
+					"name": "Peerless Duplicate",
+					"description": "<p>If Salathiss interacts with a creature for 10 minutes, he can choose to expertly duplicate that person. He can roll any Deception check to Impersonate that person twice and take the higher result. This benefit lasts for 24 hours or until he uses this ability on a different creature.</p>"
+				},
+				"Serpentfolk Venom":{
+					"name": "Serpentfolk Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:26|basic:true]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {2d4}[poison]]]{2d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {3d4}[poison]]]{3d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} (1 round)</p>"
+				}
+			}
+		},
+		"Sand Racer": {
+			"name": "Sand Racer",
+			"hazarddescription": "",
+			"data":{},
+			"items":{}
+		},
+		"Screaming Sulfur": {
+			"name": "Screaming Sulfur",
+			"publicNotes": "<p>A screaming sulfur is a creature born from gasping death and suffocating suffering. When an earthquake or other geological phenomena releases toxic gases, these gases can build up beneath lakes and other large bodies of water. Eventually, they escape the water, expanding into massive clouds that cover the immediate area. Its silent, unexpected arrival can take thousands of lives in an instant. Confused, in pain, and desperate for a way out, the dying souls become trapped in the noxious cloud and amass into this horrifying creature.</p>\n<p>While not truly undead, a screaming sulfur shares many similarities with undead creatures, including the malice of vengeful spirits and the hatred of all living creatures who breathe freely and painlessly.</p>\n<p>A screaming sulfur resembles a cloud made of countless, featureless faces, mouths agape and releasing ghastly wails.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Scrit": {
+			"name": "Scrit",
+			"publicNotes": "<p>Scrits are short, spindly gremlins with gray or beige leathery skin and a coat of smeared ink on their fingers. They make themselves the nightmare of many scribes and librarians, as they delight in nothing more than destroying books, scrolls, artwork, and other records or writing. The oils on a scrit's skin smears ink and renders text-even magical writing-completely illegible. Once they have smeared every page of a book, scrits devour them whole, absorbing the contents the book used to hold. After eating books they find stupid or funny, scrits hold skits for other gremlins which mock the mortal authors for the amusement of the other fey.</p>\n<hr />\n<p>Gremlins are malicious fey that infest and prey upon mortal communities. They live in tunnels, beneath eaves, and in abandoned buildings, stealing what they need from their neighbors instead of creating for themselves.</p>\n<p>While there are gremlins of any and every gender, their appearances don't differ by gender. Young gremlins grow to maturity with alarming speed. Their entire nest raises them communally, though they are often encouraged to wander unsupervised and create mischief away from home instead of inside it.</p>",
+			"data":{},
+			"items":{
+				"strike-Sticky Fingers":{
+					"name": "Sticky Fingers"
+				},
+				"Eat Book":{
+					"name": "Eat Book",
+					"description": "<p>A scrit can consume a book after smearing its pages to absorb its contents (it gains no benefit from consuming a book with pages smeared by another scrit). For 1 day after consuming the book, the scrit can make Recall Knowledge skill checks on the book's subject with a +4 item bonus, and it can speak and understand the languages the book was written in. If it Eats another Book, it replaces the benefits of the previous Eat Book.</p>"
+				},
+				"Nasty Ink":{
+					"name": "Nasty Ink",
+					"description": "<p>A scrit's fingers are perpetually covered in smeared ink from the writing it's destroyed. This ink mixes with its skin oils to create a disgusting, sticky poison.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:14]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (1 round)</p>"
+				},
+				"Smear Text":{
+					"name": "Smear Text",
+					"description": "<p>The scrit rubs its fingers against one page of writing, smearing the text and rendering it unreadable. The scrit can smear and destroy magical writing such as a <em>@UUID[Compendium.pf2e.spells-srd.o0l57UfBm9ScEUMW]{Glyph of Warding}</em> or a <em>@UUID[Compendium.pf2e.spells-srd.AUctDF2fqPZN2w4W]{Sigil}</em> by succeeding at a counteract check (using the scrit's [[/r 1d20+8]]{spell attack modifier}) against the caster's DC.</p>"
+				}
+			}
+		},
+		"Serpent Ward": {
+			"name": "Serpent Ward",
+			"disable": "<p>@Check[type:thievery|dc:26|name:Deactivate the trigger|traits:uncommon,magical,trap] (expert) or @Check[type:occultism|dc:24|name:Deactivate the trigger|traits:uncommon,magical,trap] (expert) to deactivate the magical trigger</p>",
+			"hazarddescription": "<p>Illusionary snakes erupt from the trapped door, inflicting a venomous curse on intruders.</p>",
+			"stealthdetails": "<p>(expert)</p>",
+			"data":{},
+			"items":{
+				"Curse the Intruders":{
+					"name": "Curse the Intruders",
+					"description": "<p><strong>Trigger</strong> The trapped door is opened other than by a serpentfolk</p>\n<hr />\n<p><strong>Effect</strong> Hissing, illusionary snakes leap from the door. Each living creature within 30 feet is subjected to the curse of potent poison. If a living creature opened the door, that creature must roll its saving throw against the curse twice and take the worse result (this is a misfortune effect).</p>\n<hr />\n<h3>Curse of Potent Poison (uncommon, curse, magical) CURSE 5</h3>\n<p>This curse magically speeds poison through your body.</p>\n<p><strong>Saving Throw</strong> @Check[type:will|dc:20|name:Curse of Potent Poison|traits:uncommon,magical]</p>\n<hr />\n<p><strong>Effect</strong> You take a -1 status penalty to Fortitude saves and you gain weakness 3 to poison (if you already have weakness to poison, increase it by 3). The curse remains until removed by <em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{Remove Curse}</em> or similar magic.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.s95P3L72BDKvzYhn]{Effect: Curse of Potent Poison}</p>"
+				}
+			}
+		},
+		"Serpentfolk Granitescale": {
+			"name": "Serpentfolk Granitescale",
+			"ac": "(with shed scales 22)",
+			"publicNotes": "<p>Many burly aapoph serpentfolk bear minor mutations. Granitescales have bulky frames covered in hard, speckled gray plates. These scales offer additional protection but shed when struck with too much force. As granitescales regrow lost scales quickly, they make effective long-term sentinels and vanguards for guerilla tactics. Granitescales like to carve their shed scales into small chips and attach them as rattles to the ends of their spears. Many an unsuspecting victim has heard the shaking hiss of a granitescale's rattle too late.</p>\n<hr />\n<p>Ancient and cunning, the once mighty serpentfolk have suffered numerous setbacks and indignities since the decapitation of their god, Ydersius, millennia ago. Scattered in isolated pockets, the reptilian humanoids constantly scheme their return to glory. Though many serpentfolk labor to restore Ydersius and reclaim power through him, others pursue different avenues to greatness, such as by mastering uncanny magic or practicing spycraft to take down enemy organizations from the inside.</p>",
+			"data":{},
+			"items":{
+				"Chipping Scales":{
+					"name": "Chipping Scales",
+					"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> The granitescale takes piercing or slashing damage</p>\n<hr />\n<p><strong>Effect</strong> The granitescale twists to take the blow on their hardest scales, which they shed to reduce the incoming force. The granitescale reduces the damage by 10, but their AC is reduced by 2 for 1 day, when the shed scales regrow.</p>"
+				},
+				"Rattling Spear":{
+					"name": "Rattling Spear",
+					"description": "<p><strong>Requirements</strong> The granitescale's last action was a successful spear Strike</p>\n<hr />\n<p><strong>Effect</strong> The granitescale rattles the base of their spear, attempting an Intimidation check to @UUID[Compendium.pf2e.action-macros.nEwqNNWX6scLt4sc]{Demoralize: Intimidation} all enemies within 30 feet (compare the granitescale's Intimidation check result to the targets' Will DCs individually).</p>"
+				},
+				"Serpentfolk Venom":{
+					"name": "Serpentfolk Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:22|basic:true]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d4}[poison]]]{2d4 poison damage} and enfeebled 1 (1 round)</p>"
+				}
+			}
+		},
+		"Serpentfolk Venom Caller": {
+			"name": "Serpentfolk Venom Caller",
+			"publicNotes": "<p>Venom callers are zyss serpentfolk spellcasters that specialize in the use of acid and poison magic, viewing them as natural extensions of their inherent venom. They have a reputation for bold action, something that puts them at odds with other zyss who prefer stealth and subterfuge. When a venom caller can't eliminate their rivals to seize control of their colony, they often leave in a dramatic demonstration of arrogance, insisting that slithering in shadows does the serpentfolk cause no favors.</p>\n<p>Though venom callers aren't considered subtle by their kin, their schemes-which often revolve around acquiring rare magical lore-can nevertheless take humanoid communities by surprise. Venom callers often lure away unsuspecting victims, murder them, and disfigure their venom-wracked bodies with acid; the venom caller then assumes the victim's form. Authorities, believing all members of the community are accounted for, assume the unrecognizable corpse must have been a traveler. Most venom callers have broken with other serpentfolk communities and have no qualms about murdering their kin or infiltrating other serpentfolk cells if it serves their purposes.</p>\n<hr />\n<p>Ancient and cunning, the once mighty serpentfolk have suffered numerous setbacks and indignities since the decapitation of their god, Ydersius, millennia ago. Scattered in isolated pockets, the reptilian humanoids constantly scheme their return to glory. Though many serpentfolk labor to restore Ydersius and reclaim power through him, others pursue different avenues to greatness, such as by mastering uncanny magic or practicing spycraft to take down enemy organizations from the inside.</p>",
+			"data":{},
+			"items":{
+				"Serpentfolk Venom":{
+					"name": "Serpentfolk Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d4}[poison]]]{1d4 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {2d4}[poison]]]{2d4 poison damage} and enfeebled 1 (1 round)</p>"
+				},
+				"Venom Pool":{
+					"name": "Venom Pool",
+					"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The venom caller conjures a @Template[type:burst|distance:10] of liquid poison within 60 feet. Each creature that begins its turn in the area takes [[/r {4d6}[poison]]]{4d6 poison damage }(@Check[type:fortitude|dc:25|basic:true] save). On a critical failure, creatures also take @Localize[PF2E.PersistentDamage.Poison1d6.success]. Once per turn, starting the turn after the venom caller uses Venom Pool, the venom caller can use a single action, which has the concentrate trait, to increase the radius of the burst by 5 feet. The pool of venom lasts for 1 minute, at which time it evaporates without a trace.</p>"
+				}
+			}
+		},
+		"Shianshi Waymaker": {
+			"name": "Shianshi Waymaker",
+			"blurb": "Female variant sumbreiva",
+			"data":{},
+			"items":{}
+		},
+		"Shieldbearer Construct": {
+			"name": "Shieldbearer Construct",
+			"data":{},
+			"items":{
+				"Critical Vulnerability":{
+					"name": "Critical Vulnerability",
+					"description": "<p>A critical hit damages the construct's controls, making it @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} until repaired. Additional critical hits increase this value, up to @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 4}.</p>"
+				},
+				"Ridden Construct":{
+					"name": "Ridden Construct",
+					"description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.BeptBpCJ4Ny4biOH]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+				}
+			}
+		},
+		"Shobhad Enforcer": {
+			"name": "Shobhad Enforcer",
+			"publicNotes": "<p>In rough Akitonian cities like Seldo, shobhad bruisers and fist-fighters act as protection for businesses and enforcers for crime bosses. Shobhad enforcers are more rare and far more dangerous. In the wilds of Akiton, shobhad enforcers protect wealthy caravans using combat techniques honed and proven over multiple generations to devastate any creature that might mistake the caravan as an attractive target for a raid. \"Enforcer\" is a loose translation of a word in the Shobhad language that is only granted to a warrior who has proven themselves in combat against one of the deadly threats of the Akitonian desert, such as gluttonworms or ikeshti riveners. Every enforcer is a battle-tested veteran with the scars to prove their prowess.</p>\n<hr />\n<p>These four-armed humanoids often live as nomads on Akiton. Self-sufficient and able to construct the equipment they need to survive from natural materials, shobhads traditionally avoid large cities and the smaller people of the planet, except to engage in trade. Some shobhads eschew these traditions, finding life in urban centers to be more appealing. Rifts between these shobhads and those who continue to lead nomadic lives in the Akitonian wilderness sometimes lead to clashes when members of the two societies meet.</p>\n<p>Shobhads are highly sought after for their martial expertise, unparalleled knowledge of Akiton's wilds, and unbreakable codes of honor. These warriors may operate independently, in their traditional clans, or in modern mercenary companies that blend ancestral traditions with the needs of modern military freelancers.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Shobhad Sniper": {
+			"name": "Shobhad Sniper",
+			"publicNotes": "<p>Enemies rarely see a shobhad sniper before the deadly blast of their powerful rifles snatches away the offender's life. Selected from among the most talented enforcers after proving themselves in combat, shobhad snipers learn how to cross the desert sands undetected, combine their powerful ranged weapons with close-combat techniques, and survive Akiton's freezing nights for weeks on end while scouting potential settlements or enemy strongholds.</p>\n<hr />\n<p>These four-armed humanoids often live as nomads on Akiton. Self-sufficient and able to construct the equipment they need to survive from natural materials, shobhads traditionally avoid large cities and the smaller people of the planet, except to engage in trade. Some shobhads eschew these traditions, finding life in urban centers to be more appealing. Rifts between these shobhads and those who continue to lead nomadic lives in the Akitonian wilderness sometimes lead to clashes when members of the two societies meet.</p>\n<p>Shobhads are highly sought after for their martial expertise, unparalleled knowledge of Akiton's wilds, and unbreakable codes of honor. These warriors may operate independently, in their traditional clans, or in modern mercenary companies that blend ancestral traditions with the needs of modern military freelancers.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Sicklehand Construct": {
+			"name": "Sicklehand Construct",
+			"data":{},
+			"items":{
+				"Critical Vulnerability":{
+					"name": "Critical Vulnerability",
+					"description": "<p>A critical hit damages the construct's controls, making it @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} until repaired. Additional critical hits increase this value, up to @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 4}.</p>"
+				},
+				"Ridden Construct":{
+					"name": "Ridden Construct",
+					"description": "<p>The construct is piloted by a @UUID[Compendium.pf2e.pathfinder-bestiary.BeptBpCJ4Ny4biOH]{Leaf Leshy} who can be targeted separately but has greater cover. The leshy can't take actions of their own while inside the construct, other than to leave it, which takes 1 minute.</p>"
+				},
+				"Menacing Sickles":{
+					"name": "Menacing Sickles",
+					"description": "<p>The construct deals an additional [[/r {1d4}[precision]]]{1d4 precision damage} to @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} or @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} creatures.</p>"
+				}
+			}
+		},
+		"Silverfish Swarm": {
+			"name": "Silverfish Swarm",
+			"publicNotes": "<p>It's uncommon for silverfish to congregate in sufficient numbers to constitute a swarm, but forgotten libraries or similar out-of-the-way places might harbor a multitude of the voracious pests.</p>\n<hr />\n<p>A common pest with a silvery carapace and an undulating, fishlike scuttle, the nocturnal silverfish infests homes and libraries throughout Golarion. These insects aren't typically dangerous, but their tendency to devour books and clothing often puts them at odds with larger creatures.</p>",
+			"data":{},
+			"items":{
+				"Voracious Consumption":{
+					"name": "Voracious Consumption",
+					"description": "<p>Action 1 minute</p>\n<p>A silverfish swarm consumes up to 1 Bulk of paper, cloth, or similar material. It can consume up to 4 Bulk each day.</p>"
+				},
+				"Swarming Bites":{
+					"name": "Swarming Bites",
+					"description": "<p>Each enemy in the silverfish swarm's space takes [[/r {1d4}[piercing]]]{1d4 piercing damage} (@Check[type:fortitude|dc:14|basic:true|traits:swarm] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>"
+				}
+			}
+		},
+		"Skartitch Chip-Tooth": {
+			"name": "Skartitch Chip-Tooth",
+			"blurb": "Female ratfolk crime lord",
+			"data":{},
+			"items":{}
+		},
+		"Slana": {
+			"name": "Slana",
+			"publicNotes": "<p>The rolling thunder before the rain provides the massive, leonine humanoids known as slanas with a tremendous power. These solitary and nomadic creatures primarily dwell in the jungles and savannas of the Mwangi Expanse, but they can range into nearby areas in search of prey or when drawn by strange primal forces only slanas can recognize. Slanas view each other as rivals who test each other's prowess, so when drawn together by this strange calling they nearly always fight to the death. A slana's roar echoes like thunder across the countryside, and denizens of the Mwangi fear a slana's approach whenever an oncoming storm's thunder seems more ferocious than its rain.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Soul Swarm": {
+			"name": "Soul Swarm",
+			"data":{},
+			"items":{}
+		},
+		"Sparkeater": {
+			"name": "Sparkeater",
+			"publicNotes": "<p>Raveners require a steady diet of souls, and a ravener that's unable to feed for too long eventually cannibalizes their own soul. Should a ravener's soul ward ever be reduced to 0 Hit Points by hunger while the ravener has more than 1 Hit Point (see Soul Ward), they lose all traces of their former identity and descend into a feral, nearly mindless state. Even if a ravener husk later consumes soul energy, the transformation can be reversed only via Ravenous Repast.</p>\n<hr />\n<p>Though their lifespans can measure in millennia, all dragons must eventually perish. While many do so on the blades or under the spells of dragonslayers, some manage to outlast their enemies and must, in time, face the truth that awaits all living creatures at the end of their natural lifespan. As with many other creatures, some dragons respond to such looming reminders of their own mortality poorly, and the particularly prideful or wrathful of their kind often lash out in anger when confronted by this grim truth. Peace and acceptance may find some dragons, but the most stubborn of their ilk (and invariably the most wicked) may pursue a different answer to the problem. These dragons seek out sinister rites that can transform them into undead creatures known as raveners.</p>\n<p>A ravener's flesh is stripped away as part of the transformation, leaving only their skeleton. What they lose in flesh, however, the dragon gains in soul-rending power, as their raw spiritual energy forms a protective barrier around their skeleton, keeping it intact and allowing flight with now-skeletal wings. This new existence is not so easy to maintain as other forms of undeath, however, and the ravener must feed regularly on the souls of living creatures to power their profane metabolism. This hunger is much greater than that of a living dragon, so raveners are forced to relocate regularly, traveling to fresh hunting grounds each time they strip their current home of prey. A ravener may depopulate whole regions at a time in order to sate their endless hunger for souls, lest they lose much of their power and become a ravener husk.</p>",
+			"blurb": "Variant ravener husk",
+			"data":{},
+			"items":{}
+		},
+		"Spawn of Taon": {
+			"name": "Spawn of Taon",
+			"publicNotes": "<p>The weight of murder wears heavy on the soul. With souls marked by a lifetime of dealing death, these killers, whether mass murderers, bloodthirsty soldiers, or sadistic executioners, sometimes do not let judgment and lawful execution stanch their slaying sprees. When such individuals are brought to justice, they may rise after death as mohrgs to continue their ruinous work.</p>\n<p>Drawn to others of their kind, mohrgs prefer to hunt in small groups, occasionally in partnership with weaker free-willed undead such as shadows and wights. They seek out weak prey and revel in causing drawn-out suffering. Some mohrgs haunt locations they favored in life, reenacting old crimes on new victims. They may even skulk about in public, wearing rags, cloaks, or freshly harvested skins to hide their nature. The most dangerous mohrgs are those who grow powerful enough to no longer fear being struck down again and openly assault settlements in an attempt to turn living towns into mass graves.</p>\n<p>Since those slain by a mohrg rise soon thereafter as mohrg spawn, the murders of a mohrg rarely go unnoticed for long, even when they take extra care to prey only on a society's dregs. Since mohrg spawn remain under a mohrg's control, a canny mohrg might order its spawn to remain in hiding to keep its presence secret until a point where it feels confident unleashing its undead army upon a doomed settlement.</p>\n<p>Mohrgs retain a twisted sentimentality for the crimes of their mortal life, seeking out trinkets that remind them of favorite murders. When not out hunting, mohrgs arrange their mementos into disturbing shrines. Often, these trinkets are valuable objects, and might even provide important clues to ongoing mysteries.</p>",
+			"blurb": "Variant mohrg spawn",
+			"data":{},
+			"items":{}
+		},
+		"Spellskein": {
+			"name": "Spellskein",
+			"publicNotes": "<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
+			"data":{},
+			"items":{
+				"Collapse":{
+					"name": "Collapse",
+					"description": "<p>The spellskein can collapse flat to the ground to Hide; it can attempt to Hide even if it doesn't have any cover or concealment.</p>"
+				},
+				"Crane Glide":{
+					"name": "Crane Glide",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its crane shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein gains a 25-foot fly Speed until the beginning of its next turn.</p>"
+				},
+				"Frog Hop":{
+					"name": "Frog Hop",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its frog shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein Leaps 15 feet horizontally or vertically and gains a 10-foot climb Speed until the beginning of its next turn.</p>"
+				},
+				"Refold":{
+					"name": "Refold",
+					"description": "<p>The spellskein folds itself into a crane, frog, or lizard shape, as it chooses.</p>"
+				},
+				"Lizard Frill":{
+					"name": "Lizard Frill",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its lizard shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein puffs out its cloth frills and shakes them from side to side to look fierce. The first creature hit by its sharp edge Strike before the start of its next turn must succeed on a @Check[type:will|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+				}
+			}
+		},
+		"Spellskein (Consecrate)": {
+			"name": "Spellskein (Consecrate)",
+			"publicNotes": "<p>Spellskeins created during <em>@UUID[Compendium.pf2e.spells-srd.Dbd5W6G8U2vzWolN]{Consecrate}</em> rituals have a religious symbol form and can use the one-action activity anoint while in that form.</p>\n<hr />\n<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
+			"data":{},
+			"items":{
+				"Collapse":{
+					"name": "Collapse",
+					"description": "<p>The spellskein can collapse flat to the ground to Hide; it can attempt to Hide even if it doesn't have any cover or concealment.</p>"
+				},
+				"Crane Glide":{
+					"name": "Crane Glide",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its crane shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein gains a 25-foot fly Speed until the beginning of its next turn.</p>"
+				},
+				"Frog Hop":{
+					"name": "Frog Hop",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its frog shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein Leaps 15 feet horizontally or vertically and gains a 10-foot climb Speed until the beginning of its next turn.</p>"
+				},
+				"Refold":{
+					"name": "Refold",
+					"description": "<p>The spellskein folds itself into a crane, frog, lizard, or religious symbol shape, as it chooses.</p>"
+				},
+				"Anoint":{
+					"name": "Anoint",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its religious symbol form.</p>\n<hr />\n<p><strong>Effect</strong> One creature within 10 feet gains a +1 status bonus to saving throws for one round.</p>"
+				},
+				"Lizard Frill":{
+					"name": "Lizard Frill",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its lizard shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein puffs out its cloth frills and shakes them from side to side to look fierce. The first creature hit by its sharp edge Strike before the start of its next turn must succeed on a @Check[type:will|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+				}
+			}
+		},
+		"Spellskein (Control Weather)": {
+			"name": "Spellskein (Control Weather)",
+			"publicNotes": "<p>Spellskeins created during <em>@UUID[Compendium.pf2e.spells-srd.XkDCzMIyc0YOjw05]{Control Weather}</em> rituals have a storm cloud form and can gain the following attack in that form.</p>\n<hr />\n<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
+			"data":{},
+			"items":{
+				"Collapse":{
+					"name": "Collapse",
+					"description": "<p>The spellskein can collapse flat to the ground to Hide; it can attempt to Hide even if it doesn't have any cover or concealment.</p>"
+				},
+				"Crane Glide":{
+					"name": "Crane Glide",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its crane shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein gains a 25-foot fly Speed until the beginning of its next turn.</p>"
+				},
+				"Frog Hop":{
+					"name": "Frog Hop",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its frog shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein Leaps 15 feet horizontally or vertically and gains a 10-foot climb Speed until the beginning of its next turn.</p>"
+				},
+				"Refold":{
+					"name": "Refold",
+					"description": "<p>The spellskein folds itself into a crane, frog, lizard, or cloud shape, as it chooses.</p>"
+				},
+				"Lizard Frill":{
+					"name": "Lizard Frill",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its lizard shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein puffs out its cloth frills and shakes them from side to side to look fierce. The first creature hit by its sharp edge Strike before the start of its next turn must succeed on a @Check[type:will|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+				}
+			}
+		},
+		"Spellskein (Heroes' Feast)": {
+			"name": "Spellskein (Heroes' Feast)",
+			"publicNotes": "<p>Spellskeins created during <em>@UUID[Compendium.pf2e.spells-srd.yRf59eFtZ50cGlem]{Heroes' Feast}</em> rituals have a teapot form and can use the two-action activity serve tea while in that form.</p>\n<hr />\n<p>Magic can be used for many purposes-creating objects, summoning creatures, and manipulating the elements. Usually when a ritual is cast, the outcome is reliable and predictable, but sometimes magic takes unexpected turns and a spell's energy lands in unintended places.</p>\n<p>Spellskeins are scraps of fabric and paper infused with magic and brought to life. Once animated, they fold themselves into different shapes, changing both their appearance and their abilities based on their configuration. Spellskeins are only rarely aggressive and sometimes downright timid, but most have a playful streak.</p>\n<p>Though they are often made accidentally out of magical leakage from rituals, some ritualists intentionally create spellskeins to serve as magical toys or animated decor. These planned spellskeins tend to be more obedient and less mischievous than their accidental counterparts, following commands or routines set by their creators even after said creators are long gone.</p>\n<p>Scrap pieces torn from the body of a spellskein sometimes animate as ever smaller, more mischievous constructs, which usually dart away to hide until it's safe to come out and cause trouble.</p>",
+			"data":{},
+			"items":{
+				"Collapse":{
+					"name": "Collapse",
+					"description": "<p>The spellskein can collapse flat to the ground to Hide; it can attempt to Hide even if it doesn't have any cover or concealment.</p>"
+				},
+				"Crane Glide":{
+					"name": "Crane Glide",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its crane shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein gains a 25-foot fly Speed until the beginning of its next turn.</p>"
+				},
+				"Frog Hop":{
+					"name": "Frog Hop",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its frog shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein Leaps 15 feet horizontally or vertically and gains a 10-foot climb Speed until the beginning of its next turn.</p>"
+				},
+				"Refold":{
+					"name": "Refold",
+					"description": "<p>The spellskein folds itself into a crane, frog, lizard, or teapot shape, as it chooses.</p>"
+				},
+				"Serve Tea":{
+					"name": "Serve Tea",
+					"description": "<p>A living creature that drinks the tea with an Interact action regains [[/r {1d4}[healing]]]{1d4 Hit Points} and is temporarily immune for 10 minutes.</p>\n<p>Unconsumed tea disappears at the beginning of tthe spellskein's next turn.</p>"
+				},
+				"Lizard Frill":{
+					"name": "Lizard Frill",
+					"description": "<p><strong>Requirements</strong> The spellskein is folded into its lizard shape</p>\n<hr />\n<p><strong>Effect</strong> The spellskein puffs out its cloth frills and shakes them from side to side to look fierce. The first creature hit by its sharp edge Strike before the start of its next turn must succeed on a @Check[type:will|dc:14] save or become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure).</p>"
+				}
+			}
+		},
+		"Spider Summoning Rune": {
+			"name": "Spider Summoning Rune",
+			"disable": "<p>@Check[type:thievery|dc:34|name:Erase the Rune|traits:uncommon,magical,trap,complex] (master) to erase the rune or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 36)</em> to dispel the rune.</p>",
+			"hazarddescription": "<p>An @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} rune on the floor summons a @UUID[Compendium.pf2e.pathfinder-bestiary.T5CUuPsMPb17d6Qy]{Goliath Spider} when disturbed by someone who isn't wearing Norgorber's religious symbol.</p>",
+			"reset": "<p>The trap resets after 24 hours.</p>",
+			"stealthdetails": "<p>(master)</p>",
+			"data":{},
+			"items":{}
+		},
+		"Ssumzili": {
+			"name": "Ssumzili",
+			"publicNotes": "<p>Ssumzilis are lanky, murderous fey who delight in the thrill of the hunt. They are particularly skilled/adept at stalking their prey in the rain and most commonly reside in rainforests and coastal regions, where frequent rain provides ample opportunity to hunt. Camouflaged by their cloud-gray skin, ssumzilis often compete in tests of stealth when hunting in groups, taking particular delight in approaching their quarry as closely as possible without being observed.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Stinger Ward Trap": {
+			"name": "Stinger Ward Trap",
+			"disable": "<p>@Check[type:thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (master) to prevent the ghostly stinger from forming or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 34).</p>",
+			"hazarddescription": "<p>A ghostly stinger appears in the air and jabs at anyone moving through the opening.</p>",
+			"reset": "<p>The trap resets after 24 hours.</p>",
+			"stealthdetails": "<p>(expert)</p>",
+			"data":{},
+			"items":{}
+		},
+		"Stone Ghost": {
+			"name": "Stone Ghost",
+			"data":{},
+			"items":{
+				"Stone Spirit":{
+					"name": "Stone Spirit",
+					"description": "<p>Stone Ghost can pass through objects made of stone or soil, including walls. When inside an object, Stone Ghost can't perceive, attack, or interact with anything outside the object, and if he starts his turn inside an object, he is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>"
+				},
+				"Entombing Grasp":{
+					"name": "Entombing Grasp",
+					"description": "<p><strong>Requirements</strong> A foe within Stone Ghost's reach is standing on stone or soil</p>\n<hr />\n<p><strong>Effect</strong> Stone Ghost briefly extends his intangibility to a foe and drags or pounds them into the earth. He makes an Athletics check against the target's Fortitude DC. On a success, the foe is planted waist-deep in the ground and is immobilized and flat-footed until it Escapes (DC 22). On a critical success, the foe is completely buried and must hold its breath until it is free or else start suffocating. A successful Escape returns the foe to its original square on the surface, or the closest unoccupied square.</p>"
+				}
+			}
+		},
+		"Sun Warrior Brigade": {
+			"name": "Sun Warrior Brigade",
+			"data":{},
+			"items":{}
+		},
+		"Sunburst Corpse": {
+			"name": "Sunburst Corpse",
+			"data":{},
+			"items":{}
+		},
+		"Ta'apundo": {
+			"name": "Ta'apundo",
+			"publicNotes": "<p>The First World still holds the first rough draft of many creatures in the Material Plane, but it's hard to tell what sort of creature the ta'apundo was ever intended to be. Its bark poses significant danger to metallic objects, as it converts any metal touching it into wood as fibrous and as flexible as its own body. Capricious and skittish, ta'apundos make friends easily but consider anyone who wields or wears metal to be a hated enemy.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Takulu Ot": {
+			"name": "Takulu Ot",
+			"data":{},
+			"items":{
+				"equipment-Anteater Mask":{
+					"name": "Anteater Mask"
+				},
+				"Quick Lesson":{
+					"name": "Quick Lesson",
+					"description": "<p><strong>Trigger</strong> An ally Takulu can see and who can hear Takulu makes a skill check or an attack roll</p>\n<hr />\n<p><strong>Effect</strong> Takulu grants the ally a +2 circumstance bonus to the triggering check.</p>"
+				}
+			}
+		},
+		"Taon": {
+			"name": "Taon",
+			"publicNotes": "<p>The weight of murder wears heavy on the soul. With souls marked by a lifetime of dealing death, these killers, whether mass murderers, bloodthirsty soldiers, or sadistic executioners, sometimes do not let judgment and lawful execution stanch their slaying sprees. When such individuals are brought to justice, they may rise after death as mohrgs to continue their ruinous work.</p>\n<p>Drawn to others of their kind, mohrgs prefer to hunt in small groups, occasionally in partnership with weaker free-willed undead such as shadows and wights. They seek out weak prey and revel in causing drawn-out suffering. Some mohrgs haunt locations they favored in life, reenacting old crimes on new victims. They may even skulk about in public, wearing rags, cloaks, or freshly harvested skins to hide their nature. The most dangerous mohrgs are those who grow powerful enough to no longer fear being struck down again and openly assault settlements in an attempt to turn living towns into mass graves.</p>\n<p>Since those slain by a mohrg rise soon thereafter as mohrg spawn, the murders of a mohrg rarely go unnoticed for long, even when they take extra care to prey only on a society's dregs. Since mohrg spawn remain under a mohrg's control, a canny mohrg might order its spawn to remain in hiding to keep its presence secret until a point where it feels confident unleashing its undead army upon a doomed settlement.</p>\n<p>Mohrgs retain a twisted sentimentality for the crimes of their mortal life, seeking out trinkets that remind them of favorite murders. When not out hunting, mohrgs arrange their mementos into disturbing shrines. Often, these trinkets are valuable objects, and might even provide important clues to ongoing mysteries.</p>",
+			"blurb": "Male variant mohrg",
+			"data":{},
+			"items":{}
+		},
+		"Tatterthread": {
+			"name": "Tatterthread",
+			"blurb": "Variant norn",
+			"data":{},
+			"items":{}
+		},
+		"Terwa Chosen": {
+			"name": "Terwa Chosen",
+			"data":{},
+			"items":{}
+		},
+		"Terwa Prodigy": {
+			"name": "Terwa Prodigy",
+			"data":{},
+			"items":{}
+		},
+		"Terwa Star Reader": {
+			"name": "Terwa Star Reader",
+			"data":{},
+			"items":{}
+		},
+		"Thasteron Khefak": {
+			"name": "Thasteron Khefak",
+			"publicNotes": "<p>Thasteron khefaks are alchemically enhanced versions of standard khefaks, capable of converting the minerals they eat into thasteron. While thasteron remains highly valuable as fuel and for specialized weapons, finding an experienced thasteron khefak breeder is hard because the creatures become radioactive over time.</p>\n<hr />\n<p>This unusual arthropod resembles an amalgam of a centipede and a crab. Hard-shelled and perfectly suited to life on Akiton, khefaks are so incredibly useful that a visitor to the planet might assume they were custom engineered for their environs. Such visitors would, in fact, be correct. While khefaks can be found naturally on Akiton, a new species has recently gained a foothold on the planet: alchemically engineered khefaks who excrete a refined substance that can be used as fuel to power advanced engines and devices.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Thiarvo the Quick": {
+			"name": "Thiarvo the Quick",
+			"blurb": "Male halfling treasure hunter",
+			"data":{},
+			"items":{}
+		},
+		"Thorn Guardian": {
+			"name": "Thorn Guardian",
+			"blurb": "Variant tattoo guardian",
+			"data":{},
+			"items":{}
+		},
+		"Tollvych": {
+			"name": "Tollvych",
+			"blurb": "Male human ghost",
+			"data":{},
+			"items":{}
+		},
+		"Umbo": {
+			"name": "Umbo",
+			"data":{},
+			"items":{
+				"Spore Pop":{
+					"name": "Spore Pop",
+					"description": "<p>If Umbo is reduced to 0 HP by a critical hit, he pops, forcing him to immediately Emit Spores, even if he has already used the ability that day.</p>"
+				},
+				"Emit Spores":{
+					"name": "Emit Spores",
+					"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Umbo expels spores in a @Template[type:burst|distance:10] centered on a corner of his own space. This cloud lasts until the start of the myceloid's next turn. Each creature that is in the cloud or enters it is exposed to purple pox.</p>"
+				},
+				"Purple Pox":{
+					"name": "Purple Pox",
+					"description": "<p>Myceloids are immune</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:18|name:Resist Infection]</p>\n<p><strong>Onset</strong> 1 minute</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (1 day)</p>\n<p><strong>Stage 2</strong> [[/r {4d6}[poison]]]{4d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 3}, and the creature is compelled to seek out the nearest myceloid colony-this compulsion is a mental emotion effect (1 day)</p>\n<p><strong>Stage 3</strong> The creature dies. Over 24 hours, its corpse becomes bloated and bursts, releasing a new, fully grown myceloid.</p>"
+				},
+				"Spore Domination":{
+					"name": "Spore Domination",
+					"description": "<p>Umbo targets one creature affected by purple pox within 30 feet. That creature must attempt a @Check[type:will|dc:18|name:Resist Domination|traits:emontion,incapactiation] save. It is then temporarily immune to spore domination for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> Until the end of its next turn, the target is helpful to myceloids and can't take hostile actions against them. If attacked by Umbo, the target is freed from this effect at the end of Umbo's turn.</p>\n<p><strong>Failure</strong> As success, but for 1 minute.</p>\n<p><strong>Critical Failure</strong> As success, but until the purple pox is cured.</p>"
+				}
+			}
+		},
+		"Unshadowed Anchor Root": {
+			"name": "Unshadowed Anchor Root",
+			"data":{},
+			"items":{}
+		},
+		"Unshadowed Haibram": {
+			"name": "Unshadowed Haibram",
+			"data":{},
+			"items":{}
+		},
+		"Unshadowed Koride": {
+			"name": "Unshadowed Koride",
+			"blurb": "Female human naturalist",
+			"data":{},
+			"items":{}
+		},
+		"Unshadowed Mariama": {
+			"name": "Unshadowed Mariama",
+			"data":{},
+			"items":{}
+		},
+		"Unshadowed Okoro": {
+			"name": "Unshadowed Okoro",
+			"data":{},
+			"items":{}
+		},
+		"Urbel": {
+			"name": "Urbel",
+			"publicNotes": "<p>The \"towering\" hunchbacked nuglubs are among the largest gremlins, though they're not quite three feet tall. Nuglubs have three glowing blue eyes and black, oily hair on their head and back that covers them like a cloak. Nuglubs enjoy killing with a glee that other gremlins reserve for sabotage. Indeed, they spend long hours preparing ambushes for unwary travelers or plotting the murders of sleeping villagers. Though less technically inclined than their kin, nuglubs do enjoy building traps. They delight in stealthily constructing traps in places their victims consider familiar, such as front doors and the floors around beds. If someone else gets blamed for the mayhem the nuglub creates, all the better.</p>\n<p>In combat, nuglubs focus on targets wearing metal armor. Some attribute this to envy on the part of the nuglubs, who find it difficult to fit armor on their twisted bodies. Nuglubs are particularly talented at causing those nearby to stumble over them and fall prone. Once an enemy falls to the ground, all the nuglubs descend upon the target, biting and scratching until nothing remains.</p>\n<p>Nuglubs rarely gather in groups larger than half a dozen, as quarrels often lead to violence and cannibalism. A lone nuglub who bullies a group of smaller gremlins is more likely to get their way, and thus less likely to attack their allies.</p>",
+			"data":{},
+			"items":{
+				"equipment-Pouch with 4 gold teeth":{
+					"name": "Pouch with 4 gold teeth",
+					"description": "<p>Each tooth is worth 3 gp</p>"
+				},
+				"Kneecapper":{
+					"name": "Kneecapper",
+					"description": "<p><strong>Trigger</strong> A Medium creature within Urbel's reach leaves a square during its move action</p>\n<hr />\n<p><strong>Effect</strong> Urbel lashes out at the triggering creature's knees and tries to knock them @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. He attempts an Acrobatics check against the creature's Reflex DC. On a success, the target falls and lands Prone.</p>"
+				},
+				"Bully":{
+					"name": "Bully",
+					"description": "<p>Any melee weapon Urbel uses gains the shove trait, and if he rolls a critical failure when attempting to Shove a creature with the weapon, he treats the result as a failure instead.</p>"
+				},
+				"Pound Down":{
+					"name": "Pound Down",
+					"description": "<p>Urbel's melee Strikes deal an additional [[/r {1d6}]]{1d6 damage} to @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} targets.</p>"
+				}
+			}
+		},
+		"Venom Pool": {
+			"name": "Venom Pool",
+			"disable": "<p>@Check[type:crafting|dc:40|name:Neutralize the acid|traits:hazard,complex,environmental] (master) or @Check[type:survival|dc:42|name:Neutralize the acid|traits:hazard,complex,environmental] (legendary) to neutralize the acid while within reach of it. Three successes using either skill (or a combination of both) destroys the hazard.</p>",
+			"hazarddescription": "A shallow, foul-smelling puddle of toxic acid blocks a narrow hall (marked with a dotted line on the map), and poison bursts from it when disturbed.",
+			"reset": "The hazard ends after 1 minute, contracting to its original size and keeping still until disturbed again.",
+			"routine": "<p>(2 actions) The hazard uses its first action to spread 10 feet down the hallway in both directions. Once out of the hall, each side spreads in a random direction each round, but they don't go through doors. The hazard uses its second action to move the center of the <em>@UUID[Compendium.pf2e.spells-srd.MlpbeZ61Euhl0d60]{Cloudkill}</em> up to 20 feet in any direction to which any part of the pool has line of effect (normally, to encompass the greatest number of characters). If the <em>cloudkill</em> isn't present, it instead uses its second action to produce a new <em>cloudkill</em>, as Poison Puff.</p>",
+			"stealthdetails": "<p>(legendary) to distinguish between the hazard and the oozes within it; @Check[type:perception|dc:0|traits:hazard,complex,environmental] to notice the pool</p>",
+			"data":{},
+			"items":{}
+		},
+		"Wereant Disciple": {
+			"name": "Wereant Disciple",
+			"publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>Some wereants have a religious zeal about training to protect their community and gladly give their lives for the hive.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Wereant Poisoner": {
+			"name": "Wereant Poisoner",
+			"publicNotes": "<p>Insectile werecreatures, such as wereants, only come about in unusual circumstances, such as powerful curses from inhuman gods or transformative magic run amok. Wereants work together with a natural cohesion that's rare in other types of werecreatures. The wereants presented here are more powerful than most wereants, as they've been warped by the forces contained within the Vesicant Egg.</p>\n<p>When overwhelming force is inadvisable, a wereant hive sends a poison-dripping assassin for murderous work. These poisoners love to terrify those dying in agony from their toxins.</p>",
+			"data":{},
+			"items":{}
+		},
+		"Wereant Sentinel": {
+			"name": "Wereant Sentinel",
+			"data":{},
+			"items":{}
+		},
+		"Worknesh": {
+			"name": "Worknesh",
+			"data":{},
+			"items":{}
+		},
+		"Yonsuu": {
+			"name": "Yonsuu",
+			"blurb": "Male catfolk head warden",
+			"data":{},
+			"items":{}
+		},
+		"Yorulu": {
+			"name": "Yorulu",
+			"senses": "+ 11 to find traps, 昏暗视觉",
+			"data":{},
+			"items":{
+				"Deny Advantage":{
+					"name": "Deny Advantage",
+					"description": "<p>Yorulu isn't flat-footed to creatures of 4th level or lower that are @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}, flanking, or using @UUID[Compendium.pf2e.classfeatures.w6rMqmGzhUahdnA7]{Surprise Attack}.</p>"
+				},
+				"Nimble Dodge":{
+					"name": "Nimble Dodge",
+					"description": "<p><strong>Trigger</strong> Yorulu is targeted with a melee or ranged attack by an attacker it can see.</p>\n<hr />\n<p><strong>Effect</strong> The burglar gains a +2 circumstance bonus to AC against the triggering attack.</p>"
+				},
+				"Perception Bonus Against Traps":{
+					"name": "Perception Bonus Against Traps",
+					"description": "<p>Perception +10 (+11 to find traps)</p>"
+				},
+				"Mobility":{
+					"name": "Mobility",
+					"description": "<p>Yorulu Strides half their speed or less, that movement does not trigger reactions.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Yorulu deals 1d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Surprise Attack":{
+					"name": "Surprise Attack",
+					"description": "<p>On the first round of combat, if Yorulu rolls Deception or Stealth for initiative, creatures that haven't acted are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to them.</p>"
+				}
+			}
+		}
+	}
 }
