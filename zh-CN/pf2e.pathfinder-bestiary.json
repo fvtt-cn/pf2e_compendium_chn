@@ -8948,27 +8948,27 @@
                 "Yo23Art466hO6dEO": {
                     "name": "炸弹 Bomb"
                 },
-                "TpEz65tv1dwJ91cy": {
+                "Alchemical Chambers": {
                     "name": "炼金容器 Alchemical Chambers",
                     "description": "<p>炼金魔像的身躯里有六个存放不同物质的炼金容器。当炼金魔像使用能力时会产生随机的炼金术效果，投掷1d6来并查阅下表（如果投出的结果是已经破损的炼金容器，则无效果）：</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6}[Alchemical Effect] #Alchemical Chambers]]{1d6}</th>\n<th>炼金术效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>酸液伤害 Acid Damage</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>寒冷伤害 Cold Damage</td>\n</tr>\n<tr>\n<td>3</td>\n<td>电击伤害 Electricity Damage</td>\n</tr>\n<tr>\n<td>4</td>\n<td>火焰伤害 Fire Damage</td>\n</tr>\n<tr>\n<td>5</td>\n<td>毒液伤害 Poison Damage</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "N0g5xdIF3LC3JDxP": {
+                "Alchemical Rupture": {
                     "name": "炼金破裂 Alchemical Rupture",
                     "description": "<p>当炼金魔像受到重击伤害或受到<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>魔法影响时，身上的一个玻璃容器会碎裂，对@Template[type:emanation|distance:5]{5尺弥漫}范围喷出炼金液体。</p>\n<p>投1d6并查阅炼金容器 Alchemical Chambers表来决定碎裂的是哪个容器——当结果为1-5时，范围中的生物受到[[/r {10d6}]]{10d6}对应类型的伤害（@Check[type:reflex|dc:28|basic:true]豁免）。当结果为6时，生物必须进行对抗恶心效果的强韧豁免检定。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6}[Alchemical Effect] #Alchemical Rupture]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r {10d6}[acid]]]{10d6酸液伤害} @Check[type:reflex|dc:28|basic:true|traits:acid]</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r {10d6}[cold]]]{10d6寒冷伤害} @Check[type:reflex|dc:28|basic:true|traits:cold]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r {10d6}[electricity]]]{10d6电击伤害} @Check[type:reflex|dc:28|basic:true|traits:electricity]</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r {10d6}[fire]]]{10d6火焰伤害} @Check[type:reflex|dc:28|basic:true|traits:fire]</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r {10d6}[poison]]]{10d6毒素伤害} @Check[type:reflex|dc:28|basic:true|traits:poison]</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "pOtIHukgdOyL8rMp": {
+                "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
                     "description": "<p>被伤害：音波([[/r {5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r {2d6}]]{2d6伤害}; 被治疗：酸液(区域效果[[/r {2d4}[healing]]]{2d4生命值});被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<p><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</p>\n<p><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</p>\n<p><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</p>"
                 },
-                "tq3HesFWx5P7xPWl": {
+                "Vulnerable to Shatter": {
                     "name": "法术弱点-粉碎音波 Vulnerable to Shatter",
                     "description": "<p>对炼金魔像施放<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>能正常产生效果，而且有机会导致容器破裂</p>"
                 },
-                "ahtVNJjKjna3LTc1": {
+                "Alchemical Injection": {
                     "name": "炼金注射 Alchemical Injection",
                     "description": "<p>当炼金魔像以注射器打击击中一个生物，投1d6并查阅炼金容器表来决定额外效果。注射器造成[[/r {2d6}]]{2d6}对应类型的额外伤害（或让目标暴露在恶心效果之下，取决于投掷结果）。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6}[Alchemical Effect] #Alchemical Injection]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r {2d6}[acid]]]{2d6酸液伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r {2d6}[cold]]]{2d6寒冷伤害}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r {2d6}[electricity]]]{2d6电击伤害}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r {2d6}[fire]]]{2d6火焰伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r {2d6}[poison]]]{2d6毒素伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "IUmBG7HtxvrIOHUR": {
+                "Generate Bomb": {
                     "name": "生成炸弹 Generate Bomb",
                     "description": "<p>炼金魔像从炼金容器中汲取物质填满一个小瓶来制造一枚炸弹，并进行一次炸弹打击。</p>\n<p>投1d6并查阅炼金容器表来决定炸弹效果。</p>\n<p>如果结果为1-4，则它创造的炸弹相当于高等（greater）炼金炸弹：容器1为@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{酸液瓶 Acid Flask}，容器2为@UUID[Compendium.pf2e.equipment-srd.intVPcEzbE9o4NQd]{霜冻瓶 Frost Vial}，容器3为@UUID[Compendium.pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{瓶装闪电 Bottled Lightning}，容器4为@UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{炽火胶 Alchemist's Fire}。</p>\n<p>如果结果为5，则它创造出一枚能造成3d10毒素伤害和3毒素溅射伤害的毒液炸弹，但没有其他效果。</p>\n<p>如果结果为6，则它创造出一枚恶心炸弹，将目标和溅射半径内的所有生物暴露在恶心效果之下；只被溅射影响的生物在强韧豁免检定上有+2环境加值。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6}[Alchemical Effect] #Generate Bomb]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>酸液瓶 Acid Flask: [[/r {1}[acid]]]{1酸液伤害}, [[/r {3d6}[persistent,acid]]]{3d6持续酸液伤害}@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}和[[/r {3}[splash,acid]]]{3酸液溅射伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>霜冻瓶: [[/r {3d6}[cold]]]{3d6寒冷伤害}, [[/r {3}[splash,cold]]]{3寒冷溅射伤害}和-10尺速度状态减值直到目标的下回合结束@UUID[Compendium.pf2e.equipment-effects.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>瓶装闪电: [[/r {3d6}[electricity]]]{3d6电击伤害}, [[/r {3}[splash,electricity]]]{3电击溅射伤害}和@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到目标下个回合开始</td>\n</tr>\n<tr>\n<td>4</td>\n<td>炽火胶: [[/r {3d8}[fire]]]{3d8火焰伤害}, [[/r {3}[persistent,fire]]]{3持续火焰伤害}@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}和[[/r {3}[splash,fire]]]{3火焰溅射伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>毒液炸弹: [[/r {3d10}[poison]]]{3d10 毒素伤害}和[[/r {3}[splash,poison]]]{3毒素溅射伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 }
@@ -11833,27 +11833,27 @@
             "di": "魔法(见魔像抗魔)",
             "publicNotes": "<p>传统上来说，黏土魔像被塑造成神祇的形象，用来守护陵墓或神圣的墓穴。黏土魔像能对入侵者施加诅咒，这让很多人相信这些古老的构装体具有“神圣性”。尽管这种想法缺乏依据，但迷信的人即使是看见长得像黏土魔像的雕像也会蹑手蹑脚地绕开。</p>\n<p>黏土魔像体内的动力很不稳定，当它受到伤害时有可能会狂暴。由于狂暴的黏土魔像可能会导致整个宝库都被摧毁，所以工匠们会很好地确保黏土傀儡得到维护，并处于良好的工作状态——或者干脆把他们放在需要守护的宝库门外。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该由GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
             "items": {
-                "MTJ6P2pU1320fO7f": {
+                "Berserk": {
                     "name": "狂暴 Berserk",
                     "description": "<p>严重损坏的黏土魔像可能会狂暴。每当它开始回合时，如果生命值小于等于50点，黏土魔像必须通过@Check[type:flat|dc:5]检定，否则狂暴。狂暴的魔像会胡乱攻击最近的活物，如果附近没有生物时则会攻击附近的物体。</p>"
                 },
-                "d9nsBoLgYoGWORv2": {
+                "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
                     "description": "<ul>\n<li><strong>被伤害</strong> 寒冷和水（[[/r {5d10}]]{5d10伤害}, 区域效果或可持续伤害则为[[/r {2d6}]]{2d6}）</li>\n<li><strong>被治疗</strong> 酸液 (区域效果[[/r {2d6}[healing]]]{2d6生命值})</li>\n<li><strong>被减速</strong> 土</li>\n</ul>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
-                "g2OkSiICf1gw8aes": {
+                "Quicken": {
                     "name": "加速 Quicken",
                     "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 轮到魔像开始它的回合。它在战斗的第一个回合中没有触发过此自由动作</p>\n<hr />\n<p><strong>效果</strong> 黏土魔像获得@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{加速 Quickened}效果，持续1分钟。</p>"
                 },
-                "xOGJ7uK7SF5xcrH2": {
+                "Vulnerable to Disintegrate": {
                     "name": "法术弱点-解离术 Vulnerable to Disintegrate",
                     "description": "<p>对黏土魔像施放<em>@UUID[Compendium.pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>能造成正常伤害的一半，并且可以让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，持续一轮。</p>"
                 },
-                "zNcTKoBJlpFDMTec": {
+                "Berserk Slam": {
                     "name": "狂暴猛击 Berserk Slam",
                     "description": "<p><strong>需求</strong> 黏土魔像处于狂暴状态</p>\n<hr />\n<p><strong>效果</strong> 黏土魔像以-1环境减值进行一次拳击打击，额外造成[[/r {1d8}[bludgeoning]]]{1d8钝击伤害}并且击倒目标使其@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
                 },
-                "gQ7hVeDi4X11cJlc": {
+                "Cursed Wound": {
                     "name": "诅咒创伤 Cursed Wound",
                     "description": "<p>被黏土魔像的拳击命中的生物必须通过@Check[type:fortitude|dc:29]检定，否则被诅咒，直到受害者回满最大生命值。被诅咒的生物除了魔法手段外无法恢复生命值，并且任何对其@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施展法术 Casting a Spell}尝试治疗的生物都必须通过DC 29的反制检定，否则没有治疗效果。黏土魔像的反制等级等同于其生物等级。</p>"
                 }
