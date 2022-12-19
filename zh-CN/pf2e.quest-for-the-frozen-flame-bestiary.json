@@ -37,104 +37,92 @@
 	"entries": {
 		"Abyss-warped Trees": {
 			"name": "Abyss-warped Trees",
-			"disable": "<p>@Check[type:survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental] (trained) to find a location the trees can't reach or @Check[type:religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5‑foot‑square area in the grove that's safe from this hazard.</p>",
+			"disable": "<p>@Check[type:survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental](受训)to find a location the trees can't reach or @Check[type:religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5‑foot‑square area in the grove that's safe from this hazard.</p>",
 			"hazarddescription": "<p>A forest of fiendish trees swing their branches and shift their roots to bludgeon and trip creatures in the tainted grove (area <strong>A21</strong>).</p>",
 			"reset": "<p>The Abyss-warped trees cease moving 1 minute after no living creatures are in the tainted grove. They reset immediately. A disabled tree reanimates after 1 minute. A destroyed tree regrows after 1 month.</p>",
-			"routine": "<p>(4 actions) The Abyss‑warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[type:reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. The Abyss‑warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
-			"stealthdetails": "<p>(trained) to determine the trees can move</p>",
+			"routine": "<p>(4动作) The Abyss‑warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[type:reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}. The Abyss‑warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
+			"stealthdetails": "<p>(受训) to determine the trees can move</p>",
 			"data":{},
 			"items":{}
 		},
 		"Acid Strongbox Trap": {
-			"name": "Acid Strongbox Trap",
-			"disable": "<p>@Check[type:thievery|dc:22|name:Bleed Away the Magical Field|traits:acid,evocation,magical,trap,hazard] (expert) to harmlessly bleed away the magical field or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 20) to dispel it.</p>",
-			"hazarddescription": "<p>An invisible magic field around the strongbox releases a spray of acid when disturbed.</p>",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "<p>(trained)</p>",
+			"name": "保险箱酸液陷阱 Acid Strongbox Trap",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Bleed Away the Magical Field|traits:acid,evocation,magical,trap,hazard](专家)以不受伤害地解除魔法场，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（2环；反制DC20）。</p>",
+			"hazarddescription": "<p>保险箱周围隐形的魔法场受到扰动时会泼溅酸液。</p>",
+			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Acidic Spray":{
-					"name": "Acidic Spray",
-					"description": "<p><strong>Trigger</strong> A creature touches the strongbox directly or with a held tool</p>\n<hr />\n<p><strong>Effect</strong> The trap deals [[/r {4d8+10}[acid]]]{4d8+10 acid damage} in a @Template[type:cone|distance:15] in the direction of the triggering creature (@Check[type:reflex|dc:21|basic:true]).</p>"
+					"name": "酸液喷溅 Acidic Spray",
+					"description": "<p><strong>触发</strong> 一个生物直接或通过手持工具触碰保险箱；</p>\n<hr />\n<p><strong>效果</strong> 陷阱朝触发生物方向以@Template[type:cone|distance:15]范围造成[[/r {4d8+10}[acid]]]{4d8+10酸液伤害}（@Check[type:reflex|dc:21|basic:true]豁免）。</p>"
 				}
 			}
 		},
 		"Animated Blade": {
-			"name": "Animated Blade",
-			"publicNotes": "",
-			"blurb": "",
+			"name": "活化武器 Animated Blade",
 			"data":{},
 			"items":{
 				"Construct Armor (Hardness 4)":{
-					"name": "Construct Armor (Hardness 4)",
-					"description": "<p>Like normal objects, an animated blade has Hardness. This Hardness reduces any damage the blade takes by an amount equal to the Hardness. Once an animated blade is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, and its Armor Class is reduced to 14.</p>"
+					"name": "构装护甲 Construct Armor (硬度4)",
+					"description": "<p>与普通的物体一样，活化武器同样拥有硬度。硬度可以减少其所受到的任何伤害，其数值等同于硬度的数值。一旦活化扫帚的生命值降低至一半以下，或是受到重击伤害后，其构装护甲将会破损，其AC降低至14。</p>"
 				},
 				"Tetanus":{
-					"name": "Tetanus",
-					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 week)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
+					"name": "破伤风 Tetanus",
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>潜伏期</strong> 1周</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1周)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}并且不能说话 (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1天)</p>\n<p><strong>阶段4</strong> 死亡</p>"
 				}
 			}
 		},
 		"Arboreal Tar Tree": {
 			"name": "Arboreal Tar Tree",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Ardissa Prendergant": {
-			"name": "Ardissa Prendergant",
-			"publicNotes": "",
-			"blurb": "Female human trophy hunter",
+			"name": "阿迪萨·普伦德甘特 Ardissa Prendergant",
+			"blurb": "女性人类战利品猎人",
 			"data":{},
 			"items":{
 				"Mesmerizing Sigil":{
-					"name": "Mesmerizing Sigil",
-					"description": "<p><strong>Trigger</strong> A creature targets Ardissa with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Ardissa traces a dizzying symbol in the air. The creature must attempt a @Check[type:will|dc:20] save. The creature is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> Until the beginning of her next turn, Ardissa is @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} from the creature.</p>\n<p><strong>Critical Failure</strong> Until the end of her next turn, Ardissa is @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from the creature.</p>"
+					"name": "迷人徽记 Mesmerizing Sigil",
+					"description": "<p><strong>触发</strong> 一个生物将阿迪萨作为近战打击的目标；</p>\n<hr />\n<p><strong>效果</strong> 阿迪萨在空中绘出一个炫目的符号。该生物必须尝试@Check[type:will|dc:20]豁免。然后该生物暂时免疫该效应1分钟。</p>\n<hr />\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 直到阿迪萨的下一个回合开始之前，阿迪萨对该生物视为@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>\n<p><strong>大失败</strong> 直到阿迪萨的下一个回合结束之前，阿迪萨对该生物视为@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}。</p>"
 				},
 				"Drain Bonded Item":{
-					"name": "Drain Bonded Item",
-					"description": "<p><strong>Frequency</strong> twice per day</p>\n<hr />\n<p><strong>Effect</strong> Ardissa regains the ability to cast one spell she has already cast. She must still Cast the Spell normally. She can use this ability once to recover a 1st-level spell and once to recover a 2nd-level spell. She typically uses this ability to recover her <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em> spells.</p>"
+					"name": "汲取连结物品 Drain Bonded Item",
+					"description": "<p><strong>频率</strong> 每天两次</p>\n<hr />\n<p><strong>效果</strong> 阿迪萨重新获得施放一个她已经施放过的法术的能力。她必须照常采取施放法术行动。她可以使用该能力1次恢复一个1环法术，使用该能力一次恢复一个2环法术。她通常会使用该能力恢复<em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{魔法飞弹 Magic Missile}</em>法术。</p>"
 				}
 			}
 		},
 		"Ardissa's Porter": {
-			"name": "Ardissa's Porter",
-			"publicNotes": "",
-			"blurb": "",
+			"name": "阿迪萨的搬运工 Ardissa's Porter",
 			"data":{},
 			"items":{
 				"equipment-Cargo Hook":{
-					"name": "Cargo Hook",
-					"description": "<p>A light pick is a modified mining implement with a wooden shaft ending in a pick head crafted more to pierce armor and flesh than chip rocks.</p>"
+					"name": "吊货钩 Cargo Hook",
+					"description": "<p>轻型镐是一种改良的采矿工具，其木柄顶端是一个镐头，设计目的是刺穿盔甲和肉身，而不是岩石碎片。</p>"
 				},
 				"strike-Cargo Hook":{
-					"name": "Cargo Hook"
+					"name": "吊货钩 Cargo Hook"
 				},
 				"Stumbling Snag":{
-					"name": "Stumbling Snag",
-					"description": "<p><strong>Requirements</strong> The porter is holding a cargo hook</p>\n<p><strong>Trigger</strong> An enemy within the porter's reach critically misses the porter with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The porter moves the enemy 5 feet in a direction of the porter's choosing.</p>"
+					"name": "跌撞绊足 Stumbling Snag",
+					"description": "<p><strong>需求</strong> 搬运工持握吊货钩；</p>\n<p><strong>触发</strong> 搬运工触及范围内的一个敌人对其进行的近战打击大失败；</p>\n<hr />\n<p><strong>效果</strong> 搬运工将敌人向其选择的一个方向移动5尺。</p>"
 				}
 			}
 		},
 		"Ashen Swale": {
 			"name": "Ashen Swale",
-			"publicNotes": "",
 			"blurb": "Male human god caller",
 			"data":{},
 			"items":{}
 		},
 		"Azi": {
 			"name": "Azi",
-			"publicNotes": "",
 			"blurb": "Female human necromancer",
 			"data":{},
 			"items":{}
 		},
 		"Bargott": {
 			"name": "Bargott",
-			"publicNotes": "",
 			"blurb": "Male dryad husk",
 			"data":{},
 			"items":{}
@@ -142,145 +130,126 @@
 		"Beaver": {
 			"name": "Beaver",
 			"publicNotes": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>A typical beaver can grow up to 4 feet long and weigh up to 65 pounds.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Bone Warrior": {
 			"name": "Bone Warrior",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Burnbearer": {
-			"name": "Burnbearer",
-			"publicNotes": "",
-			"blurb": "",
+			"name": "火把手 Burnbearer",
 			"data":{},
 			"items":{
 				"Spurred by Death":{
-					"name": "Spurred by Death",
-					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The burnbearer Steps or Strides.</p>"
+					"name": "死亡刺激 Spurred by Death",
+					"description": "<p><strong>触发</strong> 30尺范围内的一名盟友将一个生物HP降至0；</p>\n<hr />\n<p><strong>效果</strong> 火把手进行快步或行走。</p>"
 				},
 				"Torch and Go":{
-					"name": "Torch and Go",
-					"description": "<p><strong>Requirements</strong> The burnbearer is flanking a creature</p>\n<hr />\n<p><strong>Effect</strong> The burnbearer sets the distracted enemy ablaze. The burnbearer makes a torch Strike against the flanked creature, then Steps. If the burnbearer's Strike deals damage to the flanked creature, the creature also takes [[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>"
+					"name": "一触即燃 Torch and Go",
+					"description": "<p><strong>需求</strong> 火把手正在夹击一个生物；</p>\n<hr />\n<p><strong>效果</strong> 火把手点燃分心的敌人。火把手使用火把对被夹击的生物进行一次打击，然后快步。如果火把手的打击对被夹击的生物造成伤害，则该生物同时承受[[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
 				}
 			}
 		},
 		"Burning Mammoth Commando": {
 			"name": "Burning Mammoth Commando",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Burning Mammoth Hunter": {
-			"name": "Burning Mammoth Hunter",
-			"publicNotes": "",
-			"blurb": "",
+			"name": "燃烧猛犸猎手 Burning Mammoth Hunter",
 			"data":{},
 			"items":{
 				"Spurred by Death":{
-					"name": "Spurred by Death",
-					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The hunter Steps or Strides.</p>"
+					"name": "死亡刺激 Spurred by Death",
+					"description": "<p><strong>触发</strong> 30尺范围内的一名盟友将一个生物HP降至0；</p>\n<hr />\n<p><strong>效果</strong> 猎手进行快步或行走。</p>"
 				},
 				"Muscle Slicer":{
-					"name": "Muscle Slicer",
-					"description": "<p>A target critically hit by a hunter's Strike is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of its next turn.</p>"
+					"name": "肌肉限制 Muscle Slicer",
+					"description": "<p>猎手的打击所重击的目标在其下一回合结束前陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
 				}
 			}
 		},
 		"Burning Mammoth Longshield": {
-			"name": "Burning Mammoth Longshield",
-			"publicNotes": "",
-			"blurb": "",
+			"name": "燃烧猛犸长盾卫 Burning Mammoth Longshield",
 			"data":{},
 			"items":{
 				"Spurred by Death":{
-					"name": "Spurred by Death",
-					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The longshield Steps or Strides.</p>"
+					"name": "死亡刺激 Spurred by Death",
+					"description": "<p><strong>触发</strong> 30尺范围内的一名盟友将一个生物HP降至0；</p>\n<hr />\n<p><strong>效果</strong> 长盾卫进行快步或行走。</p>"
 				},
 				"Opportunistic Defense":{
-					"name": "Opportunistic Defense",
-					"description": "<p><strong>Trigger</strong> The longshield successfully Strikes with their shield boss</p>\n<hr />\n<p><strong>Effect</strong> The longshield Raises their Shield.</p>"
+					"name": "借机防御 Opportunistic Defense",
+					"description": "<p><strong>触发</strong> 长盾卫成功使用盾凸进行打击；</p>\n<hr />\n<p><strong>效果</strong> 长盾卫举起盾牌。</p>"
 				},
 				"Shield Shove":{
-					"name": "Shield Shove",
-					"description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The longshield's shield is raised</p>\n<hr />\n<p><strong>Effect</strong> The longshield rolls an Athletics check to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} a creature in reach. If they roll a failure, they get a success instead, and if they roll a success, they get a critical success instead. The longshield's shield is lowered.</p>"
+					"name": "盾牌推撞 Shield Shove",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 长盾卫正在举盾；</p>\n<hr />\n<p><strong>效果</strong> 长盾卫进行运动检定，@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}触及范围内的一个生物。如果检定失败，结果视为成功；如果检定成功，结果视为大成功。然后长盾卫放下盾牌。</p>"
 				}
 			}
 		},
 		"Burning Mammoth Reaver": {
-			"name": "Burning Mammoth Reaver",
-			"publicNotes": "",
-			"blurb": "",
+			"name": "燃烧猛犸掠夺者 Burning Mammoth Reaver",
 			"data":{},
 			"items":{
 				"strike-Tallow Bomb":{
-					"name": "Tallow Bomb",
-					"description": "<p>[[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {1}[splash,fire]]]{1 fire splash damage}</p>"
+					"name": "油脂炸弹 Tallow Bomb",
+					"description": "<p>[[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r {1}[splash,fire]]]{1火焰溅射伤害}</p>"
 				},
 				"Reaver's Howl":{
-					"name": "Reaver's Howl",
-					"description": "<p>When the reaver attempts an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize}, the reaver compares the result of the Intimidation check to the Will DC of each non-Burning Mammoth creature within 30 feet, determining the effect separately for each creature. The reaver's howl ignores the usual circumstance penalty to the Intimidation check for not speaking the same language as the target.</p>"
+					"name": "掠夺者吼叫 Reaver's Howl",
+					"description": "<p>当掠夺者尝试通过威吓检定进行@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}时，掠夺者将威吓检定的结果与30尺范围内所有非燃烧猛犸成员的生物的意志DC进行比较，分别为每个生物决定效果。掠夺者吼叫无视通常因语言不通而给威吓检定带来的环境减值。</p>"
 				},
 				"Spurred by Death":{
-					"name": "Spurred by Death",
-					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The reaver Steps or Strides.</p>"
+					"name": "死亡刺激 Spurred by Death",
+					"description": "<p><strong>触发</strong> 30尺范围内的一名盟友将一个生物HP降至0；</p>\n<hr />\n<p><strong>效果</strong> 猎手进行快步或行走。</p>"
 				},
 				"Cut Down":{
-					"name": "Cut Down",
-					"description": "<p>When a reaver hits a creature with a battle axe Strike, the target must succeed at a @Check[type:fortitude|dc:16] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If the creature critically fails its save, it takes [[/r {1d6}[bludgeoning]]]{1d6 bludgeoning damage} as it falls prone.</p>"
+					"name": "砍倒 Cut Down",
+					"description": "<p>当掠夺者的战斧打击命中一个生物时，目标必须通过@Check[type:fortitude|dc:16]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果该生物豁免大失败，则在倒地时还要承受[[/r {1d6}[bludgeoning]]]{1d6钝击伤害}。</p>"
 				}
 			}
 		},
 		"Cairn Wight (G4)": {
-			"name": "Cairn Wight (G4)",
-			"publicNotes": "<p>Jealous guardians of tombs, barrows, and sepulchers, cairn wights usually spawn from necromantic rituals. For those mortals who cannot abide the thought of separation from their earthly possessions, the undead existence offered by transformation into a cairn wight can be tempting. Perhaps as frequently, particularly avaricious and wealthy royalty or merchants seek out victims to transform into cairn wights to guard their precious wealth for all time.</p>\n<p>Only in the rarest instances is the greed of a mortal strong enough to spontaneously transform them into a cairn wight without a dark ritual or the intercession of a powerful divine being. On those occasions, however, the resultant wight exhibits unmatched viciousness and likely owns rare treasure indeed.</p>\n<p>As guardians of material possessions, cairn wights are supernaturally bound to the armaments they wore during the ritual used to create them. They can spread their necromantic powers into the weapons they wield. A slash from a cairn wight's sword channels life from the victim into the wight.</p>",
-			"blurb": "",
+			"name": "石冢尸妖 Cairn Wight (G4)",
+			"publicNotes": "<p>作为坟冢、墓地和陵墓那多疑的守护者，石冢尸妖通常诞生于死灵仪式中。对于那些无法忍受与他们的世俗财产分离的凡人来说，转变成一个石冢尸妖那样的不朽存在是很诱人的选择。另一种几乎同样常见的情况是，那些极其贪婪和富有的皇室或者商人常常寻找受害者来转化成石冢尸妖，以永远保护他们珍贵的财富。</p>\n<p>只有在极其罕见的情况下，一个人的贪欲才能强大到足以自发地把他变成一个石冢尸妖，而不需要黑暗仪式或强大的神力的介入。在这种情况下，最终产生的尸妖会变得无与伦比的邪恶，并且极有可能拥有罕见的珍宝。</p>\n<p>作为物质财富的守卫者，石冢尸妖与那把它在创造它的仪式上所佩戴的武器有着超自然的绑定。它们可以将死灵系能量引导到它们所佩戴的武器上。用这把剑挥出的一击会将受害者的生命力吸给尸妖。</p>",
 			"data":{},
 			"items":{
 				"Final Spite":{
-					"name": "Final Spite",
-					"description": "<p><strong>Trigger</strong> The cairn wight is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The cairn wight makes a Strike before being destroyed. It doesn't gain any temporary HP from drain life on this Strike.</p>"
+					"name": "最后的怨恨 Final Spite",
+					"description": "<p><strong>触发</strong> 石冢尸妖的生命值降至0。</p>\n<hr />\n<p><strong>效果</strong> 石冢尸妖在被摧毁前发动一次攻击，这次攻击时它不会从汲取生命能力中获得任何HP。</p>"
 				},
 				"Cairn Wight Spawn":{
-					"name": "Cairn Wight Spawn",
-					"description": "<p>A living humanoid slain by a cairn wight's weapon or claw Strike rises as a spawned wight after [[/br 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the cairn wight that killed it. It doesn't have drain life or cairn wight spawn and is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight.</p>\n<p>If its creator dies, the spawned wight becomes a full-fledged, autonomous cairn wight; it regains its free will, gains drain life and cairn wight spawn, and is no longer clumsy.</p>"
+					"name": "石冢尸妖衍体 Cairn Wight Spawn",
+					"description": "<p>被石冢尸妖的武器或者爪抓杀死的生物[[/br 1d4 #Cairn Wight Spawn Transformation]]{1d4轮}之后变成一个@UUID[Compendium.pf2e.pathfinder-bestiary-2.sMNqIHHxcVBXG08h]{尸妖衍体 Spawned Wight}。这个尸妖衍体听命于将他杀死的石冢尸妖。当它处于尸妖衍体的状态时，没有汲取生命和制造尸妖衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果尸妖衍体的制造者死亡，则该衍体变成完全的、有自主意识的石冢尸妖；它此时获得汲取生命和制造石冢尸妖衍体的能力，并且不再笨拙。</p>"
 				},
 				"Drain Life":{
-					"name": "Drain Life",
-					"description": "<p>When the cairn wight damages a living creature with a melee Strike, using an unarmed attack or its bound weapon, the cairn wight gains 5 temporary Hit Points and the creature must succeed at a @Check[type:fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the cairn wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+					"name": "汲取生命 Drain Life",
+					"description": "<p>当石冢尸妖对一个活着的生物使用爪或者绑定的武器打击并造成伤害时，石冢尸妖获得[[/r 5 #Temporary Hit Points]]{5临时生命值}，并且目标必须通过@Check[type:fortitude|dc:18]检定否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。石冢尸妖造成的进一步伤害将使流失状态值在再次豁免失败时增加1，最多达到流失4。</p>"
 				},
 				"Funereal Dirge":{
-					"name": "Funereal Dirge",
-					"description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and takes a -2 status penalty to saving throws against drain life.</p>"
+					"name": "丧葬挽歌 Funereal Dirge",
+					"description": "<p>石冢尸妖吟颂低沉而又萦绕心头的旋律。@Template[type:emanation|distance:50]{50尺}范围内的生物必须进行@Check[type:will|dc:21]豁免。</p>\n<p>石冢尸妖在[[/br 1d4 #Recharge Funereal Dirge]]{1d4轮}内不能吟唱新的丧葬挽歌。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}并在汲取生命的豁免检定中受到-2惩罚。</p>"
 				}
 			}
 		},
 		"Calcifda": {
 			"name": "Calcifda",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Castoroides": {
 			"name": "Castoroides",
 			"publicNotes": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>Castoroides are bear-sized beavers that build their lodges on land near a water source rather than in the water.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Cave-in": {
 			"name": "Cave-in",
-			"disable": "<p>@Check[type:survival|dc:25|name:Prop up ceiling|traits:hazard,environmental] (trained) to prop up the tunnel ceiling without triggering a collapse</p>",
+			"disable": "<p>@Check[type:survival|dc:25|name:Prop up ceiling|traits:hazard,environmental](受训)to prop up the tunnel ceiling without triggering a collapse</p>",
 			"hazarddescription": "The tunnel collapses, filling the passage with stone.",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "(trained)",
+			"stealthdetails": "(受训)",
 			"data":{},
 			"items":{}
 		},
@@ -293,29 +262,26 @@
 		},
 		"Crawling Hand Swarm": {
 			"name": "Crawling Hand Swarm",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Death's Slumber Ward": {
-			"name": "Death's Slumber Ward",
-			"disable": "<p>@Check[type:religion|dc:23|name:Dissipate One of the Threads|traits:hazard,magical,trap,complex] (expert) or @Check[type:performance|dc:21|name:Dissipate One of the Threads|traits:hazard,magical,trap,complex] (trained) to dissipate one of the four threads. Characters who failed or critically failed a Performance check to participate in Grandfather Eiwa's funeral in Chapter 1 have been able to reflect on the experience; these characters gain a +2 circumstance bonus to their Performance checks to disable this trap.</p>\n<p>The trap is destroyed when all four threads are dissipated.</p>",
-			"hazarddescription": "<p>A whirlwind of four ephemeral, magical threads dispels the undead and shrouds the living in an endless slumber.</p>",
-			"reset": "<p>The haunt deactivates 1 minute after no living or undead creatures are within 100 feet, then resets.</p>",
-			"routine": "<p>(4 actions) Each thread of energy passes through a random living or undead creature within 60 feet, dealing 4d6 damage (@Check[type:will|dc:22|basic:true|name:Death's Slumber Ward|traits:hazard,magical,trap,complex]) to the creature. A thread deals [[/r {4d6}[negative]]]{negative damage} to living creatures and [[/r {4d6}[positive]]]{positive damage} to undead creatures. Each thread passes through a different random creature, if possible. Each dissipated thread reduces the trap's number of actions by 1.</p>",
-			"stealthdetails": "<p>(expert)</p>",
+			"name": "死亡沉睡防护 Death's Slumber Ward",
+			"disable": "<p>@Check[type:religion|dc:23|name:Dissipate One of the Threads|traits:hazard,magical,trap,complex](专家)或@Check[type:performance|dc:21|name:Dissipate One of the Threads|traits:hazard,magical,trap,complex](受训)解除四道魔法中的一道。在参加埃瓦爷爷的葬礼时表演检定失败或大失败的角色会想起这段经历。这些角色在解除该陷阱的表演检定上获得+2环境加值。四道魔法都被解除之后，陷阱即被摧毁。</p>",
+			"hazarddescription": "<p>四道短暂的魔法组成的旋风驱散不死生物，将生者笼罩在无尽的睡眠中。</p>",
+			"reset": "<p>当100尺范围内没有活物或不死生物后，陷阱停止活动，然后重置。</p>",
+			"routine": "<p>(4动作) 每道能量随机穿过60尺范围内的一个活物或不死生物，造成4d6伤害（@Check[type:will|dc:22|basic:true|name:Death's Slumber Ward|traits:hazard,magical,trap,complex]豁免）。对活物造成的是[[/r {4d6}[negative]]]{负能量伤害}，对不死生物造成的是[[/r {4d6}[positive]]]{正能量伤害}。每道能量会尽可能穿过不同的随机生物。每解除一道魔法，陷阱的动作数量-1。</p>",
+			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
 				"Breath of Pharasma":{
-					"name": "Breath of Pharasma",
-					"description": "<p><strong>Trigger</strong> A living or undead creature opens the trunk</p>\n<hr />\n<p><strong>Effect</strong> The ephemeral winds rise, sapping energy. All living and undead creatures within @Template[type:emanation|distance:60]{60 feet} must succeed at a @Check[type:will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). The trap then rolls initiative.</p>"
+					"name": "法莱斯玛之息 Breath of Pharasma",
+					"description": "<p><strong>触发</strong> 一个活物或不死生物打开箱子；</p>\n<hr />\n<p><strong>效果</strong> 旋风出现，吸收能量。@Template[type:emanation|distance:60]{60尺}范围内的所有活物与不死生物必须通过@Check[type:will|dc:22]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（大失败为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。然后陷阱投掷先攻。</p>"
 				}
 			}
 		},
 		"Desiak": {
 			"name": "Desiak",
-			"publicNotes": "",
 			"blurb": "Male fleshwarp warrior",
 			"data":{},
 			"items":{}
@@ -323,24 +289,19 @@
 		"Elk": {
 			"name": "Elk",
 			"publicNotes": "<p>Powerful and swift land mammals, elk range through the plains, hills, and forests of the wilderness.</p>\n<p>Their size, strength, and antlers (for the males) enable common elk to contend with most of their environment's dangers, though herds generally favor flight over combat. Most elk stand between 3 and 5 feet tall and weigh between 350 and 550 pounds, with females slighter than the males.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Everburning Mammoth": {
 			"name": "Everburning Mammoth",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Falling Stalactites": {
 			"name": "Falling Stalactites",
-			"disable": "<p>@Check[type:survival|dc:20|name:Safely remove Stalactite|traits:hazard,environmental] (trained) to remove a stalactite without triggering a fall</p>",
+			"disable": "<p>@Check[type:survival|dc:20|name:Safely remove Stalactite|traits:hazard,environmental](受训)to remove a stalactite without triggering a fall</p>",
 			"hazarddescription": "Unstable stalactites fall from the ceiling.",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "(trained)",
+			"stealthdetails": "(受训)",
 			"data":{},
 			"items":{}
 		},
@@ -353,21 +314,19 @@
 		},
 		"Final Flight": {
 			"name": "Final Flight",
-			"disable": "<p>@Check[type:diplomacy|dc:22|name:Soothe the restless spirits|traits:hazard,haunt] (trained) to soothe the restless spirits, or @Check[type:religion|dc:24|name:Honor the deceased|traits:hazard,haunt] (trained) to recite a prayer honoring the deceased; two successful checks are required to disable the haunt</p>",
+			"disable": "<p>@Check[type:diplomacy|dc:22|name:Soothe the restless spirits|traits:hazard,haunt](受训)to soothe the restless spirits, or @Check[type:religion|dc:24|name:Honor the deceased|traits:hazard,haunt](受训)to recite a prayer honoring the deceased; two successful checks are required to disable the haunt</p>",
 			"hazarddescription": "A creature experiences the death of a priest carried off by griffons and fed to their chicks.",
 			"reset": "The haunt deactivates 1 minute after all living creatures leave the Lea of Honored Souls. Ten minutes after deactivating, the haunt resets.",
-			"routine": "",
-			"stealthdetails": "(expert)",
+			"stealthdetails": "(专家)",
 			"data":{},
 			"items":{}
 		},
 		"Footsteps Of Legends": {
 			"name": "Footsteps Of Legends",
-			"disable": "<p>@Check[type:diplomacy|dc:26|name:Convince the spirits to remain dormant|traits:hazard,haunt] (trained) to convince the spirits to remain dormant, or @Check[type:religion|dc:26|name:Ritually silence the spirits|traits:hazard,haunt] (trained) to ritually silence the spirits</p>",
+			"disable": "<p>@Check[type:diplomacy|dc:26|name:Convince the spirits to remain dormant|traits:hazard,haunt](受训)to convince the spirits to remain dormant, or @Check[type:religion|dc:26|name:Ritually silence the spirits|traits:hazard,haunt](受训)to ritually silence the spirits</p>",
 			"hazarddescription": "The characters witness Burning Mammoths walking this mountain pass in ages long past.",
 			"reset": "1 hour",
-			"routine": "",
-			"stealthdetails": "(expert)",
+			"stealthdetails": "(专家)",
 			"data":{},
 			"items":{}
 		},
@@ -375,147 +334,133 @@
 			"name": "Forest Fire",
 			"disable": "<p>A successful @Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5‑foot‑square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5‑foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10‑foot‑by‑10‑foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
 			"hazarddescription": "<p>A @Template[type:line|distance:10|width:10]{10‑foot‑by‑10‑foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
-			"reset": "",
-			"routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes [[/r {2d8+5}[fire]]]{2d8+5 fire damage}, or [[/r {4d8+10}[fire]]]{4d8+10 fire damage} if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
+			"routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes [[/r {2d8+5}[fire]]]{2d8+5火焰伤害}, or [[/r {4d8+10}[fire]]]{4d8+10火焰伤害} if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
 			"stealthdetails": "",
 			"data":{},
 			"items":{}
 		},
 		"Gathganara": {
-			"name": "Gathganara",
-			"publicNotes": "<p>Naiads protect streams, ponds, springs, and other natural bodies of fresh water. While most naiads lead solitary lives close to their chosen ward, sometimes these nymphs congregate in coven-like groups where river tributaries meet, performing great magic and blessing the waters of the land. Because naiads' bonds to their bodies of water permit more flexibility, they are the nymphs most likely to interact with humanoids and even visit their settlements on occasion. Unlike other nymphs, naiads occasionally become adventurers, especially when dark forces seek to despoil nature or otherwise threaten the land, joining forces with others to prevent the corruption of nature.</p>\n<hr />\n<p>Nymphs are a family of fey that take the form of beautiful humanoids with elven features and have a deep association with the natural world. The most common of their kind are the dryads, which are spirits that embody great trees, but many other kinds of nymphs exist, including naiads, who watch over bodies of water. All nymphs are guardians of some element of nature, typically a specific tree or pond, or even-in the case of nymph queens-whole forests or massive bodies of water.</p>",
-			"blurb": "",
+			"name": "加特加纳拉 Gathganara",
+			"publicNotes": "<p>水泽仙女守护着溪流、河塘、泉水，以及其他天然的淡水水域。虽然大多数水泽仙女都独自生活在她们选择的守护之地的周边，不过有时候这些宁芙们也会像是一个巫团一般聚集在河流交汇之地，施展宏大的魔法祝福这片大地上的水泽。水泽仙女与水之间的联系也给予了她们如水一般的适应性，她们是最有可能与类人生物交互的宁芙，甚至偶尔还会造访其他生物的定居地。与其他宁芙不同，水泽仙女偶尔还会成为冒险者，尤其是当黑暗力量试图掠劫自然或是威胁到大地的时候，她们会与他人联手一同阻止自然被腐化。</p>\n<hr />\n<p>宁芙是精类家族中的一员，有着精灵特征的绝美外貌，并且与自然世界有着深层的联系。她们中最为常见的就是木林仙女，一种象征了参天大树的精魂，其他的还有诸如守护水体的水泽仙女这样的各个种类的宁芙存在。所有的宁芙都是某种自然元素的守护者，通常是一棵树或是一个池塘，甚至像是宁芙仙后那样守护着整个森林或是一大片水体。</p>",
 			"data":{},
 			"items":{
 				"Subterranean Naiad":{
-					"name": "Subterranean Naiad",
-					"description": "<p>Gathganara has darkvision, rather than low-light vision.</p>"
+					"name": "地下水泽仙女 Subterranean Naiad",
+					"description": "<p>加特加纳拉拥有黑暗视觉而非低光视觉。</p>"
 				},
 				"Wild Empathy":{
-					"name": "Wild Empathy",
-					"description": "<p>The naiad can use Diplomacy to Make an Impression on and make very simple Requests of animals.</p>"
+                    "name": "野性认同 Wild Empathy",
+                    "description": "<p>水泽仙女可以用交涉来对动物@UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{建立印象 Make an Impression}并向它们进行一些非常简单的@UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{提出请求 Requests}。</p>"
 				},
 				"Water Dependent":{
-					"name": "Water Dependent",
-					"description": "<p>A naiad bonds to a spring, pool, pond, or similar-sized water feature. While within 300 feet of her bonded body of water, she can use her innate <em>@UUID[Compendium.pf2e.spells-srd.iAnpxrLaBU4V6Sej]{Tidal Surge}</em> at will. She doesn't recover Hit Points or reduce the drained condition when resting beyond that range. Unlike most other nymphs, she doesn't suffer penalties from being apart from her bonded body of water. A naiad can perform a 24-hour ritual to bond herself to a new body of water.</p>"
+                    "name": "水泽依存 Water Dependent",
+                    "description": "<p>水泽仙女与泉水、池水、河塘或是类似尺寸的水景相关联。当她在所关联的水域300尺之内时，她能够随意使用她内在法术中的<em>@UUID[Compendium.pf2e.spells-srd.iAnpxrLaBU4V6Sej]{潮汐涌流 Tidal Surge}</em>。当她在这一范围之外休息的时候，她无法恢复生命值，也无法减少@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态值。与其他大多数的宁芙不同，她不会因为离开自身所关联的水域而遭受惩罚。一名水泽仙女可以进行一个耗时24小时的仪式将自己与一片新的水域相关联。</p>"
 				},
 				"Water Healing":{
-					"name": "Water Healing",
-					"description": "<p>While within her bonded body of water, the naiad heals 1 Hit Point every 10 minutes.</p>"
+                    "name": "水泽治愈 Water Healing",
+                    "description": "<p>当水泽仙女处于她的关联水域中时（见水泽依存），她每10分钟治愈[[/r {1}[healing]]]{1点生命值}。</p>"
 				}
 			}
 		},
 		"Giant Tapir": {
-			"name": "Giant Tapir",
-			"speed": "splayed toes",
-			"publicNotes": "<p>With a blunt, prehensile trunk and a squat posture, giant tapirs resemble a cross between elephant and boar, though they're actually more closely related to horses and rhinoceroses. Tapirs live in loose herds that graze near rivers and lakes. They enjoy fresh water, not only for the lush plants that grow along the shores-which they eat in prodigious quantities- but also for the protection the water provides. When predators approach, tapirs retreat to the water to hide, keeping their snouts barely above the surface to breathe. Likewise, the breezes and scents that accompany creeks and rivers mask tapirs' musk as they travel along these waterways. Despite their ungainly movement, tapirs are remarkably sure-footed, easily traversing mud and similar terrain thanks to their broad toes.</p>\n<p>Humanoids often hunt giant tapirs for their meat and durable hides. Such hunts are far from guaranteed, though; tapirs can run at least as fast as their hunters, and most will fight if cornered. The docile giants do what they can to avoid confrontation whenever possible. If they sense danger approaching, giant tapirs make a loud whistling sound to warn other tapirs about predators. A community who befriends or domesticates a herd of tapirs can use this whistling habit as an alarm system against encroaching enemies.</p>\n<p>Giant tapirs are usually quite placid, but they can be fearsome when roused. Their tusk-like front teeth are suitable for gouging attackers, and a tapir that manages to get a mouthful of an enemy's arm or leg can use its blunt molars to grind the flesh to paste. Tapirs have good hearing and an excellent sense of smell, but like many prey animals, they have poor vision. In the chaos of combat against multiple enemies, giant tapirs can become overwhelmed and confused, lashing out at allies as well as foes or fleeing the scene entirely.</p>",
-			"blurb": "",
+			"name": "巨貘 Giant Tapir",
+			"speed": "宽阔脚趾",
+			"publicNotes": "<p>笨拙但可以用于抓握的鼻子，加上蹲坐的姿态，让貘看起来像是大象和野猪的杂交品种，尽管它们实际上与马和犀牛的关系更近。貘生活在松散的畜群中，以河流和湖泊附近的草地为食。貘喜欢淡水，不仅是因为它们需要大量进食沿岸生长的茂盛植物，也是为了在水中寻求庇护。当掠食者靠近时，貘会退到水中躲藏起来，将鼻子伸出几乎和 水面平齐的位置来呼吸。同样，伴随着小溪和河流的微风和气味掩盖了貘沿着这些水道旅行时散发出的体味。尽管它们的动作笨拙，但貘的脚步非常稳健，由于脚趾宽阔，它们很容易穿越泥泞和类似的地形。</p>\n<p>类人生物经常猎杀巨貘，以获取它们的肉和耐用的兽皮。然而，狩猎它们往往空手而归；貘至少可以跑得和它们的猎人一样快，而且大多数巨貘会在走投无路时拼死抵抗。这些温驯的巨兽会尽其所能地避免冲突。如果它们感觉到危险临近，巨貘会发出响亮的口哨声，以警告其他同类有掠食者。与一群貘成为朋友或驯化它们的社区可以使用这种口哨声作为防止入侵敌人的警报系统。</p>\n<p>巨貘通常很平静，但一旦被激怒就会变得可怕。它们长着獠牙的门牙适合用来给攻击者开瓢，貘只要咬到敌人的胳膊或腿，就能用钝臼齿把肉磨成糊状。貘具有良好的听力和极好的嗅觉，但像许多猎物一样，它们的视力很差。在与多个敌人战斗的混乱中，巨型貘可能会变得不知所措和困惑，同时猛殴敌人和盟友，或者完全逃离现场。</p>",
 			"data":{},
 			"items":{
 				"Grinding Bite":{
-					"name": "Grinding Bite",
-					"description": "<p><strong>Requirements</strong> The giant tapir's last action was a successful jaws Strike against a creature</p>\n<hr />\n<p><strong>Effect</strong> The tapir gnaws the target's flesh and muscle with its blunt teeth. The creature must attempt a @Check[type:fortitude|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature takes [[/r {2d4}[bludgeoning]]]{2d4 bludgeoning damage} and is enfeebled 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r {4d4}[bludgeoning]]]{4d4 bludgeoning damage} and is enfeebled 1 for 1 minute.</p>"
+					"name": "碾磨噬咬 Grinding Bite",
+					"description": "<p><strong>需求</strong> 巨貘的上个动作是对一个生物进行一次成功的啃咬打击；</p>\n<hr />\n<p><strong>效果</strong> 巨貘用强壮的盘牙碾磨目标的血肉。目标必须尝试一次@Check[type:fortitude|dc:18]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}直到它的下个回合开始。</p>\n<p><strong>失败</strong> 生物陷入受到[[/r {2d4}[bludgeoning]]]{2d4钝击伤害}，并且力竭1直到它的下个回合结束。</p>\n<p><strong>大失败</strong> 生物陷入受到[[/r {4d4}[bludgeoning]]]{4d4钝击伤害}，并且力竭1，持续1分钟。</p>"
 				},
 				"Splayed Toes":{
-					"name": "Splayed Toes",
-					"description": "<p>Giant tapirs ignore difficult terrain from mud and shallow water.</p>"
+					"name": "宽阔脚趾 Splayed Toes",
+					"description": "<p>巨貘无视由烂泥或浅水构成的困难地形。</p>"
 				}
 			}
 		},
 		"Giant Tapir (Snared)": {
-			"name": "Giant Tapir (Snared)",
-			"speed": "splayed toes",
-			"publicNotes": "<p>With a blunt, prehensile trunk and a squat posture, giant tapirs resemble a cross between elephant and boar, though they're actually more closely related to horses and rhinoceroses. Tapirs live in loose herds that graze near rivers and lakes. They enjoy fresh water, not only for the lush plants that grow along the shores-which they eat in prodigious quantities- but also for the protection the water provides. When predators approach, tapirs retreat to the water to hide, keeping their snouts barely above the surface to breathe. Likewise, the breezes and scents that accompany creeks and rivers mask tapirs' musk as they travel along these waterways. Despite their ungainly movement, tapirs are remarkably sure-footed, easily traversing mud and similar terrain thanks to their broad toes.</p>\n<p>Humanoids often hunt giant tapirs for their meat and durable hides. Such hunts are far from guaranteed, though; tapirs can run at least as fast as their hunters, and most will fight if cornered. The docile giants do what they can to avoid confrontation whenever possible. If they sense danger approaching, giant tapirs make a loud whistling sound to warn other tapirs about predators. A community who befriends or domesticates a herd of tapirs can use this whistling habit as an alarm system against encroaching enemies.</p>\n<p>Giant tapirs are usually quite placid, but they can be fearsome when roused. Their tusk-like front teeth are suitable for gouging attackers, and a tapir that manages to get a mouthful of an enemy's arm or leg can use its blunt molars to grind the flesh to paste. Tapirs have good hearing and an excellent sense of smell, but like many prey animals, they have poor vision. In the chaos of combat against multiple enemies, giant tapirs can become overwhelmed and confused, lashing out at allies as well as foes or fleeing the scene entirely.</p>",
-			"blurb": "",
+			"name": "巨貘 Giant Tapir (落入陷阱)",
+			"speed": "宽阔脚趾",
+			"publicNotes": "<p>笨拙但可以用于抓握的鼻子，加上蹲坐的姿态，让貘看起来像是大象和野猪的杂交品种，尽管它们实际上与马和犀牛的关系更近。貘生活在松散的畜群中，以河流和湖泊附近的草地为食。貘喜欢淡水，不仅是因为它们需要大量进食沿岸生长的茂盛植物，也是为了在水中寻求庇护。当掠食者靠近时，貘会退到水中躲藏起来，将鼻子伸出几乎和 水面平齐的位置来呼吸。同样，伴随着小溪和河流的微风和气味掩盖了貘沿着这些水道旅行时散发出的体味。尽管它们的动作笨拙，但貘的脚步非常稳健，由于脚趾宽阔，它们很容易穿越泥泞和类似的地形。</p>\n<p>类人生物经常猎杀巨貘，以获取它们的肉和耐用的兽皮。然而，狩猎它们往往空手而归；貘至少可以跑得和它们的猎人一样快，而且大多数巨貘会在走投无路时拼死抵抗。这些温驯的巨兽会尽其所能地避免冲突。如果它们感觉到危险临近，巨貘会发出响亮的口哨声，以警告其他同类有掠食者。与一群貘成为朋友或驯化它们的社区可以使用这种口哨声作为防止入侵敌人的警报系统。</p>\n<p>巨貘通常很平静，但一旦被激怒就会变得可怕。它们长着獠牙的门牙适合用来给攻击者开瓢，貘只要咬到敌人的胳膊或腿，就能用钝臼齿把肉磨成糊状。貘具有良好的听力和极好的嗅觉，但像许多猎物一样，它们的视力很差。在与多个敌人战斗的混乱中，巨型貘可能会变得不知所措和困惑，同时猛殴敌人和盟友，或者完全逃离现场。</p>",
 			"data":{},
 			"items":{
 				"Grinding Bite":{
-					"name": "Grinding Bite",
-					"description": "<p><strong>Requirements</strong> The giant tapir's last action was a successful jaws Strike against a creature</p>\n<hr />\n<p><strong>Effect</strong> The tapir gnaws the target's flesh and muscle with its blunt teeth. The creature must attempt a @Check[type:fortitude|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature takes [[/r {2d4}[bludgeoning]]]{2d4 bludgeoning damage} and is enfeebled 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r {4d4}[bludgeoning]]]{4d4 bludgeoning damage} and is enfeebled 1 for 1 minute.</p>"
+					"name": "碾磨噬咬 Grinding Bite",
+					"description": "<p><strong>需求</strong> 巨貘的上个动作是对一个生物进行一次成功的啃咬打击；</p>\n<hr />\n<p><strong>效果</strong> 巨貘用强壮的盘牙碾磨目标的血肉。目标必须尝试一次@Check[type:fortitude|dc:18]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}直到它的下个回合开始。</p>\n<p><strong>失败</strong> 生物陷入受到[[/r {2d4}[bludgeoning]]]{2d4钝击伤害}，并且力竭1直到它的下个回合结束。</p>\n<p><strong>大失败</strong> 生物陷入受到[[/r {4d4}[bludgeoning]]]{4d4钝击伤害}，并且力竭1，持续1分钟。</p>"
 				},
 				"Snared":{
-					"name": "Snared",
-					"description": "<p>Due to the poison barbs stuck in its hooves, the tapir can't Stride farther than 10 feet.</p>"
+					"name": "落入陷阱 Snared",
+					"description": "<p>由于它们的蹄子上扎着毒倒钩，貘无法行走超过10尺的距离。</p>"
 				},
 				"Splayed Toes":{
-					"name": "Splayed Toes",
-					"description": "<p>Giant tapirs ignore difficult terrain from mud and shallow water.</p>"
+					"name": "宽阔脚趾 Splayed Toes",
+					"description": "<p>巨貘无视由烂泥或浅水构成的困难地形。</p>"
 				}
 			}
 		},
 		"Glyptodon": {
-			"name": "Glyptodon",
-			"publicNotes": "<p>Glyptodons are enormous, armadillo-like megafauna that roam sandy riverbanks and ancient forests in search of their favorite foods, namely riparian grass and tender saplings. Surly and suspicious, glyptodons avoid predators not out of a defensive instinct-their armored hides protect them from most well-equipped carnivores-but rather because they simply prefer to be left alone to their placid foraging. Despite their great size, glyptodons can survive on surprisingly little food, and they'll eat just about anything. As a result, they're more likely to be encountered roaming across vast tundra or desert regions than other large herbivores, appearing as a single, lumbering hump against an otherwise-flat horizon.</p>\n<p>A glyptodon's scutes-the thick, bony plates of its carapace-grow in distinctive patterns and scar readily, making it easy for non-glyptodons to identify individual animals. Glyptodons have notoriously bad eyesight, even for prey animals, and rely on their sense of smell to get around and identify threats and each other. In combat, they primarily rely on their thick carapaces to protect them from attackers.</p>\n<p>Although southern merchants have occasionally attempted to create a glyptodon-mounted trading network, riding these giants is an exercise in frustration, as their rounded hides provide little purchase for humanoid riders' feet or saddles. However, some webbed-toed people of the plains, including bands of lizardfolk, have managed to maintain glyptodon mounts thanks to their strong, flexible, clawed feet. Other ancestries primarily view glyptodons as a source of meat and tough hides, the latter of which make for excellent impromptu shelters and river boats.</p>\n<p>When cornered, a glyptodon uses its powerful digging claws to scrape or scare away attackers. Glyptodons can use their tails to ward off smaller predators, but generally do so only as a last resort.</p>",
-			"blurb": "",
+			"name": "雕齿兽 Glyptodon",
+			"publicNotes": "<p>雕齿兽是一种体型巨大的、像犰狳一样的巨型动物，它们漫步在沙质河岸和古老的森林中，寻找它们最喜欢的食物，即河岸的草和幼树。狰狞而多疑的雕齿兽躲避捕食者并非出于防御本能——它们全副武装的兽皮保护它们不受大多数牙尖嘴利的食肉动物的伤害——而是因为它们更喜欢独处，而不是安静地觅食。尽管体型庞大，雕齿兽却能靠很少的食物生存，它们几乎什么都吃。因此，与其他大型食草动物相比，它们更有可能在广阔的苔原或沙漠地区游荡。在平坦的地平线上，它们看起来像单独的、动作迟缓的小圆丘。</p>\n<p>雕齿兽的甲壳状厚骨板很容易长出独特的图案和疤痕，这使得雕齿兽之外的其他生物兽很容易辨识某个具体的雕齿兽。雕齿兽的视力出了名的差，即使对猎物来说也是如此，它们依靠嗅觉四处走动，识别威胁，识别彼此。在战斗中，它们主要依靠厚厚的甲壳来保护自己免受攻击。</p>\n<p>尽管南方的商人们偶尔会尝试建立雕齿兽贸易网络，但骑上这些巨兽是一件令人沮丧的事情，因为它们圆润的兽皮很难适配人形骑手的脚或鞍具。然而。然而，平原上一些有蹼的人，包括蜥蜴人，凭借他们强壮、灵活、有爪的脚，可以成功骑乘雕齿兽。其他族裔主要把雕齿兽看作是肉和硬皮的来源，后者是很好的临时庇护所和河船。</p>\n<p>当走投无路时，雕齿兽会用它强有力的挖掘爪赶走或吓跑攻击者。雕齿兽可以用它们的尾巴来击退较小的掠食者，但通常只是作为最后一招。</p>",
 			"data":{},
 			"items":{
 				"Carapace Block":{
-					"name": "Carapace Block",
-					"description": "<p><strong>Trigger</strong> An adjacent creature targets the glyptodon with an attack</p>\n<hr />\n<p><strong>Effect</strong> The glyptodon turns, blocking the attack with its carapace and thrusting its heavy body toward the attacker. It gains a +2 circumstance bonus to its AC against the triggering attack. If the attack critically fails, the glyptodon attempts to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} the attacker.</p>"
+					"name": "甲壳格挡 Carapace Block",
+					"description": "<p><strong>触发</strong> 一个相邻的生物将雕齿兽作为攻击目标；</p>\n<hr />\n<p><strong>效果</strong> 雕齿兽转身，用坚硬的甲壳格挡攻击并用沉重的身体撞向敌人。它的AC针对触发的攻击有+2环境加值。如果此攻击大失败，雕齿兽还能尝试@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}攻击者。</p>"
 				},
 				"Clobbering Tail":{
-					"name": "Clobbering Tail",
-					"description": "<p>A glyptodon's stiff tail is its strongest weapon. When a glyptodon critically hits with its tail Strike, the target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round.</p>"
+					"name": "猛击之尾 Clobbering Tail",
+					"description": "<p>雕齿兽强健的尾部是凶狠的武器。当雕齿兽的甩尾打击造成重击时，目标还会@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}1轮。</p>"
 				}
 			}
 		},
 		"Graylok Ambusher": {
 			"name": "Graylok Ambusher",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Graylok Artillerist": {
 			"name": "Graylok Artillerist",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Graylok Gatebreaker": {
 			"name": "Graylok Gatebreaker",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Groplit": {
-			"name": "Groplit",
-			"publicNotes": "<p>The groplit is a squat little animal shaped like a water droplet, with a bulbous rear end and an eel-like face that juts from a narrow skull. Its rear legs are more muscular than those in front, which it primarily uses for balance, giving it the gait and appearance of a toad. Groplits are best known for their greasy skin and queasy hygienic habits: they spend most of each day using their two long tongues to slurp up their own oily excretions or similarly viscous discharge originating from plants or other animals. Although they prefer to dwell in northern wetlands, fens, and moist caves, groplits can thrive in all but the most barren environments. They'll eat just about anything, though they tend to prefer small, crunchy animals like bugs and birds.</p>\n<p>Groplits are famously loyal and highly sociable companions, and they make for dedicated, if somewhat odd-looking, pets. They can be taught simple commands and appear to take great pride in obeying them, performing stunts even in the face of obvious danger. An unscrupulous master might train a groplit with the intent to sacrifice it in an emergency, a fate to which the groplit is happily resigned. This single-minded obedience and their slow reproductive rate make groplits fairly rare in the wild.</p>\n<p>As a result of the way their bones are structured, groplits exhibit an imperturbable smile, of sorts-a physical feature which some find as creepy (or enraging) as others find it endearing. Its apparently ceaseless jubilation has given this creature the nickname \"the grinning toad\" in some parts of the world.</p>\n<p>Because they love to lap up oily matter of all kinds, groplits are naturally drawn to greasy animals like @UUID[Compendium.pf2e.pathfinder-bestiary.eHLDsL1LG3jQ1H6Y]{Slurks}, @UUID[Compendium.pf2e.pathfinder-bestiary-2.g1htYgARxNKxc7MV]{Giant Slugs}, and lagofirs. For the most part, such animals rarely mind the company of an amiable groplit, though there's no such thing as a free meal; groplits who drop their guard amid their found family often end up on the wrong side of their companions' intestinal tracts.</p>",
-			"blurb": "",
+			"name": "油蟾 Groplit",
+			"publicNotes": "<p>油蟾是一种矮胖的小动物，外观形似水滴，有一个球根状的尾部和一个从狭窄的头骨突出的像鳗鱼一样的脸。它的后腿比前腿肌肉更多，主要用于平衡，使它的步态和外观像蟾蜍。油蟾最出名的是它们油腻的皮肤和令人作呕的卫生习惯：它们每天大部分时间在都用它们的两只长舌头吮吸自己的油质分泌物，或吮吸来自植物或其他动物的相似的黏性分泌物。虽然它们更喜欢生活在北部的湿地、沼泽和潮湿的洞穴中，但也可以在最贫瘠的环境中茁壮成长。它们什么都吃，不过它们更喜欢小而脆的动物，比如虫子和鸟。</p>\n<p>油蟾是出了名的忠诚和高度社会化的伙伴，它们是忠诚的宠物，尽管外表看起来有些奇怪。他们可以学会简单的命令，并表现出服从命令的自豪感，甚至在面对明显的危险时也能表演绝活。某些无良的主人可能会训练油蟾，打算在紧急情况下把它牺牲掉，而油蟾却心甘情愿地听天由命。这种专一的服从和它们缓慢的繁殖速度使得油蟾在野外相当罕见。</p>\n<p>由于它们的骨骼结构，油蟾看起来像是时刻保持平静的微笑，这种身体特征让有些人觉得它令人毛骨悚然（或感到愤怒），而另一些人则觉得它很可爱。在世界上的一些地方，这种生物因其持续不断地欢腾而被冠以“笑面蟾”的绰号。</p>\n<p>因为它们喜欢舔舐各种油性物质，油蟾自然会被油腻的动物，如@UUID[Compendium.pf2e.pathfinder-bestiary.eHLDsL1LG3jQ1H6Y]{泥蛙 Slurks}，@UUID[Compendium.pf2e.pathfinder-bestiary-2.g1htYgARxNKxc7MV]{巨蛞蝓 Giant Slugs}和拉格菲巨兔（lagofirs，AP#176《失落的猛犸谷》）所吸引。在大多数情况下，这些动物很少介意一个和蔼可亲的油蟾陪伴，尽管没有免费的午餐。油蟾在找到自己的亲族时往往会放松警惕，结果时常落入进入同伴的腹中。</p>",
 			"data":{},
 			"items":{
 				"Flammable Grease":{
-					"name": "Flammable Grease",
-					"description": "<p>A groplit's DC to recover from @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} is increased by 2 (generally, from DC 15 to DC 17).</p>"
+					"name": "易燃油脂 Flammable Grease",
+					"description": "<p>油蟾结束@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}的DC增加2点（通常来说，从15增加到17）。</p>"
 				},
 				"Greasy Slide":{
-					"name": "Greasy Slide",
-					"description": "<p><strong>Trigger</strong> A creature misses the groplit with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The groplit Strides or Swims up to 10 feet. This movement doesn't trigger reactions.</p>"
+					"name": "滑溜步 Greasy Slide",
+					"description": "<p><strong>触发</strong> 一个生物对油蟾近战打击但失手；</p>\n<hr />\n<p><strong>效果</strong> 油蟾行走或游泳最多10尺。此移动不触发反应动作。</p>"
 				},
 				"Hopping Charge":{
-					"name": "Hopping Charge",
-					"description": "<p>The groplit Strides twice, Leaps twice, or Strides once and Leaps once. It then makes a jaws Strike at the end of the movement.</p>"
+					"name": "蛙跳冲锋 Hopping Charge",
+					"description": "<p>油蟾行走两次，跳跃两次，或行走一次后跳跃一次。在行动结束时，他们能进行一次啃咬打击。</p>"
 				},
 				"Incendiary Dollop":{
-					"name": "Incendiary Dollop",
-					"description": "<p>Creatures struck by the groplit are smeared with some of its flammable grease. For the following 1 minute, or until a creature scrubs away the grease dollop with a single Interact action, the DC of the creature's checks to recover from @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} is increased by 2.</p>"
+					"name": "引火油层 Incendiary Dollop",
+					"description": "<p>被油蟾打击命中的生物会被一层依然油脂覆盖。在接下来的1分钟内，或直到生物以一个单独的交互动作擦去油脂，否则生物从@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}中恢复的DC增加2点。</p>"
 				}
 			}
 		},
 		"Hail of Razor Stones": {
-			"name": "Hail of Razor Stones",
-			"disable": "<p>@Check[type:thievery|dc:18|name:Cut the Trip Cord|traits:hazard,mechanical,trap] (trained) to safely cut the trip cord</p>",
-			"hazarddescription": "<p>When a concealed cord is tripped, several sharp stones fall onto the square containing the cord.</p>",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "<p>(trained)</p>",
+			"name": "利石雨 Hail of Razor Stones",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Cut the Trip Cord|traits:hazard,mechanical,trap](受训)以安全地解除绊线。</p>",
+			"hazarddescription": "<p>当隐蔽的绊线被触发时，数块尖锐的石头落向绊线所在的方格。</p>",
+			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Deadfall":{
-					"name": "Deadfall",
-					"description": "<p><strong>Trigger</strong> A creature walks into the square containing the trip cord</p>\n<hr />\n<p><strong>Effect</strong> Falling rocks deal [[/r {4d8}[slashing]]]{4d8 slashing damage} (@Check[type:reflex|dc:19|basic:true]) to any creature in the square, possibly pinning them to the ground. On a failed save, the creature falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}; on a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} (DC 17 to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}).</p>\n<p>An adjacent creature can attempt a @Check[type:athletics|dc:19] check to shove the rocks aside to free an immobilized creature.</p>"
+					"name": "致命落石 Deadfall",
+					"description": "<p><strong>触发</strong> 一个生物走入绊线所在的方格；</p>\n<hr />\n<p><strong>效果</strong> 落石对方格内的任何生物造成[[/r {4d8}[slashing]]]{4d8挥砍伤害}（@Check[type:reflex|dc:19|basic:true]豁免），或许会将之击倒。豁免失败的情况下，该生物陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}；大失败的情况下，该生物遭到@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 17）。</p>\n<p>邻近的生物可以尝试通过@Check[type:athletics|dc:19]检定将石头推到一边，让禁足的生物重获自由。</p>"
 				}
 			}
 		},
@@ -531,15 +476,12 @@
 		},
 		"Hegremon": {
 			"name": "Hegremon",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Hobji": {
-			"name": "Hobji",
-			"publicNotes": "",
-			"blurb": "Male morlock strangler",
+			"name": "霍布吉 Hobji",
+			"blurb": "男性摩洛克扼杀者",
 			"data":{},
 			"items":{
 				"+2 Status to All Saves vs. Disease and Poison":{
@@ -547,111 +489,97 @@
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
-					"description": "<p>Hobji's Strikes deal an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>霍布吉的打击对措手不及的生物额外造成1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				},
 				"Strangling Grasp":{
-					"name": "Strangling Grasp",
-					"description": "<p><strong>Trigger</strong> Hobji hits a Medium or smaller creature with his fist Strike</p>\n<hr />\n<p><strong>Effect</strong> The creature is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, and Hobji begins to strangle the creature. The creature is suffocating and can't speak as long as it's strangled. This prevents it from casting spells with a verbal component or activating items with a command component.</p>"
+					"name": "扼喉抓握 Strangling Grasp",
+					"description": "<p><strong>触发</strong> 霍布吉使用拳头击打命中一个中型或更小体型的生物；</p>\n<hr />\n<p><strong>效果</strong> 该生物受到@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，霍布吉开始扼死该生物。该生物陷入窒息，在被扼喉期间无法说话。这会使之无法施放带有语言成分的法术或激活需要命令的物品。</p>"
 				},
 				"Surprise Attack":{
-					"name": "Surprise Attack",
-					"description": "<p>In the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to Hobji.</p>"
+					"name": "突袭打击 Surprise Attack",
+					"description": "<p>在战斗第一轮中，尚未行动的生物对霍布吉视为@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
 				}
 			}
 		},
 		"Idovik": {
 			"name": "Idovik",
-			"publicNotes": "",
 			"blurb": "Male Sarkorian god",
 			"data":{},
 			"items":{}
 		},
 		"Ivarsa": {
 			"name": "Ivarsa",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Jesseri The Hailstorm": {
 			"name": "Jesseri The Hailstorm",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Kadlaka": {
-			"name": "Kadlaka",
-			"publicNotes": "<p>Kadlakas-strong, lanky humanoids with raven-like features-combine the most formidable aspects of talented hunters and airborne scouts, to say nothing of their potent magical powers over thunder and lightning. Though they shy from most humanoids, kadlakas readily form friendships with ravens and other birds, and they sometimes make temporary alliances with people who prove themselves capable stewards of wild animals and the natural order of things. When they do settle on a roost-whether for a single season or a lifetime-kadlakas often position themselves as guardians of a natural feature or local flock. Because a kadlaka's natural form might frighten humanoid travelers, they often take on the guise of a human or other common bipedal ancestry to gain information and pass on warnings.</p>",
-			"blurb": "",
+			"name": "卡拉卡鸦人 Kadlaka",
+			"publicNotes": "<p>卡拉卡鸦人是强壮、瘦长的人形生物，长着乌鸦一样的特征，集才华横溢的猎人和空中侦察兵于一身，更不用说他们召雷引电的强大魔力了。尽管惧怕大多数类人动物，卡拉卡鸦人却很容易与乌鸦和其他鸟类建立友谊，有时它们会与那些证明自己有能力掌控野生动物和事物的自然秩序的人建立暂时的联盟。当他们安顿下来——无论是只停留一个季节还是一生——卡拉卡鸦人通常把自己定位为自然景观或当地鸟群的守护者。由于卡拉卡鸦人的自然形态可能会吓到类人生物旅行者，因此它们经常伪装成人类或其他共同的类人生物族裔来获取信息和传递警告。</p>",
 			"data":{},
 			"items":{
 				"strike-Lightning Echo":{
-					"name": "Lightning Echo",
-					"description": "<p>[[/r {1d4}[persistent,electricity]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Electricity Damage}</p>"
+					"name": "闪电回响 Lightning Echo",
+					"description": "<p>[[/r {1d4}[persistent,electricity]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续电击伤害}</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>The kadlaka can change their appearance to that of a Medium humanoid. This doesn't change their Speed or their attack and damage modifiers with their Strikes but might change the type of damage their melee Strikes deal (typically to bludgeoning). While in their humanoid shape, the kadlaka can't use Wingbeat. Each kadlaka has a fixed humanoid form-they can't adopt a different appearance each time they use this ability.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+					"description": "<p>卡拉卡鸦人能将其外表变形为中型类人生物。这不会改变它的速度或打击的攻击骰和伤害骰，但会改变其打击的伤害类型（例如钝击）。在类人形态下，卡拉卡鸦人无法使用振翅能力。每个卡拉卡鸦人都有一个固定的类人形态，它无法在每次使用该能力时变为不同外貌的类人生物。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
 				},
 				"Silent Lightning":{
-					"name": "Silent Lightning",
-					"description": "<p>A kadlaka's movements are practically silent. Against a creature using only hearing to perceive them, they gain a +4 circumstance bonus to their Stealth check. As normal, this benefit also improves the kadlaka's Stealth DC.</p>"
+					"name": "无声闪电 Silent Lightning",
+					"description": "<p>卡拉卡鸦人移动时非常安静。当它们试图避免被某个生物听到时，它们的隐秘检定有+4环境加值。和通常一样，它们的隐秘DC也有此加值。</p>"
 				},
 				"Wingbeat":{
-					"name": "Wingbeat",
-					"description": "<p>The kadlaka beats their wings with a mighty peal of thunder. Creatures in a @Template[type:emanation|distance:15] take [[/r {5d6}[sonic]]]{5d6 sonic damage} (@Check[type:fortitude|dc:21|basic:true]). On a failed save, the creature is also pushed 5 feet away from the kadlaka.</p>\n<p>The kadlaka can't use Wingbeat again for [[/br 1d4 #Wingbeat Recharge]]{1d4 rounds}.</p>"
+					"name": "振翅 Wingbeat",
+					"description": "<p>卡拉卡鸦人以雷霆之势扇动翅膀@Template[type:emanation|distance:15]范围内的生物受到[[/r {5d6}[sonic]]]{5d6音波伤害}（@Check[type:fortitude|dc:21|basic:true]豁免）。如果豁免失败，生物还会被推离卡拉卡鸦人5尺。</p>\n<p>卡拉卡鸦人在[[/br 1d4 #Wingbeat Recharge]]{1d4轮}内无法使用该能力。</p>"
 				}
 			}
 		},
 		"Lagofir": {
 			"name": "Lagofir",
 			"publicNotes": "<p>Lagofirs are semiaquatic omnivores that resemble a rabbit the size of a large dog. They're social creatures, playful but territorial and protective of their kin. Lagofirs live in family units and gather in larger groups as often as their environment allows. They're commonly found in northern Avistan, congregating along rivers, lakes, and coasts, where they subsist on fish, crustaceans, marine plants, and small mammals.</p>\n<p>Lagofirs have a stout body, rounded back, large hind legs, long ears, and a short, fluffy tail. Their powerful incisors are capable of cracking through clam shells, chitin, and bone. Both their front and back paws are webbed, and their front paws are highly dexterous, enabling them to grasp objects and perform simple manual tasks.</p>\n<p>Lagofirs secrete a thick, sweet-smelling, flammable oil that coats their fur. Warm to the touch, this oil keeps them insulated and comfortable in frigid water and cold climates. Lagofirs mark their territory by brushing against solid surfaces, coating them in oil that, to other lagofirs, identifies an individual. This makes their lairs, known as burrows or forms, incredibly hazardous. A single spark in a lagofir form can cause an explosion.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Loblobi": {
-			"name": "Loblobi",
-			"publicNotes": "<p>In the First World, rivers don't always flow as expected; sometimes they run backward, upward, or just disappear into mist and reappear somewhere else entirely. Fey native to such rivers are often just as capricious. This quality is particularly true of loblobis, cunning carnivores who resemble small, chubby humans with the heads and wings of crested herons.</p>\n<p>These malicious tricksters love playing any pranks that result in other creatures being embarrassed, hurt, or even drowned. Their most common \"antic\" is to cast <em>@UUID[Compendium.pf2e.spells-srd.Seaah9amXg70RKw2]{Water Walk}</em> on a hopeful river-crosser, only to dismiss the spell when their victim has traversed halfway across. Conversely, most loblobis are terrible sports when they're the butt of a joke. It's common wisdom that few creatures can hold a grudge like a loblobi.</p>\n<p>Exceptionally vain, loblobis flutter and dance constantly to show off their plumage. Failing to comment on a preening loblobi's appearance is a sure method to invite eternal enmity, but flattery might buy enough time to sneak away from the evil fey.</p>",
-			"blurb": "",
+			"name": "洛洛比河精 Loblobi",
+			"publicNotes": "<p>在第一世界，河流并不总是如人们所期望的那样流动；有时它们会逆流而上，有时又会消失在雾中，然后在另一个地方完全重现。这些河流中土生土长的精类也常常反复无常。这种特性在洛洛比河精身上尤为明显，它们是一种狡猾的食肉生物，长得像胖乎乎的小型类人生物，却长着冠鹭的头和翅膀。</p>\n<p>这些恶意的骗子特别爱搞那些会导致其他生物尴尬，受伤，甚至淹死的恶作剧。他们最常见的“恶作剧”是在对一个希望过河的人施放水面行走，当他们的受害者走到河中心的时候，魔法就突然消失。相反，当它们成为人们的笑柄时，大多数洛洛比河精都非常开不起玩笑。大家都知道，很少有生物能像洛洛比河精一样记仇。</p>\n<p>它们特别虚荣，喜欢不停地拍打和跳舞来炫耀它们的羽毛。如果不去赞美一个正在打扮的洛洛比河精的外表肯定会招致永远的敌意，而拍马屁也许可以让人赢得足够的时间，从邪恶的精类面前溜走。</p>",
 			"data":{},
 			"items":{
 				"Unflappable Self-Importance":{
-					"name": "Unflappable Self-Importance",
-					"description": "<p>When a loblobi rolls a success on a Will save against an emotion effect or an effect that would make it controlled, it gets a critical success instead. When it rolls a critical failure against such an effect, it gets a failure instead.</p>\n<p>However, a loblobi is vulnerable to flattery. It takes a -4 circumstance penalty to its Will and Perception DCs against any fulsome Deception and Diplomacy checks to Lie, @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression}, or Request.</p>"
+					"name": "镇定自负 Unflappable Self-Importance",
+					"description": "<p>当洛洛比河精成功尝试意志检定，以对抗情绪效果或将会导致它被控制的效果时，它得到大成功的结果。如果它在对抗上述效果时大失败，它得到失败的结果。</p>\n<p>但是，洛洛比河精对马屁没有任何抵抗力。当有人尝试用欺骗或交涉检定对其撒谎、@UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{建立印象 Make an Impression}、提出请求时，它们的意志DC和察觉DC有-4环境减值。</p>"
 				},
 				"Arrogant Preen":{
-					"name": "Arrogant Preen",
-					"description": "<p>The loblobi tidies its feathered crest to look supernaturally regal. Each non-fey creature within @Template[type:emanation|distance:30]{30 feet} must attempt a @Check[type:will|dc:17] save, then is temporarily immune to Arrogant Preen for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is distracted by the preening and can't take reactions until the start of its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by the loblobi and can't take reactions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure. Additionally, while the creature is fascinated, any hostile actions from the loblobi don't break the fascination, but instead allow the target to attempt a new Will save to end the effect at the start of its next turn.</p>"
+					"name": "傲慢自大 Arrogant Preen",
+					"description": "<p>洛洛比河精整理自己的羽冠，让自己看起来非常高贵。@Template[type:emanation|distance:30]{30尺}内每个非精类的生物必须尝试@Check[type:will|dc:17]豁免，然后对傲慢自大临时免疫1小时。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标被分神，直到它的下个回合开始，它无法使用反应动作。</p>\n<p><strong>失败</strong> 目标被洛洛比河精@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并且无法使用反应动作1分钟。</p>\n<p><strong>大失败</strong> 类似失败。此外，当生物被迷魂时，洛洛比河精的任何敌对动作不会解除迷魂状态，但这允许目标在它的回合开始时尝试一次新的意志豁免来结束此效果。</p>"
 				}
 			}
 		},
 		"Lomok": {
 			"name": "Lomok",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Long-horned Bison": {
 			"name": "Long-horned Bison",
 			"publicNotes": "<p>Much like their smaller bison cousins, long-horned bison are bovines with short faces, two horns, a shaggy coat, and a noticeable hump on their back. Despite their relation to more placid bovines, however, long-horned bison are ill-tempered and territorial. Their tread shakes the ground, while the thunder of their stampedes can be mistaken for an earthquake. Long-horned bison weigh upwards of 4,500 pounds and measure up to 9 feet tall and 16 feet long. Their horns, measured tip to tip, can be almost as wide as the bison are tall.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Long-horned Bison Beheaded": {
 			"name": "Long-horned Bison Beheaded",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Megaloceros": {
 			"name": "Megaloceros",
 			"publicNotes": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
@@ -659,323 +587,272 @@
 			"name": "Methane Flue",
 			"disable": "<p>@Check[type:survival|dc:28|name:Diffuse the Flames|traits:environmental,hazard] to dig around the vent in a way that diffuses the fumes</p>",
 			"hazarddescription": "<p>Invisible but highly flammable natural gas has built up beneath the ground, where geological pressure can ignite it.</p>",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "(expert) to hear hissing gas",
+			"stealthdetails": "(专家) to hear hissing gas",
 			"data":{},
 			"items":{}
 		},
 		"Metuak": {
 			"name": "Metuak",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Necrohusk": {
 			"name": "Necrohusk",
 			"publicNotes": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Negative Energy Plane during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Oil Explosion": {
 			"name": "Oil Explosion",
-			"disable": "<p>@Check[type:survival|dc:25|name:Neutralize the oil|traits:hazard,environmental,fire] (trained) or @Check[type:crafting|dc:23|name:Neutralize the oil|traits:hazard,environmental,fire] to neutralize the oil without setting it alight</p>",
+			"disable": "<p>@Check[type:survival|dc:25|name:Neutralize the oil|traits:hazard,environmental,fire](受训)or @Check[type:crafting|dc:23|name:Neutralize the oil|traits:hazard,environmental,fire] to neutralize the oil without setting it alight</p>",
 			"hazarddescription": "The flammable oil catches flame and explodes, burning up in a ball of fire.",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "(trained)",
+			"stealthdetails": "(受训)",
 			"data":{},
 			"items":{}
 		},
 		"Pakano": {
-			"name": "Pakano",
-			"publicNotes": "",
-			"blurb": "Male Kellid hunter",
+			"name": "帕卡诺 Pakano",
+			"blurb": "男性卡利德人猎手",
 			"data":{},
 			"items":{
-				"Tallow Bomb":{
-					"name": "Tallow Bomb",
-					"description": "<p>[[/r {2d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {2}[splash,fire]]]{2 splash fire damage}</p>"
+				"strike-Tallow Bomb":{
+					"name": "油脂炸弹 Tallow Bomb",
+					"description": "<p>[[/r {2d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r {2}[splash,fire]]]{2溅射火焰伤害}</p>"
 				},
 				"Spurred by Death":{
-					"name": "Spurred by Death",
-					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> Pakano Steps or Strides.</p>"
+					"name": "死亡激励 Spurred by Death",
+					"description": "<p><strong>触发</strong> 30尺内一个盟友将一个生物的生命值降为0；</p>\n<hr />\n<p><strong>效果</strong> 帕卡诺行走或快步。</p>"
 				},
 				"Hunt Prey":{
-					"name": "Hunt Prey",
-					"description": "<p>Pakano designates a single creature he can see and hear, or one he's Tracking, as his prey. He gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} his prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Track} his prey.</p>\n<p>The first time Pakano hits his designated prey in a round, he deals an additional [[/r {1d8}[precision]]]{1d8 precision damage}. Pakano also ignores the penalty for making ranged attacks within his second range increment.</p>\n<p>These effects last until Pakano uses Hunt Prey again.</p>"
+					"name": "猎杀目标 Hunt Prey",
+					"description": "<p>帕卡诺指定一个他能看到且听到，或一个他正追踪的生物为猎物。他在用于@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}猎物的察觉检定和用于@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}猎物的生存检定上获得+2环境加值。</p>\n<p>当帕卡诺在一回合内第一次命中指定的猎物时，他额外造成[[/r {1d8}[precision]]]{1d8精准伤害}。帕卡诺还会在对抗猎物时忽略远程攻击的第二个射程增量减值。</p>\n<p>这些效果持续到帕卡诺再次使用猎杀目标。</p>"
 				},
 				"Spear Fighter":{
-					"name": "Spear Fighter",
-					"description": "<p>Pakano's spear has the parry weapon trait, and his Strikes with the spear deal an additional [[/r {1d6}]]{1d6 damage}. If he critically hits a creature with a spear, the creature is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of Pakano's next turn.</p>"
+					"name": "矛斗士 Spear Fighter",
+					"description": "<p>帕卡诺的矛具有格挡武器特征，并在被他用于打击时造成额外[[/r {1d6}]]{1d6伤害}。如果他使用矛对一个生物造成重击，该生物直到帕卡诺下回合开始前陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
 				}
 			}
 		},
 		"Pakano (Level 12)": {
 			"name": "Pakano (Level 12)",
-			"publicNotes": "",
 			"blurb": "Male Kellid hunter",
 			"data":{},
 			"items":{}
 		},
 		"Pouncing Tiger Haunt": {
-			"name": "Pouncing Tiger Haunt",
-			"disable": "<p>@Check[type:nature|dc:18|name:Quell the Spirit|traits:hazard,haunt] (trained) or @Check[type:religion|dc:18|name:Quell the Spirit|traits:hazard,haunt] (trained) to quell the spirit</p>",
-			"hazarddescription": "<p>A cave painting of a great cat roars to life and leaps off the wall to attack.</p>",
-			"reset": "<p>If the cave painting isn't destroyed, the haunt resets after 1 day.</p>",
-			"routine": "",
-			"stealthdetails": "<p>(trained)</p>",
+			"name": "猛虎作祟 Pouncing Tiger Haunt",
+			"disable": "<p>@Check[type:nature|dc:18|name:Quell the Spirit|traits:hazard,haunt](受训)或@Check[type:religion|dc:18|name:Quell the Spirit|traits:hazard,haunt](受训)以平息鬼魂。</p>",
+			"hazarddescription": "<p>壁画上的巨虎咆哮着活过来，从岩壁上一跃而下发动攻击。</p>",
+			"reset": "<p>如果壁画未被摧毁，作祟于一天后重置。</p>",
+			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Tiger Slash":{
-					"name": "Tiger Slash",
-					"description": "<p><strong>Trigger</strong> A living creature approaches within 5 feet of the cave painting</p>\n<hr />\n<p><strong>Effect</strong> The haunt deals [[/r {4d8}[slashing]]]{4d8 slashing damage} with semisolid claws (@Check[type:will|dc:18|basic:true]). On a failed save, the target is also @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} and @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round (or @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and fleeing for 1 minute on a critical failure).</p>"
+					"name": "猛虎挥砍 Tiger Slash",
+					"description": "<p><strong>触发</strong> 一个活物靠近壁画5尺范围内；</p>\n<hr />\n<p><strong>效果</strong> 作祟使用半固体的利爪造成[[/r {4d8}[slashing]]]{4d8挥砍伤害}（@Check[type:will|dc:18|basic:true]豁免）。豁免失败的情况下，目标还陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，并@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮（大失败为@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，逃跑1分钟）。</p>"
 				}
 			}
 		},
 		"Punishing Altar": {
 			"name": "Punishing Altar",
-			"disable": "<p>@Check[type:thievery|dc:22|name:Remove the bowl|traits:hazard,magical,necromancy,negative,trap] (expert) to remove the bowl without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level, counteract DC 20) to counteract the runes</p>",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Remove the bowl|traits:hazard,magical,necromancy,negative,trap](专家)to remove the bowl without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (2nd level, counteract DC 20) to counteract the runes</p>",
 			"hazarddescription": "The bowl releases a wave of negative energy when a living creature approaches without displaying a religious symbol of Venexus.",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "(trained) to notice the bowl is the center point for a magical trap",
+			"stealthdetails": "(受训) to notice the bowl is the center point for a magical trap",
 			"data":{},
 			"items":{}
 		},
 		"Rhino Warriors": {
 			"name": "Rhino Warriors",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Rime Sludge": {
-			"name": "Rime Sludge",
-			"speed": "slushy undulation",
-			"publicNotes": "<p>Rot and decay play a natural role in swamps of all climates, and latent magical energies or other strange phenomena can transform decomposing matter into oozes and other monstrous creatures made of living muck. Tundra wetlands are no exception to this trend. Worse, in such regions, a quick freeze can prevent noxious sludge from breaking down, and sequential years of short, seasonal thaws can compress rot upon rot until the pestilential mass animates as a rime sludge. These rare, noxious oozes hungrily search for and consume any organic matter they find in their northland habitats.</p>\n<p>Like most oozes, rime sludges consist primarily of protoplasm, though theirs has a slushy consistency peppered with disgusting nuggets of indigestible matter, such as petrified wood, jagged arrowheads, and animal fossils. A rime sludge renews this protoplasm by consuming plants and animals and maintaining a careful balance of semifrozen decomposition in its mutable form.</p>\n<p>Rime sludges are among the few oozes that thrive in cold climates, as too much heat accelerates their natural decay. Rime sludges can't survive temperatures too far above freezing for more than a few days. Rising temperatures force them to migrate toward cooler climates or cold underground areas.</p>\n<p>Few intelligent creatures inhabiting cold climates want anything to do with rime sludges. These oozes can't be trained, tend to wander off at random, and emit a noxious stink at the slightest hint of warmth. Some inventive creatures try to trap rime sludges in pits to keep them contained and use them to dispose of prisoners or food scraps. Because of the oozes' overpowering stench, these pits tend to be quite deep.</p>",
-			"blurb": "",
+			"name": "雾凇泥 Rime Sludge",
+			"speed": "泥泞起伏",
+			"publicNotes": "<p>腐烂和衰败在各种气候下的沼泽中都发挥着自然的作用，而潜在的魔法能量或其他奇怪的现象可以将分解的物质转化为泥怪和其他由活化淤泥构成的怪物。苔原湿地也不外乎如此。更糟糕的是，在这些地区，快速冷冻可以阻止有毒污泥的分解，而连续数年的短期季节性解冻可以让腐殖质堆积，直到产生大量的雾凇泥。这些稀有的有毒泥怪会贪婪地寻找并吞噬它们在北境栖息地找到的任何有机物。</p>\n<p>像大多数渗泥怪一样，雾凇泥主要由原生质组成，尽管它们的稠度像淤泥一样，夹杂着令人作呕的难以消化的物质块，比如石化的木头、锯齿状的箭头和动物化石。雾凇泥通过吞食植物和动物来更新原生质，并在其变换形态的半冻结分解过程中保持微妙的平衡。</p>\n<p>雾凇泥是少数几种能在寒冷气候中茁壮成长的泥怪之一，而过高的温度会加速它们的自然腐烂。雾凇泥在高于冰点的温度下存活不了几天。气温上升迫使它们迁移到气候更冷的地区或寒冷的地下。</p>\n<p>很少有生活在寒冷气候中的智慧生物愿意与雾凇泥扯上任何关系。这些泥怪是无法被驯化的，会随意游走，只要有一点温暖的迹象，就会散发出有毒的臭味。一些有创造力的生物试图把雾凇泥困在坑里，以确保它们被囚禁，并利用它们来处理囚犯或食物残渣。由于泥怪本身的恶臭，这些坑往往相当深。</p>",
 			"data":{},
 			"items":{
 				"Motion Sense 60 feet":{
-					"name": "Motion Sense 60 feet",
-					"description": "<p>A rime sludge can sense nearby motion through vibration and air movement.</p>"
+					"name": "运动感知60尺",
+					"description": "<p>雾凇泥能通过周遭的振动或空气扰动感知附近发生的运动。</p>"
 				},
 				"Noxious Sublimation":{
-					"name": "Noxious Sublimation",
-					"description": "<p>The first time each round that the rime sludge takes fire damage, a cloud of sickening decay roils outward, dealing [[/r {2d6}[poison]]]{2d6 poison damage} (@Check[type:fortitude|dc:17|basic:true]) to all creatures in a @Template[type:emanation|distance:10]. A creature that fails its saving throw is also @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3} on a critical failure).</p>"
+					"name": "剧毒升腾 Noxious Sublimation",
+					"description": "<p>雾凇泥每轮第一次受到火焰伤害时，一团令人作呕的腐烂毒云会向外升腾，对@Template[type:emanation|distance:10]范围内的所有生物造成[[/r {2d6}[poison]]]{2d6毒素伤害}（@Check[type:fortitude|dc:17|basic:true]豁免）。豁免失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}）。</p>"
 				},
 				"Slushy Undulation":{
-					"name": "Slushy Undulation",
-					"description": "<p>A rime sludge ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} when crossing ice.</p>"
+					"name": "泥泞起伏 Slushy Undulation",
+					"description": "<p>雾凇泥忽视由冰雪构成的困难地形和高等困难地形，并且在穿越冰面时不会有滑@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}的风险。</p>"
 				}
 			}
 		},
 		"Rockfall Ceiling": {
 			"name": "Rockfall Ceiling",
-			"disable": "<p>@Check[type:thievery|dc:25|name:Pin the pulley in place|traits:hazard,mechanical,trap] (trained) to pin the pulley in place</p>",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Pin the pulley in place|traits:hazard,mechanical,trap](受训)to pin the pulley in place</p>",
 			"hazarddescription": "A load of rocks, held up by a rope pulley, is dropped on the cavern's lower level.",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "(trained)",
+			"stealthdetails": "(受训)",
 			"data":{},
 			"items":{}
 		},
 		"Roru": {
 			"name": "Roru",
 			"publicNotes": "<p>Rorus, sometimes called hunter demons, are brutal fiends that arise from the souls of mortals who mutilated animal corpses. As demons, these individuals don animal pelts, then infiltrate packs or herds to corrupt entire swaths of animals, turning their victims bloodthirsty and feral.</p>",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Shattering Rune": {
 			"name": "Shattering Rune",
-			"disable": "<p>@Check[type:thievery|dc:30|name:Erase the Rune|traits:hazard] (master) to erase the rune without triggering the sensor or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (5th level; counteract DC 28) to dispel the rune</p>",
+			"disable": "<p>@Check[type:thievery|dc:30|name:Erase the Rune|traits:hazard] (master) to erase the rune without triggering the sensor or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (5th level; counteract DC 28) to dispel the rune</p>",
 			"hazarddescription": "A magical rune is inscribed on the tarry earth at the entrance to the hut, buried beneath snow, with an @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} sensor that detects creatures within a 10-foot-radius sphere.",
-			"reset": "",
-			"routine": "",
 			"stealthdetails": "(master)",
 			"data":{},
 			"items":{}
 		},
 		"Skeletal Woolly Rhinoceros": {
 			"name": "Skeletal Woolly Rhinoceros",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Soul Draining Cage": {
 			"name": "Soul Draining Cage",
-			"disable": "<p>@Check[type:thievery|dc:25|name:Drain the rune's power|traits:hazard,magical,necromancy,negative,trap] (expert) to drain the runes' power harmlessly or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 22) to counteract the rune</p>",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Drain the rune's power|traits:hazard,magical,necromancy,negative,trap](专家)to drain the runes' power harmlessly or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (3rd level; counteract DC 22) to counteract the rune</p>",
 			"hazarddescription": "Necromantic runes inscribed on the cage bars and lock drain the vitality of living creatures who interact with the cage.",
-			"reset": "",
-			"routine": "",
-			"stealthdetails": "<p>(expert) or <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+			"stealthdetails": "<p>(专家) or <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
 			"data":{},
 			"items":{}
 		},
 		"Spectral Archers": {
 			"name": "Spectral Archers",
-			"disable": "<p>@Check[type:intimidation|dc:31|traits:haunt,hazard] (expert) to cow the archers into fleeing or @Check[type:religion|dc:28|name:Banish the Spirits|traits:haunt,hazard] (expert) to temporarily banish the spirits</p>",
+			"disable": "<p>@Check[type:intimidation|dc:31|traits:haunt,hazard](专家)to cow the archers into fleeing or @Check[type:religion|dc:28|name:Banish the Spirits|traits:haunt,hazard](专家)to temporarily banish the spirits</p>",
 			"hazarddescription": "Ghostly soldiers wielding crossbows manifest within the towers that flank the gatehouse and rain bolts down upon intruders.",
 			"reset": "The haunt vanishes permanently if the graveknights are destroyed. Otherwise, it returns after 1 hour.",
-			"routine": "",
-			"stealthdetails": "(expert)",
+			"stealthdetails": "(专家)",
 			"data":{},
 			"items":{}
 		},
 		"Summer Hora": {
 			"name": "Summer Hora",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Summer Hora Queen": {
 			"name": "Summer Hora Queen",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Syarstik Painted-Tiger": {
-			"name": "Syarstik Painted-Tiger",
-			"publicNotes": "",
-			"blurb": "Male awakened smilodon ghost",
+			"name": "绘虎萨斯提克 Syarstik Painted-Tiger",
+			"blurb": "雄性被唤醒的剑齿虎幽灵",
 			"data":{},
 			"items":{
 				"Site Bound":{
-					"name": "Site Bound",
-					"description": "<p>Syarstik can't leave Red Cat Cave, and he rarely ever leaves area <strong>E9</strong></p>\n<hr />\n<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>"
+					"name": "束缚之地 Site Bound",
+					"description": "<p>萨斯提克无法离开红猫洞，他几乎很少离开<strong>E9</strong>区。</p>\n<hr />\n<p>典型的灵魂通常只能距离在他被杀死或作祟的地点很近的区域逗留。这个限制一般为120尺远。部分幽灵会被限制在对他来说具有特殊意义的房间、建筑、物品或生物上，而非具体的某个地点。</p>"
 				},
 				"Rejuvenation":{
-					"name": "Rejuvenation",
-					"description": "<p>When Syarstik is destroyed, he re-forms after [[/br 2d4 #Syarstik Rejuvenation]]{2d4 days} within area <strong>E9</strong>, fully healed. Syarstik can be permanently destroyed only by a non-possessed wielder of the <em>Primordial Flame</em>.</p>"
+					"name": "复生 Rejuvenation",
+					"description": "<p>当萨斯提克被摧毁时，他会在[[/br 2d4 #Syarstik Rejuvenation]]{2d4天}后在<strong>E9</strong>区重新生成，生命值全满。萨斯提克只能由未被附身的<em>原初之火</em>持有者永久性摧毁。</p>"
 				},
 				"Awaken Painting":{
-					"name": "Awaken Painting",
-					"description": "<p>Syarstik animates a cave painting within 60 feet for 10 minutes. The painting's movement mimics Syarstik's, so the connection between the ghost and the awakened painting is obvious. Creatures other than Syarstik within 10 feet of the awakened painting are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} because of these eerie movements. Syarstik can make ghostly fangs Strikes at any creature within 10 feet of a cave painting; the target's cover or concealment from the cave painting, rather than from Syarstik, applies to this Strike.</p>\n<p>A creature adjacent to an awakened painting can spend 2 actions to attempt a @Check[type:occultism|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true] or @Check[type:religion|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true] check (to compel the awakened painting to abate) or a @Check[type:crafting|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true] or @Check[type:thievery|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true] check (to thoroughly smear the cave painting). On a success, the painting is destroyed, and the animation ceases. Either way, this activity has the concentrate trait.</p>\n<p>Destroying three awakened paintings quells Syarstik's anger, causing the great cat to cease his attacks.</p>"
+					"name": "唤醒壁画 Awaken Painting",
+					"description": "<p>萨斯提克令60尺内一幅洞穴壁画活化10分钟。壁画与幽灵间的联系显而易见，因为它会模仿萨斯提克的动作。由于这些动作的怪异性，在活化壁画10尺内，除萨斯提克外的任何生物都陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。萨斯提克能通过幽灵牙对一幅洞穴壁画10尺内的任何生物进行打击；对于此次打击，目标适用于其对洞穴壁画的掩蔽，而非对萨斯提克的掩蔽。</p>\n<p>一个与活化壁画相邻的生物可以花费2个动作尝试@Check[type:occultism|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true]或@Check[type:religion|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true]检定（以迫使活化壁画的力量衰弱）或@Check[type:crafting|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true]或@Check[type:thievery|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true]检定（以彻底破坏这幅壁画）。若成功，该壁画将被破坏，活化效应也会停止。无论如何，此动作具有专注特征。</p>\n<p>摧毁三幅活化壁画将平息萨斯提克的愤怒，使这大猫停止攻击。</p>"
 				},
 				"Pounce":{
-					"name": "Pounce",
-					"description": "<p>Syarstik Strides and makes a Strike at the end of that movement. If he began this action @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, he remains hidden until after this ability's Strike.</p>"
+					"name": "猛扑 Pounce",
+					"description": "<p>萨斯提克在行走后衔接一次打击。若萨斯提克在执行此动作前处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，则它保持藏匿直到该次打击结束。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
-					"description": "<p>Syarstik deals an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>萨斯提克对措手不及的生物造成额外1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				}
 			}
 		},
 		"Tar Ooze": {
 			"name": "Tar Ooze",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Tar Pit": {
 			"name": "Tar Pit",
-			"disable": "<p>@Check[type:survival|dc:25|name:Reveal the Tar Pit|traits:environmental,hazard] (expert) to disturb the surface and reveal the tar pit</p>",
+			"disable": "<p>@Check[type:survival|dc:25|name:Reveal the Tar Pit|traits:environmental,hazard](专家)to disturb the surface and reveal the tar pit</p>",
 			"hazarddescription": "A 15-foot-wide patch of tar covered with dirt and leaves attempts to capture creatures that step onto it.",
 			"reset": "Though the hazard still captures anyone who touches it, the surface doesn't become hidden again until it settles, which takes 24 hours.",
-			"routine": "<p>(1 action) On its initiative, the tar pit pulls down each creature within it, thick tar adhering to the creature's body. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and must hold its breath to avoid suffocation. A creature in the tar pit can attempt a @Check[type:athletics|dc:33] check to @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb} to either raise itself by one step (if it's submerged to its neck or full submerged) or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. Other creatures can Aid the creature, typically by using a rope or similar aid or by attempting to pull the creature out with their own @Check[type:athletics|dc:33] check, with the same results as if the creature attempted the check. In addition to the usual results, a character adjacent to the tar pit who critically fails while Aiding moves into the tar pit. A creature that Climbs out of the tar pit escapes the hazard and lands @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} in an adjacent space.</p>",
-			"stealthdetails": "(expert)",
+			"routine": "<p>(1 action) On its initiative, the tar pit pulls down each creature within it, thick tar adhering to the creature's body. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and must hold its breath to avoid suffocation. A creature in the tar pit can attempt a @Check[type:athletics|dc:33] check to @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb} to either raise itself by one step (if it's submerged to its neck or full submerged) or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. Other creatures can Aid the creature, typically by using a rope or similar aid or by attempting to pull the creature out with their own @Check[type:athletics|dc:33] check, with the same results as if the creature attempted the check. In addition to the usual results, a character adjacent to the tar pit who critically fails while Aiding moves into the tar pit. A creature that Climbs out of the tar pit escapes the hazard and lands @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} in an adjacent space.</p>",
+			"stealthdetails": "(专家)",
 			"data":{},
 			"items":{}
 		},
 		"Tar Zombie Mammoth": {
 			"name": "Tar Zombie Mammoth",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Tar Zombie Predator": {
 			"name": "Tar Zombie Predator",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Tar Zombie Snatcher": {
 			"name": "Tar Zombie Snatcher",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Throttled Blindheim": {
-			"name": "Throttled Blindheim",
-			"publicNotes": "<p>Inhabitants of damp, subterranean caves, blindheims resemble stubby humanoids with oversized, frog-like heads and bulbous eyes. Their eyes emit a soft glow at all times, but a blindheim can draw back the heavy membrane that normally covers them to emit an intense light as bright as day. These simple creatures use their lights to draw in or disorient prey, mostly small animals like lizards, rodents, or fish. However, they might go after larger prey if trying to feed their young. When they encounter creatures their own size or larger they retreat, flashing their eyes to facilitate their escape if necessary. They often hunt in pairs or small packs. Using their lights to coordinate from a distance, they slowly close in on the creatures they hunt. One common hunting pattern involves one blindheim diving deep and using its light to chase fish to the surface, while another up above snatches them up and tosses them onto the land to eat later.</p>\n<p>Blindheims make their nests in damp caverns, especially grottoes next to underground lakes or bogs. An ideal nest rests in a cozy cavern with plenty of fungus to eat, a few fish swimming in a lake, and the comforting drip of water from the ceiling. Blindheims prefer to lead quiet and serene lives, and even when first born they emit only the meekest of vocalizations. A blindheim is born shining, and its parents cuddle over it to dim the light so as to avoid attracting predators.</p>\n<p>It's not just animals that endanger blindheims. Underground peoples find the creatures useful and attempt to capture them for specialized purposes. Duergars use them as \"raid frogs,\" placing heavy hoods over blindheims' heads and revealing them suddenly during raids to blind their foes. They sometimes send the creatures along with their slaves that lack darkvision into the mines as a source of light. Drow use them for some of these same purposes, and some nobles have been known to treat the creatures as mere lanterns, having them hoisted to the ceilings of their halls. Neither duergars nor drow take good care of the captive creatures, so blindheims rarely last long in captivity.</p>",
-			"blurb": "",
+			"name": "被扼的盲蛙 Throttled Blindheim",
+			"publicNotes": "<p>盲蛙居住在潮湿的地下洞穴中，形似矮壮的类人生物，有着巨大的青蛙般的头和球状的眼睛。它们的眼睛总是散发着柔和的光芒，不过盲蛙能够收起平时复盖着眼睛的厚膜，使其发出宛如白昼一般明亮的强光。这些单纯的生物利用它们的光线吸引或是迷惑猎物，主要都是些蜥蜴、啮齿类、鱼类这样的小动物。不过，它们也可能会为了喂养幼崽而去追逐更大的猎物。当它们遇到体型与自己相当或是更大的生物时，它们会选择撤退，并在必要的时候闪烁自己的眼睛来帮助逃跑。它们通常会成对或是组成小群体来狩猎。它们利用光线在远距离相互协同，慢慢靠近作为目标的猎物。在一种常规的狩猎模式中，一只盲蛙深潜到水里，利用光线将鱼驱赶到水面，此时另一只待在上面的一把抓起鱼儿，把它们摔到地上，等着稍后慢慢品尝。</p>\n<p>盲蛙在潮湿的洞穴里安家，尤其是那些靠近地下湖泊或沼地的洞穴。一个理想的巢穴应当是一个温暖的洞穴，有着许多可食用的菌类，一些鱼儿在湖里游动，令人感到欣慰的水滴从天花板上滴落。盲蛙喜欢平静安宁的生活，即使当它们方才降生到世界上时也只会发出最为柔和的声音。一只盲蛙在闪光中出生，它的父母爱抚地抱在它身上来使光线变暗，以免吸引到捕食者。</p>\n<p>并非只有动物才会危及到盲蛙。地底的人们发现这些生物大有用处，并且试图为特殊的目的而捕猎它们。灰矮人把它们当做“突袭蛙”，在盲蛙的头上套上厚实的罩子，而后在突袭的时候突然揭开罩子，以此来致盲它们的敌人。它们有时也将这种生物和缺乏黑暗视觉的奴隶一起送到矿洞中，将其作为光源来使用。卓尔也用它们来做一些相同的事情，一些贵族会把这些生物当做吊灯，把它们吊到大厅的天花板上。无论是灰矮人还是卓尔都不会好好照顾这些被囚禁的生物，所以在被囚禁的情况下，绝大多数的盲蛙都没法撑住多久。</p>",
 			"data":{},
 			"items":{
 				"Crushed Windpipes":{
-					"name": "Crushed Windpipes",
-					"description": "<p>The blindheim can't vocalize and is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} until its neck injuries heal.</p>"
+					"name": "气管压伤 Crushed Windpipes",
+					"description": "<p>在颈伤恢复前盲蛙无法发声，并陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
 				},
 				"Spotlight":{
-					"name": "Spotlight",
-					"description": "<p>Bright light shines from the blindheim's eyes in a @Template[type:emanation|distance:30] (also creating dim light to 60 feet). Each creature in the bright light when the blindheim uses this action, or who enters it while the light continues, must attempt a @Check[type:fortitude|dc:18] save. It is then temporarily immune for 1 hour. This light remains until the blindheim dims its eyes by using this action again.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is Blinded for 1 hour.</p>"
+					"name": "聚光 Spotlight",
+					"description": "<p>盲蛙眼睛里发出的光芒在@Template[type:emanation|distance:30]范围中提供明亮光照（同时在60尺范围内创造昏暗光照）。每个当盲蛙使用此动作时处于明亮光照范围内的生物，或是在光照持续时间内进入此范围的生物，必须尝试一次@Check[type:fortitude|dc:18]豁免。而后该生物暂时免疫1小时。这种光照会一直持续，直至盲蛙再次使用此动作来使眼睛变暗。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}[[/br 1d4 #rounds]]{1d4轮}。</p>\n<p><strong>大失败</strong> 该生物目盲1小时。</p>"
 				}
 			}
 		},
 		"Turkek": {
 			"name": "Turkek",
-			"publicNotes": "",
 			"blurb": "Female human dhampir necromancer",
 			"data":{},
 			"items":{}
 		},
 		"Varilyn \"Vare\" Eridge": {
 			"name": "Varilyn \"Vare\" Eridge",
-			"publicNotes": "",
 			"blurb": "Female halfling ex-crusader",
 			"data":{},
 			"items":{}
 		},
 		"Venexus": {
 			"name": "Venexus",
-			"publicNotes": "",
 			"blurb": "Female young white dragon",
 			"data":{},
 			"items":{}
 		},
 		"Venexus's Chosen": {
 			"name": "Venexus's Chosen",
-			"publicNotes": "",
 			"blurb": "Dragonkin monks",
 			"data":{},
 			"items":{}
 		},
 		"Venexus's Wyrmling": {
 			"name": "Venexus's Wyrmling",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Weykoward": {
 			"name": "Weykoward",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Yana No-trail": {
 			"name": "Yana No-trail",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
 		"Zombie Mammoth": {
 			"name": "Zombie Mammoth",
-			"publicNotes": "",
-			"blurb": "",
 			"data":{},
 			"items":{}
 		},
