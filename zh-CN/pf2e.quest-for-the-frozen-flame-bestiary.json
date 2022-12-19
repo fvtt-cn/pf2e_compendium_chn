@@ -17,269 +17,974 @@
         "items": {
             "path": "items",
             "converter": "npc-item-translation"
-        }
+        },
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "disable": "system.details.disable",
+        "hazarddescription": "system.details.description",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealthdetails":"system.attributes.stealth.details",
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
     },
 	"entries": {
 		"Abyss-warped Trees": {
-			"name": "Abyss-warped Trees"
+			"name": "Abyss-warped Trees",
+			"disable": "<p>@Check[type:survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental] (trained) to find a location the trees can't reach or @Check[type:religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5‑foot‑square area in the grove that's safe from this hazard.</p>",
+			"hazarddescription": "<p>A forest of fiendish trees swing their branches and shift their roots to bludgeon and trip creatures in the tainted grove (area <strong>A21</strong>).</p>",
+			"reset": "<p>The Abyss-warped trees cease moving 1 minute after no living creatures are in the tainted grove. They reset immediately. A disabled tree reanimates after 1 minute. A destroyed tree regrows after 1 month.</p>",
+			"routine": "<p>(4 actions) The Abyss‑warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[type:reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. The Abyss‑warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
+			"stealthdetails": "<p>(trained) to determine the trees can move</p>",
+			"data":{},
+			"items":{}
 		},
 		"Acid Strongbox Trap": {
-			"name": "Acid Strongbox Trap"
+			"name": "Acid Strongbox Trap",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Bleed Away the Magical Field|traits:acid,evocation,magical,trap,hazard] (expert) to harmlessly bleed away the magical field or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level; counteract DC 20) to dispel it.</p>",
+			"hazarddescription": "<p>An invisible magic field around the strongbox releases a spray of acid when disturbed.</p>",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "<p>(trained)</p>",
+			"data":{},
+			"items":{
+				"Acidic Spray":{
+					"name": "Acidic Spray",
+					"description": "<p><strong>Trigger</strong> A creature touches the strongbox directly or with a held tool</p>\n<hr />\n<p><strong>Effect</strong> The trap deals [[/r {4d8+10}[acid]]]{4d8+10 acid damage} in a @Template[type:cone|distance:15] in the direction of the triggering creature (@Check[type:reflex|dc:21|basic:true]).</p>"
+				}
+			}
 		},
 		"Animated Blade": {
-			"name": "Animated Blade"
+			"name": "Animated Blade",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Construct Armor (Hardness 4)":{
+					"name": "Construct Armor (Hardness 4)",
+					"description": "<p>Like normal objects, an animated blade has Hardness. This Hardness reduces any damage the blade takes by an amount equal to the Hardness. Once an animated blade is reduced to fewer than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks, and its Armor Class is reduced to 14.</p>"
+				},
+				"Tetanus":{
+					"name": "Tetanus",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:15]</p>\n<p><strong>Onset</strong> 1 week</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 week)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} and can't speak (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} (1 day)</p>\n<p><strong>Stage 4</strong> death</p>"
+				}
+			}
 		},
 		"Arboreal Tar Tree": {
-			"name": "Arboreal Tar Tree"
+			"name": "Arboreal Tar Tree",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Ardissa Prendergant": {
-			"name": "Ardissa Prendergant"
+			"name": "Ardissa Prendergant",
+			"publicNotes": "",
+			"blurb": "Female human trophy hunter",
+			"data":{},
+			"items":{
+				"Mesmerizing Sigil":{
+					"name": "Mesmerizing Sigil",
+					"description": "<p><strong>Trigger</strong> A creature targets Ardissa with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> Ardissa traces a dizzying symbol in the air. The creature must attempt a @Check[type:will|dc:20] save. The creature is then temporarily immune for 1 minute.</p>\n<hr />\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> Until the beginning of her next turn, Ardissa is @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} from the creature.</p>\n<p><strong>Critical Failure</strong> Until the end of her next turn, Ardissa is @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from the creature.</p>"
+				},
+				"Drain Bonded Item":{
+					"name": "Drain Bonded Item",
+					"description": "<p><strong>Frequency</strong> twice per day</p>\n<hr />\n<p><strong>Effect</strong> Ardissa regains the ability to cast one spell she has already cast. She must still Cast the Spell normally. She can use this ability once to recover a 1st-level spell and once to recover a 2nd-level spell. She typically uses this ability to recover her <em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</em> spells.</p>"
+				}
+			}
 		},
 		"Ardissa's Porter": {
-			"name": "Ardissa's Porter"
+			"name": "Ardissa's Porter",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"equipment-Cargo Hook":{
+					"name": "Cargo Hook",
+					"description": "<p>A light pick is a modified mining implement with a wooden shaft ending in a pick head crafted more to pierce armor and flesh than chip rocks.</p>"
+				},
+				"strike-Cargo Hook":{
+					"name": "Cargo Hook"
+				},
+				"Stumbling Snag":{
+					"name": "Stumbling Snag",
+					"description": "<p><strong>Requirements</strong> The porter is holding a cargo hook</p>\n<p><strong>Trigger</strong> An enemy within the porter's reach critically misses the porter with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The porter moves the enemy 5 feet in a direction of the porter's choosing.</p>"
+				}
+			}
 		},
 		"Ashen Swale": {
-			"name": "Ashen Swale"
+			"name": "Ashen Swale",
+			"publicNotes": "",
+			"blurb": "Male human god caller",
+			"data":{},
+			"items":{}
 		},
 		"Azi": {
-			"name": "Azi"
+			"name": "Azi",
+			"publicNotes": "",
+			"blurb": "Female human necromancer",
+			"data":{},
+			"items":{}
 		},
 		"Bargott": {
-			"name": "Bargott"
+			"name": "Bargott",
+			"publicNotes": "",
+			"blurb": "Male dryad husk",
+			"data":{},
+			"items":{}
 		},
 		"Beaver": {
-			"name": "Beaver"
+			"name": "Beaver",
+			"publicNotes": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>A typical beaver can grow up to 4 feet long and weigh up to 65 pounds.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Bone Warrior": {
-			"name": "Bone Warrior"
+			"name": "Bone Warrior",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Burnbearer": {
-			"name": "Burnbearer"
+			"name": "Burnbearer",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Spurred by Death":{
+					"name": "Spurred by Death",
+					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The burnbearer Steps or Strides.</p>"
+				},
+				"Torch and Go":{
+					"name": "Torch and Go",
+					"description": "<p><strong>Requirements</strong> The burnbearer is flanking a creature</p>\n<hr />\n<p><strong>Effect</strong> The burnbearer sets the distracted enemy ablaze. The burnbearer makes a torch Strike against the flanked creature, then Steps. If the burnbearer's Strike deals damage to the flanked creature, the creature also takes [[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>"
+				}
+			}
 		},
 		"Burning Mammoth Commando": {
-			"name": "Burning Mammoth Commando"
+			"name": "Burning Mammoth Commando",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Burning Mammoth Hunter": {
-			"name": "Burning Mammoth Hunter"
+			"name": "Burning Mammoth Hunter",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Spurred by Death":{
+					"name": "Spurred by Death",
+					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The hunter Steps or Strides.</p>"
+				},
+				"Muscle Slicer":{
+					"name": "Muscle Slicer",
+					"description": "<p>A target critically hit by a hunter's Strike is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of its next turn.</p>"
+				}
+			}
 		},
 		"Burning Mammoth Longshield": {
-			"name": "Burning Mammoth Longshield"
+			"name": "Burning Mammoth Longshield",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Spurred by Death":{
+					"name": "Spurred by Death",
+					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The longshield Steps or Strides.</p>"
+				},
+				"Opportunistic Defense":{
+					"name": "Opportunistic Defense",
+					"description": "<p><strong>Trigger</strong> The longshield successfully Strikes with their shield boss</p>\n<hr />\n<p><strong>Effect</strong> The longshield Raises their Shield.</p>"
+				},
+				"Shield Shove":{
+					"name": "Shield Shove",
+					"description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The longshield's shield is raised</p>\n<hr />\n<p><strong>Effect</strong> The longshield rolls an Athletics check to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} a creature in reach. If they roll a failure, they get a success instead, and if they roll a success, they get a critical success instead. The longshield's shield is lowered.</p>"
+				}
+			}
 		},
 		"Burning Mammoth Reaver": {
-			"name": "Burning Mammoth Reaver"
+			"name": "Burning Mammoth Reaver",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"strike-Tallow Bomb":{
+					"name": "Tallow Bomb",
+					"description": "<p>[[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {1}[splash,fire]]]{1 fire splash damage}</p>"
+				},
+				"Reaver's Howl":{
+					"name": "Reaver's Howl",
+					"description": "<p>When the reaver attempts an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize}, the reaver compares the result of the Intimidation check to the Will DC of each non-Burning Mammoth creature within 30 feet, determining the effect separately for each creature. The reaver's howl ignores the usual circumstance penalty to the Intimidation check for not speaking the same language as the target.</p>"
+				},
+				"Spurred by Death":{
+					"name": "Spurred by Death",
+					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> The reaver Steps or Strides.</p>"
+				},
+				"Cut Down":{
+					"name": "Cut Down",
+					"description": "<p>When a reaver hits a creature with a battle axe Strike, the target must succeed at a @Check[type:fortitude|dc:16] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. If the creature critically fails its save, it takes [[/r {1d6}[bludgeoning]]]{1d6 bludgeoning damage} as it falls prone.</p>"
+				}
+			}
 		},
 		"Cairn Wight (G4)": {
-			"name": "Cairn Wight (G4)"
+			"name": "Cairn Wight (G4)",
+			"publicNotes": "<p>Jealous guardians of tombs, barrows, and sepulchers, cairn wights usually spawn from necromantic rituals. For those mortals who cannot abide the thought of separation from their earthly possessions, the undead existence offered by transformation into a cairn wight can be tempting. Perhaps as frequently, particularly avaricious and wealthy royalty or merchants seek out victims to transform into cairn wights to guard their precious wealth for all time.</p>\n<p>Only in the rarest instances is the greed of a mortal strong enough to spontaneously transform them into a cairn wight without a dark ritual or the intercession of a powerful divine being. On those occasions, however, the resultant wight exhibits unmatched viciousness and likely owns rare treasure indeed.</p>\n<p>As guardians of material possessions, cairn wights are supernaturally bound to the armaments they wore during the ritual used to create them. They can spread their necromantic powers into the weapons they wield. A slash from a cairn wight's sword channels life from the victim into the wight.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Final Spite":{
+					"name": "Final Spite",
+					"description": "<p><strong>Trigger</strong> The cairn wight is reduced to 0 Hit Points</p>\n<hr />\n<p><strong>Effect</strong> The cairn wight makes a Strike before being destroyed. It doesn't gain any temporary HP from drain life on this Strike.</p>"
+				},
+				"Cairn Wight Spawn":{
+					"name": "Cairn Wight Spawn",
+					"description": "<p>A living humanoid slain by a cairn wight's weapon or claw Strike rises as a spawned wight after [[/br 1d4 #rounds]]{1d4 rounds}. This spawned wight is under the command of the cairn wight that killed it. It doesn't have drain life or cairn wight spawn and is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 2} for as long as it is a spawned wight.</p>\n<p>If its creator dies, the spawned wight becomes a full-fledged, autonomous cairn wight; it regains its free will, gains drain life and cairn wight spawn, and is no longer clumsy.</p>"
+				},
+				"Drain Life":{
+					"name": "Drain Life",
+					"description": "<p>When the cairn wight damages a living creature with a melee Strike, using an unarmed attack or its bound weapon, the cairn wight gains 5 temporary Hit Points and the creature must succeed at a @Check[type:fortitude|dc:18] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. Further damage dealt by the cairn wraith increases the drained condition value by 1 on a failed save, to a maximum of drained 4.</p>"
+				},
+				"Funereal Dirge":{
+					"name": "Funereal Dirge",
+					"description": "<p>The cairn wight chants a low, haunting melody. Living creatures within @Template[type:emanation|distance:50]{50 feet} must attempt a @Check[type:will|dc:21] save.</p>\n<p>The cairn wight can't chant a new Funereal Dirge for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and takes a -2 status penalty to saving throws against drain life.</p>"
+				}
+			}
 		},
 		"Calcifda": {
-			"name": "Calcifda"
+			"name": "Calcifda",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Castoroides": {
-			"name": "Castoroides"
+			"name": "Castoroides",
+			"publicNotes": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>Castoroides are bear-sized beavers that build their lodges on land near a water source rather than in the water.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Cave-in": {
-			"name": "Cave-in"
+			"name": "Cave-in",
+			"disable": "<p>@Check[type:survival|dc:25|name:Prop up ceiling|traits:hazard,environmental] (trained) to prop up the tunnel ceiling without triggering a collapse</p>",
+			"hazarddescription": "The tunnel collapses, filling the passage with stone.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(trained)",
+			"data":{},
+			"items":{}
 		},
 		"Corrupted Elder Tree": {
-			"name": "Corrupted Elder Tree"
+			"name": "Corrupted Elder Tree",
+			"publicNotes": "<p>Arboreal regents-also called treants-are lumbering, solitary creatures responsible for guarding an entire forest. They take an especially long view of affairs and never act brashly or without much deliberation. They occasionally come together in small groups called groves to share news and pass their wisdom down to the arboreal wardens that have sprouted under their watch. In times of grave danger, all the groves in a region may gather for a great months-long meeting to plan and, eventually, act upon a threat.</p>\n<p>The typical arboreal regent is 30 feet tall, has a trunk 2 feet in diameter, and weighs 4,500 pounds.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk-even elves are fugacious in the eyes of arboreals-and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build-a trait that serves vengeful members of their kind well.</p>",
+			"blurb": "Variant arboreal regent",
+			"data":{},
+			"items":{}
 		},
 		"Crawling Hand Swarm": {
-			"name": "Crawling Hand Swarm"
+			"name": "Crawling Hand Swarm",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Death's Slumber Ward": {
-			"name": "Death's Slumber Ward"
+			"name": "Death's Slumber Ward",
+			"disable": "<p>@Check[type:religion|dc:23|name:Dissipate One of the Threads|traits:hazard,magical,trap,complex] (expert) or @Check[type:performance|dc:21|name:Dissipate One of the Threads|traits:hazard,magical,trap,complex] (trained) to dissipate one of the four threads. Characters who failed or critically failed a Performance check to participate in Grandfather Eiwa's funeral in Chapter 1 have been able to reflect on the experience; these characters gain a +2 circumstance bonus to their Performance checks to disable this trap.</p>\n<p>The trap is destroyed when all four threads are dissipated.</p>",
+			"hazarddescription": "<p>A whirlwind of four ephemeral, magical threads dispels the undead and shrouds the living in an endless slumber.</p>",
+			"reset": "<p>The haunt deactivates 1 minute after no living or undead creatures are within 100 feet, then resets.</p>",
+			"routine": "<p>(4 actions) Each thread of energy passes through a random living or undead creature within 60 feet, dealing 4d6 damage (@Check[type:will|dc:22|basic:true|name:Death's Slumber Ward|traits:hazard,magical,trap,complex]) to the creature. A thread deals [[/r {4d6}[negative]]]{negative damage} to living creatures and [[/r {4d6}[positive]]]{positive damage} to undead creatures. Each thread passes through a different random creature, if possible. Each dissipated thread reduces the trap's number of actions by 1.</p>",
+			"stealthdetails": "<p>(expert)</p>",
+			"data":{},
+			"items":{
+				"Breath of Pharasma":{
+					"name": "Breath of Pharasma",
+					"description": "<p><strong>Trigger</strong> A living or undead creature opens the trunk</p>\n<hr />\n<p><strong>Effect</strong> The ephemeral winds rise, sapping energy. All living and undead creatures within @Template[type:emanation|distance:60]{60 feet} must succeed at a @Check[type:will|dc:22] save or become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). The trap then rolls initiative.</p>"
+				}
+			}
 		},
 		"Desiak": {
-			"name": "Desiak"
+			"name": "Desiak",
+			"publicNotes": "",
+			"blurb": "Male fleshwarp warrior",
+			"data":{},
+			"items":{}
 		},
 		"Elk": {
-			"name": "Elk"
+			"name": "Elk",
+			"publicNotes": "<p>Powerful and swift land mammals, elk range through the plains, hills, and forests of the wilderness.</p>\n<p>Their size, strength, and antlers (for the males) enable common elk to contend with most of their environment's dangers, though herds generally favor flight over combat. Most elk stand between 3 and 5 feet tall and weigh between 350 and 550 pounds, with females slighter than the males.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Everburning Mammoth": {
-			"name": "Everburning Mammoth"
+			"name": "Everburning Mammoth",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Falling Stalactites": {
-			"name": "Falling Stalactites"
+			"name": "Falling Stalactites",
+			"disable": "<p>@Check[type:survival|dc:20|name:Safely remove Stalactite|traits:hazard,environmental] (trained) to remove a stalactite without triggering a fall</p>",
+			"hazarddescription": "Unstable stalactites fall from the ceiling.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(trained)",
+			"data":{},
+			"items":{}
 		},
 		"Fiendish Arboreal": {
-			"name": "Fiendish Arboreal"
+			"name": "Fiendish Arboreal",
+			"publicNotes": "<p>Arboreal wardens are the rangers of arboreal society. These itinerant folk have an innate curiosity about the woodlands in which they dwell, and rarely stop to take root and rest in the same part of the forest twice. This wanderlust makes wardens ideal forest patrollers and scouts. While they are robust combatants, they know better than to confront dangerous foes on their own. Instead, they report any dangers to arboreal regents. In rare cases, large groups of arboreal wardens congregate to form a copse. Copses travel beyond the boundaries of a forest to investigate the hinterlands and gather intelligence on potential threats before returning to report their findings. Arboreal wardens do not pretend to understand to other creatures' motives-like most forces of the natural world, they are ambivalent about mortal affairs that do not involve their forest.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk-even elves are fugacious in the eyes of arboreals-and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build-a trait that serves vengeful members of their kind well.</p>",
+			"blurb": "Demon‑touched arboreal wardens",
+			"data":{},
+			"items":{}
 		},
 		"Final Flight": {
-			"name": "Final Flight"
+			"name": "Final Flight",
+			"disable": "<p>@Check[type:diplomacy|dc:22|name:Soothe the restless spirits|traits:hazard,haunt] (trained) to soothe the restless spirits, or @Check[type:religion|dc:24|name:Honor the deceased|traits:hazard,haunt] (trained) to recite a prayer honoring the deceased; two successful checks are required to disable the haunt</p>",
+			"hazarddescription": "A creature experiences the death of a priest carried off by griffons and fed to their chicks.",
+			"reset": "The haunt deactivates 1 minute after all living creatures leave the Lea of Honored Souls. Ten minutes after deactivating, the haunt resets.",
+			"routine": "",
+			"stealthdetails": "(expert)",
+			"data":{},
+			"items":{}
 		},
 		"Footsteps Of Legends": {
-			"name": "Footsteps Of Legends"
+			"name": "Footsteps Of Legends",
+			"disable": "<p>@Check[type:diplomacy|dc:26|name:Convince the spirits to remain dormant|traits:hazard,haunt] (trained) to convince the spirits to remain dormant, or @Check[type:religion|dc:26|name:Ritually silence the spirits|traits:hazard,haunt] (trained) to ritually silence the spirits</p>",
+			"hazarddescription": "The characters witness Burning Mammoths walking this mountain pass in ages long past.",
+			"reset": "1 hour",
+			"routine": "",
+			"stealthdetails": "(expert)",
+			"data":{},
+			"items":{}
 		},
 		"Forest Fire": {
-			"name": "Forest Fire"
+			"name": "Forest Fire",
+			"disable": "<p>A successful @Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5‑foot‑square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5‑foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10‑foot‑by‑10‑foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
+			"hazarddescription": "<p>A @Template[type:line|distance:10|width:10]{10‑foot‑by‑10‑foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
+			"reset": "",
+			"routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes [[/r {2d8+5}[fire]]]{2d8+5 fire damage}, or [[/r {4d8+10}[fire]]]{4d8+10 fire damage} if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
+			"stealthdetails": "",
+			"data":{},
+			"items":{}
 		},
 		"Gathganara": {
-			"name": "Gathganara"
+			"name": "Gathganara",
+			"publicNotes": "<p>Naiads protect streams, ponds, springs, and other natural bodies of fresh water. While most naiads lead solitary lives close to their chosen ward, sometimes these nymphs congregate in coven-like groups where river tributaries meet, performing great magic and blessing the waters of the land. Because naiads' bonds to their bodies of water permit more flexibility, they are the nymphs most likely to interact with humanoids and even visit their settlements on occasion. Unlike other nymphs, naiads occasionally become adventurers, especially when dark forces seek to despoil nature or otherwise threaten the land, joining forces with others to prevent the corruption of nature.</p>\n<hr />\n<p>Nymphs are a family of fey that take the form of beautiful humanoids with elven features and have a deep association with the natural world. The most common of their kind are the dryads, which are spirits that embody great trees, but many other kinds of nymphs exist, including naiads, who watch over bodies of water. All nymphs are guardians of some element of nature, typically a specific tree or pond, or even-in the case of nymph queens-whole forests or massive bodies of water.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Subterranean Naiad":{
+					"name": "Subterranean Naiad",
+					"description": "<p>Gathganara has darkvision, rather than low-light vision.</p>"
+				},
+				"Wild Empathy":{
+					"name": "Wild Empathy",
+					"description": "<p>The naiad can use Diplomacy to Make an Impression on and make very simple Requests of animals.</p>"
+				},
+				"Water Dependent":{
+					"name": "Water Dependent",
+					"description": "<p>A naiad bonds to a spring, pool, pond, or similar-sized water feature. While within 300 feet of her bonded body of water, she can use her innate <em>@UUID[Compendium.pf2e.spells-srd.iAnpxrLaBU4V6Sej]{Tidal Surge}</em> at will. She doesn't recover Hit Points or reduce the drained condition when resting beyond that range. Unlike most other nymphs, she doesn't suffer penalties from being apart from her bonded body of water. A naiad can perform a 24-hour ritual to bond herself to a new body of water.</p>"
+				},
+				"Water Healing":{
+					"name": "Water Healing",
+					"description": "<p>While within her bonded body of water, the naiad heals 1 Hit Point every 10 minutes.</p>"
+				}
+			}
 		},
 		"Giant Tapir": {
-			"name": "Giant Tapir"
+			"name": "Giant Tapir",
+			"speed": "splayed toes",
+			"publicNotes": "<p>With a blunt, prehensile trunk and a squat posture, giant tapirs resemble a cross between elephant and boar, though they're actually more closely related to horses and rhinoceroses. Tapirs live in loose herds that graze near rivers and lakes. They enjoy fresh water, not only for the lush plants that grow along the shores-which they eat in prodigious quantities- but also for the protection the water provides. When predators approach, tapirs retreat to the water to hide, keeping their snouts barely above the surface to breathe. Likewise, the breezes and scents that accompany creeks and rivers mask tapirs' musk as they travel along these waterways. Despite their ungainly movement, tapirs are remarkably sure-footed, easily traversing mud and similar terrain thanks to their broad toes.</p>\n<p>Humanoids often hunt giant tapirs for their meat and durable hides. Such hunts are far from guaranteed, though; tapirs can run at least as fast as their hunters, and most will fight if cornered. The docile giants do what they can to avoid confrontation whenever possible. If they sense danger approaching, giant tapirs make a loud whistling sound to warn other tapirs about predators. A community who befriends or domesticates a herd of tapirs can use this whistling habit as an alarm system against encroaching enemies.</p>\n<p>Giant tapirs are usually quite placid, but they can be fearsome when roused. Their tusk-like front teeth are suitable for gouging attackers, and a tapir that manages to get a mouthful of an enemy's arm or leg can use its blunt molars to grind the flesh to paste. Tapirs have good hearing and an excellent sense of smell, but like many prey animals, they have poor vision. In the chaos of combat against multiple enemies, giant tapirs can become overwhelmed and confused, lashing out at allies as well as foes or fleeing the scene entirely.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Grinding Bite":{
+					"name": "Grinding Bite",
+					"description": "<p><strong>Requirements</strong> The giant tapir's last action was a successful jaws Strike against a creature</p>\n<hr />\n<p><strong>Effect</strong> The tapir gnaws the target's flesh and muscle with its blunt teeth. The creature must attempt a @Check[type:fortitude|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature takes [[/r {2d4}[bludgeoning]]]{2d4 bludgeoning damage} and is enfeebled 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r {4d4}[bludgeoning]]]{4d4 bludgeoning damage} and is enfeebled 1 for 1 minute.</p>"
+				},
+				"Splayed Toes":{
+					"name": "Splayed Toes",
+					"description": "<p>Giant tapirs ignore difficult terrain from mud and shallow water.</p>"
+				}
+			}
 		},
 		"Giant Tapir (Snared)": {
-			"name": "Giant Tapir (Snared)"
+			"name": "Giant Tapir (Snared)",
+			"speed": "splayed toes",
+			"publicNotes": "<p>With a blunt, prehensile trunk and a squat posture, giant tapirs resemble a cross between elephant and boar, though they're actually more closely related to horses and rhinoceroses. Tapirs live in loose herds that graze near rivers and lakes. They enjoy fresh water, not only for the lush plants that grow along the shores-which they eat in prodigious quantities- but also for the protection the water provides. When predators approach, tapirs retreat to the water to hide, keeping their snouts barely above the surface to breathe. Likewise, the breezes and scents that accompany creeks and rivers mask tapirs' musk as they travel along these waterways. Despite their ungainly movement, tapirs are remarkably sure-footed, easily traversing mud and similar terrain thanks to their broad toes.</p>\n<p>Humanoids often hunt giant tapirs for their meat and durable hides. Such hunts are far from guaranteed, though; tapirs can run at least as fast as their hunters, and most will fight if cornered. The docile giants do what they can to avoid confrontation whenever possible. If they sense danger approaching, giant tapirs make a loud whistling sound to warn other tapirs about predators. A community who befriends or domesticates a herd of tapirs can use this whistling habit as an alarm system against encroaching enemies.</p>\n<p>Giant tapirs are usually quite placid, but they can be fearsome when roused. Their tusk-like front teeth are suitable for gouging attackers, and a tapir that manages to get a mouthful of an enemy's arm or leg can use its blunt molars to grind the flesh to paste. Tapirs have good hearing and an excellent sense of smell, but like many prey animals, they have poor vision. In the chaos of combat against multiple enemies, giant tapirs can become overwhelmed and confused, lashing out at allies as well as foes or fleeing the scene entirely.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Grinding Bite":{
+					"name": "Grinding Bite",
+					"description": "<p><strong>Requirements</strong> The giant tapir's last action was a successful jaws Strike against a creature</p>\n<hr />\n<p><strong>Effect</strong> The tapir gnaws the target's flesh and muscle with its blunt teeth. The creature must attempt a @Check[type:fortitude|dc:18] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature takes [[/r {2d4}[bludgeoning]]]{2d4 bludgeoning damage} and is enfeebled 1 until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r {4d4}[bludgeoning]]]{4d4 bludgeoning damage} and is enfeebled 1 for 1 minute.</p>"
+				},
+				"Snared":{
+					"name": "Snared",
+					"description": "<p>Due to the poison barbs stuck in its hooves, the tapir can't Stride farther than 10 feet.</p>"
+				},
+				"Splayed Toes":{
+					"name": "Splayed Toes",
+					"description": "<p>Giant tapirs ignore difficult terrain from mud and shallow water.</p>"
+				}
+			}
 		},
 		"Glyptodon": {
-			"name": "Glyptodon"
+			"name": "Glyptodon",
+			"publicNotes": "<p>Glyptodons are enormous, armadillo-like megafauna that roam sandy riverbanks and ancient forests in search of their favorite foods, namely riparian grass and tender saplings. Surly and suspicious, glyptodons avoid predators not out of a defensive instinct-their armored hides protect them from most well-equipped carnivores-but rather because they simply prefer to be left alone to their placid foraging. Despite their great size, glyptodons can survive on surprisingly little food, and they'll eat just about anything. As a result, they're more likely to be encountered roaming across vast tundra or desert regions than other large herbivores, appearing as a single, lumbering hump against an otherwise-flat horizon.</p>\n<p>A glyptodon's scutes-the thick, bony plates of its carapace-grow in distinctive patterns and scar readily, making it easy for non-glyptodons to identify individual animals. Glyptodons have notoriously bad eyesight, even for prey animals, and rely on their sense of smell to get around and identify threats and each other. In combat, they primarily rely on their thick carapaces to protect them from attackers.</p>\n<p>Although southern merchants have occasionally attempted to create a glyptodon-mounted trading network, riding these giants is an exercise in frustration, as their rounded hides provide little purchase for humanoid riders' feet or saddles. However, some webbed-toed people of the plains, including bands of lizardfolk, have managed to maintain glyptodon mounts thanks to their strong, flexible, clawed feet. Other ancestries primarily view glyptodons as a source of meat and tough hides, the latter of which make for excellent impromptu shelters and river boats.</p>\n<p>When cornered, a glyptodon uses its powerful digging claws to scrape or scare away attackers. Glyptodons can use their tails to ward off smaller predators, but generally do so only as a last resort.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Carapace Block":{
+					"name": "Carapace Block",
+					"description": "<p><strong>Trigger</strong> An adjacent creature targets the glyptodon with an attack</p>\n<hr />\n<p><strong>Effect</strong> The glyptodon turns, blocking the attack with its carapace and thrusting its heavy body toward the attacker. It gains a +2 circumstance bonus to its AC against the triggering attack. If the attack critically fails, the glyptodon attempts to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} the attacker.</p>"
+				},
+				"Clobbering Tail":{
+					"name": "Clobbering Tail",
+					"description": "<p>A glyptodon's stiff tail is its strongest weapon. When a glyptodon critically hits with its tail Strike, the target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round.</p>"
+				}
+			}
 		},
 		"Graylok Ambusher": {
-			"name": "Graylok Ambusher"
+			"name": "Graylok Ambusher",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Graylok Artillerist": {
-			"name": "Graylok Artillerist"
+			"name": "Graylok Artillerist",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Graylok Gatebreaker": {
-			"name": "Graylok Gatebreaker"
+			"name": "Graylok Gatebreaker",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Groplit": {
-			"name": "Groplit"
+			"name": "Groplit",
+			"publicNotes": "<p>The groplit is a squat little animal shaped like a water droplet, with a bulbous rear end and an eel-like face that juts from a narrow skull. Its rear legs are more muscular than those in front, which it primarily uses for balance, giving it the gait and appearance of a toad. Groplits are best known for their greasy skin and queasy hygienic habits: they spend most of each day using their two long tongues to slurp up their own oily excretions or similarly viscous discharge originating from plants or other animals. Although they prefer to dwell in northern wetlands, fens, and moist caves, groplits can thrive in all but the most barren environments. They'll eat just about anything, though they tend to prefer small, crunchy animals like bugs and birds.</p>\n<p>Groplits are famously loyal and highly sociable companions, and they make for dedicated, if somewhat odd-looking, pets. They can be taught simple commands and appear to take great pride in obeying them, performing stunts even in the face of obvious danger. An unscrupulous master might train a groplit with the intent to sacrifice it in an emergency, a fate to which the groplit is happily resigned. This single-minded obedience and their slow reproductive rate make groplits fairly rare in the wild.</p>\n<p>As a result of the way their bones are structured, groplits exhibit an imperturbable smile, of sorts-a physical feature which some find as creepy (or enraging) as others find it endearing. Its apparently ceaseless jubilation has given this creature the nickname \"the grinning toad\" in some parts of the world.</p>\n<p>Because they love to lap up oily matter of all kinds, groplits are naturally drawn to greasy animals like @UUID[Compendium.pf2e.pathfinder-bestiary.eHLDsL1LG3jQ1H6Y]{Slurks}, @UUID[Compendium.pf2e.pathfinder-bestiary-2.g1htYgARxNKxc7MV]{Giant Slugs}, and lagofirs. For the most part, such animals rarely mind the company of an amiable groplit, though there's no such thing as a free meal; groplits who drop their guard amid their found family often end up on the wrong side of their companions' intestinal tracts.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Flammable Grease":{
+					"name": "Flammable Grease",
+					"description": "<p>A groplit's DC to recover from @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} is increased by 2 (generally, from DC 15 to DC 17).</p>"
+				},
+				"Greasy Slide":{
+					"name": "Greasy Slide",
+					"description": "<p><strong>Trigger</strong> A creature misses the groplit with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The groplit Strides or Swims up to 10 feet. This movement doesn't trigger reactions.</p>"
+				},
+				"Hopping Charge":{
+					"name": "Hopping Charge",
+					"description": "<p>The groplit Strides twice, Leaps twice, or Strides once and Leaps once. It then makes a jaws Strike at the end of the movement.</p>"
+				},
+				"Incendiary Dollop":{
+					"name": "Incendiary Dollop",
+					"description": "<p>Creatures struck by the groplit are smeared with some of its flammable grease. For the following 1 minute, or until a creature scrubs away the grease dollop with a single Interact action, the DC of the creature's checks to recover from @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} is increased by 2.</p>"
+				}
+			}
 		},
 		"Hail of Razor Stones": {
-			"name": "Hail of Razor Stones"
+			"name": "Hail of Razor Stones",
+			"disable": "<p>@Check[type:thievery|dc:18|name:Cut the Trip Cord|traits:hazard,mechanical,trap] (trained) to safely cut the trip cord</p>",
+			"hazarddescription": "<p>When a concealed cord is tripped, several sharp stones fall onto the square containing the cord.</p>",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "<p>(trained)</p>",
+			"data":{},
+			"items":{
+				"Deadfall":{
+					"name": "Deadfall",
+					"description": "<p><strong>Trigger</strong> A creature walks into the square containing the trip cord</p>\n<hr />\n<p><strong>Effect</strong> Falling rocks deal [[/r {4d8}[slashing]]]{4d8 slashing damage} (@Check[type:reflex|dc:19|basic:true]) to any creature in the square, possibly pinning them to the ground. On a failed save, the creature falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}; on a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} (DC 17 to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}).</p>\n<p>An adjacent creature can attempt a @Check[type:athletics|dc:19] check to shove the rocks aside to free an immobilized creature.</p>"
+				}
+			}
 		},
 		"Hall Of Fiery Doom": {
-			"name": "Hall Of Fiery Doom"
+			"name": "Hall Of Fiery Doom",
+			"disable": "<p>Two @Check[type:athletics|dc:32] or @Check[type:diplomacy|dc:32] checks to douse the flames; Athletics to do the work yourself or Diplomacy to muster the ghostly soldiers. This reduces the hazard's actions by 1 and prevents it from using Burning Timbers. Banish the demons with up to two @Check[type:arcana|dc:35], @Check[type:occultism|dc:35], or @Check[type:religion|dc:35]checks; each success reduces the hazard's actions by 1, and two successes prevent it from using Demonic Abduction. When the hazard loses all 3 actions, Burning Timbers, and Demonic Abduction, it's disabled.</p>",
+			"hazarddescription": "While the roof is on fire and collapsing timbers crush those within the hall, demons fly down from the sky to pluck victims from the flames.",
+			"reset": "The hall falls quiet for 24 hours, after which it can trigger again.",
+			"routine": "<p>(3 actions) The haunt spends 1 action to fill the hall with burning timbers falling from above, and 2 actions to pluck up random victims and drop them to their deaths.</p>",
+			"stealthdetails": "(master)",
+			"data":{},
+			"items":{}
 		},
 		"Hegremon": {
-			"name": "Hegremon"
+			"name": "Hegremon",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Hobji": {
-			"name": "Hobji"
+			"name": "Hobji",
+			"publicNotes": "",
+			"blurb": "Male morlock strangler",
+			"data":{},
+			"items":{
+				"+2 Status to All Saves vs. Disease and Poison":{
+					"name": "对抗疾病和毒素时全豁免+2状态加值"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Hobji's Strikes deal an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Strangling Grasp":{
+					"name": "Strangling Grasp",
+					"description": "<p><strong>Trigger</strong> Hobji hits a Medium or smaller creature with his fist Strike</p>\n<hr />\n<p><strong>Effect</strong> The creature is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, and Hobji begins to strangle the creature. The creature is suffocating and can't speak as long as it's strangled. This prevents it from casting spells with a verbal component or activating items with a command component.</p>"
+				},
+				"Surprise Attack":{
+					"name": "Surprise Attack",
+					"description": "<p>In the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to Hobji.</p>"
+				}
+			}
 		},
 		"Idovik": {
-			"name": "Idovik"
+			"name": "Idovik",
+			"publicNotes": "",
+			"blurb": "Male Sarkorian god",
+			"data":{},
+			"items":{}
 		},
 		"Ivarsa": {
-			"name": "Ivarsa"
+			"name": "Ivarsa",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Jesseri The Hailstorm": {
-			"name": "Jesseri The Hailstorm"
+			"name": "Jesseri The Hailstorm",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Kadlaka": {
-			"name": "Kadlaka"
+			"name": "Kadlaka",
+			"publicNotes": "<p>Kadlakas-strong, lanky humanoids with raven-like features-combine the most formidable aspects of talented hunters and airborne scouts, to say nothing of their potent magical powers over thunder and lightning. Though they shy from most humanoids, kadlakas readily form friendships with ravens and other birds, and they sometimes make temporary alliances with people who prove themselves capable stewards of wild animals and the natural order of things. When they do settle on a roost-whether for a single season or a lifetime-kadlakas often position themselves as guardians of a natural feature or local flock. Because a kadlaka's natural form might frighten humanoid travelers, they often take on the guise of a human or other common bipedal ancestry to gain information and pass on warnings.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"strike-Lightning Echo":{
+					"name": "Lightning Echo",
+					"description": "<p>[[/r {1d4}[persistent,electricity]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Electricity Damage}</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>The kadlaka can change their appearance to that of a Medium humanoid. This doesn't change their Speed or their attack and damage modifiers with their Strikes but might change the type of damage their melee Strikes deal (typically to bludgeoning). While in their humanoid shape, the kadlaka can't use Wingbeat. Each kadlaka has a fixed humanoid form-they can't adopt a different appearance each time they use this ability.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Silent Lightning":{
+					"name": "Silent Lightning",
+					"description": "<p>A kadlaka's movements are practically silent. Against a creature using only hearing to perceive them, they gain a +4 circumstance bonus to their Stealth check. As normal, this benefit also improves the kadlaka's Stealth DC.</p>"
+				},
+				"Wingbeat":{
+					"name": "Wingbeat",
+					"description": "<p>The kadlaka beats their wings with a mighty peal of thunder. Creatures in a @Template[type:emanation|distance:15] take [[/r {5d6}[sonic]]]{5d6 sonic damage} (@Check[type:fortitude|dc:21|basic:true]). On a failed save, the creature is also pushed 5 feet away from the kadlaka.</p>\n<p>The kadlaka can't use Wingbeat again for [[/br 1d4 #Wingbeat Recharge]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Lagofir": {
-			"name": "Lagofir"
+			"name": "Lagofir",
+			"publicNotes": "<p>Lagofirs are semiaquatic omnivores that resemble a rabbit the size of a large dog. They're social creatures, playful but territorial and protective of their kin. Lagofirs live in family units and gather in larger groups as often as their environment allows. They're commonly found in northern Avistan, congregating along rivers, lakes, and coasts, where they subsist on fish, crustaceans, marine plants, and small mammals.</p>\n<p>Lagofirs have a stout body, rounded back, large hind legs, long ears, and a short, fluffy tail. Their powerful incisors are capable of cracking through clam shells, chitin, and bone. Both their front and back paws are webbed, and their front paws are highly dexterous, enabling them to grasp objects and perform simple manual tasks.</p>\n<p>Lagofirs secrete a thick, sweet-smelling, flammable oil that coats their fur. Warm to the touch, this oil keeps them insulated and comfortable in frigid water and cold climates. Lagofirs mark their territory by brushing against solid surfaces, coating them in oil that, to other lagofirs, identifies an individual. This makes their lairs, known as burrows or forms, incredibly hazardous. A single spark in a lagofir form can cause an explosion.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Loblobi": {
-			"name": "Loblobi"
+			"name": "Loblobi",
+			"publicNotes": "<p>In the First World, rivers don't always flow as expected; sometimes they run backward, upward, or just disappear into mist and reappear somewhere else entirely. Fey native to such rivers are often just as capricious. This quality is particularly true of loblobis, cunning carnivores who resemble small, chubby humans with the heads and wings of crested herons.</p>\n<p>These malicious tricksters love playing any pranks that result in other creatures being embarrassed, hurt, or even drowned. Their most common \"antic\" is to cast <em>@UUID[Compendium.pf2e.spells-srd.Seaah9amXg70RKw2]{Water Walk}</em> on a hopeful river-crosser, only to dismiss the spell when their victim has traversed halfway across. Conversely, most loblobis are terrible sports when they're the butt of a joke. It's common wisdom that few creatures can hold a grudge like a loblobi.</p>\n<p>Exceptionally vain, loblobis flutter and dance constantly to show off their plumage. Failing to comment on a preening loblobi's appearance is a sure method to invite eternal enmity, but flattery might buy enough time to sneak away from the evil fey.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Unflappable Self-Importance":{
+					"name": "Unflappable Self-Importance",
+					"description": "<p>When a loblobi rolls a success on a Will save against an emotion effect or an effect that would make it controlled, it gets a critical success instead. When it rolls a critical failure against such an effect, it gets a failure instead.</p>\n<p>However, a loblobi is vulnerable to flattery. It takes a -4 circumstance penalty to its Will and Perception DCs against any fulsome Deception and Diplomacy checks to Lie, @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression}, or Request.</p>"
+				},
+				"Arrogant Preen":{
+					"name": "Arrogant Preen",
+					"description": "<p>The loblobi tidies its feathered crest to look supernaturally regal. Each non-fey creature within @Template[type:emanation|distance:30]{30 feet} must attempt a @Check[type:will|dc:17] save, then is temporarily immune to Arrogant Preen for 1 hour.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is distracted by the preening and can't take reactions until the start of its next turn.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by the loblobi and can't take reactions for 1 minute.</p>\n<p><strong>Critical Failure</strong> As failure. Additionally, while the creature is fascinated, any hostile actions from the loblobi don't break the fascination, but instead allow the target to attempt a new Will save to end the effect at the start of its next turn.</p>"
+				}
+			}
 		},
 		"Lomok": {
-			"name": "Lomok"
+			"name": "Lomok",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Long-horned Bison": {
-			"name": "Long-horned Bison"
+			"name": "Long-horned Bison",
+			"publicNotes": "<p>Much like their smaller bison cousins, long-horned bison are bovines with short faces, two horns, a shaggy coat, and a noticeable hump on their back. Despite their relation to more placid bovines, however, long-horned bison are ill-tempered and territorial. Their tread shakes the ground, while the thunder of their stampedes can be mistaken for an earthquake. Long-horned bison weigh upwards of 4,500 pounds and measure up to 9 feet tall and 16 feet long. Their horns, measured tip to tip, can be almost as wide as the bison are tall.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Long-horned Bison Beheaded": {
-			"name": "Long-horned Bison Beheaded"
+			"name": "Long-horned Bison Beheaded",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Megaloceros": {
-			"name": "Megaloceros"
+			"name": "Megaloceros",
+			"publicNotes": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Methane Flue": {
-			"name": "Methane Flue"
+			"name": "Methane Flue",
+			"disable": "<p>@Check[type:survival|dc:28|name:Diffuse the Flames|traits:environmental,hazard] to dig around the vent in a way that diffuses the fumes</p>",
+			"hazarddescription": "<p>Invisible but highly flammable natural gas has built up beneath the ground, where geological pressure can ignite it.</p>",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(expert) to hear hissing gas",
+			"data":{},
+			"items":{}
 		},
 		"Metuak": {
-			"name": "Metuak"
+			"name": "Metuak",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Necrohusk": {
-			"name": "Necrohusk"
+			"name": "Necrohusk",
+			"publicNotes": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Negative Energy Plane during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Oil Explosion": {
-			"name": "Oil Explosion"
+			"name": "Oil Explosion",
+			"disable": "<p>@Check[type:survival|dc:25|name:Neutralize the oil|traits:hazard,environmental,fire] (trained) or @Check[type:crafting|dc:23|name:Neutralize the oil|traits:hazard,environmental,fire] to neutralize the oil without setting it alight</p>",
+			"hazarddescription": "The flammable oil catches flame and explodes, burning up in a ball of fire.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(trained)",
+			"data":{},
+			"items":{}
 		},
 		"Pakano": {
-			"name": "Pakano"
+			"name": "Pakano",
+			"publicNotes": "",
+			"blurb": "Male Kellid hunter",
+			"data":{},
+			"items":{
+				"Tallow Bomb":{
+					"name": "Tallow Bomb",
+					"description": "<p>[[/r {2d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>\n<p>[[/r {2}[splash,fire]]]{2 splash fire damage}</p>"
+				},
+				"Spurred by Death":{
+					"name": "Spurred by Death",
+					"description": "<p><strong>Trigger</strong> An ally within 30 feet reduces a creature to 0 HP</p>\n<hr />\n<p><strong>Effect</strong> Pakano Steps or Strides.</p>"
+				},
+				"Hunt Prey":{
+					"name": "Hunt Prey",
+					"description": "<p>Pakano designates a single creature he can see and hear, or one he's Tracking, as his prey. He gains a +2 circumstance bonus to Perception checks to @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} his prey and to Survival checks to @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Track} his prey.</p>\n<p>The first time Pakano hits his designated prey in a round, he deals an additional [[/r {1d8}[precision]]]{1d8 precision damage}. Pakano also ignores the penalty for making ranged attacks within his second range increment.</p>\n<p>These effects last until Pakano uses Hunt Prey again.</p>"
+				},
+				"Spear Fighter":{
+					"name": "Spear Fighter",
+					"description": "<p>Pakano's spear has the parry weapon trait, and his Strikes with the spear deal an additional [[/r {1d6}]]{1d6 damage}. If he critically hits a creature with a spear, the creature is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of Pakano's next turn.</p>"
+				}
+			}
 		},
 		"Pakano (Level 12)": {
-			"name": "Pakano (Level 12)"
+			"name": "Pakano (Level 12)",
+			"publicNotes": "",
+			"blurb": "Male Kellid hunter",
+			"data":{},
+			"items":{}
 		},
 		"Pouncing Tiger Haunt": {
-			"name": "Pouncing Tiger Haunt"
+			"name": "Pouncing Tiger Haunt",
+			"disable": "<p>@Check[type:nature|dc:18|name:Quell the Spirit|traits:hazard,haunt] (trained) or @Check[type:religion|dc:18|name:Quell the Spirit|traits:hazard,haunt] (trained) to quell the spirit</p>",
+			"hazarddescription": "<p>A cave painting of a great cat roars to life and leaps off the wall to attack.</p>",
+			"reset": "<p>If the cave painting isn't destroyed, the haunt resets after 1 day.</p>",
+			"routine": "",
+			"stealthdetails": "<p>(trained)</p>",
+			"data":{},
+			"items":{
+				"Tiger Slash":{
+					"name": "Tiger Slash",
+					"description": "<p><strong>Trigger</strong> A living creature approaches within 5 feet of the cave painting</p>\n<hr />\n<p><strong>Effect</strong> The haunt deals [[/r {4d8}[slashing]]]{4d8 slashing damage} with semisolid claws (@Check[type:will|dc:18|basic:true]). On a failed save, the target is also @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} and @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round (or @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} and fleeing for 1 minute on a critical failure).</p>"
+				}
+			}
 		},
 		"Punishing Altar": {
-			"name": "Punishing Altar"
+			"name": "Punishing Altar",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Remove the bowl|traits:hazard,magical,necromancy,negative,trap] (expert) to remove the bowl without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (2nd level, counteract DC 20) to counteract the runes</p>",
+			"hazarddescription": "The bowl releases a wave of negative energy when a living creature approaches without displaying a religious symbol of Venexus.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(trained) to notice the bowl is the center point for a magical trap",
+			"data":{},
+			"items":{}
 		},
 		"Rhino Warriors": {
-			"name": "Rhino Warriors"
+			"name": "Rhino Warriors",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Rime Sludge": {
-			"name": "Rime Sludge"
+			"name": "Rime Sludge",
+			"speed": "slushy undulation",
+			"publicNotes": "<p>Rot and decay play a natural role in swamps of all climates, and latent magical energies or other strange phenomena can transform decomposing matter into oozes and other monstrous creatures made of living muck. Tundra wetlands are no exception to this trend. Worse, in such regions, a quick freeze can prevent noxious sludge from breaking down, and sequential years of short, seasonal thaws can compress rot upon rot until the pestilential mass animates as a rime sludge. These rare, noxious oozes hungrily search for and consume any organic matter they find in their northland habitats.</p>\n<p>Like most oozes, rime sludges consist primarily of protoplasm, though theirs has a slushy consistency peppered with disgusting nuggets of indigestible matter, such as petrified wood, jagged arrowheads, and animal fossils. A rime sludge renews this protoplasm by consuming plants and animals and maintaining a careful balance of semifrozen decomposition in its mutable form.</p>\n<p>Rime sludges are among the few oozes that thrive in cold climates, as too much heat accelerates their natural decay. Rime sludges can't survive temperatures too far above freezing for more than a few days. Rising temperatures force them to migrate toward cooler climates or cold underground areas.</p>\n<p>Few intelligent creatures inhabiting cold climates want anything to do with rime sludges. These oozes can't be trained, tend to wander off at random, and emit a noxious stink at the slightest hint of warmth. Some inventive creatures try to trap rime sludges in pits to keep them contained and use them to dispose of prisoners or food scraps. Because of the oozes' overpowering stench, these pits tend to be quite deep.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Motion Sense 60 feet":{
+					"name": "Motion Sense 60 feet",
+					"description": "<p>A rime sludge can sense nearby motion through vibration and air movement.</p>"
+				},
+				"Noxious Sublimation":{
+					"name": "Noxious Sublimation",
+					"description": "<p>The first time each round that the rime sludge takes fire damage, a cloud of sickening decay roils outward, dealing [[/r {2d6}[poison]]]{2d6 poison damage} (@Check[type:fortitude|dc:17|basic:true]) to all creatures in a @Template[type:emanation|distance:10]. A creature that fails its saving throw is also @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (or @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 3} on a critical failure).</p>"
+				},
+				"Slushy Undulation":{
+					"name": "Slushy Undulation",
+					"description": "<p>A rime sludge ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} when crossing ice.</p>"
+				}
+			}
 		},
 		"Rockfall Ceiling": {
-			"name": "Rockfall Ceiling"
+			"name": "Rockfall Ceiling",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Pin the pulley in place|traits:hazard,mechanical,trap] (trained) to pin the pulley in place</p>",
+			"hazarddescription": "A load of rocks, held up by a rope pulley, is dropped on the cavern's lower level.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(trained)",
+			"data":{},
+			"items":{}
 		},
 		"Roru": {
-			"name": "Roru"
+			"name": "Roru",
+			"publicNotes": "<p>Rorus, sometimes called hunter demons, are brutal fiends that arise from the souls of mortals who mutilated animal corpses. As demons, these individuals don animal pelts, then infiltrate packs or herds to corrupt entire swaths of animals, turning their victims bloodthirsty and feral.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Shattering Rune": {
-			"name": "Shattering Rune"
+			"name": "Shattering Rune",
+			"disable": "<p>@Check[type:thievery|dc:30|name:Erase the Rune|traits:hazard] (master) to erase the rune without triggering the sensor or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (5th level; counteract DC 28) to dispel the rune</p>",
+			"hazarddescription": "A magical rune is inscribed on the tarry earth at the entrance to the hut, buried beneath snow, with an @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} sensor that detects creatures within a 10-foot-radius sphere.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "(master)",
+			"data":{},
+			"items":{}
 		},
 		"Skeletal Woolly Rhinoceros": {
-			"name": "Skeletal Woolly Rhinoceros"
+			"name": "Skeletal Woolly Rhinoceros",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Soul Draining Cage": {
-			"name": "Soul Draining Cage"
+			"name": "Soul Draining Cage",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Drain the rune's power|traits:hazard,magical,necromancy,negative,trap] (expert) to drain the runes' power harmlessly or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (3rd level; counteract DC 22) to counteract the rune</p>",
+			"hazarddescription": "Necromantic runes inscribed on the cage bars and lock drain the vitality of living creatures who interact with the cage.",
+			"reset": "",
+			"routine": "",
+			"stealthdetails": "<p>(expert) or <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+			"data":{},
+			"items":{}
 		},
 		"Spectral Archers": {
-			"name": "Spectral Archers"
+			"name": "Spectral Archers",
+			"disable": "<p>@Check[type:intimidation|dc:31|traits:haunt,hazard] (expert) to cow the archers into fleeing or @Check[type:religion|dc:28|name:Banish the Spirits|traits:haunt,hazard] (expert) to temporarily banish the spirits</p>",
+			"hazarddescription": "Ghostly soldiers wielding crossbows manifest within the towers that flank the gatehouse and rain bolts down upon intruders.",
+			"reset": "The haunt vanishes permanently if the graveknights are destroyed. Otherwise, it returns after 1 hour.",
+			"routine": "",
+			"stealthdetails": "(expert)",
+			"data":{},
+			"items":{}
 		},
 		"Summer Hora": {
-			"name": "Summer Hora"
+			"name": "Summer Hora",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Summer Hora Queen": {
-			"name": "Summer Hora Queen"
+			"name": "Summer Hora Queen",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Syarstik Painted-Tiger": {
-			"name": "Syarstik Painted-Tiger"
+			"name": "Syarstik Painted-Tiger",
+			"publicNotes": "",
+			"blurb": "Male awakened smilodon ghost",
+			"data":{},
+			"items":{
+				"Site Bound":{
+					"name": "Site Bound",
+					"description": "<p>Syarstik can't leave Red Cat Cave, and he rarely ever leaves area <strong>E9</strong></p>\n<hr />\n<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>"
+				},
+				"Rejuvenation":{
+					"name": "Rejuvenation",
+					"description": "<p>When Syarstik is destroyed, he re-forms after [[/br 2d4 #Syarstik Rejuvenation]]{2d4 days} within area <strong>E9</strong>, fully healed. Syarstik can be permanently destroyed only by a non-possessed wielder of the <em>Primordial Flame</em>.</p>"
+				},
+				"Awaken Painting":{
+					"name": "Awaken Painting",
+					"description": "<p>Syarstik animates a cave painting within 60 feet for 10 minutes. The painting's movement mimics Syarstik's, so the connection between the ghost and the awakened painting is obvious. Creatures other than Syarstik within 10 feet of the awakened painting are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} because of these eerie movements. Syarstik can make ghostly fangs Strikes at any creature within 10 feet of a cave painting; the target's cover or concealment from the cave painting, rather than from Syarstik, applies to this Strike.</p>\n<p>A creature adjacent to an awakened painting can spend 2 actions to attempt a @Check[type:occultism|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true] or @Check[type:religion|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true] check (to compel the awakened painting to abate) or a @Check[type:crafting|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true] or @Check[type:thievery|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true] check (to thoroughly smear the cave painting). On a success, the painting is destroyed, and the animation ceases. Either way, this activity has the concentrate trait.</p>\n<p>Destroying three awakened paintings quells Syarstik's anger, causing the great cat to cease his attacks.</p>"
+				},
+				"Pounce":{
+					"name": "Pounce",
+					"description": "<p>Syarstik Strides and makes a Strike at the end of that movement. If he began this action @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, he remains hidden until after this ability's Strike.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Syarstik deals an additional 1d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Tar Ooze": {
-			"name": "Tar Ooze"
+			"name": "Tar Ooze",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Tar Pit": {
-			"name": "Tar Pit"
+			"name": "Tar Pit",
+			"disable": "<p>@Check[type:survival|dc:25|name:Reveal the Tar Pit|traits:environmental,hazard] (expert) to disturb the surface and reveal the tar pit</p>",
+			"hazarddescription": "A 15-foot-wide patch of tar covered with dirt and leaves attempts to capture creatures that step onto it.",
+			"reset": "Though the hazard still captures anyone who touches it, the surface doesn't become hidden again until it settles, which takes 24 hours.",
+			"routine": "<p>(1 action) On its initiative, the tar pit pulls down each creature within it, thick tar adhering to the creature's body. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and must hold its breath to avoid suffocation. A creature in the tar pit can attempt a @Check[type:athletics|dc:33] check to @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb} to either raise itself by one step (if it's submerged to its neck or full submerged) or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. Other creatures can Aid the creature, typically by using a rope or similar aid or by attempting to pull the creature out with their own @Check[type:athletics|dc:33] check, with the same results as if the creature attempted the check. In addition to the usual results, a character adjacent to the tar pit who critically fails while Aiding moves into the tar pit. A creature that Climbs out of the tar pit escapes the hazard and lands @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} in an adjacent space.</p>",
+			"stealthdetails": "(expert)",
+			"data":{},
+			"items":{}
 		},
 		"Tar Zombie Mammoth": {
-			"name": "Tar Zombie Mammoth"
+			"name": "Tar Zombie Mammoth",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Tar Zombie Predator": {
-			"name": "Tar Zombie Predator"
+			"name": "Tar Zombie Predator",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Tar Zombie Snatcher": {
-			"name": "Tar Zombie Snatcher"
+			"name": "Tar Zombie Snatcher",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Throttled Blindheim": {
-			"name": "Throttled Blindheim"
+			"name": "Throttled Blindheim",
+			"publicNotes": "<p>Inhabitants of damp, subterranean caves, blindheims resemble stubby humanoids with oversized, frog-like heads and bulbous eyes. Their eyes emit a soft glow at all times, but a blindheim can draw back the heavy membrane that normally covers them to emit an intense light as bright as day. These simple creatures use their lights to draw in or disorient prey, mostly small animals like lizards, rodents, or fish. However, they might go after larger prey if trying to feed their young. When they encounter creatures their own size or larger they retreat, flashing their eyes to facilitate their escape if necessary. They often hunt in pairs or small packs. Using their lights to coordinate from a distance, they slowly close in on the creatures they hunt. One common hunting pattern involves one blindheim diving deep and using its light to chase fish to the surface, while another up above snatches them up and tosses them onto the land to eat later.</p>\n<p>Blindheims make their nests in damp caverns, especially grottoes next to underground lakes or bogs. An ideal nest rests in a cozy cavern with plenty of fungus to eat, a few fish swimming in a lake, and the comforting drip of water from the ceiling. Blindheims prefer to lead quiet and serene lives, and even when first born they emit only the meekest of vocalizations. A blindheim is born shining, and its parents cuddle over it to dim the light so as to avoid attracting predators.</p>\n<p>It's not just animals that endanger blindheims. Underground peoples find the creatures useful and attempt to capture them for specialized purposes. Duergars use them as \"raid frogs,\" placing heavy hoods over blindheims' heads and revealing them suddenly during raids to blind their foes. They sometimes send the creatures along with their slaves that lack darkvision into the mines as a source of light. Drow use them for some of these same purposes, and some nobles have been known to treat the creatures as mere lanterns, having them hoisted to the ceilings of their halls. Neither duergars nor drow take good care of the captive creatures, so blindheims rarely last long in captivity.</p>",
+			"blurb": "",
+			"data":{},
+			"items":{
+				"Crushed Windpipes":{
+					"name": "Crushed Windpipes",
+					"description": "<p>The blindheim can't vocalize and is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} until its neck injuries heal.</p>"
+				},
+				"Spotlight":{
+					"name": "Spotlight",
+					"description": "<p>Bright light shines from the blindheim's eyes in a @Template[type:emanation|distance:30] (also creating dim light to 60 feet). Each creature in the bright light when the blindheim uses this action, or who enters it while the light continues, must attempt a @Check[type:fortitude|dc:18] save. It is then temporarily immune for 1 hour. This light remains until the blindheim dims its eyes by using this action again.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Critical Failure</strong> The creature is Blinded for 1 hour.</p>"
+				}
+			}
 		},
 		"Turkek": {
-			"name": "Turkek"
+			"name": "Turkek",
+			"publicNotes": "",
+			"blurb": "Female human dhampir necromancer",
+			"data":{},
+			"items":{}
 		},
 		"Varilyn \"Vare\" Eridge": {
-			"name": "Varilyn \"Vare\" Eridge"
+			"name": "Varilyn \"Vare\" Eridge",
+			"publicNotes": "",
+			"blurb": "Female halfling ex-crusader",
+			"data":{},
+			"items":{}
 		},
 		"Venexus": {
-			"name": "Venexus"
+			"name": "Venexus",
+			"publicNotes": "",
+			"blurb": "Female young white dragon",
+			"data":{},
+			"items":{}
 		},
 		"Venexus's Chosen": {
-			"name": "Venexus's Chosen"
+			"name": "Venexus's Chosen",
+			"publicNotes": "",
+			"blurb": "Dragonkin monks",
+			"data":{},
+			"items":{}
 		},
 		"Venexus's Wyrmling": {
-			"name": "Venexus's Wyrmling"
+			"name": "Venexus's Wyrmling",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Weykoward": {
-			"name": "Weykoward"
+			"name": "Weykoward",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Yana No-trail": {
-			"name": "Yana No-trail"
+			"name": "Yana No-trail",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Zombie Mammoth": {
-			"name": "Zombie Mammoth"
+			"name": "Zombie Mammoth",
+			"publicNotes": "",
+			"blurb": "",
+			"data":{},
+			"items":{}
 		},
 		"Zombie Megaloceros": {
-			"name": "Zombie Megaloceros"
+			"name": "Zombie Megaloceros",
+			"publicNotes": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
+			"blurb": "Variant megaloceros",
+			"data":{},
+			"items":{}
 		}
 	}
 }
