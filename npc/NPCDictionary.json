@@ -89,7 +89,10 @@
         "sneak attack": "偷袭",
         "immune to all damage while any mirror duplicate is alive":"任一镜像副本存活时，免疫所有伤害",
         "ward contract":"守护契约",
-        "ingested poisons":"摄入毒药"
+        "ingested poisons":"摄入毒药",
+        "critical hits (except slashing)":"重击(除挥砍)",
+        "misfortune effects":"厄运效果",
+        "except mental effects":"除心灵效果"
     },
 
     "Item": {
@@ -117,6 +120,10 @@
             "baseItem": "Full Plate",
             "name": "+2抗力全身甲 Full Plate"
         },
+        "+3 greater resilient full plate":{
+            "name": "+3高等抗力全身甲 Full Plate",
+            "baseItem": "Full Plate"
+        },
         "+1 half plate": {
             "baseItem": "Half Plate",
             "name": "+1半身甲 Half Plate"
@@ -129,7 +136,14 @@
             "baseItem": "Leather Armor",
             "name": "+1皮甲 Leather Armor"
         },
-
+        "+2 leather armor":{
+            "baseItem": "Leather Armor",
+            "name": "+2皮甲 Leather Armor"
+        },
+        "+2 resilient leather armor":{
+            "name": "+2抗力皮甲 Leather Armor",
+            "baseItem": "Leather Armor"
+        },
         "+1 longbow": {
             "baseItem": "longbow",
             "name": "+1长弓 Longbow"
@@ -149,6 +163,10 @@
         "+1 resilient breastplate": {
             "baseItem": "Breastplate",
             "name": "+1抗力胸甲 Breastplate"
+        },
+        "+2 resilient adamantine breastplate":{
+            "name": "+2抗力精金胸甲 Breastplate",
+            "baseItem": "Breastplate"
         },
         "+1 resilient full plate": {
             "baseItem": "Full Plate",
@@ -206,6 +224,10 @@
             "baseItem": "Scale Mail",
             "name": "+1鳞甲 Scale Mail"
         },
+        "+1 resilient scale mail":{
+            "name": "+1抗力鳞甲 Scale Mail",
+            "baseItem": "Scale Mail"
+        },
         "+2 striking katana": {
             "baseItem": "Katana",
             "name": "+2强击打刀 Katana"
@@ -248,6 +270,10 @@
         "flute - musical instrument (handheld)": {
             "baseItem": "Musical Instrument (Handheld)",
             "name": "长笛-乐器(手持) Musical Instrument (Handheld)"
+        },
+        "musical instrument (panpipes)":{
+            "name": "排箫-乐器(手持 )Musical Instrument (Panpipes)",
+            "baseItem": "Musical Instrument (Handheld)"
         },
         "violin":{
             "name": "小提琴 Violin"
@@ -366,6 +392,10 @@
             "name": "被玷污的布莱圣徽(木制) Defiled Religious Symbol of Brigh (Wooden)",
             "baseItem": "Religious Symbol (Silver)"
         },
+        "religious symbol of gozreh (wooden, defaced with demonic runes)":{
+            "name": "被恶魔符文玷污的哥兹莱圣徽(木制) Religious Symbol of Gozreh (Wooden, Defaced with Demonic Runes)",
+            "baseItem": "Religious Symbol (Silver)"
+        },
         "religious symbol of urgathoa":{
             "baseItem": "Religious Symbol (Silver)",
             "name": "厄加图娅的圣徽 Religious Symbol of Urgathoa"
@@ -374,9 +404,33 @@
             "baseItem": "Religious Symbol (Silver)",
             "name": "赛特的圣徽 Religious Symbol of Set"
         },
+        "religious symbol (silver) of norgorber":{
+            "name": "诺格巴的圣徽(银制) Religious Symbol (Silver) of Norgorber",
+            "baseItem": "Religious Symbol (Silver)"
+        },
+        "religious symbol (silver) of aroden":{
+            "name": "奥罗登的圣徽(银制) Religious Symbol (Silver) of Aroden",
+            "baseItem": "Religious Symbol (Silver)"
+        },
+        "religious symbol (silver) of zevgavizeb":{
+            "name": "泽乌伽瓦灾布的圣徽(银制) Religious Symbol (Silver) of Zevgavizeb",
+            "baseItem": "Religious Symbol (Silver)"
+        },
+        "religious symbol (wooden) of zevgavizeb":{
+            "name": "泽乌伽瓦灾布的圣徽(木制) Religious Symbol (Wooden) of Zevgavizeb",
+            "baseItem": "Religious Symbol (Silver)"
+        },
         "religious symbol of nethys":{
             "baseItem": "Religious Symbol (Silver)",
             "name": "内希斯的圣徽 Religious Symbol of Nethys"
+        },
+        "religious symbol of droskar":{
+            "name": "卓斯卡的圣徽 Religious Symbol of Droskar",
+            "baseItem": "Religious Symbol (Silver)"
+        },
+        "religious symbol of dahak (gold)":{
+            "name": "达哈克的圣徽(金制) Religious Symbol of Dahak (Gold)",
+            "baseItem": "Religious Symbol (Silver)"
         },
         "religious text of nethys":{
             "name": "内希斯的教典 Religious Text of Nethys",
@@ -441,6 +495,10 @@
             "baseItem": "Scroll of 6th-level Spell",
             "name": "传送术卷轴(6环) scroll of teleport (level 6)",
             "description": "@Compendium[pf2e.spells-srd.69L70wKfGDY66Mk9]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法，该法术必须出现在你的法术表中。因为是你在施法，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术，神术，异能，原能）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
+        },
+        "scroll of discern location (level 8)":{
+            "name": "感知位置 Discern Location 卷轴 (Level 8)",
+            "description": "@Compendium[pf2e.spells-srd.CeSh8QcVnqP5OlLj]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法，该法术必须出现在你的法术表中。因为是你在施法，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术，神术，异能，原能）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "shoddy breastplate": {
             "baseItem": "Breastplate",
@@ -522,6 +580,14 @@
             "name": "幻象生物 Illusory Creature 魔杖 (等级 2)",
             "description": "@Compendium[pf2e.spells-srd.f8SBoXiXQjlCKqly]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
         },
+        "wand of magic mouth (level 2)":{
+            "name": "魔嘴 Magic Mouth 魔杖 (等级 2)",
+            "description": "@Compendium[pf2e.spells-srd.eIQ86FOXK34HiNLs]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
+        },
+        "wand of ray of enfeeblement (level 2)":{
+            "name": "衰弱射线 Ray of Enfeeblement 魔杖 (等级 2)",
+            "description": "@Compendium[pf2e.spells-srd.J7Y7tl0bbdz7TcCc]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
+        },
         "wineskin": {
             "name": "酒袋 Wineskin"
         },
@@ -533,7 +599,7 @@
             "name": "浮夸帽子 Outrageous Hat"
         },
         "full plate (see death blaze)":{
-            "name": "全身甲(见) Full Plate (see Death Blaze)",
+            "name": "全身甲 Full Plate (see Death Blaze)",
             "baseItem": "Full Plate"
         },
         "amulet":{
@@ -550,7 +616,7 @@
         },
         "pitchfork":{
             "name": "草叉 Pitchfork",
-            "value": "<p>这种像是长矛的三叉武器一般有4尺长。如长矛一样，它可以单手持握或用于投掷。</p>"
+            "description": "<p>这种像是长矛的三叉武器一般有4尺长。如长矛一样，它可以单手持握或用于投掷。</p>"
         },
         "+2 greater resilient breastplate":{
             "name": "+2高等抗力胸甲 +2 greater resilient breastplate",
@@ -562,6 +628,14 @@
         },
         "guildmaster's uniform":{
             "name": "行会首领制服 Guildmaster's Uniform",
+            "baseItem": "Hide Armor"
+        },
+        "+1 hide":{
+            "name": "+1革甲 Hide",
+            "baseItem": "Hide Armor"
+        },
+        "+2 greater resilient hide armor":{
+            "name": "+2高等抗力革甲 Hide Armor",
             "baseItem": "Hide Armor"
         },
         "satchel for holding rocks":{
@@ -601,6 +675,18 @@
         },
         "+1 striking felt shears (as dagger)":{
             "name": "+1 Striking Felt Shears (as Dagger)",
+            "baseItem": "Dagger"
+        },
+        "+1 striking dagger":{
+            "name": "+1强击匕首 Dagger",
+            "baseItem": "Dagger"
+        },
+        "+1 dagger":{
+            "name": "+1匕首 Dagger",
+            "baseItem": "Dagger"
+        },
+        "+2 greater striking dagger":{
+            "name": "+2高等强击匕首 Dagger",
             "baseItem": "Dagger"
         },
         "+1 breastplate":{
@@ -854,9 +940,13 @@
             "name": "I型次元袋 Bag of Holding (Type 1)",
             "baseItem": "Bag of Holding (Type I)"
         },
-        "wand of fispel magic (level 6)":{
+        "wand of dispel magic (level 6)":{
             "name": "解除魔法 Dispel Magic 魔杖 (等级 6)",
             "description": "@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
+        },
+        "wand of crushing despair (level 5)":{
+            "name": "极度绝望 Crushing Despair 魔杖 (等级 5)",
+            "description": "@Compendium[pf2e.spells-srd.GaRQlC9Yw1BGKHfN]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
         },
         "dwarven war axe (broken)":{
             "name": "破损的矮人战斧 Dwarven War Axe (Broken)",
@@ -868,6 +958,10 @@
         },
         "chain mail with palace insignia":{
             "name": "佩有宫殿徽章的链甲衫 Chain Mail with Palace Insignia",
+            "baseItem": "Chain Mail"
+        },
+        "+1 chain mail":{
+            "name": "+1链甲衫 Chain Mail",
             "baseItem": "Chain Mail"
         },
         "wand of wall of force (level 6)":{
@@ -933,6 +1027,14 @@
         "wand of wall of stone (level 5)":{
             "name": "石墙术 Wall of Stone 魔杖 (等级 5)",
             "description": "@Compendium[pf2e.spells-srd.kOa055FIrO9Smnya]\n<hr /><p>这根一英尺长的木棒保有1个法术。其样子通常和该法术息息相关。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上过载</p>\n<hr />\n<p><strong>效果</strong> 你施放对应环级的某法术。</p>\n<p><strong>制造需求</strong> 提供1次对应环级的该法术施法。</p>\n<hr />\n<p><em>注意：如需创造某法术的卷轴或魔杖，将该法术从集合包或者集合包浏览器中拖到背包内即可。</em></p>"
+        },
+        "scroll of fireball (level 3)":{
+            "name": "火球术 Fireball 卷轴 (Level 3)",
+            "description": "@Compendium[pf2e.spells-srd.sxQZ6yqTn0czJxVd]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法，该法术必须出现在你的法术表中。因为是你在施法，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术，神术，异能，原能）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
+        },
+        "scroll of magic missile (level 1)":{
+            "name": "魔法飞弹 Magic Missile 卷轴 (Level 1)",
+            "description": "@Compendium[pf2e.spells-srd.gKKqvLohtrSJj3BM]\n<hr /><p>从卷轴中施法要求你用一只手持握卷轴，并进行一次施法行动，花费法术正常情况下所需要的动作来启动它。</p>\n<p>想要从一张卷轴中施法，该法术必须出现在你的法术表中。因为是你在施法，使用你的法术攻击骰和法术DC。该法术也获得与你的魔法根源相关联的特征（奥术，神术，异能，原能）</p>\n<p>所有物质上的材料成分和花费都在卷轴被创造时提供了，因此你在使用卷轴施法时不需要再次提供。你必须将法术的任何材料成分替换为一个姿势成分。如果该法术需要一个器材，你必须拥有这个器材才能从卷轴施展这个法术。</p>\n<hr />\n<p><em>备注：如果想要创建一个特定法术的卷轴或魔杖，把该法术从合集包里拖到一个PC，NPC，Loot表的背包里即可。</em></p>"
         },
         "infused wyvern poison":{
             "name": "灌注双足飞龙毒 Infused Wyvern Poison",
@@ -1089,6 +1191,10 @@
             "name": "铲子 Shovel",
             "baseItem": "Shoony Shovel"
         },
+        "+1 striking shovel":{
+            "name": "+1强击铲子 Shovel",
+            "baseItem": "Shoony Shovel"
+        },
         "bottled lightning (lesser) (infused)":{
             "name": "灌注次等瓶装闪电 Bottled Lightning (Lesser) (Infused)",
             "baseItem": "Bottled Lightning (Lesser)"
@@ -1144,6 +1250,14 @@
         "tanglefoot bag (lesser) [infused]":{
             "name": "灌注次等绊足包 Tanglefoot Bag (Lesser, Infused)",
             "baseItem": "Tanglefoot Bag (Lesser)"
+        },
+        "tanglefoot bag (greater) (infused)":{
+            "name": "灌注高等绊足包 Tanglefoot Bag (Greater) (Infused)",
+            "baseItem": "Tanglefoot Bag (Greater)"
+        },
+        "tanglefoot bag (moderate) (infused)":{
+            "name": "灌注中等绊足包 Tanglefoot Bag (Moderate) (Infused)",
+            "baseItem": "Tanglefoot Bag (Moderate)"
         },
         "work coat":{
             "name": "工作服 Work Coat",
@@ -1237,6 +1351,10 @@
             "name": "Obsidian Sickle",
             "baseItem": "Sickle"
         },
+        "+1 striking sickle":{
+            "name": "+1强击镰刀 Sickle",
+            "baseItem": "Sickle"
+        },
         "blowgun darts (poisoned)":{
             "name": "吹箭镖(涂毒) Blowgun Darts (Poisoned)",
             "baseItem": "Blowgun Darts"
@@ -1323,6 +1441,10 @@
             "name": "+1强击连发手弩 Repeating Hand Crossbow",
             "baseItem": "Repeating Hand Crossbow"
         },
+        "+2 greater striking hand crossbow":{
+            "name": "+2高等强击手弩 Hand Crossbow",
+            "baseItem": "Hand Crossbow"
+        },
         "+1 striking kukri":{
             "name": "+1强击反曲刀 Kukri",
             "baseItem": "Kukri"
@@ -1338,6 +1460,179 @@
         "+1 striking mace multipistol (integrated)":{
             "name": "+1强击硬头锤多管手枪 Mace Multipistol (融合)",
             "baseItem": "Mace Multipistol"
+        },
+        "+1 greatpick":{
+            "name": "+1巨镐 Greatpick",
+            "baseItem": "Greatpick"
+        },
+        "spellstrike ammunition (type iii) (blindness) (dc 24)":{
+            "name": "III型法袭弹药(目盲术, DC24) Spellstrike Ammunition (Type III)",
+            "baseItem": "Spellstrike Ammunition (Type III)"
+        },
+        "spellstrike ammunition (type i) (magic missile)":{
+            "name": "I型法袭弹药(魔法飞弹) Spellstrike Ammunition (Type I) (Magic Missile)",
+            "baseItem": "Spellstrike Ammunition (Type I)"
+        },
+        "+1 striking sap":{
+            "name": "+1强击闷棍 Sap",
+            "baseItem": "Sap"
+        },
+        "+1 striking main-gauche":{
+            "name": "+1强击格挡匕首 Main-Gauche",
+            "baseItem": "Main-Gauche"
+        },
+        "+1 striking rapier":{
+            "name": "+1强击细剑 Rapier",
+            "baseItem": "Rapier"
+        },
+        "+1 striking crossbow":{
+            "name": "+1强击弩 Crossbow",
+            "baseItem": "Crossbow"
+        },
+        "+1 striking shortsword":{
+            "name": "+1强击短剑 Shortsword",
+            "baseItem": "Shortsword"
+        },
+        "shining bolt":{
+            "name": "闪光矢 Shining Bolt",
+            "baseItem": "Shining Ammunition"
+        },
+        "explosive bolt":{
+            "name": "爆炸矢 Explosive Bolt",
+            "baseItem": "Explosive Ammunition"
+        },
+        "+1 spear":{
+            "name": "+1矛 Spear",
+            "baseItem": "Spear"
+        },
+        "standard skeleton key":{
+            "name": "标准万能钥匙 Standard Skeleton Key",
+            "baseItem": "Skeleton Key"
+        },
+        "+1 striking composite shortbow":{
+            "name": "+1强击复合短弓 Composite Shortbow",
+            "baseItem": "Composite Shortbow"
+        },
+        "+1 rapier":{
+            "name": "+1细剑 Rapier",
+            "baseItem": "Rapier"
+        },
+        "+1 longsword (huge)":{
+            "name": "+1长剑 Longsword (超大型)",
+            "baseItem": "Longsword"
+        },
+        "+1 striking scimitar":{
+            "name": "+1强击弯刀 Scimitar",
+            "baseItem": "Scimitar"
+        },
+        "+1 shortsword":{
+            "name": "+1短剑 Shortsword",
+            "baseItem": "Shortsword"
+        },
+        "+1 striking elven curve blade":{
+            "name": "+1强击精灵曲刃 Elven Curve Blade",
+            "baseItem": "Elven Curve Blade"
+        },
+        "+1 striking cleaver":{
+            "name": "+1强击斩肉刀 Cleaver",
+            "baseItem": "Orc Necksplitter"
+        },
+        "modified spiked chain":{
+            "name": "改良刺链 Modified Spiked Chain",
+            "baseItem": "Spiked Chain"
+        },
+        "expert alchemist's tools":{
+            "name": "专家级炼金工具 Expert Alchemist's Tools",
+            "baseItem": "Alchemist's Tools"
+        },
+        "bravo's brew (moderate) (infused)":{
+            "name": "灌注中等狂徒醇酿 Bravo's Brew (Moderate) (Infused)",
+            "baseItem": "Bravo's Brew (Moderate)"
+        },
+        "quicksilver mutagen (greater) (infused)":{
+            "name": "灌注高等水银突变药剂 Quicksilver Mutagen (Greater) (Infused)",
+            "baseItem": "Quicksilver Mutagen (Greater)"
+        },
+        "choker of elocution (xanmba)":{
+            "name": "雄辩颈圈 Choker of Elocution (桑巴语)",
+            "baseItem": "Choker of Elocution"
+        },
+        "wooden sword":{
+            "name": "木剑 Wooden Sword"
+        },
+        "wooden sickle":{
+            "name": "木镰 Wooden Sickle"
+        },
+        "rapier (bonded item)":{
+            "name": "细剑 Rapier (绑定物品)",
+            "baseItem": "Rapier"
+        },
+        "polished topaz":{
+            "name": "打磨黄玉 Polished Topaz"
+        },
+        "broken greatsword":{
+            "name": "破损巨剑 Broken Greatsword",
+            "baseItem": "Greatsword"
+        },
+        "shoddy blunderbuss":{
+            "name": "劣质喇叭枪 Shoddy Blunderbuss",
+            "baseItem": "Blunderbuss"
+        },
+        "gunpower":{
+            "name": "火药 Gunpower"
+        },
+        "grapeshot":{
+            "name": "霰弹子弹 Grapeshot"
+        },
+        "monocle":{
+            "name": "单片眼镜 Monocle"
+        },
+        "wyvern poison [applied to 4 bolts]":{
+            "name": "双足飞龙毒 Wyvern Poison [涂在4支弩箭上]",
+            "baseItem": "Wyvern Poison"
+        },
+        "acid flask (major) [infused]":{
+            "name": "灌注上等强酸瓶 Acid Flask (Major) [Infused]",
+            "baseItem": "Acid Flask (Major)"
+        },
+        "alchemist's fire (major) [infused]":{
+            "name": "灌注上等炽火胶 Alchemist's Fire (Major) [Infused]",
+            "baseItem": "Alchemist's Fire (Major)"
+        },
+        "bottled lightning (major) [infused]":{
+            "name": "灌注上等瓶装闪电 Bottled Lightning (Major) [Infused]",
+            "baseItem": "Bottled Lightning (Major)"
+        },
+        "frost vial (major) [infused]":{
+            "name": "灌注上等霜冻瓶 Frost Vial (Major) [Infused]",
+            "baseItem": "Frost Vial (Major)"
+        },
+        "+2 greater resilient chain shirt":{
+            "name": "+2高等抗力链甲衫 Chain Shirt",
+            "baseItem": "Chain Shirt"
+        },
+        "bestial mutagen (major) [infused]":{
+            "name": "灌注上等野性突变药剂 Bestial Mutagen (Major) [Infused]",
+            "baseItem": "Bestial Mutagen (Major)"
+        },
+        "juggernaut mutagen (major) [infused]":{
+            "name": "灌注上等主宰突变药剂 Juggernaut Mutagen (Major) [Infused]",
+            "baseItem": "Juggernaut Mutagen (Major)"
+        },
+        "elixir of life (true) [infused]":{
+            "name": "灌注真实生命灵药 Elixir of Life (True) [Infused]",
+            "baseItem": "Elixir of Life (True)"
+        },
+        "gold jewelry":{
+            "name": "黄金珠宝 Gold Jewelry"
+        },
+        "sterling blacksmith's tools":{
+            "name": "纯银铁匠工具 Sterling Blacksmith's Tools",
+            "baseItem": "Artisan's Tools"
+        },
+        "weeping midnight (applied to one arrow)":{
+            "name": "哭泣午夜(涂于一支箭上) Weeping Midnight (applied to one arrow)",
+            "baseItem": "Weeping Midnight"
         }
     },
 
@@ -1432,7 +1727,11 @@
         "empathy link":"情感连接",
         "with spectral thralls only":"with spectral thralls only",
         "any languages spoken by its preserved heads":"任何其保存的大脑所知的语言",
-        "can't speak any language; telepathy":"无法说任何语言;心灵感应"
+        "can't speak any language; telepathy":"无法说任何语言;心灵感应",
+        "can speak pre-recorded phrases only": "只能说预先录制的语句",
+        "(can't speak any languages)":"不能说任何语言",
+        "charau-ka":"查咯语",
+        "ancient osiriani":"古奥斯里昂语"
     },
 
     "Lore": {
@@ -1458,9 +1757,9 @@
         "dragon lore": "龙类学识",
         "dreamlands lore": "幻梦境学识",
         "dungeon lore": "地城学识",
-        "dwelling lore": "被束缚之地学识",
-        "dwelling lore (applies only to the dungeon it lives in)": "被束缚之地学识(仅限其居住的地城)",
-        "dwelling lore (applies to the place the ghost is bound to)": "学识(仅限鬼魂的被束缚地)",
+        "dwelling lore": "居住地学识",
+        "dwelling lore (applies only to the dungeon it lives in)": "居住地学识(仅限其居住的地城)",
+        "dwelling lore (applies to the place the ghost is bound to)": "居住地学识(仅限鬼魂的被束缚地)",
         "elemental lore": "元素学识",
         "engineering lore": "工程学识",
         "elysium lore": "极乐境学识",
@@ -1597,7 +1896,29 @@
         "banking lore":"银行学识",
         "geb lore":"盖布学识",
         "gunpowder lore":"火药学识",
-        "spellscar desert lore":"法痕荒漠学识"
+        "spellscar desert lore":"法痕荒漠学识",
+        "norgorber lore":"诺格巴学识",
+        "alchemy lore":"炼金学识",
+        "gang lore":"帮派学识",
+        "sports lore":"体育学识",
+        "gozreh lore":"哥兹莱学识",
+        "abberton lore":"艾博顿学识",
+        "shoony lore":"舒尼学识",
+        "criminal lore":"犯罪学识",
+        "aroden lore":"奥罗登学识",
+        "cave lore":"洞穴学识",
+        "initmidation":"威吓",
+        "zevgavizeb lore":"泽乌伽瓦灾布学识",
+        "anatomy lore":"解剖学识",
+        "weapons lore":"武器学识",
+        "kintargo lore":"金塔格学识",
+        "droskar lore":"卓斯卡学识",
+        "draconic lore":"龙类学识",
+        "ekujae lore":"艾库雅学识",
+        "aiudara lore":"艾厄达拉学识",
+        "portal lore":"传送门学识",
+        "goblin lore":"地精学识",
+        "katapesh lore":"卡塔佩什学识"
     },
 
     "MagicWeapons": {
@@ -1645,9 +1966,9 @@
             },
             "coldIron": {
                 "order": "prefix",
-                "f": "冷钢",
-                "m": "冷钢",
-                "n": "冷钢"
+                "f": "寒铁",
+                "m": "寒铁",
+                "n": "寒铁"
             },
             "adamantine": {
                 "order": "prefix",
@@ -1996,12 +2317,15 @@
     },
 
     "PerceptionDetails": {
-        "guardian sense": "guardian sense",
+        "guardian sense": "守卫感官",
         "to detect lies": "侦测谎言",
         "to detect lies and illusions": "侦测谎言与幻觉",
         "to hear things": "用于聆听",
         "to seek creatures using hearing": "用听觉搜索生物",
-        "to sense motive": "察言观色"
+        "to sense motive": "察言观色",
+        "keen eyes":"锐眼",
+        "heatsight":"热视觉",
+        "blindsight":"盲视"
     },
 
     "PushVariants": {
@@ -2042,7 +2366,8 @@
         "deactivated by sonic": "音波使其失效",
         "deactivated by vorpal weapons": "斩首武器使其失效",
         "deactivated by chaos, mental or orichalcum": "混乱、心灵或山铜使其失效",
-        "deactivated by bludgeoning":"钝击使其失效"
+        "deactivated by bludgeoning":"钝击使其失效",
+        "deactivated by fire or acid": "火焰或酸液使其失效"
     },
 
     "ResistanceException": {
@@ -2079,7 +2404,9 @@
         "(magic bludgeoning)":"除魔法钝击",
         "magical silver weapons or magical weapons shedding bright light":"除魔法银质武器和散发明亮光的魔法武器",
         "silver or weapons shedding bright light":"除银质武器和散发明亮光的武器",
-        "xcept adamantine or orichalcum":"除精金或山铜"
+        "xcept adamantine or orichalcum":"除精金或山铜",
+        "double vs. non-magical":"此抗力对抗非魔法时翻倍",
+        "force or ghost touch, double resistance vs. non-magical, stone, or effects with the earth trait":"除力场或幽冥；此抗力对非魔法、石头或带有土特征的效果翻倍"
     },
     
     "SaveDetails": {
@@ -2139,7 +2466,7 @@
         "guarded thoughts": "思维防护",
         "lazurite-infused flesh": "lazurite-infused flesh",
         "iron mind": "钢铁意志",
-        "perfect will": "perfect will",
+        "perfect will": "完美意志",
         "+2 status bonus on fortitude saves vs. poison": "对抗毒素时强韧豁免+2状态加值",
         "+3 status to all saves vs. transmutation": "对抗变化系全豁免+3状态加值",
         "-1 status penalty to all saves vs. death effects":"对抗死亡效果全豁免-1状态减值",
@@ -2155,7 +2482,10 @@
         "+2 status to reflex saves vs. traps":"对抗陷阱时反射豁免+2状态加值",
         "+2 status to perception to find traps":"寻找陷阱时察觉+2状态加值",
         "+1 status bonus on saves vs. magic":"对抗魔法时全豁免+1状态加值",
-        "+2 status to saves vs. magic":"对抗魔法是全豁免+2状态加值"
+        "+2 status to saves vs. magic":"对抗魔法时全豁免+2状态加值",
+        "+2 status to will vs. mental":"对抗心灵效果时意志豁免+2状态加值",
+        "+4 status to will vs. mental":"对抗心灵效果时意志豁免+4状态加值",
+        "+1 circumstance to all saves vs. traps":"对抗陷阱时全豁免+1环境加值"
     },
 
     "Sense": {
@@ -2179,7 +2509,7 @@
         "greater electrolocation": "高等电流感应",
         "greater websense": "高等蛛网感知",
         "greed scent": "嗅探贪婪原罪",
-        "guardian sense": "guardian sense",
+        "guardian sense": "守卫感官",
         "hears heartbeats": "聆听心跳",
         "heatsight": "heatsight",
         "host scent": "宿主感知",
@@ -2234,7 +2564,15 @@
         "wrath scent": "嗅探愤怒原罪",
         "sense companion":"感知伙伴",
         "sand vision":"沙尘视觉",
-        "lair sense":"巢穴感知"
+        "lair sense":"巢穴感知",
+        "keen eyes":"锐眼",
+        "heatsight":"热视觉",
+        "blindsight":"盲视",
+        "to detect lies": "侦测谎言",
+        "to detect lies and illusions": "侦测谎言与幻觉",
+        "to hear things": "用于聆听",
+        "to seek creatures using hearing": "用听觉搜索生物",
+        "to sense motive": "察言观色"
     },
 
     "SensePrecision": {
@@ -2367,7 +2705,26 @@
         "to disarm or grapple":"卸武或擒抱",
         "in areas of rusty objects":"堆积生锈物体的区域中",
         "to hide":"躲藏",
-        "to trip and tangle":"摔绊和绊足"
+        "to trip and tangle":"摔绊和绊足",
+        "to create a diversion":"分神",
+        "or swim":"或游泳",
+        "to track a creature at half its hit points or fewer":"追踪生命值为一半或更低的生物",
+        "to tumble through spaces of medium or larger creatures": "翻滚通过中型或更大生物占据的空间",
+        "to jump":"跳跃",
+        "in dim light or darker":"昏暗光或更暗的环境中",
+        "to impersonate while inhabiting a body":"栖息在尸体中乔装时",
+        "while in the swardlands":"草原地中",
+        "in jungles and flower fields":"丛林和花田中",
+        "to craft alchemical items":"制作炼金物品",
+        "to trip":"摔绊",
+        "to weave":"纺织",
+        "to climb in spider or hybrid form":"在蜘蛛或混合形态下攀爬",
+        "to craft traps":"制作陷阱",
+        "to pick a lock":"开锁",
+        "to shove with shield raised":"举盾时推撞",
+        "to leap or swim":"跳跃或游泳",
+        "weaving":"纺织",
+        "to climb in true form or spider form":"在真实形态或蜘蛛形态下攀爬"
     },
 
     "Source": {
@@ -2427,6 +2784,7 @@
         "school spells": "学派法术",
         "wizard school spells": "法师学派法术",
         "cleric domain spells":"牧师领域法术",
+        "cleric domain spell":"牧师领域法术",
         "nature's chosen":"Nature's Chosen",
         "bard composition spells":"诗人组曲法术",
         "monk ki spells":"武僧真气法术",
@@ -2441,7 +2799,9 @@
         "divine spells prepared":"神术准备法术",
         "animal order spells":"动物派系法术",
         "domain spells":"领域法术",
-        "bloodline spells":"血统法术"
+        "bloodline spells":"血统法术",
+        "cleric focus spells":"牧师聚能法术",
+        "arcane spells known":"已知奥术法术"
     },
 
     "SpellOffset": {
@@ -2513,7 +2873,20 @@
         "see right of inspection":"见监察权",
         "self and soul caged creatures only, to the boneyard only":"仅限自身和携带的灵魂，只能传送到骨园",
         "mummies, skeletons, and zombies":"木乃伊、骷髅和僵尸",
-        "earth only":"仅土元素"
+        "earth only":"仅土元素",
+        "see infernal investment":"见地狱投资",
+        "see mirage":"见幻身",
+        "see desert thirst":"见沙之干渴",
+        "visual only":"仅限视觉",
+        "see harmonize":"见和声",
+        "target must be a rodent, serpent, or similar animal considered troublesome by humans":"目标必须为啮齿动物、蛇或被人类视为有害的其他类似动物",
+        "self-only":"仅限自身",
+        "from heartstone":"来自心石",
+        "all alignments simultaneously":"同时侦测所有阵营",
+        "giant cockroach, giant fly or giant tick only":"巨蟑螂、巨苍蝇或巨蜱虫",
+        "ravens only":"仅限渡鸦",
+        "loblobi  can dismiss the spell":"洛洛比河精能解消该法术",
+        "only to move, clean, or soil small smounts of water":"只能移动、清洁和弄脏少量水"
     },
 
     "SpeedDetails": {
@@ -2605,7 +2978,7 @@
         "hoof": "蹄踢 Hoof",
         "horn": "角抵 Horn",
         "horns": "角抵 Horns",
-        "horsechopper": "horsechopper",
+        "horsechopper": "斩马刀 Horsechopper",
         "hurled barb": "hurled barb",
         "javelin": "标枪 Javelin",
         "jaw": "啃咬 Jaw",
@@ -2647,7 +3020,7 @@
         "staff": "木杖 Staff",
         "starknife": "星刃 Starknife",
         "sting": "叮咬 Sting",
-        "stinger": "蛰刺 Stinger",
+        "stinger": "针刺 Stinger",
         "tail": "尾扫 Tail",
         "tailclaw": "尾爪 Tailclaw",
         "talon": "脚爪 Talon",
@@ -2662,6 +3035,7 @@
         "tusk": "獠牙 Tusk",
         "tusks": "獠牙 Tusks",
         "vine": "枝条 Vine",
+        "vines": "枝条 Vines",
         "warhammer": "战锤 Warhammer",
         "web": "蛛网 Web",
         "whip": "鞭子 Whip",
@@ -2869,7 +3243,7 @@
         "bola":"绳球 Bola",
         "dragon jaws":"龙头啃咬 Dragon Jaws",
         "lion jaws":"狮头啃咬 Lion Jaws",
-        "goat horns":"羊头啃咬 Goat Horns",
+        "goat horns":"羊头角抵 Goat Horns",
         "mace multipistol":"硬头锤多管手枪 Mace Multipistol",
         "dragon-mouth pistol":"龙口铳 Dragon-Mouth Pistol",
         "crossbow bolt launcher":"弩箭发射器 Crossbow Bolt Launcher",
@@ -2886,7 +3260,54 @@
         "dwarven scattergun":"矮人霰弹枪 Dwarven Scattergun",
         "jax":"贾克斯 Jax",
         "slide pistol":"排琴手枪 Slide Pistol",
-        "shrapnel":"霰弹 Shrapnel"
+        "shrapnel":"霰弹 Shrapnel",
+        "hook claw":"钩爪 Hook Claw",
+        "war razor":"战剃刀 War Razor",
+        "shield bash":"盾击 Shield Bash",
+        "cleaver":"斩肉刀 Cleaver",
+        "+1 striking falchion":"+1强击弯刃大刀 Falchion",
+        "syringe":"注射器 Syringe",
+        "improvised weapon":"即兴武器 Improvised Weapon",
+        "stone fist":"石拳 Stone Fist",
+        "falling rocks":"落石 Falling Rocks",
+        "unholy spiked gauntlet":"邪恶带刺铁手套 Unholy Spiked Gauntlet",
+        "phantom hand":"魅影之手 Phantom Hand",
+        "acid flask (greater) (infused)":"灌注高等酸液瓶 Acid Flask (Greater) (Infused)",
+        "alchemist's fire (greater) (infused)":"灌注高等炽火胶 Alchemist's Fire (Greater) (Infused)",
+        "frost vial (greater) (infused)":"灌注高等霜冻瓶 Frost Vial (Greater) (Infused)",
+        "tanglefoot bag (greater) (infused)":"灌注高等绊足包 Tanglefoot Bag (Greater) (Infused)",
+        "thrown bottle":"抛掷瓶子 Thrown Bottle",
+        "wooden sword":"木剑 Wooden Sword",
+        "wooden sickle":"木镰 Wooden Sickle",
+        "sharp edge":"锋利边缘 Sharp Edge",
+        "zap":"电弧 Zap",
+        "rusty blade":"锈刃 Rusty Blade",
+        "aqueous fist":"水之拳 Aqueous Fist",
+        "ghostly fangs":"幽魂尖牙 Ghostly Fangs",
+        "ghostly claw":"幽魂之爪 Ghostly Claw",
+        "soul chain":"灵魂锁链 Soul Chain",
+        "acidic needle":"酸针 Acidic Needle",
+        "spectral hand":"幽魂之手 Spectral Hand",
+        "thundering kukri":"雷鸣反曲刀 Thundering Kukri",
+        "cold iron dagger":"寒铁匕首 Cold Iron Dagger",
+        "silver dagger":"银匕首 Silver Dagger",
+        "nail":"指甲 Nail",
+        "staff of fire":"火焰法杖 Staff of Fire",
+        "returning light hammer":"回力轻锤 Returning Light Hammer",
+        "major acid flask":"上等酸液瓶 Major Acid Flask",
+        "major alchemist's fire":"上等炽火胶 Major Alchemist's Fire",
+        "major bottled lightning":"上等瓶装闪电 Major Bottled Lightning",
+        "major frost vial":"上等霜冻瓶 Major Frost Vial",
+        "spear (thrown)":"矛 Spear (投掷)",
+        "corrosive dagger":"酸蚀匕首 Corrosive Dagger",
+        "disrupting cold iron dagger":"瓦解寒铁匕首 Disrupting Cold Iron Dagger",
+        "silver dagger":"银制匕首 Silver Dagger",
+        "thundering maul":"雷鸣大锤 Thundering Maul",
+        "corrosive whip":"酸蚀鞭子 Corrosive Whip",
+        "vine lash":"枝条抽打 Vine Lash",
+        "verdant staff":"翠绿法杖 Verdant Staff",
+        "thrown rock":"投石 Thrown Rock",
+        "telekinetic object":"念动物品 Telekinetic Object"
     },
 
     "Trait": {}
