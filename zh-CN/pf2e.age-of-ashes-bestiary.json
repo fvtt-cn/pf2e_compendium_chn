@@ -1250,33 +1250,119 @@
 		"Ishti": {
 			"name": "Ishti",
 			"data":{},
-			"items":{}
+			"items":{
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>Ishti can take on the appearance of a Medium humanoid. This doesn't change her Speed or her attack and damage modifiers with her Strikes, but it does prevent them from using her cursed touch. Ishti has a fixed humanoid form-they cannot adopt a different appearance each time they use this ability, and the appearance resembles that of their upper torso when in their true form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Matriarch's Caress":{
+					"name": "Matriarch's Caress",
+					"description": "<p>Ishti touches a creature, who must succeed at a @Check[type:will|dc:40] save or become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} (@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} if it critically fails).</p>\n<p>If the target fails additional saves against this ability, the condition value increases by 1 (or 2 if it critically fails) (to a maximum of stupefied 4). This condition value decreases by 1 every 24 hours.</p>"
+				},
+				"Poison Weapon":{
+					"name": "Poison Weapon",
+					"description": "<p>Ishti applies a poison to a piercing or slashing weapon of her choice.</p>"
+				},
+				"Quick Dervish Strike":{
+					"name": "Quick Dervish Strike",
+					"description": "<p>Ishti makes a dagger attack against each enemy within reach. Each attack counts toward her multiple attack penalty, but the penalty does not increase until after all the attacks. The first enemy she damages is subject to matriarch's caress.</p>"
+				}
+			}
 		},
 		"Jahsi": {
 			"name": "Jahsi",
 			"blurb": "Male elf hero",
 			"data":{},
-			"items":{}
+			"items":{
+				"Divine Providence":{
+					"name": "Divine Providence",
+					"description": "<p><strong>Trigger</strong> Jahsi rolls a success on a Will save against an enemy's effect.</p>\n<hr />\n<p><strong>Effect</strong> Jahsi gets a critical success instead.</p>"
+				},
+				"Glimpse of Redemption":{
+					"name": "Glimpse of Redemption",
+					"description": "<p><strong>Trigger</strong> An enemy damages one of Jahsi's allies within 15 feet of him.</p>\n<hr />\n<p><strong>Effect</strong> The foe must choose one: The ally is unharmed by the triggering damage, or the ally gains resistance 10 against the triggering damage, and the enemy is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of its next turn.</p>"
+				},
+				"Woodland Stride":{
+					"name": "Woodland Stride",
+					"description": "<p>Jahsi ignores difficult terrain from plants.</p>"
+				}
+			}
 		},
 		"Kelda Halrig": {
 			"name": "Kelda Halrig",
 			"data":{},
-			"items":{}
+			"items":{
+				"Master Smith":{
+					"name": "Master Smith",
+					"description": "<p>As the most skillful blacksmith in Kovlar, Kelda's abilities far surpass those of typical smiths. She can Craft items as if she were 16th level. Additionally, she knows how to make a vast catalog of items, including numerous uncommon formulas and several rare formulas. The exact formulas she knows can be tailored to fit the needs of each particular group of PCs, but most are for weapons, armor, and other items that could reasonably be made in a forge.</p>"
+				}
+			}
 		},
 		"King Harral": {
 			"name": "King Harral",
 			"data":{},
-			"items":{}
+			"items":{
+				"Counterspell":{
+					"name": "Counterspell",
+					"description": "<p><strong>Trigger</strong> A creature casts a spell King Harral has prepared.</p>\n<hr />\n<p><strong>Effect</strong> The king expends a prepared spell to counter the triggering creature's casting of that same spell. He can then attempt to dispel the triggering spell.</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}, @Check[type:will|dc:33]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Rejuvenation":{
+					"name": "Rejuvenation",
+					"description": "<p>24 hours after King Harral is destroyed, his body rebuilds itself on his throne (or, if the throne is destroyed, on the site where the throne once sat), similarly to how a lich's body is restored via its phylactery. If all of Saggorak's buildings are destroyed, or if heroes perform a great service in saving Saggorak, King Harral loses this ability.</p>"
+				},
+				"Steady Spellcasting":{
+					"name": "Steady Spellcasting",
+					"description": "<p>If another creature's reaction would disrupt King Harral's spell, he attempts a @Check[type:flat|dc:15]. If he succeeds, the spell isn't disrupted.</p>"
+				}
+			}
 		},
 		"Kralgurn": {
 			"name": "Kralgurn",
 			"data":{},
-			"items":{}
+			"items":{
+				"Intimidating Attack of Opportunity":{
+					"name": "Intimidating Attack of Opportunity",
+					"description": "<p>Kralgurn's Attacks of Opportunity not only wound creatures, but also shatter their confidence. If Kralgurn hits and deals damage with an Attack of Opportunity, the target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}, or @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 4} on a critical hit.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Fearsome Brute":{
+					"name": "Fearsome Brute",
+					"description": "<p>When Kralgurn attacks a @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} creature, he gains a circumstance bonus to damage equal to three times the target's frightened value.</p>"
+				}
+			}
 		},
 		"Lazurite-Infused Stone Golem": {
 			"name": "Lazurite-Infused Stone Golem",
 			"data":{},
-			"items":{}
+			"items":{
+				"Golem Antimagic":{
+					"name": "Golem Antimagic",
+					"description": "<p>harmed by <em>cold</em> and <em>positive</em> ([[/r {5d10}]]{5d10 damage}, [[/r {2d8}]]{2d8 damage} from areas or persistent damage); healed by <em>negative</em> (area [[/r {2d8}[healing]]]{2d8 Hit Points}); slowed by <em>earth</em></p>\n<hr />\n<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p>\n<ul>\n<li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li>\n<li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li>\n<li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/r 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li>\n<li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li>\n</ul>"
+				},
+				"Necrotic Field":{
+					"name": "Necrotic Field",
+					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Positive energy effects within the golem's necrotic field deal only half their normal damage. Additionally, all undead within its aura deal an additional [[/r {1d6}[negative]]]{1d6 negative damage} with their natural attacks.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.kjP0J97hhoIhbF3M]{Effect: Necrotic Field}</p>"
+				},
+				"Vulnerable to Stone to Flesh":{
+					"name": "Vulnerable to Stone to Flesh",
+					"description": "<p>A <em>@UUID[Compendium.pf2e.spells-srd.Pr1ruNTbzGn3H9w5]{Stone to Flesh}</em> spell negates the golem's antimagic and its resistance to physical damage for 1 round. A <em>@UUID[Compendium.pf2e.spells-srd.znv4ECL7ZtuiagtA]{Flesh to Stone}</em> spell reverses this effect immediately.</p>"
+				},
+				"Inexorable March":{
+					"name": "Inexorable March",
+					"description": "<p>The golem Strides up to its Speed, pushing back each creature whose space it moves into and damaging them if they try to stop its movement. A creature can bar the way by succeeding at a @Check[type:fortitude|dc:36] save. On a critical success, the resisting creature takes no damage; otherwise, it takes damage equal to that dealt by the golem's fist Strike</p>"
+				},
+				"Necrotic Affliction":{
+					"name": "Necrotic Affliction",
+					"description": "<p><strong>Trigger</strong> The golem hits a slowed creature.</p>\n<hr />\n<p><strong>Effect</strong> The creature must succeed at a @Check[type:fortitude|dc:34] save or become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (or @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} on a critical failure) as the golem's lazurite leeches vital energies and causes wounds to rot.</p>"
+				},
+				"Necrotic Pulse":{
+					"name": "Necrotic Pulse",
+					"description": "<p>Each creature in a @Template[type:emanation|distance:10] must succeed at a @Check[type:fortitude|dc:32|name:Necrotic Pulese] save or take [[/r {1d6}[persistent,necrotic]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Necrotic Damage} and be @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as their flesh and bones temporarily atrophy.</p>\n<p data-visibility=\"owner\">The golem can't use Necrotic Pulse again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Lesser Dragonstorm": {
 			"name": "Lesser Dragonstorm",
@@ -1285,12 +1371,54 @@
 			"routine": "<p>(1 action) On its initiative, the lesser dragonstorm reaches out and blasts all creatures within Alseta's Ring. Affected creatures take [[/r {2d8}[acid] + {2d8}[cold] + {2d8}[fire] + {2d8}[electricity + {2d8}[poison]]]{10d8 damage} (@Check[type:reflex|dc:46|basic:true]), evenly split between acid, cold, fire, electricity, and poison. Creatures that fail their save are pulled 20 feet toward the center of Alseta's Ring (or are knocked prone and pulled 30 feet on a critical failure). After 10 rounds, the lesser dragonstorm is destroyed, but a much greater dragonstorm manifests in the surrounding region-see The Dragonstorm.</p>",
 			"stealthdetails": "<p>(legendary)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Manifest Lesser Dragonstorm":{
+					"name": "Manifest Lesser Dragonstorm",
+					"description": "<p><strong>Trigger</strong> A creature attempts to activate Vengegate</p>\n<hr />\n<p><strong>Effect</strong> The chamber within Alseta's Ring fills with a dragonstorm. Creatures within this area take [[/r {2d8}[acid] + {2d8}[cold] + {2d8}[fire] + {2d8}[electricity + {2d8}[poison]]]{10d8 damage}, equally split between acid, cold, electricity, fire, and poison.</p>"
+				}
+			}
 		},
 		"Lesser Manifestation Of Dahak": {
 			"name": "Lesser Manifestation Of Dahak",
 			"data":{},
-			"items":{}
+			"items":{
+				"Smoke Vision":{
+					"name": "Smoke Vision",
+					"description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the concealed condition from smoke.</p>"
+				},
+				"Attack of Opportunity (Jaws Only)":{
+					"name": "Attack of Opportunity (Jaws Only)",
+					"description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Dragon Heat":{
+					"name": "Dragon Heat",
+					"description": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>[[/r {6d6}[fire]]]{6d6 fire damage} (@Check[type:reflex|dc:42|basic:true|name:Draconic Heat|traits:divine] save)</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}, @Check[type:will|dc:42] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Redirect Energy":{
+					"name": "Redirect Energy",
+					"description": "<p><strong>Trigger</strong> A creature within 100 feet casts an acid, cold, fire, electricity, or poison spell, or such a spell otherwise comes into effect from a source within 100 feet</p>\n<hr />\n<p><strong>Effect</strong> The manifestation of Dahak makes all the choices to determine the targets, destination, or other effects of the spell, as though it were the caster.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>The manifestation of Dahak breathes a blast of dragonstorm energy that deals [[/r {5d6}[acid] + {5d6}[cold] +{5d6}[electricity] +{5d6}[fire] +{5d6}[poison]]]{5d6 acid, 5d6 cold, 5d6 electricity, 5d6 fire, and 5d6 poison damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:46|basic:true|name:Dragonstorm Breath|traits:fire,acid,cold,electricity,poison] save).</p>\n<p>It can't use Dragonstorm Breath again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Draconic Frenzy":{
+					"name": "Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>"
+				},
+				"Draconic Momentum":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges its Breath Weapon whenever it scores a critical hit with a Strike.</p>"
+				},
+				"Manipulate Energy":{
+					"name": "Manipulate Energy",
+					"description": "<p>The manifestation attempts to take control of a magical acid, cold, electricity, fire, or poison spell within 100 feet. If it succeeds at a counteract check (counteract level 10, counteract modifier [[/r 1d20+36 #Manipulate Energy]]{+36}), the original caster loses control of the spell, control is transferred to the manifestation, and the manifestation counts as having Sustained the Spell with this action (if applicable). The manifestation can end the spell instead of taking control, if it chooses.</p>"
+				}
+			}
 		},
 		"Lifeleech Crystal Patches": {
 			"name": "Lifeleech Crystal Patches",
@@ -1298,13 +1426,35 @@
 			"hazarddescription": "<p>Sharp, bloodthirsty crystals make walking through this chamber treacherous.</p>",
 			"stealthdetails": "<p>(expert) or <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{Detect Magic}</em> to note the presence of necromantic energies suffusing the crystals.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Slice Legs":{
+					"name": "Slice Legs",
+					"description": "<p><strong>Trigger</strong> A creature with blood moves through a patch of lifeleech crystals.</p>\n<hr />\n<p><strong>Effect</strong> The crystals twist and slash, animating and cutting into the creature as it walks, dealing [[/r {5d8}[slashing]]]{5d8 slashing damage}. The creature must attempt a @Check[type:reflex|dc:28|traits:damaging-effect,environmental,magical] saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2}.</p>\n<p><strong>Critical Failure</strong> As failure, plus the creature's blood causes fresh growth. A new 10-foot-square patch of lifeleech crystals grows in an adjacent space to the current patch of crystals.</p>"
+				}
+			}
 		},
 		"Living Sap": {
 			"name": "Living Sap",
 			"publicNotes": "<p>The tall sharinga trees of the Mwangi Expanse leak golden sap from their swollen, bulbous trunks, which coagulates when exposed to air. The toxic resin, which has a bitter taste, protects the tree from herbivorous insects and other animals, but in rare cases-usually in areas awash in positive energy or the influence of the First World-the sap gains a life of its own. Such \"living sap\" is a mindless ooze that attempts to smother and engulf just about anything that moves, from the bugs and small beasts that feed on its sharinga tree to larger creatures unlucky enough to stumble upon it. Due to its immunities to most forms of physical damage and its protectiveness of its mother tree, a living ooze is a nuisance to communities that rely on the sap of sharinga trees to make resin, rubber, and glue.</p>\n<p>Jungle-dwelling alchemists such as gripplis cherish the sap of the sharinga tree for its unique adhesive properties. The sap has been used for centuries to create tanglefoot bags, glue, and hard resin. Residue collected from a living sap is even more fascinating from an alchemical standpoint. Though harvesting a living sap is very dangerous, some alchemists will risk death in order to procure these easily worked ingredients. To increase the odds of a successful harvest, such employers are often willing to supply offensive aids such as lesser frost vials; living sap hunters learned long ago that cold energy is effective against these creatures and luckily doesn't harm the harvestable reagents.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Motion Sense 60 feet":{
+					"name": "Motion Sense 60 feet",
+					"description": "<p>Living sap can sense nearby motion through vibration and air movement.</p>"
+				},
+				"Adhesive Body":{
+					"name": "Adhesive Body",
+					"description": "<p>A creature that Strikes a living sap with a melee weapon must succeed at a @Check[type:reflex|dc:24] save or be disarmed of that weapon. If the creature critically fails, the weapon ends up in the living sap's space. A creature that hits a living sap with an unarmed attack must succeed at a @Check[type:reflex|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by the living sap until the end of its next turn.</p>"
+				},
+				"Engulf":{
+					"name": "包卷 Engulf",
+					"description": "<p>@Check[type:reflex|dc:22|traits:damaging-effect] save, [[/r {2d6}[acid]]]{2d6 acid}, @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC 24, Rupture 10</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+				},
+				"Entangling Residue":{
+					"name": "Entangling Residue",
+					"description": "<p>A creature hit by a living sap's pseudopod Strike must succeed at a @Check[type:reflex|dc:24] save or become @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until the end of the living sap's next turn.</p>"
+				}
+			}
 		},
 		"Luminous Ward": {
 			"name": "Luminous Ward",
@@ -1313,23 +1463,131 @@
 			"reset": "<p>The trap resets after 1 hour.</p>",
 			"stealthdetails": "<p>(master)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Radiant Explosion":{
+					"name": "Radiant Explosion",
+					"description": "<p><strong>Trigger</strong> A creature touches the door</p>\n<hr />\n<p><strong>Effect</strong> All creatures within 20 feet of the door are scorched with brilliant light, taking [[/r {20d6}[fire]]]{20d6 fire damage} (@Check[type:reflex|dc:40|basic:true] save). A creature that fails this save is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 hour (or permanently on a critical failure).</p>"
+				}
+			}
 		},
 		"Malarunk": {
 			"name": "Malarunk",
 			"blurb": "Male charau-ka cleric 5",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Cinderclaw Gauntlet":{
+					"name": "Cinderclaw Gauntlet",
+					"description": "<p>[[/r {1d6}[fire]]]{1d6 fire damage} on a critical hit</p>"
+				},
+				"Channel Smite":{
+					"name": "Channel Smite",
+					"description": "<p><strong>Cost</strong> Expend a <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em> or <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em> spell.</p>\n<hr />\n<p>Malarunk siphon's the destructive energies of positive or negative energy through a melee attack and into his foe.</p>\n<p>Make a melee Strike and add the spell's damage to the Strike's damage.</p>\n<p>This is negative damage if Malarunk expended a <em>harm</em> spell or positive damage if he expended a <em>heal</em> spell. The spell is expended with no effect if his Strike fails or hits a creature that isn't damaged by that energy type (such as if he hit a non-undead creature with a <em>heal</em> spell).</p>"
+				},
+				"Shrieking Frenzy":{
+					"name": "Shrieking Frenzy",
+					"description": "<p><strong>Trigger</strong> Malarunk's turn begins.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> Malarunk is @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} until the end of his turn, and can use the extra action to Stride or Strike. Due to his loud wailing while in a shrieking frenzy, Malarunk can't speak and automatically critically fails all Stealth checks.</p>"
+				},
+				"Thrown Weapon Mastery":{
+					"name": "Thrown Weapon Mastery",
+					"description": "<p>When Malarunk throws a weapon, the weapon gains the deadly d6 weapon trait. Furthermore, when Malarunk throws an improvised weapon, it doesn't take the -2 penalty for using an improvised weapon, nor does he take the penalty for using that weapon to make a lethal attack instead of a nonlethal attack.</p>"
+				}
+			}
 		},
 		"Manifestation Of Dahak": {
 			"name": "Manifestation Of Dahak",
 			"data":{},
-			"items":{}
+			"items":{
+				"Imprisoned":{
+					"name": "Imprisoned",
+					"description": "<p>Dahak's manifestation can't physically exit the Adamantine Fen until conditions are right. Planar travel effects do not allow it to escape, nor can they banish it from the Adamantine Fen.</p>"
+				},
+				"Smoke Vision":{
+					"name": "Smoke Vision",
+					"description": "<p>Smoke doesn't impair a red dragon's vision; it ignores the concealed condition from smoke.</p>"
+				},
+				"Attack of Opportunity (Jaws Only)":{
+					"name": "Attack of Opportunity (Jaws Only)",
+					"description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Dragonstorm Aura":{
+					"name": "Dragonstorm Aura",
+					"description": "<p>@Template[type:emanation|distance:10]{10 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>[[/r {2d6}[acid] + {2d6}[cold] +{2d6}[electricity] +{2d6}[fire] +{2d6}[poison]]]{10d6 damage split evenly between acid, cold electricity, fire, and poison}.</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:120]{120 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:45]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Redirect Energy":{
+					"name": "Redirect Energy",
+					"description": "<p><strong>Trigger</strong> A creature within 100 feet casts an acid, cold, fire, electricity, or poison spell, or such a spell otherwise comes into effect from a source within 100 feet</p>\n<hr />\n<p><strong>Effect</strong> The manifestation of Dahak makes all the choices to determine the targets, destination, or other effects of the spell, as though it were the caster.</p>"
+				},
+				"Constrict":{
+					"name": "紧勒 Constrict",
+					"description": "<p>[[/r {2d10+10}[bludgeoning]+{2d6}[fire]]]{2d10+10 bludgeoning damage plus 2d6 fire damage}, @Check[type:fortitude|dc:48|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"Draconic Frenzy":{
+					"name": "Draconic Frenzy",
+					"description": "<p>The dragon makes two claw Strikes and one wing Strike in any order.</p>"
+				},
+				"Draconic Momentum":{
+					"name": "Draconic Momentum",
+					"description": "<p>The dragon recharges its Breath Weapon whenever it scores a critical hit with a Strike.</p>"
+				},
+				"Dragonstorm Breath":{
+					"name": "Dragonstorm Breath",
+					"description": "<p>The manifestation of Dahak breathes a blast of dragonstorm energy that deals [[/r {5d6}[acid] + {5d6}[cold] +{5d6}[electricity] +{5d6}[fire] +{5d6}[poison]]]{5d6 acid, 5d6 cold, 5d6 electricity, 5d6 fire, and 5d6 poison damage} in a @Template[type:cone|distance:60] (@Check[type:reflex|dc:48|basic:true|traits:fire,acid,cold,electricity,poison] save). It can't use Dragonstorm Breath again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Focused Breath Weapon":{
+					"name": "Focused Breath Weapon",
+					"description": "<p>The manifestation breathes a blast of energy that deals [[/r {12d12}]]{12d12 damage} in a @Template[type:line|distance:90] (@Check[type:reflex|dc:44|basic:true] save). The type of damage this Breath Weapon deals can be acid, cold, electricity, fire, or poison, as chosen by the manifestation when it attacks. The manifestation can't use its focused Breath Weapon again for 2 rounds, and the next time it uses its Breath Weapon, it must deal a different type of damage than the previous usage.</p>"
+				}
+			}
 		},
 		"Mengkare": {
 			"name": "Mengkare",
 			"data":{},
-			"items":{}
+			"items":{
+				"Attack of Opportunity (Jaws only)":{
+					"name": "Attack of Opportunity (Jaws only)",
+					"description": "<p>Jaws only</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Contingency":{
+					"name": "Contingency",
+					"description": "<p><strong>Trigger</strong> Mengkare fails a saving throw against a spell.</p>\n<hr />\n<p><strong>Effect</strong> <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th level) attempts to counteract the triggering spell.</p>"
+				},
+				"Extra Reaction":{
+					"name": "Extra Reaction",
+					"description": "<p>Mengkare gains 2 reactions at the start of his turn each round.</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}, @Check[type:will|dc:43] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Golden Luck":{
+					"name": "Golden Luck",
+					"description": "<p><strong>Trigger</strong> Mengkare fails a saving throw.</p>\n<hr />\n<p><strong>Effect</strong> Mengkare improves his result by one degree of success, turning a failure into a success or a critical failure into a normal failure.</p>\n<p>Mengkare can't use this ability again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>Mengkare breathes in one of two ways. He can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<ul>\n<li><strong>Flame</strong> (arcane,evocation,fire); Mengkare breathes a blast of flame in a @Template[type:cone|distance:80] that deals [[/r {24d6}[fire]]]{24d6 fire damage} (@Check[type:reflex|dc:46|basic:true|name:Breath Weapon (Flame)] save).</li>\n<li><strong>Weakening Gas</strong> (arcane,necromancy); The dragon breathes a blast of weakening gas. Each creature within a @Template[type:cone|distance:30] must succeed at a @Check[type:fortitude|dc:46|name:Breath Weapon (Weakening Gas)] save or become @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 4} for 1 minute (or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 5} on a critical failure).</li>\n</ul>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>Mengkare assumes a Medium humanoid form, posing as the human wizard Lamond Breachton.</p>\n<hr />\n<p>The dragon takes on the appearance of any Small or Medium humanoid. This doesn't change its Speed or attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Draconic Frenzy":{
+					"name": "Draconic Frenzy",
+					"description": "<p>Mengkare makes two claw Strikes and one horns Strike in any order</p>"
+				},
+				"Draconic Momentum":{
+					"name": "Draconic Momentum",
+					"description": "<p>When Mengkare scores a critical hit with a strike, he recharges his Breath Weapon.</p>"
+				},
+				"Explosive Breath":{
+					"name": "Explosive Breath",
+					"description": "<p>When Mengkare uses Breath Weapon, he can expel an explosive orb of flame instead of a cone. When he does, he fires the orb at the corner of a square within 60 feet. The orb immediately detonates and deals [[/r {24d6}[fire]]]{24d6 fire damage} (@Check[type:reflex|dc:48|basic:true|name:Explosive Orb|traits:fire] save) to all creatures within a @Template[type:burst|distance:30]. Creatures that critically fail their save catch on fire and take [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}.</p>"
+				}
+			}
 		},
 		"Mental Scream Trap": {
 			"name": "Mental Scream Trap",
@@ -1337,7 +1595,12 @@
 			"hazarddescription": "<p>A psychic scream disorients creatures in the area.</p>",
 			"stealthdetails": "<p>(master)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Psychic Screech":{
+					"name": "Psychic Screech",
+					"description": "<p><strong>Trigger</strong> A creature enters the marked area</p>\n<hr />\n<p><strong>Effect</strong> A psychic wail affects all creatures within 10 feet of the marked area, requiring them to attempt a @Check[type:will|dc:41] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round, then stunned 2 when the paralysis ends.</p>\n<p><strong>Critical Failure</strong> The target is paralyzed for 4 rounds. At the end of each of its turns, it can attempt a new Will save to reduce the remaining duration by 1 round, or end it entirely on a critical success.</p>"
+				}
+			}
 		},
 		"Mud Spider": {
 			"name": "Mud Spider",
@@ -1345,53 +1608,218 @@
 			"publicNotes": "<p>Tarantulas are ambush predators, but will attack prey in the open.</p>",
 			"blurb": "Variant giant tarantula",
 			"data":{},
-			"items":{}
+			"items":{
+				"Mudwalking":{
+					"name": "Mudwalking",
+					"description": "<p>The mud spiders ignore difficult terrain from mud.</p>"
+				},
+				"Giant Tarantula Venom":{
+					"name": "Giant Tarantula Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>Maximum Duration</strong> 8 rounds</p>\n<p><strong>Stage 1</strong> 1d6 poison (1 round)</p>\n<p><strong>Stage 2</strong> 1d6 poison, flat-footed, and clumsy 1 (1 round)</p>\n<p><strong>Stage 3</strong> 1d6 poison, flat-footed, and clumsy 2 (1 round)</p>\n<p><strong>Stage 4</strong> 1d6 poison and paralyzed (1 round).</p>"
+				},
+				"Hair Barrage":{
+					"name": "Hair Barrage",
+					"description": "<p>The tarantula flicks its legs, flinging spiky hairs in a @Template[type:cone|distance:15]. This deals [[/r {4d6}[piercing]]]{4d6 piercing damage} with a @Check[type:reflex|dc:25|basic:true] save.</p>"
+				}
+			}
 		},
 		"Nketiah": {
 			"name": "Nketiah",
 			"data":{},
-			"items":{}
+			"items":{
+				"Arborean Arm":{
+					"name": "Arborean Arm",
+					"description": "<p>This magical limb functions in all ways as Nketiah's original arm. The arm can extend a vine to attack in melee, and using the arm, Nketiah has a climb Speed of 20 feet and Climbs as if she had master proficiency in Athletics. Finally, the arm's primal magic allows her to use the spells from her verdant staff as if she had all of those spells on her spell list.</p>"
+				},
+				"Woodland Elf":{
+					"name": "Woodland Elf",
+					"description": "<p>Nketiah can move at half her Speed on a successful Climb check and at full Speed on a critical success. She can always @UUID[Compendium.pf2e.actionspf2e.ust1jJSCZQUhBZIz]{Take Cover} within forest terrain to gain cover, even if she's not next to a wall or obstacle.</p>"
+				},
+				"Woodland Stride":{
+					"name": "Woodland Stride",
+					"description": "<p>Nketiah ignores difficult terrain caused by plants.</p>"
+				}
+			}
 		},
 		"Promise Guard": {
 			"name": "Promise Guard",
 			"data":{},
-			"items":{}
+			"items":{
+				"Attack of Opportunity":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>A Promise Guard can use Attack of Opportunity when a creature within her reach uses a concentrate action, in addition to its normal trigger. They can disrupt triggering concentrate actions, and they disrupt actions on any hit, not just a critical hit.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Promise Guard Stance":{
+					"name": "Promise Guard Stance",
+					"description": "<p>A promise guard always has her shield raised as if they had used the Raise a Shield action, as long as they meet that action's requirements.</p>"
+				},
+				"Shield Warden":{
+					"name": "Shield Warden",
+					"description": "<p>A Promise guard can use their Shield Block reaction to prevent damage to an adjacent ally.</p>"
+				},
+				"Shield Shove":{
+					"name": "Shield Shove",
+					"description": "<p>The Promise guard makes a Strike with their longsword, then attempts to push the target back. If the Strike hits, the target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of the guard's next turn, and the guard can automatically Shove the target, with the same benefits as the Shove action (including the critical success effect if the Strike was a critical hit). If the guard moves to follow the target, this movement doesn't trigger reactions. In addition, if the target has to stop moving because it would hit an object, it takes damage equal to the guard's Strength modifier.</p>"
+				},
+				"Sudden Charge":{
+					"name": "Sudden Charge",
+					"description": "<p>The Promise guard Strides up to double their Speed. If the guard ends their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
+				}
+			}
 		},
 		"Racharak": {
 			"name": "Racharak",
 			"blurb": "Female charau-ka guardian",
 			"data":{},
-			"items":{}
+			"items":{
+				"Tail Swipe":{
+					"name": "Tail Swipe",
+					"description": "<p><strong>Trigger</strong> A creature within reach of Racharak's tail uses a move action or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> Racharak makes a tail Strike at the creature with a -2 penalty. If it hits, she disrupts the creature's action.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>Racharak breathes flames that deals [[/r {9d6}[fire]]]{9d6 fire damage} to all creatures in a @Template[type:cone|distance:30] (@Check[type:reflex|dc:26|basic:true] save).</p>\n<p>She can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}</p>"
+				},
+				"Draconic Frenzy":{
+					"name": "Draconic Frenzy",
+					"description": "<p>Racharak makes two claw Strikes and one bite Strike in any order.</p>"
+				},
+				"Shrieking Frenzy":{
+					"name": "Shrieking Frenzy",
+					"description": "<p><strong>Trigger</strong> Racharak's turn begins.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> Racharak is @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} until the end of her turn, and can use the extra action to Stride or Strike. While in the frenzy, Racharak can't speak and automatically critically fails Stealth checks, due to her loud wailing.</p>"
+				},
+				"Thrown Weapon Mastery":{
+					"name": "Thrown Weapon Mastery",
+					"description": "<p>When Racharak throws a weapon, the weapon gains the deadly d6 weapon trait. When she throws an improvised weapon, she doesn't take the -2 penalty for using an improvised weapon, nor does she take the penalty for using that weapon to make a lethal attack instead of a nonlethal attack.</p>"
+				}
+			}
 		},
 		"Renali": {
 			"name": "Renali",
 			"data":{},
-			"items":{}
+			"items":{
+				"Anadi Venom":{
+					"name": "Anadi Venom",
+					"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {1d6}[poison]]]{1d6 poison damage}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} (1 round)</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>Renali changes into her true form, spider form, or human form. The above statistics assume Renali is in her true form. While in their human form, Renali can't use her fangs attack and loses her climb Speed. When in spider form, she can't use weapons.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Spin Silk":{
+					"name": "Spin Silk",
+					"description": "<p>By spending several minutes, an anadi can produce silk to craft items made of cloth. A single anadi can produce enough silk in a day to craft a single garment.</p>"
+				}
+			}
 		},
 		"Rinnarv Bontimar": {
 			"name": "Rinnarv Bontimar",
 			"data":{},
-			"items":{}
+			"items":{
+				"Attack of Opportunity":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>Rinnarv can use Attack of Opportunity when a creature within his reach uses a concentrate action, in addition to its normal trigger. He can disrupt triggering concentrate actions, and he disrupts actions on any hit, not just a critical hit.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Blood Magic":{
+					"name": "Blood Magic",
+					"description": "<p>When Rinnarv casts one of his bloodline spells or a spell from his list of granted spells, he creates an aura that protects himself or one of the targets of the spell. The aura grants a +1 status bonus to saving throws for 1 round.</p>"
+				},
+				"Spell Strike":{
+					"name": "Spell Strike",
+					"description": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Trigger</strong> Rinnarv begins to Cast a Spell that targets at least 1 creature</p>\n<hr />\n<p><strong>Effect</strong> Rinnarv channels his spell through his blade. He makes a Strike with his blade against a target within reach. If the Strike is successful, the target is automatically subject to the spell. If the spell required an attack roll, the target is hit. If the spell required a saving throw, the target takes a -4 status penalty to its saving throw instead. If the spell could target multiple creatures, it targets only the creature Rinnarv hit with his Strike.</p>"
+				}
+			}
 		},
 		"Saggorak Poltergeist": {
 			"name": "Saggorak Poltergeist",
 			"data":{},
-			"items":{}
+			"items":{
+				"Site Bound":{
+					"name": "Site Bound",
+					"description": "<p>The Saggorak poltergeist cannot travel more than 120 feet from area <strong>F2</strong>.</p>"
+				},
+				"Natural Invisibility":{
+					"name": "Natural Invisibility",
+					"description": "<p>A poltergeist is naturally @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}. It becomes visible only when it uses Frighten.</p>"
+				},
+				"Rejuvenation":{
+					"name": "Rejuvenation",
+					"description": "<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+				},
+				"Telekinetic Defense":{
+					"name": "Telekinetic Defense",
+					"description": "<p><strong>Trigger</strong> A creature approaches within 10 feet of the poltergeist.</p>\n<hr />\n<p><strong>Effect</strong> The poltergeist makes a telekinetic object Strike against the triggering creature.</p>"
+				},
+				"Frighten":{
+					"name": "Frighten",
+					"description": "<p><strong>Requirement</strong> The poltergeist must be @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}.</p>\n<hr />\n<p><strong>Effect</strong> The poltergeist becomes visible, appearing as a skeletal, ghostlike humanoid. Each creature within 30 feet must attempt a @Check[type:will|dc:33] save, becoming @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a failure. On a critical failure, it's also @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} for as long as it's frightened. On a success, the creature is temporarily immune for 1 minute.</p>\n<p>At the start of its next turn, the poltergeist becomes invisible again.</p>"
+				},
+				"Telekinetic Storm":{
+					"name": "Telekinetic Storm",
+					"description": "<p>The poltergeist telekinetically throws numerous small and jagged chunks of stone rubble, either spreading them out among multiple foes or directing them at one target.</p>\n<ul>\n<li>When this effect is spread out among multiple foes, the poltergeist makes a telekinetic object Strike at a -2 penalty against each creature within 30 feet. These count as one attack for the poltergeist's multiple attack penalty, and the penalty doesn't increase until after all the attacks.</li>\n<li>When this effect has only one target, the poltergeist makes a telekinetic object Strike against the target, and the damage increases to 6d12. It deals [[/r 2d12 #Telekinetic Storm Failure]]{2d12 damage} on a failure, and no damage on a critical failure.</li>\n</ul>"
+				}
+			}
 		},
 		"Scarlet Triad Agent": {
 			"name": "Scarlet Triad Agent",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Ruby and Sapphire ring":{
+					"name": "Ruby and Sapphire ring"
+				},
+				"Efficient Capture":{
+					"name": "Efficient Capture",
+					"description": "<p><strong>Requirements</strong> The Scarlet Triad agent has manacles in hand and is adjacent to a creature.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent attempts to bind the creature's wrists or ankles with the manacles. If they succeed at an attack roll with a [[/r 1d20+24]]{+24 modifier} against the target's AC, they apply the manacles.</p>"
+				},
+				"Precise Debilitations":{
+					"name": "Precise Debilitations",
+					"description": "<p><strong>Trigger</strong> The Scarlet Triad agent's Strike hits a flat-footed creature and deals damage.</p>\n<hr />\n<p><strong>Effect</strong> The Scarlet Triad agent applies one of the following debilitations to the creature, which lasts until the end of their next turn.</p>\n<ul>\n<li><em>Brow Gash</em> The target becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}.</li>\n<li><em>Deep Cut</em> The target takes an additional [[/r 2d6[precision]]]{2d6 precision damage} from the Scarlet Triad agent's attacks.</li>\n<li><em>Hamstring</em> The target takes a -10-foot status penalty to its Speeds.</li>\n<li><em>Low Blow</em> The target becomes @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1}.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.otUESSH8BDdPKHtb]{Effect: Hamstring}</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>[[/r {3d6}[precision]]]{3d6 precision damage}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Weapon Trick":{
+					"name": "Weapon Trick",
+					"description": "<p>When the Scarlet Triad agent critically succeeds at an attack roll against a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} creature, they apply the critical specialization effect for the weapon they are wielding.</p>"
+				}
+			}
 		},
 		"Scarlet Triad Boss": {
 			"name": "Scarlet Triad Boss",
 			"data":{},
-			"items":{}
+			"items":{
+				"Return Fire":{
+					"name": "Return Fire",
+					"description": "<p><strong>Trigger</strong> The Scarlet Triad boss is the target of a physical ranged attack</p>\n<hr />\n<p><strong>Effect</strong> They gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses and the boss has their shortbow in hand, the boss Strikes the attacker with their shortbow.</p>"
+				},
+				"Darting Shot":{
+					"name": "Darting Shot",
+					"description": "<p>The Scarlet Triad boss <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">Feints</span> a target, Strides up to their Speed, and makes a Strike with their shortbow in any order. They can Feint any target within 30 feet when using this ability.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>[[/r {4d6}[precision]]]{4d6 additional precision damage}</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+				}
+			}
 		},
 		"Scarlet Triad Enforcer": {
 			"name": "Scarlet Triad Enforcer",
 			"data":{},
-			"items":{}
+			"items":{
+				"Stunning Retort":{
+					"name": "Stunning Retort",
+					"description": "<p><strong>Trigger</strong> An enemy critically fails a Strike against the enforcer</p>\n<hr />\n<p><strong>Effect</strong> The enforcer Strikes with their sap against that enemy if they're within reach; otherwise, the enforcer attempts an Intimidation check to <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">Demoralize</span> that enemy.</p>"
+				},
+				"Dual Abuse":{
+					"name": "Dual Abuse",
+					"description": "<p>The enforcer uses the pain of one attack as an opening to deal a devastating second blow. The enforcer makes two attacks against the same target: a scimitar Strike and sap Strike (in any order) or two composite shortbow Strikes. If both attacks hit, the second attack deals an additional [[/r {3d6}]]{3d6 damage}, and the enforcer gives the target one of the following conditions until the end of the enforcer's next turn: @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}, @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}, or @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}.</p>\n<p>This counts as two attacks when calculating the enforcer's multiple attack penalty, but the penalty doesn't increase until after both attacks.</p>"
+				},
+				"Efficient Capture":{
+					"name": "Efficient Capture",
+					"description": "<p><strong>Requirements</strong> The enforcer has manacles in hand and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> The enforcer attempts to bind the creature's wrists or ankles with the manacles. If the enforcer succeeds at an attack roll with a [[/r 1d20+30 #Manacles]]{+30 modifier} against the target's AC, they apply the manacles.</p>"
+				}
+			}
 		},
 		"Scarlet Triad Mage": {
 			"name": "Scarlet Triad Mage",
