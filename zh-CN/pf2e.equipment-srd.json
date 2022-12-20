@@ -11637,6 +11637,78 @@
         "Belt of Good Health": {
             "name": "健康腰带 Belt of Good Health",
             "description": "<p>当你穿上这条腰带的时候，它的银扣开始发光，光芒慢慢扩散到中间的心形珠宝上。这能增加你当前生命值和最大生命值4点。如果你脱下腰带，你的最大生命值和当前生命值都会立即减少4点。</p>"
+        },
+        "Hex Blaster": {
+            "name": "灾厄爆裂枪 Hex Blaster",
+            "description": "<p>这把<em>+2强击可怖重型火绳枪</em>由扭曲变形的木头制成，上面刻有怪异符文。 当武器开火时，爆炸声有时听起来像是恶毒女巫的咯咯笑声。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你用劫数将至的灾厄来折磨一个你能看见的生物。灾厄持续1分钟。只要生物中了灾厄，只要你用灾厄爆裂枪射出的子弹击中它，该生物必须在你的回合结束时尝试一次@Check[type:will|dc:28]豁免；无论你击中它多少次，该目标都只尝试一次意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。它还会受到[[/r {1d6}[persistent,mental]]]{1d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续心灵伤害}。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。它还会受到[[/r {2d6}[persistent,mental]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续心灵伤害}。</p>\n<p><strong>大失败</strong> 生物陷入惊惧2和1分钟的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。生物还受到[[/r {4d6}[persistent,mental]]]{4d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续心灵伤害}和诅咒劫数将至（impending doom）的影响。如果目标因为受到此次打击伤害或持续心灵伤害而陷入@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，它会失去意识一整天直到诅咒被解除。在一天之后，如果生物依然失去意识，它必须尝试@Check[type:fortitude|dc:28|traits:death,incapacitation]豁免，否则死亡；此效果带有死亡和失能特征。</p>"
+        },
+        "Lawbringer's Lasso": {
+            "description": "<p>这根附魔套索是一张@UUID[Compendium.pf2e.equipment-srd.T8EopYZLT137CsdW]{网 Net}，能用来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}最多30尺远的生物。目标生物必须通过@Check[type:athletics|dc:18|traits:action:force-open]检定@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}套索，或尝试DC 18的@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}。它永远和一根30尺绳索相连。当你用执法者的套索擒抱目标时，如果目标带有混乱特征，则你的擒抱检定有+1物品加值。如果你在使用执法者的套索擒抱混乱生物时掷出大失败，你得到失败的结果。</p>",
+            "name": "执法者的套索 Lawbringer's Lasso"
+        },
+        "Redeemer's Pistol": {
+            "description": "<p>这把<em>+2强击决斗手枪</em>由银色的钢制成，散发着耀眼的光芒。你可以选择使用救赎者手枪进行非致命攻击而不会受到-2减值；如果你如此做，该次攻击会造成1d6额外心灵伤害。你还可以召唤这把枪中的救赎之魂来审判你的敌人。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个30内的敌人对你造成伤害</p>\n<hr />\n<p><strong>效果</strong> 枪中的保护性灵魂在敌人心中投射出救赎的愿景。敌人必须选择以下选项之一。</p>\n<ul>\n<li>你不受触发伤害的影响。</li>\n<li>你针对触发的伤害，获得等同于2+你等级的全伤害抗力。在伤害效果结算之后，敌人陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直到它的下个回合结束，并且还受到[[/r {4}[persistent,good]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续善良伤害}。</li>\n</ul>",
+            "name": "救赎者手枪 Redeemer's Pistol"
+        },
+        "Blast Lance": {
+            "description": "<p>该种武器是一把+1 @UUID[Compendium.pf2e.equipment-srd.OPMzQdM9rZznMGhW]{长枪 Lance}，尖端有一个枪口，允许使用者在一次成功的近战攻击后击发枪膛中的火药。枪管沿着长枪向前延伸，让你可以比从设计上看起来更容易地将弹药装入武器的底部。重新给爆裂长枪上膛需要两个动作。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">f</span> 命令</p>\n<p><strong>触发</strong> 你用爆裂长枪打击敌人；</p>\n<p><strong>需求</strong> 爆裂长枪已经上膛；</p>\n<hr />\n<p><strong>效果</strong> 你通过武器发射火药爆裂，造成[[/r {2d8}[fire]]]{2d8火焰伤害}。敌人必须尝试@Check[type:fortitude|dc:18]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受火药爆裂的影响，并且爆裂长枪哑火并卡住。</p>\n<p><strong>成功</strong> 目标受到一半伤害。</p>\n<p><strong>失败</strong> 目标受到全伤害并被击退5尺。你能在这之后行走一次，但你必须以同样的方向和距离移动。</p>\n<p><strong>大失败</strong> 目标受到双倍伤害并被击退10尺。你能在这之后行走一次，但你必须以同样的方向和距离移动。</p>",
+            "name": "爆裂长枪 Blast Lance"
+        },
+        "Blast Lance (Greater)": {
+            "description": "<p>该种武器是一把+1强击@UUID[Compendium.pf2e.equipment-srd.OPMzQdM9rZznMGhW]{长枪 Lance}，尖端有一个枪口，允许使用者在一次成功的近战攻击后击发枪膛中的火药。枪管沿着长枪向前延伸，让你可以比从设计上看起来更容易地将弹药装入武器的底部。重新给爆裂长枪上膛需要两个动作。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">f</span> 命令</p>\n<p><strong>触发</strong> 你用爆裂长枪打击敌人；</p>\n<p><strong>需求</strong> 爆裂长枪已经上膛；</p>\n<hr />\n<p><strong>效果</strong> 你通过武器发射火药爆裂，造成[[/r {3d8}[fire]]]{3d8火焰伤害}。敌人必须尝试@Check[type:fortitude|dc:24]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受火药爆裂的影响，并且爆裂长枪哑火并卡住。</p>\n<p><strong>成功</strong> 目标受到一半伤害。</p>\n<p><strong>失败</strong> 目标受到全伤害并被击退5尺。你能在这之后行走一次，但你必须以同样的方向和距离移动。</p>\n<p><strong>大失败</strong> 目标受到双倍伤害并被击退10尺。你能在这之后行走一次，但你必须以同样的方向和距离移动。</p>",
+            "name": "高等爆裂长枪 Blast Lance (Greater)"
+        },
+        "Erraticannon": {
+            "description": "<p>这门+1强击@UUID[Compendium.pf2e.equipment-srd.4LJEpZ2HkCu9BvHI]{手炮 Hand Cannon}上面添加了如此之多的配件和改修，以至于都认不出它是一门火器了。手炮的顶部有一个大料斗，可以将任何种类的弹药（包括箭、弩矢、弹丸或火器弹药）都装进去，将弹药转化成狂野的破坏性能量爆炸。每当你使用武器攻击时，投掷[[/r 1d8]]来决定伤害类型——胡逼炮本次打击的所有伤害都会转化为对应的伤害类型。此外，再投掷一次1d8，胡逼炮还会造成第二种伤害类型的[[/r 1d6]]额外伤害。</p>\n<table border=\"1\">\n<tbody>\n<tr>\n<td style=\"text-align: center;\"><strong>d8</strong></td>\n<td style=\"text-align: center;\"><strong>伤害类型</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">1</td>\n<td style=\"text-align: center;\">酸液</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">2</td>\n<td style=\"text-align: center;\">寒冷</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">3</td>\n<td style=\"text-align: center;\">电击</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">4</td>\n<td style=\"text-align: center;\">火焰</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">5</td>\n<td style=\"text-align: center;\">音波</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">6</td>\n<td style=\"text-align: center;\">钝击</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">7</td>\n<td style=\"text-align: center;\">穿刺</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">8</td>\n<td style=\"text-align: center;\">挥砍</td>\n</tr>\n</tbody>\n</table>\n<p><strong>启动</strong><span class=\"pf2-icon\">2</span></p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将胡逼炮设置为最大功率发射，对@Template[type:cone|distance:30]范围内所有生物造成[[/r {1d6}[acid]+{1d6}[cold]+{1d6}[electricity]+{1d6}[fire]+{1d6}[sonic]+{1d6}[bludgeoning]+{1d6}[piercing]+{1d6}[slashing]]]{1d6酸液、1d6寒冷、1d6电击、1d6火焰、1d6音波、1d6钝击、1d6穿刺和1d6挥砍伤害}（@Check[type:reflex|dc:25|basic:true]豁免）。</p>",
+            "name": "胡逼炮 Erraticannon"
+        },
+        "Reducer Round": {
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种子弹是橡胶制成的，上面印着一只惊讶地抽搐的小蚂蚁的形象。子弹命中后不会造成伤害，取而代之的是，目标必须尝试@Check[type:fortitude|dc:19]豁免。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标被缩小到超小型，持续[[/r 1d4 #rounds]]轮。它的触及变为0尺，并且持续时间内陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>大失败</strong> 目标被缩小到超小型，持续1分钟。它的触及变为0尺，并且持续时间内陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。</p>",
+            "name": "缩小弹药 Reducer Round"
+        },
+        "Star Grenade (Greater)": {
+            "description": "<p>这种不同寻常的火药炸弹通常在外壳上有一枚四角星的标志，每当它击中目标时，会造成十字形爆炸。当你投掷一枚星辰手雷时，布置两条垂直交叉的@Template[type:line|distance:25]{25尺线形}，两条直线都以目标为中心点，并且直线沿着竖直方向而不是斜线方向延伸。这两条线范围内的生物，除了目标以外，都会受到溅射伤害（一般对于中型目标来说，溅射范围有8个方格）。任何改变或调整溅射区域形状的大小或效果，例如炼金术士的专长溅射扩展，对星辰手雷不适用。</p>\n<p>你的攻击骰有+2物品加值。炸弹造成[[/r {3d8}[fire]]]{3d8火焰伤害}和[[/r {3}[splash]]]{3溅射伤害}。</p>",
+            "name": "高等星辰手雷 Star Grenade (Greater)"
+        },
+        "Star Grenade (Lesser)": {
+            "description": "<p>这种不同寻常的火药炸弹通常在外壳上有一枚四角星的标志，每当它击中目标时，会造成十字形爆炸。当你投掷一枚星辰手雷时，布置两条垂直交叉的@Template[type:line|distance:25]{25尺线形}，两条直线都以目标为中心点，并且直线沿着竖直方向而不是斜线方向延伸。这两条线范围内的生物，除了目标以外，都会受到溅射伤害（一般对于中型目标来说，溅射范围有8个方格）。任何改变或调整溅射区域形状的大小或效果，例如炼金术士的专长溅射扩展，对星辰手雷不适用。</p>\n<p>炸弹造成[[/r {1d8}[fire]]]{1d8火焰伤害}和[[/r {1}[splash]]]{1溅射伤害}。</p>",
+            "name": "次等星辰手雷 Star Grenade (Lesser)"
+        },
+        "Star Grenade (Major)": {
+            "description": "<p>这种不同寻常的火药炸弹通常在外壳上有一枚四角星的标志，每当它击中目标时，会造成十字形爆炸。当你投掷一枚星辰手雷时，布置两条垂直交叉的@Template[type:line|distance:25]{25尺线形}，两条直线都以目标为中心点，并且直线沿着竖直方向而不是斜线方向延伸。这两条线范围内的生物，除了目标以外，都会受到溅射伤害（一般对于中型目标来说，溅射范围有8个方格）。任何改变或调整溅射区域形状的大小或效果，例如炼金术士的专长溅射扩展，对星辰手雷不适用。</p>\n<p>你的攻击骰有+3物品加值。炸弹造成[[/r {4d8}[fire]]]{4d8火焰伤害}和[[/r {4}[splash]]]{4溅射伤害}。</p>",
+            "name": "上等星辰手雷 Star Grenade (Major)"
+        },
+        "Star Grenade (Moderate)": {
+            "description": "<p>这种不同寻常的火药炸弹通常在外壳上有一枚四角星的标志，每当它击中目标时，会造成十字形爆炸。当你投掷一枚星辰手雷时，布置两条垂直交叉的@Template[type:line|distance:25]{25尺线形}，两条直线都以目标为中心点，并且直线沿着竖直方向而不是斜线方向延伸。这两条线范围内的生物，除了目标以外，都会受到溅射伤害（一般对于中型目标来说，溅射范围有8个方格）。任何改变或调整溅射区域形状的大小或效果，例如炼金术士的专长溅射扩展，对星辰手雷不适用。</p>\n<p>你的攻击骰有+1物品加值。炸弹造成[[/r {2d8}[fire]]]{2d8火焰伤害}和[[/r {2}[splash]]]{2溅射伤害}。</p>",
+            "name": "中等星辰手雷 Star Grenade (Moderate)"
+        },
+        "Corpse Compass": {
+            "description": "<p>这种骨制罗盘由暴死的智慧生物的骨头制成，在定位尸体时出奇地有效。如果你知道自己正在@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Tracking}一个已经死亡的生物，你可以利用罗盘的特质为你提供优势，让你在生存检定中获得+2物品加值。否则，它就如同一个普通的@UUID[Compendium.pf2e.equipment-srd.wob6DB1FFdWs0mbp]{罗盘 Compass}。</p>",
+            "name": "尸体罗盘 Corpse Compass"
+        },
+        "Corpsecaller Round": {
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>这枚枪弹完全由黑曜石制成，上面刻着发丝般细的符文。当被启动的唤尸枪弹击中目标时，被击中的生物会受到墓地的召唤。这会造成[[/r {4d10}[negative]]]{4d10负能量伤害}，@Check[type:fortitude|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 敌人不受影响。</p>\n<p><strong>成功</strong> 敌人受到一半伤害。</p>\n<p><strong>失败</strong> 敌人受到全伤害并且@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。如果敌人在接下来的24小时内死亡，它的尸体将会被负能量位面束缚，让它容易被复活为不死生物。对尸体使用唤起死灵（create undead）仪式的生物在仪式的主要检定和次要检定中有+2环境加值。</p>\n<p><strong>大失败</strong> 类似失败，除了敌人受到双倍伤害并且@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。</p>",
+            "name": "唤尸枪弹 Corpsecaller Round"
+        },
+        "Skull Bomb": {
+            "description": "<p>这个装置有人类头骨大小，完全有金属外壳和发条装置构成，它可以很方便的插在人类骨骼的颈椎上。当执行<em>@UUID[Compendium.pf2e.spells-srd.c3b6LdLlQDPngNIb]{唤起死灵 Create Undead}</em>仪式时，你可以用这枚炸弹替换生物原本的头骨。为了做到这一点，目标必须为中型，并且具有类人生物特征。目标生物只能以这种方式携带1枚头颅炸弹。该生物获得以下能力。</p>\n<hr />\n<p>投掷头颅 <span class=\"pf2-icon\">2</span> (操作)</p>\n<p>该生物卸下其头颅炸弹并将不稳定的炸弹投掷到30尺内的某个地点。头颅爆炸，对@Template[type:burst|distance:15]范围内所有生物造成[[/r {7d6}[fire]]]{7d6火焰伤害}（@Check[type:reflex|dc:24|basic:true]豁免）。头颅被永久毁灭并且无法再次利用，投掷头颅的生物陷入永久@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}，并且无头。</p>",
+            "name": "头颅炸弹 Skull Bomb"
+        },
+        "Effervescent Decoction": {
+            "name": "冒泡汤剂 Effervescent Decoction",
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>据说，这种充满气泡的药水是从法力废土上收集的风蒸馏而成的。在喝下药水后的1小时内，你可以在自愿的生物或无人看管的物体周围嗝出一串泡泡，让他们被一枚巨大的粉红色的泡泡包住。每分钟1次，你可以使用两个交互动作嗝出一个泡泡，这类似于<em>@UUID[Compendium.pf2e.spells-srd.fI20AVwOzJMHXRdo]{浮空术 Levitate}</em>的效果，但是你无法控制泡泡；它会每轮自行上升10尺。泡泡足够坚固，可以抵御轻微的碰撞或强风，但如果物品或生物受到任何伤害，泡泡就会破裂，导致漂浮效果结束。如果被泡泡包住的生物使用移动动作，而不是乘坐在泡泡内，则泡泡也会破裂。</p>"
+        },
+        "Mutagenic Renovator": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>这种泥浆混合物据说是由液化的突变生物的鳞片制成的。在你喝下药水后的1小时内，你的皮肤会变形并抵抗某种能量伤害。当你第一次喝下药水时，从酸液、寒冷、电击、火焰或音波伤害中选择一种。药剂一开始会让你获得该类型的伤害的5点抗力。每当你受到上述伤害类型中非当前种类的能量伤害时，你的皮肤会发生变异，导致你失去药剂一开始给你的能量抗力，转而获得最近一次受到的能量伤害类型的抗力，并且药水持续时间减少10分钟。抗力只在你受到伤害后才会改变，所以不适用于会改变抗力的这次伤害。</p>",
+            "name": "适应性抗力药水 Mutagenic Renovator"
+        },
+        "Blast Suit": {
+            "name": "防爆服 Blast Suit",
+            "description": "<p>由重型钢板铆接而成，这套+1抗力@UUID[Compendium.pf2e.equipment-srd.Gq1cZWSKOtJhKd2p]{全身甲 Full Plate}专门用于防止突然爆炸。然而，这种额外的安全防护是以牺牲移动力为代价的。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">r</span> 命令</p>\n<p><strong>触发</strong> 你受到一个需要你尝试反射豁免的区域效果影响，或者你将要受到散射武器的溅射伤害；</p>\n<hr />\n<p><strong>效果</strong> 防爆服锁死成为一道坚固的屏障，保护你不受爆炸伤害，但任何情况下都无法离开位置。<br />你被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，你针对区域效果的反射豁免有+2环境加值，并且你针对区域效果和散射武器的溅射效果获得5点抗力（这不会伤害防爆服）。只要防爆服处于锁定状态，这些效果就会持续生效。你可以使用一个交互动作来解锁它。</p>"
+        },
+        "Mana-Rattler Liniment": {
+            "name": "法力响尾蛇乳液 Mana-Rattler Liniment",
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>根据报道和埃梅莱特自己的营销宣传，这款乳液是从稀有的法力响尾蛇中提取的，这种成分可以抵御毒素和疾病。当使用时，你可以尝试反制目前正在折磨你的毒素或疾病效果。药水的反制等级为5级，反制调整值为+15。你还会长出蛇类外观，拥有尖牙和鳞片皮肤。在1小时内，你获得尖牙非武装攻击，造成1d6穿刺伤害和1点毒素伤害。</p>"
         }
     }
 }
