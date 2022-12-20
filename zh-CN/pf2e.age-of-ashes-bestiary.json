@@ -1833,18 +1833,68 @@
 			"reset": "<p>The trap resets after 1 minute.</p>",
 			"stealthdetails": "<p>(master)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Cataclysmic Rain":{
+					"name": "Cataclysmic Rain",
+					"description": "<p><strong>Trigger</strong> A creature enters the marked area</p>\n<hr />\n<p><strong>Effect</strong> Fiery spears make one Strike against each living creature within 5 feet of the marked area.</p>"
+				},
+				"Personal Quake":{
+					"name": "Personal Quake",
+					"description": "<p>A creature struck by a seismic spear is @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 3} for 1 round as their body shakes uncontrollably. On a critical hit, a target must succeed at a @Check[type:fortitude|dc:39] save or be @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} for 1 minute, or permanently on a critical failure.</p>"
+				},
+				"strike-Seismic Spear":{
+					"name": "Seismic Spear",
+					"description": "<p>No MAP applies to strikes made by seismic spear attacks</p>"
+				},
+				"No MAP":{
+					"name": "No MAP",
+					"description": "<p>The Seismic Spear Strikes do not apply a MAP.</p>"
+				}
+			}
 		},
 		"Skeletal Hellknight": {
 			"name": "Skeletal Hellknight",
 			"data":{},
-			"items":{}
+			"items":{
+				"Command Skeletons":{
+					"name": "Command Skeletons",
+					"description": "<p>The skeletal Hellknight can direct the actions of the nearby skeleton guards, commanding them to perform tactics such as flanking foes and focusing their attacks on specific targets. As long as the skeletal Hellknight is active and commanding the skeletons, they gain the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.hFtNbo1LKYCoDy2O]{Attack of Opportunity} reaction.</p>"
+				},
+				"Invoke Reckoning":{
+					"name": "Invoke Reckoning",
+					"description": "<p><strong>Trigger</strong> The skeletal Hellknight hits a foe with a Strike.</p>\n<hr />\n<p><strong>Effect</strong> The skeletal Hellknight causes the creature struck to endure the pain of an Order of the Nail's reckoning-a rite of mortification Hellknights of that order use to focus their minds. The creature struck feels as if nails are being driven into their body, and must succeed at a @Check[type:will|dc:17|traits:damaging-effect] save or be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} from the pain. On a critical failure, the pain manifests as actual puncture wounds, dealing an additional [[/r {2d6}[piercing]]]{2d6 points of piercing damage} to the victim.</p>"
+				}
+			}
 		},
 		"Soulbound Ruin": {
 			"name": "Soulbound Ruin",
 			"publicNotes": "<p>Those who tread in ruined places sometimes speak of a sense that a supernatural presence is there alongside them, as if the spirits of the dead were watching intently. Such presences can be very real, often taking the form of ghosts or other shades of undead that cannot let go of their attachment to the Material Plane. But sometimes, instead of manifesting as distinct spirits, the souls of the dead infuse the very stone and mortar around them. When enough souls attach themselves to a single place-be it a home, crypt, or castle-it can take on a life of its own, becoming a soulbound ruin.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Edifice":{
+					"name": "Edifice"
+				},
+				"Impede":{
+					"name": "Impede",
+					"description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Trigger</strong> A creature within the soulbound ruin uses an action with the move trait.</p>\n<hr />\n<p><strong>Effect</strong> The soulbound ruin reacts violently to stop the creature's movement, shooting spikes, throwing bricks, or otherwise impeding the target. The target must succeed at a @Check[type:reflex|dc:35] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				},
+				"Vulnerability to Exorcism":{
+					"name": "Vulnerability to Exorcism",
+					"description": "<p>When a soulbound ruin fails a saving throw against a spell that would banish tormented spirits or manipulate souls, such as <em>@UUID[Compendium.pf2e.spells-srd.bay4AfSu2iIozNNW]{Banishment}</em> or <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em>, instead of experiencing the listed effects, it takes [[/r 10]]{10 damage} per spell level.</p>"
+				},
+				"Collapse Ceiling":{
+					"name": "Collapse Ceiling",
+					"description": "<p>The ruin collapses up to three 10-foot by 10-foot sections of its ceiling. The ruin takes [[/r {10}]]{10 damage} per section it collapses, and it can't collapse the same section until it has been repaired.</p>\n<p>Each creature in one of these areas takes [[/r 8d10[bludgeoning]]]{8d10 bludgeoning damage} with a @Check[type:reflex|dc:35|basic:true] save. On a failed save, the creature is also @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} under the rubble until it Escapes (DC 33).</p>"
+				},
+				"Pervasive Attacks":{
+					"name": "Pervasive Attacks",
+					"description": "<p>A soulbound ruin's edifice Strikes can target any creature inside the ruin.</p>"
+				},
+				"Self-Repair":{
+					"name": "Self-Repair",
+					"description": "<p>The ruin can spend 10 minutes repairing itself to regain up to [[/r {30}[healing]]]{30 Hit Points}. If the ruin is interrupted during this time, it loses its focus and the repair fails.</p>\n<p>This ability functions even if the ruin is reduced to 0 HP, unless a <em>@UUID[Compendium.pf2e.spells-srd.Dbd5W6G8U2vzWolN]{Consecrate}</em> ritual has been performed to purify the building, in which case the soulbound ruin is destroyed. This ritual must be dedicated to a good deity or a deity with a strong opposition to undead, such as Pharasma.</p>"
+				}
+			}
 		},
 		"Spiked Doorframe": {
 			"name": "Spiked Doorframe",
@@ -1852,36 +1902,170 @@
 			"hazarddescription": "<p>Spikes lance out of the doorframe to skewer anyone who attempts to open the door.</p>",
 			"stealthdetails": "<p>(trained)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Spikes":{
+					"name": "钉刺 Spikes",
+					"description": "<p><strong>Trigger</strong> The door is opened.</p>\n<hr />\n<p><strong>Effect</strong> The trap makes an attack against the creature that opened the door.</p>"
+				}
+			}
 		},
 		"Spiritbound Aluum": {
 			"name": "Spiritbound Aluum",
 			"publicNotes": "<p>Whereas most aluums are animated by the souls of volunteers loyal to Katapesh, the Pactmasters created a handful of more capable (and deadly) aluums powered by the souls of a dozen or more dangerous criminals. These spiritbound aluums are rarely used as peacekeepers, instead serving as assassins, elite bodyguards, or riot control during times of martial law.</p>\n<p>A spiritbound aluum has a dull blue crystalline focus that stores constituent souls, surrounded by a host of smaller gems used for trapping souls the Pactmasters wish to deny from entering the Great Beyond. Spiritbound aluums rarely use this soul-binding ability except when instructed by their masters. However, the murderous or embittered souls within the aluum sometimes exert control and willfully consume a departing soul either out of malice or to incorporate it into the construct's core. If not relieved of its trapped souls in a timely manner, a spiritbound aluum can develop enough will to overcome its masters' orders and even awaken to full sentience. These rogue aluums typically lose the mindless trait, are evil, have an Intelligence modifier of -2 or higher, and gain several skills with bonuses ranging from +25 to +32.</p>\n<hr />\n<p>Aluums are powerful metal and stone constructs originally created by the Pactmasters to maintain order in Katapesh. The construction of each aluum includes the creation of an <em>@UUID[Compendium.pf2e.equipment-srd.bU731I8njNmSAQhQ]{Aluum Charm}</em>, a brass pendant set with a blue crystal designed to control that particular construct. The charm constructed at the same time as an aluum is called its linked charm.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Aluum Antimagic":{
+					"name": "Aluum Antimagic",
+					"description": "<p>Spiritbound aluums are immune to spells and magical abilities, with two exceptions. A negative spell or magical ability grants a spiritbound aluum the @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} condition until the end of its next turn instead of its normal effects. A positive spell or ability makes a spiritbound aluum @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of its next turn instead of its normal effects.</p>"
+				},
+				"Obliteration Beam":{
+					"name": "Obliteration Beam",
+					"description": "<p><strong>Requirements</strong> The spiritbound aluum has bound a soul using its <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em> innate spell</p>\n<hr />\n<p><strong>Effect</strong> The spiritbound aluum transforms the captured soul's essence into raw magical energy, channeling the spirit into a beam that deals [[/r {20d6}[force]]]{20d6 force damage} in a @Template[type:line|distance:30] (@Check[type:reflex|dc:38|basic:true] save). The remaining fragments of the captured soul are released to the Great Beyond.</p>\n<p>The spiritbound aluum can't use Obliteration Beam again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Paralyzing Force":{
+					"name": "Paralyzing Force",
+					"description": "<p>A creature damaged by the Spirtibound Aluum's fist Strike must succeed at a @Check[type:fortitude|dc:35] save or become @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for [[/r 1d4 #minutes]]{1d4 minutes} and falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				},
+				"Soul Binder":{
+					"name": "Soul Binder",
+					"description": "<p>When a spiritbound aluum uses its <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em> innate spell, it binds the soul into its central crystal instead of the normal material component. The crystal can hold up to 60 souls.</p>\n<p>When encountered, a spiritbound aluum's crystal typically contains [[/br 1d6 #souls]]{1d6 souls}.</p>"
+				},
+				"Soul Shriek":{
+					"name": "Soul Shriek",
+					"description": "<p>The aluum enforcer emits a keening wail in a @Template[type:cone|distance:15] that deals [[/r {16d6}[sonic]]]{16d6 sonic damage} (@Check[type:fortitude|dc:27|basic:true] save). A creature that fails its save is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}, or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure.</p>\n<p>The aluum can't use Soul Shriek again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				}
+			}
 		},
 		"Talamira": {
 			"name": "Talamira",
 			"data":{},
-			"items":{}
+			"items":{
+				"Site Bound (Jewelgate Way Station)":{
+					"name": "Site Bound (Jewelgate Way Station)",
+					"description": "<p>Jewelgate Way Station</p>\n<hr />\n<p>A typical ghost can stray only a short distance from where it was killed or the place it haunts. A typical limit is 120 feet. Some ghosts are instead bound to a room, building, item, or creature that was special to it rather than a location.</p>"
+				},
+				"Rejuvenation":{
+					"name": "Rejuvenation",
+					"description": "<p>Talamira's ghost is bound to the way station by the presence of the wailing crystals; if this hazard is deactivated or destroyed, Talamira sighs in relief as her memories are restored-this burst of psychic energy suffuses all PCs in the area, granting them access to the ancient tradition of magic she once followed, that of the crystal keeper archetype. A moment later, Talamira fades away, her soul moving on to the afterlife.</p>\n<hr />\n<p>When a ghost is destroyed, it re-forms after [[/br 2d4 #days]]{2d4 days} within the location it's bound to, fully healed. A ghost can be permanently destroyed only if someone determines the reason for its existence and sets right whatever prevents the spirit from resting.</p>"
+				},
+				"Resonant Wail":{
+					"name": "Resonant Wail",
+					"description": "<p>Talamira releases an anguish-filled cry of despair. All creatures within 30 feet must attempt a @Check[type:will|dc:33] save to resist.</p>\n<p>Talamira can't use Resonant Wail for [[/br 1d4 #Resonant Wail Recharge]]{1d4 rounds}.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature wails with anguish for 3 rounds. The shrieks resonate within the room's wailing crystals, giving the crystals a +2 status bonus on attack rolls against that creature during this time.</p>\n<p><strong>Failure</strong> As success, but the creature is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 minute as it sobs uncontrollably. If the creature is already slowed 1 by crushing despair, it is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} as long as it's under both effects simultaneously.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} from its overwhelming sadness.</p>"
+				},
+				"Telekinetic Crystalline Assault":{
+					"name": "Telekinetic Crystalline Assault",
+					"description": "<p>Talamira fills the air with whirling crystals, dealing [[/r {7d6}[slashing]]]{7d6 slashing damage} to all creatures in a @Template[type:emanation|distance:30] (@Check[type:reflex|dc:33|basic:true] save).</p>"
+				}
+			}
 		},
 		"Tarrasque, The Armageddon Engine": {
 			"name": "Tarrasque, The Armageddon Engine",
 			"publicNotes": "<p>The most powerful spawn is Tarrasque, whose legend spread across countless worlds beyond Golarion. Its destruction of the nation of Ninshabur and its march across Avistan in -632 AR culminated in the destruction of the flying Shory city of Kho before this spawn was sealed away in a remote cavern.</p>\n<hr />\n<p>The spawn are titanic terrors of immense size and strength that live only to destroy. Tarrasque and Xotani are but two of Rovagug's spawn. Others, including Chemnosit (the Monarch Worm), Kothogaz (the Dance of Disharmony), and Volnagur (the End-Singer) hold places of horror in the history of various regions, but the most famed is Ulunat (the Unholy First), whose beetle-like carcass remains sprawled in Sothis, the capital of Osirion.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Carapace":{
+					"name": "Carapace",
+					"description": "<p>Tarrasque is immune to cones, lines, rays, and magic missile spells. These effects bounce harmlessly off its scales.</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:300]{300 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:39] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Inexorable":{
+					"name": "Inexorable",
+					"description": "<p>Tarrasque recovers from the @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} and @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} conditions at the end of its turn. It's also immune to penalties to its Speeds, and it ignores difficult terrain and greater difficult terrain.</p>"
+				},
+				"Reactive":{
+					"name": "Reactive",
+					"description": "<p>Tarrasque gains 3 reactions each round. It can still use only one reaction per trigger.</p>"
+				},
+				"Reflect":{
+					"name": "Reflect",
+					"description": "<p><strong>Trigger</strong> Tarrasque's carapace deflects an effect.</p>\n<hr />\n<p><strong>Effect</strong> The effect is redirected back at its source.</p>"
+				},
+				"Destructive Frenzy":{
+					"name": "Destructive Frenzy",
+					"description": "<p>Tarrasque makes a jaws Strike, two claw Strikes, two horn Strikes, and one tail Strike in any order.</p>"
+				},
+				"Fast Swallow":{
+					"name": "Fast Swallow",
+					"description": "<p><strong>Trigger</strong> Tarrasque Grabs a creature with its jaws</p>\n<hr />\n<p><strong>Effect</strong> Tarrasque uses Swallow Whole.</p>"
+				},
+				"Spine Volley":{
+					"name": "Spine Volley",
+					"description": "<p>Tarrasque flings spines in a @Template[type:cone|distance:120], dealing [[/r {3d10+20}[piercing]]]{3d10+20 piercing damage} to each creature in the area (@Check[type:reflex|dc:53|basic:true] save).</p>\n<p>Tarrasque can't use Spine Volley again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Swallow Whole":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>Huge, [[/r {10d6+12}[bludgeoning]]]{10d6+12 bludgeoning} plus [[/r {10d6}[acid]]]{10d6 acid}, Rupture 50</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				},
+				"Trample":{
+					"name": "践踏 Trample",
+					"description": "<p>Huge or smaller, claw, @Check[type:reflex|dc:49|basic:true] save. When Tarrasque Tramples, it can Stride up to triple its Speed.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Teyam Ishtori": {
 			"name": "Teyam Ishtori",
 			"publicNotes": "<p>Demiliches are formed when a lich, through carelessness or by accident, loses its phylactery. As years pass, the lich's body crumbles to dust, leaving only the skull as the seat of its necromantic power. The lich enters a sort of torpor, its mind left wandering the planes in search of ever greater mysteries. The lich gradually loses the ability to cast spells and its magic items slowly subsume into its new form. Negative energy concentrates around the skull, causing some of its bones and teeth to petrify with power and turn into blight crystals. The resulting lich skull, embedded with arcane gemstones and suffused with palpably powerful magic, forms a creature called a demilich.</p>\n<p>Despite its near-constant state of inactivity, a demilich grows restless from time to time, especially when living creatures draw near. Only then does the demilich's hunger for life stir once more, causing it to lash out with terrifying bursts of power in attempts to consume vital energy. Unlike an ordinary lich, should the demilich's skull be destroyed, its bond to the world is permanently severed, although some theorize that even then it is not truly slain. Rather, some think that once the demilich is destroyed, its foul and tormented mind is finally free to wander the planes and find new ways to enact its will. For the short-lived common folk of the Material Plane, this is good enough, though eons later a demilich may reappear in the region it once inhabited with a new—and even more insidious—agenda.</p>\n<hr />\n<p>To gain more time to complete their goals, some desperate spellcasters pursue immortality by embracing undeath. After long years of research and the creation of a special container called a phylactery, a spellcaster takes the final step by imbibing a deadly concoction or casting dreadful incantations that transform them into a lich. While most undertake this drastic plan to continue their work or fulfill some long-term plan, others become liches because they fear death or to fulfill some malevolent purpose, such as long-sworn revenge. Regardless, the result is permanent and carries with it the potential to alter history—both that of those who transform themselves and of the countless mortals that will inevitably suffer as a result of a lich's new power.</p>\n<p>After its metamorphosis, a lich often finds some quiet place to dwell, typically protected by a variety of guardians and traps, for two primary purposes. First, a lich requires solitude in order to plan its elaborate schemes, and second, few mortals (if any) deign to interact with these legendarily corrupt necromancers. One reason begets the other, as the self-imposed isolation of a lich often drives the lich insane, further solidifying its separation from civilization. The longer a lich lives, the more meticulous a planner it becomes, secreting itself within a labyrinth of deadly puzzles, misdirection, and monsters. A lich's servants and guardians are absolutely loyal, either due to their nature (such as constructs or other undead) or as a result of compulsion using powerful magic. Many liches go mad, in time, and the nature of a lich's lair is a good indicator of the undead's current mental state.</p>\n<p>For all the protections it arrays around itself, a lich will go to greater lengths to guard its phylactery, as it knows that the destruction of this magical container spells doom for the lich. A lich is notoriously difficult to bargain with, though the threat of damaging its phylactery is a sure way to gain the upper hand in such a negotiation.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Torpor":{
+					"name": "Torpor",
+					"description": "<p>Typically, a demilich is inert when encountered and doesn't take actions until its <em>@UUID[Compendium.pf2e.spells-srd.WG91Z5TiR6oO5FOw]{Contingency}</em> reaction has been triggered.</p>"
+				},
+				"Contingency":{
+					"name": "Contingency",
+					"description": "<p>Teyam has one permanent 8th-level <em>@UUID[Compendium.pf2e.spells-srd.WG91Z5TiR6oO5FOw]{Contingency}</em> spell in effect with one of its arcane innate spells of 5th level or lower as the companion spell- typically <em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{Dimension Door}</em>.</p>\n<p><strong>Trigger</strong> While Teyam is in torpor, a creature disturbs Teyam's remains, touches her treasure, or casts a spell that would affect Teyam.</p>\n<hr />\n<p><strong>Effect</strong> Teyam ends torpor, rolls initiative, and gains the effect of her contingency's companion spell. The contingency resets after 24 hours.</p>"
+				},
+				"Countermeasures":{
+					"name": "Countermeasures",
+					"description": "<p><strong>Trigger</strong> Teyam's turn begins.</p>\n<hr />\n<p><strong>Effect</strong> Teyam casts <em>@UUID[Compendium.pf2e.spells-srd.zR67Rt3UMHKC5evy]{Blink}</em>, <em>@UUID[Compendium.pf2e.spells-srd.A2JfEKe6BZcTG1S8]{Fly}</em>, <em>@UUID[Compendium.pf2e.spells-srd.OOELvfkTedBMlWtq]{Spell Turning}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.uqlxMQQeSGWEVjki]{True Seeing}</em> on itself. It usually chooses spell turning unless it already has that spell in effect.</p>"
+				},
+				"Telekinetic Whirlwind":{
+					"name": "Telekinetic Whirlwind",
+					"description": "<p>@Template[type:emanation|distance:20]{20 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>Telekinetic whirlwind activates when Teyam ends torpor. Loose debris in the area whip up into a whirling storm. This obscures vision, making any creature in the area concealed, and causes creatures in its area (except Teyam) to treat all creatures as concealed. Any creature other than Teyam that enters or begins its turn in the aura takes [[/r {2d12}[bludgeoning]]]{2d12 bludgeoning damage}.</p>"
+				},
+				"Demilich Eye Gems":{
+					"name": "Demilich Eye Gems",
+					"description": "<p>A demilich has gemstone eyes that glow when the demilich is active. Each eye contains an 8th-level spell that targets one creature (usually one eye has <em>@UUID[Compendium.pf2e.spells-srd.Oj1PJBMQD9vuwCv7]{Maze}</em> and the other <em>@UUID[Compendium.pf2e.spells-srd.BKIet436snMNcnez]{Polar Ray}</em>). The demilich can Activate an eye. This uses the number of spellcasting actions the spell requires, and also requires command and envision components.</p>\n<p>When the demilich casts a spell from a gemstone eye, that eye stops glowing for [[/br 1d4 #rounds]]{1d4 rounds}, during which time that eye's spell can't be used. Occasionally, one or both of the two <em>@UUID[Compendium.pf2e.equipment-srd.Q4o8pEdxSY0bnJQZ]{Demilich Eye Gems}</em> can be harvested from a destroyed demilich as magic items.</p>"
+				},
+				"Devour Soul":{
+					"name": "Devour Soul",
+					"description": "<p><strong>Requirements</strong> A soul has been trapped in one of Teyam's blight quartz gems for 24 hours.</p>\n<hr />\n<p><strong>Effect</strong> Teyam consumes the soul. The soul is utterly destroyed, and Teyam regains HP equal to double the creature's level.</p>"
+				},
+				"Mental Magic":{
+					"name": "Mental Magic",
+					"description": "<p>Teyam can replace all material and somatic components for casting spells with verbal components, and can replace all Interact components for activating magic items with envision components.</p>"
+				},
+				"Staff Gems":{
+					"name": "Staff Gems",
+					"description": "<p>Teyam long ago absorbed the spells from a staff into gemstone nodules embedded in her skull, with larger nodules representing higher-level spells. She can cast any of the spells as though it were Activating the staff, and regains 1 charge per 4 hours spent in torpor, to a maximum of 10 charges. Teyam has the spells from a @UUID[Compendium.pf2e.equipment-srd.6m9niDjhA6tBfp5x]{Staff of Power}</p>"
+				},
+				"Trap Soul":{
+					"name": "Trap Soul",
+					"description": "<p><strong>Frequency</strong> once per day per gem</p>\n<hr />\n<p><strong>Effect</strong> Ten blight quartz gemstones on Teyam's skull can trap the souls of the living. The Activated gem casts <em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{Bind Soul}</em>. This bind soul can target and affect a dying creature instead of a corpse. The dying creature can attempt a @Check[type:fortitude|dc:43] save; if it succeeds, it doesn't die and its soul is not trapped but it's @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} (or is unaffected entirely on a critical success). When the soul of a creature gets trapped, the creature's body swiftly turns to dust.</p>\n<p>The gemstones work like the black sapphires used in bind soul, except that they can hold creatures of up to 17th level and have a value of 200 gp apiece. Teyam can Devour a Soul it has trapped.</p>"
+				}
+			}
 		},
 		"Tixitog": {
 			"name": "Tixitog",
 			"publicNotes": "<p>Tixitogs are a species of bizarre aberrations that make their homes in the dens of giant spiders. Immune to poison and able to traverse sticky webs thanks to the thick slime that covers their bodies, tixitogs steal food cocooned in spider lairs and prey on spiders themselves, but they are careful never to kill so many that their food supply runs out. Their favorite meal, however, is the odd adventurer or spelunker who stumbles into their nest.</p>\n<p>These strange creatures have oblong bodies coated in a viscous and transparent slime, three large black eyes, and eight thick, multi-jointed limbs, four of which are inverted and point upward, allowing the monster to easily crawl on either the ceiling or floor of narrow caverns and squeeze through narrow spaces. Their jaws appear small and tubular when closed but peel apart and stretch to terrifying proportions when opened, as their dozens of pointed teeth part to reveal a freakishly long tongue.</p>\n<p>A tixitog usually hides from the spiders in the lair it has claimed, not out of fear but to keep the spiders from abandoning the lair and moving elsewhere. When a tixitog emerges from the shadows, most spiders flee from it rather than attack, and the tixitog uses this behavior to direct entire swarms of spiders where it pleases. This is typically bad news for bands of adventurers who find themselves within a tixitog's lair; in the mass hysteria caused by a skittering swarm of spiders headed straight toward them, spelunkers typically fail to notice the more dangerous threat that follows closely behind.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Web Sense (Imprecise) 60 feet":{
+					"name": "Web Sense (Imprecise) 60 feet",
+					"description": "<p>The tixitog can detect the vibrations of creatures touching a web that the tixitog is also touching.</p>"
+				},
+				"Swallow Whole":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>Small, [[/r {1d12 + 3}[bludgeoning]]]{1d12 + 3 bludgeoning}, Rupture 10</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				},
+				"Tongue Pull":{
+					"name": "Tongue Pull",
+					"description": "<p>When a tixitog hits a Small or smaller creature with its tongue Strike, the target is pulled into the tixitog's mouth. The tixitog can then attempt to Swallow it Whole.</p>"
+				}
+			}
 		},
 		"Town Hall Fire": {
 			"name": "Town Hall Fire",
@@ -1895,18 +2079,93 @@
 		"Uri Zandivar": {
 			"name": "Uri Zandivar",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Wasp Trapped in Amber":{
+					"name": "Wasp Trapped in Amber",
+					"description": "<p>Portal Key</p>"
+				},
+				"Perfect Will":{
+					"name": "Perfect Will",
+					"description": "<p>If Uri rolls a success on a Will saving throw, he gets a critical success instead; if he rolls a critical failure on a Will save, he gets a failure instead.</p>"
+				},
+				"Punish Imperfection":{
+					"name": "Punish Imperfection",
+					"description": "<p><strong>Trigger</strong> A creature within Uri's reach fails an attack roll, saving throw, or skill check</p>\n<hr />\n<p><strong>Effect</strong> Uri makes an unarmed Strike against the triggering creature. If the attack hits, the target must succeed at a @Check[type:fortitude|dc:41] save or become @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3} until the end of its next turn (@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 4} on a critical failure).</p>"
+				},
+				"Reactionary":{
+					"name": "Reactionary",
+					"description": "<p>Uri can use 2 reactions in a round, but he can't perform the same reaction more than once per round.</p>"
+				},
+				"Slash and Slam":{
+					"name": "Slash and Slam",
+					"description": "<p>Uri makes two Strikes: one with his scimitar and one with his shield spikes. If both hit, the overwhelming power of the attack leaves the target @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} if one of the Strikes was a critical hit, or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} if both Strikes were critical hits). These Strikes count as one attack for Uri's multiple attack penalty, and the penalty doesn't increase until after both attacks.</p>"
+				},
+				"Swift Capture":{
+					"name": "Swift Capture",
+					"description": "<p><strong>Requirements</strong> Uri has @UUID[Compendium.pf2e.equipment-srd.5zkoqnp6X5yPCXVy]{Manacles} in his possession and is adjacent to a creature</p>\n<hr />\n<p><strong>Effect</strong> Uri sheathes a weapon he's carrying, then attempts to bind the creature's wrists or ankles with the @UUID[Compendium.pf2e.equipment-srd.5zkoqnp6X5yPCXVy]{Manacles}. If Uri succeeds at an attack roll with a [[/r 1d20+36 #Manacles]]{+36 modifier} against the target's AC, he applies the @UUID[Compendium.pf2e.equipment-srd.5zkoqnp6X5yPCXVy]{Manacles}.</p>"
+				},
+				"Swift Slash":{
+					"name": "Swift Slash",
+					"description": "<p>Uri Strides and makes a scimitar Strike at any point during the Stride.</p>"
+				}
+			}
 		},
 		"Vazgorlu": {
 			"name": "Vazgorlu",
 			"publicNotes": "<p>The arthropod monstrosity known as a vazgorlu makes its home on the Astral Plane or inside of a stable portal, ambushing creatures that travel there using dimensional magic.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Hostile Juxtaposition":{
+					"name": "Hostile Juxtaposition",
+					"description": "<p><strong>Trigger</strong> A creature targets the vazgorlu with a Strike</p>\n<hr />\n<p><strong>Effect</strong> The vazgorlu chooses a different creature within 60 feet and attempts to swap places with that creature using <em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{Dimension Door}</em> in the instant before the Strike. The target must attempt a @Check[type:will|dc:39|traits:arcana] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target resists the teleportation, and the vazgorlu can't use Hostile Juxtaposition for [[/br 1d4 #rounds]]{1d4 rounds}.</p>\n<p><strong>Success</strong> The target resists the teleportation.</p>\n<p><strong>Failure</strong> The target and the vazgorlu instantly swap places, and the triggering Strike is resolved against the target instead.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is transported to the vazgorlu's demiplane after resolving the triggering Strike against it.</p>"
+				},
+				"Demiplane Lair":{
+					"name": "Demiplane Lair",
+					"description": "<p>A vazgorlu maintains a 30-foot-diameter demiplane in the Astral Plane. Gravity in this demiplane pulls out from the center, so that creatures can walk upon the inner surface. A vazgorlu's demiplane lair lacks a built-in point of exit, and if the vazgorlu fails to visit the demiplane during a 24-hour period, the demiplane collapses- all objects and creatures within are then returned to their original locations in the multiverse before they entered the demiplane. A vazgorlu can create a replacement demiplane lair with 24 hours of concentration.</p>"
+				},
+				"Dimensional Tether":{
+					"name": "Dimensional Tether",
+					"description": "<p>A creature hit by a vazgorlu's web Strike is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} and stuck to the nearest surface until it Escapes (DC 42). As long as it remains immobilized by the web, the web attempts to counteract any effect that would move the webbed creature to another plane, with a counteract level of 10 and using the vazgorlu's [[/r 1d20+38 #Dimensional Tether Counteract]]{Arcana} skill to attempt the counteract check.</p>"
+				},
+				"Redirect Portal":{
+					"name": "Redirect Portal",
+					"description": "<p>A vazgorlu can spend 10 minutes in contact with a magical portal to redirect it, causing the portal to instead lead to its demiplane lair. To do so, the vazgorlu must succeed at a [[/r 1d20+41 #Redirect Portal]]{Portal Lore} check (the DC is either equal to the caster's spell DC for a portal created by a spell, or set by the portal's level; if the portal in question has no level listed, assume it's a 20th-level portal).</p>"
+				}
+			}
 		},
 		"Veshumirix": {
 			"name": "Veshumirix",
 			"data":{},
-			"items":{}
+			"items":{
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90 feet}, @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:34]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Wing Deflection":{
+					"name": "Wing Deflection",
+					"description": "<p><strong>Trigger</strong> Veshumirix is targeted with an attack.</p>\n<hr />\n<p><strong>Effect</strong> Veshumirix raises his wing, gaining a +2 circumstance bonus to AC against the triggering attack. If Veshumirix is Flying, he descends 10 feet after the attack.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>Veshumirix breathes a blast of magma that deals [[/r {9d6}[fire]+{4d12}[bludgeoning]]]{9d6 fire damage and 4d12 bludgeoning damage} in a @Template[type:cone|distance:60]{60-foot cone} (@Check[type:reflex|dc:42|basic:true] save).</p>\n<p>He can't use Breath Weapon again for [/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Draconic Frenzy":{
+					"name": "Draconic Frenzy",
+					"description": "<p>Veshumirix makes two claw Strikes and one horns Strike in any order.</p>"
+				},
+				"Draconic Momentum":{
+					"name": "Draconic Momentum",
+					"description": "<p>Veshumirix recharges his Breath Weapon whenever he scores a critical hit with a Strike.</p>"
+				},
+				"Magma Swim":{
+					"name": "Magma Swim",
+					"description": "<p>A magma dragon's swim Speed functions only when the dragon is swimming through magma or molten lava.</p>"
+				},
+				"Volcanic Purge":{
+					"name": "Volcanic Purge",
+					"description": "<p>If the next action Veshumirix uses is Breath Weapon, the magma clings to those it damages. Each creature that fails its save against the Breath Weapon takes [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.7qoZauizAKfPIXeu]{Effect: Volcanic Purge}</p>"
+				}
+			}
 		},
 		"Vision of Dahak": {
 			"name": "Vision of Dahak",
@@ -1916,12 +2175,34 @@
 			"routine": "<p>(2 actions) The vision of Dahak manifests next to the creature that is closest to the center of the way station, then uses its Breath Weapon in a direction that catches the most possible targets in its area.</p>",
 			"stealthdetails": "<p>(expert)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Manifest":{
+					"name": "Manifest",
+					"description": "<p><strong>Trigger</strong> A creature is within the way station.</p>\n<hr />\n<p><strong>Effect</strong> The vision of Dahak appears in a 15-foot space adjacent to that creature and rolls initiative.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>The vision of Dahak unleashes a blast of fire from its burning maw, creating a @Template[type:cone|distance:60] that deals [[/r {6d6}[fire]]]{6d6 fire damage} to all creatures within (@Check[type:reflex|dc:26|basic:true|traits:magical,trap,hazard] save).</p>"
+				}
+			}
 		},
 		"Voz Lirayne": {
 			"name": "Voz Lirayne",
 			"data":{},
-			"items":{}
+			"items":{
+				"Drain Bonded Item":{
+					"name": "Drain Bonded Item",
+					"description": "<p>When Voz uses this ability, she also regains 1 Focus Point.</p>\n<hr />\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You expend the power stored in your bonded item, as long as the item is on your person. During your turn, you gain the ability to cast one spell you prepared today and already cast, without spending a spell slot. You must still @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast the Spell} and meet the spell's other requirements.</p>"
+				},
+				"Eschew Materials":{
+					"name": "Eschew Materials",
+					"description": "<p>You can use clever workarounds to replicate the arcane essence of certain materials. When Casting a Spell that requires material components, you can provide these material components without a spell component pouch by drawing intricate replacement sigils in the air. Unlike when providing somatic components, you still must have a hand completely free. This doesn't remove the need for any materials listed in the spell's cost entry.</p>"
+				},
+				"Reach Spell":{
+					"name": "Reach Spell",
+					"description": "<p>You can extend the range of your spells. If the next action you use is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} that has a range, increase that spell's range by 30 feet. As is standard for increasing spell ranges, if the spell normally has a range of touch, you extend its range to 30 feet.</p>"
+				}
+			}
 		},
 		"Wailing Crystals": {
 			"name": "Wailing Crystals",
@@ -1931,17 +2212,61 @@
 			"routine": "<p>(3 actions) The hazard uses each action for an Anguished Shriek. The wailing crystals lose 1 action for each 5-foot patch of crystals that is broken or destroyed.</p>",
 			"stealthdetails": "<p>(master) or @Check[type:perception|dc:37|name:Notice Ghostly Faces|traits:hazard,complex,environmental,magical] (master) to notice what appear to be screaming ghostly faces in the crystals</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"MuK4kIpfXEUbojeB":{
+					"name": "HP is 72 for each 5 foot patch"
+				},
+				"Echoing Cry":{
+					"name": "Echoing Cry",
+					"description": "<p><strong>Trigger</strong> A living creature approaches within 20 feet of a wailing crystal.</p>\n<hr />\n<p><strong>Effect</strong> A despairing chorus of cries echoes off the crystals, working its way into the minds of all living creatures in Jewelgate Way Station, affecting them with <em>@UUID[Compendium.pf2e.spells-srd.GaRQlC9Yw1BGKHfN]{Crushing Despair}</em> (7th level, @Check[type:will|dc:33|name:Crushing Despair|traits:mental,emotion,magical,spell] save).</p>\n<p>The hazard rolls initiative.</p>"
+				},
+				"Anguished Shriek":{
+					"name": "Anguished Shriek",
+					"description": "<p>A shrieking, distorted face composed of writhing necromantic energy lances out of the crystals to target a random living creature within 20 feet. The target takes [[/r {4d6}[mental] + {4d6}[sonic]]]{4d6 mental damage and 4d6 sonic damage} (@Check[type:will|dc:33|basic:true] save).</p>"
+				}
+			}
 		},
 		"Warbal Bumblebrasher": {
 			"name": "Warbal Bumblebrasher",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-History of the Bumblebrashers in Isger":{
+					"name": "History of the Bumblebrashers in Isger"
+				},
+				"Goblin Scuttle":{
+					"name": "Goblin Scuttle",
+					"description": "<p><strong>Trigger</strong> A goblin ally ends a move action adjacent to Warbal.</p>\n<hr />\n<p><strong>Effect</strong> Warbal @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Steps}.</p>"
+				}
+			}
 		},
 		"Weathered Wail": {
 			"name": "Weathered Wail",
 			"data":{},
-			"items":{}
+			"items":{
+				"aMtBg34djNUQyLrP":{
+					"name": "心灵感应1英里"
+				},
+				"Heatsight":{
+					"name": "Heatsight",
+					"description": "<p>Heatsight is a precise sense that sees heat signatures.</p>"
+				},
+				"Dream Haunting":{
+					"name": "Dream Haunting",
+					"description": "<p>A target that fails its save against the wendigo's <em>@UUID[Compendium.pf2e.spells-srd.Uqj344bezBq3ESdq]{Nightmare}</em> is exposed to wendigo torment.</p>"
+				},
+				"Howl":{
+					"name": "Howl",
+					"description": "<p><strong>Frequency</strong> Three times per day</p>\n<hr />\n<p><strong>Effect</strong> The wendigo unleashes a forlorn howl that can be heard up to 1 mile away. Any creature that hears the howl must succeed at a @Check[type:will|dc:38] save or be @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}. Any creature that critically fails and is within 120 feet of the wendigo is instead @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}, and is also fleeing for [[/br 1d4 #rounds]]{1d4 rounds} (or until it's no longer frightened, whichever comes first).</p>\n<p>A creature frightened by a wendigo's howl still naturally recovers from its fright but can't reduce it below frightened 1 in this way until 1 hour has passed or magic is used. Whether it succeeds or fails its save, a creature is then temporarily immune to that wendigo's Howl for 24 hours.</p>"
+				},
+				"Ride the Wind":{
+					"name": "Ride the Wind",
+					"description": "<p><strong>Trigger</strong> The wendigo casts <em>@UUID[Compendium.pf2e.spells-srd.U0hL0LLaprcnAyzC]{Wind Walk}</em> while it has Grabbed a foe.</p>\n<hr />\n<p><strong>Effect</strong> The wendigo attempts to turn the grabbed creature into wind and carry it along as part of the action. If the target succeeds at a @Check[type:will|dc:38] save, it prevents itself from being transformed; in this case, the wendigo still transforms, automatically releasing the victim. A creature forced to Ride the Wind along with the wendigo is exposed to wendigo torment.</p>\n<p>The target can attempt a new Will save each round to return to normal, though it immediately becomes corporeal and begins falling if it succeeds.</p>"
+				},
+				"Wendigo Torment":{
+					"name": "Wendigo Torment",
+					"description": "<p>A creature affected by wendigo torment can't recover beyond stage 1 until it has been restored to full HP.</p>\n<p><strong>Saving Throw</strong> @Check[type:will|dc:38]</p>\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 4} (1 day)</p>\n<p><strong>Stage 2</strong> As stage 1 (1 day)</p>\n<p><strong>Stage 3</strong> The creature searches for an individual of its own ancestry to kill and devour. It then becomes affected by wind walk and sprints into the sky so fast that its feet burn away into jagged stumps. As the creature wind walks into the sky, it is replaced by a new wendigo over [[/r 2d6 #minutes]]{2d6 minutes}.</p>\n<p><em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{Wish}</em>, similar magic, or a 9th-level <em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{Resurrect}</em> ritual can return the victim to life. The new wendigo remains even if the victim is resurrected.</p>"
+				}
+			}
 		},
 		"Wrath of the Destroyer": {
 			"name": "Wrath of the Destroyer",
@@ -1951,36 +2276,177 @@
 			"routine": "<p>(1 action) On its initiative, the wrath of the destroyer targets the closest target in area <strong>C6</strong> with Face of the Fatal Divine.</p>",
 			"stealthdetails": "<p>(expert) to notice subtle vapors of magical energy seething across the doors</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Expunge":{
+					"name": "Expunge",
+					"description": "<p><strong>Trigger</strong> A non-worshipper of Dahak touches either door leading to <strong>C7</strong></p>\n<hr />\n<p><strong>Effect</strong> The hazard targets the creature with Face of the Fatal Divine, then rolls initiative.</p>"
+				},
+				"Face of the Fatal Divine":{
+					"name": "Face of the Fatal Divine",
+					"description": "<p>The creature beholds the face of Dahak as it emerges to bite with its burning jaws, targeting the creature with <em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em> (5th level, @Check[type:will|dc:29|traits:complex,hazard,magical,trap]).</p>"
+				}
+			}
 		},
 		"Xevalorg": {
 			"name": "Xevalorg",
 			"publicNotes": "<p>A gug's most horrid feature is its barrel-shaped head, which splits vertically to reveal numerous rows of sharp, yellow teeth and an open throat. Its eyes on either side of its head-jaw are small but keen. Bony ridges protect its eyes from the frantic flailing of its prey, as it prefers meals of raw and writhing meat over fungi and molds. It grips said prey with powerful arms that split at the elbow into a pair of forearms, giving it four clawed paws. These monstrous brutes are covered with shaggy black fur, often crusted with blood and gore.</p>\n<p>Although gugs may seem bestial, they have keen and wicked intellects. Gugs lair far underground, but they sometimes come to the surface to hunt during dark nights, either alone or in small groups. As they possess voracious appetites, most gugs consume the creatures they catch, but some instead kidnap their victims and retreat below the surface, leaving only a lingering stench and odd, clawed paw-prints. Victims are taken to rancid lairs marked with strange runes and sacrificed to the gugs' wicked gods of blood, darkness, and nightmares. Dire rumors tell of lightless gug cities made of titanic blocks of stone far underground, where powerful gug leaders preach their vile doctrines to mobs of howling gugs.</p>\n<p>Gugs have a strange relationship with ghouls, which seems to date from their shared origin in a distant subterranean world. Gugs live in fear of ghouls, despite towering over them; however, this strange fear doesn't apply to ghasts, whom gugs consume as voraciously as they do other creatures.</p>\n<p>Gugs stand 16 feet tall and weigh 2,000 pounds, although they have an eerie, graceful gait that belies their immense size. Their light step and ability to squeeze through very small crannies makes gugs common bogeymen in tales of strange disappearances or bloody massacres.</p>\n<p>Some particularly bloodthirsty gugs gain awful powers as gifts from their eldritch patrons. These monsters are known as savants, are never less than 12th level in power, and gain several occult innate spells. Though each savant's precise mix of spells varies, normally, these spells grant invisibility, offer power to manipulate and change rock, or invoke awful and destructive energies upon living flesh.</p>",
 			"blurb": "Male gug savant",
 			"data":{},
-			"items":{}
+			"items":{
+				"Eerie Flexibility":{
+					"name": "Eerie Flexibility",
+					"description": "<p>Despite his size, Xevalorg's multiple joints allow him to fit through tight spaces as if he were a Medium creature. While Squeezing, he can move at his full Speed.</p>"
+				},
+				"Furious Claws":{
+					"name": "Furious Claws",
+					"description": "<p>Xevalorg makes up to four claw Strikes, each against a different target. These attacks count toward Xevalorg's multiple attack penalty, and the multiple attack penalty doesn't increase until after he makes all his attacks.</p>"
+				},
+				"Rend":{
+					"name": "撕裂 Rend",
+					"description": "<p>Claw</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+				}
+			}
 		},
 		"Xotani, The Firebleeder": {
 			"name": "Xotani, The Firebleeder",
 			"publicNotes": "<p>A monstrosity of living flame and magma, Xotani may be the weakest of Rovagug's spawn, but it remains a formidable threat. Xotani was slain in 2104 AR by an alliance of spellcasters, but recently its deathlike slumber was interrupted. Its corpse twitches, signaling that it might be close to returning.</p>\n<hr />\n<p>The spawn are titanic terrors of immense size and strength that live only to destroy. Tarrasque and Xotani are but two of Rovagug's spawn. Others, including Chemnosit (the Monarch Worm), Kothogaz (the Dance of Disharmony), and Volnagur (the End-Singer) hold places of horror in the history of various regions, but the most famed is Ulunat (the Unholy First), whose beetle-like carcass remains sprawled in Sothis, the capital of Osirion.</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Jaws":{
+					"name": "啃咬 Jaws",
+					"description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+				},
+				"strike-Claw":{
+					"name": "爪击 Claw",
+					"description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+				},
+				"strike-Lava Bomb":{
+					"name": "Lava Bomb",
+					"description": "<p>[[/r {2d10}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+				},
+				"Blindsight (Precise) 120 feet":{
+					"name": "Blindsight (Precise) 120 feet"
+				},
+				"Firebleed":{
+					"name": "Firebleed",
+					"description": "<p><strong>Trigger</strong> Xotani is damaged</p>\n<hr />\n<p><strong>Effect</strong> Xotani's wound erupts with magma in a @Template[type:cone|distance:30], dealing [[/r {6d8}[fire]]]{6d8 fire damage} and [[/r {6d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} (@Check[type:reflex|dc:42|basic:true] save).</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:300]{300 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:39] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Light Blindness":{
+					"name": "强光致盲 Light Blindness",
+					"description": "<p>Xotani's light blindness is caused by only sunlight.</p>"
+				},
+				"Reactive":{
+					"name": "Reactive",
+					"description": "<p>Xotani gains 3 reactions each round. It can still use only one reaction per trigger.</p>"
+				},
+				"Bomb Barrage":{
+					"name": "Bomb Barrage",
+					"description": "<p>Xotani makes three lava bomb Strikes. These Strikes can be made against the same creature or different creatures, as long as all targets are within 40 feet of each other.</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>Xotani breathes a blast of flame that deals [[/r {18d6}[fire]]]{18d6 fire damage} plus [[/r {4d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} to all creatures in a @Template[type:cone|distance:70] (@Check[type:reflex|dc:42|basic:true] save).</p>\n<p>It can't use Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Swallow Whole":{
+					"name": "活吞 Swallow Whole",
+					"description": "<p>Huge, [[/r {8d6+8}[bludgeoning]]]{8d6+8 bludgeoning} plus [[/r {12d6}[fire]]]{12d6 fire}, Rupture 35</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				},
+				"Trample":{
+					"name": "践踏 Trample",
+					"description": "<p>Huge or smaller, claw, @Check[type:reflex|dc:42|basic:true] save. When Xotani Tramples, it can Stride up to triple its Speed.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Xotanispawn": {
 			"name": "Xotanispawn",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Jaws":{
+					"name": "啃咬 Jaws",
+					"description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+				},
+				"strike-Claw":{
+					"name": "爪击 Claw",
+					"description": "<p>[[/r {2d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}</p>"
+				},
+				"Explosion":{
+					"name": "Explosion",
+					"description": "<p>When a Xotanispawn dies, it explodes, dealing [[/r {15d8}[fire]]]{15d8 fire damage} to creatures in a @Template[type:emanation|distance:30] (@Check[type:reflex|dc:39|basic:true] save).</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}, @Check[type:will|dc:36] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Internal Furnace":{
+					"name": "Internal Furnace",
+					"description": "<p><strong>Trigger</strong> A creature adjacent to the Xotanispawn touches it or hits it with a physical attack</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature takes [[/r {5d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} (@Check[type:reflex|dc:37|traits:damaging-effect] save to negate).</p>"
+				},
+				"Breath Weapon":{
+					"name": "Breath Weapon",
+					"description": "<p>The Xotanispawn sprays a @Template[type:cone|distance:60] of magma that deals [[/r {10d10}[fire]]]{10d10 fire damage} and [[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} to all creatures in the area (@Check[type:reflex|dc:39|basic:true] save).</p>\n<p>The Xotanispawn can't use its Breath Weapon again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Heat Surge":{
+					"name": "Heat Surge",
+					"description": "<p>When the Xotanispawn critically hits, its body surges with heat, increasing the damage of its Internal Furnace to [[/r {10d8}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage} until the start of its next turn.</p>"
+				}
+			}
 		},
 		"Zephyr Guard": {
 			"name": "Zephyr Guard",
 			"data":{},
-			"items":{}
+			"items":{
+				"Adroit Disarm":{
+					"name": "Adroit Disarm",
+					"description": "<p>The Zephyr Guard attempts to @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} a creature, with a +2 circumstance bonus to the roll. On a critical success, the guard can also deal their @UUID[Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn]{Scimitar} damage to the creature.</p>"
+				},
+				"Hampering Shot":{
+					"name": "Hampering Shot",
+					"description": "<p>The Zephyr Guard makes a heavy crossbow Strike that deals one additional weapon damage die. If the Strike hits, the target takes a -10-foot status penalty to its Speeds and is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. These last for 1 round, or 2 rounds if the Strike was a critical success.</p>"
+				},
+				"Subduing Strikes":{
+					"name": "Subduing Strikes",
+					"description": "<p>A Zephyr Guard takes no penalty for making nonlethal attacks with a weapon that doesn't have the nonlethal trait. The guard's nonlethal Strikes against a creature that is not wielding a weapon deal an additional [[/r {2d6}]]{2d6 damage}.</p>"
+				}
+			}
 		},
 		"Zuferian": {
 			"name": "Zuferian",
 			"blurb": "Female human",
 			"data":{},
-			"items":{}
+			"items":{
+				"Infused Items":{
+					"name": "Infused Items",
+					"description": "<p>Zuferian's items listed as infused last for 24 hours, or until her next daily preparations.</p>"
+				},
+				"Alchemical Formulas":{
+					"name": "Alchemical Formulas",
+					"description": "<p>@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{Acid Flask (Greater)}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{Alchemist's Fire (Greater)}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{Bottled Lightning (Greater)}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.bz8Y8bVUe7QfBk9g]{Darkvision Elixir (Greater)}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.87AzvRja9uQOLJCC]{Deathcap Powder}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.mYozcVg9fQY6zO7C]{Elixir of Life (Greater)}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.intVPcEzbE9o4NQd]{Frost Vial (Greater)}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.zo0ophqfKunJFxZN]{Lethargy Poison}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.iRDCa4OVSTGUD3vi]{Purple Worm Venom}</p>\n<p>@UUID[Compendium.pf2e.equipment-srd.5Qkz4RVJr2Kx3RL6]{Tanglefoot Bag (Greater)}</p>"
+				},
+				"Expanded Splash":{
+					"name": "Expanded Splash",
+					"description": "<p>Zuferian's bombs that have the splash trait deal 8 extra splash damage, and splash to 10 feet.</p>"
+				},
+				"Quick Alchemy":{
+					"name": "Quick Alchemy",
+					"description": "<p>Zuferian creates a single alchemical item from her formula book. This item has the infused trait, but it remains potent only until the start of her next turn. With her typical preparations, she can use this ability 7 times per day.</p>"
+				},
+				"Quick Bomber":{
+					"name": "Quick Bomber",
+					"description": "<p>Zuferian Interacts to draw a bomb, then Strikes with it.</p>"
+				},
+				"True Debilitating Bomb":{
+					"name": "True Debilitating Bomb",
+					"description": "<p>When Zuferian uses Debilitating Bomb, add the following to the list of effects Zuferian can choose from:</p>\n<ul>\n<li>@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}</li>\n<li>@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2}</li>\n<li>a -15-foot status penalty to Speeds.</li>\n</ul>\n<p>If Zuferian instead applies one of the effects listed in Debilitating Bomb, the target avoids the effect only if the result of its saving throw is a critical success.</p>"
+				},
+				"Uncanny Bombs":{
+					"name": "Uncanny Bombs",
+					"description": "<p>When Zuferian throws an alchemical item with the bomb trait, its range increment increases to 60 feet, Zuferian reduces any circumstance bonus to the target's AC from cover by 1, and Zuferian automatically succeeds at the flat check when targeting a concealed creature.</p>"
+				}
+			}
 		},
 		"Barushak Il-Varashma": {
 			"name": "巴鲁沙克·依克瓦什玛 Barushak Il-Varashma",
