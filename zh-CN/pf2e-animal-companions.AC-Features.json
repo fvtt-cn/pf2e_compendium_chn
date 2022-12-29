@@ -9,12 +9,12 @@
             "description": "<p>大多数幽灵束缚于他们死亡、埋葬之地，而另一些则会被发现束缚于具体的物品，例如一块特定的宝石、一片衣物、一个宠物项圈，或是他们居住地的一块石头。这些物品，被称为锚定物，对于幽灵生前意义重大，甚至对于他们的死亡和难忘之事而言至关重要。</p>\n<p>一个被锚定虚体生物具有虚体特征，意味着它可以穿过物理形态的生物并且这类生物能穿过它。他无法尝试基于力量的检定（例如@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}）一个实体生物，并且实体生物也无法对它进行相同的检定。即使是虚体，一个被锚定虚体生物无法离开他的锚定物超出60尺，并且必须与锚定物存在效果线。这一般会让其无法像其他虚体生物一样穿过墙壁，一个被锚定虚体生物对所有伤害不具备抗性，也不能免疫精准伤害。</p>\n<p>一个拥有被锚定虚体的动物伙伴或魔宠的角色可以通过特定仪式将锚定物转变为一个新的物品。与伙伴协商创造一个新的锚定物需要花费1星期。一个知道这种技艺的角色可能将其运用在一个幽灵束缚之地能力（或相似限制）上以将其与锚定物相连，而非固定地点。</p>"
         },
         "Angelic Avenger": {
-            "name": "Angelic Avenger",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 8, Wis 12, Cha 10; +2 AC (+3 Dex cap)</p>"
+            "name": "天界复仇者 Angelic Avenger",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 8, 感知 12, 魅力 10; +2 AC (+3 敏捷上限)</p>"
         },
         "Angelic Emissary": {
-            "name": "Angelic Emissary",
-            "description": "<p>Str 12, Dex 18, Con 12, Int 10, Wis 12, Cha 14; +1 AC (+4 Dex cap)</p>"
+            "name": "天界密使 Angelic Emissary",
+            "description": "<p>力量 12, 敏捷 18, 体质 12, 智力 10, 感知 12, 魅力 14; +1 AC (+4 敏捷上限)</p>"
         },
         "Angelic Mercy": {
             "name": "天使慈悲 Angelic Mercy",
@@ -36,205 +36,205 @@
             "description": "<p>你的幻灵对敌人进行凶猛的冲锋或猛扑，让它能够迅速接战。它获得@Compendium[pf2e-animal-companions.AC-Features.ITQghUQFhbYpD2QM]{野兽冲锋 Beast's Charge}行动。</p>\n<p>你的幻灵向前冲刺，并借助动能增加幻灵的攻击的力量。你的幻灵行走两次，并在之后进行打击，只要幻灵从起始位置远离了至少20尺，且完全走在一条直线上，则这次攻击骰上获得+1环境加值。</p>"
         },
         "Blasphemous Decree": {
-            "name": "Blasphemous Decree",
-            "description": "<p>Your demon utters indescribable words writhing with its associated sin. It can cast an evil <em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{Divine Decree}</em> once per day as a 9th-level spell. You are unaffected by this decree, even if you aren't evil. At 19th level, this becomes a 10th-level divine decree instead.</p>"
+            "name": "亵渎裁决 Blasphemous Decree",
+            "description": "<p>你的恶魔吐出无法描述的词语，缠绕着它关联的罪恶。它可以每天一次以9环法术的形式施展邪恶的<em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{神圣裁决 Divine Decree}</em>。你不受判决影响，即使你不邪恶。在19级，这变成了10环的神圣裁决。</p>"
         },
         "Breath Weapon": {
             "name": "喷吐武器 Breath Weapon",
-            "description": "<p>Your eidolon has a powerful breath weapon, which they are able to use regularly to wreak havoc upon your foes. They gain the Breath Weapon activity. Choose a damage type from among acid, cold, electricity, fire, negative, piercing, or poison, and choose whether the area is a @Template[type:line|distance:60] or a @Template[type:cone|distance:30]. Unless you chose piercing damage, both Breath Weapon and your eidolon gain the trait matching the damage type.</p>"
+            "description": "<p>你的幻灵拥有强大的喷吐武器，可以定期对你的敌人造成巨大的破坏。它获得喷吐武器行动。从强酸、寒冷、电击、火焰、负能量、穿刺、或毒素中选择一种伤害类型，并从@Template[type:line|distance:60]或@Template[type:cone|distance:30]中选择一个区域。除非你选择了穿刺伤害，否则喷吐武器和幻灵都获得对应伤害类型的特征。</p>"
         },
         "Breath Weapon (Acid)": {
-            "name": "Breath Weapon (Acid)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[acid]]]{1d6 Acid伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-酸液 Breath Weapon (Acid)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Breath Weapon (Cold)": {
-            "name": "Breath Weapon (Cold)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[cold]]]{1d6 Cold伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-寒冷 Breath Weapon (Cold)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Breath Weapon (Electricity)": {
-            "name": "Breath Weapon (Electricity)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[electricity]]]{1d6 Electricity伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-电击 Breath Weapon (Electricity)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Breath Weapon (Fire)": {
-            "name": "Breath Weapon (Fire)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[fire]]]{1d6 fire伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-火焰 Breath Weapon (Fire)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Breath Weapon (Negative)": {
-            "name": "Breath Weapon (Negative)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[negative]]]{1d6 Negative伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-负能量 Breath Weapon (Negative)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Breath Weapon (Piercing)": {
-            "name": "Breath Weapon (Piercing)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[piercing]]]{1d6 Piercing伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-穿刺 Breath Weapon (Piercing)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Breath Weapon (Poison)": {
-            "name": "Breath Weapon (Poison)",
-            "description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r {1d6}[poison]]]{1d6 Poison伤害} to all creatures in the area, with a basic Reflex save against your spell DC. The area and damage type of the Breath Weapon are chosen when the eidolon gains this ability. Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #Breath Weapon Cooldown]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6.</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
+            "name": "喷吐武器-毒素 Breath Weapon (Poison)",
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对区域内的所有生物造成[[/r {1d6}[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。区域和伤害类型为幻灵取得该能力时所选的类型。你的幻灵在接下来的[[/r 1d4 #Breath Weapon Cooldown]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。</p>\n<p>@Template[type:cone|distance:30]</p>\n<p>@Template[type:line|distance:60]</p>"
         },
         "Brutal Beast": {
-            "name": "Brutal Beast",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 8, Wis 12, Cha 10; +2 AC (+3 Dex cap)</p>"
+            "name": "凶蛮野兽 Brutal Beast",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 8, 感知 12, 魅力 10; +2 AC (+3 敏捷上限)</p>"
         },
         "Charisma Boost": {
-            "name": "Charisma Boost"
+            "name": "魅力提升 Charisma Boost"
         },
         "Constitution Boost": {
-            "name": "Constitution Boost"
+            "name": "体质提升 Constitution Boost"
         },
         "Construct Companion": {
-            "name": "Construct Companion"
+            "name": "构装伙伴 Construct Companion"
         },
         "Construct Heart": {
             "name": "构装之心 Construct Heart",
             "description": "<p>你的构装幻灵与你的生命力量直接相连，这将其渲染成了一种活生生的生物，因此容易受到许多只影响活物的病症，尽管它仍然对这些效果保有一些抵抗力。它没有构装体通常的免疫力，但在对抗死亡效果、疾病、死灵系、以及毒素效果的豁免骰中获得+2环境加值。该加值也适用于造成@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}或恶心的效果。另外，它的星界精华形成的血只会缓慢流出，只需要成功通过DC 10的<span data-pf2-check=\"flat\" data-pf2-dc=\"10\" data-pf2-show-dc=\"owner\">纯骰检定</span>就能移除持续流血伤害（在接受了特定有效的看护后改为<span data-pf2-check=\"flat\" data-pf2-dc=\"5\" data-pf2-show-dc=\"owner\">纯骰检定</span>）。</p>"
         },
         "Creeping Plant": {
-            "name": "Creeping Plant",
-            "description": "<p>Str 12, Dex 18, Con 16, Int 8, Wis 14, Cha 10; +1 AC (+4 Dex cap)</p>"
+            "name": "蜿蜒植物 Creeping Plant",
+            "description": "<p>力量 12, 敏捷 18, 体质 16, 智力 8, 感知 14, 魅力 10; +1 AC (+4 敏捷上限)</p>"
         },
         "Cunning Dragon": {
-            "name": "Cunning Dragon",
-            "description": "<p>Str 12, Dex 18, Con 12, Int 14, Wis 10, Cha 12; +1 AC (+4 Dex cap)</p>"
+            "name": "狡诈龙 Cunning Dragon",
+            "description": "<p>力量 12, 敏捷 18, 体质 12, 智力 14, 感知 10, 魅力 12; +1 AC (+4 敏捷上限)</p>"
         },
         "Demonic Strikes": {
             "name": "恶魔打击 Demonic Strikes",
             "description": "<p>你的幻灵的打击被深渊所腐化，灌注了纯粹的邪恶和狡诈的混乱。幻灵的无武装攻击造成额外[[/r {1}[evil]]]{1邪恶伤害}；如常，这些额外伤害只能伤害善良生物，或对善邪恶伤害具有弱点的生物。另外，选择幻灵的一种造成物理伤害的无武装攻击；它获得多用特征，选择一种不同的物理伤害类型。</p>"
         },
         "Devotion Aura": {
-            "name": "Devotion Aura",
-            "description": "<p>After fighting at your side for so long, your eidolon has become as devoted to protecting you and your allies as it is to its original cause. It gains a 20-foot devotion aura, which has the abjuration, aura, and occult traits. Whenever one of your eidolon's allies within the aura takes damage, you can reduce the damage by your eidolon's Constitution modifier. You lose a number of Hit Points equal to half the amount by which the eidolon reduced the damage, rounded down. If the damage was lower than the Constitution modifier, base the damage you take on the actual amount of damage prevented.</p>"
+            "name": "奉献灵光 Devotion Aura",
+            "description": "<p>你们长期共同作战，你的幻灵变得如初衷一般全力以赴地保护你和你的盟友。它获得20尺奉献灵光，其具有防护系、灵光以及异能特征。当灵光范围内的某个盟友承受伤害，你可以将伤害减去幻灵的体质调整值。你失去减去伤害数值一半（取低）的生命值。如果造成的伤害低于体质调整值，计算结果基于你实际阻挡的伤害数值。</p>"
         },
         "Dexterity Boost": {
-            "name": "Dexterity Boost"
+            "name": "敏捷提升 Dexterity Boost"
         },
         "Draconic Frenzy": {
-            "name": "Draconic Frenzy",
-            "description": "<p>Your eidolon can make a furious assault, potentially recovering the use of their Breath Weapon. They gain the @UUID[Compendium.pf2e-animal-companions.AC-Features.HiVt4B5bE2hi0FWc]{Draconic Frenzy} activity.</p>"
+            "name": "龙之狂怒 Draconic Frenzy",
+            "description": "<p>你的幻灵可以进行凶残的突袭，并有可能恢复喷吐武器的使用能力。你的幻灵获得@UUID[Compendium.pf2e-animal-companions.AC-Features.HiVt4B5bE2hi0FWc]{龙之狂怒 Draconic Frenzy}行动。</p>\n<p>你的幻灵用主要无武装攻击进行一次打击，并用次要无武装攻击进行两次打击（顺序任意）。如果这些攻击中的任意一个对敌人造成重击，幻灵立刻恢复喷吐武器的使用能力。</p>"
         },
         "Drain Life": {
-            "name": "Drain Life",
-            "description": "<p>Your eidolon's link with you sustains it, but it still craves the life essence of the living, whether through blood or pure essence. It gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.3Ns5BmFpAcoGQIY5]{Drain Life} activity.</p>"
+            "name": "汲取生命 Drain Life",
+            "description": "<p>你与幻灵的链接供养着它，但它依然渴望生者的生命要素，无论是通过血液还是纯粹的要素。它获得@UUID[Compendium.pf2e-animal-companions.AC-Features.3Ns5BmFpAcoGQIY5]{汲取生命 Drain Life}动作。</p>\n<p>你的幻灵攻击一个生物并汲取其部分生命力以反哺你们共有的链接。你的幻灵打击一个活着的敌人。如果打击命中并造成伤害，目标必须进行一次强韧豁免，以决定后续效果。一旦重击，敌人使用比其掷骰结果差一级的结果。</p>\n<hr />\n<p><strong>大成功</strong> 无效果。</p>\n<p><strong>成功</strong> 你的幻灵汲取了少量生命力。敌人额外受到数值等于你等级一半的负能量伤害。</p>\n<p><strong>失败</strong> 你的幻灵汲取了足以让其满足的生命力。敌人额外受到数值等于你等级一半的负能量伤害，并@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。你的幻灵获得等于敌人等级数值的临时生命值，持续1分钟。</p>\n<p><strong>大失败</strong> 你的幻灵获得了不可估量的生命力，让其精力爆发。如同失败，但是敌人@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}并且临时生命值等于两倍敌人等级的数值。</p>"
         },
         "Dutiful Retaliation": {
-            "name": "Dutiful Retaliation",
-            "description": "<p>Your eidolon deeply respects your assistance, and it extends its loyalty to you, attacking those who dare harm you. It gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.4NuAF8jxWDWzia9Z]{Dutiful Retaliation} reaction.</p>"
+            "name": "尽忠反击 Dutiful Retaliation",
+            "description": "<p>你的幻灵对你的存在极其尊敬，并将它不移的忠心延伸到你身上，攻击任何胆敢伤害你的人。你的幻灵获得@UUID[Compendium.pf2e-animal-companions.AC-Features.4NuAF8jxWDWzia9Z]{尽忠反击 Dutiful Retaliation}反应。</p>\n<p><strong>触发</strong> 离你15尺内的一名敌人用一次打击命中了你，并对你造成了伤害。</p>\n<p><strong>需求</strong> 你的幻灵在你的15尺范围内。</p>\n<hr />\n<p>你的幻灵本能地放出灵质能量，允许他对胆敢伤害你的敌人回敬一次打击。你的幻灵对触发的敌人进行一次近战无武装打击，即使该敌人不在幻灵的触及内。</p>"
         },
         "Effect: Seething Frenzy": {
             "name": "效果: 沸腾狂怒 Seething Frenzy",
             "description": "<p>生物在AC上承受-2罚值。</p>"
         },
         "Eidolon": {
-            "name": "Eidolon"
+            "name": "幻灵 Eidolon"
         },
         "Eidolon Ability": {
-            "name": "Eidolon Ability",
-            "description": "<p>The eidolon starts with an initial ability determined by the eidolon type.</p>"
+            "name": "幻灵能力 Eidolon Ability",
+            "description": "<p>幻灵开始时学会幻灵类别对应的初始能力。</p>"
         },
         "Eidolon Ability Boosts (10th)": {
-            "name": "Eidolon Ability Boosts (10th)"
+            "name": "幻灵属性提升 Eidolon Ability Boosts (10级)"
         },
         "Eidolon Ability Boosts (15th)": {
-            "name": "Eidolon Ability Boosts (15th)"
+            "name": "幻灵属性提升 Eidolon Ability Boosts (15级)"
         },
         "Eidolon Ability Boosts (20th)": {
-            "name": "Eidolon Ability Boosts (20th)"
+            "name": "幻灵属性提升 Eidolon Ability Boosts (20级)"
         },
         "Eidolon Ability Boosts (5th)": {
-            "name": "Eidolon Ability Boosts (5th)"
+            "name": "幻灵属性提升 Eidolon Ability Boosts (5级)"
         },
         "Eidolon Defensive Expertise": {
-            "name": "Eidolon Defensive Expertise",
-            "description": "<p>Your eidolon increases its ability to avoid attacks. Its proficiency rank for unarmored defense increases to expert.</p>"
+            "name": "幻灵防御精通 Eidolon Defensive Expertise",
+            "description": "<p>你的幻灵提升了回避攻击的能力。幻灵在无甲防御上的熟练等级提升至专家。</p>"
         },
         "Eidolon Defensive Mastery": {
-            "name": "Eidolon Defensive Mastery",
-            "description": "<p>Your eidolon's form becomes particularly difficult to assail. Its proficiency rank for unarmored defense increases to master.</p>"
+            "name": "幻灵防御大师 Eidolon Defensive Mastery",
+            "description": "<p>你的幻灵更难以被袭击。幻灵在无甲防御上的熟练等级提升至大师。</p>"
         },
         "Eidolon Symbiosis": {
-            "name": "Eidolon Symbiosis",
-            "description": "<p>Your connection with your eidolon strengthens, granting your eidolon access to a new ability depending on its type, as described in Eidolon Abilities in each eidolon's entry.</p>"
+            "name": "幻灵共生 Eidolon Symbiosis",
+            "description": "<p>你与幻灵之间的联结得到了强化，根据幻灵类型，幻灵获得了一项新能力，见每个幻灵条目中幻灵能力的描述。</p>"
         },
         "Eidolon Transcendence": {
-            "name": "Eidolon Transcendence",
-            "description": "<p>Your connection with your eidolon approaches its peak, granting your eidolon access to a powerful new ability depending on its type, as described in Eidolon Abilities in each eidolon's entry. This ability also increases one of the eidolon's ability scores by 2.</p>"
+            "name": "超凡幻灵 Eidolon Transcendence",
+            "description": "<p>你与幻灵之间了联结强化至了巅峰，根据其类型，幻灵获得了一项强力的新能力，见每个幻灵条目中幻灵能力的描述。该能力也将幻灵的一项属性值提升2点。</p>"
         },
         "Eidolon Unarmed Expertise": {
-            "name": "Eidolon Unarmed Expertise",
-            "description": "<p>Your eidolon becomes more capable of using its unarmed attacks. Its proficiency rank for unarmed attacks increases to expert.</p>"
+            "name": "幻灵无武装精通 Eidolon Unarmed Expertise",
+            "description": "<p>你的幻灵更加擅长使用无武装攻击。幻灵的无武装攻击的熟练等级提升至专家。</p>"
         },
         "Eidolon Unarmed Mastery": {
-            "name": "Eidolon Unarmed Mastery",
-            "description": "<p>Your eidolon truly masters its unarmed attacks, reaching greater heights. Its proficiency rank for unarmed attacks increases to master.</p>"
+            "name": "幻灵无武装大师 Eidolon Unarmed Mastery",
+            "description": "<p>你的幻灵确实掌握了无武装攻击的精髓。幻灵在无武装攻击上的熟练等级提升至大师。</p>"
         },
         "Eidolon Weapon Specialization": {
-            "name": "Eidolon Weapon Specialization",
-            "description": "<p>Your eidolon has learned how to inflict greater injuries with its unarmed attacks. It deals 2 additional Damage with unarmed attacks in which it's an expert. This damage increases to 3 if it's a master, and 4 if it's legendary.</p>"
+            "name": "幻灵武器专精 Eidolon Weapon Specialization",
+            "description": "<p>你的幻灵掌握了如何使用无武装攻击造成更大的伤害。幻灵在使用专家熟练度的无武装攻击时造成2点额外伤害。该伤害在大师熟练度时提升至3点，在传奇熟练度时提升至4点。</p>"
         },
         "Enraged Assassin": {
-            "name": "Enraged Assassin",
-            "description": "<p>Str 14, Dex 18, Con 16, Int 10, Wis 8, Cha 12; +1 AC (+4 Dex cap)</p>"
+            "name": "怨愤刺客 Enraged Assassin",
+            "description": "<p>力量 14, 敏捷 18, 体质 16, 智力 10, 感知 8, 魅力 12; +1 AC (+4 敏捷上限)</p>"
         },
         "Fey Chicanery": {
-            "name": "Fey Chicanery",
-            "description": "<p>Ever full of tricks, your fey eidolon twists magical protections into your shared life force, granting it a contingency in its back pocket for desperate situations. During your daily preparations, your eidolon can cast a @UUID[Compendium.pf2e.spells-srd.WG91Z5TiR6oO5FOw]{Contingency} spell. The 4th-level spell it chooses must come from the primal or fey gift list, and must either be common or be another spell you have access to.</p>"
+            "name": "妖精花招 Fey Chicanery",
+            "description": "<p>你的妖精的脑袋里装满了诡计，能将魔法的防护力转变为你们共享的生命力，在绝望的情况下也能从其后备口袋中掏出预备方案。在你的每日准备中，你的幻灵能够施展@UUID[Compendium.pf2e.spells-srd.WG91Z5TiR6oO5FOw]{触发术 Contingency}法术。它所选择的4环法术必须来自原能或妖精赠礼法术表，而且必须是常见的或其他你能接触到的法术。</p>"
         },
         "Fey Gift Spells": {
-            "name": "Fey Gift Spells",
-            "description": "<p>Your eidolon expands your primal magic with enchantment and illusion magic, allowing both of you to wield the power of fey charm and glamour. When you add spells to your repertoire, you can choose from the primal list as well as from enchantment and illusion spells that appear on the arcane spell list. As usual for when you add spells of a different tradition to your spell list, you're still a primal spellcaster, so all of your spells are primal spells.</p>\n<p>Your eidolon gains the @UUID[Compendium.pf2e.feats-srd.WfbmFsRxbVyzMmCz]{Magical Understudy} summoner feat, despite not meeting the prerequisite level, and it can choose fey gift cantrips in addition to primal cantrips. As usual for a feat you are granted by name, you can't retrain Magical Understudy into another feat.</p>"
+            "name": "妖精赠礼法术 Fey Gift Spells",
+            "description": "<p>你的幻灵用惑控系和幻术系魔法扩展了你的原能法术，让你们两者都能运用妖精的魅惑魔力。当你添加法术到法术库时，除了从原能法术表中选择外，你还能从奥术法术表中选择惑控系和幻术系的法术。和往常一样，当你将不同根源的法术添加到你的法术列表时，你仍然是原能施法者，因此你的所有法术都是原能法术。</p>\n<p>你的幻灵获得@UUID[Compendium.pf2e.feats-srd.WfbmFsRxbVyzMmCz]{魔法替身 Magical Understudy}召唤师专长，即使还没满足先决条件的等级，且它在原能戏法外还能选择妖精赠礼的戏法。像其他获得指定名称的专长的情况一样，你不能将魔法替身重训为其他专长。</p>"
         },
         "Fey Mischief": {
-            "name": "Fey Mischief",
-            "description": "<p>Your eidolon's fey magic becomes more powerful and mischievous. Your eidolon gains the @UUID[Compendium.pf2e.feats-srd.b1eGMNjBY3iqIt2S]{Magical Adept} feat, despite not meeting the prerequisite level, and can choose from fey gift spells in addition to primal spells.</p>"
+            "name": "妖精捣蛋 Fey Mischief",
+            "description": "<p>的幻灵的妖精魔法变得更加强力且顽皮。你的幻灵获得@UUID[Compendium.pf2e.feats-srd.b1eGMNjBY3iqIt2S]{魔法导师 Magical Adept}专长，即使还没满足先决条件的等级，而且除了原能法术外还能选择妖精赠礼法术表的法术。</p>"
         },
         "Field of Roots": {
-            "name": "Field of Roots",
-            "description": "<p>Your eidolon learns how to send its roots underground to hinder foes. It gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.4ZCaD8Y817JjbrX2]{Field of Roots} activity.</p>"
+            "name": "根生领域 Field of Roots",
+            "description": "<p>你的幻灵知道如何将根深入地底并阻碍敌人。它获得@UUID[Compendium.pf2e-animal-companions.AC-Features.4ZCaD8Y817JjbrX2]{根生领域 Field of Roots}行动。</p>\n<p>你的幻灵将根植入地底，纠缠并可能伤害所有附近的敌人。所有在幻灵触及内的敌人承受伤害，类型和数值相当于幻灵伤害最高的打击，且具体效果根据反射豁免结果确定。任何持续性的豁免效果持续到敌人成功逃脱或离开了幻灵的触及。使用根生领域后，你的幻灵陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它进行了一个具有操作特征的单动作与地面分离；这也会终止敌人身上来自根生领域的剩余效果。</p>\n<hr />\n<p><strong>大成功</strong> 敌人不受影响。</p>\n<p><strong>成功</strong> 敌人不承受伤害，但在速度上承受-10尺环境罚值。</p>\n<p><strong>失败</strong> 敌人承受一半的伤害，速度承受-10尺环境罚值，以及，在他的每个回合结束时，再次承受一半的伤害。</p>\n<p><strong>大失败</strong> 敌人被禁足，承受完整的伤害，以及，在他的每个回合结束时，再次承受完整的伤害。</p>"
         },
         "Fleet Beast": {
-            "name": "Fleet Beast",
-            "description": "<p>Str 14, Dex 18, Con 16, Int 8, Wis 12, Cha 10; +1 AC (+4 Dex cap)</p>"
+            "name": "疾驰野兽 Fleet Beast",
+            "description": "<p>力量 14, 敏捷 18, 体质 16, 智力 8, 感知 12, 魅力 10; +1 AC (+4 敏捷上限)</p>"
         },
         "Furious Strike": {
             "name": "狂怒打击 Furious Strike",
             "description": "<p>你的幻灵将从未缓和的愤怒灌注进一次攻击。它获得@UUID[Compendium.pf2e.actionspf2e.06frwOOuo4HJtivl]{狂怒打击 Furious Strike}行动。</p>\n<p>你的幻灵将愤怒引导进一次狂怒的攻击。它进行一次近战打击，且在计算多次攻击罚值时记为两次攻击。如果这次打击命中，你的幻灵造成1个额外的武器伤害骰，并在伤害骰上获得+1环境加值。</p>\n<p>如果你有至少10级，提高到2个额外骰以及+2环境加值；如果你有至少18级，提高到3个额外骰以及+3环境加值。</p>"
         },
         "Greater Eidolon Specialization": {
-            "name": "Greater Eidolon Specialization",
-            "description": "<p>Your eidolon's damage from weapon specialization increases to 4 with unarmed attacks in which it's an expert, 6 if it's a master, and 8 if it's legendary.</p>"
+            "name": "高等幻灵专精 Greater Eidolon Specialization",
+            "description": "<p>你的幻灵从武器专精中获得的伤害增加到4点，大师是6点，传奇是8点。</p>"
         },
         "Growing Vines": {
-            "name": "Growing Vines",
-            "description": "<p>Your eidolon's vines and branches lengthen even more. All your eidolon's melee unarmed attacks gain the reach trait.</p>"
+            "name": "藤蔓生长 Growing Vines",
+            "description": "<p>你的幻灵的藤蔓和枝条长得更长。幻灵所有的近战无武装攻击获得长触及特征。</p>"
         },
         "Guardian Plant": {
-            "name": "Guardian Plant",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 8, Wis 12, Cha 10; +2 AC (+3 Dex cap)</p>"
+            "name": "守卫植物 Guardian Plant",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 8, 感知 12, 魅力 10; +2 AC (+3 敏捷上限)</p>"
         },
         "Hallowed Strikes": {
             "name": "崇圣打击 Hallowed Strikes",
             "description": "<p>你幻灵的攻击被天界灌注了神圣的慈悲力量。幻灵的无武装攻击造成额外[[/r {1}[good]]]{1善良伤害}；如常，这些额外伤害只能伤害邪恶生物，或对善良伤害具有弱点的生物。另外，你的幻灵的所有无武装攻击都可以进行非致命攻击，而无需承担-2的环境罚值。</p>"
         },
         "Hidden Watcher": {
-            "name": "Hidden Watcher",
-            "description": "<p>Your eidolon can render both of you unseen. Once per hour, it can cast @UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{Invisibility} targeting you, them, or both of you at once. If the spell targeted both of you, the spell ends for both of you if either of you uses a hostile action.</p>"
+            "name": "隐藏守望 Hidden Watcher",
+            "description": "<p>你的幻灵能将你们二者都从视野中消去。每小时一次，它可以对你，对它，或同时对你们二者施展@UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{隐形术 Invisibility}。如果该法术目标为你们二者，则你们中的任意一人进行敌意动作时法术都会终止。</p>"
         },
         "Intelligence Boost": {
-            "name": "Intelligence Boost"
+            "name": "智力提升 Intelligence Boost"
         },
         "Marauding Dragon": {
-            "name": "Marauding Dragon",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 10, Cha 10; +2 AC (+3 Dex cap)</p>"
+            "name": "劫掠龙 Marauding Dragon",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 10, 感知 10, 魅力 10; +2 AC (+3 敏捷上限)</p>"
         },
         "Mindless Companion": {
             "name": "无心智伙伴 Mindless Companion",
             "description": "<p>一些不死伙伴是无心智的。无心智特征让他们如常免疫所有心灵效果。一个无心智伙伴的受训技能只能是特技和运动，并且其不能在其他技能上受训。即使无心智伙伴获得了在战斗中无需命令就能有限行动的能力，例如从成年动物伙伴专长，它也只能重复上一次命令的行动；它无法自行采取新的行动。一个无心智伙伴无法获得提升其智力或赋予其在特技和运动以外技能获益的特化能力，并且它无法使用和受益于动物伙伴的那些一般需要生物具有心智、能够思考、做出选择的专长和其他选项。当存在疑问时，由GM决定无心智伙伴能够使用那些能力。</p>"
         },
         "Negative Essence": {
-            "name": "Negative Essence",
-            "description": "<p>Your undead eidolon has a link directly to your life force, which grants it a twilight state between living and undead. This renders it a living creature and therefore susceptible to many ailments that bother only the living, though it does possess some resistances to these effects. The eidolon has negative healing, meaning it heals from negative energy effects that heal undead and is damaged by positive energy effects that damage undead. It doesn't have an undead's normal immunities, but it does gain a +2 circumstance bonus to saving throws against death effects, disease, and poison effects, and non-damaging effects that target only undead. Additionally, its necrotic essence stanches its wounds easily. The flat check to remove persistent bleed damage from the eidolon is DC 10 (or DC 5 after receiving particularly effective aid).</p>"
+            "name": "负能量要素 Negative Essence",
+            "description": "<p>你的不死幻灵与你的生命力直接相连，赋予它一种介于生死之间的模糊状态。其使他如生者一般，因此让其会被许多只会困扰生者的病痛所影响，然而它依然具有针对这些效果的抗性。幻灵具有负能量治疗，意味着它从治疗不死者的负能量效果中获取治疗并被伤害不死生物的正能量效果中受伤。他不具备一个不死生物的常规免疫能力，但它在对抗死亡、疾病、毒素效果和只以不死生物为目标的非伤害类效果时，豁免骰获得 +2 环境加值。额外的，它的暗蚀要素让其更容易凝固伤口。幻灵在移除持续流血伤害时的纯骰检定DC为10（在获得特别有效的援助时则为5）。</p>"
         },
         "Negative Healing": {
-            "name": "Negative Healing",
+            "name": "负能量治疗 Negative Healing",
             "description": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
         },
         "Primal Roar": {
@@ -242,134 +242,134 @@
             "description": "<p>你的幻灵能够进行恐怖的怒吼，吹出尖锐的哨音，或采用其他方式产生震撼的噪音以挫败敌人的士气。它获得@UUID[Compendium.pf2e.actionspf2e.kbUymGTjbesOKsV6]{原始咆哮 Primal Roar}行动。</p>\n<p>你的幻灵释放出原始的怒吼或其他与幻灵形态相符的令人恐惧的噪音。你的幻灵对能听见咆哮的30尺内的每个敌人进行威吓检定以@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。这次挫败士气不会因语言不通而承受罚值。</p>"
         },
         "Primary (1d6, deadly d8, finesse)": {
-            "name": "Primary (1d6, deadly d8, finesse)"
+            "name": "主要攻击 Primary (1d6伤害, 致命d8, 娴熟)"
         },
         "Primary (1d6, fatal d10)": {
-            "name": "Primary (1d6, fatal d10)"
+            "name": "主要攻击 Primary (1d6伤害, 夺命d10)"
         },
         "Primary (1d6, forceful, sweep)": {
-            "name": "Primary (1d6, forceful, sweep)"
+            "name": "主要攻击 Primary (1d6伤害, 叠劲, 横扫)"
         },
         "Primary (1d8, disarm)": {
-            "name": "Primary (1d8, disarm)"
+            "name": "主要攻击 Primary (1d8伤害, 卸武)"
         },
         "Primary (1d8, nonlethal)": {
-            "name": "Primary (1d8, nonlethal)"
+            "name": "主要攻击 Primary (1d8伤害, 非致命)"
         },
         "Primary (1d8, shove)": {
-            "name": "Primary (1d8, shove)"
+            "name": "主要攻击 Primary (1d8伤害, 推撞)"
         },
         "Primary (1d8, trip)": {
-            "name": "Primary (1d8, trip)"
+            "name": "主要攻击 Primary (1d8伤害, 摔绊)"
         },
         "Reconfigured Evolution": {
             "name": "重设进化 Reconfigured Evolution",
             "description": "<p>你的构装幻灵十分容易重新配置，获得一项符合你们两者想象的额外进化。选择1个6级或更低的额外进化专长。你的幻灵获得该专长。你只要花费1天休整期，并成功通过<span data-pf2-check=\"crafting\" data-pf2-label=\"Reconfigured Evolution DC\" data-pf2-dc=\"@self.level\" data-pf2-show-dc=\"gm\">手艺</span>检定（DC为符合召唤师等级的标准DC），就能将该专长重训为其他任何6级或更低的进化专长。如果检定失败，你能在之后某天再次尝试。许多召唤师为该能力选择幻灵怒火专长。</p>"
         },
         "Rejuvenation": {
-            "name": "Rejuvenation",
-            "description": "<p>Your eidolon's unusual connection with you allows you both to rejuvenate when defeated. The first time each day your turn begins while you're dying, you instantly regain a number of Hit Points equal to three times your level and wake up. (Increase your wounded condition as normal.) You can immediately Manifest Your Eidolon as a free action. You can then take your turn as normal.</p>"
+            "name": "复苏 Rejuvenation",
+            "description": "<p>幻灵与你那非同寻常的链接让你们得以在被击败时复苏。每天一次，在你回合开始时你处于濒死状态，则你立刻获得等同于三倍你等级数值的生命值并苏醒。（你的受伤状态如常增加。）你可以立刻以一个自由动作显现你的幻灵。随后，你可以正常进行你的回合。</p>"
         },
         "Scout Construct": {
-            "name": "Scout Construct",
-            "description": "<p>Str 14, Dex 18, Con 16, Int 12, Wis 10, Cha 8; +1 AC (+4 Dex cap)</p>"
+            "name": "斥候构装体 Scout Construct",
+            "description": "<p>力量 14, 敏捷 18, 体质 16, 智力 12, 感知 10, 魅力 8; +1 AC (+4 敏捷上限)</p>"
         },
         "Scribe of the Dead": {
-            "name": "Scribe of the Dead",
-            "description": "<p>Str 12, Dex 18, Con 12, Int 14, Wis 12, Cha 10; +1 AC (+4 Dex cap)</p>"
+            "name": "亡者书吏 Scribe of the Dead",
+            "description": "<p>力量 12, 敏捷 18, 体质 12, 智力 14, 感知 12, 魅力 10; +1 AC (+4 敏捷上限)</p>"
         },
         "Secondary Attack": {
-            "name": "Secondary Attack"
+            "name": "次要攻击 Secondary Attack"
         },
         "Seething Frenzy": {
             "name": "沸腾狂怒 Seething Frenzy",
             "description": "<p>你的幻灵能驱动自己进入狂怒状态。它获得@Compendium[pf2e-animal-companions.AC-Features.7K6UJ3D3owmOQS03]{沸腾狂怒 Seething Frenzy}动作。</p>\n<p>你的幻灵的愤怒沸腾成了一种鲁莽、失控的狂怒。狂怒中，你的幻灵受到<em>@Compendium[pf2e.spells-srd.HStu2Yhw3iQER9tY]{激励幻灵 Boost Eidolon}</em>的影响，并获得等同于你等级的临时生命值，但在AC上承受-2罚值。你的幻灵无法自愿终止狂怒，或者在狂怒中开始另一个狂怒。暴怒持续1分钟，之后它会@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}1分钟，而且在1分钟内无法开始另一个狂怒 。</p>\n<p>@Compendium[pf2e-animal-companions.AC-Features.yE9n6h53psgbYThV]{效果: 沸腾狂怒}</p>"
         },
         "Skirmisher Fey": {
-            "name": "Skirmisher Fey",
-            "description": "<p>Str 14, Dex 18, Con 14, Int 10, Wis 10, Cha 12; +1 AC (+4 Dex cap)</p>"
+            "name": "妖精散兵 Skirmisher Fey",
+            "description": "<p>力量 14, 敏捷 18, 体质 14, 智力 10, 感知 10, 魅力 12; +1 AC (+4 敏捷上限)</p>"
         },
         "Soul Guardian": {
-            "name": "Soul Guardian",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 12, Cha 8; +2 AC (+3 Dex cap)</p>"
+            "name": "灵魂守卫 Soul Guardian",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 10, 感知 12, 魅力 8; +2 AC (+3 敏捷上限)</p>"
         },
         "Spirit Taker": {
-            "name": "Spirit Taker",
-            "description": "<p>Your eidolon is particularly capable when it comes to handling bodiless spirits and putting undead to their final rest. Your eidolon can see incorporeal creatures inside of solid objects and can attack them with Strikes without penalty; an incorporeal creature in a solid object that takes damage from your eidolon's Strike is expelled from the object to the nearest available space, moving closer to your eidolon if possible.</p>\n<p>Additionally, your eidolon can target or affect a creature projecting its consciousness (such as via project image) or possessing another creature, even if its body is elsewhere, though your eidolon must know about the possession or projection and choose to do so.</p>\n<p>Finally, the spirit of an undead destroyed by your eidolon's Strikes is sent directly to the Boneyard for judgment; an undead with an ability to avoid such a fate automatically, such as a ghost's rejuvenation, can attempt a counteract check against your spell DC to return via that ability as normal. In that case, it uses its Will save modifier as its counteract modifier.</p>"
+            "name": "招魂 Spirit Taker",
+            "description": "<p>你的幻灵十分擅长处理无躯体的灵魂以及让不死生物永眠。你的幻灵可以看到固态物体中的虚体生物，并能无惩罚地使用打击对其进行攻击；在固态物体中的虚体生物如果承受了来自你的幻灵的打击伤害，就会被从固态物体中推出到最近的开放空间，如果可能的话需要接近你的幻灵。</p>\n<p>另外，你的幻灵能瞄准或影响正在投射意识的生物（例如通过投影术）或占据其他生物的生物，即使它的身体在别的地方，但你的幻灵必须知道投射或占据的事实并选择这么做。</p>\n<p>最后，被你幻灵的打击摧毁的不死生物的灵魂会被直接送到骨园接受审判；拥有某种能自动回避该命运的能力的不死生物，例如拥有复生能力的幽灵，可以尝试一个针对你法术DC的反制检定以通过该能力回归。在这种情况下，它使用意志豁免调整值作为它的反制调整值。</p>"
         },
         "Spirit Touch": {
-            "name": "Spirit Touch",
-            "description": "<p>Your eidolon's attacks possess a psychopomp's ability to harm the living and the dead. Your eidolon's unarmed Strikes affect incorporeal creatures as though etched with a ghost touch property rune and deal an extra [[/r {1}[negative]]]{1 negative伤害} to living creatures and an extra [[/r {1}[positive]]]{1 positive伤害} to undead.</p>"
+            "name": "灵魂之触 Spirit Touch",
+            "description": "<p>你的幻灵的攻击具有招魂者伤害活物和死物的能力。你的幻灵的无武装打击能如幽冥性能符文一般影响虚体生物，并对活物造成额外[[/r {1}[negative]]]{1负能量伤害}，对不死生物造成额外[[/r {1}[positive]]]{1正能量伤害}。</p>"
         },
         "Stalwart Guardian": {
-            "name": "Stalwart Guardian",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 10, Cha 10; +2 AC (+3 Dex cap)</p>"
+            "name": "坚定卫士 Stalwart Guardian",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 10, 感知 10, 魅力 10; +2 AC (+3 敏捷上限)</p>"
         },
         "Steadfast Devotion": {
-            "name": "Steadfast Devotion",
-            "description": "<p>Your eidolon's dedication makes it extremely challenging for your foes to bend its mind. Your eidolon gains a +2 circumstance bonus to saving throws against mental effects, and if they roll a success against such an effect, they get a critical success instead. If you have the shared resolve class feature and your eidolon rolls a critical failure against a mental effect, they get a failure instead.</p>"
+            "name": "忠心不移 Steadfast Devotion",
+            "description": "<p>你的幻灵的献身精神令你的敌人极难扭曲它的意志。你的幻灵在针对所有对抗精神效果的豁免骰中获得+2环境加值，如果他在对抗这样的效果时投出了成功，则用大成功替换。如果你获得了共享决意职业特性，且你的幻灵在对抗精神效果时投出了大失败，则用失败替换。</p>"
         },
         "Strength Boost": {
-            "name": "Strength Boost"
+            "name": "力量提升 Strength Boost"
         },
         "Swift Protector": {
-            "name": "Swift Protector",
-            "description": "<p>Str 14, Dex 18, Con 16, Int 10, Wis 10, Cha 10; +1 AC (+4 Dex cap)</p>"
+            "name": "迅捷护卫 Swift Protector",
+            "description": "<p>力量 14, 敏捷 18, 体质 16, 智力 10, 感知 10, 魅力 10; +1 AC (+4 敏捷上限)</p>"
         },
         "Tempter Demon": {
-            "name": "Tempter Demon",
-            "description": "<p>Str 12, Dex 18, Con 12, Int 10, Wis 10, Cha 16; +1 AC (+4 Dex cap)</p>"
+            "name": "魅惑恶魔 Tempter Demon",
+            "description": "<p>力量 12, 敏捷 18, 体质 12, 智力 10, 感知 10, 魅力 16; +1 AC (+4 敏捷上限)</p>"
         },
         "Tendril Strike": {
-            "name": "Tendril Strike",
-            "description": "<p>Your eidolon can stretch out vines and roots, attacking foes outside its reach. It gains the @UUID[Compendium.pf2e-animal-companions.AC-Features.fNTyFkFxNCi5O5SE]{Tendril Strike} action.</p>"
+            "name": "藤条打击 Tendril Strike",
+            "description": "<p>你的幻灵能伸出藤蔓和根须，攻击触及外的敌人。它获得@UUID[Compendium.pf2e-animal-companions.AC-Features.fNTyFkFxNCi5O5SE]{藤条打击 Tendril Strike}动作。</p>\n<p>你的幻灵将身体伸展到极限，攻击通常无法触及到的敌人。你的幻灵进行一次近战无武装打击，将这次打击的触及延伸5尺。如果这个无武装打击具有卸武、猛推或摔绊特征，幻灵也可以使用对应的动作取代打击。</p>"
         },
         "Traveler's Aura": {
             "name": "旅者灵光 Traveler's Aura",
             "description": "<p>你的幻灵散发出一种强大的灵光——就像是星界神使的一样——能在生物旅行时为其提供保护。该灵光具有防护系、灵光和神术特征。你的幻灵及其@Template[type:emanation|distance:20]范围内的盟友都不受严重炎热和寒冷的影响，你的幻灵永远不会对灵光范围内且等级低于自己生物@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>当你获得超凡幻灵职业特性，这个灵光进化成星界神使的灵光的完整效果；你的幻灵及其灵光范围内的盟友都不受任何位面的环境伤害的影响，包括严重和极端的炎热和寒冷，以及其他更加罕见的危险。</p>"
         },
         "Trickster Fey": {
-            "name": "Trickster Fey",
-            "description": "<p>Str 12, Dex 18, Con 12, Int 12, Wis 8, Cha 16; +1 AC (+4 Dex cap)</p>"
+            "name": "妖精诡术师 Trickster Fey",
+            "description": "<p>力量 12, 敏捷 18, 体质 12, 智力 12, 感知 8, 魅力 16; +1 AC (+4 敏捷上限)</p>"
         },
         "Ultimate Reconfiguration": {
             "name": "究极重置 Ultimate Reconfiguration",
             "description": "<p>你的构装幻灵变得极其容易定制。选择1个16级或更低的进化专长。你的幻灵获得该专长。你可以花费休整期，使用制作行动调整它，就如调整重设进化能力所提供的专长一样。许多召唤师为这个能力选择无寐感官。</p>"
         },
         "Undead Brute": {
-            "name": "Undead Brute",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 8, Wis 10, Cha 12</p>"
+            "name": "不死狂暴者 Undead Brute",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 8, 感知 10, 魅力 12</p>"
         },
         "Undead Stalker": {
-            "name": "Undead Stalker",
-            "description": "<p>Str 14, Dex 18, Con 16, Int 8, Wis 12, Cha 10</p>"
+            "name": "不死潜伏者 Undead Stalker",
+            "description": "<p>力量 14, 敏捷 18, 体质 16, 智力 8, 感知 12, 魅力 10</p>"
         },
         "Visions of Sin": {
             "name": "罪恶异象 Visions of Sin",
-            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p>你的幻灵在30尺内一个目标生物的心中召唤出其罪恶的景象，折磨并扰乱目标。目标必须进行一个意志豁免对抗你的法术DC，效果如下所示。该效果持续到你的下一回合结束，但你的幻灵可以使用1个具有专注特征的单动作将效果延长到你的再下一个回合结束（如维持法术），直到1分钟的最大持续时间。如果目标邪恶，则在豁免骰中承受-2环境罚值。无论是否成功，目标都获得一天的临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标无法使用反应。</p>\n<p><strong>失败</strong> The target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions.</p>\n<p><strong>大失败</strong> As failure, and the target is also @UUID[Compendium.pf2e.conditionitems.Confused]{Confused} for 1 round. The confusion can't be extended, but the other effects can.</p>"
+            "description": "<p>你的恶魔从罪恶中诞生，能将构成它自身的罪恶投射到其他人的心智之中。它获得@UUID[Compendium.pf2e.actionspf2e.iJLzVonevhsi2uPs]{罪恶异象 Visions of Sin}行动。</p>\n<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p>你的幻灵在30尺内一个目标生物的心中召唤出其罪恶的景象，折磨并扰乱目标。目标必须进行一个意志豁免对抗你的法术DC，效果如下所示。该效果持续到你的下一回合结束，但你的幻灵可以使用1个具有专注特征的单动作将效果延长到你的再下一个回合结束（如维持法术），直到1分钟的最大持续时间。如果目标邪恶，则在豁免骰中承受-2环境罚值。无论是否成功，目标都获得一天的临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标无法使用反应。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}而且无法使用反应。</p>\n<p><strong>大失败</strong> 和失败一样，而且目标也@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。困惑无法被延长，但其他效果可以。</p>"
         },
         "Warrior Construct": {
-            "name": "Warrior Construct",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 12, Wis 10, Cha 8; +2 AC (+3 Dex cap)</p>"
+            "name": "战士构装体 Warrior Construct",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 12, 感知 10, 魅力 8; +2 AC (+3 敏捷上限)</p>"
         },
         "Whirlwind Maul": {
             "name": "旋风撕咬 Whirlwind Maul",
             "description": "<p>你的幻灵暴力地摆动，伤害触及内的多个敌人。它获得@UUID[Compendium.pf2e-animal-companions.AC-Features.W4VCL85CO77MYkQH]{旋风撕咬 Whirlwind Maul}行动。</p>\n<p>你的幻灵对所有方向同时发动攻击。它对触及内的最多4名敌人进行1次近战无武装打击。幻灵可以对每个敌人选择不同的无武装攻击。每次攻击都会算入你的多重攻击罚值，但直到幻灵完成全部攻击之前，罚值都不会提升。</p>"
         },
         "Wisdom Boost": {
-            "name": "Wisdom Boost"
+            "name": "感知提升 Wisdom Boost"
         },
         "Wrathful Berserker": {
-            "name": "Wrathful Berserker",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 8, Wis 10, Cha 12; +2 AC (+3 Dex cap)</p>"
+            "name": "怒火狂战士 Wrathful Berserker",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 8, 感知 10, 魅力 12; +2 AC (+3 敏捷上限)</p>"
         },
         "Wrecker Demon": {
-            "name": "Wrecker Demon",
-            "description": "<p>Str 18, Dex 14, Con 16, Int 10, Wis 8, Cha 12; +2 AC (+3 Dex cap)</p>"
+            "name": "毁坏恶魔 Wrecker Demon",
+            "description": "<p>力量 18, 敏捷 14, 体质 16, 智力 10, 感知 8, 魅力 12; +2 AC (+3 敏捷上限)</p>"
         },
         "Wyrm's Breath": {
-            "name": "Wyrm's Breath",
-            "description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p>Your eidolon gathers the power of the mightiest wyrms to make its magical breath even more spectacular. If your eidolon's next action is to use Breath Weapon, both the number of damage dice and area of the Breath Weapon are doubled.</p>"
+            "name": "巨龙吐息 Wyrm's Breath",
+            "description": "<p>你的幻灵可以吸取巨龙的力量以强化喷吐武器。你的幻灵获得@UUID[Compendium.pf2e.actionspf2e.OJ9cIvPukPT0rppR]{巨龙吐息 Wyrm's Breath}自由动作。</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p>你的幻灵聚集最强大的巨龙的力量，以令魔法喷吐变得更壮观。如果你的幻灵的下一个动作是使用喷吐武器，喷吐武器的伤害和范围都加倍。</p>"
         }
     }
 }
