@@ -76,7 +76,7 @@
         },
         "Alluring Performance": {
             "name": "Alluring Performance",
-            "description": "<p><strong>频率</strong> once per day</p>\n<hr />\n<p>You command the attention of those around you with an elegant display. Attempt a Performance check and compare it to the Will DC of each creature in a @Template[type:emanation|distance:15].</p>\n<hr />\n<p><strong>Critical Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated} with you for as long as you perform (unless it breaks from the fascination, as normal for the condition) and is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} for 1 round or as long as it's fascinated, whichever is longer.</p>\n<p><strong>Success</strong> The target is fascinated for 1 round and is dazzled for 1 round.</p>\n<p><strong>Failure</strong> The target is dazzled for 1 round.</p>\n<p><strong>Critical Failure</strong> The target is unaffected.</p>",
+            "description": "<p><strong>频率</strong> once per day</p>\n<hr />\n<p>You command the attention of those around you with an elegant display. Attempt a Performance check and compare it to the Will DC of each creature in a @Template[type:emanation|distance:15].</p>\n<hr />\n<p><strong>大成功</strong> The target is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated} with you for as long as you perform (unless it breaks from the fascination, as normal for the condition) and is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled} for 1 round or as long as it's fascinated, whichever is longer.</p>\n<p><strong>成功</strong> The target is fascinated for 1 round and is dazzled for 1 round.</p>\n<p><strong>失败</strong> The target is dazzled for 1 round.</p>\n<p><strong>大失败</strong> The target is unaffected.</p>",
             "prerequisites": [
                 {
                     "value": "表演技能熟练度为受训"
@@ -344,7 +344,7 @@
         },
         "Disruptive Stare": {
             "name": "Disruptive Stare",
-            "description": "<p><strong>触发</strong> A creature within 30 feet attempts to Cast a Spell with the concentrate trait.</p>\n<hr />\n<p>Your frigid gaze can turn a foe's blood to ice. The triggering creature must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. It then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>Failure</strong> The triggering spell takes a –2 status penalty to its spell attack rolls and DCs.</p>\n<p><strong>Critical Failure</strong> The triggering spell is disrupted.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.QcReJp7kgURdQCGz]{Effect: Disruptive Stare}</p>"
+            "description": "<p><strong>触发</strong> A creature within 30 feet attempts to Cast a Spell with the concentrate trait.</p>\n<hr />\n<p>Your frigid gaze can turn a foe's blood to ice. The triggering creature must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. It then becomes temporarily immune for 24 hours.</p>\n<hr />\n<p><strong>失败</strong> The triggering spell takes a –2 status penalty to its spell attack rolls and DCs.</p>\n<p><strong>大失败</strong> The triggering spell is disrupted.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.QcReJp7kgURdQCGz]{效果: Disruptive Stare}</p>"
         },
         "Drain Emotion": {
             "name": "Drain Emotion",
@@ -708,7 +708,7 @@
         },
         "Greater Enhance Venom": {
             "name": "Greater Enhance Venom",
-            "description": "<p>You upgrade the vishkanyan venom you can apply with @UUID[Compendium.pf2e.actionspf2e.s4V7JWSMF9JPJAeX]{Envenom} to greater vishkanyan venom. Envenom's frequency becomes once per minute.</p>\n<p><strong>Greater Vishkanyan Venom</strong> (level 17)</p>\n<p><strong>频率</strong> once per minute</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {7d6}[poison]]]{7d6毒素伤害} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {9d6}[poison]]]{9d6毒素伤害} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {11d6}[poison]]]{11d6毒素伤害} (1 round)</p>",
+            "description": "<p>You upgrade the vishkanyan venom you can apply with @UUID[Compendium.pf2e.actionspf2e.s4V7JWSMF9JPJAeX]{Envenom} to greater vishkanyan venom. Envenom's frequency becomes once per minute.</p>\n<p><strong>Greater Vishkanyan Venom</strong> (level 17)</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r {7d6}[poison]]]{7d6毒素伤害} (1 round)</p>\n<p><strong>Stage 2</strong> [[/r {9d6}[poison]]]{9d6毒素伤害} (1 round)</p>\n<p><strong>Stage 3</strong> [[/r {11d6}[poison]]]{11d6毒素伤害} (1 round)</p>",
             "prerequisites": [
                 {
                     "value": "Moderate Enhance Venom"
@@ -752,7 +752,7 @@
         },
         "Guided by the Stars": {
             "name": "Guided by the Stars",
-            "description": "<p><strong>频率</strong> once per day</p>\n<p><strong>触发</strong> You are about to attempt a skill check or saving throw.</p>\n<hr />\n<p>The stars grant you insights that guide your actions. You roll twice and take the better result. If it's night and you can see the stars, you gain a +1 circumstance bonus to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raLQ458uiyd3lI2K]{Effect: Guided by the Stars}</p>"
+            "description": "<p><strong>频率</strong> once per day</p>\n<p><strong>触发</strong> You are about to attempt a skill check or saving throw.</p>\n<hr />\n<p>The stars grant you insights that guide your actions. You roll twice and take the better result. If it's night and you can see the stars, you gain a +1 circumstance bonus to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raLQ458uiyd3lI2K]{效果: Guided by the Stars}</p>"
         },
         "Hamstring Strike": {
             "name": "Hamstring Strike",
@@ -794,7 +794,7 @@
         },
         "Hypnotic Lure": {
             "name": "Hypnotic Lure",
-            "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p>Your unblinking gaze is so intense it can befuddle the mind of others, drawing your victims toward you even against their better judgment. You stare at a creature within 30 feet. The target must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your class DC or spell DC.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> On its turn, the target must spend its first action to approach you. It can't Delay or take reactions until it has done so.</p>\n<p><strong>Critical Failure</strong> The target must use all its actions on its next turn to approach you. It can't Delay or take any reactions until it has reached a space that's adjacent to you (or as close to you as possible if it reaches an impassable barrier).</p>"
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p>Your unblinking gaze is so intense it can befuddle the mind of others, drawing your victims toward you even against their better judgment. You stare at a creature within 30 feet. The target must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your class DC or spell DC.</p>\n<hr />\n<p><strong>成功</strong> The target is unaffected.</p>\n<p><strong>失败</strong> On its turn, the target must spend its first action to approach you. It can't Delay or take reactions until it has done so.</p>\n<p><strong>大失败</strong> The target must use all its actions on its next turn to approach you. It can't Delay or take any reactions until it has reached a space that's adjacent to you (or as close to you as possible if it reaches an impassable barrier).</p>"
         },
         "Improved Hijack Undead": {
             "name": "精通劫持死灵 Improved Hijack Undead",
@@ -1074,7 +1074,7 @@
         },
         "Pit of Snakes": {
             "name": "Pit of Snakes",
-            "description": "<p>Mundane serpents obey your summons. You call forth a writhing mass of snakes, raising your hands to cause the snakes to emerge from the ground in a @Template[type:burst|distance:20] within 120 feet. The snakes appear on all squares of the ground in the area and remain for 1 minute. When you use Pit of Snakes, all creatures in the area must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:damaging-effect] save against the higher of your class DC or spell DC. Any creature that fails is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by a snake and takes [[/r {3d6}[bludgeoning]]]{3d6 bludgeoning伤害}. Whenever a creature ends its turn in the area, the snakes attempt to Grab that creature if they aren't already grabbing it. Any creature already grabbed instead takes [[/r {2d6}[bludgeoning]]]{2d6 bludgeoning伤害}.</p>\n<p>The snakes' @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC is equal to the higher of your class DC or spell DC. A creature can attack a snake in an attempt to release its grip. The snake's AC is equal to the higher of your class DC or spell DC, and it's destroyed if it takes 12 or more damage. Even if a specific snake is destroyed, additional snakes continue to cavort in the area until the duration ends. You can Dismiss the effect.</p>"
+            "description": "<p>Mundane serpents obey your summons. You call forth a writhing mass of snakes, raising your hands to cause the snakes to emerge from the ground in a @Template[type:burst|distance:20] within 120 feet. The snakes appear on all squares of the ground in the area and remain for 1 minute. When you use Pit of Snakes, all creatures in the area must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:damaging-effect] save against the higher of your class DC or spell DC. Any creature that fails is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by a snake and takes [[/r {3d6}[bludgeoning]]]{3d6钝击伤害}. Whenever a creature ends its turn in the area, the snakes attempt to Grab that creature if they aren't already grabbing it. Any creature already grabbed instead takes [[/r {2d6}[bludgeoning]]]{2d6钝击伤害}.</p>\n<p>The snakes' @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC is equal to the higher of your class DC or spell DC. A creature can attack a snake in an attempt to release its grip. The snake's AC is equal to the higher of your class DC or spell DC, and it's destroyed if it takes 12 or more damage. Even if a specific snake is destroyed, additional snakes continue to cavort in the area until the duration ends. You can Dismiss the effect.</p>"
         },
         "Planar Sidestep": {
             "name": "Planar Sidestep"
@@ -1090,7 +1090,7 @@
         },
         "Predict Weather": {
             "name": "Predict Weather",
-            "description": "<p>By observing often subtle indicators in the environment, you may try to predict the day's weather. Spend 10 minutes outdoors then attempt a @Check[type:survival|dc:20] check. (This check is reduced to @Check[type:survival|dc:15] if you have a commanding view of the region, but increases to @Check[type:survival|dc:30] if conditions are poor, such as attempting to predict weather with impaired visibility). Once you make an attempt to Predict the Weather, you cannot attempt to do so again for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> You accurately predict the day's precipitation, temperature, and wind. You learn if a weather event will occur in the region within the next 24 hours, and if so, what the event is and approximately when it will occur. You gain a +2 circumstance bonus to Survival checks made to prepare for this weather event.</p>\n<p><strong>Success</strong> You accurately predict the day's precipitation, temperature, and wind. You learn if a weather event will occur in the region during the next 24 hours, but not what that event will be or when it will take place. You gain a +1 circumstance bonus to Survival checks made to prepare for this weather event.</p>\n<p><strong>Critical Failure</strong> You come to a dramatically wrong conclusion. The GM provides information to you as though you had received a critical success, including the specifics of a weather event that will not occur that day (instead, a different event-or no event-may occur).</p>",
+            "description": "<p>By observing often subtle indicators in the environment, you may try to predict the day's weather. Spend 10 minutes outdoors then attempt a @Check[type:survival|dc:20] check. (This check is reduced to @Check[type:survival|dc:15] if you have a commanding view of the region, but increases to @Check[type:survival|dc:30] if conditions are poor, such as attempting to predict weather with impaired visibility). Once you make an attempt to Predict the Weather, you cannot attempt to do so again for 24 hours.</p>\n<hr />\n<p><strong>大成功</strong> You accurately predict the day's precipitation, temperature, and wind. You learn if a weather event will occur in the region within the next 24 hours, and if so, what the event is and approximately when it will occur. You gain a +2 circumstance bonus to Survival checks made to prepare for this weather event.</p>\n<p><strong>成功</strong> You accurately predict the day's precipitation, temperature, and wind. You learn if a weather event will occur in the region during the next 24 hours, but not what that event will be or when it will take place. You gain a +1 circumstance bonus to Survival checks made to prepare for this weather event.</p>\n<p><strong>大失败</strong> You come to a dramatically wrong conclusion. The GM provides information to you as though you had received a critical success, including the specifics of a weather event that will not occur that day (instead, a different event-or no event-may occur).</p>",
             "prerequisites": [
                 {
                     "value": "生存技能熟练度为受训"
@@ -1249,7 +1249,7 @@
         },
         "Roll With it (Kingmaker)": {
             "name": "Roll With it (Kingmaker)",
-            "description": "<p><strong>触发</strong> Your hunted prey, which must be a giant, hits you with a melee attack.</p>\n<hr />\n<p>You can dodge attacks from giants. Attempt a Reflex save using 10 + the giant's attack bonus as the save DC. If the result allows you to Stride as part of the reaction, you may instead Fly or Swim if you have the corresponding movement type.</p>\n<hr />\n<p><strong>Critical Success</strong> The attack misses you (or if the attack was a critical hit, it becomes a regular hit). You can Stride up to 10 feet as part of the reaction; if you do so, the reaction gains the move trait.</p>\n<p><strong>Success</strong> The attack deals half damage. You can Stride up to 5 feet as part of the reaction, but you must end this movement adjacent to the triggering giant. If you do so, the reaction gains the move trait.</p>\n<p><strong>Critical Failure</strong> You fail to avoid the attack and are knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} by the blow.</p>",
+            "description": "<p><strong>触发</strong> Your hunted prey, which must be a giant, hits you with a melee attack.</p>\n<hr />\n<p>You can dodge attacks from giants. Attempt a Reflex save using 10 + the giant's attack bonus as the save DC. If the result allows you to Stride as part of the reaction, you may instead Fly or Swim if you have the corresponding movement type.</p>\n<hr />\n<p><strong>大成功</strong> The attack misses you (or if the attack was a critical hit, it becomes a regular hit). You can Stride up to 10 feet as part of the reaction; if you do so, the reaction gains the move trait.</p>\n<p><strong>成功</strong> The attack deals half damage. You can Stride up to 5 feet as part of the reaction, but you must end this movement adjacent to the triggering giant. If you do so, the reaction gains the move trait.</p>\n<p><strong>大失败</strong> You fail to avoid the attack and are knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} by the blow.</p>",
             "prerequisites": [
                 {
                     "value": "Giant Hunter"
@@ -1302,7 +1302,7 @@
         },
         "Serpentcoil Slam": {
             "name": "Serpentcoil Slam",
-            "description": "<p><strong>频率</strong> once per minute</p>\n<hr />\n<p>Your people's ancient and storied rivalry with garudas led you to develop special techniques against flying foes. Make a melee Strike against a flying creature up to one size larger than you; if you hit, you use your neck or coils to smash the creature into the ground. In addition to the normal effects of your Strike, the creature moves to the nearest unoccupied ground space adjacent to you and can't Fly, levitate, or otherwise leave the ground for 1 round. On a critical hit, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>"
+            "description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p>Your people's ancient and storied rivalry with garudas led you to develop special techniques against flying foes. Make a melee Strike against a flying creature up to one size larger than you; if you hit, you use your neck or coils to smash the creature into the ground. In addition to the normal effects of your Strike, the creature moves to the nearest unoccupied ground space adjacent to you and can't Fly, levitate, or otherwise leave the ground for 1 round. On a critical hit, it can't Fly, levitate, or otherwise leave the ground for 1 minute.</p>"
         },
         "Serpentine Swimmer": {
             "name": "Serpentine Swimmer",
@@ -1382,7 +1382,7 @@
         },
         "Stalwart Standard": {
             "name": "坚定军旗 Stalwart Standard",
-            "description": "<p>你的旗帜会让你的敌人更难推动你的盟友，并鼓励你的盟友去保护无辜的人。受益于你骑兵旗帜专长的盟友，在对抗@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}和@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}时，在强韧和反射DC上获得+1环境加值。如果有敌人在上一轮伤害了等级低于某个受益盟友的无辜者，该盟友在攻击该敌人时，攻击检定获得+1状态加值，如；被召唤的生物、仆从、或者你或你的盟友为了获得这个加成而故意放任的生物不计。</p>",
+            "description": "<p>你的旗帜会让你的敌人更难推动你的盟友，并鼓励你的盟友去保护无辜的人。受益于你骑兵旗帜专长的盟友，在对抗@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}和@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}时，在强韧和反射DC上获得+1环境加值。如果有敌人在上一轮伤害了等级低于某个受益盟友的无辜者，该盟友在攻击该敌人时，攻击检定获得+1状态加值，如；被召唤的生物、仆从、或者你或你的盟友为了获得这个加成而故意放任的生物不计。</p>",
             "prerequisites": [
                 {
                     "value": "骑兵旗帜"
@@ -1482,7 +1482,7 @@
         },
         "The Harder They Fall (Kingmaker)": {
             "name": "The Harder They Fall (Kingmaker)",
-            "description": "<p>You know how to make a larger creature hurt when it falls to the ground. If you successfully @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip} a foe that's larger than you, it takes [[/r {1d8}[bludgeoning]]]{1d8 bludgeoning伤害} (or [[/r {2d8}[bludgeoning]]]{2d8 bludgeoning伤害} on a critical success). If you are master in Athletics, the damage increases to [[/r {2d8}[bludgeoning]]]{2d8 bludgeoning伤害} (or [[/r {4d8}[bludgeoning]]]{4d8 bludgeoning伤害} on a critical success).</p>",
+            "description": "<p>You know how to make a larger creature hurt when it falls to the ground. If you successfully @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip} a foe that's larger than you, it takes [[/r {1d8}[bludgeoning]]]{1d8钝击伤害} (or [[/r {2d8}[bludgeoning]]]{2d8钝击伤害} on a critical success). If you are master in Athletics, the damage increases to [[/r {2d8}[bludgeoning]]]{2d8钝击伤害} (or [[/r {4d8}[bludgeoning]]]{4d8钝击伤害} on a critical success).</p>",
             "prerequisites": [
                 {
                     "value": "巨人摔角术"
@@ -1533,7 +1533,7 @@
         },
         "Towering Presence": {
             "name": "Towering Presence",
-            "description": "<p>You fill an area with your force of will, towering beyond where your true form should be. Increase your size to Large until the beginning of your next turn. Your equipment grows with you but returns to natural size if removed. You're @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}. Your reach increases by 5 feet (or by 10 feet if you started out Tiny), and you gain a +2 status bonus to melee damage. Towering Presence has no effect if you were already Large or larger.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.XJtlvaqAHseq1yoz]{Effect: Towering Presence}</p>",
+            "description": "<p>You fill an area with your force of will, towering beyond where your true form should be. Increase your size to Large until the beginning of your next turn. Your equipment grows with you but returns to natural size if removed. You're @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1}. Your reach increases by 5 feet (or by 10 feet if you started out Tiny), and you gain a +2 status bonus to melee damage. Towering Presence has no effect if you were already Large or larger.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.XJtlvaqAHseq1yoz]{效果: Towering Presence}</p>",
             "prerequisites": [
                 {
                     "value": "Faultspawn"
@@ -1689,7 +1689,7 @@
         },
         "Viper Strike": {
             "name": "Viper Strike",
-            "description": "<p><strong>频率</strong> once per minute</p>\n<hr />\n<p>You move and attack with a swiftness that most can't follow. You Stride and then Strike. Your movement doesn't trigger reactions based on movement.</p>"
+            "description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p>You move and attack with a swiftness that most can't follow. You Stride and then Strike. Your movement doesn't trigger reactions based on movement.</p>"
         },
         "Vishkanya Lore": {
             "name": "Vishkanya Lore",
@@ -3793,7 +3793,7 @@
         },
         "Opportunistic Grapple": {
             "name": "借机擒抱 Opportunistic Grapple",
-            "description": "<p><strong>需求</strong> 你的猎物（prey）在触及范围内，你至少空着一只手，且目标体型最多比你大1级</p>\n<p><strong>触发</strong> 你的猎物（prey）在一次对你进行的近战@UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike} 攻击检定中掷出大失败</p>\n<hr />\n<p>你尝试一次运动检定对你的猎物进行@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}。</p>"
+            "description": "<p><strong>需求</strong> 你的猎物（prey）在触及范围内，你至少空着一只手，且目标体型最多比你大1级</p>\n<p><strong>触发</strong> 你的猎物（prey）在一次对你进行的近战@UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike} 攻击检定中掷出大失败</p>\n<hr />\n<p>你尝试一次运动检定对你的猎物进行@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}。</p>"
         },
         "Attack of Opportunity": {
             "name": "借机攻击 Attack of Opportunity",
@@ -7144,7 +7144,7 @@
             "description": "<p>混合利用恐龙骨头和你祖先的骨头来集中你的魔力，你成功活化蜥蝪和恐龙来传送讯息或允当坐骑。每天一次，你能作为原能天生法术施放<em>@UUID[Compendium.pf2e.spells-srd.yhz9fF69uwRhnHix]{动物信使 Animal Messenger}</em>和<em>@UUID[Compendium.pf2e.spells-srd.WPKJOhEihhcIm2uQ]{魅影驹 Phantom Steed}</em>。此动物信使总是一个超小型恐龙或蜥蝪，即使附近没有龙或蜥蝪，你的天生法术也把牠从骨头转化成血肉。魅影驹的外貌如同一个恐龙而非马匹，但功能完全一致。</p>"
         },
         "Gnaw": {
-            "name": "啮咬毁损 Gnaw",
+            "name": "啃噬 Gnaw",
             "description": "<p>只要有时间跟决心，没有你咬不烂的东西。向无主且并未活化的物品造成2倍的啮咬伤害。</p>",
             "prerequisites": [
                 {
@@ -7435,7 +7435,7 @@
         },
         "Ensnaring Wrappings": {
             "name": "圈套缠身 Ensnaring Wrappings",
-            "description": "<p><strong>触发</strong> 你的打击对目标造成伤害，且该目标在你手臂触及范围内、体型不超过你一级以上</p>\n<hr />\n<p>你身上的裹尸布条会松动缠绕你最近伤害的目标，你尝试对目标展开@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}。</p>",
+            "description": "<p><strong>触发</strong> 你的打击对目标造成伤害，且该目标在你手臂触及范围内、体型不超过你一级以上</p>\n<hr />\n<p>你身上的裹尸布条会松动缠绕你最近伤害的目标，你尝试对目标展开@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}。</p>",
             "prerequisites": [
                 {
                     "value": "木乃伊入门"
@@ -11174,7 +11174,7 @@
         },
         "Crushing Grab": {
             "name": "巨力缠压 Crushing Grab",
-            "description": "<p>彷如大蟒奋力，你紧紧的缠压住目标。当你成功@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}生物时，对该生物造成等于你力量调整值的钝击伤害。</p>"
+            "description": "<p>彷如大蟒奋力，你紧紧的缠压住目标。当你成功@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}生物时，对该生物造成等于你力量调整值的钝击伤害。</p>"
         },
         "Big Mouth": {
             "name": "巨嘴 Big Mouth",
@@ -13657,7 +13657,7 @@
         },
         "Blast Tackle": {
             "name": "截锋轰杀 Blast Tackle",
-            "description": "<p><strong>需求</strong> 你正持用一把双手弩或拥有反冲或散射特征的火器。</p>\n<hr />\n<p>你飞身扑向敌人，在开枪爆射之前先松开武器把它拉向你。尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}；如果你正双手持用你的武器你可以松开一只手来这么做。如果你的擒抱成功，你可以立即用需求中的武器打击被擒抱的目标，即使是双手武器你也可以用一只手持用。这次打击造成额外[[/r {3d6}[precision]]]{3d6精准伤害}。只要该生物仍被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，你可以以一只手装填武器并打击那个目标。</p>",
+            "description": "<p><strong>需求</strong> 你正持用一把双手弩或拥有反冲或散射特征的火器。</p>\n<hr />\n<p>你飞身扑向敌人，在开枪爆射之前先松开武器把它拉向你。尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}；如果你正双手持用你的武器你可以松开一只手来这么做。如果你的擒抱成功，你可以立即用需求中的武器打击被擒抱的目标，即使是双手武器你也可以用一只手持用。这次打击造成额外[[/r {3d6}[precision]]]{3d6精准伤害}。只要该生物仍被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，你可以以一只手装填武器并打击那个目标。</p>",
             "prerequisites": [
                 {
                     "value": "突击手之道"
@@ -14276,7 +14276,7 @@
         },
         "Drag Down": {
             "name": "拖曳入水 Drag Down",
-            "description": "<p>当你在至少10尺深的水中游泳时，你可以抓住一个相邻的生物（在附近的陆地或水中）并把他拉到水面以下。</p>\n<p>尝试一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}该生物。如果成功，如果该生物在陆地上，除了抓取的正常效果外，你还会把该生物拉到你附近的水域中。如果该生物已经在水中，成功后，除了擒拿的正常效果外，你还会将该生物拖入水中10尺深处，与该生物一起移动10尺。</p>\n<p>使用拖曳入水将生物移入水中或移入更深的地方，对生物来说是强制移动，但对你来说不是。</p>"
+            "description": "<p>当你在至少10尺深的水中游泳时，你可以抓住一个相邻的生物（在附近的陆地或水中）并把他拉到水面以下。</p>\n<p>尝试一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}该生物。如果成功，如果该生物在陆地上，除了抓取的正常效果外，你还会把该生物拉到你附近的水域中。如果该生物已经在水中，成功后，除了擒拿的正常效果外，你还会将该生物拖入水中10尺深处，与该生物一起移动10尺。</p>\n<p>使用拖曳入水将生物移入水中或移入更深的地方，对生物来说是强制移动，但对你来说不是。</p>"
         },
         "Parry And Riposte": {
             "name": "招架反击 Parry And Riposte",
@@ -14310,7 +14310,7 @@
         },
         "Muscle Mimicry": {
             "name": "拟态肌肉 Muscle Mimicry",
-            "description": "<p><strong>触发</strong> 一名敌人在@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}或@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}动作中检定成功</p>\n<hr />\n<p>即使在激烈的战斗中，你丰富的他人研究经验也能让你马上模仿他人动作。你研究目标的成功经验，并本能般地复制其行动。你下一次做出该触发本反应的动作时，你的运动技能检定获得+1环境加值，若触发动作为大成功，则获得+2环境加值。如果你在你的下回合结束前未使用该加值则会失去该好处。</p>",
+            "description": "<p><strong>触发</strong> 一名敌人在@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}或@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}动作中检定成功</p>\n<hr />\n<p>即使在激烈的战斗中，你丰富的他人研究经验也能让你马上模仿他人动作。你研究目标的成功经验，并本能般地复制其行动。你下一次做出该触发本反应的动作时，你的运动技能检定获得+1环境加值，若触发动作为大成功，则获得+2环境加值。如果你在你的下回合结束前未使用该加值则会失去该好处。</p>",
             "prerequisites": [
                 {
                     "value": "他我化形入门"
@@ -14325,7 +14325,7 @@
         },
         "Embrace The Pain": {
             "name": "拥抱疼痛 Embrace The Pain",
-            "description": "<p><strong>触发</strong> 一个生物以近战攻击对你造成伤害。</p>\n<hr />\n<p>你无视自己的疼痛，伸手抓住对你造成伤害的生物或武器。尝试运动检定以@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}触发生物，或将该生物的触发武器@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}。</p>"
+            "description": "<p><strong>触发</strong> 一个生物以近战攻击对你造成伤害。</p>\n<hr />\n<p>你无视自己的疼痛，伸手抓住对你造成伤害的生物或武器。尝试运动检定以@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}触发生物，或将该生物的触发武器@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}。</p>"
         },
         "Deflect Arrow": {
             "name": "拨挡飞箭 Deflect Arrow",
@@ -14601,7 +14601,7 @@
         },
         "Predatory Claws": {
             "name": "掠食者之爪 Predatory Claws",
-            "description": "<p>你的指甲长成了锐利的尖爪，尤其适合抓住并且撕裂你的猎物。你获得爪抓无武装攻击，造成1d4点挥砍伤害。你的爪抓属于搏击武器组，具有灵巧、娴熟和无武装特征。</p>\n<p>如果你在同一回合中连续两次爪抓打击命中了同一个敌人，你可以用一个自由动作对同个目标尝试一次@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}，前提是你在第二次打击之后立刻使用该动作。</p>",
+            "description": "<p>你的指甲长成了锐利的尖爪，尤其适合抓住并且撕裂你的猎物。你获得爪抓无武装攻击，造成1d4点挥砍伤害。你的爪抓属于搏击武器组，具有灵巧、娴熟和无武装特征。</p>\n<p>如果你在同一回合中连续两次爪抓打击命中了同一个敌人，你可以用一个自由动作对同个目标尝试一次@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}，前提是你在第二次打击之后立刻使用该动作。</p>",
             "prerequisites": [
                 {
                     "value": "吸血鬼入门"
@@ -17111,7 +17111,7 @@
         },
         "Sleeper Hold": {
             "name": "沉眠锁 Sleeper Hold",
-            "description": "<p><strong>需求</strong> 你正@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}住一个生物。</p>\n<hr />\n<p>你点中目标的神经系统穴道，阻碍其正常运作。进行一次运动技能检定尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}该生物，并用下列成功和大成功效果替代通常的效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}1分钟，但目标仍然站立着且不会丢下手持物品。</p>\n<p><strong>成功</strong> 目标直到其下回合结束时获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
+            "description": "<p><strong>需求</strong> 你正@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}住一个生物。</p>\n<hr />\n<p>你点中目标的神经系统穴道，阻碍其正常运作。进行一次运动技能检定尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}该生物，并用下列成功和大成功效果替代通常的效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}1分钟，但目标仍然站立着且不会丢下手持物品。</p>\n<p><strong>成功</strong> 目标直到其下回合结束时获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
         },
         "Furious Focus": {
             "name": "沉着暴怒 Furious Focus",
@@ -17738,7 +17738,7 @@
         },
         "Mixed Maneuver": {
             "name": "混合战技 Mixed Maneuver",
-            "description": "<p>你将两种不同的战技组合成一个整体使用。选择@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}、@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}之二。对同一个或不同的敌人使用所选的两个战技各一次，在两个战技攻击全部结算完之前不会应用多次攻击减值。</p>",
+            "description": "<p>你将两种不同的战技组合成一个整体使用。选择@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}、@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}之二。对同一个或不同的敌人使用所选的两个战技各一次，在两个战技攻击全部结算完之前不会应用多次攻击减值。</p>",
             "prerequisites": [
                 {
                     "value": "运动技能熟练度为大师"
@@ -17836,7 +17836,7 @@
         },
         "Ravenous Charge": {
             "name": "渴肉冲锋 Ravenous Charge",
-            "description": "<p>渴求着活人血肉的你磨牙霍霍地冲了上去。你行走。若你的移动结束时，有活物在你的近战触及范围内，那么你可以做出一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}该生物。若你的检定成功，则可以对该生物做出1次啃咬打击。</p>",
+            "description": "<p>渴求着活人血肉的你磨牙霍霍地冲了上去。你行走。若你的移动结束时，有活物在你的近战触及范围内，那么你可以做出一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}该生物。若你的检定成功，则可以对该生物做出1次啃咬打击。</p>",
             "prerequisites": [
                 {
                     "value": "丧尸入门"
@@ -18190,7 +18190,7 @@
         },
         "Riptide": {
             "name": "激流涌动 Riptide",
-            "description": "<p><strong>需求</strong> 你在离水至少10尺深的地方10尺之内，而且你的速度足以在一个行走内达到水中。</p>\n<p><strong>触发</strong> 你成功地@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}一个与你体型相同或是更小的生物。</p>\n<hr />\n<p>你行走10尺，并把一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物拖曳入水中。</p>",
+            "description": "<p><strong>需求</strong> 你在离水至少10尺深的地方10尺之内，而且你的速度足以在一个行走内达到水中。</p>\n<p><strong>触发</strong> 你成功地@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}一个与你体型相同或是更小的生物。</p>\n<hr />\n<p>你行走10尺，并把一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物拖曳入水中。</p>",
             "prerequisites": [
                 {
                     "value": "拖曳入水"
@@ -18325,7 +18325,7 @@
         },
         "Cremate Undead": {
             "name": "火葬亡灵 Cremate Undead",
-            "description": "<p>你的正能量引燃不死生物。当你使用<em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{治疗术 Heal}</em>来伤害不死生物时，每个受到伤害的不死生物也会受到等于法术环级的@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害 Persistent Fire Damage}火焰伤害。</p>"
+            "description": "<p>你的正能量引燃不死生物。当你使用<em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{治疗术 Heal}</em>来伤害不死生物时，每个受到伤害的不死生物也会受到等于法术环级的@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害 Persistent Fire伤害}火焰伤害。</p>"
         },
         "Ember's Eyes": {
             "name": "灰烬之眼 Ember's Eyes",
@@ -18357,7 +18357,7 @@
         },
         "Agile Maneuvers": {
             "name": "灵巧战技 Agile Maneuvers",
-            "description": "<p>你能轻松地向敌人发动战技。你的@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}、@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}行动受到较轻的多次攻击罚值：当回合第两次攻击时-4而非-5，第3次及后续攻击时-8而非-10。</p>",
+            "description": "<p>你能轻松地向敌人发动战技。你的@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}、@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}行动受到较轻的多次攻击罚值：当回合第两次攻击时-4而非-5，第3次及后续攻击时-8而非-10。</p>",
             "prerequisites": [
                 {
                     "value": "运动技能熟练度为专家"
@@ -18814,7 +18814,7 @@
         },
         "Blazing Talon Surge": {
             "name": "焰爪狂潮 Blazing Talon Surge",
-            "description": "<p><strong>需求</strong> 你处于@UUID[Compendium.pf2e.feats-srd.rbiMK71SvGZGRLJ1]{烬雨架势 Rain of Embers Stance}。</p>\n<hr />\n<p>你冲向敌人，用渴求火焰的指爪猛抓敌人。</p>\n<p>行走一次。如果你结束行动时至少有一个敌人位于你的触及范围内，你可以对该敌人进行一次火爪打击，并且该打击能造成1d4额外[[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。如果它击中并造成伤害，你可以立即尝试一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}被你击中的生物。</p>",
+            "description": "<p><strong>需求</strong> 你处于@UUID[Compendium.pf2e.feats-srd.rbiMK71SvGZGRLJ1]{烬雨架势 Rain of Embers Stance}。</p>\n<hr />\n<p>你冲向敌人，用渴求火焰的指爪猛抓敌人。</p>\n<p>行走一次。如果你结束行动时至少有一个敌人位于你的触及范围内，你可以对该敌人进行一次火爪打击，并且该打击能造成1d4额外[[/r {1d4}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。如果它击中并造成伤害，你可以立即尝试一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}被你击中的生物。</p>",
             "prerequisites": [
                 {
                     "value": "烬雨架势"
@@ -19464,7 +19464,7 @@
         },
         "Seize": {
             "name": "猛抓 Seize",
-            "description": "<p><strong>需求</strong> 你的上个动作是成功以拳头打击对抗一个生物，该生物的体型至多只能比你大一阶</p>\n<hr />\n<p>你用力抓住敌人并把他拉近。你命中的生物被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，就如同你成功以运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}该名敌人一般。</p>",
+            "description": "<p><strong>需求</strong> 你的上个动作是成功以拳头打击对抗一个生物，该生物的体型至多只能比你大一阶</p>\n<hr />\n<p>你用力抓住敌人并把他拉近。你命中的生物被你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，就如同你成功以运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}该名敌人一般。</p>",
             "prerequisites": [
                 {
                     "value": "丧尸入门"
@@ -22442,7 +22442,7 @@
         },
         "Tangle Of Battle": {
             "name": "缠斗 Tangle Of Battle",
-            "description": "<p><strong>触发</strong> 你对一个邻接敌人造成重击</p>\n<hr />\n<p>你以惊人的凶狠攻势拉近距离，给你带来抓住敌人的机会。对触发敌人尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}。</p>"
+            "description": "<p><strong>触发</strong> 你对一个邻接敌人造成重击</p>\n<hr />\n<p>你以惊人的凶狠攻势拉近距离，给你带来抓住敌人的机会。对触发敌人尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}。</p>"
         },
         "Clinch Strike": {
             "name": "缠锁打击 Clinch Strike",
@@ -24251,7 +24251,7 @@
         },
         "Educate Allies": {
             "name": "言传身教 Educate Allies",
-            "description": "<p><strong>触发</strong> 一位受益于你组曲法术的盟友，受制于有听觉、幻术、语言、音波或视觉特征的效果。</p>\n<hr />\n<p>你转变了你组曲法术的性质，改为传第一些你的防卫的知识。</p>\n<p>直到你下回合开始前 ，所有受到你组曲法术影响的盟友会从内行看门道能力中获得+1环境加值。 @UUID[Compendium.pf2e.feat-effects.WrWSieH9Acy6XuzV]{效果: 言传身教（盟友） Effect: Educate Allies (Ally)} </p>\n<p>教导你的盟友也会强化你的技能，直到你下回合开始前，你自己从内行看门道获得的环境加值变成+2。 @UUID[Compendium.pf2e.feat-effects.KceTcamIZ4ZrQJLD]{效果: 言传身教（自身） Effect: Educate Allies (Self)}</p>",
+            "description": "<p><strong>触发</strong> 一位受益于你组曲法术的盟友，受制于有听觉、幻术、语言、音波或视觉特征的效果。</p>\n<hr />\n<p>你转变了你组曲法术的性质，改为传第一些你的防卫的知识。</p>\n<p>直到你下回合开始前 ，所有受到你组曲法术影响的盟友会从内行看门道能力中获得+1环境加值。 @UUID[Compendium.pf2e.feat-effects.WrWSieH9Acy6XuzV]{效果: 言传身教（盟友） 效果: Educate Allies (Ally)} </p>\n<p>教导你的盟友也会强化你的技能，直到你下回合开始前，你自己从内行看门道获得的环境加值变成+2。 @UUID[Compendium.pf2e.feat-effects.KceTcamIZ4ZrQJLD]{效果: 言传身教（自身） 效果: Educate Allies (Self)}</p>",
             "prerequisites": [
                 {
                     "value": "内行看门道"
@@ -25683,7 +25683,7 @@
         },
         "Athletic Strategist": {
             "name": "运动战略家 Athletic Strategist",
-            "description": "<p>你知道如何主动操纵关节和体重。除了使用@UUID[Compendium.pf2e.actionspf2e.m0f2B7G9eaaTmhFL]{出谋划策 Devise a Strategem}调整打击外，你可以把这种调整用在@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}或@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔拌 Trip}上，用出谋划策的骰子取代运动检定。你必须在首次符合条件的攻击中用上这个取代，无论这是一次打击还是一个运动动作。</p>\n<p>在你用出谋划策策的骰子取代时，你还可以用智力而非力量调整值进行运动检定，除非你在进行战技时使用了武器，并且那武器还不符合出谋划策在用智力调整取代时的限制。</p>",
+            "description": "<p>你知道如何主动操纵关节和体重。除了使用@UUID[Compendium.pf2e.actionspf2e.m0f2B7G9eaaTmhFL]{出谋划策 Devise a Strategem}调整打击外，你可以把这种调整用在@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}或@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔拌 Trip}上，用出谋划策的骰子取代运动检定。你必须在首次符合条件的攻击中用上这个取代，无论这是一次打击还是一个运动动作。</p>\n<p>在你用出谋划策策的骰子取代时，你还可以用智力而非力量调整值进行运动检定，除非你在进行战技时使用了武器，并且那武器还不符合出谋划策在用智力调整取代时的限制。</p>",
             "prerequisites": [
                 {
                     "value": "运动技能熟练度为受训"
@@ -25908,7 +25908,7 @@
             "description": "<p>你的幻灵的攻击发生进化。</p>\n<p>选择一个幻灵的起始近战无武装攻击。它获得下列特征之一，在获得专长时选择：卸武、擒抱、非致命、猛推、摔拌、或多用B、多用P、多用S。</p>"
         },
         "Advanced Maneuver": {
-            "name": "进阶演习 Advanced Maneuver",
+            "name": "进阶战技 Advanced Maneuver",
             "description": "<p>你获得一个战士专长。为了满足其先决条件，将你的战士等级视为你的等级减半。</p>\n<hr />\n<p><strong>特殊</strong> 你可以多次选择本专长。每次都必须选择不同的战士专长。</p>",
             "prerequisites": [
                 {
@@ -26830,7 +26830,7 @@
         },
         "Pin to the Spot": {
             "name": "钉在原地 Pin to the Spot",
-            "description": "<p>你对触及范围内的目标进行1次打击。如果你命中并造成伤害，目标还会陷入 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，就如同你在@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}动作的运动检定中掷出大成功的结果。</p>",
+            "description": "<p>你对触及范围内的目标进行1次打击。如果你命中并造成伤害，目标还会陷入 @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，就如同你在@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}动作的运动检定中掷出大成功的结果。</p>",
             "prerequisites": [
                 {
                     "value": "挑衅者入门"
@@ -28698,7 +28698,7 @@
         },
         "Frightful Moan": {
             "name": "骇人悲叹 Frightful Moan",
-            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p>你为自身的命运而哀悼，迫使@Template[type:emanation|distance:30]{30尺}内的每个活物尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)]豁免，对抗你的职业DC或法术DC，取其高者。</p>\n<p><strong>成功</strong> 该生物不受影响，并在一分钟内临时免疫骇人悲叹。</p>\n<p><strong>Failure</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>",
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p>你为自身的命运而哀悼，迫使@Template[type:emanation|distance:30]{30尺}内的每个活物尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)]豁免，对抗你的职业DC或法术DC，取其高者。</p>\n<p><strong>成功</strong> 该生物不受影响，并在一分钟内临时免疫骇人悲叹。</p>\n<p><strong>失败</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>",
             "prerequisites": [
                 {
                     "value": "幽灵入门"
