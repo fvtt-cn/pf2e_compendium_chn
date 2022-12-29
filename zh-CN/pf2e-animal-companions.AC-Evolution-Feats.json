@@ -1,24 +1,24 @@
 {
-    "label": "CC Evolution Feats",
+    "label": "幻灵进化专长 CC Evolution Feats",
     "mapping": {
         "prerequisites": "system.prerequisites.value"
     },
     "entries": {
         "Advanced Weaponry": {
             "name": "进阶武装 Advanced Weaponry",
-            "description": "<p>Your eidolon's attack evolves.</p>\n<p>Choose one of your eidolon's starting melee unarmed attacks. It gains one of the following traits, chosen when you gain the feat: disarm, grapple, nonlethal, shove, trip, or versatile bludgeoning, piercing, or slashing.</p>"
+            "description": "<p>你的幻灵的攻击发生进化。</p>\n<p>选择一个幻灵的起始近战无武装攻击。它获得下列特征之一，在获得专长时选择：卸武、擒抱、非致命、猛推、摔拌、或多用B、多用P、多用S。</p>"
         },
         "Alacritous Action": {
-            "name": "Alacritous Action",
-            "description": "<p>Your eidolon moves more quickly. It gains a +10-foot status bonus to its Speed.</p>"
+            "name": "轻灵动作 Alacritous Action",
+            "description": "<p>你的幻灵移动得更快。它在速度上获得+10尺状态加值。</p>"
         },
         "Amphibious Form": {
-            "name": "Amphibious Form",
-            "description": "<p>Your eidolon adapts to life on land and underwater. It gains the amphibious trait, allowing it to breathe in water and air and to avoid the normal -2 penalty for making bludgeoning and slashing unarmed Strikes underwater. It gains a swim Speed equal to its land Speed or 25 feet, whichever is less; or if it is normally aquatic, it gains a land Speed equal to its swim Speed or 25 feet, whichever is less.</p>"
+            "name": "两栖形态 Amphibious Form",
+            "description": "<p>你的幻灵适应了陆上和水下的生活。它获得两栖特征，让它可以在水中和空气中呼吸，且在水下进行钝击和挥砍无武装打击时不会受到-2罚值。它获得等同于陆地速度或25尺中较低的游泳速度；如果它通常是水生的，则获得等同于游泳速度或25尺中较低的陆地速度。</p>"
         },
         "Blood Frenzy": {
-            "name": "Blood Frenzy",
-            "description": "<p><strong>Requirements</strong> Your eidolon's last action dealt bleed damage to a living creature.</p>\n<hr />\n<p>Your eidolon flies into a frenzy. It gains the benefits of @UUID[Compendium.pf2e.spells-srd.HStu2Yhw3iQER9tY]{Boost Eidolon}&nbsp;and gains temporary HP equal to your level, but takes a -2 penalty to AC. It can't voluntarily end the frenzy or start another frenzy while in the frenzy.</p>\n<p>The frenzy lasts for 1 minute, after which your eidolon is @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} for 1 minute and can't start another frenzy for 1 minute.</p>",
+            "name": "嗜血狂怒 Blood Frenzy",
+            "description": "<p><strong>需求</strong> 你的幻灵的上一个动作对一个活物造成了流血伤害。</p>\n<hr />\n<p>你的幻灵沉浸在狂怒之中。它获得@UUID[Compendium.pf2e.spells-srd.HStu2Yhw3iQER9tY]{激励幻灵 Boost Eidolon}的好处，并获得等同于你等级的临时HP，但在AC上承受-2罚值。它不能自愿终止狂怒，或在狂怒中开始另一个狂怒。</p>\n<p>狂怒持续1分钟，之后你的幻灵陷入1分钟的@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，而且在1分钟内无法开始另一个狂怒。</p>",
             "prerequisites": [
                 {
                     "value": "Bloodletting Claws"
@@ -26,24 +26,24 @@
             ]
         },
         "Bloodletting Claws": {
-            "name": "Bloodletting Claws",
-            "description": "<p>Your eidolon inflicts bleeding wounds on a telling blow. If your eidolon critically hits with a melee unarmed Strike that deals slashing or piercing damage, its target takes [[/r {1d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed伤害}. Your eidolon gains an item bonus to this bleed damage equal to the unarmed attack's item bonus to attack rolls. This is a critical specialization effect.</p>"
+            "name": "放血利爪 Bloodletting Claws",
+            "description": "<p>你的幻灵在一次强有力的攻击中能造成流血的伤口。如果你的幻灵使用近战无武装攻击造成重击，并造成挥砍或穿刺伤害，其目标受到[[/r {1d6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。你的幻灵在该流血伤害上能获得物品加值，数量等同于无武装攻击的攻击骰上的物品加值。这是一个重击专精效果。</p>"
         },
         "Burrowing Form": {
-            "name": "Burrowing Form",
-            "description": "<p>Your eidolon can burrow through loose dirt. Your eidolon gains a burrow Speed of 15 feet.</p>"
+            "name": "掘地形态 Burrowing Form",
+            "description": "<p>你的幻灵能够钻过松软的泥土。你的幻灵获得15尺掘地速度。</p>"
         },
         "Constricting Hold": {
-            "name": "Constricting Hold",
-            "description": "<p><strong>Requirements</strong> Your eidolon has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<p>Your eidolon constricts the creature, dealing [[/r @actor.level+@actor.abilities.str.mod #bludgeoning]]{bludgeoning伤害} equal to your eidolon's level plus its Strength modifier, with a basic Fortitude save against your spell DC.</p>"
+            "name": "紧握 Constricting Hold",
+            "description": "<p><strong>需求</strong> 你的幻灵有一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物。</p>\n<p>你的幻灵紧紧挤压生物，对其造成等同于你的幻灵等级外加其力量调整值的[[/r @actor.level+@actor.abilities.str.mod #bludgeoning]]{钝击伤害}，其基础强韧豁免要对抗你的法术DC。</p>"
         },
         "Defend Summoner": {
-            "name": "Defend Summoner",
-            "description": "<p>Your eidolon blocks attacks against you. After your eidolon uses this action, you gain a +2 circumstance bonus to AC until the beginning of your next turn. This bonus applies only while you're within your eidolon's reach (in most cases, this means your eidolon is adjacent to you or in your space).</p>"
+            "name": "防卫召唤师 Defend Summoner",
+            "description": "<p>你的幻灵挡下了针对你的攻击。当你的幻灵使用了该动作，你的AC获得+2环境加值，直到你下一回合开始。该加值只在你处于幻灵触及内时才适用（在大多数情况下，这意味着你的幻灵与你邻接或位于你的方格中）。</p>"
         },
         "Dual Energy Heart": {
-            "name": "Dual Energy Heart",
-            "description": "<p>A second energy dwells in your eidolon. Choose an additional energy damage type. Your unarmed attack that deals energy damage gains the versatile trait for the second energy damage type, and your eidolon gains resistance to the second type of energy damage equal to half your level.</p>",
+            "name": "能量双心 Dual Energy Heart",
+            "description": "<p>第二种能量在你的幻灵中栖息。选择一种额外的能量伤害类型。你能造成能量伤害的无武装攻击获得多用特征，关联于这第二种能量伤害类型，而且你的幻灵获得第二种能量伤害的抗力，数值等于你等级的一半。</p>",
             "prerequisites": [
                 {
                     "value": "Energy Heart"
@@ -51,20 +51,20 @@
             ]
         },
         "Eidolon's Opportunity": {
-            "name": "Eidolon's Opportunity",
-            "description": "<p><strong>Trigger</strong> A creature within your eidolon's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>Your eidolon makes a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, your eidolon disrupts that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
+            "name": "幻灵借机 Eidolon's Opportunity",
+            "description": "<p><strong>触发</strong> 一个处于你幻灵触及内的生物使用了一个操作动作或一个移动动作，进行一次远程攻击，或在他所使用的的移动动作中离开了一个方格。</p>\n<hr />\n<p>你的幻灵对触发的生物进行一次近战打击。如果这次攻击是重击，且触发动作是操作动作，你的幻灵打断了该动作。这次打击不计入你的多次攻击罚值中，你的多次攻击罚值也不应用在这次打击上。</p>"
         },
         "Eidolon's Wrath": {
-            "name": "Eidolon's Wrath",
-            "description": "<p>Your eidolon gains the <em>@UUID[Compendium.pf2e.spells-srd.kuZnUNrhXHRYQ2eM]{Eidolon's Wrath}</em>&nbsp;focus spell, which it casts, instead of you. You determine the damage type when you gain the feat: acid, cold, electricity, fire, negative, positive, or sonic. If your eidolon is a celestial, fiend, or monitor with an alignment other than true neutral, you can choose a damage type in its alignment.</p>\n<p>Increase the number of Focus Points in your focus pool by 1. As normal, your eidolon shares your Focus Points.</p>"
+            "name": "幻灵怒火 Eidolon's Wrath",
+            "description": "<p>你的幻灵获得<em>@UUID[Compendium.pf2e.spells-srd.kuZnUNrhXHRYQ2eM]{幻灵怒火 Eidolon's Wrath}</em>聚能法术，是它施展的，而非你。你在获得该专长时决定其伤害类型：强酸、寒冷、电击、火焰、负能量、正能量或音波。如果幻灵是天族、魔族或观察者，且阵营并非绝对中立，你可以选择其阵营中的一种伤害类型。</p>\n<p>将你的聚能池中的聚能点数提升1点。如常，你的幻灵共享你的聚能点。</p>"
         },
         "Energy Heart": {
-            "name": "Energy Heart",
-            "description": "<p>Your eidolon's heart beats with energy.</p>\n<p>Choose an energy damage type other than force. One of its unarmed attacks changes its damage type to the chosen type, and it gains resistance to that type equal to half your level (minimum 1).</p>"
+            "name": "能量之心 Energy Heart",
+            "description": "<p>能量鼓动着幻灵的心脏。</p>\n<p>选择力场外的一种能量伤害类型。幻灵的1个无武装攻击的伤害类型变为所选类型，并获得该类型的抗力，数值等于你等级的一半（最小1）。</p>"
         },
         "Energy Resistance": {
-            "name": "Energy Resistance",
-            "description": "<p>Your eidolon has stronger resistance. Its resistance from Energy Heart and Dual Energy Heart increase to your level.</p>",
+            "name": "能量抵抗 Energy Resistance",
+            "description": "<p>你的幻灵有更强的抗力。来自能量之心和能量双心的抗力提升至你的等级。</p>",
             "prerequisites": [
                 {
                     "value": "Energy Heart"
@@ -72,28 +72,28 @@
             ]
         },
         "Ever-Vigilant Senses": {
-            "name": "Ever-Vigilant Senses",
-            "description": "<p>Your eidolon has enhanced senses. It gains a +2 circumstance bonus to Perception, and can't be flanked except by creatures that are higher level than it.</p>\n<p>It can see @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} creatures and objects; they appear translucent and are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}.</p>\n<p>When your eidolon moves within 30 feet of an illusion that can be disbelieved, the GM rolls a secret check to disbelieve it, even if your eidolon didn't spend an action to Interact.</p>"
+            "name": "无寐感官 Ever-Vigilant Senses",
+            "description": "<p>你的幻灵有着强化的感官。它在察觉上获得+2环境加值，而且无法被夹击，除非夹击的生物等级比幻灵高。</p>\n<p>幻灵可以看见@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的生物和物体；它们变得透明，变成@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>\n<p>当你的幻灵移动到一个幻象的30尺内就可能不相信幻象，由GM骰一个秘密检定判断是否成功不相信，即使你的幻灵没有花费动作去和幻象交互。</p>"
         },
         "Expanded Senses": {
-            "name": "Expanded Senses",
-            "description": "<p>Your eidolon evolves more acute senses.</p>\n<p>Your eidolon gains low-light vision and darkvision, as well as scent as an imprecise sense with a range of 30 feet.</p>"
+            "name": "扩展感官 Expanded Senses",
+            "description": "<p>你的幻灵进化出了更加敏锐的感官。</p>\n<p>你的幻灵获得昏暗视觉和黑暗视觉，也获得灵敏嗅觉作为范围30尺的模糊感官。</p>"
         },
         "Glider Form": {
-            "name": "Glider Form",
-            "description": "<p>Your eidolon evolves wings, a buoyant body, or some other means to control descent.</p>\n<p>It glides slowly toward the ground, 5 feet down and up to 25 feet forward through the air.</p>\n<p>As long as it spends at least 1 action gliding each round and has not yet reached the ground, it remains in the air at the end of your turn.</p>"
+            "name": "滑翔形态 Glider Form",
+            "description": "<p>你的幻灵进化出了翅膀，能飘浮的身体，或某些其他能控制下降的方式。</p>\n<p>它能缓慢朝地面滑翔，在空中每下降5尺，最多能前进25尺。</p>\n<p>只要它每轮都花费至少1个动作滑翔，并还没有接触到地面，它就能在你的回合结束时保持在空中。</p>"
         },
         "Grasping Limbs": {
-            "name": "Grasping Limbs",
-            "description": "<p>Your eidolon grabs enemies. Choose one of the eidolon's unarmed attacks with the grapple trait. It gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{Grab} action on that unarmed attack.</p>"
+            "name": "抓握肢 Grasping Limbs",
+            "description": "<p>你的幻灵擒拿了敌人。选择一种幻灵的具有擒抱特征的无武装攻击。该攻击获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{攫抓 Grab}动作。</p>"
         },
         "Hulking Size": {
-            "name": "Hulking Size",
-            "description": "<p>Your eidolon grows substantially. Your eidolon becomes Large, instead of its previous size, and its reach increases to 10 feet. This doesn't change any of its other statistics.</p>"
+            "name": "庞大体型 Hulking Size",
+            "description": "<p>你的幻灵显著生长。你的幻灵变成大体型，且触及提升至10尺。这不会改变其他数据。</p>"
         },
         "Magical Adept": {
-            "name": "Magical Adept",
-            "description": "<p>Your eidolon gains more magic. Choose one 2nd-level spell and one 1st-level spell of your eidolon's tradition. Your eidolon can cast them each once per day as innate spells. At every even level after you take this feat, your eidolon can swap one of these innate spells for a new innate spell that's 2 or more levels lower than your highest-level spell slot.</p>",
+            "name": "魔法导师 Magical Adept",
+            "description": "<p>你的幻灵获得更多魔法。从你的幻灵根源中选择1个2环法术和1个1环法术。你的幻灵能够每天1次以内在法术的形式施展这些法术。在你获得这个专长后的每个偶数等级，你的幻灵可以将1个内在法术交换成比你所能施展的最高法术环级低2级或更多的新法术。</p>",
             "prerequisites": [
                 {
                     "value": "Magical Understudy"
@@ -101,8 +101,8 @@
             ]
         },
         "Magical Master": {
-            "name": "Magical Master",
-            "description": "<p>Your eidolon gains a bevy of lower-level spells. Choose an innate spell of your eidolon's tradition of each of the spell levels from 1 to 7 in which your eidolon doesn't currently have an innate spell from Magical Adept. Your eidolon can cast each once per day as innate spells.</p>\n<p>You can swap these spells at every even level, but your eidolon can never know more than one spell of each spell level 1 through 7</p>",
+            "name": "魔法大师 Magical Master",
+            "description": "<p>你的幻灵获得一堆低环法术。从幻灵根源中为1到7的每个法术环级都选择1个内在法术，且这些法术是幻灵通过魔法导师专长没有取得的。你的幻灵可以每天1次以内在法术的形式施展每个法术。</p>\n<p>你在每个偶数等级都可以交换这些法术，但你的幻灵在1到7的每个法术环级都不能知晓超过1个法术。</p>",
             "prerequisites": [
                 {
                     "value": "Magical Adept"
@@ -110,12 +110,12 @@
             ]
         },
         "Magical Understudy": {
-            "name": "Magical Understudy",
-            "description": "<p>Your eidolon evolves to cast spells. It gains the Cast a Spell activity and learns two cantrips of its tradition, which it can cast as innate spells.</p>"
+            "name": "魔法替身 Magical Understudy",
+            "description": "<p>你的幻灵可以施展法术。它获得施法行动，并学会2个属于它的根源的戏法；它按照内在法术的形式施展这些戏法。</p>"
         },
         "Miniaturize": {
-            "name": "Miniaturize",
-            "description": "<p>Your eidolon can shrink even further. When using Shrink Down, your eidolon can reduce its size to Tiny</p>",
+            "name": "小型化 Miniaturize",
+            "description": "<p>你的幻灵能缩得更小。使用缩小时，你的幻灵能将体型缩至超小型。</p>",
             "prerequisites": [
                 {
                     "value": "Shrink Down"
@@ -123,8 +123,8 @@
             ]
         },
         "Phase Out": {
-            "name": "Phase Out",
-            "description": "<p>Your eidolon phases out of reality slightly, gaining resistance to all damage (except force and negative) equal to half your level. It's not incorporeal, but it can't use Strikes or actions that require a fully physical form, such as @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}, or @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip}.</p>\n<p>Your eidolon can return to its normal form with a single action, which has the concentrate trait.</p>",
+            "name": "相位脱离 Phase Out",
+            "description": "<p>你的幻灵渐渐从真实相位中脱离，获得对全部伤害的抗力（除了力场和负能量），数值等于你等级的一半。它不是虚体，但也不能使用打击或其他需要完整身体形态的动作，例如@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}、或@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}。</p>\n<p>你的幻灵能使用一个具有专注特征的单动作回到正常形态。</p>",
             "prerequisites": [
                 {
                     "value": "your eidolon is a phantom"
@@ -132,36 +132,36 @@
             ]
         },
         "Pushing Attack": {
-            "name": "Pushing Attack",
-            "description": "<p>Your eidolon has an attack that pushes away enemies. Choose one of the eidolon's unarmed attacks with the shove trait. It gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{Push} action for that attack.</p>"
+            "name": "推离攻击 Pushing Attack",
+            "description": "<p>你的幻灵有一种能将敌人推离的攻击方式。选择一种幻灵的具有猛推特征的无武装攻击。该攻击获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.t6cx9FOODmeZQNYl]{推离 Push}动作。</p>"
         },
         "Ranged Combatant": {
-            "name": "Ranged Combatant",
-            "description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 damage and has the magical and propulsive traits.</p>\n<p>When you select this feat, choose a damage type: acid, bludgeoning, cold, electricity, fire, negative, piercing, positive, or slashing. If your eidolon is a celestial, fiend, or monitor with an alignment other than true neutral, you can choose a damage type in its alignment.</p>"
+            "name": "远程战斗 Ranged Combatant",
+            "description": "<p>飞刺、火焰喷射、和神圣冲击都是幻灵可能使用的远距离打击手段。它获得一种远程无武装攻击，射程增量是30尺，造成1d4点伤害并具有魔法和助进特征。</p>\n<p>当你选择该专长时，选择一种伤害类型：强酸、钝击、寒冷、电击、火焰、负能量、穿刺、正能量、或挥砍。如果你的幻灵是阵营并非绝对中立的天族、魔族或观察者，你能选择对应一种其阵营的伤害类型。</p>"
         },
         "Resilient Shell": {
-            "name": "Resilient Shell",
-            "description": "<p>Your eidolon is resilient against attacks. It gains resistance to physical damage equal to its Constitution modifier.</p>"
+            "name": "强韧外壳 Resilient Shell",
+            "description": "<p>你的幻灵针对攻击获得了强韧的防护。幻灵获得对抗物理伤害的抗力，数值等同于其体质调整值。</p>"
         },
         "Shrink Down": {
-            "name": "Shrink Down",
-            "description": "<p>Your eidolon can shrink to fit into small spaces. Your eidolon reduces in size, to a minimum of size Small. It can use this action again while shrunk to return to its normal size.</p>"
+            "name": "缩小 Shrink Down",
+            "description": "<p>你的幻灵能够收缩以适应狭窄空间。你的幻灵的体型变小，最小到小体型。它在缩小状态时可以再次使用该动作以变回正常体型。</p>"
         },
         "Spell-Repelling Form": {
-            "name": "Spell-Repelling Form",
-            "description": "<p>Your eidolon evolves to protect itself from the danger posed by spells. It gains a +1 status bonus to all saving throws against magic.</p>"
+            "name": "拒魔形态 Spell-Repelling Form",
+            "description": "<p>你的幻灵经过进化，能从法术造成的危险中保护自己。幻灵在对抗魔法的所有豁免骰中获得+1状态加值。</p>"
         },
         "Steed Form": {
-            "name": "Steed Form",
-            "description": "<p>Your eidolon changes to make it particularly effective as your mount. While you ride it, you get your full number of actions each round instead of reducing them to 2. This applies only when you ride your eidolon, not when anyone else does. Your eidolon still must be at least one size category larger than you to ride it. Since you work together to move, your eidolon's move actions while you're mounted gain the tandem trait.</p>"
+            "name": "坐骑形态 Steed Form",
+            "description": "<p>你的幻灵发生改变，变得特别适合担任你的坐骑。当你骑乘它，你每轮都获得完整数量的动作，而不会降低至2。这只适用于你骑乘你的幻灵时的情况，其他人骑乘时并不能获益。你的幻灵仍然必须至少比你的体型大一级才能让你骑乘。由于你们两者共同合作以移动，你幻灵在让你骑乘时的移动动作获得同步特征。</p>"
         },
         "Summoner Dedication Adjustment": {
-            "name": "Summoner Dedication Adjustment",
-            "description": "<p>This feature will adjust the eidolon's stats to be correct for players using the summoner dedication It caps all stats at 16 until the eidolon is level 5.</p>"
+            "name": "召唤师入门调整 Summoner Dedication Adjustment",
+            "description": "<p>此特性用于调整幻灵能力值，以适应使用召唤师入门专长的玩家。幻灵5级前能力上限为16。</p>"
         },
         "Towering Size": {
-            "name": "Towering Size",
-            "description": "<p>Your eidolon becomes even bigger. It becomes Huge, instead of Large, and the reach on all its attacks increases to 15 feet.</p>",
+            "name": "高耸体型 Towering Size",
+            "description": "<p>你的幻灵变得更加巨大。它变成超大型，替换了大型，且所有攻击的触及提升至15尺。</p>",
             "prerequisites": [
                 {
                     "value": "Hulking Size"
@@ -169,16 +169,16 @@
             ]
         },
         "Trample": {
-            "name": "Trample",
-            "description": "<p>Your eidolon Strides up to double its Speed and can move through the spaces of creatures at least one size smaller, Trampling each creature whose space it enters. It can attempt to Trample the same creature only once in a single Trample.</p>\n<p>It deals bludgeoning damage equal to the damage of its secondary attack against these creatures, which can attempt a basic Reflex save against your spell DC.</p>"
+            "name": "践踏 Trample",
+            "description": "<p>你的幻灵行走至多两倍的速度，并能穿过体型至少小一级的生物所占据的空间，践踏幻灵经过空间的每个生物。幻灵在一次践踏过程中只能对同一名生物践踏一次。</p>\n<p>幻灵造成对这些生物造成钝击伤害，数值等同于其次要攻击的伤害，且这些生物需要进行一次基础反射豁免对抗你的法术DC。</p>"
         },
         "Vibration Sense": {
-            "name": "Vibration Sense",
-            "description": "<p>Your eidolon gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.j2wsK6IsW5yMW1jW]{Tremorsense} as an imprecise sense with a range of 30 feet. If aquatic, it gains @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.VdSMQ6yRZ3YXNXHL]{Wavesense} as an imprecise sense with a range of 30 feet instead. If amphibious, it gains both.</p>"
+            "name": "颤动感官 Vibration Sense",
+            "description": "<p>你的幻灵获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.j2wsK6IsW5yMW1jW]{震动感知 Tremorsense}作为范围30尺的模糊感官。如果幻灵是水生的，则获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.VdSMQ6yRZ3YXNXHL]{水波感知 Wavesense}作为范围30尺的模糊感官。如果是两栖的，则获得两者。</p>"
         },
         "Weighty Impact": {
-            "name": "Weighty Impact",
-            "description": "<p>Your eidolon knocks enemies down. Choose one of the eidolon's unarmed attacks with the trip trait. It gains the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{Knockdown} action for that attack.</p>"
+            "name": "重量冲击 Weighty Impact",
+            "description": "<p>你的幻灵将敌人击倒。选择一种幻灵的具有摔绊特征的无武装攻击。该攻击获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}动作。</p>"
         }
     }
 }
