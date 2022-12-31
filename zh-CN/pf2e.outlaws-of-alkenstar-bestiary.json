@@ -321,7 +321,7 @@
 					"description": "<p>When a chemical zombie dies, its body explodes in a @Template[type:burst|distance:30] of fire and debris that deals [[/r {2d10}[bludgeoning]+{2d10}[fire]]]{2d10 bludgeoning and 2d10火焰伤害} to each creature in the area (@Check[type:reflex|dc:21|basic:true]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like <em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{Hydraulic Push}</em>), the chemicals are neutralized and this ability doesn't trigger。</p>"
 				},
 				"Slow":{
-					"name": "Slow",
+					"name": "缓慢 Slow",
 					"description": "<p>A sulfur zombie is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions。</p>"
 				},
 				"Blinding Sulfur":{
@@ -413,12 +413,12 @@
 			}
 		},
 		"Clockwork Buccaneer": {
-			"name": "Clockwork Buccaneer",
-			"publicNotes": "<p>Clockwork buccaneers are powerful constructs designed for naval combat. Whereas most clockwork creations sink to the ocean floor while at sea, clockwork buccaneers can use their water jets to easily propel themselves through the water or leap aboard enemy ships. In addition to an internal water tank and hydraulic pumps, most clockwork buccaneers are equipped with a cutlass and arm gun loaded with scatter shot。</p>\n<hr />\n<p>As one delves deeper into the industrial heart of Alkenstar, the clockwork adversaries one faces become ever more complex and deadly。</p>",
+			"name": "发条海盗 Clockwork Buccaneer",
+			"publicNotes": "<p>发条海盗是为海战设计的强大构装体。虽然大部分发条装置在海面上都会沉入海底，但发条海盗们却可以利用喷水装置轻松推动自己在水中前进，或跳上敌舰。除了内部水箱和液压泵外，大部分发条海盗还配备了一把弯刀和一把装填霰弹的手臂枪。</p>\n<hr />\n<p>当一个人深入地接触阿肯斯塔的工业中心时，他所面对的发条对手将会变得更加复杂且致命。</p>",
 			"data":{},
 			"items":{
 				"strike-Arm Gun":{
-					"name": "Arm Gun"
+					"name": "手臂枪 Arm Gun"
 				},
 				"Wind-Up":{
 					"name": "上发条 Wind-Up",
@@ -426,27 +426,27 @@
 				},
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
-					"description": "<p>When the buccaneer 用火器造成重击时，目标必须通过a @Check[type:fortitude|dc:28]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>当发条海盗用火器造成重击时，目标必须通过一次@Check[type:fortitude|dc:28]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Pirate's Feint":{
-					"name": "Pirate's Feint",
-					"description": "<p>The clockwork buccaneer @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feints}. If the target becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} to the buccaneer's melee attacks, it becomes flat-footed to the buccaneer's ranged attacks as well。</p>"
+					"name": "海盗的虚招 Pirate's Feint",
+					"description": "<p>发条海盗进行@UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feints}。如果目标变得对发条海盗的近战攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，那么它同样也会对发条海盗的远程攻击措手不及。</p>"
 				},
 				"Refill Tank":{
-					"name": "Refill Tank",
-					"description": "<p><strong>需求</strong> The clockwork buccaneer is within 15 feet of a water source containing at least 100 gallons of water</p>\n<hr />\n<p><strong>效果</strong> The clockwork buccaneer extends a clockwork tube and sucks up water to refill its water tank。</p>"
+					"name": "重新注水 Refill Tank",
+					"description": "<p><strong>需求</strong> 发条海盗15尺内有一个至少包含100加仑水的水源；</p>\n<hr />\n<p><strong>效果</strong> 发条海盗伸出一根管子，将水吸入，以装满自己的水箱。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
-					"description": "<p>The clockwork buccaneer deals an extra 2d6 precision damage to flat-footed creatures。</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>发条海盗对措手不及的目标造成额外2d6精准伤害。</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				},
 				"Water Jet":{
-					"name": "喷水 Water Jet",
-					"description": "<p><strong>需求</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>效果</strong> The clockwork buccaneer fires a narrow but highly pressurized blast of water in a @Template[type:line|distance:60], dealing [[/r {10d6}[bludgeoning]]]{10d6钝击伤害} to creatures and unattended objects in the area (@Check[type:fortitude|dc:28|basic:true]; unattended objects automatically fail). Creatures and objects that fail the save are also knocked back 5 feet (10 feet on a critical failure). This empties the buccaneer's water tank。</p>"
+					"name": "水流喷射 Water Jet",
+					"description": "<p><strong>需求</strong> 发条海盗的水箱装满水；</p>\n<hr />\n<p><strong>效果</strong> 发条海盗射出一条细而猛的水流，对@Template[type:line|distance:60]上的所有生物和无主物品造成[[/r {10d6}[bludgeoning]]]{10d6钝击伤害}（@Check[type:fortitude|dc:28|basic:true]豁免；无主物品豁免自动失败）。豁免失败的生物和物品同样会被击倒并击退5尺（大失败则击退10尺）。这会导致发条海盗的水箱变空。</p>"
 				},
 				"Water Jump":{
-					"name": "Water Jump",
-					"description": "<p><strong>需求</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>效果</strong> The clockwork buccaneer jumps 60 feet, propelling itself through the air with a jet of water. This empties the buccaneer's water tank。</p>"
+					"name": "水流推进 Water Jump",
+					"description": "<p><strong>需求</strong> 发条海盗的水箱装满水；</p>\n<hr />\n<p><strong>效果</strong> 发条海盗依靠水流喷射让自己在空中推进，跳跃60尺距离。这会导致发条海盗的水箱变空。</p>"
 				}
 			}
 		},
@@ -593,8 +593,8 @@
 			}
 		},
 		"Clockwork Puppeteer": {
-			"name": "Clockwork Puppeteer",
-			"publicNotes": "<p>Clockwork puppeteers are grim constructs capable of controlling corpses like puppets. They typically stand 12 feet tall and have spindly legs and long arms ending with scalpel-like claws. Dozens of metallic strings, composed of interlocking clockwork links, hang from their wrists。</p>\n<hr />\n<p>As one delves deeper into the industrial heart of Alkenstar, the clockwork adversaries one faces become ever more complex and deadly。</p>",
+			"name": "发条傀儡师 Clockwork Puppeteer",
+			"publicNotes": "<p>发条傀儡师是种冷酷的构装体，能够像操纵木偶一样控制尸体。它们通常高12尺，有细长的腿和手臂，末端有手术刀一样的爪子。他们的手腕上挂着几十条连接着发条装置的金属细丝。</p>\n<hr />\n<p>当一个人深入地接触阿肯斯塔的工业中心时，他所面对的发条对手将会变得更加复杂且致命。</p>",
 			"data":{},
 			"items":{
 				"Wind-Up":{
@@ -602,20 +602,20 @@
 					"description": "<p>24小时，@Check[type:thievery|dc:22|traits:action:disable-a-device]，待机</p>\n<p>要让发条机械运转，必须由另一个生物用一把独特的钥匙给它上发条。这需要1分钟时间。一旦上紧发条，它们能在列出的时间内活动，通常为24小时，时间耗尽之后它们就无法察觉周围的环境且无法行动，直到再次被上紧发条。一些发条机械的能力在使用时需要以减少活动时间为代价。它们消耗的活动时间不能超过当前剩余的活动时间，一旦活动时间为0，它们就会立即关机。如果不清楚发条机械上一次上发条是什么时候，大多数发条机械的管理员都会在早上8点上发条。</p>\n<p>有些发条机械在上发条能力中列出了“待机”条目，它们可以通过一个3动作行动进入待机模式。在待机模式下，它的活动时间不会减少，但它可以感知周围环境（察觉检定有-2减值）。它无法行动，只有一个例外：当它感知到一个生物时，能以一个反应动作退出待机模式（并且如果状况合适，则进行先攻检定）。</p>\n<p>一个生物可以尝试对上了发条的发条机械进行解除装置，解除DC在上发条能力中列出。每次成功的尝试都能减少发条机械1小时活动时间。这对于处于待机模式中的发条机械也能正常生效。</p>"
 				},
 				"Clockwork Swarm":{
-					"name": "Clockwork Swarm",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>A cloud of flying, spiderlike clockworks surrounds the clockwork puppeteer. A creature that ends its turn in the cloud takes [[/r {4d8}[piercing]]]{4d8穿刺伤害} (@Check[type:reflex|dc:29|basic:true])。</p>"
+					"name": "发条集群 Clockwork Swarm",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一群飞行的、蜘蛛似的发条机械包围着发条傀儡师。在这团发条云中结束回合的生物将受到[[/r {4d8}[piercing]]]{4d8穿刺伤害}（@Check[type:reflex|dc:29|basic:true]豁免）。</p>"
 				},
 				"Clockwork String":{
-					"name": "Clockwork String",
-					"description": "<p>Any creature hit by the puppeteer's string is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}. The puppeteer can move while it has a creature grabbed with its string, but it automatically releases the creature if the puppeteer moves beyond the string's 60-foot length. The puppeteer can use up to six strings at a time. It can release any creature grabbed by a string as a free action. Each string has AC 30, and its @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape} DC is 32. A string can be severed by a Strike that deals at least [[/r {20}[slashing]]]{20挥砍伤害} to it. This doesn't deal any damage to the clockwork puppeteer。</p>"
+					"name": "发条蛰刺 Clockwork String",
+					"description": "<p>任何被发条傀儡师蛰刺命中的生物将被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。当有生物被蛰刺擒抱时，傀儡师可以移动，但是如果它移动至距离目标超过60尺时，它将自动松开目标。傀儡师同时能最多使用6枚蛰刺。它能以自由动作松开被擒抱的生物。每根蛰刺都有30AC，@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC为32。蛰刺能被一次至少造成[[/r {20}[slashing]]]{20挥砍伤害}的攻击砍断。砍断蛰刺不会对发条傀儡师本身造成伤害。 </p>"
 				},
 				"Create Puppet":{
-					"name": "Create Puppet",
-					"description": "<p><strong>触发</strong> A creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the puppeteer's clockwork string dies</p>\n<hr />\n<p><strong>效果</strong> The triggering creature's body becomes infested with tiny clockworks. This puppet is fully under the clockwork puppeteer's control and has statistics identical to a zombie of its size with the following exceptions: It loses the undead trait, loses negative healing, loses its weakness to positive damage, and gains the construct trait。</p>"
+					"name": "创造傀儡 CCreate Puppet",
+					"description": "<p><strong>触发</strong> 一个被发条傀儡师蛰刺@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物死亡；</p>\n<hr />\n<p><strong>效果</strong> 触发的生物的身体被微型发条占据。该傀儡完全被发条傀儡师控制，并且数据相当于同体型的丧尸，并且带有以下特殊调整：它失去[不死]特征，失去负能量治疗，失去正能量伤害弱点，获得[构装体]特征。</p>"
 				},
 				"Pull String":{
-					"name": "Pull String",
-					"description": "<p>The puppeteer reins in a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by its string. The puppeteer attempts an Athletics check against the creature's Fortitude DC. On a success, the puppeteer pulls the creature 15 feet closer to it (30 feet closer on a critical success)。</p>"
+					"name": "拉拽蛰刺 Pull String",
+					"description": "<p>发条傀儡师尝试操纵一个被蛰刺@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物。傀儡师尝试一次运动检定，对抗生物的强韧DC。如果成功，傀儡师将目标向自己拉近15尺（大成功拉近30尺）。</p>"
 				}
 			}
 		},
@@ -630,7 +630,7 @@
 					"description": "<p><strong>需求</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。</p>"
 				},
 				"Slow":{
-					"name": "Slow",
+					"name": "缓慢 Slow",
 					"description": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions。</p>"
 				}
 			}
@@ -642,7 +642,7 @@
 			"data":{},
 			"items":{
 				"Slow":{
-					"name": "Slow",
+					"name": "缓慢 Slow",
 					"description": "<p>A shambler troop is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions。</p>"
 				},
 				"Troop Defenses":{
@@ -762,27 +762,27 @@
 			}
 		},
 		"Cranium Preserver": {
-			"name": "Cranium Preserver",
-			"publicNotes": "<p>Cranium preservers serve necromancers as walking laboratories for undead. A typical cranium preserver has a metallic and spider-like body, which holds aloft a large central glass vat surrounded by a dozen or more smaller, head-sized glass vats. Each vat is filled with a special embalming fluid that can preserve the minds of slain enemies。</p>",
+			"name": "存颅罐 Cranium Preserver",
+			"publicNotes": "<p>存颅罐是死灵法师的移动实验室。典型的存颅罐有着金属蜘蛛一般的身体，背后高举着一个大型的玻璃缸，周围有十几个头颅大小的小型玻璃缸。每个罐子里都装满了一种特殊的防腐液，可以用来保存被杀害敌人的思维。</p>",
 			"data":{},
 			"items":{
 				"strike-Cranium Remover":{
-					"name": "Cranium Remover"
+					"name": "头颅摘除器 Cranium Remover"
 				},
 				"strike-Embalming Fluid":{
-					"name": "Embalming Fluid"
+					"name": "尸体防腐剂 Embalming Fluid"
 				},
 				"Undead Crafter":{
-					"name": "Undead Crafter",
-					"description": "<p>The cranium preserver knows one version of the<em> <em>@UUID[Compendium.pf2e.spells-srd.c3b6LdLlQDPngNIb]{Create Undead}</em></em> ritual for every four heads it has preserved (a typical cranium preserver has 12 preserved heads). The cranium preserver can use its heads to make separate rolls as both the primary and secondary casters of the ritual。</p>"
+					"name": "不死创造者 Undead Crafter",
+					"description": "<p>存颅罐每储存4枚头颅，它就能知晓某个版本的<em>@UUID[Compendium.pf2e.spells-srd.c3b6LdLlQDPngNIb]{唤起死灵 Create Undead}</em>仪式（一般它会携带12枚头颅）。存颅罐能使用它储存的头颅作为仪式的主要施法者和次要施法者分别进行检定。</p>"
 				},
 				"Jettison Cranium":{
-					"name": "Jettison Cranium",
-					"description": "<p>The cranium preserver ejects one of its preserved-head jars at a point within 100 feet. The jar explodes, and all creatures in a @Template[type:burst|distance:10] must attempt a @Check[type:will|dc:28] save。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> The creature takes [[/r {2d8}[mental]+{2d8}[negative]]]{2d8 mental damage and 2d8 negative伤害}。</p>\n<p><strong>失败</strong> The creature takes [[/r {4d8}[mental]+{4d8}[negative]]]{4d8 mental damage and 4d8 negative伤害}. The discharged mental anguish released from the preserved head causes the creature to become @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} for 1 round。</p>\n<p><strong>大失败</strong> The creature takes [[/r {8d8}[mental]+{8d8}[negative]]]{8d8 mental and 8d8 negative伤害}. The discharged mental anguish released from the preserved head causes the creature to become confused for 2 rounds。</p>"
+					"name": "弹射头颅 Jettison Cranium",
+					"description": "<p>存颅罐将其中一枚储藏的头颅弹出，射向100尺内某个点。玻璃罐会爆炸，并且@Template[type:burst|distance:10]范围内的所有生物必须尝试@Check[type:will|dc:28]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r {2d8}[mental]+{2d8}[negative]]]{2d8心灵伤害和2d8负能量伤害}。</p>\n<p><strong>失败</strong> 生物受到[[/r {4d8}[mental]+{4d8}[negative]]]{4d8心灵伤害和4d8负能量伤害}。罐子里的头颅释放出的心灵痛苦导致生物@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>\n<p><strong>大失败</strong> 生物受到[[/r {8d8}[mental]+{8d8}[negative]]]{8d8心灵和8d8负能量伤害}。罐子里的头颅释放出的心灵痛苦导致生物困惑2轮。</p>"
 				},
 				"Slosh":{
-					"name": "Slosh",
-					"description": "<p>Whenever the cranium preserver ends a Stride, the movement causes necrotic embalming fluid and preserved body parts to slosh about and spill from its central vat. Each creature adjacent to the cranium preserver when it finishes its Stride must attempt a @Check[type:will|dc:26] save。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> The creature takes [[/r {1d8}[mental]+{1d8}[negative]]]{1d8 mental damage and 1d8 negative伤害}。</p>\n<p><strong>失败</strong> The creature takes [[/r {2d8}[mental]+{2d8}[negative]]]{2d8 mental damage and 2d8 negative伤害}。</p>\n<p><strong>大失败</strong> The creature takes [[/r {4d8}[mental]+{4d8}[negative]]]{4d8 mental and 4d8 negative伤害}. If the creature is alive, the preserved body parts sense the presence of a living creature and cling to it, causing the creature to become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} for 1 round。</p>"
+					"name": "晃荡 Slosh",
+					"description": "<p>每当存颅罐行走结束时，该动作会导致浸透死疽的防腐液和储藏的身体部件在它的罐子里晃荡并泼洒出来。每当存颅罐行走结束时，每个和它相邻的生物必须尝试@Check[type:will|dc:26]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r {1d8}[mental]+{1d8}[negative]]]{1d8心灵伤害和1d8负能量伤害}。</p>\n<p><strong>失败</strong> 生物受到[[/r {2d8}[mental]+{2d8}[negative]]]{2d8心灵伤害和2d8负能量伤害}。</p>\n<p><strong>大失败</strong> 生物受到[[/r {4d8}[mental]+{4d8}[negative]]]{4d8 mental and 4d8负能量伤害}。如果生物是活物，则储藏的身体部件会感知到活物的存在，并紧紧抓住对方，导致生物陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续1轮。</p>"
 				}
 			}
 		},
@@ -829,22 +829,22 @@
 		},
 		"Disgorged Zombie": {
 			"name": "Disgorged Zombie",
-			"hp": "lightning powered, 负能量治疗",
-			"publicNotes": "<p>Shock zombies are hideous undead covered with bolts and electrical wiring. Most have two large electric coils mounted on their backs to absorb and project electricity. If uncontrolled, shock zombies often wander far afield in search of inventors' labs or lightning storms to draw power from. In a pinch, the natural electric currents inside living creatures more than suffice。</p>",
+			"hp": "闪电充能, 负能量治疗",
+			"publicNotes": "<p>电激丧尸是丑陋的不死生物，全身被大量螺栓和电线复盖。大部分电激丧尸背后都有两个大线圈，用来吸收和投射电能。如果不加控制的话，电激丧尸通常会游荡到很远的地方，寻找发明家的实验室或闪电风暴来获取能量。在紧要关头，生物体内的自然电流也可以满足他们的需求。</p>",
 			"blurb": "Variant shock zombie",
 			"data":{},
 			"items":{
 				"Electricity Absorption":{
-					"name": "Electricity Absorption",
-					"description": "<p>For 1 minute after taking electricity damage, a shock zombie loses its usual @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} condition, gains the ability to use reactions, and gains a +10-foot status bonus to its Speed。</p>"
+					"name": "电能吸收 Electricity Absorption",
+					"description": "<p>在受到电击伤害的1分钟内，电击丧尸失去通常的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}状态，可以使用反应动作，并且速度获得+10尺状态加值。</p>"
 				},
 				"Lightning Powered":{
-					"name": "Lightning Powered",
-					"description": "<p>Arcs of restorative electricity jolt between shock zombies. For each shock zombie within 30 feet, the shock zombie gains fast healing 2 (to a maximum of fast healing 10)。</p>"
+					"name": "闪电充能 Lightning Powered",
+					"description": "<p>恢复的电弧在电击丧尸之间跳转。只要电击丧尸30尺内每有一个其他电击丧尸，就能获得快速愈合2（最大达到快速愈合10）。</p>"
 				},
 				"Slow":{
-					"name": "Slow",
-					"description": "<p>A shock zombie is typically @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions (but see electricity absorption)。</p>"
+					"name": "缓慢 Slow",
+					"description": "<p>电击丧尸通常陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，并且无法使用反应动作（详见电能吸收能力）。</p>"
 				},
 				"Amnesia Venom":{
 					"name": "Amnesia Venom",
@@ -998,7 +998,7 @@
 		},
 		"Glass Buccaneer": {
 			"name": "Glass Buccaneer",
-			"publicNotes": "<p>Clockwork buccaneers are powerful constructs designed for naval combat. Whereas most clockwork creations sink to the ocean floor while at sea, clockwork buccaneers can use their water jets to easily propel themselves through the water or leap aboard enemy ships. In addition to an internal water tank and hydraulic pumps, most clockwork buccaneers are equipped with a cutlass and arm gun loaded with scatter shot。</p>\n<hr />\n<p>As one delves deeper into the industrial heart of Alkenstar, the clockwork adversaries one faces become ever more complex and deadly。</p>",
+			"publicNotes": "<p>Clockwork buccaneers are powerful constructs designed for naval combat. Whereas most clockwork creations sink to the ocean floor while at sea, clockwork buccaneers can use their water jets to easily propel themselves through the water or leap aboard enemy ships. In addition to an internal water tank and hydraulic pumps, most clockwork buccaneers are equipped with a cutlass and arm gun loaded with scatter shot。</p>\n<hr />\n<p>当一个人深入地接触阿肯斯塔的工业中心时，他所面对的发条对手将会变得更加复杂且致命。</p>",
 			"blurb": "Variant clockwork buccaneer",
 			"data":{},
 			"items":{
@@ -1593,7 +1593,7 @@
 				},
 				"Explode":{
 					"name": "Explode",
-					"description": "<p>Parsus pushes their necromechanical innovation beyond its normal limits, dealing [[/r {10d6}[negative]]]{10d6 negative伤害} in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:31|basic:true]). Parsus can choose to include themself in this effect。</p>"
+					"description": "<p>Parsus pushes their necromechanical innovation beyond its normal limits, dealing [[/r {10d6}[negative]]]{10d6负能量伤害} in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:31|basic:true]). Parsus can choose to include themself in this effect。</p>"
 				},
 				"Necromantic Winding":{
 					"name": "Necromantic Winding",
@@ -1698,29 +1698,29 @@
 			}
 		},
 		"Pyronite Ooze": {
-			"name": "Pyronite Ooze",
-			"publicNotes": "<p>With the discovery of the incredible gelatinous explosive called pyronite, it was perhaps inevitable alchemical monstrosities made of the stuff would soon follow. So-called pyronite oozes sometimes spontaneously manifest from stockpiles of pyronite or other powerful explosives, typically amid mana storms or when affected by powerful magic。</p>\n<p>Pyronite oozes have an extremely unstable life cycle and are defined by their ability to continuously explode and reform themselves. A pyronite ooze's violent explosions hinder observations, making it difficult to learn anything from the volatile jelly. To complicate matters further, pyronite oozes seem drawn to other unstable alchemical concoctions. Test subjects brought to the Spellscar Desert have been observed bathing themselves in pools of magic-polluted effluvia. Although they typically reform into a single entity after exploding, pyronite oozes bathed in chemicals sometimes remain apart after splitting, creating two independent oozes. Some speculate that an as yet unknown reagent must be essential for the oozes to reproduce on their own。</p>",
+			"name": "爆熔雷泥怪 Pyronite Ooze",
+			"publicNotes": "<p>随着某种不可思议的凝胶状物质被发明，通常由这种物质构成的泥怪很快就会问世。所谓的爆熔雷泥怪有时候会自发的从储存爆熔雷或其他强大的爆炸物的容器中诞生，通常这是因为在法力风暴中或受到强大魔法的影响。</p>\n<p>爆熔雷泥怪具有极不稳定的生命周期，并且会不断爆炸再重聚为整体。爆熔雷泥怪的剧烈爆炸通常会妨碍人们对它的观察，导致人们很难从这种极不稳定的泥怪身上了解到什么。让事情变得更加复杂的是，爆熔雷泥怪似乎会被其他不稳定的炼金混合物吸引。人们观察被带到法痕荒漠中的实验对象时，发现它喜欢泡在在被魔法污染的污水池里。虽然它们通常会在爆炸后重新凝聚为一个单一的整体，但浸泡在化学物质中的爆熔雷泥怪有时候会在分裂之后保持分裂状态，形成两个互相独立的软泥。一些人推测，某种未知的试剂可能是这种软泥怪自行增殖所必须的。</p>",
 			"data":{},
 			"items":{
 				"strike-Blast":{
-					"name": "Blast",
-					"description": "<p>This can't cause other pyronite oozes to split。</p>"
+					"name": "爆炸 Blast",
+					"description": "<p>这不会导致其他爆熔雷泥怪分裂。</p>"
 				},
 				"Constant Explosions":{
-					"name": "Constant Explosions",
-					"description": "<p>@Template[type:emanation|distance:5] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>[[/r {4d6}[fire]]]{4d6 fire}、@Check[type:reflex|dc:29|basic:true]. This aura can't cause other pyronite oozes to split。</p>"
+					"name": "持续爆炸 Constant Explosions",
+					"description": "<p>@Template[type:emanation|distance:5] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>[[/r {4d6}[fire]]]{4d6火焰}、@Check[type:reflex|dc:29|basic:true]。灵光不会导致其他爆熔雷泥怪分裂。</p>"
 				},
 				"Rejoin":{
-					"name": "Rejoin",
-					"description": "<p>If two or more Medium pyronite oozes end their turn in adjacent spaces, they merge into a Large pyronite ooze, combining their current Hit Points。</p>"
+					"name": "重聚 Rejoin",
+					"description": "<p>如果两个或更多中型爆熔雷泥怪在结束回合是彼此位于相邻的空间，它们会融合成一个大型的爆熔雷泥怪，将它们的当前生命值合并。</p>"
 				},
 				"Split":{
-					"name": "Split",
-					"description": "<p>When a Large pyronite ooze is hit by an attack that would deal bludgeoning or fire damage and it has 10 or more HP, it explodes, dealing [[/r {6d6}[fire]]]{6d6火焰伤害} to creatures in a 10-foot radius (@Check[type:reflex|dc:29|basic:true]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes, each with half the original's HP, which each fly through the air and land 15 feet from the original ooze in a random direction. If no space is unoccupied where the ooze would land, it automatically pushes creatures and objects out of the way to fill a space (the GM decides if an object or creature is too big or sturdy to push)。</p>"
+					"name": "分裂 Split",
+					"description": "<p>当一个大型爆熔雷泥怪被某次造成钝击或火焰伤害的攻击命中，并且它至少有10点HP，则它会爆炸，对10尺半径内的所有生物造成[[/r {6d6}[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:29|basic:true]豁免）。该爆炸不会导致其他爆熔雷泥怪分裂。在爆炸后，泥怪分裂为两个中型爆熔雷泥怪，每一个都拥有原来一半的HP。并且分裂出的每只泥怪都飞向空中，落在离原始泥怪15尺远的空间，方向随机。如果泥怪的落点空间被占据，他会自动推开该空间内的生物或物品以占据空间（如果生物或物品太大或难以推动，则由GM裁定）。</p>"
 				},
 				"Exploding Split":{
-					"name": "Exploding Split",
-					"description": "<p><strong>需求</strong> The pyronite ooze is Large</p>\n<hr />\n<p><strong>效果</strong> The pyronite ooze explodes in a violent conflagration, dealing [[/r {3d6}[fire]+{3d6}[bludgeoning]]]{3d6 fire and 3d6钝击伤害} to all creatures in a @Template[type:emanation|distance:30]{30-foot radius} (@Check[type:reflex|dc:29|basic:true]). This explosion can't cause other pyronite oozes to split. After exploding, the ooze splits into two Medium pyronite oozes (see above), but this splitting doesn't deal additional damage。</p>"
+					"name": "爆炸分裂 Exploding Split",
+					"description": "<p><strong>需求</strong> 爆熔雷泥怪为大型；</p>\n<hr />\n<p><strong>效果</strong> 爆熔雷泥怪发出剧烈的爆炸，对@Template[type:emanation|distance:30]{30尺半价}内所有生物造成[[/r {3d6}[fire]+{3d6}[bludgeoning]]]{3d6火焰和3d6钝击伤害}（@Check[type:reflex|dc:29|basic:true]豁免）该爆炸不会导致其他爆熔雷泥怪分裂。在爆炸之后，泥怪分裂为2只中型爆熔雷泥怪（详见分裂能力），但这种分裂不会再造成额外伤害。</p>"
 				}
 			}
 		},
@@ -1866,22 +1866,22 @@
 			}
 		},
 		"Shock Zombie": {
-			"name": "Shock Zombie",
-			"hp": "lightning powered, 负能量治疗",
-			"publicNotes": "<p>Shock zombies are hideous undead covered with bolts and electrical wiring. Most have two large electric coils mounted on their backs to absorb and project electricity. If uncontrolled, shock zombies often wander far afield in search of inventors' labs or lightning storms to draw power from. In a pinch, the natural electric currents inside living creatures more than suffice。</p>",
+			"name": "电激丧尸 Shock Zombie",
+			"hp": "闪电充能, 负能量治疗",
+			"publicNotes": "<p>电激丧尸是丑陋的不死生物，全身被大量螺栓和电线复盖。大部分电激丧尸背后都有两个大线圈，用来吸收和投射电能。如果不加控制的话，电激丧尸通常会游荡到很远的地方，寻找发明家的实验室或闪电风暴来获取能量。在紧要关头，生物体内的自然电流也可以满足他们的需求。</p>",
 			"data":{},
 			"items":{
 				"Electricity Absorption":{
-					"name": "Electricity Absorption",
-					"description": "<p>For 1 minute after taking electricity damage, a shock zombie loses its usual @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} condition, gains the ability to use reactions, and gains a +10-foot status bonus to its Speed。</p>"
+					"name": "电能吸收 Electricity Absorption",
+					"description": "<p>在受到电击伤害的1分钟内，电击丧尸失去通常的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}状态，可以使用反应动作，并且速度获得+10尺状态加值。</p>"
 				},
 				"Lightning Powered":{
-					"name": "Lightning Powered",
-					"description": "<p>Arcs of restorative electricity jolt between shock zombies. For each shock zombie within 30 feet, the shock zombie gains fast healing 2 (to a maximum of fast healing 10)。</p>"
+					"name": "闪电充能 Lightning Powered",
+					"description": "<p>恢复的电弧在电击丧尸之间跳转。只要电击丧尸30尺内每有一个其他电击丧尸，就能获得快速愈合2（最大达到快速愈合10）。</p>"
 				},
 				"Slow":{
-					"name": "Slow",
-					"description": "<p>A shock zombie is typically @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions (but see electricity absorption)。</p>"
+					"name": "缓慢 Slow",
+					"description": "<p>电击丧尸通常陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，并且无法使用反应动作（详见电能吸收能力）。</p>"
 				}
 			}
 		},
@@ -1990,28 +1990,29 @@
 			}
 		},
 		"Smog Wraith": {
-			"name": "Smog Wraith",
-			"publicNotes": "<p>Clouds of choking fumes and toxic smog continuously shroud these potent undead. They constantly belch forth noxious vapors and find great humor in the death of creatures too weak to resist their vile fumes. These fetid vapors are so dense the corpses of a smog wraith's victims can float among them。</p>\n<p>Though it's possible to create smog wraiths through necromancy, most are the result of industrialists, inventors, and polluters who in life relished opportunities to exploit nature for profit, power, or prestige. In death, these wretched souls can rise as smog wraiths to continue their spoliation。</p>",
+			"name": "霾缚灵 Smog Wraith",
+			"ac": "负能量治疗",
+			"publicNotes": "<p>这些强大的亡灵周围持久不断地围绕着烟雾和有毒雾霾。他们不断喷出毒气，并且以那些无力抵抗毒气的生物的死亡为乐。这些恶臭的毒气密度是如此之大，以至于霾缚灵的受害者们的尸体甚至可以在里面漂浮起来。</p>\n<p>虽然人们可以通过死灵法术创造霾缚灵，但大部分霾缚灵都由实业家、发明家和污染者造就的。这些人在生活中通过开发自然来换取利润、权力或声望。当他们死亡时，这些可怜的灵魂便有可能复活为霾缚灵，继续他们的掠夺。</p>",
 			"data":{},
 			"items":{
 				"strike-Noxious Hand":{
-					"name": "Noxious Hand"
+					"name": "剧毒手掌 Noxious Hand"
 				},
 				"Floating Corpses":{
-					"name": "Floating Corpses",
-					"description": "<p>A smog wraith's victims are imbued with an eerie buoyancy; corpses of such creatures float up to 30 feet in the air while inside the wraith's noxious smog aura, though the wraith has no control over the corpse's movement。</p>"
+					"name": "漂浮的尸体 Floating Corpses",
+					"description": "<p>霾缚灵的受害者被赋予了一种可怕的浮力；这些生物的尸体位于霾缚灵的毒霾灵光范围内时，能漂浮在空中最多30尺高，但缚灵无法控制尸体的移动。</p>"
 				},
 				"Noxious Smog":{
-					"name": "Noxious Smog",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>Creatures within the aura are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}, and creatures outside the aura are concealed to creatures within it. A creature that ends its turn within the aura must attempt a @Check[type:fortitude|dc:25] save。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> The creature is sickened 1 and @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} while within the cloud。</p>\n<p><strong>大失败</strong> The creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} and slowed 1 while within the cloud。</p>"
+					"name": "毒霾 Noxious Smog",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>在灵光中的生物获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，并且灵光范围外的生物对灵光内的的生物隐蔽。在灵光范围内结束回合的生物必须尝试@Check[type:fortitude|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物在毒霾内时，陷入恶心1和@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>大失败</strong> 生物在毒霾内时，陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}和缓慢1。</p>"
 				},
 				"Sunlight Powerlessness":{
-					"name": "Sunlight Powerlessness",
-					"description": "<p>A smog wraith caught in sunlight is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+					"name": "阳光无力 Sunlight Powerlessness",
+					"description": "<p>霾缚灵暴露在阳光下时陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
 				},
 				"Smog Wrait Spawn":{
-					"name": "Smog Wrait Spawn",
-					"description": "<p>A living humanoid slain by a smog wraith's noxious hand Strike rises as a smog wraith spawn after [[/r 1d4 #Rounds]]{1d4轮}. This spawn is under the command of the smog wraith that killed it. It doesn't have noxious smog or smog wraith spawn and becomes @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} for as long as it's a smog wraith spawn. If the creator of the spawn dies, the spawn becomes a full-fledged, autonomous smog wraith; it regains its free will, gains smog wraith spawn and noxious smog, and is no longer clumsy。</p>"
+					"name": "霾缚灵衍体 Smog Wrait Spawn",
+					"description": "<p>一个活着的类人生物，如果被霾缚灵的剧毒手掌打击杀死，会在[[/r 1d4 #Rounds]]{1d4轮}之后复活为霾缚灵衍体。衍体会被杀死他的霾缚灵控制。它不具有毒霾或霾缚灵衍体能力，并且只要它处于衍体状态就会陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。如果衍体的创造者死亡，衍体会变为一个完全成长、有自我意识的霾缚灵；它会重新获得自由意志，获得毒霾和霾缚灵衍体能力，并且不再笨拙。</p>"
 				}
 			}
 		},
