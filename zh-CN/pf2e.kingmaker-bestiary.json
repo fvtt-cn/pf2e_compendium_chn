@@ -17,713 +17,1567 @@
         "items": {
             "path": "items",
             "converter": "npc-item-translation"
-        }
+        },
+        "publicNotes": "system.details.publicNotes",
+        "dr": "system.traits.dr",
+        "allSaves": "system.attributes.allSaves.value",
+        "senses": "system.traits.senses.value",
+        "hp": "system.attributes.hp.details",
+        "disable": "system.details.disable",
+        "hazarddescription": "system.details.description",
+        "reset": "system.details.reset",
+        "routine": "system.details.routine",
+        "blurb":"system.details.blurb",
+        "speed":"system.attributes.speed.details",
+        "languages":"system.traits.languages.custom",
+        "stealthdetails":"system.attributes.stealth.details",
+        "ac":"system.attributes.ac.details",
+        "di":"system.traits.di.custom"
     },
 	"entries": {
 		"Aecora Silverfire": {
-			"name": "Aecora Silverfire"
+			"name": "Aecora Silverfire",
+			"data":{},
+			"items":{}
 		},
 		"Agai": {
-			"name": "Agai"
+			"name": "Agai",
+			"data":{},
+			"items":{}
 		},
 		"Akiros Ismort": {
-			"name": "Akiros Ismort"
+			"name": "Akiros Ismort",
+			"data":{},
+			"items":{}
 		},
 		"Akuzhail": {
-			"name": "Akuzhail"
+			"name": "Akuzhail",
+			"data":{},
+			"items":{}
 		},
 		"Alasen": {
-			"name": "Alasen"
+			"name": "Alasen",
+			"data":{},
+			"items":{}
 		},
 		"Aldori Sister": {
-			"name": "Aldori Sister"
+			"name": "Aldori Sister",
+			"data":{},
+			"items":{}
 		},
 		"Ameon Trask": {
-			"name": "Ameon Trask"
+			"name": "Ameon Trask",
+			"data":{},
+			"items":{}
 		},
 		"Amiri (Level 1, Kingmaker)": {
-			"name": "Amiri (Level 1, Kingmaker)"
+			"name": "安米芮 Amiri (1级, 拥王者)",
+			"data":{},
+			"items":{}
 		},
 		"Amiri (Level 11, Kingmaker)": {
-			"name": "Amiri (Level 11, Kingmaker)"
+			"name": "安米芮 Amiri (11级, 拥王者)",
+			"data":{},
+			"items":{}
 		},
 		"Ancient Wisp": {
-			"name": "Ancient Wisp"
+			"name": "Ancient Wisp",
+			"data":{},
+			"items":{}
 		},
 		"Ankou Assassin": {
-			"name": "Ankou Assassin"
+			"name": "Ankou Assassin",
+			"data":{},
+			"items":{}
 		},
 		"Annamede Belavarah": {
-			"name": "Annamede Belavarah"
+			"name": "Annamede Belavarah",
+			"data":{},
+			"items":{}
 		},
 		"Armag Twice-Born": {
-			"name": "Armag Twice-Born"
+			"name": "Armag Twice-Born",
+			"publicNotes": "<p>Armag was not born with that name, but today, he fully believes he is the legendary ancient leader reborn to lead the Tiger Lords back to an age of glory. He has long forgotten his birth name, as well as much of his childhood, as his brief but overwhelming recent experiences forced these memories out of his mind to make room for bloodlust, an addiction to violence, and obsession with mayhem. Only his worship of Gorum remains today, yet even this has been corrupted-tainted by the fell influence of the Sisters of the Bloodshot Eye. Little remains in Armag's mind today save for a desire to conquer, to wield the mighty greatsword <em>Ovinrbaane </em>in battle, and to revel in the glory of war. While he claims to be the reborn ancient hero, his \"memories\" of this previous life are largely hallucinations and fantasies implanted by the influence of his weapon.</p>\n<p>Armag himself appears as a muscular human with unruly brown hair, a full beard, and an expression that seems incapable of any other visage than anger, wrath, or fury.</p>",
+			"data":{},
+			"items":{
+				"strike-Ovinrbaane":{
+					"name": "Ovinrbaane"
+				},
+				"strike-Shoulder Spikes":{
+					"name": "Shoulder Spikes"
+				},
+				"No Time To Die":{
+					"name": "No Time To Die",
+					"description": "<p>As long as Armag wields <em>Ovinrbaane</em> and is raging, the combination of the sword's magic and Armag's furious conviction that he is the true Armag protects him from death. His eyes and the sword's blade weep with blood and glow with red light at this time. As long as these conditions persist, he never increases beyond @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying 3} and is not rendered @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}. Instead, Armag becomes @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} and continues to fight. If <em>Ovinrbaane</em> is taken from him (such as via a successful @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm}), or if his rage ends while he is dying, he immediately dies regardless of his dying condition value. If he's healed to at least 1 Hit Point, the confusion effect immediately ends.</p>"
+				},
+				"Second Wind":{
+					"name": "Second Wind",
+					"description": "<p><strong>Trigger</strong> Armag is @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} and scores a critical hit with a melee strike or reduces a creature to 0 Hit Points with a melee Strike</p>\n<p><strong>Effect</strong> Armag draws upon inner reserves of furious energy. He is no longer fatigued.</p>"
+				},
+				"Armag's Rage":{
+					"name": "Armag's Rage",
+					"description": "<p><strong>Requirements</strong> Armag is not @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} or raging.</p>\n<hr />\n<p><strong>Effect</strong> Armag flies into a rage that lasts 1 minute. While raging, he gains a +6 status bonus to damage rolls and suffers a -1 status penalty to AC. During his rage, Armag gains an additional reaction at the start of his turn, but he can only use this additional reaction for @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.hFtNbo1LKYCoDy2O]{Attacks of Opportunity}. After the rage ends, Armag is fatigued.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.z3uyCMBddrPK5umr]{Effect: Rage}</p>"
+				},
+				"Awesome Blow":{
+					"name": "Awesome Blow",
+					"description": "<p><strong>Requirements</strong> Armag's last action was a successful Strike.</p>\n<p><strong>Effect</strong> The weight of Armag's previous swing drives his foe back. He attempts an @UUID[Compendium.pf2e.action-macros.yNry1xMZqdWHncbV]{Athletics} check against the target's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> Armag gains the critical success effects of a @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}, then the critical success effect of a @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} against the target.</p>\n<p><strong>Success</strong> Armag gains the success effect of a Shove, then the success effect of a Trip against the target.</p>\n<p><strong>Failure</strong> Armag pushes the foe back 5 feet.</p>"
+				},
+				"Greatsword Critical Specialization":{
+					"name": "Greatsword Critical Specialization",
+					"description": "<p>On a critical hit from a greatsword Strike, the target is made off-balance and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of Armag's next turn.</p>"
+				},
+				"Shoulder Slam":{
+					"name": "Shoulder Slam",
+					"description": "<p>Armag Strides forward and hunkers down to attempt a shoulder spike Strike against a target at the end of that movement. If he critically hits a creature with this Strike, that creature is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>"
+				}
+			}
 		},
 		"Auchs": {
-			"name": "Auchs"
+			"name": "Auchs",
+			"data":{},
+			"items":{}
 		},
 		"Avatar of the Lantern King": {
-			"name": "Avatar of the Lantern King"
+			"name": "Avatar of the Lantern King",
+			"languages": "心灵感应 300 尺 ; tongues",
+			"publicNotes": "<p>The Lantern King is one of the Eldest-a pantheon of demigods whose rule over the First World is one of capriciousness that can be at times playful, enigmatic, bizarre, or even downright mean. For the most part, the Lantern King's plots and shenanigans tilt toward the cruel, and while he's long been a master at riding the proverbial razor's edge between mischief and outright sadism (if only by conserving his cruelest plans for those who invite that cruelty by being cruel themselves, as in the case of Nyrissa), his latest actions have certainly drawn the notice of the other Eldest. As such, they have largely distanced themselves from him, and as a result of this, any defeat the PCs deal to him in this adventure goes not only unpunished by the Lantern King's demigod siblings but will even be enforced, in a manner of speaking, by the other Eldest so that the Lantern King won't seek continued revenge against the PCs for their victories. Whether or not this also serves to teach the capricious eldest a lesson to temper his need for mischief with occasional bouts of patience and even mercy, only time can tell.</p>\n<p>The Lantern King's direct interactions with the PCs in this campaign are via an avatar-a powerful proxy created from himself to rule over the Lantern Kingdom. While this avatar isn't as powerful as the Lantern King himself, it remains the single most dangerous foe the party faces in Kingmaker. As a demigod, the Lantern King is an even more dangerous foe, equivalent in power to a 29th‑level creature and possessing abilities beyond the scope of the core experience in the <em>Pathfinder Roleplaying Game</em>. Some of these abilities, such as the power to manipulate reality, to create powerful artifacts like the <em>Apology</em>, and to build entire demiplane realms like the Hunting Dream or the Lantern Kingdom, manifest during the course of the <em>Kingmaker Adventure Path</em> not as rules content but as story elements the PCs will need to endure-see Chapter 11 of this book for more details.</p>\n<p>In combat, the Lantern King's avatar uses flight to remain out of melee for the first several rounds of combat, relying upon his spells to soften up the party before using his Strikes against them. He's fond of taking actions that disrupt, torment, or mock the PCs rather than those specifically tailored to maximize damage. For example, he often uses Playful Switch to swap a flying PC in the air with one who's on the ground and can't fly, or he uses illusions to create false foes or locations that play off of previous failures or embarrassments the PCs may have endured during the campaign itself. By playing the Lantern King's avatar in battle as more of a trickster than a cold-blooded killer, you'll not only enforce his legendary personality upon your players, but you'll also give their characters a bit more of a fighting chance against him in battle. He prefers to hold <em>@UUID[Compendium.pf2e.spells-srd.MLNeD5sAunV0E23j]{Primal Phenomenon}</em> in reserve to recover from an unwanted condition or situation, and as he realizes the PCs are dangerous foes, he abandons \"playful tactics\" for more serious or tactical decisions aimed toward defeating the party rather than toying with them.</p>\n<p>While the Lantern King faces no lasting inconvenience if his avatar is slain, the sting of such a defeat is enough to compel the avatar to back down and ask for a truce if the PCs reduce him to fewer than 75 Hit Points. If the PCs agree to a truce, the avatar compliments their prowess and promises to turn his attentions away from the Stolen Lands. Furthermore, he agrees to any additional terms the PCs ask for, provided they are within his ability to grant. This includes restoring Nyrissa's place and realm to the First World (although he cannot provide further information about her lost lover) and unmaking <em>Briar </em>to restore her capacity to love.</p>",
+			"data":{},
+			"items":{
+				"Fortune's Friend":{
+					"name": "Fortune's Friend",
+					"description": "<p><strong>Trigger</strong> The Lantern King fails or critically fails a saving throw.</p>\n<p><strong>Effect</strong> The result of the saving throw is improved one degree. The Lantern King can't Fortune's Friend for [[/br 1d4 #rounds]]{1d4 rounds}.</p>"
+				},
+				"Lantern King's Glow":{
+					"name": "Lantern King's Glow",
+					"description": "<p>The Lantern King illuminates his aura with bright light. At the start of his turn, this aura attempts to counteract any ongoing darkness effect in the aura (counteract check [[/r {1d20+44 #Counteract Check]]{+44}). The Lantern King can suppress or activate this aura as a free action.</p>"
+				},
+				"Mocking Laughter":{
+					"name": "Mocking Laughter",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Whenever a creature misses the Lantern King with an attack or fails a skill check or saving throw, the creature is overtaken by overwhelming mirth at its mistake, as <em>@UUID[Compendium.pf2e.spells-srd.tlSE7Ly8vi1Dgddv]{Hideous Laughter}</em> (@Check[type:will|dc:45] save). The creature is thereafter temporarily immune to mocking laughter for 1 hour.</p>"
+				},
+				"Reactive":{
+					"name": "Reactive",
+					"description": "<p>The Lantern King gains an additional reaction at the start of his turn, but he can use this additional reaction only to take a reaction he hasn't already taken since the end of his previous turn.</p>"
+				},
+				"Adjust Temperature":{
+					"name": "Adjust Temperature",
+					"description": "<p>The Lantern King adjusts the temperature of his flames. He shifts from orange to blue, and his Strikes inflict cold damage until he takes this action again to switch back to fire damage.</p>"
+				},
+				"Blindness":{
+					"name": "Blindness",
+					"description": "<p>A creature damaged by the Lantern King's blinding beam Strike must make a @Check[type:fortitude|dc:48] save. If the Strike was a critical hit, the save's result is worsened one degree.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by blindness.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 minute. At the end of each of its turns, the creature can attempt a @Check[type:fortitude|dc:48] save to end this blindness early.</p>\n<p><strong>Critical Failure</strong> The creature is blinded permanently.</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>The Lantern King can take on the appearance of any fey or humanoid, but he typically does so only to trick and confuse creatures. He loses his searing rune and blinding beam Strikes, but he gains a melee fist Strike that inflicts [[/r {4d8 + 19}[bludgeoning]]]{4d8 + 19 bludgeoning damage}.</p>"
+				},
+				"Drain Luck":{
+					"name": "Drain Luck",
+					"description": "<p>When the Lantern King damages a creature with his searing rune Strike, he drains the creature's luck. The creature must succeed at a @Check[type:will|dc:48] save or gain a -1 status penalty to all checks; it is then temporarily immune to Drain Luck for 1 round. Further damage dealt by the Lantern King's searing rune Strikes increases the status penalty by 1 on a failed save to a maximum status penalty of -4. This status penalty is reduced by one every time the affected creature achieves a critical success on a die roll against a creature that is at least equal to them in level, but otherwise is permanent until removed.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.fGI77mVeCQKBAP0f]{Effect: Drain Luck}</p>"
+				},
+				"Playful Switch":{
+					"name": "Playful Switch",
+					"description": "<p>The Lantern King targets two creatures within 60 feet, causing each to become surrounded by glowing runes. The Lantern King attempts a single Thievery check against each target's Reflex DC. The Lantern King can't use Playful Switch again for 1 round.</p>\n<hr />\n<p><strong>Critical Success</strong> If the Thievery check achieves a critical success against both targets, they swap places and are both @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}. Each creature must be able to fit into their new spaces or the effect fails.</p>\n<p><strong>Success</strong> If the Thievery check achieves a success against both targets (or a critical success on one and a success on another), the two targets swap places. Each creature must be able to fit into their new spaces or the effect fails.</p>\n<p><strong>Failure</strong> If the Thievery check fails against either target, neither target is affected.</p>\n<p><strong>Critical Failure</strong> As failure, but both creatures are temporarily immune to Playful Switch for 24 hours.</p>"
+				},
+				"Prismatic Burst":{
+					"name": "Prismatic Burst",
+					"description": "<p><strong>Trigger</strong> A creature achieves a critical hit against the Lantern King or damages it with a cold iron weapon.</p>\n<p><strong>Effect</strong> The Lantern King casts <em>@UUID[Compendium.pf2e.spells-srd.d6o52BnjViNz7Gub]{Prismatic Spray}</em>.</p>"
+				}
+			}
 		},
 		"Azure Lilies": {
-			"name": "Azure Lilies"
+			"name": "Azure Lilies",
+			"data":{},
+			"items":{}
 		},
 		"Ballista Defense": {
-			"name": "Ballista Defense"
+			"name": "Ballista Defense",
+			"data":{},
+			"items":{}
 		},
 		"Barbtongued Wyvern": {
-			"name": "Barbtongued Wyvern"
+			"name": "Barbtongued Wyvern",
+			"data":{},
+			"items":{}
 		},
 		"Black Smilodon": {
-			"name": "Black Smilodon"
+			"name": "Black Smilodon",
+			"data":{},
+			"items":{}
 		},
 		"Black Tear Cutthroat": {
-			"name": "Black Tear Cutthroat"
+			"name": "Black Tear Cutthroat",
+			"data":{},
+			"items":{}
 		},
 		"Bloom Cultist": {
-			"name": "Bloom Cultist"
+			"name": "Bloom Cultist",
+			"data":{},
+			"items":{}
 		},
 		"Bloom of Lamashtu": {
-			"name": "Bloom of Lamashtu"
+			"name": "Bloom of Lamashtu",
+			"data":{},
+			"items":{}
 		},
 		"Bloom Wyvern": {
-			"name": "Bloom Wyvern"
+			"name": "Bloom Wyvern",
+			"data":{},
+			"items":{}
 		},
 		"Bloomborn Athach": {
-			"name": "Bloomborn Athach"
+			"name": "Bloomborn Athach",
+			"data":{},
+			"items":{}
 		},
 		"Bog Mummy Cultist": {
-			"name": "Bog Mummy Cultist"
+			"name": "Bog Mummy Cultist",
+			"data":{},
+			"items":{}
 		},
 		"Boggard Cultist": {
-			"name": "Boggard Cultist"
+			"name": "Boggard Cultist",
+			"data":{},
+			"items":{}
 		},
 		"Boggard Warden": {
-			"name": "Boggard Warden"
+			"name": "Boggard Warden",
+			"data":{},
+			"items":{}
 		},
 		"Breath of Despair": {
-			"name": "Breath of Despair"
+			"name": "Breath of Despair",
+			"data":{},
+			"items":{}
 		},
 		"Brush Thylacine": {
-			"name": "Brush Thylacine"
+			"name": "Brush Thylacine",
+			"data":{},
+			"items":{}
 		},
 		"Camouflaged Spiked Pit": {
-			"name": "Camouflaged Spiked Pit"
+			"name": "Camouflaged Spiked Pit",
+			"data":{},
+			"items":{}
 		},
 		"Castruccio Irovetti": {
-			"name": "Castruccio Irovetti"
+			"name": "Castruccio Irovetti",
+			"publicNotes": "<p>Since his flight from Numeria, Castruccio Irovetti has ruled Pitax for over half a decade, and in that time, he has firmly established his hold over this River Kingdom's political scene through a mix of cunning choice and luck. While he does have the support of the nymph Nyrissa, he hid from her the fact that he's managed to recover the magical sword she charged him with retrieving, making him loath to call upon her for aid. Furthermore, if he can defeat the PCs, surely that show of strength will bolster his reputation in her eyes, so that he can then present <em>Briar </em>to her for an even greater reward. In Nyrissa, Irovetti sees the only candidate he could imagine taking on as his Queen.</p>",
+			"data":{},
+			"items":{
+				"equipment-Palace Key":{
+					"name": "Palace Key",
+					"description": "<p>Unlocks all locks in the palace in Pitax</p>"
+				},
+				"strike-Rod of Razors":{
+					"name": "Rod of Razors"
+				},
+				"strike-Flechette":{
+					"name": "Flechette"
+				},
+				"Nyrissa's Favor":{
+					"name": "Nyrissa's Favor",
+					"description": "<p>Nyrissa infused Irovetti with additional abilities. He gained @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{Darkvision} and the ability to see @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} creatures as a result of this favor, in addition to the typical +2 status bonus to Performance when determining the effect of compositions.</p>"
+				},
+				"Songstrike":{
+					"name": "Songstrike",
+					"description": "<p>Irovetti sings out a short aria that resonates within his rod of razors, causing it to become infused with sonic energy. He attempts a Strike with the rod of razors, and if he hits, he inflicts an additional [[/r {5d10}[sonic]]]{5d10 sonic damage} (@Check[type:fortitude|dc:37|basic:true]).</p>"
+				}
+			}
 		},
 		"Centaur Scout": {
-			"name": "Centaur Scout"
+			"name": "Centaur Scout",
+			"data":{},
+			"items":{}
 		},
 		"Cephal Lorentus": {
-			"name": "Cephal Lorentus"
+			"name": "Cephal Lorentus",
+			"data":{},
+			"items":{}
 		},
 		"Chew Spider": {
-			"name": "Chew Spider"
+			"name": "Chew Spider",
+			"data":{},
+			"items":{}
 		},
 		"Chief Sootscale": {
-			"name": "Chief Sootscale"
+			"name": "Chief Sootscale",
+			"data":{},
+			"items":{}
 		},
 		"Cleansed Cultist": {
-			"name": "Cleansed Cultist"
+			"name": "Cleansed Cultist",
+			"data":{},
+			"items":{}
 		},
 		"Collapsing Bridge": {
-			"name": "Collapsing Bridge"
+			"name": "Collapsing Bridge",
+			"data":{},
+			"items":{}
 		},
 		"Collapsing Floor": {
-			"name": "Collapsing Floor"
+			"name": "Collapsing Floor",
+			"data":{},
+			"items":{}
 		},
 		"Corax": {
-			"name": "Corax"
+			"name": "Corax",
+			"data":{},
+			"items":{}
 		},
 		"Cursed Guardian": {
-			"name": "Cursed Guardian"
+			"name": "Cursed Guardian",
+			"data":{},
+			"items":{}
 		},
 		"Cutthroat Haunt": {
-			"name": "Cutthroat Haunt"
+			"name": "Cutthroat Haunt",
+			"data":{},
+			"items":{}
 		},
 		"Cyclops Zombie": {
-			"name": "Cyclops Zombie"
+			"name": "Cyclops Zombie",
+			"data":{},
+			"items":{}
 		},
 		"Darivan": {
-			"name": "Darivan"
+			"name": "Darivan",
+			"publicNotes": "<p>Darivan is not the classic image of a Lamashtan cultist. While deeply religious, his magical power stems not from his faith, but from a link to his ancestral past. The favor of a dryad helped his grandfather escape from a brutal life and find a safe new homeland for his people, but Darivan never held patience for that. To Darivan, his sorcerous legacy and his sinister faith are two wholly separate elements, but his recent visions of the bloom of Lamashtu bringing a new swath of monsters to the Stolen Lands has compelled him strongly, showing him how his fey ancestry and his demonic faith can be made stronger.</p>\n<p>In combat, Darivan relies on his spells against ranged foes and his falchion and claw in melee. He activates Bloom Regeneration if an attack reduces him to 100 Hit Points or fewer, then shifts tactics to casting <em>@UUID[Compendium.pf2e.spells-srd.b5sGjGlBf58f8jn0]{Air Walk}</em> and retreating upward to use spells against foes.</p>",
+			"data":{},
+			"items":{
+				"Bloom Regeneration":{
+					"name": "Bloom Regeneration",
+					"description": "<p><strong>Trigger</strong> Darivan takes damage while he's within the Cradle of Lamashtu.</p>\n<p><strong>Effect</strong> Darivan cries out a quick prayer to the Mother of Monsters, and filaments of fungus slither up into his wounded body, healing [[/r {4d6} #Hit Points]]{4d6 points} of damage. For the next 4 rounds, Darivan gains regeneration 10; this regeneration can be deactivated by cold iron or good damage. Darivan can't activate Bloom Regeneration again for 24 hours.</p>"
+				},
+				"Bleed for Lamashtu":{
+					"name": "Bleed for Lamashtu",
+					"description": "<p><strong>Requirement</strong> Darivan hasn't attempted a falchion strike yet.</p>\n<p><strong>Effect</strong> Darivan attempts a Strike with a falchion. On a hit, he inflicts an additional [[/r {2d6}[bleed]]]{2d6 bleed damage}.</p>"
+				},
+				"Bloodline Magic":{
+					"name": "Bloodline Magic",
+					"description": "<p>When Darivan's bloodline magic activates, his movements become supernaturally graceful and distracting, granting him a +1 status bonus to Diplomacy checks for 1 round or imposing a -1 status penalty on one target's Will saves for 1 round.</p>"
+				}
+			}
 		},
 		"Davik Nettles": {
-			"name": "Davik Nettles"
+			"name": "Davik Nettles",
+			"data":{},
+			"items":{}
 		},
 		"Defaced Naiad Queen": {
-			"name": "Defaced Naiad Queen"
+			"name": "Defaced Naiad Queen",
+			"data":{},
+			"items":{}
 		},
 		"Dog (Ekundayo's Companion)": {
-			"name": "Dog (Ekundayo's Companion)"
+			"name": "狗 Dog (艾昆达尤的动物伙伴)",
+			"data":{},
+			"items":{
+				"Support Benefit":{
+					"name": "支援收益 Support Benefit",
+					"description": "<p>直到艾昆达尤下一回合开始，他的打击在对身处狗威胁范围内的生物造成伤害的同时还会令目标在速度上承受持续1分钟的-5尺状态减值（大成功时为-10尺）。</p>"
+				}
+			}
 		},
 		"Dovan from Nisroch": {
-			"name": "Dovan from Nisroch"
+			"name": "Dovan from Nisroch",
+			"data":{},
+			"items":{}
 		},
 		"Dread Aura": {
-			"name": "Dread Aura"
+			"name": "Dread Aura",
+			"data":{},
+			"items":{}
 		},
 		"Drelev Guards": {
-			"name": "Drelev Guards"
+			"name": "Drelev Guards",
+			"data":{},
+			"items":{}
 		},
 		"Dropping Web Trap": {
-			"name": "Dropping Web Trap"
+			"name": "Dropping Web Trap",
+			"data":{},
+			"items":{}
 		},
 		"Ekundayo (Level 1)": {
-			"name": "Ekundayo (Level 1)"
+			"name": "艾昆达尤 Ekundayo (1级)",
+			"data":{},
+			"items":{}
 		},
 		"Ekundayo (Level 6)": {
-			"name": "Ekundayo (Level 6)"
+			"name": "艾昆达尤 Ekundayo (6级)",
+			"data":{},
+			"items":{}
 		},
 		"Elder Elemental Tsunami": {
-			"name": "Elder Elemental Tsunami"
+			"name": "Elder Elemental Tsunami",
+			"data":{},
+			"items":{}
 		},
 		"Eldritch Echoes": {
-			"name": "Eldritch Echoes"
+			"name": "Eldritch Echoes",
+			"data":{},
+			"items":{}
 		},
 		"Elga Verniex": {
-			"name": "Elga Verniex"
+			"name": "Elga Verniex",
+			"data":{},
+			"items":{}
 		},
 		"Elk": {
-			"name": "Elk"
+			"name": "Elk",
+			"data":{},
+			"items":{}
 		},
 		"Endless Struggle": {
-			"name": "Endless Struggle"
+			"name": "Endless Struggle",
+			"data":{},
+			"items":{}
 		},
 		"Engelidis": {
-			"name": "Engelidis"
+			"name": "Engelidis",
+			"data":{},
+			"items":{}
 		},
 		"Enormous Dragonfly": {
-			"name": "Enormous Dragonfly"
+			"name": "Enormous Dragonfly",
+			"data":{},
+			"items":{}
 		},
 		"Enormous Flame Drake": {
-			"name": "Enormous Flame Drake"
+			"name": "Enormous Flame Drake",
+			"data":{},
+			"items":{}
 		},
 		"Eobald": {
-			"name": "Eobald"
+			"name": "Eobald",
+			"data":{},
+			"items":{}
 		},
 		"Evindra": {
-			"name": "Evindra"
+			"name": "Evindra",
+			"data":{},
+			"items":{}
 		},
 		"Exploding Bloom Pods": {
-			"name": "Exploding Bloom Pods"
+			"name": "Exploding Bloom Pods",
+			"data":{},
+			"items":{}
 		},
 		"Explosion Bear": {
-			"name": "Explosion Bear"
+			"name": "Explosion Bear",
+			"data":{},
+			"items":{}
 		},
 		"Falling Portcullis": {
-			"name": "Falling Portcullis"
+			"name": "Falling Portcullis",
+			"data":{},
+			"items":{}
 		},
 		"False Priestess": {
-			"name": "False Priestess"
+			"name": "False Priestess",
+			"data":{},
+			"items":{}
 		},
 		"Fen Pudding": {
-			"name": "Fen Pudding"
+			"name": "Fen Pudding",
+			"data":{},
+			"items":{}
 		},
 		"Fetch Behemoth": {
-			"name": "Fetch Behemoth"
+			"name": "Fetch Behemoth",
+			"data":{},
+			"items":{}
 		},
 		"Fetch Stalker": {
-			"name": "Fetch Stalker"
+			"name": "Fetch Stalker",
+			"data":{},
+			"items":{}
 		},
 		"Fionn": {
-			"name": "Fionn"
+			"name": "Fionn",
+			"data":{},
+			"items":{}
 		},
 		"Flooding Room": {
-			"name": "Flooding Room"
+			"name": "Flooding Room",
+			"data":{},
+			"items":{}
 		},
 		"Foras": {
-			"name": "Foras"
+			"name": "Foras",
+			"allSaves": "resolve",
+			"senses": "unseen sight",
+			"publicNotes": "<p>The man who would take the name Foras grew up millennia ago among worshipers of Pharasma, yet he came to believe that the Outer Gods were the keys to claiming personal power. He tricked his people's priests into to imparting eldritch truths they would not normally share, then shared them with a few fellow secretive scholars of the occult.</p>\n<p>Gathering those whom Foras could manipulate, he retreated to a new stronghold-a location now known as Candlemere. Here, Foras's cult gave up their sight and their souls, only to become trapped with him within their own compound when their leader's brother tracked them down and imprisoned them. Yet even this hasn't stymied Foras, and he continues to this day to work toward his goal of drawing Yog-Sothoth into the world.</p>",
+			"data":{},
+			"items":{
+				"Unseen Sight":{
+					"name": "Unseen Sight",
+					"description": "<p>The ritual Foras led his cultists on allowed them to turn aside time and halt aging, but it required more than the sacrifice of an individual's given name-it required the sacrifice of sight itself. The removal of the eyes symbolized a Thresholder's abandonment of all they had seen before, and with the ritual's completion they gain something greater than mere vision: they gain the Unseen Sight. This is a precise sense that mimics @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6]{Darkvision} yet functions even if the eye sockets themselves are covered. More importantly, the unseen sight allows a Thresholder to see the truth of the world, granting them the ability to see things as they actually are as if they were under the effects of <em>@UUID[Compendium.pf2e.spells-srd.uqlxMQQeSGWEVjki]{True Seeing}</em>, provided they are located within a region under the influence of Yog- Sothoth. Currently in the Stolen Lands, this is limited to the island of Candlemere and the dungeons within it; beyond this area, the Thresholder cultists are @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blind}. Of course, if their plan to draw Yog-Sothoth into the region succeeds, the region in which the unseen sight functions will increase dramatically.</p>"
+				},
+				"Outside of Time":{
+					"name": "Outside of Time",
+					"description": "<p>Foras exists outside of time; he doesn't age, doesn't need food or drink to survive, and can't be @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} or @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed} unless he chooses to be.</p>"
+				},
+				"Resolve":{
+					"name": "Resolve",
+					"description": "<p>When Foras rolls a success on a Will save, he gets a critical success instead.</p>"
+				},
+				"Time Siphon":{
+					"name": "Time Siphon",
+					"description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>A living creature that enters the aura or ends its turn within it has some of its temporal essence drained away to Yog-Sothoth. It must succeed at a @Check[type:will|dc:38] save or become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} for 1 round (@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure). Worshipers of Yog-Sothoth are immune to Time Siphon.</p>"
+				},
+				"Accelerated Existence":{
+					"name": "Accelerated Existence",
+					"description": "<p>Foras is @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened 1}, and he can use this additional action to Step, Stride, or @UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{Sustain a Spell}.</p>"
+				},
+				"Steady Spellcasting":{
+					"name": "Steady Spellcasting",
+					"description": "<p>If a reaction would disrupt Foras's spellcasting action, he attempts a @Check[type:flat|dc:15].; on a success, the action isn't disrupted.</p>"
+				}
+			}
 		},
 		"Freshly Bloomed Basilisk": {
-			"name": "Freshly Bloomed Basilisk"
+			"name": "Freshly Bloomed Basilisk",
+			"data":{},
+			"items":{}
 		},
 		"Gaetane": {
-			"name": "Gaetane"
+			"name": "Gaetane",
+			"data":{},
+			"items":{}
 		},
 		"Gedovius": {
-			"name": "Gedovius"
+			"name": "Gedovius",
+			"data":{},
+			"items":{}
 		},
 		"General Avinash Jurrg": {
-			"name": "General Avinash Jurrg"
+			"name": "General Avinash Jurrg",
+			"data":{},
+			"items":{}
 		},
 		"Ghostly Guard": {
-			"name": "Ghostly Guard"
+			"name": "Ghostly Guard",
+			"data":{},
+			"items":{}
 		},
 		"Giant Trapdoor Spider": {
-			"name": "Giant Trapdoor Spider"
+			"name": "Giant Trapdoor Spider",
+			"data":{},
+			"items":{}
 		},
 		"Glyph of Warding (Kingmaker)": {
-			"name": "Glyph of Warding (Kingmaker)"
+			"name": "Glyph of Warding (Kingmaker)",
+			"data":{},
+			"items":{}
 		},
 		"Goblin Bat-Dog": {
-			"name": "Goblin Bat-Dog"
+			"name": "Goblin Bat-Dog",
+			"data":{},
+			"items":{}
 		},
 		"Grabbles": {
-			"name": "Grabbles"
+			"name": "Grabbles",
+			"data":{},
+			"items":{}
 		},
 		"Grigori": {
-			"name": "Grigori"
+			"name": "Grigori",
+			"publicNotes": "<p>The bard Grigori is a charismatic orator and an agent of Pitax who seeks to undermine the PCs' authority while spying on their kingdom. He shows up in the kingdom's capital city while the PCs are out adventuring and immediately begins giving speeches criticizing and denigrating their leadership and actions. More and more of the townsfolk gather to hear him talk and, as the days wear on, he builds a wellspring of support among the disaffected settlers in the town. Every decision the PCs make has a winner and a loser, and Grigori is gifted at shifting focus to the losers in these decisions and riling them up. Whether it is appealing to the citizens who didn't get what they wanted when the PCs built a new city block, to spinning a narrative that paints a recent event in the most horrid light for those for whom the outcome was a negative, a properly played Grigori should become a constant barb in the players' side and one of the most memorable villains they encounter. Grigori takes great pains to avoid breaking any of the PCs' laws so that they have no legal justification to arrest him other than that they want to silence him.</p>\n<p>Grigori is more than just an itinerant storyteller; he's a spy and agent provocateur sent by King Irovetti, the Lord of Pitax, to spread chaos and dissent in the town with the aim of overthrowing the PCs and possibly paving the way for Pitax to annex the settlement. In order to cover his tracks and retain plausible deniability, Irovetti used several layers of agents to hire Grigori; as far as the bard knows, he was hired to cause trouble in this fledgling town by agents from Fort Drelev to the west.</p>",
+			"data":{},
+			"items":{
+				"Rhetorical Spell":{
+					"name": "Rhetorical Spell",
+					"description": "<p>If the next action Grigori takes is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell}, he attempts a Performance check against all observers' Perception DCs. On a success, he hides his spellcasting as part of his oratory, and observers don't realize he's Casting a Spell.</p>"
+				}
+			}
 		},
 		"Gromog": {
-			"name": "Gromog"
+			"name": "Gromog",
+			"data":{},
+			"items":{}
 		},
 		"Gurija": {
-			"name": "Gurija"
+			"name": "Gurija",
+			"data":{},
+			"items":{}
 		},
 		"Hannis Drelev": {
-			"name": "Hannis Drelev"
+			"name": "Hannis Drelev",
+			"publicNotes": "<p>Hannis Drelev spent his youth in Brevoy frustrated at the lack of opportunity for advancement. When he heard Lady Jamandi was looking for volunteers to aid her in exploring and taming the Stolen Lands, he saw an opportunity to bolster his fame. In the months since, Hannis has come to regret his decision, and now that he has been forced to surrender to Irovetti and Armag, his attitude has shifted from frustration to outright cruelty.</p>\n<p>Drelev comes across as a sullen, greedy, conceited man, never satisfied with his lot in life, but always disdainful of anyone who has less than him. Though skilled at politics, the baron fancies himself a skilled swordsman as well. He loves dueling and often spars against his own guardsmen and senior officers. He likes to show off, taunting and belittling those he overpowers, but reacts angrily to situations where others get the best of him.</p>\n<p>A patient opponent who prides himself on his ability to skillfully outmaneuver his foes, Baron Drelev begins nearly every turn with Defensive Slice. He favors disarming foes, and attempts to do so once per round when facing an armed foe, mocking them wickedly if he's successful and cursing them violently if not.</p>",
+			"data":{},
+			"items":{
+				"equipment-Key Ring":{
+					"name": "钥匙串 Key Ring",
+					"description": "<p>Contains keys to all locks in Drelev Keep</p>"
+				},
+				"Defensive Slice":{
+					"name": "Defensive Slice",
+					"description": "<p><strong>Requirement</strong> Baron Drelev hasn't attempted a Strike during this turn.</p>\n<hr />\n<p><strong>Effect</strong> Baron Drelev assumes a defensive position with his weapons out, then attempts a melee Strike. He takes a -2 status penalty on all Strikes (including this one) and gains a +2 status bonus to his AC until the start of his next turn.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.EwhWYPCNM8bIIYEI]{Effect: Defensive Slice}</p>"
+				},
+				"Dramatic Disarm":{
+					"name": "Dramatic Disarm",
+					"description": "<p>If Baron Drelev scores a critical success on an Athletics check to @UUID[Compendium.pf2e.action-macros.ooiO59Ch2QaebOmc]{Disarm} an opponent, he can choose to have the disarmed item fly [[/r {1d4}*5 #feet]]{1d4 × 5 feet} in a random direction rather than have it fall to the ground in the opponent's space. If this causes the item to land in a space occupied by a creature with at least one free hand, that creature can attempt a @Check[type:reflex|dc:20] save to catch the item (otherwise it falls to the ground in that space).</p>"
+				},
+				"Harrying Swordfighter":{
+					"name": "Harrying Swordfighter",
+					"description": "<p>Baron Drelev adds the disarm weapon trait to any sword he wields.</p>"
+				},
+				"Skirmish Strike":{
+					"name": "Skirmish Strike",
+					"description": "<p><strong>Frequency</strong> once per turn</p>\n<p><strong>Effect</strong> Baron Drelev Steps and then Strikes or Strikes and then Steps.</p>"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>Baron Drelev deals 2d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				}
+			}
 		},
 		"Happs Bydon": {
-			"name": "Happs Bydon"
+			"name": "Happs Bydon",
+			"data":{},
+			"items":{}
 		},
 		"Hargulka": {
-			"name": "Hargulka"
+			"name": "Hargulka",
+			"publicNotes": "<p>Before his dreams were invaded and his ambitions enhanced by Nyrissa's eldritch manipulations, Hargulka had already established himself as a leader among trollkind, though his goals never reached beyond bullying his fellow trolls into rampaging the immediate environs for food and wealth to bring back to him as offerings. The notion of becoming a \"king\" never crossed his mind until he had a vivid, unforgettable dream of himself sitting atop a throne and basking in the fear and adoration of not only trolls, but hobgoblins, harpies, and all manner of slavering monsters-creatures who might be viewed as dangerous enemies but, to Hargulka, were now his loyal minions.</p>\n<p>To Hargulka, the PCs' kingdom is rightfully his own. He intends to conquer them, claim their capital for himself, and dine on the flesh and bones of their citizens. Yet despite these violent goals, the troll knows better than to simply attack his enemies mindlessly. Instead, he spends his time working with his loyal trolls to seek out like-minded monsters in the wilds to recruit them to his cause. As a result, the longer Hargulka remains in power, the more dangerous and aggressive the monsters of the Stolen Lands will become!</p>",
+			"data":{},
+			"items":{
+				"Dream of Rulership":{
+					"name": "Dream of Rulership",
+					"description": "<p>The lingering effects of Nyrissa's inspiration are stronger than any fear Hargulka faces. Whenever he attempts a saving throw against a fear effect, he treats his actual result as one degree of success better than his rolled result.</p>"
+				},
+				"Rend":{
+					"name": "撕裂 Rend",
+					"description": "<p>Claw</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+				},
+				"Royal Command":{
+					"name": "Royal Command",
+					"description": "<p>Hargulka issues an order to his followers. Each ally who hears and understands this command becomes @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} until the end of that ally's next turn but can use the extra action only to Strike. Hargulka can't issue a Royal Command on his next turn.</p>"
+				},
+				"Shield Rip and Chew":{
+					"name": "Shield Rip and Chew",
+					"description": "<p><strong>Requirement</strong> An opponent within reach has Raised a Shield.</p>\n<hr />\n<p><strong>Effect</strong> Hargulka snatches at a foe's shield, pulling it out of the way. He attempts an Athletics check against the Reflex DC of an opponent who has Raised a Shield before making a jaws Strike against the opponent. If the Athletics check succeeds, the shield is not considered raised against the jaws Strike. On a critical success, Hargulka pulls the shield out of position, so it is no longer raised until the opponent Raises the Shield again. This counts as two attacks toward Hargulka's multiple attack penalty, but the multiple attack penalty doesn't increase until after the jaws Strike.</p>"
+				}
+			}
 		},
 		"Hateful Hermit": {
-			"name": "Hateful Hermit"
+			"name": "Hateful Hermit",
+			"data":{},
+			"items":{}
 		},
 		"Hidden Pressure Plate": {
-			"name": "Hidden Pressure Plate"
+			"name": "Hidden Pressure Plate",
+			"data":{},
+			"items":{}
 		},
 		"Hill Giant Butcher": {
-			"name": "Hill Giant Butcher"
+			"name": "Hill Giant Butcher",
+			"data":{},
+			"items":{}
 		},
 		"Hillstomper": {
-			"name": "Hillstomper"
+			"name": "Hillstomper",
+			"data":{},
+			"items":{}
 		},
 		"Hooktongue": {
-			"name": "Hooktongue"
+			"name": "Hooktongue",
+			"data":{},
+			"items":{}
 		},
 		"Hooktongue Hydra": {
-			"name": "Hooktongue Hydra"
+			"name": "Hooktongue Hydra",
+			"data":{},
+			"items":{}
 		},
 		"Horagnamon": {
-			"name": "Horagnamon"
+			"name": "Horagnamon",
+			"data":{},
+			"items":{
+				"Cunning":{
+					"name": "Cunning",
+					"description": "<p>Horagnamon can use simple items as tools, such as poking a stick at an opening to tease out a piece of food. He's also quite adept at stealing objects. He can't use Thievery to Palm an Object, Disable a Device, or Pick a Lock, but he can use Thievery to @UUID[Compendium.pf2e.actionspf2e.RDXXE7wMrSPCLv5k]{Steal} light objects that he can carry in his beak or talons or to accomplish other relatively simple tasks.</p>"
+				},
+				"Death Throes":{
+					"name": "Death Throes",
+					"description": "<p><strong>Trigger</strong> Horagnamon takes any damage or suffers a condition while Vordakai is using Familiar Farsight</p>\n<hr />\n<p><strong>Effect</strong> Horagnamon dies, then bursts into a @Template[type:emanation|distance:30]{30-foot-diameter} burst of feathers and seething black tendrils of smoke and energy. All creatures in this area must attempt a @Check[type:fortitude|dc:23|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes [[/r {3d10}[negative]]]{3d10 negative damage}.</p>\n<p><strong>Failure</strong> The creature takes [[/r {6d10}[negative]]]{6d10 negative damage} and becomes @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p><strong>Critical Failure</strong> The creature takes [[/r {12d10}[negative]]]{12d10 negative damage} and becomes @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2}.</p>"
+				}
+			}
 		},
 		"Ilora Nuski": {
-			"name": "Ilora Nuski"
+			"name": "Ilora Nuski",
+			"data":{},
+			"items":{}
 		},
 		"Ilthuliak": {
-			"name": "Ilthuliak"
+			"name": "Ilthuliak",
+			"data":{},
+			"items":{}
 		},
 		"Immense Mandragora": {
-			"name": "Immense Mandragora"
+			"name": "Immense Mandragora",
+			"data":{},
+			"items":{}
 		},
 		"Irahkatu": {
-			"name": "Irahkatu"
+			"name": "Irahkatu",
+			"data":{},
+			"items":{}
 		},
 		"Irovetti's Fetch": {
-			"name": "Irovetti's Fetch"
+			"name": "Irovetti's Fetch",
+			"data":{},
+			"items":{}
 		},
 		"Jaggedbriar Hag": {
-			"name": "Jaggedbriar Hag"
+			"name": "Jaggedbriar Hag",
+			"data":{},
+			"items":{}
 		},
 		"Jamandi Aldori": {
-			"name": "Jamandi Aldori"
+			"name": "Jamandi Aldori",
+			"publicNotes": "<p>Jamandi Aldori's upbringing in Restov could have ensured her a safe and relaxed life as one of that city's nobles, but her restlessness and frustration with \"meddling\" from the north increasingly pushed her away from the aristocratic lifestyle. She quickly mastered the art of the Aldori sword, and over the years has become one of Restov's most well-known swordlords, in part due to her skill in dueling, but of late as a result of her increasingly obvious pushes to expand Restov's power in directions that minimize reliance upon the rest of Brevoy. Beyond organizing the push into the Stolen Lands and her desire to foster a new ally to the south, she hopes some day to found additional dueling schools beyond Brevoy's borders where the Aldori style can be taught-a pursuit that not all of her peers equally approve of.</p>\n<p>Characters who earn Jamandi's trust and support can unlock access to the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.cBBwTnJrVmvaRMYq]{Aldori Duelist} Archetype at your option.</p>",
+			"data":{},
+			"items":{
+				"Aldori Parry":{
+					"name": "Aldori Parry",
+					"description": "<p><strong>Requirement</strong> Jamandi wields only an Aldori dueling sword and her other hand is free</p>\n<p><strong>Effect</strong> Jamandi parries attacks against her with her sword, and gains a +2 circumstance bonus to her AC until the start of her next turn as long as she continues to meet the requirement.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.1nCwQErK6hpkNvfw]{Effect: Aldori Parry}</p>"
+				},
+				"Aldori Riposte":{
+					"name": "Aldori Riposte",
+					"description": "<p><strong>Requirements</strong> Jamandi is benefiting from Aldori Parry</p>\n<p><strong>Trigger</strong> An opponent within Jamandi's reach critically fails a Strike against her</p>\n<p><strong>Effect</strong> Jamandi ripostes with her sword and makes a melee Strike or uses a @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} action against the triggering opponent.</p>"
+				},
+				"Saving Slash":{
+					"name": "Saving Slash",
+					"description": "<p><strong>Trigger</strong> an opponent critically hits Jamandi with a melee attack</p>\n<p><strong>Effect</strong> Jamandi whirls her blade, trying to deflect enough momentum to avoid the worst of the attack. If she succeeds at a @Check[type:flat|dc:16], the attack becomes a normal hit, instead of a critical hit.</p>"
+				},
+				"Unnerving Prowess":{
+					"name": "Unnerving Prowess",
+					"description": "<p><strong>Trigger</strong> Jamandi critically succeeds at a Strike or @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} with her sword</p>\n<p><strong>Effect</strong> Jamandi attempts to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} the creature she struck or disarmed; this Demoralize attempt does not have the auditory trait, nor does she take a penalty to the check if the target doesn't understand her language.</p>"
+				}
+			}
 		},
 		"Jewel": {
-			"name": "Jewel"
+			"name": "Jewel",
+			"data":{},
+			"items":{}
 		},
 		"Jin Durwhimmer": {
-			"name": "Jin Durwhimmer"
+			"name": "Jin Durwhimmer",
+			"data":{},
+			"items":{}
 		},
 		"Jubilost (Level 1)": {
-			"name": "Jubilost (Level 1)"
+			"name": "朱比罗斯特 Jubilost (1级)",
+			"data":{},
+			"items":{
+				"Scholar (Nature)":{
+					"name": "学者 Scholar (自然)",
+					"description": "<p>你有学习的天分，你两耳不闻窗外事，只求能学到尽可能多的知识。你在书中读到了许多奇妙的地方和事物，并且总是梦想有一天能亲眼目睹它们。最终，这种好奇心引领着你放下学业，成为了一名冒险者。</p>\n<p>选择两项属性提升。一项必须是智力或感知，另一项为自选属性提升。</p>\n<p>你在奥法、自然、神秘或宗教技能上受训，并获得针对你所选技能的技能专长：@UUID[Compendium.pf2e.feats-srd.W6Gl9ePmItfDHji0]{驾轻就熟 Assurance}。你还会在学术（Academia）学识技能上受训。</p>"
+				}
+			}
 		},
 		"Jubilost (Level 8)": {
-			"name": "Jubilost (Level 8)"
+			"name": "朱比罗斯特 Jubilost (8级)",
+			"data":{},
+			"items":{
+				"Scholar (Nature)":{
+					"name": "学者 Scholar (自然)",
+					"description": "<p>你有学习的天分，你两耳不闻窗外事，只求能学到尽可能多的知识。你在书中读到了许多奇妙的地方和事物，并且总是梦想有一天能亲眼目睹它们。最终，这种好奇心引领着你放下学业，成为了一名冒险者。</p>\n<p>选择两项属性提升。一项必须是智力或感知，另一项为自选属性提升。</p>\n<p>你在奥法、自然、神秘或宗教技能上受训，并获得针对你所选技能的技能专长：@UUID[Compendium.pf2e.feats-srd.W6Gl9ePmItfDHji0]{驾轻就熟 Assurance}。你还会在学术（Academia）学识技能上受训。</p>"
+				}
+			}
 		},
 		"Jurgrindor": {
-			"name": "Jurgrindor"
+			"name": "Jurgrindor",
+			"data":{},
+			"items":{}
 		},
 		"Kargstaad": {
-			"name": "Kargstaad"
+			"name": "Kargstaad",
+			"data":{},
+			"items":{}
 		},
 		"Kargstaad's Giant": {
-			"name": "Kargstaad's Giant"
+			"name": "Kargstaad's Giant",
+			"data":{},
+			"items":{}
 		},
 		"Kellid Graveknight": {
-			"name": "Kellid Graveknight"
+			"name": "Kellid Graveknight",
+			"data":{},
+			"items":{}
 		},
 		"Kereek": {
-			"name": "Kereek"
+			"name": "Kereek",
+			"data":{},
+			"items":{}
 		},
 		"King Vesket": {
-			"name": "King Vesket"
+			"name": "King Vesket",
+			"data":{},
+			"items":{}
 		},
 		"Kob Moleg": {
-			"name": "Kob Moleg"
+			"name": "Kob Moleg",
+			"data":{},
+			"items":{}
 		},
 		"Korog": {
-			"name": "Korog"
+			"name": "Korog",
+			"data":{},
+			"items":{}
 		},
 		"Kressle": {
-			"name": "Kressle"
+			"name": "Kressle",
+			"data":{},
+			"items":{}
 		},
 		"Kundal": {
-			"name": "Kundal"
+			"name": "Kundal",
+			"data":{},
+			"items":{}
 		},
 		"Leng Envoy": {
-			"name": "Leng Envoy"
+			"name": "Leng Envoy",
+			"data":{},
+			"items":{}
 		},
 		"Lesser Jabberwock": {
-			"name": "Lesser Jabberwock"
+			"name": "Lesser Jabberwock",
+			"data":{},
+			"items":{}
 		},
 		"Lickweed": {
-			"name": "Lickweed"
+			"name": "Lickweed",
+			"data":{},
+			"items":{}
 		},
 		"Lights of the Lost": {
-			"name": "Lights of the Lost"
+			"name": "Lights of the Lost",
+			"data":{},
+			"items":{}
 		},
 		"Lintwerth": {
-			"name": "Lintwerth"
+			"name": "Lintwerth",
+			"data":{},
+			"items":{}
 		},
 		"Linzi (Level 1)": {
-			"name": "Linzi (Level 1)"
+			"name": "Linzi (Level 1)",
+			"data":{},
+			"items":{}
 		},
 		"Linzi (Level 7)": {
-			"name": "Linzi (Level 7)"
+			"name": "Linzi (Level 7)",
+			"data":{},
+			"items":{}
 		},
 		"Lizardfolk Warrior": {
-			"name": "Lizardfolk Warrior"
+			"name": "Lizardfolk Warrior",
+			"data":{},
+			"items":{}
 		},
 		"Locking Alarm": {
-			"name": "Locking Alarm"
+			"name": "Locking Alarm",
+			"data":{},
+			"items":{}
 		},
 		"Logger": {
-			"name": "Logger"
+			"name": "Logger",
+			"data":{},
+			"items":{}
 		},
 		"Malgorzata Niska": {
-			"name": "Malgorzata Niska"
+			"name": "Malgorzata Niska",
+			"data":{},
+			"items":{}
 		},
 		"Mandragora Swarm": {
-			"name": "Mandragora Swarm"
+			"name": "Mandragora Swarm",
+			"data":{},
+			"items":{}
 		},
 		"Mastiff Of Tindalos": {
-			"name": "Mastiff Of Tindalos"
+			"name": "Mastiff Of Tindalos",
+			"data":{},
+			"items":{}
 		},
 		"Megaloceros": {
-			"name": "Megaloceros"
+			"name": "Megaloceros",
+			"data":{},
+			"items":{}
 		},
 		"Melianse": {
-			"name": "Melianse"
+			"name": "Melianse",
+			"data":{},
+			"items":{}
 		},
 		"Minognos-Ushad": {
-			"name": "Minognos-Ushad"
+			"name": "Minognos-Ushad",
+			"data":{},
+			"items":{}
 		},
 		"Murder of Crows": {
-			"name": "Murder of Crows"
+			"name": "Murder of Crows",
+			"data":{},
+			"items":{}
 		},
 		"Ngara": {
-			"name": "Ngara"
+			"name": "Ngara",
+			"data":{},
+			"items":{}
 		},
 		"Nightmare Rook": {
-			"name": "Nightmare Rook"
+			"name": "Nightmare Rook",
+			"data":{},
+			"items":{}
 		},
 		"Nilak": {
-			"name": "Nilak"
+			"name": "Nilak",
+			"data":{},
+			"items":{}
 		},
 		"Niodrhast": {
-			"name": "Niodrhast"
+			"name": "Niodrhast",
+			"data":{},
+			"items":{}
 		},
 		"Nishkiv the Knife": {
-			"name": "Nishkiv the Knife"
+			"name": "Nishkiv the Knife",
+			"data":{},
+			"items":{}
 		},
 		"Nok-Nok (Level 1)": {
-			"name": "Nok-Nok (Level 1)"
+			"name": "Nok-Nok (Level 1)",
+			"data":{},
+			"items":{}
 		},
 		"Nok-Nok (Level 5)": {
-			"name": "Nok-Nok (Level 5)"
+			"name": "Nok-Nok (Level 5)",
+			"data":{},
+			"items":{}
 		},
 		"Ntavi": {
-			"name": "Ntavi"
+			"name": "Ntavi",
+			"data":{},
+			"items":{}
 		},
 		"Nugrah": {
-			"name": "Nugrah"
+			"name": "Nugrah",
+			"data":{},
+			"items":{}
 		},
 		"Nyrissa": {
-			"name": "Nyrissa"
+			"name": "Nyrissa",
+			"publicNotes": "<p>Nyrissa has not always been a power in the First World, but when she fell in love with Count Ranalc, one of the realm's Eldest, she challenged her place in the plane's hierarchy. The lovers inspired each other to increasing acts of audacity, and it wasn't long before Nyrissa began to think of herself as the newest of the Eldest and proclaimed this to any who would listen, beginning to build her own nation in the First World. Another of the Eldest, the Lantern King, saw opportunity for mayhem here. He spread his influence among his fellow demigods, and before long, several among the Eldest opposed Nyrissa's claim and took steps to challenge her. First, they sent a jabberwock to destroy her, but Nyrissa defeated it and used its blood to create lesser jabberwocks under her own control. Then they attempted to rally a thousand powerful fey against her, but Nyrissa convinced those fey to serve her instead in return for a place in her domain. Finally, the Eldest exiled Count Ranalc to the Shadow Plane for helping to cause the problem in the first place. Suddenly, Nyrissa found herself without an ally among the Eldest. Having expended much of her energy and resources to defeat the jabberwock and recruit the thousand, she knew that she had lost the war and surrendered, apologizing for her acts.</p>\n<p>The Lantern King decided that Nyrissa's apology would suffice only for the jabberwock's death; for her other deeds, he demanded a further punishment- Nyrissa's capacity to love. Without love, the Lantern King argued to the other Eldest, Nyrissa would not be able to sway another of them to her side. However, if she could replace the \"thousand fey breaths\" she stole from the First World with a thousand stolen nations, they would accept her apology for her other actions and restore her capacity to love. Faced with no real option, Nyrissa agreed. She was allowed to keep her domain, now known as Thousandbreaths, but it was carved off to form its own demiplane to serve as a sort of prison. Her love was taken from her and transformed into the sword Briar, which was then entrusted to the Lantern King for safekeeping. He gifted Nyrissa with a chalice he called the Apology, an artifact capable of transforming Material Plane kingdoms she conquered into motes of sand. Once the Apology held a thousand motes of sand, those lands would be absorbed into the First World, Nyrissa would be forgiven, and love would be restored to her.</p>\n<p>The matter settled, the Eldest quickly moved on with their own inscrutable agendas. Yet while they eventually forget about what they'd done to Nyrissa, the nymph herself did not. She grew more and more obsessed with her loss of love-or perhaps it was the loss of love that caused her to grow more violent and obsessed. In her early attempts to discover the location of <em>Briar</em>, she received the visions that would come to haunt her-that <em>Briar </em>would be returned to her, but only as an instrument of her own death.</p>\n<p>Now she has but one kingdom left to claim: the new kingdom risen in the Stolen Lands. With the War of the River Kings over and one kingdom a victor, the time is right for the final grain to be added to the <em>Apology</em>. That this will destroy a significant region on Golarion is irrelevant to the loveless nymph; in her obsession, she fails to see that this act may be the very thing that drives her enemies from to slay her as in the vision.</p>",
+			"data":{},
+			"items":{
+				"strike-Thorny Lash":{
+					"name": "Thorny Lash"
+				},
+				"strike-Hurled Thorn":{
+					"name": "Hurled Thorn"
+				},
+				"Shame":{
+					"name": "Shame",
+					"description": "<p>Nyrissa is focused on her goal to conquer the final kingdom she promised the Lantern King, but she still suffers from shame when she attacks anyone who wields <em>Briar </em>or any character who rules a kingdom (particularly, any PC who serves as Ruler). @UUID[Compendium.pf2e.adventure-specific-actions.764EVGVADrDSbdqu]{Forgive Foe} can be attempted against Nyrissa with a @Check[type:diplomacy|dc:51] check or @Check[type:performance|dc:51] check. If Nyrissa is affected by a critical success from Forgive Foe, she calls for a truce to speak to the PCs.</p>"
+				},
+				"Wild Empathy":{
+					"name": "Wild Empathy",
+					"description": "<p>Nyrissa can use Diplomacy to @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression} on and make very simple Requests of animals and plant creatures.</p>"
+				},
+				"Blinding Beauty":{
+					"name": "Blinding Beauty",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<p>Creatures that start their turn in the aura must succeed at a @Check[type:will|dc:43] save or be permanently @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} (plus @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure).</p>"
+				},
+				"Evasion":{
+					"name": "Evasion",
+					"description": "<p>When Nyrissa rolls a success on a Reflex save, she gets a critical success instead.</p>"
+				},
+				"Protection from Decapitation":{
+					"name": "Protection from Decapitation",
+					"description": "<p>The first time Nyrissa is decapitated by any effect (including a <em>vorpal </em>weapon like <em>Briar</em>), the effect is negated. She takes no damage from the attack and is not decapitated, but she then loses her protection from decapitation for 24 hours.</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>Nymph queens can transform between their original form, which looks much like a typical nymph of their kind, and any Small or Medium humanoid form, typically choosing a more humanoid-looking version of their natural form.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Contingency":{
+					"name": "Contingency",
+					"description": "<p><strong>Trigger</strong> Nyrissa is damaged by a melee strike</p>\n<p><strong>Effect</strong> <em>@UUID[Compendium.pf2e.spells-srd.WPXzPl7YbMEIGWfi]{Mislead}</em> activates on Nyrissa.</p>"
+				},
+				"Focus Beauty":{
+					"name": "Focus Beauty",
+					"description": "<p>Nyrissa focuses her beauty upon a target within her blinding beauty aura. The creature takes [[/r {6d12}[mental]]]{6d12 mental damage} (@Check[type:will|dc:46|basic:true]) and is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} until the end of their next turn ([[/r {12d12}[mental]]]{12d12 mental damage} and permanent blindness on a critical failure). Nyrissa can Focus Beauty on a given creature only once per turn.</p>"
+				},
+				"Inspiration":{
+					"name": "Inspiration",
+					"description": "<p>Nyrissa can inspire an intelligent, willing creature by scratching that creature with a thorn from her body. This reduces that creature's Hit Points by 1 permanently, but grants the creature several abilities: @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6]{Darkvision}, the ability to see @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} creatures, and an ability boost to an ability of Nyrissa's choice. A bard granted this inspiration gains a +2 status bonus to Performance when determining the effect of compositions. Only one creature at a time can benefit from this inspiration. For the bulk of this Adventure Path, King Irovetti carries this inspiration, but once he is slain or defeated, who Nyrissa grants the bonus to instead (if anyone) is left to the GM to determine.</p>"
+				},
+				"Quickened Casting":{
+					"name": "Quickened Casting",
+					"description": "<p><strong>Frequency</strong> three times per day;</p>\n<p><strong>Requirement</strong> Nyrissa hasn't used Quickened Casting since the start of her previous turn</p>\n<p><strong>Effect</strong> If Nyrissa's next action is to cast an arcane spontaneous spell that is 8th level or lower, reduce the number of actions to cast it by 1 (minimum 1 action).</p>"
+				},
+				"Switch Fables":{
+					"name": "Switch Fables",
+					"description": "<p><strong>Requirement</strong> Nyrissa is located in the twenty-foot diameter central area of one of the four Fables (areas M7a- M7d of the House at the Edge of Time)</p>\n<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Effect</strong> Nyrissa Strides a minimum distance of ten feet, after which the reality of the demiplane folds around her in a tangle of vines and flowers. She then teleports from her current Fable to one of the other three of her choice, appearing in a square of her choosing within the central twenty feet of the chosen Fable.</p>"
+				}
+			}
 		},
 		"Nyrissa's Tempest": {
-			"name": "Nyrissa's Tempest"
+			"name": "Nyrissa's Tempest",
+			"data":{},
+			"items":{}
 		},
 		"Old Crackjaw": {
-			"name": "Old Crackjaw"
+			"name": "Old Crackjaw",
+			"data":{},
+			"items":{}
 		},
 		"Oleg": {
-			"name": "Oleg"
+			"name": "Oleg",
+			"data":{},
+			"items":{}
 		},
 		"Orb Blast Trap": {
-			"name": "Orb Blast Trap"
+			"name": "Orb Blast Trap",
+			"data":{},
+			"items":{}
 		},
 		"Overgrown Viper Vine": {
-			"name": "Overgrown Viper Vine"
+			"name": "Overgrown Viper Vine",
+			"data":{},
+			"items":{}
 		},
 		"Oversized Chimera": {
-			"name": "Oversized Chimera"
+			"name": "Oversized Chimera",
+			"data":{},
+			"items":{}
 		},
 		"Paranoia Well": {
-			"name": "Paranoia Well"
+			"name": "Paranoia Well",
+			"data":{},
+			"items":{}
 		},
 		"Pavetta Stroon-Drelev": {
-			"name": "Pavetta Stroon-Drelev"
+			"name": "Pavetta Stroon-Drelev",
+			"data":{},
+			"items":{}
 		},
 		"Phantasmagoric Fog Trap": {
-			"name": "Phantasmagoric Fog Trap"
+			"name": "Phantasmagoric Fog Trap",
+			"data":{},
+			"items":{}
 		},
 		"Phomandala": {
-			"name": "Phomandala"
+			"name": "Phomandala",
+			"data":{},
+			"items":{}
 		},
 		"Pitax Warden": {
-			"name": "Pitax Warden"
+			"name": "Pitax Warden",
+			"data":{},
+			"items":{}
 		},
 		"Praise of Yog-Sothoth": {
-			"name": "Praise of Yog-Sothoth"
+			"name": "Praise of Yog-Sothoth",
+			"data":{},
+			"items":{}
 		},
 		"Prank Workshop Mitflit": {
-			"name": "Prank Workshop Mitflit"
+			"name": "Prank Workshop Mitflit",
+			"data":{},
+			"items":{}
 		},
 		"Prazil": {
-			"name": "Prazil"
+			"name": "Prazil",
+			"data":{},
+			"items":{}
 		},
 		"Primal Bandersnatch": {
-			"name": "Primal Bandersnatch"
+			"name": "Primal Bandersnatch",
+			"data":{},
+			"items":{}
 		},
 		"Quintessa Maray": {
-			"name": "Quintessa Maray"
+			"name": "Quintessa Maray",
+			"data":{},
+			"items":{}
 		},
 		"Rezatha": {
-			"name": "Rezatha"
+			"name": "Rezatha",
+			"data":{},
+			"items":{}
 		},
 		"Rickety Bridge": {
-			"name": "Rickety Bridge"
+			"name": "Rickety Bridge",
+			"data":{},
+			"items":{}
 		},
 		"Rigg Gargadilly": {
-			"name": "Rigg Gargadilly"
+			"name": "Rigg Gargadilly",
+			"data":{},
+			"items":{}
 		},
 		"Rigged Climbing Loops": {
-			"name": "Rigged Climbing Loops"
+			"name": "Rigged Climbing Loops",
+			"data":{},
+			"items":{}
 		},
 		"Risen Fetch": {
-			"name": "Risen Fetch"
+			"name": "Risen Fetch",
+			"data":{},
+			"items":{}
 		},
 		"River Elasmosaurus": {
-			"name": "River Elasmosaurus"
+			"name": "River Elasmosaurus",
+			"data":{},
+			"items":{}
 		},
 		"Satinder Morne": {
-			"name": "Satinder Morne"
+			"name": "Satinder Morne",
+			"data":{},
+			"items":{}
 		},
 		"Scalding Tar Lake": {
-			"name": "Scalding Tar Lake"
+			"name": "Scalding Tar Lake",
+			"data":{},
+			"items":{}
 		},
 		"Sepoko": {
-			"name": "Sepoko"
+			"name": "Sepoko",
+			"data":{},
+			"items":{}
 		},
 		"Shambler": {
-			"name": "Shambler"
+			"name": "Shambler",
+			"data":{},
+			"items":{}
 		},
 		"Shelyn's Shame": {
-			"name": "Shelyn's Shame"
+			"name": "Shelyn's Shame",
+			"data":{},
+			"items":{}
 		},
 		"Sir Fredero Sinnet": {
-			"name": "Sir Fredero Sinnet"
+			"name": "Sir Fredero Sinnet",
+			"data":{},
+			"items":{}
 		},
 		"Sister of the Bloodshot Eye": {
-			"name": "Sister of the Bloodshot Eye"
+			"name": "Sister of the Bloodshot Eye",
+			"data":{},
+			"items":{}
 		},
 		"Skeletal Tiger Lord": {
-			"name": "Skeletal Tiger Lord"
+			"name": "Skeletal Tiger Lord",
+			"data":{},
+			"items":{}
 		},
 		"Smoke-Filled Hallway": {
-			"name": "Smoke-Filled Hallway"
+			"name": "Smoke-Filled Hallway",
+			"data":{},
+			"items":{}
 		},
 		"Spiral Seal": {
-			"name": "Spiral Seal"
+			"name": "Spiral Seal",
+			"data":{},
+			"items":{}
 		},
 		"Spirit of Stisshak": {
-			"name": "Spirit of Stisshak"
+			"name": "Spirit of Stisshak",
+			"data":{},
+			"items":{}
 		},
 		"Stag Lord Bandit": {
-			"name": "Stag Lord Bandit"
+			"name": "Stag Lord Bandit",
+			"data":{},
+			"items":{}
 		},
 		"Stinging Nettles": {
-			"name": "Stinging Nettles"
+			"name": "Stinging Nettles",
+			"data":{},
+			"items":{}
 		},
 		"Storm-Struck Arboreal": {
-			"name": "Storm-Struck Arboreal"
+			"name": "Storm-Struck Arboreal",
+			"data":{},
+			"items":{}
 		},
 		"Stygian Fires": {
-			"name": "Stygian Fires"
+			"name": "Stygian Fires",
+			"data":{},
+			"items":{}
 		},
 		"Svetlana": {
-			"name": "Svetlana"
+			"name": "Svetlana",
+			"data":{},
+			"items":{}
 		},
 		"Talon Peak Roc": {
-			"name": "Talon Peak Roc"
+			"name": "Talon Peak Roc",
+			"data":{},
+			"items":{}
 		},
 		"Tartuccio": {
-			"name": "Tartuccio"
+			"name": "Tartuccio",
+			"publicNotes": "<p>Tartuccio likes to think of himself as having been handpicked by King Irovetti of Pitax in his mission to claim the Stolen Lands for himself, but in fact King Irovetti has never met Tartuccio. The gnome grew up in Pitax and, of all that nation's rulers he'd observed, Irovetti impressed him the most with his admiration of art and style. That the king wasn't very supportive of art styles and pursuits he didn't enjoy never even registered in Tartuccio's mind, as his tastes were so similar.</p>\n<p>And so Tartuccio set into motion plans to catch the king's attention, so as to become first his student, then his trusted advisor, and in time his replacement. He even went as far as to seek out, research, and learn a potent magical technique that allowed him to change shape, intending to use this newfound supernatural power to adjust his appearance to be something more pleasing to the king's eye when the time came to petition to become his student. Tartuccio spent months scouring the rumor mills for opportunities, and when he heard of Lady Jamandi's call for heroes to expand into the Stolen Lands, he saw his chance. Tartuccio gathered his supplies and headed east.</p>\n<p>Once the events of Chapter 1 play out, Tartuccio is unsettled by the amount of competition he faces. He travels into the Stolen Lands where he's heard rumors of a kobold settlement that's ripe for the taking, uses his ability to change shape to assume the appearance of an unusual purple kobold, and work the Sootscales into a sort of private army he intends on using to wrest control of the PCs' nation just as they get started. His hopes of using the PCs' kingdom as a stepping-stone are threatened by the untimely conflict with the mitflits of the Old Sycamore, as detailed in Chapter 2.</p>",
+			"data":{},
+			"items":{
+				"strike-Sickle":{
+					"name": "镰刀 Sickle",
+					"description": "<p>No attack modifier given. Using Level 6 moderate from GMG</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p><strong>Frequency</strong> once per week</p>\n<p><strong>Effect</strong> By performing a ten-minute long incantation, Tartuccio takes on the appearance of any uniquely-appearing Small humanoid. He can't disguise himself as a specific individual. This doesn't change his Speed or his attack and damage modifiers with his Strikes. He can do this again to resume his true form, and must do so before he uses the ability again to assume a different appearance. He reverts to his true form if he is slain.</p>"
+				},
+				"Invoke Old Sharptooth":{
+					"name": "Invoke Old Sharptooth",
+					"description": "<p><strong>Requirement</strong> Tartuccio is in Tartuk's form</p>\n<p><strong>Trigger</strong> A Sootscale kobold causes Tartuccio harm.</p>\n<p><strong>Effect</strong> Tartuccio (as Tartuk) can @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} the kobold who harmed him with a short warning such as \"Old Sharptooth will punish you for your transgressions!\" He gains a +2 circumstance bonus on the Intimidate check to do so.</p>"
+				}
+			}
 		},
 		"Teleport Trap": {
-			"name": "Teleport Trap"
+			"name": "Teleport Trap",
+			"data":{},
+			"items":{}
 		},
 		"Terrion Numesti": {
-			"name": "Terrion Numesti"
+			"name": "Terrion Numesti",
+			"data":{},
+			"items":{}
 		},
 		"Test of Agility": {
-			"name": "Test of Agility"
+			"name": "Test of Agility",
+			"data":{},
+			"items":{}
 		},
 		"Test of Endurance": {
-			"name": "Test of Endurance"
+			"name": "Test of Endurance",
+			"data":{},
+			"items":{}
 		},
 		"Test of Strength": {
-			"name": "Test of Strength"
+			"name": "Test of Strength",
+			"data":{},
+			"items":{}
 		},
 		"Test of Tactics": {
-			"name": "Test of Tactics"
+			"name": "Test of Tactics",
+			"data":{},
+			"items":{}
 		},
 		"The Beast": {
-			"name": "The Beast"
+			"name": "The Beast",
+			"data":{},
+			"items":{}
 		},
 		"The Dancing Lady": {
-			"name": "The Dancing Lady"
+			"name": "The Dancing Lady",
+			"data":{},
+			"items":{}
 		},
 		"The First Faithful": {
-			"name": "The First Faithful"
+			"name": "The First Faithful",
+			"data":{},
+			"items":{}
 		},
 		"The Gardener Creature": {
-			"name": "The Gardener Creature"
+			"name": "The Gardener Creature",
+			"data":{},
+			"items":{}
 		},
 		"The Horned Hunter": {
-			"name": "The Horned Hunter"
+			"name": "The Horned Hunter",
+			"data":{},
+			"items":{}
 		},
 		"The Knurly Witch": {
-			"name": "The Knurly Witch"
+			"name": "The Knurly Witch",
+			"data":{},
+			"items":{}
 		},
 		"The Lonely Warrior": {
-			"name": "The Lonely Warrior"
+			"name": "The Lonely Warrior",
+			"data":{},
+			"items":{}
 		},
 		"The Misbegotten Troll": {
-			"name": "The Misbegotten Troll"
+			"name": "The Misbegotten Troll",
+			"data":{},
+			"items":{}
 		},
 		"The Power of Faith": {
-			"name": "The Power of Faith"
+			"name": "The Power of Faith",
+			"data":{},
+			"items":{}
 		},
 		"The Stag Lord": {
-			"name": "The Stag Lord"
+			"name": "The Stag Lord",
+			"publicNotes": "",
+			"data":{},
+			"items":{
+				"equipment-Flask of Wine":{
+					"name": "Flask of Wine"
+				},
+				"equipment-Lock of green hair bound with red twine":{
+					"name": "Lock of green hair bound with red twine"
+				},
+				"Perpetual Hangover":{
+					"name": "Perpetual Hangover",
+					"description": "<p>The Stag Lord is in a constant cycling state of being drunk or hungover. As a result, he is constantly @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, and cannot reduce his sickened state to lower than 1 (although if effects increase his sickened value, he can reduce them back toward 1 as normal). The Stag Lord can willingly ingest food and drink (including potions and elixirs) while sickened. The values in this stat block have been adjusted to account for his sickened state.</p>"
+				},
+				"Dread Striker":{
+					"name": "Dread Striker",
+					"description": "<p>The Stag Lord capitalizes on his enemies' fear; any creature that has the @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} condition is also @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against his attacks.</p>"
+				},
+				"Hunt Prey":{
+					"name": "Hunt Prey"
+				},
+				"Sneak Attack":{
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>The Stag Lord deals 2d6 extra precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Unfair Aim":{
+					"name": "Unfair Aim",
+					"description": "<p>The Stag Lord lines up a shot and then attempts a ranged Strike against a hunted prey. On this strike, he treats the target as if they were @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}.</p>"
+				}
+			}
 		},
 		"The Wriggling Man": {
-			"name": "The Wriggling Man"
+			"name": "The Wriggling Man",
+			"data":{},
+			"items":{}
 		},
 		"Thorn River Bandit": {
-			"name": "Thorn River Bandit"
+			"name": "Thorn River Bandit",
+			"data":{},
+			"items":{}
 		},
 		"Thresholder Disciple": {
-			"name": "Thresholder Disciple"
+			"name": "Thresholder Disciple",
+			"data":{},
+			"items":{}
 		},
 		"Thresholder Hermeticist": {
-			"name": "Thresholder Hermeticist"
+			"name": "Thresholder Hermeticist",
+			"data":{},
+			"items":{}
 		},
 		"Thresholder Mystic": {
-			"name": "Thresholder Mystic"
+			"name": "Thresholder Mystic",
+			"data":{},
+			"items":{}
 		},
 		"Thylacine": {
-			"name": "Thylacine"
+			"name": "Thylacine",
+			"data":{},
+			"items":{}
 		},
 		"Tiger Lord": {
-			"name": "Tiger Lord"
+			"name": "Tiger Lord",
+			"data":{},
+			"items":{}
 		},
 		"Tiger Lord Hill Giant (TL2)": {
-			"name": "Tiger Lord Hill Giant (TL2)"
+			"name": "Tiger Lord Hill Giant (TL2)",
+			"data":{},
+			"items":{}
 		},
 		"Trapdoor Ogre Spider": {
-			"name": "Trapdoor Ogre Spider"
+			"name": "Trapdoor Ogre Spider",
+			"data":{},
+			"items":{}
 		},
 		"Trapped Portcullis": {
-			"name": "Trapped Portcullis"
+			"name": "Trapped Portcullis",
+			"data":{},
+			"items":{}
 		},
 		"Tree that Weeps": {
-			"name": "Tree that Weeps"
+			"name": "Tree that Weeps",
+			"data":{},
+			"items":{}
 		},
 		"Tristan (Level 1)": {
-			"name": "Tristan (Level 1)"
+			"name": "Tristan (Level 1)",
+			"data":{},
+			"items":{}
 		},
 		"Tristan (Level 10)": {
-			"name": "Tristan (Level 10)"
+			"name": "Tristan (Level 10)",
+			"data":{},
+			"items":{}
 		},
 		"Troll Guard": {
-			"name": "Troll Guard"
+			"name": "Troll Guard",
+			"data":{},
+			"items":{}
 		},
 		"Tulvak": {
-			"name": "Tulvak"
+			"name": "Tulvak",
+			"data":{},
+			"items":{}
 		},
 		"Unstable Pit": {
-			"name": "Unstable Pit"
+			"name": "Unstable Pit",
+			"data":{},
+			"items":{}
 		},
 		"Valerie (Level 1)": {
-			"name": "Valerie (Level 1)"
+			"name": "瓦尔瑞 Valerie (1级)",
+			"data":{},
+			"items":{}
 		},
 		"Valerie (Level 9)": {
-			"name": "Valerie (Level 9)"
+			"name": "瓦尔瑞 Valerie (9级)",
+			"data":{},
+			"items":{}
 		},
 		"Vicious Army Ant Swarm": {
-			"name": "Vicious Army Ant Swarm"
+			"name": "Vicious Army Ant Swarm",
+			"data":{},
+			"items":{}
 		},
 		"Vilderavn Herald": {
-			"name": "Vilderavn Herald"
+			"name": "Vilderavn Herald",
+			"data":{},
+			"items":{}
 		},
 		"Villamor Koth": {
-			"name": "Villamor Koth"
+			"name": "Villamor Koth",
+			"data":{},
+			"items":{}
 		},
 		"Virthad": {
-			"name": "Virthad"
+			"name": "Virthad",
+			"data":{},
+			"items":{}
 		},
 		"Void Pit": {
-			"name": "Void Pit"
+			"name": "Void Pit",
+			"data":{},
+			"items":{}
 		},
 		"Volodmyra": {
-			"name": "Volodmyra"
+			"name": "Volodmyra",
+			"data":{},
+			"items":{}
 		},
 		"Vordakai": {
-			"name": "Vordakai"
+			"name": "Vordakai",
+			"senses": "黑暗视觉, 真视术",
+			"publicNotes": "<p>At the height of his power well over 10,000 years ago, the original Vordakai was among the most powerful necromancers of the land. When this cyclops tyrant was defeated during the chaos following Earthfall, one of his apprentices claimed his name as well as his greatest treasure, the <em>Oculus of Abaddon</em>. Though he had been the least of the necromancer's apprentices, the new Vordakai was nevertheless a powerful wizard, but it would take more than power to claim the true Vordakai's mantle. Betrayed by followers of the original leader who refused to serve him, the new Vordakai was sealed into his own tomb, and over the passage of eons, the cyclops lich atrophied.</p>\n<p>Although much weakened today, Vordakai remains a dangerous opponent who can devastate a poorly prepared party on his own. Don't be afraid to play Vordakai as arrogant creature-he has existed for longer than most creatures on Golarion, after all, and if he makes arrogant mistakes (such as neglecting to cast spells defensively or provoking Attacks of Opportunity), that not only gives the PCs a chance to survive but also helps to establish the ancient lich as both overconfident and a bit careless from his long period of quiescence. Keep in mind that Vordakai is the most powerful foe the PCs have encountered in the <em>Kingmaker Adventure Path</em> thus far, and in defeating him, they will accomplish something truly legendary.</p>\n<p>If Vordakai has the chance to prepare for battle before combat, he takes 3 rounds to cast <em>@UUID[Compendium.pf2e.spells-srd.SwUiVavHKMWG7t5K]{Tongues}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Fr58LDSrbndgld9n]{Resist Energy}</em> (choosing an energy type he knows the PCs favor as a result of watching them via his familiar), and then <em>@UUID[Compendium.pf2e.spells-srd.j8vIoIEWElvpwkcI]{Mirror Image}</em> just before entering battle. Finally, he activates <em>@UUID[Compendium.pf2e.spells-srd.uqlxMQQeSGWEVjki]{True Seeing}</em> using the <em>Oculus of Abaddon</em> before entering combat (doing so in the first round of a fight if instead he's caught by surprise by the PCs).</p>\n<p>Once combat begins, Vordakai starts by casting <em>@UUID[Compendium.pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{Dominate}</em> on the party's strongest healer; if successful, he commands the healer to his side to defend him by attacking anyone who attacks the lich in melee. On subsequent rounds, Vordakai uses ranged magic against the party, casting <em>@UUID[Compendium.pf2e.spells-srd.fd31tAHSSGXyOxW6]{Vampiric Exsanguination}</em> as soon as he's reduced to 100 Hit Points or fewer. When facing only one or two foes, he prefers to attack with Consume Memories followed by a hand Strike, opting to save his spells for an emergency.</p>\n<p>The greatest diminishment of Vordakai's power is represented through the loss of his soul cage-the magical item he initially used to trap his own soul and enable his transformation into a lich in the first place. He cannot create a replacement as long as he remains atrophied, but his arrogance works against him here. Only if he's reduced below 20 Hit Points does he realize that the PCs have a very good chance to defeat him, and if he survives long enough to take a turn after this realization, he casts his 5th-level <em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{Dimension Door}</em> to flee to area C5 of his tomb. If he's able to escape in this way, he'll wait for a few days before returning to his tomb, infuriated if the PCs have released his prisoners and robbed him blind. At this point, Vordakai can become a recurring villain in your campaign!</p>",
+			"data":{},
+			"items":{
+				"equipment-Eclipsed Incantations":{
+					"name": "Eclipsed Incantations",
+					"description": "<p>This book is a massive ironbound tome containing the following spells:</p>\n<p><strong>Cantrips:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.mAMEt4FFbdqoRnkN]{Chill Touch}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.pwzdSlJgYqN7bs2w]{Mage Hand}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.OhD2Z6rIGGD5ocZA]{Read Aura}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.TVKNbcgTee19PXZR]{Shield}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.60sgbuMWN0268dB7]{Telekinetic Projectile}</li>\n</ul>\n<p><strong>Level 1:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.aIHY2DArKFweIrpf]{Command}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Azoh0BSoCASrA1lr]{Lock}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{Magic Missile}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.J7Y7tl0bbdz7TcCc]{Ray of Enfeeblement}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh]{True Strike}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.xqmHD8JIjak15lRk]{Unseen Servant}</li>\n</ul>\n<p><strong>Level 2:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.6Ot4N22t5tPD51BO]{Knock}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.j8vIoIEWElvpwkcI]{Mirror Image}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Fr58LDSrbndgld9n]{Resist Energy}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.mrDi3v933gsmnw25]{Telekinetic Maneuver}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.MZGkMsPBztFN0pUO]{Water Breathing}</li>\n</ul>\n<p><strong>Level 3:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.GUeRTriJkMlMlVrk]{Bind Undead}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.K2WpC3FFoHrqX9Q5]{Hypnotic Pattern}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.KHnhPHL4x1AQHfbC]{Mind Reading}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.DCQHaLrYXMI37dvW]{Paralyze}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.kWh8sJH7yawidMyW]{Shrink Item}</li>\n</ul>\n<p><strong>Level 4:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.zvKWclOZ7A53DObE]{Clairvoyance}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.LiGbewa9pO0yjbsY]{Confusion}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{Dimension Door}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.Uqj344bezBq3ESdq]{Nightmare}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</li>\n</ul>\n<p><strong>Level 5:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.bay4AfSu2iIozNNW]{Banishment}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.9BnhadUO8FMLmeZ3]{Mind Probe}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.SwUiVavHKMWG7t5K]{Tongues}</li>\n</ul>\n<p><strong>Level 6:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.fd31tAHSSGXyOxW6]{Vampiric Exsanguination}</li>\n</ul>\n<p><strong>Level 7:</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.0jadeyQIItIuRgeH]{Eclipse Burst}</li>\n</ul>\n<p><strong>Rituals</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.spells-srd.c3b6LdLlQDPngNIb]{Create Undead}</li>\n<li>@UUID[Compendium.pf2e.spells-srd.2CNqkt2s2IYkVnv6]{Imprisonment}.</li>\n<li>@UUID[Compendium.pf2e.spells-srd.2ykmAVKrsAWcazcC]{Planar Binding}</li>\n</ul>"
+				},
+				"equipment-Oculus of Abaddon":{
+					"name": "Oculus of Abaddon",
+					"description": "<p>An <em>oculus of Abaddon</em> is a potent artifact rumored to have been created by one of the Four Horsemen of the Apocalypse as a way to reward those who work as their agents on the Material Plane. More likely, these items were crafted by a powerful pre-Earthfall death cult that has long since moved on, leaving behind these dangerous artifacts to tempt mortals into serving the needs of the Horsemen.</p>\n<p>An <em>oculus of Abaddon</em> appears as a sphere of clear crystal that contains a pinpoint of flickering red light at its center. When held, the oculus feels warm to the touch and fills you with a sudden desire to pluck out an eye and place the oculus within the socket-this causes [[/r {4d6}[persistent,bleed]]]{4d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent bleed Damage}. Once placed in an eye socket, the oculus can be removed only by ripping it free (causing the same amount of persistent bleed damage as the initial plucking). When you place the oculus in your empty eye socket, you immediately heal all damage caused by plucking the previous eye out. Once placed, an oculus grants you constant <em>@UUID[Compendium.pf2e.spells-srd.pZTqGY1MLRjgKasV]{Darkvision}</em>. It can also be activated to perform a number of other magical effects, as detailed below, but if you aren't evil, each time you activate an <em>oculus of Abaddon</em>, you must succeed at a @Check[type:will|dc:36] save or become affected by a subconscious suggestion (heightened to 8th level) to perform an evil act the next time an opportunity to do so arises, as determined by the GM.</p>\n<hr />\n<p><strong>Activate</strong> 10 minutes (envision)</p>\n<p><strong>Frequency</strong> three times per day</p>\n<p><strong>Effect</strong> You gain the effects of <em>@UUID[Compendium.pf2e.spells-srd.r784cIz17eWujtQj]{Scrying}</em>, heightened to 7th level.</p>\n<hr />\n<p><strong>Activate</strong> @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell}</p>\n<p><strong>Frequency</strong> once per week</p>\n<p><strong>Effect</strong> You use the <em>oculus of Abaddon</em> to cast a <em>@UUID[Compendium.pf2e.spells-srd.2ykmAVKrsAWcazcC]{Planar Binding}</em> ritual, heightened to 7th level. You can only conjure neutral evil creatures with this casting of planar binding. If you already know the planar binding ritual, you gain a +3 item bonus on the primary check when casting planar binding.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">3</span> envision;</p>\n<p><strong>Requirement</strong> you have a familiar or animal companion</p>\n<p><strong>Effect</strong> You can see and hear through your familiar or animal companion's eyes and ears, provided you are on the same plane. This effect can be sustained, but as long as you do so you can take no other actions.</p>\n<hr />\n<p><strong>Activate</strong> 1 hour (envision; evil)</p>\n<p><strong>Frequency</strong> once per year</p>\n<p><strong>Effect</strong> You manipulate the minds of a huge number of targets, provided that the end goal of the manipulation is a tragic or otherwise horrific fate for those being manipulated. This functions as <em>@UUID[Compendium.pf2e.spells-srd.qwlh6aDgi86U3Q7H]{Suggestion}</em>, but with a range of 1 mile. All creatures within this area are affected, with the same suggestion implanted in their minds. Creatures hear the telepathic suggestion in their native language, and creatures that are 7th level or higher can attempt a @Check[type:will|dc:36|traits:evil] save to resist the effect. This power was used by Vordakai to cause the vanishing of Varnhold, suggesting to its inhabitants to leave their homes and travel south to his tomb. If this effect is counteracted or removed on one victim, it ends for all victims.</p>\n<hr />\n<p><strong>Destruction</strong> A foul and hideous object, an <em>oculus of Abaddon</em> is fortunately relatively easy to destroy, as far as artifacts go. It has Hardness 25 and 100 Hit Points, but repairs damage to itself swiftly, regaining 10 Hit Points per round. It has weakness 10 to bludgeoning damage and weakness 30 to good damage.</p>"
+				},
+				"Atrophied Lich":{
+					"name": "Atrophied Lich",
+					"description": "<p>Sometimes, a lich that remains immobile and insensible for extended periods of time-as Vordakai did after he was imprisoned in his tomb just prior to Earthfall 10,000 years ago-can become atrophied. The exact effects of atrophy vary from lich to lich but always result in a reduction of spellcasting power and damage to their soul cage link.</p>\n<p>In Vordakai's case, he has forgotten much arcane lore and lost a significant amount of his spellcasting ability. At the height of his power, he was a 20th-level wizard, but today, his power has reduced to that of a 12th-level wizard. More troubling to the lich is the fact that he can no longer use a soul cage to rejuvenate-if Vordakai is destroyed, he crumbles to dust, forever dead. Given time, Vordakai could recover his power and regain his rejuvenation ability, but it's unlikely the PCs will give him that chance, as it would take the lich several years to undo the ravages of centuries.</p>"
+				},
+				"Counterspell":{
+					"name": "Counterspell",
+					"description": "<p><strong>Trigger</strong> A creature casts a spell Vordakai has prepared.</p>\n<p><strong>Effect</strong> Vordakai expends a prepared spell to counter the triggering creature's casting of that same spell. He loses its spell slot as if he had cast the triggering spell. He then attempts to counteract the triggering spell.</p>"
+				},
+				"Flash of Insight":{
+					"name": "Flash of Insight",
+					"description": "<p><strong>Frequency</strong> once per day.</p>\n<p><strong>Trigger</strong> Vordakai is about to roll a d20.</p>\n<p><strong>Effect</strong> Vordakai peers into an occluded spectrum of possible futures. He gets a success (but not a critical success) without rolling.</p>"
+				},
+				"Frightful Presence":{
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura} @Check[type:will|dc:29]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Steady Spellcasting":{
+					"name": "Steady Spellcasting",
+					"description": "<p>If a reaction would disrupt Vordakai's spellcasting action, the lich attempts a @Check[type:flat|dc:15]. On a success, the action isn't disrupted.</p>"
+				},
+				"Consume Memories":{
+					"name": "Consume Memories",
+					"description": "<p>Vordakai draws out a creature's memories and consumes them, learning bits and pieces of the world through the victim's thoughts. The lich makes a hand Strike against the target; if he hits, he deals [[/r {6d6}[negative]]]{6d6 negative energy damage}. The target must attempt a @Check[type:will|dc:32] save, after which it is temporarily immune to Consume Memories for 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes no additional ill effects.</p>\n<p><strong>Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 round.</p>\n<p><strong>Failure</strong> The target becomes stupefied 1 with an unlimited duration. Vordakai gains a +1 status bonus to all skill checks for 1 minute as a result of the consumed memories.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 2} with an unlimited duration. In addition, Vordakai can telepathically learn one specific bit of secret information known by the victim, subject to the GM's discretion</p>"
+				},
+				"Drain Oculus":{
+					"name": "Drain Oculus",
+					"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> Vordakai taps into the <em>Oculus of Abaddon's</em> power to cast any arcane spell up to 6th level, even if the spell being cast is not one of his prepared spells.</p>"
+				},
+				"Familiar":{
+					"name": "Familiar",
+					"description": "<p>Vordakai’s familiar is Horagnamon</p>"
+				},
+				"Paralyzing Touch":{
+					"name": "Paralyzing Touch",
+					"description": "<p>A creature damaged by the lich's hand Strike must succeed at a @Check[type:fortitude|dc:32] save.</p>\n<p>The creature becomes @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} for 1 round on a failure. On a critical failure, the creature is paralyzed permanently, falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, and seems dead. A @Check[type:medicine|dc:25|name:Diagnose Paralysis|traits:arcane,curse,necromancy|overrideTraits:true] check reveals the victim is alive.</p>"
+				}
+			}
 		},
 		"Weakened Floor": {
-			"name": "Weakened Floor"
+			"name": "Weakened Floor",
+			"data":{},
+			"items":{}
 		},
 		"Werendegar": {
-			"name": "Werendegar"
+			"name": "Werendegar",
+			"data":{},
+			"items":{}
 		},
 		"Whimwyrm": {
-			"name": "Whimwyrm"
+			"name": "Whimwyrm",
+			"data":{},
+			"items":{}
 		},
 		"Wild Hunt Archer": {
-			"name": "Wild Hunt Archer"
+			"name": "Wild Hunt Archer",
+			"data":{},
+			"items":{}
 		},
 		"Wild Hunt Horse": {
-			"name": "Wild Hunt Horse"
+			"name": "Wild Hunt Horse",
+			"data":{},
+			"items":{}
 		},
 		"Wild Hunt Hound": {
-			"name": "Wild Hunt Hound"
+			"name": "Wild Hunt Hound",
+			"data":{},
+			"items":{}
 		},
 		"Wild Hunt Monarch": {
-			"name": "Wild Hunt Monarch"
+			"name": "Wild Hunt Monarch",
+			"data":{},
+			"items":{}
 		},
 		"Wild Hunt Scout": {
-			"name": "Wild Hunt Scout"
+			"name": "Wild Hunt Scout",
+			"data":{},
+			"items":{}
 		},
 		"Windchaser": {
-			"name": "Windchaser"
+			"name": "Windchaser",
+			"data":{},
+			"items":{}
 		},
 		"Winged Owlbear": {
-			"name": "Winged Owlbear"
+			"name": "Winged Owlbear",
+			"data":{},
+			"items":{}
 		},
 		"Xae": {
-			"name": "Xae"
+			"name": "Xae",
+			"data":{},
+			"items":{}
 		},
 		"Zorek": {
-			"name": "Zorek"
+			"name": "Zorek",
+			"data":{},
+			"items":{}
 		}
 	}
 }
