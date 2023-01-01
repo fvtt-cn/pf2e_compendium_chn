@@ -36,7 +36,7 @@
             "items":{
                 "Burn It All":{
                     "name": "烧尽一切 Burn It All",
-                    "description": "<p><strong>触发</strong> 由陷阱主人所设置的特殊条件；比如说当陷阱主人死亡时；</p>\n<hr />\n<p><strong>效果</strong> 周围半径100英里的土地降下火雨，对所有生物和物品造成[[/r {10d6}[fire]]]{10d6火焰伤害}。每个生物或物品都可以尝试进行@Check[type:reflex|dc:46|basic:true]豁免。任何生命值减少为0的生物立即死亡。此效果不足以完全烧毁整座深林、夷平整座山或城市，但通常能杀死该地区绝大部分生物。</p>"
+                    "description": "<p><strong>触发</strong> 由陷阱主人所设置的特殊条件；比如说当陷阱主人死亡时；</p>\n<hr />\n<p><strong>效果</strong> 周围半径100英里的土地降下火雨，对所有生物和物品造成[[/r (10d6)[fire]]]{10d6火焰伤害}。每个生物或物品都可以尝试进行@Check[type:reflex|dc:46|basic:true]豁免。任何生命值减少为0的生物立即死亡。此效果不足以完全烧毁整座深林、夷平整座山或城市，但通常能杀死该地区绝大部分生物。</p>"
                 }
             }
         },
@@ -92,11 +92,11 @@
             "items":{
                 "Emit Cold":{
                     "name": "严寒 Emit Cold",
-                    "description": "<p>@Template[type:emanation|distance:5]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>褐霉菌对相邻的生物造成[[/r {2d6}[cold]]]{2d6寒冷伤害}。</p>"
+                    "description": "<p>@Template[type:emanation|distance:5]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>褐霉菌对相邻的生物造成[[/r (2d6)[cold]]]{2d6寒冷伤害}。</p>"
                 },
                 "Leech Warmth":{
                     "name": "榨取温度 Leech Warmth",
-                    "description": "<p><strong>触发</strong> 褐霉菌5尺范围内有火焰；</p>\n<hr />\n<p><strong>效果</strong> 褐霉菌向占据空间相邻的每个方格扩张。当它扩张时会对周围吸收更多的热量，对扩张后10尺范围内的生物造成[[/r {2d6+6}[cold]]]{2d6+6寒冷伤害}（@Check[type:fortitude|dc:18|basic:true]豁免）。</p>"
+                    "description": "<p><strong>触发</strong> 褐霉菌5尺范围内有火焰；</p>\n<hr />\n<p><strong>效果</strong> 褐霉菌向占据空间相邻的每个方格扩张。当它扩张时会对周围吸收更多的热量，对扩张后10尺范围内的生物造成[[/r (2d6+6)[cold]]]{2d6+6寒冷伤害}（@Check[type:fortitude|dc:18|basic:true]豁免）。</p>"
                 }
             }
         },
@@ -157,7 +157,7 @@
             "items":{
                 "Pitfall":{
                     "name": "陷坑 Pitfall",
-                    "description": "<p><strong>触发</strong> 一个生物走上活板门；</p>\n<hr />\n<p><strong>效果</strong> 触发陷阱的生物坠落到坑底并受到坠落伤害，计算坠落距离时由于底部有水所以减少5尺（一般而言是[[/r {12}[bludgeoning]]]{12钝击伤害}）。生物可以通过@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}来避免坠落。活板门随即猛地关上，然后陷阱进行先攻检定。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物走上活板门；</p>\n<hr />\n<p><strong>效果</strong> 触发陷阱的生物坠落到坑底并受到坠落伤害，计算坠落距离时由于底部有水所以减少5尺（一般而言是[[/r (12)[bludgeoning]]]{12钝击伤害}）。生物可以通过@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}来避免坠落。活板门随即猛地关上，然后陷阱进行先攻检定。</p>"
                 }
             }
         },
@@ -170,7 +170,7 @@
             "items":{
                 "Electrocution":{
                     "name": "放电 Electrocution",
-                    "description": "<p><strong>触发</strong> 一个生物直接握住，或以工具触碰门闩；</p>\n<hr />\n<p><strong>效果</strong> 陷阱对目标造成[[/r {3d12}[electricity]]]{3d12电击伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物直接握住，或以工具触碰门闩；</p>\n<hr />\n<p><strong>效果</strong> 陷阱对目标造成[[/r (3d12)[electricity]]]{3d12电击伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。</p>"
                 }
             }
         },
@@ -198,7 +198,7 @@
             "items":{
                 "Fireball":{
                     "name": "火球 Fireball",
-                    "description": "<p><strong>触发</strong> 一个活着的生物进入传感器范围；</p>\n<hr />\n<p><strong>效果</strong> 符文向该生物所处的方格中心发射火球并引爆。这等同于一个3环<em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{火球术 Fireball}</em>，造成[[/r {6d6}[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。</p>"
+                    "description": "<p><strong>触发</strong> 一个活着的生物进入传感器范围；</p>\n<hr />\n<p><strong>效果</strong> 符文向该生物所处的方格中心发射火球并引爆。这等同于一个3环<em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{火球术 Fireball}</em>，造成[[/r (6d6)[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。</p>"
                 }
             }
         },
@@ -239,7 +239,7 @@
             "items":{
                 "Profane Chant":{
                     "name": "亵渎颂歌 Profane Chant",
-                    "description": "<p><strong>触发</strong> 一个生物走进幽灵唱诗班升起的地板的10尺之内；</p>\n<hr />\n<p><strong>效果</strong> 幽灵唱诗班升起，它的歌声对幽灵形态30尺内的非邪恶生物造成[[/r {4d8+18}[mental]]]{4d8+18心灵伤害}。受影响的生物每次都要尝试一次@Check[type:will|dc:24|traits:damaging-effect]鉴定。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害并陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害并陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，同时陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}，并且@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物走进幽灵唱诗班升起的地板的10尺之内；</p>\n<hr />\n<p><strong>效果</strong> 幽灵唱诗班升起，它的歌声对幽灵形态30尺内的非邪恶生物造成[[/r (4d8+18)[mental]]]{4d8+18心灵伤害}。受影响的生物每次都要尝试一次@Check[type:will|dc:24|traits:damaging-effect]鉴定。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害并陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害并陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，同时陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}，并且@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮。</p>"
                 }
             }
         },
@@ -253,7 +253,7 @@
             "items":{
                 "Mark for Damnation":{
                     "name": "诅咒印记 Mark for Damnation",
-                    "description": "<p><strong>触发</strong> 3个或更多13级或更高级别的生物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> 作祟对每个进入作祟区域的生物造成[[/r {6d12+35}[negative]]]{6d12+35负能量伤害}，并且每个生物都必须尝试@Check[type:will|dc:40|traits:damaging-effects]检定。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害，但是陷入毁灭1。</p>\n<p><strong>成功</strong> 生物受到一半伤害，并且陷入毁灭1。</p>\n<p><strong>失败</strong> 生物受到满伤害，陷入毁灭2，并且被诅咒标记。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入毁灭3，并且被诅咒标记。如果生物在被诅咒标记之后的24小时内死亡，包括作祟的伤害导致的死亡，它的灵魂立即被拖到被诅咒的灵魂所侍奉的邪恶神灵所在的位面，在那里该生物的灵魂被那位神祇其中一位的强大仆从所奴役。只有<i>祈愿术</i>和类似的强大效果才能立即恢复失去的灵魂；但是，也可以通过前往邪恶位面并击败灵魂的俘获者来恢复灵魂。</p>"
+                    "description": "<p><strong>触发</strong> 3个或更多13级或更高级别的生物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> 作祟对每个进入作祟区域的生物造成[[/r (6d12+35)[negative]]]{6d12+35负能量伤害}，并且每个生物都必须尝试@Check[type:will|dc:40|traits:damaging-effects]检定。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害，但是陷入毁灭1。</p>\n<p><strong>成功</strong> 生物受到一半伤害，并且陷入毁灭1。</p>\n<p><strong>失败</strong> 生物受到满伤害，陷入毁灭2，并且被诅咒标记。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入毁灭3，并且被诅咒标记。如果生物在被诅咒标记之后的24小时内死亡，包括作祟的伤害导致的死亡，它的灵魂立即被拖到被诅咒的灵魂所侍奉的邪恶神灵所在的位面，在那里该生物的灵魂被那位神祇其中一位的强大仆从所奴役。只有<i>祈愿术</i>和类似的强大效果才能立即恢复失去的灵魂；但是，也可以通过前往邪恶位面并击败灵魂的俘获者来恢复灵魂。</p>"
                 }
             }
         },
@@ -261,7 +261,7 @@
             "name": "Gravehall Trap",
             "hazarddisable": "<p>@Check[type:thievery|dc:24|name:Disrupt Magical Trigger|traits:action:disable-a-device] (专家) to disrupt the magical trigger before the hazard rolls initiative, or @Check[type:religion|dc:18|name:Overwhelm the Area with Positive Energy] (受训) to overwhelm the area with positive energy and prevent the hazard from using its routine for 1 round; on the third successful Religion check, the necromantic energies are disrupted and the hazard is destroyed.</p>",
             "hazarddescription": "<p>When a living creature crosses the midpoint of the trapped tunnel, necromantic magic partially animates the corpses buried in the walls and ceiling.</p>",
-            "hazardroutine": "<p><span class=\"pf2-icon\">1</span> Undead fists assail all creatures in the hall, dealing [[/r {4d6}[bludgeoning]]]{4d6钝击伤害}. Creatures in the hall must attempt a @Check[type:reflex|dc:21].</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> The target takes half damage.</p>\n<p><strong>失败</strong> The target takes full damage, and its Speeds are reduced by 10 feet (to a minimum of 5 feet) for 1 round.</p>\n<p><strong>大失败</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} for 1 round.</p>",
+            "hazardroutine": "<p><span class=\"pf2-icon\">1</span> Undead fists assail all creatures in the hall, dealing [[/r (4d6)[bludgeoning]]]{4d6钝击伤害}. Creatures in the hall must attempt a @Check[type:reflex|dc:21].</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> The target takes half damage.</p>\n<p><strong>失败</strong> The target takes full damage, and its Speeds are reduced by 10 feet (to a minimum of 5 feet) for 1 round.</p>\n<p><strong>大失败</strong> The target takes double damage and is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} for 1 round.</p>",
             "data":{},
             "items":{
                 "Lunging Dead":{
@@ -339,7 +339,7 @@
             "items":{
                 "Pitfall":{
                     "name": "陷坑 Pitfall",
-                    "description": "<p><strong>触发</strong> 一个生物踩上活板门；</p>\n<hr />\n<p><strong>效果</strong> 生物坠入陷坑并受到坠落伤害（一般为[[/r {10}[bludgeoning]]]{10钝击伤害}）。该生物可以进行一次@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}的反应动作来避免坠落。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物踩上活板门；</p>\n<hr />\n<p><strong>效果</strong> 生物坠入陷坑并受到坠落伤害（一般为[[/r (10)[bludgeoning]]]{10钝击伤害}）。该生物可以进行一次@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}的反应动作来避免坠落。</p>"
                 }
             }
         },
@@ -353,7 +353,7 @@
             "items":{
                 "Shock":{
                     "name": "电击 Shock",
-                    "description": "<p><strong>触发</strong> 一个生物直接触摸栅栏，或用工具或武器触碰栅栏；</p>\n<hr />\n<p><strong>效果</strong> 栅栏对触发的生物造成[[/r {7d12}[electricity]]]{7d12电击伤害}（@Check[type:reflex|dc:26|basic:true|traits:electricity,mechanical,trap,hazard]豁免）。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物直接触摸栅栏，或用工具或武器触碰栅栏；</p>\n<hr />\n<p><strong>效果</strong> 栅栏对触发的生物造成[[/r (7d12)[electricity]]]{7d12电击伤害}（@Check[type:reflex|dc:26|basic:true|traits:electricity,mechanical,trap,hazard]豁免）。</p>"
                 }
             }
         },
@@ -367,7 +367,7 @@
             "items":{
                 "Rend Magic":{
                     "name": "撕裂魔法 Rend Magic",
-                    "description": "<p><strong>触发</strong> 1个受到增益法术效果影响的单位接近护法师30尺范围内；</p>\n<hr />\n<p><strong>效果</strong> 嫉妒的护法师嫉妒他人的名望和魔法能力，试图将目标身上最高环级的增益法术扭转为灾难性的失败。它尝试一次+26调整值的反制检定。如果反制成功，该法术将被解除，目标将因为法术猛烈地内爆而受到[[/r {4d12+30}[force]]]{4d12+30力场伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。</p>"
+                    "description": "<p><strong>触发</strong> 1个受到增益法术效果影响的单位接近护法师30尺范围内；</p>\n<hr />\n<p><strong>效果</strong> 嫉妒的护法师嫉妒他人的名望和魔法能力，试图将目标身上最高环级的增益法术扭转为灾难性的失败。它尝试一次+26调整值的反制检定。如果反制成功，该法术将被解除，目标将因为法术猛烈地内爆而受到[[/r (4d12+30)[force]]]{4d12+30力场伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。</p>"
                 }
             }
         },
@@ -408,7 +408,7 @@
             "name": "危险的洪流 Perilous Flash Flood",
             "hazarddisable": "<p>3次@Check[type:athletics|dc:35|name:Move Barricade]、@Check[type:crafting|dc:35|name:Construct Barricade]或@Check[type:survival|dc:35|name:Construct Barricade]检定，以移动或建造足够坚固的障碍，在洪水中制造一处避难所。虽然这能创造一个安全的立足之地，但根据洪水的性质和来源，路障后的生物可能仍然处于危险之中。</p>",
             "hazarddescription": "<p>无论是裹挟着危险的残骸的洪水冲过街道，还是非自然的物质从容器中爆裂而出，这种无情的洪流会袭击其路径上的一切。</p>",
-            "hazardroutine": "<p>（1动作）洪水向前推进60英尺，冲击其区域内的所有生物。每个生物都必须尝试一次@Check[type:fortitude|dc:30]豁免，否则会被洪水冲向下游。造成的伤害的数量和类型取决于洪水的性质，某些类型的洪水会产生额外的效果。湍急的水流意味着洪水区域内的生物必须尝试进行一次@Check[type:athletics|dc:20|name:Swim|traits:action:swim]检定才能通过游泳动作移动，而那些每轮都未能通过游泳检定的生物会溺水。</p>\n<hr>\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一般伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害并被洪水冲走10尺远。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并被洪水冲走20尺远。</p>\n<hr>\n<ul>\n<li><strong>酸液流 Acidic Runoff</strong> 这种腐蚀性的洪水在移动时能溶解肉体，造成[[/r {1d12}[bludgeoning]+{1d12+8}[acid]]]{1d12钝击伤害和和1d12+8酸液伤害}。此外，它会对强韧豁免大失败的生物造成[[/r {2d6}[persistent,acid]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}。</li>\n<li><strong>高压水波 Battering Waves</strong> 这股汹涌的洪水造成[[/r {2d12+10}[bludgeoning]]]{2d12+10钝击伤害}。</li>\n<li><strong>恶心的污水 Repulsive Refuse</strong> 这股洪流吸收了受污染或携带疾病的物体，例如下水道污水或腐烂的食物。它造成[[/r {2d12+8}[bludgeoning]]]{2d12+8钝击伤害}。每个暴露在洪水中的生物都必须尝试一次@Check[type:fortitude|dc:29]豁免，失败时陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，大失败时陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。此外，与洪水接触的生物还会暴露在污秽热（@Check[type:fortitude|dc:20]）的影响下。</li>\n<li><strong>尖锐的残骸 Sharp Debris</strong> 水里夹杂着各种各样的锋利残骸。洪水造成[[/r {1d12}[bludgeoning]]]{1d12钝击伤害}和[[/r {1d12+12}[piercing]]]{1d12+12穿刺伤害}。</li>\n<li><strong>粘液洪流 Sticky Goo</strong> 这种物质特别粘。它造成[[/r {2d12+6}[bludgeoning]]]{2d12+6钝击伤害}。此外，洪水中的每个生物必须每轮在它们的回合开始时尝试一次@Check[type:reflex|dc:29]豁免。如果豁免失败，它的所有速度将在1轮内受到–10尺的环境减值。如果大失败，则会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。</li>\n</ul>",
+            "hazardroutine": "<p>（1动作）洪水向前推进60英尺，冲击其区域内的所有生物。每个生物都必须尝试一次@Check[type:fortitude|dc:30]豁免，否则会被洪水冲向下游。造成的伤害的数量和类型取决于洪水的性质，某些类型的洪水会产生额外的效果。湍急的水流意味着洪水区域内的生物必须尝试进行一次@Check[type:athletics|dc:20|name:Swim|traits:action:swim]检定才能通过游泳动作移动，而那些每轮都未能通过游泳检定的生物会溺水。</p>\n<hr>\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一般伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害并被洪水冲走10尺远。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害并被洪水冲走20尺远。</p>\n<hr>\n<ul>\n<li><strong>酸液流 Acidic Runoff</strong> 这种腐蚀性的洪水在移动时能溶解肉体，造成[[/r (1d12)[bludgeoning]+(1d12+8)[acid]]]{1d12钝击伤害和和1d12+8酸液伤害}。此外，它会对强韧豁免大失败的生物造成[[/r (2d6)[persistent,acid]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}。</li>\n<li><strong>高压水波 Battering Waves</strong> 这股汹涌的洪水造成[[/r (2d12+10)[bludgeoning]]]{2d12+10钝击伤害}。</li>\n<li><strong>恶心的污水 Repulsive Refuse</strong> 这股洪流吸收了受污染或携带疾病的物体，例如下水道污水或腐烂的食物。它造成[[/r (2d12+8)[bludgeoning]]]{2d12+8钝击伤害}。每个暴露在洪水中的生物都必须尝试一次@Check[type:fortitude|dc:29]豁免，失败时陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，大失败时陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。此外，与洪水接触的生物还会暴露在污秽热（@Check[type:fortitude|dc:20]）的影响下。</li>\n<li><strong>尖锐的残骸 Sharp Debris</strong> 水里夹杂着各种各样的锋利残骸。洪水造成[[/r (1d12)[bludgeoning]]]{1d12钝击伤害}和[[/r (1d12+12)[piercing]]]{1d12+12穿刺伤害}。</li>\n<li><strong>粘液洪流 Sticky Goo</strong> 这种物质特别粘。它造成[[/r (2d12+6)[bludgeoning]]]{2d12+6钝击伤害}。此外，洪水中的每个生物必须每轮在它们的回合开始时尝试一次@Check[type:reflex|dc:29]豁免。如果豁免失败，它的所有速度将在1轮内受到–10尺的环境减值。如果大失败，则会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。</li>\n</ul>",
             "stealthdetails": "<p>(专家)</p>",
             "data":{},
             "items":{
@@ -487,7 +487,7 @@
                 },
                 "Flesset Poison":{
                     "name": "飞镖毒 Flesset Poison",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {3d6}[poison]]]{3d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (3d6)[poison]]]{3d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3} (1轮)</p>"
                 }
             }
         },
@@ -504,7 +504,7 @@
                 },
                 "Cladis Poison":{
                     "name": "针毒 Cladis Poison",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>最大持续时间</strong> 4小时</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1小时)</p>\n<p><strong>阶段2</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1小时)</p>\n<p><strong>阶段3</strong> [[/r {3d6}[poison]]]{3d6毒素伤害}和流失2 (1小时)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>最大持续时间</strong> 4小时</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1小时)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1小时)</p>\n<p><strong>阶段3</strong> [[/r (3d6)[poison]]]{3d6毒素伤害}和流失2 (1小时)</p>"
                 }
             }
         },
@@ -576,7 +576,7 @@
             "items":{
                 "Shriek":{
                     "name": "尖叫 Shriek",
-                    "description": "<p><strong>触发</strong> 一个生物或光源接近尖叫蕈10尺以内，或尖叫蕈受到伤害；</p>\n<hr />\n<p><strong>效果</strong> 尖叫蕈发出震耳欲聋的尖叫声，对30尺范围内的生物造成[[/r {1d6}[sonic]]]{1d6音波伤害}（@Check[type:fortitude|dc:16|basic:true|traits:auditory]豁免；检定大失败的生物将@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟）。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物或光源接近尖叫蕈10尺以内，或尖叫蕈受到伤害；</p>\n<hr />\n<p><strong>效果</strong> 尖叫蕈发出震耳欲聋的尖叫声，对30尺范围内的生物造成[[/r (1d6)[sonic]]]{1d6音波伤害}（@Check[type:fortitude|dc:16|basic:true|traits:auditory]豁免；检定大失败的生物将@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟）。</p>"
                 }
             }
         },
@@ -589,7 +589,7 @@
             "items":{
                 "Slam Shut":{
                     "name": "突然落下 Slam Shut",
-                    "description": "<p><strong>触发</strong> 任何地砖受到压力；</p>\n<hr />\n<p><strong>效果</strong> 走廊两边的门落下并关闭。石板会对其下方区域或相邻的任何生物造成[[/r {3d8}[bludgeoning]]]{3d8钝击伤害}，并将它们按随机方向推离其所在空间。成功通过@Check[type:reflex|dc:17|traits:damaging-effect]豁免的生物不受伤害，并沿随机方向滚出。如果该生物大成功，它可以选择翻滚的方向。</p>\n<p>抬起落下的石板需要进行成功的@Check[type:athletics|dc:25|name:Lift a Slab Athletics|showDC:all]检定。</p>\n<p>命中压力板会触发陷阱，石板与陷阱的AC和豁免相同，但是它拥有硬度 12, HP 48 (BT 24)。</p>"
+                    "description": "<p><strong>触发</strong> 任何地砖受到压力；</p>\n<hr />\n<p><strong>效果</strong> 走廊两边的门落下并关闭。石板会对其下方区域或相邻的任何生物造成[[/r (3d8)[bludgeoning]]]{3d8钝击伤害}，并将它们按随机方向推离其所在空间。成功通过@Check[type:reflex|dc:17|traits:damaging-effect]豁免的生物不受伤害，并沿随机方向滚出。如果该生物大成功，它可以选择翻滚的方向。</p>\n<p>抬起落下的石板需要进行成功的@Check[type:athletics|dc:25|name:Lift a Slab Athletics|showDC:all]检定。</p>\n<p>命中压力板会触发陷阱，石板与陷阱的AC和豁免相同，但是它拥有硬度 12, HP 48 (BT 24)。</p>"
                 }
             }
         },
@@ -602,7 +602,7 @@
             "items":{
                 "Snowdrop":{
                     "name": "雪崩 Snowdrop",
-                    "description": "<p><strong>触发</strong> 一个生物在雪堆的下方移动；</p>\n<hr />\n<p><strong>效果</strong> 冰雪砸在触发的生物身上，造成[[/r {2d6+3}[bludgeoning]]]{2d6+3钝击伤害}（@Check[type:reflex|dc:18|basic:true]豁免）并弄湿他们的衣服。除非他们换上干净的衣服，或者在温度正常或更温暖的环境下待上至少1个小时，否则对于他们来说，寒冷环境的严峻程度会增加一级（举例来说，严寒会被视为极寒）。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物在雪堆的下方移动；</p>\n<hr />\n<p><strong>效果</strong> 冰雪砸在触发的生物身上，造成[[/r (2d6+3)[bludgeoning]]]{2d6+3钝击伤害}（@Check[type:reflex|dc:18|basic:true]豁免）并弄湿他们的衣服。除非他们换上干净的衣服，或者在温度正常或更温暖的环境下待上至少1个小时，否则对于他们来说，寒冷环境的严峻程度会增加一级（举例来说，严寒会被视为极寒）。</p>"
                 }
             }
         },
@@ -679,7 +679,7 @@
                 },
                 "Sportlebore Infestation":{
                     "name": "拟餐虫感染 Sportlebore Infestation",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1小时)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1小时)</p>\n<p><strong>阶段4</strong> [[/r {4d6}[bludgeoning]]]{4d6钝击伤害} (@Check[type:fortitude|dc:25|basic:true]豁免)，与此同时宿主痛苦地呕吐出一团拟餐虫群并回到阶段 1。</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1小时)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1小时)</p>\n<p><strong>阶段4</strong> [[/r (4d6)[bludgeoning]]]{4d6钝击伤害} (@Check[type:fortitude|dc:25|basic:true]豁免)，与此同时宿主痛苦地呕吐出一团拟餐虫群并回到阶段 1。</p>"
                 }
             }
         },
@@ -692,7 +692,7 @@
             "items":{
                 "Steam Blast":{
                     "name": "蒸汽爆炸 Steam Blast",
-                    "description": "<p><strong>触发</strong> 绊线被拉动或拉断，一般是由于生物走过绊线所在的方格；</p>\n<hr />\n<p><strong>效果</strong> 蒸汽从管道里喷出，对15尺内所有生物造成[[/r {3d6}[bludegeoning]]]{3d6钝击伤害}和[[/r {3d6}[fire]]]{3d6火焰伤害}（@Check[type:reflex|dc:24|basic:true|name:Avoid the erupting steam|traits:mechanical,trap,hazard]豁免）。豁免大失败的生物还会被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+                    "description": "<p><strong>触发</strong> 绊线被拉动或拉断，一般是由于生物走过绊线所在的方格；</p>\n<hr />\n<p><strong>效果</strong> 蒸汽从管道里喷出，对15尺内所有生物造成[[/r (3d6)[bludegeoning]]]{3d6钝击伤害}和[[/r (3d6)[fire]]]{3d6火焰伤害}（@Check[type:reflex|dc:24|basic:true|name:Avoid the erupting steam|traits:mechanical,trap,hazard]豁免）。豁免大失败的生物还会被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
                 }
             }
         },
@@ -760,7 +760,7 @@
             "items":{
                 "Rockslide":{
                     "name": "岩崩 Rockslide",
-                    "description": "<p><strong>触发</strong> 一个生物走上不稳定的地表；</p>\n<hr />\n<p><strong>效果</strong> 岩石崩落导致触发的生物跌倒，并造成[[/r {2d10+13}[bludgeoning]]]{2d10+13钝击伤害}，该生物必须尝试一次@Check[type:reflex|dc:21|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受伤害。</p>\n<p><strong>成功</strong> 该生物受到一半的伤害，并且在它占据的空间内倒地。</p>\n<p><strong>失败</strong> 生物受到全伤害，在它占据的空间内倒地，并且滚落至斜坡下方。</p>\n<p><strong>大失败</strong> 类似失败，但是造成双倍伤害。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物走上不稳定的地表；</p>\n<hr />\n<p><strong>效果</strong> 岩石崩落导致触发的生物跌倒，并造成[[/r (2d10+13)[bludgeoning]]]{2d10+13钝击伤害}，该生物必须尝试一次@Check[type:reflex|dc:21|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受伤害。</p>\n<p><strong>成功</strong> 该生物受到一半的伤害，并且在它占据的空间内倒地。</p>\n<p><strong>失败</strong> 生物受到全伤害，在它占据的空间内倒地，并且滚落至斜坡下方。</p>\n<p><strong>大失败</strong> 类似失败，但是造成双倍伤害。</p>"
                 }
             }
         },
@@ -796,7 +796,7 @@
             "items":{
                 "Deadfall":{
                     "name": "落石陷阱 Deadfall",
-                    "description": "<p><strong>触发</strong> 有生物进入拌足绳圈所在的方格。</p>\n<hr />\n<p><strong>效果</strong> 陷阱所在10尺边长方格内的所有生物受到[[/r {2d6}[bludgeoning]]]{2d6钝击伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。 </p>"
+                    "description": "<p><strong>触发</strong> 有生物进入拌足绳圈所在的方格。</p>\n<hr />\n<p><strong>效果</strong> 陷阱所在10尺边长方格内的所有生物受到[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。 </p>"
                 }
             }
         },
@@ -812,7 +812,7 @@
                 },
                 "strike-Noose":{
                     "name": "套索 Noose",
-                    "description": "<p>命中时造成3d6钝击伤害，目标被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}并拽离地面（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC22）。</p>\n<p>只要目标被套索捕捉着，目标就会在其每个回合结束时承受[[/r {1d6}[bludgeoning]]]{1d6钝击伤害}。</p>"
+                    "description": "<p>命中时造成3d6钝击伤害，目标被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}并拽离地面（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC22）。</p>\n<p>只要目标被套索捕捉着，目标就会在其每个回合结束时承受[[/r (1d6)[bludgeoning]]]{1d6钝击伤害}。</p>"
                 }
             }
         },
@@ -844,7 +844,7 @@
                 },
                 "Yellow Mold Spores":{
                     "name": "黄霉菌孢子 Yellow Mold Spores",
-                    "description": "<p>孢子造成的任何流失状态都持续到毒素的持续时间结束之后；</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d8}[poison]]]{1d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {2d8}[poison]]]{2d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {3d8}[poison]]]{3d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)</p>"
+                    "description": "<p>孢子造成的任何流失状态都持续到毒素的持续时间结束之后；</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d8)[poison]]]{2d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (3d8)[poison]]]{3d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)</p>"
                 }
             }
         }

@@ -49,7 +49,7 @@
 				},
 				"Vomit Alchemy":{
 					"name": "炼金喷吐 Vomit Alchemy",
-					"description": "<p>一个炼金苦工可以向前吐出一滩腐蚀性的炼金药剂，占据靠近苦工的一个方格。当苦工吐出液体时，位于喷吐方格的生物将受到[[/r {2d6}[acid]]]{2d6酸液伤害}。（@Check[type:reflex|dc:17|basic:true]豁免）任何在有炼金液的格子结束回合的生物受到[[/r {2d6}[acid]]]{2d6酸液伤害}。炼金液在失去活性前能够维持1分钟。</p>"
+					"description": "<p>一个炼金苦工可以向前吐出一滩腐蚀性的炼金药剂，占据靠近苦工的一个方格。当苦工吐出液体时，位于喷吐方格的生物将受到[[/r (2d6)[acid]]]{2d6酸液伤害}。（@Check[type:reflex|dc:17|basic:true]豁免）任何在有炼金液的格子结束回合的生物受到[[/r (2d6)[acid]]]{2d6酸液伤害}。炼金液在失去活性前能够维持1分钟。</p>"
 				}
 			}
 		},
@@ -59,11 +59,11 @@
 			"items":{
 				"Beestings":{
 					"name": "蜂蜇 Beestings",
-					"description": "<p>生物必须进行一次@Check[type:fortitude|dc:16|traits:damaging-effect]豁免。豁免失败的人受到[[/r {1d4}[poison]]]{1d4毒素伤害}并进入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，维持1分钟。</p>"
+					"description": "<p>生物必须进行一次@Check[type:fortitude|dc:16|traits:damaging-effect]豁免。豁免失败的人受到[[/r (1d4)[poison]]]{1d4毒素伤害}并进入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，维持1分钟。</p>"
 				},
 				"Swarming Stings":{
 					"name": "集群叮咬 Swarming Stings",
-					"description": "<p>和集群处在同一空间的每个敌人受到[[/r {1d4}[piercing]]]{1d4穿刺伤害}（@Check[type:reflex|dc:16|basic:true]豁免）；每轮一个生物第一次豁免失败并受到伤害时，他将同时受到蜂蜇效果的影响。</p>\n<p>每次蜂群使用这个能力时，受到1点伤害。</p>"
+					"description": "<p>和集群处在同一空间的每个敌人受到[[/r (1d4)[piercing]]]{1d4穿刺伤害}（@Check[type:reflex|dc:16|basic:true]豁免）；每轮一个生物第一次豁免失败并受到伤害时，他将同时受到蜂蜇效果的影响。</p>\n<p>每次蜂群使用这个能力时，受到1点伤害。</p>"
 				}
 			}
 		},
@@ -90,7 +90,7 @@
 				},
 				"Siphon Vitality":{
 					"name": "生命虹吸 Siphon Vitality",
-					"description": "<p>血腥泥怪从附近的生物身上吸取血液，让他们的血肉绽开，血液流出补充到血腥泥怪身上。@Template[type:emanation|distance:15]{15尺内}的每一个有生命的生物受到[[/r {3d6}[slashing]]]{3d6挥砍伤害}（@Check[type:fortitude|dc:21|basic:true]豁免）。</p>\n<p>血腥泥怪恢复生命虹吸对单个生物造成的最高伤害的一半的HP。</p>"
+					"description": "<p>血腥泥怪从附近的生物身上吸取血液，让他们的血肉绽开，血液流出补充到血腥泥怪身上。@Template[type:emanation|distance:15]{15尺内}的每一个有生命的生物受到[[/r (3d6)[slashing]]]{3d6挥砍伤害}（@Check[type:fortitude|dc:21|basic:true]豁免）。</p>\n<p>血腥泥怪恢复生命虹吸对单个生物造成的最高伤害的一半的HP。</p>"
 				}
 			}
 		},
@@ -109,7 +109,7 @@
 				},
 				"Weeping Wounds":{
 					"name": "渗血伤口 Weeping Wounds",
-					"description": "<p>血鞭荆棘的藤鞭可以造成能持续流血的严重撕裂伤。一个受到藤鞭打击的生物将受到[[/r {1}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。（重击的情况下[[/r {2}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}）。</p>\n<p>不同于其他类型的持续伤害，这种伤害是累积的，最大可以累积到5点持续流血伤害，但它可以被任何其他类型的持续流血伤害所终止。</p>"
+					"description": "<p>血鞭荆棘的藤鞭可以造成能持续流血的严重撕裂伤。一个受到藤鞭打击的生物将受到[[/r (1)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。（重击的情况下[[/r (2)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}）。</p>\n<p>不同于其他类型的持续伤害，这种伤害是累积的，最大可以累积到5点持续流血伤害，但它可以被任何其他类型的持续流血伤害所终止。</p>"
 				}
 			}
 		},
@@ -119,7 +119,7 @@
 			"items":{
 				"Acid Breath":{
 					"name": "喷吐酸液 Acid Breath",
-					"description": "<p>酸蚀狼从它的口中喷涂出一滩亮绿色的酸液，影响一条@Template[type:line|distance:30]上的所有生物。所有被影响的生物受到[[/r {3d6}[acid]]]{3d6酸液伤害}。（@Check[type:reflex|dc:16|basic:true]豁免）</p>\n<p>酸蚀狼在1分钟内无法再次使用这个能力。</p>"
+					"description": "<p>酸蚀狼从它的口中喷涂出一滩亮绿色的酸液，影响一条@Template[type:line|distance:30]上的所有生物。所有被影响的生物受到[[/r (3d6)[acid]]]{3d6酸液伤害}。（@Check[type:reflex|dc:16|basic:true]豁免）</p>\n<p>酸蚀狼在1分钟内无法再次使用这个能力。</p>"
 				},
 				"Howl":{
 					"name": "嚎叫 Howl",
@@ -152,7 +152,7 @@
 			"items":{
 				"Falling Debris":{
 					"name": "坠落的残骸 Falling Debris",
-					"description": "<p><strong>触发</strong> 压力板遭到挤压。</p>\n<hr />\n<p><strong>效果</strong> 爬行道的转角顶部和两个另外的相邻区域发生塌陷，在这三个区域的生物将受到[[/r {3d6}[bludgeoning]]]{3d6钝击伤害}，并可以通过一个@Check[type:reflex|dc:14|traits:damaging-effect]豁免来降低伤害。对于在中心区域触发陷阱的生物，这是一个基础豁免。而在两个相邻区域的生物在豁免成功或是大成功时可以完全避开坠落的残骸，因此不受伤害，但是在豁免失败时依旧会受到完整的伤害，在大失败时受到两倍的伤害。受到来自残骸伤害的生物将@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，在能将人压碎的重量下被困。</p>\n<p>清理掉一个区域的残骸需要一个成功的@Check[type:athletics|dc:17|name:Clear Debris]检定，检定结果的详细内容如下：</p>\n<hr />\n<p><strong>大成功</strong> 区域在1分钟内被清理干净。</p>\n<p><strong>成功</strong> 区域在5分钟内被清理干净。</p>\n<p><strong>失败</strong> 区域在10分钟内被清理干净。</p>\n<p><strong>大失败</strong> 区域顶部的残骸发生了二次塌方，对正在挖残骸的角色与被压在底下的角色额外造成[[/r {2d6}[bludgeoning]]]{2d6钝击伤害}，整个过程将花费1分钟。</p>"
+					"description": "<p><strong>触发</strong> 压力板遭到挤压。</p>\n<hr />\n<p><strong>效果</strong> 爬行道的转角顶部和两个另外的相邻区域发生塌陷，在这三个区域的生物将受到[[/r (3d6)[bludgeoning]]]{3d6钝击伤害}，并可以通过一个@Check[type:reflex|dc:14|traits:damaging-effect]豁免来降低伤害。对于在中心区域触发陷阱的生物，这是一个基础豁免。而在两个相邻区域的生物在豁免成功或是大成功时可以完全避开坠落的残骸，因此不受伤害，但是在豁免失败时依旧会受到完整的伤害，在大失败时受到两倍的伤害。受到来自残骸伤害的生物将@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，在能将人压碎的重量下被困。</p>\n<p>清理掉一个区域的残骸需要一个成功的@Check[type:athletics|dc:17|name:Clear Debris]检定，检定结果的详细内容如下：</p>\n<hr />\n<p><strong>大成功</strong> 区域在1分钟内被清理干净。</p>\n<p><strong>成功</strong> 区域在5分钟内被清理干净。</p>\n<p><strong>失败</strong> 区域在10分钟内被清理干净。</p>\n<p><strong>大失败</strong> 区域顶部的残骸发生了二次塌方，对正在挖残骸的角色与被压在底下的角色额外造成[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}，整个过程将花费1分钟。</p>"
 				}
 			}
 		},
@@ -162,7 +162,7 @@
 			"items":{
 				"Fiery Pelt":{
 					"name": "火焰毛皮 Fiery Pelt",
-					"description": "<p>被炎火豹擒抱的生物在开始他们的回合时将受到[[/r {1d4}[fire]]]{1d4火焰伤害}。试图擒抱炎火豹的生物每次尝试都将受到[[/r {1d4}[fire]]]{1d4火焰伤害}。</p>"
+					"description": "<p>被炎火豹擒抱的生物在开始他们的回合时将受到[[/r (1d4)[fire]]]{1d4火焰伤害}。试图擒抱炎火豹的生物每次尝试都将受到[[/r (1d4)[fire]]]{1d4火焰伤害}。</p>"
 				}
 			}
 		},
@@ -180,7 +180,7 @@
 				},
 				"Lightning Rattle":{
 					"name": "电光作响 Lightning Rattle",
-					"description": "<p>雷光巨蛇驱动它的金属尾巴，射出一串占据@Template[type:line|distance:60]区域的闪电。闪电造成[[/r {2d10}[electricity]]]{2d10电击伤害}。（@Check[type:reflex|dc:17|basic:true]豁免）</p>\n<p>当雷光巨蛇使用了这个能力之后，它就必须等待[[/br 1d4 #Recharge Lightning Rattle]]{1d4轮}才能再次使用。</p>"
+					"description": "<p>雷光巨蛇驱动它的金属尾巴，射出一串占据@Template[type:line|distance:60]区域的闪电。闪电造成[[/r (2d10)[electricity]]]{2d10电击伤害}。（@Check[type:reflex|dc:17|basic:true]豁免）</p>\n<p>当雷光巨蛇使用了这个能力之后，它就必须等待[[/br 1d4 #Recharge Lightning Rattle]]{1d4轮}才能再次使用。</p>"
 				}
 			}
 		},
@@ -224,7 +224,7 @@
 			"items":{
 				"Ice Fall":{
 					"name": "冰瀑 Ice Fall",
-					"description": "<p><strong>触发</strong> 门受到攻击或是被使用钥匙以外的手段打开；</p>\n<hr />\n<p><strong>效果</strong> 一滩冰冷的炼金液体被倒入这个房间，对区域内的每个人造成[[/r {4d6}[cold]]]{4d6寒冷伤害}。（@Check[type:reflex|dc:20|basic:true]豁免）</p>"
+					"description": "<p><strong>触发</strong> 门受到攻击或是被使用钥匙以外的手段打开；</p>\n<hr />\n<p><strong>效果</strong> 一滩冰冷的炼金液体被倒入这个房间，对区域内的每个人造成[[/r (4d6)[cold]]]{4d6寒冷伤害}。（@Check[type:reflex|dc:20|basic:true]豁免）</p>"
 				}
 			}
 		},
@@ -234,7 +234,7 @@
 			"items":{
 				"Icy Death":{
 					"name": "临死冰爆 Icy Death",
-					"description": "<p>当一只冰鼠被杀死时，它的身体会爆开成冻结的毛皮和骨头，对附近的生物造成[[/r {2d4}[cold]]]{2d4寒冷伤害}（@Check[type:reflex|dc:14|basic:true]豁免）。</p>"
+					"description": "<p>当一只冰鼠被杀死时，它的身体会爆开成冻结的毛皮和骨头，对附近的生物造成[[/r (2d4)[cold]]]{2d4寒冷伤害}（@Check[type:reflex|dc:14|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -278,11 +278,11 @@
 				},
 				"Gore Spray":{
 					"name": "血液溅射 Gore Spray",
-					"description": "<p><strong>触发</strong> 一个靠近突变狼的生物重击了它。</p>\n<hr />\n<p><strong>效果</strong> 造成的伤口导致血液从破裂的脓包当中溅出。触发的生物将受到[[/r {3d6}[acid]]]{3d6酸液伤害}（@Check[type:reflex|dc:19|basic:true]豁免）。即使这次攻击杀死了突变狼，也会触发这个特性。 </p>"
+					"description": "<p><strong>触发</strong> 一个靠近突变狼的生物重击了它。</p>\n<hr />\n<p><strong>效果</strong> 造成的伤口导致血液从破裂的脓包当中溅出。触发的生物将受到[[/r (3d6)[acid]]]{3d6酸液伤害}（@Check[type:reflex|dc:19|basic:true]豁免）。即使这次攻击杀死了突变狼，也会触发这个特性。 </p>"
 				},
 				"Tear":{
 					"name": "撕裂 Tear",
-					"description": "<p><strong>触发</strong> 突变狼在前一个动作中对一个生物用咬造成了伤害。</p>\n<hr />\n<p><strong>效果</strong> 突变狼撕开该生物的血肉，造成[[/r {1d6+2}[slashing]]]{1d6+2挥砍伤害}，[[/r {1}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}。</p>"
+					"description": "<p><strong>触发</strong> 突变狼在前一个动作中对一个生物用咬造成了伤害。</p>\n<hr />\n<p><strong>效果</strong> 突变狼撕开该生物的血肉，造成[[/r (1d6+2)[slashing]]]{1d6+2挥砍伤害}，[[/r (1)[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}。</p>"
 				}
 			}
 		},
@@ -328,7 +328,7 @@
 				},
 				"Trip":{
 					"name": "摔绊 Trip",
-					"description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个<span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态，并承受[[/r {1d6}[bludgeoning]]]{1d6钝击伤害}。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
+					"description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个<span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态，并承受[[/r (1d6)[bludgeoning]]]{1d6钝击伤害}。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
 				}
 			}
 		},
