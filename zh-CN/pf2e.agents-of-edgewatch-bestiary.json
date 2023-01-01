@@ -40,7 +40,7 @@
 			"hp": "以摧毁一个喷嘴；毒气罐硬度：20; 毒气罐HP： 100 (BT 50)以损毁毒气罐，阻止它喷出气体；",
 			"disable": "<p>@Check[type:thievery|dc:35|name:Block One Nozzle|traits:action:disable-a-device](专家)以阻塞一个喷嘴或@Check[type:thievery|dc:40|name:Shut Off the Tank|traits:action:disable-a-device](大师)以关上毒气罐。在5轮后，毒气罐排空，陷阱失效。</p>",
 			"hazarddescription": "<p>隐藏在公寓天花板上的五个喷嘴将藏在墙后的毒气罐中的赌气喷出，形成浓重的酸性毒云。</p>",
-			"routine": "<p>(1动作) 当它被触发时，陷阱有五个激活的喷嘴，但在每一轮它的回合结束时，一个随机的喷嘴失效。在陷阱的回合中，还激活的喷嘴会喷出一团酸性毒气，扩张到整个公寓中。毒云对房间中的每个生物和物体造成[[/r {1d6}[acid]]]{1d6酸液伤害}和[[/r {1d6}[poison]]]{1d6毒素伤害}（@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison]豁免）。无人看管的物体会在针对伤害的豁免中自动失败。</p>",
+			"routine": "<p>(1动作) 当它被触发时，陷阱有五个激活的喷嘴，但在每一轮它的回合结束时，一个随机的喷嘴失效。在陷阱的回合中，还激活的喷嘴会喷出一团酸性毒气，扩张到整个公寓中。毒云对房间中的每个生物和物体造成[[/r (1d6)[acid]]]{1d6酸液伤害}和[[/r (1d6)[poison]]]{1d6毒素伤害}（@Check[type:fortitude|dc:33|basic:true|name:Spew Cloud|traits:poison]豁免）。无人看管的物体会在针对伤害的豁免中自动失败。</p>",
 			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
 			"items":{
@@ -145,7 +145,7 @@
 				},
 				"Consume Flesh":{
 					"name": "吞食尸体 Consume Flesh",
-					"description": "<p><strong>需求</strong> 食尸鬼与刚死亡一小时内的生物尸体相邻。</p>\n<hr />\n<p><strong>效果</strong> 食尸鬼吞食一大块尸体并恢复[[/r {5d6}[healing]]]{5d6生命值}。</p>\n<p>食尸鬼从每具尸体上只能获取一次生命值恢复。</p>"
+					"description": "<p><strong>需求</strong> 食尸鬼与刚死亡一小时内的生物尸体相邻。</p>\n<hr />\n<p><strong>效果</strong> 食尸鬼吞食一大块尸体并恢复[[/r (5d6)[healing]]]{5d6生命值}。</p>\n<p>食尸鬼从每具尸体上只能获取一次生命值恢复。</p>"
 				},
 				"Fill Lungs":{
 					"name": "肺部充水 Fill Lungs",
@@ -261,7 +261,7 @@
 			"items":{
 				"Scalding Spray":{
 					"name": "喷洒沸水 Scalding Spray",
-					"description": "<p><strong>触发</strong> 重物被放置在地图上标有“T”的任意方块上，触发压力板；</p>\n<hr />\n<p><strong>效果</strong> 喷泉将沸水喷到自己的方格即它们之间的10 尺的区域（虚线标记），对该区域内的任意生物造成[[/r {4d6+4}[fire]]]{4d6+4火焰伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 重物被放置在地图上标有“T”的任意方块上，触发压力板；</p>\n<hr />\n<p><strong>效果</strong> 喷泉将沸水喷到自己的方格即它们之间的10 尺的区域（虚线标记），对该区域内的任意生物造成[[/r (4d6+4)[fire]]]{4d6+4火焰伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -274,7 +274,7 @@
 			"items":{
 				"Overflowing Boiling Water":{
 					"name": "溢出的沸水 Overflowing Boiling Water",
-					"description": "<p><strong>触发</strong> 绊线被拉动或绷断了；</p>\n<hr />\n<p><strong>效果</strong> 强酸瓶爆裂开来，酸液溅射到周围的生物身上，并导致沸水缸向相同的方向裂开。</p>\n<p>所有位于被触发的沸水缸东向的@Template[type:cone|distance:5]内的敌人受到[[/r {3d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}、[[/r {3}[splash,acid]]]{3酸液溅射伤害}、和[[/r {8d6+20}[fire]]]{8d6+20火焰伤害}（@Check[type:reflex|dc:31|basic:true|traits:acid,fire]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 绊线被拉动或绷断了；</p>\n<hr />\n<p><strong>效果</strong> 强酸瓶爆裂开来，酸液溅射到周围的生物身上，并导致沸水缸向相同的方向裂开。</p>\n<p>所有位于被触发的沸水缸东向的@Template[type:cone|distance:5]内的敌人受到[[/r (3d6)[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}、[[/r (3)[splash,acid]]]{3酸液溅射伤害}、和[[/r (8d6+20)[fire]]]{8d6+20火焰伤害}（@Check[type:reflex|dc:31|basic:true|traits:acid,fire]豁免）。</p>"
 				}
 			}
 		},
@@ -303,7 +303,7 @@
 				},
 				"Swarming Bites":{
 					"name": "虫群噬咬 Swarming Bites",
-					"description": "<p>虫群占据空间内的每个生物受到[[/r {3d6}[piercing]]]{3d6穿刺伤害}（@Check[type:reflex|dc:24|basic:true]豁免）外加骨髓热疫。</p>"
+					"description": "<p>虫群占据空间内的每个生物受到[[/r (3d6)[piercing]]]{3d6穿刺伤害}（@Check[type:reflex|dc:24|basic:true]豁免）外加骨髓热疫。</p>"
 				}
 			}
 		},
@@ -325,7 +325,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>中型，[[/r {2d8+7}[bludgeoning]]]{2d8+7钝击伤害}，破裂18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>中型，[[/r (2d8+7)[bludgeoning]]]{2d8+7钝击伤害}，破裂18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"Tug":{
 					"name": "拖拽 Tug",
@@ -362,7 +362,7 @@
 			"items":{
 				"Flush":{
 					"name": "冲下 Flush",
-					"description": "<p><strong>触发</strong> 两个或两个以上的生物站陷阱空间上；</p>\n<hr />\n<p><strong>效果</strong> 在陷阱被触发一轮后，房间里的所有生物都从竖井坠落40尺到达<strong>E36</strong>区，坠落造成[[/r {20}[bludgeoning]]]{20钝击伤害}，加上降落到尖刺坑中的[[/r {2d6}[piercing]]]{2d6穿刺伤害}。</p>\n<p>这些生物可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}，以抓住吊床或一个悬挂的储藏箱来避免坠落。</p>\n<p>@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}或抓住边缘的DC是20。</p>"
+					"description": "<p><strong>触发</strong> 两个或两个以上的生物站陷阱空间上；</p>\n<hr />\n<p><strong>效果</strong> 在陷阱被触发一轮后，房间里的所有生物都从竖井坠落40尺到达<strong>E36</strong>区，坠落造成[[/r (20)[bludgeoning]]]{20钝击伤害}，加上降落到尖刺坑中的[[/r (2d6)[piercing]]]{2d6穿刺伤害}。</p>\n<p>这些生物可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}，以抓住吊床或一个悬挂的储藏箱来避免坠落。</p>\n<p>@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}或抓住边缘的DC是20。</p>"
 				}
 			}
 		},
@@ -381,11 +381,11 @@
                 },
                 "Electric Reflexes": {
                     "name": "电击反射 Electric Reflexes",
-                    "description": "<p><strong>触发</strong> 魔像受到电击伤害并且一个生物与之相邻。</p>\n<hr />\n<p><strong>效果</strong> 魔像猛击并试图@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}相邻的生物。魔像尝试一次运动检定来擒抱相邻的生物，如果魔像成功，该生物还要受到[[/r {3d6}[electricity]]]{3d6电击伤害}；如果魔像大成功，则该生物受到[[/r {6d6}[electricity]]]{6d6电击伤害}。</p>"
+                    "description": "<p><strong>触发</strong> 魔像受到电击伤害并且一个生物与之相邻。</p>\n<hr />\n<p><strong>效果</strong> 魔像猛击并试图@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}相邻的生物。魔像尝试一次运动检定来擒抱相邻的生物，如果魔像成功，该生物还要受到[[/r (3d6)[electricity]]]{3d6电击伤害}；如果魔像大成功，则该生物受到[[/r (6d6)[electricity]]]{6d6电击伤害}。</p>"
                 },
                 "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：火焰([[/r {5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r {3d4}]]{3d4伤害}); 被治疗：电击(区域效果[[/r {2d4}[healing]]]{2d4生命值}); 被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                    "description": "<p>被伤害：火焰([[/r (5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r (3d4}]]{3d4伤害}); 被治疗：电击(区域效果[[/r (2d4)[healing]]]{2d4生命值}); 被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
                 "Vulnerable to Flesh to Stone": {
                     "name": "法术弱点-石化术 Vulnerable to Flesh to Stone",
@@ -393,7 +393,7 @@
                 },
                 "Berserk Slam": {
                     "name": "狂暴猛击 Berserk Slam",
-                    "description": "<p><strong>需求</strong> 血肉魔像陷入狂暴状态。</p>\n<hr />\n<p><strong>效果</strong> 血肉魔像以-1环境减值进行一次拳击打击，造成额外[[/r {1d6}[bludgeoning]]]{1d6钝击伤害}并且击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}目标。</p>"
+                    "description": "<p><strong>需求</strong> 血肉魔像陷入狂暴状态。</p>\n<hr />\n<p><strong>效果</strong> 血肉魔像以-1环境减值进行一次拳击打击，造成额外[[/r (1d6)[bludgeoning]]]{1d6钝击伤害}并且击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}目标。</p>"
                 }
 			}
 		},
@@ -421,7 +421,7 @@
 				},
 				"Alchemical Chambers":{
 					"name": "炼金容器 Alchemical Chambers",
-					"description": "<p>查尔奇的身躯里有六个存放不同物质的炼金容器。当炼金魔像使用能力时会产生随机的炼金术效果，投掷1d6来并查阅下表（如果投出的结果是已经破损的炼金容器，则无效果）：</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/r {1d6} #Alchemical Effect]]{1d6}</th>\n<th>炼金效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>@UUID[Compendium.pf2e.equipment-srd.TZUskLT7yvP7N2co]{次等生命灵药 Elixir of Life (Lesser)}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.T4ouD4mVFHA3EHs6]{次等爆破者之眼 Bomber's Eye Elixir (Lesser)} </td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.oCuwJ9IUDAuzsUwa]{中等狂徒醇酿 Bravo's Brew (Moderate)}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.bQPRKEpnLakJBAAh]{猫眼灵药 Cat's Eye Elixir}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.AqLxu3ir4UGzdOaz]{中等猎豹灵药 Cheetah's Elixir (Moderate)}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.TMtQnY6yvIRCpK9v]{高等主宰突变药剂 Juggernaut Mutagen (Greater)}</td>\n</tr>\n</tbody>\n</table>"
+					"description": "<p>查尔奇的身躯里有六个存放不同物质的炼金容器。当炼金魔像使用能力时会产生随机的炼金术效果，投掷1d6来并查阅下表（如果投出的结果是已经破损的炼金容器，则无效果）：</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/r (1d6} #Alchemical Effect]]{1d6}</th>\n<th>炼金效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>@UUID[Compendium.pf2e.equipment-srd.TZUskLT7yvP7N2co]{次等生命灵药 Elixir of Life (Lesser)}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.T4ouD4mVFHA3EHs6]{次等爆破者之眼 Bomber's Eye Elixir (Lesser)} </td>\n</tr>\n<tr>\n<td>3</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.oCuwJ9IUDAuzsUwa]{中等狂徒醇酿 Bravo's Brew (Moderate)}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.bQPRKEpnLakJBAAh]{猫眼灵药 Cat's Eye Elixir}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.AqLxu3ir4UGzdOaz]{中等猎豹灵药 Cheetah's Elixir (Moderate)}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>@UUID[Compendium.pf2e.equipment-srd.TMtQnY6yvIRCpK9v]{高等主宰突变药剂 Juggernaut Mutagen (Greater)}</td>\n</tr>\n</tbody>\n</table>"
 				},
 				"Alchemical Rupture":{
 					"name": "炼金破裂 Alchemical Rupture",
@@ -429,7 +429,7 @@
 				},
 				"Golem Antimagic":{
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：音波([[/r {5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r {2d6}]]{2d6伤害}; 被治疗：酸液(区域效果[[/r {2d4}[healing]]]{2d4生命值});被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<p><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</p>\n<p><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</p>\n<p><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</p>"
+                    "description": "<p>被伤害：音波([[/r (5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r (2d6}]]{2d6伤害}; 被治疗：酸液(区域效果[[/r (2d4)[healing]]]{2d4生命值});被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<p><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</p>\n<p><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</p>\n<p><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</p>"
                 },
 				"Vulnerable to Shatter":{
                     "name": "法术弱点-粉碎音波 Vulnerable to Shatter",
@@ -510,11 +510,11 @@
 				},
 				"Grasping Bites":{
 					"name": "束缚噬咬 Grasping Bites",
-					"description": "<p>石螨群尝试一次运动检定，并和占据空间内所有生物的强韧DC相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}并且受到[[/r {1d6}[bludgeoning]]]{1d6钝击伤害}，并被石螨群@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，直到石螨群的下回合结束。</p>\n<p><strong>成功</strong> 生物陷入倒地，并被石螨群@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直到石螨群的下回合结束。</p>"
+					"description": "<p>石螨群尝试一次运动检定，并和占据空间内所有生物的强韧DC相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}并且受到[[/r (1d6)[bludgeoning]]]{1d6钝击伤害}，并被石螨群@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，直到石螨群的下回合结束。</p>\n<p><strong>成功</strong> 生物陷入倒地，并被石螨群@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直到石螨群的下回合结束。</p>"
 				},
 				"Pummeling Assault":{
 					"name": "持续攻击 Pummeling Assault",
-					"description": "<p>每个位于石螨群占据空间内的敌人受到[[/r {2d4}[bludgeoning]]]{2d4钝击伤害}（@Check[type:reflex|dc:17|basic:true]豁免）。</p>"
+					"description": "<p>每个位于石螨群占据空间内的敌人受到[[/r (2d4)[bludgeoning]]]{2d4钝击伤害}（@Check[type:reflex|dc:17|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -584,11 +584,11 @@
 			"items":{
 				"strike-Moderate Acid Flask":{
 					"name": "中等强酸瓶 Moderate Acid Flask",
-					"description": "<p>[[/r {2d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}</p>\n<p>[[/r {2}[splash,acid]]]{2酸液溅射伤害}</p>"
+					"description": "<p>[[/r (2d6)[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}</p>\n<p>[[/r (2)[splash,acid]]]{2酸液溅射伤害}</p>"
 				},
 				"strike-Moderate Alchemist's Fire":{
 					"name": "中等炽火胶 Moderate Alchemist's Fire",
-					"description": "<p>[[/r {2}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r {2}[fire]]]{2火焰溅射伤害}</p>"
+					"description": "<p>[[/r (2)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r (2)[fire]]]{2火焰溅射伤害}</p>"
 				},
 				"Dirty Bomb":{
 					"name": "脏弹 Dirty Bomb",
@@ -606,11 +606,11 @@
 			"items":{
 				"strike-Bottled Lightning":{
 					"name": "瓶装闪电 Bottled Lightning",
-					"description": "<p>[[/r {2}[splash,electricity]]]{2电击溅射伤害}</p>"
+					"description": "<p>[[/r (2)[splash,electricity]]]{2电击溅射伤害}</p>"
 				},
 				"strike-Frost Vial":{
 					"name": "霜冻瓶 Frost Vial",
-					"description": "<p>[[/r {2}[splash,cold]]]{2寒冷溅射伤害}</p>"
+					"description": "<p>[[/r (2)[splash,cold]]]{2寒冷溅射伤害}</p>"
 				},
 				"Bullyrag Beatdown":{
 					"name": "威吓猛击 Bullyrag Beatdown",
@@ -665,11 +665,11 @@
 				},
 				"Incendiary Spit":{
 					"name": "易燃唾液 Incendiary Spit",
-					"description": "<p>被燧石兽唾液击中的生物，表面会被一层光滑的易燃油脂覆盖。</p>\n<p>该生物必须成功通过@Check[type:reflex|dc:27]豁免，否则在易燃唾液覆盖时陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>\n<p>受到火焰伤害的生物会着火，受到[[/r {3d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。一旦持续性火焰伤害结束，唾液就燃尽了。唾液也会在一个小时后自动消失，或者用肥皂、水并花费1分钟时间来擦洗。</p>"
+					"description": "<p>被燧石兽唾液击中的生物，表面会被一层光滑的易燃油脂覆盖。</p>\n<p>该生物必须成功通过@Check[type:reflex|dc:27]豁免，否则在易燃唾液覆盖时陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>\n<p>受到火焰伤害的生物会着火，受到[[/r (3d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。一旦持续性火焰伤害结束，唾液就燃尽了。唾液也会在一个小时后自动消失，或者用肥皂、水并花费1分钟时间来擦洗。</p>"
 				},
 				"Trail of Flame":{
 					"name": "火焰轨迹 Trail of Flame",
-					"description": "<p>燧石兽行走两次，在它移动的时候，身后留下一道魔法火焰的痕迹。燧石兽经过的方格会燃起火焰，创造出5尺高的火墙，燃烧1轮。火墙会隐蔽另一侧的生物和物体。</p>\n<p>任何进入或在火墙范围内开始回合的生物将受到[[/r {6d6}[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:27|basic:true]豁免）。</p>"
+					"description": "<p>燧石兽行走两次，在它移动的时候，身后留下一道魔法火焰的痕迹。燧石兽经过的方格会燃起火焰，创造出5尺高的火墙，燃烧1轮。火墙会隐蔽另一侧的生物和物体。</p>\n<p>任何进入或在火墙范围内开始回合的生物将受到[[/r (6d6)[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:27|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -718,7 +718,7 @@
 			"items":{
 				"Explosion":{
 					"name": "爆炸 Explosion",
-					"description": "<p><strong>触发</strong> 一个生物打开北门，但没有先解除引线；</p>\n<hr />\n<p><strong>效果</strong> 雕像爆炸，以一个@Template[type:cone|distance:5]向西喷射弹片，对受影响地区的所有生物造成[[/r {1d10+7}[piercing]]]{1d10+7穿刺}和[[/r {1d10}[fire]]]{1d10火焰伤害}（@Check[type:reflex|dc:18|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物打开北门，但没有先解除引线；</p>\n<hr />\n<p><strong>效果</strong> 雕像爆炸，以一个@Template[type:cone|distance:5]向西喷射弹片，对受影响地区的所有生物造成[[/r (1d10+7)[piercing]]]{1d10+7穿刺}和[[/r (1d10)[fire]]]{1d10火焰伤害}（@Check[type:reflex|dc:18|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -730,7 +730,7 @@
 			"items":{
 				"Explode":{
 					"name": "爆炸 Explode",
-					"description": "<p><strong>触发</strong> 警探们到达后经过4轮无人处理；</p>\n<hr />\n<p><strong>效果</strong> 油桶爆炸了，对20英尺半径内造成[[/r {3d6+8}[fire]]]{3d6+8火焰伤害}（@Check[type:reflex|dc:20|basic:true|traits:fire]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 警探们到达后经过4轮无人处理；</p>\n<hr />\n<p><strong>效果</strong> 油桶爆炸了，对20英尺半径内造成[[/r (3d6+8)[fire]]]{3d6+8火焰伤害}（@Check[type:reflex|dc:20|basic:true|traits:fire]豁免）。</p>"
 				}
 			}
 		},
@@ -769,7 +769,7 @@
 				},
 				"Deepen the Wound":{
 					"name": "深化伤口 Deepen the Wound",
-					"description": "<p><strong>需求</strong> 法亚蒂的上一次攻击是使用细剑的成功近战攻击；</p>\n<hr />\n<p><strong>效果</strong> 法亚蒂对刚才命中的同一个生物使用格挡匕首打击。这次打击造成额外[[/r {4d6}[precision]]]{4d6精准伤害}。</p>"
+					"description": "<p><strong>需求</strong> 法亚蒂的上一次攻击是使用细剑的成功近战攻击；</p>\n<hr />\n<p><strong>效果</strong> 法亚蒂对刚才命中的同一个生物使用格挡匕首打击。这次打击造成额外[[/r (4d6)[precision]]]{4d6精准伤害}。</p>"
 				},
 				"Guildmaster's Lead":{
 					"name": "行会首领的领导 Guildmaster's Lead",
@@ -824,11 +824,11 @@
 				},
 				"Bloody Rebel":{
 					"name": "血腥反叛 Bloody Rebel",
-					"description": "<p>弗兰卡快速猛击附近的敌人，试图让对手残废甚至倒下。她最多进行三次近战打击，每次针对不同的目标。</p>\n<p>这三次打击都计算弗兰卡的多重攻击减值，但在所有打击都完成后才增加。</p>\n<p>如果命中，此打击造成[[/r {3}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，而非原来的伤害。</p>\n<p>如果重击，生物直到弗兰卡的下回合开始前陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，或者他们可以花费一个动作来移除措手不及状态，二者以先发生的情况为准。</p>"
+					"description": "<p>弗兰卡快速猛击附近的敌人，试图让对手残废甚至倒下。她最多进行三次近战打击，每次针对不同的目标。</p>\n<p>这三次打击都计算弗兰卡的多重攻击减值，但在所有打击都完成后才增加。</p>\n<p>如果命中，此打击造成[[/r (3)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，而非原来的伤害。</p>\n<p>如果重击，生物直到弗兰卡的下回合开始前陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，或者他们可以花费一个动作来移除措手不及状态，二者以先发生的情况为准。</p>"
 				},
 				"Hamstring":{
 					"name": "断筋 Hamstring",
-					"description": "<p><strong>需求</strong> 弗兰卡的上一个动作是一近战打击，并且对@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物造成了偷袭伤害；</p>\n<hr />\n<p><strong>效果</strong> 弗兰卡对目标生物造成[[/r {6}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，并且目标陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
+					"description": "<p><strong>需求</strong> 弗兰卡的上一个动作是一近战打击，并且对@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物造成了偷袭伤害；</p>\n<hr />\n<p><strong>效果</strong> 弗兰卡对目标生物造成[[/r (6)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，并且目标陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -930,7 +930,7 @@
 			"disable": "<p>Four @Check[type:thievery|dc:20|name:Block Gas Vents|traits:action:disable-a-device] checks to block the gas vents, or a @Check[type:thievery|dc:26|name:Unlock Door|traits:action:pick-a-lock] check to unlock the door and escape</p>",
 			"hazarddescription": "<p>在四个隐藏的气体通风口开始向房间注入毒气之前，房间的门突然关上并上锁。</p>",
 			"reset": "<p>必须通过疏浚通风口或更换<strong>E30</strong>区域的毒气箱以手动重新启用陷阱。</p>",
-			"routine": "<p>(1动作) 每一轮到它的回合，陷阱都会向房间注入更多的毒气。</p>\n<p>房间里的任何在呼吸的生物都会受到[[/r {4d6}[poison]]]{4d6毒素伤害}（成功通过@Check[type:fortitude|dc:22|traits:poison,damaging-effect]豁免以减半伤害）。如果在第一轮，一个生物在陷阱的回合之前行动，它可以选择屏住呼吸来推迟受到陷阱的伤害——在陷阱第一次行动后屏住呼吸将没有效果，因为该生物肺部的空气已经受到了污染。找到并阻塞其中一个隐藏的气体出口可以减少1d6的毒素伤害——如果所有的四个出口都被阻塞了，陷阱将被解除，尽管门仍然是锁着的。否则，陷阱将运行1分钟，然后所有气体耗尽，房间中的生物停止受到伤害，之后陷阱再打开房间1分钟。</p>",
+			"routine": "<p>(1动作) 每一轮到它的回合，陷阱都会向房间注入更多的毒气。</p>\n<p>房间里的任何在呼吸的生物都会受到[[/r (4d6)[poison]]]{4d6毒素伤害}（成功通过@Check[type:fortitude|dc:22|traits:poison,damaging-effect]豁免以减半伤害）。如果在第一轮，一个生物在陷阱的回合之前行动，它可以选择屏住呼吸来推迟受到陷阱的伤害——在陷阱第一次行动后屏住呼吸将没有效果，因为该生物肺部的空气已经受到了污染。找到并阻塞其中一个隐藏的气体出口可以减少1d6的毒素伤害——如果所有的四个出口都被阻塞了，陷阱将被解除，尽管门仍然是锁着的。否则，陷阱将运行1分钟，然后所有气体耗尽，房间中的生物停止受到伤害，之后陷阱再打开房间1分钟。</p>",
 			"stealthdetails": "<p>(受训)以闻到毒气或听到嘶嘶声</p>",
 			"data":{},
 			"items":{
@@ -1072,7 +1072,7 @@
 			"items":{
 				"strike-Lesser Alchemist's Fire":{
 					"name": "次等炽火胶 Lesser Alchemist's Fire",
-					"description": "<p>[[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r {1}[splash,fire]]]{1火焰溅射伤害}</p>"
+					"description": "<p>[[/r (1)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r (1)[splash,fire]]]{1火焰溅射伤害}</p>"
 				},
 				"Goblin Scuttle":{
 					"name": "哥布林快跑 Goblin Scuttle",
@@ -1089,7 +1089,7 @@
 			"items":{
 				"Waylay":{
 					"name": "拦路 Waylay",
-					"description": "<p><strong>触发</strong> 一个生物进入地图上标记的地区；</p>\n<hr />\n<p><strong>效果</strong> 雾蓝色的手从走廊的石砖里伸出来，抓住触发的生物，它必须尝试@Check[type:reflex|dc:26|traits:damaging-effect]豁免，以避免被灵体的手阻碍或伤害。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}持续1轮。</p>\n<p><strong>失败</strong> 目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}持续1轮，受到[[/r {2d10+10}[negative]]]{2d10+10负能量伤害}。</p>\n<p><strong>大失败</strong> 目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}持续1轮，受到[[/r {4d10+15}[negative]]]{4d10+15负能量伤害}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入地图上标记的地区；</p>\n<hr />\n<p><strong>效果</strong> 雾蓝色的手从走廊的石砖里伸出来，抓住触发的生物，它必须尝试@Check[type:reflex|dc:26|traits:damaging-effect]豁免，以避免被灵体的手阻碍或伤害。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}持续1轮。</p>\n<p><strong>失败</strong> 目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}持续1轮，受到[[/r (2d10+10)[negative]]]{2d10+10负能量伤害}。</p>\n<p><strong>大失败</strong> 目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}持续1轮，受到[[/r (4d10+15)[negative]]]{4d10+15负能量伤害}。</p>"
 				}
 			}
 		},
@@ -1108,7 +1108,7 @@
 				},
 				"equipment-Hunting Spider Venom (in Reaper's Lancet)":{
 					"name": "猎蛛毒(死神手术刀中) Hunting Spider Venom",
-					"description": "<p>这种毒液能够腐蚀受害者的防御，以便蜘蛛捕食猎物。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21|name:Hunting Spider Venom]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d10}[poison]]]{1d10毒素伤害}和@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d12}[poison]]]{1d12毒素伤害}、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和措手不及 (1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[poison]]]{2d6毒素伤害}、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和措手不及 (1轮)</p>"
+					"description": "<p>这种毒液能够腐蚀受害者的防御，以便蜘蛛捕食猎物。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21|name:Hunting Spider Venom]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10毒素伤害}和@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和措手不及 (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和措手不及 (1轮)</p>"
 				},
 				"strike-Reaper's Lancet Blade":{
 					"name": "死神手术刀 Reaper's Lancet Blade"
@@ -1136,7 +1136,7 @@
 			"items":{
 				"Pitfall":{
 					"name": "陷坑 Pitfall",
-					"description": "<p><strong>触发</strong> 一个生物走到活扳门上；</p>\n<hr />\n<p><strong>效果</strong> 触发的生物从竖井向下坠落30尺到<strong>E33</strong>区，造成[[/r {15}[bludgeoning]]]{15钝击伤害}，坠落在赭冻怪的坑里@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。生物可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}以避免掉落。</p>\n<p>@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}墙壁或抓住边缘动作的DC是22。</p>"
+					"description": "<p><strong>触发</strong> 一个生物走到活扳门上；</p>\n<hr />\n<p><strong>效果</strong> 触发的生物从竖井向下坠落30尺到<strong>E33</strong>区，造成[[/r (15)[bludgeoning]]]{15钝击伤害}，坠落在赭冻怪的坑里@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。生物可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}以避免掉落。</p>\n<p>@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}墙壁或抓住边缘动作的DC是22。</p>"
 				}
 			}
 		},
@@ -1179,7 +1179,7 @@
 			"items":{
 				"Slam Shut":{
 					"name": "突然合拢 Slam Shut",
-					"description": "<p><strong>触发</strong> 一个生物走上陷阱的压力板（如地图上所示）；</p>\n<hr />\n<p><strong>效果</strong> 铁处女的前部以令人难以置信的力量关闭，并自己锁住了。触发生物会遭受[[/r {4d10+10}[piercing]]]{4d10+10穿刺伤害}和@Localize[PF2E.PersistentDamage.Bleed2d6.success]（@Check[type:reflex|dc:26|basic:true]豁免；如果该生物大成功，可以完全避开陷阱）。触发它的生物被禁足。只有当铁处女外的生物解锁装着（需要两次@Check[type:thievery|dc:28|name:Unlock Iron Maiden|traits:manipulate,action:disable-a-device]检定才能解除装置）或打破铁处女，之后被困的生物再通过DC25的检定以逃脱陷阱内部的尖刺，才能免除禁足。</p>"
+					"description": "<p><strong>触发</strong> 一个生物走上陷阱的压力板（如地图上所示）；</p>\n<hr />\n<p><strong>效果</strong> 铁处女的前部以令人难以置信的力量关闭，并自己锁住了。触发生物会遭受[[/r (4d10+10)[piercing]]]{4d10+10穿刺伤害}和@Localize[PF2E.PersistentDamage.Bleed2d6.success]（@Check[type:reflex|dc:26|basic:true]豁免；如果该生物大成功，可以完全避开陷阱）。触发它的生物被禁足。只有当铁处女外的生物解锁装着（需要两次@Check[type:thievery|dc:28|name:Unlock Iron Maiden|traits:manipulate,action:disable-a-device]检定才能解除装置）或打破铁处女，之后被困的生物再通过DC25的检定以逃脱陷阱内部的尖刺，才能免除禁足。</p>"
 				}
 			}
 		},
@@ -1299,13 +1299,13 @@
 			"disable": "<p>@Check[type:thievery|dc:29|name:Deactivate Panel|traits:action:disable-a-device](专家)以拆除嵌板，或使用<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（4环；反制DC22）来反制嵌板上的魔法</p>",
 			"hazarddescription": "<p>隐藏在房间角落的嵌板后有一块神奇的磁体，会将生物而不是金属拉向它，并忽略途中的任何障碍。</p>",
 			"reset": "<p>在铁栅栏没有接触任何生物1分钟后，陷阱解除并重置。</p>",
-			"routine": "<p>(1动作) 陷阱将至多四个已经触发了它生物磁化能力的生物拉向房间的一个角落，可能会将他们压到铁栅栏上。如果受影响的生物和磁板间的所有铁栅栏还保持完好，该生物受到[[/r {2d10+10}[bludgeoning]]]{2d10+10钝击伤害}，需要通过@Check[type:fortitude|dc:25]豁免，失败则被束缚（逃脱DC23）。</p>\n<p>如果一根铁栅破损了，则生物只会受到[[/r {1d10+5}[bludgeoning]]]{1d10+5钝击伤害}，如果连续的两根铁栅都破损了，则生物不会受到任何伤害（但豁免失败仍会被束缚）。</p>",
+			"routine": "<p>(1动作) 陷阱将至多四个已经触发了它生物磁化能力的生物拉向房间的一个角落，可能会将他们压到铁栅栏上。如果受影响的生物和磁板间的所有铁栅栏还保持完好，该生物受到[[/r (2d10+10)[bludgeoning]]]{2d10+10钝击伤害}，需要通过@Check[type:fortitude|dc:25]豁免，失败则被束缚（逃脱DC23）。</p>\n<p>如果一根铁栅破损了，则生物只会受到[[/r (1d10+5)[bludgeoning]]]{1d10+5钝击伤害}，如果连续的两根铁栅都破损了，则生物不会受到任何伤害（但豁免失败仍会被束缚）。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
 				"Magnetize the Living":{
 					"name": "生物磁化 Magnetize the Living",
-					"description": "<p><strong>触发</strong> 生物接触这个区域的任何铁栅或接触已经受到陷阱影响的生物；</p>\n<hr />\n<p><strong>效果</strong> 隐藏在房间的远端角落的魔法嵌板（西方或东方的角落，取决于触发陷阱时生物最接近房间的哪一边）“磁化”触发的生物，暴力地把它拉向角落，自动对生物造成[[/r {2d10+10}[bludgeoning]]]{2d10+10钝击伤害}。</p>\n<p>陷阱如果还未骰先攻就骰。</p>"
+					"description": "<p><strong>触发</strong> 生物接触这个区域的任何铁栅或接触已经受到陷阱影响的生物；</p>\n<hr />\n<p><strong>效果</strong> 隐藏在房间的远端角落的魔法嵌板（西方或东方的角落，取决于触发陷阱时生物最接近房间的哪一边）“磁化”触发的生物，暴力地把它拉向角落，自动对生物造成[[/r (2d10+10)[bludgeoning]]]{2d10+10钝击伤害}。</p>\n<p>陷阱如果还未骰先攻就骰。</p>"
 				}
 			}
 		},
@@ -1451,7 +1451,7 @@
 				},
 				"Najra Lizard Venom":{
 					"name": "纳杰拉蜥蜴毒液 Najra Lizard Venom",
-					"description": "<p>中毒的生物会感觉生物非常口渴，在中毒时无法解渴；</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21|traits:poison]</p>\n<p><strong>最大持续时间</strong> 4小时</p>\n<p><strong>阶段1</strong> [[/r {1d4}[poison]]]{1d4毒素伤害}、@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，外加无法恢复的[[/r {1d4}]]{1d4伤害}，直到目标解渴 (1轮)</p>\n<p><strong>阶段2</strong> 如同阶段1 (1小时)</p>"
+					"description": "<p>中毒的生物会感觉生物非常口渴，在中毒时无法解渴；</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21|traits:poison]</p>\n<p><strong>最大持续时间</strong> 4小时</p>\n<p><strong>阶段1</strong> [[/r (1d4)[poison]]]{1d4毒素伤害}、@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，外加无法恢复的[[/r (1d4}]]{1d4伤害}，直到目标解渴 (1轮)</p>\n<p><strong>阶段2</strong> 如同阶段1 (1小时)</p>"
 				},
 				"Najra Swarm Attack":{
 					"name": "纳杰拉集群攻击 Najra Swarm Attack",
@@ -1548,7 +1548,7 @@
 			"items":{
 				"strike-Lesser Alchemist's Fire":{
 					"name": "次等炽火胶 Lesser Alchemist's Fire",
-					"description": "<p>[[/r {1}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r {1}[splash,fire]]]{1火焰溅射伤害}</p>"
+					"description": "<p>[[/r (1)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>\n<p>[[/r (1)[splash,fire]]]{1火焰溅射伤害}</p>"
 				},
 				"Goblin Scuttle":{
 					"name": "哥布林快跑 Goblin Scuttle",
@@ -1567,7 +1567,7 @@
 			"items":{
 				"Combustible":{
 					"name": "易燃 Combustible",
-					"description": "<p>罐中畸胎第一次受到火焰伤害时，它的烟雾会燃烧，对其窒息烟雾灵光内的所有其他生物造成[[/r {5}[fire]]]{5火焰伤害}。</p>"
+					"description": "<p>罐中畸胎第一次受到火焰伤害时，它的烟雾会燃烧，对其窒息烟雾灵光内的所有其他生物造成[[/r (5)[fire]]]{5火焰伤害}。</p>"
 				},
 				"Suffocating Fumes":{
 					"name": "窒息烟雾 Suffocating Fumes",
@@ -1588,7 +1588,7 @@
 			"items":{
 				"Pitfall and Plunger":{
 					"name": "陷坑与液压 Pitfall and Plunger",
-					"description": "<p><strong>触发</strong> 一个生物走到活板门上；</p>\n<hr />\n<p><strong>效果</strong> 离房间北墙10 尺以内的人都从滑道坠落40尺到<strong>E33</strong>区，受到[[/r {20}[bludgeoning]]]{20钝击伤害}，坠落在赭冻怪的坑里。</p>\n<p>受害者可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}以避免掉落。</p>\n<p>抓住边缘动作的DC是20，@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}墙壁动作的DC是22。</p>"
+					"description": "<p><strong>触发</strong> 一个生物走到活板门上；</p>\n<hr />\n<p><strong>效果</strong> 离房间北墙10 尺以内的人都从滑道坠落40尺到<strong>E33</strong>区，受到[[/r (20)[bludgeoning]]]{20钝击伤害}，坠落在赭冻怪的坑里。</p>\n<p>受害者可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}以避免掉落。</p>\n<p>抓住边缘动作的DC是20，@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}墙壁动作的DC是22。</p>"
 				}
 			}
 		},
@@ -1626,7 +1626,7 @@
 				},
 				"Stone Robes":{
 					"name": "石袍 Stone Robes",
-					"description": "<p>前程者雕像突然转身，导致尽管它的长袍像石头一样坚硬，但还是像织物一样流动，伤害对手。</p>\n<p>与活化雕像相邻的生物会遭受[[/r {2d6+6}[bludgeoning]]]{2d6+6钝击伤害}（@Check[type:reflex|dc:25|basic:true]豁免；在大失败时，该生物同时被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}）。</p>"
+					"description": "<p>前程者雕像突然转身，导致尽管它的长袍像石头一样坚硬，但还是像织物一样流动，伤害对手。</p>\n<p>与活化雕像相邻的生物会遭受[[/r (2d6+6)[bludgeoning]]]{2d6+6钝击伤害}（@Check[type:reflex|dc:25|basic:true]豁免；在大失败时，该生物同时被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}）。</p>"
 				}
 			}
 		},
@@ -1661,7 +1661,7 @@
 				},
 				"Forced Regeneration":{
 					"name": "强制再生 Forced Regeneration",
-					"description": "<p><strong>需求</strong> 狂蜥人的再生能力当前可用；</p>\n<hr />\n<p>狂蜥人回复[[/r {20}[healing]]]HP。</p>"
+					"description": "<p><strong>需求</strong> 狂蜥人的再生能力当前可用；</p>\n<hr />\n<p>狂蜥人回复[[/r (20)[healing]]]HP。</p>"
 				},
 				"Furious Wallop":{
 					"name": "绝技猛突 Furious Wallop",
@@ -1692,7 +1692,7 @@
 			"items":{
 				"Collapse":{
 					"name": "塌陷 Collapse",
-					"description": "<p><strong>触发</strong> 一个生物碰到了隔间里的镰刀；</p>\n<hr />\n<p><strong>效果</strong> 隔间上方沉重的砖块塌陷，镰刀完好无损，但对触发生物造成[[/r {4d6+10}[bludgeoning]]]{4d6+10钝击伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物碰到了隔间里的镰刀；</p>\n<hr />\n<p><strong>效果</strong> 隔间上方沉重的砖块塌陷，镰刀完好无损，但对触发生物造成[[/r (4d6+10)[bludgeoning]]]{4d6+10钝击伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1711,7 +1711,7 @@
 				},
 				"Throw Shadow Blade":{
 					"name": "掷出暗影匕首 Throw Shadow Blade",
-					"description": "<p><strong>需求</strong> 斯喀忒卡持握着一个匕首；</p>\n<hr />\n<p><strong>效果</strong> 斯喀忒卡用匕首的刃划出一道暗影沟壑，并将其挥向一个附近的敌人。斯喀忒卡以匕首进行一次远程打击，具有30尺的射程增量。</p>\n<p>如果打击命中，会造成[[/r {8d6}[cold]]]{8d6寒冷伤害}（大成功则伤害翻倍），并且目标必须成功通过@Check[type:fortitude|dc:32]豁免，否则直到其下回合结束获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（大失败则持续[[/br 1d4 #rounds]]{1d4轮}）。</p>\n<p>当攻击结束时，匕首不再具有幽影魔法的效应。</p>"
+					"description": "<p><strong>需求</strong> 斯喀忒卡持握着一个匕首；</p>\n<hr />\n<p><strong>效果</strong> 斯喀忒卡用匕首的刃划出一道暗影沟壑，并将其挥向一个附近的敌人。斯喀忒卡以匕首进行一次远程打击，具有30尺的射程增量。</p>\n<p>如果打击命中，会造成[[/r (8d6)[cold]]]{8d6寒冷伤害}（大成功则伤害翻倍），并且目标必须成功通过@Check[type:fortitude|dc:32]豁免，否则直到其下回合结束获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（大失败则持续[[/br 1d4 #rounds]]{1d4轮}）。</p>\n<p>当攻击结束时，匕首不再具有幽影魔法的效应。</p>"
 				}
 			}
 		},
@@ -1761,7 +1761,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r {1d4+4}[bludgeoning]]]{1d4+4钝击伤害}、@Check[type:fortitude|dc:16|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>[[/r (1d4+4)[bludgeoning]]]{1d4+4钝击伤害}、@Check[type:fortitude|dc:16|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Control Body":{
 					"name": "控制尸体 Control Body",
@@ -1820,7 +1820,7 @@
 				},
 				"Overwhelming Anguish":{
 					"name": "痛苦淹没 Overwhelming Anguish",
-					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 围城碎片发射一道让人迷惑的精神能量波。15尺内的所有生物受到[[/r {4d6}[mental]]]{4d6心灵伤害}（@Check[type:will|dc:20|basic:true]豁免）。 </p>"
+					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 围城碎片发射一道让人迷惑的精神能量波。15尺内的所有生物受到[[/r (4d6)[mental]]]{4d6心灵伤害}（@Check[type:will|dc:20|basic:true]豁免）。 </p>"
 				},
 				"Rejuvenation":{
 					"name": "复生 Rejuvenation",
@@ -1848,7 +1848,7 @@
 			"items":{
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
-					"description": "<p>皮锯杀手对@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物造成[[/r {1d6}[precision]]]{1d6额外精准伤害}。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>皮锯杀手对@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物造成[[/r (1d6)[precision]]]{1d6额外精准伤害}。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				},
 				"Twin Takedown":{
 					"name": "双重攻击 Twin Takedown",
@@ -1876,7 +1876,7 @@
 				},
 				"Quick Stitch":{
 					"name": "快速缝纫 Quick Stitch",
-					"description": "<p><strong>需求</strong> 皮锯缝纫师正擒拿一个生物；</p>\n<hr />\n<p><strong>效果</strong> 缝纫师把一块布缝在他的手臂、脸或腿上，这可能会造成阻碍。该生物必须尝试@Check[type:reflex|dc:26|traits:damaging-effect]豁免；如果缝纫师在过去一分钟内成功对其使用过剥皮能力，那么该生物的豁免结果向更差偏移一阶。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到[[/r {1d4}[piercing]]]{1d4穿刺伤害}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}、@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}、@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}或@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (由缝纫师选择)。这个效果持续到该生物花费一个动作把针线扯下来，这将造成[[/r {1d6}[piercing]]]{1d6穿刺伤害}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}、@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}、@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}或措手不及 (由缝纫师选择）。这个效果持续到该生物花费两个动作把针线扯下来，这将造成[[/r {2d6}[piercing]]]{2d6穿刺伤害}。</p>"
+					"description": "<p><strong>需求</strong> 皮锯缝纫师正擒拿一个生物；</p>\n<hr />\n<p><strong>效果</strong> 缝纫师把一块布缝在他的手臂、脸或腿上，这可能会造成阻碍。该生物必须尝试@Check[type:reflex|dc:26|traits:damaging-effect]豁免；如果缝纫师在过去一分钟内成功对其使用过剥皮能力，那么该生物的豁免结果向更差偏移一阶。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到[[/r (1d4)[piercing]]]{1d4穿刺伤害}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}、@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}、@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}或@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (由缝纫师选择)。这个效果持续到该生物花费一个动作把针线扯下来，这将造成[[/r (1d6)[piercing]]]{1d6穿刺伤害}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}、@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}、@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}或措手不及 (由缝纫师选择）。这个效果持续到该生物花费两个动作把针线扯下来，这将造成[[/r (2d6)[piercing]]]{2d6穿刺伤害}。</p>"
 				}
 			}
 		},
@@ -1897,11 +1897,11 @@
 				},
 				"Flay":{
 					"name": "剥皮 Flay",
-					"description": "<p>缝皮迅兽对一个动物或类人生物进行一次利刃打击。一旦成功，缝皮迅兽能从目标身上撕下一长条皮肤来。如果缝皮迅兽造成伤害，则额外造成[[/r {1d6+4}[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>"
+					"description": "<p>缝皮迅兽对一个动物或类人生物进行一次利刃打击。一旦成功，缝皮迅兽能从目标身上撕下一长条皮肤来。如果缝皮迅兽造成伤害，则额外造成[[/r (1d6+4)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>"
 				},
 				"Skitterstitch Venom":{
 					"name": "缝皮迅兽毒液 Skitterstitch Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|traits:poison]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r {1d10}[poison]]]{1d10毒素伤害}、@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d10}[poison]]]{1d10毒素伤害}、措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|traits:poison]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10毒素伤害}、@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d10)[poison]]]{1d10毒素伤害}、措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
 				},
 				"Stitch Skin":{
 					"name": "缝皮 Stitch Skin",
@@ -1995,7 +1995,7 @@
 				},
 				"Bone Drink":{
 					"name": "饮骨 Bone Drink",
-					"description": "<p><strong>需求</strong> 一个生物被手之目擒抱或束缚；</p>\n<hr />\n<p><strong>效果</strong> 手之目对被它擒抱或束缚的生物进行一次啃咬打击。如果打击命中，目标必须通过一次@Check[type:fortitude|dc:18]检定否则陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，如果目标已经陷入流失状态则状态值+1，最大达到流失4。</p>\n<p>每次成功使用该能力，手之目恢复[[/r {1d8}[healing]]]{1d8生命值}。</p>"
+					"description": "<p><strong>需求</strong> 一个生物被手之目擒抱或束缚；</p>\n<hr />\n<p><strong>效果</strong> 手之目对被它擒抱或束缚的生物进行一次啃咬打击。如果打击命中，目标必须通过一次@Check[type:fortitude|dc:18]检定否则陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，如果目标已经陷入流失状态则状态值+1，最大达到流失4。</p>\n<p>每次成功使用该能力，手之目恢复[[/r (1d8)[healing]]]{1d8生命值}。</p>"
 				},
 				"Burst of Speed":{
 					"name": "速度爆发 Burst of Speed",
@@ -2022,11 +2022,11 @@
 				},
 				"Impale":{
 					"name": "刺穿 Impale",
-					"description": "<p><strong>需求</strong> 三角象擒抱一个目标；</p>\n<hr />\n<p><strong>效果</strong> 三角象用额头上的角猛击目标。目标必须成功尝试一次@Check[type:reflex|dc:27|basic:true]豁免，否则受到[[/r {3d6+9}[piercing]]]{3d6+9穿刺伤害}和@Localize[PF2E.PersistentDamage.Bleed1d6.success]（大失败则受到[[/r {6d6+18}[piercing]]]{6d6+18穿刺伤害}）。</p>"
+					"description": "<p><strong>需求</strong> 三角象擒抱一个目标；</p>\n<hr />\n<p><strong>效果</strong> 三角象用额头上的角猛击目标。目标必须成功尝试一次@Check[type:reflex|dc:27|basic:true]豁免，否则受到[[/r (3d6+9)[piercing]]]{3d6+9穿刺伤害}和@Localize[PF2E.PersistentDamage.Bleed1d6.success]（大失败则受到[[/r (6d6+18)[piercing]]]{6d6+18穿刺伤害}）。</p>"
 				},
 				"Psychokinetic Trumpet":{
 					"name": "灵能尖啸 Psychokinetic Trumpet",
-					"description": "<p>三角象对@Template[type:cone|distance:30]范围发出一阵刺耳的尖啸，造成[[/r {8d8}[mental]]]{8d8心灵伤害}（@Check[type:will|dc:27|basic:true]豁免）。豁免失败的生物还会被推离15尺（大失败则为30 尺）。</p>\n<p>如果被推离的生物撞上固体障碍，还会受到[[/r {3d6}[bludgeoning]]]{3d6钝击伤害}并且停住。</p>\n<p>三角象在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用灵能尖啸。</p>"
+					"description": "<p>三角象对@Template[type:cone|distance:30]范围发出一阵刺耳的尖啸，造成[[/r (8d8)[mental]]]{8d8心灵伤害}（@Check[type:will|dc:27|basic:true]豁免）。豁免失败的生物还会被推离15尺（大失败则为30 尺）。</p>\n<p>如果被推离的生物撞上固体障碍，还会受到[[/r (3d6)[bludgeoning]]]{3d6钝击伤害}并且停住。</p>\n<p>三角象在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用灵能尖啸。</p>"
 				},
 				"Trample":{
 					"name": "践踏 Trample",
@@ -2156,7 +2156,7 @@
 				},
 				"Engulf":{
 					"name": "包卷 Engulf",
-					"description": "<p>@Check[type:reflex|dc:23|traits:damaging-effect], [[/r {2d8+9}[acid]]]{2d8+9酸液伤害}，逃脱DC 23，破裂14 (金属化时为19)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+					"description": "<p>@Check[type:reflex|dc:23|traits:damaging-effect], [[/r (2d8+9)[acid]]]{2d8+9酸液伤害}，逃脱DC 23，破裂14 (金属化时为19)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
 				},
 				"Form Tool":{
 					"name": "变成工具 Form Tool",
@@ -2224,7 +2224,7 @@
 				},
 				"Bloody Sneak Attack":{
 					"name": "嗜血偷袭 Bloody Sneak Attack",
-					"description": "<p>@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}的生物在面对剥皮人的攻击时视作措手不及。当剥皮人攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物时，剥皮人造成额外[[/r {2d6}[precision]]]{2d6精准伤害}。</p>"
+					"description": "<p>@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}的生物在面对剥皮人的攻击时视作措手不及。当剥皮人攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物时，剥皮人造成额外[[/r (2d6)[precision]]]{2d6精准伤害}。</p>"
 				},
 				"Chain Expert":{
 					"name": "刺链专家 Chain Expert",
