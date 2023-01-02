@@ -35,7 +35,7 @@
         },
         "Anadi Venom": {
             "name": "半蛛人毒液 Anadi Venom",
-            "description": "<p><strong>频率</strong> 每天等同你等级的次数</p>\n<hr />\n<p>你将毒液注满你的尖牙。若你回合结束前下个尖牙攻击命中并造成伤害，该攻击额外造成 [[/r (1d6}[poison]]]{1d6毒素伤害}。若大失败，毒液视同被使用了。12级时毒素伤害增加到2d6。</p>\n<p>[[/r (1+(floor(@actor.level/12)))d6 #poison]]{Levelled} poison damage</p>"
+            "description": "<p><strong>频率</strong> 每天等同你等级的次数</p>\n<hr />\n<p>你将毒液注满你的尖牙。若你回合结束前下个尖牙攻击命中并造成伤害，该攻击额外造成 [[/r (1d6)[poison]]]{1d6毒素伤害}。若大失败，毒液视同被使用了。12级时毒素伤害增加到2d6。</p>\n<p>[[/r (1+(floor(@actor.level/12)))d6 #poison]]{Levelled} poison damage</p>"
         },
         "Anchor": {
             "name": "深扎 Anchor",
@@ -75,7 +75,7 @@
         },
         "Barbed Quills": {
             "name": "带刺羽尖 Barbed Quills",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r (1d8}[piercing]]]{1d8穿刺伤害}（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1}[persistent,bleed]]]{按等级计算的} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r (1d8)[piercing]]]{1d8穿刺伤害}（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[persistent,bleed]]]{按等级计算的} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
@@ -91,7 +91,7 @@
         },
         "Blizzard Evasion": {
             "name": "暴雪回避 Blizzard Evasion",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你从单次攻击受到40点或以上的物理伤害</p>\n<hr />\n<p><strong>效果</strong> 你解体成旋转的暴风雪，最多持续3轮。在此期间，你获得10点物理伤害抗力和力场伤害+10的弱点。你获得飞行速度40尺，但你唯一能采取的动作是@UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Fly}。每轮首次你在解体时进入另一个生物的空间，或一个生物首次进入你的空间时，该生物受到[[/r (4d8}[cold]]]{4d8寒冷伤害}，并且必须成功通过一次强韧豁免来对抗你的职业DC或法术DC，取其高者，否则陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。在你的回合开始时，你能以一个自由动作结束此效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.JF2xCqL6t4UJZtUi]{效果: 暴雪回避}</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你从单次攻击受到40点或以上的物理伤害</p>\n<hr />\n<p><strong>效果</strong> 你解体成旋转的暴风雪，最多持续3轮。在此期间，你获得10点物理伤害抗力和力场伤害+10的弱点。你获得飞行速度40尺，但你唯一能采取的动作是@UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Fly}。每轮首次你在解体时进入另一个生物的空间，或一个生物首次进入你的空间时，该生物受到[[/r (4d8)[cold]]]{4d8寒冷伤害}，并且必须成功通过一次强韧豁免来对抗你的职业DC或法术DC，取其高者，否则陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。在你的回合开始时，你能以一个自由动作结束此效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.JF2xCqL6t4UJZtUi]{效果: 暴雪回避}</p>"
         },
         "Board": {
             "name": "搭乘 Board",
@@ -111,59 +111,59 @@
         },
         "Breath Weapon (Acid) (Cone)": {
             "name": "喷吐武器(酸液锥形) Breath Weapon (Acid) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Acid) (Line)": {
             "name": "喷吐武器(酸液线形) Breath Weapon (Acid) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6}[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6)[acid]]]{1d6酸液伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Cone)": {
             "name": "喷吐武器(寒冷锥形) Breath Weapon (Cold) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Line)": {
             "name": "喷吐武器(寒冷线形) Breath Weapon (Cold) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6}[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6)[cold]]]{1d6寒冷伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Cone)": {
             "name": "喷吐武器(电击锥形) Breath Weapon (Electricity) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Line)": {
             "name": "喷吐武器(电击线形) Breath Weapon (Electricity) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[/r {1d6}[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[/r {1d6)[electricity]]]{1d6电击伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Cone)": {
             "name": "喷吐武器(火焰锥形) Breath Weapon (Fire) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Line)": {
             "name": "喷吐武器(火焰线形) Breath Weapon (Fire) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6}[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6)[fire]]]{1d6火焰伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Cone)": {
             "name": "喷吐武器(负能量锥形) Breath Weapon (Negative) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Line)": {
             "name": "喷吐武器(负能量线形) Breath Weapon (Negative) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6}[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6)[negative]]]{1d6负能量伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Cone)": {
             "name": "喷吐武器(穿刺锥形) Breath Weapon (Piercing) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Line)": {
             "name": "喷吐武器(穿刺线形) Breath Weapon (Piercing) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6}[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6)[piercing]]]{1d6穿刺伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Cone)": {
             "name": "喷吐武器(毒素锥形) Breath Weapon (Poison) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6}[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r (1d6)[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Line)": {
             "name": "喷吐武器(毒素线形) Breath Weapon (Poison) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6}[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r (1d6)[poison]]]{1d6毒素伤害}，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Bullet Dancer Stance": {
             "name": "弹舞架式 Bullet Dancer Stance",
@@ -395,11 +395,11 @@
         },
         "Encouraging Words": {
             "name": "信心喊话 Encouraging Words",
-            "description": "<p><strong>Prerequisites</strong> Trained in Diplomacy</p>\n<p><strong>需求</strong> The target ally lost Stamina Points within the last round</p>\n<hr />\n<p>You give an ally within 30 feet a quick pep talk, helping them recover. Attempt a Diplomacy check. The DC is usually 15, though the GM might adjust it based on the circumstances. If you have expert proficiency in Diplomacy, you can instead attempt a DC 20 check to increase the Stamina Points recovered by 5; if you have master proficiency, you can attempt a DC 30 check to increase the Stamina Points by 15; if you have legendary proficiency, you can attempt a DC 40 check to increase the Stamina Points by 25. No matter the result, the ally is temporarily immune to Encouraging Words until they either @UUID[Compendium.pf2e.actionspf2e.qc0VsZ0UesnurUUB]{Take a Breather} or rest for the day.</p>\n<hr />\n<p><strong>大成功</strong> The ally recovers [[/r (2d8} #Stamina Points]]{2d8 Stamina Points}.</p>\n<p><strong>成功</strong> The ally recovers [[/r (1d8} #Stamina Points]]{1d8 Stamina Points}.</p>\n<p><strong>大失败</strong> The ally takes [[/r (1d8}[mental]]]{1d8 mental伤害}, but this can reduce only Stamina Points, never Hit Points.</p>"
+            "description": "<p><strong>Prerequisites</strong> Trained in Diplomacy</p>\n<p><strong>需求</strong> The target ally lost Stamina Points within the last round</p>\n<hr />\n<p>You give an ally within 30 feet a quick pep talk, helping them recover. Attempt a Diplomacy check. The DC is usually 15, though the GM might adjust it based on the circumstances. If you have expert proficiency in Diplomacy, you can instead attempt a DC 20 check to increase the Stamina Points recovered by 5; if you have master proficiency, you can attempt a DC 30 check to increase the Stamina Points by 15; if you have legendary proficiency, you can attempt a DC 40 check to increase the Stamina Points by 25. No matter the result, the ally is temporarily immune to Encouraging Words until they either @UUID[Compendium.pf2e.actionspf2e.qc0VsZ0UesnurUUB]{Take a Breather} or rest for the day.</p>\n<hr />\n<p><strong>大成功</strong> The ally recovers [[/r (2d8} #Stamina Points]]{2d8 Stamina Points}.</p>\n<p><strong>成功</strong> The ally recovers [[/r (1d8} #Stamina Points]]{1d8 Stamina Points}.</p>\n<p><strong>大失败</strong> The ally takes [[/r (1d8)[mental]]]{1d8 mental伤害}, but this can reduce only Stamina Points, never Hit Points.</p>"
         },
         "Energy Emanation": {
             "name": "能量爆发 Energy Emanation",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>能量从你身体中爆发出来。你对所有邻接生物造成[[/r {1d6}]]{1d6点所选类型伤害}（基础反射豁免，在你的职业DC和法术DC中取较高的一个）。3级和之后每2级，伤害增加[[/r {1d6}]]{1d6点}。</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>能量从你身体中爆发出来。你对所有邻接生物造成[[/r (1d6}]]{1d6点所选类型伤害}（基础反射豁免，在你的职业DC和法术DC中取较高的一个）。3级和之后每2级，伤害增加[[/r (1d6}]]{1d6点}。</p>"
         },
         "Energy Shot": {
             "name": "能量射击 Energy Shot",
@@ -487,7 +487,7 @@
         },
         "Goblin Jubilee": {
             "name": "地精狂欢 Goblin Jubilee",
-            "description": "<p><strong>开销</strong> 3剂灌注试剂</p>\n<hr />\n<p><strong>效果</strong> 120尺范围内的@Template[type:burst|distance:20]{半径20尺爆发}区域中充满了混乱。所有此区域内的生物会承受[[/r (3d6}[fire] + (3d6}[sonic]]]{3d6点火焰伤害以及3d6点音波伤害}，并且必须尝试一次强韧豁免。地精狂欢消耗3剂灌注试剂而非1剂。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，持续至其下个回合结束为止，并且会承受半额伤害。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，持续1分钟并承受全额伤害。</p>\n<p><strong>大失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，陷入持续1分钟的@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，并且承受双倍伤害。</p>"
+            "description": "<p><strong>开销</strong> 3剂灌注试剂</p>\n<hr />\n<p><strong>效果</strong> 120尺范围内的@Template[type:burst|distance:20]{半径20尺爆发}区域中充满了混乱。所有此区域内的生物会承受[[/r (3d6)[fire] + (3d6)[sonic]]]{3d6点火焰伤害以及3d6点音波伤害}，并且必须尝试一次强韧豁免。地精狂欢消耗3剂灌注试剂而非1剂。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，持续至其下个回合结束为止，并且会承受半额伤害。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，持续1分钟并承受全额伤害。</p>\n<p><strong>大失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，陷入持续1分钟的@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，并且承受双倍伤害。</p>"
         },
         "Grab an Edge": {
             "name": "抓住边缘 Grab an Edge",
@@ -563,7 +563,7 @@
         },
         "Iron Command": {
             "name": "残酷纪律 Iron Command",
-            "description": "<p><strong>触发</strong> 一个敌人伤害了你，并且他在你周围15尺的范围内。</p>\n<hr />\n<p><strong>效果</strong> 你让那个胆敢冒犯伤害你的敌人认清自己的身分。你命令你的敌人向你跪拜，向你臣服。如果他们胆坦拒绝，他们必须付出痛苦和折磨的代价。敌人必须选择下面一种效果： </p>\n<ul>\n<li>敌人跪拜，用一个自由动作进入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n<li>敌人拒绝，你对他造成[[/r (1d6}[mental]]]{1d6心灵伤害}。伤害5级变成[[/r (2d6}[mental]]]{2d6心灵伤害}、9级变成[[/r (3d6}[mental]]]{3d6心灵伤害} 、12级变成[/r {4d6}[mental]]]{4d6心灵伤害}、16级变成[[/r (5d6}[mental]]]{5d6心灵伤害}， 19级变成[[/r (6d6}[mental]]]{6d6心灵伤害}。</li>\n</ul>\n<p>此外，直到你下一回合结束，你对触发生物的打击额外造成[[/r (1}]]{1点伤害}。你每次使用这个反应动作都要选择伤害类型是邪恶还是负能量。9级时这个额外伤害变成[[/r (2}]]{2点伤害}，16级变成[[/r (3}]]{3点伤害}。</p>"
+            "description": "<p><strong>触发</strong> 一个敌人伤害了你，并且他在你周围15尺的范围内。</p>\n<hr />\n<p><strong>效果</strong> 你让那个胆敢冒犯伤害你的敌人认清自己的身分。你命令你的敌人向你跪拜，向你臣服。如果他们胆坦拒绝，他们必须付出痛苦和折磨的代价。敌人必须选择下面一种效果： </p>\n<ul>\n<li>敌人跪拜，用一个自由动作进入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n<li>敌人拒绝，你对他造成[[/r (1d6)[mental]]]{1d6心灵伤害}。伤害5级变成[[/r (2d6)[mental]]]{2d6心灵伤害}、9级变成[[/r (3d6)[mental]]]{3d6心灵伤害} 、12级变成[/r {4d6)[mental]]]{4d6心灵伤害}、16级变成[[/r (5d6)[mental]]]{5d6心灵伤害}， 19级变成[[/r (6d6)[mental]]]{6d6心灵伤害}。</li>\n</ul>\n<p>此外，直到你下一回合结束，你对触发生物的打击额外造成[[/r (1}]]{1点伤害}。你每次使用这个反应动作都要选择伤害类型是邪恶还是负能量。9级时这个额外伤害变成[[/r (2}]]{2点伤害}，16级变成[[/r (3}]]{3点伤害}。</p>"
         },
         "Jinx": {
             "name": "霉运招来 Jinx",
@@ -735,7 +735,7 @@
         },
         "Rally": {
             "name": "振励 Rally",
-            "description": "<p><strong>先决条件</strong> 交涉、威吓或表演技能受训</p>\n<hr />\n<p>你花1分钟鼓励你的盟友。虽然此行动通常有听觉与语言特征，若你以表演技能执行此行动，则GM可调整该次行动的特征使之符合你的表演类型的特征。</p>\n<p>进行DC15的技能检定。GM可依照情境调整此DC，例如试图振励才刚刚屈辱大败的盟友。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>成功</strong> 你可持续鼓励该盟友直到耗时满10分钟。若你如此做，则该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>大失败</strong> 该盟友承受[[/r (1d8}[mental]]]{1d8心灵伤害}，此伤害只会扣减耐力值，永不影响生命值。</p>"
+            "description": "<p><strong>先决条件</strong> 交涉、威吓或表演技能受训</p>\n<hr />\n<p>你花1分钟鼓励你的盟友。虽然此行动通常有听觉与语言特征，若你以表演技能执行此行动，则GM可调整该次行动的特征使之符合你的表演类型的特征。</p>\n<p>进行DC15的技能检定。GM可依照情境调整此DC，例如试图振励才刚刚屈辱大败的盟友。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>成功</strong> 你可持续鼓励该盟友直到耗时满10分钟。若你如此做，则该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>大失败</strong> 该盟友承受[[/r (1d8)[mental]]]{1d8心灵伤害}，此伤害只会扣减耐力值，永不影响生命值。</p>"
         },
         "Rampaging Ferocity": {
             "name": "决死蛮勇 Rampaging Ferocity",
@@ -827,7 +827,7 @@
         },
         "Salt Wound": {
             "name": "伤口涂盐 Salt Wound",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个有血液，且生命值不满的生物以近战攻击击中你</p>\n<hr />\n<p><strong>效果</strong> 你将你血液中的盐和盐水导入该生物的伤口。该生物必须尝试进行对抗你的等级DC或法术DC（以较高者为准）的@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免。如果失败，该生物会受到[[/r (1d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}，并因疼痛而受到@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。在大失败的情况下，它将受到[[/r (2d6}[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}，并@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个有血液，且生命值不满的生物以近战攻击击中你</p>\n<hr />\n<p><strong>效果</strong> 你将你血液中的盐和盐水导入该生物的伤口。该生物必须尝试进行对抗你的等级DC或法术DC（以较高者为准）的@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免。如果失败，该生物会受到[[/r (1d6)[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}，并因疼痛而受到@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。在大失败的情况下，它将受到[[/r (2d6)[persistent,acid]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}，并@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
         },
         "Scout": {
             "name": "侦察 Scout",
@@ -887,7 +887,7 @@
         },
         "Siegebreaker": {
             "name": "爆射破围 Siegebreaker",
-            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r (3d8}[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这两个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@UUID[Compendium.pf2e.actionspf2e.Bcxarzksqt9ezrs6]{行走 Stride}或@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r (3d8)[bludgeoning]]]{3d8的钝击伤害}并且无视物体10点硬度（如有），如果目标使用@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这两个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
         },
         "Smoke Blending": {
             "name": "融身于烟 Smoke Blending",
@@ -1015,7 +1015,7 @@
         },
         "Toxic Skin": {
             "name": "毒性皮肤 Toxic Skin",
-            "description": "<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 一个生物接触了你，比如擒抱了你，用无武装攻击成功命中你，或对你使用接触射程的法术。</p>\n<hr />\n<p>你释放一种致命的毒素。触发生物受到[[/r (1d4}[poison]]]{1d4毒素伤害}（@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison]豁免使用你的职业DC或法术DC，取两者较高一项）。在3级以及此后每升2级，伤害增加1d4。</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{按等级计算的}毒素伤害</p>"
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 一个生物接触了你，比如擒抱了你，用无武装攻击成功命中你，或对你使用接触射程的法术。</p>\n<hr />\n<p>你释放一种致命的毒素。触发生物受到[[/r (1d4)[poison]]]{1d4毒素伤害}（@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison]豁免使用你的职业DC或法术DC，取两者较高一项）。在3级以及此后每升2级，伤害增加1d4。</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{按等级计算的}毒素伤害</p>"
         },
         "Track": {
             "name": "追踪 Track",
@@ -1035,7 +1035,7 @@
         },
         "Trip": {
             "name": "摔绊 Trip",
-            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个 <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至 @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} 状态，并承受 [[/r (1d6}[bludgeoning]]]{1d6点钝击伤害。}。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
+            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个 <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至 @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} 状态，并承受 [[/r (1d6)[bludgeoning]]]{1d6点钝击伤害。}。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
         },
         "Tumble Through": {
             "name": "翻滚 Tumble Through",
@@ -1203,7 +1203,7 @@
         },
         "Psychometric Assessment": {
             "name": "心理测量评估 Psychometric Assessment",
-            "description": "<p><strong>需求</strong> 你的手正在触摸一个你检测到心理共鸣的物体</p>\n<hr />\n<p><strong>效果</strong> 你花费1分钟专注于该物体，以看到最初给该物体灌输这种情感的人的面容。如果相关情绪为痛苦的负面情绪，你可能会受到[[/r (1d6}[Mental]]]{1d6心灵伤害}，由GM裁定。</p>"
+            "description": "<p><strong>需求</strong> 你的手正在触摸一个你检测到心理共鸣的物体</p>\n<hr />\n<p><strong>效果</strong> 你花费1分钟专注于该物体，以看到最初给该物体灌输这种情感的人的面容。如果相关情绪为痛苦的负面情绪，你可能会受到[[/r (1d6)[Mental]]]{1d6心灵伤害}，由GM裁定。</p>"
         },
         "Steel Your Resolve": {
             "name": "破釜沉舟 Steel Your Resolve",
@@ -1315,7 +1315,7 @@
         },
         "Thermal Eruption": {
             "name": "活化火山 Thermal Eruption",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你专注于体内的热能并将其爆发而出。@Template[type:emanation|distance:20]范围内所有生物进行基础反射豁免骰受到[[/r (14d6}[fire]]]{14d6火焰伤害}。随后，直到你的下一次每日准备，你丧失所有休眠火山专长的效果。</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你专注于体内的热能并将其爆发而出。@Template[type:emanation|distance:20]范围内所有生物进行基础反射豁免骰受到[[/r (14d6)[fire]]]{14d6火焰伤害}。随后，直到你的下一次每日准备，你丧失所有休眠火山专长的效果。</p>"
         },
         "Water Transfer": {
             "name": "借水传送 Water Transfer",
@@ -1339,11 +1339,11 @@
         },
         "Wicked Thorns": {
             "name": "险恶棘刺 Wicked Thorns",
-            "description": "<p><strong>触发</strong> 你被无武装打击或非长触及近战武器打击命中。</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你的几根刺会折断并钩入攻击者的身体。你对触发的生物造成[[/r (1d8}[piercing]]]{1d8穿刺伤害}。这是一次对抗你的职业DC或法术DC中较高者的基础反射豁免。在大失败时，该生物还会因你的荆棘刺入它的血肉而受到[[/r (1d4}[persistent,bleed]]]{1d4} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>\n<p>在第3级和之后的每2级，此伤害增加1d8，并且持续穿刺伤害增加1。</p>\n<p>[[/r (floor(@actor.level/2)d8)[piercing]]]{按等级计算的穿刺伤害}</p>"
+            "description": "<p><strong>触发</strong> 你被无武装打击或非长触及近战武器打击命中。</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你的几根刺会折断并钩入攻击者的身体。你对触发的生物造成[[/r (1d8)[piercing]]]{1d8穿刺伤害}。这是一次对抗你的职业DC或法术DC中较高者的基础反射豁免。在大失败时，该生物还会因你的荆棘刺入它的血肉而受到[[/r (1d4)[persistent,bleed]]]{1d4} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>\n<p>在第3级和之后的每2级，此伤害增加1d8，并且持续穿刺伤害增加1。</p>\n<p>[[/r (floor(@actor.level/2)d8)[piercing]]]{按等级计算的穿刺伤害}</p>"
         },
         "Drive Them Down": {
             "name": "打爆他们 Drive Them Down",
-            "description": "<p>你的敌人不过是你用来打造和开启传奇之路的渣滓。使用组合武器进行一次近战打击，然后再进行一次远程打击，两次攻击需要以同一个敌人为目标；在进行两次攻击时，你不需要改变武器模式。如果近战攻击命中，你会在远程攻击时获得一个+1 环境加值。每次攻击都计入你的多重攻击罚值，但多重攻击罚值在你完成两次攻击前不会增加。如果两次攻击都命中，你会对敌人造成额外[[/r (2d6}[persistent,bleed]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，并且直到持续流血伤害结束，他们处于@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态。</p>"
+            "description": "<p>你的敌人不过是你用来打造和开启传奇之路的渣滓。使用组合武器进行一次近战打击，然后再进行一次远程打击，两次攻击需要以同一个敌人为目标；在进行两次攻击时，你不需要改变武器模式。如果近战攻击命中，你会在远程攻击时获得一个+1 环境加值。每次攻击都计入你的多重攻击罚值，但多重攻击罚值在你完成两次攻击前不会增加。如果两次攻击都命中，你会对敌人造成额外[[/r (2d6)[persistent,bleed]]]{2d6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，并且直到持续流血伤害结束，他们处于@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态。</p>"
         },
         "Spring the Trap": {
             "name": "落入圈套 Spring the Trap",

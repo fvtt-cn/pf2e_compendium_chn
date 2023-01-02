@@ -49,11 +49,11 @@
 		        },
 		        "Invoke Alocer":{
 		        	"name": "Invoke Alocer",
-		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r {3d6+7}[healing]]]{3d6+7生命值}, gains a fly speed of 25 feet, and deals an additional [[/r {1d6}[fire]]]{1d6火焰伤害} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r {3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3d6+7生命值}, gains a fly speed of 25 feet, and deals an additional [[/r (1d6)[fire]]]{1d6火焰伤害} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r (3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
 		        },
 		        "Cruel Shot":{
 		        	"name": "Cruel Shot",
-		        	"description": "<p>Auldegrund takes time to line up a shot with his bow and smiles cruelly as he makes a ranged Strike with it.</p>\n<p>If he hits, he deals [[/r {2d6}[precision]]]{2d6 precision damage} and @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Even if he misses, he still deals [[/r 2d6]] damage from the glancing blow. Only on a critical miss does his cruel shot deal no damage.</p>"
+		        	"description": "<p>Auldegrund takes time to line up a shot with his bow and smiles cruelly as he makes a ranged Strike with it.</p>\n<p>If he hits, he deals [[/r (2d6)[precision]]]{2d6 precision damage} and @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Even if he misses, he still deals [[/r 2d6]] damage from the glancing blow. Only on a critical miss does his cruel shot deal no damage.</p>"
 		        }
 			}
 		},
@@ -62,7 +62,7 @@
 			"hp": "每个水晶的HP",
 			"disable": "<p>@Check[type:thievery|dc:17] (受训)或@Check[type:occultism|dc:17] (受训)可以中断其中一个水晶上的魔法，或一名角色施放<em>@UUID[Compendium.pf2e.spells-srd.WILXkjU5Yq3yw10r]{反制表演 Counter Performance}</em>并通过@Check[type:performance|dc:20] (受训)来用声音将噪声重新导回到晶体内，或通过<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> （2环，反制DC18）来反制一个水晶。</span></p>",
 			"hazarddescription": "<p>桌子上那三个较大的晶体开始振动并发出迅速变响的声音。</p>",
-			"routine": "<p>（3 动作）每有一个晶体被解除或摧毁，危害便损失一个动作。在危害的每一个动作中，其中一个晶体都会向房间内某个单独的小型或更大体型的生物发射音爆。目标是随机决定的，其承受[[/r {1d8}[sonic]]]{1d8音波伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）；在此次豁免骰中大失败的目标将@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟。在危害的例行程序结束时，进行一次@Check[type:flat|dc:10|name:Destroy a Crystal]检定。在成功时，其中一个晶体将被粉碎、摧毁。</p>",
+			"routine": "<p>（3 动作）每有一个晶体被解除或摧毁，危害便损失一个动作。在危害的每一个动作中，其中一个晶体都会向房间内某个单独的小型或更大体型的生物发射音爆。目标是随机决定的，其承受[[/r (1d8)[sonic]]]{1d8音波伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）；在此次豁免骰中大失败的目标将@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟。在危害的例行程序结束时，进行一次@Check[type:flat|dc:10|name:Destroy a Crystal]检定。在成功时，其中一个晶体将被粉碎、摧毁。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
@@ -82,7 +82,7 @@
 			"items":{
 				"Exhale":{
 					"name": "喷气 Exhale",
-					"description": "<p><strong>触发</strong> 一个生物进入标记的区域，或待在房间里超过1分钟；</p>\n<hr />\n<p><strong>效果</strong> 陷阱喷射出冷气，笼罩范围为@Template[type:burst|distance:15]{15尺爆发}区域，以触发陷阱生物所在方格为中心。这将造成[[/r {4d8+18}[cold]]]{4d8+18寒冷}伤害（@Check[type:reflex|dc:24|basic:true|traits:cold,evocation,magical,trap,hazard]豁免），豁免大失败的生物将因冻伤而陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续10分钟。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入标记的区域，或待在房间里超过1分钟；</p>\n<hr />\n<p><strong>效果</strong> 陷阱喷射出冷气，笼罩范围为@Template[type:burst|distance:15]{15尺爆发}区域，以触发陷阱生物所在方格为中心。这将造成[[/r (4d8+18)[cold]]]{4d8+18寒冷}伤害（@Check[type:reflex|dc:24|basic:true|traits:cold,evocation,magical,trap,hazard]豁免），豁免大失败的生物将因冻伤而陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续10分钟。</p>"
 				}
 			}
 		},
@@ -98,7 +98,7 @@
 			"items":{
 				"Metabolize Mutagen":{
 					"name": "代谢突变剂 Metabolize Mutagen",
-					"description": "<p>达利斯代谢掉一份正在起作用的突变剂，并借此回复[[/r {2d6} #hit points]]{2d6生命值}。若他这样做（除此之外的一种情况是：他在有机会喝下突变剂之前便撞见了PC们的隐秘小队），他失去啃咬以及利爪无武装攻击，他在运动检定上的加值减少2点，他的AC增加1点，他的反射豁免加值增加2点。</p>"
+					"description": "<p>达利斯代谢掉一份正在起作用的突变剂，并借此回复[[/r (2d6} #hit points]]{2d6生命值}。若他这样做（除此之外的一种情况是：他在有机会喝下突变剂之前便撞见了PC们的隐秘小队），他失去啃咬以及利爪无武装攻击，他在运动检定上的加值减少2点，他的AC增加1点，他的反射豁免加值增加2点。</p>"
 				},
 				"Crystaline Mutation":{
 					"name": "晶化突变 Crystaline Mutation",
@@ -106,7 +106,7 @@
 				},
 				"Spray Hot Wax":{
 					"name": "喷洒热蜡 Spray Hot Wax",
-					"description": "<p>达利斯用他临时制作的热蜡喷洒器将灼热的熔蜡喷洒到一个@Template[type:cone|distance:15]范围内。该区域内的所有生物都必须尝试一次@Check[type:reflex|dc:20]豁免，该区域内的香烛人造人不会受到伤害，反之还能[[/r {2d6}[healing]]]{治愈其2d6所受伤害}。在使用完热蜡“加农炮”后，达利斯不能再继续使用它，直到他邻近冒泡的蜡锅并且采取两个交互动作来重新装填喷洒器。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物承受[[/r {2d6}[fire]]]{2d6火焰伤害}。</p>\n<p><strong>失败</strong> 生物承受[[/r {3d6}[fire]]]{3d6火焰伤害}和[[/r {1d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>\n<p><strong>大失败</strong> 生物承受[[/r {5d6}[fire]]]{5d6火焰伤害}和[[/r {2d6}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+					"description": "<p>达利斯用他临时制作的热蜡喷洒器将灼热的熔蜡喷洒到一个@Template[type:cone|distance:15]范围内。该区域内的所有生物都必须尝试一次@Check[type:reflex|dc:20]豁免，该区域内的香烛人造人不会受到伤害，反之还能[[/r (2d6)[healing]]]{治愈其2d6所受伤害}。在使用完热蜡“加农炮”后，达利斯不能再继续使用它，直到他邻近冒泡的蜡锅并且采取两个交互动作来重新装填喷洒器。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物承受[[/r (2d6)[fire]]]{2d6火焰伤害}。</p>\n<p><strong>失败</strong> 生物承受[[/r (3d6)[fire]]]{3d6火焰伤害}和[[/r (1d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>\n<p><strong>大失败</strong> 生物承受[[/r (5d6)[fire]]]{5d6火焰伤害}和[[/r (2d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
 				}
 			}
 		},
@@ -116,11 +116,11 @@
 			"items":{
 				"2sy1o06ck8XIlhfn":{
 					"name": "炽火胶 Alchemist's Fire",
-					"description": "<p>[[/r {2}[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}和[[/r {2}[splash,fire]]]{2火焰溅射伤害}</p>"
+					"description": "<p>[[/r (2)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}和[[/r (2)[splash,fire]]]{2火焰溅射伤害}</p>"
 				},
 				"csNqFPhBD3KDCIrl":{
 					"name": "瓶装闪电 Bottled Lightning",
-					"description": "<p>[[/r {2}[splash,electricity]]]{2电击溅射伤害}，目标直到你下回合开始前@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}</p>"
+					"description": "<p>[[/r (2)[splash,electricity]]]{2电击溅射伤害}，目标直到你下回合开始前@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}</p>"
 				},
 				"Reckless Toxin":{
 					"name": "鲁莽毒素 Reckless Toxin",
@@ -171,7 +171,7 @@
 				},
 				"Impaling Hook":{
 					"name": "Impaling Hook",
-					"description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes [[/r {1d10+10}[piercing]]]{1d10+10 piercing damage} from the agonizing wound.</p>"
+					"description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes [[/r (1d10+10)[piercing]]]{1d10+10 piercing damage} from the agonizing wound.</p>"
 				}
 			}
 		},
@@ -206,7 +206,7 @@
 				},
 				"Old Giant Wasp Venom":{
 					"name": "古老巨蜂毒 Old Giant Wasp Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r {2d6}[poison]]]{2d6毒素}伤害和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {3d6}[poison]]]{3d6毒素}伤害和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r {4d6}[poison]]]{4d6毒素}伤害和笨拙2 (1轮).</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:22]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素}伤害和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (3d6)[poison]]]{3d6毒素}伤害和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (4d6)[poison]]]{4d6毒素}伤害和笨拙2 (1轮).</p>"
 				}
 			}
 		},
@@ -239,7 +239,7 @@
 				},
 				"Crawfish Venom":{
 					"name": "Crawfish Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d6}[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮).</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6 poison damage} and @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮).</p>"
 				},
 				"Grab":{
 					"name": "攫抓 Grab",
@@ -253,7 +253,7 @@
 			"items":{
 				"Verdant Burst":{
 					"name": "翠绿绽放 Verdant Burst",
-					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r (2d8)[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
@@ -267,7 +267,7 @@
 			"items":{
 				"Verdant Burst":{
 					"name": "翠绿绽放 Verdant Burst",
-					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r (2d8)[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Bend Back":{
 					"name": "后弯 Bend Back",
@@ -293,7 +293,7 @@
 				},
 				"Verdant Burst":{
 					"name": "翠绿绽放 Verdant Burst",
-					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r (2d8)[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
@@ -307,7 +307,7 @@
 			"items":{
 				"Verdant Burst":{
 					"name": "翠绿绽放 Verdant Burst",
-					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r (2d8)[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
@@ -315,7 +315,7 @@
 				},
 				"Engulf":{
 					"name": "包卷 Engulf",
-					"description": "<p>@Check[type:reflex|dc:18], [[/r {1d6}[bludgeoning]+{1d6}[poison]]]{1d6钝击和1d6毒素伤害}, 逃脱DC 18, 破裂6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+					"description": "<p>@Check[type:reflex|dc:18], [[/r (1d6)[bludgeoning]+(1d6)[poison]]]{1d6钝击和1d6毒素伤害}, 逃脱DC 18, 破裂6</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
 				}
 			}
 		},
@@ -325,7 +325,7 @@
 			"items":{
 				"Verdant Burst":{
 					"name": "翠绿绽放 Verdant Burst",
-					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r {2d8}[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
+					"description": "<p>当一名莱西死亡时，一股原能将从他们的躯体内爆发开来，为@Template[type:emanation|distance:30]范围内的植物生物回复[[/r (2d8)[healing]]]{2d8生命值}。与此同时这一地区也将被与莱西相对应的同种植物所覆盖，从而成为困难地形，若此处地表并不适合这些植物生存，那么他们将会在24小时后枯萎。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
@@ -333,7 +333,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r {1d6+4}[bludgeoning]]]{1d6+4钝击}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>[[/r (1d6+4)[bludgeoning]]]{1d6+4钝击}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				}
 			}
 		},
@@ -347,7 +347,7 @@
 				},
 				"Hatred of Red":{
 					"name": "痛恨红色 Hatred of Red",
-					"description": "<p>恶欲妖痛恨红颜色。她不会穿红色的衣服，也不会自愿进入任何涂成红色的地方。如果可以选择，她会优先攻击身着红色的生物。</p>\n<p>如果通过蛮力或某些魔法效应禁止她表达自己对这种颜色的憎恶，她在回合结束时会承受[[/r {2d6}[mental]]]{2d6心灵伤害}。</p>"
+					"description": "<p>恶欲妖痛恨红颜色。她不会穿红色的衣服，也不会自愿进入任何涂成红色的地方。如果可以选择，她会优先攻击身着红色的生物。</p>\n<p>如果通过蛮力或某些魔法效应禁止她表达自己对这种颜色的憎恶，她在回合结束时会承受[[/r (2d6)[mental]]]{2d6心灵伤害}。</p>"
 				},
 				"Bubonic Plague":{
 					"name": "黑死病 Bubonic Plague",
@@ -380,7 +380,7 @@
 				},
 				"Enhanced Hunting Spider Venom":{
 					"name": "Enhanced Hunting Spider Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r {1d10}[poison]]]{1d10 poison damage} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r {1d12}[poison]]]{1d12 poison damage}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and flat-footed (1轮)</p>\n<p><strong>阶段3</strong> [[/r {2d6}[poison]]]{2d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, and flat-footed (1轮).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10 poison damage} and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12 poison damage}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and flat-footed (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, and flat-footed (1轮).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
 				}
 			}
 		},
@@ -393,7 +393,7 @@
 			"items":{
 				"Collapse":{
 					"name": "Collapse",
-					"description": "<p><strong>触发</strong> A creature attempts to climb or remove an object from the wall or the wall suffers a forceful impact</p>\n<hr />\n<p><strong>效果</strong> The wall collapses, dealing [[/r {2d8}[bludgeoning]]]{2d8 bludgeoning damage} to creatures on it or within 10 feet of it. A creature that succeeds at a @Check[type:reflex|dc:18|traits:damaging-effect] save takes half damage and rolls out of the way in a random direction. On a critical success, they take no damage and can choose the direction.</p>"
+					"description": "<p><strong>触发</strong> A creature attempts to climb or remove an object from the wall or the wall suffers a forceful impact</p>\n<hr />\n<p><strong>效果</strong> The wall collapses, dealing [[/r (2d8)[bludgeoning]]]{2d8 bludgeoning damage} to creatures on it or within 10 feet of it. A creature that succeeds at a @Check[type:reflex|dc:18|traits:damaging-effect] save takes half damage and rolls out of the way in a random direction. On a critical success, they take no damage and can choose the direction.</p>"
 				}
 			}
 		},
@@ -418,11 +418,11 @@
 			"items":{
 				"WrgYaUmRHEPgpUAn":{
 					"name": "蜡滴 Wax Glob",
-					"description": "<p>[[/r {1d4}[persistent,fire]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>"
+					"description": "<p>[[/r (1d4)[persistent,fire]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>"
 				},
 				"Master Link":{
 					"name": "系于其主 Master Link",
-					"description": "<p>一个人造人不能说话，但它与它的创造者间有心灵感应。它可以来回分享信息，包括主人的知识和人造人听到的一切。这个连接的距离是1500尺。人造人的阵营等同于它的创造者，并且完全忠于后者。如果人造人被摧毁，它的主人会受到[[/r {2d10}[mental]]]{2d10心灵伤害}。如果主人被杀死，人造人就会变为无心智生物，将它当前的位置据为巢穴，并本能地攻击任何靠近的人。</p>"
+					"description": "<p>一个人造人不能说话，但它与它的创造者间有心灵感应。它可以来回分享信息，包括主人的知识和人造人听到的一切。这个连接的距离是1500尺。人造人的阵营等同于它的创造者，并且完全忠于后者。如果人造人被摧毁，它的主人会受到[[/r (2d10)[mental]]]{2d10心灵伤害}。如果主人被杀死，人造人就会变为无心智生物，将它当前的位置据为巢穴，并本能地攻击任何靠近的人。</p>"
 				},
 				"Perfume Aura":{
 					"name": "香薰灵光 Perfume Aura",
@@ -430,7 +430,7 @@
 				},
 				"Dunk in Wax":{
 					"name": "浴蜡而生 Dunk in Wax",
-					"description": "<p>邻近大蜡锅的香烛人造人能够将自己浸泡在蜡中，[[/r {2d6}[healing]]]{治愈2d6所受伤害}。</p>"
+					"description": "<p>邻近大蜡锅的香烛人造人能够将自己浸泡在蜡中，[[/r (2d6)[healing]]]{治愈2d6所受伤害}。</p>"
 				}
 			}
 		},
