@@ -51,17 +51,17 @@
 			}
 		},
 		"Call of the Void": {
-			"name": "Call of the Void",
-			"disable": "<p>@Check[type:occultism|dc:34|name:Expel Magical Compulsion] or @Check[type:arcana|dc:36|name:Expel Magical Compulsion] to expel the magical compulsion from the current island and from any of the red ropes directly attached to it, darkening the rope in color. The Echo also automatically disables the hazard from any island he's standing on, and any of the red ropes directly attached to it, when he Reconstitutes from Thought on that island.</p>",
-			"hazarddescription": "<p>A supernatural compulsion to leap into the unknown exerts itself on anyone who approaches the ledge.</p>",
-			"reset": "<p>The call of the void persists as long as the Echo exists, though it doesn't activate until the Echo has rolled initiative. The hazard resets each day.</p>",
-			"routine": "<p>(1 action) The call targets all creatures adjacent to a ledge or on one of the red ropes and tugs at their minds. A creature who has already fallen this round is immune.</p>",
-			"stealthdetails": "<p>(expert) to notice a slight tugging feeling</p>",
+			"name": "虚空的呼唤 Call of the Void",
+			"disable": "<p>@Check[type:occultism|dc:34|name:Expel Magical Compulsion]或@Check[type:arcana|dc:36|name:Expel Magical Compulsion]驱逐当前岛屿以及任何与之直接相连的红绳上的魔法冲动，绳索的颜色会就此变得黯淡下去。当回声在岛上执行汲思重构行动时，其所在岛屿以及任何与之直接相连的红绳上的危害也会立刻解除。</p>",
+			"hazarddescription": "<p>一股超自然的冲动，促使那些临近边缘之人跃入未知当中。</p>",
+			"reset": "<p>只要回声依旧存在，虚空的呼唤就不会消失。不过，只有在回声进行完他的先攻检定之后，虚空的呼唤才会启动。该危害每天都会重置。</p>",
+			"routine": "<p>(1动作) 虚空的呼唤会以所有邻近边缘以及位于红绳上的生物作为目标，牵动他们的思绪。一名在本回合中已经跌落过的生物将会免疫本次效果。</p>",
+			"stealthdetails": "<p>(专家) 来注意到一种轻微的拉扯感</p>",
 			"data":{},
 			"items":{
 				"Leap into the Unknown":{
-					"name": "Leap into the Unknown",
-					"description": "<p><strong>触发</strong> A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes</p>\n<hr />\n<p><strong>效果</strong> The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a @Check[type:will|dc:34] save or @Check[type:acrobatics|dc:32|traits:action:balance] check to @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Balance} or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually [[/r (50)[bludgeoning]]]{50钝击伤害}). The call of the void then rolls initiative.</p>"
+					"name": "跃入未知 Leap into the Unknown",
+					"description": "<p><strong>触发</strong> 当一名生物进入到岛屿边缘的方格，或是登上一条红绳；</p>\n<hr />\n<p><strong>效果</strong> 虚空的呼唤牵动着入侵者的思绪，迫使他们从边缘处一跃而下。该生物必须通过一次成功的@Check[type:will|dc:34]豁免或@Check[type:acrobatics|dc:32|traits:action:balance]检定来@UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balance}，否则便会落入虚空。若生物跌落，其将坠落100尺，并由于思维空间的封闭循环，落回到其跌落时的位置，照常承受坠落伤害（通常是[[/r (50)[bludgeoning]]]{50钝击伤害}）。随后，虚空的呼唤进行先攻检定。</p>"
 				}
 			}
 		},
@@ -217,40 +217,40 @@
 			}
 		},
 		"K. H. W.'s Echo": {
-			"name": "K. H. W.'s Echo",
+			"name": "档案孤员的回声 K. H. W.'s Echo",
 			"data":{},
-			"hp": "destabilized form",
+			"hp": "失衡形态",
 			"items":{
-				"6LPHouUKdhwChveQ":{
-					"name": "Rope Dart"
+				"strike-Rope Dart":{
+					"name": "绳镖 Rope Dart"
 				},
 				"Attack of Opportunity":{
 					"name": "借机攻击 Attack of Opportunity",
-					"description": "<p>The Echo has reach 15 for the purpose of determining when Attack of Opportunity triggers and when making Attacks of Opportunity.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+					"description": "<p>在决定借机攻击是否被触发和进行借机攻击时时，回声被视为拥有触及15尺。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
 				},
 				"Destabilized Form":{
-					"name": "Destabilized Form",
-					"description": "<p>When the Echo has fewer than 140 Hit Points, his form destabilizes, large chunks disintegrating from his face, limbs, and torso. White moths constantly stream from the missing spaces, creating a @Template[type:emanation|distance:10] that deals [[/r (6d6)[mental]]]{6d6 mental伤害} with a @Check[type:will|dc:34|basic:true].</p>\n<p>As long as the aura persists, he can dissolve into moths and re-form at another location within 15 feet as a free action at the beginning of each of his turns; this has the occult, conjuration, and teleportation traits.</p>"
+					"name": "失衡形态 Destabilized Form",
+					"description": "<p>当回声的HP低于140时，他的形态便会开始变得不稳定，他的脸部、四肢以及躯干开始大块大块地崩裂瓦解。白色的飞蛾不断从缺口处倾泻而出，形成一个@Template[type:emanation|distance:10]范围的灵光，造成[[/r (6d6)[mental]]]{6d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。</p>\n<p>只要灵光持续存在，他就可以在每回合开始时，以自由动作，将身体分解成蛾群并在15尺内的另一个地点重组出现。此行动具有异能、咒法系、以及传送特征。</p>"
 				},
 				"Astral Spindel Implement":{
-					"name": "Astral Spindel Implement",
-					"description": "<p>The Echo carries a drop spindle that constantly spins red astral thread, which is both his thaumaturgic implement and weapon. If his <em>rope dart</em> is lost or broken, he can re-form it with an Interact action. If he critically succeeds at a <em>rope dart</em> Strike, overwhelming thoughts and figments flow down the thread into the target's mind. The target becomes @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} for 1 round.</p>"
+					"name": "星界纺锤奇具 Astral Spindel Implement",
+					"description": "<p>回声携带有一个不断旋转着捻绕红色星界丝线的纺锤，这既是他的奇术师奇具也是他的武器。若他的<em>绳镖</em>丢失或损坏，他可以用一个交互动作来重新形成一个新的。若他的<em>绳镖</em>打击大成功，铺天盖地的思绪与幻象便会顺着丝线涌向目标的脑海。目标因此@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>"
 				},
 				"Astral Thread Control":{
-					"name": "Astral Thread Control",
-					"description": "<p><strong>频率</strong> once per round</p>\n<p><strong>需求</strong> The Echo's previous action was a successful thrown rope dart Strike</p>\n<hr />\n<p><strong>效果</strong> The Echo flicks his wrist and makes a follow-up thrown rope dart Strike at a different target within 30 feet of the first target, using the same multiple attack penalty as his previous Strike. Regardless of whether his attack hits, he then retrieves the weapon.</p>"
+					"name": "星界丝线掌控 Astral Thread Control",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 回声的上一个动作是一次成功的投掷绳镖打击；</p>\n<hr />\n<p><strong>效果</strong> 回声挥动他的手腕，对初始目标30尺范围内的另一个不同目标进行一次后续打击，使用与他之前打击相同的多重攻击减值。无论他的这一次打击是否命中，他都会就此收回武器。</p>"
 				},
 				"Contingency Oathday-Nine-Rova":{
-					"name": "Contingency Oathday-Nine-Rova",
-					"description": "<p><strong>频率</strong> once per天</p>\n<p><strong>触发</strong> The Echo's turn begins and he's stunned, slowed, @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}, or otherwise can't act</p>\n<hr />\n<p><strong>效果</strong> The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.</p>"
+					"name": "九月九日星期四预案 Contingency Oathday-Nine-Rova",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 当回声的回合开始时，他处于以下状态：震慑，缓慢，@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}，@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{被控制 Controlled}，@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，或任何其它阻止其行动的状态；</p>\n<hr />\n<p><strong>效果</strong> 回声设置了数不胜数的应急预案来防备他可能遭遇的各种情况。他身上的护符破碎，并反制触发本能力的那个效果。哪怕回声无法行动，他也能够以自由动作使用此能力。</p>"
 				},
 				"Reconstitute from Thought":{
-					"name": "Reconstitute from Thought",
-					"description": "<p><strong>需求</strong> The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened</p>\n<hr />\n<p><strong>效果</strong> The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains [[/r (45)[healing]]]{45 Hit Points} and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the @UUID[Compendium.pf2e.pathfinder-dark-archive.0AdtolhMWrPlzVZY]{Call of the Void} hazard on that island.</p>"
+					"name": "汲思重构 Reconstitute from Thought",
+					"description": "<p><strong>需求</strong> 回声正位于地图中的八座岛屿之一，并且该岛屿尚未黯淡；</p>\n<hr />\n<p><strong>效果</strong> 回声将他的绳镖扔入岛屿之内，从思维空间中汲取心灵要素，修复自己的躯体。他恢复[[/r (45)[healing]]]{45生命值}，该座岛屿随之黯淡下去变为不饱和的灰色（持续1日），这将让回声无法再对该座岛屿进行汲取，并且使得该座岛屿上的@UUID[Compendium.pf2e.pathfinder-dark-archive.0AdtolhMWrPlzVZY]{虚空呼唤 Call of the Void}危害失效。</p>"
 				},
 				"Spindle's Web":{
-					"name": "Spindle's Web",
-					"description": "<p>The Echo's spindle revolves faster and faster until it's a blur, lashing red threads in every direction. The threads deal [[/r (7d6)[slashing] + (7d6)[mental]]]]]{7d6 slashing damage and 7d6 mental伤害} to all creatures in a @Template[type:emanation|distance:30], with a @Check[type:reflex|dc:34|basic:true]. If a creature fails its save, the threads awaken the mindscape an</p>\n<p>chor within it, affecting it differently based on which anchor that creature used to gain access to the center of the mindscape. (If there is a PC who didn't absorb a mindscape anchor, for instance because there are more than four PCs in the party, then use the anchor of the PC closest to them.)</p>\n<p>The Echo then can't use Spindle's Web for [[/br 1d4 #rounds]]{1d4轮}.</p>\n<ul>\n<li><strong>Lantern</strong> The lantern outlines the creature with searing <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em> that deals [[/r (2d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire伤害}.</li>\n<li><strong>Mirror</strong> The mirror reflects the creature to another location, teleporting them to a clear space within 25 feet of their current location.</li>\n<li><strong>Chalice</strong> The chalice drains life force, granting the Echo temporary HP equal to half the damage dealt.</li>\n<li><strong>Tome</strong> The tome floods the creature's mind with information; the target is @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 round.</li>\n</ul>"
+					"name": "纺锤之网 Spindle's Web",
+					"description": "<p>回声的纺锤越转越快，变得模糊难以看清，并朝着各个方向甩出红线。这些丝线对@Template[type:emanation|distance:30]范围内的生物造成[[/r (7d6)[slashing] + (7d6)[mental]]]]]{7d6挥砍伤害和7d6心灵伤害}（@Check[type:reflex|dc:34|basic:true]豁免）。若生物豁免失败，这些丝线便会唤醒其体内的思维空间心锚，根据生物所拥有心锚的不同造成不同的影响（若由于小队人数超过四人等原因，某名PC体内并没有融入心锚，则使用距离其最近的那个人的心锚来判定效果）。</p>\n<p>回声将会在[[/br 1d4 #rounds]]{1d4轮}内无法使用该能力。</p>\n<ul>\n<li><strong>灯 Lantern</strong> 灯笼用灼热的<em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{妖火术 Faerie Fire}</em>勾勒出生物的轮廓，对其造成[[/r (2d6)[persistent,fire]]]。</li>\n<li><strong>镜 Mirror</strong> 镜面将生物映照到其它地方，将目标传送到其25尺范围内的另一处可见空间。</li>\n<li><strong>杯 Chalice</strong> 圣杯会汲取生物的生命力，并赋予回声临时生命值，数值等同于对该生物此次伤害的一半。</li>\n<li><strong>典 Tome</strong> 典籍用海量的信息挤满生物的脑海；目标获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</li>\n</ul>"
 				}
 			}
 		},
@@ -403,17 +403,17 @@
 			}
 		},
 		"Thalassophobic Pool": {
-			"name": "Thalassophobic Pool",
-			"disable": "<p>@Check[type:diplomacy|dc:32|name:Calm the Pool] (master) or @Check[type:deception|dc:32|name:Calm the Pool] (master) to quell the fear and calm the pool or @Check[type:intimidation|dc:35|name:Scare the Pool] to give the pool something worse to fear; three successes required.</p>",
-			"hazarddescription": "<p>The pool sucks in creatures that fall into it, making them sink into its endless depths.</p>",
-			"reset": "<p>The trap resets once there are no moving creatures in it.</p>",
-			"routine": "<p>(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take [[/r (1d6)[bludgeoning]]]{1d6钝击伤害}. As the pool has no bottom, creatures in it can fall down indefinitely; they must @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim} up to avoid drowning, but the water is especially choppy, so the Athletics DC is @Check[type:athletics|dc:25|traits:action:swim]. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes @Check[type:athletics|dc:10|traits:action:swim].</p>",
-			"stealthdetails": "<p>(trained)</p>",
+			"name": "深海恐惧之潭 Thalassophobic Pool",
+			"disable": "<p>@Check[type:diplomacy|dc:32|name:Calm the Pool] (大师)或@Check[type:deception|dc:32|name:Calm the Pool] (大师)克服恐惧并使水潭平静下来，或通过@Check[type:intimidation|dc:35|name:Scare the Pool]来让水潭对更可怖之物产生恐惧；总计成功3次才能完全解除。</p>",
+			"hazarddescription": "<p>水潭会吸住那些落入其中的生物，并将它们沉进无底的深渊当中。</p>",
+			"reset": "<p>陷阱会在其内没有移动的生物之后重置。</p>",
+			"routine": "<p>(3动作) 圣杯中的涌流执行的每个动作都会使得水潭的深度增加10尺。每当此状况发生时，水流就会冲击水潭中的生物，对其造成[[/r (1d6)[bludgeoning]]]{1d6钝击伤害}并使其下沉10尺。由于水潭“深不见底”，其中的生物可以无限向下沉落。他们必须向上@UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{游泳 Swim}以防溺水而亡，但由于水流异常汹涌，所以运动检定的DC为@Check[type:athletics|dc:25|traits:action:swim]。深潭中的水永远不会外溢出来。每一次成功的解除检定都会使得水潭的动作数量减少1个。在水潭危害被完全解除之后，水体就会变得平静下来，游泳的运动检定DC变为@Check[type:athletics|dc:10|traits:action:swim]。</p>",
+			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Downpour":{
-					"name": "Downpour",
-					"description": "<p><strong>触发</strong> A creature falls into the pool</p>\n<hr />\n<p><strong>效果</strong> More water pours forth from the chalice. Creatures in the pool become @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and they can't decrease their clumsy condition so long as they remain in the pool. The trap then rolls initiative.</p>"
+					"name": "倾流直下 Downpour",
+					"description": "<p><strong>触发</strong> 一名生物落入潭中；</p>\n<hr />\n<p><strong>效果</strong> 更大的水流从圣杯中涌出。水潭中的生物获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。并且，只要他们还在水潭中，其笨拙状态就无法降低。随后，该陷阱进行先攻检定。</p>"
 				}
 			}
 		},
