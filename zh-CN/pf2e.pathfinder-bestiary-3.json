@@ -19,7 +19,6 @@
             "converter": "npc-item-translation"
         },
         "publicNotes": "system.details.publicNotes",
-        "dr": "system.traits.dr",
         "allSaves": "system.attributes.allSaves.value",
         "senses": "system.traits.senses.value",
         "hp": "system.attributes.hp.details",
@@ -7489,38 +7488,38 @@
         },
         "Tooth Fairy": {
             "data":{},
-            "name": "Tooth Fairy",
-            "publicNotes": "<p>Lone fairies usually need several minutes of elbow grease and a sleeping or restrained subject to extract a tooth.</p>\n<hr />\n<p>Tooth fairies spawn when a child's tooth (or, less commonly, an entire child) is buried in terrain rife with fey energies. Hatching from the buried teeth like larvae from an egg, tooth fairies build crude pliers from whatever they can find, then go hunting for more teeth-regardless of the owners' willingness。</p>",
+            "name": "牙仙 Tooth Fairy",
+            "publicNotes": "<p>单独的牙仙通常需要花费数分钟的努力，来从一个睡着或被束缚的对象那里拔牙。</p>\n<hr />\n<p>当孩子的牙齿（或则，更少见的情况，整个孩子）被埋葬在充盈精类能量的地形中时，牙仙便诞生了。牙仙会如同幼虫从蛋中孵化一样从被埋葬的牙齿中破壳而出，他们会用能找到的一切来制造粗糙的夹钳，然后去狩猎更多的牙齿——不管主人是否愿意。</p>",
             "items": {
-                "Pliers": {
-                    "name": "Pliers"
+                "strike-Pliers": {
+                    "name": "夹钳 Pliers"
                 },
                 "Plaque Burst": {
-                    "name": "Plaque Burst",
-                    "description": "<p>When killed, a tooth fairy bursts into sticky, foul-smelling white dust. Each creature within @Template[type:emanation|distance:5]{5尺} must succeed at a @Check[type:fortitude|dc:16]否则会因为体内激增的水量而陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} on a critical failure)。</p>"
+                    "name": "牙斑爆炸 Plaque Burst",
+                    "description": "<p>当被杀死时，牙仙会爆炸成一堆粘稠，难闻的白色尘埃。@Template[type:emanation|distance:5]{5尺}内的每个生物必须成功通过一次@Check[type:fortitude|dc:16]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时为@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
                 },
                 "Tooth Tug": {
-                    "name": "Tooth Tug",
-                    "description": "<p><strong>需求</strong> The tooth fairy's last action was a successful pliers Strike against a creature with teeth</p>\n<hr />\n<p><strong>效果</strong> The tooth fairy tugs on the creature's teeth, dealing @Localize[PF2E.PersistentDamage.Bleed2.success] to the creature。</p>"
+                    "name": "卸牙 Tooth Tug",
+                    "description": "<p><strong>需求</strong> 牙仙上一个动作是一次成功的命中有牙生物的夹钳打击；</p>\n<hr />\n<p><strong>效果</strong> 牙仙卸下生物的牙齿，对该生物造成@Localize[PF2E.PersistentDamage.Bleed2.success]。</p>"
                 }
             }
         },
         "Tooth Fairy Swarm": {
             "data":{},
-            "name": "Tooth Fairy Swarm",
-            "publicNotes": "<p>A mob of tooth fairies working together can conduct forced dentistry in seconds.</p>\n<hr />\n<p>Tooth fairies spawn when a child's tooth (or, less commonly, an entire child) is buried in terrain rife with fey energies. Hatching from the buried teeth like larvae from an egg, tooth fairies build crude pliers from whatever they can find, then go hunting for more teeth-regardless of the owners' willingness。</p>",
+            "name": "牙仙群 Tooth Fairy Swarm",
+            "publicNotes": "<p>一群合作的牙仙可以在短短几秒内完成强行拔牙。</p>\n<hr />\n<p>当孩子的牙齿（或则，更少见的情况，整个孩子）被埋葬在充盈精类能量的地形中时，牙仙便诞生了。牙仙会如同幼虫从蛋中孵化一样从被埋葬的牙齿中破壳而出，他们会用能找到的一切来制造粗糙的夹钳，然后去狩猎更多的牙齿——不管主人是否愿意。</p>",
             "items": {
                 "Plaque Burst": {
-                    "name": "Plaque Burst",
-                    "description": "<p>When killed, a tooth fairy swarm bursts into sticky, foul-smelling white dust. Each creature within @Template[type:emanation|distance:15]{15尺} must succeed at a @Check[type:fortitude|dc:20]否则会因为体内激增的水量而陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} on a critical failure)。</p>"
+                    "name": "牙斑爆炸 Plaque Burst",
+                    "description": "<p>当被杀死时，牙仙群会爆炸成一堆粘稠，难闻的白色尘埃。@Template[type:emanation|distance:15]{15尺}内的每个生物必须成功通过一次@Check[type:fortitude|dc:20]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时为@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
                 },
                 "Pinch": {
-                    "name": "Pinch",
-                    "description": "<p>Tooth fairies pinch their victims' fingers, noses, ears, or similar protruding body parts. Each enemy in the swarm's space takes [[/r (2d6)[bludgeoning]]]{2d6钝击伤害} (@Check[type:reflex|dc:20|basic:true]豁免). Creatures that critically fail this save are @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} from the pain。</p>"
+                    "name": "痛夹 Pinch",
+                    "description": "<p>牙仙们夹住受害者的手指，鼻子，耳朵或类似突出的身体部位。每个位于集群占据空间的敌人受到[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。此豁免中取得大失败的生物会因痛苦陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>"
                 },
                 "Pry": {
-                    "name": "Pry",
-                    "description": "<p>The tooth fairies try to pry out one of their target's teeth. One enemy in the swarm's space takes [[/r (4d6)[bludgeoning]]]{4d6钝击伤害} (@Check[type:reflex|dc:20|basic:true]豁免). On a failed save, the target takes @Localize[PF2E.PersistentDamage.Bleed2.success] and a -1 status penalty to Charisma-based skill checks, and they must succeed at a @Check[type:flat|dc:5] check to Cast a Spell with a verbal component or the spell is disrupted. The penalty and spellcasting condition last for 1 day, or until the stolen tooth is returned and the target regains at least 1 Hit Point.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.4q8Of8NM9DC8kWyK]{效果: Pry}</p>"
+                    "name": "撬牙 Pry",
+                    "description": "<p>牙仙们试图撬出目标的牙齿。集群占据空间内的一名敌人受到[[/r (4d6)[bludgeoning]]]{4d6钝击伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。如果豁免失败，目标受到@Localize[PF2E.PersistentDamage.Bleed2.success]并且在基于魅力的技能检定上承受-1状态减值，并且其在施放具有语言要素的法术时必须成功通过一次@Check[type:flat|dc:5]检定，否则法术将被打断。减值与施法影响会持续1天，或直到被偷走的牙齿被装回且目标恢复了至少1生命值。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.4q8Of8NM9DC8kWyK]{效果: 撬牙}</p>"
                 }
             }
         },

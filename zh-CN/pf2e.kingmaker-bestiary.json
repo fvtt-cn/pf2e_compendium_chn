@@ -19,7 +19,6 @@
             "converter": "npc-item-translation"
         },
         "publicNotes": "system.details.publicNotes",
-        "dr": "system.traits.dr",
         "allSaves": "system.attributes.allSaves.value",
         "senses": "system.traits.senses.value",
         "hp": "system.attributes.hp.details",
@@ -216,9 +215,26 @@
 			"items":{}
 		},
 		"Bloom of Lamashtu": {
-			"name": "Bloom of Lamashtu",
+			"name": "拉玛什图之花 Bloom of Lamashtu",
+			"publicNotes": "<p>在这种巨大的开花植物的中心有着一根粗壮的绿色茎，一排尖刺在这茎干上螺旋盘升。每一朵花的中心都有一个正在生长的籽荚，周围环绕着五彩缤纷而又充满活力的花瓣。经过连续数个季度的试验、祈祷和仪式而造就的拉玛什图之花是邪教徒达利梵和他那开花教派所获得的巨大成功。这恶魔般的植物帮助他们感染了失窃之地上的类人生物，并且将他们变成了可怕的捕食者。虽然拉玛什图之花拥有智能，并且能够理解深渊语，但它除了传播诅咒之外，对其他任何事物都没什么兴趣。</p>\n<p>为了传播痛苦和暴力，这花朵静谧而又充满恶意地、尽其可能地快速播种。它高12英尺，重600磅。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Thorny Vine":{
+					"name": "荆棘藤蔓 Thorny Vine"
+				},
+				"Defensive Burst":{
+					"name": "防御式爆裂 Defensive Burst",
+					"description": "<p><strong>触发</strong> 花受到挥砍伤害。</p>\n<p><strong>效果</strong> 拉玛什图之花对一个邻接的生物喷出一股酸液，造成[[/r 9d6[acid]]]伤害（@Check[type:reflex|dc:26|basic:true]豁免）。该花在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用防御式爆裂。</p>"
+				},
+				"Bloom Curse":{
+					"name": "开花诅咒 Bloom Curse",
+					"description": "<p>如果一个生物吃了拉玛什图之花的任何部分、对抗籽荚的豁免失败、或是在被荆棘藤蔓打击时受到重击，就会遭受开花诅咒。和2e的开花诅咒不同，此版本的开花诅咒没有潜伏期，受害者死亡时释放的怪物可能更强大并且永远为混乱邪恶阵营。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>阶段1</strong> 没有不良效果 (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1天)</p>\n<p><strong>阶段3</strong> 力竭1和[[/r 2d6[poison]]]伤害 (8小时)</p>\n<p><strong>阶段4</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}和[[/r 4d6[poison]]]伤害 (10分钟)</p>\n<p><strong>阶段5</strong> death;</p>\n<p><strong>特殊</strong> 一个死于开花诅咒的生物将伴随着第一世界的树叶爆炸，并且向这个世界中释放一只怪物。这一生物是一个混乱邪恶的低智力魔兽或龙（由DM选择），其等级与死去的生物相同。</p>"
+				},
+				"Spew Seed Pod":{
+					"name": "喷射籽荚 Spew Seed Pod",
+					"description": "<p>拉玛什图之花中央茎干从它的花里吐出一股籽荚，喷射的射程最大60尺，并且当籽荚炸出一片超自然酸性毒素时创造出一个@Template[type:burst|distance:20]区域。任何在此区域内的生物必须尝试一次@Check[type:reflex|dc:29]豁免。该花在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷射籽荚。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到[[/r 3d6[acid]]]伤害和[[/r 3d6[poison]]]伤害。</p>\n<p><strong>失败</strong> 该生物受到[[/r 5d6[acid]]]伤害和[[/r 5d6[poison]]]伤害，并且遭受开花诅咒。</p>\n<p><strong>大失败</strong> 如同失败，但是受到[[/r 10d6[acid]]]伤害和[[/r 10d6[poison]]]伤害，外加因爆炸的力量而被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				}
+			}
 		},
 		"Bloom Wyvern": {
 			"name": "Bloom Wyvern",
@@ -251,9 +267,20 @@
 			"items":{}
 		},
 		"Brush Thylacine": {
-			"name": "Brush Thylacine",
+			"name": "狐尾袋狼 Brush Thylacine",
+			"senses": "昏暗视觉, 灵敏嗅觉 (模糊感官) 30尺",
+			"publicNotes": "<p>这些凶残而具有领地意识的袋狼经常无缘无故地攻击生物，它们倾向于在领地上留下几乎没有被吃过的尸体，以此作为它们它们领土的额外标志。</p>\n<hr />\n<p>袋狼是有袋目食肉动物。这种夜行性捕食者通常独自狩猎，偶尔也会结成小群。由于它们古怪的外貌，袋狼的名声比它们应得的要恶劣得多，在农业社区中扮演者某种妖怪的角色。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Hunting Cry":{
+					"name": "猎杀尖啸 Hunting Cry",
+					"description": "<p>袋狼咆哮、嘶吼，并以一种可怕的方式露出它的颚部，以此尝试对一个生物@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize} 。它在此次威吓检定中获得+2环境加值，并且此次尝试不会因目标无法理解袋狼而承受罚值。</p>"
+				},
+				"Pounce":{
+					"name": "猛扑 Pounce",
+					"description": "<p>狐尾袋狼行走，并且在移动结束时进行一次打击。如果狐尾袋狼在这个动作开始时为@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，它会保持藏匿直至该能力的打击之后。</p>"
+				}
+			}
 		},
 		"Camouflaged Spiked Pit": {
 			"name": "Camouflaged Spiked Pit",
@@ -425,9 +452,15 @@
 			"items":{}
 		},
 		"Elk": {
-			"name": "Elk",
+			"name": "麋鹿 Elk",
+			"publicNotes": "<p>麋鹿是适应性极强的生存者。大多数品种的身高在3到5英尺之间，体重在350到550磅之间。</p>\n<hr />\n<p>麋鹿是强壮而又敏捷的陆地哺乳动物，分布在整个失窃之地之中。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Startled Charge":{
+					"name": "受惊猛冲 Startled Charge",
+					"description": "<p><strong>需求</strong> 战斗的第一轮；</p>\n<p><strong>效果</strong> 受惊的麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，麋鹿造成额外[[/r 1d4[bludgeoning]]]伤害。</p>"
+				}
+			}
 		},
 		"Endless Struggle": {
 			"name": "Endless Struggle",
@@ -485,14 +518,21 @@
 			"items":{}
 		},
 		"Fetch Behemoth": {
-			"name": "Fetch Behemoth",
+			"name": "回魂精巨兽 Fetch Behemoth",
+			"publicNotes": "<p>回魂精巨兽要比追踪者大得多，是由一个大型精类或类人生物的灵魂所形成的。</p>\n<hr />\n<p>回魂精是一个类人生物的扭曲而又怪异的拟像，存在或曾经存在于主物质位面的某一点上。传言中回魂精是来自其他位面存在的持续性的反射，但是这些故事里都没有提及除了智慧来源以外关于这复制品的任何事情。无论是在第一世界或是一个受到第一世界极大影响的区域，当一个强大的生物经历了重大的情感事件或者死亡时，一个回魂精就有可能自发地显现。不过它也有可能是被始祖这种拥有强大力量的存在所创造出来，用以折磨和激怒那些惹恼过他们的人。当一个回魂精从一个灵魂的“反射”中显现时，其与该生物生活中的样貌惊人地相似，只是回魂精并没有属于它自己的真正的记忆。它保留着来自于源体的虚假的记忆片段，就像在一个只记得部分的梦境中经历过它们——这确保了回魂精会嫉妒它的源体，并且因其而感到激怒。</p>\n<p>回魂精在外观上与产生了它的那个灵魂的生物非常相似，除了它经常表现出精类特征，例如尖耳朵、植物状的元素、或是超自然的优雅。如果一个回魂精试图模仿依旧活着的源体，则必须隐藏起这些特征，并且注意将其回魂精武器显现为目标所使用的的武器。</p>\n<p>当一个回魂精死亡时，它和它所显现的物品将会消失在植物所绽放出的花朵中，它的灵魂立即回到第一世界，留下一片杂草和带刺的花朵，其形状大致就像是它们活着时发出嘲笑的样子。</p>",
 			"data":{},
 			"items":{}
 		},
 		"Fetch Stalker": {
-			"name": "Fetch Stalker",
+			"name": "回魂精追踪者 Fetch Stalker",
+			"publicNotes": "<p>回魂精追踪者源自中型或小型精类或类人生物的灵魂（小型回魂精追踪者与中型的拥有相同的数据）。</p>\n<hr />\n<p>回魂精是一个类人生物的扭曲而又怪异的拟像，存在或曾经存在于主物质位面的某一点上。传言中回魂精是来自其他位面存在的持续性的反射，但是这些故事里都没有提及除了智慧来源以外关于这复制品的任何事情。无论是在第一世界或是一个受到第一世界极大影响的区域，当一个强大的生物经历了重大的情感事件或者死亡时，一个回魂精就有可能自发地显现。不过它也有可能是被始祖这种拥有强大力量的存在所创造出来，用以折磨和激怒那些惹恼过他们的人。当一个回魂精从一个灵魂的“反射”中显现时，其与该生物生活中的样貌惊人地相似，只是回魂精并没有属于它自己的真正的记忆。它保留着来自于源体的虚假的记忆片段，就像在一个只记得部分的梦境中经历过它们——这确保了回魂精会嫉妒它的源体，并且因其而感到激怒。</p>\n<p>回魂精在外观上与产生了它的那个灵魂的生物非常相似，除了它经常表现出精类特征，例如尖耳朵、植物状的元素、或是超自然的优雅。如果一个回魂精试图模仿依旧活着的源体，则必须隐藏起这些特征，并且注意将其回魂精武器显现为目标所使用的的武器。</p>\n<p>当一个回魂精死亡时，它和它所显现的物品将会消失在植物所绽放出的花朵中，它的灵魂立即回到第一世界，留下一片杂草和带刺的花朵，其形状大致就像是它们活着时发出嘲笑的样子。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Manifest Fetch Weapon":{
+					"name": "显现回魂精武器 Manifest Fetch Weapon",
+					"description": "<p><strong>触发</strong> 回魂精开始其回合；</p>\n<p><strong>效果</strong> 一把回魂精武器显现在该回魂精手中。一旦回魂精武器不再被回魂精携带，它就会消失。回魂精选择它所显现的武器类型，但它不会获得任何该武器标准武器特征，而是改为使用上述回魂精武器打击中所列的特征。</p>"
+				}
+			}
 		},
 		"Fionn": {
 			"name": "Fionn",
@@ -905,9 +945,15 @@
 			"items":{}
 		},
 		"Megaloceros": {
-			"name": "Megaloceros",
+			"name": "大角麋鹿 Megaloceros",
+			"publicNotes": "<p>大角麋鹿与麋鹿形态相似，但提醒却要大得多。通常的雄性都是高大的生物，仅鹿角就接近100磅重。这些鹿角非常巨大，并且其宽度可能要胜过它们的体长。大角麋鹿站立时高达9英尺，重达1500磅，鹿角超过12英尺宽。</p>\n<hr />\n<p>麋鹿是强壮而又敏捷的陆地哺乳动物，分布在整个失窃之地之中。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Furious Charge":{
+					"name": "愤怒猛冲 Furious Charge",
+					"description": "<p>大角麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，它造成额外[[/r 2d4[bludgeoning]]]伤害。</p>"
+				}
+			}
 		},
 		"Melianse": {
 			"name": "Melianse",
@@ -1097,9 +1143,50 @@
 			"items":{}
 		},
 		"Primal Bandersnatch": {
-			"name": "Primal Bandersnatch",
+			"name": "原初潘达斯奈基 Primal Bandersnatch",
+			"publicNotes": "<p>潘达斯奈基是完美的猎手，只有最致命的掠食者或是最狡猾聪慧的猎物才值得它们出手。潘达斯奈基很像是一只黄褐色、六条腿的、没有耳朵的大猫，但有一排险恶的倒刺刚毛从背脊直生到它长而灵活的尾巴末端。它有40英尺长，外加10尺长的尾巴，重量12000磅。原初潘达斯奈基是同类中最强大的，这源于它们与第一世界之间的联系。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Quill":{
+					"name": "刚毛 Quill"
+				},
+				"Planar Acclimation":{
+					"name": "位面适应 Planar Acclimation",
+					"description": "<p>潘达斯奈基将其所在的位面视为它的家乡位面。</p>"
+				},
+				"Attack of Opportunity":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>仅尾扫。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Confusing Gaze":{
+					"name": "困惑凝视 Confusing Gaze",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>当一个生物在灵光中结束其回合时，它必须成功通过一次@Check[type:will|dc:38]豁免，否则将在1轮内@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}。</p>"
+				},
+				"Quick Recovery":{
+					"name": "快速复原 Quick Recovery",
+					"description": "<p>潘达斯奈基以惊人的速度恢复。在其回合结束时，它会将一个使其衰弱的状态值（除了濒死以外）降低1点。如果其@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}、@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}、@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}、@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}、或者石化，它能够改为成功通过一次@Check[type:flat|dc:16]检定来终止其中一个它所选择的状态；它无法对其他没有状态值的状态使用快速复原。</p>"
+				},
+				"Focus Gaze":{
+					"name": "聚焦凝视 Focus Gaze",
+					"description": "<p>潘达斯奈基将其凝视聚焦于一个它所能看见的30尺内的生物。目标必须立即尝试一次意志豁免对抗潘达斯奈基的困惑凝视。在尝试了这次豁免后，该生物暂时免疫潘达斯奈基的困惑凝视，直至该潘达斯奈基的下一个回合开始。</p>"
+				},
+				"Frumious Charge":{
+					"name": "狂怒冲锋 Frumious Charge",
+					"description": "<p>潘达斯奈基行走，无视困难地形，然后在其移动结束后进行两次爪抓打击。</p>"
+				},
+				"Lash Out":{
+					"name": "穷追猛打 Lash Out",
+					"description": "<p>在其回合开始，潘达斯奈基获得一个仅能用于借机攻击的额外反应动作。</p>"
+				},
+				"Pain":{
+					"name": "苦痛 Pain",
+					"description": "<p>潘达斯奈基的刚毛能够造成异常痛苦的伤口。受伤的生物必须成功通过一次@Check[type:fortitude|dc:41]检定来避免因为苦痛而@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（在大失败时为@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}）。此后潘达斯奈基造成苦痛的打击将会在每次豁免失败时增加流失值1点，最多为流失4。</p>"
+				},
+				"Relentless Tracker":{
+					"name": "无情追猎者 Relentless Tracker",
+					"description": "<p>潘达斯奈基可以在全速移动时@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}。</p>"
+				}
+			}
 		},
 		"Quintessa Maray": {
 			"name": "Quintessa Maray",
@@ -1127,9 +1214,23 @@
 			"items":{}
 		},
 		"Risen Fetch": {
-			"name": "Risen Fetch",
+			"name": "苏生回魂精 Risen Fetch",
+			"publicNotes": "<p>来自于不死生物那被腐化了的灵魂的回响也能够用来孵化一只回魂精。一个苏生回魂精看上去更像是它源体活着的时候，而非其不死生物的样子。</p>\n<hr />\n<p>回魂精是一个类人生物的扭曲而又怪异的拟像，存在或曾经存在于主物质位面的某一点上。传言中回魂精是来自其他位面存在的持续性的反射，但是这些故事里都没有提及除了智慧来源以外关于这复制品的任何事情。无论是在第一世界或是一个受到第一世界极大影响的区域，当一个强大的生物经历了重大的情感事件或者死亡时，一个回魂精就有可能自发地显现。不过它也有可能是被始祖这种拥有强大力量的存在所创造出来，用以折磨和激怒那些惹恼过他们的人。当一个回魂精从一个灵魂的“反射”中显现时，其与该生物生活中的样貌惊人地相似，只是回魂精并没有属于它自己的真正的记忆。它保留着来自于源体的虚假的记忆片段，就像在一个只记得部分的梦境中经历过它们——这确保了回魂精会嫉妒它的源体，并且因其而感到激怒。</p>\n<p>回魂精在外观上与产生了它的那个灵魂的生物非常相似，除了它经常表现出精类特征，例如尖耳朵、植物状的元素、或是超自然的优雅。如果一个回魂精试图模仿依旧活着的源体，则必须隐藏起这些特征，并且注意将其回魂精武器显现为目标所使用的的武器。</p>\n<p>当一个回魂精死亡时，它和它所显现的物品将会消失在植物所绽放出的花朵中，它的灵魂立即回到第一世界，留下一片杂草和带刺的花朵，其形状大致就像是它们活着时发出嘲笑的样子。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Duplicate Victim":{
+					"name": "复制受害者 Duplicate Victim",
+					"description": "<p><strong>触发</strong> 苏生回魂精使用一把回魂精武器打击对一个类人生物目标造成了重击，并且还有一个可用的<em>@UUID[Compendium.pf2e.spells-srd.73rToy0v5Ra9NvL6]{仿敌拟像 Duplicate Foe}</em>；</p>\n<p><strong>效果</strong> 该苏生回魂精对该目标施放<em>仿敌拟像</em>，目标在抵抗的豁免骰上承受-4状态罚值。</p>"
+				},
+				"Manifest Fetch Weapon":{
+					"name": "显现回魂精武器 Manifest Fetch Weapon",
+					"description": "<p><strong>触发</strong> 回魂精开始其回合；</p>\n<p><strong>效果</strong> 一把回魂精武器显现在该回魂精手中。一旦回魂精武器不再被回魂精携带，它就会消失。回魂精选择它所显现的武器类型，但它不会获得任何该武器标准武器特征，而是改为使用上述回魂精武器打击中所列的特征。</p>"
+				},
+				"Steady Spellcasting":{
+					"name": "稳定施法 Steady Spellcasting",
+					"description": "<p>如果一个反应动作会打断苏生回魂精的施法动作，该苏生回魂精尝试一次@Check[type:flat|dc:15]检定。成功时，该动作不被打断。</p>"
+				}
+			}
 		},
 		"River Elasmosaurus": {
 			"name": "River Elasmosaurus",
@@ -1373,9 +1474,15 @@
 			"items":{}
 		},
 		"Thylacine": {
-			"name": "Thylacine",
+			"name": "袋狼 Thylacine",
+			"publicNotes": "<p>袋狼很容易被误认为是狗或者豺狼，但在近距离接触时，它们金色背脊上特征鲜明的条纹和异常宽大的下巴则会打消这种误会。袋狼的声音嘹亮，在受到威胁时会组合使用咆哮、嘶吼和威胁性地哈欠。一只成年袋狼肩高2英尺，长4英尺（不包括额外2英尺长的尾巴），重约50磅。</p>\n<hr />\n<p>袋狼是有袋目食肉动物。这种夜行性捕食者通常独自狩猎，偶尔也会结成小群。由于它们古怪的外貌，袋狼的名声比它们应得的要恶劣得多，在农业社区中扮演者某种妖怪的角色。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Hunting Cry":{
+					"name": "猎杀尖啸 Hunting Cry",
+					"description": "<p>袋狼咆哮、嘶吼，并以一种可怕的方式露出它的颚部，以此尝试对一个生物@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。它在此次威吓检定中获得+2环境加值，并且此次尝试不会因目标无法理解袋狼而承受罚值。</p>"
+				}
+			}
 		},
 		"Tiger Lord": {
 			"name": "Tiger Lord",
@@ -1443,9 +1550,27 @@
 			"items":{}
 		},
 		"Vilderavn Herald": {
-			"name": "Vilderavn Herald",
+			"name": "黑鸦爵使者 Vilderavn Herald",
+			"publicNotes": "<p>在真实形态下，黑鸦爵使者是一只人类大小的渡鸦。它伪装成类人生物形态的能力使其适合于潜入一个凡人统治者的仆从之中，或是不受太多关注地旅行，但是更多时候，这些致命的精类直接服务于更为强大的统治者，例如始祖。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Aura of Disquietude":{
+					"name": "不安灵光 Aura of Disquietude",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:35]</p>\n<p>如同@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.etMnv73EIdEZrYYu]{气势凶猛 Frightful Presence}，外加被该灵光惊惧的生物会变得疑神疑鬼：他不将任何其他生物视为盟友，并且也不能@UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{协助 Aid}或者夹击。在大失败时，该生物还不能成为无害或者有益法术的自愿目标。黑鸦爵能够以一个具有专注特征的单动作激活或者关闭此灵光。</p>"
+				},
+				"Bloodbird":{
+					"name": "嗜血之鸦 Bloodbird",
+					"description": "<p>一个被黑鸦爵的近战攻击击中的生物将会被诅咒，受到[[/r 2d6[persistent,bleed]]]伤害伤害，并且难以被止血：使用进行急救来停止流血的DC为35，并且将该生物的生命值治疗至满额并不能自动终止流血。移除该诅咒将终止流血。</p>"
+				},
+				"Change Shape":{
+					"name": "变身 Change Shape",
+					"description": "<p>黑鸦爵呈现为狼、凶暴狼、狼鸦混形、或是其渡鸦骑士形态：一个小型或中型类人生物，穿着漆黑的全身甲，手持一把巨剑。黑鸦爵只有在拥有狼头的形态下才能使用啃咬攻击，只有在拥有鸦爪的形态下才能使用爪击攻击，并且只有在渡鸦骑士的形态下才能使用巨剑。</p>"
+				},
+				"Souleater":{
+					"name": "噬魂者 Souleater",
+					"description": "<p>如果黑鸦爵使用其啃咬打击重击杀死了一个类人生物，作为此次攻击的一部分，它会撕裂并且吞噬目标的心与魂。当目标死亡时，黑鸦爵可以变身成目标的形态，在伪装成目标的欺骗检定中获得+4状态加值。如果魔法将使该目标复活，施法者必须成功通过一个DC38的反制检定来将目标的灵魂从黑鸦爵那抽取出来；否则法术失败。</p>"
+				}
+			}
 		},
 		"Villamor Koth": {
 			"name": "Villamor Koth",
