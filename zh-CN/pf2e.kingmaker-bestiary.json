@@ -1651,9 +1651,37 @@
 			"items":{}
 		},
 		"Whimwyrm": {
-			"name": "Whimwyrm",
+			"name": "异想龙 Whimwyrm",
+			"publicNotes": "<p>异想龙是一种难以捉摸的龙类，产自于那异想天开而又无比危险的第一世界。虽然它们的色彩和外观可能会引起人们的崇拜，但是这些人的情绪很快就会从一个极端转向另一个极端。许多人认为它们可爱迷人且相对较小的体型就意味着无害，但这种想法将会迅速而又可怖地终结于异想龙的尖牙和魔法。</p>\n<p>异想龙细长而又光滑，从头到尾不超过7英尺，并且其在战斗中的速度相当令人不安。当异想龙攻击时，无论是用其嘴里的尖牙还是它长长的尾巴，它都会在一次攻击中发起一阵迅捷的冲咬或鞭击。虽然从风格上来看，这些攻击包含着多次的啃咬和鞭击，但其依然属于单一的一次打击。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Frenzied Fangs":{
+					"name": "狂乱尖牙 Frenzied Fangs"
+				},
+				"strike-Whiplashing Tail":{
+					"name": "乱鞭尾击 Whiplashing Tail"
+				},
+				"Fog Vision":{
+					"name": "云雾视野 Fog Vision",
+					"description": "<p>烟雾和水汽不会阻碍异想龙的视线；它忽略源自于烟雾和水汽的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"Insult Challenges":{
+					"name": "侮辱的挑战 Insult Challenges",
+					"description": "<p>当一只异想龙的侮辱导致了一场战斗，它投掷表演用于先攻。一名参与了此次侮辱的PC也能够投掷表演，并且如果他们侮辱了异想龙，同时表演检定还胜过了异想龙的意志DC39，那么它会因为愤怒而感到气急败坏，从而在战斗开始时@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+				},
+				"Attack of Opportunity":{
+					"name": "借机攻击 Attack of Opportunity",
+					"description": "<p>仅尖牙</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Meddling Tail":{
+					"name": "扰乱之尾 Meddling Tail",
+					"description": "<p><strong>触发</strong> 异想龙使用乱鞭尾击打击伤害了一个生物；</p>\n<p><strong>效果</strong> 异想龙可以尝试@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}、或@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}所伤害的生物。</p>"
+				},
+				"Mind-Numbing Breath":{
+					"name": "乱心吐息 Mind-Numbing Breath",
+					"description": "<p>异想龙喷出一股@Template[type:cone|distance:40]的闪亮洋红色迷雾。因为脑海中被突然出现的虚假（通常是不愉快的）记忆所淹没，该区域内的生物必须尝试一次@Check[type:will|dc:38]检定，根据其豁免结果受到[[/r 10d12[mental]]]伤害。异想龙在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用乱心吐息。</p>\n<hr />\n<p><strong>大成功</strong> 闪烁的烟尘勾勒出该生物的轮廓，在1轮中无效其任何已生效的<em>@UUID[Compendium.pf2e.spells-srd.XXqE1eY3w3z6xJCB]{隐形术 Invisibility}</em>效果，并且不受伤害。</p>\n<p><strong>成功</strong> 该生物受到一半伤害，并且其隐形术效果被无效2轮。</p>\n<p><strong>失败</strong> 该生物受到完整伤害，@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1分钟，并且其隐形术效果被无效1分钟。</p>\n<p><strong>大失败</strong> 该生物受到双倍伤害，@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，目眩1分钟，并且其隐形术效果被无效1分钟。</p>"
+				}
+			}
 		},
 		"Wild Hunt Archer": {
 			"name": "Wild Hunt Archer",
