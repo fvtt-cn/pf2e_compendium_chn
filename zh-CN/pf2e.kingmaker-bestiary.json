@@ -1684,19 +1684,129 @@
 			}
 		},
 		"Wild Hunt Archer": {
-			"name": "Wild Hunt Archer",
+			"name": "狂猎射手 Wild Hunt Archer",
+			"publicNotes": "<p>这些体态轻盈、雌雄同体又酷似人类的生物有着尖尖的耳朵和散发有绿光的眼睛，它们的头发时刻都在轻柔地飘动，就仿佛一直处于微风之中。它们是有条不紊的猎手，其射出的箭矢精准得匪夷所思。由于狂猎射手往往比它们的大多数同伴都走得慢，所以经常依靠狂猎骏骑来提供更高的机动性。它们不需要携带普通的箭矢，而是可以使用魔法箭筒来制造所需要的箭——这些箭筒对除了狂猎射手之外的任何人都不起作用。</p>\n<hr />\n<p>尽管有些人认为狂猎仅仅只是传说而已，但那些狂猎骑手却是货真价实的存在。这些无以计数的精类组成了狂猎——“狂猎”一词即指代由这些生物所组成的家族，也指代这些精类为了追逐猎物聚集而成的群体。</p>\n<p>取决于猎物和他们自己的想法，狂猎君王为每次狩猎定下条件。猎物越容易被捕获，君王就越有可能设置强制性的规则，以此来让狩猎变得更加有趣，例如禁止除了让他们的猎犬以外的任何人伤害猎物，或者限制他们的武装来给予目标生物休息和恢复的空暇。</p>\n<p>虽然大多数任务都源自狂猎君王所收集的传言，但君王偶尔也会考虑那些勇敢而又博学到能够找寻到他们的人的建议。他们只接受他们认为有价值的任务，并且由于对物质的财富并不感兴趣，他们为其服务所要求的报酬也是天差地别。狂猎君王会因对其不利的交易而感受到严重的冒犯。那些试图欺骗君王的人通常都会成为这个愤怒精类的下一个目标。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Greensight":{
+					"name": "苍翠视野 Greensight",
+					"description": "<p>狂猎射手忽略源自于树叶和其他枝叶所造成的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"Planar Acclimation":{
+					"name": "位面适应 Planar Acclimation",
+					"description": "<p>狂猎将其所在的位面视为它的家乡位面。</p>"
+				},
+				"Wild Hunt Link":{
+					"name": "狂猎链接 Wild Hunt Link",
+					"description": "<p>@Template[type:emanation|distance:500] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一只狂猎射手赋予其他所有灵光内除狂猎射手以外的狂猎成员在将@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}生物作为目标进行远程打击的时候无需通过@Check[type:flat|dc:5]的能力。</p>"
+				},
+				"Instinctive Cooperation":{
+					"name": "合作本能 Instinctive Cooperation",
+					"description": "<p>狂猎在对抗其他狂猎生物盟友所创造的效果的豁免骰中自动获得大成功。</p>"
+				},
+				"Wild Gaze":{
+					"name": "狂野凝视 Wild Gaze",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>那些与狂猎的凝视相对的人将会直面射手可怖的力量，并且发现在面对这种传奇的遗赠时是如此地难以行动。当一个生物在灵光中结束其回合时，它必须成功通过一个@Check[type:will|dc:34]检定来避免变为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（在大失败时为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。狂猎能够以一个具有专注特征的单动作激活或者关闭此灵光。</p>"
+				},
+				"Focus Gaze":{
+					"name": "聚焦凝视 Focus Gaze",
+					"description": "<p>狂猎将其凝视聚焦于一个它所能看见的30尺内的生物。目标必须立即尝试一次意志豁免对抗狂猎的狂野凝视。如果该生物在尝试此次豁免前已经因狂野凝视而缓慢，豁免失败将导致它被@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。在尝试了这次豁免后，该生物暂时免疫狂猎的狂野凝视，直至该狂猎的下一个回合开始。</p>"
+				},
+				"Infuse Arrow":{
+					"name": "注魔之箭 Infuse Arrow",
+					"description": "<p>狂猎射手施放一个射程为接触的法术，然后使用它们的活木弓进行一次远程打击。如果它们使用此次打击命中了一个生物，该生物同时也会成为法术效果的目标。如果打击未命中，则该法术被浪费。</p>\n<p>或者，狂猎射手可以@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放 Cast a Spell}一个影响一个区域的法术，然后使用它们的活木弓进行一次远程打击。如果它们使用此次打击命中了一个生物，该法术以该生物为中心起效，并且该生物在对抗该法术效果的所有豁免上承受-2环境罚值。如果打击未命中，则该法术被浪费。</p>"
+				},
+				"Living Bow":{
+					"name": "活木弓 Living Bow",
+					"description": "<p>狂猎射手携带者一把表现出它们箭术风格的活木弓。这把武器在狂猎射手的手中使用时就如同一把<em>+2高等强击冻寒复合长弓</em>。但在其他生物手里，活木弓只是一把普通的非魔法复合长弓。狂猎射手可以在上一把活木弓丢失或被摧毁时通过进项一个具有专注特征的持续一分钟的行动来显现一把替换的活木弓。一把活木弓看起来是由木头制成的，不断地长出枝叶，转变成秋日的色彩，然后凋落；它的弓弦是一条纯能量的散发出绿光的线。狂猎射手在使用活木弓时会自动地从箭袋中生成所需要的箭矢。</p>"
+				},
+				"Seeking Shots":{
+					"name": "寻猎之箭 Seeking Shots",
+					"description": "<p>狂猎射手的远程打击和需要远程攻击骰的法术忽略它们目标的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+				}
+			}
 		},
 		"Wild Hunt Horse": {
-			"name": "Wild Hunt Horse",
+			"name": "狂猎骏骑 Wild Hunt Horse",
+			"publicNotes": "<p>这些骏马站在阵阵风中，它们如草一般的鬃毛和尾巴在风中威严地摆动着。当它们不参与狩猎时，狂猎骏骑喜欢在陆地和天空中构建复杂的赛道，为了不断变化的赌注而相互竞赛。</p>\n<hr />\n<p>尽管有些人认为狂猎仅仅只是传说而已，但那些狂猎骑手却是货真价实的存在。这些无以计数的精类组成了狂猎——“狂猎”一词即指代由这些生物所组成的家族，也指代这些精类为了追逐猎物聚集而成的群体。</p>\n<p>取决于猎物和他们自己的想法，狂猎君王为每次狩猎定下条件。猎物越容易被捕获，君王就越有可能设置强制性的规则，以此来让狩猎变得更加有趣，例如禁止除了让他们的猎犬以外的任何人伤害猎物，或者限制他们的武装来给予目标生物休息和恢复的空暇。</p>\n<p>虽然大多数任务都源自狂猎君王所收集的传言，但君王偶尔也会考虑那些勇敢而又博学到能够找寻到他们的人的建议。他们只接受他们认为有价值的任务，并且由于对物质的财富并不感兴趣，他们为其服务所要求的报酬也是天差地别。狂猎君王会因对其不利的交易而感受到严重的冒犯。那些试图欺骗君王的人通常都会成为这个愤怒精类的下一个目标。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Greensight":{
+					"name": "苍翠视野 Greensight",
+					"description": "<p>狂猎忽略源自于树叶和其他枝叶所造成的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"Planar Acclimation":{
+					"name": "位面适应 Planar Acclimation",
+					"description": "<p>狂猎将其所在的位面视为它的家乡位面。</p>"
+				},
+				"Wild Hunt Link":{
+					"name": "狂猎链接 Wild Hunt Link",
+					"description": "<p>@Template[type:emanation|distance:500] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一匹狂猎骏骑赋予其他所有灵光内除狂猎骏骑以外的狂猎成员的速度+10尺状态加值。</p>"
+				},
+				"Instinctive Cooperation":{
+					"name": "合作本能 Instinctive Cooperation",
+					"description": "<p>狂猎在对抗其他狂猎生物盟友所创造的效果的豁免骰中自动获得大成功。</p>"
+				},
+				"Rider Synergy":{
+					"name": "协同骑手 Rider Synergy",
+					"description": "<p>如果狂猎骏骑有一个狂猎骑手，由打击对骏骑或骑手造成的伤害由两者平分。</p>"
+				},
+				"Wild Gaze":{
+					"name": "狂野凝视 Wild Gaze",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>那些与狂猎的凝视相对的人将会直面射手可怖的力量，并且发现在面对这种传奇的遗赠时是如此地难以行动。当一个生物在灵光中结束其回合时，它必须成功通过一个@Check[type:will|dc:33]检定来避免变为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（在大失败时为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。狂猎能够以一个具有专注特征的单动作激活或者关闭此灵光。</p>"
+				},
+				"Bewildering Hoofbeats":{
+					"name": "扰心蹄声 Bewildering Hoofbeats",
+					"description": "<p>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}60尺</p>\n<p>狂猎骏骑跺着蹄子，在原地腾跃，发出数百匹骏骑从四面八方靠近的声音。@Template[type:emanation|distance:60]内的每个生物都必须尝试一次@Check[type:will|dc:33]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响，并且暂时免疫扰心蹄声1小时。</p>\n<p><strong>成功</strong> 该生物被声音分散了注意力。在该生物下一回合开始前，如果它尝试使用反应动作，则必须成功通过一次@Check[type:flat|dc:5]检定，否则反应动作被打断，其动作被浪费且不造成效果。</p>\n<p><strong>失败</strong> 该生物被声音所迷惑，与成功效果相同，外加它还会@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>\n<p><strong>大失败</strong> 如同失败，但是困惑效果持续1分钟或者该生物通过其他的方式恢复。</p>"
+				},
+				"Deafening Cry":{
+					"name": "震耳嘶号 Deafening Cry",
+					"description": "<p>狂猎骏骑在@Template[type:cone|distance:15]范围内发出雷霆般的嘶号。在该区域内的生物受到[[/r 16d6[sonic]]]伤害（@Check[type:fortitude|dc:36|basic:true]豁免，外加在大失败时@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟）。狂猎骏骑在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用震耳嘶号。</p>"
+				},
+				"Focus Gaze":{
+					"name": "聚焦凝视 Focus Gaze",
+					"description": "<p>狂猎将其凝视聚焦于一个它所能看见的30尺内的生物。目标必须立即尝试一次意志豁免对抗狂猎的狂野凝视。如果该生物在尝试此次豁免前已经因狂野凝视而缓慢，豁免失败将导致它被@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。在尝试了这次豁免后，该生物暂时免疫狂猎的狂野凝视，直至该狂猎的下一个回合开始。</p>"
+				},
+				"Trample":{
+					"name": "践踏 Trample",
+					"description": "<p>中型或更小体型, 蹄踢, @Check[type:reflex|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Wild Hunt Hound": {
-			"name": "Wild Hunt Hound",
+			"name": "狂猎猎犬 Wild Hunt Hound",
+			"publicNotes": "<p>狂猎猎犬是聪慧的猎手和专业的追踪者，率先对抗难以发现的猎物。它们各行其是，追寻那些出了名的难以追踪的生物。它们总是包裹着由其受害者的灵魂碎片所组成的绿色雾气，这种神秘的雾霭将其化为幽灵兽群，一同它的身旁战斗。</p>\n<hr />\n<p>尽管有些人认为狂猎仅仅只是传说而已，但那些狂猎骑手却是货真价实的存在。这些无以计数的精类组成了狂猎——“狂猎”一词即指代由这些生物所组成的家族，也指代这些精类为了追逐猎物聚集而成的群体。</p>\n<p>取决于猎物和他们自己的想法，狂猎君王为每次狩猎定下条件。猎物越容易被捕获，君王就越有可能设置强制性的规则，以此来让狩猎变得更加有趣，例如禁止除了让他们的猎犬以外的任何人伤害猎物，或者限制他们的武装来给予目标生物休息和恢复的空暇。</p>\n<p>虽然大多数任务都源自狂猎君王所收集的传言，但君王偶尔也会考虑那些勇敢而又博学到能够找寻到他们的人的建议。他们只接受他们认为有价值的任务，并且由于对物质的财富并不感兴趣，他们为其服务所要求的报酬也是天差地别。狂猎君王会因对其不利的交易而感受到严重的冒犯。那些试图欺骗君王的人通常都会成为这个愤怒精类的下一个目标。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Greensight":{
+					"name": "苍翠视野 Greensight",
+					"description": "<p>狂猎猎犬忽略源自于树叶和其他枝叶所造成的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
+				},
+				"Planar Acclimation":{
+					"name": "位面适应 Planar Acclimation",
+					"description": "<p>狂猎将其所在的位面视为它的家乡位面。</p>"
+				},
+				"Wild Hunt Link":{
+					"name": "狂猎链接 Wild Hunt Link",
+					"description": "<p>@Template[type:emanation|distance:500] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一只狂猎猎犬将它持续性<em>@UUID[Compendium.pf2e.spells-srd.jwK43yKsHTkJQvQ9]{识破隐性 See Invisibility}</em>内在法术的效果赋予其他所有灵光内除狂猎猎犬以外的狂猎成员。</p>"
+				},
+				"Instinctive Cooperation":{
+					"name": "合作本能 Instinctive Cooperation",
+					"description": "<p>狂猎在对抗其他狂猎生物盟友所创造的效果的豁免骰中自动获得大成功。</p>"
+				},
+				"Wild Gaze":{
+					"name": "狂野凝视 Wild Gaze",
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>那些与狂猎的凝视相对的人将会直面射手可怖的力量，并且发现在面对这种传奇的遗赠时是如此地难以行动。当一个生物在灵光中结束其回合时，它必须成功通过一个@Check[type:will|dc:31]检定来避免变为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（在大失败时为@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。狂猎能够以一个具有专注特征的单动作激活或者关闭此灵光。</p>"
+				},
+				"Focus Gaze":{
+					"name": "聚焦凝视 Focus Gaze",
+					"description": "<p>狂猎将其凝视聚焦于一个它所能看见的30尺内的生物。目标必须立即尝试一次意志豁免对抗狂猎的狂野凝视。如果该生物在尝试此次豁免前已经因狂野凝视而缓慢，豁免失败将导致它被@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。在尝试了这次豁免后，该生物暂时免疫狂猎的狂野凝视，直至该狂猎的下一个回合开始。</p>"
+				},
+				"Summon Pack":{
+					"name": "召唤兽群 Summon Pack",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 随着一声嚎叫，狂猎猎犬召唤出一团雾霭，显现为几只雾状的猎犬。只要狂猎猎犬维持这一效果，这些雾状的猎犬就会在@Template[type:emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}范围内移动、奔跑、嚎叫。虽然这些猎犬看起来是由雾霭形成的，但它们的利齿却是非常的真实，任何在此灵光范围内结束其回合的生物将会因数不胜数的啃咬而受到[[/r 6d6[piercing]]]伤害（@Check[type:reflex|dc:31|basic:true]豁免）。</p>"
+				}
+			}
 		},
 		"Wild Hunt Monarch": {
 			"name": "Wild Hunt Monarch",
