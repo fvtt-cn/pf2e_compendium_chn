@@ -93,8 +93,8 @@
             ]
         },
         "Ambush Tactics": {
-            "name": "Ambush Tactics",
-            "description": "<p>You've made a study of the best practices for laying ambushes in terrains you've spent time learning about, be it the best way to ambush foes or the best methods of reacting to surprise attacks in those terrains. In any combat during which an enemy rolls Stealth to determine initiative, you can choose to roll initiative using a Lore check that's appropriate for the encounter's terrain, if you're trained in the appropriate Lore skill.</p>",
+            "name": "伏击战术 Ambush Tactics",
+            "description": "<p>你花时间学习掌握了根据地形伏击敌人的最佳方案，你熟悉在特定地形中如何埋伏敌人，也通晓在这种地形里应对突袭的绝佳方式。当敌人在战斗中使用隐秘技能来决定先攻时，如果你在对应地形的学识技能达到受训熟练度，就可以选择使用对应遭遇地形的学识技能进行先攻检定。</p>",
             "prerequisites": [
                 {
                     "value": "在特定地形学识上受训"
@@ -377,8 +377,8 @@
             ]
         },
         "Efficient Explorer": {
-            "name": "Efficient Explorer",
-            "description": "<p>You are more efficient at exploring uncharted territories. As long as you're in a hex that is predominantly a terrain in which you are trained in an associated Lore skill, you grant your group one additional hexploration activity.</p>",
+            "name": "高效探险家 Efficient Explorer",
+            "description": "<p>你能够更有效率地探索未知地域。如果你身处一个六角格中，而且你对它的主要地形的学识技能达到受训熟练度，你就可以给予队伍一个额外的六角格探索行动。</p>",
             "prerequisites": [
                 {
                     "value": "在特定地形学识上受训"
@@ -634,12 +634,12 @@
             "description": "<p>你与大自然有着如此紧密的联系，你可以激发它攻击那些威胁你的人。你可以每小时一次将<em>@UUID[Compendium.pf2e.spells-srd.YtBZq49N4Um1cwm7]{自然复仇 Nature's Reprisal}</em>作为原能内在法术施展一次。</p>"
         },
         "Giant Hunter": {
-            "name": "Giant Hunter",
-            "description": "<p>You have studied giants and hunt them with efficiency. When you roll initiative and can see a giant, you can @UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{Hunt Prey} as a free action, designating that enemy as your prey.</p>\n<p>You can use this free action even if you haven't identified the giant yet with Recall Knowledge. The benefit doesn't apply against giants disguised as other creatures, and the GM determines whether it applies against a creature disguised as a giant.</p>"
+            "name": "巨人猎手 Giant Hunter",
+            "description": "<p>你研习有关巨人的知识，高效地猎杀它们。当你看到巨人时，你可以用自由动作使用@UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{猎杀目标 Hunt Prey}，指定该巨人作为你的猎物。</p>\n<p>即便你还没有使用回忆知识辨识巨人，你也可以使用这个自由动作。但这一增益不适用于伪装成其他生物的巨人，GM可以决定这一增益是否适用于伪装为巨人的生物。</p>"
         },
         "Giant Slayer": {
-            "name": "Giant Slayer",
-            "description": "<p>Your well-placed blows can fell mighty giants. If you critically hit the same giant twice on the same turn, the target must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)] saving throw or die. Use your class DC for this saving throw.</p>"
+            "name": "巨人杀手 Giant Slayer",
+            "description": "<p>你那精准的攻击可以击倒强大的巨人。如果你在同一轮中两次对同一个巨人造成重击，则目标必须成功进行@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)]豁免，否则死亡。该豁免使用你的职业DC。</p>"
         },
         "Glamour": {
             "name": "Glamour",
@@ -1240,11 +1240,11 @@
             "description": "<p>祖灵开始聚集在你的身上，赐予你rokoa特有的力量。你每天可以将用内在原能法术的方式各施展一次<em>@UUID[Compendium.pf2e.spells-srd.BBvV7qoXGdw09q1C]{动物交谈 Speak with Animals}</em>和<em>@UUID[Compendium.pf2e.spells-srd.HTou8cG05yuSkesj]{关照术 Status}</em><em></em>。</p>"
         },
         "Roll With it (Kingmaker)": {
-            "name": "Roll With it (Kingmaker)",
-            "description": "<p><strong>触发</strong> Your hunted prey, which must be a giant, hits you with a melee attack.</p>\n<hr />\n<p>You can dodge attacks from giants. Attempt a Reflex save using 10 + the giant's attack bonus as the save DC. If the result allows you to Stride as part of the reaction, you may instead Fly or Swim if you have the corresponding movement type.</p>\n<hr />\n<p><strong>大成功</strong> The attack misses you (or if the attack was a critical hit, it becomes a regular hit). You can Stride up to 10 feet as part of the reaction; if you do so, the reaction gains the move trait.</p>\n<p><strong>成功</strong> The attack deals half damage. You can Stride up to 5 feet as part of the reaction, but you must end this movement adjacent to the triggering giant. If you do so, the reaction gains the move trait.</p>\n<p><strong>大失败</strong> You fail to avoid the attack and are knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} by the blow.</p>",
+            "name": "乘势移形 Roll With it (拥王者)",
+            "description": "<p><strong>触发</strong> 一个被你作为猎杀目标的巨人使用近战攻击命中你。</p>\n<hr />\n<p>你可以躲避巨人的攻击。尝试进行DC为10+巨人攻击加值的反射豁免。如果检定结果允许你将行走作为该反应动作的一部分，同时你拥有飞行或游泳移动方式，那么你可以将行走改为对应的移动方式。</p>\n<hr />\n<p><strong>大成功</strong> 攻击没能命中你（如果该攻击为重击，则改为普通命中）。你可以将行走10尺作为该反应动作的一部分。如果你这样做，该反应动作具有移动特征。</p>\n<p><strong>成功</strong> 攻击造成一半的伤害。你可以将行走5尺作为该反应动作的一部分。如果你这样做，该反应动作具有移动特征。</p>\n<p><strong>大失败</strong> 你没能躲避攻击，被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>",
             "prerequisites": [
                 {
-                    "value": "Giant Hunter"
+                    "value": "巨人猎手"
                 }
             ]
         },
@@ -1473,12 +1473,13 @@
             ]
         },
         "The Harder They Fall (Kingmaker)": {
-            "name": "The Harder They Fall (Kingmaker)",
+            "name": "摔得更狠 The Harder They Fall (拥王者)",
             "prerequisites": [
                 {
                     "value": "巨人摔角术"
                 }
-            ]
+            ],
+            "description": "<p>你知道如何摔倒一个比你体型更大的生物的同时让它受伤。如果你成功@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}了一个比你体型更大的敌人，它就会受到[[/r 1d8[bludgeoning]]]伤害（大成功则为[[/r 2d8[bludgeoning]]]伤害）。如果你运动的熟练等级达到大师，则该钝击伤害增加到[[/r 2d8[bludgeoning]]]（大成功时为[[/r 4d8[bludgeoning]]]）。</p>"
         },
         "The Tyrant Falls!": {
             "name": "暴君陨落！ The Tyrant Falls!",
@@ -29890,6 +29891,10 @@
         "Breath Control": {
             "name": "龟息 Breath Control",
             "description": "<p>你拥有惊人的呼吸控制力，这让你在空气被污染或是缺乏的区域中拥有特别的优势。在开始窒息之前，你可以屏息一般人25倍长的时间。你在对抗任何通过呼吸吸入的危险，如吸入性毒素时，在豁免检定上获得+1环境加值，并且你在这些检定上获得的成功结果会视为大成功结果。</p>"
+        },
+        "Hamstringing Strike": {
+            "description": "<p>你用精准的攻击拖缓敌人的速度。对被你标记为猎杀目标的生物进行一次-2减值的打击。如果命中，该生物的速度将获得-5尺的状态减值。如果对你的猎物造成了重击，该生物的速度将获得-10尺的状态减值。免疫流血伤害的生物不受该减值影响。可以使用任何解除持续流血伤害或进行纯骰检定的方法解除该减值，例如进行急救。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.ESnzqtwSgahLcxg2]{效果: 断筋打击}</p>",
+            "name": "断筋打击 Hamstringing Strike"
         }
     }
 }
