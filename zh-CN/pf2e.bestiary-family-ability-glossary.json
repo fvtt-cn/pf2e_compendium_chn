@@ -2,7 +2,8 @@
     "label": "怪物种族能力术语表 Creature Family Ability Glossary",
     "entries": {
         "(Golem) Golem Antimagic": {
-            "name": "魔像抗魔 Golem Antimagic"
+            "name": "魔像抗魔 Golem Antimagic",
+            "description": "<p>被伤害：[damageType] ([[/r {0d8}]]{0d8伤害}，区域效果或持续伤害则为[[/r {0d4}]]{0d4伤害}；被治疗：[damageType] (区域效果[[/r 0d4[healing]]]{0d4生命值})；被减速：[damageType]</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
         },
         "(Ghost) Cold Spot": {
             "description": "<p>@Template[type:emanation|distance:5|damaging:yes]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>幽灵5尺范围内的空气异常寒冷。如果角色进入幽灵的灵光范围或在其中开始自身回合，那么幽灵每具有3等级对其造成[[/r 1d6[cold]]]伤害（@Check[type:fortitude|dc:|basic:true]豁免）。</p>",
@@ -859,6 +860,121 @@
         "(Divine Warden) Instrument of Faith": {
             "name": "(神圣守卫)信仰道标 Instrument of Faith",
             "description": "<p>神圣守卫是其神祇信仰的信标。与神圣守卫拥有同一守护神的牧师，能从一个60尺内可见的神圣守卫身上引导<em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{治疗术 Heal}</em>。该牧师可以决定该法术的目标或范围，就如同他们站在神圣守卫当前所处位置施法一般。</p>"
+        },
+        "(Dragon) Change Shape": {
+            "name": "(龙)变形 Change Shape",
+            "description": "<p>龙可以变为任何小型或中形人形生物的外貌。这不会改变他们的速度或打击上的攻击与伤害修正，但是会改变他们打击的的伤害类型（通常是变为钝击）。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+        },
+        "(Golem) Inexorable March": {
+            "name": "(魔像)势不可挡 Inexorable March",
+            "description": "<p>@Check[type:fortitude|dc:|traits:damaging-effect]</p>\n<p>[豁免效果]</p>\n<hr />\n<p>魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过强韧检定来阻挡其前进。</p>"
+        },
+        "(Mana Wastes Mutant) Caustic Pustules": {
+            "name": "(法力废土突变体) Caustic Pustules"
+        },
+        "(Secret Society) Connected": {
+            "name": "(秘密结社成员)关系 Connected",
+            "description": "<p>秘密结社成员有庞大的关系网，特别是在社团广泛招募的社会阶层中，但能通过友谊、勒索和其他形式的影响力进一步延伸。当遭遇某个来自秘密结社有影响力的定居点角色时，秘密结社成员能尝试一次社群检定，使用遭遇角色等级的简单难度DC，来判断该角色是否属于秘密结社招募的潜在人群，而其他角色的DC为困难难度或更高。如果成功，秘密结社成员与该角色有关系，秘密结社成员能让该角色奉迎自己或推动该角色按照自己想要的方式行事。这使得秘密结社成员在建立印象、胁迫、挫败士气或提出请求时有+2环境加值。如果大成功，这种关系特别牢固或强大，甚至可能包括和秘密结社有直接联系。上述环境加值增加到+4。秘密结社成员能对PC使用此能力，但除了挫败士气之外，这种关系更像某种角色扮演笔记，用于提供他们和PC的互动的信息。</p>"
+        },
+        "(Secret Society) Get out of Jail": {
+            "name": "(秘密结社成员)出狱 Get out of Jail",
+            "description": "<p>强迫秘密结社成员面对他们行为的后果几乎是不可能的。他们社团将触角伸到了法律和正义的殿堂中，在无法左右判决的情况下至少可以安排出狱。当秘密结社成员将因其罪行被绳之以法时，他们会根据其罪行的严重程度和向公众公开的证据，尝试针对基础DC进行一次社群检定。这通常为专家熟练度的基础DC，也就是20。</p>\n<hr />\n<p><strong>大成功</strong> 秘密结社成员不仅无罪，它还设法在公众视野中保持清白。那些试图将其绳之以法的人会受到骚扰、诽谤、提出轻率指控或其他捏造的起诉。</p>\n<p><strong>成功</strong> 秘密结社成员被宣布无罪，并在法律上免除了它的罪行。</p>\n<p><strong>失败</strong> 虽然秘密结社成员最初被宣布有罪，但它在诉讼程序中被释放，或者设法贿赂或偷偷溜走。虽然它获得了自由，但他们的声誉已经受损。</p>\n<p><strong>大失败</strong> 正义占上风，秘密结社成员无法逃脱他们的判决。它的社团可能会切断与它的联系，并可能转向更戏剧化的手段来确保它不会暴露社团的存在。</p>"
+        },
+        "(Secret Society) Not Today!": {
+            "name": "(秘密结社成员)不是今天！ Not Today!",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 秘密结社成员的生命值减少至0</p>\n<hr />\n<p><strong>效果</strong> 伺机帮他们脱身的同伴、巧妙的装置、偶然的咒语还是其他方式，秘密结社成员总有逃生计划。秘密结社成员的生命值不会减少至0，而是保持在1生命值。他们还获得等同于其等级的临时生命值，然后行走两次。如果他们有适当的移动方式，也可以选择@UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{掘地 Burrow}、@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}、飞行或游泳。</p>"
+        },
+        "(Secret Society) Prepared Diversion": {
+            "name": "(秘密结社成员)准备分心 Prepared Diversion",
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 效果秘密结社成员在各个地方都有同伴，随时准备分散注意力以帮助他们躲避视线或快速伏击他们的敌人。秘密结社成员要么进行一次@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}，要么进行一次@UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feint}。如果它尝试分神，该次分神不含有听觉、语言或操作特征（因为其他人帮他进行了一次分神），并且已经被社团成员分神的生物不会在该次分神的察觉DC上有+4环境加值。如果它尝试虚招，它不需要处于目标的近战触及范围内，并且虚招带来的奖励对近战和远程攻击都适用。</p>"
+        },
+        "(Secret Society) Prepared Trap": {
+            "name": "(秘密结社成员)准备陷阱 Prepared Trap",
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 秘密结社成员的代理人提前在该地区准备了一个圈套。秘密结社成员选择60尺内一个未被占据的空间，并且启动一个隐藏在那里的圈套；圈套的稀有度为常见，等不能超过社群成员的等级-2（最少为1级）。从此时起，生物可以正常触发圈套。在启动期间，秘密结社成员必须尝试对观察它的生物的察觉DC进行一次欺骗检定；如果失败，这些生物会意识到秘密结社成员在那里启动了圈套。</p>"
+        },
+        "(Secret Society) Shibboleth": {
+            "name": "(秘密结社成员)口令 Shibboleth",
+            "description": "<p>秘密结社成员可以使用编码语言与秘密结社的其他成员进行交流，这种编码语言似乎无足轻重，以至于大多数旁观者都不会注意到。一个专门关注对话的生物，例如@UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{察言观色 Sense Motive}中的生物，可以尝试对秘密结社成员的欺骗DC进行秘密的察觉检定，以注意到这些对话似乎含有某种隐藏信息，之后它可以尝试针对同样的DC进行社团检定，如果成功，它能了解到消息的大概主题；在大成功时，它能了解到准确的信息。</p>"
+        },
+        "(Secret Society) Skill Savvy": {
+            "name": "(秘密结社成员)精通技巧 Skill Savvy",
+            "description": "<p>秘密结社成员掌握了一些其他人没有的技巧。她获得以下技能专长中的2项：@UUID[Compendium.pf2e.feats-srd.B6HbYsLBWb1RR6Fx]{上流骗子 Charming Liar}、@UUID[Compendium.pf2e.feats-srd.JtjnFsOToBLnSRO9]{贵族风范 Courtly Graces}、@UUID[Compendium.pf2e.feats-srd.WeQGWvlWdeLeOlCN]{字里探花 Glean Contents}、@UUID[Compendium.pf2e.feats-srd.4RjDxgvNXNl5GG9d]{飞短流长 Hobnobber}、@UUID[Compendium.pf2e.feats-srd.HEBXaS656MZTiWFu]{持久分神 Lengthy Diversion}、@UUID[Compendium.pf2e.feats-srd.Dvz54d6aPhjsmUux]{将计就计 Lie To Me}、@UUID[Compendium.pf2e.feats-srd.ar2DUlvDK4LDcH9J]{迅速胁迫 Quick Coercion}或@UUID[Compendium.pf2e.feats-srd.X2jGFfLU5qI5XVot]{人情练达 Streetwise}。如果它至少有2级，它还能从以下专长中选择：@UUID[Compendium.pf2e.feats-srd.uF0ATN2Zw1Q67ew2]{谨慎发言 Discreet Inquiry}，@UUID[Compendium.pf2e.feats-srd.cc8O47KFsODReoBe]{自来熟 Glad-Hand}， @UUID[Compendium.pf2e.feats-srd.6vnbC90UQ3I57RrQ]{持久威胁 Lasting Coercion}。如果它至少有7级，他还能选择@UUID[Compendium.pf2e.feats-srd.KIK2Eza9TK47MEb2]{完美请求 Shameless Request}或@UUID[Compendium.pf2e.feats-srd.RiuZT3H4QZIIEQXJ]{滑头鬼 Slippery Secrets}。</p>"
+        },
+        "(Secret Society) Tag Team": {
+            "name": "(秘密结社成员)组合双打 Tag Team",
+            "description": "<p>秘密结社成员和同一社团的其他成员合作无间（无论他们是否具有秘密结社调整和此能力）、只要某个敌人在该社团成员的触及范围内以及属于同一秘密结社成员的盟友生物的触及范围内，则他就会因为被夹击而导致对秘密结社成员的近战攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。如果敌人处于秘密结社成员的两个或以上盟友的触及范围内，秘密结社成员的打击还能造成额外[[/r {1d6}[precision]]]{1d6精准伤害}。</p>"
+        },
+        "(Siabrae) Blight Mastery": {
+            "name": "(秽岩恶鬼)操纵朽恶 Blight Mastery",
+            "description": "<p>任何通常只能影响动物的法术或效果，在由秽岩恶鬼使用时也能影响不死动物。此外，任何由秽岩恶鬼变形或召唤的动物看上去都疫病缠身、营养不良、甚至死亡和腐烂。（这不影响它们的实际数据）</p>"
+        },
+        "(Siabrae) Earth Glide": {
+            "name": "(秽岩恶鬼)潜地 Earth Glide",
+            "description": "<p>秽岩恶鬼可以@UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{掘进 Burrow}通过任何土质的东西，包括岩石。当它这样做的时候，它以其完整的掘进速度移动，不留下任何隧道或经过的痕迹。</p>"
+        },
+        "(Siabrae) Miasma": {
+            "name": "(秽岩恶鬼)瘴疠 Miasma",
+            "description": "<p>@Template[type:emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}, @Check[type:fortitude|dc:]{DC等于秽岩恶鬼的法术DC-4}</p>\n<hr />\n<p>进入灵光或在灵光范围内开始回合的生物豁免失败时获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}（大失败获得恶心4）。动物、精类、植物若是投出失败，则会得到大失败的结果。不论豁免结果如何，该生物都临时免疫本灵光1分钟。</p>"
+        },
+        "(Siabrae) Rejuvenation": {
+            "name": "(秽岩恶鬼)复生 Rejuvenation",
+            "description": "<p>秽岩恶鬼被摧毁时，它们能尝试@Check[type:flat|dc:10]检定（若它们站在朽败或染疫的地形上检定自动成功，若站在祝圣的地表则自动失败）。若纯骰鉴定成功，则秽岩恶鬼的身躯碎裂成灰并被吸收进土壤中。[[/r 1d10 #days]]{1d10天}后，秽岩恶鬼的身躯会从一块未经雕琢的石头中复原，当然，这石头的大小得要容得下新创造的秽岩恶鬼；这块石头会位于距离秽岩恶鬼被摧毁地点1d10英里的一个随机位置。秽岩恶鬼从石头内现身时会发出一阵雷鸣，但它复活时不会携带任何装备。</p>"
+        },
+        "(Siabrae) Stone Antlers": {
+            "name": "(秽岩恶鬼)石质鹿角 Stone Antlers",
+            "description": "<p>秽岩恶鬼的头上长出一对石质的鹿角或牛角，给予它鹿角打击，每有3级就造成[[/r (1d6+2)[bludgeoning]]]伤害，附带石质碎片能力。只要秽岩恶鬼愿意，它可以在变形的时候保留这对角，并在变形时还能使用石质鹿角的正常数据进行攻击。</p>"
+        },
+        "(Siabrae) Stony Shards": {
+            "name": "(秽岩恶鬼)石质碎片 Stony Shards",
+            "description": "<p>在攻击时，细小的碎片会从秽岩恶鬼的角上脱落，嵌入目标的伤口并施加一个可怕的诅咒。被秽岩恶鬼的石质鹿角打击命中的生物必须成功通过秽岩恶鬼法术DC-4的@Check[type:fortitude|dc:]豁免，豁免失败则会获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续[[/r 1d4 #rounds]]{1d4轮}。如果该生物豁免大失败，或者在笨拙值已经为2或更多的情况下豁免失败，他会被石化。</p>"
+        },
+        "(Visitant) Noxious Breath": {
+            "name": "(还魂怨兽)污秽吐息 Noxious Breath",
+            "description": "<p>还魂怨兽剧烈地呼气，向@Template[type:cone|distance:15]{15尺锥形}范围内释放其肺部的刺鼻气体。</p>\n<p>该区域内的所有生物必须通过@Check[type:fortitude|dc:|name:Noxious Breath]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
+        },
+        "(Visitant) Roar": {
+            "name": "(还魂怨兽)咆哮 Roar",
+            "description": "<p>还魂怨兽发出一声响亮且吓人的吼叫。@Template[type:emanation|distance:100]{100尺}内的所有生物必须成功通过@Check[type:will|dc:|name:Roar]豁免。</p>\n<p>不论结果如何，此生物会临时免疫此能力1分钟。</p>\n<hr />\n<p><strong>大成功</strong> 此生物不受影响。</p>\n<p><strong>成功</strong> 此生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 此生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 此生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
+        },
+        "(Visitant) Vengeful Presence": {
+            "name": "(还魂怨兽)复仇气场 Vengeful Presence",
+            "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在灵光范围内开始回合的生物必须进行@Check[type:will|dc:|name:Vengeful Presence]豁免，否则就会被复仇的渴望蒙蔽双眼。</p>\n<p>在[[/r 1d4 #rounds]]{1d4轮}内（大失败则为1分钟），若受影响的生物在上一轮被攻击（不论这个攻击是否命中），只要攻击者仍然活着，此生物每轮就必须使用至少1动作向最后攻击他的人攻击或使用敌对动作。无法这么做的生物会受到[[/r 1d6[mental]]]伤害，还魂怨兽等级每多5此伤害+1d6。</p>"
+        },
+        "(Visitant) Visitant Spells": {
+            "name": "(还魂怨兽)还魂怨兽的法术 Visitant Spells",
+            "description": "<p>一些还魂怨兽可以施放以下内在异能法术。如果你给一个还魂怨兽施法能力，考虑移除它的其他特殊能力。</p>\n<p><strong>异能内在法术</strong></p>\n<p><strong>DC</strong> 可变</p>\n<p><strong>法术攻击加值</strong> 可变</p>\n<p><strong>1环</strong> <em>@UUID[Compendium.pf2e.spells-srd.4koZzrnMXhhosn0D]{恐惧术 Fear}</em>，<em>@UUID[Compendium.pf2e.spells-srd.J7Y7tl0bbdz7TcCc]{衰弱射线 Ray of Enfeeblement}</em></p>\n<p><strong>恒定法术 (1环)</strong> <em>@UUID[Compendium.pf2e.spells-srd.QnTtGCAvdWRU4spv]{侦测阵营 Detect Alignment (仅限邪恶)}</em></p>"
+        },
+        "(Visitant) Wrestle": {
+            "name": "(还魂怨兽)角力 Wrestle",
+            "description": "<p>还魂怨兽对被它@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物进行一次爪击打击。如果打击命中，此生物被击至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+        },
+        "(Worm That Walks) Discorporate": {
+            "name": "(蠕虫行者)解体 Discorporate",
+            "description": "<p>当蠕虫行者的生命值减少为0时，它会 解体，组成它身体各部分的蠕虫会四散奔逃。即便只有一只蠕虫逃脱，存活的蠕虫行者通常也可以在[[/r 1d10 #days]]{1d10天}后重生。</p>\n<p>虽然周围环境决定了蠕虫行者逃脱的时间长短，但通常它的敌人只有一轮时间。</p>\n<p>一般来说，这需要用范围效果或溅射武器覆盖蠕虫行者解体时所在的空间，在对空间造成任意数量的范围伤害或溅射伤害后，进行该尝试的角色必须通过@Check[type:flat|dc:15|showDC:owner]检定。之后每次造成范围伤害或建设伤害都能将纯骰检定的DC-2，最低减少到DC 5。如果这些纯骰检定中有任意一个成功，则没有蠕虫逃脱，而蠕虫行者将被永久消灭。</p>\n<p>在GM的裁定下，巧妙地诱捕或阻碍蠕虫的方法可能会延长蠕虫的逃跑时间。</p>"
+        },
+        "(Worm That Walks) Squirming Embrace": {
+            "name": "(蠕虫行者)蠕虫之拥 Squirming Embrace",
+            "description": "<p>蠕虫行者行走，在结束移动时和一个生物共享空间，然后对该生物造成穿刺伤害，伤害值为[[/r 1d8[piercing]]]加上蠕虫行者每三个等级额外1d8。生物可以尝试@Check[type:reflex|dc:|basic:true|name:Squirming Embrace]豁免，DC为蠕虫行者的法术DC-2。</p>"
+        },
+        "(Worm That Walks) Swarm Shape": {
+            "name": "(蠕虫行者)虫群形态 Swarm Shape",
+            "description": "<p>蠕虫行者解体为一大群蠕虫。它将所有持握、穿戴和携带的物品会原地掉落。</p>\n<p>当解体时，蠕虫行者不能进行攻击动作，也无法施放法术，但可以穿过足够让单个蠕虫通过的狭小空间，而不需要尝试挤入空间动作。它能使用同样的动作将身体重聚为正常的形态。</p>"
+        },
+        "(Zombie, Shock) Arcing Strikes": {
+            "name": "(电激丧尸)电弧打击 Arcing Strikes",
+            "description": "<p>当电激丧尸以近战打击命中目标时，电弧会跳跃到第二个生物身上，造成[[/r 1d12[electricity]]]伤害。第二个目标和丧尸的原始目标相距必须在10尺内，并且是离原始目标最近的生物（如果多个生物满足要求，由电激丧尸选择第二个目标）。</p>"
+        },
+        "(Zombie, Shock) Breath Weapon": {
+            "name": "(电激丧尸)吐息 Breath Weapon",
+            "description": "<p>电激丧尸喷吐闪电，对@Template[type:line|distance:40]造成[[/r 4d12[electricity]]]伤害（@Check[type:reflex|dc:24|basic:true]豁免）。它在一分钟内无法再次吐息。</p>"
+        },
+        "(Zombie, Shock) Electromechanical Phasing": {
+            "name": "(电激丧尸)机电相位变换 Electromechanical Phasing",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 电激丧尸启动它的机电零件，开始不断变化现实的相位。电激丧尸以内在神术的方式施放4环<em>@UUID[Compendium.pf2e.spells-srd.zR67Rt3UMHKC5evy]{闪现术 Blink}</em>。</p>"
+        },
+        "(Zombie, Shock) Lightning Rod": {
+            "name": "(电激丧尸)避雷针 Lightning Rod",
+            "description": "<p><strong>触发</strong> 一个带有[电击]特征的法术或能力在电激丧尸的30尺范围内被使用；</p>\n<hr />\n<p><strong>效果</strong> 电激丧尸尝试反制该法术或能力（反制等级3级，反制调整值[[/r 1d20+17 #Counteract]]{+17}），如果反制成功，该法术或效果将被无害地导入它身上的电能线圈之中</p>"
         }
     }
 }
