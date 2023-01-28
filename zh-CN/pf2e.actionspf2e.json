@@ -1360,6 +1360,14 @@
         "Prove Peace": {
             "description": "<p><strong>需求</strong> 你必须知晓产生该围城碎片的那次战斗，并且围城碎片被禁足@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>\n<hr />\n<p>你触碰围城碎片，建立心灵链接，并且传达战斗已经结束的事实。</p>\n<p>尝试一次@UUID[Compendium.pf2e.actionspf2e.1OagaWtBpVXExToo]{回忆知识 Recall Knowledge}检定来回想那场导致围城碎片产生的战斗，并对抗围城碎片的意志DC。如果你成功，你证实战斗已经结束，围城碎片就会变成普通的石头。如果你大失败，过往的画面会压垮你的精神，你陷入@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}状态直到你的下一回合结束。</p>",
             "name": "证实和平 Prove Peace"
+        },
+        "Envenom": {
+            "name": "下毒 Envenom",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成1点挥砍伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>"
+        },
+        "Venom Draw": {
+            "name": "涂毒备战 Venom Draw",
+            "description": "<p><strong>需求</strong> 你的@UUID[Compendium.pf2e.actionspf2e.s4V7JWSMF9JPJAeX]{下毒 Envenom}行动还没有被消耗。</p>\n<hr />\n<p>你拔出武器时，迅速在武器上涂有毒的唾液。进行交互动作拔出武器，然后下毒。这将用掉下毒的每日使用次数。</p>"
         }
     }
 }
