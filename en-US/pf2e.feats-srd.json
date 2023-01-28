@@ -1,5 +1,8 @@
 {
 	"label": "Feats",
+    "mapping": {
+        "prerequisites": "system.prerequisites.value"
+    },
 	"entries": {
 		"A Home In Every Port": {
 			"name": "A Home In Every Port",
@@ -2532,6 +2535,15 @@
 			"prerequisites": [
 				{
 					"value": "Gunslinger Dedication"
+				}
+			]
+		},
+		"Basic Skysage Divination": {
+			"name": "Basic Skysage Divination",
+			"description": "<p>The stars move, granting you a sliver of their magic. Choose a 1st-level spell from any spell list to add to your spell repertoire. You can Cast this Spell as an occult Oatia skysage spell.</p>\n<p>At 6th level, you gain a 2nd-level spell, and at 8th level, you gain a 3rd-level spell. Each of these spells must be from the divination school.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
 				}
 			]
 		},
@@ -7206,7 +7218,7 @@
 		},
 		"Divine Evolution": {
 			"name": "Divine Evolution",
-			"description": "<p>The divine might provided by your bloodline fiows through you. You gain an additional spell slot of your highest level, which you can use only to cast your choice of <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em> or <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em>. You can cast either of these spells using that spell slot, even if they aren't in your spell repertoire.</p>",
+			"description": "<p>The divine might provided by your bloodline flows through you. You gain an additional spell slot of your highest level, which you can use only to cast your choice of <em>@UUID[Compendium.pf2e.spells-srd.rfZpqmj0AIIdkVIs]{Heal}</em> or <em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{Harm}</em>. You can cast either of these spells using that spell slot, even if they aren't in your spell repertoire.</p>",
 			"prerequisites": [
 				{
 					"value": "bloodline that grants divine spells"
@@ -7564,7 +7576,7 @@
 		},
 		"Dragon's Rage Wings": {
 			"name": "Dragon's Rage Wings",
-			"description": "<p>You sprout dragon wings from your back of the same color as your chosen dragon. While you are raging, you gain a fly Speed equal to your land Speed. If you are flying when your rage ends, you start to fall but the transformation only completes at the last moment, so you take no damage from the fall and land standing up.</p>",
+			"description": "<p>You sprout dragon wings from your back of the same color as your chosen dragon. While you are raging, you gain a fly Speed equal to your land Speed. If you are flying when your rage ends, you start to fall but the transformation only completes at the last moment, so you take no damage from the fall and land standing up.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.wmBSuZPqiDyUNwXH]{Effect: Dragon's Rage Wings}</p>",
 			"prerequisites": [
 				{
 					"value": "dragon instinct"
@@ -9782,6 +9794,15 @@
 				}
 			]
 		},
+		"Expert Skysage Divination": {
+			"name": "Expert Skysage Divination",
+			"description": "<p>Your studies of the stars have taught you about the mysteries of the cosmos. You learn a 4th-level spell from any spell list. At 12th level, you learn a 5th-level spell, and at 14th level, you learn a 6th-level spell. Each of these spells must come from the divination school. You become an expert with spell attack rolls and spell DCs for occult spells.</p>",
+			"prerequisites": [
+				{
+					"value": "Basic Skysage Divination"
+				}
+			]
+		},
 		"Expert Sorcerer Spellcasting": {
 			"name": "Expert Sorcerer Spellcasting",
 			"description": "<p>You gain the expert spellcasting benefits.</p>",
@@ -10302,7 +10323,7 @@
 		},
 		"Favored Terrain": {
 			"name": "Favored Terrain",
-			"description": "<p>You have studied a specific terrain to overcome its challenges. Choose aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground as your favored terrain.</p>\n<p>When in that terrain, you can ignore the effects of non-magical diffcult terrain.</p>\n<p>If you have the @UUID[Compendium.pf2e.classfeatures.RlwE99yKnhq8FUuy]{Wild Stride} class feature, you gain a second benefit while in your favored terrain, depending on your choice.</p>\n<ul>\n<li><strong>Aquatic</strong> You gain a swim Speed equal to your Speed. If you already had a swim Speed, you gain a +10-foot status bonus to your swim Speed.</li>\n<li><strong>Arctic</strong> You need to eat and drink only one-tenth as much as usual, you aren't affected by severe or extreme cold, and you can walk across ice and snow at full Speed without needing to Balance.</li>\n<li><strong>Desert</strong> You need to eat and drink only one-tenth as much as usual, you aren't affected by severe or extreme heat, and you can walk along sand at full Speed without needing to Balance.</li>\n<li><strong>Forest, Mountain, or Underground</strong> You gain a climb Speed equal to your Speed. If you already had a climb Speed, you gain a +10-foot status bonus to your climb Speed.</li>\n<li><strong>Plains</strong> You gain a +10-foot status bonus to your land Speed.</li>\n<li><strong>Sky</strong> You gain a +10-foot status bonus to your fly Speed, if you have one.</li>\n<li><strong>Swamp</strong> You can move across bogs at full Speed, even if they are deep enough to be greater difficult terrain or to normally require you to Swim.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.sDftJWPPSUeSZD3A]{Favored Terrain (Gain Climb Speed)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.IpRfT9lL3YR6MH6w]{Favored Terrain (Increase Climb Speed)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.OhLcaJeQy4Nf5Mwo]{Favored Terrain (Gain Swim Speed)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.HKPmrxkZwHRND5Um]{Favored Terrain (Increase Swim Speed)}</p>",
+			"description": "<p>You have studied a specific terrain to overcome its challenges. Choose aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground as your favored terrain.</p>\n<p>When in that terrain, you can ignore the effects of non-magical difficult terrain.</p>\n<p>If you have the @UUID[Compendium.pf2e.classfeatures.RlwE99yKnhq8FUuy]{Wild Stride} class feature, you gain a second benefit while in your favored terrain, depending on your choice.</p>\n<ul>\n<li><strong>Aquatic</strong> You gain a swim Speed equal to your Speed. If you already had a swim Speed, you gain a +10-foot status bonus to your swim Speed.</li>\n<li><strong>Arctic</strong> You need to eat and drink only one-tenth as much as usual, you aren't affected by severe or extreme cold, and you can walk across ice and snow at full Speed without needing to Balance.</li>\n<li><strong>Desert</strong> You need to eat and drink only one-tenth as much as usual, you aren't affected by severe or extreme heat, and you can walk along sand at full Speed without needing to Balance.</li>\n<li><strong>Forest, Mountain, or Underground</strong> You gain a climb Speed equal to your Speed. If you already had a climb Speed, you gain a +10-foot status bonus to your climb Speed.</li>\n<li><strong>Plains</strong> You gain a +10-foot status bonus to your land Speed.</li>\n<li><strong>Sky</strong> You gain a +10-foot status bonus to your fly Speed, if you have one.</li>\n<li><strong>Swamp</strong> You can move across bogs at full Speed, even if they are deep enough to be greater difficult terrain or to normally require you to Swim.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.sDftJWPPSUeSZD3A]{Favored Terrain (Gain Climb Speed)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.IpRfT9lL3YR6MH6w]{Favored Terrain (Increase Climb Speed)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.OhLcaJeQy4Nf5Mwo]{Favored Terrain (Gain Swim Speed)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.HKPmrxkZwHRND5Um]{Favored Terrain (Increase Swim Speed)}</p>",
 			"prerequisites": []
 		},
 		"Fear No Law, Fear No One": {
@@ -17328,6 +17349,15 @@
 				}
 			]
 		},
+		"Master Skysage Divination": {
+			"name": "Master Skysage Divination",
+			"description": "<p>You unlock the most powerful secrets hidden in the stars above. You learn a 7th-level spell from any spell list. At 18th level, you learn an 8th-level spell, and at 20th level, you learn a 9th-level spell. Each of these spells must come from the divination school. You gain master proficiency with spell attack rolls and spell DCs for occult spells.</p>",
+			"prerequisites": [
+				{
+					"value": "Expert Skysage Divination"
+				}
+			]
+		},
 		"Master Sorcerer Spellcasting": {
 			"name": "Master Sorcerer Spellcasting",
 			"description": "<p>You gain the master spellcasting benefits.</p>",
@@ -17840,6 +17870,15 @@
 			"name": "Minor Magic",
 			"description": "<p>You've dabbled in minor magical abilities. Choose arcane, divine, occult, or primal magic, and gain two cantrips from the common cantrips that are available in that tradition. You gain the @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} activity, your key spellcasting ability is Charisma, and you're trained in spell attack rolls and DCs for the tradition you chose.</p>",
 			"prerequisites": []
+		},
+		"Minor Omen": {
+			"name": "Minor Omen",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a Reflex save.</p>\n<p><strong>Requirements</strong> You can see the night sky.</p>\n<hr />\n<p>The stars warn you of danger in the nick of time. Reroll the failed save and use the new result.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				}
+			]
 		},
 		"Miracle Worker": {
 			"name": "Miracle Worker",
@@ -18564,6 +18603,36 @@
 			"description": "<p>You can tap into the magic that runs through your blood. You gain <em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{Animal Form}</em> (wolf only, using the statistics for a canine) and <em>@UUID[Compendium.pf2e.spells-srd.9XHmC2JgTUIQ1CCm]{Obscuring Mist}</em> as 2nd-level divine innate spells. You can cast each of these spells once per day.</p>",
 			"prerequisites": []
 		},
+		"Night's Glow": {
+			"name": "Night's Glow",
+			"description": "<p>The stars and moon lend you their light. You gain your choice of the <em>@UUID[Compendium.pf2e.spells-srd.SuBtUJiU6DbSJYIw]{Moonbeam}</em> or <em>@UUID[Compendium.pf2e.spells-srd.Yrek2Yd4k3DPC2zV]{Zenith Star}</em> domain spell. Like your Oatia skysage spells, you cast this focus spell as an occult spell. It costs 1 Focus Point to cast a focus spell. This feat grants a focus pool of 1 Focus Point that you can recover by using the Refocus to reflect upon or gaze at the stars.</p>\n<p><strong>Special</strong> You can take this feat a second time, gaining the focus spell that you didn't gain the first time. Increase the number of Focus Points in your pool by 1.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				}
+			]
+		},
+		"Night's Shine": {
+			"name": "Night's Shine",
+			"description": "<p>Your power from the moon and stars becomes strong enough to illuminate the night sky. You gain your choice of the <em>@UUID[Compendium.pf2e.spells-srd.KG7amdeXWc7MjGXe]{Asterism}</em> or <em>@UUID[Compendium.pf2e.spells-srd.oXCwHBeDja4e0Mx0]{Touch of the Moon}</em> domain spell. Increase the number of Focus Points in your pool by 1.</p>\n<p><strong>Special</strong> You can take this feat a second time, gaining the focus spell that you didn't gain the first time. Increase the number of Focus Points in your pool by 1.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				},
+				{
+					"value": "Night's Glow"
+				}
+			]
+		},
+		"Night's Warning": {
+			"name": "Night's Warning",
+			"description": "<p><strong>Trigger</strong> A creature targets you with an attack and you can see the attacker.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You can see the night sky.</p>\n<hr />\n<p>Portents written in the night sky show you how to avoid an attack. The triggering attack roll targets your Occultism DC instead of your AC. Though this allows you to avoid taking penalties to your AC, it doesn't remove any conditions or other effects causing such penalties. For example, an enemy with sneak attack would still deal extra damage to you for being fat-footed, even though you wouldn't take the –2 circumstance penalty when defending against the attack.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				}
+			]
+		},
 		"Nightvision Adaptation": {
 			"name": "Nightvision Adaptation",
 			"description": "<p>The nanites in your ocular processors have adapted to darkness, enhancing your ability to see in the dark. You gain @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{Darkvision}.</p>",
@@ -18757,6 +18826,15 @@
 				},
 				{
 					"value": "You have died at least once"
+				}
+			]
+		},
+		"Oatia Skysage Dedication": {
+			"name": "Oatia Skysage Dedication",
+			"description": "<p>Your study of the stars unlocks supernatural insights and magic. You either become trained in Astronomy Lore or an expert in Occultism.</p>\n<p>You learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips of your choice; these cantrips can be from any spell tradition, but they must be divination spells. You cast these spells as occult spells as you draw on the stars and night sky. You're trained in occult spell attack rolls and spell DCs. If you have a hand free and you've gazed at the night sky in the last 24 hours, you can usually replace material components with somatic components, so you don't need to use a spell component pouch. Your key spellcasting ability for these spells is Intelligence.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the Oatia skysage archetype.</p>",
+			"prerequisites": [
+				{
+					"value": "trained in Occultism"
 				}
 			]
 		},
@@ -19664,7 +19742,7 @@
 		},
 		"Perfect Resistance": {
 			"name": "Perfect Resistance",
-			"description": "<p>You gain resistance equal to half your level to all damage from effects with the appropriate trait for your School of Perfection: fire for Unblinking Flame, water for Unbreaking Waves, air for Unfolding Wind, and earth for Untwisting Iron. After using a Student of Perfection ki spell, the resistance increases to be equal to your level for 1 round.</p>",
+			"description": "<p>You gain resistance equal to half your level to all damage from effects with the appropriate trait for your School of Perfection: fire for Unblinking Flame, water for Unbreaking Waves, air for Unfolding Wind, and earth for Untwisting Iron. After using a Student of Perfection ki spell, the resistance increases to be equal to your level for 1 round.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.DyX4E7KDkzRnDxzc]{Effect: Perfect Resistance}</p>",
 			"prerequisites": [
 				{
 					"value": "Student of Perfection Dedication"
@@ -23112,6 +23190,15 @@
 			"description": "<p>You're always on the lookout for supplies and valuables. Each time you use the @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} action to search for objects (including secret doors and hazards), you can search for objects in your choice of a @Template[type:emanation|distance:10] around you or an adjacent 15-foot-by-15-foot area, rather than a single adjacent 10-foot-by-10-foot area.</p>",
 			"prerequisites": []
 		},
+		"Scholar's Hunch": {
+			"name": "Scholar's Hunch",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You fail a Lore or Occultism skill check.</p>\n<hr />\n<p>Scholarly debates have taught you to think on your feet. Reroll the failed check and use the new result.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				}
+			]
+		},
 		"Scholar's Inheritance": {
 			"name": "Scholar's Inheritance",
 			"description": "<p>Your parents devoted themselves to alchemical experiments involving elemental energy. You gain the trained proficiency rank in Crafting. If you would automatically become trained in Crafting (from your background or class, for example), you instead become trained in a skill of your choice. You also gain the @UUID[Compendium.pf2e.feats-srd.is3Oz9wt11lNq62K]{Alchemical Crafting} skill feat.</p>",
@@ -26189,6 +26276,24 @@
 			"description": "<p>Your magic has crystallized into a spherical stone. You gain a familiar, except it's a star orb: a Tiny stone of light Bulk. The familiar has no Speeds and must select a Speed familiar ability before it can move, animating in a way appropriate to the chosen Speed and using the statistics of a normal familiar for that day; when it‘s an immobile stone, it can't select any familiar or master abilities that require it to move. It always has the innate surge master ability, which counts against your limit for familiar and master abilities.</p>",
 			"prerequisites": []
 		},
+		"Stargazer's Eyes": {
+			"name": "Stargazer's Eyes",
+			"description": "<p>Long hours in darkened observatories have sharpened your senses. If you don't have low-light vision or darkvision, you gain low-light vision, or if you already have low-light vision, you gain darkvision.</p>\n<p><strong>Special</strong> You can take this feat a second time, upgrading your low-light vision to darkvision.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				}
+			]
+		},
+		"Starlight Armor": {
+			"name": "Starlight Armor",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You armor yourself in the light of distant suns, shielding yourself from harm. The armor grants you resistance 7 to piercing, bludgeoning, and slashing damage. The armor also sheds bright light for 20 feet (and dim light for the next 20 feet).</p>\n<p>Whenever an adjacent creature attacks you, the attacker must attempt a @Check[type:will|dc:resolve(@actor.attributes.spellDC.value)] save against your spell DC at the end of its action. On a failure, it becomes @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} until the end of its next turn. Regardless of the result of the save, the attacker is temporarily immune until the end of its next turn. The dazzling effect has the light and visual traits.</p>\n<p>When you reach 17th level, the resistance increases to 10.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Y96a1OedsU8PVf7z]{Effect: Starlight Armor}</p>\n<hr />\n<p><em>Note: A duration for this ability was not provided by Paizo. The effect linked here is set to 1 minute.</em></p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
+				}
+			]
+		},
 		"Starlit Eyes": {
 			"name": "Starlit Eyes",
 			"description": "<p>Starlight shines in your sight, enhancing your perception and range.</p>\n<p>When you make a ranged Strike while in Arcane Cascade stance, you lower the DC of your flat check to target a creature that's @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} or @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} from you. The DC is reduced to @Check[type:flat|dc:3]{3} instead of 5 against a concealed creature and to @Check[type:flat|dc:9]{9} instead of 11 against a hidden one.</p>\n<p>When you cast shooting star and target a hidden creature, you don't have to attempt the flat check for targeting a hidden creature with a ranged Strike.</p>",
@@ -26198,6 +26303,15 @@
 				},
 				{
 					"value": "starlit span hybrid study"
+				}
+			]
+		},
+		"Starlit Spells": {
+			"name": "Starlit Spells",
+			"description": "<p>The stars reveal and punish your enemies. You can cast <em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{Faerie Fire}</em> and 3rd-level <em>@UUID[Compendium.pf2e.spells-srd.DyiD239dNS7RIxZE]{Searing Light}</em> as occult innate spells, each once per day.</p>",
+			"prerequisites": [
+				{
+					"value": "Oatia Skysage Dedication"
 				}
 			]
 		},
