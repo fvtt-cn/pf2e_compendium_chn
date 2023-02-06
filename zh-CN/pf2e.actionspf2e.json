@@ -75,7 +75,7 @@
         },
         "Barbed Quills": {
             "name": "带刺羽尖 Barbed Quills",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[persistent,bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
@@ -199,7 +199,7 @@
         },
         "Catharsis": {
             "name": "宣情 Catharsis",
-            "description": "<p><strong>触发</strong> 由你选择的宣洩情绪决定</p>\n<hr />\n<p><strong>效果</strong> 你获得宣洩情绪中列出的情绪激化（catharsis activation）效果。你也会获得该情绪的炽情增益，持续3轮。炽情结束时，你会受到宣洩情绪中列出的情绪余波（emotional fallout）影响。使用宣情后，你必须先进行@UUID[Compendium.pf2e.actionspf2e.EhLvRWFKhZ3HtrZO]{安顿情绪 Settle Emotions}行动，才能再次使用宣情。</p>"
+            "description": "<p><strong>触发</strong> 由你选择的宣洩情绪决定</p>\n<hr />\n<p><strong>效果</strong> 你获得宣洩情绪中列出的情绪激化（catharsis activation）效果。你也会获得该情绪的炽情增益，持续3轮。炽情结束时，你会受到宣洩情绪中列出的情绪余波（emotional fallout）影响。使用宣情后，你必须先进行@UUID[Compendium.pf2e.actionspf2e.EhLvRWFKhZ3HtrZO]{安顿情绪 Settle Emotions}行动，才能再次使用宣情。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.JysvElDwGZ5ABQ6x]{效果：炽情}</p>"
         },
         "Change Shape (Anadi)": {
             "name": "变形（半蛛人） Change Shape (Anadi)",
@@ -307,7 +307,7 @@
         },
         "Decipher Writing": {
             "name": "解译文书 Decipher Writing",
-            "description": "<p>当你面对一份尤其古奥或是信息隐秘的文本时，GM可能会要求你进行一个解译文书检定看你是否能理解他的意思。你需要在相应的技能上拥有受训熟练等级才能解译相关的文书——例如，用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用社交技能解译密码或是古代书写等。</p>\n<p>本检定的DC标准基于GM判断你要解译的文书的复杂程度。GM可能允许你检定一次来解译一篇相对较短的文本，或者进行多次检定来分段解译一篇较长的文本。</p>\n<hr />\n<p><strong> 大成功</strong> 你理解了文本的确切含义。</p>\n<p><strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。</p>\n<p><strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值。</p>\n<p><strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。</p><h2 class=\"title\">解译文书任务例子</h2>\n<ul>\n<li><strong>受训</strong> 入门级哲学名著</li>\n<li><strong>专家</strong> 复杂的文本，如加密文本</li>\n<li><strong>大师</strong> 大师级间谍的暗文或深奥的研究笔记</li>\n<li><strong>传奇</strong> 古代天界人写下的艰涩的平面文字</li>\n</ul>"
+            "description": "<p>当你面对一份尤其古奥或是信息隐秘的文本时，GM可能会要求你进行一个解译文书检定看你是否能理解他的意思。你需要在相应的技能上拥有受训熟练等级才能解译相关的文书——例如，用奥法技能解译科学或魔法文献，用神秘技能解译秘传和哲学文本，用宗教技能解译教会经文，用<span data-pf2-action=\"decipherWriting\" data-pf2-skill=\"society\">社群</span>技能解译密码或是古代书写等。</p>\n<p>本检定的DC标准基于GM判断你要解译的文书的复杂程度。GM可能允许你检定一次来解译一篇相对较短的文本，或者进行多次检定来分段解译一篇较长的文本。</p><table><tbody><tr><th>技能</th><th>经常被用于</th></tr><tr><td><span data-pf2-action=\"decipherWriting\" data-pf2-skill=\"arcana\">奥术</span></td><td>有关科学或魔法的写作</td></tr><tr><td><span data-pf2-action=\"decipherWriting\" data-pf2-skill=\"occultism\">神秘</span></td><td>关于奥秘和哲学的神秘文本</td></tr><tr><td><span data-pf2-action=\"decipherWriting\" data-pf2-skill=\"religion\">宗教</span></td><td>经书</td></tr><tr><td><span data-pf2-action=\"decipherWriting\" data-pf2-skill=\"society\">社群</span></td><td>加密的信息或古老的文件</td></tr></tbody></table>\n<hr />\n<p><strong> 大成功</strong> 你理解了文本的确切含义。</p>\n<p><strong>成功</strong> 你理解了文本的正确含义。但如果你是在解读加密的文本，那么你知道的是文本的大意，而非百分之百逐字逐句意义的翻译。</p>\n<p><strong>失败</strong> 你看不懂文本的意思，并且在接下来对该文本的解译文书尝试中承受-2环境减值。</p>\n<p><strong>大失败</strong> 你认为你理解了文本的正确含义，但事实上你读错了其中的信息。</p><h2 class=\"title\">解译文书任务例子</h2>\n<ul>\n<li><strong>受训</strong> 入门级哲学名著</li>\n<li><strong>专家</strong> 复杂的文本，如加密文本</li>\n<li><strong>大师</strong> 大师级间谍的暗文或深奥的研究笔记</li>\n<li><strong>传奇</strong> 古代天界人写下的艰涩的平面文字</li>\n</ul>"
         },
         "Defend": {
             "name": "防卫 Defend",
@@ -339,7 +339,7 @@
         },
         "Disable Device": {
             "name": "解除装置 Disable Device",
-            "description": "<p><strong>需求</strong>某些装置需要你拥有 @UUID[Compendium.pf2e.equipment-srd.zvLyCVD8g2PdHJAc]{盗贼工具} 才能尝试解除它们</p>\n<hr />\n<p>你可以使用这个动作去尝试解除一个陷阱或是其他结构复杂的装置。通常来说，一件装置会需要多个累计的成功检定结果才能被成功解除——取决于它们的设计结构和复杂程度。一副盗贼工具是有用的 - 有时候，是必须的（GM判断） - 解除装置帮手，除此之外，某些高度复杂的装置可能需要你拥有较高的贼活技能熟练等级才能尝试解除。</p>\n<p>你的贼活技能检定结果决定了你在解除装置时取得的进展程度。</p>\n<hr />\n<p><strong>大成功</strong>你直接解除了面前的装置，或是在解除复杂结构的装置时视为获得了两次成功结果。你不会留下你曾经捣鼓过这件装置的痕迹，并且如果这件装置可以重置的话，你可以选择重置它</p>\n<p><strong>成功</strong>你直接解除了面前的装置，或是在解除复杂结构的装置时获得了一次成功结果。</p>\n<p><strong>大失败</strong>装置被你触发了</p>"
+            "description": "<p><strong>需求</strong>某些装置需要你拥有 @UUID[Compendium.pf2e.equipment-srd.zvLyCVD8g2PdHJAc]{盗贼工具} 才能尝试解除它们</p>\n<hr />\n<p>你可以使用这个动作去尝试解除一个陷阱或是其他结构复杂的装置。通常来说，一件装置会需要多个累计的成功检定结果才能被成功解除——取决于它们的设计结构和复杂程度。一副盗贼工具是有用的 - 有时候，是必须的（GM判断） - 解除装置帮手，除此之外，某些高度复杂的装置可能需要你拥有较高的贼活技能熟练等级才能尝试解除。</p>\n<p>你的<span data-pf2-action=\"disableDevice\" data-pf2-glyph=\"D\">贼活</span>技能检定结果决定了你在解除装置时取得的进展程度。</p>\n<hr />\n<p><strong>大成功</strong>你直接解除了面前的装置，或是在解除复杂结构的装置时视为获得了两次成功结果。你不会留下你曾经捣鼓过这件装置的痕迹，并且如果这件装置可以重置的话，你可以选择重置它</p>\n<p><strong>成功</strong>你直接解除了面前的装置，或是在解除复杂结构的装置时获得了一次成功结果。</p>\n<p><strong>大失败</strong>装置被你触发了</p>"
         },
         "Disarm": {
             "name": "卸武 Disarm",
@@ -515,7 +515,7 @@
         },
         "Hunt Prey": {
             "name": "猎杀目标 Hunt Prey",
-            "description": "<p>你指定一个生物为猎杀目标，专注于攻击该生物。你必须能够看到或者听到你的目标，或者在探索时追踪这一猎物。</p>\n<p>你搜索你的猎杀目标的察觉检定上获得+2环境加值，你在@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}你的猎杀目标的生存检定上获得+2环境加值。你还会在对抗你的猎杀目标时忽略远程攻击的第二个射程增量减值。</p>\n<p>你同一时间只能指定一个猎物。如果你在已经指定了一个生物之后对另一个生物使用猎杀目标，你会失去对之前生物的目标指定，而新的生物成为你的目标。你的指定持续到第二次进行每日准备。</p>"
+            "description": "<p>你指定一个生物为猎杀目标，专注于攻击该生物。你必须能够看到或者听到你的目标，或者在探索时追踪这一猎物。</p>\n<p>你@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}你的猎杀目标的察觉检定上获得+2环境加值，你在@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}你的猎杀目标的生存检定上获得+2环境加值。你还会在对抗你的猎杀目标时忽略远程攻击的第二个射程增量减值。</p>\n<p>你同一时间只能指定一个猎物。如果你在已经指定了一个生物之后对另一个生物使用猎杀目标，你会失去对之前生物的目标指定，而新的生物成为你的目标。你的指定持续到第二次进行每日准备。</p>"
         },
         "Hustle": {
             "name": "飞奔 Hustle",
@@ -679,7 +679,7 @@
         },
         "Perform": {
             "name": "演出 Perform",
-            "description": "<p>当你你进行一次简短的表演——一首歌，一圈快速的舞步，几个俏皮话——这是一个演出技能动作。这个动作通常用来快速地展示你的才艺或是尽快取悦特定的观众。一般情况下，演出动作的简短表演不会产生什么特别有力的印象，但它可以辅助你的其他社交行动，比如它可能会降低你接下来的交涉技能检定DC或是直接提升他人对你的态度——GM有权做出这方面的判定。</p>\n<hr />\n<p><strong>大成功</strong> 你的表演震撼人心，观众可能在之后四处表扬你的才能</p>\n<p><strong>成功</strong> 你完全地展现了自己的才华，观众们感谢你的演技</p>\n<p><strong>失败</strong> 你的表演什么效果都没有</p>\n<p><strong>大失败</strong> 你成功的展现了自己有多废，废！</p><h2 class=\"title\">范例表演情景</h2>\n<ul>\n<li><strong>未受训</strong> 站在肥皂盒上向路人演说</li>\n<li><strong>受训</strong> 有心欣赏艺术的观众</li>\n<li><strong>专家</strong> 小贵族或富有商人的品位</li>\n<li><strong>大师</strong> 大贵族甚至是皇室旁系会欣赏的表演</li>\n<li><strong>传奇</strong> 皇家演出，或是来自异界的观众</li>\n</ul>"
+            "description": "<p>当你你进行一次简短的表演——一首歌，一圈快速的舞步，几个俏皮话——这是一个演出技能动作。这个动作通常用来快速地展示你的才艺或是尽快取悦特定的观众。一般情况下，演出动作的简短表演不会产生什么特别有力的印象，但它可以辅助你的其他社交行动，比如它可能会降低你接下来的交涉技能检定DC或是直接提升他人对你的态度——GM有权做出这方面的判定。</p>\n<table>\n\t<tbody><tr><th>表演形式</th><th>额外特性</th><th>例子</th></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"acting\" data-pf2-glyph=\"A\">戏剧</span></td><td>【声音】【语言】【视觉】</td><td>Drama, pantomime, puppetry</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"comedy\" data-pf2-glyph=\"A\">喜剧</span></td><td>【声音】【语言】【视觉】</td><td>Buffoonery, joke telling, limericks</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"dance\" data-pf2-glyph=\"A\">舞蹈</span></td><td>【移动】【视觉】</td><td>Ballet, huara, jig, macru</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"keyboards\" data-pf2-glyph=\"A\">键盘乐</span></td><td>【声音】【操作】</td><td>Harpsichord, organ, piano</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"oratory\" data-pf2-glyph=\"A\">演说</span></td><td>【声音】【语言】</td><td>Epic, ode, poetry, storytelling</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"percussion\" data-pf2-glyph=\"A\">打击乐</span></td><td>【声音】【操作】</td><td>Chimes, drum, gong, xylophone</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"singing\" data-pf2-glyph=\"A\">歌唱</span></td><td>【声音】【语言】</td><td>Ballad, chant, melody, rhyming</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"strings\" data-pf2-glyph=\"A\">弦乐</span></td><td>【声音】【操作】</td><td>Fiddle, harp, lute, viol</td></tr>\n\t<tr><td><span data-pf2-action=\"perform\" data-pf2-variant=\"winds\" data-pf2-glyph=\"A\">吹奏乐</span></td><td>【声音】【操作】</td><td>Bagpipe, flute, recorder, trumpet</td></tr>\n</tbody></table>\n<hr />\n<p><strong>大成功</strong> 你的表演震撼人心，观众可能在之后四处表扬你的才能</p>\n<p><strong>成功</strong> 你完全地展现了自己的才华，观众们感谢你的演技</p>\n<p><strong>失败</strong> 你的表演什么效果都没有</p>\n<p><strong>大失败</strong> 你成功的展现了自己有多废，废！</p><h2 class=\"title\">范例表演情景</h2>\n<ul>\n<li><strong>未受训</strong> 站在肥皂盒上向路人演说</li>\n<li><strong>受训</strong> 有心欣赏艺术的观众</li>\n<li><strong>专家</strong> 小贵族或富有商人的品位</li>\n<li><strong>大师</strong> 大贵族甚至是皇室旁系会欣赏的表演</li>\n<li><strong>传奇</strong> 皇家演出，或是来自异界的观众</li>\n</ul>"
         },
         "Pick a Lock": {
             "name": "开锁 Pick a Lock",
@@ -955,7 +955,7 @@
         },
         "Subsist": {
             "name": "求生 Subsist",
-            "description": "<p>你尝试给自己寻找食水和可以遮风避雨的地方，足够成功的话，也可以给他人提供帮助。GM会根据你尝试求生的具体环境状况决定检定DC。在非常陌生的环境中，你可能需要达到特定的技能熟练度才能尝试进行求生。和大多数休整期行动不同，你可以在最多8小时的探索行动后仍然进行求生行动，但这样做会使你在求生检定上承受-5减值。</p>\n<hr />\n<p><strong>大成功</strong> 你可以为自己加上另一个生物提供足以维生程度的饮食和住所，或是为自己一个人提供舒适（Comfortable）生活标准程度的食物和住所。</p>\n<p><strong>成功</strong> 你为自己找到了足以保证基本生活和遮风避雨的食物及住所。</p>\n<p><strong>失败</strong> 你被风吹雨淋而且没有吃饱，直到你下一次成功获得足够好的饮食和住所前你陷入 @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏} 状态。</p>\n<p><strong>大失败</strong> 你给自己招来麻烦，吃错了东西，或是造成了其他会让你变得更惨的结果。你在接下来一周中所有的求生检定上承受-2环境减值，并且你没有获得任何食物。如果你没有储备的话，可能你很快就会死于冻饿饥渴。</p><h2 class=\"title\">范例求生情景</h2>\n<ul>\n<li><strong>未受训</strong> 郁郁葱葱，天气温和的森林或是车水马龙的都市。</li>\n<li><strong>受训</strong> 常见的温带丘陵或村镇</li>\n<li><strong>专家</strong> 通常的山地或闭塞的小村庄</li>\n<li><strong>大师</strong> 通常的沙漠或是被大军围困的城市</li>\n<li><strong>传奇</strong> 废土或是不死生物城市</li>\n</ul>"
+            "description": "<p>你尝试给自己寻找食水和可以遮风避雨的地方，足够成功的话，也可以给他人提供帮助。一般来说如果你在一个定居点内时倾向使用<span data-pf2-action=\"subsist\" data-pf2-skill=\"society\">社群</span>，而在野外的时候则一般使用<span data-pf2-action=\"subsist\" data-pf2-skill=\"survival\">生存</span>技能。GM会根据你尝试求生的具体环境状况决定检定DC。在非常陌生的环境中，你可能需要达到特定的技能熟练度才能尝试进行求生。和大多数休整期行动不同，你可以在最多8小时的探索行动后仍然进行求生行动，但这样做会使你在求生检定上承受-5减值。</p>\n<hr />\n<p><strong>大成功</strong> 你可以为自己加上另一个生物提供足以维生程度的饮食和住所，或是为自己一个人提供舒适（Comfortable）生活标准程度的食物和住所。</p>\n<p><strong>成功</strong> 你为自己找到了足以保证基本生活和遮风避雨的食物及住所。</p>\n<p><strong>失败</strong> 你被风吹雨淋而且没有吃饱，直到你下一次成功获得足够好的饮食和住所前你陷入 @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏} 状态。</p>\n<p><strong>大失败</strong> 你给自己招来麻烦，吃错了东西，或是造成了其他会让你变得更惨的结果。你在接下来一周中所有的求生检定上承受-2环境减值，并且你没有获得任何食物。如果你没有储备的话，可能你很快就会死于冻饿饥渴。</p><h2 class=\"title\">范例求生情景</h2>\n<ul>\n<li><strong>未受训</strong> 郁郁葱葱，天气温和的森林或是车水马龙的都市。</li>\n<li><strong>受训</strong> 常见的温带丘陵或村镇</li>\n<li><strong>专家</strong> 通常的山地或闭塞的小村庄</li>\n<li><strong>大师</strong> 通常的沙漠或是被大军围困的城市</li>\n<li><strong>传奇</strong> 废土或是不死生物城市</li>\n</ul>"
         },
         "Sustain a Spell": {
             "name": "维持法术 Sustain a Spell",
@@ -1147,7 +1147,7 @@
         },
         "Entity's Resurgence": {
             "name": "实体复苏 Entity's Resurgence",
-            "description": "<p><strong>触发</strong> 你将减至0生命值但没有被立即杀死</p>\n<hr />\n<p><strong>效果</strong> 取代让你陷入失去意识，你的实体会获得控制权。你保留1生命值，你获得等同于你的等级+你的关键属性修正的临时生命值持续1分钟。不过，实体只能控制1分钟或直到你陷入失去意识，以先满足为准。</p>\n<p>当实体控制时，你在攻击骰和伤害骰上获得+1状态加值，通常由GM控制你的角色，扮演该实体。GM也可以决定让你来扮演实体，但他保留有对你所做的任何决定的最终裁定权。无论实体的本质如何，实体肯定会报复危及其容器生命的敌人——即便是邪恶实体也不会改变其忠诚或忽略危险，除非是在最极端的情况下。</p>"
+            "description": "<p><strong>触发</strong> 你将减至0生命值但没有被立即杀死</p>\n<hr />\n<p><strong>效果</strong> 取代让你陷入失去意识，你的实体会获得控制权。你保留1生命值，你获得等同于你的等级+你的关键属性修正的临时生命值持续1分钟。不过，实体只能控制1分钟或直到你陷入失去意识，以先满足为准。</p>\n<p>当实体控制时，你在攻击骰和伤害骰上获得+1状态加值，通常由GM控制你的角色，扮演该实体。GM也可以决定让你来扮演实体，但他保留有对你所做的任何决定的最终裁定权。无论实体的本质如何，实体肯定会报复危及其容器生命的敌人——即便是邪恶实体也不会改变其忠诚或忽略危险，除非是在最极端的情况下。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.yr5ey5qC8dXH749T]{效果：实体复苏}</p>"
         },
         "Spirit's Mercy": {
             "name": "灵魂宽恕 Spirit's Mercy",
@@ -1339,11 +1339,11 @@
         },
         "Wicked Thorns": {
             "name": "险恶棘刺 Wicked Thorns",
-            "description": "<p><strong>触发</strong> 你被无武装打击或非长触及近战武器打击命中。</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你的几根刺会折断并钩入攻击者的身体。你对触发的生物造成[[/r 1d8[piercing]]]伤害。这是一次对抗你的职业DC或法术DC中较高者的基础反射豁免。在大失败时，该生物还会因你的荆棘刺入它的血肉而受到[[/r 1d4[persistent,bleed]]]伤害。</p>\n<p>在第3级和之后的每2级，此伤害增加1d8，并且持续穿刺伤害增加1。</p>\n<p>[[/r (floor(@actor.level/2)d8)[piercing]]]{按等级计算的穿刺伤害}</p>"
+            "description": "<p><strong>触发</strong> 你被无武装打击或非长触及近战武器打击命中。</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你的几根刺会折断并钩入攻击者的身体。你对触发的生物造成[[/r 1d8[piercing]]]伤害。这是一次对抗你的职业DC或法术DC中较高者的基础反射豁免。在大失败时，该生物还会因你的荆棘刺入它的血肉而受到[[/r 1d4[bleed]]]伤害。</p>\n<p>在第3级和之后的每2级，此伤害增加1d8，并且持续穿刺伤害增加1。</p>\n<p>[[/r (floor(@actor.level/2)d8)[piercing]]]{按等级计算的穿刺伤害}</p>"
         },
         "Drive Them Down": {
             "name": "打爆他们 Drive Them Down",
-            "description": "<p>你的敌人不过是你用来打造和开启传奇之路的渣滓。使用组合武器进行一次近战打击，然后再进行一次远程打击，两次攻击需要以同一个敌人为目标；在进行两次攻击时，你不需要改变武器模式。如果近战攻击命中，你会在远程攻击时获得一个+1 环境加值。每次攻击都计入你的多重攻击罚值，但多重攻击罚值在你完成两次攻击前不会增加。如果两次攻击都命中，你会对敌人造成额外[[/r 2d6[persistent,bleed]]]伤害，并且直到持续流血伤害结束，他们处于@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态。</p>"
+            "description": "<p>你的敌人不过是你用来打造和开启传奇之路的渣滓。使用组合武器进行一次近战打击，然后再进行一次远程打击，两次攻击需要以同一个敌人为目标；在进行两次攻击时，你不需要改变武器模式。如果近战攻击命中，你会在远程攻击时获得一个+1 环境加值。每次攻击都计入你的多重攻击罚值，但多重攻击罚值在你完成两次攻击前不会增加。如果两次攻击都命中，你会对敌人造成额外[[/r 2d6[bleed]]]伤害，并且直到持续流血伤害结束，他们处于@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态。</p>"
         },
         "Spring the Trap": {
             "name": "落入圈套 Spring the Trap",
