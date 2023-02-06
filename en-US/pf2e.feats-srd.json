@@ -1,8 +1,5 @@
 {
 	"label": "Feats",
-    "mapping": {
-        "prerequisites": "system.prerequisites.value"
-    },
 	"entries": {
 		"A Home In Every Port": {
 			"name": "A Home In Every Port",
@@ -1777,7 +1774,7 @@
 		},
 		"Assassinate": {
 			"name": "Assassinate",
-			"description": "<p><strong>Requirements</strong> You have designated a mark using @UUID[Compendium.pf2e.actionspf2e.orjJjLdm4XNAcFi8]{Mark for Death} and are completely unnoticed by your mark.</p>\n<hr />\n<p>You Strike with one swift movement, trying to instantly slay your mark. Make a Strike against your mark. If you hit, your mark takes [[/r {6d6}[precision]]]{6d6 extra precision damage} with a basic Fortitude save against your class DC or spell DC, whichever is higher. If the mark critically fails, they die. This is an incapacitation effect. The creature then becomes temporarily immune to your Assassinate for 1 day.</p>",
+			"description": "<p><strong>Requirements</strong> You have designated a mark using @UUID[Compendium.pf2e.actionspf2e.orjJjLdm4XNAcFi8]{Mark for Death} and are completely unnoticed by your mark.</p>\n<hr />\n<p>You Strike with one swift movement, trying to instantly slay your mark. Make a Strike against your mark. If you hit, your mark takes 6d6 extra precision damage with a basic Fortitude save against your class DC or spell DC, whichever is higher. If the mark critically fails, they die. This is an incapacitation effect. The creature then becomes temporarily immune to your Assassinate for 1 day.</p>",
 			"prerequisites": [
 				{
 					"value": "Assassin Dedication"
@@ -3016,7 +3013,7 @@
 		},
 		"Blast Tackle": {
 			"name": "Blast Tackle",
-			"description": "<p><strong>Requirements</strong> You're wielding a two-handed crossbow or a firearm that has the kickback or scatter trait.</p>\n<hr />\n<p>You throw yourself at an enemy, bracing your weapon against it and pulling it close before releasing a destructive shot. Attempt to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple}; if you're wielding your weapon in both hands, you Release one hand to do so. If your Grapple succeeds, you can immediately Strike the target of the Grapple with the required weapon, even if it's a two-handed weapon you're holding in one hand. This Strike deals an additional [[/r {3d6}[precision]]]{3d6 precision damage}. As long the creature remains @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, you can use just one hand to reload the weapon and Strike that creature with it.</p>",
+			"description": "<p><strong>Requirements</strong> You're wielding a two-handed crossbow or a firearm that has the kickback or scatter trait.</p>\n<hr />\n<p>You throw yourself at an enemy, bracing your weapon against it and pulling it close before releasing a destructive shot. Attempt to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple}; if you're wielding your weapon in both hands, you Release one hand to do so. If your Grapple succeeds, you can immediately Strike the target of the Grapple with the required weapon, even if it's a two-handed weapon you're holding in one hand. This Strike deals an additional 3d6 precision damage. As long the creature remains @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, you can use just one hand to reload the weapon and Strike that creature with it.</p>",
 			"prerequisites": [
 				{
 					"value": "way of the vanguard"
@@ -3025,7 +3022,7 @@
 		},
 		"Blasting Beams": {
 			"name": "Blasting Beams",
-			"description": "<p><strong>Requirements</strong> You have a free hand.</p>\n<hr />\n<p>A directed beam of heat or an arc of lightning is one of the simplest ways to project energy. You fire a blast or beam from one hand. Make an attack roll against a creature within 30 feet. If you succeed, the beam deals [[/r (floor(@actor.level/2)d6)]]]{1d6 damage for every 2 levels} you have to the target, or double damage on a critical success.</p>\n<hr />\n<p><strong>Awakening</strong> Your beams blast through targets. Instead of making an attack roll to damage a single creature within 30 feet, you can use Blasting Beams as a 2-action activity to damage all creatures in a @Template[type:line|distance:60], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>\n<hr />\n<p><strong>Awakening</strong> You can choose to launch smaller, quicker beams from your eyes instead. These deal d4s instead of d6s, but the attack has the agile trait, and you don't need a hand free to make it, though your eyes must be uncovered.</p>",
+			"description": "<p><strong>Requirements</strong> You have a free hand.</p>\n<hr />\n<p>A directed beam of heat or an arc of lightning is one of the simplest ways to project energy. You fire a blast or beam from one hand. Make an attack roll against a creature within 30 feet. If you succeed, the beam deals [[/r (floor(@actor.level/2)d6)]]]{1d6 damage for every 2 levels} you have to the target, or double damage on a critical success.</p>\n<hr />\n<p><strong>Awakening</strong> Your beams blast through targets. Instead of making an attack roll to damage a single creature within 30 feet, you can use Blasting Beams as a 2-action activity to damage all creatures in a @Template[type:line|distance:60], with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save.</p>\n<hr />\n<p><strong>Awakening</strong> You can choose to launch smaller, quicker beams from your eyes instead. These deal [[/r (floor(@actor.level/2)d4)]]]{d4s} instead of d6s, but the attack has the agile trait, and you don't need a hand free to make it, though your eyes must be uncovered.</p>",
 			"prerequisites": []
 		},
 		"Blaze Of Revelation": {
@@ -3412,7 +3409,7 @@
 		},
 		"Bone Spikes": {
 			"name": "Bone Spikes",
-			"description": "<p>Sharp shards of bone tear forth from your elbows, wrists, or other parts of your body. For 1 minute, you can make bone spike unarmed Strikes, which deal [[/r 1d6[piercing]]] damage and have the versatile S and sweep traits. When you take the Bone Spikes action, you can choose one weapon on your person and duplicate its weapon runes onto your bone spikes (with the exception of any runes that couldn't apply to the bone spears).</p>\n<hr />\n<p><strong>Awakening</strong> Your bones grow longer, lashing flexibly at range. While you have bone spikes, you can Interact to give your bone spikes reach 10 feet until the end of the current turn.</p>\n<hr />\n<p><strong>Awakening</strong> Grooves in your bone spikes form a channel for venom. Your bone spikes deal [[/r 1d4[persistent,poison]]] damage, which increases to 2d4 at 10th level and 3d4 at 18th level.</p>",
+			"description": "<p>Sharp shards of bone tear forth from your elbows, wrists, or other parts of your body. For 1 minute, you can make bone spike unarmed Strikes, which deal 1d6 piercing damage and have the versatile S and sweep traits. When you take the Bone Spikes action, you can choose one weapon on your person and duplicate its weapon runes onto your bone spikes (with the exception of any runes that couldn't apply to the bone spears).</p>\n<p>@UUID[Compendium.pf2e.feat-effects.ZsO5juyylVoxUkXh]{Effect: Bone Spikes}</p>\n<hr />\n<p><strong>Awakening</strong> Your bones grow longer, lashing flexibly at range. While you have bone spikes, you can Interact to give your bone spikes reach 10 feet until the end of the current turn.</p>\n<hr />\n<p><strong>Awakening</strong> Grooves in your bone spikes form a channel for venom. Your bone spikes deal 1d4 persistent poison damage, which increases to 2d4 at 10th level and 3d4 at 18th level.</p>",
 			"prerequisites": []
 		},
 		"Bone Swarm": {
@@ -4190,7 +4187,7 @@
 		},
 		"Cathartic Mage Dedication": {
 			"name": "Cathartic Mage Dedication",
-			"description": "<p>You've learned to harness a particular emotion and mix it into your magic. Choose an emotion from the Emotional States section to be your catharsis emotion.</p>\n<p>If you don't already cast spells from spell slots, you learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with one cantrip of your choice, from a spell list of your choice. You choose this cantrip from the common spells on your chosen spell list or from other spells to which you have access on that list. You're trained in spell attack rolls and spell DCs for that tradition. Your key spellcasting ability for these spells is Charisma.</p>\n<p>If you can already cast spells from spell slots, you learn one additional cantrip from your spellcasting tradition. If you're a prepared caster, you can prepare this spell in addition to your usual cantrips per day; if you're a spontaneous caster, you add this cantrip to your spell repertoire.</p>\n<p>You gain the @UUID[Compendium.pf2e.actionspf2e.2424g94rpoiN1IPh]{Catharsis} reaction and the @UUID[Compendium.pf2e.actionspf2e.EhLvRWFKhZ3HtrZO]{Settle Emotions} activity.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.EWiUv3UiR3RHSGlA]{Cathartic Mage} archetype.</p>",
+			"description": "<p>You've learned to harness a particular emotion and mix it into your magic. Choose an emotion to be your catharsis emotion.</p>\n<p>If you don't already cast spells from spell slots, you learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with one cantrip of your choice, from a spell list of your choice. You choose this cantrip from the common spells on your chosen spell list or from other spells to which you have access on that list. You're trained in spell attack rolls and spell DCs for that tradition. Your key spellcasting ability for these spells is Charisma.</p>\n<p>If you can already cast spells from spell slots, you learn one additional cantrip from your spellcasting tradition. If you're a prepared caster, you can prepare this spell in addition to your usual cantrips per day; if you're a spontaneous caster, you add this cantrip to your spell repertoire.</p>\n<p>You gain the @UUID[Compendium.pf2e.actionspf2e.2424g94rpoiN1IPh]{Catharsis} reaction and the @UUID[Compendium.pf2e.actionspf2e.EhLvRWFKhZ3HtrZO]{Settle Emotions} activity.</p>\n<p><strong>Emotional States:</strong></p>\n<p>@UUID[Compendium.pf2e.classfeatures.MizJPiKnopfpGmvw]{Catharsis Emotion (Anger)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.rgLaxC3I2L7HSPNn]{Catharsis Emotion (Awe)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.eNFYMQMS2BszErCX]{Catharsis Emotion (Dedication)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.7PutMrgKIaAeKBuU]{Catharsis Emotion (Fear)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.S4uY5ap2yhDRqhd0]{Catharsis Emotion (Hatred)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.zFY2PlJTObXpcQW4]{Catharsis Emotion (Joy)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.lDjKVZ48zbqQf3CU]{Catharsis Emotion (Love)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.jklanV9AbZDnZHaD]{Catharsis Emotion (Misery)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.ccrTv2j7eplr2JU8]{Catharsis Emotion (Pride)}</p>\n<p>@UUID[Compendium.pf2e.classfeatures.T9gUmwghw16itUAO]{Catharsis Emotion (Remorse)}</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.EWiUv3UiR3RHSGlA]{Cathartic Mage} archetype.</p>",
 			"prerequisites": [
 				{
 					"value": "Cha 14 or ability to cast spells from spell slots"
@@ -5044,7 +5041,7 @@
 		},
 		"Communal Tale": {
 			"name": "Communal Tale",
-			"description": "<p>Stories are an experience meant to be shared as a group. When you @UUID[Compendium.pf2e.adventure-specific-actions.5gahZQXf3UVwATSC]{Spin a Tale}, you can designate up to six non-minion allies as the heroes of your story. Each hero, once during the tale, can continue the story in your stead by spending an action to Spin the Tale; if they do, the story continues for another round, as if you had Spun the Tale at the start of your turn. This could allow the story to continue for up to 6 additional rounds, if all possible allies Spin the Tale, though you can continue to Spin the Tale on your own as normal.</p>",
+			"description": "<p>Stories are an experience meant to be shared as a group. When you @UUID[Compendium.pf2e.actionspf2e.hPZQ5vA9QHEPtjFW]{Spin a Tale}, you can designate up to six non-minion allies as the heroes of your story. Each hero, once during the tale, can continue the story in your stead by spending an action to Spin the Tale; if they do, the story continues for another round, as if you had Spun the Tale at the start of your turn. This could allow the story to continue for up to 6 additional rounds, if all possible allies Spin the Tale, though you can continue to Spin the Tale on your own as normal.</p>",
 			"prerequisites": [
 				{
 					"value": "Folklorist Dedication"
@@ -5270,7 +5267,7 @@
 		},
 		"Consume Energy": {
 			"name": "Consume Energy",
-			"description": "<p><strong>Trigger</strong> An enemy within 60 feet uses an ability that has the trait corresponding to your deviation damage type.</p>\n<hr />\n<p>Your connection to energy is so much stronger than the offending display in front of you, allowing you to claim it for yourself. Attempt a counteract check against the triggering effect as you draw it into your body. If you successfully counteract the ability, you gain temporary Hit Points equal to double the counteract level of the ability, which last for 1 minute.</p>\n<hr />\n<p><strong>Awakening</strong> The energy you consume helps empower your abilities. The next ability from the dragon classification that you use increases its range by 30 feet if it has a range, or increases its area by 10 feet if it's a cone or line. If you don't use this benefit within 1 minute, it fades.</p>\n<hr />\n<p><strong>Awakening</strong> You channel some of the seized energy into your next attack. Choose one of your weapons or unarmed attacks. Until the end of your next turn, Strikes with the chosen weapon or unarmed attack deal an additional 1d6 damage of a type matching the energy you consumed.</p>",
+			"description": "<p><strong>Trigger</strong> An enemy within 60 feet uses an ability that has the trait corresponding to your deviation damage type.</p>\n<hr />\n<p>Your connection to energy is so much stronger than the offending display in front of you, allowing you to claim it for yourself. Attempt a [[/r 1d20+(-10+@actor.attributes.classOrSpellDC.value) #Counteract]]{counteract check} against the triggering effect as you draw it into your body. If you successfully counteract the ability, you gain temporary Hit Points equal to double the counteract level of the ability, which last for 1 minute.</p>\n<hr />\n<p><strong>Awakening</strong> The energy you consume helps empower your abilities. The next ability from the dragon classification that you use increases its range by 30 feet if it has a range, or increases its area by 10 feet if it's a cone or line. If you don't use this benefit within 1 minute, it fades.</p>\n<p>@Template[type:cone|distance:40]</p>\n<p>@Template[type:line|distance:70]</p>\n<hr />\n<p><strong>Awakening</strong> You channel some of the seized energy into your next attack. Choose one of your weapons or unarmed attacks. Until the end of your next turn, Strikes with the chosen weapon or unarmed attack deal an additional 1d6 damage of a type matching the energy you consumed.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.eMsI1lR0SuJBCYjn]{Effect: Consume Energy (Augment Strike)}</p>",
 			"prerequisites": []
 		},
 		"Consume Spell": {
@@ -6864,7 +6861,7 @@
 		},
 		"Discerning Strike": {
 			"name": "Discerning Strike",
-			"description": "<p><strong>Requirements</strong> You have successfully identified the target with Recall Knowledge during this combat.</p>\n<hr />\n<p>Identifying a creature is the first step in finding its weaknesses. Attempt a Strike against the target; if successful, you deal an additional [[/r {1d6}[precision]]]{1d6 precision damage}. If you have succeeded on a Recall Knowledge check against the target during this combat and their creature type was previously recorded using @UUID[Compendium.pf2e.feats-srd.0Dy8RlFqrzCVOTl4]{Thorough Reports}, you also deal [[/r 1[persistent,bleed]]] damage. The creature is then temporarily immune to Discerning Strike for 1 day.</p>",
+			"description": "<p><strong>Requirements</strong> You have successfully identified the target with Recall Knowledge during this combat.</p>\n<hr />\n<p>Identifying a creature is the first step in finding its weaknesses. Attempt a Strike against the target; if successful, you deal an additional 1d6 precision damage. If you have succeeded on a Recall Knowledge check against the target during this combat and their creature type was previously recorded using @UUID[Compendium.pf2e.feats-srd.0Dy8RlFqrzCVOTl4]{Thorough Reports}, you also deal [[/r 1[bleed]]] damage. The creature is then temporarily immune to Discerning Strike for 1 day.</p>",
 			"prerequisites": [
 				{
 					"value": "Pathfinder Agent Dedication"
@@ -7024,7 +7021,7 @@
 		},
 		"Distant Wandering": {
 			"name": "Distant Wandering",
-			"description": "<p>Your body falls @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and your spirit projects out of it. While in spirit form, you can't consciously move your body, and you are @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} and inaudible, though a creature still might notice the signs of your presence and passing, just like for an invisible creature affected by silence, or a prying eye. You can freely move about, though you can't touch or move anything, cast spells, attack, or otherwise affect anything around you. Despite your ghostly form, you are not incorporeal and can't pass through barriers you couldn't in your body. Most effects can't harm your spirit form, though some spells, like <em>@UUID[Compendium.pf2e.spells-srd.PHVHBbdHeQRfjLmE]{Spirit Blast}</em> and spirit song, explicitly damage a creature's spirit. You can return to your body as a free action. If you are in spirit form at the beginning of your turn, you must attempt another backlash check for your deviation, returning to your body if you fail.</p>\n<hr />\n<p><strong>Awakening</strong> Your spirit moves at the speed of thought. You gain a fly Speed and a +20-foot status bonus to your Speed while in spirit form.</p>\n<hr />\n<p><strong>Awakening</strong> Time seems to pass more slowly while you are projecting your spirit, letting you notice things around you. When you enter spirit form, you can Recall Knowledge or Seek. You are @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} while in spirit form and can use the extra action only to Recall Knowledge or Seek.</p>",
+			"description": "<p>Your body falls @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} and your spirit projects out of it. While in spirit form, you can't consciously move your body, and you are @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} and inaudible, though a creature still might notice the signs of your presence and passing, just like for an invisible creature affected by <em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{Silence}</em>, or a <em>@UUID[Compendium.pf2e.spells-srd.Ek5XI0aEdZhBgm21]{Prying Eye}</em>. You can freely move about, though you can't touch or move anything, cast spells, attack, or otherwise affect anything around you. Despite your ghostly form, you are not incorporeal and can't pass through barriers you couldn't in your body. Most effects can't harm your spirit form, though some spells, like <em>@UUID[Compendium.pf2e.spells-srd.PHVHBbdHeQRfjLmE]{Spirit Blast}</em> and <em>@UUID[Compendium.pf2e.spells-srd.Ht35SDf9PDStJfoC]{Spirit Song}</em>, explicitly damage a creature's spirit. You can return to your body as a free action. If you are in spirit form at the beginning of your turn, you must attempt another backlash check for your deviation, returning to your body if you fail.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.ngwcN8u7f7CnqGXp]{Effect: Distant Wandering}</p>\n<hr />\n<p><strong>Awakening</strong> Your spirit moves at the speed of thought. You gain a fly Speed and a +20-foot status bonus to your Speed while in spirit form.</p>\n<p><em>Note: No specific fly speed was given by Paizo for this ability. A fly speed equal to your land speed has been used in the effect.</em></p>\n<hr />\n<p><strong>Awakening</strong> Time seems to pass more slowly while you are projecting your spirit, letting you notice things around you. When you enter spirit form, you can Recall Knowledge or Seek. You are @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} while in spirit form and can use the extra action only to Recall Knowledge or @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek}.</p>",
 			"prerequisites": []
 		},
 		"Distracting Explosion": {
@@ -8192,7 +8189,7 @@
 		},
 		"Eerie Flicker": {
 			"name": "Eerie Flicker",
-			"description": "<p><strong>Trigger</strong> A enemy's Strike would hit you and you weren't already @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, or @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} by that enemy.</p>\n<hr />\n<p>Your body flickers momentarily into the Ethereal Plane. You become concealed for 1 round, and the flat check for concealment applies to the Strike that would have hit you. If the flat check fails, the Strike misses you.</p>\n<hr />\n<p><strong>Awakening</strong> When your body flickers, you momentarily assume a terrifying form. If a creature fails the flat check against concealment from your Eerie Flicker, it becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}, and it doesn't reduce the frightened condition from this effect at the end of the same turn it gained the condition.</p>\n<hr />\n<p><strong>Awakening</strong> You can choose to compress your flickering movement into a single moment, increasing your chance to avoid the triggering attack in exchange for a shorter-lived effect. If you choose to do so, the flat check for concealment against the triggering attack increases to DC 9, but the concealment affects only the triggering Strike.</p>",
+			"description": "<p><strong>Trigger</strong> A enemy's Strike would hit you and you weren't already @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, or @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} by that enemy.</p>\n<hr />\n<p>Your body flickers momentarily into the Ethereal Plane. You become concealed for 1 round, and the flat check for concealment applies to the Strike that would have hit you. If the flat check fails, the Strike misses you.</p>\n<hr />\n<p><strong>Awakening</strong> When your body flickers, you momentarily assume a terrifying form. If a creature fails the flat check against concealment from your Eerie Flicker, it becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}, and it doesn't reduce the frightened condition from this effect at the end of the same turn it gained the condition.</p>\n<hr />\n<p><strong>Awakening</strong> You can choose to compress your flickering movement into a single moment, increasing your chance to avoid the triggering attack in exchange for a shorter-lived effect. If you choose to do so, the flat check for concealment against the triggering attack increases to @Check[type:flat|dc:9], but the concealment affects only the triggering Strike.</p>",
 			"prerequisites": []
 		},
 		"Eerie Proclamation": {
@@ -9435,7 +9432,7 @@
 		},
 		"Execution": {
 			"name": "Execution",
-			"description": "<p><strong>Requirements</strong> You have condemned a foe with Harsh Judgment.</p>\n<hr />\n<p>You swing wide, attempting to behead your condemned foe. Make a melee Strike against your condemned foe. If you hit, your condemned foe takes [[/r {8d6}[precision]]]{8d6 extra precision damage} with a basic Fortitude save against your class DC or spell DC, whichever is higher. If the condemned foe is reduced to 0 Hit Points by the execution and requires a head to live, they die. For creatures with multiple heads, this usually kills the creature only if you sever its last head. The creature then becomes temporarily immune to your Execution for 1 day.</p>",
+			"description": "<p><strong>Requirements</strong> You have condemned a foe with Harsh Judgment.</p>\n<hr />\n<p>You swing wide, attempting to behead your condemned foe. Make a melee Strike against your condemned foe. If you hit, your condemned foe takes 8d6 extra precision damage with a basic Fortitude save against your class DC or spell DC, whichever is higher. If the condemned foe is reduced to 0 Hit Points by the execution and requires a head to live, they die. For creatures with multiple heads, this usually kills the creature only if you sever its last head. The creature then becomes temporarily immune to your Execution for 1 day.</p>",
 			"prerequisites": [
 				{
 					"value": "Vigilante Dedication"
@@ -10214,7 +10211,7 @@
 		},
 		"Fang Sharpener": {
 			"name": "Fang Sharpener",
-			"description": "<p>You have filed your teeth into jagged points and have an unusually powerful jaw, making your mouth a dangerous weapon. If you're an irongut goblin, you gain a jaws unarmed attack that deals 1d4 piercing damage, and if you're a razortooth goblin, your jaws unarmed attack deals 1d8 piercing damage and loses the finesse trait. Whenever you score a critical hit with your jaws unarmed attack, your target takes [[/r 1[persistent,bleed]]] damage per weapon damage die.</p>",
+			"description": "<p>You have filed your teeth into jagged points and have an unusually powerful jaw, making your mouth a dangerous weapon. If you're an irongut goblin, you gain a jaws unarmed attack that deals 1d4 piercing damage, and if you're a razortooth goblin, your jaws unarmed attack deals 1d8 piercing damage and loses the finesse trait. Whenever you score a critical hit with your jaws unarmed attack, your target takes [[/r 1[bleed]]] damage per weapon damage die.</p>",
 			"prerequisites": [
 				{
 					"value": "irongut goblin or razortooth goblin heritage"
@@ -11125,7 +11122,7 @@
 		},
 		"Folklorist Dedication": {
 			"name": "Folklorist Dedication",
-			"description": "<p>You are a master archivist and entertainer, capable of pulling wisdom from the tales you tell and weaving your allies and enemies into a powerful narrative. You gain the @UUID[Compendium.pf2e.adventure-specific-actions.5gahZQXf3UVwATSC]{Spin Tale} action.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.0pPtVXH6Duitakbp]{Folklorist} archetype.</p>",
+			"description": "<p>You are a master archivist and entertainer, capable of pulling wisdom from the tales you tell and weaving your allies and enemies into a powerful narrative. You gain the @UUID[Compendium.pf2e.actionspf2e.hPZQ5vA9QHEPtjFW]{Spin Tale} action.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.0pPtVXH6Duitakbp]{Folklorist} archetype.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Performance"
@@ -13596,7 +13593,7 @@
 		},
 		"High-Speed Regeneration": {
 			"name": "High-Speed Regeneration",
-			"description": "<p><strong>Trigger</strong> Your turn begins.</p>\n<hr />\n<p>Your wounds knit together with barely a thought. You regain [[{2*@actor.level}[Healing]]]{Hit Points equal to double your level}. When you gain this deviation, the GM secretly selects one type of energy damage or precious material, such as fire or cold iron. When you take damage of that type, your wound smokes until the end of your next turn, preventing you from using High-Speed Regeneration.</p>\n<hr />\n<p><strong>Awakening</strong> Your regeneration can automatically save you from the brink of death. Once per day, you can use High-Speed Regeneration when your Hit Points would be reduced to 0 instead of the usual trigger. You avoid being knocked out and remain at the number of HP you regained.</p>\n<hr />\n<p><strong>Awakening</strong> Regrowth invigorates you. You gain a +10-foot status bonus to your Speed until the end of your turn.</p>",
+			"description": "<p><strong>Trigger</strong> Your turn begins.</p>\n<hr />\n<p>Your wounds knit together with barely a thought. You regain [[{2*@actor.level}[Healing]]]{Hit Points equal to double your level}. When you gain this deviation, the GM secretly selects one type of energy damage or precious material, such as fire or cold iron. When you take damage of that type, your wound smokes until the end of your next turn, preventing you from using High-Speed Regeneration.</p>\n<hr />\n<p><strong>Awakening</strong> Your regeneration can automatically save you from the brink of death. Once per day, you can use High-Speed Regeneration when your Hit Points would be reduced to 0 instead of the usual trigger. You avoid being knocked out and remain at the number of HP you regained.</p>\n<hr />\n<p><strong>Awakening</strong> Regrowth invigorates you. You gain a +10-foot status bonus to your Speed until the end of your turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.tx0S0fnfZ6Q2o80H]{Effect: High-Speed Regeneration Speed Boost}</p>",
 			"prerequisites": []
 		},
 		"Hijack Undead": {
@@ -15379,7 +15376,11 @@
 		"Keep Pace (Bounty Hunter)": {
 			"name": "Keep Pace (Bounty Hunter)",
 			"description": "<p><strong>Trigger</strong> Your prey is within reach and attempts to move away from you.</p>\n<hr />\n<p>Your prey can't escape. Stride up to your Speed, following the foe and keeping it in reach throughout its movement until it stops moving or you've moved your full Speed.</p>\n<p>You can use Keep Pace to @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrow}, @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb}, @UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{Fly}, or @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim} instead of Stride if you have the corresponding movement type.</p>",
-			"prerequisites": []
+			"prerequisites": [
+				{
+					"value": "Bounty Hunter Dedication"
+				}
+			]
 		},
 		"Keep Pace (Game Hunter)": {
 			"name": "Keep Pace (Game Hunter)",
@@ -16054,7 +16055,7 @@
 		},
 		"Lethal Finisher": {
 			"name": "Lethal Finisher",
-			"description": "<p>You stab your foe in a vital organ, possibly killing them outright. Make a Strike. On a success, you forego your precise strike damage from the finisher.</p>\n<p>Instead, your target takes additional precision damage based on a Fortitude save against your class DC. If your Strike was a critical hit, the target's saving throw outcome is one degree worse.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal [[/r 6 #precision]]{6 precision damage}.</p>\n<p><strong>Success</strong> You deal [[/r {6d6}[precision]]]{6d6 precision damage}.</p>\n<p><strong>Failure</strong> You deal [[/r {12d6}[precision]]]{12d6 precision damage}.</p>\n<p><strong>Critical Failure</strong> You deal [[/r {18d6}[precision]]]{18d6 precision damage}.</p>",
+			"description": "<p>You stab your foe in a vital organ, possibly killing them outright. Make a Strike. On a success, you forego your precise strike damage from the finisher.</p>\n<p>Instead, your target takes additional precision damage based on a Fortitude save against your class DC. If your Strike was a critical hit, the target's saving throw outcome is one degree worse.</p>\n<hr />\n<p><strong>Critical Success</strong> You deal 6 precision damage.</p>\n<p><strong>Success</strong> You deal 6d6 precision damage.</p>\n<p><strong>Failure</strong> You deal 12d6 precision damage.</p>\n<p><strong>Critical Failure</strong> You deal 18d6 precision damage.</p>",
 			"prerequisites": [
 				{
 					"value": "precise strike 6d6"
@@ -18446,7 +18447,7 @@
 		},
 		"Narrative Conduit": {
 			"name": "Narrative Conduit",
-			"description": "<p>You act as a conduit for your companions just as your stories are a conduit between teller and listener. When you @UUID[Compendium.pf2e.adventure-specific-actions.5gahZQXf3UVwATSC]{Spin a Tale} and the hero of your tale Casts a Spell against the villain, you warp the world, allowing the hero to calculate range and cover to the villain from your space instead of their own if they prefer. The hero must choose to calculate both range and cover from the same space; they can't use one space for range and the other for cover.</p>",
+			"description": "<p>You act as a conduit for your companions just as your stories are a conduit between teller and listener. When you @UUID[Compendium.pf2e.actionspf2e.hPZQ5vA9QHEPtjFW]{Spin a Tale} and the hero of your tale Casts a Spell against the villain, you warp the world, allowing the hero to calculate range and cover to the villain from your space instead of their own if they prefer. The hero must choose to calculate both range and cover from the same space; they can't use one space for range and the other for cover.</p>",
 			"prerequisites": [
 				{
 					"value": "Folklorist Dedication"
@@ -18626,7 +18627,7 @@
 		},
 		"Night's Warning": {
 			"name": "Night's Warning",
-			"description": "<p><strong>Trigger</strong> A creature targets you with an attack and you can see the attacker.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You can see the night sky.</p>\n<hr />\n<p>Portents written in the night sky show you how to avoid an attack. The triggering attack roll targets your Occultism DC instead of your AC. Though this allows you to avoid taking penalties to your AC, it doesn't remove any conditions or other effects causing such penalties. For example, an enemy with sneak attack would still deal extra damage to you for being fat-footed, even though you wouldn't take the –2 circumstance penalty when defending against the attack.</p>",
+			"description": "<p><strong>Trigger</strong> A creature targets you with an attack and you can see the attacker.</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You can see the night sky.</p>\n<hr />\n<p>Portents written in the night sky show you how to avoid an attack. The triggering attack roll targets your Occultism DC instead of your AC. Though this allows you to avoid taking penalties to your AC, it doesn't remove any conditions or other effects causing such penalties. For example, an enemy with sneak attack would still deal extra damage to you for being flat-footed, even though you wouldn't take the –2 circumstance penalty when defending against the attack.</p>",
 			"prerequisites": [
 				{
 					"value": "Oatia Skysage Dedication"
@@ -18831,7 +18832,7 @@
 		},
 		"Oatia Skysage Dedication": {
 			"name": "Oatia Skysage Dedication",
-			"description": "<p>Your study of the stars unlocks supernatural insights and magic. You either become trained in Astronomy Lore or an expert in Occultism.</p>\n<p>You learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips of your choice; these cantrips can be from any spell tradition, but they must be divination spells. You cast these spells as occult spells as you draw on the stars and night sky. You're trained in occult spell attack rolls and spell DCs. If you have a hand free and you've gazed at the night sky in the last 24 hours, you can usually replace material components with somatic components, so you don't need to use a spell component pouch. Your key spellcasting ability for these spells is Intelligence.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the Oatia skysage archetype.</p>",
+			"description": "<p>Your study of the stars unlocks supernatural insights and magic. You either become trained in Astronomy Lore or an expert in Occultism.</p>\n<p>You learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with two common cantrips of your choice; these cantrips can be from any spell tradition, but they must be divination spells. You cast these spells as occult spells as you draw on the stars and night sky. You're trained in occult spell attack rolls and spell DCs. If you have a hand free and you've gazed at the night sky in the last 24 hours, you can usually replace material components with somatic components, so you don't need to use a spell component pouch. Your key spellcasting ability for these spells is Intelligence.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.PVwU1LMWcSgD7Q0m]{Oatia Skysage Archetype}.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Occultism"
@@ -18976,7 +18977,7 @@
 		},
 		"One-Millimeter Punch": {
 			"name": "One-Millimeter Punch",
-			"description": "<p>Your punches have incredible force and control. When you damage a target using One-Inch Punch, you can focus your ki to send the foe flying. If you do, the target must attempt a Fortitude save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The target is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed back 10 feet for each action you spent on One-Inch Punch.</p>",
+			"description": "<p>Your punches have incredible force and control. When you damage a target using One-Inch Punch, you can focus your ki to send the foe flying. If you do, the target must attempt a @Check[type:fortitude|dc:resolve(@actor.classDCs.monk.dc.value)] save against your class DC.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is pushed back 5 feet.</p>\n<p><strong>Failure</strong> The target is pushed back 10 feet.</p>\n<p><strong>Critical Failure</strong> The target is pushed back 10 feet for each action you spent on One-Inch Punch.</p>",
 			"prerequisites": [
 				{
 					"value": "One-Inch Punch"
@@ -19071,7 +19072,11 @@
 		"Opportunistic Grapple": {
 			"name": "Opportunistic Grapple",
 			"description": "<p><strong>Requirements</strong> Your prey is within your reach, you have at least one free hand, and your target is no more than one size larger than you.</p>\n<p><strong>Trigger</strong> Your prey critically fails on a melee @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strike's} attack roll against you.</p>\n<hr />\n<p>You attempt an Athletics check to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} your prey.</p>",
-			"prerequisites": []
+			"prerequisites": [
+				{
+					"value": "Bounty Hunter Dedication"
+				}
+			]
 		},
 		"Oracle Dedication": {
 			"name": "Oracle Dedication",
@@ -19122,7 +19127,7 @@
 		},
 		"Orc Warmask": {
 			"name": "Orc Warmask",
-			"description": "<p>You paint your face to create a <em>warmask</em>, an invested magic item of negligible Bulk with an item level equal to your level and a usage of worn (mask). It has the divination trait and a magical tradition trait depending on its type. Donning or removing your <em>warmask</em> requires 1 minute of work, though you don't need to Invest the mask each time. The <em>warmask</em> is unique to you and might signify your hold, your accomplishments, or your faith. While creating your mask, you must choose the source of your <em>warmask</em>'s power from the options below. This source determines the mask's associated skill as well as magical tradition. Once you select this source, it can't be changed. You become trained in the associated skill, and you gain the @UUID[Compendium.pf2e.feats-srd.1Bt7uCW2WI4sM84P]{Dubious Knowledge} skill feat as a bonus feat. You can spend 1 hour performing a ceremony that costs 50 gp to attune yourself more deeply with your <em>warmask</em>. If you do, you gain a +1 item bonus to the associated skill whenever you wear the <em>warmask</em>.</p>\n<hr />\n<ul>\n<li><strong>The Gods</strong> Religion, divine tradition</li>\n<li><strong>The Land</strong> Nature, primal tradition</li>\n<li><strong>Magic</strong> Arcana, arcane tradition</li>\n<li><strong>The Unknown</strong> Occultism, occult tradition</li>\n</ul>",
+			"description": "<p>You paint your face to create a <em>@UUID[Compendium.pf2e.equipment-srd.ZEDDVQDtUZ2qOB5q]{Warmask}</em>, an invested magic item of negligible Bulk with an item level equal to your level and a usage of worn (mask). It has the divination trait and a magical tradition trait depending on its type. Donning or removing your <em>warmask</em> requires 1 minute of work, though you don't need to Invest the mask each time. The <em>warmask</em> is unique to you and might signify your hold, your accomplishments, or your faith. While creating your mask, you must choose the source of your <em>warmask</em>'s power from the options below. This source determines the mask's associated skill as well as magical tradition. Once you select this source, it can't be changed. You become trained in the associated skill, and you gain the @UUID[Compendium.pf2e.feats-srd.1Bt7uCW2WI4sM84P]{Dubious Knowledge} skill feat as a bonus feat. You can spend 1 hour performing a ceremony that costs 50 gp to attune yourself more deeply with your <em>warmask</em>. If you do, you gain a +1 item bonus to the associated skill whenever you wear the <em>warmask</em>.</p>\n<hr />\n<ul>\n<li><strong>The Gods</strong> Religion, divine tradition</li>\n<li><strong>The Land</strong> Nature, primal tradition</li>\n<li><strong>Magic</strong> Arcana, arcane tradition</li>\n<li><strong>The Unknown</strong> Occultism, occult tradition</li>\n</ul>",
 			"prerequisites": []
 		},
 		"Orc Weapon Carnage": {
@@ -19150,7 +19155,7 @@
 		},
 		"Order Explorer": {
 			"name": "Order Explorer",
-			"description": "<p>You have learned the secrets of another druidic order, passing whatever rites of initiation that order requires and gaining access to its secrets. Choose an order other than your own. You gain a 1st-level feat that lists that order as a prerequisite, and you are now a member of that order for the purpose of meeting feat prerequisites. If you commit acts anathema to your new order, you lose all feats and abilities requiring that order but retain your other druid feats and abilities. You don't gain any of the other benefits of the order you chose.</p>",
+			"description": "<p>You have learned the secrets of another druidic order, passing whatever rites of initiation that order requires and gaining access to its secrets. Choose an order other than your own. You gain a 1st-level feat that lists that order as a prerequisite, and you are now a member of that order for the purpose of meeting feat prerequisites. If you commit acts anathema to your new order, you lose all feats and abilities requiring that order but retain your other druid feats and abilities. You don't gain any of the other benefits of the order you chose.</p>\n<p><strong>Special</strong> You can take this feat multiple times. Each time you do, you must choose a different order other than your own.</p>",
 			"prerequisites": []
 		},
 		"Order Magic": {
@@ -20319,7 +20324,11 @@
 		"Posse": {
 			"name": "Posse",
 			"description": "<p><strong>Requirements</strong> You have designated prey with @UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{Hunt Prey}.</p>\n<hr />\n<p>By spending 1 minute giving guidance to help hunt down your prey, you instruct up to five willing creatures to assist you. They gain a +1 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} your prey, to @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Track} your prey, and to @UUID[Compendium.pf2e.actionspf2e.plBGdZhqq5JBl1D8]{Gather Information} about your prey. You and the creatures assisting you gain a +1 circumstance bonus to initiative rolls when entering combat with your prey.</p>\n<p>This benefit lasts until you designate a new prey or your prey dies, whichever comes first. An individual creature assisting you loses this benefit if they're out of your presence for too long to benefit from your instructions. This is usually 1 hour, but is determined by the GM.</p>",
-			"prerequisites": []
+			"prerequisites": [
+				{
+					"value": "Bounty Hunter Dedication"
+				}
+			]
 		},
 		"Potent Poisoner": {
 			"name": "Potent Poisoner",
@@ -20489,7 +20498,7 @@
 		},
 		"Precise Debilitations": {
 			"name": "Precise Debilitations",
-			"description": "<p>You carefully aim and gracefully deliver your debilitations. Add the following debilitations to the list you can choose from when you use @UUID[Compendium.pf2e.actionspf2e.bp0Up04x3dzGK5bB]{Debilitating Strike}.</p>\n<ul>\n<li><strong>Debilitation</strong> The target takes an additional [[/r {2d6}[precision]]]{2d6 precision damage} from your attacks.</li>\n<li><strong>Debilitation</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}.</li>\n</ul>",
+			"description": "<p>You carefully aim and gracefully deliver your debilitations. Add the following debilitations to the list you can choose from when you use @UUID[Compendium.pf2e.actionspf2e.bp0Up04x3dzGK5bB]{Debilitating Strike}.</p>\n<ul>\n<li><strong>Debilitation</strong> The target takes an additional 2d6 precision damage from your attacks.</li>\n<li><strong>Debilitation</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}.</li>\n</ul>",
 			"prerequisites": [
 				{
 					"value": "thief racket"
@@ -20734,7 +20743,7 @@
 		},
 		"Propulsive Leap": {
 			"name": "Propulsive Leap",
-			"description": "<p>By expelling flames from your feet or levitating through electrical repulsion, you propel yourself through the air. For 1 minute, you gain a fly Speed equal to your Speed or 20 feet, whichever is greater. If you aren't on solid ground at the end of your turn, you must attempt another backlash check for your deviation, though you remain airborne even if you fail your check unless the damage from the check renders you @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}.</p>\n<hr />\n<p><strong>Awakening</strong> You blast through the air at great speed, gaining a +15-foot status bonus to your Fly speed from Propulsive Leap.</p>\n<hr />\n<p><strong>Awakening</strong> You can use your propulsion as a makeshift weapon. The first time each round you Fly starting from the ground, all creatures adjacent to you take 1d4 damage for every 2 levels you have, with a basic Reflex save.</p>",
+			"description": "<p>By expelling flames from your feet or levitating through electrical repulsion, you propel yourself through the air. For 1 minute, you gain a fly Speed equal to your Speed or 20 feet, whichever is greater. If you aren't on solid ground at the end of your turn, you must attempt another backlash check for your deviation, though you remain airborne even if you fail your check unless the damage from the check renders you @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RU6D7pNQSBt1zSuK]{Effect: Propulsive Leap}</p>\n<hr />\n<p><strong>Awakening</strong> You blast through the air at great speed, gaining a +15-foot status bonus to your Fly speed from Propulsive Leap.</p>\n<hr />\n<p><strong>Awakening</strong> You can use your propulsion as a makeshift weapon. The first time each round you Fly starting from the ground, all creatures adjacent to you take [[/r (floor(@actor.level/2)d4)]]{1d4 damage for every 2 levels} you have, with a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save.</p>",
 			"prerequisites": []
 		},
 		"Protect Ally": {
@@ -21245,7 +21254,7 @@
 		},
 		"Quill Spray": {
 			"name": "Quill Spray",
-			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[persistent,bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[persistent,bleed]]]{Levelled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{Levelled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
 			"prerequisites": [
 				{
 					"value": "quillcoat shisk or quill unarmed attack"
@@ -21434,71 +21443,6 @@
 		"Ranged Combatant": {
 			"name": "Ranged Combatant",
 			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 damage and has the magical and propulsive traits.</p>\n<p>When you select this feat, choose a damage type: acid, bludgeoning, cold, electricity, fire, negative, piercing, positive, or slashing. If your eidolon is a celestial, fiend, or monitor with an alignment other than true neutral, you can choose a damage type in its alignment.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Acid)": {
-			"name": "Ranged Combatant (Acid)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 acid damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Bludgeoning)": {
-			"name": "Ranged Combatant (Bludgeoning)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 bludgeoning damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Chaotic)": {
-			"name": "Ranged Combatant (Chaotic)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 chaotic damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Cold)": {
-			"name": "Ranged Combatant (Cold)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 cold damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Electricity)": {
-			"name": "Ranged Combatant (Electricity)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 electricity damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Evil)": {
-			"name": "Ranged Combatant (Evil)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 evil damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Fire)": {
-			"name": "Ranged Combatant (Fire)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 fire damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Good)": {
-			"name": "Ranged Combatant (Good)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 good damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Lawful)": {
-			"name": "Ranged Combatant (Lawful)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 damage and has the magical and propulsive traits.</p>\n<p>When you select this feat, choose a damage type: acid, bludgeoning, cold, electricity, fire, negative, piercing, positive, or slashing. If your eidolon is a celestial, fiend, or monitor with an alignment other than true neutral, you can choose a damage type in its alignment.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Negative)": {
-			"name": "Ranged Combatant (Negative)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 negative damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Piercing)": {
-			"name": "Ranged Combatant (Piercing)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 piercing damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Positive)": {
-			"name": "Ranged Combatant (Positive)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 positive damage and has the magical and propulsive traits.</p>",
-			"prerequisites": []
-		},
-		"Ranged Combatant (Slashing)": {
-			"name": "Ranged Combatant (Slashing)",
-			"description": "<p>Spines, flame jets, and holy blasts are just some of the ways your eidolon might strike from a distance. It gains a ranged unarmed attack with a range increment of 30 feet that deals 1d4 slashing damage and has the magical and propulsive traits.</p>",
 			"prerequisites": []
 		},
 		"Ranged Disarm": {
@@ -21832,7 +21776,7 @@
 		},
 		"Rebounding Assault": {
 			"name": "Rebounding Assault",
-			"description": "<p><strong>Requirements</strong> You're wielding a loaded firearm or loaded crossbow in one hand and a bludgeoning or slashing melee weapon in the other.</p>\n<hr />\n<p>You hurl your melee weapon at an opponent, then fire a bullet into the weapon's hilt, making it deal additional damage and bounce back to your grasp. Make a thrown ranged Strike with the melee weapon, then a ranged Strike with your firearm. Both Strikes use the same multiple attack penalty. If the melee weapon doesn't already have the thrown trait, it gains the thrown 10 feet trait during a Rebounding Assault.</p>\n<p>If both attacks are successful, the bolt or bullet hits the thrown melee weapon instead of your target, adding its force into one attack. Combine the damage from both Strikes, using the thrown weapon's damage type, and add an additional [[/r {1d6}[precision]]]{1d6 precision damage}. The impact sends the melee weapon rebounding off the target and back to your hand.</p>\n<p>In any circumstance other than both attacks hitting, carry out the individual Strikes normally. The thrown weapon doesn't rebound and remains in the target's space as normal for thrown weapons.</p>",
+			"description": "<p><strong>Requirements</strong> You're wielding a loaded firearm or loaded crossbow in one hand and a bludgeoning or slashing melee weapon in the other.</p>\n<hr />\n<p>You hurl your melee weapon at an opponent, then fire a bullet into the weapon's hilt, making it deal additional damage and bounce back to your grasp. Make a thrown ranged Strike with the melee weapon, then a ranged Strike with your firearm. Both Strikes use the same multiple attack penalty. If the melee weapon doesn't already have the thrown trait, it gains the thrown 10 feet trait during a Rebounding Assault.</p>\n<p>If both attacks are successful, the bolt or bullet hits the thrown melee weapon instead of your target, adding its force into one attack. Combine the damage from both Strikes, using the thrown weapon's damage type, and add an additional 1d6 precision damage. The impact sends the melee weapon rebounding off the target and back to your hand.</p>\n<p>In any circumstance other than both attacks hitting, carry out the individual Strikes normally. The thrown weapon doesn't rebound and remains in the target's space as normal for thrown weapons.</p>",
 			"prerequisites": []
 		},
 		"Rebounding Toss": {
@@ -22876,7 +22820,7 @@
 		},
 		"Rule of Three": {
 			"name": "Rule of Three",
-			"description": "<p><strong>Requirements</strong> You have @UUID[Compendium.pf2e.adventure-specific-actions.5gahZQXf3UVwATSC]{Spun a Tale}.</p>\n<p><strong>Trigger</strong> The villain of the tale you've spun makes an attack roll with a given weapon or unarmed attack, uses a particular special ability (such as a Breath Weapon), or Casts a Spell against the hero, and they used that same attack, special ability, or spell against the hero on the previous turn.</p>\n<hr />\n<p>Heroes learn from their previous failures, often succeeding on the third attempt. You narrate a tale of the hero's success, granting them a +2 circumstance bonus to their AC or saving throw against the triggering effect. If the villain has used the same effect against the hero on both of their last two turns, and you used Rule of Three on that effect last turn as well, the bonus increases to +4.</p>",
+			"description": "<p><strong>Requirements</strong> You have @UUID[Compendium.pf2e.actionspf2e.hPZQ5vA9QHEPtjFW]{Spun a Tale}.</p>\n<p><strong>Trigger</strong> The villain of the tale you've spun makes an attack roll with a given weapon or unarmed attack, uses a particular special ability (such as a Breath Weapon), or Casts a Spell against the hero, and they used that same attack, special ability, or spell against the hero on the previous turn.</p>\n<hr />\n<p>Heroes learn from their previous failures, often succeeding on the third attempt. You narrate a tale of the hero's success, granting them a +2 circumstance bonus to their AC or saving throw against the triggering effect. If the villain has used the same effect against the hero on both of their last two turns, and you used Rule of Three on that effect last turn as well, the bonus increases to +4.</p>",
 			"prerequisites": [
 				{
 					"value": "Folklorist Dedication"
@@ -23822,7 +23766,7 @@
 		},
 		"Shadow Sneak Attack": {
 			"name": "Shadow Sneak Attack",
-			"description": "<p>You gain the @UUID[Compendium.pf2e.classfeatures.j1JE61quDxdge4mg]{Sneak Attack} class feature, except you deal [[/r {1d6}[precision]]]{1d6 precision damage} regardless of your level.</p>\n<p>Sneak attack from multiple sources isn't cumulative. If you have sneak attack from more than one source, use only the highest number of dice when you sneak attack rather than adding the amounts together.</p>",
+			"description": "<p>You gain the @UUID[Compendium.pf2e.classfeatures.j1JE61quDxdge4mg]{Sneak Attack} class feature, except you deal 1d6 precision damage regardless of your level.</p>\n<p>Sneak attack from multiple sources isn't cumulative. If you have sneak attack from more than one source, use only the highest number of dice when you sneak attack rather than adding the amounts together.</p>",
 			"prerequisites": [
 				{
 					"value": "Shadowdancer Dedication"
@@ -25617,117 +25561,6 @@
 		"Specialty Crafting": {
 			"name": "Specialty Crafting",
 			"description": "<p>Your training focused on Crafting one particular kind of item. Select one of the specialties listed below; you gain a +1 circumstance bonus to Crafting checks to Craft items of that type. If you are a master in Crafting, this bonus increases to +2. If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>\n<table class=\"pf2-table\" style=\"white-space: nowrap;\">\n<thead>\n<tr>\n<th>Specialty</th>\n<th>Applicable Items</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Alchemy*</td>\n<td>Alchemical items such as elixirs</td>\n</tr>\n<tr>\n<td>Artistry</td>\n<td>Fine art, including jewelry</td>\n</tr>\n<tr>\n<td>Blacksmithing</td>\n<td>Durable metal goods, including metal armor</td>\n</tr>\n<tr>\n<td>Bookmaking</td>\n<td>Books and paper</td>\n</tr>\n<tr>\n<td>Glassmaking</td>\n<td>Glass, including glassware and windows</td>\n</tr>\n<tr>\n<td>Leatherworking</td>\n<td>Leather goods, including leather armor</td>\n</tr>\n<tr>\n<td>Pottery</td>\n<td>Ceramic goods</td>\n</tr>\n<tr>\n<td>Shipbuilding</td>\n<td>Ships and boats</td>\n</tr>\n<tr>\n<td>Stonemasonry</td>\n<td>Stone goods and structures</td>\n</tr>\n<tr>\n<td>Tailoring</td>\n<td>Clothing</td>\n</tr>\n<tr>\n<td>Weaving</td>\n<td>Textiles, baskets, and rugs</td>\n</tr>\n<tr>\n<td>Woodworking</td>\n<td>Wooden goods and structures</td>\n</tr>\n</tbody>\n</table>\n<p>* You must have the Alchemical Crafting skill feat to Craft alchemical items.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Alchemy)": {
-			"name": "Specialty Crafting (Alchemy)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft alchemical items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Alchemical Items such as Elixirs</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				},
-				{
-					"value": "Alchemical Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Artistry)": {
-			"name": "Specialty Crafting (Artistry)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft art items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Fine art, including jewelry</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Blacksmithing)": {
-			"name": "Specialty Crafting (Blacksmithing)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft metal goods. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Durable metal goods, including metal armor</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Bookmaking)": {
-			"name": "Specialty Crafting (Bookmaking)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft books. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Books and paper</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Glassmaking)": {
-			"name": "Specialty Crafting (Glassmaking)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft glass items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Glass, including glassware and windows</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Leatherworking)": {
-			"name": "Specialty Crafting (Leatherworking)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft leather items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Leather goods, including leather armor</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Pottery)": {
-			"name": "Specialty Crafting (Pottery)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft ceramic items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Ceramic goods</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Shipbuilding)": {
-			"name": "Specialty Crafting (Shipbuilding)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft ships. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Ships and Boats</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Stonemasonry)": {
-			"name": "Specialty Crafting (Stonemasonry)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft stone items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Stone goods and structures</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Tailoring)": {
-			"name": "Specialty Crafting (Tailoring)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft clothing. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Clothing</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Weaving)": {
-			"name": "Specialty Crafting (Weaving)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft woven items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Textiles, baskets, and rugs</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Crafting"
-				}
-			]
-		},
-		"Specialty Crafting (Woodworking)": {
-			"name": "Specialty Crafting (Woodworking)",
-			"description": "<p>Your training focused on Crafting one particular kind of item. You gain a +1 circumstance bonus to Crafting checks to Craft wooden items. If you are a master in Crafting, this bonus increases to +2.</p>\n<hr />\n<p><strong>Sample Items</strong> Wooden goods and structures</p>\n<p>If it's unclear whether the specialty applies, the GM decides. Some specialties might apply only partially. For example, if you were making a morningstar and had specialty in woodworking, the GM might give you half your bonus because the item requires both blacksmithing and woodworking.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Crafting"
@@ -27751,7 +27584,7 @@
 		},
 		"Tectonic Stomp": {
 			"name": "Tectonic Stomp",
-			"description": "<p>You cause minor tremors that topple your enemies. All creatures in a @Template[type:emanation|distance:30] who are standing on the ground take [[/r 1d6[bludgeoning]]] damage for every 2 levels you have, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. A creature that fails its save also falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p>[[/r (floor(@actor.level/2)d6)[Bludgeoning]]]{Leveled Bludgeoning Damage}</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp also ejects large fragments from the ground. You raise up to three stone chunks from the ground in unoccupied squares in the emanation; the stones can't be adjacent to one another. The chunks are 5 feet tall, block movement, and are large enough to @UUID[Compendium.pf2e.actionspf2e.ust1jJSCZQUhBZIz]{Take Cover} behind. They have AC 10, Hardness 8, and Hit Points equal to your level. They are immune to critical hits and precision damage. A stone chunk crumbles away when it has 0 Hit Points, and all of them crumble after 1 minute or when you use Tectonic Stomp again.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp rattles those who fail horribly. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
+			"description": "<p>You cause minor tremors that topple your enemies. All creatures in a @Template[type:emanation|distance:30] who are standing on the ground take [[/r (floor(@actor.level/2)d6)[Bludgeoning]]]{1d6 bludgeoning damage for every 2 levels} you have, with a @Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. A creature that fails its save also falls @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp also ejects large fragments from the ground. You raise up to three stone chunks from the ground in unoccupied squares in the emanation; the stones can't be adjacent to one another. The chunks are 5 feet tall, block movement, and are large enough to @UUID[Compendium.pf2e.actionspf2e.ust1jJSCZQUhBZIz]{Take Cover} behind. They have AC 10, Hardness 8, and Hit Points equal to your level. They are immune to critical hits and precision damage. A stone chunk crumbles away when it has 0 Hit Points, and all of them crumble after 1 minute or when you use Tectonic Stomp again.</p>\n<hr />\n<p><strong>Awakening</strong> Your stomp rattles those who fail horribly. A creature that critically fails its save is also @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1}.</p>",
 			"prerequisites": []
 		},
 		"Telekinetic Slip": {
@@ -28291,7 +28124,7 @@
 		},
 		"Titan Swing": {
 			"name": "Titan Swing",
-			"description": "<p>Your limbs tense as you deliver a mighty swing. Make a melee Strike. If it hits, you deal an extra die of weapon damage and push the target back by 5 feet. If you're at least 10th level, increase this to two extra dice and push the target by 10 feet, and if you're at least 18th level, increase it to three extra dice and push the target by 15 feet.</p>\n<hr />\n<p><strong>Awakening</strong> On a critical hit, you push the target back double the normal distance and knock it @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> On a hit, you deal [[/r 1d6[persistent,bleed]]] damage. This increases to 2d6 at 10th level and 3d6 at 18th level.</p>",
+			"description": "<p>Your limbs tense as you deliver a mighty swing. Make a melee Strike. If it hits, you deal an extra die of weapon damage and push the target back by 5 feet. If you're at least 10th level, increase this to two extra dice and push the target by 10 feet, and if you're at least 18th level, increase it to three extra dice and push the target by 15 feet.</p>\n<hr />\n<p><strong>Awakening</strong> On a critical hit, you push the target back double the normal distance and knock it @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<hr />\n<p><strong>Awakening</strong> On a hit, you deal 1d6 bleed damage. This increases to 2d6 at 10th level and 3d6 at 18th level.</p>",
 			"prerequisites": []
 		},
 		"Titan Wrestler": {
@@ -28380,7 +28213,11 @@
 		"Tools Of The Trade": {
 			"name": "Tools Of The Trade",
 			"description": "<p>You're well-versed in weapons that allow you to bring bounties in alive. You are trained with the following weapons: @UUID[Compendium.pf2e.equipment-srd.YUzPv0i8d8p2J9yx]{Bola}, @UUID[Compendium.pf2e.equipment-srd.TLQErnOpM9Luy7rL]{Sap}, and @UUID[Compendium.pf2e.equipment-srd.f1gwoTkf3Nn0v3PN]{Whip}. You gain access to bolas. Whenever you gain a class feature that grants you expert or greater proficiency in a given weapon or weapons, you also gain that proficiency in the weapons listed.</p>\n<p>In addition, you take no penalty when making a nonlethal attack with a weapon without the nonlethal trait.</p>",
-			"prerequisites": []
+			"prerequisites": [
+				{
+					"value": "Bounty Hunter Dedication"
+				}
+			]
 		},
 		"Topple Foe": {
 			"name": "Topple Foe",
@@ -29971,7 +29808,7 @@
 		},
 		"Vicious Snares": {
 			"name": "Vicious Snares",
-			"description": "<p>You've learned how to create traps that cause greater injuries. You deal an additional [[/r {1d6}[precision]]]{1d6 precision damage} with damaging snares you craft. This increases to [[/r {2d6}[precision]]]{2d6 additional precision damage} if you're legendary in Crafting.</p>",
+			"description": "<p>You've learned how to create traps that cause greater injuries. You deal an additional 1d6 precision damage with damaging snares you craft. This increases to 2d6 additional precision damage if you're legendary in Crafting.</p>",
 			"prerequisites": [
 				{
 					"value": "expert in Crafting"
@@ -30138,87 +29975,6 @@
 		"Virtuosic Performer": {
 			"name": "Virtuosic Performer",
 			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when making a certain type of performance. If you are a master in Performance, this bonus increases to +2. Select one of the following specialties and apply the bonus when attempting Performance checks of that type. If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Acting)": {
-			"name": "Virtuosic Performer (Acting)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when acting. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Drama, pantomime, puppetry</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Comedy)": {
-			"name": "Virtuosic Performer (Comedy)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when performing comedy. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Buffoonery, joke telling, limericks</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Dance)": {
-			"name": "Virtuosic Performer (Dance)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when dancing. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Ballet, huara, jig, macru</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Keyboards)": {
-			"name": "Virtuosic Performer (Keyboards)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when playing an instrument with a keyboard. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Harpsichord, organ, piano</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Oratory)": {
-			"name": "Virtuosic Performer (Oratory)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when orating. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Epic, ode, poetry, storytelling</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Percussion)": {
-			"name": "Virtuosic Performer (Percussion)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when playing a percussion instrument. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Chimes, drum, gong, xylophone</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Singing)": {
-			"name": "Virtuosic Performer (Singing)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when singing. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Ballad, chant, melody, rhyming</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Strings)": {
-			"name": "Virtuosic Performer (Strings)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when playing a string instrument. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Fiddle, harp, lute, viol</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
-			"prerequisites": [
-				{
-					"value": "trained in Performance"
-				}
-			]
-		},
-		"Virtuosic Performer (Winds)": {
-			"name": "Virtuosic Performer (Winds)",
-			"description": "<p>You have exceptional talent with one type of performance. You gain a +1 circumstance bonus when playing a wind instrument. If you are a master in Performance, this bonus increases to +2.</p>\n<hr />\n<p><strong>Example performances</strong> Bagpipe, flute, recorder, trumpet</p>\n<p>If it's unclear whether the specialty applies, the GM decides.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Performance"
@@ -31022,87 +30778,6 @@
 		"Wilderness Spotter": {
 			"name": "Wilderness Spotter",
 			"description": "<p>Select one type of terrain from the following list: aquatic, arctic, desert, forest, mountain, plains, sky, swamp, or underground. You can use Survival in place of Perception to roll initiative when in the selected terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter. You can also use Survival instead of Perception to notice traps in natural locations in the chosen terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Aquatic)": {
-			"name": "Wilderness Spotter (Aquatic)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in aquatic terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in aquatic terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Arctic)": {
-			"name": "Wilderness Spotter (Arctic)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in arctic terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in arctic terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Desert)": {
-			"name": "Wilderness Spotter (Desert)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in desert terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in desert terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Forest)": {
-			"name": "Wilderness Spotter (Forest)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in forested terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in forested terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Mountain)": {
-			"name": "Wilderness Spotter (Mountain)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in mountainous terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in mountainous terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Plains)": {
-			"name": "Wilderness Spotter (Plains)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when on plains in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations on plains; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Sky)": {
-			"name": "Wilderness Spotter (Sky)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in the sky in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in the sky; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Swamp)": {
-			"name": "Wilderness Spotter (Swamp)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when in swampy terrain in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations in swampy terrain; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
-			"prerequisites": [
-				{
-					"value": "expert in Survival"
-				}
-			]
-		},
-		"Wilderness Spotter (Underground)": {
-			"name": "Wilderness Spotter (Underground)",
-			"description": "<p>You can use Survival in place of Perception to roll initiative when underground in a natural location (not a structure) even if you weren't tracking or otherwise using Survival before the encounter.</p>\n<p>You can also use Survival instead of Perception to notice traps in natural locations when underground; if you find a snare in this way, you can also use Survival instead of Thievery to Disable the Device.</p>\n<hr />\n<p><strong>Special</strong> You can select this feat more than once. Each time you select it, the feat applies to a new type of terrain.</p>",
 			"prerequisites": [
 				{
 					"value": "expert in Survival"
