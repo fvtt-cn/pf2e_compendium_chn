@@ -1166,6 +1166,18 @@
         "Effect: Starlight Armor": {
             "name": "效果: 星光护甲 Starlight Armor",
             "description": "<p>来自遥远太阳的光芒保护你免受伤害。星光护甲赋予你7点穿刺、钝击和挥砍抗力。护甲还能在20尺范围内发出明亮光照（在之后的20尺范围发出昏暗光照）。</p>\n<p>当你到达17级时，抗力增加到10。</p>"
+        },
+        "Effect: Encroaching Presence": {
+            "description": "<p>看到并接触浩瀚众界会让你对异星影响敞开心扉，扭曲你的感知和思想。</p>\n<p><strong>轻微反噬</strong> 不可名状之物触动了你的心灵，留下了挥之不去的恐惧。你陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>\n<p><strong>中度反噬</strong> 迷惑的幻象和虚构的事物遮住了你的视线，仿佛你正在通过另一种异星感官观察东西。 在10 分钟内，所有生物都对你具有@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，因为它们被一层只有你能看到的视觉扭曲所覆盖。</p>\n<p><strong>严重反噬</strong> 你的生命力被抽走，异星实体将你的灵魂拉到它所在的地方。你陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，直到下次日常准备。</p>",
+            "name": "效果: 理智侵蚀 Encroaching Presence"
+        },
+        "Effect: Energetic Meltdown": {
+            "description": "<p>当你通过特异能力引导能量时，其中一些能量会反噬你，它们会让你的体温飙升或在你的皮肤上跳跃。</p>\n<p><strong>轻微反噬</strong> 能量冲刷你的身体，你受到[[/r @actor.level]]{等同于你等级的能量伤害}。</p>\n<p><strong>中度反噬</strong> 能量破坏你的身体。在受到伤害之后，你获得和反噬相匹配的能量弱点，直到你下次每日准备。弱点等于你等级的三分之一。你还会失去你对对应能力类型的免疫（如果你有的话），直到你下次每日准备。</p>\n<p><strong>严重反噬</strong> 你体内为你特异能力供能的能量熔炉或能量井完全超载，不受控制的能量爆发你身上倾泻而出。你对@Template[type:emanation|distance:30]范围内所有生物造成[[/r (@actor.level)d6]]{每个等级1d6的能量伤害}，@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。你自动受到全伤害，无豁免。</p>",
+            "name": "效果: 能量崩溃 Energetic Meltdown"
+        },
+        "Effect: Strained Metabolism": {
+            "description": "<p>你身体的超频生理需要花费比平时更多的营养，让你在战斗中途变得虚弱。</p>\n<p><strong>轻微反噬</strong> 你的高速代谢耗尽了身体的能量储备，让你陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你吃东西（这通常需要2个交互的工作：一个取出食物，另一个用来吃）。</p>\n<p><strong>中度反噬</strong> 贪婪的饥饿会破坏你的身体。你陷入力竭1、笨拙1和@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，直到你吃一顿完整的餐食，这至少需要10分钟时间。</p>\n<p><strong>严重反噬</strong> 你身体的劳累让你几乎无法行动。你被反胃感折磨，陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}，并且你还会陷入力竭1和笨拙1，直到你能吃一顿完整的餐食（这需要你先移除恶心状态）。你还陷入疲乏，直到你能得到完整休息（8个小时）。</p>",
+            "name": "效果: 高速代谢 Strained Metabolism"
         }
     }
 }
