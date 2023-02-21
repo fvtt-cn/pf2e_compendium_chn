@@ -44,7 +44,7 @@
                 },
                 "Spray Acid": {
                     "name": "喷射酸液 Spray Acid",
-                    "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 掘地虫对@Template[type:cone|distance:30]范围喷射酸液，造成[[/r (3d6)[acid]]]{3d6酸液伤害}和[[/r (1d6)[persistent,acid]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。</p>"
+                    "description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 掘地虫对@Template[type:cone|distance:30]范围喷射酸液，造成[[/r (3d6)[acid]]]{3d6酸液伤害}和[[/r (1d6)[persistent,acid]]]伤害（@Check[type:reflex|dc:20|basic:true]豁免）。</p>"
                 }
             }
         },
@@ -54,15 +54,15 @@
             "senses": "昏暗视觉, 灵敏嗅觉（模糊）30尺",
             "publicNotes": "<p>这种无毒的蛇名字源于球蟒在受惊时，有蜷缩成球的倾向，不过，大多数人都清楚球蟒的狩猎策略就是缠绕猎物并用强大的肌肉将其压碎。即便如此，勇敢的爬虫学家有时还是会把球蟒当做宠物饲养。</p>\n<hr />\n<p>蛇的种类多样，从盘踞密林缠卷猎物的蟒蛇，到有着致命啮咬的剧毒蝰蛇。不管怎样，所有的蛇都是通过张开其双颚整个吞咽猎物，再利用充满力量的肌肉将食物从喉腔转移至胃部消化。</p>",
             "items": {
-                "NeJvQpMPGMIfzdCG": {
+                "Tighten Coils": {
                     "name": "紧收缠缚 Tighten Coils",
                     "description": "<p><strong>触发</strong> 一个被球蟒@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物尝试进行@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}。</p>\n<hr />\n<p><strong>效果</strong> 逃脱检定的DC加2。</p>"
                 },
-                "aZ0lzdc6SrYbvfX6": {
+                "Constrict": {
                     "name": "紧勒 Constrict",
                     "description": "<p>[[/r (1d8)[bludgeoning]]]{1d8钝击伤害}, @Check[type:fortitude|dc:17|basic:true|showDC:all]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "l6OEi0DzuPlz6OeT": {
+                "Wrap in Coils": {
                     "name": "蜷曲缠缚 Wrap in Coils",
                     "description": "<p><strong>需求</strong> 一个小型或中型的生物被球蟒的啮咬所@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。</p>\n<hr />\n<p><strong>效果</strong> 球蟒缠绕上生物，张开双颚啮咬进行攻击，而后紧勒该生物。球蟒只能盘住一个生物。</p>"
                 }
@@ -76,46 +76,46 @@
             "allSaves": "对抗魔法全豁免获得+1状态加值",
             "publicNotes": "<p>当人们悄悄谈论关于恶魔的恐怖故事时，大多数人想象中的恶魔形象都是巴洛炎魔——一个燃烧着火焰的高大人形，一个长着角的梦魇，手持燃烧的鞭子和剑，在夜空中飞翔，寻找它的新受害者。在深渊中，巴洛炎魔以将军或副官的身份服务于恶魔领主们，他们通常会指挥庞大的恶魔军团。它身高14尺，只有那些一生犯下无数罪行的人——才能为巴洛炎魔的诞生提供养料。更常见的情况是，巴洛炎魔由一群罪人的灵魂共同孕育。</p>\n<h4>巴洛领主 Balor Lords</h4>\n<p>少数由单一灵魂形成巴洛炎魔有可能最终超越它们原本就拥有的强大力量，成为一个新生的恶魔领主。这些巴洛领主是21-25级的生物，在深渊之中统御着各自的国度。随着时间的推移，巴洛领主可以进一步升格为拥有不同力量的独特生物，甚至晋升为真正的恶魔领主。</p>\n<hr />\n<p>当一个有罪之人的灵魂受到审判并被送至无底深渊时，它会成为致命的魔族——恶魔。恶魔是罪恶的化身，从一般的罪恶例如愤怒、暴食，到更“特别”的堕落，例如对酷刑的痴迷或对祖国的背叛。恶魔一经诞生，它们便被双重目的驱动：其一是不断积累力量变得更强，其二是腐化凡人的灵魂让其被罪恶玷污。通过这种方式恶魔保证了有源源不断的新恶魔来支持它们在深渊中不断扩张的军队。</p>",
             "items": {
-                "C3vgtExLgNdN7GHz": {
+                "strike-Vorpal Cold Iron Silver Longsword": {
                     "name": "斩首寒铁银质长剑 Vorpal Cold Iron Silver Longsword"
                 },
-                "K33vakNPDetkh1iP": {
+                "strike-Cold Iron Silver Flame Whip": {
                     "name": "寒铁银质火焰鞭 Cold Iron Silver Flame Whip"
                 },
                 "nnTlOr0YpS0mwSt7": {
                     "name": "心灵感应100尺"
                 },
-                "AcetPc7srVrIa4vs": {
-                    "name": "借机攻击 Attack of Opportunity",
-                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]"
-                },
-                "iE5eD6UZECDALlPI": {
+                "Aura of Flame": {
                     "name": "烈焰灵光 Aura of Flame",
                     "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在灵光范围内开始回合的敌人受到[[/r (3d6+10)[fire]]]{3d6+10火焰伤害}，如果它被巴洛炎魔@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，则受到[[/r (6d6+20)[fire]]]{6d6+20火焰伤害}。一个生物如果使用徒手打击命中巴洛炎魔，则受到[[/r (3d6+10)[fire]]]{3d6+10火焰伤害}，一件武器如果打击命中巴洛炎魔，则武器受到[[/r (3d6+10)[fire]]]{3d6+10火焰伤害}。</p>"
                 },
-                "zgR8Rwk8qwhkLVy6": {
+                "Death Throes": {
                     "name": "垂死挣扎 Death Throes",
                     "description": "<p>当巴洛炎魔死亡时，它的身体爆炸在@Template[type:emanation|distance:100]{100尺灵光}范围爆发出炽烈的恶魔之焰，范围内的所有生物和物体都会受到[[/r (16d10)[fire]]]{16d10火焰伤害}（@Check[type:reflex|dc:45|basic:true]豁免）。由于烈焰灌注了深渊能量，范围内所有生物的火焰抗力只有一半生效。拥有火焰免疫的生物不会获得通常的免疫效果，但其豁免结果自动上调一级。因为巴洛炎魔的垂死挣扎而生命值降为0的生物则彻底被烧成灰烬。</p>"
                 },
-                "4rs5uETeGIZjVUCC": {
+                "Dimensional Dervish": {
                     "name": "次元狂舞 Dimensional Dervish",
                     "description": "<p>巴洛炎魔能以一个单动作释放它的五环内在法术<em>@UUID[Compendium.pf2e.spells-srd.VlNcjmYyu95vOUe8]{次元门 Dimension Door}</em>。</p>"
                 },
-                "UupBqSBXKanyWoA6": {
+                "Dispelling Strike": {
                     "name": "驱散打击 Dispelling Strike",
                     "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>触发</strong> 巴洛炎魔以武器打击命中一个生物、物品或法术效果。</p>\n<hr />\n<p><strong>效果</strong> 巴洛炎魔对此次打击命中的目标施展内在法术<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>。</p>"
                 },
-                "iSVjVMy4wUULtEXe": {
+                "Infuse Weapons": {
                     "name": "注能武器 Infuse Weapons",
                     "description": "<p>巴洛炎魔所持有的任何武器都变成由寒铁和银打造的<em>+3@UUID[Compendium.pf2e.equipment-srd.woxl2FrrgAcJDu0t]{上等强击}@UUID[Compendium.pf2e.equipment-srd.6xaxxKfvXED6LfIY]{斩首}武器</em>。不适用于斩首符文的武器不会获得斩首效果。巴洛炎魔可以将攻击时外加的邪恶伤害转变为混乱伤害。巴洛炎魔能以一个交互动作召唤出一条火焰长鞭。这条鞭子如同巴洛炎魔所持有的其他武器一样享受同样的增益。</p>"
                 },
-                "R7wSakgDTKzgP8Eo": {
+                "Lifedrinker": {
                     "name": "汲取生命 Lifedrinker",
                     "description": "<p><strong>触发</strong> 巴洛炎魔杀死一只至少15级的生物。</p>\n<hr />\n<p><strong>效果</strong> 巴洛吸取目标的生命，并且恢复[[/r (10d8+80)[healing]]]{10d8+80生命值}。</p>"
                 },
-                "zyK8S6224cjBrzpM": {
+                "Whip Reposition": {
                     "name": "鞭子移位 Whip Reposition",
                     "description": "<p>当巴洛炎魔以它的鞭子打击@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{攫抓 Grabs}一个生物时候，它可以把目标生物移动至鞭子触及范围内的任何空间。巴洛炎魔可以移动且不结束攫抓状态，只要它能确保该生物依然位于它的鞭子触及范围之内。并且巴洛炎魔可以随时以一个交互动作将该生物移动到鞭子触及范围内的任何空间里。</p>"
+                },
+                "Attack of Opportunity (Special)":{
+                    "name": "借机攻击 Attack of Opportunity (特殊)",
+                    "description": "<p>除了一般的触发方式之外，当巴洛炎魔触及范围内的一个生物进行专注特征的动作时也能触发它的借机攻击。它可以打断该专注动作，并且普通命中就能打断，并不一定需要造成重击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 }
             }
         },
@@ -123,24 +123,13 @@
             "data":{},
             "name": "犬魔 Barghest",
             "senses": "黑暗视觉, 灵敏嗅觉（模糊）30尺",
-            "dr": [
-                {
-                    "type": "fire",
-                    "description": 5
-                },
-                {
-                    "exceptions": "除魔法",
-                    "type": "physical",
-                    "description": 5
-                }
-            ],
             "publicNotes": "<p>犬魔是暴食的生物，以凡人的脂肪为食并生长。通过吞食受害者的肉体，他们的身体能以一种没人能预料的方式进行突变，变成高等犬魔。犬魔常利用它们的变形能力来统治地精部落，或者伪装成异常聪明的狼来在农村地区小心地狩猎。它们之间不能很好地合作，因为每一只犬魔都想把所有尸体据为己有；如果在小范围内存在太多只犬魔，通常会导致同类相食。</p>\n<hr />\n<p>犬魔是长着地精面孔和类人生物手掌的狼形魔族。他们在主物质位面追猎灵魂来满足它们恶魔般的饥渴。很久以前，犬魔居住在地狱的深坑里，侍奉阿斯莫蒂斯（Asmodeus）。但是拉玛什图（Lamashtu）绑走了其中最强大的四只作为其宠物，同时它们也作为一个被称为“英雄神”的神系（pantheon of hero-gods）被邪恶的地精所崇拜。在这之后，犬魔的效忠的对象和它们的秉性都发生了显著的变化。时至今日，犬魔依然和地精关系密切，但这只是为了满足自己的胃口。</p>",
             "items": {
-                "pkCKdy44WRzMrMB3": {
+                "Change Shape": {
                     "name": "变形 Change Shape",
                     "description": "<p>犬魔能变成地精亚种（地精、大地精或熊地精）或狼形态，或变回自己的真实形态。当犬魔变为地精亚种时，它失去爪抓和啃咬打击，体型变成地精那样的小型，并且速度变为20尺。当犬魔变形为狼的时候，速度变为40尺并且啃咬获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}能力。每个犬魔个体都只能有一种地精形态或狼形态。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.o6ZI01zZBQDASuaw]{效果: 狼形态}</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "e800cwjTJcAqZ2x0": {
+                "Feed": {
                     "name": "吞食 Feed",
                     "description": "<p>每月1次，犬魔能花费一分钟吞食一具尸体，它的检定和DC都获得+1状态加值。之后它每次进食的时候，此加值继续+1。犬魔进食4次之后，它进化成@UUID[Compendium.pf2e.pathfinder-bestiary.DlRe4c2XlBSpwmms]{高等犬魔 Greater Barghest}，并且状态加值结束。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.i4S6h5c1KK4FLq6w]{效果: 吞食}</p>"
                 }
@@ -157,23 +146,23 @@
                     "name": "运动感知60尺",
                     "description": "<p>黑布丁怪可以通过振动与空气的流动感知附近发生的运动。</p>"
                 },
-                "pRRtkR99srCWUO1j": {
+                "Corrosive Mass": {
                     "name": "腐蚀 Corrosive Mass",
                     "description": "<p>用金属或者木制武器民众黑布丁怪的生物必须通过一次@Check[type:reflex|dc:22]豁免，否则其武器受到[[/r (2d6)[acid]]]{2d6酸液伤害}（在如常对黑布丁怪造成伤害之后）。投掷武器和弹药会自动承受此伤害，且无法进行豁免。</p>"
                 },
-                "SeJXe222cuooTJUx": {
+                "Split": {
                     "name": "分裂 Split",
                     "description": "<p>黑布丁怪被能够造成挥砍、穿刺的攻击命中时，若黑布丁怪还有至少10HP，它会分裂成两个相同的黑布丁怪，每个拥有原本生命值的一半。</p>\n<p>一只黑布丁怪留在原本的空间中，另一只出现在相邻的未被占据的空间中。如果所有相邻空间都被占据，则它会自动推开生物或是物品后填满那个空间（由DM判断某物体或生物是否会因为太大或太过稳固而无法被推动）。</p>"
                 },
-                "dH7eKw8pDJQDkR3P": {
+                "Constrict": {
                     "name": "紧勒 Constrict",
                     "description": "<p>[[/r (1d8+7)[bludgeoning]+(1d6)[acid]]]{1d8+7钝击伤害+1d6酸液伤害}, @Check[type:fortitude|dc:26|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "x3yCpybINerCQY3Q": {
+                "Corrosive Touch": {
                     "name": "腐蚀之触 Corrosive Touch",
                     "description": "<p>当布丁怪用伪肢命中一名生物时，生物身上的护甲或衣物以及生物自身都会受到同等的酸液伤害。</p>"
                 },
-                "iIggw0JAX98xzjTY": {
+                "Suction": {
                     "name": "吸附 Suction",
                     "description": "<p>布丁怪可以攀爬在天花板或是其他倒置的表面上，不过对它而言这类表面属于困难地形。</p>"
                 }
@@ -183,26 +172,26 @@
             "data":{},
             "name": "沼蜍沼泽先知 Boggard Swampseer",
             "senses": "黑暗视觉",
-            "speed": "swamp stride",
+            "speed": "沼泽奔行",
             "publicNotes": "<p>沼蜍沼泽先知通过信仰恶魔领主果甘蜍来获得施法力量的馈赠，他们用自己的力量统治沼蜍人村庄，协调其余村庄的秩序并计划袭击周边的社群。</p>\n<hr />\n<p>沼蜍人是好斗的两栖类人生物，他们生活在沼泽、湿地甚至部分雨林中。沼蜍人的成长过程首先从卵孵化为蝌蚪，他们会激烈地争夺食物甚至会在这场斗争中吃掉自己的兄弟姐妹。在接下来的3年里，幸存下来的沼蜍人在学习狩猎、制造和战争的基础知识——一切在力量至上的社会中幸存所需要的理解的知识——的同时，长出双手、双腿和肺部。大多数沼蜍人社会的顶端阶级是身胖体肥的沼泽先知（swampseer），他们懂得如何使用邪恶的神术。</p>",
             "items": {
-                "9SboqcQona3PXQIx": {
+                "Destructive Croak": {
                     "name": "破灭鸣叫 Destructive Croak",
                     "description": "<p>沼泽先知发出强力的嘶鸣，这会对@Template[type:emanation|distance:15]{15尺弥漫}范围的非沼蜍人生物造成[[/r (4d6)[sonic]]]{4d6音波伤害}（@Check[type:fortitude|dc:19|basic:true]豁免）。</p>\n<p>任何处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物都会承受额外音波伤害，伤害数值为惊惧状态数值的两倍。</p>\n<p>沼泽先知在之后的[[/br 1d4 #rounds]]{1d4轮}内无法再次使用破灭鸣叫。</p>"
                 },
-                "80CuEcGtDQ6fUIyY": {
+                "Drowning Drone": {
                     "name": "淹没之音 Drowning Drone",
                     "description": "<p><strong>触发</strong> 沼泽先知或他的60尺内的1名盟友尝试豁免检定对抗听觉或音波效果</p>\n<hr />\n<p><strong>效果</strong> 沼泽先知会发出低沉的鸣叫压过其他声音。他要投掷1次@Check[type:performance]检定。若沼泽先知和他位于区域内的沼蜍盟友可以进行选择，在沼泽先知的表演检定和他们的豁免结果中取较高的数值，并以此来判断对抗听觉或音波效果后产生的效果。</p>"
                 },
-                "xBIoPO0Yl00JwtXW": {
+                "Swamp Stride": {
                     "name": "沼泽奔行 Swamp Stride",
                     "description": "<p>沼蜍先知能忽略由于沼泽地形特征产生的困难地形。</p>"
                 },
-                "z8bl09rqF4yCJDy4": {
+                "Terrifying Croak": {
                     "name": "恐惧鸣叫 Terrifying Croak",
                     "description": "<p>沼蜍先知发出可怕的鸣叫声。@Template[type:emanation|distance:30]{30尺范围}内的任何非沼蜍人都会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，除非他们能够成功通过@Check[type:will|dc:19]豁免。</p>\n<p>豁免中掷出大成功的生物会在1分钟内临时免疫该能力。</p>"
                 },
-                "A33mGw1DCgRJRDSe": {
+                "Tongue Grab": {
                     "name": "蛙舌攫抓 Tongue Grab",
                     "description": "<p>若沼蜍先知用蛙舌命中1个生物，那么该生物会被他@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。生物可以通过命中AC 15并造成至少4点挥砍伤害来切开蛙舌。</p>\n<p>尽管这么做不会对沼蜍先知造成伤害，但它可以使沼蜍先知无法再次使用蛙舌打击，直至沼蜍先知通过1星期的休息才能够重新使用蛙舌。</p>"
                 }
@@ -215,19 +204,19 @@
             "languages": "(对于幽暗地域的亚种，则为地底通用语)",
             "publicNotes": "<p>这种大型甲壳类食肉怪物也被称为chu' ullothis，它们潜伏在池塘、泥沼和沼泽的水面之下，等待着用巨大的爪子抓住猎物，然后用触手麻痹它们，然后它们会把猎物生吞。</p>\n<p>它们既可以生活在淡水，也可以生活在咸水中，甚至幽暗地域（Darklands）的地下海洋和湖泊中都能找到它们的踪迹。虽然甲伏怪水性很好，但它们更喜欢吃陆生生物。它们最喜欢的捕猎方式是从水面下一跃而出，用带毒素的触须麻痹猎物，然后如果它们不能直接吃掉猎物的话，会开心地把抽搐的猎物拖进水里淹死。居住在地表的甲伏怪更喜欢吃蜥蜴人（lizardfolk），而在幽暗地域的地下湖泊里的甲伏怪则喜欢吃任何东西，除了味道恶心的地蜥人（xulgaths）。</p>\n<p>甲伏怪能说话并具有理解力，但这些生物除了嘲笑他们的食物之外很少和其他物种交流。在它们开始享用猎物之前，它发出一种几乎没人能听懂的神秘咯咯声，似乎是在描述自己将如何享用猎物的肉。也许甲伏怪相信侮辱和污蔑能让肉质更美味可口，但真相可能永远都不会为人所知：几乎所有甲伏怪都拒绝进行任何有意义的沟通，哪怕是在被囚禁和拷问的时候。</p>\n<p>不知道除了疯狂的交配之外它们是否还存在其他社交行为，因为它们的智能似乎只局限于专注进食、用生理痛苦折磨有知觉的生物、用它们最喜欢的食物和战利品装饰巢穴、以及繁殖。</p>",
             "items": {
-                "fZTQMVZbBOPoJ37I": {
+                "Constrict": {
                     "name": "紧勒 Constrict",
                     "description": "<p>[[/r (1d8+9)[bludgeoning]]]{1d8+9钝击伤害}, @Check[type:fortitude|dc:25|basic:true]豁免(仅能在爪子@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}目标时使用)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "MScqq1IasW1Ei33T": {
+                "Mandibles": {
                     "name": "颚咬 Mandibles",
                     "description": "<p><strong>需求</strong> 一个生物被甲伏怪的触手@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，并且被@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。</p>\n<hr />\n<p><strong>效果</strong> 生物受到[[/r (3d6)[piercing]]]{3d6穿刺伤害}。</p>"
                 },
-                "NM1DnsbI55f4G1ix": {
+                "Paralytic Venom": {
                     "name": "麻痹毒液 Paralytic Venom",
                     "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1轮)</p>"
                 },
-                "uOtLx35G2OFWHztX": {
+                "Tentacle Transfer": {
                     "name": "触手转移 Tentacle Transfer",
                     "description": "<p><strong>需求</strong> 甲伏怪@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 甲伏怪把擒抱的生物从爪子转移到它的触手上，或者反过来。当一个生物被转移到触须上时，就会暴露在麻痹毒液的影响下，并且在甲伏怪每个回合开始时，只要生物一直被触手擒抱，都会暴露在麻痹毒液的影响下。</p>"
                 }
@@ -239,11 +228,11 @@
             "senses": "黑暗视觉, 烟雾视觉",
             "publicNotes": "<p>这些巨大的啮齿动物由闷烧的煤炭和元素之火组成，毒烟不断从它们燃烧的血肉中喷出。</p>\n<hr />\n<p>火元素是灼热的火元素位面的破坏性的具现。</p>",
             "items": {
-                "wqhHoIIgE3jfAgCx": {
+                "Smoke Vision": {
                     "name": "烟雾视觉 Smoke Vision",
                     "description": "<p>煤渣鼠无视烟雾带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}效果。</p>"
                 },
-                "vhcrEIRKkfTwrwDs": {
+                "Fetid Fumes": {
                     "name": "焦臭烟雾 Fetid Fumes",
                     "description": "<p>@Template[type:emanation|distance:5]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入灵光或在灵光中开始它的回合的生物必须通过@Check[type:fortitude|dc:22]检定否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}效果。</p>\n<p>在灵光范围内的所有生物，包括煤渣鼠自己，都被烟雾@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</p>"
                 }
@@ -255,15 +244,15 @@
             "senses": "黑暗视觉",
             "publicNotes": "<p>蛰伏伪怪是居住在黑暗之地的怪异和偏执的生物，长得像飞行的蝠鲼（manta rays）。它们是狡猾且谨慎的猎手，关于它们的动机、它们的攻击模式、甚至它们的社会和历史的描写常常是一堆互相矛盾的报告、混乱的谣言和可怕的叙述。</p>\n<p>和格拉利昂上的许多怪异生物一样，蛰伏伪怪起初是由阿尔古苏（alghollthu）创造的，它们培育蛰伏伪怪用来监视阿兹兰特（Azlanti）奴隶。在阿兹兰特帝国复灭之后，阿尔古苏驱逐了它们制造的蛰伏伪怪们，而后者则逃进了幽暗地域的下层区域。在他们作为新家园的地窟和扭曲的坑道里，他们的秉性——尤其是对他们的前任主人的恐惧——发生了戏剧性的变化，从怀疑变成了偏执、自负、施虐，甚至更为糟糕。现在，大多数蛰伏伪怪独自生活，潜伏在更容易找到的猎物，并能深入探究内心的恐惧的幽暗地域。它们的执念是如此强烈，以至于甚至很少和同类发生互动，只是在交配时与另一只蛰伏伪怪短暂相处，然后快速分开。</p>\n<p>但是也存在例外情况。偶尔，一个具有魅力的蛰伏伪怪祭司会召集一支由许多这种生物和其他黑暗之地居民组成的邪教集团，崇拜不可名状的远古邪神。这些罕见的蛰伏伪怪鞭策着自己的追随着，和追随者一起进行疯狂的黑暗仪式和令人发指的行为。虽然这些邪教徒堕落且具有破坏性，但他们很少能比教派的创始者活得更久。</p>",
             "items": {
-                "JzE14vwBQYTNvg3Q": {
+                "Shadow Shift": {
                     "name": "暗影偏转 Shadow Shift",
                     "description": "<p>蛰伏伪怪在昏暗光照下时获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，即使是面对具有@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fFu2sZz4KB01fVRc]{昏暗视觉 Low-Light Vision}和@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.qCCLZhnp2HhP3Ex6]{黑暗视觉 Darkvision}的生物时。</p>"
                 },
-                "P0Q4Hgs9e8hwRX5G": {
+                "Envelop": {
                     "name": "包裹 Envelop",
                     "description": "<p>蛰伏伪怪以[[/r 1d20+14 #Envelop Attack]]{+14攻击加值}对一个相邻的生物进行一次攻击，对抗目标的反射DC。如果成功，它就会包裹目标，而目标陷入@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}状态。包裹状态的蛰伏伪怪受到攻击时，它自身承受一半伤害，而被包裹的目标承受另外一半伤害。蛰伏伪怪在这种状态下无法飞行，只能以陆地速度带着被包裹的生物一起移动。蛰伏伪怪只能对被束缚的生物进行啃咬打击，但是能对其他生物进行甩尾打击。</p>\n<p>自愿把蛰伏伪怪披在身上的生物会被自动包裹。蛰伏伪怪只能包裹大型或更小体型的生物，并且一次同时只能包裹一个生物。</p>"
                 },
-                "7DB79rjng9ShAwNU": {
+                "Infrasonic Moan": {
                     "name": "次声低鸣 Infrasonic Moan",
                     "description": "<p>蛰伏伪怪发出次声低鸣，具有以下效果之一。生物必须通过DC 22的意志鉴定，成功则不受影响。任何尝试此豁免的生物在1小时内对此能力临时免疫。因为这种低鸣是次声，因此大多数类人生物如果没有意识到蛰伏伪怪的存在，就无法察觉到造成这种效果的根源。</p>\n<ul>\n<li><strong>恐惧 Fear</strong> 恐惧, 失能）@Check[type:will|dc:22|traits:fear,incapacitation]。@Template[type:emanation|distance:30]范围内的所有生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，并且@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}直到该生物的下一回合结束）。</li>\n<li><strong>恶心 Nausea</strong> @Check[type:will|dc:22]。@Template[type:emanation|distance:30]范围内的所有生物@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，并陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</li>\n<li><strong>恍惚 Stupor</strong> @Check[type:will|dc:22]。蛰伏伪怪指定30尺内的一个生物。该生物陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟。</li>\n</ul>"
                 }
@@ -275,7 +264,7 @@
             "senses": "昏暗视觉, 灵敏嗅觉(模糊感官) 30尺",
             "publicNotes": "<p>优雅而威严的云巨人有乳白色或粉蓝色的皮肤。与大多数巨人不同的是，云巨人的道德阵营非常多样化。少部分云巨人是绝对中立的，但其他云巨人中，善良和邪恶的五五开。善良的云巨人通常是富有公益心的基建狂魔，对商贸和文化创新很感兴趣。这些巨人往往通过外交手段与邻国接触，并与其他爱好和平的国家建立牢固的关系。邪恶的云巨人则是孤立和排外的。他们更喜欢居住在隐蔽的山谷的洞穴、孤独山峰的峭壁，袭击它们想要的东西，对待其他生物就像碾死路边的蚂蚁。这样的观念对立可能会在相互为邻的云巨人社群之间引发大量冲突，而侵略者们往往会威胁到它们爱好和平的同族的贸易路线。</p>\n<p>传说中的浮空城由天赋异禀的云巨人女王和国王统治。虽然大多数云巨人都表示这种事情纯属幻想，但是其他一些云巨人却对此三缄其口或闪烁其词。</p>\n<hr />\n<p>巨人是生活在世界偏远地区的大型类人生物。它们被分为许多不同类型。</p>",
             "items": {
-                "6iyj26yHFPai9vr3": {
+                "Wind Strike": {
                     "name": "御风击 Wind Strike",
                     "description": "<p>云巨人的刺叉环绕着咆哮着的狂暴气流，当它以刺叉打击一个生物，如果命中，则目标生物受到额外[[/r (4d8)[bludgeoning]]]{4d8钝击伤害}，并且@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟。无论打击是否命中，@Template[type:emanation|distance:20]{20尺弥漫}范围内每个非云巨人的生物（包括打击的目标）都被气流击中，必须通过@Check[type:fortitude|dc:30|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响</p>\n<p><strong>成功</strong> 生物受到[[/r (2d8)[sonic]]]{2d8音波伤害}。</p>\n<p><strong>失败</strong> 生物受到[[/r (4d8)[sonic]]]{4d8音波伤害}，并且@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}直到它的下一回合结束。</p>\n<p><strong>大失败</strong> 同失败，但受到双倍伤害并且被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
                 }
@@ -287,15 +276,15 @@
             "senses": "昏暗视觉",
             "publicNotes": "<p>人们常发现鳄鱼在河岸上晒太阳，在沼泽潜伏，或者在湖里漂着。从远处看，它们通常与浮木没有区别——至少在它们发起攻击之前是这样的。短吻鳄也用类似的数据，但是因为它们通常生活在温带气候中，能更好地忍受低温。与短吻鳄不同的是，鳄鱼能忍受咸水。它们都是可怕的食肉动物，很可能会吞食那些粗心大意、没有注意脚下的冒险者。</p>\n<hr />\n<p>鳄鱼强大且具有原始的外表，是危险的天然掠食者，栖息在沼泽、河流、池塘和其他湿地。</p>",
             "items": {
-                "A0HAbzH4Gjn59ZLw": {
+                "Deep Breath": {
                     "name": "闭气 Deep Breath",
                     "description": "<p>鳄鱼能屏住呼吸长达2小时之久。</p>"
                 },
-                "eGGqJI9VH7B5iZnC": {
+                "Aquatic Ambush": {
                     "name": "水下伏击 Aquatic Ambush",
                     "description": "<p>35尺</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AquaticAmbush]</p>"
                 },
-                "WLCM7iPJWfoRusL5": {
+                "Death Roll": {
                     "name": "死亡翻滚 Death Roll",
                     "description": "<p><strong>需求</strong> 目标生物已经被鳄鱼@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。</p>\n<hr />\n<p><strong>效果</strong> 鳄鱼翻转全身，试图把目标扭断，对攫抓的目标进行一次啮咬打击，此打击的攻击检定有+2环境加值。如果打击命中，则目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。如果失败，则放开目标。</p>"
                 }
@@ -307,11 +296,11 @@
             "senses": "昏暗视觉",
             "publicNotes": "<p>独眼巨人的王国可以追溯至人类兴起之前的那个由龙、巨人和蛇人统治着世界时代。独眼巨人建造了巨大的石城，向残忍暴怒的古老神祇祈祷，然而他们能够预见未来的能力辜负了他们，他们的文明崩溃了。如今，大部分独眼巨人都几乎不知道他们昔日的荣光，尽管他们通常都居住在往日辉煌的废墟中。独眼巨人的城市包括纪念碑和壮观的壁画，描绘了他们人民的历史，只是现在已经鲜有人能够阅读或是解译这些昔日的残迹了。</p>\n<p>除了独眼之外，独眼巨人还以其永无止境的饥饿著称，其胃口之大以至于让一些学者认为这实际上可能是某种诅咒。独眼巨人这种永不消退的饥饿似乎与他们文明的灭亡有着某种联系，然而这种贪婪的胃口到底是他们文明衰退的诱因还是其副作用，可能永远都是个不解之谜了。</p>\n<p>关于独眼巨人诸神的细节都已经消逝在时间的长河中了，人们对这些神祇知之甚少，只知道他们报复心强而且心胸狭窄，甚至仅仅只是因为感到被忽视或是受到了不好的侍奉就会对自己的子民降下诅咒。</p>\n<hr />\n<p>独眼巨人是有着悲惨过往的凶暴巨人。虽然他们只有一只眼睛，但他们曾比大多数人都看得更远，其拥有的玄秘智慧和占卜魔法给予了他们神秘的预见能力。但他们传说般的神谕能力并不能阻止他们社会的灭亡，独眼巨人们庞大的王国在很久以前就已经崩溃了。时至今日，独眼巨人们已经忘记了很多他们曾经掌握的东西，如同疯狂的国王和王后一般躲藏在曾属于他们的失落之城的残垣断壁中。</p>",
             "items": {
-                "DxRFNpdsIZg6cyAK": {
+                "Flash of Insight": {
                     "name": "瞬时洞见 Flash of Insight",
                     "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 独眼巨人将要投掷一次d20。</p>\n<hr />\n<p><strong>效果</strong> 独眼巨人凝视着一个可能未来的蔽塞余象，它直接获得成功（但不是大成功）代替投掷。</p>"
                 },
-                "cpZUZlhLCvv2qK9o": {
+                "Swipe": {
                     "name": "横扫 Swipe",
                     "description": "<p>独眼巨人进行一次近战打击，并将此次攻击骰的结果与至多两名在你触及范围内且相邻的敌人的AC进行比较。掷一次伤害骰，应用于每个命中的敌人身上。在计算独眼巨人的多重攻击减值时，一次横扫算作两次攻击。</p>"
                 }
@@ -323,7 +312,7 @@
             "senses": "昏暗视觉, 灵敏嗅觉(模糊感官) 30尺",
             "publicNotes": "<p>一般的野猪只是脾气暴躁，通常不太友好，而巨大的恐猪则是真正的仇恨和无情的化身。虽然恐猪（在某些地方被称为巨野猪）是杂食动物，但其实他们更偏好肉食。恐猪是食腐动物，因此如果食物容易获得，它并不会对遇到的生物表现出太多攻击性，也不对何进入它领地或觅食范围的闯入行为产生领地意识。特别勇猛且善战的兽人喜欢用恐猪作为他们的坐骑或战兽，骑在恐猪身上的兽人骑兵确实是一支可怕的部队。</p>\n<p>一般的成年恐猪长10尺，肩高7尺，重达约2000磅。</p>\n<hr />\n<p>虽然家猪是农村生活不可或缺的一部分，但是野猪比家猪要危险多了。野猪是贪婪的掠食者，能毁坏农田。野猪随意繁殖，一对野猪可以迅速变成一大群。对农民来说野猪是尤其令人讨厌的，因为它会直接闯入食品店找食物，或者把花园里的根都刨出来充饥。</p>",
             "items": {
-                "TEn7gmE6LHEqbMLJ": {
+                "Daeodon Charge": {
                     "name": "猪突 Daeodon Charge",
                     "description": "<p>恐猪行走两次，然后衔接一次獠牙打击。只要它至少移动20尺，则攻击检定获得+2环境加值。中型或更小体型的生物如果被此次攻击命中，必须通过@Check[type:reflex|dc:19]豁免，否则被强大的推力击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
                 }
@@ -334,13 +323,6 @@
             "name": "毒噬罗刹 Dandasuka",
             "senses": "黑暗视觉",
             "allSaves": "在所有对魔法的豁免上获得+2状态加值, 在所有对神术魔法的豁免上获得+3状态加值",
-            "dr": [
-                {
-                    "exceptions": "除穿刺",
-                    "type": "physical",
-                    "value": 5
-                }
-            ],
             "publicNotes": "<p>毒噬罗刹被其他那些更为强大的罗刹种姓称呼为“撕咬者”，为罗刹部落或者那些找到了能以自身意志将这些魔族之一束缚住的方法的强大的施法者充当间谍和刺客。毒噬罗刹是天生的操纵者和杀手，这些半身大小的恐怖分子纵情于自己的工作，以眼见鲜血为乐。无论是以真实的样貌，还是伪装成人类儿童、半身人商人、或是任何有助于他们融入目标社会的样貌，他们都时常穿着被染成炫目颜色的奢华服饰，并佩戴上无数精致的配饰。</p>\n<p>一个毒噬罗刹总是持续性地被一种可怖的饥饿感所纠缠，这种饥饿感折磨着他们过度活跃的身体，迫使他们频繁进食。在战斗中，毒噬罗刹可能会停下来舔舐沾满鲜血的刀刃，或是跪伏在地啄饮地上的血溏。虽然这些生物在必要时也会取食其他肉类，但凡人的血肉总是他们的最爱。定期提供这些食物可以让一名毒噬罗刹保持忠诚，但是在留着毒噬罗刹的时候必须时时警惕，因为许多故事都在告诉我们，他们过于渴望为所崇拜的恩主服务，将随口之言当真，将恩主从未计划过的暴力行径付诸实施。</p>\n<hr />\n<p>罗刹是邪恶的精魂，他们披上类人生物的伪装，悄然行走于猎物之中。他们是大多数社会中被视为禁忌之事的具现，伪装成那些他们寻求玷污的形态，罗刹以这些丑恶的行径为食而狼吞虎咽着。罗刹的种类繁多；下面所介绍的是矮小、残忍的毒噬罗刹和臭名昭著的罗刹王，他们是这些魔族中最为普遍和常见的。</p>",
             "items": {
                 "kswB083sGau5ZaJ5": {
@@ -349,11 +331,11 @@
                 "REiNYp4cWbH6OcX2": {
                     "name": "在所有对神术魔法的豁免上获得+3状态加值"
                 },
-                "bYG1y6PsSmulLnqZ": {
+                "Change Shape": {
                     "name": "变身 Change Shape",
                     "description": "<p>毒噬罗刹获得任意小型类人生物的外观。这不会改变毒噬罗刹的速度或是打击中攻击和伤害的调整值，但是可能会改变其打击所造成的伤害类型（通常变为钝击）。他通常会失去尖牙打击，除非该类人形态拥有尖牙或者类似的无武装攻击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
-                "dlQJzPWPs48f9b4c": {
+                "Sneak Attack": {
                     "name": "偷袭 Sneak Attack",
                     "description": "<p>毒噬罗刹对措手不及的生物造成额外1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
@@ -365,11 +347,11 @@
             "senses": "黑暗视觉",
             "publicNotes": "<p>癫儒压制者专门负责捕捉活人，他们经常被同伴要求协助绑架。</p>\n<hr />\n<p>癫儒是矮小精瘦的类人生物，他们生有乳白色的眼瞳，灰白色的皮肤和杂乱的米白或灰色的头发。这些神秘精类的后裔被遗弃在格拉利昂（Golarion）最深邃黑暗的洞穴中，对于世上绝大多数的地表种族来说，癫儒是恐怖故事和民间传说的主题。他们潜伏在大都会地区的下方，强行对被俘生物执行残忍且扭曲的实验。癫儒通常有3尺高，重约70磅。</p>",
             "items": {
-                "uldVZLVdwiLD1q6v": {
+                "Vulnerable to Sunlight": {
                     "name": "阳光易伤 Vulnerable to Sunlight",
-                    "description": "<p>癫儒压制者若暴露于阳光下，每小时会受到[[/r (8}]]{8点伤害}。</p>"
+                    "description": "<p>癫儒压制者若暴露于阳光下，每小时会受到[[/r (8)]]{8点伤害}。</p>"
                 },
-                "ZDJkjnIor7qxsiSU": {
+                "Strangle": {
                     "name": "绞杀 Strangle",
                     "description": "<p><strong>需求</strong> 癫儒的两只手都空着，或者单手持握飞钩杖且单手空着</p>\n<hr />\n<p><strong>效果</strong> 癫儒尝试一次@Check[type:athletics|traits:action:grapple,action:strangle]检定进行@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{攫抓 Grab}并具有+2环境加值。成功时，目标受到[[/r (1d6+6)[bludgeoning]]]{1d6+6钝击伤害}。大成功时为两倍伤害。</p>"
                 }
@@ -379,26 +361,26 @@
             "data":{},
             "name": "沙漠龙兽 Desert Drake",
             "senses": "黑暗视觉, 灵敏嗅觉(模糊感官) 30尺",
-            "speed": "burrow sand only",
+            "speed": "掘地仅限沙地",
             "publicNotes": "<p>沙漠龙兽是蓝龙的远亲，他们虽然不具备真龙的魔法天赋和智慧，但这些沙漠中生活的龙兽却是危险的伏击猎食者，他们会为了食物和给养袭击孤立在沙漠中的旅行者和哨站。沙漠龙兽的血脉中流淌着祖先对电的抗力以及与沙漠环境的适应力。沙漠龙兽的鳞片从铁锈色到浅棕色和赭色，模仿着他们称为家园的沙丘的色彩。</p>\n<p>沙漠龙兽是龙兽中最轻也是最袖珍的存在，然而这并不应当被错认为是他们的弱点。他们向后延伸的双角以及如羽毛般轻薄的双翼使得挖掘变得十分简单。事实上，沙漠龙兽那强有力的颈部使他可以像走路一样轻松地在沙子和其他松散的碎石中移动。</p>\n<hr />\n<p>这些贪婪、野蛮、受本能驱使的龙兽是原始的龙类怪物，他们从块头更大的表亲那里继承了部分恐怖的力量，但却没保留多少它们的狡诈（若有的话）。尽管相比真龙来说，龙兽更弱、更慢、且做事缺乏动机，但对于他们周遭的生物和城镇来说，已经算是十足的威胁了。龙兽倾向于结成狩猎队伍，一种被称作“暴掠团（rampages）”的小型社交组织，这使得他们变得更为危险；一支河栖龙兽组成的暴掠团能快速毁灭临河的村庄，而徘徊的沙漠龙兽暴掠团对篷车商队来说宛如天灾。</p>\n<p>尽管龙兽的栖息地与能力多种多样，但他们有数个共通的体貌特征来使自身结成一个物种。举例来说，龙兽没有前肢，因此当他们要在近战范围发动攻击的话，只能使用强有力的巨颚和布满鳞片的粗壮尾巴。大多数龙兽都倾向于避免近战，更愿意从猎物头顶飞过，从舒适的距离利用喷吐武器造成大范围的破坏。最后，所有龙兽都蕴藏着少量古代龙类先祖的力量，这让他们能爆发出令人难以置信的速度。</p>",
             "items": {
-                "KddvbFPsHJAfqGAc": {
+                "Wing Deflection": {
                     "name": "展翅格挡 Wing Deflection",
                     "description": "<p><strong>触发</strong> 沙漠龙兽成为一次攻击的目标</p>\n<hr />\n<p><strong>效果</strong> 沙漠龙兽扬起双翼，对抗触发攻击时AC获得+2环境加值。如果沙漠龙兽被攻击的同时正在飞行，那么他在攻击完成后会下降10尺。</p>"
                 },
-                "y03xyojSlEvE4nQh": {
+                "Draconic Frenzy": {
                     "name": "龙之狂怒 Draconic Frenzy",
                     "description": "<p>沙漠龙兽能以任意顺序作出2次尖牙打击和1次尾扫打击</p>"
                 },
-                "AzIejcCA4nY9zlmB": {
+                "Sandstorm Breath": {
                     "name": "沙暴吐息 Sandstorm Breath",
                     "description": "<p>沙漠龙兽吐出一个带电沙球，对至多60尺远范围的半径@Template[type:burst|distance:15]区域爆发出一团烟云。爆发区域内的生物会承受[[/r (9d6)[electricity]]]{9d6电击伤害}（@Check[type:reflex|dc:27|basic:true]豁免）。烟云会持续[[/br 1d4 #Duration Sandstorm]]{1d4轮}，为所有位于其中的存在提供@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealment}。</p>\n<p>沙漠龙兽在[[/br 1d6 #Recharge Sandstorm Breath]]{1d6轮}内无法再次使用沙暴吐息。</p>"
                 },
-                "W1EiRfnWuUIq6KoC": {
+                "Speed Surge": {
                     "name": "极速爆发 Speed Surge",
                     "description": "<p>沙漠龙兽至多以其速度的2倍进行移动。它每日可以使用这个能力3次。</p>"
                 },
-                "63a8hHsiAUlNCTdu": {
+                "Surprise Attacker": {
                     "name": "突袭打击 Surprise Attacker",
                     "description": "<p>在战斗的第一轮，还未行动的生物对沙漠龙兽来说都视为处于@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
                 }
@@ -411,25 +393,22 @@
             "hp": "再生15(由火焰失效)",
             "publicNotes": "<p>大猪笼草是一种危险的食肉性猪笼草植物，生长在树冠茂密的森林。当它们不在树冠上晒太阳时，就会顺着森林的下层植被捕食。大猪笼草很聪明，知道一些生物容易被闪亮的东西吸引，所以有时会用这些东西设伏。如果仅仅因为大猪笼草下半部分是根须就认为它移动速度很慢的话，那是个愚蠢的错误；许多冒险家死于这些超级灵巧的植物。此外，这种危险的植物是专业的攀爬者，这让它们的追击更难以被逃脱。</p>\n<p>饥饿的大猪笼草能从中间的叶瓶中吐出它腐臭的、会影响心智的消化液，从而让猎物失去平衡。它消化器官中除了含有强酸，还有一种酶，一旦被排出体外，就能让受害者产生强烈的幻觉和失忆症。这种副作用使得大猪笼草在一些圈子里备受追捧，包括狂热的吸毒者、实验室的医生和使用毒药的罪犯。</p>\n<p>大猪笼草的种类很多，其中包括笨重的巨猪笼草，其体型之大让人难以置信；还有一些长着杯状的小叶瓶，沿着长长的常春藤蔓延，就像乌贼触须上的吸盘，还有一些则长着数百片血红、锋利的叶子，从瓶内伸出来，就像水蛭的牙齿一样。最后这一种尤其危险，因为这些叶子可以把关在瓶中的生物的肉和内脏全部剃干净。</p>",
             "items": {
-                "jt6yBdIcUHJLCmAw": {
-                    "name": "枝条 Vine"
-                },
-                "3X0mRQVlCkn2NC2d": {
+                "strike-Acid Glob": {
                     "name": "酸球 Acid Glob"
                 },
-                "9falExFfOIxN5EKp": {
+                "Stench": {
                     "name": "恶臭 Stench",
                     "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入其弥散范围的生物必须通过@Check[type:fortitude|dc:27]检定。如果失败，生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，大失败的话还要加上@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。处于灵光范围中时，生物尝试从恶心状态恢复的豁免鉴定有-2环境减值。通过豁免的生物，在一分钟内免疫此效果。</p>"
                 },
-                "cFtfekZXzWpLtSzL": {
+                "Amnesia Venom": {
                     "name": "失忆毒液 Amnesia Venom",
                     "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
                 },
-                "IL3VPaw5B0JI2Rce": {
+                "Constrict": {
                     "name": "紧勒 Constrict",
                     "description": "<p>[[/r (2d6+2)[bludgeoning]]]{2d6+2钝击伤害}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
-                "LG7PBXCgNj0UWIb8": {
+                "Root": {
                     "name": "扎根 Root",
                     "description": "<p>直到下一次行动前，大猪笼草看上去就像一株普通猪笼草植物。它在假装为非生物植物的欺骗检定和DC自动得到41的结果（在森林或者沼泽中为44）。</p>"
                 }
@@ -458,11 +437,11 @@
                 "JRWZ0pJnxuJyvINn": {
                     "name": "对抗心灵时所有豁免获得+2状态加值"
                 },
-                "uznmLfSkP5j9qOEA": {
+                "Quick Draw": {
                     "name": "即时备战 Quick Draw",
                     "description": "<p>卓尔战士使用交互动作拔出一把武器，之后用该武器进行打击。</p>"
                 },
-                "ix1KQX8Ji2g1e9ID": {
+                "Skewer": {
                     "name": "洞穿 Skewer",
                     "description": "<p>卓尔战士用他的细剑作出打击，在攻击检定上获得+1环境加值。受到此次攻击伤害的生物会承受@Localize[PF2E.PersistentDamage.Bleed1d6.success]。</p>"
                 }
@@ -478,7 +457,7 @@
                 "6CWD9zTeiLEB09vN": {
                     "name": "快速愈合2 (当位于地下时)"
                 },
-                "0OOTRB9nI9G0zd8v": {
+                "Breath Weapon": {
                     "name": "吐息 Breath Weapon",
                     "description": "<p>土魔蝠对@Template[type:cone|distance:15]范围喷出岩石，对范围内所有生物造成[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}（@Check[type:reflex|dc:17|basic:true]豁免）。</p>\n<p>土魔蝠在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内无法再次进行吐息。</p>"
                 }
@@ -516,7 +495,7 @@
                 },
                 "izty6IGZL6BowyUS": {
                     "name": "围攻 Pack Attack",
-                    "description": "<p>若林焰猞猁的打击目标身处至少2名林焰猞猁盟友的触及范围内时，林焰猞猁的打击会额外造成[[/r (1d6}]]{1d6伤害}。</p>"
+                    "description": "<p>若林焰猞猁的打击目标身处至少2名林焰猞猁盟友的触及范围内时，林焰猞猁的打击会额外造成[[/r (1d6)]]{1d6伤害}。</p>"
                 },
                 "ST2LDOW64VO0qAVl": {
                     "name": "猛扑 Pounce",
@@ -581,13 +560,6 @@
             "name": "血肉魔像 Flesh Golem",
             "senses": "黑暗视觉",
             "di": "魔法(见魔像抗魔)",
-            "dr": [
-                {
-                    "exceptions": "除精金",
-                    "type": "physical",
-                    "value": 5
-                }
-            ],
             "publicNotes": "<p>由皮肤和血肉碎块拼成的血肉魔像是对生命的怪诞模仿。虽然它没有头脑，但当它受到伤害时却会狂怒，这让它给人留下了存在微弱情感的错觉。血肉魔像通常守卫着塑肉师（fleshwarpers）与死灵法师们的实验室，这些家伙不会因为亵渎尸体而感到内疚。第一个被创造出的血肉魔像是由简单的基本素材组成的，被认为是一种错误尝试的产物，这些怪物真正的人类还差得远。在某些情况下，如果一个血肉魔像的大脑拥有特别强大的人格，那么它可能会出现该人格的回响，谢天谢地，这样不幸的例子是极其罕见的。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
             "items": {
                 "Berserk": {
@@ -600,7 +572,7 @@
                 },
                 "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：火焰([[/r (5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r (3d4}]]{3d4伤害}); 被治疗：电击(区域效果[[/r (2d4)[healing]]]{2d4生命值}); 被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                    "description": "<p>被伤害：火焰([[/r (5d8)]]{5d8伤害}, 区域效果或可持续伤害则为[[/r (3d4)]]{3d4伤害}); 被治疗：电击(区域效果[[/r (2d4)[healing]]]{2d4生命值}); 被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
                 "Vulnerable to Flesh to Stone": {
                     "name": "法术弱点-石化术 Vulnerable to Flesh to Stone",
@@ -625,7 +597,7 @@
                 },
                 "RAFn5P8tJAjf5eEe": {
                     "name": "复仇打击 Retaliatory Strike",
-                    "description": "<p><strong>触发</strong> 有位于霜龙兽的尾扫触及范围的生物成功用打击对霜龙兽造成伤害</p>\n<hr />\n<p><strong>效果</strong> 霜龙兽尝试用尾扫作出打击。若打击命中，它会额外造成[[/r (1d6}]]{1d6伤害}。</p>"
+                    "description": "<p><strong>触发</strong> 有位于霜龙兽的尾扫触及范围的生物成功用打击对霜龙兽造成伤害</p>\n<hr />\n<p><strong>效果</strong> 霜龙兽尝试用尾扫作出打击。若打击命中，它会额外造成[[/r (1d6)]]{1d6伤害}。</p>"
                 },
                 "QmJkEvQgW1G9i7g9": {
                     "name": "龙之狂怒 Draconic Frenzy",
@@ -880,7 +852,7 @@
                 },
                 "waCZVvDN6vAn7yCi": {
                     "name": "喷射酸液 Spray Acid",
-                    "description": "<p>巢母对@Template[type:cone|distance:60]范围喷射酸液，造成[[/r (8d6)[acid]]]{8d6酸液伤害}和[[/r (1d6)[persistent,acid]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。</p>\n<p>巢母在[[/br 1d4 #rounds]]{1d4轮}内无法再次喷射酸液。</p>"
+                    "description": "<p>巢母对@Template[type:cone|distance:60]范围喷射酸液，造成[[/r (8d6)[acid]]]{8d6酸液伤害}和[[/r (1d6)[persistent,acid]]]伤害（@Check[type:reflex|dc:26|basic:true]豁免）。</p>\n<p>巢母在[[/br 1d4 #rounds]]{1d4轮}内无法再次喷射酸液。</p>"
                 }
             }
         },
@@ -945,17 +917,6 @@
             "name": "虐戾怪 Nilith",
             "senses": "黑暗视觉",
             "languages": "心灵感应100尺",
-            "dr": [
-                {
-                    "type": "mental",
-                    "value": 10
-                },
-                {
-                    "exceptions": "除了银",
-                    "type": "physical",
-                    "value": 5
-                }
-            ],
             "publicNotes": "<p>光滑黝黑的虐戾怪形似于无毛、纤瘦的树懒。这些极度危险可怕的生物有着发出红光的眼睛，邪恶的利爪，以及满嘴尖锐如针的牙齿。虐戾怪以情感、恐惧和活人的血肉为食，民间传说认为在噩梦中梦见这些生物的人终有一天将会被它们吃掉。虐戾怪从折磨智慧生物中获取强烈的快乐，通常专注于掠食虔诚正义的人，从这些人身上引发出最深层的恐惧和最恶劣的想法，并且陶醉于这些被害者随后而来的惊骇中。通常情况下，这些卑劣的操纵者希望能够迫使它的受害者陷入疯狂，甚至是自我了断。大多数虐戾怪都缺乏耐心花费太多的时间去彻底摧毁一个人，当一个虐戾怪对当前玩物特有的思想和恐惧感到厌烦从而对这一受害者感到厌倦时，它会先杀死猎物，吃掉其血肉，然后再去寻找下一个牺牲者。</p>\n<p>虐戾怪实际上是居住在超越梦境之外的遥远位面中更为致命的生物的延伸，在某种程度上，虐戾怪就像是它们所连接的未知异星存在的远程喂食装置。学者和位面旅行者都试图揭开这种神秘联系的确切机制，不过他们依旧尚未能破解其真相。事实上，许多研究虐戾怪纽带本质的的人都在接近它之前就已经被逼疯了。这种与异世界生物的奇妙联系可能有助于解释这些生物为什么会那么长寿，正如人们所相信的虐戾怪甚至可以存活千年之久。</p>\n<p>万幸的是，虐戾怪是一种孤僻的生物，它们厌恶与同类为伴，这也许是因为这些噩梦的先兆不愿体验它们给别的他人所带来的恐怖。</p>",
             "items": {
                 "LuxUX599os0xTuFk": {
@@ -1000,36 +961,40 @@
             "senses": "黑暗视觉, 震颤感知（模糊）100尺",
             "publicNotes": "<p>紫虫是最常见和最臭名远扬的洞穴蠕虫，这种非常可怕的怪物游荡在黑暗之地的扭曲的隧道中，它能以一己之力挖出整个洞穴系统。紫虫挖出的洞穴并不总能在这些生物离开之后维持很长时间，所以它们的巢穴是充满断头隧道的令人发狂的巨大迷宫，在这迷宫中寻找紫虫的巢穴中心时，往往会发现之前的受害者留下的惊人宝藏。</p>\n<hr />\n<p>洞穴蠕虫是超级巨大的食腐动物，它们钻到世界深处，吞食找到的任何东西。这些蠕虫以各自独特的颜色而得名，它们非常贪婪，且破坏力强大。不同颜色和能力的洞穴蠕虫潜伏在世界上更偏远的角落——比如传说中居住在巨大冰川或冰山中的白虫，和在早已被遗忘的废墟的墓葬中钻洞的灰虫。</p>",
             "items": {
-                "9AEzHj5y2T93e7EF": {
+                "strike-Regurgitate": {
                     "name": "反刍 Regurgitate"
                 },
-                "IoAJluZoGb9mgLGv": {
+                "Inexorable": {
                     "name": "势不可挡 Inexorable",
                     "description": "<p>当紫虫的回合结束时，从@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}、@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}状态中恢复。它对减少移动速度和@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态免疫，并且无视困难地形和高等困难地形。</p>"
                 },
-                "y0G6Hcirsc4uakIL": {
+                "Shake It Off": {
                     "name": "摆脱 Shake It Off",
                     "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 紫虫将要受到某种状态或不利效果影响（例如<em>@UUID[Compendium.pf2e.spells-srd.dN8QBNuTiaBHCKUe]{恶意变形术 Baleful Polymorph}</em>）。</p>\n<hr />\n<p><strong>效果</strong> 紫虫使触发此能力的效果无效。来自神器、神祇或类似的力量造成的效果无法用此能力避免。</p>"
                 },
-                "rGTmjeER3V1KY02w": {
+                "Fast Swallow": {
                     "name": "快速吞咽 Fast Swallow",
                     "description": "<p><strong>触发</strong> 紫虫@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}一个生物。</p>\n<hr />\n<p><strong>效果</strong> 紫虫使用活吞能力。</p>"
                 },
-                "crXV18abZr2DcEh8": {
+                "Regurgitate": {
                     "name": "反刍 Regurgitate",
                     "description": "<p>紫虫能将它吞下的生物或巨石猛烈地呕吐出来作为一次远程打击。此打击造成钝击伤害，数值取决于抛射物的体型：超小型[[/r (2d6+13)[bludgeoning]]]{2d6+13}, 小型[[/r (3d6+13)[bludgeoning]]]{3d6+13}, 中型[[/r (4d6+13)[bludgeoning]]]{4d6+13}, 大型[[/r (5d6+13)[bludgeoning]]]{5d6+13}, 和 超大型[[/r (6d6+13)[bludgeoning]]]{6d6+13}。被反刍的生物受到坠落伤害，高度取决于和目标的高度差或20尺，以两者中较大的为准。</p>\n<p>巨石在紫虫的胃中占据空间相当于同体型的生物。紫虫通常会在平时吞下几块巨石备用。紫虫可以使用一个单动作来吞咽新的巨石。</p>"
                 },
-                "8EY2qfk7YZdvckfJ": {
+                "Rock Tunneler": {
                     "name": "掘洞者 Rock Tunneler",
                     "description": "<p>紫虫能在坚硬的岩石中以20尺的速度掘进。如果它愿意的话，可以在行经路线上留下隧道，事实上紫虫通常就是这么做的。</p>"
                 },
-                "zEZW1atU8KQCSsNi": {
+                "Thrash": {
                     "name": "连环击 Thrash",
                     "description": "<p>紫虫能对触及范围内的所有生物进行一次打击。它可以最多进行一次牙咬打击、一次针刺打击和无数次虫体打击。每次攻击都计入紫虫的多重攻击减值，但是在此项行动的全部攻击动作都结束之后生效。</p>"
                 },
-                "rTDme0840mDZkokU": {
+                "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
                     "description": "<p>超大型，[[/r (3d6+9)[bludgeoning]]]{3d6+9钝击伤害}，破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
+                "Purple Worm Venom":{
+                    "name": "紫虫毒 Purple Worm Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 5d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 6d6[poison]]]伤害和力竭2 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 8d6[poison]]]伤害和力竭2 (1轮)</p>"
                 }
             }
         },
@@ -1041,7 +1006,7 @@
             "items": {
                 "FhLr7TEb7n9FRT5I": {
                     "name": "群起攻之 Pack Attack",
-                    "description": "<p>犬的打击目标如果位于至少两个盟友的触及范围内，则造成[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>犬的打击目标如果位于至少两个盟友的触及范围内，则造成[[/r (1d4)]]{1d4额外伤害}。</p>"
                 }
             }
         },
@@ -1217,13 +1182,6 @@
             "data":{},
             "name": "隐形仆役 Unseen Servant",
             "languages": "理解它的创造者",
-            "dr": [
-                {
-                    "exceptions": "除力场和幽冥",
-                    "type": "all",
-                    "value": 5
-                }
-            ],
             "publicNotes": "<p>法术@UUID[Compendium.pf2e.spells-srd.xqmHD8JIjak15lRk]{隐形仆役 Unseen Servant}可以召唤出这种生物。</p>",
             "items": {
                 "EbIYH4fdrCUr8wIS": {
@@ -1242,13 +1200,6 @@
             "hp": "寝于棺木, 快速愈合7, 负能量治疗",
             "senses": "黑暗视觉",
             "languages": "外加一门区域语言",
-            "dr": [
-                {
-                    "exceptions": "除魔法银以外",
-                    "type": "physical",
-                    "value": 7
-                }
-            ],
             "publicNotes": "<p>吸血鬼伯爵使用恐惧与残忍治理他的领地。</p>\n<hr />\n<p>吸血鬼是一种以活物鲜血为食的不死生物。</p>",
             "items": {
                 "TjOmyfilNvHKI58M": {
@@ -1779,7 +1730,7 @@
             "items": {
                 "eYD6EiiIYvny4Vq2": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：寒冷和水([[/r (5d10}]]{5d10伤害}, 区域效果或可持续伤害则为[[/r (2d8}]]{2d8伤害}；被治疗：酸液(区域效果[[/r (2d8)[healing]]]{2d8点生命值})；被减速：土</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                    "description": "<p>被伤害：寒冷和水([[/r (5d10)]]{5d10伤害}, 区域效果或可持续伤害则为[[/r (2d8)]]{2d8伤害}；被治疗：酸液(区域效果[[/r (2d8)[healing]]]{2d8点生命值})；被减速：土</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
                 "Jg5WkDHWpi1JRQ9k": {
                     "name": "法术弱点：解除石化 Vulnerable to Stone to Flesh",
@@ -1986,18 +1937,11 @@
             "hp": "修理模式",
             "senses": "黑暗视觉",
             "di": "魔法(见魔像抗魔)",
-            "dr": [
-                {
-                    "exceptions": "除了精金斩首武器",
-                    "type": "physical",
-                    "value": 20
-                }
-            ],
             "publicNotes": "<p>精金魔像由几乎坚不可摧的金属制造而成，只有最强大的敌人才有机会摧毁它。制造精金魔像需要如此巨量的精金以至于制造它需要专门组建一支采矿远征队，并前往像土元素位面（Plane of Earth）或外环位面（Outer Plane）这样的遥远国度。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
             "items": {
                 "scTXJJONiH5Y5Rpf": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：酸液([[/r (9d10}]]{9d10伤害}, 区域效果或可持续伤害则为[[/r (2d10}]]{2d10伤害}); 被治疗：火焰 (区域效果[[/r (2d10)[healing]]]{2d10生命值}); 被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                    "description": "<p>被伤害：酸液([[/r (9d10)]]{9d10伤害}, 区域效果或可持续伤害则为[[/r (2d10)]]{2d10伤害}); 被治疗：火焰 (区域效果[[/r (2d10)[healing]]]{2d10生命值}); 被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
                 "wW41T2Rqe1HsYWiK": {
                     "name": "修理模式 Repair Mode",
@@ -3412,7 +3356,7 @@
                 },
                 "0BMCA9P7mLMAMs10": {
                     "name": "击破物品 Sunder Objects",
-                    "description": "<p>当树精王伤害物品或建筑时，它能造成额外[[/r (2d10}]]{2d10伤害}。</p>"
+                    "description": "<p>当树精王伤害物品或建筑时，它能造成额外[[/r (2d10)]]{2d10伤害}。</p>"
                 }
             }
         },
@@ -3784,7 +3728,7 @@
             "items": {
                 "qf9VkXweMZaEf2DP": {
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>仆役邪魔对@Template[type:cone|distance:30]范围喷出烈焰。范围内的生物受到[[/r (7d6)[fire]]]{7d6火焰伤害}（@Check[type:reflex|dc:24|basic:true]豁免）。</p>\n<p>仆役邪魔自身和每个豁免失败的生物将会着火，受到[[/r (2d6)[persistent,fire]]]@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>\n<p>仆役邪魔在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息能力。</p>"
+                    "description": "<p>仆役邪魔对@Template[type:cone|distance:30]范围喷出烈焰。范围内的生物受到[[/r (7d6)[fire]]]{7d6火焰伤害}（@Check[type:reflex|dc:24|basic:true]豁免）。</p>\n<p>仆役邪魔自身和每个豁免失败的生物将会着火，受到[[/r (2d6)[persistent,fire]]]伤害。</p>\n<p>仆役邪魔在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用吐息能力。</p>"
                 },
                 "WI20ZnQYqmSIaz3B": {
                     "name": "乐于侍奉 Drawn to Service",
@@ -3792,7 +3736,7 @@
                 },
                 "5McIXOemuKXFd7Ep": {
                     "name": "恶毒之伤 Vicious Wounds",
-                    "description": "<p>当仆役邪魔的啃咬打击或爪抓打击成功命中目标，恶毒地撕裂猎物时，它的身躯上会出现类似的伤口。目标受到额外[[/r (1d6}]]{1d6伤害}，仆役邪魔也受到同样的额外伤害。</p>\n<p>如果该额外伤害因为重击变为双倍，则仆役邪魔同样受到双倍伤害。</p>"
+                    "description": "<p>当仆役邪魔的啃咬打击或爪抓打击成功命中目标，恶毒地撕裂猎物时，它的身躯上会出现类似的伤口。目标受到额外[[/r (1d6)]]{1d6伤害}，仆役邪魔也受到同样的额外伤害。</p>\n<p>如果该额外伤害因为重击变为双倍，则仆役邪魔同样受到双倍伤害。</p>"
                 }
             }
         },
@@ -4022,7 +3966,7 @@
                 },
                 "C35zZH9Tm4QXYQ4y": {
                     "name": "喷吐武器 Breath Weapon",
-                    "description": "<p>峭壁蛇龙喷出@Template[type:line|distance:120]的熔岩流，这能对区域内的生物造成[[/r (12d6)[fire]]]{12d6火焰伤害}（@Check[type:reflex|dc:34|basic:true]豁免）。任何豁免失败的生物还会承受[[/r (4d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>\n<p>峭壁蛇龙在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>熔岩会保留至峭壁蛇龙的下个回合开始为止。若峭壁蛇龙在地面上，熔岩会如同一条燃烧的火线保留在喷吐武器的线型区域的地面上；若峭壁蛇龙在空中，熔岩雨会向下掉落形成60尺高的一片区域。任何移动穿过或通过熔岩的生物会受到[[/r (6d6)[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:34|basic:true]豁免）。在峭壁蛇龙的下个回合开始时，熔岩会在地面冷却成薄薄一层易碎的石头，或者熔岩雨会完全落下并变为无害的鹅卵石。冷却后的熔岩会在几个小时内迅速风化为粉末和沙子。</p>"
+                    "description": "<p>峭壁蛇龙喷出@Template[type:line|distance:120]的熔岩流，这能对区域内的生物造成[[/r (12d6)[fire]]]{12d6火焰伤害}（@Check[type:reflex|dc:34|basic:true]豁免）。任何豁免失败的生物还会承受[[/r (4d6)[persistent,fire]]]伤害。</p>\n<p>峭壁蛇龙在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>熔岩会保留至峭壁蛇龙的下个回合开始为止。若峭壁蛇龙在地面上，熔岩会如同一条燃烧的火线保留在喷吐武器的线型区域的地面上；若峭壁蛇龙在空中，熔岩雨会向下掉落形成60尺高的一片区域。任何移动穿过或通过熔岩的生物会受到[[/r (6d6)[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:34|basic:true]豁免）。在峭壁蛇龙的下个回合开始时，熔岩会在地面冷却成薄薄一层易碎的石头，或者熔岩雨会完全落下并变为无害的鹅卵石。冷却后的熔岩会在几个小时内迅速风化为粉末和沙子。</p>"
                 },
                 "O1iPSxTdSnBAxGt1": {
                     "name": "紧勒 Constrict",
@@ -4183,7 +4127,7 @@
             "items": {
                 "qtsF75k2Zterahrt": {
                     "name": "阳光易伤 Vulnerable to Sunlight",
-                    "description": "<p>癫儒学士若暴露于阳光下，每小时会受到[[/r (10}]]{10伤害}。</p>"
+                    "description": "<p>癫儒学士若暴露于阳光下，每小时会受到[[/r (10)]]{10伤害}。</p>"
                 },
                 "36QKwrAooz1cygR4": {
                     "name": "塞提勒什凝视 Cytillesh Stare",
@@ -4203,7 +4147,7 @@
                 },
                 "6BFQljbOQZkiMjjS": {
                     "name": "阳光易伤 Vulnerable to Sunlight",
-                    "description": "<p>癫儒潜行者若暴露于阳光下，每小时会受到[[/r (4}]]{4伤害}。</p>"
+                    "description": "<p>癫儒潜行者若暴露于阳光下，每小时会受到[[/r (4)]]{4伤害}。</p>"
                 },
                 "eI1CqQ6uSb4iGiLS": {
                     "name": "偷袭 Sneak Attack",
@@ -4227,11 +4171,11 @@
                 },
                 "zFNrz9di2EnI53hz": {
                     "name": "成群袭击 Pack Attack",
-                    "description": "<p>对于触及范围内至少有两名恐狼盟友的生物，恐狼的打击造成[[/r (1d6}]]{1d6额外伤害}。</p>"
+                    "description": "<p>对于触及范围内至少有两名恐狼盟友的生物，恐狼的打击造成[[/r (1d6)]]{1d6额外伤害}。</p>"
                 },
                 "M0BuH1pWhtWsVIYm": {
                     "name": "撕咬 Worry",
-                    "description": "<p><strong>需求</strong> 恐狼的啮咬@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}住了一个生物</p>\n<hr />\n<p><strong>效果</strong> 恐狼用牙齿凶猛地撕扯被它擒抱的生物，造成[[/r (1d10+2}]]{1d10+2伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）。</p>"
+                    "description": "<p><strong>需求</strong> 恐狼的啮咬@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}住了一个生物</p>\n<hr />\n<p><strong>效果</strong> 恐狼用牙齿凶猛地撕扯被它擒抱的生物，造成[[/r (1d10+2)]]{1d10+2伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）。</p>"
                 }
             }
         },
@@ -4298,7 +4242,7 @@
                 },
                 "OuwilwDvrI1Rqfzi": {
                     "name": "孢子触手 Spore Tendrils",
-                    "description": "<p>盗袭瘤菌身体表面的触手伸展开并感染相邻的生物，造成[[/r (4d6)[poison]]]{4d6毒素伤害}和[[/r (1d6)[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续毒素伤害}。生物可以尝试@Check[type:reflex|dc:27|basic:true]豁免来减少此伤害，但是被触手@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物在豁免检定上有-4环境减值。</p>"
+                    "description": "<p>盗袭瘤菌身体表面的触手伸展开并感染相邻的生物，造成[[/r (4d6)[poison]]]{4d6毒素伤害}和[[/r (1d6)[persistent,poison]]]伤害。生物可以尝试@Check[type:reflex|dc:27|basic:true]豁免来减少此伤害，但是被触手@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物在豁免检定上有-4环境减值。</p>"
                 },
                 "fOnFVdptokDlFcTW": {
                     "name": "旋转抽打 Whirlwind of Hooks",
@@ -4397,7 +4341,7 @@
                 },
                 "7IWkM6MOEOAu4DTP": {
                     "name": "融身入木 Tree Meld",
-                    "description": "<p>森林女神碰触一棵她领地中有足够体积容纳她的树木，并且只要她愿意，就能融入其中。她在树里的时候可以施放法术，只要这个法术不需要一条通往树外的效果线。她能听到树外发生的事情，但无法看见。她可以从她领地内的任意一棵树木进出她的异次元领域。她可以解消这一效果。</p>\n<p>对树造成巨大的物理伤害会将木林仙女从树中驱离，并对她造成[[/r (3d6}]]{3d6伤害}。<em>@UUID[Compendium.pf2e.spells-srd.115Xp9E38CJENhNS]{穿墙术 Passwall}</em>能够在不造成伤害的情况下驱离木林仙女。</p>\n<p>如果木妖精女皇对她领地中的树木使用此能力，她能够进入树里的一个异次元生活空间以取代原本的效果；融身入木获得异次元特征。木林仙女可以带着其他八名生物与她一同进入她所关联树木里的这个家。木林仙女依旧会如上文所述那样被驱离这个空间。</p>"
+                    "description": "<p>森林女神碰触一棵她领地中有足够体积容纳她的树木，并且只要她愿意，就能融入其中。她在树里的时候可以施放法术，只要这个法术不需要一条通往树外的效果线。她能听到树外发生的事情，但无法看见。她可以从她领地内的任意一棵树木进出她的异次元领域。她可以解消这一效果。</p>\n<p>对树造成巨大的物理伤害会将木林仙女从树中驱离，并对她造成[[/r (3d6)]]{3d6伤害}。<em>@UUID[Compendium.pf2e.spells-srd.115Xp9E38CJENhNS]{穿墙术 Passwall}</em>能够在不造成伤害的情况下驱离木林仙女。</p>\n<p>如果木妖精女皇对她领地中的树木使用此能力，她能够进入树里的一个异次元生活空间以取代原本的效果；融身入木获得异次元特征。木林仙女可以带着其他八名生物与她一同进入她所关联树木里的这个家。木林仙女依旧会如上文所述那样被驱离这个空间。</p>"
                 }
             }
         },
@@ -4422,7 +4366,7 @@
                 },
                 "nu6HxTKMW550KwDx": {
                     "name": "融身入木 Tree Meld",
-                    "description": "<p>木林仙女碰触一棵有足够体积容纳她的树木，并且只要她愿意，就能融入其中。她在树里的时候可以施放法术，只要这个法术不需要一条通往树外的效果线。她能听到树外发生的事情，但无法看见。她可以解消这一效果。</p>\n<p>对树造成巨大的物理伤害会将木林仙女从树中驱离，并对她造成[[/r (3d6}]]{3d6伤害}。<em>@UUID[Compendium.pf2e.spells-srd.115Xp9E38CJENhNS]{穿墙术 Passwall}</em>能够在不造成伤害的情况下驱离木林仙女。</p>\n<p>如果木林仙女对与她关联的树木使用此能力，她能够进入树里的一个异次元生活空间以取代原本的效果；融身入木获得异次元特征。木林仙女可以带着其他两名生物与她一同进入她所关联树木里的这个家。木林仙女依旧会如上文所述那样被驱离这个空间。</p>"
+                    "description": "<p>木林仙女碰触一棵有足够体积容纳她的树木，并且只要她愿意，就能融入其中。她在树里的时候可以施放法术，只要这个法术不需要一条通往树外的效果线。她能听到树外发生的事情，但无法看见。她可以解消这一效果。</p>\n<p>对树造成巨大的物理伤害会将木林仙女从树中驱离，并对她造成[[/r (3d6)]]{3d6伤害}。<em>@UUID[Compendium.pf2e.spells-srd.115Xp9E38CJENhNS]{穿墙术 Passwall}</em>能够在不造成伤害的情况下驱离木林仙女。</p>\n<p>如果木林仙女对与她关联的树木使用此能力，她能够进入树里的一个异次元生活空间以取代原本的效果；融身入木获得异次元特征。木林仙女可以带着其他两名生物与她一同进入她所关联树木里的这个家。木林仙女依旧会如上文所述那样被驱离这个空间。</p>"
                 }
             }
         },
@@ -4784,16 +4728,16 @@
             "senses": "黑暗视觉, 烟雾视觉",
             "publicNotes": "<p>火魔蝠狡诈而易怒。它们并非邪恶之徒，但是它们以制造痛苦为乐，它们对点燃什么东西的热爱让它们在所有魔蝠中最接近邪恶阵营。它们有明亮的橘色皮肤，当它们在空中挥动翅膀时，还会伴随着缕缕摇曳的火焰。水魔蝠和火魔蝠之间的仇怨是出了名的，它们在任何情况下都会拒绝合作。</p>\n<hr />\n<p>魔蝠——有时又被成为元素小怪——是一种有着蝙蝠翅膀的小型双足生物，它们服务于元素位面中更大的元素，或是将它们召唤到主物质位面的施法者学徒。所有魔蝠都拥有和它们种类相匹配的魔法能力和吐息。</p>",
             "items": {
-                "Tji1ev92INkjtI3U": {
+                "Smoke Vision": {
                     "name": "烟雾视觉 Smoke Vision",
                     "description": "<p>火魔蝠无视烟雾带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}效果。</p>"
                 },
                 "44mTKtGhXhfJhnBh": {
                     "name": "快速愈合2 (当触碰火焰时)"
                 },
-                "5Rd1LNWiczurzj0C": {
+                "Breath Weapon": {
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>火魔蝠对@Template[type:cone|distance:15]范围喷出烈焰，对范围内所有生物造成[[/r (2d4)[fire]]]{2d4火焰伤害}和[[/r (1d4)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}（@Check[type:reflex|dc:17|basic:true]豁免DC）。</p>\n<p>火魔蝠在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
+                    "description": "<p>火魔蝠对@Template[type:cone|distance:15]范围喷出烈焰，对范围内所有生物造成[[/r 2d4[fire]]]伤害和[[/r 1d4[persistent,fire]]]（@Check[type:reflex|dc:17|basic:true]豁免）。</p>\n<p>火魔蝠在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
                 }
             }
         },
@@ -4804,28 +4748,24 @@
             "senses": "黑暗视觉, 烟雾视觉",
             "publicNotes": "<p>火腾龙生活在遍布岩浆的火元素位面。</p>\n<hr />\n<p>火元素是灼热的火元素位面的破坏性的具现。</p>",
             "items": {
-                "FFjYHtFi991MRIlJ": {
+                "strike-Fire Mote": {
                     "name": "火焰余烬 Fire Mote"
                 },
-                "WCpWLcuShftaYr4k": {
-                    "name": "黑暗视觉 Darkvision",
-                    "description": "@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]"
-                },
-                "e5zu7QFkUzeeeoVM": {
+                "Smoke Vision": {
                     "name": "烟雾视觉 Smoke Vision",
                     "description": "<p>火腾龙无视烟雾带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}效果。</p>"
                 },
-                "hQNxvkHklgW9fvpf": {
+                "Explosion": {
                     "name": "爆炸 Explosion",
                     "description": "<p>当火腾龙死亡时，它会爆炸，对@Template[type:emanation|distance:10|traits:fire,damaging-effect]范围内的所有生物造成[[/r (6d6)[fire]]]{6d6火焰伤害}（@Check[type:reflex|dc:28|basic:true]豁免）。</p>"
                 },
-                "RDAI0FQdtpHFrFa5": {
+                "Intense Heat": {
                     "name": "酷热 Intense Heat",
                     "description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>[[/r (4d6)[fire]]]{4d6火焰伤害} @Check[type:reflex|dc:25|basic:true]</p>"
                 },
-                "5k5qe7LZeapjusIM": {
+                "Breath Weapon": {
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>火腾龙对@Template[type:cone|distance:30]范围进行吐息，对范围内所有生物造成[[/r (7d6)[fire]]]{7d6火焰伤害}和[[/r (2d8)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}（@Check[type:reflex|dc:28|basic:true]豁免）。</p>\n<p>火腾龙在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内无法再次进行吐息。</p>"
+                    "description": "<p>火腾龙对@Template[type:cone|distance:30]范围进行吐息，对范围内所有生物造成[[/r (7d6)[fire]]]{7d6火焰伤害}和[[/r (2d8)[persistent,fire]]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。</p>\n<p>火腾龙在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内无法再次进行吐息。</p>"
                 }
             }
         },
@@ -4867,13 +4807,6 @@
             "name": "平民幽灵 Ghost Commoner",
             "hp": "负能量治疗, 复生",
             "senses": "黑暗视觉",
-            "dr": [
-                {
-                    "exceptions": "除了力场、幽冥或正能量；此抗力对非魔法时翻倍",
-                    "type": "all",
-                    "value": 5
-                }
-            ],
             "publicNotes": "<p>平民幽灵是认为自己死于不公的普通人，他们的死因通常是背叛或其他不公的行为。</p>\n<hr />\n<p>当一些凡人由于悲惨的境遇而死亡，或者说在如此遭遇的过程中死亡之时，他们徘徊于此世。这些痛苦的灵魂会在对其生前具有重大意义的地点徘徊，不断地试图纠正自己所认知的错误或错误行为。</p>",
             "items": {
                 "CfzB5r8CSHETuXfA": {
@@ -4920,13 +4853,6 @@
             "name": "法师幽灵 Ghost Mage",
             "hp": "负能量治疗，复生",
             "senses": "黑暗视觉",
-            "dr": [
-                {
-                    "exceptions": "除了力场、幽冥或正能量；此抗力对非魔法时翻倍",
-                    "type": "all",
-                    "value": 10
-                }
-            ],
             "publicNotes": "<p>在重大的魔法研究中死亡的法师可能会变为法师幽灵，他不断地在不死的余生中谋求完成自己的项目。</p>\n<hr />\n<p>当一些凡人由于悲惨的境遇而死亡，或者说在如此遭遇的过程中死亡之时，他们徘徊于此世。这些痛苦的灵魂会在对其生前具有重大意义的地点徘徊，不断地试图纠正自己所认知的错误或错误行为。</p>",
             "items": {
                 "SzaJgzszNSa3qiDA": {
@@ -4964,7 +4890,7 @@
                 },
                 "LCFMKpxw0iDxWGXu": {
                     "name": "孢子云 Spore Cloud",
-                    "description": "<p>真菌莱西释放出一团孢子，刺激@Template[type:emanation|distance:15]范围内所有生物的眼睛和喉咙。每个生物都必须通过@Check[type:fortitude|dc:16|traits:damaging-effect]豁免检定，否则收到[[/r (1)[persistent,poison]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续毒素伤害}。在毒素持续期间，目标生物的视力减弱，只能看到20尺以内的东西（大失败10尺以内）。</p>"
+                    "description": "<p>真菌莱西释放出一团孢子，刺激@Template[type:emanation|distance:15]范围内所有生物的眼睛和喉咙。每个生物都必须通过@Check[type:fortitude|dc:16|traits:damaging-effect]豁免检定，否则收到[[/r (1)[persistent,poison]]]伤害。在毒素持续期间，目标生物的视力减弱，只能看到20尺以内的东西（大失败10尺以内）。</p>"
                 },
                 "ARWbmjbxbCd0JMUv": {
                     "name": "孢子 Spores",
@@ -5252,7 +5178,7 @@
                 },
                 "CBZgnwJ9S03gtLHf": {
                     "name": "集中攻击 Focused Assault",
-                    "description": "<p>捕蝇草用4对叶荚攻击同一目标。捕蝇草进行一次叶荚打击。一旦成功命中，捕蝇草造成一次叶荚打击的伤害，并且除了第一对叶荚外，每多一个叶荚就能造成额外[[/r (1d8}]]{1d8伤害}。即使攻击失败，捕蝇草仍然能造成一次叶荚伤害，但是它不能使用精通攫抓能力。大失败则完全失手。此能力计算捕蝇草的多重攻击减值，次数等于捕蝇草的叶荚数。</p>"
+                    "description": "<p>捕蝇草用4对叶荚攻击同一目标。捕蝇草进行一次叶荚打击。一旦成功命中，捕蝇草造成一次叶荚打击的伤害，并且除了第一对叶荚外，每多一个叶荚就能造成额外[[/r (1d8)]]{1d8伤害}。即使攻击失败，捕蝇草仍然能造成一次叶荚伤害，但是它不能使用精通攫抓能力。大失败则完全失手。此能力计算捕蝇草的多重攻击减值，次数等于捕蝇草的叶荚数。</p>"
                 },
                 "rZ6DDkGMLvCQH70m": {
                     "name": "饥饿猛击 Hungry Flurry",
@@ -5381,7 +5307,7 @@
             "items": {
                 "jfJXOP78x7xyHplx": {
                     "name": "群起而攻 Pack Attack",
-                    "description": "<p>对位于豺狼人至少两个盟友的触及范围内的生物，该豺狼人的攻击可造成额外[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>对位于豺狼人至少两个盟友的触及范围内的生物，该豺狼人的攻击可造成额外[[/r (1d4)]]{1d4额外伤害}。</p>"
                 },
                 "1TgSjt8UKPwTjAH9": {
                     "name": "如履平地 Rugged Travel",
@@ -5433,7 +5359,7 @@
                 },
                 "KcCw29PtlpuADI1x": {
                     "name": "群起而攻 Pack Attack",
-                    "description": "<p>对位于豺狼人至少两个盟友的触及范围内的生物，该豺狼人的攻击可造成额外[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>对位于豺狼人至少两个盟友的触及范围内的生物，该豺狼人的攻击可造成额外[[/r (1d4)]]{1d4额外伤害}。</p>"
                 },
                 "3RCPLD1d6zfYm2VI": {
                     "name": "如履平地 Rugged Travel",
@@ -5449,7 +5375,7 @@
             "items": {
                 "pWm5TTC2umXroqjo": {
                     "name": "群起而攻 Pack Attack",
-                    "description": "<p>对位于豺狼人至少两个盟友的触及范围内的生物，该豺狼人的攻击可造成额外[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>对位于豺狼人至少两个盟友的触及范围内的生物，该豺狼人的攻击可造成额外[[/r (1d4)]]{1d4额外伤害}。</p>"
                 },
                 "NxXkXhUBYYX8UsfS": {
                     "name": "如履平地 Rugged Travel",
@@ -5686,13 +5612,6 @@
             "data":{},
             "name": "高等幽影 Greater Shadow",
             "senses": "黑暗视觉",
-            "dr": [
-                {
-                    "exceptions": "除力场、幽冥或正能量；对非魔法双倍抗力",
-                    "type": "all",
-                    "value": 10
-                }
-            ],
             "publicNotes": "<p>在阴影界长时间停留并吸收魔法力量的幽影会变成高等幽影。</p>\n<hr />\n<p>被称为幽影的神秘不死生物潜伏在黑暗中，以那些远离光明的人为食。那些躲在发光武器的光芒庇护之下和幽影进行交涉的人往往能了解很多秘密，因为幽影是理想的间谍。</p>",
             "items": {
                 "strike-Shadow Hand": {
@@ -5925,7 +5844,7 @@
             "items": {
                 "GWK22q1k4VFPbsKf": {
                     "name": "群起攻之 Pack Attack",
-                    "description": "<p>犬的打击目标如果位于至少两个盟友的触及范围内，则造成额外[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>犬的打击目标如果位于至少两个盟友的触及范围内，则造成额外[[/r (1d4)]]{1d4额外伤害}。</p>"
                 }
             }
         },
@@ -6108,7 +6027,7 @@
                 },
                 "pYg2FGHWnoS7Le78": {
                     "name": "群起攻之 Pack Attack",
-                    "description": "<p>鬣齿兽的敌人如果处于另外两只友方鬣狗的触及范围内，则造成[[/r (1d6}]]{1d6伤害}。</p>"
+                    "description": "<p>鬣齿兽的敌人如果处于另外两只友方鬣狗的触及范围内，则造成[[/r (1d6)]]{1d6伤害}。</p>"
                 }
             }
         },
@@ -6138,7 +6057,7 @@
                 },
                 "FGm1xbUPgE0BRiSf": {
                     "name": "集中攻击 Focused Assault",
-                    "description": "<p>多头蛇用头部集中攻击单一目标，压倒性的多次攻击让敌人几乎无处可躲。多头蛇用尖牙进行打击，一旦成功命中，则多头蛇的尖牙打击对目标进行伤害，并且除第一个头外，每多一个头，都能造成额外[[/r (1d6}]]{1d6伤害}。即使攻击失败，多头蛇依然能对目标造成一次尖牙打击的伤害，但大失败的话则完全失手。此攻击计算多头蛇的多重攻击减值，次数等于多头蛇的头数。</p>"
+                    "description": "<p>多头蛇用头部集中攻击单一目标，压倒性的多次攻击让敌人几乎无处可躲。多头蛇用尖牙进行打击，一旦成功命中，则多头蛇的尖牙打击对目标进行伤害，并且除第一个头外，每多一个头，都能造成额外[[/r (1d6)]]{1d6伤害}。即使攻击失败，多头蛇依然能对目标造成一次尖牙打击的伤害，但大失败的话则完全失手。此攻击计算多头蛇的多重攻击减值，次数等于多头蛇的头数。</p>"
                 },
                 "0L6qwj5JpEiwbnph": {
                     "name": "风暴噬咬 Storm of Jaws",
@@ -6189,7 +6108,7 @@
                 },
                 "A53fmiOtIr4DZqy0": {
                     "name": "群起攻之 Pack Attack",
-                    "description": "<p>鬣狗的敌人如果处于另外两只友方鬣狗的触及范围内，则造成额外[[/r (1d4}]]{1d4伤害}。</p>"
+                    "description": "<p>鬣狗的敌人如果处于另外两只友方鬣狗的触及范围内，则造成额外[[/r (1d4)]]{1d4伤害}。</p>"
                 },
                 "n06PGBhrUKKUVnsV": {
                     "name": "击倒 Knockdown",
@@ -6258,7 +6177,7 @@
             "items": {
                 "fqwCiWMkfhbYojJI": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：酸液([[/r (6d10}]]{6d10伤害}，区域效果或可持续伤害[[/r (2d8}]]{2d8伤害})；被治疗：火焰 (区域效果[[/r (2d8)[healing]]]{2d8生命值})；被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                    "description": "<p>被伤害：酸液([[/r (6d10)]]{6d10伤害}，区域效果或可持续伤害[[/r (2d8)]]{2d8伤害})；被治疗：火焰 (区域效果[[/r (2d8)[healing]]]{2d8生命值})；被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
                 "aMNM0X0dVvVRdlZT": {
                     "name": "法术弱点：中和毒性 Vulnerable to Neutralize Poison",
@@ -6291,7 +6210,7 @@
             "items": {
                 "fUzY6OZeD7f6IHE4": {
                     "name": "元素耐性 Elemental Endurance",
-                    "description": "<p>小巨灵可以在任意元素位面生存最多48小时，之后它每小时会受到[[/r (1}]]{1伤害}，直到它离开或死亡。</p>"
+                    "description": "<p>小巨灵可以在任意元素位面生存最多48小时，之后它每小时会受到[[/r (1)]]{1伤害}，直到它离开或死亡。</p>"
                 },
                 "VyoEzllElTOu9fmG": {
                     "name": "改变体型 Change Size",
@@ -7608,7 +7527,7 @@
                 },
                 "QTipkgJAwLBZFcwu": {
                     "name": "集中攻击 Focused Assault",
-                    "description": "<p>捕蝇草用两对叶荚攻击同一目标。捕蝇草进行一次叶荚打击。一旦成功命中，捕蝇草造成一次叶荚打击的伤害，并且除了第一对叶荚外，每多一个叶荚就能造成额外[[/r (1d8}]]{1d8伤害}。即使攻击失败，捕蝇草仍然能造成一次叶荚伤害，但是它不能使用精通攫抓能力。大失败则完全失手。此能力计算捕蝇草的多重攻击减值，次数等于捕蝇草的叶荚数。</p>"
+                    "description": "<p>捕蝇草用两对叶荚攻击同一目标。捕蝇草进行一次叶荚打击。一旦成功命中，捕蝇草造成一次叶荚打击的伤害，并且除了第一对叶荚外，每多一个叶荚就能造成额外[[/r (1d8)]]{1d8伤害}。即使攻击失败，捕蝇草仍然能造成一次叶荚伤害，但是它不能使用精通攫抓能力。大失败则完全失手。此能力计算捕蝇草的多重攻击减值，次数等于捕蝇草的叶荚数。</p>"
                 },
                 "oB9Lh7ZFScaG3Z04": {
                     "name": "饥饿猛击 Hungry Flurry",
@@ -7928,7 +7847,7 @@
                 },
                 "zDDzvsB3OrJU9QXn": {
                     "name": "用力甩动 Vigorous Shake",
-                    "description": "<p><strong>触发</strong> 巨魔之王受到了@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续}酸或火焰伤害。</p>\n<hr />\n<p><strong>效果</strong> 巨魔之王摇晃身体来移除持续酸或火焰效果。巨魔之王立即尝试@Check[type:flat|dc:15]检定来终止触发此反应动作的持续伤害。若巨魔之王的此次检定成功，作为此反应动作的一部分，它能立即使用原始咆哮。</p>"
+                    "description": "<p><strong>触发</strong> 巨魔之王受到了持续酸或火焰伤害。</p>\n<hr />\n<p><strong>效果</strong> 巨魔之王摇晃身体来移除持续酸或火焰效果。巨魔之王立即尝试@Check[type:flat|dc:15]检定来终止触发此反应动作的持续伤害。若巨魔之王的此次检定成功，作为此反应动作的一部分，它能立即使用原始咆哮。</p>"
                 },
                 "czVzxuwWmCRLgnuc": {
                     "name": "强行再生 Forced Regeneration",
@@ -8004,7 +7923,7 @@
                 },
                 "65E6IqqYN0IW2HsH": {
                     "name": "猛力冲锋 Powerful Charge",
-                    "description": "<p>独角兽用最多两倍速度进行直线冲锋，然后进行一次角抵打击。若独角兽移动至少20尺，则造成额外[[/r (2d6}]]{2d6伤害}。</p>"
+                    "description": "<p>独角兽用最多两倍速度进行直线冲锋，然后进行一次角抵打击。若独角兽移动至少20尺，则造成额外[[/r (2d6)]]{2d6伤害}。</p>"
                 }
             }
         },
@@ -8020,7 +7939,7 @@
                 },
                 "ydBVkEJ8CwcPFkPB": {
                     "name": "血宴 Blood Feast",
-                    "description": "<p>每个处于吸血蝙蝠群占据方格内的敌人受到[[/r (1d4)[piercing]]]{1d4穿刺伤害}（@Check[type:reflex|dc:16|basic:true]豁免）。检定失败的生物还要受到[[/r (1)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>"
+                    "description": "<p>每个处于吸血蝙蝠群占据方格内的敌人受到[[/r (1d4)[piercing]]]{1d4穿刺伤害}（@Check[type:reflex|dc:16|basic:true]豁免）。检定失败的生物还要受到[[/r (1)[persistent,bleed]]]伤害。</p>"
                 }
             }
         },
@@ -8030,13 +7949,6 @@
             "hp": "寝于棺木, 快速愈合10, 负能量治疗",
             "senses": "黑暗视觉",
             "languages": "外加一门区域语言",
-            "dr": [
-                {
-                    "exceptions": "除魔法银",
-                    "type": "physical",
-                    "value": 10
-                }
-            ],
             "publicNotes": "<p>吸血鬼阴谋家是些邪恶的法师，他们控制着不死的阴谋，将恐惧弥漫在凡人之中。</p>\n<hr />\n<p>吸血鬼是一种以活物鲜血为食的不死生物。</p>",
             "items": {
                 "I0GaQls3ghJMJ5Ib": {
@@ -8162,7 +8074,7 @@
                 },
                 "VfGIlE5o88e6ZuW6": {
                     "name": "成群袭击 Pack Attack",
-                    "description": "<p>对于触及范围内至少有两名座狼盟友的生物，座狼的打击造成额外[[/r (1d4}]]{1d4伤害}。</p>"
+                    "description": "<p>对于触及范围内至少有两名座狼盟友的生物，座狼的打击造成额外[[/r (1d4)]]{1d4伤害}。</p>"
                 },
                 "name": "活吞 Swallow Whole",
                 "description": "<p>小型, [[/r (1d6+2)[bludgeoning]]]{1d6+2钝击伤害}, 破裂9</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
@@ -8245,7 +8157,7 @@
                 },
                 "I5zNTSZyjvhCKz3D": {
                     "name": "群起而击 Pack Attack",
-                    "description": "<p>当目标生物至少在2名狼化人的盟友的触及范围内时，狼化人的打击会对其造成[[/r (1d6}]]{1d6额外伤害}。</p>"
+                    "description": "<p>当目标生物至少在2名狼化人的盟友的触及范围内时，狼化人的打击会对其造成[[/r (1d6)]]{1d6额外伤害}。</p>"
                 }
             }
         },
@@ -8442,13 +8354,6 @@
             "name": "缚灵 Wraith",
             "allSaves": "对抗正能量豁免时+1状态加值",
             "senses": "黑暗视觉，生命感知60尺",
-            "dr": [
-                {
-                    "exceptions": "除力场、幽冥或正能量；对抗非魔法攻击时抗力翻倍",
-                    "type": "all",
-                    "description": 5
-                }
-            ],
             "publicNotes": "<p>缚灵是一种汲取生命和阳光的恶毒的不死生物。它们阴暗、无形的身体上点缀着灼烧的眼睛，表达着对生者的仇恨，它们那晦暗的爪子是足以从敌人那里偷走活力的武器。缚灵可能由秽恶的死灵术创造，但它们更常由那些遁世（hermitic）的杀人犯或破坏狂（mutilator）中产生，这些人即便在死后也不愿停下他们的邪恶行径。让事情变得更棘手的是，缚灵通过吞噬并将生者转化为它们秽恶的同类而成倍增长——这意味着一小撮不受约束的缚灵可以很轻易地变为一只黑暗大军。</p>\n<p>缚灵没有重量，而且不会受到大多数物理攻击的伤害。它们出没于任何能够以生命为食的地方，尽管它们在阳光下的脆弱限制了它们只能活动于世界的阴暗之处——在那里它们可以无缝地融入环境，然后悄悄地吞没它们的猎物。</p>\n<p>在那些死亡和骚乱司空见惯的地方——被战争蹂躏的乡村、被罪犯首脑统治的地下世界、或是举行残酷邪教仪式的场地，缚灵会和其他同类结伙。在这些地方，活人只有依照携带有日光杖的强大牧师的指引才能过得好。由于缚灵仅能在夜晚或黑暗的地方狩猎，废墟、下水道和遗弃的建筑在白天为缚灵提供了避难所。缚灵足够聪明到在战斗中利用它们的虚体优势，因此它们呆在曲折的洞穴或者有走廊的建筑并避开空旷地带。</p>\n<p>因为它们纯粹由负能量位面的反生命构成，缚灵遍布那些亵渎的区域。在不死生物统治的国家和城镇中，缚灵有着刺客和间谍的地位。在盖布（Geb）它们属于统治阶级，但乌斯塔拉夫（Ustalav）有着更多的缚灵，在那里成群的缚灵徘徊于坟地和雾气弥漫的小径上，吞噬整个村庄的人口。在世界上的其他地方，缚灵往往不会四处游荡并把它们的活动限制于更小的区域，通常它们只在自己选择的地方及其周围环境出没。</p>",
             "items": {
                 "PoFwl1bniXcbhkld": {
@@ -8529,7 +8434,7 @@
                 },
                 "9RRqDOZEOM8rUI1P": {
                     "name": "成群袭击 Pack Attack",
-                    "description": "<p>对于触及范围内至少有两名冬狼盟友的生物，冬狼的打击造成[[/r (1d6}]]{1d6额外伤害}。</p>"
+                    "description": "<p>对于触及范围内至少有两名冬狼盟友的生物，冬狼的打击造成[[/r (1d6)]]{1d6额外伤害}。</p>"
                 }
             }
         },
@@ -8541,7 +8446,7 @@
             "items": {
                 "GhRRqxvK6T21zheo": {
                     "name": "成群袭击 Pack Attack",
-                    "description": "<p>对于触及范围内至少有两名狼盟友的生物，狼的打击造成[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>对于触及范围内至少有两名狼盟友的生物，狼的打击造成[[/r (1d4)]]{1d4额外伤害}。</p>"
                 },
                 "dB4Pr3yiNKH32fE8": {
                     "name": "击倒 Knockdown",
@@ -8940,11 +8845,11 @@
                 },
                 "Alchemical Rupture": {
                     "name": "炼金破裂 Alchemical Rupture",
-                    "description": "<p>当炼金魔像受到重击伤害或受到<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>魔法影响时，身上的一个玻璃容器会碎裂，对@Template[type:emanation|distance:5]{5尺弥漫}范围喷出炼金液体。</p>\n<p>投1d6并查阅炼金容器 Alchemical Chambers表来决定碎裂的是哪个容器——当结果为1-5时，范围中的生物受到[[/r (10d6}]]{10d6}对应类型的伤害（@Check[type:reflex|dc:28|basic:true]豁免）。当结果为6时，生物必须进行对抗恶心效果的强韧豁免检定。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Alchemical Rupture]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r (10d6)[acid]]]{10d6酸液伤害} @Check[type:reflex|dc:28|basic:true|traits:acid]</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r (10d6)[cold]]]{10d6寒冷伤害} @Check[type:reflex|dc:28|basic:true|traits:cold]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r (10d6)[electricity]]]{10d6电击伤害} @Check[type:reflex|dc:28|basic:true|traits:electricity]</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r (10d6)[fire]]]{10d6火焰伤害} @Check[type:reflex|dc:28|basic:true|traits:fire]</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r (10d6)[poison]]]{10d6毒素伤害} @Check[type:reflex|dc:28|basic:true|traits:poison]</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
+                    "description": "<p>当炼金魔像受到重击伤害或受到<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>魔法影响时，身上的一个玻璃容器会碎裂，对@Template[type:emanation|distance:5]{5尺弥漫}范围喷出炼金液体。</p>\n<p>投1d6并查阅炼金容器 Alchemical Chambers表来决定碎裂的是哪个容器——当结果为1-5时，范围中的生物受到[[/r (10d6)]]{10d6}对应类型的伤害（@Check[type:reflex|dc:28|basic:true]豁免）。当结果为6时，生物必须进行对抗恶心效果的强韧豁免检定。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Alchemical Rupture]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r (10d6)[acid]]]{10d6酸液伤害} @Check[type:reflex|dc:28|basic:true|traits:acid]</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r (10d6)[cold]]]{10d6寒冷伤害} @Check[type:reflex|dc:28|basic:true|traits:cold]</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r (10d6)[electricity]]]{10d6电击伤害} @Check[type:reflex|dc:28|basic:true|traits:electricity]</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r (10d6)[fire]]]{10d6火焰伤害} @Check[type:reflex|dc:28|basic:true|traits:fire]</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r (10d6)[poison]]]{10d6毒素伤害} @Check[type:reflex|dc:28|basic:true|traits:poison]</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<p>被伤害：音波([[/r (5d8}]]{5d8伤害}, 区域效果或可持续伤害则为[[/r (2d6}]]{2d6伤害}; 被治疗：酸液(区域效果[[/r (2d4)[healing]]]{2d4生命值});被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<p><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</p>\n<p><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</p>\n<p><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</p>"
+                    "description": "<p>被伤害：音波([[/r (5d8)]]{5d8伤害}, 区域效果或可持续伤害则为[[/r (2d6)]]{2d6伤害}; 被治疗：酸液(区域效果[[/r (2d4)[healing]]]{2d4生命值});被减速：寒冷</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<p><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</p>\n<p><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</p>\n<p><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</p>"
                 },
                 "Vulnerable to Shatter": {
                     "name": "法术弱点-粉碎音波 Vulnerable to Shatter",
@@ -8952,11 +8857,11 @@
                 },
                 "Alchemical Injection": {
                     "name": "炼金注射 Alchemical Injection",
-                    "description": "<p>当炼金魔像以注射器打击击中一个生物，投1d6并查阅炼金容器表来决定额外效果。注射器造成[[/r (2d6}]]{2d6}对应类型的额外伤害（或让目标暴露在恶心效果之下，取决于投掷结果）。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Alchemical Injection]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r (2d6)[acid]]]{2d6酸液伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r (2d6)[cold]]]{2d6寒冷伤害}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r (2d6)[electricity]]]{2d6电击伤害}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r (2d6)[fire]]]{2d6火焰伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r (2d6)[poison]]]{2d6毒素伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
+                    "description": "<p>当炼金魔像以注射器打击击中一个生物，投1d6并查阅炼金容器表来决定额外效果。注射器造成[[/r (2d6)]]{2d6}对应类型的额外伤害（或让目标暴露在恶心效果之下，取决于投掷结果）。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Alchemical Injection]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>[[/r (2d6)[acid]]]{2d6酸液伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>[[/r (2d6)[cold]]]{2d6寒冷伤害}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>[[/r (2d6)[electricity]]]{2d6电击伤害}</td>\n</tr>\n<tr>\n<td>4</td>\n<td>[[/r (2d6)[fire]]]{2d6火焰伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>[[/r (2d6)[poison]]]{2d6毒素伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 },
                 "Generate Bomb": {
                     "name": "生成炸弹 Generate Bomb",
-                    "description": "<p>炼金魔像从炼金容器中汲取物质填满一个小瓶来制造一枚炸弹，并进行一次炸弹打击。</p>\n<p>投1d6并查阅炼金容器表来决定炸弹效果。</p>\n<p>如果结果为1-4，则它创造的炸弹相当于高等（greater）炼金炸弹：容器1为@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{酸液瓶 Acid Flask}，容器2为@UUID[Compendium.pf2e.equipment-srd.intVPcEzbE9o4NQd]{霜冻瓶 Frost Vial}，容器3为@UUID[Compendium.pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{瓶装闪电 Bottled Lightning}，容器4为@UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{炽火胶 Alchemist's Fire}。</p>\n<p>如果结果为5，则它创造出一枚能造成3d10毒素伤害和3毒素溅射伤害的毒液炸弹，但没有其他效果。</p>\n<p>如果结果为6，则它创造出一枚恶心炸弹，将目标和溅射半径内的所有生物暴露在恶心效果之下；只被溅射影响的生物在强韧豁免检定上有+2环境加值。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Generate Bomb]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>酸液瓶 Acid Flask: [[/r (1)[acid]]]{1酸液伤害}, [[/r (3d6)[persistent,acid]]]{3d6持续酸液伤害}@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续酸液伤害}和[[/r (3)[splash,acid]]]{3酸液溅射伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>霜冻瓶: [[/r (3d6)[cold]]]{3d6寒冷伤害}, [[/r (3)[splash,cold]]]{3寒冷溅射伤害}和-10尺速度状态减值直到目标的下回合结束@UUID[Compendium.pf2e.equipment-effects.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>瓶装闪电: [[/r (3d6)[electricity]]]{3d6电击伤害}, [[/r (3)[splash,electricity]]]{3电击溅射伤害}和@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到目标下个回合开始</td>\n</tr>\n<tr>\n<td>4</td>\n<td>炽火胶: [[/r (3d8)[fire]]]{3d8火焰伤害}, [[/r (3)[persistent,fire]]]{3持续火焰伤害}@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}和[[/r (3)[splash,fire]]]{3火焰溅射伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>毒液炸弹: [[/r (3d10)[poison]]]{3d10 毒素伤害}和[[/r (3)[splash,poison]]]{3毒素溅射伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
+                    "description": "<p>炼金魔像从炼金容器中汲取物质填满一个小瓶来制造一枚炸弹，并进行一次炸弹打击。</p>\n<p>投1d6并查阅炼金容器表来决定炸弹效果。</p>\n<p>如果结果为1-4，则它创造的炸弹相当于高等（greater）炼金炸弹：容器1为@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{酸液瓶 Acid Flask}，容器2为@UUID[Compendium.pf2e.equipment-srd.intVPcEzbE9o4NQd]{霜冻瓶 Frost Vial}，容器3为@UUID[Compendium.pf2e.equipment-srd.r2iTRbt1zpkAqHj2]{瓶装闪电 Bottled Lightning}，容器4为@UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{炽火胶 Alchemist's Fire}。</p>\n<p>如果结果为5，则它创造出一枚能造成3d10毒素伤害和3毒素溅射伤害的毒液炸弹，但没有其他效果。</p>\n<p>如果结果为6，则它创造出一枚恶心炸弹，将目标和溅射半径内的所有生物暴露在恶心效果之下；只被溅射影响的生物在强韧豁免检定上有+2环境加值。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Generate Bomb]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>酸液瓶 Acid Flask: [[/r (1)[acid]]]{1酸液伤害}, [[/r (3d6)[persistent,acid]]]{3d6持续酸液伤害}和[[/r (3)[splash,acid]]]{3酸液溅射伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>霜冻瓶: [[/r (3d6)[cold]]]{3d6寒冷伤害}, [[/r (3)[splash,cold]]]{3寒冷溅射伤害}和-10尺速度状态减值直到目标的下回合结束@UUID[Compendium.pf2e.equipment-effects.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>瓶装闪电: [[/r (3d6)[electricity]]]{3d6电击伤害}, [[/r (3)[splash,electricity]]]{3电击溅射伤害}和@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到目标下个回合开始</td>\n</tr>\n<tr>\n<td>4</td>\n<td>炽火胶: [[/r (3d8)[fire]]]{3d8火焰伤害}, [[/r (3)[persistent,fire]]]{3持续火焰伤害}伤害和[[/r (3)[splash,fire]]]{3火焰溅射伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>毒液炸弹: [[/r (3d10)[poison]]]{3d10 毒素伤害}和[[/r (3)[splash,poison]]]{3毒素溅射伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 }
             }
         },
@@ -9180,13 +9085,6 @@
             "name": "报丧女妖 Banshee",
             "hp": "负能量治疗",
             "senses": "60尺洞见心跳（模糊），黑暗视觉",
-            "dr": [
-                {
-                    "type": "all",
-                    "value": 12,
-                    "exceptions": "除力场、幽冥或正能量；对抗非魔法时双倍抗力"
-                }
-            ],
             "publicNotes": "<p>报丧女妖是愤怒且痛苦的灵魂，她们是在生命的最后时刻由于被背叛而束缚在主物质位面的精灵。部分报丧女妖的诞生是因为精灵被最信任的同伴和朋友所杀害，或者是在临终时被所爱之人所背叛。而另一些由精灵衍生出的报丧女妖则是因为其死前的背信行为在灵魂上留下了污点。无论报丧女妖自身的起源是哪个种类，她们都会蔑视生灵。这种对生者的仇恨往往是其生前性格的可怖翻转。有人猜测越是善良热心的精灵（在遭遇越发痛苦的背叛后），由其诞生的报丧女妖越是残忍无情。</p>\n<p>报丧女妖很少远离自身的殒命之地，她们通常会在阳光很少能照耀的地点作祟，比如茂密的森林或昏暗的沼泽。在精灵之国奇奥尼（Kyonin）可以找到许多报丧女妖，尤其是在扭曲棘林（Tanglebriar）——恶魔毁木者（Treerazer）的邪恶领地。同样地，幽暗地域（Darklands）的卓尔定居点周边也潜伏着大量的报丧女妖，因为卓尔文化中不乏大量残忍的背叛行为。</p>\n<p>报丧女妖仅靠碰触就能带来痛苦与源自内心的原始恐惧，那些暴露在她们悲伤哀嚎中的人很难存活下来。</p>",
             "items": {
                 "74wDKknM5LCOcK73": {
@@ -9246,7 +9144,7 @@
                 },
                 "y6bETzshaXTYx4Wq": {
                     "name": "背壳剐蹭 Shell Rake",
-                    "description": "<p>巴莫在生物和船体旁游泳或行走，它背上强壮的棘刺会造成伤害。在巴莫行动路径上任意一点与之相邻的生物或船只都会受到[[/r (6d6+10)[slashing,piercing]]]{6d6+10挥砍+穿刺伤害}（@Check[type:reflex|dc:42|basic:true]豁免）。此外，对于船体来说，背壳剐蹭还能忽视其5点硬度，并且四散的碎片能对每一个位于甲板边缘@Template[type:burst|distance:10]{10尺}内的生物造成[[/r (3d6+5}]]{3d6+5伤害}（@Check[type:reflex|dc:42|basic:true]豁免）。</p>"
+                    "description": "<p>巴莫在生物和船体旁游泳或行走，它背上强壮的棘刺会造成伤害。在巴莫行动路径上任意一点与之相邻的生物或船只都会受到[[/r (6d6+10)[slashing,piercing]]]{6d6+10挥砍+穿刺伤害}（@Check[type:reflex|dc:42|basic:true]豁免）。此外，对于船体来说，背壳剐蹭还能忽视其5点硬度，并且四散的碎片能对每一个位于甲板边缘@Template[type:burst|distance:10]{10尺}内的生物造成[[/r (3d6+5)]]{3d6+5伤害}（@Check[type:reflex|dc:42|basic:true]豁免）。</p>"
                 },
                 "uPAAssuXj8CktZTI": {
                     "name": "推离40尺"
@@ -9312,11 +9210,11 @@
                 },
                 "QEvRlTqwOEac04ov": {
                     "name": "吸附 Attach",
-                    "description": "<p>当觅血者击中比自己体型更大的目标时，它带有倒刺的腿会紧紧勾在目标身上。这类似于一种擒抱，但是觅血者会跟着目标移动而非保持在同一方格里。</p>\n<p>吸附状态中的觅血者处于@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。如果觅血者此时被杀或被强行扯开，则受害者受到[[/r (1)[persistent,bleed]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>\n<p>逃脱吸附或用其他手段移除觅血者则不会造成流血伤害。</p>"
+                    "description": "<p>当觅血者击中比自己体型更大的目标时，它带有倒刺的腿会紧紧勾在目标身上。这类似于一种擒抱，但是觅血者会跟着目标移动而非保持在同一方格里。</p>\n<p>吸附状态中的觅血者处于@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。如果觅血者此时被杀或被强行扯开，则受害者受到[[/r (1)[persistent,bleed]]]伤害。</p>\n<p>逃脱吸附或用其他手段移除觅血者则不会造成流血伤害。</p>"
                 },
                 "YwidZ8QmOJ85iLcw": {
                     "name": "吸血 Blood Drain",
-                    "description": "<p><strong>需求</strong> 觅血者吸附于目标。</p>\n<hr />\n<p><strong>效果</strong> 觅血者用口器刺入被它吸附的目标。这会造成[[/r (1d4}]]{1d4伤害}，并且觅血者获得等同于伤害的临时生命值。</p>\n<p>被吸血的生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，直到接受任意数值的治疗。</p>"
+                    "description": "<p><strong>需求</strong> 觅血者吸附于目标。</p>\n<hr />\n<p><strong>效果</strong> 觅血者用口器刺入被它吸附的目标。这会造成[[/r (1d4)]]{1d4伤害}，并且觅血者获得等同于伤害的临时生命值。</p>\n<p>被吸血的生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，直到接受任意数值的治疗。</p>"
                 }
             }
         },
@@ -9465,7 +9363,7 @@
                 },
                 "M203mlcBNFvAqyIJ": {
                     "name": "活烤 Burn Alive",
-                    "description": "<p>雕像将它所@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物塞到火盆里炽红的煤堆中。目标受到[[/r (3d8)[fire]]]{3d8火焰伤害}和[[/r (1d8)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+                    "description": "<p>雕像将它所@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物塞到火盆里炽红的煤堆中。目标受到[[/r (3d8)[fire]]]{3d8火焰伤害}和[[/r (1d8)[persistent,fire]]]伤害。</p>"
                 }
             }
         },
@@ -9513,7 +9411,7 @@
                 },
                 "Crv6pRa77FWxBY6M": {
                     "name": "黄蜂幼虫寄生 Wasp Larva",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>阶段1</strong> 携带病原但没有不良效果([[/br 1d6 #days]]{1d6天})</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} ([[/br 1d3 #days]]{1d3天})</p>\n<p><strong>阶段3</strong> [[/r (5d6}]]{5d6伤害}, 幼虫出现(疾病结束)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>阶段1</strong> 携带病原但没有不良效果([[/br 1d6 #days]]{1d6天})</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} ([[/br 1d3 #days]]{1d3天})</p>\n<p><strong>阶段3</strong> [[/r (5d6)]]{5d6伤害}, 幼虫出现(疾病结束)</p>"
                 }
             }
         },
@@ -9691,7 +9589,7 @@
                 },
                 "aivVKzlEOwieqgj1": {
                     "name": "正义之炎 Flame of Justice",
-                    "description": "<p>一个格式塔的正义之魂在他的手中凝聚为一把强大的双手巨剑，其名为正义之炎。</p>\n<p>格式塔可以将他的正义之炎作为远程武器投掷。如果正义之炎被卸武或投掷，它会在着陆或造成伤害后立即消失，并再次出现在格式塔手中。</p>\n<p>当重击时，正义之炎的火焰伤害骰先取满（火焰伤害的d6视作投出了[[/r (6)[fire]]]{6}），再因重击而翻倍伤害，且目标还会受到[[/r (1d10)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+                    "description": "<p>一个格式塔的正义之魂在他的手中凝聚为一把强大的双手巨剑，其名为正义之炎。</p>\n<p>格式塔可以将他的正义之炎作为远程武器投掷。如果正义之炎被卸武或投掷，它会在着陆或造成伤害后立即消失，并再次出现在格式塔手中。</p>\n<p>当重击时，正义之炎的火焰伤害骰先取满（火焰伤害的d6视作投出了[[/r (6)[fire]]]{6}），再因重击而翻倍伤害，且目标还会受到[[/r (1d10)[persistent,fire]]]伤害。</p>"
                 },
                 "Gs9kfR3NhiKWAumE": {
                     "name": "希望之灯 Lantern of Hope",
@@ -9763,7 +9661,7 @@
                 },
                 "nVzYnoOpZcD3KXg9": {
                     "name": "正义之炎 Flame of Justice",
-                    "description": "<p>一个军团圣使的正义之魂在他的手中凝聚为一把强大的双手巨剑，其名为正义之炎。</p>\n<p>军团圣使可以将他的正义之炎作为远程武器投掷。如果正义之炎被卸武或投掷，它会在着陆或造成伤害后立即消失，并再次出现在军团圣使手中。</p>\n<p>当重击时，正义之炎的火焰伤害骰先取满（火焰伤害的d6视作投出了[[/r (6)[fire]]]{6}），再因重击而翻倍伤害，且目标还会受到[[/r (1d10)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+                    "description": "<p>一个军团圣使的正义之魂在他的手中凝聚为一把强大的双手巨剑，其名为正义之炎。</p>\n<p>军团圣使可以将他的正义之炎作为远程武器投掷。如果正义之炎被卸武或投掷，它会在着陆或造成伤害后立即消失，并再次出现在军团圣使手中。</p>\n<p>当重击时，正义之炎的火焰伤害骰先取满（火焰伤害的d6视作投出了[[/r (6)[fire]]]{6}），再因重击而翻倍伤害，且目标还会受到[[/r (1d10)[persistent,fire]]]伤害。</p>"
                 }
             }
         },
@@ -9852,17 +9750,6 @@
             "hp": "负能量治疗, 复生",
             "allSaves": "对抗正能量所有豁免+1状态加值",
             "senses": "黑暗视觉",
-            "dr": [
-                {
-                    "type": "cold",
-                    "value": 10
-                },
-                {
-                    "exceptions": "除魔法钝击",
-                    "type": "physical",
-                    "value": 10
-                }
-            ],
             "publicNotes": "<p>当法师对奥术之力的贪欲遮蔽了凡人的生命，就会化身为狡猾且全能的施法者——巫妖。</p>\n<hr />\n<p>为了获得更多的时间来完成自身目标，部分绝望的施法者通过化身不死之物来追寻永生。通过多年的研究，加上创造出名为命匣（phylactery）的特殊容器，施法者终于可以通过饮用致命药剂或施放可怕咒语来完成最后一道步骤，将自己转化为巫妖。尽管大多数采取这种激进做法的施法者都是为了继续自身的工作或完成一些长期计划，但还有一些施法者化身巫妖只是因为惧怕死亡或者为了实现某些险恶的企图，比如发誓进行长期的复仇。无论如何，转化的结果都是永久性的，甚至有潜力改变历史——无论是对于那先转化自己的人，还是那些因巫妖的新力量而不可避免地将要遭受苦难的无数凡人。</p>\n<p>在经历转变之后，巫妖通常会找个安静的地方居住，他们的居所一般由各种守卫以及陷阱守护，这主要有两个原因。首先，巫妖为了制定精密的计划需要独处，其次，很少有凡人（若有的话）乐于和这些传奇堕落死灵法师互动。前者催生了后者，对自身强加的隔离措施会驱使巫妖变得更加疯狂，从而进一步将自身隔绝于文明之外。巫妖活得越久，就会成为越发谨慎的规划大师，将自身藏匿于充满致命谜题、误导和怪物的迷宫中。巫妖的仆人和护卫对主人绝对忠诚，这可能是出于他们的本性（比如构装体或不死生物），也可能是由于强大魔法带来的控制效果。随着时间的推移，许多巫妖会变得疯狂，巫妖巢穴的性质对于这名不死生物的精神状态有着很好的提示作用。</p>\n<p>巫妖会为了守护自己的命匣而在周边设下层层保护，因为他知道摧毁这个魔法容器对巫妖来说意味着毁灭。巫妖这种生物出了名的难以讨价还价，不过威胁摧毁命匣是在此类谈判中占据优势的好方法。</p>",
             "items": {
                 "gakDYFEsPKyFUdIg": {
@@ -10013,7 +9900,7 @@
             "items": {
                 "hYcrjabm50sPyqBV": {
                     "name": "群起攻之 Pack Attack",
-                    "description": "<p>狮子的敌人如果处于另外两只友方狮子的触及范围内，则造成[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>狮子的敌人如果处于另外两只友方狮子的触及范围内，则造成[[/r (1d4)]]{1d4额外伤害}。</p>"
                 },
                 "LxnGNDFd9yCEkOAt": {
                     "name": "猛扑 Pounce",
@@ -10787,7 +10674,7 @@
                 },
                 "aeZh7jl8AKKWs8Qv": {
                     "name": "锈蚀 Rust",
-                    "description": "<p>锈蚀怪的触须导致金属快速地被腐蚀和生锈。</p>\n<p>若他成功使用触须打击或者用触须尝试缴械，那么锈蚀怪会对目标穿戴或持用的1件金属物品造成[[/r (2d6}]]{2d6伤害}（重击翻倍），忽略其硬度。</p>\n<p>若锈蚀怪命中无主金属物品，该物品会自动承受此伤害。</p>\n<p>若有生物使用@UUID[Compendium.pf2e.feats-srd.jM72TjJ965jocBV8]{盾牌格挡 Shield Block}反应动作对抗触须攻击，且格挡用的盾牌是金属盾牌的话，该盾牌会自动破损，但该次攻击不会导致其他物品被锈蚀。</p>"
+                    "description": "<p>锈蚀怪的触须导致金属快速地被腐蚀和生锈。</p>\n<p>若他成功使用触须打击或者用触须尝试缴械，那么锈蚀怪会对目标穿戴或持用的1件金属物品造成[[/r (2d6)]]{2d6伤害}（重击翻倍），忽略其硬度。</p>\n<p>若锈蚀怪命中无主金属物品，该物品会自动承受此伤害。</p>\n<p>若有生物使用@UUID[Compendium.pf2e.feats-srd.jM72TjJ965jocBV8]{盾牌格挡 Shield Block}反应动作对抗触须攻击，且格挡用的盾牌是金属盾牌的话，该盾牌会自动破损，但该次攻击不会导致其他物品被锈蚀。</p>"
                 }
             }
         },
@@ -10799,7 +10686,7 @@
             "items": {
                 "osaWxy5RrqJdKuni": {
                     "name": "烈焰护甲 Armor of Flames",
-                    "description": "<p>火蜥蜴燃烧体内的火焰。直到它的下一轮开始，它的AC获得+2 环境加值，当一个相邻的生物触碰它或以物理攻击命中它时，如果该生物没有通过@Check[type:reflex|dc:25|traits:damaging-effect]豁免，将受到[[/r (2d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+                    "description": "<p>火蜥蜴燃烧体内的火焰。直到它的下一轮开始，它的AC获得+2 环境加值，当一个相邻的生物触碰它或以物理攻击命中它时，如果该生物没有通过@Check[type:reflex|dc:25|traits:damaging-effect]豁免，将受到[[/r (2d6)[persistent,fire]]]伤害。</p>"
                 },
                 "5P26T61QIn85Jbfk": {
                     "name": "紧勒 Constrict",
@@ -11042,7 +10929,7 @@
                 },
                 "RibPgalaxUxyuwym": {
                     "name": "群起攻之 Pack Attack",
-                    "description": "<p>如果伶盗龙的目标处于另外两只友方伶盗龙触及范围内，则造成[[/r (1d4}]]{1d4额外伤害}。</p>"
+                    "description": "<p>如果伶盗龙的目标处于另外两只友方伶盗龙触及范围内，则造成[[/r (1d4)]]{1d4额外伤害}。</p>"
                 }
             }
         },
@@ -11051,16 +10938,6 @@
             "name": "虚空虫 Voidworm",
             "hp": "快速愈合1",
             "senses": "熵力感知(模糊)30尺, 黑暗视觉",
-            "dr": [
-                {
-                    "type": "precision",
-                    "value": 3
-                },
-                {
-                    "type": "protean anatomy",
-                    "value": 5
-                }
-            ],
             "speed": "行动自如",
             "publicNotes": "<p>对于这种名为虚空虫的会飞的荧光存在，幻蛇们甚至不会将其视为幻蛇中一分子，只把它们当做大漩涡（the Maelstrom）不断搅动的能量所产生的可耻副产品。在更为强大的幻蛇面前把虚空虫称为幻蛇无异是在煽动战斗。</p>\n<p>而虚空虫自身则对自己是否被当做幻蛇这件事缺乏兴趣。它们在大漩涡中维持着繁荣的生态，结成至多20尾的鱼群，在现实不断被变化搅动的混沌中尽情嬉戏。在其他地方（比如在主物质位面），虚空虫会被物质的恒久存续所迷惑；许多虚空虫会锁定某个地区的特定地貌（比如山坡或池塘），在周遭的空气中盘旋数月甚至数年之久，只为在对象周遭等待以满足自身对于对象所能产生的变化的好奇心。微小的变化——比如树木在秋季的颜色变换、尸体缓慢腐烂、或者间歇泉定期喷出蒸汽——都能让虚空虫着迷。虚空虫约有2尺长，重约2磅。</p>\n<hr />\n<p>幻蛇是混乱的捍卫者，被称为大漩涡（the Maelstrom）的混沌原初位面的原住民，他们将散播混乱与加速熵的终结视为自己的使命。最强大的幻蛇是被集体称之为幻蛇领主（protean lords）的半神，然而这些变幻莫测的存在在主物质位面中的信仰往往暧昧不明且藏于暗处。</p>\n<p>幻蛇按照一种松散的种姓制度划分自身族群，并掌握着令人眼花缭乱的多样能力。大多数幻蛇拥有蛇形的躯体和原初猛兽的头颅。学者们一直着迷于这个事实——即这些无序分裂的后代为何会有如此多具备共性的特征——因此他们指出，即便在最纯粹的混沌中，也存在着某些秩序的表象。而其他人则注意到蛇形是最为原始的形态之一，这也许是在暗示一个事实，即在时间的起点，此类形态可能是唯一的存在。幻蛇自身对此并没有任何好说的，而讽刺的是，这种态度反而使得人们对其种群的说法缺乏共识并加深了人们的困惑。毕竟，连混沌本身都不能信赖混沌，难道这不才是熵的最纯粹形式么？</p>",
             "items": {
@@ -11107,7 +10984,7 @@
                 },
                 "rCo3WVukDgsbPhLD": {
                     "name": "孢子云 Spore Cloud",
-                    "description": "<p>鹫魔从身体释放一团孢子云，对所有相邻生物造成[[/r (2d8)[poison]]]{2d8毒素伤害}。每个被孢子云伤害的生物必须成功通过@Check[type:fortitude|dc:28|traits:damaging-effect]检定，否则孢子渗入皮肤，受到[[/r (2d8)[persistent,piercing]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续穿刺伤害}，并在受害者身体表面发育成绿色的藤蔓。藤蔓会在10轮之后长大，如果没有被外力清除，则会在[[/br 1d4 #Spore Cloud Duration]]{1d4天}之后自然枯萎并脱落。如果受害者受到善良法术影响，或藤蔓被淋上<em>@UUID[Compendium.pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em>（以一个交互动作），则藤蔓被摧毁。</p>\n<p>一旦鹫魔使用孢子云能力之后，它在[[/br 1d6 #Recharge Spore Cloud]]{1d6轮}内无法再次使用该能力。</p>"
+                    "description": "<p>鹫魔从身体释放一团孢子云，对所有相邻生物造成[[/r (2d8)[poison]]]{2d8毒素伤害}。每个被孢子云伤害的生物必须成功通过@Check[type:fortitude|dc:28|traits:damaging-effect]检定，否则孢子渗入皮肤，受到[[/r (2d8)[persistent,piercing]]]伤害，并在受害者身体表面发育成绿色的藤蔓。藤蔓会在10轮之后长大，如果没有被外力清除，则会在[[/br 1d4 #Spore Cloud Duration]]{1d4天}之后自然枯萎并脱落。如果受害者受到善良法术影响，或藤蔓被淋上<em>@UUID[Compendium.pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em>（以一个交互动作），则藤蔓被摧毁。</p>\n<p>一旦鹫魔使用孢子云能力之后，它在[[/br 1d6 #Recharge Spore Cloud]]{1d6轮}内无法再次使用该能力。</p>"
                 },
                 "nLB0CpyqlvJpfjnr": {
                     "name": "震慑尖叫 Stunning Screech",
@@ -11568,15 +11445,15 @@
             "publicNotes": "<p>疫鸟形似戴着厚重皮质瘟疫医生面具的夜鹰、麻雀或其他小鸟。他们是骨园（the Boneyard）的办事员、信使和抄写员，执行见证审判、指引灵魂、并通常会执行枯燥乏味的行政工作以维持骨园的正常运转。大多数疫鸟都很健谈，并且热衷于讨论自己认为自身被分配的任务是如何重要。</p>\n<hr />\n<p>招魂者是死之国度骨园（the Boneyard）的守护者和引路人，凡人灵魂会来到这巨大的墓之位面接受审判，并被引领至永世的奖赏或惩罚。招魂者要确保死者在他们的引渡之下接受死亡，并将死者引领至恰当的来世。招魂者还要保护灵魂免遭超自然掠食者的捕食。几乎所有招魂者都会佩戴面具，尤其是当他们与凡人互动之时，他们佩戴的面具类型也是多种多样，就如同招魂者自身也有着各式种类一般。骨园的法院里奏鸣着安魂曲（Requian），这是一种沉郁且有旋律的语言，语调缓慢且变化多样。</p>",
             "senses": "黑暗视觉，生命感知60尺",
             "items": {
-                "C2pJTs2tt6oHDcFW": {
+                "Change Shape": {
                     "name": "变形 Change Shape",
                     "description": "<p>疫鸟呈现出渡鸦或夜莺的外观。这不会改变他的速度，也不会改变他的打击的攻击及伤害调整值。</p>"
                 },
-                "kcYtaqPWsMiKHYty": {
+                "Haunting Melody": {
                     "name": "作祟旋律 Haunting Melody",
                     "description": "<p>疫鸟鸣唱让人入迷的歌声。@Template[type:emanation|distance:60]{60尺弥散范围}内的每个活物或不死生物都必须尝试@Check[type:will|dc:18]豁免。</p>\n<p>该效果持续1轮，但疫鸟能在随后的轮里再次使用该能力，用于将所有受影响生物的持续时间延长1轮。成功通过任何豁免的生物都会在24小时内临时免疫该效果。尽管这是个心灵效果，但该能力也能影响无心智的不死生物。招魂者免疫该能力。</p>\n<hr />\n<p><strong>失败</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}。</p>\n<p><strong>大失败</strong> 同失败，且该生物必须在其回合内花费自身的每个动作来尽可能地靠近疫鸟，于此同时该生物也会避开明显的危险。若被@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}的生物与疫鸟相邻，那么他就会站在原地且不做行动。若该生物受到攻击，迷魂便会结束。</p>"
                 },
-                "1UAh4ooLm8sQPmeN": {
+                "Spirit Touch": {
                     "name": "灵魂之触 Spirit Touch",
                     "description": "<p>疫鸟的打击能影响虚体生物，就如同被蚀刻了@UUID[Compendium.pf2e.equipment-srd.JQdwHECogcTzdd8R]{幽冥 Ghost Touch}性能符文一般，并且会对活物造成[[/r (1d6)[negative]]]{1d6负能量伤害}或对不死生物造成[[/r (1d6)[positive]]]{1d6正能量伤害}。</p>"
                 }
@@ -11587,57 +11464,43 @@
             "name": "骚灵 Poltergeist",
             "publicNotes": "<p>当一个生物死亡时，并且因为某种原因，他的魂魄不能或不愿意离开他死亡的地点时，该魂魄可能会呈现为骚灵的形态：焦躁不安且隐形的魂魄，但仍旧能够操控实体的物质。许多骚灵都是由于极端情感创伤引起或导致的结果而死亡的。</p>",
             "senses": "黑暗视觉",
-            "dr": [
-                {
-                    "exceptions": "除了力场、幽冥或正能量；此抗力对非魔法时翻倍",
-                    "type": "all",
-                    "value": 5
-                }
-            ],
             "items": {
-                "YcbVbnypSBl3Jj3E": {
-                    "name": "念动战技（任意施法） Telekinetic Maneuver (At Will)",
-                    "description": "<p><p>你通过一股猛烈的念动力移动一个敌人或者其携带的事物。你可以对目标尝试卸武（Disarm），推撞（Shove），或者摔绊（Trip），使用法术攻击骰，而不是运动（Athletics）检定。</p>"
-                },
                 "1cbIF1wUJSF3WWPk": {
-                    "name": "念动物体(钝击) Telekinetic Object (Bludgeoning)",
+                    "name": "念动物体(钝击) Telekinetic Object",
                     "description": "<p>伤害类型取决于被丢出的物体</p>"
                 },
                 "Zi3UHzrDTQBgI0SW": {
-                    "name": "念动物体(穿刺) Telekinetic Object (Piercing)",
+                    "name": "念动物体(穿刺) Telekinetic Object",
                     "description": "<p>伤害类型取决于被丢出的物体</p>"
                 },
                 "AuhMdlvvBkXqKNG8": {
-                    "name": "念动物体(挥砍) Telekinetic Object (Slashing)",
+                    "name": "念动物体(挥砍) Telekinetic Object",
                     "description": "<p>伤害类型取决于被丢出的物体</p>"
                 },
 
-                "Yi4K7PbKaZWlXxWj": {
+                "Site Bound": {
                     "name": "束缚之地 Site Bound",
                     "description": "<p>骚灵与某个地点具有联系，他至多移动至与创造或形成骚灵的地点相距120尺的位置。部分骚灵被束缚至某个特定的房间、建筑或类似的区域内。</p>"
                 },
-                "q9pwZOGUR5waARMo": {
-                    "name": "随意施法 At-Will Spells"
-                },
-                "smEk0yh1Pe95Nvsc": {
+                "Natural Invisibility": {
                     "name": "天生隐形 Natural Invisibility",
                     "description": "<p>骚灵天生便是@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的。只有当他使用惊骇现身时才会变得可见。</p>"
                 },
-                "pvdHMw62l3uanob8": {
+                "Rejuvenation": {
                     "name": "复生 Rejuvenation",
                     "description": "<p>当骚灵被摧毁时，他会在[[/br 2d4 #days]]{2d4天}后在被摧毁的地点重新生成，生命值全满。只有在有人确定了骚灵存在的成因并纠正任何阻止骚灵安息的因素时，骚灵才能被永久摧毁。</p>"
                 },
-                "KZ4sC23Z3r4PS4V6": {
+                "Telekinetic Defense": {
                     "name": "念动防御 Telekinetic Defense",
                     "description": "<p><strong>触发</strong> 有生物进入到距离骚灵10尺范围内。</p>\n<hr />\n<p><strong>效果</strong> 骚灵对触发生物进行一次念动物体打击。</p>"
                 },
-                "v8X1W0LmbkWRpOS6": {
+                "Frighten": {
                     "name": "惊骇现身 Frighten",
                     "description": "<p><strong>需求</strong> 骚灵必须处于@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}。</p>\n<hr />\n<p><strong>效果</strong> 骚灵变得可见，以类人生物的骸骨面容和幽灵姿态显现。每个@Template[type:emanation|distance:30]{30尺}范围内的生物必须尝试一次@Check[type:will|dc:21]豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。若为大失败的话，只要惊惧状态还存在就会@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}。成功时，生物会临时免疫该能力，持续1分钟。在骚灵的下个回合开始时，他会重新变得隐身。</p>"
                 },
-                "RJlLjrzqdXREWyPR": {
+                "Telekinetic Storm": {
                     "name": "念动风暴 Telekinetic Storm",
-                    "description": "<p>骚灵用念力投掷复数个小物体，比如几十件银器或书本，他可以选择用这些物体分散攻击多个敌人或集中攻击一个目标。</p>\n<ul>\n<li>当该效果用于分散攻击多个敌人时，骚灵对@Template[type:emanation|distance:30]{30尺}内的每个生物作出一次受到-2减值的念动物体打击。在计算骚灵的多次攻击减值时，这些攻击被视为1次攻击，而且直至上述所有攻击结束之前，多次攻击减值都不会增加。</li>\n<li>当该效果只有一个目标时，骚灵对该目标作出一次念动物体打击，伤害增加至[[/r (3d12}]]{3d12伤害}。失败时造成[[/r (1d12}]]{1d12伤害}，大失败时不造成伤害。</li>\n</ul>"
+                    "description": "<p>骚灵用念力投掷复数个小物体，比如几十件银器或书本，他可以选择用这些物体分散攻击多个敌人或集中攻击一个目标。</p>\n<ul>\n<li>当该效果用于分散攻击多个敌人时，骚灵对@Template[type:emanation|distance:30]{30尺}内的每个生物作出一次受到-2减值的念动物体打击。在计算骚灵的多次攻击减值时，这些攻击被视为1次攻击，而且直至上述所有攻击结束之前，多次攻击减值都不会增加。</li>\n<li>当该效果只有一个目标时，骚灵对该目标作出一次念动物体打击，伤害增加至[[/r (3d12)]]{3d12伤害}。失败时造成[[/r (1d12)]]{1d12伤害}，大失败时不造成伤害。</li>\n</ul>"
                 }
             }
         },
@@ -11646,13 +11509,6 @@
             "name": "幽影 Shadow",
             "publicNotes": "<p>被称为幽影的神秘不死生物潜伏在黑暗中，以那些远离光明的人为食。那些躲在发光武器的光芒庇护之下和幽影进行交涉的人往往能了解很多秘密，因为幽影是理想的间谍。</p>",
             "senses": "黑暗视觉",
-            "dr": [
-                {
-                    "exceptions": "除了力场、幽冥、正能量；对抗非魔法时抗力翻倍",
-                    "type": "all",
-                    "value": 5
-                }
-            ],
             "items": {
                 "ACHlnYzXVxizzqPw": {
                     "name": "光亮弱点 Light Vulnerability",
@@ -11825,7 +11681,7 @@
                 },
                 "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
-                    "description": "<ul>\n<li><strong>被伤害</strong> 寒冷和水（[[/r (5d10}]]{5d10伤害}, 区域效果或可持续伤害则为[[/r (2d6}]]{2d6}）</li>\n<li><strong>被治疗</strong> 酸液 (区域效果[[/r (2d6)[healing]]]{2d6生命值})</li>\n<li><strong>被减速</strong> 土</li>\n</ul>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                    "description": "<ul>\n<li><strong>被伤害</strong> 寒冷和水（[[/r (5d10)]]{5d10伤害}, 区域效果或可持续伤害则为[[/r (2d6)]]{2d6}）</li>\n<li><strong>被治疗</strong> 酸液 (区域效果[[/r (2d6)[healing]]]{2d6生命值})</li>\n<li><strong>被减速</strong> 土</li>\n</ul>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
                 "Quicken": {
                     "name": "加速 Quicken",
