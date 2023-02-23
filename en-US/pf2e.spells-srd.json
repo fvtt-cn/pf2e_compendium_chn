@@ -1,5 +1,15 @@
 {
 	"label": "Spells",
+    "mapping": {
+        "target": "system.target.value",
+        "range": "system.range.value",
+        "duration": "system.duration.value",
+        "time": "system.time.value",
+        "cost": "system.cost.value",
+        "primarycheck": "system.primarycheck.value",
+        "secondarycasters": "system.secondarycasters.value",
+        "secondarycheck": "system.secondarycheck.value"
+    },
 	"entries": {
 		"Aberrant Form": {
 			"name": "Aberrant Form",
@@ -177,6 +187,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Advanced Scurvy": {
+			"name": "Advanced Scurvy",
+			"description": "<p>Your touch afflicts the target with an advanced form of scurvy, a mariner's disease stemming from improper nutrition. The symptoms of scurvy include fatigue, joint pain, loose teeth, and internal hemorrhaging.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} for 1 minute.</p>\n<p><strong>Failure</strong> The target is afflicted with advanced scurvy at stage 1.</p>\n<p><strong>Critical Failure</strong> The target is afflicted with advanced scurvy at stage 2.</p>\n<p><strong>Advanced Scurvy</strong> (disease)</p>\n<p><strong>Level</strong> 4</p>\n<p>for 1 day after eating fresh fruit, a creature gains a +2 circumstance bonus to their next saving throw against this affliction</p>\n<p><strong>Stage 1</strong> enfeebled 1 and the damage dealt by persistent bleed effects is increased by 1 (1 day)</p>\n<p><strong>Stage 2</strong> enfeebled 1, @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}, and the damage dealt by persistent bleed effects is increased by 1d4 (2 days)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}, fatigued, and the damage dealt by persistent bleed effects is increased by 1d6 (4 days)</p>",
+			"target": "1 creature",
+			"range": "touch",
+			"duration": "",
+			"time": "2",
+			"cost": ""
 		},
 		"Aerial Form": {
 			"name": "Aerial Form",
@@ -564,7 +583,7 @@
 		},
 		"Anticipate Peril": {
 			"name": "Anticipate Peril",
-			"description": "<p>You grant the target brief foresight. The target gains a +1 status bonus to its next initiative roll, after which the spell ends.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The status bonus increases by 1, to a maximum of +4 at 7th level.</p>",
+			"description": "<p>You grant the target brief foresight. The target gains a +1 status bonus to its next initiative roll, after which the spell ends.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The status bonus increases by 1, to a maximum of +4 at 7th level.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.4ag0OHKfjROmR4Pm]{Spell Effect: Anticipate Peril}</p>",
 			"target": "1 creature",
 			"range": "30 feet",
 			"duration": "10 minutes",
@@ -711,7 +730,7 @@
 		},
 		"Ash Form": {
 			"name": "Ash Form",
-			"description": "<p>You take the form of a cloud of minuscule ash particles. You gain fast healing 3, resistance 10 to piercing and slashing damage, and immunity to bleed, falling damage, and precision damage. You can’t move through solid objects, but you can stream through tiny gaps as if they were difficult terrain. Any ability with the air trait that involves blowing or shifting wind (such as gust of wind) deals you [[/r 1d6[bludgeoning]]] damage per level of the spell each round you are in its area, in addition to its normal effects.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistance increases to 15</p>",
+			"description": "<p>You take the form of a cloud of minuscule ash particles. You gain fast healing 3, resistance 10 to piercing and slashing damage, and immunity to bleed, falling damage, and precision damage. You can't move through solid objects, but you can stream through tiny gaps as if they were difficult terrain. Any ability with the air trait that involves blowing or shifting wind (such as gust of wind) deals you [[/r 1d6[bludgeoning]]] damage per level of the spell each round you are in its area, in addition to its normal effects.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The resistance increases to 15</p>",
 			"target": "",
 			"range": "",
 			"duration": "1 minute",
@@ -993,7 +1012,7 @@
 		},
 		"Battlefield Persistence": {
 			"name": "Battlefield Persistence",
-			"description": "<p><strong>Trigger</strong> You are about to attempt a saving throw, but you haven't rolled yet.</p>\n<hr />\n<p>You're difficult to remove from battle. You gain a +2 status bonus to the triggering save, and if the triggering save is against an incapacitation effect, it treats you as if you were 2 levels higher.</p>",
+			"description": "<p><strong>Trigger</strong> You are about to attempt a saving throw, but you haven't rolled yet.</p>\n<hr />\n<p>You're difficult to remove from battle. You gain a +2 status bonus to the triggering save, and if the triggering save is against an incapacitation effect, it treats you as if you were 2 levels higher.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.F1APSdrw5uv672hf]{Spell Effect: Battlefield Persistence}</p>",
 			"target": "",
 			"range": "",
 			"duration": "",
@@ -1549,6 +1568,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Briny Bolt": {
+			"name": "Briny Bolt",
+			"description": "<p>You hurl a bolt of saltwater from your extended hand. Make a ranged spell attack against a target within range.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes 4d6 bludgeoning damage and is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round and @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 minute as saltwater sprays into its eyes. The creature can spend an Interact action to rub its eyes and end the blinded condition, but not the dazzled condition.</p>\n<p><strong>Success</strong> The creature takes 2d6 bludgeoning damage and is blinded for 1 round. The creature can spend an Interact action wiping the salt water from its eyes to end the blinded condition.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d6.</p>",
+			"target": "1 creature",
+			"range": "60 feet",
+			"duration": "",
+			"time": "2",
+			"cost": ""
+		},
 		"Buffeting Winds": {
 			"name": "Buffeting Winds",
 			"description": "<p>You release a quick burst of wind that batters your living opponents without causing them lasting harm, while also blowing undead away. The wind deals 2d4 bludgeoning damage, which is nonlethal against living creatures. Against undead, the winds are more vicious, and the spell loses the nonlethal trait against such creatures. Each creature in the area must attempt a basic Reflex save. On a failure, undead creatures are also knocked back 5 feet (or 10 feet on a critical failure).</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4.</p>",
@@ -2016,7 +2044,7 @@
 		},
 		"Cleansing Flames": {
 			"name": "Cleansing Flames",
-			"description": "<p>You wrap the target in purifying flames. You can attempt to counteract a single poison or non-curse effect imparting the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened}, or @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied}condition. The target can choose to empower the flames with their life force, becoming @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (or increasing their drained value by 1, if already under the condition) to grant you a +1 circumstance bonus to your counteract check.</p>",
+			"description": "<p>You wrap the target in purifying flames. You can attempt to counteract a single poison or non-curse effect imparting the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}, @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened}, or @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied} condition. The target can choose to empower the flames with their life force, becoming @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (or increasing their drained value by 1, if already under the condition) to grant you a +1 circumstance bonus to your counteract check.</p>",
 			"target": "1 creature",
 			"range": "touch",
 			"duration": "",
@@ -4152,7 +4180,7 @@
 		},
 		"Elemental Motion": {
 			"name": "Elemental Motion",
-			"description": "<p>You call upon your element to propel you, improving your Speed depending on your element. This spell has your element's trait.</p>\n<ul>\n<li>@UUID[Compendium.pf2e.spell-effects.iqtjMVl6rGQhX2k8]{Air}You gain a fly Speed equal to your Speed.</li>\n<li>@UUID[Compendium.pf2e.spell-effects.qbOpis7pIkXJbM2B]{Earth}You gain a burrow Speed of 10 feet.</li>\n<li>@UUID[Compendium.pf2e.spell-effects.q4EEYltjqpRGiLsP]{Fire}You gain a fly Speed equal to your Speed.</li>\n<li>@UUID[Compendium.pf2e.spell-effects.D0Qj5tC1hGUjzQc4]{Water}You gain a swim Speed equal to your Speed and can breathe underwater.</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> You also gain a +10-foot status bonus to your Speeds.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +20 feet.</p>",
+			"description": "<p>You call upon your element to propel you, improving your Speed depending on your element. This spell has your element's trait.</p>\n<ul>\n<li>@UUID[Compendium.pf2e.spell-effects.iqtjMVl6rGQhX2k8]{Air} You gain a fly Speed equal to your Speed.</li>\n<li>@UUID[Compendium.pf2e.spell-effects.qbOpis7pIkXJbM2B]{Earth} You gain a burrow Speed of 10 feet.</li>\n<li>@UUID[Compendium.pf2e.spell-effects.q4EEYltjqpRGiLsP]{Fire} You gain a fly Speed equal to your Speed.</li>\n<li>@UUID[Compendium.pf2e.spell-effects.D0Qj5tC1hGUjzQc4]{Water} You gain a swim Speed equal to your Speed and can breathe underwater.</li>\n</ul>\n<hr />\n<p><strong>Heightened (6th)</strong> You also gain a +10-foot status bonus to your Speeds.</p>\n<p><strong>Heightened (9th)</strong> The status bonus increases to +20 feet.</p>",
 			"target": "",
 			"range": "",
 			"duration": "1 minute",
@@ -5437,6 +5465,15 @@
 			"time": "2",
 			"cost": ""
 		},
+		"Frost's Touch": {
+			"name": "Frost's Touch",
+			"description": "<p>Your <em>gelid shard</em> drinks down nearby heat in a futile attempt to sate itself and achieve a level of frigid cold unheard of on the Material Plane. This allows you to cool a drink, make a hot pot safe to handle, or other, similar minor effects. Once cooled, the object's temperature is subject to its environment as usual. You can also solidify ambient moisture into a solid object; this temporary object is of negligible Bulk, made of non-magical ice. The object looks crude and artificial and is extremely fragile—it can't be used as a tool, weapon, or spell component. Once created, it melts as normal for ice for the ambient conditions.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can create simple objects of ice with up to 1 Bulk and of a level not exceeding 1. Such objects must be rigid. You can only have one such object created at a time; if you create another, the previous object melts instantly.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> Items you create can be up to 4 Bulk and 4th level.</p>\n<hr />\n<p><strong>Heightened (7th)</strong> Items you create can be up to 8 Bulk and 8th level.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> Items you create can be up to 20 Bulk and 12th level.</p>",
+			"target": "1 object",
+			"range": "30 feet",
+			"duration": "",
+			"time": "1",
+			"cost": ""
+		},
 		"Fungal Hyphae": {
 			"name": "Fungal Hyphae",
 			"description": "<p>Thin hyphae grow from your feet and plunge into the earth, creating a symbiotic fungal network that attaches to plants within 30 feet and connects you to their root systems. You gain an imprecise tremorsense allowing you to sense anything directly touching plants within that distance. If you move, the hyphae snap and the spell ends.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> You can control plants in the area to a small degree, allowing you to make Strikes with tree branches, exposed roots, or similarly solid plants. To do so, you use a Strike action, but you can Strike any creature you can detect with your tremorsense. These are melee spell attacks that deal 2d8 bludgeoning damage plus your spellcasting ability modifier. Unusual plants, such as thorny vines, might deal a different type of damage at the GM's discretion. You can't make any other attacks through these plants, or take any other actions through them, other than these Strikes.</p>\n<p><strong>Heightened (6th)</strong> As 4th level, but you can use other simple manipulate actions through the plants, including having a branch pick an object up or open a door, though more complex actions, such as picking a lock or disabling a trap, remain impossible.</p>",
@@ -6249,7 +6286,7 @@
 		},
 		"Horizon Thunder Sphere": {
 			"name": "Horizon Thunder Sphere",
-			"description": "<p>You gather magical energy into your palm, forming a concentrated ball of electricity that crackles and rumbles like impossibly distant thunder. Make a ranged spell attack roll against your target's AC. On a success, you deal 3d6 electricity damage. On a critical success, the target takes double damage and is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. The number of actions you spend when Casting this Spell determines the range and other parameters.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(somatic, verbal)</strong> This spell has a range of 30 feet.</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, somatic, verbal)</strong> This spell has a range of 60 feet and deals half damage on a failure (but not a critical failure) as the electricity lashes out and jolts the target.</p>\n<p><strong>Two Rounds</strong> If you spend 3 actions Casting the Spell, you can avoid finishing the spell and spend another 3 actions on your next turn to empower the spell even further. If you do, after attacking the target, whether you hit or miss, the ball of lightning explodes, dealing [[/r 2d6[electricity]]] damage to all other creatures in a 10-foot emanation around the target (basic Reflex save). Additionally, you spark with electricity for 1 minute, dealing [[/r 1[electricity]]] damage to creatures that Grab you or that hit you with an unarmed Strike or a non-reach melee weapon.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage on a hit, as well as the burst damage for two-round casting time, each increase by [[/r 2d6[electricity]]], and the damage creatures take if they Grapple or hit you while you're in your sparking state increases by [[/r 1[electricity]]].</p>",
+			"description": "<p>You gather magical energy into your palm, forming a concentrated ball of electricity that crackles and rumbles like impossibly distant thunder. Make a ranged spell attack roll against your target's AC. On a success, you deal 3d6 electricity damage. On a critical success, the target takes double damage and is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round. The number of actions you spend when Casting this Spell determines the range and other parameters.</p>\n<p><span class=\"pf2-icon\">2</span> <strong>(somatic, verbal)</strong> This spell has a range of 30 feet.</p>\n<p><span class=\"pf2-icon\">3</span> <strong>(material, somatic, verbal)</strong> This spell has a range of 60 feet and deals half damage on a failure (but not a critical failure) as the electricity lashes out and jolts the target.</p>\n<p><strong>Two Rounds</strong> If you spend 3 actions Casting the Spell, you can avoid finishing the spell and spend another 3 actions on your next turn to empower the spell even further. If you do, after attacking the target, whether you hit or miss, the ball of lightning explodes, dealing [[/r 2d6[electricity]]] damage to all other creatures in a @Template[type:emanation|distance:10] around the target (basic Reflex save). Additionally, you spark with electricity for 1 minute, dealing [[/r 1[electricity]]] damage to creatures that Grab you or that hit you with an unarmed Strike or a non-reach melee weapon.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The initial damage on a hit, as well as the burst damage for two-round casting time, each increase by [[/r 2d6[electricity]]], and the damage creatures take if they Grapple or hit you while you're in your sparking state increases by [[/r 1[electricity]]].</p>",
 			"target": "1 creature",
 			"range": "varies",
 			"duration": "",
@@ -6654,7 +6691,7 @@
 		},
 		"Incendiary Ashes": {
 			"name": "Incendiary Ashes",
-			"description": "<p>A cloud of magical ashes descends upon creatures in the area. The ashes scour flesh and linger in the wounds, igniting upon the slightest flicker of flame. Creatures in the area take 4d6 slashing damage and must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and has weakness to fire 3 until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature takes full damage and has weakness to fire 3 for 1 minute. If the creature is killed by fire during this time it’s reduced to ashes, though its gear remains.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature takes double damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The slashing damage increases by 2d6 and<br />weakness to fire increases by 1.</p>",
+			"description": "<p>A cloud of magical ashes descends upon creatures in the area. The ashes scour flesh and linger in the wounds, igniting upon the slightest flicker of flame. Creatures in the area take 4d6 slashing damage and must attempt a Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and has weakness to fire 3 until the start of its next turn.</p>\n<p><strong>Failure</strong> The creature takes full damage and has weakness to fire 3 for 1 minute. If the creature is killed by fire during this time it's reduced to ashes, though its gear remains.</p>\n<p><strong>Critical Failure</strong> As failure, except the creature takes double damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The slashing damage increases by 2d6 and<br />weakness to fire increases by 1.</p>",
 			"target": "",
 			"range": "120 feet",
 			"duration": "",
@@ -7176,6 +7213,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Lashing Rope": {
+			"name": "Lashing Rope",
+			"description": "<p>You cause a section of rope or a rope-like object to animate, slither to your square, and encircle you, wreathing you in twisting, lashing fibers.</p>\n<p>When you Cast the Spell and each time you Sustain the Spell, you can make a melee Strike with the rope, which uses and contributes to your multiple attack penalty. These rope Strikes are melee spell attacks; have the magical, reach, and trip weapon traits; and deal 2d6 slashing damage plus your spellcasting ability modifier.</p>\n<p>If you critically fail a check to @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} using the rope, you can't make any more Strikes with it this turn, nor can you use it to make an Attack of Opportunity until the beginning of your next turn. This replaces the usual results of a critical failure to Trip.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage from your rope Strikes increases by 2d6.</p>",
+			"target": "up to 50 feet of unattended rope or an inanimate rope-like object",
+			"range": "50 feet",
+			"duration": "sustained up to 1 minute",
+			"time": "2",
+			"cost": ""
 		},
 		"Lashunta's Life Bubble": {
 			"name": "Lashunta's Life Bubble",
@@ -8022,7 +8068,7 @@
 		},
 		"Meteor Swarm": {
 			"name": "Meteor Swarm",
-			"description": "<p>You call down four meteors that explode in a fiery blast. Each meteor deals 6d10 bludgeoning damage to any creatures in the 10-foot burst at the center of its area of effect before exploding, dealing 14d6 fire damage to any creatures in its 40-foot burst. The meteors' central 10-foot bursts can't overlap, and a creature attempts only one saving throw against the spell no matter how many overlapping explosions it's caught in, and they can take each type of damage once once. The saving throw applies to both the bludgeoning and the fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6.</p>",
+			"description": "<p>You call down four meteors that explode in a fiery blast. Each meteor deals 6d10 bludgeoning damage to any creatures in the @Template[type:burst|distance:10] at the center of its area of effect before exploding, dealing 14d6 fire damage to any creatures in its @Template[type:burst|distance:40]. The meteors' central 10-foot bursts can't overlap, and a creature attempts only one saving throw against the spell no matter how many overlapping explosions it's caught in, and they can take each type of damage once. The saving throw applies to both the bludgeoning and the fire damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d10, and the fire damage increases by 2d6.</p>\n<p>[[/r ((@item.level*2)-4)d6[fire]]]{Leveled Fire Damage}</p>",
 			"target": "",
 			"range": "500 feet",
 			"duration": "",
@@ -9030,7 +9076,7 @@
 		},
 		"Pet Cache": {
 			"name": "Pet Cache",
-			"description": "<p>You open your cloak or create a gap with your hands, drawing the target into a pocket dimension just large enough for its basic comfort. No other creature can enter this extradimensional space, and the target can bring along objects only if they were designed to be worn by a creature of its kind. The space has enough air, food, and water to sustain the target for the duration.</p>\n<p>You can @UUID[Compendium.pf2e.actionspf2e.AjLSHZSWQ90exdLo]{Dismiss}the spell. The spell also ends if you die or enter an extradimensional space. When the spell ends, the target reappears in the nearest unoccupied space (outside of any extradimensional space you may have entered).</p>",
+			"description": "<p>You open your cloak or create a gap with your hands, drawing the target into a pocket dimension just large enough for its basic comfort. No other creature can enter this extradimensional space, and the target can bring along objects only if they were designed to be worn by a creature of its kind. The space has enough air, food, and water to sustain the target for the duration.</p>\n<p>You can @UUID[Compendium.pf2e.actionspf2e.AjLSHZSWQ90exdLo]{Dismiss} the spell. The spell also ends if you die or enter an extradimensional space. When the spell ends, the target reappears in the nearest unoccupied space (outside of any extradimensional space you may have entered).</p>",
 			"target": "1 willing creature that is your animal companion or familiar",
 			"range": "touch",
 			"duration": "8 hours",
@@ -9123,6 +9169,18 @@
 			"duration": "1 minute",
 			"time": "3",
 			"cost": ""
+		},
+		"Phantom Ship": {
+			"name": "Phantom Ship",
+			"description": "<p>You create a link between a ship and an undead member of its crew to temporarily make the ship, and its passengers and crew, as incorporeal as ghosts. The targeted ship must be intact and on or near the surface of some water, and an undead who was a member of the ship's crew in life must be present for the entire ritual.</p>\n<hr />\n<p><strong>Critical Success</strong> The ship and all creatures aboard it become incorporeal for 1 hour. During this time, the ship can sail at its top speed in any heading chosen by the primary caster, regardless of the winds. The ship can pass through any corporeal obstacles in its path (such as rocks or other vessels), but it must remain in contact with water or the ritual's effects end prematurely. Any skill checks required to sail the ship through rough weather gain a +2 status bonus. A creature that disembarks the ship while the ritual is in effect becomes corporeal again.</p>\n<p><strong>Success</strong> As critical success, but the status bonus to skill checks is only +1.</p>\n<p><strong>Failure</strong> The ritual has no effect.</p>\n<p><strong>Critical Failure</strong> The ship, but not its passengers or crew, becomes incorporeal for 10 minutes, usually resulting in the passengers and crew falling through the ship into the waters below. If the ship was already sailing, it continues in its current direction at its current speed.</p>",
+			"target": "1 ship no more than 175 feet long",
+			"range": "10 feet",
+			"duration": "",
+			"time": "1 hour",
+			"cost": "pearls or other gems worth a total value of 50 gp",
+			"primarycheck": "Occultism (expert)",
+			"secondarycasters": "2",
+			"secondarycheck": "Sailing Lore or Survival"
 		},
 		"Phantom Steed": {
 			"name": "Phantom Steed",
@@ -10830,7 +10888,7 @@
 		},
 		"Searing Light": {
 			"name": "Searing Light",
-			"description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra [[/r 5d6[good]]] damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double good damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.</p>",
+			"description": "<p>You shoot a blazing ray of light tinged with holy energy. Make a ranged spell attack. The ray deals 5d6 fire damage. If the target is a fiend or undead, you deal an extra 5d6 good damage.</p>\n<p>If the light passes through an area of magical darkness or targets a creature affected by magical darkness, <em>searing light</em> attempts to counteract the darkness. If you need to determine whether the light passes through an area of darkness, draw a line between yourself and the spell's target</p>\n<hr />\n<p><strong>Critical Success</strong> The target takes double fire damage, as well as double good damage if a fiend or undead.</p>\n<p><strong>Success</strong> The target takes full damage</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The fire damage increases by 2d6, and the good damage against fiends and undead increases by 2d6.</p>\n<p>[[/r ((@item.level*2)-1)d6[good]]]{Leveled Good Damage}</p>",
 			"target": "1 creature",
 			"range": "120 feet",
 			"duration": "",
@@ -12666,7 +12724,7 @@
 		},
 		"Symphony of the Unfettered Heart": {
 			"name": "Symphony of the Unfettered Heart",
-			"description": "<p>Your symphony lifts listeners from their worldly concerns. Attempt a Performance check to counteract one of the following conditions affecting the target: @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned}. If you fail, you can't target that effect on the target for 1 day. Use the condition's source to determine the counteract DC (for example, the @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}DC for grabbed).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can target up to four creatures.</p>",
+			"description": "<p>Your symphony lifts listeners from their worldly concerns. Attempt a Performance check to counteract one of the following conditions affecting the target: @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}, @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed}, or @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned}. If you fail, you can't target that effect on the target for 1 day. Use the condition's source to determine the counteract DC (for example, the @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} DC for grabbed).</p>\n<hr />\n<p><strong>Heightened (9th)</strong> You can target up to four creatures.</p>",
 			"target": "you or 1 ally",
 			"range": "30 feet",
 			"duration": "",
@@ -12789,7 +12847,7 @@
 		},
 		"Teeth to Terror": {
 			"name": "Teeth to Terror",
-			"description": "<p>The target believes its teeth are falling out, crawling along its face, stabbing into its body, and cramming themselves down its throat. The target takes 2d4 mental damage and @Localize[PF2E.PersistentDamage.Mental1d4.success], depending on its Will save. The target takes a -1 circumstance penalty to Strikes with its jaws or teeth while it is taking persistent mental damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and no persistent mental damage.</p>\n<p><strong>Failure</strong> The target takes full damage and persistent mental damage and is@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target takes full damage and persistent mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You can target two additional creatures, the mental damage increases by 2d4, and the persistent mental damage increases by 1d4.</p>",
+			"description": "<p>The target believes its teeth are falling out, crawling along its face, stabbing into its body, and cramming themselves down its throat. The target takes 2d4 mental damage and @Localize[PF2E.PersistentDamage.Mental1d4.success], depending on its Will save. The target takes a -1 circumstance penalty to Strikes with its jaws or teeth while it is taking persistent mental damage.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes half damage and no persistent mental damage.</p>\n<p><strong>Failure</strong> The target takes full damage and persistent mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The target takes full damage and persistent mental damage and is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> You can target two additional creatures, the mental damage increases by 2d4, and the persistent mental damage increases by 1d4.</p>",
 			"target": "1 creature with teeth",
 			"range": "30 feet",
 			"duration": "1 minute",
@@ -13034,9 +13092,9 @@
 			"range": "10 miles",
 			"duration": "",
 			"time": "1 day",
-			"cost": "a bodily sample from the target, and valuables belonging to the target worth a total value of 100 gp × the spell level × the target's level; Secondary Casters 3",
+			"cost": "a bodily sample from the target, and valuables belonging to the target worth a total value of 100 gp × the spell level × the target's level",
 			"primarycheck": "Occultism (master)",
-			"secondarycasters": "",
+			"secondarycasters": "3",
 			"secondarycheck": "Society"
 		},
 		"Terrain Transposition": {
@@ -13086,7 +13144,7 @@
 		},
 		"Thermal Stasis": {
 			"name": "Thermal Stasis",
-			"description": "<p>The same abilities that let you raise or lower thermal energy also let you keep it at a safe medium. The target gains resistance 2 against fire damage and resistance 2 against cold damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Each resistance increases by 2.</p>\n<hr />\n<p><strong>Amp</strong> The spell's duration becomes 1 minute.</p>",
+			"description": "<p>The same abilities that let you raise or lower thermal energy also let you keep it at a safe medium. The target gains resistance 2 against fire damage and resistance 2 against cold damage.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Y6aNYnGVXdAMvL7Y]{Spell Effect: Thermal Stasis}</p>\n<hr />\n<p><strong>Heightened (+1)</strong> Each resistance increases by 2.</p>\n<hr />\n<p><strong>Amp</strong> The spell's duration becomes 1 minute.</p>",
 			"target": "1 creature",
 			"range": "60 feet",
 			"duration": "until the start of your next turn",
@@ -13182,7 +13240,7 @@
 		},
 		"Time Jump": {
 			"name": "Time Jump",
-			"description": "<p>You leap forward a few seconds in time, appearing across the battlefield in the blink of an eye. You gain 2 actions, each of which must be used to Leap, Stand, Step, or Stride. If you have an appropriate Speed, you can add @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrow}, @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb}, <em>@UUID[Compendium.pf2e.spells-srd.A2JfEKe6BZcTG1S8]{Fly}</em>, or @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim}to this list. While you take these actions, time pauses. All other creatures are completely unaware of your actions, can't speak, and can't use any actions that would be triggered by your movement.</p>\n<p>While you're taking these actions, you can't take any other actions, including any that would be triggered by the move actions. Once the actions are complete, time starts again, and to onlookers, you seem to have suddenly teleported across the distance you traveled. Leaping forward through time is disorienting, so if you use <em>time jump</em> again within 1 minute of using the spell, you become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 4} for 1 minute.</p>",
+			"description": "<p>You leap forward a few seconds in time, appearing across the battlefield in the blink of an eye. You gain 2 actions, each of which must be used to Leap, Stand, Step, or Stride. If you have an appropriate Speed, you can add @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrow}, @UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{Climb}, <em>@UUID[Compendium.pf2e.spells-srd.A2JfEKe6BZcTG1S8]{Fly}</em>, or @UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{Swim} to this list. While you take these actions, time pauses. All other creatures are completely unaware of your actions, can't speak, and can't use any actions that would be triggered by your movement.</p>\n<p>While you're taking these actions, you can't take any other actions, including any that would be triggered by the move actions. Once the actions are complete, time starts again, and to onlookers, you seem to have suddenly teleported across the distance you traveled. Leaping forward through time is disorienting, so if you use <em>time jump</em> again within 1 minute of using the spell, you become @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 4} for 1 minute.</p>",
 			"target": "",
 			"range": "",
 			"duration": "",
