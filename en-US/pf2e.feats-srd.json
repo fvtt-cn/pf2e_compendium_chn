@@ -1,5 +1,8 @@
 {
 	"label": "Feats",
+    "mapping": {
+        "prerequisites": "system.prerequisites.value"
+	},
 	"entries": {
 		"A Home In Every Port": {
 			"name": "A Home In Every Port",
@@ -683,8 +686,8 @@
 				}
 			]
 		},
-		"Aerial Pilerdriver": {
-			"name": "Aerial Pilerdriver",
+		"Aerial Piledriver": {
+			"name": "Aerial Piledriver",
 			"description": "<p><strong>Requirements</strong> You have a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained}.</p>\n<hr />\n<p>Heaving both yourself and your opponent into the air, you bring them crashing to the ground. Make an unarmed melee Strike against the creature you have grabbed or restrained. This Strike deals [[/r 1d6[additional]]] damage per weapon damage die, and it has the following additional effects on a success, failure, and critical failure.</p>\n<p><strong>Success</strong> The target lands @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p><strong>Failure</strong> You lose your grip on the target, and it is no longer grabbed or restrained by you.</p>\n<p><strong>Critical Failure</strong> You lose both your grip on the target and your balance. You fall prone, and the target is no longer grabbed or restrained by you.</p>",
 			"prerequisites": [
 				{
@@ -842,7 +845,7 @@
 		},
 		"Alchemical Scholar": {
 			"name": "Alchemical Scholar",
-			"description": "<p>You learn formulas more easily. You gain four common 1st-level alchemical formulas when you take this feat, and each time you gain a level, you gain a common alchemical formula of that level. You still need @UUID[Compendium.pf2e.feats-srd.is3Oz9wt11lNq62K]{Alchemical Crafting}to Craft alchemical items.</p>\n<p><strong>Special</strong> You can take this feat only at 1st level, and you can't retrain into or out of this feat.</p>",
+			"description": "<p>You learn formulas more easily. You gain four common 1st-level alchemical formulas when you take this feat, and each time you gain a level, you gain a common alchemical formula of that level. You still need @UUID[Compendium.pf2e.feats-srd.is3Oz9wt11lNq62K]{Alchemical Crafting} to Craft alchemical items.</p>\n<p><strong>Special</strong> You can take this feat only at 1st level, and you can't retrain into or out of this feat.</p>",
 			"prerequisites": []
 		},
 		"Alchemical Shot": {
@@ -1179,7 +1182,7 @@
 		},
 		"Angel Of Death": {
 			"name": "Angel Of Death",
-			"description": "<p>All your @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strikes }against a creature you have @UUID[Compendium.pf2e.actionspf2e.orjJjLdm4XNAcFi8]{Marked for Death} have the death trait, causing the mark to be instantly killed when reduced to 0 Hit Points.</p>\n<p>When killed in this way, attempts to communicate with it, return it to life, turn it into an undead, or otherwise disturb its afterlife fail unless the effect's counteract level is higher than half your level when you killed the creature (rounded up), or originates from an artifact or a deity.</p>",
+			"description": "<p>All your @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strikes } against a creature you have @UUID[Compendium.pf2e.actionspf2e.orjJjLdm4XNAcFi8]{Marked for Death} have the death trait, causing the mark to be instantly killed when reduced to 0 Hit Points.</p>\n<p>When killed in this way, attempts to communicate with it, return it to life, turn it into an undead, or otherwise disturb its afterlife fail unless the effect's counteract level is higher than half your level when you killed the creature (rounded up), or originates from an artifact or a deity.</p>",
 			"prerequisites": [
 				{
 					"value": "Assassin Dedication"
@@ -1840,6 +1843,15 @@
 			"name": "Astral Tether",
 			"description": "<p>You spin out a thread of psychic energy that connects you to an ally, using it as a conduit for your abilities. Choose a willing creature within 60 feet and connect to it. Whenever you would gain a benefit from a psychic amp, you can have the amp affect the tethered creature instead. You can do so only if the amp grants a distinct benefit, not if it alters the amped spell. The tether can't be severed physically but breaks if the distance between you and the tethered ally ever exceeds 60 feet, if you become @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}, or if you use Astral Tether again.</p>",
 			"prerequisites": []
+		},
+		"Asura Magic": {
+			"name": "Asura Magic",
+			"description": "<p>You can cast <em>@UUID[Compendium.pf2e.spells-srd.TaaMEYdZXQXF0Sks]{Blood Vendetta}</em> and <em>@UUID[Compendium.pf2e.spells-srd.dLdRqT6UxTKlsPgp]{Death Knell}</em> once per day each as 2nd-level divine innate spells.</p>",
+			"prerequisites": [
+				{
+					"value": "Faultspawn"
+				}
+			]
 		},
 		"Athletic Might": {
 			"name": "Athletic Might",
@@ -2723,6 +2735,16 @@
 				}
 			]
 		},
+		"Bear Empathy": {
+			"name": "Bear Empathy",
+			"description": "<p>You have a magical affinity for bears and can speak to them through sounds and body language. You can communicate with all bears, as well as other ursine creatures at the GM's discretion.</p>",
+			"prerequisites": []
+		},
+		"Bear Hug": {
+			"name": "Bear Hug",
+			"description": "<p><strong>Requirements</strong> Your last action was a successful claw Strike.</p>\n<hr />\n<p>You snatch at your opponent with your claws, pulling them close in a ferocious bear hug. You make another claw Strike against the same target. If this Strike hits, the target is also @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>",
+			"prerequisites": []
+		},
 		"Beast Dynamo Howl": {
 			"name": "Beast Dynamo Howl",
 			"description": "<p>You've incorporated beast tech from Arcadia into your dynamo, adding in components from various terrifying creatures to enhance your prosthesis's capabilities. The beast parts can unleash a disturbing howl as you make a powerful attack with your dynamo. Attempt a single Intimidation check to Demoralize each enemy within 30 feet; you don't take a penalty when you attempt to Demoralize a creature that doesn't understand your language. Then, make a dynamo Strike. Reduce the operational time of your sterling dynamo by 1 hour.</p>",
@@ -3414,7 +3436,7 @@
 		},
 		"Bone Swarm": {
 			"name": "Bone Swarm",
-			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You scatter your body and transform into a whirling storm of bones for up to 1 minute or until you spend a single action to return to your normal shape. You become Huge, gain the swarm trait, and gain a fly Speed of 40 feet. As a swarm, you have the following characteristics.</p>\n<ul>\n<li>You are immune to the @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, and @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} conditions.</li>\n<li>You have weakness 5 to area and splash damage.</li>\n<li>You can occupy the same space as other creatures and must do so to use your damaging ability.</li>\n<li>As a 2-action activity, you can deal [[/r 10d6[bludgeoning]]] damage to all creatures sharing your space (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC)|basic:true] save with a DC equal to your class DC or spell DC, whichever is higher).</li>\n<li>You can't speak, Cast Spells, use manipulate actions requiring your hands, Activate magic items, or make any Strikes with your normal body.</li>\n<li>You don't gain the swarm mind ability, so you are still affected normally by mental effects. You also retain the benefits of skeleton feats that don't require communication or the use of hands.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.r4kb2zDepFeczMsl]{Effect: Bone Swarm}</p>",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You scatter your body and transform into a whirling storm of bones for up to 1 minute or until you spend a single action to return to your normal shape. You become Huge, gain the swarm trait, and gain a fly Speed of 40 feet. As a swarm, you have the following characteristics.</p>\n<ul>\n<li>You are immune to the @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}, and @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} conditions.</li>\n<li>You have weakness 5 to area and splash damage.</li>\n<li>You can occupy the same space as other creatures and must do so to use your damaging ability.</li>\n<li>As a 2-action activity, you can deal [[/r 10d6[bludgeoning]]] damage to all creatures sharing your space (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save with a DC equal to your class DC or spell DC, whichever is higher).</li>\n<li>You can't speak, Cast Spells, use manipulate actions requiring your hands, Activate magic items, or make any Strikes with your normal body.</li>\n<li>You don't gain the swarm mind ability, so you are still affected normally by mental effects. You also retain the benefits of skeleton feats that don't require communication or the use of hands.</li>\n</ul>\n<p>@UUID[Compendium.pf2e.feat-effects.r4kb2zDepFeczMsl]{Effect: Bone Swarm}</p>",
 			"prerequisites": []
 		},
 		"Boneyard's Call": {
@@ -3852,6 +3874,11 @@
 		"Call of the Wild": {
 			"name": "Call of the Wild",
 			"description": "<p>You call upon the creatures of nature to come to your aid. You can spend 10 minutes in concert with nature to replace one of the spells you've prepared in one of your druid spell slots with a <em>@UUID[Compendium.pf2e.spells-srd.4YnON9JHYqtLzccu]{Summon Animal}</em> or <em>@UUID[Compendium.pf2e.spells-srd.jSRAyd57kd4WZ4yE]{Summon Plant or Fungus}</em> spell of the same level.</p>",
+			"prerequisites": []
+		},
+		"Call Ursine Ally": {
+			"name": "Call Ursine Ally",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You can cast a 3rd-level <em>@UUID[Compendium.pf2e.spells-srd.4YnON9JHYqtLzccu]{Summon Animal}</em> as an innate spell, but only to summon a @UUID[Compendium.pf2e.pathfinder-bestiary-2.xxP5FJotshmUQNtY]{Black Bear}. At 10th level, the <em>summon animal</em> spell is heightened to 4th level, and you can summon a @UUID[Compendium.pf2e.pathfinder-bestiary.CJP3GGBXuGgkaj6C]{Grizzly Bear}. At 12th level, your <em>summon animal</em> innate spell is heightened to 5th level, and you can summon a @UUID[Compendium.pf2e.pathfinder-bestiary-2.UqFObUjgFAlWrriA]{Polar Bear}. At 14th level, it's heightened to 6th level, and you can summon a @UUID[Compendium.pf2e.pathfinder-bestiary.b8NQkby4QV4uOqFT]{Cave Bear}.</p>",
 			"prerequisites": []
 		},
 		"Call Your Shot": {
@@ -4629,7 +4656,7 @@
 		},
 		"Clan Protector": {
 			"name": "Clan Protector",
-			"description": "<p>Your @UUID[Compendium.pf2e.equipment-srd.kJJvKm80KwWXPukV]{Clan Dagger}can protect your allies as easily as yourself. When you use an @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} action to gain a circumstance bonus to AC from your clan dagger's parry trait, you can grant the circumstance bonus to an adjacent ally instead of gaining it yourself. You can use multiple Interact actions to protect multiple allies, or to protect yourself and an ally. The ally benefits from the bonus to AC only when they are adjacent to you.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.fRlvmul3LbLo2xvR]{Effect: Parry}</p>",
+			"description": "<p>Your @UUID[Compendium.pf2e.equipment-srd.kJJvKm80KwWXPukV]{Clan Dagger} can protect your allies as easily as yourself. When you use an @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} action to gain a circumstance bonus to AC from your clan dagger's parry trait, you can grant the circumstance bonus to an adjacent ally instead of gaining it yourself. You can use multiple Interact actions to protect multiple allies, or to protect yourself and an ally. The ally benefits from the bonus to AC only when they are adjacent to you.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.fRlvmul3LbLo2xvR]{Effect: Parry}</p>",
 			"prerequisites": []
 		},
 		"Clan's Edge": {
@@ -5437,7 +5464,7 @@
 		},
 		"Corpse Stench": {
 			"name": "Corpse Stench",
-			"description": "<p>Your body exudes an overwhelming scent of decay in a @Template[type:emanation|distance:10], so putrid that it nauseates creates within that range. Any creature that starts its turn in the aura must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC)] save against your class DC or spell DC, whichever is higher, or be @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} on a critical failure). While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to Corpse Stench for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{Effect: Stench}</p>",
+			"description": "<p>Your body exudes an overwhelming scent of decay in a @Template[type:emanation|distance:10], so putrid that it nauseates creates within that range. Any creature that starts its turn in the aura must succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher, or be @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1} on a critical failure). While within the aura, the creature takes a -2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to Corpse Stench for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wX9L6fbqVMLP05hn]{Effect: Stench}</p>",
 			"prerequisites": [
 				{
 					"value": "Ghoul Dedication"
@@ -6567,7 +6594,7 @@
 		},
 		"Desiccating Inhalation": {
 			"name": "Desiccating Inhalation",
-			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You draw in the moisture from nearby creatures, draining them dry to heal your wounds. Creatures in a @Template[type:cone|distance:30] take [[/r 6d8[negative]]] negative damage, with a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC)|basic:true] save against your class DC. A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. As long as at least one creature was damaged by your Desiccating Inhalation, you regain HP equal to your level.</p>\n<p>At 14th level and every 2 levels thereafter, the damage increases by 1d8. [[/r floor(@actor.level/2)d8[negative]]]{level based damage}</p>",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You draw in the moisture from nearby creatures, draining them dry to heal your wounds. Creatures in a @Template[type:cone|distance:30] take [[/r 6d8[negative]]] negative damage, with a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] save against your class DC. A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. As long as at least one creature was damaged by your Desiccating Inhalation, you regain HP equal to your level.</p>\n<p>At 14th level and every 2 levels thereafter, the damage increases by 1d8. [[/r floor(@actor.level/2)d8[negative]]]{level based damage}</p>",
 			"prerequisites": [
 				{
 					"value": "Mummy Dedication"
@@ -7377,6 +7404,15 @@
 			"prerequisites": [
 				{
 					"value": "Manipulative Charm"
+				}
+			]
+		},
+		"Dominion Aura": {
+			"name": "Dominion Aura",
+			"description": "<p>For a short time, you fully manifest the expectations of the god destroyer within you. All creatures within a @Template[type:emanation|distance:10] take [[/r 8d6[force]]] damage with a @Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true] save. A creature that fails this save is also knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}. For 1 minute, any creature who ends its turn within the 10-foot emanation takes [[/r 5d6[force]]] damage with a basic Fortitude save. If you aren't drained, you can choose to become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} when you use Dominion Aura to increase the radius of the emanation from 10 feet to 20 feet.</p>",
+			"prerequisites": [
+				{
+					"value": "Faultspawn"
 				}
 			]
 		},
@@ -8658,7 +8694,7 @@
 		},
 		"Embodied Legionary Subjectivity": {
 			"name": "Embodied Legionary Subjectivity",
-			"description": "<p><strong>Access</strong> You’re from Nex.</p>\n<hr />\n<p>Nex's Fleshforges shaped you not to achieve individual greatness at arms, but rather to become a part of a legion, a modular piece integral to the combined arms stratagems of Nexian battlemages. You become trained in Arcana and Athletics. If you would automatically become trained in one of those skills, you instead gain the trained rank in another skill of your choice. You also become trained in Warfare Lore.</p>",
+			"description": "<p><strong>Access</strong> You're from Nex.</p>\n<hr />\n<p>Nex's Fleshforges shaped you not to achieve individual greatness at arms, but rather to become a part of a legion, a modular piece integral to the combined arms stratagems of Nexian battlemages. You become trained in Arcana and Athletics. If you would automatically become trained in one of those skills, you instead gain the trained rank in another skill of your choice. You also become trained in Warfare Lore.</p>",
 			"prerequisites": [
 				{
 					"value": "cataphract fleshwarp heritage"
@@ -8909,7 +8945,7 @@
 			"description": "<p>Energy runs through your blood more powerfully. When you use Energy Emanation, you can create an emanation of 5 feet, 10 feet, or 15 feet. The damage increases to 6d6 plus an additional 1d6 for every level you have above 9th, instead of 1d6 plus an additional 1d6 for every 2 levels above 1st.</p>",
 			"prerequisites": [
 				{
-					"value": " elemental heart dwarf heritage"
+					"value": "elemental heart dwarf heritage"
 				}
 			]
 		},
@@ -9800,6 +9836,11 @@
 				}
 			]
 		},
+		"Expert Snowcasting": {
+			"name": "Expert Snowcasting",
+			"description": "<p>You draw ever more magical cold into your being, learning how to manipulate it to your whims. You gain the expert spellcasting benefits.</p>",
+			"prerequisites": []
+		},
 		"Expert Sorcerer Spellcasting": {
 			"name": "Expert Sorcerer Spellcasting",
 			"description": "<p>You gain the expert spellcasting benefits.</p>",
@@ -10337,6 +10378,11 @@
 			"description": "<p>Fear makes your foes weak and more vulnerable to your attacks.</p>\n<p>You gain a circumstance bonus to damage rolls for Strikes against @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} creatures. The bonus is equal to double the target's frightened value.</p>\n<p>If you have master proficiency in Intimidation, increase the bonus to triple the target's frightened value.</p>",
 			"prerequisites": []
 		},
+		"Fearsome Fangs": {
+			"name": "Fearsome Fangs",
+			"description": "<p>Your claws and jaws are brutally powerful and efficient, even by ursine standards. The base damage of your jaws unarmed attack from Ursine Avenger Form increases to [[/r 1d12]]. The base damage of your claws unarmed attack from Ursine Avenger Form increases to [[/r 1d8]].</p>",
+			"prerequisites": []
+		},
 		"Feast": {
 			"name": "Feast",
 			"description": "<p><strong>Requirements</strong> You are adjacent to a @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} or @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} creature, or a deceased creature that died in the past hour.</p>\n<hr />\n<p>You feast upon an adjacent restrained or unconscious creature, or a deceased creature that died in the past hour. If the creature is alive, you deal damage equal to your jaws damage. Whether it's alive or not, you gain a number of temporary Hit Points equal to half your level that last for 1 minute.</p>\n<p>You can instead choose to gain temporary Hit Points equal to double your level, but if you do, you must succeed at a @Check[type:flat|dc:6] or your body deteriorates.</p>",
@@ -10800,6 +10846,11 @@
 				}
 			]
 		},
+		"First Frost": {
+			"name": "First Frost",
+			"description": "<p>The <em>gelid shard </em>within your heart may sap your ability to feel and experience emotion, but it also lets you create and manipulate cold. You learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with the <em>frost's touch</em> and<em> </em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost} cantrips. You're trained in spell attack rolls and spell DCs for arcane spells. Your key spellcasting ability is Charisma.</p>",
+			"prerequisites": []
+		},
 		"First Revelation": {
 			"name": "First Revelation",
 			"description": "<p>You gain your mystery's initial revelation spell. Casting this spell progresses your @UUID[Compendium.pf2e.classfeatures.ibX2EhKkyUtbOHLj]{Oracular Curse}. Use the minor curse from your mystery, but when you progress it again, instead of your mystery's moderate curse effect, you become @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} in addition to the effects of the minor curse.</p>\n<p>If you don't have one, you gain a focus pool of 1 Focus Point. You can @UUID[Compendium.pf2e.actionspf2e.OSefkMgojBLqmRDh]{Refocus} by reconciling the conflicting nature of your mystery, which also reduces your curse to minor.</p>",
@@ -10834,7 +10885,7 @@
 		},
 		"Flamboyant Athlete": {
 			"name": "Flamboyant Athlete",
-			"description": "<p>Your Panache allows you to perform incredible feats: climbing, swimming, and leaping far beyond your normal capacity. While you have panache, you gain the following benefits.</p>\n<ul>\n<li>You gain climb and swim Speeds equal to half your land Speed.</li>\n<li>The DCs of your @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jumps} and @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jumps} decrease by 10. This doesn't combine with other abilities that reduce those DCs.</li>\n<li>The distance you can move with a vertical @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap}increases to 5 feet. Your distance for a horizontal Leap increases to 15 feet if your Speed is at least 15 feet, or to 20 feet if your Speed is at least 30 feet.</li>\n</ul>",
+			"description": "<p>Your Panache allows you to perform incredible feats: climbing, swimming, and leaping far beyond your normal capacity. While you have panache, you gain the following benefits.</p>\n<ul>\n<li>You gain climb and swim Speeds equal to half your land Speed.</li>\n<li>The DCs of your @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jumps} and @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jumps} decrease by 10. This doesn't combine with other abilities that reduce those DCs.</li>\n<li>The distance you can move with a vertical @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} increases to 5 feet. Your distance for a horizontal Leap increases to 15 feet if your Speed is at least 15 feet, or to 20 feet if your Speed is at least 30 feet.</li>\n</ul>",
 			"prerequisites": [
 				{
 					"value": "expert in Athletics"
@@ -11463,7 +11514,7 @@
 		},
 		"Frightful Aura": {
 			"name": "Frightful Aura",
-			"description": "<p>You're surrounded by a palpable sense of menace and power that's terrifying to behold. The aura is a @Template[type:emanation|distance:15]. An enemy that enters or ends its turn in the aura must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)] save against the higher of your spell DC or class DC.</p>\n<p><strong>Success</strong> The creature is unaffected and temporarily immune to your Frightful Aura for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>",
+			"description": "<p>You're surrounded by a palpable sense of menace and power that's terrifying to behold. The aura is a @Template[type:emanation|distance:15]. An enemy that enters or ends its turn in the aura must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your spell DC or class DC.</p>\n<p><strong>Success</strong> The creature is unaffected and temporarily immune to your Frightful Aura for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>",
 			"prerequisites": [
 				{
 					"value": "Lich Dedication"
@@ -11490,7 +11541,7 @@
 		},
 		"Frightful Moan": {
 			"name": "Frightful Moan",
-			"description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>You lament your fate, forcing each living creature in a @Template[type:emanation|distance:30] to attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)] save against your class DC or spell DC, whichever is higher.</p>\n<p><strong>Success</strong> The creature is unaffected and temporarily immune to Frightful Moans for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>",
+			"description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>You lament your fate, forcing each living creature in a @Template[type:emanation|distance:30] to attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher.</p>\n<p><strong>Success</strong> The creature is unaffected and temporarily immune to Frightful Moans for 1 minute.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>",
 			"prerequisites": [
 				{
 					"value": "Ghost Dedication"
@@ -11505,6 +11556,11 @@
 					"value": "Pactbound Dedication"
 				}
 			]
+		},
+		"Frozen Breadth": {
+			"name": "Frozen Breadth",
+			"description": "<p>Your attunement to arcane cold enhances the depths of your growing power. Increase the number of spells in your repertoire and number of spell slots you gain from <em>gelid shard</em> archetype feats by 1 for each spell level other than your two highest<em> gelid shard </em>spell slots.</p>",
+			"prerequisites": []
 		},
 		"Full Automation": {
 			"name": "Full Automation",
@@ -12460,6 +12516,15 @@
 			"description": "<p>Your expertise with your weapons and commitment to taking out your targets lends you magical power.</p>\n<p>You gain the <em>@UUID[Compendium.pf2e.spells-srd.IWUe32Y5k2QFd7YQ]{Gravity Weapon}</em> warden spell and a focus pool of 1 Focus Point.</p>",
 			"prerequisites": []
 		},
+		"Great Bear": {
+			"name": "Great Bear",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>When you transform, you can take on a bear's bulk and size. You can spend an additional action when using Ursine Avenger Form to gain the effects of a 1st-level <em>@UUID[Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge}</em> spell, which lasts for the spell's normal duration or until you leave your Ursine Avenger Form, whichever comes first.</p>",
+			"prerequisites": [
+				{
+					"value": "Ursine Avenger Form"
+				}
+			]
+		},
 		"Great Boaster": {
 			"name": "Great Boaster",
 			"description": "<p>Your bragging is particularly effective. If you succeed at a boast, you can attempt a great boast about that same skill by using your Firebrand Braggart Dedication action about the same action during the duration of your original boast's circumstance bonus; this is an exception to the rule that you can't make another boast about the same action until your next daily preparations. A great boast uses the Firebrand Braggart Dedication action, except that if you succeed, your circumstance bonus increases to +2 and remains for 1 hour. If you fail the great boast, you take a -2 circumstance penalty to attempt the same action for 4 hours. Once you declare a great boast about a particular action, you can't declare a great boast about the same action until the next time you make daily preparations, regardless of whether you succeed or fail at the check. The minimum challenging task for a great boast is one with at least a hard DC for your level.</p>",
@@ -12657,6 +12722,11 @@
 				}
 			]
 		},
+		"Greater Snow Step": {
+			"name": "Greater Snow Step",
+			"description": "<p>You can't be impeded by environmental effects that rely on cold or its byproducts. You ignore greater difficult terrain caused by snow and ice.</p>",
+			"prerequisites": []
+		},
 		"Greater Spell Runes": {
 			"name": "Greater Spell Runes",
 			"description": "<p>You gain more powerful spell runes. You gain a spell rune corresponding to a 4th-level arcane spell. At 12th level, you gain a spell rune corresponding to a 5th-level arcane spell, and at 14th level, you gain a spell rune corresponding to a 6th-level arcane spell.</p>",
@@ -12713,7 +12783,7 @@
 		},
 		"Greenwatch Initiate": {
 			"name": "Greenwatch Initiate",
-			"description": "<p>You’ve received the basic training developed for all Greenwatch recruits. You become an expert in Survival and gain the @UUID[Compendium.pf2e.feats-srd.urQZwmzg2kS53vd5]{Experienced Tracker} and @UUID[Compendium.pf2e.feats-srd.tGIXuk0XeWmG04CX]{Survey Wildlife} skill feats.</p>",
+			"description": "<p>You've received the basic training developed for all Greenwatch recruits. You become an expert in Survival and gain the @UUID[Compendium.pf2e.feats-srd.urQZwmzg2kS53vd5]{Experienced Tracker} and @UUID[Compendium.pf2e.feats-srd.tGIXuk0XeWmG04CX]{Survey Wildlife} skill feats.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Survival"
@@ -12882,6 +12952,15 @@
 			"description": "<p><strong>Trigger</strong> An ally within your melee reach is hit by an attack, you can see the attacker, and a +2 circumstance bonus to AC would turn the critical hit into a hit or the hit into a miss.</p>\n<p><strong>Requirements</strong> You are wielding a single one-handed melee weapon and have your other hand or hands free.</p>\n<hr />\n<p>You use your weapon to deflect the attack against your ally, granting a +2 circumstance bonus to their AC against the triggering attack. This turns the triggering critical hit into a hit, or the triggering hit into a miss.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.w6X7io56B2HHTOvs]{Effect: Guardian's Deflection}</p>",
 			"prerequisites": []
 		},
+		"Guardian's Embrace": {
+			"name": "Guardian's Embrace",
+			"description": "<p><strong>Requirements</strong> You are adjacent to your spirit guide or it is sharing your space.</p>\n<hr />\n<p>Your spirit guide discorporates to surround you in an invisible protective shroud. You gain a +2 status bonus to AC against physical attacks until the beginning of your next turn. If you are hit by a physical attack during this time, you can use a reaction to gain resistance 10 to physical damage dealt by that attack; doing so ends the AC bonus, and you can't use Guardian's Embrace again for 10 minutes. Your spirit guide cannot be targeted by effects, cannot be affected by area effects, and cannot take any actions while this ability is active. Your spirit guide appears in a space adjacent to you when the effect ends.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.X19XgqqItqZ4tfmq]{Effect: Guardian's Embrace}</p>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				}
+			]
+		},
 		"Guide the Timeline": {
 			"name": "Guide the Timeline",
 			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You know the result you want and subtly nudge the timeline to your intended destination. Choose an ally or a foe. If you choose an ally, the next time within the next round that ally makes an attack roll or skill check, they roll it twice and take the higher result; this is a fortune effect. If you choose a foe, the next time within the next round that foe makes an attack roll or skill check, they must roll twice and take the lower result unless they succeed at a Will save against your chronoskimmer DC; this is a misfortune effect. Regardless of your choice, the target becomes temporarily immune for 24 hours.</p>",
@@ -12895,6 +12974,15 @@
 			"name": "Guided by the Stars",
 			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are about to attempt a skill check or saving throw.</p>\n<hr />\n<p>The stars grant you insights that guide your actions. You roll twice and take the better result. If it's night and you can see the stars, you gain a +1 circumstance bonus to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raLQ458uiyd3lI2K]{Effect: Guided by the Stars}</p>",
 			"prerequisites": []
+		},
+		"Guided Skill": {
+			"name": "Guided Skill",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You ask your spirit guide for aid. For the next 10 minutes, you gain a +2 status bonus to checks made using Acrobatics, Occultism, Stealth, or Survival.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.iaZ6P59YVhdnFIN8]{Effect: Guided Skill}</p>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				}
+			]
 		},
 		"Guiding Finish": {
 			"name": "Guiding Finish",
@@ -13321,7 +13409,7 @@
 		},
 		"Heart of the Kaiju": {
 			"name": "Heart of the Kaiju",
-			"description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using Monstrosity Shape, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-level spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5; <strong>Melee <span class=\"pf2-icon\">1</span></strong> jaws (reach 20 feet), <strong>Damage</strong> [[/r (3d12+20)[piercing]]] damage; <strong>Melee <span class=\"pf2-icon\">1</span></strong> claws (agile, reach 20 feet), <strong>Damage</strong> [[/r (3d8+20)[slashing]]] damage</p>\n<p><strong>Breath Weapon</strong><span class=\"pf2-icon\">2</span> (evocation, primal) Each creature in a @Template[type:cone|distance:60] takes [[/r {15d6}]]{15d6 damage} (of your chosen damage type), with a basic Reflex save against your spell DC. Once activated, your breath weapon can't be used again for [[/br 1d4 #rounds]]{1d4 rounds}.</p>",
+			"description": "<p>Witnessing the might of the kaiju King Mogaru, Alru, and Toraloa up close awoke a new ferocity within you. When you transform using @UUID[Compendium.pf2e.feats-srd.54JzsYCx3uoj7Wlz]{Monstrosity Shape}, you can take on a kaiju form. When you take this feat, choose acid, cold, electricity, fire, or sonic damage; this is the damage your breath weapon deals. You can't change this later. The battle form is Gargantuan size with the following specific abilities; the damage values already include the extra die from being a 9th-level spell.</p>\n<p><strong>Kaiju</strong> Speed 40 feet; physical resistance 5;</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> jaws (reach 20 feet), <strong>Damage</strong> [[/r (3d12+20)[piercing]]] damage;</p>\n<p><strong>Melee</strong> <span class=\"pf2-icon\">1</span> claws (agile, reach 20 feet), <strong>Damage</strong> [[/r (3d8+20)[slashing]]] damage</p>\n<p><strong>Breath Weapon</strong> <span class=\"pf2-icon\">2</span> (evocation, primal) Each creature in a @Template[type:cone|distance:60] takes [[/r {15d6}]]{15d6 damage} (of your chosen damage type), with a basic @Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true] save against your spell DC. Once activated, your breath weapon can't be used again for [[/r 1d4 #Breath Weapon Recharge]]{1d4 rounds}.</p>",
 			"prerequisites": [
 				{
 					"value": "Monstrosity Shape"
@@ -13593,7 +13681,7 @@
 		},
 		"High-Speed Regeneration": {
 			"name": "High-Speed Regeneration",
-			"description": "<p><strong>Trigger</strong> Your turn begins.</p>\n<hr />\n<p>Your wounds knit together with barely a thought. You regain [[{2*@actor.level}[Healing]]]{Hit Points equal to double your level}. When you gain this deviation, the GM secretly selects one type of energy damage or precious material, such as fire or cold iron. When you take damage of that type, your wound smokes until the end of your next turn, preventing you from using High-Speed Regeneration.</p>\n<hr />\n<p><strong>Awakening</strong> Your regeneration can automatically save you from the brink of death. Once per day, you can use High-Speed Regeneration when your Hit Points would be reduced to 0 instead of the usual trigger. You avoid being knocked out and remain at the number of HP you regained.</p>\n<hr />\n<p><strong>Awakening</strong> Regrowth invigorates you. You gain a +10-foot status bonus to your Speed until the end of your turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.tx0S0fnfZ6Q2o80H]{Effect: High-Speed Regeneration Speed Boost}</p>",
+			"description": "<p><strong>Trigger</strong> Your turn begins.</p>\n<hr />\n<p>Your wounds knit together with barely a thought. You regain [[/r (2*@actor.level) #Healing]]{Hit Points equal to double your level}. When you gain this deviation, the GM secretly selects one type of energy damage or precious material, such as fire or cold iron. When you take damage of that type, your wound smokes until the end of your next turn, preventing you from using High-Speed Regeneration.</p>\n<hr />\n<p><strong>Awakening</strong> Your regeneration can automatically save you from the brink of death. Once per day, you can use High-Speed Regeneration when your Hit Points would be reduced to 0 instead of the usual trigger. You avoid being knocked out and remain at the number of HP you regained.</p>\n<hr />\n<p><strong>Awakening</strong> Regrowth invigorates you. You gain a +10-foot status bonus to your Speed until the end of your turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.tx0S0fnfZ6Q2o80H]{Effect: High-Speed Regeneration Speed Boost}</p>",
 			"prerequisites": []
 		},
 		"Hijack Undead": {
@@ -13814,7 +13902,7 @@
 		},
 		"Hurling Charge": {
 			"name": "Hurling Charge",
-			"description": "<p>You make a ranged Strikewith a thrown weapon you already have in your hand, Stride, and then @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact}to draw another weapon.</p>\n<p>If you are @UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{Raging}, you can add the additional damage with melee weapons you receive from raging to your damage with the thrown weapon.</p>",
+			"description": "<p>You make a ranged Strikewith a thrown weapon you already have in your hand, Stride, and then @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to draw another weapon.</p>\n<p>If you are @UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{Raging}, you can add the additional damage with melee weapons you receive from raging to your damage with the thrown weapon.</p>",
 			"prerequisites": [
 				{
 					"value": "Viking Dedication"
@@ -13895,6 +13983,20 @@
 				}
 			]
 		},
+		"Icy Apotheosis": {
+			"name": "Icy Apotheosis",
+			"description": "<p>You are as much a creature of cold as whatever ancestry you were born to. You are immune to cold damage and gain the cold trait. You automatically succeed on saving throws against effects that have the cold trait.</p>",
+			"prerequisites": []
+		},
+		"Idol Threat": {
+			"name": "Idol Threat",
+			"description": "<p><strong>Requirements</strong> You're holding something sacred or precious to a creature, such as a relic or personal depiction of their deity or a precious personal memento.</p>\n<hr />\n<p>You brandish the precious object you're holding menacingly, at once mocking it and threatening its safety. Attempt to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} the creature whose precious item you threaten. You gain a +2 circumstance bonus to the Intimidation check to Demoralize, and on a success, the creature is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round out of distraction for the object's safety and is @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1} for 1 minute (or stupefied 2 on a critical success). These conditions are both in addition to the normal effects of Demoralize. The creature is then temporarily immune to any Idol Threat using that specific object for 1 day.</p>",
+			"prerequisites": [
+				{
+					"value": "Beastbrood"
+				}
+			]
+		},
 		"Idyllkin": {
 			"name": "Idyllkin",
 			"description": "<p>Your wild, unique features betray your agathion birthright. Serene celestials from the plane of Nirvana, agathions seek the peaceful path, ensuring a better world for all to coexist. Your halcyon demeanor leads you to search for peaceful resolution to conflict.</p>\n<p>You gain the trained proficiency rank in Nature. If you would automatically become trained in Nature (from your background or class, for example), you instead become trained in a skill of your choice. You know the Sylvan language and gain the @UUID[Compendium.pf2e.feats-srd.WC4xLBGmBsdOdHWu]{Natural Medicine} skill feat.</p>\n<hr />\n<p><em>Note: If you are already trained in the skill provided by this feat, you need to manually select an alternative skill.</em></p>",
@@ -13914,9 +14016,18 @@
 				}
 			]
 		},
+		"Immortal Bear": {
+			"name": "Immortal Bear",
+			"description": "<p>Your body thrums with the primal vitality of the greatest of the ursine beasts. When in Ursine Avenger Form, you gain fast healing 5.</p>",
+			"prerequisites": [
+				{
+					"value": "Ursine Avenger Form"
+				}
+			]
+		},
 		"Impaling Briars": {
 			"name": "Impaling Briars",
-			"description": "<p>You can fill an area with devastating briars that impale and impede your foes. You gain the impaling briars order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
+			"description": "<p>You can fill an area with devastating briars that impale and impede your foes. You gain the <em>@UUID[Compendium.pf2e.spells-srd.oGV6YdpZLIG4G4gH]{Impaling Briars}</em> order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
 			"prerequisites": [
 				{
 					"value": "leaf order"
@@ -14832,7 +14943,7 @@
 		},
 		"Integrated Armament": {
 			"name": "Integrated Armament",
-			"description": "<p>Your mechanical body houses a weapon or shield that you can quickly draw and stow, leaving you prepared for combat at all times.</p>\n<p>You can use a 1-minute activity, which has the manipulate trait, to integrate a single, one-handed weapon or shield into one of your arms. You can draw or stow this item as an Interact action. Creatures don't automatically see this integrated item when it's stowed and must actively @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} in order to find it. They take a -2 circumstance penalty to any checks to do so. While you are wielding the item, it can't be @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm}ed and you can't drop or Release it; you must Interact to store the weapon and free that hand. A creature determined to retrieve the item can do so, but it requires either 1 minute to remove it or extreme violence to your arm-such as physically removing portions of the limb. You can only have one integrated armament at a time, though you can use the 1-minute activity to replace the item or swap the arm in which it's stored.</p>\n<p><strong>Enhancement</strong> Your body has more space for integration. You can now either integrate two one-handed weapons, a one-handed weapon and a shield, or a single two-handed weapon which is split across both arms. You can use a single Interact action to draw or store both integrated armaments. When you draw a single weapon, you can choose to hold it with either one hand or both hands.</p>",
+			"description": "<p>Your mechanical body houses a weapon or shield that you can quickly draw and stow, leaving you prepared for combat at all times.</p>\n<p>You can use a 1-minute activity, which has the manipulate trait, to integrate a single, one-handed weapon or shield into one of your arms. You can draw or stow this item as an Interact action. Creatures don't automatically see this integrated item when it's stowed and must actively @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} in order to find it. They take a -2 circumstance penalty to any checks to do so. While you are wielding the item, it can't be @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} ed and you can't drop or Release it; you must Interact to store the weapon and free that hand. A creature determined to retrieve the item can do so, but it requires either 1 minute to remove it or extreme violence to your arm-such as physically removing portions of the limb. You can only have one integrated armament at a time, though you can use the 1-minute activity to replace the item or swap the arm in which it's stored.</p>\n<p><strong>Enhancement</strong> Your body has more space for integration. You can now either integrate two one-handed weapons, a one-handed weapon and a shield, or a single two-handed weapon which is split across both arms. You can use a single Interact action to draw or store both integrated armaments. When you draw a single weapon, you can choose to hold it with either one hand or both hands.</p>",
 			"prerequisites": []
 		},
 		"Intense Implement": {
@@ -15014,6 +15125,15 @@
 				}
 			]
 		},
+		"Invigorating Breath": {
+			"name": "Invigorating Breath",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Requirements</strong> You are adjacent to your spirit guide or it is sharing your space.</p>\n<hr />\n<p>Your spirit guide exhales its sweet-smelling breath on you, granting you the strength to push through your pain. You gain 20 temporary Hit Points for 10 minutes. At 15th level, you instead gain 30 temporary Hit Points for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.tl94WHJ2Hg0akK2o]{Effect: Invigorating Breath}</p>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				}
+			]
+		},
 		"Invigorating Mercy": {
 			"name": "Invigorating Mercy",
 			"description": "<p>Your divine touch rejuvenates the weak and tired.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.zilwynzk8lIujgZo]{Mercy}, you can instead attempt a counteract check to remove the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy} or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled} conditions, using the source of that condition to determine the counteract level and DC.</p>\n<p>If the condition was caused by an ongoing effect and you don't remove that effect, the condition returns at the end of your next turn.</p>",
@@ -15035,7 +15155,7 @@
 		},
 		"Invoke Disaster": {
 			"name": "Invoke Disaster",
-			"description": "<p>You can invoke nature's fury upon your foes. You gain the storm lord order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
+			"description": "<p>You can invoke nature's fury upon your foes. You gain the <em>@UUID[Compendium.pf2e.spells-srd.XYhU3Wi94n1RKxTa]{Storm Lord}</em> order spell. Increase the number of Focus Points in your focus pool by 1.</p>",
 			"prerequisites": [
 				{
 					"value": "Wind Caller"
@@ -15198,6 +15318,15 @@
 			"prerequisites": [
 				{
 					"value": "Student of Perfection Dedication, or you've trained with a champion of the Challenge of Sky and Heaven"
+				}
+			]
+		},
+		"Jalmeri Rakshasa Magic": {
+			"name": "Jalmeri Rakshasa Magic",
+			"description": "<p>You can cast <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> and <em>@UUID[Compendium.pf2e.spells-srd.dxOF7d5kAWusLKWF]{Reaper's Lantern}</em> once per day each as 2nd-level divine innate spells. Reaper's lantern manifests as a lantern shaped like the head of your rakshasa incarnation.</p>",
+			"prerequisites": [
+				{
+					"value": "Beastbrood"
 				}
 			]
 		},
@@ -15964,6 +16093,18 @@
 			"prerequisites": [
 				{
 					"value": "legendary in Survival"
+				}
+			]
+		},
+		"Legendary Tattoo Artist": {
+			"name": "Legendary Tattoo Artist",
+			"description": "<p>Your craftsmanship at decorating flesh is unparalleled. You become legendary in Crafting. Whenever you craft a magical tattoo whose level is at least 3 lower than your level, increase all attack roll and DC values of the tattoo's activated abilities by 1, and increase all resistances granted by the tattoo by 1.</p>",
+			"prerequisites": [
+				{
+					"value": "Tattoo Artist"
+				},
+				{
+					"value": "master in Crafting"
 				}
 			]
 		},
@@ -17136,7 +17277,7 @@
 		},
 		"Mask Of Pain": {
 			"name": "Mask Of Pain",
-			"description": "<p><strong>Trigger</strong> You succeed at a Demoralize check.</p>\n<hr />\n<p><strong>Requirements</strong> You're wearing your <em>warmask</em>.</p>\n<hr />\n<p>Your mask has grown into a manifestation of your pain, which you can release. The creature you successfully Demoralized takes [[/r {2d6}[mental] #Mask of Pain]]{2d6 mental damage}, or [[/r {4d6}[mental] #Mask of Pain]]{4d6 mental damage} if you're legendary in Intimidation. The target is then temporarily immune to additional damage from Mask of Pain for 24 hours.</p>",
+			"description": "<p><strong>Trigger</strong> You succeed at a Demoralize check.</p>\n<hr />\n<p><strong>Requirements</strong> You're wearing your <em>warmask</em>.</p>\n<hr />\n<p>Your mask has grown into a manifestation of your pain, which you can release. The creature you successfully Demoralized takes [[/r 2d6[mental] #Mask of Pain]]{2d6 mental damage}, or [[/r 4d6[mental] #Mask of Pain]]{4d6 mental damage} if you're legendary in Intimidation. The target is then temporarily immune to additional damage from Mask of Pain for 24 hours.</p>",
 			"prerequisites": [
 				{
 					"value": "expert in Intimidation"
@@ -17268,7 +17409,7 @@
 		},
 		"Master Magus Spellcasting": {
 			"name": "Master Magus Spellcasting",
-			"description": "<p>You gain the expert bounded spellcasting benefits.</p>",
+			"description": "<p>You gain the master bounded spellcasting benefits.</p>",
 			"prerequisites": [
 				{
 					"value": "Expert Magus Spellcasting"
@@ -17358,6 +17499,11 @@
 					"value": "Expert Skysage Divination"
 				}
 			]
+		},
+		"Master Snowcasting": {
+			"name": "Master Snowcasting",
+			"description": "<p>You have unlocked the deeper magic of your <em>gelid shard,</em> gaining access to new levels of spells. You gain the master spellcasting benefits.</p>",
+			"prerequisites": []
 		},
 		"Master Sorcerer Spellcasting": {
 			"name": "Master Sorcerer Spellcasting",
@@ -17775,6 +17921,15 @@
 				}
 			]
 		},
+		"Mighty Bear": {
+			"name": "Mighty Bear",
+			"description": "<p>The power of the bear within you can expand your physical presence even further. The <em>@UUID[Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge}</em> spell you cast with your Great Bear feat is heightened to 4th level.</p>",
+			"prerequisites": [
+				{
+					"value": "Great Bear"
+				}
+			]
+		},
 		"Mighty Bulwark": {
 			"name": "Mighty Bulwark",
 			"description": "<p>Thanks to your incredible connection to your armor, you can use it to shrug off an incredible array of dangers. Your bonus from the bulwark armor trait increases from +3 to +4, and it applies on all Reflex saves, not just damaging Reflex saves.</p>",
@@ -18113,7 +18268,7 @@
 		},
 		"Monstrosity Shape": {
 			"name": "Monstrosity Shape",
-			"description": "<p>You can transform into a powerful magical creature. Add the purple worm and sea serpent forms listed in monstrosity form to your wild shape list. If you have Soaring Shape, also add the phoenix form to your wild shape list.</p>",
+			"description": "<p>You can transform into a powerful magical creature. Add the purple worm and sea serpent forms listed in <em>@UUID[Compendium.pf2e.spells-srd.8AMvNVOUEtxBCDvJ]{Monstrosity Form}</em> to your wild shape list. If you have @UUID[Compendium.pf2e.feats-srd.wNHUryoRzlfDCFAd]{Soaring Shape}, also add the phoenix form to your wild shape list.</p>",
 			"prerequisites": [
 				{
 					"value": "Wild Shape"
@@ -18268,7 +18423,7 @@
 		},
 		"Mummy's Despair": {
 			"name": "Mummy's Despair",
-			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You force your mental anguish outward, projecting it upon those around you. You gain an aura of despair in a @Template[type:emanation|distance:30] lasting 5 rounds. A creature that enters or begins its turn in the aura must succeed at a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)] save against the higher of your class DC or spell DC or be @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). A creature that succeeds at the save is temporarily immune to Mummy's Despair for 10 minutes.</p>",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You force your mental anguish outward, projecting it upon those around you. You gain an aura of despair in a @Template[type:emanation|distance:30] lasting 5 rounds. A creature that enters or begins its turn in the aura must succeed at a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against the higher of your class DC or spell DC or be @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2} on a critical failure). A creature that succeeds at the save is temporarily immune to Mummy's Despair for 10 minutes.</p>",
 			"prerequisites": [
 				{
 					"value": "Mummy Dedication"
@@ -18360,7 +18515,7 @@
 		},
 		"Mysterious Breadth": {
 			"name": "Mysterious Breadth",
-			"description": "<p>Your repertoire expands, and you can cast more divine spells each day. Increase the number of spells in your repertoire and the number of spell slots you gain from oracle archetype feats by 1 for each spell level other than your two highest oracle spell slots.</p>",
+			"description": "<p>Increase the spell slots you gain from oracle archetype feats by 1 for each spell level other than your two highest spell levels.</p>",
 			"prerequisites": [
 				{
 					"value": "Basic Oracle Spellcasting"
@@ -18811,7 +18966,7 @@
 		},
 		"Numb": {
 			"name": "Numb",
-			"description": "<p>As your body continues to rot and putrefy, your senses deaden and your undead powers grow. You gain the @UUID[Compendium.pf2e.ancestryfeatures.YGk41WV42aTM7CQV]{Advanced Undead Benefits} as well as a +1 circumstance bonus on saving throws against emotion and pain effects. While your body is deteriorated, your numbness amplifies in two ways: the circumstance bonus from this feat increases to +2, and if you roll a success on a saving throw against an emotion or pain effect, you get a critical success instead.</p>",
+			"description": "<p>As your body continues to rot and putrefy, your senses deaden and your undead powers grow. You gain the @UUID[Compendium.pf2e.ancestryfeatures.YGk41WV42aTM7CQV]{Advanced Undead Benefits} as well as a +1 circumstance bonus on saving throws against emotion and pain effects. While your body is @UUID[Compendium.pf2e.feat-effects.94MzLpLykQIWKcA1]{Deteriorated}, your numbness amplifies in two ways: the circumstance bonus from this feat increases to +2, and if you roll a success on a saving throw against an emotion or pain effect, you get a critical success instead.</p>",
 			"prerequisites": [
 				{
 					"value": "Zombie Dedication"
@@ -19493,7 +19648,7 @@
 		},
 		"Paralyzing Slash": {
 			"name": "Paralyzing Slash",
-			"description": "<p>Your enzymes can paralyze your foes rather than merely making it harder for them to heal their wounds. Strike with your claw or jaws. If you hit a living non-elf creature, it becomes @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC)] save against your class DC or spell DC, whichever is higher. Regardless of the result of the save, the creature is temporarily immune to Paralyzing Slash for 24 hours. A creature that becomes paralyzed can attempt a new save to end the paralysis at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
+			"description": "<p>Your enzymes can paralyze your foes rather than merely making it harder for them to heal their wounds. Strike with your claw or jaws. If you hit a living non-elf creature, it becomes @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} unless it succeeds at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. Regardless of the result of the save, the creature is temporarily immune to Paralyzing Slash for 24 hours. A creature that becomes paralyzed can attempt a new save to end the paralysis at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.</p>",
 			"prerequisites": [
 				{
 					"value": "Feverish Enzymes"
@@ -19689,7 +19844,7 @@
 		},
 		"Perfect Form Control": {
 			"name": "Perfect Form Control",
-			"description": "<p>Thanks to magic and muscle memory, you can stay in your alternate forms indefinitely; you may have even forgotten your original form. When you use Form Control, instead of lasting 1 hour, wild shape is permanent until you Dismiss it.</p>",
+			"description": "<p>Thanks to magic and muscle memory, you can stay in your alternate forms indefinitely; you may have even forgotten your original form. When you use @UUID[Compendium.pf2e.feats-srd.RsluSLtSWq1vN8Hc]{Form Control}, instead of lasting 1 hour, wild shape is permanent until you Dismiss it.</p>",
 			"prerequisites": [
 				{
 					"value": "Form Control"
@@ -20656,7 +20811,7 @@
 		},
 		"Primal Aegis": {
 			"name": "Primal Aegis",
-			"description": "<p>You surround yourself with a thick field of protective primal energy. You and allies within 30 feet of you gain resistance equal to your Wisdom modifier to acid, cold, electricity, fire, negative, and positive damage.</p>",
+			"description": "<p>You surround yourself with a thick field of protective primal energy. You and allies within 30 feet of you gain resistance equal to your Wisdom modifier to acid, cold, electricity, fire, negative, and positive damage.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.5PIaLkys5ZqP2BUv]{Effect: Primal Aegis}</p>",
 			"prerequisites": []
 		},
 		"Primal Breadth": {
@@ -20689,7 +20844,7 @@
 		},
 		"Primal Summons": {
 			"name": "Primal Summons",
-			"description": "<p>Whenever you summon an ally, you can empower it with the elemental power of air, earth, fire, or water. You gain the primal summons order spell.</p>",
+			"description": "<p>Whenever you summon an ally, you can empower it with the elemental power of air, earth, fire, or water. You gain the <em>@UUID[Compendium.pf2e.spells-srd.kwlKUxEuT8T15YW6]{Primal Summons}</em> order spell.</p>",
 			"prerequisites": [
 				{
 					"value": "Call of the Wild"
@@ -21128,6 +21283,15 @@
 			"description": "<p><strong>Requirements</strong> You are flanked by at least two enemies</p>\n<hr />\n<p>You turn your foes' flanking against them with a quick reverse. Make a melee Strike against one of the flanking enemies and make a second Strike with the same weapon or unarmed attack against a different enemy that is flanking you. This second Strike has the same multiple attack penalty of the initial attack and doesn't count toward your multiple attack penalty.</p>",
 			"prerequisites": []
 		},
+		"Quick Setup": {
+			"name": "Quick Setup",
+			"description": "<p>You have learned to setup simple crafting jobs with ease. Your setup time for consumables that are at least 6 levels lower than you is 1 day, and your setup time for permanent items 6 levels lower than you is 3 days.</p>\n<p>If you rush the setup and reduce the setup time for consumables at least 6 levels lower than you to less than 1 day, you can instead set them up in just 2 hours (allowing you to do so during an adventuring day if you have access to your tools and materials). If you rush the setup of a permanent item at least 6 levels lower than you and reduce the setup time to less than 1 day, you can perform the setup in 4 hours.</p>",
+			"prerequisites": [
+				{
+					"value": "master in Crafting"
+				}
+			]
+		},
 		"Quick Shape": {
 			"name": "Quick Shape",
 			"description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>Your instincts kick in and you take on an aggressive stance. You use @UUID[Compendium.pf2e.actionspf2e.0b3TTeQGFOiy6ykz]{Change Shape} to enter your hybrid form or a new form granted by a beastkin feat.</p>",
@@ -21272,7 +21436,7 @@
 		},
 		"Radiant Blade Master": {
 			"name": "Radiant Blade Master",
-			"description": "<p>Your divine ally turns your chosen weapon into a paragon of its type.</p>\n<p>When you choose the weapon for your blade divine ally during your preparations, add the following property runes to the list of effects you can choose from: @UUID[Compendium.pf2e.equipment-srd.DCPsilr8wbPXxTUv]{Dancing}, @UUID[Compendium.pf2e.feat-effects.HjfIXg5btodThCTW]{Effect: Blade Ally Disrupting Rune (Greater)}, and @UUID[Compendium.pf2e.feat-effects.Gf7h44DcTB43464h]{Effect: Blade Ally Keen Rune}.</p>",
+			"description": "<p>Your divine ally turns your chosen weapon into a paragon of its type.</p>\n<p>When you choose the weapon for your blade divine ally during your preparations, add the following property runes to the list of effects you can choose from: @UUID[Compendium.pf2e.equipment-srd.DCPsilr8wbPXxTUv]{Dancing}, @UUID[Compendium.pf2e.equipment-srd.oVrVzML63VFvVfKk]{Disrupting (Greater)}, and @UUID[Compendium.pf2e.equipment-srd.hg3IogR8ue2IWwgS]{Keen}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.sCxi8lOH8tWQjLh0]{Effect: Blade Ally}</p>",
 			"prerequisites": [
 				{
 					"value": "divine ally (blade)"
@@ -21284,7 +21448,7 @@
 		},
 		"Radiant Blade Spirit": {
 			"name": "Radiant Blade Spirit",
-			"description": "<p>Your divine ally radiates power, enhancing your chosen weapon.</p>\n<p>When you choose the weapon for your blade ally during your daily preparations, add the following property runes to the list of effects you can choose from: @UUID[Compendium.pf2e.feat-effects.YxYr18vleIt2t3RS]{Effect: Blade Ally Flaming Rune} and any aligned properties (@UUID[Compendium.pf2e.feat-effects.xLXFK4mtzgAF4zvx]{Effect: Blade Ally Anarchic Rune}, @UUID[Compendium.pf2e.feat-effects.ZzE6jPbCyUqEqhcb]{Effect: Blade Ally Axiomatic Rune}, @UUID[Compendium.pf2e.feat-effects.l98IthkklgLDJXIo]{Effect: Blade Ally Holy Rune}, or @UUID[Compendium.pf2e.feat-effects.rGSc2PtvU3mgm18S]{Effect: Blade Ally Unholy Rune}) that match your cause's alignment.</p>",
+			"description": "<p>Your divine ally radiates power, enhancing your chosen weapon.</p>\n<p>When you choose the weapon for your blade ally during your daily preparations, add the following property runes to the list of effects you can choose from: @UUID[Compendium.pf2e.equipment-srd.XszNvxnymWYRaoTp]{Flaming} and any aligned properties (@UUID[Compendium.pf2e.equipment-srd.65YL6nk1jIzCWutt]{Anarchic}, @UUID[Compendium.pf2e.equipment-srd.6xu6dPIaUZ7edKEB]{Axiomatic}, @UUID[Compendium.pf2e.equipment-srd.DH0kB9Wbr5pDeunX]{Holy}, or @UUID[Compendium.pf2e.equipment-srd.gmMrJREf4JSHd2dZ]{Unholy}) that match your cause's alignment.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.sCxi8lOH8tWQjLh0]{Effect: Blade Ally}</p>",
 			"prerequisites": [
 				{
 					"value": "divine ally (blade)"
@@ -21577,7 +21741,7 @@
 			"description": "<p>Your study of the Beast of Gluttondark has taught you how to make do in the most trying of circumstances rather than succumb to weakness. As long as your current Hit Points are less than half your maximum Hit Points, you gain a +1 circumstance bonus to Survival and Stealth checks. If your current Hit Points are less than a quarter your maximum Hit Points, the circumstance bonus is +2 instead.</p>",
 			"prerequisites": [
 				{
-					"value": " trained in Zevgavizeb Lore"
+					"value": "trained in Zevgavizeb Lore"
 				}
 			]
 		},
@@ -22245,7 +22409,11 @@
 		"Reset the Past": {
 			"name": "Reset the Past",
 			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You manipulate time to recharge one of your temporal techniques-by revising your past so you never used it in the first place. Select one of your chronoskimmer feats that has a frequency of once per day (or more frequent) that you've already used. You can use the feat again, as if you hadn't used it already.</p>",
-			"prerequisites": []
+			"prerequisites": [
+				{
+					"value": "Chronoskimmer Dedication"
+				}
+			]
 		},
 		"Resilient Mind": {
 			"name": "Resilient Mind",
@@ -22411,7 +22579,7 @@
 		},
 		"Reveal Hidden Self": {
 			"name": "Reveal Hidden Self",
-			"description": "<p><strong>Requirements</strong> You're @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to at least one enemy.</p>\n<p>While hidden, you manifest a version of your animalistic nature. You create an illusion of a Large or smaller creature within 60 feet of your location with the effects of the <em>illusory creature</em> spell. The creature shares your animalistic beastbrood features. Unlike most actions taken while hidden, using Reveal Hidden Self and Sustaining the Spell don't automatically end your hidden condition. Use the higher of your class DC or spell DC against attempts to disbelieve the illusion. If a creature observes you, it automatically disbelieves the illusion, and if you're no longer hidden to at least one enemy, the effect ends.</p>",
+			"description": "<p><strong>Requirements</strong> You're @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to at least one enemy.</p>\n<p>While hidden, you manifest a version of your animalistic nature. You create an illusion of a Large or smaller creature within 60 feet of your location with the effects of the <em>@UUID[Compendium.pf2e.spells-srd.f8SBoXiXQjlCKqly]{Illusory Creature}</em> spell. The creature shares your animalistic beastbrood features. Unlike most actions taken while hidden, using Reveal Hidden Self and Sustaining the Spell don't automatically end your hidden condition. Use the higher of your class DC or spell DC against attempts to disbelieve the illusion. If a creature observes you, it automatically disbelieves the illusion, and if you're no longer hidden to at least one enemy, the effect ends.</p>",
 			"prerequisites": [
 				{
 					"value": "Beastbrood"
@@ -22865,7 +23033,7 @@
 		},
 		"Running Reload": {
 			"name": "Running Reload",
-			"description": "<p>You can reload your weapon on the move. You Stride, @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Step}, or @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak}, then @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact}to reload.</p>",
+			"description": "<p>You can reload your weapon on the move. You Stride, @UUID[Compendium.pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{Step}, or @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak}, then @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to reload.</p>",
 			"prerequisites": []
 		},
 		"Running Tackle": {
@@ -23204,6 +23372,18 @@
 			"description": "<p>Your spells become a radiant display of light and color.</p>\n<p>If your next action is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} that doesn't have the darkness trait, has no duration, and requires creatures to attempt a Reflex save, the spell explodes in a spray of scintillating lights, in addition to its other effects.</p>\n<p>Each creature that failed its Reflex save against the spell is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round, and those who critically failed are instead @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.</p>",
 			"prerequisites": []
 		},
+		"Scion of Domora Dedication": {
+			"name": "Scion of Domora Dedication",
+			"description": "<p>You gain a spirit guide ally. Your familiar takes on the form of a spirit guide specific familiar.</p>\n<p><strong>Special</strong> You can take Scion of Domora Dedication even if you have the @UUID[Compendium.pf2e.feats-srd.4zaU3GlTGMNqLFS8]{Familiar Master Dedication} and have not taken two other @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.yaR8E2drX6pFUFCK]{Familiar Master} feats. You can't select another dedication feat until you have gained at least two other feats from the scion of Domora or familiar master archetypes.</p>",
+			"prerequisites": [
+				{
+					"value": "Familiar Master Dedication"
+				},
+				{
+					"value": "you have befriended a spirit guide and it bonded with you using its Bond with Mortal ability."
+				}
+			]
+		},
 		"Scion Transformation": {
 			"name": "Scion Transformation",
 			"description": "<p>You go into hibernation for 24 hours and perform a ritual dedicated to your ancestors, undergoing a one-time metamorphosis. You permanently gain the effects of <em>@UUID[Compendium.pf2e.spells-srd.wzctak6BxOW8xvFV]{Enlarge}</em>, and your maximum Hit Points increase by your level. The ritual transforms most of your gear to the appropriate size for your new body (though powerful items like artifacts or items strongly tied to their original size may not transform, at the GM's discretion).</p>",
@@ -23352,7 +23532,7 @@
 		},
 		"Searing Restoration": {
 			"name": "Searing Restoration",
-			"description": "<p>They told you there was no way that explosions could heal people, but they were fools… Fools who didn't understand your brilliance! You create a minor explosion from your innovation, altering the combustion to cauterize wounds using vaporized medicinal herbs. You or a living creature adjacent to you regains [[/r ceil(@actor.level/2)d10[healing]]]{level based healing}. In addition, the creature you heal can attempt an immediate flat check to recover from a single source of persistent bleed damage, with the DC reduction from appropriate assistance.</p>\n<p>Base [[/r 1d10[healing]]]{1d10 Hit Points}. At 3rd level, and every 2 levels thereafter, increase the healing by 1d10.</p>\n<p><strong>Special</strong> If your innovation is a minion, it can take this action rather than you, though because it's not a living creature, it can't use the ability on itself.</p>\n<p>@Check[type:flat|dc:17|name:Unstable Flat Check|showDC:all|traits:unstable]{Unstable Check}</p>\n<p>On a failure, the innovation malfunctions in a spectacular (though harmless) fashion, such as a belch of smoke or shower of sparks, and it becomes incapable of being used for further unstable actions.</p>\n<p>On a critical failure, you also take [[{@actor.level}[fire]]]{fire damage equal to your level}.</p>",
+			"description": "<p>They told you there was no way that explosions could heal people, but they were fools… Fools who didn't understand your brilliance! You create a minor explosion from your innovation, altering the combustion to cauterize wounds using vaporized medicinal herbs. You or a living creature adjacent to you regains [[/r ceil(@actor.level/2)d10[healing]]]{level based healing}. In addition, the creature you heal can attempt an immediate flat check to recover from a single source of persistent bleed damage, with the DC reduction from appropriate assistance.</p>\n<p>Base [[/r 1d10[healing]]]{1d10 Hit Points}. At 3rd level, and every 2 levels thereafter, increase the healing by 1d10.</p>\n<p><strong>Special</strong> If your innovation is a minion, it can take this action rather than you, though because it's not a living creature, it can't use the ability on itself.</p>\n<p>@Check[type:flat|dc:17|name:Unstable Flat Check|showDC:all|traits:unstable]{Unstable Check}</p>\n<p>On a failure, the innovation malfunctions in a spectacular (though harmless) fashion, such as a belch of smoke or shower of sparks, and it becomes incapable of being used for further unstable actions.</p>\n<p>On a critical failure, you also take [[/r (@actor.level)[fire]]]{fire damage equal to your level}.</p>",
 			"prerequisites": []
 		},
 		"Seasoned": {
@@ -23582,6 +23762,11 @@
 				}
 			]
 		},
+		"Senses of the Bear": {
+			"name": "Senses of the Bear",
+			"description": "<p>While in ursine form, you gain low-light vision and scent (imprecise) 30 feet. If you already had low-light vision, you instead gain darkvision.</p>",
+			"prerequisites": []
+		},
 		"Sensitive Nose": {
 			"name": "Sensitive Nose",
 			"description": "<p>Your large black nose isn't just for show. You gain imprecise scent with a range of 30 feet.</p>\n<hr />\n<p><strong>Special</strong> You can take this feat only at 1st level, and you can't retrain out of this feat or into this feat.</p>",
@@ -23690,7 +23875,7 @@
 		},
 		"Shadow Magic": {
 			"name": "Shadow Magic",
-			"description": "<p>You gain the ability to fuse and play with shadows by using focus spells specific to shadowdancers.</p>\n<p>You learn a shadowdancer focus spell of your choice: <em>@UUID[Compendium.pf2e.spells-srd.9BGEf9Sv5rgNBCk0]{Dance of Darkness}</em> or <em>@UUID[Compendium.pf2e.spells-srd.5ttAVJbWg2GVKmrN]{Shadow Jump}</em><em>.</em> If you don't already have one, you gain a focus pool of 1 Focus Point, which you can @UUID[Compendium.pf2e.actionspf2e.OSefkMgojBLqmRDh]{Refocus}by meditating within an area of dim light or darkness.</p>\n<p>Shadowdancer focus spells are occult spells. You become trained in occult spell attack rolls and spell DCs, and your spellcasting ability for these spells is Charisma.</p>",
+			"description": "<p>You gain the ability to fuse and play with shadows by using focus spells specific to shadowdancers.</p>\n<p>You learn a shadowdancer focus spell of your choice: <em>@UUID[Compendium.pf2e.spells-srd.9BGEf9Sv5rgNBCk0]{Dance of Darkness}</em> or <em>@UUID[Compendium.pf2e.spells-srd.5ttAVJbWg2GVKmrN]{Shadow Jump}</em><em>.</em> If you don't already have one, you gain a focus pool of 1 Focus Point, which you can @UUID[Compendium.pf2e.actionspf2e.OSefkMgojBLqmRDh]{Refocus} by meditating within an area of dim light or darkness.</p>\n<p>Shadowdancer focus spells are occult spells. You become trained in occult spell attack rolls and spell DCs, and your spellcasting ability for these spells is Charisma.</p>",
 			"prerequisites": [
 				{
 					"value": "Shadowdancer Dedication"
@@ -25217,6 +25402,16 @@
 			"description": "<p>You're the child of a winter hag, with one blue-white eye and an affinity for rime and snow. When moving over ice or snow in arctic terrain, you always gain the benefits of the Cover Tracks action without needing to use the activity or having to move half your Speed. You don't treat icy terrain as uneven ground (though it's still difficult terrain for you), and you ignore difficult terrain caused by snow. Cold precipitation and environmental cold effects don't alter the time it takes for you to become @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued}.</p>",
 			"prerequisites": []
 		},
+		"Snow Step": {
+			"name": "Snow Step",
+			"description": "<p>Snow and ice are no hindrance to you. You ignore difficult terrain caused by snow and ice, treat greater difficult terrain created by snow and ice as difficult terrain, and leave no tracks when moving through areas of snow or ice.</p>",
+			"prerequisites": []
+		},
+		"Snowcaster": {
+			"name": "Snowcaster",
+			"description": "<p>Your magical power grows as the shard's icy influence spreads ever deeper into your being. You gain the basic spellcasting benefits. Each time you gain a spell slot of a new level from this archetype, add a spell of the appropriate spell level (including heightened versions of lower-level spells) to your repertoire, either a common spell of the arcane tradition that has the cold trait or another cold spell you have access to.</p>",
+			"prerequisites": []
+		},
 		"Soaring Armor": {
 			"name": "Soaring Armor",
 			"description": "<p>Whether through a release of jets of flame, propeller blades, sonic bursts, streamlined aerodynamic structure, electromagnetic fields, or some combination of the above, you've managed to free your innovation from the bonds of gravity! While wearing your innovation, you gain a fly Speed equal to your land Speed.</p>",
@@ -25450,7 +25645,7 @@
 		},
 		"Sow Spell": {
 			"name": "Sow Spell",
-			"description": "<p>You fold your spell into a seed. If your next action is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} using 1 action or 2 actions, the spell instead plants itself in an adjacent square. You must make all decisions regarding the spell at the time you cast it.</p>\n<p>Within the next 10 minutes, you can direct your sown spell to sprout and produce the spell's effects as a reaction, which is triggered when a creature enters the sown spell's space or a square adjacent to it.</p>\n<p>You can have only one sown spell at a time, and if you don't trigger the spell within 10 minutes, it dissipates and the spell is lost. A creature can notice the sown spell with a successful Perception check against your spell DC.</p>",
+			"description": "<p>You fold your spell into a seed. If your next action is to @UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{Cast a Spell} using 1 action or 2 actions, the spell instead plants itself in an adjacent square. You must make all decisions regarding the spell at the time you cast it.</p>\n<p>Within the next 10 minutes, you can direct your sown spell to sprout and produce the spell's effects as a reaction, which is triggered when a creature enters the sown spell's space or a square adjacent to it.</p>\n<p>You can have only one sown spell at a time, and if you don't trigger the spell within 10 minutes, it dissipates and the spell is lost. A creature can notice the sown spell with a successful @Check[type:perception|dc:resolve(@actor.attributes.spellDC.value)] check against your spell DC.</p>",
 			"prerequisites": []
 		},
 		"Space-Time Shift": {
@@ -25781,6 +25976,15 @@
 				}
 			]
 		},
+		"Spirit Guide Form": {
+			"name": "Spirit Guide Form",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You fuse with your spirit guide, becoming a hybrid being with enhanced physical and spiritual power. This effect lasts 1 minute; you can end it early as a free action. During this time, you can't use any other actions granted by this archetype. You gain the following statistics and abilities, regardless of your type of spirit guide.</p>\n<ul>\n<li>You become incorporeal.</li>\n<li>You gain resistance 10 to all damage (except force, ghost touch, or positive; double resistance vs. non-magical).</li>\n<li>Darkvision.</li>\n<li>An unarmed melee attack of the same type as your spirit guide (either claws or jaws), which is the only attack you can Strike with. You're trained with this attack. Your attack modifier is +29 or your normal unarmed attack modifier, whichever is higher. You use the listed statistics for the unarmed attack type:</li>\n<li><strong>Claws</strong> (agile, backstabber, finesse) ?, Damage 3d6+5 slashing plus 1d6 force;</li>\n<li><strong>Jaws</strong> (forceful) ? Damage 3d10+5 piercing plus 1d6 force.</li>\n</ul>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				}
+			]
+		},
 		"Spirit Sheath": {
 			"name": "Spirit Sheath",
 			"description": "<p>You've magically constructed an extradimensional sheath for your weapon that you access through your clothing, typically through a pocket, sleeve, or seam. This sheath is hard to notice, granting a +2 circumstance bonus to your Stealth checks to @UUID[Compendium.pf2e.actionspf2e.qVNVSmsgpKFGk9hV]{Conceal} an Item within it. A spirit sheath can hold only one weapon at a time, and the weapon must be 1 Bulk or less.</p>\n<p>During a Spellstrike, you can Interact to draw the weapon before you Cast the Spell. You can draw or return a weapon in a spirit sheath as an Interact action, as can anyone else holding or wearing the clothing that contains the sheath. A <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> spell or similar effect can be used against the spirit sheath to expel the weapon. The counteract check is made against your spell DC and uses the sheath's counteract level of 1. The weapon is also expelled if you become @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious}.</p>",
@@ -25825,7 +26029,7 @@
 		},
 		"Spirit's Anguish": {
 			"name": "Spirit's Anguish",
-			"description": "<p><strong>Cost</strong> 1 spirit wisp or spirit remnant from your spirit dwelling</p>\n<p><strong>Requirements</strong> You are holding your spirit dwelling.</p>\n<hr />\n<p>You purify a spirit by coaxing it to release its anguish in a final cathartic howl. This deals sonic damage to all creatures in a @Template[type:cone|distance:30], with a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC)|basic:true] save against your class DC or spell DC, whichever is higher. If you expend a spirit wisp, this deals [[/r 1d4[sonic]]] damage per level you have. If you expend a spirit remnant, this deals [[/r 1d6[sonic]]] damage per level of the incorporeal undead or haunt from which you gained the remnant.</p>",
+			"description": "<p><strong>Cost</strong> 1 spirit wisp or spirit remnant from your spirit dwelling</p>\n<p><strong>Requirements</strong> You are holding your spirit dwelling.</p>\n<hr />\n<p>You purify a spirit by coaxing it to release its anguish in a final cathartic howl. This deals sonic damage to all creatures in a @Template[type:cone|distance:30], with a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save against your class DC or spell DC, whichever is higher. If you expend a spirit wisp, this deals [[/r 1d4[sonic]]] damage per level you have. If you expend a spirit remnant, this deals [[/r 1d6[sonic]]] damage per level of the incorporeal undead or haunt from which you gained the remnant.</p>",
 			"prerequisites": [
 				{
 					"value": "Exorcist Dedication"
@@ -25850,6 +26054,15 @@
 				}
 			]
 		},
+		"Spiritual Aid": {
+			"name": "Spiritual Aid",
+			"description": "<p>When you call your spirit guide for aid, its presence bolsters your will and agility. You gain the @UUID[Compendium.pf2e.actionspf2e.GmqHs4NEhAjqyAze]{Spiritual Aid} reaction.</p>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				}
+			]
+		},
 		"Spiritual Disruption": {
 			"name": "Spiritual Disruption",
 			"description": "<p>You channel disruptive power that severs a foe's spiritual connection to their heretical magic. Make a melee Strike. If the attack hits, any time the target attempts to cast a divine or occult spell, the spell is disrupted unless they succeed at a @Check[type:flat|dc:5] (@Check[type:flat|dc:7] on a critical hit); if the target is also @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied}, it must attempt the harder of the two flat checks (but not both). This effect lasts for 1 minute.</p>",
@@ -25868,6 +26081,18 @@
 				}
 			]
 		},
+		"Spiritual Flurry": {
+			"name": "Spiritual Flurry",
+			"description": "<p>When you use Spiritual Strike, hit targets become @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of your current turn. In addition, the additional force damage dealt by the Strike increases by 2d6.</p>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				},
+				{
+					"value": "Spiritual Strike"
+				}
+			]
+		},
 		"Spiritual Guides": {
 			"name": "Spiritual Guides",
 			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail, but don't critically fail, a Perception check or a skill check.</p>\n<hr />\n<p>Though no one sees them and only you can hear them, the spirits around you constantly chatter, save when you are raging. Sometimes they're even helpful. You can heed the spirits' guidance to reroll the triggering check, using the second result even if it's worse.</p>",
@@ -25881,6 +26106,15 @@
 			"name": "Spiritual Sense",
 			"description": "<p>You have a vague connection to the Ethereal Plane that enables you to notice spirits. While you're exploring but not @UUID[Compendium.pf2e.actionspf2e.TiNDYUGlMmxzxBYU]{Searching}, the GM rolls a secret check for you to find haunts that usually require Searching, as well as spirits, creatures on the Ethereal Plane, and beings made entirely of spiritual essence such as celestials, fiends, and monitors.</p>\n<p>You can also potentially notice ethereal creatures and spirits inside solid objects, provided they are within 30 feet of you. This applies while Searching, while @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seeking}, and on the automatic secret check you gain while exploring even if you aren't Searching. You can still notice spirits only on a successful check, and you can't see them if they're more than 5 feet inside an object.</p>\n<p>When you notice a creature with your Spiritual Sense, you also learn its location, making it @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to you if it had been @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected}.</p>",
 			"prerequisites": []
+		},
+		"Spiritual Strike": {
+			"name": "Spiritual Strike",
+			"description": "<p><strong>Requirements</strong> You are wielding a weapon with at least one fundamental rune and your familiar is adjacent to you or in your space.</p>\n<p>Your spirit guide enhances your attacks with occult power. Make a Strike with a weapon that has at least one fundamental rune. This counts as two attacks when calculating your multiple attack penalty. The Strike has the effects of the ghost touch property rune and deals an additional 2d6 force damage. If your weapon has a major striking rune, this Strike instead deals 3d6 force damage.</p>",
+			"prerequisites": [
+				{
+					"value": "Scion of Domora Dedication"
+				}
+			]
 		},
 		"Spiteful Rake": {
 			"name": "Spiteful Rake",
@@ -27486,7 +27720,7 @@
 		},
 		"Tamper": {
 			"name": "Tamper",
-			"description": "<p>You tamper with a foe's weapon or armor, using a free hand. Choose either a weapon held by an enemy in your reach or a suit of armor worn by an enemy in your reach. Attempt a <span data-pf2-action=\"tamper\" data-pf2-glyph=\"A\">Crafting</span> check against the enemy's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> Your tampering is incredibly effective. If you tampered with a weapon, the enemy takes a -2 circumstance penalty to attack rolls and damage rolls with that weapon. If you tampered with armor, the armor hampers the enemy's movement, making the enemy @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} and inflicting a -10-foot penalty to its Speeds. The effect lasts until the enemy Interacts to remove it, regardless of which one you used. @UUID[Compendium.pf2e.feat-effects.rzcpTJU9MvW1x1gz]{Effect: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.o7qm13OmaYOMwgib]{Effect: Weapon Tampered With (Critical Success)}</p>\n<p><strong>Success</strong> Your tampering is temporarily effective. As critical success, but the effect ends at the start of your next turn, even if the enemy doesn't Interact to end it. @UUID[Compendium.pf2e.feat-effects.IfRkgjyh0JzGalIy]{Effect: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.4QWayYR3JSL9bk2T]{Effect: Weapon Tampered With (Success)}</p>\n<p><strong>Critical Failure</strong> Your tampering backfires dramatically, creating a small explosion from your own tools or gear. You take [[/r {@details.level.value}[fire] # Tamper Backfire]]{fire damage equal to your level}.</p>",
+			"description": "<p>You tamper with a foe's weapon or armor, using a free hand. Choose either a weapon held by an enemy in your reach or a suit of armor worn by an enemy in your reach. Attempt a <span data-pf2-action=\"tamper\" data-pf2-glyph=\"A\">Crafting</span> check against the enemy's Reflex DC.</p>\n<hr />\n<p><strong>Critical Success</strong> Your tampering is incredibly effective. If you tampered with a weapon, the enemy takes a -2 circumstance penalty to attack rolls and damage rolls with that weapon. If you tampered with armor, the armor hampers the enemy's movement, making the enemy @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} and inflicting a -10-foot penalty to its Speeds. The effect lasts until the enemy Interacts to remove it, regardless of which one you used. @UUID[Compendium.pf2e.feat-effects.rzcpTJU9MvW1x1gz]{Effect: Armor Tampered With (Critical Success)} @UUID[Compendium.pf2e.feat-effects.o7qm13OmaYOMwgib]{Effect: Weapon Tampered With (Critical Success)}</p>\n<p><strong>Success</strong> Your tampering is temporarily effective. As critical success, but the effect ends at the start of your next turn, even if the enemy doesn't Interact to end it. @UUID[Compendium.pf2e.feat-effects.IfRkgjyh0JzGalIy]{Effect: Armor Tampered With (Success)} @UUID[Compendium.pf2e.feat-effects.4QWayYR3JSL9bk2T]{Effect: Weapon Tampered With (Success)}</p>\n<p><strong>Critical Failure</strong> Your tampering backfires dramatically, creating a small explosion from your own tools or gear. You take [[/r (@actor.level)[fire] #Tamper Backfire]]{fire damage equal to your level}.</p>",
 			"prerequisites": []
 		},
 		"Tandem Movement": {
@@ -27575,7 +27809,7 @@
 		},
 		"Tattoo Artist": {
 			"name": "Tattoo Artist",
-			"description": "<p>You can craft tattoos, including magical tattoos. When you select this feat, you gain the formulas for four common magical tattoos of 2nd level or lower.</p>\n<p>You gain a +1 circumstance bonus to Crafting checks to Craft tattoos. If you're a master in Crafting, this bonus increases to +2.</p>",
+			"description": "<p>You can craft tattoos, including magical tattoos. When you select this feat, you gain the formulas for four common magical tattoos of 2nd level or lower.</p>\n<p>You gain a +1 circumstance bonus to Crafting checks to Craft tattoos. If you're a master in Crafting, this bonus increases to +2 and you gain the formulas for four common magical tattoos of 7th level or lower.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Crafting"
@@ -27620,7 +27854,7 @@
 		},
 		"Temporary Potions": {
 			"name": "Temporary Potions",
-			"description": "<p>During your daily preparations, you can create a batch of two temporary oils or potions using a formula you know. These items follow the normal rules to @UUID[Compendium.pf2e.actionspf2e.rmwa3OyhTZ2i2AHl]{Craft}them, except for the time they take, with some additional restrictions. They must both be the same type of oil or potion, and their level must be 6 or more levels lower than your level. Any items you create this way become inert bottles of liquid the next time you make your daily preparations, and any remaining effects of the temporary items end. A temporary oil or potion has no value.</p>\n<p>If you have master proficiency in your tradition's spell DCs, you can create a batch of three temporary oils or potions during your daily preparations, and if you have legendary proficiency, you can create a batch of four.</p>",
+			"description": "<p>During your daily preparations, you can create a batch of two temporary oils or potions using a formula you know. These items follow the normal rules to @UUID[Compendium.pf2e.actionspf2e.rmwa3OyhTZ2i2AHl]{Craft} them, except for the time they take, with some additional restrictions. They must both be the same type of oil or potion, and their level must be 6 or more levels lower than your level. Any items you create this way become inert bottles of liquid the next time you make your daily preparations, and any remaining effects of the temporary items end. A temporary oil or potion has no value.</p>\n<p>If you have master proficiency in your tradition's spell DCs, you can create a batch of three temporary oils or potions during your daily preparations, and if you have legendary proficiency, you can create a batch of four.</p>",
 			"prerequisites": [
 				{
 					"value": "Cauldron"
@@ -27672,7 +27906,7 @@
 		},
 		"Tengu Weapon Familiarity": {
 			"name": "Tengu Weapon Familiarity",
-			"description": "<p>You've trained with a blade and other tengu weapons ever since you hatched. You gain access to @UUID[Compendium.pf2e.equipment-srd.KgKSX95uVSg8iBBA]{Khakkaras}.</p>\n<p>Additionally, choose two weapons from the sword group. You can choose from among all common martial swords, plus the @UUID[Compendium.pf2e.equipment-srd.Y1dkRsRd1Z7Jf2y6]{Katana}, @UUID[Compendium.pf2e.equipment-srd.NIsxR5zXtVa3PuyU]{Temple Sword}, and @UUID[Compendium.pf2e.equipment-srd.YOpopjoWgU7bkmwh]{Wakizashi}. For the purpose of determining your proficiency, that weapon is a simple weapon, and if the weapon isn't common, you gain access to it. If you are trained in all martial weapons, you add common advanced swords to the swords you can choose from.</p>\n<p>You also gain access to all uncommon tengu weapons. For the purpose of determining your proficiency, martial tengu weapons are simple weapons, and advanced tengu weapons are martial weapons.</p>",
+			"description": "<p>You've trained with a blade and other tengu weapons ever since you hatched. You gain access to @UUID[Compendium.pf2e.equipment-srd.KgKSX95uVSg8iBBA]{Khakkharas}.</p>\n<p>Additionally, choose two weapons from the sword group. You can choose from among all common martial swords, plus the @UUID[Compendium.pf2e.equipment-srd.Y1dkRsRd1Z7Jf2y6]{Katana}, @UUID[Compendium.pf2e.equipment-srd.NIsxR5zXtVa3PuyU]{Temple Sword}, and @UUID[Compendium.pf2e.equipment-srd.YOpopjoWgU7bkmwh]{Wakizashi}. For the purpose of determining your proficiency, that weapon is a simple weapon, and if the weapon isn't common, you gain access to it. If you are trained in all martial weapons, you add common advanced swords to the swords you can choose from.</p>\n<p>You also gain access to all uncommon tengu weapons. For the purpose of determining your proficiency, martial tengu weapons are simple weapons, and advanced tengu weapons are martial weapons.</p>",
 			"prerequisites": []
 		},
 		"Tengu Weapon Study": {
@@ -27703,7 +27937,7 @@
 		},
 		"Terrain Advantage": {
 			"name": "Terrain Advantage",
-			"description": "<p>You can take advantage of the terrain to bypass foes' defenses. Non-lizardfolk creatures in difficult terrain are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}to you. If you have a swim Speed, non-lizardfolk creatures that are in water and lack a swim Speed are also flat-footed to you.</p>",
+			"description": "<p>You can take advantage of the terrain to bypass foes' defenses. Non-lizardfolk creatures in difficult terrain are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} to you. If you have a swim Speed, non-lizardfolk creatures that are in water and lack a swim Speed are also flat-footed to you.</p>",
 			"prerequisites": []
 		},
 		"Terrain Expertise": {
@@ -27772,6 +28006,15 @@
 			"prerequisites": [
 				{
 					"value": "warden spells"
+				}
+			]
+		},
+		"Terrible Transformation": {
+			"name": "Terrible Transformation",
+			"description": "<p>You let out a mighty roar as part of your transformation. When you use Ursine Avenger Form, you can make an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} against each enemy within 30 feet that can see you, and you don't take a penalty to your Demoralize check if the creature doesn't understand your language.</p>",
+			"prerequisites": [
+				{
+					"value": "Ursine Avenger Form"
 				}
 			]
 		},
@@ -27946,7 +28189,7 @@
 			"description": "<p>Your reports are thorough and informative, and putting your thoughts to paper helps you retain the information. Keep track of each type of creature you successfully identify with Recall Knowledge. When attempting Recall Knowledge checks against creatures on your list in later encounters, you gain a +2 circumstance bonus, and you learn an additional fact about such creatures on a success.</p>",
 			"prerequisites": [
 				{
-					"value": " Pathfinder Agent Dedication"
+					"value": "Pathfinder Agent Dedication"
 				}
 			]
 		},
@@ -28628,7 +28871,7 @@
 		},
 		"True Shapeshifter": {
 			"name": "True Shapeshifter",
-			"description": "<p>You transcend the limitations of form. While under the effects of wild shape, you can change into any other form on your wild shape list; if the durations of the forms would vary, use the shorter of the two durations. Once per day, you can transform into a kaiju, with the effects of nature incarnate; if you have Plant Shape, you can instead transform into a green man.</p>",
+			"description": "<p>You transcend the limitations of form. While under the effects of wild shape, you can change into any other form on your wild shape list; if the durations of the forms would vary, use the shorter of the two durations. Once per day, you can transform into a kaiju, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.ZXwxs5tRjEGrjAJT]{Nature Incarnate}</em>; if you have @UUID[Compendium.pf2e.feats-srd.I9rSWQyueWHQyNxe]{Plant Shape}, you can instead transform into a green man.</p>",
 			"prerequisites": [
 				{
 					"value": "Dragon Shape"
@@ -29470,6 +29713,11 @@
 				}
 			]
 		},
+		"Ursine Avenger Form": {
+			"name": "Ursine Avenger Form",
+			"description": "<p>You draw the <em>Ursine Avenger Hood</em> over your head and its fur over your arms, assuming an ursine form that has traits of your original form as well as that of a bear. In your ursine form, you gain a jaws unarmed attack that deals [[/r 1d8[piercing]]] and a claws unarmed attack that deals [[/r 1d6[slashing]]] and has the agile trait. Both unarmed attacks are in the brawling group. You lose the ability to speak complex sentences while transformed and can only communicate through grunts and gestures; this prevents you from using effects that require a shared or spoken language until you revert back to your non-hybrid form. You can use this action while transformed to remove the hood and return to your original form.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.m5xWMaDfV0PiTE6u]{Effect: Ursine Avenger Form}</p>",
+			"prerequisites": []
+		},
 		"Uzunjati Recollection": {
 			"name": "Uzunjati Recollection",
 			"description": "<p>You tell a story spontaneously from nearly forgotten facts, delving into your memory and entertaining your audience in the process. Recall Knowledge with a skill in which you have master proficiency, then use Uzunjati Storytelling with the same skill. You gain a +1 circumstance bonus to your skill check for Uzunjati Storytelling from the added details.</p>",
@@ -29660,7 +29908,7 @@
 		},
 		"Verdant Metamorphosis": {
 			"name": "Verdant Metamorphosis",
-			"description": "<p>You transform into a plant version of yourself. You gain the plant trait and lose any trait that's inappropriate for your new form (typically humanoid for a PC, but also possibly animal or fungus). You can change from a form that looks mostly like your old self into a tree or any other non-creature plant as a single action, which has the concentrate trait. This has the same effect as tree shape, except you can turn into any kind of non-creature plant and your AC is 30. If you rest for 10 minutes while transformed into a non-creature plant during daylight hours under direct sunlight, you recover half your maximum Hit Points. If you take your daily rest in this way, the rest restores you to maximum Hit Points and removes all non-permanent drained, enfeebled, clumsy, and stupefied conditions, as well as all poisons and diseases of 19th level or lower.</p>",
+			"description": "<p>You transform into a plant version of yourself. You gain the plant trait and lose any trait that's inappropriate for your new form (typically humanoid for a PC, but also possibly animal or fungus). You can change from a form that looks mostly like your old self into a tree or any other non-creature plant as a single action, which has the concentrate trait. This has the same effect as tree shape, except you can turn into any kind of non-creature plant and your AC is 30. If you rest for 10 minutes while transformed into a non-creature plant during daylight hours under direct sunlight, you recover half your maximum Hit Points. If you take your daily rest in this way, the rest restores you to maximum Hit Points and removes all non-permanent @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained}, @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}, @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy}, and @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied} conditions, as well as all poisons and diseases of 19th level or lower.</p>",
 			"prerequisites": [
 				{
 					"value": "leaf order"
@@ -30215,7 +30463,7 @@
 		},
 		"Warden's Boon": {
 			"name": "Warden's Boon",
-			"description": "<p>By pointing out vulnerabilities, you grant the benefits listed in @UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{Hunt Prey} and your@UUID[Compendium.pf2e.classfeatures.mzkkj9LEWjJPBhaq]{Hunter's Edge} benefit to an ally until the end of their next turn. Depending on whether you call out or use gestures, this action gains either the auditory or visual trait.</p>\n<ul>\n<li>@UUID[Compendium.pf2e.feat-effects.uXCU8GgriUjuj5FV]{Effect: Hunter's Edge, Flurry}</li>\n<li>@UUID[Compendium.pf2e.feat-effects.ltIvO9ZQlmqGD89Y]{Effect: Hunter's Edge, Outwit}</li>\n<li>@UUID[Compendium.pf2e.feat-effects.mNk0KxsZMFnDjUA0]{Effect: Hunter's Edge, Precision}</li>\n</ul>",
+			"description": "<p>By pointing out vulnerabilities, you grant the benefits listed in @UUID[Compendium.pf2e.actionspf2e.JYi4MnsdFu618hPm]{Hunt Prey} and your @UUID[Compendium.pf2e.classfeatures.mzkkj9LEWjJPBhaq]{Hunter's Edge} benefit to an ally until the end of their next turn. Depending on whether you call out or use gestures, this action gains either the auditory or visual trait.</p>\n<ul>\n<li>@UUID[Compendium.pf2e.feat-effects.uXCU8GgriUjuj5FV]{Effect: Hunter's Edge, Flurry}</li>\n<li>@UUID[Compendium.pf2e.feat-effects.ltIvO9ZQlmqGD89Y]{Effect: Hunter's Edge, Outwit}</li>\n<li>@UUID[Compendium.pf2e.feat-effects.mNk0KxsZMFnDjUA0]{Effect: Hunter's Edge, Precision}</li>\n</ul>",
 			"prerequisites": []
 		},
 		"Warden's Focus": {
@@ -30873,6 +31121,16 @@
 				}
 			]
 		},
+		"Winter's Embrace": {
+			"name": "Winter's Embrace",
+			"description": "<p>Your eyes are accustomed to the harsh glare of the sun on snow and ice. You gain a +1 status bonus to saving throws against effects that inflict the @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} condition. Snow doesn't impair your vision; you ignore concealment from snowfall. Your skin becomes cold to the touch, and sometimes frost forms on you. You are protected from severe cold and heat.</p>",
+			"prerequisites": []
+		},
+		"Winter's Kiss": {
+			"name": "Winter's Kiss",
+			"description": "<p>Whether in the heart of a volcanic passageway or the glacial tundras of the Crown of the World, the only temperature you ever personally experience is an oddly comfortable chill. You are now protected from extreme cold and extreme heat, and you gain resistance to fire equal to half your level. If you would already have resistance to fire equal to half your level from a heritage, ancestry feat, class feat, or another archetype feat, you instead gain resistance to fire equal to your level.</p>",
+			"prerequisites": []
+		},
 		"Wish Alchemy": {
 			"name": "Wish Alchemy",
 			"description": "<p>You have learned Artokus Kirran's most hidden secrets, granting you the ability to create alchemy infused with the power of wishes.</p>\n<p>Once per day when you use @UUID[Compendium.pf2e.classfeatures.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} during your daily preparations, you can spend a batch of infused reagents to create a wish vial containing a single common arcane spell of your choice of 8th level or lower.</p>\n<p>The spell must have a casting time of no more than 3 actions, no Cost, and must be able to target you. Only you can Activate the wish vial, which takes the same number of @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} actions as the spell's casting time and grants you the effects of the spell.</p>",
@@ -31096,7 +31354,7 @@
 		},
 		"Zombie Dedication": {
 			"name": "Zombie Dedication",
-			"description": "<p>Despite your death and subsequent reanimation as a rotting corpse, you retain most of your mind and identity. Yet, it's always there: the hunger for the flesh and organs of the living. You gain the undead and zombie traits, and the basic undead benefits. Unlike a typical zombie, you're not mindless. Reduce all your Speeds by 5 feet. Your fist loses the nonlethal trait.</p>\n<p>Because of its progressing state of decay, your body requires continual maintenance to remain at its best. Each day after your rest period, your body is deteriorated due to natural decay. Additionally, some zombie abilities allow you to push for a greater effect in exchange for a chance of deteriorating your body.</p>\n<p>While your body is deteriorated, you're @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. You can spend 10 minutes checking and repairing your joints and other weak parts of your body to recover from deterioration. You can perform these repairs as part of your daily preparations. Because it's a natural result of your body's functions, you can't remove the slowed condition from deterioration through any other means.</p>\n<p>You crave the flesh of the living. You gain a jaws unarmed attack that deals 1d8 piercing damage. Your jaws are in the brawling group and have the unarmed trait. You can use your jaws Strike only against a creature that's @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} by you.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.G38usCLuTDmFYw7V]{Zombie} archetype.</p>",
+			"description": "<p>Despite your death and subsequent reanimation as a rotting corpse, you retain most of your mind and identity. Yet, it's always there: the hunger for the flesh and organs of the living. You gain the undead and zombie traits, and the basic undead benefits. Unlike a typical zombie, you're not mindless. Reduce all your Speeds by 5 feet. Your fist loses the nonlethal trait.</p>\n<p>Because of its progressing state of decay, your body requires continual maintenance to remain at its best. Each day after your rest period, your body is @UUID[Compendium.pf2e.feat-effects.94MzLpLykQIWKcA1]{Deteriorated} due to natural decay. Additionally, some zombie abilities allow you to push for a greater effect in exchange for a chance of deteriorating your body.</p>\n<p>While your body is deteriorated, you're @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{Slowed 1}. You can spend 10 minutes checking and repairing your joints and other weak parts of your body to recover from deterioration. You can perform these repairs as part of your daily preparations. Because it's a natural result of your body's functions, you can't remove the slowed condition from deterioration through any other means.</p>\n<p>You crave the flesh of the living. You gain a jaws unarmed attack that deals 1d8 piercing damage. Your jaws are in the brawling group and have the unarmed trait. You can use your jaws Strike only against a creature that's @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{Restrained} by you.</p>\n<hr />\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.G38usCLuTDmFYw7V]{Zombie} archetype.</p>",
 			"prerequisites": [
 				{
 					"value": "You died and were animated as a husk zombie."
