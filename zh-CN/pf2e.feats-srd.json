@@ -26485,7 +26485,7 @@
             "description": "<p>你对声音有不可思议的记忆力。你获得@UUID[Compendium.pf2e.feats-srd.W6Gl9ePmItfDHji0]{驾轻就熟(表演) Assurance (Performance)}专长。通过一个成功的@Check[type:flat|dc:8]检定，你可以回忆起过去一个星期里你曾听过的一个声音或一段对话。你只是硬记下来了声音而不是具体的内容，也不能用这一能力来强行记住客观事实①，所以你不能在回忆学识上因此得到额外属性。</p>"
         },
         "Remote Trigger": {
-            "name": "遥控触发 Remote Trigger",
+            "name": "遥控引爆器 Remote Trigger",
             "description": "<p>你可以遥控激活一个圈套，在远距离上使它自动触发攻击目标，或是用类似的手法远远地打爆敌人布设的圈套。</p>\n<p>你可以使用一个攻击动作来击打圈套导致它立刻被触发。如果这个圈套是你布下的，你的攻击自动命中；如果圈套是其他人布设的，你们你的这次攻击检定结果必须超过圈套的豁免DC，如果没有命中的话圈套不会被触发。</p>",
             "prerequisites": [
                 {
@@ -30011,6 +30011,42 @@
             ],
             "name": "星光法术 Starlit Spells",
             "description": "<p>星辰会揭示并惩罚你的敌人。你能将<em>@UUID[Compendium.pf2e.spells-srd.HRb2doyaLtaoCfi3]{妖火术 Faerie Fire}</em>和3环<em>@UUID[Compendium.pf2e.spells-srd.DyiD239dNS7RIxZE]{灼热光辉 Searing Light}</em>作为异能内在法术施放，每日各1次。</p>"
+        },
+        "Asura Magic": {
+            "name": "阿修罗魔法 Asura Magic",
+            "description": "<p>你能以神术内在法术的形式施展2环法术<em>@UUID[Compendium.pf2e.spells-srd.TaaMEYdZXQXF0Sks]{溢血深仇 Blood Vendetta}</em>和<em>@UUID[Compendium.pf2e.spells-srd.dLdRqT6UxTKlsPgp]{死亡丧钟 Death Knell}</em>，每天各一次。</p>",
+            "prerequisites": [
+                {
+                    "value": "阿修罗血脉/咎恶后裔"
+                }
+            ]
+        },
+        "Idol Threat": {
+            "description": "<p><strong>需求</strong> 你持握着对一个生物而言神圣或珍贵之物，比如神祇遗物或献给神祇的供奉品、或珍贵的个人纪念品。</p>\n<hr />\n<p>你凶狠地挥舞着手中的珍贵物品，嘲笑并以它的安全作要挟。对珍贵物品的主人尝试一次@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。你在这次挫败士气的威吓检定上获得+2环境加值，成功时该生物因物品而分心，陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}一轮，并且陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}一分钟（挫败士气大成功时呆滞2）。这些状态与挫败士气的正常效果叠加。之后该生物任何使用同一珍贵物品的偶像胁迫能力临时免疫一天。</p>",
+            "name": "偶像胁迫 Idol Threat",
+            "prerequisites": [
+                {
+                    "value": "罗刹血脉/野兽之子"
+                }
+            ]
+        },
+        "Dominion Aura": {
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p>短时间内，你完全展现出内心那个神祇毁灭者的期盼。所有以你为中心@Template[type:emanation|distance:10]范围内的生物承受[[/r 8d6[force]]]伤害，@Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]豁免。豁免失败的生物还陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。一分钟内，任何在以你为中心10尺弥漫范围内结束回合的生物承受[[/r 5d6[force]]]伤害，基础强韧豁免。如果你未陷入流失状态，你可以在使用支配灵光时选择陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，来将弥漫半径从10尺增加到20尺。</p>",
+            "name": "支配灵光 Dominion Aura",
+            "prerequisites": [
+                {
+                    "value": "阿修罗血脉/咎恶后裔"
+                }
+            ]
+        },
+        "Jalmeri Rakshasa Magic": {
+            "name": "扎摩诔罗刹魔法 Jalmeri Rakshasa Magic",
+            "description": "<p>你能以神术内在法术的形式施展2环法术<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>和<em>@UUID[Compendium.pf2e.spells-srd.dxOF7d5kAWusLKWF]{死神提灯 Reaper's Lantern}</em>，每天各一次。死神提灯呈现为你罗刹化身的头颅形状。</p>",
+            "prerequisites": [
+                {
+                    "value": "罗刹血脉/野兽之子"
+                }
+            ]
         }
     },
     "mapping": {
