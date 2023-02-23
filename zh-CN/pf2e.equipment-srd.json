@@ -5869,8 +5869,8 @@
             "description": "<p><strong>用法</strong> 附着到一件武器</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>触发</strong> 你用附着的武器进行的攻击骰结果大成功</p>\n<p>这只被铁链紧紧扣住的爪子并不总是枭熊的爪子。当你启动这只爪子，触发的攻击获得武器的重击专精效果。</p>"
         },
         "Pacifying": {
-            "name": "安抚 Pacifying",
-            "description": "<p>这枚符文把武器变成了和平的工具。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">R</span> (心灵) 命令</p>\n<p><strong>触发</strong> 你用安抚武器对一个生物造成伤害</p>\n<hr />\n<p><strong>效果</strong> 受到伤害的武生物必须通过@Check[type:will|dc:20]检定否则陷入平和状态。处于平和状态的生物进行所有攻击检定（除了非致命攻击）都有-2减值，持续1分钟。该生物还会受到一个明确的心灵警告：立即停止造成致命伤害。</p>"
+            "name": "止战 Pacifying",
+            "description": "<p>该符文会将武器转变成一种调停的器具。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">R</span> 命令(心灵)</p>\n<p><strong>触发</strong> 你使用蚀刻止战的武器伤害了一个生物</p>\n<hr />\n<p><strong>效果</strong> 受伤害的生物必须成功通过一次@Check[type:will|dc:20]豁免，否则被止战。被止战的生物在任何不是非致命的攻击的攻击骰中都承受-2减值，持续1分钟，且该生物也会体验到一种非常明显的心灵警告，警告他们必须停止进行可能会杀死对手的攻击。</p>"
         },
         "Pact of Blood-Taking": {
             "name": "鲜血协议 Pact of Blood-Taking",
@@ -11250,31 +11250,31 @@
         },
         "False-Bottomed Mug": {
             "name": "假底杯 False-Bottomed Mug",
-            "description": "<p><strong>许可</strong> 铃花会成员</p>\n<hr />\n<p>这种杯子看起来和其他杯子没啥不同；然而，底部拧开之后能露出一个天鹅绒内衬的夹层。这种杯子主要由铃花会成员用来向其他可能的成员传递消息和小物件。如果有人专门检查杯子，发现假底的察觉DC为15。</p>"
+            "description": "<p><strong>获取条件</strong> 铃花会成员</p>\n<hr />\n<p>这种杯子看起来和其他杯子没啥不同；然而，底部拧开之后能露出一个天鹅绒内衬的夹层。这种杯子主要由铃花会成员用来向其他可能的成员传递消息和小物件。如果有人专门检查杯子，发现假底的察觉DC为15。</p>"
         },
         "Forgetful Drops": {
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这些无害、无色的液滴可以直接倒入受害者的嘴里，或者放入他们的食物或饮料中。它最初会稍微混淆受害者的思维，让他们更容易被愚弄；在最后阶段，它可能会导致受害者进入嗜血的@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}状态。秘密结社常使用这样的液体来迷惑目标或诱使目标采取暴力行为。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:18]；</p>\n<p><strong>潜伏期</strong> 5 minutes；</p>\n<p><strong>最大持续时间</strong> 1 hour；</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (10 分钟)；</p>\n<p><strong>阶段2</strong> 呆滞1并@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (20 分钟)；</p>\n<p><strong>阶段3</strong> 呆滞1，笨拙1并@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} (30 分钟)</p>",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这些无害、无色的液滴可以直接倒入受害者的嘴里，或者放入他们的食物或饮料中。它最初会稍微混淆受害者的思维，让他们更容易被愚弄；在最后阶段，它可能会导致受害者进入嗜血的@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}状态。秘密结社常使用这样的液体来迷惑目标或诱使目标采取暴力行为。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:18]；</p>\n<p><strong>潜伏期</strong> 5 minutes；</p>\n<p><strong>最大持续时间</strong> 1 hour；</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (10 分钟)；</p>\n<p><strong>阶段2</strong> 呆滞1并@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (20 分钟)；</p>\n<p><strong>阶段3</strong> 呆滞1，笨拙1并@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} (30 分钟)</p>",
             "name": "健忘液滴 Forgetful Drops"
         },
         "Membership Cords": {
-            "description": "<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这些编织的绒线衣中穿有反光的金属线，以购买者指定的图样排布。没有哪两个秘密结社的图样是相同的，购买者每次都倾向于让同一个纺织工来制作，以确保图案的一致性。只有在昏暗烛光的房间里，反光金属线才会反射出特定的图样。许多结社使用这样的绒线衣来防止外人渗透进秘密会议，并且常常有人在会议区的入口处检查绒线衣，然后才允许人进入。</p>",
+            "description": "<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这些编织的绒线衣中穿有反光的金属线，以购买者指定的图样排布。没有哪两个秘密结社的图样是相同的，购买者每次都倾向于让同一个纺织工来制作，以确保图案的一致性。只有在昏暗烛光的房间里，反光金属线才会反射出特定的图样。许多结社使用这样的绒线衣来防止外人渗透进秘密会议，并且常常有人在会议区的入口处检查绒线衣，然后才允许人进入。</p>",
             "name": "会员绒线衣 Membership Cords"
         },
         "Moonlit Ink": {
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这种炼金墨水用于盖印，这通常指的是那些由秘密结社委托制作的木制印章或印记，成本为1sp。当被印章盖在纸上时，这种墨水在消失前会短暂显现。将盖章的物品暴露在月光直射下1分钟可显示印记。不暴露于月光的前提下，检查带有月光墨水印章的商品或文件的角色必须成功通过@Check[type:perception|dc:25]检定才能发现该印章。除了秘密结社将其用于秘密书籍、文件和信息之外，一些走私者还使用月光墨水来标记他们的货物。</p>",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这种炼金墨水用于盖印，这通常指的是那些由秘密结社委托制作的木制印章或印记，成本为1sp。当被印章盖在纸上时，这种墨水在消失前会短暂显现。将盖章的物品暴露在月光直射下1分钟可显示印记。不暴露于月光的前提下，检查带有月光墨水印章的商品或文件的角色必须成功通过@Check[type:perception|dc:25]检定才能发现该印章。除了秘密结社将其用于秘密书籍、文件和信息之外，一些走私者还使用月光墨水来标记他们的货物。</p>",
             "name": "月光墨水 Moonlit Ink"
         },
         "Parchment of Secrets": {
-            "description": "<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这章羊皮纸是用幻术系魔法制作的，可以传输秘密信息。你可以在羊皮纸上写下通常字数的文本，然后将秘密信息编码在无害的信息中。</p>\n<hr />\n<p><strong>启动</strong> 1 分钟(交互)</p>\n<p><strong>效果</strong> 你依次轻敲信中被当做密文的字母，使这些字母在褪色为标准魔水的颜色之前短暂发光，并且由您选择的记号会出现在页面的角落。当下一次有人用书写套件轻敲记号时，被你选中的字母会再次发光，显示密文内容，然后羊皮纸的力量就会耗尽。</p>",
+            "description": "<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这章羊皮纸是用幻术系魔法制作的，可以传输秘密信息。你可以在羊皮纸上写下通常字数的文本，然后将秘密信息编码在无害的信息中。</p>\n<hr />\n<p><strong>启动</strong> 1 分钟(交互)</p>\n<p><strong>效果</strong> 你依次轻敲信中被当做密文的字母，使这些字母在褪色为标准魔水的颜色之前短暂发光，并且由您选择的记号会出现在页面的角落。当下一次有人用书写套件轻敲记号时，被你选中的字母会再次发光，显示密文内容，然后羊皮纸的力量就会耗尽。</p>",
             "name": "秘密羊皮纸 Parchment of Secrets"
         },
         "Society Portrait": {
             "name": "结社画像 Society Portrait",
-            "description": "<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这些大型肖像通常由秘密结社委托绘制，以展示其当前的成员等级，并防止成员违背誓言，以达到保守秘密的目的。每个被画像的成员都需要认可自己将被肖像追踪，并且同意在自己身为秘密结社成员期间或自己死前（以先发生的为准）都信守自己立下的誓言。一旦结社扩张，某人需要一幅新的肖像，这种认可能直接转移到新的肖像上，而不必重新确认。如果成员泄露了结社的秘密，他们在结社肖像上的形象会在10分钟内改变，上面显示出“背叛者”的字样。它不会揭示背叛的细节。背叛者可以在泄密时尝试@Check[type:will|dc:30]豁免或欺骗检定，以避免肖像暴露它的背叛。“背叛者”的字迹可以通过以肖像为目标的<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>进行反制（反制DC 20，反制等级3）。</p>"
+            "description": "<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这些大型肖像通常由秘密结社委托绘制，以展示其当前的成员等级，并防止成员违背誓言，以达到保守秘密的目的。每个被画像的成员都需要认可自己将被肖像追踪，并且同意在自己身为秘密结社成员期间或自己死前（以先发生的为准）都信守自己立下的誓言。一旦结社扩张，某人需要一幅新的肖像，这种认可能直接转移到新的肖像上，而不必重新确认。如果成员泄露了结社的秘密，他们在结社肖像上的形象会在10分钟内改变，上面显示出“背叛者”的字样。它不会揭示背叛的细节。背叛者可以在泄密时尝试@Check[type:will|dc:30]豁免或欺骗检定，以避免肖像暴露它的背叛。“背叛者”的字迹可以通过以肖像为目标的<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>进行反制（反制DC 20，反制等级3）。</p>"
         },
         "Traitor's Ring": {
             "name": "背叛者之戒 Traitor's Ring",
-            "description": "<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这枚戒指有一条粗而厚的指环，上面托着一枚方形的切割宝石，可以根据买家的喜好进行定制。指环的厚度允许使用者将其送到任何珠宝商或铁匠处进行加工，以适应不同使用者手指粗细。宝石侧面有个小卡扣，按下时宝石会打开，露出下面一个微型铰链隔层。这个隔层可以用来容纳一剂毒药，允许佩戴者将戒指中的内容物倒入目标的食物或饮料中。轻轻将宝石复位即可再次关闭隔层。注意到戒指里的隔层需要检查戒指的人通过@Check[type:perception|dc:15]检定。</p>"
+            "description": "<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这枚戒指有一条粗而厚的指环，上面托着一枚方形的切割宝石，可以根据买家的喜好进行定制。指环的厚度允许使用者将其送到任何珠宝商或铁匠处进行加工，以适应不同使用者手指粗细。宝石侧面有个小卡扣，按下时宝石会打开，露出下面一个微型铰链隔层。这个隔层可以用来容纳一剂毒药，允许佩戴者将戒指中的内容物倒入目标的食物或饮料中。轻轻将宝石复位即可再次关闭隔层。注意到戒指里的隔层需要检查戒指的人通过@Check[type:perception|dc:15]检定。</p>"
         },
         "Compass of Transpositional Awareness": {
             "description": "<p>这个有着玻璃盘盖的罗盘的银质表面蚀刻着几十个深奥的符号，模糊的图案，和无法理解的短语。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 专注，交互</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>效果</strong> 你将传送探知罗盘指向一个现存的传送效果（例如一道魔法传送门）或是1分钟内存在过传送效果的地点（例如某个生物刚刚施放过次元门的空间）。尝试一次神秘检定来确定效果通向何处。此次检定的DC为效果的反制DC。如果成功，你大致了解到传送效果的目的地（例如“火元素位面”，“北方”，或“阿维斯坦”）。大成功时，你可以确定本地效果（如次元门（dimension door））的目的地到几尺内，或是长距离效果（如传送术（teleport），异界传送（plane shift），或是跨维度传送门）的目的地到几英里内。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span></p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你使用传送探知罗盘来测量你当前的坐标和你想要使用传送魔法抵达的坐标。1分钟内，当你施放一个具有射程的传送法术，提升30尺该法术的射程。如果法术通常为接触射程，提升其射程到30尺。</p>",
@@ -11285,11 +11285,11 @@
             "name": "空塑人硬币（仲裁者） Conrasu Coin (Arbiter)"
         },
         "Sibling's Coin": {
-            "description": "<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>与普遍的看法相反，秘密握手方式并不是秘密结社成员之间确认身份的首选方法，主要是因为这在拥挤的街道或繁忙的小酒馆中间很显眼。相反，结社倾向于通过携带同胞硬币来相互标记。这个名字最初是由一个秘密结社创造的，虽然它后来湮没在历史中，但这种巧妙的硬币却流传了下来。这些硬币是无害的，类似普通银币，直到主人顺时针转动硬币外缘。此时，币面旋转，露出主人的秘密结社标志。那些疑似结社成员的人常常将把玩硬币作为一种带有一点身份识别性质的小动作，然后试图巧妙地让结社标志在对谈者眼前一闪而过。虽然专门检查硬币（@Check[type:perception|dc:20]检定）可能会注意到硬币中的机巧，但很少有人会单独检查硬币，除非他们有理由怀疑。</p>",
+            "description": "<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>与普遍的看法相反，秘密握手方式并不是秘密结社成员之间确认身份的首选方法，主要是因为这在拥挤的街道或繁忙的小酒馆中间很显眼。相反，结社倾向于通过携带同胞硬币来相互标记。这个名字最初是由一个秘密结社创造的，虽然它后来湮没在历史中，但这种巧妙的硬币却流传了下来。这些硬币是无害的，类似普通银币，直到主人顺时针转动硬币外缘。此时，币面旋转，露出主人的秘密结社标志。那些疑似结社成员的人常常将把玩硬币作为一种带有一点身份识别性质的小动作，然后试图巧妙地让结社标志在对谈者眼前一闪而过。虽然专门检查硬币（@Check[type:perception|dc:20]检定）可能会注意到硬币中的机巧，但很少有人会单独检查硬币，除非他们有理由怀疑。</p>",
             "name": "同胞硬币 Sibling's Coin"
         },
         "Silent Bell": {
-            "description": "<p><strong>许可</strong> 秘密结社成员</p>\n<hr />\n<p>这款大号手铃由铜铸成，配有木柄。铃铛的表面蚀刻着精美的图案，描绘了一群形形色色的人围坐在一张桌子旁，云朵遮住了背景中的所有人。奇怪的是这个铃铛中间并没有挂铃舌，当它闲置时，不会发出任何声音。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 静默之铃会在边长20尺的立方体空间周围形成一堵@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的墙，在10分钟内阻止声音进出立方体。这堵墙没有实体，除了声音之外什么都不能阻挡。由于立方体不可见，生物依然可以透过墙壁进行读唇或观察肢体语言。</p>",
+            "description": "<p><strong>获取条件</strong> 秘密结社成员</p>\n<hr />\n<p>这款大号手铃由铜铸成，配有木柄。铃铛的表面蚀刻着精美的图案，描绘了一群形形色色的人围坐在一张桌子旁，云朵遮住了背景中的所有人。奇怪的是这个铃铛中间并没有挂铃舌，当它闲置时，不会发出任何声音。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 静默之铃会在边长20尺的立方体空间周围形成一堵@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的墙，在10分钟内阻止声音进出立方体。这堵墙没有实体，除了声音之外什么都不能阻挡。由于立方体不可见，生物依然可以透过墙壁进行读唇或观察肢体语言。</p>",
             "name": "静默之铃 Silent Bell"
         },
         "Self-Immolating Note": {
@@ -11298,7 +11298,7 @@
         },
         "Glittering Scarab": {
             "name": "闪亮圣甲虫 Glittering Scarab",
-            "description": "<p><strong>许可</strong> 圣瞳秘修会成员（Esoteric Order of the Palatine Eye）</p>\n<hr />\n<p>这枚胸针是在整个奥西里昂市场上都有售卖的流行胸针的珍贵复制品。原版的胸针是实心的，常常被游客购买。然而，闪亮圣甲虫可以轻轻按压，让翅膀分开，露出下面画着的一只眼睛。此胸针被用于进入圣瞳秘修会的大多数秘密会议。专门检查圣甲虫的人可以通过成功的@Check[type:perception|dc:20]检定发现隐藏的眼睛，但如果他们知道圣甲虫内的机关，只需要轻轻按压就能检查是否存在眼睛。</p>"
+            "description": "<p><strong>获取条件</strong> 圣瞳秘修会成员（Esoteric Order of the Palatine Eye）</p>\n<hr />\n<p>这枚胸针是在整个奥西里昂市场上都有售卖的流行胸针的珍贵复制品。原版的胸针是实心的，常常被游客购买。然而，闪亮圣甲虫可以轻轻按压，让翅膀分开，露出下面画着的一只眼睛。此胸针被用于进入圣瞳秘修会的大多数秘密会议。专门检查圣甲虫的人可以通过成功的@Check[type:perception|dc:20]检定发现隐藏的眼睛，但如果他们知道圣甲虫内的机关，只需要轻轻按压就能检查是否存在眼睛。</p>"
         },
         "Stone of Unrivaled Skill": {
             "description": "<p>你将你的感官交给一个鬼婆，换来了从众多灵魂那里偷来的无与伦比的专业能力；这些灵魂都曾是他们所在领域中最杰出的人才。你的交易合同是通过每天晚上睡觉时在枕头底下放上一颗黑黝黝的石头来签订的。在签订这份<em>交易合同</em>时，选择一项技能。你成为该技能的专家；如果你已经是专家，你成为大师，且如果你已经是大师，你成为传奇。每天一次，无论距离多远，持有你的<em>交易合同</em>的鬼婆可以接管你10分钟的感官，此时鬼婆能听到、看到、嗅到、尝到、并感觉到你通常能体验到的每件事物。在这段时间内，你因自己断断续续的感官而陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你将签订你<em>交易合同</em>的石头放在你的口内。在接下来的10分钟内，你在用你为合同选择的技能进行的技能检定上获得+3状态加值。</p>",
@@ -11801,6 +11801,618 @@
         },
         "Tough Skin": {
             "name": "坚韧表皮 Tough Skin"
+        },
+        "Demolition Fulu (Lesser)": {
+            "description": "<p>拆毁符箓允许破拆者或者开凿者在破拆发生之时提前远离现场。符箓会在5分钟至8小时内化为灰烬，具体时间由你在贴上符箓时决定。当持续时间结束时，符箓会降低其贴上的物体的硬度，数值等同于符箓的等级，之后对物体造成[[/r 3d6[bludgeoning]]]伤害。当把拆毁符箓视作危害时，侦测到它的隐秘DC为@Check[type:perception|dc:17]，解除它的贼活DC为@Check[type:thievery|dc:17]。</p>",
+            "name": "次等拆毁符箓 Demolition Fulu (Lesser)"
+        },
+        "Discord Fulu": {
+            "description": "<p><strong>持续时间</strong> 1小时</p>\n<p><em>争端符箓</em>上的文字带有一抹绿色，这是一种很受欢迎，但是违背道德的工具，经常被情敌拿来阻止他人的恋情发展。把该符箓贴在身上后，此生物对待其他生物的态度会比正常差1阶。该生物还会在交涉检定上承受-1状态减值。该生物投掷的第一次失败交涉检定会变为大失败作为替代，之后符箓会烧成灰烬，效果结束。</p>",
+            "name": "争端符箓 Discord Fulu"
+        },
+        "Ghost Courier Fulu": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><em>鬼送信符箓</em>上的铭文为一段信息留出了空间，上面有一个显眼的红印章标识，代表这张符箓所导向的鬼收语符箓。当你启动该符箓时，你要口述至多长度为25个词的讯息，之后纸面上就会神奇地按照你所说的语言浮现出文字。之后符箓会消失进入灵界位面，在[[/r 2d10 #hours]]{2d10小时}内抵达与其对应的鬼收语符箓，但前提是对象符箓位于500英里范围内。在那里，符箓的魔法消失，但信息会被保留下来。若符箓在运输过程中承受任何伤害的话，它有50%的概率完好无损地掉回主物质位面，符箓本身完好无损但会失去魔力。</p>",
+            "name": "鬼送信符箓 Ghost Courier Fulu"
+        },
+        "Golden Breath Fulu": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 想象</p>\n<p><strong>触发</strong> 你承受伤害.</p>\n<p>一位富有进取精神的医师逆转了虚之千难符箓所唤起的力量，创造出了这金息符箓，它能在五行元素失衡之时强化你的气和躯体。当你启动该符箓时，你会恢复[[/r 75[healing]]]生命值，并尝试一次纯骰检定来终止影响你的任何持续伤害。这种符箓十分适合用来帮助他人终止持续伤害。此外，若你因为符箓而恢复的生命值将要超出你的最大生命值时，你能将多余的生命值转化为临时生命值，或者将过量的生命值分配给你所选择的30尺内的那些生物。这些临时生命值持续1分钟。</p>",
+            "name": "金息符箓 Golden Breath Fulu"
+        },
+        "Kaiju Fulu": {
+            "description": "<p><strong>持续时间</strong> 一星期</p>\n<p>尽管和名字不太搭调，但怪兽符箓可以保护建筑免受各种损伤。当该符箓贴在一处大小不超过100尺 x 100尺底面，以及至多50尺高的建筑上，该建筑遭受伤害之时以及之后1小时内遭受的任何伤害中，其硬度都相当于标准纯度的精金。符箓会在随后化为尘埃，其效果结束。</p>",
+            "name": "怪兽符箓 Kaiju Fulu"
+        },
+        "Inventor's Fulu": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 想象</p>\n<p><strong>触发</strong> 你在具有不稳定特征的动作中掷出大失败</p>\n<p>部分天夏的发明家会把油炸零食放在他们的大发明旁边，这是一种让设备按照预期运作的护身符。这种做法也影响了其他发明家，他们用<em>发明家符箓</em>上的食物画作来替代食物。当你启动符箓时，你的大失败变为失败，而且你只需要花费1分钟就能让你的大发明再度正常工作。之后符箓便会烧成灰烬，其效果结束。</p>",
+            "name": "发明家符箓 Inventor's Fulu"
+        },
+        "Mourner's Dawnlight Fulu": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 命令，想象，交互</p>\n<p><em>悼者之曦符箓</em>是一堆类似于纸钱的纸张，它被用于定位失踪者的遗骸所在地。当你启动符箓时，你要想象对你来说很熟悉的一件特定物体或者已死生物，并且想要寻找它。之后你把符箓撕成碎片，让它随风飘散。若你寻找的物品或生物位于距你500尺的范围之内时，这些纸片会在空中飘动并最终落在目标上，或者落在距离目标最近的埋葬地或者其他遮盖物的表面上。若被撕碎的符箓落地或者未能找到指定目标的话，其魔法便会结束。</p>",
+            "name": "悼者之曦 Mourner's Dawnlight Fulu"
+        },
+        "Stumbling Fulu": {
+            "description": "<p><strong>持续时间</strong> 一小时</p>\n<p>最初创造<em>踉跄符箓</em>的狐妖建议使用者把符箓塞到目标的腰带下方，因为这样才能产生最大的效果。当贴上符箓的生物完成一次行走动作时，该生物必须尝试@Check[type:reflex|dc:17]豁免。失败时，符箓所附着的护甲的一些部件会脱落，使得穿戴者陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。大失败时，目标会@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}并且陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。这些笨拙状态会持续至目标采取合计1个交互动作，外加当笨拙状态值大于1时，1以上的每点状态值需要1个额外交互动作，才能得当地把衣服重新穿好。当符箓被启动后，它就会被烧毁，符箓的魔力仅会持续至将状态强加于人之时。</p>",
+            "name": "踉跄符箓 Stumbling Fulu"
+        },
+        "Sentry Fulu": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 命令，想象，交互</p>\n<p>哨兵符箓上描绘着一名全副武装的守卫。当你启动符箓时，它会呈现成由纸张制成的超小型类人守卫的样子，看守半径20尺爆发范围的区域。守卫的察觉DC为20，拥有精确视觉感官以及模糊的听觉和震动感官，它会侦测移动进入该区域的生物，包括从空中经过的生物。由你决定守卫是留在其区域内还是在这里巡逻；若选择后者，你还要确定守卫的巡逻路径，其速度为25尺。你还要设置一条口令，其他人必须给出口令才能通过。若有生物进入该区域但并未给出口令的话，哨兵会创造出声音或精神警报。声音警报拥有人类呼喊时的声音及音量，外加听觉特征，若正在睡觉的话，这使得每个能听到他的生物尝试@Check[type:perception|dc:15]判断是否能够醒来。若你正位于启动守卫（见后文）的60尺范围内，就可以收到精神警报。哨兵符箓会在8小时内维持启动状态，之后符箓就会被消耗。</p>\n<p>若你设置了多个哨兵符箓，你能够设置多个符箓作为一组哨兵，但前提是它们的区域彼此接触或相互重叠。当其中之一发出警报时，这条警报就会在所有守卫间穿刺，因此你必须在其中一个守卫的范围内才能听到它或者接收到精神警报。提供正确口令的生物不需要再向其他同组的哨兵符箓提供口令。当一组守卫中有一道符箓创造的守卫被摧毁时，就会引发其他相联区域的警报。</p>",
+            "name": "哨兵符箓 Sentry Fulu"
+        },
+        "Poracha Fulu": {
+            "description": "<p>神灵之森的民间传说讲述了<em>八脚猞猁符箓</em>的起源。传说过去曾经有个旅行者救下了一只八条腿的猫，结果发现他是八脚猞猁的王子。作为回报，王子赠予旅行者一枚符箓，旅行者后来靠着这符箓经受住了一种速效毒药的侵蚀，从而避免了杀身之祸。从传统上来说，一名佩戴着能戴上多达9张<em>八脚猞猁符箓</em>，这所有会被算作1个护符。每当你承受持续伤害时，你身上贴着的其中1枚<em>八脚猞猁符箓</em>便会使伤害无效并化为灰烬。这种效应会自动产生，但你可以用自由动作（想象）来防止符箓对此产生反应。当你这么做时，你身上贴着的任何<em>八脚猞猁符箓</em>都不再会对该种持续伤害产生反应。</p>",
+            "name": "八脚猞猁符箓 Poracha Fulu"
+        },
+        "Reflected Moonlight Fulu": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 想象</p>\n<p><strong>触发</strong> 你在对抗负能量或死亡效果的豁免中投掷失败</p>\n<p>在一场只有超级月亮浮现于夜空之时才会举办的祭祀月夜的仪典中，有一名僧侣意外将一张符纸整夜遗落在户外，而这便是第一张映月符箓的由来。当你启动这张符箓时，你能重掷对抗触发效果的豁免检定，并取较好的结果。若新的检定得到大成功，该效果便会反射到其创造者身上，他会被视为效果的目标，任何负能量伤害都会被转化为正能量。反射效果或法术只会影响它原本的创造者，即便该法术是区域法术或者能够影响多个生物的法术也是如此。</p>",
+            "name": "映月符箓 Reflected Moonlight Fulu"
+        },
+        "Thousand-Pains Fulu (Blade)": {
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:23|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>这张红色符箓摸起来很硬，其边缘十分锋利，看着它就会让你感到兴奋。其DC为23，由于经脉爆裂割伤血肉，符箓造成[[/r 5d6[slashing]]]伤害。失败或大失败时，若目标在自己的回合内采取具有操作或移动特征的动作并且动作失败时，他会承受[[/r 1d6[persistent,slashing]]]伤害。</p>",
+            "name": "刃之千难符箓 Thousand-Pains Fulu (Blade)"
+        },
+        "Thousand-Pains Fulu (Icicle)": {
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:30|basic:true|traits:cold]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>看着这张黑色的符箓会让你感到寒冷和反胃。目标的气被扭曲、抽取，从而造成[[/r 10d6[cold]]]伤害。失败或大失败时，若目标由于毒素或疾病效果而承受伤害、或者陷入恶心时，它会承受[[/r 2d6[persistent,cold]]]伤害。这些效果都具有寒冷特征。</p>",
+            "name": "冰锥之千难符箓 Thousand-Pains Fulu (Icicle)"
+        },
+        "Thousand-Pains Fulu (Needle)": {
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:27|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>拿起这张符箓的感觉就好像手被针扎了一般。符箓会如同头发、指甲和结缔组织刺入到体内一般造成[[/r 7d6[piercing]]]伤害。失败或大失败时，若目标采取具有移动特征的动作，就会承受[[/r 2d6[persistent,piercing]]]伤害。</p>",
+            "name": "针之千难符箓 Thousand-Pains Fulu (Needle)"
+        },
+        "Amazing Pop-up Book": {
+            "description": "<p>地精法师们发明了魔法立体书来储存他们的法术，而不是通过文字。尽管这种传统已经开始在其他文化的法师中传播开来。这些魔典有彩色的封面，打开之后能显示各种描述法术的三维场景。地精们喜欢把书制造得恰到好处，每翻一页就会出现一只吓人的动物，例如一匹马或一条狗。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象(超魔)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作为施放某个准备自魔典中的幻术系法术，并且该法术创造出幻象地形或生物，例如幻景，你就可以创造一个立体书中的场景。如果生物不相信幻象的豁免成功，但未大成功，那么就在他们脑海中意识到幻象的那一刻，一个吓人一跳（虽然显然是假的）的幻象会突然出现在他视野内的某个地方，只有他自己能看到，并且造成等同于法术环级的心灵伤害。</p>",
+            "name": "惊奇立体书 Amazing Pop-up Book"
+        },
+        "Thousand-Pains Fulu (Stone)": {
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:19|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>符箓所使用的黄色羊皮纸摸起来坚硬且表面好似布满灰尘。符箓会宛若肿胀的肌肉挤压到关节与骨头一般造成[[/r 3d6[bludgeoning]]]伤害。失败或大失败时，若目标承受电击伤害，它就会同时承受[[/r 1d6[persistent,bludgeoning]]]伤害。</p>",
+            "name": "石之千难符箓 Thousand-Pains Fulu (Stone)"
+        },
+        "Book of Warding Prayers": {
+            "description": "<p>这本书的书脊上装饰着来自外环位面的语言，封面上蚀刻有神祇的圣徽。每本祈福经书 都是献给某个特定神祇的，同时也能作为该神祇的圣徽使用。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你的上个动作是施放一个由你神祇授予的、已准备的神术</p>\n<hr />\n<p><strong>效果</strong> 选择混乱、邪恶、善良或守序；你不能选择你神祇的阵营类型。你和你30尺内所有盟友将被神祇庇护，获得针对该种阵营伤害的10点抗力，持续1分钟。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.GqXIV46JqB8x8eEN]{效果: 祈福经书}</p>",
+            "name": "祈福经书 Book of Warding Prayers"
+        },
+        "Draxie's Recipe Book": {
+            "description": "<p>这本微型食谱是由一位著名的小龙精大厨创作，但它会调整自身大小以适应读者的手和眼睛。虽然大部分页面是空白的，可以在上面记录法术，但是前四页写满了一个需要施放<em>@UUID[Compendium.pf2e.spells-srd.0qaqksrGGDj74HXE]{闪光尘 Glitterdust}</em>来使用的复杂的调料配方。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放<em>闪光尘</em>法术，那么法术范围内所有未能成功豁免的生物都会被红色香料粉复盖。对受此效果影响的生物进行攫抓、擒拿或活吞的尝试都有+1环境加值，或者如果用口或类似嘴巴的器官来进行如此尝试的话则有+2环境加值，因为目标变得格外鲜香美味。受影响的生物可以通过彻底清洁自己（过程通常需要花费10分钟）或将自己完全进入水中来洗去香料粉。此能力也可以用来在一瞬间内给<em>闪光尘</em>法术范围内最多100磅重的预加工食物进行调味。</p>",
+            "name": "小龙精食谱 Draxie's Recipe Book"
+        },
+        "Communion Mat": {
+            "description": "<p>这本无页的魔法书由两个耐用的封皮组成，打开后会显示一个小型的仪式法阵。当你第一次绑定魔典时，你和你的魔宠各自将肢体按在垫子的一个角。仪式法阵就会变成和你庇护主的根源相匹配的图像，你魔宠所掌握的魔法将出现在空白处。在你日常准备过程中，你的魔宠会绕着仪式法阵转一个圈，以强化它和你庇护主之间的联系。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">f</span> 想象(超魔)</p>\n<p><strong>频率</strong> once per 10 minutes</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放一个由你庇护主的奥义赐予的法术，或是一个你魔宠从教诲中学到的法术，你的庇护主会注意到你在很好的利用它赐予的力量，并让激增的魔力强化你的魔宠。你的魔宠会@UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持 Sustains}你的一个法术。</p>",
+            "name": "集会垫 Communion Mat"
+        },
+        "Linguist's Dictionary (Greater)": {
+            "description": "<p>这本大部头用结实的皮革装订，带有多个有彩色书签和分页。它的标题和文本不断在不同语言之间切换。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的下个动作是施放由此魔典准备的、允许你理解另一种语言的法术，例如<em>@UUID[Compendium.pf2e.spells-srd.vTQvfYu2llKQedmY]{通晓语言 Comprehend Language}</em>或<em>@UUID[Compendium.pf2e.spells-srd.SwUiVavHKMWG7t5K]{巧言术 Tongues}</em></p>\n<hr />\n<p><strong>效果</strong> 魔典会吸收由此方式翻译的某种语言的知识（如果不止一种的话由施法者选择），允许魔典的持有者在法术持续时间结束以后也能以该语言进行基本的交流。<em>高等语言学家的词典</em>可以同时收录三种语言。</p>",
+            "name": "高等语言学家的词典 Linguist's Dictionary (Greater)"
+        },
+        "Maw of Hungry Shadows": {
+            "description": "<p>阴影在这本墨黑的书周围盘旋，吞噬任何接触到它的光线。翻开这本魔典时，书页中会传来微弱的低语。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你的上个动作是施放一个由此魔典中准备的并且带有[阴影]特征的法术</p>\n<hr />\n<p><strong>效果</strong> 你和这本书的影子会伸长，贪婪地伸向30尺内的一个敌人，他必须尝试强韧豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，并且阴影擦过他导致他陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>失败</strong> 生物目盲1分钟，并且阴影缠绕他导致他陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}。</p>\n<p><strong>大失败</strong> 同失败，但是阴影还会将生物拉进魔典里，将其传送至阴影位面。</p>",
+            "name": "饥饿鬼影 Maw of Hungry Shadows"
+        },
+        "Spell Duelist's Siphon": {
+            "name": "法术决斗者的虹吸管 Spell Duelist's Siphon",
+            "description": "<p>这本书的书脊上有一串金属扣环，封面上刻有法术所对应的施法形态姿势图。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">R</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被奥术法术当做攻击目标，并且你此时正举起魔典</p>\n<p><strong>需求</strong> 你拥有@UUID[Compendium.pf2e.feats-srd.JoxEspM0kbCop7og]{举起书卷 Raise a Tome}专长</p>\n<hr />\n<p><strong>效果</strong> 魔典尝试吸收以你为目标的法术。你尝试反制触发的法术。如果你成功，法术被吸收进魔典，并且封面上的图样会改变，变为被反制的法术的施放姿势和符文。当魔典中吸收了一个法术时，你可以使用和魔典吸收的法术相同或更高环级的法术位来施放这个法术，并将其升至适当的环级（如果你使用了更高级别的法术位）。当你施放该法术后，魔典吸收的法术就会被消耗掉。</p>"
+        },
+        "Tome of Restorative Cleansing (Greater)": {
+            "description": "<p>这本书在新月之夜是深蓝色的，随着月亮渐圆逐渐变为鲜红色。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象(治疗, 死灵系, 正能量)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的上个动作是施放一个由魔典中准备的法术，并且法术移除了你或你盟友身上的某个有害状态或苦难</p>\n<hr />\n<p><strong>效果</strong> 选择某个被满足要求的法术移除了状态的生物。生物获得[[/r 3d8]]临时生命值，持续1小时。</p>",
+            "name": "高等滋补清洁书卷 Tome of Restorative Cleansing (Greater)"
+        },
+        "Tome of Restorative Cleansing (Moderate)": {
+            "description": "<p>这本书在新月之夜是深蓝色的，随着月亮渐圆逐渐变为鲜红色。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象(治疗, 死灵系, 正能量)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的上个动作是施放一个由魔典中准备的法术，并且法术移除了你或你盟友身上的某个有害状态或苦难</p>\n<hr />\n<p><strong>效果</strong> 选择某个被满足要求的法术移除了状态的生物。生物获得[[/r 2d8]]临时生命值，持续1小时。</p>",
+            "name": "中等滋补清洁书卷 Tome of Restorative Cleansing (Moderate)"
+        },
+        "Alchemist's Flamethrower": {
+            "description": "<p>这个长圆柱体顶部有一对黄铜插槽和一系列抛光的管道。必须将总计2瓶炽火胶装入武器的插槽中，清理管路并准备击发。以上述方式正确装填喷火器需要花费1分钟时间。当你扣动上了膛的喷火器的扳机时，炽火胶就会被吸进枪管里，并从枪口喷出一道烈焰来。喷火器造成的伤害由装入喷火器的等级最低的炽火胶决定。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互（火焰）</p>\n<p><strong>需求</strong> 火焰喷射器已上膛</p>\n<hr />\n<p><strong>效果</strong> 你扣动扳机，装填好的炽火胶将喷出直线火焰。区域内的生物受到火焰伤害，基于装填进喷火器里等级最低的炽火胶，具体见下。生物基础反射豁免大失败时还会受到列出的持续火焰伤害。</p>\n<ul>\n<li><strong>次等炽火胶</strong>：喷火器对@Template[type:line|distance:30]造成[[/r 1d8[fire]]]伤害（@Check[type:reflex|dc:15|basic:true]豁免）。1持续火焰伤害。</li>\n<li><strong>中等炽火胶</strong>：喷火器对@Template[type:line|distance:60]造成[[/r 2d8[fire]]]伤害（@Check[type:reflex|dc:17|basic:true]豁免）。2持续火焰伤害。</li>\n<li><strong>高等炽火胶</strong>：喷火器对@Template[type:line|distance:90]造成[[/r 6d8[fire]]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。3持续火焰伤害。</li>\n<li><strong>上等炽火胶</strong>：喷火器对@Template[type:line|distance:120]造成[[/r 10d8[fire]]]伤害（@Check[type:reflex|dc:37|basic:true]豁免）。4持续火焰伤害。\n\n</li>\n</ul>",
+            "name": "炼金喷火器 Alchemist's Flamethrower"
+        },
+        "Bone Dreadnought Plate": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这套骨质要塞甲是炼金术的杰作。盔甲有一个容器，可以容纳一枚磁石炸弹（lodestone bomb，44页），需要3个交互动作来装填。装填后的骨制无畏甲可以被启动， 让炸弹可以移动铰接在盔甲上的甲片，提供各种各样的保护，赋予你寒冷、电击、火焰、穿刺和挥砍抗力，数值等同于装填的磁石炸弹的溅射伤害。此效果持续20分钟，但是每次当你被造成这些伤害类型的攻击命中时，持续时间都会减少1分钟。一旦启动，盔甲无法取消启动。护甲在此期间会消耗此时炸弹，并且在安装新的磁石炸弹前不能再次启动。</p>",
+            "name": "骨制无畏甲 Bone Dreadnought Plate"
+        },
+        "Collar of the Shifting Spider": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 交互</p>\n<p>这个吓人的项圈有个中空的中心管，末端是两枚蜘蛛尖牙一般的金属尖。项圈以填充一瓶炼金突变药剂，这需要一个交互动作。作为一个自由动作，当你投掷先攻时，你可以启动项圈，金属尖牙会刺入你的颈部，造成[[/r 1[piercing]]]伤害，并将突变药剂直接注射到你的血液中。这和你通常喝下突变药剂的效果相同，但由于直接给药的方式，突变药剂的持续时间减半。</p>",
+            "name": "百变蜘蛛项圈 Collar of the Shifting Spider"
+        },
+        "Cooperative Waffles (Greater)": {
+            "description": "<p><strong>启动</strong> 10分钟 (交互)</p>\n<p>用华夫饼烙铁上简单煎煎后加上炼金糖浆和复合黄油后，并在分享同一批协作华夫饼时强化了人们的协作精神。你可以与另一名生物同时享用协作华夫饼。你们需各吃完自己那一半的华夫饼以启动之，当其中一人对另一人使用跟随专家探索期行动时，其所获得的环境加值会提高1点。该好处同时也会影响到成功协助到一次技能检定时。该华夫饼将持续到24小时或是你们的下次每日准备时，取其先者。你只能与一个生物分享同一个华夫饼；若你们当中有人再次享用了华夫饼，之前所享用的华夫饼效果将会消失。</p>",
+            "name": "强化协作华夫饼 Cooperative Waffles (Greater)"
+        },
+        "Living Leaf Weave": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这套织叶衣经过特别修改，可以代谢炼金化合物中的催化剂。盔甲有一个特殊容器，可以装下一剂生命灵药，需要3个交互动作来安装。装填之后的织叶衣可以被启动，从护甲上长出滑动的藤蔓，你在@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}动作的运动检定、你对抗擒拿、@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}或@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}的强韧DC、以及你对抗@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}的反射DC上赋予灵药的物品加值。效果持续3轮，消耗生命灵药，一旦反应开始，就无法取消启动。</p>",
+            "name": "活化织叶衣 Living Leaf Weave"
+        },
+        "Magnetic Shield": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这面钢盾周围被铜环环绕。握把附近的两个电探针可以插入一瓶中等（或更高等级）的瓶装闪电，需要3个交互动作来完成安装。装填之后的磁化盾可以被启动，转变为电磁铁。当一面启动的磁化盾被举起时，盾牌给与的环境加值在面对金属武器进行的攻击时增加1点。如果你在敌人以上述武器攻击你时使用盾牌格挡，你针对该武器的@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}尝试还有+1物品加值，直到你的下个回合结束。护盾能保持3轮充能，此效果会消耗瓶装闪电，一旦反应开始，就无法取消启动。</p>",
+            "name": "磁化盾 Magnetic Shield"
+        },
+        "Ooze Skin": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这件皮甲用泥怪的提取物处理过，这些泥怪提取物可以在酸液的刺激下恢复活性。护甲的容器可以装填一枚强酸瓶，需要3个动作装填。装填后的泥怪外皮可以被启动，让皮甲表面产生光滑的原生质，在@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}和@UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{挤入空间 Squeeze}检定上赋予强酸瓶的物品加值。原生质也会在被触碰时刺激皮肤，导致任何擒抱或活吞你的生物还会受到强酸瓶的溅射伤害。泥怪外皮保持活性的轮数等于装填的强酸瓶的等级。此效果会消耗强酸瓶，一旦反应开始，就无法取消启动。</p>",
+            "name": "泥怪外皮 Ooze Skin"
+        },
+        "Poison Concentrator (Lesser)": {
+            "description": "<p>这种压缩装置可以把两份毒药浓缩。作为一个具有操纵特征的10分钟活动，你能使用毒药浓缩器将两份不超过4级的相同炼金毒药组合在一起，创造一个单一的浓缩版毒药，其DC有+1物品加值。</p>",
+            "name": "次等毒药浓缩器 Poison Concentrator (Lesser)"
+        },
+        "Poison Concentrator (Moderate)": {
+            "description": "<p>这种压缩装置可以把两份毒药浓缩。作为一个具有操纵特征的10分钟活动，你能使用毒药浓缩器将两份不超过9级的相同炼金毒药组合在一起，创造一个单一的浓缩版毒药，其DC有+1物品加值。</p>",
+            "name": "中等毒药浓缩器 Poison Concentrator (Moderate)"
+        },
+        "Powered Full Plate": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>只要有电力供应，斯塔西亚驱动器就能帮助这套全身甲的四肢自行移动。胸部装甲板上的一个腔室内可以容纳一瓶瓶装闪电，需要3个交互动作装填。装填完毕的全身甲可以被启动，让全身甲的力量需求减少，数值为1+装填炸弹的物品加值。基于修正之后的力量需求，护甲通常情况下的减值扔适用。除此之外，你在@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}、@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}、@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}和@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}时的运动检定得到瓶装闪电的物品加值。这些效果持续10分钟。护甲在此期间消耗瓶装闪电，并且安装新的瓶装闪电之前无法再次启动。</p>",
+            "name": "动力全身甲 Powered Full Plate"
+        },
+        "Remote Trigger": {
+            "name": "遥控引爆器 Remote Trigger",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>该引爆器使用暴雷石和水晶通过谐波共振远程引爆炼金炸弹。当引爆器的开关被翻开时，它会发出次声波脉冲，在30分钟内，触发器旁边放置的最多3个炼金炸弹会慢慢同调（引爆器的同调可以在每日准备期间完成）。你稍后可以通过启动引爆器来引爆一个或多个已经同调的炸弹，只要它们位于你60尺内。以此法引爆的炸弹会如同对所在方格目标命中失败一样，造成溅射伤害。</p>"
+        },
+        "Sun Dazzler": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这根金属管一段有一组复杂的透镜和棱镜，另一端有个盖子。盖子打开之后可以装填@UUID[Compendium.pf2e.equipment-srd.y4WJY8rCbY6d1MET]{日光杖 Sunrod}，并使用三个动作进行固定。装载日光杖的眩光杖可以被启动，在一次聚焦闪光中将日光杖烧成灰烬，产生@Template[type:cone|distance:30]闪光。范围内所有生物必须通过@Check[type:fortitude|dc:24]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，或直到它花费一个交互动作揉眼睛，结束目盲状态。</p>\n<p><strong>大失败</strong> 生物目盲1轮。</p>",
+            "name": "眩光杖 Sun Dazzler"
+        },
+        "Aged Assassin Vine Wine": {
+            "name": "陈年杀人藤果酒 Aged Assassin Vine Wine",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>用杀人藤果浆酿酒具有相当的风险，但其所酿出的红宝石色液体层次丰富且浓郁。在果酒发酵时所加入的炼金试剂令果酒与周遭环境充分结合，并使饮用者也成为其中一员。在饮用了杀人藤果酒后的一分钟内，你获得30尺的震颤感知。</p>\n<p>花费数年时间陈化，又或是透过炼金术手段陈化的果酒具有更加复杂层次的口感，且能与环境结合的更加紧密。当你饮用这类果酒时，在你@Template[type:emanation|distance:20]范围内的植被会扭曲而成为困难地形，这将持续至你的下回合开始时结束。</p>"
+        },
+        "Assassin Vine Wine": {
+            "name": "杀人藤果酒 Assassin Vine Wine",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>用杀人藤果浆酿酒具有相当的风险，但其所酿出的红宝石色液体层次丰富且浓郁。在果酒发酵时所加入的炼金试剂令果酒与周遭环境充分结合，并使饮用者也成为其中一员。在饮用了杀人藤果酒后的一分钟内，你获得30尺的震颤感知。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.QCqYiSIR9DVPAHgR]{效果: 杀人藤果酒}</p>"
+        },
+        "Auric Noodles": {
+            "description": "<p><strong>启动</strong> 10分钟（交互）</p>\n<p>黄金面通常会在煮熟后放在平底锅中煎炸一段时间，随后拌上切好的蔬菜片和含有炼金试剂成份的酱汁而制成。在食用面条后的24小时或直到你次日准备前（取其先者）将增强感知魔法的能力。你在辨识魔法检定时获得＋1物品加值，且在进行@UUID[Compendium.pf2e.actionspf2e.Yb0C1uLzeHrVLl7a]{侦测魔法 Detect Magic}探索期行动时可以全速移动。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.uijpoXaiKXcCYrSD]{效果: 黄金面}</p>",
+            "name": "黄金面 Auric Noodles"
+        },
+        "Diplomat's Charcuterie": {
+            "description": "<p><strong>启动</strong> 10分钟（交互）</p>\n<p>在政治集会上，外交官的熟食盘通常是把肉类、奶酪、坚果、水果和其他手拿食物和炼金试剂混合在一起，以让食用它们的人互相产生友好的观感。盘子里的食物因厨师及口味的不同而有所差异，从林诺姆诸王国的香肠与硬奶酪到苏威雅的辣椒奶酪块与烟熏杏仁拼盘。在食用熟食盘以启动它后，你在进行@UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{建立印象 Make an Impression}的交涉检定以及@UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{察言观色 Sense Motive}的察觉检定中获得＋1物品加值。该加值将持续到24小时或是你的下次每日准备时，取其先者。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.inqXnzrqYzbUBuOj]{效果: 外交官的熟食盘}</p>",
+            "name": "外交官的熟食盘 Diplomat's Charcuterie"
+        },
+        "Firefoot Popcorn": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>当你食用焰足爆米花后一分钟内，你可以@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}的距离翻倍。你也可以只用一个动作来进行@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或是@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。并且在进行动作时，你无需进行跳远前的跑动助跑动作（也不会因此而自动失败）。</p>\n<p>每当你跳跃Leap10尺或更展长距离时，你的脚底就会发出能在100尺内听到的爆裂声，并且你离开的位置会被强烈的热浪所包围。在1分钟内，该方格会变为危害地形并对所有进入其中的生物造成[[/r 1d6[fire]]]伤害。</p>",
+            "name": "焰足爆米花 Firefoot Popcorn"
+        },
+        "Fury Cocktail (Moderate)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>狂怒鸡尾酒是一种由朗姆酒与姜汁混合而成的姜汁啤酒。据传其起源于野蛮人主题节日中专门负责贩卖炼金饮料的蜜酒会所。</p>\n<p><strong>好处</strong> 你在近战攻击骰上获得+3物品加值并根据制作时所选择的添加剂获得额外效果。持续时间为一小时。</p>\n<ul>\n<li><strong>兽性</strong> 柠檬汁与磨成粉的爪子或钳子混入鸡尾酒当中。你从以下属于搏击武器组的非武装攻击当中选择一项获得，造成[[/r 1d6[piercing]]]伤害的啃咬攻击或造成[[/r 1d4[slashing]]]伤害且具有灵巧特征的爪抓攻击。</li>\n<li><strong>双倍</strong> 这个鸡尾酒只是加入了双倍的姜汁和朗姆酒来使其更加强大。你获得1点物理伤害抗性。中等狂怒鸡尾酒会提升该抗性到2点，而高等狂怒鸡尾酒则会提升到5点。</li>\n<li><strong>悲恸</strong> 加入了几片花瓣以增添强烈的香气。你获得1点负能量伤害抗性，若你拥有负能量治疗，则改为获得1点正能量抗性。中等狂怒鸡尾酒会提升该抗性到2点，而高等狂怒鸡尾酒则会提升到5点。</li>\n<li><strong>疑论</strong> 加一点苦味酒会让这款酒的口感更加复杂。你在进行豁免以对抗魔法时获得＋1物品加值。中等狂怒鸡尾酒会提升该加值到2点，而高等狂怒鸡尾酒则会提升到3点。</li>\n<li><strong>泰坦</strong> 这款鸡尾酒混入了香橙汁与磨成粉的巨人头发。如果你是中型或更小体型，你获得以下效果：你变为大型、获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}以及触及增加5尺（或者10尺，如果初始为超小型）。</li>\n<li><strong>龙皮</strong> 石榴汁与元素试剂作为添加剂混入酒中。你获得1点强酸、寒冷、电击、火焰和毒液伤害抗性。中等狂怒鸡尾酒会提升该抗性到5点，而高等狂怒鸡尾酒则会提升到10点。</li>\n</ul>\n<p><strong>缺陷</strong> 你在AC上获得-1减值和在反射豁免上获得-2减值。</p>",
+            "name": "中等狂怒鸡尾酒 Fury Cocktail (Moderate)"
+        },
+        "Insight Coffee (Greater)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>一种常见于学习过炼金术调查员们的选择，灵感咖啡在渗滤时灌注了炼金调味料。在你饮用灵感咖啡后一小时内，若你拥有策士之击职业能力，则你可将来自于该能力的额外伤害改为d8而非原先的d6。此外，你在使用对应技能以进行回忆知识检定时获得+4物品加值，对应技能由咖啡被制作所使用的配方所决定。</p>\n<ul>\n<li><strong>双重浓缩</strong> 宗教</li>\n<li><strong>榛果拿铁</strong> 自然</li>\n<li><strong>摩卡咖啡</strong> 奥法</li>\n<li><strong>香草拿铁</strong> 社群</li>\n<li><strong>南瓜拿铁</strong> 神秘</li>\n<li><strong>太妃咖啡</strong> 医疗</li>\n</ul>",
+            "name": "高等灵感咖啡 Insight Coffee (Greater)"
+        },
+        "Insight Coffee (Moderate)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>一种常见于学习过炼金术调查员们的选择，灵感咖啡在渗滤时灌注了炼金调味料。在你饮用灵感咖啡后一小时内，若你拥有策士之击职业能力，则你可将来自于该能力的额外伤害改为d8而非原先的d6。此外，你在使用对应技能以进行回忆知识检定时获得+3物品加值，对应技能由咖啡被制作所使用的配方所决定。</p>\n<ul>\n<li><strong>双重浓缩</strong> 宗教</li>\n<li><strong>榛果拿铁</strong> 自然</li>\n<li><strong>摩卡咖啡</strong> 奥法</li>\n<li><strong>香草拿铁</strong> 社群</li>\n<li><strong>南瓜拿铁</strong> 神秘</li>\n<li><strong>太妃咖啡</strong> 医疗</li>\n</ul>",
+            "name": "中等灵感咖啡 Insight Coffee (Moderate)"
+        },
+        "Journeybread (Power)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>行路面包含有多种水果、坚果和具有炼金术功效的谷物。吃一个行路面包能够满足你一天内所有食物和水的需求。若你在此前一星期内没有摄取到正常食物的话，你会对行路面包临时免疫，这将持续到你在连续的24小时如同正常饮食般的进食正常食物与喝水后中止。</p>\n<p>除了行路面包的常规好处外，强效行路面包给予你在@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}、@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}和@UUID[Compendium.pf2e.actionspf2e.c8TGiZ48ygoSPofx]{游泳 Swim}的运动检定以及在对抗恶心状态的强韧豁免中获得＋1物品加值。此外，你能够强行军的分钟数等同于你的体质调整值*20。这些好处将持续4小时。</p>",
+            "name": "强效行路面包 Journeybread (Power)"
+        },
+        "Mender's Soup": {
+            "description": "<p><strong>启动</strong> 10分钟 (交互)</p>\n<p>这碗热腾腾的汤以肉汤为基础，通常加入块茎、韭菜、辛辣香料与炼金试剂而熬成，还可以继续加入牲畜的肉提震其味道。如果一项棘手的工作被提上日程时，市政局会成批的向工人们提供修补工之汤。在饮用这碗汤之后，其持续时间将为24小时或直到你次日准备前（取其先者）。在此期间，你在修理动作中的手艺检定获得＋1物品加值，并且成功修理物品后会为物品额外恢复5点生命值。</p>\n<p>若你在检定手艺技能的制作行动所包括的整个时间段中均饮用过修补工之汤以维持持续时间的话的话（通常是在4天的制作时间内每一天都喝一碗汤），该物品加值也能应用上这次制作检定中。</p>",
+            "name": "修补工之汤 Mender's Soup"
+        },
+        "Missive Mint": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种薄荷有层白垩色外壳，除非有人在一次DC为@Check[type:crafting|dc:15]的辨识炼金术行动中成功，否则其会被辨识为一种普通的薄荷。若制作者拥有强效炼金术的职业能力，则该DC将为制作者的职业DC。该薄荷的制作者在制作时可在其中录入至多25词的信息。当有人在嚼这个薄荷时，白垩色外壳中的泡泡将会被移除，令他以嘶嘶声的形式听到薄荷中所保存的信息，聆听该信息所需要的时间和正常语速相同。食用薄荷者不能知道该信息是由谁录下，记录者的声线如何，以及该信息是给谁的。</p>",
+            "name": "通信薄荷 Missive Mint"
+        },
+        "Phantom Roll": {
+            "description": "<p><strong>启动</strong> 10分钟（交互）</p>\n<p>幻影卷是由透明的食用淀粉纸包着细长绿色蔬菜面，随后用炼金术处理后再淋上酱汁才制作完成。当你食用幻影卷后，你在@UUID[Compendium.pf2e.actionspf2e.IE2nThCmoyhQA0Jn]{避人耳目 Avoid Notice}探索期行动给予的隐秘检定中获得＋1物品加值。你也可以在避人耳目时全速移动，又或者是选择半速移动以让调查或侦察作为第二个探索期行动。这些效果的持续时间为在你食用幻影卷后的24小时内或直到你次日准备前（取其先者）。</p>",
+            "name": "幻影卷 Phantom Roll"
+        },
+        "Poison Fizz (Greater)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>由蜂蜜和炼金试剂混合而成，毒物爆炸糖是一种活跃的甜方糖，会在你的口中发出噼啪声。在1小时内，你获得对毒素伤害的抗性并在对抗毒素和被石化的豁免检定时获得+3物品加值。</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (毒素)</p>\n<p><strong>效果</strong> 你咬碎毒爆糖以向@Template[type:cone|distance:15]距离内喷射其中的毒液和绿薄荷。其会造成[[/r 5d6[poison]]]伤害（@Check[type:reflex|dc:34|basic:true|traits:poison]豁免）。豁免大失败的生物同时会获得@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}直到你的下回合开始时结束，且其会临时免疫来自于毒爆糖的目盲状态1小时。</p>",
+            "name": "高等毒爆糖 Poison Fizz (Greater)"
+        },
+        "Poison Fizz (Lesser)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>由蜂蜜和炼金试剂混合而成，毒物爆炸糖是一种活跃的甜方糖，会在你的口中发出噼啪声。在1小时内，你获得对毒素伤害的抗性并在对抗毒素和被石化的豁免检定时获得+2物品加值。</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (毒素)</p>\n<p><strong>效果</strong> 你咬碎毒爆糖以向@Template[type:cone|distance:15]距离内喷射其中的毒液和绿薄荷。其会造成[[/r 3d6[poison]]]伤害（@Check[type:reflex|dc:24|basic:true|traits:poison]豁免）。豁免大失败的生物同时会获得@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}直到你的下回合开始时结束，且其会临时免疫来自于毒爆糖的目盲状态1小时。</p>",
+            "name": "次等毒爆糖 Poison Fizz (Lesser)"
+        },
+        "Saboteur's Friend": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种被委婉地称为怠工之友的毒素无论是看起来，闻起来还是吃起来都像一块清爽可口的巧克力块。你在巧克力中加入了具强通便用途的试剂。怠工之友只会使人失去行动力，而非造成伤害。与某些毒素不同的是，怠工之友造成的恶心状态可被降低（但因豁免而改变至更高或更低的阶段时，依旧如同像正常的毒素一样从例表中获得相应的恶心状态）</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:20]</p>\n<p><strong>潜伏期</strong> 10分钟</p>\n<p><strong>最大持续时间</strong> 1小时</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (10分钟)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (10分钟)</p>\n<p><strong>阶段3</strong> 力竭1、@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3} (10分钟)</p>",
+            "name": "怠工之友 Saboteur's Friend"
+        },
+        "Pucker Pickle": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>拥有刺鼻气味但美味可口的泡菜是地精炼金术士防止自己被更大体型生物吃掉而发明出来的。在你吃了泡菜后1小时内，你闻起来像一条很难闻的腌黄瓜。当一名生物使用能够尝到你身体的攻击（例如啃咬打击）对你打击命中后，其在接下来的所有能尝到你的攻击检定中承受-2状态减值，这其中包括用啃咬攻击对你进行擒抱和摔绊，又或者对你进行活吞。而动物这类的生物往往会在尝到你的味道后选择另一个目标。任何包卷或活吞你的生物均会获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。若其以一个动作干呕来减少恶心值的话，你可以以反应动作进行一次@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}。</p>",
+            "name": "醃渍泡菜 Pucker Pickle"
+        },
+        "Scholar's Drop": {
+            "description": "<p>这种糖果最初被卡塔佩什的大学生们用于在其学术竞争中取得优势，但现在已经传遍了格拉里昂全境。这种硬皮糖用柠檬和绿茶制作并具有相当清爽的口感。在1小时内，你在对抗给予@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态的豁免检定获得＋1物品加值。</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">1</span></p>\n<p><strong>需求</strong> 你处于疲乏状态</p>\n<hr />\n<p><strong>效果</strong> 在10分钟内无视你的疲乏状态。这颗糖将会失效，并且在10分钟后你将临时免疫学者小食1小时。若你在一天之内使用该次要效果高达三次，你将临时免疫学者小食直到你进行一次完整的休息后。</p>",
+            "name": "学者小食 Scholar's Drop"
+        },
+        "Silver Crescent (Greater)": {
+            "description": "<p>银新月被内有了辣味的罗望子和青柠等香料，它最初是用来帮助食用者对抗不死生物的。在1小时内，你如同火把一样散发出冷白色的光芒，以及你在对抗嗅觉效果的豁免检定时获得+3物品加值。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。</p>\n<p><strong>次要效果</strong> <span class=\"\\&quot;pf2-icon\\&quot; pf2-icon\">1</span></p>\n<hr />\n<p><strong>效果</strong> 一道光束降落在你所选择120尺之内的一5尺方格中。任何位于此方格中的生物需尝试一次@Check[type:reflex|dc:35|basic:true]豁免来对抗受到[[/r 9d6[positive]]]正能量伤害，以及豁免失败者将会@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到它下回合结束时。该伤害来源同时被视为银制以计算弱点和抗性。随后银新月失效。</p>",
+            "name": "高等银新月 Silver Crescent (Greater)"
+        },
+        "Silver Crescent (Lesser)": {
+            "description": "<p>银新月被内有了辣味的罗望子和青柠等香料，它最初是用来帮助食用者对抗不死生物的。在1小时内，你如同火把一样散发出冷白色的光芒，以及你在对抗嗅觉效果的豁免检定时获得+1物品加值。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。</p>\n<p><strong>次要效果</strong> <span class=\"\\&quot;pf2-icon\\&quot; pf2-icon\">1</span></p>\n<hr />\n<p><strong>效果</strong> 一道光束降落在你所选择120尺之内的一5尺方格中。任何位于此方格中的生物需尝试一次@Check[type:reflex|dc:20|basic:true]豁免来对抗受到[[/r 4d6[positive]]]正能量伤害，以及豁免失败者将会@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到它下回合结束时。该伤害来源同时被视为银制以计算弱点和抗性。随后银新月失效。</p>",
+            "name": "次等银新月 Silver Crescent (Lesser)"
+        },
+        "Sprite Apple (Chartreuse)": {
+            "description": "<p><strong>启动</strong> 1分钟 (交互)</p>\n<p>一层泡泡糖复盖着妖精果。在你食用妖精果后10分钟内，你在@Template[type:emanation|distance:20]内散发出明亮光照（以及接下来的20尺产生昏暗光照）。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。该光照的颜色由妖精果外层的泡泡糖所决定。而不同类型的妖精果会使明亮光照内的生物获得不同的效果。</p>\n<p>位于明亮光照范围内的生物能够更进一步感知到自然，给予其在自然检定以及与动物和植物相关的交涉检定中（若其有野性认同职业能力或是类似能力的话）获得＋1物品加值。</p>",
+            "name": "黄绿色妖精果 Sprite Apple (Chartreuse)"
+        },
+        "Sprite Apple (Teal)": {
+            "description": "<p><strong>启动</strong> 1分钟 (交互)</p>\n<p>一层泡泡糖覆盖着妖精果。在你食用妖精果后10分钟内，你在@Template[type:emanation|distance:20]内散发出明亮光照（以及接下来的20尺产生昏暗光照）。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。该光照的颜色由妖精果外层的泡泡糖所决定。而不同类型的妖精果会使明亮光照内的生物获得不同的效果。</p>\n<p>明亮光照范围内的生物现在无比冷静，他们在对抗恐惧效果的豁免检定获得＋1物品加值。</p>",
+            "name": "蓝绿妖精果 Sprite Apple (Teal)"
+        },
+        "Sprite Apple (Golden)": {
+            "description": "<p><strong>启动</strong> 1分钟 (交互)</p>\n<p>一层泡泡糖复盖着妖精果。在你食用妖精果后10分钟内，你在@Template[type:emanation|distance:20]内散发出明亮光照（以及接下来的20尺产生昏暗光照）。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。该光照的颜色由妖精果外层的泡泡糖所决定。而不同类型的妖精果会使明亮光照内的生物获得不同的效果。</p>\n<p>明亮光照范围内生物变得天真且轻信他人，使他们在对抗交涉检定的意志DC上获得-1物品减值。</p>",
+            "name": "金妖精果 Sprite Apple (Golden)"
+        },
+        "Warding Punch": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>护身宾治发源于瑟西隆，是一种红酒或白酒与水果、其他酒精饮料和炼金试剂混合而成的鸡尾酒。制作时所使用的炼金试剂决定了你在饮用后的10分钟内，在对抗对应学派法术的豁免时获得＋1物品加值。</p>\n<ul>\n<li><strong>啤酒或果酒</strong> 变化系</li>\n<li><strong>棕色烈酒</strong> 死灵系</li>\n<li><strong>浅色烈酒</strong> 塑能系</li>\n<li><strong>水果甜酒</strong> 防护系</li>\n<li><strong>果汁</strong> 幻术系</li>\n<li><strong>坚果甜酒</strong> 咒法系</li>\n<li><strong>香料烈酒</strong> 惑控系</li>\n</ul>",
+            "name": "护身宾治 Warding Punch"
+        },
+        "Witch's Finger": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>正如其名，女巫之指看起来就像手指状的冰棍，内有红浆果因此呈血红色。一种流行的说法宣称这种甜品由一名伊利森冬女巫所创造，但这故事其实是虚构的；这其实是一名新斯泰特文的有志雪糕商所发明的，而那个故事则是作为一种营销手段被其创造并传播出去。当你一口咬下这根冰棍后反而会觉得暖和。你在1小时内获得3点寒冷伤害抗性，此外你会在8小时内无效因严寒环境而受到的伤害以及将极寒环境伤害视为严寒环境伤害计算。</p>",
+            "name": "女巫之指 Witch's Finger"
+        },
+        "Colorful Coating (Orange)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>橙色涂层含有酸性混合物。当它干燥后，腐蚀性成分会从涂层里渗出。方格变成危害地形，对任何穿过方格的生物造成[[/r 1d4[acid]]]伤害。一个生物每轮只会受到一次酸液伤害。</p>",
+            "name": "橙色涂层 Colorful Coating (Orange)"
+        },
+        "Colorful Coating (Red)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>红色涂层含有橡胶化合物，能将其覆盖的表面变为蹦床。生物或物体落在涂有红色涂层的方块上时，不会受到坠落伤害，而是反弹至原来坠落高度的一半。如果生物垂直落下，它反弹几次之后就安全停止了。如果它是水平移动的，它会在相同方向上再次弹跳，距离由GM决定。如果涂层被涂在墙上，被推撞或推离到墙壁上的生物会回弹一半的距离，并且不会因为撞墙而受到任何伤害。涂在天花板上的话，红色涂层只有在非常罕见的情况下才有用，比如反向重力。</p>",
+            "name": "红色涂层 Colorful Coating (Red)"
+        },
+        "Colorful Coating (Yellow)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>黄色涂层含有各种可以填充小缝隙的化合物，硬化后能增加地面的摩擦力，让人更容易在方格上移动。在受影响的方格上，涂层能减轻让人打滑的困难地形，例如冰面或油脂；这会消除困难地形，将高等困难地形减少为困难地形，并将不平整地面减少为高等困难地形。涂层不能影响由不属于表面的特征或效果引起的困难地形，例如人群、灌木丛、风、魔法之类的。由GM裁定黄色涂层是否能影响某个表面的地形。</p>\n<p>黄色涂层也能让墙面或天花板更容易攀爬。在涂层表面上攀爬时它赋予检定+2环境加值。</p>",
+            "name": "黄色涂层 Colorful Coating (Yellow)"
+        },
+        "Emetic Paste (Lesser)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened}的生物吞咽困难，所以你启动催吐膏药的时候可以将其涂在你的或者你触及范围内某个恶心生物的喉咙处。膏药可以让恶心的生物能更容易地恢复，让他能立即尝试一次用于结束恶心状态的强韧检定。膏药能赋予目标在本次豁免和之后1小时内所有用于减轻恶心状态的强韧豁免上的+2物品加值。</p>",
+            "name": "次等催吐膏药 Emetic Paste (Lesser)"
+        },
+        "Healing Vapor (Lesser)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>治疗蒸汽是一种物质，通过灌注各种常见的治疗和恢复试剂再将其雾化，加速自然恢复过程。当从密封容器里施放出来时，这些蒸汽会填充@Template[type:burst|distance:5]区域，持续10分钟，并且能同时影响最多4个活着的生物。最初四个生物之外的生物不会获得任何好处，但是如果一个生物在持续时间结束前离开，一个新的生物就可以从蒸汽中获益。受益于治疗蒸汽的生物每2分钟获得1点生命值。当受到蒸汽影响时，生物在对抗疾病和毒素的豁免检定中得到+1物品加值。如果多个治疗蒸汽区域重叠，则只有最强的治疗蒸汽会对重叠范围内的生物起效。强风会将雾气吹散，使其在风吹起时失效。</p>",
+            "name": "次等治疗蒸汽 Healing Vapor (Lesser)"
+        },
+        "Healing Vapor (Major)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>治疗蒸汽是一种物质，通过灌注各种常见的治疗和恢复试剂再将其雾化，加速自然恢复过程。当从密封容器里施放出来时，这些蒸汽会填充@Template[type:burst|distance:5]区域，持续10分钟，并且能同时影响最多4个活着的生物。最初四个生物之外的生物不会获得任何好处，但是如果一个生物在持续时间结束前离开，一个新的生物就可以从蒸汽中获益。受益于治疗蒸汽的生物每分钟获得3点生命值。当受到蒸汽影响时，生物在对抗疾病和毒素的豁免检定中得到+3物品加值。如果多个治疗蒸汽区域重叠，则只有最强的治疗蒸汽会对重叠范围内的生物起效。强风会将雾气吹散，使其在风吹起时失效。</p>",
+            "name": "上等治疗蒸汽 Healing Vapor (Major)"
+        },
+        "Revealing Mist (Greater)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>显形雾是保存在密封喷雾瓶中的炼金混合物，喷洒是会在@Template[type:cone|distance:30]范围内产生粘稠的化学雾气。它不会影响能见度，但会导致该区域中@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的生物变为@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，而不是无踪。根据GM的判断，水中或有其他会影响雾气扩散的区域，显形雾可能无效。显形雾区域能持续1分钟时间，或直到有强风将其吹散，以先发生的为准。</p>",
+            "name": "高等显形雾 Revealing Mist (Greater)"
+        },
+        "Revealing Mist (Lesser)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>显形雾是保存在密封喷雾瓶中的炼金混合物，喷洒是会在@Template[type:cone|distance:15]范围内产生粘稠的化学雾气。它不会影响能见度，但会导致该区域中@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的生物变为@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，而不是无踪。根据GM的判断，水中或有其他会影响雾气扩散的区域，显形雾可能无效。显形雾区域能持续1分钟时间，或直到有强风将其吹散，以先发生的为准。</p>",
+            "name": "次等显形雾 Revealing Mist (Lesser)"
+        },
+        "Sense-Dulling Hood (Greater)": {
+            "name": "高等感官迟钝面罩 Sense-Dulling Hood (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>有时候，敌人危险的特殊能力是让相对标准的感官成为不利因素。从食腐怪的恶臭到鹰身女妖的歌声，许多生物都会利用猎物的感官对付自己。感官迟钝面罩是一种宽大的一次性面罩，从密封包装中取出之后可以裹在头上。根据面罩的类型，它能让你在一小时内，对听觉、嗅觉和视觉效果的豁免有+4物品加值。因为它让你的感官变得迟钝又不剥夺你的感官，所以裹上面罩期间，察觉检定还会有-1减值。</p>"
+        },
+        "Healing Vapor (Moderate)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>治疗蒸汽是一种物质，通过灌注各种常见的治疗和恢复试剂再将其雾化，加速自然恢复过程。当从密封容器里施放出来时，这些蒸汽会填充@Template[type:burst|distance:5]区域，持续10分钟，并且能同时影响最多4个活着的生物。最初四个生物之外的生物不会获得任何好处，但是如果一个生物在持续时间结束前离开，一个新的生物就可以从蒸汽中获益。受益于治疗蒸汽的生物每分钟获得1点生命值。当受到蒸汽影响时，生物在对抗疾病和毒素的豁免检定中得到+1物品加值。如果多个治疗蒸汽区域重叠，则只有最强的治疗蒸汽会对重叠范围内的生物起效。强风会将雾气吹散，使其在风吹起时失效。</p>",
+            "name": "中等治疗蒸汽 Healing Vapor (Moderate)"
+        },
+        "Soothing Powder (Lesser)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span></p>\n<p>舒缓粉是一种用于阻止特定类型持续伤害的药物。每种伤害类型都需要不同配方，最受欢迎的是流血舒缓粉、毒素舒缓分、火焰舒缓分和酸液舒缓粉。当你启动舒缓粉时将粉末洒在自己或身边的其他生物上。目标可以立即尝试一个新的用于移除持续伤害的的纯骰检定。因为这是特别合适的帮助，粉末能将纯骰DC降低至10。</p>",
+            "name": "次等舒缓粉 Soothing Powder (Lesser)"
+        },
+        "Soothing Powder (Greater)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span></p>\n<p>舒缓粉是一种用于阻止特定类型持续伤害的药物。每种伤害类型都需要不同配方，最受欢迎的是流血舒缓粉、毒素舒缓分、火焰舒缓分和酸液舒缓粉。当你启动舒缓粉时将粉末洒在自己或身边的其他生物上。目标可以立即尝试一个新的用于移除持续伤害的的纯骰检定。因为这是特别合适的帮助，粉末能将纯骰DC降低至10。</p>\n<p>除上述效果之外，粉末持续1分钟。结束持续伤害的纯骰DC被降低，因为这是特别有效的帮助。</p>",
+            "name": "高等舒缓粉 Soothing Powder (Greater)"
+        },
+        "Sparkler": {
+            "description": "<p><strong>获取条件</strong> 烟花棒在天夏和伏陀罗很常见，可以由那些专门制作烟花的人制造。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>烟花棒发出彩色的火花，燃烧1分钟。它在10尺半径范围内投下明亮光照（在接下来的10尺范围内投下昏暗光照）。当烟花棒燃烧时，你可以将它作为临时武器使用，在命中时造成1点火焰伤害。重击时目标还会@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p>你能将烟花棒靠近易燃物，这可以作为你启动烟花棒的交互动作的一部分，也可以在烟花棒燃烧时花费一个交互动作。如果你如此做，烟花棒会点燃它，就像火柴一样。</p>",
+            "name": "烟花棒 Sparkler"
+        },
+        "Bottled Roc": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>瓶子里装着一只羽毛完好无损的被缩小的鸟。打开瓶子之后，里面的东西会重新变为一只巨型大鹏雕像，它可以出现在空中而不是地面上。大鹏尝试@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}最多2个生物，然后向上方飞行最多90尺，最后松开生物。这些生物必须在大鹏15尺内，大鹏才能攫抓他们；如果任何其中一个生物不是自愿被攫抓的，大鹏必须以[[/r 1d20+17 #Grapple]]{+17}运动检定尝试@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}，否则无法抓住对方。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一具大鹏的尸体。</p>",
+            "name": "瓶装大鹏 Bottled Roc"
+        },
+        "Ghost Ampoule": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>一抹灵质在这个玻璃容器内抽动，发出幽幽蓝光。当你打开它时，它会形成一个已故魂灵的回响，外观看起来像一个中型的幽灵。当你启动它时，你可以将安瓿瓶扔到离你最远30尺的地方。幽灵发出最后的悲叹，迫使@Template[type:emanation|distance:15]范围内除了你的每个生物尝试@Check[type:will|dc:18]豁免。如果失败，生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（或大失败则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}）。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一份被摧毁的幽灵的灵质残留。</p>",
+            "name": "幽灵安瓿 Ghost Ampoule"
+        },
+        "Hippogriff in a Jar": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>这罐子里装有一只萎缩的鹫马。打开后，里面的东西会重新变为一个大型鹫马雕像。鹫马可以等待最多1轮，让两个生物其上它，然后飞行最多65尺远，然后再等一轮让背上的生物有时间下马。当鹫马分解时，它背上的生物会在鹫马尸体停止移动的空间内@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一份鹫马的尸体。</p>",
+            "name": "罐中鹫马 Hippogriff in a Jar"
+        },
+        "Kraken Bottle": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p><p>这个瓶子里除了盘绕的触须以外几乎看不到其他任何东西。当打开时，一个巨型海怪会冲出来，它可以出现在水中而不是地面上。它的触须试图@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}60尺触及范围内的4个生物。除非生物通过@Check[type:fortitude|dc:38]豁免，否则被擒抱的生物会被海怪重新移动至它触及范围内的其他空间内。</p>\n<p>如果海怪在水中，它还会施放@Template[type:emanation|distance:80]范围的墨水云。这种云对水体之外的部分没有影响。墨水云里的生物是无踪的，无法使用他的嗅觉感官，并且会暴露在海怪墨水毒之下。墨水云在1分钟之后消散。</p>\n<p>海怪对此毒素免疫。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:39|traits:poison]</p>\n<hr />\n<p><strong>最大持续时间</strong> 10轮</p>\n<p><strong>阶段1</strong> [[/r 3d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 4d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1轮)</p>\n<hr />\n<p><strong>制造需求</strong> 提供一具海怪尸体。</p>",
+            "name": "海怪瓶 Kraken Bottle"
+        },
+        "Mukradi Jar": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>一只小型的三头蜈蚣，它的甲壳皱缩且苍白，被盘绕着放在这个罐子里。当你打开罐子时，它中空的甲壳会变为巨型。它会释放三种吐息中的一种，由你选择。区域内的每个生物必须尝试DC 34基础反射豁免。</p>\n<ul>\n<li><strong>酸液巨口</strong> (酸液) 10尺宽，@Template[type:line|distance:60]的直线酸液，造成[[/r 12d6[acid]]]伤害（@Check[type:reflex|dc:34|basic:true|traits:acid]）。</li>\n<li><strong>烈焰巨口</strong> (火焰) @Template[type:cone|distance:60]火焰，造成[[/r 12d6[fire]]]伤害（@Check[type:reflex|dc:34|basic:true|traits:fire]）。</li>\n<li><strong>放电巨口</strong> (电击) @Template[type:line|distance:120]闪电，造成[[/r 12d6[electricity]]]伤害（@Check[type:reflex|dc:34|basic:true|traits:electricity]）。</li>\n</ul>\n<hr />\n<p><strong>制造需求</strong> 提供一具三头蜈蚣尸体。</p>",
+            "name": "三头蜈蚣罐 Mukradi Jar"
+        },
+        "Octopus Bottle": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p><p>微型章鱼的触手盘踞在瓶子两侧，掩盖了瓶子里的其他内容。当打开之后，一只超大型章鱼会冲出来，它可以出现在水中而不是地面上。章鱼的触手尝试抓住15尺触及内的一个生物。除非生物通过@Check[type:fortitude|dc:24]豁免，否则被擒抱的生物会被章鱼重新移动至它触及范围内的其他空间内。</p>\n<p>如果章鱼在水中，它还会施放@Template[type:emanation|distance:30]范围的墨水云。这种云对水体之外的部分没有影响。墨水云里的生物是无踪的，无法使用他的嗅觉感官。墨水云在1分钟之后消散。</p>\n<hr />\n<p><strong>制作需求</strong> 提供一具巨章鱼尸体。</p>",
+            "name": "章鱼瓶 Octopus Bottle"
+        },
+        "Tyrant Ampoule": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>一只可怕的暴龙在萎缩后装进了这个小瓶里，它干瘪的身体几乎没有占据瓶内多少空间。当你打开瓶子时，一只巨型的暴龙雕像就会形成，横冲直撞造成破坏。暴龙行走最多40尺。它能移动穿过体型不超过超大型的生物的空间，并对它进入空间的每个生物尝试践踏（Trample），造成[[/r (2d10+12)[bludgeoning]]]伤害，@Check[type:reflex|dc:27|basic:true]豁免。它只能践踏每个生物一次。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一具暴龙尸体。</p>",
+            "name": "暴龙安瓿 Tyrant Ampoule"
+        },
+        "Whirlwind Vial": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>打开这个小瓶会施放一阵狂风，构成一个可怕的超大型元素飓风。元素吹出@Template[type:cone|distance:30]气流。锥形中区域的每个生物必须通过@Check[type:fortitude|dc:28]豁免，否则被吹离元素。被吹飞到固体障碍上的生物会停止移动，然后受到[[/r 4d6[bludgeoning]]]伤害。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推离10尺。</p>\n<p><strong>失败</strong> 生物被推离20尺。</p>\n<p><strong>大失败</strong> 生物被推离10尺然后@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一份死亡的元素飓风的魔法残留物。</p>",
+            "name": "旋风小瓶 Whirlwind Vial"
+        },
+        "Escape Fulu": {
+            "name": "脱身符箓 Escape Fulu",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>触发</strong> 你尝试@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}</p>\n<p><em>脱身符箓</em>是富人常用的护身符，他们会佩戴这种护符来预防被绑架的情形。当你启动该符箓时，在1分钟内，你在用于逃脱的尝试以及用于躲藏和@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}的隐秘检定中获得+2状态加值。</p>"
+        },
+        "Alchemical Chart (Greater)": {
+            "name": "高等炼金图表 Alchemical Chart (Greater)",
+            "description": "<p>这种死板、严格的炼金术图表上有关于如何在快速混合试剂时取得最大化效果的参考笔记。如果你在使用@UUID[Compendium.pf2e.actionspf2e.yzNJgwzV9XqEhKc6]{高速炼金 Quick Alchemy}时持握此图表，你所创造的不超过18级的炼金物品的效力将延长1轮。</p>"
+        },
+        "Alchemical Chart (Lesser)": {
+            "name": "次等炼金图表 Alchemical Chart (Lesser)",
+            "description": "<p>这种死板、严格的炼金术图表上有关于如何在快速混合试剂时取得最大化效果的参考笔记。如果你在使用@UUID[Compendium.pf2e.actionspf2e.yzNJgwzV9XqEhKc6]{高速炼金 Quick Alchemy}时持握此图表，你所创造的不超过4级的炼金物品的效力将延长1轮。</p>"
+        },
+        "Alchemical Chart (Moderate)": {
+            "name": "中等炼金图表 Alchemical Chart (Moderate)",
+            "description": "<p>这种死板、严格的炼金术图表上有关于如何在快速混合试剂时取得最大化效果的参考笔记。如果你在使用@UUID[Compendium.pf2e.actionspf2e.yzNJgwzV9XqEhKc6]{高速炼金 Quick Alchemy}时持握此图表，你所创造的不超过12级的炼金物品的效力将延长1轮。</p>"
+        },
+        "Alchemical Gauntlet": {
+            "name": "炼金铁手套 Alchemical Gauntlet",
+            "description": "<p>炼金铁手套和敌人接触时会发出小型的炼金爆炸。作为一个交互动作，你可以在铁手套手腕附近的金属支架上放置一个炸弹。炸弹必须是能造成能量伤害的，例如强酸瓶、炽火胶、瓶装闪电、霜冻瓶或暴雷石。在接下来用铁手套进行的三次攻击中，除了正常的铁手套伤害外，还能造成炸弹伤害类型的1d4伤害。如果在做出第一次攻击之后，第二次和第三次攻击没有在1分钟内做出，炸弹的能量就会被浪费掉。这些攻击不会造成炸弹的溅射伤害或其他特殊效果，也不会被任何增幅或修改炸弹效果的能力影响。</p>"
+        },
+        "Anathema Fulu": {
+            "name": "咒逐符箓 Anathema Fulu",
+            "description": "<p><strong>持续时间</strong> 1小时</p>\n<p>咒逐符箓起初是被天京的神裔用来削弱古魔，它一共分为4个部分，每张都要贴在东西南北的四个基本方位之一。启动符箓时，需要从后述特征中选择其一：天界、元素、精类、魔族、观察者或不死。若具有该特征的生物在回合开始时位于此区域之内，则必须成功通过@Check[type:fortitude|dc:30]豁免，失败则会陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}，持续至它的下个回合开始为止。大成功时，该生物会在1小时内临时免疫任意咒逐符箓。无论豁免结果如何，若你随后对区域内的这些生物施放放逐术的话，这些生物会由于法术描述中的添加对该生物来说属于禁忌物品的材料成分而在豁免中承受-2减值。符箓就视同为该成分；你不需要添加它。若有生物在承受该减值并对抗放逐术投掷豁免检定的话，施法者能以自由动作迫使结果降低1阶。这么做会烧毁全部符箓，结束其效果。若在效果启动之后，符箓的任意部件被移动或破坏的话，该效果结束。</p>"
+        },
+        "Animal Repellent (Greater)": {
+            "name": "高等动物驱逐剂 Animal Repellent (Greater)",
+            "description": "<p>动物驱逐剂是一种毒性炼金物质，它能让某种特定类型的动物不愿意靠近你。你可以制造猿类驱逐剂、熊类驱逐剂、蛇类驱逐剂等，但无法制造出一种让所有生物都远离你的驱逐剂。这种驱逐剂对那些和某种动物类型相似但并非真正动物的生物不起作用。例如，熊类驱逐剂对熊化人不起作用。动物驱逐剂对智力调整值-3或更高的生物无效，例如觉醒动物。当你开始学习动物驱逐剂的公式时，你将得到所有常见动物的公式。如果动物并非常见，例如大海蛇，你必须单独学习这种公式，并且和该动物具有相同的稀有度特征。</p>\n<p>当你启动动物驱逐剂时，将它撒在你自己或触及范围内的生物身上，或者将其涂抹至10尺见方的表面。动物驱逐剂持续24小时，或直到花费1分钟时间清洗干净（包括多个交互动作）。指定的动物类型可以在正常范围三倍远的地方闻到驱逐剂。</p>\n<p>特定种类的动物通常会避开涂有驱逐剂的生物或区域，因为它们闻起来很臭，让它觉得不安。如果处于战斗中或被迫反击的状态，动物只有成功通过@Check[type:fortitude|dc:29]豁免才能接近受影响的生物或区域的20尺范围内。一旦豁免成功，动物临时免疫1分钟。如果动物的攻击方式导致它吃下或摄入驱逐剂，他必须通过@Check[type:fortitude|dc:29]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
+        },
+        "Animal Repellent (Lesser)": {
+            "name": "次等动物驱逐剂 Animal Repellent (Lesser)",
+            "description": "<p>动物驱逐剂是一种毒性炼金物质，它能让某种特定类型的动物不愿意靠近你。你可以制造猿类驱逐剂、熊类驱逐剂、蛇类驱逐剂等，但无法制造出一种让所有生物都远离你的驱逐剂。这种驱逐剂对那些和某种动物类型相似但并非真正动物的生物不起作用。例如，熊类驱逐剂对熊化人不起作用。动物驱逐剂对智力调整值-3或更高的生物无效，例如觉醒动物。当你开始学习动物驱逐剂的公式时，你将得到所有常见动物的公式。如果动物并非常见，例如大海蛇，你必须单独学习这种公式，并且和该动物具有相同的稀有度特征。</p>\n<p>当你启动动物驱逐剂时，将它撒在你自己或触及范围内的生物身上，或者将其涂抹至10尺见方的表面。动物驱逐剂持续24小时，或直到花费1分钟时间清洗干净（包括多个交互动作）。指定的动物类型可以在正常范围三倍远的地方闻到驱逐剂。</p>\n<p>特定种类的动物通常会避开涂有驱逐剂的生物或区域，因为它们闻起来很臭，让它觉得不安。如果处于战斗中或被迫反击的状态，动物只有成功通过@Check[type:fortitude|dc:18]豁免才能接近受影响的生物或区域的20尺范围内。一旦豁免成功，动物临时免疫1分钟。如果动物的攻击方式导致它吃下或摄入驱逐剂，他必须通过@Check[type:fortitude|dc:18]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
+        },
+        "Animal Repellent (Major)": {
+            "name": "上等动物驱逐剂 Animal Repellent (Major)",
+            "description": "<p>动物驱逐剂是一种毒性炼金物质，它能让某种特定类型的动物不愿意靠近你。你可以制造猿类驱逐剂、熊类驱逐剂、蛇类驱逐剂等，但无法制造出一种让所有生物都远离你的驱逐剂。这种驱逐剂对那些和某种动物类型相似但并非真正动物的生物不起作用。例如，熊类驱逐剂对熊化人不起作用。动物驱逐剂对智力调整值-3或更高的生物无效，例如觉醒动物。当你开始学习动物驱逐剂的公式时，你将得到所有常见动物的公式。如果动物并非常见，例如大海蛇，你必须单独学习这种公式，并且和该动物具有相同的稀有度特征。</p>\n<p>当你启动动物驱逐剂时，将它撒在你自己或触及范围内的生物身上，或者将其涂抹至10尺见方的表面。动物驱逐剂持续24小时，或直到花费1分钟时间清洗干净（包括多个交互动作）。指定的动物类型可以在正常范围三倍远的地方闻到驱逐剂。</p>\n<p>特定种类的动物通常会避开涂有驱逐剂的生物或区域，因为它们闻起来很臭，让它觉得不安。如果处于战斗中或被迫反击的状态，动物只有成功通过@Check[type:fortitude|dc:35]豁免才能接近受影响的生物或区域的20尺范围内。一旦豁免成功，动物临时免疫1分钟。如果动物的攻击方式导致它吃下或摄入驱逐剂，他必须通过@Check[type:fortitude|dc:35]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
+        },
+        "Animal Repellent (Minor)": {
+            "name": "下等动物驱逐剂 Animal Repellent (Minor)",
+            "description": "<p>动物驱逐剂是一种毒性炼金物质，它能让某种特定类型的动物不愿意靠近你。你可以制造猿类驱逐剂、熊类驱逐剂、蛇类驱逐剂等，但无法制造出一种让所有生物都远离你的驱逐剂。这种驱逐剂对那些和某种动物类型相似但并非真正动物的生物不起作用。例如，熊类驱逐剂对熊化人不起作用。动物驱逐剂对智力调整值-3或更高的生物无效，例如觉醒动物。当你开始学习动物驱逐剂的公式时，你将得到所有常见动物的公式。如果动物并非常见，例如大海蛇，你必须单独学习这种公式，并且和该动物具有相同的稀有度特征。</p>\n<p>当你启动动物驱逐剂时，将它撒在你自己或触及范围内的生物身上，或者将其涂抹至10尺见方的表面。动物驱逐剂持续24小时，或直到花费1分钟时间清洗干净（包括多个交互动作）。指定的动物类型可以在正常范围三倍远的地方闻到驱逐剂。</p>\n<p>特定种类的动物通常会避开涂有驱逐剂的生物或区域，因为它们闻起来很臭，让它觉得不安。如果处于战斗中或被迫反击的状态，动物只有成功通过@Check[type:fortitude|dc:15]豁免才能接近受影响的生物或区域的20尺范围内。一旦豁免成功，动物临时免疫1分钟。如果动物的攻击方式导致它吃下或摄入驱逐剂，他必须通过@Check[type:fortitude|dc:15]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
+        },
+        "Animal Repellent (Moderate)": {
+            "name": "中等动物驱逐剂 Animal Repellent (Moderate)",
+            "description": "<p>动物驱逐剂是一种毒性炼金物质，它能让某种特定类型的动物不愿意靠近你。你可以制造猿类驱逐剂、熊类驱逐剂、蛇类驱逐剂等，但无法制造出一种让所有生物都远离你的驱逐剂。这种驱逐剂对那些和某种动物类型相似但并非真正动物的生物不起作用。例如，熊类驱逐剂对熊化人不起作用。动物驱逐剂对智力调整值-3或更高的生物无效，例如觉醒动物。当你开始学习动物驱逐剂的公式时，你将得到所有常见动物的公式。如果动物并非常见，例如大海蛇，你必须单独学习这种公式，并且和该动物具有相同的稀有度特征。</p>\n<p>当你启动动物驱逐剂时，将它撒在你自己或触及范围内的生物身上，或者将其涂抹至10尺见方的表面。动物驱逐剂持续24小时，或直到花费1分钟时间清洗干净（包括多个交互动作）。指定的动物类型可以在正常范围三倍远的地方闻到驱逐剂。</p>\n<p>特定种类的动物通常会避开涂有驱逐剂的生物或区域，因为它们闻起来很臭，让它觉得不安。如果处于战斗中或被迫反击的状态，动物只有成功通过@Check[type:fortitude|dc:24]豁免才能接近受影响的生物或区域的20尺范围内。一旦豁免成功，动物临时免疫1分钟。如果动物的攻击方式导致它吃下或摄入驱逐剂，他必须通过@Check[type:fortitude|dc:24]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>"
+        },
+        "Architect's Pattern Book": {
+            "name": "建筑师的模板册 Architect's Pattern Book",
+            "description": "<p>通常由法师中的建筑爱好者或专业建筑师创造，建筑师的模板册允许施法者自定义那些能创造魔法建筑或住所的法术，添加休闲区例如浴室、游戏室、游泳池或类似的豪华房间。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象(超魔)</p>\n<p><strong>频率</strong> 每周一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放<em>@UUID[Compendium.pf2e.spells-srd.mwPfoYfVGSMAaUec]{舒适小屋 Cozy Cabin}</em>、<em>@UUID[Compendium.pf2e.spells-srd.vPWMEyVTreMOoFnm]{辉煌豪宅 Magnificent Mansion}</em>、<em>@UUID[Compendium.pf2e.spells-srd.KPDHmmjJiw7PhTYF]{璀璨豪宅 Resplendent Mansion}</em>法术，你能为建筑增加一个尺寸为每环级最多10尺边长的房间。任何角色只要在这个娱乐室内花费至少1个小时，并且在法术创造的房子里睡够8个小时，将视为经过了极其充分的休息。他会在8小时的休息中恢复双倍的生命值，当他开始第二天的日常准备时，他的运动检定和意志豁免将有+1环境加值，持续12小时。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.IlNjAwsIZShlVsCT]{效果: 建筑师的模板册}</p>"
+        },
+        "Bomb Coagulant Alembic": {
+            "name": "炸弹浓缩蒸馏器 Bomb Coagulant Alembic",
+            "description": "<p>这个装置能增加炼金炸弹中试剂的浓度，让它变得更加致命。作为一个具有操作特征的10分钟活动，你可以使用炸弹浓缩蒸馏器浓缩一个炼金炸弹，让里面能造成溅射伤害的试剂变得更加粘稠。蒸馏之后，炸弹不再造成溅射伤害，但能造成和原始溅射伤害相同的持续伤害。如果炸弹本来就有持续伤害，蒸馏后的炸弹将把溅射伤害加到最初的持续伤害上。</p>"
+        },
+        "Camouflage Dye (Greater)": {
+            "name": "高等迷彩染料 Camouflage Dye (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>迷彩染料使用各种炼金术处理过的颜料和粉碎的晶体，让使用者和周围环境融为一体。当你启动迷彩染料时，将它撒在你自己或触及范围内的生物身上，目标和他的衣服会改变颜色，融入周围环境，直到突然行动。目标可以在没有掩蔽或隐蔽的情况下进行@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}，持续1小时。</p>"
+        },
+        "Camouflage Dye (Lesser)": {
+            "name": "次等迷彩染料 Camouflage Dye (Lesser)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>迷彩染料使用各种炼金术处理过的颜料和粉碎的晶体，让使用者和周围环境融为一体。当你启动迷彩染料时，将它撒在你自己或触及范围内的生物身上，目标和他的衣服会改变颜色，融入周围环境，直到突然行动。目标可以在没有掩蔽或隐蔽的情况下进行@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}，持续10分钟。如果目标使用敌对动作，或移动超过半速，在动作完成之后，迷彩效果结束，并且生物不再藏匿或无踪。</p>"
+        },
+        "Cinnamon Seers": {
+            "name": "预兆肉桂 Cinnamon Seers",
+            "description": "<p>预兆肉桂是一种具刺激性味道的方糖，弥漫着经炼金术而活化的肉桂香味并用于提神。你能含住预兆肉桂长达一小时，其强度味道给予你在回忆知识检定时获得＋1物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Thd0XXhunYNk6jD7]{效果: 预兆肉桂}</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">r</span> (幸运)</p>\n<p><strong>触发</strong> 你在回忆知识中没有获得任何信息</p>\n<hr />\n<p><strong>效果</strong> 重投触发检定。如果这是秘密检定，则是GM替代你进行重投；糖果不会给予你任何有关于GM投掷结果的信息，所以在这种情况下，你也只能自行猜测投掷结果。随后，预兆肉桂将会失效。直到你的下次每日准备前，你会获得对预兆肉桂的临时免疫。</p>"
+        },
+        "Codex of Destruction and Renewal": {
+            "name": "毁灭与新生圣典 Codex of Destruction and Renewal",
+            "description": "<p>这本厚重大书的封面上，凸印着一张严肃的面具，一半是黑曜石，另一半则是象牙制成，而面容的背景则是各自相反的颜色。据说每一本《毁灭与新生圣典》的抄本都包含了内西斯在登神过程中获得的知识片段，这对于内西斯教会来说是神圣的。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 想象(超魔)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施展一个造成伤害的、由此魔典准备的塑能系法术，法术会造成更强大的破坏力。法术无视10点抗力，并且你可以重投所有结果为1的伤害骰。如果法术将一个生物的HP减少至0，他将被法术分解成无限小的微粒，甚至不会留下灰烬；这是个死亡效果。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 想象(超魔)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施展一个恢复生命值的、由此魔典准备的死灵系法术，法术会不断且完美让目标重获新生。法术赋予目标快速治疗20，在每回合开始时恢复20HP并且防止目标因为受到伤害或濒死状态值增加而导致的死亡。每当生物因为再生而恢复生命值时，就会再生所有受损或残废的器官；它还能让任何身体部位在被切断后立即自由生长，而原来的肢体则化为灰烬。效果持续4轮。</p>"
+        },
+        "Colorful Coating (Blue)": {
+            "name": "蓝色涂层 Colorful Coating (Blue)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>蓝色涂层含有粘合剂，让表面更牢固稳定，能支撑更大的重量。当应用在松散或不稳定表面上时，方格在塌陷前可以承受两倍重量。涂层还能减缓塌方，让人更容易躲开，涂色表面坍塌时能给与反射豁免+1环境加值。</p>\n<p>这种涂层也可以用来加固墙壁、天花板、门或类似的开口，当涂有蓝色涂层的表面遭遇@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}时，运动DC有+2环境加值。</p>"
+        },
+        "Colorful Coating (Green)": {
+            "name": "绿色涂层 Colorful Coating (Green)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>绿色涂层干燥后会减少表面摩擦力。它能让方格更湿滑，让他同时兼具困难地形和不平整表面的效果，保持平衡的DC 20。尝试快步或攀爬的生物不需要@UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balance}。</p>\n<p>绿色涂层还会让墙壁和天花板更难以攀爬。攀爬有涂层的墙壁时运动检定受到-2环境罚值。</p>\n<p>黄色涂层和绿色涂层效果相反，如果同时作用于一个表面，会相互抵消。</p>"
+        },
+        "Colorful Coating (Indigo)": {
+            "name": "靛青涂层 Colorful Coating (Indigo)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>靛青涂层含有破坏较弱物品的药剂。当涂在表面或物体上时，涂层降低物品硬度2点，每轮对物体造成[[/r 1d4[acid]]]伤害。涂层对物品造成的伤害在涂层分解后依然存在。</p>"
+        },
+        "Colorful Coating (Violet)": {
+            "name": "紫色涂层 Colorful Coating (Violet)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>这些涂层颜色多样，每种都有不同的特殊效果。一瓶彩色涂层的足够让你涂满触及范围内一个5尺见方的平面，它带有一个特殊的刷头，你只需要一只手就能在表面上涂抹颜料。你可以在任何可以被涂抹的表面上涂抹颜料（由GM裁定）。颜料涂层会瞬间干燥，效果在你所涂方格内持续1分钟。在此之后，涂层变成细密的惰性粉末，除非另有说明，否则方格会恢复到初始状态。</p>\n<p>紫色涂层含有粘稠的化合物。涂层覆盖的区域变为困难地形。任何进入方格的生物都必须通过@Check[type:reflex|dc:20]豁免，否则速度有-15尺减值，直到它的下个回合结束。一旦大失败，生物会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}在方格内直到它的下个回合结束。目标能尝试@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escaping}（DC 20）或花费2个动作移除粘性物质来结束上述这些效果。这些交互动作不必连续，并且其他生物可以提供帮助。</p>"
+        },
+        "Cooperative Waffles": {
+            "name": "协作华夫饼 Cooperative Waffles",
+            "description": "<p><strong>启动</strong> 10分钟 (交互)</p>\n<p>用华夫饼烙铁上简单煎煎后加上炼金糖浆和复合黄油后，并在分享同一批协作华夫饼时强化了人们的协作精神。你可以与另一名生物同时享用协作华夫饼。你们需各吃完自己那一半的华夫饼以启动之，当其中一人对另一人使用跟随专家探索期行动时，其所获得的环境加值会提高1点。该华夫饼将持续到24小时或是你们的下次每日准备时，取其先者。你只能与一个生物分享同一个华夫饼；若你们当中有人再次享用了华夫饼，之前所享用的华夫饼效果将会消失。</p>"
+        },
+        "Corrosive Engravings": {
+            "name": "蚀刻版画 Corrosive Engravings",
+            "description": "<p>这些锡板以黄铜包边，有明显的侵蚀痕迹。这本魔典的标题是用酸液蚀刻的，翻动锡板会让你的手指沾满锈迹和金属粉末。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放一个带有[酸液]或[毒素]特征并且造成持续性伤害的法术，任何从该法术受到持续性伤害的生物还会陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}，直到持续性伤害结束。使用动作呕吐可以像通常那样减少恶心状态值，但是在持续伤害结束之前恶心状态无法被减少到1以下。</p>"
+        },
+        "Courtier's Pillow Book": {
+            "name": "弄臣的枕边书 Courtier's Pillow Book",
+            "description": "<p>这本精美的日志记录了作者相识之人的社交网络。当你进行日常准备时，你可以在书里写下一个关于某人的秘密或丑事，但这件事必须确认为事实或有证据证明。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放一个惑控系法术，且目标为你在书中记录过的角色，你可以在施放法术前先说出该角色的秘密或丑事，则目标对抗法术的豁免骰会有-1环境减值。该条目在之后会从魔典中消失。</p>"
+        },
+        "Crackling Bubble Gum (Greater)": {
+            "name": "高等爆炸泡泡糖 Crackling Bubble Gum (Greater)",
+            "description": "<p>这种刺鼻的泡泡糖会在你咀嚼时炸开。当你在10分钟内不断咀嚼爆炸泡泡糖时，你在对抗听觉和音波效果的豁免时获得＋2物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.GUHNFlNYiR38sTDE]{效果: 爆炸泡泡糖}</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (音波)</p>\n<hr />\n<p><strong>效果</strong> 你一直吹一个泡泡直到它爆炸，这会使其失效。这场爆炸会对@Template[type:cone|distance:15]范围内的所有生物造成[[/r 8d4[sonic]]]伤害（@Check[type:fortitude|dc:30|basic:true]豁免）。豁免失败的生物同时会黏上泡泡糖，并在1分钟内在其速度上获得-10尺物品减值。该生物可以花费3个交互动作移除这些泡泡糖。这些动作不用连续，并且其他生物也能提供这些交互动作。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.bMZ6Gw58sK8sFp5n]{效果: 爆炸泡泡糖 (失败)}</p>"
+        },
+        "Crackling Bubble Gum (Lesser)": {
+            "name": "次等爆炸泡泡糖 Crackling Bubble Gum (Lesser)",
+            "description": "<p>这种刺鼻的泡泡糖会在你咀嚼时炸开。当你在10分钟内不断咀嚼爆炸泡泡糖时，你在对抗听觉和音波效果的豁免时获得＋1物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.GUHNFlNYiR38sTDE]{效果: 爆炸泡泡糖}</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (音波)</p>\n<hr />\n<p><strong>效果</strong> 你一直吹一个泡泡直到它爆炸，这会使其失效。这场爆炸会对@Template[type:cone|distance:15]范围内的所有生物造成[[/r 4d4[sonic]]]伤害（@Check[type:fortitude|dc:19|basic:true]豁免）。豁免失败的生物同时会黏上泡泡糖，并在1分钟内在其速度上获得-10尺物品减值。该生物可以花费3个交互动作移除这些泡泡糖。这些动作不用连续，并且其他生物也能提供这些交互动作。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.bMZ6Gw58sK8sFp5n]{效果: 爆炸泡泡糖 (失败)}</p>"
+        },
+        "Crackling Bubble Gum (Major)": {
+            "name": "上等爆炸泡泡糖 Crackling Bubble Gum (Major)",
+            "description": "<p>这种刺鼻的泡泡糖会在你咀嚼时炸开。当你在10分钟内不断咀嚼爆炸泡泡糖时，你在对抗听觉和音波效果的豁免时获得＋3物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.GUHNFlNYiR38sTDE]{效果: 爆炸泡泡糖}</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (音波)</p>\n<hr />\n<p><strong>效果</strong> 你一直吹一个泡泡直到它爆炸，这会使其失效。这场爆炸会对@Template[type:cone|distance:15]范围内的所有生物造成[[/r 9d4[sonic]]]伤害（@Check[type:fortitude|dc:34|basic:true]豁免）。豁免失败的生物同时会黏上泡泡糖，并在1分钟内在其速度上获得-10尺物品减值。该生物可以花费3个交互动作移除这些泡泡糖。这些动作不用连续，并且其他生物也能提供这些交互动作。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.bMZ6Gw58sK8sFp5n]{效果: 爆炸泡泡糖 (失败)}</p>"
+        },
+        "Crackling Bubble Gum (Moderate)": {
+            "name": "中等爆炸泡泡糖 Crackling Bubble Gum (Moderate)",
+            "description": "<p>这种刺鼻的泡泡糖会在你咀嚼时炸开。当你在10分钟内不断咀嚼爆炸泡泡糖时，你在对抗听觉和音波效果的豁免时获得＋2物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.GUHNFlNYiR38sTDE]{效果: 爆炸泡泡糖}</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (音波)</p>\n<hr />\n<p><strong>效果</strong> 你一直吹一个泡泡直到它爆炸，这会使其失效。这场爆炸会对@Template[type:cone|distance:15]范围内的所有生物造成[[/r 6d4[sonic]]]伤害（@Check[type:fortitude|dc:25|basic:true]豁免）。豁免失败的生物同时会黏上泡泡糖，并在1分钟内在其速度上获得-10尺物品减值。该生物可以花费3个交互动作移除这些泡泡糖。这些动作不用连续，并且其他生物也能提供这些交互动作。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.bMZ6Gw58sK8sFp5n]{效果: 爆炸泡泡糖 (失败)}</p>"
+        },
+        "Demolition Fulu (Greater)": {
+            "name": "高等拆毁符箓 Demolition Fulu (Greater)",
+            "description": "<p>拆毁符箓允许破拆者或者开凿者在破拆发生之时提前远离现场。符箓会在5分钟至8小时内化为灰烬，具体时间由你在贴上符箓时决定。当持续时间结束时，符箓会降低其贴上的物体的硬度，数值等同于符箓的等级，之后对物体造成[[/r 10d6[bludgeoning]]]伤害。当把拆毁符箓视作危害时，侦测到它的隐秘DC为@Check[type:perception|dc:37]，解除它的贼活DC为@Check[type:thievery|dc:37]。</p>"
+        },
+        "Delve Scale": {
+            "name": "掘穴鲨鳞 Delve Scale",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>如果将鲨蜥兽的厚实前肢鳞片油炸，它就会变成脆脆的零食。炼金术士在煎炸油中加入炼金试剂以提升鳞片的效果和口感。在食用掘穴鲨鳞后的一分钟内，你获得15尺的掘地速度并且在@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}时的运动检定获得＋2物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.rQV8Azb3FeUJJ3fG]{效果: 掘穴鲨鳞}</p>"
+        },
+        "Demolition Fulu (Moderate)": {
+            "name": "中等拆毁符箓 Demolition Fulu (Moderate)",
+            "description": "<p>拆毁符箓允许破拆者或者开凿者在破拆发生之时提前远离现场。符箓会在5分钟至8小时内化为灰烬，具体时间由你在贴上符箓时决定。当持续时间结束时，符箓会降低其贴上的物体的硬度，数值等同于符箓的等级，之后对物体造成[[/r 6d6[bludgeoning]]]伤害。当把拆毁符箓视作危害时，侦测到它的隐秘DC为@Check[type:perception|dc:28]，解除它的贼活DC为@Check[type:thievery|dc:28]。</p>"
+        },
+        "Dragonfly Fulu": {
+            "name": "蜻蜓符箓 Dragonfly Fulu",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 想象</p>\n<p><strong>触发</strong> 你进行@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}动作</p>\n<p>从传统来说，蜻蜓符箓应当如同昆虫翅膀一般贴在后背上部。当你启动该符箓时，你会在@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}的运动检定中获得+2状态加值，持续1分钟。在此时间内，你能够以单动作尝试跳高或跳远，而且不需要在此之前先行走。你还能够在非固态的物质中跳高或跳远，比如空气或水中，但如果你使用符箓的这种力量，符箓的效果就会在你进行跳跃后结束。</p>"
+        },
+        "Dread Helm": {
+            "name": "骇人头盔 Dread Helm",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>骇人头盔的面颊被描绘的相当凶猛，可以放大恐惧的影响。一个储液槽巧妙地隐藏在头盔里，可以容纳一瓶恐惧安瓿，需要3个交互动作来安装。装填后的骇人头盔可以启动，让恐惧安瓿雾化，在你脸周围环绕着让人害怕的迷雾。迷雾赋予你在威吓检定上的物品加值，等同于被装填的恐惧安瓿的物品加值。迷雾还会对@Template[type:emanation|distance:5]范围内除了你的生物造成等同于恐惧安瓿溅射伤害的心灵伤害。效果持续3轮，消耗恐惧安瓿，一旦雾化过程开始，它就不能取消启动。</p>"
+        },
+        "Egg Cream Fizz": {
+            "name": "发泡鸡蛋奶油 Egg Cream Fizz",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>既不含鸡蛋也不含奶油，一份发泡鸡蛋奶油含有牛奶或坚果奶、苏打水和优选的糖浆，并在起泡后冷藏。在饮用后，你会感觉身体轻漂漂的，且在10分钟内在你的速度上获得+5尺物品加值。此外，你还将获得一项来自于糖浆的效果，这在制作饮料时便已决定。</p>\n<ul>\n<li><strong>巧克力</strong> 你在@UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balance}、空中机动和挤入空间的特技检定时获得＋1物品加值。</li>\n<li><strong>草莓</strong> 你在攀爬、@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}和游泳的运动检定时获得＋1物品加值。</li>\n<li><strong>香草</strong> 你可以在困难地形进行快步。</li>\n</ul>"
+        },
+        "Emetic Paste (Greater)": {
+            "name": "高等催吐膏药 Emetic Paste (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened}的生物吞咽困难，所以你启动催吐膏药的时候可以将其涂在你的或者你触及范围内某个恶心生物的喉咙处。膏药可以让恶心的生物能更容易地恢复，让他能立即尝试一次用于结束恶心状态的强韧检定。膏药能赋予目标在本次豁免和之后1小时内所有用于减轻恶心状态的强韧豁免上的+4物品加值。</p>"
+        },
+        "Emetic Paste (Moderate)": {
+            "name": "中等催吐膏药 Emetic Paste (Moderate)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened}的生物吞咽困难，所以你启动催吐膏药的时候可以将其涂在你的或者你触及范围内某个恶心生物的喉咙处。膏药可以让恶心的生物能更容易地恢复，让他能立即尝试一次用于结束恶心状态的强韧检定。膏药能赋予目标在本次豁免和之后1小时内所有用于减轻恶心状态的强韧豁免上的+3物品加值。</p>"
+        },
+        "Fury Cocktail (Greater)": {
+            "name": "高等狂怒鸡尾酒 Fury Cocktail (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>狂怒鸡尾酒是一种由朗姆酒与姜汁混合而成的姜汁啤酒。据传其起源于野蛮人主题节日中专门负责贩卖炼金饮料的蜜酒会所。</p>\n<p><strong>好处</strong> 你在近战攻击骰上获得+4物品加值并根据制作时所选择的添加剂获得额外效果。持续时间为一小时。</p>\n<ul>\n<li><strong>兽性</strong> 柠檬汁与磨成粉的爪子或钳子混入鸡尾酒当中。你从以下属于搏击武器组的非武装攻击当中选择一项获得，造成[[/r 1d6[piercing]]]伤害的啃咬攻击或造成[[/r 1d4[slashing]]]伤害且具有灵巧特征的爪抓攻击。</li>\n<li><strong>双倍</strong> 这个鸡尾酒只是加入了双倍的姜汁和朗姆酒来使其更加强大。你获得1点物理伤害抗性。中等狂怒鸡尾酒会提升该抗性到2点，而高等狂怒鸡尾酒则会提升到5点。</li>\n<li><strong>悲恸</strong> 加入了几片花瓣以增添强烈的香气。你获得1点负能量伤害抗性，若你拥有负能量治疗，则改为获得1点正能量抗性。中等狂怒鸡尾酒会提升该抗性到2点，而高等狂怒鸡尾酒则会提升到5点。</li>\n<li><strong>疑论</strong> 加一点苦味酒会让这款酒的口感更加复杂。你在进行豁免以对抗魔法时获得＋1物品加值。中等狂怒鸡尾酒会提升该加值到2点，而高等狂怒鸡尾酒则会提升到3点。</li>\n<li><strong>泰坦</strong> 这款鸡尾酒混入了香橙汁与磨成粉的巨人头发。如果你是中型或更小体型，你获得以下效果：你变为大型、获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}以及触及增加5尺（或者10尺，如果初始为超小型）。</li>\n<li><strong>龙皮</strong> 石榴汁与元素试剂作为添加剂混入酒中。你获得1点强酸、寒冷、电击、火焰和毒液伤害抗性。中等狂怒鸡尾酒会提升该抗性到5点，而高等狂怒鸡尾酒则会提升到10点。</li>\n</ul>\n<p><strong>缺陷</strong> 你在AC上获得-1减值和在反射豁免上获得-2减值。</p>"
+        },
+        "Fury Cocktail (Lesser)": {
+            "name": "次等狂怒鸡尾酒 Fury Cocktail (Lesser)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>狂怒鸡尾酒是一种由朗姆酒与姜汁混合而成的姜汁啤酒。据传其起源于野蛮人主题节日中专门负责贩卖炼金饮料的蜜酒会所。</p>\n<p><strong>好处</strong> 你在近战攻击骰上获得+2物品加值并根据制作时所选择的添加剂获得额外效果。持续时间为10分钟。</p>\n<ul>\n<li><strong>兽性</strong> 柠檬汁与磨成粉的爪子或钳子混入鸡尾酒当中。你从以下属于搏击武器组的非武装攻击当中选择一项获得，造成[[/r 1d6[piercing]]]伤害的啃咬攻击或造成[[/r 1d4[slashing]]]伤害且具有灵巧特征的爪抓攻击。</li>\n<li><strong>双倍</strong> 这个鸡尾酒只是加入了双倍的姜汁和朗姆酒来使其更加强大。你获得1点物理伤害抗性。中等狂怒鸡尾酒会提升该抗性到2点，而高等狂怒鸡尾酒则会提升到5点。</li>\n<li><strong>悲恸</strong> 加入了几片花瓣以增添强烈的香气。你获得1点负能量伤害抗性，若你拥有负能量治疗，则改为获得1点正能量抗性。中等狂怒鸡尾酒会提升该抗性到2点，而高等狂怒鸡尾酒则会提升到5点。</li>\n<li><strong>疑论</strong> 加一点苦味酒会让这款酒的口感更加复杂。你在进行豁免以对抗魔法时获得＋1物品加值。中等狂怒鸡尾酒会提升该加值到2点，而高等狂怒鸡尾酒则会提升到3点。</li>\n<li><strong>泰坦</strong> 这款鸡尾酒混入了香橙汁与磨成粉的巨人头发。如果你是中型或更小体型，你获得以下效果：你变为大型、获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}以及触及增加5尺（或者10尺，如果初始为超小型）。</li>\n<li><strong>龙皮</strong> 石榴汁与元素试剂作为添加剂混入酒中。你获得1点强酸、寒冷、电击、火焰和毒液伤害抗性。中等狂怒鸡尾酒会提升该抗性到5点，而高等狂怒鸡尾酒则会提升到10点。</li>\n</ul>\n<p><strong>缺陷</strong> 你在AC上获得-1减值和在反射豁免上获得-2减值。</p>"
+        },
+        "Galvanic Chew": {
+            "name": "惊雷糖 Galvanic Chew",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>惊雷糖是一种经过加工的干电鳗，将其一直烘烤至富有嚼劲为止，再裹上一层辛辣的且被试剂灌注过的粉末，在咀嚼时能体验到被电流刺到的感觉。在长达一小时的时间里，你获得5点电击伤害抗性。</p>\n<hr />\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">r</span> (电击)</p>\n<p><strong>触发</strong> 你被近战攻击命中或是被另一个生物触碰到</p>\n<hr />\n<p><strong>效果</strong> 你向目标生物引导电流，目标需通过一个@Check[type:fortitude|dc:24]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（若豁免大失败则为@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}）。惊雷糖将会失效。直到你的下次每日准备前，你会获得对惊雷糖的临时免疫。</p>"
+        },
+        "Gearbinder Oil (Greater)": {
+            "name": "高等齿轮粘合油 Gearbinder Oil (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>齿轮粘合油装载在一个带泵的密封容器内，可以在短距离内喷洒。这种油被设计成可以流入复杂的机器内部，通过机械摩擦和搅拌，起泡并变成糊状，将部件粘合在一起。这种油对铰链连接的构装体和机械特别有效，包括大部分构装体、发条和机械危害。你将油喷洒在你想要粘合的目标上，它必须在你10尺范围内。被喷上油之后，如果目标在某轮内使用了带有攻击、操作和移动特征的动作，在回合结束时它必须尝试@Check[type:fortitude|dc:38]豁免。如果机械由于齿轮粘合油陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}或以上状态，则无法使用反应动作。齿轮粘合油最多生效6轮，之后会变为惰性、油性的残留物。</p>\n<hr />\n<p><strong>大成功</strong> 油变为惰性，效果结束。</p>\n<p><strong>成功</strong> 目标的缓慢状态减少1。如果缓慢状态减少至0，效果结束。</p>\n<p><strong>失败</strong> 目标缓慢状态增加1，最大达到@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 3}。</p>\n<p><strong>大失败</strong> 目标缓慢状态增加2，最大达到缓慢3。</p>"
+        },
+        "Gearbinder Oil (Lesser)": {
+            "name": "次等齿轮粘合油 Gearbinder Oil (Lesser)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>齿轮粘合油装载在一个带泵的密封容器内，可以在短距离内喷洒。这种油被设计成可以流入复杂的机器内部，通过机械摩擦和搅拌，起泡并变成糊状，将部件粘合在一起。这种油对铰链连接的构装体和机械特别有效，包括大部分构装体、发条和机械危害。你将油喷洒在你想要粘合的目标上，它必须在你10尺范围内。被喷上油之后，如果目标在某轮内使用了带有攻击、操作和移动特征的动作，在回合结束时它必须尝试@Check[type:fortitude|dc:20]豁免。如果机械由于齿轮粘合油陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}或以上状态，则无法使用反应动作。齿轮粘合油最多生效6轮，之后会变为惰性、油性的残留物。</p>\n<hr />\n<p><strong>大成功</strong> 油变为惰性，效果结束。</p>\n<p><strong>成功</strong> 目标的缓慢状态减少1。如果缓慢状态减少至0，效果结束。</p>\n<p><strong>失败</strong> 目标缓慢状态增加1，最大达到@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 3}。</p>\n<p><strong>大失败</strong> 目标缓慢状态增加2，最大达到缓慢3。</p>"
+        },
+        "Gearbinder Oil (Moderate)": {
+            "name": "中等齿轮粘合油 Gearbinder Oil (Moderate)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>齿轮粘合油装载在一个带泵的密封容器内，可以在短距离内喷洒。这种油被设计成可以流入复杂的机器内部，通过机械摩擦和搅拌，起泡并变成糊状，将部件粘合在一起。这种油对铰链连接的构装体和机械特别有效，包括大部分构装体、发条和机械危害。你将油喷洒在你想要粘合的目标上，它必须在你10尺范围内。被喷上油之后，如果目标在某轮内使用了带有攻击、操作和移动特征的动作，在回合结束时它必须尝试@Check[type:fortitude|dc:29]豁免。如果机械由于齿轮粘合油陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}或以上状态，则无法使用反应动作。齿轮粘合油最多生效6轮，之后会变为惰性、油性的残留物。</p>\n<hr />\n<p><strong>大成功</strong> 油变为惰性，效果结束。</p>\n<p><strong>成功</strong> 目标的缓慢状态减少1。如果缓慢状态减少至0，效果结束。</p>\n<p><strong>失败</strong> 目标缓慢状态增加1，最大达到@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 3}。</p>\n<p><strong>大失败</strong> 目标缓慢状态增加2，最大达到缓慢3。</p>"
+        },
+        "Ghost Delivery Fulu": {
+            "name": "鬼收语符箓 Ghost Delivery Fulu",
+            "description": "<p><strong>持续时间</strong> 一星期</p>\n<p>鬼收语符箓的铭文看起来好像是被魂魄所环绕的鸽舍，上面有一个明显的红蜡印记。该符箓在贴上之后便会被启动，成为印章与其相匹配的鬼送信符箓的导向目标。鬼送信符箓会将信息转移至鬼收语符箓上，但这些信息可以被轻易抹除。</p>"
+        },
+        "Ginger Chew": {
+            "name": "姜糖 Ginger Chew",
+            "description": "<p>这个姜糖能够帮助消化并且缓解胃部不适。一颗姜糖能够持续1小时，并使你进行强韧Fortitude豁免以对抗恶心sickened状态时获得＋1物品加值。</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">1</span></p>\n<hr />\n<p><strong>效果</strong> 如果你有恶心状态，降低1点恶心状态。随后姜糖失效。</p>"
+        },
+        "Harrow Spellcards": {
+            "name": "哈罗法术牌 Harrow Spellcards",
+            "description": "<p>由硬纸板制作，这套@UUID[Compendium.pf2e.equipment-srd.B3aJa0csNZOGXLXT]{哈罗牌 Harrow Deck}中的每张牌的卡面上都描绘有一张精美的水彩插图，下方留有记录法术的空间。当洗牌时，这些卡牌会自动飞来飞去。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象(幸运)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你的上个动作是施展由魔典中准备的预言系法术</p>\n<hr />\n<p><strong>效果</strong> 你抽出一张牌来洞悉你将面临的挑战。从哈罗套牌中抽一张卡然后投掷1d6：</p>\n<ol>\n<li>锤牌组（运动）</li>\n<li>钥牌组（特技）</li>\n<li>盾牌组（生存）</li>\n<li>书牌组（任意回忆知识）</li>\n<li>星牌组（宗教）</li>\n<li>冠牌组（交涉）</li>\n</ol>\n<p>当下次你尝试进行和结果类型相同的检定时，投掷两次并使用更好的结果，因为套牌在冥冥之中指引你的行动。如果你在下次日常准备之前没有使用的话，该好处就会消失。</p>"
+        },
+        "Healing Vapor (Greater)": {
+            "name": "高等治疗蒸汽 Healing Vapor (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互</p>\n<p>治疗蒸汽是一种物质，通过灌注各种常见的治疗和恢复试剂再将其雾化，加速自然恢复过程。当从密封容器里施放出来时，这些蒸汽会填充@Template[type:burst|distance:5]区域，持续10分钟，并且能同时影响最多4个活着的生物。最初四个生物之外的生物不会获得任何好处，但是如果一个生物在持续时间结束前离开，一个新的生物就可以从蒸汽中获益。受益于治疗蒸汽的生物每分钟获得2点生命值。当受到蒸汽影响时，生物在对抗疾病和毒素的豁免检定中得到+2物品加值。如果多个治疗蒸汽区域重叠，则只有最强的治疗蒸汽会对重叠范围内的生物起效。强风会将雾气吹散，使其在风吹起时失效。</p>"
+        },
+        "Illuminated Folio": {
+            "name": "明亮书页 Illuminated Folio",
+            "description": "<p>在这部一半是法术书一半是怪物图鉴的书里，记录了各种各样的生物，有魔法的也有普通的。当查看时，插图会在页面上活动。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 想象(超魔)</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放本由魔典中准备的能召唤一个或多个生物的法术，你会从魔典中召唤生物，而不是他们通常的来源。这些被召唤的生物以活化的插图形式出现，赋予他们相当于等级一半的物理抗力，并且在面对火焰伤害和任何带有[水]特征的能力时有5点弱点。作为移动动作的一部分，它们还可以将自己折叠起来，穿过只有1寸左右宽度的空间。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.8YZX34sJOIH32VwI]{效果: 明亮书页}</p>"
+        },
+        "Implosion Dust (Greater)": {
+            "name": "高等内聚尘 Implosion Dust (Greater)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>内聚尘被装在一个密封袋子里，所以它可以通过一个加压的烟斗喷出来，它能让无定形的生物硬化或蒸发物理形态中的液体成分从而达到压缩和变小的效果。它能有效地削弱水元素、气元素、泥怪和其他GM认为类似的无定形的生物，甚至可以包括凝胶状的异怪。当你向一个5尺内的生物喷出内聚尘，该生物必须尝试@Check[type:fortitude|dc:38]豁免。目标必须在每回合结束时重复豁免。内聚尘最多生效6轮。然后就会失去活性，生物恢复到正常大小。</p>\n<hr />\n<p><strong>大成功</strong> 内聚尘失去活性，生物恢复到正常大小。</p>\n<p><strong>成功</strong> 目标体型增大一阶，但不能超过它的正常体型。如果它的体型恢复常态，则效果结束。</p>\n<p><strong>失败</strong> 目标体型减少一阶，但不能小于超小型。它的每种打击的触及都减少5尺，如果生物体型为小型或更大，触及最少有5尺；如果生物体型为超小型，触及最少为0尺。变小同样也会让生物的物理近战伤害受到减值。生物体型每比正常小一阶就有-2减值。</p>\n<p><strong>大失败</strong> 类似失败，但目标体型减少两阶。</p>"
+        },
+        "Implosion Dust (Lesser)": {
+            "name": "次等内聚尘 Implosion Dust (Lesser)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>内聚尘被装在一个密封袋子里，所以它可以通过一个加压的烟斗喷出来，它能让无定形的生物硬化或蒸发物理形态中的液体成分从而达到压缩和变小的效果。它能有效地削弱水元素、气元素、泥怪和其他GM认为类似的无定形的生物，甚至可以包括凝胶状的异怪。当你向一个5尺内的生物喷出内聚尘，该生物必须尝试@Check[type:fortitude|dc:20]豁免。目标必须在每回合结束时重复豁免。内聚尘最多生效6轮。然后就会失去活性，生物恢复到正常大小。</p>\n<hr />\n<p><strong>大成功</strong> 内聚尘失去活性，生物恢复到正常大小。</p>\n<p><strong>成功</strong> 目标体型增大一阶，但不能超过它的正常体型。如果它的体型恢复常态，则效果结束。</p>\n<p><strong>失败</strong> 目标体型减少一阶，但不能小于超小型。它的每种打击的触及都减少5尺，如果生物体型为小型或更大，触及最少有5尺；如果生物体型为超小型，触及最少为0尺。变小同样也会让生物的物理近战伤害受到减值。生物体型每比正常小一阶就有-2减值。</p>\n<p><strong>大失败</strong> 类似失败，但目标体型减少两阶。</p>"
+        },
+        "Implosion Dust (Moderate)": {
+            "name": "中等内聚尘 Implosion Dust (Moderate)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>内聚尘被装在一个密封袋子里，所以它可以通过一个加压的烟斗喷出来，它能让无定形的生物硬化或蒸发物理形态中的液体成分从而达到压缩和变小的效果。它能有效地削弱水元素、气元素、泥怪和其他GM认为类似的无定形的生物，甚至可以包括凝胶状的异怪。当你向一个5尺内的生物喷出内聚尘，该生物必须尝试@Check[type:fortitude|dc:29]豁免。目标必须在每回合结束时重复豁免。内聚尘最多生效6轮。然后就会失去活性，生物恢复到正常大小。</p>\n<hr />\n<p><strong>大成功</strong> 内聚尘失去活性，生物恢复到正常大小。</p>\n<p><strong>成功</strong> 目标体型增大一阶，但不能超过它的正常体型。如果它的体型恢复常态，则效果结束。</p>\n<p><strong>失败</strong> 目标体型减少一阶，但不能小于超小型。它的每种打击的触及都减少5尺，如果生物体型为小型或更大，触及最少有5尺；如果生物体型为超小型，触及最少为0尺。变小同样也会让生物的物理近战伤害受到减值。生物体型每比正常小一阶就有-2减值。</p>\n<p><strong>大失败</strong> 类似失败，但目标体型减少两阶。</p>"
+        },
+        "Injection Reservoir": {
+            "name": "注射储液槽 Injection Reservoir",
+            "description": "<p><strong>用法</strong> 添加到一把不带[注射]特征且造成穿刺伤害的近战武器上</p>\n<p>这个储液槽装有弹簧的针头可以连接到武器上，让它能注入致命的毒药。此外，储液槽内可以装满一剂伤口毒药。在改修后的武器攻击成功命中之后，你能立即以交互动作启动储液槽，将装载的毒药注入目标。使用新的毒药重新装填储液槽需要3个交互动作，并是用两只手。</p>\n<p>在武器上添加储液槽会破坏武器的平衡，导致武器的多重攻击惩罚比原来多1点（通常第二次攻击-6，第三次攻击-11；灵巧武器的话第二次攻击-5，第三次攻击-10）。</p>"
+        },
+        "Insight Coffee (Lesser)": {
+            "name": "次等灵感咖啡 Insight Coffee (Lesser)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>一种常见于学习过炼金术调查员们的选择，灵感咖啡在渗滤时灌注了炼金调味料。在你饮用灵感咖啡后一小时内，若你拥有策士之击职业能力，则你可将来自于该能力的额外伤害改为d8而非原先的d6。此外，你在使用对应技能以进行回忆知识检定时获得+2物品加值，对应技能由咖啡被制作所使用的配方所决定。</p>\n<ul>\n<li><strong>双重浓缩</strong> 宗教</li>\n<li><strong>榛果拿铁</strong> 自然</li>\n<li><strong>摩卡咖啡</strong> 奥法</li>\n<li><strong>香草拿铁</strong> 社群</li>\n<li><strong>南瓜拿铁</strong> 神秘</li>\n<li><strong>太妃咖啡</strong> 医疗</li>\n</ul>"
+        },
+        "Journeybread": {
+            "name": "行路面包 Journeybread",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>行路面包含有多种水果、坚果和具有炼金术功效的谷物。吃一个行路面包能够满足你一天内所有食物和水的需求。若你在此前一星期内没有摄取到正常食物的话，你会对行路面包临时免疫，这将持续到你在连续的24小时如同正常饮食般的进食正常食物与喝水后中止。</p>"
+        },
+        "Linguist's Dictionary": {
+            "name": "语言学家的词典 Linguist's Dictionary",
+            "description": "<p>这本大部头用结实的皮革装订，带有多个有彩色书签和分页。它的标题和文本不断在不同语言之间切换。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的下个动作是施放由此魔典准备的、允许你理解另一种语言的法术，例如<em>@UUID[Compendium.pf2e.spells-srd.vTQvfYu2llKQedmY]{通晓语言 Comprehend Language}</em>或<em>@UUID[Compendium.pf2e.spells-srd.SwUiVavHKMWG7t5K]{巧言术 Tongues}</em></p>\n<hr />\n<p><strong>效果</strong> 魔典会吸收由此方式翻译的某种语言的知识（如果不止一种的话由施法者选择），允许魔典的持有者在法术持续时间结束以后也能以该语言进行基本的交流。<em>语言学家的词典</em>同时只能收录一种语言。</p>"
+        },
+        "Owlbear Egg": {
+            "name": "枭熊蛋 Owlbear Egg",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>枭熊蛋不仅在被煮熟时很美味，而且在被炼金试剂灌注后还能让你像枭熊一样发出尖啸声。所有位于你@Template[type:emanation|distance:30]内的生物都需尝试一次@Check[type:will|dc:23]豁免。无论其豁免结果如何，该范围内的生物均会临时免疫枭熊蛋1分钟。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}并且@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮。</p>"
+        },
+        "Poison Concentrator (Greater)": {
+            "name": "高等毒药浓缩器 Poison Concentrator (Greater)",
+            "description": "<p>这种压缩装置可以把两份毒药浓缩。作为一个具有操纵特征的10分钟活动，你能使用毒药浓缩器将两份不超过14级的相同炼金毒药组合在一起，创造一个单一的浓缩版毒药，其DC有+1物品加值。</p>"
+        },
+        "Poison Concentrator (Major)": {
+            "name": "上等毒药浓缩器 Poison Concentrator (Major)",
+            "description": "<p>这种压缩装置可以把两份毒药浓缩。作为一个具有操纵特征的10分钟活动，你能使用毒药浓缩器将两份不超过18级的相同炼金毒药组合在一起，创造一个单一的浓缩版毒药，其DC有+1物品加值。</p>"
+        },
+        "Poison Fizz (Moderate)": {
+            "name": "中等毒爆糖 Poison Fizz (Moderate)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>由蜂蜜和炼金试剂混合而成，毒物爆炸糖是一种活跃的甜方糖，会在你的口中发出噼啪声。在1小时内，你获得对毒素伤害的抗性并在对抗毒素和被石化的豁免检定时获得+3物品加值。</p>\n<p><strong>次要效果</strong> <span class=\"pf2-icon\">2</span> (毒素)</p>\n<p><strong>效果</strong> 你咬碎毒爆糖以向@Template[type:cone|distance:15]距离内喷射其中的毒液和绿薄荷。其会造成[[/r 4d6[poison]]]伤害（@Check[type:reflex|dc:29|basic:true|traits:poison]豁免）。豁免大失败的生物同时会获得@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}直到你的下回合开始时结束，且其会临时免疫来自于毒爆糖的目盲状态1小时。</p>"
+        },
+        "Sense-Dulling Hood (Lesser)": {
+            "name": "次等感官迟钝面罩 Sense-Dulling Hood (Lesser)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>有时候，敌人危险的特殊能力是让相对标准的感官成为不利因素。从食腐怪的恶臭到鹰身女妖的歌声，许多生物都会利用猎物的感官对付自己。感官迟钝面罩是一种宽大的一次性面罩，从密封包装中取出之后可以裹在头上。根据面罩的类型，它能让你在10分钟内，对听觉、嗅觉和视觉效果的豁免有+2物品加值。因为它让你的感官变得迟钝又不剥夺你的感官，所以裹上面罩期间，察觉检定还会有-1减值。</p>"
+        },
+        "Silver Crescent (Moderate)": {
+            "name": "中等银新月 Silver Crescent (Moderate)",
+            "description": "<p>银新月被内有了辣味的罗望子和青柠等香料，它最初是用来帮助食用者对抗不死生物的。在1小时内，你如同火把一样散发出冷白色的光芒，以及你在对抗嗅觉效果的豁免检定时获得+2物品加值。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。</p>\n<p><strong>次要效果</strong> <span class=\"\\&quot;pf2-icon\\&quot; pf2-icon\">1</span></p>\n<hr />\n<p><strong>效果</strong> 一道光束降落在你所选择120尺之内的一5尺方格中。任何位于此方格中的生物需尝试一次@Check[type:reflex|dc:28|basic:true]豁免来对抗受到[[/r 7d6[positive]]]正能量伤害，以及豁免失败者将会@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到它下回合结束时。该伤害来源同时被视为银制以计算弱点和抗性。随后银新月失效。</p>"
+        },
+        "Soothing Toddy": {
+            "name": "安魂甜酒 Soothing Toddy",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>散发着安心花香的热茶，一份安魂甜酒给予你在对抗情绪效果的豁免检定和在制作时所混入的酒相对应的特征豁免检定中获得＋1物品加值。这些好处持续1小时。</p>\n<ul>\n<li><strong>苦杏酒</strong> 听觉</li>\n<li><strong>柠檬酒</strong> 嗅觉</li>\n<li><strong>威士忌</strong> 视觉</li>\n</ul>"
+        },
+        "Sprite Apple (Pink)": {
+            "name": "粉妖精果 Sprite Apple (Pink)",
+            "description": "<p><strong>启动</strong> 1分钟 (交互)</p>\n<p>一层泡泡糖覆盖着妖精果。在你食用妖精果后10分钟内，你在@Template[type:emanation|distance:20]内散发出明亮光照（以及接下来的20尺产生昏暗光照）。当你散发光芒且可见时，你不能@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，以及在若你正在@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}时，你被视为隐蔽而非无踪。该光照的颜色由妖精果外层的泡泡糖所决定。而不同类型的妖精果会使明亮光照内的生物获得不同的效果。</p>\n<p>明亮光照范围内的生物的脑海中正在涌现大量创意，他们在表演检定中获得＋1物品加值。</p>"
+        },
+        "Tanglefoot Extruder": {
+            "name": "绊足包挤出机 Tanglefoot Extruder",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种仿照蜘蛛吐丝器的便携式喷嘴能将炼金粘合剂编织成临时结构。以一个交互动作，你能将一个绊足包安装到挤出机上。装填了绊足包的挤出机可以被启动，消耗装填的绊足包然后将其变为一条30尺长的绳子、鞭子或网，取决于启动时你选择的喷嘴模具。创造出的物品存在1小时。@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}创造出的绳子或网的DC（如果它被用于捆缚生物）等同于消耗的绊足包的DC，并且成功脱逃会导致创造出的物品被摧毁。</p>"
+        },
+        "Thousand-Pains Fulu (Burl)": {
+            "name": "瘤之千难符箓 Thousand-Pains Fulu (Burl)",
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:35|basic:true|traits:poison]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>尽管这张绿色的符箓看起来很吸引人，但它却散发着不详的气息。符箓造成[[/r 10d8[poison]]]伤害，导致目标的身体对不利于他们的气作出反应。失败或大失败时，若目标承受火焰伤害，则会同时受到[[/r 2d8[persistent,poison]]]伤害。该效果具有毒素特征。</p>"
+        },
+        "Thousand-Pains Fulu (Void)": {
+            "name": "虚之千难符箓 Thousand-Pains Fulu (Void)",
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:38|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>这张紫色符箓正中的黑点就好像无底洞一般吸取着能量。符箓打散了目标的气，从而造成[[/r 12d10[negative]]]伤害。失败或大失败时，若目标在1分钟内承受任何其他伤害，它就会同时承受[[/r 2d10[persistent,negative]]]伤害。该效果具有死亡和负能量特征。每当目标承受该持续伤害时，距离目标30尺范围内的任意生物都能够使用反应动作来获取临时生命值，可用的临时生命值数值等同于该持续伤害造成的伤害数值，该可用的临时生命值会分配给所有采取反应动作的生物。若贴符箓的生物位于30尺范围内，且该生物愿意的话，它能直接获得所有可用临时生命值（而非分配给那些使用动作的生物）。这些临时生命值会在1分钟后消失。</p>"
+        },
+        "Tome of Restorative Cleansing (Lesser)": {
+            "name": "次等滋补清洁书卷 Tome of Restorative Cleansing (Lesser)",
+            "description": "<p>这本书在新月之夜是深蓝色的，随着月亮渐圆逐渐变为鲜红色。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象(治疗, 死灵系, 正能量)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的上个动作是施放一个由魔典中准备的法术，并且法术移除了你或你盟友身上的某个有害状态或苦难</p>\n<hr />\n<p><strong>效果</strong> 选择某个被满足要求的法术移除了状态的生物。生物获得[[/r 1d8]]临时生命值，持续1小时。</p>"
+        },
+        "Tome of Scintillating Sleet": {
+            "name": "闪光雨雪书卷 Tome of Scintillating Sleet",
+            "description": "<p>这本书的前12页用两种语言描述了相同的故事：前6页用的是歌者语，后6页用的是索门卡使用的古巨人语方言，索门卡是一种居住在冰原的类人生物。故事讲的是一个索门卡在阳光下花很长时间堆了个雪巨人，然后患上了雪盲症。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放一个造成伤害的[寒冷]法术，被法术伤害的生物同时还会因为寒冷效果区域和周围光线的反射而陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}3轮。如果受影响的生物对上述法术的豁免大失败，或者你对该生物的法术攻击骰大成功，它将改为陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，然后目眩三轮。</p>"
+        },
+        "Tracker's Stew": {
+            "name": "追猎者的炖菜 Tracker's Stew",
+            "description": "<p><strong>启动</strong> 10分钟 (交互)</p>\n<p>炼金试剂以宾治酒的形式加入到这碗炖菜中；炖汤由大量西红柿、碎坚果、洋葱和块茎混合而成，通常里面还有一些家禽肉。炖菜常常用于配饭或面。当你食用炖菜后，其会提升你的感知与追踪能力直到24小时后或次日准备时（取其先者）。你在掩盖行踪和@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}行动的生存检定中获得＋1物品加值。你也可在上述一项行动中以全速移动或是同时选择这两项行动并以半速移动。</p>"
+        },
+        "Troll Hide": {
+            "name": "巨魔毛皮 Troll Hide",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>活体巨魔组织被整合进了这套革甲中。护甲背部有两个有机容器，每个容易都能容纳一剂生命灵药。每个灵药都需要3个交互动作来安装。为了让护甲正常发挥作用，两个灵药的等级必须相同。装填后的巨魔毛皮可以被启动，使盔甲上的再生组织填充你的伤口。在每轮的开始，你恢复相当于装填的灵药的等级的生命值。当次你从盔甲恢复至少13点生命值时，你就能再生一个受损或残废的器官。如果你在某轮中从护甲恢复了至少9点生命值，你能花费一个交互动作将被切断的身体部位固定在切口上来重新接上它。如果你受到火焰或酸液伤害，护甲会暂时失效，直到你的下个回合结束。如果护甲自身受到伤害，它在治疗你之前会优先恢复自己的生命值。恢复效果持续8轮。一旦启动，护甲就无法解除启动。在此期间，护甲会消耗生命灵药，并且直到重新装填2瓶新的灵药之前护甲无法再启动。</p>"
+        },
+        "Undertaker's Manifest": {
+            "name": "送葬人的名单 Undertaker's Manifest",
+            "description": "<p>殡仪馆的送葬人有时需要避开那些坐立不安的客户，而勤劳的死灵法师则希望避免引起墓地看守和机警的殡仪馆送葬人的注意，因此他们使用这种可怕的表单来帮助自己。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果你的下个动作是施放一个死灵系法术，在施放该法术的同时，你周围会出现一团翻滚的阴云，在接下来的3轮中产生以你为中心的@Template[type:emanation|distance:30]昏暗光照。这对光照等级比昏暗更暗的区域没有影响。</p>"
+        },
+        "Weapon Siphon": {
+            "name": "武器虹吸管 Weapon Siphon",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这组管子沿着武器的打击面蜿蜒而下，用于输送炼金炸弹的能量。以一个交互动作，一个单独的次等炼金炸弹可以被安装在武器虹吸管上。炸弹必须是能造成能量伤害的，例如强酸瓶、炽火胶、瓶装闪电、霜冻瓶或暴雷石。在接下来用武器进行的三次攻击中，除了正常的武器伤害外，还能造成炸弹伤害类型的1d4伤害。如果在做出第一次攻击之后，第二次和第三次攻击没有在1分钟内做出，炸弹的能量就会被浪费掉。这些攻击不会造成炸弹的溅射伤害或其他特殊效果，也不会被任何增幅或修改炸弹效果的能力影响。</p>\n<p>在武器上添加虹吸管会破坏武器的平衡，导致武器的多重攻击惩罚比原来多1点（通常第二次攻击-6，第三次攻击-11；灵巧武器的话第二次攻击-5，第三次攻击-10）。</p>"
+        },
+        "Worm Vial": {
+            "name": "蠕虫小瓶 Worm Vial",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>打开这个小瓶，就会施放它的破坏性内容物：一条重构的巨型紫虫。蠕虫有两种功能，当你启动物品时选择其中一种。</p>\n<p><strong>掘进</strong> 紫虫掘进最远80尺，留下一条隧道。它能挖穿坚固的岩石，但是在这种情况下最远只能掘进40尺。</p>\n<p><strong>吞噬</strong> 紫虫尝试活吞一个生物，在消化道里碾压它，然后再将其吐出来。目标必须在15尺内，并需要尝试@Check[type:reflex|dc:30]豁免。如果失败，它受到[[/r (3d6+9)[bludgeoning]]]伤害（大失败双倍伤害）。之后蠕虫会将敌人吐到30尺内某个未占据空间的地面上，生物还会从20尺高度的坠落中受到伤害。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一具紫虫尸体。</p>"
         }
     }
 }
