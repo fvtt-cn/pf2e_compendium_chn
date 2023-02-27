@@ -13218,6 +13218,358 @@
         "Wrecker": {
             "name": "破坏锤 Wrecker",
             "description": "<p>破坏锤是由矮人链锤和一个沉重的，加固过的臂甲组装在一起的，可以如一个超巨大的投石索一样射击，然后手动启动一个发条链轴就可以回收并装填破坏锤。破坏锤必须在已装填的状态下才能从远程配置切换成近战配置。</p>"
+        },
+        "Blister Ammunition (Greater)": {
+            "name": "高等水疱弹药 Blister Ammunition (Greater)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>水疱弹药有经过炼金术处理的刺激物，如如花粉，胡椒和蚁酸。被启动后的水疱弹药击中的生物除了受到正常伤害外，必须尝试@Check[type:fortitude|dc:35]豁免，否则奇痒难耐，持续10轮。如果重击，强韧豁免DC+2（@Check[type:fortitude|dc:37]），并且目标@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。在持续期间内，每次目标尝试专注动作时，它必须尝试@Check[type:flat|dc:8]检定，失败后丢失动作。受影响的生物能通过咦个交互动作来抓挠和打喷嚏，使其自动通过纯骰检定。一旦受影响的生物花费了总计3个交互动作来抓挠和打喷嚏，效果提前结束。这些交互动作不必连续。</p>"
+        },
+        "Blister Ammunition (Lesser)": {
+            "name": "次等水疱弹药 Blister Ammunition (Lesser)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>水疱弹药有经过炼金术处理的刺激物，如如花粉，胡椒和蚁酸。被启动后的水疱弹药击中的生物除了受到正常伤害外，必须尝试@Check[type:fortitude|dc:19]豁免，否则奇痒难耐，持续3轮。如果重击，强韧豁免DC+2（@Check[type:fortitude|dc:21]），并且目标@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。在持续期间内，每次目标尝试专注动作时，它必须尝试@Check[type:flat|dc:8]检定，失败后丢失动作。受影响的生物能通过咦个交互动作来抓挠和打喷嚏，使其自动通过纯骰检定。一旦受影响的生物花费了总计3个交互动作来抓挠和打喷嚏，效果提前结束。这些交互动作不必连续。</p>"
+        },
+        "Blister Ammunition (Moderate)": {
+            "name": "中等水疱弹药 Blister Ammunition (Moderate)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>水疱弹药有经过炼金术处理的刺激物，如如花粉，胡椒和蚁酸。被启动后的水疱弹药击中的生物除了受到正常伤害外，必须尝试@Check[type:fortitude|dc:28]豁免，否则奇痒难耐，持续6轮。如果重击，强韧豁免DC+2（@Check[type:fortitude|dc:30]]），并且目标@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。在持续期间内，每次目标尝试专注动作时，它必须尝试@Check[type:flat|dc:8]检定，失败后丢失动作。受影响的生物能通过咦个交互动作来抓挠和打喷嚏，使其自动通过纯骰检定。一旦受影响的生物花费了总计3个交互动作来抓挠和打喷嚏，效果提前结束。这些交互动作不必连续。</p>"
+        },
+        "Dragonscale Staff": {
+            "description": "<p>这根<em>+1强击长棒</em>覆盖着从一头龙身上蜕落或收割下来的鳞片。当你从长棒的格挡特征中获得AC上的环境加值时，你也获得针对酸液、寒冷、电击、火焰、或毒素的5点抗力，取决于提供鳞片的龙所使用的喷吐武器的伤害类型；例如，由白龙的鳞片制作的<em>龙鳞杖</em>会提供寒冷抗性。当该抗性防止你承受伤害时，龙鳞杖会在1轮的时间内造成额外1点相应类型的伤害。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含一头龙的鳞片，且这头龙的喷吐武器会造成酸液、寒冷、电击、火焰、或毒素伤害。</p>",
+            "name": "龙鳞杖 Dragonscale Staff"
+        },
+        "Elemental Ammunition (Moderate)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>当元素弹药中的炼金试剂被启动时，会在撞击时雾化，对目标造成[[/r 2d4[persistent,[damageType]]]酸液、寒冷、电击、火焰或毒素伤害，并且在造成正常伤害的基础上造成[[/r (2[splash])[damageType]]]{2溅射伤害}。每种伤害类型都的弹药需要不同的公式，弹药获得和伤害类型相匹配的特征。</p>",
+            "name": "中等元素弹药 Elemental Ammunition (Moderate)"
+        },
+        "Ghostcaller's Planchette (Greater)": {
+            "description": "<p>这个微型的木质占卜板上刻有旨在吸引魂魄的印记。附着之后，印记开始变暗，占卜板会变得有些透明。通过启动此物品施放的法术DC为38。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动占卜板施放一个死灵系法术之后，你获得10点物理伤害抗力（除了<em>幽冥</em>），直到你的下个回合开始。虚体生物对你攻击（例如幽灵的鬼手）被视为<em>幽冥</em>。</li>\n<li><strong>武器</strong> 当你通过启动占卜板施放一个死灵系法术之后，所附着的武器将获得<em>幽冥</em>和<em>高等瓦解</em>符文效果，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.mAMEt4FFbdqoRnkN]{恐吓之触 Chill Touch}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施放7环<em>@UUID[Compendium.pf2e.spells-srd.hghGRzOSzEl4UXdS]{唤起魂灵 Invoke Spirits}</em>。</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.JLdbyGKhjwAAoRLs]{怨影风暴 Tempest of Shades}</em>。</p>",
+            "name": "高等幽灵召唤者的占卜板 Ghostcaller's Planchette (Greater)"
+        },
+        "Jolt Coil": {
+            "name": "震颤线圈 Jolt Coil",
+            "description": "<p>在这个小玻璃管里有一根盘绕的细丝，发出霹雳吧啦的电流，任何握住它的人都会被静电刺痛。通过启动此物品施放的法术DC为17。</p>\n<ul>\n<li><strong>护甲</strong> 你获得2点电击抗力。</li>\n<li><strong>武器</strong> 当你通过启动线圈施放一个电击法术之后，你用该武器进行的打击将额外附带1d4电击伤害，直到你的下个回合结束。</li>\n</ul>\n<p>@UUID[Compendium.pf2e.equipment-effects.9mIS76oZkxXQ4g3T]{效果: 震颤线圈 - 护甲}</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.mHIdEC7RX6isILiM]{效果: 震颤线圈 - 武器}</p>\n<p>@Check[type:reflex|dc:17|basic:true|name:Jolt Coil Spell|traits:spell|showDC:all]</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.kBhaPuzLUSwS6vVf]{电弧击 Electric Arc}</em>。</p>"
+        },
+        "Jolt Coil (Greater)": {
+            "name": "高等震颤线圈 Jolt Coil (Greater)",
+            "description": "<p>在这个小玻璃管里有一根盘绕的细丝，发出霹雳吧啦的电流，任何握住它的人都会被静电刺痛。通过启动此物品施放的法术DC为24。</p>\n<ul>\n<li><strong>护甲</strong> 你获得3点电击抗力。</li>\n<li><strong>武器</strong> 当你通过启动线圈施放一个电击法术之后，你用该武器进行的打击将额外附带[[/r 1d6[electricity]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p>@UUID[Compendium.pf2e.equipment-effects.YflZZ7EG7JJkdX0d]{效果: 高等震颤线圈 - 护甲}</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.EwHufLQI1z1QzqZU]{效果: 高等震颤线圈 - 武器}</p>\n<p>@Check[type:reflex|dc:24|basic:true|name:Jolt Coil Spell|traits:spell|showDC:all]</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.kBhaPuzLUSwS6vVf]{电弧击 Electric Arc}</em>。</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{闪电束 Lightning Bolt}</em>。</p>"
+        },
+        "Jolt Coil (Major)": {
+            "name": "上等震颤线圈 Jolt Coil (Major)",
+            "description": "<p>在这个小玻璃管里有一根盘绕的细丝，发出霹雳吧啦的电流，任何握住它的人都会被静电刺痛。通过启动此物品施放的法术DC为29。</p>\n<ul>\n<li><strong>护甲</strong> 你获得5点电击抗力。</li>\n<li><strong>武器</strong> 当你通过启动线圈施放一个电击法术之后，你用该武器进行的打击将额外附带[[/r 1d8[electricity]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p>@UUID[Compendium.pf2e.equipment-effects.pnBdSjOtQb9T1ajL]{效果: 上等震颤线圈 - 护甲}</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.ceIvpmxWqBJpBHIn]{效果: 上等震颤线圈 - 武器}</p>\n<p>@Check[type:reflex|dc:29|basic:true|name:Jolt Coil Spell|traits:spell|showDC:all]</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.kBhaPuzLUSwS6vVf]{电弧击 Electric Arc}</em>。</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你施放4环<em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{闪电束 Lightning Bolt}</em>。</p>\n<hr />\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.n7OgbKme4hNwxVwQ]{引动雷电 Draw the Lightning}</em>。</p>"
+        },
+        "Judgment Thurible": {
+            "description": "<p>这个球形香炉顶部的金色圣徽会根据其主人的信仰改变形状。如果你不信仰神祇，或者你的神祇是绝对中立阵营，则你无法从<em>审判香炉</em>上获得任何好处。通过启动此物品施放的法术DC为27。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动香炉施法之后，香炉会对你施展防护法阵，持续1轮。你选择其阵营，但必须是和你神祇相反的阵营之一。</li>\n<li><strong>武器</strong> 当你通过启动香炉施法之后，武器获得由你选择的<em>混沌</em>、<em>公理</em>、<em>神圣</em>或<em>邪恶 </em>符文，直到你的下个回合结束。你只能选择你神祇所具有的阵营（<em>混沌</em>对混乱，<em>公理</em>对守序，<em>神圣</em>对善良，<em>邪恶 </em>对邪恶）。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.qwZBXN6zBoB9BHXE]{圣枪术 Divine Lance}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.hVU9msO9yGkxKZ3J]{神圣愤怒 Divine Wrath}</em>。</p>",
+            "name": "审判香炉 Judgment Thurible"
+        },
+        "Judgment Thurible (Major)": {
+            "description": "<p>这个球形香炉顶部的金色圣徽会根据其主人的信仰改变形状。如果你不信仰神祇，或者你的神祇是绝对中立阵营，则你无法从<em>审判香炉</em>上获得任何好处。通过启动此物品施放的法术DC为43。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动香炉施法之后，香炉会对你施展防护法阵，持续1轮。你选择其阵营，但必须是和你神祇相反的阵营之一。</li>\n<li><strong>武器</strong> 当你通过启动香炉施法之后，武器获得由你选择的<em>混沌</em>、<em>公理</em>、<em>神圣</em>或<em>邪恶 </em>符文，直到你的下个回合结束。此符文带来的额外伤害为2d6。你只能选择你神祇所具有的阵营（<em>混沌</em>对混乱，<em>公理</em>对守序，<em>神圣</em>对善良，<em>邪恶 </em>对邪恶）。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.qwZBXN6zBoB9BHXE]{圣枪术 Divine Lance}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展7环<em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{神圣裁决 Divine Decree}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.kIRWUBxocERjIBni]{召唤神使 Summon Deific Herald}</em>。</p>",
+            "name": "上等审判香炉 Judgment Thurible (Major)"
+        },
+        "Jyoti's Feather (Major)": {
+            "name": "上等焰刃使之羽 Jyoti's Feather (Major)",
+            "description": "<p><em>焰刃使之羽</em>是一种闪烁着红色和金色的羽毛，看起来几乎像金属材质，但摸起来又细腻柔软。大部分都不是真正的焰刃使羽毛制成的，因为避世隐居的焰刃使会避开来自物质位面的访客，但他们和正能量之间的联系使得咒心冠以他们的名字。</p>\n<ul>\n<li><strong>护甲</strong> 你在对抗[死亡]效果和[负能量]效果时的豁免有+4物品加值。</li>\n<li><strong>武器</strong> 你附着<em>羽毛</em>的武器获得<em>高等瓦解</em>符文。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.SnjhtQYexDtNDdEg]{稳定伤势 Stabilize}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展6环<em>@UUID[Compendium.pf2e.spells-srd.CzjQtkRuRlzRvwzg]{治愈之井 Healing Well}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.x5rGOmhDRDVQPrnW]{生命力场 Field of Life}</em>。</p>"
+        },
+        "Life Shot (Greater)": {
+            "name": "高等生命子弹 Life Shot (Greater)",
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>生命子弹是一种特殊弹药，里面有小剂量的生命灵药。被启动的生命子弹击中的生物不会受到攻击伤害，而是获得[[/r (7d4+10)[positive]]]{7d4+10治疗}，并且在1分钟对疾病和毒素效果在豁免上有+2物品加值。如果重击，投掷两次治疗并获得更好的结果（这是个幸运效果）。自愿承受这种攻击的生物在面对此攻击时@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-effects.Z9oPh462q82IYIZ6]{效果: 高等生命灵药}</p>"
+        },
+        "Life Shot (Lesser)": {
+            "name": "次等生命子弹 Life Shot (Lesser)",
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>生命子弹是一种特殊弹药，里面有小剂量的生命灵药。被启动的生命子弹击中的生物不会受到攻击伤害，而是获得[[/r (3d4+3)[positive]]]{3d4+3治疗}，并且在1分钟对疾病和毒素效果在豁免上有+1物品加值。如果重击，投掷两次治疗并获得更好的结果（这是个幸运效果）。自愿承受这种攻击的生物在面对此攻击时@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-effects.EpB7yJPEuG6ez4z3]{效果: 此等生命灵药}</p>"
+        },
+        "Life Shot (Major)": {
+            "name": "上等生命子弹 Life Shot (Major)",
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>生命子弹是一种特殊弹药，里面有小剂量的生命灵药。被启动的生命子弹击中的生物不会受到攻击伤害，而是获得[[/r (8d4+11)[positive]]]{8d4+11治疗}，并且在1分钟对疾病和毒素效果在豁免上有+3物品加值。如果重击，投掷两次治疗并获得更好的结果（这是个幸运效果）。自愿承受这种攻击的生物在面对此攻击时@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-effects.PpLxndUSgzgs6dd0]{效果: 上等生命灵药}</p>"
+        },
+        "Life Shot (Moderate)": {
+            "name": "中等生命子弹 Life Shot (Moderate)",
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>生命子弹是一种特殊弹药，里面有小剂量的生命灵药。被启动的生命子弹击中的生物不会受到攻击伤害，而是获得[[/r (5d4+7)[positive]]]{5d4+7治疗}，并且在1分钟对疾病和毒素效果在豁免上有+2物品加值。如果重击，投掷两次治疗并获得更好的结果（这是个幸运效果）。自愿承受这种攻击的生物在面对此攻击时@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-effects.Yxssrnh9UZJAM0V7]{效果: 中等生命灵药}</p>"
+        },
+        "Life Shot (Minor)": {
+            "name": "下等生命子弹 Life Shot (Minor)",
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>生命子弹是一种特殊弹药，里面有小剂量的生命灵药。被启动的生命子弹击中的生物不会受到攻击伤害，而是获得[[/r 1d4[positive]]]{1d4治疗}，并且在1分钟对疾病和毒素效果在豁免上有+1物品加值。如果重击，投掷两次治疗并获得更好的结果（这是个幸运效果）。自愿承受这种攻击的生物在面对此攻击时@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-effects.lPRuIRbu0rHBkoKY]{效果: 下等生命灵药}</p>"
+        },
+        "Life Shot (True)": {
+            "name": "真实生命子弹 Life Shot (True)",
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>生命子弹是一种特殊弹药，里面有小剂量的生命灵药。被启动的生命子弹击中的生物不会受到攻击伤害，而是获得[[/r (10d4+14)[positive]]]{10d4+14治疗}，并且在1分钟对疾病和毒素效果在豁免上有+4物品加值。如果重击，投掷两次治疗并获得更好的结果（这是个幸运效果）。自愿承受这种攻击的生物在面对此攻击时@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-effects.9MeHc072G4L8AJkp]{效果: 真实生命灵药}</p>"
+        },
+        "Lightweave Scarf": {
+            "name": "光波绑带 Lightweave Scarf",
+            "description": "<p>这条闪闪发光的布带最初是由一位来自精瑛的僧侣所使用的，他将其绑成了威力强大的<em>重拳缠手带</em>。通过启动此物品施放的法术DC为24。</p>\n<ul>\n<li><strong>护甲</strong> 你在针对[幻术系]效果的豁免上以及尝试@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}时的欺骗检定上有+2物品加值。</li>\n<li><strong>武器</strong>(视觉) 当你通过启动绑带施放一个幻术系法术之后，武器会被令人困惑的幻象图案笼罩。你的下次打击如果命中目标，会让目标@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1回合。如果你在下个回合结束前未进行打击，则幻象毫无影响地消失。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.kl2q6JvBZwed4B6v]{舞光术 Dancing Lights}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.K2WpC3FFoHrqX9Q5]{催眠图纹 Hypnotic Pattern}</em>。</p>"
+        },
+        "Lightweave Scarf (Greater)": {
+            "name": "高等光波绑带 Lightweave Scarf (Greater)",
+            "description": "<p>这条闪闪发光的布带最初是由一位来自精瑛的僧侣所使用的，他将其绑成了威力强大的<em>重拳缠手带</em>。通过启动此物品施放的法术DC为34。</p>\n<ul>\n<li><strong>护甲</strong> 你在针对[幻术系]效果的豁免上以及尝试@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}时的欺骗检定上有+2物品加值。</li>\n<li><strong>武器</strong>(视觉) 当你通过启动绑带施放一个幻术系法术之后，武器会被令人困惑的幻象图案笼罩。你的下次打击如果命中目标，会让目标@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1回合。如果你在下个回合结束前未进行打击，则幻象毫无影响地消失。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.kl2q6JvBZwed4B6v]{舞光术 Dancing Lights}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展6环<em>@UUID[Compendium.pf2e.spells-srd.K2WpC3FFoHrqX9Q5]{催眠图纹 Hypnotic Pattern}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.RQjSQVZRG497cJhX]{震荡图纹 Vibrant Pattern}</em>。</p>"
+        },
+        "Mindlance": {
+            "name": "心灵长枪 Mindlance",
+            "description": "<p>车队守卫使用这把<em>+1强击重型火绳枪</em>来非致命地——但威力强大地——阻止大批来犯的土匪。射击时，这把星光枪造成心灵伤害并在攻击中添加非致命特征。每把心灵长枪也安装了一个能从该火器上所有基础符文中获益的加固枪托。当你在使用心灵长枪进行的一次攻击骰中达成大成功，目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，除非它成功通过一次@Check[type:will|dc:24]豁免。</p>"
+        },
+        "Ooze Ammunition (Lesser)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>泥怪弹药含有黏性物质胶囊。如果你用被启动的泥怪弹药击中一个生物，它会造成酸液伤害，取代原本的伤害类型，然后该生物会受到-5尺速度减值和[[/r 1d4[persistent,acid]]]伤害，直到效果结束。重击时，除了其他效果之外，生物还会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。目标可以通过逃脱粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸液伤害。结束效果的生物依然会受到本回合的持续性伤害。</p>",
+            "name": "次等泥怪弹药 Ooze Ammunition (Lesser)"
+        },
+        "Ooze Ammunition (Major)": {
+            "name": "上等泥怪弹药 Ooze Ammunition (Major)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>泥怪弹药含有黏性物质胶囊。如果你用被启动的泥怪弹药击中一个生物，它会造成酸液伤害，取代原本的伤害类型，然后该生物会受到-15尺速度减值和[[/r 4d4[persistent,acid]]]伤害，直到效果结束。重击时，除了其他效果之外，生物还会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。目标可以通过逃脱粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸液伤害。结束效果的生物依然会受到本回合的持续性伤害。</p>"
+        },
+        "Polarizing Mace": {
+            "description": "<p>即便只是握着这把<em>+1强击电击轻型硬头锤</em>的琥珀握柄都能让你的头发竖起来。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> <em>接地针</em>的持用者处于30尺内</p>\n<hr />\n<p><strong>效果</strong> 强烈的电流连接到你配对的武器上。处于你和接地针的持用者之间连线上的所有生物承受[[/r 4d12[electricity]]]伤害（@Check[type:reflex|dc:24|basic:true]豁免）。</p>\n<p><strong>特殊</strong> 电极锤和<em>接地针</em>相配对。</p>",
+            "name": "电极锤 Polarizing Mace"
+        },
+        "Radiant Prism (Major)": {
+            "description": "<p>无论这枚玻璃棱镜附着的是护甲还是武器，它都能发出柔和的七彩光芒。启动此物品施放的法术DC为43。</p>\n<ul>\n<li><strong>护甲</strong>(光亮) 当你通过启动棱镜来施放一个防护系法术后，你周围会被昏暗光照包围，让你像火炬一样发光并且获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，持续2轮。</li>\n<li><strong>武器</strong> 当你通过启动棱镜来施放一个防护系法术后，该武器打击时获得<em>高等光辉</em>性能符文，直到你的下个回合结束。光辉符文的伤害增加到每种伤害类型各3d4。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.WBmvzNDfpwka3qT4]{光亮术 Light}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.4nEY2BcV85wavKLO]{虹光护甲 Prismatic Armor}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.PngDCmU0MXZkbu0v]{虹光法球 Prismatic Sphere}</em>。</p>",
+            "name": "上等彩光棱镜 Radiant Prism (Major)"
+        },
+        "Resonating Fork": {
+            "name": "共鸣音叉 Resonating Fork",
+            "description": "<p>这种由金属制成的双叉会持续发出低沉的嗡嗡声，被触碰是会发出轻微的振动。启动此物品施放的法术攻击骰为+9，法术DC 19。</p>\n<ul>\n<li><strong>护甲</strong> 你获得2点音波抗力，并且对[听觉]或[音波]效果的豁免骰有+1物品加值。</li>\n<li><strong>武器</strong> 当你通过启动音叉来施放一个[音波]法术之后，武器会和捕获的音波一起共鸣。你的下次打击如果命中会让目标@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮（重击耳聋3轮）。如果你在下个回合结束前未进行打击，则音波毫无影响地消失。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.W02bHXylIpoXbO4e]{扩音术 Bullhorn}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.yafsV0ni7rFgqJBj]{轻薄恶言 Biting Words}</em>。</p>"
+        },
+        "Resonating Fork (Greater)": {
+            "name": "高等共鸣音叉 Resonating Fork (Greater)",
+            "description": "<p>这种由金属制成的双叉会持续发出低沉的嗡嗡声，被触碰是会发出轻微的振动。启动此物品施放的法术攻击骰为+13，法术DC23。</p>\n<ul>\n<li><strong>护甲</strong> 你获得5点音波抗力，并且对[听觉]或[音波]效果的豁免骰有+2物品加值。</li>\n<li><strong>武器</strong> 当你通过启动音叉来施放一个[音波]法术之后，武器会和捕获的音波一起共鸣。你的下次打击如果命中会让目标@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}3轮（重击耳聋1分钟）。如果你在下个回合结束前未进行打击，则音波毫无影响地消失。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.W02bHXylIpoXbO4e]{扩音术 Bullhorn}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展2环<em>@UUID[Compendium.pf2e.spells-srd.yafsV0ni7rFgqJBj]{轻薄恶言 Biting Words}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.wzLkNU3AAqOSKFPR]{音鸣爆 Sound Burst}</em>。</p>"
+        },
+        "Resonating Fork (Major)": {
+            "description": "<p>这种由金属制成的双叉会持续发出低沉的嗡嗡声，被触碰是会发出轻微的振动。启动此物品施放的法术攻击骰为+19，法术DC29。</p>\n<ul>\n<li><strong>护甲</strong> 你获得10点音波抗力，并且对[听觉]或[音波]效果的豁免骰有+2物品加值。</li>\n<li><strong>武器</strong> 当你通过启动音叉来施放一个[音波]法术之后，武器会和捕获的音波一起共鸣。你的下次打击如果命中会让目标@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟（重击耳聋1小时）。如果你在下个回合结束前未进行打击，则音波毫无影响地消失。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.W02bHXylIpoXbO4e]{扩音术 Bullhorn}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展4环<em>@UUID[Compendium.pf2e.spells-srd.wzLkNU3AAqOSKFPR]{音鸣爆 Sound Burst}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.qTzvVnAMWL05VitC]{痛震心髓 Painful Vibrations}</em>。</p>",
+            "name": "上等共鸣音叉 Resonating Fork (Major)"
+        },
+        "Rime Crystal": {
+            "description": "<p>一片雪花在这个水晶球中间缓慢旋转，无论外面天气有多炎热，它的表面都覆盖着一层霜。启动此物品施放的法术攻击骰+7，法术DC 17。</p>\n<ul>\n<li><strong>护甲</strong> 你获得2点寒冷抗力。</li>\n<li><strong>武器</strong> 当你通过启动水晶来施放一个[寒冷]法术，你以该武器进行打击造成额外[[/r 1d4[cold]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{冰冻射线 Ray of Frost}</em>。</p>",
+            "name": "雾凇水晶 Rime Crystal"
+        },
+        "Rime Crystal (Major)": {
+            "description": "<p>一片雪花在这个水晶球中间缓慢旋转，无论外面天气有多炎热，它的表面都覆盖着一层霜。启动此物品施放的法术攻击骰+20，法术DC30。</p>\n<ul>\n<li><strong>护甲</strong> 你获得10点寒冷抗力。</li>\n<li><strong>武器</strong> 当你通过启动水晶来施放一个[寒冷]法术，你以该武器进行打击造成额外[[/r 1d8[cold]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{冰冻射线 Ray of Frost}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.kHyjQbibRGPNCixx]{冰风暴 Ice Storm}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.3puDanGfpEt6jK5k]{寒冰锥 Cone of Cold}</em>。</p>",
+            "name": "上等雾凇水晶 Rime Crystal (Major)"
+        },
+        "Rime Foil": {
+            "name": "雾凇花剑 Rime Foil",
+            "description": "<p>这把<em>+2强击冻寒细剑</em>有着冰蓝色的剑刃，它的剑柄包裹着厚皮革，还点缀了皮毛以保护持用者的手。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你最近的一个动作是使用<em>雾凇花剑</em>命中了一个生物</p>\n<hr />\n<p><strong>效果</strong> 你对该目标施展5环的<em>@UUID[Compendium.pf2e.spells-srd.Pwq6T7xpfAJXV5aj]{幽影监牢 Phantom Prison}</em>法术（@Check[type:will|dc:22|traits:action:disbelieve]以不相信）。如果该目标在最近的一轮内被<em>碎冰图</em>伤害过，DC改为@Check[type:will|dc:24|traits:action:disbelieve]。</p>\n<hr />\n<p><strong>特殊</strong> 雾凇花剑和<em>碎冰图</em>相配对。</p>"
+        },
+        "Rusting Ammunition (Greater)": {
+            "name": "高等锈蚀弹药 Rusting Ammunition (Greater)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>锈蚀弹药是由锈蚀怪的唾液制成的，当被启动时，对主要由金属制成的物体或生物造成伤害。目标受到[[/r 4d8[persistent,force]]]伤害，持续6轮。如果生物在受到这种持续伤害时生命值减少到0，会碎成粉末；它的装备依然存在。对于物品来说，弹药可以摧毁10立方尺的物品。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一份@UUID[Compendium.pf2e.pathfinder-bestiary.mEmWRqTRxLUZQYSh]{锈蚀怪 Rust Monster}的唾液</p>"
+        },
+        "Sanguine Fang": {
+            "name": "血色尖牙 Sanguine Fang",
+            "description": "<p>一枚尖锐的吸血鬼牙齿这个烟熏小玻璃瓶里旋转，尖段上缓慢地滴下深红色的血液。启动此物品施放的法术DC为25。</p>\n<ul>\n<li><strong>护甲</strong> 你获得3点持续流血伤害抗力，并且对[负能量]特征的效果的豁免骰有+2物品加值。</li>\n<li><strong>武器</strong> 当你通过启动尖牙施放一个死灵系法术后，你以该武器进行打击造成额外[[/r 1d4[persistent,bleed]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.mAMEt4FFbdqoRnkN]{恐吓之触 Chill Touch}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.N1Z1oLPdBxaSgrEE]{吸血鬼之触 Vampiric Touch}</em>。</p>"
+        },
+        "Saurian Spike (Greater)": {
+            "name": "高等蜥龙人骨刺 Saurian Spike (Greater)",
+            "description": "<p>这根锯齿状的骨骼在上部越来越窄，直到变成锋利的尖端。以前的战斗留下的伤痕深深地刻在上面。持有<em>蜥龙人骨刺</em>的人常常会突然感到力量和信心激增。</p>\n<ul>\n<li><strong>护甲</strong> 你获得模糊感官灵敏嗅觉，范围30尺。</li>\n<li><strong>武器</strong>(听觉，情绪，恐惧，视觉) 当你通过启动骨刺来施放一个[变形]法术之后，你的战斗形态变得更加可怕。@Template[type:emanation|distance:60]范围内所有敌人都必须尝试@Check[type:will|dc:28]豁免，否则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.MPxbKoR54gkYkqLO]{凿爪术 Gouging Claw}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展5环<em>@UUID[Compendium.pf2e.spells-srd.KhM8MhoUgoUjBMIz]{恐龙形态 Dinosaur Form}</em>。</p>"
+        },
+        "Saurian Spike (Major)": {
+            "name": "上等蜥龙人骨刺 Saurian Spike (Major)",
+            "description": "<p>这根锯齿状的骨骼在上部越来越窄，直到变成锋利的尖端。以前的战斗留下的伤痕深深地刻在上面。持有<em>蜥龙人骨刺</em>的人常常会突然感到力量和信心激增。</p>\n<ul>\n<li><strong>护甲</strong> 你获得精确感官灵敏嗅觉，范围30尺。</li>\n<li><strong>武器</strong>(听觉，情绪，恐惧，视觉) 当你通过启动骨刺来施放一个[变形]法术之后，你的战斗形态变得更加可怕。@Template[type:emanation|distance:60]范围内所有敌人都必须尝试@Check[type:will|dc:34]豁免，否则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（大失败@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}）。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.MPxbKoR54gkYkqLO]{凿爪术 Gouging Claw}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展7环<em>@UUID[Compendium.pf2e.spells-srd.KhM8MhoUgoUjBMIz]{恐龙形态 Dinosaur Form}</em>。</p>"
+        },
+        "Scizore of the Crab": {
+            "description": "<p><em>角斗蟹钳</em>是一个额外具有擒抱武器特征的<em>+1角斗剪</em>。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>需求</strong> 你最近的一次动作是成功使用这把武器打击，或者使用这把武器@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}一个生物</p>\n<hr />\n<p><strong>效果</strong> 该目标被擒抱直到你下一轮结束。被擒抱的生物可以使用@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}动作脱离攫抓，如果你远离该生物，对受擒抱生物的攫抓也会中止。该效果与攫抓怪物能力一致。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 你使用这把武器擒抱了一个生物</p>\n<hr />\n<p><strong>效果</strong> 蟹钳活了过来并用力夹住目标，造成等于角斗蟹钳伤害骰数量的挥砍伤害。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含来自巨蟹或类似生物的一只钳子。</p>",
+            "name": "角斗蟹钳 Scizore of the Crab"
+        },
+        "Shattered Plan": {
+            "name": "碎冰图 Shattered Plan",
+            "description": "<p>虽然这个<em>+2强击冲击回力镖</em>上布满了闪闪发光，如发丝般细的裂缝，但这把武器在手里个感觉坚固得毋庸置疑。如果你伤害了一个在最近的一轮内被<em>雾凇花剑</em>打击过的目标，你挫伤了他颤抖的身体，目标的所有速度承受-5尺减值，重击时减值变为-10尺。</p>\n<hr />\n<p><strong>特殊</strong> 碎冰图和<em>雾凇花剑</em>相配对。</p>"
+        },
+        "Vigilant Eye (Greater)": {
+            "name": "高等警醒之眼 Vigilant Eye (Greater)",
+            "description": "<p>这个木圆盘上雕刻一只类人生物的眼睛，柔和的色调和木头融为一体。眼睛的瞳孔不断抽搐着移动，扫描携带者周围的环境。</p>\n<ul>\n<li><strong>护甲</strong>(揭示) 当你面对等级不高于警醒之眼的敌人时，你不会因为敌人@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}、或对你使用突然袭击而陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。当然，你依然会被夹击。</li>\n<li><strong>武器</strong> 当你以该武器对@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}、藏匿或无踪的敌人进行打击时，命中隐蔽敌人的纯骰DC为3，命中藏匿或无踪敌人的纯骰DC为9。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{侦测魔法 Detect Magic}。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.zvKWclOZ7A53DObE]{鹰眼术 Clairvoyance}</em>。</p>"
+        },
+        "Vine Whip": {
+            "description": "<p>这根<em>+1强击鞭子</em>是由危险植物生物的藤条制成的。它造成钝击或挥砍伤害，取决于来源生物的藤条攻击类型。例如，从杀人藤上收集的藤条会让藤鞭造成钝击伤害，而来自于曼陀罗草或蝰蛇藤的会造成穿刺伤害。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 命令，交互</p>\n<p><strong>需求</strong> 你的触及内存在土壤或沙子</p>\n<hr />\n<p><strong>效果</strong> 你放开这把武器并将它植入地面，它会扎根并自行对你最近一次攻击过的，或离它最近的（如果你的目标已经被击败）敌人发动攻击。</p>\n<p>该武器占据5尺方格，按照你的先攻顺序行动，并获得2个动作。它不会阻挡或阻碍尝试穿过该空间的敌人，也不能提供夹击或从夹击中获益。该武器无法使用反应，它在你的回合中行动。</p>\n<p>启动时，<em>藤鞭</em>的攻击骰上有+22外加其物品加值的攻击调整值（通常总共是+24）。它使用武器的通常的伤害但力量调整值为+0。藤鞭在命中或重击时自动触发的能力仍会生效，但该武器在扎根时无法被启动，也无法从你的任何能力中获益。</p>\n<p>每轮，当<em>藤鞭</em>使用完它的动作，尝试一次@Check[type:flat|dc:6]检定。失败时，该启动停止，<em>藤鞭</em>停止活动。你在10分钟内无法再次启动该物品。从地上移除<em>藤鞭</em>需要花费一个交互动作。扎根时，<em>藤鞭</em>获得快速治疗1。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含来自一个有藤条攻击的植物生物的藤条。</p>",
+            "name": "藤鞭 Vine Whip"
+        },
+        "Warding Statuette (Greater)": {
+            "name": "高等护身雕像 Warding Statuette (Greater)",
+            "description": "<p>这枚小雕像用肥皂石雕刻成神祇或守护者的形象，两面都有雕刻，表示永不松懈的警惕。启动此物品的法术攻击骰+20。</p>\n<ul>\n<li><strong>护甲</strong> 你对远程武器攻击获得5点抗力。</li>\n<li><strong>武器</strong> 当你以附着的武器打击命中，或当你启动雕像的法术效果打击命中，你能选择一个和命中生物相邻的生物。该生物的AC获得+1状态加值，直到你的下个回合开始。每个回合只能有一个生物从中受益。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.TVKNbcgTee19PXZR]{护盾术 Shield}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展5环<em>@UUID[Compendium.pf2e.spells-srd.Fq9yCbqI2RDt6Orw]{灵能武器 Spiritual Weapon}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{灵能守卫 Spiritual Guardian}</em>。</p>"
+        },
+        "Wyrm Claw (Greater)": {
+            "name": "高等上古龙爪 Wyrm Claw (Greater)",
+            "description": "<p>金属龙爪的尖端被一条银色带子包裹。当你使用龙爪召唤龙族时，必须选择金属龙。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动<em>龙爪</em>来施放一个咒法系法术后，你在接下来的1分钟内获得10点酸液、寒冷、电击和火焰抗力。</li>\n<li><strong>武器</strong> 当你通过启动龙爪来施放一个咒法系法术后，你获得吐息能力，花费2个动作，造成9d6伤害，@Check[type:reflex|dc:34|basic:true]豁免。当时使用吐息时，选择范围和伤害类型：@Template[type:line|distance:30]造成酸液、电击或火焰伤害，或@Template[type:cone|distance:15]造成寒冷或火焰伤害。你能在你的下个回合结束之前使用一次此能力。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.MPxbKoR54gkYkqLO]{凿爪术 Gouging Claw}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展7环<em>@UUID[Compendium.pf2e.spells-srd.kghwmH3tQjMIhdH1]{召唤巨龙 Summon Dragon}</em>。</p>"
+        },
+        "Enigma Mirror": {
+            "name": "谜团圆镜 Enigma Mirror",
+            "description": "<p>雾气弥漫在这个圆形小手镜的玻璃上，飘动的缕缕灰色变化为各种奇怪的图案。镜子的背面刻有一种未知语言的流动文字。通过启动此物品施放的法术DC为23。</p>\n<ul>\n<li><strong>护甲</strong> 启动镜子施放幻术系法术之后，选择30尺内的一个盟友。该盟友获得一个单独的幻术镜像，类似镜影术。幻象如果没有被摧毁，则持续到你的下个回合结束。</li>\n<li><strong>武器</strong> 启动镜子施放幻术系法术之后，该武器的幻象副本会在周围的空气中旋转。你获得<em>@UUID[Compendium.pf2e.spells-srd.X56VdA98VedAfGTU]{兵刃丛生 Thicket of Knives}</em>效果影响，直到你的下个回合结束。如果你不再持用附着的武器，则法术效果结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.RA7VKcen3p56rVyZ]{严厉护卫 Forbidding Ward}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.j8vIoIEWElvpwkcI]{镜影术 Mirror Image}</em></p>"
+        },
+        "Enigma Mirror (Greater)": {
+            "name": "高等谜团圆镜 Enigma Mirror (Greater)",
+            "description": "<p>雾气弥漫在这个圆形小手镜的玻璃上，飘动的缕缕灰色变化为各种奇怪的图案。镜子的背面刻有一种未知语言的流动文字。通过启动此物品施放的法术DC为27。</p>\n<ul>\n<li><strong>护甲</strong> 启动镜子施放幻术系法术之后，选择30尺内的一个盟友。该盟友获得一个单独的幻术镜像，类似镜影术。幻象如果没有被摧毁，则持续到你的下个回合结束。</li>\n<li><strong>武器</strong> 启动镜子施放幻术系法术之后，该武器的幻象副本会在周围的空气中旋转。你获得<em>@UUID[Compendium.pf2e.spells-srd.X56VdA98VedAfGTU]{兵刃丛生 Thicket of Knives}</em>效果影响，直到你的下个回合结束。如果你不再持用附着的武器，则法术效果结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.RA7VKcen3p56rVyZ]{严厉护卫 Forbidding Ward}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.A7w3YQBrFNH8KYsB]{厄运镜像 Mirror's Misfortune}</em>。</p>"
+        },
+        "Enigma Mirror (Major)": {
+            "name": "上等谜团圆镜 Enigma Mirror (Major)",
+            "description": "<p>雾气弥漫在这个圆形小手镜的玻璃上，飘动的缕缕灰色变化为各种奇怪的图案。镜子的背面刻有一种未知语言的流动文字。通过启动此物品施放的法术DC为30。</p>\n<ul>\n<li><strong>护甲</strong> 启动镜子施放幻术系法术之后，选择30尺内的一个盟友。该盟友获得一个单独的幻术镜像，类似镜影术。幻象如果没有被摧毁，则持续到你的下个回合结束。</li>\n<li><strong>武器</strong> 启动镜子施放幻术系法术之后，该武器的幻象副本会在周围的空气中旋转。你获得<em>@UUID[Compendium.pf2e.spells-srd.X56VdA98VedAfGTU]{兵刃丛生 Thicket of Knives}</em>效果影响，直到你的下个回合结束。如果你不再持用附着的武器，则法术效果结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.RA7VKcen3p56rVyZ]{严厉护卫 Forbidding Ward}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.A7w3YQBrFNH8KYsB]{厄运镜像 Mirror's Misfortune}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.CmZCq4htcZ6W0TKk]{幻镜恶影 Mirror Malefactors}</em>。</p>"
+        },
+        "Ghostcaller's Planchette": {
+            "description": "<p>这个微型的木质占卜板上刻有旨在吸引魂魄的印记。附着之后，印记开始变暗，占卜板会变得有些透明。通过启动此物品施放的法术DC为29。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动占卜板施放一个死灵系法术之后，你获得5点物理伤害抗力（除了<em>幽冥</em>），直到你的下个回合开始。虚体生物对你攻击（例如幽灵的鬼手）被视为<em>幽冥</em>。</li>\n<li><strong>武器</strong> 当你通过启动占卜板施放一个死灵系法术之后，所附着的武器将获得<em>幽冥</em>符文效果，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.mAMEt4FFbdqoRnkN]{恐吓之触 Chill Touch}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.hghGRzOSzEl4UXdS]{唤起魂灵 Invoke Spirits}</em>。</p>",
+            "name": "幽灵召唤者的占卜板 Ghostcaller's Planchette"
+        },
+        "Judgment Thurible (Greater)": {
+            "description": "<p>这个球形香炉顶部的金色圣徽会根据其主人的信仰改变形状。如果你不信仰神祇，或者你的神祇是绝对中立阵营，则你无法从<em>审判香炉</em>上获得任何好处。通过启动此物品施放的法术DC为35。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动香炉施法之后，香炉会对你施展防护法阵，持续1轮。你选择其阵营，但必须是和你神祇相反的阵营之一。</li>\n<li><strong>武器</strong> 当你通过启动香炉施法之后，武器获得由你选择的<em>混沌</em>、<em>公理</em>、<em>神圣</em>或<em>邪恶 </em>符文，直到你的下个回合结束。此符文带来的额外伤害为2d6。你只能选择你神祇所具有的阵营（<em>混沌</em>对混乱，<em>公理</em>对守序，<em>神圣</em>对善良，<em>邪恶 </em>对邪恶）。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.qwZBXN6zBoB9BHXE]{圣枪术 Divine Lance}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展6环<em>@UUID[Compendium.pf2e.spells-srd.hVU9msO9yGkxKZ3J]{神圣愤怒 Divine Wrath}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{神圣裁决 Divine Decree}</em>。</p>",
+            "name": "高等审判香炉 Judgment Thurible (Greater)"
+        },
+        "Jyoti's Feather (Greater)": {
+            "description": "<p><em>焰刃使之羽</em>是一种闪烁着红色和金色的羽毛，看起来几乎像金属材质，但摸起来又细腻柔软。大部分都不是真正的焰刃使羽毛制成的，因为避世隐居的焰刃使会避开来自物质位面的访客，但他们和正能量之间的联系使得咒心冠以他们的名字。</p>\n<ul>\n<li><strong>护甲</strong> 你在对抗[死亡]效果和[负能量]效果时的豁免有+3物品加值。</li>\n<li><strong>武器</strong> 你附着<em>羽毛</em>的武器获得<em>瓦解</em>符文。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.SnjhtQYexDtNDdEg]{稳定伤势 Stabilize}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展5环<em>@UUID[Compendium.pf2e.spells-srd.ikSb3LRGnrwXJBVX]{活力信标 Vital Beacon}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.CzjQtkRuRlzRvwzg]{治愈之井 Healing Well}</em>。</p>",
+            "name": "高等焰刃使之羽 Jyoti's Feather (Greater)"
+        },
+        "Jyoti's Feather": {
+            "description": "<p><em>焰刃使之羽</em>是一种闪烁着红色和金色的羽毛，看起来几乎像金属材质，但摸起来又细腻柔软。大部分都不是真正的焰刃使羽毛制成的，因为避世隐居的焰刃使会避开来自物质位面的访客，但他们和正能量之间的联系使得咒心冠以他们的名字。</p>\n<ul>\n<li><strong>护甲</strong> 你在对抗[死亡]效果和[负能量]效果时的豁免有+2物品加值。</li>\n<li><strong>武器</strong> 你附着<em>羽毛</em>的武器获得<em>瓦解</em>符文。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.SnjhtQYexDtNDdEg]{稳定伤势 Stabilize}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.ikSb3LRGnrwXJBVX]{活力信标 Vital Beacon}</em>。</p>",
+            "name": "焰刃使之羽 Jyoti's Feather"
+        },
+        "Phantasmal Doorknob": {
+            "description": "<p>这个华丽的门把手可以同时打开物质上的和玄学上的门，揭示梦境或噩梦。通过启动此物品施放的法术DC为20。</p>\n<ul>\n<li><strong>护甲</strong> 你尝试开锁时的贼活检定有+1物品加值。</li>\n<li><strong>武器</strong> 如果以武器进行打击时造成重击，目标陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到它的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a]{幻音术 Ghost Sound}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.L0GoJpHxSD0wRY5k]{幻影珍宝 Phantasmal Treasure}</em>。</p>",
+            "name": "魅影门把 Phantasmal Doorknob"
+        },
+        "Phantasmal Doorknob (Major)": {
+            "description": "<p>这个华丽的门把手可以同时打开物质上的和玄学上的门，揭示梦境或噩梦。通过启动此物品施放的法术DC为34。</p>\n<ul>\n<li><strong>护甲</strong> 你尝试开锁时的贼活检定有+2物品加值。</li>\n<li><strong>武器</strong> 如果以武器进行打击时造成重击，目标陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}直到它的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a]{幻音术 Ghost Sound}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展6环<em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{魅影杀手 Phantasmal Killer}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.0XP2XOxT9VSiXFDr]{魅影灾祸 Phantasmal Calamity}</em>.</p>",
+            "name": "上等魅影门把 Phantasmal Doorknob (Major)"
+        },
+        "Radiant Prism": {
+            "description": "<p>无论这枚玻璃棱镜附着的是护甲还是武器，它都能发出柔和的七彩光芒。启动此物品施放的法术DC为35。</p>\n<ul>\n<li><strong>护甲</strong>(光亮) 当你通过启动棱镜来施放一个防护系法术后，你周围会被昏暗光照包围，让你像火炬一样发光并且获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，直到你下个回合结束。</li>\n<li><strong>武器</strong> 当你通过启动棱镜来施放一个防护系法术后，该武器打击时获得<em>光辉</em>性能符文，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.WBmvzNDfpwka3qT4]{光亮术 Light}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.4nEY2BcV85wavKLO]{虹光护甲 Prismatic Armor}</em>。</p>",
+            "name": "彩光棱镜 Radiant Prism"
+        },
+        "Radiant Prism (Greater)": {
+            "description": "<p>无论这枚玻璃棱镜附着的是护甲还是武器，它都能发出柔和的七彩光芒。启动此物品施放的法术DC为38。</p>\n<ul>\n<li><strong>护甲</strong>(光亮) 当你通过启动棱镜来施放一个防护系法术后，你周围会被昏暗光照包围，让你像火炬一样发光并且获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，持续2轮。</li>\n<li><strong>武器</strong> 当你通过启动棱镜来施放一个防护系法术后，该武器打击时获得<em>光辉</em>性能符文，直到你的下个回合结束。光辉符文的伤害增加到每种伤害类型各2d4。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.WBmvzNDfpwka3qT4]{光亮术 Light}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.4nEY2BcV85wavKLO]{虹光护甲 Prismatic Armor}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.iL6TujgTCtRRa0Y0]{虹光法墙 Prismatic Wall}</em>。</p>",
+            "name": "高等彩光棱镜 Radiant Prism (Greater)"
+        },
+        "Rime Crystal (Greater)": {
+            "description": "<p>一片雪花在这个水晶球中间缓慢旋转，无论外面天气有多炎热，它的表面都覆盖着一层霜。启动此物品施放的法术攻击骰+14，法术DC24。</p>\n<ul>\n<li><strong>护甲</strong> 你获得5点寒冷抗力。</li>\n<li><strong>武器</strong> 当你通过启动水晶来施放一个[寒冷]法术，你以该武器进行打击造成额外[[/r 1d6[cold]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{冰冻射线 Ray of Frost}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展3环<em>@UUID[Compendium.pf2e.spells-srd.8TQiFzGf4feoHeH0]{寒冷喷射 Chilling Spray}</em>。</p>",
+            "name": "高等雾凇水晶 Rime Crystal (Greater)"
+        },
+        "Sanguine Fang (Major)": {
+            "description": "<p>一枚尖锐的吸血鬼牙齿这个烟熏小玻璃瓶里旋转，尖段上缓慢地滴下深红色的血液。启动此物品施放的法术DC为34。</p>\n<ul>\n<li><strong>护甲</strong> 你获得10点持续流血伤害抗力，并且对[负能量]特征的效果的豁免骰有+3物品加值。</li>\n<li><strong>武器</strong> 当你通过启动尖牙施放一个死灵系法术后，你以该武器进行打击造成额外[[/r 2d6[persistent,bleed]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.mAMEt4FFbdqoRnkN]{恐吓之触 Chill Touch}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展5环<em>@UUID[Compendium.pf2e.spells-srd.N1Z1oLPdBxaSgrEE]{吸血鬼之触 Vampiric Touch}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.fd31tAHSSGXyOxW6]{血族驱命 Vampiric Exsanguination}</em>。</p>",
+            "name": "上等血色尖牙 Sanguine Fang (Major)"
+        },
+        "Sanguine Fang (Greater)": {
+            "description": "<p>一枚尖锐的吸血鬼牙齿这个烟熏小玻璃瓶里旋转，尖段上缓慢地滴下深红色的血液。启动此物品施放的法术DC为29。</p>\n<ul>\n<li><strong>护甲</strong> 你获得5点持续流血伤害抗力，并且对[负能量]特征的效果的豁免骰有+2物品加值。</li>\n<li><strong>武器</strong> 当你通过启动尖牙施放一个死灵系法术后，你以该武器进行打击造成额外[[/r 1d6[persistent,bleed]]]伤害，直到你的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.mAMEt4FFbdqoRnkN]{恐吓之触 Chill Touch}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.5zeSxzDxMSr0wgSF]{嗜血浓雾 Sanguine Mist}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展4环<em>@UUID[Compendium.pf2e.spells-srd.N1Z1oLPdBxaSgrEE]{吸血鬼之触 Vampiric Touch}</em>。</p>",
+            "name": "高等血色尖牙 Sanguine Fang (Greater)"
+        },
+        "Vigilant Eye": {
+            "description": "<p>这个木圆盘上雕刻一只类人生物的眼睛，柔和的色调和木头融为一体。眼睛的瞳孔不断抽搐着移动，扫描携带者周围的环境。</p>\n<ul>\n<li><strong>护甲</strong>(揭示) 当你面对等级不高于警醒之眼的敌人时，你不会因为敌人@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}、或对你使用突然袭击而陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。当然，你依然会被夹击。</li>\n<li><strong>武器</strong> 当你以该武器对@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}、藏匿或无踪的敌人进行打击时，命中隐蔽敌人的纯骰DC为4，命中藏匿或无踪敌人的纯骰DC为10。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{侦测魔法 Detect Magic}。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.XQSPJHOf3TyfqvgS]{视觉网络 Web of Eyes}</em>。</p>",
+            "name": "警醒之眼 Vigilant Eye"
+        },
+        "Elemental Ammunition (Greater)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>当元素弹药中的炼金试剂被启动时，会在撞击时雾化，对目标造成[[/r 3d4[persistent,[damageType]]]酸液、寒冷、电击、火焰或毒素伤害，并且在造成正常伤害的基础上造成[[/r (3[splash])[damageType]]]{3溅射伤害}。每种伤害类型都的弹药需要不同的公式，弹药获得和伤害类型相匹配的特征。</p>",
+            "name": "高等元素弹药 Elemental Ammunition (Greater)"
+        },
+        "Elemental Ammunition (Lesser)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>当元素弹药中的炼金试剂被启动时，会在撞击时雾化，对目标造成[[/r 1[persistent,[damageType]]]酸液、寒冷、电击、火焰或毒素伤害，并且在造成正常伤害的基础上造成[[/r (1[splash])[damageType]]]{1溅射伤害}。每种伤害类型都的弹药需要不同的公式，弹药获得和伤害类型相匹配的特征。</p>",
+            "name": "次等元素弹药 Elemental Ammunition (Lesser)"
+        },
+        "Vigilant Eye (Major)": {
+            "description": "<p>这个木圆盘上雕刻一只类人生物的眼睛，柔和的色调和木头融为一体。眼睛的瞳孔不断抽搐着移动，扫描携带者周围的环境。</p>\n<ul>\n<li><strong>护甲</strong>(揭示) 当你面对等级不高于警醒之眼的敌人时，你不会因为敌人@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}、或对你使用突然袭击而陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。当然，你依然会被夹击。</li>\n<li><strong>武器</strong> 当你以该武器对@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}、藏匿或无踪的敌人进行打击时，命中隐蔽敌人的纯骰DC为2，命中藏匿或无踪敌人的纯骰DC为8。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{侦测魔法 Detect Magic}。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.zvKWclOZ7A53DObE]{鹰眼术 Clairvoyance}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.Ek5XI0aEdZhBgm21]{窥视魔眼 Prying Eye}</em>。</p>",
+            "name": "上等警醒之眼 Vigilant Eye (Major)"
+        },
+        "Freeze Ammunition": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>冰冻弹药含有接触到目标就会激活的冰冻试剂。被激活的冰冻弹药击中的生物会受到寒冷伤害，代替武器原本的伤害类型，外加2点寒冷溅射伤害。用冰冻弹药成功击中一块5尺见方的表面会造成[[/r (2[splash])[cold]]]伤害，并将让该空间的表面覆盖一层冰。每个站在冰面上的生物都必须通过@Check[type:reflex|dc:20]豁免或@Check[type:acrobatics|dc:20]检定，否则将@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。花费动作移动到冰面上的生物必须通过反射豁免或特技检定来@UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balance}。快步或@UUID[Compendium.pf2e.actionspf2e.Tj055UcNm6UEgtCg]{爬行 Crawl}的生物不需要尝试豁免。冰面在1分钟后融化，尽管异常的高温和低温环境可能会影响这个持续时间，取决于GM的判断。对冰面造成至少1点火焰伤害可以立即移除冰面。</p>",
+            "name": "冰冻弹药 Freeze Ammunition"
+        },
+        "Warding Statuette": {
+            "description": "<p>这枚小雕像用肥皂石雕刻成神祇或守护者的形象，两面都有雕刻，表示永不松懈的警惕。启动此物品的法术攻击骰+13。</p>\n<ul>\n<li><strong>护甲</strong> 你对远程武器攻击获得1点抗力。</li>\n<li><strong>武器</strong> 当你以附着的武器打击命中，或当你启动雕像的法术效果打击命中，你能选择一个和命中生物相邻的生物。该生物的AC获得+1状态加值，直到你的下个回合开始。每个回合只能有一个生物从中受益。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.TVKNbcgTee19PXZR]{护盾术 Shield}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.Fq9yCbqI2RDt6Orw]{灵能武器 Spiritual Weapon}</em>。</p>",
+            "name": "护身雕像 Warding Statuette"
+        },
+        "Wyrm Claw": {
+            "description": "<p>金属龙爪的尖端被一条银色带子包裹。当你使用龙爪召唤龙族时，必须选择金属龙。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动<em>龙爪</em>来施放一个咒法系法术后，你在接下来的1分钟内获得5点酸液、寒冷、电击和火焰抗力。</li>\n<li><strong>武器</strong> 当你通过启动龙爪来施放一个咒法系法术后，你获得吐息能力，花费2个动作，造成6d6伤害，@Check[type:reflex|dc:28|basic:true]豁免。当时使用吐息时，选择范围和伤害类型：@Template[type:line|distance:30]造成酸液、电击或火焰伤害，或@Template[type:cone|distance:15]造成寒冷或火焰伤害。你能在你的下个回合结束之前使用一次此能力。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.MPxbKoR54gkYkqLO]{凿爪术 Gouging Claw}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.kghwmH3tQjMIhdH1]{召唤巨龙 Summon Dragon}</em>。</p>",
+            "name": "上古龙爪 Wyrm Claw"
+        },
+        "Wyrm Claw (Major)": {
+            "description": "<p>金属龙爪的尖端被一条银色带子包裹。当你使用龙爪召唤龙族时，必须选择金属龙。</p>\n<ul>\n<li><strong>护甲</strong> 当你通过启动<em>龙爪</em>来施放一个咒法系法术后，你在接下来的1分钟内获得15点酸液、寒冷、电击和火焰抗力。</li>\n<li><strong>武器</strong> 当你通过启动龙爪来施放一个咒法系法术后，你获得吐息能力，花费2个动作，造成12d6伤害，@Check[type:reflex|dc:41|basic:true]豁免。当时使用吐息时，选择范围和伤害类型：@Template[type:line|distance:30]造成酸液、电击或火焰伤害，或@Template[type:cone|distance:15]造成寒冷或火焰伤害。你能在你的下个回合结束之前使用一次此能力。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.MPxbKoR54gkYkqLO]{凿爪术 Gouging Claw}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.2EIUqc8TCTQimggQ]{真龙军团 Summon Draconic Legion}</em>。</p>",
+            "name": "上等上古龙爪 Wyrm Claw (Major)"
+        },
+        "Bane Ammunition (Lesser)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>怪物猎人们喜欢痛苦弹药，这种弹药带有种针对特定类型生物试剂的胶囊。特定种类包括[异怪]、[动物]、[魔兽]、[龙类]、[精类]、[巨人]、[泥怪]以及[植物]和[真菌]（这俩算作一类）。每种类型需要不同的公式。被启动的毒害弹药命中特定类别的目标时，它除了能造成正常伤害外，还能造成[[/r 1d4[persistent,poison]]]伤害。</p>",
+            "name": "次等痛苦弹药 Bane Ammunition (Lesser)"
+        },
+        "Bane Ammunition (Moderate)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>怪物猎人们喜欢痛苦弹药，这种弹药带有种针对特定类型生物试剂的胶囊。特定种类包括[异怪]、[动物]、[魔兽]、[龙类]、[精类]、[巨人]、[泥怪]以及[植物]和[真菌]（这俩算作一类）。每种类型需要不同的公式。被启动的毒害弹药命中特定类别的目标时，它除了能造成正常伤害外，还能造成[[/r 2d6[persistent,poison]]]伤害。</p>",
+            "name": "中等痛苦弹药 Bane Ammunition (Moderate)"
+        },
+        "Ooze Ammunition (Greater)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>泥怪弹药含有黏性物质胶囊。如果你用被启动的泥怪弹药击中一个生物，它会造成酸液伤害，取代原本的伤害类型，然后该生物会受到-10尺速度减值和[[/r 3d4[persistent,acid]]]伤害，直到效果结束。重击时，除了其他效果之外，生物还会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。目标可以通过逃脱粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸液伤害。结束效果的生物依然会受到本回合的持续性伤害。</p>",
+            "name": "高等泥怪弹药 Ooze Ammunition (Greater)"
+        },
+        "Rusting Ammunition (Moderate)": {
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>锈蚀弹药是由锈蚀怪的唾液制成的，当被启动时，对主要由金属制成的物体或生物造成伤害。目标受到[[/r 3d8[persistent,force]]]伤害，持续5轮。如果生物在受到这种持续伤害时生命值减少到0，会碎成粉末；它的装备依然存在。对于物品来说，弹药可以摧毁5立方尺的物品。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一份@UUID[Compendium.pf2e.pathfinder-bestiary.mEmWRqTRxLUZQYSh]{锈蚀怪 Rust Monster}的唾液</p>",
+            "name": "中等锈蚀弹药 Rusting Ammunition (Moderate)"
+        },
+        "Windlass Bola": {
+            "description": "<p>这些<em>+1强击回力绳球</em>的重物内有滴答作响的发条机构，能在半空中绕出更多的绳子。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 绳球的绳子在你投掷它的时候会蜿蜒射出，让武器可以缠绕一群敌人。你使用该绳球对该武器第一射程增量内的一个@Template[type:burst|distance:5]区域内的所有生物尝试一次远程@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}。对每个目标分别投掷运动检定。每次尝试都计入你的多次攻击减值，但在你做完全部尝试之前都不会增加你的减值。</p>",
+            "name": "绞盘绳球 Windlass Bola"
+        },
+        "blessed Reformer": {
+            "description": "<p>天界语的“忏悔”用黄金铭刻在这把<em>+2高等强击仁慈秘银战锤</em>的锤柄上。邪恶阵营的生物在携带或持用这把武器时会陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 你将武器高高举起，呼唤正义坚定你的意志。你对你自己施展<em>@UUID[Compendium.pf2e.spells-srd.gMODOGamz88rgHuf]{防护术 Protection}</em>，你必须为防护术选择邪恶阵营。</p>\n<hr />\n<p><strong>救赎者持用者</strong> 如果你是一个投身于救赎者事业的神卫，你也获得下面两个好处。</p>\n<ul>\n<li>当你使用<em>神圣肃正者</em>重击了一个邪恶生物，直到你的下一个回合结束，目标的速度承受-10尺减值，而且无法快步。</li>\n<li>你可以以下述方式启动该武器。</li>\n</ul>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你最近的一个动作是使用<em>神圣肃正者</em>命中了一个目标</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>，法术环级和你的神卫聚能法术相等。该法术必须瞄准你命中的目标，且该生物对抗该法术的豁免承受一个状态减值，数值等于<em>神圣肃正者</em>武器伤害骰的个数。</p>\n<hr />\n<p><strong>制作需求</strong> 你是一个投身于救赎者事业的神卫。初始材料必须包括140 gp的秘银。</p>",
+            "name": "神圣肃正者 Blessed Reformer"
+        },
+        "Reaper's Crescent": {
+            "description": "<p>这把由雪花石膏制成的+1强击镰刀的刀刃在月亮升起时会变得厚重，且有坑坑洼洼的凹陷，而在月亮落下时又会变成锋利的银片。月光也会导致刀刃上的第二符文的形状随着月相而改变：在新月期，该武器有幽冥符文；在下弦月期，是可怖符文；在满月期，是血光符文。</p>\n<p>在任何强度的月光下持用死神的新月时，它会造成等同于伤害骰数量的额外寒冷伤害。</p>",
+            "name": "死神的新月 Reaper's Crescent"
+        },
+        "Stargazer": {
+            "description": "<p>当你绑定了这颗透明石英水晶球时，它会像万古石一样绕着你的头旋转。只要你保持绑定观星者，你就可以使用一个交互动作指引它环绕你的一只手，这样你就可以通过念力将这颗球砸向敌人，把它当成<em>+2高等强击回力木棒</em>来持用。当你正在指引观星者时，你的手被占用，你可以使用另一个交互动作将它送回你的头部。重击时，观星者会放出有催眠作用的星光，令受打击的生物陷入1轮的@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzling}。观星者无法添加重击专精效果。</p>",
+            "name": "观星者 Stargazer"
+        },
+        "Alicorn Lance": {
+            "description": "<p>这根白色的+1强击长枪是由独角兽在临终之际自愿赠与的角制成的。在通常的伤害之外，天角枪在每次成功的攻击时都能造成1点善良伤害。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 交互（魔法，死灵系）</p>\n<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 你唤起捐出角制作了这把武器的独角兽的灵魂，你可以骑着它进行华丽的冲锋。移动至多你速度的两倍，并使用天角枪进行一次打击；你在这次打击中获得该长枪的骑战特征的效果。如果你在启动这只角时已经处于骑乘状态，独角兽的灵魂会在你坐骑的周围形成，为它在冲锋时的速度提供+10尺状态加值。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含一根由独角兽自愿赠与的角。在一些稀有的案例中，天角枪可以使用用武力夺来的角制作。然而这种恶毒的行为会污染角的魔法，让它闪烁着病态的红光，造成邪恶伤害而非善良伤害，而且在冲锋时唤起的独角兽灵魂会在痛苦中明显地发出阵阵悲鸣。</p>",
+            "name": "天角枪 Alicorn Lance"
+        },
+        "Dezullon Fountain": {
+            "description": "<p><em>大猪笼草喷泉</em>是一种截然不同的 <em>+2强击连发气枪</em>，是由大猪笼草仍然活着的叶瓶制作而成的，会造成酸液伤害而非这把枪通常的穿刺伤害。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你用这把武器成功打击的下一个生物受到失忆毒液的影响。</p>\n<p><strong>失忆毒液</strong> (心灵，毒素)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29|traits:mental,poison]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑Confused}，措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含来自大猪笼草或类似生物的叶瓶。</p>",
+            "name": "大猪笼草喷泉 Dezullon Fountain"
+        },
+        "Alghollthu Lash": {
+            "description": "<p>这条多肉的<em>+1强击鞭子</em>一直滴落着粘液，显然是用某些恐怖魔兽的触手制作的，例如阿尔古苏。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你成功使用该武器打击的下一个生物受到阿尔古苏粘液的影响。</p>\n<p><strong>阿尔古苏粘液</strong> (诅咒，异能)</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25|traits:curse,occult]</p>\n<p><strong>阶段1</strong> 没有不良效果 (1轮)</p>\n<p><strong>阶段2</strong> 受害者的皮肤软化，令该生物陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段3</strong> 受害者的皮肤变成透明，黏稠的膜，令其陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，直到诅咒结束；这层膜每保持干燥1小时，该生物的流失状态就提升1点（永久）。移除疾病法术可以反制该诅咒，但对疾病的免疫不能用来防护该效果。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含一根来自阿尔古苏的触手。</p>",
+            "name": "阿尔古苏之鞭 Alghollthu Lash"
+        },
+        "Ghast Stiletto": {
+            "description": "<p><em>妖鬼短剑</em>是一把裹着妖鬼仍然不死的皮的<em>+1匕首</em>。如果你持用着这把匕首，你在所有对抗麻痹的豁免中获得+1状态加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令，交互（神术，死灵系，嗅觉）</p>\n<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 妖鬼匕首对它打击的下一个活着的目标造成一种发散着墓穴恶臭的可怕伤口。在下一分钟内，目标生物以及@Template[type:emanation|distance:10]区域内的所有生物必须成功通过一个@Check[type:fortitude|dc:16|traits:divine,necromancy,olfactory]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（只要它因大失败陷入恶心，则额外陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。当这些生物仍处于弥漫区域内时，它们在对抗疾病以及从恶心状态中恢复的豁免承受-2环境减值。豁免成功的生物对其临时免疫1分钟。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含来自一只妖鬼的皮肤。</p>",
+            "name": "妖鬼短剑 Ghast Stiletto"
+        },
+        "Spark Dancer": {
+            "description": "<p>这把<em>+2强击胡椒罐手枪</em>循环使用多个魔法核心，在前一个核心冷却时切换到新的核心。这把枪造成火焰或电击伤害，因为它在旋转核心，它在每次攻击时会交替使用这两种伤害。阿卡迪亚的枪客将旋转的核心比喻成一组舞者，每个人都有机会在聚光灯下展示自己。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> <em>星光舞者</em>施展<em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{火球术 Fireball}</em>或<em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{闪电束 Lightning Bolt}</em>，取决于当前核心发射的是火焰还是电击伤害，这是一个7环奥术法术（@Check[type:reflex|dc:30|basic:true]）。</p>",
+            "name": "星光舞者 Spark Dancer"
+        },
+        "Thundercrasher": {
+            "description": "<p>当你从这把<em>+1强击喇叭枪</em>的枪管往里看时，你能透过数个反射镜看到这把星光枪的魔法核心。轰雷破坏者造成的所有伤害都是音波伤害。重击时，目标必须成功通过一个对抗你职业DC的强韧豁免，否则@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}一分钟。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你超载<em>轰雷破坏者</em>，让它放出混乱的音波频率，足以软化土壤和石头。当你下一次用<em>轰雷破坏者</em>射击，它也会将溅射特征指定的区域内的任何自然土地或石头地表部分液化，让这些区域变成困难地形。</p>",
+            "name": "轰雷破坏者 Thundercrasher"
+        },
+        "Bane Ammunition (Greater)": {
+            "name": "高等痛苦弹药 Bane Ammunition (Greater)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>怪物猎人们喜欢痛苦弹药，这种弹药带有种针对特定类型生物试剂的胶囊。特定种类包括[异怪]、[动物]、[魔兽]、[龙类]、[精类]、[巨人]、[泥怪]以及[植物]和[真菌]（这俩算作一类）。每种类型需要不同的公式。被启动的毒害弹药命中特定类别的目标时，它除了能造成正常伤害外，还能造成[[/r 3d6[persistent,poison]]]伤害。</p>"
+        },
+        "Dragontooth Club": {
+            "name": "龙牙棒 Dragontooth Club",
+            "description": "<p>龙牙排列在这根<em>+2高等强击鲨齿棒</em>的边缘。这根鲨齿棒拥有炽焰、冻寒、电击、或酸蚀符文，取决于这些龙牙所来自的巨龙，这也为武器提供了对应的特征（例如，使用红龙的牙制作的龙牙棒拥有火焰特征）。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互（塑能系，魔法）</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 你挥舞这把鲨齿棒，将几根龙牙通过能量的喷射发射到空中。龙牙对@Template[type:cone|distance:15]区域造成[[/r 3d6[piercing]]]伤害和3d6武器对应的能量伤害（@Check[type:reflex|dc:29|basic:true]豁免）。龙牙会追捕目标，纠正在半空中的飞行轨迹，这能将来自掩蔽的任何环境加值降低2点。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含来自一头龙的龙牙，且这头龙的喷吐武器会造成酸液、寒冷、电击、火焰、或毒素伤害。</p>"
+        },
+        "Grounding Spike": {
+            "name": "接地针 Grounding Spike",
+            "description": "<p>这个<em>+1强击雷鸣舞枪</em>底部的金属帽和尖端都散发出轻微的臭氧气味。如果你命中了在上一回合内已经被电极锤打中的一个目标，你对该目标造成额外的电击伤害，数值等于接地针的伤害骰数量。如果你重击了这样一个目标，该生物在你的下一回合开始之前陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>特殊</strong> 接地针和<em>电极锤</em>相配对。</p>"
+        },
+        "Kaldemash's Lament": {
+            "name": "卡尔德玛什的挽歌 Kaldemash's Lament",
+            "description": "<p><em>卡尔德玛什的挽歌</em>看起来只是一个带把手的简陋铁烟斗，但却是全阿卡迪亚最有名的星辰枪之一。传说中的戴冠摄政王卡尔德玛什在千年前协助铸造了第一批星辰枪中的一把。尽管星辰枪作为一种强力的武器为卡尔德玛什服务，但它最值得一提的成就是意外杀死了卡尔德玛什的一个最好的朋友。这次死亡令这位摄政王意识到星辰枪中真实蕴含的毁灭性的力量，并促使他制定了星辰法典，这是一套阿卡迪亚至今仍在使用的关于交战和正确使用火器的规则。虽然卡尔德玛什从未亲自为这把武器命名，所有传说在提到这把武器时都称其为<em>卡尔德玛什的挽歌</em>。</p>\n<p>这把传奇武器是+3上等强击加速的进阶火器，其射程增量是90尺。它造成4d6力场伤害（已包含上等强击符文），具有隐蔽，震荡和夺命d10特征。你在使用这把武器造成非致命伤害时不会承受减值。和大多数星辰枪类似，<em>卡尔德玛什的挽歌</em>依靠魔法驱动，不需要使用弹药或黑火药。</p>\n<p>如果你在一场各方都同意相关条款的决斗中使用<em>卡尔德玛什的挽歌</em>，这把枪的超自然本能会帮助你进行最快速的拔枪。你在决斗中先攻骰可以投两次并使用较高的结果；这是一个幸运效果。另外，当你在决斗中的回合开始时，你可以以自由动作拔出<em>卡尔德玛什的挽歌</em>。如果你在决斗对手投降，被击败，或决斗已经结束时，用这把枪恶意地对对手射击，<em>卡尔德玛什的挽歌</em>会飞离你的手，你在10分钟内都无法捡起，持握，或持用这把武器。 </p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 想象</p>\n<p><strong>触发</strong> 你的一次攻击以一个生物为目标</p>\n<hr />\n<p><strong>效果</strong> 你在开火前调整<em>卡尔德玛什的挽歌</em>所造成的伤害。<em>卡尔德玛什的挽歌</em>的伤害类型变成电击、火焰或力场之一，直到你再次改变类型。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 你让<em>卡尔德玛什的挽歌</em>自行开火。你放开这把星辰枪，它开始独立移动，飞过空中并射击。在它独立移动时，你仍然获得这把枪的加速符文的好处。它占据5尺空间，但不会阻挡或阻碍尝试穿过该空间的敌人。它总是保持在你周围30尺内，并会有意拒绝被他人拿起或被某种方式移动；所有对其的攫抓尝试均失败。<em>卡尔德玛什的挽歌</em>会按照这种方式移动3轮，之后它会回到你的手中。如果你没有空手持握它，它就会自己回到你身上的枪套内。</p>\n<p>虽然<em>卡尔德玛什的挽歌</em>会独立移动，你可以用一个具有专注特征的动作命令他对一个生物进行一次打击。它进行的远程打击使用你在持用它时的攻击调整值，或+31加值，取较高的一个。这次攻击会如常提高你的多次攻击减值，这把枪在决定它的攻击加值时也会使用你的多次攻击减值。由于这把星辰枪一直在移动并尝试寻找最佳的射线，它瞄准的生物对这把枪的攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">3</span> 想象，交互</p>\n<hr />\n<p><strong>效果</strong> 你立刻射出密集的火力网。你对@Template[type:cone|distance:30]区域内的所有生物造成打击的伤害（@Check[type:reflex|dc:45|basic:true]豁免）。在计算多次攻击减值时，火力网算作3次攻击。</p>"
+        },
+        "Lightweave Scarf (Major)": {
+            "name": "上等光波绑带 Lightweave Scarf (Major)",
+            "description": "<p>这条闪闪发光的布带最初是由一位来自精瑛的僧侣所使用的，他将其绑成了威力强大的<em>重拳缠手带</em>。通过启动此物品施放的法术DC为38。</p>\n<ul>\n<li><strong>护甲</strong> 你在针对[幻术系]效果的豁免上以及尝试@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}时的欺骗检定上有+3物品加值。</li>\n<li><strong>武器</strong>(视觉) 当你通过启动绑带施放一个幻术系法术之后，武器会被令人困惑的幻象图案笼罩。你的下次打击如果命中目标，会让目标@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1分钟。如果你在下个回合结束前未进行打击，则幻象毫无影响地消失。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.kl2q6JvBZwed4B6v]{舞光术 Dancing Lights}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展8环<em>@UUID[Compendium.pf2e.spells-srd.RQjSQVZRG497cJhX]{震荡图纹 Vibrant Pattern}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.uEyfLoFQsRKBRIcB]{闪光图纹 Scintillating Pattern}</em>。</p>"
+        },
+        "Ooze Ammunition (Moderate)": {
+            "name": "中等泥怪弹药 Ooze Ammunition (Moderate)",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>泥怪弹药含有黏性物质胶囊。如果你用被启动的泥怪弹药击中一个生物，它会造成酸液伤害，取代原本的伤害类型，然后该生物会受到-10尺速度减值和[[/r 2d4[persistent,acid]]]伤害，直到效果结束。重击时，除了其他效果之外，生物还会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。目标可以通过逃脱粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸液伤害。结束效果的生物依然会受到本回合的持续性伤害。</p>"
+        },
+        "Phantasmal Doorknob (Greater)": {
+            "name": "高等魅影门把 Phantasmal Doorknob (Greater)",
+            "description": "<p>这个华丽的门把手可以同时打开物质上的和玄学上的门，揭示梦境或噩梦。通过启动此物品施放的法术DC为27。</p>\n<ul>\n<li><strong>护甲</strong> 你尝试开锁时的贼活检定有+2物品加值。</li>\n<li><strong>武器</strong> 如果以武器进行打击时造成重击，目标陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}直到它的下个回合结束。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.atlgGNI1E1Ox3O3a]{幻音术 Ghost Sound}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{魅影杀手 Phantasmal Killer}</em>。</p>"
+        },
+        "Piston Gauntlets": {
+            "name": "活塞拳 Piston Gauntlets",
+            "description": "<p>这个<em>+2高等强击炽焰伸缩拳</em>在每次连杆移动到远端时都会喷出火焰。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你对拳套的攻击进行增压。进行一次近战打击。这在计算你的多次攻击减值时算作两次攻击。如果打击命中，你造成额外两个武器伤害骰。</p>"
+        },
+        "Saurian Spike": {
+            "name": "蜥龙人骨刺 Saurian Spike",
+            "description": "<p>这根锯齿状的骨骼在上部越来越窄，直到变成锋利的尖端。以前的战斗留下的伤痕深深地刻在上面。持有<em>蜥龙人骨刺</em>的人常常会突然感到力量和信心激增。</p>\n<ul>\n<li><strong>护甲</strong> 你获得模糊感官灵敏嗅觉，范围30尺。</li>\n<li><strong>武器</strong>(听觉，情绪，恐惧，视觉) 当你通过启动骨刺来施放一个[变形]法术之后，你的战斗形态变得更加可怕。@Template[type:emanation|distance:30]范围内所有敌人都必须尝试@Check[type:will|dc:27]豁免，否则@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。</li>\n</ul>\n<p><strong>启动</strong> 施法</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.MPxbKoR54gkYkqLO]{凿爪术 Gouging Claw}</em>。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你施展<em>@UUID[Compendium.pf2e.spells-srd.KhM8MhoUgoUjBMIz]{恐龙形态 Dinosaur Form}</em>。</p>"
+        },
+        "Solar Shellflower": {
+            "name": "日华月桃 Solar Shellflower",
+            "description": "<p>这个<em>+1强击燧发滑膛枪</em>的枪托上可以折叠展开多个三角形的面板，就像虎皮花的花瓣。这些面板可以收集阳光并将其填充到这把星光枪的核心里。<em>日华月桃</em>造成的所有伤害都是火焰伤害。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>频率</strong> 每天一次 (但见下文)</p>\n<hr />\n<p><strong>效果</strong> <em>日华月桃</em>上的其中一块面板分离出来，并展开成虎皮花形状的发焰结构。在接下来的1分钟内，每当你用<em>日华月桃</em>打击一个敌人时，这个结构会发射一束较小的火焰并自动命中目标，造成[[/r 3d4[persistent,fire]]]{3d4额外的持续火焰伤害}，在重击时翻倍。<em>日华月桃</em>通常需要一整天的时间填充足够的太阳能才能重新为该启动充能，但如果在阳光特别强烈的环境中使用，例如沙漠中，突破云层的悬崖上，或接近夏至的期间，它可以在1小时内再充能。</p>"
+        },
+        "Vampire-Fang Morningstar": {
+            "name": "血牙钉头锤 Vampire-Fang Morningstar",
+            "description": "<p>这把<em>+1强击血光钉头锤</em>上布满了从一个吸血鬼嘴里拔下来的牙齿，这通常需要一个还能活动的捐献者，因为吸血鬼通常会在被摧毁时化为尘土。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>需求</strong> 你最近的一次动作是成功使用这把武器打击，而且你不处于直接的日光照射下</p>\n<hr />\n<p><strong>效果</strong> <em>血牙钉头锤</em>吸取了目标的血液，治疗持用者10点HP。</p>\n<hr />\n<p><strong>制作需求</strong> 初始材料必须包含来自一个吸血鬼的牙齿。</p>"
         }
     }
 }
