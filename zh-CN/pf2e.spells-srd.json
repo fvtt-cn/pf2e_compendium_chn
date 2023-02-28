@@ -8148,6 +8148,35 @@
             "target": "一个生物",
             "range": "30尺",
             "duration": "8小时"
+        },
+        "Advanced Scurvy": {
+            "description": "<p>你的触碰会让目标罹患坏血病，这是一种由营养不良所引起的海员病。坏血病的症状包括疲劳、关节疼痛、牙齿松动和内出血。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1分钟。</p>\n<p><strong>失败</strong> 目标感染高阶坏血病的阶段1。</p>\n<p><strong>大失败</strong> 目标感染高阶坏血病的阶段2。</p>\n<p><strong>高阶坏血病</strong> (疾病)</p>\n<p><strong>等级</strong> 4</p>\n<p>食用新鲜水果后的1天内，生物在下一次豁免时获得+2环境加值。</p>\n<p><strong>阶段1</strong> 力竭1并且持续流血效果造成的伤害+1 (1天)</p>\n<p><strong>阶段2</strong> 力竭1，@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，并且持续流血效果造成的伤害+1d4 (2天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，疲乏，并且持续流血效果造成的伤害+1d6 (4天)</p>",
+            "name": "高阶坏血病 Advanced Scurvy",
+            "target": "1个生物",
+            "range": "接触"
+        },
+        "Briny Bolt": {
+            "description": "<p>你伸出双手，猛然射出一道海水箭矢。对射程内的目标进行一次远程法术攻击。</p>\n<hr />\n<p><strong>大成功</strong> 生物受到4d6钝击伤害，@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮然后@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1分钟，因为海水溅入了他的双眼中。生物能花费1个交互动作揉眼睛来结束目盲状态，但无法减轻目眩状态。</p>\n<p><strong>成功</strong> 生物受到2d6钝击伤害，目盲1轮。生物能花费1个交互动作揉眼睛来结束目盲状态。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加2d6。</p>",
+            "name": "海水箭矢 Briny Bolt",
+            "target": "1个生物",
+            "range": "60尺"
+        },
+        "Lashing Rope": {
+            "description": "<p>你让一段绳索或一段绳索状的物品活化，它会爬行至你所在的方格，把你包围在扭动的绳索中。</p>\n<p>当你施放此法术和每次你维持此法术时，你能用绳子进行一次近战打击，这会正常计算你的多重攻击减值。这些绳索打击是近战法术攻击；拥有[魔法]、[长触及]和[摔绊]武器特征；造成2d6挥砍+你施法属性调整值的伤害。</p>\n<p>如果你尝试用绳索@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}时大失败，你在本回合无法再用绳索进行打击，也无法再用绳索进行借机攻击，直到你的下个回合开始。这取代通常的摔绊大失败效果。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 你的绳索打击伤害增加2d6。</p>",
+            "name": "抽动绳索 Lashing Rope",
+            "target": "最多50尺长的无主绳索或无生命的绳索类物品",
+            "range": "50尺",
+            "duration": "维持,最多1分钟"
+        },
+        "Phantom Ship": {
+            "description": "<p>你可以在一艘船和不死船员之间建立联系，暂时让这艘船、它的乘客和它的船员变成虚体，如同幽灵一般。目标船只必须完好无损，并且在水面或水面附近，并且整个仪式中必须有一名曾经是该船船员的不死生物在场。</p>\n<hr />\n<p><strong>大成功</strong> 整艘船和船上所有生物变为虚体，持续1小时。在此期间，无论风向如何，该船都能朝着主要施法者决定的方向以最高速度航行。船可以穿过路径上所有障碍物（例如礁石或其他船只），但它必须和水面保持接触，否则仪式效果会提前结束。在恶劣天气中驾驶船只所需的任何检定有+2状态加值。在仪式进行期间下船的生物会再次变为实体。</p>\n<p><strong>成功</strong> 类似大成功，但是技能检定的状态加值只有+1。</p>\n<p><strong>失败</strong> 仪式没有效果。</p>\n<p><strong>大失败</strong> 船本身（但不包括乘客和船员）会变为虚体10分钟，这通常会导致乘客和船员从船上掉入水中。如果船已经在航行，它将继续以当前的速度向当前的方向前进。</p>",
+            "name": "鬼灵船 Phantom Ship",
+            "target": "一艘不超过175尺长的船",
+            "range": "10尺",
+            "time": "1小时",
+            "cost": "总计价值50gp的珍珠或宝石",
+            "primarycheck": "神秘（专家）",
+            "secondarycheck": "航海学识或生存"
         }
     }
 }
