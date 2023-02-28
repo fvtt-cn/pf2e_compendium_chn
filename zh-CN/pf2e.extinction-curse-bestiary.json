@@ -105,10 +105,35 @@
 			}
 		},
 		"Ammut": {
-			"name": "Ammut",
-			"publicNotes": "<p>These chimeric, desert-dwelling fiends have massive bodies that are part hippopotamus, part large cat, and part crocodile. Though they devour souls for sustenance, ammuts are infamously picky eaters; most will only eat experienced adventurers or, for a special treat, particularly evil creatures, passing over common folk or those whose mettle has never been tested。</p>\n<p>Only a few ammuts are known to exist, and most dwell in Osirion. However, recent expeditions into Orv's Vault of the Black Desert have uncovered the existence of ammuts in this region, as well。</p>",
+			"name": "鬃河鳄 Ammut",
+			"publicNotes": "<p>这些居住在沙漠的嵌合体魔族有着庞大的身躯，部分是河马，部分是大型猫科动物，部分是鳄鱼。尽管鬃河鳄需要吞食灵魂来维持生计，但它们却是恶名远扬的挑食者，大多数个体只愿意吃经验丰富的冒险者，又或者作为一种特殊的治疗手段去吃极其邪恶的生物，路过的平民或是那些从未品尝过的灵魂。</p>\n<p>据所知，只有少量鬃河鳄存在于这个世界上，它们大多都居住在奥斯里昂。不过，最近对奥瓦黑沙地窖的远征也发现了鬃河鳄存在于这片地区的事实。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Foot": {
+					"name": "脚踩 Foot",
+					"description": "<p>附加@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1} @Check[type:fortitude|dc:38]成功则无效</p>"
+				},
+				"Breath Weapon": {
+					"name": "吐息武器 Breath Weapon",
+					"description": "<p>鬃河鳄喷出一团火焰，对@Template[type:cone|distance:30]{30尺锥形}内的所有生物造成[[/r 18d6[fire]]]伤害（@Check[type:reflex|dc:37|basic:true]豁免）。鬃河鳄在[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}内无法再使用它的吐息武器能力。</p>"
+				},
+				"Devour Soul": {
+					"name": "吞食灵魂 Devour Soul",
+					"description": "<p>一个生物若在被鬃河鳄吞下时HP降到0，他的灵魂和肉体就会被鬃河鳄所吸收。此生物会立即死亡，无法被除了<em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>，<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>或同类魔法以外的效应所复生。</p>"
+				},
+				"Fast Swallow": {
+					"name": "快速活吞 Fast Swallow",
+					"description": "<p><strong>触发</strong> 鬃河鳄@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabs}了一个生物</p>\n<hr />\n<p><strong>效果</strong> 鬃河鳄使用活吞。</p>"
+				},
+				"Swallow Whole": {
+          			"name": "活吞 Swallow Whole",
+					"description": "<p>大型，[[/r (3d12+8)[bludgeoning]]]伤害，破裂32</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				},
+				"Wasting Wound": {
+					"name": "虚弱创伤 Wasting Wound",
+					"description": "<p>受到鬃河鳄爪打击伤害的生物必须成功通过一个@Check[type:will|dc:37]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}与@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败时为@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}与@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}）。在诅咒被移除前，这些状态无法降低，而在所有由爪打击造成的伤害被治愈前，该诅咒无法被移除。每天，受到虚弱创伤侵袭的生物必须进行另一个豁免掷骰，失败时，力竭与流失的状态等级增加1。如果受害者在诅咒期间死亡，它的灵魂就会被摧毁，就如同鬃河鳄的吞食灵魂能力一样。</p>"
+				}
+			}
 		},
 		"Andera Paldreen": {
 			"name": "恩黛菈·帕德林 Andera Paldreen",
@@ -135,7 +160,7 @@
 		},
 		"Angry Vegetation": {
 			"name": "Angry Vegetation",
-			"disable": "<p>@Check[type:nature|dc:48|name:Calm a Flower|traits:environmental](大师)or @Check[type:performance|dc:48|name:Calm a Flower|traits:environmental] (legendary) to calm a flower, closing it</p>",
+			"disable": "<p>@Check[type:nature|dc:48|name:Calm a Flower|traits:environmental](大师)or @Check[type:performance|dc:48|name:Calm a Flower|traits:environmental] (传奇) to calm a flower, closing it</p>",
 			"hazarddescription": "<p>Five large flowers in the weed-choked field unfurl, each dusting pollen onto vines that animate into @UUID[Compendium.pf2e.pathfinder-bestiary.NTXm3ee7WZJ92Sww]{Wemmuths}。</p>",
 			"reset": "<p>Wemmuths collapse into ordinary vines and the trap resets if the area is left alone for 1 minute。</p>",
 			"routine": "<p>(2动作) If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action。</p>\n<p>For their second action, the flowers produce a mindaddling pollen. Each non-plant creature within 30 feet of a flower must succeed at a @Check[type:fortitude|dc:41|name:Mindaddling Pollen|traits:emotion,mental,olfactory] save or become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 round (or @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect。</p>",
@@ -144,10 +169,37 @@
 			"items":{}
 		},
 		"Ararda": {
-			"name": "Ararda",
-			"publicNotes": "<p>Before the Black Desert became a barren sandscape, cultures with grand magical traditions lived under its soaring roof. These communities eventually left the vault or died out, but the genies they summoned remained and became warped by the region's pervasive blightburn radiation. Now, these \"blightburn genies\" have bodies with features mirroring those of beasts that dwell in dark places, and their elemental lineages have been irreparably corrupted。</p>\n<hr />\n<p>Shaitans corrupted by the Black Desert's blightburn become scorpion-like arardas. While other earth genies sparkle with the iridescence of gemstones and evoke the power of the earth itself, arardas use their connection to the ground to harness the might of electricity. Arardas are so infused with this radioactive crystal that their mere presence is toxic to most living creatures。</p>",
+			"name": "废土巨灵 Ararda",
+			"publicNotes": "<p>在幽黑荒漠转变为不毛的沙漠地带之前，有着强大魔法传承的文明就生活在这座洞窟那高耸的洞顶之下。这些社群最终离开了洞窟或是消亡，但是他们召唤出的巨灵却留存下来，并且被这片地区遍布的炽辐辐射所扭曲。如今，这些“炽辐巨灵”有着反映那些居住在这片黑暗之地的野兽的形象的身体，而它们的元素血系则已经遭到了不可挽回的摧毁。</p>\n<hr />\n<p>被幽黑荒漠的炽辐辐射腐化的土巨灵就会转变为有着蝎子外貌的废土巨灵。其他种类的土巨灵因宝石的多彩而闪烁并唤起泥土本身的力量，废土巨灵则利用它们与大地的联系来控制电的强大力量。废土巨灵全身充斥着辐射的水晶，仅仅是存在便是对大多数活物的毒害。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Sand Fist": {
+					"name": "沙拳 Sand Fist"
+				},
+				"strike-Sand Spear": {
+					"name": "沙矛 Sand Spear"
+				},
+				"Blightburn Radiation": {
+					"name": "炽辐辐射 Blightburn Radiation",
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>灌注于废土巨灵体内的炽辐晶会试图反制（反制检定+31,7环）任何移动进入或是离开灵光的弥漫范围的传送法术。</p>\n<p>此外，任何在弥漫范围内开始回合的生物会暴露在炽辐病（见前文）的侵袭下。该灵光会被铅板，1尺宽的岩石或是大型力场效应（例如<em>@UUID[Compendium.pf2e.spells-srd.7Iela4GgVeO3LfAo]{力墙术 Wall of Force}</em>可以，但是<em>@UUID[Compendium.pf2e.spells-srd.TVKNbcgTee19PXZR]{护盾术 Shield}</em>不行）所阻挡。</p>\n<p>废土巨灵可以使用一个带有专注特征的动作(<span class=\"pf2-icon\">a</span>)来抑制灵光。</p>"
+				},
+				"Charged Earth": {
+					"name": "蓄能电土 Charged Earth",
+					"description": "<p>任何使用无武装攻击命中或是触碰废土巨灵的生物将受到[[/r 2d8[electricity]]]伤害。命中废土巨灵的武器也将受到[[/r 2d8[electricity]]]伤害。/p>"
+				},
+				"Blightburn Sickness": {
+					"name": "炽辐病 Blightburn Sickness",
+					"description": "<p>幽黑荒漠本地的生物对此免疫，因为它们是已经受到炽辐病的影响之后恢复的生物。除了通过魔法的方式以外，染病的目标无法从疾病造成的流失或恶心状态中恢复。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>潜伏期</strong> [[/r 1d4 #days]]{1d4天}</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1周)</p>\n<p><strong>阶段4</strong> @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3}和@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3} (1个月)</p>\n<p><strong>阶段5</strong> 增加1点@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态 (1年)</p>"
+				},
+				"Change Shape": {
+          			"name": "变身 Change Shape",
+					"description": "<p>废土巨灵可以变为是超小型或小型的蝎子形态。这种变形不会改变它的速度或是打击时的攻击与伤害加值。但也许会改变它的打击造成的伤害类型（通常是变为穿刺伤害）。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Earth Glide": {
+					"name": "潜地 Earth Glide",
+					"description": "<p>废土巨灵可以在任何泥土或岩石以它的@UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{掘地 Burrow}速度移动，且不留下隧道或任何它经过的痕迹。</p>"
+				}
+			}
 		},
 		"Arskuva the Gnasher": {
 			"name": "“啃咬者”阿尔斯寇法 Arskuva the Gnasher",
@@ -488,14 +540,39 @@
 			}
 		},
 		"Ciza": {
-			"name": "Ciza",
-			"publicNotes": "<p>Banshees are the furious, tormented souls of elves bound to the Material Plane by a betrayal that defined the final hours of their lives. Some banshees arise from elves who were slain by trusted friends and allies, or whose loved ones betrayed them on their deathbeds. Others spawn from elves whose treacherous deeds shortly before their deaths left a stain upon their souls. Regardless of their origin, banshees despise the living. This hatred of life is all too often a horrific inversion of their personalities in life. Some speculate that the more kind-hearted the elf (and the more wrenching the betrayal), the crueler the banshee。</p>\n<p>Banshees rarely stray far from where they perished and typically haunt thick forests and canopied swamps where little light graces the ground. Many banshees can be found in the elven nation of Kyonin, specifically in Tanglebriar, the sinister domain of the demon Treerazer. Similarly, a large number of banshees can be found lurking about the edges of drow settlements in the Darklands, as plenty of cruelty and betrayal exists in drow culture。</p>\n<p>Banshees' mere touch inflicts pain and primal fear, and those exposed to their wails of grief rarely survive the experience。</p>",
+			"name": "希吒 Ciza",
+			"publicNotes": "<p>报丧女妖是愤怒且痛苦的灵魂，她们是在生命的最后时刻由于被背叛而束缚在主物质位面的精灵。部分报丧女妖的诞生是因为精灵被最信任的同伴和朋友所杀害，或者是在临终时被所爱之人所背叛。而另一些由精灵衍生出的报丧女妖则是因为其死前的背信行为在灵魂上留下了污点。无论报丧女妖自身的起源是哪个种类，她们都会蔑视生灵。这种对生者的仇恨往往是其生前性格的可怖翻转。有人猜测越是善良热心的精灵（在遭遇越发痛苦的背叛后），由其诞生的报丧女妖越是残忍无情。</p>\n<p>报丧女妖很少远离自身的殒命之地，她们通常会在阳光很少能照耀的地点作祟，比如茂密的森林或昏暗的沼泽。在精灵之国奇奥尼（Kyonin）可以找到许多报丧女妖，尤其是在扭曲棘林（Tanglebriar）——恶魔毁木者（Treerazer）的邪恶领地。同样地，幽暗地域（Darklands）的卓尔定居点周边也潜伏着大量的报丧女妖，因为卓尔文化中不乏大量残忍的背叛行为。</p>\n<p>报丧女妖仅靠碰触就能带来痛苦与源自内心的原始恐惧，那些暴露在她们悲伤哀嚎中的人很难存活下来。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+                "Hears Heartbeats": {
+                    "name": "60尺洞见心跳（模糊）",
+                    "description": "<p>报丧女妖能听到60尺范围内的心跳声（模糊感官）。</p>"
+                },
+                "Sunlight Powerlessness": {
+                    "name": "阳光削弱 Sunlight Powerlessness",
+                    "description": "<p>在阳光的直射下，报丧女妖会陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，且无法使用具有攻击特征的动作。</p>"
+                },
+                "Vengeful Spite": {
+                    "name": "复仇之怨 Vengeful Spite",
+                    "description": "<p><strong>触发</strong> 有敌人对报丧女妖造成重击或者报丧女妖在对抗敌人的伤害性效果时投掷出了大失败。</p>\n<hr />\n<p><strong>效果</strong> 报丧女妖向折磨她的人进行反击，对其造成[[/r (4d10+14)[mental]]]{4d10+14心灵伤害}（@Check[type:will|dc:38|basic:true]豁免），并根据相同的意志豁免结果将惊骇之触的效果应用至目标。</p>"
+                },
+                "Spectral Ripple": {
+                    "name": "幽体涟漪 Spectral Ripple",
+                    "description": "<p>当报丧女妖行走了至少10尺时，她们会获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}直至其下个回合开始为止。</p>"
+                },
+                "Terrifying Touch": {
+                    "name": "惊骇之触 Terrifying Touch",
+                    "description": "<p>被报丧女妖的触摸所伤害且还未陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}的生物必须尝试一次@Check[type:will|dc:38]豁免（若她的攻击造成重击则为@Check[type:will|dc:43]）。若目标生物豁免失败，则会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}；大失败时还会因恐惧而畏缩，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 4}。若该生物由于法术或魔法物品的保护而可以对抗恐惧的话，报丧女妖的触摸首先会尝试反制该保护效果，该效果相当于9环的<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>法术。</p>"
+                },
+                "Wail": {
+                    "name": "哀嚎 Wail",
+                    "description": "<p>报丧女妖发出了让人心悸的<em>@UUID[Compendium.pf2e.spells-srd.FEsuyf203wTNE2et]{女妖之嚎 Wail of the Banshee}</em>（@Check[type:fortitude|dc:38]）。这声哀嚎会克服5环或更低环级的<em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{沉默术 Silence}</em>或类似效果。报丧女妖可以使用三动作的行动来替代哀嚎的行动，这使得她能够克服至多8环的上述效果。</p>\n<p>报丧女妖的哀嚎会在1轮内持续共鸣，在此期间进入此区域的任何生物都必须尝试一次豁免对抗该效果。同一名生物不会被同一个哀嚎影响多次。</p>\n<p>报丧女妖在[[/br 1d4 #Recharge Wail]]{1d4轮}内无法再次进行哀嚎。</p>"
+                }
+			}
 		},
 		"Convergence Lattice": {
 			"name": "Convergence Lattice",
-			"disable": "<p>@Check[type:thievery|dc:40|name:Obliterate a Key Rune|traits:magical,trap](大师)or @Check[type:religion|dc:35|name:Obliterate a Key Rune|traits:magical,trap](大师)four times to obliterate each of the four key runes。</p>\n<p>A @Check[type:thievery|dc:45|name:Stop the Clockwork's Movement|traits:magical,trap] (legendary) check (or breaking the lattice) stops the clockwork's movement and prevents it from resetting, but doesn't stop its current activation。</p>",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Obliterate a Key Rune|traits:magical,trap](大师)or @Check[type:religion|dc:35|name:Obliterate a Key Rune|traits:magical,trap](大师)four times to obliterate each of the four key runes。</p>\n<p>A @Check[type:thievery|dc:45|name:Stop the Clockwork's Movement|traits:magical,trap] (传奇) check (or breaking the lattice) stops the clockwork's movement and prevents it from resetting, but doesn't stop its current activation。</p>",
 			"hazarddescription": "<p>A complex clockwork of bright metal and delicately carved gemstones, the lattice's interlocking gears begin to whir as golden runes glow across its surface。</p>",
 			"reset": "<p>The <em>convergence lattice</em> deactivates and resets after there are no uncontrolled targets within line of sight for 1 minute。</p>",
 			"routine": "<p>(3动作) The <em>convergence lattice</em> uses its first action to call for aid. Each convergent creature within 100 feet of the lattice Strides toward the lattice as a reaction. Creatures thus called continue to move toward the lattice on their turn each round until they are adjacent to it, at which point they defend it with their lives。</p>\n<p>The lattice uses its second action to deal [[/r (16d6)[mental]]]{16d6心灵伤害} (@Check[type:will|dc:42|basic:true] save) to a non-convergent creature within 100 feet. This damage is nonlethal; a creature knocked out by this damage doesn't gain the dying condition and is automatically @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} by the convergence lattice when they awaken。</p>\n<p>The lattice uses its third action to make the same attack against a second non-convergent creature within 100 feet; if there isn't such a second creature, it doesn't take its third action。</p>",
@@ -614,12 +691,17 @@
 			}
 		},
 		"Crushing Gate Trap": {
-			"name": "Crushing Gate Trap",
-			"disable": "<p>@Check[type:thievery|dc:42|name:Secure Door in Place|traits:action:disable-a-device](专家)to secure the doors in place without triggering the trap</p>",
-			"hazarddescription": "<p>A hidden stone rod causes two immense stone doors to fall forward from their gate, crushing anything beneath them. The doors also fall forward if touched。</p>",
-			"stealthdetails": "<p>@Check[type:perception|dc:42|traits:action:seek](大师)to spot the triggering rod beneath the black sand。</p>",
+			"name": "大门重压陷阱 Crushing Gate Trap",
+			"disable": "<p>@Check[type:thievery|dc:42|name:Secure Door in Place|traits:action:disable-a-device](专家)来在不触发陷阱的情况下将门挪到合适的位置。</p>",
+			"hazarddescription": "<p>一根隐藏的石杆使得两扇巨大的石门向外倒下，压碎任何在其下的事物。如果被触碰，它们也会向前倒下。</p>",
+			"stealthdetails": "<p>@Check[type:perception|dc:42|traits:action:seek](大师)来发现黑沙之下的触发杆。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Gate Collapse":{
+					"name": "大门崩塌 Gate Collapse",
+					"description": "<p><strong>触发</strong> 石杆被移动或是任一扇门被触碰</p>\n<hr />\n<p><strong>效果</strong> 两扇倒下的门对门外15尺的所有生物造成[[/r (6d12+35)[bludgeoning]]]伤害（@Check[type:reflex|dc:37|basic:true]豁免）。失败时，生物还会被压在大门下且直到门被破拆（@Check[type:athletics|dc:34|traits:action:force-open]检定）或是摧毁前处于@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，每扇门都有着与陷阱本身相同的AC，强韧豁免加值，硬度以及HP。大失败时，该生物会以无法尝试自我解除的方式被困住。移走或是摧毁一扇门并不会对被困在另一扇门下的任何人有所帮助。</p>"
+				}
+			}
 		},
 		"Cu Sith": {
 			"name": "猎犬精 Cu Sith",
@@ -721,9 +803,22 @@
 			}
 		},
 		"Death Drider": {
-			"name": "Death Drider",
+			"name": "蛛化亡灵 Death Drider",
 			"data":{},
-			"items":{}
+			"items":{
+				"Sack of Spiders": {
+					"name": "蛛潮 Sack of Spiders",
+					"description": "<p><strong>触发</strong> 蛛化亡灵的HP降到0；</p>\n<hr />\n<p><strong>效果</strong> 蛛化亡灵爆开成为蜘蛛潮。每个邻近的生物必须成功通过一个@Check[type:reflex|dc:31|traits:damaging-effect]豁免，否则将受到[[/r 3d6[piercing]]]伤害，并且受到蛛化亡灵毒液的影响。</p>"
+				},
+				"Death Drider Venom": {
+					"name": "蛛化亡灵毒液 Death Drider Venom",
+					"description": "<p>在毒素的持续时间结束后，流失状态会保留</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 2d8[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 3d8[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r 4d8[poison]]]伤害和流失2 (1轮)</p>"
+				},
+				"Hungering Web": {
+					"name": "饥渴之网 Hungering Web",
+					"description": "<p>被蛛化亡灵的网打击命中的生物会@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，并粘附在最近的地面上（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC31）。在该生物逃脱前的每轮，它会受到[[/r 3d6[piercing]]]伤害（@Check[type:reflex|dc:31|basic:true]豁免），豁免失败时，它还会遭受蛛化亡灵毒液的影响。</p>"
+				}
+			}
 		},
 		"Deghuun (Child of Mhar)": {
 			"name": "Deghuun (Child of Mhar)",
@@ -808,9 +903,37 @@
 			}
 		},
 		"Drow Bodyguard Golem": {
-			"name": "Drow Bodyguard Golem",
+			"name": "卓尔保镖魔像 Drow Bodyguard Golem",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Iron Sword": {
+					"name": "铁剑 Iron Sword"
+				},
+                "Golem Antimagic": {
+                    "name": "魔像抗魔 Golem Antimagic",
+                    "description": "<p>被伤害：酸液([[/r (6d10)]]{6d10伤害}，区域效果或可持续伤害[[/r (2d8)]]{2d8伤害})；被治疗：火焰 (区域效果[[/r (2d8)[healing]]]{2d8生命值})；被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                },
+                "Vulnerable to Neutralize Poison": {
+                    "name": "法术弱点：中和毒性 Vulnerable to Neutralize Poison",
+                    "description": "<p>对铁魔像施放<em>@UUID[Compendium.pf2e.spells-srd.SUKaxVZW2TlM8lu0]{中和毒性 Neutralize毒素}</em>法术能使它的吐息无效化，持续1分钟。</p>"
+                },
+                "Vulnerable to Rust": {
+                    "name": "法术弱点：锈蚀魔法 Vulnerable to Rust",
+                    "description": "<p>魔法锈蚀效果，例如锈蚀怪的触须打击，能正常对铁魔像造成效果。</p>"
+                },
+                "Breath Weapon": {
+                    "name": "吐息 Breath Weapon",
+                    "description": "<p>铁魔像以占据方格的一个角为圆心，对10尺半径范围喷出毒气，毒气存在1轮。任何呆在范围内的生物（或之后进入范围的生物）将暴露在铁魔像毒气中。铁魔像在[[/r 1d4 #rounds]]{1d4轮}内无法再次吐息。</p>"
+                },
+                "Inexorable March": {
+                    "name": "势不可挡 Inexorable March",
+                    "description": "<p>铁魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过@Check[type:fortitude|dc:37|traits:damaging-effect]检定来阻挡其前进。</p>\n<p>如果豁免大成功，则阻挡的生物不受伤害；在其他情况下该生物受到铁魔像的拳击伤害。</p>"
+                },
+                "Iron Golem Poison": {
+                    "name": "铁魔像毒气 Iron Golem Poison",
+                    "description": "<p>此毒素造成的@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态值每小时减少1点。</p>\n<p><strong>豁免</strong> @Check[type:fortitude|dc:33]</p>\n<hr />\n<p><strong>最大持续 </strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (4d6)[poison]]]{4d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (8d6)[poison]]]{8d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)</p>"
+                }
+			}
 		},
 		"Drunken Brawler": {
 			"name": "醉鬼搏击手 Drunken Brawler",
@@ -827,16 +950,81 @@
 			}
 		},
 		"Dyzallin Shraen": {
-			"name": "Dyzallin Shraen",
-			"publicNotes": "<p>When House Shraen was exiled from Zirnakaynin for vile religious practices deemed unsavory even by other drow, Dyzallin Shraen sought a new home with the rest of his clan. Many drow perished along the way, including several of Dyzallin's relatives and rivals. Because the survival of the house was at stake and House Shraen didn't balk at the idea of raising their fallen as undead, many of his rivals returned-often more powerful than before. By the time the exiled drow house discovered the ancient xulgath city that would bear their name, the living among them had become an underprivileged minority。</p>\n<p>While Dyzallin was one of the few who had survived the deadly exodus, in the end, he too chose undeath, deeming life detrimental to his quest for power. Leveraging all his connections within his faction, the Sunscar Oath, Dyzallin acquired a set of scrolls detailing a secret method of attaining immortality through mummification atop a specially prepared mirror。</p>\n<p>More powerful than ever before, the newly undead Dyzallin swiftly accumulated wealth and influence, rivaling even Zyra and Nyrinda Shraen, the city's leaders. He isn't yet ready to challenge the status quo in Shraen, but he believes his time is near at hand。</p>\n<p>Dyzallin has recently focused his attention on the magic orb he learned about in Xul-Khundur. He initially thought the orb was designed to control cave worms; this power alone he might have leveraged into a plot to surprise and eliminate his rivals. But he learned the orb's true purpose, and believes that its life-giving energies might allow him to utterly destroy the undead kin who stand in his way. He has acquired the orb's resonant reflection, and as a curious side effect, his rotten skin is beginning to heal, and he feels more energetic than he has in millennia. Convinced of the orb's power, Dyzallin believes it is only a matter of time before he unlocks its magic and gains control of Shraen。</p>",
+			"name": "岱扎林·雪恩 Dyzallin Shraen",
+			"allSaves": "对抗心灵效果时全豁免+2状态加值，对抗魔法和正能量效果时全豁免+1状态加值",
+			"publicNotes": "<p>当雪恩家族因为进行即使是其他卓尔也认为邪恶的污秽宗教仪式而被从兹那凯宁流放时，岱扎林·雪恩试图为他部族的其他族人找到一个新家园。许多卓尔在这场跋涉中死去，包括许多岱扎林的亲属与对手。由于家族的存亡危在旦夕，而雪恩家族也毫不避讳将死者以亡灵生物的形式唤醒的手段，因此他的许多对手都死而复生，而且大多比以前还要强大。当这个被流放的卓尔家族发现那座即将冠以他们家族名讳的古代地蜥都市时，他们中的生者已经是相当稀少的比例。</p>\n<p>尽管岱扎林是少数几个在夺命的逃亡中存活的人，最终，他还是也选择了成为亡灵，因为他认为生命不利于他对力量的追求。通过经营他的派系日痕誓约内的所有人际关系，岱扎林获得了一套古卷，其中详细描述了一种通过在特殊准备的镜子顶部木乃伊化来维持不朽存在的秘密手段。</p>\n<p>新生的亡灵岱扎林要比以前更加强大，他迅速地积累着财富与影响力，甚至成为了这座城市的领袖，灾拉·雪恩与奈琳达·雪恩的对手。他还没有准备好挑战雪恩城的身份现状，但他相信这一天就在眼前了。</p>\n<p>最近，岱扎林将他的注意力放在一颗他了解到位于肯达尔地蜥金字塔的魔法宝珠上。起初他认为这颗宝珠是设计用来控制洞穴蠕虫的，而这种力量他也许可以用于突袭并消灭他的对手的阴谋之中。然而随后他理解了这颗宝珠的真实力量，并认为它那给予生命的能量也许可以使他彻底毁灭任何企图阻挡他的亡灵同族。他获得了宝珠的共鸣反射，并且作为一种奇特的副作用，他的腐烂皮肤开始治愈，而他也感觉到比过去的千年更加具有活力。岱扎林因这颗宝珠的力量确信，他释放它的魔力并控制雪恩城的未来仅仅只是时间问题了。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"+1 Status to All Saves vs. Magical Effects and Positive Effects": {
+					"name": "对抗魔法和正能量效果时全豁免+1状态加值"
+				},
+				"+2 Status to All Saves vs. Mental Effects": {
+					"name": "对抗心灵效果时全豁免+2状态加值"
+				},
+				"Attack of Opportunity (Special)": {
+					"name": "借机攻击 Attack of Opportunity (特殊)",
+					"description": "<p>除了常规的触发方式以外，当一个生物在岱扎林的触及范围里使用专注动作时，岱扎林也可以使用借机攻击动作。他可以干扰触发的专注动作，只要在攻击骰结果为成功时即可生效，而不只是大成功。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Mirror Rejuventation": {
+					"name": "镜中复生 Mirror Rejuventation",
+					"description": "<p>当岱扎林·雪恩被杀死时，在接下来的[[/r 1d10 #days]]{1d10天}中，死灵的能量会在他的实验室内的镜子中重构他的身体。</p>\n<p>他重构中的身体会在镜中可见，但除非首先对其使用<em>@UUID[Compendium.pf2e.spells-srd.Dbd5W6G8U2vzWolN]{祝圣术 Consecrate}</em>仪式，否则镜子将在他重构身体期间无法破坏。当复生完成后，岱扎林就会走出镜子。</p>"
+				},
+				"Utter Despair": {
+					"name": "语述绝望 Utter Despair",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在岱扎林的语述绝望灵光内的活物会@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。在区域内，他们无法正常地从这个惊惧状态中恢复，但只要一离开灵光区域就能立刻失去这个惊惧状态。</p>\n<p>当一个生物首次进入灵光区域时，它必须成功通过一次@Check[type:will|dc:39|traits:incapcitation]豁免（在受到了惊惧的减值以后豁免），否则将@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}[[/br 1d4 #rounds]]{1d4轮}。</p>\n<p>随后，该生物就将对语述绝望灵光造成的麻痹状态临时免疫24小时。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.ob00D61F0c4PIvj1]{效果: 语述绝望}</p>"
+				},
+				"Channel Rot": {
+					"name": "引导腐尸症 Channel Rot",
+					"description": "<p>岱扎林可以通过他持用的任何武器来传播恶毒腐尸症。</p>"
+				},
+				"Familiar": {
+					"name": "魔宠 Familiar",
+					"description": "<p>岱扎林有一个叫做暗喙的亡灵渡鸦魔宠。暗喙可以飞行，拥有@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.TTCw5NusiSSkJU1x]{负能量治疗 Negative Healing}能力，享有岱扎林的所有免疫，并且给予了岱扎林一个额外的7环法术位（已经合并到法术列表中）。</p>"
+				},
+				"Insidious Mummy Rot": {
+					"name": "恶毒腐尸症 Insidious Mummy Rot",
+					"description": "<p>诅咒移除前，源自其的疾病与伤害无法被治愈。</p>\n<p>被这个诅咒杀死的生物将转变为沙子，无法被除了9环<em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或是同类魔法以外的效果复生。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:39]</p>\n<p><strong>阶段1</strong> 无反应的携带者 (1分钟)</p>\n<p><strong>阶段2</strong> [[/r 15d6[negative]]]伤害和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1天)</p>"
+				}
+			}
 		},
 		"Dyzallin's Golem": {
-			"name": "Dyzallin's Golem",
-			"publicNotes": "<p>Crafted from a nigh-indestructible metal of great rarity, adamantine golems can't be destroyed except by the most powerful foes. Crafting an adamantine golem requires a quantity of adamantine so massive that collecting it usually requires mounting a mining expedition to a distant planet, the Plane of Earth, or an Outer Plane。</p>",
+			"name": "岱扎林的魔像 Dyzallin's Golem",
+			"publicNotes": "<p>精金魔像由几乎坚不可摧的金属制造而成，只有最强大的敌人才有机会摧毁它。制造精金魔像需要如此巨量的精金以至于制造它需要专门组建一支采矿远征队，并前往像土元素位面或外环位面这样的遥远国度。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Compact": {
+					"name": "结构紧凑 Compact",
+					"description": "<p>这尊精金魔像被建造得像是一名身穿全身甲的笨重卓尔精灵。它的体型是大型，拳击的触及为10尺。</p>"
+				},
+                "Golem Antimagic": {
+                    "name": "魔像抗魔 Golem Antimagic",
+                    "description": "<p>被伤害：酸液([[/r (9d10)]]{9d10伤害}, 区域效果或可持续伤害则为[[/r (2d10)]]{2d10伤害}); 被治疗：火焰 (区域效果[[/r (2d10)[healing]]]{2d10生命值}); 被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+                },
+                "Repair Mode": {
+                    "name": "修理模式 Repair Mode",
+                    "description": "<p>当精金魔像HP减少为0时，它不会被摧毁。相反，它进入修理模式，陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，无法使用反应动作，并且只能进行自自我修复行动。</p>\n<p>一旦它的生命值大于等于30点，它能进行除了反应动作之外的其他动作，但是仍陷入缓慢1，并且直到它的下回合开始之前无法使用反应动作。</p>\n<p>如果精金<em>@UUID[Compendium.pf2e.equipment-srd.6xaxxKfvXED6LfIY]{斩首}</em>武器对精金魔像造成重击且将其生命值减少至0，或当它生命为0时被精金斩首武器击中，则魔像被摧毁。</p>"
+                },
+                "Vulnerable to Dispelling": {
+                    "name": "法术弱点-解除 Vulnerable to Dispelling",
+                    "description": "<p>精金魔像可以作为<em>@UUID[Compendium.pf2e.spells-srd.ihbRf964JDXztcy3]{裂解术 Disjunction}</em>和<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>的目标。</p>\n<p>如果精金魔像被作为9环或更高环级的上述法术的目标，它的物理抗力减少到15，并且陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（修理模式下则@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}），持续[[/br 1d4 #rounds]]{1d4轮}。在此期间，如果魔像的生命值减少为0，并且已经开启修理模式，则它被摧毁。</p>"
+                },
+                "Destructive Strike": {
+                    "name": "毁灭打击 Destructive Strike",
+                    "description": "<p>如果精金魔像的拳击打击造成重击，除了对目标造成伤害外，还能破坏目标的护甲（如果目标穿着护甲的话）。如果目标举起盾牌，则它破坏盾牌而非护甲。</p>"
+                },
+                "Inexorable March": {
+                    "name": "势不可挡 Inexorable March",
+                    "description": "<p>@Check[type:fortitude|dc:45|traits:damaging-effect]</p>\n<p><strong>大成功</strong> 阻挡的生物不受伤害，它的护甲也不受伤害。</p>\n<p><strong>成功</strong> 魔像停止行动，并且无法进入阻挡的生物占据的空间。</p>\n<p><strong>失败</strong> 阻挡的生物和它的护甲都受到精金魔像的拳击伤害。</p>\n<hr />\n<p>精金魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过强韧检定来阻挡其前进。</p>"
+                },
+                "Self-Repair": {
+                    "name": "自我修复 Self-Repair",
+                    "description": "<p>魔像自我修复，恢复[[/r (30)[healing]]]{30生命值}。</p>"
+                },
+                "Vent": {
+                    "name": "喷气 Vent",
+                    "description": "<p>精金魔像对@Template[type:cone|distance:30]{30尺锥形}范围喷出炉心中的过热蒸汽。对范围内所有生物造成[[/r (15d6)[fire]]]{15d6火焰伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。</p>\n<p>魔像在[[/br 1d6 #Vent Recharge]]{1d6轮}内无法再次进行喷气。</p>"
+                }
+			}
 		},
 		"Echoes of Faith": {
 			"name": "信仰回声 Echoes of Faith",
@@ -1146,7 +1334,7 @@
 		"Guthallath Rockslide": {
 			"name": "Guthallath Rockslide",
 			"hp": "硬度 10in the guthallath's erosion aura",
-			"disable": "<p>@Check[type:crafting|dc:48|name:Buttress the Rocks|traits:environmental] (legendary) to buttress the collapsing rocks in three different locations. Using large and durable materials (or applicable spells) to support the rocks reduces the check to @Check[type:crafting|dc:45|name:Buttress the Rocks|traits:environmental] (大师)。</p>",
+			"disable": "<p>@Check[type:crafting|dc:48|name:Buttress the Rocks|traits:environmental] (传奇) to buttress the collapsing rocks in three different locations. Using large and durable materials (or applicable spells) to support the rocks reduces the check to @Check[type:crafting|dc:45|name:Buttress the Rocks|traits:environmental] (大师)。</p>",
 			"hazarddescription": "<p>The rock walls nearby begin to crumble and collapse。</p>",
 			"reset": "<p>The guthallath can reset the hazard with a few days of work stacking the fallen rocks。</p>",
 			"routine": "<p>(2动作) On the hazard's first action, any areas of crumbling rocks from a previous round collapse, making a falling rocks Strike against each creature in the area。</p>\n<p>On its second action, the hazard crumbles rocks in a 20- foot radius around the previous collapse. A character can @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek} (DC 40) to determine where the rocks will fall on the following round, but on a critical failure, they incorrectly identify where the rocks will fall。</p>",
@@ -1277,9 +1465,34 @@
 			}
 		},
 		"Hollow Hush": {
-			"name": "Hollow Hush",
+			"name": "虚无噤者 Hollow Hush",
+			"allSaves": "对抗情绪效果时意志豁免调整值为+37",
 			"data":{},
-			"items":{}
+			"items":{
+				"+37 Will Save vs. Emotion Effects": {
+					"name": "对抗情绪效果时意志豁免调整值为+37"
+				},
+				"Emotional Focus": {
+					"name": "情绪聚能 Emotional Focus",
+					"description": "<p>虚无噤者可以以9环内在异能法术的形式，不需要消耗聚能点的随意施放以下牧师领域法术：<em>@UUID[Compendium.pf2e.spells-srd.Dj44lViYKvOJ8a53]{盲目野心 Blind Ambition}</em>，<em>@UUID[Compendium.pf2e.spells-srd.jJphHQlENHFlSElH]{迷人情态 Captivating Adoration}</em>，<em>@UUID[Compendium.pf2e.spells-srd.J8pL8yTshga8QOk8]{傲慢妄想 Delusional Pride}</em>。</p>"
+				},
+				"Emotional Frenzy": {
+					"name": "情绪狂暴 Emotional Frenzy",
+					"description": "<p>虚无噤者可以从它的随意施放的内在法术与情绪聚能法术中选择最多三个法术施放。</p>"
+				},
+				"Feed on Emotion": {
+					"name": "饱食情绪 Feed on Emotion",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 虚无噤者以30尺内一个正在受到情绪效果影响的生物的情绪波动为食。目标必须成功通过@Check[type:will|dc:41|traits:damaging-effect]豁免，否则将受到[[/r 5d10[mental]]]伤害并@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}1轮。如果目标豁免失败，虚无噤者将获得同等数值的HP，而且饱食情绪将不会消耗虚无噤者一个动作，这让它在本轮可以再使用另外一个动作。</p>"
+				},
+				"Rapid Strikes": {
+					"name": "迅猛打击 Rapid Strikes",
+					"description": "<p>虚无噤者进行3次爪抓打击，每次攻击触及范围内的一个不同的目标。每次攻击都会应用多重攻击减值，但仅当所有攻击都结算之后多重攻击减值才会增加。</p>"
+				},
+				"Spiral of Despair": {
+					"name": "绝望螺旋 Spiral of Despair",
+					"description": "<p><strong>触发</strong> 一个抵抗虚无噤者的内在法术或是情绪聚能法术时豁免失败的生物</p>\n<hr />\n<p><strong>效果</strong> 在虚无噤者侵入触发生物的脑内并植入负面情绪的同时，它还剥离了该目标希望与积极的感觉。虚无噤者可以立刻结束触发生物正在受益的一个情绪效果。</p>"
+				}
+			}
 		},
 		"Hooklimb Xulgath": {
 			"name": "钩臂地蜥人 Hooklimb Xulgath",
@@ -1327,30 +1540,73 @@
 			}
 		},
 		"Host of Spirits": {
-			"name": "Host of Spirits",
-			"disable": "<p>@Check[type:religion|dc:43|name:Exorcise Spirits](大师)to exorcise the spirits or @Check[type:deception|dc:45|name:Trick the Spirits](大师)to trick the spirits into departing</p>",
-			"hazarddescription": "<p>A host of angry spirits inhabiting the ruined house attempts to drag living creatures closer and crush them to death。</p>",
-			"reset": "<p>The haunt ends 1 round after no creatures are within 50 feet of the house. The haunt resets after 1 day。</p>",
-			"routine": "<p><strong><span class=\"pf2-icon\">t</span></strong> For each of its actions, the trap attempts a ghostly hand Strike against a different creature within 50 feet of the ruins of the house (if there are fewer than 3 creatures, the haunt doesn't use its remaining actions)。</p>",
+			"name": "魂魄群体 Host of Spirits",
+			"disable": "<p>@Check[type:religion|dc:43|name:Exorcise Spirits](大师)来驱散这些灵魂，或@Check[type:deception|dc:45|name:Trick the Spirits](大师)来欺骗这些灵魂离开。</p>",
+			"hazarddescription": "<p>一群居住在废屋内的愤怒灵魂试图拉近并压碎他们。</p>",
+			"reset": "<p>当没有生物位于房屋50尺内时，作祟会在1轮后结束。该作祟会在一天后重置。</p>",
+			"routine": "<p><strong><span class=\"pf2-icon\">t</span></strong> 作祟的每个动作会尝试对废屋50尺内的不同生物进行一次幽灵之手打击（如果范围内少于3个生物，作祟不会使用它剩余的动作）。</p>",
 			"stealthdetails": "<p>+35 (专家)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Embrace of Death":{
+					"name": "死亡之拥 Embrace of Death",
+					"description": "<p><strong>触发</strong> 一个惹怒了鬼魂们的生物在废屋50尺内开始它的回合</p>\n<hr />\n<p><strong>效果</strong> 作祟对该目标生物进行一次幽灵之手打击，随后投掷先攻。</p>"
+				},
+				"Ghostly Grip":{
+					"name": "幽冥之握 Ghostly Grip",
+					"description": "<p>在房屋外受到魂魄群体的幽灵之手打击伤害的生物必须成功通过一次@Check[type:reflex|dc:42]豁免（DC42），否则将被直接拽入房屋内。如果在生物进入房屋的路径上有一道墙，这部分墙将会被毁坏，而生物将额外受到[[/r 3d12[bludgeoning]]]伤害。作祟的幽灵之手打击还会对已经在房屋内的目标额外造成[[/r 6d6[bludgeoning]]]伤害（@Check[type:fortitude|dc:42|basic:true]豁免）。</p>"
+				}
+			}
 		},
 		"Iffdahsil": {
-			"name": "Iffdahsil",
-			"publicNotes": "<p>The slithering horror known as Iffdahsil is an undead shoggoth that has haunted the vault of the Black Desert for millennia. Drow legends in particular tend to feature Iffdahsil, terrifying the elves from a young age。</p>",
+			"name": "无形恐怖 Iffdahsil",
+			"publicNotes": "<p>被称作无形恐怖的可怕蠕行生物是一只徘徊在幽黑荒漠洞窟千年的亡灵修格斯。卓尔的传说尤其倾向于描述无形恐怖的存在，因为它在这些精灵年轻时便已是他们的梦魇。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Aura of Annihilation": {
+					"name": "湮灭灵光 Aura of Annihilation",
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:fortitude|dc:45]</p>\n<p>进入灵光或是在其中开始回合的生物需要进行一次强韧豁免，若失败则陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}与@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。如果目标已经处于毁灭状态或是流失状态，则状态值加1，最大是毁灭3与流失3。以这种方式陷入毁灭3与流失3的生物在死亡时会瓦解成为黑沙。</p>"
+				},
+				"Unkillable": {
+					"name": "不灭存在 Unkillable",
+					"description": "<p>不同于大多数不死生物，无形恐怖不会在0HP时毁灭。无形恐怖的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing}会像通常那样生效，不过在它以0HP开始回合的轮次，直到它的下个回合开始前，它会陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 4}与@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。当无形恐怖处于0HP时，它仅仅可以通过直接暴露在阳光（或是10环的<em>@UUID[Compendium.pf2e.spells-srd.a3aQxCpoj1q1NQxC]{阳炎爆 Sunburst}</em>）下或是意在摧毁它的<em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>或是<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>来永久的杀死。</p>"
+				},
+				"Constrict": {
+          			"name": "紧勒 Constrict",
+					"description": "<p>[[/r (3d10+17)[piercing]]]，@Check[type:fortitude|dc:41|basic:true]</p>\n<p><em>注意: Paizo未给此能力提供DC。此处DC为根据生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"Eat Away": {
+					"name": "吃干抹净 Eat Away",
+					"description": "<p>在无形恐怖体内开始回合的生物将受到[[/r 10d6[negative]]]伤害。无形恐怖会获得等同于造成伤害一半的临时HP，持续1分钟。</p>"
+				},
+				"Engulf": {
+         			"name": "包卷 Engulf",
+					"description": "<p>@Check[type:reflex|dc:43]，[[/r 10d6[negative]]]，逃脱DC 43，破裂45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Engulf]</p>"
+				},
+				"Tentacular Burst": {
+					"name": "触手猛击 Tentacular Burst",
+					"description": "<p>无形恐怖对@Template[type:emanation|distance:10]内的所有生物造成[[/r 8d8[piercing]]]伤害（@Check[type:reflex|dc:43|basic:true]豁免），且可以试图使用自由动作来@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Tkd8sH4pwFIPzqTr]{攫抓 Grab}任何豁免大失败的生物。随后，直到它的下个回合开始前，它将处于@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。</p>"
+				},
+				"+1 Status Bonus to Saves vs. Magical Effects":{
+					"name": "对抗魔法效果全豁免+1状态加值"
+				}
+			}
 		},
 		"Imperious Darkside Mirror": {
-			"name": "Imperious Darkside Mirror",
-			"disable": "<p>@Check[type:thievery|dc:42|name:Retrieve a Creture from the Mirror|traits:action:disable-a-device] (legendary) to retrieve a creature from the mirror within 10 minutes of the switch (possible only if their mirror duplicate is dead), @Check[type:thievery|dc:47|name:Permanently Disable the Mirror|traits:action:disable-a-device](大师)to permanently disable the mirror once all mirror duplicates are dead, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (9th level; counteract DC 40) to counteract the mirror for 1 minute and prevent additional replacements from appearing during that time。</p>",
-			"hazarddescription": "<p>This magic mirror replaces characters with evil duplicates from another dimension。</p>\n<p>The mirror can't be damaged while any mirror duplicate is alive。</p>",
-			"reset": "<p>The mirror is always ready to absorb creatures into another dimension. 10 minutes after a creature is sucked into the mirror, if an ally doesn't rescue the creature using the Thievery skill, the creature reaches the mirror dimension, where it could be captured or killed. In the mirror dimension, it counts as a mirror duplicate, so the denizens of the other dimension can't destroy the mirror on their side while the absorbed creature is there. These dimensions are alternate realities, not planes, so even rituals like plane shift can't reach them。</p>",
-			"routine": "<p>(1 action) The mirror absorbs another reflected creature into the mirror (DC 42 Reflex) and replaces it with a mirror duplicate. Mirror duplicates act on their own initiative, using the same statistics as the original creature, but with an evil alignment (changing only abilities that shift with the alignment change)。</p>\n<p>Mirror duplicates are legendary in Intimidation and are permanently quickened, but they can use this additional action only to Demoralize。</p>\n<p>A mirror duplicate can spend 3 actions in contact with the mirror to return to its original dimension and release the creature it duplicated, but most mirror duplicates prefer not to。</p>",
-			"stealthdetails": "<p>+32 (Legendary) to notice that the mirror isn't a regular mirror。</p>",
+			"name": "傲慢黑镜 Imperious Darkside Mirror",
+			"hp": "这面镜子不会在有任何镜面复制体存活时受到伤害。",
+			"disable": "<p>在交换后的10分钟内通过@Check[type:thievery|dc:42|name:Retrieve a Creture from the Mirror|traits:action:disable-a-device] (传奇)来将一名生物从镜子中带回（仅在它们的镜像复制体死亡时可行），@Check[type:thievery|dc:47|name:Permanently Disable the Mirror|traits:action:disable-a-device](大师)来在所有的镜像复制体死亡后永久地解除镜子的魔法，或是<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（9环，反制DC40）来反制镜子1分钟并阻止在那段时间内出现额外的复制体。</p>",
+			"hazarddescription": "<p>这面魔法镜会将角色替换成来自另一个位面的邪恶复制体。</p>\n<p>这面镜子不会在有任何镜面复制体存活时受到伤害。</p>",
+			"reset": "<p>这面镜子总是准备好将生物吸入另一个维度。在一个生物被吸入镜子的10分钟后，如果它的盟友没有使用贼活技能来营救它，它就会抵达镜子维度，它在那里可能被捕获或是杀死。在镜子维度，它会被看作是一个镜像复制体，所以其他维度的居民也无法在被吸收的生物在那里时摧毁位于他们那一侧的镜子。这些维度是平行世界，而不是位面，因此即使是像异界传送这样的法术也无法到达他们所在之地。</p>",
+			"routine": "<p>(1动作) 镜子吸收另一个被映出的生物进入其中（DC42，反射）并用一名镜像复制体代替它。镜像复制体会有它们自己的先攻，使用与原来的生物相同的数据，但有着邪恶的阵营（仅会改变那些需要与阵营一同改变的能力）。</p>\n<p>镜像复制体在威吓上有传奇熟练度，并永久处于迅捷状态，但他们仅可使用这个额外的动作来挫败士气。</p>\n<p>一名镜像复制体可以花费3动作来与镜子建立联系来返回它原来的维度并释放它复制的生物，但是大多数镜像复制体都不愿这么做。</p>",
+			"stealthdetails": "<p>+32 (传奇)来注意到这面镜子不是常规的镜子。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Reflection of Evil":{
+					"name": "邪恶镜像 Reflection of Evil",
+					"description": "<p><strong>触发</strong> 一个非邪恶生物在镜子中显形</p>\n<hr />\n<p><strong>效果</strong> 镜子将该生物吸入镜子内，用一名邪恶的镜像复制体代替它（@Check[type:reflex|dc:42]豁免来避免被吸入镜子内），随后它进行先攻掷骰。 </p>"
+				}
+			}
 		},
 		"Iridescent Elephant": {
 			"name": "虹彩大象 Iridescent Elephant",
@@ -1445,10 +1701,35 @@
 			}
 		},
 		"Kharostan": {
-			"name": "Kharostan",
-			"blurb": "Male urdefhan war champion",
+			"name": "卡罗斯坦 Kharostan",
+			"blurb": "男性透肌魔人战将",
 			"data":{},
-			"items":{}
+			"items":{
+				"Necrotic Decay": {
+					"name": "黯蚀溃烂 Necrotic Decay",
+					"description": "<p>卡罗斯坦死亡时，他被邪魔侵染的血肉会快速腐烂并气化，在他的尸体的@Template[type:emanation|distance:10]范围内充满难闻的气体。</p>\n<p>区域内的所有生物都会受到[[/r 20d6[negative]]]伤害（@Check[type:fortitude|dc:37|basic:true]豁免），他们的血肉也会凝结并腐烂。</p>"
+				},
+				"Devastating Strikes": {
+					"name": "毁灭打击 Devastating Strikes",
+					"description": "<p>卡罗斯坦的近战打击将忽视该生物的10点物理抗性。</p>"
+				},
+				"Furious Sprint": {
+					"name": "凶猛冲刺 Furious Sprint",
+					"description": "<p>卡罗斯坦以他的速度在直线距离内行走最多五次。他可以将这个行动的动作数增加到3来以他的速度在直线距离内行走最多八次。</p>"
+				},
+				"Rage": {
+					"name": "狂暴 Rage",
+					"description": "<p><strong>需求</strong> 卡罗斯坦没有@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}或是正处于狂暴状态</p>\n<hr />\n<p><strong>效果</strong> 卡罗斯坦获得30临时HP，持续到狂暴结束。在狂暴期间，他的近战攻击额外造成12点伤害，AC则获得-1减值。</p>\n<p>卡罗斯坦无法使用拥有狂暴特征或是搜索以外的专注动作。狂暴持续1分钟，或是不再有卡罗斯坦可以感知到的敌人，或是卡罗斯坦失去意识。狂暴结束后，卡罗斯坦在1分钟内无法再次狂暴。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.z3uyCMBddrPK5umr]{效果: 狂暴}</p>"
+				},
+				"Reckless Abandon": {
+					"name": "无所顾忌 Reckless Abandon",
+					"description": "<p><strong>触发</strong> 卡罗斯坦的回合开始，而他的HP在140以下；</p>\n<hr />\n<p><strong>效果</strong> 卡罗斯坦将理智抛在脑后来结束这场战斗。他的攻击骰获得+2状态加值，AC获得-2状态减值，豁免获得-1状态减值。每次他使用牙打击伤害敌人时，他还可以进行1次秽恶之啮，这将以自由动作进行，并且不算在常规的一轮一次的使用限制内。这些效果将持续到他的狂暴结束或是HP高于140，取其先者。</p>"
+				},
+				"Wicked Bite": {
+					"name": "秽恶之啮 Wicked Bite",
+					"description": "<p><strong>触发</strong> 卡罗斯坦使用尖牙打击伤害了一名生物</p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 卡罗斯坦的咬击让受害者伤口部位的血肉变成半透明。他选择以下一种效果，两种效果都需要受伤的生物进行一次@Check[type:fortitude|dc:37]豁免。</p>\n<p>如果尖牙打击是重击命中，则该生物同时受到两种效果的影响，进行一次豁免掷骰来决定两个效应的结果。</p>\n<ul>\n<li><strong>汲取血液 Drain Blood</strong> 卡罗斯坦汲取受害者的一些血液。豁免失败时，受害者将陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}与@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，卡罗斯坦将获得[[/r 20]]{20 HP}（大失败时，该生物陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}与@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，卡罗斯坦获得[[/r 40]]{40 HP}）。</li>\n<li><strong>汲取活力 Drain Vitality</strong> (死灵系) 卡罗斯坦吸收该生物的部分生命精髓。豁免失败时，该生物陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续1小时（大失败时为@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 3}，持续1小时）。</li>\n</ul>"
+				}
+			}
 		},
 		"Kimilekki": {
 			"name": "Kimilekki",
@@ -1777,10 +2058,22 @@
 			}
 		},
 		"Muurfeli": {
-			"name": "Muurfeli",
-			"publicNotes": "<p>Before the Black Desert became a barren sandscape, cultures with grand magical traditions lived under its soaring roof. These communities eventually left the vault or died out, but the genies they summoned remained and became warped by the region's pervasive blightburn radiation. Now, these \"blightburn genies\" have bodies with features mirroring those of beasts that dwell in dark places, and their elemental lineages have been irreparably corrupted。</p>\n<hr />\n<p>Whereas typical djinn can cleanse or clear areas with their arcane winds, the air magic of muurfeli is tainted by the Black Desert's noxious radiation and mixed with the realm's ambient fetid winds。</p>",
+			"name": "晦风巨灵 Muurfeli",
+			"publicNotes": "<p>在幽黑荒漠转变为不毛的沙漠地带之前，有着强大魔法传承的文明就生活在这座洞窟那高耸的洞顶之下。这些社群最终离开了洞窟或是消亡，但是他们召唤出的巨灵却留存下来，并且被这片地区遍布的炽辐辐射所扭曲。如今，这些“炽辐巨灵”有着反映那些居住在这片黑暗之地的野兽的形象的身体，而它们的元素血系则已经遭到了不可挽回的摧毁。</p>\n<hr />\n<p>尽管通常的风巨灵可以使用它们的奥法之风来清理或是清洁区域，而晦风巨灵气魔法则被幽黑荒漠的剧毒辐射所玷污，混入了这个区域的环境中那恶臭的风。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Fetid Winds": {
+					"name": "晦风 Fetid Winds"
+				},
+				"Firedamp Winds": {
+					"name": "沼气晦风 Firedamp Winds",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>@Check[type:fortitude|dc:33]</p>\n<p>急旋的可燃有毒气体之风包裹着晦风巨灵。这个区域内的明火，火星或是类似的火焰效应就会引发爆炸，并对灵光内的所有生物（包括晦风巨灵）造成[[/r 20d6[fire]]]伤害，并在1分钟内暂时抑制灵光。</p>\n<p>当晦风巨灵从带有水特征的能力处受到伤害，或是对抗水效应的豁免失败时，它的沼气晦风灵光就会抑制1分钟。</p>\n<p>进入灵光或是在灵光中开始回合的生物需要进行一次强韧豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}和@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}。</p>"
+				},
+				"Change Shape": {
+          			"name": "变身 Change Shape",
+					"description": "<p>晦风巨灵可以变为猫头鹰形态。猫头鹰形态的外表看上去总是一样的，不过晦风巨灵可以选择变为超小型或是小型。这种变形不会改变它的速度或是打击时的攻击与伤害加值。但也许会改变它的打击造成的伤害类型（通常是变为挥砍伤害）。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				}
+			}
 		},
 		"Nemmia Bramblecloak": {
 			"name": "涅米亚·棘蓬 Nemmia Bramblecloak",
@@ -1809,16 +2102,65 @@
 			}
 		},
 		"Nihiris": {
-			"name": "Nihiris",
-			"publicNotes": "<p>Banshees are the furious, tormented souls of elves bound to the Material Plane by a betrayal that defined the final hours of their lives. Some banshees arise from elves who were slain by trusted friends and allies, or whose loved ones betrayed them on their deathbeds. Others spawn from elves whose treacherous deeds shortly before their deaths left a stain upon their souls. Regardless of their origin, banshees despise the living. This hatred of life is all too often a horrific inversion of their personalities in life. Some speculate that the more kind-hearted the elf (and the more wrenching the betrayal), the crueler the banshee。</p>\n<p>Banshees rarely stray far from where they perished and typically haunt thick forests and canopied swamps where little light graces the ground. Many banshees can be found in the elven nation of Kyonin, specifically in Tanglebriar, the sinister domain of the demon Treerazer. Similarly, a large number of banshees can be found lurking about the edges of drow settlements in the Darklands, as plenty of cruelty and betrayal exists in drow culture。</p>\n<p>Banshees' mere touch inflicts pain and primal fear, and those exposed to their wails of grief rarely survive the experience。</p>",
+			"name": "妮西丽丝 Nihiris",
+			"publicNotes": "<p>报丧女妖是愤怒且痛苦的灵魂，她们是在生命的最后时刻由于被背叛而束缚在主物质位面的精灵。部分报丧女妖的诞生是因为精灵被最信任的同伴和朋友所杀害，或者是在临终时被所爱之人所背叛。而另一些由精灵衍生出的报丧女妖则是因为其死前的背信行为在灵魂上留下了污点。无论报丧女妖自身的起源是哪个种类，她们都会蔑视生灵。这种对生者的仇恨往往是其生前性格的可怖翻转。有人猜测越是善良热心的精灵（在遭遇越发痛苦的背叛后），由其诞生的报丧女妖越是残忍无情。</p>\n<p>报丧女妖很少远离自身的殒命之地，她们通常会在阳光很少能照耀的地点作祟，比如茂密的森林或昏暗的沼泽。在精灵之国奇奥尼（Kyonin）可以找到许多报丧女妖，尤其是在扭曲棘林（Tanglebriar）——恶魔毁木者（Treerazer）的邪恶领地。同样地，幽暗地域（Darklands）的卓尔定居点周边也潜伏着大量的报丧女妖，因为卓尔文化中不乏大量残忍的背叛行为。</p>\n<p>报丧女妖仅靠碰触就能带来痛苦与源自内心的原始恐惧，那些暴露在她们悲伤哀嚎中的人很难存活下来。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+                "Hears Heartbeats": {
+                    "name": "60尺洞见心跳（模糊）",
+                    "description": "<p>报丧女妖能听到60尺范围内的心跳声（模糊感官）。</p>"
+                },
+                "Sunlight Powerlessness": {
+                    "name": "阳光削弱 Sunlight Powerlessness",
+                    "description": "<p>在阳光的直射下，报丧女妖会陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，且无法使用具有攻击特征的动作。</p>"
+                },
+                "Vengeful Spite": {
+                    "name": "复仇之怨 Vengeful Spite",
+                    "description": "<p><strong>触发</strong> 有敌人对报丧女妖造成重击或者报丧女妖在对抗敌人的伤害性效果时投掷出了大失败。</p>\n<hr />\n<p><strong>效果</strong> 报丧女妖向折磨她的人进行反击，对其造成[[/r (4d10+14)[mental]]]{4d10+14心灵伤害}（@Check[type:will|dc:38|basic:true]豁免），并根据相同的意志豁免结果将惊骇之触的效果应用至目标。</p>"
+                },
+                "Spectral Ripple": {
+                    "name": "幽体涟漪 Spectral Ripple",
+                    "description": "<p>当报丧女妖行走了至少10尺时，她们会获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}直至其下个回合开始为止。</p>"
+                },
+                "Terrifying Touch": {
+                    "name": "惊骇之触 Terrifying Touch",
+                    "description": "<p>被报丧女妖的触摸所伤害且还未陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}的生物必须尝试一次@Check[type:will|dc:38]豁免（若她的攻击造成重击则为@Check[type:will|dc:43]）。若目标生物豁免失败，则会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}；大失败时还会因恐惧而畏缩，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 4}。若该生物由于法术或魔法物品的保护而可以对抗恐惧的话，报丧女妖的触摸首先会尝试反制该保护效果，该效果相当于9环的<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>法术。</p>"
+                },
+                "Wail": {
+                    "name": "哀嚎 Wail",
+                    "description": "<p>报丧女妖发出了让人心悸的<em>@UUID[Compendium.pf2e.spells-srd.FEsuyf203wTNE2et]{女妖之嚎 Wail of the Banshee}</em>（@Check[type:fortitude|dc:38]）。这声哀嚎会克服5环或更低环级的<em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{沉默术 Silence}</em>或类似效果。报丧女妖可以使用三动作的行动来替代哀嚎的行动，这使得她能够克服至多8环的上述效果。</p>\n<p>报丧女妖的哀嚎会在1轮内持续共鸣，在此期间进入此区域的任何生物都必须尝试一次豁免对抗该效果。同一名生物不会被同一个哀嚎影响多次。</p>\n<p>报丧女妖在[[/br 1d4 #Recharge Wail]]{1d4轮}内无法再次进行哀嚎。</p>"
+                }
+			}
 		},
 		"Obsidian Golem": {
-			"name": "Obsidian Golem",
-			"publicNotes": "<p>The art of golem animation is not limited to societies with access to expensive crafting materials or a long history of arcane mastery. Among the resource-poor xulgaths who dwell in the Darklands, especially those hardy clutches that call the Black Desert their home, obsidian is one of the most common crafting materials available. Combine this ingredient with a powerful spellcaster and the xulgath tradition of inflection-magically warping and working normally inflexible stone-and the end result is an obsidian golem。</p>\n<hr />\n<p>Crafted of base materials and then magically animated into a powerful guardian, the legendary golem is a living construct that mindlessly obeys its creator's commands-often continuing to do so for years or even centuries after its creator's death. There exist two known methods of animating a golem. The traditional method involves harvesting and implanting an elemental soul or essence within the newly crafted host statue, a procedure seen as vile and blasphemous to those who value the sanctity of the soul; evil or amoral golem crafters tend to prefer this method. The other, less disreputable technique involves siphoning pure positive energy into the statue to artificially imitate the creation of a soul. The result does not give the golem a true soul and is generally a more costly and time-consuming method of creation. Regardless of the method used, the resulting golem functions the same. A golem's unique animating force leaves it susceptible to certain forms of magic, but apart from these few weaknesses, it is impervious to magic and difficult to damage with weapons。</p>\n<p>Golems work best in play as foes to vanquish rather than allies to accompany player characters on adventures. The process of creating a golem is time-consuming, expensive, and difficult, and only the most talented spellcasters or artisans can even hope to accomplish such an undertaking. While certain magical texts-so-called \"golem manuals\"-are said to aid golems crafters, for the most part the creation of a golem should be something left in the hands of the Game Master。</p>\n<p>Golems have components that can be harvested as trophies or magical components; the value depends on the golem in question. Examples of components that can be harvested from golems are listed in the sidebars。</p>",
+			"name": "黑曜石魔像 Obsidian Golem",
+			"publicNotes": "<p>制作魔像的技艺不仅限于那些能够获取昂贵制作材料或是有着漫长奥法研究历史的社群所拥有。在居住在幽暗地域的资源贫乏的地蜥人部族中，尤其是那些以幽黑荒漠为家的顽强部族内，黑曜石是可以获取的最常见制作材料之一。将这种原料与强大的施法者结合在一起，辅以地蜥人使用魔法手段来扭曲和在顽固石材上正常作业的传统艺能，结果就是黑曜石魔像的诞生。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Obsidian Sliver": {
+					"name": "黑曜石银 Obsidian Sliver"
+				},
+				"Assimilate Lava": {
+					"name": "吸收熔岩 Assimilate Lava",
+					"description": "<p>浸没在熔岩或是岩浆中的黑曜石魔像不会受到它的伤害，而且只要它浸没在其中，它就会进入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}状态并获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 15}。</p>"
+				},
+				"Golem Antimagic": {
+					"name": "魔像抗魔 Golem Antimagic",
+					"description": "<p>被伤害：音波 ([[/r 8d10]]伤害，区域伤害或是持续伤害则为[[/r 2d10]]伤害)；被治疗：寒冷 (区域效果[[/r 2d10[healing]]]{2d10生命值})；被减速：火焰</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+				},
+				"Vulnerable to Shatter": {
+					"name": "法术弱点：粉碎音波 Vulnerable to Shatter",
+					"description": "<p>对黑曜石魔像释放<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>能正常地影响魔像，但同时也会导致参差不平的黑曜石碎块从它的身体上脱落。魔像正在站立的区域（如果它正在飞行，则是其正下方的区域）变成困难地形。</p>"
+				},
+				"Fling Shards": {
+					"name": "碎片四射 Fling Shards",
+					"description": "<p>黑曜石魔像在@Template[type:cone|distance:15]内射出来自它自身的如刀片般尖利的碎片。</p>\n<p>区域内的生物受到[[/r (4d8+9)[slashing]]]伤害（@Check[type:reflex|dc:37|basic:true]豁免）。</p>"
+				},
+				"Shred Armor": {
+					"name": "击碎护甲 Shred Armor",
+					"description": "<p>黑曜石魔像的身躯过于锋利，以至于它可以像刀刃切开黄油那样撕裂护甲。当此魔像使用拳打击对身穿非精金护甲的生物造成重击时，该生物的护甲会@UUID[Compendium.pf2e.conditionitems.6dNUvdb1dhToNDj3]{破损 Broken}。</p>"
+				}
+			}
 		},
 		"Pin Tingwheely": {
 			"name": "盘铃小妖 Pin Tingwheely",
@@ -1890,10 +2232,58 @@
 			}
 		},
 		"Qormintur": {
-			"name": "Qormintur",
-			"publicNotes": "<p>When Qormintur was just 10 years old, her family decided to sell their business in a small duergar settlement and look for new opportunities in the Darklands city of Hagegraf. A few days after departing, duergar slavers attacked their caravan, murdered her father, and captured everyone else. Qormintur was sold as a slave in Shraen, and she never found out where her mother or siblings were taken. She did discover, however, that one of her father's business rivals had blackmailed her parents to leave, and the same duergar had arranged for the slavers to attack the caravan. The memories of that betrayal and the loss of her family still haunt her, and her deepest desire is to get her revenge。</p>\n<p>When she arrived in Shraen, Qormintur was first taken to the city's slave pens to be sold as a laborer, personal attendant, or fodder for one of Shraen's undead nobles. Despite the hopelessness, fear, and anxiety she witnessed in the slave pens of Shraen, her spirit never broke. When she was brought to auction, a sadistic vampire named Zihain Shraen attempted to purchase her (and likely make her one of his many playthings). The mummy Dyzallin Shraen outbid the vampire; Qormintur believes that pity or compassion caused Dyzallin to save her from a fate worse than death, but in truth, Dyzallin simply wanted to spite Zihain。</p>\n<p>During her first few years as Dyzallin's slave, the ancient drow never failed to remind Qormintur that he had saved her, and that her life was his to take if she ever disobeyed him. At first, Qormintur resented Dyzallin, but as years turned into decades, a strange bond of mutual trust formed between the soulless drow and the young duergar. In a city where trust was a commodity harder to come by than adamantine or diamonds, Dyzallin formed a bond with his servant. Dyzallin kept her close to him and encouraged her personal interests in alchemy. As a reward for her service, Dyzallin has promised to transform her into a mummy. So far, she hasn't considered the offer very seriously; after all, at barely a century old, she's young for a duergar。</p>\n<p>Appearances matter in Shraen, so despite Qormintur's trusted position, Dyzallin still makes her display her slave brands on her forearms. As Dyzallin's seneschal, Qormintur takes care of many administrative tasks for him, including buying and selling magic items and other slaves. This position has often put her into contact with the same duergar slavers who once brought ruin to her family. For now, she is forced to hide her feelings, but when the opportunity presents itself, she will not hesitate to exact her revenge. She is more than capable of doing just that-Qormintur is a potent combat alchemist and often leads Dyzallin's forces against urdefhans and other threats. Dyzallin tasked Qormintur with marshalling his forces from Shraen to the lost pyramid of Xul-Khundur, and with securing the site so Dyzallin could study the magic orb at the pyramid in peace. After Dyzallin returned to Shraen with the orb, Qormintur organized guards and has continued her master's research to unearth more of the pyramid's secrets. This research hasn't met with many results so far, and Qormintur is starting to get bored and to wonder whether she's been abandoned. Despite her loyalty to Dyzallin, Qormintur is painfully aware that she doesn't really belong in Shraen, but also that she can never return to her people. Now that she has spent time outside of Shraen and out of Dyzallin's domineering presence, a new thirst for independence is brewing inside her。</p>\n<p>Qormintur is a lean, young duergar woman who wears a fine blue cloak over beautifully crafted mithral armor. Her forearms bear sinister-looking brands that match those on her armor and cloak; these brands mark her and her equipment as property of Dyzallin. Her eyes are cold and betray a hint of sadness。</p>",
+			"name": "克敏缇尔 Qormintur",
+			"publicNotes": "<p>当克敏缇尔仅10岁时，她的家庭决定卖掉他们在一个小型灰矮人聚落内的商铺，去幽暗地域的黑格果拉夫城寻找新的机遇。在他们启程的几天后，灰矮人奴隶主袭击了他们的车队，杀死了她的父亲并抓住了剩下的所有人。克敏缇尔被在雪恩城作为奴隶出售，而她一直没能找到她的母亲或是手足被带到了哪里。但是，她却发现是她父亲的商业对手胁迫她的双亲离开的，也是同样一批人安排了奴隶主攻击他们家的车队。这份背叛与家破人亡的记忆持续困扰着她，她最深切的愿望就是复仇。</p>\n<p>当来到雪恩城时，克敏缇尔首先是被带到了这座城市的奴隶笼中作为苦工，个人助手或是雪恩城的亡灵贵族们的食物出售。即使她在雪恩城的奴隶笼内目睹了绝望，恐惧以及不安，她的精神从来没有被打倒。当她被带到拍卖会上时，一名叫做灾黑音·雪恩的吸血鬼试图买下她（随后很有可能将她变成他的诸多玩物之一）。木乃伊岱扎林·雪恩给出了比这个吸血鬼更高的价格，克敏缇尔相信就是那份怜悯使得岱扎林从比死亡更可怕的命运中拯救了她，但事实上，岱扎林只是想惹恼灾黑音。</p>\n<p>在她作为岱扎林的奴隶的前几年里，这名古老的卓尔从未停止提醒克敏缇尔她是在为他效忠，如果她不听从他的命令他就会夺走她的性命。起初，克敏缇尔怨恨岱扎林，但随着时间过去了几十年，一种奇怪的相互信任在这个无魂的卓尔与年轻的灰矮人之间形成。在这座信任是比精金或钻石更难得的事物的城市，岱扎林与他的仆从之间形成了一种羁绊。岱扎林一直将她留在身边并鼓励她对炼金术产生个人兴趣。作为她服从的奖赏，岱扎林承诺会将她转变为一个木乃伊。到目前为止，她还没有太认真地考虑这个提议，毕竟，作为仅百岁之余的她，对灰矮人而言还很年轻。</p>\n<p>表象在雪恩城是重要的，所以即使岱扎林将克敏缇尔放在信任的位置，他依旧在她的前臂上显现出奴隶的烙印。作为岱扎林的总管，克敏缇尔为他照料着许多管理上的事务，包括买卖魔法物品和其他奴隶。这个地位使得她常常可以与将她的家庭带来毁灭的同一批灰矮人有所联系。目前，她被迫隐藏着自己的想法，但当时机成熟时，她会毫不犹豫地实施自己的复仇。克敏缇尔能够做到的远不止是这些，她是一名强大的炼金术士战士，常常能领导岱扎林的军队对抗透肌魔人与其他威胁。岱扎林委任克敏缇尔集结他的军队从雪恩城前往失落的肯达尔地蜥金字塔，有着克敏缇尔确保地区的安全，岱扎林才得以在金字塔内平静地研究那颗魔法宝珠。在岱扎林带着宝珠返回雪恩城以后，克敏缇尔组织了守卫来继续她主人的研究以发掘更多这座金字塔的秘密。到目前为止，这项研究还没能获得太多结果，而克敏缇尔则开始感到无聊并怀疑她是不是被抛弃了，即使她对岱扎林效忠，但克敏缇尔仍沉痛地意识到她并不真正地属于雪恩城，但她也知道自己再也无法回到家人身边。鉴于她现在正在雪恩城外行动，处于岱扎林能够支配的范围之外，一种对自由的渴望开始在她心中逐渐酝酿。</p>\n<p>克敏缇尔是一名精干的年轻灰矮人，身穿精致的蓝色披风与精良打造的秘银护甲。她的前臂上带有许多与她的护甲和披风上相匹配的邪恶印记，这些印记代表着她和她的装备都是岱扎林的财产。她的双眼冷酷，流露着隐约的悲伤。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+2 Greater Resilient Mithral Breastplate (Standard-Grade)": {
+					"name": "+2高等抗性秘银胸甲 Breastplate (标准浓度)",
+					"description": "虽然被称为胸甲，但这类盔甲其实是由几块保护躯干、胸部、颈部，有时还有臀部和小腿的部件组成的半身甲。它既提供了一部分板甲的保护，同时兼顾了更大的灵活性和速度。"
+				},
+				"strike-Acid Flask": {
+					"name": "强酸瓶 Acid Flask",
+					"description": "<p>溅射10尺</p>"
+				},
+				"strike-Alchemist's Fire": {
+					"name": "炽火胶 Alchemist's Fire",
+					"description": "<p>溅射10尺</p>"
+				},
+				"Infused Items": {
+					"name": "灌注物品 Infused Items",
+					"description": "<p>克敏缇尔带有以下灌注物品：6瓶@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{高等强酸瓶 Greater Acid Flasks}，6瓶@UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{高等炽火胶 Greater Alchemist's Fires}，2瓶@UUID[Compendium.pf2e.equipment-srd.ANzB9WzlGQXDn76G]{上等解毒剂 Major Antidotes}，2瓶@UUID[Compendium.pf2e.equipment-srd.mYozcVg9fQY6zO7C]{高等生命灵药 Greater Elixirs of Life}。</p>\n<p>这些物品会持续24小时，或是直到克敏缇尔进行下次日常准备时。</p>"
+				},
+				"+2 Status to All Saves vs. Magical Effects": {
+					"name": "对抗魔法效果时全豁免+2状态加值"
+				},
+				"Iron Mind": {
+					"name": "钢铁意志 Iron Mind",
+					"description": "<p>克敏缇尔会自动不相信所有8环或更低的幻术。</p>"
+				},
+				"Juggernaut": {
+					"name": "钢铁之躯 Juggernaut",
+					"description": "<p>当克敏缇尔在强韧豁免获得成功时，她会获得大成功的结果。</p>"
+				},
+				"Bomber": {
+					"name": "爆破学家 Bomber",
+					"description": "<p>当使用带有溅射特征的炼金炸弹投掷时，克敏缇尔可以选择只对她的主要目标造成溅射伤害，而不是像通常那样造成溅射伤害。</p>"
+				},
+				"Dire Warning": {
+					"name": "惩戒警告 Dire Warning",
+					"description": "<p>克敏缇尔提醒他人雪恩城对失败者作出的惩罚。克敏缇尔以及她60尺内的所有盟友在攻击骰与伤害骰上获得+1状态加值，持续到克敏缇尔下一轮结束。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Cc5WsKkbOPOzopCY]{效果: 惩戒警告}</p>"
+				},
+				"Quick Bomber": {
+					"name": "高速投弹手 Quick Bomber",
+					"description": "<p>克敏缇尔使用交互拿出一枚炼金炸弹，随后用它进行打击。</p>"
+				},
+				"Sticky Poison": {
+					"name": "黏着毒药 Sticky Poison",
+					"description": "<p><strong>需求</strong> 克敏缇尔持用着一把穿刺或是挥砍武器，且有一只自由手</p>\n<p><strong>开销</strong> 1批灌注药剂；</p>\n<hr />\n<p><strong>效果</strong> 克敏缇尔将这批药剂用于武器上。该武器在1分钟内会额外造成[[/r 2d10[poison]]]伤害。</p>"
+				},
+				"Uncanny Bombs": {
+					"name": "诡奇炸弹 Uncanny Bombs",
+					"description": "<p>克敏缇尔的炸弹的射程增量是60尺。她会降低目标从掩蔽中获得的任何对AC的环境加值1点，而且当目标是一个@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}的生物时，她的纯骰将自动成功。</p>"
+				}
+			}
 		},
 		"Qurashith": {
 			"name": "暴食之翼 Qurashith",
@@ -1923,9 +2313,34 @@
 			}
 		},
 		"Raptor Guard Wight": {
-			"name": "Raptor Guard Wight",
+			"name": "尸妖猛禽精卫 Raptor Guard Wight",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+1 Resilient Bone Armor": {
+					"name": "+1抗力骨甲 Bone Armor",
+					"description": "这种盔甲混合了毛皮、结实的皮革，有时还有成型的熟皮，它的多层皮革提供了保护，尽管它的笨重会减慢穿戴者的速度，并降低其活动性。"
+				},
+				"Death Stench": {
+					"name": "亡灵恶臭 Death Stench",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一个进入该区域的生物必须进行一次@Check[type:fortitude|dc:32]豁免。失败时，该生物陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}，只要它处于恶心状态，还会陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}，大失败时，该生物只要处于恶心状态下还会陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。在灵光内时，该生物在从恶心状态恢复的豁免检定上获得-2环境减值。一个成功通过它的豁免的生物会在1分钟内对任何生物的亡灵恶臭临时免疫。</p>"
+				},
+				"Drain Life": {
+					"name": "汲取生命 Drain Life",
+					"description": "<p>当尸妖猛禽精卫对一名活物使用近战打击造成伤害，它获得13点临时HP，目标则必须成功通过一次@Check[type:fortitude|dc:32]豁免，否则将陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。由这名尸妖造成的更多伤害将在豁免失败时增加流失状态1点，最大为@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 4}。</p>"
+				},
+				"Hungry Spear": {
+					"name": "饥渴矛击 Hungry Spear",
+					"description": "<p>尸妖猛禽精卫的远程矛打击可以应用汲取生命的效果，不过它不会在攻击命中时获得任何临时HP。</p>"
+				},
+				"Terror Master": {
+					"name": "恐惧之主 Terror Master",
+					"description": "<p>只要尸妖猛禽精卫戴着它的恐龙头骨头盔，它的打击就会额外造成[[/r 1d10[negative]]]伤害，对@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}的生物则是额外[[/r 2d10[negative]]]伤害。</p>"
+				},
+				"Wight Spawn": {
+					"name": "尸妖衍体 Wight Spawn",
+					"description": "<p>一个被尸妖猛禽精卫使用近战打击杀死的类人活物会在[[/br 1d4 #rounds]]{1d4轮}后作为一名@UUID[Compendium.pf2e.pathfinder-bestiary.ZPjQkKVMi3xoPcU0]{尸妖 Wight}复生。这名尸妖衍体会在杀死它的尸妖猛禽精卫的命令下行动。它没有汲取生命以及尸妖衍体能力，并且陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。如果这名尸妖衍体的创造者死去了，它就会变为一只有自主意志的完全体尸妖，它会获得自由的意志，汲取生命和尸妖衍体的能力，且不再处于笨拙状态。</p>"
+				}
+			}
 		},
 		"Raving Spirit": {
 			"name": "胡言鬼魂 Raving Spirit",
@@ -2091,9 +2506,60 @@
 			}
 		},
 		"Shraen Graveknight": {
-			"name": "Shraen Graveknight",
+			"name": "雪恩死墓骑士 Shraen Graveknight",
+			"allSaves": "对抗魔法效果全豁免+1状态加值，对抗心灵效果全豁免+2状态加值",
 			"data":{},
-			"items":{}
+			"items": {
+				"equipment-+2 Greater Resilient Elven Chain (Standard-Grade)": {
+					"name": "+2高等抗力标准纯度精灵链甲 Elven Chain",
+					"description": "<p>精灵链甲是用秘银制作的@UUID[Compendium.pf2e.equipment-srd.MPcM4Wt6KmWE2kGL]{链甲衫 Chain Shirt}，散发出微弱的光泽。</p>\n<p>由精灵工匠运用古老的工艺制作而成，精灵链甲十分安静。不同其它链甲衫——即便是普通秘银链甲衫——精灵链甲没有嘈杂特征。该护甲可像其它秘银链甲衫一样蚀刻符文上去。</p>\n<p><strong>制造需求</strong> 原材料所含秘银至少需要价值3,125gp</p>"
+				},
+				"strike-Greater Frost Rapier": {
+					"name": "高等冻寒细剑 Greater Frost Rapier"
+				},
+				"strike-Greater Frost Main-Gauche": {
+					"name": "高等冻寒格挡匕首 Greater Frost Main-Gauche"
+				},
+				"strike-Greater Frost Hand Crossbow": {
+					"name": "高等冻寒手弩 Greater Frost Hand Crossbow"
+				},
+				"Rejuvenation": {
+					"name": "复生 Rejuvenation",
+					"description": "<p>当死墓骑士被摧毁时，其护甲会在[[/br 1d10 #days]]{1d10天}内重塑身体——若护甲被活着的宿主穿戴则会更加迅速（见后文中的死墓骑士护甲）。若身体在此之前被破坏，重塑过程将重新开始。</p>\n<p>只有摧毁护甲（比如使用<em>@UUID[Compendium.pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>）、把死墓骑士传送至正能量位面、或者丢进火山之中才能够永久摧毁死墓骑士。</p></p>"
+				},
+				"Sacrilegious Aura": {
+					"name": "亵渎灵光 Sacrilegious Aura",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当有生物在灵光范围内使用正能量法术或能力时，死墓骑士会自动按照[[/r 1d20+24 #Counteract]]{+24}的反制调整值尝试反制它。</p>"
+				},
+				"Status Bonus to Saves": {
+					"name": "豁免状态加值 Status Bonus to Saves",
+					"description": "<p>对抗魔法效果全豁免+1状态加值。</p>\n<p>对抗心灵效果全豁免+2状态加值。</p>"
+				},
+				"Devastating Blast": {
+					"name": "毁灭爆震 Devastating Blast",
+					"description": "<p>死墓骑士释放出@Template[type:cone|distance:30]能量。区域内的生物受到[[/r 8d12[cold]]]伤害(@Check[type:reflex|dc:36|basic:true]豁免)。</p>\n<p>死墓骑士每[[/br 1d4 #Recharge Devastating Blast]]{1d4轮}只能使用1次该能力。</p>"
+				},
+				"Graveknight's Curse": {
+					"name": "死墓骑士诅咒 Graveknight's Curse",
+					"description": "<p>诅咒会影响任何穿戴死墓骑士的护甲超过1小时以上的生物。</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:36]豁免</p>\n<hr />\n<p><strong>潜伏期</strong> 1小时</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}并且无法脱下护甲(1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}, 速度降低10, 且无法脱下护甲(1天)</p>\n<p><strong>阶段3</strong> 死亡并转化为护甲的死墓骑士。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.6rnB7nK6J6zF4vea]{效果: 死墓骑士诅咒}</p>"
+				},
+				"Heart-Seeking Strike": {
+					"name": "穿心刺 Heart-Seeking Strike",
+					"description": "<p>雪恩死墓骑士快步（Step）1次，随后使用它的细剑打击。被这次攻击伤害的生物必须进行一次@Check[type:fortitude|dc:36|traits:damaging-effect]豁免。失败时，该生物受到@Localize[PF2E.PersistentDamage.Bleed4d6.success]伤害。大失败时，这次攻击刺穿了该生物的心脏，它立刻死亡。</p>"
+				},
+				"Quick Draw": {
+					"name": "即刻备战 Quick Draw",
+					"description": "<p>雪恩死墓骑士拔出一把武器，随后使用它打击。</p>"
+				},
+				"Ruinous Weapons": {
+					"name": "破灭武器 Ruinous Weapons",
+					"description": "<p>在死墓骑士被创造时，他要从后述能量类型中选择与其生前或死亡息息相关的一种：酸、寒冷、电击或火焰。</p>\n<p>死墓骑士所持用的任意武器均会获得酸蚀、冻寒、电击或炽焰武器符文，外加+1强击武器符文。</p>\n<p>若死墓骑士的等级为14或更高的话，其武器会获得上述同种符文的高等版本作为替代。</p>"
+				},
+				"Weapon Master": {
+					"name": "武器大师 Weapon Master",
+					"description": "<p>死墓骑士无论持用何种武器，均可以使用该武器的重击专精效果。</p>"
+				}
+			}
 		},
 		"Skarja": {
 			"name": "丝卡佳 Skarja",
@@ -2222,13 +2688,22 @@
 			}
 		},
 		"Stabbing Sentinel": {
-			"name": "Stabbing Sentinel",
-			"disable": "<p>@Check[type:thievery|dc:40|name:Remove Animating Magic|traits:action:disable-a-device](大师)to remove the animating magic without triggering the trap, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (8th level; counteract DC 38) to counteract the animating magic</p>",
-			"hazarddescription": "<p>A petrified creature momentarily animates to attack an adjacent creature。</p>",
-			"reset": "<p>The magical energy that animates the statue builds up again over 24 hours and the trap resets。</p>",
+			"name": "持刀哨兵 Stabbing Sentinel",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Remove Animating Magic|traits:action:disable-a-device](大师)来在不触发陷阱的情况下移除激活魔法，或是<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（8环；反制DC38）来反制激活魔法。</p>",
+			"hazarddescription": "<p>一个石化生物突然激活并攻击一名邻近的生物。</p>",
+			"reset": "<p>启动雕像的魔法能量会在24小时后重新聚集，随后这个陷阱就会重置。</p>",
 			"stealthdetails": "<p>@Check[type:perception|dc:45|traits:action:seek] (大师)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Animated Attack":{
+					"name": "启动攻击 Animated Attack",
+					"description": "<p><strong>触发</strong> 一个活物或是不死生物移动到持刀哨兵5尺内</p>\n<hr />\n<p><strong>效果</strong> 持刀哨兵激活，对触发的生物进行一次打击。</p>"
+				},
+				"Petrification Overcharge":{
+					"name": "石化充能 Petrification Overcharge",
+					"description": "<p>重击时，该目标会@UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{石化 Petrified}1轮。除此之外，如果另一个持刀哨兵已经被触发，那名哨兵就会立刻重置。如果没有其他哨兵被触发，那么房间内另一个随机的雕像会充斥着激活的魔法并变为另一尊持刀哨兵危害（同时最多有4个）。</p>"
+				}
+			}
 		},
 		"Starved Staff": {
 			"name": "饿死的员工 Starved Staff",
@@ -2531,22 +3006,73 @@
 			}
 		},
 		"Urdefhan Dominator": {
-			"name": "Urdefhan Dominator",
-			"publicNotes": "<p>Urdefhan dominators control the minds of others to glean useful secrets and gain an advantage against their enemies。</p>\n<hr />\n<p>Urdefhans believe themselves to be spawn of the First Horseman of the Apocalypse, who planted them on the Material Plane to serve as harbingers of the end times. These warmongering humanoids live in groups called cults in the Darklands vaults of Orv。</p>",
+			"name": "透肌魔人支配者 Urdefhan Dominator",
+			"publicNotes": "<p>透肌魔人支配者控制着其他人的大脑，来逐步读取有用的秘密并获得对抗敌人的优势。</p>\n<hr />\n<p>透肌魔人相信他们是第一天启驭者的子嗣，这名驭者在物质位面播种了他们的起源来作为末日之时的预兆。这些类人的好战分子以名为教族的群体生活在幽暗地域的奥瓦洞窟群。。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Eyes of the Enthralled": {
+					"name": "摄人魔眼 Eyes of the Enthralled",
+					"description": "<p><strong>需求</strong> 透肌魔人使用它的内在法术<em>@UUID[Compendium.pf2e.spells-srd.OsOhx3TGIZ7AhD0P]{支配术 Dominate}</em>支配了一个生物；</p>\n<hr />\n<p><strong>效果</strong> 透肌魔人可以暗中使用这个生物的视觉，听觉以及其他它拥有的感官。透肌魔人可以用一个有专注特征的动作来切换回自己的感官或是切换到受控生物的感官。</p>"
+				},
+				"Necrotic Decay": {
+					"name": "黯蚀溃烂 Necrotic Decay",
+					"description": "<p>透肌魔人死后，它透明的肉体迅速腐烂，升华成恶臭的气体，充斥于尸体@Template[type:emanation|distance:5]范围内。</p>\n<p>这种气体对该区域内的生物造成[[/r 15d6[negative]]]伤害，因为他们的肉也开始凝固并腐烂(@Check[type:fortitude|dc:34|basic:true]豁免)。</p>"
+				},
+				"Wicked Bite": {
+					"name": "秽恶之啮 Wicked Bite",
+					"description": "<p><strong>需求</strong> 透肌魔人最后一次动作是用它的啃咬打击命中一个生物。</p>\n<hr />\n<p><strong>效果</strong> 透肌魔人紧咬不放，使生物受伤部位周围的皮肤呈半透明状态。透肌魔人从下列两个选项中选择一个，每个选项都需要进行@Check[type:fortitude|dc:33]豁免。如果颚击造成重击，该生物将同时受到两种效果，对这两种效果使用同一个豁免结果。</p>\n<ul>\n<li><strong>啜饮鲜血 Drain Blood</strong> 透肌魔人饮下这个生物的一点鲜血。此生物在豁免失败时获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，透肌魔人恢复5点HP（大失败生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，透肌魔人恢复10点HP）。</li>\n<li><strong>啜饮活力 Drain Vitality</strong> 透肌魔人抽出了此生物的一点生命精华。豁免失败则此生物获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续1小时。</li>\n</ul>"
+				}
+			}
 		},
 		"Urdefhan High Tormentor": {
-			"name": "Urdefhan High Tormentor",
-			"publicNotes": "<p>An urdefhan cult's best tormentors can advance to become truly formidable daemon summoners。</p>\n<hr />\n<p>Urdefhans believe themselves to be spawn of the First Horseman of the Apocalypse, who planted them on the Material Plane to serve as harbingers of the end times. These warmongering humanoids live in groups called cults in the Darklands vaults of Orv</p>\n<hr />\n<p>The violent warmongers, occultists, and poisoners known as urdefhans dwell within the Darklands. They were created in eons past by the mysterious First Horsemen of the Apocalypse to serve as agents of the end times within the Material Plane. Urdefhans continue to honor their creators by worshipping the wretched beings who rule over the plane of Abaddon, and like their fiendish lieges, urdefhans exist for one reason and one reason alone: to kill。</p>\n<p>While urdefhans are humanoid and dwell together in large groups, this is where their similarities to surface ancestries end. Their visages are horrific, with transparent skin and musculature displaying their glistening entrails, gleaming bones, and perhaps worst of all, their baleful red eyes. This, combined with their gaping maws full of sharp fangs, works to create the false impression that these beings are some sort of vampiric undead, not creatures of living flesh and blood. When an urdefhan's life comes to an end, their flesh quickly curdles and then bursts in a wave of awful corruption that spreads to the flesh of other creatures in the area. The typical urdefhan views their eventual demise as a disappointment, for once they're dead, their chances to kill will finally come to an end。</p>\n<p>Urdefhans' primary concern is death and how to inflict it in the goriest, most painful, and widespread ways. Beyond this ethos of violence, urdefhans concern themselves only tangentially with matters such as formal modes of warfare or aspects of their damnable religion. When an urdefhan is not actively engaged in violence, their giddy cruelty is tempered only by a sense of self-preservation that ensures they survive long enough to spread the \"blessings\" of their daemonic patrons. They pass the time between wars inventing new weapons, developing new diseases, and researching awful new magic, all in preparation for the next inevitable conflict。</p>",
+			"name": "透肌魔人高阶折磨者 Urdefhan High Tormentor",
+			"publicNotes": "<p>一支透肌魔人教族中最强大的折磨者可以晋升为一名真正可怕的邪魔召唤者。</p>\n<hr />\n<p>透肌魔人相信他们是第一天启驭者的子嗣，这名驭者在物质位面播种了他们的起源来作为末日之时的预兆。这些类人的好战分子以名为教族的群体生活在幽暗地域的奥瓦洞窟群。</p>\n<hr />\n<p>暴力的战争贩子、神秘学者、投毒者，这个被称为透肌魔人的种族居住在幽暗地域。他们于远古时代由神秘的第一位天启驭者所创造，在物质位面中担任末日的代理人。时至今日，透肌魔人继续通过崇拜统治末日荒原的卑鄙生物来纪念他们的创造者，就像他们的邪魔君主一样，透肌魔人只为一个目的存在：杀戮。</p>\n<p>虽然透肌魔人也是类人生物、也喜好群居，但他们与地表先祖的相似之处也就到此为止了。他们的面容骇人，透明的皮肤和肌肉（如同橱窗玻璃般）展现着他们闪耀的内脏和闪烁的骨头，以及可能是最难看的，他们充满恶意的红眼珠。这些，再加上他们长满尖牙的大嘴，让人们误认为这些生物是某种吸血的不死生物，而非有着鲜活的血肉之躯的活物。当一位透肌魔人的生命结束时，他的肉体会迅速凝结，然后爆发出一股可怕的腐败浪潮，蔓延到附近其他生物的肉体上。大部分透肌魔人认为他们的最终消亡很令人失望，因为一旦他们死了，他们杀戮的机会就永远地结束了。</p>\n<p>透肌魔人最关心的是死亡，以及如何以最血腥、最痛苦和最广泛的方式造成死亡。除了这种暴力的种族精神外，透肌魔人只关心一些无关紧要的事情，比如战争的正规形式或他们可鄙的宗教的某些方面。当透肌魔人不积极参与暴力活动时，他们令人目眩的残暴只有通过一种自我保护意识才能得到缓和，这种意识确保他们活得长到足以传播邪魔主顾的“祝福”。他们在两次战争之间通过发明新的武器、改良新的疾病，研究可怕的新魔法来消磨时间，这一切都是为下一次不可避免的冲突做准备。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+1 Striking Warhammer":{
+					"name": "+1强击战锤 Warhammer",
+					"description": "这种武器有木柄，顶端是巨大沉重的金属头，锤头有单面的也有双面的，但总能造成强而有力的钝击伤害。"
+				},
+				"Necrotic Decay": {
+					"name": "黯蚀溃烂 Necrotic Decay",
+					"description": "<p>透肌魔人死后，它透明的肉体迅速腐烂，升华成恶臭的气体，充斥于尸体@Template[type:emanation|distance:5]范围内。</p>\n<p>这种气体对该区域内的生物造成[[/r 10d6[negative]]]伤害，因为他们的肉也开始凝固并腐烂(@Check[type:fortitude|dc:29|basic:true]豁免)。</p>"
+				},
+				"Stoke the Fervent": {
+					"name": "激发狂热 Stoke the Fervent",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 透肌魔人发出一声战吼，令它和它的盟友陷入疯魔般的狂热。每个听到呼喊的盟友在攻击骰和伤害骰获得+4状态加值，豁免骰上获得+2状态加值，AC上获得-2状态减值。只要它们还有能力，受影响的盟友每轮必须使用至少一个行动来进行打击（即使这意味着攻击一个盟友，物品，或者空气）。</p>\n<p>持续[[/br 2d4 #rounds]]{2d4轮}。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.J6EwMsXtXg30eaiB]{效果: 激发狂热}</p>"
+				},
+				"Wicked Bite": {
+					"name": "秽恶之啮 Wicked Bite",
+					"description": "<p><strong>需求</strong> 透肌魔人最后一次动作是用它的啃咬打击命中一个生物。</p>\n<hr />\n<p><strong>效果</strong> 透肌魔人紧咬不放，使生物受伤部位周围的皮肤呈半透明状态。透肌魔人从下列两个选项中选择一个，每个选项都需要进行@Check[type:fortitude|dc:29]豁免。如果颚击造成重击，该生物将同时受到两种效果，对这两种效果使用同一个豁免结果。</p>\n<ul>\n<li><strong>啜饮鲜血 Drain Blood</strong> 透肌魔人饮下这个生物的一点鲜血。此生物在豁免失败时获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，透肌魔人恢复5点HP（大失败生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，透肌魔人恢复10点HP）。</li>\n<li><strong>啜饮活力 Drain Vitality</strong> 透肌魔人抽出了此生物的一点生命精华。豁免失败则此生物获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续1小时。</li>\n</ul>"
+				}
+			}
 		},
 		"Urdefhan Hunter": {
-			"name": "Urdefhan Hunter",
-			"publicNotes": "<p>Urdefhan hunters serve as their cults' trappers, hunters, and poachers. Many urdefhan hunters use skavelings to traverse the massive caverns of the Darklands and scout for prey。</p>\n<hr />\n<p>Urdefhans believe themselves to be spawn of the First Horseman of the Apocalypse, who planted them on the Material Plane to serve as harbingers of the end times. These warmongering humanoids live in groups called cults in the Darklands vaults of Orv。</p>",
+			"name": "透肌魔人猎手 Urdefhan Hunter",
+			"publicNotes": "<p>透肌魔人猎手是他们教族的设陷者，猎人以及偷猎者。许多透肌魔人猎手会骑乘尸鬼蝙蝠穿过幽暗地域广袤的洞穴世界来寻找猎物。</p>\n<hr />\n<p>透肌魔人相信他们是第一天启驭者的子嗣，这名驭者在物质位面播种了他们的起源来作为末日之时的预兆。这些类人的好战分子以名为教族的群体生活在幽暗地域的奥瓦洞窟群。。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Necrotic Decay": {
+					"name": "黯蚀溃烂 Necrotic Decay",
+					"description": "<p>透肌魔人死后，它透明的肉体迅速腐烂，升华成恶臭的气体，充斥于尸体@Template[type:emanation|distance:5]范围内。</p>\n<p>这种气体对该区域内的生物造成[[/r 12d6[negative]]]伤害，因为他们的肉也开始凝固并腐烂(@Check[type:fortitude|dc:32|basic:true]豁免)。</p>"
+				},
+				"Deadly Aim": {
+					"name": "致死瞄准 Deadly Aim",
+					"description": "<p>透肌魔人猎手进行一次有着-2减值的远程打击。这次打击将造成[[/r 4]]额外伤害。</p>"
+				},
+				"Double Shot": {
+					"name": "二重射击 Double Shot",
+					"description": "<p><strong>需求</strong> 透肌魔人持用着一把装填0的远程武器</p>\n<hr />\n<p><strong>效果</strong> 透肌魔人使用需求的武器对一个目标进行两次打击。这两次打击都会计算在透肌魔人的多重攻击减值内，但减值在两次打击结算之后才会增加。</p>"
+				},
+				"Mounted Bow Expert": {
+					"name": "骑射专家 Mounted Bow Expert",
+					"description": "<p>透肌魔人猎手可以在骑乘的状态下使用复合长弓打击。</p>"
+				},
+				"Wicked Bite": {
+					"name": "秽恶之啮 Wicked Bite",
+					"description": "<p><strong>需求</strong> 透肌魔人最后一次动作是用它的啃咬打击命中一个生物。</p>\n<hr />\n<p><strong>效果</strong> 透肌魔人紧咬不放，使生物受伤部位周围的皮肤呈半透明状态。透肌魔人从下列两个选项中选择一个，每个选项都需要进行@Check[type:fortitude|dc:32]豁免。如果颚击造成重击，该生物将同时受到两种效果，对这两种效果使用同一个豁免结果。</p>\n<ul>\n<li><strong>啜饮鲜血 Drain Blood</strong> 透肌魔人饮下这个生物的一点鲜血。此生物在豁免失败时获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，透肌魔人恢复5点HP（大失败生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，透肌魔人恢复10点HP）。</li>\n<li><strong>啜饮活力 Drain Vitality</strong> 透肌魔人抽出了此生物的一点生命精华。豁免失败则此生物获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}（大失败@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}），持续1小时。</li>\n</ul>"
+				}
+			}
 		},
 		"Urushil": {
 			"name": "Urushil",
@@ -2638,10 +3164,40 @@
 			"items":{}
 		},
 		"Vitalia": {
-			"name": "Vitalia",
-			"publicNotes": "<p>Foul occult magic, rare alchemical reagents, and copious amounts of spilled blood are the keys to creating a vitalia-also known as a heart horror-though thankfully the exact means of their creation has been long forgotten。</p>\n<p>Now, most vitalias now come into being by sheer accident. This unusual life-form cannot live without regular contact with blood, much like how fish cannot live long outside of water. Because of this, vitalias are rarely found outside the lairs of mad alchemists or wizards, living in pools of the life-giving substance. Physically, a vitalia somewhat resembles a blood-red giant jellyfish, though it also bears some semblance to a giant human heart。</p>",
+			"name": "可怖之心 Vitalia",
+			"publicNotes": "<p>邪恶的异能魔法，罕见的炼金原料以及数量庞大的溅出血液就是创造一只可怖之心（也称作维塔利亚）的关键，不过值得庆幸的是，创造它们的具体方法在很久以前就遗失了。</p>\n<p>如今，大多数可怖之心都因为纯粹的事故诞生。这种罕见的生命形式无法在没有定期与血液接触的情况下存活，就像鱼类离不开水一样。因为这个原因，可怖之心很少能在疯狂的炼金术士或是法师的巢穴以外的地方被发现，它们通常会生活在能维持生命的血池之中。外观上来看，可怖之心有点像是一只血红色的水母，同时它又带有一些巨型人类心脏的外表特征。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Vein": {
+					"name": "静脉 Vein"
+				},
+				"strike-Blood Squirt": {
+					"name": "血柱 Blood Squirt"
+				},
+				"Bloodsense (Precise) 30 feet": {
+					"name": "血液感知(精确)30尺 Bloodsense",
+					"description": "<p>可怖之心可以感知到任何拥有心跳的生物。</p>"
+				},
+				"No Vision": {
+					"name": "无视觉 No Vision"
+				},
+				"Blood Eruption": {
+					"name": "血如泉涌 Blood Eruption",
+					"description": "<p><strong>触发</strong> 一个生物使用近战打击重击了可怖之心</p>\n<hr />\n<p><strong>效果</strong> 可怖之心对触发的生物喷射血液。该生物必须成功通过@Check[type:reflex|dc:39]豁免，否则就会@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮（大失败时则时@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮）。</p>"
+				},
+				"Constrict": {
+					"name": "紧勒 Constrict",
+					"description": "<p>[[/r (4d8+10)[bludgeoning]]] damage, @Check[type:fortitude|dc:37|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"Forced Transfusion": {
+					"name": "强制输血 Forced Transfusion",
+					"description": "<p><strong>需求</strong> 可怖之心正在@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbing}一个生物</p>\n<hr />\n<p><strong>效果</strong> 可怖之心将它的一些静脉插入被攫抓的生物体内并快速鼓动，急速地将该生物的血液与它的交换。任何影响可怖之心的疾病或是毒素将会被转移到目标生物身上，该生物必须进行一次豁免骰，就同它刚刚受到这些苦难侵袭一样。反之亦然，可怖之心必须成功豁免通过任何该目标受到的疾病或毒素效果，否则就会染上该苦难。</p>"
+				},
+				"Sanguine Rain": {
+					"name": "猩红雨降 Sanguine Rain",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 可怖之心将大量的血液泵入到空气中，在@Template[type:emanation|distance:15]范围内创造出大量落下的血雨。</p>\n<p>区域内的所有生物都互相视为@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。可以消化血液来获得增益的生物（例如觅血者或是吸血鬼）将在区域内获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 10}。在该区域内，受到@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}的生物无法终止此状态，即使它花费行动来试图纯骰也是如此。</p>\n<p>这场血雨将维持1分钟。 </p>"
+				}
+			}
 		},
 		"War Sauropelta": {
 			"name": "战争蜥结龙 War Sauropelta",
@@ -2681,13 +3237,18 @@
 			}
 		},
 		"Witch-Priests' Curse": {
-			"name": "Witch-Priests' Curse",
-			"disable": "<p>@Check[type:thievery|dc:39|name:Remove Bone Fetish|traits:action:disable-a-device] (legendary) to carefully remove the bone fetish that holds the curse。</p>",
-			"hazarddescription": "<p>Anyone who opens a secret compartment is subjected to a powerful curse。</p>",
-			"reset": "<p>The trap resets if both secret compartments are shut。</p>",
+			"name": "巫祭的诅咒 Witch-Priests' Curse",
+			"disable": "<p>@Check[type:thievery|dc:39|name:Remove Bone Fetish|traits:action:disable-a-device] (传奇)来小心移除维持诅咒的骨制物神。</p>",
+			"hazarddescription": "<p>任何打开暗格的人都会遭受强力的诅咒侵袭。</p>",
+			"reset": "<p>当两个暗格都关上时，这个陷阱就会重置。</p>",
 			"stealthdetails": "<p>@Check[type:perception|dc:42|traits:action:seek] (专家)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Hex of the Bloody Thief":{
+					"name": "窃贼血咒 Hex of the Bloody Thief",
+					"description": "<p><strong>触发</strong> 一个生物打开了暗格</p>\n<hr />\n<p><strong>效果</strong> 该生物必须成功通过@Check[type:will|dc:38]豁免，否则就会遭受巫祭的诅咒。当受诅咒的生物从单次攻击中受到至少10点穿刺或是挥砍伤害时，它就会额外受到@Localize[PF2E.PersistentDamage.Bleed3d6.success]。除此之外，受诅咒的生物仅能从任何治疗效果中获得寻常数值一半的HP恢复。除非被魔法移除，否则这个效果是永久的。</p>"
+				}
+			}
 		},
 		"Xilvirek": {
 			"name": "暴食暗嗣 Xilvirek",
@@ -2759,10 +3320,23 @@
 			}
 		},
 		"Xulgath Deepmouth": {
-			"name": "Xulgath Deepmouth",
-			"publicNotes": "<p>Xulgath deepmouths wield the powers of the Abyss against their clutch's enemies and invoke righteous fear in their followers. The vast majority of deepmouths worship demon lords, most commonly Zevgavizeb. Scalescribing-the warping of xulgath flesh into imitations of Abyssal script-is a widespread practice among deepmouths, enabling them to channel the power of the Abyss through their fanatical devotees' own bodies。</p>\n<hr />\n<p>Reptilian humanoids who live in the uppermost reaches of the Darklands, xulgaths (known as troglodytes to many surface-dwelling folk) often attack intruders in their territory on sight. They live in simple familial communities, battling rival groups and other aggressive Darklands inhabitants in order to survive. They occasionally raid surface settlements, usually at the behest of cruel, bloodthirsty leaders who are often themselves in the thrall of more powerful creatures like nagas or demons. A typical xulgath has dull gray, dark gray, or ashen scales, with a long tail and bony protrusions that run the length of its spine. A typical xulgath is 5 feet tall and weighs 150 pounds。</p>\n<p>Although today the xulgaths are brutal and scattered, they were one of the first intelligent humanoids to rise in the primeval world, once ruling over a mighty empire that stretched throughout the Darklands. Today, all that remains of this era are ruins of massive stone ziggurats and crumbling cities found within some of the larger caverns. Some groups of xulgaths continue to live among these ruins, venerating their ancestors' accomplishments, while others consider these areas taboo and leave them to become infested with Darklands vermin. Sages don't agree on why the ancient xulgath civilization fell. Some suspect it was the result of a loss of several wars waged against serpentfolk, while others suggest that the corruptive influence of demon worship rotted their culture from within。</p>\n<p>Certainly, many xulgath settlements continue to worship demons to this day, paying homage and offering live sacrifices to terrible creatures from the Abyss. Occasionally, a xulgath shaman can call forth and bind a lesser demon to help serve the group, but a shaman who delves too deep into occultism might summon a more powerful fiend that either tears the xulgaths to pieces or enslaves them。</p>",
+			"name": "地蜥深牙 Xulgath Deepmouth",
+			"publicNotes": "<p>地蜥深牙使用着深渊的力量来对抗他们部族的敌人，并令他们的追随者也心怀恐惧。绝大多数深牙都崇拜恶魔领主，最常见的就是泽乌伽瓦灾布。割鳞仪式（Scalescribing，将地蜥人的血肉扭曲成像是深渊文字模样的仪式）是深牙间最广为传播的方式，这让他们能够利用狂热信徒的身体来引导出深渊的力量。</p>\n<hr />\n<p>这些形似爬行类的类人生物生活在幽暗地域（Darklands）的最顶层，地蜥人（许多地表居民会将他们称为战蜥人）会在入侵者踏入他们的势力范围时立刻发动攻击。他们生活在简单的家族式社区中，为了生存而与幽暗地域的其他敌对群体和好斗居民战斗。地蜥人偶尔会袭击地表的居民点，这种行为通常是在残忍、嗜血的首领的命令下发生，而这些首领自身又通常被更为强大的生物所奴役，比如娜迦（nagas）或恶魔（demons）。一名典型的地蜥人通常会有灰色、暗灰色或灰白的鳞片，长长的尾巴以及顺着整个脊柱的骨质突起物。地蜥人一般有5尺高，150磅重。</p>\n<p>尽管现在的地蜥人十分野蛮且分散在各处，但他们曾是主物质世界中最早崛起的智能类人生物之一，统治着疆域遍及幽暗地域的庞大帝国。时至今日，能够保存至这个时代的只剩下某些较大洞穴中的石质金字塔废墟和破碎城市。一部分地蜥人仍旧生活在这些废墟中，崇拜着祖先的成就；有一部分地蜥人将这些地区视为禁地，任由幽暗地域的虫豸们肆虐其中。智者们无法就古地蜥人文明衰落的原因得出统一的结论。有些人认为这是与蛇人（serpentfolk）长年战争的败果，而有的人则认为是恶魔崇拜从内部腐蚀了这个文明。</p>\n<p>当然，许多地蜥人聚居地在今天仍旧信奉恶魔，他们向这些来自深渊（Abyss）的可怖生物效忠并献上活祭。地蜥人萨满偶尔会呼唤并束缚次级恶魔来帮助群体，但过于深入研究神秘学的萨满很可能会召唤出太过强大的魔族，使得地蜥人部族反遭奴役或被直接毁灭。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Stench": {
+					"name": "恶臭 Stench",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入该区域的生物必须尝试一次@Check[type:fortitude|dc:28]豁免。失败则会@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，大失败的生物还会使速度承受-5尺状态减值，持续1轮。在此灵光内，生物要从恶心状态中恢复的话，会在豁免中承受-2环境减值。成功通过豁免的生物会临时免疫所有地蜥人的恶臭，持续1分钟。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.uB3CVn3momZO9h0L]{效果: 地蜥人恶臭}</p>"
+				},
+				"Devourer's Dictum": {
+					"name": "吞食之愿 Devourer's Dictum",
+					"description": "<p>深牙将一个割鳞过的生物的部分血肉扭曲为口型的触须，随后它就会发起猛击。</p>\n<p>深牙以任何120尺内的活着的割鳞过的生物为源头进行1次牙打击，这次打击有着15尺触及，额外造成[[/r 2d8[negative]]]伤害。如果打击是源自一个深牙以外的生物，该生物会触发反应动作来完成这次打击。</p>"
+				},
+				"Scalescribe": {
+					"name": "割鳞 Scalescribe",
+					"description": "<p>通过10分钟的操作，深牙可以将名为鳞文的魔法符文刻在一个活着的自愿接受的地蜥人（包括深牙自身）的血肉之上。一个生物同时不能刻有超过1个割鳞符文，而深牙则可以创造和维持最多三个割鳞符文。</p>\n<p>如果深牙对自己进行割鳞，他就可以在没有自由手的情况下提供材料与姿势成分来施法。</p>"
+				}
+			}
 		},
 		"Xulgath Demon-Caller": {
 			"name": "地蜥人恶魔召唤者 Xulgath Demon-Caller",
@@ -3035,9 +3609,50 @@
 			}
 		},
 		"Zinogyvaz": {
-			"name": "Zinogyvaz",
+			"name": "丝涅吉瓦丝 Zinogyvaz",
 			"data":{},
-			"items":{}
+			"items":{
+				"Children of the Night": {
+					"name": "夜之子 Children of the Night",
+					"description": "<p>丝涅吉瓦丝仅仅存在于此就能使那些黑夜中的生物对其唯命是从。这些代表性的生物包括@UUID[Compendium.pf2e.pathfinder-bestiary.E4ctF7Fvi3cdkgQq]{猎蛛 Hunting Spiders}和@UUID[Compendium.pf2e.pathfinder-bestiary.KpxhSWRIhG7ns5NA]{蜘蛛群 Spider Swarms}。</p>\n<p>只要这些位于其100英尺之内，丝涅吉瓦丝就能够以心灵感应对它们发出命令，不过这些动物无法以此答复。</p>"
+				},
+				"Coffin Restoration": {
+					"name": "寝于棺木 Coffin Restoration",
+					"description": "<p>与其他不死生物不同，吸血鬼不会在HP为0时被摧毁。作为替代，它会@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。如果它的身体在其棺木中休息1小时，则吸血鬼将获得1点生命值，紧接着它的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing}能力开始正常生效。</p>"
+				},
+				"Mist Escape": {
+					"name": "化雾脱身 Mist Escape",
+					"description": "<p><strong>触发</strong> 丝涅吉瓦丝的生命值降低到0点。</p>\n<hr />\n<p><strong>效果</strong> 丝涅吉瓦丝使用化雾能力。即使在0HP的状况下，她也能获得移动动作朝着她的棺木移动。当在这种形态下且HP为0时，丝涅吉瓦丝不会受到进一步的伤害。</p>\n<p>她会在到达棺木处或是2小时后自动回复肉身形态并且昏迷，取其先者为准。</p>"
+				},
+				"Vampire Weaknesses": {
+					"name": "吸血鬼弱点 Vampire Weaknesses",
+					"description": "<p>所有吸血鬼都具有以下弱点。</p>\n<ul>\n<li><strong>强制力 Compulsions</strong> 吸血鬼受制于某些奇妙而又无法解释的强制力。典型的吸血鬼除非被藏在它的棺木中，否则无法自愿穿过流水；无法进入私宅，除非受到房主邀请。根据你的裁定，吸血鬼可能还会拥有各种其他的强制力——例如一只海盗吸血鬼也行无法在未受邀的情况下踏上陆地。吸血鬼仍可能受迫去做这些事情，并且可能如同克服厌恶那样克服强制力。</li>\n<li><strong>厌恶 Revulsion</strong> 吸血鬼不能自愿接近被挥舞着的大蒜或是非邪恶神祇的圣徽10尺以内。生物必须以一个交互动作挥舞大蒜或者圣徽，并且起效一轮（类似举起盾牌d）。如果吸血鬼非自愿地来到了厌恶对象的10尺范围内，它获得@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，逃离至其厌恶对象的10尺以外。在暴露于其厌恶之物下的一轮之后，吸血鬼可以花费一个拥有专注特征的动作尝试一次@Check[type:will|dc:25|name:Overcome Revulsion]检定。一旦成功，它能在[[/br 1d6 #rounds]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>木桩 Stake</strong> 一根刺穿吸血鬼心脏的木桩能够将吸血鬼的HP降至0点，并且阻止其在0HP时受到的治疗效果，就算它躺在棺木中也是如此。用木桩刺穿吸血鬼需要花费三动作，并且仅能在吸血鬼昏迷的时候才能如此做。如果将木桩拔出，并且它还在自己的棺木中休息了1小时以后，那么吸血鬼便能够再次恢复至0HP以上。如果在吸血鬼被木桩钉穿时将其脑袋砍下后再涂上<em>@UUID[Compendium.pf2e.equipment-srd.z9T4c1hXwOotsMCp]{圣水 Holy Water}</em>，便能彻底摧毁这只吸血鬼。</li>\n<li><strong>阳光 Sunlight</strong> 如果暴露于阳光直射下，吸血鬼将立即变成@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。每次吸血鬼在阳光下结束其回合，迟缓值都将增加1点。如果吸血鬼因此失去了其所有动作，它被摧毁。由于吸血鬼对于光的超自然的厌恶，它们不会投下影子，也不会照映在镜子里。</li>\n</ul>"
+				},
+				"Change Shape": {
+					"name": "变身 Change Shape",
+					"description": "<p>丝涅吉瓦丝变形为某一动物形态或是变为原形。</p>\n<p>使用<em>@UUID[Compendium.pf2e.spells-srd.NzXpEzcZAjuDTZjK]{御空形态 Aerial Form}</em>和<em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{动物形态 Animal Form}</em>中的选项。</p>\n<ul>\n<li><strong>蜘蛛</strong> 丝涅吉瓦丝变形为@UUID[Compendium.pf2e.pathfinder-bestiary.E4ctF7Fvi3cdkgQq]{猎蛛 Hunting Spider}或@UUID[Compendium.pf2e.pathfinder-bestiary.KpxhSWRIhG7ns5NA]{蜘蛛群 Spider Swarm}。此形态下她保留自己的尖牙和蛛网打击。</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+				},
+				"Create Spawn": {
+					"name": "创造子嗣 Create Spawn",
+					"description": "<p>如果某个生物在被吸血后生命值降低到0而死亡，吸血鬼可以通过将自身的些许血液赐予这名受害者并将其埋入地下3夜，以此将受害者转化为一只吸血鬼。</p>\n<p>如果新生的吸血鬼的等级比它的创造者更低，那么它将处于创造者的控制之下。如果一只吸血鬼同时控制了过多的子嗣（由DM决定），意志足够坚定的子嗣能够通过一次成功的@Check[type:will|dc:resolve(10+@actor.system.saves.will.value)|name:Escape Thralldom]检定对抗吸血鬼的意志DC来重获自由。</p>"
+				},
+				"Drink Blood": {
+					"name": "吸血 Drink Blood",
+					"description": "<p><strong>需求</strong> 一名被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}、或是自愿的生物处于吸血鬼的触及范围内。</p>\n<hr />\n<p><strong>效果</strong> 丝涅吉瓦丝用尖牙刺入该生物的体内吸食其血液。如果受害者被擒抱，丝涅吉瓦丝需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。</p>\n<p>被害者获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}，同时丝涅吉瓦丝获得[[/r 24[healing]]]{24生命值}并将蛛化吸血鬼毒液注入被害者体内。多余的生命值则作为临时生命。从已经获得流失状态的生物身上吸血不会使吸血鬼回复任何生命值，但是受害者的仍会增加1点流失状态值。丝涅吉瓦丝同样可以通过饮下被保存在容器内的血液并以此维生，但是这样做并不会增加其生命值。</p>\n<p>受害者的流失状态每周减少1点。在拥有足够的血液或是一名献血者的情况下，可以通过一次@Check[type:medicine|dc:20|name:Blood Transfusion]检定进行一次输血，并在10分钟后减少1点流失状态值。</p>"
+				},
+				"Turn to Mist": {
+					"name": "化雾 Turn to Mist",
+					"description": "<p>吸血鬼如同使用<em>@UUID[Compendium.pf2e.spells-srd.V8wXOsoejQhe6CyG]{气化形体 Gaseous Form}</em>一般化为一团雾气，或者恢复原形。当处于气化形态时吸血鬼失去@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing}能力。</p>\n<p>吸血鬼可以无限期地保持这种形态。</p>"
+				},
+				"Vampire Drider Venom": {
+					"name": "蛛化吸血鬼毒液 Vampire Drider Venom",
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:35]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 3d8[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 4d8[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1轮)</p>"
+				},
+				"Web Trap": {
+					"name": "蛛网囚牢 Web Trap",
+					"description": "<p>被丝涅吉瓦丝网打击命中的生物会@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，粘附在最近的地面上（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC35）。</p>"
+				}
+			}
 		},
 		"Zuipnyrn": {
 			"name": "祖普尼恩 Zuipnyrn",

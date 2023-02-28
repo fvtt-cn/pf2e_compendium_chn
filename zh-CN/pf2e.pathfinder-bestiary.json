@@ -1939,31 +1939,31 @@
             "di": "魔法(见魔像抗魔)",
             "publicNotes": "<p>精金魔像由几乎坚不可摧的金属制造而成，只有最强大的敌人才有机会摧毁它。制造精金魔像需要如此巨量的精金以至于制造它需要专门组建一支采矿远征队，并前往像土元素位面（Plane of Earth）或外环位面（Outer Plane）这样的遥远国度。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。</p>\n<p>魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
             "items": {
-                "scTXJJONiH5Y5Rpf": {
+                "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
                     "description": "<p>被伤害：酸液([[/r (9d10)]]{9d10伤害}, 区域效果或可持续伤害则为[[/r (2d10)]]{2d10伤害}); 被治疗：火焰 (区域效果[[/r (2d10)[healing]]]{2d10生命值}); 被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
-                "wW41T2Rqe1HsYWiK": {
+                "Repair Mode": {
                     "name": "修理模式 Repair Mode",
                     "description": "<p>当精金魔像HP减少为0时，它不会被摧毁。相反，它进入修理模式，陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，无法使用反应动作，并且只能进行自自我修复行动。</p>\n<p>一旦它的生命值大于等于30点，它能进行除了反应动作之外的其他动作，但是仍陷入缓慢1，并且直到它的下回合开始之前无法使用反应动作。</p>\n<p>如果精金<em>@UUID[Compendium.pf2e.equipment-srd.6xaxxKfvXED6LfIY]{斩首}</em>武器对精金魔像造成重击且将其生命值减少至0，或当它生命为0时被精金斩首武器击中，则魔像被摧毁。</p>"
                 },
-                "GliiYsgCIg3rdZ5a": {
+                "Vulnerable to Dispelling": {
                     "name": "法术弱点-解除 Vulnerable to Dispelling",
                     "description": "<p>精金魔像可以作为<em>@UUID[Compendium.pf2e.spells-srd.ihbRf964JDXztcy3]{裂解术 Disjunction}</em>和<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>的目标。</p>\n<p>如果精金魔像被作为9环或更高环级的上述法术的目标，它的物理抗力减少到15，并且陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（修理模式下则@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}），持续[[/br 1d4 #rounds]]{1d4轮}。在此期间，如果魔像的生命值减少为0，并且已经开启修理模式，则它被摧毁。</p>"
                 },
-                "grrGcmbt2tnL36tN": {
+                "Destructive Strike": {
                     "name": "毁灭打击 Destructive Strike",
                     "description": "<p>如果精金魔像的拳击打击造成重击，除了对目标造成伤害外，还能破坏目标的护甲（如果目标穿着护甲的话）。如果目标举起盾牌，则它破坏盾牌而非护甲。</p>"
                 },
-                "lQHT37uBw4LDc2OY": {
+                "Inexorable March": {
                     "name": "势不可挡 Inexorable March",
                     "description": "<p>@Check[type:fortitude|dc:45|traits:damaging-effect]</p>\n<p><strong>大成功</strong> 阻挡的生物不受伤害，它的护甲也不受伤害。</p>\n<p><strong>成功</strong> 魔像停止行动，并且无法进入阻挡的生物占据的空间。</p>\n<p><strong>失败</strong> 阻挡的生物和它的护甲都受到精金魔像的拳击伤害。</p>\n<hr />\n<p>精金魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过强韧检定来阻挡其前进。</p>"
                 },
-                "QIPvgEw3eXLxKT8d": {
+                "Self-Repair": {
                     "name": "自我修复 Self-Repair",
                     "description": "<p>魔像自我修复，恢复[[/r (30)[healing]]]{30生命值}。</p>"
                 },
-                "Cb2C8LIPyMVI1r9J": {
+                "Vent": {
                     "name": "喷气 Vent",
                     "description": "<p>精金魔像对@Template[type:cone|distance:30]{30尺锥形}范围喷出炉心中的过热蒸汽。对范围内所有生物造成[[/r (15d6)[fire]]]{15d6火焰伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。</p>\n<p>魔像在[[/br 1d6 #Vent Recharge]]{1d6轮}内无法再次进行喷气。</p>"
                 }
@@ -6175,27 +6175,27 @@
             "di": "魔法(见魔像抗魔)",
             "publicNotes": "<p>传统上来说，铁魔像是精湛技艺的产物，它们会被打造为巨大盔甲或强大动物的外形。它们的铰链关节和坚固的装甲外壳都需要精密的制造工艺，并且还需要定期清洗和上油来确保它们不会生锈。只要不被多事的冒险者破坏的话，铁魔像可以在上千年中保持良好的状态，并被主人代代相传下去。除了难以置信的力量之外，铁魔像还拥有强大的毒气吐息，通常足以消灭整支队伍。</p>\n<hr />\n<p>传说中的魔像由基本材料精心制做，然后被魔法活化成为强大的守护者。它会完全服从于创造者的命令，哪怕在其创造者去世后的数年乃至几个世纪的岁月中都是如此。目前已知有两种可以制造魔像的方法。传统的方法为对新制造的魔像注入被收割的灵魂或精华，这种方式被认为是对那些认为灵魂神圣不可侵犯之人的侮辱，那些邪恶或无道德观念的魔像制造者会倾向于使用这样的方法。另一种不那么臭名昭著的方法是将纯净的正能量引入魔像体内，人为地模拟灵魂的创造的过程。这并不能给与魔像真正的灵魂，而且这个方法通常更加昂贵且耗时。不管使用何种方法，最终得到的魔像在功能上是一样的。每种魔像都有独特的生命力量，能让它们受到某些形式的魔法影响，但是除了这些弱点之外，它们通常对魔法免疫，也很难被武器伤害。</p>\n<p>在游戏中，魔像更适合作为需要征服的敌人，而不是作为伴随玩家角色冒险的盟友。制造魔像的过程是耗时、昂贵且困难，只有极具天赋的施法者或工匠才有可能完成这种任务。虽然某些魔法典籍，例如所谓的“魔像手册”——据说可以为魔像制造者提供帮助，但大多数情况下制造魔像这样的事情应该有GM来完成。魔像的部件可以作为战利品或魔法物品回收，具体取决于不同的魔像。边栏列举了每种魔像可以被回收的部件的示例。</p>",
             "items": {
-                "fqwCiWMkfhbYojJI": {
+                "Golem Antimagic": {
                     "name": "魔像抗魔 Golem Antimagic",
                     "description": "<p>被伤害：酸液([[/r (6d10)]]{6d10伤害}，区域效果或可持续伤害[[/r (2d8)]]{2d8伤害})；被治疗：火焰 (区域效果[[/r (2d8)[healing]]]{2d8生命值})；被减速：电击</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
                 },
-                "aMNM0X0dVvVRdlZT": {
+                "Vulnerable to Neutralize Poison": {
                     "name": "法术弱点：中和毒性 Vulnerable to Neutralize Poison",
                     "description": "<p>对铁魔像施放<em>@UUID[Compendium.pf2e.spells-srd.SUKaxVZW2TlM8lu0]{中和毒性 Neutralize毒素}</em>法术能使它的吐息无效化，持续1分钟。</p>"
                 },
-                "SJraLZmz7x1C04ki": {
+                "Vulnerable to Rust": {
                     "name": "法术弱点：锈蚀魔法 Vulnerable to Rust",
                     "description": "<p>魔法锈蚀效果，例如锈蚀怪的触须打击，能正常对铁魔像造成效果。</p>"
                 },
-                "HkUjt1e6CiwdfHoy": {
+                "Breath Weapon": {
                     "name": "吐息 Breath Weapon",
                     "description": "<p>铁魔像以占据方格的一个角为圆心，对10尺半径范围喷出毒气，毒气存在1轮。任何呆在范围内的生物（或之后进入范围的生物）将暴露在铁魔像毒气中。铁魔像在[[/r 1d4 #rounds]]{1d4轮}内无法再次吐息。</p>"
                 },
-                "otWGnycqKoeQC7U9": {
+                "Inexorable March": {
                     "name": "势不可挡 Inexorable March",
                     "description": "<p>铁魔像以满速度行走，推开路径空间上的所有生物。如果他们试图阻止魔像，就会受到伤害。一个生物可以尝试通过@Check[type:fortitude|dc:37|traits:damaging-effect]检定来阻挡其前进。</p>\n<p>如果豁免大成功，则阻挡的生物不受伤害；在其他情况下该生物受到铁魔像的拳击伤害。</p>"
                 },
-                "RSzJjCjwpz8jIS3J": {
+                "Iron Golem Poison": {
                     "name": "铁魔像毒气 Iron Golem Poison",
                     "description": "<p>此毒素造成的@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}状态值每小时减少1点。</p>\n<p><strong>豁免</strong> @Check[type:fortitude|dc:33]</p>\n<hr />\n<p><strong>最大持续 </strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (4d6)[poison]]]{4d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (8d6)[poison]]]{8d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)</p>"
                 }
@@ -9087,27 +9087,27 @@
             "senses": "60尺洞见心跳（模糊），黑暗视觉",
             "publicNotes": "<p>报丧女妖是愤怒且痛苦的灵魂，她们是在生命的最后时刻由于被背叛而束缚在主物质位面的精灵。部分报丧女妖的诞生是因为精灵被最信任的同伴和朋友所杀害，或者是在临终时被所爱之人所背叛。而另一些由精灵衍生出的报丧女妖则是因为其死前的背信行为在灵魂上留下了污点。无论报丧女妖自身的起源是哪个种类，她们都会蔑视生灵。这种对生者的仇恨往往是其生前性格的可怖翻转。有人猜测越是善良热心的精灵（在遭遇越发痛苦的背叛后），由其诞生的报丧女妖越是残忍无情。</p>\n<p>报丧女妖很少远离自身的殒命之地，她们通常会在阳光很少能照耀的地点作祟，比如茂密的森林或昏暗的沼泽。在精灵之国奇奥尼（Kyonin）可以找到许多报丧女妖，尤其是在扭曲棘林（Tanglebriar）——恶魔毁木者（Treerazer）的邪恶领地。同样地，幽暗地域（Darklands）的卓尔定居点周边也潜伏着大量的报丧女妖，因为卓尔文化中不乏大量残忍的背叛行为。</p>\n<p>报丧女妖仅靠碰触就能带来痛苦与源自内心的原始恐惧，那些暴露在她们悲伤哀嚎中的人很难存活下来。</p>",
             "items": {
-                "74wDKknM5LCOcK73": {
+                "Hears Heartbeats": {
                     "name": "60尺洞见心跳（模糊）",
                     "description": "<p>报丧女妖能听到60尺范围内的心跳声（模糊感官）。</p>"
                 },
-                "rQT7KUvA4yzEm4PO": {
+                "Sunlight Powerlessness": {
                     "name": "阳光削弱 Sunlight Powerlessness",
                     "description": "<p>在阳光的直射下，报丧女妖会陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，且无法使用具有攻击特征的动作。</p>"
                 },
-                "NKs8hoGb4IyfFWCw": {
+                "Vengeful Spite": {
                     "name": "复仇之怨 Vengeful Spite",
                     "description": "<p><strong>触发</strong> 有敌人对报丧女妖造成重击或者报丧女妖在对抗敌人的伤害性效果时投掷出了大失败。</p>\n<hr />\n<p><strong>效果</strong> 报丧女妖向折磨她的人进行反击，对其造成[[/r (4d10+14)[mental]]]{4d10+14心灵伤害}（@Check[type:will|dc:38|basic:true]豁免），并根据相同的意志豁免结果将惊骇之触的效果应用至目标。</p>"
                 },
-                "q8ASqdiBd9SflYVU": {
+                "Spectral Ripple": {
                     "name": "幽体涟漪 Spectral Ripple",
                     "description": "<p>当报丧女妖行走了至少10尺时，她们会获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}直至其下个回合开始为止。</p>"
                 },
-                "ePRrl3MsWtcXXzD7": {
+                "Terrifying Touch": {
                     "name": "惊骇之触 Terrifying Touch",
                     "description": "<p>被报丧女妖的触摸所伤害且还未陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}的生物必须尝试一次@Check[type:will|dc:38]豁免（若她的攻击造成重击则为@Check[type:will|dc:43]）。若目标生物豁免失败，则会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}；大失败时还会因恐惧而畏缩，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 4}。若该生物由于法术或魔法物品的保护而可以对抗恐惧的话，报丧女妖的触摸首先会尝试反制该保护效果，该效果相当于9环的<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>法术。</p>"
                 },
-                "IFPnmQpUJLW9TJa9": {
+                "Wail": {
                     "name": "哀嚎 Wail",
                     "description": "<p>报丧女妖发出了让人心悸的<em>@UUID[Compendium.pf2e.spells-srd.FEsuyf203wTNE2et]{女妖之嚎 Wail of the Banshee}</em>（@Check[type:fortitude|dc:38]）。这声哀嚎会克服5环或更低环级的<em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{沉默术 Silence}</em>或类似效果。报丧女妖可以使用三动作的行动来替代哀嚎的行动，这使得她能够克服至多8环的上述效果。</p>\n<p>报丧女妖的哀嚎会在1轮内持续共鸣，在此期间进入此区域的任何生物都必须尝试一次豁免对抗该效果。同一名生物不会被同一个哀嚎影响多次。</p>\n<p>报丧女妖在[[/br 1d4 #Recharge Wail]]{1d4轮}内无法再次进行哀嚎。</p>"
                 }
