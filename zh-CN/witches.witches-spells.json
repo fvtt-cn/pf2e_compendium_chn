@@ -10,7 +10,57 @@
             "description": "<p>你用来自多个现实的大量诅咒随机攻击目标，这些诅咒在片刻内结束然后开始，造成与法术等级相等的力场伤害，并根据他们的意志豁免结果随机施加状态。你施法时会造成力场伤害，然后在每轮第一次维持法术再次造成@Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain the Spell}，从你施法后的那轮开始，每次都要根据目标的豁免结果来骰伤害。但是目标只在你开始施法时进行意志豁免。当法术结束时，目标会在1分钟内暂时免疫。</p>\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受一半伤害。</p>\n<p><strong>失败 </strong> 目标承受1d4伤害，然后骰[[/r 1d4]]并获得以下状态，直到其下一回合结束。</p>\n<ol>\n<li>@Compendium[pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}</li>\n<li>@Compendium[pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}</li>\n<li>@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}</li>\n<li>@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}</li>\n</ol>\n<p><strong>大失败</strong> 目标受到双倍伤害，并骰2D4。如果他们会承受同一种状态两次，他们还会@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>\n<hr>\n<p><strong>升阶 (+2)</strong> 伤害增加1d4。</p>",
             "name": "现实频闪 Realityflicker",
             "target": "1个生物",
-            "range": "30尺"
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Beguile": {
+            "name": "引诱 Beguile",
+            "description": "<p>你用一种似乎比其他任何声音都要美妙的声音、用比他们挚爱之人更温柔的外表向目标呼喊，让他们心里只想着你。无论结果如何，目标都会在1分钟内暂时免疫。</p>\n<p><strong>大成功 </strong>目标不受影响。</p>\n<p><strong>成功</strong> 目标@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮，然后在1分钟内暂时对引诱免疫。</p>\n<p><strong>失败 </strong>在你@Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain the Spell}期间，目标会@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}且@Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。</p>\n<p><strong>大失败</strong> 与失败一样，但目标必须每回合必须花费其第一个行动来向你@Compendium[pf2e.actionspf2e.UHpkTuCtyaPqiCAB]{快步 Step}。</p>",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Conjure Gadget": {
+            "description": "<p>你召唤一个小装置，装备到你或一名盟友身上。你可以召唤一个你的魔宠知道其公式的小装置，且物品等级必须等于或小于法术等级。小装置出现时就已经准备好，可以被目标以相应的用法使用，且只要你还在@Compendium[pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}就不会消失。目标必须能够满足用法的要求，比如有一只空闲手可以拿着这个物品，否则法术会自动失败。当法术结束后，你在1小时内无法施展<em>召唤小装置</em>。</p>\n<hr />\n<p><strong>升阶 (6th)</strong> 当你施放此法术时，你最多可以选择两个目标。</p>",
+            "name": "召唤小装置 Conjure Gadget",
+            "target": "你或射程内一名盟友",
+            "range": "30尺",
+            "duration": "维持,最多1分钟"
+        },
+        "Tidal Rings": {
+            "description": "<p>水流冲向目标的身体，用汹涌的海浪之力包围并束缚他们。当你施展此法术时，你对目标进行一次法术攻击检定。这个法术攻击检定的结果视作对目标进行的@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}检定的结果。\n如果成功，目标会因为你的潮汐之环陷入@Compendium[pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}状态。当你维持该法术时，你再做一次法术攻击检定来@Compendium[pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}。如果你擒抱目标的尝试失败，他们会在1分钟内暂时免疫这个法术。</p>\n<hr />\n<p><strong>升阶 (3环) </strong>你可以用此法术指定超大型或更小的生物。</p><br /><strong>升阶 (7环) </strong>你可以用此法术指定巨型或更小的生物。</p>",
+            "name": "潮汐之环 Tidal Rings",
+            "target": "一个大型或更小的生物",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Spirit's Blessing": {
+            "description": "<p>你命令周围的灵体保护目标生物。目标生物获得对物理伤害的抗力2，但每当目标对一件物品使用交互动作，而该物体又未在你释放本法术时被持握在手中，那么目标必须尝试@Check[type:flat|dc:5]检定。目标在花费动作后，但在任何效果被应用之前进行检定。一旦此法术结束，目标将在1分钟内暂时免疫本法术。</p>\n<hr>\n<p><strong>升阶 (+1) </strong>抗力加1。</p>\n<p>@UUID[Compendium.witches.witches-effects.HzoJ1aROeJknkRMk]{法术效果: 精魂祝福}</p>",
+            "name": "精魂祝福 Spirit's Blessing",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Wicked Temptation": {
+            "description": "<p>你向目标提出一项他们难以反对的建议。你可以要求目标花单动作来接近或逃离你（如同有@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态一样）、松开它所持握的东西、捡起一个物品、卧倒@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}或原地站着不动。目标必须尝试一次意志豁免。只要你还在维持法术，法术效果就会一直持续。直到目标完成指定的动作，之后法术会立即结束。一旦法术结束，目标会在1分钟内暂时免疫。</p>\n<hr>\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标在攻击检定和技能检定中承受-1状态减值，直到他们下一回合开始，法术立即结束。</p>\n<p><strong>失败</strong> 目标在攻击检定和技能检定中承受-1状态减值。</p>\n<p><strong>大失败</strong> 目标在攻击检定和技能检定中承受-1状态减值，并且目标会获得@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}状态，痴迷于完成指定动作。</p>\n<p><strong>升阶（6环）</strong> 攻击检定和技能检定中的状态减值增加到-2。</p>\n<p>@UUID[Compendium.witches.witches-effects.gP1EM928YIQHRwyu]{法术效果: 邪恶诱惑}</p>",
+            "name": "邪恶诱惑 Wicked Temptation",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Cosmic Tune": {
+            "description": "<p>你赋予30尺内盟友听到你心中宇宙之歌的能力。该盟友对抗听觉和情绪效应时获得+1状态加值。当你维持法术时，目标可以选择继续受益于该法术，他们这样做时会获得@Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，因为这首歌淹没了他们的听觉。在因为你的宇宙之歌而处于耳聋状态时，你的盟友在对抗情绪效果的豁免上获得+2状态加值。一旦此法术结束，目标将在1分钟内暂时免疫该法术。</p>\n<p>@UUID[Compendium.witches.witches-effects.Ca9XB5uo8bIxo413]{法术效果: 宇宙之曲}</p>",
+            "name": "宇宙之曲 Cosmic Tune",
+            "target": "一个盟友",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Lost in the Crowd": {
+            "description": "<p>你挥挥手，便让目标的视觉混乱。在目标眼中，周围所有人都长着和自己一样的脸，且所有对他说话的人，在他听来都是他自己的声音在说着一种奇怪的语言。法术终止时，目标暂时免疫本法术一分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败 </strong>目标无法判断谁是敌人，他在判断夹击时将所有盟友和敌人均视为敌人。他可以花费1个动作在指定区域内@Compendium[pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}盟友，投察觉对抗法术DC，成功时终止本效果。</p>\n<p><strong>大失败</strong> 同失败，并且无法受益于目标为盟友的能力，同时@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>@UUID[Compendium.witches.witches-effects.KCFYg2XNz971wamM]{法术效果: 人海迷失}</p>",
+            "name": "人海迷失 Lost in the Crowd",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
         }
     }
 }
