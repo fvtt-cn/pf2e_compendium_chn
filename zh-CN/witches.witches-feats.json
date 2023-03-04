@@ -173,7 +173,87 @@
         "Hexed Name": {
             "name": "咒名 Hexed Name",
             "description": "<p>你对自己的名字施了魔法，如果有人大声说出你的名字，你就会知道。当有生物大声说出你的名字时，你会得知该生物的名字，并且他们必须尝试用@Check[type:will|dc:resolve(@actor.attributes.classOrWillDC.value)]豁免来对抗你的法术DC。如果生物豁免失败，你会得知生物的名字和关于生物的模糊细节，如果生物的豁免大失败，你还会知道他的确切位置。每天一次，如果有生物连续地快速说出你的名字3次，你可以通过一个三动作行动用<em>@Compendium[pf2e.spells-srd.69L70wKfGDY66Mk9]{传送术 Teleport}</em>将自己传送到他的位置，传送术等级等于你能释放的最高等级法术。你可以选择忽略特定生物使用你的名字，或忽略任何使用你名字的生物，但如果你这样做了，他们就会一直被忽略，直到你重新决定。</p>"
+        },
+        "Cauldron+": {
+            "description": "<p>你可以使用制作休整期行动来@UUID[Compendium.pf2e.actionspf2e.rmwa3OyhTZ2i2AHl]{制作 Craft}油与药水。</p>\n<p>你立刻得到4个常见油与药水的配方，在4级和之后的每2级，你再得到一个常见油或药水，且等级不大于自己的配方(4级时最高拿4级药水的配方，6级时最高拿6级药水的配方等)。</p>\n<p>若你有魔宠，你可以让魔宠学习这些配方，而非储存在你的公式簿当中。你的魔宠可以如同学习法术一般学习配方，并如同已知法术般在旧魔宠死后传递到新魔宠身上。</p>\n<p>你可以在日常准备时创造一种你知道的油或药水，其等级必须等于或低于你。在你下次进行日常准备时，你以这种方式创造的任何物品，都会变成惰性液体，并且临时物品的任何残余效果都会结束。临时油或药水没有任何价值。</p>",
+            "name": "炼药大釜+ Cauldron+"
+        },
+        "Wortwitch+": {
+            "description": "<p>你与草叶植物的相性特别好。</p>\n<p>你的庇护主赐与你一只莱西魔宠。若你原本就有魔宠，则莱西魔宠如同旧魔宠死亡一般取而代之。</p>\n<p>此外，你的视线能穿透树叶、藤蔓及其他草叶。你不因为来自草叶的遮掩而在察觉检定或远程攻击骰上承受环境罚值，且若攻击目标的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态是来自于此类植披，则你在攻击它时不需要通过纯骰检定。</p>\n<p><strong>特殊</strong> 你可以将德鲁伊专长@UUID[Compendium.pf2e.feats-srd.baz18CdB13DVMHV9]{莱西魔宠奥秘 Leshy Familiar Secrets}作为4级女巫专长选择，即使你不满足先决条件。</p>",
+            "name": "草木女巫+ Wortwitch+"
+        },
+        "Eldritch Nails+": {
+            "description": "<p>你的指甲超自然地尖长。</p>\n<p>你获得造成[[/r 1d6[slashing]]]伤害的指甲无武装攻击，这个指甲属于搏击武器组，并持有灵巧、娴熟和无武装特性。你可在你的指甲上蚀刻符文，其成本和限制与将符文蚀刻在@UUID[Compendium.pf2e.equipment-srd.FNDq4NFSN0g2HKWO]{重拳缠手带 Handwraps of Mighty Blows}上一样，指甲上的符文适用于双手的指甲攻击但不适用于其他的无武装攻击。</p>\n<p>你可通过指甲传递魔法，当你成功施放一个非戏法巫术，且这个巫术不要求法术攻击骰，而巫术的目标位在你的触及范围内，则作为施法动作的一部分，你可在巫术生效前，向目标以指甲进行打击，如果攻击未命中，巫术将没有效果。如果打击大成功，则目标在对抗巫术效果时，成功等级下降1级。</p>",
+            "name": "魔能指甲+ Eldritch Nails+"
+        },
+        "Rites Of Convocation+": {
+            "description": "<p>庇护主赋予了你召唤其他生物来帮助自己的威能。</p>\n<p>选择一种存在于你的法术表中的<em>召唤术 Summon</em>(例如<em>@UUID[Compendium.pf2e.spells-srd.4YnON9JHYqtLzccu]{召唤动物 Summon Animal}</em>、<em>@UUID[Compendium.pf2e.spells-srd.lKcsmeOrgHtK4xQa]{召唤构装体 Summon Construct}</em>等)。你可透过与魔宠交流10分钟，来将一个已用女巫法术位准备的其他法术替换成该法术，升阶到相同的环级。</p>\n<p>被替换的法术的环级不能比该<em>召唤术 Summon</em>最低可能环级还要低。</p>\n<p>每天一次，你可以用有专注特征的单动作换出相应的法术。</p>",
+            "name": "召集之仪+ Rites Of Convocation+"
+        },
+        "Witch Dedication+": {
+            "description": "<p>你能像女巫一样施法。选择一个@UUID[Compendium.pf2e.classfeatures.KPtF29AaeX2sJW0K]{庇护主 Patron}；你获得一只具有两个常见戏法的魔宠，戏法要根据你所选择的庇护主的根源来挑选，但除了根源之外，你无法获得任何其他庇护主通常能提供的效果。你的魔宠有一项魔宠能力，但如果你从女巫入门中选择了另一个专长，你的魔宠就会如常获得两个魔宠能力。</p>\n<p>你获得@UUID[Compendium.pf2e.actionspf2e.aBQ8ajvEBByv45yz]{施放法术 Cast a Spell}行动。你每日能通过魔宠准备一个戏法。根据庇护主的根源，你在相应根源的法术攻击骰和法术DC上受训。你在女巫变体上的关键施法属性为智力，且这些法术是你的庇护主的根源所相应的女巫法术。</p>\n<p>你在与庇护主的根源相关的技能上变为受训；若你已经在该技能上受训，则自行选择一个技能变为受训作为替代。</p>\n<p><strong>特殊</strong> 直至选取另外两个@UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.eNTStXeuABNPSLjw]{女巫 Witch}变体的专长之前，你无法再选择任何其他入门专长。</p>",
+            "name": "女巫入门+ Witch Dedication+",
+            "prerequisites": [
+                {
+                    "value": "智力14"
+                }
+            ]
+        },
+        "Temporary Potions+": {
+            "description": "<p>在你的日常准备中，你可以使用来制造一批合计四份的临时油或药水，你可以使用你知道的所有公式，而非草木女巫专长正常所赋予的配方。这些物品遵循正常的@UUID[Compendium.pf2e.actionspf2e.rmwa3OyhTZ2i2AHl]{制作 Craft}规则，除了制作所需时间，还有一些其它的额外限制。它们必须是同一类型的油或药水，而且等级必须等于或低于你的等级。你用此能力创造的物品，在你下次进行每日准备时，会变成毫无魔力的液体，且临时物品的残余效果一并终止。临时油与药水没有价值。</p>\n<p>如果你在法术根源的DC上有大师熟练，你可以用你知道的公式制造两批油或药水，每批四份，而且每批都可以是不同类型的油或药水。如果你有传奇熟练度，你可以制造三批油或药水，每批四份。</p>",
+            "name": "魔力炼药+ Temporary Potions+",
+            "prerequisites": [
+                {
+                    "value": "炼药大釜"
+                }
+            ]
+        },
+        "Witch's Hut+": {
+            "description": "<p>你的家是个听从你命令的活化建物。透过耗时1天的仪式，你将小屋、楼房、篷车、帐篷或其他体型不超过超大型的建物转化为活化物品。</p>\n<p>女巫房舍的AC、豁免加值及察觉加值与你相同，它有150点生命值与10点硬度。女巫房舍持有构装护甲 怪物能力，因此当其生命值降至一半以下，或遭受重击时，其AC在经过修补前-4。</p>\n<p>你可以一个带有听觉及专注特征的单动作向其发出命令。</p>\n<ul>\n<li><strong>攻击</strong> 小屋对邻接敌人进行一次攻击，使用其建筑结构的其中一部分来重击目标。这次攻击是一个近战法术攻击检定，使用你的法术攻击检定调整值，成功时造成4d8加你的施法属性调整值的钝击伤害，大成功时造成双倍伤害。</li>\n<li><strong>转移</strong> 小屋静止24小时，然后用7环异界传送旅行到另一个位面。作为发出指令的一部分，你必须选择目的地，并且你必须对目的地位面有专门了解，才能前往那里。当它完成这个命令时，你必须在小屋内，否则你的小屋在到达新的位面后立即恢复为与之同类的普通建筑物。</li>\n<li><strong>监控</strong> 女巫房舍以你的察觉调整值监视离它120尺内的区域，发现入侵者时便发出尖叫。</li>\n<li><strong>上锁</strong> 女巫房舍的每个出入口都被<em>@UUID[Compendium.pf2e.spells-srd.Azoh0BSoCASrA1lr]{固锁术 Lock}</em>锁上。</li>\n<li><strong>移动</strong> 女巫房舍获得60尺速度，必要时长出巨大的鸡脚或骨腿，并遵循一个非常基本的指令来移动，例如\"跟着我\"或\"往那个方向走\"等。</li>\n<li><strong>伪装</strong> 女巫房舍将自己伪装成同类的非魔法凡俗建物。这是个10级幻术效果。</li>\n</ul>\n<p>你同时只能活化一个女巫房舍，若你活化新的房舍，则旧的房舍立刻恢复其非魔法的凡俗本体。若你死亡，女巫房舍会永远持续执行你最后的命令。</p>",
+            "name": "女巫房舍+ Witch's Hut+"
+        },
+        "Basic Lesson+": {
+            "name": "基础教诲+ Basic Lesson+",
+            "description": "<p>庇护主传授与你特殊的教诲，揭露其本质的片面。选取一个基础教诲，你获得相应的巫术，魔宠学会相应的法术。你的聚能池中的聚能点容量提升1。</p>",
+            "prerequisites": [
+                {
+                    "value": "女巫入门+"
+                }
+            ]
+        },
+        "Murksight+": {
+            "name": "看破雾霭+ Murksight+",
+            "description": "<p>你的视线能穿透黑暗、幻觉、天气和其他影响。你不会因为目标的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态而在攻击和察觉检定上承受环境减值，当你瞄准隐蔽生物时，你不需要纯骰检定就能成功。</p>"
+        },
+        "Phase Familiar": {
+            "name": "雾化魔宠 Phase Familiar",
+            "description": "<p>你能通过暂时将魔宠转化为灵体来保护它。你学会@Compendium[pf2e.spells-srd.rMOI8JFJ0nT2mrCF]{雾化魔宠 Phase Familiar}巫术戏法，你聚能池的上限增加1。</p>"
+        },
+        "Rites Of Transfiguration+": {
+            "name": "易躯之仪+ Rites Of Transfiguration+",
+            "description": "<p>你掌握了以庇护主之大能，将其他生物的躯体转变为更符合其行事方法或你的心情的外貌。你的魔宠学会<em>@UUID[Compendium.pf2e.spells-srd.dN8QBNuTiaBHCKUe]{恶意变形术 Baleful Polymorph}</em>，即便<em>恶意变形术</em>可能不在你的根源法术表上。</p>\n<p>你可透过与魔宠交流10分钟，来将一个已用6级以上的女巫法术位准备的其他法术替换成<em>恶意变形术</em>，升阶到相同的环级。</p>\n<p>每天一次，你可以用有专注特征的单动作换出相应的法术。</p>"
+        },
+        "Syu Tak-nwa's Hexed Locks+": {
+            "name": "苏塔奴的巫发+ Syu Tak-nwa's Hexed Locks+",
+            "prerequisites": [
+                {
+                    "value": "活发"
+                }
+            ],
+            "description": "<p>你的头发非武装攻击获得长触及特征。你可通过头发传递魔法，当你成功施放一个非戏法巫术，且这个巫术不要求法术攻击骰，而巫术的目标位在你的触及范围内，则作为施法动作的一部分，你可在巫术生效前，向目标以头发进行打击，如果攻击未命中，巫术将没有效果。如果打击大成功，则目标在对抗巫术效果时，成功等级下降1级。</p>"
+        },
+        "Witch's Bottle+": {
+            "name": "炼药宝瓶+ Witch's Bottle+",
+            "description": "<p>你获得了@UUID[Compendium.witches.witches-spells.ZJfi7CBkl5Ss3QUY]{炼药宝瓶 Witch's Bottle}聚能法术。你聚能池中的聚能点增加1。</p>",
+            "prerequisites": [
+                {
+                    "value": "炼药大釜"
+                }
+            ]
         }
     },
-    "label": "女巫+专长 Witches+ Feats"
+    "label": "女巫+专长 Witches+ Feats",
+    "mapping": {
+        "prerequisites": "system.prerequisites.value"
+    }
 }
