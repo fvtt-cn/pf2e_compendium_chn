@@ -2,5 +2,137 @@
     "mapping": {
         "prerequisites": "system.prerequisites.value"
     },
-    "label": "Impossible Lands+ Feats"
+    "label": "惊世奇土+ 专长 Impossible Lands+ Feats",
+    "entries": {
+        "Wall Rider": {
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ],
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<hr />\n<p>通过先进的工程技术或压倒性的速度，你可以骑着改装车跨过陡峭的障碍。你的改装车获得等同于速度的攀爬速度，但是你必须在水平表面上结束移动。</p>",
+            "name": "骑墙手 Wall Rider"
+        },
+        "Reckless Rider": {
+            "name": "鲁莽骑手入门 Reckless Rider Dedication",
+            "description": "<p>你驾驶一辆由炼金引擎或发条装置驱动的两轮载具在简陋的街道上巡航，当你执行各种各样的冒险特技时，它的性能会超出你的期待。你获得一辆改装机车。这辆车使用@UUID[Compendium.pf2e.vehicles.fiSvQBWyyJuXnVvn]{自动机车 Automated Cycle}的数据，除了它为中型，5尺宽，并且无法携带乘客，也没有挎斗。你和这辆机车有着密切的羁绊，骑着它的时候你可以完成最疯狂的特技。</p>\n<p>你不断地调教你的座驾，每当你升级的时候，它的AC、强韧豁免、和硬度都会增加1点，生命值增加10点，破损阈值增加5点。当你驾驶你的改装机车时，如果你使用驾驶学识，则驾驶DC是你等级的标准DC；如果你使用其他技能，则DC是你等级的困难DC。你载具的碰撞DC等于你的职业DC或你的法术DC，以更高的为准。当你使用@UUID[Compendium.pf2e.actionspf2e.lID4rJHAVZB6tavf]{碾压 Run Over}动作时，你可以尝试碾过体型不大于小型的生物。</p>\n<p><strong>特殊</strong> 在你从鲁莽骑手变体中获得两个其他专长之前，你无法获得其他入门专长。</p>",
+            "prerequisites": [
+                {
+                    "value": "驾驶学识受训"
+                }
+            ]
+        },
+        "Riding Reload": {
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<hr />\n<p>你临时用膝盖控制你的机车，腾出手来装填武器。你花费一个单动作进行@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}，然后以交互动作装填。</p>",
+            "name": "骑乘装填 Riding Reload",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ]
+        },
+        "Modified Machine": {
+            "description": "<p>你升级了你机车的动力和效能，赋予它新的能力。你的改装机车的速度增加10尺，并且它的碰撞伤害增加到[[/r 3d8]]。在你的回合结束时，如果你未使用@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}动作，你能以一个自由动作进行一次单独的驾驶动作。当你使用@UUID[Compendium.pf2e.actionspf2e.lID4rJHAVZB6tavf]{碾压 Run Over}动作时，你可以尝试撞击体型不大于中型的生物，或碾过体型不大于小型的生物。机车活动时间增加到2小时，之后才需要再次上发条。</p>",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ],
+            "name": "改进机车 Modified Machine"
+        },
+        "Wheelie": {
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<hr />\n<p>你在骑乘时抬起车头，以后轮为支点前进，让机车遮挡你的身体。你进行@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}，获得你花费动作数量相同的驾驶动作效果。在此移动期间，你对敌人获得标准掩蔽。</p>",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ],
+            "name": "后轮特技 Wheelie"
+        },
+        "Crashing Dismount": {
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<hr />\n<p>你故意让你的机车侧滑，你则在机车撞击敌人的同时跳至安全位置。尝试一次@UUID[Compendium.pf2e.actionspf2e.lID4rJHAVZB6tavf]{碾压 Run Over}动作，并且当你准备跳车时，尝试一次驾驶检定，对抗你等级的困难DC。你在跳车之前，你的改装机车必须前进至少20尺，否则你的检定结果视为下降一个成功度。</p>\n<hr />\n<p><strong>大成功</strong> 你不受碰撞伤害，并且你将在第一个受影响的目标的最远10尺范围内安全落地。如果你选择撞击目标，则目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>成功</strong> 类似大成功，但被撞击的目标不会倒地。</p>\n<p><strong>失败</strong> 你受到载具一半的撞击伤害，并且在第一个受影响的目标相邻的地方落地，并且你载具的移动立即结束。</p>\n<p><strong>大失败</strong> 类似失败，但你落地的时候倒地。</p>",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ],
+            "name": "冲撞跳车 Crashing Dismount"
+        },
+        "Advanced Machine": {
+            "name": "高级机车 Advanced Machine",
+            "description": "<p>你继续改装你的机车，进一步改善它的操纵性。你的改装机车的速度增加10尺，碰撞伤害增加到5d10。从手艺、欺骗、交涉、威吓、表演或贼活中选择一项。当你骑乘改装车时，你相应技能的技能检定有+1物品加值。当你使用@UUID[Compendium.pf2e.actionspf2e.lID4rJHAVZB6tavf]{碾压 Run Over}动作，你可以尝试撞击体型不大于大型的生物，或碾过体型不大于中型的生物。机车活动时间增加到4小时，之后才需要再次上发条。</p>",
+            "prerequisites": [
+                {
+                    "value": "改进机车"
+                }
+            ]
+        },
+        "Burn Rubber": {
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<hr />\n<p>你同时踩住刹车和油门，导致烟雾、灰尘和碎石在你的机车周围翻滚。你以改装机车为中心，创造@Template[type:burst|distance:20]范围的烟雾，效果类似@UUID[Compendium.pf2e.spells-srd.GKpEcy9WId6NJvtx]{臭云术 Stinking Cloud}，但持续时间只有1轮。你能通过在下个回合使用至少一个单独的@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}动作，在原地旋转你的车轮，以延长效果的持续时间。此效果的DC等于你载具的碰撞DC。你对自己的烧胎行动尝试豁免时，有+2环境加值。</p>",
+            "name": "烧胎 Burn Rubber",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ]
+        },
+        "Wave Rider": {
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<hr />\n<p>即便是水面也无法减慢你的速度。当你沿着直线@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}时，如果你在坚实地表上至少移动了速度的一半距离，你可以在不增加驾驶DC的情况下，在平静水面或高等困难地形上移动剩余的距离。如果你没有在坚实地表上结束移动，你将从你的改装机车上跌落，你的改装机车会倾倒@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}（或者如果你经过水体的话，你会掉进水里）。</p>",
+            "name": "弄潮儿 Wave Rider",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ]
+        },
+        "Ride Along": {
+            "description": "<p><strong>需求</strong> 你在你的改装机车背上开始你的回合，你和一个盟友相邻，并且你有一只或更多空着的手。</p>\n<hr />\n<p>你抓住你的盟友并且迅速用改装机车带着他在战场上移动。尝试攫抓一个相邻的自愿盟友，盟友的体型不能超过你，然后尝试一次单独的@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}动作。你能在驾驶途经过任意一个未被占据方格时松开（Release）他，或者当你驾驶结束时将其放开在你相邻的方格内。你的盟友将以站立姿态结束移动，并且如果他至少位于一个敌人的近战触及范围内，他能以一个反应动作对触及范围内的敌人进行一次近战打击。</p>",
+            "name": "开便车 Ride Along",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ]
+        },
+        "Incredible Machine": {
+            "description": "<p>你的改装机车成为工程学的奇迹。你的改装机车速度增加10尺，碰撞伤害变为10d10。你高阶机械专长所选择的技能的物品加值增加到+2。当你使用碾压（Run Over）动作，你可以尝试撞击体型不大于超大型的生物，或碾过体型不大于大型的生物。机车活动时间增加到8小时，之后才需要再次上发条。</p>",
+            "name": "惊人机车 Incredible Machine",
+            "prerequisites": [
+                {
+                    "value": "高级机车"
+                }
+            ]
+        },
+        "Road Rash": {
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车</p>\n<p>开阔道路可能让人苦恼，因为敌人将很快发现你。你@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}，获得你花费动作数量相同的驾驶动作效果。在此移动期间，你能试图抓住一个相邻的敌人，敌人不能超过你可以@UUID[Compendium.pf2e.actionspf2e.lID4rJHAVZB6tavf]{碾压 Run Over}的体型。尝试一次驾驶学识或@Check[type:athletics]检定对抗敌人的强韧DC，成功后能拖着敌人和你一起移动。你能在移动的任意一点放开敌人，如果你移动结束时仍然@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}敌人的话，你必须将其丢下。这是个强制移动效果。</p>\n<hr />\n<p><strong>大成功</strong> 敌人受到你载具的碰撞伤害，并且当你丢下目标后它会@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>成功</strong> 类似成功，但敌人受到一半伤害。</p>\n<p><strong>失败</strong> 敌人提前挣脱。敌人只移动10尺，不会倒地，也不受伤害。</p>\n<p><strong>大失败</strong> 敌人在你经过时将你从车上拉了下来。你在敌人的一个相邻空间内倒地，并且你的改装机车继续移动以远离你，直到在驾驶动作预定的终点停下。</p>",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ],
+            "name": "公路冲刺 Road Rush"
+        },
+        "Tethering Cable": {
+            "description": "<p><strong>需求</strong> 你正骑乘你的改装机车，并且你有一只空手</p>\n<hr />\n<p>你在机车后面拖着一根电缆、链条或绳子，当你绕着敌人转圈的时候，会把他捆得越来越紧。你@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}，获得你花费动作数量相同的驾驶动作效果。如果你在开始时的方格内结束你的驾驶，并且围绕一个敌人骑了一圈，你可以尝试@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}他，无论他的体型为多大，并且可以使用驾驶学识的熟练度代替你的运动技能。如果你检定大成功，目标会还会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮，之后缆绳会松开。</p>",
+            "name": "催命索 Tethering Cable",
+            "prerequisites": [
+                {
+                    "value": "鲁莽骑手入门"
+                }
+            ]
+        },
+        "Miraculous Machine": {
+            "description": "<p>你的改装机车是个真正令人惊叹的工程实例。你的改装机车速度增加10尺，碰撞伤害变为15d10。你高阶机械专长所选择的技能的物品加值增加到+3。当你使用碾压动作，你可以尝试撞击体型巨形生物，或碾过体型不大于超大型的生物。</p>",
+            "name": "奇迹机车 Miraculous Machine",
+            "prerequisites": [
+                {
+                    "value": "惊奇机车"
+                }
+            ]
+        },
+        "Stable Rider": {
+            "name": "稳定骑手 Stable Rider",
+            "description": "<p>你能瞬间调整你的重心，让你能完成大胆特技。当你驾驶你的改装机车时，你在尝试带有[鲁莽]特征动作时，驾驶检定有+2环境加值。</p>"
+        }
+    }
 }
