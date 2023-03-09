@@ -2566,6 +2566,405 @@
                     "description": "<p>许多冷原居民携带者从冷原开采的奇异红宝石。只要生物心甘情愿地接受红宝石作为来自冷原居民的礼物或报酬，在该生物持有宝石期间，任何1英里内的冷原居民都可以将该生物作为<em>@UUID[Compendium.pf2e.spells-srd.KSAEhNfZyXMO7Z7V]{流放诅咒 Outcast's Curse}</em>、<em>@UUID[Compendium.pf2e.spells-srd.R8bqnYiThB6MYTxD]{幻痛术 Phantom Pain}</em>或<em>@UUID[Compendium.pf2e.spells-srd.KHnhPHL4x1AQHfbC]{读心术 Mind Reading}</em>的施法目标，并且宝石的持有者在对抗<em>流放诅咒</em>时的豁免鉴定结果下降一个成功度。</p>"
                 }
             }
+        },
+        "Beluthus": {
+            "name": "贝卢斯 Beluthus",
+            "publicNotes": "<p>当魔族和强大的邪恶施法者迷失于比多元宇宙最远之地还要遥远的地方时，他们有时会以被称为囚魂魔的骇人不死形态回归，一种吞噬活物的灵魂来推动它们的神秘阴谋的亡灵。他们的身躯被摧毁再重构，中空而扭曲，正如它们那遭受了精神转变的心灵。它们获得了将他人的灵魂束缚于它之内、并吸取他们的精华以获取魔法力量的能力，且它们在追求灵魂的道路上永不满足。大量鬼魅般的人形在它们中空的肋骨囚笼内翻腾涌动——展现了这只囚魂魔最近耗尽的灵魂。</p>",
+            "data":{},
+            "items": {
+                "Spell Deflection":{
+                    "name": "法术偏转 Spell Deflection",
+                    "description": "<p>一位用心灵法术、<em>@UUID[Compendium.pf2e.spells-srd.bay4AfSu2iIozNNW]{放逐术 Banishment}</em>、<em>@UUID[Compendium.pf2e.spells-srd.GYmXvS9NJ7QwfWGg]{缚魂术 Bind Soul}</em>、<em>@UUID[Compendium.pf2e.spells-srd.sX2o0HH4RjJDAZ8C]{神圣裁决 Divine Decree}</em>、<em>@UUID[Compendium.pf2e.spells-srd.hVU9msO9yGkxKZ3J]{神圣狂怒 Divine Wrath}</em>、<em>@UUID[Compendium.pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>、<em>@UUID[Compendium.pf2e.spells-srd.PHVHBbdHeQRfjLmE]{灵魂冲击 Spirit Blast}</em>、<em>@UUID[Compendium.pf2e.spells-srd.Ht35SDf9PDStJfoC]{灵魂挽歌 Spirit Song}</em>瞄准囚魂魔的施法者可以进行一次反制鉴定来释放囚魂魔用囚魂能力困住的灵魂。倘若反制鉴定成功，被困的灵魂将被释放（尽管灵魂所属的生物仍然死亡），囚魂魔无法使用来自此生物的任何灵魂充能。。</p>\n<p>此外，囚魂魔对这些法术免疫</p>"
+                },
+                "Devour Soul":{
+                    "name": "囚魂 Devour Soul",
+                    "description": "<p>囚魂魔触碰一个触及内的生物，造成[[/r (8d6)[negative]]]{8d6负能量伤害}（@Check[type:fortitude|dc:31|basic:true]豁免）。如果这个生物被此攻击杀死，他的灵魂就被囚禁于囚魂魔体内。当他的灵魂被困时，此生物无法复活，除非使用如<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>等强大的魔法。摧毁囚魂魔或者成功反制囚魂（见法术偏转）将会释放灵魂。囚魂魔一次只能容纳一个灵魂。</p>\n<p>灵魂有数量等于5×原生物等级的灵魂充能（见灵魂法术）。囚魂魔可以消耗这些充能来施放法术。如果灵魂被释放且他被复活，他每被吸取了5点灵魂充能，此生物就获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。如果灵魂充能降至0，这个灵魂就被消耗殆尽，只能通过如<em>祈愿术</em>等强大的魔法复活。</p>"
+                },
+                "Drain Life":{
+                    "name": "汲取生命 Drain Life",
+                    "description": "<p>当囚魂魔使用利爪伤害一个活物时，它获得10点临时生命，这个活物必须通过@Check[type:fortitude|dc:24]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。囚魂魔之后对他造成的伤害在豁免失败时会使流失值加1，最高流失4。</p>"
+                },
+                "Soul Spells":{
+                    "name": "灵魂法术 Soul Spells",
+                    "description": "<p>囚魂魔能施展异能内在法术，但它这么做时必须消耗数量等同于法术等级的灵魂充能（类似消耗充能从法杖施法）。在施放法术时，它可以将任何法术的等级提升到最高6环。在遭遇时，一只囚魂魔通常困着一个10点充能的灵魂。</p>"
+                }
+            }
+        },
+        "Caliddo Haruvex": {
+            "name": "卡利多·哈鲁维克斯 Caliddo Haruvex",
+            "publicNotes": "<p>死墓骑士是由被诅咒的铠甲赋予不死身的亡灵战士。</p>",
+            "data":{},
+            "items": {
+                "equipment-Caliddo's Keys": {
+                    "name": "卡利多的钥匙 Caliddo's Keys"
+                },
+                "strike-Frost Greatsword": {
+                    "name": "冻寒巨剑 Frost Greatsword"
+                },
+                "strike-Frost Composite Longbow": {
+                    "name": "冻寒复合长弓 Frost Composite Longbow"
+                },
+                "Rejuvenation": {
+                    "name": "复生 Rejuvenation",
+                    "description": "<p>当死墓骑士被摧毁时，其护甲会在[[/br 1d10 #days]]{1d10天}内重塑身体——若护甲被活着的宿主穿戴则会更加迅速（见后文中的死墓骑士护甲）。若身体在此之前被破坏，重塑过程将重新开始。</p>\n<p>只有摧毁护甲（比如使用<em>@UUID[Compendium.pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>）、把死墓骑士传送至正能量位面、或者丢进火山之中才能够永久摧毁死墓骑士。</p>"
+                },
+                "Sacrilegious Aura": {
+                    "name": "亵渎灵光 Sacrilegious Aura",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当有生物在灵光范围内使用正能量法术或能力时，死墓骑士会自动按照[[/r 1d20+17 #Counteract]]{+17}的反制调整值尝试反制它。</p>"
+                },
+                "Devastating Blast": {
+                    "name": "毁灭爆震 Devastating Blast",
+                    "description": "<p>死墓骑士释放出@Template[type:cone|distance:30]能量。区域内的生物受到[[/r (6d12)[cold]]]{6d12寒冷伤害}（@Check[type:reflex|dc:29|basic:true]豁免）。</p>\n<p>死墓骑士每[[/br 1d4 #Recharge Devastating Blast]]{1d4轮}只能使用1次该能力。</p>"
+                },
+                "Graveknight's Curse": {
+                    "name": "死墓骑士诅咒 Graveknight's Curse",
+                    "description": "<p>诅咒会影响任何穿戴死墓骑士的护甲超过1小时以上的生物。</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:33]豁免</p>\n<hr />\n<p><strong>潜伏期</strong> 1小时</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}并且无法脱下护甲(1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}, 速度降低10, 且无法脱下护甲(1天)</p>\n<p><strong>阶段3</strong> 死亡并转化为护甲的死墓骑士。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.6rnB7nK6J6zF4vea]{效果: 死墓骑士诅咒}</p>"
+                },
+                "Phantom Mount": {
+                    "name": "魅影坐骑 Phantom Mount",
+                    "description": "<p>HP 58; AC 27, Fort +17, Ref +15, Will +14</p>\n<hr />\n<p>死墓骑士召唤出1匹超自然坐骑，就如同<em>@UUID[Compendium.pf2e.spells-srd.WPKJOhEihhcIm2uQ]{魅影驹 Phantom Steed}</em>一般，该法术会升阶至的法术环级等同于死墓骑士等级的一半。</p>\n<p>与<em>魅影驹</em>不同的是，坐骑的AC和豁免检定加值均比死墓骑士的数值低4点，坐骑的生命值为死墓骑士生命值的三分之一（向下取整）。</p>\n<p>若坐骑被摧毁，死墓骑士必须等待1小时才能再次使用该能力。</p>"
+                },
+                "Weapon Master": {
+                    "name": "武器大师 Weapon Master",
+                    "description": "<p>死墓骑士无论持用何种武器，均可以使用该武器的重击专精效果。</p>"
+                }
+            }
+        },
+        "Child of Belcorra": {
+            "name": "贝科拉之子 Child of Belcorra",
+            "publicNotes": "<p>将死者制成木乃伊的习俗并非保存遗体的唯一途径，亦非唤起这类传播疾病的不死畸怪的唯一途径。</p>\n<p>沼泽木乃伊（也被称为泥炭木乃伊或泥沼木乃伊）难得离开它们的沼泽领地。沼泽木乃伊远不如它们臭名昭著的人工防腐而成的近亲强大，为它们防腐的不是在仪式中加入的药剂，而是存在于泥炭沼泽或泥泞湿地中不透气、酸化的泥淖中所含的自然元素。虽然以这种方式防腐的尸体肯定能因堕落力量的诅咒或死灵法师的直接影响而从泥潭中复活成沼泽木乃伊，但它们绝大多数是出于对复仇的迫切需求，或是为了继续某些死亡时可怕的未竟之事——通常是因为这生物被杀或被出卖了——而复活。这系于生活的情感纽带的本质和死者的情感之力迫使不朽胜过了死亡，而被用来处理尸体的沼泽的防腐性质完成了剩下的步骤。</p>\n<p>尽管大部分沼泽木乃伊被复仇所驱使，相当多的（沼泽木乃伊）用无差别的暴行来满足它们的黑暗渴望。充斥着对生者的愤怒与仇恨，它们无情地袭击任何胆敢踏入它们阴暗领地的活物。它们痛苦的呻吟回荡在它们腐臭家园的上空，赶跑了其中栖息的大多数自然生物，并常常向旅行者警示了（这种）地表下隐藏的潜在危险。</p>",
+            "data":{},
+            "items": {
+                "Breath of the Bog":{
+                    "name": "沼泽之息 Breath of the Bog",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在该区域内开始回合的生物会感觉自己的肺部似乎充满了水，并必须通过@Check[type:fortitude|dc:19]豁免，否则将无法说话或呼吸。该生物仍然可以屏息，并能在其回合结束时尝试一次新的豁免。</p>\n<p>豁免成功的生物在24小时内临时免疫沼泽之息。</p>"
+                },
+                "Rise Up":{
+                    "name": "掘起 Rise Up",
+                    "description": "<p><strong>触发</strong> 一个生物在沼泽木乃伊埋藏的泥浆或泥炭上行走。</p>\n<p><strong>需求</strong> 尚未骰先攻。</p>\n<hr />\n<p><strong>效果</strong> 沼泽木乃伊自动注意到这个生物并在骰先攻前掘地。</p>"
+                },
+                "Bog Rot":{
+                    "name": "沼腐症 Bog Rot",
+                    "description": "<p>此苦难无法被降至阶段1以下，它造成的伤害也无法被治疗，直到它被<em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{移除诅咒 Remove Curse}</em>或相似能力成功治疗；在这之后，这个苦难可以像普通疾病一样被移除。被沼腐症杀死的生物会融化成一滩有毒的污泥，除非通过7环<em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或者类似魔法手段外无法复活。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1分钟)</p>\n<p><strong>阶段2</strong> [[/r (3d6)[negative]]]{3d6负能量伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1天)</p>"
+                }
+            }
+        },
+        "Deadtide Skeleton Guard": {
+            "name": "亡灵之潮骷髅守卫 Deadtide Skeleton Guard",
+            "data":{},
+            "publicNotes": "<p>这些无足轻重的守卫是最常见的骷髅爪牙。</p>\n<hr />\n<p>骷髅是最为常见的一类不死生物，它们是由污秽的死灵力量所维持着形态的骨架，出没于那些古老的地城和被遗忘的墓园之中。</p>"
+        },
+        "Deep End Sarglagon": {
+            "name": "深水池尾端溺亡魔 Deep End Sarglagon",
+            "publicNotes": "<p>溺亡魔居住在地狱数不尽的水道、湖泊和海洋里。它们是地狱第五层斯泰吉亚的秘密藏书库——谎言学院的守护者。溺亡魔在水和空气中都能轻松呼吸，而且能在水、陆地甚至空中以不可思议的速度移动。很少有魔族在多元宇宙的水道里旅行，但如果存在一条穿过位面的河流时，溺亡魔就很有可能为了推进地狱的阴谋而通过它进行旅行。它们唯一避开的水道只有冥河，因为魔族也没办法地狱冥河对它们记忆的侵蚀。凡人施法者有时候会束缚溺亡魔，让它们为其看守珍贵的秘密或宝藏，尤其在水生区域里。最离奇的是，对于那些不知道做了什么而引来溺亡魔的凡人来说，这些不受欢迎的家伙有时会扮演令人反感的守护者角色。这些魔鬼不请自来地长久看守，往往让那些被它们监管的人感到烦扰和窒息。</p>\n<hr />\n<p>每一种特定类型的魔鬼都在地狱官僚结构和阶级制度中扮演着特定的角色，而其中有些魔鬼承担的职责比其他魔鬼更加专业化。</p>",
+            "data":{},
+            "items": {
+                "equipment-Fragment of Urevian's Pendant": {
+                    "name": "乌瑞维安吊坠碎片 Fragment of Urevian's Pendant"
+                },
+                "strike-Tentacle Arm":{
+                    "name": "触手 Tentacle Arm"
+                },
+                "Heavy Aura":{
+                    "name": "沉重灵光 Heavy Aura",
+                    "description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入此灵光范围内的生物必须通过DC 23意志豁免鉴定。然后它会在10分钟之内对此灵光临时免疫。</p>\n<hr />\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 只要生物呆在灵光范围内，就会陷入@UUID[Compendium.pf2e.conditionitems.D5mg6Tc7Jzrj6ro7]{超载 Encumbered}状态。如果生物已经超载，只要它呆在灵光范围内，则会陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>\n<p><strong>大失败</strong> 类似失败，但是效果在离开灵光范围后依然会存在3轮。</p>"
+                },
+                "Stygian Guardian":{
+                    "name": "黄泉卫士 Stygian Guardian",
+                    "description": "<p><strong>触发</strong> 位于溺亡魔触及范围内的1个生物或物体成为一次攻击的目标。</p>\n<hr />\n<p><strong>效果</strong> 溺亡魔将自己挡在目标身前，给与生物或物体@UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{标准掩蔽 Standard Cover}以对抗此次攻击（AC+2环境加值），如果溺亡魔已经给与目标少量掩蔽，则目标获得@UUID[Compendium.pf2e.other-effects.I9lfZUiCwMiGogVi]{高等掩蔽 Greater Cover}（AC+4环境加值）。</p>"
+                },
+                "Drown":{
+                    "name": "淹溺 Drown",
+                    "description": "<p>溺亡魔召唤浑浊的污水，将30尺内1个无法在水下呼吸的生物的肺部填满。目标必须尝试一次@Check[type:fortitude|dc:26]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标咳出水，并且陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 目标屏住呼吸。他唯一能做的动作只能是尝试一次强韧豁免来对抗此能力的DC，把水咳出来。这是一个单动作。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态，并且开始窒息。如果目标在窒息期间成功通过强韧豁免，则能咳出水来并重新开始呼吸。</p>"
+                },
+                "Sarglagon Venom":{
+                    "name": "溺亡魔毒液 Sarglagon Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong>[[/r 2d6[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段2</strong>[[/r (3d6)[poison]]]{3d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+                }
+            }
+        },
+        "Drill Field Barbazu": {
+            "name": "演武场胡须魔 Drill Field Barbazu",
+            "publicNotes": "<p>巴霸魔，通常也被称为胡须魔或步兵魔，是一种嗜杀成性的魔鬼，它们充当炼狱军队的步兵来满足自己的毁灭欲望，通常会带领成群的下级魔鬼例如小魔鬼或劣魔加入战斗。胡须魔会挥舞着带锯刃的大砍刀，造成锯齿状的伤口能抵抗治疗法术，造成大量失血。当地人靠的太近时，胡须魔会用它们蠕动的尖刺胡须发起攻击，造成一种叫做“地狱热疫”的可怕疾病，它们也会津津有味地看着猎物的力量从内部被慢慢地吞噬。</p>\n<p>胡须魔总是野蛮地沉迷于来自地狱各层的地狱领主们的邪恶念头，热衷于为它们散播谋杀、悲惨和痛苦。</p>\n<hr />\n<p>作为散播腐败和征服的大师，魔鬼们试图诱惑凡人生命加入它们对亵渎事物的追求中来，并将暴政传播到各个世界。它们向人类提出各种条件，从签署一份地狱契约而获取的强大力量，到向邪神低语换来的扭曲恩惠，甚至还有许多更微妙的交易。那些屈服于这些诱惑的人，会发现自己死后会在地狱的深坑中遭受无尽的折磨，在那里唯一逃脱的希望就是晋升为地狱中的魔鬼。从士兵、学者到检察官、律师、法官和刽子手，每一种恶魔在维持冷酷无情的地狱官僚机器上扮演着特定的角色，这就是地狱。低级的劣魔和小魔鬼服从于更强大和专业的恶魔，比如契约魔和狂怒魔，做着卑下的工作，而最强大的深狱炼魔指挥着整个地狱军团。</p>",
+            "data":{},
+            "items": {
+                "Drover's Band":{
+                    "name": "赶畜皮带 Drover's Band",
+                    "description": "<p><strong>启动</strong> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 胡须魔将意识施加到30尺内的一个无心智生物上。如果目标是一个等级不超过3级的无心智生物，它必须通过@Check[type:will|dc:20]豁免。目标的豁免结果的成功度必须下降一个级别。</p>\n<hr />\n<p><strong>大成功</strong> 目标生物不受影响。</p>\n<p><strong>成功</strong> 由于被胡须魔的命令扰乱，目标生物陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>失败</strong> 目标生物在1小时内被胡须魔@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{控制 Controlled}，但它不会遵从明显会导致自我毁灭的命令。</p>\n<p><strong>大失败</strong> 类似失败，但是持续时间为1天。</p>"
+                },
+                "strike-Beard": {
+                    "name": "胡须 Beard"
+                },
+                "Avernal Fever": {
+                    "name": "地狱热疫 Avernal Fever",
+                    "description": "<p><strong>豁免</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>阶段 1</strong> 携带疾病但是不受影响（1 日）</p>\n<p><strong>阶段 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 天)</p>\n<p><strong>阶段 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 天)</p>"
+                },
+                "Infernal Wound": {
+                    "name": "地狱创伤 Infernal Wound",
+                    "description": "<p>胡须魔的大砍刀打击也会造成@Localize[PF2E.PersistentDamage.Bleed1d6.success]，并且能抵抗对流血伤害的治疗尝试。</p>\n<p>终止流血伤害的纯骰检定@Check[type:flat|dc:20]。只有当流血生物得到盟友成功进行协助之后该DC才会减少到@Check[type:flat|dc:15]。对有地狱创伤生物@UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{进行急救 Administer First Aid}的DC增加5。</p>\n<p>施法者或物品试图对受到地狱创伤的生物使用治疗魔法时，必须通过DC 21的反制检定，否则法术无法生效。</p>"
+                },
+                "Reposition": {
+                    "name": "移位 Reposition",
+                    "description": "<p><strong>触发</strong> 魔鬼的大砍刀打击命中目标</p>\n<hr />\n<p><strong>效果</strong> 魔鬼将目标朝任意方向移动5尺。目的地方格必须在魔鬼大砍刀的触及范围内。</p>\n<p>此移动不会触发反应动作。</p>"
+                },
+                "Wriggling Beard": {
+                    "name": "蠕动胡须 Wriggling Beard",
+                    "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 胡须魔进行一次胡须打击。此打击不受多重攻击减值，并且也不计入多重攻击减值。</p>"
+                }
+            }
+        },
+        "Hellforge Barbazu": {
+            "name": "地狱锻造胡须魔 Hellforge Barbazu",
+            "publicNotes": "<p>巴霸魔，通常也被称为胡须魔或步兵魔，是一种嗜杀成性的魔鬼，它们充当炼狱军队的步兵来满足自己的毁灭欲望，通常会带领成群的下级魔鬼例如小魔鬼或劣魔加入战斗。胡须魔会挥舞着带锯刃的大砍刀，造成锯齿状的伤口能抵抗治疗法术，造成大量失血。当地人靠的太近时，胡须魔会用它们蠕动的尖刺胡须发起攻击，造成一种叫做“地狱热疫”的可怕疾病，它们也会津津有味地看着猎物的力量从内部被慢慢地吞噬。</p>\n<p>胡须魔总是野蛮地沉迷于来自地狱各层的地狱领主们的邪恶念头，热衷于为它们散播谋杀、悲惨和痛苦。</p>\n<hr />\n<p>作为散播腐败和征服的大师，魔鬼们试图诱惑凡人生命加入它们对亵渎事物的追求中来，并将暴政传播到各个世界。它们向人类提出各种条件，从签署一份地狱契约而获取的强大力量，到向邪神低语换来的扭曲恩惠，甚至还有许多更微妙的交易。那些屈服于这些诱惑的人，会发现自己死后会在地狱的深坑中遭受无尽的折磨，在那里唯一逃脱的希望就是晋升为地狱中的魔鬼。从士兵、学者到检察官、律师、法官和刽子手，每一种恶魔在维持冷酷无情的地狱官僚机器上扮演着特定的角色，这就是地狱。低级的劣魔和小魔鬼服从于更强大和专业的恶魔，比如契约魔和狂怒魔，做着卑下的工作，而最强大的深狱炼魔指挥着整个地狱军团。</p>",
+            "data":{},
+            "items": {
+                "equipment-+1 Flaming Striking Hellforged Glaive":{
+                    "name": "+1强击炽焰地狱锻造大砍刀 Hellforged Glaive",
+                    "description": "<p>这件长兵由7英尺长杆和顶端的单刃组成。它在一定距离外进行致命的切割时，非常有效。</p>"
+                },
+                "strike-Flaming Hellforged Glaive": {
+                    "name": "炽焰地狱锻造大砍刀 Flaming Hellforged Glaive"
+                },
+                "strike-Beard": {
+                    "name": "胡须 Beard"
+                },
+                "Avernal Fever": {
+                    "name": "地狱热疫 Avernal Fever",
+                    "description": "<p><strong>豁免</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>阶段 1</strong> 携带疾病但是不受影响（1 日）</p>\n<p><strong>阶段 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1 天)</p>\n<p><strong>阶段 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1 天)</p>"
+                },
+                "Infernal Wound": {
+                    "name": "地狱创伤 Infernal Wound",
+                    "description": "<p>胡须魔的大砍刀打击也会造成@Localize[PF2E.PersistentDamage.Bleed1d6.success]，并且能抵抗对流血伤害的治疗尝试。</p>\n<p>终止流血伤害的纯骰检定@Check[type:flat|dc:20]。只有当流血生物得到盟友成功进行协助之后该DC才会减少到@Check[type:flat|dc:15]。对有地狱创伤生物@UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{进行急救 Administer First Aid}的DC增加5。</p>\n<p>施法者或物品试图对受到地狱创伤的生物使用治疗魔法时，必须通过DC 21的反制检定，否则法术无法生效。</p>"
+                },
+                "Reposition": {
+                    "name": "移位 Reposition",
+                    "description": "<p><strong>触发</strong> 魔鬼的大砍刀打击命中目标</p>\n<hr />\n<p><strong>效果</strong> 魔鬼将目标朝任意方向移动5尺。目的地方格必须在魔鬼大砍刀的触及范围内。</p>\n<p>此移动不会触发反应动作。</p>"
+                },
+                "Wriggling Beard": {
+                    "name": "蠕动胡须 Wriggling Beard",
+                    "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 胡须魔进行一次胡须打击。此打击不受多重攻击减值，并且也不计入多重攻击减值。</p>"
+                }
+            }
+        },
+        "Murmur": {
+            "name": "喃喃 Murmur",
+            "publicNotes": "<p>美杜莎是一种类人怪物，她们外貌和人类差不多，只不过头上长出的不是头发而是一条条蛇。美杜莎最为人所知的就是她们的石化凝视，只需将目光逗留片刻，就能永远地将凡人变为石头。美杜莎相当精明且善于操控敌手，她们觊觎并收集着秘密，利用威胁和诡计来唤起弱者的恐惧。美杜莎可能会寻找强大的魔法物品，使用预言魔法来发现秘密的知识并解封禁忌的力量，或是潜入一个社群去欺骗有影响力的政客。美杜莎能够潜入强大组织的能力使得她们自然而然地就能成为犯罪组织和盗贼工会的头目。她们对于魔法现象的兴趣使得其中的一些成为了像是先知这样的职业，帮助冒险者们寻找他们想要的东西——顺带收取相应的代价。当然，如果智慧和欺骗还不足以达成目的，美杜莎总是可以简单地通过仅仅一瞥就把对手变成华丽的石像。</p>\n<p>美杜莎异乎寻常的敏捷，同时又出乎意料的顽强，即使在困境中也鲜有退缩。许多冒险家都认为自己已经做好了对抗美杜莎凝视的准备，然而却依旧栽在了美杜莎的手里，因为他们忽略了这些生物通常还是致命的弓箭手，能够在远距离利用涂毒的箭矢射穿她们的敌人。不过，如果在无路可退的情况下，美杜莎还是可能会通过交易来赎命，而通常这些恶徒身上所携带的秘密也足矣值得饶这些怪物一命。</p>",
+            "data":{},
+            "items": {
+                "strike-Snake Fangs": {
+                    "name": "蛇牙 Snake Fangs"
+                },
+                "Biting Snakes": {
+                    "name": "噬咬之蛇 Biting Snakes",
+                    "description": "<p><strong>触发</strong> 一个生物临接于美杜莎结束其回合。</p>\n<hr />\n<p><strong>效果</strong> 美杜莎对该生物发动一次蛇牙打击。</p>"
+                },
+                "Petrifying Gaze": {
+                    "name": "石化凝视 Petrifying Gaze",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当一个生物在灵光范围内结束其回合时，他必须尝试一次@Check[type:fortitude|dc:25]检定。如果该生物失败，他将在1分钟内@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。美杜莎可以用一个具有专注特征的单动作来关闭或激活此灵光。</p>"
+                },
+                "Serpent Venom": {
+                    "name": "蛇毒 Serpent Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
+                }
+            }
+        },
+        "Nyzuros": {
+            "name": "尼祖罗斯 Nyzuros",
+            "publicNotes": "<p>猎人靠搜寻猎物来维持卓尔社群的生活和运转。</p>\n<hr />\n<p>因为卓尔的主要定居点流行恶魔崇拜，所以他们的邪恶名声广为人知。但是，就像任何族裔一样，卓尔可以是任何阵营，尤其是当他们不再处于恶魔领主的邪恶影响力之下时。</p>",
+            "data":{},
+            "items": {
+                "equipment-Nyzuros's Keys": {
+                    "name": "尼祖罗斯的钥匙 Nyzuros's Keys"
+                },
+                "Deft Evasion":{
+                    "name": "灵巧反射 Deft Evasion",
+                    "description": "<p>卓尔猎手在反射豁免中掷出成功时得到大成功的结果。</p>"
+                },
+                "Hunter's Wound":{
+                    "name": "猎手之伤 Hunter's Wound",
+                    "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>先决条件</strong> 猎手持握一把装填0的远程武器；</p>\n<hr />\n<p><strong>效果</strong> 猎手对它的猎物进行两次远程打击。如果都命中且造成伤害，目标受到额外@Localize[PF2E.PersistentDamage.Bleed1d8.success]。</p>"
+                },
+                "Skirmish Strike":{
+                    "name": "快速战斗 Skirmish Strike",
+                    "description": "<p>猎手能先快步然后进行一次打击，也可以先打击然后进行一次快步。</p>"
+                }
+            }
+        },
+        "Observation Deck Seugathi Researcher": {
+            "name": "下层看台双尾虫怪研究者 Observation Deck Seugathi Researcher",
+            "publicNotes": "<p>夺心巨虫诞下的仆从中最常见的是双尾虫怪仆从。它们的主人会为它们配备用来执行任务的工具（通常为魔杖或武器），除了那些对于它们深深烙印在脑海里的任务目标有帮助的东西，它们很少会关注其他物质实体。</p>\n<hr />\n<p>扭曲恶毒的异形生物@UUID[Compendium.pf2e.pathfinder-bestiary-2.wxBQsGLdti2xcGVT]{夺心巨虫 Neothelids}通过魔法仪式让自己孕育出了这种蠕虫般的仆从，它们叫做双尾虫怪。这些生物拥有强大的精神驱动力，完成那些夺心巨虫深谋远虑的任务。这些命令往往多样且怪异，对于类人生物来说是残酷的。</p>",
+            "data":{},
+            "items": {
+                "equipment-Research Book": {
+                    "name": "研究书籍 Research Book"
+                },
+                "equipment-Quill": {
+                    "name": "羽毛笔 Quill"
+                },
+                "equipment-Seugathi's Key": {
+                    "name": "双尾虫怪的钥匙 Seugathi's Key"
+                },
+                "Command Confusion":{
+                    "name": "命令困惑 Command Confusion",
+                    "description": "<p><strong>触发</strong> 一个生物对迷心灵光的豁免失败；</p>\n<hr />\n<p><strong>效果</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}之后，该轮中的攻击目标将由双尾虫怪指定，而非由GM随机决定。</p>\n<p>如果指定的目标是其盟友，则该生物立即进行一次@Check[type:will|dc:21]豁免；如果成功，该生物像正常困惑一样随机选择目标，如果大成功，该生物不再困惑。</p>"
+                },
+                "Mindfog Aura":{
+                    "name": "迷心灵光 Mindfog Aura",
+                    "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在灵光范围内开始回合的生物必须通过@Check[type:will|dc:21]，否则陷入@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}惑1轮；如果成功，该生物对此临时免疫1分钟。双尾虫怪能以一个带有专注特征的单动作启动或压制此灵光。</p>"
+                },
+                "Envenom Weapon":{
+                    "name": "武器涂毒 Envenom Weapon",
+                    "description": "<p>双尾虫怪可以将其毒液施加到持握的武器上。</p>"
+                },
+                "Magic Item Mastery":{
+                    "name": "精通魔法物品 Magic Item Mastery",
+                    "description": "<p>双尾虫怪可以从魔法物品中施法，即便该法术不在其法术列表里。所有这些法术都视为异能法术，并且使用双尾虫怪的内在法术DC和法术攻击调整值。</p>"
+                },
+                "Seugathi Venom":{
+                    "name": "双尾虫怪毒 Seugathi Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1轮)</p>"
+                }
+            }
+        },
+        "Poisoning Room Specter": {
+            "name": "毒药试炼幽魂 Poisoning Room Specter",
+            "publicNotes": "<p>当一个邪恶的凡物死去时，它有时会以幽魂的形态出没于它的葬身之地，这形态是这个恶人充满恨意的残余，总是在寻求屠戮他人——尤其是类人生物——企图将自己的痛苦尽分摊到可能多的灵魂上。尽管一个幽魂仍保有它曾经人格的怪异拟象，但却附上了一种堕落的使命感，令它变得不可理喻。</p>\n<p>一个被剥夺了伤害活着的类人生物机会的幽魂会变得越来越痛苦并失去理性，近似一个永远饥饿且无法靠死亡从痛苦中解脱之人的心情。</p>",
+            "data":{},
+            "items": {
+                "strike-Vile Touch":{
+                    "name": "邪恶之触 Vile Touch"
+                },
+                "strike-Vile Blowgun": {
+                    "name": "邪恶吹箭 Vile Blowgun"
+                },
+                "Telepathy (with spectral thralls only)": {
+                    "name": "心灵感应 Telepathy (只能与幽魂之奴沟通)"
+                },
+                "Frightful Presence":{
+                    "name": "气势凶猛 Frightful Presence",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:22]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "Pain Starvation":{
+                    "name": "饥焰中烧 Pain Starvation",
+                    "description": "<p>一位超过一个月没有对活着的类人生物造成任何负能量伤害的幽魂会变得绝望而近乎野蛮。它的阵营从守序邪恶变为混乱邪恶，失去对任何它可能拥有的腐化奴仆的控制，并获得@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态。迅捷状态获得的额外动作只能用邪恶之触打击对抗类人目标。只要在任何回合内它对一个活着的类人生物造成了负能量伤害，在此回合结束时它就变回守序邪恶并不再有迅捷状态，但所有它因饥饿而失去控制的奴仆仍是自由的。</p>"
+                },
+                "Sunlight Powerlessness":{
+                    "name": "阳光失能 Sunlight Powerlessness",
+                    "description": "<p>幽魂被阳光照射时获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，只要它还在阳光下，此状态就会持续。</p>"
+                },
+                "Spectral Corruption":{
+                    "name": "幽魂腐化 Spectral Corruption",
+                    "description": "<p>幽魂进行一次邪恶之触打击。如果它对一个生物造成伤害，幽魂获得[[/r 5 #Temporary Hit Points]]{5临时生命值}，且被选做目标的生物必须通过@Check[type:will|dc:24]豁免来避免被腐化。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响并临时免疫此能力1分钟。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1小时。</p>\n<p><strong>失败</strong> 该生物屈服于腐化，暂时成为一个幽魂之奴。该生物被幽魂@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{控制 Controlled}，服从幽魂的心灵感应或口头命令，但幽魂之奴不会服从明显会导致自毁的命令。这类奴役持续到奴仆的下一个回合结束，此时他将不再被控制，并获得持续1小时的呆滞2。</p>\n<p><strong>大失败</strong> 如同失败，但持续时间无限。奴仆可在每个他的回合结束时进行一个新的意志豁免；若成功则不再被控制，并获得持续1小时的呆滞2。</p>"
+                }
+            }
+        },
+        "Summoning Chamber Erinys": {
+            "name": "召唤间狂怒魔 Summoning Chamber Erinys",
+            "publicNotes": "<p>狂怒魔对生物的罪行进行准确的报复和血腥的审判，在允许他们逃脱死亡之前，以讽刺的方式折磨和惩罚受害者。正如狂怒魔以堕天使的形象示人一般，第一个狂怒魔正是如此诞生，而如今狂怒魔的诞生方式则多种多样，有些由次级魔鬼晋升而来，有些则是由迫害者和折磨者的灵魂变成的劣魔们塑形而来。狂怒魔的起源和艾希斯（Eiseth）密切相关，艾希斯本身是一个堕落天使，如今是地狱最强大的半神之一。第一只狂怒魔被认为是艾希斯的女儿，但是在那之后的狂怒魔不再局限于单一性别。</p>\n<hr />\n<p>作为散播腐败和征服的大师，魔鬼们试图诱惑凡人生命加入它们对亵渎事物的追求中来，并将暴政传播到各个世界。它们向人类提出各种条件，从签署一份地狱契约而获取的强大力量，到向邪神低语换来的扭曲恩惠，甚至还有许多更微妙的交易。那些屈服于这些诱惑的人，会发现自己死后会在地狱的深坑中遭受无尽的折磨，在那里唯一逃脱的希望就是晋升为地狱中的魔鬼。从士兵、学者到检察官、律师、法官和刽子手，每一种恶魔在维持冷酷无情的地狱官僚机器上扮演着特定的角色，这就是地狱。低级的劣魔和小魔鬼服从于更强大和专业的恶魔，比如契约魔和狂怒魔，做着卑下的工作，而最强大的深狱炼魔指挥着整个地狱军团。</p>",
+            "data":{},
+            "items": {
+                "equipment-Fragment of Urevian's Pendant": {
+                    "name": "乌瑞维安吊坠碎片 Fragment of Urevian's Pendant"
+                },
+                "strike-Flaming Longsword": {
+                    "name": "炽焰长剑 Flaming Longsword"
+                },
+                "strike-Flaming Composite Longbow": {
+                    "name": "炽焰复合长弓 Flaming Composite Longbow"
+                },
+                "Flames of Fury":{
+                    "name": "火焰之怒 Flames of Fury",
+                    "description": "<p>当狂怒魔持握任何武器时，该武器获得<em>@UUID[Compendium.pf2e.equipment-srd.XszNvxnymWYRaoTp]{炽焰 Flaming}</em>符文效果。</p>"
+                },
+                "Furious Fusillade":{
+                    "name": "狂怒扫射 Furious Fusillade",
+                    "description": "<p>狂怒魔在飞行中盘旋，并向@Template[type:cone|distance:30]范围内的任意生物各射出一箭。每次攻击分别进行攻击检定。这在计算狂怒魔的多重攻击减值时算作一次攻击。</p>"
+                },
+                "Rope Snare":{
+                    "name": "绳套 Rope Snare",
+                    "description": "<p>狂怒魔手中有一卷用它们头发编织成的活化绳索（使用@UUID[Compendium.pf2e.equipment-srd.fyYnQf1NAx9fWFaS]{绳索 Rope}的数据）。</p>\n<p>当生物被狂怒魔的绳索击中时，一段绳索会分离并缠绕在生物身上，其速度受到-10环境减值。如果目标为中型或更小体型的生物，则分离的绳索有10尺长。如果目标的体型每比中型大一级，则分离的绳索长度翻倍。</p>\n<p>当一个生物@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}成功时（DC 26），分离的这段绳索会劣化成无用的黑泥。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.o0zqsH5kYopRanav]{效果: 绳套}</p>"
+                }
+            }
+        },
+        "Torture Chamber Barbazu": {
+            "name": "拷问室胡须魔 Torture Chamber Barbazu",
+            "publicNotes": "<p>巴霸魔，通常也被称为胡须魔或步兵魔，是一种嗜杀成性的魔鬼，它们充当炼狱军队的步兵来满足自己的毁灭欲望，通常会带领成群的下级魔鬼例如小魔鬼或劣魔加入战斗。胡须魔会挥舞着带锯刃的大砍刀，造成锯齿状的伤口能抵抗治疗法术，造成大量失血。当地人靠的太近时，胡须魔会用它们蠕动的尖刺胡须发起攻击，造成一种叫做“地狱热疫”的可怕疾病，它们也会津津有味地看着猎物的力量从内部被慢慢地吞噬。</p>\n<p>胡须魔总是野蛮地沉迷于来自地狱各层的地狱领主们的邪恶念头，热衷于为它们散播谋杀、悲惨和痛苦。</p>\n<hr />\n<p>作为散播腐败和征服的大师，魔鬼们试图诱惑凡人生命加入它们对亵渎事物的追求中来，并将暴政传播到各个世界。它们向人类提出各种条件，从签署一份地狱契约而获取的强大力量，到向邪神低语换来的扭曲恩惠，甚至还有许多更微妙的交易。那些屈服于这些诱惑的人，会发现自己死后会在地狱的深坑中遭受无尽的折磨，在那里唯一逃脱的希望就是晋升为地狱中的魔鬼。从士兵、学者到检察官、律师、法官和刽子手，每一种恶魔在维持冷酷无情的地狱官僚机器上扮演着特定的角色，这就是地狱。低级的劣魔和小魔鬼服从于更强大和专业的恶魔，比如契约魔和狂怒魔，做着卑下的工作，而最强大的深狱炼魔指挥着整个地狱军团。</p>",
+            "data":{},
+            "items": {
+                "equipment-Hellforged Glaiv": {
+                    "name": "地狱铸造大砍刀 Hellforged Glaive"
+                },
+                "strike-Hellforged Glaiv": {
+                    "name": "地狱铸造大砍刀 Hellforged Glaive"
+                },
+                "strike-Beard": {
+                    "name": "胡须 Beard"
+                },
+                "Avernal Fever":{
+                    "name": "地狱热疫 Avernal Fever",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23]</p>\n<hr />\n<p><strong>阶段1</strong> 携带病原但没有不良效果 (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1天)</p>"
+                },
+                "Infernal Wound":{
+                    "name": "地狱创伤 Infernal Wound",
+                    "description": "<p>胡须魔的大砍刀打击也会造成@Localize[PF2E.PersistentDamage.Bleed1d6.success] ，并且能抵抗对流血伤害的治疗尝试。</p>\n<p>终止流血伤害的纯骰检定@Check[type:flat|dc:20]。只有当流血生物得到盟友成功进行协助之后该DC才会减少到@Check[type:flat|dc:15]。对有地狱创伤生物@UUID[Compendium.pf2e.actionspf2e.MHLuKy4nQO2Z4Am1]{进行急救 Administer First Aid}的DC增加5。</p>\n<p>施法者或物品试图对受到地狱创伤的生物使用治疗魔法时，必须通过DC 21的反制检定，否则法术无法生效。</p>"
+                },
+                "Reposition":{
+                    "name": "移位 Reposition",
+                    "description": "<p><strong>触发</strong> 魔鬼的大砍刀打击命中目标。</p>\n<hr />\n<p><strong>效果</strong> 魔鬼将目标朝任意方向移动5尺。目的地方格必须在魔鬼大砍刀的触及范围内。</p>\n<p>此移动不会触发反应动作。</p>"
+                },
+                "Wriggling Beard":{
+                    "name": "蠕动胡须 Wriggling Beard",
+                    "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 胡须魔进行一次胡须打击。此打击不受多重攻击减值，并且也不计入多重攻击减值。</p>"
+                }
+            }
+        },
+        "Urthagul": {
+            "name": "乌塔古尔 Urthagul",
+            "publicNotes": "<p>古革巨人最为骇人的特征莫过于它桶状的头部，这脑袋从中垂直裂开，露出一排排锋利的黄色锐齿和张开的咽喉。它小而敏锐的眼睛长在头颚的两侧。骨脊保护它的眼睛不受猎物疯狂拍打的伤害，因为比起蘑菇和霉菌，它更喜欢新鲜扭动的活肉。它的手臂从手肘部分分裂成一对前臂，从而形成了四个爪子，能够用其手臂牢牢抓住猎物。这些可怖生物的全身长满了浓密的黑色毛皮，常常满布血污。</p>\n<p>尽管古革巨人看起来像是野兽，但它们其实有着机敏邪恶的智慧。古革巨人居住在地底的深处，但它们有时会在黑夜中独自或是成群结队地来到地面狩猎。由于其贪婪的胃口，大多数古革巨人都会直接吃掉被捕获的猎物。但也有一些会绑架受害者，将其拖到地底，只留下挥之不去的恶臭和奇怪的爪痕。受害者会被带到有着奇怪符文的腐臭巢穴，而后献祭给古革巨人那司掌鲜血、黑暗和梦魇的邪恶神祇。有恐怖的谣言宣称，在深邃的地底，有着由巨大石块所建造的无光的古革巨人城市，在那里，强大的古革巨人领袖向一群嚎叫着的古革巨人宣扬它们邪恶的教义。</p>\n<p>古革巨人和食尸鬼之间有一种奇怪的联系，似乎可以追溯到它们共同起源的那个遥远的地下世界。虽然古革巨人要比食尸鬼高大的多，它们却生活在对食尸鬼的恐惧之中；然而这种奇特的恐惧却并不适用于妖鬼，古革巨人照样把它们当做盘中美餐。</p>\n<p>古革巨人身高16英尺，重达2000磅，它们用怪异而又优雅的步态掩饰了其巨大的体型。轻盈的步伐和能够从狭小缝隙中挤过的能力使得古革巨人成为了怪异失踪或血腥屠杀的传说中常见的怪物。</p>\n<p>一些尤为嗜血的古革巨人从它们怪异可怖的赞助者那里获得了可怖的力量作为奖赏。这些被称为首脑的怪物强度从不低于12级，并且获得了一些异能内在法术。虽然每个首脑的详细法术组合各不相同，但通常情况下这些法术都可以提供隐形能力、操纵和改变岩石的能力、或是直接在活生生的肉体上引发可怕的毁灭性能量。</p>",
+            "data":{},
+            "items": {
+                "Eerie Flexibility": {
+                    "name": "怪异柔韧 Eerie Flexibility",
+                    "description": "<p> 尽管是大体型，古革巨人的诸多关节允许它如同一个中型生物一般通过狭窄的空间。当@UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{挤入空间 Squeezing}时，它能以全速移动。</p>"
+                },
+                "Furious Claws": {
+                    "name": "狂怒利爪 Furious Claws",
+                    "description": "<p>古革巨人进行四次爪抓打击，每次针对不同的目标。这些攻击全部计入古革巨人的多重攻击减值，但是仅当古革巨人完成所有攻击后才会累计减值。</p>"
+                },
+                "Rend": {
+                    "name": "撕裂 Rend",
+                    "description": "<p>爪抓</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Rend]</p>"
+                }
+            }
+        },
+        "Warped Brew Morlock": {
+            "name": "瞎酿酒馆摩洛克 Warped Brew Morlock",
+            "publicNotes": "<p>摩洛克起源于被长年累月隔绝在地下的人类，他们住在幽暗地域上层错综复杂的坑道里。他们纤细的骨架往往后让人轻视它们四肢的力量和反应速度，他们的手臂足够长，能以四肢着的怪异姿态行走，以达到快速移动或隐秘移动的目的。摩洛克们不再记得祖先在地面上的生活，尽管许多摩洛克仍然住在他们古老家园的破碎废墟中。一些摩洛克人把这些过去时代的人类雕像作为神来崇拜，但另一些现在崇拜拉玛什图，洛瓦古格，或其他暴力的神祇。</p>\n<p>摩洛克幼崽贪得无厌，哪怕是仅有的一点食物也会吵着要，如果没有其他食物，它们甚至会吞食自己的兄弟姐妹。大多数摩洛克支持这种做法，以确保他们的族裔作为一个整体变得更强大。</p>\n<p>典型的摩洛克站立时身高约有5尺，重约150磅。</p>",
+            "data":{},
+            "items": {
+                "strike-Wooden Chair": {
+                    "name": "木椅子 Wooden Chair"
+                },
+                "strike-Pewter Mug": {
+                    "name": "锡制酒杯 Pewter Mug"
+                },
+                "Instinctual Tinker":{
+                    "name": "修修补补 Instinctual Tinker",
+                    "description": "<p>摩洛克尝试修理一件相邻的构装体或机械陷阱。它尝试1次@Check[type:crafting]检定，对抗该构装体或陷阱的强韧DC。如果目标的等级为摩洛克的2倍以上，摩洛克就无法得到比失败更好的结果。</p>\n<hr />\n<p><strong>大成功</strong> 目标恢复[[/r (4d6)[healing]]]{4d6生命值}并且在1分钟之内，攻击检定有+1环境加值。</p>\n<p><strong>成功</strong> 目标恢复[[/r (2d6)[healing]]]{2d6生命值}。</p>\n<p><strong>大失败</strong> 摩洛克弄伤它自己，受到[[/r (2d6}]]{2d6伤害}（一般是钝击、穿刺或挥砍，但是GM可以自由决定其他伤害类型）。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.TEzLEXBZzNCp6flg]{效果: 修修补补(大成功)}</p>"
+                },
+                "Leap Attack":{
+                    "name": "跳跃攻击 Leap Attack",
+                    "description": "<p>摩洛克以最多2倍速度行走，在此期间它尝试一次@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。在它的这次行动中的任何一点，摩洛克都能对其触及范围内的敌人进行1次近战打击。</p>\n<p>摩洛克在1轮内无法再次进行跳跃攻击。</p>"
+                },
+                "Sneak Attack":{
+                    "name": "偷袭 Sneak Attack",
+                    "description": "<p>摩洛克的打击对措手不及的生物造成额外1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                },
+                "Swarming Stance":{
+                    "name": "集群姿态 Swarming Stance",
+                    "description": "<p>摩洛克能将占据的空间分享给其他摩洛克，但是同一空间内最多不能有超过两只摩洛克。当摩洛克共享空间时，他们在攻击骰上获得+1环境加值。</p>"
+                }
+            }
         }
     }
 }
