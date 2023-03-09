@@ -133,6 +133,84 @@
         "Stable Rider": {
             "name": "稳定骑手 Stable Rider",
             "description": "<p>你能瞬间调整你的重心，让你能完成大胆特技。当你驾驶你的改装机车时，你在尝试带有[鲁莽]特征动作时，驾驶检定有+2环境加值。</p>"
+        },
+        "Chariot of the Gods": {
+            "name": "诸神战车 Chariot of the Gods",
+            "description": "<p>你的载具展现了由你神祇所授予的强大力量。载具获得等同于地面速度的飞行速度。它的HP增加40并且BT增加20。此外，你获得@UUID[Compendium.impossible-lands.impossible-lands-actions.sR6Ymz3GusR2jni2]{呼唤载具 Call Vehicle}动作。</p>",
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                }
+            ]
+        },
+        "Corrupt Collision": {
+            "name": "腐化冲撞 Corrupt Collision",
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                },
+                {
+                    "value": "虔诚法术 - 腐化之触"
+                }
+            ],
+            "description": "<p>你的载具充满了邪恶力量。当尝试@UUID[Compendium.pf2e.actionspf2e.lID4rJHAVZB6tavf]{碾压 Run Over}动作时，你可以在载具上释放 <em>@UUID[Compendium.pf2e.spells-srd.jFmWSIpJGGebim6y]{腐化之触 Touch of Corruption}</em>。你的法术与你试图和影响你碾压的敌人，但只对碰撞的第一个敌人生效。碰撞的伤害和你<em>@UUID[Compendium.pf2e.spells-srd.jFmWSIpJGGebim6y]{腐化之触 Touch of Corruption}</em>的伤害合并，敌人只需进行一次单独的@Check[type:reflex|basic:true|dc:resolve(@actor.attributes.classDC.value)]豁免，对抗你的职业DC。.</p>"
+        },
+        "Divine Stability": {
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                }
+            ],
+            "name": "神圣稳定 Divine Stability",
+            "description": "<p>在你的控制下，你的载具更加稳定。如果你的载具在上一轮中移动过，你不会因为搭乘载具而在攻击上受到减值。如果你的载具不受控制，或你的载具在上一轮中进行过[鲁莽]动作，那么你的攻击减值为-2。</p>"
+        },
+        "Efficient Motion": {
+            "name": "高效机动 Efficient Motion",
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                }
+            ],
+            "description": "<p><strong>触发</strong> 你的回合开始</p>\n<hr />\n<p>你和载具的联系加深了 ，它可以轻松地载你去战场的每个角落。你@UUID[Compendium.pf2e.actionspf2e.bG91dbtbgOnw7Ofx]{搭乘 Board}或@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}你的载具盟友。</p>"
+        },
+        "Forceful Conveyance": {
+            "name": "强力载具 Forceful Conveyance",
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                }
+            ],
+            "description": "<p>当你亲手指挥你的载具时，它就会变成一个预示着毁灭的引擎。当你搭乘它时，它的外观会发生改变，因为它的轮胎、发动机或顶盖会燃烧着神圣的能量。当你驾驶你的载具盟友时，如果你是善良信条，你可以选择正能量，如果你是邪恶信条，你可以选择负能量。只要你搭乘载具，你的载具就会获得相反伤害类型的10点抗力，任何触碰你载具的生物都会受到所选伤害类型的1d6点伤害；这包括生物用非武装攻击攻击载具、生物和载具相邻且用近战武器打击载具、以及你的载具和其他载具发生碰撞伤害的情况。在16级时，伤害增加到2d6，在20级时，伤害增加到3d6。</p>\n<p>@UUID[Compendium.impossible-lands.impossible-lands-effects.3piaFOaX3MPRC6jt]{效果: 强力载具}</p>"
+        },
+        "Holy Repair": {
+            "name": "神圣修复 Holy Repair",
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 (载具)"
+                },
+                {
+                    "value": "虔诚法术（圣疗）"
+                }
+            ],
+            "description": "<p>你对载具的虔诚意味着你可以召唤你的神祇来修复它的损伤。即便你的载具不是生物，你也可以对它施展<em>@UUID[Compendium.pf2e.spells-srd.zNN9212H2FGfM7VS]{圣疗 Lay on Hands}</em>。当你如此做时，你可以修复10点生命值，法术每升一阶额外增加10点生命值。</p>\n<p>[[/r 10*ceil(@actor.level/2)]]{圣疗治疗量}</p>"
+        },
+        "Powerful Momentum": {
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                }
+            ],
+            "name": "猛力冲击 Powerful Momentum",
+            "description": "<p>你使用你载具的惯性来增强你的攻击。当你驾乘载具时，你所持握的近战武器获得[骑战d6]，在判断是否满足骑战特征的需求时，你驾驶载具就视同为骑乘。如果武器或非武装攻击已经具有骑战特征，则将骑战的伤害骰增加一级，取代原本的d6。</p>\n<p><em>注意：骑战增加的骰面需要手动调整。或者，你可以通过修改规则元素达成这一效果。</em></p>"
+        },
+        "Spiritual Shielding": {
+            "prerequisites": [
+                {
+                    "value": "神圣盟友 - 载具"
+                }
+            ],
+            "name": "圣灵护盾 Spiritual Shielding",
+            "description": "<p><strong>触发</strong> 一个生物把你的载具作为攻击目标，并且你可以看到攻击者</p>\n<p><strong>需求</strong> 你正骑乘你的载具</p>\n<hr />\n<p>你呼唤神祇保护你的圣灵盟友，对触发的攻击在AC上有+1环境加值。如果攻击依然命中，你的载具获得针对此次攻击的全伤害抗力，数值等于2+你的等级。</p>"
         }
     }
 }
