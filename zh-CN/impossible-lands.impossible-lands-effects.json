@@ -8,6 +8,62 @@
         "Effect: Forceful Conveyance": {
             "name": "效果: 强力载具 Forceful Conveyance",
             "description": "<p>效果来自@UUID[Compendium.impossible-lands.impossible-lands-feats.bQN15cIuHnaa34H6]{强力载具 Forceful Conveyance}。</p>"
+        },
+        "Deathlink": {
+            "name": "死亡连接 Deathlink",
+            "description": "<p>如果你的魔宠受到伤害导致HP将要减少至0，在它被摧毁前，以一个带有专注特征的反应动作，可以恢复1d8乘以你等级一半的生命值。</p>"
+        },
+        "Brief Restoration": {
+            "name": "短暂修复 Brief Restoration",
+            "description": "<p>从你的个人财产中选择一项负载为L的物品。当你魔宠的HP减少至0时，它不会被摧毁。相反，它会表现为一种灵体形态，它的“意识”将寄宿在你选择的物品中。它每在物品中停留一个小时，就会获得和你等级相同的生命值。它在回满生命值之前无法离开这个物品。</p>"
+        },
+        "Effect: Color Balance (Green)": {
+            "name": "效果: 色彩平衡 Color Balance (绿)",
+            "description": "<p>效果来自@Compendium[impossible-lands.impossible-lands-spells.YOzAZf5ajUrHtCIO]{色彩平衡 Color Balance}。</p>"
+        },
+        "Effect: Color Balance (Yellow)": {
+            "name": "效果: 色彩平衡 Color Balance (黄)",
+            "description": "<p>效果来自@Compendium[impossible-lands.impossible-lands-spells.YOzAZf5ajUrHtCIO]{色彩平衡 Color Balance}。</p>"
+        },
+        "Effect: Dance Partner (Aura)": {
+            "name": "效果: 舞伴 Dance Partner (灵光)",
+            "description": "<p>效果来自@UUID[Compendium.impossible-lands.impossible-lands-feats.vMqzNJBRfbAt3URv]{Dance Partner}。</p>"
+        },
+        "Effect: Dance Partner (Marker)": {
+            "name": "效果: 舞伴 Dance Partner (标记)",
+            "description": "<p>效果来自@UUID[Compendium.impossible-lands.impossible-lands-feats.vMqzNJBRfbAt3URv]{Dance Partner}。</p>\n<p><em>为指定舞伴添加此效果。</em></p>"
+        },
+        "Effect: Shades of Life (Monarch)": {
+            "name": "效果: 生命之影 Shades of Life (帝王蝶)",
+            "description": "<p>效果来自@UUID[Compendium.impossible-lands.impossible-lands-spells.Y0YtKRguj6sx1oUi]{生命之影 Shades of Life}。</p>\n<p><strong>帝王蝶 Monarch </strong>– 你长出了巨大的绿色飞蛾般的翅膀。你获得等同于你陆地速度的飞行速度，持续1分钟。</p>"
+        },
+        "Effect: Shades of Life (Unicorn)": {
+            "name": "效果: 生命之影 Shades of Life (独角兽)",
+            "description": "<p>效果来自@UUID[Compendium.impossible-lands.impossible-lands-spells.Y0YtKRguj6sx1oUi]{生命之影 Shades of Life}。</p>\n<p><strong>独角兽 Unicorn </strong>– 闪亮的角从你头上伸出来，而你身体的其他部分则长出一层薄薄的、柔软得令人难以置信的白毛。在法术持续时间内，你能使用1个交互动作，治疗你自己或相邻的盟友相当于[[/r (max(floor(@actor.level /2), 1)d6) + @abilities.wis.mod]]{你等级的一半的d6外加你的施法属性调整值的生命值}。在法术持续时间内，目标对[心灵]效果的豁免还有+1状态加值。</p>"
+        },
+        "Explosive Death": {
+            "name": "爆炸死亡 Explosive Death",
+            "description": "<p>当你魔宠的生命值减少至0，它聚集的死灵能量会释放。相邻的生物受到你每2个等级1d4的负能量伤害，@Check[type:reflex|basic:true]豁免，对抗你的法术DC。</p>"
+        },
+        "Explosive Stench": {
+            "name": "爆炸恶臭 Explosive Stench",
+            "description": "<p>你魔宠的身体由可怕的材料组成。当你魔宠的HP减少至0时，它内脏里的腐烂臭气将复盖10尺爆发范围，次序1分钟。进入该区域或在区域内开始回合的生物必须成功通过@Check[type:fortitude]豁免，对抗你的法术DC，否则恶心1。豁免成功的生物临时免疫1分钟。</p>"
+        },
+        "Familiar Hug": {
+            "name": "魔宠依附 Familiar Hug",
+            "description": "<p>每日1次，你可以命令你的魔宠使用它的两个动作来呈现灵体形态，并通过触摸，将其精华和你或你盟友持握的武器结合。武器获得幽冥武器法术效果，这种结合持续1分钟。在结合期间，你的魔宠不能作为瞄准的目标，并且除了花费一个带有专注特征的单动作来结束效果并变回原来的形态之外，它无法执行其他动作。</p>"
+        },
+        "Reverse Rot": {
+            "name": "逆转腐化 Reverse Rot",
+            "description": "<p>每小时一次，你的魔宠能赋予你一次豁免机会，对抗正在影响你或你盟友的疾病，并且该次豁免有+2环境加值。每当它使用此能力时，它会受到等同于你等级的伤害。</p>"
+        },
+        "Screaming Head": {
+            "name": "尖叫头颅 Screaming Head",
+            "description": "<p>每小时1次，你可以命令你的魔宠花费2个动作扯掉自己的头然后将其投掷最远20尺。你的魔宠尝试对头颅10尺范围内的所有敌人挫败士气，调整值为你的等级加上你的施法属性调整值。在你的魔宠花费1个交互动作接上自己的头颅之前，每当你命令它时它只能获得1个动作。</p>"
+        },
+        "Feast": {
+            "name": "盛宴 Feast",
+            "description": "<p>如果你的魔宠靠近一个在过去1小时内死亡的、至少为小型的生物，它可以花一个交互动作吃肉来治疗自己。它将恢复和你等级相同的生命值。</p>"
         }
     }
 }
