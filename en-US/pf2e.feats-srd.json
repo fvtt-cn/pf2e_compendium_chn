@@ -1,5 +1,8 @@
 {
 	"label": "Feats",
+    "mapping": {
+        "prerequisites": "system.prerequisites.value"
+	},
 	"entries": {
 		"A Home In Every Port": {
 			"name": "A Home In Every Port",
@@ -3150,7 +3153,7 @@
 		},
 		"Blessed One Dedication": {
 			"name": "Blessed One Dedication",
-			"description": "<p>You are touched by a deity and gifted with the ability to alleviate the suffering of others.</p>\n<p>You gain the <em>@UUID[Compendium.pf2e.spells-srd.zNN9212H2FGfM7VS]{Lay on Hands}</em><em> </em>devotion spell. It costs 1 Focus Point to cast a focus spell. This feat grants a focus pool of 1 Focus Point that you can recover using the @UUID[Compendium.pf2e.actionspf2e.OSefkMgojBLqmRDh]{Refocus} activity.</p>\n<p>You can Refocus by meditating, whether you reflect on the deity granting the blessing or not, allowing your blessing to refill your focus pool.</p>\n<p>Your devotion spells from the blessed one archetype are divine spells.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.SUDV5hFZ9WocxWqv]{Blessed One} archetype.</p>",
+			"description": "<p>You are touched by a deity and gifted with the ability to alleviate the suffering of others.</p>\n<p>You gain the <em>@UUID[Compendium.pf2e.spells-srd.zNN9212H2FGfM7VS]{Lay on Hands}</em> devotion spell. It costs 1 Focus Point to cast a focus spell. This feat grants a focus pool of 1 Focus Point that you can recover using the @UUID[Compendium.pf2e.actionspf2e.OSefkMgojBLqmRDh]{Refocus} activity.</p>\n<p>You can Refocus by meditating, whether you reflect on the deity granting the blessing or not, allowing your blessing to refill your focus pool.</p>\n<p>Your devotion spells from the blessed one archetype are divine spells.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.SUDV5hFZ9WocxWqv]{Blessed One} archetype.</p>",
 			"prerequisites": []
 		},
 		"Blessed Sacrifice": {
@@ -3621,7 +3624,7 @@
 		},
 		"Brightness Seeker": {
 			"name": "Brightness Seeker",
-			"description": "<p>Once per day, you can spend 10 minutes studying your surroundings in search of omens related to a particular course of action to cast <em>@UUID[Compendium.pf2e.spells-srd.41TZEjhO6D1nWw2X]{Augury}</em> as an innate divine spell. Unless the result of the<em>augury</em>was \"nothing,\" you gain the @UUID[Compendium.pf2e.actionspf2e.mk6rzaAzsBBRGJnh]{Call Upon the Brightness} reaction for the next 30 minutes.</p>",
+			"description": "<p>Once per day, you can spend 10 minutes studying your surroundings in search of omens related to a particular course of action to cast <em>@UUID[Compendium.pf2e.spells-srd.41TZEjhO6D1nWw2X]{Augury}</em> as an innate divine spell. Unless the result of the <em>augury</em> was \"nothing,\" you gain the @UUID[Compendium.pf2e.actionspf2e.mk6rzaAzsBBRGJnh]{Call Upon the Brightness} reaction for the next 30 minutes.</p>",
 			"prerequisites": []
 		},
 		"Brightsoul": {
@@ -3688,7 +3691,7 @@
 		},
 		"Buckler Dance": {
 			"name": "Buckler Dance",
-			"description": "<p><strong>Requirements</strong> You are wielding a @UUID[Compendium.pf2e.equipment-srd.1k3AsSW7lpU0kEpY]{Buckler}.</p>\n<hr />\n<p>You spin your buckler defensively toward every attack. While you are in this stance, you constantly have your buckler raised as if you'd used @UUID[Compendium.pf2e.actionspf2e.xjGwis0uaC2305pm]{Raise a Shield}, as long as you meet that action's requirements.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding a @UUID[Compendium.pf2e.equipment-srd.1k3AsSW7lpU0kEpY]{Buckler}.</p>\n<hr />\n<p>You spin your buckler defensively toward every attack. While you are in this stance, you constantly have your buckler raised as if you'd used @UUID[Compendium.pf2e.actionspf2e.xjGwis0uaC2305pm]{Raise a Shield}, as long as you meet that action's requirements.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.PS17dsXkTdQmOv7w]{Stance: Buckler Dance}</p>",
 			"prerequisites": []
 		},
 		"Buckler Expertise": {
@@ -6257,7 +6260,7 @@
 		},
 		"Debilitating Dichotomy": {
 			"name": "Debilitating Dichotomy",
-			"description": "<p>You can give others a glimpse of the impossible conflicts and unchecked power that courses through your body. You learn the <em>@UUID[Compendium.pf2e.spells-srd.VmqdVWCb8zAUCW8S]{Debilitating Dichotomy}</em><em> </em>revelation spell. Increase the number of Focus Points in your focus pool by 1.</p>",
+			"description": "<p>You can give others a glimpse of the impossible conflicts and unchecked power that courses through your body. You learn the <em>@UUID[Compendium.pf2e.spells-srd.VmqdVWCb8zAUCW8S]{Debilitating Dichotomy}</em> revelation spell. Increase the number of Focus Points in your focus pool by 1.</p>",
 			"prerequisites": []
 		},
 		"Debilitating Shot": {
@@ -6383,7 +6386,7 @@
 		},
 		"Defensive Needles": {
 			"name": "Defensive Needles",
-			"description": "<p>Your body is covered in sharp needles or spines which you can use to defend yourself. Each time you become @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by a creature or an adjacent creature hits you with an unarmed attack, you twist and thrash your body around, dealing 2 piercing damage to that creature. This damage increases to 3 at 9th level, 4 at 13th level, and 5 at 17th level.</p>\n<p>[[/r (ceil(@actor.level/4))[piercing]]]{Levelled damage}</p>",
+			"description": "<p>Your body is covered in sharp needles or spines which you can use to defend yourself. Each time you become @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} by a creature or an adjacent creature hits you with an unarmed attack, you twist and thrash your body around, dealing 2 piercing damage to that creature. This damage increases to 3 at 9th level, 4 at 13th level, and 5 at 17th level.</p>\n<p>[[/r (ceil(@actor.level/4))[piercing]]]{Leveled damage}</p>",
 			"prerequisites": [
 				{
 					"value": "Cactus Leshy or Pine Leshy heritage"
@@ -7026,7 +7029,7 @@
 		},
 		"Disruptive Stance": {
 			"name": "Disruptive Stance",
-			"description": "<p>The slightest distraction can provoke your wrath, and you're prepared to foil enemies' actions.</p>\n<p>As long as you are in this stance, you can use @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Attack of Opportunity} when a creature within your reach uses a concentrate action, in addition to manipulate and move actions.</p>\n<p>Furthermore, you disrupt a triggering concentrate or manipulate action if your Strike hits (not only if it's a critical hit).</p>",
+			"description": "<p>The slightest distraction can provoke your wrath, and you're prepared to foil enemies' actions.</p>\n<p>As long as you are in this stance, you can use @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Attack of Opportunity} when a creature within your reach uses a concentrate action, in addition to manipulate and move actions.</p>\n<p>Furthermore, you disrupt a triggering concentrate or manipulate action if your Strike hits (not only if it's a critical hit).</p>\n<p>@UUID[Compendium.pf2e.feat-effects.qBR3kqGCeKp3T2Be]{Stance: Disruptive Stance}</p>",
 			"prerequisites": []
 		},
 		"Disruptive Stare": {
@@ -7583,7 +7586,7 @@
 		},
 		"Dragon's Breath": {
 			"name": "Dragon's Breath",
-			"description": "<p>You can put more effort into your Kobold Breath to channel greater draconic power, though it takes more out of you. When you use Kobold Breath, you can increase the damage dice to d8s and increase the area to @Template[type:line|distance:60]{60 feet} for a line breath weapon or @Template[type:cone|distance:30]{30 feet} for a cone. If you do, you can't use Kobold Breath again for 1 hour.</p>\n<p>[[/r (ceil(@actor.level/2))d8]]{Levelled damage}</p>",
+			"description": "<p>You can put more effort into your Kobold Breath to channel greater draconic power, though it takes more out of you. When you use Kobold Breath, you can increase the damage dice to d8s and increase the area to @Template[type:line|distance:60]{60 feet} for a line breath weapon or @Template[type:cone|distance:30]{30 feet} for a cone. If you do, you can't use Kobold Breath again for 1 hour.</p>\n<p>[[/r (ceil(@actor.level/2))d8]]{Leveled damage}</p>",
 			"prerequisites": [
 				{
 					"value": "Kobold Breath"
@@ -10244,7 +10247,7 @@
 		},
 		"Fane's Fourberie": {
 			"name": "Fane's Fourberie",
-			"description": "<p>Stella Fane has perfected a technique for using playing cards as weapons that's one part sleight of hand and one part magic.</p>\n<p>When you enter this stance, choose whether to treat playing cards in your possession as daggers or darts; you can wield a playing card in all ways as the chosen weapon until the stance ends. As long as the majority of the deck remains in your possession, any cards that are lost or thrown can be found after 1 minute. Otherwise, the remaining cards are likely lost or destroyed.</p>\n<p>A character who has this feat can enchant a single deck of playing cards as a magic weapon, etching fundamental and property runes directly onto the deck of cards.</p>",
+			"description": "<p>Stella Fane has perfected a technique for using playing cards as weapons that's one part sleight of hand and one part magic.</p>\n<p>When you enter this stance, choose whether to treat playing cards in your possession as daggers or darts; you can wield a playing card in all ways as the chosen weapon until the stance ends. As long as the majority of the deck remains in your possession, any cards that are lost or thrown can be found after 1 minute. Otherwise, the remaining cards are likely lost or destroyed.</p>\n<p>A character who has this feat can enchant a single deck of playing cards as a magic weapon, etching fundamental and property runes directly onto the deck of cards.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.GvqB4M8LrHpzYEvl]{Stance: Fane's Fourberie}</p>",
 			"prerequisites": []
 		},
 		"Fang Sharpener": {
@@ -10728,7 +10731,7 @@
 		},
 		"Final Form": {
 			"name": "Final Form",
-			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You embrace your monstrous blood and make it your own, screaming out to the heavens and hells alike in rage, pain, and defiance. Reality buckles and twists under your sudden power—each tiefling has a unique transformation, but it might include sulfurous flames, choruses of shrieks, or twisting, serpentine lightning. Every creature within 10 feet of you is @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round unless they succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]{Fortitude save} using your class DC or spell DC, whichever is higher. Your final form has the effects of <em>@UUID[Compendium.pf2e.spells-srd.hiVL8qsnTJtpouw0]{Divine Vessel}</em> for a deity that shares an alignment with your fiendish lineage. Your final form resembles a creature from your fiendish lineage, and you remain in that form for 1 minute. While in your final form, you can cast <em>@UUID[Compendium.pf2e.spells-srd.sRfSBHWHdbIa0aGc]{Chilling Darkness}</em>, <em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{Fireball}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{Lightning Bolt}</em> as 6th-level divine innate spells, once each per use of this feat.</p>\n<p>When you emerge from your final form, you become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 3}. In addition, if you have this feat, you gain weakness 10 to good even when not in your final form, and you take good damage even if you aren't evil.</p>\n<hr />\n<p><strong>Special</strong> At the GM's discretion, the specific elements of this feat can be adjusted to better fit the tiefling's lineage—for example, a GM might decide that a particular beastbrood tiefling could cast a 6th-level <em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em><em> </em>instead of fireball.</p>",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You embrace your monstrous blood and make it your own, screaming out to the heavens and hells alike in rage, pain, and defiance. Reality buckles and twists under your sudden power—each tiefling has a unique transformation, but it might include sulfurous flames, choruses of shrieks, or twisting, serpentine lightning. Every creature within 10 feet of you is @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} and @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round unless they succeed at a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]{Fortitude save} using your class DC or spell DC, whichever is higher. Your final form has the effects of <em>@UUID[Compendium.pf2e.spells-srd.hiVL8qsnTJtpouw0]{Divine Vessel}</em> for a deity that shares an alignment with your fiendish lineage. Your final form resembles a creature from your fiendish lineage, and you remain in that form for 1 minute. While in your final form, you can cast <em>@UUID[Compendium.pf2e.spells-srd.sRfSBHWHdbIa0aGc]{Chilling Darkness}</em>, <em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{Fireball}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.9AAkVUCwF6WVNNY2]{Lightning Bolt}</em> as 6th-level divine innate spells, once each per use of this feat.</p>\n<p>When you emerge from your final form, you become @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 3}. In addition, if you have this feat, you gain weakness 10 to good even when not in your final form, and you take good damage even if you aren't evil.</p>\n<hr />\n<p><strong>Special</strong> At the GM's discretion, the specific elements of this feat can be adjusted to better fit the tiefling's lineage—for example, a GM might decide that a particular beastbrood tiefling could cast a 6th-level <em>@UUID[Compendium.pf2e.spells-srd.tlcrVRqW1MSKJ5IC]{Phantasmal Killer}</em> instead of <em>fireball</em>.</p>",
 			"prerequisites": []
 		},
 		"Final Rest": {
@@ -10845,7 +10848,7 @@
 		},
 		"First Frost": {
 			"name": "First Frost",
-			"description": "<p>The <em>gelid shard </em>within your heart may sap your ability to feel and experience emotion, but it also lets you create and manipulate cold. You learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with the <em>frost's touch</em> and<em> </em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost} cantrips. You're trained in spell attack rolls and spell DCs for arcane spells. Your key spellcasting ability is Charisma.</p>",
+			"description": "<p>The <em>gelid shard </em>within your heart may sap your ability to feel and experience emotion, but it also lets you create and manipulate cold. You learn to cast spontaneous spells and gain the Cast a Spell activity. You gain a spell repertoire with the <em>@UUID[Compendium.pf2e.spells-srd.WFSazGLCUuPsBv1p]{Frost's Touch}</em> and <em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost}</em> cantrips. You're trained in spell attack rolls and spell DCs for arcane spells. Your key spellcasting ability is Charisma.</p>",
 			"prerequisites": []
 		},
 		"First Revelation": {
@@ -12372,7 +12375,7 @@
 		},
 		"Graceful Poise": {
 			"name": "Graceful Poise",
-			"description": "<p>With the right positioning, your off-hand weapon can strike like a scorpion's stinger.</p>\n<p>While you are in this stance, if you make your second Strike from @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Double Slice} with an agile weapon, Double Slice counts as one attack when calculating your multiple attack penalty.</p>",
+			"description": "<p>With the right positioning, your off-hand weapon can strike like a scorpion's stinger.</p>\n<p>While you are in this stance, if you make your second Strike from @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Double Slice} with an agile weapon, Double Slice counts as one attack when calculating your multiple attack penalty.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.mark4VEQoynfYNBF]{Stance: Graceful Poise}</p>",
 			"prerequisites": [
 				{
 					"value": "Double Slice"
@@ -14043,7 +14046,7 @@
 		},
 		"Impassable Wall Stance": {
 			"name": "Impassable Wall Stance",
-			"description": "<p>You refuse to let foes past your guard. As long as you are in this stance, when you critically hit with an @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Attack of Opportunity} triggered by a move action, you disrupt that move action.</p>",
+			"description": "<p>You refuse to let foes past your guard. As long as you are in this stance, when you critically hit with an @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Attack of Opportunity} triggered by a move action, you disrupt that move action.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.zzC2qZwEKf4Ja3xD]{Stance: Impassable Wall Stance}</p>",
 			"prerequisites": [
 				{
 					"value": "Attack of Opportunity"
@@ -15218,6 +15221,15 @@
 			"description": "<p>You are unstoppable, able to shrug off mortal wounds with ease. You gain resistance equal to 3 + your Constitution modifier to all damage, and your resistance from raging resistance increases to 8 + your Constitution modifier.</p>\n<p>In addition, if you are reduced to 0 Hit Points, you can end your rage as a reaction to stay at 1 Hit Point. If you do, you become @UUID[Compendium.pf2e.conditionitems.Yl48xTdMh3aeQYL2]{Wounded 2} (or increase your wounded condition by 2 if you are already wounded).</p>",
 			"prerequisites": []
 		},
+		"Irezoko Tattoo": {
+			"name": "Irezoko Tattoo",
+			"description": "<p><strong>Access</strong> You are a member of the College of Mysteries</p>\n<hr />\n<p>Your face bears an intricate magical tattoo known as the <em>irezoko</em>, a badge of your understanding of your chosen field of magic and a recognition of your advancement within Absalom's College of Mysteries. Choose a class that you are a member of that grants you access to a focus pool. When you take this feat, it gains the trait that applies to your chosen class. Once per day, you may concentrate upon the pattern of your <em>irezoko</em> to recover 1 Focus Point as a three-action activity.</p>",
+			"prerequisites": [
+				{
+					"value": "Expert in Arcana or Occultism"
+				}
+			]
+		},
 		"Iron Fists": {
 			"name": "Iron Fists",
 			"description": "<p>Your fists have been forged by battle, your naturally tough skin and dense bone further hardened by conflict.</p>\n<p>Your fist unarmed attacks no longer have the nonlethal trait and gain the shove weapon trait.</p>",
@@ -15357,7 +15369,7 @@
 		},
 		"Jellyfish Stance": {
 			"name": "Jellyfish Stance",
-			"description": "<p><strong>Requirements</strong> You are unarmored.</p>\n<p>You relax your posture and loosen your joints, allowing yourself to move with incredible fluidity. You can make stinging lash attacks that deal 1d8 slashing damage. These attacks are in the brawling group, and have the finesse, nonlethal, reach, and unarmed traits.</p>\n<p>While in Jellyfish Stance, you gain a +2 circumstance bonus to Reflex saves and on checks to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} and @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.pkcr9w5x6bKzl3om]{Stance: Jellyfish Stance}</p>",
+			"description": "<p><strong>Requirements</strong> You are unarmored.</p>\n<p>You relax your posture and loosen your joints, allowing yourself to move with incredible fluidity. You can make stinging lash attacks that deal 1d6 slashing damage. These attacks are in the brawling group, and have the finesse, nonlethal, reach, and unarmed traits.</p>\n<p>While in Jellyfish Stance, you gain a +2 circumstance bonus to Reflex saves and on checks to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} and @UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{Squeeze}.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.pkcr9w5x6bKzl3om]{Stance: Jellyfish Stance}</p>",
 			"prerequisites": []
 		},
 		"Jinx Glutton": {
@@ -16761,7 +16773,7 @@
 		},
 		"Lunging Stance": {
 			"name": "Lunging Stance",
-			"description": "<p><strong>Requirements</strong> You are wielding a melee weapon</p>\n<hr />\n<p>Your body coiled to strike, you can lash out at distant enemies. While you are in this stance, you can use Attack of Opportunity against a creature that is outside your reach but within the reach you would have with a Lunge. If you do, you increase your range with the Strike by 5 feet.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding a melee weapon</p>\n<hr />\n<p>Your body coiled to strike, you can lash out at distant enemies. While you are in this stance, you can use Attack of Opportunity against a creature that is outside your reach but within the reach you would have with a Lunge. If you do, you increase your range with the Strike by 5 feet.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.W8CKuADdbODpBh6O]{Stance: Lunging Stance}</p>",
 			"prerequisites": [
 				{
 					"value": "attack of opportunity"
@@ -18156,7 +18168,7 @@
 		},
 		"Mobile Shot Stance": {
 			"name": "Mobile Shot Stance",
-			"description": "<p>Your shots become nimble and deadly. While you're in this stance, your ranged Strikes don't trigger Attacks of Opportunity or other reactions that are triggered by a ranged attack.</p>\n<p>If you have @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Attack of Opportunity}, you can use it with a loaded ranged weapon you're wielding. The triggering creature must be within 5 feet of you for you to do so.</p>",
+			"description": "<p>Your shots become nimble and deadly. While you're in this stance, your ranged Strikes don't trigger Attacks of Opportunity or other reactions that are triggered by a ranged attack.</p>\n<p>If you have @UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{Attack of Opportunity}, you can use it with a loaded ranged weapon you're wielding. The triggering creature must be within 5 feet of you for you to do so.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.NWOmJ6WJFheaGhho]{Stance: Mobile Shot Stance}</p>",
 			"prerequisites": []
 		},
 		"Mobility": {
@@ -20183,7 +20195,7 @@
 		},
 		"Pierce The Light": {
 			"name": "Pierce The Light",
-			"description": "<p>You tear the veil between the Material Plane and its shadow. You can cast <em>@UUID[Compendium.pf2e.spells-srd.5bTt2CvYHPvaR7QQ]{Plane Shift}</em><em> </em>twice per week as an occult innate spell that can only target yourself; you can travel only to the Material or Shadow Planes, and your body serves as the focus component.</p>",
+			"description": "<p>You tear the veil between the Material Plane and its shadow. You can cast <em>@UUID[Compendium.pf2e.spells-srd.5bTt2CvYHPvaR7QQ]{Plane Shift}</em> twice per week as an occult innate spell that can only target yourself; you can travel only to the Material or Shadow Planes, and your body serves as the focus component.</p>",
 			"prerequisites": []
 		},
 		"Piercing Critical": {
@@ -20502,7 +20514,7 @@
 		},
 		"Powder Punch Stance": {
 			"name": "Powder Punch Stance",
-			"description": "<p><strong>Access</strong> You're from Alkenstar or the Mana Wastes.</p>\n<hr />\n<p>You infuse your handwraps with black powder. On your first melee Strike each round with an unarmed attack, @UUID[Compendium.pf2e.equipment-srd.dgXjUcaoQDAY6ZpO]{Knuckle Duster}, or @UUID[Compendium.pf2e.equipment-srd.8eGV6fXbmt2v74uB]{Black Powder Knuckle Dusters}, you deal an additional 1 fire Damage. If you critically succeed at an attempt to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} while in this stance, the target is pushed back an additional 5 feet.</p>",
+			"description": "<p><strong>Access</strong> You're from Alkenstar or the Mana Wastes.</p>\n<hr />\n<p>You infuse your handwraps with black powder. On your first melee Strike each round with an unarmed attack, @UUID[Compendium.pf2e.equipment-srd.dgXjUcaoQDAY6ZpO]{Knuckle Duster}, or @UUID[Compendium.pf2e.equipment-srd.8eGV6fXbmt2v74uB]{Black Powder Knuckle Dusters}, you deal an additional 1 fire Damage. If you critically succeed at an attempt to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} while in this stance, the target is pushed back an additional 5 feet.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.kDTiRg9vVOYNnTyr]{Stance: Powder Punch Stance}</p>",
 			"prerequisites": [
 				{
 					"value": "Martial Artist Dedication"
@@ -21415,7 +21427,7 @@
 		},
 		"Quill Spray": {
 			"name": "Quill Spray",
-			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Levelled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{Levelled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>You can launch a mass of quills at opponents. You spray quills in a @Template[type:cone|distance:30], dealing [[/r 5d8[piercing]]] damage. Each creature in the area must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] saving throw against the higher of your class DC or spell DC. On a critical failure, a creature also takes [[/r 5[bleed]]] damage. At 11th level and every even level thereafter, the piercing damage increases by 1d8 and the persistent bleed damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{Leveled} piercing damage</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{Leveled} damage</p>\n<hr />\n<p><em><strong>Note</strong> The feat does not specify the type of saving throw required. A reflex saving throw had been added, in line with Barbed Quills.</em></p>",
 			"prerequisites": [
 				{
 					"value": "quillcoat shisk or quill unarmed attack"
@@ -22697,12 +22709,12 @@
 		},
 		"Ricochet Stance (Fighter)": {
 			"name": "Ricochet Stance (Fighter)",
-			"description": "<p>You adopt a stance designed to rebound your thrown weapons back toward you. While you are in this stance, any thrown weapons you use as part of a ranged Strike to deal bludgeoning or slashing damage immediately return to your hand, enabling you to use them for additional Strikes.</p>\n<p>You must be within the weapon's listed range increment and have a hand free to catch the weapon. If you make a ranged Strike with a thrown weapon outside of its listed range increment, it instead flies back toward you a number of feet equal to its listed range increment and then falls to the ground.</p>",
+			"description": "<p>You adopt a stance designed to rebound your thrown weapons back toward you. While you are in this stance, any thrown weapons you use as part of a ranged Strike to deal bludgeoning or slashing damage immediately return to your hand, enabling you to use them for additional Strikes.</p>\n<p>You must be within the weapon's listed range increment and have a hand free to catch the weapon. If you make a ranged Strike with a thrown weapon outside of its listed range increment, it instead flies back toward you a number of feet equal to its listed range increment and then falls to the ground.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Unfl4QQURWaX2zfd]{Stance: Ricochet Stance}</p>",
 			"prerequisites": []
 		},
 		"Ricochet Stance (Rogue)": {
 			"name": "Ricochet Stance (Rogue)",
-			"description": "<p>You adopt a stance to rebound your thrown weapons toward you. While you are in this stance, any thrown weapons you use as part of a ranged Strike to deal bludgeoning or slashing damage immediately return to your hand, enabling you to use them for additional Strikes.</p>\n<p>You must be within the weapon's listed range increment and have a hand free to catch the weapon. If you make a ranged Strike with a thrown weapon outside of its listed range increment, it instead flies back toward you a number of feet equal to its listed range increment and then falls to the ground.</p>",
+			"description": "<p>You adopt a stance to rebound your thrown weapons toward you. While you are in this stance, any thrown weapons you use as part of a ranged Strike to deal bludgeoning or slashing damage immediately return to your hand, enabling you to use them for additional Strikes.</p>\n<p>You must be within the weapon's listed range increment and have a hand free to catch the weapon. If you make a ranged Strike with a thrown weapon outside of its listed range increment, it instead flies back toward you a number of feet equal to its listed range increment and then falls to the ground.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Unfl4QQURWaX2zfd]{Stance: Ricochet Stance}</p>",
 			"prerequisites": []
 		},
 		"Ricocheting Leap": {
@@ -22865,7 +22877,7 @@
 		},
 		"Rokoan Arts": {
 			"name": "Rokoan Arts",
-			"description": "<p>Ancestral spirits have begun to bond themselves to you, granting you powers characteristic of a rokoa. You can cast <em>@UUID[Compendium.pf2e.spells-srd.BBvV7qoXGdw09q1C]{Speak with Animals}</em> and <em>@UUID[Compendium.pf2e.spells-srd.HTou8cG05yuSkesj]{Status}</em><em> </em>as primal innate spells once per day each.</p>",
+			"description": "<p>Ancestral spirits have begun to bond themselves to you, granting you powers characteristic of a rokoa. You can cast <em>@UUID[Compendium.pf2e.spells-srd.BBvV7qoXGdw09q1C]{Speak with Animals}</em> and <em>@UUID[Compendium.pf2e.spells-srd.HTou8cG05yuSkesj]{Status}</em> as primal innate spells once per day each.</p>",
 			"prerequisites": []
 		},
 		"Roll with It": {
@@ -22937,7 +22949,7 @@
 		},
 		"Rough Terrain Stance": {
 			"name": "Rough Terrain Stance",
-			"description": "<p><strong>Requirements</strong> You gained a terrain attunement benefit this turn.</p>\n<hr />\n<p>You enter a stance that makes it difficult to move around you. Each square adjacent to you becomes difficult terrain that matches the terrain attunement you gained (rime forms in an arctic terrain, momentary undergrowth shoots up in a forest terrain, and so on). You ignore this difficult terrain.</p>\n<p>This stance ends if you move into a different type of terrain.</p>",
+			"description": "<p><strong>Requirements</strong> You gained a terrain attunement benefit this turn.</p>\n<hr />\n<p>You enter a stance that makes it difficult to move around you. Each square adjacent to you becomes difficult terrain that matches the terrain attunement you gained (rime forms in an arctic terrain, momentary undergrowth shoots up in a forest terrain, and so on). You ignore this difficult terrain.</p>\n<p>This stance ends if you move into a different type of terrain.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.YkiTA74FrUUu5IvI]{Stance: Rough Terrain Stance}</p>",
 			"prerequisites": [
 				{
 					"value": "Geomancer Dedication"
@@ -29052,7 +29064,7 @@
 		},
 		"Twinned Defense (Fighter)": {
 			"name": "Twinned Defense (Fighter)",
-			"description": "<p><strong>Requirements</strong> You are wielding two melee weapons, one in each hand</p>\n<hr />\n<p>You're always ready to use your off-hand weapon to interfere with attacks against you. While you are in this stance, you constantly gain the benefits of the @UUID[Compendium.pf2e.feats-srd.Y8LHfkzGyOhPlUou]{Twin Parry} action.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding two melee weapons, one in each hand</p>\n<hr />\n<p>You're always ready to use your off-hand weapon to interfere with attacks against you. While you are in this stance, you constantly gain the benefits of the @UUID[Compendium.pf2e.feats-srd.Y8LHfkzGyOhPlUou]{Twin Parry} action.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3eHMqVx30JGiJqtM]{Stance: Twinned Defense}</p>",
 			"prerequisites": [
 				{
 					"value": "Twin Parry"
@@ -29061,7 +29073,7 @@
 		},
 		"Twinned Defense (Swashbuckler)": {
 			"name": "Twinned Defense (Swashbuckler)",
-			"description": "<p><strong>Requirements</strong> You are wielding two melee weapons, one in each hand</p>\n<hr />\n<p>You're always ready to use your off-hand weapon to interfere with attacks against you. While you are in this stance, you constantly gain the benefits of the @UUID[Compendium.pf2e.feats-srd.Y8LHfkzGyOhPlUou]{Twin Parry} action.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding two melee weapons, one in each hand</p>\n<hr />\n<p>You're always ready to use your off-hand weapon to interfere with attacks against you. While you are in this stance, you constantly gain the benefits of the @UUID[Compendium.pf2e.feats-srd.Y8LHfkzGyOhPlUou]{Twin Parry} action.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3eHMqVx30JGiJqtM]{Stance: Twinned Defense}</p>",
 			"prerequisites": [
 				{
 					"value": "Twin Parry"
@@ -29391,7 +29403,7 @@
 		},
 		"Undying Conviction": {
 			"name": "Undying Conviction",
-			"description": "<p>Your presence has a bolstering effect on your undead minions. Undead creatures under your control and within a @Template[type:emanation|distance:30] around you gain a +2 status bonus to saving throws to resist positive damage and to Will saving throws to resist effects that would make them controlled.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.e6mv68aarIbQ3tXL]{Effect: Undying Conviction}</p>\n<p><strong>Special</strong> This feat has the trait matching your spellcasting tradition.</p>",
+			"description": "<p>Your presence has a bolstering effect on your undead minions. Undead creatures under your control and within a @Template[type:emanation|distance:30] around you gain a +2 status bonus to saving throws to resist positive damage and to Will saving throws to resist effects that would make them controlled.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.cGwFYusGTsJR3x3P]{Effect: Under Control}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.e6mv68aarIbQ3tXL]{Effect: Undying Conviction}</p>\n<p><strong>Special</strong> This feat has the trait matching your spellcasting tradition.</p>",
 			"prerequisites": [
 				{
 					"value": "able to create or control undead"
@@ -30879,7 +30891,7 @@
 		},
 		"Whirlwind Stance": {
 			"name": "Whirlwind Stance",
-			"description": "<p><strong>Requirements</strong> You are wielding your staff, which must have the parry trait.</p>\n<hr />\n<p>You use your staff as a defensive implement as well as an offensive one. You gain a +2 circumstance bonus to AC as long as you remain in this stance.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding your staff, which must have the parry trait.</p>\n<hr />\n<p>You use your staff as a defensive implement as well as an offensive one. You gain a +2 circumstance bonus to AC as long as you remain in this stance.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.q6UokHWSEcEYWmvh]{Stance: Whirlwind Stance}</p>",
 			"prerequisites": [
 				{
 					"value": "Staff Acrobat Dedication"
