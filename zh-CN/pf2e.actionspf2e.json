@@ -15,7 +15,7 @@
         },
         "Administer First Aid": {
             "name": "进行急救 Administer First Aid",
-            "description": "<p><strong>需求</strong> 你持握 @UUID[Compendium.pf2e.equipment-srd.s1vB3HdXjMigYAnY]{医疗工具 Healer's Tools}，或你穿戴着医疗工具且有一只空手</p>\n<hr />\n<p>你对一个邻接你，处于 @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying} 或 @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{流失 Drained}状态的生物进行紧急救治。如果该生物同时濒死和流血，你必须在进行检定前选择其中之一来进行急救。在此之后，你可以选择另一个状态进行急救尝试。</p>\n<ul>\n<li><strong>稳定伤势</strong> 对于一个生命值为0且处于濒死状态的生物，你可以尝试一个<span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stabilize\" data-pf2-glyph=\"D\">医疗</span>检定稳定其伤势。这个检定DC等于5+该生物尝试恢复稳定的恢复检定（Recovery Roll）DC（通常为15+该生物承受的濒死等级）</li>\n<li><strong>止血</strong> 你可以对一个正在承受持续流血伤害的生物尝试一个 <span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stopBleeding\" data-pf2-glyph=\"D\">医疗</span>检定，如果成功，他可以获得一次再进行一次无修正测试来尝试移除该持续伤害的机会。本医疗检定的DC和原本造成该生物流血的效果DC通常相同。</li>\n</ul>\n<hr />\n<p><strong>成功</strong> 如果你尝试稳定伤势，那么你急救的生物不再处于濒死状态（但仍然 @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}）。如果你尝试止血，那么生物可以再进行一次无修正测试来尝试移除流血。</p>\n<p><strong>大失败</strong> 如果你尝试稳定伤势，那么你急救的生物濒死等级+1。如果你尝试止血，那么生物立刻承受一次等于他承受的持续流血伤害数值的伤害</p>"
+            "description": "<p><strong>需求</strong> 你持握 @UUID[Compendium.pf2e.equipment-srd.s1vB3HdXjMigYAnY]{医疗工具 Healer's Tools}，或你穿戴着医疗工具且有一只空手</p>\n<hr />\n<p>你对一个邻接你，处于 @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying} 或 @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{流失 Drained}状态的生物进行紧急救治。如果该生物同时濒死和流血，你必须在进行检定前选择其中之一来进行急救。在此之后，你可以选择另一个状态进行急救尝试。</p>\n<ul>\n<li><strong>稳定伤势</strong> 对于一个生命值为0且处于濒死状态的生物，你可以尝试一个<span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stabilize\" data-pf2-glyph=\"D\">医疗</span>检定稳定其伤势。这个检定DC等于5+该生物尝试恢复稳定的恢复检定（Recovery Roll）DC（通常为15+该生物承受的濒死等级）</li>\n<li><strong>止血</strong> 你可以对一个正在承受持续流血伤害的生物尝试一个<span data-pf2-action=\"administerFirstAid\" data-pf2-variant=\"stop-bleeding\" data-pf2-glyph=\"D\">医疗</span>检定，如果成功，他可以获得一次再进行一次无修正测试来尝试移除该持续伤害的机会。本医疗检定的DC和原本造成该生物流血的效果DC通常相同。</li>\n</ul>\n<hr />\n<p><strong>成功</strong> 如果你尝试稳定伤势，那么你急救的生物不再处于濒死状态（但仍然 @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}）。如果你尝试止血，那么生物可以再进行一次无修正测试来尝试移除流血。</p>\n<p><strong>大失败</strong> 如果你尝试稳定伤势，那么你急救的生物濒死等级+1。如果你尝试止血，那么生物立刻承受一次等于他承受的持续流血伤害数值的伤害</p>"
         },
         "Affix a Fulu": {
             "name": "粘贴符箓 Affix a Fulu",
@@ -75,7 +75,7 @@
         },
         "Barbed Quills": {
             "name": "带刺羽尖 Barbed Quills",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
@@ -167,7 +167,7 @@
         },
         "Bullet Dancer Stance": {
             "name": "弹舞架式 Bullet Dancer Stance",
-            "description": "<p><strong>需求</strong> 你未穿甲，正持用一件简易火器、刺刀或加固枪托。</p>\n<hr />\n<p><strong>效果</strong> 你进入一种以简易火器为中心的独特武术架式。在此架式中，你只能使用刺刀、加固枪托或简易火器进行打击。你可以使用这些武器进行疾风连击。你也可以用刺刀或加固枪托来使出通常需要无武装攻击才能使用的武僧专长或武僧能力，前提是这些专长和能力并不需要进行某种特定的打击。若在简易火器第一射程增量的一半距离内进行攻击时，你也可以改为用简易火器使出。</p>"
+            "description": "<p><strong>需求</strong> 你未穿甲，正持用一件简易火器、刺刀或加固枪托。</p>\n<hr />\n<p><strong>效果</strong> 你进入一种以简易火器为中心的独特武术架式。在此架式中，你只能使用刺刀、加固枪托或简易火器进行打击。你可以使用这些武器进行疾风连击。你也可以用刺刀或加固枪托来使出通常需要无武装攻击才能使用的武僧专长或武僧能力，前提是这些专长和能力并不需要进行某种特定的打击。若在简易火器第一射程增量的一半距离内进行攻击时，你也可以改为用简易火器使出。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.6ctQFQfSZ6o1uyyZ]{架势：弹舞架势}</p>"
         },
         "Burrow": {
             "name": "掘进 Burrow",
@@ -407,7 +407,7 @@
         },
         "Escape": {
             "name": "逃脱 Escape",
-            "description": "<p>你尝试从 @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足}, or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}状态中逃脱出来。选择一个生物、物体、法术效果、危害或其他对你施加上述状态的事物。使用你的无武装攻击调整值进行一次检定，对抗效果DC。该DC通常是擒抱你的生物的运动DC，捆绑你的生物的贼活DC，法术效果的法术DC，物体、危害或事物列出的逃脱DC等等。你可以选择进行特技或运动检定代替无武装攻击调整值（该动作依然保有攻击特征）。</p>\n<hr />\n<p><strong>大成功</strong> 你获得自由，移除目标对你施加的擒抱、禁足或束缚状态。你还能立刻行走至多5尺。</p>\n<p><strong>成功</strong> 你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。</p>\n<p><strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。</p>"
+            "description": "<p>你尝试从 @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱}, @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足}, or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}状态中逃脱出来。选择一个生物、物体、法术效果、危害或其他对你施加上述状态的事物。进行一次<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\">检定</span>，使用你的<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-skill=\"unarmed\">无武装攻击调整值</span>对抗效果DC。该DC通常是擒抱你的生物的运动DC，捆绑你的生物的贼活DC，法术效果的法术DC，物体、危害或事物列出的逃脱DC等等。你可以选择进行 <span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-skill=\"acrobatics\">特技</span>或<span data-pf2-action=\"escape\" data-pf2-glyph=\"A\" data-pf2-skill=\"athletics\">运动</span>检定代替无武装攻击调整值（该动作依然保有攻击特征）。</p>\n<hr />\n<p><strong>大成功</strong> 你获得自由，移除目标对你施加的擒抱、禁足或束缚状态。你还能立刻行走至多5尺。</p>\n<p><strong>成功</strong> 你获得自由，移除目标对你施法的擒抱、禁足或束缚状态。</p>\n<p><strong>大失败</strong> 你没有获得自由，且直到你的下一轮你无法再进行逃脱尝试。</p>"
         },
         "Exhale Poison": {
             "name": "Exhale Poison",
