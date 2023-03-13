@@ -426,6 +426,211 @@
                 }
             ],
             "description": "<p>你的法术和你的舞步已经无缝融合，让你能进行更复杂的移动。对于你通过魔法舞者变体获得的动作，如果动作允许你进行快步作为动作的一部分，你可以改为进行行走或@UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}。</p>"
+        },
+        "A Soul's Truth": {
+            "name": "灵魂之实 A Soul's Truth",
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                }
+            ],
+            "description": "<p>你学会一项灵魂守卫能力，用来清除藏匿的魔族。你可将<em>@UUID[Compendium.pf2e.spells-srd.aewxsale5xWEPKLk]{诚实之域 Zone of Truth}</em>作为神术内在法术施放。魔法区域内作为目标的任何带有[魔族]特征的生物，在豁免骰上有-2状态减值。在12级时，你能每小时施放一次该法术，16级时可以每10分钟施放一次。</p>"
+        },
+        "Anti-Fiend Magic: Eradication": {
+            "name": "降魔秘法: 灭 Anti-Fiend Magic: Eradication",
+            "prerequisites": [
+                {
+                    "value": "降魔秘法: 弑"
+                }
+            ],
+            "description": "<p>你已经把你的魔法磨练成一把致命的剑，可以像刀割绳子一样斩断恶魔。当你使用降魔秘法：弑时，造成的额外伤害提升为[[/r 1d8]]。此外，当你进入降魔秘法：弑架势时，你可以额外选择1把30尺内的武器，在你激活架势期间，它能造成额外[[/r 2[good]]]伤害。如果你至少18级，你的额外伤害再增加1d8，可以作为目标的额外武器数量变为2把。</p>\n<p>@UUID[Compendium.impossible-lands.impossible-lands-effects.jcWNnFJ7EGbkWFzc]{效果: 降魔秘法: 灭}</p>"
+        },
+        "Anti-Fiend Magic: Fortification": {
+            "name": "降魔秘法: 护 Anti-Fiend Magic: Fortification",
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                }
+            ],
+            "description": "<p>你学会引导你灵魂的力量来更好地抵御你追查的魔族。你对魔族在AC和豁免上有+1环加值，并且对魔族造成的伤害有你等级一半的抗力。在此架势下，如果你或你的盟友将你30尺内的一个魔族的生命值减少至0，清理邪恶所产生的能量将让你恢复活力。你能在当天获得额外1次进入该架势的机会，每次持续时间内只能触发一次此效果。</p>\n<p>@UUID[Compendium.impossible-lands.impossible-lands-effects.JyOj8W22VKkxkq0L]{效果: 降魔秘法: 护}</p>"
+        },
+        "Anti-Fiend Magic: Phalanx": {
+            "name": "降魔秘法: 阵 Anti-Fiend Magic: Phalanx",
+            "prerequisites": [
+                {
+                    "value": "降魔秘法: 护"
+                }
+            ],
+            "description": "<p>当你使用降魔秘法：护时，你AC和豁免骰的状态加值增加到+2，并且你对魔族的抗力增加到和你等级相同。此外，当你激活降魔秘法：护架势时，你散发出@Template[type:emanation|distance:15]范围的灵魂能量。弥漫范围内的盟友获得针对魔族的2点伤害抗力。你获得@UUID[Compendium.impossible-lands.impossible-lands-actions.spgUMHirQHXLRMPV]{灵魂干预 Soul Intervention} 反应动作。如果你至少18级，你能增加弥漫范围至@Template[type:emanation|distance:30]，并且灵魂干预每日可以额外使用1次。</p>"
+        },
+        "Anti-Fiend Magic: Slayer": {
+            "name": "降魔秘法: 弑 Anti-Fiend Magic: Slayer",
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                }
+            ],
+            "description": "<p>你学会引导你灵魂的力量来更好地消灭你追查的魔族。你的非武装攻击和你持握的武器对魔族造成额外1d4伤害。该额外伤害可以为善良伤害，也可以是和你灵魂颜色相关的伤害类型，当你进入该架势时进行选择。在此架势下，如果你或你的盟友将你30尺内的一个魔族的生命值减少至0，清理邪恶所产生的能量将让你恢复活力。你能在当天获得额外一次进入该架势的机会，每次持续时间内只能触发一次此效果。</p>\n<p>@UUID[Compendium.impossible-lands.impossible-lands-effects.CxLIOVIhKBj0kXzz]{效果: 降魔秘法: 弑}</p>"
+        },
+        "Call-Out": {
+            "prerequisites": [
+                {
+                    "value": "山贤同道入门"
+                }
+            ],
+            "name": "点名 Call-Out",
+            "description": "<p><strong>需求</strong> 目标对你或你的盟友进行过敌对动作你通过展示你灵光中存在的一个危险分子来吸引观众们的注意力。你指出一个位于你灵光范围内的生物，他必须尝试@Check[type:will|dc:resolve(@actor.attributes.classDC.value)]豁免，对抗你的职业DC。</p>\n<hr />\n<p><strong>大成功</strong> 目标进行了迅速而有效的反驳。他不受影响，24小时内免疫。</p>\n<p><strong>成功</strong> 目标会因为你的突然关注而暂时受到阻碍。他的隐秘检定和意志豁免有-1状态减值，并且在1轮内无法从掩蔽或@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态中获得好处。</p>\n<p><strong>失败</strong> 目标对所面对的事实感到困惑，他不知道该怎么回应你的关注。类似成功，但状态减值-2，持续1分钟。</p>\n<p><strong>大失败</strong> 目标认为自己犯了个巨大错误，在震惊的同时失去了自己的情感和对事物的感知。他陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，并且在1分钟内无法从掩蔽、隐蔽或@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态中受益。</p>\n<p>@UUID[Compendium.impossible-lands.impossible-lands-effects.ICtdnxE62Vo88uPP]{效果: 点名}</p>"
+        },
+        "Comic's Visitation": {
+            "prerequisites": [
+                {
+                    "value": "灵丹妙药"
+                }
+            ],
+            "name": "欢乐巡演 Comic's Visitation",
+            "description": "<p>笑声的力量是不可低估的，尤其当你有众多观众的时候。当你使用@UUID[Compendium.impossible-lands.impossible-lands-feats.pT9gCsgaXtdDhfPV]{灵丹妙药 The Best Medicine}专长时，你可以将观众中的所有盟友作为恢复生命值的目标，而不仅仅只是一个目标。如果你拥有提神表演专长，作为使用相同动作的一部分，你将其中一个盟友作为提神表演的目标。</p>"
+        },
+        "Divine Comedy": {
+            "name": "神曲 Divine Comedy",
+            "prerequisites": [
+                {
+                    "value": "山贤同道入门"
+                }
+            ],
+            "description": "<p>你的喜剧经过打磨，可以用来抨击那些需要吸取教训的人。根据你使用的动作数量，你可以获得以下效果。</p>\n<p><span class=\"\\&quot;pf2-icon\\&quot; pf2-icon\">2</span> 你从攻击骰、AC或豁免骰中选择一项，然后从你的观众中选择一个敌人，进行一次@Check[type:performance]检定对抗敌人的意志DC。</p>\n<p><span class=\"\\&quot;pf2-icon\\&quot; pf2-icon\">3</span> 你从攻击骰、AC或豁免骰中选择两项，然后从你的观众中选择一个敌人，进行一次@Check[type:performance]检定对抗敌人的意志DC。</p>\n<p><strong>2轮 </strong>你从攻击骰、AC或豁免骰中选择所有，然后从你的观众中选择一个敌人，进行一次@Check[type:performance]检定对抗敌人的意志DC。</p>\n<hr />\n<p><strong>大成功</strong> 目标在对抗你观众中的其他目标时，在你选择的数据上承受-3状态减值，持续1轮，之后受到-2减值，持续1分钟。</p>\n<p><strong>成功</strong> 目标在你选择的数据上承受-2状态减值，持续1轮，之后受到-1减值，持续1分钟。</p>\n<p><strong>失败</strong> 目标在你选择的数据上承受-1状态减值，持续1轮。</p>\n<p><strong>大失败</strong> 目标不受影响且免疫24小时。</p>\n<p>@UUID[Compendium.impossible-lands.impossible-lands-effects.wBG5TjH5Cy8Oa3gn]{效果: 神曲}</p>"
+        },
+        "Heckler Squelcher": {
+            "name": "回应质问 Heckler Squelcher",
+            "prerequisites": [
+                {
+                    "value": "山贤同道入门"
+                }
+            ],
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你或你观众中的一位盟友，对一个[听觉]或[视觉]效果进行豁免</p>\n<hr />\n<p>在你的旅途中，你已经学会了如何应对那些无端打断你表演的人。尝试一次@Check[type:perform|traits:action:perform]检定，用喜剧的方式来表达不满。你或你观众中的的一位盟友，可以从你刚才的表演检定结果和豁免结果中选择更高的那个作为豁免的最终结果。</p>"
+        },
+        "Life's Reprise": {
+            "name": "生命的重奏 Life's Reprise",
+            "prerequisites": [
+                {
+                    "value": "山贤同道入门"
+                }
+            ],
+            "description": "<p>你讲述过去经历来帮助那些可能处于类似情况的人。在你的听众中指定一个盟友；这一行动可被视为是对盟友协助的充分准备。当你使用协助反应动作来协助盟友时，你可以使用表演检定来代替通常的检定。如果你的协助检定成功，盟友除了使用正常的投掷结果外，还可以使用你的表演检定结果来代替他的投掷结果。如果你大成功，盟友可以投掷两次，并使用更好的结果。</p>"
+        },
+        "Live and Learn": {
+            "name": "活到老学到老 Live and Learn",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你在豁免检定或技能检定中失败或大失败</p>\n<hr />\n<p>失败乃成功之母，它是你学习的机会。当下次遭遇相同或类似的敌人、效果或阻碍时，如果你进行同样的检定，你投掷两次并选择更好的结果。你必须在前一次失败的24小时内进行该检定，并且触发的结果必须不能是微不足道难度。</p>"
+        },
+        "Partial Soul Concentration: Cleanse": {
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                }
+            ],
+            "name": "魂力半集中: 净 Partial Soul Concentration: Cleanse",
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<p>反复的训练让你用灵魂能量包裹你的武器来切断恶魔的魔法。对你能看见的目标进行一次近战打击。如果命中，你将尝试反制目标身上的一个魔法效果，前提是目标为魔族，或者该效果由魔族施加在目标身上。你选择要反制的效果，如果你不选择的话默认为一个最高等级的效果。你的反制等级等于你等级的一半（向上取整），并且你的反制调整值等于你的[[/r 1d20 + @actor.attributes.classDC.value]]{职业DC - 10}。</p>"
+        },
+        "Partial Soul Concentration: Flow": {
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                }
+            ],
+            "name": "魂力半集中: 流 Partial Soul Concentration: Flow",
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<p>冥想训练让你学会如何调节你的灵魂能量，使其具有可塑性和治愈性。你获得等于你的等级加上你感知调整值的临时生命值。</p>"
+        },
+        "Refreshing Performance": {
+            "prerequisites": [
+                {
+                    "value": "灵丹妙药"
+                }
+            ],
+            "name": "提神表演 Refreshing Performance",
+            "description": "<p>你的喜剧有能力帮助你的观众处理生活中的许多问题。当你使用灵丹妙药时，进行一次表演检定，从你选择的盟友身上选择@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}、@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled}、或@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态之一，将其状态值减少1点。如果大成功，状态值减少2点。该表演DC通常为导致该状态的原始效果的DC。</p>"
+        },
+        "Sage's Coterie Dedication": {
+            "name": "山贤同道入门 Sage's Coterie Dedication",
+            "prerequisites": [
+                {
+                    "value": "魅力14"
+                },
+                {
+                    "value": "信仰腊格迪亚（Ragdya）"
+                }
+            ],
+            "description": "<p>你的表演受训。如果你已经受训，你提升为专家。 你获得@Template[type:emanation|distance:30]范围的小丑灵光（jester’s aura），这允许你在使用变体赋予你的动作时，将灵光范围内的盟友和敌人作为目标。灵光范围内的生物被认为是你的观众。如果你表演达到传奇熟练度，灵光增加到@Template[type:emanation|distance:60]。你获得@UUID[Compendium.impossible-lands.impossible-lands-actions.Ks0c15PShonpvdcI]{传染快乐 Infectious Antics}动作。</p>\n<p><strong>特殊 </strong>在你从山贤同道变体获得两个其他专长之前，你无法选择其他入门专长。</p>"
+        },
+        "Sniff Out": {
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                }
+            ],
+            "name": "嗅探 Sniff Out",
+            "description": "<p>你为了对抗魔族训练自己的灵魂，这也提升了你的感官。你获得魔族感知作为模糊感官，范围30尺。这允许你能闻到带有[魔族]特征的生物，如同灵敏嗅觉能力一般。你在@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}你嗅觉范围内的魔族时，察觉检定有+2状态加值。当你成功搜索出一个魔族，你能以自由动作对它@UUID[Compendium.pf2e.actionspf2e.sn2hIy1iIJX9Vpgj]{指出位置 Point Out}。</p>"
+        },
+        "Soulguard Dedication": {
+            "name": "灵魂卫士入门 Soulguard Dedication",
+            "prerequisites": [
+                {
+                    "value": "任意善良阵营"
+                },
+                {
+                    "value": "加入灵魂卫士"
+                }
+            ],
+            "description": "<p>为了对抗潜伏在扎摩诔的魔族，知识就是力量，而你正尝试一种新的训练方式。你的宗教或社群受训。如果你两种技能都已受训，你将其中之一提升为专家。你获得一项额外的学识技能：魔族学识。在对魔族相关的线索进行收集信息时，你可以使用魔族学识代替交涉。</p>\n<p>作为成为灵魂卫士正式成员的一部分，你需要经历一个仪式。这个仪式要求你开始认清自己的灵魂，这样你就能加强它以对抗魔族的侵蚀。这是一个单独的过程，你需要在灵魂守卫的正式成员的帮助下经历一天的时间。在这一切完成之后，你会了解到你灵魂的真实颜色。从下表中选择一种颜色，你将获得相当于你等级一半的相关能量抗力。该选择一旦做出就无法改变。</p>\n<ul>\n<li><strong>蓝色 </strong>- 寒冷</li>\n<li><strong>绿色 </strong>- 力场</li>\n<li><strong>橙色 </strong>- 酸液</li>\n<li><strong>紫色 </strong>- 音波</li>\n<li><strong>红色 </strong>- 火焰</li>\n<li><strong>黄色 </strong>- 电击</li>\n</ul>\n<p><strong>特殊 </strong>在你从灵魂卫士变体获得两个其他专长之前，你无法选择其他入门专长。</p>"
+        },
+        "Stench of Evil": {
+            "prerequisites": [
+                {
+                    "value": "灵魂卫士入门"
+                },
+                {
+                    "value": "嗅探"
+                }
+            ],
+            "name": "邪秽恶臭 Stench of Evil",
+            "description": "<p>经过训练，你针对魔族的嗅觉得到提升。你的魔族感知变为精确感官，它的范围增加到60尺。当你尝试对一个通过变化系或幻术系效果伪装自己的魔族进行@UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{察言观色 Sense Motive}时，GM暗骰两次你的察觉检定，并使用更高的结果。这是一个幸运效果。</p>"
+        },
+        "The Best Medicine": {
+            "name": "灵丹妙药 The Best Medicine",
+            "description": "<p><strong>每小时一次</strong></p>\n<p>你的言语给你周围的人带来短暂但宝贵的喘息时间。你从观众中选择一位盟友，他恢复1d6乘以你等级一半的生命值。</p>\n<p>[[/r floor(@actor.level / 2)d6]]{按等级计算的生命值}</p>",
+            "prerequisites": [
+                {
+                    "value": "山贤同道入门"
+                }
+            ]
+        },
+        "Total Soul Concentration: Eruption": {
+            "name": "魂力全集中: 激 Total Soul Concentration: Eruption",
+            "description": "<p><strong>需求 </strong>你处于一种降魔秘法架势中</p>\n<hr />\n<p>你将整个灵魂引导为@Template[type:emanation|distance:30]范围的能量爆炸，造成每个等级1d6点伤害。伤害类型为善良，或者和你灵魂颜色相匹配的伤害类型。该区域内所有生物进行@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免，对抗你的职业DC。如果生物为魔族，则豁免有-3状态减值。失败时，受到伤害的生物还会@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。大失败时，则震慑1轮。在使用此能力之后，你的降魔秘法架势立即结束。如果你或你的盟友将你30尺内的一个魔族的生命值减少至0，你能在[[/r 1d4 #rounds]]{1d4轮}后再次进入降魔秘法架势。此外，在使用此能力后，你陷入@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}，或者如果你已经陷入毁灭，将你的毁灭状态值+1。以这种方式获得的毁灭需要花费正常2倍的休息时间才能降低，如果你的毁灭值等于你的最大濒死值，你会立即正常死亡。</p>",
+            "prerequisites": [
+                {
+                    "value": "降魔秘法：弑或降魔秘法：护"
+                }
+            ]
+        },
+        "Total Soul Concentration: Torrent": {
+            "name": "魂力全集中: 洪 Total Soul Concentration: Torrent",
+            "prerequisites": [
+                {
+                    "value": "魂力半集中: 流"
+                }
+            ],
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你处于一种降魔秘法架势中</p>\n<hr />\n<p>你对灵魂操纵的精通让你能更高程度地治愈自己。在1分钟内，你获得再生，数值为你等级的一半加上感知调整值，它会在你每轮开始时恢复你的生命值。当你拥有再生时，你不会因为受到伤害而死亡，并且你的濒死状态不会增加到会杀死你的数值，但是你的受伤状态值如果达到4或更高的话，你依然会@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，直到受伤被治愈。这些条件不适于受到来自魔族的邪恶伤害。如果上述伤害将会导致你陷入濒死状态，你还会获得@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。如果你已经有毁灭状态，将你的毁灭状态值+1。以这种方式获得的毁灭需要花费正常2倍的休息时间才能降低，如果你的毁灭值等于你的最大濒死值，你会立即正常死亡。</p>"
+        },
+        "Worldly Improvisation": {
+            "prerequisites": [
+                {
+                    "value": "山贤同道入门"
+                },
+                {
+                    "value": "即兴发挥"
+                }
+            ],
+            "name": "世俗即兴 Worldly Improvisation",
+            "description": "<p>你的旅行让你看惯人间百态，拓展了你的视野和能力。在你日常准备时，选择一项你未受训的技能。   当你使用即兴发挥专长进行该技能的检定时，你还能使用该技能的受训动作。</p>"
         }
     }
 }
