@@ -32,17 +32,17 @@
             ]
         },
         "Accurate Swing": {
-            "name": "Accurate Swing",
-            "description": "<p>You strike cleanly with wide, sweeping attacks to inflict maximum damage, taking advantage of your judged foe's fear to land a felling blow. If you Strike a creature you condemned with Harsh Judgment that has the frightened condition with a sweep melee weapon or a sweep unarmed attack, you gain a circumstance bonus to the Strike's damage equal to the number of weapon damage dice your weapon deals.</p>",
+            "name": "精确挥砍 Accurate Swing",
+            "description": "<p>你用宽阔的横扫攻击干净利落地造成最大伤害，利用死刑犯的恐惧来进行致命打击。你用具有横扫特征的近战武器或横扫特征的无武装打击对一个你用严厉审判判刑的惊惧生物进行打击时，你在该次打击的伤害检定中获得等于武器伤害骰数量的环境加值。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 },
                 {
-                    "value": "Harsh Judgement"
+                    "value": "严厉审判"
                 }
             ]
         },
@@ -328,14 +328,14 @@
             ]
         },
         "Discerning Gaze": {
-            "name": "Discerning Gaze",
-            "description": "<p>You have a sense for when people are lying. You gain a +1 circumstance bonus on your secret Perception checks to Sense Motive.</p>\n<p>If you use Sense Motive on a creature you have currently condemned with Harsh Judgment, your GM rolls the Perception check twice and takes the higher result (this is a fortune effect).</p>",
+            "name": "敏锐凝视 Discerning Gaze",
+            "description": "<p>你能察觉谎言。在用于察言观色的秘密察觉检定上，你获得+1环境加值。</p>\n<p>如果你对一个你使用严厉审判定为死刑犯的生物进行察言观色，你的GM应骰两次察觉检定，并取高（这是一个幸运效果）。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 }
             ]
         },
@@ -462,28 +462,29 @@
             ]
         },
         "Execution": {
-            "name": "Execution",
+            "name": "处决 Execution",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 },
                 {
-                    "value": "Harsh Judgement"
+                    "value": "严厉审判"
                 }
-            ]
+            ],
+            "description": "<p><strong>需求</strong> 你已经用严厉审判为一个敌人判刑</p>\n<hr />\n<p>你挥舞大刀，试图将死刑犯斩首。对死刑犯进行一次近战打击。如果命中，死刑犯受到额外8d6精准伤害，基础强韧豁免，对抗你的职业DC或法术DC，取其高者。如果死刑犯被处决降低到0HP，且需要首级才能活命，他们死亡。对于具有多个头颅的生物，处决通常只能在你切下它的最后一颗头时杀死生物。该生物对处决能力临时免疫一天。</p>"
         },
         "Executioner Weapon Training": {
-            "name": "Executioner Weapon Training",
-            "description": "<p>Your Gray Gardener training has made you deeply skilled with the weapons that execute with a swift chop to the neck. You become trained with the following weapons: @UUID[Compendium.pf2e.equipment-srd.War0uyLBx1jA0Ge7]{Battle Axe}, @UUID[Compendium.pf2e.equipment-srd.XGtIUZ4ZNKuFx1uL]{弯刃大刀 Falchion}, @UUID[Compendium.pf2e.equipment-srd.8COlYvHe6hKCXY8x]{Greataxe}, and @UUID[Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn]{弯刀 Scimitar}.</p>\n<p>Whenever you gain a class feature that grants you expert or greater proficiency with a given weapon or weapons, you also gain that proficiency for these weapons.</p>",
+            "name": "处刑武器训练 Executioner Weapon Training",
+            "description": "<p>你所接受的灰花匠训练使你对那些能迅速斩首的武器有了深刻了解。你对以下武器的熟练度变为受训：@UUID[Compendium.pf2e.equipment-srd.War0uyLBx1jA0Ge7]{战斧 Battle Axe}、@UUID[Compendium.pf2e.equipment-srd.XGtIUZ4ZNKuFx1uL]{弯刃大刀 Falchion}、@UUID[Compendium.pf2e.equipment-srd.8COlYvHe6hKCXY8x]{巨斧 Greataxe}和@UUID[Compendium.pf2e.equipment-srd.grmaV4GdoGD7sKbn]{弯刀 Scimitar}。</p>\n<p>当你因职业特性使你在某种武器或武器类型上获得专家或更高熟练度时，你也在以上武器上获得同等熟练度。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 }
             ]
         },
@@ -575,29 +576,29 @@
             "description": "<p>你的心智异常坚韧，能抵挡外来影响。当你将陷入@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}或呆滞状态时，你可以尝试一次@Check[type:flat|dc:17]检定。成功时，你不会陷入迷魂或呆滞状态。</p>"
         },
         "Frightful Condemnation": {
-            "name": "Frightful Condemnation",
-            "description": "<p><strong>触发</strong> You hit your condemned foe with a melee Strike in the same turn during which you condemned it with Harsh Judgment.</p>\n<p><strong>需求</strong> You have condemned a foe to death with Harsh Judgment.</p>\n<hr />\n<p>Your willingness to follow through on your pitiless judgment is frightful to the person you have condemned, and they begin to dread what you will do to them next. Your condemned foe is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}, or @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2} if the triggering Strike was a critical hit.</p>",
+            "name": "惊惧谴责 Frightful Condemnation",
+            "description": "<p><strong>触发</strong> 在你用严厉审判能力决定死刑犯的同一回合，你用近战打击命中它 </p>\n<p><strong>需求</strong> 你已经用严厉审判判决一个敌人死刑</p>\n<hr />\n<p>你愿意执行你无情的判决，这让被判刑的人感到恐惧，他们开始害怕你接下来会对他们做什么。你的死刑犯陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，若触发打击为重击则陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 },
                 {
-                    "value": "Harsh Judgement"
+                    "value": "严厉审判"
                 }
             ]
         },
         "Gardener's Resolve": {
-            "name": "Gardener's Resolve",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> You roll a failure (but not a critical failure) on a Will save against a fear effect.</p>\n<hr />\n<p>The Gray Gardeners are known for having nerves of steel and an unbreakable resolve. When you would be overwhelmed by terror, you can draw upon this resolve to keep your composure and remain undaunted. You take mental damage equal to twice your level, and the saving throw is a success.</p>",
+            "name": "花匠决意 Gardener's Resolve",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你在对抗恐惧效果的意志豁免中骰出失败（但不是大失败）</p>\n<hr />\n<p>灰花匠以拥有钢铁般的意志和牢不可破的决心而闻名。当你被恐怖所淹没时，你可以利用这种决心来保持你的镇定，不被吓倒。你受到等于你等级两倍的心灵伤害，该次豁免结果改为成功。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 }
             ]
         },
@@ -753,14 +754,14 @@
             "description": "<p>You slow your foes with a well-aimed attack. Make a Strike against your hunted prey with a -2 penalty. If you hit your prey, the creature takes a -5-foot status penalty to Speed. If you critically hit your prey, the creature takes a -10-foot status penalty to Speed. A creature immune to bleed damage does not take this penalty. The penalty can be removed using any method that removes persistent bleed damage or offers a flat check to do so, such as Administer First Aid.</p>"
         },
         "Harsh Judgement": {
-            "name": "Harsh Judgement",
-            "description": "<p>Choose one creature you can see, and loudly declare the creature's life forfeit by your judgment. That creature becomes your condemned foe until they are defeated, you use Harsh Judgment on a different creature, or the encounter ends. You gain a +2 circumstance bonus to Perception checks to Seek your condemned foe and on Intimidation checks to Demoralize them. You have a -1 circumstance penalty to Perception checks to Seek creatures other than your condemned foe and on Intimidation checks to Demoralize anyone other than your condemned foe.</p>\n<p>You typically can use Harsh Judgment only during an encounter, and if you try to use it to declare someone's life forfeit during exploration or downtime, you are likely to start an encounter.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raoz523QRsj5WjcF]{效果: Harsh Judgement}</p>",
+            "name": "严厉审判 Harsh Judgement",
+            "description": "<p>选择一个你能看到的生物，并大声宣布你判其死罪。生物成为你的死刑犯，持续到他们被击败、你对一个不同生物使用严厉审判、或遭遇结束时。你在搜索你的死刑犯的察觉检定、或对死刑犯进行挫败士气的威吓检定上获得+2环境加值。你对死刑犯外的生物进行搜索的察觉检定或挫败士气的威吓检定承受-1环境减值。</p>\n<p>你通常只能在遭遇中使用严厉审判，如果你试图在探索期或休整期用它来判某人死刑，你很可能会引发一场遭遇。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raoz523QRsj5WjcF]{效果: 严厉审判}</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 }
             ]
         },
@@ -1187,8 +1188,8 @@
             ]
         },
         "Reminder of the Greater Fear": {
-            "name": "Reminder of the Greater Fear",
-            "description": "<p><strong>频率</strong> once per 10 minutes</p>\n<p><strong>触发</strong> Another creature within 30 feet of you that can see you would gain the @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened} condition.</p>\n<hr />\n<p>You give a target a stern glower to remind them that it is you, and no one else, they should truly fear. Reduce the value of the frightened condition the creature would take by 1.</p>",
+            "name": "更大的恐惧 Reminder of the Greater Fear",
+            "description": "<p><strong>频率</strong> 每10分钟一次</p>\n<p><strong>触发</strong> 你周围30尺内的另一个能看到你的生物将获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态</p>\n<hr />\n<p>你给目标一个严厉的眼神，提醒他们真正应该害怕的是你，而不是其他任何人。将生物将承受的惊惧状态值减少1点。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
@@ -1400,20 +1401,20 @@
             ]
         },
         "Strident Command": {
-            "name": "Strident Command",
-            "description": "<p>The common folk heed your demands, and though your true foes rarely bend to your commands, when they do the hesitation can cost them the battle. You can cast <em>@UUID[Compendium.pf2e.spells-srd.aIHY2DArKFweIrpf]{Command}</em> once every 10 minutes as a 1st-level occult innate spell.</p>\n<p>If you're in your vigilante identity, you can command the target only to approach you, drop prone, or stand in place. If you're in your social identity, you can command the target only to run away or release what the target is holding.</p>",
+            "name": "严厉命令 Strident Command",
+            "description": "<p>普通人听从你的要求，虽然你真正的敌人很少屈服于你的命令，但当他们屈服于你的命令时，犹豫不决会使他们失去战斗力。你能以异能内在法术的形式施放1环<em>@UUID[Compendium.pf2e.spells-srd.aIHY2DArKFweIrpf]{命令术 Command}</em>，每10分钟一次。</p>\n<p>如果你正维持着侠客身份，你只能命令目标接近你、俯卧或站在原地。如果你正维持着社交身份，你只能命令目标逃跑或放开持握的物品。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 },
                 {
                     "value": "威吓技能熟练度为大师"
                 },
                 {
-                    "value": "Voice of Authority"
+                    "value": "权威之声"
                 }
             ]
         },
@@ -1455,14 +1456,14 @@
             "description": "<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>触发</strong> You apply an effect from your blood magic that lasts for 1 round.</p>\n<hr />\n<p>You have learned how to invest magic more deeply by witnessing Aroden's works. The triggering blood magic effect lasts for 1 minute instead of 1 round.</p>"
         },
         "Terrifying Countenance": {
-            "name": "Terrifying Countenance",
-            "description": "<p>You can erect a magical cowl that terrorizes your enemies. 每天一次, you can cast <em>@UUID[Compendium.pf2e.spells-srd.O6VQC1Bs4aSYDa6R]{Mask of Terror}</em> as an innate occult spell, targeting yourself. If you critically hit a creature that's temporarily immune to the spell, the creature's temporary immunity ends.</p>",
+            "name": "恐怖面容 Terrifying Countenance",
+            "description": "<p>你可以穿上一件魔法斗篷，让敌人感到恐惧。每天一次，你能以异能内在法术的形式施展<em>@UUID[Compendium.pf2e.spells-srd.O6VQC1Bs4aSYDa6R]{惊骇假面 Mask of Terror}</em>，目标为你自身。如果你对一个临时免疫该法术的生物造成重击，该生物的临时免疫结束。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 }
             ]
         },
@@ -1725,14 +1726,14 @@
             ]
         },
         "Voice of Authority": {
-            "name": "Voice of Authority",
-            "description": "<p>You easily command the attention of others, and when the time comes to turn threats into action, your authoritative voice causes foes to falter.</p>\n<p>Your voice be heard easily by any creatures within 300 feet if you wish, regardless of the level of ambient noise, although your voice can't penetrate <em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{Silence}</em> or similar effect. If you roll Intimidation for initiative, on the first round of combat, creatures that haven't acted yet are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} to you.</p>",
+            "name": "权威之声 Voice of Authority",
+            "description": "<p>你能轻易吸引别人的注意，当把威胁转化为行动时，你权威的声音会让敌人动摇。</p>\n<p>如果你愿意，你的声音能轻易被30尺内的任何生物听到，不管周围多么嘈杂，但你的声音无法穿透<em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{沉默术 Silence}</em>或类似效果。如果你用威吓骰先攻，在战斗的第一轮，尚未行动的生物对你@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>",
             "prerequisites": [
                 {
                     "value": "侠客入门"
                 },
                 {
-                    "value": "Member of the Grey Gardeners"
+                    "value": "灰花匠成员"
                 },
                 {
                     "value": "威吓技能熟练度为专家"
