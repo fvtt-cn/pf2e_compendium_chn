@@ -9,5 +9,107 @@
         "secondarycasters": "system.secondarycasters.value",
         "secondarycheck": "system.secondarycheck.value"
     },
-    "label": "Oracles+ Spells"
+    "label": "先知+法术 Oracles+ Spells",
+    "entries": {
+        "Monstrous Charge": {
+            "description": "<p>你将你内心的兽性付诸于速度之上。你在速度上获得10尺的状态加值。当你释放这个法术后，你可以行走两次并在移动结束之后进行一次使用无武装攻击的打击。如果你有其他可选择的移动方式，你也可以用掘地、攀爬、飞行、游泳来代替行走。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.gwbZ9tvDOkNaLVCP]{法术效果: 骇人冲锋}</p>\n<hr>\n<p><strong>升阶 (4环)</strong> 你获得的速度状态加值为15尺。</p>\n<p><strong>升阶 (7环)</strong> 你获得的速度状态加值为20尺。</p>",
+            "name": "骇人冲锋 Monstrous Charge",
+            "duration": "1分钟"
+        },
+        "Glimpse Future": {
+            "description": "<p>虽然你的眼睛不能让你看见周边发生的一切，但它们会向你展示未来的景象。当你施展这个法术时，你在持续时间内受训于一种特殊的预言学识，你可以用该学识对你的目标进行回忆知识动作，并采用你的魅力调整值而不是智力进行技能检定的掷骰。你可以对目标的近期未来提出问题（取决于GM的判断）。如果你在宗教方面具有传奇熟练度，你将获得预言学识的专家熟练度，但你不能通过其他任何方式提高你的预言学识的熟练度。在对抗你的目标时，你在AC和豁免检定上具有+1的环境加值。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.tpaa4USKQybXiSXd]{法术效果: 预知未来}</p>\n<p><em>同时将此状态添加到法术目标身上。</em></p>\n<p>@UUID[Compendium.oracles.oracles-effects.aJaT5xIQd4vplDJ5]{预知未来标记}</p>\n<hr>\n<p><strong>升阶 (6环)</strong> 在AC和豁免检定上的环境加值变为+2</p>\n<p><strong>升阶 (9环)</strong> 在AC和豁免检定上的环境加值变为+3</p>",
+            "name": "预知未来 Glimpse Future",
+            "target": "一个生物或物品",
+            "range": "30尺",
+            "duration": "1分钟"
+        },
+        "Bestial Howl": {
+            "description": "<p>你向你的对手发出可怕的嚎叫，足以让他们毛骨悚然。该区域内的敌对生物必须进行一次意志豁免。不管结果如何，他们都将在24小时内免疫这个法术的效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}.</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}，且@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}一轮。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 弥漫范围增加10尺</p>",
+            "name": "兽性嚎叫 Bestial Howl",
+            "duration": "可变"
+        },
+        "Doomsaying": {
+            "description": "<p>你呼唤目标将至的可怕未来，与他们分享你所蒙受的厄运。目标必须尝试一次意志豁免，无论结果如何，他都会对这个效果免疫10分钟。</p>\n<hr>\n<p><strong>大成功</strong> 你看到自己的命运正在逐渐来临，并且陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，如果你已经具有惊惧状态，你的惊惧状态会上升1。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物恐惧自己必然的未来，陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，并且在法术持续时间内不能将惊惧状态降低到1以下。下次目标进行攻击检定或是豁免掷骰时，必须骰两次并取更低的结果，之后法术结束。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.8B7CyaV4qIP8yoit]{法术效果: 末日预言}</p>\n<p><strong>大失败</strong> 如同失败，但是该生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}并且@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮。</p>\n<hr>\n<p><strong>升阶 (9环)</strong> 你可以选择的目标增加到2个。</p>",
+            "name": "末日预言 Doomsaying",
+            "target": "一个生物",
+            "range": "30尺"
+        },
+        "Rolling Rubble": {
+            "description": "<p>你在脚下产生岩石构成的小山丘，推动自己前进。你移动至多20尺，碎石在你脚下移动并推动你到达目的地，你忽视困难地形。你必须在有坚实立足点的空地上结束你的移动。你穿过的每一个方格都会变成困难地形。这个移动不是快步，你只是以类似的方式跨越一段距离，它仍然会引发因移动触发的反应。你不能携带自己以外的其他人一起移动。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 你移动的距离增加5尺。</p>",
+            "name": "滚动碎石 Rolling Rubble",
+            "range": "20尺"
+        },
+        "Raise Mountain": {
+            "description": "<p>你用你秘示域带来的所有重量狠狠跺脚，山丘从你的脚下升起。该地区的所有方格都比前一个方格升高5尺，形成一个岩石制成的不平坦台阶，其高度等于锥形范围的长度，这个区域成为困难地形和不稳地面。如果一个生物占据了你施展这个法术范围内的某个方格，它就会被带到形成地形的顶端。该生物可以尝试一个反射豁免（DC等于施法者的法术DC），成功后，该生物可以尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}或移动到相邻的未被占用的方块。如果岩层会比天花板高，它会紧紧地靠在天花板上，但不会再高。被困在队形和天花板之间的生物不会受到伤害（根据GM的判断，如钟乳石或其他危险），但会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。该生物可以尝试@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}检定以释放自己，但之后必须抓住边缘，@UUID[Compendium.pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climb}下来或是从顶端坠落，抓住边缘和逃脱的DC都等于反射豁免的DC。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 锥形范围的长度提高5尺。</p>",
+            "name": "山脉隆起 Raise Mountain",
+            "duration": "1分钟"
+        },
+        "Juggernaut of Jagged Stone": {
+            "description": "<p>你召唤自己内心的山峰，让岩石复盖在你身上，而你成为它的化身，表现为一座行走的活山。你获得10点物理伤害抗力，并对精准伤害免疫。你变为大体型，并且不需要呼吸。你不能施放法术，启动物品，或使用具有攻击或操作特性的动作，除非该法术允许。你获得后续能力：</p>\n<p><strong>拳头 Fist</strong> <span class=\"pf2-icon\">a</span> 攻击+22 ，伤害3d12钝击</p>\n<p><strong>践踏 Trample <span class=\"pf2-icon\">t </span></strong>你当前的体型或更小，拳头，法术DC。如果你以直线行走，你最多可以行走等于你速度三倍的距离。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.4WLVZPH8b7XRjV3n]{法术效果: 锐石猛车}</p>\n<hr>\n<p><strong>升阶 (8环)</strong> 你的体型变为超大型，你的拳头触及范围变为10尺并且攻击调整值为+28，获得一个额外的伤害骰。</p>\n<p><strong>升阶 (10环)</strong> 你的体型变为巨型，你的拳头触及范围为15尺并且攻击调整值为+33。</p>",
+            "name": "锐石猛车 Juggernaut of Jagged Stone",
+            "duration": "1分钟"
+        },
+        "Sheets Of Ice": {
+            "description": "<p>你丢下一片从指尖冒出的冰层。对@Template[type:cone|distance:10]内的所有生物造成[[/r 1d8[cold]]]伤害，该区域内的生物必须尝试一次基础反射豁免。该区域的地面覆盖了一层冰面，成为困难地形和不稳地面，持续1轮。</p>\n<p><span class=\"pf2-icon\">d </span>（姿势、语言）区域为10尺锥形。</p>\n<p><span class=\"pf2-icon\">t</span> （材料，姿势，语言）区域为20尺锥形。</p>\n<p><strong>2轮</strong> 区域为30尺锥形，如果你花费3个动作来施放该法术，你可以不完成施法，并在你的下个回合花费额外3个动作来进一步增强该法术。如果你选择这样做，这个法术造成的伤害会提升[[/r 1d8[cold]]]，并且造成的冰面持续时间延长一轮。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 该初始伤害，以及2轮施法时间的额外伤害，各增加[[/r 1d8[cold]]]，冰面持续的时间和2轮施法延长的冰面持续时间增加1轮。</p>",
+            "name": "难履薄冰 Sheets of Ice",
+            "time": "2动作~2轮"
+        },
+        "Glacial Sculpting": {
+            "description": "<p>你从冰雪中创造出一个临时的物体。它必须是一个5尺的立方体或更小的固体物体。它不能具有复杂的艺术图案或复杂的运动部件，不能具有任何价值或是其他类似效果等，这个物体的硬度为5，并且完全由冰制成。它显然是临时用冰建造的，因此不能作为真品出售或假冒。如果物体暴露在火或热的环境中，每暴露1轮，它的持续时间就会额外减少1轮。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 你制造出来的物体的硬度提升5。</p>",
+            "name": "冰川雕刻 Glacial Sculpting",
+            "duration": "1分钟",
+            "range": "0尺"
+        },
+        "Rapid Fever": {
+            "description": "<p>目标突然发烧，这使他迷失方向。它必须尝试一次强韧豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标在他的下一回合结束前都会陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>\n<p><strong>失败</strong> 目标的恶心状态增加1，并陷入目眩。</p>\n<p><strong>大失败</strong> 目标的恶心状态增加1，并在他的下一回合结束前陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}，之后在持续时间内陷入目眩。</p>\n<hr />\n<p><strong>升阶 (6环)</strong> 你可以选择至多两个满足条件的生物作为目标。</p>\n<p><strong>升阶 (9环)</strong> 你可以选择至多四个满足条件的生物作为目标。</p>",
+            "name": "迅速发热 Rapid Fever",
+            "target": "一个受到疾病影响或处于恶心状态的活物",
+            "range": "60尺",
+            "duration": "1分钟"
+        },
+        "Rot From Within": {
+            "description": "<p>你受诅咒的存在本身会加速那些患病者的死亡，从而增强你自己的疾病力量。每个生物在弥漫范围内陷入恶心状态或增加恶心状态时，它必须尝试一次强韧豁免。你恢复等于法术造成伤害的一半的生命值（包括流失状态造成的伤害）。</p>\n<hr />\n<p><strong>大成功</strong> 目标临时免疫1天。</p>\n<p><strong>成功</strong> 如同大成功，但是目标受到[[/r 2d8[negative]]]伤害。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，如果他已经陷入流失状态，则提升流失状态1点。目标受到[[/r 4d8[negative]]]伤害。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}或将流失状态提升2，目标受到[[/r 8d8[negative]]]伤害。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 目标在豁免成功时受到的负能量伤害提升1d8，失败时提升2d8，大失败提升4d8。</p>",
+            "name": "内部腐烂 Rot From Within",
+            "duration": "1分钟"
+        },
+        "Light Prison": {
+            "description": "<p>你通常以立方体的形状创建光之监牢。立方体墙壁两侧的生物都看不到在另一侧的生物。邻近立方体的生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，试图穿过立方体的生物必须尝试一次强韧豁免才能突破光幕。</p>\n<hr />\n<p><strong>大成功</strong> 该生物突破光幕，打破立方体并结束法术。</p>\n<p><strong>成功</strong> 如大成功，但只有该生物经过的那一方光幕被摧毁，该生物陷入1轮的目眩。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，目眩1分钟，无法通过光幕移动。下一次该生物试图通过立方体时，它将其强韧豁免成功度视为更好一级。</p>\n<p><strong>大失败</strong> 如失败，但是生物在下次通过时不会将其成功度视为更好的一级。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 立方体边长增加5尺。</p>",
+            "name": "光之监牢 Light Prison",
+            "range": "30尺",
+            "duration": "1分钟"
+        },
+        "Flash Of Brilliance": {
+            "description": "<p>你使射程内的某个光源，如承载光亮法术的物体、火炬或太阳棒，发出强光。距离目标@Template[type:burst|distance:20]范围内的所有生物必须尝试进行一次强韧豁免。在 施展完成后，法术会自动熄灭非魔法光亮，并试图反制魔法光亮。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮并目眩1分钟。该生物可以通过一个交互动作揉眼睛来解除目盲状态。</p>\n<p><strong>大失败</strong> 如同失败，但是该生物在目眩时还会陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>",
+            "name": "光芒一现 Flash Of Brilliance",
+            "target": "一个发光的物体",
+            "range": "30尺"
+        },
+        "Rainbow Blade": {
+            "description": "<p>目标武器的强光在光谱中闪烁着各种颜色。这把武器造成的额外的火焰伤害，等同于该武器一个伤害骰，并在重击时使打击目标@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}一轮。在持续时间内仅一次，持用者可以选择充能一次打击单击，赋予其额外效果。在这一击完成后，武器上的光亮法术熄灭，这一法术结束。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.q2Yk2zYYvvKENgbJ]{法术效果: 彩虹剑}</p>\n<hr>\n<p><strong>大成功</strong> 目标@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，目眩1分钟。</p>\n<p><strong>成功</strong> 目标目盲1轮。</p>\n<p><strong>大失败</strong> 你目盲1轮。</p>",
+            "name": "彩虹剑 Rainbow Blade",
+            "target": "一把成为你光亮法术有效目标的武器",
+            "duration": "1分钟"
+        },
+        "Assume Destiny": {
+            "name": "承担命运 Assume Destiny",
+            "description": "<p><strong>触发 </strong>一个盟友在对抗某个效果的豁免时失败，而你获得在豁免中成功。</p>\n<p>当一个可怕的命运将降临到你的盟友头上时，你时常会预见到它的到来，并准备好去扮演一个殉道者的角色。通过你所见的景象对未来进行有限的控制，你交换了自己与盟友的命运，用你的掷骰结果交换盟友的。</p>\n<hr>\n<p><strong>升阶 (7环) </strong>如果你盟友原本的结果为大失败，你只需要承受失败的结果。</p>",
+            "target": "一个盟友",
+            "range": "60尺"
+        },
+        "Consume The Flesh": {
+            "name": "生啖汝肉 Consume The Flesh",
+            "description": "<p>你吃下猎物的血肉，从而汲取他们的活力与力量。对一个活物或有血肉的目标进行一次由你秘示域赋予的无武装打击。目标将在打击成功时陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，或者大成功时陷入@Compendium[pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}。如果目标的生命值因此降到0点，在你捕食目标时他会立刻死亡。你获得相当于造成伤害（包括目标因流失状态损失的生命值）的临时生命值。</p>"
+        },
+        "Coughing Fit": {
+            "name": "剧烈咳嗽 Coughing Fit",
+            "description": "<p>目标突然咳嗽起来。它必须尝试一次强韧豁免。在持续时间内，目标在用一个动作干呕来减少恶心状态的同时，任何与他邻接的生物也必须尝试一次同样的强韧豁免。当法术的初始目标不再受到法术的影响时，所有受影响的生物身上的法术效果都会结束。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标成为该疾病的携带者，但没有陷入恶心状态。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>大失败</strong> 目标陷入恶心1，并且当他处于恶心状态时，不能使用反应动作。</p>",
+            "target": "一个活物",
+            "range": "30尺"
+        },
+        "Fractal Frosting": {
+            "name": "分型结霜 Fractal Frosting",
+            "description": "<p>冰霜悦动在你的指尖，分裂成微小的裂片造就冰霜的射线。你施放@Compendium[pf2e.spells-srd.gYjPm7YwGtEa1oxh]{冰冻射线 Ray of Frost}作为施放这个法术的一部分。在分型结霜的持续时间内，你可以将冰冻射线的射程变为30尺，但是每次最多创造出三条冰冻射线，必须分别指定不同的目标。</p>\n<hr>\n<p><strong>升阶 (9环)</strong> 当你在分型结霜的持续时间内施放<em>冰冻射线</em>时，成功的攻击会让目标在速度上承受-5尺的状态减值，或是大成功时承受-15尺的状态减值。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.Iz6USGchUgj9xcPQ]{法术效果: 分型结霜 (9环)}</p>",
+            "duration": "1分钟"
+        }
+    }
 }
