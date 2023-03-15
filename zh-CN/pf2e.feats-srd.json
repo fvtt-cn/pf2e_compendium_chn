@@ -649,14 +649,14 @@
             "description": "<p><strong>先决条件</strong> 你目睹了美杜莎阿莱西娅的死亡，在她毁灭之后，她的肉体玻璃化能力被你继承。</p>\n<hr />\n<p>即便对你来说是个迷，但你的血液和肉体还是掌握了的秘法玻璃技艺之秘。你的一部分皮肤会毫无征兆地发出玻璃的反光。通过将玻璃聚集起来，你能够制造一个强大的魔法黑曜石保护层。每日一次，你能以内在原能法术的形式对自己施放<em>@UUID[Compendium.pf2e.spells-srd.2BV2yYPfVJ5zirZt]{石肤术 Stoneskin}</em>，只是法术覆盖你的是一层玻璃而不是石头。在这个内在石肤术生效的过程中，你获得震碎玻璃反应动作。在18级时，石肤术升阶到6环而不是4环。</p>\n<hr />\n<p><strong>震碎玻璃 Shatter Glass</strong> <span class=\"pf2-icon\">r</span></p>\n<p><strong>触发</strong> 一个相邻生物以近战武器或非武装攻击打击你并且造成伤害；</p>\n<p><strong>需求</strong> 你的内在石肤术正在生效；</p>\n<p><strong>效果</strong> 你震碎你的一部分玻璃皮肤来伤害攻击者。攻击者受到[[/r 3d10[slashing]]]伤害并且石肤术的持续时间减少1分钟。在14级时，伤害增加到[[/r 4d10[slashing]]]伤害，并且在18级时伤害增加到[[/r 5d10[slashing]]]伤害。</p>"
         },
         "Godless Healing": {
-            "name": "Godless Healing",
-            "description": "<p>You recover an additional 5 Hit Points from a successful attempt to Treat your Wounds or use Battle Medicine on you. After you or an ally use Battle Medicine on you, you become temporarily immune to that Battle Medicine for only 1 hour, instead of 1 day.</p>",
+            "name": "无神主义疗法 Godless Healing",
+            "description": "<p>每当对你进行的治疗伤口或战地医疗的尝试成功时，你额外恢复5点HP 。在你或盟友对你使用战地医疗后，你对该来源战地医疗暂时免疫一小时，而非一天。</p>",
             "prerequisites": [
                 {
                     "value": "战地医疗"
                 },
                 {
-                    "value": "can't have a patron deity"
+                    "value": "不能信仰神祇"
                 }
             ]
         },
@@ -746,8 +746,8 @@
             "description": "<p>你的心灵就像黑暗娜迦一样，能挫败试图读取你想法的举动。任何试图对你进行读心来获取信息的举动必须在一次反制检定中成功，对抗你的职业DC或法术DC，取其高者；若失败，对方不会获得任何信息。反制等级等于你等级的一半，向上取整。</p>"
         },
         "Guided by the Stars": {
-            "name": "Guided by the Stars",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> You are about to attempt a skill check or saving throw.</p>\n<hr />\n<p>The stars grant you insights that guide your actions. You roll twice and take the better result. If it's night and you can see the stars, you gain a +1 circumstance bonus to the triggering roll.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raLQ458uiyd3lI2K]{效果: Guided by the Stars}</p>"
+            "name": "群星指引 Guided by the Stars",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你将要尝试技能检定或豁免检定</p>\n<hr />\n<p>群星给予你的见解指引了你的行动。你双骰取佳。若在晚上而且你能看见群星，你在此触发骰猛获得+1环境加值。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.raLQ458uiyd3lI2K]{效果: 群星指引}</p>"
         },
         "Hamstring Strike": {
             "name": "Hamstring Strike",
@@ -2127,7 +2127,7 @@
         },
         "Undying Conviction": {
             "name": "不灭信念 Undying Conviction",
-            "description": "<p>你的存在对于不死生物仆从有强化效果。在你控制下的不死生物，如果位于你@Template[type:emanation|distance:30]范围内，则对抗正能量伤害的豁免骰和抵抗使它们被控制的效果的意志豁免骰有+2状态加值。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.cGwFYusGTsJR3x3P]{Effect: Under Control}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.e6mv68aarIbQ3tXL]{效果: 不灭信念 }</p>\n<p><strong>特殊</strong> 该专长具有和你法术根源相一致的特征。</p>",
+            "description": "<p>你的存在对于不死生物仆从有强化效果。在你控制下的不死生物，如果位于你@Template[type:emanation|distance:30]范围内，则对抗正能量伤害的豁免骰和抵抗使它们被控制的效果的意志豁免骰有+2状态加值。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.cGwFYusGTsJR3x3P]{效果: 控制下}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.e6mv68aarIbQ3tXL]{效果: 不灭信念 }</p>\n<p><strong>特殊</strong> 该专长具有和你法术根源相一致的特征。</p>",
             "prerequisites": [
                 {
                     "value": "能够创造或操纵不死生物"
@@ -2981,7 +2981,7 @@
             "description": "<p>当神祇不干涉时，你的治疗更强。当你为生物@UUID[Compendium.pf2e.actionspf2e.1kGNdIIhuglAjIp9]{治疗伤害 Treat Wounds}时，如果目标在过去24小时内没有从神术魔法中恢复生命值，你的检定成功时将得到大成功的结果，并使目标恢复相应的生命值。</p>",
             "prerequisites": [
                 {
-                    "value": "Godless Healing"
+                    "value": "无神主义疗法"
                 },
                 {
                     "value": "你追随人本主义(the Laws of Mortality)"
@@ -6339,7 +6339,7 @@
             "description": "<p><strong>需求</strong> 你分别用不同的手持用两把近战武器。</p>\n<hr />\n<p>你预读猎物的动作，将其转换为破绽，使用一把武器的失败攻击会给另一把武器创造机会。使用一把如需求中所述的武器进行一次近战打击。这次打击获得如下失败效果。</p>\n<p><strong>失败</strong> 你造成另一把需求中所述的武器命中时的伤害，不包括所有伤害骰（这会移除武器符文，法术，特殊能力的伤害骰，而不只是武器伤害骰）。</p>"
         },
         "Twinned Defense (Fighter)": {
-            "name": "双重防御(战士) Twinned Defense (Fighter)",
+            "name": "双重防御 Twinned Defense (战士)",
             "description": "<p><strong>需求</strong> 你正持用两柄武器，每柄需在不同手中。</p>\n<hr />\n<p>你总能以副手武器应对针对你的攻击。当你处于此架势中时，你总是得到@UUID[Compendium.pf2e.feats-srd.Y8LHfkzGyOhPlUou]{双重格挡 Twin Parry}动作的效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3eHMqVx30JGiJqtM]{架势：双重防御}</p>",
             "prerequisites": [
                 {
@@ -6348,7 +6348,7 @@
             ]
         },
         "Twinned Defense (Swashbuckler)": {
-            "name": "双重防御(浪客) Twinned Defense (Swashbuckler)",
+            "name": "双重防御 Twinned Defense (浪客)",
             "description": "<p><strong>需求</strong> 你正持用两柄武器，每柄需在不同手中。</p>\n<hr />\n<p>你总能以副手武器应对针对你的攻击。当你处于此架势中时，你总是得到@UUID[Compendium.pf2e.feats-srd.Y8LHfkzGyOhPlUou]{双重格挡 Twin Parry}动作的效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3eHMqVx30JGiJqtM]{架势：双重防御}</p>",
             "prerequisites": [
                 {
@@ -11118,7 +11118,7 @@
         },
         "Mobile Shot Stance": {
             "name": "巧射姿态 Mobile Shot Stance",
-            "description": "<p>你的射击变得机敏而致命。当你处于此架势时，你的远程普通攻击不会触发借机攻击或其他会因远程攻击而触发的反应动作。</p>\n<p>如果你有@UUID[Compendium.pf2e.feats-srd.O2MwufzEHbuThoGr]{借机攻击 Attack of Opportunity}，你可以用持用的一柄装填好的远程武器来使用它。触发此能力的生物需在你5尺范围之内才能使用它。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.NWOmJ6WJFheaGhho]{架势：巧射姿态}</p>"
+            "description": "<p>你的射击变得机敏而致命。当你处于此架势时，你的远程普通攻击不会触发借机攻击或其他会因远程攻击而触发的反应动作。</p>\n<p>如果你有@UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{借机攻击 Attack of Opportunity}，你可以用持用的一柄装填好的远程武器来使用它。触发此能力的生物需在你5尺范围之内才能使用它。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.NWOmJ6WJFheaGhho]{架势：巧射姿态}</p>"
         },
         "Titan Wrestler": {
             "name": "巨人摔角术 Titan Wrestler",
@@ -13521,7 +13521,7 @@
         },
         "Combat Reflexes": {
             "name": "战斗反射 Combat Reflexes",
-            "description": "<p>你能迅捷地抓住敌人的空当。在你的每个回合开始恢复你的动作时，你获得额外的一个仅能用于@UUID[Compendium.pf2e.feats-srd.O2MwufzEHbuThoGr]{借机攻击 Attack of Opportunity}的反应动作。</p>"
+            "description": "<p>你能迅捷地抓住敌人的空当。在你的每个回合开始恢复你的动作时，你获得额外的一个仅能用于@UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{借机攻击 Attack of Opportunity}的反应动作。</p>"
         },
         "Combat Grab": {
             "name": "战斗擒抱 Combat Grab",
@@ -20359,7 +20359,7 @@
         },
         "Disruptive Stance": {
             "name": "破坏姿态 Disruptive Stance",
-            "description": "<p>最细微的分神也能激起你的猛攻，你时刻准备着破坏敌人的行动。</p>\n<p>在此架势下，你可以在一个生物在你的触及范围内使用专注动作，而不仅是移动与操作（manipulate）动作时使用@UUID[Compendium.pf2e.feats-srd.O2MwufzEHbuThoGr]{借机攻击 Attack of Opportunity}。</p>\n<p>除此之外，若此次攻击命中（而不仅是大成功），你破坏触发此动作的专注与操作动作。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.qBR3kqGCeKp3T2Be]{架势：破坏姿态}</p>"
+            "description": "<p>最细微的分神也能激起你的猛攻，你时刻准备着破坏敌人的行动。</p>\n<p>在此架势下，你可以在一个生物在你的触及范围内使用专注动作，而不仅是移动与操纵动作时使用@UUID[Compendium.pf2e.actionspf2e.KAVf7AmRnbCAHrkT]{借机攻击 Attack of Opportunity}。</p>\n<p>除此之外，若此次攻击命中（而不仅是大成功），你破坏触发此动作的专注与操作动作。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.qBR3kqGCeKp3T2Be]{架势：破坏姿态}</p>"
         },
         "Engine of Destruction": {
             "name": "破坏引擎 Engine of Destruction",
@@ -22960,11 +22960,11 @@
             ]
         },
         "Ricochet Stance (Fighter)": {
-            "name": "腾跃式(战士) Ricochet Stance (Fighter)",
+            "name": "腾跃式 Ricochet Stance (战士)",
             "description": "<p>你摆出一个设计来让你的投掷武器弹回来的架式。当你进入此架式，任何你作为远程打击一部分所使用，造成钝击或挥砍伤害的投掷武器会立刻返回你的手上，让你能用来进行额外打击。 </p>\n<p>你必须在武器列出的射程增幅之内，并且有一只空的手能接住武器。如果你用投掷武器进行一次超出射程增幅的远程打击，那该武器会朝你这边飞回射程增幅距离后落在地上。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Unfl4QQURWaX2zfd]{架势：腾跃式}</p>"
         },
         "Ricochet Stance (Rogue)": {
-            "name": "腾跃式（游荡者） Ricochet Stance (Rogue)",
+            "name": "腾跃式 Ricochet Stance (游荡者)",
             "description": "<p>你摆出一个设计来让你的投掷武器弹回来的架式。当你进入此架式，任何你作为远程打击一部分所使用，造成钝击或挥砍伤害的投掷武器会立刻返回你的手上，让你能用来进行额外打击。 </p>\n<p>你必须在武器列出的射程增幅之内，并且有一只空的手能接住武器。如果你用投掷武器进行一次超出射程增幅的远程打击，那该武器会朝你这边飞回射程增幅距离后落在地上。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Unfl4QQURWaX2zfd]{架势：腾跃式}</p>"
         },
         "Shinstabber": {
@@ -30247,6 +30247,50 @@
                     "value": "盾牌格挡 shield block"
                 }
             ]
+        },
+        "Aerial Piledriver": {
+            "prerequisites": [
+                {
+                    "value": "摔跤手入门"
+                }
+            ],
+            "name": "飞天打桩击 Aerial Piledriver",
+            "description": "<p><strong>需求</strong> 你将一个生物@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。</p>\n<hr />\n<p>你将自己和对手抛向空中，然后将敌人砸落到地面。对被你擒抱或束缚的生物进行一次无武装近战攻击。这次攻击造成每个武器骰子[[/r 1d6[additional]]]伤害，并且在成功、失败和大失败时有以下额外效果。</p>\n<p><strong>成功</strong> 目标着地时处于@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>失败</strong> 你失去了对目标的控制，它不再被你擒抱或束缚。</p>\n<p><strong>大失败</strong> 你同时失去对目标的抓握和平衡。你倒地，而目标不再被你擒抱或束缚。</p>"
+        },
+        "Quick Setup": {
+            "name": "快速安装 Quick Setup",
+            "description": "<p>你已然学会如何轻松地安装简单的手工品。如果物品等级至少小于你等级 6 级，则你的消耗品制作时间为1天，并且低于你等级 6 级的永久物品制作时间为3天。</p>\n<p>如果你加快安装并对于至少低于你等级 6 级的物品减少制作时间到 1 天以内，你便可以取而代之的在2小时内将他们安装完成（如果你自己拥有工具和原材料，你便可以在冒险的一天内完成这些事情）。如果你加快安装比你低至少6级的永久物品，并将制作时间缩短到1天以内，你可以在4小时内完成安装。</p>",
+            "prerequisites": [
+                {
+                    "value": "手艺技能熟练度为大师"
+                }
+            ]
+        },
+        "Flower Magic": {
+            "name": "花之魔法 Flower Magic",
+            "description": "<p>世界上的某些魔法很容易流过你的汁液。 你每天可以将<em>@UUID[Compendium.pf2e.spells-srd.YWrfKetOqDwVFut7]{树肤术 Barkskin}</em>和<em>@UUID[Compendium.pf2e.spells-srd.dileJ0Yxqg76LMvu]{树化术 Tree Shape}</em>作为 2环奥术内在法术施放一次。 你以这种方式施展的树化术会将你变成一株大型开花植物，如玫瑰丛或丁香花丛，而不是一棵树。</p>"
+        },
+        "Warding Rune": {
+            "name": "守护符文 Warding Rune",
+            "description": "<p>你的符文提供一种可以保护你免受特定魔法学派的魔法所影响的防护效果。选择预言系以外的一种魔法学派。你的身体会获得与该学派对应的符文，并让你在所有对该学派的豁免上获得+2环境加值。</p>",
+            "prerequisites": [
+                {
+                    "value": "符痕师入门"
+                }
+            ]
+        },
+        "Solar Rejuvenation (Ghoran)": {
+            "description": "<p>太阳的温暖和光芒赋予你生机。如果你白天在户外休息10分钟，你会恢复的等于[[/r (floor(@actor.level/2)*@actor.con.mod)[Healing]]]{你的体质调整值×你等级的一半}生命值。你也能在从@UUID[Compendium.pf2e.actionspf2e.1kGNdIIhuglAjIp9]{治疗伤害 Treat Wounds}中获得治疗时享受此增益。</p>",
+            "name": "日光复苏 Solar Rejuvenation (蒿兰人)"
+        },
+        "Bizarre Transformation": {
+            "description": "<p>你所呈现出的形态挑战着自身的信仰——荒诞形状的扭曲鹿角或者带有酸性的唾液。若你的下个动作是施放<em>@UUID[Compendium.pf2e.spells-srd.8RWfKConLYFZpQ9X]{野性变身 Wild Shape}</em>，则可以改变<em>野性变身</em>所赋予的单个非武装攻击的伤害类型，使其变为后述类型中的一种：酸液、钝击、寒冷、电击、火焰、毒素、穿刺、或挥砍。被选取的攻击会获得相应的特征。</p>",
+            "prerequisites": [
+                {
+                    "value": "野性变身"
+                }
+            ],
+            "name": "诡奇变化 Bizarre Transformation"
         }
     },
     "mapping": {
