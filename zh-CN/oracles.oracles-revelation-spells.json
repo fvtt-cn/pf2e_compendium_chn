@@ -110,6 +110,123 @@
             "name": "分型结霜 Fractal Frosting",
             "description": "<p>冰霜悦动在你的指尖，分裂成微小的裂片造就冰霜的射线。你施放@Compendium[pf2e.spells-srd.gYjPm7YwGtEa1oxh]{冰冻射线 Ray of Frost}作为施放这个法术的一部分。在分型结霜的持续时间内，你可以将冰冻射线的射程变为30尺，但是每次最多创造出三条冰冻射线，必须分别指定不同的目标。</p>\n<hr>\n<p><strong>升阶 (9环)</strong> 当你在分型结霜的持续时间内施放<em>冰冻射线</em>时，成功的攻击会让目标在速度上承受-5尺的状态减值，或是大成功时承受-15尺的状态减值。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.Iz6USGchUgj9xcPQ]{法术效果: 分型结霜 (9环)}</p>",
             "duration": "1分钟"
+        },
+        "Wishful Thinking": {
+            "description": "<p>你通过使用幻象来帮助盟友。这意味着无论在任何情况下，你已经采取了足够的准备行动，以协助你的盟友以一个敌人为目标进行下一次攻击检定或技能检定，只要你维持施法，就继续算作已经做好了协助动作的准备。当你在之后进行协助的反应动作时，你可以用欺骗检定代替通常的技能检定，如果你骰出的结果为失败，则视为成功。如果你在欺骗上具有传奇熟练度，你自动大成功。敌人可以正常的通过@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}动作来尝试不相信眼前的幻象。如果他成功了，你就不能在为对抗这个敌人的检定中提供协助动作。意识到幻象的敌人可以采用指出位置动作来说明幻象是假的，如果他这样做，法术立刻停止。</p>",
+            "name": "一厢情愿 Wishful Thinking",
+            "target": "一个盟友",
+            "range": "30尺",
+            "duration": "维持,最多1分钟"
+        },
+        "Mind's Eye Wink": {
+            "description": "<p>你用心灵之眼将你的梦境表现在目标上，并诞生一种虚幻的危险。</p>\n<p><strong>区域 </strong>该区域所有坚实的地面都是来自梦境的绚丽色彩。处于该区域内或通过该区域的生物必须进行一次意志豁免。豁免失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到他们离开这个区域1轮后，大失败的生物还会在目眩时陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>目标</strong> 如果你对无人看管的物体施展法术，任何试图拾取该物体的人都必须成功地对你的法术DC进行意志豁免，否则他们认为该物体是危险的，会对他们造成伤害。如果你的目标是一个有人看管的物体或一个生物捡起的无人看管的物体，拥有该物体的生物必须尝试一次意志豁免。如果失败，持有者或持用者将对涉及使用该物品的所有检定具有-1的环境减值或是大失败时的-2减值。生物可以尝试使用@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}动作来拒绝相信该效果。如果它成功地不相信，它会在剩余的时间内忽略这个法术的效果。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.MRmk2FTtgLo1YbQI]{法术效果: 心灵之眼 (失败)}</p>\n<p>@UUID[Compendium.oracles.oracles-effects.D3hicZONMeKpsORK]{法术效果: 心灵之眼 (大失败)}</p>",
+            "name": "心灵之眼 Mind's Eye Wink",
+            "target": "4个不重叠的5尺方格，或一个重量不超过1负载的物体",
+            "range": "30尺",
+            "duration": "维持,最多1分钟"
+        },
+        "Sharp Note": {
+            "description": "<p>你释放出一阵特别尖锐的音符，钻入目标的脑海，造成[[/r 1d8[sonic]]]伤害，区域内的每个生物必须尝试一次强韧豁免。</p>\n<hr>\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物只受一半伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害并陷入1轮的@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。</p>\n<p><strong>大失败</strong> 该生物承受双倍伤害，并陷入1分钟的耳聋，在他耳聋时还会承受[[/r 1d4[persistent,bleed]]]伤害。</p>\n<hr>\n<p><strong>升阶 (+2)</strong> 音波伤害提升2d8，持续流血伤害提升[[/r 1d4]]。</p>",
+            "name": "尖锐音符 Sharp Note"
+        },
+        "Enchanting Rhapsody": {
+            "description": "<p>你用你的音乐来影响你的敌人，让他们如你想的一样行动。在法术范围内开始或结束回合的敌方生物必须进行一次意志豁免。</p>\n<hr>\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标在对抗心灵效果的豁免上遭受-1的状态减值。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.GMNe1DOjU4TJ2c5O]{法术效果: 迷人狂想曲 (成功)}</p>\n<p><strong>失败</strong> 目标因为音乐陷入@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，在对抗心灵效果的豁免上遭受-2的状态减值。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.p6OnfU89mpuuU9Ji]{法术效果: 迷人狂想曲 (失败)}</p>\n<p><strong>大失败</strong> 如同失败，但是目标在迷魂状态下无法离开法术的范围。当他处于迷魂状态时还必须将自己每回合的第1个动作用于@UUID[Compendium.pf2e.actionspf2e.EEDElIyin4z60PXx]{演出 Perform}来配合音乐声跳舞。</p>\n<hr>\n<p><strong>升阶 (7环)</strong> 弥漫范围变为@Template[type:emanation|distance:30]。</p>",
+            "name": "迷人狂想曲 Enchanting Rhapsody",
+            "duration": "1分钟"
+        },
+        "Explosive Crescendo": {
+            "description": "<p><strong>触发</strong> 你引起了音乐的爆炸性效果作为高潮的迸发。目标必须尝试进行一次强韧豁免。</p>\n<hr>\n<p>你引起了音乐的爆炸性效果作为高潮的迸发。目标必须尝试进行一次强韧豁免。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}并且@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮。</p>\n<p><strong>大失败</strong> 目标@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}并且耳聋1分钟，这个效果具有失能特征。</p>",
+            "name": "爆炸渐强音 Explosive Crescendo",
+            "target": "一个生物",
+            "range": "30尺"
+        },
+        "Guidance (They Live Again)": {
+            "description": "<p>你请求神力的引导，赋予目标在持续时间结束前的一次攻击骰，察觉检定，豁免骰，或者技能检定上获得+1状态加值。目标在掷骰前选择是否使用该加值。如果目标使用该加值，该法术结束。无论怎样结束，该目标接下来会暂时免疫1小时。</p>\n<p><strong>觉醒</strong> 你的先祖影响着目标。当你施展<em>神导术</em>时，你用你先祖的诅咒增益来代替原本的效果。但是在选定的掷骰中是使用增益并不会停止这个法术的效果。如果目标生物使用了其他先祖列出的任何动作，这个法术会立刻停止，并且目标生物必须进行一次DC4的纯骰检定否则动作会丢失。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.FEJ8tIl11ndlIpe3]{效果: 神导术 (重生之人)}</p>\n<p>@Compendium[pf2e.spell-effects.3LyOkV25p7wA181H]{效果: 神导术免疫}</p>",
+            "name": "神导术 Guidance (重生之人)",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "直到你下回合开始"
+        },
+        "Shield (Soaked in Blood)": {
+            "description": "<p>你产生一层魔法护盾。这视同你使用了举起盾牌动作，赋予你在AC上的+1环境加值，直到你的下个回合开始，但这里不需要手来使用。</p>\n<p>当该法术生效时，你可以使用你的魔法护盾来进行@UUID[Compendium.pf2e.feats-srd.jM72TjJ965jocBV8]{盾牌格挡 Shield Block}反应动作。该盾牌具有硬度5。在你使用盾牌格挡后，该法术结束，并且你无法在10分钟内再次施放它。不同于常规的盾牌格挡，你可以使用法术的反应动作来对抗<em>@UUID[Compendium.pf2e.spells-srd.gKKqvLohtrSJj3BM]{魔法飞弹 Magic Missile}</em>法术。</p>\n<p>升阶该法术会增加护盾的硬度。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Jemq5UknGdMO7b73]{法术效果：护盾术}</p>\n<p>@UUID[Compendium.pf2e.spell-effects.QF6RDlCoTvkVHRo4]{效果：护盾术免疫}</p>\n<p><strong>觉醒</strong> 如果你成为一次近战打击的目标，你必须使用你的盾牌格挡反应，如果你从触发反应的打击中受到了伤害，你立刻进入狂暴。</p>\n<hr />\n<p><strong>升阶 (3环级)</strong> 该护盾具有硬度10。</p>\n<p><strong>升阶 (5环级)</strong> 该护盾具有硬度15。</p>\n<p><strong>升阶 (7环级)</strong> 该护盾具有硬度20。</p>\n<p><strong>升阶 (9环级)</strong> 该护盾具有硬度25。</p>",
+            "name": "护盾术 Shield (沐浴鲜血)",
+            "duration": "直到你下回合开始"
+        },
+        "Chill Touch (Wailing Spirit)": {
+            "description": "<p>你将负能量导入体内，你的手散发出惨败的黑暗。你的接触削弱活物，并扰乱亡灵，并且可能令其逃跑。该效果根据目标是活物或者不死生物有所不同。</p>\n<ul>\n<li><strong>活物</strong> 法术造成1d6加上你施法调整值的音波伤害。目标必须进行一次基础强韧豁免，并在大失败时@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟。</li>\n<li><strong>不死生物</strong> 目标会在强韧豁免失败时陷入1轮的@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。在大失败时还会陷入@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</li>\n</ul>\n<hr />\n<p><strong>升阶 (+1)</strong> 对活物的音波伤害提升1d6。</p>",
+            "name": "恐吓之触 Chill Touch (嚎哭魂魄)",
+            "target": "一个活物或一个不死生物",
+            "range": "接触"
+        },
+        "Gouging Claw (Expel the Beast)": {
+            "description": "<p>你将你的手臂暂时变为一个长爪的附肢。进行一次近战法术攻击骰，对抗你的目标的AC。如果你命中，你造成挥砍或者穿刺伤害，由你选择，数值等于1d6加上你的施法属性调整值。在大成功时，你造成双倍伤害加上@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>\n<p><strong>觉醒</strong> 你可以从觉醒状态中获得的动物同伴所在的位置施展<em>凿爪术</em>，当你这样做时，只会增加它自己的多重攻击减值而不是你的。如果你这样做，它在本回合内无法执行支援动作。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d6，并且重击时的持续流血伤害增加1d4。</p>",
+            "name": "凿爪术 Gouging Claw (驱逐野兽)",
+            "target": "一个生物"
+        },
+        "Dancing Lights (Cosmic Transcendence)": {
+            "description": "<p>你创造最多四个悬浮的光源，任意两者之间距离不超过10尺。每个光源都会发出如同火炬的光亮。当你维持该法术时，你可以移动每个光源至多60尺。每个光源与你的距离必须在120尺内，并且和所有其他光源射程不超过10尺，否则会消失。</p>\n<p><strong>觉醒</strong> 你可以将舞光术排列成一个星座，将四个光源放置在彼此相距不超过10尺的固定位置，不能移动。取决于你施法时选择的星座，与一个光源相邻的生物在强韧豁免、反射豁免、意志豁免中的一种上获得+1的状态加值。每当一个生物在受益于该加成的同时尝试进行豁免时，其中一个光源就会熄灭，并且该生物在持续时间内对该法术的效果免疫。一旦所有的光源熄灭，法术立即结束，你在1小时内不能再次施放舞光术。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.NL9djwmcRKCEtyOR]{效果: 舞光术 (超然宇宙)}</p>",
+            "name": "舞光术 Dancing Lights (超然宇宙)",
+            "range": "120尺",
+            "duration": "维持"
+        },
+        "Produce Flame (Blue Flames)": {
+            "description": "<p>一小团火焰在你的手心产生，你可以通过近战或者远程将其射出。进行一次法术攻击骰，对抗你的目标的AC。这通常是一次远程攻击，但是你也可以对你无武装触及中的生物尝试一次近战攻击。</p>\n<p>在成功时，你造成1d4火焰伤害，加上你的施法属性调整值。在大成功时，目标承受双倍伤害，以及[[/r 1d4[persistent,fire]]]伤害。</p>\n<p><strong>觉醒</strong> 当你进行一次近战法术攻击时，你的<em>燃火术</em>伤害骰增加到d6。</p>\n<hr>\n<p><strong>升阶 (+1)</strong> 该伤害增加1d4，以及重击时的持续伤害增加1d4。</p>\n<p>[[/r (@item.level)d4[persistent,fire]]]{根据等级计算的持续火焰伤害}</p>",
+            "name": "燃火术 Produce Flame (苍蓝烈焰)",
+            "target": "一个生物",
+            "range": "30尺"
+        },
+        "Ray of Frost (Frozen Over)": {
+            "description": "<p>你射出一道冻结射线。尝试一次法术攻击骰。该射线造成等你1d4+你的施法属性调整值的寒冷伤害。</p>\n<hr />\n<p><strong>大成功</strong> 目标承受双倍伤害，并且在其速度上承受-10尺状态减值，持续1轮。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.I4PsUAaYSUJ8pwKC]{法术效果：冰冻射线}</p>\n<p><strong>成功</strong> 目标承受正常伤害。</p>\n<p><strong>觉醒</strong> 你可以选择射程内一个5尺的方格而不是一个生物作为目标，并且那个方格直到你的下个回合开始前被冰覆盖。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d4。</p>",
+            "name": "冰冻射线 Ray of Frost (全面冻结)",
+            "target": "一个生物",
+            "range": "120尺"
+        },
+        "Healing Plaster (Patient Zero)": {
+            "description": "<p>你将一些泥土或泥浆净化成柔软的有助于凝血和愈合的粘土状石膏。这种有助恢复的物质可用于代替在进行急救和治疗伤害的医疗检定中使用的医疗工具。如果该石膏在法术持续时间中没有被使用，或者你在使用该石膏前再次施放该法术，这会恢复为通常的非魔法泥土。</p>\n<p><strong>觉醒</strong> 你可以用你的<em>药膏术</em>来@UUID[Compendium.pf2e.actionspf2e.TC7OcDa7JlWbqMaN]{治疗疾病 Treat Disease}。</p>\n<hr />\n<p><strong>升阶(3环级)</strong> 该石膏为使用它来进行急救和治疗伤害的人的医疗检定提供+1物品加值。</p>",
+            "name": "药膏术 Healing Plaster (零号病患)",
+            "target": "一捧泥土或泥浆",
+            "range": "5尺",
+            "duration": "10分钟"
+        },
+        "Stabilize (Overflowing With Life)": {
+            "description": "<p>正能量将目标从鬼门关拉回。目标失去 @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying} 状态，但它仍然 @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，并为0生命值。</p>\n<p><strong>觉醒</strong> 当你施放<em>稳定伤势</em>时，你可以转而以一个具有临时生命值的生物为目标。当你这么做时，你降低它等同于这个法术环级两倍的临时生命值。</p>",
+            "name": "稳定伤势 Stabilize (命流满溢)",
+            "target": "一个濒死生物",
+            "range": "30尺"
+        },
+        "Read Aura (Omniscient Scholar)": {
+            "description": "<p>你专注于目标物体，拓展神智，以感受魔法灵光。当你完成施法后，你得知该物品是否具有魔法，如果有，你也会了解魔法的学派。</p>\n<p>如果该物体是幻象，仅当该效果的环级低于你的阅读灵光环级时你才能发现此事实。</p>\n<hr>\n<p><strong>觉醒</strong> 你可以选择一个生物而不是一个物体作为目标，当你这么做时，目标必须尝试一次意志豁免。</p>\n<p><strong>大成功</strong> 你获得关于这个生物的错误信息。</p>\n<p><strong>成功</strong> 你没有从这个生物身上获得信息。</p>\n<p><strong>失败</strong> 你得知这个生物是否能施展法术和他的施法条件（如果有）。如果一个生物有超过一种的施法条件，你得知最高环位法术的施法条件。</p>\n<p><strong>大失败</strong> 同失败，但是你还会得知他们能施展的最高环位的法术和他们是否能用法术位施展法术。</p>\n<hr>\n<p><strong>升阶 (3环级)</strong> 你能以至多10个物体为目标。</p>\n<p><strong>升阶 (8环级)</strong> 你能以任意数量物体为目标。</p>",
+            "name": "阅读灵光 Read Aura (全知学者)",
+            "target": "一个物体",
+            "range": "30尺",
+            "time": "1分钟"
+        },
+        "Scatter Scree (Claimed by the Summit)": {
+            "description": "<p>你在区域中造出一堆岩石。散落的石头对区域中的生物造成1d4加上你的施法属性调整值的钝击伤害，这有一次反射豁免。区域中的地面在持续时间中变为困难地形。一个生物可以交互来清理一个方格中的石堆。如果你再次施放该法术，任何之前你施放的堆石术会结束。</p>\n<p><strong>觉醒</strong> 你可以减少1个连续立方体的数量，如果你这么做，之前<em>堆石术</em>的法术效果不会结束。</p>\n<hr />\n<p><strong>升阶(+1)</strong> 该伤害增加1d4。</p>",
+            "name": "堆石术 Scatter Scree (顶峰宣告)",
+            "range": "30尺",
+            "duration": "1分钟"
+        },
+        "Light (Passing Through the Prism)": {
+            "description": "<p>该物体发出如同火炬的光芒，在20尺半径内产生明亮光照（以及接下来的20尺产生昏暗光照）。你可以在另一个物体上施放该法术，并且在之前的物体上的光亮术会结束。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.cVVZXNbV0nElVOPZ]{法术效果：光亮术}</p>\n<p><strong>觉醒</strong> 你可以将一个生物而不是物体作为你<em>光亮术</em>的目标。当你这么做时，这个生物获得与你过载诅咒的折射光线同样的效果，持续1分钟。在法术结束后，这个生物对你的光亮术临时免疫直到你的下一次日常准备结束。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.0CrxcGJt4fAMI8rN]{效果: 光亮术 (穿透棱镜)}</p>\n<hr />\n<p><strong>升阶 (4环级)</strong> 该物体在60尺半径内产生明亮光照（并在接下来的60尺产生昏暗光照）。</p>",
+            "name": "光亮术 Light (穿透棱镜)",
+            "target": "1负载或更轻的无主物体，或你和自愿盟友拥有的物体",
+            "range": "接触",
+            "duration": "直到你下次进行日常准备"
+        },
+        "Dream Come To Life": {
+            "name": "梦想成真 Dream Come To Life",
+            "description": "<p>选择一个你可以施展的需要@UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}的幻术系法术，在梦想成真的持续时间内，你可以你的每个回合开始以一个自由动作维持该法术。</p>"
+        },
+        "Produce Flame (Dust to Dust)": {
+            "description": "<p>一小团火焰在你的手心产生，你可以通过近战或者远程将其射出。进行一次法术攻击骰，对抗你的目标的AC。这通常是一次远程攻击，但是你也可以对你无武装触及中的生物尝试一次近战攻击。</p>\n<p>在成功时，你造成1d4火焰伤害，加上你的施法属性调整值。在大成功时，目标承受双倍伤害，以及[[/r 1d4[persistent,fire]]]伤害。</p>\n<hr>\n<p><strong>升阶 (+1)</strong> 该伤害增加1d4，以及重击时的持续伤害增加1d4。</p>\n<p>[[/r (@item.level)d4[persistent,fire]]]{根据等级计算的持续火焰伤害}</p>",
+            "target": "一个生物",
+            "range": "30尺"
+        },
+        "Wash Your Luck (Cruel Hand)": {
+            "name": "洗心改运 Wash Your Luck (操运毒手)",
+            "description": "<p>一些施法者认为该法术能够洗刷你在一切方面的运气，无论好坏。但其他人则表示这只是让你对运气和命运走火入魔的态度有所改善。你调整你的衣物，转变你椅子的朝向，晃动一个圣徽，或者进行一些其他无害但对你个人意义显著的动作来送走坏运气。</p>\n<p>在法术的持续时间中，在投掷一次检定前，你可以取消该掷骰中的一个厄运效果，如通常幸运效果和厄运效果影响同一个掷骰一样。在取消该厄运效果后，该法术结束，并且你暂时免疫洗心改运10分钟。</p>\n<p><strong>觉醒</strong> 你可以将一个生物而不是你自己作为目标。如果你这样做，目标必须尝试一次意志豁免，法术将失去幸运特征并获得厄运特征。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 在法术持续期间内仅一次，在该生物掷骰前，你可以取消该掷骰上的幸运效果，就像通常的幸运和厄运效果作用于同一掷骰上。在取消幸运效果后，该法术结束，并且该生物免疫你的洗心改运10分钟。</p>",
+            "duration": "1分钟"
         }
     }
 }
