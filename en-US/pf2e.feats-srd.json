@@ -119,7 +119,7 @@
 		},
 		"Accursed Claws": {
 			"name": "Accursed Claws",
-			"description": "<p>Your claws carry your mother's hag magic. When you critically hit with a claw Strike, the target takes an additional @Localize[PF2E.PersistentDamage.Mental1d4.success].</p>",
+			"description": "<p>Your claws carry your mother's hag magic. When you critically hit with a claw Strike, the target takes an additional [[/r 1d4[persistent,mental]]].</p>",
 			"prerequisites": [
 				{
 					"value": "claw unarmed attack"
@@ -739,7 +739,7 @@
 		},
 		"Aggravating Scratch": {
 			"name": "Aggravating Scratch",
-			"description": "<p>Your claws carry an irritant that is harmless to you but can be damaging to others. Your claw Strikes deal an additional @Localize[PF2E.PersistentDamage.Poison1d4.success] on a critical hit.</p>",
+			"description": "<p>Your claws carry an irritant that is harmless to you but can be damaging to others. Your claw Strikes deal an additional [[/r 1d4[persistent,poison]]] on a critical hit.</p>",
 			"prerequisites": [
 				{
 					"value": "claw unarmed attack"
@@ -2891,6 +2891,15 @@
 				}
 			]
 		},
+		"Betraying Shank": {
+			"name": "Betraying Shank",
+			"description": "<p><strong>Requirements</strong> You are within melee reach of a target, but it is not in combat with you.</p>\n<hr />\n<p>While your usual diplomacy is well intentioned, you know that sometimes those same skills will need to be turned to deception. In a flash, you draw a sheathed or concealed agile or finesse weapon and make a melee Strike. The target is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against your Strike. You then roll Deception for initiative.</p>",
+			"prerequisites": [
+				{
+					"value": "Twilight Speaker Dedication"
+				}
+			]
+		},
 		"Between The Scales": {
 			"name": "Between The Scales",
 			"description": "<p>Underestimating you is a grave mistake, but it's one others keep making. You've learned to take advantage of slips in your foes' defenses.</p>\n<p>When you Strike a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} creature using a melee weapon or unarmed attack that has the agile and finesse traits, it gains the backstabber trait.</p>",
@@ -3228,12 +3237,12 @@
 		},
 		"Bloodletting Claws": {
 			"name": "Bloodletting Claws",
-			"description": "<p>Your eidolon inflicts bleeding wounds on a telling blow. If your eidolon critically hits with a melee unarmed Strike that deals slashing or piercing damage, its target takes @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Your eidolon gains an item bonus to this bleed damage equal to the unarmed attack's item bonus to attack rolls. This is a critical specialization effect.</p>",
+			"description": "<p>Your eidolon inflicts bleeding wounds on a telling blow. If your eidolon critically hits with a melee unarmed Strike that deals slashing or piercing damage, its target takes [[/r 1d6[bleed]]]. Your eidolon gains an item bonus to this bleed damage equal to the unarmed attack's item bonus to attack rolls. This is a critical specialization effect.</p>",
 			"prerequisites": []
 		},
 		"Bloodletting Fangs": {
 			"name": "Bloodletting Fangs",
-			"description": "<p>You emulate your vampiric parent's techniques for drawing blood from a victim. Your fangs Strikes deal an additional @Localize[PF2E.PersistentDamage.Bleed1d4.success] on a critical hit.</p>",
+			"description": "<p>You emulate your vampiric parent's techniques for drawing blood from a victim. Your fangs Strikes deal an additional [[/r 1d4[bleed]]] on a critical hit.</p>",
 			"prerequisites": [
 				{
 					"value": "fangs unarmed attack"
@@ -3302,12 +3311,12 @@
 		},
 		"Bloody Blows": {
 			"name": "Bloody Blows",
-			"description": "<p>Your lethal unarmed attacks leave bloody gouges or cause severe internal bleeding. When you critically hit with a Strike using an unarmed attack that isn't nonlethal, the target takes @Localize[PF2E.PersistentDamage.Bleed1d4.success].</p>\n<p>This can be because you're taking the penalty to use a fist for a lethal attack or because you have an unarmed attack without the nonlethal trait due to @UUID[Compendium.pf2e.feats-srd.JP5pptkl1Fx1JK4m]{Iron Fists}, @UUID[Compendium.pf2e.feats-srd.M5195FvfCN3X7gi9]{Tusks}, or a similar ability.</p>",
+			"description": "<p>Your lethal unarmed attacks leave bloody gouges or cause severe internal bleeding. When you critically hit with a Strike using an unarmed attack that isn't nonlethal, the target takes [[/r 1d4[bleed]]].</p>\n<p>This can be because you're taking the penalty to use a fist for a lethal attack or because you have an unarmed attack without the nonlethal trait due to @UUID[Compendium.pf2e.feats-srd.JP5pptkl1Fx1JK4m]{Iron Fists}, @UUID[Compendium.pf2e.feats-srd.M5195FvfCN3X7gi9]{Tusks}, or a similar ability.</p>",
 			"prerequisites": []
 		},
 		"Bloody Debilitation": {
 			"name": "Bloody Debilitation",
-			"description": "<p>Your attacks slice arteries and veins. Add the following debilitation to the list you can choose from when you use @UUID[Compendium.pf2e.actionspf2e.bp0Up04x3dzGK5bB]{Debilitating Strike}.</p>\n<ul>\n<li><strong>Debilitation</strong> The target takes @Localize[PF2E.PersistentDamage.Bleed3d6.success].</li>\n</ul>",
+			"description": "<p>Your attacks slice arteries and veins. Add the following debilitation to the list you can choose from when you use @UUID[Compendium.pf2e.actionspf2e.bp0Up04x3dzGK5bB]{Debilitating Strike}.</p>\n<ul>\n<li><strong>Debilitation</strong> The target takes [[/r 3d6[bleed]]].</li>\n</ul>",
 			"prerequisites": [
 				{
 					"value": "trained in Medicine"
@@ -4882,7 +4891,7 @@
 		},
 		"Cobra Envenom": {
 			"name": "Cobra Envenom",
-			"description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.AkV4Jyllo6nlK2Sl]{Cobra Stance}.</p>\n<hr />\n<p>You lash out with devious intent and the power to envenom your foe. Make a cobra fang Strike. Your reach with this Strike is 5 feet greater than normal.</p>\n<p>If this Strike hits, the target takes @Localize[PF2E.PersistentDamage.Poison1d4.success] per weapon damage die.</p>\n<hr />\n<p><strong>Special</strong> If you have this feat, the circumstance bonus to Fortitude saves and Fortitude DC granted by Cobra Stance increases from +1 to +2.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.2Qpt0CHuOMeL48rN]{Stance: Cobra Stance (Cobra Envenom)}</p>",
+			"description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.AkV4Jyllo6nlK2Sl]{Cobra Stance}.</p>\n<hr />\n<p>You lash out with devious intent and the power to envenom your foe. Make a cobra fang Strike. Your reach with this Strike is 5 feet greater than normal.</p>\n<p>If this Strike hits, the target takes [[/r 1d4[persistent,poison]]] per weapon damage die.</p>\n<hr />\n<p><strong>Special</strong> If you have this feat, the circumstance bonus to Fortitude saves and Fortitude DC granted by Cobra Stance increases from +1 to +2.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.2Qpt0CHuOMeL48rN]{Stance: Cobra Stance (Cobra Envenom)}</p>",
 			"prerequisites": [
 				{
 					"value": "Cobra Stance"
@@ -6856,6 +6865,15 @@
 			"description": "<p>It's harder for your foes to regain their grip when you knock their weapon partially out of their hands.</p>\n<p>When you succeed at an Athletics check to @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm}, the circumstance bonus and penalty from Disarm last until the end of your next turn, instead of until the beginning of the target's next turn. The target can use an Interact action to adjust their grip and remove this effect.</p>\n<p>If your swashbuckler's style is gymnast and you succeed at your Athletics check to Disarm a foe, you gain @UUID[Compendium.pf2e.classfeatures.LzYi0OuOoypNb6jd]{Panache}.</p>",
 			"prerequisites": []
 		},
+		"Disarming Smile": {
+			"name": "Disarming Smile",
+			"description": "<p><strong>Trigger</strong> You are the target of a melee attack and the attacker has not rolled yet.</p>\n<p><strong>Requirements</strong> You are aware of the attacker, the attacker is an intelligent humanoid creature, and you have not attempted to harm the attacker.</p>\n<hr />\n<p>With a wide, sincere smile, you give your attacker pause. You attempt a Diplomacy check against the triggering attacker's Will DC. After you use Disarming Smile, all creatures who witnessed you use it are temporarily immune to your Disarming Smile for the next 24 hours.</p>\n<hr />\n<p><strong>Critical Success</strong> Your enemy ceases their attack. The attack fails and the triggering target can't attempt hostile actions against you until the beginning of its next turn or until you (or your allies) take hostile actions against the enemy (or its allies). You can begin talking to the creature on your next turn to attempt another Diplomacy check; on a success, you sustain the effect until the beginning of your next turn, to a maximum of 1 minute. Talking on subsequent rounds requires that you be able to communicate with the target creature and imparts the auditory and linguistic traits to the action.</p>\n<p><strong>Success</strong> Your foe pauses momentarily. Their attack fails, but they can attempt further attacks against you.</p>\n<p><strong>Failure</strong> The target's attack is unaffected.</p>",
+			"prerequisites": [
+				{
+					"value": "Twilight Speaker Dedication"
+				}
+			]
+		},
 		"Disarming Stance": {
 			"name": "Disarming Stance",
 			"description": "<p><strong>Requirements</strong> You are wielding only a single one-handed melee weapon and have your other hand or hands free.</p>\n<hr />\n<p>You adopt a fencing stance that improves your control over your weapon.</p>\n<p>While you are in this stance, you gain a +1 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} and a +2 circumstance bonus to your Reflex DC when defending against checks to Disarm you. In addition, you can attempt to Disarm creatures up to two sizes larger than you.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.LxSev4GNKv26DbZw]{Stance: Disarming Stance}</p>",
@@ -8799,6 +8817,24 @@
 			"description": "<p>Once per day, you can cast either <em>@UUID[Compendium.pf2e.spells-srd.b515AZlB0sridKSq]{Calm Emotions}</em> or <em>@UUID[Compendium.pf2e.spells-srd.8xRzLhwGL7Dgy3EZ]{Sanctuary}</em> as an innate occult spell, heightened to half your level rounded up.</p>",
 			"prerequisites": []
 		},
+		"Empathic Envoy": {
+			"name": "Empathic Envoy",
+			"description": "<p>You believe that treating others with respect is the fastest way into their hearts, and in turn others are more likely to believe in your good intentions and write off bad first impressions as flukes. If a creature's attitude towards you becomes lower over the course of a social interaction (for example, from friendly to indifferent, or from indifferent to unfriendly), their impression of you returns to its starting level an hour after the social interaction ends. This ability has no effect if the creature you are interacting with becomes hostile.</p>",
+			"prerequisites": [
+				{
+					"value": "Twilight Speaker Dedication"
+				}
+			]
+		},
+		"Emphatic Emissary": {
+			"name": "Emphatic Emissary",
+			"description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>You can tell when diplomacy has failed and a meeting is close to unraveling or falling to blows. You gain a +2 circumstance bonus on your initiative roll. During your first turn in combat, you can use your Disarming Smile, targeting every hostile intelligent humanoid creature that can see you but has yet to act. If you choose to sustain your Disarming Smile, you sustain the effect for only one creature, as normal.</p>",
+			"prerequisites": [
+				{
+					"value": "Disarming Smile"
+				}
+			]
+		},
 		"Empty Body": {
 			"name": "Empty Body",
 			"description": "<p>You transmute your body into an ethereal form. You gain the <em>@UUID[Compendium.pf2e.spells-srd.mau1Olq58ECF0ZPi]{Empty Body}</em> ki spell. Increase the number of Focus Points in your focus pool by 1.</p>",
@@ -9169,7 +9205,7 @@
 		},
 		"Envenomed Edge": {
 			"name": "Envenomed Edge",
-			"description": "<p>With a combination of your poison glands and herbal concoctions, you can consistently deliver venomous attacks when you hit an enemy's weak points. When you critically hit using a Strike with a weapon or unarmed attack and deal slashing or piercing damage with that Strike, you deal an additional @Localize[PF2E.PersistentDamage.Poison1d4.success] to your target.</p>",
+			"description": "<p>With a combination of your poison glands and herbal concoctions, you can consistently deliver venomous attacks when you hit an enemy's weak points. When you critically hit using a Strike with a weapon or unarmed attack and deal slashing or piercing damage with that Strike, you deal an additional [[/r 1d4[persistent,poison]]] to your target.</p>",
 			"prerequisites": []
 		},
 		"Environmental Explorer": {
@@ -10972,7 +11008,7 @@
 		},
 		"Flensing Slice": {
 			"name": "Flensing Slice",
-			"description": "<p><strong>Requirements</strong> Your last action was a @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Double Slice}, and both attacks hit the target.</p>\n<hr />\n<p>When you hit with both attacks with Double Slice, you flense the target, making it bleed and creating a weak spot.</p>\n<p>The target takes @Localize[PF2E.PersistentDamage.Bleed1d8.success] per weapon damage die of whichever of the weapons you used that has the most weapon damage dice (maximum 4d8 for a <em>major striking</em> weapon).</p>\n<p>The target becomes flat-footed, and its resistances to any physical damage types are reduced by 5; these two effects last until the beginning of your next turn.</p>",
+			"description": "<p><strong>Requirements</strong> Your last action was a @UUID[Compendium.pf2e.feats-srd.onde0SxLoxLBTnvm]{Double Slice}, and both attacks hit the target.</p>\n<hr />\n<p>When you hit with both attacks with Double Slice, you flense the target, making it bleed and creating a weak spot.</p>\n<p>The target takes [[/r 1d8[bleed]]] per weapon damage die of whichever of the weapons you used that has the most weapon damage dice (maximum 4d8 for a <em>major striking</em> weapon).</p>\n<p>The target becomes flat-footed, and its resistances to any physical damage types are reduced by 5; these two effects last until the beginning of your next turn.</p>",
 			"prerequisites": [
 				{
 					"value": "Dual-Weapon Warrior Dedication"
@@ -14006,6 +14042,15 @@
 			"name": "Illusion Sense",
 			"description": "<p>Your ancestors spent their days cloaked and cradled in illusions, and as a result, sensing illusion magic is second nature to you. You gain a +1 circumstance bonus to both Perception checks and Will saves against illusions. When you come within 10 feet of an illusion that can be disbelieved, the GM rolls a secret check for you to disbelieve it, even if you didn't spend an action to Interact with the illusion.</p>",
 			"prerequisites": []
+		},
+		"Ilverani Purist": {
+			"name": "Ilverani Purist",
+			"description": "<p>All twilight speakers are trained to resist the alluring customs of younger peoples, but you have made it your mandate to keep the Ilverani way unchanged. Such dedication has given you a trained eye for subtlety and deception. When you attempt to @UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Sense the Motive} of a non-elf humanoid creature and you roll a critical failure, you fail instead.</p>",
+			"prerequisites": [
+				{
+					"value": "Twilight Speaker Dedication"
+				}
+			]
 		},
 		"Imbue Mindlessness": {
 			"name": "Imbue Mindlessness",
@@ -20205,7 +20250,7 @@
 		},
 		"Piercing Quills": {
 			"name": "Piercing Quills",
-			"description": "<p>Your quills can dig particularly deep into the flesh of your opponents. Your quills unarmed attack deals @Localize[PF2E.PersistentDamage.Bleed1d4.success] on a critical hit.</p>",
+			"description": "<p>Your quills can dig particularly deep into the flesh of your opponents. Your quills unarmed attack deals [[/r 1d4[bleed]]] on a critical hit.</p>",
 			"prerequisites": [
 				{
 					"value": "Spine Stabber"
@@ -20627,7 +20672,7 @@
 		},
 		"Prayer Attack": {
 			"name": "Prayer Attack",
-			"description": "<p><strong>Requirements</strong> You are wielding a @UUID[Compendium.pf2e.equipment-srd.wkzxLpSe7LN6c5Ld]{Sawtooth Saber} in each hand.</p>\n<hr />\n<p>You've mastered the signature assassination style of the Red Mantis. Attempt to @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If your Feint is successful, when you use Prayer Attack on subsequent turns you automatically make the target flat-footed against your melee attacks for that turn without rolling a check to Feint, so as long as you remain visible to the target and the target remains within 30 feet of you. If you use your Prayer Attack against a different target, you must attempt to Feint the target normally.</p>\n<p>When you use Prayer Attack, your next successful Strike with a sawtooth saber that turn deals @Localize[PF2E.PersistentDamage.Bleed2d6.success] to the target.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding a @UUID[Compendium.pf2e.equipment-srd.wkzxLpSe7LN6c5Ld]{Sawtooth Saber} in each hand.</p>\n<hr />\n<p>You've mastered the signature assassination style of the Red Mantis. Attempt to @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feint} an enemy within 30 feet. If your Feint is successful, when you use Prayer Attack on subsequent turns you automatically make the target flat-footed against your melee attacks for that turn without rolling a check to Feint, so as long as you remain visible to the target and the target remains within 30 feet of you. If you use your Prayer Attack against a different target, you must attempt to Feint the target normally.</p>\n<p>When you use Prayer Attack, your next successful Strike with a sawtooth saber that turn deals [[/r 2d6[bleed]]] to the target.</p>",
 			"prerequisites": []
 		},
 		"Prayer-Touched Weapon": {
@@ -20876,7 +20921,7 @@
 		},
 		"Pristine Weapon": {
 			"name": "Pristine Weapon",
-			"description": "<p>Your verdant weapon can cut through the resistances of magical creatures. The weapon is treated as cold iron and silver. If you critically hit a creature that has a weakness to cold iron or silver, the target takes @Localize[PF2E.PersistentDamage.Bleed1d6.success] as the primal energies within your weapon slow its natural healing.</p>",
+			"description": "<p>Your verdant weapon can cut through the resistances of magical creatures. The weapon is treated as cold iron and silver. If you critically hit a creature that has a weakness to cold iron or silver, the target takes [[/r 1d6[bleed]]] as the primal energies within your weapon slow its natural healing.</p>",
 			"prerequisites": [
 				{
 					"value": "Verdant Weapon"
@@ -23244,7 +23289,7 @@
 		},
 		"Scalpel's Point": {
 			"name": "Scalpel's Point",
-			"description": "<p>Your stratagems benefit from your precise knowledge of anatomy. When you critically hit with an attack on which you substituted your attack roll due to @UUID[Compendium.pf2e.actionspf2e.m0f2B7G9eaaTmhFL]{Devising a Strategem}, if your attack dealt piercing or slashing damage, you also deal @Localize[PF2E.PersistentDamage.Bleed1d6.success] to your target.</p>",
+			"description": "<p>Your stratagems benefit from your precise knowledge of anatomy. When you critically hit with an attack on which you substituted your attack roll due to @UUID[Compendium.pf2e.actionspf2e.m0f2B7G9eaaTmhFL]{Devising a Strategem}, if your attack dealt piercing or slashing damage, you also deal [[/r 1d6[bleed]]] to your target.</p>",
 			"prerequisites": [
 				{
 					"value": "forensic medicine methodology"
@@ -28301,7 +28346,7 @@
 		},
 		"Tiger Stance": {
 			"name": "Tiger Stance",
-			"description": "<p><strong>Requirements</strong> You are unarmored</p>\n<hr />\n<p>You enter the stance of a tiger and can make tiger claw attacks. These deal 1d8 slashing damage; are in the brawling group; and have the agile, finesse, nonlethal, and unarmed traits.</p>\n<p>On a critical success with your tiger claws, if you deal damage, the target takes @Localize[PF2E.PersistentDamage.Bleed1d4.success].</p>\n<p>As long as your Speed is at least 20 feet while in Tiger Stance, you can Step 10 feet.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.pf9yvKNg6jZLrE30]{Stance: Tiger Stance}</p>",
+			"description": "<p><strong>Requirements</strong> You are unarmored</p>\n<hr />\n<p>You enter the stance of a tiger and can make tiger claw attacks. These deal 1d8 slashing damage; are in the brawling group; and have the agile, finesse, nonlethal, and unarmed traits.</p>\n<p>On a critical success with your tiger claws, if you deal damage, the target takes [[/r 1d4[bleed]]].</p>\n<p>As long as your Speed is at least 20 feet while in Tiger Stance, you can Step 10 feet.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.pf9yvKNg6jZLrE30]{Stance: Tiger Stance}</p>",
 			"prerequisites": []
 		},
 		"Tiller's Aid": {
@@ -28743,7 +28788,7 @@
 		},
 		"Triangle Shot": {
 			"name": "Triangle Shot",
-			"description": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.YG2RxXE9SMfwo6wP]{Monastic Archer Stance} and wielding a bow usable with that stance.</p>\n<hr />\n<p>You string three arrows to your bow and fire them all at once. Make three ranged Strikes against a single target with the required weapon, each using your current multiple attack penalty, and you take an additional -2 penalty. This counts as two attacks when calculating your multiple attack penalty, and you combine the attacks' damage for the purpose of resistances and weaknesses.</p>\n<p>Your @UUID[Compendium.pf2e.feats-srd.8bMmGBO6gsMfWZk3]{Stunning Fist} benefit applies to Triangle Shot, even though it isn't a @UUID[Compendium.pf2e.actionspf2e.nbfNETdpee8CVM17]{Flurry of Blows}. If all three Strikes hit, the target takes @Localize[PF2E.PersistentDamage.Bleed3d6.success].</p>",
+			"description": "<p><strong>Requirements</strong> You are in @UUID[Compendium.pf2e.feats-srd.YG2RxXE9SMfwo6wP]{Monastic Archer Stance} and wielding a bow usable with that stance.</p>\n<hr />\n<p>You string three arrows to your bow and fire them all at once. Make three ranged Strikes against a single target with the required weapon, each using your current multiple attack penalty, and you take an additional -2 penalty. This counts as two attacks when calculating your multiple attack penalty, and you combine the attacks' damage for the purpose of resistances and weaknesses.</p>\n<p>Your @UUID[Compendium.pf2e.feats-srd.8bMmGBO6gsMfWZk3]{Stunning Fist} benefit applies to Triangle Shot, even though it isn't a @UUID[Compendium.pf2e.actionspf2e.nbfNETdpee8CVM17]{Flurry of Blows}. If all three Strikes hit, the target takes [[/r 3d6[bleed]]].</p>",
 			"prerequisites": [
 				{
 					"value": "Monastic Archer Stance"
@@ -29006,6 +29051,18 @@
 			"prerequisites": [
 				{
 					"value": "expert in Crafting"
+				}
+			]
+		},
+		"Twilight Speaker Dedication": {
+			"name": "Twilight Speaker Dedication",
+			"description": "<p>You have carefully studied the histories, customs, and etiquette of many of the younger peoples of Golarion. You become an expert in Society. At 7th level, you become a master in Society, and at 15th level, you become legendary in Society. You can use the Society skill instead of the Diplomacy skill when you attempt to @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression} on a non-elven intelligent humanoid creature.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you've gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.YQXGtBHVoiSYUjtl]{Twilight Speaker} archetype.</p>",
+			"prerequisites": [
+				{
+					"value": "trained in Society"
+				},
+				{
+					"value": "you are an Ilverani elf"
 				}
 			]
 		},
@@ -30051,7 +30108,7 @@
 		},
 		"Vicious Fangs": {
 			"name": "Vicious Fangs",
-			"description": "<p>You aim for your victim's prominent arteries. Your fangs Strike deals an additional @Localize[PF2E.PersistentDamage.Bleed1d6.success] on a critical hit. At 14th level, the persistent bleed damage increases to @Localize[PF2E.PersistentDamage.Bleed2d6.success], and at 20th level, the persistent bleed damage increases to @Localize[PF2E.PersistentDamage.Bleed3d6.success].</p>",
+			"description": "<p>You aim for your victim's prominent arteries. Your fangs Strike deals an additional [[/r 1d6[bleed]]] on a critical hit. At 14th level, the persistent bleed damage increases to [[/r 2d6[bleed]]], and at 20th level, the persistent bleed damage increases to [[/r 3d6[bleed]]].</p>",
 			"prerequisites": [
 				{
 					"value": "Vampire Dedication"
@@ -31278,6 +31335,15 @@
 			"prerequisites": [
 				{
 					"value": "Cathartic Mage Dedication"
+				}
+			]
+		},
+		"World-Wise Vigilance": {
+			"name": "World-Wise Vigilance",
+			"description": "<p>Your keen study of other cultures gives you insights into the ways those cultures fight. When you use Perception to roll initiative and none of your enemies have the elf trait, you can choose to roll Society instead.</p>",
+			"prerequisites": [
+				{
+					"value": "Twilight Speaker Dedication"
 				}
 			]
 		},

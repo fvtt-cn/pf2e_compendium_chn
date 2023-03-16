@@ -29,6 +29,26 @@
 			"name": "(Beheaded) Whispering",
 			"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The beheaded constantly whispers twisted incantations in unknown languages secret and foul. Foes that enter or begin their turn in the area must succeed at a Will save or be @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{Stupefied 1}. The aura uses the moderate DC for the beheaded's level.</p>"
 		},
+		"(Blackfrost Dead) Blackfrost": {
+			"name": "(Blackfrost Dead) Blackfrost",
+			"description": "<p>This affliction can't be reduced below stage 1, nor the damage from it healed, until successfully treated with <em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{Remove Curse}</em> or a similar effect; the affliction can then be removed as a normal disease. A creature that dies from cold damage while cursed with blackfrost rises as a blackfrost dead after 24 hours. Blackfrost has a counteract level of 10.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:27]</p>\n<p><strong>Stage 1</strong> [[/r 4d6[cold]]] (1 minute)</p>\n<p><strong>Stage 2</strong> weakness to cold 5 and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1} (1 day)</p>\n<p><strong>Stage 3</strong> weakness to cold 10 and @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 2} (1 day)</p>"
+		},
+		"(Blackfrost Dead) Blackfrost Breath": {
+			"name": "(Blackfrost Dead) Blackfrost Breath",
+			"description": "<p>The blackfrost dead gasps sharply, then exhales a mist of dark-blue blackfrost particles in a @Template[type:emanation|distance:5]. All creatures within the mist become @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the mist become concealed to creatures within it. The mist persists for 1 minute. A creature that ends its turn in the mist is exposed to blackfrost. The blackfrost dead can't use Blackfrost Breath again for [[/br 1d4 #Recharge Blackfrost Breath]]{1d4 rounds}.</p>"
+		},
+		"(Blackfrost Dead) Ice Climb": {
+			"name": "(Blackfrost Dead) Ice Climb",
+			"description": "<p>The blackfrost dead can climb on ice as though it had the listed climb Speed. It ignores difficult terrain and greater difficult terrain from ice and snow and doesn't risk falling when crossing ice.</p>"
+		},
+		"(Blackfrost Dead) Mindburning Gaze": {
+			"name": "(Blackfrost Dead) Mindburning Gaze",
+			"description": "<p>The blackfrost dead fixes its terrifying gaze on a creature within 60 feet. The creature takes [[/r 1d4[mental]]] per level of the blackfrost dead (minimum 2d4), with a @Check[type:will|dc:|basic:true] save. On a critical failure, the creature is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>"
+		},
+		"(Blackfrost Dead) Shattering Death": {
+			"name": "(Blackfrost Dead) Shattering Death",
+			"description": "<p>When the blackfrost dead is destroyed, its body shatters like brittle ice, filling the air around it with a cloud of frigid, razor-sharp ice shards. Creatures in a @Template[type:emanation|distance:10] take [[/r 1d8[cold]]] per level of the blackfrost dead (minimum 3d8), with a @Check[type:reflex|dc:|basic:true] save. Creatures that critically fail this save also take [[/r 1d6[bleed]]].</p>"
+		},
 		"(Castrovelian) Extra Large": {
 			"name": "(Castrovelian) Extra Large",
 			"description": "<p>A rich atmosphere and access to plentiful food make this creature larger than its Golarion counterpart. The creature's size increases one step (from Medium to Large, for example).</p>"
@@ -251,7 +271,7 @@
 		},
 		"(Ghost) Memento Mori": {
 			"name": "(Ghost) Memento Mori",
-			"description": "<p>The ghost causes one creature within 30 feet to relive the ghost's death.</p>\n<p>The target must succeed at a @Check[type:will|dc:] save or see and feel what the ghost did, taking @Localize[PF2E.PersistentDamage.Mental1d4.success] per 2 levels the ghost has.</p>\n<p>All other creatures are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to the target until the persistent damage ends.</p>"
+			"description": "<p>The ghost causes one creature within 30 feet to relive the ghost's death.</p>\n<p>The target must succeed at a @Check[type:will|dc:] save or see and feel what the ghost did, taking [[/r 1d4[persistent,mental]]] per 2 levels the ghost has.</p>\n<p>All other creatures are @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} to the target until the persistent damage ends.</p>"
 		},
 		"(Ghost) Phantasmagoria": {
 			"name": "(Ghost) Phantasmagoria",
@@ -367,7 +387,7 @@
 		},
 		"(Greater Barghest) Mutation - Poison Fangs": {
 			"name": "(Greater Barghest) Mutation - Poison Fangs",
-			"description": "<p>The barghest grows elongated fangs that seep poison. Its jaws deal [[/r 1d6[poison]]]{1d6 additional poison damage} and @Localize[PF2E.PersistentDamage.Poison1d6.success].</p>"
+			"description": "<p>The barghest grows elongated fangs that seep poison. Its jaws deal [[/r 1d6[poison]]]{1d6 additional poison damage} and [[/r 1d6[persistent,poison]]].</p>"
 		},
 		"(Greater Barghest) Mutation - Toxic Breath": {
 			"name": "(Greater Barghest) Mutation - Toxic Breath",
@@ -995,7 +1015,7 @@
 		},
 		"(Vampire, Vrykolakas Master) Bubonic Plague": {
 			"name": "(Vampire, Vrykolakas Master) Bubonic Plague",
-			"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:|name:Bubonic Plague|traits:disease] (use a high DC for the vrykolakas's level)</p>\n<p><strong>Onset</strong> 1 day</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and takes @Localize[PF2E.PersistentDamage.Bleed1d6.success] every [[/br {1d20} #minutes]]{1d20 minutes} (1 day)</p>"
+			"description": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:|name:Bubonic Plague|traits:disease] (use a high DC for the vrykolakas's level)</p>\n<p><strong>Onset</strong> 1 day</p>\n<hr />\n<p><strong>Stage 1</strong> @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} (1 day)</p>\n<p><strong>Stage 2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2} and fatigued (1 day)</p>\n<p><strong>Stage 3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 3}, fatigued, and takes [[/r 1d6[bleed]]] every [[/br {1d20} #minutes]]{1d20 minutes} (1 day)</p>"
 		},
 		"(Vampire, Vrykolakas Master) Change Shape": {
 			"name": "(Vampire, Vrykolakas Master) Change Shape",
