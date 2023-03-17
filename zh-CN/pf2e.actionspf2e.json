@@ -75,7 +75,7 @@
         },
         "Barbed Quills": {
             "name": "带刺羽尖 Barbed Quills",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed1d4.success]。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到[[/r 1d4[bleed]]]伤害。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
