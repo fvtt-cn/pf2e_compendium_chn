@@ -39,7 +39,7 @@
         },
         "(Ghost) Memento Mori": {
             "name": "(幽灵)死亡回放 Memento Mori",
-            "description": "<p>幽灵使得30尺内的一个生物重新体验幽灵的死法。</p>\n<p>目标必须成功通过@Check[type:will|dc:]豁免，否则会看到、感受到幽灵的经历，幽灵每具有2个等级造成@Localize[PF2E.PersistentDamage.Mental1d4.success]。</p>\n<p>直到持续伤害结束之前，所有其他生物对于目标都处于@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+            "description": "<p>幽灵使得30尺内的一个生物重新体验幽灵的死法。</p>\n<p>目标必须成功通过@Check[type:will|dc:]豁免，否则会看到、感受到幽灵的经历，幽灵每具有2个等级造成[[/r 1d4[persistent,mental]]]伤害。</p>\n<p>直到持续伤害结束之前，所有其他生物对于目标都处于@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
         },
         "(Ghost) Pyre's Memory": {
             "name": "(幽灵)燃火回忆 Pyre's Memory",
@@ -271,7 +271,7 @@
         },
         "(Vampire, Vrykolakas Master) Bubonic Plague": {
             "name": "(吸血鬼,维克拉卡斯尊主)黑死病 Bubonic Plague",
-            "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:|name:Bubonic Plague|traits:disease] (用它的的等级对应的强DC)</p>\n<p><strong>潜伏期</strong> 1天</p>\n<hr />\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued} (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和疲乏 (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 3},疲乏, 每过[[/br {1d20} #minutes]]{1d20分钟}受到@Localize[PF2E.PersistentDamage.Bleed1d6.success](1天)</p>"
+            "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:|name:Bubonic Plague|traits:disease] (用它的的等级对应的强DC)</p>\n<p><strong>潜伏期</strong> 1天</p>\n<hr />\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued} (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和疲乏 (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 3},疲乏, 每过[[/br {1d20} #minutes]]{1d20分钟}受到[[/r 1d6[bleed]]]伤害(1天)</p>"
         },
         "(Vampire, Vrykolakas Master) Dominate Animal": {
             "name": "(吸血鬼,维克拉卡斯尊主)支配动物 Dominate Animal",
@@ -518,7 +518,7 @@
             "description": "<p>食尸鬼能跳跃至多自身速度一半的距离。这次移动不会触发反应动作。</p>"
         },
         "(Greater Barghest) Mutation - Poison Fangs": {
-            "description": "<p>犬魔最粗的长牙会渗出毒液。它的啃咬伤害能造成[[/r 1d6[poison]]]{1d6额外毒素伤害}和@Localize[PF2E.PersistentDamage.Poison1d6.success]。</p>",
+            "description": "<p>犬魔最粗的长牙会渗出毒液。它的啃咬伤害能造成[[/r 1d6[poison]]]{1d6额外毒素伤害}和[[/r 1d6[persistent,poison]]]伤害。</p>",
             "name": "(高等犬魔)突变-毒牙 Mutation - Poison Fangs"
         },
         "(Greater Barghest) Mutation - Toxic Breath": {
