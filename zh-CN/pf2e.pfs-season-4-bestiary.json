@@ -185,7 +185,7 @@
 			"disable": "<p>@Check[type:survival|dc:21|name:Safely Disturb the Surface] (受训) to disturb the surface</p>",
 			"hazarddescription": "<p>A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.</p>",
 			"reset": "<p>The hazard still submerges anyone who walks in, but the surface doesn't become hidden again until it settles over the course of 24 hours.</p>",
-			"routine": "<p>(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation.</p>\n<p>A creature in the quicksand can attempt a @Check[type:athletics|dc:23|traits:action:swim] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step.</p>\n<p>A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:23|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
+			"routine": "<p>(1动作) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation.</p>\n<p>A creature in the quicksand can attempt a @Check[type:athletics|dc:23|traits:action:swim] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step.</p>\n<p>A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:23|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
 			"stealthdetails": "<p>(受训) (or -10 and no minimum proficiency if the surface is disturbed)</p>",
 			"data":{},
 			"items":{}
@@ -510,6 +510,95 @@
 			"name": "Vrisk",
 			"data":{},
 			"items":{}
+		},
+		"Fleshwarp Apprentice": {
+			"name": "塑肉体学徒 Fleshwarp Apprentice",
+			"data":{},
+			"items":{}
+		},
+		"Liaskra (1-2)": {
+			"name": "利亚斯可拉 Liaskra (1-2)",
+			"data":{},
+			"items":{
+				"Barbed Quills":{
+					"name": "带刺羽尖 Barbed Quills",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 利亚斯可拉被无武装打击或非长触及近战武器打击命中</p>\n<hr />\n<p><strong>效果</strong> 利亚斯可拉将骨羽断在攻击者的皮肉中。对触发生物造成[[/r 1d8[piercing]]]伤害(@Check[type:reflex|dc:17|basic:true|traits:damaging-effect])。大失败的生物还会在骨羽钩进身体时受到[[/r 1d4[bleed]]]伤害。</p>"
+				},
+				"Trick Attack":{
+					"name": "诡计攻击 Trick Attack",
+					"description": "<p>利亚斯可拉利用阴险诡诈尝试一次巧妙的攻击，让敌人猝不及防。利亚斯可拉选择她的一件武器。用该武器发动的下一次攻击额外造成1d6精准伤害。此外，利亚斯可拉可以用交互动作拔出该武器（若选择的是手弩，则可以装填之）。</p>"
+				}
+			}
+		},
+		"Liaskra (3-4)": {
+			"name": "利亚斯可拉 Liaskra (3-4)",
+			"data":{},
+			"items":{
+				"Barbed Quills":{
+					"name": "带刺羽尖 Barbed Quills",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 利亚斯可拉被无武装打击或非长触及近战武器打击命中</p>\n<hr />\n<p><strong>效果</strong> 利亚斯可拉将骨羽断在攻击者的皮肉中。对触发生物造成[[/r 2d8[piercing]]]伤害(@Check[type:reflex|dc:21|basic:true|traits:damaging-effect])。大失败的生物还会在骨羽钩进身体时受到[[/r (1d4+1)[bleed]]]伤害。</p>"
+				},
+				"Trick Attack":{
+					"name": "诡计攻击 Trick Attack",
+					"description": "<p>利亚斯可拉利用阴险诡诈尝试一次巧妙的攻击，让敌人猝不及防。利亚斯可拉选择她的一件武器。用该武器发动的下一次攻击额外造成2d6精准伤害。此外，利亚斯可拉可以用交互动作拔出该武器（若选择的是手弩，则可以装填之）。</p>"
+				}
+			}
+		},
+		"Fascinating Lecture (1-2)": {
+			"name": "迷魂演讲 Fascinating Lecture (1-2)",
+			"disable": "<p>@Check[type:intimidation|dc:17]来打断演讲，@Check[type:thievery|dc:20] (受训) 刮掉讲台上的一个符文，或用<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (2环; 反制DC18)反制其中一个符文；解除此陷阱需要累计三次成功。</p>",
+			"hazarddescription": "<p>讲台上一个小个子迦伦德女人的半透明图像突然开始讲授惑控魔法的本质。</p>",
+			"routine": "<p>(1动作) （奥法，胁迫，惑控，心灵，非致命） 图像行云流水地讲授极为高深的课题，在迫使听众保持注意力的同时，也压倒了他们的思想。房间里的每个生物必须通过@Check[type:will|dc:20|traits:arcane,compulsion,enchantment,mental,nonlethal]豁免，受到[[/r 1d6[mental]]]{1d6非致命心灵伤害}，以及以下效果。</p>\n<hr>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物摆脱了大部分心灵负担，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，受到一半伤害。</p>\n<p><strong>失败</strong> 生物被迫只能努力处理所有的信息，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}，受到完整伤害。</p>\n<p><strong>大失败</strong> 生物精神完全集中于演讲，陷入1轮震慑，1分钟@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并受到双倍伤害。此危害造成的伤害不会终止迷魂状态。生命值被迷魂演讲降到0点的生物将昏迷不醒，直到恢复生命值。因此昏迷的生物1小时后将自动恢复1点生命值并醒来。</p>",
+			"stealthdetails": "<p>(专家)</p>",
+			"data":{},
+			"items":{
+				"Take Your Seats":{
+					"name": "请就座 Take Your Seats",
+					"description": "<p><strong>触发</strong> 生物尝试接触讲台上的研究文页。</p>\n<hr />\n<p><strong>效果</strong> 文页被一个强大的惑控魔法结界保护起来，直到本险情被彻底解除。没有生物会产生去触碰文页的意愿。房间里的所有生物必须尝试@Check[type:will|dc:20]豁免。然后陷阱骰先攻。</p>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物必须花一个动作靠近教室里的一张空桌子。</p>\n<p><strong>失败</strong> 生物必须花两个动作靠近教室里的一张空桌子并坐下，陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1小时。</p>\n<p><strong>大失败</strong> 生物花费下个回合，用于靠近教室里的一张空桌子并坐下。陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1小时，并陷入一分钟@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}状态。</p>"
+				}
+			}
+		},
+		"Fascinating Lecture (3-4)": {
+			"name": "迷魂演讲 Fascinating Lecture (3-4)",
+			"disable": "<p>@Check[type:intimidation|dc:20]来打断演讲，@Check[type:thievery|dc:23] (受训) 刮掉讲台上的一个符文，或用<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (3环; 反制DC20)反制其中一个符文；解除此陷阱需要累计三次成功。</p>",
+			"hazarddescription": "<p>讲台上一个小个子迦伦德女人的半透明图像突然开始讲授惑控魔法的本质。</p>",
+			"routine": "<p>(1动作) （奥法，胁迫，惑控，心灵，非致命） 图像行云流水地讲授极为高深的课题，在迫使听众保持注意力的同时，也压倒了他们的思想。房间里的每个生物必须通过@Check[type:will|dc:22|traits:arcane,compulsion,enchantment,mental,nonlethal]豁免，受到[[/r 2d6[mental]]]{2d6非致命心灵伤害}，以及以下效果。</p>\n<hr>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物摆脱了大部分心灵负担，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，受到一半伤害。</p>\n<p><strong>失败</strong> 生物被迫只能努力处理所有的信息，陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}，受到完整伤害。</p>\n<p><strong>大失败</strong> 生物精神完全集中于演讲，陷入1轮震慑，1分钟@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并受到双倍伤害。此危害造成的伤害不会终止迷魂状态。生命值被迷魂演讲降到0点的生物将昏迷不醒，直到恢复生命值。因此昏迷的生物1小时后将自动恢复1点生命值并醒来。</p>",
+			"stealthdetails": "<p>(专家)</p>",
+			"data":{},
+			"items":{
+				"Take Your Seats":{
+					"name": "请就座 Take Your Seats",
+					"description": "<p><strong>触发</strong> 生物尝试接触讲台上的研究文页。</p>\n<hr />\n<p><strong>效果</strong> 文页被一个强大的惑控魔法结界保护起来，直到本险情被彻底解除。没有生物会产生去触碰文页的意愿。房间里的所有生物必须尝试@Check[type:will|dc:22]豁免。然后陷阱骰先攻。</p>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物必须花一个动作靠近教室里的一张空桌子。</p>\n<p><strong>失败</strong> 生物必须花两个动作靠近教室里的一张空桌子并坐下，陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1小时。</p>\n<p><strong>大失败</strong> 生物花费下个回合，用于靠近教室里的一张空桌子并坐下。陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1小时，并陷入一分钟@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}状态。</p>"
+				}
+			}
+		},
+		"Unbridled Necromantic Energy (1-2)": {
+			"name": "失控死灵能量 Unbridled Necromantic Energy (1-2)",
+			"disable": "<p>@Check[type:arcana|dc:17] (受训)修复一些奥术结界，@Check[type:religion|dc:20]或@Check[type:occultism|dc:20] (受训)平息房间里的死灵能量。</p>",
+			"hazarddescription": "<p>房间里包含的魔法能量在黑暗的闪电中涌动。</p>",
+			"reset": "<p>10分钟</p>",
+			"stealthdetails": "<p>(受训)</p>",
+			"data":{},
+			"items":{
+				"Necromantic Discharge":{
+					"name": "死灵释放 Necromantic Discharge",
+					"description": "<p><strong>触发</strong> 生物进入房间。</p>\n<hr />\n<p><strong>效果</strong> 房间里涌动的死灵能量像闪电一样散发出去，淹没房间里或房间外三格走廊上的所有生物。这些区域内的每个生物必须因被黑暗能量笼罩而尝试@Check[type:fortitude|dc:18|traits:damaging-effect]豁免，它造成[[/r 2d8[negative]]]伤害，或对有负能量治疗的生物造成[[/r 2d8[positive]]]伤害。 </p>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1小时。</p>\n<p><strong>失败</strong> 生物受到完整伤害，陷入力竭1，持续1小时。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入力竭1，持续1天。</p>"
+				}
+			}
+		},
+		"Unbridled Necromantic Energy (3-4)": {
+			"name": "失控死灵能量 Unbridled Necromantic Energy (3-4)",
+			"disable": "<p>@Check[type:arcana|dc:20] (受训)修复一些奥术结界，@Check[type:religion|dc:23]或@Check[type:occultism|dc:23] (受训)平息房间里的死灵能量。</p>",
+			"hazarddescription": "<p>房间里包含的魔法能量在黑暗的闪电中涌动。</p>",
+			"reset": "<p>10分钟</p>",
+			"stealthdetails": "<p>(受训)</p>",
+			"data":{},
+			"items":{
+				"Necromantic Discharge":{
+					"name": "死灵释放 Necromantic Discharge",
+					"description": "<p><strong>触发</strong> 生物进入房间。</p>\n<hr />\n<p><strong>效果</strong> 房间里涌动的死灵能量像闪电一样散发出去，淹没房间里或房间外三格走廊上的所有生物。这些区域内的每个生物必须因被黑暗能量笼罩而尝试@Check[type:fortitude|dc:21|traits:damaging-effect]豁免，它造成[[/r (2d8+5)[negative]]]伤害，或对有负能量治疗的生物造成[[/r (2d8+5)[positive]]]伤害。</p>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1小时。</p>\n<p><strong>失败</strong> 生物受到完整伤害，陷入力竭1，持续1小时。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入力竭1，持续1天。</p>"
+				}
+			}
 		}
 	}
 }
