@@ -66,27 +66,27 @@
 			}
 		},
 		"Alethsia": {
-			"name": "Alethsia",
-			"publicNotes": "<p>Monstrous humanoids that resemble humans with snakes instead of hair, medusas are best known for their petrifying gazes that-if lingered upon-can permanently transform mortals to stone. Medusas are shrewd and manipulative adversaries who collect and covet secrets, and who use threats and guile to exploit the fears of weaker creatures. A medusa may seek out powerful magic items, use divination magic to discover secret knowledge and unlock forbidden power, or infiltrate a society to beguile influential politicians. Their ability to worm their way into powerful organizations makes them natural leaders of criminal outfits and thieves' guilds, and their interest in magical phenomena leads some to pursue careers as oracles who offer to help adventurers find what they seek-for a price. Of course, if wit and deception proves insufficient, a medusa can always simply turn rivals into ornate stone decorations with little more than a glare。</p>\n<p>Exceptionally agile and surprisingly hardy, a medusa rarely backs down from a conflict even when cornered. Many adventurers who thought themselves readied to resist the effects of a medusa's gaze have nevertheless fallen to a medusa, as these creatures are also often deadly archers able to riddle their foes with venom-coated arrows from a distance. Still, a medusa may barter for their life if no alternatives remain, and the secrets carried by these powerful villains often make it more than worth sparing the monster's life。</p>",
-			"blurb": "Variant elite medusa",
+			"name": "阿莱西娅 Alethsia",
+			"publicNotes": "<p>美杜莎是一种类人怪物，她们外貌和人类差不多，只不过头上长出的不是头发而是一条条蛇。美杜莎最为人所知的就是她们的石化凝视，只需将目光逗留片刻，就能永远地将凡人变为石头。美杜莎相当精明且善于操控敌手，她们觊觎并收集着秘密，利用威胁和诡计来唤起弱者的恐惧。美杜莎可能会寻找强大的魔法物品，使用预言魔法来发现秘密的知识并解封禁忌的力量，或是潜入一个社群去欺骗有影响力的政客。美杜莎能够潜入强大组织的能力使得她们自然而然地就能成为犯罪组织和盗贼工会的头目。她们对于魔法现象的兴趣使得其中的一些成为了像是先知这样的职业，帮助冒险者们寻找他们想要的东西——顺带收取相应的代价。当然，如果智慧和欺骗还不足以达成目的，美杜莎总是可以简单地通过仅仅一瞥就把对手变成华丽的石像。</p>\n<p>美杜莎异乎寻常的敏捷，同时又出乎意料的顽强，即使在困境中也鲜有退缩。许多冒险家都认为自己已经做好了对抗美杜莎凝视的准备，然而却依旧栽在了美杜莎的手里，因为他们忽略了这些生物通常还是致命的弓箭手，能够在远距离利用涂毒的箭矢射穿她们的敌人。不过，如果在无路可退的情况下，美杜莎还是可能会通过交易来赎命，而通常这些恶徒身上所携带的秘密也足矣值得饶这些怪物一命。</p>",
+			"blurb": "变体精英美杜莎",
 			"data":{},
 			"items":{
-				"Biting Snakes":{
-					"name": "Biting Snakes",
-					"description": "<p><strong>触发</strong> A creature ends its turn adjacent to the medusa。</p>\n<hr />\n<p><strong>效果</strong> The medusa makes a snake fangs Strike against the creature。</p>"
-				},
+                "Biting Snakes": {
+                    "name": "噬咬之蛇 Biting Snakes",
+                    "description": "<p><strong>触发</strong> 一个生物临接于美杜莎结束其回合。</p>\n<hr />\n<p><strong>效果</strong> 美杜莎对该生物发动一次蛇牙打击。</p>"
+                },
 				"Glass Gaze":{
-					"name": "Glass Gaze",
-					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>When a creature ends its turn in the aura, it must attempt a @Check[type:fortitude|dc:25] save. If the creature fails, it becomes @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 minute. The medusa can deactivate or activate this aura by using a single action, which has the concentrate trait。</p>"
+					"name": "玻璃凝视 Glass Gaze",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当一个生物在灵光范围内结束其回合时，他必须尝试一次@Check[type:fortitude|dc:25]检定。如果该生物失败，他将在1分钟内@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。美杜莎可以用一个具有专注特征的单动作来关闭或激活此灵光。</p>"
 				},
-				"Focus Gaze":{
-					"name": "Focus Gaze",
-					"description": "<p>The medusa fixes their glare at a creature they can see within 30 feet. The target must immediately attempt a @Check[type:fortitude|dc:25] save against the medusa's glass gaze. If the creature was already @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed} by glass gaze before attempting its save, a failed save causes it to be @UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{Petrified} permanently。</p>\n<p>After attempting its save, the creature is then temporarily immune until the start of the medusa's next turn。</p>"
-				},
-				"Serpent Venom":{
-					"name": "Serpent Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
-				}
+                "Focus Gaze": {
+                    "name": "集中凝视 Focus Gaze",
+                    "description": "<p>美杜莎将她们的目光聚焦在30尺内的一名生物上。目标必须立即对抗美杜莎的石化凝视进行@Check[type:fortitude|dc:25]豁免。如果该生物在尝试此次豁免前已经因石化凝视而被@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed}了，豁免失败将导致其被永久@UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{石化 Petrified}。</p>\n<p>在尝试了豁免之后，该生物会暂时免疫，直到美杜莎的下个回合开始。</p>"
+                },
+                "Serpent Venom": {
+                    "name": "蛇毒 Serpent Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
+                }
 			}
 		},
 		"Ambrost Mugland": {
@@ -121,73 +121,73 @@
 			}
 		},
 		"Anjelique Loveless": {
-			"name": "Anjelique Loveless",
-			"blurb": "Female elf changeling shieldmarshal deputy",
+			"name": "安洁莉卡·洛夫莱斯 Anjelique Loveless",
+			"blurb": "女性精灵替换儿盾勋执法官副警长",
 			"data":{},
 			"items":{
 				"equipment-Blazons of Shared Power (attached to pistol and reinforced stock)":{
-					"name": "共享力量纹章 Blazons of Shared Power (attached to pistol and reinforced stock)",
+					"name": "共享力量纹章 Blazons of Shared Power (power，附着在手枪和加固枪托上)",
 					"description": "<p>这些黄铜徽章有各种各样的设计，通常由用户定制成家族或行会纹章的样式。一套<em>共享力量纹章</em>分为三枚，你需要在胸前佩戴其中一枚，然后将剩余两枚附着到一对单手武器上，选择一把为主武器，另一把为副武器。这些武器可以是近战或远程武器。只要你同时持用主武器和副武器，副武器就能获得主武器上的基础符文所带来的的好处。一把武器同时只能在上面附着一套共享力量纹章。</p>"
 				},
 				"equipment-Infused Pyronite Charge":{
-					"name": "Infused Pyronite Charge"
+					"name": "灌注爆熔雷炸药 Infused Pyronite Charge"
 				},
 				"strike-Reinforced Stock":{
-					"name": "Reinforced Stock"
+					"name": "加固枪托 Reinforced Stock"
 				},
 				"strike-Hex Blaster":{
-					"name": "Hex Blaster"
+					"name": "灾厄爆裂枪 Hex Blaster"
 				},
 				"strike-Redeemer's Pistol":{
-					"name": "Redeemer's Pistol"
+					"name": "救赎者手枪 Redeemer's Pistol"
 				},
 				"Stubborn Resolve":{
-					"name": "Stubborn Resolve",
-					"description": "<p><strong>频率</strong> once per天</p>\n<p><strong>触发</strong> Anjelique fails or critically fails a saving throw</p>\n<hr />\n<p><strong>效果</strong> Anjelique treats a critical failure as a failure, or a failure as a success。</p>"
+					"name": "坚定决心 Stubborn Resolve",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 安洁莉卡豁免失败或大失败</p>\n<hr />\n<p><strong>效果</strong> 安洁莉卡将大失败改为失败，或将失败改为成功。</p>"
 				},
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
-					"description": "<p>When Anjelique makes a critical hit with a firearm, the target must succeed a @Check[type:fortitude|dc:34]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>当安洁莉卡以火器重击时，目标必须通过@Check[type:fortitude|dc:34]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Lawbringer's Pursuit":{
-					"name": "Lawbringer's Pursuit",
-					"description": "<p>Anjelique Strides and then either Interacts to reload her gun or makes an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize} a foe。</p>"
+					"name": "执法者的追击 Lawbringer's Pursuit",
+					"description": "<p>安洁莉卡行走，然后选择以交互动作装填枪械，或进行一次威吓检定@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。</p>"
 				},
 				"Mentor's Curse":{
-					"name": "Mentor's Curse",
-					"description": "<p>The grace of Anjelique's champion mentor inhabits the redeemer's pistol she carries, passing judgment on her actions. If she attempts to make a redeemer's pistol Strike against a good-aligned creature, she must succeed at a @Check[type:flat|dc:5] or the gun misfires。</p>"
+					"name": "导师的诅咒 Mentor's Curse",
+					"description": "<p>安洁莉卡的神卫导师的恩典存在于她携带的救赎者手枪中，对她的行为进行审判。如果她试图用救赎者手枪打击一个善良阵营的生物，她必须通过@Check[type:flat|dc:5]检定，否则枪械会哑火。</p>"
 				},
 				"Parting Shot":{
-					"name": "Parting Shot",
-					"description": "<p><strong>触发</strong> Anjelique would die or gain the dying condition</p>\n<hr />\n<p><strong>效果</strong> Anjelique reloads her currently wielded firearm if necessary and makes a ranged Strike against an enemy, treating a successful attack as a critical hit. Whether successful or not, after making this attack, Anjelique dies。</p>"
+					"name": "临终一枪 Parting Shot",
+					"description": "<p><strong>触发</strong> 安洁莉卡即将死亡或获得濒死状态</p>\n<hr />\n<p><strong>效果</strong> 安洁莉卡装填她当前持握的火器（如果必要的话），然后对一个敌人进行一次远程打击，成功命中将视为重击。无论攻击命中与否，在攻击之后安洁莉卡会死亡。</p>"
 				},
 				"Plant Pyronite Charge":{
-					"name": "Plant Pyronite Charge",
-					"description": "<p>After making a successful melee Strike against a creature, Anjelique makes a Thievery check against the target's Perception DC. On a success, she activates and secretly plants a specially formulated sticky pyronite charge on the creature. This charge detonates after 3 rounds, dealing [[/r (4d8)[fire]]]{4d8火焰伤害} to all creatures within a @Template[type:emanation|distance:10]{10-foot radius} (@Check[type:reflex|dc:34|basic:true]) and detonating any other pyronite charges within the area. After making a successful ranged Strike against a creature stuck with a planted charge, Anjelique can choose to shoot a bullet through the charge, dealing normal damage and detonating the charge immediately. A creature can use an Interact action to find and remove a planted charge from itself or an adjacent creature. These pyronite charges have the infused trait and are inert until activated by Anjelique。</p>"
+					"name": "安装爆熔雷炸药 Plant Pyronite Charge",
+					"description": "<p>在对一个生物进行一次成功的近战打击之后，安洁莉卡进行一次贼活检定，对抗目标的察觉DC。如果成功，她能偷偷将一种特殊制作的黏性爆熔雷炸药安放在目标生物身上。炸弹在3轮后引爆，对@Template[type:emanation|distance:10]内所有生物造成[[/r 4d8[fire]]]伤害（@Check[type:reflex|dc:34|basic:true]豁免），并引爆该区域内其他爆熔雷炸药。在成功地通过远程攻击命中被安装炸药的生物之后，安洁莉卡可以选择用子弹引爆炸药，对生物造成正常打击伤害并且炸弹立即爆炸。生物可以使用交互动作从自己或相邻的生物身上找到并移除安装的炸药。这些炸药具有[灌注]特征，并且在被安洁莉卡激活之前是惰性的。</p>"
 				},
 				"Tormenting Shot":{
-					"name": "Tormenting Shot",
-					"description": "<p>Anjelique makes a ranged Strike and deals an additional [[/r (2d8)[piercing]]]{2d8穿刺伤害} on a hit. If the target is frightened, it also takes @Localize[PF2E.PersistentDamage.Bleed2d6.success] on a hit。</p>"
+					"name": "折磨射击 Tormenting Shot",
+					"description": "<p>安洁莉卡进行一次远程打击，命中造成额外[[/r 2d8[piercing]]]伤害。如果目标陷入惊惧，目标还会受到[[/r 2d6[persistent,bleed]]]伤害。</p>"
 				}
 			}
 		},
 		"Atticus": {
-			"name": "Atticus",
-			"senses": "+ 20 to Sense Motive or vs. Conceal An Object",
-			"blurb": "Male human corrupt shieldmarshal",
+			"name": "阿提库斯 Atticus",
+			"senses": "对抗隐藏物件时的察言观色+20",
+			"blurb": "人类男性贪腐盾勋执法官",
 			"data":{},
 			"items":{
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
-					"description": "<p>When the shieldmarshal makes a critical hit with a firearm weapon, the target must succeed at a @Check[type:fortitude|dc:25]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>当盾勋执法官以火器造成重击，目标必须通过@Check[type:fortitude|dc:25]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Lawbringer":{
 					"name": "执法者 Lawbringer",
-					"description": "<p>The shieldmarshal marks a foe for judgment, granting the shieldmarshal a +10-foot circumstance bonus to Speed whenever it Strides toward that creature. The shieldmarshal's Strikes against that creature deal an additional 2d8 precision damage。</p>"
+					"description": "<p>盾勋执法官将一个敌人标记为审判对象，执法官向该生物行走时，速度有+10尺环境加值。盾勋执法官对该生物进行的打击造成额外2d8精准伤害。</p>"
 				},
 				"Reloading Strike":{
-					"name": "Reloading Strike",
-					"description": "<p>The shieldmarshal makes a melee Strike against an opponent within reach and Interacts to reload a firearm in their other hand。</p>"
+					"name": "装填打击 Reloading Strike",
+					"description": "<p>盾勋执法官对触及范围内的敌人进行一次近战打击，然后以交互动作装填另一只手中的火器。</p>"
 				}
 			}
 		},
@@ -234,100 +234,100 @@
 			}
 		},
 		"Broken Centurion": {
-			"name": "Broken Centurion",
-			"publicNotes": "<p>These mechanical constructs were created to serve as guardians in an ancient and bygone era, although exactly who made them and the secrets of their construction have long since been lost to history. From the waist up, they resemble humanoids made of metal, but from the waist down their bodies take the form of spinning metal tops ringed with blades, which excel at cutting down nearby foes. Most spiral centurions can be directed to stand down with a password, although often these command phrases have been lost to the mists of time. In rare cases, a spiral centurion may also wield manufactured weapons or a shield in addition to its built-in weapons, giving it access to additional actions besides those listed below。</p>\n<p>Most spiral centurions are hundreds or even thousands of years old, only staying functional because of the powerful magic used in their creation. Still, millennia of neglect have caused many spiral centurions to develop small glitches or malfunctions。</p>",
-			"blurb": "Variant weak spiral centurion",
+			"name": "破损百夫长 Broken Centurion",
+			"publicNotes": "<p>这些机械构装体被作为远古时代的守护者被制造出来，究竟是何人所为已经早已被遗忘在历史长河里。在它们的腰部以上，看起来像金属制造的机器人，但腰部以下的身体就像一个旋转的金属陀螺，上面带着用来砍倒附近的敌人刀片。大多数陀螺百夫长都可以通过密码命令来将其关机，但是这些命令往往已经消失在时间的迷雾中。在罕见的情况下，除了它的内置武器之外，陀螺百夫长也可以使用人造的武器和盾牌，让它们能获得数据中所没列出的其他能力。</p>\n<p>大多数陀螺百夫长都有几百年甚至上千年的历史，它们之所以还能维持运转是因为在创造过程中使用了强大的魔法。尽管如此，数千年未经维护已经导致很多陀螺百夫长出现各种小故障和失灵。</p>",
+			"blurb": "变体弱化陀螺百夫长",
 			"data":{},
 			"items":{
 				"strike-Dulled Blade":{
-					"name": "Dulled Blade"
+					"name": "钝刀 Dulled Blade"
 				},
 				"strike-Cannon":{
-					"name": "Cannon"
+					"name": "加农炮 Cannon"
 				},
 				"Misaligned Gears":{
-					"name": "Misaligned Gears",
-					"description": "<p>The spiral centurion loses access to its Rev Up ability, and if it Strides more than once per round, it takes [[/r 1d10]] damage per Stride after the first。</p>"
+					"name": "齿轮偏位 Misaligned Gears",
+					"description": "<p>陀螺百夫长失去它失去加快转速（Rev Up）能力，并且如果它每轮行走超过1次，则受到[[/r 1d10]]伤害。 </p>"
 				},
 				"Top-Heavy":{
-					"name": "Top-Heavy",
-					"description": "<p>A spiral centurion's top-like design makes it susceptible to effects that would cause it to fall prone. The DC of any attempt to knock the spiral centurion @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone} is reduced by 5. If the spiral centurion attempts a check or saving throw to resist being knocked prone, it takes a -5 status penalty. A spiral centurion that has been knocked prone can't use any actions other than to attempt to Stand, but it must succeed at a @Check[type:acrobatics|dc:30] check to do so。</p>"
+					"name": "头重脚轻 Top-Heavy",
+					"description": "<p>陀螺百夫长的顶部设计使它容易倒地。任何击倒陀螺百夫长至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态的尝试其DC都会-5。如果陀螺百夫长尝试通过检定和豁免来对抗击倒效果，它将遭受-5状态减值。被击倒的陀螺百夫长除了尝试站立（Stand）以外无法进行任何其他动作，但是它必须成功通过一次@Check[type:acrobatics|dc:30]检定才能站起来。</p>"
 				},
 				"Hurl Blade":{
-					"name": "Hurl Blade",
-					"description": "<p>The spiral centurion hurls one of its blades with an angled spin to ensure a swooping flight path. The blade deals [[/r (6d6)[slashing]]]{6d6挥砍伤害} to each creature in a @Template[type:line|distance:40] (@Check[type:reflex|dc:30|basic:true] save)。</p>\n<p>At the start of the spiral centurion's next turn, the blade swoops around and returns along the same flight path, again dealing [[/r (6d6)[slashing]]]{6d6挥砍伤害} (@Check[type:reflex|dc:30|basic:true] save) to each creature along the same line。</p>"
+					"name": "投掷刀片 Hurl Blade",
+					"description": "<p>陀螺百夫长以特定角度抛射出其中一枚刀片来确保刀片回旋的路径。刀片对@Template[type:line|distance:40]范围内的所有生物造成[[/r 6d6[slashing]]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>\n<p>在陀螺百夫长的下一回合开始时，刀片沿着同样的路径回旋返回，再次对路径上的所有生物造成[[/r 6d6[slashing]]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>"
 				},
 				"Reload Guns":{
-					"name": "Reload Guns",
-					"description": "<p>The spiral centurion loads ammo into its many guns。</p>"
+					"name": "装填火炮 Reload Guns",
+					"description": "<p>陀螺百夫长为同时为多门火炮装填弹药。</p>"
 				},
 				"Trample":{
 					"name": "践踏 Trample",
-					"description": "<p>Medium or smaller, blade, @Check[type:reflex|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+					"description": "<p>中型或更小体型, 刀片, @Check[type:reflex|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
 				},
 				"Whirling Death":{
-					"name": "Whirling Death",
-					"description": "<p>The spiral centurion spins furiously in place, its blades extended to slice through nearby creatures. It makes up to five melee blade Strikes. No single creature can be targeted by more than one blade Strike during one use of this ability. These attacks count toward the spiral centurion's multiple attack penalty, but the multiple attack penalty doesn't increase until after all the attacks are made。</p>"
+					"name": "旋转杀戮 Whirling Death",
+					"description": "<p>陀螺百夫长在原地疯狂旋转，刀刃切割周围的所有生物。它最多能发动5次刀片打击，在一次技能期间，任何一个单一的生物都只能成为1次打击的目标。这些攻击计入陀螺百夫长的多重攻击减值，但多重攻击减值在所有打击都完成后才会增加。</p>"
 				},
 				"Whirling Fire":{
-					"name": "Whirling Fire",
-					"description": "<p><strong>需求</strong> The spiral centurion has used Reload Guns three times since the last time it used Whirling Fire</p>\n<hr />\n<p><strong>效果</strong> The spiral centurion spins furiously in place, firing its guns wildly and dealing [[/r (8d6)[piercing]]]{8d6穿刺伤害} to creatures in a @Template[type:emanation|distance:60]{60-foot radius} (@Check[type:reflex|dc:28|basic:true]). Creatures further than 30 feet away gain a +4 circumstance bonus on their save against this attack。</p>"
+					"name": "旋转开火 Whirling Fire",
+					"description": "<p><strong>需求</strong> 陀螺百夫长自从上次使用旋转开火之后至少进行了三次装填火炮动作</p>\n<hr />\n<p><strong>效果</strong> 陀螺百夫长在位置上高速旋转并胡乱开火，对@Template[type:emanation|distance:60]范围内所有生物造成[[/r 8d6[piercing]]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。距离超过30尺外的生物，在面对此攻击的豁免上有+4环境加值。</p>"
 				}
 			}
 		},
 		"Captured Dezullon": {
-			"name": "Captured Dezullon",
-			"publicNotes": "<p>Dezullons are dangerous carnivorous pitcher plants that dwell in forested regions with thick canopies. They hunt for meat along the forest's understory when not sunning themselves in the boughs above. Dezullons are smart enough to notice that some creatures are attracted by shiny things, and sometimes use such objects to set up ambushes. To assume that the dezullon's ambulations are slow simply because the creature has a root structure is a foolish mistake; many an adventurer has been crushed to death by this surprisingly agile plant. In addition, these dangerous plants are expert climbers, making their pursuit even more difficult to escape from。</p>\n<p>A hungry dezullon keeps prey off-balance by spilling its putrid, psychoactive digestive juices from its central pitcher. In addition to being highly acidic, the enzymes in a dezullon's digestive tract, once expelled, inflict a victim with powerful hallucinations and amnesia. This secondary effect makes dezullons highly sought after in some circles, including avid drug users, experimental doctors, and criminals who deal in poisons。</p>\n<p>Many varieties of dezullon exist, including lumbering giants of incredible size, those that have tiny, cup-shaped pitchers that proliferate along lengths of creeping ivy like suckers on a squid's tentacles, and others with hundreds of blood-red, razor-sharp leaves that protrude from the inside of their pitchers like a leech's teeth. This latter variety is especially dangerous, since the leaves can all but eviscerate creatures that become ensconced inside their pitchers。</p>",
-			"blurb": "Weak dezullon",
+			"name": "吃饱的大猪笼草 Captured Dezullon",
+			"publicNotes": "<p>大猪笼草是一种危险的食肉性猪笼草植物，生长在树冠茂密的森林。当它们不在树冠上晒太阳时，就会顺着森林的下层植被捕食。大猪笼草很聪明，知道一些生物容易被闪亮的东西吸引，所以有时会用这些东西设伏。如果仅仅因为大猪笼草下半部分是根须就认为它移动速度很慢的话，那是个愚蠢的错误；许多冒险家死于这些超级灵巧的植物。此外，这种危险的植物是专业的攀爬者，这让它们的追击更难以被逃脱。</p>\n<p>饥饿的大猪笼草能从中间的叶瓶中吐出它腐臭的、会影响心智的消化液，从而让猎物失去平衡。它消化器官中除了含有强酸，还有一种酶，一旦被排出体外，就能让受害者产生强烈的幻觉和失忆症。这种副作用使得大猪笼草在一些圈子里备受追捧，包括狂热的吸毒者、实验室的医生和使用毒药的罪犯。</p>\n<p>大猪笼草的种类很多，其中包括笨重的巨猪笼草，其体型之大让人难以置信；还有一些长着杯状的小叶瓶，沿着长长的常春藤蔓延，就像乌贼触须上的吸盘，还有一些则长着数百片血红、锋利的叶子，从瓶内伸出来，就像水蛭的牙齿一样。最后这一种尤其危险，因为这些叶子可以把关在瓶中的生物的肉和内脏全部剃干净。</p>",
+			"blurb": "弱化大猪笼草",
 			"data":{},
 			"items":{
-				"strike-Acid Glob":{
-					"name": "Acid Glob"
-				},
-				"Stench":{
-					"name": "Stench",
-					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>A creature entering the emanation must attempt a @Check[type:fortitude|dc:27] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}, and on a critical failure is also @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at the save is temporarily immune to this effect for 1 minute。</p>"
-				},
-				"Amnesia Venom":{
-					"name": "Amnesia Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> flat-footed and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
-				},
-				"Constrict":{
-					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (2d6+2)[bludgeoning]]]{2d6+2钝击伤害}、@Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>Note: A DC was not provided for this ability by Paizo. The DC present here is a moderate DC for the creature level according to the Gamemastery Guide creature building Tables.</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
-				},
-				"Root":{
-					"name": "根须 Root",
-					"description": "<p>Until the next time it acts, the dezullon appears to be a normal pitcher plant. It has an automatic result of 41 (44 in forests or swamps) on Deception checks and DCs to pass as a non-creature plant。</p>"
-				},
+                "strike-Acid Glob": {
+                    "name": "酸球 Acid Glob"
+                },
+                "Stench": {
+                    "name": "恶臭 Stench",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入其弥散范围的生物必须通过@Check[type:fortitude|dc:27]检定。如果失败，生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}，大失败的话还要加上@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。处于灵光范围中时，生物尝试从恶心状态恢复的豁免鉴定有-2环境减值。通过豁免的生物，在一分钟内免疫此效果。</p>"
+                },
+                "Amnesia Venom": {
+                    "name": "失忆毒液 Amnesia Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+                },
+                "Constrict": {
+                    "name": "紧勒 Constrict",
+                    "description": "<p>[[/r (2d6+2)[bludgeoning]]]{2d6+2钝击伤害}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                },
+                "Root": {
+                    "name": "扎根 Root",
+                    "description": "<p>直到下一次行动前，大猪笼草看上去就像一株普通猪笼草植物。它在假装为非生物植物的欺骗检定和DC自动得到41的结果（在森林或者沼泽中为44）。</p>"
+                },
 				"Vomit":{
-					"name": "Vomit",
-					"description": "<p><strong>触发</strong> The dezullon is damaged by an attack</p>\n<hr />\n<p><strong>效果</strong> The dezullon vomits the contents of its stomach into an adjacent unoccupied space, filling the space with either a dead body or still-moving zombie (a body is in one of the dezullons, a zombie is in the other). Creatures adjacent to the dezullon must succeed at a @Check[type:reflex|dc:28] save or be splashed with a dose of the dezullon's amnesia venom。</p>"
+					"name": "呕吐 Vomit",
+					"description": "<p><strong>触发</strong> 大猪笼草受到攻击伤害</p>\n<hr />\n<p><strong>效果</strong> 大猪笼草将它们胃里的东西吐到一个相邻的空间，空间将被一具尸体或一只依然能行动的丧尸占据（尸体在其中一只大猪笼草肚子里，丧尸则在另外一只肚子里）。和大猪笼草相邻的生物必须通过@Check[type:reflex|dc:26]豁免，否则会被大猪笼草的失忆毒液溅到。</p>"
 				}
 			}
 		},
 		"Chemical Zombie": {
-			"name": "Chemical Zombie",
-			"publicNotes": "<p>Necromancers most often create these mindless undead as obedient, expendable servitors. Left to its own devices, a zombie seeks only to consume the living, stopping only when its rotting body can no longer hold together。</p>\n<hr />\n<p>Glowing with a dull amber light, these odious creatures spawn from a combination of necromancy and fire. These destructive creations sow chaos and demolish fortifications, making them the bane of besieged cities。</p>",
-			"blurb": "Variant sulfur zombies",
+			"name": "化学丧尸 Chemical Zombie",
+			"publicNotes": "<p>死灵法师们经常创造此类无心智的亡来作为其顺从而可消耗的仆人。如果任其自生自灭，丧尸只会吞噬活物，直至它腐烂的身躯再无法维持其形。</p>\n<hr />\n<p>散发着暗淡的琥珀色光芒，这些可憎的生物自死灵术和火的结合中诞生。此类破坏性的生物散布混乱并摧毁防御工事，这使得它们成为被围困的城市的大麻烦。</p>",
+			"blurb": "变体硫磺丧尸",
 			"data":{},
 			"items":{
 				"strike-Fist":{
 					"name": "拳击 Fist",
-					"description": "<p>[[/r (1d6)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}</p>"
+					"description": "<p>[[/r 1d6[persistent,fire]]]伤害</p>"
 				},
 				"Quenchable Death Throes":{
-					"name": "Quenchable Death Throes",
-					"description": "<p>When a chemical zombie dies, its body explodes in a @Template[type:burst|distance:30] of fire and debris that deals [[/r (2d10)[bludgeoning]+(2d10)[fire]]]{2d10 bludgeoning and 2d10火焰伤害} to each creature in the area (@Check[type:reflex|dc:21|basic:true]). If the chemical zombie is soaked with water before it dies (such as by dousing it with a bucket of water or hitting it with a water spell like <em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{Hydraulic Push}</em>), the chemicals are neutralized and this ability doesn't trigger。</p>"
+					"name": "可熄灭的死前挣扎 Quenchable Death Throes",
+					"description": "<p>当化学丧尸死亡时，它的身体会在@Template[type:burst|distance:30]区域内爆炸，火焰和碎片对区域内的生物造成[[/r 2d10[bludgeoning]+2d10[fire]]]{2d10钝击和2d10火焰伤害}（@Check[type:reflex|dc:21|basic:true]豁免）。如果化学丧尸在死前被水浸泡（例如用一桶水浇它或用<em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{水流冲击 Hydraulic Push}</em>之类的法术击中它），化学物质就会被中和，该能力就不会触发。</p>"
 				},
-				"Slow":{
-					"name": "缓慢 Slow",
-					"description": "<p>A sulfur zombie is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions。</p>"
-				},
-				"Blinding Sulfur":{
-					"name": "Blinding Sulfur",
-					"description": "<p>A sulfur zombie burns with putrid inner fire. A creature hit by a sulfur zombie's fist Strike must attempt a @Check[type:fortitude|dc:22] save. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} for 1 round, or for 1 minute on a critical failure。</p>"
-				}
+                "Slow": {
+                    "name": "缓慢 Slow",
+                    "description": "<p>硫磺丧尸永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+                },
+                "Blinding Sulfur": {
+                    "name": "灼目硫烟 Blinding Sulfur",
+                    "description": "<p>硫磺丧尸燃起腐烂躯体内的火焰。被硫磺丧尸第一次打击命中的生物必须进行@Check[type:fortitude|dc:22]豁免。若失败，该生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，大失败则为1分钟。</p>"
+                }
 			}
 		},
 		"Chimeric Manticore": {
@@ -620,47 +620,47 @@
 			}
 		},
 		"Clockwork Shambler": {
-			"name": "Clockwork Shambler",
-			"publicNotes": "<p>A zombie shambler is a slow-moving horror dangerous in larger groups。</p>\n<hr />\n<p>A zombie's only desire is to consume the living. Unthinking and ever-shambling harbingers of death, zombies stop only when they're destroyed。</p>",
-			"blurb": "Variant zombie shambler",
+			"name": "发条蹒跚尸 Clockwork Shambler",
+			"publicNotes": "<p>蹒跚丧尸若形成庞大群体，则会变为缓慢前行的可怖危险。</p>\n<hr />\n<p>丧尸唯一的欲求便是啃食活物。丧尸作为永不停歇地蹒跚前行且不会思考的死亡之兆，只有将其摧毁才能使之停步。</p>",
+			"blurb": "变体蹒跚丧尸",
 			"data":{},
 			"items":{
 				"strike-Jaws":{
 					"name": "啃咬 Jaws",
-					"description": "<p><strong>需求</strong> The zombie has a creature @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} or @UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}。</p>"
+					"description": "<p><strong>需求</strong> 丧尸有一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物</p>"
 				},
 				"Slow":{
 					"name": "缓慢 Slow",
-					"description": "<p>A zombie is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions。</p>"
+					"description": "<p>丧尸具有永久性的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
 				}
 			}
 		},
 		"Clockwork Shambler Horde": {
-			"name": "Clockwork Shambler Horde",
-			"publicNotes": "<p>Necromancers most often create these mindless undead as obedient, expendable servitors. Left to its own devices, a zombie seeks only to consume the living, stopping only when its rotting body can no longer hold together。</p>\n<hr />\n<p>This shuffling mass of decaying flesh moves with dull but singular focus。</p>",
-			"blurb": "Variant shambler troop",
+			"name": "发条蹒跚尸潮 Clockwork Shambler Horde",
+			"publicNotes": "<p>死灵法师们经常创造此类无心智的亡来作为其顺从而可消耗的仆人。如果任其自生自灭，丧尸只会吞噬活物，直至它腐烂的身躯再无法维持其形。</p>\n<hr />\n<p>这群拖着脚步的烂肉迟钝但执着地向着目标前进。</p>",
+			"blurb": "变体蹒跚丧尸部队",
 			"data":{},
 			"items":{
-				"Slow":{
-					"name": "缓慢 Slow",
-					"description": "<p>A shambler troop is permanently @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} and can't use reactions。</p>"
-				},
-				"Troop Defenses":{
-					"name": "部队防御 Troop Defenses",
-					"description": "<p><strong>Thresholds</strong> 160 (12 squares), 80 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
-				},
-				"Grave Tide":{
-					"name": "Grave Tide",
-					"description": "<p>The shambler troop is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures。</p>"
-				},
+                "Slow": {
+                    "name": "缓慢 Slow",
+                    "description": "<p>蹒跚丧尸部队永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+                },
+                "Troop Defenses": {
+                    "name": "部队防御 Troop Defenses",
+                    "description": "<p><strong>阙值</strong> 160 (12方格), 80 (8方格)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
+                },
+                "Grave Tide": {
+                    "name": "亡灵之潮 Grave Tide",
+                    "description": "<p>蹒跚丧尸部队比大部分部队都要缺乏组织性。它可以移动入其他生物占据的方格，其他生物也能移入它占据的。它占据的空间对其他生物而言视作困难地形。</p>"
+                },
 				"Shambling Onslaught":{
-					"name": "Shambling Onslaught",
-					"description": "<p><span class=\"pf2-icon\">1</span> to <span class=\"pf2-icon\">2</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> The shamblers lash out at any enemies in their squares or within 5 feet (@Check[type:reflex|dc:25|basic:true] save). The damage depends on the number of actions。</p>\n<p><span class=\"pf2-icon\">1</span> [[/r (3d6+9)[bludgeoning]]]{3d6+9钝击伤害}</p>\n<p><span class=\"pf2-icon\">2</span> [[/r (3d8+13)[bludgeoning]]]{3d8+13钝击伤害}</p>"
+					"name": "蹒跚猛攻 Shambling Onslaught",
+					"description": "<p><span class=\"pf2-icon\">1</span> 到 <span class=\"pf2-icon\">2</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 蹒跚丧尸大肆攻击在它们占据的格子内或5尺内的敌人（@Check[type:reflex|dc:25|basic:true]豁免）。伤害取决于动作数量。</p>\n<p><span class=\"pf2-icon\">1</span> [[/r (3d6+9)[bludgeoning]]]伤害</p>\n<p><span class=\"pf2-icon\">2</span> [[/r (3d8+13)[bludgeoning]]]伤害</p>"
 				},
-				"Troop Movement":{
-					"name": "Troop Movement",
-					"description": "<p>Whenever a troop Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop。</p>"
-				}
+                "Troop Movement": {
+                    "name": "部队移动 Troop Movement",
+                    "description": "<p>当蹒跚丧尸部队行走时，它首先以一个自由动作重整队列，聚集成20尺*20尺方格的队列（减去任何损失的方格），然后以满速度移动。它在移动时如同一个巨形生物那般；举例来说，如果任何方格进入了困难地形，则整个部队都需要花费额外的移动力。</p>"
+                }
 			}
 		},
 		"Clockwork Sphinx": {
@@ -722,42 +722,42 @@
 			}
 		},
 		"Corrupt Shieldmarshal (Clan Pistol)": {
-			"name": "Corrupt Shieldmarshal (Clan Pistol)",
-			"senses": "+ 20 to Sense Motive or vs. Conceal An Object",
-			"blurb": "Various law enforcers",
+			"name": "贪腐盾勋执法官-氏族手枪 Corrupt Shieldmarshal (Clan Pistol)",
+			"senses": "对抗隐藏物件时的察言观色+20",
+			"blurb": "各类执法者",
 			"data":{},
 			"items":{
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
-					"description": "<p>When the shieldmarshal makes a critical hit with a firearm weapon, the target must succeed at a @Check[type:fortitude|dc:25]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>当盾勋执法官以火器造成重击，目标必须通过@Check[type:fortitude|dc:25]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Lawbringer":{
 					"name": "执法者 Lawbringer",
-					"description": "<p>The shieldmarshal marks a foe for judgment, granting the shieldmarshal a +10-foot circumstance bonus to Speed whenever it Strides toward that creature. The shieldmarshal's Strikes against that creature deal an additional 2d8 precision damage。</p>"
+					"description": "<p>盾勋执法官将一个敌人标记为审判对象，执法官向该生物行走时，速度有+10尺环境加值。盾勋执法官对该生物进行的打击造成额外2d8精准伤害。</p>"
 				},
 				"Reloading Strike":{
-					"name": "Reloading Strike",
-					"description": "<p>The shieldmarshal makes a melee Strike against an opponent within reach and Interacts to reload a firearm in their other hand。</p>"
+					"name": "装填打击 Reloading Strike",
+					"description": "<p>盾勋执法官对触及范围内的敌人进行一次近战打击，然后以交互动作装填另一只手中的火器。</p>"
 				}
 			}
 		},
 		"Corrupt Shieldmarshal (Jezail)": {
-			"name": "Corrupt Shieldmarshal (Jezail)",
-			"senses": "+ 20 to Sense Motive or vs. Conceal An Object",
-			"blurb": "Various law enforcers",
+			"name": "贪腐盾勋执法官-杰撒伊火枪 Corrupt Shieldmarshal (Jezail)",
+			"senses": "对抗隐藏物件时的察言观色+20",
+			"blurb": "各类执法者",
 			"data":{},
 			"items":{
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
-					"description": "<p>When the shieldmarshal makes a critical hit with a firearm weapon, the target must succeed at a @Check[type:fortitude|dc:25]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>当盾勋执法官以火器造成重击，目标必须通过@Check[type:fortitude|dc:25]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Lawbringer":{
 					"name": "执法者 Lawbringer",
-					"description": "<p>The shieldmarshal marks a foe for judgment, granting the shieldmarshal a +10-foot circumstance bonus to Speed whenever it Strides toward that creature. The shieldmarshal's Strikes against that creature deal an additional 2d8 precision damage。</p>"
+					"description": "<p>盾勋执法官将一个敌人标记为审判对象，执法官向该生物行走时，速度有+10尺环境加值。盾勋执法官对该生物进行的打击造成额外2d8精准伤害。</p>"
 				},
 				"Reloading Strike":{
-					"name": "Reloading Strike",
-					"description": "<p>The shieldmarshal makes a melee Strike against an opponent within reach and Interacts to reload a firearm in their other hand。</p>"
+					"name": "装填打击 Reloading Strike",
+					"description": "<p>盾勋执法官对触及范围内的敌人进行一次近战打击，然后以交互动作装填另一只手中的火器。</p>"
 				}
 			}
 		},
@@ -828,10 +828,10 @@
 			}
 		},
 		"Disgorged Zombie": {
-			"name": "Disgorged Zombie",
+			"name": "被吐出的丧尸 Disgorged Zombie",
 			"hp": "闪电充能, 负能量治疗",
 			"publicNotes": "<p>电激丧尸是丑陋的不死生物，全身被大量螺栓和电线复盖。大部分电激丧尸背后都有两个大线圈，用来吸收和投射电能。如果不加控制的话，电激丧尸通常会游荡到很远的地方，寻找发明家的实验室或闪电风暴来获取能量。在紧要关头，生物体内的自然电流也可以满足他们的需求。</p>",
-			"blurb": "Variant shock zombie",
+			"blurb": "变体带电丧尸",
 			"data":{},
 			"items":{
 				"Electricity Absorption":{
@@ -846,10 +846,10 @@
 					"name": "缓慢 Slow",
 					"description": "<p>电击丧尸通常陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，并且无法使用反应动作（详见电能吸收能力）。</p>"
 				},
-				"Amnesia Venom":{
-					"name": "Amnesia Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> flat-footed and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, flat-footed, and @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)。</p>"
-				}
+                "Amnesia Venom": {
+                    "name": "失忆毒液 Amnesia Venom",
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+                }
 			}
 		},
 		"Drela": {
@@ -997,55 +997,55 @@
 			}
 		},
 		"Glass Buccaneer": {
-			"name": "Glass Buccaneer",
-			"publicNotes": "<p>Clockwork buccaneers are powerful constructs designed for naval combat. Whereas most clockwork creations sink to the ocean floor while at sea, clockwork buccaneers can use their water jets to easily propel themselves through the water or leap aboard enemy ships. In addition to an internal water tank and hydraulic pumps, most clockwork buccaneers are equipped with a cutlass and arm gun loaded with scatter shot。</p>\n<hr />\n<p>当一个人深入地接触阿肯斯塔的工业中心时，他所面对的发条对手将会变得更加复杂且致命。</p>",
-			"blurb": "Variant clockwork buccaneer",
+			"name": "玻璃海盗 Glass Buccaneer",
+			"publicNotes": "<p>发条海盗是为海战设计的强大构装体。虽然大部分发条装置在海面上都会沉入海底，但发条海盗们却可以利用喷水装置轻松推动自己在水中前进，或跳上敌舰。除了内部水箱和液压泵外，大部分发条海盗还配备了一把弯刀和一把装填霰弹的手臂枪。</p>\n<hr />\n<p>当一个人深入地接触阿肯斯塔的工业中心时，他所面对的发条对手将会变得更加复杂且致命。</p>",
+			"blurb": "变体发条海盗",
 			"data":{},
 			"items":{
 				"strike-Arm Gun":{
-					"name": "Arm Gun"
+					"name": "手臂枪 Arm Gun"
 				},
 				"Wind-Up":{
 					"name": "上发条 Wind-Up",
 					"description": "<p>24小时，@Check[type:thievery|dc:26|traits:action:disable-a-device]，待机</p>\n<p>要让发条机械运转，必须由另一个生物用一把独特的钥匙给它上发条。这需要1分钟时间。一旦上紧发条，它们能在列出的时间内活动，通常为24小时，时间耗尽之后它们就无法察觉周围的环境且无法行动，直到再次被上紧发条。一些发条机械的能力在使用时需要以减少活动时间为代价。它们消耗的活动时间不能超过当前剩余的活动时间，一旦活动时间为0，它们就会立即关机。如果不清楚发条机械上一次上发条是什么时候，大多数发条机械的管理员都会在早上8点上发条。</p>\n<p>有些发条机械在上发条能力中列出了“待机”条目，它们可以通过一个3动作行动进入待机模式。在待机模式下，它的活动时间不会减少，但它可以感知周围环境（察觉检定有-2减值）。它无法行动，只有一个例外：当它感知到一个生物时，能以一个反应动作退出待机模式（并且如果状况合适，则进行先攻检定）。</p>\n<p>一个生物可以尝试对上了发条的发条机械进行解除装置，解除DC在上发条能力中列出。每次成功的尝试都能减少发条机械1小时活动时间。这对于处于待机模式中的发条机械也能正常生效。</p>"
 				},
 				"Spell Reflection":{
-					"name": "Spell Reflection",
-					"description": "<p><strong>触发</strong> The glass buccaneer is targeted by a spell</p>\n<hr />\n<p><strong>效果</strong> The buccaneer positions its reflective magical surfaces to turn the spell back on the caster. It tries to counteract the spell, making an Athletics check for its counteract check. If it successfully counteracts the spell, the effect is turned back on the caster。</p>"
+					"name": "法术反射 Spell Reflection",
+					"description": "<p><strong>触发</strong> 玻璃海盗被一个法术作为目标；</p>\n<hr />\n<p><strong>效果</strong> 玻璃海盗调整它的反射性魔法表面，将魔法反射给施法者。它尝试反制法术，但是进行一次运动检定。如果成功反制，法术被反弹给施法者。</p>"
 				},
 				"Vulnerable to Shatter":{
-					"name": "Vulnerable to Shatter",
-					"description": "<p>The glass buccaneer is affected by the <em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{Shatter}</em> spell as though it were an unattended object。</p>"
+					"name": "法术弱点-粉碎音波 Vulnerable to Shatter",
+					"description": "<p>玻璃海盗会受到<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>法术影响，就像无主物品那样。</p>"
 				},
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
-					"description": "<p>When the buccaneer 用火器造成重击时，目标必须通过a @Check[type:fortitude|dc:28]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>当发条海盗用火器造成重击时，目标必须通过一次@Check[type:fortitude|dc:28]豁免否则@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Pirate's Feint":{
-					"name": "Pirate's Feint",
-					"description": "<p>The clockwork buccaneer @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feints}. If the target becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} to the buccaneer's melee attacks, it becomes flat-footed to the buccaneer's ranged attacks as well。</p>"
+					"name": "海盗的虚招 Pirate's Feint",
+					"description": "<p>发条海盗进行@UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feints}。如果目标变得对发条海盗的近战攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，那么它同样也会对发条海盗的远程攻击措手不及。</p>"
 				},
 				"Refill Tank":{
-					"name": "Refill Tank",
-					"description": "<p><strong>需求</strong> The clockwork buccaneer is within 15 feet of a water source containing at least 100 gallons of water</p>\n<hr />\n<p><strong>效果</strong> The clockwork buccaneer extends a clockwork tube and sucks up water to refill its water tank。</p>"
+					"name": "重新注水 Refill Tank",
+					"description": "<p><strong>需求</strong> 发条海盗15尺内有一个至少包含100加仑水的水源；</p>\n<hr />\n<p><strong>效果</strong> 发条海盗伸出一根管子，将水吸入，以装满自己的水箱。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
-					"description": "<p>The clockwork buccaneer deals an extra 2d6 precision damage to flat-footed creatures。</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+					"description": "<p>发条海盗对措手不及的目标造成额外2d6精准伤害。</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				},
 				"Water Jet":{
-					"name": "喷水 Water Jet",
-					"description": "<p><strong>需求</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>效果</strong> The clockwork buccaneer fires a narrow but highly pressurized blast of water in a @Template[type:line|distance:60], dealing [[/r (10d6)[bludgeoning]]]{10d6钝击伤害} to creatures and unattended objects in the area (@Check[type:fortitude|dc:28|basic:true]; unattended objects automatically fail). Creatures and objects that fail the save are also knocked back 5 feet (10 feet on a critical failure). This empties the buccaneer's water tank。</p>"
+					"name": "水流喷射 Water Jet",
+					"description": "<p><strong>需求</strong> 发条海盗的水箱装满水；</p>\n<hr />\n<p><strong>效果</strong> 发条海盗射出一条细而猛的水流，对@Template[type:line|distance:60]上的所有生物和无主物品造成[[/r (10d6)[bludgeoning]]]{10d6钝击伤害}（@Check[type:fortitude|dc:28|basic:true]豁免；无主物品豁免自动失败）。豁免失败的生物和物品同样会被击倒并击退5尺（大失败则击退10尺）。这会导致发条海盗的水箱变空。</p>"
 				},
 				"Water Jump":{
-					"name": "Water Jump",
-					"description": "<p><strong>需求</strong> The clockwork buccaneer has a full water tank</p>\n<hr />\n<p><strong>效果</strong> The clockwork buccaneer jumps 60 feet, propelling itself through the air with a jet of water. This empties the buccaneer's water tank。</p>"
+					"name": "水流推进 Water Jump",
+					"description": "<p><strong>需求</strong> 发条海盗的水箱装满水；</p>\n<hr />\n<p><strong>效果</strong> 发条海盗依靠水流喷射让自己在空中推进，跳跃60尺距离。这会导致发条海盗的水箱变空。</p>"
 				}
 			}
 		},
 		"Glass Elephant": {
-			"name": "Glass Elephant",
-			"blurb": "Bomb-laden clockwork sculpture",
+			"name": "玻璃大象 Glass Elephant",
+			"blurb": "装载炸弹的发条雕像",
 			"data":{},
 			"items":{
 				"Wind-Up":{
@@ -1053,44 +1053,44 @@
 					"description": "<p>24小时，@Check[type:thievery|dc:29|traits:action:disable-a-device]，待机</p>\n<p>要让发条机械运转，必须由另一个生物用一把独特的钥匙给它上发条。这需要1分钟时间。一旦上紧发条，它们能在列出的时间内活动，通常为24小时，时间耗尽之后它们就无法察觉周围的环境且无法行动，直到再次被上紧发条。一些发条机械的能力在使用时需要以减少活动时间为代价。它们消耗的活动时间不能超过当前剩余的活动时间，一旦活动时间为0，它们就会立即关机。如果不清楚发条机械上一次上发条是什么时候，大多数发条机械的管理员都会在早上8点上发条。</p>\n<p>有些发条机械在上发条能力中列出了“待机”条目，它们可以通过一个3动作行动进入待机模式。在待机模式下，它的活动时间不会减少，但它可以感知周围环境（察觉检定有-2减值）。它无法行动，只有一个例外：当它感知到一个生物时，能以一个反应动作退出待机模式（并且如果状况合适，则进行先攻检定）。</p>\n<p>一个生物可以尝试对上了发条的发条机械进行解除装置，解除DC在上发条能力中列出。每次成功的尝试都能减少发条机械1小时活动时间。这对于处于待机模式中的发条机械也能正常生效。</p>"
 				},
 				"Spell Reflection":{
-					"name": "Spell Reflection",
-					"description": "<p><strong>触发</strong> The glass elephant is targeted by a spell</p>\n<hr />\n<p><strong>效果</strong> The elephant positions its reflective magical surfaces to turn the spell back on the caster. It tries to counteract the spell, making an Athletics check for its counteract check. If it successfully counteracts the spell, the effect is turned back on the caster。</p>"
+					"name": "法术反弹 Spell Reflection",
+					"description": "<p><strong>触发</strong> 玻璃大象被一个法术作为目标</p>\n<hr />\n<p><strong>效果</strong> 玻璃大象调整它的反射性魔法表面，将魔法反射给施法者。它尝试反制法术，但是进行一次运动检定。如果成功反制，法术被反弹给施法者。</p>"
 				},
 				"Vulnerable to Shatter":{
-					"name": "Vulnerable to Shatter",
-					"description": "<p>The glass elephant is affected by the <em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{Shatter}</em> spell as though it were an unattended object。</p>"
+					"name": "法术弱点-粉碎音波 Vulnerable to Shatter",
+					"description": "<p>玻璃大象可以像无主的物品那样受到<em>@UUID[Compendium.pf2e.spells-srd.1xbFBQDRs0hT5xZ9]{粉碎音波 Shatter}</em>法术的影响。</p>"
 				},
 				"Dual Tusks":{
-					"name": "Dual Tusks",
-					"description": "<p>The glass elephant makes two tusk Strikes, each against a different creature. This counts as one attack for the elephant's multiple attack penalty, and the penalty doesn't increase until after both attacks。</p>"
+					"name": "双牙戳刺 Dual Tusks",
+					"description": "<p>玻璃大象进行两次象牙打击，每次攻击不同的生物。此动作在计算多重攻击减值时算一次攻击，并且在两次攻击之后再生效。</p>"
 				},
 				"Trample":{
 					"name": "践踏 Trample",
-					"description": "<p>Large or smaller, foot, @Check[type:reflex|dc:32|basic:true]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+					"description": "<p>大型或更小体型，脚踩，@Check[type:reflex|dc:32|basic:true]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
 				},
 				"Grabbing Trunk":{
-					"name": "Grabbing Trunk",
-					"description": "<p>A Medium or smaller creature hit by the glass elephant's trunk is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}. If the elephant moves, it can bring the grabbed creature along with it。</p>"
+					"name": "鼻卷 Grabbing Trunk",
+					"description": "<p>体型不超过中型的生物，被玻璃大象的象鼻攻击命中后会被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。大象可以带着被擒抱的生物一起移动。</p>"
 				}
 			}
 		},
 		"Glass Sentry": {
-			"name": "Glass Sentry",
-			"publicNotes": "<p>Shifting back and forth between a detailed likeness of a human and a muted and featureless bipedal form, this creature of pure sand moves with an eerie grace. The sand sentry is often called upon by spellcasters to stand guard over an area of great importance-these elementals are patient participants in such roles, making them well suited for long-term service。</p>",
-			"blurb": "Variant elite sand sentry",
+			"name": "玻璃哨兵 Glass Sentry",
+			"publicNotes": "<p>这只纯粹由沙子构成的，其外观在人类和模糊的双足动物之前反复变换，动作优雅诡异。施法者通常会召唤黄沙哨兵来守卫一片非常重要的区域——这些元素有足够的耐心来担任这样的角色，非常适合长期服务。</p>",
+			"blurb": "变体精英黄沙哨兵",
 			"data":{},
 			"items":{
 				"Glass Armor":{
-					"name": "Glass Armor",
-					"description": "<p>When the sand sentry takes fire or lightning damage, its outer layer of sand fuses into sheets of hardened glass for 1 minute. This increases the sand sentry's AC to 26 and grants it resistance 5 to acid, cold, electricity, fire, force, piercing, and slashing damage. A sand sentry can't use earth glide while glass armor is active。</p>"
+					"name": "玻璃护甲 Glass Armor",
+					"description":"<p>当黄沙哨兵遭受火焰或闪电伤害时，它的表层沙砾会融化成坚硬的玻璃，持续1分钟。这能将黄沙哨兵的AC增加到26，并且获得针对以下伤害类型的5点抗力：酸液、寒冷、电击、火焰、力场、穿刺和挥砍伤害。在玻璃护甲生效期间，黄沙哨兵无法使用潜地能力。</p>"
 				},
 				"Blinding Sand":{
-					"name": "Blinding Sand",
-					"description": "<p>When the sand sentry critically hits with a fist Strike, the target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded} for 1 round。</p>"
+					"name": "迷眼沙尘 Blinding Sand",
+					"description":"<p>当黄沙哨兵以拳击打击造成重击时，目标还会陷入@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮。</p>"
 				},
 				"Earth Glide":{
-					"name": "Earth Glide",
-					"description": "<p>A sand sentry can @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrow} through earthen matter, including rock. When it does so, it moves at its full burrow Speed, leaving no tunnels or signs of its passing。</p>"
+					"name": "潜地 Earth Glide",
+					"description":"<p>黄沙哨兵可以在任何泥土或岩石中钻洞。当它这样做时，它以@Compendium[pf2e.actionspf2e.H6v1VgowHaKHnVlG]{掘地 Burrow}速度满速移动，且不留下隧道或任何它经过的痕迹。</p>"
 				}
 			}
 		},
@@ -1170,20 +1170,20 @@
 			"items":{}
 		},
 		"Gremlin Horde": {
-			"name": "Gremlin Horde",
-			"disable": "<p>@Check[type:arcana|dc:25|name:Devise counter-hex symbols], @Check[type:occultism|dc:25|name:Devise counter-hex symbols], or @Check[type:religion|dc:25|name:Devise counter-hex symbols](受训)to devise counter-hex symbols that frighten and scatter a gremlin gang, or @Check[type:acrobatics|dc:28|name:Scatter a gremlin gang] or @Check[type:stealth|dc:28|name:Scatter a gremlin gang](专家)to capture and scatter a gremlin gang</p>",
-			"hazarddescription": "<p>Three gangs of gremlins hide within the spiral centurion, cackling with glee and hurling blasts of hex magic. The hazard occupies the same space as the spiral centurion, moving with it。</p>",
-			"reset": "<p>If not captured or killed, the scattered gremlin gangs regroup after [[/r 1d4 #Hours]]{1d4 hours}。</p>",
-			"routine": "<p>(3 actions; misfortune) The gremlin horde hurls one tinkering curse with each action, targeting an item within 60 feet wielded or worn by a creature. The creature must attempt a @Check[type:will|dc:27] save. The gremlin horde loses 1 action for each gremlin gang that's scattered。</p>\n<hr />\n<p><strong>大成功</strong> The hex bounces back to affect the gremlin horde. For 1 round, all creatures gain a +1 status bonus to checks to disable this hazard。</p>\n<p><strong>成功</strong> The item is unaffected。</p>\n<p><strong>失败</strong> The item becomes unreliable for 1 round. If a creature attempts to Activate the item or Interact with it, it must succeed at a @Check[type:flat|dc:5] or the action is wasted. If the item doesn't have an active use (such a mundane cloak), the creature wearing the item must instead immediately succeed at a @Check[type:flat|dc:5] or become tangled with the item and fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> As failure, but the creature wielding or wearing the item also becomes @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>",
+			"name": "小魔怪群 Gremlin Horde",
+			"disable": "<p>@Check[type:arcana|dc:25|name:Devise counter-hex symbols], @Check[type:occultism|dc:25|name:Devise counter-hex symbols], 或@Check[type:religion|dc:25|name:Devise counter-hex symbols](受训)设计反巫术符号吓唬并驱散其中一组小魔怪，或@Check[type:acrobatics|dc:28|name:Scatter a gremlin gang]、@Check[type:stealth|dc:28|name:Scatter a gremlin gang](专家)抓住并打散其中一组小魔怪。</p>",
+			"hazarddescription": "<p>三组小魔怪隐藏在陀螺百夫长内，欢快地咯咯尖笑着，施放巫术魔法。该危害和陀螺百夫长占据同一空间，并与之一起移动。</p>",
+			"reset": "<p>如果没有被捕获或被杀，被打散的小魔怪小组会在[[/r 1d4 #Hours]]{1d4小时}后重聚。</p>",
+			"routine": "<p>(3动作; 厄运) 小魔怪群中的每组小魔怪施放一道铸补诅咒，每次以60尺内被某个生物持握或穿戴物品为目标。该生物必须通过@Check[type:will|dc:27]豁免。每有一组小魔怪被打散，小魔怪群就失去一个动作。 </p>\n<hr />\n<p><strong>大成功</strong> 巫术反噬了小魔怪群，在1轮内，所有生物在解除该危害时的检定有+1状态加值。</p>\n<p><strong>成功</strong> 物品不受影响。</p>\n<p><strong>失败</strong> 物品变得不可靠，持续1轮。如果生物尝试启动物品或与之交互，必须通过DC5纯骰检定，否则动作被浪费。如果物品不需要启动（例如简单的斗篷），则穿戴该物品的生物必须立即尝试@Check[type:flat|dc:5]检定，否则被物品绊住，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 如同失败，但是持握或穿戴该物品的生物还陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
 				"Hexed Calamity":{
-					"name": "Hexed Calamity",
-					"description": "<p><strong>触发</strong> A creature comes within 30 feet of the gremlin horde</p>\n<hr />\n<p><strong>效果</strong> Every firearm within 30 feet misfires. If a creature is holding the firearm, they can attempt a @Check[type:will|dc:27] save, negating this effect on a success. The hazard rolls initiative。</p>"
+					"name": "巫术灾祸 Hexed Calamity",
+					"description": "<p><strong>触发</strong> 一个生物接近小魔怪群30尺内</p>\n<hr />\n<p><strong>效果</strong> 30尺内所有火器全部哑火。如果生物正持握火器，他能尝试@Check[type:will|dc:27]豁免，如果成功则能避免此效果。然后危害投掷先攻。</p>"
 				},
 				"Hardness 15 (While Inside the Centurion)":{
-					"name": "Hardness 15 (While Inside the Centurion)"
+					"name": "硬度15 Hardness 15 (当躲藏在百夫长内部时)"
 				}
 			}
 		},
@@ -1243,34 +1243,34 @@
 			}
 		},
 		"Headless Rustler": {
-			"name": "Headless Rustler",
-			"publicNotes": "<p>Riding on a horse as black as night, the headless hunter known as the dullahan tracks down and takes the heads of those it deems unfit to continue living. When closing in for the kill, the dullahan first whispers its victim's name, then swiftly collects its prize, casting a pall of dread upon all who witness the grim execution。</p>\n<p>A dullahan manifests when a particularly violent warrior is beheaded and the warrior's soul stubbornly clings to material existence (or is refused entry to the afterlife). Most dullahans return to their former homelands, where they can exact vengeance those they feel wronged them in life (or their living descendants). A dullahan's concept of justice is swift and merciless, and once it has selected a target, it is unwavering in its cause。</p>\n<p>Perhaps even more than revenge on the living, a dullahan desires its own rotted head. An individual who wields the head of a dullahan is powerful indeed, for a dullahan will grudgingly serve such a master in the hopes of reclaiming its missing skull. Mighty fiends such as devils command dullahans to harvest souls or lead armies for them, while a mortal might use such an undead warrior to fulfill a personal vendetta. No matter its master's rank or station, however, a dullahan won't hesitate to kill its liege and reclaim its head when the opportunity presents itself。</p>\n<p>Most dullahan lairs are abandoned, overgrown ruins or other dilapidated places where severed heads and other trophies line the walls. Some dullahans, on the other hand, are content to simply commit their foul deeds and leave the remains of their decapitated victims in the streets, strewn among a copse of dead trees, or unceremoniously tossed in a bog hole。</p>",
-			"blurb": "Variant dullahans",
+			"name": "无头偷牛贼 Headless Rustler",
+			"publicNotes": "<p>被称为“杜拉罕”的无头猎人骑着漆黑如夜的战马，追踪并砍下那些它认为该死之人的头颅。当接近目标时，无头骑士首先会低声说出受害者的名字，然后迅速收集它的战利品头颅，给那些所有目睹处决现场的人蒙上了一层恐惧的阴影。</p>\n<p>当一个特别残暴的战士被斩首，而这个战士的灵魂依然固执地留在主物质位面（或拒绝前往来世）时，他就有可能变成无头骑士。大多数无头骑士会回到他们的故乡，在那里他们可以对那些生前冒犯过自己的人（或者他们或者的后代）进行报复。无头骑士迅速且无情地贯彻自己的正义，一旦选定目标它就会坚定不移地执行计划。</p>\n<p>也许对于一些无头骑士来说比报复活人更重要的目标是找到自己早已腐烂的脑袋。但凡能挥舞着无头骑士头颅的家伙无疑很有两下子，无头骑士会不情愿地为这样的主人服务，只为了换回自己丢失的头颅。强大的魔族，例如魔鬼会命令无头骑士为他们收割灵魂或指挥军队，而凡人可能会利用这样的不死战士来解决个人冤仇。然而，不管它的主人是什么身份或地位，只要有机会，无头骑士就会毫不犹豫地杀死主人，取回自己的脑袋。</p>\n<p>无头骑士的巢穴大多数是废弃的、杂草丛生的废墟或其他破旧之所，墙上挂满了砍下来的头颅或其他战利品。一些无头骑士只满足于它们自己的恶行，把被砍头的尸体随意丢弃在大街上、枯败的灌木丛或者泥坑里。</p>",
+			"blurb": "变体无头骑士",
 			"data":{},
 			"items":{
-				"Frightful Presence":{
-					"name": "气势凶猛 Frightful Presence",
-					"description": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
-				},
-				"Head Hunter":{
-					"name": "Head Hunter",
-					"description": "<p>Any slashing weapon a dullahan wields becomes <em>@UUID[Compendium.pf2e.equipment-srd.hg3IogR8ue2IWwgS]{Keen}</em>, and any hatchet it wields becomes <em>@UUID[Compendium.pf2e.equipment-srd.qlunQzfnzPQpMG6U]{Returning}</em>. If the dullahan kills a creature with a critical hit using a slashing weapon, the target is decapitated as though the dullahan had used Reap on the target. These effects remain only while the dullahan holds the weapon。</p>"
-				},
+                "Frightful Presence": {
+                    "name": "气势凶猛 Frightful Presence",
+                    "description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:23]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+                },
+                "Head Hunter": {
+                    "name": "猎头者 Head Hunter",
+                    "description": "<p>无头骑士持有的任何挥砍武器都获得<em>@UUID[Compendium.pf2e.equipment-srd.hg3IogR8ue2IWwgS]{锐锋 Keen}</em>符文效果，并且持有的任何短柄斧都获得<em>@UUID[Compendium.pf2e.equipment-srd.qlunQzfnzPQpMG6U]{回力 Returning}</em>符文效果。如有无头骑士以挥砍武器的重击杀死一个敌人，则目标被斩首，效果就如同无头骑士对目标使用了收割技能一般。这些效果只有当无头骑士持握武器的时候才生效。</p>"
+                },
 				"Headshot Hunter":{
-					"name": "Headshot Hunter",
-					"description": "<p>Any firearm wielded by the headless rustler becomes <em>keen</em> (even if it's not a slashing weapon) and <em>striking</em>. If the headless rustler kills a creature with a critical hit using a firearm, the target is treated as if they were decapitated by the headless rustler's Reap ability. These effects remain only while the headless rustler holds the firearm。</p>"
+					"name": "爆头猎手 Headshot Hunter",
+					"description": "<p>无头偷牛贼持握的火器自动获得<em>锐锋</em>和<em>强击</em>符文，即便它不是挥砍武器。如果无头偷牛贼使用火器重击杀死一个生物，目标视同为被无头骑士的收割（Reap）能力斩首。该能力仅在无头偷牛贼持握火器时生效。</p>"
 				},
-				"Reap":{
-					"name": "Reap",
-					"description": "<p>The dullahan removes the head of a dead creature within reach. Each creature within the area of the dullahan's frightful presence must attempt a new save, even if they are temporarily immune。</p>"
-				},
-				"Summon Steed":{
-					"name": "Summon Steed",
-					"description": "<p>The dullahan summons a @UUID[Compendium.pf2e.pathfinder-bestiary.Jy2va0NTTbaUH1zP]{War Horse} with elite adjustments and the fiend trait. This steed remains until it is slain, the dullahan Dismisses it, or the dullahan summons another steed。</p>"
-				},
+                "Reap": {
+                    "name": "收割 Reap",
+                    "description": "<p>无头骑士砍掉触及内一个死亡生物的头颅。无头骑士的气势凶猛灵光范围内的所有生物必须立即进行一次新的豁免，即时他们当前对气势凶猛临时免疫。</p>"
+                },
+                "Summon Steed": {
+                    "name": "召唤战马 Summon Steed",
+                    "description": "<p>无头骑士召唤一只套有精英模板和魔族特征的@UUID[Compendium.pf2e.pathfinder-bestiary.Jy2va0NTTbaUH1zP]{战马 War Horse}。这匹坐骑会一只持续存在直到它死亡、或无头骑士解散它、或无头骑士召唤新的坐骑。</p>"
+                },
 				"Throw Skull":{
-					"name": "Throw Skull",
-					"description": "<p>Interact</p>\n<p><strong>频率</strong> once (until a new clockwork skull is crafted)</p>\n<hr />\n<p><strong>效果</strong> The headless rustler throws its clockwork skull at a target within 30 feet. The skull explodes, dealing [[/r (8d6)[fire]]]{8d6火焰伤害} to creatures in a @Template[type:burst|distance:15]{15-foot radius} (@Check[type:reflex|dc:23|basic:true])。</p>"
+					"name": "投掷头颅 Throw Skull",
+					"description": "<p>交互</p>\n<p><strong>频率</strong> 一次（直到被装上新的发条颅骨）</p>\n<hr />\n<p><strong>效果</strong> 无头偷牛贼将它的发条颅骨丢向30尺内的一个目标。颅骨会爆炸，对@Template[type:burst|distance:15]范围内的生物造成[[/r 8d6[fire]]]伤害伤害（@Check[type:reflex|dc:23|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1294,17 +1294,17 @@
 			}
 		},
 		"Ibrium": {
-			"name": "Ibrium",
-			"blurb": "Male human vitrumancer and Nexian agent",
+			"name": "伊布里姆 Ibrium",
+			"blurb": "男性人类玻璃法师，奈克斯代理人",
 			"data":{},
 			"items":{
 				"Vitrumantic Stoneskin":{
-					"name": "Vitrumantic Stoneskin",
-					"description": "<p><strong>触发</strong> An adjacent creature Strikes Ibrium with a melee weapon or unarmed attack and deals damage</p>\n<p><strong>需求</strong> Ibrium has a <em>@UUID[Compendium.pf2e.spells-srd.2BV2yYPfVJ5zirZt]{Stoneskin}</em> spell currently active</p>\n<hr />\n<p><strong>效果</strong> Ibrium's unique stoneskin spell manifests as a protective layer of deadly sharp glass. Glass shards burst out from Ibrium's skin, dealing [[/r (3d10)[piercing]]]{3d10穿刺伤害} to the attacker。</p>"
+					"name": "玻璃皮肤 Vitrumantic Stoneskin",
+					"description": "<p><strong>触发</strong> 一个相邻生物以近战武器或非武装打击命中伊布里姆并造成伤害</p>\n<p><strong>需求</strong> 伊布里姆当前有一个<em>@UUID[Compendium.pf2e.spells-srd.2BV2yYPfVJ5zirZt]{石肤术 Stoneskin}</em>正在生效</p>\n<hr />\n<p><strong>效果</strong> 伊布里姆的独特石肤术表现为一层保护性的致命且锋利的玻璃。玻璃碎片暴散开来，对攻击者造成[[/r 3d10[piercing]]]伤害。</p>"
 				},
 				"Vitrumancy":{
-					"name": "Vitrumancy",
-					"description": "<p>Ibrium has modified certain spells to incorporate glass into their manifestation. Whenever Ibrium casts <em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{Fireball}</em>, <em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{Hydraulic Push}</em>, or <em>@UUID[Compendium.pf2e.spells-srd.Rn2LkoSq1XhLsODV]{Pummeling Rubble}</em>, the spell deals slashing damage instead of its normal damage type as the damaging component is replaced with shards of razor-sharp glass。</p>"
+					"name": "玻璃法术 Vitrumancy",
+					"description": "<p>伊布里姆修改了某些法术，将玻璃融入他们的外在表现中。每当伊布里姆施放<em>@UUID[Compendium.pf2e.spells-srd.sxQZ6yqTn0czJxVd]{火球术 Fireball}</em>、<em>@UUID[Compendium.pf2e.spells-srd.jfVCuOpzC6mUrf6f]{水流冲击 Hydraulic Push}</em>或<em>@UUID[Compendium.pf2e.spells-srd.Rn2LkoSq1XhLsODV]{碎石猛击 Pummeling Rubble}</em>法术时，法术造成的伤害类型将变为挥砍，因为伤害成分将被锋利的玻璃碎片取代。</p>"
 				}
 			}
 		},
@@ -1387,21 +1387,21 @@
 			}
 		},
 		"Leadsmith": {
-			"name": "Leadsmith",
-			"blurb": "Various dwarven investigators for hire",
+			"name": "线索匠 Leadsmith",
+			"blurb": "多名矮人雇佣调查员",
 			"data":{},
 			"items":{
 				"Bully Effect":{
-					"name": "Bully Effect",
-					"description": "<p>The Leadsmith's melee and ranged Strikes deal an additional [[/r (2d6)[bludgeoning]]]{2d6钝击伤害} to creatures that were Shoved within the past round。</p>"
+					"name": "恃强凌弱 Bully",
+					"description": "<p><strong>效果</strong> 线索匠的近战和远程打击对上轮被推撞过的敌人造成额外[[/r 2d6[bludgeoning]]]伤害。 </p>"
 				},
 				"Clear A Path":{
-					"name": "Clear A Path",
-					"description": "<p><strong>需求</strong> The Leadsmith is wielding a firearm or crossbow in one hand, and their other hand either wields a one-handed melee weapon or is empty</p>\n<hr />\n<p><strong>效果</strong> The Leadsmith makes a melee attack and then reloads their gun in one fluid movement. The Leadsmith makes a one-handed melee weapon Strike or unarmed Strike against an opponent within reach, then Interacts to reload. The Leadsmith doesn't need a free hand to reload in this way。</p>"
+					"name": "扫清障碍 Clear A Path",
+					"description": "<p><strong>需求</strong> 线索匠一只手中持握火器或弩，并且另一只手持握一把单手近战武器或空手</p>\n<hr />\n<p><strong>效果</strong> 线索将进行一次近战攻击，然后顺势装填火器。线索匠对触及内的敌人进行一次单手近战打击或非武装打击，然后以交互动作装填。线索匠用该方式进行装填时不需要一只空着的手。</p>"
 				},
 				"Private Detective":{
-					"name": "Private Detective",
-					"description": "<p><strong>频率</strong> once per小时</p>\n<hr />\n<p><strong>效果</strong> The Leadsmith spends 1 minute examining a subject for clues. For the next 24 hours, whenever the Leadsmith makes a Perception check or a skill check using Intelligence, Wisdom, or Charisma to Recall Knowledge about this subject, the Leadsmith gains a +2 circumstance bonus to the check。</p>"
+					"name": "私家侦探 Private Detective",
+					"description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 线索匠花费1分钟调查一个主题相关的线索。在接下来的24小时内，当线索匠进行察觉检定或使用智力、感知或魅力进行关于该主题的回忆知识动作，线索匠有+2环境加值。</p>"
 				}
 			}
 		},
@@ -1452,17 +1452,17 @@
 			}
 		},
 		"Mutant Bat": {
-			"name": "Mutant Bat",
-			"blurb": "Mana Wastes mutated giant bats",
+			"name": "突变蝙蝠 Mutant Bat",
+			"blurb": "法力废土突变巨蝙蝠",
 			"data":{},
 			"items":{
 				"Echolocation (Precise) 40 feet":{
-					"name": "Echolocation (Precise) 40 feet",
-					"description": "<p>A bat can use its hearing as a precise sense at the listed range。</p>"
+					"name": "回声定位 (精准) 40尺",
+					"description": "<p>蝙蝠的听觉在所列范围内能作为精确感官。</p>"
 				},
 				"Wing Thrash":{
-					"name": "Wing Thrash",
-					"description": "<p><strong>触发</strong> An adjacent enemy damages the mutant bat</p>\n<hr />\n<p><strong>效果</strong> The bat makes one or two wing Strikes - one against the triggering creature and one against another adjacent creature。</p>"
+					"name": "蝠翼猛拍 Wing Thrash",
+					"description": "<p><strong>触发</strong> 一个相邻的敌人伤害了突变巨蝙蝠</p>\n<hr />\n<p><strong>效果</strong> 蝙蝠进行一次或两次翼拍打击，一次对触发的生物，另一次则对其他相邻的生物。</p>"
 				}
 			}
 		},
@@ -1528,26 +1528,26 @@
 			}
 		},
 		"Ogre Slug": {
-			"name": "Ogre Slug",
-			"publicNotes": "<p>Ogre gluttons take the act of feeding to a horrific extreme, capable of extending their already cavernous mouths wide enough to gulp down a halfling. Stories of ogre gluttons being tricked into eating razor-edged shields or barrels filled with poisoned meat are common, but such tales are of little consolation to those who have been gobbled down whole by these ravenous giants. In addition to their sadistic table manners, ogre gluttons have a disturbing knack for coming up with violent \"games\" that are little more than drawn-out torments, yet those who somehow manage to beat a glutton at the rules of its own game can often enrage and frustrate the ogre enough that the resulting tantrum is more than enough distraction to afford a last-ditch escape from doom。</p>\n<hr />\n<p>Ogres embody brutish, amoral violence and cruelty. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. Ogres are sadists that enjoy remorseless murder, torture, degradation, and mutilation in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller and more beautiful, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp. But for all their creativity in developing methods of violence, ogres often remain too dim-witted to realize that their playthings lack an ogre's robust fortitude and high pain tolerance, so most captives die far sooner than the ogres might prefer. Such a fate is perhaps preferable however, as those who survive too long as ogres' playthings suffer lasting mental scars from the horrifying abuse. A captive able to keep their wits can sometimes trick the brutes by promising treasure, meatier captives, or other crude amusements, taking advantage of an ogre's limited intellect to engineer opportunities to escape。</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. Ogres practice incest regularly, believing that it makes for stronger familial bonds, and most ogres are misshapen or mutated from generations of inbreeding. The most powerful ogre in any family is the \"boss\"-usually the family's patriarch or matriarch-while other ogres in the family learn to obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. These lairs are filthy and frequently contain all-too-recognizable evidence of their depravity。</p>",
+			"name": "弹头食人魔 Ogre Slug",
+			"publicNotes": "<p>贪食食人魔把进食行为提升至可怕的极端，他能把已经像洞穴一样的大嘴张开到足以一口吞下一个半身人。欺骗食人魔吞下锋利的盾牌或者一桶投毒的肉是很常见的故事，但对于被这些贪吃巨人一口吞下的人来说，这种故事并不能给他们带来多少安慰。除了食人魔那嗜虐的餐桌规矩外，贪食食人魔还喜欢进行与长时间折磨差不多的暴力“游戏”，不过若有人能以某种方式在贪食食人魔自己设立的规矩里战胜他的话，则通常可以激怒和挫败食人魔，从而引发足够让他分神到无暇顾及受害者的怒火，为受害者从毁灭中最终脱出提供机会。</p>\n<hr />\n<p>食人魔体现了野蛮、毫无人道的残忍与暴力。站立起来有10尺高且浑身筋肉的食人魔的残忍犹如他强大的力量一般。食人魔是虐待狂，他们享受所有形式的无情谋杀、折磨、堕落以及肢解行为。尽管他们更乐于将暴力欲发泄到体格较小的类人生物身上——块头越小越漂亮越好——但食人魔会许诺将可怕的命运带给所有不幸落入他魔爪的存在。尽管食人魔创造了许多施暴的方法，但他们通常却足够愚笨到无法意识到自己的玩物并非像其他食人魔那样强韧且耐痛，因此大多数俘虏的死亡时间比食人魔所希望的要早得多。然而这样的命运或许更好，因为那些从食人魔手中活下来的玩物会因为持久的虐待而承受持久的精神创伤。被食人魔俘虏的人如果能维持智慧的话，有时也可以通过允诺宝藏、更丰满的俘虏或者其他粗俗的娱乐手段愚弄这些野兽，利用食人魔有限的智力来制造逃跑的机会。</p>\n<p>食人魔是群居生物，但这种说法仅限于最低限度的含义。他们只是聚集成称作家庭的群体而已，不过其中的成员并不总是具有血缘关系。食人魔经常乱伦，因为他们相信这么做可以增强家族间的关系，因此大多数食人魔是在一代又一代的近亲繁殖中畸形或突变的结果。最强大的食人魔在家族中被称为“老大”——他通常是家族的族长或女族长——而家族中的其他食人魔需要学会服从，否则便会面临被老大的忠实亲属残忍对待的风险。食人魔会用洞穴、破败的废墟、或者废弃的棚屋作为巢穴，但巢穴的位置一定要足够接近类人生物的聚居地或者动物的踪迹，以便他们进行袭击和掠夺。这些巢穴肮脏不堪，并且通常会保留着食人魔所有堕落行为确凿痕迹。</p>",
 			"blurb": "Variant elite ogre gluttons",
 			"data":{},
 			"items":{
-				"Glutton's Feast":{
-					"name": "Glutton's Feast",
-					"description": "<p>If the ogre glutton damages a living creature with their jaws Strike, they gain [[/r 1d4 #Temporary Hit Points]]{1d4 temporary Hit Points} for 1 minute。</p>"
-				},
-				"Glutton's Rush":{
-					"name": "Glutton's Rush",
-					"description": "<p>The ogre glutton Strides twice and makes a jaws Strike. If they damage a living creature with this Strike, the temporary Hit Points they receive from Glutton's Feast is increased to [[/r (2d4)[temporary hit points]]]{2d4}。</p>"
-				},
-				"Swallow Whole":{
-					"name": "活吞 Swallow Whole",
-					"description": "<p>Small, [[/r (2d4+4)[bludgeoning]]]{2d4+4钝击伤害}，破裂14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
-				},
+                "Glutton's Feast": {
+                    "name": "贪食美餐 Glutton's Feast",
+                    "description": "<p>贪食食人魔在使用啃咬打击对1名活物造成伤害时，会立即获得[[/r 1d4 #Temporary Hit Points]]{1d4临时生命值}，持续1分钟。</p>"
+                },
+                "Glutton's Rush": {
+                    "name": "抢食急奔 Glutton's Rush",
+                    "description": "<p>贪食食人魔行走2次，并作出啃咬打击。若此次打击对1名活物造成伤害，则贪食美餐提供的临时生命值提升至[[/r (2d4)[temporary hit points]]]{2d4}。</p>"
+                },
+                "Swallow Whole": {
+                    "name": "活吞 Swallow Whole",
+                    "description": "<p>小型, [[/r (2d4+4)[bludgeoning]]]伤害, 破裂14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                },
 				"Throw Powder Keg":{
-					"name": "Throw Powder Keg",
-					"description": "<p><strong>频率</strong> once (until the ogre acquires another powder keg)</p>\n<hr />\n<p><strong>效果</strong> The ogre lights and hurls a powder keg of gunpowder at a point within 40 feet. The fuse continues to burn for 1 round, during which time an adjacent creature can use an Interact action to remove the lit fuse, rendering the keg harmless. At the start of the ogre's next turn, if the fuse is still lit, the keg explodes, dealing [[/r (3d8)[fire] + (3d8)[bludgeoning]]]{3d8 fire damage and 3d8钝击伤害} to creatures in a @Template[type:burst|distance:15] (@Check[type:reflex|dc:20|basic:true])。</p>"
+					"name": "扔火药桶 Throw Powder Keg",
+					"description": "<p><strong>频率</strong> 一次（直到食人魔取得另一桶火药）</p>\n<hr />\n<p><strong>效果</strong> 食人魔点燃装满火药的火药桶，并对40尺内的某个地点扔出。引信燃烧持续1轮，在这段时间内，相邻的生物能使用交互动作移除它的引信，让火药桶变得无害。在食人魔的下个回合开始，如果引信未移除，火药桶爆炸，对@Template[type:burst|distance:15]范围内的生物造成[[/r 3d8[fire] + 3d8[bludgeoning]]]{3d8火焰和3d8钝击伤害}（@Check[type:reflex|dc:20|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1574,34 +1574,34 @@
 			}
 		},
 		"Parsus": {
-			"name": "Parsus",
-			"blurb": "Pangender dhampir necromancer",
+			"name": "帕索斯 Parsus",
+			"blurb": "跨性别吸血裔死灵法师",
 			"data":{},
 			"items":{
 				"equipment-Clockwork Key to Clockwork Bomb in Area F8":{
-					"name": "Clockwork Key to Clockwork Bomb in Area F8"
+					"name": "区域F8发条炸弹的发条钥匙 Clockwork Key to Clockwork Bomb in Area F8"
 				},
 				"strike-Necromechanical Innovation":{
-					"name": "Necromechanical Innovation"
+					"name": "死灵机械大发明 Necromechanical Innovation"
 				},
 				"+2 Status to All Saves vs. Disease and Mental":{
 					"name": "对抗疾病和心灵效果时全豁免+2状态加值"
 				},
 				"Clockwork Necromancy":{
-					"name": "Clockwork Necromancy",
-					"description": "<p>Parsus winds their necromechanical innovation (see below) to infuse a corpse-riddled area with necromantic energy. The innovation casts <em>@UUID[Compendium.pf2e.spells-srd.2w4OpAGihn1JSHFD]{Black Tentacles}</em> on a point within 100 feet, causing the dead body parts in a @Template[type:burst|distance:10] to briefly animate and scrabble at creatures within the area for 1 round。</p>"
+					"name": "发条死灵术 Clockwork Necromancy",
+					"description": "<p>帕索斯给自己的死灵机械大发明上发条，将死灵术能量灌注一片充满尸体的区域。大发明对100尺内的某个地点施放<em>@UUID[Compendium.pf2e.spells-srd.2w4OpAGihn1JSHFD]{黑触手 Black Tentacles}</em>，导致@Template[type:burst|distance:10]范围内的死者肢体活化，尝试抓住区域内的生物，持续1轮。</p>"
 				},
 				"Explode":{
-					"name": "Explode",
-					"description": "<p>Parsus pushes their necromechanical innovation beyond its normal limits, dealing [[/r (10d6)[negative]]]{10d6负能量伤害} in a @Template[type:emanation|distance:10] (@Check[type:reflex|dc:31|basic:true]). Parsus can choose to include themself in this effect。</p>"
+					"name": "爆炸 Explode",
+					"description": "<p>帕索斯将它的死灵机械大发明超载，对@Template[type:emanation|distance:10]范围造成[[/r 10d6[negative]]]伤害（@Check[type:reflex|dc:31|basic:true]豁免）。帕索斯可以选择将自己包括在目标内。</p>"
 				},
 				"Necromantic Winding":{
-					"name": "Necromantic Winding",
-					"description": "<p>Parsus winds up their necromechanical innovation. They choose an active effect with the necromancy trait that originated from one of their spells or abilities (such as Clockwork Necromancy). The effect's duration extends to the end of Parsus's next turn。</p>"
+					"name": "死灵上发条 Necromantic Winding",
+					"description": "<p>帕索斯给自己的死灵机械大发明上发条。他可以选择一项正在生效的、带有[死灵系]特征的、来自他的法术或能力的效果（例如发条死灵术）。效果的持续时间延长至帕索斯的下个回合结束。</p>"
 				},
 				"Necromechanical Innovation":{
-					"name": "Necromechanical Innovation",
-					"description": "<p>Although a necromancer by training, Parsus recently developed a complex device called a necromechanical innovation. This device allows Parsus to use their Clockwork Necromancy, Explode, and Necromatic Winding abilities. It otherwise functions as an inventor weapon innovation with no modifications。</p>"
+					"name": "死灵机械大发明 Necromechanical Innovation",
+					"description": "<p>虽然帕索斯是一名训练有素的死灵法师，但是他最近发明了一种叫做死灵机械大发明的复杂装备。这个装备允许帕索斯使用他的发条死灵术、爆炸和死灵上发条能力。除此之外，它如同发明家的武器大发明那样运作，不带任何改修。</p>"
 				}
 			}
 		},
@@ -1920,38 +1920,38 @@
 			}
 		},
 		"Skeletal Crocodile": {
-			"name": "Skeletal Crocodile",
-			"publicNotes": "<p>Huge giants and other enormous creatures make powerful skeletons。</p>\n<hr />\n<p>Made from bones held together by foul necromancy, skeletons are among the most common types of undead, found haunting old dungeons and forgotten cemeteries。</p>",
-			"blurb": "Variant elite skeletal hulk",
+			"name": "骷髅鳄鱼 Skeletal Crocodile",
+			"publicNotes": "<p>超大型巨人和其他巨怪造就了这种强大的骷髅。</p>\n<hr />\n<p>骷髅是最为常见的一类不死生物，它们是由污秽的死灵力量所维持着形态的骨架，出没于那些古老的地城和被遗忘的墓园之中。</p>",
+			"blurb": "变体精英骷髅巨怪",
 			"data":{},
 			"items":{
-				"Broad Swipe":{
-					"name": "Broad Swipe",
-					"description": "<p>The crocodile makes two Strikes with its tail against two adjacent foes, both of whom are within its reach. The multiple attack penalty does not increase until after both attacks are resolved。</p>"
-				},
+                "Broad Swipe": {
+                    "name": "广域横扫 Broad Swipe",
+                    "description": "<p>巨怪使用尾扫对触及范围内的两名敌人各发动一次打击。在这两次攻击完成前多重攻击减值不会增加。</p>"
+                },
 				"Reconfigure":{
-					"name": "Reconfigure",
-					"description": "<p>Part machine and part skeleton, the crocodile reconfigures its mechanical components, either reducing its size to Large or returning its size to Huge if it is currently Large。</p>"
+					"name": "重新配置 Reconfigure",
+					"description": "<p>作为一半机器一半骷髅，鳄鱼重新配置机械部件，将体型改变为大型，如果当前体型为大型的话，可以恢复为超大型。</p>"
 				},
 				"Skull Shot":{
-					"name": "Skull Shot",
-					"description": "<p>The skeletal crocodile detaches its skull and fires it at a target within 30 feet, making a bite Strike. If the Strike is successful and the target is Large or smaller, the crocodile uses a heavy chain to retract its skull back to its body, dragging the targeted creature 30 feet。</p>"
+					"name": "头颅射击 Skull Shot",
+					"description": "<p>骷髅鳄鱼分离自己的头颅然后向30尺内的目标射击，进行一次啃咬打击。如果打击成功，并且目标体型不超过大型，鳄鱼使用沉重的铁链将头颅拉回自己的身体，将目标生物拖拽30尺。此能力代替巨身冲撞能力。</p>"
 				}
 			}
 		},
 		"Slick": {
-			"name": "Slick",
-			"publicNotes": "<p>Giant chameleons are legendary for their ability to change their skin color in response to their surroundings. Their eyes are capable of peering in different directions independently, making them almost as difficult to sneak up on as they are to notice in the first place。</p>",
-			"blurb": "Giant chameleon",
+			"name": "小滑头 Slick",
+			"publicNotes": "<p>巨型变色龙因其能够根据周围环境的变化改变皮肤颜色而闻名。它们的眼睛能分别看向不同的方向，这使得悄悄靠近它们的尝试就如同事先找到它们一样困难。</p>",
+			"blurb": "巨变色龙",
 			"data":{},
 			"items":{
 				"Camouflage":{
-					"name": "Camouflage",
-					"description": "<p>The giant chameleon can change its coloration to match its surroundings. It doesn't need cover to attempt to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} with a Stealth check。</p>"
+					"name": "伪装 Camouflage",
+					"description": "<p>巨变色龙可以改变自己的颜色以适应环境。当它尝试以隐秘检定进行@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}时，不需要掩蔽。</p>"
 				},
 				"Tongue Grab":{
-					"name": "Tongue Grab",
-					"description": "<p>If the giant chameleon hits a creature with a tongue Strike, that creature becomes @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the giant chameleon. The target isn't @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}, but it can't move beyond the reach of the giant chameleon's tongue. A creature can sever the tongue with an attack that hits AC 15 and deals at least 4 slashing damage. Though this doesn't deal any damage to the giant chameleon, it prevents it from using its tongue Strike until it regrows its tongue, which takes a week。</p>"
+					"name": "舌卷 Tongue Grab",
+					"description": "<p>如果巨变色龙以舌头打击命中一个生物，该生物会被巨变色龙@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。目标不会被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是它无法移动出巨变色龙舌头触及范围。一个生物可以对舌头进行一次至少造成4点挥砍伤害的近战攻击来切断它，它的AC 为15。虽然这不会对巨变色龙造成任何伤害，但是在它的舌头重新长出来之前无法再使用舌头打击，这至少需要一周时间。</p>"
 				}
 			}
 		},
@@ -1962,7 +1962,7 @@
 			"items":{
 				"Weeping Wounds":{
 					"name": "流脓伤口 Weeping Wounds",
-					"description": "<p>污刺身上脓包里的脓液对其他生物有害。当一个生物用近战攻击命中污刺杀手时，攻击者必须通过DC 14 反射豁免，否则受到1 点酸液伤害（大失败受到2 点酸液伤害）@Check[type:reflex|dc:14] save or take [[/r (1)[acid]]]{1酸液伤害} ([[/r (2)[acid]]]{2酸液伤害} on a critical failure)。</p>"
+					"description": "<p>污刺身上脓包里的脓液对其他生物有害。当一个生物用近战攻击命中污刺杀手时，攻击者必须通过@Check[type:reflex|dc:14]豁免，否则受到[[/r 1[acid]]]伤害（大失败受到[[/r 2[acid]]]伤害）。</p>"
 				},
 				"Pack Attack":{
 					"name": "群起攻之 Pack Attack",
@@ -2163,29 +2163,29 @@
 			}
 		},
 		"Vewslog": {
-			"name": "Vewslog",
-			"blurb": "Male cyclops gunslinger",
+			"name": "维斯洛格 Vewslog",
+			"blurb": "男性独眼巨人枪手",
 			"data":{},
 			"items":{
 				"Flash of Insight":{
-					"name": "Flash of Insight",
-					"description": "<p><strong>触发</strong> Vewslog is about to roll a d20</p>\n<p><strong>频率</strong> once per天</p>\n<hr />\n<p><strong>效果</strong> The cyclops peers into an occluded spectrum of possible futures. He gets a success (but not a critical success) on the roll instead of rolling。</p>"
+					"name": "预兆一瞥 Flash of Insight",
+					"description": "<p><strong>触发</strong> 维斯洛格将要投掷d20</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 独眼巨人凝视着一个封闭的可预见的未来的光谱。他无需掷骰，直接获得成功的结果（但无法获得大成功）。</p>"
 				},
 				"Pistolero's Retort":{
-					"name": "Pistolero's Retort",
-					"description": "<p><strong>触发</strong> A foe within 60 feet critically fails an attack roll against Vewslog</p>\n<hr />\n<p><strong>效果</strong> Vewslog makes a dueling pistol Strike against the triggering foe。</p>"
+					"name": "短枪手的反击 Pistolero's Retort",
+					"description": "<p><strong>触发</strong> 一个60尺内的敌人对维斯洛格的攻击骰大失败</p>\n<hr />\n<p><strong>效果</strong> 维斯洛格对触发的敌人进行一次决斗手枪打击。</p>"
 				},
 				"Deadeye":{
-					"name": "Deadeye",
-					"description": "<p>Vewslog's ranged attacks deal an additional 4d6 precision damage。</p>"
+					"name": "神枪锐视 Deadeye",
+					"description": "<p>维斯洛格的远程攻击造成额外4d6精准伤害。</p>"
 				},
 				"Firearms Critical Specialization":{
 					"name": "火器重击专精 Firearms Critical Specialization",
 					"description": "<p>When Vewslog 用火器造成重击时，目标必须通过a @Check[type:fortitude|dc:25] save or become @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Ricochet":{
-					"name": "Ricochet",
-					"description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> Vewslog makes a ranged Strike and compares the attack roll result to the AC of up to two foes, each of whom must be within 60 feet of Vewslog. Roll damage only once and apply it to each creature hit. A ricochet counts as two attacks for Vewslog's multiple attack penalty。</p>"
+					"name": "跳弹射击 Ricochet",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 维斯洛格进行一次远程打击，然后将攻击骰结果和最多2名敌人的AC进行比较，每个敌人都必须距离维斯洛格60尺。投掷一次伤害骰，应用于每个命中的敌人。跳弹在计算维斯洛格的多重攻击减值时视为两次攻击。</p>"
 				}
 			}
 		},
