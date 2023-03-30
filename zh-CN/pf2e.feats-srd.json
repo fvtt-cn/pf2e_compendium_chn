@@ -3768,7 +3768,7 @@
         },
         "Collateral Thrash": {
             "name": "借势重殴 Collateral Thrash",
-            "description": "<p>对被擒抱的敌人施展@UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{重殴 Thrash}时，你将该敌人撞向附近的另一个敌人。邻接被擒抱敌人的另一个敌人也受到你的重殴伤害，可进行基础反射豁免检定，对抗你的职业DC。</p>",
+            "description": "<p>对被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的敌人施展@UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{重殴 Thrash}时，你将该敌人撞向附近的另一个敌人。邻接被擒抱敌人的另一个敌人也受到你的重殴伤害，可进行@Check[type:reflex|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true]检定。</p>",
             "prerequisites": [
                 {
                     "value": "重殴"
@@ -4911,7 +4911,7 @@
         },
         "Furious Grab": {
             "name": "凶猛擒获 Furious Grab",
-            "description": "<p><strong>需求</strong> 你的上个动作是一次成功的打击，并且，你需要有一只空闲的手或者本次打击使用擒抱武器进行。</p>\n<hr />\n<p>你趁敌人在被你攻击分神时将其抓住。被你击中的敌人陷入擒抱，如同你成功进行运动检定以擒抱对方。</p>"
+            "description": "<p><strong>需求</strong> 你的上个动作是一次成功的打击，并且，你需要有一只空闲的手或者本次打击使用擒抱武器进行。</p>\n<hr />\n<p>你趁敌人在被你攻击分神时将其抓住。被你击中的敌人陷入@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，如同你成功进行运动检定以@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}对方。</p>"
         },
         "Overwhelming Blow": {
             "name": "凶猛痛殴 Overwhelming Blow",
@@ -4966,7 +4966,7 @@
         },
         "Sunder Spell": {
             "name": "击破法术 Sunder Spell",
-            "description": "<p>你利用自己的迷信狂怒来摧毁法术。用近战武器或无武装攻击对一个生物、物品、或法术表现（比如 <em>@UUID[Compendium.pf2e.spells-srd.IarZrgCeaiUqOuRu]{火墙术 Wall of Fire}</em>造出的火墙、<em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{灵能守卫 Spiritual Guardian}</em>创造的守卫进行一次打击。如果你的目标是一个未列出AC的目标，对那些很容易命中的目标来说其AC通常为10，或由GM决定的不同AC。</p>\n<p>如果打击命中，可以尝试反制目标上的一个法术或魔法效果。本次尝试中，你的反制等级等于你等级的一半，向上取整，使用你的攻击检定作为反制检定结果。</p>\n<p>无论打击是否命中，目标都会在24小时内暂时免疫你的击破法术。</p>",
+            "description": "<p>你利用自己的迷信狂怒来摧毁法术。用近战武器或无武装攻击对一个生物、物品、或法术表现（比如 <em>@UUID[Compendium.pf2e.spells-srd.IarZrgCeaiUqOuRu]{火墙术 Wall of Fire}</em>造出的火墙、<em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{灵能守卫 Spiritual Guardian}</em>创造的守卫进行一次打击。如果你的目标是一个未列出AC的目标，对那些很容易命中的目标来说其AC通常为10，或由GM决定的不同AC。如果打击命中，可以尝试反制目标上的一个法术或魔法效果。本次尝试中，你的反制等级等于你等级的一半，向上取整，使用你的攻击检定作为反制检定结果。</p>\n<p>无论打击是否命中，目标都会在24小时内暂时免疫你的击破法术。</p>",
             "prerequisites": [
                 {
                     "value": "迷信本能"
@@ -4975,7 +4975,7 @@
         },
         "Sunder Enchantment": {
             "name": "击破附魔 Sunder Enchantment",
-            "description": "<p>你在聚集迷信之力时，除了可以摧毁独立的法术和在生物身上生效的法术外，还能破除物品上的魔力。</p>\n<p>当你@UUID[Compendium.pf2e.feats-srd.8INrcMUv5vzWMG3X]{击破法术 Sunder Spell}时，你可以改为尝试反制一件无主魔法物品，或目标携带的一件魔法物品。如果你的反制尝试成功，该目标在10分钟内变为相应类型的平凡物品。若你的目标是神器、智能物品、或特殊的强大物品，你的反制尝试自动失败。</p>",
+            "description": "<p>你在聚集迷信之力时，除了可以摧毁独立的法术和在生物身上生效的法术外，还能破除物品上的魔力。当你@UUID[Compendium.pf2e.feats-srd.8INrcMUv5vzWMG3X]{击破法术 Sunder Spell}时，你可以改为尝试反制一件无主魔法物品，或目标携带的一件魔法物品。如果你的反制尝试成功，该目标在10分钟内变为相应类型的平凡物品。若你的目标是神器、智能物品、或特殊的强大物品，你的反制尝试自动失败。</p>",
             "prerequisites": [
                 {
                     "value": "击破法术"
@@ -4984,7 +4984,7 @@
         },
         "Knockback": {
             "name": "击退 Knockback",
-            "description": "<p><strong>需求</strong> 你的上个动作是一次成功的打击</p>\n<hr />\n<p>你猛击的力道能够将敌人击退。你将敌人向后推动5尺，效果如同成功的推撞。和成功的推撞一样，你可以跟随敌人。</p>"
+            "description": "<p><strong>需求</strong> 你的上个动作是一次成功的打击</p>\n<hr />\n<p>你猛击的力道能够将敌人击退。你将敌人向后推动5尺，效果如同成功的@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}。和成功的推撞一样，你可以跟随敌人。</p>"
         },
         "Knockback Strike": {
             "name": "击退打击 Knockback Strike",
@@ -5023,7 +5023,7 @@
         },
         "Share Rage": {
             "name": "分享狂暴 Share Rage",
-            "description": "<p><strong>需求</strong> 你自上次狂暴之后尚未施展过此能力。</p>\n<hr />\n<p>你激发盟友的怒气。你狂暴时，30尺内的一个自愿生物可以获得狂暴行动的效果，区别在于该生物依然可以使用专注行动。</p>"
+            "description": "<p><strong>需求</strong> 你自上次狂暴之后尚未施展过此能力。</p>\n<hr />\n<p>你激发盟友的怒气。你狂暴时，30尺内的一个自愿生物可以获得@UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{狂暴 Rage}行动的效果，区别在于该生物依然可以使用专注行动。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RoGEt7lrCdfaueB9]{效果：分享狂暴}</p>"
         },
         "Share Burden": {
             "name": "分担重负 Share Burden",
@@ -5490,7 +5490,7 @@
         },
         "Animal Rage": {
             "name": "动物狂暴 Animal Rage",
-            "description": "<p>你变成你在本能中选择的动物。</p>\n<p>你获得3级<em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{动物形态 Animal Form}</em>法术效果，区别在于你仍使用自身的属性、临时生命值、无武装攻击。你还会保留装备的常驻能力。</p>\n<p>若你选择的动物是蛙，你的舌击触及范围提高到15尺。解消变化效果获得狂暴特征。</p>"
+            "description": "<p>你变成你在本能中选择的动物。你获得3级<em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{动物形态 Animal Form}</em>法术效果，区别在于你仍使用自身的属性、临时生命值、无武装攻击。你还会保留装备的常驻能力。若你选择的动物是蛙，你的舌击触及范围提高到15尺。解消变化效果获得狂暴特征。</p>"
         },
         "Animal Speaker": {
             "name": "动物语者 Animal Speaker",
@@ -5540,7 +5540,7 @@
         },
         "Overpowering Charge": {
             "name": "势不可挡 Overpowering Charge",
-            "description": "<p>你在冲锋过程中顺脚践踏敌人。</p>\n<p>当你使用@UUID[Compendium.pf2e.feats-srd.to6s7QanfhHukW5r]{高速冲锋 Barreling Charge}并成功穿越一名生物的空间时，该生物会受到与你力量调整值相同的钝击伤害。如果大成功，该生物受到双倍伤害，并且直到你下一回合结束都@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>",
+            "description": "<p>你在冲锋过程中顺脚践踏敌人。当你使用@UUID[Compendium.pf2e.feats-srd.to6s7QanfhHukW5r]{高速冲锋 Barreling Charge}并成功穿越一名生物的空间时，该生物会受到与你力量调整值相同的[[/r @actor.abilties.str.mod[bludgeoning]]]{钝击伤害}。如果大成功，该生物受到[[/r 2*@actor.abilties.str.mod[bludgeoning]]]{双倍伤害}，并且直到你下一回合结束都@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>",
             "prerequisites": [
                 {
                     "value": "高速冲锋"
@@ -6786,7 +6786,7 @@
         },
         "Awesome Blow": {
             "name": "可怖殴击 Awesome Blow",
-            "description": "<p>你的攻击强劲到能够砸扁对手。当你施展@UUID[Compendium.pf2e.feats-srd.pVLdMOqYwul745k3]{击退 Knockback}时，你可以尝试一次运动检定以对抗目标的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 你先对目标造成推撞的大成功效果，然后造成摔绊的大成功效果。</p>\n<p><strong>成功</strong> 你先对目标造成推撞的成功效果，然后造成摔绊的成功效果。</p>\n<p><strong>失败</strong> 你造成击退的通常效果。</p>",
+            "description": "<p>你的攻击强劲到能够砸扁对手。当你施展@UUID[Compendium.pf2e.feats-srd.pVLdMOqYwul745k3]{击退 Knockback}时，你可以尝试一次运动检定以对抗目标的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 你先对目标造成@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}的大成功效果，然后造成@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}的大成功效果。</p>\n<p><strong>成功</strong> 你先对目标造成推撞的成功效果，然后造成摔绊的成功效果。</p>\n<p><strong>失败</strong> 你造成击退的通常效果。</p>",
             "prerequisites": [
                 {
                     "value": "击退"
@@ -7247,7 +7247,7 @@
         },
         "Steady Balance": {
             "name": "四平八稳 Steady Balance",
-            "description": "<p>即使在恶劣的环境中你也可以轻易保持平衡的姿势。每当你在一次保持平衡技能动作的检定上获得了成功结果，你会视为获得了大成功结果。你不会因为在狭窄的平面或是高低不平的位置上尝试保持平衡而陷入措手不及。最后，因为你精妙的平衡能力，你可以使用特技技能检定而非反射豁免检定来在坠落时尝试抓住边缘动作。</p>",
+            "description": "<p>即使在恶劣的环境中你也可以轻易保持平衡的姿势。每当你在一次@UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balance}技能动作的检定上获得了成功结果，你会视为获得了大成功结果。你不会因为在狭窄的平面或是高低不平的位置上尝试保持平衡而陷入措手不及。最后，因为你精妙的平衡能力，你可以使用特技技能检定而非反射豁免检定来在坠落时尝试@UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{抓住边缘 Grab an Edge}动作。</p>",
             "prerequisites": [
                 {
                     "value": "特技技能熟练度为受训"
@@ -8846,7 +8846,7 @@
             "description": "<p>你的感官变得更加清晰。狂暴期间，若你没有黑暗视觉，你会获得@UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{黑暗视觉 Darkvision}，你的模糊嗅觉范围提高到60尺。</p>",
             "prerequisites": [
                 {
-                    "value": "灵敏嗅觉专长或精确或模糊嗅觉感官，以及昏暗视觉"
+                    "value": "灵敏嗅觉专长或精确或模糊嗅觉感官"
                 }
             ]
         },
@@ -9473,7 +9473,7 @@
         },
         "Unbalancing Sweep": {
             "name": "失衡扫击 Unbalancing Sweep",
-            "description": "<p>你对身边发起猛烈横扫，让生物站立不稳，向外退开。选择至多三个邻接敌人，并选择要@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}还是@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}所有的这几个敌人。</p>\n<p>不管你选择了哪个选项，骰一次运动检定对抗每个敌人，并对每个敌人执行同一个动作。每次尝试都会被用于计算多次攻击减值，但减值只有在你做出全部尝试之后才会提高。</p>"
+            "description": "<p>你对身边发起猛烈横扫，让生物站立不稳，向外退开。选择至多三个邻接敌人，并选择要@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shove}还是@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}所有的这几个敌人。不管你选择了哪个选项，骰一次运动检定对抗每个敌人，并对每个敌人执行同一个动作。每次尝试都会被用于计算多次攻击减值，但减值只有在你做出全部尝试之后才会提高。</p>"
         },
         "Unbalancing Blow": {
             "name": "失衡攻击 Unbalancing Blow",
@@ -11131,7 +11131,7 @@
         },
         "Giant's Lunge": {
             "name": "巨人突刺 Giant's Lunge",
-            "description": "<p>你延展躯体，准备攻击正常触及范围以外的敌人。直到狂暴结束之前，你的所有近战武器和非武装攻击获得10尺触及。这不会增加任何已经具有触及特征的武器或非武装攻击的触及范围，但可以和因体型增长而增加触及范围的能力共用，比如巨人雄姿。.</p>",
+            "description": "<p>你延展躯体，准备攻击正常触及范围以外的敌人。直到狂暴结束之前，你的所有近战武器和非武装攻击获得10尺触及。这不会增加任何已经具有触及特征的武器或非武装攻击的触及范围，但可以和因体型增长而增加触及范围的能力共用，比如巨人雄姿。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.N2CSGvtPXloOEPrK]{效果：巨人突刺}</p>",
             "prerequisites": [
                 {
                     "value": "巨人本能"
@@ -11170,7 +11170,7 @@
         },
         "Crushing Grab": {
             "name": "巨力缠压 Crushing Grab",
-            "description": "<p>彷如大蟒奋力，你紧紧的缠压住目标。当你成功@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}生物时，对该生物造成等于你力量调整值的钝击伤害。</p>"
+            "description": "<p>彷如大蟒奋力，你紧紧的缠压住目标。当你成功@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒拿 Grapple}生物时，对该生物造成等于你力量调整值的[[/r @actor.abilities.str.mod[bludgeoning]]]{钝击伤害}。</p>"
         },
         "Big Mouth": {
             "name": "巨嘴 Big Mouth",
@@ -12049,7 +12049,7 @@
         },
         "Great Cleave": {
             "name": "强力顺势斩 Great Cleave",
-            "description": "<p>你的怒火引导着武器伤及多个敌人。在施展顺势斩时，若你的打击又杀死或击昏了目标，可以继续进行近战打击，直到你的打击未能杀死或击昏生物，或是没有生物与你最后一次施展顺势斩的目标相邻为止，以先发生的情况为准。</p>",
+            "description": "<p>你的怒火引导着武器伤及多个敌人。在施展@UUID[Compendium.pf2e.feats-srd.GE96a0UGPYM74qjI]{顺势斩 Cleave}时，若你的打击又杀死或击昏了目标，可以继续进行近战打击，直到你的打击未能杀死或击昏生物，或是没有生物与你最后一次施展顺势斩的目标相邻为止，以先发生的情况为准。</p>",
             "prerequisites": [
                 {
                     "value": "顺势斩"
@@ -12318,7 +12318,7 @@
         },
         "Inner Fire (Monk)": {
             "name": "心火(武僧) Inner Fire (Monk)",
-            "description": "<p>当你处于燃焰架势时，你获得相当于你等级一半的寒冷与火焰抗力。同时当任意生物以无武装攻击命中你、尝试抓住或擒抱你，或以任意方式触碰到你时会受到相当于你感知调整值（最小为1）的火焰伤害。一个生物每轮最多受到一次伤害。</p>",
+            "description": "<p>当你处于燃焰架势时，你获得相当于你等级一半的寒冷与火焰抗力。同时当任意生物以无武装攻击命中你、尝试抓住或擒抱你，或以任意方式触碰到你时会受到相当于你感知调整值（最小为1）的[[/r @actor.abilities.wis.mod[fire]]]{火焰伤害}。一个生物每轮最多受到一次伤害。</p>",
             "prerequisites": [
                 {
                     "value": "燃焰架势"
@@ -12820,7 +12820,7 @@
         },
         "Dread Marshal Stance": {
             "name": "恐怖军势 Dread Marshal Stance",
-            "description": "<p>你展现出战争残酷且无情的本质，要求你的盟友用凶猛的突击向敌人散播恐怖。</p>\n<p>当你使用本动作时，进行一次检定@Check[type:intimidation|dc:@self.level] ，对抗与你的等级相符的标准难度DC。或者，GM可以选择根据具体的情景设定合适的DC，本动作的效果取决于你获得的成功程度。</p>\n<hr />\n<p><strong>大成功</strong> 你的@UUID[Compendium.pf2e.feat-effects.KBEJVRrie2JTHWIK]{战将灵光 Marshal's Aura} 会扩展到 @Template[type:emanation|distance:20]{20尺弥散}范围，并且你的和处于灵光范围内的盟友会在伤害检定上获得相当于你所持用的武器或是你的徒手击打伤害骰数的状态加值。当你或是处于你的灵光范围内的盟友的攻击动作对敌人造成了一次重击时，该敌人会获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>成功</strong> 效果如同大成功，但你的灵光不会扩展。</p>\n<p><strong>失败</strong> 你未能启动架势。</p>\n<p><strong>大失败</strong> 你未能启动架势，并且在接下来的1分钟内你不能再次尝试本动作。</p>",
+            "description": "<p>你展现出战争残酷且无情的本质，要求你的盟友用凶猛的突击向敌人散播恐怖。</p>\n<p>当你使用本动作时，进行一次检定@Check[type:intimidation|dc:@self.level] ，对抗与你的等级相符的标准难度DC。或者，GM可以选择根据具体的情景设定合适的DC，本动作的效果取决于你获得的成功程度。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.qX62wJzDYtNxDbFv]{架势：恐怖军势}</p>\n<hr />\n<p><strong>大成功</strong> 你的@UUID[Compendium.pf2e.feat-effects.KBEJVRrie2JTHWIK]{战将灵光 Marshal's Aura} 会扩展到@Template[type:emanation|distance:20]，并且你的和处于灵光范围内的盟友会在伤害检定上获得相当于你所持用的武器或是你的徒手击打伤害骰数的状态加值。当你或是处于你的灵光范围内的盟友的攻击动作对敌人造成了一次重击时，该敌人会获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>成功</strong> 效果如同大成功，但你的灵光不会扩展。</p>\n<p><strong>失败</strong> 你未能启动架势。</p>\n<p><strong>大失败</strong> 你未能启动架势，并且在接下来的1分钟内你不能再次尝试本动作。</p>",
             "prerequisites": [
                 {
                     "value": "战将入门"
@@ -13754,7 +13754,7 @@
         },
         "Ghost Wrangler": {
             "name": "打鬼人 Ghost Wrangler",
-            "description": "<p>你周围的精魂聚集在你的拳头上，让你能抓住并伤害其他的鬼魂和精魂。直到你的下个回合开始，你的拳头获得幽冥性能符文效果，并且你可以对虚体生物进行基于力量的技能检定。</p>",
+            "description": "<p>你周围的精魂聚集在你的拳头上，让你能抓住并伤害其他的鬼魂和精魂。直到你的下个回合开始，你的拳头获得幽冥性能符文效果，并且你可以对虚体生物进行基于力量的技能检定。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.SiegLMJpVOGuoyWJ]{效果：打鬼人}</p>",
             "prerequisites": [
                 {
                     "value": "精魂本能"
@@ -14511,7 +14511,7 @@
         },
         "Rallying Charge": {
             "name": "振奋冲锋 Rallying Charge",
-            "description": "<p>你无畏地冲入敌阵，激励你的盟友继续战斗。</p>\n<p>你跑动一次，移动最多不超过你的陆地移动速度的距离然后发动一次近战攻击。如果你的攻击成功命中并造成伤害，所有处于你周围60尺内且可以看到你的盟友都会获得相当于你的魅力调整值的临时生命值。这些临时生命值会持续到你的下回合开始时为止。</p>",
+            "description": "<p>你无畏地冲入敌阵，激励你的盟友继续战斗。</p>\n<p>你跑动一次，移动最多不超过你的陆地移动速度的距离然后发动一次近战攻击。如果你的攻击成功命中并造成伤害，所有处于你周围60尺内且可以看到你的盟友都会获得相当于你的魅力调整值的临时生命值。这些临时生命值会持续到你的下回合开始时为止。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.wjNNHgX6ceKLbn8Q]{效果：振奋冲锋}</p>",
             "prerequisites": [
                 {
                     "value": "战将入门"
@@ -14632,7 +14632,7 @@
         },
         "Touch Focus": {
             "name": "接触聚焦 Touch Focus",
-            "description": "<p>你可以重定向法术，使得其力量穿过自己的身体，以此在打击距离内传递它。如果你的下个动作是施展一个目标为1或多个目标的、射程比接触更远的法术，你能将射程改为接触。若被改变的法术需要进行法术攻击骰，你在攻击骰上获得+2环境加值。若原法术可影响超过一个目标，该超魔也只允许你用该法术接触一个目标。在你施法之后，你能对目标发动一次卸武、推撞、摔绊或以非武装攻击进行一次打击。</p>",
+            "description": "<p><strong>触发</strong> 你开始施放一个需要法术攻击骰的法术</p>\n<hr />\n<p>你可以重定向法术，使得其力量穿过自己的身体，以此在打击距离内传递它。如果你的下个动作是施展一个目标为1或多个目标的、射程比接触更远的法术，你能将射程改为接触。你在攻击骰上获得+2环境加值。若原法术可影响超过一个目标，该超魔也只允许你用该法术接触一个目标。只要你的法术攻击成功命中，除了原本的法术效果外，目标@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>",
             "prerequisites": [
                 {
                     "value": "第六柱入门"
@@ -15173,7 +15173,7 @@
         },
         "Whirlwind Toss": {
             "name": "旋风投掷 Whirlwind Toss",
-            "description": "<p><strong>需求</strong> 你擒抱着一个敌人</p>\n<p>你模仿对手捣达（Ran-To）的技巧，在将敌人远远扔出之前，旋转他撞向周围所有生物。你进行重殴（Thrash）。在此次重殴期间，你的@UUID[Compendium.pf2e.feats-srd.WY7CjISdz6uwXwIb]{借势重殴 Collateral Thrash}适用于所有与你相邻的敌人。你可以在之后将擒抱的生物扔出10尺远，然后他跌@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p>如果你选择借势重殴的敌人也与你相邻，他只需进行一次豁免并只会受到一次伤害。</p>",
+            "description": "<p><strong>需求</strong> 你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}着一个敌人</p>\n<p>你模仿对手捣达（Ran-To）的技巧，在将敌人远远扔出之前，旋转他撞向周围所有生物。你进行@UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{重殴 Thrash}。在此次重殴期间，你的@UUID[Compendium.pf2e.feats-srd.WY7CjISdz6uwXwIb]{借势重殴 Collateral Thrash}适用于所有与你相邻的敌人。你可以在之后将擒抱的生物扔出10尺远，然后他跌@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p>如果你选择借势重殴的敌人也与你相邻，他只需进行一次豁免并只会受到一次伤害。</p>",
             "prerequisites": [
                 {
                     "value": "借势重殴"
@@ -15323,7 +15323,7 @@
         },
         "Reckless Abandon (Barbarian)": {
             "name": "无所顾忌(野蛮人) Reckless Abandon (Barbarian)",
-            "description": "<p><strong>触发</strong> 你的回合开始时生命值为一半或更低。</p>\n<hr />\n<p>你在受到伤害时热血沸腾，并把理智抛到脑后来战斗到底。你的攻击检定获得+2环境加值，AC受到-2减值，豁免受到-1减值。这些加值和减值持续到你的狂暴结束，或者直到你的生命值高于一半，以先发生的情况为准。</p>"
+            "description": "<p><strong>触发</strong> 你的回合开始时生命值为一半或更低。</p>\n<hr />\n<p>你在受到伤害时热血沸腾，并把理智抛到脑后来战斗到底。你的攻击检定获得+2环境加值，AC受到-2减值，豁免受到-1减值。这些加值和减值持续到你的狂暴结束，或者直到你的生命值高于一半，以先发生的情况为准。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.sfUsodcGb4atcSyN]{效果：无所顾忌(野蛮人)}</p>"
         },
         "Flinging Blow": {
             "name": "无拍子 Flinging Blow",
@@ -17125,7 +17125,7 @@
         },
         "Silencing Strike": {
             "name": "沉默打击 Silencing Strike",
-            "description": "<p>你快速打击目标的面部或口部，使其无法出声。对敌人进行一次近战打击。该敌人必须进行强韧豁免检定，对抗你的职业DC。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标头晕脑胀，难以出声。它陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，说话声变得嘶哑而难以理解。它必须成功进行DC 11的纯骰检定，才能施展有语言特征的行动或在施法时满足言语成分，直到它的下个回合结束。</p>\n<p><strong>大失败</strong> 如同失败，但该生物陷入震慑3而非震慑1。</p>"
+            "description": "<p>你快速打击目标的面部或口部，使其无法出声。对敌人进行一次近战打击。该敌人必须进行@Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)]检定，对抗你的职业DC。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标头晕脑胀，难以出声。它陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，说话声变得嘶哑而难以理解。它必须成功进行DC 11的纯骰检定，才能施展有语言特征的行动或在施法时满足言语成分，直到它的下个回合结束。</p>\n<p><strong>大失败</strong> 如同失败，但该生物陷入@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}而非震慑1。</p>"
         },
         "Channel The Godmind": {
             "name": "沟通神识 Channel The Godmind",
@@ -17376,7 +17376,7 @@
         },
         "Titan's Stature": {
             "name": "泰坦雄姿 Titan's Stature",
-            "description": "<p>你的体型变得更加巨大。在施展@UUID[Compendium.pf2e.feats-srd.W21jKAcG0GtEtBiK]{巨人雄姿 Giant's Stature}时，你可以改为在狂暴期间变为超大型（若你原本的体型不超过中型，触及范围会提高10尺）。你在变为超大型期间，陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}状态。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RcxDIOa68SUGyMun]{效果: 泰坦雄姿 }</p>",
+            "description": "<p>你的体型变得更加巨大。在施展@UUID[Compendium.pf2e.feats-srd.W21jKAcG0GtEtBiK]{巨人雄姿 Giant's Stature}时，你可以改为在狂暴期间变为超大型（若你原本的体型不超过中型，触及范围会提高10尺）。你在变为超大型期间，陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}状态。</p>",
             "prerequisites": [
                 {
                     "value": "巨人本能"
@@ -17986,7 +17986,7 @@
         },
         "Scalding Spit": {
             "name": "滚烫喷吐 Scalding Spit",
-            "description": "<p>你的体液以惊人的波动燃烧，就好像你是靠油而不是血来驱动一样。只要你受到@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}，你就获得沸腾喷吐远程无武装攻击，射程30尺，造成1d6点火焰伤害。</p>",
+            "description": "<p>你的体液以惊人的波动燃烧，就好像你是靠油而不是血来驱动一样。只要你受到@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}，你就获得沸腾喷吐远程无武装攻击，射程30尺，造成[[/r 1d6[fire]]]伤害。</p>",
             "prerequisites": [
                 {
                     "value": "火炬地精"
@@ -18179,7 +18179,7 @@
         },
         "Inspiring Marshal Stance": {
             "name": "激昂军势 Inspiring Marshal Stance",
-            "description": "<p>你具象化战争光荣与热血的传奇，激励你的盟友追求战斗所赋予他们的荣耀。</p>\n<p>当你使用本动作时，进行一次 @Check[type:diplomacy|dc:@self.level] 检定，对抗与你的等级相符的标准难度DC。或者，GM可以选择根据具体的情景设定合适的DC，本动作的效果取决于你获得的成功程度。</p>\n<hr />\n<p><strong>大成功</strong> 你的@UUID[Compendium.pf2e.feat-effects.kzEPq4aczYb6OD2h]{战将灵光 Marshal's Aura} 会扩展到 @Template[type:emanation|distance:20]{20尺弥漫}范围，并且你和处于灵光范围内的盟友会在攻击检定和对抗心灵效果的豁免检定上获得+1状态加值。</p>\n<p><strong>成功</strong> 效果如同大成功，但你的灵光不会扩展。</p>\n<p><strong>失败</strong> 你未能启动架势。</p>\n<p><strong>大失败</strong> 你未能启动架势，并且在接下来的1分钟内你不能再次尝试本动作。</p>",
+            "description": "<p>你具象化战争光荣与热血的传奇，激励你的盟友追求战斗所赋予他们的荣耀。</p>\n<p>当你使用本动作时，进行一次 @Check[type:diplomacy|dc:@self.level] 检定，对抗与你的等级相符的标准难度DC。或者，GM可以选择根据具体的情景设定合适的DC，本动作的效果取决于你获得的成功程度。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.er5tvDNvpbcnlbHQ]{架势：激昂军势}</p>\n<hr />\n<p><strong>大成功</strong> 你的@UUID[Compendium.pf2e.feat-effects.kzEPq4aczYb6OD2h]{战将灵光 Marshal's Aura} 会扩展到@Template[type:emanation|distance:20]范围，并且你和处于灵光范围内的盟友会在攻击检定和对抗心灵效果的豁免检定上获得+1状态加值。</p>\n<p><strong>成功</strong> 效果如同大成功，但你的灵光不会扩展。</p>\n<p><strong>失败</strong> 你未能启动架势。</p>\n<p><strong>大失败</strong> 你未能启动架势，并且在接下来的1分钟内你不能再次尝试本动作。</p>",
             "prerequisites": [
                 {
                     "value": "战将入门"
@@ -19187,7 +19187,7 @@
         },
         "Scouring Rage": {
             "name": "狂暴冲激 Scouring Rage",
-            "description": "<p><strong>触发</strong> 你进入@UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{狂暴 Rage}</p>\n<hr />\n<p>在释放自己的潜力时，你迸发出一股强大的本能之力。每个邻接生物受到等于你等级的伤害（基础强韧豁免，对抗你的职业DC），伤害类型与你狂暴期间的额外伤害相同。</p>",
+            "description": "<p><strong>触发</strong> 你进入@UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{狂暴 Rage}</p>\n<hr />\n<p>在释放自己的潜力时，你迸发出一股强大的本能之力。每个邻接生物受到[[/r @actor.level]]{等于你等级的伤害}（@Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true]豁免，对抗你的职业DC），伤害类型与你狂暴期间的额外伤害相同。</p>",
             "prerequisites": [
                 {
                     "value": "你的本能允许你改变来源于狂暴的额外伤害类型"
@@ -19414,7 +19414,7 @@
         },
         "Corpse-Killer's Defiance": {
             "name": "猎尸人的蔑视 Corpse-Killer's Defiance",
-            "description": "<p><strong>触发</strong> 你摧毁一个不死生物敌人</p>\n<hr />\n<p>你通过将摧毁每个不死生物的方式来表达对塔-巴丰的蔑视，用胜利来团结你的盟友。可以看见你的盟友，对不死生物的攻击骰和伤害骰获得+1状态加值，持续1轮，或者如果你摧毁的不死生物等级不低于你，则此加值提升为+2，持续2轮。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.ctiTtuRWFjAnWdYQ]{效果: 猎尸人的蔑视(低等级)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3WzaQKb10AYLdTsQ]{效果: 猎尸人的蔑视}</p>"
+            "description": "<p><strong>触发</strong> 你摧毁一个不死生物敌人</p>\n<hr />\n<p>你通过将摧毁每个不死生物的方式来表达对塔-巴丰的蔑视，用胜利来团结你的盟友。可以看见你的盟友，对不死生物的攻击骰和伤害骰获得+1状态加值，持续1轮，或者如果你摧毁的不死生物等级不低于你，则此加值提升为+2，持续2轮。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3WzaQKb10AYLdTsQ]{效果: 猎尸人的蔑视}</p>"
         },
         "Hunter's Fangs": {
             "name": "猎手之牙 Hunter's Fangs",
@@ -19824,7 +19824,7 @@
         },
         "Pain Tolerance": {
             "name": "痛觉耐性 Pain Tolerance",
-            "description": "<p><strong>获取条件</strong> 你来自阿肯斯塔或法力废土</p>\n<hr />\n<p>你获得你等级一半的心灵伤害抗力，并且在对抗那些将要使你笨拙、流失或力竭的效果时，豁免骰有+1环境加值。</p>",
+            "description": "<p><strong>获取条件</strong> 你来自阿肯斯塔或法力废土</p>\n<hr />\n<p>你获得你等级一半的心灵伤害抗力，并且在对抗那些将要使你@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy}、@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}或@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled}的效果时，豁免骰有+1环境加值。</p>",
             "prerequisites": [
                 {
                     "value": "强韧豁免熟练度为专家"
@@ -20435,7 +20435,7 @@
         },
         "Terrifying Howl": {
             "name": "破胆怒吼 Terrifying Howl",
-            "description": "<p>你发出令人胆寒的吼叫声。尝试<span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">威吓</span>检定以对30尺内的每个敌人挫败士气。无论检定结果如何，每个生物敌人都会在1分钟内暂时免疫破胆怒吼。</p>",
+            "description": "<p>你发出令人胆寒的吼叫声。尝试威吓检定以对30尺内的每个敌人@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。无论检定结果如何，每个生物敌人都会在1分钟内暂时免疫破胆怒吼。</p>",
             "prerequisites": [
                 {
                     "value": "金刚怒目"
@@ -21225,7 +21225,7 @@
         },
         "Impaling Thrust": {
             "name": "穿透尖钉 Impaling Thrust",
-            "description": "<p><strong>需求</strong> 你持用可造成穿刺伤害的近战武器。</p>\n<hr />\n<p>你刺穿敌人，用你的武器将其固定在原地。</p>\n<p>用满足需求的武器进行一次近战打击。如果打击命中并造成伤害，目标被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直到其成功@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{脱逃 Escape}、你用该武器进行攻击、或你@UUID[Compendium.pf2e.actionspf2e.wQYmDStjdjn0I26t]{放开 Release}该武器，以先发生的情况为准。</p>\n<p>目标不再被擒抱时会受到等于武器伤害骰数的@UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}。</p>"
+            "description": "<p><strong>需求</strong> 你持用可造成穿刺伤害的近战武器。</p>\n<hr />\n<p>你刺穿敌人，用你的武器将其固定在原地。用满足需求的武器进行一次近战打击。如果打击命中并造成伤害，目标被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直到其成功@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{脱逃 Escape}、你用该武器进行攻击、或你@UUID[Compendium.pf2e.actionspf2e.wQYmDStjdjn0I26t]{放开 Release}该武器，以先发生的情况为准。目标不再被擒抱时会受到等于武器伤害骰数的持续流血伤害。</p>"
         },
         "Penetrating Fire": {
             "name": "穿透火力 Penetrating Fire",
@@ -21295,7 +21295,7 @@
         },
         "Sudden Leap": {
             "name": "突袭跳跃 Sudden Leap",
-            "description": "<p>(野蛮人) 你在跳跃的中途猛击敌人。</p>\n<p>(战士) 你挥起武器奋力一跃。</p>\n<hr />\n<p>进行一次@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}、Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{高跳 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{远跳 Long Jump}，并在跳跃过程中任意一点尝试一次近战普通攻击。</p>\n<p>在此次普通攻击之后，若你还在空中则会立即落地，即使你还没有抵达你的最大跳跃距离。如果你因此坠落的距离小于你的跳跃高度，则你不会受到伤害并直立落地。 </p>\n<p>在突袭跳跃的过程中尝试高跳或远跳时，检定DC使用远跳的DC，并且你的最大跳跃距离会增加2倍你的速度的距离。 特殊：若你有坠落打击专长，则可在使用突袭跳跃时消耗3个行动，使此次突袭跳跃中的普通攻击替换为坠落打击。</p>"
+            "description": "<p>(野蛮人) 你在跳跃的中途猛击敌人。</p>\n<p>(战士) 你挥起武器奋力一跃。</p>\n<hr />\n<p>进行一次@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}、Compendium[pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{高跳 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{远跳 Long Jump}，并在跳跃过程中任意一点尝试一次近战普通攻击。在此次普通攻击之后，若你还在空中则会立即落地，即使你还没有抵达你的最大跳跃距离。如果你因此坠落的距离小于你的跳跃高度，则你不会受到伤害并直立落地。 </p>\n<p>在突袭跳跃的过程中尝试高跳或远跳时，检定DC使用远跳的DC，并且你的最大跳跃距离会增加2倍你的速度的距离。 特殊：若你有坠落打击专长，则可在使用突袭跳跃时消耗3个行动，使此次突袭跳跃中的普通攻击替换为坠落打击。</p>"
         },
         "Steal Time": {
             "name": "窃取时间 Steal Time",
@@ -21516,7 +21516,7 @@
         },
         "Sixth Pillar Mastery": {
             "name": "第六柱精通 Sixth Pillar Mastery",
-            "description": "<p>你的高度自律让你的身体潜能与魔法相谐调。如果你的非武装攻击至少为大师熟练度，那么你的法术攻击的熟练度将提升为大师。同样的，如果你的法术攻击至少为大师熟练度，你的非武装攻击的熟练度将提升为大师。</p>",
+            "description": "<p>你的高度自律让你的身体潜能与魔法相谐调。当你在对敌人的一次无武装攻击成功时，在你的下回合开始前他们对抗你的法术的豁免收到-1状态减值。当你使用法术位施放一个法术时，你在下回合开始前无武装攻击的攻击骰获得+1状态加值。</p>",
             "prerequisites": [
                 {
                     "value": "第六柱入门"
@@ -22002,7 +22002,7 @@
         },
         "Spirit's Wrath": {
             "name": "精魂之怒 Spirit's Wrath",
-            "description": "<p>你以鬼火的形态呼唤出短暂的显灵，它通常是一位先祖的鬼魂，或是一个自然精魂。鬼火对距离你120尺以内的一个敌人发起一次近战鬼火冲击，这属于非武装攻击。鬼火的攻击调整值等于你的军用武器熟练度加值+力量调整值+2物品加值，并应用与你相同的环境和状态加值、减值。命中时，鬼火造成的伤害等于4d8+你的体质调整值。伤害类型可以是正向或负向伤害，由你选择。该伤害不会附加你的狂暴伤害或武器专精伤害，但需要计算同样会影响鬼火伤害的环境和状态加值、减值。若鬼火的打击造成重击，目标陷入惊惧1。本次攻击应用并且计入你的多次攻击减值，如同你是攻击者。</p>",
+            "description": "<p>你以鬼火的形态呼唤出短暂的显灵，它通常是一位先祖的鬼魂，或是一个自然精魂。鬼火对距离你120尺以内的一个敌人发起一次近战鬼火冲击，这属于非武装攻击。鬼火的攻击调整值等于你的军用武器熟练度加值+力量调整值+2物品加值，并应用与你相同的环境和状态加值、减值。命中时，鬼火造成的伤害等于4d8+你的体质调整值。伤害类型可以是[[/r (4d8+@actor.abilities.con.mod)[negative]]]{负能量}或[[/r (4d8+@actor.abilities.con.mod)[positive]]]{正能量}伤害，由你选择。该伤害不会附加你的狂暴伤害或武器专精伤害，但需要计算同样会影响鬼火伤害的环境和状态加值、减值。若鬼火的打击造成重击，目标陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。本次攻击应用并且计入你的多次攻击减值，如同你是攻击者。</p>",
             "prerequisites": [
                 {
                     "value": "精魂本能"
@@ -23134,7 +23134,7 @@
         },
         "Come and Get Me": {
             "name": "舍命相搏 Come and Get Me",
-            "description": "<p>你暴露出自己的破绽，从而能够对敌人以牙还牙。直到狂暴结束前，你陷入措手不及，并且对你造成的伤害检定获得+2环境加值。若有生物击中了你，该生物在你的下个回合结束前，对你视为措手不及。若你在你的下个回合结束前击中该生物，你会获得等于体质调整值的临时生命值，重击时可获得双倍。这些临时生命值持续到你的狂暴结束。 </p>"
+            "description": "<p>你暴露出自己的破绽，从而能够对敌人以牙还牙。直到狂暴结束前，你陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，并且对你造成的伤害检定获得+2环境加值。若有生物击中了你，该生物在你的下个回合结束前，对你视为措手不及。若你在你的下个回合结束前击中该生物，你会获得等于体质调整值的临时生命值，重击时可获得双倍。这些临时生命值持续到你的狂暴结束。 </p>"
         },
         "Shoulder Catastrophe": {
             "name": "舍身救友 Shoulder Catastrophe",
@@ -23784,7 +23784,7 @@
         },
         "Brutal Bully": {
             "name": "蛮力逼人 Brutal Bully",
-            "description": "<p>你推搡敌人，令他们伤痕累累。狂暴时，每当你成功卸武、擒抱、推撞或摔绊一个敌人时，会对该敌人造成等于你的力量调整值的钝击伤害；摔绊大成功时的伤害也可附加此伤害。</p>",
+            "description": "<p>你推搡敌人，令他们伤痕累累。狂暴时，每当你成功卸武、擒抱、推撞或摔绊一个敌人时，会对该敌人造成等于你的力量调整值的[[/r @actor.abilties.str.mod[bludgeoning]]]{钝击伤害}；摔绊大成功时的伤害也可附加此伤害。</p>",
             "prerequisites": [
                 {
                     "value": "运动技能熟练度为专家"
@@ -24895,7 +24895,7 @@
         },
         "Penetrating Projectile": {
             "name": "贯通投射 Penetrating Projectile",
-            "description": "<p><strong>需求</strong> 你持用可造成穿刺伤害的远程或投掷武器</p>\n<hr />\n<p>你的弹药不会被皮肉和骨骼阻挡。对@Template[type:line|distance:30]范围内的每个生物进行一次远程打击。这些攻击忽略生物提供的弱效掩蔽、掩蔽和高等掩蔽。仅需骰一次伤害，将其应用于每个你击中的生物。</p>\n<p>每次攻击都会被用于计算多次攻击减值，但减值只有在你做出全部攻击之后才会提高。</p>"
+            "description": "<p><strong>需求</strong> 你持用可造成穿刺伤害的远程或投掷武器</p>\n<hr />\n<p>你的弹药不会被皮肉和骨骼阻挡。对@Template[type:line|distance:30]范围内的每个生物进行一次远程打击。这些攻击忽略生物提供的弱效掩蔽、掩蔽和高等掩蔽。仅需骰一次伤害，将其应用于每个你击中的生物。每次攻击都会被用于计算多次攻击减值，但减值只有在你做出全部攻击之后才会提高。</p>"
         },
         "Impaling Finisher": {
             "name": "贯通终结 Impaling Finisher",
@@ -26626,11 +26626,11 @@
         },
         "Second Wind": {
             "name": "重振精神 Second Wind",
-            "description": "<p>你可以再次进入狂暴，但之后你需要喘口气。你可以在一次狂暴后，无需等待1分钟（在有快速狂暴的情况下，则为1轮）即可再次狂暴，但当你结束这第二次狂暴时，你会陷入疲乏，直到休息10分钟后才能恢复。</p>"
+            "description": "<p>你可以再次进入狂暴，但之后你需要喘口气。你可以在一次狂暴后，无需等待1分钟（在有快速狂暴的情况下，则为1轮）即可再次狂暴，但当你结束这第二次狂暴时，你会陷入@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}，直到休息10分钟后才能恢复。</p>"
         },
         "Thrash": {
             "name": "重殴 Thrash",
-            "description": "<p><strong>需求</strong> 你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}着一个敌人</p>\n<hr />\n<p>你殴打擒抱的敌人。敌人受到钝击伤害，数值等于你的力量调整值+凶猛专精伤害+你的狂暴伤害。敌人必须尝试一次基础强韧豁免，对抗你的职业DC。</p>"
+            "description": "<p><strong>需求</strong> 你@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}着一个敌人</p>\n<hr />\n<p>你殴打擒抱的敌人。敌人受到钝击伤害，数值等于你的力量调整值+凶猛专精伤害+你的狂暴伤害。敌人必须尝试一次@Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true]豁免，对抗你的职业DC。</p>"
         },
         "Renewed Vigor": {
             "name": "重现活力 Renewed Vigor",
