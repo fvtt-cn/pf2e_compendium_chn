@@ -247,7 +247,7 @@
         },
         "Conduct Energy": {
             "name": "引导能量 Conduct Energy",
-            "description": "<p><strong>需求</strong> 你在本回合中的上一个动作或法术拥有酸、寒冷、 电击、火焰或音波特性。</p>\n<hr />\n<p>你把能量注入你的武器。直到你的下一个回合开始，该武器额外造成每个伤害骰1点伤害。这种伤害类型与触发动作或法术的特性相匹配。如果你的触发动作或法术拥有多个符合条件的特性，你可以选择其中一个。</p>"
+            "description": "<p><strong>需求</strong> 你在本回合中的上一个动作或法术拥有酸、寒冷、 电击、火焰或音波特性。</p>\n<hr />\n<p>你把能量注入你的武器。直到你的下一个回合开始，该武器额外造成每个伤害骰1点伤害。这种伤害类型与触发动作或法术的特性相匹配。如果你的触发动作或法术拥有多个符合条件的特性，你可以选择其中一个。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.lU8IO9FIGK1DXVMy]{效果：引导能力}</p>"
         },
         "Confident Finisher": {
             "name": "稳妥终结 Confident Finisher",
@@ -723,7 +723,7 @@
         },
         "Raconteur's Reload": {
             "name": "嘴炮装填 Raconteur's Reload",
-            "description": "<p>你急促或有力的话语吸引了敌人足够的注意力从而使你可以趁机装填一枚弹药。进行交互动作装填，然后尝试一次欺骗检定进行分神或尝试一次威吓检定进行@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。</p>"
+            "description": "<p>你急促或有力的话语吸引了敌人足够的注意力从而使你可以趁机装填一枚弹药。进行交互动作装填，然后尝试一次欺骗检定进行@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}或尝试一次威吓检定进行@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。</p>"
         },
         "Rage": {
             "name": "狂暴 Rage",
@@ -915,7 +915,7 @@
         },
         "Spinning Crush": {
             "name": "旋转绞肉机 Spinning Crush",
-            "description": "<p><strong>需求</strong> 你正持用一把已装填的火器或已装填的弩。</p>\n<hr />\n<p>你开始疯狂地旋转并且开火增加你的动能，然后用武器砸向所有附近的人。所有邻接你的敌人受到1d6点钝击伤害加上你的力量调整值，如果你的武器拥有强击符文则提升为2d6，如果拥有高等强击符文则为3d6，如果拥有上等符文则为4d6。这个能力不适用其他增加火器打击伤害的能力诸如武器专精。受到这次攻击影响的生物必须尝试一次反射豁免，如果失败将被推离你5尺。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把已装填的火器或已装填的弩。</p>\n<hr />\n<p>你开始疯狂地旋转并且开火增加你的动能，然后用武器砸向所有附近的人。所有邻接你的敌人受到[[/r (1d6+@actor.abilities.str.mod)[bludgeoning]]]{1d6钝击加你的力量调整值的伤害}，如果你的武器拥有强击符文则提升为[[/r (2d6+@actor.abilities.str.mod)[bludgeoning]]]{2d6}，如果拥有高等强击符文则为[[/r (3d6+@actor.abilities.str.mod)[bludgeoning]]]{3d6}，如果拥有上等符文则为[[/r (4d6+@actor.abilities.str.mod)[bludgeoning]]]{4d6}。这个能力不适用其他增加火器打击伤害的能力诸如武器专精。受到这次攻击影响的生物必须尝试一次@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免，如果失败将被推离你5尺。</p>"
         },
         "Squeeze": {
             "name": "挤入空间 Squeeze",
