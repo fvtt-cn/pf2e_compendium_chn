@@ -165,6 +165,18 @@
 				}
 			]
 		},
+		"Acknowledge Fan": {
+			"name": "Acknowledge Fan",
+			"description": "<p>Your reputation as a Firebrand precedes you, and you need only make a simple gesture or give a look of recognition to amaze those around you. You're so famous and beloved that even your enemies are fans, and they're shocked to see you here. Choose one target creature who can see you to acknowledge. The target must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and becomes immune to Acknowledge Fan for 1 day.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} and becomes immune to Acknowledge Fan for 1 day.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{Paralyzed} until the end of your next turn.</p>\n<p><strong>Special</strong> This feat has either the arcane or occult trait, matching the choice you made when you took Mesmerizing Gaze.</p>",
+			"prerequisites": [
+				{
+					"value": "Celebrity Dedication"
+				},
+				{
+					"value": "Mesmerizing Gaze"
+				}
+			]
+		},
 		"Acquired Tolerance": {
 			"name": "Acquired Tolerance",
 			"description": "<p><strong>Trigger</strong> You fail a save against a poison.</p>\n<hr />\n<p>A small amount of poison, taken at nonlethal doses, can help the body build up a resistance against a more deadly dosage. Reroll the triggering check and use the second result.</p>\n<p>Once you use Acquired Tolerance, you can continue to use it against the same type of poison that day, but you can't use it against a different type of poison until after you make your next daily preparations.</p>\n<p>For instance, if you used the reaction on a save against @UUID[Compendium.pf2e.equipment-srd.QGXNqpP5KvSldoZz]{Giant Scorpion Venom}, you could use it again against giant scorpion venom even if it came from a different source, but you couldn't use it against @UUID[Compendium.pf2e.equipment-srd.KdeeRCrtsDCJLfgc]{Nettleweed Residue}, @UUID[Compendium.pf2e.equipment-srd.ca2lzxfJxvuLDrKu]{Lich Dust}, or another poison.</p>",
@@ -1265,8 +1277,12 @@
 		},
 		"Animal Rage": {
 			"name": "Animal Rage",
-			"description": "<p>You transform into your animal.</p>\n<p>You gain the effects of the 3rd-level <em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{Animal Form}</em> spell except you use your own statistics, temporary Hit Points, and unarmed attacks instead of those granted by animal form. You also retain the constant abilities of your gear.</p>\n<p>If your animal is a frog, your tongue's reach increases to 15 feet. Dismissing the transformation gains the rage trait.</p>",
-			"prerequisites": []
+			"description": "<p>You transform into your animal. You gain the effects of the 3rd-level <em>@UUID[Compendium.pf2e.spells-srd.wp09USMB3GIW1qbp]{Animal Form}</em> spell except you use your own statistics, temporary Hit Points, and unarmed attacks instead of those granted by animal form. You also retain the constant abilities of your gear. If your animal is a frog, your tongue's reach increases to 15 feet. Dismissing the transformation gains the rage trait.</p>",
+			"prerequisites": [
+				{
+					"value": "animal instinct"
+				}
+			]
 		},
 		"Animal Senses": {
 			"name": "Animal Senses",
@@ -2065,7 +2081,7 @@
 		},
 		"Awesome Blow": {
 			"name": "Awesome Blow",
-			"description": "<p>Your attacks are so powerful, they can flatten your opponents. When you use Knockback, you can attempt an Athletics check against your target's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain the critical success effect of a Shove, then the critical success effect of a Trip against the target.</p>\n<p><strong>Success</strong> You gain the success effect of a Shove, then the success effect of a Trip against the target.</p>\n<p><strong>Failure</strong> You gain the normal effect of Knockback.</p>",
+			"description": "<p>Your attacks are so powerful, they can flatten your opponents. When you use @UUID[Compendium.pf2e.feats-srd.pVLdMOqYwul745k3]{Knockback}, you can attempt an Athletics check against your target's Fortitude DC.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain the critical success effect of a @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}, then the critical success effect of a @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} against the target.</p>\n<p><strong>Success</strong> You gain the success effect of a Shove, then the success effect of a Trip against the target.</p>\n<p><strong>Failure</strong> You gain the normal effect of Knockback.</p>",
 			"prerequisites": [
 				{
 					"value": "Knockback"
@@ -2905,6 +2921,15 @@
 			"description": "<p>Underestimating you is a grave mistake, but it's one others keep making. You've learned to take advantage of slips in your foes' defenses.</p>\n<p>When you Strike a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} creature using a melee weapon or unarmed attack that has the agile and finesse traits, it gains the backstabber trait.</p>",
 			"prerequisites": []
 		},
+		"Big Debut": {
+			"name": "Big Debut",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You're about to roll initiative.</p>\n<hr />\n<p>Now's your chance! You're a Firebrand, and the world must know it. You strike a dramatic pose, deliver a snappy quip, or reveal a shocking new costume, captivating everyone who can see you. You don't roll initiative. Instead, you voluntarily go last. Enemies who can see you must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] saving throw against your class DC or spell DC, whichever is higher. On a failure, the enemy is overcome with anticipation for what you'll do next on the battlefield and becomes @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} on a critical failure). As your first action on your first turn, you can Interact to draw or stow an item of light Bulk as a free action; if this item is a small garment or accessory, such as a fan, a pair of gloves, or a wine glass, you gain a +1 circumstance bonus on Charisma-based skill checks until the end of your turn.</p>",
+			"prerequisites": [
+				{
+					"value": "Celebrity Dedication or Gladiator Dedication"
+				}
+			]
+		},
 		"Big Game Trapper": {
 			"name": "Big Game Trapper",
 			"description": "<p>You can set snares specifically for big prey, leaving smaller creatures unscathed. Each time you set a snare, you can choose Small, Medium, Large, or Huge. That snare can be triggered only by creatures of that size or larger.</p>",
@@ -3665,6 +3690,15 @@
 			"description": "<p>You curl into a posture that splays out your bone spines. You gain a +1 circumstance to AC until the start of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.4Zj71naHbY6O9ggP]{Effect: Bristle}</p>\n<hr />\n<p><strong>Special</strong> If you have the Barbed Quills reaction or a quills unarmed attack, each gains a +1 circumstance bonus to damage rolls until the start of your next turn.</p>\n<p><em>Note: +1 to Barbed Quills is not automated</em></p>",
 			"prerequisites": []
 		},
+		"Broadside Buckos": {
+			"name": "Broadside Buckos",
+			"description": "<p>Shimali Manux trains every Salt Breaker to fight in the cramped quarters below deck, and you've learned how to use these techniques with your crew. During your daily preparations, you can name up to five crewmates you will be working with that day. If an enemy is within reach of you and at least two of your crewmates, that enemy is @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} against you.</p>",
+			"prerequisites": [
+				{
+					"value": "Pirate Dedication"
+				}
+			]
+		},
 		"Brutal Beating": {
 			"name": "Brutal Beating",
 			"description": "<p>The brutality of your critical hits shakes your foes' confidence.</p>\n<p>Whenever your Strike is a critical hit and deals damage, the target is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>",
@@ -3676,7 +3710,7 @@
 		},
 		"Brutal Bully": {
 			"name": "Brutal Bully",
-			"description": "<p>You push your foes around and leave bruises. While raging, when you successfully Disarm, Grapple, Shove, or Trip a foe, you deal that foe bludgeoning damage equal to your Strength modifier; add this to the damage from a critical success to Trip.</p>",
+			"description": "<p>You push your foes around and leave bruises. While raging, when you successfully Disarm, Grapple, Shove, or Trip a foe, you deal that foe [[/r @actor.abilties.str.mod[bludgeoning]]]{bludgeoning damage} equal to your Strength modifier; add this to the damage from a critical success to Trip.</p>",
 			"prerequisites": [
 				{
 					"value": "expert in Athletics"
@@ -4959,7 +4993,7 @@
 		},
 		"Collateral Thrash": {
 			"name": "Collateral Thrash",
-			"description": "<p>When you Thrash a grabbed foe, you smack that foe into another nearby. Another foe adjacent to the grabbed foe also takes your Thrash damage, with a basic Reflex save against your class DC.</p>",
+			"description": "<p>When you @UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{Thrash} a @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} foe, you smack that foe into another nearby. Another foe adjacent to the grabbed foe also takes your Thrash damage, with a @Check[type:reflex|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true] save against your class DC.</p>",
 			"prerequisites": [
 				{
 					"value": "Thrash"
@@ -5016,7 +5050,7 @@
 		},
 		"Come and Get Me": {
 			"name": "Come and Get Me",
-			"description": "<p>You open yourself to attacks so you can respond in turn. Until your rage ends, you are flat-footed, and damage rolls against you gain a +2 circumstance bonus. If a creature hits you, that creature is flat-footed to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary Hit Points equal to your Constitution modifier, or double that on a critical hit. These temporary Hit Points last until the end of your rage.</p>",
+			"description": "<p>You open yourself to attacks so you can respond in turn. Until your rage ends, you are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed}, and damage rolls against you gain a +2 circumstance bonus. If a creature hits you, that creature is flat-footed to you until the end of your next turn. If you hit it before the end of your next turn, you gain temporary Hit Points equal to your Constitution modifier, or double that on a critical hit. These temporary Hit Points last until the end of your rage.</p>",
 			"prerequisites": []
 		},
 		"Come at Me!": {
@@ -5317,7 +5351,7 @@
 		},
 		"Contagious Rage": {
 			"name": "Contagious Rage",
-			"description": "<p>You can drive your allies into a frenzy, granting them incredible benefits. You can ignore the requirements on Share Rage, using it multiple times in a Rage. Allies affected by Share Rage who accept your anathema for the duration of the Rage gain your instinct ability and the specialization ability it gains from weapon specialization, but not greater weapon specialization.</p>",
+			"description": "<p>You can drive your allies into a frenzy, granting them incredible benefits. You can ignore the requirements on @UUID[Compendium.pf2e.feats-srd.vayNZR1bTzU1oUa3]{Share Rage}, using it multiple times in a Rage. Allies affected by Share Rage who accept your anathema for the duration of the Rage gain your instinct ability and the specialization ability it gains from weapon specialization, but not greater weapon specialization.</p>",
 			"prerequisites": [
 				{
 					"value": "Share Rage"
@@ -5503,7 +5537,7 @@
 		},
 		"Corpse-Killer's Defiance": {
 			"name": "Corpse-Killer's Defiance",
-			"description": "<p><strong>Trigger</strong> You destroy an undead foe.</p>\n<hr />\n<p>You defy Tar-Baphon with every undead you destroy, using your victory to rally your allies. Allies that can see you gain a +1 status bonus to attack and damage rolls against undead for 1 round, or a +2 status bonus to attack and damage rolls against undead for 2 rounds if the undead foe destroyed was a creature of your level or higher.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.ctiTtuRWFjAnWdYQ]{Effect: Corpse-Killer's Defiance (Lower Level)}</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3WzaQKb10AYLdTsQ]{Effect: Corpse-Killer's Defiance}</p>",
+			"description": "<p><strong>Trigger</strong> You destroy an undead foe.</p>\n<hr />\n<p>You defy Tar-Baphon with every undead you destroy, using your victory to rally your allies. Allies that can see you gain a +1 status bonus to attack and damage rolls against undead for 1 round, or a +2 status bonus to attack and damage rolls against undead for 2 rounds if the undead foe destroyed was a creature of your level or higher.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.3WzaQKb10AYLdTsQ]{Effect: Corpse-Killer's Defiance}</p>",
 			"prerequisites": []
 		},
 		"Corrupted Shield": {
@@ -5860,7 +5894,7 @@
 		},
 		"Crushing Grab": {
 			"name": "Crushing Grab",
-			"description": "<p>Like a powerful constrictor, you crush targets in your unyielding grasp. When you successfully @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} a creature, you can deal bludgeoning damage to that creature equal to your Strength modifier. You can make this attack nonlethal with no penalty.</p>",
+			"description": "<p>Like a powerful constrictor, you crush targets in your unyielding grasp. When you successfully @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} a creature, you can deal [[/r @actor.abilities.str.mod[bludgeoning]]]{bludgeoning damage} to that creature equal to your Strength modifier. You can make this attack nonlethal with no penalty.</p>",
 			"prerequisites": []
 		},
 		"Cryptic Spell": {
@@ -5989,6 +6023,18 @@
 				},
 				{
 					"value": "expert in a melee weapon"
+				}
+			]
+		},
+		"Cutting Flattery": {
+			"name": "Cutting Flattery",
+			"description": "<p>Repeated entries in Firebrand bragging and flyting contests have taught you how to twist pretty words into concealed insults. When you succeed at your check to @UUID[Compendium.pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{Coerce} a creature, the target's attitude toward you improves by one step, to a maximum of friendly, and they don't become unfriendly 1 day later.</p>",
+			"prerequisites": [
+				{
+					"value": "Dandy Dedication or Pirate Dedication"
+				},
+				{
+					"value": "trained in Intimidation"
 				}
 			]
 		},
@@ -6161,6 +6207,15 @@
 			"prerequisites": [
 				{
 					"value": "Pistol Phenom Dedication"
+				}
+			]
+		},
+		"Dazzling Display": {
+			"name": "Dazzling Display",
+			"description": "<p>You perform a bewildering show of prowess, such as by whirling and flashing a weapon, that unnerves foes. Attempt Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} each enemy within 30 feet. If your last action was a critical hit against an enemy or reduced an enemy to 0 Hit Points, you gain a +1 circumstance bonus to your Intimidation checks. Regardless of the results of your checks, each creature is then temporarily immune to Dazzling Display for 1 minute.</p>",
+			"prerequisites": [
+				{
+					"value": "expert in Intimidation"
 				}
 			]
 		},
@@ -6601,6 +6656,15 @@
 			"description": "<p>When you compound @UUID[Compendium.pf2e.classfeatures.LzYi0OuOoypNb6jd]{Panache} with even more derring-do, it somehow tends to work out.</p>\n<p>When you already have panache, you can roll twice and use the higher result on checks to which the circumstance bonus for having panache applies (@UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Tumble Through} and any skill actions listed in your swashbuckler's style).</p>",
 			"prerequisites": []
 		},
+		"Dervin's Dazzling Diversion": {
+			"name": "Dervin's Dazzling Diversion",
+			"description": "<p>Devrin Arlos has a habit of using whatever is at hand to temporarily blind others in combat. Copying his technique, you make use of your cloak, the light reflecting from your weapon, a handful of flower petals, or some other physical distraction as part of your feint, leaving your opponent unable to see for a moment. When you successfully @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feint} a creature, it becomes @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} until the end of your turn. If you critically succeed, the creature is dazzled until the start of your next turn. The creature can use an Interaction to remove the dazzled condition. As normal, you can dazzle only creatures that use vision or a similar sense, as determined by the GM.</p>",
+			"prerequisites": [
+				{
+					"value": "trained in Deception"
+				}
+			]
+		},
 		"Desiccating Inhalation": {
 			"name": "Desiccating Inhalation",
 			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You draw in the moisture from nearby creatures, draining them dry to heal your wounds. Creatures in a @Template[type:cone|distance:30] take [[/r 6d8[negative]]] negative damage, with a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] save against your class DC. A creature that critically fails this saving throw is also @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}. As long as at least one creature was damaged by your Desiccating Inhalation, you regain HP equal to your level.</p>\n<p>At 14th level and every 2 levels thereafter, the damage increases by 1d8. [[/r floor(@actor.level/2)d8[negative]]]{level based damage}</p>",
@@ -6737,6 +6801,18 @@
 			"name": "Devoted Guardian",
 			"description": "<p><strong>Requirements</strong> Your last action was to Raise a Shield.</p>\n<hr />\n<p>You adopt a wide stance, ready to defend both yourself and your chosen ward. Select one adjacent creature. As long as your shield is raised and the creature remains adjacent to you, the creature gains a +1 circumstance bonus to their AC, or a +2 circumstance bonus if the shield you raised was a tower shield.</p>",
 			"prerequisites": []
+		},
+		"Devrin's Cunning Stance": {
+			"name": "Devrin's Cunning Stance",
+			"description": "<p>You've learned Devrin Arlos's guileful ways, and his sly teachings help you remind your allies to keep their wits about them. When you use this action, attempt a @Check[type:deception|dc:@self.level] check. The DC is usually a standard-difficulty DC of your level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.kyrvZfZfzKK1vx9b]{Stance: Devrin's Cunning Stance}</p>\n<hr />\n<p><strong>Critical Success</strong> Your marshal's aura increases to a @Template[type:emanation|distance:20], and it grants you and your allies a +1 status bonus to skill checks. When you or an ally in the aura Strike a @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} enemy, that enemy can't use reactions until the beginning of its next turn.</p>\n<p><strong>Success</strong> As critical success, but your aura's size doesn't increase.</p>\n<p><strong>Failure</strong> You fail to enter the stance.</p>\n<p><strong>Critical Failure</strong> You fail to enter the stance and can't take this action again for 1 minute.</p>",
+			"prerequisites": [
+				{
+					"value": "Marshal Dedication"
+				},
+				{
+					"value": "trained in Deception"
+				}
+			]
 		},
 		"Diabolic Certitude": {
 			"name": "Diabolic Certitude",
@@ -7726,7 +7802,7 @@
 		},
 		"Dread Marshal Stance": {
 			"name": "Dread Marshal Stance",
-			"description": "<p>Putting on a grim face for the battle ahead, you encourage your allies to strike fear into their foes with vicious attacks.</p>\n<p>When you use this action, attempt an @Check[type:intimidation|dc:@self.level] check. The DC is usually a standard-difficulty DC of your level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<hr />\n<p><strong>Critical Success</strong> Your @UUID[Compendium.pf2e.feat-effects.KBEJVRrie2JTHWIK]{Marshal's Aura} increases to a @Template[type:emanation|distance:20]{20-foot emanation}, and it grants you and allies a status bonus to damage rolls equal to the number of weapon damage dice of the unarmed attack or weapon you are wielding that has the most weapon damage dice. When you or an ally in the aura critically hits an enemy with a Strike, that enemy is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Success</strong> As critical success, but your aura's size doesn't increase.</p>\n<p><strong>Failure</strong> You fail to enter the stance.</p>\n<p><strong>Critical Failure</strong> You fail to enter the stance and can't take this action again for 1 minute.</p>",
+			"description": "<p>Putting on a grim face for the battle ahead, you encourage your allies to strike fear into their foes with vicious attacks.</p>\n<p>When you use this action, attempt an @Check[type:intimidation|dc:@self.level] check. The DC is usually a standard-difficulty DC of your level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.qX62wJzDYtNxDbFv]{Stance: Dread Marshal Stance}</p>\n<hr />\n<p><strong>Critical Success</strong> Your marshal's aura increases to a @Template[type:emanation|distance:20], and it grants you and allies a status bonus to damage rolls equal to the number of weapon damage dice of the unarmed attack or weapon you are wielding that has the most weapon damage dice. When you or an ally in the aura critically hits an enemy with a Strike, that enemy is @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Success</strong> As critical success, but your aura's size doesn't increase.</p>\n<p><strong>Failure</strong> You fail to enter the stance.</p>\n<p><strong>Critical Failure</strong> You fail to enter the stance and can't take this action again for 1 minute.</p>",
 			"prerequisites": [
 				{
 					"value": "Marshal Dedication"
@@ -10116,6 +10192,15 @@
 				}
 			]
 		},
+		"Eyes of the City": {
+			"name": "Eyes of the City",
+			"description": "<p>You can track down targets with the help of locals. You can use Diplomacy or Society, whichever you're trained in, to @UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{Track} creatures in settlements. You chat with locals to help follow the trail of creatures you Track. At the GM's discretion, there might not be enough people to speak with to keep following the trail.</p>",
+			"prerequisites": [
+				{
+					"value": "trained in Diplomacy or Society"
+				}
+			]
+		},
 		"Eyes of the Night": {
 			"name": "Eyes of the Night",
 			"description": "<p>You can see in the darkness as easily as a true vampire. You gain @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{Darkvision}.</p>\n<p><strong>Special</strong> You can select this feat only at 1st level, and you can't retrain into or out of this feat.</p>",
@@ -10448,6 +10533,18 @@
 			"prerequisites": [
 				{
 					"value": "Adhyabhau"
+				}
+			]
+		},
+		"Feeling Your Oats": {
+			"name": "Feeling Your Oats",
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p>You are incredible, impeccable, an icon of style and grace—and everyone knows it. In this moment, you are living your fantasy, and no one can shake you out of it. Roll a Deception check. You can substitute the result of your Deception check for one Will save you would be required to attempt in the next minute.</p>",
+			"prerequisites": [
+				{
+					"value": "Celebrity Dedication or Dandy Dedication"
+				},
+				{
+					"value": "trained in Deception"
 				}
 			]
 		},
@@ -10982,6 +11079,15 @@
 			"name": "Fledgling Flight",
 			"description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p>You can fly through the air in short bursts at half your land Speed. If you don't end your movement on solid ground, you fall at the end of your turn.</p>",
 			"prerequisites": []
+		},
+		"Fleeing Diversion": {
+			"name": "Fleeing Diversion",
+			"description": "<p>You are quick to capitalize on your distractions. If you critically succeed at your check to @UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{Create a Diversion} against the majority of the creatures (at least half of the creatures) whose attention you're trying to divert, you can use your reaction to immediately @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}, @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak}, or Step. As normal, you are only @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to creatures against which you succeed on your check to @UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{Create a Diversion}, even if you manage to Hide or Sneak away.</p>",
+			"prerequisites": [
+				{
+					"value": "expert in Deception"
+				}
+			]
 		},
 		"Fleet": {
 			"name": "Fleet",
@@ -11664,7 +11770,7 @@
 		},
 		"Furious Grab": {
 			"name": "Furious Grab",
-			"description": "<p><strong>Requirements</strong> Your last action was a successful Strike, and either you have a hand free or your Strike used a grapple weapon.</p>\n<hr />\n<p>You grab your foe while it's distracted by your attack. The foe you hit becomes grabbed, as if you had succeeded at an Athletics check to Grapple the foe.</p>",
+			"description": "<p><strong>Requirements</strong> Your last action was a successful Strike, and either you have a hand free or your Strike used a grapple weapon.</p>\n<hr />\n<p>You grab your foe while it's distracted by your attack. The foe you hit becomes @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}, as if you had succeeded at an Athletics check to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} the foe.</p>",
 			"prerequisites": []
 		},
 		"Furious Sprint": {
@@ -11978,7 +12084,7 @@
 		},
 		"Ghost Wrangler": {
 			"name": "Ghost Wrangler",
-			"description": "<p>Spirits around you coalesce upon your fists, enabling you to seize and harm other ghosts and spirits. Until the beginning of your next turn, your fists gain the effects of the ghost touch property rune, and you can make Strength-based skill checks against incorporeal creatures.</p>",
+			"description": "<p>Spirits around you coalesce upon your fists, enabling you to seize and harm other ghosts and spirits. Until the beginning of your next turn, your fists gain the effects of the ghost touch property rune, and you can make Strength-based skill checks against incorporeal creatures.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.SiegLMJpVOGuoyWJ]{Effect: Ghost Wrangler}</p>",
 			"prerequisites": [
 				{
 					"value": "spirit instinct"
@@ -12038,7 +12144,7 @@
 		},
 		"Giant's Lunge": {
 			"name": "Giant's Lunge",
-			"description": "<p>You extend your body and prepare to attack foes outside your normal reach. Until your rage ends, all your melee weapons and unarmed attacks gain reach 10. This doesn't increase the reach of any weapon or unarmed attack that already has the reach trait, but it does combine with abilities that increase your reach due to increased size, such as Giant's Stature.</p>",
+			"description": "<p>You extend your body and prepare to attack foes outside your normal reach. Until your rage ends, all your melee weapons and unarmed attacks gain reach 10. This doesn't increase the reach of any weapon or unarmed attack that already has the reach trait, but it does combine with abilities that increase your reach due to increased size, such as Giant's Stature.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.N2CSGvtPXloOEPrK]{Effect: Giant's Lunge}</p>",
 			"prerequisites": [
 				{
 					"value": "giant instinct"
@@ -12047,7 +12153,7 @@
 		},
 		"Giant's Stature": {
 			"name": "Giant's Stature",
-			"description": "<p><strong>Requirements</strong> You are Medium or smaller.</p>\n<hr />\n<p>You grow to incredible size. You become Large, increasing your reach by 5 feet and gaining the clumsy 1 condition until you stop raging. Your equipment grows with you.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.6VrKQ0PhRXuteusQ]{Effect: Giant's Stature}</p>",
+			"description": "<p><strong>Requirements</strong> You are Medium or smaller.</p>\n<hr />\n<p>You grow to incredible size. You become Large, increasing your reach by 5 feet and gaining the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} condition until you stop raging. Your equipment grows with you.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.6VrKQ0PhRXuteusQ]{Effect: Giant's Stature}</p>",
 			"prerequisites": [
 				{
 					"value": "giant instinct"
@@ -12575,7 +12681,7 @@
 		},
 		"Great Cleave": {
 			"name": "Great Cleave",
-			"description": "<p>Your fury carries your weapon through multiple foes. When you Cleave, if your Strike also kills or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock a creature unconscious, or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first.</p>",
+			"description": "<p>Your fury carries your weapon through multiple foes. When you @UUID[Compendium.pf2e.feats-srd.GE96a0UGPYM74qjI]{Cleave}, if your Strike also kills or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock a creature unconscious, or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first.</p>",
 			"prerequisites": [
 				{
 					"value": "Cleave"
@@ -12938,6 +13044,15 @@
 				}
 			]
 		},
+		"Grudging Compliment": {
+			"name": "Grudging Compliment",
+			"description": "<p><strong>Trigger</strong> An enemy within 30 feet damages you or succeeds at a skill check.</p>\n<hr />\n<p>Every Firebrand can recognize the skill of others, but you've turned it into an art you can wield in combat. You compliment a foe's form or technique, and your unexpected praise distracts them from their surroundings. Attempt a Diplomacy check against that enemy's Will DC. Regardless of your result, they are temporarily immune to your Grudging Compliments for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The target becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} for 1 round.</p>\n<p><strong>Success</strong> The target becomes flat-footed against your attacks for 1 round.</p>",
+			"prerequisites": [
+				{
+					"value": "Celebrity Dedication"
+				}
+			]
+		},
 		"Gruesome Strike": {
 			"name": "Gruesome Strike",
 			"description": "<p><strong>Requirements</strong> Your Strikes currently deal extra damage from your champion's reaction.</p>\n<hr />\n<p>Make a Strike against the creature that triggered your champion's reaction. If you hit, the target takes double the extra damage from your reaction and must succeed at a Fortitude save against your class DC or be @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained 1}.</p>\n<p>Regardless of the result, the creature is temporarily immune to your Gruesome Strike for 24 hours.</p>",
@@ -13123,6 +13238,15 @@
 				},
 				{
 					"value": "legendary in either Arcana or Nature and master in the other"
+				}
+			]
+		},
+		"Half-Truths": {
+			"name": "Half-Truths",
+			"description": "<p>You are able to weave your words in such a way that you never use actual lies, but still mislead people to certain conclusions. You can attempt to make a @UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{Request} of a creature using Deception instead of Diplomacy. You can attempt to @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{Lie} to a creature using Diplomacy instead of Deception. If you fail your check to Lie, the creature realizes that you were twisting words to fool them without outright lying.</p>",
+			"prerequisites": [
+				{
+					"value": "expert in Deception and Diplomacy"
 				}
 			]
 		},
@@ -13601,6 +13725,15 @@
 				}
 			]
 		},
+		"Helt's Spelldance": {
+			"name": "Helt's Spelldance",
+			"description": "<p>Ranik Helt knows a special technique to hide his spells as part of a performance, and you've learned this technique. Ostentatiously performing, you move across the battlefield, taking foes aback and creating an opening for your spell. Attempt a Performance check against all observers' Perception DCs. Then, Stride once or twice. During this movement, you don't trigger reactions that are triggered by your movement from the creatures against which you succeeded on your Performance check. After your movement, you can Cast a Spell. If you used one Stride, you can cast either a 1-action or a 2-action spell; if you used two Strides, you can only cast a 1-action spell. If you critically succeed on your check against any creature, they take a –1 circumstance penalty to their saving throws against any spell you cast as part of your Helt's Spelldance due to your distracting performance. All creatures that observed you become temporarily immune to your Helt's Spelldance for 10 minutes.</p>",
+			"prerequisites": [
+				{
+					"value": "expert in Performance"
+				}
+			]
+		},
 		"Herbalist Dedication": {
 			"name": "Herbalist Dedication",
 			"description": "<p>You can create remedies and other herbal products. You gain the basic alchemy benefits, though they apply only for herbal items: alchemical items with the healing trait, plus @UUID[Compendium.pf2e.equipment-srd.ktjFOp3U0wQD9t0Z]{Antidote} and @UUID[Compendium.pf2e.equipment-srd.UqinuuCWePTYGhVO]{Antiplague}.</p>\n<p>You gain batches of infused reagents per day equal to your level or half your level if you didn't make your daily preparations in the wilderness. Your @UUID[Compendium.pf2e.classfeatures.Pe0zmIqyTBc2Td0I]{Advanced Alchemy} level for creating these is 1 and doesn't increase on its own.</p>\n<p>You become an expert in Nature and can use Nature instead of Crafting to @UUID[Compendium.pf2e.actionspf2e.rmwa3OyhTZ2i2AHl]{Craft} herbal items. You don't need to be trained in Crafting or have the @UUID[Compendium.pf2e.feats-srd.is3Oz9wt11lNq62K]{Alchemical Crafting} feat to do so, and you can use @UUID[Compendium.pf2e.equipment-srd.s1vB3HdXjMigYAnY]{Healer's Tools} instead of @UUID[Compendium.pf2e.equipment-srd.4ftXXUCBHcf4b0MH]{Alchemist's Tools}.</p>\n<p><strong>Special</strong> You can't select another dedication feat until you have gained two other feats from the @UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.Rrjz5tMJtyVEQnh8]{Herbalist} archetype.</p>",
@@ -13839,6 +13972,15 @@
 			"description": "<p>As your spell strikes a target, you plant a beacon in the target's mind that announces its presence to those nearby. Use this amp in place of a psi cantrip's normal amp entry. The amped cantrip must be one that has one or more targets and must either require a spell attack roll or have a saving throw.</p>\n<hr />\n<p><strong>Amp</strong> Choose one creature hit by the spell (if the spell has a spell attack roll) or that fails its save against the spell (if the spell requires a save). A psychic beacon emits from the creature's location, making it easier to notice the creature as the mind and attention of onlookers is subtly drawn to it. For 1 minute, if the target would be @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}, it's instead merely @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and if it would be concealed, it's no longer concealed.</p>",
 			"prerequisites": []
 		},
+		"Hook 'Em": {
+			"name": "Hook 'Em",
+			"description": "<p><strong>Requirements</strong> A rope is within your reach, or you have a rope or grappling weapon in your hand.</p>\n<hr />\n<p>The Salt Breakers learned to use whatever they could during the Vidric Revolution, and they quickly mastered the art of making a rope into a useful tool in combat. You take hold of a nearby rope, throw a rope from your hand, or fire a grappling weapon at a solid surface—and then swing up to twice your Speed. If you end your movement next to an enemy, attempt an Athletics check to @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple} that enemy, tying them up in your rope.</p>",
+			"prerequisites": [
+				{
+					"value": "Pirate Dedication"
+				}
+			]
+		},
 		"Hopping Stride": {
 			"name": "Hopping Stride",
 			"description": "<p>You've internalized the hopping gait of your vampiric forebear. Stride up to a distance equal to your Speed - 10 feet. During this Stride, instead of moving through each space normally, you hop over every other square between your starting space and your ending space. These hops aren't high enough to jump over a creature or other significant obstacle in your way, but they avoid difficult terrain, hazardous terrain, pressure plates, or hazards on the ground or up to a foot above it in the spaces you hopped over.</p>",
@@ -14043,6 +14185,15 @@
 			"description": "<p>Your ancestors spent their days cloaked and cradled in illusions, and as a result, sensing illusion magic is second nature to you. You gain a +1 circumstance bonus to both Perception checks and Will saves against illusions. When you come within 10 feet of an illusion that can be disbelieved, the GM rolls a secret check for you to disbelieve it, even if you didn't spend an action to Interact with the illusion.</p>",
 			"prerequisites": []
 		},
+		"Illusory Identity": {
+			"name": "Illusory Identity",
+			"description": "<p>There are times when skills or looks are not enough to convince someone of your identity, and you instead require adequate documentation. Replicating the methods of the Sapphire Butterfly, you've learned to use magic to forge a new identity as you need it. During your daily preparations, you can choose a blank piece of paper, journal, badge, or similar item normally used to display authority, to magically invest. You can use an Interact action to mentally outline the basic information that is displayed when that item is presented to another creature, such as a name, a title, connection to an existing group or agency, and other basic details. A more complex outline requires more time, at the GM's discretion. That creature must attempt a @Check[type:will|dc:resolve(@actor.skills.deception.dc.value)] save against your Deception DC. This item only works while you are holding it and appears blank if anyone else attempts to use it, though you can include others within the details of your outline.</p>\n<hr />\n<p><strong>Critical Success</strong> The target sees the item as being entirely blank, and becomes immune to this effect until your next daily preparations.</p>\n<p><strong>Success</strong> The target sees only the basic information listed out in a simplistic manner, as described in the Interact action. Though not fully convinced, the target plays along, but this worsens the target's attitude toward you by one step.</p>\n<p><strong>Failure</strong> The target sees the information presented by the item in the proper format relevant to your situation, with the appropriate language, names, dates, signatures, and other details.</p>\n<p><strong>Critical Failure</strong> The target sees the information presented by the item as granting a higher level of authority than anticipated, and immediately treats you with the proper deference. As failure, and the target's attitude toward you immediately improves by one step.</p>",
+			"prerequisites": [
+				{
+					"value": "Alter Ego Dedication"
+				}
+			]
+		},
 		"Ilverani Purist": {
 			"name": "Ilverani Purist",
 			"description": "<p>All twilight speakers are trained to resist the alluring customs of younger peoples, but you have made it your mandate to keep the Ilverani way unchanged. Such dedication has given you a trained eye for subtlety and deception. When you attempt to @UUID[Compendium.pf2e.actionspf2e.1xRFPTFtWtGJ9ELw]{Sense the Motive} of a non-elf humanoid creature and you roll a critical failure, you fail instead.</p>",
@@ -14086,7 +14237,7 @@
 		},
 		"Impaling Thrust": {
 			"name": "Impaling Thrust",
-			"description": "<p><strong>Requirements</strong> You are wielding a melee weapon that deals piercing damage.</p>\n<hr />\n<p>You impale your enemy and hold them in place with your weapon.</p>\n<p>Make a melee Strike with the required weapon. If the Strike hits and deals damage, your target is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until they successfully @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}, you attack with the required weapon, or you @UUID[Compendium.pf2e.actionspf2e.wQYmDStjdjn0I26t]{Release} the required weapon, whichever comes first.</p>\n<p>When the target is no longer grabbed, they take @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Bleed Damage} equal to the number of weapon damage dice.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding a melee weapon that deals piercing damage.</p>\n<hr />\n<p>You impale your enemy and hold them in place with your weapon. Make a melee Strike with the required weapon. If the Strike hits and deals damage, your target is @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed} until they successfully @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape}, you attack with the required weapon, or you Release the required weapon, whichever comes first. When the target is no longer grabbed, they take persistent bleed damage equal to the number of weapon damage dice.</p>",
 			"prerequisites": []
 		},
 		"Impassable Wall Stance": {
@@ -14751,7 +14902,7 @@
 		},
 		"Inner Fire (Monk)": {
 			"name": "Inner Fire (Monk)",
-			"description": "<p>While you're in Stoked Flame Stance, you have cold and fire resistance equal to half your level, and any creature that hits you with an unarmed attack, tries to Grab or Grapple you, or otherwise touches you takes fire damage equal to your Wisdom modifier (minimum 1). A creature can take this damage no more than once per turn.</p>",
+			"description": "<p>While you're in Stoked Flame Stance, you have cold and fire resistance equal to half your level, and any creature that hits you with an unarmed attack, tries to Grab or Grapple you, or otherwise touches you takes [[/r @actor.abilities.wis.mod[fire]]]{fire damage} equal to your Wisdom modifier (minimum 1). A creature can take this damage no more than once per turn.</p>",
 			"prerequisites": [
 				{
 					"value": "Stoked Flame Stance"
@@ -14865,7 +15016,7 @@
 		},
 		"Inspiring Marshal Stance": {
 			"name": "Inspiring Marshal Stance",
-			"description": "<p>You become a brilliant example of dedication and poise in battle, encouraging your allies to follow suit.</p>\n<p>When you spend this action, attempt a @Check[type:diplomacy|dc:@self.level] check. The DC is usually a standard-difficulty DC of your level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<hr />\n<p><strong>Critical Success</strong> Your @UUID[Compendium.pf2e.feat-effects.kzEPq4aczYb6OD2h]{Marshal's Aura} increases to a @Template[type:emanation|distance:20] and grants you and allies a +1 status bonus to attack rolls and saves against mental effects.</p>\n<p><strong>Success</strong> As critical success, but your aura's size doesn't increase.</p>\n<p><strong>Failure</strong> You fail to enter the stance.</p>\n<p><strong>Critical Failure</strong> You fail to enter the stance and can't take this action again for 1 minute.</p>",
+			"description": "<p>You become a brilliant example of dedication and poise in battle, encouraging your allies to follow suit.</p>\n<p>When you spend this action, attempt a @Check[type:diplomacy|dc:@self.level] check. The DC is usually a standard-difficulty DC of your level, but the GM can assign a different DC based on the circumstances. The effect depends on the result of your check.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.er5tvDNvpbcnlbHQ]{Stance: Inspiring Marshal Stance}</p>\n<hr />\n<p><strong>Critical Success</strong> Your marshal's aura increases to a @Template[type:emanation|distance:20] and grants you and allies a +1 status bonus to attack rolls and saves against mental effects.</p>\n<p><strong>Success</strong> As critical success, but your aura's size doesn't increase.</p>\n<p><strong>Failure</strong> You fail to enter the stance.</p>\n<p><strong>Critical Failure</strong> You fail to enter the stance and can't take this action again for 1 minute.</p>",
 			"prerequisites": [
 				{
 					"value": "Marshal Dedication"
@@ -15357,6 +15508,15 @@
 			"description": "<p>You make the most of your iruxi unarmed attacks. Whenever you score a critical hit with a claw or an unarmed attack you gained from a lizardfolk ancestry feat, you apply the unarmed attack's critical specialization effect.</p>",
 			"prerequisites": []
 		},
+		"It Was Me All Along!": {
+			"name": "It Was Me All Along!",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Requirements</strong> Your identity is @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden}, either by magic or a disguise.</p>\n<hr />\n<p>You discard a disguise and dramatically reveal your true identity, catching your foes off guard. If you created your disguise using magic such as with <em>@UUID[Compendium.pf2e.spells-srd.2qGqa33E4GPUCbMV]{Humanoid Form}</em> or <em>@UUID[Compendium.pf2e.spells-srd.i35dpZFI7jZcRoBo]{Illusory Disguise}</em>, you immediately Dismiss the spell as a free action. Stride up to your speed and attempt a Deception check to @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feint} one target within 30 feet. If you succeed, you roll twice and take the better result on your first attack roll against that target this turn.</p>",
+			"prerequisites": [
+				{
+					"value": "Alter Ego Dedication or Vigilante Dedication"
+				}
+			]
+		},
 		"It's Alive!": {
 			"name": "It's Alive!",
 			"description": "<p>You've mastered the use of electrical energy to power your clockwork creations. Whenever your construct companion takes electricity damage, it gains temporary Hit Points equal to either half the electricity damage it took or your level, whichever is lower. These temporary Hit Points last for up to 1 minute.</p>",
@@ -15752,7 +15912,7 @@
 		},
 		"Knockback": {
 			"name": "Knockback",
-			"description": "<p><strong>Requirements</strong> Your last action was a successful Strike</p>\n<hr />\n<p>The weight of your swing drives your enemy back. You push the foe back 5 feet, with the effects of a successful Shove. You can follow the foe as normal for a successful Shove.</p>",
+			"description": "<p><strong>Requirements</strong> Your last action was a successful Strike</p>\n<hr />\n<p>The weight of your swing drives your enemy back. You push the foe back 5 feet, with the effects of a successful @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}. You can follow the foe as normal for a successful Shove.</p>",
 			"prerequisites": []
 		},
 		"Knockback Strike": {
@@ -16575,6 +16735,15 @@
 			"prerequisites": [
 				{
 					"value": "Artillerist Dedication"
+				}
+			]
+		},
+		"Living for the Applause": {
+			"name": "Living for the Applause",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You would be reduced to 0 Hit Points (but not immediately killed) during a combat encounter that has spectators.</p>\n<hr />\n<p>Nothing can stop you as long as you have an audience cheering you on. The attention reinvigorates you and keeps you from being knocked out. You remain at 1 Hit Point, and your @UUID[Compendium.pf2e.conditionitems.Yl48xTdMh3aeQYL2]{Wounded} condition increases by 1.</p>\n<p>In addition, attempt a @Check[type:performance|dc:@self.dc] check; the DC is determined by the GM but is typically the standard DC for your level or the DC to @UUID[Compendium.pf2e.actionspf2e.OX4fy22hQgUHDr0q]{Make an Impression} on the spectators, whichever is higher. On a success, the crowd erupts in applause and cheers at your comeback, much to the dismay of your enemies. Concern for the crowd's reaction should your opponent deliver a finishing blow gives you a +1 circumstance bonus to AC until the end of your next turn. On a critical success, you don't expend your daily use of Living for the Applause and can use the reaction an additional time on the same day.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.YMdRmEcOlM3uU9Em]{Effect: Living for the Applause}</p>",
+			"prerequisites": [
+				{
+					"value": "Gladiator Dedication"
 				}
 			]
 		},
@@ -18221,6 +18390,15 @@
 			"description": "<p>You move in a way that denies your enemies the opportunity to retaliate. When you take a Stride action to move half your Speed or less, that movement does not trigger reactions. You can use Mobility when Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>",
 			"prerequisites": []
 		},
+		"Mockingbird's Disarm": {
+			"name": "Mockingbird's Disarm",
+			"description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You succeed at a check to @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Tumble Through} or use @UUID[Compendium.pf2e.feats-srd.jfsmtOx4QgXB19BL]{Tumbling Strike}, and you moved through an enemy's space.</p>\n<hr />\n<p>The Mockingbird is a master at running into foes and coming away with their weapons. Mimicking their skill, you strike at a foe's wrist while tumbling past them, weakening their grip. You attempt to @UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{Disarm} the enemy whose space you moved through. You can use Acrobatics instead of Athletics for this check.</p>",
+			"prerequisites": [
+				{
+					"value": "Acrobat Dedication"
+				}
+			]
+		},
 		"Moderate Enhance Venom": {
 			"name": "Moderate Enhance Venom",
 			"description": "<p>You upgrade the vishkanyan venom you can apply with @UUID[Compendium.pf2e.actionspf2e.s4V7JWSMF9JPJAeX]{Envenom} to moderate vishkanyan venom. Envenom's frequency becomes once per 10 minutes.</p>\n<p><strong>Moderate Vishkanyan Venom</strong> (level 9)</p>\n<p><strong>Frequency</strong> once per 10 minutes</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 3d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 4d6[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 5d6[poison]]] damage (1 round)</p>",
@@ -18848,6 +19026,11 @@
 			"description": "<p>The nanites in your ocular processors have adapted to darkness, enhancing your ability to see in the dark. You gain @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{Darkvision}.</p>",
 			"prerequisites": []
 		},
+		"Nightwave Springing Reload": {
+			"name": "Nightwave Springing Reload",
+			"description": "<p>Training with the crew of the Nightwave has taught you their technique for reloading while leaping to board another ship. You @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap} and then Interact to reload, or Interact to reload and then Leap. You can perform this ability as a 2-action activity to use your Leap to @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump} or @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump} without needing to Stride at least 10 feet first.</p>",
+			"prerequisites": []
+		},
 		"Nimble Crawl": {
 			"name": "Nimble Crawl",
 			"description": "<p>You can Crawl incredibly swiftly-up to half your Speed, rather than 5 feet. If you're a master in Acrobatics, you can Crawl at full Speed, and if you're legendary, you aren't flat-footed while prone.</p>",
@@ -18977,7 +19160,10 @@
 			"description": "<p>Your senses gain even greater clarity. While raging, you gain @UUID[Compendium.pf2e.ancestryfeatures.HHVQDp61ehcpdiU8]{Darkvision} if you don't already have it, and the range of your imprecise scent increases to 60 feet.</p>",
 			"prerequisites": [
 				{
-					"value": "Acute Scent, or precise or imprecise scent and low-light vision"
+					"value": "Acute Scent, or precise or imprecise scent"
+				},
+				{
+					"value": "low-light vision"
 				}
 			]
 		},
@@ -19417,6 +19603,15 @@
 			"description": "<p>If the next action you take is to Manifest your Eidolon as a three-action activity, or to Cast a three-action summoning Spell, the creature appears in an explosion.</p>\n<p>All creatures in a @Template[type:emanation|distance:10] around the creature you summoned or manifested take [[/r 1d4[fire]]]{1d4 fire damage per spell level} for a summoning spell, or [[/r ((floor(@actor.level/2))d4)[fire]]]{1d4 damage per 2 levels} for Manifesting your Eidolon.</p>\n<p>If the creature you summoned or manifested has the acid, cold, electricity, fire, sonic, or water trait, the damage is that type instead (or cold damage for the water trait). If the creature has more than one of these traits, you choose which damage type to deal.</p>",
 			"prerequisites": []
 		},
+		"Ostentatious Reload": {
+			"name": "Ostentatious Reload",
+			"description": "<p><strong>Requirements</strong> You're wielding two one-handed firearms.</p>\n<hr />\n<p>Every good Firebrand knows that style can be as important as substance—so long as you don't screw up the delivery. Make a @Check[type:performance|dc:@self.level|adjustment:-2] check against an easy DC for your level as you spin your guns around and juggle ammunition to reload them.</p>\n<hr />\n<p><strong>Critical Success</strong> You Interact to reload up to two firearms you are currently wielding.</p>\n<p><strong>Success</strong> You Interact to reload a single firearm you are currently wielding.</p>\n<p><strong>Failure</strong> You drop one of the required firearms and a round of ammunition on the ground in your space.</p>\n<p><strong>Critical Failure</strong> You drop both firearms and two rounds on the ground in your space.</p>",
+			"prerequisites": [
+				{
+					"value": "trained in Performance"
+				}
+			]
+		},
 		"Otherworldly Acumen": {
 			"name": "Otherworldly Acumen",
 			"description": "<p>The arcane magic you possess grows in power and complexity. Choose one common 2nd-level spell from the same tradition as an innate spell you previously gained from another elf ancestry feat (from the arcane list if you have Otherworldly Magic, for example). You can cast that spell as an innate spell once per day, using the same tradition as the list you chose the spell from.</p>\n<p>Your magic is adaptable. By spending 1 day of downtime, you can change the spell you chose to adifferent common 2nd-level spell from the same tradition.</p>",
@@ -19470,7 +19665,7 @@
 		},
 		"Overpowering Charge": {
 			"name": "Overpowering Charge",
-			"description": "<p>You trample your foes as you charge past them.</p>\n<p>When you use @UUID[Compendium.pf2e.feats-srd.to6s7QanfhHukW5r]{Barreling Charge} and successfully move through a creature's space, that creature takes bludgeoning damage equal to your Strength modifier. If you critically succeed, the creature takes twice this amount of damage and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of your next turn.</p>",
+			"description": "<p>You trample your foes as you charge past them. When you use @UUID[Compendium.pf2e.feats-srd.to6s7QanfhHukW5r]{Barreling Charge} and successfully move through a creature's space, that creature takes [[/r @actor.abilties.str.mod[bludgeoning]]]{bludgeoning damage} equal to your Strength modifier. If you critically succeed, the creature takes [[/r 2*@actor.abilties.str.mod[bludgeoning]]]{twice this amount of damage} and becomes @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the end of your next turn.</p>",
 			"prerequisites": [
 				{
 					"value": "Barreling Charge"
@@ -19617,7 +19812,7 @@
 		},
 		"Pain Tolerance": {
 			"name": "Pain Tolerance",
-			"description": "<p><strong>Access</strong> You're from Alkenstar or the Mana Wastes.</p>\n<hr />\n<p>You gain resistance to mental damage equal to half your level and a +1 circumstance bonus to saving throws against effects that would make you clumsy, drained, or enfeebled.</p>",
+			"description": "<p><strong>Access</strong> You're from Alkenstar or the Mana Wastes.</p>\n<hr />\n<p>You gain resistance to mental damage equal to half your level and a +1 circumstance bonus to saving throws against effects that would make you @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy}, @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{Drained}, or @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled}.</p>",
 			"prerequisites": [
 				{
 					"value": "expert in Fortitude saves"
@@ -19850,7 +20045,7 @@
 		},
 		"Penetrating Projectile": {
 			"name": "Penetrating Projectile",
-			"description": "<p><strong>Requirements</strong> You are wielding a ranged or thrown weapon that deals piercing damage.</p>\n<hr />\n<p>Your projectiles are unhindered by flesh and bone. Make a ranged Strike against each creature in a @Template[type:line|distance:30]. These attacks ignore lesser cover, cover, and greater cover granted by creatures. Roll damage only once and apply it to each creature you hit.</p>\n<p>Each attack counts toward your multiple attack penalty, but don't increase your penalty until you have made all your attacks.</p>",
+			"description": "<p><strong>Requirements</strong> You are wielding a ranged or thrown weapon that deals piercing damage.</p>\n<hr />\n<p>Your projectiles are unhindered by flesh and bone. Make a ranged Strike against each creature in a @Template[type:line|distance:30]. These attacks ignore lesser cover, cover, and greater cover granted by creatures. Roll damage only once and apply it to each creature you hit. Each attack counts toward your multiple attack penalty, but don't increase your penalty until you have made all your attacks.</p>",
 			"prerequisites": []
 		},
 		"Penetrating Shot": {
@@ -21089,6 +21284,15 @@
 				}
 			]
 		},
+		"Public Execution": {
+			"name": "Public Execution",
+			"description": "<p><strong>Requirements</strong> You have designated a mark using @UUID[Compendium.pf2e.actionspf2e.orjJjLdm4XNAcFi8]{Mark for Death}.</p>\n<hr />\n<p>Some rebel Firebrand cells make a practice of publicly declaring the main target of a given operation. You announce your intention to kill your mark for all to hear and reveal the reason they must die, perhaps listing their crimes or sharing a damning secret. Creatures within 30 feet who can see and hear you are shocked by your proclamation or otherwise reluctant to come to your mark's aid. They must attempt a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] save against your class DC or spell DC, whichever is higher. On a failure, the creature can't attack you or otherwise perform hostile actions against you until the end of your next turn. If you use a hostile action against a creature other than your mark, this effect ends. Your mark becomes temporarily immune to your Public Execution for 1 day.</p>",
+			"prerequisites": [
+				{
+					"value": "Assassin Dedication"
+				}
+			]
+		},
 		"Puncturing Horn": {
 			"name": "Puncturing Horn",
 			"description": "<p>While many kashrishi never use their horns for more than cracking open hard-shelled fruits or amplifying their psychic powers, you've practiced using yours offensively. You gain a horn unarmed attack that deals 1d6 piercing damage. Your horn is in the brawling group and has the finesse and unarmed traits.</p>\n<p><strong>Special</strong> If you have the xyloshi heritage, your horn instead deals 1d8 piercing damage.</p>",
@@ -21381,6 +21585,18 @@
 				}
 			]
 		},
+		"Quick Spring": {
+			"name": "Quick Spring",
+			"description": "<p>Ishii Bunji is a skilled tumbler, and learning his technique allows you to propel yourself across the battlefield faster than your enemies can react. When you @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Tumble Through}, you Stride up to twice your Speed.</p>",
+			"prerequisites": [
+				{
+					"value": "Acrobat Dedication"
+				},
+				{
+					"value": "master in Acrobatics"
+				}
+			]
+		},
 		"Quick Squeeze": {
 			"name": "Quick Squeeze",
 			"description": "<p>You Squeeze 5 feet per round (10 feet on a critical success). If you're legendary in Acrobatics, you Squeeze at full Speed.</p>",
@@ -21628,7 +21844,7 @@
 		},
 		"Rallying Charge": {
 			"name": "Rallying Charge",
-			"description": "<p>Your fearless charge into battle reinvigorates your allies to carry on the fight.</p>\n<p>You Stride up to your Speed and make a melee Strike. If your Strike hits and damages an enemy, each ally within 60 feet who saw you hit gains temporary Hit Points equal to your Charisma modifier. These temporary Hit Points last until the start of your next turn.</p>",
+			"description": "<p>Your fearless charge into battle reinvigorates your allies to carry on the fight.</p>\n<p>You Stride up to your Speed and make a melee Strike. If your Strike hits and damages an enemy, each ally within 60 feet who saw you hit gains temporary Hit Points equal to your Charisma modifier. These temporary Hit Points last until the start of your next turn.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.wjNNHgX6ceKLbn8Q]{Effect: Rallying Charge}</p>",
 			"prerequisites": [
 				{
 					"value": "Marshal Dedication"
@@ -21992,6 +22208,15 @@
 			"description": "<p><strong>Trigger</strong> An ally within 30 feet gains the frightened condition.</p>\n<hr />\n<p>You serve as an anchor to your close companions, calming them in times of stress. Decrease the value of the triggering ally's @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} condition by 1. The ally is then temporarily immune to your Reassuring Presence for 1 hour.</p>",
 			"prerequisites": []
 		},
+		"Rebel's Map": {
+			"name": "Rebel's Map",
+			"description": "<p><strong>Trigger</strong> You roll initiative.</p>\n<hr />\n<p>Rebellions require an intricate knowledge of one's surroundings—because you might need to escape at any moment. You remember the locations of escape routes, ambush spots, and cover from a scouting expedition or a previous visit to the area. Roll a [[/r 1d20]]{d20}. At any point during the subsequent combat, you can substitute the result of this roll instead of rolling a d20 on one Deception check to @UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{Create a Diversion} or on one Stealth check to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide}.</p>",
+			"prerequisites": [
+				{
+					"value": "Horizon Walker Dedication or Scout Dedication"
+				}
+			]
+		},
 		"Rebounding Assault": {
 			"name": "Rebounding Assault",
 			"description": "<p><strong>Requirements</strong> You're wielding a loaded firearm or loaded crossbow in one hand and a bludgeoning or slashing melee weapon in the other.</p>\n<hr />\n<p>You hurl your melee weapon at an opponent, then fire a bullet into the weapon's hilt, making it deal additional damage and bounce back to your grasp. Make a thrown ranged Strike with the melee weapon, then a ranged Strike with your firearm. Both Strikes use the same multiple attack penalty. If the melee weapon doesn't already have the thrown trait, it gains the thrown 10 feet trait during a Rebounding Assault.</p>\n<p>If both attacks are successful, the bolt or bullet hits the thrown melee weapon instead of your target, adding its force into one attack. Combine the damage from both Strikes, using the thrown weapon's damage type, and add an additional 1d6 precision damage. The impact sends the melee weapon rebounding off the target and back to your hand.</p>\n<p>In any circumstance other than both attacks hitting, carry out the individual Strikes normally. The thrown weapon doesn't rebound and remains in the target's space as normal for thrown weapons.</p>",
@@ -22004,7 +22229,7 @@
 		},
 		"Reckless Abandon (Barbarian)": {
 			"name": "Reckless Abandon (Barbarian)",
-			"description": "<p><strong>Trigger</strong> Your turn begins, and you are at half or fewer Hit Points.</p>\n<hr />\n<p>Your blood boils when you take a beating, and you throw caution to the wind to finish the fight. You gain a +2 circumstance bonus to attack rolls, a -2 penalty to AC, and a -1 penalty to saves. These bonuses and penalties last until your Rage ends or until you are above half Hit Points, whichever comes first.</p>",
+			"description": "<p><strong>Trigger</strong> Your turn begins, and you are at half or fewer Hit Points.</p>\n<hr />\n<p>Your blood boils when you take a beating, and you throw caution to the wind to finish the fight. You gain a +2 circumstance bonus to attack rolls, a -2 penalty to AC, and a -1 penalty to saves. These bonuses and penalties last until your Rage ends or until you are above half Hit Points, whichever comes first.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.sfUsodcGb4atcSyN]{Effect: Reckless Abandon (Barbarian)}</p>",
 			"prerequisites": []
 		},
 		"Reckless Abandon (Goblin)": {
@@ -22946,6 +23171,18 @@
 				}
 			]
 		},
+		"Rolling Landing": {
+			"name": "Rolling Landing",
+			"description": "<p>You land with quick rolls that help you keep your momentum. If you fall and don't take damage (usually due to treating the fall as a shorter distance), you can use your reaction to immediately enter a short roll when you land and Step. If you are an expert in Acrobatics, you can use your reaction to Step or Stride up to half your Speed. If you're a master in Acrobatics, you can use your reaction to Step or Stride up to your full Speed. If you're legendary in Acrobatics, you don't trigger reactions triggered by movement when you Stride in this way.</p>",
+			"prerequisites": [
+				{
+					"value": "Cat Fall"
+				},
+				{
+					"value": "trained in Acrobatics"
+				}
+			]
+		},
 		"Root Magic": {
 			"name": "Root Magic",
 			"description": "<p>Your talismans ward against foul magic. During your daily preparations, you can assemble a small pouch with bits of herbs, hair, sacred oils, and other ritual ingredients, which you give to one ally.</p>\n<p>The first time that day the ally attempts a saving throw against a spell or haunt, they gain a +1 circumstance bonus to the roll. This bonus increases to +2 if you're an expert in Occultism or +3 if you're legendary.</p>",
@@ -23266,7 +23503,7 @@
 		},
 		"Scalding Spit": {
 			"name": "Scalding Spit",
-			"description": "<p>Your bodily fluids burn with surprising volatility, as if you ran on oil instead of blood. As long as you are taking @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, you gain a boiling spit ranged unarmed attack with a range of 30 feet that deals 1d6 fire damage.</p>",
+			"description": "<p>Your bodily fluids burn with surprising volatility, as if you ran on oil instead of blood. As long as you are taking @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Fire Damage}, you gain a boiling spit ranged unarmed attack with a range of 30 feet that deals [[/r 1d6[fire]]] damage.</p>",
 			"prerequisites": [
 				{
 					"value": "Torch Goblin"
@@ -23459,7 +23696,7 @@
 		},
 		"Scouring Rage": {
 			"name": "Scouring Rage",
-			"description": "<p><strong>Trigger</strong> You @UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{Rage}.</p>\n<hr />\n<p>You emit a powerful surge of instinctual energy when you unleash your potential. Each adjacent creature takes damage equal to your level (basic Fortitude save against your class DC) of the same type as your additional damage during that Rage.</p>",
+			"description": "<p><strong>Trigger</strong> You @UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{Rage}.</p>\n<hr />\n<p>You emit a powerful surge of instinctual energy when you unleash your potential. Each adjacent creature takes [[/r @actor.level]]{damage equal to your level} (@Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true] save against your class DC) of the same type as your additional damage during that Rage.</p>",
 			"prerequisites": [
 				{
 					"value": "an instinct that allows you to change your additional damage from Rage to a different damage type"
@@ -23628,7 +23865,7 @@
 		},
 		"Second Wind": {
 			"name": "Second Wind",
-			"description": "<p>You can enter a second rage, but afterward you need to catch your breath. You can Rage without waiting for 1 minute after the previous Rage (or 1 round, with quick rage), but when you end this second Rage, you're fatigued until you rest for 10 minutes.</p>",
+			"description": "<p>You can enter a second rage, but afterward you need to catch your breath. You can Rage without waiting for 1 minute after the previous Rage (or 1 round, with quick rage), but when you end this second Rage, you're @UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{Fatigued} until you rest for 10 minutes.</p>",
 			"prerequisites": []
 		},
 		"Secret Eater": {
@@ -24082,7 +24319,7 @@
 		},
 		"Shake it Off": {
 			"name": "Shake it Off",
-			"description": "<p>You concentrate on your rage, overcoming fear and fighting back sickness. Reduce your frightened condition value by 1, and attempt a Fortitude save to recover from the sickened condition as if you had spent an action retching; you reduce your sickened condition value by 1 on a failure (but not on a critical failure), by 2 on a success, or by 3 on a critical success.</p>",
+			"description": "<p>You concentrate on your rage, overcoming fear and fighting back sickness. Reduce your @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} condition value by 1, and attempt a Fortitude save to recover from the @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} condition as if you had spent an action retching; you reduce your sickened condition value by 1 on a failure (but not on a critical failure), by 2 on a success, or by 3 on a critical success.</p>",
 			"prerequisites": []
 		},
 		"Shall not Falter, Shall not Rout": {
@@ -24160,7 +24397,7 @@
 		},
 		"Share Rage": {
 			"name": "Share Rage",
-			"description": "<p><strong>Requirements</strong> You haven't used this ability since you last Raged.</p>\n<hr />\n<p>You stoke an ally's fury. While you are raging, one willing creature within 30 feet gains the effects of the Rage action, except it can still use concentrate actions.</p>",
+			"description": "<p><strong>Requirements</strong> You haven't used this ability since you last Raged.</p>\n<hr />\n<p>You stoke an ally's fury. While you are raging, one willing creature within 30 feet gains the effects of the @UUID[Compendium.pf2e.actionspf2e.Ah5g9pDwWF9b9VW9]{Rage} action, except it can still use concentrate actions.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RoGEt7lrCdfaueB9]{Effect: Share Rage}</p>",
 			"prerequisites": []
 		},
 		"Share Thoughts": {
@@ -24322,7 +24559,7 @@
 		},
 		"Shattering Blows": {
 			"name": "Shattering Blows",
-			"description": "<p>Your forceful blows shatter objects with ease. While you are raging, your melee @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strikes} ignore 5 points of an object's Hardness. If you have the devastator class feature, you instead ignore 10 points of an object's Hardness.</p>",
+			"description": "<p>Your forceful blows shatter objects with ease. While you are raging, your melee @UUID[Compendium.pf2e.actionspf2e.VjxZFuUXrCU94MWR]{Strikes} ignore 5 points of an object's Hardness. If you have the @UUID[Compendium.pf2e.classfeatures.VLiT503OLOM3vaDx]{Devastator} class feature, you instead ignore 10 points of an object's Hardness.</p>",
 			"prerequisites": []
 		},
 		"Shattering Shot": {
@@ -24670,6 +24907,15 @@
 				}
 			]
 		},
+		"Show-Off": {
+			"name": "Show-Off",
+			"description": "<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You succeed at an Acrobatics or Athletics check deemed suitably challenging and meaningful by the GM.</p>\n<hr />\n<p>As is the tradition with many Firebrands, you call your shot and look to impress with an extra bit of panache or a greater stunt. Attempt the triggering check again, using the second result. On a success, you gain the normal results of the check, plus you feel invigorated by your stunt and gain temporary Hit Points equal to your level (double your level on a critical success). You lose any remaining temporary Hit Points after 1 minute. Typically, a challenging task is one with at least a standard DC for your level, though the difficulty may be higher depending on the situation. A meaningful context is one where the action's success or failure is relevant to the pursuit of your goals.</p>",
+			"prerequisites": [
+				{
+					"value": "Acrobat Dedication"
+				}
+			]
+		},
 		"Showstopper": {
 			"name": "Showstopper",
 			"description": "<p>Your twirling weapons create a grand distraction that's difficult to look away from. When using Pistol Twirl to Feint, you can target all enemies within your weapon's first range increment who you can perceive and who can see you. You roll one Deception check and compare it against each target's Perception DC.</p>",
@@ -24786,7 +25032,7 @@
 		},
 		"Silencing Strike": {
 			"name": "Silencing Strike",
-			"description": "<p>A quick strike to the face or mouth silences your opponent. Make a melee Strike against a foe. The foe must succeed at a Fortitude save against your class DC.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is dazed and can barely vocalize. It's @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} and its speech is raspy and hard to understand. It must succeed at a @Check[type:flat|dc:11] to use linguistic actions or supply verbal spellcasting components until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is stunned 3 instead of stunned 1.</p>",
+			"description": "<p>A quick strike to the face or mouth silences your opponent. Make a melee Strike against a foe. The foe must succeed at a @Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)] save against your class DC.</p>\n<hr />\n<p><strong>Success</strong> The target is unaffected.</p>\n<p><strong>Failure</strong> The target is dazed and can barely vocalize. It's @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} and its speech is raspy and hard to understand. It must succeed at a @Check[type:flat|dc:11] to use linguistic actions or supply verbal spellcasting components until the end of its next turn.</p>\n<p><strong>Critical Failure</strong> As failure, but the creature is @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 3} instead of stunned 1.</p>",
 			"prerequisites": []
 		},
 		"Silent Spell": {
@@ -24918,7 +25164,7 @@
 		},
 		"Sixth Pillar Mastery": {
 			"name": "Sixth Pillar Mastery",
-			"description": "<p>Your greater discipline aligns your magical and physical potential. If your proficiency rank in unarmed attacks is at least master, your proficiency rank in spell attacks increases to master. Likewise, if your proficiency rank in spell attacks is at least master, your proficiency rank in unarmed attacks improves to master.</p>",
+			"description": "<p>You align your magical and physical potential. Whenever you succeed at an unarmed Strike against an opponent, they have a -1 status penalty to saves against your spells until the start of your next turn. Whenever you cast a spell using spell slots, you gain a +1 status bonus to attack rolls with your unarmed Strikes until the start of your next turn.</p>",
 			"prerequisites": [
 				{
 					"value": "Sixth Pillar Dedication"
@@ -25202,6 +25448,15 @@
 			"prerequisites": [
 				{
 					"value": "expert in Athletics"
+				}
+			]
+		},
+		"Slippery Prey": {
+			"name": "Slippery Prey",
+			"description": "<p>You're able to escape bonds more easily than others. When you attempt to @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escape} using Acrobatics or Athletics, you reduce the multiple attack penalty for repeated attempts to –4 and –8 if you're trained in the skill. The penalty becomes –3 and –6 if you're a master in the appropriate skill. If you're legendary in the skill, you don't take penalties for multiple Escape attempts in the same turn. Regardless of your training, your attempts to Escape still have the attack trait and incur a multiple attack penalty with other actions.</p>",
+			"prerequisites": [
+				{
+					"value": "trained in Acrobatics or Athletics"
 				}
 			]
 		},
@@ -26092,7 +26347,7 @@
 		},
 		"Spirit's Wrath": {
 			"name": "Spirit's Wrath",
-			"description": "<p>You call forth an ephemeral apparition, typically the ghost of an ancestor or a nature spirit, which takes the form of a wisp. The spirit wisp makes a melee wisp rush unarmed attack against an enemy within 120 feet of you. The wisp's attack modifier is equal to your proficiency bonus for martial weapons plus your Strength modifier plus a +2 item bonus, and it applies the same circumstance and status bonuses and penalties that you have. On a hit, the wisp deals damage equal to 4d8 plus your Constitution modifier. The damage is your choice of negative or positive damage; don't apply your Rage damage or your weapon specialization damage, but circumstance and status bonuses and penalties that would also affect the wisp's damage apply. If your wisp's Strike is a critical hit, the target becomes frightened 1. This attack uses and counts toward your multiple attack penalty as if you were the one attacking.</p>",
+			"description": "<p>You call forth an ephemeral apparition, typically the ghost of an ancestor or a nature spirit, which takes the form of a wisp. The spirit wisp makes a melee wisp rush unarmed attack against an enemy within 120 feet of you. The wisp's attack modifier is equal to your proficiency bonus for martial weapons plus your Strength modifier plus a +2 item bonus, and it applies the same circumstance and status bonuses and penalties that you have. On a hit, the wisp deals damage equal to 4d8 plus your Constitution modifier. The damage is your choice of [[/r (4d8+@actor.abilities.con.mod)[negative]]]{negative} or [[/r (4d8+@actor.abilities.con.mod)[positive]]]{positive} damage; don't apply your Rage damage or your weapon specialization damage, but circumstance and status bonuses and penalties that would also affect the wisp's damage apply. If your wisp's Strike is a critical hit, the target becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}. This attack uses and counts toward your multiple attack penalty as if you were the one attacking.</p>",
 			"prerequisites": [
 				{
 					"value": "spirit instinct"
@@ -26462,6 +26717,15 @@
 				}
 			]
 		},
+		"Statement Strut": {
+			"name": "Statement Strut",
+			"description": "<p><strong>Frequency</strong> once per 10 minutes</p>\n<hr />\n<p>You have an eye for fashion and know how to sell attitude and confidence with your walk. You Stride up to your Speed. All enemies within 30 feet of your movement are enraptured by your performance: they must succeed at a @Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)] saving throw or become unable to use reactions until the end of your next turn. The DC for this save is equal to your class DC or spell DC, whichever is higher.</p>",
+			"prerequisites": [
+				{
+					"value": "Celebrity Dedication or Dandy Dedication"
+				}
+			]
+		},
 		"Stave off Catastrophe": {
 			"name": "Stave off Catastrophe",
 			"description": "<p>You fully protect your allies from the worst blows. When you use the Shoulder Catastrophe reaction, you can choose to take the full critical damage and effects from the attack, including effects that apply on a critical hit, and have your ally take no damage and avoid the attack's effects.</p>",
@@ -26491,7 +26755,7 @@
 		},
 		"Steady Balance": {
 			"name": "Steady Balance",
-			"description": "<p>You can keep your balance easily, even in adverse conditions. Whenever you roll a success using the Balance action, you get a critical success instead. You're not flat-footed while attempting to Balance on narrow surfaces and uneven ground. Thanks to your incredible balance, you can attempt an Acrobatics check instead of a Reflex save to Grab an Edge.</p>",
+			"description": "<p>You can keep your balance easily, even in adverse conditions. Whenever you roll a success using the @UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{Balance} action, you get a critical success instead. You're not flat-footed while attempting to Balance on narrow surfaces and uneven ground. Thanks to your incredible balance, you can attempt an Acrobatics check instead of a Reflex save to @UUID[Compendium.pf2e.actionspf2e.3yoajuKjwHZ9ApUY]{Grab an Edge}.</p>",
 			"prerequisites": [
 				{
 					"value": "trained in Acrobatics"
@@ -27086,7 +27350,7 @@
 		},
 		"Sudden Leap": {
 			"name": "Sudden Leap",
-			"description": "<p>(Barbarian) You swing at a foe while mid-leap.</p>\n<p>(Fighter) You make an impressive leap and swing while you soar.</p>\n<hr />\n<p>Make a @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap}, @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump}, or @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump} and attempt one melee Strike at any point during your jump.</p>\n<p>Immediately after the Strike, you fall to the ground if you're in the air, even if you haven't reached the maximum distance of your jump. If the distance you fall is no more than the height of your jump, you take no damage and land upright.</p>\n<p>When attempting a High Jump or Long Jump during a Sudden Leap, determine the DC using the Long Jump DCs, and increase your maximum distance to double your Speed.</p>",
+			"description": "<p>(Barbarian) You swing at a foe while mid-leap.</p>\n<p>(Fighter) You make an impressive leap and swing while you soar.</p>\n<hr />\n<p>Make a @UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{Leap}, @UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{High Jump}, or @UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{Long Jump} and attempt one melee Strike at any point during your jump. Immediately after the Strike, you fall to the ground if you're in the air, even if you haven't reached the maximum distance of your jump. If the distance you fall is no more than the height of your jump, you take no damage and land upright.</p>\n<p>When attempting a High Jump or Long Jump during a Sudden Leap, determine the DC using the Long Jump DCs, and increase your maximum distance to double your Speed.</p>",
 			"prerequisites": []
 		},
 		"Sudden Mindfulness": {
@@ -27184,7 +27448,7 @@
 		},
 		"Sunder Enchantment": {
 			"name": "Sunder Enchantment",
-			"description": "<p>You can focus your superstition to break the magic of an item, in addition to destroying freestanding spells and those active on creatures.</p>\n<p>When you Sunder a Spell, you can instead attempt to counteract either an unattended magic item or one of your target's magic items. If your counteract attempt succeeds, the item becomes a mundane item of its type for 10 minutes. If you target an artifact, an intelligent item, or a particularly powerful item, your counteract attempt automatically fails.</p>",
+			"description": "<p>You can focus your superstition to break the magic of an item, in addition to destroying freestanding spells and those active on creatures. When you @UUID[Compendium.pf2e.feats-srd.8INrcMUv5vzWMG3X]{Sunder a Spell}, you can instead attempt to counteract either an unattended magic item or one of your target's magic items. If your counteract attempt succeeds, the item becomes a mundane item of its type for 10 minutes. If you target an artifact, an intelligent item, or a particularly powerful item, your counteract attempt automatically fails.</p>",
 			"prerequisites": [
 				{
 					"value": "Sunder Spell"
@@ -27193,7 +27457,7 @@
 		},
 		"Sunder Spell": {
 			"name": "Sunder Spell",
-			"description": "<p>You draw upon your superstitious fury to destroy a spell. Make a Strike with a melee weapon or an unarmed attack against a creature, object, or a spell manifestation (such as the wall created by <em>@UUID[Compendium.pf2e.spells-srd.IarZrgCeaiUqOuRu]{Wall of Fire}</em> or the guardian from <em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{Spiritual Guardian}</em>). If you're targeting something that doesn't have an AC listed, its AC is usually 10 against this Strike for targets that are very easy to hit, like a wall, or a different AC determined by the GM.</p>\n<p>If your Strike hits, you can attempt to counteract a single spell or magical effect on the target. Your counteract level for this attempt is equal to half your level rounded up, and you use the result of your attack roll for the counteract check.</p>\n<p>Whether or not you succeed at your Strike, the target becomes temporarily immune to your Sunder Spell for 24 hours.</p>",
+			"description": "<p>You draw upon your superstitious fury to destroy a spell. Make a Strike with a melee weapon or an unarmed attack against a creature, object, or a spell manifestation (such as the wall created by <em>@UUID[Compendium.pf2e.spells-srd.IarZrgCeaiUqOuRu]{Wall of Fire}</em> or the guardian from <em>@UUID[Compendium.pf2e.spells-srd.jQdm301h6e8hIY4U]{Spiritual Guardian}</em>). If you're targeting something that doesn't have an AC listed, its AC is usually 10 against this Strike for targets that are very easy to hit, like a wall, or a different AC determined by the GM. If your Strike hits, you can attempt to counteract a single spell or magical effect on the target. Your counteract level for this attempt is equal to half your level rounded up, and you use the result of your attack roll for the counteract check.</p>\n<p>Whether or not you succeed at your Strike, the target becomes temporarily immune to your Sunder Spell for 24 hours.</p>",
 			"prerequisites": [
 				{
 					"value": "superstition instinct"
@@ -28095,7 +28359,7 @@
 		},
 		"Terrifying Howl": {
 			"name": "Terrifying Howl",
-			"description": "<p>You unleash a terrifying howl. Attempt <span data-pf2-action=\"demoralize\" data-pf2-glyph=\"A\">Intimidation</span> checks to Demoralize each enemy within 30 feet. Regardless of the results of your checks, each enemy is then temporarily immune to Terrifying Howl for 1 minute.</p>",
+			"description": "<p>You unleash a terrifying howl. Attempt Intimidation checks to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} each enemy within 30 feet. Regardless of the results of your checks, each enemy is then temporarily immune to Terrifying Howl for 1 minute.</p>",
 			"prerequisites": [
 				{
 					"value": "Intimidating Glare"
@@ -28282,7 +28546,7 @@
 		},
 		"Thrash": {
 			"name": "Thrash",
-			"description": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p>You thrash the grabbed foe around. It takes bludgeoning damage equal to your Strength modifier plus your weapon specialization damage plus your Rage damage. The foe must attempt a basic Fortitude save against your class DC.</p>",
+			"description": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}</p>\n<hr />\n<p>You thrash the grabbed foe around. It takes bludgeoning damage equal to your Strength modifier plus your weapon specialization damage plus your Rage damage. The foe must attempt a @Check[type:fortitude|dc:resolve(@actor.classDCs.barbarian.dc.value)|basic:true] save against your class DC.</p>",
 			"prerequisites": []
 		},
 		"Through Spell": {
@@ -28435,7 +28699,7 @@
 		},
 		"Titan's Stature": {
 			"name": "Titan's Stature",
-			"description": "<p>You grow to even greater size. When using Giant's Stature, you can instead become Huge (increasing your reach by 10 feet if you were Medium or smaller) while you are raging. You have the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} condition as long as you are Huge.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.RcxDIOa68SUGyMun]{Effect: Titan's Stature}</p>",
+			"description": "<p>You grow to even greater size. When using @UUID[Compendium.pf2e.feats-srd.W21jKAcG0GtEtBiK]{Giant's Stature}, you can instead become Huge (increasing your reach by 10 feet if you were Medium or smaller) while you are raging. You have the @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} condition as long as you are Huge.</p>",
 			"prerequisites": [
 				{
 					"value": "giant instinct"
@@ -28578,7 +28842,7 @@
 		},
 		"Touch Focus": {
 			"name": "Touch Focus",
-			"description": "<p>You can redirect a spell's power through you to deliver it within striking distance. If your next action is to Cast a Spell with 1 or more targets and a range farther than touch, you can change the range to touch. If the altered spell requires a spell attack roll, you gain a +2 circumstance bonus to the attack. This only allows you to touch a single target with the spell, even if the spell originally affected more than 1 target. After you Cast the Spell, you can Disarm, Shove, Trip, or Strike the target with an unarmed attack.</p>",
+			"description": "<p><strong>Trigger</strong> You begin to Cast a Spell that requires a spell attack roll.</p>\n<hr />\n<p>You can redirect a spell's power through you to deliver it within striking distance. If your next action is to Cast a Spell with 1 or more targets and a range farther than touch, you change the range to touch. You gain a +2 circumstance bonus to the attack. This only allows you to touch a single target with the spell, even if the spell originally affected more than 1 target. As long as your spell attack is successful, the target is knocked @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone} in addition to the spell's normal effects.</p>",
 			"prerequisites": [
 				{
 					"value": "Sixth Pillar Dedication"
@@ -28977,6 +29241,15 @@
 				}
 			]
 		},
+		"Tumbling Theft": {
+			"name": "Tumbling Theft",
+			"description": "<p>You reach for an opponent's item as you move past a foe. If you critically succeed your check to @UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{Tumble Through} an enemy's space, you can attempt to @UUID[Compendium.pf2e.actionspf2e.RDXXE7wMrSPCLv5k]{Steal} something from the enemy as a reaction. You gain a +1 circumstance bonus to your Thievery check to Steal as your tumbling makes it difficult for your enemy to keep track of your movement. You can Steal any immediately accessible item of light or lighter Bulk on the enemy's person, such as a potion or coin purse hanging from a belt, but not anything inside a container or anything the enemy is holding. The GM has final say on what you can Steal.</p>",
+			"prerequisites": [
+				{
+					"value": "expert in Acrobatics and Thievery"
+				}
+			]
+		},
 		"Tunneling Claws": {
 			"name": "Tunneling Claws",
 			"description": "<p>You have elongated claws and enhanced senses, making you uncanny at digging the underground passageways needed to construct ghoul warrens and rob graves without arousing suspicion. You gain a burrow Speed of 15 feet and a tremorsense (imprecise) of 60 feet. You can @UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{Burrow} through any earthen matter, including rock, while moving at your full burrow Speed. When you move in this way, you can choose either to leave tunnels behind you that are large enough to allow creatures of your size or smaller to move through them or move through the ground while leaving no tunnels or signs of your passing.</p>",
@@ -29044,6 +29317,15 @@
 			"name": "Tusks (Orc)",
 			"description": "<p>You have particularly long, jagged tusks perfect for tearing meat from bone. You gain a tusks unarmed attack that deals [[/r 1d6[piercing]]] damage. Your tusks are in the brawling group and have the finesse and unarmed traits.</p>\n<p><strong>Special</strong> You can take this feat only at 1st level, and you can't retrain into this feat. You can retrain out of this feat only through drastic measures such as breaking or filing your tusks.</p>",
 			"prerequisites": []
+		},
+		"Tut-Tut": {
+			"name": "Tut-Tut",
+			"description": "<p><strong>Trigger</strong> You hit a creature with a melee attack roll.</p>\n<hr />\n<p>The Sapphire Butterfly is not one for violence when simply intimidating a foe will do. From that vigilante's techniques, you've learned how to pull a deadly blow at the last moment, threatening your target instead of striking them. Rather than dealing damage with the triggering Strike, attempt an Intimidation check with a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} all enemies within 30 feet who can see you. If you critically succeed at your check to Demoralize the target of your Strike, their attitude toward you improves by one step while they also become @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>",
+			"prerequisites": [
+				{
+					"value": "Dandy Dedication or Duelist Dedication"
+				}
+			]
 		},
 		"Tweak Appearances": {
 			"name": "Tweak Appearances",
@@ -29268,7 +29550,7 @@
 		},
 		"Unbalancing Sweep": {
 			"name": "Unbalancing Sweep",
-			"description": "<p>You make a great sweep about yourself, knocking creatures off their feet and away from you. Choose up to three adjacent foes and choose whether to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} all three of them.</p>\n<p>Whichever of the two options you choose, roll a separate Athletics check against each foe, performing the same action against each foe. Each attempt counts toward your multiple attack penalty, but don't increase your penalty until you have made all the attempts.</p>",
+			"description": "<p>You make a great sweep about yourself, knocking creatures off their feet and away from you. Choose up to three adjacent foes and choose whether to @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove} or @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} all three of them. Whichever of the two options you choose, roll a separate Athletics check against each foe, performing the same action against each foe. Each attempt counts toward your multiple attack penalty, but don't increase your penalty until you have made all the attempts.</p>",
 			"prerequisites": []
 		},
 		"Unbelievable Escape": {
@@ -29951,7 +30233,7 @@
 		},
 		"Vengeful Strike": {
 			"name": "Vengeful Strike",
-			"description": "<p><strong>Trigger</strong> A creature within your reach succeeds or critically succeeds at an attack against you.</p>\n<p><strong>Requirements</strong> You're under the effect of Come and Get Me</p>\n<hr />\n<p>When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
+			"description": "<p><strong>Trigger</strong> A creature within your reach succeeds or critically succeeds at an attack against you.</p>\n<p><strong>Requirements</strong> You're under the effect of @UUID[Compendium.pf2e.feats-srd.Z9gzWFk3qom2z904]{Come and Get Me}</p>\n<hr />\n<p>When struck by an enemy, you respond in turn. Make a melee Strike against the triggering creature. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>",
 			"prerequisites": [
 				{
 					"value": "Come and Get Me"
@@ -30665,6 +30947,15 @@
 				}
 			]
 		},
+		"Watch This!": {
+			"name": "Watch This!",
+			"description": "<p><strong>Trigger</strong> An ally misses or critically misses an enemy you can see with their attack.</p>\n<hr />\n<p>A common saying among Firebrands is, \"There's always a fool who thinks they can do it better—and they're often right.\" You verbally commit to using an action on your next turn to make a melee Strike against the same enemy your ally has missed. If your attack hits, you deal additional damage equal to twice the number of damage dice.</p>",
+			"prerequisites": [
+				{
+					"value": "Duelist Dedication or Pirate Dedication"
+				}
+			]
+		},
 		"Watch Your Back": {
 			"name": "Watch Your Back",
 			"description": "<p>You menace the target, stoking their fears and drawing their attention.</p>\n<p>Attempt an Intimidation check against the Will DC of a target within 30 feet. If you succeed, for 1 minute, that target gains a +2 status bonus to Perception checks against you, but they take a -2 status penalty to Will saves against fear effects.</p>",
@@ -30779,6 +31070,18 @@
 			"name": "We March On",
 			"description": "<p>You make sure that your allies push themselves while traveling. You gain the @UUID[Compendium.pf2e.feats-srd.5ZsmRm7HvFAw2XDZ]{Caravan Leader} and @UUID[Compendium.pf2e.feats-srd.38uOVS8fLZxraUrg]{Pick Up The Pace} general feats, even if you don't meet the prerequisites.</p>",
 			"prerequisites": []
+		},
+		"We're on the List": {
+			"name": "We're on the List",
+			"description": "<p><strong>Trigger</strong> An ally you can see and hear is about to attempt a Deception check to @UUID[Compendium.pf2e.actionspf2e.AJstokjdG6iDjVjE]{Impersonate} someone or @UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{Lie}.</p>\n<hr />\n<p>Emulating Shensen whenever she arrives at a show, you share your knowledge of the region and drop a few important local names to make a good impression and help your allies do the same. Attempt a Society check to Aid your ally. If you succeed, you recall a few specific details about local culture and personalities to help support your ally's deception. In addition to the benefits of your Aid, the triggering ally rolls their Deception check twice and takes the better result. This is a fortune effect.</p>",
+			"prerequisites": [
+				{
+					"value": "Alter Ego Dedication or Archaeologist Dedication"
+				},
+				{
+					"value": "trained in Society"
+				}
+			]
 		},
 		"Weapon Improviser Dedication": {
 			"name": "Weapon Improviser Dedication",
@@ -30965,7 +31268,7 @@
 		},
 		"Whirlwind Toss": {
 			"name": "Whirlwind Toss",
-			"description": "<p><strong>Requirements</strong> You have a foe grabbed.</p>\n<p>You whirl a foe to smash into all nearby creatures before throwing them far away in imitation of the techniques of your rival, Ran-To. You Thrash. During this Thrash, your @UUID[Compendium.pf2e.feats-srd.WY7CjISdz6uwXwIb]{Collateral Thrash} feat applies to all foes adjacent to you. You can then throw the grabbed creature 10 feet, where they fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p>If the foe you choose for Collateral Thrash is also adjacent to you, they attempt only one save and take the damage only once.</p>",
+			"description": "<p><strong>Requirements</strong> You have a foe @UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{Grabbed}.</p>\n<hr />\n<p>You whirl a foe to smash into all nearby creatures before throwing them far away in imitation of the techniques of your rival, Ran-To. You @UUID[Compendium.pf2e.feats-srd.rMPL11JRcmlutvRi]{Thrash}. During this Thrash, your @UUID[Compendium.pf2e.feats-srd.WY7CjISdz6uwXwIb]{Collateral Thrash} feat applies to all foes adjacent to you. You can then throw the grabbed creature 10 feet, where they fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{Prone}.</p>\n<p>If the foe you choose for Collateral Thrash is also adjacent to you, they attempt only one save and take the damage only once.</p>",
 			"prerequisites": [
 				{
 					"value": "Collateral Thrash"
@@ -31412,6 +31715,15 @@
 			"name": "You Failed to Account For... This!",
 			"description": "<p><strong>Trigger</strong> A creature you can see targets you with an attack against your AC.</p>\n<hr />\n<p>When your foes try to attack you, you always seem to have some outlandish invention you can pull out at the last second to protect you from whatever attack they throw at you. Describe a device you're attempting to use to protect yourself from the foe's attack-for instance, when attacked by a shocker lizard's shock Strike, you might pull out a specially grounded lightning rod from that time you tried to power an invention by harnessing a thunderstorm! Using an invention to defend in this way means that the attack roll for the triggering attack targets your Crafting DC instead of your AC.</p>\n<p>Since you're using your Crafting DC instead of your AC, any penalties to your AC don't apply, but this doesn't remove any conditions or other effects that are causing you such penalties. For instance, if you were @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} and used an invention to defend against a sneak attack, you'd still take the extra precision damage if you were hit, even though the -2 penalty to AC from being flat-footed wouldn't apply to your Crafting DC.</p>",
 			"prerequisites": []
+		},
+		"You're an Embarrassment": {
+			"name": "You're an Embarrassment",
+			"description": "<p><strong>Trigger</strong> An ally within 30 feet fails a Will saving throw against an incapacitation effect.</p>\n<hr />\n<p>Some Firebrands can't stand it when their allies are ruining their moment, and you're no different. Your loud and forceful condemnation of an ally succumbing to an incapacitation effect gives them a second chance to impress you and shake off the effect. Your ally rerolls the triggering Will saving throw with a +1 circumstance bonus. Regardless of the result of the save, your ally is temporarily immune to You're an Embarrassment! for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.zUvicEXd4OgCZ1cO]{Effect: You're an Embarrassment}</p>",
+			"prerequisites": [
+				{
+					"value": "Celebrity Archetype"
+				}
+			]
 		},
 		"You're Next": {
 			"name": "You're Next",
