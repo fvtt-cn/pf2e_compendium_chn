@@ -2159,7 +2159,7 @@
         },
         "Holy Cascade": {
             "name": "圣水喷泻 Holy Cascade",
-            "description": "<p>你唤来神圣能量来增强一剂圣水，将其射出到惊人的距离。它会产生剧烈的爆炸，产生的水的喷流对区域内的生物造成3d6钝击伤害。该水对不死生物造成额外6d6正能量伤害，对魔族造成额外6d6善良伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该钝击伤害增加1d6，并且额外正能量和善良伤害增加2d6。</p>",
+            "description": "<p>你唤来神圣能量来增强一剂圣水，将其射出到惊人的距离。它会产生剧烈的爆炸，产生的水的喷流对区域内的生物造成3d6钝击伤害。该水对不死生物造成额外6d6正能量伤害，对魔族造成额外6d6善良伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该钝击伤害增加1d6，并且额外正能量和善良伤害增加2d6。</p>\n<p>[[/r ((@item.level*2)-2)d6[positive]]]{根据等级计算的正能量伤害}</p>\n<p>[[/r ((@item.level*2)-2)d6[good]]]{根据等级计算的善良伤害}</p>",
             "range": "500尺"
         },
         "Lay on Hands": {
@@ -2872,7 +2872,7 @@
         },
         "Phantom Pain": {
             "name": "幻痛术 Phantom Pain",
-            "description": "<p>幻觉疼痛折磨目标，造成2d4心灵伤害和[[/r 1d4[persistent,mental]]]伤害。目标必须尝试一次意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受完整的初始伤害，但不承受 @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续心灵伤害}，并且法术立即结束。</p>\n<p><strong>失败</strong> 目标承受完成初始和持续伤害，并且目标获得 @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。如果目标从恶心中恢复，持续伤害结束，该法术也结束。</p>\n<p><strong>大失败</strong> 如同失败，但目标获得 @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d4，持续伤害增加1d4。</p>",
+            "description": "<p>幻觉疼痛折磨目标，造成2d4心灵伤害和1d4持续心灵伤害。目标必须尝试一次意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受完整的初始伤害，但不承受持续伤害，并且法术立即结束。</p>\n<p><strong>失败</strong> 目标承受完成初始和持续伤害，并且目标获得 @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。如果目标从恶心中恢复，持续伤害结束，该法术也结束。</p>\n<p><strong>大失败</strong> 如同失败，但目标获得 @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加2d4，持续伤害增加1d4。</p>",
             "target": "一个生物",
             "range": "30尺",
             "duration": "1分钟"
@@ -3161,7 +3161,7 @@
         },
         "Shadow Jump": {
             "name": "影跃 Shadow Jump",
-            "description": "<p>你瞬间从一片阴影传送到另一片阴影中。你和你所穿戴及所持的物品立刻 <em>@UUID[Compendium.pf2e.spells-srd.69L70wKfGDY66Mk9]{传送 Teleport}</em> 到你能看到的另一个位于法术范围内，有足够空间容纳你昏暗或黑暗光照条件的区域中。你可以以本法术传送你的魔宠，但尝试用影跃传送任何其他生物——即使该生物身处一个你携带着的异次元空间中——会导致法术失败。</p>\n<hr />\n<p><strong>升阶 (8环级)</strong> 当你到达传送目的地时，你获得@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}状态，直到你的下回合开始或是你离开昏暗或黑暗光照条件的区域，取其先者发生。你的隐形是一个幻术效果。</p>",
+            "description": "<p>你瞬间从一片阴影传送到另一片阴影中。你和你所穿戴及所持的物品立刻传送到你能看到的另一个位于法术范围内，有足够空间容纳你昏暗或黑暗光照条件的区域中。你可以以本法术传送你的魔宠，但尝试用影跃传送任何其他生物——即使该生物身处一个你携带着的异次元空间中——会导致法术失败。</p>\n<hr />\n<p><strong>升阶 (8环级)</strong> 当你到达传送目的地时，你获得@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}状态，直到你的下回合开始或是你离开昏暗或黑暗光照条件的区域，取其先者发生。你的隐形是一个幻术效果。</p>",
             "range": "120尺"
         },
         "Day's Weight": {
@@ -5421,7 +5421,7 @@
         },
         "Shocking Grasp": {
             "name": "电爪 Shocking Grasp",
-            "description": "<p>你用闪烁的雷电围绕住你的手掌。尝试一次近战法术攻击骰。命中时，目标承受2d12电击伤害。如果目标正穿戴金属护甲或者由金属组成，你在电爪的攻击骰上获得+1环境加值，并且目标在命中时承受[[/r 1d4[persistent,electricity]]]伤害。在重击时，伤害翻倍，但 @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续伤害}不翻倍。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d12，该持续电击伤害增加1。</p>",
+            "description": "<p>你用闪烁的雷电围绕住你的手掌。尝试一次近战法术攻击骰。命中时，目标承受2d12电击伤害。如果目标正穿戴金属护甲或者由金属组成，你在电爪的攻击骰上获得+1环境加值，并且目标在命中时承受1d4持续电击伤害。在重击时，伤害翻倍，但持续伤害不翻倍。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 该伤害增加1d12，该持续电击伤害增加1。</p>\n<p>[[/r (1d4+(@item.level)-1)[persistent,electricity]]]{根据等级计算的持续电击伤害}</p>",
             "target": "一个生物",
             "range": "接触"
         },
@@ -5628,7 +5628,7 @@
         },
         "Stoneskin": {
             "name": "石肤术 Stoneskin",
-            "description": "<p>目标的皮肤如岩石般坚硬。它获得对物理伤害的抗力5，除了精金。每当目标被钝击，穿刺或者挥砍攻击命中时，石肤术的持续时间减少1轮。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 该抗力提高到10。</p>\n<p><strong>升阶 (8环级)</strong> 该抗力提高到15。</p>\n<p><strong>升阶 (10环级)</strong> 该抗力提高到20。</p>",
+            "description": "<p>目标的皮肤如岩石般坚硬。它获得对物理伤害的抗力5，除了精金。每当目标被钝击，穿刺或者挥砍攻击命中时，石肤术的持续时间减少1轮。</p>\n<hr />\n<p><strong>升阶 (6环级)</strong> 该抗力提高到10。</p>\n<p><strong>升阶 (8环级)</strong> 该抗力提高到15。</p>\n<p><strong>升阶 (10环级)</strong> 该抗力提高到20。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.JHpYudY14g0H4VWU]{法术效果：石肤术}</p>",
             "target": "一个生物",
             "range": "接触",
             "duration": "20分钟"
@@ -7131,7 +7131,7 @@
         },
         "Grim Tendrils": {
             "name": "邪影触须 Grim Tendrils",
-            "description": "<p>由黑暗组成的触须从你的指尖喷涌而出。你对在射线上的活物造成2d4负能量伤害和[[/r 1[bleed]]]伤害。每个射线上的活物必须尝试一次强韧豁免。</p>\n<hr /><strong>大成功</strong> 该生物不受影响。\n<p><strong>成功</strong> 该生物承受一半负能量伤害，并且不受持续流血伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害。</p>\n<p><strong>大失败</strong> 该生物承受双倍负能量伤害和双倍持续流血伤害。</p>\n<hr /><strong>升阶 (+1)</strong> 该负能量伤害增加2d4，持续流血伤害增加1。"
+            "description": "<p>由黑暗组成的触须从你的指尖喷涌而出。你对在射线上的活物造成2d4负能量伤害和1点持续流血伤害。每个射线上的活物必须尝试一次强韧豁免。</p>\n<hr /><strong>大成功</strong> 该生物不受影响。\n<p><strong>成功</strong> 该生物承受一半负能量伤害，并且不受持续流血伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害。</p>\n<p><strong>大失败</strong> 该生物承受双倍负能量伤害和双倍持续流血伤害。</p>\n<hr /><strong>升阶 (+1)</strong> 该负能量伤害增加2d4，持续流血伤害增加1。"
         },
         "Evil Eye": {
             "name": "邪眼 Evil Eye",
