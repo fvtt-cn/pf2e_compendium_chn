@@ -105,6 +105,10 @@
 			"name": "Bend Time",
 			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> Your turn begins</p>\n<hr />\n<p><strong>Effect</strong> You are @UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{Quickened} this turn. You can use your extra action to Stride.</p>"
 		},
+		"Bestial Clarity": {
+			"name": "Bestial Clarity",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You fail a saving throw against an enchantment effect</p>\n<hr />\n<p><strong>Effect</strong> Your bestial manifestation becomes more pronounced, and your mind gains a flash of clarity as your instincts take over. You can reroll the triggering saving throw with a +2 circumstance bonus, but you must use the new result. This is a fortune effect.</p>"
+		},
 		"Binding Vow": {
 			"name": "Binding Vow",
 			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You bind yourself by formally speaking a binding vow. Supernatural power flows through and around you as you speak it, and all those present to hear it intrinsically know that it binds you. Breaking this vow is anathema to you, and if you break it willingly, you lose all pactbinder benefits until you fulfill your vow or, if that's impossible, participate in an atone ritual. The vow doesn't prevent unwilling violations and can't be used to try to circumvent mind-control magic, confusion, or similar situations where you perform an action not entirely of your own volition. A Binding Vow doesn't end until you've fulfilled it. Even if you die, the vow still binds you if you return to life. The vow doesn't force you to go to ridiculous extremes, such as dying, to fulfill your vow unless you specifically swear to go to such extremes. Trying to subvert your binding vow by making selfish promises (such as swearing to an ally that you'll kill someone you already wanted to kill) is in itself a violation of your vow, as is attempting to subvert other vows you've made (such as those from other pactbinder feats or a champion's code). When you make a Request or @UUID[Compendium.pf2e.actionspf2e.tHCqgwjtQtzNqVvd]{Coerce} directly in service of fulfilling your vow, you gain a +1 circumstance bonus to your check against any creatures aware of your vow.</p>"
@@ -299,7 +303,7 @@
 		},
 		"Conduct Energy": {
 			"name": "Conduct Energy",
-			"description": "<p><strong>Requirements</strong> Your last action or spell this turn had the acid, cold, electricity, fire, or sonic trait.</p>\n<hr />\n<p>You channel energy into your weapon. The weapon deals 1 additional damage per weapon damage die until the start of your next turn. This damage type matches the trait of the triggering action or spell. If your triggering action or spell had multiple eligible traits, you select one of those traits.</p>"
+			"description": "<p><strong>Requirements</strong> Your last action or spell this turn had the acid, cold, electricity, fire, or sonic trait.</p>\n<hr />\n<p>You channel energy into your weapon. The weapon deals 1 additional damage per weapon damage die until the start of your next turn. This damage type matches the trait of the triggering action or spell. If your triggering action or spell had multiple eligible traits, you select one of those traits.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.lU8IO9FIGK1DXVMy]{Effect: Conduct Energy}</p>"
 		},
 		"Confident Finisher": {
 			"name": "Confident Finisher",
@@ -705,6 +709,10 @@
 			"name": "Implement's Interruption",
 			"description": "<p><strong>Trigger</strong> The target of your Exploit Vulnerability uses a concentrate, manipulate, or move action, or leaves a square during a move action it's using.</p>\n<p><strong>Requirements</strong> You're holding your weapon implement and are benefiting from Exploit Vulnerability against a creature. The creature must be within your reach if you're wielding a melee weapon, or within 10 feet if you're wielding a ranged weapon.</p>\n<hr />\n<p>Your weapon senses a moment of weakness and guides your hand to strike down a foe. Make a Strike against the triggering creature with your weapon implement. If your attack is a critical hit, you disrupt the triggering action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
 		},
+		"Indomitable Act": {
+			"name": "Indomitable Act",
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are about to attempt a check</p>\n<p><strong>Requirements</strong> You are @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened}</p>\n<hr />\n<p><strong>Effect</strong> You lean into your fear, using it to embolden you. You can roll the triggering check twice and take the higher result. This is a fortune effect.</p>"
+		},
 		"Influence": {
 			"name": "Influence",
 			"description": "<p>You attempt to make a favorable impression on an NPC to convince the NPC to support your cause. Attempt a skill check to impress that NPC. The DC and skills which can apply can be found in the NPC's stat block.</p>\n<hr />\n<p><strong>Critical Success</strong> You gain 2 Influence Points with the chosen NPC.</p>\n<p><strong>Success</strong> You gain 1 Influence Point with the chosen NPC.</p>\n<p><strong>Failure</strong> You gain no Influence Points with the chosen NPC.</p>\n<p><strong>Critical Failure</strong> You lose 1 Influence Point with the chosen NPC.</p>"
@@ -887,7 +895,7 @@
 		},
 		"Pistolero's Retort": {
 			"name": "Pistolero's Retort",
-			"description": "<p><strong>Requirements</strong> You're wielding a one-handed firearm or one-handed crossbow.</p>\n<p><strong>Trigger</strong> A foe within the first range increment of the one- handed firearm or one-handed crossbow you're wielding critically fails an attack roll against you.</p>\n<hr />\n<p>You punish your foe's failure with a shot. Make a Strike against the triggering foe with a one-handed firearm or one-handed crossbow.</p>"
+			"description": "<p><strong>Requirements</strong> You're wielding a one-handed firearm or one-handed crossbow.</p>\n<p><strong>Trigger</strong> A foe within the first range increment of the one-handed firearm or one-handed crossbow you're wielding critically fails an attack roll against you.</p>\n<hr />\n<p>You punish your foe's failure with a shot. Make a Strike against the triggering foe with a one-handed firearm or one-handed crossbow.</p>"
 		},
 		"Point Out": {
 			"name": "Point Out",
@@ -935,7 +943,7 @@
 		},
 		"Raconteur's Reload": {
 			"name": "Raconteur's Reload",
-			"description": "<p>Your rapid or forceful words draw the enemy's attention away from your hands long enough to chamber another bullet. Interact to reload and then attempt a Deception check to Create a Diversion or an Intimidation check to Demoralize.</p>"
+			"description": "<p>Your rapid or forceful words draw the enemy's attention away from your hands long enough to chamber another bullet. Interact to reload and then attempt a Deception check to @UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{Create a Diversion} or an Intimidation check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize}.</p>"
 		},
 		"Rage": {
 			"name": "Rage",
@@ -1155,7 +1163,7 @@
 		},
 		"Spinning Crush": {
 			"name": "Spinning Crush",
-			"description": "<p><strong>Requirements</strong> You're wielding a loaded firearm or loaded crossbow.</p>\n<hr />\n<p>You go into a vicious spin, smashing your weapon into those nearby and increasing your momentum by firing. All creatures adjacent to you take 1d6 bludgeoning damage plus your Strength modifier; this increases to 2d6 if your firearm has a striking rune, 3d6 if it has a greater striking rune, and 4d6 if it has a major striking rune. This ability does not apply other effects that increase damage with your firearm Strikes such as weapon specialization. Creatures affected by this attack must attempt a basic Reflex save. A creature that fails its save is also pushed 5 feet directly away from you.</p>"
+			"description": "<p><strong>Requirements</strong> You're wielding a loaded firearm or loaded crossbow.</p>\n<hr />\n<p>You go into a vicious spin, smashing your weapon into those nearby and increasing your momentum by firing. All creatures adjacent to you take [[/r (1d6+@actor.abilities.str.mod)[bludgeoning]]]{1d6 bludgeoning} damage plus your Strength modifier; this increases to [[/r (2d6+@actor.abilities.str.mod)[bludgeoning]]]{2d6} if your firearm has a striking rune, [[/r (3d6+@actor.abilities.str.mod)[bludgeoning]]]{3d6} if it has a greater striking rune, and [[/r (4d6+@actor.abilities.str.mod)[bludgeoning]]]{4d6} if it has a major striking rune. This ability does not apply other effects that increase damage with your firearm Strikes such as weapon specialization. Creatures affected by this attack must attempt a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] save. A creature that fails its save is also pushed 5 feet directly away from you.</p>"
 		},
 		"Spirit's Mercy": {
 			"name": "Spirit's Mercy",

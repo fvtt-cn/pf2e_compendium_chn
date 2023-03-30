@@ -1064,6 +1064,15 @@
 			"time": "2",
 			"cost": ""
 		},
+		"Belittling Boast": {
+			"name": "Belittling Boast",
+			"description": "<p>You boast about your skills or combat prowess, bolstering your own abilities and belittling your opponents. Select one of the following to boast about: melee attack rolls, ranged attack rolls, spell attack rolls, or a single skill. Attempt an @UUID[Compendium.pf2e.action-macros.nEwqNNWX6scLt4sc]{Intimidation} check to @UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{Demoralize} all enemies within 30 feet. Each creature that becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened} additionally takes a -1 circumstance penalty to the attack roll or skill you boasted about for 1 minute. If at least one creature becomes frightened, you gain a +1 status penalty to the attack roll or skill you boasted about for 1 minute.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> The bonus and penalty increase to 2.</p>",
+			"target": "",
+			"range": "",
+			"duration": "1 minute",
+			"time": "2",
+			"cost": ""
+		},
 		"Bestial Curse": {
 			"name": "Bestial Curse",
 			"description": "<p>You tap into the target's inner being and curse it to become a bestial version of itself. The effect is based on its Fortitude save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target's body gains minor bestial features. Its insides churn as they partially transform, causing it to be @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} for 1 round. When it recovers from the Clumsy condition, its features revert to normal and the spell ends.</p>\n<p><strong>Failure</strong> The target transforms into a bestial form for 1 hour. The target becomes @UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{Clumsy 1} and gains weakness 1 to silver. It gains a claw, hoof, horn, or jaws Strike(your choice) that uses the target's unarmed Strike statistics except that the damage type changes to bludgeoning, piercing, or slashing, as appropriate. Whenever the target attempts to use any manipulate action, it must succeed at a @Check[type:flat|dc:5] or the action is lost. @UUID[Compendium.pf2e.spell-effects.8wCVSzWYcURWewbd]{Spell Effect: Bestial Curse (Failure)}</p>\n<p><strong>Critical Failure</strong> As failure, but the duration is unlimited. @UUID[Compendium.pf2e.spell-effects.KtAJN4Qr2poTL6BB]{Spell Effect: Bestial Curse (Critical Failure)}</p>",
@@ -1279,6 +1288,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Blinding Foam": {
+			"name": "Blinding Foam",
+			"description": "<p>You spray a colorful, caustic foam into the target's eyes, which clings to their face. Make a spell attack roll. If you hit, you deal [[/r 5d10[acid]]] damage and [[/r 1d6[persistent,acid]]] damage, and the target is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} for the duration. The foam can be removed with 3 Interact actions, which ends the persistent acid damage. These Interact actions don't need to be consecutive. When the target's persistent acid damage ends, the spell automatically ends.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> The initial damage increases to [[/r 9d10[acid]]], and the persistent acid damage increases to [[/r 2d6[persistent,acid]]].</p>",
+			"target": "1 creature",
+			"range": "60 feet",
+			"duration": "1 minute",
+			"time": "2",
+			"cost": ""
 		},
 		"Blinding Fury": {
 			"name": "Blinding Fury",
@@ -1615,6 +1633,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Bursting Bloom": {
+			"name": "Bursting Bloom",
+			"description": "<p>You cause a rose bush to sprout from the chest of a foe, bursting out of its body and wrapping it in thorned vines. The target takes [[/r 6d6[piercing]]] damage and [[/r 1d6[persistent,bleed]]] damage and must attempt a Fortitude save. When the target is no longer taking persistent bleed damage and is no longer encumbered, the rose bush withers away to nothing.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage and no persistent damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and persistent damage and is @UUID[Compendium.pf2e.conditionitems.D5mg6Tc7Jzrj6ro7]{Encumbered} for 4 rounds.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and persistent damage and is encumbered for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The initial damage increases by 3d6, and the persistent bleed damage increases by [[/r 1d6]].</p>",
+			"target": "1 creature",
+			"range": "60 feet",
+			"duration": "1 minute",
+			"time": "2",
+			"cost": ""
 		},
 		"Buzzing Bites": {
 			"name": "Buzzing Bites",
@@ -2312,6 +2339,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Confetti Cloud": {
+			"name": "Confetti Cloud",
+			"description": "<p>You conjure a dense storm of swirling confetti. All creatures within the area of the confetti become @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed}, and all creatures outside the storm become concealed to creatures within it. Additionally, creatures in the area of the confetti continually hear the raucous sounds of a party or festival and take a –2 circumstance penalty on Perception checks to hear. The number of actions you spend when Casting this Spell determines its area. You can Dismiss the spell.</p>\n<hr />\n<p><span class=\"pf2-icon\">1</span> (somatic) The spell's area is a @Template[type:burst|distance:5].</p>\n<p><span class=\"pf2-icon\">2</span> (somatic, verbal) The spell's area is a @Template[type:burst|distance:10].</p>\n<p><span class=\"pf2-icon\">3</span> (material, somatic, verbal) The spell's area is a @Template[type:burst|distance:15].</p>",
+			"target": "",
+			"range": "90 feet",
+			"duration": "1 minute",
+			"time": "1 to 3",
+			"cost": ""
+		},
 		"Confront Selves": {
 			"name": "Confront Selves",
 			"description": "<p>You show the target the spiraling web of actions and consequences that is their life and the changes wrought by these decisions upon themselves and those around them. These events swirl around the target like shards of broken pottery. The creature must attempt a Will save to resist these visions.</p>\n<p>Each time you sustain this spell, you force the target to confront an alternate permutation of themselves, witnessing the events of their life as if they'd chosen another path. They take 2d6 mental damage (basic Will save) and are @UUID[Compendium.pf2e.conditionitems.D5mg6Tc7Jzrj6ro7]{Encumbered}. On a critical success, the spell ends and can no longer be sustained.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The mental damage increases by 1d6.</p>",
@@ -2717,6 +2753,15 @@
 			"target": "1 creature",
 			"range": "30 feet",
 			"duration": "varies",
+			"time": "2",
+			"cost": ""
+		},
+		"Cutting Insult": {
+			"name": "Cutting Insult",
+			"description": "<p>You utter an insult so offensive that it cuts your target to the quick. Your target takes [[/r 4d6[mental]]] damage and 1 persistent bleed damage and must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half mental damage but no persistent bleed damage, and it becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature takes full mental damage and full persistent bleed damage, and it becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature takes double mental damage and double persistent bleed damage, and becomes @UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{Frightened 3}.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The mental damage increases by 4d6, and the bleed damage increases by 1.</p>",
+			"target": "1 creature",
+			"range": "30 feet",
+			"duration": "",
 			"time": "2",
 			"cost": ""
 		},
@@ -4841,6 +4886,15 @@
 			"time": "2",
 			"cost": ""
 		},
+		"Fashionista": {
+			"name": "Fashionista",
+			"description": "<p>The target's clothes are transformed into ostentatious attire that epitomizes high-end local fashion. No details of the target's appearance transform other than their clothes, so their weapons or armor remain unchanged in appearance. The target gains a +1 status bonus on Deception checks to @UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{Create a Diversion}. You can Dismiss this spell. At the end of the spell's duration, the target's clothes revert to their original appearance.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The status bonus increases by 1, to a maximum of +4 at 7th level.</p>",
+			"target": "1 willing creature",
+			"range": "30 feet",
+			"duration": "1 hour",
+			"time": "2",
+			"cost": ""
+		},
 		"Fatal Aria": {
 			"name": "Fatal Aria",
 			"description": "<p>You perform music so perfect that the target may die of joy or sorrow. Once targeted, the creature becomes temporarily immune for 1 minute. The effect of the spell depends on the target's level and current Hit Points.</p>\n<hr /><strong>16th or Lower</strong> The target dies instantly.\n<p><strong>17th</strong> If the target has 50 Hit Points or fewer, it dies instantly; otherwise, it drops to 0 Hit Points and becomes @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying 1}.</p>\n<p><strong>18th or Higher</strong> The target takes 50 damage. If this brings it to 0 Hit Points, it dies instantly.</p>",
@@ -5102,6 +5156,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Firework Blast": {
+			"name": "Firework Blast",
+			"description": "<p>You create a massive display of loud and colorful explosions. The explosions deal [[/r 4d6[fire]]] damage. Creatures that fail their saves must attempt an additional Fortitude save. Creatures that critically fail their saves take a -2 circumstance penalty to this Fortitude save.</p>\n<p><strong>Success</strong> The creature is unaffected.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{Blinded} and @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is blinded for 1 round and @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} and deafened for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by [[/r 2d6]].</p>",
+			"target": "",
+			"range": "500 feet",
+			"duration": "",
+			"time": "2",
+			"cost": ""
+		},
 		"Flame Barrier": {
 			"name": "Flame Barrier",
 			"description": "<p><strong>Trigger</strong> An effect would deal fire damage to either you or an ally within range.</p>\n<hr />\n<p>You swiftly deflect incoming flames. The target gains fire resistance 15 against the triggering effect.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.UXdt1WVA66oZOoZS]{Spell Effect: Flame Barrier}</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The resistance increases by 5.</p>",
@@ -5175,6 +5238,15 @@
 			"range": "120 feet",
 			"duration": "1 minute",
 			"time": "3",
+			"cost": ""
+		},
+		"Flashy Disappearance": {
+			"name": "Flashy Disappearance",
+			"description": "<p>You create a puff of colorful smoke that quickly disperses while you become temporarily @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible}. You become @UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{Undetected} to all creatures unless they can see invisible creatures. You Stride. At the end of your movement, if you have cover, greater cover, or concealment, attempt a Stealth check to Hide. You gain a +2 status bonus to this Stealth check. The invisibility then ends, and you either become @UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{Observed} or @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to creatures as determined by your check to Hide, if you made one.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.4vlorajqpFcS5Ozi]{Spell Effect: Flashy Disappearance}</p>",
+			"target": "",
+			"range": "",
+			"duration": "",
+			"time": "1",
 			"cost": ""
 		},
 		"Fleet Step": {
@@ -5887,7 +5959,7 @@
 		},
 		"Grim Tendrils": {
 			"name": "Grim Tendrils",
-			"description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 negative damage and [[/r 1[bleed]]] damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr /><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature takes half the negative damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double negative damage and double persistent bleed damage.</p>\n<hr /><strong>Heightened (+1)</strong> The negative damage increases by 2d4, and the persistent bleed damage increases by 1.",
+			"description": "<p>Tendrils of darkness curl out from your fingertips and race through the air. You deal 2d4 negative damage and 1 persistent bleed damage to living creatures in the line. Each living creature in the line must attempt a Fortitude save.</p>\n<hr /><strong>Critical Success</strong> The creature is unaffected.\n<p><strong>Success</strong> The creature takes half the negative damage and no persistent bleed damage.</p>\n<p><strong>Failure</strong> The creature takes full damage.</p>\n<p><strong>Critical Failure</strong> The creature takes double negative damage and double persistent bleed damage.</p>\n<hr /><strong>Heightened (+1)</strong> The negative damage increases by 2d4, and the persistent bleed damage increases by 1.",
 			"target": "",
 			"range": "",
 			"duration": "",
@@ -6194,6 +6266,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Helpful Steps": {
+			"name": "Helpful Steps",
+			"description": "<p>You call forth a ladder or staircase to help you reach greater heights. The ladder or staircase appears in a space you designate and either stands freely or connects to a nearby wall if possible. You decide the height of the ladder or staircase when casting the spell, up to a maximum height of 40 feet. The ladder or staircase is locked in place and magically supported, allowing you to ascend even if it's in an open area. The conjured ladder is simple in design and made of wood. The staircase is a spiral staircase made of wood. While both are supported and have no risk of falling, they can be damaged and destroyed as normal. The staircase is typically easier to ascend, though it's less discreet than a ladder and could possibly draw more attention. You can Dismiss the spell.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The maximum height increases by 40 feet.</p>",
+			"target": "",
+			"range": "60 feet",
+			"duration": "10 minutes",
+			"time": "2",
+			"cost": ""
+		},
 		"Hero's Defiance": {
 			"name": "Hero's Defiance",
 			"description": "<p><strong>Trigger</strong> An attack would bring you to 0 Hit Points.</p>\n<hr />\n<p>You shout in defiance, filling you with a sudden burst of healing. Just before applying the attack's damage, you recover 10d4+20 Hit Points. If this is enough to prevent the attack from bringing you to 0 Hit Points, you don't become @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} or @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying}. Either way, cheating death is difficult, and you can't use hero's defiance again until you Refocus or the next time you prepare. Hero's defiance cannot be used against effects with the death trait or that would leave no remains, such as disintegrate.</p>",
@@ -6274,7 +6355,7 @@
 		},
 		"Holy Cascade": {
 			"name": "Holy Cascade",
-			"description": "<p>You call upon sacred energy to amplify a vial of holy water, tossing it an incredible distance. It explodes in an enormous burst that deals 3d6 bludgeoning damage to creatures in the area from the cascade of water. The water deals an additional 6d6 positive damage to undead and 6d6 good damage to fiends.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d6, and the additional positive and good damage each increase by 2d6.</p>",
+			"description": "<p>You call upon sacred energy to amplify a vial of holy water, tossing it an incredible distance. It explodes in an enormous burst that deals 3d6 bludgeoning damage to creatures in the area from the cascade of water. The water deals an additional 6d6 positive damage to undead and 6d6 good damage to fiends.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bludgeoning damage increases by 1d6, and the additional positive and good damage each increase by 2d6.</p>\n<p>[[/r ((@item.level*2)-2)d6[positive]]]{Leveled Positive Damage}</p>\n<p>[[/r ((@item.level*2)-2)d6[good]]]{Leveled Good Damage}</p>",
 			"target": "",
 			"range": "500 feet",
 			"duration": "",
@@ -6559,6 +6640,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Illusory Shroud": {
+			"name": "Illusory Shroud",
+			"description": "<p>You shroud the target in subtle illusions that make it difficult to detect. The target gains a +1 status bonus to Stealth checks to @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} or @UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{Sneak}. For the duration, the target can become @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} to a creature even if they don't have cover and aren't otherwise @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} from that creature. Even if the target isn't concealed or doesn't have cover or greater cover at the end of a Sneak action, the target isn't automatically observed.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.b8JCq6n1STl3Wkwy]{Spell Effect: Illusory Shroud}</p>",
+			"target": "1 willing creature",
+			"range": "touch",
+			"duration": "1 minute",
+			"time": "2",
+			"cost": ""
 		},
 		"Imaginary Weapon": {
 			"name": "Imaginary Weapon",
@@ -6909,6 +6999,15 @@
 			"range": "",
 			"duration": "24 hours",
 			"time": "10 minutes",
+			"cost": ""
+		},
+		"Instant Parade": {
+			"name": "Instant Parade",
+			"description": "<p>An illusory parade with dozens of participants and performers appears around you, following you as you move. The parade is lively and noisy, providing enough cover and distraction to hide among the crowd. Creatures can @UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{Hide} inside the crowd, though creatures that disbelieve the illusion still see creatures within as normal. You are automatically @UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{Hidden} among the parade as it always follows you. Creatures attempting to locate you must succeed at a Perception check against your spell DC, though you can actively choose to Hide if you prefer to use Stealth instead.</p>\n<p>You can choose to send the parade off with a 2-action activity, which has the concentrate trait. When you do so, the parade no longer follows you and instead continues traveling in the direction of your choice. The parade travels 100 feet over 1 round and then disappears as the spell is Dismissed. You can otherwise Dismiss the spell normally if you prefer.</p>",
+			"target": "",
+			"range": "",
+			"duration": "10 minutes",
+			"time": "2",
 			"cost": ""
 		},
 		"Internal Insurrection": {
@@ -8420,6 +8519,15 @@
 			"time": "2",
 			"cost": ""
 		},
+		"Musical Accompaniment": {
+			"name": "Musical Accompaniment",
+			"description": "<p>You're surrounded by orchestral music that shifts and changes to match your behavior. This music provides a +1 status bonus to Performance checks. At the GM's discretion, it provides this bonus to Deception, Diplomacy, and Intimidation checks as the music changes to support you in social situations, though some creatures are unaffected by such obvious attempts to use music to illicit specific emotions. This music moves with you and has a maximum volume equal to four humans shouting. You take a -4 penalty to Stealth checks while the music is playing. You can't control the exact music this spell creates. The music doesn't create intelligible words or singing. You can Dismiss this spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.nLige83aiMBh0ylb]{Spell Effect: Musical Accompaniment}</p>\n<hr />\n<p><strong>Heightened (2nd)</strong> The duration increases to 10 minutes.</p>\n<p><strong>Heightened (3rd)</strong> The duration increases to 1 hour.</p>\n<p><strong>Heightened (5th)</strong> The duration increases to 24 hours.</p>",
+			"target": "",
+			"range": "",
+			"duration": "1 minute",
+			"time": "2",
+			"cost": ""
+		},
 		"Mystic Beacon": {
 			"name": "Mystic Beacon",
 			"description": "<p>The next damaging or healing spell the target casts before the start of your next turn deals damage or restores Hit Points as if the spell were heightened 1 level higher than its actual level. The spell otherwise functions at its actual level. Once the target casts the spell, mystic beacon ends.</p>",
@@ -8587,6 +8695,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Nothing Up My Sleeve": {
+			"name": "Nothing Up My Sleeve",
+			"description": "<p>You create an extradimensional space within each of your sleeves. If you're not wearing clothing with sleeves, the spell also produces a simple shirt with long sleeves for you for the duration. Each of the extradimensional spaces can hold objects and equipment, up to a total of 1 Bulk. Organic matter and living creatures can't be stored in these spaces. You are the only person who can access or perceive these extradimensional spaces.</p>\n<p>You can Interact to place an object into the extradimensional space or to draw an object from the extradimensional storage. When you draw an object from the extradimensional storage, the object appears in one of your empty hands. If you don't have an empty hand, you can't draw an object from the extradimensional storage. For the duration, whenever you @UUID[Compendium.pf2e.actionspf2e.ijZ0DDFpMkWqaShd]{Palm an Object}, you can choose to place the palmed object directly into one of the two extradimensional spaces if that space has sufficient capacity to hold the object. When the spell ends or you die, the contents of both extradimensional spaces are ejected and land without harm on the ground in your space.</p>",
+			"target": "",
+			"range": "",
+			"duration": "1 hour",
+			"time": "3",
+			"cost": ""
 		},
 		"Noxious Vapors": {
 			"name": "Noxious Vapors",
@@ -8810,6 +8927,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Overselling Flourish": {
+			"name": "Overselling Flourish",
+			"description": "<p><strong>Trigger</strong> A creature damages you.</p>\n<p>You make a grand spectacle out of getting hit. Enhanced by magic, this spectacle features sprays of blood, anguished screams, or other theatrics that appear to result from your foe's attack. The triggering creature must attempt a Will saving throw.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature is thrown off by your display. The creature becomes @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your turn.</p>\n<p><strong>Failure</strong> The creature fully believes your performance, leaving itself open. The creature becomes dazzled and @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} until the start of your turn.</p>\n<p><strong>Critical Failure</strong> The creature is enraptured by the display. The creature uses its remaining actions to watch you in awe. It then remains dazzled and flat-footed until the start of your turn.</p>",
+			"target": "the triggering creature",
+			"range": "60 feet",
+			"duration": "",
+			"time": "reaction",
+			"cost": ""
+		},
 		"Overstuff": {
 			"name": "Overstuff",
 			"description": "<p>Huge amounts of food and drink fill the target. It receives a full meal's worth of nourishment and must attempt a Fortitude save. A target @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened} by this spell takes a -10-foot status penalty to its Speed until it's no longer Sickened.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}, but if it spends an action to end the condition, it succeeds automatically.</p>\n<p><strong>Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}.</p>\n<p><strong>Critical Failure</strong> The target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
@@ -8971,6 +9097,15 @@
 			"primarycheck": "",
 			"secondarycasters": "",
 			"secondarycheck": ""
+		},
+		"Percussive Impact": {
+			"name": "Percussive Impact",
+			"description": "<p>You lob a compressed ball of sound at a foe. The ball explodes on impact, unleashing a powerful blast of sound. Make a spell attack roll. If you hit, you deal [[/r 4d8[bludgeoning]]] damage plus [[/r (1d4[splash])[sonic]]]{1d4 sonic splash damage}. On a critical success, the target is also @UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{Deafened} for 1 round.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The bludgeoning damages increases by 4d8, the sonic splash damage increases by 1d4, and the duration of the deafened condition increases by 2 rounds.</p>",
+			"target": "1 creature",
+			"range": "60 feet",
+			"duration": "",
+			"time": "2",
+			"cost": ""
 		},
 		"Perfect Strike": {
 			"name": "Perfect Strike",
@@ -9151,7 +9286,7 @@
 		},
 		"Phantom Pain": {
 			"name": "Phantom Pain",
-			"description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and [[/r 1d4[persistent,mental]]]. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Mental Damage}, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and Persistent Damage, and the target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the Persistent Damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the Persistent Damage by 1d4.</p>",
+			"description": "<p>Illusory pain wracks the target, dealing 2d4 mental damage and 1d4 persistent mental damage. The target must attempt a Will save.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected.</p>\n<p><strong>Success</strong> The target takes full initial damage but no persistent damage, and the spell ends immediately.</p>\n<p><strong>Failure</strong> The target takes full initial and persistent damage, and the target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 1}. If the target recovers from being Sickened, the persistent damage ends and the spell ends.</p>\n<p><strong>Critical Failure</strong> As failure, but the target is @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{Sickened 2}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 2d4 and the persistent damage by 1d4.</p>",
 			"target": "1 creature",
 			"range": "30 feet",
 			"duration": "1 minute",
@@ -9980,6 +10115,15 @@
 			"time": "3",
 			"cost": ""
 		},
+		"Rallying Banner": {
+			"name": "Rallying Banner",
+			"description": "<p>You create an illusory banner representing a revolution, social movement, or organization such as the Firebrands. This banner is 30 feet tall, 30 feet wide, and hovers 20 feet in the air above the target. The banner is surrounded by flashing colors, bursting fireworks, and the sounds of cheering crowds, which draw attention and make it clearly obvious that the target is the bearer of the banner.</p>\n<p>Your allies and any members of the banner's associated group who are within 200 feet and who can see and hear the banner are inspired by its presence. They gain a +1 status bonus to attack rolls and a +1 status bonus to saves against fear, emotion effects that inflict despair, and effects that would impose the @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{Confused} or @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} condition. When the bearer of the banner would gain the @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{Fleeing} condition, they can choose to stand their ground and be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} for the effect's duration instead. During the duration, the target can touch a willing creature and transfer the banner to the touched creature, making them the new bearer of the banner. Touching a creature for this purpose is an action with the concentrate and manipulate traits.</p>",
+			"target": "1 willing creature",
+			"range": "30 feet",
+			"duration": "1 minute",
+			"time": "2",
+			"cost": ""
+		},
 		"Ranger's Bramble": {
 			"name": "Ranger's Bramble",
 			"description": "<p>You cause plants in the area to entangle your foes, with the effects of <em>@UUID[Compendium.pf2e.spells-srd.J6vNvrUT3b1hx2iA]{Entangle}</em>.</p>\n<p>A creature that critically fails the save takes [[/r 2d4[bleed]]] in addition to being @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized}. @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escaping} your bramble doesn't end the bleed damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The bleed damage on a critical failure increases by [[/r 1d4[bleed]]].</p>",
@@ -10625,6 +10769,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Rose's Thorns": {
+			"name": "Rose's Thorns",
+			"description": "<p>Rose bushes with razor-sharp thorns sprout from the ground in the area. The rose bushes deal [[/r 8d8[piercing]]] damage to each creature that's in the area when the spell is cast or that ends its turn in the area (basic Reflex save). A creature that critically fails its saving throw also takes [[/r 1d8[persistent,bleed]]] damage and is @UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round or until the creature @UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{Escapes} (against your spell DC), whichever comes first. The area is difficult terrain and hazardous terrain. A creature that moves through the area takes [[/r 5[piercing]]] for every square of that area it moves into. Each time you sustain this spell, the radius of the burst increases by 5 feet.</p>\n<hr />\n<p><strong>Heightened (9th)</strong> The initial damage increases to [[/r 12d8[piercing]]], the persistent bleed damage increases to [[/r 2d8[persistent,bleed]]], and the hazardous terrain damage increases to [[/r 8[piercing]]].</p>",
+			"target": "",
+			"range": "120 feet",
+			"duration": "sustained up to 1 minute",
+			"time": "2",
+			"cost": ""
+		},
 		"Rouse Skeletons": {
 			"name": "Rouse Skeletons",
 			"description": "<p>Misshapen skeletal forms erupt from a solid surface, such as a stone floor, and fill the burst. The area they fill is difficult terrain. Their grasping claws deal 2d6 slashing damage to creatures on the ground in the area when the skeletons first appear (basic Reflex save).</p>\n<p>On subsequent rounds, the first time you Sustain the Spell each round, you can move the area of skeletons up to 20 feet within the range of the spell and deal 2d6 slashing damage (basic Reflex save) to each creature in their new area.</p>\n<p>Damaging or destroying the skeletons is irrelevant, as new bones pull forth from the ground to repair and replace any that are obliterated.</p>\n<hr />\n<p><strong>Heightened (+2)</strong> The damage increases by 1d6.</p>",
@@ -11002,7 +11155,7 @@
 		},
 		"Shadow Jump": {
 			"name": "Shadow Jump",
-			"description": "<p>You instantly transport yourself from one shadow to another. <em>@UUID[Compendium.pf2e.spells-srd.69L70wKfGDY66Mk9]{Teleport}</em> yourself and any items you're wearing and holding from your current space to a clear space you can see that's in dim light or darkness and within range. You can transport your familiar with this spell, but if shadow jump would bring any other creature with you-even if you're carrying the creature in an extradimensional container-the spell is disrupted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> When you arrive at your destination, you can become @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} until the end of your next turn or until you are no longer in an area of dim light or darkness, whichever comes first. The invisibility is an illusion effect.</p>",
+			"description": "<p>You instantly transport yourself from one shadow to another. Teleport yourself and any items you're wearing and holding from your current space to a clear space you can see that's in dim light or darkness and within range. You can transport your familiar with this spell, but if shadow jump would bring any other creature with you-even if you're carrying the creature in an extradimensional container-the spell is disrupted.</p>\n<hr />\n<p><strong>Heightened (8th)</strong> When you arrive at your destination, you can become @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} until the end of your next turn or until you are no longer in an area of dim light or darkness, whichever comes first. The invisibility is an illusion effect.</p>",
 			"target": "",
 			"range": "120 feet",
 			"duration": "",
@@ -11311,7 +11464,7 @@
 		},
 		"Shocking Grasp": {
 			"name": "Shocking Grasp",
-			"description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes [[/r 1d4[persistent,electricity]]] damage on a hit. On a critical hit, double the initial damage, but not the @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{Persistent Damage}.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>",
+			"description": "<p>You shroud your hands in a crackling field of lightning. Make a melee spell attack roll. On a hit, the target takes 2d12 electricity damage. If the target is wearing metal armor or is made of metal, you gain a +1 circumstance bonus to your attack roll with shocking grasp, and the target also takes 1d4 persistent electricity damage on a hit. On a critical hit, double the initial damage, but not the persistent damage.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by 1d12, and the persistent electricity damage increases by 1.</p>\n<p>[[/r (1d4+(@item.level)-1)[persistent,electricity]]]{Leveled Persistent Electricity Damage}</p>",
 			"target": "1 creature",
 			"range": "touch",
 			"duration": "",
@@ -11681,6 +11834,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Sparkleskin": {
+			"name": "Sparkleskin",
+			"description": "<p>You coat a creature's body in a layer of brilliantly sparkling glitter. The target gains a +2 status bonus on Deception checks to @UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{Create a Diversion} and to @UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{Feint}, and on Performance checks to @UUID[Compendium.pf2e.actionspf2e.EEDElIyin4z60PXx]{Perform} that have the visual trait. When the target take damage, glitter bursts out of its wound in a @Template[type:emanation|distance:5]. Creatures in the area must attempt a Fortitude save.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.</p>\n<p><strong>Critical Failure</strong> The creature is dazzled for 3 rounds.</p>",
+			"target": "1 willing creature",
+			"range": "touch",
+			"duration": "10 minutes",
+			"time": "2",
+			"cost": ""
+		},
 		"Speak with Animals": {
 			"name": "Speak with Animals",
 			"description": "<p>You can ask questions of, receive answers from, and use the Diplomacy skill with animals. The spell doesn't make them more friendly than normal. Cunning animals are likely to be terse and evasive, while less intelligent ones often make inane comments.</p>",
@@ -12014,6 +12176,15 @@
 			"secondarycasters": "",
 			"secondarycheck": ""
 		},
+		"Spy's Mark": {
+			"name": "Spy's Mark",
+			"description": "<p>By pressing your hand to a wall or other solid immobile surface, you cause the crossed-swords symbol of the Firebrands—or a different symbol of your choosing—to appear on the targeted surface. This symbol is immobile. You can use an action, which has the concentrate trait, to shut your eyes and focus on the symbol, projecting your senses into the symbol. While projecting your senses, you can see, hear, and smell through the symbol using whatever senses you have (including natural senses like scent and darkvision and magical senses like see invisibility). You must be within 100 feet to sense through the symbol in this way. You can Dismiss the projection effect but can otherwise freely project your senses into the symbol at any time during the spell's duration.</p>\n<p>A creature can erase the symbol (and end the spell) by spending 3 Interact actions to scrub the symbol away. These actions do not need to be consecutive.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration increases to 8 hours. You can sense through the symbol at a distance up to 500 feet away. Scrubbing the symbol requires 6 Interact actions.</p>\n<p><strong>Heightened (9th)</strong> The symbol remains until the next time you make your daily preparations. You can sense through the symbol at a distance up to 1 mile away. Scrubbing the symbol requires 1 total minute of work.</p>",
+			"target": "a wall or other solid, immobile surface",
+			"range": "touch",
+			"duration": "1 hour",
+			"time": "3",
+			"cost": ""
+		},
 		"Stabilize": {
 			"name": "Stabilize",
 			"description": "<p>Positive energy shuts death's door. The target loses the @UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{Dying} condition, though it remains @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points.</p>",
@@ -12163,7 +12334,7 @@
 		},
 		"Stoneskin": {
 			"name": "Stoneskin",
-			"description": "<p>The target's skin hardens like stone. It gains resistance 5 to physical damage, except adamantine. Each time the target is hit by a bludgeoning, piercing, or slashing attack, stoneskin's duration decreases by 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The resistance increases to 10.</p>\n<p><strong>Heightened (8th)</strong> The resistance increases to 15.</p>\n<p><strong>Heightened (10th)</strong> The resistance increases to 20.</p>",
+			"description": "<p>The target's skin hardens like stone. It gains resistance 5 to physical damage, except adamantine. Each time the target is hit by a bludgeoning, piercing, or slashing attack, stoneskin's duration decreases by 1 minute.</p>\n<hr />\n<p><strong>Heightened (6th)</strong> The resistance increases to 10.</p>\n<p><strong>Heightened (8th)</strong> The resistance increases to 15.</p>\n<p><strong>Heightened (10th)</strong> The resistance increases to 20.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.JHpYudY14g0H4VWU]{Spell Effect: Stoneskin}</p>",
 			"target": "1 creature",
 			"range": "touch",
 			"duration": "20 minutes",
