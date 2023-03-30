@@ -2898,11 +2898,11 @@
         },
         "Explosive Ammunition": {
             "name": "爆炸弹药 Explosive Ammunition",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p>这发弹药包裹着灰黑色的煤灰。当启动的<em>爆炸弹药</em>命中了一个目标便会发生爆炸，对 @Template[type:burst|distance:10]范围内的每个生物都造成 [[/r 6d6]] 火焰伤害（包括目标）。每个生物都必须尝试一次 @Check[type:reflex|dc:25|basic:true] 豁免。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p>这发弹药包裹着灰黑色的煤灰。当启动的<em>爆炸弹药</em>命中了一个目标便会发生爆炸，对 @Template[type:burst|distance:10]范围内的每个生物都造成[[/r 6d6[fire]]]伤害（包括目标）。每个生物都必须尝试一次 @Check[type:reflex|dc:25|basic:true] 豁免。</p>"
         },
         "Explosive Ammunition (Greater)": {
             "name": "高等爆炸弹药 Explosive Ammunition (Greater)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p>这发弹药包裹着灰黑色的煤灰。当启动的<em>爆炸弹药</em>命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成 [[/r 10d6]] 火焰伤害（包括目标）。每个生物都必须尝试一次 @Check[type:reflex|dc:30|basic:true|name:Greater Explosive Ammunition] 豁免。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p>这发弹药包裹着灰黑色的煤灰。当启动的<em>爆炸弹药</em>命中了一个目标便会发生爆炸，对@Template[type:burst|distance:10]范围内的每个生物都造成[[/r 10d6[fire]]]伤害（包括目标）。每个生物都必须尝试一次@Check[type:reflex|dc:30|basic:true]豁免。</p>"
         },
         "Explosive Dogslicer": {
             "name": "爆炸屠狗刀 Explosive Dogslicer",
@@ -5351,15 +5351,15 @@
         },
         "Meteor Shot": {
             "name": "流星弹 Meteor Shot",
-            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种嶙峋的石质弹药摸起来很温暖。当你发射一颗启动的流星弹时，它会在到达目标处时爆炸，变成一小片流星，烧灼附近的生物，并在地上洒落碎石。除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。</p>\n<p>弹药在目标周围@Template[type:emanation|distance:5|damaging:true]{5尺弥漫}造成[[/r 3d6[fire]]]伤害（@Check[type:reflex|dc:23|basic:true]豁免）。</p>\n<p>此外，这次打击还具有以下大失败效果。</p>\n<hr />\n<p><strong>大失败</strong> 武器哑火。</p>"
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种嶙峋的石质弹药摸起来很温暖。当你发射一颗启动的流星弹时，它会在到达目标处时爆炸，变成一小片流星，烧灼附近的生物，并在地上洒落碎石。除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。</p>\n<p>弹药在目标周围@Template[type:emanation|distance:5]造成[[/r 3d6[fire]]]伤害（@Check[type:reflex|dc:23|basic:true]豁免）。</p>\n<p>此外，这次打击还具有以下大失败效果。</p>\n<hr />\n<p><strong>大失败</strong> 武器哑火。</p>"
         },
         "Meteor Shot (Greater)": {
             "name": "高等流星弹 Meteor Shot (Greater)",
-            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种嶙峋的石质弹药摸起来很温暖。当你发射一颗启动的流星弹时，它会在到达目标处时爆炸，变成一小片流星，烧灼附近的生物，并在地上洒落碎石。除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。</p>\n<p>弹药在目标周围@Template[type:emanation|distance:10|damaging:true]{10尺弥漫}造成[[/r 6d6[fire]]]伤害（@Check[type:reflex|dc:29|basic:true|name:Meteor Shot]豁免）。</p>\n<p>此外，这次打击还具有以下大失败效果。</p>\n<hr />\n<p><strong>大失败</strong> 武器哑火。</p>"
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种嶙峋的石质弹药摸起来很温暖。当你发射一颗启动的流星弹时，它会在到达目标处时爆炸，变成一小片流星，烧灼附近的生物，并在地上洒落碎石。除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。</p>\n<p>弹药在目标周围@Template[type:emanation|distance:10]造成[[/r 6d6[fire]]]伤害（@Check[type:reflex|dc:29|basic:true|name:Meteor Shot]豁免）。</p>\n<p>此外，这次打击还具有以下大失败效果。</p>\n<hr />\n<p><strong>大失败</strong> 武器哑火。</p>"
         },
         "Meteor Shot (Major)": {
             "name": "上等流星弹 Meteor Shot (Major)",
-            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种嶙峋的石质弹药摸起来很温暖。当你发射一颗启动的流星弹时，它会在到达目标处时爆炸，变成一小片流星，烧灼附近的生物，并在地上洒落碎石。除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。</p>\n<p>弹药在目标周围@Template[type:emanation|distance:20|damaging:true]{20尺弥漫}范围造成[[/r 9d6[fire]]]伤害（@Check[type:reflex|dc:37|basic:true|name:Meteor Shot]豁免）。</p>\n<p>此外，这次打击还具有以下大失败效果。</p>\n<hr />\n<p><strong>大失败</strong> 武器哑火。</p>"
+            "description": "<p><strong>弹药</strong> 枪弹</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种嶙峋的石质弹药摸起来很温暖。当你发射一颗启动的流星弹时，它会在到达目标处时爆炸，变成一小片流星，烧灼附近的生物，并在地上洒落碎石。除了武器的正常伤害外，流星弹还会造成火焰伤害，该地区的地面会变为困难地形。</p>\n<p>弹药在目标周围@Template[type:emanation|distance:20]范围造成[[/r 9d6[fire]]]伤害（@Check[type:reflex|dc:37|basic:true|name:Meteor Shot]豁免）。</p>\n<p>此外，这次打击还具有以下大失败效果。</p>\n<hr />\n<p><strong>大失败</strong> 武器哑火。</p>"
         },
         "Midday Lantern (Greater)": {
             "name": "Midday Lantern (Greater)",
@@ -7637,7 +7637,7 @@
         },
         "Shining Ammunition": {
             "name": "闪光弹药 Shining Ammunition",
-            "description": "<p>一支<em>闪光弹药</em>闪着暗淡的光。发射后，该弹药会发出明亮的光芒，使半径20尺范围内成为明亮照明（并使更远的20尺范围内成为昏暗照明），持续10分钟。如果它命中了一个目标，它会固定在目标身上，使目标发出同样的光芒。一个生物可以用一个交互动作移除弹药，但弹药仍然会持续照明，直到持续时间结束或被摧毁。</p>"
+            "description": "<p><em>闪光弹药</em>闪着暗淡的光。发射后，它会发出明亮的光芒，使半径20尺范围内成为明亮照明（并使更远的20尺范围内成为昏暗照明），持续10分钟。如果它命中了一个目标，它会固定在目标身上，使目标发出同样的光芒。一个生物可以用一个交互动作移除弹药，但弹药仍然会持续照明，直到持续时间结束或被摧毁。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Sf6UO6vgCeicggOK]{效果：闪光弹药}</p>"
         },
         "Shining Wayfinder": {
             "name": "闪耀寻路仪 Shining Wayfinder",
@@ -12184,7 +12184,7 @@
         },
         "Camouflage Dye (Greater)": {
             "name": "高等迷彩染料 Camouflage Dye (Greater)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>迷彩染料使用各种炼金术处理过的颜料和粉碎的晶体，让使用者和周围环境融为一体。当你启动迷彩染料时，将它撒在你自己或触及范围内的生物身上，目标和他的衣服会改变颜色，融入周围环境，直到突然行动。目标可以在没有掩蔽或隐蔽的情况下进行@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}，持续1小时。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>迷彩染料使用各种炼金术处理过的颜料和粉碎的晶体，让使用者和周围环境融为一体。当你启动迷彩染料时，将它撒在你自己或触及范围内的生物身上，目标和他的衣服会改变颜色，融入周围环境，直到突然行动。目标可以在没有掩蔽或隐蔽的情况下进行@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}，持续1分钟。</p>"
         },
         "Camouflage Dye (Lesser)": {
             "name": "次等迷彩染料 Camouflage Dye (Lesser)",
