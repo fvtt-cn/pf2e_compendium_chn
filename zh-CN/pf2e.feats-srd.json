@@ -30291,6 +30291,103 @@
                 }
             ],
             "name": "诡奇变化 Bizarre Transformation"
+        },
+        "Fleeing Diversion": {
+            "description": "<p>你可以快速利用你的干扰技巧。如果你试图转移注意力时，在对抗多数生物（至少生物数量的一半）的@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}检定上取得大成功结果，你可以使用反应动作立即进行@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}，@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}，或快步。和通常情况一样，你只能对@UUID[Compendium.pf2e.actionspf2e.GkmbTGfg8KcgynOA]{分神 Create a Diversion}检定对抗成功的生物视作@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，即便你设法躲藏或潜行离开。</p>",
+            "name": "分神逃离 Fleeing Diversion",
+            "prerequisites": [
+                {
+                    "value": "欺骗技能熟练度达到专家"
+                }
+            ]
+        },
+        "Half-Truths": {
+            "description": "<p>你能够以如此方式来编织你的话语，即从不使用真正的谎言，但仍能将人们误导向既定的目的。你可以使用欺骗而非交涉技能来对一个生物尝试@UUID[Compendium.pf2e.actionspf2e.DCb62iCBrJXy0Ik6]{提出请求 Request}。你可以使用交涉而非欺骗技能来对一个生物尝试@UUID[Compendium.pf2e.actionspf2e.ewwCglB7XOPLUz72]{说谎 Lie}。如果你在说谎的检定上失败，生物会意识到你在扭曲话语愚弄他们，而非是直接撒谎。</p>",
+            "name": "半真半假 Half-Truths",
+            "prerequisites": [
+                {
+                    "value": "欺骗与交涉技能熟练度达到专家"
+                }
+            ]
+        },
+        "Rolling Landing": {
+            "name": "翻滚着陆 Rolling Landing",
+            "description": "<p>你可以用维持动能的快速翻滚来着陆。如果你坠落且没有受到伤害（通常是由于坠落距离较短），你可以使用反应动作在你着陆时立即进行短距离翻滚，并快步移动。如果你的特技技能熟练度达到专家，你可以使用反应动作快步，或行走至多速度的一半距离。如果你的特技技能熟练度达到大师，你可以使用反应动作快步，或行走至多完整速度的距离。如果你的特技技能熟练度达到传奇，你以此法进行行走不会触发因移动触发的反应。</p>",
+            "prerequisites": [
+                {
+                    "value": "轻身落"
+                },
+                {
+                    "value": "特技技能熟练度达到受训"
+                }
+            ]
+        },
+        "Slippery Prey": {
+            "description": "<p>你比其他人能更轻易地摆脱束缚。当你使用特技或运动技能尝试@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}时，如果你的技能熟练度为受训，将再次尝试的多重攻击减值降低为–4和–8。如果使用的技能熟练度达到大师，减值则变为–3和–6。如果你的技能熟练度达到传奇，你在同一回合进行的多次逃脱尝试不会承受减值。不管你的熟练度如何，你的逃脱尝试仍然具有攻击特征，会为其他动作累积多重攻击减值。</p>",
+            "name": "狡猾猎物 Slippery Prey",
+            "prerequisites": [
+                {
+                    "value": "特技或运动技能熟练度达到受训"
+                }
+            ]
+        },
+        "Dervin's Dazzling Diversion": {
+            "description": "<p>德夫林‧阿洛斯有着在战斗中使用手头物品让他人暂时失明的习惯。通过复制他的技术，你利用你的斗篷，武器的反光，一把花瓣，或其他物理干扰来作为你@UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feint}的一部分，让你的对手片刻失明。如果你成功对一个生物虚招，他会陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态直到你的回合结束。如果你取得大成功结果，生物会陷入目眩状态直到你下个回合开始。该生物可以使用一个交互动作来移除目眩状态。和通常情况一样，你只能使使用视觉或类似感官的生物目眩，由GM判断。</p>",
+            "name": "德夫林的眩目分神 Dervin's Dazzling Diversion",
+            "prerequisites": [
+                {
+                    "value": "欺骗技能熟练度达到受训"
+                }
+            ]
+        },
+        "Ostentatious Reload": {
+            "description": "<p><strong>需求</strong> 你持用两件单手火器</p>\n<hr />\n<p>每个优秀的火烙党人都知道耍帅和实干同样重要——只要你不搞砸。进行一次表演检定对抗你等级的简单DC@Check[type:performance|dc:@self.level|adjustment:-2]，让你转着枪并抛出弹药来装填它们。</p>\n<hr />\n<p><strong>大成功</strong> 你交互装填至多两件正在持用的火器。</p>\n<p><strong>成功</strong> 你交互装填一件正在持用的火器。</p>\n<p><strong>失败</strong> 你掉落一件满足需求的火器，以及一轮弹药到你所处空间的地面上。</p>\n<p><strong>大失败</strong> 你掉落两件火器，以及两轮弹药到你所处空间的地面上。</p>",
+            "name": "浮夸装填 Ostentatious Reload",
+            "prerequisites": [
+                {
+                    "value": "表演技能熟练度达到受训"
+                }
+            ]
+        },
+        "Nightwave Springing Reload": {
+            "description": "<p>夜涛号船员的训练教会了你在跳帮到另一跳船的途中装填。你@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leap}然后交互装填，或交互装填然后跳跃。你可以将该能力以双动动作使用，来让你不需要先行走至少10尺进行@UUID[Compendium.pf2e.actionspf2e.2HJ4yuEFY1Cast4h]{跳高 High Jump}或@UUID[Compendium.pf2e.actionspf2e.JUvAvruz7yRQXfz2]{跳远 Long Jump}。</p>",
+            "name": "夜涛号弹跳装填 Nightwave Springing Reload"
+        },
+        "Tumbling Theft": {
+            "name": "顺手牵羊 Tumbling Theft",
+            "description": "<p>你移动经过敌人时顺手去拿对手的物品。如果你在@UUID[Compendium.pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}经过一个敌人空间的检定中取得大成功结果，你能够使用反应动作尝试从敌人身上@UUID[Compendium.pf2e.actionspf2e.RDXXE7wMrSPCLv5k]{盗窃 Steal}某物。你在盗窃的贼活检定上获得+1环境加值，因为你的翻滚让敌人难以跟踪你的移动。你可以盗窃敌人身上任何轻负载以下的可以立即接触到的物品，例如挂载腰带上的一瓶药水或一个钱包，但不包括任何在容器内或敌人持握的物品。GM对你可以盗窃的物品拥有最终裁定权。</p>",
+            "prerequisites": [
+                {
+                    "value": "特技和贼活技能熟练度达到专家"
+                }
+            ]
+        },
+        "Helt's Spelldance": {
+            "description": "<p>拉尼克·赫尔特知道在表演中隐藏自己法术的特殊技巧，而你学会了这种技术。借由出色的表演，你行过战场，让你的敌人大吃一惊，并给你的法术创造时机。尝试一次表演检定对抗所有观看者的察觉DC。然后，行走一次或两次。在此次移动中，如果你的表演检定取得成功结果，你不会触发由移动触发的反应动作。在你移动后，你能够施法。如果你行走一次，你可以施放一个单动作或双动作法术；如果你行走两次，你只能施放一个单动作法术。如果你的检定在对抗任意生物时取得大成功结果，则他们在对抗你作为赫尔特的咒舞一部分施放的法术时，因为你的表演而分神，在豁免骰上承受-1环境减值。所有观看到你的生物都会对你的赫尔特的咒舞暂时免疫10分钟。</p>",
+            "name": "赫尔特的咒舞 Helt's Spelldance",
+            "prerequisites": [
+                {
+                    "value": "表演技能熟练度达到专家"
+                }
+            ]
+        },
+        "Dazzling Display": {
+            "description": "<p>你表演一种令人迷惑的高超技艺，例如旋转挥舞一件武器，让敌人感到不安。尝试威吓检定来对30尺内的每个敌人@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。如果你最近一个动作是对一个敌人造成重击或使一个敌人HP减为0，你在威吓检定上获得+1环境加值。无论检定结果如何，每个生物都会暂时免疫眩目表演1分钟。</p>",
+            "name": "眩目表演 Dazzling Display",
+            "prerequisites": [
+                {
+                    "value": "威吓技能熟练度达到专家"
+                }
+            ]
+        },
+        "Eyes of the City": {
+            "name": "城市眼线 Eyes of the City",
+            "prerequisites": [
+                {
+                    "value": "交涉或社群技能熟练度达到受训"
+                }
+            ],
+            "description": "<p>你能够在当地人的帮助下追踪目标。你可以使用交涉或社群技能，以哪项受训为准，在聚居地中@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}生物。由GM判断，可能出现没有足够的人来交谈以保持跟踪的情况。</p>"
         }
     },
     "mapping": {
