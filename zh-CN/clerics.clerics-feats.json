@@ -2,5 +2,158 @@
     "mapping": {
         "prerequisites": "system.prerequisites.value"
     },
-    "label": "牧师+专长 Clerics+ Feats"
+    "label": "牧师+专长 Clerics+ Feats",
+    "entries": {
+        "Canvas the Layfolk": {
+            "description": "<p>发掘信息是你的第二天性。 从在教堂里小心翼翼地打探谣言到在破旧的酒馆后面审讯疑犯，你永远不会停止寻找线索来完成你的任务。 每当你所在的定居点至少有一些你的神的追随者时，你可以使用宗教来搜集信息。如果一个人是你的神的仆人或与你的神结盟的神的仆人，你可以使用宗教来建立印象。 如果你宗教熟练度是大师，那么当你采取这些行动并且大失败时，你改为失败。</p>",
+            "name": "披布俗人 Canvas the Layfolk",
+            "prerequisites": [
+                {
+                    "value": "探寻者信条"
+                }
+            ]
+        },
+        "To Arms!": {
+            "description": "<p><strong>触发</strong> 你骰先攻</p>\n<hr>\n<p>神授予你力量，你冲进战斗痛击你的敌人或保卫你的盟友。作为你第一回合的第一个动作，你可以以一个自由动作行走，朝一个你能察觉到的敌人靠近。 如果您无法察觉任何敌人或无法在更靠近敌人的位置结束移动，则无法使用此行走。</p>",
+            "name": "拿起武器！ To Arms!",
+            "prerequisites": [
+                {
+                    "value": "着甲者信条"
+                }
+            ]
+        },
+        "Daily Obedience": {
+            "description": "<p>众神要求尊重和崇拜以获得他们的祝福。 你必须在一天结束前做一个小动作来赞美你的神； 例如，在天平上放上珍贵的物品并向阿巴达尔祈祷，作为宗-库山的追随者两厢情愿下造成某人的痛苦，作为塞恩蕾的崇拜者治愈陌生人，但每天的行动目的必须相同。 在接下来的 24 小时内仅限一次，当你进行神圣技能检定时，你可以掷两次并取较高的结果。你必须在掷骰前声明你正在使用这个效果。</p>\n<p>@UUID[Compendium.clerics.clerics-effects.Gc7fkGHl3XVm9tG0]{效果: 日行一事}</p>",
+            "name": "日行一事 Daily Obedience"
+        },
+        "Divine Strategy": {
+            "description": "<p>你用训练有素的双眼调查任何问题，以你的方式找出简单的真相。 每当你出谋划策时，作为该行动的一部分，你可以尝试一次回忆知识。 如果使用宗教进行回忆知识，则你在掷骰上获得 +2 环境加值。 如果你在回忆知识检定中大成功，你发现一个弱点，并在使用出谋划策的攻击检定上获得 +1 环境加值。</p>\n<p><strong>特殊 </strong>如果你是一个官方认证的战争牧师，此专长对你而言等级为2。</p>\n<p>@UUID[Compendium.clerics.clerics-effects.eMrJtwK9MRZLdZvd]{效果: 神学策略}</p>",
+            "prerequisites": [
+                {
+                    "value": "探寻者信条"
+                }
+            ],
+            "name": "神学策略 Divine Strategy"
+        },
+        "Theurgic Trickery": {
+            "description": "<p>随着你对魔法基础原理的了解越来越多，你会发现魔法道具能像圣徽一样为你所用。 你获得@Compendium[pf2e.feats-srd.uR62fVC9FyQAMCO1]{巧取魔法物品 Trick Magic Item}专长，并且你将以下技能之一从受训提升为专家：奥法、自然或神秘。如果你用所选根源进行巧取魔法物品时大失败，你改为失败。</p>",
+            "name": "施术把戏 Theurgic Trickery",
+            "prerequisites": [
+                {
+                    "value": "隐修牧师信条"
+                },
+                {
+                    "value": "奥法、自然或神秘技能熟练度为受训"
+                }
+            ]
+        },
+        "Zealous Dash": {
+            "description": "<p>你在战场上冲锋陷阵，前往需要你的地方。 你行走并施法，法术的施法时间不得超过两个动作。法术目标必须是你自己，即使使用通常可以指定另一个生物作为目标的法术。 该施法不会触发反应，但移动时仍会触发反应。</p>",
+            "name": "狂热冲锋 Zealous Dash",
+            "prerequisites": [
+                {
+                    "value": "着甲者信条"
+                }
+            ]
+        },
+        "Stigmata": {
+            "description": "<p>你献出你的鲜血来彰显你的信仰。你身上出现与你信仰有关的的伤痕。例如黛丝娜牧师会有跟拉玛什图在库尔查努斯（Curchanus）身上留下的一样的伤痕，艾欧梅黛的牧师则会出现她在闪耀远征中战斗留下的伤痕，而洛瓦古格的追随者手腕和脚踝上会出现象征着束缚的锁链勒痕。你可以用一个动作撕裂伤口，让你神圣的血液中流出。你受到2d4 的持续流血伤害，在你12级以及之后的每4级，该流血伤害提升1d4。这种流血伤害无法被移除，并且会持续存在，直到你使用一个带有专注特征的动作结束流血伤害及其带来的任何持续影响。如果你失去知觉，该流血伤害及其带来的任何持续影响自动结束。当你遭受这种持续流血伤害时，你的宗教检定获得+1状态加值，你的伤害术和治疗术获得以下额外效果：</p>\n<p><strong>伤害术 </strong>你对单目标施放<em>伤害术</em>时，强韧豁免失败的目标会受到2d4的持续流血伤害，在你12级以及之后的每4级，该流血伤害提升1d4。如果你使用 3 动作施法，则只有豁免大失败的目标才会受到持续流血伤害。</p>\n<p><strong>治疗术 </strong>当你对除你自己以外的单目标施放<em>治疗术</em>时，目标正受到的任何持续伤害会自动结束。如果你使用 3 动作施法，目标会立即尝试对任何正在遭受的持续伤害进行终止伤害的纯骰检定，检定DC为@Check[type:flat|dc:11]。</p>\n<p>[[/r max(floor(@actor.level/4),1)d4[persistent,bleed]]]{按等级计算的持续流血伤害}</p>\n<p>@UUID[Compendium.clerics.clerics-effects.uqWVxHkIu054J0Xv]{效果: 圣痕}</p>",
+            "name": "圣痕 Stigmata"
+        },
+        "Deific Conduit": {
+            "description": "<p><strong>频率 </strong>每天一次</p>\n<hr>\n<p>通过唤来众神的力量，你可以用他们的神性来强化自己。当你这样做时，你会获得与你的神祇相似的外观 1 分钟，你可以用神力源泉法术位代替聚能点来施展领域法术。所有看到你使用这个动作的人都知道你是你的神的代表，并且你在持续时间内对你的神祇的仆人进行基于魅力的技能检查时获得 +2 环境加值。</p>\n<p>@Compendium[clerics.clerics-effects.fO0lXmV5Pl9mcbSu]{效果: 引导神性}</p>",
+            "name": "引导神性 Deific Conduit"
+        },
+        "Outside Caller": {
+            "description": "<p>你与神祗的交流使你能够召唤比平常更强大的异界盟友。在你的每日准备中，选择一个召唤法术（例如<em>@Compendium[pf2e.spells-srd.lTDixrrNKaCvLKwX]{召唤天族 Summon Celestial}</em>或<em>@Compendium[pf2e.spells-srd.lpT6LotUaQPfinjj]{召唤元素 Summon Elemental}</em>）来召唤你的神的仆人（由 GM 酌情决定。您每天可以施放一次所选法术，该法术会提升到你可以施放的最高环级。该法术可以来自神术以外的法术根源，如果你将该法术作为神术法术施放，法术持续时间从原本的时间变为 1 小时。在持续时间内你不必维持法术，但你仍须花费一个动作来发出命令以给予召唤生物动作。</p>",
+            "name": "异界唤者 Outside Caller"
+        },
+        "Fury of the Gods": {
+            "description": "<p><strong>触发 </strong>在你触及范围内的一个你神祗的敌人使用一个操作动作或者移动动作，进行远程攻击，或者在它使用的移动动作中离开一个方格。</p>\n<hr>\n<p>你高举武器，神怒流过你的身体。你对与你神祗阵营相反的、诅咒你的神祗或违反其典范的生物进行近战打击。你的打击除了平常的效果外还获得下列效果。</p>\n<p><strong>大成功</strong> 目标获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>成功 </strong>目标获得@Compendium[pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>",
+            "name": "众神之怒 Fury of the Gods",
+            "prerequisites": [
+                {
+                    "value": "着甲者信条"
+                }
+            ]
+        },
+        "Inspired Lead": {
+            "description": "<p>你的神祗给予你征兆以示你在正确的方向上。当你花费十分钟来进行一次@Compendium[pf2e.actionspf2e.xTK2zsWFyxSJvYbX]{追查方向 Pursue a Lead}以决定客体时，你可以通过线索假定一个结果；例如，丢失的遗物被敌方教堂偷走了。你不能假设出具体的罪魁祸首，只能假设出一个动作（它被偷了吗？有人在这里藏了什么东西吗？最近有人从左边的出口通过吗？）然后你获得了神圣的灵感来指导你的决定。此行动跟卜筮术原理相同，但你不会得到吉凶的结果，而是下列结果。</p>\n<ul>\n<li>正确（如果假设是正确的）。</li>\n<li>不正确（如果假设完全不正确）。如果你得到这个结果，你可以立即为你的追查方向选择另一个客体而无需花费 10 分钟，但这次调查方向不再获得的效果。</li>\n<li>大方向正确（如果预感部分正确，但不是全部事实）。</li>\n</ul>",
+            "name": "指引灵感 Inspired Lead"
+        },
+        "Upon This Rock": {
+            "description": "<p>你知道对一个教堂而言重要的不是它在哪，而是有没有人来进行交流。你学会了如何在只有少数信徒时培养起这种交流。你可以消耗1小时时间就地取材，按照你的意愿布置祭坛、祈祷跪垫、纪念碑等以建立起一个临时的礼拜堂。这个区域会获得仪式祝圣术的效果，不同点在于只花费你1小时，而其效果只持续24小时。如果你再次使用该能力，上一次的效果将会结束。但只要上一次建立的礼拜堂中重要的组成部分（例如祭坛、纪念碑）仍然存在，人们或许会继续在那里进行礼拜。如果你在一个地点花费上1个月，祝圣术可以持续正常的持续时间，而且这个地点将会成为真正的教堂。</p>",
+            "name": "磐石之上 Upon This Rock"
+        },
+        "Blood is Thicker": {
+            "description": "<p><strong>需求 </strong>你带有圣痕造成的持续流血伤害状态</p>\n<hr>\n<p>当你的圣痕流血时，你和神力的联系会增强，使你有能力操纵你的导能能量。 你可以让 30尺内的另一个生物上与你的流血状态产生关联，该生物将一直受到能力效果影响直到你的圣痕停止流血或 1 分钟过去任一先发生时。 你同一时间只能以一个生物为目标，当以另一个生物为目标时先前目标身上的效果将会立刻消失。 此能力的效果由你的神力源泉决定：</p>\n<p><strong>伤害术 </strong>该生物必须进行一次对抗你法术DC的@Check[type:fortitude|basic:true|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免。 豁免失败的生物在受到造成穿刺或挥砍伤害的打击时，会受到等于你的圣痕流血伤害的持续流血伤害。</p>\n<p><strong>治疗术 </strong>当你受到圣痕的持续流血伤害时，目标的生命值会受到等额的治疗。你只能以活物作为目标，却该能力获得治疗特征。</p>\n<p>[[/r max(floor(@actor.level/4),1)d4[persistent,bleed]]]{按等级计算的流血伤害}</p>",
+            "name": "鲜血更浓 Blood is Thicker",
+            "prerequisites": [
+                {
+                    "value": "神力源泉"
+                },
+                {
+                    "value": "圣痕"
+                }
+            ]
+        },
+        "Blessed Regalia": {
+            "description": "<p>你穿着的盔甲上刻有无数象征你的神的符号和有关他们传说的艺术描绘。 当你神祇的敌人在你穿着受祝的盔甲时对你造成重击，你可以尝试进行一次@Check[type:flat|dc:16]检定以将其改为普通命中。 此外，你在一种类型的能量伤害以及一种与你的神祗阵营对立的阵营伤害上获得两倍于你护甲性能符文的抗性。 当你第一次获得这个专长时，你选择这些伤害的类型，在此之后将不能再更改。 如果你的盔甲拥@Compendium[pf2e.equipment-srd.ujWnpVMkbTljMGN9]{高等护命 Fortification (Greater)}名符文，抵消重击的DC改为 12。</p>",
+            "name": "受祝宝甲 Blessed Regalia",
+            "prerequisites": [
+                {
+                    "value": "着甲者信条"
+                }
+            ]
+        },
+        "Prophet's Staff": {
+            "description": "<p>你的神祗给予你将神力通过咒印、纪念物或者神祗的记号来聚集在木杖之上的能力。当你进行每日准备时，你可以通过消耗一个神力源泉法术位来充能，用神力将普通的木杖变成法杖。当你这么做后，你的木杖视作你的神术器材，且它获得等同于你消耗法术位环级数的充能数。为你所有时它能像法杖般使用，除非你绑定另一根木杖。你可以使用木杖的充能来施放神力源泉的法术和神祗授予牧师法术。你也可以对法杖使用该能力，让法杖除了正常的使用方式外还能用于施放神力源泉法术和神祗授予牧师法术。</p>",
+            "name": "圣人木杖 Prophet's Staff",
+            "prerequisites": [
+                {
+                    "value": "隐修牧师信条"
+                }
+            ]
+        },
+        "Strategic Spell": {
+            "description": "<p><strong>频率 </strong>每小时一次</p>\n<p><strong>触发 </strong>你使用@Compendium[pf2e.actionspf2e.m0f2B7G9eaaTmhFL]{出谋划策 Devise a Stratagem}进行了一次成功的法术攻击骰，将要造成伤害但还没有掷伤害骰。</p>\n<hr>\n<p>你学会利用所作计划精确定位你的法术以获得优势。你可以将@Compendium[pf2e.classfeatures.2Fe4YZCvAr9Yf6w7]{策士之击 Strategic Strike}的伤害应用到触发法术上。 当法术攻击骰大成功时，应用到法术伤害上的策士之击伤害翻倍。</p>",
+            "name": "策士之术 Strategic Spell",
+            "prerequisites": [
+                {
+                    "value": "探寻者信条"
+                }
+            ]
+        },
+        "Arise to Sainthood": {
+            "description": "<p>你不再是普通的追随者，而是一个自身就带有神圣力量的圣人。 世界各地的人们将你视为神的启示，并将你视作你的神祗般对你祈祷。选择一个适用于你自己而不是你神祗的领域，并获得初始领域法术。 如果你有@Compendium[pf2e.feats-srd.uR44wELN9OlU68cL]{进阶领域 Advanced Domain}专长，你可以立即将你选择的法术重训为与你的新领域相关的领域法术。你遵循自己的典范和禁忌，使用自己的偏好武器，在世界各地为潜在的追随者带来祝福。 当你再聚能时，你可以聆听你的追随者的祈祷。 这让你恢复一个神力源泉法术位，并且在你消耗该法术位之前无法通过再聚能获得另一个神力源泉法术位。你神祗的追随者会立即认出你，通常还尊重你并且乐于对你提供帮助。</p>",
+            "name": "超凡入圣 Arise to Sainthood"
+        },
+        "Huddled Channel": {
+            "name": "摊分导能 Huddled Channel",
+            "description": "<p>你学会了在接近目标的时候将导能一分为二。如果你下一个使用的动作是施放单动作<em>伤害术</em>或<em>治疗术</em>以治疗或伤害单个生物，则选择一个与你或法术目标相邻的额外生物作为次要目标。法术的目标受到正常伤害或治疗量的一半，次要目标也受到正常伤害或治疗量的一半。</p>",
+            "prerequisites": [
+                {
+                    "value": "神力源泉"
+                }
+            ]
+        },
+        "Theurgic Studies": {
+            "name": "神力研习 Theurgic Studies",
+            "description": "<p>你对圣典的阅读启发了你将神术延伸到其他法术根源。 选择奥法、自然或神秘，在你选择的技能上受训，如果你已经受训，则选择另一项你未受训的技能受训。你获得了从你选择的法术根源施展单一戏法的能力，并且你将该法术作为神术施放。</p>",
+            "prerequisites": [
+                {
+                    "value": "隐修牧师信条"
+                }
+            ]
+        },
+        "Traveling Channel": {
+            "name": "移动导能 Traveling Channel",
+            "description": "<p>你已经学会了在保持移动的同时导能。 如果你使用下一个动作从你的神力源泉法术位中施法，则在施法之前，你最多可以以最多一半的速度进行行走。</p>",
+            "prerequisites": [
+                {
+                    "value": "神力源泉"
+                }
+            ]
+        }
+    }
 }
