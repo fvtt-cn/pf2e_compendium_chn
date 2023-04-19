@@ -8227,8 +8227,57 @@
             "duration": "1分钟"
         },
         "Firework Blast": {
-            "description": "<p>你创造出巨响和绚丽的爆炸。爆炸造成[[/r 4d6[fire]]]伤害。豁免失败的生物必须再尝试一次额外的强韧豁免。第一次豁免大失败的生物在第二次豁免中有-2环境减值。</p>\n<p><strong>成功</strong> 生物不受影响。</p>\n<p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮。</p>\n<p><strong>大失败</strong> The creature is blinded for 1 round and @UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{Dazzled} and deafened for 1 minute.</p>\n<hr />\n<p><strong>Heightened (+1)</strong> The damage increases by [[/r 2d6]].</p>",
-            "name": "烟火爆炸 Firework Blast"
+            "description": "<p>你创造出巨响和绚丽的爆炸。爆炸造成[[/r 4d6[fire]]]伤害。豁免失败的生物必须再尝试一次额外的强韧豁免。第一次豁免大失败的生物在第二次豁免中有-2环境减值。</p>\n<p><strong>成功</strong> 生物不受影响。</p>\n<p><strong>失败</strong> 生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}和@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮。</p>\n<p><strong>大失败</strong> 生物目盲1轮，并且@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和耳聋1分钟。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 2d6]]。</p>",
+            "name": "烟火爆炸 Firework Blast",
+            "range": "500尺"
+        },
+        "Flashy Disappearance": {
+            "description": "<p>你制造了一股彩色烟雾，而你随着短暂消散的烟雾一同@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}。你对所有生物@UUID[Compendium.pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected}，除了那些可以识破隐形的生物。你行走。在你的行动结束时，如果你有掩蔽、高等掩蔽或隐蔽，尝试一次隐秘检定以躲藏。你此次隐秘检定有+2状态加值。然后隐形结束，如果你尝试躲藏的话，根据你的躲藏的结果，你对生物为@UUID[Compendium.pf2e.conditionitems.1wQY3JYyhMYeeV2G]{可见 Observed}或@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.4vlorajqpFcS5Ozi]{法术效果: 华丽消失}</p>",
+            "name": "华丽消失 Flashy Disappearance"
+        },
+        "Helpful Steps": {
+            "description": "<p>你召唤梯子或楼梯来帮助你登高。梯子或楼梯出现在你指定的空间内，可以是竖直地立着，也可以搭在墙壁上。你可以在施法时决定梯子或楼梯的高度，最高40尺。梯子或楼梯被固定在适当的地方，并且被魔法支撑着，即便在开阔区域你也可以正常爬上去。被召唤来的梯子设计简单，由木头制成。而楼梯是木质的螺旋楼梯。虽然两者都有支撑，没有坠落的风险，但他们可以像通常那样被受到伤害和被破坏。楼梯通常更容易攀登，虽然它没有梯子那么隐蔽，可能会引起更多注意。你可以随时解消法术。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 最大高度增加40尺。</p>",
+            "name": "有用阶梯 Helpful Steps",
+            "range": "60尺",
+            "duration": "10分钟"
+        },
+        "Illusory Shroud": {
+            "name": "幻象遮罩 Illusory Shroud",
+            "description": "<p>你把目标笼罩在微妙的幻象中，使其难以察觉。目标在@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}的隐秘检定中有+1状态加值。在持续期间内，目标可以在既没有掩蔽也不对其他生物隐蔽的情况下获得@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态。即便目标在潜行动作结束时，既没有@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}也没有掩蔽或高等掩蔽，目标也不会自动变为可见状态。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.b8JCq6n1STl3Wkwy]{法术效果: 幻象遮罩}</p>",
+            "target": "一个自愿生物",
+            "range": "接触",
+            "duration": "一分钟"
+        },
+        "Instant Parade": {
+            "description": "<p>一场由数十名参与者和表演者组成的虚幻游行出现在你周围，随着你一起移动。游行通常是喧闹嘈杂的，提供了足够的掩蔽和干扰，让人能混入其中。除你之外的生物可以在人群中@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}，虽然不相信幻象的生物依然能正常看见躲在里面的人。你在人群中自动@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}，因为人群总是跟着你。试图定位你的生物必须成功通过察觉检定，对抗你的法术DC，但如果你更愿意使用隐秘，你也可以选择主动躲藏。</p>\n<p>你可以选择采取一个带有专注特征的2动作行动来为人群送行，当你如此做时，游行队伍将不再跟随你，而是继续沿着你选择的方向行进。人群在1轮中前进100尺，然后随着法术解消而消失。如果你愿意，也可以正常解除法术</p>",
+            "name": "紧急游行 Instant Parade",
+            "duration": "10分钟"
+        },
+        "Musical Accompaniment": {
+            "description": "<p>你被管弦乐包围，这些音乐会根据你的行为而变化。该音乐为表演检定提供+1状态加值。根据GM的判断，当音乐出现在社交场合中时，它可以改为赋予你欺骗、交涉或威吓检定上的加值，尽管有些生物不会被音乐左右情绪。该音乐和你一同移动，其音量相当于4个人的喊叫。当音乐播放时，你的隐秘检定有-4减值。你无法操控这个法术产生的音乐。音乐不能创造让人无法理解的词语或歌词。你可以主动解消这个法术。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.nLige83aiMBh0ylb]{法术效果: 音乐伴奏}</p>\n<hr />\n<p><strong>升阶 (2环)</strong> 持续时间增加到10分钟。</p>\n<p><strong>升阶 (3环)</strong> 持续时间增加到1小时。</p>\n<p><strong>升阶 (5环)</strong> 持续时间增加到24小时。</p>",
+            "name": "音乐伴奏 Musical Accompaniment",
+            "duration": "一分钟"
+        },
+        "Nothing Up My Sleeve": {
+            "description": "<p>你在你的每个袖子里各创造一个异次元空间。如果你穿无袖的衣服，这个法术也会为你生成一件简单的长袖衬衫。每个异次元空间内都能装入总计最多不超过1B负载的物品和装备。有机物质和生物不能储存在这些空间内。你是唯一能够进入或感知这些异次元空间的人。</p>\n<p>你可以通过交互将动作将物品置入异次元空间中，或将其从异次元空间内取出。当你从异次元空间内取出一个物品时，该对象会出现在你的其中一只手里。如果你没有空闲的手，你就无法从中取出物品。在法术持续时间内，当无论何时你尝试@UUID[Compendium.pf2e.actionspf2e.ijZ0DDFpMkWqaShd]{隐藏物件 Palm an Object}，你可以选择将要隐藏的物件塞进两个异次元空间中的一个，前提是空间有足够的容量。当法术结束或你死亡时，两个异次元空间内的所有东西都会被弹出，并安然无恙地落在你周围空间的地面上。</p>",
+            "name": "袖里藏针 Nothing Up My Sleeve",
+            "duration": "一小时"
+        },
+        "Overselling Flourish": {
+            "description": "<p><strong>触发</strong> 一个生物对你造成伤害</p>\n<p>你将自己被击中的场面搞得夸张无比。通过魔法强化，你将该场面表现为鲜血四溅、痛苦哀嚎、或其他戏剧效果，而这一切似乎这些都是由于敌人的攻击造成的。触发生物必须尝试意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被你的表演搞得眼花缭乱。生物陷入@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，直到你的回合开始。</p>\n<p><strong>失败</strong> 生物完全相信了你的表演，让自己放下戒心。该生物陷入目眩，并且@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到你的回合开始。</p>\n<p><strong>大失败</strong> 生物被场面迷住了，这个生物用它剩下的动作敬畏地看着你，它同时会目眩和措手不及，直到你的回合开始。</p>",
+            "name": "过度夸张 Overselling Flourish",
+            "target": "触发生物",
+            "range": "60尺"
+        },
+        "Percussive Impact": {
+            "description": "<p>你向敌人发射一个压缩的音波球。球在撞击时爆炸，释放出强烈的音波。进行一次法术攻击。如果命中，你造成[[/r 4d8[bludgeoning]]]伤害外加[[/r (1d4[splash])[sonic]]]{1d4音波溅射伤害}。如果重击，目标还会@UUID[Compendium.pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 钝击伤害增加4d8，音波溅射伤害增加1d4，耳聋持续时间增加2轮。</p>",
+            "name": "巨响冲击 Percussive Impact",
+            "target": "一个生物",
+            "range": "60尺"
+        },
+        "Rallying Banner": {
+            "description": "<p>你创建一个代表革命、社会运动或组织（例如火烙党）的虚幻旗帜。这面旗帜高30尺，宽30尺，在目标上方20尺悬浮。旗帜周围是闪烁的颜色、绽放的烟花和人群欢呼的声音，这些都会牢牢吸引人群的注意力，并且清楚的表明目标是旗帜的持有者。</p>\n<p>200尺内的盟友和旗帜相关组织的成员如果能看见和听见旗帜，则会受到鼓舞，他们在攻击骰上有+1状态加值，对抗导致绝望的恐惧和情绪效果、导致自身@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}或@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{被控制 Controlled}状态的效果时，豁免有+1状态加值。当旗帜的持有者陷入逃跑状态时，他们可以选择站在原地，改为获得等同于逃跑效果持续时间的震慑状态。在法术持续期间内，目标可以接触一个自愿的生物，并将旗帜转移给解除的生物，让他们成为旗帜的新持有者。为了这个目的而接触生物的动作具有专注和操作特征。 or  condition. When the bearer of the banner would gain the @UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃走 Fleeing} condition, they can choose to stand their ground and be @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned} for the effect's duration instead. During the duration, the target can touch a willing creature and transfer the banner to the touched creature, making them the new bearer of the banner. Touching a creature for this purpose is an action with the concentrate and manipulate traits.</p>",
+            "name": "集结旗帜 Rallying Banner"
         }
     }
 }
