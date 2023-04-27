@@ -1,6 +1,10 @@
 {
 	"label": "Actions",
 	"entries": {
+		"A Quick Glimpse Beyond": {
+			"name": "A Quick Glimpse Beyond",
+			"description": "<p><strong>Trigger</strong> You attempt a secret check</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You can roll the secret check yourself rather than have the GM roll it. As you roll, draw a harrow card. If the card drawn is from the suit of Stars, the next secret check you make during the next 24 hours can also be rolled by you. Each time you roll your own additional secret check in this way, draw a new harrow card, and each time you draw a card from the suit of Stars, your next secret check in the next 24 hours can also be rolled by you. If you ever critically fail a secret check that you roll yourself as a result of this ability, fate turns away from you, and your Pilgrim's Token no longer functions until the next time you make your daily preparations.</p>"
+		},
 		"Absorb into the Aegis": {
 			"name": "Absorb into the Aegis",
 			"description": "<p><strong>Trigger</strong> An enemy casts a spell that targets you or an ally within 15 feet of you</p>\n<hr />\n<p>You interpose your shield's ward against the spell. Attempt a counteract check, using your Religion modifier as your counteract modifier. On a success, the spell is counteracted and your shield takes damage equal to four times the spell level as it absorbs and disperses the magical energy. On a failure, the shield takes damage equal to twice the spell's level.</p>"
@@ -43,7 +47,7 @@
 		},
 		"Anadi Venom": {
 			"name": "Anadi Venom",
-			"description": "<p><strong>Frequency</strong> a number of times per day equal to your level</p>\n<hr />\n<p>You envenom your fangs. If the next fangs Strike you make before the end of your turn hits and deals damage, the Strike deals an additional [[/r 1d6[poison]]] damage. On a critical failure, the poison is wasted as normal. At 12th level, this poison damage increases to 2d6.</p>\n<p>[[/r (1+(floor(@actor.level/12)))d6 #poison]]{Leveled} poison damage</p>"
+			"description": "<p><strong>Frequency</strong> a number of times per day equal to your level</p>\n<hr />\n<p>You envenom your fangs. If the next fangs Strike you make before the end of your turn hits and deals damage, the Strike deals an additional 1d6 poison damage. On a critical failure, the poison is wasted as normal. At 12th level, this poison damage increases to 2d6.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.gN1LbKYQgi8Fx98V]{Effect: Anadi Venom}</p>"
 		},
 		"Anchor": {
 			"name": "Anchor",
@@ -76,6 +80,10 @@
 		"Avert Gaze": {
 			"name": "Avert Gaze",
 			"description": "<p>You avert your gaze from danger.</p>\n<p>You gain a +2 circumstance bonus to saves against visual abilities that require you to look at a creature or object, such as a medusa's petrifying gaze. Your gaze remains averted until the start of your next turn.</p>"
+		},
+		"Avoid Dire Fate": {
+			"name": "Avoid Dire Fate",
+			"description": "<p><strong>Requirements</strong> you have an active harrow omen</p>\n<p><strong>Trigger</strong> you fail or critically fail a check associated with your harrow omen's suit</p>\n<hr />\n<p><strong>Effect</strong> Treat the failure as a success or a critical failure as a failure. You no longer have an active harrow omen.</p>"
 		},
 		"Avoid Notice": {
 			"name": "Avoid Notice",
@@ -139,59 +147,59 @@
 		},
 		"Breath Weapon (Acid) (Cone)": {
 			"name": "Breath Weapon (Acid) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[acid]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[acid]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[acid]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[acid]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Acid) (Line)": {
 			"name": "Breath Weapon (Acid) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[acid]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[acid]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[acid]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[acid]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Cold) (Cone)": {
 			"name": "Breath Weapon (Cold) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[cold]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[cold]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[cold]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[cold]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Cold) (Line)": {
 			"name": "Breath Weapon (Cold) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[cold]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[cold]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[cold]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[cold]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Electricity) (Cone)": {
 			"name": "Breath Weapon (Electricity) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[electricity]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[electricity]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[electricity]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[electricity]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Electricity) (Line)": {
 			"name": "Breath Weapon (Electricity) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[electricity]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[electricity]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[electricity]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[electricity]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Fire) (Cone)": {
 			"name": "Breath Weapon (Fire) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[fire]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[fire]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[fire]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[fire]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Fire) (Line)": {
 			"name": "Breath Weapon (Fire) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[fire]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[fire]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[fire]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[fire]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Negative) (Cone)": {
 			"name": "Breath Weapon (Negative) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[negative]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[negative]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[negative]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[negative]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Negative) (Line)": {
 			"name": "Breath Weapon (Negative) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[negative]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[negative]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[negative]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[negative]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Piercing) (Cone)": {
 			"name": "Breath Weapon (Piercing) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[piercing]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[piercing]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[piercing]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[piercing]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Piercing) (Line)": {
 			"name": "Breath Weapon (Piercing) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[piercing]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[piercing]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[piercing]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[piercing]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Poison) (Cone)": {
 			"name": "Breath Weapon (Poison) (Cone)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[poison]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[poison]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[poison]]] damage to all creatures in a @Template[type:cone|distance:30], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[poison]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Poison) (Line)": {
 			"name": "Breath Weapon (Poison) (Line)",
-			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[poison]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((floor(@actor.level/2))d6)[poison]]]{Leveled Damage}</p>"
+			"description": "<p>Your eidolon exhales a blast of destructive energy. Your eidolon deals [[/r 1d6[poison]]] damage to all creatures in a @Template[type:line|distance:60], with a basic Reflex save against your spell DC.</p>\n<p>Your eidolon then can't use their Breath Weapon again for the next [[/r 1d4 #rounds]]{1d4 rounds}.</p>\n<p>At 3rd level and every 2 levels thereafter, the damage increases by 1d6. [[/r ((ceil(@actor.level/2))d6)[poison]]]{Leveled Damage}</p>"
 		},
 		"Breath Weapon (Riding Drake)": {
 			"name": "Breath Weapon (Riding Drake)",
@@ -260,6 +268,10 @@
 		"Change Tradition Focus": {
 			"name": "Change Tradition Focus",
 			"description": "<p><strong>Requirements</strong> You are in a duel and are trained in the skill for the tradition you're changing your focus to (Arcana for arcane, Occultism for occult, Nature for primal, or Religion for divine).</p>\n<hr />\n<p>You change your tradition focus to another magical tradition.</p>"
+		},
+		"Chaotic Destiny": {
+			"name": "Chaotic Destiny",
+			"description": "<p><strong>Trigger</strong> You fail a saving throw during a combat</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Chaos intervenes on your behalf at the last instant as you fail a saving throw. Draw a harrow card and reroll the saving throw you failed. You must take the result of the reroll, but if you drew a card from the suit of Crowns, improve the result by one degree of success.</p>"
 		},
 		"Chassis Deflection": {
 			"name": "Chassis Deflection",
@@ -523,7 +535,7 @@
 		},
 		"Envenom": {
 			"name": "Envenom",
-			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal 1 slashing Damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d4[poison]]] damage (1 round)</p>"
+			"description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal [[/r 1[slashing]]] damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 2</strong> [[/r 1d4[poison]]] damage (1 round)</p>\n<p><strong>Stage 3</strong> [[/r 1d4[poison]]] damage (1 round)</p>"
 		},
 		"Escape": {
 			"name": "Escape",
@@ -548,6 +560,10 @@
 		"Fade Into Daydreams": {
 			"name": "Fade Into Daydreams",
 			"description": "<p>Your flights of imagination spill into the real world, causing you to become indistinct, hazy, or cloaked in figments. You become @UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{Concealed} until the start of your next turn. This concealment can't be used to Hide, as normal for concealing effects that leave your location obvious.</p>"
+		},
+		"Fated Note to Die": {
+			"name": "Fated Note to Die",
+			"description": "<p><strong>Trigger</strong> You are dying</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Draw a harrow card, and you automatically lose the dying condition, though you remain @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} at 0 Hit Points. If the card you drew was from the suit of Shields, you awaken and have an amount of Hit Points restored to you equal to [[/r (1d6+@actor.level)[healing]]]{1d6 + your level}.</p>"
 		},
 		"Feint": {
 			"name": "Feint",
@@ -587,7 +603,7 @@
 		},
 		"Fling Magic": {
 			"name": "Fling Magic",
-			"description": "<p><strong>Requirements</strong> You are holding your wand implement.</p>\n<hr />\n<p>You fling magical energy at a target within 60 feet, dealing damage equal to [[/r (1d4+@actor.abilities.cha.mod)]]{1d4 + your Charisma modifier} to the target, with a basic Reflex save against your class DC. The damage is of the type you selected when you gained your wand implement. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{Leveled damage}</p>\n<p>You can expend more energy than usual to boost the effect of Fling Magic, dealing d6s of damage instead of d4s. After you do so, the wand takes [[/r 1d4 #Wand recharge]]{1d4 rounds} to recharge, during which you can't boost the wand's damage but can continue to Fling Magic normally. If you critically hit with a Strike, your wand recharges immediately as it draws in power from the clash.</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{Leveled boosted damage}</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait corresponding to the damage type you selected.</p>"
+			"description": "<p><strong>Requirements</strong> You are holding your wand implement.</p>\n<hr />\n<p>You fling magical energy at a target within 60 feet, dealing damage equal to 1d4 + your Charisma modifier to the target, with a @Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true] save against your class DC. The damage is of the type you selected when you gained your wand implement. At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{Leveled damage}</p>\n<p>You can expend more energy than usual to boost the effect of Fling Magic, dealing d6s of damage instead of d4s. After you do so, the wand takes [[/r 1d4 #Wand recharge]]{1d4 rounds} to recharge, during which you can't boost the wand's damage but can continue to Fling Magic normally. If you critically hit with a Strike, your wand recharges immediately as it draws in power from the clash.</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{Leveled boosted damage}</p>\n<hr />\n<p><strong>Special</strong> This activity has the trait corresponding to the damage type you selected.</p>"
 		},
 		"Flurry of Blows": {
 			"name": "Flurry of Blows",
@@ -668,6 +684,10 @@
 		"Grow": {
 			"name": "Grow",
 			"description": "<p>You can grow an item from a living thing, most commonly a plant. You need the Alchemical Crafting skill feat to Grow an alchemical item, the Magical Crafting skill feat to Grow a magic item, and the Snare Crafting feat to Grow a snare. To Grow an item, you must meet the following requirements.</p>\n<ul>\n<li>The item is your level or lower. An item that doesn't list a level is level 0. If the item is 9th level or higher, you must be a master in Crafting, and if it's 16th or higher, you must be legendary.</li>\n<li>You have the formula for the item; see Getting Formulas for more information.</li>\n<li>You have an appropriate set of tools for growing the item. While cultivation and gardening tools are typical for plants, you might also use a different technique that requires a different set of tools. For instance, if you play music to help your plants grow, you might use a musical instrument instead.</li>\n<li>You must supply special fertilizers or other magical nutrients worth at least half the item's Price. You always expend at least that quantity of fertilizers and magical nutrients when you Grow successfully. If you're in a settlement, you can usually spend currency to get the amount of magical nutrients you need, except in the case of rarer precious materials. You can also bring them with you in advance or forage for them with a skill like Herbalism Lore, gaining an amount of value based on the rules for @UUID[Compendium.pf2e.actionspf2e.QyzlsLrqM0EEwd7j]{Earn Income}.</li>\n</ul>\n<p>You must spend 4 days at work, at which point you attempt a Crafting check. The GM determines the DC to Grow the item based on its level, rarity, and other circumstances. Depending on the specifics of the type of item, it might be easier to Grow than it is to Craft, or vice versa; typically, the GM can represent that by making an easy or hard DC adjustment.</p>\n<p>If your attempt to create the item is successful, you expend the fertilizers and other magical nutrients you supplied. You can pay the remaining portion of the item's Price in additional growth accelerants to complete the item immediately, or you can spend additional downtime days cultivating the item. For each additional day taken, reduce the value of the accelerants you need to complete the item. This amount is determined using Core Rulebook Table 4–2: Income Earned, based on your proficiency rank in Crafting and using your own level instead of a task level. After any of these downtime days, you can complete the item by spending the remaining portion of its Price in accelerants. If the downtime days you spend are interrupted, you can return to finish the item later, continuing where you left off.</p>\n<p>You also have the option to allow the item to grow mostly untended, only stopping to supervise it occasionally, though the pace is much slower without your direct intervention. At the end of each season in which you spent at least 1 day of downtime to Grow the item, roll an additional Crafting check and reduce the value of accelerants you need to expend to complete the item by the corresponding amount.</p>\n<hr />\n<p><strong>Critical Success</strong> Your attempt is successful. Each additional day spent Growing reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.</p>\n<p><strong>Success</strong> Your attempt is successful. Each additional day spent Growing reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.</p>\n<p><strong>Failure</strong> You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.</p>\n<p><strong>Critical Failure</strong> You fail to complete the item. You ruin 10% of the fertilizers and nutrients you supplied, but you can salvage the rest. If you want to try again, you must start over.</p>"
+		},
+		"Harrow the Fiend": {
+			"name": "Harrow the Fiend",
+			"description": "<p><strong>Trigger</strong> You start your turn in combat against a foe or foes you recognize to be fiends</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 status bonus on all Strikes or spell attack rolls against fiends for the duration of combat. Once during combat, you can draw a harrow card after you determine if a Strike or spell attack on a fiend hits but before you determine damage or effects caused to the fiend. If you draw a card from the suit of Hammers, increase the degree of success of your Strike or spell attack by one.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.MSkspeBsbXm6LQ19]{Effect: Harrow the Fiend}</p>"
 		},
 		"Harvest Heartsliver": {
 			"name": "Harvest Heartsliver",
@@ -804,6 +824,10 @@
 		"Long-Term Rest": {
 			"name": "Long-Term Rest",
 			"description": "<p>You can spend an entire day and night resting during downtime to recover Hit Points equal to your Constitution modifier (minimum 1) multiplied by twice your level.</p>"
+		},
+		"Lucky Break": {
+			"name": "Lucky Break",
+			"description": "<p><strong>Trigger</strong> You attempt a skill check during Exploration or Downtime</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Draw a harrow card, then reroll the skill check. If you draw a card from the suit of Keys, add a +4 status bonus to the original roll and your reroll, then take the result you prefer as your actual result. If you drew any other card, you gain no bonus and must take the result of the rerolled skill check.</p>"
 		},
 		"Make an Impression": {
 			"name": "Make an Impression",
@@ -979,7 +1003,11 @@
 		},
 		"Recall the Teachings": {
 			"name": "Recall the Teachings",
-			"description": "<p>The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to @UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aid} all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an @Check[type:occultism|dc:20|traits:aid]{Occultism check} for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.</p>"
+			"description": "<p>The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to @UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{Aid} all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an @Check[type:occultism|dc:20|traits:action:aid]{Occultism check} for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.</p>"
+		},
+		"Recall Under Pressure": {
+			"name": "Recall Under Pressure",
+			"description": "<p><strong>Trigger</strong> You attempt to Recall Knowledge during a combat</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> Rather than roll a different skill to Recall Knowledge during the fight, your memory flashes back to something you read in some old book. You instead attempt this Recall Knowledge check with an Academia Lore check. If the information you recall ends up being helpful and positive in an obvious way before you take your next turn, draw a random harrow card. You gain a +1 status bonus to saving throws for the remainder of the combat encounter as your morale soars or a +2 status bonus if the card you drew was from the suit of Books.</p>\n<p>@UUID[Compendium.pf2e.feat-effects.CW4zphOOpeaLJIWc]{Effect: Recall Under Pressure}</p>"
 		},
 		"Recenter": {
 			"name": "Recenter",
@@ -1295,7 +1323,7 @@
 		},
 		"Toxic Skin": {
 			"name": "Toxic Skin",
-			"description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you.</p>\n<hr />\n<p>You exude a deadly toxin. The triggering creature takes [[/r 1d4[poison]]] damage (@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison] using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{Leveled} poison damage</p>"
+			"description": "<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you.</p>\n<hr />\n<p>You exude a deadly toxin. The triggering creature takes 1d4 poison damage (@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison] using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.</p>\n<p>[[/r ceil(@actor.level/2)d4[poison]]]{Leveled Poison Damage}</p>"
 		},
 		"Track": {
 			"name": "Track",

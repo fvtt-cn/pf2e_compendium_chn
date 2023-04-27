@@ -33,6 +33,10 @@
 			"name": "Effect: Align Armament (Lawful)",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.xtXWw3cUnVB25XSV]{Align Armament}.</p>\n<p>For 1 round, that weapon deals an additional 1d6 lawful damage.</p>"
 		},
+		"Effect: Anadi Venom": {
+			"name": "Effect: Anadi Venom",
+			"description": "<p>Granted by @UUID[Compendium.pf2e.actionspf2e.8aIe57gXJ94mPpW4]{Anadi Venom}</p>\n<p>If the next fangs Strike you make before the end of your turn hits and deals damage, the Strike deals an additional 1d6 poison damage. On a critical failure, the poison is wasted as normal. At 12th level, this poison damage increases to 2d6.</p>"
+		},
 		"Effect: Ancestor Curse": {
 			"name": "Effect: Ancestor Curse",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.classfeatures.qvRlih3u7vK3FYUR]{Ancestors}</p>\n<h3>Curse of Ancestral Meddling</h3>\n<p>The ancestral spirits you commune with haunt you and meddle with your belongings and actions, either out of a well-intentioned (but ultimately detrimental) attempt to assist you, as punishment for your audacity in circumventing the traditional means of achieving divine power, for their own amusement, or a mixture of the above. Your hair, clothing, and belongings constantly shift and stir, seemingly of their own volition.</p>\n<p><strong>Minor Curse</strong></p>\n<p>One of your ancestors becomes predominant in their meddling. The first time you gain this effect each day, roll [[/r 1d4]] on the list below to determine which type of ancestor becomes predominant. This predominant ancestor guides you to use their preferred type of action. When you try to use one of the types of actions listed for the other ancestors, you must succeed at a @Check[type:flat|dc:4]. On a failure, you spend the action but gain no effect (though you don't lose the spell if you were Casting a Spell). If your action would take 1 minute or longer, it's long enough that you can overcome the meddling, and you don't need to attempt a flat check.</p>\n<p>During combat or another tense, round-by-round encounter, other ancestors wrestle for control of your actions. When you roll initiative, and then at the end of each of your turns during the encounter, roll [[/r 1d4]] and change your predominant ancestor appropriately. Once the encounter ends, you return to the influence of the ancestor you first rolled for the day.</p>\n<p><strong>Moderate Curse</strong></p>\n<p>The flat check DC to use other actions is 6, and you get the moderate curse benefit listed for your predominant ancestor in the list below.</p>\n<p><strong>Major Curse (11th)</strong></p>\n<p>The flat check DC is 8, and you get the major curse benefit listed for your predominant ancestor instead of the moderate curse benefit.</p>\n<hr />\n<h4>Ancestral Influence</h4>\n<ol>\n<li>Martial Ancestor\n<ul>\n<li><strong>Preferred action</strong> Strikes</li>\n<li><strong>Moderate curse benefit</strong> Your Strikes gain a +1 status bonus to attack rolls and a +2 status bonus to damage.</li>\n<li><strong>Major curse benefit</strong> Your Strikes gain a +1 status bonus to attack rolls and a +6 status bonus to damage</li>\n</ul>\n</li>\n<li>Skillful Ancestor\n<ul>\n<li><strong>Preferred action</strong> Perception and Skill actions</li>\n<li><strong>Moderate curse benefit</strong> You gain a +1 status bonus to skill checks and Perception checks.</li>\n<li><strong>Major curse benefit</strong> You gain a +2 status bonus to skill checks and Perception checks.</li>\n</ul>\n</li>\n<li>Spellcasting Ancestor\n<ul>\n<li><strong>Preferred action</strong> Cast a Spell</li>\n<li><strong>Moderate curse benefit</strong> Non-cantrip spells without a duration gain a status bonus to their damage and healing equal to the spell's level.</li>\n<li><strong>Major curse benefit</strong> Non-cantrip spells without a duration gain a status bonus to their damage and healing equal to the spell's level + 3.</li>\n</ul>\n</li>\n<li>You choose which ancestor guides your actions</li>\n</ol>"
@@ -59,11 +63,11 @@
 		},
 		"Effect: Armor Tampered With (Critical Success)": {
 			"name": "Effect: Armor Tampered With (Critical Success)",
-			"description": "<p>Your armor has been tampered with! You are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{flat-footed} and take a -10-foot penalty to your Speeds. The effect lasts until you @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to remove it.</p>"
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.SheifYobjKqyK3Fv]{Tamper}</p>\n<p>Your armor has been tampered with! You are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} and take a -10-foot penalty to your Speeds. The effect lasts until you @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to remove it.</p>"
 		},
 		"Effect: Armor Tampered With (Success)": {
 			"name": "Effect: Armor Tampered With (Success)",
-			"description": "<p>Your armor has been tampered with! You are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{flat-footed} and take a -10-foot penalty to your Speeds. The effect ends at the start of the inventor's next turn, or until you @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to remove it.</p>"
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.SheifYobjKqyK3Fv]{Tamper}</p>\n<p>Your armor has been tampered with! You are @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Flat-Footed} and take a -10-foot penalty to your Speeds. The effect ends at the start of the inventor's next turn, or until you @UUID[Compendium.pf2e.actionspf2e.pvQ5rY2zrtPI614F]{Interact} to remove it.</p>"
 		},
 		"Effect: Ashes Curse": {
 			"name": "Effect: Ashes Curse",
@@ -116,6 +120,10 @@
 		"Effect: Battle Medicine Immunity": {
 			"name": "Effect: Battle Medicine Immunity",
 			"description": "<p>Granted when someone uses @UUID[Compendium.pf2e.feats-srd.wYerMk6F1RZb0Fwt]{Battle Medicine} on you, rendering you temporarily immune to Battle Medicine from that person for the duration.</p>"
+		},
+		"Effect: Benevolent Spirit Deck": {
+			"name": "Effect: Benevolent Spirit Deck",
+			"description": "<p>You gain a +1 status bonus to AC and resistance depending on your harrow omen.</p>"
 		},
 		"Effect: Bespell Weapon": {
 			"name": "Effect: Bespell Weapon",
@@ -248,6 +256,10 @@
 		"Effect: Cosmos Curse": {
 			"name": "Effect: Cosmos Curse",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.classfeatures.RI2EMRBBPNSoTJXu]{Cosmos}</p>\n<h3>Curse of the Sky's Call</h3>\n<p>You have your head in the clouds-and not just figuratively. Your body is drawn toward the heavens, making you lighter and less substantial than you should be. Your eyes glow with starry light, and your hair and clothing float and drift around you.</p>\n<h4>Minor Curse</h4>\n<p>Your unnatural lightness makes it hard to keep your footing and interact with other physical objects. You are @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 1} and take a -2 penalty to saves and DCs against @UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{Grapple}, @UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{Shove}, and other forms of forced movement.</p>\n<h4>Moderate Curse</h4>\n<p>Your body is drawn further skyward. You are @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 2}, and the penalty from your minor curse increases to -3.</p>\n<p>You are treated as one size smaller for wind effects. You gain a +2 status bonus against @UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{Trip} attempts, you only take half as much damage from falls, and you gain the effects of the @UUID[Compendium.pf2e.feats-srd.HJYQlmGTdtyGWr6a]{Powerful Leap} and @UUID[Compendium.pf2e.feats-srd.ZBhvJ9O8MvBFAlhq]{Quick Jump} skill feats. You weigh only half as much, and your Bulk, should someone need to carry you, is also half as much.</p>\n<h4>Major Curse (11th)</h4>\n<p>As your body rises, you float just above the ground beneath you. You become @UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{Enfeebled 4}, and the penalty from your minor curse increases to -4.</p>\n<p>You can walk on liquids as if they were solid; you gain the effects of the @UUID[Compendium.pf2e.feats-srd.TVFfTP9fHRidwBlW]{Cloud Jump} skill feat; and you don't leave tracks, trigger weight-sensitive pressure plates, or otherwise connect with the ground below you.</p>"
+		},
+		"Effect: Creeping Ashes": {
+			"name": "Effect: Creeping Ashes",
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feat-effects.G4L49aMxHqO2yqxi]{Effect: Ashes Curse}</p>\n<p><strong>Moderate Curse</strong></p>\n<p>You and creatures in the aura are concealed.</p>\n<p><strong>Major Curse</strong></p>\n<p>You and all creatures gain weakness to fire equal to half your level.</p>"
 		},
 		"Effect: Crimson Shroud": {
 			"name": "Effect: Crimson Shroud",
@@ -405,6 +417,10 @@
 			"name": "Effect: Elemental Blood Magic (Self)",
 			"description": "<p>Elemental energy surrounds you. You gain a +1 status bonus to Intimidation checks for 1 round.</p>"
 		},
+		"Effect: Elementalist Dedication": {
+			"name": "Effect: Elementalist Dedication",
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.tx9pkrpmtqe4FnvS]{Elementalist Dedication}</p>\n<p>Each day when you make your daily preparations, you can attune yourself to one element of your choice: air, earth, fire, or water. You gain resistance equal to half your level (minimum 1 resistance) against damage dealt by effects with your attuned elemental trait. This attunement lasts until you next make your daily preparations.</p>"
+		},
 		"Effect: Emblazon Antimagic (Weapon)": {
 			"name": "Effect: Emblazon Antimagic (Weapon)",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.xAFdoKl7aOP9rVkl]{Emblazon Antimagic}.</p>\n<p>When the weapon's wielder critically hits with the weapon, they can attempt to counteract a spell on their target, using half their level, rounded up, as the counteract level. If they attempt to do so, the emblazoned symbol immediately disappears.</p>"
@@ -560,6 +576,14 @@
 		"Effect: Hamstringing Strike": {
 			"name": "Effect: Hamstringing Strike",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.s2GbcUIXG1ZBurSd]{Hamstringing Strike}</p>\n<p>If you hit your prey, the creature takes a -5-foot status penalty to Speed. If you critically hit your prey, the creature takes a -10-foot status penalty to Speed.</p>"
+		},
+		"Effect: Harrow Omen": {
+			"name": "Effect: Harrow Omen",
+			"description": ""
+		},
+		"Effect: Harrow the Fiend": {
+			"name": "Effect: Harrow the Fiend",
+			"description": "<p>You gain a +1 status bonus on all Strikes or spell attack rolls against fiends.</p>"
 		},
 		"Effect: Harsh Judgement": {
 			"name": "Effect: Harsh Judgement",
@@ -859,11 +883,11 @@
 		},
 		"Effect: Rampaging Form": {
 			"name": "Effect: Rampaging Form",
-			"description": "<p>You Change Shape into a form of living ice for 1 minute or until you shift back. Your battle form is Huge and has the following statistics:</p>\n<ul>\n<li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>20 temporary Hit Points.</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>A Speed of 30, a Fly speed of 40, and you don't need to breathe</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">a</span> jaws, <strong>Damage</strong> 2d8 piercing + 1d4 fire damage.</li>\n<li>Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses).</li>\n<li>You can cast <em>@UUID[Compendium.pf2e.spells-srd.O9w7r4BKgPogYDDe]{Produce Flame}</em> as an innate spell; the casting is reduced from 2 actions to 1.</li>\n<li>Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes [[/r 3d6[fire]]] damage.</li>\n<li>Athletics modifier of +20, unless your own modifier is higher.</li>\n</ul>"
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Zl6vDXJEM7Lbp8JQ]{Rampaging Form}</p>\n<p>You Change Shape into a form of living ice for 1 minute or until you shift back. Your battle form is Huge and has the following statistics:</p>\n<ul>\n<li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>20 temporary Hit Points.</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>A Speed of 30, a Fly speed of 40, and you don't need to breathe</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">a</span> jaws, <strong>Damage</strong> 2d8 piercing + 1d4 fire damage.</li>\n<li>Your unarmed attacks deal 1d4 additional fire damage, and your fire spells deal one additional die of fire damage (of the same damage die the spell uses).</li>\n<li>You can cast <em>@UUID[Compendium.pf2e.spells-srd.O9w7r4BKgPogYDDe]{Produce Flame}</em> as an innate spell; the casting is reduced from 2 actions to 1.</li>\n<li>Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes [[/r 3d6[fire]]] damage.</li>\n<li>Athletics modifier of +20, unless your own modifier is higher.</li>\n</ul>"
 		},
 		"Effect: Rampaging Form (Frozen Winds Kitsune)": {
 			"name": "Effect: Rampaging Form (Frozen Winds Kitsune)",
-			"description": "<p>You Change Shape into a form of living ice for 1 minute or until you shift back. Your battle form is Huge and has the following statistics:</p>\n<ul>\n<li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>20 temporary Hit Points.</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>A Speed of 30, a Fly speed of 40, and you don't need to breathe</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">a</span> jaws, <strong>Damage</strong> 2d8 piercing + 1d4 cold damage.</li>\n<li>Your unarmed attacks deal 1d4 additional cold damage, and your cold spells deal one additional die of cold damage (of the same damage die the spell uses).</li>\n<li>You can cast <em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost}</em> as an innate spell; the casting is reduced from 2 actions to 1.</li>\n<li>Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes [[/r 3d6[cold]]] damage.</li>\n<li>Athletics modifier of +20, unless your own modifier is higher.</li>\n</ul>"
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Zl6vDXJEM7Lbp8JQ]{Rampaging Form}</p>\n<p>You Change Shape into a form of living ice for 1 minute or until you shift back. Your battle form is Huge and has the following statistics:</p>\n<ul>\n<li>AC = 18 + your level. Ignore your armor's check penalty and Speed reduction.</li>\n<li>20 temporary Hit Points.</li>\n<li>Low-light vision and imprecise scent 30 feet.</li>\n<li>A Speed of 30, a Fly speed of 40, and you don't need to breathe</li>\n<li><strong>Melee</strong> <span class=\"pf2-icon\">a</span> jaws, <strong>Damage</strong> 2d8 piercing + 1d4 cold damage.</li>\n<li>Your unarmed attacks deal 1d4 additional cold damage, and your cold spells deal one additional die of cold damage (of the same damage die the spell uses).</li>\n<li>You can cast <em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{Ray of Frost}</em> as an innate spell; the casting is reduced from 2 actions to 1.</li>\n<li>Any creature that touches you or damages you with an unarmed attack or non-reach melee weapon takes [[/r 3d6[cold]]] damage.</li>\n<li>Athletics modifier of +20, unless your own modifier is higher.</li>\n</ul>"
 		},
 		"Effect: Read Shibboleths": {
 			"name": "Effect: Read Shibboleths",
@@ -872,6 +896,10 @@
 		"Effect: Reanimator Dedication": {
 			"name": "Effect: Reanimator Dedication",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.5Cm2TYHzoO2DbQNM]{Reanimator Dedication}</p>\n<p>The undead you animate gains a +1 status bonus to attack rolls, AC, saving throws, and skill checks for the duration of <em>@UUID[Compendium.pf2e.spells-srd.9WGeBwIIbbUuWKq0]{Animate Dead}</em>.</p>"
+		},
+		"Effect: Recall Under Pressure": {
+			"name": "Effect: Recall Under Pressure",
+			"description": "<p>You gain a +1 status bonus to saving throws for the remainder of the combat encounter as your morale soars or a +2 status bonus if the card you drew was from the suit of Books.</p>"
 		},
 		"Effect: Reckless Abandon (Barbarian)": {
 			"name": "Effect: Reckless Abandon (Barbarian)",
@@ -916,6 +944,10 @@
 		"Effect: Scout's Warning": {
 			"name": "Effect: Scout's Warning",
 			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Tpcq3Lk7qEOZ3LDP]{Scout's Warning}.</p>\n<p>You gain a +1 circumstance bonus to your initiative roll.</p>"
+		},
+		"Effect: Seedpod": {
+			"name": "Effect: Seedpod",
+			"description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.dWGa6cFSVrASTEfd]{Seedpod}</p>\n<p>On a critical hit, a seedpod bursts, issuing forth a tangle of vegetation that imposes a -10-foot circumstance penalty on the target's Speed for 1 round.</p>"
 		},
 		"Effect: Shadow Blood Magic (Perception)": {
 			"name": "Effect: Shadow Blood Magic (Perception)",
