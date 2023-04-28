@@ -3936,7 +3936,7 @@
         },
         "Elementalist Dedication": {
             "name": "元素使入门 Elementalist Dedication",
-            "description": "<p>每日当你进行日常准备时，能够让自身与一种自选元素同调：气、土、火或水。</p>\n<p>你在对抗与你同调的元素特征的效果造成的伤害时，获得等同于你自身等级一半的抗力（最低1点抗力）。</p>\n<p>这种同调会持续至你下一次进行日常准备为止。 </p>\n<hr />\n<p><strong>特殊</strong> 直至选取另外两个@UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.oMIA3aFKvpuV9f2H]{元素使 Elementalist}变体的专长之前，你无法再选择任何其他入门专长。</p>",
+            "description": "<p>每日当你进行日常准备时，能够让自身与一种自选元素同调：气、土、火或水。</p>\n<p>你在对抗与你同调的元素特征的效果造成的伤害时，获得等同于你自身等级一半的抗力（最低1点抗力）。</p>\n<p>这种同调会持续至你下一次进行日常准备为止。 </p>\n<hr />\n<p><strong>特殊</strong> 直至选取另外两个@UUID[Compendium.pf2e.journals.vx5FGEG34AxI2dow.JournalEntryPage.oMIA3aFKvpuV9f2H]{元素使 Elementalist}变体的专长之前，你无法再选择任何其他入门专长。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.O8qithYQCv3e7DUQ]{效果：元素使入门}</p>",
             "prerequisites": [
                 {
                     "value": "元素魔法"
@@ -10847,7 +10847,7 @@
         },
         "Quill Spray": {
             "name": "尖刺喷射 Quill Spray",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你可以向敌人发射大量尖刺。你以@Template[type:cone|distance:30]喷射尖刺，造成[[/r 5d8[piercing]]]伤害。在区域内的每个生物都要骰一次对抗你职业DC和法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。如果一个生物骰出大失败，那么它还要受到[[/r 5[bleed]]]伤害。在11级和之后的每个偶数级别，该穿刺伤害提升1d8，持续流血伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8 #piercing]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{按等级计算的}伤害</p>\n<hr />\n<p><em><strong>注意</strong> 此专长并未说明豁免检定的种类，本文中添加的是反射豁免，与带刺羽尖一致。</em></p>",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你可以向敌人发射大量尖刺。你以@Template[type:cone|distance:30]喷射尖刺，造成5d8穿刺伤害。在区域内的每个生物都要骰一次对抗你职业DC和法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。如果一个生物骰出大失败，那么它还要受到5点持续流血伤害。在11级和之后的每个偶数级别，该穿刺伤害提升1d8，持续流血伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的穿刺伤害}</p>\n<p>[[/r (ceil(@actor.level/2))[bleed]]]{按等级计算的流血伤害}</p>\n<hr />\n<p><em><strong>注意</strong> 此专长并未说明豁免检定的种类，本文中添加的是反射豁免，与带刺羽尖一致。</em></p>",
             "prerequisites": [
                 {
                     "value": "羽衣希斯克传承或尖刺无武装攻击"
@@ -18719,7 +18719,7 @@
         },
         "Fiery Retort": {
             "name": "烈焰拒斥 Fiery Retort",
-            "description": "<p><strong>触发</strong> 一个邻近你的敌人用近战武器或近战无武装攻击命中你。</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p>无视自身的苦痛，你用火焰波灼烧攻击者。触发目标受到相当于你[[/r @actor.level #fire]]{等级}的火焰伤害。</p>",
+            "description": "<p><strong>触发</strong> 一个邻近你的敌人用近战武器或近战无武装攻击命中你。</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p>无视自身的苦痛，你用火焰波灼烧攻击者。触发目标受到相当于你等级的[[/r @actor.level[fire]]]{火焰伤害}。</p>",
             "prerequisites": [
                 {
                     "value": "火焰派系"
@@ -20301,7 +20301,7 @@
         },
         "Judgement of the Monolith": {
             "name": "石像裁决 Judgement of the Monolith",
-            "description": "<p>你可以用刻在魂石的誓言迫使生者或亡灵吐露真相。你可以启动魂石以一个生物为目标制造诚实之域的效果。你可以花费10分钟启动(想象)魂石释放尸体交谈。</p>",
+            "description": "<p>你可以用刻在魂石的誓言迫使生者或亡灵吐露真相。你可以启动魂石以一个生物为目标制造<em>@UUID[Compendium.pf2e.spells-srd.aewxsale5xWEPKLk]{诚实之域 Zone of Truth}</em>的效果。你可以花费10分钟启动(想象)魂石释放<em>@UUID[Compendium.pf2e.spells-srd.FM3SmEW8N1FCRjqt]{尸体交谈 Talking Corpse}</em>。</p>",
             "prerequisites": [
                 {
                     "value": "魂石仪式"
@@ -20947,7 +20947,7 @@
         },
         "Seedpod": {
             "name": "种子荚 Seedpod",
-            "description": "<p>你的身体能够生产出几乎无穷无尽的硬壳种子。你获得种子荚远程非武装攻击，射程增量10尺，造成1d4钝击伤害；这些攻击具有操纵特征。当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。种子荚不能附加重击专精效果。</p>"
+            "description": "<p>你的身体能够生产出几乎无穷无尽的硬壳种子。你获得种子荚远程非武装攻击，射程增量10尺，造成1d4钝击伤害；这些攻击具有操纵特征。当造成重击时，种子荚会爆裂，长出一堆杂乱的植物，并对目标的速度造成-10尺的环境减值，效果持续1回合。种子荚不能附加重击专精效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.wQDHpOKY3GZqvS2v]{效果：种子荚}</p>"
         },
         "Mysterious Repertoire": {
             "name": "秘仪储备 Mysterious Repertoire",
@@ -22118,7 +22118,7 @@
         },
         "Constricting Hold": {
             "name": "紧握 Constricting Hold",
-            "description": "<p><strong>需求</strong> 你的幻灵有一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱} 或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}的生物。</p>\n<p>你的幻灵紧紧挤压生物，对其造成等同于你的幻灵等级外加其力量调整值的[[/r @actor.level+@actor.abilities.str.mod #bludgeoning]]{钝击伤害} ，其基础强韧豁免要对抗你的法术DC。</p>"
+            "description": "<p><strong>需求</strong> 你的幻灵有一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱} 或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚}的生物。</p>\n<p>你的幻灵紧紧挤压生物，对其造成等同于你的幻灵等级外加其力量调整值的[[/r (@actor.level+@actor.abilities.str.mod)[bludgeoning]]]{钝击伤害} ，其基础强韧豁免要对抗你的法术DC。</p>"
         },
         "Cling": {
             "name": "紧附 Cling",
@@ -28232,7 +28232,7 @@
         },
         "Storming Breath": {
             "name": "风暴吐息 Storming Breath",
-            "description": "<p>你释放出能量吐息或音波咆哮。你对@Template[type:cone|distance:30]{30尺锥形}内所有生物造成[[/r 4d6 #Damage]]{4d6伤害}，超过6级之后每级还能再增加1d6伤害，@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]。</p>\n<p>[[/r ((-2+@actor.level)d6]]]{按等级计算的伤害}</p>\n<hr />\n<p><strong>觉醒</strong> 你强大的爆发力量冲击敌人。豁免大失败的生物还会@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>觉醒</strong> 爆发的反作用力让你快速逃离。当你使用此能力时，你朝着相反的方向直线飞行15尺。该移动不会触发那些由移动动作触发的反应动作。</p>"
+            "description": "<p>你释放出能量吐息或音波咆哮。你对@Template[type:cone|distance:30]{30尺锥形}内所有生物造成4d6伤害，超过6级之后每级还能再增加1d6伤害，@Check[type:reflex|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]。</p>\n<p>[[/r (-2+@actor.level)d6]]{按等级计算的伤害}</p>\n<hr />\n<p><strong>觉醒</strong> 你强大的爆发力量冲击敌人。豁免大失败的生物还会@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>觉醒</strong> 爆发的反作用力让你快速逃离。当你使用此能力时，你朝着相反的方向直线飞行15尺。该移动不会触发那些由移动动作触发的反应动作。</p>"
         },
         "Storm Shroud": {
             "name": "风暴寿衣 Storm Shroud",
