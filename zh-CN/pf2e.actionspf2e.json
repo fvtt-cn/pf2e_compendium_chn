@@ -35,7 +35,7 @@
         },
         "Anadi Venom": {
             "name": "半蛛人毒液 Anadi Venom",
-            "description": "<p><strong>频率</strong> 每天等同你等级的次数</p>\n<hr />\n<p>你将毒液注满你的尖牙。若你回合结束前下个尖牙攻击命中并造成伤害，该攻击额外造成 [[/r 1d6[poison]]]伤害。若大失败，毒液视同被使用了。12级时毒素伤害增加到2d6。</p>\n<p>[[/r (1+(floor(@actor.level/12)))d6 #poison]]{根据等级成长的}毒素伤害</p>"
+            "description": "<p><strong>频率</strong> 每天等同你等级的次数</p>\n<hr />\n<p>你将毒液注满你的尖牙。若你回合结束前下个尖牙攻击命中并造成伤害，该攻击额外造成1d6毒素伤害。若大失败，毒液视同被使用了。12级时毒素伤害增加到2d6。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.gN1LbKYQgi8Fx98V]{效果：半蛛人毒液}</p>"
         },
         "Anchor": {
             "name": "深扎 Anchor",
@@ -111,59 +111,59 @@
         },
         "Breath Weapon (Acid) (Cone)": {
             "name": "喷吐武器(酸液锥形) Breath Weapon (Acid) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[acid]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[acid]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Acid) (Line)": {
             "name": "喷吐武器(酸液线形) Breath Weapon (Acid) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[acid]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[acid]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Cone)": {
             "name": "喷吐武器(寒冷锥形) Breath Weapon (Cold) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[cold]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[cold]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Line)": {
             "name": "喷吐武器(寒冷线形) Breath Weapon (Cold) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[cold]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[cold]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Cone)": {
             "name": "喷吐武器(电击锥形) Breath Weapon (Electricity) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[electricity]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[electricity]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Line)": {
             "name": "喷吐武器(电击线形) Breath Weapon (Electricity) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[electricity]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[electricity]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Cone)": {
             "name": "喷吐武器(火焰锥形) Breath Weapon (Fire) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[fire]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[fire]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Line)": {
             "name": "喷吐武器(火焰线形) Breath Weapon (Fire) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[fire]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[fire]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Cone)": {
             "name": "喷吐武器(负能量锥形) Breath Weapon (Negative) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[negative]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[negative]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Line)": {
             "name": "喷吐武器(负能量线形) Breath Weapon (Negative) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[negative]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[negative]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Cone)": {
             "name": "喷吐武器(穿刺锥形) Breath Weapon (Piercing) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[piercing]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[piercing]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Line)": {
             "name": "喷吐武器(穿刺线形) Breath Weapon (Piercing) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[piercing]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[piercing]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Cone)": {
             "name": "喷吐武器(毒素锥形) Breath Weapon (Poison) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[poison]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[poison]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Line)": {
             "name": "喷吐武器(毒素线形) Breath Weapon (Poison) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[poison]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((floor(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[poison]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Bullet Dancer Stance": {
             "name": "弹舞架式 Bullet Dancer Stance",
@@ -1015,7 +1015,7 @@
         },
         "Toxic Skin": {
             "name": "毒性皮肤 Toxic Skin",
-            "description": "<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 一个生物接触了你，比如擒抱了你，用无武装攻击成功命中你，或对你使用接触射程的法术。</p>\n<hr />\n<p>你释放一种致命的毒素。触发生物受到[[/r 1d4[poison]]]伤害（@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison]豁免使用你的职业DC或法术DC，取两者较高一项）。在3级以及此后每升2级，伤害增加1d4。</p>\n<p>[[/r ceil(@actor.level/2)d4 #poison]]{按等级计算的}毒素伤害</p>"
+            "description": "<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 一个生物接触了你，比如擒抱了你，用无武装攻击成功命中你，或对你使用接触射程的法术。</p>\n<hr />\n<p>你释放一种致命的毒素。触发生物受到1d4毒素伤害（@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true|traits:poison]豁免使用你的职业DC或法术DC，取两者较高一项）。在3级以及此后每升2级，伤害增加1d4。</p>\n<p>[[/r ceil(@actor.level/2)d4[poison]]]{按等级计算的}毒素伤害</p>"
         },
         "Track": {
             "name": "追踪 Track",
@@ -1087,7 +1087,7 @@
         },
         "Recall the Teachings": {
             "name": "回想教诲 Recall the Teachings",
-            "description": "<p>你高扬的心力让你回忆起你曾经学过的每一课。你在脑海中搜索正确的教导，那些教导最初似乎很隐晦，但在迫切相关的时刻突然变得清晰起来。直到你的下一个回合开始，你都算作准备好了@UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{协助 Aid}你周围30尺内的所有盟友。如果你在这期间使用援助反应来帮助他们中的一个人，你为援助进行一次@Check[type:occultism|dc:20|traits:aid]{神秘检定}来回忆起能援助他们的教导。大多数教导都是以简短的公理、寓言或谚语的形式出现的，这意味着将它们传达给你的盟友通常会赋予你的援助反应动作以听觉和语言特征。</p>"
+            "description": "<p>你高扬的心力让你回忆起你曾经学过的每一课。你在脑海中搜索正确的教导，那些教导最初似乎很隐晦，但在迫切相关的时刻突然变得清晰起来。直到你的下一个回合开始，你都算作准备好了@UUID[Compendium.pf2e.actionspf2e.HCl3pzVefiv9ZKQW]{协助 Aid}你周围30尺内的所有盟友。如果你在这期间使用援助反应来帮助他们中的一个人，你为援助进行一次@Check[type:occultism|dc:20|traits:action:aid]{神秘检定}来回忆起能援助他们的教导。大多数教导都是以简短的公理、寓言或谚语的形式出现的，这意味着将它们传达给你的盟友通常会赋予你的援助反应动作以听觉和语言特征。</p>"
         },
         "Restore the Mind": {
             "name": "心灵再造 Restore the Mind",
@@ -1111,7 +1111,7 @@
         },
         "Fling Magic": {
             "name": "杖掷 Fling Magic",
-            "description": "<p><strong>需求</strong> 你持握着你的杖奇具。</p>\n<hr />\n<p>你对一个60尺内的目标投掷魔法能量，对目标造成的伤害等于[[/r (1d4+@actor.abilities.cha.mod)]]{1d4+你的魅力调整值}，对抗你职业DC的基础反射豁免。该伤害的伤害类型是你在获得你的杖奇具时所选择的类型。在3级和之后的每两级，伤害提升1d4。</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{按等级计算的伤害}</p>\n<p>你可以花费比通常更多的能量来激发杖掷动作的效果，造成d6而非d4的伤害。当你这么做时，杖需花费[[/r 1d4 #Wand recharge]]{1d4轮}轮以重新充能，在这段时间内你无法激发杖的伤害，但可以继续正常使用杖掷动作。如果你的一次打击重击，你的杖立刻充能完成，因为它从冲击中汲取了力量。</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{按等级计算的增幅伤害}</p>\n<hr />\n<p><strong>特殊</strong> 这个行动拥有对应于你所选伤害类型的特征。</p>"
+            "description": "<p><strong>需求</strong> 你持握着你的杖奇具。</p>\n<hr />\n<p>你对一个60尺内的目标投掷魔法能量，对目标造成的伤害等于1d4+你的魅力调整值，对抗你职业DC的@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免。该伤害的伤害类型是你在获得你的杖奇具时所选择的类型。在3级和之后的每两级，伤害提升1d4。</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{按等级计算的伤害}</p>\n<p>你可以花费比通常更多的能量来激发杖掷动作的效果，造成d6而非d4的伤害。当你这么做时，杖需花费[[/r 1d4 #Wand recharge]]{1d4轮}轮以重新充能，在这段时间内你无法激发杖的伤害，但可以继续正常使用杖掷动作。如果你的一次打击重击，你的杖立刻充能完成，因为它从冲击中汲取了力量。</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{按等级计算的增幅伤害}</p>\n<hr />\n<p><strong>特殊</strong> 这个行动拥有对应于你所选伤害类型的特征。</p>"
         },
         "Implement's Interruption": {
             "name": "兵断 Implement's Interruption",
@@ -1363,7 +1363,7 @@
         },
         "Envenom": {
             "name": "下毒 Envenom",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成1点挥砍伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成[[/r 1[slashing]]]伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>"
         },
         "Venom Draw": {
             "name": "涂毒备战 Venom Draw",
