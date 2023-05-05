@@ -36,22 +36,60 @@
     },
 	"entries": {
 		"Abendego Brute": {
-			"name": "Abendego Brute",
-			"blurb": "Human bruiser",
+			"name": "阿本迪戈暴徒 Abendego Brute",
+			"blurb": "人类暴徒 Human bruiser",
 			"data":{},
-			"items":{}
+			"items":{
+				"No Escape": {
+					"name": "无处可逃 No Escape",
+					"description": "<p><strong>触发</strong> 一个位于暴徒触及范围内的生物尝试远离他</p>\n<hr />\n<p><strong>效果</strong> 暴徒跟随敌人行进等于速度的距离，使目标全程保持在自己的触及范围内。</p>"
+				},
+				"Brute Strength": {
+					"name": "野蛮巨力 Brute Strength",
+					"description": "<p>阿本迪戈暴徒使用三叉戟造成额外[[/r 2d8]]伤害，并且三叉戟在近战中使用时获得推撞特征（额外的伤害骰和推撞特征都已经体现在暴徒的三叉戟打击中）。</p>"
+				}
+			}
 		},
 		"Abendego Jailer": {
-			"name": "Abendego Jailer",
-			"blurb": "Human prison guard",
+			"name": "阿本迪戈狱卒 Abendego Jailer",
+			"blurb": "人类监狱守卫",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Mancatcher": {
+					"name": "人叉 Mancatcher",
+					"description": "<p>这种分叉的带刺长矛被称为人叉。经过特殊的训练，它可以用来抓住敌人并将他们固定在原地。</p>"
+				},
+				"strike-Mancatcher": {
+					"name": "人叉 Mancatcher"
+				},
+				"hjsbx1be0lmoslp9": {
+					"name": "限制 Restrain",
+					"description": "<p>当狱卒成功地进行了一次人叉打击时，目标必须成功通过@Check[type:reflex|dc:27]豁免，否则就会被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直到狱卒的下一回合结束。</p>\n<p>目标每次尝试@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃跑 Escape}狱卒失败，都会受到[[/r 2d6[piercing]]]伤害。</p>"
+				},
+				"9kdhw0jv0lj57xjt": {
+					"name": "压制攻击 Subduing Attack",
+					"description": "<p>阿本迪戈狱卒对处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态或者在至少一个盟友的触及范围内的生物造成额外3d6精准伤害。</p>\n<p>狱卒可以自己决定这部分额外伤害是否是非致命攻击。</p>"
+				}
+			}
 		},
 		"Abendego Priest": {
-			"name": "Abendego Priest",
-			"blurb": "Human priest of Norgorber",
+			"name": "阿本迪戈牧师 Abendego Priest",
+			"blurb": "诺格巴人类牧师",
 			"data":{},
-			"items":{}
+			"items":{
+				"Sodden Defense": {
+					"name": "雨浸防御 Sodden Defense",
+					"description": "<p><strong>触发</strong> 攻击者对阿本迪戈牧师的近战打击失败或大失败</p>\n<hr />\n<p><strong>效果</strong> 牧师召唤出无尽的风暴来惩罚攻击者。海水出现在目标的肺部，目标@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（如果触发该反应的攻击大失败，则@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}）。</p>"
+				},
+				"Sneak Attack": {
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>阿本迪戈牧师对措手不及的生物造成额外的2d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Steady Spellcasting": {
+					"name": "稳定施法 Steady Spellcasting",
+					"description": "<p>如果反应动作会打断牧师的施法动作，她尝试一次@Check[type:flat|dc:15]检定。如果成功，她的动作不被打断。</p>"
+				}
+			}
 		},
 		"Agitated Carnivorous Plants": {
 			"name": "躁动的食肉植物 Agitated Carnivorous Plants",
@@ -70,10 +108,43 @@
 			}
 		},
 		"Ajbal Kimon": {
-			"name": "Ajbal Kimon",
-			"blurb": "NE male human gang leader",
+			"name": "阿杰巴·基蒙 Ajbal Kimon",
+			"blurb": "中立邪恶男性人类帮派头目",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+1 Resilient Mithral Scale Mail": {
+					"name": "+1抗力秘银鳞甲 +1 Resilient Mithral Scale Mail",
+					"description": "鳞甲由许多缝制在加固皮背衬上的金属鳞片组成，通常以长衫的形式保护你的躯干、臂和腿。"
+				},
+				"Deny Advantage": {
+					"name": "否决优势 Deny Advantage",
+					"description": "<p>阿杰巴不会对@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、无踪、夹击或突然袭击且等级不超过13级的生物@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				},
+				"Evasion": {
+					"name": "反射闪避 Evasion",
+					"description": "<p>当阿杰巴在反射检定中成功时，将其视为大成功。</p>"
+				},
+				"Nimble Dodge": {
+					"name": "灵巧躲避 Nimble Dodge",
+					"description": "<p><strong>触发</strong> 阿杰巴被他能看到的攻击者作为远程或近战攻击的目标</p>\n<hr />\n<p><strong>效果</strong> 阿杰巴对抗触发攻击的AC获得+2环境加值。</p>"
+				},
+				"Hunt Prey": {
+					"name": "猎杀目标 Hunt Prey",
+					"description": "<p>阿杰巴指定一个他能看到或听到的生物，或者一个他正在追踪的生物作为他的猎物。阿杰巴在@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}和@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}猎杀目标的察觉和生存检定上获得+2环境加值。</p>\n<p>阿杰巴每轮第一次命中猎杀目标时，会造成额外2d8精准伤害。阿杰巴还会在对抗猎杀目标时忽略远程攻击的第二个射程增量减值。</p>\n<p>这些效果持续到阿杰巴再次使用猎杀目标。</p>"
+				},
+				"Sneak Attack": {
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>阿杰巴对措手不及的生物造成额外1d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Tear the Wound": {
+					"name": "撕裂伤口 Tear the Wound",
+					"description": "<p><strong>需求</strong> 阿杰巴的上一个动作是一次近战打击，并且对@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的目标造成了偷袭伤害</p>\n<hr />\n<p><strong>效果</strong> 阿杰巴对目标生物造成[[/r 6[bleed]]]伤害，只要目标还在流血，目标就会@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>"
+				},
+				"Trident Bully": {
+					"name": "三叉戟霸 Trident Bully",
+					"description": "<p>阿杰巴使用的三叉戟获得推撞特征，他用三叉戟对生物的攻击重击时使目标@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到他下回合开始。</p>"
+				}
+			}
 		},
 		"Alapolo": {
 			"name": "Alapolo",
@@ -186,7 +257,7 @@
 		},
 		"Auto-Turret": {
 			"name": "Auto-Turret",
-			"disable": "<p>@Check[type:thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (master) to disconnect the turret from its ammo supply system, or @Check[type:arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (master) to neutralize the magical targeting system。</p>\n<p>Tan‑Takneh can also deactivate one or both auto‑turrets remotely with a special command word。</p>",
+			"disable": "<p>@Check[type:thievery|dc:35|name:Disconnect the Turret|traits:magical,trap,hazard] (大师) to disconnect the turret from its ammo supply system, or @Check[type:arcana|dc:35|name:Neutralize the Magical Targeting System|traits:magical,trap,hazard] (大师) to neutralize the magical targeting system。</p>\n<p>Tan‑Takneh can also deactivate one or both auto‑turrets remotely with a special command word。</p>",
 			"hazarddescription": "<p>A mounted gun equipped with a magical targeting system and integrated ammo supply。</p>",
 			"routine": "<p>(3 actions) With each action, the auto‑turret makes a longrifle Strike against a creature within 60 feet of Tan‑Takneh's campsite (other than Tan-Takneh). If there are no such creatures, the auto‑turret instead uses its action to sprout mechanical legs, totter 20 feet in the direction of its last target, and then plant itself into the ground again. Programmed to spread its fire around, the auto‑turret doesn't attack any creature it's already attacked in the round。</p>\n<p>After making 15 Strikes, the auto‑turret depletes its ammunition and automatically deactivates。</p>",
 			"stealthdetails": "<p>(专家); darkvision</p>",
@@ -204,10 +275,57 @@
 			"items":{}
 		},
 		"Bharlen Sajor": {
-			"name": "Bharlen Sajor",
-			"blurb": "Female graveknight",
+			"name": "巴伦·萨乔 Bharlen Sajor",
+			"blurb": "女性死墓骑士",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Storm Bolts": {
+					"name": "风暴矢 Storm Bolts",
+					"description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p>这支箭的箭头是用闪烁着的铜制成的。</p>\n<p>当一支启动的<em>风暴矢</em>命中目标，目标会被狂风袭扰并受到能造成[[/r 3d12]]电击伤害的闪电矢的打击，另外目标还需要通过一次@Check[type:reflex|dc:25|name:Storm Arrow]的反射豁免。</p>\n<p>如果这支箭是由一把具有电击性能符文的武器射出，则豁免DC提升至27，但本次攻击并不会从<em>电击</em>性能符文本身得到好处。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受一半的伤害，并不受狂风的影响。</p>\n<p><strong>失败</strong> 目标承受完整的伤害，并受到狂风袭扰，在远程攻击骰中承受-2环境罚值并在飞行速度中承受-10尺环境罚值，持续1轮。</p>\n<p><strong>大失败</strong> 如失败，但目标承受双倍的伤害。</p>"
+				},
+				"strike-Shock Trident": {
+					"name": "电击三叉戟 Shock Trident"
+				},
+				"strike-Shock Heavy Crossbow": {
+					"name": "电击重弩 Shock Heavy Crossbow"
+				},
+				"No Escape": {
+					"name": "无处可逃 No Escape",
+					"description": "<p><strong>触发</strong> 一个巴伦触及范围内的生物尝试远离她；</p>\n<hr />\n<p><strong>效果</strong> 巴伦跟随敌人行进等于速度的距离，使目标全程保持在自己的触及范围内。</p>"
+				},
+				"Rejuvenation": {
+					"name": "复生 Rejuvenation",
+					"description": "<p>当巴伦·萨乔被摧毁时，她的盔甲会在[[/br 1d10 #days]]{1d10天}内重塑身体——若护甲被活着的宿主穿戴则会更加迅速。若身体在此之前被破坏，重塑过程将重新开始。</p>\n<p>只有摧毁护甲（比如使用<em>@UUID[Compendium.pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>）、把她传送至正能量位面、或者丢进火山之中才能够永久摧毁巴伦·萨乔。</p>"
+				},
+				"Sacrilegious Aura": {
+					"name": "亵渎灵光 Sacrilegious Aura",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>当有生物在灵光范围内使用正能量法术或能力时，死墓骑士会自动尝试反制它，反制调整值为[[/r 1d20+18 #Counteract]]{+18}。</p>"
+				},
+				"Brute Strength": {
+					"name": "野蛮巨力 Brute Strength",
+					"description": "<p>巴伦使用三叉戟造成额外[[/r 1d8]]伤害，并且三叉戟在近战中使用时获得推撞特征（额外的伤害骰和推撞特征都已经体现在巴伦的三叉戟打击中）。</p>"
+				},
+				"Devastating Blast": {
+					"name": "毁灭爆震 Devastating Blast",
+					"description": "<p>巴伦向@Template[type:cone|distance:30|damaging:yes]范围内放出闪电。区域内的生物受到[[/r 6d12[electricity]]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>\n<p>巴伦每[[/br 1d4 #rounds]]{1d4轮}只能使用一次该能力。</p>"
+				},
+				"Graveknight's Curse": {
+					"name": "死墓骑士诅咒 Graveknight's Curse",
+					"description": "<p>诅咒会影响任何穿戴死墓骑士的护甲超过1小时以上的生物。</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:40|traits:curse]豁免</p>\n<p><strong>潜伏期</strong> 1小时</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}并且无法脱下护甲(1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}，速度降低10尺，且无法脱下护甲 (1天)</p>\n<p><strong>阶段3</strong> 死亡并转化为护甲的死墓骑士。</p>"
+				},
+				"Ruinous Weapons": {
+					"name": "破灭武器 Ruinous Weapons",
+					"description": "<p>巴伦所持用的任意武器均会获得<em>@UUID[Compendium.pf2e.equipment-srd.DKWuJb2rSgiotOG7]{+1}@UUID[Compendium.pf2e.equipment-srd.DxCuJKynlnMQZHgp]{强击}</em>和<em>@UUID[Compendium.pf2e.equipment-srd.NVst7e69agGG9Qwd]{电击}</em>符文。</p>"
+				},
+				"Sodden Strike": {
+					"name": "雨浸打击 Sodden Strike",
+					"description": "<p>巴伦呼唤无尽风暴为她的打击灌注致命的力量。她进行一次打击，如果命中，海水会灌满目标的肺部，使目标@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大成功@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}）。</p>"
+				},
+				"Weapon Master": {
+					"name": "武器大师 Weapon Master",
+					"description": "<p>巴伦无论持用何种武器，均可以使用该武器的重击专精效果。</p>"
+				}
+			}
 		},
 		"Biloko Reaver": {
 			"name": "Biloko Reaver",
@@ -230,14 +348,48 @@
 			}
 		},
 		"Bog Mummy Amalgamation": {
-			"name": "Bog Mummy Amalgamation",
+			"name": "沼泽木乃伊融合怪 Bog Mummy Amalgamation",
 			"data":{},
-			"items":{}
+			"items":{
+				"Breath of Silt": {
+					"name": "淤泥之息 Breath of Silt",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在该区域内开始回合的生物会感觉自己的肺部似乎充满了淤泥，并必须通过@Check[type:fortitude|dc:25]豁免，否则将无法说话或呼吸。该生物仍然可以屏息，并能在其回合结束时尝试一次新的豁免。</p>\n<p>豁免成功的生物在24小时内临时免疫淤泥之息。</p>"
+				},
+				"Rise Up": {
+					"name": "掘起 Rise Up",
+					"description": "<p><strong>触发</strong> 一个生物在融合怪埋藏的泥浆或泥炭上行走</p>\n<p><strong>需求</strong> 尚未骰先攻</p>\n<hr />\n<p><strong>效果</strong> 沼泽木乃伊融合怪自动注意到这个生物并在骰先攻前@UUID[Compendium.pf2e.actionspf2e.H6v1VgowHaKHnVlG]{掘地 Burrows}。</p>"
+				},
+				"Bog Rot": {
+					"name": "沼腐症 Bog Rot",
+					"description": "<p>此苦难无法被降至阶段1以下，它造成的伤害也无法被治疗，直到它被<em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{移除诅咒 Remove Curse}</em>或相似能力成功治疗；在这之后，这个苦难可以像普通疾病一样被移除。</p>\n<p>被沼腐症杀死的生物会融化成一滩有毒的污泥，除非通过7环<em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或者类似魔法手段外无法复活。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>阶段1</strong> 携带但不发病（1分钟）</p>\n<p><strong>阶段2</strong> [[/r 3d6[negative]]]伤害和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1天)。</p>"
+				},
+				"Fist Flurry": {
+					"name": "重拳连击 Fist Flurry",
+					"description": "<p>融合怪使用两个拳头打击其触及范围内的两个不同目标。它的多重攻击罚值在两次攻击完成之后才会增加。</p>"
+				}
+			}
 		},
 		"Boggard Hunter": {
-			"name": "Boggard Hunter",
+			"name": "沼蜍猎人 Boggard Hunter",
 			"data":{},
-			"items":{}
+			"items":{
+				"Sneak Attack": {
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>沼蜍猎人对措手不及的生物造成额外2d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"emgnuw2mh8qiq7ad": {
+					"name": "沼泽奔行 Swamp Stride",
+					"description": "<p>沼蜍猎人能忽略由于沼泽地形特征产生的困难地形。</p>"
+				},
+				"1t5k82i3zc64lvie": {
+					"name": "恐惧鸣叫 Terrifying Croak",
+					"description": "<p>沼蜍猎人发出可怕的鸣叫声。@Template[type:emanation|distance:30]{30尺}范围内的任何非沼蜍人的生物都会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，除非他们能够成功通过@Check[type:will|dc:25]豁免；豁免中掷出大成功的生物会在1分钟内临时免疫该能力。</p>"
+				},
+				"DYjmZykzGtcQQ6HO": {
+					"name": "蛙舌攫抓 Tongue Grab",
+					"description": "<p>若沼蜍猎人用蛙舌命中一个生物，那么该生物会被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。</p>\n<p>生物可以通过命中AC22并造成至少7点挥砍伤害来切开蛙舌。尽管这么做不会对沼蜍猎人造成伤害，但它可以使沼蜍猎人在经过1星期的休息前无法再次使用蛙舌打击。</p>"
+				}
+			}
 		},
 		"Boulder Deadfall Trap": {
 			"name": "坠石陷阱 Boulder Deadfall Trap",
@@ -346,10 +498,19 @@
 			"items":{}
 		},
 		"Cyclops Bully": {
-			"name": "Cyclops Bully",
-			"blurb": "Cyclops bruisers",
+			"name": "独眼巨人恶霸 Cyclops Bully",
+			"blurb": "独眼巨人彪汉",
 			"data":{},
-			"items":{}
+			"items":{
+				"Brutal Recovery": {
+					"name": "残暴回响 Brutal Recovery",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 独眼巨人恶霸在攻击掷骰或威吓检定中失败（但不是大失败）</p>\n<hr />\n<p><strong>效果</strong> 独眼巨人恶霸将其意志强加给一系列可能的未来。它取得成功，而不是失败。</p>"
+				},
+				"Terrorizing Swing": {
+					"name": "恐怖挥击 Terrorizing Swing",
+					"description": "<p>独眼巨人恶霸对一名近战范围内的敌人尝试@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}，然后对该敌人进行近战打击。</p>\n<p>如果陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物受到伤害，它额外承受[[/r 2d10[bludgeoning]]]伤害，并且@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p>在计算独眼巨人恶霸的多重攻击减值时，本行动视为两次攻击。</p>"
+				}
+			}
 		},
 		"Dajermube": {
 			"name": "Dajermube",
@@ -383,10 +544,10 @@
 		},
 		"Deathly Dream": {
 			"name": "Deathly Dream",
-			"disable": "<p>@Check[type:thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (master) to seal the rift using materials strongly grounded to the Material Plane, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (7th‑level, counteract DC 33) to counteract the portal。</p>",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Seal the Rift|traits:magical,trap,hazard] (大师) to seal the rift using materials strongly grounded to the Material Plane, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (7th‑level, counteract DC 33) to counteract the portal。</p>",
 			"hazarddescription": "<p>Sinister runes adorn the doorway, opening a portal to a realm of nightmares if anyone other than Dwandek opens the door。</p>",
 			"reset": "<p>The deathly dream trap resets automatically as long as it hasn't been disabled or destroyed. Each time it resets, the tiny pocket plane of nightmare it sends its victim into resets as well, so no two victims will ever share the same deathly dream。</p>",
-			"stealthdetails": "<p>(master)</p>",
+			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
 			"items":{}
 		},
@@ -424,11 +585,11 @@
 		},
 		"Entropy Choir": {
 			"name": "Entropy Choir",
-			"disable": "<p>@Check[type:religion|dc:40|name:Exorcise the Spirits|traits:haunt,hazard] (master) to exorcise the spirits and break the power binding them into a single entity, or @Check[type:performance|dc:35|name:Counter the Choir|traits:haunt,hazard](专家)to counter the choir and nullify the destructive elements of its song</p>",
+			"disable": "<p>@Check[type:religion|dc:40|name:Exorcise the Spirits|traits:haunt,hazard] (大师) to exorcise the spirits and break the power binding them into a single entity, or @Check[type:performance|dc:35|name:Counter the Choir|traits:haunt,hazard](专家)to counter the choir and nullify the destructive elements of its song</p>",
 			"hazarddescription": "<p>A choir of ghostly shadows fill the benches in this room, chanting a haunting and unearthly melody。</p>",
 			"reset": "<p>The entropy choir resets automatically after 24 hours, even if it has been disabled or destroyed. It fades away forever once Dwandek and other members of the cult to which it sings its praises are destroyed。</p>",
 			"routine": "<p>(3 actions; auditory, divine, evocation, sonic) The choir continues to sing its grim dirge every round until it is disabled or destroyed. If there are any non‑slowed living creatures in area <strong>A3</strong> when its turn starts, it first uses Call to Nothingness as a single action。</p>\n<p>It uses its remaining actions (or all three actions if there are slowed living creatures in the room already) to focus soul‑shattering choruses onto individual targets。</p>\n<p>The choir can target any living creature in area <strong>A3</strong> with an action, but never more than once per round per creature. It prefers to attack slowed creatures over all others, but it targets non‑slowed creatures if they're the only viable targets. A targeted creature must attempt a @Check[type:fortitude|dc:36|traits:auditory,divine,evocation,sonic] save。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> The target takes [[/r (5d6)[sonic]]]{5d6 sonic伤害}。</p>\n<p><strong>失败</strong> The target takes [[/r (10d6)[sonic]]]{10d6 sonic伤害}。</p>\n<p><strong>大失败</strong> The target takes [[/r (15d6)[sonic]]]{15d6 sonic伤害} and increases their @UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained} condition by 1, to a maximum of drained 4。</p>",
-			"stealthdetails": "<p><strong>Performance</strong> +33 (master); creatures in the area automatically notice the eerily swaying shadows</p>",
+			"stealthdetails": "<p><strong>Performance</strong> +33 (大师); creatures in the area automatically notice the eerily swaying shadows</p>",
 			"data":{},
 			"items":{}
 		},
@@ -456,10 +617,10 @@
 		},
 		"Flensing Chute": {
 			"name": "Flensing Chute",
-			"disable": "<p>@Check[type:thievery|dc:35|name:Decouple Mechanisms|traits:mechanical,trap,hazard] (master) to decouple several mechanisms barely accessible through gaps between the shifting risers, or @Check[type:perception|dc:38|name:mechanical,trap,hazard|traits:Note Stairs Wear Patterns DC] to note which stairs have slightly different wear patterns to know which ones are safe to step on</p>",
+			"disable": "<p>@Check[type:thievery|dc:35|name:Decouple Mechanisms|traits:mechanical,trap,hazard] (大师) to decouple several mechanisms barely accessible through gaps between the shifting risers, or @Check[type:perception|dc:38|name:mechanical,trap,hazard|traits:Note Stairs Wear Patterns DC] to note which stairs have slightly different wear patterns to know which ones are safe to step on</p>",
 			"hazarddescription": "<p>The stairs collapse into a downward spiral。</p>",
 			"reset": "<p>The flensing chute resets automatically。</p>",
-			"stealthdetails": "<p>(master)</p>",
+			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
 			"items":{}
 		},
@@ -648,10 +809,23 @@
 			"items":{}
 		},
 		"Golgopo": {
-			"name": "Golgopo",
-			"publicNotes": "<p>As their empire crumbled and fell into ruin, many cyclopes turned to increasingly depraved and vicious rituals to enhance their divinations and oracular powers. Some, especially those too fearful or suspicious of their fellow cyclopes to collaborate, constructed servants known as golgopos to aid in their rituals. These squat creatures are made from ancient bones dredged from fetid swamps and packed with mud to resemble a squat humanoid. Their heads are little more than the skull of whatever creature's bones were used in their creation with an extra eye socket punched in the forehead, glowing with eerie light。</p>\n<p>Golgopos spend most of their time perched on the shoulder of a cyclops master, acting as secondary casters for foul rituals and casting spells to aid them as needed. Golgopos are generally not evil, however, and one whose master has abandoned them or been destroyed might be convinced to employ their knowledge of ritual magic in service of another。</p>",
+			"name": "骸骨泥妖 Golgopo",
+			"publicNotes": "<p>随着独眼巨人帝国的崩溃和毁灭，许多独眼巨人为了增强他们的占卜和预言能力投入了越来越堕落和邪恶的仪式。一些人，尤其是那些对自己的同类过于恐惧或怀疑而不愿与他们合作的人，创造了被称为骸骨泥妖的仆人来帮助他们进行仪式。这些矮胖的生物是用从恶臭的沼泽中挖出的古老骨头制作的，它们的身体里塞满了泥土，看起来像一个矮胖的人形生物。头部的样子取决于制作时采用了何种生物的头骨，此外还在它的前额多打了一个眼窝，从中会发出诡异的光芒。</p>\n<p>骸骨泥妖大部分时间都栖息在独眼巨人大师的肩膀上，充当邪恶仪式的次要施法者，或者在必要的时候施放法术帮助他们。不过骸骨泥妖本身通常并不邪恶，被主人抛弃或摧毁的骸骨泥妖可以被引导去利用他们的仪式魔法知识来帮助他人。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Ritual Conduit": {
+					"name": "仪式导管 Ritual Conduit",
+					"description": "<p>骸骨泥妖是为了协助进行复杂的仪式而制造的。无论通常需要什么技能，骸骨泥妖都可以在仪式期间使用神秘来尝试次要检定。</p>\n<p>如果骸骨泥妖在次要检定中大失败，它改为取得失败的结果。</p>"
+				},
+				"Warning Call": {
+					"name": "警告 Warning Call",
+					"description": "<p><strong>触发</strong> 一个生物将距离骸骨泥妖10尺内一个@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的盟友作为目标</p>\n<hr />\n<p><strong>效果</strong> 骸骨泥妖预感到了这次攻击，并向盟友发出警告。盟友的DC在抵御触发的攻击时获得+2环境加值。</p>"
+				},
+				"Portents of Doom": {
+					"name": "末日凶兆 Portents of Doom",
+					"description": "<p>骸骨泥妖哀嚎着预告灾难即将来临。@Template[type:emanation|distance:30]{30尺}内的每个生物都必须尝试@Check[type:will|dc:26]豁免。</p>\n<p>骸骨泥妖和独眼巨人对该效果免疫。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响，且暂时免疫1分钟。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}且@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。</p>"
+				}
+			}
 		},
 		"Grave Karina": {
 			"name": "Grave Karina",
@@ -737,16 +911,57 @@
 			}
 		},
 		"Grouloop": {
-			"name": "Grouloop",
-			"blurb": "Female boggard ritualist",
+			"name": "格罗洛普 Grouloop",
+			"blurb": "女性沼蜍人祭司",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Bag of Dead Dragonflies": {
+					"name": "一包蜻蜓干 Bag of Dead Dragonflies"
+				},
+				"Soul-Shaking Croak": {
+					"name": "震魂鸣叫 Soul-Shaking Croak",
+					"description": "<p>格罗洛普发出强力的嘶鸣，这会对@Template[type:emanation|distance:30|damaging:yes]范围内的非沼蜍人生物造成[[/r 6d10[sonic]]]伤害（@Check[type:fortitude|dc:27|basic:true]豁免）。</p>\n<p>处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物在豁免失败时其惊惧状态的层数会增加1（大失败时，该生物还会@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}，直到不再处于惊惧状态）。</p>\n<p>格罗洛普在之后的[[/br 1d4 #rounds]]{1d4轮}内无法再次使用震魂鸣叫。</p>"
+				},
+				"Swamp Stride": {
+					"name": "沼泽奔行 Swamp Stride",
+					"description": "<p>格罗洛普能忽略由于沼泽地形特征产生的困难地形。</p>"
+				},
+				"Tongue Grab": {
+					"name": "蛙舌攫抓 Tongue Grab",
+					"description": "<p>若格罗洛普用蛙舌命中一个生物，那么该生物会被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。</p>\n<p>生物可以通过命中AC24并造成至少9点挥砍伤害来切开蛙舌。尽管这么做不会对格罗洛普造成伤害，但它可以使格罗洛普在经过1星期的休息前无法再次使用蛙舌打击。</p>"
+				}
+			}
 		},
 		"Halbrux Far-sight": {
-			"name": "Halbrux Far-sight",
-			"blurb": "Female cyclops historian",
+			"name": "“远见者”哈布鲁克斯 Halbrux Far-sight",
+			"blurb": "独眼巨人女性历史学家",
 			"data":{},
-			"items":{}
+			"items":{
+				"Flash of History": {
+					"name": "历史的闪光 Flash of History",
+					"description": "<p><strong>频率</strong> 每天三次</p>\n<p><strong>触发</strong> 哈布鲁克斯即将尝试技能检定</p>\n<hr />\n<p><strong>效果</strong> 哈布鲁克斯凝视过去的知识，将检定的成功程度提升一级（例如，将成功改为大成功）。</p>"
+				},
+				"Resolve": {
+					"name": "决意 Resolve",
+					"description": "<p>当哈布鲁克斯在意志豁免上取得成功时，将其视为大成功。</p>"
+				},
+				"Curse of Torrential Knowledge": {
+					"name": "智计决堤诅咒 Curse of Torrential Knowledge",
+					"description": "<p>当哈布鲁克斯使用了她的启示法术后，她的脑海中会充满难以理解的知识。</p>\n<p>哈布鲁克斯每天第一次施法后，她的先攻受到-4减值，直到下一次每日准备。</p>\n<p>哈布鲁克斯每天第二次施法后，她@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到下一次每日准备。</p>"
+				},
+				"Predictive Blows": {
+					"name": "预测一击 Predictive Blows",
+					"description": "<p><strong>触发</strong> 哈布鲁克斯的回合开始</p>\n<hr />\n<p><strong>效果</strong> 哈布鲁克斯预见了一个她能看到的生物的反应，尝试一次对抗该生物反射DC的预言学识检定。</p>\n<p>如果成功，直到哈布鲁克斯回合结束，她的近战打击会对该生物造成额外4d6精准伤害（大成功时6d6）。</p>"
+				},
+				"Quickened Casting": {
+					"name": "瞬发施法 Quickened Casting",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 如果哈布鲁克斯的下一个动作是施放4环或更低环级的法术，则将施法所需的动作数减少1个（最少为1）。</p>"
+				},
+				"Steady Spellcasting": {
+					"name": "稳定施法 Steady Spellcasting",
+					"description": "<p>如果有反应动作会打断哈布鲁克斯的施法行动，她就尝试一次@Check[type:flat|dc:15|showDC:owner]检定。如果成功，她的行动就不会被打断。</p>"
+				}
+			}
 		},
 		"Hivebound Arboreal": {
 			"name": "Hivebound Arboreal",
@@ -795,10 +1010,39 @@
 			"items":{}
 		},
 		"Ixamè": {
-			"name": "Ixamè",
-			"blurb": "Female poison-wracked young cloud dragon",
+			"name": "伊克塞姆 Ixamè",
+			"blurb": "雌性毒伤青年云龙",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deflecting Cloud": {
+					"name": "偏折之云 Deflecting Cloud",
+					"description": "<p><strong>触发</strong> 云龙是一次远程攻击的目标</p>\n<p><strong>需求</strong> 云龙能意识到攻击并且有一只可以自由动作的翅膀；</p>\n<hr />\n<p><strong>效果</strong> 云龙收起翅膀并且创造出滚滚的云雾。在判断触发攻击时，云龙被视为@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，因此在正常情况下，攻击者必须成功通过@Check[type:flat|dc:11]检定才能锁定云龙。</p>\n<p>云龙还会在对抗触发攻击时AC获得+4环境加值。</p>"
+				},
+				"Frightful Presence": {
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Mist Vision": {
+					"name": "迷雾视域 Mist Vision",
+					"description": "<p>雾和蔼不会降低云龙的视野；她会忽略雾和霭带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+				},
+				"Breath Weapon": {
+					"name": "喷吐武器 Breath Weapon",
+					"description": "<p>云龙喷出如同特瓦湖上毒气的毒云，对@Template[type:cone|distance:40]区域造成[[/r 11d6[poison]]]伤害（@Check[type:reflex|dc:29|basic:true]豁免）。</p>\n<p>她在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>"
+				},
+				"Cloud Walk": {
+					"name": "踏云而行 Cloud Walk",
+					"description": "<p>云龙能够行走在云或雾气上，就如同它们是实体地面一般。</p>"
+				},
+				"Draconic Frenzy": {
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>伊克塞姆以任意顺序作出两次爪抓打击和一次角顶打击。</p>"
+				},
+				"Draconic Momentum": {
+					"name": "龙之威势 Draconic Momentum",
+					"description": "<p>每当伊克塞姆的打击造成重击时，喷吐武器就会充能。</p>"
+				}
+			}
 		},
 		"Jackal Guard": {
 			"name": "Jackal Guard",
@@ -806,14 +1050,42 @@
 			"items":{}
 		},
 		"Karumzek": {
-			"name": "Karumzek",
+			"name": "卡鲁姆扎克 Karumzek",
+			"senses": "黑暗视觉，毒素感知（精确）30尺",
 			"data":{},
-			"items":{}
+			"items":{
+				"Poison Sense (precise) 30 feet": {
+					"name": "毒素感知（精确）30尺",
+					"description": "<p>卡鲁姆扎克能感知到任何中毒的生物。它可以使用一个具有专注特征的单动作来确定毒药的类型和当前的阶段。</p>"
+				},
+				"Change Shape": {
+					"name": "变形 Change Shape",
+					"description": "<p>卡鲁姆扎克可以变成超小型的蜘蛛。这不会改变它的速度或打击。</p>"
+				},
+				"Karumzek Venom": {
+					"name": "卡鲁姆扎克毒素 Karumzek Venom",
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 1d6[poison]]] (1轮)</p>\n<p><strong>阶段2</strong> 1d6毒素伤害和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r 2d6[poison]]]、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和力竭1 (1轮)</p>"
+				}
+			}
 		},
 		"Karumzek Swarm": {
-			"name": "Karumzek Swarm",
+			"name": "卡鲁姆扎克集群 Karumzek Swarm",
+			"senses": "黑暗视觉，毒素感知（精确）30尺",
 			"data":{},
-			"items":{}
+			"items":{
+				"Poison Sense (precise) 30 feet": {
+					"name": "毒素感知（精确）30尺",
+					"description": "<p>卡鲁姆扎克能感知到任何中毒的生物。它可以使用一个具有专注特征的单动作来确定毒药的类型和当前的阶段。</p>"
+				},
+				"Karumzek Venom": {
+					"name": "卡鲁姆扎克毒素 Karumzek Venom",
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:28]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 4d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 5d6[poison]]]、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r 6d6[poison]]]、@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和力竭2 (1轮)</p>"
+				},
+				"Swarming Bites": {
+					"name": "集群撕咬 Swarming Bites",
+					"description": "<p>卡鲁姆扎克集群所在空间中的每个敌人受到[[/r 2d6[piercing]]]伤害 (@Check[type:reflex|dc:27|basic:true]豁免) 加卡鲁姆扎克毒素。</p>"
+				}
+			}
 		},
 		"Khefak Scuttler": {
 			"name": "Khefak Scuttler",
@@ -1057,10 +1329,35 @@
 			"items":{}
 		},
 		"Norgorberite Spy": {
-			"name": "Norgorberite Spy",
-			"blurb": "Human infiltrator",
+			"name": "诺格巴间谍 Norgorberite Spy",
+			"blurb": "人类渗透者",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+1 Glamered Leather Armor": {
+					"name": "+1无相皮甲 +1 Glamered Leather Armor",
+					"description": "这种盔甲混合了柔韧的生皮和成型的熟皮，在最大限度的灵活下提供了保护。"
+				},
+				"Ranged Feint": {
+					"name": "远程虚招 Ranged Feint",
+					"description": "<p>当诺格巴间谍成功@UUID[Compendium.pf2e.actionspf2e.QNAVeNKtHA0EUw4X]{虚招 Feints}一个生物时，目标对间谍的远程攻击和近战攻击都@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				},
+				"Reaper's Protection": {
+					"name": "收割者的庇护 Reaper's Protection",
+					"description": "<p><strong>触发</strong> 间谍即将尝试一次豁免掷骰</p>\n<hr />\n<p><strong>效果</strong> 间谍触摸他们的诺格巴圣徽，触发的豁免骰获得+2的环境加值。</p>"
+				},
+				"Quick Draw": {
+					"name": "即时备战 Quick Draw",
+					"description": "<p>诺格巴间谍用交互动作拔出武器，然后用该武器进行打击。</p>"
+				},
+				"Sneak Attack": {
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>诺格巴间谍对措手不及或在其至少两个盟友威胁范围内的生物造成额外4d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Surprise Attack": {
+					"name": "突然袭击 Surprise Attack",
+					"description": "<p>在第一轮战斗中，还没行动的生物对诺格巴间谍@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+				}
+			}
 		},
 		"Old Thrasher": {
 			"name": "老鞭尾 Old Thrasher",
@@ -1085,10 +1382,23 @@
 			}
 		},
 		"Onyiji": {
-			"name": "Onyiji",
-			"blurb": "Female half-orc staff warrior",
+			"name": "奥义吉 Onyiji",
+			"blurb": "女性半兽人杖斗士",
 			"data":{},
-			"items":{}
+			"items":{
+				"Orc Superstition": {
+					"name": "兽人迷信 Orc Superstition",
+					"description": "<p><strong>触发</strong> 奥义吉即将对法术或魔法效果投掷豁免检定</p><hr />\n<p><strong>效果</strong> 奥义吉在触发该反应的豁免检定上获得+1环境加值。</p>"
+				},
+				"Spellstrike": {
+					"name": "法术打击 Spellstrike",
+					"description": "<p><strong>频率</strong> 每天两次</p><hr />\n<p><strong>效果</strong> 奥义吉施放一个法术，并将其与木杖打击结合。她施放<em>@UUID[Compendium.pf2e.spells-srd.O9w7r4BKgPogYDDe]{燃火术 Produce Flame}</em>、<em>@UUID[Compendium.pf2e.spells-srd.gYjPm7YwGtEa1oxh]{冰冻射线 Ray of Frost}</em>或<em>@UUID[Compendium.pf2e.spells-srd.r3NeUnsgt9mS03Sn]{电爪 Shocking Grasp}</em>，但法术效果不会立即显现，而是灌注到接下来的攻击中。她使用木杖打击，并使用该攻击骰的结果决定打击和法术的效果。</p>\n<p>在计算多重攻击减值时，这一动作被计算为两次攻击，但直到法术打击完成后才会应用这些减值。</p>"
+				},
+				"Twisting Tree": {
+					"name": "舞树 Twisting Tree",
+					"description": "<p>当奥义吉用一只手挥舞木杖时，它获得灵巧特征，武器伤害骰的大小增加到d6（这些调整已经反映在上文的打击中）。当她双手挥舞木杖时，它获得招架、长触及和绊摔特征。</p>\n<p>当她使用木杖打击时（包括法术打击中的木杖打击），她可以用花费自由动作的交互行动来放开或改变木杖的握持方式。</p>"
+				}
+			}
 		},
 		"Pugwampi (SoT)": {
 			"name": "厄运小魔怪 Pugwampi (SoT)",
@@ -1164,14 +1474,23 @@
 			}
 		},
 		"Riding Frog": {
-			"name": "Riding Frog",
-			"blurb": "Variant elite giant frog",
+			"name": "骑乘巨蛙 Riding Frog",
+			"blurb": "变体精英巨蛙",
 			"data":{},
-			"items":{}
+			"items":{
+				"Sticky Feet": {
+					"name": "黏性脚趾 Sticky Feet",
+					"description": "<p>当巨蛙在狭窄地面尝试@UUID[Compendium.pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balancing}时，不会措手不及，并且避免坠落的反射检定有+4加值。</p>"
+				},
+				"Tongue Grab": {
+					"name": "蛙舌攫抓 Tongue Grab",
+					"description": "<p>若巨蛙用蛙舌命中一个生物，那么该生物会被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。与一般的攫抓不同，该生物不会陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，但是他也无法移动至沼蜍斥候的蛙舌触及范围之外。</p>\n<p>生物可以通过命中AC13并造成至少2点挥砍伤害来切开蛙舌。尽管这么做不会对巨蛙造成伤害，但它可以使巨蛙在经过一星期的休息前无法再次使用蛙舌打击。</p>"
+				}
+			}
 		},
 		"Rigged Ramen Cart": {
 			"name": "Rigged Ramen Cart",
-			"disable": "<p>@Check[type:thievery|dc:40|name:Disable the Detonation Trigger|traits:hazard,alchemical,mechanical,trap] (master) to disable the detonation trigger</p>",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Disable the Detonation Trigger|traits:hazard,alchemical,mechanical,trap] (大师) to disable the detonation trigger</p>",
 			"hazarddescription": "<p>A seemingly innocent ramen cart is rigged to detonate if moved from its current location。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
@@ -1205,10 +1524,27 @@
 			"items":{}
 		},
 		"Screaming Sulfur": {
-			"name": "Screaming Sulfur",
-			"publicNotes": "<p>A screaming sulfur is a creature born from gasping death and suffocating suffering. When an earthquake or other geological phenomena releases toxic gases, these gases can build up beneath lakes and other large bodies of water. Eventually, they escape the water, expanding into massive clouds that cover the immediate area. Its silent, unexpected arrival can take thousands of lives in an instant. Confused, in pain, and desperate for a way out, the dying souls become trapped in the noxious cloud and amass into this horrifying creature。</p>\n<p>While not truly undead, a screaming sulfur shares many similarities with undead creatures, including the malice of vengeful spirits and the hatred of all living creatures who breathe freely and painlessly。</p>\n<p>A screaming sulfur resembles a cloud made of countless, featureless faces, mouths agape and releasing ghastly wails。</p>",
+			"name": "尖叫硫磺 Screaming Sulfur",
+			"publicNotes": "<p>尖叫硫磺是一种从窒息和痛苦中诞生的生物。地震或其他地质现象释放的有毒气体会在湖泊和其他大型水体的底部积聚，直到有一天逸出水面，膨胀成将附近地区全部笼罩起来的巨大云层。它的到来悄无声息、不可意料，一瞬间就能夺走数千人的生命。困惑、痛苦、绝望，垂死的灵魂被困在毒云中找不到出路，最终汇聚成这个可怕的生物。</p>\n<p>虽然不是真正的不死生物，但尖叫硫磺与不死生物有很多相似之处，包括那充满恶意的复仇之魂和对所有能毫无痛苦地自由呼吸的生物的仇恨。</p>\n<p>尖叫硫磺就像一团由无数张平平无奇的脸组成的云雾，张大嘴巴，骇人地哀嚎着。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Site Bound": {
+					"name": "束缚之地 Site Bound",
+					"description": "<p>尖叫硫磺被束缚在组成它的人死亡的地方。它只能在距离死亡地点不超过1000尺且距离致其死亡的水体边缘不超过100尺的地方活动。</p>\n<hr />\n<p>典型的灵魂通常只能距离在他被杀死或作祟的地点很近的区域逗留。这个限制一般为120尺远。部分幽灵会被限制在对他来说具有特殊意义的房间、建筑、物品或生物上，而非具体的某个地点。</p>"
+				},
+				"Agonizing Cries": {
+					"name": "痛哭灵光 Agonizing Cries",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尖叫硫磺不断哭叫着，伴随着无数灵魂痛苦的哀嚎。</p>\n<p>进入或在光环中开始回合的生物必须成功通过@Check[type:will|dc:26]豁免，否则只要他还在光环范围内，就会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败时@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}）。</p>\n<p>豁免成功的生物暂时免疫1小时。</p>"
+				},
+				"Rejuvenation": {
+					"name": "复生 Rejuvenation",
+					"description": "<p>祝圣形成尖叫硫磺的地点并埋葬剩余的死者即可让尖叫硫磺体内的灵魂安息并前往来世，尖叫硫磺也会因此消散。</p>\n<hr />\n<p>当幽灵被摧毁时，他会在[[/br 2d4 #days]]{2d4天}后在被束缚的地点重新生成，生命值全满。只有在有人确定了幽灵存在的成因并纠正任何阻止幽灵安息的因素时，幽灵才能被永久摧毁。</p>"
+				},
+				"Choke": {
+					"name": "窒息 Choke",
+					"description": "<p>尖叫硫磺用窒息而死的幻觉冲击所有在其痛哭灵光中的生物。每个生物受到[[/r 4d6[mental]]]伤害（@Check[type:will|dc:26|basic:true]豁免）。</p>"
+				}
+			}
 		},
 		"Scrit": {
 			"name": "噬书小魔怪 Scrit",
@@ -1493,28 +1829,64 @@
 			}
 		},
 		"Spider Summoning Rune": {
-			"name": "Spider Summoning Rune",
-			"disable": "<p>@Check[type:thievery|dc:34|name:Erase the Rune|traits:uncommon,magical,trap,complex] (master) to erase the rune or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 36)</em> to dispel the rune。</p>",
-			"hazarddescription": "<p>An @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{Invisible} rune on the floor summons a @UUID[Compendium.pf2e.pathfinder-bestiary.T5CUuPsMPb17d6Qy]{Goliath Spider} when disturbed by someone who isn't wearing Norgorber's religious symbol。</p>",
-			"reset": "<p>The trap resets after 24 hours。</p>",
-			"stealthdetails": "<p>(master)</p>",
+			"name": "蜘蛛召唤符文 Spider Summoning Rune",
+			"disable": "<p>@Check[type:thievery|dc:34|name:Erase the Rune|traits:uncommon,magical,trap,complex] (大师)以清除符文，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (6环；反制DC36) 以驱散符文。</p>",
+			"hazarddescription": "<p>地板上的一个隐形符文在被没有佩戴诺格巴圣徽的人惊动时会召唤一只@UUID[Compendium.pf2e.pathfinder-bestiary.T5CUuPsMPb17d6Qy]{巨硕蜘蛛 Goliath Spider}。</p>",
+			"reset": "<p>陷阱在24小时后重置。</p>",
+			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Summon Animal":{
+					"name": "召唤动物 Summon Animal",
+					"description": "<p><strong>触发</strong> 一个没有佩戴诺格巴圣徽的生物进入符文上方区域</p><hr />\n<p><strong>效果</strong> 陷阱召唤出一只@UUID[Compendium.pf2e.pathfinder-bestiary.T5CUuPsMPb17d6Qy]{巨硕蜘蛛 Goliath Spider}。巨硕蜘蛛投掷先攻并持续存在[[/r 2d6 #rounds]]{2d6轮}，之后法术结束，蜘蛛消失。如果有人在持续时间结束前将陷阱禁用，蜘蛛也会提前消失。与大多数被召唤的生物不同，巨硕蜘蛛每回合可以使用3个动作，并且可以使用反应动作。</p>"
+				}
+			}
 		},
 		"Ssumzili": {
-			"name": "Ssumzili",
-			"publicNotes": "<p>Ssumzilis are lanky, murderous fey who delight in the thrill of the hunt. They are particularly skilled/adept at stalking their prey in the rain and most commonly reside in rainforests and coastal regions, where frequent rain provides ample opportunity to hunt. Camouflaged by their cloud-gray skin, ssumzilis often compete in tests of stealth when hunting in groups, taking particular delight in approaching their quarry as closely as possible without being observed。</p>",
+			"name": "苏姆琪莉 Ssumzili",
+			"speed": "水坑行走",
+			"publicNotes": "<p>苏姆琪莉是一种身材瘦长的凶残精类，热衷于狩猎的刺激。她们特别擅长在雨中跟踪猎物，因此在热带雨林和沿海地区更为常见，那里频繁的降雨为她们提供了充足的狩猎机会。苏姆琪莉有着非常适合伪装的云灰色皮肤，在一起狩猎时还会比拼谁更擅长隐秘行动，尤其喜欢悄无声息地潜行到猎物身边。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deluge Vision": {
+					"name": "暴雨视觉 Deluge Vision",
+					"description": "<p>苏姆琪莉忽略雨水对感官的妨碍。</p>"
+				},
+				"Precipitation Camouflage": {
+					"name": "降雨伪装 Precipitation Camouflage",
+					"description": "<p>即使没有掩蔽，苏姆琪莉也可以在降雨中尝试@UUID[Compendium.pf2e.actionspf2e.XMcnh4cSI32tljXa]{躲藏 Hide}或@UUID[Compendium.pf2e.actionspf2e.VMozDqMMuK5kpoX4]{潜行 Sneak}。</p>"
+				},
+				"Standing Water": {
+					"name": "积水灵光 Standing Water",
+					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>降雨时，苏姆琪莉附近的地面会变得光滑。降雨时，距离苏姆琪莉10尺内的地面变得光滑得难以行走，犹如被释放了<em>@UUID[Compendium.pf2e.spells-srd.Wu0xFpewMKRK3HG8]{油腻术 Grease}</em>（DC29）。苏姆琪莉对该效果免疫。</p>"
+				},
+				"Puddle Stride": {
+					"name": "水坑行走 Puddle Stride",
+					"description": "<p>苏姆琪莉忽略雨水造成的困难地形，例如水坑或潮湿的岩石。</p>"
+				},
+				"Sneak Attack": {
+					"name": "偷袭 Sneak Attack",
+					"description": "<p>苏姆琪莉对措手不及的生物造成额外的2d6精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+				},
+				"Soaking Strike": {
+					"name": "浸水打击 Soaking Strike",
+					"description": "<p>苏姆琪莉进行一次近战打击。如果打击对目标造成了伤害，目标还必须尝试@Check[type:fortitude|dc:32]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 生物被水浸透，其感受到的环境温度降低一级（轻度到重度，重度到极端，以此类推），直到晾干。</p>\n<p><strong>失败</strong> 同成功，并且该生物会@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}1分钟。</p>\n<p><strong>大失败</strong> 同失败，但疲乏会持续到目标进行一次完整休息。</p>"
+				}
+			}
 		},
 		"Stinger Ward Trap": {
-			"name": "Stinger Ward Trap",
-			"disable": "<p>@Check[type:thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (master) to prevent the ghostly stinger from forming or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{Dispel Magic}</em> (6th level; counteract DC 34)。</p>",
-			"hazarddescription": "<p>A ghostly stinger appears in the air and jabs at anyone moving through the opening。</p>",
-			"reset": "<p>The trap resets after 24 hours。</p>",
+			"name": "毒刺之护陷阱 Stinger Ward Trap",
+			"disable": "<p>@Check[type:thievery|dc:36|name:Prevent Ghostly Stinger from Forming|traits:uncommon,magical,trap] (大师)）以防止幽灵毒刺形成或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (6环；反制DC34)。</p>",
+			"hazarddescription": "<p>一只幽灵般的毒刺出现在空中，刺向穿过开口的生物。</p>",
+			"reset": "<p>陷阱在24小时后重置。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deadly Sting":{
+					"name": "致命毒刺 Deadly Sting",
+					"description": "<p><strong>触发</strong> 一个没有佩戴诺格巴圣徽的生物移动活板门</p><hr />\n<p><strong>效果</strong> 陷阱对目标生物释放<em>@UUID[Compendium.pf2e.equipment-srd.iRDCa4OVSTGUD3vi]{紫虫毒刺 Purple Worm Sting}</em> (@Check[type:fortitude|dc:30|traits:trap,uncommon,magical]豁免)。</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 5d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 6d6[poison]]]伤害和力竭2 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 8d6[poison]]]伤害和力竭2 (1轮)</p>"
+				}
+			}
 		},
 		"Stone Ghost": {
 			"name": "石中幽灵 Stone Ghost",
@@ -1573,19 +1945,54 @@
 			"items":{}
 		},
 		"Terwa Chosen": {
-			"name": "Terwa Chosen",
+			"name": "特瓦获选者 Terwa Chosen",
 			"data":{},
-			"items":{}
+			"items":{
+				"Born Lucky": {
+					"name": "天生幸运 Born Lucky",
+					"description": "<p><strong>频率</strong> 每天一次<strong></p><p>触发</strong> 特瓦获选者在一次检定中获得成功或大失败</p><hr /><p><strong>效果</strong> 特瓦获选者将触发的检定结果的成功度提高一级，只能从成功提高到大成功或从大失败提高到失败。</p>"
+				},
+				"Deep Breath": {
+					"name": "闭气 Deep Breath",
+					"description": "<p>特瓦获选者可以屏息10分钟。</p>"
+				},
+				"Celestial Might": {
+					"name": "天外之力 Celestial Might",
+					"description": "<p><strong>频率</strong> 每轮一次</p><hr /><p><strong>效果</strong> 特瓦获选者呼唤星辰之力来强化他的攻击能力。他尝试一次打击。如果命中，特瓦获选者造成额外2d6精准伤害。</p>"
+				},
+				"Champion's Star": {
+					"name": "冠军之星 Champion's Star",
+					"description": "<p><strong>频率</strong> 每小时一次</p><hr />\n<p><strong>效果</strong> 特瓦获选者仰望天空，寻找一颗能引导他进攻的星星。特瓦获选者获得<em>@UUID[Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh]{克敌机先 True Strike}</em>的效果。</p>"
+				}
+			}
 		},
 		"Terwa Prodigy": {
-			"name": "Terwa Prodigy",
+			"name": "特瓦神童 Terwa Prodigy",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deep Breath": {
+					"name": "闭气 Deep Breath",
+					"description": "<p特瓦神童可以屏息10分钟。</p>"
+				}
+			}
 		},
 		"Terwa Star Reader": {
-			"name": "Terwa Star Reader",
+			"name": "特瓦星语者 Terwa Star Reader",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deep Breath": {
+					"name": "闭气 Deep Breath",
+					"description": "<p>特瓦星语者可以屏息10分钟。</p>"
+				},
+				"Move the Stars": {
+					"name": "斗转星移 Move the Stars",
+					"description": "<p><strong>频率</strong> 每天一次<strong></p><p>触发</strong> 攻击或效果会使30尺内的盟友的生命值降低到0，或使盟友获得濒死状态</p><hr /><p><strong>效果</strong> 星语者瞬间领悟了星象的含义，扭转了盟友的命运。盟友保持1点生命值，并且不增加濒死或受伤状态值，还获得10点临时生命值，持续1轮。</p>"
+				},
+				"Guiding Star": {
+					"name": "引导之星 Guiding Star",
+					"description": "<p>星语者寻找能引导自己或盟友进攻的恒星，使自己或30尺内的一位盟友获得<em>@UUID[Compendium.pf2e.spells-srd.Gb7SeieEvd0pL2Eh]{克敌机先 True Strike}</em>的效果。如果星语者选择了一个盟友，效果将持续到目标回合结束。之后，目标在一天内对“引导之星”暂时免疫。</p>"
+				}
+			}
 		},
 		"Thasteron Khefak": {
 			"name": "Thasteron Khefak",
@@ -1594,10 +2001,34 @@
 			"items":{}
 		},
 		"Thiarvo the Quick": {
-			"name": "Thiarvo the Quick",
-			"blurb": "Male halfling treasure hunter",
+			"name": "“快客”蒂亚尔沃 Thiarvo the Quick",
+			"blurb": "男性半身人财宝猎人",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+1 Striking Rod of Wonder": {
+					"name": "+1强击惊异权杖 +1 Striking Rod of Wonder",
+					"description": "<p>这种坚硬但有弹性的木头长剑看起来更像一根杆子而不是武器，但在正确的人手中它可以致命。在颂讴半身人文化之外一般没有人将它用于战斗，但一些颂讴半身人已经能熟练使用它，让它在战斗中与刀剑一样有效。许多半身人甚至会在战斗中唱歌以保持一定的节奏和韵律。它造成1d6钝击伤害。柔韧木棒（fighting stick）是军用单手近战武器，属于棍棒武器组。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.equipment-srd.6wVWwpL9pYr3yQtt]{惊异权杖 Rod of Wonder}</p>"
+				},
+				"strike-Rod": {
+					"name": "权杖 Rod"
+				},
+				"Halfling Luck": {
+					"name": "半身人幸运 Halfling Luck",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 蒂亚尔沃在技能检定或豁免中失败</p>\n<hr />\n<p><strong>效果</strong> 蒂亚尔沃重投检定，然后必须使用新的结果。</p>"
+				},
+				"Fighting Rod": {
+					"name": "战斗权杖 Fighting Rod",
+					"description": "<p>蒂亚尔沃的<em>@UUID[Compendium.pf2e.equipment-srd.6wVWwpL9pYr3yQtt]{惊异权杖 Rod of Wonder}</em>是一支可以当作斗杖使用的@UUID[Compendium.pf2e.equipment-srd.17MQKaMIHQAJNtuu]{柔韧木棒 Fighting Stick}。它可以被蚀刻基础符文，但不能蚀刻性能符文。目前它上面蚀刻了<em>@UUID[Compendium.pf2e.equipment-srd.DKWuJb2rSgiotOG7]{+1潜力符文}</em>和<em>@UUID[Compendium.pf2e.equipment-srd.DxCuJKynlnMQZHgp]{强击}</em>符文。</p>"
+				},
+				"Lethal Fighter": {
+					"name": "致命斗士 Lethal Fighter",
+					"description": "<p>蒂亚尔沃在使用具有非致命特征的武器进行致命攻击时无需承担-2的环境减值。他使用非致命武器进行的攻击会造成额外的2d8精准伤害，无论他做出的是非致命攻击还是致命攻击。这个伤害已经包含在他的近战打击中。</p>"
+				},
+				"Slippery Halfling": {
+					"name": "狡猾半身人 Slippery Halfling",
+					"description": "<p>蒂亚尔沃忽略树木、枝叶、碎石和灌丛造成的困难地形。</p>"
+				}
+			}
 		},
 		"Thorn Guardian": {
 			"name": "Thorn Guardian",
@@ -1684,7 +2115,7 @@
 		},
 		"Venom Pool": {
 			"name": "Venom Pool",
-			"disable": "<p>@Check[type:crafting|dc:40|name:Neutralize the acid|traits:hazard,complex,environmental] (master) or @Check[type:survival|dc:42|name:Neutralize the acid|traits:hazard,complex,environmental] (legendary) to neutralize the acid while within reach of it. Three successes using either skill (or a combination of both) destroys the hazard。</p>",
+			"disable": "<p>@Check[type:crafting|dc:40|name:Neutralize the acid|traits:hazard,complex,environmental] (大师) or @Check[type:survival|dc:42|name:Neutralize the acid|traits:hazard,complex,environmental] (legendary) to neutralize the acid while within reach of it. Three successes using either skill (or a combination of both) destroys the hazard。</p>",
 			"hazarddescription": "A shallow, foul-smelling puddle of toxic acid blocks a narrow hall (marked with a dotted line on the map), and poison bursts from it when disturbed.",
 			"reset": "The hazard ends after 1 minute, contracting to its original size and keeping still until disturbed again.",
 			"routine": "<p>(2 actions) The hazard uses its first action to spread 10 feet down the hallway in both directions. Once out of the hall, each side spreads in a random direction each round, but they don't go through doors. The hazard uses its second action to move the center of the <em>@UUID[Compendium.pf2e.spells-srd.MlpbeZ61Euhl0d60]{Cloudkill}</em> up to 20 feet in any direction to which any part of the pool has line of effect (normally, to encompass the greatest number of characters). If the <em>cloudkill</em> isn't present, it instead uses its second action to produce a new <em>cloudkill</em>, as Poison Puff。</p>",
@@ -1715,10 +2146,23 @@
 			"items":{}
 		},
 		"Yonsuu": {
-			"name": "Yonsuu",
-			"blurb": "Male catfolk head warden",
+			"name": "扬苏 Yonsuu",
+			"blurb": "男性猫族典狱长",
 			"data":{},
-			"items":{}
+			"items":{
+				"Cat's Luck": {
+					"name": "猫族天运 Cat's Luck",
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 扬苏在反射豁免中失败或大失败</p>\n<hr />\n<p><strong>效果</strong> 扬苏重骰触发的豁免并使用较好的结果。</p>"
+				},
+				"Hampering Strike": {
+					"name": "纠缠打击 Hampering Strike",
+					"description": "<p>从扬苏的近战打击中受到伤害的敌人陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮（如果打击大成功，则@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 3}）。</p>"
+				},
+				"Subduing Attack": {
+					"name": "压制攻击 Subduing Attack",
+					"description": "<p>扬苏对处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态或者在至少一个盟友的触及范围内的生物造成额外3d6精准伤害。</p>\n<p>扬苏可以自己决定这部分额外伤害是否是非致命攻击。 </p>"
+				}
+			}
 		},
 		"Yorulu": {
 			"name": "约鲁鲁 Yorulu",
