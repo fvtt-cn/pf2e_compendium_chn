@@ -159,14 +159,20 @@
 			}
 		},
 		"Angry Vegetation": {
-			"name": "Angry Vegetation",
-			"disable": "<p>@Check[type:nature|dc:48|name:Calm a Flower|traits:environmental](大师)or @Check[type:performance|dc:48|name:Calm a Flower|traits:environmental] (传奇) to calm a flower, closing it</p>",
-			"hazarddescription": "<p>Five large flowers in the weed-choked field unfurl, each dusting pollen onto vines that animate into @UUID[Compendium.pf2e.pathfinder-bestiary.NTXm3ee7WZJ92Sww]{Wemmuths}。</p>",
-			"reset": "<p>Wemmuths collapse into ordinary vines and the trap resets if the area is left alone for 1 minute。</p>",
-			"routine": "<p>(2动作) If there are fewer wemmuths than open flowers, the flowers create more wemmuths (so there as many wemmuths as open flowers) as their first action。</p>\n<p>For their second action, the flowers produce a mindaddling pollen. Each non-plant creature within 30 feet of a flower must succeed at a @Check[type:fortitude|dc:41|name:Mindaddling Pollen|traits:emotion,mental,olfactory] save or become @UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} for 1 round (or @UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused} for 1 round, on a critical failure). The pollen is an emotion, mental, and olfactory effect。</p>",
-			"stealthdetails": "<p>@Check[type:perception|dc:42|traits:action:seek](大师)to notice massive buds beneath the other foliage before they open</p>",
+			"name": "愤怒的植物 Angry Vegetation",
+			"hp": "每朵花",
+			"disable": "<p>@Check[type:nature|dc:48|name:Calm a Flower|traits:environmental](大师)或 @Check[type:performance|dc:48|name:Calm a Flower|traits:environmental] (传奇) 来平息一朵花，使它关闭。</p>",
+			"hazarddescription": "<p>在杂草丛生的土地中绽开着五朵巨花，它们都将花粉洒在藤蔓上，使它们激活成为@UUID[Compendium.pf2e.pathfinder-bestiary.NTXm3ee7WZJ92Sww]{温姆斯 Wemmuths}。</p>",
+			"reset": "<p>如果这个区域持续一分钟无人入侵，温姆斯就会变为原来的藤蔓，这个陷阱重置。</p>",
+			"routine": "<p>(2动作) 如果此时温姆斯的数目比绽开的花朵数目要少，花朵就会创造更多的温姆斯（使得温姆斯的数目与花朵的数目一致）作为它们的第一个动作。</p>\n<p>作为它们的第二个动作，花朵会产出一片思维钝化的花粉。每个位于花朵30尺内的非植物生物必须成功通过@Check[type:fortitude|dc:41|name:Mindaddling Pollen|traits:emotion,mental,olfactory]豁免，否则就会@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}一轮（大失败时则是@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮）。花粉是一个情绪，心灵以及嗅觉效应。</p>",
+			"stealthdetails": "<p>@Check[type:perception|dc:42|traits:action:seek](大师)来在揭开枝叶前发现其下大量的花芽。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Bloom":{
+					"name": "绽放 Bloom",
+					"description": "<p><strong>触发</strong> 一名非植物生物进入这片花园</p>\n<hr />\n<p><strong>效果</strong> 花朵打开，生成一只@UUID[Compendium.pf2e.pathfinder-bestiary.NTXm3ee7WZJ92Sww]{温姆斯 Wemmuth}，随后危害投掷先攻，温姆斯会在危害的回合行动。</p>"
+				}
+			}
 		},
 		"Ararda": {
 			"name": "废土巨灵 Ararda",
@@ -230,18 +236,40 @@
 			}
 		},
 		"Axiomatic Polymorph Trap": {
-			"name": "Axiomatic Polymorph Trap",
-			"disable": "<p>@Check[type:thievery|dc:48|name:Drain the Glyph's Power|traits:magical,trap](大师)to drain the glyph's power harmlessly, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (9th level; counteract DC 42) to counteract the glyph</p>",
-			"hazarddescription": "<p>A Utopian glyph transforms trespassers into aeons。</p>",
+			"name": "公理变形陷阱 Axiomatic Polymorph Trap",
+			"disable": "<p>@Check[type:thievery|dc:48|name:Drain the Glyph's Power|traits:magical,trap](大师)来无害地吸取符号的力量，或是<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (9环，反制DC42)来反制变形。</p>",
+			"hazarddescription": "<p>一个奇匠族的符号将非法入侵者转变为御衡者。</p>",
 			"reset": "<p>1小时</p>",
 			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Axiomatic Polymorph":{
+					"name": "公理变形 Axiomatic Polymorph",
+					"description": "<p><strong>触发</strong> 一个生物在没有用奇匠语说出通行语（“历史与人类的未来”）的情况下移动到进入奇观殿（<strong>N4</strong>区域）的入口10尺内</p>\n<hr />\n<p><strong>效果</strong> 每个在门20尺内的生物都成为<em>@UUID[Compendium.pf2e.spells-srd.dN8QBNuTiaBHCKUe]{恶意变形术 Baleful Polymorph}</em>（@Check[type:will|dc:42|name:Baleful Polymorph|traits:incapacitation,polymorph,magical]豁免）的目标，不过这个效应会把生物转变为@UUID[Compendium.pf2e.pathfinder-bestiary.LVhVb7abhv4onzZZ]{仲裁者 Arbiter}御衡者而不是动物。</p>"
+				}
+			}
 		},
 		"Barking Stag": {
-			"name": "Barking Stag",
+			"name": "吠鹿 Barking Stag",
 			"data":{},
-			"items":{}
+			"items":{
+				"Foil the Hunt": {
+					"name": "挫败猎捕 Foil the Hunt",
+					"description": "<p>当吠鹿没有受伤时，无论它的行进速度是多少，它都可以从@UUID[Compendium.pf2e.actionspf2e.SB7cMECVtE06kByk]{掩盖行踪 Cover Tracks}效果中受益。</p>"
+				},
+				"Arrow Vulnerability": {
+					"name": "箭易伤 Arrow Vulnerability",
+					"description": "<p>吠鹿会额外受到箭的10点伤害（但不能是弩矢或是其他弹药）。</p>"
+				},
+				"Antler Toss": {
+					"name": "鹿角高抛 Antler Toss",
+					"description": "<p><strong>需求</strong> 吠鹿的鹿角@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}了一个生物</p>\n<hr />\n<p><strong>效果</strong> 吠鹿将被擒抱的生物抛到20尺高空以及一个它选择的方向15尺远的位置，并对该生物造成[[/r (3d10+12)[piercing]]]伤害以及坠落伤害。</p>"
+				},
+				"Trample": {
+					"name": "践踏 Trample",
+					"description": "<p>中型或小型，蹄踢，@Check[type:reflex|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Bitter Truth Bandit": {
 			"name": "苦涩真相帮强盗 Bitter Truth Bandit",
@@ -571,29 +599,99 @@
 			}
 		},
 		"Convergence Lattice": {
-			"name": "Convergence Lattice",
-			"disable": "<p>@Check[type:thievery|dc:40|name:Obliterate a Key Rune|traits:magical,trap](大师)or @Check[type:religion|dc:35|name:Obliterate a Key Rune|traits:magical,trap](大师)four times to obliterate each of the four key runes。</p>\n<p>A @Check[type:thievery|dc:45|name:Stop the Clockwork's Movement|traits:magical,trap] (传奇) check (or breaking the lattice) stops the clockwork's movement and prevents it from resetting, but doesn't stop its current activation。</p>",
-			"hazarddescription": "<p>A complex clockwork of bright metal and delicately carved gemstones, the lattice's interlocking gears begin to whir as golden runes glow across its surface。</p>",
-			"reset": "<p>The <em>convergence lattice</em> deactivates and resets after there are no uncontrolled targets within line of sight for 1 minute。</p>",
-			"routine": "<p>(3动作) The <em>convergence lattice</em> uses its first action to call for aid. Each convergent creature within 100 feet of the lattice Strides toward the lattice as a reaction. Creatures thus called continue to move toward the lattice on their turn each round until they are adjacent to it, at which point they defend it with their lives。</p>\n<p>The lattice uses its second action to deal [[/r (16d6)[mental]]]{16d6心灵伤害} (@Check[type:will|dc:42|basic:true] save) to a non-convergent creature within 100 feet. This damage is nonlethal; a creature knocked out by this damage doesn't gain the dying condition and is automatically @UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{Controlled} by the convergence lattice when they awaken。</p>\n<p>The lattice uses its third action to make the same attack against a second non-convergent creature within 100 feet; if there isn't such a second creature, it doesn't take its third action。</p>",
-			"stealthdetails": "<p>(大师)to realize the lattice is a complex clockwork before it begins to move; noticing the lattice itself is DC 0。</p>",
+			"name": "统合奇方 Convergence Lattice",
+			"disable": "<p>@Check[type:thievery|dc:40|name:Obliterate a Key Rune|traits:magical,trap](大师)或@Check[type:religion|dc:35|name:Obliterate a Key Rune|traits:magical,trap](大师)四次来抹除四个关键的符文。</p>\n<p>@Check[type:thievery|dc:45|name:Stop the Clockwork's Movement|traits:magical,trap] (传奇) 检定（或是破坏奇方）可以停下奇方的运作并阻止它重置，但不会停止它目前的效应。</p>",
+			"hazarddescription": "<p>统合奇方是一个由明亮金属以及精巧雕刻而成的宝石构成的复杂齿轮机械，随着环绕在它表面的金色符文亮起，它那联锁的齿轮就会开始转动起来。</p>",
+			"reset": "<p>当没有非统合生物的目标出现在视线内1分钟后，<em>统合奇方</em>会停止活动并重置。</p>",
+			"routine": "<p>(3动作) <em>统合奇方</em>使用它的第一个动作来召集支援。每个位于奇方100尺内的统合生物会以一个反应动作向奇方行走。以此方式被召集的生物会在他们每轮的回合里向奇方移动，直到他们与其相邻，在那之后他们就会誓死防御。</p>\n<p>奇方会使用它的第二个动作来对100尺内的一个非统合生物造成[[/r 16d6[mental]]]伤害（@Check[type:will|dc:42|basic:true]豁免）。这个伤害是非致命的，一个被这个伤害击晕的生物不会获得濒死状态，而是在醒来时自动被统合奇方@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{控制 Controlled}。</p>\n<p>奇方会使用它的第三个动作来对100尺的第二个非统合生物进行同样的攻击，如果没有第二个可以攻击的生物，它就不会进行第三个动作。</p>",
+			"stealthdetails": "<p>(大师)来在奇方运作起来之前意识到它是一个复杂的齿轮机械，仅仅是注意到奇方的DC为0。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Begin Convergence":{
+					"name": "统合启动 Begin Convergence",
+					"description": "<p><strong>触发</strong> 一个没有被统合奇方@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{控制 Controlled}的生物看到了它</p>\n<hr />\n<p><strong>效果</strong> 奇方的齿轮开始运作，它投掷先攻。</p>"
+				}
+			}
 		},
 		"Convergent Giant Eagle": {
-			"name": "Convergent Giant Eagle",
+			"name": "统合巨鹰 Convergent Giant Eagle",
 			"data":{},
-			"items":{}
+			"items":{
+				"Convergent Link": {
+					"name": "统合连结 Convergent Link",
+					"description": "<p>拥有这个能力的生物可以通过操纵成缕的奇匠语符文灵光来互相交流。</p>\n<p>这有着射程300尺的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.kdhbPaBMK1d1fpbA]{心灵感应 Telepathy}的效果，但需要视觉线。</p>"
+				},
+				"Disrupted Link": {
+					"name": "受扰连结 Disrupted Link",
+					"description": "<p>当统合巨鹰处于@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}、@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}或@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}时，它将失去它的统合连结以及统合战术的能力。</p>"
+				},
+				"Evasion": {
+					"name": "反射闪避 Evasion",
+					"description": "<p>当巨鹰在反射豁免中成功时，它会得到大成功的结果作为代替。</p>"
+				},
+				"Convergent Tactics": {
+					"name": "统合战术 Convergent Tactics",
+					"description": "<p>统合巨鹰的攻击对位于一名拥有统合战术的盟友的触及范围内的生物额外造成[[/r 4d8]]伤害。</p>"
+				},
+				"Eagle Dive": {
+					"name": "巨鹰俯冲 Eagle Dive",
+					"description": "<p>巨鹰直线@UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Flies}最多两倍于飞行速度的距离，下降至少10尺，随后进行一次爪抓打击。</p>"
+				},
+				"Snatch": {
+					"name": "抓握 Snatch",
+					"description": "<p>统合巨鹰能在用爪子@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或是@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}生物时以半速@UUID[Compendium.pf2e.actionspf2e.cS9nfDRGD83bNU1p]{飞行 Fly}，带着该生物一起移动。</p>"
+				}
+			}
 		},
 		"Convergent Kendley Nathrael": {
-			"name": "Convergent Kendley Nathrael",
+			"name": "统合肯德丽·纳什瑞尔 Convergent Kendley Nathrael",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Key to Strongbox in A10": {
+					"name": "A10区域保险箱钥匙 Key to Strongbox in A10"
+				},
+				"Convergent Link": {
+					"name": "统合连结 Convergent Link",
+					"description": "<p>拥有这个能力的生物可以通过操纵成缕的奇匠语符文灵光来互相交流。</p>\n<p>这有着射程300尺的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.kdhbPaBMK1d1fpbA]{心灵感应 Telepathy}的效果，但需要视觉线。</p>"
+				},
+				"Disrupted Link": {
+					"name": "受扰连结 Disrupted Link",
+					"description": "<p>当肯德丽处于@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}、@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}或@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}时，她将失去她的内在法术，统合连结以及统合战术的能力。</p>"
+				},
+				"Convergent Calm": {
+					"name": "统合安定 Convergent Calm",
+					"description": "<p>当肯德丽施放<em>@UUID[Compendium.pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>时，被@UUID[Compendium.pf2e.extinction-curse-bestiary.25BUnECSaTWkHqZQ]{统合奇方 Convergence Lattice}@UUID[Compendium.pf2e.conditionitems.9qGBRpbX9NEwtAAr]{控制 Controlled}的生物将会自动豁免失败，但他们依旧可以对没有被<em>统合奇方</em>控制的生物使用敌对动作。</p>\n<p>每当她维持法术时，受到这个法术影响的生物就会暴露在<em>统合奇方</em>的影响之下，如同与她进行了交流一样。</p>"
+				},
+				"Convergent Tactics": {
+					"name": "统合战术 Convergent Tactics",
+					"description": "<p>肯德丽的攻击（包括<em>@UUID[Compendium.pf2e.spells-srd.60sgbuMWN0268dB7]{念动射弹 Telekinetic Projectile}</em>）对位于一名拥有统合战术的盟友的触及范围内的生物额外造成[[/r 4d8]]伤害。</p>"
+				}
+			}
 		},
 		"Convergent Soldier": {
-			"name": "Convergent Soldier",
+			"name": "统合士兵 Convergent Soldier",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Eagle Garrison Badge": {
+					"name": "雄鹰驻军徽章 Eagle Garrison Badge"
+				},
+				"Convergent Link": {
+					"name": "统合连结 Convergent Link",
+					"description": "<p>拥有这个能力的生物可以通过操纵成缕的奇匠语符文灵光来互相交流。</p>\n<p>这有着射程300尺的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.kdhbPaBMK1d1fpbA]{心灵感应 Telepathy}的效果，但需要视觉线。</p>"
+				},
+				"Disrupted Link": {
+					"name": "受扰连结 Disrupted Link",
+					"description": "<p>当统合士兵处于@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}、@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}或@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}时，他将失去他的统合连结以及统合战术的能力。</p>"
+				},
+				"Convergent Tactics": {
+					"name": "统合战术 Convergent Tactics",
+					"description": "<p>统合士兵的攻击对位于一名拥有统合战术的盟友的触及范围内的生物额外造成[[/r 4d8]]伤害。</p>"
+				},
+				"Force Communication": {
+					"name": "强迫交流 Force Communication",
+					"description": "<p>统合士兵的奇匠语符文发生爆发。</p>\n<p>任何在统合士兵@Template[type:emanation|distance:100]{100尺}内，因为@UUID[Compendium.pf2e.extinction-curse-bestiary.25BUnECSaTWkHqZQ]{统合奇方 Convergence Lattice}陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied}且可以看到符文的生物必须进行一次@Check[type:will|dc:34]豁免。</p>\n<hr />\n<p><strong>失败</strong> 持续一轮，该生物对拥有统合连结能力的生物@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，且在处理统合战术能力时算作是拥有统合战术的盟友。</p>\n<p><strong>大失败</strong> 同失败，该生物还会因为过载而@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}一轮。</p>"
+				}
+			}
 		},
 		"Corrosive Lizard": {
 			"name": "腐蚀蜥蜴 Corrosive Lizard",
@@ -821,10 +919,34 @@
 			}
 		},
 		"Deghuun (Child of Mhar)": {
-			"name": "Deghuun (Child of Mhar)",
-			"publicNotes": "<p>Mhar, an ancient evil deity of caverns, mountains, and volcanoes, belongs to the pantheon of the Great Old Ones-monstrous beings of alien intellect and unfathomable power. The so-called children of Mhar (known as deghuuns in the chaotic tongues of Mhar's enraptured cultists) physically resemble blue-gray octopods made of stone, mud, and molten iron. Venthole-like craters dot the surface of a deghuun's body, through which the creature can gaze out with a single golden eye that it can move from crater to crater。</p>",
+			"name": "岱戈浑-玛尔子嗣 Deghuun (Child of Mhar)",
+			"publicNotes": "<p>玛尔，古老而邪恶的洞窟、山脉以及火山之神，是旧日支配者万神殿中的一员，隶属于这个万神殿的可怕生物都有着异常的智慧以及深不可测的力量。所谓的玛尔子嗣（在那些陶醉的玛尔教徒口中说出的混乱语句里它被称作“岱戈浑”）在外形上像是由岩石、泥泞以及熔化的钢铁构成的蓝灰色八足生物。排气孔一样的凹坑分布在岱戈浑身体各处，它可以让自己那颗金色的眼球在凹坑之间转移，同时凸出凹坑向外凝视。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Lava Ball": {
+					"name": "熔岩球 Lava Ball"
+				},
+				"Smoke Vision": {
+					"name": "烟雾视觉 Smoke Vision",
+					"description": "<p>岱戈浑忽视由烟雾产生的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，包括因硫磺腐烟造成的烟雾。</p>"
+				},
+				"Unfathomable Aspect": {
+					"name": "诡奇特质 Unfathomable Aspect",
+					"description": "<p>每当岱戈浑进行一次意志豁免来对抗惑控系法术时，法术的施放者必须成功通过一次@Check[type:will|dc:38]豁免，否则在法术持续期间会陷入@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}。</p>"
+				},
+				"Beak Crunch": {
+					"name": "触角刺穿 Beak Crunch",
+					"description": "<p><strong>需求</strong> 岱戈浑使用触手@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}了一个生物</p>\n<hr />\n<p><strong>效果</strong> 该生物受到[[/r (4d8+17)[piercing]]]伤害。</p>"
+				},
+				"Sulfurous Plume": {
+					"name": "硫磺腐烟 Sulfurous Plume",
+					"description": "<p>岱戈浑排出持续[[/br 1d4 #rounds]]{1d4轮}的腐蚀性烟雾。</p>\n<p>任何在烟雾存在期间在岱戈浑30尺内结束回合的生物会受到[[/r 6d6[fire]]]伤害并@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（@Check[type:fortitude|dc:38]豁免；大成功时可以免除恶心状态，大失败时会@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。</p>\n<p>因这种方式而陷入恶心时，该生物会在对抗岱戈浑的<em>@UUID[Compendium.pf2e.spells-srd.U58aQWJ47VrI36yP]{镜花水月 Hallucination}</em>的豁免时获得-2状态减值。</p>\n<p>任何位于烟雾中的生物会隐蔽，且将其他生物视作@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。强风可以吹散这种烟雾。</p>"
+				},
+				"Tentacle Assault": {
+					"name": "触手打击 Tentacle Assault",
+					"description": "<p>岱戈浑进行3次触手打击，每次必须是触及范围内的不同生物。这些攻击会如通常那样计算多重攻击减值。</p>"
+				}
+			}
 		},
 		"Delamar Gianvin": {
 			"name": "德拉马·詹文 Delamar Gianvin",
@@ -1041,9 +1163,22 @@
 			}
 		},
 		"Elysian Sheep": {
-			"name": "Elysian Sheep",
+			"name": "极乐羊 Elysian Sheep",
 			"data":{},
-			"items":{}
+			"items":{
+				"Nimble Grazer": {
+					"name": "灵活草食者 Nimble Grazer",
+					"description": "<p>斜坡与岩石区域对极乐羊来说不视为困难地形。</p>"
+				},
+				"Cowardly": {
+					"name": "怯懦 Cowardly",
+					"description": "<p>只要获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态，极乐羊就会@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}。</p>"
+				},
+				"Trample": {
+					"name": "践踏 Trample",
+					"description": "<p>中型或更小，蹄踢，@Check[type:reflex|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Envenomed Thorns Trap": {
 			"name": "带毒荆棘陷阱 Envenomed Thorns Trap",
@@ -1332,22 +1467,22 @@
 			}
 		},
 		"Guthallath Rockslide": {
-			"name": "Guthallath Rockslide",
-			"hp": "硬度 10in the guthallath's erosion aura",
-			"disable": "<p>@Check[type:crafting|dc:48|name:Buttress the Rocks|traits:environmental] (传奇) to buttress the collapsing rocks in three different locations. Using large and durable materials (or applicable spells) to support the rocks reduces the check to @Check[type:crafting|dc:45|name:Buttress the Rocks|traits:environmental] (大师)。</p>",
-			"hazarddescription": "<p>The rock walls nearby begin to crumble and collapse。</p>",
-			"reset": "<p>The guthallath can reset the hazard with a few days of work stacking the fallen rocks。</p>",
-			"routine": "<p>(2动作) On the hazard's first action, any areas of crumbling rocks from a previous round collapse, making a falling rocks Strike against each creature in the area。</p>\n<p>On its second action, the hazard crumbles rocks in a 20- foot radius around the previous collapse. A character can @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek} (DC 40) to determine where the rocks will fall on the following round, but on a critical failure, they incorrectly identify where the rocks will fall。</p>",
-			"stealthdetails": "<p>(大师)to notice the odd aging of the stones, seemingly far older and more weathered than the surrounding rocks</p>",
+			"name": "巨神兵引发的滑坡 Guthallath Rockslide",
+			"hp": "在巨神兵的腐蚀灵光内的则是10硬度",
+			"disable": "<p>@Check[type:crafting|dc:48|name:Buttress the Rocks|traits:environmental] (传奇) 来在三个不同的地方支撑正在塌陷的岩石。使用大型且耐受度高的材料（或是可使用的法术）来支撑岩石可以将检定降为@Check[type:crafting|dc:45|name:Buttress the Rocks|traits:environmental]（大师）。</p>",
+			"hazarddescription": "<p>附近的石墙开始撞击与塌陷。</p>",
+			"reset": "<p>巨神兵可以通过几天的工作来堆叠陨落的岩石以重置这个危害。</p>",
+			"routine": "<p>(2动作) 作为危害的第一个动作，任何在前一轮崩解的岩石区域内的石体会塌陷，并对区域内的每个生物进行1次落石打击。</p>\n<p>作为危害的第二个动作，危害之前塌陷的区域的20尺半径内的岩石会开始崩解。角色可以@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}（DC40）来确定接下来一轮里哪里的岩石会塌方，但大失败时，他会对哪里的岩石将会陨落得出错误的结果。</p>",
+			"stealthdetails": "<p>(大师)来注意到岩石的古怪年份，它们看上去比附近的石体要古老且饱经风霜许多。</p>",
 			"data":{},
 			"items":{
 				"Rumbling Rocks":{
-					"name": "Rumbling Rocks",
-					"description": "<p><strong>触发</strong> The guthallath rolls initiative</p>\n<hr />\n<p><strong>效果</strong> The rocks of the area begin to crumble. The hazard rolls for initiative。</p>"
+					"name": "隆声作响的岩石 Rumbling Rocks",
+					"description": "<p><strong>触发</strong> 巨神兵投掷先攻</p>\n<hr />\n<p><strong>效果</strong> 这个区域的岩石开始崩解。此危害投掷先攻。</p>"
 				},
 				"Early Collapse":{
-					"name": "Early Collapse",
-					"description": "<p><strong>触发</strong> The hazard takes 30 or more damage</p>\n<hr />\n<p><strong>效果</strong> Move the hazard's initiative to immediately follow the creature that damaged the hazard。</p>"
+					"name": "提前塌方 Early Collapse",
+					"description": "<p><strong>触发</strong> 危害受到了30或是更多的伤害</p>\n<hr />\n<p><strong>效果</strong> 将危害的先攻立刻移动到对危害造成伤害的生物之后。</p>"
 				}
 			}
 		},
@@ -1732,14 +1867,56 @@
 			}
 		},
 		"Kimilekki": {
-			"name": "Kimilekki",
+			"name": "吉米勒姬 Kimilekki",
 			"data":{},
-			"items":{}
+			"items":{
+				"Truth Vulnerability": {
+					"name": "反感真相 Truth Vulnerability",
+					"description": "<p>正是迷诱魔的谎言在维系着它们的存在，而真相则会毁灭它们。</p>\n<p>当一个揭示效果反制或是揭露了迷诱魔的幻术或是迷诱魔在一次阻止它说谎的效应（例如<em>@UUID[Compendium.pf2e.spells-srd.aewxsale5xWEPKLk]{诚实之域 Zone of Truth}</em>）中豁免失败时，它都会受到[[/r 5d6[mental]]]伤害。</p>\n<p>对于每个效应它只会受到一次这样的伤害，即使该效应揭示了多个幻术或是阻止了多次谎言也是这样。</p>"
+				},
+				"Captive Rake": {
+					"name": "耙抓俘虏 Captive Rake",
+					"description": "<p><strong>需求</strong> 生物被迷诱魔的螯@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}</p>\n<hr />\n<p><strong>效果</strong> 迷诱魔将被攫抓的生物拉近最多5尺，随后对它进行两次爪抓打击。这两次打击在计算迷诱魔的多重攻击减值时算作是一次打击，而且减值只有在两次打击都结算之后才会增加。</p>"
+				},
+				"Steady Spellcasting": {
+					"name": "稳定施法 Steady Spellcasting",
+					"description": "<p>当一个反应动作将要打断迷诱魔的法术时，它可以进行一次@Check[type:flat|dc:15]，成功时将会避免被打断。</p>"
+				},
+				"Sudden Betrayal": {
+					"name": "突然背叛 Sudden Betrayal",
+					"description": "<p>只要先攻投掷前，迷诱魔可以意识到至少一个敌人的存在，它就可以使用欺骗来作为先攻检定。</p>\n<p>当使用欺骗作为先攻时，它的欺骗能够获得+2环境加值。</p>"
+				},
+				"Treacherous Veil": {
+					"name": "欺诈面纱 Treacherous Veil",
+					"description": "<p>迷诱魔的<em>@UUID[Compendium.pf2e.spells-srd.i35dpZFI7jZcRoBo]{幻象伪装 Illusory Disguise}</em>可以使它成为任何体型的生物的模样。</p>"
+				},
+				"Twisted Desires": {
+					"name": "扭曲欲望 Twisted Desires",
+					"description": "<p>每月一次，迷诱魔可以使得一名凡人类人生物获得由深渊存在赋予的<em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>效果，不过迷诱魔常常会利用它那欺瞒的本质来扭曲神迹的效果。</p>"
+				}
+			}
 		},
 		"Kirosthrek": {
-			"name": "Kirosthrek",
+			"name": "基罗斯瑞柯 Kirosthrek",
 			"data":{},
-			"items":{}
+			"items":{
+				"Thoughtsense (Imprecise) 60 feet": {
+					"name": "思维感知 (模糊感官) 60 尺",
+					"description": "<p>基罗斯瑞柯可以在上文写出的范围内感知到生物的心灵特质。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Thoughtsense]</p>"
+				},
+				"Divert Thoughts": {
+					"name": "思维偏折 Divert Thoughts",
+					"description": "<p><strong>触发</strong> 基罗斯瑞柯要进行对抗法术的豁免骰</p>\n<hr />\n<p><strong>效果</strong> 基罗斯瑞柯偏斜法术的部分能量，在豁免时获得+2环境加值，如果法术拥有心灵特征，则是+4环境加值。</p>\n<p>如果她在豁免中大成功，她可以在下个回合使用施法动作来在不消耗法术位的情况下以同样的环级施放触发的法术。</p>"
+				},
+				"Psychogenic Secretions": {
+					"name": "精神分泌 Psychogenic Secretions",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入这个弥漫区域的生物必须进行一次@Check[type:will|dc:42]豁免。</p>\n<p>失败时，该生物会@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟（大失败时则是@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，且还会@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮）。</p>\n<p>豁免成功的生物会对精神分泌临时免疫1分钟。</p>"
+				},
+				"Consume Knowledge": {
+					"name": "吞食知识 Consume Knowledge",
+					"description": "<p>基罗斯瑞柯侵入100尺内一个生物的心灵，试图吞食其高等思考的能力。该生物进行一次@Check[type:will|dc:42]豁免。</p>\n<p>使用吞食知识会立刻终止这个能力之前对另一个生物产生的效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>失败</strong> 该生物缓慢1且只能进行基本动作，持续1分钟。</p>\n<p><strong>大失败</strong> 同失败，且基罗斯瑞柯会@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened 1}，持续1分钟。他可以使用额外的动作来行走，打击，如果目标拥有已准备的法术或是法术库，他还可以用额外的动作来施法。</p>"
+				}
+			}
 		},
 		"Krooth Summoning Rune": {
 			"name": "食鳄兽召唤符文 Krooth Summoning Rune",
@@ -2422,27 +2599,101 @@
 			}
 		},
 		"Sarvel Ever-Hunger": {
-			"name": "Sarvel Ever-Hunger",
+			"name": "“永恒饥饿”萨维尔 Sarvel Ever-Hunger",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-Spiked Gauntlet":{
+					"name": "+3上等强击邪恶带刺铁手套 Spiked Gauntlet",
+					"description": "<p>提供和标准铁手套一样的防御功能，但这种铁手套关节上还突出了一组尖刺让拳击造成穿刺伤害。</p>"
+				},
+				"Attack of Opportunity (Tentacle Only)": {
+					"name": "借机攻击-仅触手 Attack of Opportunity (Tentacle Only)",
+					"description": "<p>仅触手</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Echoes of Aeons": {
+					"name": "万古回响 Echoes of Aeons",
+					"description": "<p>在萨维尔回合开始时，如果他已经死亡，失去意识或是因其他原因无法行动，他之前对于尚未完成的<em>灭绝诅咒</em>仪式的操作将使得他的身体汲取一颗<em>万古宝珠</em>的力量。</p>\n<p>这种力量的充盈将在不造成任何受伤状态的情况下完全治愈他的身体，使得他长出一根额外的触手，并以10级效果以及[[/r 1d20+42 #Counteract]]{+42}的反制调整值反制萨维尔身上的所有不利效果。</p>\n<p>已经被萨维尔使用过或是被英雄们打破连接的万古宝珠无法再为这个能力提供力量。</p>"
+				},
+				"Enraging Stench": {
+					"name": "激怒恶臭 Enraging Stench",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在弥漫范围内进入或是开始自己回合的生物必须通过一次@Check[type:fortitude|dc:45]豁免。失败时，该生物将@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}并@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1轮。如果结果是大失败，它在困惑状态时任何打击或是其他效果都不能以萨维尔为目标。</p>\n<p>在弥漫范围内时，该生物从恶心状态恢复的豁免会获得-2减值。</p>\n<p>豁免成功的生物将对所有地蜥人的恶臭临时免疫1分钟。萨维尔可以使用自由动作来压制或是施放这个灵光。</p>"
+				},
+				"Touch of Zevgavizeb": {
+					"name": "泽乌伽瓦灾布之触 Touch of Zevgavizeb",
+					"description": "<p>战斗开始时，萨维尔会有两个触手。每个触手都有66点HP并对区域伤害免疫。</p>\n<p>任何生物可以通过专门选择触手为目标并造成等同于触手HP的伤害来切断一根触手。没有被完全切断的触手会在任何生物回合结束时恢复至满HP。</p>\n<p>萨维尔每有一个触手，他就会在回合开始时获得一个额外的反应动作，仅可用于借机攻击。如果他没有触手，他就不再能够使用触手打击，自主抽打或是紧勒。</p>"
+				},
+				"Constrict": {
+					"name": "紧勒 Constrict",
+					"description": "<p>[[/r (4d8+12)[bludgeoning]]]伤害，@Check[type:fortitude|dc:45|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+				},
+				"Writhe Independently": {
+					"name": "自主抽打 Writhe Independently",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 萨维尔使用他目前持有的每个触手进行一次触手打击（最多六次打击），不过他对于每个目标不能进行超过1次打击。每次打击都计入他的多重攻击减值，但减值在所有的这些攻击结算之后才会增加。</p>"
+				}
+			}
 		},
 		"Saurian Warmonger": {
-			"name": "Saurian Warmonger",
-			"publicNotes": "<p>These saurians adopt warfare as their primary role and greatest calling. They particularly excel at taking slaves。</p>\n<hr />\n<p>Enormous tyrannosaurus-humanoids, saurians are ancient beings who predate the rise of humans and dwell in the world's primeval jungles. While the saurians presented here are evil, saurians of all alignments exist。</p>",
+			"name": "蜥龙人好战者 Saurian Warmonger",
+			"publicNotes": "<p>这些蜥龙人将战争作为他们主要的职务以及最伟大的使命。他们尤其善于蓄奴。</p>\n<hr />\n<p>蜥龙人是庞大的暴龙头类人生物，他们是早于人类崛起的古老存在，居住在世界的原始丛林之中。尽管在此描述的蜥龙人是邪恶的，但实际上所有阵营的蜥龙人都存在。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"equipment-+1 Striking Mancatcher": {
+					"name": "+1强击猎具 Mancatcher"
+				},
+				"strike-Mancatcher": {
+					"name": "猎具 Mancatcher"
+				},
+				"Boneshaking Roar": {
+					"name": "震骨咆哮 Boneshaking Roar",
+					"description": "<p>蜥龙人好战者愤怒咆哮，释放出原始世界的伟力。</p>\n<p>@Template[type:emanation|distance:30]{30尺}内的非恐龙生物会受到[[/r 10d6[sonic]]]伤害（@Check[type:fortitude|dc:34|basic:true]豁免）。豁免失败时，该生物还会@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，持续1轮（大失败时还会@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}[[/r 1d4 #Stunned Value]]{1d4轮}）。</p>\n<p>蜥龙人好战者在[[/br 1d4 #Boneshaking Roar Recharge]]{1d4轮}内无法再次使用震骨咆哮。</p>"
+				},
+				"Primordial Balance": {
+					"name": "原生平衡感 Primordial Balance",
+					"description": "<p>蜥龙人好战者使用单手持握猎具。</p>"
+				},
+				"Restrain": {
+					"name": "缚足 Restrain",
+					"description": "<p>当蜥龙人好战者使用猎具成功打击目标时，目标必须成功通过@Check[type:reflex|dc:34]豁免，否则就会被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直到好战者的下一个回合结束。</p>\n<p>每次该生物在试图@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}好战者的时候失败时，它就会受到[[/r 2d6[piercing]]]伤害。</p>"
+				},
+				"Three-Limbed Lunge": {
+					"name": "三肢猛袭 Three-Limbed Lunge",
+					"description": "<p>蜥龙人好战者进行3次打击：双手的武器各一次，尾巴一次。他能以任何顺序进行这些打击，不过每次打击都会正常地计算多重攻击减值。</p>\n<p>在进行三肢猛袭以后，蜥龙人好战者直到下个回合开始前将处于@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。</p>"
+				}
+			}
 		},
 		"Saurian Worldwatcher": {
-			"name": "Saurian Worldwatcher",
-			"publicNotes": "<p>The longest-lived saurians favor introspection and take the long view of things-though this thoughtfulness should not be mistaken for weakness. Other saurians defer to worldwatchers' experience。</p>\n<hr />\n<p>Enormous tyrannosaurus-humanoids, saurians are ancient beings who predate the rise of humans and dwell in the world's primeval jungles. While the saurians presented here are evil, saurians of all alignments exist。</p>",
+			"name": "蜥龙人观世者 Saurian Worldwatcher",
+			"publicNotes": "<p>寿命最长久的那批蜥龙人喜好内省并以长远的目光看待事物，但可别把这种深思熟虑看做是懦弱的体现。其他蜥龙人都会遵从观世者的经验之谈。</p>\n<hr />\n<p>蜥龙人是庞大的暴龙头类人生物，他们是早于人类崛起的古老存在，居住在世界的原始丛林之中。尽管在此描述的蜥龙人是邪恶的，但实际上所有阵营的蜥龙人都存在。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Raptor Jaw Disarm": {
+					"name": "猛兽牙反 Raptor Jaw Disarm",
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>触发</strong> 一个生物近战打击观世者但未命中</p>\n<hr />\n<p><strong>效果</strong> 观世者折断触发生物的肢体或是武器。如果触发的打击是无武装攻击，则触发的生物受到[[/r 6d6[bludgeoning]]]伤害并在肢体复位（这是一个拥有操作特征的交互动作）前处于@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}状态。如果触发的打击是使用武器的打击，该武器受到[[/r 6d6[bludgeoning]]]伤害。</p>"
+				},
+				"Boneshaking Roar": {
+					"name": "震骨咆哮 Boneshaking Roar",
+					"description": "<p>蜥龙人观世者愤怒咆哮，释放出原始世界的伟力。</p>\n<p>@Template[type:emanation|distance:30]{30尺}内的非恐龙生物会受到[[/r 10d6[sonic]]]伤害（@Check[type:fortitude|dc:37|basic:true]豁免）。豁免失败时，该生物还会@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，持续1轮（大失败时还会@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}[[/r 1d4 #Stunned Value]]{1d4轮}）。</p>\n<p>蜥龙人观世者在[[/br 1d4 #Boneshaking Roar Recharge]]{1d4轮}内无法再次使用震骨咆哮。</p>"
+				},
+				"5Stunning Blow": {
+					"name": "震慑打击 Stunning Blow",
+					"description": "<p>当蜥龙人观世者使用拳或是薙刀打击命中目标时，该生物必须成功通过@Check[type:fortitude|dc:39]豁免，否则就会@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（重击时@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}）。</p>"
+				}
+			}
 		},
 		"Shanchek": {
-			"name": "Shanchek",
-			"publicNotes": "<p>Xulgath thoughtmaws are inheritors of the xulgaths' ancient psychic legacy. They eagerly and liberally use their ability to extract knowledge from their foes to quicken their own prodigious intellects。</p>",
+			"name": "珊切柯 Shanchek",
+			"publicNotes": "<p>地蜥摄智者是地蜥人远古心灵传说的继承者。他们渴望且自由地使用他们的能力从敌人身上汲取知识来加深自身深邃的睿智。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Psychogenic Secretions": {
+					"name": "精神分泌 Psychogenic Secretions",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入这个弥漫区域的生物必须进行一次@Check[type:will|dc:36]豁免。</p>\n<p>失败时，该生物会@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟（大失败时则是@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，且还会@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮）。</p>\n<p>豁免成功的生物会对精神分泌临时免疫1分钟。</p>"
+				},
+				"Consume Knowledge": {
+					"name": "吞食知识 Consume Knowledge",
+					"description": "<p>摄智者侵入100尺内一个生物的心灵，试图吞食其高等思考的能力。该生物进行一次@Check[type:will|dc:36]豁免。</p>\n<p>使用吞食知识会立刻终止这个能力之前对另一个生物产生的效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>失败</strong> 该生物缓慢1且只能进行基本动作，持续1分钟。</p>\n<p><strong>大失败</strong> 同失败，且摄智者会@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened 1}，持续1分钟。他可以使用额外的动作来行走，打击，如果目标拥有已准备的法术或是法术库，他还可以用额外的动作来施法。</p>"
+				}
+			}
 		},
 		"Shoony Hierarch": {
 			"name": "舒尼首领 Shoony Hierarch",
@@ -2756,14 +3007,23 @@
 			}
 		},
 		"Suffering Xulgaths": {
-			"name": "Suffering Xulgaths",
-			"disable": "<p>@Check[type:religion|dc:42|name:Calm a Spirit|traits:haunt](大师)or @Check[type:occultism|dc:42|name:Calm a Spirit|traits:haunt](大师)to calm each of the four spirits. On a character's first successful check, the character also learns that xulgath funerary rites typically involve cremation, which hints that fire is a viable way to put them to rest。</p>",
-			"hazarddescription": "<p>The shadows of four xulgaths endlessly relive their deaths at the hands of the wendigos and their clutchmates。</p>",
-			"reset": "<p>The haunt is deactivated and resets 1 minute after all non-wendigo creatures leave the area。</p>",
-			"routine": "<p>(4动作) Each active spirit chooses a living non-wendigo creature within 120 feet and attempts to devour it, targeting different creatures if possible. Each calmed spirit reduces the hazard's actions by 1</p>",
-			"stealthdetails": "<p>(专家)to hear the echoed shouts of panicked xulgaths</p>",
+			"name": "饱受折磨的地蜥人 Suffering Xulgaths",
+			"hp": "每个灵魂",
+			"disable": "<p>@Check[type:religion|dc:42|name:Calm a Spirit|traits:haunt](大师)或@Check[type:occultism|dc:42|name:Calm a Spirit|traits:haunt](大师)来抚慰四个灵魂中的一个。角色第一次成功检定时，他还会知道地蜥人的葬礼仪式通常包括火化，这意味着火焰是让他们安息的一个可行之法。</p>",
+			"hazarddescription": "<p>四名地蜥人之影永无止境地回放他们在温迪戈以及族人的手中惨死的过去。</p>",
+			"reset": "<p>当所有非温迪戈生物离开这个区域1分钟以后，该作祟就会停止激活并重置。</p>",
+			"routine": "<p>(4动作) 每个活跃的灵魂会选择一名120尺内的非温迪戈活物并试图吞食他，并尽可能选择不同的生物作为目标。每有一个灵魂被抚慰时，该危害的动作减少1。</p>",
+			"stealthdetails": "<p>(专家)来听见惊恐地蜥人惨叫的回响。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Wendigo Remnants":{
+					"name": "温迪戈遗影 Wendigo Remnants",
+					"description": "<p><strong>触发</strong> 一个温迪戈以外的活物在驿站的100尺以内获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态</p>\n<hr />\n<p><strong>效果</strong> 作祟投掷先攻。</p>"
+				},
+				"strike-Ghostly Bite":{
+					"name": "幽灵撕咬 Ghostly Bite"
+				}
+			}
 		},
 		"Swardlands Delinquent": {
 			"name": "草原地混混 Swardlands Delinquent",
@@ -2932,7 +3192,7 @@
 				},
 				"Alchemical Formulas":{
 					"name": "炼金公式 Alchemical Formulas",
-					"description": "<p>@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{高等强酸瓶 Acid Flask (Greater)}, @UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{高等炽火胶 Alchemist's Fire (Greater)}, @UUID[Compendium.pf2e.equipment-srd.XWkeL34yJK6t5qUE]{高等解毒剂 Antidote (Greater)}, @UUID[Compendium.pf2e.equipment-srd.oCuwJ9IUDAuzsUwa]{中等狂徒醇酿 Bravo's Brew (Moderate)}, @UUID[Compendium.pf2e.equipment-srd.OcBPjVplvy2GbQ8P]{高等理解力灵药 Comprehension Elixir (Greater)}, @UUID[Compendium.pf2e.equipment-srd.intVPcEzbE9o4NQd]{高等霜冻瓶 Frost Vial (Greater)}, @UUID[Compendium.pf2e.equipment-srd.eQDTsetadI8u8Kc0]{高等水银突变药剂 Quicksilver Mutagen (Greater)}, @UUID[Compendium.pf2e.equipment-srd.YcvSw7Zn3oyqlJaw]{石拳灵药 Stone Fist Elixir}, @UUID[Compendium.pf2e.equipment-srd.5Qkz4RVJr2Kx3RL6]{高等绊足袋 Tanglefoot Bag (Greater)}</p>"
+					"description": "<p>@UUID[Compendium.pf2e.equipment-srd.jC8GmH0Un6vDxdMj]{高等强酸瓶 Acid Flask (Greater)}、@UUID[Compendium.pf2e.equipment-srd.n5yTlTs63o53n3k6]{高等炽火胶 Alchemist's Fire (Greater)}、@UUID[Compendium.pf2e.equipment-srd.XWkeL34yJK6t5qUE]{高等解毒剂 Antidote (Greater)}、@UUID[Compendium.pf2e.equipment-srd.oCuwJ9IUDAuzsUwa]{中等狂徒醇酿 Bravo's Brew (Moderate)}、@UUID[Compendium.pf2e.equipment-srd.OcBPjVplvy2GbQ8P]{高等理解力灵药 Comprehension Elixir (Greater)}、@UUID[Compendium.pf2e.equipment-srd.intVPcEzbE9o4NQd]{高等霜冻瓶 Frost Vial (Greater)}、@UUID[Compendium.pf2e.equipment-srd.eQDTsetadI8u8Kc0]{高等水银突变药剂 Quicksilver Mutagen (Greater)}、@UUID[Compendium.pf2e.equipment-srd.YcvSw7Zn3oyqlJaw]{石拳灵药 Stone Fist Elixir}、@UUID[Compendium.pf2e.equipment-srd.5Qkz4RVJr2Kx3RL6]{高等绊足袋 Tanglefoot Bag (Greater)}</p>"
 				},
 				"Earthen Blow":{
 					"name": "岩土打击 Earthen Blow",
@@ -2961,13 +3221,18 @@
 			}
 		},
 		"Thief's Trap": {
-			"name": "Thief's Trap",
-			"disable": "<p>@Check[type:thievery|dc:45|name:Counteract the Runes|traits:magical,trap](大师)or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (10th level, counteract DC 50) to counteract the runes</p>",
-			"hazarddescription": "<p>Nearly imperceptible runes set off an explosion at the point a thief is most unable to receive aid。</p>",
-			"reset": "<p>The trap resets in 1 minute。</p>",
-			"stealthdetails": "<p>(大师)to notice that the hairline cracks on the passage walls actually form runes。</p>",
+			"name": "请君入瓮 Thief's Trap",
+			"disable": "<p>@Check[type:thievery|dc:45|name:Counteract the Runes|traits:magical,trap](大师)或 <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (10环，反制DC50) 来反制符文。</p>",
+			"hazarddescription": "<p>几乎无法察觉的符文在一个盗贼最没法得到帮助的时点引发了一场爆炸。</p>",
+			"reset": "<p>陷阱会在1分钟后重置。</p>",
+			"stealthdetails": "<p>(大师)来注意到通道上一些细长的裂缝实际上形成了符文的图案。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Explosion":{
+					"name": "爆炸 Explosion",
+					"description": "<p><strong>触发</strong> 一个生物穿过符文圈</p>\n<hr />\n<p><strong>效果</strong> 符文施放了一团火焰在通道内熊熊燃烧。任何通道内位于出口处5尺的人都会受到[[/r (8d10+44)[fire]]]伤害（@Check[type:reflex|dc:42|basic:true]豁免）。</p>\n<p>在那之后，符文会立刻施放一个4环的<em>@UUID[Compendium.pf2e.spells-srd.gIdDLrbswTV3OBJy]{沉默术 Silence}</em>，维持1分钟，这样任何在通道内受伤的人都无法寻求帮助。</p>"
+				}
+			}
 		},
 		"Thunderstone Cascade Trap": {
 			"name": "连环暴雷石陷阱 Thunderstone Cascade Trap",
@@ -3075,16 +3340,85 @@
 			}
 		},
 		"Urushil": {
-			"name": "Urushil",
-			"publicNotes": "<p>Mariliths are the generals of the Abyss, formed from the souls of proud evil mortals, often warlords and despots. They appear as tall and powerfully built humans from the waist up with snake tails and six arms. Because of Lamashtu's prominence over other demonic deities, most pride demons encountered by mortals take female form, but they can be of any gender。</p>\n<p>Mariliths are among the greatest tacticians in the Abyss, and they have an almost supernatural knack for understanding the ripples of chaos and the unpredictable nature of demonic life. Their ability to command armies rises as much from their commanding presence as it does their ability to read into the potential results of any possible act and a sufficient understanding of the flow of entropy to allow them to predict likely outcomes。</p>\n<hr />\n<p>When a sinful mortal soul is judged and sent on to the Abyss, it can become a deadly fiend-a demon. Demons are living incarnations of sin-be they classic sins like wrath or gluttony, or more \"specialized\" depravities like an obsession with torture or the act of treason or treachery. Once formed, a demon's driving goals are twofold-the amassing of personal power, and the corruption of mortal souls to cause them to become tainted by sin. In this way demons ensure a never-ending supply of new demons to bolster their ever-growing ranks in the Abyss。</p>",
+			"name": "乌璐希尔 Urushil",
+			"publicNotes": "<p>六臂蛇魔是深渊的将军，诞生自骄傲的邪恶凡人——通常是军阀和暴君的灵魂。从腰部以上看，它们是高大魁梧的类人生物，有蛇的尾巴和六条胳膊。由于拉玛什图（Lamashtu）在其他恶魔神祇之上的显着地位，凡人们遇到的绝大多数六臂蛇魔都是女性，但其实它们可以是任何性别。</p>\n<p>六臂蛇魔是深渊中最伟大的战术家之一，他们拥有一种近乎超自然的诀窍，能够理解混乱的波动和恶魔变化不定的本质。它们的指挥能力和他们能解读任何行动造成的潜在结果的能力，以及对熵的流动的充分理解，导致他们能对可能产生的结果都有充分的预知。</p>\n<hr />\n<p>当一个有罪之人的灵魂受到审判并被送至无底深渊时，它会成为致命的魔族——恶魔。恶魔是罪恶的化身，从一般的罪恶例如愤怒、暴食，到更“特别”的堕落，例如对酷刑的痴迷或对祖国的背叛。恶魔一经诞生，它们便被双重目的驱动：其一是不断积累力量变得更强，其二是腐化凡人的灵魂让其被罪恶玷污。通过这种方式恶魔保证了有源源不断的新恶魔来支持它们在深渊中不断扩张的军队。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Cold Iron Silver Longsword": {
+					"name": "寒铁银质长剑 Cold Iron Silver Longsword"
+				},
+				"equipment-Belt of Regeneration":{
+		            "name": "再生腰带 Belt of Regeneration",
+		            "description": "<p>这条橙色绿色相间的腰带是由富有弹性的巨魔皮制成的。当你在一天之内首次绑定该腰带时，你获得15点临时生命值。若绑定了该腰带，你能将你的体质Constitution提升2点，或将其提升至18点，选择结果更高的选项。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将腰带束紧一档以获得一个再生效果。在接下来的 [[/r 2d4]] 内，在每轮你的回合开始时你会恢复 [[/r 15]] 点生命值，除非在你的前一回合开始之后，你承受了酸液或火焰伤害。</p>"
+      			},
+				"Attack of Opportunity (Special)": {
+					"name": "借机攻击 Attack of Opportunity (Special)",
+					"description": "<p>六臂蛇魔每轮获得5个额外反应动作，但是只能用来进行借机攻击。六臂蛇魔针对一个触发动作只能使用一次借机攻击，哪怕一个生物离开六臂蛇魔的触及范围的数格。并且六臂蛇魔每次借机攻击必须使用不同的武器。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
+				},
+				"Commander's Aura": {
+					"name": "指挥灵光 Commander's Aura",
+                    "description": "<p>@Template[type:emanation|distance:100]{100尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在灵光范围内，且被六臂蛇魔统御或作为其盟友的、等级低于六臂蛇魔的邪恶生物，在攻击检定、伤害检定、AC、豁免检定和技能检定上获得+1环境加值。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.5NSWRxAsJuvwyl0E]{效果: 指挥灵光}</p>"
+				},
+				"Failure Vulnerability": {
+					"name": "反感失败 Failure Vulnerability",
+                    "description": "<p>六臂蛇魔的骄傲是她的力量源泉，所以失败能对它们造成伤害。如果六臂蛇魔它的回合使用伤害法术，或进行打击，却没有在该回合内造成任何伤害，则它在自己的回合结束时受到[[/r (3d6+10)[mental]]]{3d6+10心灵伤害}，并且指挥灵光暂时失效，直到它的下回合结束。</p>"
+				},
+				"Bladestorm": {
+					"name": "剑刃风暴 Bladestorm",
+                    "description": "<p>六臂蛇魔进行最多六次长剑打击，每次针对不同目标。这些攻击计入六臂蛇魔的多重攻击减值，但是在所有打击都结束之后才生效。</p>"
+				},
+				"Defensive Assault": {
+					"name": "防御攻击 Defensive Assault",
+                    "description": "<p>六臂蛇魔进行两次打击，每次使用不同的武器，并且它用剩下的武器进行防御。六臂蛇魔的AC获得等同于该轮未使用武器数量的环境加值，持续1轮。如果六臂蛇魔之后使用了其中任何一把武器进行攻击（包括借机攻击），每有一把武器被使用，则AC减1。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.pMPe01GWvfwcYwUR]{效果: 防御攻击}</p>"
+				},
+				"Focused Assault": {
+					"name": "聚焦突袭 Focused Assault",
+                    "description": "<p>六臂蛇魔用手里持握的所有武器对同一个目标进行攻击，多重攻击让目标无处可躲。六臂蛇魔进行一次长剑打击。一旦成功命中，六臂蛇魔对目标造成一次长剑伤害，并且每多一把长剑，则额外造成[[/r (1d8)[slashing]]]{1d8挥砍伤害}（一般是[[/r (5d8)[slashing]]]{5d8额外挥砍伤害}）。如果未命中，六臂蛇魔依然能对目标造成一次长剑伤害，如果攻击大失败，则不造成任何伤害。这次攻击计算六臂蛇魔的多重攻击减值，并且计算的减值次数等于六臂蛇魔所持握的长剑数量。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.7wDH2q0UcFdu2w58]{效果: 聚焦突袭}</p>"
+				},
+				"Greater Constrict": {
+					"name": "高等紧勒 Greater Constrict",
+					"description": "<p>[[/r (2d12+13)[bludgeoning]]]伤害，@Check[type:fortitude|dc:41|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+				},
+				"Infuse Weapons": {
+					"name": "武器注能 Infuse Weapons",
+                    "description": "<p>六臂蛇魔手持的任何武器自动变成由寒铁和银打造的<em>+2@UUID[Compendium.pf2e.equipment-srd.KCQRFvUgbyclvOGi]{强击}武器</em>。六臂蛇魔可以将攻击时外加的邪恶伤害转变为混乱伤害。</p>"
+				}
+			}
 		},
 		"Vavakia": {
-			"name": "Vavakia",
-			"publicNotes": "<p>Juggernauts of destruction, vavakias are formed from the souls of mortals who extract, enslave, or consume the souls of others。</p>",
+			"name": "渎灵魔 Vavakia",
+			"publicNotes": "<p>渎灵魔是带来毁灭的暴徒，由那些吸取、奴役以及蚕食他人灵魂的凡人灵魂所形成。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Frightful Presence": {
+					"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:37]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Restoration Vulnerability": {
+					"name": "反感复苏 Restoration Vulnerability",
+					"description": "<p>渎灵魔反感灵魂的复生。</p>\n<p>每轮中第一次有位于渎灵魔100尺内的生物复生或是失去@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed}状态时，它会受到[[/r (3d10+10)[mental]]]伤害。</p>"
+				},
+				"Smoking Wound": {
+					"name": "发烟伤口 Smoking Wound",
+					"description": "<p>被渎灵魔啃咬咬伤的生物会因伤口冒出的恶臭烟气而陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>"
+				},
+				"Soulfire Breath": {
+					"name": "魂火吐息 Soulfire Breath",
+					"description": "<p>渎灵魔在@Template[type:cone|distance:60]区域吐出绿色的冥火。</p>\n<p>区域内的活物会受到[[/r 20d6[negative]]]伤害（@Check[type:reflex|dc:42|basic:true]豁免）。此次豁免失败的善良生物会@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟（大失败时为@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 4}）。</p>\n<p>被魂火吐息杀死的生物无法通过除了<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>一类的强大法术以外的方式复生。</p>\n<p>渎灵魔在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用魂火吐息。</p>"
+				},
+				"Soulfire Inhalation": {
+					"name": "魂火汲取 Soulfire Inhalation",
+					"description": "<p><strong>需求</strong> 渎灵魔的上一个动作是魂火吐息</p>\n<hr />\n<p><strong>效果</strong> 每个被渎灵魔的魂火吐息伤害的生物可以使其恢复[[/r 10[healing]]]HP。任何超过的治疗量将会转变为临时HP，持续1分钟。</p>"
+				},
+				"Stunning Tail": {
+					"name": "震慑尾扫 Stunning Tail",
+					"description": "<p>如果渎灵魔使用尾打击时重击，目标必须成功通过@Check[type:fortitude|dc:40]豁免，否则将@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned}1轮。（大失败时为[[/br 1d4 #rounds]]{1d4轮}）。</p>"
+				},
+				"Trample": {
+					"name": "践踏 Trample",
+					"description": "<p>大型或更小，爪抓，@Check[type:reflex|dc:40|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Vermlek": {
 			"name": "虫裂魔 Vermlek",
@@ -3158,10 +3492,28 @@
 			}
 		},
 		"Viskithrel": {
-			"name": "Viskithrel",
-			"publicNotes": "<p>One of the many horrid life-forms native to Zevgavizeb's Abyssal realm of Gluttondark, viskithrels-or \"gluttonraptors\"-are tireless hunters resembling tentacled theropods. They are social creatures by nature and prefer to hunt in large packs, chasing down prey and tearing them apart to share with their fellow hunters. A lone viskithrel forgoes hunting to frantically seek out others of its kind, starving to death if it cannot do so. Although viskithrels attack nearly any other creatures they encounter, they virtually never fight other viskithrels; even beasts in rival packs give each other space rather than fight over territory or prey。</p>\n<p>Other, smarter denizens of Gluttondark, such as @UUID[Compendium.pf2e.extinction-curse-bestiary.NITxPebTwserqASe]{Xilvireks} herd and train viskithrels, working to convince the viskithrels that the trainer is one of their pack. This not only protects the trainer from attacks by the viskithrels, but also enables the trainer to easily direct them。</p>",
+			"name": "暴食猛禽 Viskithrel",
+			"allSaves": "选择性嗅觉",
+			"publicNotes": "<p>暴食猛禽（也称作“威斯基什尔”）是诸多原生于泽乌伽瓦灾布的深渊领域暴食暗域的可怖生命形态中的一员，是外形类似于多触手野兽的无倦猎手。它们是天生的社会生物，倾向于成群狩猎，它们追逐猎物并将其撕碎来与同行的猎手分享。落单的暴食猛禽会放弃狩猎，并歇斯底里地寻找它的族类，如果找不到，它就会活活饿死。尽管暴食猛禽几乎会袭击它们遇到的任何其他生物，但它们却从不和其他暴食猛禽战斗，即使是处于对立族群中的暴食猛禽也会互相留出空间，而不是为了领地或是猎物拼个你死我活。</p>\n<p>此外，暴食暗域内更智慧的居民，例如@UUID[Compendium.pf2e.extinction-curse-bestiary.NITxPebTwserqASe]{暴食暗嗣 Xilvireks}会畜养与训练暴食猛禽，设法使暴食猛禽相信训练师是它们族群的一员。这不仅可以使得训练师避免受到暴食猛禽的袭击，还能让训练师轻松驾驭它们。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Ravenous Tracker": {
+					"name": "饥饿追踪者 Ravenous Tracker",
+					"description": "<p>暴食猛禽可以感知到生物经过某个区域留下的气味，最久可以追溯到一周前，它在@UUID[Compendium.pf2e.actionspf2e.EA5vuSgJfiHH7plD]{追踪 Track}感知到的生物的气味时获得+4环境加值。</p>"
+				},
+				"Predator's Leap": {
+					"name": "猎手猛跃 Predator's Leap",
+					"description": "<p><strong>触发</strong> 暴食猛禽10尺内的生物对它进行一次近战打击</p>\n<hr />\n<p><strong>效果</strong> 暴食猛禽快步最多15尺，由于它跳过了障碍，因此忽视困难地形。如果这次移动使得暴食猛禽离开了触发的打击的触及范围，该打击就会被打断。随后它可以对一个流血的生物进行一次啃咬打击。</p>"
+				},
+				"Selective Scent": {
+					"name": "选择性嗅觉 Selective Scent",
+					"description": "<p>暴食猛禽的多腔鼻部使它可以隔断与忽视嗅觉。无论检定结果如何，它可以选择在对抗任何吸入类威胁（例如吸入类毒素）或是嗅觉效果的豁免中大成功。</p>"
+				},
+				"Swallow Whole": {
+					"name": "活吞 Swallow Whole",
+					"description": "<p>大型，[[/r {3d10[bludgeoning],2d10[acid]}]]{3d10钝击+2d10酸液}，破裂25</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+				}
+			}
 		},
 		"Vitalia": {
 			"name": "可怖之心 Vitalia",
@@ -3294,7 +3646,7 @@
 			}
 		},
 		"Xulgath Bomber": {
-			"name": "Xulgath Bomber",
+			"name": "地蜥人投弹手 Xulgath Bomber",
 			"data":{},
 			"items":{
 				"equipment-Concentrated Xulgath Bile (Infused)":{
@@ -3537,10 +3889,19 @@
 			}
 		},
 		"Xulgath Thoughtmaw": {
-			"name": "Xulgath Thoughtmaw",
-			"publicNotes": "<p>Xulgath thoughtmaws are inheritors of the xulgaths' ancient psychic legacy. They eagerly and liberally use their ability to extract knowledge from their foes to quicken their own prodigious intellects。</p>",
+			"name": "地蜥摄智者 Xulgath Thoughtmaw",
+			"publicNotes": "<p>地蜥摄智者是地蜥人远古心灵传说的继承者。他们渴望且自由地使用他们的能力从敌人身上汲取知识来加深自身深邃的睿智。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Psychogenic Secretions": {
+					"name": "精神分泌 Psychogenic Secretions",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入这个弥漫区域的生物必须进行一次@Check[type:will|dc:36]豁免。</p>\n<p>失败时，该生物会@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟（大失败时则是@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，且还会@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮）。</p>\n<p>豁免成功的生物会对精神分泌临时免疫1分钟。</p>"
+				},
+				"Consume Knowledge": {
+					"name": "吞食知识 Consume Knowledge",
+					"description": "<p>摄智者侵入100尺内一个生物的心灵，试图吞食其高等思考的能力。该生物进行一次@Check[type:will|dc:36]豁免。</p>\n<p>使用吞食知识会立刻终止这个能力之前对另一个生物产生的效果。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>失败</strong> 该生物缓慢1且只能进行基本动作，持续1分钟。</p>\n<p><strong>大失败</strong> 同失败，且摄智者会@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened 1}，持续1分钟。他可以使用额外的动作来行走，打击，如果目标拥有已准备的法术或是法术库，他还可以用额外的动作来施法。</p>"
+				}
+			}
 		},
 		"Yaganty": {
 			"name": "烛指精 Yaganty",
