@@ -278,10 +278,16 @@
             }
 		},
 		"Cutter": {
-			"name": "Cutter",
+			"name": "独桅纵帆船 Cutter",
 			"crew": "驾驶员*1，组员*3",
 			"pilotingCheck": "自然(DC 24)或航海学识(DC 22)",
-			"speed": "游泳30尺(风力)"
+			"speed": "游泳30尺(风力)",
+			"items": {
+				"Sluggish": {
+					"name": "笨重 Sluggish",
+					"description": "<p>此载具须行经等同于体长2倍的距离后才能转向90度。</p>"
+				}
+			}
 		},
 		"Firefly": {
 			"name": "萤火虫 Firefly",
@@ -305,10 +311,20 @@
             }
 		},
 		"Firework Pogo": {
-			"name": "Firework Pogo",
+			"name": "烟火高跷 Firework Pogo",
 			"crew": "驾驶员*1",
 			"pilotingCheck": "手艺(DC 21)或驾驶学识(DC 19)",
-			"speed": "Jump Jet (炼金)"
+			"speed": "跳跃急冲 (炼金)",
+			"items": {
+				"Jump Jet": {
+					"name": "跳跃急冲 Jump Jet",
+					"description": "<p>烟火高跷只能通过@UUID[Compendium.pf2e.actionspf2e.d5I6018Mci2SWokk]{跳跃 Leaping}动作移动。每使用一个动作进行@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}，高跷都能水平跳跃20尺或竖直跳跃10尺。</p>"
+				},
+				"Unstable Launch": {
+					"name": "不稳定发动 Unstable Launch",
+					"description": "<p>如果驾驶员使用三动作行动来鲁莽@UUID[Compendium.pf2e.actionspf2e.uS3qDAgOkZ7b8ERL]{驾驶 Drive}烟火高跷，它会在发动时喷出火焰，对驾驶员、高跷本身和10尺半径内的每个生物造成[[/r 3d6[fire]]]伤害（@Check[type:reflex|dc:19|basic:true]豁免）。</p>"
+				}
+			}
 		},
 		"Galley": {
 			"name": "桨帆船 Galley",
@@ -373,10 +389,16 @@
             }
 		},
 		"Sand Barge": {
-			"name": "Sand Barge",
+			"name": "沙船 Sand Barge",
 			"crew": "驾驶员*1，组员*2",
 			"pilotingCheck": "交涉(DC 24), 威吓(DC 24)，或航海学识(DC 22)",
-			"speed": "40尺(划桨、风力)"
+			"speed": "40尺(划桨、风力)",
+			"items": {
+				"Sand Skimmer": {
+					"name": "沙上滑行 Sand Skimmer",
+					"description": "<p>沙船在沙子、水和流沙上都可以同样轻松地航行，但它无法穿过硬的地面。</p>"
+				}
+			}
 		},
 		"Sand Diver": {
 			"name": "潜沙器 Sand Diver",
@@ -415,10 +437,20 @@
             }
 		},
 		"Shark Diver": {
-			"name": "Shark Diver",
+			"name": "鲨潜艇 Shark Diver",
 			"crew": "驾驶员*1，组员*4",
 			"pilotingCheck": "手艺(DC 30)或驾驶学识(DC 28)",
-			"speed": "游泳40尺(炼金)"
+			"speed": "游泳40尺(炼金)",
+			"items": {
+				"Electrify": {
+					"name": "电气化 Electrify",
+					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 两名组员每人在自己的回合使用两动作释放电脉冲，对鲨潜艇周围@Template[type:emanation|distance:10]范围内的所有生物造成[[/r 6d6[electricity]]]伤害。鲨潜艇的组员和乘客不受影响。受影响的生物必须进行@Check[type:fortitude|dc:28|basic:true]豁免。</p>"
+				},
+				"Submersible": {
+					"name": "潜水器 Submersible",
+					"description": "<p>鲨潜艇可以在水面下穿行，它所内含的空气贮藏瓶足够11个中体型生物呼吸最多24小时。鲨潜艇可以安全抵达最深300尺处。如果破损，鲨潜艇会失去贮藏瓶里的空气，每轮减少10分钟的空气贮藏量。破损的鲨潜艇的最大下潜深度减半。</p>"
+				}
+			}
 		},
 		"Sleigh": {
 			"name": "雪橇 Sleigh",
@@ -499,10 +531,16 @@
 			"speed": "25尺(炼金)"
 		},
 		"Strider": {
-			"name": "Strider",
+			"name": "奔行者 Strider",
 			"crew": "驾驶员*1",
 			"pilotingCheck": "奥法(DC 25), 手艺(DC 25), 工程学识(DC 23)，或驾驶学识(DC 23)",
-			"speed": "30尺(炼金、魔法)"
+			"speed": "30尺(炼金、魔法)",
+			"items": {
+				"Long Reach": {
+					"name": "长触及 Long Reach",
+					"description": "<p>奔行者可以从最宽30尺的沟上行走过去。</p>"
+				}
+			}
 		},
 		"Titanic Stomper": {
 			"name": "巨无霸践踏者 Titanic Stomper",
@@ -526,10 +564,20 @@
             }
 		},
 		"Velocipede": {
-			"name": "Velocipede",
+			"name": "脚踏车 Velocipede",
 			"crew": "驾驶员*1",
 			"pilotingCheck": "运动(DC 15)或驾驶学识(DC 17)",
-			"speed": "The Speed of the pilot (pedaled [as rowed])"
+			"speed": "驾驶员的速度（踩踏板[如同划桨]）",
+			"items":{
+				"Fragile": {
+					"name": "脆弱 Fragile",
+					"description": "<p>在困难地形上骑脚踏车会让DC增加2点，并获得鲁莽特征。</p>"
+				},
+				"Portable": {
+					"name": "便携 Portable",
+					"description": "<p>中体型生物可以推着脚踏车走。在此情况下该生物视为超载。</p>"
+				}
+			}
 		},
 		"Vonthos's Golden Bridge": {
 			"name": "冯托斯的金桥 Vonthos's Golden Bridge",
