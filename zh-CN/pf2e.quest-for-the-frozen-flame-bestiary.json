@@ -36,14 +36,24 @@
     },
 	"entries": {
 		"Abyss-warped Trees": {
-			"name": "Abyss-warped Trees",
-			"disable": "<p>@Check[type:survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental](受训)to find a location the trees can't reach or @Check[type:religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental] to recite a prayer that temporarily casts out the fiendish energy inside a single tree in the grove, disabling it for 1 minute. A disabled or destroyed tree creates a 5‑foot‑square area in the grove that's safe from this hazard.</p>",
-			"hazarddescription": "<p>A forest of fiendish trees swing their branches and shift their roots to bludgeon and trip creatures in the tainted grove (area <strong>A21</strong>).</p>",
-			"reset": "<p>The Abyss-warped trees cease moving 1 minute after no living creatures are in the tainted grove. They reset immediately. A disabled tree reanimates after 1 minute. A destroyed tree regrows after 1 month.</p>",
-			"routine": "<p>(4动作) The Abyss‑warped trees use their first action each round to lash their roots; each creature in the tainted grove must succeed at a @Check[type:reflex|dc:21|traits:hazard,complex,environmental] save or fall @UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}. The Abyss‑warped trees use their second, third, and fourth actions to make branch Strikes against up to three different creatures in the tainted grove.</p>",
-			"stealthdetails": "<p>(受训) to determine the trees can move</p>",
+			"name": "被深渊扭曲的树木 Abyss-warped Trees",
+			"hp": "per tree",
+			"disable": "<p>@Check[type:survival|dc:22|name:Find a Safe Location|traits:hazard,complex,environmental](受训)找到一个树木够不到的地方，或@Check[type:religion|dc:24|name:Cast Out the Fiendish Energy|traits:hazard,complex,environmental]来吟唱祷文暂时放逐树丛中某一棵树体内的邪恶能量，解除其能力1分钟。被解除或被摧毁的树可以创造出5尺见方的安全区域。</p>",
+			"hazarddescription": "<p>一整片森林中扭曲的树木挥舞着枝条、移动着树根，攻击和绊倒位于腐化树丛（区域<strong>A21</strong>）中的生物。</p>",
+			"reset": "<p>腐化树丛内没有任何活的生物之后1分钟后，被深渊扭曲的树木就会停止移动。它们会立即重置。被解除的树在1分钟后重新活化。被摧毁的树在1个月后重新长出。</p>",
+			"routine": "<p>(4动作) 被深渊扭曲的树木使用每轮第一个动作摆动根部；位于腐化树丛内的每个生物都必须通过@Check[type:reflex|dc:21|traits:hazard,complex,environmental]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。树木用第二、三、四个动作对腐化树丛内最多三个不同的生物进行树枝打击。</p>",
+			"stealthdetails": "<p>(受训) 来发现树木会动</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Shift Roots":{
+					"name": "移动树根 Shift Roots",
+					"description": "<p><strong>触发</strong> 一个生物在树丛中结束移动；</p>\n<hr />\n<p><strong>效果</strong> 整片腐化树丛中的树木都开始疯狂移动它们的树根，将整片区域变成困难地形，同时这些被深渊扭曲的树木投掷先攻。</p>"
+				},
+				"Tighten Grip":{
+					"name": "紧抓 Tighten Grip",
+					"description": "<p><strong>触发</strong> 被深渊扭曲的树木使用枝条打击对一个生物造成重击；</p>\n<hr />\n<p><strong>效果</strong> 树把枝条缠绕在触发生物身上，将其@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbing}（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC21）。</p>"
+				}
+			}
 		},
 		"Acid Strongbox Trap": {
 			"name": "保险箱酸液陷阱 Acid Strongbox Trap",
@@ -110,33 +120,97 @@
 			}
 		},
 		"Ashen Swale": {
-			"name": "Ashen Swale",
-			"blurb": "Male human god caller",
+			"name": "灰沼 Ashen Swale",
+			"blurb": "男性人类唤神者",
 			"data":{},
-			"items":{}
+			"items":{
+				"Siphon Life": {
+					"name": "生命虹吸 Siphon Life",
+					"description": "<p><strong>触发</strong> 一个30尺内的生物使用具有治疗特征的、恢复HP的法术或能力，或成为具有治疗特征的、恢复HP的法术或能力的目标；</p><hr /><p><strong>效果</strong> 灰沼汲取治疗魔法的力量，将魔法的一部分从原本的目标身上转移到自己身上。治疗效果的目标之一恢复的HP量减少10点，灰沼恢复10点HP或治疗量的总量二者取低）。</p>"
+				},
+				"Corpse Puppet": {
+					"name": "死尸傀儡 Corpse Puppet",
+					"description": "<p>灰沼控制30尺范围内一个死亡或@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}的生物的身体。目标必须进行意志豁免检定。死亡的生物豁免自动失败。成功的情况下，目标永久免疫死尸傀儡能力。失败的情况下，目标被灰沼控制。目标获得仆从特征，在其受灰沼控制期间可以如同还活着有意识一般行动。操纵每个傀儡需要灰沼以一个动作号令仆从。在此期间目标可以进行的动作只有交互、行走和打击。</p>\n<p>灰沼对目标的控制维持10分钟。如果目标不再处于失去意识状态，或目标在受灰沼控制之后再受到50点伤害，则控制立刻结束（后一种情况下，躯体会被彻底摧毁）。对目标失去控制后，目标永久免疫死尸傀儡能力。</p>\n<p>灰沼可以通过此能力同时操控最多2个目标。</p>"
+				},
+				"Hasten Eidolon": {
+					"name": "加速幻灵 Hasten Eidolon",
+					"description": "<p>灰沼专注于自己与伊多维克之间的连结，加速幻灵的行动。伊多维克获得@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened 1}直到灰沼的下一个回合开始为止。</p>"
+				},
+				"Manifest Eidolon": {
+					"name": "显现幻灵 Manifest Eidolon",
+					"description": "<p>灰沼在邻接的开放区域召唤出伊多维克。如果伊多维克已经显现灰沼可以选择将其隐没或将其传送至邻接的开放区域。如果伊多维克在0HP的情况下隐没，这一过程会花费1分钟而非3动作，但伊多维克在重新显现时会恢复1点HP。</p>"
+				},
+				"Transpose": {
+					"name": "王车易位 Transpose",
+					"description": "<p>一瞬间，灰沼和伊多维克交换位置，彼此传送至对方的位置。</p>"
+				}
+			}
 		},
 		"Azi": {
-			"name": "Azi",
-			"blurb": "Female human necromancer",
+			"name": "阿兹 Azi",
+			"blurb": "女性人类死灵师",
 			"data":{},
-			"items":{}
+			"items":{
+				"Bloodline Magic": {
+					"name": "血脉魔法 Bloodline Magic",
+					"description": "<p>当阿兹施放<em>@UUID[Compendium.pf2e.spells-srd.GUeRTriJkMlMlVrk]{束缚死灵 Bind Undead}</em>、<em>@UUID[Compendium.pf2e.spells-srd.cqdmSmQnM0q6wbWG]{汲取生命 Drain Life}</em>、<em>@UUID[Compendium.pf2e.spells-srd.8ViwItUgwT4lOvvb]{虚假生命 False Life}</em>、<em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>、<em>@UUID[Compendium.pf2e.spells-srd.FM3SmEW8N1FCRjqt]{死者交谈 Talking Corpse}</em>或<em>@UUID[Compendium.pf2e.spells-srd.FedTjedva2rYk33r]{亡者祝福 Undeath's Blessing}</em>的时候，阿兹获得等同于法术环级的临时生命值，持续1轮；或者一个目标受到每法术环级[[/r 1[negative]]]伤害（如果法术本身就造成负能量伤害，则将此伤害与法术的原本伤害合并计算弱点与抗力）。</p>"
+				},
+				"Reach Spell": {
+					"name": "及远法术 Reach Spell",
+					"description": "<p>阿兹可以扩展自己法术的距离。如果阿兹的下一个动作是使用施放法术动作施放一个拥有距离的法术。那么该法术的距离提高30尺。通常情况下如果该法术的距离为接触，则施法距离提升至30尺。</p>"
+				}
+			}
 		},
 		"Bargott": {
-			"name": "Bargott",
-			"blurb": "Male dryad husk",
+			"name": "巴格特 Bargott",
+			"blurb": "男性木妖精空壳",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Blighted Branch": {
+					"name": "枯枝 Blighted Branch"
+				},
+				"Draining Impact": {
+					"name": "吸取冲击 Draining Impact",
+					"description": "<p>当巴格特使用枯枝打击命中一个生物时，该生物必须进行@Check[type:fortitude|dc:20]豁免。无论结果如何，该生物24小时内免疫巴格特的吸取冲击能力。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>大失败</strong> 该生物陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}。</p>"
+				},
+				"Impart Anguish": {
+					"name": "传达怒意 Impart Anguish",
+					"description": "<p>巴格特扭曲面庞，作极度痛苦状，与凝视他的生物分享他的怒意。位于@Template[type:cone|distance:15]范围内的生物受到[[/r 3d6[mental]]]伤害（@Check[type:will|dc:19|basic:true]豁免）。大失败的情况下，目标生物还会陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。</p>"
+				}
+			}
 		},
 		"Beaver": {
-			"name": "Beaver",
-			"publicNotes": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>A typical beaver can grow up to 4 feet long and weigh up to 65 pounds.</p>",
+			"name": "河狸 Beaver",
+			"publicNotes": "<p>河狸是一种生活在阿维斯坦各处淡水生态系统中的矮胖的草食性啮齿动物。它们住在用木头、青草、岩石和泥土建造的洞穴里。</p>\n<p>河狸一般能长到4尺长，65磅重。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deep Breath": {
+					"name": "深呼吸 Deep Breath",
+					"description": "<p>A beaver can hold its breath for 15 minutes.</p>"
+				},
+				"Construct Shelter": {
+					"name": "制造藏身处 Construct Shelter",
+					"description": "<p>河狸花费1分钟时间在自己所处空间的一侧快速建起一个简单的土堆，可以用于寻找掩蔽。</p>"
+				},
+				"Penetrating Bite": {
+					"name": "贯穿啃咬 Penetrating Bite",
+					"description": "<p>河狸进行一次啃咬打击。这次打击无视有机材料（如绳索、皮革和木头）的前5点硬度。</p>"
+				},
+				"Prop": {
+					"name": "支撑 Prop",
+					"description": "<p>河狸用尾巴稳定住自己的身体，在对抗推撞和摔绊的强韧和反射豁免中获得1环境加值，直到它下一次进行具有移动特征的动作为止。</p>"
+				}
+			}
 		},
 		"Bone Warrior": {
-			"name": "Bone Warrior",
+			"name": "骨战士 Bone Warrior",
 			"data":{},
-			"items":{}
+			"items":{
+				"Sudden Charge": {
+					"name": "冲锋 Sudden Charge",
+					"description": "<p>骨战士行走两次。如果在行动结束时至少有一个敌人位于其近战触及范围，它能对该敌人进行一次近战打击。</p>"
+				}
+			}
 		},
 		"Burnbearer": {
 			"name": "火把手 Burnbearer",
@@ -240,30 +314,82 @@
 			"items":{}
 		},
 		"Castoroides": {
-			"name": "Castoroides",
-			"publicNotes": "<p>Beavers are stocky, herbivorous rodents that live in freshwater ecosystems throughout Avistan. They live in lodges, which they construct from logs, grass, rocks, and mud.</p>\n<p>Castoroides are bear-sized beavers that build their lodges on land near a water source rather than in the water.</p>",
+			"name": "巨河狸 Castoroides",
+			"publicNotes": "<p>河狸是一种生活在阿维斯坦各处淡水生态系统中的矮胖的草食性啮齿动物。它们住在用木头、青草、岩石和泥土建造的洞穴里。</p>\n<p>巨河狸是有熊那么大的河狸，它们会在水源附近的陆地上建造巢穴，而非在水里。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Deep Breath": {
+					"name": "深呼吸 Deep Breath",
+					"description": "<p>巨河狸能屏息1小时。</p>"
+				},
+				"Slap": {
+					"name": "尾拍 Slap",
+					"description": "<p><strong>触发</strong> 巨河狸被一个它能看见的攻击者选为物理远程打击的目标；</p><hr /><p><strong>效果</strong> 巨河狸用大尾巴重重地拍向投射物，针对触发该反应的攻击AC获得2环境加值。</p>"
+				},
+				"Construct Shelter": {
+					"name": "制造藏身处 Construct Shelter",
+					"description": "<p>河狸花费1分钟时间在自己所处空间的一侧快速建起一个简单的土堆，可以用于寻找掩蔽。</p>"
+				},
+				"Gouge": {
+					"name": "挖凿 Gouge",
+					"description": "<p>巨河狸对其@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物造成[[/r 2d8[piercing]]]伤害（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免失败的生物还要承受[[/r 1d4[bleed]]]伤害。</p>"
+				},
+				"Penetrating Bite": {
+					"name": "贯穿啃咬 Penetrating Bite",
+					"description": "<p>河狸进行一次啃咬打击。这次打击无视有机材料（如绳索、皮革和木头）的前10点硬度。</p>"
+				},
+				"Prop": {
+					"name": "支撑 Prop",
+					"description": "<p>河狸用尾巴稳定住自己的身体，在对抗推撞和摔绊的强韧和反射豁免中获得1环境加值，直到它下一次进行具有移动特征的动作为止。</p>"
+				}
+			}
 		},
 		"Cave-in": {
-			"name": "Cave-in",
-			"disable": "<p>@Check[type:survival|dc:25|name:Prop up ceiling|traits:hazard,environmental](受训)to prop up the tunnel ceiling without triggering a collapse</p>",
-			"hazarddescription": "The tunnel collapses, filling the passage with stone.",
+			"name": "坍塌 Cave-in",
+			"disable": "<p>@Check[type:survival|dc:25|name:Prop up ceiling|traits:hazard,environmental](受训)以支撑起顶部而不触发坍塌。</p>",
+			"hazarddescription": "通道坍塌，堆满落石。",
 			"stealthdetails": "(受训)",
 			"data":{},
-			"items":{}
+			"items":{
+				"Collapse":{
+					"name": "坍塌 Collapse",
+					"description": "<p><strong>触发</strong> 一个生物进入不稳定的通道</p><hr />\n<p><strong>效果</strong> 通道坍塌，对触发的生物和区域<strong>A2</strong>的所有生物造成[[/r (4d8+10)[bludgeoning]]]钝击伤害（@Check[type:reflex|dc:21|basic:true|traits:hazrd,environmental]豁免）。豁免失败的情况下，触发的生物被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（逃脱DC21）。坍塌会完全堵住通道（区域<strong>A2</strong>），使之无法通过。</p>"
+				}
+			}
 		},
 		"Corrupted Elder Tree": {
-			"name": "Corrupted Elder Tree",
-			"publicNotes": "<p>Arboreal regents-also called treants-are lumbering, solitary creatures responsible for guarding an entire forest. They take an especially long view of affairs and never act brashly or without much deliberation. They occasionally come together in small groups called groves to share news and pass their wisdom down to the arboreal wardens that have sprouted under their watch. In times of grave danger, all the groves in a region may gather for a great months-long meeting to plan and, eventually, act upon a threat.</p>\n<p>The typical arboreal regent is 30 feet tall, has a trunk 2 feet in diameter, and weighs 4,500 pounds.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk-even elves are fugacious in the eyes of arboreals-and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build-a trait that serves vengeful members of their kind well.</p>",
-			"blurb": "Variant arboreal regent",
+			"name": "腐化古树 Corrupted Elder Tree",
+			"publicNotes": "<p>树精王——同时也被唤作树人（treants）——是一种行动迟缓又独行的生物，负责保护一整座森林。它们看待事物的目光特别长远，从不草率鲁莽行事。他们偶尔会组成称为“林地集会（groves）”的小团体，分享彼此的见闻，向新萌芽的树精守望者们传授它们的智慧。在遭遇重大危机的时候，一个地区所有的“林地集会”可能会全部聚在一起，举行长达数月的会议，计划并最终对威胁采取行动。</p>\n<p>一般的树精王有30尺高,树干直径2英尺,重4500磅。</p>\n<hr />\n<p>树精是森林的守护者和树木的代言者。树精和他们照料的树木寿命几乎一样长，它们把自己当做树木的父母和牧者，而非园丁。虽然树精们平时慢条斯理，但当它们被迫为保护森林而战时，他们能展现出惊人的敏捷。树精们很少会和短命种族做朋友——在它们眼中连精灵都很短命——而且对于新事物有一种与生俱来的偏见。但是树精可以容忍那些前来从它们冗长繁杂的闲言碎语中寻求知识的学习者，尤其是那些明确表示想保护森林的人。对于威胁它们领土的人，比如渴望收获木材的伐木者或旨在开垦树林建立农地、城镇的殖民者，树精的愤怒则是坚定而具有毁灭性的。具有讽刺意味的是，树精具有摧毁建筑的天赋——这一特点对于它们充满复仇欲望的同胞来说非常实用。</p>",
+			"blurb": "变体树精王",
 			"data":{},
-			"items":{}
+			"items":{
+                "Axe Vulnerability": {
+                    "name": "斧类易伤 Axe Vulnerability",
+                    "description": "<p>树精王被斧类武器攻击命中时受到额外5点伤害。</p>"
+                },
+                "Awaken Tree": {
+                    "name": "觉醒树木 Awaken Tree",
+                    "description": "<p>树精王让180尺内的一棵树木觉醒为自己的仆从来战斗，使用@UUID[Compendium.pf2e.pathfinder-bestiary.oBMIc2S8ekmDgPpi]{觉醒树木 Awakened Tree}的数据。树精王一次最多可以控制两棵觉醒树木，它可以用一个单动作同时对两棵树发号施令，这具有专注和听觉特征。</p>"
+                },
+                "Sunder Objects": {
+                    "name": "击破物品 Sunder Objects",
+                    "description": "<p>当树精王伤害物品或建筑时，它能造成额外[[/r 2d10]]{2d10伤害}。</p>"
+                }
+			}
 		},
 		"Crawling Hand Swarm": {
-			"name": "Crawling Hand Swarm",
+			"name": "伏行之手集群 Crawling Hand Swarm",
 			"data":{},
-			"items":{}
+			"items":{
+				"Stifle": {
+					"name": "扼杀 Stifle",
+					"description": "<p><strong>触发</strong> 集群空间内的一个生物试图施放具有语言成分的法术、或使用具有语言或声音特征的动作；</p><hr />\n<p><strong>效果</strong> 集群的手捂住触发生物的嘴使之无法发声。受影响的生物必须通过@Check[type:reflex|dc:22]豁免，否则触发动作被打断。</p>"
+				},
+				"Pummeling Grasp": {
+					"name": "连击抓握 Pummeling Grasp",
+					"description": "<p>集群空间内的每个敌人承受[[/r 3d6[slashing]]]伤害（@Check[type:reflex|dc:20|basic:true]豁免）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				}
+			}
 		},
 		"Death's Slumber Ward": {
 			"name": "死亡沉睡防护 Death's Slumber Ward",
@@ -281,16 +407,40 @@
 			}
 		},
 		"Desiak": {
-			"name": "Desiak",
-			"blurb": "Male fleshwarp warrior",
+			"name": "德希阿克 Desiak",
+			"blurb": "男性塑肉体战士",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Bone Spur": {
+					"name": "骨刺 Bone Spur"
+				},
+				"strike-Bone Bolt": {
+					"name": "骨矢 Bone Bolt"
+				},
+				"Dual Assault": {
+					"name": "双重袭击 Dual Assault",
+					"description": "<p><strong>频率</strong> 每轮一次</p><hr /><p><strong>效果</strong> 德希阿克进行两次爪击打击或者一次骨刺打击和一次爪击打击。两次打击的对象必须相同，且承受他当前的多重攻击减值。在计算德希阿克的多重攻击减值时此动作算作两次攻击。</p>"
+				},
+				"Erupt Bone Spur": {
+					"name": "突生骨刺 Erupt Bone Spur",
+					"description": "<p>德希阿克强迫自己的骨头突然从血肉中生出或缩回。当骨头从血肉中生出时，他可以进行一次骨刺打击。骨刺打击大成功的情况下，德希阿克可以吸取目标的生命力，恢复自身HP数值等于其造成伤害的一半。</p>"
+				}
+			}
 		},
 		"Elk": {
-			"name": "Elk",
-			"publicNotes": "<p>Powerful and swift land mammals, elk range through the plains, hills, and forests of the wilderness.</p>\n<p>Their size, strength, and antlers (for the males) enable common elk to contend with most of their environment's dangers, though herds generally favor flight over combat. Most elk stand between 3 and 5 feet tall and weigh between 350 and 550 pounds, with females slighter than the males.</p>",
+			"name": "麋鹿 Elk",
+			"publicNotes": "<p>麋鹿是一种强大而敏捷的陆地哺乳动物，它们遍布平原、山丘和荒野的森林。</p>\n<p>麋鹿的体型、力量和鹿角（对于雄性来说）使普通麋鹿能够应对周围环境中的大部分危险，尽管麋鹿群通常喜欢逃跑而不是战斗。大部分麋鹿身高3至5尺，体重350至550磅，雌性比雄性略小。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Buck": {
+          			"name": "甩脱 Buck",
+					"description": "<p>@Check[type:reflex|dc:17]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+				},
+				"Startled Charge": {
+					"name": "受惊猛冲 Startled Charge",
+					"description": "<p><strong>需求</strong> 战斗的第一轮；</p><hr /><p><strong>效果</strong> 受惊的麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，麋鹿造成额外[[/r 1d4[piercing]]]伤害。</p>"
+				}
+			}
 		},
 		"Everburning Mammoth": {
 			"name": "Everburning Mammoth",
@@ -298,46 +448,80 @@
 			"items":{}
 		},
 		"Falling Stalactites": {
-			"name": "Falling Stalactites",
-			"disable": "<p>@Check[type:survival|dc:20|name:Safely remove Stalactite|traits:hazard,environmental](受训)to remove a stalactite without triggering a fall</p>",
-			"hazarddescription": "Unstable stalactites fall from the ceiling.",
+			"name": "坠落钟乳石 Falling Stalactites",
+			"disable": "<p>@Check[type:survival|dc:20|name:Safely remove Stalactite|traits:hazard,environmental](受训)将钟乳石移除而不使之坠落</p>",
+			"hazarddescription": "不稳固的钟乳石从洞顶掉落下来。",
 			"stealthdetails": "(受训)",
 			"data":{},
-			"items":{}
+			"items":{
+				"Fall":{
+					"name": "坠落 Fall",
+					"description": "<p><strong>触发</strong> 钟乳石受到伤害或被触碰；</p><hr /><p><strong>效果</strong> 钟乳石坠落，对下方的每个生物进行攻击。</p>"
+				},
+				"strike-Stalactite":{
+					"name": "钟乳石 Stalactite"
+				}
+			}
 		},
 		"Fiendish Arboreal": {
-			"name": "Fiendish Arboreal",
-			"publicNotes": "<p>Arboreal wardens are the rangers of arboreal society. These itinerant folk have an innate curiosity about the woodlands in which they dwell, and rarely stop to take root and rest in the same part of the forest twice. This wanderlust makes wardens ideal forest patrollers and scouts. While they are robust combatants, they know better than to confront dangerous foes on their own. Instead, they report any dangers to arboreal regents. In rare cases, large groups of arboreal wardens congregate to form a copse. Copses travel beyond the boundaries of a forest to investigate the hinterlands and gather intelligence on potential threats before returning to report their findings. Arboreal wardens do not pretend to understand to other creatures' motives-like most forces of the natural world, they are ambivalent about mortal affairs that do not involve their forest.</p>\n<hr />\n<p>Arboreals are guardians of the forest and representatives of the trees. As long-lived as the woods they watch over, arboreals consider themselves parents and shepherds of trees rather than their gardeners. Consequently, while arboreals tend to be slow and methodical, they are terrifyingly swift when forced to fight in defense of the woods. Though they rarely seek out the companionship of short-lived folk-even elves are fugacious in the eyes of arboreals-and have an inherent distrust of change, arboreals have been known to tolerate those who seek to learn from their long-winded, rambling monologues, especially if such pupils also express a desire to protect the timberlands. Against those who threaten their realm, such as loggers eager to harvest lumber or settlers aiming to establish croplands or a town, arboreals' wrath is unwavering and devastating. Perhaps ironically, arboreals are gifted at tearing down what others build-a trait that serves vengeful members of their kind well.</p>",
-			"blurb": "Demon‑touched arboreal wardens",
+			"name": "恶魔树 Fiendish Arboreal",
+			"publicNotes": "<p>树精卫士是树精社会中的护林员。这些在领地内不断巡逻的生物对他们所居住的森林有一种天生的好奇心，导致他们很少停下来在森林的同一区域扎根和休息。这种“漫游癖”让它们成为了理想的巡林客和侦察员。虽然他们是强大的战士，但是也知道单靠自己无法抗衡危险的敌人。因此他们会向树精王报告任何威胁。在极少数情况下，树精卫士们会聚在一起形成一片“树丛（copse）”。这片“树丛”会越过森林的边界，前往内陆其他地区进行调查，收集潜在威胁的情报，并报告他们的发现。树精卫士不会假装理解其他生物的目的——就像自然界的大多数力量一样，它们对不涉及他们森林的凡人事务持着矛盾的态度。</p></p>\n<hr />\n<p>树精是森林的守护者和树木的代言者。树精和他们照料的树木寿命几乎一样长，它们把自己当做树木的父母和牧者，而非园丁。虽然树精们平时慢条斯理，但当它们被迫为保护森林而战时，他们能展现出惊人的敏捷。树精们很少会和短命种族做朋友——在它们眼中连精灵都很短命——而且对于新事物有一种与生俱来的偏见。但是树精可以容忍那些前来从它们冗长繁杂的闲言碎语中寻求知识的学习者，尤其是那些明确表示想保护森林的人。对于威胁它们领土的人，比如渴望收获木材的伐木者或旨在开垦树林建立农地、城镇的殖民者，树精的愤怒则是坚定而具有毁灭性的。具有讽刺意味的是，树精具有摧毁建筑的天赋——这一特点对于它们充满复仇欲望的同胞来说非常实用。</p>",
+			"blurb": "被恶魔污染的树精卫士",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Stone Longsword": {
+                    "name": "石长剑 Stone Longsword"
+                },
+                "Axe Vulnerability": {
+                    "name": "斧类易伤 Axe Vulnerability",
+                    "description": "<p>树精卫士被斧类武器攻击命中时受到额外5点伤害。</p>"
+                },
+                "Shield Push": {
+                    "name": "举盾猛推 Shield Push",
+                    "description": "<p>树精卫士行走并进行一次盾击打击。如果攻击命中，则目标被推离10尺。</p>"
+                }
+			}
 		},
 		"Final Flight": {
-			"name": "Final Flight",
-			"disable": "<p>@Check[type:diplomacy|dc:22|name:Soothe the restless spirits|traits:hazard,haunt](受训)to soothe the restless spirits, or @Check[type:religion|dc:24|name:Honor the deceased|traits:hazard,haunt](受训)to recite a prayer honoring the deceased; two successful checks are required to disable the haunt</p>",
-			"hazarddescription": "A creature experiences the death of a priest carried off by griffons and fed to their chicks.",
-			"reset": "The haunt deactivates 1 minute after all living creatures leave the Lea of Honored Souls. Ten minutes after deactivating, the haunt resets.",
+			"name": "临终升空 Final Flight",
+			"disable": "<p>@Check[type:diplomacy|dc:22|name:Soothe the restless spirits|traits:hazard,haunt](受训)来安抚不肯安息的魂灵，或@Check[type:religion|dc:24|name:Honor the deceased|traits:hazard,haunt](受训)来背诵祷文纪念亡者；需要两次成功的检定才能解除作祟。</p>",
+			"hazarddescription": "生物会体验祭司临终前被狮鹫抓到空中喂给幼崽的过程。",
+			"reset": "作祟在所有活着的生物离开光荣灵魂草地后1分钟后停止。停止10分钟后，作祟重置。",
 			"stealthdetails": "(专家)",
 			"data":{},
-			"items":{}
+			"items":{
+				"Final Flight":{
+					"name": "临终升空 Final Flight",
+					"description": "<p><strong>触发</strong> 一个生物进入石圈；</p>\n<hr />\n<p><strong>效果</strong> 触发的生物会体验那位曾经照料光荣灵魂草地的祭司的临终时刻。狮鹫从天空中俯冲而下，用利爪抓起祭司，造成[[/r (1d8+7)[slashing]]]伤害。祭司被带往西南方向，穿过山谷来到山峰顶上，然后被丢给一窝狮鹫幼崽。幼崽吞食祭司的血肉，角色承受[[/r (1d8+7)[piercing]]]伤害和[[/r 2d8[mental]]]伤害。受影响的生物必须进行@Check[type:will|dc:22|traits:hazard,haunt]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 作祟造成的一切伤害减半。</p>\n<p><strong>失败</strong> 生物承受完整伤害。</p>\n<p><strong>大失败</strong> 生物承受完整伤害，并且无法摆脱幻觉；承受[[/r 1d8[bleed]]]伤害，只要流血伤害还在持续，生物就处于@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}认为自己正在被活活吃掉。</p>"
+				}
+			}
 		},
 		"Footsteps Of Legends": {
-			"name": "Footsteps Of Legends",
-			"disable": "<p>@Check[type:diplomacy|dc:26|name:Convince the spirits to remain dormant|traits:hazard,haunt](受训)to convince the spirits to remain dormant, or @Check[type:religion|dc:26|name:Ritually silence the spirits|traits:hazard,haunt](受训)to ritually silence the spirits</p>",
-			"hazarddescription": "The characters witness Burning Mammoths walking this mountain pass in ages long past.",
-			"reset": "1 hour",
+			"name": "远古传说的足音 Footsteps Of Legends",
+			"disable": "<p>@Check[type:diplomacy|dc:26|name:Convince the spirits to remain dormant|traits:hazard,haunt](受训)来说服鬼魂继续蛰伏，或@Check[type:religion|dc:26|name:Ritually silence the spirits|traits:hazard,haunt](受训)来通过仪式让鬼魂安息</p>",
+			"hazarddescription": "角色看到很久很久之前燃烧猛犸走过这处山口的景象。",
+			"reset": "1小时",
 			"stealthdetails": "(专家)",
 			"data":{},
-			"items":{}
+			"items":{
+				"Ancestral Journey":{
+					"name": "祖先旅程 Ancestral Journey",
+					"description": "<p><strong>触发</strong> 一个善良阵营的燃烧猛犸随众后裔进入山口；</p><hr />\n<p><strong>效果</strong> 很久之前的燃烧猛犸成员出现在小队身边，团结成一个随众走过山口。他们追随着祖先、英雄和传说的脚步。每个目睹景象的生物都在意志豁免和一切技能检定中获得+1状态加值，持续24小时。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.wHQZO70bSECtSUZn]{效果: 祖先旅程}</p>"
+				}
+			}
 		},
 		"Forest Fire": {
-			"name": "Forest Fire",
-			"disable": "<p>A successful @Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], @Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire], or @Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire] check from an adjacent square is sufficient to smother one 5‑foot‑square of fire; each attempt is an Interact action. Dousing the flames automatically extinguishes one or more sections of fire, with no check. Water typically clears a 5‑foot square if the amount is small (such as from a spell like create water or hydraulic push). Larger amounts of water, such as a full bucket, typically douse a 10‑foot‑by‑10‑foot area (or 4 squares in some other shape). Throwing a bucket of water on flames requires an Interact action. A waterskin doesn't contain enough water to put out even 1 square of fire. Cold can also put out fire, but only if the cold can affect an area; cold is less effective than water, so a frost vial puts out only 1 square of fire, and a ray of frost is ineffective.</p>",
-			"hazarddescription": "<p>A @Template[type:line|distance:10|width:10]{10‑foot‑by‑10‑foot} bonfire spreads to the surrounding forest on each of its turns.</p>",
-			"routine": "<p>On its turn, the fire spreads into a number of additional squares equal to half the number of squares the fire currently occupies (minimum 1 square). You determine the squares the fire spreads into. Any creature that ends its turn next to the flames takes [[/r (2d8+5)[fire]]]{2d8+5火焰伤害}, or [[/r (4d8+10)[fire]]]{4d8+10火焰伤害} if it ended its turn within the flames (@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true] in either case). A creature can take damage from the forest fire only once per round.</p>",
-			"stealthdetails": "",
+			"name": "森林大火 Forest Fire",
+			"disable": "<p>在临近的方格通过@Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire]、@Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire]或@Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire]检定可以扑灭5尺方格内的火焰；每次尝试都是一个交互动作。在火焰上浇水可以自动扑灭一个或更多方格里的火焰，无需检定。少量的水一般可以扑灭5尺方格内的火焰（例如造水术或水流冲击）。大量的水（例如一整桶水）可以扑灭10尺×10尺的区域（或其他形状的4个方格）。朝火焰上泼一桶水视作一个交互动作。水袋的存水量太小，连1方格的火都扑不灭。寒冷也可以扑灭火焰，但必须是能够影响一片区域的寒冷；寒冷的效果不如水，所以寒霜瓶只能扑灭1格的火焰，冰冻射线则没有效果。</p>",
+			"hazarddescription": "<p>一处@Template[type:line|distance:10|width:10]{10尺×10尺}的篝火每轮都向周围的森林蔓延。</p>",
+			"routine": "<p>在火焰的回合，它会向外蔓延，蔓延的格数等于火焰如今占据格数的一半（最少1格）。你来决定火焰蔓延到哪个方格里。任何在火焰旁边结束回合的生物都要受到[[/r (2d8+5)[fire]]]伤害，在火焰内结束回合则为[[/r (4d8+10)[fire]]]伤害（两种情况均为@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true]豁免）。一个生物每轮只能被森林大火伤害一次。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Stoke Flames":{
+					"name": "拨火 Stoke Flames",
+					"description": "<p><strong>触发</strong> 爆燃魔命令火焰肆意蔓延；</p><hr /><p><strong>效果</strong> 篝火变成森林大火，并投掷先攻。</p>"
+				}
+			}
 		},
 		"Gathganara": {
 			"name": "加特加纳拉 Gathganara",
@@ -502,10 +686,35 @@
 			}
 		},
 		"Idovik": {
-			"name": "Idovik",
-			"blurb": "Male Sarkorian god",
+			"name": "伊多维克 Idovik",
+			"blurb": "雄性萨克利斯神",
 			"data":{},
-			"items":{}
+			"items":{
+				"God's Intervention": {
+					"name": "神力干预 God's Intervention",
+					"description": "<p><strong>触发</strong> 灰沼成为物理打击的目标</p><hr /><p><strong>效果</strong> 感觉到灰沼的危机，伊多维克传送至他身边，为灰沼挡下危险。伊多维克传送至邻接灰沼的空间，用身体护住灰沼。伊多维克成为触发此能力的打击的目标。</p>"
+				},
+				"Independent Action": {
+					"name": "独立行动 Independent Action",
+					"description": "<p>伊多维克比大多数萨克利斯神都更加古老、强大，他知道如何在没有唤神者的情况下以某些形态显现。伊多维克不与灰沼共享先攻、动作、HP和多重攻击减值。</p>"
+				},
+				"Indomitable Step": {
+					"name": "不屈步伐 Indomitable Step",
+					"description": "<p>伊多维克无视困难地形和不稳地面，并视高等困难地形为困难地形。</p>"
+				},
+				"Otherworldly Roar": {
+					"name": "异界咆哮 Otherworldly Roar",
+					"description": "<p>伊多维克发出强大的吼声，同时用蹄子踏地，展示自己的獠牙。伊多维克进行威吓检定，对30尺范围内的每个敌人进行@UUID[Compendium.pf2e.actionspf2e.2u915NdUyQan6uKF]{挫败士气 Demoralize}。该检定不因语言不通而承受减值。</p>"
+				},
+				"Rampaging Charge": {
+					"name": "横冲直撞 Rampaging Charge",
+					"description": "<p>伊多维克向前冲锋，利用冲力强化自己的攻击。伊多维克行走两次，然后进行一次獠牙打击。只要他至少移动了20尺，攻击检定就获得2环境加值。被此攻击击中的中型或更小体型的生物须通过@Check[type:reflex|dc:25]豁免，否则会因这一击的力量@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"Spirit Link": {
+					"name": "精神连结 Spirit Link",
+					"description": "<p>即使这种连结并非普通的连结，伊多维克依然束缚于自己的召唤师；他必须始终处于灰沼的100尺范围内。如果他离开该范围或HP降低至0伊多维克的物理形态就会消散。由于他的连结效果不同寻常，且他不与灰沼共享HP在灰沼@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或死后伊多维克依然能够显现，只要他待在灰沼躯体周围。如果灰沼死亡，伊多维克的形体会在1分钟后消散。被解消后，伊多维克必须被显现才能再度出现。</p>"
+				}
+			}
 		},
 		"Ivarsa": {
 			"name": "Ivarsa",
@@ -541,10 +750,38 @@
 			}
 		},
 		"Lagofir": {
-			"name": "Lagofir",
-			"publicNotes": "<p>Lagofirs are semiaquatic omnivores that resemble a rabbit the size of a large dog. They're social creatures, playful but territorial and protective of their kin. Lagofirs live in family units and gather in larger groups as often as their environment allows. They're commonly found in northern Avistan, congregating along rivers, lakes, and coasts, where they subsist on fish, crustaceans, marine plants, and small mammals.</p>\n<p>Lagofirs have a stout body, rounded back, large hind legs, long ears, and a short, fluffy tail. Their powerful incisors are capable of cracking through clam shells, chitin, and bone. Both their front and back paws are webbed, and their front paws are highly dexterous, enabling them to grasp objects and perform simple manual tasks.</p>\n<p>Lagofirs secrete a thick, sweet-smelling, flammable oil that coats their fur. Warm to the touch, this oil keeps them insulated and comfortable in frigid water and cold climates. Lagofirs mark their territory by brushing against solid surfaces, coating them in oil that, to other lagofirs, identifies an individual. This makes their lairs, known as burrows or forms, incredibly hazardous. A single spark in a lagofir form can cause an explosion.</p>",
+			"name": "拉戈菲 Lagofir",
+			"publicNotes": "<p>拉戈菲是一种半水生的杂食性动物，类似于一只大狗大小的兔子。它们是群居动物，顽皮但有领地意识，会保护自己的亲族。拉戈菲以家庭为单位生活，在周围环境允许的情况下尽可能地聚成更大的群落。它们常见于阿维斯坦北部，通常聚集在河流、湖泊和海岸，以鱼类、甲壳类动物、海洋植物和小型哺乳动物为食。</p>\n<p>拉戈菲身体健壮，背部呈圆形，有着粗壮的后腿、长长的耳朵和一条又短又蓬松的尾巴。它们强力的门牙能够穿透蛤壳、甲壳质和骨头。它们的前爪和后爪都有蹼，前爪非常灵巧，能够抓住物体并执行简单的操作任务。</p>\n<p>拉戈菲会分泌一种厚厚的、有甜味的、易燃的油，覆盖在它们的皮毛上。这种油摸起来很温暖，能在寒冷的水和寒冷的气候中为它们隔绝温度，保持舒适。拉戈菲通过在固体表面上摩擦身体、在表面上涂油来标记自己的领地，对其他拉戈菲来说，油可以用来识别不同的个体。这使得它们的巢穴变得极其危险。在拉戈菲巢穴里，一点小小的火花就会引发爆炸。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Feet": {
+					"name": "脚踢 Feet"
+				},
+				"Cold Adaptation": {
+					"name": "寒冷适应 Cold Adaptation",
+					"description": "<p>拉戈菲能将受到的寒冷环境影响减少1阶。</p>"
+				},
+				"Consuming Fumes": {
+					"name": "强烈烟气 Consuming Fumes",
+					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尺。拉戈菲被其渗出的可燃油散发的烟气环绕着。在灵光范围内，每种火把大小或更大的非魔法明火都会爆炸，对邻接火焰的每个生物和物体造成[[/r 4d4[fire]]]伤害（@Check[type:reflex|dc:17|basic:true]豁免）。爆炸过后，火源会消失。</p>"
+				},
+				"Deep Breath": {
+					"name": "深呼吸 Deep Breath",
+					"description": "<p>拉戈菲能屏息1小时。</p>"
+				},
+				"Flammable": {
+					"name": "可燃 Flammable",
+					"description": "<p>拉戈菲会分泌一种温暖、可燃的油。@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}拉戈菲或被拉戈菲擒抱或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物身上会沾上油，持续10分钟或直至花费1分钟大力擦洗把油洗掉为止。每当身上有油的拉戈菲或其他生物受到火焰伤害，它都会着火，承受[[/r 1d6[persistent,fire]]]伤害。</p>"
+				},
+				"Gnaw": {
+					"name": "啮咬 Gnaw",
+					"description": "<p><strong>需求</strong> 拉戈菲的上一个动作是成功的啃咬打击；</p><hr /><p><strong>效果</strong> 拉戈菲咬住目标，把牙齿深深扎进猎物。目标承受[[/r (1d8+3)[piercing]]]伤害。</p>"
+				},
+				"Nimble Rush": {
+					"name": "敏捷冲刺 Nimble Rush",
+					"description": "<p>拉戈菲一边在敌人周围飞奔一边发动攻击。拉戈菲行走两次，在移动过程中的任一时刻进行打击。它可以把任意一次行走替换为游泳。</p>"
+				}
+			}
 		},
 		"Loblobi": {
 			"name": "洛洛比河精 Loblobi",
@@ -567,21 +804,55 @@
 			"items":{}
 		},
 		"Long-horned Bison": {
-			"name": "Long-horned Bison",
-			"publicNotes": "<p>Much like their smaller bison cousins, long-horned bison are bovines with short faces, two horns, a shaggy coat, and a noticeable hump on their back. Despite their relation to more placid bovines, however, long-horned bison are ill-tempered and territorial. Their tread shakes the ground, while the thunder of their stampedes can be mistaken for an earthquake. Long-horned bison weigh upwards of 4,500 pounds and measure up to 9 feet tall and 16 feet long. Their horns, measured tip to tip, can be almost as wide as the bison are tall.</p>",
+			"name": "长角野牛 Long-horned Bison",
+			"publicNotes": "<p>与它们体型较小的近亲野牛（怪物图鉴3第32页）一样，长角野牛也是一种有着短脸、两根角、蓬松的毛发、背上有着明显隆起的牛类。然而，尽管与较为温和的野牛有着亲缘关系，长角野牛却脾气很坏，领地意识极强。它们的脚步声撼动地面，踩踏的响声可能会被误认为是地震。长角野牛最重可达4500磅，最高可达9尺，最长可达16尺。它们的两根角的尖端距离甚至可以与其身高几乎相等。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Cold Adaptation": {
+					"name": "寒冷适应 Cold Adaptation",
+					"description": "<p>野牛能将受到的寒冷环境影响减少1阶。</p>"
+				},
+				"Toss": {
+					"name": "甩角 Toss",
+					"description": "<p><strong>触发</strong> 一个生物在野牛的角抵打击触及范围内结束移动；</p><hr /><p><strong>效果</strong> 野牛试图用角推撞触发该反应的生物。野牛在获得成功或大成功后无法行走。</p>"
+				},
+				"Pointed Charge": {
+					"name": "莽牛突击 Pointed Charge",
+					"description": "<p>野牛犄角低垂，直冲向它的敌人。它行走两次。如果野牛结束移动时在一个敌人的近战触及范围内，野牛对该敌人进行一次角抵打击。该次打击获得夺命D12特征。</p>"
+				},
+				"Rolling Thunder": {
+					"name": "雷霆奔踏 Rolling Thunder",
+					"description": "<p>野牛冲锋时尘土飞扬，大地震颤。奔踏的野牛最多以两倍速度进行一次直线行走，对路径上所有体型不大于大型的生物造成[[/r (4d8+8)[bludgeoning]]]伤害（@Check[type:reflex|dc:24|basic:true]豁免）。多个野牛可以共同参与雷霆奔踏，只需要花费能力所需的动作然后等待整个牛群准备完毕。在它们的下个回合开始前，当一只相邻的野牛开始雷霆奔踏时，能触发它的反应动作开始协同冲锋。所有协同冲锋的野牛必须采用平行的直线路径，所以覆盖的区域不会彼此交叉。协同冲锋会对区域内的生物造成额外[[/r 3d8[bludgeoning]]]伤害，反射豁免失败的生物还会@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				}
+			}
 		},
 		"Long-horned Bison Beheaded": {
-			"name": "Long-horned Bison Beheaded",
+			"name": "长角野牛活化头颅 Long-horned Bison Beheaded",
 			"data":{},
-			"items":{}
+			"items":{
+				"Toss": {
+					"name": "甩头 Toss",
+					"description": "<p><strong>需求</strong> 活化头颅的上一个动作是角击打击，对目标造成伤害；</p><hr />\n<p><strong>效果</strong> 活化头颅甩头，试图把目标生物移动到它的角触及范围内的另一处空间。它进行运动检定，对抗目标的强韧DC。失败的情况下，目标停留在原地。</p>"
+				},
+				"Push (10 feet)": {
+					"name": "推离 Push (10尺)"
+				}
+			}
 		},
 		"Megaloceros": {
-			"name": "Megaloceros",
-			"publicNotes": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
+			"name": "大角麋鹿 Megaloceros",
+			"publicNotes": "<p>大角麋鹿与麋鹿形态相似，但提醒却要大得多。通常的雄性都是高大的生物，仅鹿角就接近100磅重。这些鹿角非常巨大，并且其宽度可能要胜过它们的体长。大角麋鹿站立时高达9英尺，重达1500磅，鹿角超过12英尺宽。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Buck": {
+          			"name": "甩脱 Buck",
+					"description": "<p>@Check[type:reflex|dc:21]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Buck]</p>"
+				},
+				"Furious Charge": {
+					"name": "愤怒猛冲 Furious Charge",
+					"description": "<p>大角麋鹿行走两次，然后进行一次蹄踢打击。如果此次打击命中，它造成额外[[/r 2d4[bludgeoning]]]伤害。</p>"
+				}
+			}
 		},
 		"Methane Flue": {
 			"name": "Methane Flue",
@@ -597,18 +868,43 @@
 			"items":{}
 		},
 		"Necrohusk": {
-			"name": "Necrohusk",
-			"publicNotes": "<p>Necrohusks are skittering, undead monstrosities, created when a humanoid is purposefully twisted into a new creature through necromantic experimentation. Unlike fleshwarps and recipients of successful necrografts, prospective necrohusks never survive the procedure. After reanimation, they're cunning, animalistic creatures that follow their creator's orders without question.</p>\n<p>Creating a necrohusk is an incredibly difficult endeavor, fraught with error. Most attempts result in lumps of useless, rotten slurry or malformed undead no more cunning or dangerous than a mundane zombie. The costs in time, experimental subjects, and expensive spell components lead some would-be necromancers to conclude that the results aren't worth the risk. Occasionally, spellcasters can harness the power of the Negative Energy Plane during the process, which lessens the monetary cost but vastly increases the danger, often producing a deadly backlash resulting in the creator's death and a masterless necrohusk.</p>\n<p>Among the Sutaki, only Ashen Swale and his lieutenants, Turkek and Azi, have the skill and knowledge to create necrohusks with any regularity, although Turkek's interests often lead him away from such gruesome endeavors. Necrohusks are created from volunteers in Ashen Swale's cult or from traitorous Sutaki whom Ashen Swale wants to punish with a ghastly fate.</p>",
+			"name": "死灵躯壳 Necrohusk",
+			"publicNotes": "<p>死灵躯壳是一种跳跃的不死怪物，是类人生物通过死灵实验被故意扭曲成一个新的生物时产生的。与塑肉体和成功的亡灵移植体不同，成为死灵躯壳的都是没能活过实验过程的。在被复活后，它们就成为了狡诈的、动物一般的生物，只会无条件服从造主的命令。</p>\n<p>创造死灵躯壳非常困难，容易出错的地方很多。大多数尝试的结果都是无用的、腐烂的泥浆或畸形的不死生物，它们并不比普通的僵尸更聪明或危险。时间成本、实验对象和昂贵的法术材料使得一些死灵法师认为，这些成果不值得他们冒这个风险。有时，施法者可以在实验过程中利用负能量位面减少金钱成本，但同时会极大增加危险，最终往往会产生反冲，造成施法者死亡，留下一个没有主人的死灵躯壳。</p>\n<p>在苏塔基人中，只有灰沼和他的副手图凯克与阿兹拥有经常性地创造死灵躯壳的知识和技能。不过图凯克的兴趣经常把他引向别处，而不进行如此残忍的行为。死灵躯壳的材料来自灰沼教派的志愿者，或是背叛灰沼的苏塔基人。灰沼希望以这种可怖的命运来惩罚他们。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"strike-Ichor Spit": {
+					"name": "脓液喷吐 Ichor Spit"
+				},
+				"Skitter": {
+					"name": "跑动 Skitter",
+					"description": "<p><strong>触发</strong> 一个生物的近战打击未能击中死灵躯壳；</p><hr /><p><strong>效果</strong> 死灵躯壳进行快步。</p>"
+				},
+				"Frenzied Assault": {
+					"name": "狂暴攻击 Frenzied Assault",
+					"description": "<p>死灵躯壳进行三次腿踢打击。如果多于一次打击命中同一目标，将击中目标的打击合并计算伤害，只应用一次目标生物的弱点与抗力。</p>"
+				},
+				"Impaling Lunge": {
+					"name": "穿刺猛扑 Impaling Lunge",
+					"description": "<p>死灵躯壳行走两次。如果死灵躯壳结束移动时处于敌人的近战攻击范围内，它对该敌人进行一次腿踢打击。击中的情况下，该次打击额外造成[[/r 1d6[bleed]]]伤害。</p>"
+				},
+				"Vile Innards": {
+					"name": "污秽内脏 Vile Innards",
+					"description": "<p>死灵躯壳在进行脓液喷吐打击时会把它的一部分腐烂的内脏吐出去。大成功的情况下，目标陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
+				}
+			}
 		},
 		"Oil Explosion": {
-			"name": "Oil Explosion",
-			"disable": "<p>@Check[type:survival|dc:25|name:Neutralize the oil|traits:hazard,environmental,fire](受训)or @Check[type:crafting|dc:23|name:Neutralize the oil|traits:hazard,environmental,fire] to neutralize the oil without setting it alight</p>",
-			"hazarddescription": "The flammable oil catches flame and explodes, burning up in a ball of fire.",
+			"name": "拉戈菲油爆炸 Oil Explosion",
+			"disable": "<p>@Check[type:survival|dc:25|name:Neutralize the oil|traits:hazard,environmental,fire](受训)生存（受训）或@Check[type:crafting|dc:23|name:Neutralize the oil|traits:hazard,environmental,fire]以除去这些油而不使之点燃。</p>",
+			"hazarddescription": "易燃的油着起火来，引发爆炸，形成一团火球。",
 			"stealthdetails": "(受训)",
 			"data":{},
-			"items":{}
+			"items":{
+				"Explode":{
+					"name": "爆炸 Explode",
+					"description": "<p><strong>触发</strong> 明火被带入区域<strong>A4</strong></p><hr />\n<p><strong>效果</strong> 墙上的拉戈菲油爆炸，对区域<strong>A4</strong>和<strong>A3</strong>的所有生物和物体造成[[/r (4d8+10)[fire]]]伤害（@Check[type:reflex|dc:21|traits:hazard,environmental,fire|basic:true]豁免）。</p>"
+				}
+			}
 		},
 		"Pakano": {
 			"name": "帕卡诺 Pakano",
@@ -654,12 +950,17 @@
 			}
 		},
 		"Punishing Altar": {
-			"name": "Punishing Altar",
-			"disable": "<p>@Check[type:thievery|dc:22|name:Remove the bowl|traits:hazard,magical,necromancy,negative,trap](专家)to remove the bowl without triggering the magic, or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (2nd level, counteract DC 20) to counteract the runes</p>",
-			"hazarddescription": "The bowl releases a wave of negative energy when a living creature approaches without displaying a religious symbol of Venexus.",
-			"stealthdetails": "(受训) to notice the bowl is the center point for a magical trap",
+			"name": "责罚祭坛 Punishing Altar",
+			"disable": "<p>@Check[type:thievery|dc:22|name:Remove the bowl|traits:hazard,magical,necromancy,negative,trap](专家) 在不触发魔法的情况下移开碗，或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（2环，反制DC20）来反制魔法符文</p>",
+			"hazarddescription": "当有活物靠近而未展示威尼瑟斯圣徽时，碗释放出一股负能量冲击波。",
+			"stealthdetails": "(受训) 来发现碗是魔法陷阱的核心",
 			"data":{},
-			"items":{}
+			"items":{
+				"Necromantic Wave":{
+					"name": "死灵波动 Necromantic Wave",
+					"description": "<p><strong>触发</strong> 一个活物靠近碗10尺范围内而未展示威尼瑟斯圣徽；</p><hr />\n<p><strong>效果</strong> 碗释放出负能量冲击波，对触发的生物和范围内所有未展示威尼瑟斯圣徽的生物造成[[/r (4d8+10)[negative]]]伤害（@Check[type:reflex|dc:21|traits:hazard,magical,necromancy,negative,trap|basic:true]豁免）。豁免大失败的情况下，生物陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>"
+				}
+			}
 		},
 		"Rhino Warriors": {
 			"name": "Rhino Warriors",
@@ -687,18 +988,40 @@
 			}
 		},
 		"Rockfall Ceiling": {
-			"name": "Rockfall Ceiling",
-			"disable": "<p>@Check[type:thievery|dc:25|name:Pin the pulley in place|traits:hazard,mechanical,trap](受训)to pin the pulley in place</p>",
-			"hazarddescription": "A load of rocks, held up by a rope pulley, is dropped on the cavern's lower level.",
+			"name": "落岩洞顶 Rockfall Ceiling",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Pin the pulley in place|traits:hazard,mechanical,trap](受训)用销将滑轮组固定归位</p>",
+			"hazarddescription": "由绳滑轮组控制的一大堆石块掉落在洞窟的低层。",
 			"stealthdetails": "(受训)",
 			"data":{},
-			"items":{}
+			"items":{
+				"Drop Rocks":{
+					"name": "落岩 Drop Rocks",
+					"description": "<p><strong>触发</strong> 握着绳子的生物拉动绳子；</p><hr />\n<p><strong>效果</strong> 绳网松落，岩石掉落在区域<strong>A15</strong>低侧的所有生物和物体上，造成[[/r (4d8+14)[bludgeoning]]]伤害（@Check[type:reflex|dc:26|traits:hazard,mechanical,trap|basic:true]豁免）。</p>"
+				}
+			}
 		},
 		"Roru": {
-			"name": "Roru",
-			"publicNotes": "<p>Rorus, sometimes called hunter demons, are brutal fiends that arise from the souls of mortals who mutilated animal corpses. As demons, these individuals don animal pelts, then infiltrate packs or herds to corrupt entire swaths of animals, turning their victims bloodthirsty and feral.</p>",
+			"name": "蹂掠魔 Roru",
+			"publicNotes": "<p>蹂掠魔有时被称为狩猎魔，它们是残忍的魔族，诞生自残忍损毁动物尸体的人的灵魂。作为恶魔，它们会披上动物的毛皮，混进兽群，腐化整个群落，将其受害者变得嗜血而野蛮。</p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Disobedience Vulnerability": {
+					"name": "违逆弱点 Disobedience Vulnerability",
+					"description": "<p>每轮第一次，在蹂掠魔周围60尺范围内有尝试进行指挥动物的检定失败时，蹂掠魔承受[[/r 4d6[mental]]]伤害（如果是蹂掠魔自身失败则为[[/r 10d6[mental]]]）。</p>"
+				},
+				"Predatory Aura": {
+					"name": "狩猎灵光 Predatory Aura",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>进入灵光范围或在灵光范围内结束其回合的动物或魔兽必须通过@Check[type:will|dc:25]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}（大失败为惊惧2）。灵光范围内惊惧的动物无法攻击蹂掠魔。对抗狩猎灵光豁免成功的生物对此免疫24小时。</p>"
+				},
+				"Incite Ferocity": {
+					"name": "煽起凶性 Incite Ferocity",
+					"description": "<p>蹂掠魔将其腐化作用集中于30尺内它能看见的一个动物或魔兽。该生物必须通过@Check[type:will|dc:25]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}，持续[[/r 1d4 #rounds]]{1d4轮}。困惑的生物无法攻击蹂掠魔。豁免成功的生物免疫该效果24小时。</p>"
+				},
+				"Wear Pelt": {
+					"name": "披挂兽皮 Wear Pelt",
+					"description": "<p>蹂掠魔披上邻接的死亡动物的皮毛，变成它的样子。蹂掠魔变为相同体型，获得目标动物的相同速度。蹂掠魔失去啃咬和爪抓无武装打击，获得目标生物的近战打击方式。打击造成的伤害等同于蹂掠魔的啃咬伤害（具有灵巧特征的则为爪抓打击伤害）。无论如何，伤害类型都与新的无武装打击方式相匹配。蹂掠魔披挂兽皮期间，对蹂掠魔造成的物理伤害有一半作用于兽皮。兽皮有硬度525HP。兽皮HP归零后，蹂掠魔立刻离开兽皮，兽皮被摧毁。</p>"
+				}
+			}
 		},
 		"Shattering Rune": {
 			"name": "Shattering Rune",
@@ -709,17 +1032,31 @@
 			"items":{}
 		},
 		"Skeletal Woolly Rhinoceros": {
-			"name": "Skeletal Woolly Rhinoceros",
+			"name": "骷髅披毛犀 Skeletal Woolly Rhinoceros",
 			"data":{},
-			"items":{}
+			"items":{
+				"Rhinoceros Charge": {
+					"name": "犀牛冲锋 Rhinoceros Charge",
+					"description": "<p>犀牛行走两次，然后进行一次角抵打击。只要犀牛移动至少20尺，打击的伤害增加到[[/r (3d12+5)[piercing]]]。被此攻击击中的中型或更小体型的生物必须通过@Check[type:reflex|dc:22]豁免，否则自动被推撞后退5尺，并因为这一击的力量陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+				},
+				"Trample": {
+          			"name": "践踏 Trample",
+					"description": "<p>中型或更小体型，脚踩，@Check[type:reflex|dc:19|basic:true]</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Trample]</p>"
+				}
+			}
 		},
 		"Soul Draining Cage": {
-			"name": "Soul Draining Cage",
-			"disable": "<p>@Check[type:thievery|dc:25|name:Drain the rune's power|traits:hazard,magical,necromancy,negative,trap](专家)to drain the runes' power harmlessly or <em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (3rd level; counteract DC 22) to counteract the rune</p>",
-			"hazarddescription": "Necromantic runes inscribed on the cage bars and lock drain the vitality of living creatures who interact with the cage.",
-			"stealthdetails": "<p>(专家) or <em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{Detect Magic}</em></p>",
+			"name": "灵魂汲取牢笼 Soul Draining Cage",
+			"disable": "<p>@Check[type:thievery|dc:25|name:Drain the rune's power|traits:hazard,magical,necromancy,negative,trap](专家)以用无害的方式抽干符文的能量；或<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（3环，反制DC22）以反制符文。</p>",
+			"hazarddescription": "牢笼栏杆和锁上雕刻的死灵符文会汲取触碰牢笼的活物的生命力。",
+			"stealthdetails": "<p>(专家) 或<em>@UUID[Compendium.pf2e.spells-srd.gpzpAAAJ1Lza2JVl]{侦测魔法 Detect Magic}</em></p>",
 			"data":{},
-			"items":{}
+			"items":{
+				"Soul Drain":{
+					"name": "灵魂汲取 Soul Drain",
+					"description": "<p><strong>触发</strong> 一个生物直接或使用工具触碰牢笼的栏杆、门或锁；</p><hr />\n<p><strong>效果</strong> 牢笼对触发生物、牢笼内的生物和临近牢笼的生物造成[[/r (4d8+18)[negative]]]伤害（@Check[type:fortitude|dc:27|traits:hazard,trap|basic:true]豁免）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>"
+				}
+			}
 		},
 		"Spectral Archers": {
 			"name": "Spectral Archers",
@@ -813,33 +1150,154 @@
 			}
 		},
 		"Turkek": {
-			"name": "Turkek",
-			"blurb": "Female human dhampir necromancer",
+			"name": "图凯克 Turkek",
+			"blurb": "女性人类吸血裔死灵师",
 			"data":{},
-			"items":{}
+			"items":{
+				"Clot": {
+					"name": "凝血 Clot",
+					"description": "<p><strong>触发</strong> 图凯克承受持续流血伤害；</p>\n<hr />\n<p><strong>效果</strong> 图凯克的血液凝固封住伤口。图凯克下一次从触发此反应的持续流血伤害中恢复的纯骰检定自动成功。</p>"
+				},
+				"Sanguine Aura": {
+					"name": "血色灵光 Sanguine Aura",
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尺。在图凯克周围，伤口愈合缓慢，血流速度增快。阻止持续流血伤害的纯骰DC为16而非15。此外，每当灵光内的生物承受持续流血伤害，都要额外受到[[/r 1d6[bleed]]]伤害。</p>"
+				},
+				"Blood Let": {
+					"name": "放血 Blood Let",
+					"description": "<p><strong>需求</strong> 图凯克的上一个动作是尖牙打击命中目标；</p><hr /><p><strong>效果</strong> 图凯克的尖牙划开目标的动脉或静脉，造成额外[[/r (1d6+5)[slashing]]]伤害。</p>"
+				},
+				"Siphon Blood": {
+					"name": "血液虹吸 Siphon Blood",
+					"description": "<p><strong>需求</strong> 位于图凯克的血色灵光内的一个生物正在承受持续流血伤害；</p><hr /><p><strong>效果</strong> 图凯克将敌人的血液吸进自己体内以治疗自己的伤口，恢复7点HP。</p>"
+				}
+			}
 		},
 		"Varilyn \"Vare\" Eridge": {
-			"name": "Varilyn \"Vare\" Eridge",
-			"blurb": "Female halfling ex-crusader",
+			"name": "瓦里林“瓦雷”·埃里奇 Varilyn \"Vare\" Eridge",
+			"blurb": "女性半身人前远征军",
 			"data":{},
-			"items":{}
+			"items":{
+				"Guide's Warning": {
+					"name": "引导警告 Guide's Warning",
+					"description": "<p>当瓦雷进行察觉或生存检定决定先攻时，她可以以一个自由动作警告盟友。瓦雷以视觉或听觉形式警告盟友，使其先攻掷骰获得+1环境加值。根据警告的方式不同，该动作拥有听觉或视觉特征。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.UiISDbCjK6AUDsll]{效果: 引导警告}</p>"
+				},
+				"Snare Crafting": {
+					"name": "圈套工艺 Snare Crafting",
+					"description": "<p>瓦雷可以使用手艺技能制作下列圈套：警报圈套妨碍圈套恼人荆棘圈套（见冒险工具箱），标记圈套信号圈套，以及烟幕圈套。瓦雷每天可以无需消耗材料制作4个圈套，每个圈套需要3个交互动作布设。</p>"
+				},
+				"Guiding Words": {
+					"name": "引导话语 Guiding Words",
+					"description": "<p>瓦雷指出30尺范围内一个生物的一项弱点。瓦雷和所有能看到或听到她的盟友对该生物的攻击和伤害掷骰获得+1状态加值，持续到瓦雷的下一回合开始。在此期间，瓦雷击中该生物时，武器和无武装攻击额外增加1d6精准伤害。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.uqjx1bwYduHwwC7d]{效果: 引导话语}</p>"
+				}
+			}
 		},
 		"Venexus": {
-			"name": "Venexus",
-			"blurb": "Female young white dragon",
+			"name": "威尼瑟斯 Venexus",
+			"blurb": "雌性青年白龙（",
 			"data":{},
-			"items":{}
+			"items":{
+				"Freezing Blood": {
+					"name": "冰结之血 Freezing Blood",
+					"description": "<p><strong>触发</strong> 一个邻接的生物对威尼瑟斯造成了穿刺或者挥砍伤害。</p>\n<hr />\n<p><strong>效果</strong> 威尼瑟斯的血飞溅到该生物身上，造成[[/r 2d6[cold]]]伤害。一个因此受到寒冷伤害的生物被@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
+				},
+				"Frightful Presence": {
+         			"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:25]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Mist Shroud": {
+					"name": "雾气环绕 Mist Shroud",
+					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p><em>原初之火</em>不断将威尼瑟斯身体散发的冷气进行加热，让龙的周围环绕着一层薄雾。在灵光中的生物处于@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，其他生物对该区域内的生物处于隐蔽状态。威尼瑟斯的风暴视野使她能够看穿隐蔽。如果用风吹开灵光，它会在威尼瑟斯的下一回合开始时自动恢复。该灵光会被水压制。</p>"
+				},
+				"Storm Vision": {
+					"name": "风暴视野 Storm Vision",
+					"description": "<p>恶劣天气无法妨碍威尼瑟斯的视野；它忽略由雾、浓雾、雨和降雪带来的隐蔽状态。</p>"
+				},
+				"Breath Weapon": {
+					"name": "吐息 Breath Weapon",
+					"description": "<p>威尼瑟斯喷出一片霜云，对@Template[type:cone|distance:40]区域内的生物造成[[/r 10d6[cold]]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。它在经过[[/br 1d4 #Breath Weapon Cooldown]]{1d4轮}之前无法再次使用吐息。</p>"
+				},
+				"Draconic Frenzy": {
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>威尼瑟斯以任意顺序进行两次爪抓打击和一次尾击打击。</p>"
+				},
+				"Draconic Momentum": {
+					"name": "龙之威势 Draconic Momentum",
+					"description": "<p>当威尼瑟斯在一次打击中造成重击时，她立刻为吐息充能。</p>"
+				},
+				"Ice Climb 30 feet": {
+					"name": "冰面攀爬30尺",
+					"description": "<p>威尼瑟斯可以在冰面上攀爬，如同她拥有所列出数值的攀爬速度。她忽略由冰雪所造成的困难地形和高等困难地形，并且也不会在穿越冰层时坠落。</p>"
+				},
+				"Shape Ice": {
+					"name": "塑冰 Shape Ice",
+					"description": "<p>威尼瑟斯重塑一块她所接触到的冰块或是雪块，最多宽10尺。任何站在冰面上的生物必须成功通过一次@Check[type:reflex|dc:15]豁免或者特技检定。一旦失败，该生物将摔倒在冰面上，陷入@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态；如果是大失败，则它会从冰面上摔落，同时倒地。</p>"
+				},
+				"Snuff": {
+					"name": "闷熄 Snuff",
+					"description": "<p>威尼瑟斯释放出一阵冻雨，浇灭30尺范围内的一切明火。所有非魔法火焰会自动熄灭。区域内所有承受持续火焰伤害的生物立即进行一次@Check[type:flat|dc:10]检定来结束持续伤害。如果该能力与正在持续的火焰效果重叠，该能力会尝试反制火焰效果。</p>"
+				}
+			}
 		},
 		"Venexus's Chosen": {
-			"name": "Venexus's Chosen",
-			"blurb": "Dragonkin monks",
+			"name": "威尼瑟斯的选民 Venexus's Chosen",
+			"blurb": "龙裔武僧",
 			"data":{},
-			"items":{}
+			"items":{
+				"Tail Lash": {
+					"name": "甩尾 Tail Lash",
+					"description": "<p><strong>触发</strong> 一个在选民尾巴打击触及范围内的生物使用一个动作进行打击或是尝试进行技能检定；</p><hr />\n<p><strong>效果</strong> 威尼瑟斯的选民尝试对触发生物进行一次尾巴打击。如果命中，该生物在触发该反应的行动检定中承受2环境减值。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.QqC9xymSXSVunDgl]{效果: 甩尾 (攻击检定)}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.4HJJdogS751Z04lD]{效果: 甩尾 (技能检定)}</p>"
+				},
+				"Change Shape": {
+					"name": "变形 Change Shape",
+					"description": "<p>威尼瑟斯的选民可以在类人形态和混种形态之间切换。当处于混种形态时，选民获得尾巴非武装攻击。</p>"
+				},
+				"Flurry of Blows": {
+					"name": "疾风连击 Flurry of Blows",
+					"description": "<p><strong>频率</strong> 每轮一次</p><hr /><p><strong>效果</strong> 威尼瑟斯的选民进行两次非武装打击。如果两次打击均命中同一生物，伤害合并计算抗力与弱点。</p>"
+				},
+				"Ice Walk": {
+					"name": "冰上行走 Ice Walk",
+					"description": "<p>威尼瑟斯的选民无视冰雪形成的困难地形和高等困难地形，在冰上不会有坠落的风险。</p>"
+				},
+				"Powerful Fists": {
+					"name": "猛力拳头 Powerful Fists",
+					"description": "<p>威尼瑟斯的选民的拳头打击视为寒铁和银，且在进行致命攻击时不承受减值。</p>"
+				}
+			}
 		},
 		"Venexus's Wyrmling": {
-			"name": "Venexus's Wyrmling",
+			"name": "威尼瑟斯的雏龙 Venexus's Wyrmling",
 			"data":{},
-			"items":{}
+			"items":{
+				"Freezing Blood": {
+					"name": "冰结之血 Freezing Blood",
+					"description": "<p><strong>触发</strong> 一个相邻的生物对雏龙造成了穿刺或者挥砍伤害。</p><hr /><p><strong>效果</strong> 龙的血飞溅到该生物身上，造成[[/r 1d4[cold]]]伤害。因此受到寒冷伤害的生物陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
+				},
+				"Frightful Presence": {
+          			"name": "气势凶猛 Frightful Presence",
+					"description": "<p>@Template[type:emanation|distance:90]{90尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:19]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+				},
+				"Snow Vision": {
+					"name": "雪域视觉 Snow Vision",
+					"description": "<p>雪不会影响白龙的视野；雏龙无视由降雪带来的隐蔽状态。</p>"
+				},
+				"Breath Weapon": {
+					"name": "吐息 Breath Weapon",
+					"description": "<p>雏龙喷出一片霜云，对@Template[type:cone|distance:30]区域内的生物造成[[/r 6d6[cold]]]伤害（@Check[type:reflex|dc:22|basic:true]豁免）。它在经过[[/br 1d4 #Breath Weapon Cooldown]]{1d4轮}之前无法再次使用吐息。</p>"
+				},
+				"Draconic Frenzy": {
+					"name": "龙之狂怒 Draconic Frenzy",
+					"description": "<p>雏龙以任意顺序进行两次爪击打击和一次尾巴打击。</p>"
+				},
+				"Draconic Momentum": {
+					"name": "龙之威势 Draconic Momentum",
+					"description": "<p>当雏龙在一次打击中造成重击时，它立刻为吐息充能。</p>"
+				},
+				"Ice Climb": {
+					"name": "冰面攀爬 Ice Climb",
+					"description": "<p>白龙可以在冰面上攀爬，如同它拥有所列出数值的攀爬速度。它忽略由冰雪所造成的困难地形和高等困难地形，并且也不会在穿越冰层时坠落。</p>"
+				}
+			}
 		},
 		"Weykoward": {
 			"name": "Weykoward",
@@ -852,16 +1310,42 @@
 			"items":{}
 		},
 		"Zombie Mammoth": {
-			"name": "Zombie Mammoth",
+			"name": "丧尸猛犸 Zombie Mammoth",
 			"data":{},
-			"items":{}
+			"items":{
+				"Slow": {
+					"name": "缓慢 Slow",
+					"description": "<p>丧尸具有永久@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+				},
+				"Dual Tusks": {
+					"name": "双牙戳刺 Dual Tusks",
+					"description": "<p>丧尸猛犸进行两次象牙打击，两次目标生物不同。此动作在计算多重攻击减值时算一次攻击，且多重攻击减值在两次攻击结束后开始生效。</p>"
+				},
+				"Impaling Tusks": {
+					"name": "象牙穿刺 Impaling Tusks",
+					"description": "<p>丧尸猛犸对其用象鼻擒抱的一个生物进行一次象牙打击。如果攻击命中，该生物会被穿在猛犸的一根象牙上，使得象鼻可以继续攻击其他目标。每根象牙可以承载两个中型或更小体型的生物。在象牙上穿着其他生物的时候，猛犸仍然可以使用象牙进行攻击。</p>"
+				},
+				"Grabbing Trunk": {
+					"name": "鼻卷 Grabbing Trunk",
+					"description": "<p>丧尸猛犸的象鼻攻击命中中型或更小体型的生物后可以将其@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。它可以带着被擒抱的生物一起移动。</p>"
+				}
+			}
 		},
 		"Zombie Megaloceros": {
-			"name": "Zombie Megaloceros",
-			"publicNotes": "<p>The megaloceros is similar in form to the elk, but far superior in size. The average male's antlers weigh nearly 100 pounds and can be wider than his body is long. Megaloceroses stand up to 9 feet tall, weigh 1,500 pounds, and grow antlers over 12 feet wide.</p>",
-			"blurb": "Variant megaloceros",
+			"name": "丧尸大角鹿 Zombie Megaloceros",
+			"publicNotes": "<p>大角麋鹿与麋鹿形态相似，但提醒却要大得多。通常的雄性都是高大的生物，仅鹿角就接近100磅重。这些鹿角非常巨大，并且其宽度可能要胜过它们的体长。大角麋鹿站立时高达9英尺，重达1500磅，鹿角超过12英尺宽。</p>",
+			"blurb": "大角鹿变体",
 			"data":{},
-			"items":{}
+			"items":{
+				"Slow": {
+					"name": "缓慢 Slow",
+					"description": "<p>丧尸具有永久@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+				},
+				"Furious Charge": {
+					"name": "愤怒猛冲 Furious Charge",
+					"description": "<p>大角麋鹿行走两次，然后进行一次蹄踢打击。如果此次打击命中，它造成额外[[/r 2d4[bludgeoning]]]伤害。</p>"
+				}
+			}
 		}
 	}
 }
