@@ -1339,7 +1339,7 @@
         },
         "Wicked Thorns": {
             "name": "险恶棘刺 Wicked Thorns",
-            "description": "<p><strong>触发</strong> 你被无武装打击或非长触及近战武器打击命中。</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你的几根刺会折断并钩入攻击者的身体。你对触发的生物造成[[/r 1d8[piercing]]]伤害。这是一次对抗你的职业DC或法术DC中较高者的基础反射豁免。在大失败时，该生物还会因你的荆棘刺入它的血肉而受到[[/r 1d4[bleed]]]伤害。</p>\n<p>在第3级和之后的每2级，此伤害增加1d8，并且持续穿刺伤害增加1。</p>\n<p>[[/r (floor(@actor.level/2)d8)[piercing]]]{按等级计算的穿刺伤害}</p>"
+            "description": "<p><strong>触发</strong> 你被无武装打击或非长触及近战武器打击命中。</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你的几根刺会折断并钩入攻击者的身体。你对触发的生物造成1d8穿刺伤害。这是一次对抗你的职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免。在大失败时，该生物还会因你的荆棘刺入它的血肉而受到1d4流血伤害。</p>\n<p>在第3级和之后的每2级，此伤害增加1d8，并且持续流血伤害增加1。</p>\n<p>[[/r (ceil(@actor.level/2)d8)[piercing]]]{根据等级计算的穿刺伤害}</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的流血伤害}</p>"
         },
         "Drive Them Down": {
             "name": "打爆他们 Drive Them Down",
