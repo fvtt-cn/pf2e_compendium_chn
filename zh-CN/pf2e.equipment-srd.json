@@ -16400,6 +16400,34 @@
         "Blink Blade": {
             "name": "闪烁之锋 Blink Blade",
             "description": "<p>这把利刃是一把刻有涡旋传送门的<em>+2强击匕首</em>，其匕鞘装饰着蓝色的球体。使用者几乎感受不到它的重量，并且在触碰它时会传来一阵阵温热。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你施放<em>@UUID[Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8]</em>法术。你离开与出现的位置将会被喷发的烟雾填满，使得任何处于其中的生物获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]状态直到其离开烟雾或直到你的下一回合结束时烟雾消散。在遭遇强风后，烟雾立即消散。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你用<em>闪烁之锋</em>进行的近战攻击造成重击</p>\n<p><strong>效果</strong> 你和攻击目标传送到10尺以内的某点。目标会降落在由你选择的，邻近你落点的一个安全，开放的空间。该传送效果同样会创造烟雾喷发，其作用如同前述的启动效果。</p>"
+        },
+        "Rattling Bolt": {
+            "name": "噪响矢 Rattling Bolt",
+            "description": "<p><strong>弹药</strong> 弩矢</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>有时对付不死生物需要更隐蔽的方式，而矛盾的是，这正是噪响矢最常见的用途，但这种弩矢在发射时都会发出晃动铁链般的响声。一旦它击中目标，响声就会转移到目标身体里。被弩矢伤害的生物必须通过@Check[type:fortitude|dc:25]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮（重击持续1分钟）。被噪响矢击中的不死生物在耳聋期间，还会失去任何本来拥有的生命感知类能力。</p>"
+        },
+        "Rattling Bolt (Greater)": {
+            "name": "高等噪响矢 Rattling Bolt (Greater)",
+            "description": "<p><strong>弹药</strong> 弩矢</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>有时对付不死生物需要更隐蔽的方式，而矛盾的是，这正是噪响矢最常见的用途，但这种弩矢在发射时都会发出晃动铁链般的响声。一旦它击中目标，响声就会转移到目标身体里。被弩矢伤害的生物必须通过@Check[type:fortitude|dc:30]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮（重击持续1分钟）。被噪响矢击中的不死生物在耳聋期间，还会失去任何本来拥有的生命感知类能力。</p>"
+        },
+        "Nexian Sealing Blade": {
+            "description": "<p>人们常用绰号“尖叫剑”来称呼这种武器，<em>奈克斯封死刃</em>是由奈克斯的弧光领主开发的，专门用来抵御盖布的渗透者和刺客。尖叫剑是<em>+1强击瓦解银质长剑</em>，上面还带有一些额外机巧。每把奈克斯封死刃都能感知到60尺内的不死生物，并发出尖叫来提示，直到范围内不再有不死生物。如果需要的话，同样的尖叫也可以作为音波攻击施放出来。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 尖叫剑做它最擅长的事情，发出震耳欲聋的尖叫。@Template[type:cone|distance:30]范围的所有生物受到[[/r 6d6[sonic]]]伤害（@Check[type:fortitude|dc:25|basic:true]豁免）。失败的生物还会@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮，大失败生物耳聋1小时。</p>",
+            "name": "奈克斯封死刃 Nexian Sealing Blade"
+        },
+        "Nexian Sealing Blade (Greater)": {
+            "name": "高等奈克斯封死刃 Nexian Sealing Blade (Greater)",
+            "description": "<p>人们常用绰号“尖叫剑”来称呼这种武器，<em>奈克斯封死刃</em>是由奈克斯的弧光领主开发的，专门用来抵御盖布的渗透者和刺客。尖叫剑是<em>+2高等强击瓦解银质长剑</em>，上面还带有一些额外机巧。每把奈克斯封死刃都能感知到60尺内的不死生物，并发出尖叫来提示，直到范围内不再有不死生物。如果需要的话，同样的尖叫也可以作为音波攻击施放出来。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 尖叫剑做它最擅长的事情，发出震耳欲聋的尖叫。@Template[type:cone|distance:30]范围的所有生物受到[[/r 10d6[sonic]]]伤害（@Check[type:fortitude|dc:31|basic:true]豁免）。失败的生物还会@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮，大失败生物耳聋1小时。</p>"
+        },
+        "Silver Orb (Powder)": {
+            "name": "粉末银球 Silver Orb (Powder)",
+            "description": "<p>这个玻璃球体充满了锋利的银屑和炼金试剂，爆炸后会留下一团危险的碎片。被银球击中的生物受到1点挥砍伤害，并且被银粉覆盖，这会导致对其造成伤害的武器和非武装攻击被视为银质，直到该生物花费1个交互动作清除它。</p>\n<p>除非大失败，否则银粉会充满目标周围@Template[type:burst|distance:5]范围空间。银粉云团持续存在1分钟，或直到被强风吹散。云团里的生物对云团外的生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。每个需要呼吸的生物，如果在银粉云团内结束回合，都要受到来源于银的[[/r 3d6[slashing]]]伤害，@Check[type:fortitude|dc:29|basic:true]豁免。</p>"
+        },
+        "Silver Orb (Lesser)": {
+            "name": "次等银球 Silver Orb (Lesser)",
+            "description": "<p>这个玻璃球体充满了锋利的银屑和炼金试剂，爆炸后会留下一团危险的碎片。被银球击中的生物受到1点挥砍伤害，并且被银粉覆盖，这会导致对其造成伤害的武器和非武装攻击被视为银质，直到该生物花费1个交互动作清除它。</p>\n<p>除非大失败，否则银粉会充满目标周围@Template[type:burst|distance:5]范围空间。银粉云团持续存在1分钟，或直到被强风吹散。云团里的生物对云团外的生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。每个需要呼吸的生物，如果在银粉云团内结束回合，都要受到来源于银的[[/r 1d6[slashing]]]伤害，@Check[type:fortitude|dc:19|basic:true]豁免。</p>"
+        },
+        "Silver Orb (Greater)": {
+            "name": "高等银球 Silver Orb (Greater)",
+            "description": "<p>这个玻璃球体充满了锋利的银屑和炼金试剂，爆炸后会留下一团危险的碎片。被银球击中的生物受到1点挥砍伤害，并且被银粉覆盖，这会导致对其造成伤害的武器和非武装攻击被视为银质，直到该生物花费1个交互动作清除它。</p>\n<p>除非大失败，否则银粉会充满目标周围@Template[type:burst|distance:5]范围空间。银粉云团持续存在1分钟，或直到被强风吹散。云团里的生物对云团外的生物@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。每个需要呼吸的生物，如果在银粉云团内结束回合，都要受到来源于银的[[/r 5d6[slashing]]]伤害，@Check[type:fortitude|dc:39|basic:true]豁免。</p>"
         }
     }
 }
