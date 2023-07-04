@@ -30689,6 +30689,111 @@
         "Clan Lore": {
             "name": "氏族学识 Clan Lore",
             "description": "<p>你以氏族成员的身份作为你矮人族裔自我认同的核心。你在两项你所属氏族技能上熟练度获得受训。如果你在这些技能中一项已经自动受训（例如因为背景，职业），你将改为任选一项技能受训。你也将在你所属氏族所列的学识技能上受训。如果你来自此处未列出的氏族，你将在由GM决定的技能选项上受训。由于每个氏族的营生需要一段时间学习，这些技能不会因为你离开氏族加入另一个而自动改变，尽管你的GM可以允许你在休整期作为重训的一部分更改这些技能。</p>\n<table border=\"1\"><colgroup><col><col><col></colgroup>\n<thead>\n<tr>\n<th>氏族</th>\n<th>技能</th>\n<th>学识</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>阿林格德氏族 Clan Aringeld</td>\n<td>交涉与社群</td>\n<td>贸易学识 Mercantile Lore</td>\n</tr>\n<tr>\n<td>碎铁氏族 Clan Breakiron</td>\n<td>手艺与生存</td>\n<td>炼金学识 Alchemy Lore</td>\n</tr>\n<tr>\n<td>火桶氏族 Clan Firecask</td>\n<td>手艺与自然</td>\n<td>酒类学识 Alcohol Lore</td>\n</tr>\n<tr>\n<td>戈德隆氏族 Clan Gelderon</td>\n<td>运动与自然</td>\n<td>农业学识 Farming Lore</td>\n</tr>\n<tr>\n<td>恶斑氏族 Clan Grimmark</td>\n<td>手艺与社群</td>\n<td>建筑学识 Architecture Lore</td>\n</tr>\n<tr>\n<td>铁拳氏族 Clan Ironfist</td>\n<td>手艺与医疗</td>\n<td>冶金学识 Smelting Lore</td>\n</tr>\n<tr>\n<td>莫格拉德氏族 Clan Molgrade</td>\n<td>手艺与贼活</td>\n<td>冶金学识 Smithing Lore</td>\n</tr>\n<tr>\n<td>奥力达斯氏族 Clan Oriddus</td>\n<td>宗教与社群</td>\n<td>矮人诸神学识 Dwarven Pantheon Lore</td>\n</tr>\n<tr>\n<td>束符氏族 Clan Runebinder</td>\n<td>奥法与神秘</td>\n<td>学术学识 Academia Lore</td>\n</tr>\n<tr>\n<td>石拳氏族 Clan Stonefist</td>\n<td>运动与威吓</td>\n<td>战争学识 Warfare Lore</td>\n</tr>\n<tr>\n<td>托洛尔氏族 Clan Tolorr</td>\n<td>交涉与社群</td>\n<td>图书馆学识 Library Lore</td>\n</tr>\n<tr>\n<td>范德霍尔氏族 Clan Vanderholl</td>\n<td>运动与手艺</td>\n<td>劳工学识 Labor Lore</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "Stalwart Defender Dedication": {
+            "description": "<p><strong>许可</strong> 你是一名矮人，或或在高盔堡这样的矮人聚居地接受了守卫训练。</p>\n<hr />\n<p>你在坚贞守卫之道上完成了初步训练。你获得顽强架势动作。</p>\n<hr />\n<p><strong>特殊</strong> 你不能选择其他入门专长，除非你从坚贞守卫变体中获得了其他两个专长。</p>",
+            "prerequisites": [
+                {
+                    "value": "轻甲受训"
+                }
+            ],
+            "name": "坚贞守卫入门 Stalwart Defender Dedication"
+        },
+        "Tunnel Wall": {
+            "name": "难越如墙 Tunnel Wall",
+            "prerequisites": [
+                {
+                    "value": "盾牌格挡"
+                },
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ],
+            "description": "<p><strong>需求</strong> 你处于顽强架势</p>\n<hr />\n<p>在使用盾牌时，你可以如同一堵石墙般阻止敌人的移动。你@UUID[Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm]{举起盾牌 Raise a Shield}，进入锚定状态一轮。当处于锚定状态时，你在@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}穿越你所处空间的DC上获得+4环境价值。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.R6mx6EfLxSrQlrRa]{效果：锚定}</p>"
+        },
+        "Upset Balance": {
+            "description": "<p><strong>触发</strong> 你因一次近战打击受到伤害。</p>\n<p><strong>需求</strong> 你处于顽强架势。</p>\n<hr />\n<p>你迎上敌人的攻击，利用你身体和护甲的重量让他们晕眩。尝试一次运动检定对抗该生物的反射豁免。如果成功，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，至少其下回合结束（大成功时为@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}）。如果你处于锚定状态，你在此次检定上获得+2环境加值。</p>",
+            "name": "扰断平衡 Upset Balance",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                },
+                {
+                    "value": "运动熟练度达到专家"
+                }
+            ]
+        },
+        "Rupture Stomp": {
+            "description": "<p><strong>需求</strong> 你处于顽强架势</p>\n<hr />\n<p>每个矮人都知道他们行过的岩石可能是最好的朋友，也可能是危险的道路。借由你的甲靴沉重的冲击，你重砸周围的地面。@Template[type:emanation|distance:10]范围内的地面变为困难地形。如果你在所穿护甲上具有大师以上熟练度，其变为高等困难地形。破碎的地面会在1分钟后沉降变回正常的地形。</p>\n<hr />\n<p><strong>特殊</strong> 16级时，你可以再次选取此专长。如果你如此做，你可以每小时一次使用它而非每天一次。</p>",
+            "name": "碎地重踏 Rupture Stomp",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ]
+        },
+        "Unshaken in Iron": {
+            "description": "<p>你知道你护甲的精确极限，并相信它能够保护你免受伤害。你获得轻甲的护甲专精效果。如果你在中甲或重甲上受训，你也将获得这些护甲各自的护甲专精效果。当处于顽强架势时，你提升护甲专精的数值，其数值等同于你的护甲检定减值（例如，在穿戴板甲时，在抗力上+3）。</p>",
+            "name": "不动如铁 Unshaken in Iron",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ]
+        },
+        "Cracked Mountain": {
+            "description": "<p><strong>触发</strong> 你将被扣至0生命值，但没有被立即杀死。</p>\n<p><strong>需求</strong> 你处于顽强架势。</p>\n<hr />\n<p>你继续战斗，站起身，向敌人猛烈进攻。你避免被击败，保持在1生命值，你的@UUID[Compendium.pf2e.conditionitems.Item.Yl48xTdMh3aeQYL2]{受伤 Wounded}状态值加1。对触及范围内的一名敌人进行一次近战打击。 你立即结束顽强架势。</p>",
+            "name": "崩裂如山 Cracked Mountain",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ]
+        },
+        "Stone Body": {
+            "name": "身如磐石 Stone Body",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ],
+            "description": "<p><strong>需求</strong> 你处于顽强架势。</p>\n<hr />\n<p>模仿矮人历史上最伟大的守卫，你封闭了头脑中对疼痛的感知，变得如岩石本身般刚毅。你获得全伤害抗力10。该效果持续到你下个回合结束或在被重击时立即结束。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.7cG8kpQvh2oyBV8d]{效果：身如磐石}</p>"
+        },
+        "Crushing Step": {
+            "description": "<p>你着甲的双足会自然地将障碍扫到一边。当穿戴中甲或重甲时，你忽视非魔法来源的困难地形。如果你在所穿护甲上有大师熟练度，你还将忽视非魔法来源的高等困难地形。</p>",
+            "name": "大步无阻 Crushing Step",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ]
+        },
+        "Gravel Guts": {
+            "name": "胃如坚岩 Gravel Guts",
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ],
+            "description": "<p>石头从不会恶心反胃，所以你呢？你在对抗@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened}状态的豁免上获得+1环境加值。当你成功通过强韧豁免减少恶心状态值时，你减少2点（大成功时候减少3点）。</p>"
+        },
+        "Mountain Skin": {
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ],
+            "description": "<p>你在中甲和重甲上受训。当你获得授予你在任意护甲（但不包括无甲防御）上专家以上熟练度的职业特性时，你也将在此专长授予你的护甲类型上获得相同的熟练度等级。</p>",
+            "name": "肌肤如山 Mountain Skin"
+        },
+        "Gathering Moss": {
+            "prerequisites": [
+                {
+                    "value": "坚贞守卫入门"
+                }
+            ],
+            "description": "<p><strong>触发</strong> 你进入顽强架势</p>\n<hr />\n<p>通过扎根于所处的位置，你能够聚集身体的自然恢复力来让其运作得更快。你获得等同于等级的快速治疗。此快速治疗持续1分钟，或直到你结束你的顽强架势，以先满足的为准。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.p0S3VHkRgMye7RSI]{效果：聚集苔藓}</p>",
+            "name": "聚集苔藓 Gathering Moss"
         }
     },
     "mapping": {
