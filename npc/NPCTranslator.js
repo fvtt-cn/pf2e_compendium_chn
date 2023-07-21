@@ -667,7 +667,7 @@ class Dictionary {
             translatedItem = this.compendiumTranslation(item, "pf2e.equipment-srd");
 
             // Build item name
-            if (materialOrder != "suffix") {
+            if (materialOrder != "preifx") {
                 translatedItem.name = material.concat(" ").concat(translatedItem.name);
             } else if (materialOrder === "suffix") {
                 translatedItem.name = translatedItem.name.concat(" ").concat(material);
