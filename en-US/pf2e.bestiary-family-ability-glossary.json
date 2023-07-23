@@ -181,6 +181,10 @@
             "description": "<p>The cryptid's form morphs to be like a specific animal as the tales get longer. The rumored cryptid gains either a burrow, climb, or swim Speed equal to its land Speed.</p>",
             "name": "(Cryptid, Rumored) Hybrid Form"
         },
+        "(Sporeborn) Contagious Spores": {
+            "description": "<p>The sporeborn continues to infect creatures with sporeborn infestation, creating more of its own kind.</p>",
+            "name": "(Sporeborn) Contagious Spores"
+        },
         "(Ghost) Frightful Moan": {
             "description": "<p>The ghost laments its fate, forcing each living creature within @Template[type:emanation|distance:30]{30 feet} to attempt a @Check[type:will|dc:] save. On a failure, a creature becomes @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} (or @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.</p>",
             "name": "(Ghost) Frightful Moan"
@@ -265,6 +269,10 @@
             "description": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the vampire regains HP equal to 10% of its maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drain value by 1. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[type:medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
             "name": "(Vampire, Basic) Drink Blood"
         },
+        "(Sporeborn) Fungal Armor": {
+            "description": "<p>The sporeborn grows broad patches of dense fungus on the outside of the corpse. It gains resistance to bludgeoning damage equal to its level.</p>",
+            "name": "(Sporeborn) Fungal Armor"
+        },
         "(Zombie) Ankle Biter": {
             "description": "<p>This zombie fights just as well on the ground as it does standing. While @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}, the zombie isn't @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed}, it ignores the status penalty to its attack rolls, and it gains a +2 circumstance bonus to Athletics checks to @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip}. The zombie can also move up to half its Speed when it Crawls.</p>",
             "name": "(Zombie) Ankle Biter"
@@ -285,6 +293,10 @@
             "description": "<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> The Melfesh Monster inflates with gas for 1 minute. It grows to Huge size, and its reach increases to 15 feet. It also gains 12 temporary Hit Points, resistance 5 to bludgeoning, and a +2 status bonus to damage rolls, but it's @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1}. When the Melfesh Monster takes damage while swollen, all creatures within 15 feet inhale spores that remain in their body for 1 minute. This ability replaces terrorspores and Spore Cloud.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.JlaO7fgm53Om1DxB]{Effect: Swell}</p>",
             "name": "(Melfesh Monster) Swell"
         },
+        "(Sporeborn) Consume Biomatter": {
+            "description": "<p>If the sporeborn is adjacent to a helpless or @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} creature, or a deceased creature who died in the past hour, the sporeborn can consume its flesh with mycelium tendrils to heal itself. This restores an amount of Hit Points equal to the sporeborn's level. If the creature is alive, the sporeborn deals damage equal to one of its unarmed attacks.</p>",
+            "name": "(Sporeborn) Consume Biomatter"
+        },
         "(Siabrae) Earth Glide": {
             "description": "<p>The siabrae can @UUID[Compendium.pf2e.actionspf2e.Item.H6v1VgowHaKHnVlG]{Burrow} through any earthen matter, including rock. When it does so, the siabrae moves at its full burrow Speed, leaving no tunnels or signs of its passing.</p>",
             "name": "(Siabrae) Earth Glide"
@@ -296,6 +308,10 @@
         "(Vampire, Nosferatu) Change Shape": {
             "description": "<p>The nosferatu transforms into a swarm of pale-gray rats. They gain a land Speed of 30 feet and a climb Speed of 10 feet, and they become Large. Each enemy in the swarm's space takes [[/r 2d10[piercing]]] damage and must attempt a @Check[type:reflex|dc:|basic:true] save with a high DC for the creature's level. A creature that fails its save is exposed to plague of ancients.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
             "name": "(Vampire, Nosferatu) Change Shape"
+        },
+        "(Sporeborn) Sporeborn Infestation": {
+            "description": "<p>An infected creature can't heal damage it takes from sporeborn infestation until it has been cured of the disease.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:]</p>\n<p><strong>Stage 1</strong> carrier with no ill effect (1 day)</p>\n<p><strong>Stage 2</strong> [[/r 1d6[poison]]] damage (1 day)</p>\n<p><strong>Stage 3</strong> [[/r 2d6[poison]]] damage (1 day)</p>\n<p><strong>Stage 4</strong> [[/r 3d6[poison]]] damage (1 day)</p>\n<p><strong>Stage 5</strong> dead, rising as an uncontrolled sporeborn immediately</p>",
+            "name": "(Sporeborn) Sporeborn Infestation"
         },
         "(Vampire, Vetalarana, Basic) Drain Thoughts": {
             "description": "<p><strong>Requirements</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vetalarana's reach</p>\n<hr />\n<p><strong>Effect</strong> The vetalarana seizes a creature and consumes its memories. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions. The victim is @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}, and the vetalarana regains HP equal to 10% of the vetalarana's maximum HP, gaining any excess as temporary Hit Points. Draining Thoughts from a creature that is already stupefied doesn't restore any HP to the vetalarana but increases the victim's stupefied value by 1. Additionally, the vetalarana views one of the victim's memories.</p>\n<p>A victim's stupefied condition value decreases by 1 every week.</p>\n<p>A victim that becomes stupefied 5 in this way is rendered comatose, becoming permanently @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}. As long as the vetalarana lives, a comatose victim can't regain consciousness, and its stupefied condition doesn't decrease.</p>",
@@ -432,6 +448,10 @@
         "(Beheaded) Entangling": {
             "description": "<p>Long, stringy hair clings to the beheaded's scalp. Its Strikes gain the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{Grab} ability.</p>",
             "name": "(Beheaded) Entangling"
+        },
+        "(Sporeborn) Spore Explosion": {
+            "description": "<p>When the sporeborn is destroyed, its body explodes, releasing toxic fumes and spores. Adjacent creatures take [[/r 1d6[poison]]] damage per 2 levels (minimum 1d6) with a @Check[type:fortitude|dc:|basic:true] save.</p>",
+            "name": "(Sporeborn) Spore Explosion"
         },
         "(Spring-Heeled Jack) Change Shape": {
             "description": "<p>Spring-Heeled Jack takes on the appearance of a Medium humanoid dressed in exquisite finery. This doesn't change his Speed or his attack and damage modifiers with his Strikes. When in this form, Spring-Heeled Jack gains a Diplomacy modifier equal to his Intimidation modifier.</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
@@ -625,6 +645,10 @@
             "description": "<p>The mutant grows an extra leg, increasing their Speed by 10 feet.</p>",
             "name": "(Mana Wastes Mutant) Sprouted Limb"
         },
+        "(Sporeborn) Potent Poison": {
+            "description": "<p>The sporeborn fungus enhances the dead creature's natural toxins rather than diminishing them. Increase the DC of poison and spore abilities of the base creature by 2 rather than decreasing them.</p>",
+            "name": "(Sporeborn) Potent Poison"
+        },
         "(Ghast) Consume Flesh": {
             "description": "<p><strong>Requirements</strong> The ghast is adjacent to the corpse of a creature that died within the last hour.</p>\n<hr />\n<p><strong>Effect</strong> The ghast devours a chunk of the corpse and regains [[/r 2d6[healing]]]{2d6 Hit Points} plus 1d6 for every 2 levels it has.</p>\n<p>It can regain Hit Points from any given corpse only once.</p>",
             "name": "(Ghast) Consume Flesh"
@@ -672,6 +696,10 @@
         "(Secret Society) Tag Team": {
             "description": "<p>A secret society member works best with other members of the same society (whether they have the secret society member adjustment and this ability or not). Any creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} against a secret society member's melee attacks due to flanking as long as the enemy is within both the secret society member's reach and the reach of one allied creature that is a member of the same secret society. Against a creature within the reach of two or more allied creatures that are members of the same secret society, the secret society member's Strikes deal an additional 1d6 precision damage.</p>",
             "name": "(Secret Society) Tag Team"
+        },
+        "(Sporeborn) Rancid Spore Pods": {
+            "description": "<p>The sporeborn is covered in spore pods that rupture when it takes any piercing damage or a critical hit. In either case, adjacent creatures are hit with spores, causing them to become @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} unless they succeed at a @Check[type:fortitude|dc:] save.</p>",
+            "name": "(Sporeborn) Rancid Spore Pods"
         },
         "(Ghost) Memento Mori": {
             "description": "<p>The ghost causes one creature within 30 feet to relive the ghost's death.</p>\n<p>The target must succeed at a @Check[type:will|dc:] save or see and feel what the ghost did, taking [[/r 1d4[persistent,mental]]] per 2 levels the ghost has.</p>\n<p>All other creatures are @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to the target until the persistent damage ends.</p>",
