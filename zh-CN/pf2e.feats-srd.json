@@ -7746,7 +7746,7 @@
         },
         "Terrain Stalker": {
             "name": "地形潜伏 Terrain Stalker",
-            "description": "<p>从以下三种困难地形中选择一种：岩地（Rubble）、雪地（Snow）、灌木丛（Underbrush），当你身处该困难地形并对非盟友的生物视为拥有无踪状态时，你可以无需隐秘技能检定就自动进入潜行状态——前提是你在每次移动时不超过5尺距离，并且在任何时候都不进入任何敌人周围10尺范围以内。在本状态下，只要其他生物没有在积极地寻找你或是处于警戒状态，你也可以自动在探索模式下保持回避注意（Avoiding Notice）状态并进入到该生物周围15尺范围内。</p>\n<p><strong>特殊</strong> 你可以多次选择本专长。每次选择本专长时，你可以选择另一种困难地形获得本专长的好处。</p>",
+            "description": "<p>从以下三种困难地形中选择一种：岩地（Rubble）、雪地（Snow）、灌木丛（Underbrush），当你身处该困难地形并对非盟友的生物视为拥有无踪状态时，你可以无需隐秘技能检定就@UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{潜行 Sneak}——前提是你在每次移动时不超过5尺距离，并且在任何时候都不进入任何敌人周围10尺范围以内。在本状态下，只要其他生物没有在积极地寻找你或是处于警戒状态，你也可以自动在探索模式下保持@UUID[Compendium.pf2e.actionspf2e.Item.IE2nThCmoyhQA0Jn]{避人耳目 Avoiding Notice}状态并进入到该生物周围15尺范围内。</p>\n<p><strong>特殊</strong> 你可以多次选择本专长。每次选择本专长时，你可以选择另一种困难地形获得本专长的好处。</p>",
             "prerequisites": [
                 {
                     "value": "隐秘技能熟练度为受训"
@@ -9517,7 +9517,7 @@
         },
         "Arrow of Death": {
             "name": "夺命箭矢 Arrow of Death",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你对1根箭矢或弩失下咒，使其能在一次有效地射击中为你的目标带来死亡。用弓作出一次打击。命中时，你造成额外[[/r 10d10]]精准伤害。大成功时，目标还必须成功通过强韧豁免检定对抗你的职业DC或法术DC，以较高者为准。失败则会立即被杀死；此次豁免具有死亡和失能特征。</p>",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>你对1根箭矢或弩失下咒，使其能在一次有效地射击中为你的目标带来死亡。用弓作出一次打击。命中时，你造成额外10d10精准伤害。大成功时，目标还必须成功通过@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:death,incapacitation]豁免检定对抗你的职业DC或法术DC，以较高者为准。失败则会立即被杀死；此次豁免具有死亡和失能特征。</p>",
             "prerequisites": [
                 {
                     "value": "魔射手入门"
@@ -13130,7 +13130,7 @@
         },
         "Enchanting Arrow": {
             "name": "惑控之箭 Enchanting Arrow",
-            "description": "<p>随着风中的一句低语，你可以用弹药来让敌人面对你的攻击时更加脆弱。</p>\n<p>用弓作出一次打击。命中时，目标承受额外[[/r 2d6[mental]]]伤害。大成功时，目标还会陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。若你的弓上具有<em>高等强击符文</em>，此心灵伤害会增加至[[/r 3d6[mental]]]；若弓上具有<em>上等强击符文</em>则变为[[/r 4d6[mental]]]。</p>",
+            "description": "<p>随着风中的一句低语，你可以用弹药来让敌人面对你的攻击时更加脆弱。</p>\n<p>用弓作出一次打击。命中时，目标承受额外2d6伤害。大成功时，目标还会陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。若你的弓上具有<em>高等强击符文</em>，此心灵伤害会增加至3d6；若弓上具有<em>上等强击符文</em>则变为4d6。</p>",
             "prerequisites": [
                 {
                     "value": "魔射手入门"
@@ -17677,7 +17677,7 @@
         },
         "Fire Savvy": {
             "name": "消防见识 Fire Savvy",
-            "description": "<p><strong>许可</strong> 你来自顿加堡或阿肯斯塔。</p>\n<hr />\n<p>你在锻造厂周围长大，擅长对付烟雾和火。你摆脱火焰持续伤害的纯骰检定DC从15降到@Check[type:flat|dc:10]，搭配适当的辅助可以降到@Check[type:flat|dc:5]。此外，如果你在对抗由烟雾和灰尘造成的窒息的豁免检定中成功，改为获得大成功。</p>"
+            "description": "<p><strong>许可</strong> 你来自顿加堡或阿肯斯塔。</p>\n<hr />\n<p>你在锻造厂周围长大，擅长对付烟雾和火。你摆脱火焰持续伤害的纯骰检定DC从15降到10，搭配适当的辅助可以降到@Check[type:flat|dc:5]。此外，如果你在对抗由烟雾和灰尘造成的窒息的豁免检定中成功，改为获得大成功。</p>"
         },
         "Words of Unraveling": {
             "name": "涣散真言 Words of Unraveling",
@@ -18318,7 +18318,7 @@
         },
         "Fire Lung": {
             "name": "火眼火肺 Fire Lung",
-            "description": "<p>与火焰亲密接触的经历让你的肺和眼睛都被熏坏了。你可以在充满火山灰和烟雾的地方正常呼吸，不必承受窒息的风险，此外你忽略烟雾所带来的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>\n<p>你试图从@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续火焰伤害}状态恢复时，只需要通过@Check[type:flat|dc:10]检定即可恢复，而非原先的DC15（如果得到了有效帮助，则是@Check[type:flat|dc:5]而非DC10）。</p>",
+            "description": "<p>与火焰亲密接触的经历让你的肺和眼睛都被熏坏了。你可以在充满火山灰和烟雾的地方正常呼吸，不必承受窒息的风险，此外你忽略烟雾所带来的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>\n<p>你试图从持续火焰伤害状态恢复时，只需要通过DC10检定即可恢复，而非原先的DC15（如果得到了有效帮助，则是@Check[type:flat|dc:5]而非DC10）。</p>",
             "prerequisites": [
                 {
                     "value": "火焰派系"
@@ -18348,7 +18348,7 @@
         },
         "Cindersoul": {
             "name": "灰烬之魂 Cindersoul",
-            "description": "<p>你的元素祖先的火显现出来就像火的余烬，以及你体内的炭可以协助止血，净化简易毒素和吸收强酸。你从持续的酸、流血和中毒伤害中恢复的DC是@Check[type:flat|dc:10]{10}而不是15(如果你获得特别有效的帮助，DC是@Check[type:flat|dc:5]{5})。</p>"
+            "description": "<p>你的元素祖先的火显现出来就像火的余烬，以及你体内的炭可以协助止血，净化简易毒素和吸收强酸。你从持续的酸、流血和中毒伤害中恢复的DC是10而不是15(如果你获得特别有效的帮助，DC是@Check[type:flat|dc:5])。</p>"
         },
         "Step Lively": {
             "name": "灵动快步 Step Lively",
@@ -19683,7 +19683,7 @@
         },
         "Precious Arrow": {
             "name": "珍奇箭矢 Precious Arrow",
-            "description": "<p>你将一种珍贵材料的魔法本质灌入到一枚弹药之中，让你可以利用敌人的弱点进行针对攻击。</p>\n<p>选择寒铁或银；若你在回合结束前射出箭矢，那么它会被视同为此类材料。在14级时，将精金加入到你能选择的材料列表中。</p>",
+            "description": "<p>你将一种珍贵材料的魔法本质灌入到一枚弹药之中，让你可以利用敌人的弱点进行针对攻击。</p>\n<p>选择寒铁或银；若你在回合结束前射出箭矢，那么它会被视同为此类材料。在14级时，将精金加入到你能选择的材料列表中。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.KpEtIFwjj0ZrSVbD]{效果：珍奇箭矢}</p>",
             "prerequisites": [
                 {
                     "value": "魔射手入门"
@@ -19713,7 +19713,7 @@
         },
         "Disrupting Strikes": {
             "name": "瓦解打击 Disrupting Strikes",
-            "description": "<p>你从体内向外唤出正能量帮助你杀伤不死生物。直到你的下回合开始，你的武器和无武装打击获得瓦解符文效果。</p>\n<p>如果你的等级达到14级以上，改为获得高等瓦解符文效果。符文效果的DC等于你的职业DC或法术DC，取更高值。</p>",
+            "description": "<p>你从体内向外唤出正能量帮助你杀伤不死生物。直到你的下回合开始，你的武器和无武装打击获得<em>瓦解</em>符文效果。</p>\n<p>如果你的等级达到14级以上，改为获得<em>高等瓦解</em>符文效果。符文效果的DC等于你的职业DC或法术DC，取更高值。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.ewfHVi6NWBGM8B6f]{效果：瓦解打击}</p>",
             "prerequisites": [
                 {
                     "value": "噬魂师入门"
@@ -20355,7 +20355,7 @@
         },
         "Stone Blood": {
             "name": "石血 Stone Blood",
-            "description": "<p>你能轻松停下流血。将停止@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}的纯骰检定DC自15降低到10，以及你不用通过物理方式包扎伤口，只靠一个拥有专注特征的单独动作就能提前进行一次纯骰检定。你在@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained}状态自然恢复的速度是通常情况的两倍。</p>",
+            "description": "<p>你能轻松停下流血。将停止持续流血伤害的纯骰检定DC自15降低到10，以及你不用通过物理方式包扎伤口，只靠一个拥有专注特征的单独动作就能提前进行一次纯骰检定。你在@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained}状态自然恢复的速度是通常情况的两倍。</p>",
             "prerequisites": [
                 {
                     "value": "魂石仪式"
@@ -23554,7 +23554,7 @@
         },
         "Scar-Thick Skin": {
             "name": "荣痕累累 Scar-Thick Skin",
-            "description": "<p>光荣而传奇的疤痕覆盖并保护了你身体的许多部位。你用来结束@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续伤害}的纯骰检定DC从15降低到@Check[type:flat|dc:10]{10}，在有合适协助的情况下，DC从10降低到@Check[type:flat|dc:5]{5}。</p>"
+            "description": "<p>光荣而传奇的疤痕覆盖并保护了你身体的许多部位。你用来结束持续流血伤害的纯骰检定DC从15降低到10，在有合适协助的情况下，DC从10降低到@Check[type:flat|dc:5]。</p>"
         },
         "Glory And Valor!": {
             "name": "荣耀和勇气！ Glory And Valor!",
@@ -24508,7 +24508,7 @@
         },
         "Peculiar Anatomy": {
             "name": "诡异结构 Peculiar Anatomy",
-            "description": "<p>你的循环系统充满了原生质的浆液，而非普通的血液。你在对抗疾病或毒药时获得+2环境加值，并且获得等同于你等级一半的毒素伤害抗力。</p>\n<p>此外，畸变防御（Disturbing Defense）专长中获得的精准伤害抗力增加为你所选的化泥者变体的专长数量+7，并且你从@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}中恢复的纯骰检定DC减少到8，而不是13。</p>",
+            "description": "<p>你的循环系统充满了原生质的浆液，而非普通的血液。你在对抗疾病或毒药时获得+2环境加值，并且获得等同于你等级一半的毒素伤害抗力。</p>\n<p>此外，畸变防御（Disturbing Defense）专长中获得的精准伤害抗力增加为你所选的化泥者变体的专长数量+7，并且你从持续流血伤害中恢复的纯骰检定DC减少到8，而不是13。</p>",
             "prerequisites": [
                 {
                     "value": "畸变防御"
@@ -30691,7 +30691,7 @@
             "description": "<p>你以氏族成员的身份作为你矮人族裔自我认同的核心。你在两项你所属氏族技能上熟练度获得受训。如果你在这些技能中一项已经自动受训（例如因为背景，职业），你将改为任选一项技能受训。你也将在你所属氏族所列的学识技能上受训。如果你来自此处未列出的氏族，你将在由GM决定的技能选项上受训。由于每个氏族的营生需要一段时间学习，这些技能不会因为你离开氏族加入另一个而自动改变，尽管你的GM可以允许你在休整期作为重训的一部分更改这些技能。</p>\n<table border=\"1\"><colgroup><col><col><col></colgroup>\n<thead>\n<tr>\n<th>氏族</th>\n<th>技能</th>\n<th>学识</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>阿林格德氏族 Clan Aringeld</td>\n<td>交涉与社群</td>\n<td>贸易学识 Mercantile Lore</td>\n</tr>\n<tr>\n<td>碎铁氏族 Clan Breakiron</td>\n<td>手艺与生存</td>\n<td>炼金学识 Alchemy Lore</td>\n</tr>\n<tr>\n<td>火桶氏族 Clan Firecask</td>\n<td>手艺与自然</td>\n<td>酒类学识 Alcohol Lore</td>\n</tr>\n<tr>\n<td>戈德隆氏族 Clan Gelderon</td>\n<td>运动与自然</td>\n<td>农业学识 Farming Lore</td>\n</tr>\n<tr>\n<td>恶斑氏族 Clan Grimmark</td>\n<td>手艺与社群</td>\n<td>建筑学识 Architecture Lore</td>\n</tr>\n<tr>\n<td>铁拳氏族 Clan Ironfist</td>\n<td>手艺与医疗</td>\n<td>冶金学识 Smelting Lore</td>\n</tr>\n<tr>\n<td>莫格拉德氏族 Clan Molgrade</td>\n<td>手艺与贼活</td>\n<td>冶金学识 Smithing Lore</td>\n</tr>\n<tr>\n<td>奥力达斯氏族 Clan Oriddus</td>\n<td>宗教与社群</td>\n<td>矮人诸神学识 Dwarven Pantheon Lore</td>\n</tr>\n<tr>\n<td>束符氏族 Clan Runebinder</td>\n<td>奥法与神秘</td>\n<td>学术学识 Academia Lore</td>\n</tr>\n<tr>\n<td>石拳氏族 Clan Stonefist</td>\n<td>运动与威吓</td>\n<td>战争学识 Warfare Lore</td>\n</tr>\n<tr>\n<td>托洛尔氏族 Clan Tolorr</td>\n<td>交涉与社群</td>\n<td>图书馆学识 Library Lore</td>\n</tr>\n<tr>\n<td>范德霍尔氏族 Clan Vanderholl</td>\n<td>运动与手艺</td>\n<td>劳工学识 Labor Lore</td>\n</tr>\n</tbody>\n</table>"
         },
         "Stalwart Defender Dedication": {
-            "description": "<p><strong>许可</strong> 你是一名矮人，或或在高盔堡这样的矮人聚居地接受了守卫训练。</p>\n<hr />\n<p>你在坚贞守卫之道上完成了初步训练。你获得顽强架势动作。</p>\n<hr />\n<p><strong>特殊</strong> 你不能选择其他入门专长，除非你从坚贞守卫变体中获得了其他两个专长。</p>",
+            "description": "<p><strong>许可</strong> 你是一名矮人，或或在高盔堡这样的矮人聚居地接受了守卫训练。</p>\n<hr />\n<p>你在坚贞守卫之道上完成了初步训练。你获得@UUID[Compendium.pf2e.actionspf2e.Item.5HZ4cYDowUw2oUbZ]{顽强架势 Tenacious Stance}动作。</p>\n<hr />\n<p><strong>特殊</strong> 你不能选择其他入门专长，除非你从坚贞守卫变体中获得了其他两个专长。</p>",
             "prerequisites": [
                 {
                     "value": "轻甲受训"
