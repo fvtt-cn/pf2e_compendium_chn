@@ -68,11 +68,11 @@
 				},
 				"Possess Animal":{
 					"name": "占据动物 Possess Animal",
-					"description": "<p>浮陀尝试占据一只邻接的动物。它们施展升阶到9环的<em>@UUID[Compendium.pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>，并有着以下额外效果：因为浮陀没有实体躯体，它们不受法术限制的影响。若动物豁免大失败，法术持续时间延长至1日。在被浮陀占据时，该动物不会投下影子。</p>"
+					"description": "<p>浮陀尝试占据一只邻接的动物。它们施展升阶到9环的<em>@UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>，并有着以下额外效果：因为浮陀没有实体躯体，它们不受法术限制的影响。若动物豁免大失败，法术持续时间延长至1日。在被浮陀占据时，该动物不会投下影子。</p>"
 				},
 				"Primal Corruption":{
 					"name": "原能腐化 Primal Corruption",
-					"description": "<p>浮陀会腐化它们附近的野生动物，慢慢的侵入动物的思想。居住于浮陀的束缚之地的动物在对抗浮陀的占据动物能力、内在法术<em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>和<em>@UUID[Compendium.pf2e.spells-srd.aIHY2DArKFweIrpf]{命令术 Command}</em>时获得-4环境减值。</p>"
+					"description": "<p>浮陀会腐化它们附近的野生动物，慢慢的侵入动物的思想。居住于浮陀的束缚之地的动物在对抗浮陀的占据动物能力、内在法术<em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>和<em>@UUID[Compendium.pf2e.spells-srd.Item.aIHY2DArKFweIrpf]{命令术 Command}</em>时获得-4环境减值。</p>"
 				}
 			}
 		},
@@ -86,7 +86,7 @@
 			"items":{
 				"Weep Blood":{
 					"name": "渗出血泪 Weep Blood",
-					"description": "<p><strong>触发</strong> 一个生物接近作祟15尺内；</p>\n<hr />\n<p><strong>效果</strong> @Template[type:emanation|distance:30]{30尺}内的所有生物都从双眼流出血泪，造成持续性流血伤害。区域内的每个生物都必须尝试@Check[type:fortitude|dc:33]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r (2d8+3)[persistent,bleed]]]{2d8+3} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}并@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 生物受到[[/r (4d8+6)[persistent,bleed]]]{4d8+6} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，在流血伤害持续期间还会陷入目眩。</p>\n<p><strong>大失败</strong> 生物受到[[/r (8d8+12)[persistent,bleed]]]{8d8+12} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续流血伤害}，在流血伤害持续期间还会陷入@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物接近作祟15尺内；</p>\n<hr />\n<p><strong>效果</strong> @Template[type:emanation|distance:30]{30尺}内的所有生物都从双眼流出血泪，造成持续性流血伤害。区域内的每个生物都必须尝试@Check[type:fortitude|dc:33]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r (2d8+3)[persistent,bleed]]]{2d8+3} @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}并@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 生物受到[[/r (4d8+6)[persistent,bleed]]]{4d8+6} @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}，在流血伤害持续期间还会陷入目眩。</p>\n<p><strong>大失败</strong> 生物受到[[/r (8d8+12)[persistent,bleed]]]{8d8+12} @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续流血伤害}，在流血伤害持续期间还会陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}。</p>"
 				}
 			}
 		},
@@ -100,7 +100,7 @@
 			"items":{
 				"Seep Blood":{
 					"name": "渗血 Seep Blood",
-					"description": "<p><strong>触发</strong> 生物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> B血从土里不断渗出，将区域变为血淋淋的泥潭。区域变为困难地形，持续1小时。在区域内的生物或尝试穿越区域的生物必须尝试@Check[type:reflex|dc:16]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}（DC 16）。</p>"
+					"description": "<p><strong>触发</strong> 生物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> B血从土里不断渗出，将区域变为血淋淋的泥潭。区域变为困难地形，持续1小时。在区域内的生物或尝试穿越区域的生物必须尝试@Check[type:reflex|dc:16]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}（DC 16）。</p>"
 				}
 			}
 		},
@@ -129,7 +129,7 @@
 				},
 				"Roll the Bones":{
 					"name": "命运骨骰 Roll the Bones",
-					"description": "<p>白骨荷官选择一个邻接的生物来投掷骨骰。被选中的生物会发现自己的手中多出一对骰子，并且被命运强迫着去掷它们；该生物能且必须掷骰子，哪怕他的手占满了，或是无法行动。该生物投[[/r 2d6 #Roll the Bones]]，将它们加在一起以确定效果。</p>\n<ul>\n<li><strong>7 或 11</strong> (治疗，正能量) 目标恢复[[/r (15)[healing]]]{15 HP}。</li>\n<li><strong>2, 3, 或 12</strong> (负能量) 目标受到[[/r (30)[negative]]]{30负能量伤害}。若目标已经@UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying}，则此伤害增加的濒死值为2而非1。</li>\n<li><strong>Any Other Roll</strong> (负能量) 目标受到[[/r (15)[negative]]]{15负能量伤害}。</li>\n</ul>"
+					"description": "<p>白骨荷官选择一个邻接的生物来投掷骨骰。被选中的生物会发现自己的手中多出一对骰子，并且被命运强迫着去掷它们；该生物能且必须掷骰子，哪怕他的手占满了，或是无法行动。该生物投[[/r 2d6 #Roll the Bones]]，将它们加在一起以确定效果。</p>\n<ul>\n<li><strong>7 或 11</strong> (治疗，正能量) 目标恢复[[/r (15)[healing]]]{15 HP}。</li>\n<li><strong>2, 3, 或 12</strong> (负能量) 目标受到[[/r (30)[negative]]]{30负能量伤害}。若目标已经@UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{濒死 Dying}，则此伤害增加的濒死值为2而非1。</li>\n<li><strong>Any Other Roll</strong> (负能量) 目标受到[[/r (15)[negative]]]{15负能量伤害}。</li>\n</ul>"
 				}
 			}
 		},
@@ -145,19 +145,19 @@
 				},
 				"Repartee Riposte":{
 					"name": "妙语反击 Repartee Riposte",
-					"description": "<p><strong>触发</strong> 苍面浪客触及范围内的一个生物对苍面浪客的近战打击大失败；</p>\n<hr />\n<p><strong>效果</strong> 苍面浪客对触发生物进行一次近战打击，附赠一段风趣的回嘴。如果打击成功，则目标生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，大成功则为@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>"
+					"description": "<p><strong>触发</strong> 苍面浪客触及范围内的一个生物对苍面浪客的近战打击大失败；</p>\n<hr />\n<p><strong>效果</strong> 苍面浪客对触发生物进行一次近战打击，附赠一段风趣的回嘴。如果打击成功，则目标生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，大成功则为@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>"
 				},
 				"Parry Dance":{
 					"name": "招架舞步 Parry Dance",
-					"description": "<p>苍面浪客进行一次近战打击，然后快步，将它的剑刃摆出防御姿势。它的AC获得+2环境加值，直到它的下个回合结束。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.itVZwwvaXYN2zOR8]{效果: 招架舞步}</p>"
+					"description": "<p>苍面浪客进行一次近战打击，然后快步，将它的剑刃摆出防御姿势。它的AC获得+2环境加值，直到它的下个回合结束。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.itVZwwvaXYN2zOR8]{效果: 招架舞步}</p>"
 				},
 				"Shadow Rapier":{
 					"name": "暗影细剑 Shadow Rapier",
-					"description": "<p>浪客用负能量包裹它的剑刃，将它的伤害类型变为负能量。这柄阴影笼罩的细剑有30尺触及。此效果持续到苍面浪客的下个回合结束。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.TSdrv1FmLHJnk9AD]{效果: 暗影细剑}</p>"
+					"description": "<p>浪客用负能量包裹它的剑刃，将它的伤害类型变为负能量。这柄阴影笼罩的细剑有30尺触及。此效果持续到苍面浪客的下个回合结束。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.TSdrv1FmLHJnk9AD]{效果: 暗影细剑}</p>"
 				},
 				"The Upper Hand":{
 					"name": "乘胜追击 The Upper Hand",
-					"description": "<p><strong>需求</strong> 苍面浪客最后一次动作是一次大成功的近战打击；</p>\n<hr />\n<p><strong>效果</strong> 苍面浪客@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarms}它打中的生物，效果如同卸武检定大成功一般。被卸武的武器掉到与它主人邻接的一个空间（由苍面浪客决定）。</p>"
+					"description": "<p><strong>需求</strong> 苍面浪客最后一次动作是一次大成功的近战打击；</p>\n<hr />\n<p><strong>效果</strong> 苍面浪客@UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{卸武 Disarms}它打中的生物，效果如同卸武检定大成功一般。被卸武的武器掉到与它主人邻接的一个空间（由苍面浪客决定）。</p>"
 				}
 			}
 		},
@@ -171,7 +171,7 @@
 			"items":{
 				"Feast":{
 					"name": "盛宴 Feast",
-					"description": "<p><strong>触发</strong> 一个活物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂噬咬咀嚼，对@Template[type:emanation|distance:30]{30尺}内的所有生物造成[[/r (6d12+35)[piercing]]]{6d12+35穿刺伤害}。受影响的生物必须尝试@Check[type:reflex|dc:41]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，@Localize[PF2E.PersistentDamage.Bleed2d8.success]，和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，@Localize[PF2E.PersistentDamage.Bleed4d8.success]，和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}。</p>"
+					"description": "<p><strong>触发</strong> 一个活物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂噬咬咀嚼，对@Template[type:emanation|distance:30]{30尺}内的所有生物造成[[/r (6d12+35)[piercing]]]{6d12+35穿刺伤害}。受影响的生物必须尝试@Check[type:reflex|dc:41]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，@Localize[PF2E.PersistentDamage.Bleed2d8.success]，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，@Localize[PF2E.PersistentDamage.Bleed4d8.success]，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}。</p>"
 				}
 			}
 		},
@@ -192,7 +192,7 @@
 				},
 				"Pallid Plague":{
 					"name": "苍白疫 Pallid Plague",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>阶段1</strong> 携带者(3天)</p>\n<p><strong>阶段2</strong> [[/r (3d8)[negative]]]{3d8负能量伤害}和@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1} (1天)</p>\n<p><strong>阶段3</strong> [[/r (3d8)[negative]]]{3d8负能量伤害}, 毁灭1, 和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1} (1天)</p>\n<p><strong>阶段4</strong> [[/r (4d8)[negative]]]{4d8负能量伤害}，@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}, 和流失1 (1天)</p>\n<p><strong>阶段5</strong> [[/r (4d8)[negative]]]{4d8负能量伤害}，@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 3}，和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2} (1天)</p>\n<p><strong>阶段6</strong> 死亡。在感染苍白疫时死亡的生物复活为@UUID[Compendium.pf2e.book-of-the-dead-bestiary.8o27tdIZFp0eTs5N]{丧尸统主 Zombie Lord}。</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>阶段1</strong> 携带者(3天)</p>\n<p><strong>阶段2</strong> [[/r (3d8)[negative]]]{3d8负能量伤害}和@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1} (1天)</p>\n<p><strong>阶段3</strong> [[/r (3d8)[negative]]]{3d8负能量伤害}, 毁灭1, 和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1} (1天)</p>\n<p><strong>阶段4</strong> [[/r (4d8)[negative]]]{4d8负能量伤害}，@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 2}, 和流失1 (1天)</p>\n<p><strong>阶段5</strong> [[/r (4d8)[negative]]]{4d8负能量伤害}，@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 3}，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2} (1天)</p>\n<p><strong>阶段6</strong> 死亡。在感染苍白疫时死亡的生物复活为@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.8o27tdIZFp0eTs5N]{丧尸统主 Zombie Lord}。</p>"
 				},
 				"Reap":{
 					"name": "收割 Reap",
@@ -200,7 +200,7 @@
 				},
 				"Wake the Dead":{
 					"name": "唤起亡者 Wake the Dead",
-					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>需求</strong> 厄伽图娅之子邻接一个1分钟内死亡的生物；</p>\n<hr />\n<p><strong>效果</strong> 厄伽图娅之子仅凭一触就唤起亡者。被选中的生物必须通过@Check[type:will|dc:26]豁免否则被复活为@UUID[Compendium.pf2e.book-of-the-dead-bestiary.8o27tdIZFp0eTs5N]{丧尸统主 Zombie Lord}。这些丧尸受厄伽图娅之子控制。一名厄伽图娅之子最多同时控制8只丧尸统主。如果厄伽图娅之子在遭遇开始前就唤起了丧尸统主，那么这些丧尸的XP如常计入遭遇预算中。</p>"
+					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<p><strong>需求</strong> 厄伽图娅之子邻接一个1分钟内死亡的生物；</p>\n<hr />\n<p><strong>效果</strong> 厄伽图娅之子仅凭一触就唤起亡者。被选中的生物必须通过@Check[type:will|dc:26]豁免否则被复活为@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.8o27tdIZFp0eTs5N]{丧尸统主 Zombie Lord}。这些丧尸受厄伽图娅之子控制。一名厄伽图娅之子最多同时控制8只丧尸统主。如果厄伽图娅之子在遭遇开始前就唤起了丧尸统主，那么这些丧尸的XP如常计入遭遇预算中。</p>"
 				}
 			}
 		},
@@ -214,7 +214,7 @@
 			"items":{
 				"Sudden Chill":{
 					"name": "冷飕飕 Sudden Chill",
-					"description": "<p><strong>触发</strong> 一个活物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> @UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的鬼魂不断在生者周围聚集，温度显著下降。15尺内的活物受到[[/r (2d4+5)[cold]]]{2d4+5寒冷伤害}（@Check[type:fortitude|dc:17|basic:true]豁免）。豁免大失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
+					"description": "<p><strong>触发</strong> 一个活物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}的鬼魂不断在生者周围聚集，温度显著下降。15尺内的活物受到[[/r (2d4+5)[cold]]]{2d4+5寒冷伤害}（@Check[type:fortitude|dc:17|basic:true]豁免）。豁免大失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
 				}
 			}
 		},
@@ -228,15 +228,15 @@
 				},
 				"Intense Heat":{
 					"name": "酷热 Intense Heat",
-					"description": "<p>@Template[type:emanation|distance:5] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>[[/r (2d6)[fire]]], @Check[type:reflex|dc:17|basic:true]</p>"
+					"description": "<p>@Template[type:emanation|distance:5] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>[[/r (2d6)[fire]]], @Check[type:reflex|dc:17|basic:true]</p>"
 				},
 				"Water Vulnerability":{
 					"name": "水易伤 Water Vulnerability",
-					"description": "<p>每当焚身尸被一个带有水特征的效果伤害，焚身尸会痛苦不堪，获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。水无法熄灭焚身尸的火焰。</p>"
+					"description": "<p>每当焚身尸被一个带有水特征的效果伤害，焚身尸会痛苦不堪，获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。水无法熄灭焚身尸的火焰。</p>"
 				},
 				"Blazing Howl":{
 					"name": "爆燃嚎叫 Blazing Howl",
-					"description": "<p>焚身尸发出一声痛苦的尖啸，使得@Template[type:emanation|distance:15]范围内的生物身上猛地燃起火来，对此区域内的所有生物造成[[/r (4d6)[fire]]]{4d6火焰伤害}（@Check[type:will|dc:17|basic:true]豁免）。意志豁免大失败的生物会获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}；此惊惧状态是一个情绪、恐惧和心灵效果。</p>\n<p>焚身尸在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用此能力。</p>"
+					"description": "<p>焚身尸发出一声痛苦的尖啸，使得@Template[type:emanation|distance:15]范围内的生物身上猛地燃起火来，对此区域内的所有生物造成[[/r (4d6)[fire]]]{4d6火焰伤害}（@Check[type:will|dc:17|basic:true]豁免）。意志豁免大失败的生物会获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}；此惊惧状态是一个情绪、恐惧和心灵效果。</p>\n<p>焚身尸在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用此能力。</p>"
 				}
 			}
 		},
@@ -255,15 +255,15 @@
 				},
 				"Blight":{
 					"name": "荒疫 Blight",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光或在灵光范围内开始回合的植物（plant）开始凋零并必须成功通过DC 27强韧检定，否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 4}。豁免成功的植物临时免疫此灵光1分钟。</p>\n<p>连续7天处于这个灵光内的植物必须成功通过@Check[type:fortitude|dc:27]豁免否则死亡。如果这株植物是个生物或树木，他复活为腐尸根。新诞生的腐尸根不能创造更多腐尸根，但拥有所有其他的腐尸根能力。既非魔法也非生物的植物在对抗荒疫能力的检定中自动失败。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光或在灵光范围内开始回合的植物（plant）开始凋零并必须成功通过DC 27强韧检定，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 4}。豁免成功的植物临时免疫此灵光1分钟。</p>\n<p>连续7天处于这个灵光内的植物必须成功通过@Check[type:fortitude|dc:27]豁免否则死亡。如果这株植物是个生物或树木，他复活为腐尸根。新诞生的腐尸根不能创造更多腐尸根，但拥有所有其他的腐尸根能力。既非魔法也非生物的植物在对抗荒疫能力的检定中自动失败。</p>"
 				},
 				"Plant":{
 					"name": "扎根 Plant",
-					"description": "<p>当它没有危险时，腐尸根可以花费1分钟在地上生根，固定在一处。当腐尸根扎根且不动时，一个生物必须主动使用@UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{搜索 Seek}基本动作并成功通过@Check[type:perception|dc:36]检定（在森林中则是@Check[type:perception|dc:40]）来发觉腐尸根的真正本性。</p>"
+					"description": "<p>当它没有危险时，腐尸根可以花费1分钟在地上生根，固定在一处。当腐尸根扎根且不动时，一个生物必须主动使用@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}基本动作并成功通过@Check[type:perception|dc:36]检定（在森林中则是@Check[type:perception|dc:40]）来发觉腐尸根的真正本性。</p>"
 				},
 				"Take Root":{
 					"name": "生根 Take Root",
-					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 腐尸根@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 腐尸根将它的根须埋入那个生物体内，造成[[/r (1d6+11)[piercing]]]{1d6+11穿刺伤害}并汲取目标的生命力（@Check[type:fortitude|dc:30|basic:true]豁免）。豁免失败则目标获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（若已有流失值则流失值+1），腐尸根恢复[[/r (10)[healing]]]{10 HP}。如果此能力令目标生物流失值达到5，该生物死亡。</p>"
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 腐尸根@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 腐尸根将它的根须埋入那个生物体内，造成[[/r (1d6+11)[piercing]]]{1d6+11穿刺伤害}并汲取目标的生命力（@Check[type:fortitude|dc:30|basic:true]豁免）。豁免失败则目标获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（若已有流失值则流失值+1），腐尸根恢复[[/r (10)[healing]]]{10 HP}。如果此能力令目标生物流失值达到5，该生物死亡。</p>"
 				}
 			}
 		},
@@ -274,11 +274,11 @@
 			"items":{
 				"Baleful Gaze":{
 					"name": "恶意凝视 Baleful Gaze",
-					"description": "<p>达坎诺恩特的脸扭曲成怒不可遏的表情。距离达坎诺恩特@Template[type:emanation|distance:30]{30尺}内且能看到它的所有生物必须进行一次@Check[type:will|dc:28]豁免。此生物会在接下来的1分钟里临时免疫此能力。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
+					"description": "<p>达坎诺恩特的脸扭曲成怒不可遏的表情。距离达坎诺恩特@Template[type:emanation|distance:30]{30尺}内且能看到它的所有生物必须进行一次@Check[type:will|dc:28]豁免。此生物会在接下来的1分钟里临时免疫此能力。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
 				},
 				"Snatch":{
 					"name": "抓握 Snatch",
-					"description": "<p>达坎诺恩特用脚爪@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个中型或更小的生物时能以一半的速度飞行，并带着目标一起移动。</p>"
+					"description": "<p>达坎诺恩特用脚爪@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个中型或更小的生物时能以一半的速度飞行，并带着目标一起移动。</p>"
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
@@ -296,11 +296,11 @@
 				},
 				"Aura of Doom":{
 					"name": "毁灭灵光 Aura of Doom",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光范围的生物必须成功通过@Check[type:will|dc:31]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}，大失败则会@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。不论豁免结果，该生物对这辆告死马车的毁灭灵光临时免疫1分钟。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光范围的生物必须成功通过@Check[type:will|dc:31]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}，大失败则会@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 2}。不论豁免结果，该生物对这辆告死马车的毁灭灵光临时免疫1分钟。</p>"
 				},
 				"Collect Soul":{
 					"name": "Collect Soul",
-					"description": "<p><strong>触发</strong> A dying creature within the death coach's Aura of Doom dies or its dying value increases</p>\n<hr />\n<p><strong>效果</strong> The death coach attempts to collect the triggering creature's soul. The triggering creature must succeed at a @Check[type:will|dc:34] save or its soul becomes trapped within the death coach's interior. A creature whose soul has been collected can't be restored to life while the soul remains in the death coach by any means short of a 10th-level spell, such as <em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>. Eventually, the death coach grinds the soul down into raw spiritual essence, typically several hours later. At this point, restoring the soul to life is slightly easier, requiring a spell or ritual of 8th level or higher. If a death coach with a collected soul is slain before the soul is completely dissolved, the creature's soul returns to its body, allowing it to be returned to life normally. A death coach can choose not to dissolve a collected soul, though it usually has no reason to keep the soul intact。</p>"
+					"description": "<p><strong>触发</strong> A dying creature within the death coach's Aura of Doom dies or its dying value increases</p>\n<hr />\n<p><strong>效果</strong> The death coach attempts to collect the triggering creature's soul. The triggering creature must succeed at a @Check[type:will|dc:34] save or its soul becomes trapped within the death coach's interior. A creature whose soul has been collected can't be restored to life while the soul remains in the death coach by any means short of a 10th-level spell, such as <em>@UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>. Eventually, the death coach grinds the soul down into raw spiritual essence, typically several hours later. At this point, restoring the soul to life is slightly easier, requiring a spell or ritual of 8th level or higher. If a death coach with a collected soul is slain before the soul is completely dissolved, the creature's soul returns to its body, allowing it to be returned to life normally. A death coach can choose not to dissolve a collected soul, though it usually has no reason to keep the soul intact。</p>"
 				},
 				"Soulbound Gallop":{
 					"name": "Soulbound Gallop",
@@ -323,7 +323,7 @@
 				},
 				"Field of Undeath":{
 					"name": "亡灵之地 Field of Undeath",
-					"description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内拥有负能量治疗的友方获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 2}。灵光内的生物在接受正能量治疗前，必须成功通过@Check[type:flat|dc:5]检定，否则不会从那个效果中获得治疗。</p>"
+					"description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内拥有负能量治疗的友方获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 2}。灵光内的生物在接受正能量治疗前，必须成功通过@Check[type:flat|dc:5]检定，否则不会从那个效果中获得治疗。</p>"
 				}
 			}
 		},
@@ -334,11 +334,11 @@
 			"items":{
 				"Chastise Heretic":{
 					"name": "惩戒异端 Chastise Heretic",
-					"description": "<p><strong>触发</strong> 距离不灭圣师60尺内、圣师肉眼可见的一个不信仰厄伽图娅的生物施展神术；</p>\n<hr />\n<p><strong>效果</strong> 圣师尝试反制触发法术，使用它的法术攻击加值，反制等级为4。如果反制成功，原施法者受到[[/r (1d10)[persistent,negative]]]{1d10} @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续负能量伤害}。如果不灭侍僧未能反制该法术，则施法者在24小时内临时免疫此能力。</p>"
+					"description": "<p><strong>触发</strong> 距离不灭圣师60尺内、圣师肉眼可见的一个不信仰厄伽图娅的生物施展神术；</p>\n<hr />\n<p><strong>效果</strong> 圣师尝试反制触发法术，使用它的法术攻击加值，反制等级为4。如果反制成功，原施法者受到[[/r (1d10)[persistent,negative]]]{1d10} @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续负能量伤害}。如果不灭侍僧未能反制该法术，则施法者在24小时内临时免疫此能力。</p>"
 				},
 				"Field of Undeath":{
 					"name": "亡灵之地 Field of Undeath",
-					"description": "<p>@Template[type:emanation|distance:40]{40尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内拥有负能量治疗的友方获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 4}。灵光内的生物在接受正能量治疗前，必须成功通过@Check[type:flat|dc:5]检定，否则不会从那个效果中获得治疗。</p>"
+					"description": "<p>@Template[type:emanation|distance:40]{40尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内拥有负能量治疗的友方获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.fJSNOw4zHGbIm4bZ]{快速愈合 Fast Healing 4}。灵光内的生物在接受正能量治疗前，必须成功通过@Check[type:flat|dc:5]检定，否则不会从那个效果中获得治疗。</p>"
 				}
 			}
 		},
@@ -354,7 +354,7 @@
 				},
 				"Lesser Mummy Rot":{
 					"name": "次级腐尸症 Lesser Mummy Rot",
-					"description": "<p>该疾病和其造成的伤害在患者还患有此病时无法被治疗。被次级腐尸症杀死的生物会变为尘土，并且除了通过7环仪式<em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>或类似的魔法手段之外无法复活。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病 (1分钟)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[negative]]]{2d6负能量伤害}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1天)</p>"
+					"description": "<p>该疾病和其造成的伤害在患者还患有此病时无法被治疗。被次级腐尸症杀死的生物会变为尘土，并且除了通过7环仪式<em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>或类似的魔法手段之外无法复活。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病 (1分钟)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[negative]]]{2d6负能量伤害}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (1天)</p>"
 				}
 			}
 		},
@@ -368,7 +368,7 @@
 			"items":{
 				"Desperate Meal":{
 					"name": "绝望进食 Desperate Meal",
-					"description": "<p><strong>触发</strong> 一个生物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> @Template[type:emanation|distance:30]{30尺}内的生物被令人痛苦的饥饿感占据，必须通过@Check[type:fortitude|dc:32]豁免，否则会感觉胃里塞满了石头、泥土和更遭的东西，造成[[/r (6d10+20)[piercing]]]{6d10+20穿刺伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害，陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 4}，并且在恶心持续期间，速度有-10尺状态减值。</p>"
+					"description": "<p><strong>触发</strong> 一个生物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> @Template[type:emanation|distance:30]{30尺}内的生物被令人痛苦的饥饿感占据，必须通过@Check[type:fortitude|dc:32]豁免，否则会感觉胃里塞满了石头、泥土和更遭的东西，造成[[/r (6d10+20)[piercing]]]{6d10+20穿刺伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 4}，并且在恶心持续期间，速度有-10尺状态减值。</p>"
 				}
 			}
 		},
@@ -381,7 +381,7 @@
 			"items":{
 				"Whisper":{
 					"name": "低语 Whisper",
-					"description": "<p><strong>触发</strong> 生物进入作祟所在范围；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成[[/r (1d6+4)[mental]]]{1d6+4心灵伤害}（@Check[type:will|dc:19|basic:true]豁免）。豁免失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>"
+					"description": "<p><strong>触发</strong> 生物进入作祟所在范围；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成[[/r (1d6+4)[mental]]]{1d6+4心灵伤害}（@Check[type:will|dc:19|basic:true]豁免）。豁免失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>"
 				}
 			}
 		},
@@ -407,7 +407,7 @@
 			"items":{
 				"Flaying Flurry":{
 					"name": "急速剥皮 Flaying Flurry",
-					"description": "<p>剥皮魔人对一个目标进行两次利爪打击。如果两次打击都命中且都造成伤害，它会试图剥下目标的皮。它进行一次@Check[type:athletics]检定对抗目标的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 剥皮魔人将皮从目标身上完全剥离，该生物受到@Localize[PF2E.PersistentDamage.Bleed4d8.success]，并获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}和@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 4}。该持续流血伤害无法自然结束，而是只会在该生物恢复75点HP或从再生能力中恢复至少10点HP后才会结束。</p>\n<p><strong>成功</strong> 该生物受到@Localize[PF2E.PersistentDamage.Bleed2d8.success]，并获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>剥皮魔人对一个目标进行两次利爪打击。如果两次打击都命中且都造成伤害，它会试图剥下目标的皮。它进行一次@Check[type:athletics]检定对抗目标的强韧DC。</p>\n<hr />\n<p><strong>大成功</strong> 剥皮魔人将皮从目标身上完全剥离，该生物受到@Localize[PF2E.PersistentDamage.Bleed4d8.success]，并获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}和@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 4}。该持续流血伤害无法自然结束，而是只会在该生物恢复75点HP或从再生能力中恢复至少10点HP后才会结束。</p>\n<p><strong>成功</strong> 该生物受到@Localize[PF2E.PersistentDamage.Bleed2d8.success]，并获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Muscular Leap":{
 					"name": "筋肉飞跃 Muscular Leap",
@@ -415,11 +415,11 @@
 				},
 				"Tear Skin":{
 					"name": "撕皮 Tear Skin",
-					"description": "<p><strong>需求</strong> 剥皮魔人正穿着一张皮；</p>\n<hr />\n<p><strong>效果</strong> 剥皮魔人破坏它当前穿着的皮。它恢复本来样貌和体型，120尺内任何目睹此事的人必须成功通过@Check[type:will|dc:37]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（大失败获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}）。不论豁免结果如何，这些生物临时免疫此能力24小时。</p>"
+					"description": "<p><strong>需求</strong> 剥皮魔人正穿着一张皮；</p>\n<hr />\n<p><strong>效果</strong> 剥皮魔人破坏它当前穿着的皮。它恢复本来样貌和体型，120尺内任何目睹此事的人必须成功通过@Check[type:will|dc:37]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}）。不论豁免结果如何，这些生物临时免疫此能力24小时。</p>"
 				},
 				"Wear Skin":{
 					"name": "穿皮 Wear Skin",
-					"description": "<p><strong>需求</strong> 剥皮魔人正持有一张小型、中型、大型生物的皮，且并没有穿着皮；</p>\n<hr />\n<p><strong>效果</strong> 剥皮魔人将这张皮作为伪装。它模拟该生物的体型、外观和声音。穿皮能力视作使用欺骗技能下属的@UUID[Compendium.pf2e.actionspf2e.AJstokjdG6iDjVjE]{乔装 Impersonate}受训动作易容。剥皮魔人的变形会在确定它是否属于其变形的族裔或生物类型的DC对抗中自动击败察觉DC，且剥皮魔人在防止他人看穿它的伪装时欺骗DC+4状态加值。</p>\n<p>穿上一张皮会给予剥皮魔人AC+2物品加值和75点临时生命。如果剥皮魔人从单一来源受到超过[[/r (50)[slashing]]]{50挥砍伤害}，它披的皮就会破损。当皮破损时，它不再提供任何上述好处（立刻失去任何剩余的临时HP），但仍可以用于撕皮能力。</p>"
+					"description": "<p><strong>需求</strong> 剥皮魔人正持有一张小型、中型、大型生物的皮，且并没有穿着皮；</p>\n<hr />\n<p><strong>效果</strong> 剥皮魔人将这张皮作为伪装。它模拟该生物的体型、外观和声音。穿皮能力视作使用欺骗技能下属的@UUID[Compendium.pf2e.actionspf2e.Item.AJstokjdG6iDjVjE]{乔装 Impersonate}受训动作易容。剥皮魔人的变形会在确定它是否属于其变形的族裔或生物类型的DC对抗中自动击败察觉DC，且剥皮魔人在防止他人看穿它的伪装时欺骗DC+4状态加值。</p>\n<p>穿上一张皮会给予剥皮魔人AC+2物品加值和75点临时生命。如果剥皮魔人从单一来源受到超过[[/r (50)[slashing]]]{50挥砍伤害}，它披的皮就会破损。当皮破损时，它不再提供任何上述好处（立刻失去任何剩余的临时HP），但仍可以用于撕皮能力。</p>"
 				}
 			}
 		},
@@ -433,7 +433,7 @@
 			"items":{
 				"Squeeze":{
 					"name": "挤压 Squeeze",
-					"description": "<p><strong>触发</strong> 一个生物经过作祟所在区域；</p>\n<hr />\n<p><strong>效果</strong> 一个有灵质构成的手掌出现，并攥紧触发的PC，造成[[/r (3d8+14)[bludgeoning]]]{3d8+14钝击伤害}（@Check[type:fortitude|dc:22|basic:true]豁免）。如果失败，生物被@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 22）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物经过作祟所在区域；</p>\n<hr />\n<p><strong>效果</strong> 一个有灵质构成的手掌出现，并攥紧触发的PC，造成[[/r (3d8+14)[bludgeoning]]]{3d8+14钝击伤害}（@Check[type:fortitude|dc:22|basic:true]豁免）。如果失败，生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 22）。</p>"
 				}
 			}
 		},
@@ -442,13 +442,13 @@
 			"disable": "<p>@Check[type:occultism|dc:17]（受训）削弱鬼魂；@Check[type:athletics|dc:18]（受训）将鬼魂人脸按回墙里；@Check[type:diplomacy|dc:19] （受训）在辩论中胜过鬼魂；在上述技能检定中总计成功两次才能让鬼魂彻底消失。</p>",
 			"hazarddescription": "<p>墙壁凸出，形似一张嚎叫的人脸，它扭曲变成触手伸向附近的生物。该作祟是由于一个被谋杀的受害者在它临死前或死后被埋进墙里形成的。</p>",
 			"reset": "<p>如果所有生物都离开区域，作祟将停止，并在1分钟之后立即重置。如果作祟被解除，作祟将在1天后重置。只有将尸体从墙内挖出才能将作祟彻底摧毁。</p>",
-			"routine": "<p>(3动作) 鬼魂尝试以[[/r 1d20+14 #Athletics]]{+14运动调整值}@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}10尺内最多2名生物，然后挤压每个被它@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物，造成[[/r (1d10+4)[damage]]]{1d10+4伤害}。作祟第二次尝试擒抱不受多重攻击减值。</p>",
+			"routine": "<p>(3动作) 鬼魂尝试以[[/r 1d20+14 #Athletics]]{+14运动调整值}@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}10尺内最多2名生物，然后挤压每个被它@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物，造成[[/r (1d10+4)[damage]]]{1d10+4伤害}。作祟第二次尝试擒抱不受多重攻击减值。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Gasp":{
 					"name": "喘不上气 Gasp",
-					"description": "<p><strong>触发</strong> 一个生物进入埋尸的那堵墙壁相邻的方格；</p>\n<hr />\n<p><strong>效果</strong> 灵魂喘息着，哭喊着求救，而墙壁上凸显了出了它的面容，扭曲着伸出触手。@Template[type:emanation|distance:10]{10尺}内的所有生物必须成功通过@Check[type:will|dc:18]豁免，否则只要作祟还在活动，他们就会一直陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。然后作祟投掷先攻。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入埋尸的那堵墙壁相邻的方格；</p>\n<hr />\n<p><strong>效果</strong> 灵魂喘息着，哭喊着求救，而墙壁上凸显了出了它的面容，扭曲着伸出触手。@Template[type:emanation|distance:10]{10尺}内的所有生物必须成功通过@Check[type:will|dc:18]豁免，否则只要作祟还在活动，他们就会一直陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。然后作祟投掷先攻。</p>"
 				}
 			}
 		},
@@ -459,11 +459,11 @@
 			"items":{
 				"supp5wizpe79eqi9":{
 					"name": "喷血 Bloody Spew",
-					"description": "<p>目标@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，持续一轮。</p>"
+					"description": "<p>目标@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，持续一轮。</p>"
 				},
 				"Vein Walker":{
 					"name": "血管行者 Vein Walker",
-					"description": "<p>剥皮尸通过数百条跳动的血管四处移动，这些血管从它身体里伸展成几十个紧密的、绳状的束，把它固定在地面上。除魔法手段外，它无法被@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Tripped}、@UUID[Compendium.pf2e.actionspf2e.7blmbDrQFNfdT731]{推撞 Shoved}或其他强制移动效果，并且它能无视困难地形（但不能无视高等困难地形）。</p>"
+					"description": "<p>剥皮尸通过数百条跳动的血管四处移动，这些血管从它身体里伸展成几十个紧密的、绳状的束，把它固定在地面上。除魔法手段外，它无法被@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Tripped}、@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shoved}或其他强制移动效果，并且它能无视困难地形（但不能无视高等困难地形）。</p>"
 				},
 				"Bloody Handprint":{
 					"name": "血手印 Bloody Handprint",
@@ -471,26 +471,26 @@
 				},
 				"Vital Transfusion":{
 					"name": "输血 Vital Transfusion",
-					"description": "<p><strong>需求</strong> 剥皮尸至少拥有70点生命值；</p>\n<hr />\n<p><strong>效果</strong> 剥皮尸牺牲自己，将生命能量注入30尺内一个自愿生物的体内。它会被立即摧毁，目标生物获得等同于它当前生命值一半的治疗。目标的身体需要适应新注入的血液和生命能量，因此陷入@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}；并且目标生物在1分钟之内也能看到其他剥皮尸造成的血手印。</p>"
+					"description": "<p><strong>需求</strong> 剥皮尸至少拥有70点生命值；</p>\n<hr />\n<p><strong>效果</strong> 剥皮尸牺牲自己，将生命能量注入30尺内一个自愿生物的体内。它会被立即摧毁，目标生物获得等同于它当前生命值一半的治疗。目标的身体需要适应新注入的血液和生命能量，因此陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}；并且目标生物在1分钟之内也能看到其他剥皮尸造成的血手印。</p>"
 				},
 				"Vomit Blood":{
 					"name": "吐血 Vomit Blood",
-					"description": "<p>剥皮尸喷出一大口血淋满被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物全身。被擒抱的生物必须通过@Check[type:fortitude|dc:25]检定否则陷入@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
+					"description": "<p>剥皮尸喷出一大口血淋满被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物全身。被擒抱的生物必须通过@Check[type:fortitude|dc:25]检定否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
 				}
 			}
 		},
 		"Faithless Ecclesiarch": {
 			"name": "弃信司事 Faithless Ecclesiarch",
-			"publicNotes": "<p>弃信司事生前是强大的宗教领袖——大祭司、大主教、先知和被它们的神亲自祝福的神圣仆人。它们善于腐化虔信者，鼓舞叛教尸同伴，并经常成为同类中的领袖。此处的弃信司事生前曾经崇拜魔法之神@UUID[Compendium.pf2e.deities.9EKyWmjLUu42evxC]{内西斯 Nethys}。</p>\n<hr />\n<p>叛教尸是一种不死的异端，被仇恨驱使着摧毁它们曾经侍奉的神。叛教尸在生前自愿选择它们的信仰，在所属的教会中成为受人尊敬的重要宗教人士。在它们死前不久或死亡期间，它们对曾经选择的神完全失去了信仰，完全成了一名异端、口呼渎神之语、犯下残忍暴行、诅咒它们的神。这些邪恶的行为将他们的灵魂与肉体束缚到一起，使它们成为了一个受诅咒的存在。对叛教尸来说，信仰是一个终极谎言。</p>\n<p>虽然驱使一个虔诚的崇拜者与他们的信仰决裂的情况多种多样，但叛教尸们的目的相当统一。叛教尸在它们存续的每一刻都尽其所能地与生前信仰的神祇战斗，摧毁肖像和庙宇、屠戮崇拜者、与其他反对同一位神的叛教尸联合、征召次级亡灵，雇佣生者代理人进行破坏或传播错误信息。奇怪的是，叛教尸在死后仍以一种堕落形态保有着生前的神圣力量，使用它们昔日信仰的武器和魔法来摧毁这信仰。</p>",
+			"publicNotes": "<p>弃信司事生前是强大的宗教领袖——大祭司、大主教、先知和被它们的神亲自祝福的神圣仆人。它们善于腐化虔信者，鼓舞叛教尸同伴，并经常成为同类中的领袖。此处的弃信司事生前曾经崇拜魔法之神@UUID[Compendium.pf2e.deities.Item.9EKyWmjLUu42evxC]{内西斯 Nethys}。</p>\n<hr />\n<p>叛教尸是一种不死的异端，被仇恨驱使着摧毁它们曾经侍奉的神。叛教尸在生前自愿选择它们的信仰，在所属的教会中成为受人尊敬的重要宗教人士。在它们死前不久或死亡期间，它们对曾经选择的神完全失去了信仰，完全成了一名异端、口呼渎神之语、犯下残忍暴行、诅咒它们的神。这些邪恶的行为将他们的灵魂与肉体束缚到一起，使它们成为了一个受诅咒的存在。对叛教尸来说，信仰是一个终极谎言。</p>\n<p>虽然驱使一个虔诚的崇拜者与他们的信仰决裂的情况多种多样，但叛教尸们的目的相当统一。叛教尸在它们存续的每一刻都尽其所能地与生前信仰的神祇战斗，摧毁肖像和庙宇、屠戮崇拜者、与其他反对同一位神的叛教尸联合、征召次级亡灵，雇佣生者代理人进行破坏或传播错误信息。奇怪的是，叛教尸在死后仍以一种堕落形态保有着生前的神圣力量，使用它们昔日信仰的武器和魔法来摧毁这信仰。</p>",
 			"data":{},
 			"items":{
 				"Final Blasphemy":{
 					"name": "最后的亵渎 Final Blasphemy",
-					"description": "<p>当叛教尸被摧毁时，它爆裂成一股负能量波，效果等同于3环、3动作的<em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>（@Check[type:fortitude|dc:24|basic:true]）。因叛教尸已被摧毁，所以它不会从这个近似<em>伤害术</em>的效果中获得任何生命值，也不需要保有任何可用的<em>伤害术</em>来发动该技能。</p>"
+					"description": "<p>当叛教尸被摧毁时，它爆裂成一股负能量波，效果等同于3环、3动作的<em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>（@Check[type:fortitude|dc:24|basic:true]）。因叛教尸已被摧毁，所以它不会从这个近似<em>伤害术</em>的效果中获得任何生命值，也不需要保有任何可用的<em>伤害术</em>来发动该技能。</p>"
 				},
 				"Inspire the Faithless":{
 					"name": "鼓舞无信者 Inspire the Faithless",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>其他叛教尸因弃信司事的存在而受到激励，当灵光范围内的叛教尸施展<em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>时，该<em>伤害术</em>将提升1环（最高3环）。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>其他叛教尸因弃信司事的存在而受到激励，当灵光范围内的叛教尸施展<em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>时，该<em>伤害术</em>将提升1环（最高3环）。</p>"
 				},
 				"Heretic's Smite":{
 					"name": "异端斩 Heretic's Smite",
@@ -498,26 +498,26 @@
 				},
 				"Siphon Faith":{
 					"name": "抽取信仰 Siphon Faith",
-					"description": "<p><strong>触发</strong> 一个生物在对抗弃信司事的法术时豁免骰失败；</p>\n<hr />\n<p><strong>效果</strong> 弃信司事抽取触发生物的精神能量来为自己的魔法提供燃料。触发生物@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1回合；弃信司事恢复1点聚能点。</p>"
+					"description": "<p><strong>触发</strong> 一个生物在对抗弃信司事的法术时豁免骰失败；</p>\n<hr />\n<p><strong>效果</strong> 弃信司事抽取触发生物的精神能量来为自己的魔法提供燃料。触发生物@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1回合；弃信司事恢复1点聚能点。</p>"
 				}
 			}
 		},
 		"Fallen Champion": {
 			"name": "堕落神卫 Fallen Champion",
-			"publicNotes": "<p>虽然大多数叛教尸生前都是牧师或神职人员，堕落神卫曾经是神圣斗士，在维护神祇的理念同时打击教会的敌人保护其会众。堕落神卫的行动相当直接，大规模地发动它们的圣战。这位堕落神卫曾经信奉阿卡迪亚女神@UUID[Compendium.pf2e.deities.iXvyp9rGnqvFfy4q]{卡祖塔尔 Kazutal}，也被称为豹母。</p>\n<hr />\n<p>叛教尸是一种不死的异端，被仇恨驱使着摧毁它们曾经侍奉的神。叛教尸在生前自愿选择它们的信仰，在所属的教会中成为受人尊敬的重要宗教人士。在它们死前不久或死亡期间，它们对曾经选择的神完全失去了信仰，完全成了一名异端、口呼渎神之语、犯下残忍暴行、诅咒它们的神。这些邪恶的行为将他们的灵魂与肉体束缚到一起，使它们成为了一个受诅咒的存在。对叛教尸来说，信仰是一个终极谎言。</p>\n<p>虽然驱使一个虔诚的崇拜者与他们的信仰决裂的情况多种多样，但叛教尸们的目的相当统一。叛教尸在它们存续的每一刻都尽其所能地与生前信仰的神祇战斗，摧毁肖像和庙宇、屠戮崇拜者、与其他反对同一位神的叛教尸联合、征召次级亡灵，雇佣生者代理人进行破坏或传播错误信息。奇怪的是，叛教尸在死后仍以一种堕落形态保有着生前的神圣力量，使用它们昔日信仰的武器和魔法来摧毁这信仰。</p>",
+			"publicNotes": "<p>虽然大多数叛教尸生前都是牧师或神职人员，堕落神卫曾经是神圣斗士，在维护神祇的理念同时打击教会的敌人保护其会众。堕落神卫的行动相当直接，大规模地发动它们的圣战。这位堕落神卫曾经信奉阿卡迪亚女神@UUID[Compendium.pf2e.deities.Item.iXvyp9rGnqvFfy4q]{卡祖塔尔 Kazutal}，也被称为豹母。</p>\n<hr />\n<p>叛教尸是一种不死的异端，被仇恨驱使着摧毁它们曾经侍奉的神。叛教尸在生前自愿选择它们的信仰，在所属的教会中成为受人尊敬的重要宗教人士。在它们死前不久或死亡期间，它们对曾经选择的神完全失去了信仰，完全成了一名异端、口呼渎神之语、犯下残忍暴行、诅咒它们的神。这些邪恶的行为将他们的灵魂与肉体束缚到一起，使它们成为了一个受诅咒的存在。对叛教尸来说，信仰是一个终极谎言。</p>\n<p>虽然驱使一个虔诚的崇拜者与他们的信仰决裂的情况多种多样，但叛教尸们的目的相当统一。叛教尸在它们存续的每一刻都尽其所能地与生前信仰的神祇战斗，摧毁肖像和庙宇、屠戮崇拜者、与其他反对同一位神的叛教尸联合、征召次级亡灵，雇佣生者代理人进行破坏或传播错误信息。奇怪的是，叛教尸在死后仍以一种堕落形态保有着生前的神圣力量，使用它们昔日信仰的武器和魔法来摧毁这信仰。</p>",
 			"data":{},
 			"items":{
 				"Agent of Despair":{
 					"name": "绝望使者 Agent of Despair",
-					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一名堕落神卫散发出极度绝望的灵光。活物在堕落神卫的灵光范围内时获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，在身处此灵光范围内时它们不能从中恢复，但一旦离开灵光范围则立即恢复。</p>"
+					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一名堕落神卫散发出极度绝望的灵光。活物在堕落神卫的灵光范围内时获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，在身处此灵光范围内时它们不能从中恢复，但一旦离开灵光范围则立即恢复。</p>"
 				},
 				"Final Blasphemy":{
 					"name": "最后的亵渎 Final Blasphemy",
-					"description": "<p>当叛教尸被摧毁时，它爆裂成一股负能量波，效果等同于4环、3动作的<em>@UUID[Compendium.pf2e.spells-srd.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>（@Check[type:fortitude|dc:26|basic:true]）。因叛教尸已被摧毁，所以它不会从这个近似<em>伤害术</em>的效果中获得任何生命值，也不需要保有任何可用的<em>伤害术</em>来发动该技能。</p>"
+					"description": "<p>当叛教尸被摧毁时，它爆裂成一股负能量波，效果等同于4环、3动作的<em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{伤害术 Harm}</em>（@Check[type:fortitude|dc:26|basic:true]）。因叛教尸已被摧毁，所以它不会从这个近似<em>伤害术</em>的效果中获得任何生命值，也不需要保有任何可用的<em>伤害术</em>来发动该技能。</p>"
 				},
 				"Heretic's Armaments":{
 					"name": "异端武备 Heretic's Armaments",
-					"description": "<p>堕落神卫装备它先前信奉神祇的偏好武器时，该武器获得<em>@UUID[Compendium.pf2e.equipment-srd.P6v2AtJw7AUwaDzf]{可怖 Fearsome} </em>性能符文的效果。</p>"
+					"description": "<p>堕落神卫装备它先前信奉神祇的偏好武器时，该武器获得<em>@UUID[Compendium.pf2e.equipment-srd.Item.P6v2AtJw7AUwaDzf]{可怖 Fearsome} </em>性能符文的效果。</p>"
 				},
 				"Heretic's Smite":{
 					"name": "异端斩 Heretic's Smite",
@@ -525,7 +525,7 @@
 				},
 				"Reap Faith":{
 					"name": "收割信仰 Reap Faith",
-					"description": "<p><strong>需求</strong> 堕落神卫的上一个动作是一个对活物造成伤害的打击；</p>\n<hr />\n<p><strong>效果</strong> 堕落神卫削弱那个生物的希望和信念。该生物受到[[/r (3d6)[negative]]]{3d6负能量伤害}，@Check[type:will|dc:25|basic:true]豁免。不论豁免结果如何，该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，或将其惊惧值增加1。</p>"
+					"description": "<p><strong>需求</strong> 堕落神卫的上一个动作是一个对活物造成伤害的打击；</p>\n<hr />\n<p><strong>效果</strong> 堕落神卫削弱那个生物的希望和信念。该生物受到[[/r (3d6)[negative]]]{3d6负能量伤害}，@Check[type:will|dc:25|basic:true]豁免。不论豁免结果如何，该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}，或将其惊惧值增加1。</p>"
 				}
 			}
 		},
@@ -536,7 +536,7 @@
 			"items":{
 				"Brain Rot":{
 					"name": "脑腐症 Brain Rot",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>潜伏期</strong> 1天</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (3天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}和@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}伴随着痉挛 (1天)</p>\n<p><strong>阶段4</strong> 死亡</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>潜伏期</strong> 1天</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (3天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1天)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}伴随着痉挛 (1天)</p>\n<p><strong>阶段4</strong> 死亡</p>"
 				}
 			}
 		},
@@ -592,7 +592,7 @@
 			"items":{
 				"Surge Through":{
 					"name": "灵魂汹涌 Surge Through",
-					"description": "<p><strong>触发</strong>  一个生物穿过区域；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成[[/r (3d12+20)[negative]]]{3d12+20负能量伤害}和[[/r (3d12+20)[cold]]]{3d12+20寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。如果豁免失败，生物还会陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟。如果豁免大失败，它还会@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}1分钟。</p>"
+					"description": "<p><strong>触发</strong>  一个生物穿过区域；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成[[/r (3d12+20)[negative]]]{3d12+20负能量伤害}和[[/r (3d12+20)[cold]]]{3d12+20寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。如果豁免失败，生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟。如果豁免大失败，它还会@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}1分钟。</p>"
 				}
 			}
 		},
@@ -612,7 +612,7 @@
 				},
 				"Terrible Foresight":{
 					"name": "可怖预见 Terrible Foresight",
-					"description": "<p>被幻变缚灵的碎裂时序射线击中的生物会一瞥未来可能发生的悲惨事件。目标必须成功通过@Check[type:will|dc:35]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。如果该生物已受本能力影响，则在豁免失败时其呆滞加1，最高呆滞4。每当该生物休息一整晚，其由本能力带来的状态值下降1。</p>"
+					"description": "<p>被幻变缚灵的碎裂时序射线击中的生物会一瞥未来可能发生的悲惨事件。目标必须成功通过@Check[type:will|dc:35]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}）。如果该生物已受本能力影响，则在豁免失败时其呆滞加1，最高呆滞4。每当该生物休息一整晚，其由本能力带来的状态值下降1。</p>"
 				},
 				"Time Shift":{
 					"name": "时间偏移 Time Shift",
@@ -644,7 +644,7 @@
 				},
 				"Aura of Whispers":{
 					"name": "默语灵光 Aura of Whispers",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>吊刑尸被一圈渎神的低语所包围。听到这些话会发觉吊刑尸正在呢喃着自己最严守的秘密，并意识到自己的缺点暴露无遗。第一次进入灵光范围的生物必须进行@Check[type:will|dc:34]豁免；不论豁免检定结果如何，该生物临时免疫此灵光1分钟。只要还身处默语灵光范围内，因灵光获得的惊惧状态值就不能减少。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}和@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>大失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}和@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>吊刑尸被一圈渎神的低语所包围。听到这些话会发觉吊刑尸正在呢喃着自己最严守的秘密，并意识到自己的缺点暴露无遗。第一次进入灵光范围的生物必须进行@Check[type:will|dc:34]豁免；不论豁免检定结果如何，该生物临时免疫此灵光1分钟。只要还身处默语灵光范围内，因灵光获得的惊惧状态值就不能减少。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}和@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>大失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}和@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 3}。</p>"
 				},
 				"Chains of the Dead":{
 					"name": "死之锁链 Chains of the Dead",
@@ -652,11 +652,11 @@
 				},
 				"Gallow Curse":{
 					"name": "吊刑诅咒 Gallow Curse",
-					"description": "<p>摧毁吊刑尸的人会遭受强大的死亡诅咒。当一个生物将吊刑尸的HP降至0时，他必须进行@Check[type:will|dc:34]检定。未通过豁免的生物获得@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}，且在诅咒解除前无法移除这个状态值。</p>"
+					"description": "<p>摧毁吊刑尸的人会遭受强大的死亡诅咒。当一个生物将吊刑尸的HP降至0时，他必须进行@Check[type:will|dc:34]检定。未通过豁免的生物获得@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}，且在诅咒解除前无法移除这个状态值。</p>"
 				},
 				"Chain Capture":{
 					"name": "链捕 Chain Capture",
-					"description": "<p><strong>触发</strong> 吊刑尸用它的刺链重击了一个目标；</p>\n<hr />\n<p><strong>效果</strong> 吊刑尸进行一次运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}目标。如果成功，吊刑尸还能将该生物拉向自己，距离由它们自己决定。大多数情况下，吊刑尸会选择将一个生物拉到触及之内且远离防御位置的距离，但同时这个生物又够不到吊刑尸。在下一个回合开始时，如果目标还没有逃脱，该目标就会受到一次刺链打击的伤害，然后锁链就会放开该生物。</p>"
+					"description": "<p><strong>触发</strong> 吊刑尸用它的刺链重击了一个目标；</p>\n<hr />\n<p><strong>效果</strong> 吊刑尸进行一次运动检定来@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}目标。如果成功，吊刑尸还能将该生物拉向自己，距离由它们自己决定。大多数情况下，吊刑尸会选择将一个生物拉到触及之内且远离防御位置的距离，但同时这个生物又够不到吊刑尸。在下一个回合开始时，如果目标还没有逃脱，该目标就会受到一次刺链打击的伤害，然后锁链就会放开该生物。</p>"
 				},
 				"Charge Chain":{
 					"name": "锁链充能 Charge Chain",
@@ -671,7 +671,7 @@
 			"items":{
 				"Starvation Aura":{
 					"name": "饥馑灵光 Starvation Aura",
-					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>任何在灵光内结束回合的生物都会因饥饿感受到强烈的痛苦，并必须进行@Check[type:fortitude|dc:30]豁免。失败则获得疲乏状态并受到[[/r 6d6]]{6d6伤害}。生物从这个灵光中受到的伤害和@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态只有他吃完一顿饱饭后才能被治疗。</p>"
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>任何在灵光内结束回合的生物都会因饥饿感受到强烈的痛苦，并必须进行@Check[type:fortitude|dc:30]豁免。失败则获得疲乏状态并受到[[/r 6d6]]{6d6伤害}。生物从这个灵光中受到的伤害和@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态只有他吃完一顿饱饭后才能被治疗。</p>"
 				},
 				"Breath Weapon":{
 					"name": "吐息武器 Breath Weapon",
@@ -679,7 +679,7 @@
 				},
 				"Corpse Consumption":{
 					"name": "纳尸 Corpse Consumption",
-					"description": "<p>如果饥饿巨骸用它的活吞能力杀死了一个生物，它立刻恢复等同于此生物等级的HP。只要饥饿巨骸还存在，被消化的生物就无法被复活，除非使用<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>或类似效果。</p>"
+					"description": "<p>如果饥饿巨骸用它的活吞能力杀死了一个生物，它立刻恢复等同于此生物等级的HP。只要饥饿巨骸还存在，被消化的生物就无法被复活，除非使用<em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>或类似效果。</p>"
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
@@ -698,7 +698,7 @@
 				},
 				"Terrifying Laugh":{
 					"name": "吓人狂笑 Terrifying Laugh",
-					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 阴魂发出刺穿灵魂的狂笑，影响@Template[type:emanation|distance:20]范围，持续至它的下个回合开始。任何身处该区域或进入该区域的生物必须成功通过@Check[type:will|dc:26]豁免否则会被带来恐慌的笑声征服，获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（大失败获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}）。一个生物只需要对每个吓人狂笑能力进行一次豁免，且豁免成功会临时免疫此能力24小时。</p>"
+					"description": "<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 阴魂发出刺穿灵魂的狂笑，影响@Template[type:emanation|distance:20]范围，持续至它的下个回合开始。任何身处该区域或进入该区域的生物必须成功通过@Check[type:will|dc:26]豁免否则会被带来恐慌的笑声征服，获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}）。一个生物只需要对每个吓人狂笑能力进行一次豁免，且豁免成功会临时免疫此能力24小时。</p>"
 				},
 				"Wrath of the Haunt":{
 					"name": "作祟之怒 Wrath of the Haunt",
@@ -717,11 +717,11 @@
 				},
 				"Blinding Breath":{
 					"name": "致盲吐息 Blinding Breath",
-					"description": "<p>独目鬼呼出@Template[type:cone|distance:60]范围的毒性气体，造成[[/r (7d8)[negative]]]{7d8负能量伤害}（@Check[type:reflex|dc:29|basic:true]豁免）。豁免失败的生物@UUID[Compendium.pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}直至他的下一回合结束（大失败目盲1分钟），因为一层乳白色的薄膜覆盖在他的眼上。</p>\n<p>独目鬼在[[/r 1d4 #Recharge]]{1d4轮}内无法使用此能力。</p>"
+					"description": "<p>独目鬼呼出@Template[type:cone|distance:60]范围的毒性气体，造成[[/r (7d8)[negative]]]{7d8负能量伤害}（@Check[type:reflex|dc:29|basic:true]豁免）。豁免失败的生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}直至他的下一回合结束（大失败目盲1分钟），因为一层乳白色的薄膜覆盖在他的眼上。</p>\n<p>独目鬼在[[/r 1d4 #Recharge]]{1d4轮}内无法使用此能力。</p>"
 				},
 				"Infectious Visions":{
 					"name": "传染性幻象 Infectious Visions",
-					"description": "<p>每当独目鬼每轮第一次用利爪打击伤害一个生物时，该生物必须进行@Check[type:will|dc:27]检定，因为他的心灵被骇人的幻象袭击。豁免失败时，该生物会@UUID[Compendium.pf2e.conditionitems.yblD8fOR1J8rDwEQ]{困惑 Confused}直至他的下个回合结束。豁免大成功则该生物临时免疫此能力24小时。</p>"
+					"description": "<p>每当独目鬼每轮第一次用利爪打击伤害一个生物时，该生物必须进行@Check[type:will|dc:27]检定，因为他的心灵被骇人的幻象袭击。豁免失败时，该生物会@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}直至他的下个回合结束。豁免大成功则该生物临时免疫此能力24小时。</p>"
 				}
 			}
 		},
@@ -738,7 +738,7 @@
 				},
 				"Curse Ye Scallywags!":{
 					"name": "咒死你个王八蛋！ Curse Ye Scallywags!",
-					"description": "<p>当海盗船长幽灵的生命值降至0时，距它60尺内的所有生物都受到<em>@UUID[Compendium.pf2e.spells-srd.z2mfh3oPnfYqXflY]{海员诅咒 Mariner's Curse}</em>法术影响，@Check[type:will|dc:25]。那些豁免大失败的生物，其位置会被幽灵知晓，直至诅咒解除。一旦该幽灵被永久摧毁，这个诅咒立刻结束。</p>"
+					"description": "<p>当海盗船长幽灵的生命值降至0时，距它60尺内的所有生物都受到<em>@UUID[Compendium.pf2e.spells-srd.Item.z2mfh3oPnfYqXflY]{海员诅咒 Mariner's Curse}</em>法术影响，@Check[type:will|dc:25]。那些豁免大失败的生物，其位置会被幽灵知晓，直至诅咒解除。一旦该幽灵被永久摧毁，这个诅咒立刻结束。</p>"
 				},
 				"Rejuvenation":{
 					"name": "复生 Rejuvenation",
@@ -750,7 +750,7 @@
 				},
 				"Combat Current":{
 					"name": "连击如潮 Combat Current",
-					"description": "<p>幽灵用弯刀或手弩进行一次打击，然后飞行至多一半的速度，再用尚未用过的打击类型再进行一次打击。如果它们在飞行时穿过敌人，那个敌人对第二次打击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>幽灵用弯刀或手弩进行一次打击，然后飞行至多一半的速度，再用尚未用过的打击类型再进行一次打击。如果它们在飞行时穿过敌人，那个敌人对第二次打击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
 				},
 				"Savvy Joinin' Me Crew?":{
 					"name": "要入伙不？ Savvy Joinin' Me Crew?",
@@ -764,13 +764,13 @@
 			"disable": "<p>@Check[type:nature|dc:36]（大师）安抚四只野牛中的一只；@Check[type:religion|dc:40]（受训）超度它们</p>",
 			"hazarddescription": "<p>四个巨大的野牛头骨升到空中，每个头骨后面都显现出一具幽灵般的身体。</p>",
 			"reset": "<p>当所有活着的生物都离开作祟区域1分钟后，或所有四个野牛头骨都被摧毁之后，作祟会停止活动。在1小时后，如果有至少1只野牛头骨没被摧毁，则作祟会重置。</p>",
-			"routine": "<p>（4个动作）每当有一个野牛头骨被摧毁，作祟就少1个动作。在每个动作中，一只不同的野牛行走最多60尺，然后尝试对不同的生物进行一次角抵打击。被角抵打击重击的生物还会受到@Localize[PF2E.PersistentDamage.Bleed2d6.success]，并被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>",
+			"routine": "<p>（4个动作）每当有一个野牛头骨被摧毁，作祟就少1个动作。在每个动作中，一只不同的野牛行走最多60尺，然后尝试对不同的生物进行一次角抵打击。被角抵打击重击的生物还会受到@Localize[PF2E.PersistentDamage.Bleed2d6.success]，并被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>",
 			"stealthdetails": "<p>(大师)</p>",
 			"data":{},
 			"items":{
 				"Defend Territory":{
 					"name": "护卫领土 Defend Territory",
-					"description": "<p><strong>触发</strong> 一个生物接近至其中一只头骨10尺内；</p>\n<hr />\n<p><strong>效果</strong> 头骨升到空中，幽灵身体浮现，发出愤怒的牛叫。每个野牛头骨@Template[type:emanation|distance:60]{60尺}范围内的每个生物都必须尝试@Check[type:will|dc:36]豁免。然后作祟投掷先攻。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物受到[[/r (1d12+6)[mental]]]{1d12+6心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物受到[[/r (2d12+12)[mental]]]{2d12+12心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物接近至其中一只头骨10尺内；</p>\n<hr />\n<p><strong>效果</strong> 头骨升到空中，幽灵身体浮现，发出愤怒的牛叫。每个野牛头骨@Template[type:emanation|distance:60]{60尺}范围内的每个生物都必须尝试@Check[type:will|dc:36]豁免。然后作祟投掷先攻。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物受到[[/r (1d12+6)[mental]]]{1d12+6心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物受到[[/r (2d12+12)[mental]]]{2d12+12心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}。</p>"
 				},
 				"hG2ocnUMjZCucqB2":{
 					"name": "角抵 Horn",
@@ -785,15 +785,15 @@
 			"items":{
 				"Change Shape":{
 					"name": "变身 Change Shape",
-					"description": "<p>鬼巨灵转变为小型或中型的@UUID[Compendium.pf2e.pathfinder-bestiary.Zv6eaumsdz4HdxRV]{鬣狗 Hyena}。这不会改变它的速度或打击。当鬼巨灵处于这种形态时，侦测不死生物是否存在的效果或能力不会显示出它是不死生物。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+					"description": "<p>鬼巨灵转变为小型或中型的@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Zv6eaumsdz4HdxRV]{鬣狗 Hyena}。这不会改变它的速度或打击。当鬼巨灵处于这种形态时，侦测不死生物是否存在的效果或能力不会显示出它是不死生物。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
 				},
 				"Devour Flesh":{
 					"name": "大啖血肉 Devour Flesh",
-					"description": "<p><strong>需求</strong> 鬼巨灵@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 鬼巨灵试图吃掉被擒抱生物的一块肉。它对被擒抱的生物进行一次颚齿打击。若打击成功，鬼巨灵成功吞下一块肉并恢复[[/r (3d6)[healing]]]{3d6生命值}。被擒抱的生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（若打击大成功则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}）。此等暴力的进食需要鬼巨灵在大快朵颐时放开被擒抱的生物。鬼巨灵每小时只能从一名特定的生物那里恢复一次生命值；它必须在此期间吞食不同生物的肉来获得额外的生命值。</p>"
+					"description": "<p><strong>需求</strong> 鬼巨灵@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 鬼巨灵试图吃掉被擒抱生物的一块肉。它对被擒抱的生物进行一次颚齿打击。若打击成功，鬼巨灵成功吞下一块肉并恢复[[/r (3d6)[healing]]]{3d6生命值}。被擒抱的生物获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（若打击大成功则获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}）。此等暴力的进食需要鬼巨灵在大快朵颐时放开被擒抱的生物。鬼巨灵每小时只能从一名特定的生物那里恢复一次生命值；它必须在此期间吞食不同生物的肉来获得额外的生命值。</p>"
 				},
 				"Luring Laugh":{
 					"name": "诱人怪笑 Luring Laugh",
-					"description": "<p><strong>需求</strong> 鬼巨灵正处于鬣狗形态；</p>\n<hr />\n<p><strong>效果</strong> 鬼巨灵发出一声惑人的啁啾。@Template[type:emanation|distance:60]范围内的所有生物必须成功通过@Check[type:will|dc:19]豁免，否则被@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，并在自己的回合中强制向鬼巨灵移动。这个效果会持续到鬼巨灵的下一个回合结束，但是鬼巨灵可以对此能力使用@UUID[Compendium.pf2e.actionspf2e.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}动作。如果鬼巨灵攻击，只有被攻击的生物才会结束迷魂状态。豁免成功后，该生物对此能力临时免疫24小时。</p>"
+					"description": "<p><strong>需求</strong> 鬼巨灵正处于鬣狗形态；</p>\n<hr />\n<p><strong>效果</strong> 鬼巨灵发出一声惑人的啁啾。@Template[type:emanation|distance:60]范围内的所有生物必须成功通过@Check[type:will|dc:19]豁免，否则被@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，并在自己的回合中强制向鬼巨灵移动。这个效果会持续到鬼巨灵的下一个回合结束，但是鬼巨灵可以对此能力使用@UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}动作。如果鬼巨灵攻击，只有被攻击的生物才会结束迷魂状态。豁免成功后，该生物对此能力临时免疫24小时。</p>"
 				}
 			}
 		},
@@ -818,23 +818,23 @@
 			"items":{
 				"Warrior's Mask":{
 					"name": "斗士的面具 Warrior's Mask",
-					"description": "<p>一个厮斗之魂戴着一个面具，其能让它抛弃原本的形态，成为一名只专注于战斗的斗士。这个面具是半实体的，因此它能同时被实体和虚体生物使用。@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}厮斗之魂的生物，在以@Check[type:athletics|dc:29]检定对抗厮斗之魂的强韧DC中成功后，可以以一个交互动作取下面具。取下厮斗之魂的面具会让这魂魄陷入疯狂。它获得@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，并能用额外的动作来飞行、@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}或打击。它的伤害骰会获得+4的状态加值，AC和反射豁免则会受到-4的状态减值。如果重新带上面具，厮斗之魂就会结束狂暴。</p>"
+					"description": "<p>一个厮斗之魂戴着一个面具，其能让它抛弃原本的形态，成为一名只专注于战斗的斗士。这个面具是半实体的，因此它能同时被实体和虚体生物使用。@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}厮斗之魂的生物，在以@Check[type:athletics|dc:29]检定对抗厮斗之魂的强韧DC中成功后，可以以一个交互动作取下面具。取下厮斗之魂的面具会让这魂魄陷入疯狂。它获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，并能用额外的动作来飞行、@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}或打击。它的伤害骰会获得+4的状态加值，AC和反射豁免则会受到-4的状态减值。如果重新带上面具，厮斗之魂就会结束狂暴。</p>"
 				},
 				"Ghostly Grasp":{
 					"name": "幽灵之握 Ghostly Grasp",
-					"description": "<p>厮斗之魂能@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}实体生物，哪怕它是虚体。它如常使用运动检定来擒拿，但它不能将运动技能用到其他需要实体交互的动作中，如@UUID[Compendium.pf2e.actionspf2e.SjmKHgI7a5Z9JzBx]{破拆 Force Open}和@UUID[Compendium.pf2e.actionspf2e.ge56Lu1xXVFYUnLP]{摔绊 Trip}技能动作。</p>"
+					"description": "<p>厮斗之魂能@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}实体生物，哪怕它是虚体。它如常使用运动检定来擒拿，但它不能将运动技能用到其他需要实体交互的动作中，如@UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{破拆 Force Open}和@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔绊 Trip}技能动作。</p>"
 				},
 				"Submission Lock":{
 					"name": "降服式固定 Submission Lock",
-					"description": "<p><strong>需求</strong> 厮斗之魂@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 魂魄用超自然的紧握削弱对手的力量。厮斗之魂进行一个运动检定来@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}它擒抱或束缚的生物，同时视结果增加[[/r (4d10+12)[negative]]]{4d10+12负能量伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物受到双倍伤害。若他已经力竭，则会@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。如果没有，则目标生物获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直至其下回合结束，在这之后则会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>成功</strong> 该生物受到全部伤害，并获得力竭1直至其下回合结束。</p>"
+					"description": "<p><strong>需求</strong> 厮斗之魂@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 魂魄用超自然的紧握削弱对手的力量。厮斗之魂进行一个运动检定来@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}它擒抱或束缚的生物，同时视结果增加[[/r (4d10+12)[negative]]]{4d10+12负能量伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物受到双倍伤害。若他已经力竭，则会@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。如果没有，则目标生物获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直至其下回合结束，在这之后则会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>成功</strong> 该生物受到全部伤害，并获得力竭1直至其下回合结束。</p>"
 				},
 				"Teleporting Clothesline":{
 					"name": "推掷闪击 Teleporting Clothesline",
-					"description": "<p><strong>需求</strong> 厮斗之魂@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 厮斗之魂直线推动（push）该生物15尺。魂魄随即传送20尺阻截（被它推出去的生物）。它对该生物进行一次幽灵之手打击。打击命中则该生物会被击至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，而打击重击时，该生物在被击倒的同时也会因为被猛砸向地面而额外受到[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}。</p>"
+					"description": "<p><strong>需求</strong> 厮斗之魂@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 厮斗之魂直线推动（push）该生物15尺。魂魄随即传送20尺阻截（被它推出去的生物）。它对该生物进行一次幽灵之手打击。打击命中则该生物会被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}，而打击重击时，该生物在被击倒的同时也会因为被猛砸向地面而额外受到[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}。</p>"
 				},
 				"Victory Celebration":{
 					"name": "欢庆胜利 Victory Celebration",
-					"description": "<p>如果厮斗之魂将一个生物打到@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，@Template[type:emanation|distance:60]{60尺}内所有见证胜利的生物都成为一个@Check[type:will|dc:26|traits:mental,emotion,occult]的<em>@UUID[Compendium.pf2e.spells-srd.czO0wbT1i320gcu9]{全场喝彩 Roaring Applause}</em>法术的目标。厮斗之魂必须花费本回合剩余的全部动作庆祝胜利，同时它的身上会多出一块奖牌或腰带。</p>"
+					"description": "<p>如果厮斗之魂将一个生物打到@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，@Template[type:emanation|distance:60]{60尺}内所有见证胜利的生物都成为一个@Check[type:will|dc:26|traits:mental,emotion,occult]的<em>@UUID[Compendium.pf2e.spells-srd.Item.czO0wbT1i320gcu9]{全场喝彩 Roaring Applause}</em>法术的目标。厮斗之魂必须花费本回合剩余的全部动作庆祝胜利，同时它的身上会多出一块奖牌或腰带。</p>"
 				}
 			}
 		},
@@ -843,13 +843,13 @@
 			"disable": "<p>@Check[type:religion|dc:22]（受训）做法事来抵挡死者；@Check[type:occultism|dc:24]（受训）驱逐愤怒的鬼魂；总共两次成功才能成功解除作祟。</p>",
 			"hazarddescription": "<p>被埋葬的死者纷纷从地面中伸出手来，抓住并拉扯区域内的生者，并将他们拖往地下。</p>",
 			"reset": "<p>在所有活物都离开区域1分钟后，作祟会停止。在1小时后，作祟会重置。</p>",
-			"routine": "<p>（1个动作）贪婪的手攻击区域内所有生物，造成[[/r (2d6+7)[bludgeoning]]]{2d6+7钝击伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。如果大失败，生物还会被部分拖入地下，陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}直到@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 26）。如果该生物已经陷入禁足，则会被活埋，必须屏住呼吸才能避免窒息。</p>",
+			"routine": "<p>（1个动作）贪婪的手攻击区域内所有生物，造成[[/r (2d6+7)[bludgeoning]]]{2d6+7钝击伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。如果大失败，生物还会被部分拖入地下，陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}直到@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 26）。如果该生物已经陷入禁足，则会被活埋，必须屏住呼吸才能避免窒息。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Shifting Earth":{
 					"name": "地裂 Shifting Earth",
-					"description": "<p><strong>触发</strong> 至少两个生物进入区域；</p>\n<hr />\n<p><strong>效果</strong> 当死者之手纷纷从地下伸出，地面剧烈地振动。区域变为困难地形。区域内的生物必须通过@Check[type:reflex|dc:26]豁免，否则@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。然后作祟投掷先攻。</p>"
+					"description": "<p><strong>触发</strong> 至少两个生物进入区域；</p>\n<hr />\n<p><strong>效果</strong> 当死者之手纷纷从地下伸出，地面剧烈地振动。区域变为困难地形。区域内的生物必须通过@Check[type:reflex|dc:26]豁免，否则@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。然后作祟投掷先攻。</p>"
 				}
 			}
 		},
@@ -859,15 +859,15 @@
 			"items":{
 				"Hungry Armor":{
 					"name": "饥饿护甲 Hungry Armor",
-					"description": "<p>用近战武器对死墓骑士进行打击的生物必须成功通过@Check[type:reflex|dc:31]豁免，否则用于打击的武器将被卸武。若该生物豁免大失败，则这把武器会掉落至死墓骑士占据的空间；用无武装攻击命中死墓骑士的生物必须成功通过@Check[type:reflex|dc:31]豁免，否则会被死墓骑士@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直至该生物的下个回合结束、该生物逃脱、或死墓骑士移动，以先发生的为准。</p>"
+					"description": "<p>用近战武器对死墓骑士进行打击的生物必须成功通过@Check[type:reflex|dc:31]豁免，否则用于打击的武器将被卸武。若该生物豁免大失败，则这把武器会掉落至死墓骑士占据的空间；用无武装攻击命中死墓骑士的生物必须成功通过@Check[type:reflex|dc:31]豁免，否则会被死墓骑士@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，直至该生物的下个回合结束、该生物逃脱、或死墓骑士移动，以先发生的为准。</p>"
 				},
 				"Rejuvenation":{
 					"name": "复生 Rejuvenation",
-					"description": "<p>当死墓骑士被摧毁时，其护甲会在[[/br 1d10 #days]]{1d10天}内重塑身体——若护甲被活着的宿主穿戴则会更加迅速（见上面帖子中的死墓骑士护甲）。若身体在此之前被破坏，重塑过程将重新开始。</p>\n<p>只有摧毁护甲（比如使用法术<em>@UUID[Compendium.pf2e.spells-srd.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>）、把死墓骑士传送至正能量位面、或者丢进火山之中才能够永久摧毁死墓骑士。</p>"
+					"description": "<p>当死墓骑士被摧毁时，其护甲会在[[/br 1d10 #days]]{1d10天}内重塑身体——若护甲被活着的宿主穿戴则会更加迅速（见上面帖子中的死墓骑士护甲）。若身体在此之前被破坏，重塑过程将重新开始。</p>\n<p>只有摧毁护甲（比如使用法术<em>@UUID[Compendium.pf2e.spells-srd.Item.r7ihOgKv19eJQnik]{解离术 Disintegrate}</em>）、把死墓骑士传送至正能量位面、或者丢进火山之中才能够永久摧毁死墓骑士。</p>"
 				},
 				"Sacrilegious Aura":{
 					"name": "渎圣灵光 Sacrilegious Aura",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内的生物使用带有正能量特征的法术或能力时，死墓骑士会自动尝试反制它，[[/r 1d20+23 #Counteract]]{+23反制调整值}。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内的生物使用带有正能量特征的法术或能力时，死墓骑士会自动尝试反制它，[[/r 1d20+23 #Counteract]]{+23反制调整值}。</p>"
 				},
 				"Devastating Blast":{
 					"name": "毁灭爆震 Devastating Blast",
@@ -879,15 +879,15 @@
 				},
 				"Graveknight's Curse":{
 					"name": "死墓骑士诅咒 Graveknight's Curse",
-					"description": "<p>诅咒会影响任何穿戴死墓骑士的护甲超过1小时以上的生物。</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:39]豁免</p>\n<hr />\n<p><strong>潜伏期</strong> 1小时</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}并且无法脱下护甲 (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 2}生物速度减少10，且无法脱下护甲 (1天)</p>\n<p><strong>阶段3</strong> 死亡并转化为护甲对应的死墓骑士。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.6rnB7nK6J6zF4vea]{效果: 死墓骑士诅咒}</p>"
+					"description": "<p>诅咒会影响任何穿戴死墓骑士的护甲超过1小时以上的生物。</p>\n<p><strong>豁免检定</strong> @Check[type:will|dc:39]豁免</p>\n<hr />\n<p><strong>潜伏期</strong> 1小时</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}并且无法脱下护甲 (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 2}生物速度减少10，且无法脱下护甲 (1天)</p>\n<p><strong>阶段3</strong> 死亡并转化为护甲对应的死墓骑士。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.6rnB7nK6J6zF4vea]{效果: 死墓骑士诅咒}</p>"
 				},
 				"Phantom Mount":{
 					"name": "魅影坐骑 Phantom Mount",
-					"description": "<p>HP 85; AC 34, 强韧 +23, 反射 +20, 意志 +20</p>\n<hr />\n<p>死墓骑士召唤出1匹超自然坐骑，就如同升阶至等于死墓骑士等级一半的法术<em>@UUID[Compendium.pf2e.spells-srd.WPKJOhEihhcIm2uQ]{魅影驹 Phantom Steed}</em>一般。</p>\n<p>不像正常的<em>魅影驹</em>，该坐骑的AC和豁免加值均为死墓骑士同数据-4的数值，并且此坐骑HP为死墓骑士的1/3(向下取整)。</p>\n<p>若坐骑被摧毁，死墓骑士必须等待1小时才能再次使用该能力。</p>"
+					"description": "<p>HP 85; AC 34, 强韧 +23, 反射 +20, 意志 +20</p>\n<hr />\n<p>死墓骑士召唤出1匹超自然坐骑，就如同升阶至等于死墓骑士等级一半的法术<em>@UUID[Compendium.pf2e.spells-srd.Item.WPKJOhEihhcIm2uQ]{魅影驹 Phantom Steed}</em>一般。</p>\n<p>不像正常的<em>魅影驹</em>，该坐骑的AC和豁免加值均为死墓骑士同数据-4的数值，并且此坐骑HP为死墓骑士的1/3(向下取整)。</p>\n<p>若坐骑被摧毁，死墓骑士必须等待1小时才能再次使用该能力。</p>"
 				},
 				"Ruinous Weapons":{
 					"name": "破灭武器 Ruinous Weapons",
-					"description": "<p>死墓骑士所持用的任意武器或无武装攻击均获得<em>+1高等强击</em>和<em>@UUID[Compendium.pf2e.equipment-srd.TEa1oKZbwsOvC6TZ]{高等电击 Greater Shock}</em>武器符文。</p>"
+					"description": "<p>死墓骑士所持用的任意武器或无武装攻击均获得<em>+1高等强击</em>和<em>@UUID[Compendium.pf2e.equipment-srd.Item.TEa1oKZbwsOvC6TZ]{高等电击 Greater Shock}</em>武器符文。</p>"
 				},
 				"Weapon Master":{
 					"name": "武器大师 Weapon Master",
@@ -906,7 +906,7 @@
 				},
 				"Create Zombies":{
 					"name": "创造丧尸 Create Zombies",
-					"description": "<p>科兰特能通过1 小时的仪式来创造次等丧尸。在此期间，科兰特在它们打算唤起的尸体上咏唱并跳起亵渎的舞蹈。与常规的仪式不同，这不需要进行技能检定也没有开销。在这一小时结束后，科兰特能创造一只等级为1或2级的丧尸，或者两只0级或更低等级的丧尸。它们自动受科兰特控制，并计入指挥丧尸能力的上限。任何由科兰特创造的丧尸如常计入遭遇的XP奖励。</p>\n<p>科兰特创造了足够多的丧尸个体来组成蹒跚丧尸部队，而这其实等效于4 级生物。他无法直接创造部队，必须先训练这些弱小的丧尸才能使其如同部队一般行动。</p>\n<hr />\n<p><strong>Level -1 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.0plBflWwrCWQO2RO]{蹒跚丧尸 Zombie Shambler}</li>\n</ul>\n<p><strong>0级丧尸 </strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.ZqZlji7aCGCGATMP]{丧尸蛇 Zombie Snake}</li>\n</ul>\n<p><strong>1级丧尸</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.blog-bestiary.uPeDOylL6zsZKSIs]{地精丧尸 Goblin Zombie}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.KxN9aGFGPxl6oLGF]{瘟疫丧尸 Plague Zombie}</li>\n</ul>\n<p><strong>2级丧尸</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.qO20so7Mv2pmsLL1]{枯皮丧尸 Husk Zombie}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Ix1PziAEk9IIMYBz]{蛮力丧尸 Zombie Brute}</li>\n</ul>"
+					"description": "<p>科兰特能通过1 小时的仪式来创造次等丧尸。在此期间，科兰特在它们打算唤起的尸体上咏唱并跳起亵渎的舞蹈。与常规的仪式不同，这不需要进行技能检定也没有开销。在这一小时结束后，科兰特能创造一只等级为1或2级的丧尸，或者两只0级或更低等级的丧尸。它们自动受科兰特控制，并计入指挥丧尸能力的上限。任何由科兰特创造的丧尸如常计入遭遇的XP奖励。</p>\n<p>科兰特创造了足够多的丧尸个体来组成蹒跚丧尸部队，而这其实等效于4 级生物。他无法直接创造部队，必须先训练这些弱小的丧尸才能使其如同部队一般行动。</p>\n<hr />\n<p><strong>Level -1 Zombies</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.0plBflWwrCWQO2RO]{蹒跚丧尸 Zombie Shambler}</li>\n</ul>\n<p><strong>0级丧尸 </strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.ZqZlji7aCGCGATMP]{丧尸蛇 Zombie Snake}</li>\n</ul>\n<p><strong>1级丧尸</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.blog-bestiary.Actor.uPeDOylL6zsZKSIs]{地精丧尸 Goblin Zombie}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.KxN9aGFGPxl6oLGF]{瘟疫丧尸 Plague Zombie}</li>\n</ul>\n<p><strong>2级丧尸</strong></p>\n<ul>\n<li>@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.qO20so7Mv2pmsLL1]{枯皮丧尸 Husk Zombie}</li>\n<li>@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.Ix1PziAEk9IIMYBz]{蛮力丧尸 Zombie Brute}</li>\n</ul>"
 				},
 				"Shamble Forth":{
 					"name": "缓步推进！ Shamble Forth",
@@ -925,7 +925,7 @@
 			"items":{
 				"Desiccation Aura":{
 					"name": "干燥灵光 Desiccation Aura",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一团呛人、刺鼻的灰尘环绕于空心蛇四周，将任何身处其中的敌人的水分吸干。进入灵光或在灵光范围内开始其回合的生物必须成功通过@Check[type:fortitude|dc:34]检定，否则获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/r 1d4 #rounds]]{1d4轮}（大失败持续[[/r 2d4 #rounds]]{2d4轮}）。豁免成功的生物临时免疫此能力24小时。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一团呛人、刺鼻的灰尘环绕于空心蛇四周，将任何身处其中的敌人的水分吸干。进入灵光或在灵光范围内开始其回合的生物必须成功通过@Check[type:fortitude|dc:34]检定，否则获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/r 1d4 #rounds]]{1d4轮}（大失败持续[[/r 2d4 #rounds]]{2d4轮}）。豁免成功的生物临时免疫此能力24小时。</p>"
 				},
 				"Divine Guardian":{
 					"name": "神圣守卫 Divine Guardian",
@@ -933,15 +933,15 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，@Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击}和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，@Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Slithering Strike":{
 					"name": "滑行打击 Slithering Strike",
-					"description": "<p>空心蛇行走或攀爬并在该移动结束后进行一次颚齿打击。若空心蛇在开始此动作前处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，直至本能力打击结束前它将保持藏匿。</p>"
+					"description": "<p>空心蛇行走或攀爬并在该移动结束后进行一次颚齿打击。若空心蛇在开始此动作前处于@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，直至本能力打击结束前它将保持藏匿。</p>"
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>中型, [[/r (4d6)[negative]]]{4d6负能量}和@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}, 破裂32</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>中型, [[/r (4d6)[negative]]]{4d6负能量}和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}, 破裂32</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -952,11 +952,11 @@
 			"items":{
 				"Rejuvenation":{
 					"name": "复生 Rejuvenation",
-					"description": "<p>当巫妖被摧毁时，其灵魂会立即转移到<em>@UUID[Compendium.pf2e.equipment-srd.NEbr7nKuiluJgBHT]{命匣 Soul Cage}</em>内。只有先找到并摧毁巫妖的<em>命匣</em>，才能永久摧毁该<em>命匣</em>对应的巫妖。</p>"
+					"description": "<p>当巫妖被摧毁时，其灵魂会立即转移到<em>@UUID[Compendium.pf2e.equipment-srd.Item.NEbr7nKuiluJgBHT]{命匣 Soul Cage}</em>内。只有先找到并摧毁巫妖的<em>命匣</em>，才能永久摧毁该<em>命匣</em>对应的巫妖。</p>"
 				},
 				"Shatter Block":{
 					"name": "分离格挡 Shatter Block",
-					"description": "<p><strong>触发</strong> 一个生物对骨堆巫妖造成重击；</p>\n<p><strong>需求</strong> 巫妖身上至少附着一个骨仆 (见组装骨仆)</p>\n<hr />\n<p><strong>效果</strong> 重击会变成普通打击。骨堆巫妖的一个骨仆从它身上分离，放置于一个空的邻接方格，处于@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。该骨仆受到触发攻击的伤害。</p>"
+					"description": "<p><strong>触发</strong> 一个生物对骨堆巫妖造成重击；</p>\n<p><strong>需求</strong> 巫妖身上至少附着一个骨仆 (见组装骨仆)</p>\n<hr />\n<p><strong>效果</strong> 重击会变成普通打击。骨堆巫妖的一个骨仆从它身上分离，放置于一个空的邻接方格，处于@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}状态。该骨仆受到触发攻击的伤害。</p>"
 				},
 				"Servitor Assembly":{
 					"name": "组装骨仆 Servitor Assembly",
@@ -968,7 +968,7 @@
 				},
 				"Servitor Lunge":{
 					"name": "骨仆猛扑 Servitor Lunge",
-					"description": "<p><strong>需求</strong> 骨堆巫妖的上一个动作是重击的近战打击，且它身上至少附着一个骨仆；</p>\n<hr />\n<p><strong>效果</strong> 巫妖附着的骨仆之一分离至邻接目标的区域，且该目标被此骨仆@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。</p>"
+					"description": "<p><strong>需求</strong> 骨堆巫妖的上一个动作是重击的近战打击，且它身上至少附着一个骨仆；</p>\n<hr />\n<p><strong>效果</strong> 巫妖附着的骨仆之一分离至邻接目标的区域，且该目标被此骨仆@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。</p>"
 				},
 				"Servitor Realignment":{
 					"name": "骨仆重整 Servitor Realignment",
@@ -991,7 +991,7 @@
 				},
 				"Feed on the Living":{
 					"name": "以生为食 Feed on the Living",
-					"description": "<p>饥饿幽灵触碰一个触及内的生物。如果目标是一个活着的生物，他会受到幽灵的幽灵之手打击的伤害，@Check[type:fortitude|dc:24]豁免。如果幽魂正以生者假面示人，它们可以将此能力伪装成无害的接触并将效果延后1分钟，同时令目标不察觉此效果。一个生物一次只能受到一个延迟的以生为食能力影响，如果那个幽灵在延迟的一分钟内失去了生者假面，那么正在延迟的以生为食能力也会丢失。</p>\n<hr />\n<p><strong>大成功</strong> 目标的生命能量压倒了幽灵。饥饿幽灵受到[[/r (5)[positive]]]{5正能量伤害}，目标不受影响。</p>\n<p><strong>成功</strong> 目标受到一半伤害，饥饿幽灵恢复等同于此能力造成伤害的HP。</p>\n<p><strong>失败</strong> 目标受到全部伤害并获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1分钟。饥饿幽灵恢复等同于此能力造成伤害的HP。</p>\n<p><strong>大失败</strong> 目标受到两倍伤害并获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续1分钟。饥饿幽灵恢复等同于此能力造成伤害的HP。</p>"
+					"description": "<p>饥饿幽灵触碰一个触及内的生物。如果目标是一个活着的生物，他会受到幽灵的幽灵之手打击的伤害，@Check[type:fortitude|dc:24]豁免。如果幽魂正以生者假面示人，它们可以将此能力伪装成无害的接触并将效果延后1分钟，同时令目标不察觉此效果。一个生物一次只能受到一个延迟的以生为食能力影响，如果那个幽灵在延迟的一分钟内失去了生者假面，那么正在延迟的以生为食能力也会丢失。</p>\n<hr />\n<p><strong>大成功</strong> 目标的生命能量压倒了幽灵。饥饿幽灵受到[[/r (5)[positive]]]{5正能量伤害}，目标不受影响。</p>\n<p><strong>成功</strong> 目标受到一半伤害，饥饿幽灵恢复等同于此能力造成伤害的HP。</p>\n<p><strong>失败</strong> 目标受到全部伤害并获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1分钟。饥饿幽灵恢复等同于此能力造成伤害的HP。</p>\n<p><strong>大失败</strong> 目标受到两倍伤害并获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续1分钟。饥饿幽灵恢复等同于此能力造成伤害的HP。</p>"
 				},
 				"Ravenous Undoing":{
 					"name": "贪饿毁灭 Ravenous Undoing",
@@ -1014,11 +1014,11 @@
 				},
 				"Drain Life":{
 					"name": "汲取生命 Drain Life",
-					"description": "<p>当猎手尸妖对一个活着的生物使用无武装攻击或者绑定的武器打击并造成伤害时，它获得7点临时生命值，并且目标必须通过@Check[type:fortitude|dc:22]检定否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。猎手尸妖的无武装攻击或者绑定武器打击造成的进一步伤害将使流失值在再次豁免失败时增加1，最多达到流失4。</p>"
+					"description": "<p>当猎手尸妖对一个活着的生物使用无武装攻击或者绑定的武器打击并造成伤害时，它获得7点临时生命值，并且目标必须通过@Check[type:fortitude|dc:22]检定否则获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。猎手尸妖的无武装攻击或者绑定武器打击造成的进一步伤害将使流失值在再次豁免失败时增加1，最多达到流失4。</p>"
 				},
 				"Spawn Hunter Wight":{
 					"name": "猎手尸妖衍体 Spawn Hunter Wight",
-					"description": "<p>被猎手尸妖的武器或者利爪打击杀死的活着的类人生物[[/r 1d4 #rounds]]{1d4轮}之后变成一个猎手尸妖衍体。这具衍体听命于杀死它的猎手尸妖。当它处于尸妖衍体的状态时，没有汲取生命和制造猎手尸妖衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果猎手尸妖衍体的创造者死亡，则该衍体变成完全自主的猎手尸妖；它重获自由意志，获得汲取生命和创造猎手尸妖衍体的能力，并且不再笨拙。</p>"
+					"description": "<p>被猎手尸妖的武器或者利爪打击杀死的活着的类人生物[[/r 1d4 #rounds]]{1d4轮}之后变成一个猎手尸妖衍体。这具衍体听命于杀死它的猎手尸妖。当它处于尸妖衍体的状态时，没有汲取生命和制造猎手尸妖衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果猎手尸妖衍体的创造者死亡，则该衍体变成完全自主的猎手尸妖；它重获自由意志，获得汲取生命和创造猎手尸妖衍体的能力，并且不再笨拙。</p>"
 				}
 			}
 		},
@@ -1029,7 +1029,7 @@
 			"items":{
 				"Slow":{
 					"name": "缓慢 Slow",
-					"description": "<p>枯皮丧尸永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+					"description": "<p>枯皮丧尸永久具有@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -1037,7 +1037,7 @@
 				},
 				"Sudden Surge":{
 					"name": "速度激增 Sudden Surge",
-					"description": "<p><strong>触发</strong> 枯皮丧尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯皮丧尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯皮丧尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>枯皮丧尸无法再次使用此能力，除非它们花费10分钟保持站着不动。 </p>"
+					"description": "<p><strong>触发</strong> 枯皮丧尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯皮丧尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯皮丧尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>枯皮丧尸无法再次使用此能力，除非它们花费10分钟保持站着不动。 </p>"
 				}
 			}
 		},
@@ -1048,11 +1048,11 @@
 			"items":{
 				"Great Despair":{
 					"name": "高等绝望灵光 Great Despair",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>在冰封木乃伊绝望灵光中的生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。它们的惊惧状态在灵光范围内时无法自然恢复，但是在离开灵光范围后立即恢复。当一个生物第一次进入该灵光范围时，它必须通过@Check[type:will|dc:24]豁免（在受到惊惧状态带来的减值之后），否则@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}[[/r 1d4 #rounds]]{1d4轮}。该生物之后在24小时内临时免疫本能力。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>在冰封木乃伊绝望灵光中的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。它们的惊惧状态在灵光范围内时无法自然恢复，但是在离开灵光范围后立即恢复。当一个生物第一次进入该灵光范围时，它必须通过@Check[type:will|dc:24]豁免（在受到惊惧状态带来的减值之后），否则@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}[[/r 1d4 #rounds]]{1d4轮}。该生物之后在24小时内临时免疫本能力。</p>"
 				},
 				"Snow Vision":{
 					"name": "降雪视觉 Snow Vision",
-					"description": "<p>雪不会阻碍冰封木乃伊的视觉；它会忽略降雪带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+					"description": "<p>雪不会阻碍冰封木乃伊的视觉；它会忽略降雪带来的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
 				},
 				"Channel Rot":{
 					"name": "引导寒腐症 Channel Rot",
@@ -1060,7 +1060,7 @@
 				},
 				"Cold Rot":{
 					"name": "寒腐症 Cold Rot",
-					"description": "<p>该苦难无法被降到阶段1以下，其造成的伤害也无法被治疗，直到成功地使用<em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{移除诅咒 Remove Curse}</em>或类似效果；在这之后，这个苦难可以像普通疾病一样被移除。被寒腐症杀死的生物会变为冰晶，并且除了通过7环<em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或类似的魔法手段之外无法复活。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:24]</p>\n<hr />\n<p><strong>阶段1</strong> 持续1轮的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，这之后携带但不发病 (1分钟)</p>\n<p><strong>阶段2</strong> [[/r (5d6)[negative]+(2d6)[cold]]]{5d6负能量伤害和2d6寒冷伤害}和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1天)</p>"
+					"description": "<p>该苦难无法被降到阶段1以下，其造成的伤害也无法被治疗，直到成功地使用<em>@UUID[Compendium.pf2e.spells-srd.Item.OyFCwQuw8XRazsNr]{移除诅咒 Remove Curse}</em>或类似效果；在这之后，这个苦难可以像普通疾病一样被移除。被寒腐症杀死的生物会变为冰晶，并且除了通过7环<em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或类似的魔法手段之外无法复活。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:24]</p>\n<hr />\n<p><strong>阶段1</strong> 持续1轮的@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，这之后携带但不发病 (1分钟)</p>\n<p><strong>阶段2</strong> [[/r (5d6)[negative]+(2d6)[cold]]]{5d6负能量伤害和2d6寒冷伤害}和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1天)</p>"
 				},
 				"Frozen Breath":{
 					"name": "冰冻吐息 Frozen Breath",
@@ -1075,11 +1075,11 @@
 			"items":{
 				"Mystery Ingredients":{
 					"name": "神秘原料 Mystery Ingredients",
-					"description": "<p>@Template[type:emanation|distance:60] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光内的生物在进行辨识炼金术、关于炼金物品的回忆知识或检查蛇油成分的检定受到-2状态减值。当一个生物第一次进入该区域时，如果它听到灵液贩子说话，它必须尝试一个秘密@Check[type:will|dc:23|traits:secret]豁免来对抗灵液贩子的欺骗DC。如果豁免失败，它在接下来的24小时内第一次辨识炼金术或关于炼金物品的回忆知识失败检定结果将被视为大失败。这是一个带有“听觉”、“厄运”特征的效果。</p>"
+					"description": "<p>@Template[type:emanation|distance:60] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光内的生物在进行辨识炼金术、关于炼金物品的回忆知识或检查蛇油成分的检定受到-2状态减值。当一个生物第一次进入该区域时，如果它听到灵液贩子说话，它必须尝试一个秘密@Check[type:will|dc:23|traits:secret]豁免来对抗灵液贩子的欺骗DC。如果豁免失败，它在接下来的24小时内第一次辨识炼金术或关于炼金物品的回忆知识失败检定结果将被视为大失败。这是一个带有“听觉”、“厄运”特征的效果。</p>"
 				},
 				"Brew Tomb Juice":{
 					"name": "酿造墓汁 Brew Tomb Juice",
-					"description": "<p><strong>开销</strong> 一批灌注试剂。</p>\n<hr />\n<p><strong>效果</strong> 液贩子创造一剂墓汁，一种有着灌注（infused）特征并在24小时后失效的炼金补剂。墓汁有着@UUID[Compendium.pf2e.equipment-srd.xBZCVHAa1SnR8Xul]{蛇油 Snake Oil}的效果，并可能因灵液贩子的@Check[type:crafting|dc:20]检定的成功度而拥有更多效果。</p>\n<hr />\n<p><strong>大成功</strong> 灵液贩子选择以下物品中的一个并将它的效果加入墓汁中：@UUID[Compendium.pf2e.equipment-srd.AJ1dC7EtTIfBey0M]{中等解毒剂 Antidote (Moderate)}、@UUID[Compendium.pf2e.equipment-srd.biRbqKo2C97XLfQ0]{中等抗生素 Antiplague (Moderate)}、@UUID[Compendium.pf2e.equipment-srd.TZUskLT7yvP7N2co]{次等生命灵药 Elixir of Life (Lesser)}、@UUID[Compendium.pf2e.equipment-srd.QGXNqpP5KvSldoZz]{巨蝎毒 Giant Scorpion Venom}、@UUID[Compendium.pf2e.equipment-srd.mj9i9GeQTADByNPZ]{中等主宰突变药剂 Juggernaut Mutagen (Moderate)}。用这种方式创造的毒素获得1轮的潜伏期、获得摄入特征，并失去任何接触、吸入或伤口特征。</p>\n<p><strong>成功</strong> 如同大成功，但是只能从下列物品中选择：@UUID[Compendium.pf2e.equipment-srd.ktjFOp3U0wQD9t0Z]{次等解毒剂 Antidote (Lesser)}、@UUID[Compendium.pf2e.equipment-srd.UqinuuCWePTYGhVO]{次等抗生素 Antiplague (Lesser)}、@UUID[Compendium.pf2e.equipment-srd.hDLbR56Id2OtU318]{下等生命灵药 Elixir of Life (Minor)}、@UUID[Compendium.pf2e.equipment-srd.qQqAY59NgGNoy2xr]{墓根 Graveroot}、@UUID[Compendium.pf2e.equipment-srd.xE0EdDrf734l2fQH]{次等主宰突变药剂 Juggernaut Mutagen (Lesser)}。</p>"
+					"description": "<p><strong>开销</strong> 一批灌注试剂。</p>\n<hr />\n<p><strong>效果</strong> 液贩子创造一剂墓汁，一种有着灌注（infused）特征并在24小时后失效的炼金补剂。墓汁有着@UUID[Compendium.pf2e.equipment-srd.Item.xBZCVHAa1SnR8Xul]{蛇油 Snake Oil}的效果，并可能因灵液贩子的@Check[type:crafting|dc:20]检定的成功度而拥有更多效果。</p>\n<hr />\n<p><strong>大成功</strong> 灵液贩子选择以下物品中的一个并将它的效果加入墓汁中：@UUID[Compendium.pf2e.equipment-srd.Item.AJ1dC7EtTIfBey0M]{中等解毒剂 Antidote (Moderate)}、@UUID[Compendium.pf2e.equipment-srd.Item.biRbqKo2C97XLfQ0]{中等抗生素 Antiplague (Moderate)}、@UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{次等生命灵药 Elixir of Life (Lesser)}、@UUID[Compendium.pf2e.equipment-srd.Item.QGXNqpP5KvSldoZz]{巨蝎毒 Giant Scorpion Venom}、@UUID[Compendium.pf2e.equipment-srd.Item.mj9i9GeQTADByNPZ]{中等主宰突变药剂 Juggernaut Mutagen (Moderate)}。用这种方式创造的毒素获得1轮的潜伏期、获得摄入特征，并失去任何接触、吸入或伤口特征。</p>\n<p><strong>成功</strong> 如同大成功，但是只能从下列物品中选择：@UUID[Compendium.pf2e.equipment-srd.Item.ktjFOp3U0wQD9t0Z]{次等解毒剂 Antidote (Lesser)}、@UUID[Compendium.pf2e.equipment-srd.Item.UqinuuCWePTYGhVO]{次等抗生素 Antiplague (Lesser)}、@UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]{下等生命灵药 Elixir of Life (Minor)}、@UUID[Compendium.pf2e.equipment-srd.Item.qQqAY59NgGNoy2xr]{墓根 Graveroot}、@UUID[Compendium.pf2e.equipment-srd.Item.xE0EdDrf734l2fQH]{次等主宰突变药剂 Juggernaut Mutagen (Lesser)}。</p>"
 				},
 				"Exhume":{
 					"name": "掘尸 Exhume",
@@ -1087,7 +1087,7 @@
 				},
 				"Force Feed":{
 					"name": "强迫喂药 Force Feed",
-					"description": "<p><strong>需求</strong> 灵液贩子正@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物并手持着墓汁、一剂炼金灵药、或一剂炼金毒素；</p>\n<hr />\n<p><strong>效果</strong> 灵液贩子强迫目标消耗这份炼金物品。</p>"
+					"description": "<p><strong>需求</strong> 灵液贩子正@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物并手持着墓汁、一剂炼金灵药、或一剂炼金毒素；</p>\n<hr />\n<p><strong>效果</strong> 灵液贩子强迫目标消耗这份炼金物品。</p>"
 				}
 			}
 		},
@@ -1098,15 +1098,15 @@
 			"items":{
 				"Aura of Peace":{
 					"name": "平和灵光 Aura of Peace",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>当一个生物进入灵光或在灵光内开始回合时，他受到法术<em>@UUID[Compendium.pf2e.spells-srd.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>的影响，持续1分钟，@Check[type:will|dc:27]豁免。豁免成功的生物临时免疫此能力1小时。如果义洛理门徒木乃伊采取了敌对行动，平和灵光就会被压制，已经受其影响的人也不再受影响。义洛理门徒木乃伊必须花10分钟的时间进行冥想才能恢复光环。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>当一个生物进入灵光或在灵光内开始回合时，他受到法术<em>@UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{安定心神 Calm Emotions}</em>的影响，持续1分钟，@Check[type:will|dc:27]豁免。豁免成功的生物临时免疫此能力1小时。如果义洛理门徒木乃伊采取了敌对行动，平和灵光就会被压制，已经受其影响的人也不再受影响。义洛理门徒木乃伊必须花10分钟的时间进行冥想才能恢复光环。</p>"
 				},
 				"Robe Tangle":{
 					"name": "长袍缠身 Robe Tangle",
-					"description": "<p><strong>触发</strong> 一个邻接木乃伊的生物对木乃伊的近战打击失手。</p>\n<hr />\n<p><strong>效果</strong> 木乃伊与攻击者互换位置，攻击者被木乃伊那条活化的衣带@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。逃脱DC为29，破拆DC为27，一个生物可以通过命中AC 27并造成至少20的挥砍伤害来斩断衣带。木乃伊不能再次使用这个反应动作，直到它们通过交互动作夺回衣带。</p>"
+					"description": "<p><strong>触发</strong> 一个邻接木乃伊的生物对木乃伊的近战打击失手。</p>\n<hr />\n<p><strong>效果</strong> 木乃伊与攻击者互换位置，攻击者被木乃伊那条活化的衣带@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}。逃脱DC为29，破拆DC为27，一个生物可以通过命中AC 27并造成至少20的挥砍伤害来斩断衣带。木乃伊不能再次使用这个反应动作，直到它们通过交互动作夺回衣带。</p>"
 				},
 				"Stunning Flurry":{
 					"name": "震慑连击 Stunning Flurry",
-					"description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 义洛理门徒木乃伊进行两次打击，如果两次都命中同一个生物，将两次伤害叠加再计算抗性和弱点，且目标必须成功通过@Check[type:fortitude|dc:29|traits:incapacitation]豁免否则获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（大失败时震慑3）；此豁免具有失能特征。</p>"
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 义洛理门徒木乃伊进行两次打击，如果两次都命中同一个生物，将两次伤害叠加再计算抗性和弱点，且目标必须成功通过@Check[type:fortitude|dc:29|traits:incapacitation]豁免否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}（大失败时震慑3）；此豁免具有失能特征。</p>"
 				}
 			}
 		},
@@ -1126,11 +1126,11 @@
 				},
 				"Terrain Advantage":{
 					"name": "地利 Terrain Advantage",
-					"description": "<p>身处困难地形的非蜥蜴人生物和身处水中且没有游泳速度的非蜥蜴人生物对艾鲁克希梁骨@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>身处困难地形的非蜥蜴人生物和身处水中且没有游泳速度的非蜥蜴人生物对艾鲁克希梁骨@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
 				},
 				"Totems of the Past":{
 					"name": "昔日图腾 Totems of the Past",
-					"description": "<p>艾鲁克希梁骨检视由星光构成的幻景，这幻象类似于图腾画或星座图，影响@Template[type:emanation|distance:30]范围内的生物。该区域内的任何蜥蜴人盟友将受到启迪，攻击骰获得+1状态加值，且该区域内的所有敌人必须成功通过@Check[type:will|dc:21]豁免，否则@UUID[Compendium.pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。这两个效果持续1分钟，或直到梁骨被摧毁，以先发生的为准。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.UuEUZU1fSUb23yOk]{效果: 昔日图腾}</p>"
+					"description": "<p>艾鲁克希梁骨检视由星光构成的幻景，这幻象类似于图腾画或星座图，影响@Template[type:emanation|distance:30]范围内的生物。该区域内的任何蜥蜴人盟友将受到启迪，攻击骰获得+1状态加值，且该区域内的所有敌人必须成功通过@Check[type:will|dc:21]豁免，否则@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。这两个效果持续1分钟，或直到梁骨被摧毁，以先发生的为准。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.UuEUZU1fSUb23yOk]{效果: 昔日图腾}</p>"
 				}
 			}
 		},
@@ -1141,15 +1141,15 @@
 			"items":{
 				"Consecration Vulnerability":{
 					"name": "祝圣易伤 Consecration Vulnerability",
-					"description": "<p>颤骨人柔术师若身处敬拜非邪恶神祇或被祝圣的地点，例如被<em>@UUID[Compendium.pf2e.spells-srd.y3jlOfgsQH1JjkJE]{祝佑阵地 Sanctified Ground}</em>法术祝福的土地，则会获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
+					"description": "<p>颤骨人柔术师若身处敬拜非邪恶神祇或被祝圣的地点，例如被<em>@UUID[Compendium.pf2e.spells-srd.Item.y3jlOfgsQH1JjkJE]{祝佑阵地 Sanctified Ground}</em>法术祝福的土地，则会获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
 				},
 				"Compression":{
 					"name": "压缩 Compression",
-					"description": "<p>颤骨人可以在不挤压的前提下@UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{挤入空间 Squeeze}并穿过至少2尺宽的缝隙。当颤骨人成功挤入空间时，它们会以全速通过狭窄空间。狭窄空间对颤骨人来说并不是困难地形。</p>"
+					"description": "<p>颤骨人可以在不挤压的前提下@UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{挤入空间 Squeeze}并穿过至少2尺宽的缝隙。当颤骨人成功挤入空间时，它们会以全速通过狭窄空间。狭窄空间对颤骨人来说并不是困难地形。</p>"
 				},
 				"Death Gasp":{
 					"name": "死亡一息 Death Gasp",
-					"description": "<p>颤骨人深吸一口气然后屏住。暂时中止了他们的生物进程，并化为不死生物。颤骨人获得不死特征，并免疫流血、死亡效果、疾病、@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、睡眠。颤骨人目前遭受的任何此类影响都将被暂停，但他们一旦吸一口气这些效果就会再次生效。</p>\n<p>只要颤骨人屏住呼吸，死亡一息的效果就能持续（通常他能屏息最多8轮）。</p>"
+					"description": "<p>颤骨人深吸一口气然后屏住。暂时中止了他们的生物进程，并化为不死生物。颤骨人获得不死特征，并免疫流血、死亡效果、疾病、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、睡眠。颤骨人目前遭受的任何此类影响都将被暂停，但他们一旦吸一口气这些效果就会再次生效。</p>\n<p>只要颤骨人屏住呼吸，死亡一息的效果就能持续（通常他能屏息最多8轮）。</p>"
 				},
 				"Osseous Defense":{
 					"name": "骨质防御 Osseous Defense",
@@ -1177,11 +1177,11 @@
 				},
 				"Ghoul Fever":{
 					"name": "食尸鬼热 Ghoul Fever",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[negative]]]{2d6负能量伤害且从任何治疗获得的生命值恢复均减半 (1天)</p>\n<p><strong>阶段3</strong> 如阶段2 (1天)</p>\n<p><strong>阶段4</strong> [[/r (2d6)[negative]]]{2d6负能量伤害} 且无法从治疗获得任何好处 (1天)</p>\n<p><strong>阶段5</strong> 如阶段4 (1天)</p>\n<p><strong>阶段6</strong> 死亡，并在下一日的午夜复生为@UUID[Compendium.pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{食尸鬼 Ghoul}。</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[negative]]]{2d6负能量伤害且从任何治疗获得的生命值恢复均减半 (1天)</p>\n<p><strong>阶段3</strong> 如阶段2 (1天)</p>\n<p><strong>阶段4</strong> [[/r (2d6)[negative]]]{2d6负能量伤害} 且无法从治疗获得任何好处 (1天)</p>\n<p><strong>阶段5</strong> 如阶段4 (1天)</p>\n<p><strong>阶段6</strong> 死亡，并在下一日的午夜复生为@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{食尸鬼 Ghoul}。</p>"
 				},
 				"Paralyzing Spew":{
 					"name": "麻痹呕吐 Paralyzing Spew",
-					"description": "<p>食尸水鬼向一个距离20尺内的生物喷吐腐肉呕吐物，造成[[/r (1d6)[poison]]]{1d6毒素伤害}，@Check[type:fortitude|dc:17|basic:true]豁免。豁免失败的非精灵生物还会被@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物可以在自己的每个回合结束时尝试一次新的豁免，每次此豁免的DC都会递减1点。</p>\n<p>食尸水鬼在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用麻痹呕吐。</p>"
+					"description": "<p>食尸水鬼向一个距离20尺内的生物喷吐腐肉呕吐物，造成[[/r (1d6)[poison]]]{1d6毒素伤害}，@Check[type:fortitude|dc:17|basic:true]豁免。豁免失败的非精灵生物还会被@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物可以在自己的每个回合结束时尝试一次新的豁免，每次此豁免的DC都会递减1点。</p>\n<p>食尸水鬼在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用麻痹呕吐。</p>"
 				}
 			}
 		},
@@ -1203,7 +1203,7 @@
 				},
 				"Frightful Battle Cry":{
 					"name": "破胆战吼 Frightful Battle Cry",
-					"description": "<p>终末守卫齐声吼出震撼灵魂的咆哮。@Template[type:cone|distance:60]范围内的敌人受到[[/r (7d6)[sonic]]]{7d6音波伤害}（@Check[type:will|dc:42|basic:true]豁免）；豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}（大失败获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}）。</p>\n<p>如果部队占据8个或更少的方格，本能力作用范围减少至@Template[type:cone|distance:30]。</p>"
+					"description": "<p>终末守卫齐声吼出震撼灵魂的咆哮。@Template[type:cone|distance:60]范围内的敌人受到[[/r (7d6)[sonic]]]{7d6音波伤害}（@Check[type:will|dc:42|basic:true]豁免）；豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}）。</p>\n<p>如果部队占据8个或更少的方格，本能力作用范围减少至@Template[type:cone|distance:30]。</p>"
 				},
 				"Ghostly Blades":{
 					"name": "幽灵之刃 Ghostly Blades",
@@ -1211,7 +1211,7 @@
 				},
 				"Spectral Charge":{
 					"name": "鬼灵冲锋 Spectral Charge",
-					"description": "<p>终末守卫发起冲锋，成群结队地冲过它们的敌人。部队飞行至多两倍速度，对所有占据空间被其穿过的生物们造成[[/r (4d8)[negative]]]{4d8负能量伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 2}）。在一次鬼灵冲锋中，部队只能对每个生物造成一次影响。</p>"
+					"description": "<p>终末守卫发起冲锋，成群结队地冲过它们的敌人。部队飞行至多两倍速度，对所有占据空间被其穿过的生物们造成[[/r (4d8)[negative]]]{4d8负能量伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}）。在一次鬼灵冲锋中，部队只能对每个生物造成一次影响。</p>"
 				},
 				"Troop Movement":{
 					"name": "部队移动 Troop Movement",
@@ -1234,7 +1234,7 @@
 				},
 				"Strangle":{
 					"name": "扼杀 Strangle",
-					"description": "<p><strong>需求</strong> 林中小人@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 林中小人握紧掐住脖子的手，延长攫抓，对该生物造成[[/r (2d6+3)[bludgeoning]]]{2d6+3钝击伤害}，@Check[type:fortitude|dc:24|basic:true]豁免，且该生物只要还被擒抱或束缚就会一直被扼着。被扼住的生物无法说话，这阻止他施展带有“语言”成份的法术，或启动有“命令”成份的物品。被扼住的生物必须屏住呼吸，否则开始窒息。</p>"
+					"description": "<p><strong>需求</strong> 林中小人@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 林中小人握紧掐住脖子的手，延长攫抓，对该生物造成[[/r (2d6+3)[bludgeoning]]]{2d6+3钝击伤害}，@Check[type:fortitude|dc:24|basic:true]豁免，且该生物只要还被擒抱或束缚就会一直被扼着。被扼住的生物无法说话，这阻止他施展带有“语言”成份的法术，或启动有“命令”成份的物品。被扼住的生物必须屏住呼吸，否则开始窒息。</p>"
 				}
 			}
 		},
@@ -1245,7 +1245,7 @@
 			"items":{
 				"Rejuvenation":{
 					"name": "复生 Rejuvenation",
-					"description": "<p>泣溺灵在被摧毁后会在[[/r 1d6 #days]]{1d6天}后于它们葬身之地重组。解决导致泣溺灵死亡的不公可以让他们永久地安息。或者，在复生地点成功进行一个<em>@UUID[Compendium.pf2e.spells-srd.Dbd5W6G8U2vzWolN]{祝圣术 Consecrate}</em>仪式也能阻止它们重组。</p>"
+					"description": "<p>泣溺灵在被摧毁后会在[[/r 1d6 #days]]{1d6天}后于它们葬身之地重组。解决导致泣溺灵死亡的不公可以让他们永久地安息。或者，在复生地点成功进行一个<em>@UUID[Compendium.pf2e.spells-srd.Item.Dbd5W6G8U2vzWolN]{祝圣术 Consecrate}</em>仪式也能阻止它们重组。</p>"
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
@@ -1253,15 +1253,15 @@
 				},
 				"Funereal Touch":{
 					"name": "丧葬之触 Funereal Touch",
-					"description": "<p>被泣溺灵触碰的生物必须成功通过@Check[type:fortitude|dc:29]豁免。豁免失败则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败流失2）或将已有的流失值+1（大失败+2），至多流失4。每当有未流失的生物因此方式获得流失值，泣溺灵获得持续1小时的10点临时生命。</p>"
+					"description": "<p>被泣溺灵触碰的生物必须成功通过@Check[type:fortitude|dc:29]豁免。豁免失败则获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（大失败流失2）或将已有的流失值+1（大失败+2），至多流失4。每当有未流失的生物因此方式获得流失值，泣溺灵获得持续1小时的10点临时生命。</p>"
 				},
 				"Ghostly Grasp":{
 					"name": "幽灵之握 Ghostly Grasp",
-					"description": "<p>尽管身为虚体，泣溺灵能够@UUID[Compendium.pf2e.actionspf2e.PMbdMWc2QroouFGD]{擒抱 Grapple}实体生物。它们如常用运动技能检定来擒抱，但无法用运动技能来进行其他需要实体接触的动作，例如破拆或摔绊。</p>"
+					"description": "<p>尽管身为虚体，泣溺灵能够@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}实体生物。它们如常用运动技能检定来擒抱，但无法用运动技能来进行其他需要实体接触的动作，例如破拆或摔绊。</p>"
 				},
 				"Wail":{
 					"name": "哀嚎 Wail",
-					"description": "<p>泣溺灵发出一声凄黯的哀嚎。@Check[type:emanation|distance:120]{120尺}距离内的所有活物都必须进行@Check[type:will|dc:31]豁免。不论豁免结果如何，受影响的生物在4小时内对此能力临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物对最近的水体@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}并强迫着走向水体淹死自己。如果附近没有水体，该生物则会保持静止。该生物可以在其每个回合结束时尝试另一次@Check[type:will|dc:31]豁免。如果成功，该生物就不再被迷魂。一旦迷魂状态结束，该生物就会获得震慑1。</p>\n<p><strong>大失败</strong> 如同失败，但是该生物只能在淹没于水中的每一回合结束时进行额外豁免。</p>"
+					"description": "<p>泣溺灵发出一声凄黯的哀嚎。@Check[type:emanation|distance:120]{120尺}距离内的所有活物都必须进行@Check[type:will|dc:31]豁免。不论豁免结果如何，受影响的生物在4小时内对此能力临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>失败</strong> 该生物对最近的水体@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}并强迫着走向水体淹死自己。如果附近没有水体，该生物则会保持静止。该生物可以在其每个回合结束时尝试另一次@Check[type:will|dc:31]豁免。如果成功，该生物就不再被迷魂。一旦迷魂状态结束，该生物就会获得震慑1。</p>\n<p><strong>大失败</strong> 如同失败，但是该生物只能在淹没于水中的每一回合结束时进行额外豁免。</p>"
 				}
 			}
 		},
@@ -1285,11 +1285,11 @@
 			"items":{
 				"Aura of Repose":{
 					"name": "安息灵光 Aura of Repose",
-					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内的尸体不会腐烂。这个灵光还会尝试反制任何会将灵光中的生物转化为不死生物的效果（反制等级为2，反制调整值[[/r 1d20+5 #Counteract]]{+5}）。</p>"
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>灵光范围内的尸体不会腐烂。这个灵光还会尝试反制任何会将灵光中的生物转化为不死生物的效果（反制等级为2，反制调整值[[/r 1d20+5 #Counteract]]{+5}）。</p>"
 				},
 				"Pounce":{
 					"name": "猛扑 Pounce",
-					"description": "<p>木乃伊猫行走并在这次移动结束后进行1次打击。如果木乃伊猫开始此动作时处于@UUID[Compendium.pf2e.conditionitems.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，则它保持藏匿直到本能力的打击结束。</p>"
+					"description": "<p>木乃伊猫行走并在这次移动结束后进行1次打击。如果木乃伊猫开始此动作时处于@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，则它保持藏匿直到本能力的打击结束。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -1305,11 +1305,11 @@
 			"items":{
 				"Great Despair":{
 					"name": "高等绝望灵光 Great Despair",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>在木乃伊先知的绝望灵光中的生物陷入@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。它们的惊惧状态在灵光范围内时无法自然恢复，但是在离开灵光范围后立即恢复。当一个生物第一次进入该灵光范围时，它必须通过@Check[type:will|dc:31]豁免（在受到惊惧状态带来的减值之后），否则@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}[[/r 1d4 #rounds]]{1d4轮}。该生物之后在24小时内临时免疫本能力。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>在木乃伊先知的绝望灵光中的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。它们的惊惧状态在灵光范围内时无法自然恢复，但是在离开灵光范围后立即恢复。当一个生物第一次进入该灵光范围时，它必须通过@Check[type:will|dc:31]豁免（在受到惊惧状态带来的减值之后），否则@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}[[/r 1d4 #rounds]]{1d4轮}。该生物之后在24小时内临时免疫本能力。</p>"
 				},
 				"Sand Vision":{
 					"name": "沙尘视觉 Sand Vision",
-					"description": "<p>先知无视空气中的沙粒和尘埃所带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+					"description": "<p>先知无视空气中的沙粒和尘埃所带来的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
 				},
 				"Breath of Sand":{
 					"name": "沙尘吐息 Breath of Sand",
@@ -1325,7 +1325,7 @@
 				},
 				"Sand Rot":{
 					"name": "沙腐症 Sand Rot",
-					"description": "<p>该苦难无法被降到阶段1以下，其造成的伤害也无法被治疗，直到成功地使用<em>@UUID[Compendium.pf2e.spells-srd.OyFCwQuw8XRazsNr]{移除诅咒 Remove Curse}</em>或类似效果；在这之后，这个苦难可以像普通疾病一样被移除。被寒腐症杀死的生物会变一堆沙子，并且除了通过7环<em>@UUID[Compendium.pf2e.spells-srd.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或类似的魔法手段之外无法复活。</p>\n<p><strong>豁免检定</strong>@Check[type:fortitude|dc:31]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1分钟)</p>\n<p><strong>阶段2</strong> [[/r (12d6)[negative]]]{12d6负能量伤害}，@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，和@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1天)</p>"
+					"description": "<p>该苦难无法被降到阶段1以下，其造成的伤害也无法被治疗，直到成功地使用<em>@UUID[Compendium.pf2e.spells-srd.Item.OyFCwQuw8XRazsNr]{移除诅咒 Remove Curse}</em>或类似效果；在这之后，这个苦难可以像普通疾病一样被移除。被寒腐症杀死的生物会变一堆沙子，并且除了通过7环<em>@UUID[Compendium.pf2e.spells-srd.Item.kqhPt9344UkcGVYO]{起死回生 Resurrect}</em>仪式或类似的魔法手段之外无法复活。</p>\n<p><strong>豁免检定</strong>@Check[type:fortitude|dc:31]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1分钟)</p>\n<p><strong>阶段2</strong> [[/r (12d6)[negative]]]{12d6负能量伤害}，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1天)</p>"
 				},
 				"Sandstorm":{
 					"name": "沙尘暴 Sandstorm",
@@ -1340,7 +1340,7 @@
 			"items":{
 				"Midnight Depths":{
 					"name": "午夜深渊 Midnight Depths",
-					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>纳瑟爵斯的熵之灵光在水下变得更强。在灵光范围内的所有水都变得完全黑暗（效果如同4环<em>@UUID[Compendium.pf2e.spells-srd.4GE2ZdODgIQtg51c]{黑暗术 Darkness}</em>）。反制等级为4级或更低的魔法光亮和产生魔法光亮的戏法都将被压制。进入灵光范围或在灵光范围内开始回合的生物受到[[/r (4d6)[negative]]]{4d6负能量伤害}，该生物如果在水中还会额外受到[[/r (2d10)[cold]]]{2d10寒冷伤害}（@Check[type:fortitude|dc:39|basic:true]豁免）。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向纳瑟爵斯10尺。</p>"
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>纳瑟爵斯的熵之灵光在水下变得更强。在灵光范围内的所有水都变得完全黑暗（效果如同4环<em>@UUID[Compendium.pf2e.spells-srd.Item.4GE2ZdODgIQtg51c]{黑暗术 Darkness}</em>）。反制等级为4级或更低的魔法光亮和产生魔法光亮的戏法都将被压制。进入灵光范围或在灵光范围内开始回合的生物受到[[/r (4d6)[negative]]]{4d6负能量伤害}，该生物如果在水中还会额外受到[[/r (2d10)[cold]]]{2d10寒冷伤害}（@Check[type:fortitude|dc:39|basic:true]豁免）。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向纳瑟爵斯10尺。</p>"
 				},
 				"Spray Black Bile":{
 					"name": "喷溅黑胆汁 Spray Black Bile",
@@ -1348,11 +1348,11 @@
 				},
 				"Sunlight Powerlessness":{
 					"name": "阳光失能 Sunlight Powerlessness",
-					"description": "<p>阳光下的纳瑟爵斯获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+					"description": "<p>阳光下的纳瑟爵斯获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
 				},
 				"Broken Barb":{
 					"name": "断齿 Broken Barb",
-					"description": "<p><strong>需求</strong> 纳瑟爵斯的巨颚正@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}着一个生物；</p>\n<hr />\n<p><strong>效果</strong> 纳瑟爵斯折断一颗牙齿，将它留给目标，目标受到@Localize[PF2E.PersistentDamage.Bleed3d10.success]并不再被擒抱或束缚。若目标邻接一个表面，这颗断牙还会把他钉在此地，令目标处于@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 45）。</p>"
+					"description": "<p><strong>需求</strong> 纳瑟爵斯的巨颚正@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}着一个生物；</p>\n<hr />\n<p><strong>效果</strong> 纳瑟爵斯折断一颗牙齿，将它留给目标，目标受到@Localize[PF2E.PersistentDamage.Bleed3d10.success]并不再被擒抱或束缚。若目标邻接一个表面，这颗断牙还会把他钉在此地，令目标处于@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 45）。</p>"
 				},
 				"Ravenous Void":{
 					"name": "贪饿虚空 Ravenous Void",
@@ -1360,7 +1360,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>超大型, [[/r (2d10+9)[bludgeoning]]]{2d10+9钝击}, 破裂40</p>\n<p>若一个生物在他的回合结束时正被纳瑟爵斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，纳瑟爵斯获得20点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型, [[/r (2d10+9)[bludgeoning]]]{2d10+9钝击}, 破裂40</p>\n<p>若一个生物在他的回合结束时正被纳瑟爵斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，纳瑟爵斯获得20点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -1371,7 +1371,7 @@
 			"items":{
 				"Waves of Sorrow":{
 					"name": "悲痛浪潮 Waves of Sorrow",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>当一个生物在此灵光中结束回合时，他们会被充斥在奥布罗森身上的悲伤淹没。它们的惊惧状态在灵光范围内时无法自然恢复，但是在离开灵光范围后立即恢复。该生物必须成功通过@Check[type:will|dc:33]豁免，否则会@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>当一个生物在此灵光中结束回合时，他们会被充斥在奥布罗森身上的悲伤淹没。它们的惊惧状态在灵光范围内时无法自然恢复，但是在离开灵光范围后立即恢复。该生物必须成功通过@Check[type:will|dc:33]豁免，否则会@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮。</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
@@ -1379,7 +1379,7 @@
 				},
 				"Drowning Grasp":{
 					"name": "溺毙之握 Drowning Grasp",
-					"description": "<p>当一个生物被奥布罗森@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}时，该生物的肺部会魔法地充满水。一个不能在水中呼吸的生物在被奥布罗森擒抱时窒息。</p>"
+					"description": "<p>当一个生物被奥布罗森@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}时，该生物的肺部会魔法地充满水。一个不能在水中呼吸的生物在被奥布罗森擒抱时窒息。</p>"
 				}
 			}
 		},
@@ -1391,15 +1391,15 @@
 			"items":{
 				"Flicker":{
 					"name": "闪动 Flicker",
-					"description": "<p>怨灵飘忽不定的移动令它们难以被瞄准。如果怨灵在一个移动动作中移动了至少10尺，它们会获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealment}状态，直到它们下一个回合开始。</p>"
+					"description": "<p>怨灵飘忽不定的移动令它们难以被瞄准。如果怨灵在一个移动动作中移动了至少10尺，它们会获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealment}状态，直到它们下一个回合开始。</p>"
 				},
 				"Onryo's Rancor":{
 					"name": "怨灵之恨 Onryo's Rancor",
-					"description": "<p><strong>需求</strong> 怨灵最后的动作是一次成功的利爪打击；</p>\n<hr />\n<p><strong>效果</strong> 怨灵试图将其对复仇的渴求灌输给该生物。怨灵通过一次触碰，对被接触的生物施展一个5环的<em>@UUID[Compendium.pf2e.spells-srd.Q690d3mw3TUrKX7E]{指使术 Geas}</em>仪式（@Check[type:will|dc:30]豁免）。若豁免失败，该生物就会被迫去寻找并杀死怨灵的仇人的所爱之人以及任何试图保护他们的人，持续至多1周。大失败时持续时间为1个月，且该生物还会获得怨灵之恨能力，并被<em>指使术</em>效果强迫着使用此能力。无论结果如何，该生物在1年内对来自这个怨灵的怨灵之恨能力临时免疫。</p>"
+					"description": "<p><strong>需求</strong> 怨灵最后的动作是一次成功的利爪打击；</p>\n<hr />\n<p><strong>效果</strong> 怨灵试图将其对复仇的渴求灌输给该生物。怨灵通过一次触碰，对被接触的生物施展一个5环的<em>@UUID[Compendium.pf2e.spells-srd.Item.Q690d3mw3TUrKX7E]{指使术 Geas}</em>仪式（@Check[type:will|dc:30]豁免）。若豁免失败，该生物就会被迫去寻找并杀死怨灵的仇人的所爱之人以及任何试图保护他们的人，持续至多1周。大失败时持续时间为1个月，且该生物还会获得怨灵之恨能力，并被<em>指使术</em>效果强迫着使用此能力。无论结果如何，该生物在1年内对来自这个怨灵的怨灵之恨能力临时免疫。</p>"
 				},
 				"Vengeful Suffocation":{
 					"name": "复仇窒息 Vengeful Suffocation",
-					"description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 怨灵将他们无尽的怨恨显化为30尺内一个生物的喉咙中的一团纠缠的湿发、腐烂的沼泽泥块或其他恶心的物质。被选为目标的生物必须进行@Check[type:fortitude|dc:32]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}，且这团污物完全阻塞了他的呼吸道。该生物开始窒息。</p>"
+					"description": "<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 怨灵将他们无尽的怨恨显化为30尺内一个生物的喉咙中的一团纠缠的湿发、腐烂的沼泽泥块或其他恶心的物质。被选为目标的生物必须进行@Check[type:fortitude|dc:32]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 3}，且这团污物完全阻塞了他的呼吸道。该生物开始窒息。</p>"
 				}
 			}
 		},
@@ -1425,11 +1425,11 @@
 				},
 				"Aura of Charm":{
 					"name": "魅惑灵光 Aura of Charm",
-					"description": "<p>@Template[type:emanation|distance:80]{80尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>苍白主君的灵光诱人至极，在灵光范围内开始回合的生物受到8环<em>@UUID[Compendium.pf2e.spells-srd.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>影响（@Check[type:will|dc:39]豁免）。豁免失败的生物会看到苍白主君生前的样子，而非如今的不死形态。豁免成功的生物临时免疫此灵光24小时。</p>"
+					"description": "<p>@Template[type:emanation|distance:80]{80尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>苍白主君的灵光诱人至极，在灵光范围内开始回合的生物受到8环<em>@UUID[Compendium.pf2e.spells-srd.Item.vLA0q0WOK2YPuJs6]{魅惑术 Charm}</em>影响（@Check[type:will|dc:39]豁免）。豁免失败的生物会看到苍白主君生前的样子，而非如今的不死形态。豁免成功的生物临时免疫此灵光24小时。</p>"
 				},
 				"Curse of Eternal Sleep":{
 					"name": "永恒沉眠诅咒 Curse of Eternal Sleep",
-					"description": "<p>苍白主君触碰邻接的生物，让他陷入无尽的沉睡。目标必须进行@Check[type:will|dc:39]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并临时免疫24小时。</p>\n<p><strong>成功</strong> 目标变得昏昏欲睡并获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1分钟。</p>\n<p><strong>失败</strong> 目标@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，但他不会@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}或放下任何持握的东西。他无法通过成功的察觉检定苏醒，但对他造成的任何伤害都会打破沉眠。若过了1小时目标还在沉睡，他会自动苏醒。</p>\n<p><strong>大失败</strong> 目标永久失去意识，倒地不起，只要诅咒尚存就无法被唤醒。</p>"
+					"description": "<p>苍白主君触碰邻接的生物，让他陷入无尽的沉睡。目标必须进行@Check[type:will|dc:39]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并临时免疫24小时。</p>\n<p><strong>成功</strong> 目标变得昏昏欲睡并获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1分钟。</p>\n<p><strong>失败</strong> 目标@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，但他不会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}或放下任何持握的东西。他无法通过成功的察觉检定苏醒，但对他造成的任何伤害都会打破沉眠。若过了1小时目标还在沉睡，他会自动苏醒。</p>\n<p><strong>大失败</strong> 目标永久失去意识，倒地不起，只要诅咒尚存就无法被唤醒。</p>"
 				},
 				"Siphon Vitality":{
 					"name": "活力虹吸 Siphon Vitality",
@@ -1444,7 +1444,7 @@
 			"items":{
 				"Self-Loathing":{
 					"name": "自我厌恶 Self-Loathing",
-					"description": "<p>如果一个苍陌客看到了自己的倒影或者任何它们生前珍视的物品，它们必须进行@Check[type:will|dc:30]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 苍陌客不受影响，并且不会再以这种方式受到反射或物体的影响。</p>\n<p><strong>成功</strong> 苍陌客因为自我厌恶而分心，并获得持续1轮的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>失败</strong> 苍陌客被触发自我厌恶的源头所@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并竭尽所能地摧毁它，直到它下一个回合的回合结束。</p>\n<p><strong>大失败</strong> 只要引发它自我厌恶的根源对它明显可见，苍陌客就处于@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它们被攻击，或者看见了凶手。</p>"
+					"description": "<p>如果一个苍陌客看到了自己的倒影或者任何它们生前珍视的物品，它们必须进行@Check[type:will|dc:30]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 苍陌客不受影响，并且不会再以这种方式受到反射或物体的影响。</p>\n<p><strong>成功</strong> 苍陌客因为自我厌恶而分心，并获得持续1轮的@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>失败</strong> 苍陌客被触发自我厌恶的源头所@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并竭尽所能地摧毁它，直到它下一个回合的回合结束。</p>\n<p><strong>大失败</strong> 只要引发它自我厌恶的根源对它明显可见，苍陌客就处于@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它们被攻击，或者看见了凶手。</p>"
 				},
 				"Sense Murderer":{
 					"name": "感知凶手 Sense Murderer",
@@ -1452,11 +1452,11 @@
 				},
 				"Undying Vendetta":{
 					"name": "无尽仇杀 Undying Vendetta",
-					"description": "<p>如果杀害苍陌客的凶手死亡，苍陌客立刻被摧毁。一个无法感知到它的凶手的苍陌客每24小时必须进行一次@Check[type:flat|dc:11]检定，以避免陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}和@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}；一旦能感知到凶手它们就会立刻复活。变为不死生物的凶手不会触发苍陌客的摧毁，直至凶手被完全毁灭。苍陌客在对抗它们的凶手时所有检定和DC获得+2状态加值。</p>"
+					"description": "<p>如果杀害苍陌客的凶手死亡，苍陌客立刻被摧毁。一个无法感知到它的凶手的苍陌客每24小时必须进行一次@Check[type:flat|dc:11]检定，以避免陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}和@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}；一旦能感知到凶手它们就会立刻复活。变为不死生物的凶手不会触发苍陌客的摧毁，直至凶手被完全毁灭。苍陌客在对抗它们的凶手时所有检定和DC获得+2状态加值。</p>"
 				},
 				"Bullets of Vengeance":{
 					"name": "复仇之弹 Bullets of Vengeance",
-					"description": "<p>苍陌客的火器射出的子弹会额外造成[[/r (1d6)[precision]]]{1d6精准伤害}，对谋杀它们的人则是额外造成[[/r (2d6)[precision]]]{2d6精准伤害}。从未杀过哪怕一个活物的生物不会受到这个精准伤害。当苍陌客用手枪进行远程打击大成功时，被打击目标必须成功通过@Check[type:fortitude|dc:29]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+					"description": "<p>苍陌客的火器射出的子弹会额外造成[[/r (1d6)[precision]]]{1d6精准伤害}，对谋杀它们的人则是额外造成[[/r (2d6)[precision]]]{2d6精准伤害}。从未杀过哪怕一个活物的生物不会受到这个精准伤害。当苍陌客用手枪进行远程打击大成功时，被打击目标必须成功通过@Check[type:fortitude|dc:29]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
 				},
 				"Dead Shot":{
 					"name": "致命射击 Dead Shot",
@@ -1477,7 +1477,7 @@
 			"items":{
 				"Stalk":{
 					"name": "偷偷接近 Stalk",
-					"description": "<p><strong>触发</strong> 一个生物穿过脚步声的路径；</p>\n<hr />\n<p><strong>效果</strong> 没有可见来源的脚步声暗中跟着触发的生物，然后在他背后停下。触发的生物必须尝试@Check[type:will|dc:16]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物穿过脚步声的路径；</p>\n<hr />\n<p><strong>效果</strong> 没有可见来源的脚步声暗中跟着触发的生物，然后在他背后停下。触发的生物必须尝试@Check[type:will|dc:16]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
 				}
 			}
 		},
@@ -1491,7 +1491,7 @@
 			"items":{
 				"Capture":{
 					"name": "俘获 Capture",
-					"description": "<p><strong>触发</strong> 一个生物触碰到镣铐；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂尝试用镣铐铐住生物的手腕。触发的生物必须尝试@Check[type:reflex|dc:23]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 鬼魂松散地将手铐铐在生物的手腕上。解开手铐只需要一个动作。</p>\n<p><strong>失败</strong> 鬼魂将手铐铐在生物的手腕上，很难挣脱。该生物陷入@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到它以3动作行动解开手铐。</p>\n<p><strong>大失败</strong> 鬼魂将手铐铐在生物的手腕上。该生物陷入措手不及和笨拙1，直到手铐被移除（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 23，简单锁）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物触碰到镣铐；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂尝试用镣铐铐住生物的手腕。触发的生物必须尝试@Check[type:reflex|dc:23]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 鬼魂松散地将手铐铐在生物的手腕上。解开手铐只需要一个动作。</p>\n<p><strong>失败</strong> 鬼魂将手铐铐在生物的手腕上，很难挣脱。该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到它以3动作行动解开手铐。</p>\n<p><strong>大失败</strong> 鬼魂将手铐铐在生物的手腕上。该生物陷入措手不及和笨拙1，直到手铐被移除（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 23，简单锁）。</p>"
 				}
 			}
 		},
@@ -1506,7 +1506,7 @@
 				},
 				"Natural Invisibility":{
 					"name": "天生隐形 Natural Invisibility",
-					"description": "<p>瓶中血人在它瓶子外是天生@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}的。它们只会在被人违背其意愿赶出它占据的生物时才会变得可见。打碎瓶中血人的瓶子也会迫使它们变得可见。</p>"
+					"description": "<p>瓶中血人在它瓶子外是天生@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}的。它们只会在被人违背其意愿赶出它占据的生物时才会变得可见。打碎瓶中血人的瓶子也会迫使它们变得可见。</p>"
 				},
 				"Regenerating Bond":{
 					"name": "束缚再生 Regenerating Bond",
@@ -1514,7 +1514,7 @@
 				},
 				"Polong Possession":{
 					"name": "瓶中血人占据 Polong Possession",
-					"description": "<p>瓶中血人尝试占据一个邻接的实体生物。此效果等同于<em>@UUID[Compendium.pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>（@Check[type:will|dc:26]），除了持续时间为24小时，且因为瓶中血人没有实体躯体，它们不受法术限制的影响。如果目标曾因豁免大失败被瓶中血人完全占据过，那么他豁免结果的成功度较实际骰出的会低一级。</p>\n<p>被瓶中血人占据的生物获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}和@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。这些状态值不会自然减少，除非瓶中血人有一整天没有占据过这个生物。瓶中血人每连着占据一个生物一次，该生物的流失和毁灭值都会+1，最高到4。如果瓶中血人占据了另一个生物，它先前占据的生物身上的状态立刻结束。</p>"
+					"description": "<p>瓶中血人尝试占据一个邻接的实体生物。此效果等同于<em>@UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>（@Check[type:will|dc:26]），除了持续时间为24小时，且因为瓶中血人没有实体躯体，它们不受法术限制的影响。如果目标曾因豁免大失败被瓶中血人完全占据过，那么他豁免结果的成功度较实际骰出的会低一级。</p>\n<p>被瓶中血人占据的生物获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}和@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。这些状态值不会自然减少，除非瓶中血人有一整天没有占据过这个生物。瓶中血人每连着占据一个生物一次，该生物的流失和毁灭值都会+1，最高到4。如果瓶中血人占据了另一个生物，它先前占据的生物身上的状态立刻结束。</p>"
 				},
 				"Rend":{
 					"name": "撕裂 Rend",
@@ -1534,7 +1534,7 @@
 				},
 				"Stench":{
 					"name": "恶臭 Stench",
-					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光或在灵光中开始回合的生物必须成功通过@Check[type:fortitude|dc:13]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（若大失败，则只要该生物还恶心，就会额外获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。身处灵光范围内时，受影响的生物在对抗疾病的豁免和从恶心中恢复的检定上受到-2环境减值。豁免成功的生物临时免疫本能力1分钟。</p>"
+					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光或在灵光中开始回合的生物必须成功通过@Check[type:fortitude|dc:13]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（若大失败，则只要该生物还恶心，就会额外获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}）。身处灵光范围内时，受影响的生物在对抗疾病的豁免和从恶心中恢复的检定上受到-2环境减值。豁免成功的生物临时免疫本能力1分钟。</p>"
 				},
 				"Feral Leap":{
 					"name": "凶猛扑咬 Feral Leap",
@@ -1544,7 +1544,7 @@
 		},
 		"Priest Of Kabriri": {
 			"name": "卡布里里祭司 Priest Of Kabriri",
-			"publicNotes": "<p>许多强大的实体都在争夺不死生物庇护主这一衣钵。但在食尸鬼中，没有谁能比恶魔领主啃食者@UUID[Compendium.pf2e.deities.V5PbbkZUP9N7kl6h]{卡布里里 Kabriri}更受它们敬重。几乎所有倾向于崇拜神的食尸鬼都把自己奉献给了卡布里里，它们通过以饕餮吞食有情众生为核心的世俗仪式与骇人典礼来荣耀自己的主。主持这些圣餐仪式的就是卡布里里祭司，一群极其邪恶且狡猾的食尸鬼，由它们的始祖特别指派来确保祂无穷的子嗣永不挨饿。</p>\n<hr />\n<p>狡猾又奸诈，任何遗体安葬的地方都能找到食尸鬼，它们永远在满足自己对类人血肉的无尽渴望。</p>",
+			"publicNotes": "<p>许多强大的实体都在争夺不死生物庇护主这一衣钵。但在食尸鬼中，没有谁能比恶魔领主啃食者@UUID[Compendium.pf2e.deities.Item.V5PbbkZUP9N7kl6h]{卡布里里 Kabriri}更受它们敬重。几乎所有倾向于崇拜神的食尸鬼都把自己奉献给了卡布里里，它们通过以饕餮吞食有情众生为核心的世俗仪式与骇人典礼来荣耀自己的主。主持这些圣餐仪式的就是卡布里里祭司，一群极其邪恶且狡猾的食尸鬼，由它们的始祖特别指派来确保祂无穷的子嗣永不挨饿。</p>\n<hr />\n<p>狡猾又奸诈，任何遗体安葬的地方都能找到食尸鬼，它们永远在满足自己对类人血肉的无尽渴望。</p>",
 			"data":{},
 			"items":{
 				"Ecstatic Ululation":{
@@ -1553,11 +1553,11 @@
 				},
 				"Ghoul Fever":{
 					"name": "食尸鬼热 Ghoul Fever",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[negative]]]{2d6负能量伤害且从任何治疗获得的生命值恢复均减半 (1天)</p>\n<p><strong>阶段3</strong> 如阶段2 (1天)</p>\n<p><strong>阶段4</strong> [[/r (2d6)[negative]]]{2d6负能量伤害} 且无法从治疗获得任何好处 (1天)</p>\n<p><strong>阶段5</strong> 如阶段4 (1天)</p>\n<p><strong>阶段6</strong> 死亡，并在下一日的午夜复生为@UUID[Compendium.pf2e.pathfinder-bestiary.LHHgGSs0ELCR4CYK]{食尸鬼 Ghoul}。</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病(1天)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[negative]]]{2d6负能量伤害且从任何治疗获得的生命值恢复均减半 (1天)</p>\n<p><strong>阶段3</strong> 如阶段2 (1天)</p>\n<p><strong>阶段4</strong> [[/r (2d6)[negative]]]{2d6负能量伤害} 且无法从治疗获得任何好处 (1天)</p>\n<p><strong>阶段5</strong> 如阶段4 (1天)</p>\n<p><strong>阶段6</strong> 死亡，并在下一日的午夜复生为@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.LHHgGSs0ELCR4CYK]{食尸鬼 Ghoul}。</p>"
 				},
 				"Paralysis":{
 					"name": "麻痹 Paralysis",
-					"description": "<p>任意活着的、非精灵生物在受到食尸鬼的攻击时必须成功通过@Check[type:fortitude|dc:20]，失败则会陷入@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物可以在自己的每个回合结束时尝试一次新的豁免，每次此豁免的DC都会递减1点。</p>"
+					"description": "<p>任意活着的、非精灵生物在受到食尸鬼的攻击时必须成功通过@Check[type:fortitude|dc:20]，失败则会陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物可以在自己的每个回合结束时尝试一次新的豁免，每次此豁免的DC都会递减1点。</p>"
 				},
 				"Swift Leap":{
 					"name": "迅捷跳跃 Swift Leap",
@@ -1576,11 +1576,11 @@
 				},
 				"Drain Life":{
 					"name": "汲取生命 Drain Life",
-					"description": "<p>当尸妖潜伏者对一个活着的生物使用无武装攻击或者绑定的武器打击并造成伤害时，它获得7点临时生命值，并且目标必须通过@Check[type:fortitude|dc:25]检定否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。尸妖潜伏者的无武装攻击或者绑定武器打击造成的进一步伤害将使流失值在再次豁免失败时增加1，最多达到流失4。</p>"
+					"description": "<p>当尸妖潜伏者对一个活着的生物使用无武装攻击或者绑定的武器打击并造成伤害时，它获得7点临时生命值，并且目标必须通过@Check[type:fortitude|dc:25]检定否则获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。尸妖潜伏者的无武装攻击或者绑定武器打击造成的进一步伤害将使流失值在再次豁免失败时增加1，最多达到流失4。</p>"
 				},
 				"Feign Death":{
 					"name": "装死 Feign Death",
-					"description": "<p>尸妖潜伏者熄灭它们眼窝中显眼的红光，@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，完全静止。在它们下次行动前，尸妖潜伏者看上去就像一具普通的尸体。它们在伪装成一具普通尸体的欺骗检定和DC上自动取38。</p>"
+					"description": "<p>尸妖潜伏者熄灭它们眼窝中显眼的红光，@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}，完全静止。在它们下次行动前，尸妖潜伏者看上去就像一具普通的尸体。它们在伪装成一具普通尸体的欺骗检定和DC上自动取38。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -1588,7 +1588,7 @@
 				},
 				"Spawn Prowler Wight":{
 					"name": "尸妖潜伏者衍体 Spawn Prowler Wight",
-					"description": "<p>被尸妖潜伏者的武器或者利爪打击杀死的活着的类人生物[[/r 1d4 #rounds]]{1d4轮}之后变成一个尸妖潜伏者衍体。这具衍体听命于杀死它的尸妖潜伏者。当它处于尸妖衍体的状态时，没有汲取生命和制造尸妖潜伏者衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果尸妖潜伏者衍体的创造者死亡，则该衍体变成完全自主的尸妖潜伏者；它重获自由意志，获得汲取生命和创造尸妖潜伏者衍体的能力，并且不再笨拙。</p>"
+					"description": "<p>被尸妖潜伏者的武器或者利爪打击杀死的活着的类人生物[[/r 1d4 #rounds]]{1d4轮}之后变成一个尸妖潜伏者衍体。这具衍体听命于杀死它的尸妖潜伏者。当它处于尸妖衍体的状态时，没有汲取生命和制造尸妖潜伏者衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果尸妖潜伏者衍体的创造者死亡，则该衍体变成完全自主的尸妖潜伏者；它重获自由意志，获得汲取生命和创造尸妖潜伏者衍体的能力，并且不再笨拙。</p>"
 				}
 			}
 		},
@@ -1608,11 +1608,11 @@
 				},
 				"Call of the Damned":{
 					"name": "受诅者的召唤 Call of the Damned",
-					"description": "<p>女王向1英里内的死掠精传去一声尖叫，将它们召唤到自己身旁。这通常会唤来[[/r 2d4]]个@UUID[Compendium.pf2e.book-of-the-dead-bestiary.uURI8Netd0ytD9vc]{死掠精收割者 Sluagh Reapers}。如果女王面对的是强大到足以威胁她的敌人，这些收割者很可能弱到构不成威胁，但它们能通过拿取物品或挡住敌人的路来提供帮助。</p>"
+					"description": "<p>女王向1英里内的死掠精传去一声尖叫，将它们召唤到自己身旁。这通常会唤来[[/r 2d4]]个@UUID[Compendium.pf2e.book-of-the-dead-bestiary.Actor.uURI8Netd0ytD9vc]{死掠精收割者 Sluagh Reapers}。如果女王面对的是强大到足以威胁她的敌人，这些收割者很可能弱到构不成威胁，但它们能通过拿取物品或挡住敌人的路来提供帮助。</p>"
 				},
 				"Eat Soul":{
 					"name": "食魂 Eat Soul",
-					"description": "<p>女王用它的长吻触碰一个濒死或1小时内死亡的生物。若目标濒死，他必须进行@Check[type:fortitude|dc:41]豁免；若失败则濒死值+2（大失败+3）。如果目标已经死亡，女王会吞噬其灵魂。除非女王被摧毁，否则目标无法通过任何方式复活，哪怕是强大如<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>的魔法。</p>"
+					"description": "<p>女王用它的长吻触碰一个濒死或1小时内死亡的生物。若目标濒死，他必须进行@Check[type:fortitude|dc:41]豁免；若失败则濒死值+2（大失败+3）。如果目标已经死亡，女王会吞噬其灵魂。除非女王被摧毁，否则目标无法通过任何方式复活，哪怕是强大如<em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>的魔法。</p>"
 				},
 				"Ghostly Swoop":{
 					"name": "幽灵俯冲 Ghostly Swoop",
@@ -1620,7 +1620,7 @@
 				},
 				"Soul Theft":{
 					"name": "盗取灵魂 Soul Theft",
-					"description": "<p><strong>需求</strong> 女王用它的长吻@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 女王吞噬生物的一部分灵魂并偷走他的一些能力。该生物受到[[/r (5d8)[negative]]]{5d8负能量伤害}（@Check[type:fortitude|dc:41]豁免）。女王获得数量等于目标失去的HP总量的临时生命，包括因流失而失去的任何HP。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到一半伤害并获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>失败</strong> 该生物受到全部伤害并获得流失1和@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。女王盗取一个法术位或受训水平。若它从一个准备施法者那里盗取法术，它会将该准备好的法术转移到自己身上；若它从自发施法者那里盗取法术，它会在合适的法术环级获得一个已准备的法术，并消耗该生物对应环级的一个法术位。若她盗取受训水平，则它选择察觉、攻击调整值或任意技能。24小时内，它在该数据上获得+2状态加值，而被盗取的生物在该数据上受到-2状态减值。女王可以拥有任意数量的盗取能力，但每个生物只能被偷一个。</p>\n<p><strong>大失败</strong> 如同失败，但是伤害翻倍。</p>"
+					"description": "<p><strong>需求</strong> 女王用它的长吻@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 女王吞噬生物的一部分灵魂并偷走他的一些能力。该生物受到[[/r (5d8)[negative]]]{5d8负能量伤害}（@Check[type:fortitude|dc:41]豁免）。女王获得数量等于目标失去的HP总量的临时生命，包括因流失而失去的任何HP。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到一半伤害并获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>失败</strong> 该生物受到全部伤害并获得流失1和@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。女王盗取一个法术位或受训水平。若它从一个准备施法者那里盗取法术，它会将该准备好的法术转移到自己身上；若它从自发施法者那里盗取法术，它会在合适的法术环级获得一个已准备的法术，并消耗该生物对应环级的一个法术位。若她盗取受训水平，则它选择察觉、攻击调整值或任意技能。24小时内，它在该数据上获得+2状态加值，而被盗取的生物在该数据上受到-2状态减值。女王可以拥有任意数量的盗取能力，但每个生物只能被偷一个。</p>\n<p><strong>大失败</strong> 如同失败，但是伤害翻倍。</p>"
 				}
 			}
 		},
@@ -1650,7 +1650,7 @@
 				},
 				"Synaptic Overload":{
 					"name": "突触超载 Synaptic Overload",
-					"description": "<p>裸神经在@Template[type:cone|distance:30]范围内释放出一股心灵能量，对锥形范围内的所有生物造成[[/r (4d12)[mental]]]{4d12心灵伤害}（@Check[type:will|dc:23]豁免）。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受任何伤害。</p>\n<p><strong>成功</strong> 该生物受到一半伤害。</p>\n<p><strong>失败</strong> 该生物受到全部伤害并获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>大失败</strong> 该生物受到两倍伤害并获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}</p>"
+					"description": "<p>裸神经在@Template[type:cone|distance:30]范围内释放出一股心灵能量，对锥形范围内的所有生物造成[[/r (4d12)[mental]]]{4d12心灵伤害}（@Check[type:will|dc:23]豁免）。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受任何伤害。</p>\n<p><strong>成功</strong> 该生物受到一半伤害。</p>\n<p><strong>失败</strong> 该生物受到全部伤害并获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>\n<p><strong>大失败</strong> 该生物受到两倍伤害并获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}</p>"
 				}
 			}
 		},
@@ -1668,7 +1668,7 @@
 				},
 				"Consecration Vulnerability":{
 					"name": "祝圣易伤 Consecration Vulnerability",
-					"description": "<p>朽亡骸若身处敬拜非邪恶神祇或被祝圣的地点，例如被<em>@UUID[Compendium.pf2e.spells-srd.y3jlOfgsQH1JjkJE]{祝佑阵地 Sanctified Ground}</em>法术祝福的土地，则会获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
+					"description": "<p>朽亡骸若身处敬拜非邪恶神祇或被祝圣的地点，例如被<em>@UUID[Compendium.pf2e.spells-srd.Item.y3jlOfgsQH1JjkJE]{祝佑阵地 Sanctified Ground}</em>法术祝福的土地，则会获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
 				},
 				"Lair Sense":{
 					"name": "巢穴感知 Lair Sense",
@@ -1676,7 +1676,7 @@
 				},
 				"Weathering Aura":{
 					"name": "风化灵光 Weathering Aura",
-					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>朽亡骸放射出一种降解灵光。该区域内的所有物体，只要它们还在光环中，硬度都会降低10，最低为0，离开光环后此效果还会持续1回合。朽亡骸无法停止这个灵光。</p>"
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>朽亡骸放射出一种降解灵光。该区域内的所有物体，只要它们还在光环中，硬度都会降低10，最低为0，离开光环后此效果还会持续1回合。朽亡骸无法停止这个灵光。</p>"
 				},
 				"Crumble":{
 					"name": "崩解 Crumble",
@@ -1684,11 +1684,11 @@
 				},
 				"Death Gasp":{
 					"name": "死亡一息 Death Gasp",
-					"description": "<p>朽亡骸深吸一口气然后屏住。暂时中止了他们的生物进程，并化为不死生物。朽亡骸获得不死特征，并免疫流血、死亡效果、疾病、@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、睡眠。朽亡骸目前遭受的任何此类影响都将被暂停，但他们一旦吸一口气这些效果就会再次生效。</p>\n<p>只要朽亡骸屏住呼吸死亡一息的效果就能持续（通常他能屏息最多12轮）。</p>"
+					"description": "<p>朽亡骸深吸一口气然后屏住。暂时中止了他们的生物进程，并化为不死生物。朽亡骸获得不死特征，并免疫流血、死亡效果、疾病、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、睡眠。朽亡骸目前遭受的任何此类影响都将被暂停，但他们一旦吸一口气这些效果就会再次生效。</p>\n<p>只要朽亡骸屏住呼吸死亡一息的效果就能持续（通常他能屏息最多12轮）。</p>"
 				},
 				"Demolition":{
 					"name": "拆毁 Demolition",
-					"description": "<p>朽亡骸愤怒地咆哮，令周遭的建筑倒塌。@Template[type:emanation|distance:30]范围内的所有生物受到来自坠落的瓦砾造成的[[/r (8d10)[bludgeoning]]]{8d10钝击伤害}（@Check[type:reflex|dc:31|basic:true]豁免）。豁免失败的生物会被击至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。该区域变为困难地形。</p>\n<p>朽亡骸在[[/r 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
+					"description": "<p>朽亡骸愤怒地咆哮，令周遭的建筑倒塌。@Template[type:emanation|distance:30]范围内的所有生物受到来自坠落的瓦砾造成的[[/r (8d10)[bludgeoning]]]{8d10钝击伤害}（@Check[type:reflex|dc:31|basic:true]豁免）。豁免失败的生物会被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。该区域变为困难地形。</p>\n<p>朽亡骸在[[/r 1d4 #rounds]]{1d4轮}内无法再次使用此能力。</p>"
 				}
 			}
 		},
@@ -1700,7 +1700,7 @@
 			"items":{
 				"Rejuvenation":{
 					"name": "复生 Rejuvenation",
-					"description": "<p>当巫妖被摧毁时，其灵魂会立即转移到<em>@UUID[Compendium.pf2e.equipment-srd.NEbr7nKuiluJgBHT]{命匣 Soul Cage}</em>内。只有先找到并摧毁巫妖的<em>命匣</em>，才能永久摧毁该<em>命匣</em>对应的巫妖。</p>"
+					"description": "<p>当巫妖被摧毁时，其灵魂会立即转移到<em>@UUID[Compendium.pf2e.equipment-srd.Item.NEbr7nKuiluJgBHT]{命匣 Soul Cage}</em>内。只有先找到并摧毁巫妖的<em>命匣</em>，才能永久摧毁该<em>命匣</em>对应的巫妖。</p>"
 				},
 				"Spellstealing Counter":{
 					"name": "窃法反制 Spellstealing Counter",
@@ -1756,7 +1756,7 @@
 				},
 				"Stench":{
 					"name": "恶臭 Stench",
-					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光或在灵光中开始回合的生物必须成功通过@Check[type:fortitude|dc:14]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（若大失败，则只要该生物还恶心，就会额外获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。身处灵光范围内时，受影响的生物在对抗疾病的豁免和从恶心中恢复的检定上受到-2环境减值。豁免成功的生物临时免疫本能力1分钟。</p>"
+					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>进入灵光或在灵光中开始回合的生物必须成功通过@Check[type:fortitude|dc:14]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（若大失败，则只要该生物还恶心，就会额外获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。身处灵光范围内时，受影响的生物在对抗疾病的豁免和从恶心中恢复的检定上受到-2环境减值。豁免成功的生物临时免疫本能力1分钟。</p>"
 				},
 				"Betray the Pack":{
 					"name": "背叛族群 Betray the Pack",
@@ -1771,7 +1771,7 @@
 			"items":{
 				"Necrotic Runoff":{
 					"name": "坏疽水流 Necrotic Runoff",
-					"description": "<p>@Template[type:emanation|distance:60] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一个鱼怨骸群将污浊的体液分泌到周遭的水域中，将它毒害。进入灵光或在灵光中开始回合的生物必须成功通过@Check[type:fortitude|dc:29]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}（大失败则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 3}）。能在水中呼吸的生物在此豁免上受到-2环境减值。只要生物仍在灵光范围内，他就不能将恶心状态值降低到1以下。</p>"
+					"description": "<p>@Template[type:emanation|distance:60] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>一个鱼怨骸群将污浊的体液分泌到周遭的水域中，将它毒害。进入灵光或在灵光中开始回合的生物必须成功通过@Check[type:fortitude|dc:29]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}（大失败则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 3}）。能在水中呼吸的生物在此豁免上受到-2环境减值。只要生物仍在灵光范围内，他就不能将恶心状态值降低到1以下。</p>"
 				},
 				"Putrid Assault":{
 					"name": "腐臭突击 Putrid Assault",
@@ -1786,23 +1786,23 @@
 			"items":{
 				"Consecration Vulnerability":{
 					"name": "祝圣易伤 Consecration Vulnerability",
-					"description": "<p>阴燃精若身处敬拜非邪恶神祇或被祝圣的地点，例如被<em>@UUID[Compendium.pf2e.spells-srd.y3jlOfgsQH1JjkJE]{祝佑阵地 Sanctified Ground}</em>法术祝福的土地，则会获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
+					"description": "<p>阴燃精若身处敬拜非邪恶神祇或被祝圣的地点，例如被<em>@UUID[Compendium.pf2e.spells-srd.Item.y3jlOfgsQH1JjkJE]{祝佑阵地 Sanctified Ground}</em>法术祝福的土地，则会获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>"
 				},
 				"Smoke Vision":{
 					"name": "烟雾视觉 Smoke Vision",
-					"description": "<p>阴燃精忽略由烟雾带来的@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+					"description": "<p>阴燃精忽略由烟雾带来的@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
 				},
 				"Death Gasp":{
 					"name": "死亡一息 Death Gasp",
-					"description": "<p>阴燃精深吸一口气然后屏住。暂时中止了他们的生物进程，并化为不死生物。阴燃精获得不死特征，并免疫流血、死亡效果、疾病、@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、睡眠。阴燃精目前遭受的任何此类影响都将被暂停，但他们一旦吸一口气这些效果就会再次生效。</p>\n<p>只要阴燃精屏住呼吸，死亡一息的效果就能持续（通常他能屏息最多8轮）。</p>"
+					"description": "<p>阴燃精深吸一口气然后屏住。暂时中止了他们的生物进程，并化为不死生物。阴燃精获得不死特征，并免疫流血、死亡效果、疾病、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、睡眠。阴燃精目前遭受的任何此类影响都将被暂停，但他们一旦吸一口气这些效果就会再次生效。</p>\n<p>只要阴燃精屏住呼吸，死亡一息的效果就能持续（通常他能屏息最多8轮）。</p>"
 				},
 				"Exhale":{
 					"name": "喷吐烟雾 Exhale",
-					"description": "<p>阴燃精呼出一团浓烟，范围为以他们所在方格为中心点的@Template[type:burst|distance:10]{10尺爆发}。这团烟会在这片区域停留[[/r 1d4 #rounds]]{1d4轮}。在烟中的所有生物获得@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，并且在烟外的所有生物对烟内的生物也获得隐蔽。本能力会终止死亡一息能力的效果，因为阴燃精不再屏住呼吸。</p>"
+					"description": "<p>阴燃精呼出一团浓烟，范围为以他们所在方格为中心点的@Template[type:burst|distance:10]{10尺爆发}。这团烟会在这片区域停留[[/r 1d4 #rounds]]{1d4轮}。在烟中的所有生物获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，并且在烟外的所有生物对烟内的生物也获得隐蔽。本能力会终止死亡一息能力的效果，因为阴燃精不再屏住呼吸。</p>"
 				},
 				"Smoldering Fist":{
 					"name": "闷烧拳 Smoldering Fist",
-					"description": "<p>在重击时，阴燃精焚烧者的拳头打击还会额外造成[[/r (1d4)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
+					"description": "<p>在重击时，阴燃精焚烧者的拳头打击还会额外造成[[/r (1d4)[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续火焰伤害}。</p>"
 				}
 			}
 		},
@@ -1826,7 +1826,7 @@
 			"items":{
 				"Compression":{
 					"name": "压缩 Compression",
-					"description": "<p>当破碎魔皮成功@UUID[Compendium.pf2e.actionspf2e.kMcV8e5EZUxa6evt]{挤入空间 Squeezes}时，它可以以全速穿过狭小的空间。狭窄的范围对破碎魔皮来说并非困难地形。</p>"
+					"description": "<p>当破碎魔皮成功@UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{挤入空间 Squeezes}时，它可以以全速穿过狭小的空间。狭窄的范围对破碎魔皮来说并非困难地形。</p>"
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
@@ -1834,11 +1834,11 @@
 				},
 				"Control Body":{
 					"name": "控制尸体 Control Body",
-					"description": "<p><strong>需求</strong> 破碎魔皮和一具中型或小型的类人生物的尸体位于同一空间；</p>\n<hr />\n<p><strong>效果</strong> 破碎魔皮如同一张新的皮肤一般包裹并控制了尸体，在控制目标的同时，破碎魔皮使用目标的速度，但使用它自己的攻击，它失去攫抓和包裹能力。在破碎魔皮控制目标时，针对它的攻击只会对破碎魔皮造成一半伤害，另一半伤害会转而对目标尸体造成。针对区域的攻击会正常地对破碎魔皮和目标身体造成伤害。破碎魔皮可以在它的回合开始时以自由动作放开目标的尸体。如果目标被摧毁，破碎魔皮将自动放开尸体并@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}1轮。一个中等生物的尸体体通常HP为15，一个小型生物的尸体通常HP为10。用察觉检定成功对抗破碎魔皮的欺骗DC（通常为18）的生物可以注意到，尸体正由破碎魔皮控制。</p>"
+					"description": "<p><strong>需求</strong> 破碎魔皮和一具中型或小型的类人生物的尸体位于同一空间；</p>\n<hr />\n<p><strong>效果</strong> 破碎魔皮如同一张新的皮肤一般包裹并控制了尸体，在控制目标的同时，破碎魔皮使用目标的速度，但使用它自己的攻击，它失去攫抓和包裹能力。在破碎魔皮控制目标时，针对它的攻击只会对破碎魔皮造成一半伤害，另一半伤害会转而对目标尸体造成。针对区域的攻击会正常地对破碎魔皮和目标身体造成伤害。破碎魔皮可以在它的回合开始时以自由动作放开目标的尸体。如果目标被摧毁，破碎魔皮将自动放开尸体并@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}1轮。一个中等生物的尸体体通常HP为15，一个小型生物的尸体通常HP为10。用察觉检定成功对抗破碎魔皮的欺骗DC（通常为18）的生物可以注意到，尸体正由破碎魔皮控制。</p>"
 				},
 				"Enshroud":{
 					"name": "包裹 Enshroud",
-					"description": "<p><strong>需求</strong> 破碎魔皮正束缚着一个生物；</p>\n<hr />\n<p><strong>效果</strong> 破碎魔皮试图压住目标，像衬衫一样把自己包在生物周围。破碎魔皮以运动检定对抗目标的强韧 DC。成功后，目标生物被@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，破碎魔皮像控制尸体一样控制目标生物。在它的回合开始时，破碎魔皮可以以一个自由动作紧勒被包裹的生物。被包裹的生物可以尝试DC16的逃脱检定以挣脱（如果破碎魔皮在包裹的运动检定中大成功，则改为DC18）。</p>"
+					"description": "<p><strong>需求</strong> 破碎魔皮正束缚着一个生物；</p>\n<hr />\n<p><strong>效果</strong> 破碎魔皮试图压住目标，像衬衫一样把自己包在生物周围。破碎魔皮以运动检定对抗目标的强韧 DC。成功后，目标生物被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}，破碎魔皮像控制尸体一样控制目标生物。在它的回合开始时，破碎魔皮可以以一个自由动作紧勒被包裹的生物。被包裹的生物可以尝试DC16的逃脱检定以挣脱（如果破碎魔皮在包裹的运动检定中大成功，则改为DC18）。</p>"
 				}
 			}
 		},
@@ -1864,7 +1864,7 @@
 				},
 				"Stony Shards":{
 					"name": "石质碎片 Stony Shards",
-					"description": "<p>在攻击时，细小的碎片会从秽岩恶鬼的角上脱落，嵌入目标的伤口并施加一个可怕的诅咒。被秽岩恶鬼的石质鹿角打击命中的生物必须成功通过@Check[type:fortitude|dc:37]豁免，豁免失败则会获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续[[/r 1d4 #rounds]]{1d4轮}。如果该生物豁免大失败，或者在笨拙(clumsy)值已经为2或更多的情况下豁免失败，他会被石化。</p>"
+					"description": "<p>在攻击时，细小的碎片会从秽岩恶鬼的角上脱落，嵌入目标的伤口并施加一个可怕的诅咒。被秽岩恶鬼的石质鹿角打击命中的生物必须成功通过@Check[type:fortitude|dc:37]豁免，豁免失败则会获得@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续[[/r 1d4 #rounds]]{1d4轮}。如果该生物豁免大失败，或者在笨拙(clumsy)值已经为2或更多的情况下豁免失败，他会被石化。</p>"
 				}
 			}
 		},
@@ -1875,7 +1875,7 @@
 			"items":{
 				"Self-Loathing":{
 					"name": "自我厌恶 Self-Loathing",
-					"description": "<p>如果一个寂然跟踪者看到了自己的倒影或者任何它们生前珍视的物品，它们必须进行@Check[type:will|dc:33]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 寂然跟踪者不受影响，并且不会再以这种方式受到反射或物体的影响。</p>\n<p><strong>成功</strong> 寂然跟踪者因为自我厌恶而分心，并获得持续1轮的@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>失败</strong> 寂然跟踪者被触发自我厌恶的源头所@UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并竭尽所能地摧毁它，直到它下一个回合的回合结束。</p>\n<p><strong>大失败</strong> 只要引发它自我厌恶的根源对它明显可见，寂然跟踪者就处于@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它们被攻击，或者看见了凶手。</p>"
+					"description": "<p>如果一个寂然跟踪者看到了自己的倒影或者任何它们生前珍视的物品，它们必须进行@Check[type:will|dc:33]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 寂然跟踪者不受影响，并且不会再以这种方式受到反射或物体的影响。</p>\n<p><strong>成功</strong> 寂然跟踪者因为自我厌恶而分心，并获得持续1轮的@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p><strong>失败</strong> 寂然跟踪者被触发自我厌恶的源头所@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，并竭尽所能地摧毁它，直到它下一个回合的回合结束。</p>\n<p><strong>大失败</strong> 只要引发它自我厌恶的根源对它明显可见，寂然跟踪者就处于@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}，直到它们被攻击，或者看见了凶手。</p>"
 				},
 				"Sense Murderer":{
 					"name": "感知凶手 Sense Murderer",
@@ -1883,11 +1883,11 @@
 				},
 				"Silent Aura":{
 					"name": "寂静灵光 Silent Aura",
-					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>寂然跟踪者不会发出任何声音，组阻止生物仅通过听觉或类似的感官来察觉到它们。这个灵光会阻止任何在范围内发出或穿过它的声音。寂然跟踪者和灵光中的所有生物都不能使用音波攻击或具有听觉特征的行动；这会阻止生物施展带有语言成分的法术或激活带有命令成分的物品。</p>"
+					"description": "<p>@Template[type:emanation|distance:10]{10尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>寂然跟踪者不会发出任何声音，组阻止生物仅通过听觉或类似的感官来察觉到它们。这个灵光会阻止任何在范围内发出或穿过它的声音。寂然跟踪者和灵光中的所有生物都不能使用音波攻击或具有听觉特征的行动；这会阻止生物施展带有语言成分的法术或激活带有命令成分的物品。</p>"
 				},
 				"Undying Vendetta":{
 					"name": "无尽仇杀 Undying Vendetta",
-					"description": "<p>如果杀害寂然跟踪者的凶手死亡，寂然跟踪者立刻被摧毁。一个无法感知到它的凶手的寂然跟踪者每24小时必须进行一次@Check[type:flat|dc:11]检定，以避免陷入@UUID[Compendium.pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}和@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}；一旦能感知到凶手它们就会立刻复活。变为不死生物的凶手不会触发寂然跟踪者的摧毁，直至凶手被完全毁灭。寂然跟踪者在对抗它们的凶手时所有检定和DC获得+2状态加值。</p>"
+					"description": "<p>如果杀害寂然跟踪者的凶手死亡，寂然跟踪者立刻被摧毁。一个无法感知到它的凶手的寂然跟踪者每24小时必须进行一次@Check[type:flat|dc:11]检定，以避免陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}和@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}；一旦能感知到凶手它们就会立刻复活。变为不死生物的凶手不会触发寂然跟踪者的摧毁，直至凶手被完全毁灭。寂然跟踪者在对抗它们的凶手时所有检定和DC获得+2状态加值。</p>"
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
@@ -1904,7 +1904,7 @@
 			"disable": "<p>@Check[type:occultism|dc:48]或@Check[type:religion|dc:48]（专家）削弱鬼魂；总共四次成功才能解除作祟</p>",
 			"hazarddescription": "<p>一个无形体的鬼魂，从生者身上吸取生命，当受害者逐渐变得虚弱时，它则逐渐变得可见。</p>",
 			"reset": "<p>在1分钟之后，鬼魂吃饱喝足，然后作祟停止活动，进入休眠状态。在1个小时过后，灵魂吸取的生命能量被消耗殆尽，作祟重置。</p>",
-			"routine": "<p>（1 个动作；死亡，神术，死灵系，负能量）鬼魂吸取活物的灵魂，并且身体变得越来越明显。@Template[type:burst|distnace:60]{60尺}内每个生物受到[[/r (4d10+20)[negative]]]{4d10+20负能量伤害}，@Check[type:fortitude|dc:41|traits:death,divine,necromancy,negative,damaging-effect]豁免。如果区域内没有生物，作祟会移动至多120尺，前往生物最密集的地方，然后吸取生命精华。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，然后@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained}值增加1，最多增加到流失4。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，然后流失值增加2，最多增加到流失4。如果生物已经达到流失4，它会死亡。</p>",
+			"routine": "<p>（1 个动作；死亡，神术，死灵系，负能量）鬼魂吸取活物的灵魂，并且身体变得越来越明显。@Template[type:burst|distnace:60]{60尺}内每个生物受到[[/r (4d10+20)[negative]]]{4d10+20负能量伤害}，@Check[type:fortitude|dc:41|traits:death,divine,necromancy,negative,damaging-effect]豁免。如果区域内没有生物，作祟会移动至多120尺，前往生物最密集的地方，然后吸取生命精华。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，然后@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained}值增加1，最多增加到流失4。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，然后流失值增加2，最多增加到流失4。如果生物已经达到流失4，它会死亡。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
@@ -1927,7 +1927,7 @@
 			"items":{
 				"Set Defense":{
 					"name": "设防 Set Defense",
-					"description": "<p>骷髅士兵架好它的大砍刀（或其他触及武器）来保卫它周围的区域。它获得仅限该武器使用的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.hFtNbo1LKYCoDy2O]{借机攻击 Attack of Opportunity}反应动作。这将持续到骷髅士兵使用带有移动或攻击特征的动作或它被摧毁。</p>"
+					"description": "<p>骷髅士兵架好它的大砍刀（或其他触及武器）来保卫它周围的区域。它获得仅限该武器使用的@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]{借机攻击 Attack of Opportunity}反应动作。这将持续到骷髅士兵使用带有移动或攻击特征的动作或它被摧毁。</p>"
 				}
 			}
 		},
@@ -1945,7 +1945,7 @@
 				},
 				"Mountain Slam":{
 					"name": "山劈 Mountain Slam",
-					"description": "<p>骷髅泰坦将它的山岳巨剑砸向地面。冲击波回荡，对@Template[type:line|distance:20]范围内的所有生物造成山岳巨剑打击伤害（@Check[type:reflex|dc:34|basic:true]豁免）。豁免失败的生物还会被击至@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p>骷髅泰坦将它的山岳巨剑砸向地面。冲击波回荡，对@Template[type:line|distance:20]范围内的所有生物造成山岳巨剑打击伤害（@Check[type:reflex|dc:34|basic:true]豁免）。豁免失败的生物还会被击至@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				},
 				"Trample":{
 					"name": "践踏 Trample",
@@ -1961,11 +1961,11 @@
 			"items":{
 				"Frightful Presence":{
 					"name": "气势凶猛 Frightful Presence",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光} @Check[type:will|dc:26]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>"
 				},
 				"Soulscent (Imprecise) 100 feet":{
 					"name": "灵魂嗅觉（模糊） 100尺",
-					"description": "<p>死掠精能察觉到列出范围内所有具有@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed}值的生物、@UUID[Compendium.pf2e.conditionitems.yZRUzMqrMmfLu0V1]{濒死 Dying}的生物、和在1小时内死亡的生物。</p>"
+					"description": "<p>死掠精能察觉到列出范围内所有具有@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed}值的生物、@UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{濒死 Dying}的生物、和在1小时内死亡的生物。</p>"
 				},
 				"Ghostly Swoop":{
 					"name": "幽灵俯冲 Ghostly Swoop",
@@ -1977,7 +1977,7 @@
 				},
 				"Steal Soul":{
 					"name": "窃魂 Steal Soul",
-					"description": "<p>死掠精收割者触碰一个濒死或在过去1小时内死亡的生物。若目标为一濒死生物，则它必须进行@Check[type:fortitude|dc:28]豁免——豁免失败则濒死值+1（大失败+2）。若目标已死亡，他不会有任何豁免的机会，死掠精会把他的灵魂装进小而邋遢的袋子里，以保持窃得灵魂的新鲜。</p>\n<p>这个袋子由魔法上锁，任何一只死掠精都能毫不费力地打开它，但是其他生物必须@UUID[Compendium.pf2e.actionspf2e.2EE4aF4SZpYf0R6H]{开锁 Pick the Lock}（@Check[type:thievery|dc:35|traits:action:pick-a-lock]）或施展<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（5环；反制DC 32）。一个生物可以通过交互动作来清空一个未上锁的袋子，这能释放里面的灵魂，但不能让他们复活。当灵魂被囚禁时，除了类似<em>@UUID[Compendium.pf2e.spells-srd.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>或<em>@UUID[Compendium.pf2e.spells-srd.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>的效果外，他们无法通过任何方式复活。一个袋子一次可以容纳12个灵魂。死掠精收割者通常试图将灵魂送回给女王，以便她能吞噬它们。</p>"
+					"description": "<p>死掠精收割者触碰一个濒死或在过去1小时内死亡的生物。若目标为一濒死生物，则它必须进行@Check[type:fortitude|dc:28]豁免——豁免失败则濒死值+1（大失败+2）。若目标已死亡，他不会有任何豁免的机会，死掠精会把他的灵魂装进小而邋遢的袋子里，以保持窃得灵魂的新鲜。</p>\n<p>这个袋子由魔法上锁，任何一只死掠精都能毫不费力地打开它，但是其他生物必须@UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{开锁 Pick the Lock}（@Check[type:thievery|dc:35|traits:action:pick-a-lock]）或施展<em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（5环；反制DC 32）。一个生物可以通过交互动作来清空一个未上锁的袋子，这能释放里面的灵魂，但不能让他们复活。当灵魂被囚禁时，除了类似<em>@UUID[Compendium.pf2e.spells-srd.Item.6dDtGIUerazSHIOu]{祈愿术 Wish}</em>或<em>@UUID[Compendium.pf2e.spells-srd.Item.YfJTXyVGzLhM6V8U]{神迹术 Miracle}</em>的效果外，他们无法通过任何方式复活。一个袋子一次可以容纳12个灵魂。死掠精收割者通常试图将灵魂送回给女王，以便她能吞噬它们。</p>"
 				}
 			}
 		},
@@ -1986,7 +1986,7 @@
 			"disable": "<p>@Check[type:occultism|dc:30]或@Check[type:religion|dc:30] （受训）削弱作祟的能量；在任何组合中成功3次才能解除作祟</p>",
 			"hazarddescription": "<p>愤怒的鬼魂形成的旋风在该地区肆虐。</p>",
 			"reset": "<p>鬼灵旋风将在触发的1分钟后解除，并且在1日后重置。</p>",
-			"routine": "<p>（3 个动作）鬼灵旋风用3个动作移动，每个动作最多移动30尺，并且对途径的每个生物造成[[/r (2d10+13)[negative]]]{2d10+13负能量伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。每个生物在鬼灵旋风移动期间只需进行一次豁免，即便旋风多次经过它。如果豁免大失败，生物将被卷进旋风，陷入@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 32）。一个被旋风擒抱的生物在它的回合开始时受到[[/r (1d10+6)[negative]]]{1d10+6额外负能量伤害}，并且它必须在旋风的回合中继续尝试反射豁免，无论旋风是否移动。脱逃成功的生物将从[[/r (1d12*5} #Falling Distance]]{1d12 x 5尺}的高度坠落地面。</p>",
+			"routine": "<p>（3 个动作）鬼灵旋风用3个动作移动，每个动作最多移动30尺，并且对途径的每个生物造成[[/r (2d10+13)[negative]]]{2d10+13负能量伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。每个生物在鬼灵旋风移动期间只需进行一次豁免，即便旋风多次经过它。如果豁免大失败，生物将被卷进旋风，陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 32）。一个被旋风擒抱的生物在它的回合开始时受到[[/r (1d10+6)[negative]]]{1d10+6额外负能量伤害}，并且它必须在旋风的回合中继续尝试反射豁免，无论旋风是否移动。脱逃成功的生物将从[[/r (1d12*5} #Falling Distance]]{1d12 x 5尺}的高度坠落地面。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
@@ -2006,11 +2006,11 @@
 				},
 				"Entropy's Shadow":{
 					"name": "熵之影 Entropy's Shadow",
-					"description": "<p>@Template[type:emanation|distance:40]{40尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>赛克维尔仅是存在就会泄漏出熵和腐败。进入灵光或在此灵光范围内开始回合的生物受到[[/r (4d6)[negative]]]{4d6负能量伤害}，并需进行@Check[type:fortitude|dc:33|basic:true]豁免。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向赛克维尔10尺。</p>"
+					"description": "<p>@Template[type:emanation|distance:40]{40尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>赛克维尔仅是存在就会泄漏出熵和腐败。进入灵光或在此灵光范围内开始回合的生物受到[[/r (4d6)[negative]]]{4d6负能量伤害}，并需进行@Check[type:fortitude|dc:33|basic:true]豁免。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向赛克维尔10尺。</p>"
 				},
 				"Sunlight Powerlessness":{
 					"name": "阳光失能 Sunlight Powerlessness",
-					"description": "<p>阳光下的赛克维尔获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+					"description": "<p>阳光下的赛克维尔获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
 				},
 				"Change Posture":{
 					"name": "改变姿势 Change Posture",
@@ -2018,11 +2018,11 @@
 				},
 				"Crush Item":{
 					"name": "碾碎物品 Crush Item",
-					"description": "<p><strong>触发</strong>赛克维尔@UUID[Compendium.pf2e.actionspf2e.Dt6B1slsBy8ipJu9]{卸武 Disarm}检定大成功；</p>\n<p><strong>需求</strong> 克维尔处于双足架势；</p>\n<hr />\n<p><strong>效果</strong> 赛克维尔夺过物品，用它的臂钉刺穿这物品。物品破损并掉落到赛克维尔占据空间的地上。已经破损的物品不会进一步损坏，硬度为14或更高的物品不受影响。</p>"
+					"description": "<p><strong>触发</strong>赛克维尔@UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{卸武 Disarm}检定大成功；</p>\n<p><strong>需求</strong> 克维尔处于双足架势；</p>\n<hr />\n<p><strong>效果</strong> 赛克维尔夺过物品，用它的臂钉刺穿这物品。物品破损并掉落到赛克维尔占据空间的地上。已经破损的物品不会进一步损坏，硬度为14或更高的物品不受影响。</p>"
 				},
 				"Draining Gaze":{
 					"name": "汲能凝视 Draining Gaze",
-					"description": "<p>赛克维尔将它噩梦般的目光聚焦到一个它能看到的生物上，该生物必须进行@Check[type:will|dc:36]豁免。不论结果如何，该生物临时免疫此能力10分钟。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 若赛克维尔处于双足姿势，目标获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续1轮， 若赛克维尔处于四足架势，则目标获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续1轮。</p>\n<p><strong>失败</strong> 如同成功，但是效果持续1分钟。</p>\n<p><strong>大失败</strong> 如同成功，但是为@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 3}或@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3}，且效果持续10分钟。</p>"
+					"description": "<p>赛克维尔将它噩梦般的目光聚焦到一个它能看到的生物上，该生物必须进行@Check[type:will|dc:36]豁免。不论结果如何，该生物临时免疫此能力10分钟。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 若赛克维尔处于双足姿势，目标获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续1轮， 若赛克维尔处于四足架势，则目标获得@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，持续1轮。</p>\n<p><strong>失败</strong> 如同成功，但是效果持续1分钟。</p>\n<p><strong>大失败</strong> 如同成功，但是为@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 3}或@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 3}，且效果持续10分钟。</p>"
 				},
 				"Horned Rush":{
 					"name": "巨角突袭 Horned Rush",
@@ -2041,7 +2041,7 @@
 				},
 				"Incessant Goading":{
 					"name": "激将 Incessant Goading",
-					"description": "<p>颅骨选择一个60尺内的生物，向他宣泄无情的敌意。目标必须通过@Check[type:will|dc:22]豁免来抵抗这个效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并临时免疫1分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标在1轮内@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。在他下一轮，如果嘲弄颅骨在目标可及的范围内，则目标会尽其所能地对颅骨发动狂暴的攻击，攻击次数尽可能地多。</p>\n<p><strong>大失败</strong> 如同失败，但是目标还会立刻对他自己发动一次打击；这个打击不花费任何动作。</p>"
+					"description": "<p>颅骨选择一个60尺内的生物，向他宣泄无情的敌意。目标必须通过@Check[type:will|dc:22]豁免来抵抗这个效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并临时免疫1分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标在1轮内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。在他下一轮，如果嘲弄颅骨在目标可及的范围内，则目标会尽其所能地对颅骨发动狂暴的攻击，攻击次数尽可能地多。</p>\n<p><strong>大失败</strong> 如同失败，但是目标还会立刻对他自己发动一次打击；这个打击不花费任何动作。</p>"
 				}
 			}
 		},
@@ -2055,7 +2055,7 @@
 			"items":{
 				"Topple Furniture":{
 					"name": "翻倒的家具 Topple Furniture",
-					"description": "<p><strong>触发</strong> 一个生物移动至家具相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂试图推动家具，将其砸在生物身上。触发的生物受到[[/r (2d10+7)[bludgeoning]]]{2d10+7钝击伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。如果豁免失败，生物还会被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物移动至家具相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂试图推动家具，将其砸在生物身上。触发的生物受到[[/r (2d10+7)[bludgeoning]]]{2d10+7钝击伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。如果豁免失败，生物还会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -2070,11 +2070,11 @@
 				},
 				"Tortured Gaze":{
 					"name": "折磨凝视 Tortured Gaze",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到[[/r (6d6)[fire]]]{6d6火焰伤害}并在1分钟内被幽灵般的火焰笼罩，解除其@UUID[Compendium.pf2e.conditionitems.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，若目标@UUID[Compendium.pf2e.conditionitems.zJxUflt9np0q4yML]{隐形 Invisible}则其状态变为隐蔽。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到[[/r (6d6)[fire]]]{6d6火焰伤害}并在1分钟内被幽灵般的火焰笼罩，解除其@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态，若目标@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}则其状态变为隐蔽。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
 				},
 				"Scream in Agony":{
 					"name": "痛苦尖叫 Scream in Agony",
-					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
+					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
 				}
 			}
 		},
@@ -2089,12 +2089,12 @@
 				},
 				"Tortured Gaze":{
 					"name": "折磨凝视 Tortured Gaze",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到[[/r (4d8)[bludgeoning]]]伤害并被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到[[/r (4d8)[bludgeoning]]]伤害并被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
 
 				},
 				"Scream in Agony":{
 					"name": "痛苦尖叫 Scream in Agony",
-					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
+					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
 				}
 			}
 		},
@@ -2109,11 +2109,11 @@
 				},
 				"Tortured Gaze":{
 					"name": "折磨凝视 Tortured Gaze",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则[[/br 1d4 #Dislocation Duration]]{1d4轮}内，目标获得@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则[[/br 1d4 #Dislocation Duration]]{1d4轮}内，目标获得@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
 				},
 				"Scream in Agony":{
 					"name": "痛苦尖叫 Scream in Agony",
-					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
+					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
 				}
 			}
 		},
@@ -2128,11 +2128,11 @@
 				},
 				"Tortured Gaze":{
 					"name": "折磨凝视 Tortured Gaze",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到[[/r (4d6)[cold]]]伤害并且@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到[[/r (4d6)[cold]]]伤害并且@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
 				},
 				"Scream in Agony":{
 					"name": "痛苦尖叫 Scream in Agony",
-					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
+					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
 				}
 			}
 		},
@@ -2147,11 +2147,11 @@
 				},
 				"Tortured Gaze":{
 					"name": "折磨凝视 Tortured Gaze",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到@Localize[PF2E.PersistentDamage.Bleed8d4.success]。该生物本回合不会受到持续伤害，也不会得到纯骰检定来结束伤害。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则受到@Localize[PF2E.PersistentDamage.Bleed8d4.success]。该生物本回合不会受到持续伤害，也不会得到纯骰检定来结束伤害。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
 				},
 				"Scream in Agony":{
 					"name": "痛苦尖叫 Scream in Agony",
-					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
+					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
 				}
 			}
 		},
@@ -2166,11 +2166,11 @@
 				},
 				"Tortured Gaze":{
 					"name": "折磨凝视 Tortured Gaze",
-					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则一分钟内获得@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和@UUID[Compendium.pf2e.conditionitems.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}或@Template[type:emanation|distance:60]，如果受难尸HP为125或更低。</p>\n<p>受难尸的心灵苦痛蔓延至它们周遭的世界，产生复现受难尸临终时刻的杀人性幻觉。在灵光范围内结束回合的非不死生物必须成功通过@Check[type:will|dc:32]豁免，否则一分钟内获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}。当一个生物有源自本灵光的状态时，生物不能从灵光中获得一个新的状态，但可以再次受到本灵光的伤害。</p>"
 				},
 				"Scream in Agony":{
 					"name": "痛苦尖叫 Scream in Agony",
-					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
+					"description": "<p>在受难尸折磨凝视灵光范围内的所有生物[[/r (14d6)[mental]]]{14d6心灵伤害}（@Check[type:will|dc:34|basic:true]豁免）。豁免失败的生物获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p>受难尸在[[/br 1d4 #Scream in Agony Recharge]]{1d4轮}内无法再次使用本能力，但是当它们被一位攻击者以重击伤害、或自身豁免骰大失败时，本能力立刻充能。</p>"
 				}
 			}
 		},
@@ -2186,11 +2186,11 @@
 				},
 				"Resurrection Vulnerability":{
 					"name": "复生易伤 Resurrection Vulnerability",
-					"description": "<p>一个拥有能让死者复活的法术（如<em>@UUID[Compendium.pf2e.spells-srd.Hnc7eGi7vyZenAIm]{生命之息 Breath of Life}</em>或<em>@UUID[Compendium.pf2e.spells-srd.IkGYwHRLhkuoGReG]{死者复活 Raise Dead}</em>）的准备或自发施法者，能够花费一个合适的法术位，以二动作行动来尝试摧毁一个30尺内的误生尸。误生尸以意志豁免对抗施法者的法术DC，若豁免成功则本次（摧毁误生尸的）尝试失败。</p>"
+					"description": "<p>一个拥有能让死者复活的法术（如<em>@UUID[Compendium.pf2e.spells-srd.Item.Hnc7eGi7vyZenAIm]{生命之息 Breath of Life}</em>或<em>@UUID[Compendium.pf2e.spells-srd.Item.IkGYwHRLhkuoGReG]{死者复活 Raise Dead}</em>）的准备或自发施法者，能够花费一个合适的法术位，以二动作行动来尝试摧毁一个30尺内的误生尸。误生尸以意志豁免对抗施法者的法术DC，若豁免成功则本次（摧毁误生尸的）尝试失败。</p>"
 				},
 				"Rise Again":{
 					"name": "再起 Rise Again",
-					"description": "<p>若误生尸不是因为火焰伤害、解体或复生易伤能力而死亡，它将在它的下一轮复“活”。获得100点HP身处被摧毁的那个方格，并处于@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}状态。误生尸在接下来的1小时无法再次使用本能力。</p>"
+					"description": "<p>若误生尸不是因为火焰伤害、解体或复生易伤能力而死亡，它将在它的下一轮复“活”。获得100点HP身处被摧毁的那个方格，并处于@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}状态。误生尸在接下来的1小时无法再次使用本能力。</p>"
 				},
 				"Agonized Howl":{
 					"name": "痛苦嚎叫 Agonized Howl",
@@ -2198,11 +2198,11 @@
 				},
 				"Awful Approach":{
 					"name": "丑恶前进 Awful Approach",
-					"description": "<p>误生尸重塑它怪诞的外形来迅速移动。它行走两次。在这次移动期间，任何能看到误生尸的活物必须成功通过@Check[type:fortitude|dc:28]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败@UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 2}）.这是一个“心灵”、“视觉”特征的效果。误生尸在[[/r 1d4 #Awful Approach Recharge]]{1d4轮}内无法再次使用本能力。</p>"
+					"description": "<p>误生尸重塑它怪诞的外形来迅速移动。它行走两次。在这次移动期间，任何能看到误生尸的活物必须成功通过@Check[type:fortitude|dc:28]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}）.这是一个“心灵”、“视觉”特征的效果。误生尸在[[/r 1d4 #Awful Approach Recharge]]{1d4轮}内无法再次使用本能力。</p>"
 				},
 				"Death Grip":{
 					"name": "死亡之握 Death Grip",
-					"description": "<p><strong>需求</strong> 误生尸@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p><hr />\n<p><strong>效果</strong> 误生尸试图摧毁其受害者的生命力以分享化为误生尸的命运。该生物必须成功通过@Check[type:fortitude|dc:30]豁免否则获得@UUID[Compendium.pf2e.conditionitems.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。在诅咒生效时，该生物只能从正能量治疗效果中恢复一半HP；若被诅咒生物（携带着诅咒）死亡，任何将其复活的尝试都会使他化作误生尸重返人间。若该生物的毁灭降至0则诅咒自动结束。</p>"
+					"description": "<p><strong>需求</strong> 误生尸@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p><hr />\n<p><strong>效果</strong> 误生尸试图摧毁其受害者的生命力以分享化为误生尸的命运。该生物必须成功通过@Check[type:fortitude|dc:30]豁免否则获得@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。在诅咒生效时，该生物只能从正能量治疗效果中恢复一半HP；若被诅咒生物（携带着诅咒）死亡，任何将其复活的尝试都会使他化作误生尸重返人间。若该生物的毁灭降至0则诅咒自动结束。</p>"
 				}
 			}
 		},
@@ -2217,11 +2217,11 @@
 				},
 				"Entropy's Shadow":{
 					"name": "熵之影 Entropy's Shadow",
-					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>厄维斯仅是存在就会泄漏出熵和腐败。进入灵光或在此灵光范围内开始回合的生物受到[[/r (5d6)[negative]]]{5d6负能量伤害}，并需进行@Check[type:fortitude|dc:38|basic:true]豁免。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向厄维斯10尺。</p>"
+					"description": "<p>@Template[type:emanation|distance:60]{60尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>厄维斯仅是存在就会泄漏出熵和腐败。进入灵光或在此灵光范围内开始回合的生物受到[[/r (5d6)[negative]]]{5d6负能量伤害}，并需进行@Check[type:fortitude|dc:38|basic:true]豁免。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向厄维斯10尺。</p>"
 				},
 				"Sunlight Powerlessness":{
 					"name": "阳光失能 Sunlight Powerlessness",
-					"description": "<p>阳光下的厄维斯获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+					"description": "<p>阳光下的厄维斯获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
 				},
 				"Frenzy":{
 					"name": "狂怒 Frenzy",
@@ -2229,11 +2229,11 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>超大型, [[/r (2d10+5)[bludgeoning]]]{2d10+5钝击}, 破裂35</p>\n<p>若一个生物在他的回合结束时正被厄维斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，厄维斯获得10点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型, [[/r (2d10+5)[bludgeoning]]]{2d10+5钝击}, 破裂35</p>\n<p>若一个生物在他的回合结束时正被厄维斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，厄维斯获得10点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"Urveth Venom":{
 					"name": "厄维斯毒液 Urveth Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:37]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (3d6)[negative]+(2d6)[poison]]]{3d6负能量伤害和2d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (3d6)[negative]+(2d6)[poison]]]{3d6负能量伤害和2d6毒素伤害}，和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (3d6)[negative]+(2d6)[poison]]]{3d6负能量伤害和2d6毒素伤害}，和@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 4} (1轮)</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:37]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (3d6)[negative]+(2d6)[poison]]]{3d6负能量伤害和2d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (3d6)[negative]+(2d6)[poison]]]{3d6负能量伤害和2d6毒素伤害}，和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (3d6)[negative]+(2d6)[poison]]]{3d6负能量伤害和2d6毒素伤害}，和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 4} (1轮)</p>"
 				}
 			}
 		},
@@ -2248,19 +2248,19 @@
 				},
 				"Drain Magic":{
 					"name": "汲取魔法 Drain Magic",
-					"description": "<p><strong>需求</strong> 万奈蝠最后一个动作是成功用啃咬打击命中一个生物、物体、或是法术效果；</p>\n<hr />\n<p><strong>效果</strong> 万奈蝠对被打击命中的目标施展内在法术<em>@UUID[Compendium.pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>；若目标是个生物，万奈蝠可以转而以影响该生物的一个法术为目标。如果一个法术效果或物品被成功反制，万奈蝠获得等同于被反制效果反制等级的临时生命。</p>"
+					"description": "<p><strong>需求</strong> 万奈蝠最后一个动作是成功用啃咬打击命中一个生物、物体、或是法术效果；</p>\n<hr />\n<p><strong>效果</strong> 万奈蝠对被打击命中的目标施展内在法术<em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>；若目标是个生物，万奈蝠可以转而以影响该生物的一个法术为目标。如果一个法术效果或物品被成功反制，万奈蝠获得等同于被反制效果反制等级的临时生命。</p>"
 				},
 				"Entropy's Shadow":{
 					"name": "熵之影 Entropy's Shadow",
-					"description": "<p>@Template[type:emanation|distance:40]{40尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>万奈蝠仅是存在就会泄漏出熵和腐败。进入灵光或在此灵光范围内开始回合的生物受到[[/r (3d6)[negative]]]{3d6负能量伤害}，并需进行@Check[type:fortitude|dc:30|basic:true]豁免。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向万奈蝠10尺。</p>"
+					"description": "<p>@Template[type:emanation|distance:40]{40尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<p>万奈蝠仅是存在就会泄漏出熵和腐败。进入灵光或在此灵光范围内开始回合的生物受到[[/r (3d6)[negative]]]{3d6负能量伤害}，并需进行@Check[type:fortitude|dc:30|basic:true]豁免。若豁免失败，该生物还会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，并被拉向万奈蝠10尺。</p>"
 				},
 				"Snatch":{
 					"name": "抓握 Snatch",
-					"description": "<p>万奈蝠用一只或两只脚爪@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物的时候能以一半的速度飞行，并带着目标一起移动。</p>"
+					"description": "<p>万奈蝠用一只或两只脚爪@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物的时候能以一半的速度飞行，并带着目标一起移动。</p>"
 				},
 				"Sunlight Powerlessness":{
 					"name": "阳光失能 Sunlight Powerlessness",
-					"description": "<p>阳光下的万奈蝠获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
+					"description": "<p>阳光下的万奈蝠获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 2}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。</p>"
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
@@ -2276,11 +2276,11 @@
 			"items":{
 				"Mental Rebirth":{
 					"name": "心灵重生 Mental Rebirth",
-					"description": "<p>毘陀罗逻那不会在HP为0的时候被摧毁。相反，它们的身体被摧毁，崩解成灰，而它们的心智会立刻转移到一个它们通过汲取思维能力而令其昏迷的一个生物中。这个生物必须在1英里范围内；如果范围内没有这样的生物，毘陀罗逻那就会被摧毁。该生物会被毘陀罗逻那控制，并失去呆滞和@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态。如果以这种方式被毘陀罗逻那控制的生物被杀死，毘陀罗逻那的心智会转移到1英里内的另一个因汲取思绪能力而昏迷的生物身上。</p>\n<p>在被控制的[[/r 1d6 #days]]{1d6天}后，被控制的生物会死亡，其身体转变成使其昏迷的毘陀罗逻那的样子。</p>"
+					"description": "<p>毘陀罗逻那不会在HP为0的时候被摧毁。相反，它们的身体被摧毁，崩解成灰，而它们的心智会立刻转移到一个它们通过汲取思维能力而令其昏迷的一个生物中。这个生物必须在1英里范围内；如果范围内没有这样的生物，毘陀罗逻那就会被摧毁。该生物会被毘陀罗逻那控制，并失去呆滞和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态。如果以这种方式被毘陀罗逻那控制的生物被杀死，毘陀罗逻那的心智会转移到1英里内的另一个因汲取思绪能力而昏迷的生物身上。</p>\n<p>在被控制的[[/r 1d6 #days]]{1d6天}后，被控制的生物会死亡，其身体转变成使其昏迷的毘陀罗逻那的样子。</p>"
 				},
 				"Vetalarana Vulnerabilities":{
 					"name": "毘陀罗逻那弱点 Vetalarana Vulnerabilities",
-					"description": "<p>所有毘陀罗逻那都有以下弱点。</p>\n<ul>\n<li><strong>阻碍感知 Barred Senses</strong> 毘陀罗逻那无法看到或者感知到力场效果或者寒铁后的东西。它们的心智也无法穿透力场或寒铁。这样的屏障能够阻止毘陀罗逻那通过心灵重生能力转移自己的心智。</li>\n<li><strong>厌恶 Revulsion</strong> 毘陀罗逻那以享用记忆和秘密为乐，并对那些公开分享这种敏感琐事的人感到厌恶。毘陀罗逻那不能主动接近一位大声说出自己私密的个人秘密或最珍贵的记忆的人10尺以内。坚定且大声地说出这类信息是一个有着“听觉”、“专注”和“语言”特征单动作，这会保护该生物直到他的下个回合开始。非自愿地来到了厌恶对象的10尺范围内的毘陀罗逻那会获得@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，直到它逃至其厌恶对象的10尺以外。在暴露于一个生物的秘密一轮后，毘陀罗逻那可以花费一个拥有专注特征的单动作尝试一次@Check[type:will|dc:25]检定。一旦成功，它能在 [[/r 1d6 #rounds]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>脑损易伤 Vulnerable to Brain Destruction</strong> 大脑被摧毁或在不能使用心灵动作时HP被降至0的毘陀罗逻那无法使用心灵重生能力。</li>\n</ul>"
+					"description": "<p>所有毘陀罗逻那都有以下弱点。</p>\n<ul>\n<li><strong>阻碍感知 Barred Senses</strong> 毘陀罗逻那无法看到或者感知到力场效果或者寒铁后的东西。它们的心智也无法穿透力场或寒铁。这样的屏障能够阻止毘陀罗逻那通过心灵重生能力转移自己的心智。</li>\n<li><strong>厌恶 Revulsion</strong> 毘陀罗逻那以享用记忆和秘密为乐，并对那些公开分享这种敏感琐事的人感到厌恶。毘陀罗逻那不能主动接近一位大声说出自己私密的个人秘密或最珍贵的记忆的人10尺以内。坚定且大声地说出这类信息是一个有着“听觉”、“专注”和“语言”特征单动作，这会保护该生物直到他的下个回合开始。非自愿地来到了厌恶对象的10尺范围内的毘陀罗逻那会获得@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，直到它逃至其厌恶对象的10尺以外。在暴露于一个生物的秘密一轮后，毘陀罗逻那可以花费一个拥有专注特征的单动作尝试一次@Check[type:will|dc:25]检定。一旦成功，它能在 [[/r 1d6 #rounds]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>脑损易伤 Vulnerable to Brain Destruction</strong> 大脑被摧毁或在不能使用心灵动作时HP被降至0的毘陀罗逻那无法使用心灵重生能力。</li>\n</ul>"
 				},
 				"Anticipatory Attack":{
 					"name": "预测性攻击 Anticipatory Attack",
@@ -2288,7 +2288,7 @@
 				},
 				"Drain Thoughts":{
 					"name": "汲取思绪 Drain Thoughts",
-					"description": "<p><strong>需求</strong> 一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或自愿的生物身处毘陀罗逻那的触及范围内；</p>\n<hr />\n<p><strong>效果</strong> 毘陀罗逻那抓住一个生物并吞噬它的记忆。如果目标被擒抱，吸血鬼需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。受害者获得@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，毘陀罗逻那回复[[/r 10 #Hit Point]]{10 HP}，多余的则会变为临时生命。从已经获得呆滞状态的生物身上汲取思维不会回复任何生命值，但会使受害者的呆滞值加1。此外，毘陀罗逻那还会查看受害者的一段记忆。</p>\n<p>受害者的呆滞状态每周减少1点。</p>\n<p>因此能力而达到呆滞5的受害者陷入昏迷，变得永远@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。只要那只毘陀罗逻那还活着，昏迷的受害者就不能恢复意识，且他的呆滞值也不会减少。</p>"
+					"description": "<p><strong>需求</strong> 一个被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或自愿的生物身处毘陀罗逻那的触及范围内；</p>\n<hr />\n<p><strong>效果</strong> 毘陀罗逻那抓住一个生物并吞噬它的记忆。如果目标被擒抱，吸血鬼需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。受害者获得@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，毘陀罗逻那回复[[/r 10 #Hit Point]]{10 HP}，多余的则会变为临时生命。从已经获得呆滞状态的生物身上汲取思维不会回复任何生命值，但会使受害者的呆滞值加1。此外，毘陀罗逻那还会查看受害者的一段记忆。</p>\n<p>受害者的呆滞状态每周减少1点。</p>\n<p>因此能力而达到呆滞5的受害者陷入昏迷，变得永远@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。只要那只毘陀罗逻那还活着，昏迷的受害者就不能恢复意识，且他的呆滞值也不会减少。</p>"
 				}
 			}
 		},
@@ -2304,7 +2304,7 @@
 				},
 				"Mental Rebirth":{
 					"name": "心灵重生 Mental Rebirth",
-					"description": "<p>毘陀罗逻那不会在HP为0的时候被摧毁。相反，它们的身体被摧毁，崩解成灰，而它们的心智会立刻转移到一个它们通过汲取思维能力而令其昏迷的一个生物中。这个生物必须在1英里范围内；如果范围内没有这样的生物，毘陀罗逻那就会被摧毁。该生物会被毘陀罗逻那控制，并失去呆滞和@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态。如果以这种方式被毘陀罗逻那控制的生物被杀死，毘陀罗逻那的心智会转移到1英里内的另一个因汲取思绪能力而昏迷的生物身上。</p>\n<p>在被控制的[[/r 1d6 #days]]{1d6天}后，被控制的生物会死亡，其身体转变成使其昏迷的毘陀罗逻那的样子。</p>"
+					"description": "<p>毘陀罗逻那不会在HP为0的时候被摧毁。相反，它们的身体被摧毁，崩解成灰，而它们的心智会立刻转移到一个它们通过汲取思维能力而令其昏迷的一个生物中。这个生物必须在1英里范围内；如果范围内没有这样的生物，毘陀罗逻那就会被摧毁。该生物会被毘陀罗逻那控制，并失去呆滞和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状态。如果以这种方式被毘陀罗逻那控制的生物被杀死，毘陀罗逻那的心智会转移到1英里内的另一个因汲取思绪能力而昏迷的生物身上。</p>\n<p>在被控制的[[/r 1d6 #days]]{1d6天}后，被控制的生物会死亡，其身体转变成使其昏迷的毘陀罗逻那的样子。</p>"
 				},
 				"Psychic Superiority":{
 					"name": "心能优越 Psychic Superiority",
@@ -2312,19 +2312,19 @@
 				},
 				"Vetalarana Vulnerabilities":{
 					"name": "毘陀罗逻那弱点 Vetalarana Vulnerabilities",
-					"description": "<p>所有毘陀罗逻那都有以下弱点。</p>\n<ul>\n<li><strong>阻碍感知 Barred Senses</strong> 毘陀罗逻那无法看到或者感知到力场效果或者寒铁后的东西。它们的心智也无法穿透力场或寒铁。这样的屏障能够阻止毘陀罗逻那通过心灵重生能力转移自己的心智。</li>\n<li><strong>厌恶 Revulsion</strong> 毘陀罗逻那以享用记忆和秘密为乐，并对那些公开分享这种敏感琐事的人感到厌恶。毘陀罗逻那不能主动接近一位大声说出自己私密的个人秘密或最珍贵的记忆的人10尺以内。坚定且大声地说出这类信息是一个有着“听觉”、“专注”和“语言”特征单动作，这会保护该生物直到他的下个回合开始。非自愿地来到了厌恶对象的10尺范围内的毘陀罗逻那会获得@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，直到它逃至其厌恶对象的10尺以外。在暴露于一个生物的秘密一轮后，毘陀罗逻那可以花费一个拥有专注特征的单动作尝试一次@Check[type:will|dc:25]检定。一旦成功，它能在 [[/r 1d6 #rounds]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>脑损易伤 Vulnerable to Brain Destruction</strong> 大脑被摧毁或在不能使用心灵动作时HP被降至0的毘陀罗逻那无法使用心灵重生能力。</li>\n</ul>"
+					"description": "<p>所有毘陀罗逻那都有以下弱点。</p>\n<ul>\n<li><strong>阻碍感知 Barred Senses</strong> 毘陀罗逻那无法看到或者感知到力场效果或者寒铁后的东西。它们的心智也无法穿透力场或寒铁。这样的屏障能够阻止毘陀罗逻那通过心灵重生能力转移自己的心智。</li>\n<li><strong>厌恶 Revulsion</strong> 毘陀罗逻那以享用记忆和秘密为乐，并对那些公开分享这种敏感琐事的人感到厌恶。毘陀罗逻那不能主动接近一位大声说出自己私密的个人秘密或最珍贵的记忆的人10尺以内。坚定且大声地说出这类信息是一个有着“听觉”、“专注”和“语言”特征单动作，这会保护该生物直到他的下个回合开始。非自愿地来到了厌恶对象的10尺范围内的毘陀罗逻那会获得@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}状态，直到它逃至其厌恶对象的10尺以外。在暴露于一个生物的秘密一轮后，毘陀罗逻那可以花费一个拥有专注特征的单动作尝试一次@Check[type:will|dc:25]检定。一旦成功，它能在 [[/r 1d6 #rounds]]{1d6轮}内克服其厌恶（如果大成功则改为1小时）。</li>\n<li><strong>脑损易伤 Vulnerable to Brain Destruction</strong> 大脑被摧毁或在不能使用心灵动作时HP被降至0的毘陀罗逻那无法使用心灵重生能力。</li>\n</ul>"
 				},
 				"Control Comatose":{
 					"name": "控制昏迷者 Control Comatose",
-					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 毘陀罗逻那操纵者花费10分钟对因汲取思绪能力而昏迷的生物进行心灵控制。这具有法术<em>@UUID[Compendium.pf2e.spells-srd.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>的效果，但持续时间至多6小时，范围1英里，且毘陀罗逻那能够一次控制至多自身等级一半的昏迷受害者。昏迷的受害者无法抵抗这种占据，并且在对本能力的豁免中自动大失败。</p>\n<p>只要昏迷的受害者被一只毘陀罗逻那操纵者以这种方式控制，受害者的呆滞和@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状况就会暂时被压制。</p>"
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 毘陀罗逻那操纵者花费10分钟对因汲取思绪能力而昏迷的生物进行心灵控制。这具有法术<em>@UUID[Compendium.pf2e.spells-srd.Item.wU6hNzK8Yfqdmc8m]{占据术 Possession}</em>的效果，但持续时间至多6小时，范围1英里，且毘陀罗逻那能够一次控制至多自身等级一半的昏迷受害者。昏迷的受害者无法抵抗这种占据，并且在对本能力的豁免中自动大失败。</p>\n<p>只要昏迷的受害者被一只毘陀罗逻那操纵者以这种方式控制，受害者的呆滞和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}状况就会暂时被压制。</p>"
 				},
 				"Drain Thoughts":{
 					"name": "汲取思绪 Drain Thoughts",
-					"description": "<p><strong>需求</strong> 一个被@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或自愿的生物身处毘陀罗逻那的触及范围内；</p>\n<hr />\n<p><strong>效果</strong> 毘陀罗逻那抓住一个生物并吞噬它的记忆。如果目标被擒抱，吸血鬼需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。受害者获得@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，毘陀罗逻那回复[[/br 14 #Hit Points]]{14 HP}，多余的则会变为临时生命。从已经获得呆滞状态的生物身上汲取思维不会回复任何生命值，但会使受害者的呆滞值加1。此外，毘陀罗逻那还会查看受害者的一段记忆。</p>\n<p>受害者的呆滞状态每周减少1点。</p>\n<p>因此能力而达到呆滞5的受害者陷入昏迷，变得永远@UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。只要那只毘陀罗逻那还活着，昏迷的受害者就不能恢复意识，且他的呆滞值也不会减少。</p>"
+					"description": "<p><strong>需求</strong> 一个被@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}、@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}或自愿的生物身处毘陀罗逻那的触及范围内；</p>\n<hr />\n<p><strong>效果</strong> 毘陀罗逻那抓住一个生物并吞噬它的记忆。如果目标被擒抱，吸血鬼需要进行一次运动检定对抗受害者的强韧DC；在其他情况下则都将自动成功。受害者获得@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，毘陀罗逻那回复[[/br 14 #Hit Points]]{14 HP}，多余的则会变为临时生命。从已经获得呆滞状态的生物身上汲取思维不会回复任何生命值，但会使受害者的呆滞值加1。此外，毘陀罗逻那还会查看受害者的一段记忆。</p>\n<p>受害者的呆滞状态每周减少1点。</p>\n<p>因此能力而达到呆滞5的受害者陷入昏迷，变得永远@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。只要那只毘陀罗逻那还活着，昏迷的受害者就不能恢复意识，且他的呆滞值也不会减少。</p>"
 				},
 				"Paralyzing Claws":{
 					"name": "麻痹爪 Paralyzing Claws",
-					"description": "<p>任何被受毘陀罗逻那操纵者的利爪打击命中的活物必须成功通过@Check[type:fortitude|dc:27]豁免，否则会陷入@UUID[Compendium.pf2e.conditionitems.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物可以在自己的每个回合结束时尝试一次新的豁免以结束此效果，每次此豁免的DC都会递减1点。</p>"
+					"description": "<p>任何被受毘陀罗逻那操纵者的利爪打击命中的活物必须成功通过@Check[type:fortitude|dc:27]豁免，否则会陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。被麻痹的生物可以在自己的每个回合结束时尝试一次新的豁免以结束此效果，每次此豁免的DC都会递减1点。</p>"
 				}
 			}
 		},
@@ -2338,7 +2338,7 @@
 			"items":{
 				"Shove":{
 					"name": "推撞 Shove",
-					"description": "<p><strong>触发</strong> 一个生物移动至作祟墙壁的相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 一股强大的力量横扫房间，将房间内所有生物推向墙壁。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:20]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推向墙壁5尺。如果生物将撞上墙壁，它受到[[/r (1d10+5)[bludgeoning]]]{1d10+5钝击伤害}。</p>\n<p><strong>失败</strong> 生物被推向墙壁10尺。如果生物将撞上墙壁，它受到[[/r (2d10+10)[bludgeoning]]]{2d10+10钝击伤害}。</p>\n<p><strong>大失败</strong> 生物被推向墙壁15尺。如果生物将撞上墙壁，它受到[[/r (3d10+15)[bludgeoning]]]{3d10+15钝击伤害}，并且被击@UUID[Compendium.pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物移动至作祟墙壁的相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 一股强大的力量横扫房间，将房间内所有生物推向墙壁。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:20]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推向墙壁5尺。如果生物将撞上墙壁，它受到[[/r (1d10+5)[bludgeoning]]]{1d10+5钝击伤害}。</p>\n<p><strong>失败</strong> 生物被推向墙壁10尺。如果生物将撞上墙壁，它受到[[/r (2d10+10)[bludgeoning]]]{2d10+10钝击伤害}。</p>\n<p><strong>大失败</strong> 生物被推向墙壁15尺。如果生物将撞上墙壁，它受到[[/r (3d10+15)[bludgeoning]]]{3d10+15钝击伤害}，并且被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -2360,7 +2360,7 @@
 				},
 				"Lignify":{
 					"name": "木质化 Lignify",
-					"description": "<p>森鬼的触碰会将血肉转化为木头。被森鬼的木质化之手打击命中的活物必须成功通过@Check[type:fortitude|dc:24]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（大失败则获得@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。对本能力的进一步豁免失败会增加缓慢状态值。一旦一个活物的动作数量被本能力降至0，该生物被@UUID[Compendium.pf2e.conditionitems.dTwPJuKgBQCMxixg]{石化 Petrified}，但是变成的是木头而非石头。</p>"
+					"description": "<p>森鬼的触碰会将血肉转化为木头。被森鬼的木质化之手打击命中的活物必须成功通过@Check[type:fortitude|dc:24]豁免，否则获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}（大失败则获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}）。对本能力的进一步豁免失败会增加缓慢状态值。一旦一个活物的动作数量被本能力降至0，该生物被@UUID[Compendium.pf2e.conditionitems.Item.dTwPJuKgBQCMxixg]{石化 Petrified}，但是变成的是木头而非石头。</p>"
 				},
 				"Possess Tree":{
 					"name": "占据树木 Possess Tree",
@@ -2378,7 +2378,7 @@
 			"items":{
 				"Mental Bind":{
 					"name": "心灵枷锁 Mental Bind",
-					"description": "<p><strong>触发</strong> 一个生物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> 30尺内的每个生物都将被沉重的灵质锁链包围，这些锁链由它们自身的罪孽和悔恨铸成。每个生物都必须尝试@Check[type:will|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物的速度受到-10尺状态减值，持续1轮。</p>\n<p><strong>失败</strong> 生物被@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}，直到@UUID[Compendium.pf2e.actionspf2e.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 25）。</p>\n<p><strong>大失败</strong> 类似失败，但是生物被负罪感压倒，还陷入@UUID[Compendium.pf2e.conditionitems.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1日。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> 30尺内的每个生物都将被沉重的灵质锁链包围，这些锁链由它们自身的罪孽和悔恨铸成。每个生物都必须尝试@Check[type:will|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物的速度受到-10尺状态减值，持续1轮。</p>\n<p><strong>失败</strong> 生物被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}，直到@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 25）。</p>\n<p><strong>大失败</strong> 类似失败，但是生物被负罪感压倒，还陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1日。</p>"
 				}
 			}
 		},
@@ -2393,7 +2393,7 @@
 				},
 				"Final Spite":{
 					"name": "最后的怨恨 Final Spite",
-					"description": "<p><strong>触发</strong> 尸妖指挥官的生命值降至0；</p>\n<hr />\n<p><strong>效果</strong> 尸妖指挥官在被摧毁前吹响了一个破旧的战争号角。令人不安的爆鸣声召唤来了援军，将@Template[type:emanation|distance:200]范围内的[[/r 1d4 #Corspes]]{1d4具尸体}复活为@UUID[Compendium.pf2e.pathfinder-bestiary.ZPjQkKVMi3xoPcU0]{尸妖 Wights}。</p>"
+					"description": "<p><strong>触发</strong> 尸妖指挥官的生命值降至0；</p>\n<hr />\n<p><strong>效果</strong> 尸妖指挥官在被摧毁前吹响了一个破旧的战争号角。令人不安的爆鸣声召唤来了援军，将@Template[type:emanation|distance:200]范围内的[[/r 1d4 #Corspes]]{1d4具尸体}复活为@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.ZPjQkKVMi3xoPcU0]{尸妖 Wights}。</p>"
 				},
 				"Coordinated Strike":{
 					"name": "协同打击 Coordinated Strike",
@@ -2401,15 +2401,15 @@
 				},
 				"Drain Life":{
 					"name": "汲取生命 Drain Life",
-					"description": "<p>当尸妖指挥官对一个活着的生物使用无武装攻击或者绑定的武器打击并造成伤害时，它获得12点临时生命值，并且目标必须通过@Check[type:fortitude|dc:29]检定否则获得@UUID[Compendium.pf2e.conditionitems.4D2KBtexWXa6oUMR]{流失 Drained 1}。尸妖指挥官的无武装攻击或者绑定武器打击造成的进一步伤害将使流失值在再次豁免失败时增加1，最多达到流失4。</p>"
+					"description": "<p>当尸妖指挥官对一个活着的生物使用无武装攻击或者绑定的武器打击并造成伤害时，它获得12点临时生命值，并且目标必须通过@Check[type:fortitude|dc:29]检定否则获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。尸妖指挥官的无武装攻击或者绑定武器打击造成的进一步伤害将使流失值在再次豁免失败时增加1，最多达到流失4。</p>"
 				},
 				"Spawn Wight Soldier":{
 					"name": "尸妖士兵衍体 Spawn Wight Soldier",
-					"description": "<p>被尸妖指挥官的武器或者利爪打击杀死的活着的类人生物[[/r 1d4 #rounds]]{1d4轮}之后变成一个与尸妖指挥官不同的、等级与指挥官相同或更低的尸妖衍体（通常是猎手尸妖衍体或尸妖潜伏者衍体）。这具衍体听命于杀死它的尸妖指挥官。当它处于尸妖衍体的状态时，没有汲取生命和制造尸妖衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果尸妖衍体的创造者死亡，则该衍体变成完全自主的尸妖；它重获自由意志，获得汲取生命和创造尸妖衍体的能力，并且不再笨拙。</p>"
+					"description": "<p>被尸妖指挥官的武器或者利爪打击杀死的活着的类人生物[[/r 1d4 #rounds]]{1d4轮}之后变成一个与尸妖指挥官不同的、等级与指挥官相同或更低的尸妖衍体（通常是猎手尸妖衍体或尸妖潜伏者衍体）。这具衍体听命于杀死它的尸妖指挥官。当它处于尸妖衍体的状态时，没有汲取生命和制造尸妖衍体的能力，并且一直拥有@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}状态。如果尸妖衍体的创造者死亡，则该衍体变成完全自主的尸妖；它重获自由意志，获得汲取生命和创造尸妖衍体的能力，并且不再笨拙。</p>"
 				},
 				"Tactical Direction":{
 					"name": "Tactical Direction",
-					"description": "<p>@Template[type:emanation|distance:30]范围内的所有尸妖盟友获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.hFtNbo1LKYCoDy2O]{借机攻击 Attack of Opportunity}反应动作，直到它们的下一回合结束。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]范围内的所有尸妖盟友获得@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.hFtNbo1LKYCoDy2O]{借机攻击 Attack of Opportunity}反应动作，直到它们的下一回合结束。</p>"
 				}
 			}
 		},
@@ -2420,7 +2420,7 @@
 			"items":{
 				"Slow":{
 					"name": "缓慢 Slow",
-					"description": "<p>枯槁尸永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+					"description": "<p>枯槁尸永久具有@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -2428,7 +2428,7 @@
 				},
 				"Sudden Surge":{
 					"name": "速度激增 Sudden Surge",
-					"description": "<p><strong>触发</strong> 枯槁尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯槁尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯槁尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>枯槁尸在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用此能力。</p>"
+					"description": "<p><strong>触发</strong> 枯槁尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯槁尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯槁尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>枯槁尸在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用此能力。</p>"
 				}
 			}
 		},
@@ -2439,7 +2439,7 @@
 			"items":{
 				"Surge of Speed":{
 					"name": "急速猛冲 Surge of Speed",
-					"description": "<p>骷髅狼行走3次，但它直到下回合开始前都@UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>骷髅狼行走3次，但它直到下回合开始前都@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
 				}
 			}
 		},
@@ -2469,11 +2469,11 @@
 			"items":{
 				"Severed Trunk":{
 					"name": "断鼻 Severed Trunk",
-					"description": "<p>当丧尸猛犸被一个造成挥砍伤害的打击重击时，猛犸的象鼻被切离它的躯体，任何被象鼻@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物都被释放，猛犸失去象鼻打击和高等紧勒能力。</p>\n<p>象鼻在战场上滑行，仍然活化，并且在丧尸猛犸的先攻顺序之后立即行动。鼻子保留了高等紧勒能力和象鼻打击，但它不能使用象牙打击、象足打击、蹒跚践踏能力。它的数据和猛犸本体相同，除了AC降至23，只有50HP，速度为10尺。对断鼻造成的伤害不会影响丧尸猛犸。</p>"
+					"description": "<p>当丧尸猛犸被一个造成挥砍伤害的打击重击时，猛犸的象鼻被切离它的躯体，任何被象鼻@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物都被释放，猛犸失去象鼻打击和高等紧勒能力。</p>\n<p>象鼻在战场上滑行，仍然活化，并且在丧尸猛犸的先攻顺序之后立即行动。鼻子保留了高等紧勒能力和象鼻打击，但它不能使用象牙打击、象足打击、蹒跚践踏能力。它的数据和猛犸本体相同，除了AC降至23，只有50HP，速度为10尺。对断鼻造成的伤害不会影响丧尸猛犸。</p>"
 				},
 				"Slow":{
 					"name": "缓慢 Slow",
-					"description": "<p>丧尸猛犸永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+					"description": "<p>丧尸猛犸永久具有@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
 				},
 				"Greater Constrict":{
 					"name": "高等紧勒 Greater Constrict",
@@ -2492,15 +2492,15 @@
 			"items":{
 				"Slow":{
 					"name": "缓慢 Slow",
-					"description": "<p>丧尸枭熊永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+					"description": "<p>丧尸枭熊永久具有@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
 				},
 				"Ground Slam":{
 					"name": "砸地猛击 Ground Slam",
-					"description": "<p><strong>需求</strong> 丧尸枭熊用熊爪@UUID[Compendium.pf2e.conditionitems.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 丧尸枭熊将这个生物反复砸向地面。这会造成[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免大失败时，该生物获得@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，而大成功时此生物不再被擒抱或束缚。</p>"
+					"description": "<p><strong>需求</strong> 丧尸枭熊用熊爪@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 丧尸枭熊将这个生物反复砸向地面。这会造成[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免大失败时，该生物获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，而大成功时此生物不再被擒抱或束缚。</p>"
 				},
 				"Horrifying Screech":{
 					"name": "骇人尖啸 Horrifying Screech",
-					"description": "<p>丧尸枭熊发出一声破音且震耳欲聋的尖啸，令听到的所有人感到不安。@Template[type:emanation|distance:60] must attempt a @Check[type:will|dc:19]范围内的每个生物都必须进行DC 19意志豁免。无论结果如何，受影响的生物都会暂时免疫1分钟。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮，并获得@UUID[Compendium.pf2e.conditionitems.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
+					"description": "<p>丧尸枭熊发出一声破音且震耳欲聋的尖啸，令听到的所有人感到不安。@Template[type:emanation|distance:60] must attempt a @Check[type:will|dc:19]范围内的每个生物都必须进行DC 19意志豁免。无论结果如何，受影响的生物都会暂时免疫1分钟。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮，并获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>"
 				}
 			}
 		},
@@ -2511,11 +2511,11 @@
 			"items":{
 				"Slow":{
 					"name": "缓慢 Slow",
-					"description": "<p>丧尸蛇永久具有@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
+					"description": "<p>丧尸蛇永久具有@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}且无法使用反应动作。</p>"
 				},
 				"Filth Fever":{
 					"name": "腐热症 Filth Fever",
-					"description": "<p>在腐热症被治愈前，此疾病造成的恶心和失去意识状态不能结束或降低状态值。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病([[/r 1d4 #Stage 1]]{1d4小时})</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.fesd1n5eVhpCSS18]{恶心 Sickened 1} (1天)</p>\n<p><strong>阶段3</strong> 恶心1和@UUID[Compendium.pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1天)</p>\n<p><strong>阶段4</strong> @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{失去意识 Unconscious} (1天)</p>\n<p><strong>阶段5</strong> 死亡</p>"
+					"description": "<p>在腐热症被治愈前，此疾病造成的恶心和失去意识状态不能结束或降低状态值。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>阶段1</strong> 携带但不发病([[/r 1d4 #Stage 1]]{1d4小时})</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1} (1天)</p>\n<p><strong>阶段3</strong> 恶心1和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1天)</p>\n<p><strong>阶段4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious} (1天)</p>\n<p><strong>阶段5</strong> 死亡</p>"
 				}
 			}
 		},
