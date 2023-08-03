@@ -50,7 +50,7 @@
             "duration": "1分钟"
         },
         "Sheets Of Ice": {
-            "description": "<p>你丢下一片从指尖冒出的冰层。对@Template[type:cone|distance:10]内的所有生物造成[[/r 1d8[cold]]]伤害，该区域内的生物必须尝试一次基础反射豁免。该区域的地面覆盖了一层冰面，成为困难地形和不稳地面，持续1轮。</p>\n<p><span class=\"pf2-icon\">d </span>（姿势、语言）区域为10尺锥形。</p>\n<p><span class=\"pf2-icon\">t</span> （材料，姿势，语言）区域为20尺锥形。</p>\n<p><strong>2轮</strong> 区域为30尺锥形，如果你花费3个动作来施放该法术，你可以不完成施法，并在你的下个回合花费额外3个动作来进一步增强该法术。如果你选择这样做，这个法术造成的伤害会提升[[/r 1d8[cold]]]，并且造成的冰面持续时间延长一轮。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 该初始伤害，以及2轮施法时间的额外伤害，各增加[[/r 1d8[cold]]]，冰面持续的时间和2轮施法延长的冰面持续时间增加1轮。</p>",
+            "description": "<p>你丢下一片从指尖冒出的冰层。对@Template[type:cone|distance:10]内的所有生物造成@Damage[1d8[cold]]伤害，该区域内的生物必须尝试一次基础反射豁免。该区域的地面覆盖了一层冰面，成为困难地形和不稳地面，持续1轮。</p>\n<p><span class=\"pf2-icon\">d </span>（姿势、语言）区域为10尺锥形。</p>\n<p><span class=\"pf2-icon\">t</span> （材料，姿势，语言）区域为20尺锥形。</p>\n<p><strong>2轮</strong> 区域为30尺锥形，如果你花费3个动作来施放该法术，你可以不完成施法，并在你的下个回合花费额外3个动作来进一步增强该法术。如果你选择这样做，这个法术造成的伤害会提升@Damage[1d8[cold]]，并且造成的冰面持续时间延长一轮。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 该初始伤害，以及2轮施法时间的额外伤害，各增加@Damage[1d8[cold]]，冰面持续的时间和2轮施法延长的冰面持续时间增加1轮。</p>",
             "name": "难履薄冰 Sheets of Ice",
             "time": "2动作~2轮"
         },
@@ -68,7 +68,7 @@
             "duration": "1分钟"
         },
         "Rot From Within": {
-            "description": "<p>你受诅咒的存在本身会加速那些患病者的死亡，从而增强你自己的疾病力量。每个生物在弥漫范围内陷入恶心状态或增加恶心状态时，它必须尝试一次强韧豁免。你恢复等于法术造成伤害的一半的生命值（包括流失状态造成的伤害）。</p>\n<hr />\n<p><strong>大成功</strong> 目标临时免疫1天。</p>\n<p><strong>成功</strong> 如同大成功，但是目标受到[[/r 2d8[negative]]]伤害。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，如果他已经陷入流失状态，则提升流失状态1点。目标受到[[/r 4d8[negative]]]伤害。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}或将流失状态提升2，目标受到[[/r 8d8[negative]]]伤害。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 目标在豁免成功时受到的负能量伤害提升1d8，失败时提升2d8，大失败提升4d8。</p>",
+            "description": "<p>你受诅咒的存在本身会加速那些患病者的死亡，从而增强你自己的疾病力量。每个生物在弥漫范围内陷入恶心状态或增加恶心状态时，它必须尝试一次强韧豁免。你恢复等于法术造成伤害的一半的生命值（包括流失状态造成的伤害）。</p>\n<hr />\n<p><strong>大成功</strong> 目标临时免疫1天。</p>\n<p><strong>成功</strong> 如同大成功，但是目标受到@Damage[2d8[negative]]伤害。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，如果他已经陷入流失状态，则提升流失状态1点。目标受到@Damage[4d8[negative]]伤害。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}或将流失状态提升2，目标受到@Damage[8d8[negative]]伤害。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 目标在豁免成功时受到的负能量伤害提升1d8，失败时提升2d8，大失败提升4d8。</p>",
             "name": "内部腐烂 Rot From Within",
             "duration": "1分钟"
         },
@@ -79,7 +79,7 @@
             "duration": "1分钟"
         },
         "Flash Of Brilliance": {
-            "description": "<p>你使射程内的某个光源，如承载光亮法术的物体、火炬或太阳棒，发出强光。距离目标@Template[type:burst|distance:20]范围内的所有生物必须尝试进行一次强韧豁免。在 施展完成后，法术会自动熄灭非魔法光亮，并试图反制魔法光亮。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮并目眩1分钟。该生物可以通过一个交互动作揉眼睛来解除目盲状态。</p>\n<p><strong>大失败</strong> 如同失败，但是该生物在目眩时还会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>",
+            "description": "<p>你使射程内的某个光源，如承载光亮法术的物体、火炬或太阳棒，发出强光。距离目标@Template[type:burst|distance:20]范围内的所有生物必须尝试进行一次强韧豁免。在 施展完成后，法术会自动熄灭非魔法光亮，并试图反制魔法光亮。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>失败</strong> 该生物@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮并目眩1分钟。该生物可以通过一个交互动作揉眼睛来解除目盲状态。</p>\n<p><strong>大失败</strong> 如同失败，但是该生物在目眩时还会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>",
             "name": "光芒一现 Flash Of Brilliance",
             "target": "一个发光的物体",
             "range": "30尺"
@@ -119,14 +119,14 @@
             "duration": "维持,最多1分钟"
         },
         "Mind's Eye Wink": {
-            "description": "<p>你用心灵之眼将你的梦境表现在目标上，并诞生一种虚幻的危险。</p>\n<p><strong>区域 </strong>该区域所有坚实的地面都是来自梦境的绚丽色彩。处于该区域内或通过该区域的生物必须进行一次意志豁免。豁免失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到他们离开这个区域1轮后，大失败的生物还会在目眩时陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>目标</strong> 如果你对无人看管的物体施展法术，任何试图拾取该物体的人都必须成功地对你的法术DC进行意志豁免，否则他们认为该物体是危险的，会对他们造成伤害。如果你的目标是一个有人看管的物体或一个生物捡起的无人看管的物体，拥有该物体的生物必须尝试一次意志豁免。如果失败，持有者或持用者将对涉及使用该物品的所有检定具有-1的环境减值或是大失败时的-2减值。生物可以尝试使用@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}动作来拒绝相信该效果。如果它成功地不相信，它会在剩余的时间内忽略这个法术的效果。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.MRmk2FTtgLo1YbQI]{法术效果: 心灵之眼 (失败)}</p>\n<p>@UUID[Compendium.oracles.oracles-effects.D3hicZONMeKpsORK]{法术效果: 心灵之眼 (大失败)}</p>",
+            "description": "<p>你用心灵之眼将你的梦境表现在目标上，并诞生一种虚幻的危险。</p>\n<p><strong>区域 </strong>该区域所有坚实的地面都是来自梦境的绚丽色彩。处于该区域内或通过该区域的生物必须进行一次意志豁免。豁免失败的生物将陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}直到他们离开这个区域1轮后，大失败的生物还会在目眩时陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<p><strong>目标</strong> 如果你对无人看管的物体施展法术，任何试图拾取该物体的人都必须成功地对你的法术DC进行意志豁免，否则他们认为该物体是危险的，会对他们造成伤害。如果你的目标是一个有人看管的物体或一个生物捡起的无人看管的物体，拥有该物体的生物必须尝试一次意志豁免。如果失败，持有者或持用者将对涉及使用该物品的所有检定具有-1的环境减值或是大失败时的-2减值。生物可以尝试使用@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}动作来拒绝相信该效果。如果它成功地不相信，它会在剩余的时间内忽略这个法术的效果。</p>\n<p>@UUID[Compendium.oracles.oracles-effects.MRmk2FTtgLo1YbQI]{法术效果: 心灵之眼 (失败)}</p>\n<p>@UUID[Compendium.oracles.oracles-effects.D3hicZONMeKpsORK]{法术效果: 心灵之眼 (大失败)}</p>",
             "name": "心灵之眼 Mind's Eye Wink",
             "target": "4个不重叠的5尺方格，或一个重量不超过1负载的物体",
             "range": "30尺",
             "duration": "维持,最多1分钟"
         },
         "Sharp Note": {
-            "description": "<p>你释放出一阵特别尖锐的音符，钻入目标的脑海，造成[[/r 1d8[sonic]]]伤害，区域内的每个生物必须尝试一次强韧豁免。</p>\n<hr>\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物只受一半伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害并陷入1轮的@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。</p>\n<p><strong>大失败</strong> 该生物承受双倍伤害，并陷入1分钟的耳聋，在他耳聋时还会承受[[/r 1d4[persistent,bleed]]]伤害。</p>\n<hr>\n<p><strong>升阶 (+2)</strong> 音波伤害提升2d8，持续流血伤害提升[[/r 1d4]]。</p>",
+            "description": "<p>你释放出一阵特别尖锐的音符，钻入目标的脑海，造成@Damage[1d8[sonic]]伤害，区域内的每个生物必须尝试一次强韧豁免。</p>\n<hr>\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物只受一半伤害。</p>\n<p><strong>失败</strong> 该生物承受完整伤害并陷入1轮的@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}。</p>\n<p><strong>大失败</strong> 该生物承受双倍伤害，并陷入1分钟的耳聋，在他耳聋时还会承受[[/r 1d4[persistent,bleed]]]伤害。</p>\n<hr>\n<p><strong>升阶 (+2)</strong> 音波伤害提升2d8，持续流血伤害提升[[/r 1d4]]。</p>",
             "name": "尖锐音符 Sharp Note"
         },
         "Enchanting Rhapsody": {
@@ -247,7 +247,7 @@
             "range": "30尺"
         },
         "Life Link+": {
-            "description": "<p>你在自己和目标之间创造出生命力之桥，互相彼此承担伤害。当你施放该法术时，目标恢复 [[/r 1d6[healing]]]。</p>\n<p>每轮目标第一次受到伤害时，减少所受伤害2点（最低为0）。你失去目标伤害减少量的HP；这种HP损失忽略你所有免疫和抗力，无法用任何方法降低。</p>\n<p>该法术在你 @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}时立刻终止。你可以 @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{解消 Dismiss} 该法术。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 你可以多链接一个生物。将治疗量提升2d6，最高可减少伤害量和失去生命值提升3。</p>",
+            "description": "<p>你在自己和目标之间创造出生命力之桥，互相彼此承担伤害。当你施放该法术时，目标恢复 @Damage[1d6[healing]]。</p>\n<p>每轮目标第一次受到伤害时，减少所受伤害2点（最低为0）。你失去目标伤害减少量的HP；这种HP损失忽略你所有免疫和抗力，无法用任何方法降低。</p>\n<p>该法术在你 @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}时立刻终止。你可以 @UUID[Compendium.pf2e.actionspf2e.Item.AjLSHZSWQ90exdLo]{解消 Dismiss} 该法术。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 你可以多链接一个生物。将治疗量提升2d6，最高可减少伤害量和失去生命值提升3。</p>",
             "name": "生命链接+ Life Link+",
             "target": "一个你以外的生物",
             "range": "30尺",

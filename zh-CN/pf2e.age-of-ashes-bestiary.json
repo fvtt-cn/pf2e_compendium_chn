@@ -189,7 +189,7 @@
 			"items":{
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d6+6)[bludgeoning]]]{1d6+6钝击伤害}, @Check[type:fortitude|dc:26|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(1d6+6)[bludgeoning]]{1d6+6钝击伤害}, @Check[type:fortitude|dc:26|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Eight Coils":{
 					"name": "八圈 Eight Coils",
@@ -275,7 +275,7 @@
 				},
 				"Deny Advantage":{
 					"name": "否决优势 Deny Advantage",
-					"description": "<p>卡尔蒙特不会由于3级或更低等级生物的@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或夹击而陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>卡尔蒙特不会由于3级或更低等级生物的@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或夹击而陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Nimble Dodge":{
 					"name": "灵巧躲避 Nimble Dodge",
@@ -291,7 +291,7 @@
 				},
 				"Surprise Attack":{
 					"name": "突袭打击 Surprise Attack",
-					"description": "<p>若卡尔蒙特使用欺骗或隐秘骰先攻，那么在战斗第一轮内，还未行动的生物对抗卡尔蒙时视同为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>若卡尔蒙特使用欺骗或隐秘骰先攻，那么在战斗第一轮内，还未行动的生物对抗卡尔蒙时视同为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -366,7 +366,7 @@
 				},
 				"Caustic Nightmare Vapor":{
 					"name": "腐蚀性梦魇蒸汽 Caustic Nightmare Vapor",
-					"description": "<p>泥怪免疫这种毒素。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>潜伏期</strong> 1轮</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (4d6)[acid]]]{4d6酸液伤害}和@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (6d6)[acid]]]{6d6酸液伤害}，困惑和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (8d6)[acid]]]{8d6酸液伤害}，困惑，措手不及和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1轮)</p>"
+					"description": "<p>泥怪免疫这种毒素。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:38]</p>\n<p><strong>潜伏期</strong> 1轮</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (4d6)[acid]]]{4d6酸液伤害}和@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (6d6)[acid]]]{6d6酸液伤害}，困惑和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (8d6)[acid]]]{8d6酸液伤害}，困惑，措手不及和@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2} (1轮)</p>"
 				}
 			}
 		},
@@ -908,7 +908,7 @@
 				},
 				"Scoundrel":{
 					"name": "无赖 Scoundrel",
-					"description": "<p>当法洛克成功进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}后，目标在对抗他尝试的近战攻击时会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，持续至他的下个回合结束为止。在大成功时，目标会在对抗所有近战攻击时陷入措手不及，持续至他们的下个回合结束为止，而非仅仅是法洛克的回合结束。</p>"
+					"description": "<p>当法洛克成功进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}后，目标在对抗他尝试的近战攻击时会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，持续至他的下个回合结束为止。在大成功时，目标会在对抗所有近战攻击时陷入措手不及，持续至他们的下个回合结束为止，而非仅仅是法洛克的回合结束。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -1093,7 +1093,7 @@
 			"items":{
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (4d8+10)[bludgeoning]]]{4d8+10钝击伤害}, @Check[type:fortitude|dc:41|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(4d8+10)[bludgeoning]]{4d8+10钝击伤害}, @Check[type:fortitude|dc:41|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Grasping Hands":{
 					"name": "收紧手臂 Grasping Hands",
@@ -1615,7 +1615,7 @@
 				},
 				"Giant Tarantula Venom":{
                     "name": "巨狼蛛毒 Giant Tarantula Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>最大持续时间</strong> 8轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d6)[poison]]]{1d6毒素}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段4</strong> [[/r (1d6)[poison]]]{1d6毒素} 和@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>最大持续时间</strong> 8轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d6)[poison]]]{1d6毒素}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段4</strong> [[/r (1d6)[poison]]]{1d6毒素} 和@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1轮)</p>"
                 },
 				"Hair Barrage":{
                     "name": "刚毛射击 Hair Barrage",
@@ -1659,7 +1659,7 @@
 				},
 				"Shield Shove":{
 					"name": "持盾推挤 Shield Shove",
-					"description": "<p>寄望城守卫用他们的长剑作出1 次打击，之后尝试将目标推开。若打击命中，目标会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，持续至守卫的下个回合开始为止，之后守卫能自动推撞目标，这会产生与推撞动作相同的效用（若打击造成重击，则会包含推撞大成功时的效果）。若守卫跟着目标移动，那么此次移动不会触发反应动作。此外，若目标由于撞到物体而停止移动，则目标会受到伤害，数值等同于守卫的力量调整值。</p>"
+					"description": "<p>寄望城守卫用他们的长剑作出1 次打击，之后尝试将目标推开。若打击命中，目标会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，持续至守卫的下个回合开始为止，之后守卫能自动推撞目标，这会产生与推撞动作相同的效用（若打击造成重击，则会包含推撞大成功时的效果）。若守卫跟着目标移动，那么此次移动不会触发反应动作。此外，若目标由于撞到物体而停止移动，则目标会受到伤害，数值等同于守卫的力量调整值。</p>"
 				},
 				"Sudden Charge":{
 					"name": "突袭冲锋 Sudden Charge",
@@ -1700,7 +1700,7 @@
 			"items":{
 				"Anadi Venom":{
 					"name": "半蛛人毒液 Anadi Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}，措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}，措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>"
 				},
 				"Change Shape":{
 					"name": "变身 Change Shape",
@@ -1773,7 +1773,7 @@
 				},
 				"Precise Debilitations":{
 					"name": "精准削弱 Precise Debilitations",
-					"description": "<p><strong>触发</strong> 探子的打击命中一名措手不及的生物且造成伤害。</p>\n<hr />\n<p><strong>效果</strong> 探子将后述削弱内容之一应用至该生物，其效果会持续至他的下个回合结束为止。</p>\n<ul>\n<li><em>额头割伤 Brow Gash</em> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</li>\n<li><em>深挖伤口 Deep Cut</em> 目标从缇娅的攻击承受的伤害额外增加[[/r 2d6[precision]]]{2d6精准伤害} 。</li>\n<li><em>断筋 Hamstring</em> 目标的速度承受-10尺状态减值。</li>\n<li><em>Low Blow</em> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{效果: 断筋}</p>"
+					"description": "<p><strong>触发</strong> 探子的打击命中一名措手不及的生物且造成伤害。</p>\n<hr />\n<p><strong>效果</strong> 探子将后述削弱内容之一应用至该生物，其效果会持续至他的下个回合结束为止。</p>\n<ul>\n<li><em>额头割伤 Brow Gash</em> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</li>\n<li><em>深挖伤口 Deep Cut</em> 目标从缇娅的攻击承受的伤害额外增加@Damage[2d6[precision]]{2d6精准伤害} 。</li>\n<li><em>断筋 Hamstring</em> 目标的速度承受-10尺状态减值。</li>\n<li><em>Low Blow</em> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</li>\n</ul>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.otUESSH8BDdPKHtb]{效果: 断筋}</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -1781,7 +1781,7 @@
 				},
 				"Weapon Trick":{
 					"name": "武器技巧 Weapon Trick",
-					"description": "<p>探子在对抗@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物时，若攻击检定掷出大成功的话，则能够应用他所持用的武器的武器专精效果。</p>"
+					"description": "<p>探子在对抗@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物时，若攻击检定掷出大成功的话，则能够应用他所持用的武器的武器专精效果。</p>"
 				}
 			}
 		},
@@ -1813,7 +1813,7 @@
 				},
 				"Dual Abuse":{
 					"name": "双击虐袭 Dual Abuse",
-					"description": "<p>执行者利用一次攻击造成的痛苦作为开端，紧接着打出毁灭性的第二击。执行者对相同目标作出两次攻击：一次弯刀打击和一次闷棍打击（任意顺序）或两次复合短弓打击。若两次攻击都命中，第二次攻击会额外造成[[/r (3d6}]]{3d6伤害}，而且执行者会将后述状态中的一种施加给目标，持续至执行者的下个回合结束为止：@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}、@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}、@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}或@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p>在判断执行者的多重攻击减值时，这被视为两次攻击，但要直至两次攻击都作出后再应用此攻击带来的减值提升。</p>"
+					"description": "<p>执行者利用一次攻击造成的痛苦作为开端，紧接着打出毁灭性的第二击。执行者对相同目标作出两次攻击：一次弯刀打击和一次闷棍打击（任意顺序）或两次复合短弓打击。若两次攻击都命中，第二次攻击会额外造成[[/r (3d6}]]{3d6伤害}，而且执行者会将后述状态中的一种施加给目标，持续至执行者的下个回合结束为止：@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}、@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}、@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}或@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。</p>\n<p>在判断执行者的多重攻击减值时，这被视为两次攻击，但要直至两次攻击都作出后再应用此攻击带来的减值提升。</p>"
 				},
 				"Efficient Capture":{
 					"name": "高效抓捕 Efficient Capture",
@@ -1884,7 +1884,7 @@
 				},
 				"Collapse Ceiling":{
 					"name": "穹顶坍塌 Collapse Ceiling",
-					"description": "<p>废墟坍塌至多三个10×10尺大小的属于它的天花板。每坍塌一个部分废墟会受到[[/r (10}]]{10伤害}，并且在修复之前不能坍塌相同的部分。</p>\n<p>这些区域中的每个生物受到[[/r 8d10[bludgeoning]]]{8d10钝击伤害}，@Check[type:reflex|dc:35|basic:true]豁免。豁免失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}在瓦砾下直到他成功使用逃脱动作（DC 33）。</p>"
+					"description": "<p>废墟坍塌至多三个10×10尺大小的属于它的天花板。每坍塌一个部分废墟会受到[[/r (10}]]{10伤害}，并且在修复之前不能坍塌相同的部分。</p>\n<p>这些区域中的每个生物受到@Damage[8d10[bludgeoning]]{8d10钝击伤害}，@Check[type:reflex|dc:35|basic:true]豁免。豁免失败的生物还会被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}在瓦砾下直到他成功使用逃脱动作（DC 33）。</p>"
 				},
 				"Pervasive Attacks":{
 					"name": "广域打击 Pervasive Attacks",
@@ -1993,11 +1993,11 @@
 				},
 				"Spine Volley":{
 					"name": "脊刺齐射 Spine Volley",
-					"description": "<p>泰拉斯奎在@Template[type:cone|distance:120]范围投射脊刺，对该区域内的每个生物造成[[/r (3d10+20)[piercing]]]{3d10+20穿刺伤害}（@Check[type:reflex|dc:53|basic:true]豁免）。</p>\n<p>泰拉斯奎在[[/br 1d4 #rounds]]{1d4轮}内不能再使用此能力。</p>"
+					"description": "<p>泰拉斯奎在@Template[type:cone|distance:120]范围投射脊刺，对该区域内的每个生物造成@Damage[(3d10+20)[piercing]]{3d10+20穿刺伤害}（@Check[type:reflex|dc:53|basic:true]豁免）。</p>\n<p>泰拉斯奎在[[/br 1d4 #rounds]]{1d4轮}内不能再使用此能力。</p>"
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>超大型，[[/r (10d6+12)[bludgeoning]]]{10d6+12钝击} plus [[/r (10d6)[acid]]]{10d6酸液}，破裂50</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型，@Damage[(10d6+12)[bludgeoning]]{10d6+12钝击} plus [[/r (10d6)[acid]]]{10d6酸液}，破裂50</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"Trample":{
 					"name": "践踏 Trample",
@@ -2353,7 +2353,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>超大型，[[/r (8d6+8)[bludgeoning]]]{8d6+8钝击}和[[/r (12d6)[fire]]]{12d6火焰}，破裂35</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型，@Damage[(8d6+8)[bludgeoning]]{8d6+8钝击}和[[/r (12d6)[fire]]]{12d6火焰}，破裂35</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"Trample":{
 					"name": "践踏 Trample",
@@ -2612,7 +2612,7 @@
 				},
 				"hZNyCnxdujLVMKqb":{
 					"name":"寻找突破口 Identify an Opening",
-					"description":"<p><strong>需求</strong> 有生物在对抗霍博克的下次近战攻击时陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p><strong>效果</strong> 霍博克指出该生物防御上的漏洞。霍博克的所有听到并理解该指令的盟友对该生物尝试的全部近战攻击均会将该生物视为陷入措手不及，持续至霍博克的下个回合开始为止。</p>"
+					"description":"<p><strong>需求</strong> 有生物在对抗霍博克的下次近战攻击时陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<hr />\n<p><strong>效果</strong> 霍博克指出该生物防御上的漏洞。霍博克的所有听到并理解该指令的盟友对该生物尝试的全部近战攻击均会将该生物视为陷入措手不及，持续至霍博克的下个回合开始为止。</p>"
 				}
 			}
 		},
@@ -2706,7 +2706,7 @@
 			"items":{
 				"G04XQpPTsP0scmx5":{
 					"name":"舷侧的优雅 Shipboard Grace",
-					"description":"<p>雇佣水手身处于船只上时，不会在@Compendium[pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balancing}或@Compendium[pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climbing}中陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description":"<p>雇佣水手身处于船只上时，不会在@Compendium[pf2e.actionspf2e.M76ycLAqHoAgbcej]{保持平衡 Balancing}或@Compendium[pf2e.actionspf2e.pprgrYQ1QnIDGZiy]{攀爬 Climbing}中陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"9RaYMbm66QxVktif":{
 					"name":"舷侧巧击 Shipboard Savvy",
@@ -2903,7 +2903,7 @@
 				},
 				"Deny Advantage":{
 					"name": "否决优势 Deny Advantage",
-					"description": "<p>探子不会因等级为6或以下生物的@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、夹击或使用突袭打击而陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>探子不会因等级为6或以下生物的@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、夹击或使用突袭打击而陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Mobility":{
 					"name": "灵活移动 Mobility",
@@ -2919,7 +2919,7 @@
 				},
 				"Surprise Attack":{
 					"name": "突袭打击 Surprise Attack",
-					"description": "<p>战斗第一轮时，还未行动的生物对探子@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>战斗第一轮时，还未行动的生物对探子@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -3011,7 +3011,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d10+12)[bludgeoning]]]{1d10+12钝击伤害}。</p>\n<p>@Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(1d10+12)[bludgeoning]]{1d10+12钝击伤害}。</p>\n<p>@Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Attack of Opportunity":{
 					"name": "借机攻击 Attack of Opportunity",

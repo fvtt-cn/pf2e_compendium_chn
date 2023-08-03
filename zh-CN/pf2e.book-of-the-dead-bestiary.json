@@ -45,7 +45,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (2d8+2)[piercing]]]{2d8+2穿刺}，@Check[type:fortitude|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(2d8+2)[piercing]]{2d8+2穿刺}，@Check[type:fortitude|dc:24|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				}
 			}
 		},
@@ -171,7 +171,7 @@
 			"items":{
 				"Feast":{
 					"name": "盛宴 Feast",
-					"description": "<p><strong>触发</strong> 一个活物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂噬咬咀嚼，对@Template[type:emanation|distance:30]{30尺}内的所有生物造成[[/r (6d12+35)[piercing]]]{6d12+35穿刺伤害}。受影响的生物必须尝试@Check[type:reflex|dc:41]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，@Localize[PF2E.PersistentDamage.Bleed2d8.success]，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，@Localize[PF2E.PersistentDamage.Bleed4d8.success]，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}。</p>"
+					"description": "<p><strong>触发</strong> 一个活物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂噬咬咀嚼，对@Template[type:emanation|distance:30]{30尺}内的所有生物造成@Damage[(6d12+35)[piercing]]{6d12+35穿刺伤害}。受影响的生物必须尝试@Check[type:reflex|dc:41]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，@Localize[PF2E.PersistentDamage.Bleed2d8.success]，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，@Localize[PF2E.PersistentDamage.Bleed4d8.success]，和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2}。</p>"
 				}
 			}
 		},
@@ -214,7 +214,7 @@
 			"items":{
 				"Sudden Chill":{
 					"name": "冷飕飕 Sudden Chill",
-					"description": "<p><strong>触发</strong> 一个活物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}的鬼魂不断在生者周围聚集，温度显著下降。15尺内的活物受到[[/r (2d4+5)[cold]]]{2d4+5寒冷伤害}（@Check[type:fortitude|dc:17|basic:true]豁免）。豁免大失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
+					"description": "<p><strong>触发</strong> 一个活物进入作祟区域；</p>\n<hr />\n<p><strong>效果</strong> @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}的鬼魂不断在生者周围聚集，温度显著下降。15尺内的活物受到@Damage[(2d4+5)[cold]]{2d4+5寒冷伤害}（@Check[type:fortitude|dc:17|basic:true]豁免）。豁免大失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。</p>"
 				}
 			}
 		},
@@ -263,7 +263,7 @@
 				},
 				"Take Root":{
 					"name": "生根 Take Root",
-					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 腐尸根@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 腐尸根将它的根须埋入那个生物体内，造成[[/r (1d6+11)[piercing]]]{1d6+11穿刺伤害}并汲取目标的生命力（@Check[type:fortitude|dc:30|basic:true]豁免）。豁免失败则目标获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（若已有流失值则流失值+1），腐尸根恢复[[/r (10)[healing]]]{10 HP}。如果此能力令目标生物流失值达到5，该生物死亡。</p>"
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 腐尸根@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 腐尸根将它的根须埋入那个生物体内，造成@Damage[(1d6+11)[piercing]]{1d6+11穿刺伤害}并汲取目标的生命力（@Check[type:fortitude|dc:30|basic:true]豁免）。豁免失败则目标获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}（若已有流失值则流失值+1），腐尸根恢复[[/r (10)[healing]]]{10 HP}。如果此能力令目标生物流失值达到5，该生物死亡。</p>"
 				}
 			}
 		},
@@ -282,7 +282,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>中型, [[/r (2d8+9)[bludgeoning]]]{2d8+9钝击}, 破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>中型, @Damage[(2d8+9)[bludgeoning]]{2d8+9钝击}, 破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -368,7 +368,7 @@
 			"items":{
 				"Desperate Meal":{
 					"name": "绝望进食 Desperate Meal",
-					"description": "<p><strong>触发</strong> 一个生物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> @Template[type:emanation|distance:30]{30尺}内的生物被令人痛苦的饥饿感占据，必须通过@Check[type:fortitude|dc:32]豁免，否则会感觉胃里塞满了石头、泥土和更遭的东西，造成[[/r (6d10+20)[piercing]]]{6d10+20穿刺伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 4}，并且在恶心持续期间，速度有-10尺状态减值。</p>"
+					"description": "<p><strong>触发</strong> 一个生物接近作祟10尺内；</p>\n<hr />\n<p><strong>效果</strong> @Template[type:emanation|distance:30]{30尺}内的生物被令人痛苦的饥饿感占据，必须通过@Check[type:fortitude|dc:32]豁免，否则会感觉胃里塞满了石头、泥土和更遭的东西，造成@Damage[(6d10+20)[piercing]]{6d10+20穿刺伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 生物受到全伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 4}，并且在恶心持续期间，速度有-10尺状态减值。</p>"
 				}
 			}
 		},
@@ -381,7 +381,7 @@
 			"items":{
 				"Whisper":{
 					"name": "低语 Whisper",
-					"description": "<p><strong>触发</strong> 生物进入作祟所在范围；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成[[/r (1d6+4)[mental]]]{1d6+4心灵伤害}（@Check[type:will|dc:19|basic:true]豁免）。豁免失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>"
+					"description": "<p><strong>触发</strong> 生物进入作祟所在范围；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成@Damage[(1d6+4)[mental]]{1d6+4心灵伤害}（@Check[type:will|dc:19|basic:true]豁免）。豁免失败的生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>"
 				}
 			}
 		},
@@ -433,7 +433,7 @@
 			"items":{
 				"Squeeze":{
 					"name": "挤压 Squeeze",
-					"description": "<p><strong>触发</strong> 一个生物经过作祟所在区域；</p>\n<hr />\n<p><strong>效果</strong> 一个有灵质构成的手掌出现，并攥紧触发的PC，造成[[/r (3d8+14)[bludgeoning]]]{3d8+14钝击伤害}（@Check[type:fortitude|dc:22|basic:true]豁免）。如果失败，生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 22）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物经过作祟所在区域；</p>\n<hr />\n<p><strong>效果</strong> 一个有灵质构成的手掌出现，并攥紧触发的PC，造成@Damage[(3d8+14)[bludgeoning]]{3d8+14钝击伤害}（@Check[type:fortitude|dc:22|basic:true]豁免）。如果失败，生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 22）。</p>"
 				}
 			}
 		},
@@ -442,7 +442,7 @@
 			"disable": "<p>@Check[type:occultism|dc:17]（受训）削弱鬼魂；@Check[type:athletics|dc:18]（受训）将鬼魂人脸按回墙里；@Check[type:diplomacy|dc:19] （受训）在辩论中胜过鬼魂；在上述技能检定中总计成功两次才能让鬼魂彻底消失。</p>",
 			"hazarddescription": "<p>墙壁凸出，形似一张嚎叫的人脸，它扭曲变成触手伸向附近的生物。该作祟是由于一个被谋杀的受害者在它临死前或死后被埋进墙里形成的。</p>",
 			"reset": "<p>如果所有生物都离开区域，作祟将停止，并在1分钟之后立即重置。如果作祟被解除，作祟将在1天后重置。只有将尸体从墙内挖出才能将作祟彻底摧毁。</p>",
-			"routine": "<p>(3动作) 鬼魂尝试以[[/r 1d20+14 #Athletics]]{+14运动调整值}@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}10尺内最多2名生物，然后挤压每个被它@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物，造成[[/r (1d10+4)[damage]]]{1d10+4伤害}。作祟第二次尝试擒抱不受多重攻击减值。</p>",
+			"routine": "<p>(3动作) 鬼魂尝试以[[/r 1d20+14 #Athletics]]{+14运动调整值}@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}10尺内最多2名生物，然后挤压每个被它@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物，造成@Damage[(1d10+4)[damage]]{1d10+4伤害}。作祟第二次尝试擒抱不受多重攻击减值。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
@@ -578,7 +578,7 @@
 			"items":{
 				"Carve in Flesh":{
 					"name": "雕刻血肉 Carve in Flesh",
-					"description": "<p><strong>触发</strong> 一个生物读信；</p>\n<hr />\n<p><strong>效果</strong> 作祟将每个笔画刻进生物的肉体，对触发的生物造成[[/r (2d8+11)[slashing]]]{2d8+11挥砍伤害}（@Check[type:will|dc:21|basic:true]豁免）。如果豁免失败，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
+					"description": "<p><strong>触发</strong> 一个生物读信；</p>\n<hr />\n<p><strong>效果</strong> 作祟将每个笔画刻进生物的肉体，对触发的生物造成@Damage[(2d8+11)[slashing]]{2d8+11挥砍伤害}（@Check[type:will|dc:21|basic:true]豁免）。如果豁免失败，该生物还会受到@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
 				}
 			}
 		},
@@ -592,7 +592,7 @@
 			"items":{
 				"Surge Through":{
 					"name": "灵魂汹涌 Surge Through",
-					"description": "<p><strong>触发</strong>  一个生物穿过区域；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成[[/r (3d12+20)[negative]]]{3d12+20负能量伤害}和[[/r (3d12+20)[cold]]]{3d12+20寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。如果豁免失败，生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟。如果豁免大失败，它还会@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}1分钟。</p>"
+					"description": "<p><strong>触发</strong>  一个生物穿过区域；</p>\n<hr />\n<p><strong>效果</strong> 作祟对区域内的生物造成@Damage[(3d12+20)[negative]]{3d12+20负能量伤害}和@Damage[(3d12+20)[cold]]{3d12+20寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。如果豁免失败，生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟。如果豁免大失败，它还会@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}1分钟。</p>"
 				}
 			}
 		},
@@ -630,7 +630,7 @@
 			"items":{
 				"Musical Assault":{
 					"name": "音乐攻击 Musical Assault",
-					"description": "<p><strong>触发</strong> 一个生物触碰到乐器；</p>\n<hr />\n<p><strong>效果</strong> 音乐家演奏出让人骨头颤抖的音乐，对@Template[type:emanation|distance:30]{30尺}内的生物造成[[/r (4d10+22)[sonic]]]{4d10+22音波伤害}（@Check[type:will|dc:30|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物触碰到乐器；</p>\n<hr />\n<p><strong>效果</strong> 音乐家演奏出让人骨头颤抖的音乐，对@Template[type:emanation|distance:30]{30尺}内的生物造成@Damage[(4d10+22)[sonic]]{4d10+22音波伤害}（@Check[type:will|dc:30|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -683,7 +683,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>大型, [[/r (3d6+8)[bludgeoning]]]{3d6+8钝击}, 破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>大型, @Damage[(3d6+8)[bludgeoning]]{3d6+8钝击}, 破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -750,7 +750,7 @@
 				},
 				"Combat Current":{
 					"name": "连击如潮 Combat Current",
-					"description": "<p>幽灵用弯刀或手弩进行一次打击，然后飞行至多一半的速度，再用尚未用过的打击类型再进行一次打击。如果它们在飞行时穿过敌人，那个敌人对第二次打击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>幽灵用弯刀或手弩进行一次打击，然后飞行至多一半的速度，再用尚未用过的打击类型再进行一次打击。如果它们在飞行时穿过敌人，那个敌人对第二次打击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Savvy Joinin' Me Crew?":{
 					"name": "要入伙不？ Savvy Joinin' Me Crew?",
@@ -770,7 +770,7 @@
 			"items":{
 				"Defend Territory":{
 					"name": "护卫领土 Defend Territory",
-					"description": "<p><strong>触发</strong> 一个生物接近至其中一只头骨10尺内；</p>\n<hr />\n<p><strong>效果</strong> 头骨升到空中，幽灵身体浮现，发出愤怒的牛叫。每个野牛头骨@Template[type:emanation|distance:60]{60尺}范围内的每个生物都必须尝试@Check[type:will|dc:36]豁免。然后作祟投掷先攻。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物受到[[/r (1d12+6)[mental]]]{1d12+6心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物受到[[/r (2d12+12)[mental]]]{2d12+12心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物接近至其中一只头骨10尺内；</p>\n<hr />\n<p><strong>效果</strong> 头骨升到空中，幽灵身体浮现，发出愤怒的牛叫。每个野牛头骨@Template[type:emanation|distance:60]{60尺}范围内的每个生物都必须尝试@Check[type:will|dc:36]豁免。然后作祟投掷先攻。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>失败</strong> 生物受到@Damage[(1d12+6)[mental]]{1d12+6心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>\n<p><strong>大失败</strong> 生物受到@Damage[(2d12+12)[mental]]{2d12+12心灵伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}。</p>"
 				},
 				"hG2ocnUMjZCucqB2":{
 					"name": "角抵 Horn",
@@ -793,7 +793,7 @@
 				},
 				"Luring Laugh":{
 					"name": "诱人怪笑 Luring Laugh",
-					"description": "<p><strong>需求</strong> 鬼巨灵正处于鬣狗形态；</p>\n<hr />\n<p><strong>效果</strong> 鬼巨灵发出一声惑人的啁啾。@Template[type:emanation|distance:60]范围内的所有生物必须成功通过@Check[type:will|dc:19]豁免，否则被@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，并在自己的回合中强制向鬼巨灵移动。这个效果会持续到鬼巨灵的下一个回合结束，但是鬼巨灵可以对此能力使用@UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}动作。如果鬼巨灵攻击，只有被攻击的生物才会结束迷魂状态。豁免成功后，该生物对此能力临时免疫24小时。</p>"
+					"description": "<p><strong>需求</strong> 鬼巨灵正处于鬣狗形态；</p>\n<hr />\n<p><strong>效果</strong> 鬼巨灵发出一声惑人的啁啾。@Template[type:emanation|distance:60]范围内的所有生物必须成功通过@Check[type:will|dc:19]豁免，否则被@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并在自己的回合中强制向鬼巨灵移动。这个效果会持续到鬼巨灵的下一个回合结束，但是鬼巨灵可以对此能力使用@UUID[Compendium.pf2e.actionspf2e.Item.3f5DMFu8fPiqHpRg]{维持法术 Sustain a Spell}动作。如果鬼巨灵攻击，只有被攻击的生物才会结束迷魂状态。豁免成功后，该生物对此能力临时免疫24小时。</p>"
 				}
 			}
 		},
@@ -807,7 +807,7 @@
 			"items":{
 				"Stop Heart":{
 					"name": "心跳停止 Stop Heart",
-					"description": "<p><strong>触发</strong> 一个生物阅读或触碰到墓碑；</p>\n<hr />\n<p><strong>效果</strong> 作祟对@Template[type:emanation|distance:60]{60尺}内所有能看见墓碑并且能阅读语言的生物造成[[/r (8d10+44)[negative]]]{8d10+44负能量伤害}（@Check[type:will|dc:47|basic:true]豁免）。如果豁免大失败，生物死亡。</p>"
+					"description": "<p><strong>触发</strong> 一个生物阅读或触碰到墓碑；</p>\n<hr />\n<p><strong>效果</strong> 作祟对@Template[type:emanation|distance:60]{60尺}内所有能看见墓碑并且能阅读语言的生物造成@Damage[(8d10+44)[negative]]{8d10+44负能量伤害}（@Check[type:will|dc:47|basic:true]豁免）。如果豁免大失败，生物死亡。</p>"
 				}
 			}
 		},
@@ -826,7 +826,7 @@
 				},
 				"Submission Lock":{
 					"name": "降服式固定 Submission Lock",
-					"description": "<p><strong>需求</strong> 厮斗之魂@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 魂魄用超自然的紧握削弱对手的力量。厮斗之魂进行一个运动检定来@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}它擒抱或束缚的生物，同时视结果增加[[/r (4d10+12)[negative]]]{4d10+12负能量伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物受到双倍伤害。若他已经力竭，则会@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。如果没有，则目标生物获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直至其下回合结束，在这之后则会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>成功</strong> 该生物受到全部伤害，并获得力竭1直至其下回合结束。</p>"
+					"description": "<p><strong>需求</strong> 厮斗之魂@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 魂魄用超自然的紧握削弱对手的力量。厮斗之魂进行一个运动检定来@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒抱 Grapple}它擒抱或束缚的生物，同时视结果增加@Damage[(4d10+12)[negative]]{4d10+12负能量伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物受到双倍伤害。若他已经力竭，则会@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。如果没有，则目标生物获得@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直至其下回合结束，在这之后则会获得持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>\n<p><strong>成功</strong> 该生物受到全部伤害，并获得力竭1直至其下回合结束。</p>"
 				},
 				"Teleporting Clothesline":{
 					"name": "推掷闪击 Teleporting Clothesline",
@@ -843,7 +843,7 @@
 			"disable": "<p>@Check[type:religion|dc:22]（受训）做法事来抵挡死者；@Check[type:occultism|dc:24]（受训）驱逐愤怒的鬼魂；总共两次成功才能成功解除作祟。</p>",
 			"hazarddescription": "<p>被埋葬的死者纷纷从地面中伸出手来，抓住并拉扯区域内的生者，并将他们拖往地下。</p>",
 			"reset": "<p>在所有活物都离开区域1分钟后，作祟会停止。在1小时后，作祟会重置。</p>",
-			"routine": "<p>（1个动作）贪婪的手攻击区域内所有生物，造成[[/r (2d6+7)[bludgeoning]]]{2d6+7钝击伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。如果大失败，生物还会被部分拖入地下，陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}直到@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 26）。如果该生物已经陷入禁足，则会被活埋，必须屏住呼吸才能避免窒息。</p>",
+			"routine": "<p>（1个动作）贪婪的手攻击区域内所有生物，造成@Damage[(2d6+7)[bludgeoning]]{2d6+7钝击伤害}（@Check[type:reflex|dc:26|basic:true]豁免）。如果大失败，生物还会被部分拖入地下，陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}直到@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 26）。如果该生物已经陷入禁足，则会被活埋，必须屏住呼吸才能避免窒息。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
@@ -933,7 +933,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击}和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，@Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(1d10+7)[bludgeoning]]{1d10+7钝击}和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，@Check[type:fortitude|dc:36|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Slithering Strike":{
 					"name": "滑行打击 Slithering Strike",
@@ -1037,7 +1037,7 @@
 				},
 				"Sudden Surge":{
 					"name": "速度激增 Sudden Surge",
-					"description": "<p><strong>触发</strong> 枯皮丧尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯皮丧尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯皮丧尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>枯皮丧尸无法再次使用此能力，除非它们花费10分钟保持站着不动。 </p>"
+					"description": "<p><strong>触发</strong> 枯皮丧尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯皮丧尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯皮丧尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<p>枯皮丧尸无法再次使用此能力，除非它们花费10分钟保持站着不动。 </p>"
 				}
 			}
 		},
@@ -1126,7 +1126,7 @@
 				},
 				"Terrain Advantage":{
 					"name": "地利 Terrain Advantage",
-					"description": "<p>身处困难地形的非蜥蜴人生物和身处水中且没有游泳速度的非蜥蜴人生物对艾鲁克希梁骨@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>身处困难地形的非蜥蜴人生物和身处水中且没有游泳速度的非蜥蜴人生物对艾鲁克希梁骨@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Totems of the Past":{
 					"name": "昔日图腾 Totems of the Past",
@@ -1153,7 +1153,7 @@
 				},
 				"Osseous Defense":{
 					"name": "骨质防御 Osseous Defense",
-					"description": "<p>颤骨人拉长他的骨骼，令锯齿状的骨刺从他的皮肤上刺出。当骨质防御能力处于激活状态时，颤骨人可以进行骨刺和骨镖打击，并获得对穿刺伤害和挥砍伤害的5点抗力。颤骨人在骨质防御激活时失去压缩能力。颤骨人可以通过一个单动作[A]结束骨质防御，将他的骨头缩回到身体中。</p>\n<p><strong>近战</strong> <span class=\"pf2-icon\">1</span> 骨刺 [[/r 1d20+14 #Bone Spike Attack]]{+14}/[[/r 1d20+14 #Bone Spike Attack]]{+9}/[[/r 1d20+14 #Bone Spike Attack]]{+4} (娴熟), <strong>伤害</strong> [[/r (2d8+2)[piercing]]]{2d8+2穿刺}和@Localize[PF2E.PersistentDamage.Bleed1d6.success]</p>\n<p><strong>远程</strong> <span class=\"pf2-icon\">1</span> 骨镖 [[/r 1d20+14 #Bone Dart Attack]]{+14}/[[/r 1d20+14 #Bone Dart Attack]]{+10}/[[/r 1d20+14 #Bone Dart Attack]]{+6} (灵巧, 投掷20尺), <strong>伤害</strong> [[/r (2d6+2)[piercing]]]{2d6+2穿刺}</p>"
+					"description": "<p>颤骨人拉长他的骨骼，令锯齿状的骨刺从他的皮肤上刺出。当骨质防御能力处于激活状态时，颤骨人可以进行骨刺和骨镖打击，并获得对穿刺伤害和挥砍伤害的5点抗力。颤骨人在骨质防御激活时失去压缩能力。颤骨人可以通过一个单动作[A]结束骨质防御，将他的骨头缩回到身体中。</p>\n<p><strong>近战</strong> <span class=\"pf2-icon\">1</span> 骨刺 [[/r 1d20+14 #Bone Spike Attack]]{+14}/[[/r 1d20+14 #Bone Spike Attack]]{+9}/[[/r 1d20+14 #Bone Spike Attack]]{+4} (娴熟), <strong>伤害</strong> @Damage[(2d8+2)[piercing]]{2d8+2穿刺}和@Localize[PF2E.PersistentDamage.Bleed1d6.success]</p>\n<p><strong>远程</strong> <span class=\"pf2-icon\">1</span> 骨镖 [[/r 1d20+14 #Bone Dart Attack]]{+14}/[[/r 1d20+14 #Bone Dart Attack]]{+10}/[[/r 1d20+14 #Bone Dart Attack]]{+6} (灵巧, 投掷20尺), <strong>伤害</strong> @Damage[(2d6+2)[piercing]]{2d6+2穿刺}</p>"
 				}
 			}
 		},
@@ -1234,7 +1234,7 @@
 				},
 				"Strangle":{
 					"name": "扼杀 Strangle",
-					"description": "<p><strong>需求</strong> 林中小人@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 林中小人握紧掐住脖子的手，延长攫抓，对该生物造成[[/r (2d6+3)[bludgeoning]]]{2d6+3钝击伤害}，@Check[type:fortitude|dc:24|basic:true]豁免，且该生物只要还被擒抱或束缚就会一直被扼着。被扼住的生物无法说话，这阻止他施展带有“语言”成份的法术，或启动有“命令”成份的物品。被扼住的生物必须屏住呼吸，否则开始窒息。</p>"
+					"description": "<p><strong>需求</strong> 林中小人@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 林中小人握紧掐住脖子的手，延长攫抓，对该生物造成@Damage[(2d6+3)[bludgeoning]]{2d6+3钝击伤害}，@Check[type:fortitude|dc:24|basic:true]豁免，且该生物只要还被擒抱或束缚就会一直被扼着。被扼住的生物无法说话，这阻止他施展带有“语言”成份的法术，或启动有“命令”成份的物品。被扼住的生物必须屏住呼吸，否则开始窒息。</p>"
 				}
 			}
 		},
@@ -1249,7 +1249,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (2d6+12)[negative]]]{2d6+12负能量} @Check[type:fortitude|dc:31|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(2d6+12)[negative]]{2d6+12负能量} @Check[type:fortitude|dc:31|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Funereal Touch":{
 					"name": "丧葬之触 Funereal Touch",
@@ -1360,7 +1360,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>超大型, [[/r (2d10+9)[bludgeoning]]]{2d10+9钝击}, 破裂40</p>\n<p>若一个生物在他的回合结束时正被纳瑟爵斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，纳瑟爵斯获得20点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型, @Damage[(2d10+9)[bludgeoning]]{2d10+9钝击}, 破裂40</p>\n<p>若一个生物在他的回合结束时正被纳瑟爵斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，纳瑟爵斯获得20点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -1491,7 +1491,7 @@
 			"items":{
 				"Capture":{
 					"name": "俘获 Capture",
-					"description": "<p><strong>触发</strong> 一个生物触碰到镣铐；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂尝试用镣铐铐住生物的手腕。触发的生物必须尝试@Check[type:reflex|dc:23]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 鬼魂松散地将手铐铐在生物的手腕上。解开手铐只需要一个动作。</p>\n<p><strong>失败</strong> 鬼魂将手铐铐在生物的手腕上，很难挣脱。该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到它以3动作行动解开手铐。</p>\n<p><strong>大失败</strong> 鬼魂将手铐铐在生物的手腕上。该生物陷入措手不及和笨拙1，直到手铐被移除（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 23，简单锁）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物触碰到镣铐；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂尝试用镣铐铐住生物的手腕。触发的生物必须尝试@Check[type:reflex|dc:23]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 鬼魂松散地将手铐铐在生物的手腕上。解开手铐只需要一个动作。</p>\n<p><strong>失败</strong> 鬼魂将手铐铐在生物的手腕上，很难挣脱。该生物陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到它以3动作行动解开手铐。</p>\n<p><strong>大失败</strong> 鬼魂将手铐铐在生物的手腕上。该生物陷入措手不及和笨拙1，直到手铐被移除（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 23，简单锁）。</p>"
 				}
 			}
 		},
@@ -1734,7 +1734,7 @@
 			"disable": "<p>@Check[type:perfomance|dc:18]你演奏得如此出色，指挥家满意地解除了你手中的乐器，让它自动消失；@Check[type:occultism|dc:22]或 @Check[type:religion|dc:22]（受训）放逐其中一把乐器；@Check[type:thievery|dc:25]（受训）破坏其中一把乐器；每把乐器都必须消失、被放逐或被破坏，才能解除作祟。</p>",
 			"hazarddescription": "<p>一名鬼灵指挥家冒了出来，给在场的所有人手中变出一把有着剃刀般琴弦的乐器。当指挥家做出准备演奏的手势后，所有生物都开始被迫跟着指挥弹奏起乐器。</p>",
 			"reset": "<p>当所有被召唤出的乐器被摧毁或沉寂1分钟后，作祟将停止。它将在1小时后重置。</p>",
-			"routine": "<p>（1 个动作；惑控系，心灵，异能）指挥家敦促30尺内的每个生物弹奏手中的危险乐器。每个被迫演奏乐器的角色都必须如此做，而那些成功豁免的生物也可以开始演奏。无论是被迫演奏还是为了解除作祟自愿演奏，这都会对自身造成[[/r (1d6+3)[slashing]]]{1d6+3挥砍伤害}（@Check[type:reflex|dc:21|basic:true|traits:enchantment,mental,occult]豁免），并且生物必须尝试@Check[type:performance|dc:18|traits:enchantment,mental,occult,damaging-effect]检定。如果成功，指挥家接受表演者的演奏，解除生物手中的乐器。如果失败，不谐之音和指挥家的嘲笑会造成额外的[[/r (1d6+3)[sonic]]]{1d6+3音波伤害}。</p>",
+			"routine": "<p>（1 个动作；惑控系，心灵，异能）指挥家敦促30尺内的每个生物弹奏手中的危险乐器。每个被迫演奏乐器的角色都必须如此做，而那些成功豁免的生物也可以开始演奏。无论是被迫演奏还是为了解除作祟自愿演奏，这都会对自身造成@Damage[(1d6+3)[slashing]]{1d6+3挥砍伤害}（@Check[type:reflex|dc:21|basic:true|traits:enchantment,mental,occult]豁免），并且生物必须尝试@Check[type:performance|dc:18|traits:enchantment,mental,occult,damaging-effect]检定。如果成功，指挥家接受表演者的演奏，解除生物手中的乐器。如果失败，不谐之音和指挥家的嘲笑会造成额外的@Damage[(1d6+3)[sonic]]{1d6+3音波伤害}。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
@@ -1815,7 +1815,7 @@
 			"items":{
 				"Shatter":{
 					"name": "碎裂 Shatter",
-					"description": "<p><strong>触发</strong> 一个生物移动至窗户相邻的方格；</p>\n<hr />\n<p><strong>效果</strong> 窗户破碎，对5尺范围内的生物造成[[/r (2d6+5)[slashing]]]{2d6+5挥砍伤害}（@Check[type:reflex|dc:17|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物移动至窗户相邻的方格；</p>\n<hr />\n<p><strong>效果</strong> 窗户破碎，对5尺范围内的生物造成@Damage[(2d6+5)[slashing]]{2d6+5挥砍伤害}（@Check[type:reflex|dc:17|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1830,11 +1830,11 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d6+2)[bludgeoning]]]{1d6+2钝击}，@Check[type:fortitude|dc:16|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(1d6+2)[bludgeoning]]{1d6+2钝击}，@Check[type:fortitude|dc:16|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Control Body":{
 					"name": "控制尸体 Control Body",
-					"description": "<p><strong>需求</strong> 破碎魔皮和一具中型或小型的类人生物的尸体位于同一空间；</p>\n<hr />\n<p><strong>效果</strong> 破碎魔皮如同一张新的皮肤一般包裹并控制了尸体，在控制目标的同时，破碎魔皮使用目标的速度，但使用它自己的攻击，它失去攫抓和包裹能力。在破碎魔皮控制目标时，针对它的攻击只会对破碎魔皮造成一半伤害，另一半伤害会转而对目标尸体造成。针对区域的攻击会正常地对破碎魔皮和目标身体造成伤害。破碎魔皮可以在它的回合开始时以自由动作放开目标的尸体。如果目标被摧毁，破碎魔皮将自动放开尸体并@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}1轮。一个中等生物的尸体体通常HP为15，一个小型生物的尸体通常HP为10。用察觉检定成功对抗破碎魔皮的欺骗DC（通常为18）的生物可以注意到，尸体正由破碎魔皮控制。</p>"
+					"description": "<p><strong>需求</strong> 破碎魔皮和一具中型或小型的类人生物的尸体位于同一空间；</p>\n<hr />\n<p><strong>效果</strong> 破碎魔皮如同一张新的皮肤一般包裹并控制了尸体，在控制目标的同时，破碎魔皮使用目标的速度，但使用它自己的攻击，它失去攫抓和包裹能力。在破碎魔皮控制目标时，针对它的攻击只会对破碎魔皮造成一半伤害，另一半伤害会转而对目标尸体造成。针对区域的攻击会正常地对破碎魔皮和目标身体造成伤害。破碎魔皮可以在它的回合开始时以自由动作放开目标的尸体。如果目标被摧毁，破碎魔皮将自动放开尸体并@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}1轮。一个中等生物的尸体体通常HP为15，一个小型生物的尸体通常HP为10。用察觉检定成功对抗破碎魔皮的欺骗DC（通常为18）的生物可以注意到，尸体正由破碎魔皮控制。</p>"
 				},
 				"Enshroud":{
 					"name": "包裹 Enshroud",
@@ -1891,7 +1891,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (3d8+7)[bludgeoning]]]{3d8+7钝击}，@Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(3d8+7)[bludgeoning]]{3d8+7钝击}，@Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Implacable Advance":{
 					"name": "不懈前行 Implacable Advance",
@@ -1904,13 +1904,13 @@
 			"disable": "<p>@Check[type:occultism|dc:48]或@Check[type:religion|dc:48]（专家）削弱鬼魂；总共四次成功才能解除作祟</p>",
 			"hazarddescription": "<p>一个无形体的鬼魂，从生者身上吸取生命，当受害者逐渐变得虚弱时，它则逐渐变得可见。</p>",
 			"reset": "<p>在1分钟之后，鬼魂吃饱喝足，然后作祟停止活动，进入休眠状态。在1个小时过后，灵魂吸取的生命能量被消耗殆尽，作祟重置。</p>",
-			"routine": "<p>（1 个动作；死亡，神术，死灵系，负能量）鬼魂吸取活物的灵魂，并且身体变得越来越明显。@Template[type:burst|distnace:60]{60尺}内每个生物受到[[/r (4d10+20)[negative]]]{4d10+20负能量伤害}，@Check[type:fortitude|dc:41|traits:death,divine,necromancy,negative,damaging-effect]豁免。如果区域内没有生物，作祟会移动至多120尺，前往生物最密集的地方，然后吸取生命精华。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，然后@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained}值增加1，最多增加到流失4。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，然后流失值增加2，最多增加到流失4。如果生物已经达到流失4，它会死亡。</p>",
+			"routine": "<p>（1 个动作；死亡，神术，死灵系，负能量）鬼魂吸取活物的灵魂，并且身体变得越来越明显。@Template[type:burst|distnace:60]{60尺}内每个生物受到@Damage[(4d10+20)[negative]]{4d10+20负能量伤害}，@Check[type:fortitude|dc:41|traits:death,divine,necromancy,negative,damaging-effect]豁免。如果区域内没有生物，作祟会移动至多120尺，前往生物最密集的地方，然后吸取生命精华。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全伤害，然后@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained}值增加1，最多增加到流失4。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，然后流失值增加2，最多增加到流失4。如果生物已经达到流失4，它会死亡。</p>",
 			"stealthdetails": "<p>(受训)</p>",
 			"data":{},
 			"items":{
 				"Sudden Siphon":{
 					"name": "突然虹吸 Sudden Siphon",
-					"description": "<p><strong>触发</strong> 一个活着的生物接近至鬼魂15尺内；</p>\n<hr />\n<p><strong>效果</strong> 隐形的鬼魂吸取活物的生命精华，对@Template[type:burst|distance:60]{60尺}内的所有活物造成[[/r (4d10+20)[negative]]]{4d10+20负能量伤害}（@Check[type:fortitude|dc:41|basic:true]豁免）。然后作祟投掷先攻。</p>"
+					"description": "<p><strong>触发</strong> 一个活着的生物接近至鬼魂15尺内；</p>\n<hr />\n<p><strong>效果</strong> 隐形的鬼魂吸取活物的生命精华，对@Template[type:burst|distance:60]{60尺}内的所有活物造成@Damage[(4d10+20)[negative]]{4d10+20负能量伤害}（@Check[type:fortitude|dc:41|basic:true]豁免）。然后作祟投掷先攻。</p>"
 				}
 			}
 		},
@@ -1986,7 +1986,7 @@
 			"disable": "<p>@Check[type:occultism|dc:30]或@Check[type:religion|dc:30] （受训）削弱作祟的能量；在任何组合中成功3次才能解除作祟</p>",
 			"hazarddescription": "<p>愤怒的鬼魂形成的旋风在该地区肆虐。</p>",
 			"reset": "<p>鬼灵旋风将在触发的1分钟后解除，并且在1日后重置。</p>",
-			"routine": "<p>（3 个动作）鬼灵旋风用3个动作移动，每个动作最多移动30尺，并且对途径的每个生物造成[[/r (2d10+13)[negative]]]{2d10+13负能量伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。每个生物在鬼灵旋风移动期间只需进行一次豁免，即便旋风多次经过它。如果豁免大失败，生物将被卷进旋风，陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 32）。一个被旋风擒抱的生物在它的回合开始时受到[[/r (1d10+6)[negative]]]{1d10+6额外负能量伤害}，并且它必须在旋风的回合中继续尝试反射豁免，无论旋风是否移动。脱逃成功的生物将从[[/r (1d12*5} #Falling Distance]]{1d12 x 5尺}的高度坠落地面。</p>",
+			"routine": "<p>（3 个动作）鬼灵旋风用3个动作移动，每个动作最多移动30尺，并且对途径的每个生物造成@Damage[(2d10+13)[negative]]{2d10+13负能量伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。每个生物在鬼灵旋风移动期间只需进行一次豁免，即便旋风多次经过它。如果豁免大失败，生物将被卷进旋风，陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}DC 32）。一个被旋风擒抱的生物在它的回合开始时受到@Damage[(1d10+6)[negative]]{1d10+6额外负能量伤害}，并且它必须在旋风的回合中继续尝试反射豁免，无论旋风是否移动。脱逃成功的生物将从[[/r (1d12*5} #Falling Distance]]{1d12 x 5尺}的高度坠落地面。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
@@ -2041,7 +2041,7 @@
 				},
 				"Incessant Goading":{
 					"name": "激将 Incessant Goading",
-					"description": "<p>颅骨选择一个60尺内的生物，向他宣泄无情的敌意。目标必须通过@Check[type:will|dc:22]豁免来抵抗这个效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并临时免疫1分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标在1轮内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。在他下一轮，如果嘲弄颅骨在目标可及的范围内，则目标会尽其所能地对颅骨发动狂暴的攻击，攻击次数尽可能地多。</p>\n<p><strong>大失败</strong> 如同失败，但是目标还会立刻对他自己发动一次打击；这个打击不花费任何动作。</p>"
+					"description": "<p>颅骨选择一个60尺内的生物，向他宣泄无情的敌意。目标必须通过@Check[type:will|dc:22]豁免来抵抗这个效果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并临时免疫1分钟。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标在1轮内@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。在他下一轮，如果嘲弄颅骨在目标可及的范围内，则目标会尽其所能地对颅骨发动狂暴的攻击，攻击次数尽可能地多。</p>\n<p><strong>大失败</strong> 如同失败，但是目标还会立刻对他自己发动一次打击；这个打击不花费任何动作。</p>"
 				}
 			}
 		},
@@ -2055,7 +2055,7 @@
 			"items":{
 				"Topple Furniture":{
 					"name": "翻倒的家具 Topple Furniture",
-					"description": "<p><strong>触发</strong> 一个生物移动至家具相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂试图推动家具，将其砸在生物身上。触发的生物受到[[/r (2d10+7)[bludgeoning]]]{2d10+7钝击伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。如果豁免失败，生物还会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物移动至家具相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 鬼魂试图推动家具，将其砸在生物身上。触发的生物受到@Damage[(2d10+7)[bludgeoning]]{2d10+7钝击伤害}（@Check[type:reflex|dc:22|basic:true]豁免）。如果豁免失败，生物还会被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -2229,7 +2229,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>超大型, [[/r (2d10+5)[bludgeoning]]]{2d10+5钝击}, 破裂35</p>\n<p>若一个生物在他的回合结束时正被厄维斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，厄维斯获得10点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型, @Damage[(2d10+5)[bludgeoning]]{2d10+5钝击}, 破裂35</p>\n<p>若一个生物在他的回合结束时正被厄维斯活吞，他会获得@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}，或已有的流失值加1，厄维斯获得10点临时生命值。一个流失值因此效果达到5的生物死亡。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"Urveth Venom":{
 					"name": "厄维斯毒液 Urveth Venom",
@@ -2264,7 +2264,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (3d10+5)[piercing]]]{3d10+5穿刺} @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(3d10+5)[piercing]]{3d10+5穿刺} @Check[type:fortitude|dc:33|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				}
 			}
 		},
@@ -2338,7 +2338,7 @@
 			"items":{
 				"Shove":{
 					"name": "推撞 Shove",
-					"description": "<p><strong>触发</strong> 一个生物移动至作祟墙壁的相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 一股强大的力量横扫房间，将房间内所有生物推向墙壁。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:20]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推向墙壁5尺。如果生物将撞上墙壁，它受到[[/r (1d10+5)[bludgeoning]]]{1d10+5钝击伤害}。</p>\n<p><strong>失败</strong> 生物被推向墙壁10尺。如果生物将撞上墙壁，它受到[[/r (2d10+10)[bludgeoning]]]{2d10+10钝击伤害}。</p>\n<p><strong>大失败</strong> 生物被推向墙壁15尺。如果生物将撞上墙壁，它受到[[/r (3d10+15)[bludgeoning]]]{3d10+15钝击伤害}，并且被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物移动至作祟墙壁的相邻方格；</p>\n<hr />\n<p><strong>效果</strong> 一股强大的力量横扫房间，将房间内所有生物推向墙壁。区域内的每个生物都必须尝试一次@Check[type:fortitude|dc:20]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推向墙壁5尺。如果生物将撞上墙壁，它受到@Damage[(1d10+5)[bludgeoning]]{1d10+5钝击伤害}。</p>\n<p><strong>失败</strong> 生物被推向墙壁10尺。如果生物将撞上墙壁，它受到@Damage[(2d10+10)[bludgeoning]]{2d10+10钝击伤害}。</p>\n<p><strong>大失败</strong> 生物被推向墙壁15尺。如果生物将撞上墙壁，它受到@Damage[(3d10+15)[bludgeoning]]{3d10+15钝击伤害}，并且被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -2364,7 +2364,7 @@
 				},
 				"Possess Tree":{
 					"name": "占据树木 Possess Tree",
-					"description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p><strong>效果</strong> 森鬼触碰一颗树来与之融合，占据它至多1分钟。它可以在回合开始时以一个自由动作[F]提前结束这个占据。当森鬼占据一棵树时，它失去虚体特征、飞行速度、所有抗性、所有非常驻法术、以及木质化之手打击。此外，它的体型增至超大型，获得对穿刺和钝击伤害抗力5，火焰弱点10，速度20尺，以及如下打击。</p>\n<p><strong>近战</strong> <span class=\"pf2-icon\">1</span> 树枝 (触及15尺) [[/r 1d20+20 #Branch Strike]]{+20}, <strong>伤害</strong> [[/r (2d12+9)[bludgeoning]]]{2d12+9钝击}。</p>\n<p>当森鬼占据一棵树时，任何本会对它造成的伤害会转而伤害那棵树。这棵树有60点生命值。当这棵树的HP降至0时，森鬼立刻被排出，而这棵树则被摧毁。</p>"
+					"description": "<p><strong>频率</strong> 每10分钟一次</p>\n<hr />\n<p><strong>效果</strong> 森鬼触碰一颗树来与之融合，占据它至多1分钟。它可以在回合开始时以一个自由动作[F]提前结束这个占据。当森鬼占据一棵树时，它失去虚体特征、飞行速度、所有抗性、所有非常驻法术、以及木质化之手打击。此外，它的体型增至超大型，获得对穿刺和钝击伤害抗力5，火焰弱点10，速度20尺，以及如下打击。</p>\n<p><strong>近战</strong> <span class=\"pf2-icon\">1</span> 树枝 (触及15尺) [[/r 1d20+20 #Branch Strike]]{+20}, <strong>伤害</strong> @Damage[(2d12+9)[bludgeoning]]{2d12+9钝击}。</p>\n<p>当森鬼占据一棵树时，任何本会对它造成的伤害会转而伤害那棵树。这棵树有60点生命值。当这棵树的HP降至0时，森鬼立刻被排出，而这棵树则被摧毁。</p>"
 				}
 			}
 		},
@@ -2428,7 +2428,7 @@
 				},
 				"Sudden Surge":{
 					"name": "速度激增 Sudden Surge",
-					"description": "<p><strong>触发</strong> 枯槁尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯槁尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯槁尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p>枯槁尸在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用此能力。</p>"
+					"description": "<p><strong>触发</strong> 枯槁尸的回合开始；</p>\n<hr />\n<p><strong>效果</strong> 枯槁尸的速度突然猛增。它们在本轮获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}状态，额外获得的动作只能用于打击或行走。如果枯槁尸本回合的第一个动作是近战打击，目标对此攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<p>枯槁尸在[[/r 1d4 #Recharge]]{1d4轮}内无法再次使用此能力。</p>"
 				}
 			}
 		},
@@ -2439,7 +2439,7 @@
 			"items":{
 				"Surge of Speed":{
 					"name": "急速猛冲 Surge of Speed",
-					"description": "<p>骷髅狼行走3次，但它直到下回合开始前都@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>骷髅狼行走3次，但它直到下回合开始前都@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -2477,7 +2477,7 @@
 				},
 				"Greater Constrict":{
 					"name": "高等紧勒 Greater Constrict",
-					"description": "<p>[[/r (2d10+7)[bludgeoning]]]{2d10+7钝击}，@Check[type:fortitude|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+					"description": "<p>@Damage[(2d10+7)[bludgeoning]]{2d10+7钝击}，@Check[type:fortitude|dc:30|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
 				},
 				"Shambling Trample":{
 					"name": "蹒跚践踏 Shambling Trample",
@@ -2496,7 +2496,7 @@
 				},
 				"Ground Slam":{
 					"name": "砸地猛击 Ground Slam",
-					"description": "<p><strong>需求</strong> 丧尸枭熊用熊爪@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 丧尸枭熊将这个生物反复砸向地面。这会造成[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免大失败时，该生物获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，而大成功时此生物不再被擒抱或束缚。</p>"
+					"description": "<p><strong>需求</strong> 丧尸枭熊用熊爪@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}一个生物；</p>\n<hr />\n<p><strong>效果</strong> 丧尸枭熊将这个生物反复砸向地面。这会造成@Damage[(1d10+7)[bludgeoning]]{1d10+7钝击伤害}（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免大失败时，该生物获得@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}，而大成功时此生物不再被擒抱或束缚。</p>"
 				},
 				"Horrifying Screech":{
 					"name": "骇人尖啸 Horrifying Screech",

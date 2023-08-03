@@ -64,7 +64,7 @@
 			"items":{
 				"Acidic Spray":{
 					"name": "酸液喷溅 Acidic Spray",
-					"description": "<p><strong>触发</strong> 一个生物直接或通过手持工具触碰保险箱；</p>\n<hr />\n<p><strong>效果</strong> 陷阱朝触发生物方向以@Template[type:cone|distance:15]范围造成[[/r (4d8+10)[acid]]]{4d8+10酸液伤害}（@Check[type:reflex|dc:21|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 一个生物直接或通过手持工具触碰保险箱；</p>\n<hr />\n<p><strong>效果</strong> 陷阱朝触发生物方向以@Template[type:cone|distance:15]范围造成@Damage[(4d8+10)[acid]]{4d8+10酸液伤害}（@Check[type:reflex|dc:21|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -175,7 +175,7 @@
 				},
 				"Impart Anguish": {
 					"name": "传达怒意 Impart Anguish",
-					"description": "<p>巴格特扭曲面庞，作极度痛苦状，与凝视他的生物分享他的怒意。位于@Template[type:cone|distance:15]范围内的生物受到[[/r 3d6[mental]]]伤害（@Check[type:will|dc:19|basic:true]豁免）。大失败的情况下，目标生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。</p>"
+					"description": "<p>巴格特扭曲面庞，作极度痛苦状，与凝视他的生物分享他的怒意。位于@Template[type:cone|distance:15]范围内的生物受到@Damage[3d6[mental]]伤害（@Check[type:will|dc:19|basic:true]豁免）。大失败的情况下，目标生物还会陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1轮。</p>"
 				}
 			}
 		},
@@ -241,7 +241,7 @@
 				},
 				"Muscle Slicer":{
 					"name": "肌肉限制 Muscle Slicer",
-					"description": "<p>猎手的打击所重击的目标在其下一回合结束前陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>猎手的打击所重击的目标在其下一回合结束前陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -332,7 +332,7 @@
 				},
 				"Gouge": {
 					"name": "挖凿 Gouge",
-					"description": "<p>巨河狸对其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物造成[[/r 2d8[piercing]]]伤害（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免失败的生物还要承受[[/r 1d4[bleed]]]伤害。</p>"
+					"description": "<p>巨河狸对其@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物造成@Damage[2d8[piercing]]伤害（@Check[type:fortitude|dc:20|basic:true]豁免）。豁免失败的生物还要承受@Damage[1d4[bleed]]伤害。</p>"
 				},
 				"Penetrating Bite": {
 					"name": "贯穿啃咬 Penetrating Bite",
@@ -353,7 +353,7 @@
 			"items":{
 				"Collapse":{
 					"name": "坍塌 Collapse",
-					"description": "<p><strong>触发</strong> 一个生物进入不稳定的通道</p><hr />\n<p><strong>效果</strong> 通道坍塌，对触发的生物和区域<strong>A2</strong>的所有生物造成[[/r (4d8+10)[bludgeoning]]]钝击伤害（@Check[type:reflex|dc:21|basic:true|traits:hazrd,environmental]豁免）。豁免失败的情况下，触发的生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（逃脱DC21）。坍塌会完全堵住通道（区域<strong>A2</strong>），使之无法通过。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入不稳定的通道</p><hr />\n<p><strong>效果</strong> 通道坍塌，对触发的生物和区域<strong>A2</strong>的所有生物造成@Damage[(4d8+10)[bludgeoning]]钝击伤害（@Check[type:reflex|dc:21|basic:true|traits:hazrd,environmental]豁免）。豁免失败的情况下，触发的生物被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}（逃脱DC21）。坍塌会完全堵住通道（区域<strong>A2</strong>），使之无法通过。</p>"
 				}
 			}
 		},
@@ -387,7 +387,7 @@
 				},
 				"Pummeling Grasp": {
 					"name": "连击抓握 Pummeling Grasp",
-					"description": "<p>集群空间内的每个敌人承受[[/r 3d6[slashing]]]伤害（@Check[type:reflex|dc:20|basic:true]豁免）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p>集群空间内的每个敌人承受@Damage[3d6[slashing]]伤害（@Check[type:reflex|dc:20|basic:true]豁免）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -438,7 +438,7 @@
 				},
 				"Startled Charge": {
 					"name": "受惊猛冲 Startled Charge",
-					"description": "<p><strong>需求</strong> 战斗的第一轮；</p><hr /><p><strong>效果</strong> 受惊的麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，麋鹿造成额外[[/r 1d4[piercing]]]伤害。</p>"
+					"description": "<p><strong>需求</strong> 战斗的第一轮；</p><hr /><p><strong>效果</strong> 受惊的麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，麋鹿造成额外@Damage[1d4[piercing]]伤害。</p>"
 				}
 			}
 		},
@@ -492,7 +492,7 @@
 			"items":{
 				"Final Flight":{
 					"name": "临终升空 Final Flight",
-					"description": "<p><strong>触发</strong> 一个生物进入石圈；</p>\n<hr />\n<p><strong>效果</strong> 触发的生物会体验那位曾经照料光荣灵魂草地的祭司的临终时刻。狮鹫从天空中俯冲而下，用利爪抓起祭司，造成[[/r (1d8+7)[slashing]]]伤害。祭司被带往西南方向，穿过山谷来到山峰顶上，然后被丢给一窝狮鹫幼崽。幼崽吞食祭司的血肉，角色承受[[/r (1d8+7)[piercing]]]伤害和[[/r 2d8[mental]]]伤害。受影响的生物必须进行@Check[type:will|dc:22|traits:hazard,haunt]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 作祟造成的一切伤害减半。</p>\n<p><strong>失败</strong> 生物承受完整伤害。</p>\n<p><strong>大失败</strong> 生物承受完整伤害，并且无法摆脱幻觉；承受[[/r 1d8[bleed]]]伤害，只要流血伤害还在持续，生物就处于@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}认为自己正在被活活吃掉。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入石圈；</p>\n<hr />\n<p><strong>效果</strong> 触发的生物会体验那位曾经照料光荣灵魂草地的祭司的临终时刻。狮鹫从天空中俯冲而下，用利爪抓起祭司，造成@Damage[(1d8+7)[slashing]]伤害。祭司被带往西南方向，穿过山谷来到山峰顶上，然后被丢给一窝狮鹫幼崽。幼崽吞食祭司的血肉，角色承受@Damage[(1d8+7)[piercing]]伤害和@Damage[2d8[mental]]伤害。受影响的生物必须进行@Check[type:will|dc:22|traits:hazard,haunt]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 作祟造成的一切伤害减半。</p>\n<p><strong>失败</strong> 生物承受完整伤害。</p>\n<p><strong>大失败</strong> 生物承受完整伤害，并且无法摆脱幻觉；承受@Damage[1d8[bleed]]伤害，只要流血伤害还在持续，生物就处于@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}认为自己正在被活活吃掉。</p>"
 				}
 			}
 		},
@@ -514,7 +514,7 @@
 			"name": "森林大火 Forest Fire",
 			"disable": "<p>在临近的方格通过@Check[type:athletics|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire]、@Check[type:nature|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire]或@Check[type:survival|dc:22|name:Smother a square|traits:hazard,complex,environmental,fire]检定可以扑灭5尺方格内的火焰；每次尝试都是一个交互动作。在火焰上浇水可以自动扑灭一个或更多方格里的火焰，无需检定。少量的水一般可以扑灭5尺方格内的火焰（例如造水术或水流冲击）。大量的水（例如一整桶水）可以扑灭10尺×10尺的区域（或其他形状的4个方格）。朝火焰上泼一桶水视作一个交互动作。水袋的存水量太小，连1方格的火都扑不灭。寒冷也可以扑灭火焰，但必须是能够影响一片区域的寒冷；寒冷的效果不如水，所以寒霜瓶只能扑灭1格的火焰，冰冻射线则没有效果。</p>",
 			"hazarddescription": "<p>一处@Template[type:line|distance:10|width:10]{10尺×10尺}的篝火每轮都向周围的森林蔓延。</p>",
-			"routine": "<p>在火焰的回合，它会向外蔓延，蔓延的格数等于火焰如今占据格数的一半（最少1格）。你来决定火焰蔓延到哪个方格里。任何在火焰旁边结束回合的生物都要受到[[/r (2d8+5)[fire]]]伤害，在火焰内结束回合则为[[/r (4d8+10)[fire]]]伤害（两种情况均为@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true]豁免）。一个生物每轮只能被森林大火伤害一次。</p>",
+			"routine": "<p>在火焰的回合，它会向外蔓延，蔓延的格数等于火焰如今占据格数的一半（最少1格）。你来决定火焰蔓延到哪个方格里。任何在火焰旁边结束回合的生物都要受到@Damage[(2d8+5)[fire]]伤害，在火焰内结束回合则为@Damage[(4d8+10)[fire]]伤害（两种情况均为@Check[type:reflex|dc:25|traits:hazard,complex,environmental,fire|basic:true]豁免）。一个生物每轮只能被森林大火伤害一次。</p>",
 			"data":{},
 			"items":{
 				"Stoke Flames":{
@@ -593,7 +593,7 @@
 				},
 				"Clobbering Tail":{
 					"name": "猛击之尾 Clobbering Tail",
-					"description": "<p>雕齿兽强健的尾部是凶狠的武器。当雕齿兽的甩尾打击造成重击时，目标还会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}1轮。</p>"
+					"description": "<p>雕齿兽强健的尾部是凶狠的武器。当雕齿兽的甩尾打击造成重击时，目标还会@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}1轮。</p>"
 				}
 			}
 		},
@@ -681,7 +681,7 @@
 				},
 				"Surprise Attack":{
 					"name": "突袭打击 Surprise Attack",
-					"description": "<p>在战斗第一轮中，尚未行动的生物对霍布吉视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>在战斗第一轮中，尚未行动的生物对霍布吉视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -763,7 +763,7 @@
 				},
 				"Consuming Fumes": {
 					"name": "强烈烟气 Consuming Fumes",
-					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尺。拉戈菲被其渗出的可燃油散发的烟气环绕着。在灵光范围内，每种火把大小或更大的非魔法明火都会爆炸，对邻接火焰的每个生物和物体造成[[/r 4d4[fire]]]伤害（@Check[type:reflex|dc:17|basic:true]豁免）。爆炸过后，火源会消失。</p>"
+					"description": "<p>@Template[type:emanation|distance:15]{15尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尺。拉戈菲被其渗出的可燃油散发的烟气环绕着。在灵光范围内，每种火把大小或更大的非魔法明火都会爆炸，对邻接火焰的每个生物和物体造成@Damage[4d4[fire]]伤害（@Check[type:reflex|dc:17|basic:true]豁免）。爆炸过后，火源会消失。</p>"
 				},
 				"Deep Breath": {
 					"name": "深呼吸 Deep Breath",
@@ -775,7 +775,7 @@
 				},
 				"Gnaw": {
 					"name": "啮咬 Gnaw",
-					"description": "<p><strong>需求</strong> 拉戈菲的上一个动作是成功的啃咬打击；</p><hr /><p><strong>效果</strong> 拉戈菲咬住目标，把牙齿深深扎进猎物。目标承受[[/r (1d8+3)[piercing]]]伤害。</p>"
+					"description": "<p><strong>需求</strong> 拉戈菲的上一个动作是成功的啃咬打击；</p><hr /><p><strong>效果</strong> 拉戈菲咬住目标，把牙齿深深扎进猎物。目标承受@Damage[(1d8+3)[piercing]]伤害。</p>"
 				},
 				"Nimble Rush": {
 					"name": "敏捷冲刺 Nimble Rush",
@@ -822,7 +822,7 @@
 				},
 				"Rolling Thunder": {
 					"name": "雷霆奔踏 Rolling Thunder",
-					"description": "<p>野牛冲锋时尘土飞扬，大地震颤。奔踏的野牛最多以两倍速度进行一次直线行走，对路径上所有体型不大于大型的生物造成[[/r (4d8+8)[bludgeoning]]]伤害（@Check[type:reflex|dc:24|basic:true]豁免）。多个野牛可以共同参与雷霆奔踏，只需要花费能力所需的动作然后等待整个牛群准备完毕。在它们的下个回合开始前，当一只相邻的野牛开始雷霆奔踏时，能触发它的反应动作开始协同冲锋。所有协同冲锋的野牛必须采用平行的直线路径，所以覆盖的区域不会彼此交叉。协同冲锋会对区域内的生物造成额外[[/r 3d8[bludgeoning]]]伤害，反射豁免失败的生物还会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p>野牛冲锋时尘土飞扬，大地震颤。奔踏的野牛最多以两倍速度进行一次直线行走，对路径上所有体型不大于大型的生物造成@Damage[(4d8+8)[bludgeoning]]伤害（@Check[type:reflex|dc:24|basic:true]豁免）。多个野牛可以共同参与雷霆奔踏，只需要花费能力所需的动作然后等待整个牛群准备完毕。在它们的下个回合开始前，当一只相邻的野牛开始雷霆奔踏时，能触发它的反应动作开始协同冲锋。所有协同冲锋的野牛必须采用平行的直线路径，所以覆盖的区域不会彼此交叉。协同冲锋会对区域内的生物造成额外@Damage[3d8[bludgeoning]]伤害，反射豁免失败的生物还会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -850,7 +850,7 @@
 				},
 				"Furious Charge": {
 					"name": "愤怒猛冲 Furious Charge",
-					"description": "<p>大角麋鹿行走两次，然后进行一次蹄踢打击。如果此次打击命中，它造成额外[[/r 2d4[bludgeoning]]]伤害。</p>"
+					"description": "<p>大角麋鹿行走两次，然后进行一次蹄踢打击。如果此次打击命中，它造成额外@Damage[2d4[bludgeoning]]伤害。</p>"
 				}
 			}
 		},
@@ -885,7 +885,7 @@
 				},
 				"Impaling Lunge": {
 					"name": "穿刺猛扑 Impaling Lunge",
-					"description": "<p>死灵躯壳行走两次。如果死灵躯壳结束移动时处于敌人的近战攻击范围内，它对该敌人进行一次腿踢打击。击中的情况下，该次打击额外造成[[/r 1d6[bleed]]]伤害。</p>"
+					"description": "<p>死灵躯壳行走两次。如果死灵躯壳结束移动时处于敌人的近战攻击范围内，它对该敌人进行一次腿踢打击。击中的情况下，该次打击额外造成@Damage[1d6[bleed]]伤害。</p>"
 				},
 				"Vile Innards": {
 					"name": "污秽内脏 Vile Innards",
@@ -902,7 +902,7 @@
 			"items":{
 				"Explode":{
 					"name": "爆炸 Explode",
-					"description": "<p><strong>触发</strong> 明火被带入区域<strong>A4</strong></p><hr />\n<p><strong>效果</strong> 墙上的拉戈菲油爆炸，对区域<strong>A4</strong>和<strong>A3</strong>的所有生物和物体造成[[/r (4d8+10)[fire]]]伤害（@Check[type:reflex|dc:21|traits:hazard,environmental,fire|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 明火被带入区域<strong>A4</strong></p><hr />\n<p><strong>效果</strong> 墙上的拉戈菲油爆炸，对区域<strong>A4</strong>和<strong>A3</strong>的所有生物和物体造成@Damage[(4d8+10)[fire]]伤害（@Check[type:reflex|dc:21|traits:hazard,environmental,fire|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -958,7 +958,7 @@
 			"items":{
 				"Necromantic Wave":{
 					"name": "死灵波动 Necromantic Wave",
-					"description": "<p><strong>触发</strong> 一个活物靠近碗10尺范围内而未展示威尼瑟斯圣徽；</p><hr />\n<p><strong>效果</strong> 碗释放出负能量冲击波，对触发的生物和范围内所有未展示威尼瑟斯圣徽的生物造成[[/r (4d8+10)[negative]]]伤害（@Check[type:reflex|dc:21|traits:hazard,magical,necromancy,negative,trap|basic:true]豁免）。豁免大失败的情况下，生物陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>"
+					"description": "<p><strong>触发</strong> 一个活物靠近碗10尺范围内而未展示威尼瑟斯圣徽；</p><hr />\n<p><strong>效果</strong> 碗释放出负能量冲击波，对触发的生物和范围内所有未展示威尼瑟斯圣徽的生物造成@Damage[(4d8+10)[negative]]伤害（@Check[type:reflex|dc:21|traits:hazard,magical,necromancy,negative,trap|basic:true]豁免）。豁免大失败的情况下，生物陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>"
 				}
 			}
 		},
@@ -996,7 +996,7 @@
 			"items":{
 				"Drop Rocks":{
 					"name": "落岩 Drop Rocks",
-					"description": "<p><strong>触发</strong> 握着绳子的生物拉动绳子；</p><hr />\n<p><strong>效果</strong> 绳网松落，岩石掉落在区域<strong>A15</strong>低侧的所有生物和物体上，造成[[/r (4d8+14)[bludgeoning]]]伤害（@Check[type:reflex|dc:26|traits:hazard,mechanical,trap|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 握着绳子的生物拉动绳子；</p><hr />\n<p><strong>效果</strong> 绳网松落，岩石掉落在区域<strong>A15</strong>低侧的所有生物和物体上，造成@Damage[(4d8+14)[bludgeoning]]伤害（@Check[type:reflex|dc:26|traits:hazard,mechanical,trap|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1007,7 +1007,7 @@
 			"items":{
 				"Disobedience Vulnerability": {
 					"name": "违逆弱点 Disobedience Vulnerability",
-					"description": "<p>每轮第一次，在蹂掠魔周围60尺范围内有尝试进行指挥动物的检定失败时，蹂掠魔承受[[/r 4d6[mental]]]伤害（如果是蹂掠魔自身失败则为[[/r 10d6[mental]]]）。</p>"
+					"description": "<p>每轮第一次，在蹂掠魔周围60尺范围内有尝试进行指挥动物的检定失败时，蹂掠魔承受@Damage[4d6[mental]]伤害（如果是蹂掠魔自身失败则为@Damage[10d6[mental]]）。</p>"
 				},
 				"Predatory Aura": {
 					"name": "狩猎灵光 Predatory Aura",
@@ -1037,7 +1037,7 @@
 			"items":{
 				"Rhinoceros Charge": {
 					"name": "犀牛冲锋 Rhinoceros Charge",
-					"description": "<p>犀牛行走两次，然后进行一次角抵打击。只要犀牛移动至少20尺，打击的伤害增加到[[/r (3d12+5)[piercing]]]。被此攻击击中的中型或更小体型的生物必须通过@Check[type:reflex|dc:22]豁免，否则自动被推撞后退5尺，并因为这一击的力量陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p>犀牛行走两次，然后进行一次角抵打击。只要犀牛移动至少20尺，打击的伤害增加到@Damage[(3d12+5)[piercing]]。被此攻击击中的中型或更小体型的生物必须通过@Check[type:reflex|dc:22]豁免，否则自动被推撞后退5尺，并因为这一击的力量陷入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				},
 				"Trample": {
           			"name": "践踏 Trample",
@@ -1054,7 +1054,7 @@
 			"items":{
 				"Soul Drain":{
 					"name": "灵魂汲取 Soul Drain",
-					"description": "<p><strong>触发</strong> 一个生物直接或使用工具触碰牢笼的栏杆、门或锁；</p><hr />\n<p><strong>效果</strong> 牢笼对触发生物、牢笼内的生物和临近牢笼的生物造成[[/r (4d8+18)[negative]]]伤害（@Check[type:fortitude|dc:27|traits:hazard,trap|basic:true]豁免）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>"
+					"description": "<p><strong>触发</strong> 一个生物直接或使用工具触碰牢笼的栏杆、门或锁；</p><hr />\n<p><strong>效果</strong> 牢笼对触发生物、牢笼内的生物和临近牢笼的生物造成@Damage[(4d8+18)[negative]]伤害（@Check[type:fortitude|dc:27|traits:hazard,trap|basic:true]豁免）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。</p>"
 				}
 			}
 		},
@@ -1092,7 +1092,7 @@
 				},
 				"Awaken Painting":{
 					"name": "唤醒壁画 Awaken Painting",
-					"description": "<p>萨斯提克令60尺内一幅洞穴壁画活化10分钟。壁画与幽灵间的联系显而易见，因为它会模仿萨斯提克的动作。由于这些动作的怪异性，在活化壁画10尺内，除萨斯提克外的任何生物都陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。萨斯提克能通过幽灵牙对一幅洞穴壁画10尺内的任何生物进行打击；对于此次打击，目标适用于其对洞穴壁画的掩蔽，而非对萨斯提克的掩蔽。</p>\n<p>一个与活化壁画相邻的生物可以花费2个动作尝试@Check[type:occultism|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true]或@Check[type:religion|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true]检定（以迫使活化壁画的力量衰弱）或@Check[type:crafting|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true]或@Check[type:thievery|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true]检定（以彻底破坏这幅壁画）。若成功，该壁画将被破坏，活化效应也会停止。无论如何，此动作具有专注特征。</p>\n<p>摧毁三幅活化壁画将平息萨斯提克的愤怒，使这大猫停止攻击。</p>"
+					"description": "<p>萨斯提克令60尺内一幅洞穴壁画活化10分钟。壁画与幽灵间的联系显而易见，因为它会模仿萨斯提克的动作。由于这些动作的怪异性，在活化壁画10尺内，除萨斯提克外的任何生物都陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。萨斯提克能通过幽灵牙对一幅洞穴壁画10尺内的任何生物进行打击；对于此次打击，目标适用于其对洞穴壁画的掩蔽，而非对萨斯提克的掩蔽。</p>\n<p>一个与活化壁画相邻的生物可以花费2个动作尝试@Check[type:occultism|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true]或@Check[type:religion|dc:18|name:Compel Awakend Painting|traits:concentrate|overrideTraits:true]检定（以迫使活化壁画的力量衰弱）或@Check[type:crafting|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true]或@Check[type:thievery|dc:20|name:Smear the Cave Painting|traits:concentrate|overrideTraits:true]检定（以彻底破坏这幅壁画）。若成功，该壁画将被破坏，活化效应也会停止。无论如何，此动作具有专注特征。</p>\n<p>摧毁三幅活化壁画将平息萨斯提克的愤怒，使这大猫停止攻击。</p>"
 				},
 				"Pounce":{
 					"name": "猛扑 Pounce",
@@ -1160,11 +1160,11 @@
 				},
 				"Sanguine Aura": {
 					"name": "血色灵光 Sanguine Aura",
-					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尺。在图凯克周围，伤口愈合缓慢，血流速度增快。阻止持续流血伤害的纯骰DC为16而非15。此外，每当灵光内的生物承受持续流血伤害，都要额外受到[[/r 1d6[bleed]]]伤害。</p>"
+					"description": "<p>@Template[type:emanation|distance:30]{30尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>尺。在图凯克周围，伤口愈合缓慢，血流速度增快。阻止持续流血伤害的纯骰DC为16而非15。此外，每当灵光内的生物承受持续流血伤害，都要额外受到@Damage[1d6[bleed]]伤害。</p>"
 				},
 				"Blood Let": {
 					"name": "放血 Blood Let",
-					"description": "<p><strong>需求</strong> 图凯克的上一个动作是尖牙打击命中目标；</p><hr /><p><strong>效果</strong> 图凯克的尖牙划开目标的动脉或静脉，造成额外[[/r (1d6+5)[slashing]]]伤害。</p>"
+					"description": "<p><strong>需求</strong> 图凯克的上一个动作是尖牙打击命中目标；</p><hr /><p><strong>效果</strong> 图凯克的尖牙划开目标的动脉或静脉，造成额外@Damage[(1d6+5)[slashing]]伤害。</p>"
 				},
 				"Siphon Blood": {
 					"name": "血液虹吸 Siphon Blood",
@@ -1198,7 +1198,7 @@
 			"items":{
 				"Freezing Blood": {
 					"name": "冰结之血 Freezing Blood",
-					"description": "<p><strong>触发</strong> 一个邻接的生物对威尼瑟斯造成了穿刺或者挥砍伤害。</p>\n<hr />\n<p><strong>效果</strong> 威尼瑟斯的血飞溅到该生物身上，造成[[/r 2d6[cold]]]伤害。一个因此受到寒冷伤害的生物被@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
+					"description": "<p><strong>触发</strong> 一个邻接的生物对威尼瑟斯造成了穿刺或者挥砍伤害。</p>\n<hr />\n<p><strong>效果</strong> 威尼瑟斯的血飞溅到该生物身上，造成@Damage[2d6[cold]]伤害。一个因此受到寒冷伤害的生物被@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
 				},
 				"Frightful Presence": {
          			"name": "气势凶猛 Frightful Presence",
@@ -1214,7 +1214,7 @@
 				},
 				"Breath Weapon": {
 					"name": "吐息 Breath Weapon",
-					"description": "<p>威尼瑟斯喷出一片霜云，对@Template[type:cone|distance:40]区域内的生物造成[[/r 10d6[cold]]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。它在经过[[/br 1d4 #Breath Weapon Cooldown]]{1d4轮}之前无法再次使用吐息。</p>"
+					"description": "<p>威尼瑟斯喷出一片霜云，对@Template[type:cone|distance:40]区域内的生物造成@Damage[10d6[cold]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。它在经过[[/br 1d4 #Breath Weapon Cooldown]]{1d4轮}之前无法再次使用吐息。</p>"
 				},
 				"Draconic Frenzy": {
 					"name": "龙之狂怒 Draconic Frenzy",
@@ -1271,7 +1271,7 @@
 			"items":{
 				"Freezing Blood": {
 					"name": "冰结之血 Freezing Blood",
-					"description": "<p><strong>触发</strong> 一个相邻的生物对雏龙造成了穿刺或者挥砍伤害。</p><hr /><p><strong>效果</strong> 龙的血飞溅到该生物身上，造成[[/r 1d4[cold]]]伤害。因此受到寒冷伤害的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
+					"description": "<p><strong>触发</strong> 一个相邻的生物对雏龙造成了穿刺或者挥砍伤害。</p><hr /><p><strong>效果</strong> 龙的血飞溅到该生物身上，造成@Damage[1d4[cold]]伤害。因此受到寒冷伤害的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>"
 				},
 				"Frightful Presence": {
           			"name": "气势凶猛 Frightful Presence",
@@ -1283,7 +1283,7 @@
 				},
 				"Breath Weapon": {
 					"name": "吐息 Breath Weapon",
-					"description": "<p>雏龙喷出一片霜云，对@Template[type:cone|distance:30]区域内的生物造成[[/r 6d6[cold]]]伤害（@Check[type:reflex|dc:22|basic:true]豁免）。它在经过[[/br 1d4 #Breath Weapon Cooldown]]{1d4轮}之前无法再次使用吐息。</p>"
+					"description": "<p>雏龙喷出一片霜云，对@Template[type:cone|distance:30]区域内的生物造成@Damage[6d6[cold]]伤害（@Check[type:reflex|dc:22|basic:true]豁免）。它在经过[[/br 1d4 #Breath Weapon Cooldown]]{1d4轮}之前无法再次使用吐息。</p>"
 				},
 				"Draconic Frenzy": {
 					"name": "龙之狂怒 Draconic Frenzy",
@@ -1343,7 +1343,7 @@
 				},
 				"Furious Charge": {
 					"name": "愤怒猛冲 Furious Charge",
-					"description": "<p>大角麋鹿行走两次，然后进行一次蹄踢打击。如果此次打击命中，它造成额外[[/r 2d4[bludgeoning]]]伤害。</p>"
+					"description": "<p>大角麋鹿行走两次，然后进行一次蹄踢打击。如果此次打击命中，它造成额外@Damage[2d4[bludgeoning]]伤害。</p>"
 				}
 			}
 		}

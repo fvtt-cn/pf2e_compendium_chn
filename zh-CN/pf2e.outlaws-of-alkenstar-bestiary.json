@@ -42,7 +42,7 @@
 			"items":{
 				"Scoundrel's Feint":{
 					"name": "卑鄙虚招 Scoundrel's Feint",
-					"description": "<p>当兰克斯成功@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}后，他的目标对他的攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到他的下个回合结束。如果大成功，目标对所有攻击都措手不及，直到兰克斯的下个回合结束。</p>"
+					"description": "<p>当兰克斯成功@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}后，他的目标对他的攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到他的下个回合结束。如果大成功，目标对所有攻击都措手不及，直到兰克斯的下个回合结束。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -96,7 +96,7 @@
 			"items":{
 				"Deny Advantage":{
 					"name": "否决优势 Deny Advantage",
-					"description": "<p>穆格兰在面对等级不超过8级、且对自己@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、夹击或使用突然袭击能力的敌人时，不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>穆格兰在面对等级不超过8级、且对自己@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、夹击或使用突然袭击能力的敌人时，不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Evasion":{
 					"name": "反射闪避 Evasion",
@@ -104,7 +104,7 @@
 				},
 				"Exploit Blunder":{
 					"name": "利用失误 Exploit Blunder",
-					"description": "<p><strong>触发</strong> 穆格兰30尺内的生物打击穆格兰时大失败；</p>\n<hr />\n<p><strong>效果</strong> 穆格兰冷笑一声，抢占优势。他使用决斗手枪或手杖枪对触发的生物进行一次远程打击。该生物对穆格兰的攻击（包括本次攻击）@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到其下一回合开始。该攻击不计入穆格兰的多重攻击减值，并且他的多重攻击减值也不适用于该次攻击。</p>"
+					"description": "<p><strong>触发</strong> 穆格兰30尺内的生物打击穆格兰时大失败；</p>\n<hr />\n<p><strong>效果</strong> 穆格兰冷笑一声，抢占优势。他使用决斗手枪或手杖枪对触发的生物进行一次远程打击。该生物对穆格兰的攻击（包括本次攻击）@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到其下一回合开始。该攻击不计入穆格兰的多重攻击减值，并且他的多重攻击减值也不适用于该次攻击。</p>"
 				},
 				"Slippery Dodge":{
 					"name": "灵巧闪避 Slippery Dodge",
@@ -163,11 +163,11 @@
 				},
 				"Plant Pyronite Charge":{
 					"name": "安装爆熔雷炸药 Plant Pyronite Charge",
-					"description": "<p>在对一个生物进行一次成功的近战打击之后，安洁莉卡进行一次贼活检定，对抗目标的察觉DC。如果成功，她能偷偷将一种特殊制作的黏性爆熔雷炸药安放在目标生物身上。炸弹在3轮后引爆，对@Template[type:emanation|distance:10]内所有生物造成[[/r 4d8[fire]]]伤害（@Check[type:reflex|dc:34|basic:true]豁免），并引爆该区域内其他爆熔雷炸药。在成功地通过远程攻击命中被安装炸药的生物之后，安洁莉卡可以选择用子弹引爆炸药，对生物造成正常打击伤害并且炸弹立即爆炸。生物可以使用交互动作从自己或相邻的生物身上找到并移除安装的炸药。这些炸药具有[灌注]特征，并且在被安洁莉卡激活之前是惰性的。</p>"
+					"description": "<p>在对一个生物进行一次成功的近战打击之后，安洁莉卡进行一次贼活检定，对抗目标的察觉DC。如果成功，她能偷偷将一种特殊制作的黏性爆熔雷炸药安放在目标生物身上。炸弹在3轮后引爆，对@Template[type:emanation|distance:10]内所有生物造成@Damage[4d8[fire]]伤害（@Check[type:reflex|dc:34|basic:true]豁免），并引爆该区域内其他爆熔雷炸药。在成功地通过远程攻击命中被安装炸药的生物之后，安洁莉卡可以选择用子弹引爆炸药，对生物造成正常打击伤害并且炸弹立即爆炸。生物可以使用交互动作从自己或相邻的生物身上找到并移除安装的炸药。这些炸药具有[灌注]特征，并且在被安洁莉卡激活之前是惰性的。</p>"
 				},
 				"Tormenting Shot":{
 					"name": "折磨射击 Tormenting Shot",
-					"description": "<p>安洁莉卡进行一次远程打击，命中造成额外[[/r 2d8[piercing]]]伤害。如果目标陷入惊惧，目标还会受到[[/r 2d6[persistent,bleed]]]伤害。</p>"
+					"description": "<p>安洁莉卡进行一次远程打击，命中造成额外@Damage[2d8[piercing]]伤害。如果目标陷入惊惧，目标还会受到[[/r 2d6[persistent,bleed]]]伤害。</p>"
 				}
 			}
 		},
@@ -255,7 +255,7 @@
 				},
 				"Hurl Blade":{
 					"name": "投掷刀片 Hurl Blade",
-					"description": "<p>陀螺百夫长以特定角度抛射出其中一枚刀片来确保刀片回旋的路径。刀片对@Template[type:line|distance:40]范围内的所有生物造成[[/r 6d6[slashing]]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>\n<p>在陀螺百夫长的下一回合开始时，刀片沿着同样的路径回旋返回，再次对路径上的所有生物造成[[/r 6d6[slashing]]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>"
+					"description": "<p>陀螺百夫长以特定角度抛射出其中一枚刀片来确保刀片回旋的路径。刀片对@Template[type:line|distance:40]范围内的所有生物造成@Damage[6d6[slashing]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>\n<p>在陀螺百夫长的下一回合开始时，刀片沿着同样的路径回旋返回，再次对路径上的所有生物造成@Damage[6d6[slashing]]伤害（@Check[type:reflex|dc:30|basic:true]豁免）。</p>"
 				},
 				"Reload Guns":{
 					"name": "装填火炮 Reload Guns",
@@ -271,7 +271,7 @@
 				},
 				"Whirling Fire":{
 					"name": "旋转开火 Whirling Fire",
-					"description": "<p><strong>需求</strong> 陀螺百夫长自从上次使用旋转开火之后至少进行了三次装填火炮动作</p>\n<hr />\n<p><strong>效果</strong> 陀螺百夫长在位置上高速旋转并胡乱开火，对@Template[type:emanation|distance:60]范围内所有生物造成[[/r 8d6[piercing]]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。距离超过30尺外的生物，在面对此攻击的豁免上有+4环境加值。</p>"
+					"description": "<p><strong>需求</strong> 陀螺百夫长自从上次使用旋转开火之后至少进行了三次装填火炮动作</p>\n<hr />\n<p><strong>效果</strong> 陀螺百夫长在位置上高速旋转并胡乱开火，对@Template[type:emanation|distance:60]范围内所有生物造成@Damage[8d6[piercing]]伤害（@Check[type:reflex|dc:28|basic:true]豁免）。距离超过30尺外的生物，在面对此攻击的豁免上有+4环境加值。</p>"
 				}
 			}
 		},
@@ -290,11 +290,11 @@
                 },
                 "Amnesia Venom": {
                     "name": "失忆毒液 Amnesia Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
                 },
                 "Constrict": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d6+2)[bludgeoning]]]{2d6+2钝击伤害}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d6+2)[bludgeoning]]{2d6+2钝击伤害}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Root": {
                     "name": "扎根 Root",
@@ -404,7 +404,7 @@
 				},
 				"Pre-Programmed Greeting":{
 					"name": "预设问候 Pre-Programmed Greeting",
-					"description": "<p>发条酿造师清晰地向30 尺内的生物发动一段让人消除敌意的友好语音。该生物尝试一次@Check[type:will|dc:17]检定，如果失败，在酿造师的下个回合结束前，生物对酿造师的下一次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。然后目标会在1日内免疫发条酿造师的预设问候。</p>"
+					"description": "<p>发条酿造师清晰地向30 尺内的生物发动一段让人消除敌意的友好语音。该生物尝试一次@Check[type:will|dc:17]检定，如果失败，在酿造师的下个回合结束前，生物对酿造师的下一次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。然后目标会在1日内免疫发条酿造师的预设问候。</p>"
 				},
 				"Smokeside Sour":{
 					"name": "雾霾城酸酒 Smokeside Sour",
@@ -430,7 +430,7 @@
 				},
 				"Pirate's Feint":{
 					"name": "海盗的虚招 Pirate's Feint",
-					"description": "<p>发条海盗进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}。如果目标变得对发条海盗的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，那么它同样也会对发条海盗的远程攻击措手不及。</p>"
+					"description": "<p>发条海盗进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}。如果目标变得对发条海盗的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，那么它同样也会对发条海盗的远程攻击措手不及。</p>"
 				},
 				"Refill Tank":{
 					"name": "重新注水 Refill Tank",
@@ -655,7 +655,7 @@
                 },
 				"Shambling Onslaught":{
 					"name": "蹒跚猛攻 Shambling Onslaught",
-					"description": "<p><span class=\"pf2-icon\">1</span> 到 <span class=\"pf2-icon\">2</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 蹒跚丧尸大肆攻击在它们占据的格子内或5尺内的敌人（@Check[type:reflex|dc:25|basic:true]豁免）。伤害取决于动作数量。</p>\n<p><span class=\"pf2-icon\">1</span> [[/r (3d6+9)[bludgeoning]]]伤害</p>\n<p><span class=\"pf2-icon\">2</span> [[/r (3d8+13)[bludgeoning]]]伤害</p>"
+					"description": "<p><span class=\"pf2-icon\">1</span> 到 <span class=\"pf2-icon\">2</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 蹒跚丧尸大肆攻击在它们占据的格子内或5尺内的敌人（@Check[type:reflex|dc:25|basic:true]豁免）。伤害取决于动作数量。</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[(3d6+9)[bludgeoning]]伤害</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(3d8+13)[bludgeoning]]伤害</p>"
 				},
                 "Troop Movement": {
                     "name": "部队移动 Troop Movement",
@@ -819,7 +819,7 @@
 				},
 				"Spiny Body":{
 					"name": "多刺躯体 Spiny Body",
-					"description": "<p>仙人掌莱西全身覆盖着尖刺。擒抱仙人掌莱西的生物受到[[/r (1d8+3)[piercing]]]{1d8+3穿刺伤害}。</p>"
+					"description": "<p>仙人掌莱西全身覆盖着尖刺。擒抱仙人掌莱西的生物受到@Damage[(1d8+3)[piercing]]{1d8+3穿刺伤害}。</p>"
 				},
 				"Verdant Burst":{
 					"name": "翠绿爆发 Verdant Burst",
@@ -848,7 +848,7 @@
 				},
                 "Amnesia Venom": {
                     "name": "失忆毒液 Amnesia Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
                 }
 			}
 		},
@@ -860,7 +860,7 @@
 			"items":{
 				"Deny Advantage":{
 					"name": "否决优势 Deny Advantage",
-					"description": "<p>帮派头目面对7级或7级以下的、且@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、进行夹击或使用突袭打击的生物时，不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。</p>"
+					"description": "<p>帮派头目面对7级或7级以下的、且@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、进行夹击或使用突袭打击的生物时，不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。</p>"
 				},
 				"Evasion":{
 					"name": "反射闪避 Evasion",
@@ -872,7 +872,7 @@
 				},
 				"Surprise Attack":{
 					"name": "突袭打击 Surprise Attack",
-					"description": "<p>在战斗的第一轮中，如果帮派头目以欺骗或隐秘进行先攻检定，尚未行动的生物都会对帮派头目@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>在战斗的第一轮中，如果帮派头目以欺骗或隐秘进行先攻检定，尚未行动的生物都会对帮派头目@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Brutal Rally":{
 					"name": "残忍激励 Brutal Rally",
@@ -880,7 +880,7 @@
 				},
 				"Gang Up":{
 					"name": "伙同帮众 Gang Up",
-					"description": "<p>任何敌人如果同时位于帮派首领和其盟友的近战触及范围内，都会视同被夹击，对帮派首领的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>任何敌人如果同时位于帮派首领和其盟友的近战触及范围内，都会视同被夹击，对帮派首领的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Quick Draw":{
 					"name": "即时备战 Quick Draw",
@@ -896,7 +896,7 @@
 			"name": "爆炸蒸汽陷阱 Explosive Steam Trap",
 			"disable": "<p>@Check[type:thievery|dc:18|traits:action:disable-a-device](受训)解除桌上的开关；@Check[type:thievery|dc:28|traits:action:disable-a-device](专家)解除活板门上的炸药。</p>",
 			"hazarddescription": "<p>黑火药炸药固定在活板门上（在地图上用T标出），会在蒸汽管道上炸开一个洞，导致房间内充满高温蒸汽。</p>",
-			"routine": "<p>(1动作)活板门喷射高温蒸汽。房间内的每个生物都必须尝试@Check[type:fortitude|dc:28]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r (1d10+3)[fire]]]{1d10+3火焰伤害}。</p>\n<p><strong>失败</strong> 生物受到[[/r (2d10+6)[fire]]]{2d10+6火焰伤害}，并且@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1 轮。</p>\n<p><strong>大失败</strong> 生物受到[[/r (2d10+6)[fire]]]{2d10+6火焰伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}并且目盲1轮。</p>",
+			"routine": "<p>(1动作)活板门喷射高温蒸汽。房间内的每个生物都必须尝试@Check[type:fortitude|dc:28]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到@Damage[(1d10+3)[fire]]{1d10+3火焰伤害}。</p>\n<p><strong>失败</strong> 生物受到@Damage[(2d10+6)[fire]]{2d10+6火焰伤害}，并且@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1 轮。</p>\n<p><strong>大失败</strong> 生物受到@Damage[(2d10+6)[fire]]{2d10+6火焰伤害}，陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}并且目盲1轮。</p>",
 			"stealthdetails": "<p>(受训)找到桌上的开关；@Check[type:perception|dc:28|traits:action:seek](专家)找到活板门和炸药</p>",
 			"data":{},
 			"items":{
@@ -915,7 +915,7 @@
 			"items":{
 				"Slam Shut":{
 					"name": "猛然关门 Slam Shut",
-					"description": "<p><strong>触发</strong> 压力板被按下；</p>\n<hr />\n<p><strong>效果</strong> 铁闸门落下，切断走廊。在铁栅栏下方的所有生物受到[[/r (4d10+18)[piercing]]]{4d10+18穿刺伤害}并被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。成功通过@Check[type:reflex|dc:26]豁免的生物不受伤害，并且翻滚至闸门随机一侧；如果大成功，他可以选择方向。</p>\n<p如果触发陷阱的生物从南向北方向移动，且至少有10尺速度，则触发陷阱时他会正好被落下的铁栅栏砸中。如果触发陷阱的生物从北向南移动，当陷阱被触发时他不会被落下的铁栅栏砸中。</p>"
+					"description": "<p><strong>触发</strong> 压力板被按下；</p>\n<hr />\n<p><strong>效果</strong> 铁闸门落下，切断走廊。在铁栅栏下方的所有生物受到@Damage[(4d10+18)[piercing]]{4d10+18穿刺伤害}并被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。成功通过@Check[type:reflex|dc:26]豁免的生物不受伤害，并且翻滚至闸门随机一侧；如果大成功，他可以选择方向。</p>\n<p如果触发陷阱的生物从南向北方向移动，且至少有10尺速度，则触发陷阱时他会正好被落下的铁栅栏砸中。如果触发陷阱的生物从北向南移动，当陷阱被触发时他不会被落下的铁栅栏砸中。</p>"
 				}
 			}
 		},
@@ -1023,7 +1023,7 @@
 				},
 				"Pirate's Feint":{
 					"name": "海盗的虚招 Pirate's Feint",
-					"description": "<p>发条海盗进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}。如果目标变得对发条海盗的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，那么它同样也会对发条海盗的远程攻击措手不及。</p>"
+					"description": "<p>发条海盗进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feints}。如果目标变得对发条海盗的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，那么它同样也会对发条海盗的远程攻击措手不及。</p>"
 				},
 				"Refill Tank":{
 					"name": "重新注水 Refill Tank",
@@ -1210,7 +1210,7 @@
 			"items":{
 				"Deny Advantage":{
 					"name": "否决优势 Deny Advantage",
-					"description": "<p>帮派头目面对7级或7级以下的、且@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、进行夹击或使用突袭打击的生物时，不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。</p>"
+					"description": "<p>帮派头目面对7级或7级以下的、且@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}、进行夹击或使用突袭打击的生物时，不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。</p>"
 				},
 				"Evasion":{
 					"name": "反射闪避 Evasion",
@@ -1222,7 +1222,7 @@
 				},
 				"Surprise Attack":{
 					"name": "突袭打击 Surprise Attack",
-					"description": "<p>在战斗的第一轮中，如果帮派头目以欺骗或隐秘进行先攻检定，尚未行动的生物都会对帮派头目@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>在战斗的第一轮中，如果帮派头目以欺骗或隐秘进行先攻检定，尚未行动的生物都会对帮派头目@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Brutal Rally":{
 					"name": "残忍激励 Brutal Rally",
@@ -1230,7 +1230,7 @@
 				},
 				"Gang Up":{
 					"name": "伙同帮众 Gang Up",
-					"description": "<p>任何敌人如果同时位于帮派首领和其盟友的近战触及范围内，都会视同被夹击，对帮派首领的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>任何敌人如果同时位于帮派首领和其盟友的近战触及范围内，都会视同被夹击，对帮派首领的近战攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Quick Draw":{
 					"name": "即时备战 Quick Draw",
@@ -1270,7 +1270,7 @@
                 },
 				"Throw Skull":{
 					"name": "投掷头颅 Throw Skull",
-					"description": "<p>交互</p>\n<p><strong>频率</strong> 一次（直到被装上新的发条颅骨）</p>\n<hr />\n<p><strong>效果</strong> 无头偷牛贼将它的发条颅骨丢向30尺内的一个目标。颅骨会爆炸，对@Template[type:burst|distance:15]范围内的生物造成[[/r 8d6[fire]]]伤害伤害（@Check[type:reflex|dc:23|basic:true]豁免）。</p>"
+					"description": "<p>交互</p>\n<p><strong>频率</strong> 一次（直到被装上新的发条颅骨）</p>\n<hr />\n<p><strong>效果</strong> 无头偷牛贼将它的发条颅骨丢向30尺内的一个目标。颅骨会爆炸，对@Template[type:burst|distance:15]范围内的生物造成@Damage[8d6[fire]]伤害伤害（@Check[type:reflex|dc:23|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1281,11 +1281,11 @@
 			"items":{
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d8+8)[bludgeoning]]]{1d8+8钝击} @Check[type:fortitude|dc:22|basic:true]</p>\n<hr />\n<p><em>注意: Paizo并未提供此能力的DC。此处的DC是根据GMG设置的按生物等级计算的适中DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(1d8+8)[bludgeoning]]{1d8+8钝击} @Check[type:fortitude|dc:22|basic:true]</p>\n<hr />\n<p><em>注意: Paizo并未提供此能力的DC。此处的DC是根据GMG设置的按生物等级计算的适中DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"I Venom":{
 					"name": "“我”之毒液 I Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}，力竭1和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}、@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和措手不及 (1轮)</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:25]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}，力竭1和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}、@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和措手不及 (1轮)</p>"
 				},
 				"Writhing Arms":{
 					"name": "翻腾触手 Writhing Arms",
@@ -1300,7 +1300,7 @@
 			"items":{
 				"Vitrumantic Stoneskin":{
 					"name": "玻璃皮肤 Vitrumantic Stoneskin",
-					"description": "<p><strong>触发</strong> 一个相邻生物以近战武器或非武装打击命中伊布里姆并造成伤害</p>\n<p><strong>需求</strong> 伊布里姆当前有一个<em>@UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]{石肤术 Stoneskin}</em>正在生效</p>\n<hr />\n<p><strong>效果</strong> 伊布里姆的独特石肤术表现为一层保护性的致命且锋利的玻璃。玻璃碎片暴散开来，对攻击者造成[[/r 3d10[piercing]]]伤害。</p>"
+					"description": "<p><strong>触发</strong> 一个相邻生物以近战武器或非武装打击命中伊布里姆并造成伤害</p>\n<p><strong>需求</strong> 伊布里姆当前有一个<em>@UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]{石肤术 Stoneskin}</em>正在生效</p>\n<hr />\n<p><strong>效果</strong> 伊布里姆的独特石肤术表现为一层保护性的致命且锋利的玻璃。玻璃碎片暴散开来，对攻击者造成@Damage[3d10[piercing]]伤害。</p>"
 				},
 				"Vitrumancy":{
 					"name": "玻璃法术 Vitrumancy",
@@ -1319,7 +1319,7 @@
                 },
                 "Leech Thought": {
                     "name": "榨取思想 Leech Thought",
-                    "description": "<p>当一个生物受到来自窃思灵云的@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续心灵伤害}时，窃思灵云会变成目标熟悉的生物的形状，例如熟人、宠物或普通动物，但是外观不够完美，而且在乔装（Impersonate）成某个生物时并不能带来任何好处。</p>\n<p>在变形状态下，窃思灵云失去它的虚体特征、免疫和抗力，但它获得一次非武装近战打击，具有[[/r 1d20+6 #Unarmed Strike]]{+6}攻击骰(多次攻击减值[[/r 1d20+1 #Unarmed Strike]]{+1}/[[/r 1d20-4 #Unarmed Strike]]{-4})，造成[[/r (1d8+2)[bludgeoning]]]{1d8+2钝击伤害}。一旦生物不再遭受持续性精神伤害，窃思灵云会立即恢复其原始形态。</p>"
+                    "description": "<p>当一个生物受到来自窃思灵云的@UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{持续心灵伤害}时，窃思灵云会变成目标熟悉的生物的形状，例如熟人、宠物或普通动物，但是外观不够完美，而且在乔装（Impersonate）成某个生物时并不能带来任何好处。</p>\n<p>在变形状态下，窃思灵云失去它的虚体特征、免疫和抗力，但它获得一次非武装近战打击，具有[[/r 1d20+6 #Unarmed Strike]]{+6}攻击骰(多次攻击减值[[/r 1d20+1 #Unarmed Strike]]{+1}/[[/r 1d20-4 #Unarmed Strike]]{-4})，造成@Damage[(1d8+2)[bludgeoning]]{1d8+2钝击伤害}。一旦生物不再遭受持续性精神伤害，窃思灵云会立即恢复其原始形态。</p>"
                 },
 				"Seeking Alchemical Knowledge":{
 					"name": "渴求炼金术知识 Seeking Alchemical Knowledge",
@@ -1341,7 +1341,7 @@
 				},
 				"Generous Distraction":{
 					"name": "慷慨扰乱 Generous Distraction",
-					"description": "<p>德雷什可以向敌人许诺大笔财富，分散它们的注意力。当她以欺骗检定对30尺内的一个敌人进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feint}时，如果成功或大成功，则目标对她的远程攻击和近战攻击都@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>德雷什可以向敌人许诺大笔财富，分散它们的注意力。当她以欺骗检定对30尺内的一个敌人进行@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{虚招 Feint}时，如果成功或大成功，则目标对她的远程攻击和近战攻击都@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Silver Shower Shot":{
 					"name": "撒币射击 Silver Shower Shot",
@@ -1363,7 +1363,7 @@
 			"items":{
 				"Dart":{
 					"name": "飞镖 Dart",
-					"description": "<p><strong>触发</strong> 前门被完全打开、被破拆，或者破损；</p>\n<hr />\n<p><strong>效果</strong> 从桌子向门廊射出一连串飞镖，对@Template[type:line|distance:20]范围内所有生物造成[[/r (4d8+10)[piercing]]]{4d8+10穿刺伤害}（@Check[type:reflex|dc:24|basic:true]豁免）。</p>"
+					"description": "<p><strong>触发</strong> 前门被完全打开、被破拆，或者破损；</p>\n<hr />\n<p><strong>效果</strong> 从桌子向门廊射出一连串飞镖，对@Template[type:line|distance:20]范围内所有生物造成@Damage[(4d8+10)[piercing]]{4d8+10穿刺伤害}（@Check[type:reflex|dc:24|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1393,7 +1393,7 @@
 			"items":{
 				"Bully Effect":{
 					"name": "恃强凌弱 Bully",
-					"description": "<p><strong>效果</strong> 线索匠的近战和远程打击对上轮被推撞过的敌人造成额外[[/r 2d6[bludgeoning]]]伤害。 </p>"
+					"description": "<p><strong>效果</strong> 线索匠的近战和远程打击对上轮被推撞过的敌人造成额外@Damage[2d6[bludgeoning]]伤害。 </p>"
 				},
 				"Clear A Path":{
 					"name": "扫清障碍 Clear A Path",
@@ -1495,7 +1495,7 @@
 				},
 				"Surprise Attacker":{
 					"name": "奇袭者 Surprise Attacker",
-					"description": "<p>在战斗的第一轮，还未行动的生物对沙漠龙兽来说都视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>在战斗的第一轮，还未行动的生物对沙漠龙兽来说都视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -1519,7 +1519,7 @@
 				},
 				"Swallow Whole":{
 					"name": "活吞 Swallow Whole",
-					"description": "<p>中型，[[/r (1d8+3)[bludgeoning]]]{1d8+3钝击伤害}，破裂8</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>中型，@Damage[(1d8+3)[bludgeoning]]{1d8+3钝击伤害}，破裂8</p>\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				},
 				"Tongue Grab":{
 					"name": "舌卷 Tongue Grab",
@@ -1543,7 +1543,7 @@
                 },
                 "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>小型, [[/r (2d4+4)[bludgeoning]]]伤害, 破裂14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>小型, @Damage[(2d4+4)[bludgeoning]]伤害, 破裂14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
 				"Throw Powder Keg":{
 					"name": "扔火药桶 Throw Powder Keg",
@@ -1593,7 +1593,7 @@
 				},
 				"Explode":{
 					"name": "爆炸 Explode",
-					"description": "<p>帕索斯将它的死灵机械大发明超载，对@Template[type:emanation|distance:10]范围造成[[/r 10d6[negative]]]伤害（@Check[type:reflex|dc:31|basic:true]豁免）。帕索斯可以选择将自己包括在目标内。</p>"
+					"description": "<p>帕索斯将它的死灵机械大发明超载，对@Template[type:emanation|distance:10]范围造成@Damage[10d6[negative]]伤害（@Check[type:reflex|dc:31|basic:true]豁免）。帕索斯可以选择将自己包括在目标内。</p>"
 				},
 				"Necromantic Winding":{
 					"name": "死灵上发条 Necromantic Winding",
@@ -1639,7 +1639,7 @@
 				},
 				"Gut Shot":{
 					"name": "胆量射击 Gut Shot",
-					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 枪手被两个或更多生物夹击，并且手枪已经装填；</p>\n<hr />\n<p><strong>效果</strong> 枪手把枪口对准自己并按下扳机，子弹穿过自己的身体对背后的敌人进行一次出乎意料的打击。枪手对相邻的生物进行一次燧发手枪打击，目标在此次打击中@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。枪手受到[[/r (1d4)[piercing]]]{1d4穿刺伤害}。</p>"
+					"description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 枪手被两个或更多生物夹击，并且手枪已经装填；</p>\n<hr />\n<p><strong>效果</strong> 枪手把枪口对准自己并按下扳机，子弹穿过自己的身体对背后的敌人进行一次出乎意料的打击。枪手对相邻的生物进行一次燧发手枪打击，目标在此次打击中@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。枪手受到[[/r (1d4)[piercing]]]{1d4穿刺伤害}。</p>"
 				},
 				"Sneak Attack":{
 					"name": "偷袭 Sneak Attack",
@@ -1693,7 +1693,7 @@
 			"items":{
 				"Exploding Jar":{
 					"name": "爆炸罐子 Exploding Jar",
-					"description": "<p><strong>触发</strong>一个超过50磅重的生物或物体压到南北朝向的石板路（在地图上以T 字标出）；</p>\n<hr />\n<p><strong>效果</strong> 一个装满紫色染料和一颗中等暴雷石的玻璃罐子从石板之间的地面突然弹出。突然移动导致暴雷石撞击罐子内壁，叮当作响并发生爆炸。@Template[type:burst|distance:10]{10尺半径}内的所有生物受到[[/r (2)[sonic]]]{2音波伤害}，并且必须通过@Check[type:fortitude|dc:17|traits:hazard,trap,mechanical]豁免否则@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮。此外，区域内的每个生物都会被紫色染料和玻璃碎片射一身，受到[[/r (1d4+2)[piercing]]]{1d4+2穿刺伤害}（@Check[type:reflex|dc:20|basic:true|traits:hazard,trap,mechanical]豁免）。被紫色染料淋到的生物，基于魅力的技能检定有-1环境减值。将沾到染料的头发或衣服完全移除能消除该减值。沾到染料的皮肤经过一周才能褪色，但可以通过@Check[type:deception|dc:12|traits:hazard,trap,mechanical,action:disguise]{易容}检定或合适的化妆品来掩盖。</p>"
+					"description": "<p><strong>触发</strong>一个超过50磅重的生物或物体压到南北朝向的石板路（在地图上以T 字标出）；</p>\n<hr />\n<p><strong>效果</strong> 一个装满紫色染料和一颗中等暴雷石的玻璃罐子从石板之间的地面突然弹出。突然移动导致暴雷石撞击罐子内壁，叮当作响并发生爆炸。@Template[type:burst|distance:10]{10尺半径}内的所有生物受到[[/r (2)[sonic]]]{2音波伤害}，并且必须通过@Check[type:fortitude|dc:17|traits:hazard,trap,mechanical]豁免否则@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1轮。此外，区域内的每个生物都会被紫色染料和玻璃碎片射一身，受到@Damage[(1d4+2)[piercing]]{1d4+2穿刺伤害}（@Check[type:reflex|dc:20|basic:true|traits:hazard,trap,mechanical]豁免）。被紫色染料淋到的生物，基于魅力的技能检定有-1环境减值。将沾到染料的头发或衣服完全移除能消除该减值。沾到染料的皮肤经过一周才能褪色，但可以通过@Check[type:deception|dc:12|traits:hazard,trap,mechanical,action:disguise]{易容}检定或合适的化妆品来掩盖。</p>"
 				}
 			}
 		},
@@ -1798,7 +1798,7 @@
 			"items":{
 				"Quickest Draw":{
 					"name": "最速备战 Quickest Draw",
-					"description": "<p><strong>需求</strong> 沙科萨意识到有至少一个敌人存在，且她没有@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}；</p>\n<p><strong>触发</strong> 沙科萨投掷先攻；</p>\n<hr />\n<p><strong>效果</strong> 沙科萨对她意识到的敌人进行两次近战打击，或拔出手枪进行一次远程打击。</p>"
+					"description": "<p><strong>需求</strong> 沙科萨意识到有至少一个敌人存在，且她没有@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}；</p>\n<p><strong>触发</strong> 沙科萨投掷先攻；</p>\n<hr />\n<p><strong>效果</strong> 沙科萨对她意识到的敌人进行两次近战打击，或拔出手枪进行一次远程打击。</p>"
 				},
 				"Concussive Fist":{
 					"name": "震荡拳 Concussive Fist",
@@ -1861,7 +1861,7 @@
 			"items":{
 				"Spinning Gears":{
 					"name": "高速齿轮 Spinning Gears",
-					"description": "<p><strong>触发</strong> 一个生物行走至发动机舱；</p>\n<hr />\n<p><strong>效果</strong> 生物的衣服或四肢被卷进高速旋转的齿轮和主轴中。生物必须尝试@Check[type:reflex|dc:24]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到[[/r (2d8+9)[bludgeoning]]]{2d8+9钝击伤害}。</p>\n<p><strong>失败</strong> 生物受到[[/r (4d8+18)[bludgeoning]]]{4d8+18钝击伤害}。</p>\n<p><strong>大失败</strong> 生物的衣服被卷进发条里。生物受到[[/r (4d8+18)[bludgeoning]]]{4d8+18钝击伤害}，并且被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}，直到生物@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 24）。生物每轮都会受到[[/r (2d8+9)[bludgeoning]]]{2d8+9钝击伤害}，因为高速旋转的转轴不断将生物往里面卷。穿着衣服的生物可以选择脱掉衣服，这会让脱逃自动成功；脱掉的衣服将被摧毁。</p>"
+					"description": "<p><strong>触发</strong> 一个生物行走至发动机舱；</p>\n<hr />\n<p><strong>效果</strong> 生物的衣服或四肢被卷进高速旋转的齿轮和主轴中。生物必须尝试@Check[type:reflex|dc:24]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到@Damage[(2d8+9)[bludgeoning]]{2d8+9钝击伤害}。</p>\n<p><strong>失败</strong> 生物受到@Damage[(4d8+18)[bludgeoning]]{4d8+18钝击伤害}。</p>\n<p><strong>大失败</strong> 生物的衣服被卷进发条里。生物受到@Damage[(4d8+18)[bludgeoning]]{4d8+18钝击伤害}，并且被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}，直到生物@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escapes}（DC 24）。生物每轮都会受到@Damage[(2d8+9)[bludgeoning]]{2d8+9钝击伤害}，因为高速旋转的转轴不断将生物往里面卷。穿着衣服的生物可以选择脱掉衣服，这会让脱逃自动成功；脱掉的衣服将被摧毁。</p>"
 				}
 			}
 		},
@@ -1981,7 +1981,7 @@
 			"items":{
 				"Explosive Headbutt":{
 					"name": "爆炸头槌 Explosive Headbutt",
-					"description": "<p>霾巨人的脖子裂开，引爆头骨底部皮下储存的黑火药，为头槌攻击提供额外动力。然后巨人进行一次头槌打击。在计算巨人的多重攻击减值时，这视为两次攻击。如果打击命中，造成[[/r (2d10+8)[bludgeoning]]]{2d10+8钝击伤害}，并且被打击的生物必须尝试@Check[type:fortitude|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受额外效果影响。</p>\n<p><strong>成功</strong> 生物受到额外[[/r (1d10)[bludgeoning]]]{1d10钝击伤害}。</p>\n<p><strong>失败</strong> 生物受到额外[[/r (2d10)[bludgeoning]]]{2d10钝击伤害}害并且如果体型不超过大型，则被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 类似失败，但没有体型限制。</p>"
+					"description": "<p>霾巨人的脖子裂开，引爆头骨底部皮下储存的黑火药，为头槌攻击提供额外动力。然后巨人进行一次头槌打击。在计算巨人的多重攻击减值时，这视为两次攻击。如果打击命中，造成@Damage[(2d10+8)[bludgeoning]]{2d10+8钝击伤害}，并且被打击的生物必须尝试@Check[type:fortitude|dc:25]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受额外效果影响。</p>\n<p><strong>成功</strong> 生物受到额外[[/r (1d10)[bludgeoning]]]{1d10钝击伤害}。</p>\n<p><strong>失败</strong> 生物受到额外[[/r (2d10)[bludgeoning]]]{2d10钝击伤害}害并且如果体型不超过大型，则被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 类似失败，但没有体型限制。</p>"
 				},
 				"Shrapnel":{
 					"name": "破片 Shrapnel",
@@ -2158,7 +2158,7 @@
 				},
 				"Trip and Tangle":{
 					"name": "摔绊和纠缠 Trip and Tangle",
-					"description": "<p><strong>需求</strong> 一个位于灭鼠机群占据空间内的生物在此轮内受到来自集群的伤害；</p>\n<hr />\n<p><strong>效果</strong> 灭鼠机群尝试一次@Check[type:athletics|traits:trip-tangle]检定，对抗该生物的强韧DC。如果成功，生物@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到灭鼠机群的下个回合开始。如果大失败，生物还会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p><strong>需求</strong> 一个位于灭鼠机群占据空间内的生物在此轮内受到来自集群的伤害；</p>\n<hr />\n<p><strong>效果</strong> 灭鼠机群尝试一次@Check[type:athletics|traits:trip-tangle]检定，对抗该生物的强韧DC。如果成功，生物@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到灭鼠机群的下个回合开始。如果大失败，生物还会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -2233,7 +2233,7 @@
 				},
 				"Monstrous Yeast":{
 					"name": "可怕酵母 Monstrous Yeast",
-					"description": "<p>当一个感染可怕酵母的生物受到寒冷伤害时，它可以立即尝试一次新的豁免，并且该次豁免有+2环境加值。该次豁免失败不会推进疾病的阶段；</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>潜伏期</strong> 1轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1小时)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和措手不及 (1小时)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和措手不及 (1天)</p>"
+					"description": "<p>当一个感染可怕酵母的生物受到寒冷伤害时，它可以立即尝试一次新的豁免，并且该次豁免有+2环境加值。该次豁免失败不会推进疾病的阶段；</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>潜伏期</strong> 1轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1小时)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和措手不及 (1小时)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}和措手不及 (1天)</p>"
 				}
 			}
 		}

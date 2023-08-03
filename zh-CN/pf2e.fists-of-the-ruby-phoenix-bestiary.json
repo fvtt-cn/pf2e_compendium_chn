@@ -88,11 +88,11 @@
                 },
                 "Sneak Attack": {
                     "name": "偷袭 Sneak Attack",
-                    "description": "<p>The agile warrior's Strikes deal an additional [[/r (2d6)[precision]]]{2d6 extra precision damage} damage to flat-footed creatures.</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
+                    "description": "<p>The agile warrior's Strikes deal an additional [[/r (2d6)[precision]]]{2d6 extra precision damage} damage to Off-Guard creatures.</p>\n<hr />\n<p>When the monster Strikes a creature that has the @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>"
                 },
                 "Tumbling Attack": {
                     "name": "Tumbling Attack",
-                    "description": "<p>The agile warrior Strides up to their Speed. During this movement, they can move through the space of one creature without triggering reactions. When the agile warrior moves through a creature's space in this way, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until the end of the agile warrior's turn. If the agile warrior ends their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
+                    "description": "<p>The agile warrior Strides up to their Speed. During this movement, they can move through the space of one creature without triggering reactions. When the agile warrior moves through a creature's space in this way, that creature becomes @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of the agile warrior's turn. If the agile warrior ends their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
                 }
             }
         },
@@ -113,7 +113,7 @@
                 },
                 "Pinpoint Poisoner": {
                     "name": "Pinpoint Poisoner",
-                    "description": "<p>When Blue Viper successfully Strikes a flat-footed creature with a poisoned weapon or exposes a flat-footed creature to an inhaled poison, the creature takes a -2 circumstance penalty to its initial save against that poison.</p>"
+                    "description": "<p>When Blue Viper successfully Strikes a Off-Guard creature with a poisoned weapon or exposes a Off-Guard creature to an inhaled poison, the creature takes a -2 circumstance penalty to its initial save against that poison.</p>"
                 },
                 "Plum Rain Deluge": {
                     "name": "Plum Rain Deluge",
@@ -248,7 +248,7 @@
                 },
                 "Wasshoi! Wasshoi!": {
                     "name": "Wasshoi! Wasshoi!",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The night parade dances with wild abandon, unintentionally striking nearby creatures. It deals damage to each adjacent creature (@Check[type:reflex|dc:41|basic:true] save), and any creature that fails its save is pushed 10 feet in any direction as the night parade bounces it overhead. The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> [[/r (1d10+7)[bludgeoning]]]{1d10+7 bludgeoning damage}</p>\n<p><span class=\"pf2-icon\">2</span> [[/r (4d10+14)[bludgeoning]]]{4d10+14 bludgeoning damage}</p>\n<p><span class=\"pf2-icon\">3</span>[[/r (6d10+14)[bludgeoning]]]{6d10+14 bludgeoning damage}</p>"
+                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The night parade dances with wild abandon, unintentionally striking nearby creatures. It deals damage to each adjacent creature (@Check[type:reflex|dc:41|basic:true] save), and any creature that fails its save is pushed 10 feet in any direction as the night parade bounces it overhead. The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[(1d10+7)[bludgeoning]]{1d10+7 bludgeoning damage}</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(4d10+14)[bludgeoning]]{4d10+14 bludgeoning damage}</p>\n<p><span class=\"pf2-icon\">3</span>@Damage[(6d10+14)[bludgeoning]]{6d10+14 bludgeoning damage}</p>"
                 }
             }
         },
@@ -279,11 +279,11 @@
                 },
                 "Constrict": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d8+18)[bludgeoning]]]{2d8+18 bludgeoning damage}, @Check[type:fortitude|dc:39|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d8+18)[bludgeoning]]{2d8+18 bludgeoning damage}, @Check[type:fortitude|dc:39|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>Huge, [[/r (3d8+20)[bludgeoning]]]{3d8+20 bludgeoning damage}, Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>Huge, @Damage[(3d8+20)[bludgeoning]]{3d8+20 bludgeoning damage}, Rupture 45</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "Trample": {
                     "name": "践踏 Trample",
@@ -409,11 +409,11 @@
                 },
                 "Pinning Shot": {
                     "name": "Pinning Shot",
-                    "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{flat-footed} while it remains immobilized in this way.</p>"
+                    "description": "<p>Ji-yook pins a foe's clothing to a wall or floor or the ground. Ji-yook makes a dart Strike. If the attack hits, it deals no damage and instead pins the target to an adjacent surface. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10|name:Pull Dart Free] check to pull the dart free; it can't move from its space until it succeeds. If Ji-yook's dart Strike was a critical hit, the target must succeed at two separate Athletics checks to pull the dart free. The target is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} while it remains immobilized in this way.</p>"
                 },
                 "Sneak Attack": {
                     "name": "偷袭 Sneak Attack",
-                    "description": "<p>Ji-yook's Strikes deal an additional 4d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "description": "<p>Ji-yook's Strikes deal an additional 4d6 precision damage to Off-Guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 },
                 "Toughest Teamwork: Unsettling Murmur": {
                     "name": "Toughest Teamwork: Unsettling Murmur",
@@ -500,7 +500,7 @@
                 },
                 "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>Gargantuan, [[/r (3d12+10)[bludgeoning]]]{3d12+10 bludgeoning damage}, Rupture 44 and dimensional swallow</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>Gargantuan, @Damage[(3d12+10)[bludgeoning]]{3d12+10 bludgeoning damage}, Rupture 44 and dimensional swallow</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -532,7 +532,7 @@
                 },
                 "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>Huge, [[/r (2d12+18)[bludgeoning]]]{2d12+18 bludgeoning damage}, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>Huge, @Damage[(2d12+18)[bludgeoning]]{2d12+18 bludgeoning damage}, Rupture 40</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -614,7 +614,7 @@
                 },
                 "Constrict": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (7d4+5)[bludgeoning]]]{7d4+5 bludgeoning damage}, @Check[type:fortitude|dc:43|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(7d4+5)[bludgeoning]]{7d4+5 bludgeoning damage}, @Check[type:fortitude|dc:43|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Major Leaping Catch": {
                     "name": "Major Leaping Catch",
@@ -689,7 +689,7 @@
                 },
                 "Sneak Attack": {
                     "name": "偷袭 Sneak Attack",
-                    "description": "<p>Hakusa's Strikes deal an extra 5d6 precision damage to flat-footed creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "description": "<p>Hakusa's Strikes deal an extra 5d6 precision damage to Off-Guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 },
                 "Swallows in Flight": {
                     "name": "Swallows in Flight",
@@ -825,7 +825,7 @@
                 },
                 "Spiraling Web": {
                     "name": "Spiraling Web",
-                    "description": "<p><strong>Trigger</strong> Syu Tak-nwa is the target of a ranged Strike or ranged spell attack roll</p>\n<p><strong>Requirements</strong> Syu Tak-nwa is aware of the attack and not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} against it</p>\n<hr />\n<p><strong>Effect</strong> Hairs erupt from portals around the missile and attempt to wrap around it. Syu Tak-nwa gains a +4 circumstance bonus to AC against the triggering attack. If this would cause the attack to miss, the missile remains tangled and suspended in midair.</p>"
+                    "description": "<p><strong>Trigger</strong> Syu Tak-nwa is the target of a ranged Strike or ranged spell attack roll</p>\n<p><strong>Requirements</strong> Syu Tak-nwa is aware of the attack and not @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} against it</p>\n<hr />\n<p><strong>Effect</strong> Hairs erupt from portals around the missile and attempt to wrap around it. Syu Tak-nwa gains a +4 circumstance bonus to AC against the triggering attack. If this would cause the attack to miss, the missile remains tangled and suspended in midair.</p>"
                 }
             }
         },
@@ -849,7 +849,7 @@
                 },
                 "Blade Barrage": {
                     "name": "Blade Barrage",
-                    "description": "<p>Takatorra unleashes a flurry of attacks. Takatorra makes five melee Strikes. They gain a cumulative +2 circumstance bonus to damage for each successful Strike. If one target is hit with at least two of these Strikes, they also take @Localize[PF2E.PersistentDamage.Bleed2d6.success]. They then become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} until the start of their next turn.</p>"
+                    "description": "<p>Takatorra unleashes a flurry of attacks. Takatorra makes five melee Strikes. They gain a cumulative +2 circumstance bonus to damage for each successful Strike. If one target is hit with at least two of these Strikes, they also take @Localize[PF2E.PersistentDamage.Bleed2d6.success]. They then become @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of their next turn.</p>"
                 },
                 "Disarming Whirl": {
                     "name": "Disarming Whirl",
@@ -923,7 +923,7 @@
                 },
                 "JB0CKNjT80RgxP1y": {
                     "name": "翻滚攻击 Tumbling Attack",
-                    "description": "<p>灵巧战士行走一次。在移动中，他可以穿越一个生物占据空间且不触发反应动作。当他以此法穿越生物占据空间时，该生物直到灵巧战士回合结束前@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。若灵巧战士移动结束时近战触及内至少有一个敌人，他可以对触及内的生物发动一次近战打击。</p>"
+                    "description": "<p>灵巧战士行走一次。在移动中，他可以穿越一个生物占据空间且不触发反应动作。当他以此法穿越生物占据空间时，该生物直到灵巧战士回合结束前@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。若灵巧战士移动结束时近战触及内至少有一个敌人，他可以对触及内的生物发动一次近战打击。</p>"
                 },
                 "FXmdnpVAfwGGAGZL": {
                     "name": "任一环境学识"
@@ -948,7 +948,7 @@
             "stealthdetails": "<p>(大师) 注意到剧场中突然发生的意外</p>",
             "hazarddisable": "<p>@Check[type:arcana|dc:38|name:Air Rift Arcana|traits:hazard,environmental,magical,air]（大师）用魔法将裂隙缝合；@Check[type:nature|dc:40|name:Air Rift Nature|traits:hazard,environmental,magical,air]或@Check[type:survival|dc:40|name:Air Rift Survival|traits:hazard,environmental,magical,air]（传奇）打开足够多的门窗，降低狂风的烈度；或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（反制等级7 级；反制DC34）反制气流裂隙。</p>",
             "hazarddescription": "<p>舞台上撕开了一个通往气元素位面的入口，导致咆哮的风撕裂整个剧院。</p>",
-            "hazardroutine": "<p>（1 动作）风在该区域内以随机方向吹动，气流裂隙导致50尺内的生物和物品向上、下、北、南、东或西方向被吹走（投掷d6来决定具体方向）。该区域内的生物和物体必须尝试@Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard]豁免。如果一个生物撞上了另一个同样受此效果影响的物品或生物，则双方都会因为冲击而受到[[/r (3d8+15)[bludgeoning]]]{3d8+15钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推离10尺，但是仅受到一半的冲击伤害。</p>\n<p><strong>失败</strong> 生物被推离20尺，被击倒地，受到全额冲击伤害。</p>\n<p><strong>大失败</strong> 生物被推离40尺，被击倒，受到双倍冲击伤害。</p>",
+            "hazardroutine": "<p>（1 动作）风在该区域内以随机方向吹动，气流裂隙导致50尺内的生物和物品向上、下、北、南、东或西方向被吹走（投掷d6来决定具体方向）。该区域内的生物和物体必须尝试@Check[type:fortitude|dc:37|traits:damaging-effect,air,environmental,magical,hazard]豁免。如果一个生物撞上了另一个同样受此效果影响的物品或生物，则双方都会因为冲击而受到@Damage[(3d8+15)[bludgeoning]]{3d8+15钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物被推离10尺，但是仅受到一半的冲击伤害。</p>\n<p><strong>失败</strong> 生物被推离20尺，被击倒地，受到全额冲击伤害。</p>\n<p><strong>大失败</strong> 生物被推离40尺，被击倒，受到双倍冲击伤害。</p>",
             "items": {
                 "kk1MskNbJzxZTiUb": {
                     "name": "对抗反应动作和远程武器攻击为40"
@@ -976,7 +976,7 @@
                 },
                 "vbJAvWjij5n27otM": {
                     "name": "变形 Change Shape",
-                    "description": "<p>阿基拉的面具和她的脸融合在了一起，她变成一只花豹，或变回半身人形态。在花豹形态下她只能使用啃咬打击（造成[[/r (3d6+10)[piercing]]]{3d6+10穿刺伤害}，外加攫抓）或带有灵巧特征的爪抓打击（造成[[/r (3d4+10)[slashing]]]{3d4+10挥砍伤害}）</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>阿基拉的面具和她的脸融合在了一起，她变成一只花豹，或变回半身人形态。在花豹形态下她只能使用啃咬打击（造成@Damage[(3d6+10)[piercing]]{3d6+10穿刺伤害}，外加攫抓）或带有灵巧特征的爪抓打击（造成@Damage[(3d4+10)[slashing]]{3d4+10挥砍伤害}）</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "zrjGLDGKhAJ9NXOK": {
                     "name": "猛扑 Pounce",
@@ -1019,7 +1019,7 @@
                 },
                 "GlzE8aPPISQLkToK": {
                     "name": "威胁之舞 Threatening Dance",
-                    "description": "<p>战舞者选择先快步后@Compendium[pf2e.actionspf2e.EEDElIyin4z60PXx]{表演 Performs}，或者先表演后快步。将表演检定结果和战舞者触及内一个生物的意志DC 相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物对所有攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到战舞者的下个回合开始。</p>\n<p><strong>成功</strong> 生物对战舞者之外的生物做出的下一次攻击措手不及，直到战舞者下回合开始。</p>"
+                    "description": "<p>战舞者选择先快步后@Compendium[pf2e.actionspf2e.EEDElIyin4z60PXx]{表演 Performs}，或者先表演后快步。将表演检定结果和战舞者触及内一个生物的意志DC 相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物对所有攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到战舞者的下个回合开始。</p>\n<p><strong>成功</strong> 生物对战舞者之外的生物做出的下一次攻击措手不及，直到战舞者下回合开始。</p>"
                 }
             }
         },
@@ -1321,7 +1321,7 @@
                 },
                 "G1wu8KW1gALb7KbD": {
                     "name": "精准下毒 Pinpoint Poisoner",
-                    "description": "<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
+                    "description": "<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
                 },
                 "Tt37ijMg1fiX7fGx": {
                     "name": "毒素喷射 Poison Spray",
@@ -1365,7 +1365,7 @@
                 },
                 "G1wu8KW1gALb7KbD": {
                     "name": "精准下毒 Pinpoint Poisoner",
-                    "description": "<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
+                    "description": "<p>当蓝蝮蛇用涂毒武器对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物打击成功时，和措手不及生物暴露在蓝蝮蛇的吸入毒素时，该生物在对抗该毒素的初次豁免时，豁免获得-2环境减值。</p>"
                 },
                 "Tt37ijMg1fiX7fGx": {
                     "name": "毒素喷射 Poison Spray",
@@ -1391,7 +1391,7 @@
             "hazarddisable": "<p>@Check[type:religion|dc:34|name:吟唱义洛里真言|traits:haunt]（专家）吟唱出义洛里真言可让作祟临时安息，@Check[type:occultism|dc:38|name:制作结界，压制之后的作祟|traits:haunt]（大师）可以制作出结界直接压制之后的作祟。</p>",
             "hazarddescription": "<p>幻影袭击者掀翻桌椅，将其甩飞在空中，推搡殴打房间内的生物。</p>",
             "hazardreset": "<p>作祟会持续1分钟。它每天会在同一时间自动重置，即早上7点和晚上7点，这个僧人们进行早餐和晚餐的时点。若至少两个人在厨房中制作了一餐饭，并将饭食摆放到食堂中，并在进食前进行义洛里祷告，作祟就能被永久超度不再出现。</p>",
-            "hazardroutine": "<p>(1动作)作祟使房间内的物品漫天飞舞。所有身处房间内的生物都会避之不及被砸中，受到[[/r (3d10+14)[force]]]{3d10+14力场伤害}（@Check[type:reflex|dc:36|basic:true]豁免）。 </p>",
+            "hazardroutine": "<p>(1动作)作祟使房间内的物品漫天飞舞。所有身处房间内的生物都会避之不及被砸中，受到@Damage[(3d10+14)[force]]{3d10+14力场伤害}（@Check[type:reflex|dc:36|basic:true]豁免）。 </p>",
             "stealthdetails": "<p>(受训)</p>",
             "items": {
                 "unRMsmyHgUc7VDnx": {
@@ -1422,7 +1422,7 @@
                 },
                 "GHnydFlMyHwFOHtH": {
                     "name": "策识眼 Mastermind's Eye",
-                    "description": "<p>当蝶刃战士成功通过回忆知识动作鉴定目标生物时，该生物直到自己的下一回合开始，对蝶刃战士的攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。若蝶刃战士大成功，该生物在1分钟内对蝶刃战士的攻击措手不及。</p>"
+                    "description": "<p>当蝶刃战士成功通过回忆知识动作鉴定目标生物时，该生物直到自己的下一回合开始，对蝶刃战士的攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。若蝶刃战士大成功，该生物在1分钟内对蝶刃战士的攻击措手不及。</p>"
                 },
                 "q88lqgzMMO0yY9PK": {
                     "name": "偷袭 Sneak Attack",
@@ -1645,7 +1645,7 @@
             "stealthdetails": "<p>+23（专家）或@Check[type:perception|dc:38|traits:action:seek]（大师）骷髅的运行轨迹</p>",
             "hazarddisable": "<p>三次@Check[type:thievery|dc:40|name:Disable an Elemental Core|traits:action:disable-a-device,hazard,magical,trap,fire]（传奇）；或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em>（7环；反制DC 40），每次成功都能抽出或解除一个隐藏在烈焰骷髅内的元素核心：分别位于左眼、右眼和嘴部。</p>",
             "hazarddescription": "<p>一个漂浮的烈焰骷髅在竞技场以环形轨道周围盘旋，向随机方向喷出烈焰。</p>",
-            "hazardroutine": "<p>（3 动作）每成功解除一次，陷阱就损失一个动作。浮动喷火器使用第一个动作喷出@Template[type:cone|distance:15]{15尺锥形}火焰，造成[[/r (4d6+4)[fire]]]{4d6+4火焰伤害}（@Check[type:reflex|dc:40|basic:true]豁免），它的第二个动作是进行一次U形随机方向的飞行，它的第三个动作是再次喷出烈焰。</p>",
+            "hazardroutine": "<p>（3 动作）每成功解除一次，陷阱就损失一个动作。浮动喷火器使用第一个动作喷出@Template[type:cone|distance:15]{15尺锥形}火焰，造成@Damage[(4d6+4)[fire]]{4d6+4火焰伤害}（@Check[type:reflex|dc:40|basic:true]豁免），它的第二个动作是进行一次U形随机方向的飞行，它的第三个动作是再次喷出烈焰。</p>",
             "items": {
                 "gHHe473InFt8KHS2": {
                     "name": "烈焰 Blaze",
@@ -1662,7 +1662,7 @@
             "stealthdetails": "<p>+23（专家）或@Check[type:perception|dc:38|traits:action:seek]（大师）注意到四个传感器</p>",
             "hazarddisable": "<p>@Check[type:thievery|dc:40|name:Disable One Sensor|traits:action:disable-a-device] (传奇)或<em>@Compendium[pf2e.spells-srd.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (6环；反制DC38)来解除其中一个传感器</p>",
             "hazarddescription": "<p>在竞技场的每个角落有4个传感器，可以从竞技场的随机地板上中释放冰冻魔法，阻止生物前进。</p>",
-            "hazardroutine": "<p>（4 动作）每成功解除一个传感器，陷阱就损失一个动作。在每个动作中，陷阱会随机让10尺见方的竞技场地砖变为寒冰。寒冰区域内的每个生物开始回合时都会受到[[/r (2d6+2)[cold]]]{2d6+2寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。豁免大失败的生物还会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮；如果它已经陷入缓慢，生物则被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} 轮。任意数量的火焰伤害都可以移除生物的缓慢或禁足状态。在陷阱的下个回合开始时，寒冰地板会解冻。</p>",
+            "hazardroutine": "<p>（4 动作）每成功解除一个传感器，陷阱就损失一个动作。在每个动作中，陷阱会随机让10尺见方的竞技场地砖变为寒冰。寒冰区域内的每个生物开始回合时都会受到@Damage[(2d6+2)[cold]]{2d6+2寒冷伤害}（@Check[type:reflex|dc:40|basic:true]豁免）。豁免大失败的生物还会陷入@Compendium[pf2e.conditionitems.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮；如果它已经陷入缓慢，生物则被@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized} 轮。任意数量的火焰伤害都可以移除生物的缓慢或禁足状态。在陷阱的下个回合开始时，寒冰地板会解冻。</p>",
             "items": {
                 "Frigid Floor": {
                     "name": "寒冰地板 Frigid Floor",
@@ -1991,7 +1991,7 @@
                 },
                 "sW9lqWGbyXr7xeXh": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>中型，[[/r (3d12+12)[bludgeoning]]]{3d12+12钝击伤害}，破裂36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>中型，@Damage[(3d12+12)[bludgeoning]]{3d12+12钝击伤害}，破裂36</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -2018,15 +2018,15 @@
                 },
                 "f4G7Q9LKy3OXsxWz": {
                     "name": "刀刃之雨 Rain of Knives",
-                    "description": "<p>花之百人众投掷出飞刀雨，对50 尺内的一个@Template[type:burst|distance:10]{10尺爆发}范围造成[[/r (4d6+13)[piercing]]]{4d6+13穿刺伤害}（@Check[type:reflex|dc:33|basic:true]豁免）。当部队只剩下8 格或更少时，爆发范围缩小至@Template[type:burst|distance:5]{5尺爆发}。</p>"
+                    "description": "<p>花之百人众投掷出飞刀雨，对50 尺内的一个@Template[type:burst|distance:10]{10尺爆发}范围造成@Damage[(4d6+13)[piercing]]{4d6+13穿刺伤害}（@Check[type:reflex|dc:33|basic:true]豁免）。当部队只剩下8 格或更少时，爆发范围缩小至@Template[type:burst|distance:5]{5尺爆发}。</p>"
                 },
                 "fIl5mjQ9QlP5xgnM": {
                     "name": "闯过他们! Run Them Over!",
-                    "description": "<p>花之百人众尝试践踏路上所有敌人。部队进行一次重整队列然后行走两次，移动穿过中型或更小生物占据的空间。每个被穿过的生物受到[[/r (4d8+14)[bludgeoning]]]{4d8+14钝击伤害}（@Check[type:reflex|dc:33|basic:true]豁免）。若豁免大失败，该生物会@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+                    "description": "<p>花之百人众尝试践踏路上所有敌人。部队进行一次重整队列然后行走两次，移动穿过中型或更小生物占据的空间。每个被穿过的生物受到@Damage[(4d8+14)[bludgeoning]]{4d8+14钝击伤害}（@Check[type:reflex|dc:33|basic:true]豁免）。若豁免大失败，该生物会@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
                 },
                 "eo8iqqPAWtfCmzx8": {
                     "name": "剑刃风暴 Whirlwind of Blades",
-                    "description": "<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<p>花之百人众部队挥舞刀刃，对邻接的每个敌人进行攻击（@Check[type:reflex|dc:33|basic:true]豁免）。伤害基于使用的动作数。</p>\n<hr />\n<p><span class=\"pf2-icon\">1 </span>[[/r (2d8)[slashing]]]{2d8挥砍伤害}</p>\n<p><span class=\"pf2-icon\">2 </span> [[/r (3d8+13)[slashing]]]{3d8+13挥砍伤害}</p>\n<p><span class=\"pf2-icon\">3 </span> [[/r (4d8+16)[slashing]]]{4d8+16挥砍伤害}</p>"
+                    "description": "<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<p>花之百人众部队挥舞刀刃，对邻接的每个敌人进行攻击（@Check[type:reflex|dc:33|basic:true]豁免）。伤害基于使用的动作数。</p>\n<hr />\n<p><span class=\"pf2-icon\">1 </span>[[/r (2d8)[slashing]]]{2d8挥砍伤害}</p>\n<p><span class=\"pf2-icon\">2 </span> @Damage[(3d8+13)[slashing]]{3d8+13挥砍伤害}</p>\n<p><span class=\"pf2-icon\">3 </span> @Damage[(4d8+16)[slashing]]{4d8+16挥砍伤害}</p>"
                 }
             }
         },
@@ -2128,7 +2128,7 @@
             "items": {
                 "wdjGItceQjeRcTN6": {
                     "name": "变形 Change Shape",
-                    "description": "<p>化形者变成中型气元素，或变回豺狼人形态。在元素形态下，她拥有飞行速度60尺，她的移动不会触发反应动作，并且她唯一能使用的打击是带有灵巧特征的狂风打击（造成[[/r (3d8+5)[bludgeoning]]]{3d8+5钝击伤害}，外加@Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}）。她在此形态下无法施法。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>化形者变成中型气元素，或变回豺狼人形态。在元素形态下，她拥有飞行速度60尺，她的移动不会触发反应动作，并且她唯一能使用的打击是带有灵巧特征的狂风打击（造成@Damage[(3d8+5)[bludgeoning]]{3d8+5钝击伤害}，外加@Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}）。她在此形态下无法施法。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Drain Bonded Item": {
                     "name": "汲取联结物品 Drain Bonded Item",
@@ -2200,7 +2200,7 @@
                 },
                 "Jzn5fdGgdcmOg3Rh": {
                     "name": "固定射击 Pinning Shot",
-                    "description": "<p>纪幽将敌人的衣服固定在墙体或地面上。纪幽进行一次飞镖打击。若命中，不造成伤害，改为将目标固定到一个邻接平面上。目标获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，必须用一个交互动作尝试@Check[type:athletics|dc:10|name:Pull Dart Free]检定拔出飞镖才能解除该禁足；解除之前目标无法离开该平面。若该次飞镖打击重击，目标必须通过两次运动技能检定才能拔出飞镖。目标以此法被禁足时处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-footed}状态。</p>"
+                    "description": "<p>纪幽将敌人的衣服固定在墙体或地面上。纪幽进行一次飞镖打击。若命中，不造成伤害，改为将目标固定到一个邻接平面上。目标获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，必须用一个交互动作尝试@Check[type:athletics|dc:10|name:Pull Dart Free]检定拔出飞镖才能解除该禁足；解除之前目标无法离开该平面。若该次飞镖打击重击，目标必须通过两次运动技能检定才能拔出飞镖。目标以此法被禁足时处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。</p>"
                 },
                 "UiEZKE5pwENRQFcr": {
                     "name": "偷袭 Sneak Attack",
@@ -2236,7 +2236,7 @@
                 },
                 "Jzn5fdGgdcmOg3Rh": {
                     "name": "固定射击 Pinning Shot",
-                    "description": "<p>纪幽将敌人的衣服固定在墙体或地面上。纪幽进行一次飞镖打击。若命中，不造成伤害，改为将目标固定到一个邻接平面上。目标获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，必须用一个交互动作尝试@Check[type:athletics|dc:10|name:Pull Dart Free]检定拔出飞镖才能解除该禁足；解除之前目标无法离开该平面。若该次飞镖打击重击，目标必须通过两次运动技能检定才能拔出飞镖。目标以此法被禁足时处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 flat-footed}状态。</p>"
+                    "description": "<p>纪幽将敌人的衣服固定在墙体或地面上。纪幽进行一次飞镖打击。若命中，不造成伤害，改为将目标固定到一个邻接平面上。目标获得@Compendium[pf2e.conditionitems.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，必须用一个交互动作尝试@Check[type:athletics|dc:10|name:Pull Dart Free]检定拔出飞镖才能解除该禁足；解除之前目标无法离开该平面。若该次飞镖打击重击，目标必须通过两次运动技能检定才能拔出飞镖。目标以此法被禁足时处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。</p>"
                 }
             }
         },
@@ -2517,7 +2517,7 @@
                 },
                 "xm0nQmg2QIXlVTAI": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>超大型, [[/r (3d12+7)[bludgeoning]]]{3d12+7钝击伤害}, 破裂 30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>超大型, @Damage[(3d12+7)[bludgeoning]]{3d12+7钝击伤害}, 破裂 30</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -2554,7 +2554,7 @@
                 },
                 "GlzE8aPPISQLkToK": {
                     "name": "威胁之舞 Threatening Dance",
-                    "description": "<p>战舞者选择先快步后@Compendium[pf2e.actionspf2e.EEDElIyin4z60PXx]{表演 Performs}，或者先表演后快步。将表演检定结果和战舞者触及内一个生物的意志DC 相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物对所有攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直到战舞者的下个回合开始。</p>\n<p><strong>成功</strong> 生物对战舞者之外的生物做出的下一次攻击措手不及，直到战舞者下回合开始。</p>"
+                    "description": "<p>战舞者选择先快步后@Compendium[pf2e.actionspf2e.EEDElIyin4z60PXx]{表演 Performs}，或者先表演后快步。将表演检定结果和战舞者触及内一个生物的意志DC 相比较。</p>\n<hr />\n<p><strong>大成功</strong> 生物对所有攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直到战舞者的下个回合开始。</p>\n<p><strong>成功</strong> 生物对战舞者之外的生物做出的下一次攻击措手不及，直到战舞者下回合开始。</p>"
                 },
                 "Xkb0A0eb7R40FSTM": {
                     "name": "盾牌格挡 Shield Block",
@@ -2587,7 +2587,7 @@
                 },
                 "C3SCJkplJ7UggrPO": {
                     "name": "预警术 Foresight",
-                    "description": "<p>你获得一种能知晓法术目标即将遇到的危险的第六感。如果对于法术目标你选择一个生物而不是自身，你会创造一个精神链接；通过该链接你能告知目标危险将至。该链接是一个心灵效果。由于该法术需要你处理大量的信息，你无法令超过一个预警术同时生效。再次施放预警术会结束之前的预警术。当预警术生效时，目标在其先攻骰上获得+2状态加值，并且对 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 生物或者被夹击时不视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} 。除此之外，你获得下列反应动作： @Compendium[pf2e.actionspf2e.VOEWhPQfN3lvHivK]{预警 Foresight}</p>"
+                    "description": "<p>你获得一种能知晓法术目标即将遇到的危险的第六感。如果对于法术目标你选择一个生物而不是自身，你会创造一个精神链接；通过该链接你能告知目标危险将至。该链接是一个心灵效果。由于该法术需要你处理大量的信息，你无法令超过一个预警术同时生效。再次施放预警术会结束之前的预警术。当预警术生效时，目标在其先攻骰上获得+2状态加值，并且对 @Compendium[pf2e.conditionitems.VRSef5y1LmL2Hkjf]{无踪 Undetected} 生物或者被夹击时不视为 @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard} 。除此之外，你获得下列反应动作： @Compendium[pf2e.actionspf2e.VOEWhPQfN3lvHivK]{预警 Foresight}</p>"
                 },
                 "tSm1Hrsv7Iuf7Yh0": {
                     "name": "飞行术 Fly",
@@ -2703,7 +2703,7 @@
             "items": {
                 "VOt7byVN0Y1EHTi5": {
                     "name": "持久衰弱打击 Lasting Debilitating Strike",
-                    "description": "<p><strong>触发</strong> 勋的打击对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的敌人造成伤害</p>\n<hr />\n<p><strong>效果</strong> 勋从以下衰弱效果中选择一种，直到勋的下回合结束；如果勋造成重击，则持续一周。</p>\n<p><strong>衰弱</strong> 目标的速度受到-10尺状态减值。</p>\n<p><strong>衰弱</strong> 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>"
+                    "description": "<p><strong>触发</strong> 勋的打击对@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的敌人造成伤害</p>\n<hr />\n<p><strong>效果</strong> 勋从以下衰弱效果中选择一种，直到勋的下回合结束；如果勋造成重击，则持续一周。</p>\n<p><strong>衰弱</strong> 目标的速度受到-10尺状态减值。</p>\n<p><strong>衰弱</strong> 目标陷入@Compendium[pf2e.conditionitems.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。</p>"
                 },
                 "CaFY5kyjRXQON92N": {
                     "name": "逼近威胁 Looming Threat",
@@ -2915,7 +2915,7 @@
             "items": {
                 "wdjGItceQjeRcTN6": {
                     "name": "变形 Change Shape",
-                    "description": "<p>化形者变成中型气元素，或变回豺狼人形态。在元素形态下，她拥有飞行速度60尺，她的移动不会触发反应动作，并且她唯一能使用的打击是带有灵巧特征的狂风打击（造成[[/r (3d8+5)[bludgeoning]]]{3d8+5钝击伤害}，外加@Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}）。她在此形态下无法施法。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>化形者变成中型气元素，或变回豺狼人形态。在元素形态下，她拥有飞行速度60尺，她的移动不会触发反应动作，并且她唯一能使用的打击是带有灵巧特征的狂风打击（造成@Damage[(3d8+5)[bludgeoning]]{3d8+5钝击伤害}，外加@Compendium[pf2e.bestiary-ability-glossary-srd.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}）。她在此形态下无法施法。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Drain Bonded Item": {
                     "name": "汲取联结物品 Drain Bonded Item",
@@ -2968,7 +2968,7 @@
                 },
                 "Vx9iqVf4ismUN743": {
                     "name": "整齐划一 Strike as One",
-                    "description": "<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮1次</p>\n<hr />\n<p><strong>效果</strong> 卫队对5尺内的所有生物进行近战攻击（@Check[type:reflex|dc:30|basic:true]豁免）。该伤害取决于花费的动作：</p>\n<p><span class=\"pf2-icon\">A</span> [[/r (2d8)[slashing]]]2d8挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">D</span> [[/r (3d8+13)[slashing]]]{3d8+13挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">T</span> [[/r (4d8+16)[slashing]]]{4d8+16挥砍伤害}。</p>"
+                    "description": "<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮1次</p>\n<hr />\n<p><strong>效果</strong> 卫队对5尺内的所有生物进行近战攻击（@Check[type:reflex|dc:30|basic:true]豁免）。该伤害取决于花费的动作：</p>\n<p><span class=\"pf2-icon\">A</span> [[/r (2d8)[slashing]]]2d8挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">D</span> @Damage[(3d8+13)[slashing]]{3d8+13挥砍伤害}。</p>\n<p><span class=\"pf2-icon\">T</span> @Damage[(4d8+16)[slashing]]{4d8+16挥砍伤害}。</p>"
                 },
                 "4y0Im0eAbj4YFOII": {
                     "name": "部队移动 Troop Movement",
@@ -3022,7 +3022,7 @@
                 },
                 "Lpp6SrBxyA8cOgeJ": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>巨型，[[/r (17d6+8)[force]]]{17d6+8力场伤害}，破裂33</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>巨型，@Damage[(17d6+8)[force]]{17d6+8力场伤害}，破裂33</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "FzHLjs4ilmapsHFn": {
                     "name": "展开实相 Unfurl Realities",
@@ -3317,7 +3317,7 @@
             "hazarddisable": "<p>@Check[type:religon|dc:38|name:阐明义洛里哲学|traits:haunt]{宗教}（专家）阐明只有认识到自己不完美才能抵达完美这一义洛里哲学，或@Check[type:occultism|dc:41|name:制作防止作祟的结界|traits:haunt]（大师）制作出防止作祟再发生的结界。 </p>",
             "hazarddescription": "<p>猛烈狂风卷起黄沙在房间里撕裂空气。</p>",
             "hazardreset": "<p>作祟显形后持续1分钟，并可在1小时后再次显形。当至少两名生物用房间内沙子创作出一幅沙画后，作祟会立刻停止并永久不再出现。创作沙画需要成功通过@Check[type:crafting|dc:30|name:创作沙画]检定或@Check[type:thievery|dc:30|name:创作沙画]检定。</p>",
-            "hazardroutine": "<p>(1动作)作祟狂暴的风推搡着每个房间里的生物，对每个活着的生物造成[[/r (6d10+30)[bludgeoning]]]{6d10+30钝击伤害}(@Check[type:reflex|dc:34|basic:true|traits:haunt]检定)。豁免大失败时，生物陷入@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态，持续一分钟。</p>",
+            "hazardroutine": "<p>(1动作)作祟狂暴的风推搡着每个房间里的生物，对每个活着的生物造成@Damage[(6d10+30)[bludgeoning]]{6d10+30钝击伤害}(@Check[type:reflex|dc:34|basic:true|traits:haunt]检定)。豁免大失败时，生物陷入@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态，持续一分钟。</p>",
             "items": {
                 "nnFpmldqQc7XNy3S": {
                     "name": "沙之引力 Sand Vacuum",
@@ -3374,7 +3374,7 @@
             "items": {
                 "e9QsTTUVu8r1v5Kk": {
                     "name": "惑敌飞跃 Disorienting Tumble",
-                    "description": "<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "wHwMvdbIfrswdggw": {
                     "name": "灵巧躲避 Nimble Dodge",
@@ -3405,7 +3405,7 @@
                 },
                 "e9QsTTUVu8r1v5Kk": {
                     "name": "惑敌飞跃 Disorienting Tumble",
-                    "description": "<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>白谷连跳带跑翻过敌人，使其迷惑，抢占先机攻击不备。当她成功用特技动作@Compendium[pf2e.actionspf2e.21WIfSu7Xd7uKqV8]{翻滚 Tumbles Through}穿过敌人所在格后，该敌人直到白谷回合结束前，对白谷@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "Powerful Fists": {
                     "name": "强力拳 Powerful Fists",
@@ -3550,7 +3550,7 @@
             "items": {
                 "yW1zq1AuOImW36SW": {
                     "name": "尾部重拍 Tail Swat",
-                    "description": "<p><strong>触发</strong> 个生物对魔加鲁进行敌对行为，制造可见的区域效果，或在魔加鲁120尺范围内飞行</p>\n<hr />\n<p><strong>效果</strong> 区域中的生物必须通过@Check[type:reflex|dc:40]豁免，否则受到[[/r (6d10+28)[bludgeoning]]]{6d10+28钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害并被推离20尺。如果正在飞行，则下降20尺。</p>\n<p><strong>失败</strong> 生物受到全伤害，被推离40尺，并且下降60尺（如正在飞行）或被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，被推离60尺，并且下降120尺（如正在飞行）或被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，并且陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>"
+                    "description": "<p><strong>触发</strong> 个生物对魔加鲁进行敌对行为，制造可见的区域效果，或在魔加鲁120尺范围内飞行</p>\n<hr />\n<p><strong>效果</strong> 区域中的生物必须通过@Check[type:reflex|dc:40]豁免，否则受到@Damage[(6d10+28)[bludgeoning]]{6d10+28钝击伤害}。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害并被推离20尺。如果正在飞行，则下降20尺。</p>\n<p><strong>失败</strong> 生物受到全伤害，被推离40尺，并且下降60尺（如正在飞行）或被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，被推离60尺，并且下降120尺（如正在飞行）或被击@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}，并且陷入@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 2}。</p>"
                 }
             }
         },
@@ -3797,7 +3797,7 @@
                 },
                 "GfqJlycpJcVCanhY": {
                     "name": "剑幕如雨 Blade Barrage",
-                    "description": "<p>鹰虎进行五次近战打击。它的多重攻击减值正常计算。每次成功的打击都能让后续打击在伤害骰上获得+2环境加值。若一个目标被至少2次该打击命中，该目标额外受到@Localize[PF2E.PersistentDamage.Bleed2d6.success]。目标直到它的下个回合开始前，会陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}和@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
+                    "description": "<p>鹰虎进行五次近战打击。它的多重攻击减值正常计算。每次成功的打击都能让后续打击在伤害骰上获得+2环境加值。若一个目标被至少2次该打击命中，该目标额外受到@Localize[PF2E.PersistentDamage.Bleed2d6.success]。目标直到它的下个回合开始前，会陷入@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}和@Compendium[pf2e.conditionitems.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。</p>"
                 },
                 "gsPHz5TFhWFd9O10": {
                     "name": "断兵如轮 Disarming Whirl",
@@ -3830,7 +3830,7 @@
                 },
                 "GfqJlycpJcVCanhY": {
                     "name": "剑幕如雨 Blade Barrage",
-                    "description": "<p>鹰虎进行三次近战打击。这些打击获得叠劲特征（forceful）。若一个目标被至少2次该打击命中，该目标额外受到@Localize[PF2E.PersistentDamage.Bleed1d6.success]。受该持续流血伤害影响的生物，会一直处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 flat-footed}状态中。</p>"
+                    "description": "<p>鹰虎进行三次近战打击。这些打击获得叠劲特征（forceful）。若一个目标被至少2次该打击命中，该目标额外受到@Localize[PF2E.PersistentDamage.Bleed1d6.success]。受该持续流血伤害影响的生物，会一直处于@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态中。</p>"
                 },
                 "gsPHz5TFhWFd9O10": {
                     "name": "断兵如轮 Disarming Whirl",
@@ -3951,7 +3951,7 @@
                 },
                 "U1uqr0HgPoIr8ash": {
                     "name": "雪崩拳 Avalanche Pummel",
-                    "description": "<p>特罗夫对一个@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物进行一次凿落冰凌打击。如果命中，该生物@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。如果重击，生物@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}。无论哪种情况，效果持续到特罗夫的下个回合开始。如果打击失手（但是没有大失败），特罗夫依然对目标造成[[/r (13)[piercing]]]{13穿刺伤害}。</p>"
+                    "description": "<p>特罗夫对一个@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物进行一次凿落冰凌打击。如果命中，该生物@Compendium[pf2e.conditionitems.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。如果重击，生物@Compendium[pf2e.conditionitems.XgEqL1kFApUbl5Z2]{目盲 Blinded}。无论哪种情况，效果持续到特罗夫的下个回合开始。如果打击失手（但是没有大失败），特罗夫依然对目标造成[[/r (13)[piercing]]]{13穿刺伤害}。</p>"
                 },
                 "54wMKEbOXBHvnjXX": {
                     "name": "寒颤猛击 Chattering Blow",
@@ -3959,7 +3959,7 @@
                 },
                 "a2Ht2VRQHOf9f798": {
                     "name": "冰凌架势 Icicle Stance",
-                    "description": "<p><strong>触发</strong> 特罗夫投掷先攻或他的回合开始</p>\n<hr />\n<p><strong>效果</strong> 特罗夫准备好像冰凌一样突然出击。在此架势下，特罗夫能进行凿落冰凌打击。当特罗夫位于一个生物上方并且在此架势中时，该生物对他@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p><strong>触发</strong> 特罗夫投掷先攻或他的回合开始</p>\n<hr />\n<p><strong>效果</strong> 特罗夫准备好像冰凌一样突然出击。在此架势下，特罗夫能进行凿落冰凌打击。当特罗夫位于一个生物上方并且在此架势中时，该生物对他@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -3989,7 +3989,7 @@
                 },
                 "hCSgZRqIcBMpqV5q": {
                     "name": "甩尾 Tail Swipe",
-                    "description": "<p>暴龙甩尾横扫@Template[type:cone|distance:15]{15尺锥形}范围，对范围内所有生物造成[[/r (4d8+12)[bludgeoning]]]{4d8+12钝击伤害}。范围内生物必须进行@Check[type:reflex|dc:34|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全额伤害并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，被击退10 尺，然后倒地。</p>"
+                    "description": "<p>暴龙甩尾横扫@Template[type:cone|distance:15]{15尺锥形}范围，对范围内所有生物造成@Damage[(4d8+12)[bludgeoning]]{4d8+12钝击伤害}。范围内生物必须进行@Check[type:reflex|dc:34|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害。</p>\n<p><strong>失败</strong> 生物受到全额伤害并且@Compendium[pf2e.conditionitems.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，被击退10 尺，然后倒地。</p>"
                 },
                 "ATuHWb9pil4pkYgX": {
                     "name": "践踏 Trample",
@@ -3997,7 +3997,7 @@
                 },
                 "LqiyG9U9vgSjT5du": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>中型，[[/r (4d6+8)[bludgeoning]]]{4d6+8钝击伤害}，破裂34</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>中型，@Damage[(4d6+8)[bludgeoning]]{4d6+8钝击伤害}，破裂34</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -4208,7 +4208,7 @@
                 },
                 "Swift Blow": {
                     "name": "拔刀击 Swift Blow",
-                    "description": "<p><strong>需求</strong> 武器大师并未持握武器</p>\n<hr />\n<p><strong>效果</strong> 武器大师不触发反应动作使用交互拔出一把近战武器，然后用该武器进行一次近战打击。目标对该次打击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。武器大师该次打击额外造成@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
+                    "description": "<p><strong>需求</strong> 武器大师并未持握武器</p>\n<hr />\n<p><strong>效果</strong> 武器大师不触发反应动作使用交互拔出一把近战武器，然后用该武器进行一次近战打击。目标对该次打击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。武器大师该次打击额外造成@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
                 }
             }
         },
@@ -4222,7 +4222,7 @@
                 },
                 "Swift Blow": {
                     "name": "拔刀击 Swift Blow",
-                    "description": "<p><strong>需求</strong> 武器大师并未持握武器</p>\n<hr />\n<p><strong>效果</strong> 武器大师不触发反应动作使用交互拔出一把近战武器，然后用该武器进行一次近战打击。目标对该次打击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。武器大师该次打击额外造成@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
+                    "description": "<p><strong>需求</strong> 武器大师并未持握武器</p>\n<hr />\n<p><strong>效果</strong> 武器大师不触发反应动作使用交互拔出一把近战武器，然后用该武器进行一次近战打击。目标对该次打击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。武器大师该次打击额外造成@Localize[PF2E.PersistentDamage.Bleed2d8.success]。</p>"
                 },
                 "Whirling Attack": {
                     "name": "回旋攻击 Whirling Attack",
@@ -4240,7 +4240,7 @@
             "items": {
                 "vOiHInRhZ9Bv0oQq": {
                     "name": "真气风暴 Ki Storm",
-                    "description": "<p><strong>触发</strong> 一个生物进入祈祷间。</p>\n<hr />\n<p><strong>效果</strong> 主持的意志显化成型并开始引导真气风暴。一轮后，房间内会充斥着强大的念力风暴，对房间内所有生物造成[[/r (3d10+15)[electricity]]]{3d10+15电击伤害}和[[/r (3d10+15)[force]]]{3d10+15力场伤害}。此时房间内生物必须尝试@Check[type:reflex|dc:37|traits:haunt]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到一半伤害。</p>\n<p><strong>失败</strong> 该生物受到全额伤害且@Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}１轮。</p>\n<p><strong>大失败</strong> 该生物受到全额伤害，和额外[[/r (2d8)[persistent,electricity]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续电击伤害}，耳聋1分钟。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物进入祈祷间。</p>\n<hr />\n<p><strong>效果</strong> 主持的意志显化成型并开始引导真气风暴。一轮后，房间内会充斥着强大的念力风暴，对房间内所有生物造成@Damage[(3d10+15)[electricity]]{3d10+15电击伤害}和@Damage[(3d10+15)[force]]{3d10+15力场伤害}。此时房间内生物必须尝试@Check[type:reflex|dc:37|traits:haunt]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到一半伤害。</p>\n<p><strong>失败</strong> 该生物受到全额伤害且@Compendium[pf2e.conditionitems.9PR9y0bi4JPKnHPR]{耳聋 Deafened}１轮。</p>\n<p><strong>大失败</strong> 该生物受到全额伤害，和额外[[/r (2d8)[persistent,electricity]]] @Compendium[pf2e.conditionitems.lDVqvLKA6eF3Df60]{持续电击伤害}，耳聋1分钟。</p>"
                 }
             }
         },
@@ -4372,7 +4372,7 @@
                 },
                 "l3Jye2wtDn71XMXP": {
                     "name": "我会将你送达！ I'll Get You into Position!",
-                    "description": "<p><strong>需求</strong> 叶索兰正在驾驶空中载具</p>\n<hr />\n<p><strong>效果</strong> 叶索兰急踩刹车，快速倾斜，或者进行其他空中机动以在敌人头上降落。他进行一次驾驶知识（Piloting Lore）检定对抗敌人的察觉 DC。如果他成功，敌人对船上生物的下一次攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，只要攻击是在叶索兰下一轮前进行。所有注意到机动操作的敌人临时免疫1天。</p>"
+                    "description": "<p><strong>需求</strong> 叶索兰正在驾驶空中载具</p>\n<hr />\n<p><strong>效果</strong> 叶索兰急踩刹车，快速倾斜，或者进行其他空中机动以在敌人头上降落。他进行一次驾驶知识（Piloting Lore）检定对抗敌人的察觉 DC。如果他成功，敌人对船上生物的下一次攻击@Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，只要攻击是在叶索兰下一轮前进行。所有注意到机动操作的敌人临时免疫1天。</p>"
                 },
                 "Z6iJLnWxjo46j565": {
                     "name": "驾驶学识"

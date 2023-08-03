@@ -75,7 +75,7 @@
         },
         "Barbed Quills": {
             "name": "带刺羽尖 Barbed Quills",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成[[/r 1d8[piercing]]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到[[/r 1d4[bleed]]]伤害。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成@Damage[1d8[piercing]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Damage[1d4[bleed]]伤害。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
@@ -91,7 +91,7 @@
         },
         "Blizzard Evasion": {
             "name": "暴雪回避 Blizzard Evasion",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你从单次攻击受到40点或以上的物理伤害</p>\n<hr />\n<p><strong>效果</strong> 你解体成旋转的暴风雪，最多持续3轮。在此期间，你获得10点物理伤害抗力和力场伤害+10的弱点。你获得飞行速度40尺，但你唯一能采取的动作是@UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{飞行 Fly}。每轮首次你在解体时进入另一个生物的空间，或一个生物首次进入你的空间时，该生物受到[[/r 4d8[cold]]]伤害，并且必须成功通过一次强韧豁免来对抗你的职业DC或法术DC，取其高者，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。在你的回合开始时，你能以一个自由动作结束此效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.JF2xCqL6t4UJZtUi]{效果: 暴雪回避}</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你从单次攻击受到40点或以上的物理伤害</p>\n<hr />\n<p><strong>效果</strong> 你解体成旋转的暴风雪，最多持续3轮。在此期间，你获得10点物理伤害抗力和力场伤害+10的弱点。你获得飞行速度40尺，但你唯一能采取的动作是@UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{飞行 Fly}。每轮首次你在解体时进入另一个生物的空间，或一个生物首次进入你的空间时，该生物受到@Damage[4d8[cold]]伤害，并且必须成功通过一次强韧豁免来对抗你的职业DC或法术DC，取其高者，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。在你的回合开始时，你能以一个自由动作结束此效果。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.JF2xCqL6t4UJZtUi]{效果: 暴雪回避}</p>"
         },
         "Board": {
             "name": "搭乘 Board",
@@ -111,59 +111,59 @@
         },
         "Breath Weapon (Acid) (Cone)": {
             "name": "喷吐武器(酸液锥形) Breath Weapon (Acid) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[acid]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[acid]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Acid) (Line)": {
             "name": "喷吐武器(酸液线形) Breath Weapon (Acid) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[acid]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[acid]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[acid]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Cone)": {
             "name": "喷吐武器(寒冷锥形) Breath Weapon (Cold) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[cold]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[cold]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Cold) (Line)": {
             "name": "喷吐武器(寒冷线形) Breath Weapon (Cold) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[cold]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[cold]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[cold]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Cone)": {
             "name": "喷吐武器(电击锥形) Breath Weapon (Electricity) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[electricity]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[electricity]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Electricity) (Line)": {
             "name": "喷吐武器(电击线形) Breath Weapon (Electricity) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[electricity]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[electricity]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[electricity]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Cone)": {
             "name": "喷吐武器(火焰锥形) Breath Weapon (Fire) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[fire]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[fire]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Fire) (Line)": {
             "name": "喷吐武器(火焰线形) Breath Weapon (Fire) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[fire]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[fire]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[fire]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Cone)": {
             "name": "喷吐武器(负能量锥形) Breath Weapon (Negative) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[negative]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[negative]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Negative) (Line)": {
             "name": "喷吐武器(负能量线形) Breath Weapon (Negative) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[negative]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[negative]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[negative]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Cone)": {
             "name": "喷吐武器(穿刺锥形) Breath Weapon (Piercing) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[piercing]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[piercing]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Piercing) (Line)": {
             "name": "喷吐武器(穿刺线形) Breath Weapon (Piercing) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[piercing]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[piercing]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[piercing]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Cone)": {
             "name": "喷吐武器(毒素锥形) Breath Weapon (Poison) (Cone)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成[[/r 1d6[poison]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:cone|distance:30]内的所有生物造成@Damage[1d6[poison]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Breath Weapon (Poison) (Line)": {
             "name": "喷吐武器(毒素线形) Breath Weapon (Poison) (Line)",
-            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成[[/r 1d6[poison]]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
+            "description": "<p>你的幻灵喷出破坏性的能量波。幻灵对@Template[type:line|distance:60]内的所有生物造成@Damage[1d6[poison]]伤害，需要对抗你法术DC的基础反射豁免。</p>\n<p>你的幻灵在接下来的[[/r 1d4 #rounds]]{1d4轮}内无法再次使用喷吐武器。</p>\n<p>在3级以及之后的每2级，伤害提升1d6。[[/r ((ceil(@actor.level/2))d6)[poison]]]{按等级计算的伤害}</p>"
         },
         "Bullet Dancer Stance": {
             "name": "弹舞架势 Bullet Dancer Stance",
@@ -227,7 +227,7 @@
         },
         "Climb": {
             "name": "攀爬 Climb",
-            "description": "<p><strong>需求</strong> 你的双手都空着。</p>\n<hr />\n<p>你可以在一个非地平表面上爬上，爬下或左右爬。除非情况异常的容易，通常你都需要通过一个 <span data-pf2-action=\"climb\" data-pf2-glyph=\"A\">运动</span> 检定来攀爬。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} 状态。</p>\n<hr />\n<p><strong>大成功</strong> 你可以垂直或水平攀爬，或安全降下（5+5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，10尺；对于陆地移动速度小于20尺的角色来说则是5尺）</p>\n<p><strong>成功</strong> 你可以垂直或水平攀爬，或安全降下（5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，5尺；对于陆地移动速度小于20尺的角色来说也是最少5尺）</p>\n<p><strong>大失败</strong> 你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>\n<h2>范例攀爬情景</h2>\n<ul>\n<li><strong>未受训</strong> 梯子，陡坡，低矮多枝桠的树</li>\n<li><strong>受训</strong> 船帆索具，绳子，普通的树</li>\n<li><strong>专家</strong> 有一些细小支撑点和坑洼的墙壁</li>\n<li><strong>大师</strong> 有抓手处的天花板，普通石墙</li>\n<li><strong>传奇</strong> 光可鉴人的墙壁</li>\n</ul>"
+            "description": "<p><strong>需求</strong> 你的双手都空着。</p>\n<hr />\n<p>你可以在一个非地平表面上爬上，爬下或左右爬。除非情况异常的容易，通常你都需要通过一个 <span data-pf2-action=\"climb\" data-pf2-glyph=\"A\">运动</span> 检定来攀爬。GM会根据这个攀爬平面的特性和环境因素来决定攀爬检定的DC。除非你本身就拥有攀爬速度，否则在攀爬时你处于 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} 状态。</p>\n<hr />\n<p><strong>大成功</strong> 你可以垂直或水平攀爬，或安全降下（5+5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，10尺；对于陆地移动速度小于20尺的角色来说则是5尺）</p>\n<p><strong>成功</strong> 你可以垂直或水平攀爬，或安全降下（5/你每拥有20尺陆地移动速度）尺的距离。（对大多数玩家角色来说，5尺；对于陆地移动速度小于20尺的角色来说也是最少5尺）</p>\n<p><strong>大失败</strong> 你掉了下来。如果你是在从平地上开始攀爬，你摔倒并处于 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}状态。</p>\n<h2>范例攀爬情景</h2>\n<ul>\n<li><strong>未受训</strong> 梯子，陡坡，低矮多枝桠的树</li>\n<li><strong>受训</strong> 船帆索具，绳子，普通的树</li>\n<li><strong>专家</strong> 有一些细小支撑点和坑洼的墙壁</li>\n<li><strong>大师</strong> 有抓手处的天花板，普通石墙</li>\n<li><strong>传奇</strong> 光可鉴人的墙壁</li>\n</ul>"
         },
         "Clue In": {
             "name": "提供线索 Clue In",
@@ -291,7 +291,7 @@
         },
         "Create a Diversion": {
             "name": "分神 Create a Diversion",
-            "description": "<p>你摆出一个架势，施展一个花招或是利用挑逗性的话术让你面前的对手分神注意其他地方。如果你选择摆出姿势或是玩出花招，这个动作还会获得【操作】特性。如果你使用话术，这个动作获得【声音】和【语言】特性。</p>\n<p>尝试进行一次欺骗技能检定(<span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\">话术分神</span>, <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\">姿势分神</span>, or <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\">花招分神</span>) 对抗你要使其分神的生物的察觉DC。无论你这次检定是否成功，在接下来的1分钟时间内，你继续该生物在对抗你使其分神的察觉DC上获得+4环境加值。</p>\n<hr />\n<p><strong>成功</strong> 对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入 @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{隐匿} 状态，并可以开始尝试 @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{潜行} 。这个效果持续到你的回合结束或是进行任何除了 @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide} ，潜行或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} ，然后你立刻对其变得 @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{可见}。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。</p>\n<p><strong>失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。</p>"
+            "description": "<p>你摆出一个架势，施展一个花招或是利用挑逗性的话术让你面前的对手分神注意其他地方。如果你选择摆出姿势或是玩出花招，这个动作还会获得【操作】特性。如果你使用话术，这个动作获得【声音】和【语言】特性。</p>\n<p>尝试进行一次欺骗技能检定(<span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"distracting-words\">话术分神</span>, <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"gesture\">姿势分神</span>, or <span data-pf2-action=\"createADiversion\" data-pf2-glyph=\"A\" data-pf2-variant=\"trick\">花招分神</span>) 对抗你要使其分神的生物的察觉DC。无论你这次检定是否成功，在接下来的1分钟时间内，你继续该生物在对抗你使其分神的察觉DC上获得+4环境加值。</p>\n<hr />\n<p><strong>成功</strong> 对于所有你的检定结果超过或等同其察觉DC的生物，你视为进入 @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{隐匿} 状态，并可以开始尝试 @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{潜行} 。这个效果持续到你的回合结束或是进行任何除了 @UUID[Compendium.pf2e.actionspf2e.Item.XMcnh4cSI32tljXa]{躲藏 Hide} ，潜行或是快步以外的动作为止。如果你对你拥有隐匿状态的生物发动攻击，该生物会对这一次攻击视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} ，然后你立刻对其变得 @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{可见}。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。</p>\n<p><strong>失败</strong> 如果你的检定结果未能超过其他生物的察觉DC，则你不能使他们分神，并且这些生物立刻意识到你在尝试欺骗他们。</p>"
         },
         "De-Animating Gestures (False)": {
             "name": "解除动力手势 De-Animating Gestures (假)",
@@ -343,7 +343,7 @@
         },
         "Disarm": {
             "name": "卸武 Disarm",
-            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人一只手中拿着的东西扭下来。尝试一个 <span data-pf2-action=\"disarm\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。</p>\n<p><strong>成功</strong> 你震得对手虎口发麻。直到这个生物的回合开始前，接下来对该生物的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定承受-2环境减值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{效果：卸武(成功)}</p>\n<p><strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} 状态。</p>"
+            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人一只手中拿着的东西扭下来。尝试一个 <span data-pf2-action=\"disarm\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你将对手手中的物品打掉在了地上。这件物品掉落在这个对手占据的空间中。</p>\n<p><strong>成功</strong> 你震得对手虎口发麻。直到这个生物的回合开始前，接下来对该生物的同一件手持物品的卸武检定获得+2环境加值，并且这个生物在使用这件物品发动攻击，或是进行其他需要维持稳定持握这件物品才能进行的行动的检定承受-2环境减值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.z3ATL8DcRVrT0Uzt]{效果：卸武(成功)}</p>\n<p><strong>大失败</strong> 你自己失去平衡，直到你的下一回合开始前都陷入 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} 状态。</p>"
         },
         "Dismiss": {
             "name": "解消 Dismiss",
@@ -395,7 +395,7 @@
         },
         "Encouraging Words": {
             "name": "信心喊话 Encouraging Words",
-            "description": "<p><strong>先决条件</strong> 交涉技能熟练度为受训</p>\n<p><strong>需求</strong> 目标盟友在上一轮间损失过耐力值</p>\n<hr />\n<p>你向30尺内的1名盟友进行信心喊话，提振其精神。进行交涉技能检定。此检定的DC一般为15，但GM可依照情境调整之。若你在交涉上有专家熟练，你可改为尝试DC 20的交涉检定，来使成功时回复的耐力点提升+5。若你在交涉上有大师熟练，你可改为尝试DC 30的交涉检定，来使成功时回复的耐力点提升+15。若你在交涉上有传奇熟练，你可改为尝试DC 40的交涉检定，来使成功时回复的耐力点提升+25。不论检定成功与否，直到该盟友下次进行@UUID[Compendium.pf2e.actionspf2e.Item.qc0VsZ0UesnurUUB]{小憩一刻 Take a Breather}行动或完整休息，他暂时免疫信心喊话。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友回复[[/r {2d8} #Stamina Points]]{2d8耐力值}。</p>\n<p><strong>成功</strong> 该盟友回复[[/r {1d8} #Stamina Points]]{1d8耐力值}。</p>\n<p><strong>大失败</strong> 该盟友承受[[/r 1d8[mental]]]伤害，此伤害只会扣减耐力值，永不影响生命值。</p>"
+            "description": "<p><strong>先决条件</strong> 交涉技能熟练度为受训</p>\n<p><strong>需求</strong> 目标盟友在上一轮间损失过耐力值</p>\n<hr />\n<p>你向30尺内的1名盟友进行信心喊话，提振其精神。进行交涉技能检定。此检定的DC一般为15，但GM可依照情境调整之。若你在交涉上有专家熟练，你可改为尝试DC 20的交涉检定，来使成功时回复的耐力点提升+5。若你在交涉上有大师熟练，你可改为尝试DC 30的交涉检定，来使成功时回复的耐力点提升+15。若你在交涉上有传奇熟练，你可改为尝试DC 40的交涉检定，来使成功时回复的耐力点提升+25。不论检定成功与否，直到该盟友下次进行@UUID[Compendium.pf2e.actionspf2e.Item.qc0VsZ0UesnurUUB]{小憩一刻 Take a Breather}行动或完整休息，他暂时免疫信心喊话。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友回复[[/r {2d8} #Stamina Points]]{2d8耐力值}。</p>\n<p><strong>成功</strong> 该盟友回复[[/r {1d8} #Stamina Points]]{1d8耐力值}。</p>\n<p><strong>大失败</strong> 该盟友承受@Damage[1d8[mental]]伤害，此伤害只会扣减耐力值，永不影响生命值。</p>"
         },
         "Energy Emanation": {
             "name": "能量爆发 Energy Emanation",
@@ -423,7 +423,7 @@
         },
         "Feint": {
             "name": "虚招 Feint",
-            "description": "<p><strong>需求</strong> 你必须处于你欲对它发动虚招的生物的近战触及范围（Melee Reach）以内。</p>\n<hr />\n<p>你虚晃一枪，让对手急着回应这次虚招而对你真正的攻击空门大开。进行一次 <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">欺骗</span> 技能检定来对抗这个对手的察觉DC。</p>\n<hr />\n<p><strong>大成功</strong> 对手被你完全搞糊涂了，并且一时都来不及反应。直到你的下一个回合结束，这个对手对你的近战攻击都视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>成功</strong> 对手对你露了个破绽，但及时回护了。直到你目前的这个回合结束，这个对手对你的近战攻击视为措手不及。</p>\n<p><strong>大失败</strong> 哈哈哈你看看你。直到你的下一个回合结束，你自己都对这个对手的近战攻击视为措手不及状态。</p>"
+            "description": "<p><strong>需求</strong> 你必须处于你欲对它发动虚招的生物的近战触及范围（Melee Reach）以内。</p>\n<hr />\n<p>你虚晃一枪，让对手急着回应这次虚招而对你真正的攻击空门大开。进行一次 <span data-pf2-action=\"feint\" data-pf2-glyph=\"A\">欺骗</span> 技能检定来对抗这个对手的察觉DC。</p>\n<hr />\n<p><strong>大成功</strong> 对手被你完全搞糊涂了，并且一时都来不及反应。直到你的下一个回合结束，这个对手对你的近战攻击都视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<p><strong>成功</strong> 对手对你露了个破绽，但及时回护了。直到你目前的这个回合结束，这个对手对你的近战攻击视为措手不及。</p>\n<p><strong>大失败</strong> 哈哈哈你看看你。直到你的下一个回合结束，你自己都对这个对手的近战攻击视为措手不及状态。</p>"
         },
         "Fey's Fortune": {
             "name": "精类幸运 Fey's Fortune",
@@ -507,7 +507,7 @@
         },
         "Hide": {
             "name": "躲藏 Hide",
-            "description": "<p>你 @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{躲藏 Hide}一处掩蔽，高级掩蔽或是隐身在隐蔽物中，避开观察者的视线变得不 @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{可见}。GM会给你暗骰一次 <span data-pf2-action=\"hide\" data-pf2-glyph=\"A\">隐秘</span> 检定，用本次检定的结果来分别对抗所有可以看得到你，但你对他们拥有掩蔽，高级掩蔽，或是隐蔽的观察者的察觉DC。如果你使用掩蔽或是高级掩蔽来藏匿，你可以从它们上获得加值。</p>\n<hr />\n<p><strong>成功</strong> 对其他原本可以看到你的生物，现在你获得藏匿状态而非可见状态。如果你在原本就对某生物来说处于藏匿或 @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪}状态下再次尝试藏匿，你保持原状态不变。</p>\n<p>如果你成功地获得对某生物的藏匿状态，但在此之后失去了对其拥有的掩蔽，高级掩蔽或隐蔽，你会重新对其回到可见状态。进行任何除了躲藏， @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{潜行}潜行或是快步以外的动作也会使你不再处于藏匿状态。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} ，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意。</p>\n<p>如果其他生物成功地通过 @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索} 动作发现了你而使你对其可见，那么你必须重新尝试躲藏行动来对其获得藏匿状态。</p>"
+            "description": "<p>你 @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{躲藏 Hide}一处掩蔽，高级掩蔽或是隐身在隐蔽物中，避开观察者的视线变得不 @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{可见}。GM会给你暗骰一次 <span data-pf2-action=\"hide\" data-pf2-glyph=\"A\">隐秘</span> 检定，用本次检定的结果来分别对抗所有可以看得到你，但你对他们拥有掩蔽，高级掩蔽，或是隐蔽的观察者的察觉DC。如果你使用掩蔽或是高级掩蔽来藏匿，你可以从它们上获得加值。</p>\n<hr />\n<p><strong>成功</strong> 对其他原本可以看到你的生物，现在你获得藏匿状态而非可见状态。如果你在原本就对某生物来说处于藏匿或 @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪}状态下再次尝试藏匿，你保持原状态不变。</p>\n<p>如果你成功地获得对某生物的藏匿状态，但在此之后失去了对其拥有的掩蔽，高级掩蔽或隐蔽，你会重新对其回到可见状态。进行任何除了躲藏， @UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{潜行}潜行或是快步以外的动作也会使你不再处于藏匿状态。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} ，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意。</p>\n<p>如果其他生物成功地通过 @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索} 动作发现了你而使你对其可见，那么你必须重新尝试躲藏行动来对其获得藏匿状态。</p>"
         },
         "High Jump": {
             "name": "跳高 High Jump",
@@ -563,7 +563,7 @@
         },
         "Iron Command": {
             "name": "残酷纪律 Iron Command",
-            "description": "<p><strong>触发</strong> 一个敌人伤害了你，并且他在你周围15尺的范围内。</p>\n<hr />\n<p><strong>效果</strong> 你让那个胆敢冒犯伤害你的敌人认清自己的身分。你命令你的敌人向你跪拜，向你臣服。如果他们胆坦拒绝，他们必须付出痛苦和折磨的代价。敌人必须选择下面一种效果： </p>\n<ul>\n<li>敌人跪拜，用一个自由动作进入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n<li>敌人拒绝，你对他造成[[/r 1d6[mental]]]伤害。伤害5级变成[[/r 2d6[mental]]]伤害、9级变成[[/r 3d6[mental]]]伤害 、12级变成[[/r 4d6[mental]]]伤害、16级变成[[/r 5d6[mental]]]伤害， 19级变成[[/r 6d6[mental]]]伤害。</li>\n</ul>\n<p>此外，直到你下一回合结束，你对触发生物的打击额外造成[[/r (1}]]{1点伤害}。你每次使用这个反应动作都要选择伤害类型是邪恶还是负能量。9级时这个额外伤害变成[[/r {2}]]{2点伤害}，16级变成[[/r ({3}]]{3点伤害}。</p>"
+            "description": "<p><strong>触发</strong> 一个敌人伤害了你，并且他在你周围15尺的范围内。</p>\n<hr />\n<p><strong>效果</strong> 你让那个胆敢冒犯伤害你的敌人认清自己的身分。你命令你的敌人向你跪拜，向你臣服。如果他们胆坦拒绝，他们必须付出痛苦和折磨的代价。敌人必须选择下面一种效果： </p>\n<ul>\n<li>敌人跪拜，用一个自由动作进入@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n<li>敌人拒绝，你对他造成@Damage[1d6[mental]]伤害。伤害5级变成@Damage[2d6[mental]]伤害、9级变成@Damage[3d6[mental]]伤害 、12级变成@Damage[4d6[mental]]伤害、16级变成@Damage[5d6[mental]]伤害， 19级变成@Damage[6d6[mental]]伤害。</li>\n</ul>\n<p>此外，直到你下一回合结束，你对触发生物的打击额外造成[[/r (1}]]{1点伤害}。你每次使用这个反应动作都要选择伤害类型是邪恶还是负能量。9级时这个额外伤害变成[[/r {2}]]{2点伤害}，16级变成[[/r ({3}]]{3点伤害}。</p>"
         },
         "Jinx": {
             "name": "霉运招来 Jinx",
@@ -635,7 +635,7 @@
         },
         "Master Strike": {
             "name": "大师一击 Master Strike",
-            "description": "<p><strong>触发</strong> 你的打击命中一个@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物并对它造成伤害。</p>\n<hr />\n<p>目标必须通过一次对抗你职业DC的强韧检定。之后他在1天之内对大师一击临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 无效果。</p>\n<p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你下回合结束。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮，@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}2小时，或是被杀死（由你选择）。</p>"
+            "description": "<p><strong>触发</strong> 你的打击命中一个@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物并对它造成伤害。</p>\n<hr />\n<p>目标必须通过一次对抗你职业DC的强韧检定。之后他在1天之内对大师一击临时免疫。</p>\n<hr />\n<p><strong>大成功</strong> 无效果。</p>\n<p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你下回合结束。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}4轮，@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}2小时，或是被杀死（由你选择）。</p>"
         },
         "Mesmerizing Performance": {
             "name": "迷魂表演 Mesmerizing Performance",
@@ -735,7 +735,7 @@
         },
         "Rally": {
             "name": "振励 Rally",
-            "description": "<p><strong>先决条件</strong> 交涉、威吓或表演技能受训</p>\n<hr />\n<p>你花1分钟鼓励你的盟友。虽然此行动通常有听觉与语言特征，若你以表演技能执行此行动，则GM可调整该次行动的特征使之符合你的表演类型的特征。</p>\n<p>进行DC15的技能检定。GM可依照情境调整此DC，例如试图振励才刚刚屈辱大败的盟友。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>成功</strong> 你可持续鼓励该盟友直到耗时满10分钟。若你如此做，则该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>大失败</strong> 该盟友承受[[/r 1d8[mental]]]伤害，此伤害只会扣减耐力值，永不影响生命值。</p>"
+            "description": "<p><strong>先决条件</strong> 交涉、威吓或表演技能受训</p>\n<hr />\n<p>你花1分钟鼓励你的盟友。虽然此行动通常有听觉与语言特征，若你以表演技能执行此行动，则GM可调整该次行动的特征使之符合你的表演类型的特征。</p>\n<p>进行DC15的技能检定。GM可依照情境调整此DC，例如试图振励才刚刚屈辱大败的盟友。</p>\n<hr />\n<p><strong>大成功</strong> 该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>成功</strong> 你可持续鼓励该盟友直到耗时满10分钟。若你如此做，则该盟友可消耗1点决心点数来回复他的所有耐力值。</p>\n<p><strong>大失败</strong> 该盟友承受@Damage[1d8[mental]]伤害，此伤害只会扣减耐力值，永不影响生命值。</p>"
         },
         "Rampaging Ferocity": {
             "name": "决死蛮勇 Rampaging Ferocity",
@@ -887,7 +887,7 @@
         },
         "Siegebreaker": {
             "name": "爆射破围 Siegebreaker",
-            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{行走 Stride}或@UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外[[/r 3d8[bludgeoning]]]伤害并且无视物体10点硬度（如有），如果目标使用@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这两个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
+            "description": "<p><strong>需求</strong> 你正持用一把拥有反冲（kickback）或散射（scatter）特征的火器或者双手弩。</p>\n<hr />\n<p>在站稳脚跟及扣动扳机前，你率先用难以置信的力量冲锋并把枪口砸向一个目标。@UUID[Compendium.pf2e.actionspf2e.Item.Bcxarzksqt9ezrs6]{行走 Stride}或@UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{跳跃 Leap}一次，然后使用需求中的火器或弩对邻接你的目标进行一次@UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{打击 Strike}。这次打击造成额外@Damage[3d8[bludgeoning]]伤害并且无视物体10点硬度（如有），如果目标使用@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.m4HQ2o5aPxjXf2kY]{盾牌格挡 Shield Block}则无视盾牌硬度。</p>\n<p>这次打击之后你获得@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}并用需求中的武器做出防御姿态，AC获得+1环境加值，如果所选武器拥有格挡特征则改为+2环境加值，这两个效果持续到你下个回合开始前。如果你在禁足状态受到外力因素将要移动时，它必须要成功通过等同于你职业DC的挪动检定。</p>"
         },
         "Smoke Blending": {
             "name": "融身于烟 Smoke Blending",
@@ -895,7 +895,7 @@
         },
         "Sneak": {
             "name": "潜行 Sneak",
-            "description": "<p>你尝试保持 @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪}状态，从一点移动到另一点而不被察觉。你可以在潜行状态下行走（或是通过掘地，游泳，攀爬或飞行方式而非行走，前提是你拥有这些移动方式）不超过你的移动速度一半的距离。</p>\n<p>如果你对于一个生物处于无踪状态且它没有可以用来观察你的方式（对于通常的生物来说，这些条件包括但不限于：你处于 @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形}状态、观察你的生物 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}，或是你处于黑暗环境中但你的对手无法看穿黑暗）。如果你在潜行行动的检定上骰出大失败，你只会获得失败的结果。如果你不再对目标生物拥有掩蔽、高级掩蔽或是 @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽}，你也仍然对其处于无踪状态。</p>\n<p>在你的移动结束时，GM暗骰你的 <span data-pf2-action=\"sneak\" data-pf2-glyph=\"A\">隐秘</span> 技能检定，并将其结果分别用来对抗每一个在你进行移动前对其视为拥有 @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿} 或无踪状态的生物的察觉DC。如果你在潜行中的行走动作一直没有使你离开任何掩蔽或高级掩蔽的遮挡，你可以对有遮挡的生物在潜行检定上获得+2（高级掩蔽+4）环境加值，但因为你在移动，你不能从 @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{找掩护} 动作中再获得额外的加值。如果在你结束潜行移动时，如果你对一个生物既不拥有隐蔽也不拥有掩蔽/高等掩蔽，你不需对其进行潜行检定——你自动对它视为 @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{可见}。</p>\n<hr />\n<p><strong>成功</strong> 在你的移动期间和结束移动后你都对对方视为无踪状态。</p>\n<p>但如果你再进行躲藏、潜行、快步以外的动作，你会立刻变得可见。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意，但这样做通常会需要一个额外的隐秘检定。如果你说话或发出不适当的响亮噪音，你从无踪状态变为藏匿状态。</p>\n<p>如果其他生物对你使用 @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索} 行动并使你对他从无踪变成藏匿，你需要成功的进行潜行行动才可能回到无踪状态。</p>\n<p><strong>失败</strong> 你发出声音或是留下蛛丝马迹，让观察者注意到有人在他们鼻子下面猫猫祟祟地行动——但他们还看不到你。在你的移动期间和结束移动后你都对对方视为藏匿状态。</p>\n<p><strong>大失败</strong> 你被发现了！在你的移动期间和结束移动后你都对对方视为可见状态。如果你处于隐形状态且对观察你的生物视为拥有隐匿，那么在你的移动期间和结束移动后你都对对方视为藏匿而非可见状态。</p>"
+            "description": "<p>你尝试保持 @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪}状态，从一点移动到另一点而不被察觉。你可以在潜行状态下行走（或是通过掘地，游泳，攀爬或飞行方式而非行走，前提是你拥有这些移动方式）不超过你的移动速度一半的距离。</p>\n<p>如果你对于一个生物处于无踪状态且它没有可以用来观察你的方式（对于通常的生物来说，这些条件包括但不限于：你处于 @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形}状态、观察你的生物 @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲}，或是你处于黑暗环境中但你的对手无法看穿黑暗）。如果你在潜行行动的检定上骰出大失败，你只会获得失败的结果。如果你不再对目标生物拥有掩蔽、高级掩蔽或是 @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽}，你也仍然对其处于无踪状态。</p>\n<p>在你的移动结束时，GM暗骰你的 <span data-pf2-action=\"sneak\" data-pf2-glyph=\"A\">隐秘</span> 技能检定，并将其结果分别用来对抗每一个在你进行移动前对其视为拥有 @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿} 或无踪状态的生物的察觉DC。如果你在潜行中的行走动作一直没有使你离开任何掩蔽或高级掩蔽的遮挡，你可以对有遮挡的生物在潜行检定上获得+2（高级掩蔽+4）环境加值，但因为你在移动，你不能从 @UUID[Compendium.pf2e.actionspf2e.Item.ust1jJSCZQUhBZIz]{找掩护} 动作中再获得额外的加值。如果在你结束潜行移动时，如果你对一个生物既不拥有隐蔽也不拥有掩蔽/高等掩蔽，你不需对其进行潜行检定——你自动对它视为 @UUID[Compendium.pf2e.conditionitems.Item.1wQY3JYyhMYeeV2G]{可见}。</p>\n<hr />\n<p><strong>成功</strong> 在你的移动期间和结束移动后你都对对方视为无踪状态。</p>\n<p>但如果你再进行躲藏、潜行、快步以外的动作，你会立刻变得可见。如果你在此状态下对生物发动攻击，该生物会对这一次攻击视为 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，然后你立刻对其变得可见。如果你进行的是其他动作，那么则是你在行动之前立刻变得可见，除非GM有其他的看法。GM也许会同意你可以在保持藏匿状态的同时进行一些鬼祟的行动而不引起过分的注意，但这样做通常会需要一个额外的隐秘检定。如果你说话或发出不适当的响亮噪音，你从无踪状态变为藏匿状态。</p>\n<p>如果其他生物对你使用 @UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索} 行动并使你对他从无踪变成藏匿，你需要成功的进行潜行行动才可能回到无踪状态。</p>\n<p><strong>失败</strong> 你发出声音或是留下蛛丝马迹，让观察者注意到有人在他们鼻子下面猫猫祟祟地行动——但他们还看不到你。在你的移动期间和结束移动后你都对对方视为藏匿状态。</p>\n<p><strong>大失败</strong> 你被发现了！在你的移动期间和结束移动后你都对对方视为可见状态。如果你处于隐形状态且对观察你的生物视为拥有隐匿，那么在你的移动期间和结束移动后你都对对方视为藏匿而非可见状态。</p>"
         },
         "Soaring Flight": {
             "name": "振翅冲天 Soaring Flight",
@@ -1035,7 +1035,7 @@
         },
         "Trip": {
             "name": "摔绊 Trip",
-            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个 <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone} 状态，并承受[[/r 1d6[bludgeoning]]]伤害。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
+            "description": "<p><strong>需求</strong> 你有至少一只手空着，你的目标的体型最多比你大不超过1级。</p>\n<hr />\n<p>你尝试将敌人摔倒在地上。尝试一个 <span data-pf2-action=\"trip\" data-pf2-glyph=\"A\">运动</span> 技能检定来对抗目标的反射DC。</p>\n<hr />\n<p><strong>大成功</strong> 你的目标立刻被击倒至 @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone} 状态，并承受@Damage[1d6[bludgeoning]]伤害。</p>\n<p><strong>成功</strong> 你的目标被击倒至倒地状态。</p>\n<p><strong>大失败</strong> 你自己失去平衡摔倒了，陷入倒地状态。</p>"
         },
         "Tumble Through": {
             "name": "翻滚 Tumble Through",
@@ -1051,7 +1051,7 @@
         },
         "Vital Shot": {
             "name": "要害射击 Vital Shot",
-            "description": "<p>你精密地狙击一个毫无防备的敌人的重要部位或器官。进行一次远程@UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{打击 Strike}，如果目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态，这次攻击造成一个额外武器骰的伤害，并且目标还会获得等同于你@UUID[Compendium.pf2e.actionspf2e.Item.Tlrde2xh7AhesXNB]{一击必杀 One Shot, One Kill}炫技精准伤害的持续流血伤害。</p>"
+            "description": "<p>你精密地狙击一个毫无防备的敌人的重要部位或器官。进行一次远程@UUID[Compendium.pf2e.actionspf2e.Item.VjxZFuUXrCU94MWR]{打击 Strike}，如果目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态，这次攻击造成一个额外武器骰的伤害，并且目标还会获得等同于你@UUID[Compendium.pf2e.actionspf2e.Item.Tlrde2xh7AhesXNB]{一击必杀 One Shot, One Kill}炫技精准伤害的持续流血伤害。</p>"
         },
         "Warding Sign": {
             "name": "守护印记 Warding Sign",
@@ -1107,7 +1107,7 @@
         },
         "Exploit Vulnerability": {
             "name": "弱点发掘 Exploit Vulnerability",
-            "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 你正持握着你的奇具。</p>\n<hr />\n<p>你遍历你的经验和学问，以识别某件可能能反制你的对手的物品。你从你的秘藏中找到一件具有合适的超自然特质的物品，然后使用你的奇具将其中残余的力量烧成熊熊烈火。选择一个你可以看见的生物，并尝试一次秘传学识Esoteric Lore检定，对抗该生物等级的标准DC，此时你从秘藏中找出了合适的物品，并使用你的奇具给予它力量。你获得如下效果，直到你再次使用弱点发掘。</p>\n<hr />\n<p><strong>大成功</strong> 你记得该生物的弱点，且随着你为你的秘藏赋能，你灵光一现，甚至获得了关于该生物更多的知识。你了解到了该生物全部的抗力、弱点、以及免疫，包括抗力和弱点的总数，以及任何不常见的脆弱之处，例如用什么法术可以穿透一个魔像的反魔法能力。你可以发掘该生物的凡体弱点Mortal Weakness，或个体克制Personal Antithesis（见@UUID[Compendium.pf2e.classfeatures.Item.uwLNfBprqZw2osTb]{弱点发掘 Exploit Vulnerability}）。你对该生物进行的无武装和武器打击如果还不是魔法的，则也变成魔法的。</p>\n<p><strong>成功</strong> 你回忆起了关于该生物的重要事实，了解到了它最高的弱点（或其中一个最高的弱点，如果它有多个相同数值的最高弱点），但不知道它其他的弱点、抗力、或免疫。你可以开发该生物的凡体弱点或个体克制。你对该生物进行的无武装和武器打击如果还不是魔法的，则也变成魔法的。</p>\n<p><strong>失败</strong> 你无法回忆起该生物的显著弱点，你改而尝试发掘一个更个体化的弱点。你只能发掘该生物的个体克制。你对该生物进行的无武装和武器打击如果还不是魔法的，则也变成魔法的。</p>\n<p><strong>大失败</strong> 你无法记起应该使用的正确物品，并在你慌忙翻找秘藏的时候变得心烦意乱。直到你下一回合开始，你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+            "description": "<p><strong>频率</strong> 每轮一次</p>\n<p><strong>需求</strong> 你正持握着你的奇具。</p>\n<hr />\n<p>你遍历你的经验和学问，以识别某件可能能反制你的对手的物品。你从你的秘藏中找到一件具有合适的超自然特质的物品，然后使用你的奇具将其中残余的力量烧成熊熊烈火。选择一个你可以看见的生物，并尝试一次秘传学识Esoteric Lore检定，对抗该生物等级的标准DC，此时你从秘藏中找出了合适的物品，并使用你的奇具给予它力量。你获得如下效果，直到你再次使用弱点发掘。</p>\n<hr />\n<p><strong>大成功</strong> 你记得该生物的弱点，且随着你为你的秘藏赋能，你灵光一现，甚至获得了关于该生物更多的知识。你了解到了该生物全部的抗力、弱点、以及免疫，包括抗力和弱点的总数，以及任何不常见的脆弱之处，例如用什么法术可以穿透一个魔像的反魔法能力。你可以发掘该生物的凡体弱点Mortal Weakness，或个体克制Personal Antithesis（见@UUID[Compendium.pf2e.classfeatures.Item.uwLNfBprqZw2osTb]{弱点发掘 Exploit Vulnerability}）。你对该生物进行的无武装和武器打击如果还不是魔法的，则也变成魔法的。</p>\n<p><strong>成功</strong> 你回忆起了关于该生物的重要事实，了解到了它最高的弱点（或其中一个最高的弱点，如果它有多个相同数值的最高弱点），但不知道它其他的弱点、抗力、或免疫。你可以开发该生物的凡体弱点或个体克制。你对该生物进行的无武装和武器打击如果还不是魔法的，则也变成魔法的。</p>\n<p><strong>失败</strong> 你无法回忆起该生物的显著弱点，你改而尝试发掘一个更个体化的弱点。你只能发掘该生物的个体克制。你对该生物进行的无武装和武器打击如果还不是魔法的，则也变成魔法的。</p>\n<p><strong>大失败</strong> 你无法记起应该使用的正确物品，并在你慌忙翻找秘藏的时候变得心烦意乱。直到你下一回合开始，你陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
         },
         "Fling Magic": {
             "name": "杖掷 Fling Magic",
@@ -1203,7 +1203,7 @@
         },
         "Psychometric Assessment": {
             "name": "心理测量评估 Psychometric Assessment",
-            "description": "<p><strong>需求</strong> 你的手正在触摸一个你检测到心理共鸣的物体</p>\n<hr />\n<p><strong>效果</strong> 你花费1分钟专注于该物体，以看到最初给该物体灌输这种情感的人的面容。如果相关情绪为痛苦的负面情绪，你可能会受到[[/r 1d6[mental]]]伤害，由GM裁定。</p>"
+            "description": "<p><strong>需求</strong> 你的手正在触摸一个你检测到心理共鸣的物体</p>\n<hr />\n<p><strong>效果</strong> 你花费1分钟专注于该物体，以看到最初给该物体灌输这种情感的人的面容。如果相关情绪为痛苦的负面情绪，你可能会受到@Damage[1d6[mental]]伤害，由GM裁定。</p>"
         },
         "Steel Your Resolve": {
             "name": "破釜沉舟 Steel Your Resolve",
@@ -1283,7 +1283,7 @@
         },
         "Sense Weakness": {
             "name": "识破弱点 Sense Weakness",
-            "description": "<p><strong>触发</strong> 你对你的敌人进行一次近战攻击，但还没有掷骰。</p>\n<p><strong>需求</strong> 你在决斗中，你在察觉技能有受训，同时你在这轮用察觉检定当先攻。</p>\n<hr />\n<p>你抓准时机进行攻击，占据优势。你的敌人对这次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。如果你用此能力时，你的敌人是用欺骗当先攻，他会措手不及到他下一回合开始。</p>"
+            "description": "<p><strong>触发</strong> 你对你的敌人进行一次近战攻击，但还没有掷骰。</p>\n<p><strong>需求</strong> 你在决斗中，你在察觉技能有受训，同时你在这轮用察觉检定当先攻。</p>\n<hr />\n<p>你抓准时机进行攻击，占据优势。你的敌人对这次攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。如果你用此能力时，你的敌人是用欺骗当先攻，他会措手不及到他下一回合开始。</p>"
         },
         "Travel": {
             "name": "旅行 Travel",
@@ -1315,7 +1315,7 @@
         },
         "Thermal Eruption": {
             "name": "活化火山 Thermal Eruption",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你专注于体内的热能并将其爆发而出。@Template[type:emanation|distance:20]范围内所有生物进行基础反射豁免骰受到[[/r 14d6[fire]]]伤害。随后，直到你的下一次每日准备，你丧失所有休眠火山专长的效果。</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你专注于体内的热能并将其爆发而出。@Template[type:emanation|distance:20]范围内所有生物进行基础反射豁免骰受到@Damage[14d6[fire]]伤害。随后，直到你的下一次每日准备，你丧失所有休眠火山专长的效果。</p>"
         },
         "Water Transfer": {
             "name": "借水传送 Water Transfer",
@@ -1343,7 +1343,7 @@
         },
         "Drive Them Down": {
             "name": "打爆他们 Drive Them Down",
-            "description": "<p>你的敌人不过是你用来打造和开启传奇之路的渣滓。使用组合武器进行一次近战打击，然后再进行一次远程打击，两次攻击需要以同一个敌人为目标；在进行两次攻击时，你不需要改变武器模式。如果近战攻击命中，你会在远程攻击时获得一个+1 环境加值。每次攻击都计入你的多重攻击罚值，但多重攻击罚值在你完成两次攻击前不会增加。如果两次攻击都命中，你会对敌人造成额外[[/r 2d6[bleed]]]伤害，并且直到持续流血伤害结束，他们处于@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态。</p>"
+            "description": "<p>你的敌人不过是你用来打造和开启传奇之路的渣滓。使用组合武器进行一次近战打击，然后再进行一次远程打击，两次攻击需要以同一个敌人为目标；在进行两次攻击时，你不需要改变武器模式。如果近战攻击命中，你会在远程攻击时获得一个+1 环境加值。每次攻击都计入你的多重攻击罚值，但多重攻击罚值在你完成两次攻击前不会增加。如果两次攻击都命中，你会对敌人造成额外@Damage[2d6[bleed]]伤害，并且直到持续流血伤害结束，他们处于@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}状态。</p>"
         },
         "Spring the Trap": {
             "name": "落入圈套 Spring the Trap",
@@ -1355,7 +1355,7 @@
         },
         "Wind Them Up": {
             "name": "气死他们 Wind Them Up",
-            "description": "<p>敌人应该抵挡你的刀锋还是躲避你的子弹？都不是——他们应该注意自己的钱包。用你的组合武器进行一次近战打击，然后尝试一次具有-5 罚值的贼活检定对你的目标进行一次@UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{偷窃 Steal}；你不能盗取严密看守的物品或需要很长时间才能盗取的物品。尝试用这种方式偷东西时，你不需要有一只手空闲。如果你的贼活检定成功，直到你下一个回合开始前目标会对你的远程攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，而且你不会触发通常会被移动和远程打击触发的反应。即使你的目标没有物品可供偷窃，这些效果也能生效。</p>"
+            "description": "<p>敌人应该抵挡你的刀锋还是躲避你的子弹？都不是——他们应该注意自己的钱包。用你的组合武器进行一次近战打击，然后尝试一次具有-5 罚值的贼活检定对你的目标进行一次@UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{偷窃 Steal}；你不能盗取严密看守的物品或需要很长时间才能盗取的物品。尝试用这种方式偷东西时，你不需要有一只手空闲。如果你的贼活检定成功，直到你下一个回合开始前目标会对你的远程攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，而且你不会触发通常会被移动和远程打击触发的反应。即使你的目标没有物品可供偷窃，这些效果也能生效。</p>"
         },
         "Prove Peace": {
             "description": "<p><strong>需求</strong> 你必须知晓产生该围城碎片的那次战斗，并且围城碎片被禁足@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}。</p>\n<hr />\n<p>你触碰围城碎片，建立心灵链接，并且传达战斗已经结束的事实。</p>\n<p>尝试一次@UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]{回忆知识 Recall Knowledge}检定来回想那场导致围城碎片产生的战斗，并对抗围城碎片的意志DC。如果你成功，你证实战斗已经结束，围城碎片就会变成普通的石头。如果你大失败，过往的画面会压垮你的精神，你陷入@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}状态直到你的下一回合结束。</p>",
@@ -1363,7 +1363,7 @@
         },
         "Envenom": {
             "name": "下毒 Envenom",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成[[/r 1[slashing]]]伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 1d4[poison]]]伤害 (1轮)</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成[[/r 1[slashing]]]伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[1d4[poison]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[1d4[poison]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[1d4[poison]]伤害 (1轮)</p>"
         },
         "Venom Draw": {
             "name": "涂毒备战 Venom Draw",
@@ -1415,7 +1415,7 @@
         },
         "Telekinetic Assault": {
             "name": "念力袭击 Telekinetic Assault",
-            "description": "<p>你的幽灵宣泄着情绪风暴，让小物件和碎屑在@Template[type:emanation|distance:20]范围内飞舞，幽灵每拥有2个等级造成[[/r 1d6[bludgeoning]]]伤害（基础反射豁免）。使用幽灵魅力调整值的受训DC ，如果幽灵被特化则改为专家DC。</p>"
+            "description": "<p>你的幽灵宣泄着情绪风暴，让小物件和碎屑在@Template[type:emanation|distance:20]范围内飞舞，幽灵每拥有2个等级造成@Damage[1d6[bludgeoning]]伤害（基础反射豁免）。使用幽灵魅力调整值的受训DC ，如果幽灵被特化则改为专家DC。</p>"
         },
         "Long-Term Rest": {
             "name": "长期休息 Long-Term Rest",

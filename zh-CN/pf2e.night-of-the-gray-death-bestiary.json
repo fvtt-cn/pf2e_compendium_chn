@@ -102,7 +102,7 @@
 				},
 				"Breath Weapon": {
 					"name": "吐息 Breath Weapon",
-					"description": "<p>征服者爬虫在@Template[type:line|distance:120] that deals [[/r 14d10[acid]]]范围吐出酸液，对区域内生物造成14d10酸液伤害，@Check[type:reflex|dc:44|basic:true]豁免。它在[[/br 1d4 #rounds]]{1d4轮}内无法再使用吐息。</p>"
+					"description": "<p>征服者爬虫在@Template[type:line|distance:120] that deals @Damage[14d10[acid]]范围吐出酸液，对区域内生物造成14d10酸液伤害，@Check[type:reflex|dc:44|basic:true]豁免。它在[[/br 1d4 #rounds]]{1d4轮}内无法再使用吐息。</p>"
 				},
 				"Fast Swallow": {
 					"name": "快速活吞 Fast Swallow",
@@ -114,7 +114,7 @@
 				},
 				"Swallow Whole": {
          			"name": "活吞 Swallow Whole",
-					"description": "<p>超大型，[[/r (4d10+10)[bludgeoning]]]+[[/r 2d6[acid]]]，破裂44</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+					"description": "<p>超大型，@Damage[(4d10+10)[bludgeoning]]+@Damage[2d6[acid]]，破裂44</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
 				}
 			}
 		},
@@ -131,7 +131,7 @@
 				},
 				"Soul Bleed": {
 					"name": "灵魂流血 Soul Bleed",
-					"description": "<p>@Template[type:emanation|distance:1000]{1000尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在范围内开始回合的生物承受[[/r 5d6[negative]]]伤害，且必须成功通过@Check[type:fortitude|dc:42]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。如果生物等级不高于13级，灵魂流血造成的毁灭状态可以累积，生物每次豁免失败，毁灭状态增加1点，直到生物死去（一般来说毁灭4时死亡）。</p>"
+					"description": "<p>@Template[type:emanation|distance:1000]{1000尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在范围内开始回合的生物承受@Damage[5d6[negative]]伤害，且必须成功通过@Check[type:fortitude|dc:42]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}。如果生物等级不高于13级，灵魂流血造成的毁灭状态可以累积，生物每次豁免失败，毁灭状态增加1点，直到生物死去（一般来说毁灭4时死亡）。</p>"
 				},
 				"Flailing Touch": {
 					"name": "收割之触 Flailing Touch",
@@ -163,11 +163,11 @@
 				},
 				"Gardener's Resolve": {
 					"name": "花匠决意 Gardener's Resolve",
-					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受[[/r 3d8[mental]]]伤害，触发豁免检定改为成功。</p>"
+					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受@Damage[3d8[mental]]伤害，触发豁免检定改为成功。</p>"
 				},
 				"Instant Opening": {
 					"name": "快速开场 Instant Opening",
-					"description": "<p>灰花匠刺客用特定词句或手势转移一个30尺内生物的注意力。直到刺客下一轮结束，该生物对刺客@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。该动作获得听觉或视觉特征，取决于转移注意力的方式。</p>"
+					"description": "<p>灰花匠刺客用特定词句或手势转移一个30尺内生物的注意力。直到刺客下一轮结束，该生物对刺客@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。该动作获得听觉或视觉特征，取决于转移注意力的方式。</p>"
 				},
 				"Mark for Death": {
 					"name": "死亡标记 Mark for Death",
@@ -187,7 +187,7 @@
 				},
 				"Surprise Attack": {
 					"name": "突然袭击 Surprise Attack",
-					"description": "<p>在战斗的第一轮，尚未行动的生物对灰花匠刺客来说均被视为陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>在战斗的第一轮，尚未行动的生物对灰花匠刺客来说均被视为陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -210,7 +210,7 @@
 				},
 				"Gardener's Resolve": {
 					"name": "花匠决意 Gardener's Resolve",
-					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受[[/r 3d8[mental]]]伤害，触发豁免检定改为成功。</p>"
+					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受@Damage[3d8[mental]]伤害，触发豁免检定改为成功。</p>"
 				},
 				"Quick Draw": {
 					"name": "即时备战 Quick Draw",
@@ -246,7 +246,7 @@
 				},
 				"Gardener's Resolve": {
 					"name": "花匠决意 Gardener's Resolve",
-					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败） </p><p><strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr /><p><strong>效果</strong> 灰花匠承受[[/r 3d8[mental]]]伤害，触发豁免检定改为成功。</p>"
+					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败） </p><p><strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr /><p><strong>效果</strong> 灰花匠承受@Damage[3d8[mental]]伤害，触发豁免检定改为成功。</p>"
 				},
 				"Nourishing Feast": {
 					"name": "滋补大餐 Nourishing Feast",
@@ -258,7 +258,7 @@
 				},
 				"Chain Garotte": {
 					"name": "锁链绞刑 Chain Garotte",
-					"description": "<p>灰花匠执法者的刺链打击造成[[/r 2d8[bleed]]]{2d8持续流血伤害}，他们还能用它攫抓最多两个敌人。即使用刺链攫抓了一个生物，执法者仍可继续使用刺链打击，但攫抓两个时无法再进行打击。</p>"
+					"description": "<p>灰花匠执法者的刺链打击造成@Damage[2d8[bleed]]{2d8持续流血伤害}，他们还能用它攫抓最多两个敌人。即使用刺链攫抓了一个生物，执法者仍可继续使用刺链打击，但攫抓两个时无法再进行打击。</p>"
 				},
 				"Death Gasp": {
 					"name": "死亡一息 Death Gasp",
@@ -266,7 +266,7 @@
 				},
 				"Greater Constrict": {
 					"name": "高等紧勒 Greater Constrict",
-					"description": "<p>[[/r (3d8+7)[slashing]]]伤害，@Check[type:fortitude|dc:38|basic:true|name:Chain Garotte Constrict|traits:disarm,trip,slashing]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+					"description": "<p>@Damage[(3d8+7)[slashing]]伤害，@Check[type:fortitude|dc:38|basic:true|name:Chain Garotte Constrict|traits:disarm,trip,slashing]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
 				}
 			}
 		},
@@ -281,7 +281,7 @@
 				},
 				"Golem Antimagic": {
 					"name": "魔像抗魔 Golem Antimagic",
-					"description": "<p>被伤害：<em>酸液</em> ([[/r 9d10]]伤害, 区域效果或可持续伤害[[/r 3d8]]；被治疗：<em>电击</em> (区域效果[[/r 3d8[healing]]]{3d8生命值})；被减速：<em>火焰</em></p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+					"description": "<p>被伤害：<em>酸液</em> ([[/r 9d10]]伤害, 区域效果或可持续伤害[[/r 3d8]]；被治疗：<em>电击</em> (区域效果@Damage[3d8[healing]]{3d8生命值})；被减速：<em>火焰</em></p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害 Harmed By</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗 Healed By</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速 Slowed By</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点 Vulnerable To</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
 				},
                 "Vulnerable to Neutralize Poison": {
                     "name": "法术弱点：中和毒性 Vulnerable to Neutralize Poison",
@@ -301,7 +301,7 @@
 				},
 				"Guillotine Golem Poison": {
 					"name": "断头台魔像毒气 Guillotine Golem Poison",
-					"description": "<p>此毒素造成的流失状态值每小时减少1点。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:40]</p>\n<p><strong>最大持续</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r 3d6[poison]]]和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 5d6[poison]]]和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> [[/r 10d6[poison]]]和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)。</p>"
+					"description": "<p>此毒素造成的流失状态值每小时减少1点。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:40]</p>\n<p><strong>最大持续</strong> 4轮</p>\n<p><strong>阶段1</strong> @Damage[3d6[poison]]和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 1} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[5d6[poison]]和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 2} (1轮)</p>\n<p><strong>阶段3</strong> @Damage[10d6[poison]]和@UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{流失 Drained 3} (1轮)。</p>"
 				},
 				"Inexorable March": {
 					"name": "势不可挡 Inexorable March",
@@ -325,7 +325,7 @@
 				},
 				"Risky Treatment": {
 					"name": "激进治疗 Risky Treatment",
-					"description": "<p><strong>触发</strong> 凯兹宁在治疗疾病、治疗中毒或治疗伤害中骰出大失败</p>\n<hr />\n<p><strong>效果</strong> 凯兹宁紧急使用危险草药来避免进一步的伤害。凯兹宁治疗的生物受到[[/r 2d6[poison]]]伤害，同时凯兹宁重骰触发检定。</p>"
+					"description": "<p><strong>触发</strong> 凯兹宁在治疗疾病、治疗中毒或治疗伤害中骰出大失败</p>\n<hr />\n<p><strong>效果</strong> 凯兹宁紧急使用危险草药来避免进一步的伤害。凯兹宁治疗的生物受到@Damage[2d6[poison]]伤害，同时凯兹宁重骰触发检定。</p>"
 				}
 			}
 		},
@@ -348,7 +348,7 @@
 				},
 				"Gardener's Resolve": {
 					"name": "花匠决意 Gardener's Resolve",
-					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受[[/r 3d8[mental]]]伤害，触发豁免检定改为成功。</p>"
+					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受@Damage[3d8[mental]]伤害，触发豁免检定改为成功。</p>"
 				},
 				"Quick Draw": {
 					"name": "即时备战 Quick Draw",
@@ -389,7 +389,7 @@
                 },
                 "Entangling Train": {
                     "name": "纠缠裙裢 Entangling Train",
-                    "description": "<p><strong>触发</strong> 一个生物移动到邻接蔓花魔的位置；</p>\n<hr />\n<p><strong>效果</strong> 蠕动的沥青色藤蔓将生物紧紧缠绕住。该生物受到[[/r 1d6[slashing]]]{1d6挥砍伤害}，在其下一回合结束之前，其速度受到-15尺的环境减值。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dNs30jfFOJqhjFW7]{效果: 纠缠裙裢}</p>"
+                    "description": "<p><strong>触发</strong> 一个生物移动到邻接蔓花魔的位置；</p>\n<hr />\n<p><strong>效果</strong> 蠕动的沥青色藤蔓将生物紧紧缠绕住。该生物受到@Damage[1d6[slashing]]{1d6挥砍伤害}，在其下一回合结束之前，其速度受到-15尺的环境减值。</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.dNs30jfFOJqhjFW7]{效果: 纠缠裙裢}</p>"
                 },
                 "Betrayal Toxin": {
                     "name": "背叛之毒 Betrayal Toxin",
@@ -418,7 +418,7 @@
 				},
 				"Strike as One": {
 					"name": "整齐划一 Strike as One",
-					"description": "<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 卫队对5尺内的所有生物进行近战攻击（@Check[type:reflex|dc:30|basic:true]豁免）。该伤害取决于花费的动作：</p>\n<p><span class=\"pf2-icon\">A</span> [[/r (2d8+2)[bludgeoning]]]伤害。</p>\n<p><span class=\"pf2-icon\">D</span> [[/r (8d8+12)[bludgeoning]]]伤害。</p>\n<p><span class=\"pf2-icon\">T</span> [[/r (4d8+15)[bludgeoning]]]伤害。</p>"
+					"description": "<p><span class=\"pf2-icon\">A</span> 到 <span class=\"pf2-icon\">T</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 卫队对5尺内的所有生物进行近战攻击（@Check[type:reflex|dc:30|basic:true]豁免）。该伤害取决于花费的动作：</p>\n<p><span class=\"pf2-icon\">A</span> @Damage[(2d8+2)[bludgeoning]]伤害。</p>\n<p><span class=\"pf2-icon\">D</span> @Damage[(8d8+12)[bludgeoning]]伤害。</p>\n<p><span class=\"pf2-icon\">T</span> @Damage[(4d8+15)[bludgeoning]]伤害。</p>"
 				},
 				"Troop Movement": {
 					"name": "部队移动 Troop Movement",
@@ -466,7 +466,7 @@
 			"items":{
 				"Wracking Eviction":{
 					"name": "痛苦驱逐 Wracking Eviction",
-					"description": "<p><strong>触发</strong> 一个没有公开佩戴法莱斯玛圣徽的生物经过着陆平台中央的刻文</p><hr />\n<p><strong>效果</strong> 刻文发出光亮并释放力量。每个30尺内的生物承受[[/r (8d12+24)[mental]]]伤害，并且必须尝试一次@Check[type:will|dc:40|traits:magical,trap,uncommon]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一半伤害，如果它不在自己的故乡位面则陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟。</p>\n<p><strong>失败</strong> 生物受到全额伤害，陷入呆滞1，持续1分钟。如果它不在自己的故乡位面，则被送到骨园中的一个随机位置。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟。如果它不在自己的故乡位面，则被送到骨园中的一个随机位置，并且直到获得一个等级高于它的招魂者许可，它无法返回物质位面。</p>"
+					"description": "<p><strong>触发</strong> 一个没有公开佩戴法莱斯玛圣徽的生物经过着陆平台中央的刻文</p><hr />\n<p><strong>效果</strong> 刻文发出光亮并释放力量。每个30尺内的生物承受@Damage[(8d12+24)[mental]]伤害，并且必须尝试一次@Check[type:will|dc:40|traits:magical,trap,uncommon]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受伤害。</p>\n<p><strong>成功</strong> 生物受到一半伤害，如果它不在自己的故乡位面则陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}，持续1分钟。</p>\n<p><strong>失败</strong> 生物受到全额伤害，陷入呆滞1，持续1分钟。如果它不在自己的故乡位面，则被送到骨园中的一个随机位置。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}，持续1分钟。如果它不在自己的故乡位面，则被送到骨园中的一个随机位置，并且直到获得一个等级高于它的招魂者许可，它无法返回物质位面。</p>"
 				}
 			}
 		},
@@ -493,7 +493,7 @@
 				},
 				"Constrict": {
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (3d10+12)[bludgeoning]]]，DC 41</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p></p>"
+					"description": "<p>@Damage[(3d10+12)[bludgeoning]]，DC 41</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p></p>"
 				},
 				"Entangling Hair": {
 					"name": "纠缠发丝 Entangling Hair",
@@ -533,7 +533,7 @@
 				},
 				"Entombing Echoes": {
 					"name": "埋葬残响 Entombing Echoes",
-					"description": "<p>被闭幽魔的拳击命中或受到幽闭噩梦能力影响的生物必须通过一次@Check[type:will|dc:44]豁免，失败则觉得自己被四面八方挤压。生物陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，且在成功逃脱（DC44）前陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>被闭幽魔的拳击命中或受到幽闭噩梦能力影响的生物必须通过一次@Check[type:will|dc:44]豁免，失败则觉得自己被四面八方挤压。生物陷入@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态，且在成功逃脱（DC44）前陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Skip Between": {
 					"name": "两界邃穿 Skip Between",
@@ -560,7 +560,7 @@
 				},
 				"Gardener's Resolve": {
 					"name": "花匠决意 Gardener's Resolve",
-					"description": "<p><strong>触发</strong> 妖蛆先知在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 妖蛆先知的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> <span style=\"background-color: #e8e8ef;\">妖蛆先知</span>承受[[/r 3d8[mental]]]伤害，触发豁免检定改为成功。</p>"
+					"description": "<p><strong>触发</strong> 妖蛆先知在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 妖蛆先知的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> <span style=\"background-color: #e8e8ef;\">妖蛆先知</span>承受@Damage[3d8[mental]]伤害，触发豁免检定改为成功。</p>"
 				},
 				"Invaded": {
 					"name": "被入侵者 Invaded",
@@ -588,11 +588,11 @@
 				},
 				"Gardener's Resolve": {
 					"name": "花匠决意 Gardener's Resolve",
-					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受[[/r 3d8[mental]]]伤害，触发豁免检定改为成功。</p>"
+					"description": "<p><strong>触发</strong> 灰花匠在对抗具有心灵或恐惧特征的效果时，在意志豁免中骰出失败（但不是大失败）\n<strong>需求</strong> 灰花匠的特征被面具或兜帽掩盖着</p><hr />\n<p><strong>效果</strong> 灰花匠承受@Damage[3d8[mental]]伤害，触发豁免检定改为成功。</p>"
 				},
 				"Instant Opening": {
 					"name": "快速开场 Instant Opening",
-					"description": "<p>灰花匠刺客用特定词句或手势转移一个30尺内生物的注意力。直到刺客下一轮结束，该生物对刺客@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。该动作获得听觉或视觉特征，取决于转移注意力的方式。</p>"
+					"description": "<p>灰花匠刺客用特定词句或手势转移一个30尺内生物的注意力。直到刺客下一轮结束，该生物对刺客@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。该动作获得听觉或视觉特征，取决于转移注意力的方式。</p>"
 				},
 				"Mark for Death": {
 					"name": "死亡标记 Mark for Death",
@@ -612,7 +612,7 @@
 				},
 				"Surprise Attack": {
 					"name": "突然袭击 Surprise Attack",
-					"description": "<p>在战斗的第一轮，尚未行动的生物对灰花匠刺客来说均被视为陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>在战斗的第一轮，尚未行动的生物对灰花匠刺客来说均被视为陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		}

@@ -49,7 +49,7 @@
 		        },
 		        "Invoke Alocer":{
 		        	"name": "Invoke Alocer",
-		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals [[/r (3d6+7)[healing]]]{3d6+7生命值}, gains a fly speed of 25 feet, and deals an additional [[/r (1d6)[fire]]]{1d6火焰伤害} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r (3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
+		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals @Damage[(3d6+7)[healing]]{3d6+7生命值}, gains a fly speed of 25 feet, and deals an additional [[/r (1d6)[fire]]]{1d6火焰伤害} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r (3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
 		        },
 		        "Cruel Shot":{
 		        	"name": "Cruel Shot",
@@ -82,7 +82,7 @@
 			"items":{
 				"Exhale":{
 					"name": "喷气 Exhale",
-					"description": "<p><strong>触发</strong> 一个生物进入标记的区域，或待在房间里超过1分钟；</p>\n<hr />\n<p><strong>效果</strong> 陷阱喷射出冷气，笼罩范围为@Template[type:burst|distance:15]{15尺爆发}区域，以触发陷阱生物所在方格为中心。这将造成[[/r (4d8+18)[cold]]]{4d8+18寒冷}伤害（@Check[type:reflex|dc:24|basic:true|traits:cold,evocation,magical,trap,hazard]豁免），豁免大失败的生物将因冻伤而陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续10分钟。</p>"
+					"description": "<p><strong>触发</strong> 一个生物进入标记的区域，或待在房间里超过1分钟；</p>\n<hr />\n<p><strong>效果</strong> 陷阱喷射出冷气，笼罩范围为@Template[type:burst|distance:15]{15尺爆发}区域，以触发陷阱生物所在方格为中心。这将造成@Damage[(4d8+18)[cold]]{4d8+18寒冷}伤害（@Check[type:reflex|dc:24|basic:true|traits:cold,evocation,magical,trap,hazard]豁免），豁免大失败的生物将因冻伤而陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续10分钟。</p>"
 				}
 			}
 		},
@@ -120,7 +120,7 @@
 				},
 				"csNqFPhBD3KDCIrl":{
 					"name": "瓶装闪电 Bottled Lightning",
-					"description": "<p>[[/r (2)[splash,electricity]]]{2电击溅射伤害}，目标直到你下回合开始前@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}</p>"
+					"description": "<p>[[/r (2)[splash,electricity]]]{2电击溅射伤害}，目标直到你下回合开始前@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}</p>"
 				},
 				"Reckless Toxin":{
 					"name": "鲁莽毒素 Reckless Toxin",
@@ -163,7 +163,7 @@
 				},
 				"Easily Distracted":{
 					"name": "Easily Distracted",
-					"description": "<p>The giant pirate skeleton's poor vision makes it easily distracted by creatures that flank it. Whenever it has the flat-footed condition from being flanked, increase the penalty to its AC to -4.</p>"
+					"description": "<p>The giant pirate skeleton's poor vision makes it easily distracted by creatures that flank it. Whenever it has the Off-Guard condition from being flanked, increase the penalty to its AC to -4.</p>"
 				},
 				"Focused Assault":{
 					"name": "Focused Assault",
@@ -171,7 +171,7 @@
 				},
 				"Impaling Hook":{
 					"name": "Impaling Hook",
-					"description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes [[/r (1d10+10)[piercing]]]{1d10+10 piercing damage} from the agonizing wound.</p>"
+					"description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes @Damage[(1d10+10)[piercing]]{1d10+10 piercing damage} from the agonizing wound.</p>"
 				}
 			}
 		},
@@ -235,11 +235,11 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r 1d6[bludgeoning]]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[1d6[bludgeoning]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				},
 				"Crawfish Venom":{
 					"name": "鳌虾毒 Crawfish Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r 1d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 1d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> @Damage[1d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[1d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
 				},
 				"Grab":{
 					"name": "攫抓 Grab",
@@ -333,7 +333,7 @@
 				},
 				"Constrict":{
 					"name": "紧勒 Constrict",
-					"description": "<p>[[/r (1d6+4)[bludgeoning]]]{1d6+4钝击}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+					"description": "<p>@Damage[(1d6+4)[bludgeoning]]{1d6+4钝击}, @Check[type:fortitude|dc:18|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
 				}
 			}
 		},
@@ -380,7 +380,7 @@
 				},
 				"Enhanced Hunting Spider Venom":{
 					"name": "Enhanced Hunting Spider Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10 poison damage} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12 poison damage}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and flat-footed (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, and flat-footed (1轮).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10 poison damage} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12 poison damage}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and Off-Guard (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, and Off-Guard (1轮).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
 				}
 			}
 		},
@@ -392,7 +392,7 @@
 			"items":{
 				"Collapse":{
 					"name": "坍塌 Collapse",
-					"description": "<p><strong>触发</strong> 一名生物试图在墙上攀爬或是从墙上移走一个物体，亦或者墙体受到强烈的冲击。</p>\n<hr />\n<p><strong>效果</strong> 墙壁倒塌，对其上或其10尺范围内的生物造成[[/r 2d8[bludgeoning]]]伤害。成功通过@Check[type:reflex|dc:18|traits:damaging-effect]豁免的生物将只会受到一半的伤害，并会向着一个随机的方向滚离。若豁免大成功，他们不会受到伤害，并且可以选择滚离的方向。</p>"
+					"description": "<p><strong>触发</strong> 一名生物试图在墙上攀爬或是从墙上移走一个物体，亦或者墙体受到强烈的冲击。</p>\n<hr />\n<p><strong>效果</strong> 墙壁倒塌，对其上或其10尺范围内的生物造成@Damage[2d8[bludgeoning]]伤害。成功通过@Check[type:reflex|dc:18|traits:damaging-effect]豁免的生物将只会受到一半的伤害，并会向着一个随机的方向滚离。若豁免大成功，他们不会受到伤害，并且可以选择滚离的方向。</p>"
 				}
 			}
 		},

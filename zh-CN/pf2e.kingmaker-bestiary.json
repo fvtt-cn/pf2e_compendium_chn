@@ -123,7 +123,7 @@
 				},
 				"Greatsword Critical Specialization":{
 					"name": "巨剑重击专精 Greatsword Critical Specialization",
-					"description": "<p>当一次巨剑打击重击时，该目标失去平衡并且变为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直至阿玛格下的下个回合开始。</p>"
+					"description": "<p>当一次巨剑打击重击时，该目标失去平衡并且变为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直至阿玛格下的下个回合开始。</p>"
 				},
 				"Shoulder Slam":{
 					"name": "肩顶冲撞 Shoulder Slam",
@@ -224,15 +224,15 @@
 				},
 				"Defensive Burst":{
 					"name": "防御式爆裂 Defensive Burst",
-					"description": "<p><strong>触发</strong> 花受到挥砍伤害。</p>\n<p><strong>效果</strong> 拉玛什图之花对一个邻接的生物喷出一股酸液，造成[[/r 9d6[acid]]]伤害（@Check[type:reflex|dc:26|basic:true]豁免）。该花在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用防御式爆裂。</p>"
+					"description": "<p><strong>触发</strong> 花受到挥砍伤害。</p>\n<p><strong>效果</strong> 拉玛什图之花对一个邻接的生物喷出一股酸液，造成@Damage[9d6[acid]]伤害（@Check[type:reflex|dc:26|basic:true]豁免）。该花在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用防御式爆裂。</p>"
 				},
 				"Bloom Curse":{
 					"name": "开花诅咒 Bloom Curse",
-					"description": "<p>如果一个生物吃了拉玛什图之花的任何部分、对抗籽荚的豁免失败、或是在被荆棘藤蔓打击时受到重击，就会遭受开花诅咒。和2e的开花诅咒不同，此版本的开花诅咒没有潜伏期，受害者死亡时释放的怪物可能更强大并且永远为混乱邪恶阵营。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>阶段1</strong> 没有不良效果 (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1天)</p>\n<p><strong>阶段3</strong> 力竭1和[[/r 2d6[poison]]]伤害 (8小时)</p>\n<p><strong>阶段4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}和[[/r 4d6[poison]]]伤害 (10分钟)</p>\n<p><strong>阶段5</strong> death;</p>\n<p><strong>特殊</strong> 一个死于开花诅咒的生物将伴随着第一世界的树叶爆炸，并且向这个世界中释放一只怪物。这一生物是一个混乱邪恶的低智力魔兽或龙（由DM选择），其等级与死去的生物相同。</p>"
+					"description": "<p>如果一个生物吃了拉玛什图之花的任何部分、对抗籽荚的豁免失败、或是在被荆棘藤蔓打击时受到重击，就会遭受开花诅咒。和2e的开花诅咒不同，此版本的开花诅咒没有潜伏期，受害者死亡时释放的怪物可能更强大并且永远为混乱邪恶阵营。</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<p><strong>阶段1</strong> 没有不良效果 (1天)</p>\n<p><strong>阶段2</strong> @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1天)</p>\n<p><strong>阶段3</strong> 力竭1和@Damage[2d6[poison]]伤害 (8小时)</p>\n<p><strong>阶段4</strong> @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}和@Damage[4d6[poison]]伤害 (10分钟)</p>\n<p><strong>阶段5</strong> death;</p>\n<p><strong>特殊</strong> 一个死于开花诅咒的生物将伴随着第一世界的树叶爆炸，并且向这个世界中释放一只怪物。这一生物是一个混乱邪恶的低智力魔兽或龙（由DM选择），其等级与死去的生物相同。</p>"
 				},
 				"Spew Seed Pod":{
 					"name": "喷射籽荚 Spew Seed Pod",
-					"description": "<p>拉玛什图之花中央茎干从它的花里吐出一股籽荚，喷射的射程最大60尺，并且当籽荚炸出一片超自然酸性毒素时创造出一个@Template[type:burst|distance:20]区域。任何在此区域内的生物必须尝试一次@Check[type:reflex|dc:29]豁免。该花在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷射籽荚。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到[[/r 3d6[acid]]]伤害和[[/r 3d6[poison]]]伤害。</p>\n<p><strong>失败</strong> 该生物受到[[/r 5d6[acid]]]伤害和[[/r 5d6[poison]]]伤害，并且遭受开花诅咒。</p>\n<p><strong>大失败</strong> 如同失败，但是受到[[/r 10d6[acid]]]伤害和[[/r 10d6[poison]]]伤害，外加因爆炸的力量而被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+					"description": "<p>拉玛什图之花中央茎干从它的花里吐出一股籽荚，喷射的射程最大60尺，并且当籽荚炸出一片超自然酸性毒素时创造出一个@Template[type:burst|distance:20]区域。任何在此区域内的生物必须尝试一次@Check[type:reflex|dc:29]豁免。该花在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用喷射籽荚。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响。</p>\n<p><strong>成功</strong> 该生物受到@Damage[3d6[acid]]伤害和@Damage[3d6[poison]]伤害。</p>\n<p><strong>失败</strong> 该生物受到@Damage[5d6[acid]]伤害和@Damage[5d6[poison]]伤害，并且遭受开花诅咒。</p>\n<p><strong>大失败</strong> 如同失败，但是受到@Damage[10d6[acid]]伤害和@Damage[10d6[poison]]伤害，外加因爆炸的力量而被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
 				}
 			}
 		},
@@ -458,7 +458,7 @@
 			"items":{
 				"Startled Charge":{
 					"name": "受惊猛冲 Startled Charge",
-					"description": "<p><strong>需求</strong> 战斗的第一轮；</p>\n<p><strong>效果</strong> 受惊的麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，麋鹿造成额外[[/r 1d4[bludgeoning]]]伤害。</p>"
+					"description": "<p><strong>需求</strong> 战斗的第一轮；</p>\n<p><strong>效果</strong> 受惊的麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，麋鹿造成额外@Damage[1d4[bludgeoning]]伤害。</p>"
 				}
 			}
 		},
@@ -951,7 +951,7 @@
 			"items":{
 				"Furious Charge":{
 					"name": "愤怒猛冲 Furious Charge",
-					"description": "<p>大角麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，它造成额外[[/r 2d4[bludgeoning]]]伤害。</p>"
+					"description": "<p>大角麋鹿行走两次，然后进行一次鹿蹄打击。如果此次打击命中，它造成额外@Damage[2d4[bludgeoning]]伤害。</p>"
 				}
 			}
 		},
@@ -1433,7 +1433,7 @@
 				},
 				"Dread Striker":{
 					"name": "恐怖先锋 Dread Striker",
-					"description": "<p>鹿王利用敌人的恐惧；任拥有@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物还会对他的攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>鹿王利用敌人的恐惧；任拥有@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态的生物还会对他的攻击@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				},
 				"Hunt Prey":{
 					"name": "猎杀目标 Hunt Prey"
@@ -1444,7 +1444,7 @@
 				},
 				"Unfair Aim":{
 					"name": "不公瞄准 Unfair Aim",
-					"description": "<p>鹿王修正弹道，然后尝试对一名猎杀目标进行远程打击。在这次打击中，他将目标视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+					"description": "<p>鹿王修正弹道，然后尝试对一名猎杀目标进行远程打击。在这次打击中，他将目标视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
 				}
 			}
 		},
@@ -1693,7 +1693,7 @@
 				},
 				"Mind-Numbing Breath":{
 					"name": "乱心吐息 Mind-Numbing Breath",
-					"description": "<p>异想龙喷出一股@Template[type:cone|distance:40]的闪亮洋红色迷雾。因为脑海中被突然出现的虚假（通常是不愉快的）记忆所淹没，该区域内的生物必须尝试一次@Check[type:will|dc:38]检定，根据其豁免结果受到[[/r 10d12[mental]]]伤害。异想龙在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用乱心吐息。</p>\n<hr />\n<p><strong>大成功</strong> 闪烁的烟尘勾勒出该生物的轮廓，在1轮中无效其任何已生效的@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}效果，并且不受伤害。</p>\n<p><strong>成功</strong> 该生物受到一半伤害，并且其隐形效果被无效2轮。</p>\n<p><strong>失败</strong> 该生物受到完整伤害，@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1分钟，并且其隐形效果被无效1分钟。</p>\n<p><strong>大失败</strong> 该生物受到双倍伤害，@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，目眩1分钟，并且其隐形效果被无效1分钟。</p>"
+					"description": "<p>异想龙喷出一股@Template[type:cone|distance:40]的闪亮洋红色迷雾。因为脑海中被突然出现的虚假（通常是不愉快的）记忆所淹没，该区域内的生物必须尝试一次@Check[type:will|dc:38]检定，根据其豁免结果受到@Damage[10d12[mental]]伤害。异想龙在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用乱心吐息。</p>\n<hr />\n<p><strong>大成功</strong> 闪烁的烟尘勾勒出该生物的轮廓，在1轮中无效其任何已生效的@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}效果，并且不受伤害。</p>\n<p><strong>成功</strong> 该生物受到一半伤害，并且其隐形效果被无效2轮。</p>\n<p><strong>失败</strong> 该生物受到完整伤害，@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1分钟，并且其隐形效果被无效1分钟。</p>\n<p><strong>大失败</strong> 该生物受到双倍伤害，@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮，目眩1分钟，并且其隐形效果被无效1分钟。</p>"
 				}
 			}
 		},
@@ -1775,7 +1775,7 @@
 				},
 				"Deafening Cry":{
 					"name": "震耳嘶号 Deafening Cry",
-					"description": "<p>狂猎骏骑在@Template[type:cone|distance:15]范围内发出雷霆般的嘶号。在该区域内的生物受到[[/r 16d6[sonic]]]伤害（@Check[type:fortitude|dc:36|basic:true]豁免，外加在大失败时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟）。狂猎骏骑在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用震耳嘶号。</p>"
+					"description": "<p>狂猎骏骑在@Template[type:cone|distance:15]范围内发出雷霆般的嘶号。在该区域内的生物受到@Damage[16d6[sonic]]伤害（@Check[type:fortitude|dc:36|basic:true]豁免，外加在大失败时@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟）。狂猎骏骑在[[/br 1d4 #rounds]]{1d4轮}内无法再次使用震耳嘶号。</p>"
 				},
 				"Focus Gaze":{
 					"name": "聚焦凝视 Focus Gaze",
@@ -1818,7 +1818,7 @@
 				},
 				"Summon Pack":{
 					"name": "召唤兽群 Summon Pack",
-					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 随着一声嚎叫，狂猎猎犬召唤出一团雾霭，显现为几只雾状的猎犬。只要狂猎猎犬维持这一效果，这些雾状的猎犬就会在@Template[type:emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}范围内移动、奔跑、嚎叫。虽然这些猎犬看起来是由雾霭形成的，但它们的利齿却是非常的真实，任何在此灵光范围内结束其回合的生物将会因数不胜数的啃咬而受到[[/r 6d6[piercing]]]伤害（@Check[type:reflex|dc:31|basic:true]豁免）。</p>"
+					"description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 随着一声嚎叫，狂猎猎犬召唤出一团雾霭，显现为几只雾状的猎犬。只要狂猎猎犬维持这一效果，这些雾状的猎犬就会在@Template[type:emanation|distance:20] @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}范围内移动、奔跑、嚎叫。虽然这些猎犬看起来是由雾霭形成的，但它们的利齿却是非常的真实，任何在此灵光范围内结束其回合的生物将会因数不胜数的啃咬而受到@Damage[6d6[piercing]]伤害（@Check[type:reflex|dc:31|basic:true]豁免）。</p>"
 				}
 			}
 		},
@@ -1905,11 +1905,11 @@
 				},
 				"Befuddle":{
 					"name": "昏沉 Befuddle",
-					"description": "<p>狂猎斥候可以从它们的晶能碎片中发射出一束绿宝石的光芒来尝试一次绿宝石波束远程打击。如果波束命中，它不会造成伤害（也不会因为偷袭而造成精准伤害），但它会过载目标的思维，导致他们在一轮内@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。在重击时，目标还会@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮。</p>"
+					"description": "<p>狂猎斥候可以从它们的晶能碎片中发射出一束绿宝石的光芒来尝试一次绿宝石波束远程打击。如果波束命中，它不会造成伤害（也不会因为偷袭而造成精准伤害），但它会过载目标的思维，导致他们在一轮内@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。在重击时，目标还会@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮。</p>"
 				},
 				"Deny Advantage":{
 					"name": "否决优势 Deny Advantage",
-					"description": "<p>狂猎斥候不因同级或更低等级生物的@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或夹击而@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，也不会因同级或更低等级生物的@UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{突袭 Surprise Attack}而措手不及。然而，这些生物依旧可以帮助它们的盟友制造夹击。</p>"
+					"description": "<p>狂猎斥候不因同级或更低等级生物的@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}、@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或夹击而@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，也不会因同级或更低等级生物的@UUID[Compendium.pf2e.classfeatures.Item.w6rMqmGzhUahdnA7]{突袭 Surprise Attack}而措手不及。然而，这些生物依旧可以帮助它们的盟友制造夹击。</p>"
 				},
 				"Focus Gaze":{
 					"name": "聚焦凝视 Focus Gaze",

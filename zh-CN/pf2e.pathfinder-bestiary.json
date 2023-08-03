@@ -87,7 +87,7 @@
                 },
                 "Aura of Flame": {
                     "name": "烈焰灵光 Aura of Flame",
-                    "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在灵光范围内开始回合的敌人受到[[/r (3d6+10)[fire]]]{3d6+10火焰伤害}，如果它被巴洛炎魔@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}，则受到[[/r (6d6+20)[fire]]]{6d6+20火焰伤害}。一个生物如果使用徒手打击命中巴洛炎魔，则受到[[/r (3d6+10)[fire]]]{3d6+10火焰伤害}，一件武器如果打击命中巴洛炎魔，则武器受到[[/r (3d6+10)[fire]]]{3d6+10火焰伤害}。</p>"
+                    "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>在灵光范围内开始回合的敌人受到@Damage[(3d6+10)[fire]]{3d6+10火焰伤害}，如果它被巴洛炎魔@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}，则受到@Damage[(6d6+20)[fire]]{6d6+20火焰伤害}。一个生物如果使用徒手打击命中巴洛炎魔，则受到@Damage[(3d6+10)[fire]]{3d6+10火焰伤害}，一件武器如果打击命中巴洛炎魔，则武器受到@Damage[(3d6+10)[fire]]{3d6+10火焰伤害}。</p>"
                 },
                 "Death Throes": {
                     "name": "垂死挣扎 Death Throes",
@@ -107,7 +107,7 @@
                 },
                 "Lifedrinker": {
                     "name": "汲取生命 Lifedrinker",
-                    "description": "<p><strong>触发</strong> 巴洛炎魔杀死一只至少15级的生物。</p>\n<hr />\n<p><strong>效果</strong> 巴洛吸取目标的生命，并且恢复[[/r (10d8+80)[healing]]]{10d8+80生命值}。</p>"
+                    "description": "<p><strong>触发</strong> 巴洛炎魔杀死一只至少15级的生物。</p>\n<hr />\n<p><strong>效果</strong> 巴洛吸取目标的生命，并且恢复@Damage[(10d8+80)[healing]]{10d8+80生命值}。</p>"
                 },
                 "Whip Reposition": {
                     "name": "鞭子移位 Whip Reposition",
@@ -206,7 +206,7 @@
             "items": {
                 "Constrict": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d8+9)[bludgeoning]]]{1d8+9钝击伤害}, @Check[type:fortitude|dc:25|basic:true]豁免(仅能在爪子@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}目标时使用)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d8+9)[bludgeoning]]{1d8+9钝击伤害}, @Check[type:fortitude|dc:25|basic:true]豁免(仅能在爪子@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}目标时使用)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Mandibles": {
                     "name": "颚咬 Mandibles",
@@ -353,7 +353,7 @@
                 },
                 "Strangle": {
                     "name": "绞杀 Strangle",
-                    "description": "<p><strong>需求</strong> 癫儒的两只手都空着，或者单手持握飞钩杖且单手空着</p>\n<hr />\n<p><strong>效果</strong> 癫儒尝试一次@Check[type:athletics|traits:action:grapple,action:strangle]检定进行@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{攫抓 Grab}并具有+2环境加值。成功时，目标受到[[/r (1d6+6)[bludgeoning]]]{1d6+6钝击伤害}。大成功时为两倍伤害。</p>"
+                    "description": "<p><strong>需求</strong> 癫儒的两只手都空着，或者单手持握飞钩杖且单手空着</p>\n<hr />\n<p><strong>效果</strong> 癫儒尝试一次@Check[type:athletics|traits:action:grapple,action:strangle]检定进行@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{攫抓 Grab}并具有+2环境加值。成功时，目标受到@Damage[(1d6+6)[bludgeoning]]{1d6+6钝击伤害}。大成功时为两倍伤害。</p>"
                 }
             }
         },
@@ -382,7 +382,7 @@
                 },
                 "Surprise Attacker": {
                     "name": "突袭打击 Surprise Attacker",
-                    "description": "<p>在战斗的第一轮，还未行动的生物对沙漠龙兽来说都视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>在战斗的第一轮，还未行动的生物对沙漠龙兽来说都视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -402,11 +402,11 @@
                 },
                 "Amnesia Venom": {
                     "name": "失忆毒液 Amnesia Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:29]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> 措手不及和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>"
                 },
                 "Constrict": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d6+2)[bludgeoning]]]{2d6+2钝击伤害}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d6+2)[bludgeoning]]{2d6+2钝击伤害}, @Check[type:fortitude|dc:27|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "Root": {
                     "name": "扎根 Root",
@@ -491,7 +491,7 @@
             "items": {
                 "grrOo0mi2kz2urJF": {
                     "name": "灰烬散布 Cinder Dispersal",
-                    "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 林焰猞猁由于敌对来源而承受伤害时</p>\n<hr />\n<p><strong>效果</strong> 林焰猞猁化为一团灰烬与烟雾构成的烟云，这会充满他所处的空间以及@Template[type:emanation|distance:20]区域。在此形态下，林焰猞猁无法被攻击，不会成为目标，也不占据空间。烟云内的任何事物都具有@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，且任意在自身回合结束时处于烟云内的生物会承受[[/r (2d6)[fire]]]{2d6火焰伤害}。在林焰猞猁的回合开始时，他会恢复正常形态并出现在烟云复盖的任意方格内。若林焰猞猁在恢复其正常形态后的第一个动作是对某个生物进行打击的话，目标视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}并且打击额外造成[[/r (1d6)[fire]]]{1d6火焰伤害}。</p>"
+                    "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 林焰猞猁由于敌对来源而承受伤害时</p>\n<hr />\n<p><strong>效果</strong> 林焰猞猁化为一团灰烬与烟雾构成的烟云，这会充满他所处的空间以及@Template[type:emanation|distance:20]区域。在此形态下，林焰猞猁无法被攻击，不会成为目标，也不占据空间。烟云内的任何事物都具有@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，且任意在自身回合结束时处于烟云内的生物会承受[[/r (2d6)[fire]]]{2d6火焰伤害}。在林焰猞猁的回合开始时，他会恢复正常形态并出现在烟云复盖的任意方格内。若林焰猞猁在恢复其正常形态后的第一个动作是对某个生物进行打击的话，目标视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}并且打击额外造成[[/r (1d6)[fire]]]{1d6火焰伤害}。</p>"
                 },
                 "izty6IGZL6BowyUS": {
                     "name": "围攻 Pack Attack",
@@ -654,7 +654,7 @@
                 },
                 "nmSxnKrk324bG1w4": {
                     "name": "突袭 Sudden Strike",
-                    "description": "<p>在战斗第一轮，尚未行动的敌人对巨螳螂视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>在战斗第一轮，尚未行动的敌人对巨螳螂视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -666,7 +666,7 @@
             "items": {
                 "pzO0JwhFqVcRKzAN": {
                     "name": "巨狼蛛毒 Giant Tarantula Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>最大持续时间</strong> 8轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d6)[poison]]]{1d6毒素}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段4</strong> [[/r (1d6)[poison]]]{1d6毒素} 和@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23]</p>\n<p><strong>最大持续时间</strong> 8轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素}, @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d6)[poison]]]{1d6毒素}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2} (1轮)</p>\n<p><strong>阶段4</strong> [[/r (1d6)[poison]]]{1d6毒素} 和@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed} (1轮)</p>"
                 },
                 "xGPdcgIZR0tAI9IY": {
                     "name": "刚毛射击 Hair Barrage",
@@ -978,7 +978,7 @@
                 },
                 "Regurgitate": {
                     "name": "反刍 Regurgitate",
-                    "description": "<p>紫虫能将它吞下的生物或巨石猛烈地呕吐出来作为一次远程打击。此打击造成钝击伤害，数值取决于抛射物的体型：超小型[[/r (2d6+13)[bludgeoning]]]{2d6+13}, 小型[[/r (3d6+13)[bludgeoning]]]{3d6+13}, 中型[[/r (4d6+13)[bludgeoning]]]{4d6+13}, 大型[[/r (5d6+13)[bludgeoning]]]{5d6+13}, 和 超大型[[/r (6d6+13)[bludgeoning]]]{6d6+13}。被反刍的生物受到坠落伤害，高度取决于和目标的高度差或20尺，以两者中较大的为准。</p>\n<p>巨石在紫虫的胃中占据空间相当于同体型的生物。紫虫通常会在平时吞下几块巨石备用。紫虫可以使用一个单动作来吞咽新的巨石。</p>"
+                    "description": "<p>紫虫能将它吞下的生物或巨石猛烈地呕吐出来作为一次远程打击。此打击造成钝击伤害，数值取决于抛射物的体型：超小型@Damage[(2d6+13)[bludgeoning]]{2d6+13}, 小型@Damage[(3d6+13)[bludgeoning]]{3d6+13}, 中型@Damage[(4d6+13)[bludgeoning]]{4d6+13}, 大型@Damage[(5d6+13)[bludgeoning]]{5d6+13}, 和 超大型@Damage[(6d6+13)[bludgeoning]]{6d6+13}。被反刍的生物受到坠落伤害，高度取决于和目标的高度差或20尺，以两者中较大的为准。</p>\n<p>巨石在紫虫的胃中占据空间相当于同体型的生物。紫虫通常会在平时吞下几块巨石备用。紫虫可以使用一个单动作来吞咽新的巨石。</p>"
                 },
                 "Rock Tunneler": {
                     "name": "掘洞者 Rock Tunneler",
@@ -990,11 +990,11 @@
                 },
                 "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>超大型，[[/r (3d6+9)[bludgeoning]]]{3d6+9钝击伤害}，破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>超大型，@Damage[(3d6+9)[bludgeoning]]{3d6+9钝击伤害}，破裂24</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "Purple Worm Venom":{
                     "name": "紫虫毒 Purple Worm Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r 5d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 6d6[poison]]]伤害和力竭2 (1轮)</p>\n<p><strong>阶段3</strong> [[/r 8d6[poison]]]伤害和力竭2 (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[5d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[6d6[poison]]伤害和力竭2 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[8d6[poison]]伤害和力竭2 (1轮)</p>"
                 }
             }
         },
@@ -1042,7 +1042,7 @@
                 },
                 "P0MPVynVKmKMh3FI": {
                     "name": "放血 Bloodletting",
-                    "description": "<p>当海魔鬼造成穿刺或挥砍伤害时，若目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}或攻击造成重击，则还会造成@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>"
+                    "description": "<p>当海魔鬼造成穿刺或挥砍伤害时，若目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}或攻击造成重击，则还会造成@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>"
                 },
                 "RyRiVUoP2scafR6g": {
                     "name": "憎恨之潮 Hateful Tide",
@@ -1070,7 +1070,7 @@
                 },
                 "cbuxKyYefdlX5AAX": {
                     "name": "放血 Bloodletting",
-                    "description": "<p>当海魔鬼造成穿刺或挥砍伤害时，若目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}或攻击造成重击，则还会造成@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>"
+                    "description": "<p>当海魔鬼造成穿刺或挥砍伤害时，若目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}或攻击造成重击，则还会造成@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>"
                 },
                 "inQcsNlqlQ4umup7": {
                     "name": "无阻投掷 Unimpeded Throw",
@@ -1220,7 +1220,7 @@
                 },
                 "QpzMidSalFaHGivw": {
                     "name": "变身 Change Shape",
-                    "description": "<p>吸血鬼变形为某一动物形态或是变为原形。</p>\n<ul>\n<li><strong>蝙蝠 Bat</strong> 吸血鬼变成@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{巨型蝙蝠 Giant Bat}</li>\n<ul>\n<li><strong>体型</strong> 大型</li>\n<li><strong>感官</strong> 40尺回声定位</li>\n<li><strong>速度</strong> 20尺陆地速度，30尺飞行速度</li>\n<li><strong>近战</strong> 尖牙[[/r 1d20+15 #Fangs]]{+15}/[[/r 1d20+10 #Fangs]]{+10}/[[/r 1d20+5 #Fangs]]{+5}, <strong>伤害</strong> [[/r (1d8+9)[piercing]]]{1d8+9穿刺伤害}</li>\n</ul>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>吸血鬼变形为某一动物形态或是变为原形。</p>\n<ul>\n<li><strong>蝙蝠 Bat</strong> 吸血鬼变成@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{巨型蝙蝠 Giant Bat}</li>\n<ul>\n<li><strong>体型</strong> 大型</li>\n<li><strong>感官</strong> 40尺回声定位</li>\n<li><strong>速度</strong> 20尺陆地速度，30尺飞行速度</li>\n<li><strong>近战</strong> 尖牙[[/r 1d20+15 #Fangs]]{+15}/[[/r 1d20+10 #Fangs]]{+10}/[[/r 1d20+5 #Fangs]]{+5}, <strong>伤害</strong> @Damage[(1d8+9)[piercing]]{1d8+9穿刺伤害}</li>\n</ul>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "jnZDE6piOq3rzmdg": {
                     "name": "创造子嗣 Create Spawn",
@@ -3394,7 +3394,7 @@
                 },
                 "3BMDL7DFtWP5HozZ": {
                     "name": "旅者灵光 Traveler's Aura",
-                    "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>处于星界神使的灵光区域内的生物可以受到保护，免于周遭的任何来自位面的环境伤害，这包括极端高温、低温以及其他奇特的危害。星界神使对灵光内的生物来说永远不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>@Template[type:emanation|distance:20]{20尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>处于星界神使的灵光区域内的生物可以受到保护，免于周遭的任何来自位面的环境伤害，这包括极端高温、低温以及其他奇特的危害。星界神使对灵光内的生物来说永远不会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "KXqIPpRkKZEFXqNo": {
                     "name": "神圣武装 Divine Armament",
@@ -3468,7 +3468,7 @@
                 },
                 "bpECAdKNxGcT7pXU": {
                     "name": "虚实双击 Twin Feint",
-                    "description": "<p>熊地精折磨者用2把武器作出一系列让人炫目的攻击，用第一次攻击让敌人转移注意力，让对手无法防备来自不同角度的第二次攻击。用熊地精折磨者手中的2把近战武器各作出1次打击（Staike），这2次打击都要用于对抗相同的目标。目标在对抗第2次攻击时会自动陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。熊地精折磨者的多次攻击减值会如常对这些打击生效。</p>"
+                    "description": "<p>熊地精折磨者用2把武器作出一系列让人炫目的攻击，用第一次攻击让敌人转移注意力，让对手无法防备来自不同角度的第二次攻击。用熊地精折磨者手中的2把近战武器各作出1次打击（Staike），这2次打击都要用于对抗相同的目标。目标在对抗第2次攻击时会自动陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。熊地精折磨者的多次攻击减值会如常对这些打击生效。</p>"
                 }
             }
         },
@@ -3537,7 +3537,7 @@
                 },
                 "6OspJylC319MBk17": {
                     "name": "变形 Change Shape",
-                    "description": "<ul>\n<li><strong>蜥蜴 Lizard</strong>\n<ul>\n<li><strong>速度</strong> 20尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Jaws]]{啃咬 +8} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1d8+1)[piercing]]]{1d8+1穿刺}</li>\n</ul>\n</li>\n<li><strong>章鱼 Octopus</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>速度</strong> 20尺, 游泳30尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Tentacle]]{ 触手 +8} (娴熟), <strong>伤害</strong> [[/r (1d8+1)[bludgeoning]]]{1d8+1钝击} 附带 @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{攫抓Grab}</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Beak]]{喙啄 +8} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1d6)[piercing] + (2)[poison] # Beak]]{1d6穿刺+2毒素}</li>\n</ul>\n</li>\n<li><strong>蝎子 Scorpion</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>速度</strong> 30尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Pincer]]{螯夹 +8} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1d6+1)[bludgeoning]]]{1d6+1钝击} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{攫抓 Grab}</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Stinger]]{钉刺 +8} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1d6)[piercing] + (1d4)[poison] # Stinger]]{1d6穿刺+1d4毒素}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>蜥蜴 Lizard</strong>\n<ul>\n<li><strong>速度</strong> 20尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Jaws]]{啃咬 +8} (灵巧, 娴熟), <strong>伤害</strong> @Damage[(1d8+1)[piercing]]{1d8+1穿刺}</li>\n</ul>\n</li>\n<li><strong>章鱼 Octopus</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>速度</strong> 20尺, 游泳30尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Tentacle]]{ 触手 +8} (娴熟), <strong>伤害</strong> @Damage[(1d8+1)[bludgeoning]]{1d8+1钝击} 附带 @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{攫抓Grab}</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Beak]]{喙啄 +8} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1d6)[piercing] + (2)[poison] # Beak]]{1d6穿刺+2毒素}</li>\n</ul>\n</li>\n<li><strong>蝎子 Scorpion</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>速度</strong> 30尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Pincer]]{螯夹 +8} (灵巧, 娴熟), <strong>伤害</strong> @Damage[(1d6+1)[bludgeoning]]{1d6+1钝击} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr]{攫抓 Grab}</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+8 #Stinger]]{钉刺 +8} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1d6)[piercing] + (1d4)[poison] # Stinger]]{1d6穿刺+1d4毒素}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "glwIs2UR3O1wG0tc": {
                     "name": "魂锁 Soul Lock",
@@ -3629,7 +3629,7 @@
                 },
                 "wwQOKHAUPw4ltzVK": {
                     "name": "变形 Change Shape",
-                    "description": "<p>圣盔天使能呈现出鸽子、有翼类人、犬类或鱼类的外观。通常情况下，这不会改变他的速度或其打击的攻击及伤害加值，但这有可能改变打击造成的伤害类型（通常变为钝击）。对于特定形态的进一步数据变化见后文。</p>\n<ul>\n<li><strong>犬类 Dog</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>感官</strong> 灵敏嗅觉(模糊感官) 30尺</li>\n<li><strong>速度</strong> 40尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+7 #Jaws]]{啃咬 +7}, <strong>伤害</strong> [[/r (1d6+2)[piercing]]]{1d6+2穿刺} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}</li>\n</ul>\n</li>\n<li><strong>鱼类 Fish</strong>\n<ul>\n<li><strong>速度</strong> 游泳速度30尺</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>圣盔天使能呈现出鸽子、有翼类人、犬类或鱼类的外观。通常情况下，这不会改变他的速度或其打击的攻击及伤害加值，但这有可能改变打击造成的伤害类型（通常变为钝击）。对于特定形态的进一步数据变化见后文。</p>\n<ul>\n<li><strong>犬类 Dog</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>感官</strong> 灵敏嗅觉(模糊感官) 30尺</li>\n<li><strong>速度</strong> 40尺</li>\n<li><strong>近战</strong> <span class=\"pf2-icon\">1</span> [[/r 1d20+7 #Jaws]]{啃咬 +7}, <strong>伤害</strong> @Damage[(1d6+2)[piercing]]{1d6+2穿刺} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}</li>\n</ul>\n</li>\n<li><strong>鱼类 Fish</strong>\n<ul>\n<li><strong>速度</strong> 游泳速度30尺</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "BuEcwGM7NH9is0w9": {
                     "name": "眼部射线 Eye Beams",
@@ -3961,7 +3961,7 @@
                 },
                 "O1iPSxTdSnBAxGt1": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d6+14)[bludgeoning]]]{2d6+14钝击伤害}, @Check[type:fortitude|dc:34|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d6+14)[bludgeoning]]{2d6+14钝击伤害}, @Check[type:fortitude|dc:34|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "vwO9JU83wAh6vmts": {
                     "name": "峭壁蛇龙毒 Crag Linnorm Venom",
@@ -4012,7 +4012,7 @@
                 },
                 "CUZdx9N2AmVtEjB4": {
                     "name": "突袭 Sudden Strike",
-                    "description": "<p>在战斗第一轮，尚未行动的敌人对夺命螳螂视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>在战斗第一轮，尚未行动的敌人对夺命螳螂视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -4032,7 +4032,7 @@
             "items": {
                 "mGL7tbh4lfdWIVfJ": {
                     "name": "隐秘行动 Hidden Movement",
-                    "description": "<p>若地底侏儒侦察兵在其回合开始时对于某个生物来说是@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，那么该生物在对抗地底侏儒侦察兵的攻击时会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，直至其回合结束为止。</p>"
+                    "description": "<p>若地底侏儒侦察兵在其回合开始时对于某个生物来说是@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}状态，那么该生物在对抗地底侏儒侦察兵的攻击时会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，直至其回合结束为止。</p>"
                 }
             }
         },
@@ -4057,7 +4057,7 @@
                 },
                 "0xo9GafMlJXTsSNk": {
                     "name": "捕猎优势 Predator's Advantage",
-                    "description": "<p>流血的生物对恐爪龙@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>流血的生物对恐爪龙@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -4288,7 +4288,7 @@
             "items": {
                 "0lvwb1cNAaOUc6Be": {
                     "name": "结束伪装 End the Charade",
-                    "description": "<p><strong>触发</strong> 变形怪处于伪装形态的变形中，并且另一个生物移动到邻接他或者对他采取敌对行动。</p>\n<hr />\n<p><strong>效果</strong> 变形怪恢复其天然形态，并且可以对触发的生物进行一次打击。如果该生物没有意识到变形怪的伪装，那么该生物在对抗这次攻击中@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p><strong>触发</strong> 变形怪处于伪装形态的变形中，并且另一个生物移动到邻接他或者对他采取敌对行动。</p>\n<hr />\n<p><strong>效果</strong> 变形怪恢复其天然形态，并且可以对触发的生物进行一次打击。如果该生物没有意识到变形怪的伪装，那么该生物在对抗这次攻击中@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "LJKNy957UOv4LqE5": {
                     "name": "伪装形态 Change Shape",
@@ -4553,7 +4553,7 @@
                 },
                 "AiKIcXFJx9lEEfnt": {
                     "name": "浪涌 Surge",
-                    "description": "<p>元素海啸迅速扩张其占据空间填满涡流的范围。任何位于涡流弥散范围内的生物都会受到[[/r (5d12+6)[bludgeoning]]]{5d12+6钝击伤害}（@Check[type:fortitude|dc:31|basic:true]豁免）。豁免失败的生物被推离20尺。之后元素海啸缩回它原来所占据的空间。</p>\n<p>元素海啸在[[/br 1d4 #Recharge Surge]]{1d4轮}内无法再次使用浪涌能力。</p>"
+                    "description": "<p>元素海啸迅速扩张其占据空间填满涡流的范围。任何位于涡流弥散范围内的生物都会受到@Damage[(5d12+6)[bludgeoning]]{5d12+6钝击伤害}（@Check[type:fortitude|dc:31|basic:true]豁免）。豁免失败的生物被推离20尺。之后元素海啸缩回它原来所占据的空间。</p>\n<p>元素海啸在[[/br 1d4 #Recharge Surge]]{1d4轮}内无法再次使用浪涌能力。</p>"
                 },
                 "MGX1U8Kv59BVYAOI": {
                     "name": "推离或拉拽10尺",
@@ -4725,7 +4725,7 @@
                 },
                 "Breath Weapon": {
                     "name": "吐息 Breath Weapon",
-                    "description": "<p>火魔蝠对@Template[type:cone|distance:15]范围喷出烈焰，对范围内所有生物造成[[/r 2d4[fire]]]伤害和[[/r 1d4[persistent,fire]]]（@Check[type:reflex|dc:17|basic:true]豁免）。</p>\n<p>火魔蝠在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
+                    "description": "<p>火魔蝠对@Template[type:cone|distance:15]范围喷出烈焰，对范围内所有生物造成@Damage[2d4[fire]]伤害和[[/r 1d4[persistent,fire]]]（@Check[type:reflex|dc:17|basic:true]豁免）。</p>\n<p>火魔蝠在经过[[/br 1d4 #Recharge Breath Weapon]]{1d4轮}之前无法再次使用吐息。</p>"
                 }
             }
         },
@@ -5073,7 +5073,7 @@
                 },
                 "5PDURAzo537r6kje": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d6+4)[bludgeoning]]]{1d6+4钝击伤害}, @Check[type:fortitude|dc:20|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d6+4)[bludgeoning]]{1d6+4钝击伤害}, @Check[type:fortitude|dc:20|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "WuUxcHe2LEnb3BVQ": {
                     "name": "巨蝎毒 Giant Scorpion Venom",
@@ -5110,7 +5110,7 @@
                 },
                 "4QNftOG1O0v3IrVA": {
                     "name": "绊倒 Trip Up",
-                    "description": "<p><strong>触发</strong> 一个生物在对屁孩精的近战攻击中大失败，或移动进入到屁孩精险恶灵光范围内的空间。</p>\n<hr />\n<p><strong>效果</strong> 触发的生物必须尝试一次@Check[type:reflex|dc:32|traits:damaging-effect]检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标直到其下回合开始前@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<p><strong>失败</strong> 目标受到[[/r (2d10)[bludgeoning]]]{2d10钝击伤害}，并且直到其下回合开始前措手不及。</p>\n<p><strong>大失败</strong> 如同失败，并且目标被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
+                    "description": "<p><strong>触发</strong> 一个生物在对屁孩精的近战攻击中大失败，或移动进入到屁孩精险恶灵光范围内的空间。</p>\n<hr />\n<p><strong>效果</strong> 触发的生物必须尝试一次@Check[type:reflex|dc:32|traits:damaging-effect]检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标直到其下回合开始前@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<p><strong>失败</strong> 目标受到[[/r (2d10)[bludgeoning]]]{2d10钝击伤害}，并且直到其下回合开始前措手不及。</p>\n<p><strong>大失败</strong> 如同失败，并且目标被击@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>"
                 },
                 "0uxUMo5bNxKA5eIg": {
                     "name": "变身 Change Shape",
@@ -5230,11 +5230,11 @@
             "items": {
                 "Pgjjt3dWPTpOGD8c": {
                     "name": "埋伏 Ambush",
-                    "description": "<p><strong>触发</strong> 目标生物经过巨海鳗藏身地点20尺以内，且没有发现巨海鳗</p>\n<hr />\n<p><strong>效果</strong> 巨海鳗从埋伏点突然冲出，快速游向目标生物，进行一次啮咬打击。目标生物对此攻击视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p><strong>触发</strong> 目标生物经过巨海鳗藏身地点20尺以内，且没有发现巨海鳗</p>\n<hr />\n<p><strong>效果</strong> 巨海鳗从埋伏点突然冲出，快速游向目标生物，进行一次啮咬打击。目标生物对此攻击视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "sIfVG6GaZyAaZ3xW": {
                     "name": "咽颌 Pharyngeal Jaws",
-                    "description": "<p><strong>需求</strong> 一个生物被巨海鳗@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}在嘴中</p>\n<hr />\n<p><strong>效果</strong> 巨海鳗用它第二副牙齿把猎物拖向它的喉咙。巨海鳗对该生物造成[[/r (1d6+4)[piercing]]]{1d6+4穿刺伤害}，并且之后的活吞（攻击检定）及目标生物的逃脱DC都有+2环境加值。如果该生物逃脱，或者被活吞，则此效果结束。</p>"
+                    "description": "<p><strong>需求</strong> 一个生物被巨海鳗@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}在嘴中</p>\n<hr />\n<p><strong>效果</strong> 巨海鳗用它第二副牙齿把猎物拖向它的喉咙。巨海鳗对该生物造成@Damage[(1d6+4)[piercing]]{1d6+4穿刺伤害}，并且之后的活吞（攻击检定）及目标生物的逃脱DC都有+2环境加值。如果该生物逃脱，或者被活吞，则此效果结束。</p>"
                 },
                 "7pkevpR7Am9eNCD5": {
                     "name": "活吞 Swallow Whole",
@@ -5255,11 +5255,11 @@
                 },
                 "PgvThxPk7tH5CoXV": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d8+9)[bludgeoning]]]{1d8+9钝击}, @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p><em>注意：Paizo未为此能力提供DC。此处DC是根据GMG按生物等级计算的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d8+9)[bludgeoning]]{1d8+9钝击}, @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p><em>注意：Paizo未为此能力提供DC。此处DC是根据GMG按生物等级计算的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "XK9Va6QKy2g8z1dZ": {
                     "name": "巨章鱼毒液 Giant Octopus Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, 和措手不及(1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, 和措手不及 (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:26]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, 和措手不及(1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, 和措手不及 (1轮)</p>"
                 },
                 "jsgHC6kdtZdnAJMT": {
                     "name": "墨水云 Ink Cloud",
@@ -5478,7 +5478,7 @@
             "items": {
                 "7PQkG1Vfc7aynb2X": {
                     "name": "惊惧示威 Frightening Display",
-                    "description": "<p>大猩猩捶打自己的胸肌来示威。在@Template[type:emanation|distance:30]{30尺}内的生物必须经过@Check[type:will|dc:20]检定。</p>\n<p>如果一个生物受到该能力影响而获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态，则视为对大猩猩@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响且在一分钟之内免疫该能力。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>"
+                    "description": "<p>大猩猩捶打自己的胸肌来示威。在@Template[type:emanation|distance:30]{30尺}内的生物必须经过@Check[type:will|dc:20]检定。</p>\n<p>如果一个生物受到该能力影响而获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态，则视为对大猩猩@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响且在一分钟之内免疫该能力。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。</p>"
                 }
             }
         },
@@ -5564,7 +5564,7 @@
                 },
                 "yHE4jDWkyfO5E7mM": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (3d6+12)[bludgeoning]]]{3d6+12钝击}, @Check[type:fortitude|dc:32|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(3d6+12)[bludgeoning]]{3d6+12钝击}, @Check[type:fortitude|dc:32|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "fRkzUI9I50wuPJvX": {
                     "name": "跳跃突袭 Skittering Assault",
@@ -5723,7 +5723,7 @@
                 },
                 "e1GGSqrMS3yqPrVw": {
                     "name": "提琴奏鸣 Fiddle",
-                    "description": "<p>格利精能通过让腿部互相摩擦来产生悦耳的小提琴旋律，这会迫使@Template[type:emanation|distance:30]{30尺}内的其他生物跳舞，具体的影响效果取决于@Check[type:will|dc:18]豁免。成功豁免能让听众在10分钟临时免疫该能力，否则当格利精每轮持续使用提琴奏鸣时，这些生物将不会获得额外的豁免。</p>\n<hr />\n<p><strong>成功</strong> 无效果</p>\n<p><strong>失败</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}并且速度承受-10尺状态减值</p>\n<p><strong>大失败</strong> 同失败，但还会获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{效果: 提琴奏鸣}</p>"
+                    "description": "<p>格利精能通过让腿部互相摩擦来产生悦耳的小提琴旋律，这会迫使@Template[type:emanation|distance:30]{30尺}内的其他生物跳舞，具体的影响效果取决于@Check[type:will|dc:18]豁免。成功豁免能让听众在10分钟临时免疫该能力，否则当格利精每轮持续使用提琴奏鸣时，这些生物将不会获得额外的豁免。</p>\n<hr />\n<p><strong>成功</strong> 无效果</p>\n<p><strong>失败</strong> @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}并且速度承受-10尺状态减值</p>\n<p><strong>大失败</strong> 同失败，但还会获得@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.wJsOZsYI2ZUVcGxc]{效果: 提琴奏鸣}</p>"
                 }
             }
         },
@@ -5991,7 +5991,7 @@
                 },
                 "egV0y60X9Okkmuoc": {
                     "name": "猎蛛毒 Hunting Spider Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, 和措手不及 (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, 和措手不及 (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:16]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, 和措手不及 (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, 和措手不及 (1轮)</p>"
                 },
                 "Qy7s2ZDFTvr7xR1m": {
                     "name": "网捕 Web Trap",
@@ -6076,7 +6076,7 @@
                 },
                 "MNTsZcEEgZLgHBMp": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d6+18)[bludgeoning]]]{2d6+18钝击伤害}, @Check[type:fortitude|dc:38|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d6+18)[bludgeoning]]{2d6+18钝击伤害}, @Check[type:fortitude|dc:38|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "TfUyAj18NAaa1ZGV": {
                     "name": "冰雪蛇龙毒 Ice Linnorm Venom",
@@ -6120,7 +6120,7 @@
                 },
                 "kZEJMwLRJaBvJMSU": {
                     "name": "变形 Change Shape",
-                    "description": "<ul>\n<li><strong>野猪 Boar</strong>\n<ul>\n<li><strong>体型</strong> 中型</li>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉(模糊感官) 30尺}</li>\n<li><strong>速度</strong> 40尺</li>\n<li><strong>近战</strong> 獠牙 [[/r 1d20+9 #Tusk]]{+9}/[[/r 1d20+4 #Tusk]]{+4}/[[/r 1d20-1 #Tusk]]{-1} (娴熟), <strong>伤害</strong> [[/r (1d10-1)[piercing]]]{1d10-1穿刺伤害}</li>\n</ul>\n</li>\n<li><strong>巨蜘蛛 Giant Spider</strong>\n<ul>\n<li><strong>体型</strong> 中型</li>\n<li><strong>速度</strong> 25尺, 攀爬25尺</li>\n<li><strong>近战</strong> 尖牙 [[/r 1d20+9 #Fangs]]{+9}/[[/r 1d20+4 #Fangs]]{+4}/[[/r 1d20-1 #Fangs]]{-1} (娴熟, 毒素), <strong>伤害</strong> [[/r (1d6-1)[piercing]+(1d4)[poison]]]{1d6-1穿刺伤害+1d4毒素伤害}</li>\n</ul>\n</li>\n<li><strong>鼠 Rat</strong>\n<ul>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉 Scent}</li>\n<li><strong>速度</strong> 20尺</li>\n<li><strong>近战</strong> 啃咬 [[/r 1d20+9 #Jaws]]{+9}/[[/r 1d20+5 #Jaws]]{+5}/[[/r 1d20+1 #Jaws]]{+1} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1)[piercing]]]{1穿刺伤害}</li>\n</ul>\n</li>\n<li><strong>渡鸦 Raven</strong>\n<ul>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉}</li>\n<li><strong>速度</strong> 10尺, 飞行 40尺</li>\n<li><strong>近战</strong> beak [[/r 1d20+9 #Beak]]{+9}/[[/r 1d20+4 #Beak]]{+4}/[[/r 1d20-1 #Beak]]{-1} (娴熟), <strong>伤害</strong> [[/r (1)[piercing]]]{1穿刺伤害}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>野猪 Boar</strong>\n<ul>\n<li><strong>体型</strong> 中型</li>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉(模糊感官) 30尺}</li>\n<li><strong>速度</strong> 40尺</li>\n<li><strong>近战</strong> 獠牙 [[/r 1d20+9 #Tusk]]{+9}/[[/r 1d20+4 #Tusk]]{+4}/[[/r 1d20-1 #Tusk]]{-1} (娴熟), <strong>伤害</strong> @Damage[(1d10-1)[piercing]]{1d10-1穿刺伤害}</li>\n</ul>\n</li>\n<li><strong>巨蜘蛛 Giant Spider</strong>\n<ul>\n<li><strong>体型</strong> 中型</li>\n<li><strong>速度</strong> 25尺, 攀爬25尺</li>\n<li><strong>近战</strong> 尖牙 [[/r 1d20+9 #Fangs]]{+9}/[[/r 1d20+4 #Fangs]]{+4}/[[/r 1d20-1 #Fangs]]{-1} (娴熟, 毒素), <strong>伤害</strong> [[/r (1d6-1)[piercing]+(1d4)[poison]]]{1d6-1穿刺伤害+1d4毒素伤害}</li>\n</ul>\n</li>\n<li><strong>鼠 Rat</strong>\n<ul>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉 Scent}</li>\n<li><strong>速度</strong> 20尺</li>\n<li><strong>近战</strong> 啃咬 [[/r 1d20+9 #Jaws]]{+9}/[[/r 1d20+5 #Jaws]]{+5}/[[/r 1d20+1 #Jaws]]{+1} (灵巧, 娴熟), <strong>伤害</strong> [[/r (1)[piercing]]]{1穿刺伤害}</li>\n</ul>\n</li>\n<li><strong>渡鸦 Raven</strong>\n<ul>\n<li>@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉}</li>\n<li><strong>速度</strong> 10尺, 飞行 40尺</li>\n<li><strong>近战</strong> beak [[/r 1d20+9 #Beak]]{+9}/[[/r 1d20+4 #Beak]]{+4}/[[/r 1d20-1 #Beak]]{-1} (娴熟), <strong>伤害</strong> [[/r (1)[piercing]]]{1穿刺伤害}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "ATs94SggOJoPD71u": {
                     "name": "魔鬼治疗 Diabolic Healing",
@@ -6325,7 +6325,7 @@
                 },
                 "aWJTgaTUKotr2LWA": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d10+15)[bludgeoning]]]{1d10+15钝击伤害}, @Check[type:fortitude|dc:42|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d10+15)[bludgeoning]]{1d10+15钝击伤害}, @Check[type:fortitude|dc:42|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "KCUHGmNla57hO2ZK": {
                     "name": "重塑现实 Reshape Reality",
@@ -6365,7 +6365,7 @@
                 },
                 "DtiXNG3ROuAaBhN3": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d10+17)[bludgeoning]]]{2d10+17钝击伤害}, @Check[type:fortitude|dc:40|basic:true]</p>\n<p>豁免失败的生物将损失相当于[[/br 1d4 #Lost Rounds]]{1d4轮}的空气。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d10+17)[bludgeoning]]{2d10+17钝击伤害}, @Check[type:fortitude|dc:40|basic:true]</p>\n<p>豁免失败的生物将损失相当于[[/br 1d4 #Lost Rounds]]{1d4轮}的空气。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "95k2q11INtOhFqCd": {
                     "name": "双重攻击 Double Attack",
@@ -6445,7 +6445,7 @@
                 },
                 "MVKA8eKi1YTMeHKK": {
                     "name": "强力冲锋 Powerful Charge",
-                    "description": "<p>牛头人行走两次，并发动一次角抵攻击，如果它从起始位置移动至少20尺，该次打击的伤害增加到[[/r (2d8+10)[piercing]]]{2d8+10}。</p>"
+                    "description": "<p>牛头人行走两次，并发动一次角抵攻击，如果它从起始位置移动至少20尺，该次打击的伤害增加到@Damage[(2d8+10)[piercing]]{2d8+10}。</p>"
                 }
             }
         },
@@ -6567,7 +6567,7 @@
                 },
                 "lYUnEWGhnlYFvH6B": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>巨型, [[/r (20d6+9)[acid]]]{20d6+9酸液伤害}, 破裂37。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>巨型, @Damage[(20d6+9)[acid]]{20d6+9酸液伤害}, 破裂37。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -6611,7 +6611,7 @@
                 },
                 "MCe44ome2cf0lQ8W": {
                     "name": "撕裂 Pull Apart",
-                    "description": "<p>三头蜈蚣用不同的两个头对同一个目标进行两次打击。如果同时命中，目标必须通过@Check[type:fortitude|dc:36|basic:true]豁免，否则受到额外[[/r (2d12+13)[slashing]]]{2d12+13挥砍伤害}。如果目标大失败则被撕成碎片，直接死亡。三头蜈蚣的多重攻击减值在此项行动的两次攻击动作都结束之后生效。</p>"
+                    "description": "<p>三头蜈蚣用不同的两个头对同一个目标进行两次打击。如果同时命中，目标必须通过@Check[type:fortitude|dc:36|basic:true]豁免，否则受到额外@Damage[(2d12+13)[slashing]]{2d12+13挥砍伤害}。如果目标大失败则被撕成碎片，直接死亡。三头蜈蚣的多重攻击减值在此项行动的两次攻击动作都结束之后生效。</p>"
                 },
                 "hk3y1r8nU2o8QA4C": {
                     "name": "连环击 Thrash",
@@ -6763,7 +6763,7 @@
                 },
                 "ajDZIRytCVKqw5RN": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d6+6)[bludgeoning]]]{1d6+6钝击}, @Check[type:fortitude|dc:22|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d6+6)[bludgeoning]]{1d6+6钝击}, @Check[type:fortitude|dc:22|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "GHuGn3ZCUkbeSFiQ": {
                     "name": "腐热症 Filth Fever",
@@ -7056,7 +7056,7 @@
                 },
                 "6bt34Jgx0jymQKsU": {
                     "name": "放血 Bloodletting",
-                    "description": "<p>当海魔鬼造成穿刺或挥砍伤害时，若目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}或攻击造成重击，则还会造成@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>"
+                    "description": "<p>当海魔鬼造成穿刺或挥砍伤害时，若目标处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}或攻击造成重击，则还会造成@Localize[PF2E.PersistentDamage.Bleed1d4.success]。</p>"
                 }
             }
         },
@@ -7079,7 +7079,7 @@
                 },
                 "Iiw19xLS3nyusjz1": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d10+14)[bludgeoning]]]{1d10+14钝击}, @Check[type:fortitude|dc:32|basic:true]</p>\n<hr />\n<p><em>注意: Paizo并未提供此能力的DC。此处的DC是根据GMG设置的按生物等级计算的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d10+14)[bludgeoning]]{1d10+14钝击}, @Check[type:fortitude|dc:32|basic:true]</p>\n<hr />\n<p><em>注意: Paizo并未提供此能力的DC。此处的DC是根据GMG设置的按生物等级计算的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "jmDi2EBAEE9yAyK3": {
                     "name": "大海蛇藻毒 Sea Serpent Algae",
@@ -7087,11 +7087,11 @@
                 },
                 "d3l2xwpTV1XkZBAO": {
                     "name": "棘刺刮擦 Spine Rake",
-                    "description": "<p>大海蛇将它背部的棘刺张开，并游泳或行走。在此行动期间任何时刻和大海蛇相邻的生物都必须受到[[/r (4d6+8)[slashing]]]{4d6+8挥砍伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。</p>"
+                    "description": "<p>大海蛇将它背部的棘刺张开，并游泳或行走。在此行动期间任何时刻和大海蛇相邻的生物都必须受到@Damage[(4d6+8)[slashing]]{4d6+8挥砍伤害}（@Check[type:reflex|dc:32|basic:true]豁免）。</p>"
                 },
                 "4tsSsz41K5abcM8D": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>超大型, [[/r (2d10+6)[bludgeoning]]]{2d10+6钝击伤害}, 破裂20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>超大型, @Damage[(2d10+6)[bludgeoning]]{2d10+6钝击伤害}, 破裂20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -7226,7 +7226,7 @@
                 },
                 "DYRACVN0h19oKZpk": {
                     "name": "光芒依存 Radiance Dependence",
-                    "description": "<p>闪耀之子在黑暗范围中@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>闪耀之子在黑暗范围中@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "0mOkmWdA59zQVh9W": {
                     "name": "随意施法 At-Will Spells",
@@ -7256,7 +7256,7 @@
                 },
                 "HknPH5MLDixmpO4o": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d10+15)[bludgeoning]]]{2d10+15钝击}, @Check[type:fortitude|dc:40|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d10+15)[bludgeoning]]{2d10+15钝击}, @Check[type:fortitude|dc:40|basic:true]</p>\n<hr />\n<p><em>注意: Paizo没有为此能力设置DC。此处DC是根据游戏掌控者指南中按生物等级设置的中等DC。</em></p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "avV91CD5YGdSAFSf": {
                     "name": "侵蚀 Eat Away",
@@ -7688,7 +7688,7 @@
                 },
                 "RNVvCjM6WpoASTKg": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (3d6+18)[bludgeoning]]]{3d6+18钝击伤害}, @Check[type:fortitude|dc:44|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(3d6+18)[bludgeoning]]{3d6+18钝击伤害}, @Check[type:fortitude|dc:44|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "TbFZxJr8aSgbgTZ6": {
                     "name": "双重啃咬 Double Bite",
@@ -7721,7 +7721,7 @@
                 },
                 "DpI5QZQJMNjqef3w": {
                     "name": "突袭者 Surprise Attacker",
-                    "description": "<p>在战斗的第一轮，还未行动的生物对于天狗潜行者来说视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>在战斗的第一轮，还未行动的生物对于天狗潜行者来说视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -7953,7 +7953,7 @@
                 },
                 "zEz9gGlpNBUnyF2Y": {
                     "name": "变身 Change Shape",
-                    "description": "<p>吸血鬼变形为某一动物形态或是变为原形。</p>\n<ul>\n<li><strong>蝙蝠 Bat</strong> 吸血鬼变成@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{巨蝙蝠 Giant Bat}。</li>\n<ul>\n<li><strong>体型</strong> 大型</li>\n<li><strong>感官</strong> 回声定位40尺</li>\n<li><strong>速度</strong> 20尺, 飞行 30尺</li>\n<li><strong>近战</strong> 尖牙 [[/r 1d20+19 #Fangs]]{+19}/[[/r 1d20+14 #Fangs]]{+14}/[[/r 1d20+9 #Fangs]]{+9}, <strong>伤害</strong> [[/r (2d8+9)[piercing]]]{2d8+9穿刺伤害}</li>\n</ul>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<p>吸血鬼变形为某一动物形态或是变为原形。</p>\n<ul>\n<li><strong>蝙蝠 Bat</strong> 吸血鬼变成@UUID[Compendium.pf2e.pathfinder-bestiary.Actor.C9s5tBxVValC2HTE]{巨蝙蝠 Giant Bat}。</li>\n<ul>\n<li><strong>体型</strong> 大型</li>\n<li><strong>感官</strong> 回声定位40尺</li>\n<li><strong>速度</strong> 20尺, 飞行 30尺</li>\n<li><strong>近战</strong> 尖牙 [[/r 1d20+19 #Fangs]]{+19}/[[/r 1d20+14 #Fangs]]{+14}/[[/r 1d20+9 #Fangs]]{+9}, <strong>伤害</strong> @Damage[(2d8+9)[piercing]]{2d8+9穿刺伤害}</li>\n</ul>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "czqtIybNHs8mmEeg": {
                     "name": "创造子嗣 Create Spawn",
@@ -8010,7 +8010,7 @@
                 },
                 "KzNMNX33tOGWTxJY": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (3d6+21)[bludgeoning]]]{3d6+21钝击}, @Check[type:fortitude|dc:46|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(3d6+21)[bludgeoning]]{3d6+21钝击}, @Check[type:fortitude|dc:46|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "CMfpQM5btdzVWxB5": {
                     "name": "挥舞利爪 Slashing Claws",
@@ -8061,7 +8061,7 @@
                     "description": "<p>对于触及范围内至少有两名座狼盟友的生物，座狼的打击造成额外[[/r (1d4)]]{1d4伤害}。</p>"
                 },
                 "name": "活吞 Swallow Whole",
-                "description": "<p>小型, [[/r (1d6+2)[bludgeoning]]]{1d6+2钝击伤害}, 破裂9</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                "description": "<p>小型, @Damage[(1d6+2)[bludgeoning]]{1d6+2钝击伤害}, 破裂9</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
             }
         },
         "Warsworn": {
@@ -8129,7 +8129,7 @@
                 },
                 "oXq7JKUPh72N7tPy": {
                     "name": "变形 Change Shape",
-                    "description": "<ul>\n<li><strong>人类 Human</strong>\n<ul>\n<li><strong>近战</strong> 拳头 [[/r 1d20+11 #Fist]]{+11}/[[/r 1d20+6 #Fist]]{+6}/[[/r 1d20+1 #Fist]]{+1} (灵巧, 非致命), <strong>伤害</strong> [[/r (1d4+8)[bludgeoning]]]{1d4+8钝击伤害}</li>\n</ul>\n</li>\n<li><strong>狼 Wolf</strong>\n<ul>\n<li><strong>速度</strong> 40尺</li>\n<li><strong>近战</strong> 啃咬[[/r 1d20+11 #Jaws]]{+11}/[[/r 1d20+6 #Jaws]]{+6}/[[/r 1d20+1 #Jaws]]{+1}, <strong>伤害</strong> [[/r (1d8+8)[piercing]]]{1d8+8穿刺伤害} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>化形生物变为其类人、混合、或动物形态。每个形态都有一种特定且可持续的外观。真化形者的自然形态是其混合形态。.</p>\n<p>在类人形态下，化形者使用其原始的类人体型，失去爪抓和啃咬打击，并且获得造成钝击伤害的近战拳头打击，伤害量等同于爪抓造成的挥砍伤害。</p>\n<p>在动物形态，其速度和体型变为该动物的数据，他会获得其他形态下不具有的动物的任何特殊打击效果（比如攫抓），并且失去其任何武器打击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>人类 Human</strong>\n<ul>\n<li><strong>近战</strong> 拳头 [[/r 1d20+11 #Fist]]{+11}/[[/r 1d20+6 #Fist]]{+6}/[[/r 1d20+1 #Fist]]{+1} (灵巧, 非致命), <strong>伤害</strong> @Damage[(1d4+8)[bludgeoning]]{1d4+8钝击伤害}</li>\n</ul>\n</li>\n<li><strong>狼 Wolf</strong>\n<ul>\n<li><strong>速度</strong> 40尺</li>\n<li><strong>近战</strong> 啃咬[[/r 1d20+11 #Jaws]]{+11}/[[/r 1d20+6 #Jaws]]{+6}/[[/r 1d20+1 #Jaws]]{+1}, <strong>伤害</strong> @Damage[(1d8+8)[piercing]]{1d8+8穿刺伤害} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>化形生物变为其类人、混合、或动物形态。每个形态都有一种特定且可持续的外观。真化形者的自然形态是其混合形态。.</p>\n<p>在类人形态下，化形者使用其原始的类人体型，失去爪抓和啃咬打击，并且获得造成钝击伤害的近战拳头打击，伤害量等同于爪抓造成的挥砍伤害。</p>\n<p>在动物形态，其速度和体型变为该动物的数据，他会获得其他形态下不具有的动物的任何特殊打击效果（比如攫抓），并且失去其任何武器打击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "Xmaw18x2qDwDq7tB": {
                     "name": "狼化人诅咒 Curse of the Werewolf",
@@ -8182,7 +8182,7 @@
                 },
                 "P7JMDrm2HB1QPV3N": {
                     "name": "伏网怪毒 Web Lurker Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:19]</p>\n<hr />\n<p><strong>最大持续时间</strong> 10轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:19]</p>\n<hr />\n<p><strong>最大持续时间</strong> 10轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d6)[poison]]]{1d6毒素伤害}, 措手不及, 和@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} (1轮)</p>"
                 },
                 "Re5HgCWQJTyzGewL": {
                     "name": "蛛网陷阱 Web Trap",
@@ -8210,7 +8210,7 @@
                 },
                 "Rwgsw9DmxxBRN4NY": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (2d12+10)[bludgeoning]]]{2d12+10钝击伤害}, @Check[type:fortitude|dc:37|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(2d12+10)[bludgeoning]]{2d12+10钝击伤害}, @Check[type:fortitude|dc:37|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "PZQRsmRUDWR50Kiq": {
                     "name": "包卷 Engulf",
@@ -8218,7 +8218,7 @@
                 },
                 "t4Gnn9gqqcKWerhM": {
                     "name": "荆棘缠身 Thorny Mass",
-                    "description": "<p>任何时候，当温慕斯10尺范围内的一个生物尝试对它进行一次近战攻击或尝试@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}穿过它占据的空间时，该生物受到[[/r (1d12+10)[piercing]]]{1d12+10穿刺伤害}。</p>"
+                    "description": "<p>任何时候，当温慕斯10尺范围内的一个生物尝试对它进行一次近战攻击或尝试@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}穿过它占据的空间时，该生物受到@Damage[(1d12+10)[piercing]]{1d12+10穿刺伤害}。</p>"
                 }
             }
         },
@@ -8276,7 +8276,7 @@
                 },
                 "ERGEti8Jc1RonWRj": {
                     "name": "变形 Change Shape",
-                    "description": "<ul>\n<li><strong>人类 Human</strong>\n<ul>\n<li><strong>近战</strong> 拳头 [[/r 1d20+13 #Fist]]{+13}/[[/r 1d20+8 #Fist]]{+8}/[[/r 1d20+3 #Fist]]{+3} (灵巧, 非致命), <strong>伤害</strong> [[/r (1d4+7)[bludgeoning]]]{1d4+7钝击伤害}</li>\n</ul>\n</li>\n<li><strong>灰熊 Grizzly Bear</strong>\n<ul>\n<li><strong>速度</strong> 35尺</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>化形生物变为其类人、混合、或动物形态。每个形态都有一种特定且可持续的外观。真化形者的自然形态是其混合形态。</p>\n<p>在类人形态下，化形者使用其原始的类人体型，失去爪抓和啃咬打击，并且获得造成钝击伤害的近战拳头打击，伤害量等同于爪抓造成的挥砍伤害。</p>\n<p>在动物形态，其速度和体型变为该动物的数据，他会获得其他形态下不具有的动物的任何特殊打击效果（比如攫抓），并且失去其任何武器打击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>人类 Human</strong>\n<ul>\n<li><strong>近战</strong> 拳头 [[/r 1d20+13 #Fist]]{+13}/[[/r 1d20+8 #Fist]]{+8}/[[/r 1d20+3 #Fist]]{+3} (灵巧, 非致命), <strong>伤害</strong> @Damage[(1d4+7)[bludgeoning]]{1d4+7钝击伤害}</li>\n</ul>\n</li>\n<li><strong>灰熊 Grizzly Bear</strong>\n<ul>\n<li><strong>速度</strong> 35尺</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>化形生物变为其类人、混合、或动物形态。每个形态都有一种特定且可持续的外观。真化形者的自然形态是其混合形态。</p>\n<p>在类人形态下，化形者使用其原始的类人体型，失去爪抓和啃咬打击，并且获得造成钝击伤害的近战拳头打击，伤害量等同于爪抓造成的挥砍伤害。</p>\n<p>在动物形态，其速度和体型变为该动物的数据，他会获得其他形态下不具有的动物的任何特殊打击效果（比如攫抓），并且失去其任何武器打击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "8fKFzS7zqR9XbC5k": {
                     "name": "熊化人诅咒 Curse of the Werebear",
@@ -8317,7 +8317,7 @@
                 },
                 "E11uRLNnDwbjSmiw": {
                     "name": "变形 Change Shape",
-                    "description": "<ul>\n<li><strong>人类 Human</strong>\n<ul>\n<li><strong>近战</strong> 拳头 [[/r 1d20+10 #Fist]]{+10}/[[/r 1d20+5 #Fist]]{+5}/[[/r 1d20 #Fist]]{+0} (灵巧, 非致命), <strong>伤害</strong> [[/r (1d4+2)[bludgeoning]]]{1d4+2钝击伤害}</li>\n</ul>\n</li>\n<li><strong>老鼠 Rat</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>速度</strong> 30尺, 攀爬10尺</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>化形生物变为其类人、混合、或动物形态。每个形态都有一种特定且可持续的外观。真化形者的自然形态是其混合形态。</p>\n<p>在类人形态下，化形者使用其原始的类人体型，失去爪抓和啃咬打击，并且获得造成钝击伤害的近战拳头打击，伤害量等同于爪抓造成的挥砍伤害。</p>\n<p>在动物形态，其速度和体型变为该动物的数据，他会获得其他形态下不具有的动物的任何特殊打击效果（比如攫抓），并且失去其任何武器打击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>人类 Human</strong>\n<ul>\n<li><strong>近战</strong> 拳头 [[/r 1d20+10 #Fist]]{+10}/[[/r 1d20+5 #Fist]]{+5}/[[/r 1d20 #Fist]]{+0} (灵巧, 非致命), <strong>伤害</strong> @Damage[(1d4+2)[bludgeoning]]{1d4+2钝击伤害}</li>\n</ul>\n</li>\n<li><strong>老鼠 Rat</strong>\n<ul>\n<li><strong>体型</strong> 小型</li>\n<li><strong>速度</strong> 30尺, 攀爬10尺</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>化形生物变为其类人、混合、或动物形态。每个形态都有一种特定且可持续的外观。真化形者的自然形态是其混合形态。</p>\n<p>在类人形态下，化形者使用其原始的类人体型，失去爪抓和啃咬打击，并且获得造成钝击伤害的近战拳头打击，伤害量等同于爪抓造成的挥砍伤害。</p>\n<p>在动物形态，其速度和体型变为该动物的数据，他会获得其他形态下不具有的动物的任何特殊打击效果（比如攫抓），并且失去其任何武器打击。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "pK7TW7mAgEFfJu0Q": {
                     "name": "鼠化人诅咒 Curse of the Wererat",
@@ -8532,7 +8532,7 @@
                 },
                 "c4LXwYKMdM5R7B7K": {
                     "name": "潜行 Hidden Movement",
-                    "description": "<p>若地蜥人潜伏者在其回合开始时对于某生物来说是@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或者对其来说仅仅是@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的话，那么直至地蜥人潜伏者的回合结束为止，该生物对于地蜥人潜伏者的攻击均为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>若地蜥人潜伏者在其回合开始时对于某生物来说是@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或者对其来说仅仅是@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的话，那么直至地蜥人潜伏者的回合结束为止，该生物对于地蜥人潜伏者的攻击均为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "HavBnXAT02rDNben": {
                     "name": "偷袭 Sneak Attack",
@@ -8845,7 +8845,7 @@
                 },
                 "Generate Bomb": {
                     "name": "生成炸弹 Generate Bomb",
-                    "description": "<p>炼金魔像从炼金容器中汲取物质填满一个小瓶来制造一枚炸弹，并进行一次炸弹打击。</p>\n<p>投1d6并查阅炼金容器表来决定炸弹效果。</p>\n<p>如果结果为1-4，则它创造的炸弹相当于高等（greater）炼金炸弹：容器1为@UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{酸液瓶 Acid Flask}，容器2为@UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{霜冻瓶 Frost Vial}，容器3为@UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{瓶装闪电 Bottled Lightning}，容器4为@UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{炽火胶 Alchemist's Fire}。</p>\n<p>如果结果为5，则它创造出一枚能造成3d10毒素伤害和3毒素溅射伤害的毒液炸弹，但没有其他效果。</p>\n<p>如果结果为6，则它创造出一枚恶心炸弹，将目标和溅射半径内的所有生物暴露在恶心效果之下；只被溅射影响的生物在强韧豁免检定上有+2环境加值。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Generate Bomb]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>酸液瓶 Acid Flask: [[/r (1)[acid]]]{1酸液伤害}, [[/r (3d6)[persistent,acid]]]{3d6持续酸液伤害}和[[/r (3)[splash,acid]]]{3酸液溅射伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>霜冻瓶: [[/r (3d6)[cold]]]{3d6寒冷伤害}, [[/r (3)[splash,cold]]]{3寒冷溅射伤害}和-10尺速度状态减值直到目标的下回合结束@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>瓶装闪电: [[/r (3d6)[electricity]]]{3d6电击伤害}, [[/r (3)[splash,electricity]]]{3电击溅射伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}直到目标下个回合开始</td>\n</tr>\n<tr>\n<td>4</td>\n<td>炽火胶: [[/r (3d8)[fire]]]{3d8火焰伤害}, [[/r (3)[persistent,fire]]]{3持续火焰伤害}伤害和[[/r (3)[splash,fire]]]{3火焰溅射伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>毒液炸弹: [[/r (3d10)[poison]]]{3d10 毒素伤害}和[[/r (3)[splash,poison]]]{3毒素溅射伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
+                    "description": "<p>炼金魔像从炼金容器中汲取物质填满一个小瓶来制造一枚炸弹，并进行一次炸弹打击。</p>\n<p>投1d6并查阅炼金容器表来决定炸弹效果。</p>\n<p>如果结果为1-4，则它创造的炸弹相当于高等（greater）炼金炸弹：容器1为@UUID[Compendium.pf2e.equipment-srd.Item.jC8GmH0Un6vDxdMj]{酸液瓶 Acid Flask}，容器2为@UUID[Compendium.pf2e.equipment-srd.Item.intVPcEzbE9o4NQd]{霜冻瓶 Frost Vial}，容器3为@UUID[Compendium.pf2e.equipment-srd.Item.r2iTRbt1zpkAqHj2]{瓶装闪电 Bottled Lightning}，容器4为@UUID[Compendium.pf2e.equipment-srd.Item.n5yTlTs63o53n3k6]{炽火胶 Alchemist's Fire}。</p>\n<p>如果结果为5，则它创造出一枚能造成3d10毒素伤害和3毒素溅射伤害的毒液炸弹，但没有其他效果。</p>\n<p>如果结果为6，则它创造出一枚恶心炸弹，将目标和溅射半径内的所有生物暴露在恶心效果之下；只被溅射影响的生物在强韧豁免检定上有+2环境加值。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>[[/br {1d6)[Alchemical Effect] #Generate Bomb]]{1d6}</th>\n<th>炼金效果 Alchemical Effect</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>\n<p>酸液瓶 Acid Flask: [[/r (1)[acid]]]{1酸液伤害}, [[/r (3d6)[persistent,acid]]]{3d6持续酸液伤害}和[[/r (3)[splash,acid]]]{3酸液溅射伤害}</p>\n</td>\n</tr>\n<tr>\n<td>2</td>\n<td>霜冻瓶: [[/r (3d6)[cold]]]{3d6寒冷伤害}, [[/r (3)[splash,cold]]]{3寒冷溅射伤害}和-10尺速度状态减值直到目标的下回合结束@UUID[Compendium.pf2e.equipment-effects.Item.nJRoiSyd67eQ1dYj]{效果：高等霜冻瓶}</td>\n</tr>\n<tr>\n<td>3</td>\n<td>瓶装闪电: [[/r (3d6)[electricity]]]{3d6电击伤害}, [[/r (3)[splash,electricity]]]{3电击溅射伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}直到目标下个回合开始</td>\n</tr>\n<tr>\n<td>4</td>\n<td>炽火胶: [[/r (3d8)[fire]]]{3d8火焰伤害}, [[/r (3)[persistent,fire]]]{3持续火焰伤害}伤害和[[/r (3)[splash,fire]]]{3火焰溅射伤害}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>毒液炸弹: [[/r (3d10)[poison]]]{3d10 毒素伤害}和[[/r (3)[splash,poison]]]{3毒素溅射伤害}</td>\n</tr>\n<tr>\n<td>6</td>\n<td>恶心 Sickness: @Check[type:fortitude|dc:26|name:Alchemical Sickness|traits:disease]豁免，失败则@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1} (大失败则@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2})</td>\n</tr>\n</tbody>\n</table>"
                 }
             }
         },
@@ -9027,7 +9027,7 @@
                 },
                 "T2hVNG1lQgAAAy70": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>超大型, [[/r (3d8+10)[bludgeoning]]]{3d8+10钝击伤害}, 破裂27</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>超大型, @Damage[(3d8+10)[bludgeoning]]{3d8+10钝击伤害}, 破裂27</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "PF9LIocpqPbxqnvR": {
                     "name": "连环击 Thrash",
@@ -9081,7 +9081,7 @@
                 },
                 "Vengeful Spite": {
                     "name": "复仇之怨 Vengeful Spite",
-                    "description": "<p><strong>触发</strong> 有敌人对报丧女妖造成重击或者报丧女妖在对抗敌人的伤害性效果时投掷出了大失败。</p>\n<hr />\n<p><strong>效果</strong> 报丧女妖向折磨她的人进行反击，对其造成[[/r (4d10+14)[mental]]]{4d10+14心灵伤害}（@Check[type:will|dc:38|basic:true]豁免），并根据相同的意志豁免结果将惊骇之触的效果应用至目标。</p>"
+                    "description": "<p><strong>触发</strong> 有敌人对报丧女妖造成重击或者报丧女妖在对抗敌人的伤害性效果时投掷出了大失败。</p>\n<hr />\n<p><strong>效果</strong> 报丧女妖向折磨她的人进行反击，对其造成@Damage[(4d10+14)[mental]]{4d10+14心灵伤害}（@Check[type:will|dc:38|basic:true]豁免），并根据相同的意志豁免结果将惊骇之触的效果应用至目标。</p>"
                 },
                 "Spectral Ripple": {
                     "name": "幽体涟漪 Spectral Ripple",
@@ -9191,7 +9191,7 @@
                 },
                 "QEvRlTqwOEac04ov": {
                     "name": "吸附 Attach",
-                    "description": "<p>当觅血者击中比自己体型更大的目标时，它带有倒刺的腿会紧紧勾在目标身上。这类似于一种擒抱，但是觅血者会跟着目标移动而非保持在同一方格里。</p>\n<p>吸附状态中的觅血者处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}状态。如果觅血者此时被杀或被强行扯开，则受害者受到[[/r (1)[persistent,bleed]]]伤害。</p>\n<p>逃脱吸附或用其他手段移除觅血者则不会造成流血伤害。</p>"
+                    "description": "<p>当觅血者击中比自己体型更大的目标时，它带有倒刺的腿会紧紧勾在目标身上。这类似于一种擒抱，但是觅血者会跟着目标移动而非保持在同一方格里。</p>\n<p>吸附状态中的觅血者处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}状态。如果觅血者此时被杀或被强行扯开，则受害者受到[[/r (1)[persistent,bleed]]]伤害。</p>\n<p>逃脱吸附或用其他手段移除觅血者则不会造成流血伤害。</p>"
                 },
                 "YwidZ8QmOJ85iLcw": {
                     "name": "吸血 Blood Drain",
@@ -9302,7 +9302,7 @@
                 },
                 "plka6anhQ8CltSBM": {
                     "name": "高等紧勒 Greater Constrict",
-                    "description": "<p>[[/r (1d10+7)[bludgeoning]]]{1d10+7钝击}, @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                    "description": "<p>@Damage[(1d10+7)[bludgeoning]]{1d10+7钝击}, @Check[type:fortitude|dc:26|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
                 },
                 "VhwoW1Wd9SqC4MVO": {
                     "name": "蛇行 Slither",
@@ -9310,7 +9310,7 @@
                 },
                 "4s0p8fCnssqfycUf": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>大型, [[/r (1d10+7)[bludgeoning]]]{1d10+7钝击}, 破裂21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>大型, @Damage[(1d10+7)[bludgeoning]]{1d10+7钝击}, 破裂21</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "765hQtSimhXMwS7m": {
                     "name": "蜷曲缠缚 Wrap in Coils",
@@ -9372,7 +9372,7 @@
             "items": {
                 "PIjZTZsbQlriq5X3": {
                     "name": "巨蜈蚣毒 Giant Centipede Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, 和措手不及 (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:14]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, 和措手不及 (1轮)</p>"
                 }
             }
         },
@@ -9826,7 +9826,7 @@
                 },
                 "8wxpM0AIu2KtOOy1": {
                     "name": "地利 Terrain Advantage",
-                    "description": "<p>对于蜥蜴人防御者来说，非蜥蜴人的生物在困难地形中、以及不具有游泳速度的非蜥蜴人生物在水中时，均被视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>对于蜥蜴人防御者来说，非蜥蜴人的生物在困难地形中、以及不具有游泳速度的非蜥蜴人生物在水中时，均被视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -9857,11 +9857,11 @@
                 },
                 "A6gmij9OXIW0o9vj": {
                     "name": "巨蜈蚣毒 Giant Centipede Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and flat-footed (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段3</strong> [[/r (1d12)[poison]]]{1d12毒素伤害}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and Off-Guard (1轮)</p>"
                 },
                 "hH9lWhV3jA9NQJuG": {
                     "name": "隐秘行动 Hidden Movement",
-                    "description": "<p>若蜥蜴人斥候在其回合开始时，对于某个生物来说为@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的话，直至蜥蜴人斥候的回合结束为止，该生物在对抗蜥蜴人斥候的攻击时均被视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>若蜥蜴人斥候在其回合开始时，对于某个生物来说为@UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{无踪 Undetected}或@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的话，直至蜥蜴人斥候的回合结束为止，该生物在对抗蜥蜴人斥候的攻击时均被视为@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 },
                 "LpOv4VRyaN38UswN": {
                     "name": "偷袭 Sneak Attack",
@@ -9869,7 +9869,7 @@
                 },
                 "55Hvc61MUgVoahwb": {
                     "name": "地利 Terrain Advantage",
-                    "description": "<p>对于蜥蜴人防御者来说，非蜥蜴人的生物在困难地形中、以及不具有游泳速度的非蜥蜴人生物在水中时，均被视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>"
+                    "description": "<p>对于蜥蜴人防御者来说，非蜥蜴人的生物在困难地形中、以及不具有游泳速度的非蜥蜴人生物在水中时，均被视为处于@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>"
                 }
             }
         },
@@ -10076,7 +10076,7 @@
                 },
                 "Failure Vulnerability": {
                     "name": "反感失败 Failure Vulnerability",
-                    "description": "<p>六臂蛇魔的骄傲是她的力量源泉，所以失败能对它们造成伤害。如果六臂蛇魔它的回合使用伤害法术，或进行打击，却没有在该回合内造成任何伤害，则它在自己的回合结束时受到[[/r (3d6+10)[mental]]]{3d6+10心灵伤害}，并且指挥灵光暂时失效，直到它的下回合结束。</p>"
+                    "description": "<p>六臂蛇魔的骄傲是她的力量源泉，所以失败能对它们造成伤害。如果六臂蛇魔它的回合使用伤害法术，或进行打击，却没有在该回合内造成任何伤害，则它在自己的回合结束时受到@Damage[(3d6+10)[mental]]{3d6+10心灵伤害}，并且指挥灵光暂时失效，直到它的下回合结束。</p>"
                 },
                 "Bladestorm": {
                     "name": "剑刃风暴 Bladestorm",
@@ -10092,7 +10092,7 @@
                 },
                 "Greater Constrict": {
                     "name": "高等紧勒 Greater Constrict",
-                    "description": "<p>[[/r (2d12+13)[bludgeoning]]]{2d12+13钝击伤害}, @Check[type:fortitude|dc:39|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
+                    "description": "<p>@Damage[(2d12+13)[bludgeoning]]{2d12+13钝击伤害}, @Check[type:fortitude|dc:39|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterConstrict]</p>"
                 },
                 "Infuse Weapons": {
                     "name": "武器注能 Infuse Weapons",
@@ -10148,7 +10148,7 @@
                 },
                 "gC0TpsGsMQ5RDDau": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>超大型, [[/r (2d8+5)[bludgeoning]]]{2d8+5钝击}, 破裂20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>超大型, @Damage[(2d8+5)[bludgeoning]]{2d8+5钝击}, 破裂20</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 },
                 "JWS021oC5szbCrAS": {
                     "name": "推离15尺"
@@ -10163,11 +10163,11 @@
             "items": {
                 "ZxIVdGLdVzJ1RVHi": {
                     "name": "压碎 Mangling Rend",
-                    "description": "<p>大金刚对相同目标进行两次拳头打击，如果都命中，目标受到额外[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}，目标@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}，并且在任何速度上都有-20尺状态减值，直到下一回合。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.5roCV7EbPx1G5xOd]{效果: 压碎}</p>"
+                    "description": "<p>大金刚对相同目标进行两次拳头打击，如果都命中，目标受到额外[[/r (2d6)[bludgeoning]]]{2d6钝击伤害}，目标@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}，并且在任何速度上都有-20尺状态减值，直到下一回合。</p>\n<hr />\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.5roCV7EbPx1G5xOd]{效果: 压碎}</p>"
                 },
                 "AuM50DWRYYFugkl6": {
                     "name": "惊惧示威 Terrifying Display",
-                    "description": "<p>大金刚捶打自己的胸肌来示威。在@Template[type:emanation|distance:50]{50尺}内的生物必须经过@Check[type:will|dc:27|name:Frightening Display]检定。</p>\n<p>如果一个生物受到该能力影响而获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态，则视为对大金刚和其他猩猩@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响且在一分钟之内免疫该能力。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}直到下回合。</p>"
+                    "description": "<p>大金刚捶打自己的胸肌来示威。在@Template[type:emanation|distance:50]{50尺}内的生物必须经过@Check[type:will|dc:27|name:Frightening Display]检定。</p>\n<p>如果一个生物受到该能力影响而获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}状态，则视为对大金刚和其他猩猩@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</p>\n<hr />\n<p><strong>大成功</strong> 该生物不受影响且在一分钟之内免疫该能力。</p>\n<p><strong>成功</strong> 该生物不受影响。</p>\n<p><strong>失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。</p>\n<p><strong>大失败</strong> 该生物获得@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}直到下回合。</p>"
                 }
             }
         },
@@ -10205,7 +10205,7 @@
                 },
                 "NDdkhcyKoaZMjFh6": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d8+8)[bludgeoning]]]{1d8+8钝击伤害}, @Check[type:fortitude|dc:26|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d8+8)[bludgeoning]]{1d8+8钝击伤害}, @Check[type:fortitude|dc:26|basic:true]豁免</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 }
             }
         },
@@ -10270,7 +10270,7 @@
                 },
                 "Swallow Whole": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>小型, [[/r (2d4+4)[bludgeoning]]]伤害, 破裂14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>小型, @Damage[(2d4+4)[bludgeoning]]伤害, 破裂14</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
@@ -10384,7 +10384,7 @@
                 },
                 "o7HPbnFCe1XPngQQ": {
                     "name": "变形 Change Shape",
-                    "description": "<ul>\n<li><strong>蝙蝠 Bat</strong>\n<ul>\n<li><strong>感官</strong> 回声定位40尺</li>\n<li><strong>速度</strong> 15尺, 飞行30尺</li>\n<li><strong>近战</strong> 尖牙 [[/r 1d20+7 #Fangs]]{+7}/[[/r 1d20+3 #Fangs]]{+3}/[[/r 1d20-1 #Fangs]]{-1} (灵巧), <strong>伤害</strong> [[/r (1d4-1)[piercing]]]{1d4-1穿刺伤害}</li>\n<li><strong>近战</strong> 翼击 [[/r 1d20+7 #Wing]]{+7}/[[/r 1d20+3 #Wing]]{+3}/[[/r 1d20-1 #Wing]]{-1} (灵巧), <strong>伤害</strong> [[/r (1d4-1)[bludgeoning]]]{1d4-1钝击伤害}</li>\n</ul>\n</li>\n<li><strong>蜈蚣 Centipede</strong>\n<ul>\n<li><strong>速度</strong> 10尺, 攀爬10尺</li>\n<li><strong>近战</strong> 虫颚 [[/r 1d20+7 #Mandibles]]{+7}/[[/r 1d20+2 #Mandibles]]{+2}/[[/r 1d20-3 #Mandibles]]{-3} (毒素), <strong>伤害</strong> [[/r (1)[piercing]+(1d4)[poison]]]{1穿刺伤害 + 1d4毒素伤害}</li>\n</ul>\n</li>\n<li><strong>蟾蜍 Toad</strong>\n<ul>\n<li><strong>感官</strong> @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉} (模糊感官) 30尺</li>\n<li><strong>速度</strong> 5尺</li>\n<li><strong>近战</strong> 啃咬 [[/r 1d20+7 #Jaws]]{+7}/[[/r 1d20+2 #Jaws]]{+2}/[[/r 1d20-3 #Jaws]]{-3}, <strong>伤害</strong> [[/r (1)[bludgeoning]]]{1钝击伤害}</li>\n</ul>\n</li>\n<li><strong>狼 Wolf</strong>\n<ul>\n<li><strong>体型</strong> 中型</li>\n<li><strong>感官</strong> @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉} (模糊感官) 30尺</li>\n<li><strong>速度</strong> 40尺, 攀爬10尺</li>\n<li><strong>近战</strong> 啃咬 [[/r 1d20+7 #Jaws]]{+7}/[[/r 1d20+2 #Jaws]]{+2}/[[/r 1d20-3 #Jaws]]{-3}, <strong>伤害</strong> [[/r (1d10-1)[piercing]]]{1d10-1穿刺伤害} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
+                    "description": "<ul>\n<li><strong>蝙蝠 Bat</strong>\n<ul>\n<li><strong>感官</strong> 回声定位40尺</li>\n<li><strong>速度</strong> 15尺, 飞行30尺</li>\n<li><strong>近战</strong> 尖牙 [[/r 1d20+7 #Fangs]]{+7}/[[/r 1d20+3 #Fangs]]{+3}/[[/r 1d20-1 #Fangs]]{-1} (灵巧), <strong>伤害</strong> @Damage[(1d4-1)[piercing]]{1d4-1穿刺伤害}</li>\n<li><strong>近战</strong> 翼击 [[/r 1d20+7 #Wing]]{+7}/[[/r 1d20+3 #Wing]]{+3}/[[/r 1d20-1 #Wing]]{-1} (灵巧), <strong>伤害</strong> @Damage[(1d4-1)[bludgeoning]]{1d4-1钝击伤害}</li>\n</ul>\n</li>\n<li><strong>蜈蚣 Centipede</strong>\n<ul>\n<li><strong>速度</strong> 10尺, 攀爬10尺</li>\n<li><strong>近战</strong> 虫颚 [[/r 1d20+7 #Mandibles]]{+7}/[[/r 1d20+2 #Mandibles]]{+2}/[[/r 1d20-3 #Mandibles]]{-3} (毒素), <strong>伤害</strong> [[/r (1)[piercing]+(1d4)[poison]]]{1穿刺伤害 + 1d4毒素伤害}</li>\n</ul>\n</li>\n<li><strong>蟾蜍 Toad</strong>\n<ul>\n<li><strong>感官</strong> @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉} (模糊感官) 30尺</li>\n<li><strong>速度</strong> 5尺</li>\n<li><strong>近战</strong> 啃咬 [[/r 1d20+7 #Jaws]]{+7}/[[/r 1d20+2 #Jaws]]{+2}/[[/r 1d20-3 #Jaws]]{-3}, <strong>伤害</strong> [[/r (1)[bludgeoning]]]{1钝击伤害}</li>\n</ul>\n</li>\n<li><strong>狼 Wolf</strong>\n<ul>\n<li><strong>体型</strong> 中型</li>\n<li><strong>感官</strong> @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r]{灵敏嗅觉} (模糊感官) 30尺</li>\n<li><strong>速度</strong> 40尺, 攀爬10尺</li>\n<li><strong>近战</strong> 啃咬 [[/r 1d20+7 #Jaws]]{+7}/[[/r 1d20+2 #Jaws]]{+2}/[[/r 1d20-3 #Jaws]]{-3}, <strong>伤害</strong> @Damage[(1d10-1)[piercing]]{1d10-1穿刺伤害} 附带@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{击倒 Knockdown}</li>\n</ul>\n</li>\n</ul>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
                 "PJbq8TKDuFGf9n7l": {
                     "name": "小恶魔毒液 Quasit Venom",
@@ -10407,7 +10407,7 @@
                 },
                 "ryo9HmpaThFAUxD6": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r (1d12+6)[bludgeoning]]]{1d12+6钝击}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[(1d12+6)[bludgeoning]]{1d12+6钝击}, @Check[type:fortitude|dc:25|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 }
             }
         },
@@ -10468,11 +10468,11 @@
                 },
                 "Constrict": {
                     "name": "紧勒 Constrict",
-                    "description": "<p>[[/r 1d6[bludgeoning]]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
+                    "description": "<p>@Damage[1d6[bludgeoning]], @Check[type:fortitude|dc:17|basic:true]</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
                 "We6LladGR4C687q0": {
                     "name": "礁爪怪毒 Reefclaw Venom",
-                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> [[/r 1d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> [[/r 1d6[poison]]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
+                    "description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:17]</p>\n<hr />\n<p><strong>最大持续时间</strong> 4轮</p>\n<p><strong>阶段1</strong> @Damage[1d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[1d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2} (1轮)</p>"
                 }
             }
         },
@@ -11329,7 +11329,7 @@
                 },
                 "SZafYEjKmu9zC1XL": {
                     "name": "法术伏击 Spell Ambush",
-                    "description": "<p>对夜鬼婆@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed}的生物在对抗夜鬼婆的法术时，其豁免检定和DC有-2环境减值。</p>"
+                    "description": "<p>对夜鬼婆@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的生物在对抗夜鬼婆的法术时，其豁免检定和DC有-2环境减值。</p>"
                 },
                 "wya8y6adOGTfI5jX": {
                     "name": "变身 Change Shape",
@@ -11361,7 +11361,7 @@
             "items": {
                 "wYcs9eIcJSh0thsP": {
                     "name": "蜈蚣群毒 Centipede Swarm Venom",
-                    "description": "<p><strong>豁免</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害} 和 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}、@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Flat-Footed} (1轮)</p>"
+                    "description": "<p><strong>豁免</strong> @Check[type:fortitude|dc:20]</p>\n<hr />\n<p><strong>最大持续</strong> 6轮</p>\n<p><strong>阶段1</strong> [[/r (1d6)[poison]]]{1d6毒素伤害} 和 @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d8)[poison]]]{1d8毒素伤害}、@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>"
                 },
                 "e6gQA5jXDMbCKyDj": {
                     "name": "虫群噬咬 Swarming Bites",
@@ -11613,7 +11613,7 @@
                 },
                 "Saaz9FC4uuWqbzUs": {
                     "name": "活吞 Swallow Whole",
-                    "description": "<p>大型,[[/r (2d8+7)[bludgeoning]]]{ 2d8+7 钝击},破裂Rupture 18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
+                    "description": "<p>大型,@Damage[(2d8+7)[bludgeoning]]{ 2d8+7 钝击},破裂Rupture 18</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>"
                 }
             }
         },
