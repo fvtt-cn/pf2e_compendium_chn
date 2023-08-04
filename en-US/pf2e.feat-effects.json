@@ -273,7 +273,7 @@
             "name": "Effect: Great Tengu Form"
         },
         "Stance: Stumbling Stance": {
-            "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.7FRYyKXDKjGoANYj]{Stumbling Stance}</p>\n<p>You enter a seemingly unfocused stance that mimics the movements of the inebriated—bobbing, weaving, leaving false openings, and distracting your enemies from your true movements. While in this stance, you gain a +1 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint}.</p>\n<p>The only Strikes you can make are stumbling swing unarmed attacks. These deal 1d8 bludgeoning damage; are in the brawling group; and have the agile, backstabber, finesse, nonlethal, and unarmed traits. If an enemy hits you with a melee Strike while in this stance, it becomes Off-Guard against the next stumbling swing Strike you make against it before the end of your next turn.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.7FRYyKXDKjGoANYj]{Stumbling Stance}</p>\n<p>You enter a seemingly unfocused stance that mimics the movements of the inebriated—bobbing, weaving, leaving false openings, and distracting your enemies from your true movements. While in this stance, you gain a +1 circumstance bonus to Deception checks to @UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]{Feint}.</p>\n<p>The only Strikes you can make are stumbling swing unarmed attacks. These deal 1d8 bludgeoning damage; are in the brawling group; and have the agile, backstabber, finesse, nonlethal, and unarmed traits. If an enemy hits you with a melee Strike while in this stance, it becomes off-guard against the next stumbling swing Strike you make against it before the end of your next turn.</p>",
             "name": "Stance: Stumbling Stance"
         },
         "Effect: Heroes' Call": {
@@ -287,6 +287,10 @@
         "Effect: Necrotic Infusion": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.6erzXaxxvcXYnL9H]{Necrotic Infusion}.</p>\n<p>If the next action you use is to cast <em>@UUID[Compendium.pf2e.spells-srd.Item.wdA52JJnsuQWeyqz]{Harm}</em> to restore Hit Points to a single undead creature, the target then deals an additional 1d6 negative damage with its melee weapons and unarmed attacks until the end of its next turn. If the <em>harm</em> spell is at least 5th level, this damage increases to 2d6, and if the <em>harm</em> spell is at least 8th level, the damage increases to 3d6.</p>",
             "name": "Effect: Necrotic Infusion"
+        },
+        "Effect: Replenishment of War": {
+            "description": "<p>You gain a number of temporary Hit Points equal to half your level, or equal to your level if the Strike was a critical hit. These temporary Hit Points last until the start of your next turn.</p>",
+            "name": "Effect: Replenishment of War"
         },
         "Effect: Align Armament (Good)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.xtXWw3cUnVB25XSV]{Align Armament}.</p>\n<p>For 1 round, that weapon deals an additional 1d6 good damage.</p>",
@@ -623,6 +627,9 @@
         "Effect: Renewed Vigor": {
             "description": "<p>You gain temporary Hit Points equal to half your level plus your Constitution modifier.</p>",
             "name": "Effect: Renewed Vigor"
+        },
+        "Effect: Root Magic": {
+            "name": "Effect: Root Magic"
         },
         "Effect: Avenge in Glory": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.feats-srd.Item.gKDRnsBPBdhJB0FI]{Avenge in Glory}</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Access</strong> mountain dwarf ethnicity</p>\n<p><strong>Trigger</strong> An ally within 30 feet gains the @UUID[Compendium.pf2e.conditionitems.Item.yZRUzMqrMmfLu0V1]{Dying} condition.</p>\n<hr />\n<p>You honor your ally's life, gaining temporary Hit Points equal to your level for 1 minute. As long as you have these temporary Hit Points, you gain a +1 circumstance bonus to attack and damage rolls.</p>\n<p>Implemented Effects:</p>\n<ul>\n<li>Temporary hitpoints based on level</li>\n<li>Sets a circumstance bonus of +1 to attack and damage rolls</li>\n</ul>",
@@ -1023,7 +1030,7 @@
             "name": "Effect: Harsh Judgement"
         },
         "Effect: Daydream Trance": {
-            "description": "<p>You take a -1 penalty to Perception checks and initiative rolls and gain a +1 status bonus to Will saves. This bonus increases to +2 against mental effects. If you're legendary in Occultism, the bonus against mental effects increases to +3 .</p>",
+            "description": "<p>You take a -1 penalty to Perception checks and initiative rolls and gain a +1 status bonus to Will saves. This bonus increases to +2 against mental effects. If you're legendary in Occultism, the bonus against mental effects increases to +3.</p>",
             "name": "Effect: Daydream Trance"
         },
         "Effect: Titan's Stature": {
@@ -1342,6 +1349,10 @@
         "Effect: Demonic Blood Magic (Target)": {
             "description": "<p>The corruption of sin weakens a target's defenses. A target takes a -1 status penalty to AC for 1 round.</p>",
             "name": "Effect: Demonic Blood Magic (Target)"
+        },
+        "Effect: Metallic Skin": {
+            "description": "<p>You fortify your natural resistances with elemental metal, covering your skin with thick metal. You gain a +2 status bonus to AC and resistance 10 to physical damage (except adamantine), but you take a –10-foot penalty to Speed. If you take fire damage while this ability is active, until the end of your next turn, you deal an additional @Damage[2d6[fire]] damage with all your unarmed melee Strikes.</p>",
+            "name": "Effect: Metallic Skin"
         },
         "Stance: Rough Terrain Stance": {
             "description": "<p>Granted by: @UUID[Compendium.pf2e.feats-srd.Item.O0POcPD2aELYTcIK]{Rough Terrain Stance}</p>\n<hr />\n<p><strong>Requirements</strong> You gained a terrain attunement benefit this turn.</p>\n<hr />\n<p>You enter a stance that makes it difficult to move around you. Each square adjacent to you becomes difficult terrain that matches the terrain attunement you gained (rime forms in an arctic terrain, momentary undergrowth shoots up in a forest terrain, and so on). You ignore this difficult terrain.</p>\n<p>This stance ends if you move into a different type of terrain.</p>",
