@@ -30794,6 +30794,177 @@
             ],
             "description": "<p><strong>触发</strong> 你进入顽强架势</p>\n<hr />\n<p>通过扎根于所处的位置，你能够聚集身体的自然恢复力来让其运作得更快。你获得等同于等级的快速治疗。此快速治疗持续1分钟，或直到你结束你的顽强架势，以先满足的为准。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.p0S3VHkRgMye7RSI]{效果：聚集苔藓}</p>",
             "name": "聚集苔藓 Gathering Moss"
+        },
+        "Voice of Elements": {
+            "name": "元素之音 Voice of Elements",
+            "description": "<p>你可以用你引导的元素的秘密音调说话，在火焰的噼啪声、石头的研磨声中找到只言片语。你的御能灵光在启动时给与你以下三种好处。</p>\n<ul>\n<li>你能够说出和你统御元素匹配的语言（气元素语 ，土元素语 ，火元素语 ，金元素语 ，水元素语 ，木元素语 ）。</li>\n<li>你能在基础层面上和无心智元素交流，如果它们的特征和你的统御元素之一相匹配，或者完全由你的其中一种统御元素构成。这允许你使用交涉技能对其@UUID[Compendium.pf2e.actionspf2e.Item.OX4fy22hQgUHDr0q]{建立印象 Make an Impression}，并简单地对其@UUID[Compendium.pf2e.actionspf2e.Item.DCb62iCBrJXy0Ik6]{提出请求 Requests}。</li>\n<li>当你对与你统御元素匹配的元素尝试基于魅力的技能检定时，你获得+2环境加值。</li>\n</ul>"
+        },
+        "Two-Element Infusion": {
+            "name": "双元注能 Two-Element Infusion",
+            "prerequisites": [
+                {
+                    "value": "两种或更多统御元素"
+                }
+            ],
+            "description": "<p>你将一种元素和另一种元素的优势结合起来。如果你使用的下一个动作是@UUID[Compendium.pf2e.actionspf2e.Item.6lbr0Jnv0zMB5uGb]{元素冲击 Elemental Blast}，选择两种你的统御元素，而非原本的一种。该冲击获得两种元素的特征，并且使用两种元素中的最高射程和最大伤害骰面。该冲击的一半伤害使用第一种元素的伤害类型，另一半伤害则使用第二种元素的伤害类型。如果伤害总和是奇数，由你选择哪种伤害更高。在确定伤害量之后，再应用减半、翻倍、抗力、弱点和其他会改变伤害量的计算。如果某种元素可以造成不止一种伤害，你依然可以选择造成何种伤害类型。你可以获得两种元素的附加效果，例如元素重击汇流的效果。</p>"
+        },
+        "Counter Element": {
+            "prerequisites": [
+                {
+                    "value": "只有一种统御元素"
+                }
+            ],
+            "name": "反制元素 Counter Element",
+            "description": "<p><strong>触发</strong> 你被某个和你统御元素具有相同特征的效果瞄准，或处于上述效果区域中，并且该效果来源于敌人或危害。</p>\n<hr />\n<p>你对单一元素的钻研让你可以尝试获得对它的控制，即便该元素为另一个实体服务。你尝试反制该效果，使用你的御能师职业DC-10作为你的反制调整值，并且将本涌动的等于减半（向上取整）作为反制环级。如果你成功反制效果，你只能保护你自己，除非你反制检定大成功。</p>\n<hr />\n<p><strong>等级 (12级)</strong> 如果你成功反制了该效果，你可以让它瞄准或影响你30尺内的其他生物。如果你在反制检定中大成功，你还可以重新指定该效果的复数目标或整个区域。</p>"
+        },
+        "Command Elemental": {
+            "name": "命令元素 Command Elemental",
+            "description": "<p>你握住了元素生物内部的生命，并使之屈从于你的意志。选择一个与你统御元素相匹配的特征，并瞄准30尺内具有该特征的元素生物。如果该元素的等级小于等于你的等级-3，该元素将被你控制；如果该元素的等级大于等于你的等级-2，在你维持效果期间该元素将陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。如果目标已经在某人的@UUID[Compendium.pf2e.conditionitems.Item.9qGBRpbX9NEwtAAr]{控制 Controlled}下，它不会被该能力缓慢，并且控制它的生物同样也进行豁免骰，以较高的作为豁免结果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响并且临时免疫24小时。</p>\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 在你维持法术期间，元素生物被控制或缓慢，最多1分钟。如果你或任何盟友攻击该元素，此效果结束。</p>\n<p><strong>大失败</strong> 类似失败，但是你能维持该涌动最多1小时。</p>"
+        },
+        "Whisper on the Wind": {
+            "name": "风之低语 Whisper on the Wind",
+            "description": "<p>你低声说话，一阵柔和的风把你的话带到很远的地方。这获得射程500尺的<em>@UUID[Compendium.pf2e.spells-srd.Item.vLzFcIaSXs7YTIqJ]{传讯术 Message}</em>效果，并且它只能以被空气包围的生物为目标。如果你在传讯术开头指定目标的名字，则你和目标不需要看见彼此，你们之间也不需要效果线。</p>\n<hr />\n<p><strong>等级 (4级)</strong> 射程1英里。</p>\n<p><strong>等级 (14级)</strong> 射程整个星球，外加气元素位面。</p>"
+        },
+        "Kinetic Pinnacle": {
+            "name": "御能尖峰 Kinetic Pinnacle",
+            "description": "<p>你身上元素流动的速度无人能及。你永久@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}。你只能用额外动作来@UUID[Compendium.pf2e.actionspf2e.Item.g8QrV39TmZfkbXgE]{引导元素 Channel Elements}、使用单动作@UUID[Compendium.pf2e.actionspf2e.Item.6lbr0Jnv0zMB5uGb]{元素冲击 Elemental Blast}、或使用单动作架势涌动。</p>"
+        },
+        "Extended Kinesis": {
+            "prerequisites": [
+                {
+                    "value": "基础御术"
+                }
+            ],
+            "description": "<p>你改进对元素的控制力。将以下选项添加到基础御术中。</p>\n<ul>\n<li><strong>增殖 Proliferate</strong> 你使一个存在的元素扩张。这类似于生成（Generate）选项，与之不同的是你可以有以下选择：在其源头或相邻方格中创造相同数量的元素，或让元素扩张以填充它所在的方格（例如让火苗更旺盛或让小树枝变为树苗）。在你增殖某种元素之后，它会对环境做出自然反应——例如，在空气稀薄环境中增殖的水会四处飞溅。只能影响自然形式的元素，不能影响持久的、人造的物品。</li>\n<li><strong>调节 Regulate</strong> （仅气、火、金或水可选）你改变现有元素的温度，让其变冷或变热。这可以熄灭火焰或把水变成冰或蒸汽。在这种变化之后，除非你维持该涌动，否则元素会自然变冷或变暖。一个足够冷或足够热的物品（由GM决定）可以作为临时武器使用，除了GM为临时武器确定的伤害外，还能造成额外[[/r 1[cold]]]伤害或额外[[/r 1[fire]]]伤害。</li>\n<li><strong>塑形 Sculpt</strong> （仅土、金或木可选）你将现有元素重塑为由你设计的小物件。仔细观察，它显得粗糙而不自然。被塑形的元素可以成为一个功能性的短工具（或者长工具，前提是你的基础御术能够影响负载1或以上的元素）。它太脆弱，也不自然，因此不能作为武器，也不具备任何货币价值。\n\n</li>\n</ul>"
+        },
+        "Versatile Blasts": {
+            "name": "多变冲击 Versatile Blasts",
+            "description": "<p>进入更广阔的元素表现领域，你可以用元素创造稀有形态的元素冲击。将以下伤害类型添加到你可以选择的元素冲击中：</p>\n<ul>\n<li><strong>气元素</strong> 寒冷</li>\n<li><strong>土元素</strong> 毒素</li>\n<li><strong>火元素</strong> 寒冷</li>\n<li><strong>金元素</strong> 电击</li>\n<li><strong>水元素</strong> 酸液</li>\n<li><strong>木元素</strong> 毒素</li>\n</ul>"
+        },
+        "Rapid Reattunement": {
+            "name": "快速调谐 Rapid Reattunement",
+            "prerequisites": [
+                {
+                    "value": "回流元素"
+                }
+            ],
+            "description": "<p>你花费10分钟时间，在元素恍惚中重新调整你的元素连接。你替换你的一项涌动专长，这个过程类似回流元素职业特性。如果你拥有双重回流职业特性，你可以替换两个涌动专长而非一个。</p>"
+        },
+        "Omnikinesis": {
+            "name": "万力全能 Omnikinesis",
+            "prerequisites": [
+                {
+                    "value": "回流元素"
+                }
+            ],
+            "description": "<p>你能仅凭一个念头就重新调整你的元门。你替换你的一项涌动专长，这个过程类似回流元素职业特性。但是，即便你拥有双重回流职业特性，你依然也只能替换一个。</p>"
+        },
+        "Weapon Infusion": {
+            "name": "武器注能 Weapon Infusion",
+            "description": "<p>你可以将元素冲击塑造成武器的形态，例如旋风制成的剑、射出火焰的弓。如果你的下个动作是元素冲击，为它选择一种武器形态。你可以将这次元素冲击的伤害类型改为钝击、穿刺或挥砍——无论哪种武器形态适合——你可以根据远程还是近战冲击来选择其他变形。</p>\n<ul>\n<li><strong>近战</strong> 添加由你选择的以下特征之一：灵巧、回摆、叠劲、长触及、横扫。</li>\n<li><strong>远程</strong> 选择以下三种选项之一：射程增量100尺并且远射30尺、射程增量50尺并且有助进特征、或射程增量20尺并且有投掷特征。</li>\n</ul>"
+        },
+        "Imperious Aura": {
+            "name": "霸气灵光 Imperious Aura",
+            "prerequisites": [
+                {
+                    "value": "你具有一个或更多的能够影响你的御能灵光的架势涌动"
+                }
+            ],
+            "description": "<p><strong>触发</strong> 你的回合开始</p>\n<hr />\n<p>你光芒四射、气势逼人的御能灵光标志着你是真正的元素之子。立即使用一种正在影响你御能灵光的架势涌动。</p>"
+        },
+        "Elemental Familiar (Kineticist)": {
+            "name": "元素魔宠-御能师 Elemental Familiar (Kineticist)",
+            "description": "<p>由元素物质构成的小型生物从你的元门里涌现。这头元素魔宠看上去是由你的统御元素构成的小型生物，虽然外型上会有一些反常或特色。就像其他魔宠一样，你的元素魔宠能够在多项任务与冒险过程中为你提供协助。你获得一只元素魔宠，它必须具有一项你统御元素的特征。若你可以引导多种元素，你在每日准备时，都可以将你为魔宠选择的元素替换成你的另一种统御元素。魔宠使用你的体质调整值来决定它的察觉、特技与隐秘调整值。</p>"
+        },
+        "Four Winds": {
+            "name": "四风推进 Four Winds",
+            "description": "<p>你模仿阿涅摩伊（Anemoi）——四风君主——推动四个生物。瞄准你30尺内最多4个自愿生物。这些生物中的每一个都能最多以半速进行一次行走。如果目标拥有飞行速度，则可以最多以飞行速度的一半进行一次飞行。</p>\n<hr />\n<p><strong>等级 (10级)</strong> 目标以全速移动，取代原本的半速。</p>"
+        },
+        "Aerial Boomerang": {
+            "name": "气流回旋镖 Aerial Boomerang",
+            "description": "<p>一道锐利风刃从你激射而出，范围@Template[type:line|distance:60]。区域中的每个生物受到@Damage[2d4[slashing]]伤害，以基础反射豁免对抗你的职业DC。在线型范围的最后一个方格，回旋镖会在原地旋转，持续到你的下个回合结束。任何在该方格内结束他的回合的生物，必须对回旋镖进行豁免。</p>\n<p>在你的下个回合，你可以使用一个具有专注特征的单动作，让回旋镖返回你。它沿着直线从停留方格回到你的当前位置，和初始线型效果相同，然后涌动结束。你必须和回旋镖之间有效果线，并且距离它不能超过60尺。</p>\n<hr />\n<p><strong>等级 (+2)</strong> 伤害增加[[/r 1d4]]。</p>"
+        },
+        "Elemental Transformation": {
+            "prerequisites": [
+                {
+                    "value": "只有一种统御元素"
+                }
+            ],
+            "name": "元素变身 Elemental Transformation",
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的元门尚未启动。</p>\n<hr />\n<p>你打开你的元门，但是并不启动你的御能灵光，而是被压倒性的元素能量淹没。你受到法术<em>@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}</em>效果的影响，其特征和你的统御元素相同。你可以将其升阶到最多不超过你等级一半（向上取整）的任何环级。</p>"
+        },
+        "Elemental Overlap": {
+            "name": "元素搭接 Elemental Overlap",
+            "prerequisites": [
+                {
+                    "value": "只有一种统御元素"
+                }
+            ],
+            "description": "<p>虽然你专注于某一元素，但你学会将该元素和另一种元素混合在一起。获得一个包含你统御元素特征的复合涌动专长。你可以使用该涌动，即便你不能引导它的全部元素。该专长的等级必须低于你选择元素搭接时的等级。</p>\n<hr />\n<p><strong>特殊</strong> 你可以多次选择此专长，每次选择不同的涌动专长。</p>"
+        },
+        "Elemental Apotheosis": {
+            "prerequisites": [
+                {
+                    "value": "滋养之门"
+                },
+                {
+                    "value": "只有一种统御元素"
+                }
+            ],
+            "name": "元素升华 Elemental Apotheosis",
+            "description": "<p>你呈现出某种元素的面容，展现出对应元素的元素化形态。你获得<em>@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}</em>法术中所列出的任意速度，并且如果你没有黑暗视觉，你获得<em>@UUID[Compendium.pf2e.ancestryfeatures.Item.HHVQDp61ehcpdiU8]{黑暗视觉 Darkvision}</em>。你还获得元素特征和你所选元素对应的特征。</p>"
+        },
+        "Kinetic Activation": {
+            "name": "御能激发 Kinetic Activation",
+            "description": "<p>比如念咒和手势，你可以使用你的元门直接激发魔法物品的潜能。你可以启动那些需要你能够@UUID[Compendium.pf2e.actionspf2e.Item.aBQ8ajvEBByv45yz]{施法 Cast a Spell}的魔法物品，只要通过该物品施放的法术具有和你统御元素相同的特征；例如，如果你引导火元素，你能启动<em>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{火球术 Fireball}卷轴</em>。对于任何需要使用法术攻击骰或法术DC的物品效果，你可以用你的涌动攻击骰和职业DC来代替。</p>\n<p>你也可以准备一根至少有一种合适特征的法杖，使用你等级的一半（向上取整）来决你向法杖添加的充能数量。这不能允许你施放那些没有你统御元素特征的法术，也无法给你带来准备施法者或自发施法者的额外好处。</p>"
+        },
+        "Air Cushion": {
+            "name": "气垫缓冲 Air Cushion",
+            "description": "<p><strong>触发</strong> 一个60尺内的生物正在坠落</p>\n<hr />\n<p>气流向上托起目标，让其下落速度减缓到每轮60尺。当目标到达地面，气垫效果结束，并且生物不会因为坠落而受到伤害。如果生物在1分钟内没有抵达地面，气垫会失效，但是在气垫生效的那1分钟内，生物下落的任何距离都不计入该生物受到的坠落伤害中。当你有一个气垫缓冲效果正在生效时，你不能再次使用气垫缓冲。</p>\n<hr />\n<p><strong>等级 (8级)</strong> 射程120尺，并且你能以一个反应动作为最多5个自愿生物创造气垫。</p>"
+        },
+        "Fearsome Familiar": {
+            "name": "可怖魔宠 Fearsome Familiar",
+            "prerequisites": [
+                {
+                    "value": "一只魔宠"
+                }
+            ],
+            "description": "<p>你的元素魔宠与来自相同元素位面的元素交换位置。召唤一个具有元素特征并且等级不高于你等级-4级的常见生物。这个生物出现在你魔宠的空间内，并且你的魔宠在该涌动的持续时间内暂时消失。你能维持此涌动最多1分钟。当涌动结束时，魔宠出现在被召唤的元素所占据的方格内。魔宠通常只能偶尔忍受此过程——如果你每天对你魔宠使用该涌动超过1次，则它会在第二次返回时死亡。</p>"
+        },
+        "Aura Shaping": {
+            "name": "灵光塑形 Aura Shaping",
+            "description": "<p>你能控制你御能灵光的大小。你能让御能灵光的范围从@Template[type:emanation|distance:5]到@Template[type:emanation|distance:20]之间变化（但只能是5的倍数）。当你使用引导元素时，选择它的大小，并且每当你使用影响你灵光的架势涌动时可以再次改变它的大小。当你15级和20级时，你都能将可选的最大范围再增加5尺。</p>"
+        },
+        "Air Shroud": {
+            "name": "气流包裹 Air Shroud",
+            "description": "<p>湍流的空气充斥着你的御能灵光。这不会取代其他物质，但可以为御能灵光中所有需要呼吸的生物提供空气。使用远程武器的攻击，如果穿过你的御能灵光，则攻击骰有-1环境减值。你御能灵光中的气流对于除你之外的飞行生物来说是困难地形。</p>"
+        },
+        "Purify Element": {
+            "name": "净化元素 Purify Element",
+            "description": "<p>你将某个元素变为最纯粹的形式。选择你的统御元素之一，并且瞄准30尺内该元素的一个立方尺部分（1立方尺的液体大约8加仑）。你可以清除元素中的毒物和污染，以及侵入元素中的任何物质，例如土壤中的植物根须。这不能改变材料的纯度、改变对象的形态、或改变元素结构的完整性。如果净化将移除炼金或魔法污染（例如毒素或诅咒），净化元素将尝试反制该杂质，使用你的职业DC-10尝试一次反制检定。如果未能成功反制特定的杂质，那么之后你再使用净化元素对该杂质进行的更多次尝试都会失败。</p>"
+        },
+        "Nourishing Gate": {
+            "name": "滋养之门 Nourishing Gate",
+            "description": "<p>你可以靠一滴元素露珠或来自火元素位面的轻微火花来维持生命。你在对抗毒素、睡眠和将要让你@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}的效果时，豁免有+2状态加值。你不需要呼吸、进食或睡觉，但每24小时内必须进行一次整晚休息才能进行日常准备。在这段时间里，你保持清醒和警觉，但必须花时间进行冥想或调谐你的元门，而不能从事其他复杂活动。每个御能师都以自己的方式进行调谐。</p>"
+        },
+        "Chain Infusion": {
+            "name": "连锁注能 Chain Infusion",
+            "description": "<p>冲击中的元素不断重组，继续前进，无论撞上多少阻碍。如果你的下个动作是@UUID[Compendium.pf2e.actionspf2e.Item.6lbr0Jnv0zMB5uGb]{元素冲击 Elemental Blast}，并且它成功命中，你尝试从该目标对其他生物尝试一次新的远程元素冲击，以命中目标为源点计算射程。如果再次命中，你可以继续以此方式继续连锁冲击。你的多重攻击减值对第一次冲击之后的其他元素冲击正常生效。你总共最多可以进行5次元素冲击，但是同一个生物只能被瞄准一次。你只投掷一次伤害，并且将其应用于所有命中的生物（如果第一次是近战冲击，你依然将力量调整值应用于该次冲击，但是不应用于其余远程冲击）。</p>"
+        },
+        "Effortless Impulse": {
+            "name": "轻松涌动 Effortless Impulse",
+            "description": "<p><strong>触发</strong> 你的回合开始。</p>\n<hr />\n<p>来自元门的稳定涟漪维持着你的涌动。你立即维持一个可维持的、正在生效的涌动。</p>"
+        },
+        "Safe Elements": {
+            "name": "安全元素 Safe Elements",
+            "description": "<p>大自然危险而狂野，但你已经找到降低风险的方法。当你引导元素或使用一种会影响你御能灵光的架势涌动时，你可以指定数个生物，最多不超过你的体质调整至数量（最少1个生物）。选择他们是否免疫你御能灵光提供的增益，或者免疫你御能灵光造成的伤害和减益。你在指定某个生物的时候不需要能够看见他，他也不需要位于你的御能灵光中，但你不能指定一个未发现的生物。</p>\n<p>此外，你获得@UUID[Compendium.pf2e.actionspf2e.Item.oAGawsNqr6FfMrSG]{安抚注能 Pacifying Infusion}动作。</p>"
+        },
+        "Base Kinesis": {
+            "name": "基础御术 Base Kinesis"
+        },
+        "Lightning Dash": {
+            "name": "闪电突进 Lightning Dash",
+            "description": "<p>电光火石之间，你变为纯粹的闪电，向前突进，电击任何拦路之人。你在@Template[type:line|distance:30]区域推动自己前进。你可以在此行动中穿过任何生物，并且此移动不会触发由移动动作触发的反应动作。被你穿过的每个生物都会受到@Damage[2d12[electricity]]伤害，进行基础反射豁免对抗你的职业DC。你将在线形区域的最后一个方格变回正常形态。如果此时你在空中，除非你拥有飞行速度，否则你会开始坠落。</p>\n<hr />\n<p><strong>等级 (+3)</strong> 线形区域长度增加5尺，伤害增加[[/r 1d12]]。</p>"
         }
     },
     "mapping": {
