@@ -1630,7 +1630,7 @@
         },
         "Augury": {
             "name": "卜筮术 Augury",
-            "description": "<p>你瞥见未来的模糊片段。在施放该法术时，询问一个特定行为的结果。该法术可以预测30分钟内的未来的结果，并且会揭示GM认为最为可能的后续结果。</p>\n<ul>\n<li><strong>吉</strong> 该结果将会是好的。</li>\n<li><strong>凶</strong> 该结果可能不妙。</li>\n<li><strong>吉且凶</strong> 该结果好坏参半。</li>\n<li><strong>平</strong> 不会有明显好或坏的结果。</li>\n</ul>\n<p>GM暗骰@Check[type:flat|dc:6|traits:secret]检定。如果失败，结果永远是 \"平\" 。这令 \"平\" 的结果究竟是否准确无法被判明。如果任何人询问和先前施放的卜筮术相同的主题，使用第一次施放时得到的暗骰结果。如果环境情况发生变化，有可能会得到不同的结果。</p>",
+            "description": "<p>你能够粗略地窥见未来。在施放该法术期间，询问特定行动方式的结果。法术能够至多未来30分钟内的结果，并使用后述结果揭示出GM得出的最有可能的猜想：吉、凶、兼（结果将是好与坏的混合）、以及平（不会产生特别好或者坏的结果）。</p>\n<p>GM投掷一次DC为@Check[type:flat|dc:6]的秘密纯骰检定。失败时，结果总是“平”。这使得它人无法判断“平”的结果究竟是否准确。若有任何人在另一次施法过程中询问的问题与首次卜筮术具有相同的主题，那么GM要使用与首次施法相同的秘密检定结果。不过，在情况改变时，也有可能得到不同的结果。</p>",
             "time": "10分钟"
         },
         "Possession": {
@@ -8645,7 +8645,7 @@
             "duration": "1分钟"
         },
         "Mantle of the Melting Heart": {
-            "description": "<p>你身上被一层液态金属覆盖层所包裹，它为你的护甲和皮肤镀上了一层油光。随着施放该法术，从后文的选项中选择其二。以具有专注（concentrate）特征的单动作，你能选择其中1个能力变更为列表中的另一个不同选项。</p>\n<ul>\n<li><strong>铜芯</strong> 你将电能引向自己，然后再将其驱散。你获得10点电击抗力。所有距你30尺范围内的电效果必须成功通过反制检定对抗你的法术DC，否则将会以你且只以你为目标。</li>\n<li><strong>金皮</strong> Your body gains the chemical inertness of gold, barely reacting to substances that would otherwise greatly disturb your physiology. You become immune to poison and disease and gain a +2 circumstance bonus to your checks against any poison and disease effects currently affecting you.</li>\n<li><strong>Reactive Touch</strong> Your touch reacts easily with other metals. Any metal that touches you or that you touch takes @Damage[2d6[acid]] damage that bypasses Hardness.</li>\n<li><strong>Weighted Grasp</strong> Your arms become long cables, your fists heavy as anchors. You gain a cabled fist unarmed attack with the disarm, finesse, reach, and trip traits and that's in the flail group. Your cabled fist deals @Damage[1d4[bludgeoning]] damage plus an additional @Damage[1d6[poison]] damage and Grab.</li>\n</ul>",
+            "description": "<p>你身上被一层液态金属覆盖层所包裹，它为你的护甲和皮肤镀上了一层油光。随着施放该法术，从后文的选项中选择其二。以具有专注（concentrate）特征的单动作，你能选择其中1个能力变更为列表中的另一个不同选项。</p>\n<ul>\n<li><strong>铜芯</strong> 你将电能引向自己，然后再将其驱散。你获得10点电击抗力。所有距你30尺范围内的电效果必须成功通过反制检定对抗你的法术DC，否则将会以你且只以你为目标。</li>\n<li><strong>金皮</strong> 你的身体获得了黄金的化学惰性，几乎不会对那些严重扰乱你生理机能的物质产生反应。你变得免疫毒素和疾病，并且在对抗目前正在影响你的毒素和疾病效果时，获得+2环境加值。</li>\n<li><strong>反应之触</strong> 你的触摸很容易与其他金属产生反应。碰触到你的任何金属或者你主动碰触的金属会承受@Damage[2d6[acid]]伤害。</li>\n<li><strong>重压之握</strong> 你的手臂变为修长的钢索，你的拳头就如同船锚一样沉重。你获得钢缆之拳（Cabled Fist）非武装攻击，这具有卸武、娴熟、长触及和摔绊特征，且该武器属于连枷武器组。你的钢缆之拳造成@Damage[1d4[bludgeoning]]伤害，外加额外@Damage[1d6[poison]]伤害和攫抓。</li>\n</ul>",
             "name": "钢躯熔心 Mantle of the Melting Heart",
             "duration": "1分钟"
         },
@@ -8772,6 +8772,306 @@
             "name": "凤凰结界 Phoenix Ward",
             "description": "<p>你在自己周围升起炽热的盾牌，这赋予你10点火焰抗力。若你承受的火焰伤害将要把你的生命值降低至0点，凤凰结界会吸收任何把你生命值降低至1点之外的伤害量。之后，结界会展现为明亮的凤凰双翼，把你包复在光芒之中的同时治愈你。你恢复的生命值等同于4d8 + 吸收的伤害；这是个治疗活力效果。之后凤凰结界结束，24小时内你无法再次施放该法术。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 治疗量增加[[/r 1d8]]。</p>",
             "duration": "1分钟"
+        },
+        "Scrying Ripples": {
+            "name": "波纹探知术 Scrying Ripples",
+            "target": "1加仑或更多的水",
+            "range": "接触",
+            "duration": "维持,至多10分钟",
+            "time": "1分钟",
+            "description": "<p>你碰触水面，随着水面涟漪的扩散，你的感官也随之扩张。当你施放该法术时，你会自动知晓500尺射程之内、未被占用、且表面区域至少达到1个方格的任意流动水域的位置。在法术持续时间内，你能从这些流水中选择其一来向看和聆听外界，但是你的视野会垂直于流水的表面。举例来说，你能够通过瀑布正常向外观察，但是只能从河面竖直向上看。每当你维持法术时，都可以切换到不同的水源、或者沿着相同的水源移动到不同的位置。</p>\n<p>若你正在用于探知的水停止流动，比如水龙头被关闭了、河流被大把阻拦、或者瀑布结冰，该法术也会结束。此外，当你通过水体窥视之时，你的面容以微弱的映射出现在水面上。进行搜索的生物在成功通过察觉检定对抗你的法术DC后，能探查到你在水中的存在。</p>\n<hr />\n<p><strong>升阶 (5环)</strong> 你能知晓1英里内可以用于探知的流水的位置。</p>"
+        },
+        "Mercurial Stride": {
+            "description": "<p>随着你呈现出水银的流动性和毒性，你也形成了阵阵涟漪。你自身有一部分转化为液态金属形态，并且以你的速度行走至多2次。在这次移动中，你能穿过其他生物占据的空间——这不需要尝试检定来进行@UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{翻滚 Tumble Through}——你会分裂为许多水银液滴并在另一侧重构身体，但是你不能在其他生物占据的空间结束自己的回合。以此方式穿过其他生物占据的空间会使其汞中毒，进行一次强韧豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}并承受@Damage[6d6[poison]]伤害。</p>\n<p><strong>大失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}并承受@Damage[12d6[poison]]伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 失败时造成的伤害增加1d6点，大失败时的伤害增加2d6点。</p>",
+            "name": "流汞涌行 Mercurial Stride"
+        },
+        "Needle Darts": {
+            "description": "<p>你将随身物品中的一片金属化为3根尖锐飞针，然后把它们并在一起飞向目标。进行一次法术攻击检定对抗你的目标的AC。飞针造成@Damage[3d4[piercing]]伤害并且可能导致目标流血。</p>\n<p>形成飞针的金属所具有的特殊性质也能赋予飞针；举例来说，寒铁飞针能够对具有寒铁弱点的生物造成额外伤害。所有飞针均由相同的金属构成，这些金属会在攻击后返回到你的随身物品中。</p>\n<hr />\n<p><strong>大成功</strong> 目标承受双倍伤害以及1点持续流血伤害。</p>\n<p><strong>成功</strong> 目标承受全额伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 你发出一根额外飞针，使得法术常规伤害增加1d4点，并且使得重击时造成的持续流血伤害增加1点。</p>",
+            "name": "尖锐飞针 Needle Darts",
+            "target": "一个生物",
+            "range": "60尺"
+        },
+        "Noxious Metals": {
+            "name": "金毒附体 Noxious Metals",
+            "description": "<p>该法术将毒性金属聚集到区域内所有活物的肌肤和体表上，造成@Damage[4d6[poison]]伤害（基础强韧豁免）。具有植物特征、木特征、或者对金属有禁忌的任意生物，都会根据强韧豁免的结果承受后述效果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不会承受额外效果。</p>\n<p><strong>成功</strong> 生物承受[[/r 1[persistent,poison]]]伤害，只要承受该持续伤害，就会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。</p>\n<p><strong>失败</strong> 同成功，不过是[[/r 1d4[persistent,poison]]]伤害以及@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>\n<p><strong>大失败</strong> 同成功，不过是[[/r 1d8[persistent,poison]]]伤害以及@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 3}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 初始毒素伤害增加[[/r 2d6]]。</p>",
+            "range": "60尺"
+        },
+        "Rust Cloud": {
+            "description": "<p>红棕色的铁锈微粒在空气中抖动，形成一团由搅动着的微粒构成的云团。云团内的所有生物获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，对于云团内的生物来说，所有云团之外的生物也都获得了隐蔽。云团对自身回合开始时位于区域内的任何生物造成@Damage[5d10[slashing]]伤害，并进行一次基础强韧豁免。</p>\n<p>生物身上生锈的金属会扩大云团。当金属生物承受云团的伤害时，云团的区域增加5尺（至多为@Template[type:burst|distance:40]区域），且该生物会开始锈蚀，承受[[/r 1d4[persistent,slashing]]]伤害。你能解消此云团。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 云团的挥砍伤害增加1d10点，持续伤害增加[[/r 1d4]]。</p>",
+            "name": "锈蚀云 Rust Cloud",
+            "range": "120尺",
+            "duration": "1分钟"
+        },
+        "Shielded Arm": {
+            "name": "化臂为盾 Shielded Arm",
+            "target": "一个自愿生物",
+            "description": "<p>经过加固的矿石纹理在目标手臂上游走，让它能用裸露的肌肤抵御袭击。它能通过举起手臂来替代盾牌，并以此使用举起盾牌动作，这会为它的AC赋予+2环境加值。它也能使用举起的手臂进行盾牌格挡；当它这么做时，目标能够降低伤害，就如同使用了1面具有4点硬度和15点生命值的盾牌一般。这面盾牌没有破损阈值，当盾牌生命值耗尽时，法术也随之结束。</p>\n<p>法术不会改变目标的非武装攻击，也无法通过该法术来作出盾击打击。施放或受到此法术效果影响均被视同为触犯了有关使用金属物品的禁忌。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 硬度增加4点，生命值增加15点。</p>",
+            "range": "接触",
+            "duration": "1分钟或直至生命值耗尽"
+        },
+        "Wall of Metal": {
+            "description": "<p>你在前方呼唤出大片的金属、形成一堵由铁、低纯度寒铁、或标准纯度银构成的墙壁，此墙壁至多为60尺长、30尺高、1/4英寸厚。墙壁不需要垂直立在地面上，但是必须在不间断的开放空间内形成一条直线，这样它就不会穿过任何生物或物体，否则就会失去法术。每个10尺 x 10尺的一段墙壁都具有AC10，且免疫重击和精准伤害。墙壁的硬度、HP、和BT使用你选择用来构成结构的金属的数据。生物能够穿过墙壁中破损的那一部分。</p>\n<hr />\n<p><strong>升阶 (7环)</strong> 墙壁可以由高纯度银或标准纯度黎明银构成。</p>\n<p><strong>升阶 (8环)</strong> 墙壁可以由标准纯度寒铁构成。</p>\n<p><strong>升阶 (9环)</strong> 墙壁可以由高纯度黎明银构成。</p>\n<p><strong>升阶 (10环)</strong> 墙壁可以由高纯度寒铁或标准纯度精金构成。</p>",
+            "name": "金属墙 Wall of Metal",
+            "range": "120尺",
+            "duration": "1分钟"
+        },
+        "Serrate": {
+            "description": "<p>在挤压一下之后，金属武器便被扭曲，其表面添加了需多锯齿状的刀刃。用目标武器作出的打击造成额外1d4点挥砍伤害，持续至你的下个回合开始为止。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.CDNKDV3UsAp95D1m]{法术效果: 锯齿锋刃}</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 额外伤害增加1d4点。</p>",
+            "name": "锯齿锋刃 Serrate",
+            "target": "一把金属武器",
+            "range": "接触"
+        },
+        "Repel Metal": {
+            "description": "<p><strong>触发</strong> 金属武器或投射物作出的打击将要命中你或射程内的一个盟友</p>\n<hr />\n<p>你放出一股排斥力场。目标的AC在对抗触发攻击时获得+2环境加值。若攻击之后失手了，你能将打击引回攻击者自身，后者将用攻击检定与自身的AC相比较。之后目标将会在10分钟内免疫该法术。</p>",
+            "name": "斥退金属 Repel Metal",
+            "target": "成为触发打击的目标的生物",
+            "range": "60尺"
+        },
+        "Brine Dragon Bile": {
+            "description": "<p><strong>触发</strong> 射程内的一个生物承受挥砍或穿刺攻击、或者承受会造成持续流血伤害的攻击</p>\n<hr />\n<p>你吐出了一团带有腐蚀性的盐水，刺激目标生物的伤口。进行一次远程法术攻击对抗触发生物的AC。命中时，盐碱会冲刷它的开放性创口，造成[[/r 2d6[persistent,acid]]]伤害。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 持续伤害增加[[/r 2d6]]。</p>",
+            "name": "洋龙胆汁 Brine Dragon Bile",
+            "target": "承受伤害的生物",
+            "range": "30尺"
+        },
+        "Buoyant Bubbles": {
+            "description": "<p>你创造出一层轻薄的气泡薄膜复盖目标，使其能够漂浮在水中或者类似的液体上。目标不会下沉，即便它在该轮的游泳检定中未能成功也是如此；已经下沉的目标在气泡的帮助下能够在一轮的过程后重新浮上来。在水体或者液体具有表面的位面中，气泡还会防止目标潜入水面下方，除非它成功通过强韧豁免对抗了你的法术DC才能这么做。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 你能以至多5个生物为目标。</p>",
+            "name": "浮力气泡 Buoyant Bubbles",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "1分钟"
+        },
+        "Coral Scourge": {
+            "name": "珊瑚灾厄 Coral Scourge",
+            "target": "一个生物",
+            "description": "<p>藤壶、珊瑚以及其他粗糙的水生生物在目标的身体上成长蔓延，阻塞它的关节使其动作变得僵硬。这会阻碍目标的移动，具体效果取决于目标豁免检定的结果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。目标能够以交互来刮掉身上长出的珊瑚，从而使笨拙状态降至0点并结束该法术。</p>\n<p><strong>失败</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}。在目标每个回合开始时，它会变为笨拙1或者使得自身的笨拙状态增加1点，最高达到笨拙4。目标能够以交互来刮掉身上长出的珊瑚，从而使笨拙状态降至0点并结束该法术。若<em>珊瑚灾厄</em>导致目标的笨拙状态达到4点，这些物质的成长便会扩散到目标的全身，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}。</p>\n<p><strong>大失败</strong> 同失败，但是当目标以交互来刮掉身上长出的珊瑚时，其笨拙状态会降低1点，而非直接降低至0点，而且将笨拙状态降低至0点不会结束该法术。</p>",
+            "range": "30尺",
+            "duration": "1分钟"
+        },
+        "Dancing Fountain": {
+            "name": "幻舞喷泉 Dancing Fountain",
+            "description": "<p><strong>区域</strong> 以你为中心30尺爆发区域</p>\n<hr />\n<p>你敲击地面，在影响区域内展开一个浅水池，突然展现出壮观的喷泉、水流喷涌和水雾，形成了让人目不暇接的喷水表演。当你施放法术、以及每轮你第一次维持法术时，都能命令喷泉使用后述表演之一，这将伴随着嘹亮的音乐一同暴发出来。幻舞喷泉对新奇现象的渴望使它有些变化无常，这意味着在2个连续回合内你不能命令它使用相同的表演。</p>\n<ul>\n<li><strong>追逐喷流</strong> 一系列垂直发生的水流喷射追赶着对象依序发生，这会迫使位于喷泉中的1个生物向着你选择的方向移动15尺，除非它能够成功通过反射豁免对抗你的法术DC。喷泉无法迫使生物移动到自身的区域之外。</li>\n<li><strong>闪耀水雾</strong> 弥漫的雾气充满了弥漫区域。所有喷泉中的生物都会获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，对于喷泉内的生物来说，所有喷泉外的生物也会获得隐蔽。这些雾气会存续至你的下个回合开始。</li>\n<li><strong>强劲水环</strong> 喷泉将一系列水环喷射到空中，它会以喷泉区域内你选择的一处位置为中心降落，对@Template[type:burst|distance:10]区域造成冲击。坠落的洪流会对爆发区域内的所有生物造成@Damage[10d6[bludgeoning]]伤害（基础反射豁免）。</li>\n</ul>",
+            "duration": "维持,至多1分钟"
+        },
+        "Dive and Breach": {
+            "description": "<p>你借道水元素位面进行短暂的潜泳。你@UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{跳跃 Leap}10尺，当你即将落地时，却在落地的位置消失于飞溅的水流中，你的身体潜入地表，就好像潜入到水池中一般。然后你会在40尺内的一处无人占据的表面脱出，以从另一片飞溅的水流中跳跃出来的姿态现身，降落在距离脱出地点10尺远的位置。位于飞溅水流位置@Template[type:emanation|distance:5]区域内的所有生物承受@Damage[3d10[bludgeoning]]伤害；位于多个飞溅水流区域之内的生物仅会承受一次伤害。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 每次飞溅水流造成的伤害增加[[/r 1d10]]。</p>",
+            "name": "潜泳破障 Dive and Breach"
+        },
+        "Draw Moisture": {
+            "range": "10尺",
+            "description": "<p>你从一个物体中抽取水分，这可能是为了清理溢出的水或者让被浸泡的书本或衣服快速变干燥。你从物体中抽取至多1品脱的水；这会让小于1负载的物体变干燥。被收集的水会聚集在你手中漂浮的球体中，你能够以施法的一部分将其直接装入附近的容器；否则，这些水就会撒到地上。重复使用汲取水分可以用来干燥较大的物体，不过这么做可能需要花费相当长的时间。你能够使用该法术在特别潮湿的环境中从空气里凝聚可饮用水，不过在通常情况下，耗尽周围的环境水分也只能够抽取几杯水。</p>",
+            "name": "汲取水分 Draw Moisture",
+            "target": "一个物体"
+        },
+        "Freezing Rain": {
+            "name": "冻雨术 Freezing Rain",
+            "duration": "维持,至多10分钟",
+            "description": "<p>激烈的冻雨不知从何处降临，它宛如一场倾盆暴雨的缩影，通过魔法可以将其调整为雨雪混杂的冻雨。倾盆大雨和积水使得区域变为困难地形，并熄灭了非魔法火焰。</p>\n<p>在接下来的轮数中，每轮你第一次维持法术时，你能够让法术区域移动至多20尺，还可以冻结雨水。若你将雨水冻结，区域内的每个生物会承受@Damage[4d6[cold]]伤害并且可能会陷入缓慢，这取决于对方反射豁免的结果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物承受一半伤害。</p>\n<p><strong>失败</strong> 生物承受全额伤害，并且陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>大失败</strong> 生物承受双倍伤害，并且陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}，持续1轮。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 1d6]]。</p>",
+            "range": "120尺"
+        },
+        "Frost Pillar": {
+            "description": "<p>寒冰在一个生物周围凝结，将其禁锢在冰柱之内。成功通过豁免检定时，该生物会被推离至它选择的相邻空间内；否则，它就会被冻结在冰柱之内，由于身体几乎无法在坚冰内移动而陷入@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}。冰柱的AC为10，硬度10和60点生命值；它免疫重击、寒冷伤害和精准伤害，但是它具有15点火焰弱点。若冰柱被摧毁，其内部的生物就会被释放，法术也会立即结束。</p>",
+            "name": "封冻之柱 Frost Pillar",
+            "target": "一个生物",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Grasp of the Deep": {
+            "description": "<p>你用幻影模拟出深海的压力，用其勒紧一个目标，让它迷失方向并压碎它的肺部和关节。目标承受@Damage[6d6[bludgeoning]]伤害以及其他效果，具体效果取决于目标的意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受一半伤害。</p>\n<p><strong>失败</strong> 目标承受一半伤害*<em>（译注：原文如此，怀疑应该改为全额）</em>，并且感到好似被压垮了一般。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}并且承受@Damage[6d6[bludgeoning]]伤害；它能尝试@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}，逃脱DC等同于你的法术DC。</p>\n<p><strong>大失败</strong> 同失败，但是目标承受双倍伤害。</p>\n<hr />\n<p><strong>升阶 (6环)</strong> 你能以至多5个生物为目标。</p>",
+            "name": "深海之握 Grasp of the Deep",
+            "target": "一个生物",
+            "range": "60尺",
+            "duration": "1分钟"
+        },
+        "Hungry Depths": {
+            "name": "饥饿噬渊 Hungry Depths",
+            "duration": "维持,至多1分钟",
+            "description": "<p>一股漆黑、腐坏的水流构成的旋涡出现在地面上，开启了一扇仿佛向下延伸数英里的入口。脱离肉身、散发着光芒的眼睛与不断咬合的尖齿在旋涡中流转，吞噬穿过其路径的任何事物。</p>\n<p>区域内的所有生物承受@Damage[4d8[piercing]]伤害和@Damage[4d4[void]]伤害（基础反射豁免）。每当你维持该法术时，你能够将旋涡的半径增加5尺（至多为15尺），或者你也能够将旋涡以直线方向移动至多10尺。旋涡移动通过的每个生物都会承受带有基础反射豁免的伤害。每个生物每轮仅会由于<em>饥饿噬渊</em>承受一次伤害。</p>\n<p>若在水下施放该法术，<em>饥饿噬渊</em>会变为半径5尺、高40尺的圆柱体。</p>\n<hr />\n<p><strong>升阶 (9环)</strong> 旋涡造成@Damage[5d8[piercing]]伤害和@Damage[5d4[void]]伤害。</p>",
+            "range": "120尺"
+        },
+        "Misty Memory": {
+            "description": "<p>有人说，水中会保存过去的记忆或映像，而你能够让这些记忆浮出水面，窥见近期发生的事情。当你施放该法术时，你会把精神集中在过去的一段时间内，至多为24小时之前。水雾从目标水体中升起，扩充到@Template[type:burst|distance:30]区域，凝结成水体周围60尺范围内所发生的事件的模糊景象。</p>\n<p>任何能够看到该区域的生物都能够观察到由此产生的景象，这是白色半透明的图像，且具有足够的细节来展示穿过该区域的生物以及物体的剪影和轮廓、外加它们所采取的运动。细节内容，比如面部特征或者书写的文字，由于太过精细而无法构成水雾，而且这些景象不会产生声音。</p>\n<p>你能维持该法术，使得水雾向前或者向后播放事件，每花费1分钟维持法术便对应着1分钟的映像。</p>\n<p>由魔法产生的强风能够打断该法术，但前提是效果成功以一次反制检定对抗了你的法术DC。</p>",
+            "name": "记忆水雾 Misty Memory",
+            "target": "大小至少为5尺方格的水体",
+            "duration": "维持,至多10分钟",
+            "time": "1分钟"
+        },
+        "Personal Ocean": {
+            "name": "私人海流 Personal Ocean",
+            "duration": "1分钟",
+            "description": "<p>你用一层形似气泡的海水把自身包裹起来，这些海水会完全填充你所占据的空间并和你一同移动。你在自己的私人海流中能如常呼吸、说话、和感知周遭环境，若你自身不具有游泳速度的话，你会获得与陆上速度相同的游泳速度。水中战斗的规则将适用于你、以你为目标的攻击、或者穿过你所在方格的攻击。举例说明，以你为目标的钝击或挥砍近战攻击将会承受-2环境减值，而且你无法施放火法术或者使用带有火特征的动作。</p>\n<p>每当你移动时，你都会熄灭自身所穿过空间的非魔法火焰，而且能够尝试反制自身穿过的魔法火焰。若你成功反制了1团比你所穿过的空间还大的火焰，那么你只是把它从你所穿过的路径上推开。若你未能反制某个特定火焰，那么你在法术持续时间内都无法反制这个火焰了。</p>\n<p>你能解消该法术。</p>"
+        },
+        "Rousing Splash": {
+            "description": "<p>你把一股冷水倒到一个盟友的头上，赋予它短暂的活力。目标获得1d4点临时生命值，这持续1分钟。目标之后会在10分钟内临时免疫冰水醒神的临时生命值。目标还能尝试1次立即的纯骰检定，用于从单个来源的持续酸液或火焰伤害中恢复，并由于得到适当的援助而降低其DC。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 法术赋予的临时生命值增加[[/r 1d4]]。</p>",
+            "name": "冰水醒神 Rousing Splash",
+            "target": "一个生物",
+            "range": "60尺"
+        },
+        "Waterproof": {
+            "name": "防水咒 Waterproof",
+            "description": "<p>在法术持续时间内，你能防止目标物品进水或者受潮。法术的避水特性还会赋予它10点酸液抗力，而且还在对抗具有水和酸液特征的伤害效果时，豁免与DC获得+2加值。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 持续时间为1日。</p>\n<p><strong>升阶 (8环)</strong> 持续时间无限。</p>",
+            "target": "1个至多为10负载的物体",
+            "range": "接触",
+            "duration": "1小时"
+        },
+        "Whirlpool": {
+            "description": "<p><strong>区域</strong> 半径25尺、20尺高的圆柱体</p>\n<hr />\n<p>随着手臂的转动，你创造出一道由旋转着的汹涌水流所构成的庞大旋涡。<em>奔流漩涡</em>内的所有方格均为困难地形。巨浪持续不断翻腾着，这意味着生物会不断地在空气和水所占据的区域间不断切换，这使得在空气中呼吸和在水中呼吸的生物都可以在漩涡中呼吸。任何具有游泳速度的生物都可以使用游泳取代行走来在旋涡中移动；在旋涡中游泳的DC等同于你的法术DC。</p>\n<p>由于海浪的冲击，区域内的所有生物都会承受@Damage[6d10[bludgeoning]]伤害。在后续的轮数中，每轮你第一次维持法术时，席卷的浪潮都会产生相同的效果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物承受一半伤害。</p>\n<p><strong>失败</strong> 生物承受全额伤害，并被向着旋涡中心拖动10尺。</p>\n<p><strong>大失败</strong> 生物承受双倍伤害，并被拖动至旋涡中心。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 钝击伤害增加[[/r 1d10]]。</p>",
+            "name": "奔流漩涡 Whirlpool",
+            "range": "500尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Arrow Salvo": {
+            "name": "万箭齐发 Arrow Salvo",
+            "description": "<p>你呼唤出一张巨大的木弓，对着所有附近的敌人一齐射出大量箭矢。影响区域内的所有生物都会承受@Damage[8d10[piercing]]伤害（基础反射豁免）。大失败时，目标还会由于冲击力而@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 1d10]]。</p>",
+            "range": "100尺"
+        },
+        "Arrow Slavo": {
+            "description": "<p>你呼唤出一张巨大的木弓，对着所有附近的敌人一齐射出大量箭矢。影响区域内的所有生物都会承受@Damage[8d10[piercing]]伤害（基础反射豁免）。大失败时，目标还会由于冲击力而@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 1d10]]。</p>"
+        },
+        "Entwined Roots": {
+            "description": "<p>光滑的根须缠在你和你的盟友身上，形成一股灵活的木制屏障。每个受影响的生物获得对钝击和穿刺伤害的5点抗力。受这些根须保护每当成为远程武器攻击的目标，但是并未因此而承受伤害时（比如攻击失手或者伤害被抗力降低到了0点），根须就会夺取这些弹药和投掷武器并将其抓住。被保护的生物能够以一个交互动作回收投掷武器或弹药。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.nFOJ53IkO5khO4Rr]{法术效果: 缠根护体}</p>\n<hr />\n<p><strong>升阶 (7环)</strong> 抗力增加至10点。</p>\n<p><strong>升阶 (9环)</strong> 抗力增加至15点。</p>",
+            "name": "缠根护体 Entwined Roots",
+            "target": "至多5个自愿活物",
+            "duration": "10分钟",
+            "time": "1分钟"
+        },
+        "Flourishing Flora": {
+            "description": "<p>植物从地面上迅速成长。目标区域的所有生物承受[[/r 2d4 #damage]]{2d4点伤害}。伤害类型取决于你选择生长出来的植物种类。大失败时，目标还会承受额外效果，这同样也取决于你选择生长出来的植物种类。你要在施放法术之时选择生长出来的植物类型及其效果。</p>\n<ul>\n<li><strong>仙人掌</strong> 穿刺伤害，大失败时造成[[/r 1[persistent,bleed]]]伤害。</li>\n<li><strong>花簇</strong> 毒素伤害，大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，持续2轮。</li>\n<li><strong>果树丛</strong> 钝击伤害，大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，持续2轮。</li>\n<li><strong>根须</strong> 钝击伤害，大失败时受影响的生物@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n</ul>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加1d4点，重击时造成的持续流血伤害增加1点。</p>",
+            "name": "植物丛生 Flourishing Flora",
+            "range": "30尺"
+        },
+        "Helpful Wood Spirits": {
+            "description": "<p>在施放该法术时，一小群木元素精魂会滚进该区域。它们每轮会执行1向简单任务。这些精魂是生活在木元素位面中的真正精魂的魔法回响，因此无法被攻击、被伤害或者受到其他干涉。这些精魂通常以木灵神的形象现身，但它们也能以木元素位面中无穷种类的木元素精魂中的任意一种精魂的形象现身。</p>\n<p>当你施法时，从后述列表中选择1类木灵提供的协助种类。每轮你第一次维持该法术时，你能够将这些精魂所占据的空间移动至多10尺，同时还能够选择它们在该轮内提供的协助种类。</p>\n<ul>\n<li><strong>日常事务</strong> 木灵按照你的选择执行简单的动手任务，比如清洁、开门、捡起无主物体、或者携带1件物体移动至其他地点。木灵无法拾取或携带大于2负载的物体。</li>\n<li><strong>转移注意</strong> 木灵能够让你的敌人分神，爬上它们的脚和身体并进行妨碍。区域内的生物如果未能成功通过反射豁免的话，便会陷入@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}。</li>\n<li><strong>妨碍行动</strong> 大群木灵在区域内胡乱地跑来跳去。它们占据的区域变为困难地形。</li>\n<li><strong>搜寻</strong> 木灵在它们占据的区域内进行@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}，使用你的察觉检定作为它们的数据。你能知晓它们以此方式进行搜索所了解到的一切。</li>\n</ul>",
+            "name": "助人木灵 Helpful Wood Spirits",
+            "range": "30尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Life-Draining Roots": {
+            "name": "汲命根须 Life-Draining Roots",
+            "description": "<p>荆棘根须从你手上缠结在一起并喷涌向前，被刺伤的生物能让你变强并且得到滋养。你对线形区域的生物造成@Damage[8d6[piercing]]伤害（基础反射豁免）。线形区域上的每个活物会让你获得1d4点临时生命值，因为这些根须会把那些受伤生物的营养转移到你身上。这些临时生命值持续1分钟。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 2d6]]。</p>"
+        },
+        "Lignify": {
+            "description": "<p>你将目标的肉体缓慢转化为树木。目标必须尝试一次强韧豁免。具有植物特征的生物在对抗该法术时具有+2环境加值。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1轮。</p>\n<p><strong>失败</strong> 目标陷入缓慢1并且必须在每个自身回合结束时尝试1次强韧豁免；这种持续进行的豁免具有失能特征。大失败时，缓慢状态增加1点（大失败时增加2点）。豁免成功能让缓慢状态降低1点。当生物由于木化咒带来的缓慢状态而无法行动时，该生物会陷入永久的非魔法石化，不过此效果会把人变为木材而非石头。若该生物陷入魔法石化或者缓慢状态被移除时，该法术结束。</p>\n<p><strong>大失败</strong> 同失败，但目标初始状态为@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}。</p>",
+            "name": "木化咒 Lignify",
+            "target": "一个由血肉构成的生物",
+            "range": "120尺",
+            "duration": "可变"
+        },
+        "Lotus Walk": {
+            "description": "<p>莲花、睡莲以及其他水生植物在你脚下绽放，当你能够在水面以及其他液体表面上行走。如果你愿意，也能够进入水下，但是在此情况下，你必须如常游泳。当你在水上行走或快步时，会留下一长串庞大的睡莲浮叶、荷叶或者萍蓬草占据你所经过路径的方格表面。这条痕迹中的每个方格都能承受一个中型生物的体重，且它会持续至你的下个回合结束为止。你能提前解消该法术。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 法术持续时间增加至10分钟。留下的痕迹会持续至法术结束或者你解消了自己的法术为止，以较先发生者为准。</p>\n<p><strong>升阶 (6环)</strong> 法术持续时间增加至1小时。你留下的痕迹会永久存在，哪怕你解消了自己的法术也不受影响，不过如果当地的水体无法支持这些植物，它们就会在一周内死亡。你留下的痕迹可以被解除魔法或者类似的法术移除。</p>",
+            "name": "步步生莲 Lotus Walk",
+            "duration": "1分钟"
+        },
+        "Mantle of the Unwavering Heart": {
+            "name": "木躯韧心 Mantle of the Unwavering Heart",
+            "description": "<p>藤蔓与枝条将你包复，生长出的花朵绽放着能够展现你全新形态的色彩。随着施放该法术，从后文的选项中选择其二。以具有专注特征的单动作，你能选择其中一个能力变更为列表中的另一个不同选项。</p>\n<ul>\n<li><strong>常青活力</strong> 你获得快速愈合3，并且在对抗毒素和疾病时，豁免检定获得+2加值。这些效果具有治疗和活力特征。</li>\n<li><strong>强烈芳香</strong> （灵光 嗅觉）一团浓郁的花香围绕着你，影响@Template[type:emanation|distance:15]区域。灵光内的生物无法从灵敏嗅觉能力中获益，并且只要处于灵光区域内，就会陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。这种恶心是疾病效果。</li>\n<li><strong>巍峨巨木</strong> 你成长得相当高大。你的提醒增加至大型。你陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。你的触及增加5尺（若你的起始体型为超小型则增加10尺），你获得抓握树枝非武装攻击；这种攻击属于搏击武器组，造成@Damage[2d8[bludgeoning]]伤害外加攫抓。</li>\n<li><strong>不屈意志</strong> 你的意志对变化有着难以置信的承受力。你免疫被@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}，而且你在对抗心灵效果时豁免和DC都会获得+1加值。</li>\n</ul>",
+            "duration": "1分钟"
+        },
+        "Pollen Pods": {
+            "description": "<p><strong>区域</strong> 4个未被占据的5尺方格，每个方格彼此之间至少相距20尺</p>\n<hr />\n<p>你培育出4个木制球茎，每个球茎中都充满了有毒花粉而且对周遭的运动极为敏感。当有生物进入与球茎相邻的空间、或者接触或伤害球茎（每个球茎的AC均为5）时，球茎便会开花并在@Template[type:emanation|distance:15]区域中释放花粉。区域内的生物承受@Damage[8d8[poison]]伤害且必须尝试强韧豁免，豁免结果如后文所述。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物承受一半伤害并且陷入持续1轮的@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>\n<p><strong>失败</strong> 生物承受全额伤害，陷入持续1轮的目眩并且陷入持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。</p>\n<p><strong>大失败</strong> 生物承受双倍伤害，陷入持续1轮的目眩并且陷入持续1分钟的@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 2}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 2d8]]。</p>",
+            "name": "毒花球茎 Pollen Pods",
+            "range": "100尺",
+            "duration": "12小时"
+        },
+        "Rigid Form": {
+            "duration": "1分钟",
+            "description": "<p>你能利用木材的刚性来防止有害的变形效果。在法术的持续时间内，每当你成为有害变形效果的目标时，你就能使用反应动作来反制该效果。</p>\n<hr />\n<p><strong>升阶 (6环)</strong> 持续时间增加至10分钟。</p>",
+            "name": "刚木不曲 Rigid Form"
+        },
+        "Root Reading": {
+            "description": "<p>你通过把自身的感官传递到树木和灌木的根系之中来获取附近区域的概况。若此区域内有任何未被注意到的中型或更大生物时，你能得知它们的存在并且它们不会因此注意到你。你能够立即尝试@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}一个无踪生物，并且在这次尝试中获得+1状态加值，且直至你的下个回合结束为止，你的其他用来搜索@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}或无踪生物的尝试也会获得此加值。你还能得知过去1小时内是否有任何此类生物经过了此区域，不过你仅能从法术中获得模糊的方向感。若你开始@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}以此方式侦测到的一个生物，那么你会在初始检定中获得+1状态加值。</p>",
+            "name": "阅读根系 Root Reading"
+        },
+        "Splinter Volley": {
+            "description": "<p>你向敌人发射一连串尖锐破片。对单个生物进行一次法术攻击检定。命中时，裂片会造成@Damage[4d6[piercing]]伤害。重击时，裂片造成双倍伤害以及@Damage[1[persistent,bleed]]伤害。你在施法时能选择花费三动作，以此来向着2个不同目标发射裂片而非原本的1个。这些攻击均会增加你的多重攻击减值，但是你在作出裂片激射的两次法术攻击检定之后，多重攻击减值才会增加。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 对每个目标造成的伤害增加4d6点，持续流血伤害增加1点。</p>",
+            "name": "裂片激射 Splinter Volley",
+            "target": "1或2个生物",
+            "range": "60尺",
+            "time": "2 或 3"
+        },
+        "Take Root": {
+            "name": "扎根术 Take Root",
+            "duration": "1轮",
+            "description": "<p>根茎从目标的肉体中长出来，然后盘绕在地板或周围的物体上，加强目标的抓地力和稳定性。目标生物在对抗@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}自身的尝试时，强韧DC获得+1环境加值；在对抗@UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{卸武 Disarm}或@UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{摔拌 Trip}自身的尝试时，反射DC获得+1环境加值。当目标进行豁免检定对抗那些尝试移除它手中抓握物品的法术或效果时，上述加值也能生效。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.ZGzhNFB3SM8owk85]{法术效果: 扎根术}</p>",
+            "target": "一个自愿生物",
+            "range": "30尺"
+        },
+        "Timber": {
+            "description": "<p>你在自身占据的空间内创造出一株尺寸较小的死木，然后让它倾倒，砸到其倾倒路径上的每个生物，之后它会立即被分解。区域中的任何生物都会承受@Damage[2d4[bludgeoning]]伤害（基础反射豁免）。豁免大失败的生物会被砸得头昏脑涨，使其陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}，持续至该生物的下个回合结束为止。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 初始伤害增加[[/r 1d4]]。</p>",
+            "name": "倒木术 Timber"
+        },
+        "Wall of Shrubs": {
+            "description": "<p>你呼唤一排本地的原生灌木从地面上生长出来。灌木墙会排成60尺长的直线、高度不足5尺、厚1尺，它能提供弱效掩蔽。</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 灌木墙现在有10尺高、5尺厚，能够提供标准掩蔽。法术持续时间增加至10分钟。</p>\n<p><strong>升阶 (5环)</strong> 取代原本的直线，灌木墙现在可以作成直径至多30尺的环形，有10尺高、5尺厚。灌木墙提供强效掩蔽。法术持续时间增加至1小时。</p>",
+            "range": "120尺",
+            "name": "灌木墙 Wall of Shrubs",
+            "duration": "1分钟"
+        },
+        "Weave Wood": {
+            "description": "<p>通过一次触摸，你让目标分解成纤维，然后将其编织成相同负载或更轻的平凡编织物体，比如篮子、帽子、盾牌或坐垫。你在单次施法中至多制造4个物体，但前提是这些物体的总负载不会超过法术目标的负载。制造而成的物体具有2点硬度和8点生命值。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 法术目标的最大负载限制增加1负载，你能在单次施法中制作的物体数量上限增加2个。</p>",
+            "name": "编木术 Weave Wood",
+            "target": "一块未经加工、且为1负载或更轻的木材、芦苇或植物纤维",
+            "range": "接触",
+            "time": "1分钟"
+        },
+        "Wooden Double": {
+            "description": "<p><strong>触发</strong> 你被造成伤害的效果或者打击造成重击</p>\n<hr />\n<p>一个木制替身不知从何处现身，在你的位置承受打击。进行快步动作。你离开的空间内会出现一个与你体型相同、且形状相似的木块，由它吸收这次伤害。这个木块具有5点硬度和20点生命值。若木块被破坏，你会承受任何木块未能吸收的超额伤害。在承受打击之后，木块会崩塌为一堆碎屑和尘埃。</p>\n\n<hr />\n<p><strong>升阶 (+1)</strong> 木块的生命值增加10点。</p>",
+            "name": "木制替身 Wooden Double"
+        },
+        "Wooden Fists": {
+            "description": "<p>你得臂膀和手由于进一步成长而膨胀起来，变为双倍于当前大小的树干。你的拳头造成@Damage[1d6[bludgeoning]]伤害，失去非致命特征，并且获得长触及。</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 你的拳头获得魔法特征，并且成为<em>强击武器</em>，你的拳头造成的伤害增加至[[/r 2d6[bludgeoning]]]伤害。</p>\n<p><strong>升阶 (7环)</strong> 你的拳头获得魔法特征，并且成为<em>高等强击武器</em>，你的拳头造成的伤害增加至[[/r 3d6[bludgeoning]]]伤害。持续时间为10分钟。</p>\n<p><strong>升阶 (9环)</strong> 你的拳头获得魔法特征，并且成为<em>上等强击武器</em>，你的拳头造成的伤害增加至[[/r 4d6[bludgeoning]]]伤害。持续时间为1小时。</p>",
+            "name": "膨胀木拳 Wooden Fists",
+            "duration": "1分钟"
+        },
+        "Arms of Nature": {
+            "description": "<p>所有木材，无论死活，都是你的武器库。当你施法时，你从目标中拔出1把由你自身选择的<em>+1武器</em>。该武器必须为2负载或更轻。构成武器的材料与目标相同。</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 武器是<em>+1强击武器</em>。</p>\n<p><strong>升阶 (5环)</strong> 武器是<em>+2强击武器</em>。</p>\n<p><strong>升阶 (7环)</strong> 武器是<em>+3高等强击武器</em>。</p>",
+            "name": "自然武备 Arms of Nature",
+            "target": "一个至少有4负载的木制物体或植物",
+            "range": "接触",
+            "duration": "1分钟"
+        },
+        "Wood Walk": {
+            "duration": "维持,至多1分钟",
+            "description": "<p>树木愿意根据你的意愿重塑自身，当你沿着树木的侧面爬升时，会出现阶梯、自动将藤蔓编织成梯子、或者将树枝降低并把你抬升至顶部。只要距离你15尺范围内的周围有体型为大型或更大的活体植物或树木，你就能够以自身速度向着任意方向或者沿着任意表面移动。树木会让你移动，但并不会从危害性地形或其他危险中保护你。每当你维持该法术时，就能够再次以相同方式移动。</p>\n<hr />\n<p><strong>升阶 (8环)</strong> 法术的持续时间变为10分钟。你不再需要维持法术来延长其持续时间，但是你能够通过维持来按照上文的方式移动。</p>",
+            "name": "沿木而行 Wood Walk"
+        },
+        "Elemental Breath": {
+            "description": "<p>你在口中打开一个通往元素位面的微型传送门，然后呼出该位面元素构成的猛烈爆炸。投掷1d6来判断元素。如果你在施放该法术时使用三动作，则可以从中选择元素作为替代。该法术获得与元素相符的特征。</p>\n<p>锥形区域内的每个生物都必须尝试一次基础反射豁免。</p>\n<ul>\n<li><strong>气</strong> 强风和闪电轰击锥形区域内的生物，造成@Damage[6d10[electricity]]伤害。豁免失败的生物还会被推离10尺。</li>\n<li><strong>土</strong> 锥形的泥浆对区域内的生物造成@Damage[5d10[bludgeoning]]伤害。地面上的生物在豁免失败时会滑倒并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</li>\n<li><strong>火</strong> 汹涌的火锥造成@Damage[7d10[fire]]伤害。</li>\n<li><strong>金</strong> 锥形的生锈破片会切割肉体并破坏金属。区域内的每个生物受到@Damage[5d10[slashing]]伤害。由金属构成的生物的豁免成功度会比投掷结果更差1阶，无主金属物体视同为大失败。</li>\n<li><strong>水</strong> 寒冷的水流会造成@Damage[3d10[cold]]伤害和@Damage[3d10[bludgeoning]]伤害。</li>\n<li><strong>木</strong> 枝条会撕裂并贯穿生物，造成@Damage[3d10[piercing]]伤害和@Damage[3d10[slashing]]伤害。该区域的地面变为困难地形，持续1分钟。</li>\n</ul>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 1d10]]。对于水和木来说，你能选择法术升阶的每个环级增加哪一类伤害。</p>",
+            "name": "元素吐息 Elemental Breath",
+            "range": "30尺",
+            "time": "2 或 3"
+        },
+        "Elemental Counter": {
+            "description": "<p><strong>触发</strong> 你或者60尺射程内的1个生物投掷豁免检定对抗一个具有土、火、金、植物、水、或木特征的法术、或者成为了具有上述某个特征的法术攻击的目标。</p>\n<p><strong>需求</strong> 你具有一个可以用于施放触发法术的反制元素的法术位；见后文。</p>\n<hr />\n<p>元素循环中的每个元素都能够与另一个元素相克，你能使用自己的元素法术保护自己，对抗它能反制的对应元素。你会失去自己的法术位，就如同你已经施放了触发法术一般。之后你尝试反制触发法术，使用你失去的法术位的环级来判断反制等级。你能失去一个植物或木法术来反制土法术、土法术反制水、水法术反制火、火法术反制金、或者用金法术来反制植物或木。</p>",
+            "name": "反制元素 Elemental Counter"
+        },
+        "Elemental Sense": {
+            "name": "元素感官 Elemental Sense",
+            "description": "<p>元素能够增强你的感官。从后述选项选择其一。法术会获得该选项列出的特征。</p>\n<ul>\n<li><strong>水下声呐</strong> （水）当你在水下时，能用听觉作为精确感官。</li>\n<li><strong>热能感官</strong> （火）你能感知华氏90度或者更高温度的生物，这是射程30尺的模糊感官。</li>\n<li><strong>磁力感应</strong> （金）你能感知携带总量为1负载或更多金属物品的生物；这是射程30尺的模糊感官。若生物本身由金属构成或者具有金特征，你就能通过磁力感应来感知到它，就如同这是精确感官一般。此外，你可以持续地获知哪个方向是北方。</li>\n<li><strong>机械性感受</strong> （气）你能看到@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}生物和物体。它们在你看来是半透明的轮廓，对你来说它们处于@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。</li>\n<li><strong>震颤感知</strong> （土）你获得30尺的震颤感知（模糊感官）。</li>\n<li><strong>木材感应</strong> （植物 木）你能感知携带总量为1负载或更多木制物品的生物；这是射程30尺的模糊感官。若生物本身由木材构成或者具有植物或木特征，你就能通过木材感应来感知到它，就如同这是精确感官一般。</li>\n</ul>\n<hr />\n<p><strong>升阶 (6环)</strong> 持续时间增加至8小时，你能花费1分钟来重新校准感官，将你当前的元素感官切换为另一个不同的元素感官。</p>",
+            "duration": "10分钟"
+        },
+        "Elemental Servitor": {
+            "name": "元素仆从 Elemental Servitor",
+            "cost": "总价值为2gp x 法术环级 x 目标等级的珍稀物品和贡品（见后文）",
+            "description": "<p>你恳求一名元素领主，希望它选择并派来一名元素仆从，仆从的等级不超过仪式的法术环级的2倍。次要施法者会为你说明你需要哪方面的协助以及为什么需要这种协助；若任务内容极其适合这位元素领主，GM可以为次要交涉检定提供环境加值，或者判定检定自动得到大成功。若你在没有充分理由的情况下使用该仪式，仪式会自动得到大失败的结果。</p>\n<p>若仪式成功，你必须根据任务所需的持续时间以及危险程度来向仆从支付报酬。报酬的开销至少要与和生物等级相同的一个消耗性物品一样多，要说服生物与你并肩作战，则开销通常要与和生物等级相同的一个永久魔法物品一样多。你的贡品应当与元素领主的个人喜好一致或者至少与对应元素一致——比如鲜花和盆栽植物之于木元素、宝石之于土元素等等。</p>\n<p>你也可以选择指名你认识的一名元素位面的原生存在，这同样需要满足前文中的限制。此类生物可能回提出某种私人要求来作为服务的报酬，比如帮个忙或者进行一场碰运气的游戏。</p>\n<hr />\n<p><strong>大成功</strong> 你的元素领主派遣了一名仆从，仆从的报酬开销仅有正常的一半。若你要求指名特定的元素生物帮忙，元素领主很可能会派遣此生物，除非这些生物当前在忙其他事情而无暇他顾。</p>\n<p><strong>成功</strong> 你的元素领主派遣了一名仆从。</p>\n<p><strong>失败</strong> 你的元素领主不会派遣仆从。</p>\n<p><strong>大失败</strong> 你的元素领主被冒犯了，它释放出了不满的信号，或者甚至可能派遣一个元素生物来斥责或攻击你，具体如何行事取决于你的元素领主的本性。</p>",
+            "duration": "见后文",
+            "time": "1天",
+            "primarycheck": "奥法或自然（专家）",
+            "secondarycheck": "交涉",
+            "secondarycasters": "2"
+        },
+        "Summon Elemental Herald": {
+            "name": "召唤元素使者 Summon Elemental Herald",
+            "range": "100尺",
+            "duration": "持续至你的下个回合结束为止",
+            "description": "<p>你通过冥想将自身与不同的元素位面形成紧密的联系，这种联系让你能召唤一位元素领主的使者。使者会以自然灾害的形式凝聚在你的敌人身上。使者占据一个超大型生物的空间。当你施放该法术时，从后文的元素使者中选择其一进行召唤；若你是神术施法者且信仰某个元素领主的话，则必须选择与你的神祗的元素相符的选项。该法术会获得特征（气、土、火、金、水或木）来适应你的选择。</p>\n<ul>\n<li><strong>气</strong> 速度 飞行60尺; <strong>降临</strong>(气) <em>风暴突袭（Supercell Front）</em> 气元素使者以扭曲龙卷风的形式降临，超高速的狂风猛烈袭击你的敌人。@Template[type:emanation|distance:100]区域内的每个敌人承受@Damage[10d8[bludgeoning]]伤害（基础强韧豁免）; <strong>离去</strong> (气) <em>沉降飓风（Twister Downdraft）</em> 每个@Template[type:line|distance:60]区域的敌人必须尝试一次强韧豁免。豁免失败的生物若身处地面之上则会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}，若身处空中则会下降40尺。若这种强制移动把生物下降到地面上，该生物会承受坠落伤害。</li>\n<li><strong>土</strong> 速度 50尺，掘地30尺; <strong>降临</strong>(土) <em>地壳抬升（Tectonic Rise）</em> 土元素使者从地表突然隆起，使得@Template[type:emanation|distance:50]区域的大地崩裂。弥漫区域的每个敌人由于飞溅的碎石而承受@Damage[10d6[slashing]]伤害（基础反射豁免）。大失败的敌人会坠落30尺跌进裂缝内，承受坠落伤害（裂隙的两侧需要成功通过@Check[type:athletics|dc:15]检定来进行攀爬）; <strong>离去</strong> (音波)<em> 板块撞击（Plate Crash） </em>土元素使者沉入地面，裂隙两侧随着震耳欲聋的撞击声合并在一起，对@Template[type:emanation|distance:30]区域内的所有敌人造成@Damage[5d10[sonic]]伤害（基础强韧豁免）。大失败的生物@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}10分钟。</li>\n<li><strong>火</strong> 速度 60尺，飞行40尺; <strong>降临</strong>(火) <em>熔岩涌动（Magma Flow）</em> 火元素使者以活体岩浆的形式涌入该区域，对@Template[type:emanation|distance:60]区域内的所有敌人造成@Damage[10d6[fire]]伤害和[[/r 3d6[persistent,fire]]]伤害（基础反射豁免）; <strong>离去</strong>(火) <em>爆炎漩涡（Flame Vortex）</em> 火元素使者向前猛冲，在消失之前化身为一道火柱，这对60尺线形区域内的每个敌人造成@Damage[6d6[fire]]伤害以及[[/r 3d6[persistent,fire]]]伤害（基础反射豁免）。</li>\n<li><strong>金</strong> 速度 50尺，飞行50尺; <strong>降临</strong>(金)<em> 裂片之云（Shard Cloud）</em> 金元素使者以金属碎片以及静电构成的云团降临，对@Template[type:emanation|distance:50]区域内的所有敌人造成@Damage[4d8[slashing]]伤害和@Damage[4d12[electricity]]伤害（基础反射豁免）; <strong>离去</strong>(金) <em>锈蚀之雾（Rust Mist） </em>云团中的裂片快速锈蚀并附着在@Template[type:emanation|distance:50]区域的敌人身上，对区域内的金属生物和物体造成10d6点伤害（基础反射豁免），该伤害忽略硬度。无主物体在此豁免中自动得到大失败的结果。</li>\n<li><strong>水</strong> 速度 40尺，游泳60尺; <strong>降临</strong>(寒冷，水) <em>飓风汇聚（Hurricane Formation）</em> 水元素使者化身为小型飓风。@Template[type:emanation|distance:60]区域内的所有生物由于猛烈的降雨而承受 @Damage[4d10[bludgeoning]]伤害、且由于冰雹而承受@Damage[4d10[cold]]伤害，这些伤害具有基础强韧豁免; <strong>离去</strong>(寒冷，水) <em>洪灾泛滥（Cataclysmic Deluge）</em> 飓风崩塌成滔滔洪水，对@Template[type:cone|distance:120]区域内的所有敌人造成@Damage[6d8[bludgeoning]]伤害（基础强韧豁免）。豁免失败的生物会被向着远离使者的方向推离20尺（大失败为40尺）。</li>\n<li><strong>木</strong> 速度 50尺，掘地30尺; <strong>降临</strong>(植物，木) <em>卓越根系（Advantageous Roots）</em> 木元素使者由庞大且复杂的根系构成并从地面上暴起。@Template[type:emanation|distance:50]区域的每个敌人由于被大量根茎刺穿身体和肢体而承受@Damage[6d10[piercing]]伤害（基础反射豁免）。豁免失败的每个敌人的速度会承受-10点状态减值，持续至使者离去为止; <strong>离去</strong>(植物，木) <em>重归大地（Retreat to Soil）</em> 根茎全部退回到土壤之中，这会对@Template[type:emanation|distance:50]区域的每个敌人造成@Damage[6d10[piercing]]伤害（基础反射豁免）。由于初始豁免而承受速度减值的任何生物均会自动承受[[/r 2d6[persistent,bleed]]]伤害。在根系退却之后，弥漫区域的地面会变为困难地形。</li>\n</ul>"
+        },
+        "Bountiful Oasis": {
+            "name": "丰饶绿洲 Bountiful Oasis",
+            "duration": "1年",
+            "time": "1天",
+            "cost": "从仪式现场周围1000英里范围内的自然生成的湖泊中取出的3滴淡水",
+            "primarycheck": "自然（专家）",
+            "secondarycheck": "自然或生存",
+            "description": "<p>你重新定向地下湖泊以及其他周遭水源的流向，让此处的地面涌现出丰富的自然泉水。这种泉水是清洁的淡水水源，非常适宜引用、耕种和支持各种形态的生命。这眼泉水会在每日的黎明时分自我净化，清除毒素和污染物，前提是这些物质的等级不超过泉水环级的两倍。</p>\n<p>仪式创造的泉水会自动适应仪式执行地的地形；距离来说，它会在复盖沙子的干旱地区创造沙漠绿洲，在山脉中创造天然的温泉。</p>\n<hr />\n<p><strong>大成功</strong> 一处小池塘或者绿洲出现在此处，由一处天然泉水提供水源，该泉水会排出足够维持一个小型定居点的纯净饮用水。泉水周围@Template[type:burst|distance:20]区域的土地迸发出活力，因泉水的灌溉而充满生机。各种适合该地域、且能够结出果实的植物和其他作物可以立即在此生根并健康成长。 </p>\n<p><strong>成功</strong> 同大成功，但是所谓绿洲只不过是一个小水池，泉水派出的纯净饮用水仅能维持大约十几个人的生计，周遭的土地没有任何植物长出来。</p>\n<p><strong>失败</strong> 你未能改变水的流向。</p>\n<p><strong>大失败</strong> 你创造出一个小水池，池中填满了恶臭的死水，它永远不会干涸，而且还会吸引携带疾病的昆虫与患病的生物来利用这些污水。</p>"
         }
     }
 }
