@@ -8504,6 +8504,274 @@
             "primarycheck": "自然（大师）",
             "secondarycheck": "手艺，交涉",
             "secondarycasters": "2"
+        },
+        "Burrow Ward": {
+            "description": "<p>你将周围的土地固化，使其阻碍掘地的生物。无法在岩石中掘地的生物也无法在此区域内掘地。此类生物若已经身处于该区域的地下位置，就必须尝试1次强韧豁免，失败就会被驱离至该区域的地表。豁免成功的生物会被迫离开该区域，但仍旧能留在地下。能够在岩石中掘地的生物会将此区域视同为困难地形。</p>\n<hr />\n<p><strong>升阶 (5环)</strong> 你能制造出@Template[type:emanation|distance:30]区域。</p>",
+            "name": "防掘屏障 Burrow Ward",
+            "duration": "维持,至多1分钟"
+        },
+        "Cave Fangs": {
+            "name": "洞窟獠牙 Cave Fangs",
+            "description": "<p>尖锐的流岩从地板或房顶上形成并突刺出来，对区域内的生物造成@Damage[6d6[piercing]]伤害（基础反射豁免）。这些尖锐的凸起十分密集，使得区域在持续时间内成为了困难地形。当法术结束时，这些凸起会化为尘土。你能解消该法术。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 2d6]]。</p>",
+            "range": "60尺",
+            "duration": "1分钟"
+        },
+        "Engrave Memory": {
+            "name": "雕刻记忆 Engrave Memory",
+            "description": "<p>你把记忆储存在一块石头里。这段记忆可以传达至多10分钟的素材。当你施放该法术时，选择一个命令词。这么做会在石头上雕刻出一个符号，该符号会给出这个命令词的提示。任何生物都可以通过使用一个动作说出命令词来读取存储在石头中的记忆。</p>\n<p>在记忆被传达后，石头便会崩解为尘埃，但在接下来的24小时内，启动石头的生物会准确无误地记得这些记忆。在此之后，该生物就必须依赖正常的记忆力来回忆石头所赋予的记忆。被传达的记忆究竟能提供何等好处则由GM判断，比如与记忆相关的检定获得环境加值、或者记忆所涵盖的主题相关的明确信息。</p>",
+            "target": "一块至少有1负载的石头",
+            "range": "接触",
+            "duration": "无限",
+            "time": "1分钟"
+        },
+        "Exploding Earth": {
+            "name": "爆裂土块 Exploding Earth",
+            "target": "一个生物",
+            "description": "<p>你向1个生物投掷一块硬质的泥土球，抛射物会在撞击时爆炸。尝试1次法术攻击对抗目标的AC。若你命中，你会造成@Damage[4d6[bludgeoning]]伤害外加1d6点钝击溅射伤害。重击时，初始伤害翻倍，溅射伤害不变，你命中的目标必须成功通过强韧豁免检定，失败则会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 伤害增加2d6点，溅射伤害增加[[/r 1d6]]。</p>",
+            "range": "120尺"
+        },
+        "Glass Form": {
+            "name": "玻璃形态 Glass Form",
+            "description": "<p>你为目标赋予了无光泽且透明的玻璃的性质。目标变得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，没有气味，且不会流血。它获得对抗酸液、寒冷、电击和穿刺伤害的5点抗力，外加对抗音波和钝击伤害的5点弱点。在此形态下的生物会受到粉碎音波法术的影响，就如同它是无主物体一般。每当目标承受到该法术赋予的抗力或弱点相同类型的伤害时，其持续时间都会减少1分钟。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.0lYbjDI2N3xVl24E]{法术效果: 玻璃形态}</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 抗力与弱点均增加5点。</p>",
+            "target": "一个自愿生物",
+            "range": "接触",
+            "duration": "10分钟"
+        },
+        "Glass Shield": {
+            "name": "玻璃护盾 Glass Shield",
+            "description": "<p>你召唤出一层透明的玻璃来保护自身免受伤害。该戏法的功能如同<em>@UUID[Compendium.pf2e.spells-srd.Item.TVKNbcgTee19PXZR]{护盾术 Shield}</em>一般，不过其硬度为2点，具有4点生命值。若护盾破碎，只要打破护盾的生物位于5尺范围内，它就必须成功通过基础反射豁免，失败则会由于玻璃碎片而承受@Damage[1d4[piercing]]伤害。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.oDDS6D2KTjpbA491]{法术效果: 玻璃护盾}</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 护盾的硬度为4点，生命值为8点，伤害增加至1d4 + 你的施法属性调整值。</p>\n<p><strong>升阶 (5环)</strong> 护盾的硬度为7点，生命值为16点，伤害增加至2d4 + 你的施法属性调整值。</p>\n<p><strong>升阶 (7环)</strong> 护盾的硬度为10点，生命值为24点，伤害增加至3d4 + 你的施法属性调整值。</p>\n<p><strong>升阶 (9环)</strong> 护盾的硬度为12点，生命值为32点，伤害增加至4d4 + 你的施法属性调整值。</p>",
+            "duration": "直至你的下个回合开始为止"
+        },
+        "Grasping Earth": {
+            "name": "握敌之地 Grasping Earth",
+            "description": "<p>岩石与泥土构成手掌形状的凸起物抓住生物并将其埋葬。当你施放法术时位于区域内的每个生物、以及法术持续时间内在区域内结束回合的生物，都必须尝试1次强韧豁免。每轮当你首次维持该法术时，每个仍旧被泥土@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}的生物会承受@Damage[1d6[bludgeoning]]伤害，每个被泥土@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}的生物会承受@Damage[2d6[bludgeoning]]伤害。生物可以尝试@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}，投掷检定对抗你的法术DC。</p>\n<hr />\n<p><strong>成功</strong> 生物不受影响。</p>\n<p><strong>失败</strong> 生物被泥土擒抱。</p>\n<p><strong>大失败</strong> 生物被泥土禁足束缚。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 你维持法术时造成的钝击伤害提升，对被擒抱的生物增加1d6点，对被束缚的生物增加2d6点。</p>",
+            "range": "60尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Heaving Earth": {
+            "description": "<p>你重击地面，由此释放出一股冲击波，穿过你打击的地表并传递至目标。在达到无法穿过的坚固表面时，比如石质地板，该效果就会结束。在目标和你之间的每个生物都会被震波摇晃，因此必须尝试反射豁免对抗你的法术DC。豁免失败的生物会被向着远离你的方向被推离10尺。</p>\n<p>震波在到达目标位置时便会发生爆炸，对目标抛洒泥土与岩石，这会造成@Damage[12d10[bludgeoning]]伤害（基础反射豁免）。目标在对抗爆炸的豁免中失败时也会被向后推离10尺并@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。成为爆炸目标的生物不需要对震波进行豁免。</p>\n<hr />\n<p><strong>升阶 (9环)</strong> 由你选择一名额外目标承受冲击波造成的爆炸，该目标要位于你与最终目标之间的直线路线上。</p>",
+            "name": "轰地术 Heaving Earth",
+            "target": "地面上的一个生物或一件物体",
+            "range": "120尺"
+        },
+        "Instant Pottery": {
+            "description": "<p>你将泥土中原料从环境中提取出来，之后将其塑造成1个或多个陶制物体，这些物体共计可以达到轻负载。或者，你也可以对之前使用该法术创造的物体使用该法术，用于延长其持续时间。由此创造的物体无法具有精致的艺术性或复杂的可动部件，它无法用于满足开销或类似的要求，也不能由黏土或泥土之外的物质塑造而成。每件物体明显都是临时性的魔法造物，因此无法被售卖，也无法冒充成贵重物品。</p>\n<hr />\n<p><strong>升阶 (2环)</strong> 你能创造的物品共计至多可达1负载。它们能存在8小时。</p>\n<p><strong>升阶 (3环)</strong> 你能创造的物品共计至多可达2负载。它们能存在24小时。</p>",
+            "name": "即刻制陶 Instant Pottery",
+            "range": "10尺",
+            "duration": "1小时",
+            "time": "1分钟"
+        },
+        "Interposing Earth": {
+            "description": "<p><strong>触发</strong> 你成为了打击的目标、或者要尝试一次反射豁免对抗会造成伤害的区域效果。</p>\n<hr />\n<p>你竖起一道脆弱的泥土障壁来保护自身免受伤害。这道障壁有1英寸厚、5尺宽、5尺高、且必须设置在2个方格之间的边界上。这道屏障会出现在你和触发效果的源头之间，为你在对抗触发效果时提供标准掩蔽。当你在障壁仍然存在、却由于触发效果而将要承受伤害时，障壁会被摧毁，对你造成的伤害因此降低2点。障壁会在原地存在3轮（或直至被摧毁为止）。它具有AC 5，2点硬度和5点生命值。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 伤害降低量增加至8点，障壁的硬度增加至8点，其生命值增加至20点。</p>",
+            "name": "护身土障 Interposing Earth",
+            "duration": "3轮"
+        },
+        "Pave Ground": {
+            "name": "铺设路面 Pave Ground",
+            "description": "<p>你把地面变得平整、将低矮的障碍物推向一旁。区域内由泥土、碎石、沙子以及类似物质构成的非魔法困难地形或高等困难地形变为普通地形。对于区域内由泥土等物质构成的魔法困难地形和高等困难地形，你可以尝试1次反制检定，若检定成功，那么在持续时间内你能让它变为普通地形。该法术造成的地面变化速度并不快，因此不会导致任何人失去立足点，也不能通过清除能让人隐蔽的地形特征来让人失去隐蔽。根据GM的判断，如果你在没有地基可供平整和清除的“地面”上施放该法术，比如湖面上结的冰，该法术就会失败。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 法术区域增加至沿着地面的@Template[type:line|distance:120]区域。</p>\n<p><strong>升阶 (6环)</strong> 法术区域增加至沿着地面的@Template[type:line|distance:500]区域。</p>",
+            "duration": "维持,至多1分钟"
+        },
+        "Rubble Step": {
+            "name": "步步生砾 Rubble Step",
+            "description": "<p>目标身后会留下一条由不稳定的瓦砾所构成的痕迹，这通常由石头组成，但也可以选择另一种土质材料，比如松散的砂砾或泥土。在2轮内，当目标自愿从某个空间移出、且如果目标持续与地面维持接触时，该空间内的地面将会成为困难地形。在法术的持续时间内，此困难地形的效果会一直持续下去。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 目标在一分钟内会在身后留下困难地形，而非原本的2轮，法术持续时间变为10分钟。</p>",
+            "target": "一个自愿生物",
+            "range": "接触",
+            "duration": "1分钟"
+        },
+        "Sand Form": {
+            "name": "砂砾形态 Sand Form",
+            "description": "<p>你为目标的身躯以及装备赋予宛如沙子的外观。目标获得对抗穿刺和挥砍伤害的5点抗力，没有气味，且不会流血。在沙地的地形中，即便身处户外开阔地，目标也有足够的隐蔽性来尝试躲藏。每当目标承受到该法术赋予的抗力相同类型的伤害时，其持续时间都会减少1分钟。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.qO1Gj9l8gh5CMEbf]{法术效果: 砂砾形态}</p>\n<hr />\n<p><strong>升阶 (5环)</strong> 抗力为10点。</p>\n<p><strong>升阶 (7环)</strong> 抗力为15点。</p>",
+            "target": "一个自愿生物",
+            "range": "接触",
+            "duration": "10分钟"
+        },
+        "Conductive Weapon": {
+            "description": "<p>你能通过金属武器引导强烈的电流，用它来轰击物品命中的任何人。目标变为+1电击武器。若该武器攻击的任何目标正穿戴着金属护甲、或者主体由金属制成的护甲的话，电击符文的电击伤害骰会变为[[/r 1d12]]。</p>",
+            "name": "导电武器 Conductive Weapon",
+            "target": "一个无主、或者由你或自愿盟友持用着的金属武器",
+            "range": "接触",
+            "duration": "1分钟"
+        },
+        "Sliding Blocks": {
+            "name": "飘行石方 Sliding Blocks",
+            "description": "<p>你呼唤出至多6个5尺边长的石质方块，能够以1个手势来缓慢移动它们。每个方块都会出现在射程中的任意空间内，而且它们也可以漂浮起来。若你在被占据的空间和无法容纳方块的空间内呼唤方块，方块就不会出现。每个5尺边长的方块都能被人攀爬，这需要成功通过@Check[type:athletics|dc:10]检定；它的AC为10，硬度为10点，有40点生命值。若有任何方块与你之间的距离超出了法术的射程，它便会立即崩溃成尘土。</p>\n<p>每当你维持该法术时，你能移动至多2个被呼唤的方块，每个方块可以往任意方向移动至多10尺，这也包括向垂直方向移动。每当你维持法术时，都可以选择移动不同的方块。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 方块获得10点额外生命值，每当你维持该法术时，可以将自身选择的方块移动额外5尺距离。</p>",
+            "range": "120尺",
+            "duration": "维持,至多10分钟"
+        },
+        "Detect Metal": {
+            "name": "侦测金属 Detect Metal",
+            "description": "<p>你将自身与磁场同调，变得能够意识到区域内是否存在金属物体、矿脉和沉积物。你能够选择性忽略那些已经意识到的金属，比如你自身以及盟友穿戴和携带的装备。</p>\n<p>你能侦测到被幻术（比如<em>@UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{隐形术 Invisibility}</em>）藏匿的金属，但前提是幻术的环级比你的侦测金属环级更低。在对抗那些具有欺骗性的幻术时，如果非金属物体被伪装成金属物体的话，侦测金属总是能注意到对象缺乏金属。然而，当欺骗内容将金属物体伪装成另一种金属物体时，比如把铜币伪装成金币时，侦测金属就只能显示出有金属存在，而非其具体的类型，即便你的侦测金属的环级超过了幻术效果也是如此。</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 你能辨识出自身侦测到的所有金属的种类。如果将一种金属掩藏成另一种金属的魔法效果的法术环级低于你的侦测金属法术，那么你的法术就能够克服此类欺骗性幻术法术。</p>"
+        },
+        "Tremor Signs": {
+            "name": "震颤讯号 Tremor Signs",
+            "range": "120尺",
+            "description": "<p>你向着目标传输一系列震动，其长度不超过一段短句。若射程内的目标与你都接触着同一个地面主体，那么震动就会通过地面传递给目标。你与目标之间不需要有效果线或视觉线，因此同一个建筑的另一层楼的目标也是有效目标。</p>\n<p>目标能够以震动进行简短的回应，这需要使用反应动作、或者在它们的下个回合使用自由动作，而且它们必须位于法术射程内才能这么做。若目标进行回应，它们的回复也会通过震动的感觉反馈给你，就像最初的信息一样。只有在目标明确了解震动的含义时，这种震动才能传递明确的信息，比如3次震动代表某个特定的警报，2次代表其他内容等等。你和目标双方都不能使用该法术为震动赋予更加细微或者全新的含义。</p>\n<p>若有生物位于法术射程内向着任意目标传递震动的路途中的任意位置、且该生物具有颤动感知的话，它就能够感受到该法术产生的震动。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 法术至多以5个生物为目标。</p>",
+            "target": "一个生物"
+        },
+        "Ferrous Form": {
+            "description": "<p>你的身体转变为具有柔韧性的钢铁。你获得对物理伤害的10点抗力，但精金除外。你免疫死亡效果、疾病、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、和虚空；当你施放该法术时，任何已经具有的上述状态都会被暂停，直至法术结束为止，法术结束之后会按照原本剩余的持续时间重新生效。尽管你由钢铁构成，但是你不会成为锈蚀云（Rust Cloud）法术以及类似的锈蚀（rusting）效果的对象。</p>\n<p>你的拳头打击具有1d10的伤害骰，你的金法术造成的伤害多1个额外骰子（与法术原本使用的伤害骰以及伤害类型一致）。你能以内在法术施放<em>尖锐飞针（Needle Darts）</em>；施放该法术的动作从2个减少至1个。</p>\n<p>在该形态下，你不需要呼吸。你自身的负载翻倍（若你是小体型则为6，中体型则为12），你会因为密度过大而无法在水中游泳，且会自动沉底。你能解消该法术。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.qD1OA6dx8h33nKFC]{法术效果: 钢铁形态}</p>\n<hr />\n<p><strong>升阶 (9环)</strong> 抗力增加至15点。</p>",
+            "name": "钢铁形态 Ferrous Form",
+            "duration": "1小时"
+        },
+        "Field of Razors": {
+            "name": "刀锋丛生 Field of Razors",
+            "description": "<p>你将一大块自身选择的金属捏在手中磨成粉尘，并将它吹向空中，在目的地成长为纠缠成一团、且带有锋锐尖刺的金属线。此金属必须是当前你的随身物品中具有的类型。被覆盖的区域会变为困难地形。移动穿过该区域的生物，每穿过1个方格就会承受[[/r 5[slashing]]]伤害。</p>\n<p>若身处金属丛中的生物承受了挥砍、穿刺或持续流血伤害，你能花费反应动作来从伤口流出的血液中生长出更多的铁线，使其变为额外一丛金属，把爆发区域扩大5尺。你能够以此方式将区域扩大4次，最高为@Template[type:burst|distance:40]区域。</p>\n<p>金属线由你选择的金属构成，它能如常激活抗力、弱点以及类似的性质。法术结束时，这些金属会重新构成为你的随身物品。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 每个方格的伤害增加2点。</p>",
+            "range": "60尺"
+        },
+        "Fold Metal": {
+            "description": "<p>你将目标物体折叠弯曲成不大于一个鸡蛋大小的光滑金属球。只有当你解消法术、法术持续时间结束、或者球体碰触到水或火时，目标才会恢复到原始的形状，以较先发生者为准。</p>\n<p>看到被改变形状的物体的生物能尝试一次察觉检定对抗你的法术DC，用于注意到金属球可能实际上并非看起来的样子。若目标物体具有魔法，它会保留自身的魔法灵光，但是无法被穿戴、附着或启动。</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 法术持续时间变为1小时。</p>",
+            "name": "折叠金属 Fold Metal",
+            "target": "1个至多为5负载的无主金属物体",
+            "range": "接触",
+            "duration": "10分钟"
+        },
+        "Magnetic Dominion": {
+            "description": "<p>金元素位面激荡着的磁场从你身上辐射开来，仅凭着你的念想便可以引导和重塑它。当你施放该法术时，你能够将每个受影响的目标重新定位至弥漫区域内任何其他未被占用的空间里。你不能以此方式移动自己。非自愿生物可以在成功通过反射豁免后抗拒这种移动。</p>\n<p>当你知晓所有豁免结果后，所有生物会同时移动，由你决定目标以你选择的何种顺序占据各自的空间。你能够将一个生物移动至先前被其他生物所占据的空间，但前提是原先的生物也作为此次移动的一部分被重新定位至其他位置。若你将目标移动至空中，目标会在被移动后无害降落至地面上（除非它选择不这么做）。</p>\n<p>你能选择受到8环级的@UUID[Compendium.pf2e.spells-srd.Item.24U1b9K4Lj94cgaj]{磁力排斥 Magnetic Repulsion}影响，其持续时间与<em>掌控磁场</em>.相同。每当你维持该法术时，都能移动位于弥漫区域内的一个生物，受到与前文一致的目标限制和规定。</p>",
+            "name": "掌控磁场 Magnetic Dominion",
+            "target": "任意数量的穿戴金属护甲的生物、由金属构成的生物、具有金特征的生物、以及无主金属物体",
+            "duration": "维持,至多1分钟"
+        },
+        "Vitrifying Blast": {
+            "description": "<p>你向着锥形区域发射玻璃破片，并使得扎入生物体内的破片将其局部身体也转化为玻璃。碎片对区域内的生物造成@Damage[8d6[piercing]]伤害，其效果基于每个生物的豁免检定。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标承受一半伤害，并且获得对音波和钝击伤害的3点弱点，持续1分钟。</p>\n<p><strong>失败</strong> 目标承受全额伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，并且获得对音波和钝击伤害的弱点。弱点的数值等同于3 x 从该法术中获得的缓慢值。目标必须在自身回合结束时尝试一次强韧豁免；这种持续性豁免具有失能特征。豁免失败时，生物的缓慢值增加1点（大失败增加2点），最高达到@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 3}。豁免成功能让生物的缓慢值降低1点（大成功降低2点）。若目标在结束自身回合时缓慢值为0点，该效果就会结束。</p>\n<p><strong>大失败</strong> 同失败，但是目标起始为@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 1d6]]。</p>",
+            "name": "玻化冲击 Vitrifying Blast",
+            "range": "60尺",
+            "duration": "可变"
+        },
+        "Weaken Earth": {
+            "description": "<p>你削弱了泥土与石料之间的结构强度。若你的目标具有硬度，则能够影响一个连续物体（至多为5尺立方大小）、或者1个生物，将其硬度降低5点，最低降至0点。若目标没有硬度，它会获得对抗物理伤害的3点弱点。具有强韧调整值的目标能尝试强韧豁免检定，成功则不受该效果影响。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.uD13zIE22foqmFgt]{法术效果: 弱化土质}</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 硬度降低5点，影响的连续物体的大小增加1个5尺边长的方形，弱点增加3点。</p>",
+            "name": "弱化土质 Weaken Earth",
+            "target": "一个生物、无主物体或者由泥土或石材制成的危害或构造",
+            "range": "接触",
+            "duration": "1分钟"
+        },
+        "Mantle of the Melting Heart": {
+            "description": "<p>你身上被一层液态金属覆盖层所包裹，它为你的护甲和皮肤镀上了一层油光。随着施放该法术，从后文的选项中选择其二。以具有专注（concentrate）特征的单动作，你能选择其中1个能力变更为列表中的另一个不同选项。</p>\n<ul>\n<li><strong>铜芯</strong> 你将电能引向自己，然后再将其驱散。你获得10点电击抗力。所有距你30尺范围内的电效果必须成功通过反制检定对抗你的法术DC，否则将会以你且只以你为目标。</li>\n<li><strong>金皮</strong> Your body gains the chemical inertness of gold, barely reacting to substances that would otherwise greatly disturb your physiology. You become immune to poison and disease and gain a +2 circumstance bonus to your checks against any poison and disease effects currently affecting you.</li>\n<li><strong>Reactive Touch</strong> Your touch reacts easily with other metals. Any metal that touches you or that you touch takes @Damage[2d6[acid]] damage that bypasses Hardness.</li>\n<li><strong>Weighted Grasp</strong> Your arms become long cables, your fists heavy as anchors. You gain a cabled fist unarmed attack with the disarm, finesse, reach, and trip traits and that's in the flail group. Your cabled fist deals @Damage[1d4[bludgeoning]] damage plus an additional @Damage[1d6[poison]] damage and Grab.</li>\n</ul>",
+            "name": "钢躯熔心 Mantle of the Melting Heart",
+            "duration": "1分钟"
+        },
+        "Blazing Armory": {
+            "description": "<p>只要你懂得魔法，就绝不会陷入手无寸铁的境地。你让模拟任意常见简易或军用武器的燃焰在目标的手中物质化。目标必须具有一只空着的手才能持握武器，否则该武器就会掉落在目标所占据空间的地面上。燃焰武器被视同为<em>+1强击武器</em>，但它的伤害类型变为火焰。此伤害类型无法通过使用多用特征、模块化特征或者类似的手段来改变。</p>\n<p>投掷武器会在打击完成后重新在目标的手中物质化。当你选择使用弹药的远程武器时，持用者必须仍旧使用正常数量的动作来重新装填武器，不过这么做会引发武器自动生成弹药；此效果就如同正常的弹药一般，燃焰武器无法使用其他类型的弹药。</p>\n<p>除了你和目标之外的任意生物若尝试碰触燃焰武器、对燃焰武器作出打击、或者尝试对燃焰武器@UUID[Compendium.pf2e.actionspf2e.Item.Dt6B1slsBy8ipJu9]{卸武 Disarm}时，每次都会承受@Damage[1d6[fire]]伤害。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 你能以至多5个自愿生物为目标，且能为每个目标选择不同的武器。此武器被视同为<em>+1强击炽焰</em>武器。</p>\n<p><strong>升阶 (6环)</strong> 同4环，但是武器被视同为<em>+2高等强击炽焰</em>武器。</p>\n<p><strong>升阶 (8环)</strong> 同4环，但是武器被视同为<em>+3高等强击高等炽焰</em>武器。</p>\n<p><strong>升阶 (10环)</strong> 同4环，但是武器被视同为<em>+3上等强击高等炽焰</em>武器。.</p>",
+            "name": "燃焰武装 Blazing Armory",
+            "target": "一个自愿生物",
+            "range": "30尺",
+            "duration": "5分钟"
+        },
+        "Cauterize Wounds": {
+            "name": "烧灼伤口 Cauterize Wounds",
+            "description": "<p>你用火焰封住流血的创口。任何具有持续流血伤害的目标都能够选择承受[[/r 1[fire]]]伤害。若这么做，则能够尝试从自身的持续流血伤害中恢复过来，且由于获得极为有效的援助而使用较低的DC。在法术的持续时间内，你能使用具备专注特征的单动作，来对法术的一个目标来重复该效果。</p>",
+            "duration": "1分钟",
+            "target": "至多5个自愿生物",
+            "range": "60尺"
+        },
+        "Cinder Swarm": {
+            "description": "<p>你为一大群火红昆虫赋予生命力并将其喷吐出来。集群会蜂拥在目标身边并形成@Template[type:emanation|distance:5]区域的环绕它的灵光。目标和灵光内的敌人会受到效果影响，具体影响取决于你选择的昆虫类别。在之后的轮数内，每轮你第一次维持该法术时，你会对目标以及所有位于昆虫灵光内的敌人重复该效果。从后述昆虫中选取一类来判断效果内容。</p>\n<ul>\n<li><strong>火蚁</strong> 你创造出炽热的飞行火蚁，这会造成@Damage[3d6[piercing]]伤害外加[[/r 2d6[persistent,fire]]]伤害（基础反射豁免）。为了尝试从火蚁的啃咬中逃脱，豁免失败的生物必须向着你所选择的方向移动5尺；该情况发生于所有生物都尝试过豁免之后，且主目标的移动不会让新生物进入到灵光之中。</li>\n<li><strong>火萤</strong> （失能）你制造出一群火萤，造成@Damage[3d6[fire]]伤害，而且能造成目眩或目盲，具体取决于目标的强韧豁免。</li>\n</ul>\n<hr />\n<p><strong>大成功</strong> 生物不受伤害。</p>\n<p><strong>成功</strong> 生物承受一半伤害，并且在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>\n<p><strong>失败</strong> 生物承受全额伤害，并且在1轮内陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}。之后它会临时免疫灰烬虫群造成的目盲，持续24小时。</p>\n<p><strong>大失败</strong> 同失败，但是造成双倍伤害，且目盲1分钟。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 火蚁造成的穿刺伤害和火萤造成的火焰伤害增加[[/r 2d6]]。</p>",
+            "name": "灰烬虫群 Cinder Swarm",
+            "target": "一个生物",
+            "range": "60尺",
+            "duration": "维持,至多1分钟"
+        },
+        "Dehydrate": {
+            "description": "<p>你搅动着区域中所有物质之中的内在之炎，将水分排出。区域内的所有生物承受[[/r 1d6[persistent,fire]]]伤害（基础强韧豁免）；具有水或植物特征的生物得到的成功度结果要比投掷结果差1阶。当生物的持续伤害结束时，该法术对这个生物来说也随之结束了。</p>\n<p>受<em>脱水咒</em>影响的生物在自身的每个回合结束时要尝试一次额外的强韧豁免，此次豁免在判断持续伤害是否恢复之前进行。如果该生物在过去1轮内喝过水或者以类似的方式摄入水分的话（喝水通常需要消耗单动作），它就可以不尝试这次额外豁免。</p>\n<hr />\n<p><strong>成功</strong> 生物不承受额外效果。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续至它的下个回合结束为止。</p>\n<p><strong>大失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，持续至它的下个回合结束为止。</p>\n<hr />\n<p><strong>升阶 (+2)</strong> 射程增加10尺，爆发区域增加5尺，持续火焰伤害增加[[/r 3d6]]。</p>",
+            "name": "脱水咒 Dehydrate",
+            "range": "30尺",
+            "duration": "1分钟"
+        },
+        "Eat Fire": {
+            "name": "食火咒 Eat Fire",
+            "description": "<p><strong>触发</strong> 你将要承受火焰伤害。</p>\n<hr />\n<p>你吞噬并摄入火焰，减缓它对你造成的伤害。你获得对抗火焰伤害的5点抗力，持续至你的当前回合结束为止。在法术剩余的持续时间内，你能够使用口吐浓烟（Belch Smoke）动作。当你@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}、吸气或呼气（这也包括说话）时，法术结束。</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.BGv44XBGtD4zOJBd]{法术效果: 食火咒}</p>\n<p><strong>口吐浓烟 Belch Smoke</strong> <span class=\"pf2-icon\">1</span> 你呼出余下的烟雾，法术结束，并且在20尺射程内造成@Template[type:burst|distance:5]区域的烟云。烟云之中的所有生物获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，外界的所有其他生物对于烟云内的生物来说也会获得隐蔽。烟云持续1分钟，或者直至被强风吹散为止。</p>\n<hr />\n<p><strong>升阶 (+3)</strong> 抗力增加5点。</p>",
+            "duration": "直至你的下个回合结束为止"
+        },
+        "Falsify Heat": {
+            "description": "<p>你遮掩了活力之火的迹象，改变了目标表面上的体温。此幻术适用于所有感官，接触目标的生物能够尝试不相信此幻术。你能解消该法术。当你施放该法术时，从后述幻术体温中选择一种。</p>\n<ul>\n<li><strong>适中</strong> 目标的体温看起来与周遭的环境相同，使目标在冒充不死生物、冷血生物、或无生命物体（比如尸体）时，欺骗检定能获得+2环境加值。目标对于热能视域（Heatvision）以及其他能够感知热量的类似能力来说被视为@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}。</li>\n<li><strong>温热</strong> 目标的身体看起来散发着许多热量，目标在冒充温血生物的欺骗检定中获得+2环境加值。</li>\n</ul>\n<hr />\n<p><strong>升阶 (4环)</strong> 你能以至多10个生物为目标，你能为每名生物选择不同的体温。</p>",
+            "name": "篡改热能 Falsify Heat",
+            "target": "一个自愿生物或物体",
+            "range": "60尺",
+            "duration": "8小时"
+        },
+        "Fireproof": {
+            "target": "一个至多为10负载的物体",
+            "description": "<p>在法术的持续时间内，你能防止目标物品传到热量或被点燃。物品获得10点火焰抗力。此外，若要以该物品为目标使用具有火特征的效果则必须首先成功以反制检定对抗你的法术DC。</p>\n<hr />\n<p><strong>升阶 (4环)</strong> 持续时间为24小时。</p>\n<p><strong>升阶 (6环)</strong> 持续时间为无限。</p>",
+            "name": "抗火咒 Fireproof",
+            "range": "接触",
+            "duration": "1小时",
+            "time": "1分钟"
+        },
+        "Flame Dancer": {
+            "name": "炽焰舞者 Flame Dancer",
+            "target": "一个自愿生物",
+            "description": "<p>火焰包裹着目标的手和脚，它的双眼与头发如火焰般闪耀。目标的非武装打击造成额外@Damage[2d6[fire]]伤害。这些打击在重击时还会造成[[/r 2d4[persistent,fire]]]伤害。此外，当目标尝试对一个敌人@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气 Demoralize}时，它们能够尝试表演来取代威吓；在使用表演来挫败士气时，该动作会失去听觉特征，但会获得视觉特征，且目标在对不理解语言的生物尝试挫败士气时不会（由于对方不理解语言而）承受减值。</p>\n<hr />\n<p><strong>升阶 (7环)</strong> 火焰伤害增加至3d6点，持续火焰伤害增加至3d4点。若目标使用表演进行挫败士气时得到大成功结果，挫败士气检定的目标将对炽焰舞者的目标@UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{逃跑 Fleeing}1轮。</p>",
+            "range": "60尺",
+            "duration": "1分钟"
+        },
+        "Flames of Ego": {
+            "name": "自负之炎 Flames of Ego",
+            "description": "<p>美到让人难以置信的优雅烈焰在目标身上闪烁，使其变得过度自信和粗心大意。目标尝试1次意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标散产生@Template[type:emanation|distance:20]区域的明亮光（bright light），并在接着该范围40尺区域的昏暗光（dim light），而且还会在1轮内对自己陷入@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}。它必须在自己的回合花费至少1个动作来表现出你的自大与狂傲。使用动作要包含展示性的行为——比如使用@UUID[Compendium.pf2e.actionspf2e.Item.EEDElIyin4z60PXx]{演出 Perform}来炫耀——才能被视为满足此要求。</p>\n<p><strong>失败</strong> 同成功，但是持续时间为1分钟，且目标在其他生物对其作出敌对行为之前，无法首先对别的生物作出敌对行为。</p>\n<p><strong>大失败</strong> 同失败，不过目标必须在自己的回合至少花费2个动作来表现出你的自大与狂傲。</p>",
+            "duration": "可变",
+            "target": "一个生物",
+            "range": "120尺"
+        },
+        "Heatvision": {
+            "description": "<p>目标的视觉能够感知到生物和物体周遭散发的热能，这会赋予它射程为60尺的红外线视域，这是精确感官。这种视觉能够侦测到任何没有被坚实物体（比如墙壁）完全遮挡在后方的温血生物或热源；这能穿透由烟雾或黑暗提供的隐蔽。这同样能侦测到特别寒冷的生物或寒冷的发生源。几乎所有具有寒冷或火特征的生物都能被热能视域侦测到。不死生物和构装体通常与周遭的环境具有相同的温度，因此无法被热能视域所侦测。其他情况则由GM进行判断。</p>\n<hr />\n<p><strong>升阶 (6环)</strong> 持续时间会持续至你下一次进行日常准备之时，射程增加至120尺。</p>",
+            "name": "热能视域 Heatvision",
+            "target": "一个自愿生物",
+            "range": "接触",
+            "duration": "1小时"
+        },
+        "Illuminate": {
+            "name": "开启照明 Illuminate",
+            "description": "<p>你点燃区域内的所有使用火焰来提供照明的非魔法光源——比如蜡烛、提灯和灯台。你能选择让法术的弥漫区域小于其最大值，根据你的选择调整至任意距离。若某个光源由非自愿生物带着，该生物能尝试1次反射豁免来在光线变得明显之前将其熄灭。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 最大区域上限增加10尺。</p>"
+        },
+        "Rainbow Fumarole": {
+            "name": "虹焰迸发 Rainbow Fumarole",
+            "description": "<p><strong>区域</strong> 20尺半径、60尺高的圆柱体</p>\n<hr />\n<p>五颜六色的火焰从地面的裂缝中喷出，直冲云霄，与此同时还放出危险的烟气。当你施放该法术时，投掷1d8并按照表格判断虹焰迸发的效果。</p>\n<p>当你施法时，被捕捉到<em>虹焰迸发</em>区域内的任何生物都会承受伤害一栏所指示的伤害，并进行基础反射豁免，如果豁免失败，则会承受添加效果一栏所列出的效果。生物在穿过法术区域或者在法术区域内结束自身回合时，都必须再尝试一次豁免检定。<em>虹焰迸发</em>区域内的方格均为困难地形。</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>1d8</th>\n<th>颜色</th>\n<th>伤害</th>\n<th>添加效果</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>红色</td>\n<td>[[/r 50[fire]]]外加[[/r 2d6[persistent,fire]]]</td>\n<td>--</td>\n</tr>\n<tr>\n<td>2</td>\n<td>橙色</td>\n<td>[[/r 50[fire]]]</td>\n<td>击倒</td>\n</tr>\n<tr>\n<td>3</td>\n<td>黄色</td>\n<td>[[/r 20[fire]]]外加[[/r 20[bludgeoning]]]</td>\n<td>推离10尺</td>\n</tr>\n<tr>\n<td>4</td>\n<td>绿色</td>\n<td>[[/r 20[fire]]]外加[[/r 20[acid]]]</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}</td>\n</tr>\n<tr>\n<td>5</td>\n<td>蓝色</td>\n<td>[[/r 30[fire]]]</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}1轮</td>\n</tr>\n<tr>\n<td>6</td>\n<td>靛蓝</td>\n<td>[[/r 30[fire]]]</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}1分钟</td>\n</tr>\n<tr>\n<td>7</td>\n<td>紫色</td>\n<td>[[/r 30[fire]]]</td>\n<td>@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}1分钟</td>\n</tr>\n<tr>\n<td>8</td>\n<td>全部</td>\n<td>为每个受影响的生物选择颜色，使用选择颜色的伤害和添加效果；若有生物再次受影响，你能够选择不同的颜色。</td>\n</tr>\n</tbody>\n</table>",
+            "range": "500尺",
+            "duration": "1分钟"
+        },
+        "Signal Skyrocket": {
+            "description": "<p>使用一小撮金属粉末和火药，你能引发出一道炽热的红色能量，将其径直射向空中并引发爆炸，释放出一连串爆炸声响。久而久之，你甚至可以在完善法术的过程中为窜天焰定制出属于自己的图案和颜色。</p>\n<p>你无法改变窜天焰的射程和方向——它必须直线上升，且在达到最大射程的高度之前尽可能向上蹿升。若窜天焰在最大高度爆炸，至多10英里远的距离都能看到亮光，在晴朗的气候条件下，至多1英里远的距离都能听到爆炸声响。</p>\n<p>若窜天焰在小于法术爆发区域的封闭空间内爆炸，区域内的每名生物都会承受@Damage[1d10[sonic]]伤害，并根据反射豁免结果承受相应效果。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物承受一半伤害。</p>\n<p><strong>失败</strong> 生物承受全额伤害并且@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p><strong>大失败</strong> 生物承受双倍伤害并@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}1轮。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 音波伤害增加[[/r 1d10]]。</p>",
+            "name": "信号窜天焰 Signal Skyrocket",
+            "range": "1,000尺"
+        },
+        "Thermal Remedy": {
+            "name": "暖食疗法 Thermal Remedy",
+            "description": "<p>你能调整食物和饮料中苦味成分的配比水平，使其充分发挥食物的恢复和强化作用。从后文中列出的好处中选择其一。任何消耗目标饮料或食物的生物都能获得该好处。至多10个生物可以食用这餐饮食，单个生物消耗多份食物不会获得额外的好处。</p>\n<ul>\n<li>获得5点临时生命值。</li>\n<li>获得2点火焰抗力。</li>\n<li>对抗疾病的豁免获得+1环境加值。</li>\n</ul>\n<hr />\n<p><strong>升阶 (4环)</strong> 你的食疗能选择其中两种好处而非原本的一种。临时生命值增加至10点，火焰抗力增加至3点，对抗疾病的加值增加至+2点，持续时间变为2小时。</p>\n<p><strong>升阶 (7环)</strong> 你的食疗能选择全部三种好处。临时生命值增加至15点，火焰抗力增加至5点，对抗疾病的加值增加至+3点，持续时间变为8小时。</p>",
+            "target": "至多1加仑的非魔法液体或者至多5磅重的食物",
+            "range": "接触",
+            "duration": "1小时",
+            "time": "1分钟"
+        },
+        "Ymeri's Mark": {
+            "description": "<p>你将炼狱女王的炽热印记设置在目标身上，直接灼烧此生物的本质。这个印记会发出一种只有你能感知到的热量；只要你和目标位于相同的位面，你就能感知到它所处的方向。目标陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}且无法正常降低该状态数值。</p>\n<p>你能够在法术持续时间内的任意一刻通过解消法术来引爆印记。印记会发生以目标为中心的@Template[type:emanation|distance:10]区域的爆炸，这回造成@Damage[5d6[fire]]伤害（基础反射豁免）。由你选择印记的目标是否会被包含在爆炸中。</p>\n<p>当你施放该法术时，目标尝试强韧豁免来判断印记的持续时间。若法术持续时间过期并不会引爆印记。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 持续时间为1分钟。</p>\n<p><strong>失败</strong> 持续时间为1周。</p>\n<p><strong>大失败</strong> 持续时间无限。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 伤害增加[[/r 2d6]]。</p>",
+            "name": "伊莫利之印 Ymeri's Mark",
+            "target": "一个生物",
+            "range": "接触",
+            "duration": "可变"
+        },
+        "Beheading Buzz Saw": {
+            "description": "<p>你从金元素位面抽取炽热的残渣并将其熔铸为旋转的圆盘，在圆盘的边缘上伸展出可怖的刀片。它向前旋转，其路径上的任何人都会被切断。区域内的每个生物承受@Damage[5d10[slashing]]伤害以及[[/r 4d6[persistent,bleed]]]伤害，并尝试一次反射豁免。</p>\n<hr />\n<p><strong>成功</strong> 生物不受影响。</p>\n<p><strong>失败</strong> 生物承受全额伤害。</p>\n<p><strong>大失败</strong> 生物承受双倍伤害。若生物具有头部，则必须成功通过强韧豁免，失败就会被斩首；除了那些不需要头部也能生存的生物之外，这会杀死任何生物。对于有多个头部的生物来说，通常只有当你切下它的最后一个头部之后才会杀死它。第二次豁免具有死亡和失能特征。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 挥砍伤害增加1d10点，持续流血伤害增加1d6点。</p>",
+            "name": "断头圆锯 Beheading Buzz Saw"
+        },
+        "Clad In Metal": {
+            "name": "金属镀层 Clad In Metal",
+            "target": "一个5负载或更轻的金属物体，该物体为无主物体或在自愿生物的身上",
+            "description": "<p>你从金元素位面抽取合适总量的常见珍贵金属，并将一件物体的表层金属短暂置换为该种金属。如果已经获得使用许可或者GM允许你使用的话，你也可以选用罕见或稀有金属来进行置换。</p>\n<p>该物体被视同为由此类金属制成的物品，但前提是物品的等级为2级或更低等级。举例说明，你能让匕首变为寒铁或银匕首（2级物品），但是无法把全身甲变为寒铁护甲或银护甲（5级物品）。这会赋予珍贵金属所具有的任何特殊性质——举例来说，寒铁镀层的武器能激活寒铁弱点——并且会压制制作物品的原始金属所具备的任何特殊性质。</p>\n<p>该法术不会改变物品的结构完整性，也不会对其造成伤害。物体能够通过粗略的观察，但是其魔法效果对于任何仔细研究物品的人来说都很明显，因此当你尝试贩卖它时，其价格不会受到影响。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 珍贵金属的最高等级增加2级。</p>",
+            "range": "接触",
+            "duration": "1分钟"
+        },
+        "Tremorsense": {
+            "name": "颤动感知 Tremorsense",
+            "duration": "10分钟",
+            "description": "<p>你变得能意识到周遭地面中的震动。你获得颤动感知，这是一种模糊感官，范围为30尺。与通常的颤动感知相同，只有当某个生物和你在同一个表面上、且仅当对象在该表面上移动（或者在其中掘地）时，才能侦测到该生物。</p>\n<hr />\n<p><strong>升阶 (3环)</strong> 法术的持续时间为1小时。</p>\n<p><strong>升阶 (5环)</strong> 法术的持续时间为8小时。</p>"
+        },
+        "Fire's Pathway": {
+            "name": "烈焰通途 Fire's Pathway",
+            "time": "1分钟",
+            "description": "<p>你踏入一团大到足够将你容纳的熊熊烈焰中，并立即传送至5英里内的任意一团同样有着足够大小的火焰中。当你踏入第一团火焰时，你能立即知晓射程之内其他大团火焰的大致位置，如果你愿意，也可以从最初的那团火焰中走出来。你不能携带异次元空间；若你尝试这么做，法术便会失败。</p>\n<hr />\n<p><strong>升阶 (6环)</strong> 你能以至多50英里之内的火焰作为出口。</p>\n<p><strong>升阶 (8环)</strong> 你能以至多500英里之内的火焰作为出口。</p>\n<p><strong>升阶 (9环)</strong> 你能以相同星球上任意地点的火焰作为出口。</p>"
+        },
+        "Phoenix Ward": {
+            "name": "凤凰结界 Phoenix Ward",
+            "description": "<p>你在自己周围升起炽热的盾牌，这赋予你10点火焰抗力。若你承受的火焰伤害将要把你的生命值降低至0点，凤凰结界会吸收任何把你生命值降低至1点之外的伤害量。之后，结界会展现为明亮的凤凰双翼，把你包复在光芒之中的同时治愈你。你恢复的生命值等同于4d8 + 吸收的伤害；这是个治疗活力效果。之后凤凰结界结束，24小时内你无法再次施放该法术。</p>\n<hr />\n<p><strong>升阶 (+1)</strong> 治疗量增加[[/r 1d8]]。</p>",
+            "duration": "1分钟"
         }
     }
 }
