@@ -16614,7 +16614,280 @@
             "name": "海怪船首像 Kraken Figurehead"
         },
         "Kraken Figurehead (Wracking)": {
-            "name": "折磨海怪船首像 Kraken Figurehead (Wracking)"
+            "name": "折磨海怪船首像 Kraken Figurehead (Wracking)",
+            "description": "<p><strong>用法</strong> 安装在船头上</p>\n<p>这个雕像的主体由一团触手组成，触摸时总是略微湿滑而粘腻。迷信的水手们往往会避开船头带有这个雕像的船只，声称在海上炫耀海怪形象会带来厄运。</p>\n<hr />\n<p><strong>启动—狂击！</strong> <span class=\"pf2-icon\">2</span> (灵光，专注)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>效果</strong> 雕像产生幻影触手，从船体中喷发出来。这些触手在等同于船体长度的弥漫范围内持续活动10分钟。处于该光环中并与船在同一水域中的生物在@UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{游泳 Swim}时，因为翻腾的触手四处乱抓，他们的运动技能检定会受到-2的环境减值。</p>\n<hr />\n<p><strong>启动—抓住它们！</strong> <span class=\"pf2-icon\">1</span> (攻击，专注)</p>\n<p><strong>需求</strong> 船的幻影触手被启动</p>\n<p><strong>效果</strong> 触手抓向光环内的敌对船只。进行一次驾驶检定，对目标船只的AC进行对抗。如果成功，触手抓住并将两艘船拴在一起。在被拴在一起时，船无法相互远离，敌对船上的生物在所有驾驶检定中受到-2的环境减值，并试图@UUID[Compendium.pf2e.actionspf2e.Item.bG91dbtbgOnw7Ofx]{登上 Board}敌对船只的生物在检定中获得+2的环境加值。</p>\n<p>如果你在触手已经缠绕在另一艘船上的情况下使用这个启动，触手会拉着那艘船朝你的方向移动，距离最多为你船的游泳速度的一半（成功时），或你船的游泳速度（大成功时）。敌船的驾驶员可以以一个单动作进行一次有攻击特征，DC 31的驾驶检定，以摆脱触手的束缚。如果成功，船将脱离触手的束缚。</p>\n<p>当你使用船首像的第二个启动来拉动敌船时——即使你没有将敌船拉动任何距离——你可以让触手试图撬开敌船的船体。触手对敌船造成@Damage[7d10[bludgeoning]]伤害（@Check[type:fortitude|dc:31|basic:true]豁免）。船的硬度正常计算。</p>"
+        },
+        "Lionfish Spear": {
+            "description": "<p>色彩斑斓的条纹和飘带让这把<em>+2强击水下血光矛</em>看起来像一只有毒的狮子鱼。握着这把矛时，你@UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{游泳 Swim}的运动技能检定获得+2的物品加值。</p>\n<hr />\n<p><strong>启动—狮子鱼毒素</strong> <span class=\"pf2-icon\">R</span> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你使用<em>狮子鱼长矛</em>成功打击一名生物</p>\n<p><strong>效果</strong> 长矛向目标注入狮子鱼毒素</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:28]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[3d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[5d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，持续[[/br 2d4 #hours]]{2d4小时}</p>",
+            "name": "狮子鱼长矛 Lionfish Spear"
+        },
+        "Lionfish Spear (Greater)": {
+            "description": "<p>色彩斑斓的条纹和飘带让这把<em>+2高等强击水下血光矛</em>看起来像一只有毒的狮子鱼。握着这把矛时，你@UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{游泳 Swim}的运动技能检定获得+2的物品加值。</p>\n<p>使用这把矛攻击时，会额外造成1d6点毒素伤害。</p>\n<hr />\n<p><strong>启动—狮子鱼毒素</strong> <span class=\"pf2-icon\">R</span> (专注)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 你使用<em>狮子鱼长矛</em>成功打击一名生物</p>\n<p><strong>效果</strong> 长矛向目标注入狮子鱼毒素</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:31]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[3d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[5d6[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2} (1轮)</p>\n<p><strong>阶段3</strong> @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}，持续[[/br 2d4 #hours]]{2d4小时}</p>",
+            "name": "高等狮子鱼长矛 Lionfish Spear (Greater)"
+        },
+        "Octopus Potion (Lesser)": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+12 #Athletics]]{+12}，逃脱 DC 20。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的[[/r 6[bludgeoning]]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>",
+            "name": "次等章鱼药剂 Octopus Potion (Lesser)"
+        },
+        "Octopus Potion (Greater)": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+22 #Athletics]]{+22}，逃脱 DC 30。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的[[/r 13[bludgeoning]]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>",
+            "name": "高等章鱼药剂 Octopus Potion (Greater)"
+        },
+        "Sharkskin Robe": {
+            "description": "<p>这件有着沙砾质感的长袍配有类似背鳍的袖子。人们相信这是由来自物质位面的失意炼金术士为前往水元素位面的旅行而开发的。<em>鲨皮长袍</em>使你获得等于你的陆地速度的游泳速度，并对运动技能检定获得+2的物品加值。</p>\n<hr />\n<p><strong>启动—鲨之优雅</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>效果</strong> 在1分钟内，每当你进行打击，你的武器或徒手攻击获得<em>水下</em>武器性能符文的效果。</p>",
+            "name": "鲨皮长袍 Sharkskin Robe"
+        },
+        "Shell of Easy Breathing": {
+            "description": "<p>这个海盐覆盖的大贝壳直径超过2英尺，边缘雕刻着深海生物的图案。</p>\n<hr />\n<p><strong>启动—装满贝壳</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<p><strong>效果</strong> 你将贝壳放在平坦的表面上，在其内撒几滴水。贝壳会在1分钟内缓慢填满盐水。随后，贝壳的魔法会变得活跃，表现为持续不断的气泡涌出。移动贝壳会扰乱其中的内容物，导致其停止工作并使内部的水蒸发；否则，它会保持启动状态，持续时间为无限。在贝壳启动期间，生物可以以一个三动作行动得方式将头浸入贝壳中，让水和气泡填满口鼻（或用于呼吸的任何身体部位）。在接下来的一个小时内，生物可以在水下呼吸。然后该生物对<em>呼吸自如之贝</em>的效果临时免疫免疫，直到进行下一次每日准备为止。</p>",
+            "name": "呼吸自如之贝 Shell of Easy Breathing"
+        },
+        "Shell of Easy Breathing (Greater)": {
+            "description": "<p>这个海盐覆盖的大贝壳直径超过2英尺，边缘雕刻着深海生物的图案。</p>\n<hr />\n<p><strong>启动—装满贝壳</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<p><strong>效果</strong> 你将贝壳放在平坦的表面上，在其内撒几滴水。贝壳会在1分钟内缓慢填满盐水。随后，贝壳的魔法会变得活跃，表现为持续不断的气泡涌出。移动贝壳会扰乱其中的内容物，导致其停止工作并使内部的水蒸发；否则，它会保持启动状态，持续时间为无限。在贝壳启动期间，生物可以以一个三动作行动得方式将头浸入贝壳中，让水和气泡填满口鼻（或用于呼吸的任何身体部位）。在接下来的8个小时内，生物可以在水下呼吸。然后该生物对<em>呼吸自如之贝</em>的效果临时免疫免疫，直到进行下一次每日准备为止。</p>",
+            "name": "高等呼吸自如之贝 Shell of Easy Breathing (Greater)"
+        },
+        "Sticky Algae Bomb (Lesser)": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 打击</p>\n<p>这些炸弹与发光且释放毒素的黏性藻类混合而成。使用这种炸弹不会受到在水中或水下使用炸弹的普通惩罚和限制。黏性藻类炸弹造成1d8毒素伤害和1点毒素溅射伤害。此外，目标会被发光物质标记，在接下来的一个小时内留下明显可见的轨迹。@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}留下这条轨迹的生物的 DC 为19，但该轨迹仅在水中出现。</p>",
+            "name": "次等黏性藻类炸弹 Sticky Algae Bomb (Lesser)"
+        },
+        "Sticky Algae Bomb (Greater)": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 打击</p>\n<p>这些炸弹与发光且释放毒素的黏性藻类混合而成。使用这种炸弹不会受到在水中或水下使用炸弹的普通惩罚和限制。黏性藻类炸弹造成3d8毒素伤害和3点毒素溅射伤害。你在攻击检定中获得+2的物品加值。此外，目标会被发光物质标记，在接下来的一个小时内留下明显可见的轨迹。@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}留下这条轨迹的生物的 DC 为19，但该轨迹仅在水中出现。</p>",
+            "name": "高等黏性藻类炸弹 Sticky Algae Bomb (Greater)"
+        },
+        "Sticky Algae Bomb (Major)": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 打击</p>\n<p>这些炸弹与发光且释放毒素的黏性藻类混合而成。使用这种炸弹不会受到在水中或水下使用炸弹的普通惩罚和限制。黏性藻类炸弹造成4d8毒素伤害和4点毒素溅射伤害。你在攻击检定中获得+3的物品加值。此外，目标会被发光物质标记，在接下来的一个小时内留下明显可见的轨迹。@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}留下这条轨迹的生物的 DC 为19，但该轨迹仅在水中出现。</p>",
+            "name": "上等黏性藻类炸弹 Sticky Algae Bomb (Major)"
+        },
+        "Veiled Figurehead": {
+            "description": "<p><strong>用法</strong> 安装在船头上</p>\n<p>这个船头被雕刻成人形，但它没有任何面部特征。</p>\n<hr />\n<p><strong>启动—遮蔽！</strong> 1分钟 (专注，幻术，视觉)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你可以微调船的外观以做出轻微但显著的改变。船的总体大小和形状不能被改变，但你可以按照自己的喜好调整表面细节。旗帜和帆可以重新着色并加上新的标记，船的整体材料可以呈现不同的颜色或质地。船体的磨损和表面损伤（如小洞、撕裂和烧伤）可以被掩盖，使船看起来毫无瑕疵，或者你可以创造这样的损伤和磨损。船头本身也会随着改变而变化，并获得与船的其余部分相匹配的表象。幻术持续时间为6小时，或者直到你解除这个效果。任何登上船或使用@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}行动来检查它的生物，可以尝试 @Check[type:perception|dc:25]检定以不相信幻术。</p>",
+            "name": "面纱船首像 Veiled Figurehead"
+        },
+        "Veiled Figurehead (Greater)": {
+            "description": "<p><strong>用法</strong> 安装在船头上</p>\n<p>这个船头被雕刻成人形，但它没有任何面部特征。</p>\n<hr />\n<p><strong>启动—遮蔽！</strong> 1分钟 (专注，幻术，视觉)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你可以微调船的外观以做出轻微但显著的改变。船的总体大小和形状不能被改变，但你可以按照自己的喜好调整表面细节。旗帜和帆可以重新着色并加上新的标记，船的整体材料可以呈现不同的颜色或质地。船体的磨损和表面损伤（如小洞、撕裂和烧伤）可以被掩盖，使船看起来毫无瑕疵，或者你可以创造这样的损伤和磨损。船头本身也会随着改变而变化，并获得与船的其余部分相匹配的表象。幻术持续时间为24小时，或者直到你解除这个效果。任何登上船或使用@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}行动来检查它的生物，可以尝试 @Check[type:perception|dc:33]检定以不相信幻术。</p>\n<p>启动一个<em>高等面纱船首像</em>还会将幻术扩展到船上的人员。船首像对他们施加一个<em>@UUID[Compendium.pf2e.spells-srd.Item.hkfH9Z53hPzcOwNB]{隐匿之纱 Veil}</em>法术，激活时会以所有在船上的人为目标，并将他们的服装改变为与船新外观相匹配的一般样式。此外，它还可以使所有人看起来都像是特定的血统，但你必须为所有目标选择相同的血统。如果目标离开船，这个效果将会结束；如果船上的幻术结束，所有目标都将失去法术效果。成功不相信船的幻术或者船上成员的幻术的生物将不相信整个幻术。</p>",
+            "name": "高等面纱船首像 Veiled Figurehead (Greater)"
+        },
+        "Aeon Stone (Cymophane Cabochon)": {
+            "description": "<p>土巨灵使用<em>凸圆形波光玉万古石</em>来监视他们的所有物和周遭环境。你在对抗躲藏，@UUID[Compendium.pf2e.actionspf2e.Item.VMozDqMMuK5kpoX4]{潜行 Sneak}，和@UUID[Compendium.pf2e.actionspf2e.Item.RDXXE7wMrSPCLv5k]{盗窃 Steal}动作的察觉检定和DC上获得+2物品加值。</p>\n<p>共鸣能力让你能每天一次以奥术内在法术的形式施展<em>识破无形（See the Unseen）</em>。</p>",
+            "name": "万古石(凸圆形波光玉) Aeon Stone (Cymophane Cabochon)"
+        },
+        "Aeon Stone (Olivine Pendeloque)": {
+            "description": "<p><em>鸡心形橄榄石万古石</em>能赋予平稳大地的平静以及思想的坚实，为你在对抗能造成@UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{困惑 Confused}、@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}、或@UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied}的效果的豁免骰上提供+2物品加值。</p>\n<p><strong>启动-平稳大地</strong> <span class=\"pf2-icon\">R</span> (专注)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>触发</strong> 你陷入困惑、惊惧、或呆滞</p>\n<hr />\n<p><strong>效果</strong> 石头压制触发效果1分钟，但被镇压的冲动会对你的攻击骰造成-1状态减值。</p>",
+            "name": "万古石(鸡心形橄榄石) Aeon Stone (Olivine Pendeloque)"
+        },
+        "Aeon Stone (Polished Pebble)": {
+            "description": "<p><em>抛光鹅卵石万古石</em>会为你灌注大地的力量，为你在对抗擒抱或活吞的强韧豁免和DC上提供+1物品加值。</p>\n<p>石头的共鸣能力允许你每天一次以原能内在法术的形式施展@UUID[Compendium.pf2e.spells-srd.Item.Wu0xFpewMKRK3HG8]{油腻术 Grease}。你只能对表面，而非物品，使用该法术。</p>",
+            "name": "万古石(抛光鹅卵石) Aeon Stone (Polished Pebble)"
+        },
+        "Exuviae Powder": {
+            "name": "脱壳粉末 Exuviae Powder",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p><em>脱壳粉末</em>来自原生于土元素位面中的一种类似蝉的昆虫脱下来的壳，是这种壳磨成的粉末。你将这种粉末撒在身上，会留下一层让人想起昆虫壳质的斑斓皮层。在你这么做之后的8小时内，你可以屏住呼吸双倍的时间。在这段时间内，你同时可以使用脱壳启动。</p>\n<p><strong>启动-脱壳</strong> <span class=\"pf2-icon\">R</span> (专注)</p>\n<p><strong>触发</strong> 你将被石化</p>\n<hr />\n<p><strong>效果</strong> 粉末代替你被石化，形成一个包裹住你的壳，它的其他效果终止。粉末会让你在1分钟内获得@UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{迅捷 Quickened}，并同时陷入@UUID[Compendium.pf2e.conditionitems.Item.3uh1r86TzbQvosxv]{毁灭 Doomed 1}和@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}（逃脱Escape DC 25）。你只能将每轮的额外动作用于@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}和行走动作。 </p>"
+        },
+        "Fossil Fragment (Amber Mosquito)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这种碎块是一只极其微小的蚊子被封在了化石化的树脂之中。在启动后，碎块会变成一只@UUID[Compendium.pf2e.pathfinder-bestiary-2.uBG93M52pa84qIt5]{巨蚊 Giant Mosquito}。它可以以每天一次的频率被召唤最多10分钟。琥珀飞蚊无法用疟疾感染任何人。如果该蚊子使用了吸血（Blood Drain），它不会获得临时生命值，但可以从受害者身上收集鲜血。血液会无限期地停留在蚊子体内，并在它体内保持新鲜。如果蚊子再次使用吸血，此前收集的任何鲜血都会丢失。</p>",
+            "name": "化石碎块-琥珀飞蚊 Fossil Fragment (Amber Mosquito)"
+        },
+        "Fossil Fragment (Eurypterid Paddle)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这个像桨一样用于游泳的肢体前端在启动时会变成一只@UUID[Compendium.pf2e.pathfinder-bestiary-3.ChzqT42N5waJZ9VS]{尖翅广翅鲎 Spiny Eurypterid}。它可以每周一次被召唤出来并持续最多24小时。它可以当作坐骑承载体型小于其一级或更多的一名生物，而且在担任坐骑时，它会将它能同时在空气和水中呼吸的能力授予它的骑手。</p>",
+            "name": "化石碎块-广翅鲎螯 Fossil Fragment (Eurypterid Paddle)"
+        },
+        "Fossil Fragment (Petrified Wood)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这片石化木的多彩薄片在启动时会变成一棵觉醒树木。它没有觉醒树木通常的弱点，但它扎根于原地，处于@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}状态。以一个单动作，它可以投掷一颗石化种子，例如一颗石头松果或橡实，并投掷最多60尺。只要投掷的目的地无人占据，而且足够大，就会在那里出现这棵觉醒树木的一个复制品。当同时存在两棵树时，如果任意一棵又投出了一颗种子，其中一棵以存在的树会消失，并由新的一棵树替代。你可以每天一次召唤这棵树，并持续最多1分钟。持续时间在你启动该物品时就会开始计算，而且所有树会在持续时间结束时同时消失。</p>",
+            "name": "化石碎块-石化木 Fossil Fragment (Petrified Wood)"
+        },
+        "Fossil Fragment (Deinonychus Claw)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这只弯曲的爪子在启动时会变成一只@UUID[Compendium.pf2e.pathfinder-bestiary.2IrWQjtFvsen8ioo]{恐爪龙 Deinonychus}。它可以每天一次被召唤出来，并在恐爪龙形态中维持最多10分钟。这种骨骼可以当作坐骑承载一名体型小于其一级或更多的生物。</p>",
+            "name": "化石碎块-恐爪龙爪 Fossil Fragment (Deinonychus Claw)"
+        },
+        "Fossil Fragment (Triceratops Frill)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这一小片三角龙盾沿会在启动时变成一只@UUID[Compendium.pf2e.pathfinder-bestiary.WAgQt9pkzgPOlcJI]{三角龙 Triceratops}。它可以每天一次被召唤出来并保持在三角龙形态最多10分钟。该骨骼可以当作坐骑，承载体型小于其一级或更多的一名生物。</p>",
+            "name": "化石碎块-三角龙盾沿 Fossil Fragment (Triceratops Frill)"
+        },
+        "Fossil Fragment (Brontosaurus Phalange)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这块巨大的拇指指骨在启动时会变成一只@UUID[Compendium.pf2e.pathfinder-bestiary.05E3kkjoLZVjFOeO]{雷龙 Brontosaurus}。它每个月能被召唤不超过4次。如果用于负重或运输，该骨骼能持续24小时。如果它尝试攻击或以其他形式加入战斗，它会在[[/br 1d4 #rounds]]{1d4轮}后变回碎块形态。</p>\n<p>该骨骼极其巨大且坚固，能当作构造物的基底（来自具有构造物特征的物品或法术效果），只要这个构造物的高或宽都不超过20尺。当雷龙变回碎块形态时，构造物也会随之复原。</p>",
+            "name": "化石碎块-雷龙指骨 Fossil Fragment (Brontosaurus Phalange)"
+        },
+        "Fossil Fragment (Tyrannosaur Tooth)": {
+            "description": "<p>化石碎块是一具生物化石的一部分，通常是大型物种中较小的一块骨头。</p>\n<p><strong>启动-化石蜕变</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<hr />\n<p><strong>效果</strong> 你将碎块放于固态地表并念出它的名字，借此启动该碎块；这会使该碎块变成这个生物的完整骨骼化石。在生物形态中，该碎块具有仆从特征。因为这是活化的化石而非活着的生物，它具有构装体和土特征，并没有它通常的生物类别特征（通常是动物）。它也免疫流血、死亡效果、疾病、毁灭、流失、@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}、治疗、非致命攻击、@UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{麻痹 Paralyzed}、毒素、恶心、活力、虚空和@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}。它可以理解你的语言，且当你使用一个动作去命令它时，它会尽它的可能去遵守。每种生物的详情，以及启动的频率（如果有），会写在下述条目中。</p>\n<hr />\n<p>这根匕首形状的牙齿在启动时会变成一只@UUID[Compendium.pf2e.pathfinder-bestiary.LDQpLwN40OGefZD0]{暴龙 Tyrannosaurus}。它可以每天一次被召唤出来并保持在暴龙形态最多10分钟。该骨骼可以当作坐骑，承载体型小于其一级或更多的一名生物。</p>",
+            "name": "化石碎块-暴龙牙 Fossil Fragment (Tyrannosaur Tooth)"
+        },
+        "Limestone Shield": {
+            "name": "石灰岩盾 Limestone Shield",
+            "description": "<p>这面塔盾一块厚厚的石灰岩板，并被切割成了可携带的大小和重量。这面塔盾有7点硬度以及28点生命值。</p>\n<p><strong>启动-石灰岩墙</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将盾牌放下，它随之展开成至多60尺宽且10尺高的墙。墙壁的每方格都具有AC 10，硬度7，以及28点生命值，并免疫重击和精准伤害。如果有一部分被摧毁，该效果终止，而且你的石灰岩盾破损。你可以解消该启动，否则它会持续1分钟。</p>\n<p><strong>启动-格挡元素</strong> <span class=\"pf2-icon\">R</span> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被一个具有气、火、或水特征的效果选为目标</p>\n<hr />\n<p><strong>效果</strong> 这面盾牌展开并格挡触发的效果，为你提供针对该效果的标准掩蔽。</p>"
+        },
+        "Robe of Stone": {
+            "name": "石之长袍 Robe of Stone",
+            "description": "<p><em>石之长袍</em>上装饰着能让人联想起宝石和晶洞的图纹，而且不断洒落少许尘埃。穿着这件长袍时，你获得半径10尺的模糊震颤感知，且你可以说和读土元素语。同时，作为食物的替代，你可以吃下大地（土壤，沙子），宝石（水晶，玻璃），和金属以满足你日常的营养需求。你会发现吃这些材料和吃食物一样愉快——材料越有价值，就会好吃。</p>\n<p><strong>启动-化身为石</strong> <span class=\"pf2-icon\">2</span> (专注，操作，变形)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 长袍对你施展@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}，将你变成一个土元素。在法术的通常效果之外，你可以通过掘进穿过任何类似土壤的物质，包括岩石；你按照该法术的掘地速度移动，且不会留下隧道或任何表明你穿过的踪迹。同时，你从长袍获得的震颤感知的范围提升至30尺。</p>"
+        },
+        "Sairazul Blue": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p><em>莎莱祖尔蓝</em>是一种颜色饱满的海军蓝色药水。水晶女王的臣民制造了这种药水用以从阿依尔祖留下的辐射中保护自己。在喝下药水后的8小时内，你获得5点针对毒素伤害和虚空伤害的抗力。</p>\n<p>如果你因毒素或虚空伤害掉到0 HP，你体内的<em>莎莱祖尔蓝</em>会做出反应，治疗你8d8点HP。之后药水提供的抗力终止。</p>",
+            "name": "莎莱祖尔蓝 Sairazul Blue"
+        },
+        "Sandcastle": {
+            "description": "<p><em>沙堡</em>起初是一种圆柱形的防水背包，其中密密地塞满了细沙。沙子的颜色取决于制作这件物品时收集沙子的场所。这些沙子可以通过魔法启动，塑造出一座由硬质沙子建造的堡垒。它可以挺过大部分常规天气中，但沙堡没有多少抵抗水的能力。如果它在水中启动，或陷入了洪水或暴雨之中，它就会分崩瓦解。其城墙上每个10尺见方的部分都有AC 10，硬度10，以及40点HP。它免疫重击和精准伤害，并有对水的弱点15。如果遭到摧毁，沙堡的这一部分就会化作一堆沙，如果被水摧毁则会化作一滩潮湿的沙。这种沙地是困难地形，会在启动的剩余持续时间内保持下去。可以轻易地在沙墙上弄出攀爬点和立足点，因此爬墙的DC是15。</p>\n<p><strong>启动-塑造沙堡</strong> 1分钟（专注，操作）</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你倒空背包，并将沙子塑造成一座微型城堡。完成时，你用土元素语说出“建造”，<em>沙堡</em>便会快速建成一座尺寸完整的构造物。沙堡的形状由你决定，在任何维度上最多达到120尺。其城墙必须厚10尺，而且每一个隔间的地板到天花板之间的高度至少要有10尺。<em>沙堡</em>内只有最基本的，无任何可以移动部位的家具——椅子和门对沙堡来说都太复杂了，但可以制造出像方块一样的长凳和台面。通常来说，沙堡只有楼梯和窗户。</p>\n<p>你可以用一个交互动作，将<em>沙堡</em>的沙填满这件物品对应的背包，以将沙堡变回其便携形态。</p>",
+            "name": "沙堡 Sandcastle"
+        },
+        "Singing Stone": {
+            "description": "<p><em>歌唱岩石</em>看起来像由抛光岩石制成的酒杯，而且总是在微微地哼唱或哀鸣。任何携带这酒杯一段时间的人可以发现它的曲调会根据周围岩石的类型而改变，而且在几乎没有岩石的区域内会变得安静。<em>歌唱岩石</em>是<em>跨位面传送</em>和类似魔法的位面钥匙。当你通过这种方式使用歌唱岩石，你更有可能抵达你的目的地，你会出现在距离你目的地1d6 x 25英里的地方，而非1d10 x 25英里。</p>\n<p><strong>启动-岩石之声</strong> 1分钟（操作）</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> <em>歌唱岩石</em>施展<em>石材交谈</em>，让你可以通过这口碗说话与聆听，借此与岩石交流。你可以以通常的方式使用该法术，或者，在你启动<em>歌唱岩石</em>时，你可以选择一块你能清晰地从外观和地点上认知出来的岩石为目标。该目标必须与你位于同一个位面，或位于土元素位面。你不能在同一次启动中更换目标。</p>\n<p><strong>启动-岩石之景</strong> <span class=\"pf2-icon\">1</span> (操作，揭示)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你将<em>歌唱岩石</em>放在一片岩石表面上，令它开始震颤，揭示出该表面后面或下面存在着的事物。你的脑海中浮现出该区域的景象，区域深15尺，且直径为5尺。这片景象无法传递色彩，但你能清楚的知道里面有哪些物品或生物在移动，又有哪些保持静止。然而你看到的景象是瞬时的，因此你无法追踪一段时间内的运动。</p>",
+            "name": "歌唱岩石 Singing Stone"
+        },
+        "Stalagmite Seed": {
+            "name": "石笋之种 Stalagmite Seed",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>你可以直接投出一粒<em>石笋之种</em>，将其当作投石索的弹丸，或将其包入火器的弹药中。当你使用这粒种子，你需要瞄准一个5尺方格而非一个特定的目标。各种各样的石笋会从种子落地的方格中窜出，对任何处于方格内的生物造成@Damage[6d6[piercing]]伤害（@Check[type:reflex|dc:23|basic:true]豁免）。石笋会持续存在1分钟，在该方格制造一片困难地形；持续时间结束后便会化作尘埃。</p>"
+        },
+        "Aerial Cloak": {
+            "description": "<p>这件蓝色斗篷相对于其长度来说异常得轻盈，其尾部能随着穿戴者的行动翩翩起舞，就像捕捉到风一样；它同时可以缓冲坠落的势头并让跳跃变得轻松。斗篷的边沿稍稍加重，这样在它充满空气时能更容易被抓住。这件斗篷为你在用于@UUID[Compendium.pf2e.actionspf2e.Item.d5I6018Mci2SWokk]{跳跃 Leap}的运动检定中提供+1物品加值，以及在用于@UUID[Compendium.pf2e.actionspf2e.Item.M76ycLAqHoAgbcej]{保持平衡 Balance}或空中机动的特技检定中提供+1物品加值。</p>\n<hr />\n<p><strong>启动-轻柔坠落</strong> <span class=\"pf2-icon\">R</span> (专注，气)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你正在坠落</p>\n<hr />\n<p><strong>效果</strong> 斗篷捕获了空气且你抓住了它的边沿，利用气流引导你安全着陆。将你坠落的高度视为低30尺，并在坠落的最后滑翔到你所选的一个方格中，该方格必须与你原本会着陆的方格相距20尺内。</p>",
+            "name": "气动斗篷 Aerial Cloak"
+        },
+        "Atmospheric Staff (Lesser)": {
+            "description": "<p>这根法杖由致密的木头制成，在敲击地面时会发出震撼的轰鸣声。法杖顶部有一颗形状完美的黑曜石球，而且如果观察者盯着这颗球看了太长的时间，就会感觉自己比之前沉重了许多。在持用这根法杖时，你在对抗强制移动的豁免中获得+1物品加值。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你从法杖中花费一定数量的充能次数以从其列表中施展一个法术。</p>\n<hr />\n<p><strong>戏法</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.dDiOnjcsBFbAvP6t]{风击术 Gale Blast}</em></p>\n<p><strong>1环</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.W69zswpj0Trdy5rj]{气泡术 Air Bubble}</em> <em>@UUID[Compendium.pf2e.spells-srd.Item.F1fQC9SarAkjNxpP]{重力牵引 Gravitational Pull}</em></p>\n<hr />\n<p><strong>制作需求</strong> 为所有列出法术的所有列出环级都提供一次施法。</p>",
+            "name": "次等大气法杖 Atmospheric Staff (Lesser)"
+        },
+        "Atmospheric Staff": {
+            "description": "<p>这根法杖由致密的木头制成，在敲击地面时会发出震撼的轰鸣声。法杖顶部有一颗形状完美的黑曜石球，而且如果观察者盯着这颗球看了太长的时间，就会感觉自己比之前沉重了许多。在持用这根法杖时，你在对抗强制移动的豁免中获得+1物品加值。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你从法杖中花费一定数量的充能次数以从其列表中施展一个法术。</p>\n<hr />\n<p><strong>戏法</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.dDiOnjcsBFbAvP6t]{风击术 Gale Blast}</em></p>\n<p><strong>1环</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.W69zswpj0Trdy5rj]{气泡术 Air Bubble}</em> <em>@UUID[Compendium.pf2e.spells-srd.Item.F1fQC9SarAkjNxpP]{重力牵引 Gravitational Pull}</em></p>\n<p><strong>2环</strong> @UUID[Compendium.pf2e.spells-srd.Item.C0D2eqzTAhiKm4j9]{平静柔风 Gentle Breeze}</p>\n<p><strong>3环</strong>@UUID[Compendium.pf2e.spells-srd.Item.06pzGkKTyPE3tHR8]{重力井 Gravity Well} @UUID[Compendium.pf2e.spells-srd.Item.70BjbNRVc4OTLAgN]{风暴披身 Tempest Cloak}<em><br /></em></p>\n<hr />\n<p><strong>制作需求</strong> 为所有列出法术的所有列出环级都提供一次施法。</p>",
+            "name": "大气法杖 Atmospheric Staff"
+        },
+        "Atmospheric Staff (Greater)": {
+            "description": "<p>这根法杖由致密的木头制成，在敲击地面时会发出震撼的轰鸣声。法杖顶部有一颗形状完美的黑曜石球，而且如果观察者盯着这颗球看了太长的时间，就会感觉自己比之前沉重了许多。在持用这根法杖时，你在对抗强制移动的豁免中获得+1物品加值。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你从法杖中花费一定数量的充能次数以从其列表中施展一个法术。</p>\n<hr />\n<p><strong>戏法</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.dDiOnjcsBFbAvP6t]{风击术 Gale Blast}</em></p>\n<p><strong>1环</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.W69zswpj0Trdy5rj]{气泡术 Air Bubble}</em> <em>@UUID[Compendium.pf2e.spells-srd.Item.F1fQC9SarAkjNxpP]{重力牵引 Gravitational Pull}</em></p>\n<p><strong>2环</strong> @UUID[Compendium.pf2e.spells-srd.Item.C0D2eqzTAhiKm4j9]{平静柔风 Gentle Breeze}</p>\n<p><strong>3环</strong>@UUID[Compendium.pf2e.spells-srd.Item.06pzGkKTyPE3tHR8]{重力井 Gravity Well} @UUID[Compendium.pf2e.spells-srd.Item.70BjbNRVc4OTLAgN]{风暴披身 Tempest Cloak}<em><br /></em></p>\n<p><strong>4环</strong>@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{飞行术 Fly} @UUID[Compendium.pf2e.spells-srd.Item.DcmWrD0V5PWQQyDm]{可变重力 Variable Gravity}</p>\n<p><strong>5环</strong>@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}(仅限气) @UUID[Compendium.pf2e.spells-srd.Item.tpLTLbJUrYcMWGld]{念动移物 Telekinetic Haul}</p>\n<hr />\n<p><strong>制作需求</strong> 为所有列出法术的所有列出环级都提供一次施法。</p>",
+            "name": "高等大气法杖 Atmospheric Staff (Greater)"
+        },
+        "Extra Lung": {
+            "description": "<p><em>外肺</em>是一种挂在腋下的防水气囊，通过一根长管子连接到穿戴者的鼻子。你可以选择不吸入周围的空气，而是通过<em>外肺</em>内的空气呼吸。它可以容纳可供呼吸5轮的干净空气，并且如果保持打开状态放置在空气适宜的环境中10分钟，就可以补充内部的空气。</p>\n<p>你可以随时切换呼吸的空气来源，不需要花费动作。从<em>外肺</em>中呼吸遵循屏住呼吸规则，但你在说话时不会失去<em>外肺</em>中的空气。当你在你的回合结束时处于与空气隔绝的状态时，需选择使用你正屏住的空气或来自<em>外肺</em>的空气。说话会导致你失去你屏住的空气，但不会影响来自<em>外肺</em>的空气。</p>\n<p><strong>启动-咳出</strong> <span class=\"pf2-icon\">R</span> (操作)</p>\n<p><strong>触发</strong> 你吸入了吸入式的毒素或其他吸入式的苦难</p>\n<hr />\n<p><strong>效果</strong> 你将该毒素或有害空气咳入你的<em>外肺</em>中，立刻对该效果尝试一次新的豁免。你<em>外肺</em>中的空气被污染，如果你将其吸入，你会重新受到该吸入式苦难的影响。<em>外肺</em>会在每天日出时清理它包含的任何毒素。</p>",
+            "name": "外肺 Extra Lung"
+        },
+        "Fan of Soothing Winds (Greater)": {
+            "name": "高等柔风折扇 Fan of Soothing Winds (Greater)",
+            "description": "<p><em>柔风折扇</em>的底部有6颗云状玻璃珠，每一颗都串在其中一根暴露在外的扇骨上。玻璃珠的一面是白色的，而另一面是像风暴一样的灰黑色。翻转玻璃珠后，玻璃珠会在一天内保持翻转后的一面，直到夜间重置。</p>\n<p><strong>启动-治愈之风</strong><span class=\"pf2-icon\">2</span> (专注)</p>\n<p><strong>频率</strong> 每天每颗玻璃珠一次</p>\n<hr />\n<p><strong>效果</strong> 你展开你的折扇，并选择一颗玻璃珠翻转。折扇会施展一次3动作的<em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{治疗术 Heal}<em>法术，效果区域是@Template[type:cone|distance:30]而非@Template[type:emanation|distance:30]；针对不死生物的豁免DC是34。该法术获得气特征。该法术的环级取决于你翻转的是哪一颗玻璃珠：前两颗玻璃珠施展6环<em>治疗术</em>，中间两颗施展5环<em>治疗术</em>，最后两颗施展4环<em>治疗术</em>。 </p>"
+        },
+        "Fan of Soothing Winds": {
+            "name": "柔风折扇 Fan of Soothing Winds",
+            "description": "<p><em>柔风折扇</em>的底部有6颗云状玻璃珠，每一颗都串在其中一根暴露在外的扇骨上。玻璃珠的一面是白色的，而另一面是像风暴一样的灰黑色。翻转玻璃珠后，玻璃珠会在一天内保持翻转后的一面，直到夜间重置。</p>\n<p><strong>启动-治愈之风</strong><span class=\"pf2-icon\">2</span> (专注)</p>\n<p><strong>频率</strong> 每天每颗玻璃珠一次</p>\n<hr />\n<p><strong>效果</strong> 你展开你的折扇，并选择一颗玻璃珠翻转。折扇会施展一次3动作的<em>@UUID[Compendium.pf2e.spells-srd.Item.rfZpqmj0AIIdkVIs]{治疗术 Heal}<em>法术，效果区域是@Template[type:cone|distance:30]而非@Template[type:emanation|distance:30]；针对不死生物的豁免DC是28。该法术获得气特征。该法术的环级取决于你翻转的是哪一颗玻璃珠：前两颗玻璃珠施展4环<em>治疗术</em>，中间两颗施展3环<em>治疗术</em>，最后两颗施展2环<em>治疗术</em>。 </p>"
+        },
+        "Floating Tent (Four-Person)": {
+            "description": "<p>这个钻石形状的帐篷能够在无重力的位面环境中提供安眠的场所，例如气元素位面。它的六个角上都接上了重物，重物之间维持着精细的平衡，能够避免帐篷过度偏向某一个方向。帐篷有一根锚，能用来固定帐篷的位置，防止帐篷从它锚定的物品或地点飘走。</p>\n<p>这种标准的飘浮帐篷足够容纳4个人和他们的行李，帐篷中央有排成两列的4张吊床，在顶部和底部各有一张大网用来存放行李。</p>",
+            "name": "飘浮四人帐 Floating Tent (Four-Person)"
+        },
+        "Frost Breath": {
+            "description": "<p>这瓶冷冻蒸气来自世界之冠（The Crown of the World）上寒冷的山峰。在吸入冻寒气息后，你获得5点寒冷抗力。你可以以一个单动作吐出冻寒气息，对@Template[type:cone|distance:15]区域释放一股寒气喷雾。区域内的每个生物承受@Damage[4d6[cold]]伤害，有@Check[type:reflex|dc:20|basic:true]豁免。在10分钟内，区域内的地表会覆盖上一层冰，变成困难地形和不稳表面（@Check[type:acrobatics|dc:20]）。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.r4nq5JzY8U1lXsAY]{效果: 冻寒气息}</p>",
+            "name": "冻寒气息 Frost Breath"
+        },
+        "Jaathoom's Scarf": {
+            "name": "气巨灵围巾 Jaathoom's Scarf",
+            "description": "<p>这条围巾由精致的丝绸制成，有着如同清澈的无云天空一样的蓝色纹理。其较短的两端上织有精致的金色流苏，在无风的天气中似乎也被无形的风轻轻吹动。较长的两端饰有雅致的线形刺绣，其颜色从与丝绸相同的蓝色到冬季风暴云的深灰色不等。穿戴这条围巾时能在用于跳舞的表演检定和用于@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}的特技检定上获得+2物品加值。</p>\n<p><strong>启动-消失</strong> <span class=\"pf2-icon\">2</span> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 围巾对你施展4环@UUID[Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB]{隐形术 Invisibility}。</p>\n<p><strong>启动-气巨灵之斥</strong> <span class=\"pf2-icon\">1</span> (专注)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<hr />\n<p><strong>效果</strong> 你让你身边的风捕捉到<em>气巨灵围巾</em>的边缘，随着一股突然的上升气流，一个气巨灵长老出现了。这股风将你的敌人推开，为你在战斗中带来些许喘息的空间。每个@Template[type:emanation|distance:10]内的敌人必须成功通过一次@Check[type:fortitude|dc:18]豁免，否则被推开10尺。在豁免中大失败的生物在这次移动后会@UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{倒地 Prone}。具有气特征的生物免疫上述所有效果。</p>"
+        },
+        "Nimbus Breath": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>来自格拉里昂芒吉莽原中的云顶要塞的矮人们捕获了来自云龙巢穴中那些轻飘飘的雨云并装入瓶中，从而制成了<em>雨云气息</em>。在收获了雨云后，瓶子必须在最高山的顶峰放置十天十夜，以浸染所有种类的天气。也可以通过捕获其他位面的云来制作<em>雨云气息</em>，例如来自气元素位面或Celestia中最高峰的云。</p>\n<p>在你吸入<em>雨云气息</em>后，只要你屏住呼吸，你就获得5点电击抗力以及@UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{飞行术 Fly}的效果。</p>\n<p>你可以以单动作吐出气息，从你的嘴中创造一次@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{造风术 Gust of Wind}（DC 24）。如果你在云雾失效时仍处于空中，你会以每轮60尺的速度轻轻地飘到地上，不会因这次坠落而承受任何伤害。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.fszJ9ZaslnrW5m5z]{效果: 雨云气息}</p>",
+            "name": "雨云气息 Nimbus Breath"
+        },
+        "Spiral Chimes": {
+            "description": "<p><em>螺旋风铃</em>是一组装饰着螺旋图纹的金属小铃铛，通过细线挂在一座风暴云或气元素的雕塑上。<em>螺旋风铃</em>的每个铃铛都对应着不同的音调，当处于风暴凶猛的烈风之中时，这些铃铛会一起合奏出深邃而完整的乐曲。</p>\n<p><em>螺旋风铃</em>是<em>跨位面传说</em>和类似魔法的位面钥匙。当你通过这种方式使用风铃，你更有可能抵达你的目的地，你会出现在距离你目的地1d6 x 25英里的地方，而非1d10 x 25英里。</p>\n<p><strong>启动-预知风铃</strong> 10分钟（操作，预测）</p>\n<hr />\n<p><strong>效果</strong> 你让<em>螺旋风铃</em>在风中演奏，并将音乐诠释为对你当前地点未来24小时内的天气预报。你会收到关于温度、湿度、风暴、自然灾害（例如龙卷风、洪水、或火山喷发），以及其他自然生成的天气状况的预警。你通过<em>螺旋风铃</em>得到的信息不会涵盖可能改变天气的魔法因素。</p>\n<p><strong>启动-揭示风铃</strong> <span class=\"pf2-icon\">1</span> (操作，音波)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你奏响风铃，将120尺内的一个@Template[type:burst|distance:30]区域内的每件事物覆盖上可见的回荡铃声。这可以使@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{隐形 Invisible}效果失效，让隐形的生物变为@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。持续时间和其他效果取决于每个生物在@Check[type:reflex|dc:30]豁免检定中的结果。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标的隐形在2轮内失效。</p>\n<p><strong>失败</strong> 目标@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}1分钟，且他的隐形在1分钟内失效。</p>\n<p><strong>大失败</strong> 目标耳聋10分钟，且他的隐形在10分钟内失效。</p>",
+            "name": "螺旋风铃 Spiral Chimes"
+        },
+        "Spun Cloud (Green)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>在气元素为面上，有些颜色不同的小块云会从其他云块中飘离开来。聪明的人们可以将这些云块织成一小撮，如此便能创造出一种元素力量的魔法套组。和大多数瓶装气息不同，<em>织云</em>在你的肺中时不会产生任何效果，但你可以以单动作吐出云。吐出后，云会飘到距离你60尺内的一个@Template[type:burst|distance:20]区域中。云在1分钟后消散。</p>\n<p>绿色的云闻起来很糟糕，会让云中的生物不适。任何在云中结束回合的生物必须成功通过一次@Check[type:fortitude|dc:25]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。无论其豁免结果如何，该生物都获得24小时的临时免疫。这是一个嗅觉的毒素效果。</p>",
+            "name": "绿织云 Spun Cloud (Green)"
+        },
+        "Spun Cloud (White)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>在气元素为面上，有些颜色不同的小块云会从其他云块中飘离开来。聪明的人们可以将这些云块织成一小撮，如此便能创造出一种元素力量的魔法套组。和大多数瓶装气息不同，<em>织云</em>在你的肺中时不会产生任何效果，但你可以以单动作吐出云。吐出后，云会飘到距离你60尺内的一个@Template[type:burst|distance:20]区域中。云在1分钟后消散。</p>\n<p>白色的云随着风旋转，能加速你的旅程。一个在白织云中开始回合的生物会在陆地速度和飞行速度（如果他有）上获得+10尺物品加值，直到他的回合结束。</p>",
+            "name": "白织云 Spun Cloud (White)"
+        },
+        "Spun Cloud (Blue)": {
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>在气元素为面上，有些颜色不同的小块云会从其他云块中飘离开来。聪明的人们可以将这些云块织成一小撮，如此便能创造出一种元素力量的魔法套组。和大多数瓶装气息不同，<em>织云</em>在你的肺中时不会产生任何效果，但你可以以单动作吐出云。吐出后，云会飘到距离你60尺内的一个@Template[type:burst|distance:20]区域中。云在1分钟后消散。</p>\n<p>蓝色的云能够防护闪电。生物位于云中时获得5点电击抗力。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.FV5d8zdo8CGZuRbg]{效果: 蓝织云}</p>",
+            "name": "蓝织云 Spun Cloud (Blue)"
+        },
+        "Spun Cloud (Red)": {
+            "name": "红织云 Spun Cloud (Red)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>在气元素为面上，有些颜色不同的小块云会从其他云块中飘离开来。聪明的人们可以将这些云块织成一小撮，如此便能创造出一种元素力量的魔法套组。和大多数瓶装气息不同，<em>织云</em>在你的肺中时不会产生任何效果，但你可以以单动作吐出云。吐出后，云会飘到距离你60尺内的一个@Template[type:burst|distance:20]区域中。云在1分钟后消散。</p>\n<p>红色的云会惊吓它包围的生物。任何处于云中，或之后进入云中的生物都必须成功通过一个@Check[type:will|dc:24]豁免否则陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}（大失败时陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}）。无论其豁免结果如何，该生物都获得24小时的临时免疫。这是一个情绪，恐惧和心灵效果。</p>"
+        },
+        "Storm Breath": {
+            "description": "<p><em>风暴气息</em>是在气元素位面的风暴中捕获并装瓶的暴烈闪电，在被触摸时总会释放轻微的静电。<em>风暴气息</em>最初是由岚吉诺里（Ranginori）的信徒在这位元素领主从长期监禁中归来后创造的，但设计图已经被复制到整个多元宇宙。</p>\n<p>在吸入<em>风暴气息</em>后，你获得5点电击和音波抗力。你可以一束闪电的形式吐出<em>风暴气息</em>，对@Template[type:line|distance:30]区域内的所有生物造成@Damage[4d12[electricity]]伤害，有@Check[type:reflex|dc:25|basic:true]豁免。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.CDfixYwjfjoXkOVq]{效果: 风暴气息}</p>",
+            "name": "风暴气息 Storm Breath"
+        },
+        "Wisp Chain (Major)": {
+            "name": "上等风缕衣 Wisp Chain (Major)",
+            "description": "<p>这件<em>+2高等抗力链甲衫</em>由一缕缕节节相扣的气流精细地编织而成。尽管气链不会像其他链环一样碰撞，但这些微型旋风总会制造出一种类似于处于风暴中心时会听到的狂风的咆哮声。在你邻接区域结束回合的生物必须尝试一次@Check[type:fortitude|dc:32]豁免。失败时，他陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，直到他离开你。</p>\n<p><strong>启动-气链风刃</strong> <span class=\"pf2-icon\">2</span> (专注)</p>\n<hr />\n<p><strong>效果</strong> 你解放塑造盔甲的气流并将其以剧烈的空气涡流的形式释放出去，这能切割@Template[type:cone|distance:60]区域内的生物。区域内的生物承受@Damage[6d6[slashing]]伤害，有@Check[type:fortitude|dc:34|basic:true]豁免。豁免失败的生物也会被推离10尺（大失败时推离20尺）。你失去你盔甲的AC加值，直到你的回合结束，此时气流会重新在你身上塑造风缕衣。</p>"
+        },
+        "Wisp Chain": {
+            "description": "<p>这件<em>+1抗力链甲衫</em>由一缕缕节节相扣的气流精细地编织而成。尽管气链不会像其他链环一样碰撞，但这些微型旋风总会制造出一种类似于处于风暴中心时会听到的狂风的咆哮声。在你邻接区域结束回合的生物必须尝试一次@Check[type:fortitude|dc:23]豁免。失败时，他陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，直到他离开你。</p>\n<p><strong>启动-气链风刃</strong> <span class=\"pf2-icon\">2</span> (专注)</p>\n<hr />\n<p><strong>效果</strong> 你解放塑造盔甲的气流并将其以剧烈的空气涡流的形式释放出去，这能切割@Template[type:cone|distance:60]区域内的生物。区域内的生物承受@Damage[6d6[slashing]]伤害，有@Check[type:fortitude|dc:25|basic:true]豁免。豁免失败的生物也会被推离10尺（大失败时推离20尺）。你失去你盔甲的AC加值，直到你的回合结束，此时气流会重新在你身上塑造风缕衣。</p>",
+            "name": "风缕衣 Wisp Chain"
+        },
+        "Wisp Chain (Greater)": {
+            "description": "<p>这件<em>+2抗力链甲衫</em>由一缕缕节节相扣的气流精细地编织而成。尽管气链不会像其他链环一样碰撞，但这些微型旋风总会制造出一种类似于处于风暴中心时会听到的狂风的咆哮声。在你邻接区域结束回合的生物必须尝试一次@Check[type:fortitude|dc:27]豁免。失败时，他陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，直到他离开你。</p>\n<p><strong>启动-气链风刃</strong> <span class=\"pf2-icon\">2</span> (专注)</p>\n<hr />\n<p><strong>效果</strong> 你解放塑造盔甲的气流并将其以剧烈的空气涡流的形式释放出去，这能切割@Template[type:cone|distance:60]区域内的生物。区域内的生物承受@Damage[6d6[slashing]]伤害，有@Check[type:fortitude|dc:29|basic:true]豁免。豁免失败的生物也会被推离10尺（大失败时推离20尺）。你失去你盔甲的AC加值，直到你的回合结束，此时气流会重新在你身上塑造风缕衣。</p>",
+            "name": "高等风缕衣 Wisp Chain (Greater)"
+        },
+        "Cipher of Elemental Planes": {
+            "description": "<p>该装置由两个金属圆盘制成，一个略小于另一个，每个圆盘的外缘都刻有各种符文和符号。中间的圆环通常显示每个元素位面的符文，许多古老的密令只包括气、土、火和水位面。两个圆盘的中心有一个粗大的金针将它们固定在一起。</p>\n<hr />\n<p><strong>启动 - 对准平面 <span class=\"pf2-icon\">a</span> (操纵, 探知, 视觉)</strong></p>\n<p><strong>效果</strong> 你转动圆盘将符号对齐，形成一个钥匙孔大小的微小位面通道。你可以通过它查看元素位面上的某个位置。每个密令连接到每个元素位面的12个地点——通常是大型聚居地。任何持有密令的人都可以理解密令所对应位面的主要语言。位面密令可以代替位面密钥，用于跨位面传送或类似魔法，以前往所对准的位面。当你使用它时，你会准确无误地到达密令对准的位置。</p>",
+            "name": "元素位面密令 Cipher of Elemental Planes"
+        },
+        "Elemental Fragment": {
+            "description": "<p><strong>启动 <span class=\"pf2-icon\">2</span> (专注, 操作)</strong></p>\n<hr />\n<p>这块凝固的位面能量有核桃那么大，有六种不同的形态：气位面是一块透明的水晶，土位面是一块粗糙的岩石，火位面是一块凝固的冷却熔岩，金位面是一块小巧的铁块，水位面是一块坚冰，木位面是一团小巧的植物。你可以通过将其敲碎，释放其中的位面能量以激活碎片。这股能量施放一个由你选择的法术：一个影响你的五环@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}法术或一个五环的@UUID[Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj]{召唤元素 Summon Elemental}法术。如果选择后者，你可以维持该法术来保持对元素的控制。</p>",
+            "name": "元素碎片 Elemental Fragment"
+        },
+        "Elemental Fragment (Greater)": {
+            "description": "<p><strong>启动 <span class=\"pf2-icon\">2</span> (专注, 操作)</strong></p>\n<hr />\n<p>这块凝固的位面能量有核桃那么大，有六种不同的形态：气位面是一块透明的水晶，土位面是一块粗糙的岩石，火位面是一块凝固的冷却熔岩，金位面是一块小巧的铁块，水位面是一块坚冰，木位面是一团小巧的植物。你可以通过将其敲碎，释放其中的位面能量以激活碎片。这股能量施放一个由你选择的法术：一个影响你的6环@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}法术或一个6环的@UUID[Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj]{召唤元素 Summon Elemental}法术。如果选择后者，你可以维持该法术来保持对元素的控制。</p>",
+            "name": "高等元素碎片 Elemental Fragment (Greater)"
+        },
+        "Gate Attenuator (Greater)": {
+            "name": "高等束门环 Gate Attenuator (Greater)",
+            "description": "<p><em>束门环</em>通常佩戴在身体核心附近，其形状就像门户或通道，使御能师体内拥有的元素之门成为现实。其外观可以是一个简单的中间有孔的圆盘，也可以是与特定聚居地的城门相匹配的设计。如果你是一名御能师，该装备会为你的涌动攻击调整值提供+2物品加值（但不会影响你的涌动 DC）。当你绑定一件<em>束门环</em>时，将它调谐到你选择的一种元素上。该装备表面的图案会变得与该元素相匹配，并且会获得该元素的特征，直到它不再被绑定或被调谐为另一种元素。</p>\n<hr />\n<p><strong>启动 - 元素法术 <span class=\"pf2-icon\">2</span></strong> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 束门环施放5环法术，法术攻击调整值为+18，法术DC为28。如果你是御能师，并且该法术的元素与你的统御元素之一相匹配，你可以使用你的涌动攻击调整值代替法术攻击调整值，或者使用你的涌动 DC代替法术DC。该法术与物品所附带的元素相对应，如果还没有该元素的特征，则该物品会获得该元素的特征：</p>\n<p><strong>气</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.e4c73RBCQAZdYxau]{低压地带 Pressure Zone}</em></p>\n<p><strong>土</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.KjC2ya8HD5AENeHI]{砂砾形态 Sand Form}</em></p>\n<p><strong>火</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.ZClfmMoKG3E926Uq]{自负之炎 Flames of Ego}</em></p>\n<p><strong>金</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.oXeEbcUdgJGWHGEJ]{穿心铁刺 Impaling Spike}</em></p>\n<p><strong>水</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.9AZEObUdLI2fwmPl]{冻雨术 Freezing Rain}</em></p>\n<p><strong>木</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.VDK5cQ94BszDrMiJ]{缠根护体 Entwined Roots}</em></p>"
+        },
+        "Gate Attenuator": {
+            "description": "<p><em>束门环</em>通常佩戴在身体核心附近，其形状就像门户或通道，使御能师体内拥有的元素之门成为现实。其外观可以是一个简单的中间有孔的圆盘，也可以是与特定聚居地的城门相匹配的设计。如果你是一名御能师，该装备会为你的涌动攻击调整值提供+1物品加值（但不会影响你的涌动 DC）。当你绑定一件<em>束门环</em>时，将它调谐到你选择的一种元素上。该装备表面的图案会变得与该元素相匹配，并且会获得该元素的特征，直到它不再被绑定或被调谐为另一种元素。</p>\n<hr />\n<p><strong>启动 - 元素法术 <span class=\"pf2-icon\">2</span></strong> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> <em>束门环</em>施放1阶法术，法术攻击调整值为+7，法术DC为17。如果你是御能师，并且该法术的元素与你的统御元素之一相匹配，你可以使用你的涌动攻击调整值代替法术攻击调整值，或者使用你的涌动 DC代替法术DC。该法术与物品所附带的元素相对应，如果还没有该元素的特征，则该物品会获得该元素的特征：</p>\n<p><strong>气</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.g8QqHpv2CWDwmIm1]{造风术 Gust of Wind}</em></p>\n<p><strong>土</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.Rn2LkoSq1XhLsODV]{碎石猛击 Pummeling Rubble}</em></p>\n<p><strong>火</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.f9m9DayyGy3meqUX]{脱水咒 Dehydrate}</em></p>\n<p><strong>金</strong> <em>雷击术（Thunderstrike）</em></p>\n<p><strong>水</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.W6QlRwQLPoBSw6PZ]{雪球术 Snowball}</em></p>\n<p><strong>木</strong> <em>植物丛生（Flourishing Flora）</em></p>",
+            "name": "束门环 Gate Attenuator"
+        },
+        "Gate Attenuator (Major)": {
+            "description": "<p>当你绑定<em>上等束门环</em>时，你的体质调整值会+1或者增加到+4，以两者中更高者为准。</p>\n<p><em>束门环</em>通常佩戴在身体核心附近，其形状就像门户或通道，使御能师体内拥有的元素之门成为现实。其外观可以是一个简单的中间有孔的圆盘，也可以是与特定聚居地的城门相匹配的设计。如果你是一名御能师，该装备会为你的涌动攻击调整值提供+2物品加值（但不会影响你的涌动 DC）。当你绑定一件<em>束门环</em>时，将它调谐到你选择的一种元素上。该装备表面的图案会变得与该元素相匹配，并且会获得该元素的特征，直到它不再被绑定或被调谐为另一种元素。</p>\n<hr />\n<p><strong>启动 - 元素法术 <span class=\"pf2-icon\">2</span></strong> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> <em>束门环</em>施放8环法术，法术攻击调整值为+27，法术DC为37。如果你是御能师，并且该法术的元素与你的统御元素之一相匹配，你可以使用你的涌动攻击调整值代替法术攻击调整值，或者使用你的涌动 DC代替法术DC。该法术与物品所附带的元素相对应，如果还没有该元素的特征，则该物品会获得该元素的特征：</p>\n<p><strong>气</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.8hKW4mWQyLnkHVta]{大旋风 Whirlwind}</em></p>\n<p><strong>土</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.x7SPrsRxGb2Vy2nu]{地震术 Earthquake}</em></p>\n<p><strong>火</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.fBoiPXmcIO50OFFR]{血液沸腾 Boil Blood}</em></p>\n<p><strong>金</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.yy2K51kK3a60rRIe]{锈蚀云 Rust Cloud}</em></p>\n<p><strong>水</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.0fjz8qc9NfkmWmJZ]{奔流漩涡 Whirlpool}</em></p>\n<p><strong>木</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.2uEuYmlyx1R7zQeH]{毒花球茎 Pollen Pods}</em></p>",
+            "name": "上等束门环 Gate Attenuator (Major)"
+        },
+        "Jann's Prism": {
+            "name": "小巨灵棱镜 Jann's Prism",
+            "description": "<p>光线似乎总会通过这个简单的棱镜折射，在玻璃周围形成朦胧的五彩光环。当阳光直射时，棱镜会放射出一束颜色变化不定的光，这束光拼出了三棱镜设计者小巨灵长老的名字。当你将三棱镜置于眼前时，你的视线会被各种色彩充斥，它们会引导你的眼睛，使你的视觉察觉检定获得+2物品加值。如果你在@UUID[Compendium.pf2e.actionspf2e.Item.BlAOM2X92SI6HMtJ]{搜索 Seek}时透过三棱镜观察，你可以扫视或探查正常两倍大的区域（@Template[type:cone|distance:60]，@Template[type:burst|distance:30]，或20尺见方的区域）。</p>\n<hr />\n<p><strong>启动 - 小巨灵之光 <span class=\"pf2-icon\">2</span></strong> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你将棱镜举过头顶，召唤小巨灵长老来帮助你。在三棱镜的反射中，长老的脸变得清晰可见，五颜六色的光线从三棱镜中射出，在你周围环绕。在1分钟内，你周围@Template[type:emanation|distance:20]范围内的光照变为明亮（20尺-40尺范围内变为昏暗）。你会获得对两种伤害类型的抗性5，这两种伤害类型基于所选的颜色：<strong>红色</strong>火焰、<strong>橙色</strong>酸液、<strong>黄色</strong>电击、<strong>绿色</strong>毒素、<strong>蓝色</strong>音波、<strong>靛蓝色</strong>心灵或<strong>紫色</strong>力场。</p>"
+        },
+        "Atmospheric Staff (Major)": {
+            "description": "<p>这根法杖由致密的木头制成，在敲击地面时会发出震撼的轰鸣声。法杖顶部有一颗形状完美的黑曜石球，而且如果观察者盯着这颗球看了太长的时间，就会感觉自己比之前沉重了许多。在持用这根法杖时，你在对抗强制移动的豁免中获得+1物品加值。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>效果</strong> 你从法杖中花费一定数量的充能次数以从其列表中施展一个法术。</p>\n<hr />\n<p><strong>戏法</strong><em>@UUID[Compendium.pf2e.spells-srd.Item.dDiOnjcsBFbAvP6t]{风击术 Gale Blast}</em></p>\n<p><strong>1环</strong> <em>@UUID[Compendium.pf2e.spells-srd.Item.W69zswpj0Trdy5rj]{气泡术 Air Bubble}</em> <em>@UUID[Compendium.pf2e.spells-srd.Item.F1fQC9SarAkjNxpP]{重力牵引 Gravitational Pull}</em></p>\n<p><strong>2环</strong> @UUID[Compendium.pf2e.spells-srd.Item.C0D2eqzTAhiKm4j9]{平静柔风 Gentle Breeze}</p>\n<p><strong>3环</strong>@UUID[Compendium.pf2e.spells-srd.Item.06pzGkKTyPE3tHR8]{重力井 Gravity Well} @UUID[Compendium.pf2e.spells-srd.Item.70BjbNRVc4OTLAgN]{风暴披身 Tempest Cloak}<em><br /></em></p>\n<p><strong>4环</strong> @UUID[Compendium.pf2e.spells-srd.Item.A2JfEKe6BZcTG1S8]{飞行术 Fly} @UUID[Compendium.pf2e.spells-srd.Item.DcmWrD0V5PWQQyDm]{可变重力 Variable Gravity}</p>\n<p><strong>5环</strong> @UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}(仅限气) @UUID[Compendium.pf2e.spells-srd.Item.tpLTLbJUrYcMWGld]{念动移物 Telekinetic Haul}</p>\n<p><strong>6环</strong> @UUID[Compendium.pf2e.spells-srd.Item.P1iqzEIidRagUs7W]{零重力 Zero Gravity}</p>\n<p><strong>7环</strong> @UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}(仅限气), @UUID[Compendium.pf2e.spells-srd.Item.kk7JKox6MdGAWmCH]{真空域 Vacuum}</p>\n<hr />\n<p><strong>制作需求</strong> 为所有列出法术的所有列出环级都提供一次施法。</p>",
+            "name": "上等大气法杖 Atmospheric Staff (Major)"
+        },
+        "Octopus Potion (Moderate)": {
+            "name": "中等章鱼药剂 Octopus Potion (Moderate)",
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+17 #Athletics]]{+17}，逃脱 DC 25。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的[[/r 9[bludgeoning]]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "Spun Cloud (Black)": {
+            "name": "黑织云 Spun Cloud (Black)",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>在气元素为面上，有些颜色不同的小块云会从其他云块中飘离开来。聪明的人们可以将这些云块织成一小撮，如此便能创造出一种元素力量的魔法套组。和大多数瓶装气息不同，<em>织云</em>在你的肺中时不会产生任何效果，但你可以以单动作吐出云。吐出后，云会飘到距离你60尺内的一个@Template[type:burst|distance:20]区域中。云在1分钟后消散。</p>\n<p>暗色的风暴云遮住了内部的生物。在云外的生物对云内的生物来说是@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}的。</p>"
+        },
+        "Floating Tent (Pup)": {
+            "name": "飘浮小帐篷 Floating Tent (Pup)",
+            "description": "<p>这个钻石形状的帐篷能够在无重力的位面环境中提供安眠的场所，例如气元素位面。它的六个角上都接上了重物，重物之间维持着精细的平衡，能够避免帐篷过度偏向某一个方向。帐篷有一根锚，能用来固定帐篷的位置，防止帐篷从它锚定的物品或地点飘走。</p>\n<p>飘浮小帐篷足够容纳一个人和他的行李。内部有一张吊在中央的吊床，足以让一个中型或更小的生物舒适地睡眠；在吊床下面还有一张网，可以用来存放行李。</p>"
+        },
+        "Elemental Fragment (Major)": {
+            "name": "上等元素碎片 Elemental Fragment (Major)",
+            "description": "<p><strong>启动 <span class=\"pf2-icon\">2</span> (专注, 操作)</strong></p>\n<hr />\n<p>这块凝固的位面能量有核桃那么大，有六种不同的形态：气位面是一块透明的水晶，土位面是一块粗糙的岩石，火位面是一块凝固的冷却熔岩，金位面是一块小巧的铁块，水位面是一块坚冰，木位面是一团小巧的植物。你可以通过将其敲碎，释放其中的位面能量以激活碎片。这股能量施放一个由你选择的法术：一个影响你的7环@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}法术或一个7环的@UUID[Compendium.pf2e.spells-srd.Item.lpT6LotUaQPfinjj]{召唤元素 Summon Elemental}法术。如果选择后者，你可以维持该法术来保持对元素的控制。</p>"
+        },
+        "Vital Earth": {
+            "name": "生机土 Vital Earth",
+            "description": "<p><em>生机土</em>是来自土元素位面的一种灌注了生机的土壤，是一种你可以吸入的闪闪发光的沙土；在吸入后，你在接下来的24小时内都不需要空气或水。在这段时间内，你的伤口也能更轻易地闭合，就像对陶土塑形一样，这意味着对你尝试@UUID[Compendium.pf2e.actionspf2e.Item.MHLuKy4nQO2Z4Am1]{进行急救 Administer First Aid}或@UUID[Compendium.pf2e.actionspf2e.Item.1kGNdIIhuglAjIp9]{治疗伤害 Treat Wounds}的人无需医疗工具，而且在对应的医疗检定上获得+1物品加值。</p>"
+        },
+        "Drought Powder": {
+            "name": "干旱粉末 Drought Powder",
+            "description": "<p><strong>启动</strong><span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p><em>干旱粉末</em>是一种闻起来有潮湿岩石气味的灰色粉末，有多种针对水的用法。如果你将粉末撒在你身上，你和你携带或穿戴的物品会在接下来的24小时内保持干燥。如果将粉末丢到水体中，它会将长50尺宽50尺区域内的水深降低10尺。你也可以将其撒到空中，覆盖以距离你5尺的一个点为中心的一个@Template[type:burst|distance:10]区域内的所有生物。区域内具有水特征的生物会如同受到一次@UUID[Compendium.pf2e.spells-srd.Item.WsUwpfmhKrKwoIe3]{缓慢术 Slow}法术的影响（DC 28）。如果你尝试以其他类似的方式使用该粉末，由GM决定该粉末是否能达成你的目标。</p>"
+        },
+        "Blight Breath": {
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<hr />\n<p>这散发出恶臭的瓶子中装着压缩毒气。在你吸入<em>疫毒气息</em>这令人作呕的气体后，只要你屏住你的呼吸，你就获得10点毒素抗力。以一个单动作，你可以吐出疫毒气息。这会对@Template[type:cone|distance:15]区域内的每个生物造成@Damage[10d6[poison]]伤害，有@Check[type:reflex|dc:29|basic:true]豁免。</p>",
+            "name": "疫毒气息 Blight Breath"
+        },
+        "Wisp Chain (True)": {
+            "name": "真实风缕衣 Wisp Chain (True)",
+            "description": "<p>这件<em>+3高等抗力链甲衫</em>由一缕缕节节相扣的气流精细地编织而成。尽管气链不会像其他链环一样碰撞，但这些微型旋风总会制造出一种类似于处于风暴中心时会听到的狂风的咆哮声。在你邻接区域结束回合的生物必须尝试一次@Check[type:fortitude|dc:39]豁免。失败时，他陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}，直到他离开你。</p>\n<p><strong>启动-气链风刃</strong> <span class=\"pf2-icon\">2</span> (专注)</p>\n<hr />\n<p><strong>效果</strong> 你解放塑造盔甲的气流并将其以剧烈的空气涡流的形式释放出去，这能切割@Template[type:cone|distance:60]区域内的生物。区域内的生物承受@Damage[6d6[slashing]]伤害，有@Check[type:fortitude|dc:41|basic:true]豁免。豁免失败的生物也会被推离10尺（大失败时推离20尺）。你失去你盔甲的AC加值，直到你的回合结束，此时气流会重新在你身上塑造风缕衣。</p>"
+        },
+        "Underwater": {
+            "name": "水下 Underwater",
+            "description": "<p>这把武器在水中和陆地上同样有效。使用这把武器不会受到在水中或水下使用武器的普通惩罚和限制。如果该武器能够造成火焰伤害，那么它在水下仍然可以。</p>"
+        },
+        "Jabali's Dice": {
+            "name": "土巨灵骰子 Jabali's Dice",
+            "description": "<p><em>土巨灵骰子</em>是在某位土巨灵长老的指示下，由重量均衡的石头雕刻而成的两颗六面骰。显示6的那一面上也用土元素语雕刻着这位长老的名字和头衔。如果你在一次使用<em>土巨灵骰子</em>进行的一场骰子游戏中轻声呼唤这个头衔和名字，他会赐予你些许的幸运，为你在你的赌博学识检定上提供+2物品加值。你可以频繁地这么做，因此可以将该加值应用在使用赌博学识进行的赚取收入行动中，但同一时间只有一个使用者可以这么做。</p>\n<p><strong>启动-土巨灵的赌博</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你呼唤长老的名字和头衔，并投掷该骰子。长老短暂地出现并帮助你进行防御。骰[[/r 2d6]]决定效果。根据这位Shuyookh一时的奇思妙想，GM可以代表长老指定其中任何一个效果。</p>\n<table>\n<tbody>\n<tr>\n<td><strong>2-5</strong></td>\n<td>长老对你施展<em>@UUID[Compendium.pf2e.spells-srd.Item.2BV2yYPfVJ5zirZt]{山之坚韧 Mountain Resilience}</em>。</td>\n</tr>\n<tr>\n<td><strong>6-9</strong></td>\n<td>长老施展<em>@UUID[Compendium.pf2e.spells-srd.Item.Wpgt5TYcTHLDei6J]{握敌之地 Grasping Earth}</em>，但你和你的盟友对其免疫。</td>\n</tr>\n<tr>\n<td><strong>10-11</strong></td>\n<td>长老施展<em>@UUID[Compendium.pf2e.spells-srd.Item.kOa055FIrO9Smnya]{石墙术 Wall of Stone}</em>。其边缘可以穿过生物，被穿过的生物会被分流到与该边缘相对的墙壁一侧。</td>\n</tr>\n<tr>\n<td><strong>12</strong></td>\n<td>长老对一个邻接你且与你敌对的生物施展一次DC 31的<em>@UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]{石化术 Petrify}</em>法术。如果不存在可用的目标，你改为得到10-11的结果。</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "Sticky Algae Bomb (Moderate)": {
+            "name": "中等黏性藻类炸弹 Sticky Algae Bomb (Moderate)",
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> 打击</p>\n<p>这些炸弹与发光且释放毒素的黏性藻类混合而成。使用这种炸弹不会受到在水中或水下使用炸弹的普通惩罚和限制。黏性藻类炸弹造成2d8毒素伤害和2点毒素溅射伤害。你在攻击检定中获得+1的物品加值。此外，目标会被发光物质标记，在接下来的一个小时内留下明显可见的轨迹。@UUID[Compendium.pf2e.actionspf2e.Item.EA5vuSgJfiHH7plD]{追踪 Track}留下这条轨迹的生物的 DC 为19，但该轨迹仅在水中出现。</p>"
         }
     }
 }
