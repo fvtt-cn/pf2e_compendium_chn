@@ -16584,6 +16584,37 @@
         "Lambent Perfume": {
             "name": "摇曳香薰 Lambent Perfume",
             "description": "<p>这种陶瓷香炉的形状像是奥特雷亚形态的三头鹮，舒展着翅膀，随时准备飞翔；它挂在一根金色的细链上。</p>\n<hr />\n<p><strong>启动-点燃香烛</strong> <span class=\"pf2-icon\">2</span> (灵光，操作)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>开销</strong> 价值至少1sp的香烛</p>\n<p><strong>效果</strong> 闪烁着光芒的金色迷雾从鹮张开的喙中溢出，扩散到@Template[type:emanation|distance:20]区域内。这种芬芳的雾气令人平静并有益健康。如果一个陷入了恶心或一个苦难的生物在香炉的烟雾中结束了他的回合，则可以尝试一次新的豁免骰以克服恶心或苦难。</p>\n<p>一个陷入了多个苦难的生物，或同时陷入了恶心和一个苦难的生物，每次在灵光内结束回合时都需要选择其中一个来尝试克服。在针对一个苦难尝试了一次新的豁免骰后，该生物获得临时免疫，在24小时内无法再次利用<em>摇曳香薰</em>来克服该苦难。</p>"
+        },
+        "Aboutface Figurehead": {
+            "description": "<p><strong>Usage</strong> attached to a ship’s bow</p>\n<p>这个外表普通的船首像看起来充满担忧，就像害怕被追赶一样。如果船首像所附着的船具有笨重特性，那么船首像将取消该特性。船长通常会将启动<em>回首船首像</em>的能力授予他们船上的掌舵者。</p>\n<hr />\n<p><strong>启动—转向！</strong> <span class=\"pf2-icon\">1</span> (专注，移动)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 船头会像是在回头看一样转动头部，在船下产生一个瞬间的漩涡和与船航向正好相反的湍流。船在原地完成180度的转向，然后从下一回合开始继续以这个新的方向航行。</p>",
+            "name": "回首船首像 Aboutface Figurehead"
+        },
+        "Anglerfish Lantern": {
+            "name": "鮟鱇鱼灯 Anglerfish Lantern",
+            "description": "<p>这个@UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{牛眼提灯 Bull's-eye Lantern}是仿造鮟鱇鱼的样式，或者是由鮟鱇鱼的剥制品制成。它可以像普通的灯一样点燃，但是当沉入水中时，<em>鮟鱇鱼灯</em>会自动发光。</p>\n<hr />\n<p><strong>启动—迷幻之光</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>效果</strong> 在<em>鮟鱇鱼灯</em>明亮的光范围内的所有生物必须成功通过@Check[type:will|dc:19]豁免，否则会被光吸引而陷入@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}状态，持续1轮（大失败时持续1分钟）。如果灯火熄灭，则迷魂效果结束。水生动物和具有水属性的生物在豁免检定有-2环境减值。无论结果如何，生物接下来的24小时内都对此效果免疫。</p>"
+        },
+        "Anglerfish Lantern (Submersible)": {
+            "name": "深海鮟鱇鱼灯 Anglerfish Lantern (Submersible)",
+            "description": "<p>这个@UUID[Compendium.pf2e.equipment-srd.Item.QrNvP9SgnK9DrerA]{牛眼提灯 Bull's-eye Lantern}是仿造鮟鱇鱼的样式，或者是由鮟鱇鱼的剥制品制成。它可以像普通的灯一样点燃，但是当沉入水中时，<em>鮟鱇鱼灯</em>会自动发光。</p>\n<hr />\n<p><strong>启动—迷幻之光</strong> <span class=\"pf2-icon\">2</span> (专注，操作)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>效果</strong> 在<em>鮟鱇鱼灯</em>明亮的光范围内的所有生物必须成功通过@Check[type:will|dc:24]豁免，否则会被光吸引而陷入@UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{迷魂 Fascinated}状态，持续1轮（大失败时持续1分钟）。如果灯火熄灭，则迷魂效果结束。水生动物和具有水属性的生物在豁免检定有-2环境减值。无论结果如何，生物接下来的24小时内都对此效果免疫。</p>\n<hr />\n<p><strong>启动—潜航！</strong> 1分钟 (专注，操作)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你将<em>深海鮟鱇鱼灯</em>放入至少15英尺深的水中，同时下达命令。灯会变形为@UUID[Compendium.pf2e.vehicles.Actor.GMoxs9RQ88uMxfW4]{潜水艇 Bathysphere}，持续1小时。这个载具拥有一个可以通过交互动作旋转90度的@Template[type:cone|distance:60]灯光，同时具有上面列出的启动效果。效果结束时，所有乘坐者会安全地被弹出。如果潜水艇被损坏，效果结束并且<em>深海鮟鱇鱼灯</em>也会被损坏。</p>"
+        },
+        "Brine Dragon Scale": {
+            "description": "<p><strong>用法</strong> 附着在近战武器上</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">R</span> (专注)</p>\n<p><strong>先决条件</strong> 你在附着武器上具有专家熟练度</p>\n<p><strong>触发</strong> 一名武器触及内的生物采取一个带有专注特征的动作。</p>\n<p>人尽皆知洋龙善于在关键时刻干扰他们敌人的注意力，而这片蓝绿色的龙鳞看起来就像洋龙的鳞片。当你启动这片龙鳞时，它会破裂并向触发生物释放出一股腐蚀性的盐水。该生物受到@Damage[2d8[acid]]伤害，@Check[type:reflex|dc:24|basic:true]豁免。如果该生物在豁免检定中大失败，它的专注会被破坏，使得触发的动作被打断。</p>",
+            "name": "洋龙鳞片 Brine Dragon Scale"
+        },
+        "Conch of Otherworldly Seas": {
+            "description": "<p>这个美丽的海螺壳表面复盖着魔法文字，从内部散发出蓝色的光芒。<em>异界海洋之螺</em>是一件专家级手持乐器，使用时可以为表演检定提供+2物品加值。</p>\n<p>该螺壳是通往水元素位面的位面钥匙，可以用于<em>跨位面传送</em>和类似的魔法。在使用时，你可以将其与目的地的水域相调谐，使其更有可能到达你想要到达的地方，距离你预期目的地1d6×25英里，而不是1d10×25英里。</p>\n<hr />\n<p><strong>启动—海洋之音</strong> <span class=\"pf2-icon\">1</span> (操作)</p>\n<p><strong>效果</strong> 你将这个海螺壳放在耳边。海螺壳在你耳边时，你可以理解和说水元素语。</p>\n<hr />\n<p><strong>启动—深海之声</strong> 10分钟 (专注，操作)</p>\n<p><strong>效果</strong> 你将这个海螺壳放在耳边并触摸其表面精致的符文，令螺壳释放一个5环的<em>@UUID[Compendium.pf2e.spells-srd.Item.HXhWYJviWalN5tQ2]{锐耳术 Clairaudience}</em>，并使你受益。若你选择的位置在水下，你可以将该法术的范围扩展到1英里，并以完美的清晰度聆听。</p>",
+            "name": "异界海螺 Conch of Otherworldly Seas"
+        },
+        "Faydhaan's Dallah": {
+            "description": "<p>高贵的水巨灵长老会用像这样华丽的达拉壶泡咖啡来欢迎他们庭院里的客人。大多数贵族都会让厨房的工作人员从其他位面高价进口咖啡豆，然后再用来自水元素位面的材料烘烤这些咖啡豆，制作出在他们本地独一无二的咖啡。<em>水巨灵的达拉壶</em>底部镌刻着特定长老的名字，并通常配有六个饮用杯、一个托盘和一些咖啡豆。</p>\n<hr />\n<p><strong>启动—酿造</strong> <span class=\"pf2-icon\">3</span> (专注，操作)</p>\n<p><strong>效果</strong> 你将一把咖啡豆放入达拉壶中，它会立即研磨咖啡豆，装满水，并酿造出六杯量的咖啡。将一杯咖啡倒入容器、饮用一杯咖啡各需要一个交互动作。饮用一杯咖啡的生物在接下来的8小时内可以在水下呼吸，并对水下环境中的轻微或严重温度受到保护。稍后可以使用达拉壶的其他激活来变化咖啡，但如果再次酿造咖啡，这种潜在的魔法将会消失。</p>\n<p>从达拉壶中倒出的咖啡会保留在容器中，直到有人喝掉它或故意将其倒出，即使容器位于咖啡通常会泄漏的环境，比如水下。</p>\n<hr />\n<p><strong>启动—水巨灵的好客</strong> <span class=\"pf2-icon\">2</span> (专注)</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你今天使用达拉壶的启动能力来酿造了一批咖啡</p>\n<p><strong>效果</strong> 你念出刻在达拉壶上的水巨灵长老的名字。你不需要手持达拉壶来使用此激活。长老会变化每个饮下你酿造咖啡的生物体内的咖啡。选择一个6级或更低级的普通药水，并让他们获得该药水的所有好处。通常，长老会选择<em>中等治疗药水</em>、<em>次等抗力药水</em>或<em>游泳药水</em>。</p>",
+            "name": "水巨灵的达拉壶 Faydhaan's Dallah"
+        },
+        "Kraken Figurehead": {
+            "description": "<p><strong>用法</strong> 安装在船头上</p>\n<p>这个雕像的主体由一团触手组成，触摸时总是略微湿滑而粘腻。迷信的水手们往往会避开船头带有这个雕像的船只，声称在海上炫耀海怪形象会带来厄运。</p>\n<hr />\n<p><strong>启动—狂击！</strong> <span class=\"pf2-icon\">2</span> (灵光，专注)</p>\n<p><strong>频率</strong> 每小时一次</p>\n<p><strong>效果</strong> 雕像产生幻影触手，从船体中喷发出来。这些触手在等同于船体长度的弥漫范围内持续活动10分钟。处于该光环中并与船在同一水域中的生物在@UUID[Compendium.pf2e.actionspf2e.Item.c8TGiZ48ygoSPofx]{游泳 Swim}时，因为翻腾的触手四处乱抓，他们的运动技能检定会受到-2的环境减值。</p>\n<hr />\n<p><strong>启动—抓住它们！</strong> <span class=\"pf2-icon\">1</span> (攻击，专注)</p>\n<p><strong>需求</strong> 船的幻影触手被启动</p>\n<p><strong>效果</strong> 触手抓向光环内的敌对船只。进行一次驾驶检定，对目标船只的AC进行对抗。如果成功，触手抓住并将两艘船拴在一起。在被拴在一起时，船无法相互远离，敌对船上的生物在所有驾驶检定中受到-2的环境减值，并试图@UUID[Compendium.pf2e.actionspf2e.Item.bG91dbtbgOnw7Ofx]{登上 Board}敌对船只的生物在检定中获得+2的环境加值。</p>\n<p>如果你在触手已经缠绕在另一艘船上的情况下使用这个启动，触手会拉着那艘船朝你的方向移动，距离最多为你船的游泳速度的一半（成功时），或你船的游泳速度（大成功时）。敌船的驾驶员可以以一个单动作进行一次有攻击特征，DC 27的驾驶检定，以摆脱触手的束缚。如果成功，船将脱离触手的束缚。</p>",
+            "name": "海怪船首像 Kraken Figurehead"
+        },
+        "Kraken Figurehead (Wracking)": {
+            "name": "折磨海怪船首像 Kraken Figurehead (Wracking)"
         }
     }
 }
