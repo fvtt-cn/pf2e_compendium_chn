@@ -75,36 +75,6 @@
 				}
 			}
 		},
-		"Averlace's Last Stand": {
-			"name": "Averlace's Last Stand",
-			"disable": "<p>@Check[type:religion|dc:18] (受训) to exorcise the haunt, or @Check[type:deception|dc:20] or Diplomacy to convincingly say Garmon is \"safe\"</p>",
-			"hazarddescription": "<p>Averlace's lingering sentiment wards her mentor's remains and her own.</p>",
-			"reset": "<p>The haunt resets every night at midnight until the skeletal soldiers risen from Garmon and Averlace are destroyed.</p>",
-			"stealthdetails": "<p>to notice a thickening in the fog and hear a whispered voice asking \"is Garmon safe?\"</p>",
-			"data":{},
-			"items":{}
-		},
-		"Bloody Barber Gang Leader": {
-			"name": "Bloody Barber Gang Leader",
-			"publicNotes": "<p>Cutthroats, killers, thieves, and toughs prey upon the vulnerable of society. Directing their activities and keeping them in line are the duties of the gang leader.</p>\n<hr />\n<p>Villains pursue selfish and cruel goals, trampling over anyone foolish or purehearted enough to stand in their way.</p>",
-			"blurb": "Variant gang leader",
-			"data":{},
-			"items":{}
-		},
-		"Bloody Barber Ruffian": {
-			"name": "Bloody Barber Ruffian",
-			"publicNotes": "<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
-			"blurb": "Variant ruffian",
-			"data":{},
-			"items":{}
-		},
-		"Bloody Barber Thief": {
-			"name": "Bloody Barber Thief",
-			"publicNotes": "<p>Burglars specialize in breaking and entering to rob homes and businesses. These criminals focus on gaining access to secure buildings and bypassing traps and other security measures while remaining undetected all the while.</p>\n<hr />\n<p>Some criminals are the desperate who have no option but to break the law to survive, while others choose a life of crime for thrills, forming gangs or underworld guilds that specialize in certain illegal ventures.</p>",
-			"blurb": "Variant burgler",
-			"data":{},
-			"items":{}
-		},
 		"Bugbear Creeper": {
 			"name": "熊地精潜伏者 Bugbear Creeper",
 			"publicNotes": "<p>最常见的熊地精暴徒很擅长潜伏在阴影中的技艺。</p>\n<hr />\n<p>这些鬼祟且残忍的地精亚种生物以散布恐惧和折磨受害者为乐。熊地精是潜伏在壁橱里和床底下的怪物。他们在偏远的农场进行猎食，会在深夜通过敲打或制造木板的吱吖声来揭示自身的存在，并以此构筑有人潜伏于此的骇人气氛和让人心生疑窦的恐惧感。</p>",
@@ -132,13 +102,6 @@
 					"description": "<p>熊地精对@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened}生物的伤害检定获得+4环境加值。</p>"
 				}
 			}
-		},
-		"Bugbear Raider": {
-			"name": "Bugbear Raider",
-			"publicNotes": "<p>The bugbear tormentor seeks to torture their prey as much through psychological intimidation as through physical harm. The longer a bugbear tormentor can keep their victim alive and terrified, the better they feel.</p>\n<hr />\n<p>These stealthy and cruel goblinoid creatures delight in spreading fear and tormenting their victims. Bugbears are the monsters lurking in the closet and hiding under the bed. Preying on remote farmsteads, bugbears reveal their presence with thumps in the night or creaks of boards to build lurking dread and arouse suspicion and fear.</p>",
-			"blurb": "Variant bugbear tormentor",
-			"data":{},
-			"items":{}
 		},
 		"Bugbear Terror": {
 			"name": "熊地精恐怖者 Bugbear Terror",
@@ -171,53 +134,6 @@
 				}
 			}
 		},
-		"Damaged Automaton": {
-			"name": "Damaged Automaton",
-			"data":{},
-			"items":{}
-		},
-		"Death Drop (3-4)": {
-			"name": "Death Drop (3-4)",
-			"disable": "<p>@Check[type:occultism|dc:20] (受训) to disperse the force or @Check[type:religion|dc:18] (受训) to hide from the ominous presence's senses</p>",
-			"hazarddescription": "<p>An invisible force shoves creatures backwards, hurling them through the chamber's doorway.</p>",
-			"reset": "<p>1 day</p>",
-			"stealthdetails": "<p>(受训) to sense an ominous presence in the room</p>",
-			"data":{},
-			"items":{}
-		},
-		"Death Drop (5-6)": {
-			"name": "Death Drop (5-6)",
-			"disable": "<p>@Check[type:occultism|dc:23] (受训) to disperse the force or @Check[type:religion|dc:21] (受训) to hide from the ominous presence's senses</p>",
-			"hazarddescription": "<p>An invisible force shoves creatures backwards, hurling them through the chamber's doorway.</p>",
-			"reset": "<p>1 day</p>",
-			"stealthdetails": "<p>(受训) to sense an ominous presence in the room</p>",
-			"data":{},
-			"items":{}
-		},
-		"Deep Quicksand": {
-			"name": "Deep Quicksand",
-			"disable": "<p>@Check[type:survival|dc:21|name:Safely Disturb the Surface] (受训) to disturb the surface</p>",
-			"hazarddescription": "<p>A 15-foot-wide patch of water and sand attempts to submerge creatures that step onto it.</p>",
-			"reset": "<p>The hazard still submerges anyone who walks in, but the surface doesn't become hidden again until it settles over the course of 24 hours.</p>",
-			"routine": "<p>(1动作) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation.</p>\n<p>A creature in the quicksand can attempt a @Check[type:athletics|dc:23|traits:action:swim] check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step.</p>\n<p>A creature that Swims out of the quicksand escapes the hazard and is prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own @Check[type:athletics|dc:23|name:Aid Another Creature in Quicksand] check, with the same results as if the creature attempted the check.</p>",
-			"stealthdetails": "<p>(受训) (or -10 and no minimum proficiency if the surface is disturbed)</p>",
-			"data":{},
-			"items":{}
-		},
-		"Denufair": {
-			"name": "Denufair",
-			"publicNotes": "<p>Bonds of loyalty that endure beyond death reanimate pets to crawl from their graves within days of dying, returning to the side of their past owners, family, or pack. Unfortunately, death irrevocably changes a risen pet. They return as aggressive, predatory beasts, difficult to control and easy to anger. Even the most friendly and docile of pets becomes sadistic and violent in undeath—fixating first on those it views as competition for the attention of its owners. When a risen pet is jilted, rebuffed, or offended by its owner, it turns on them.</p>",
-			"blurb": "Variant predatory rabbit",
-			"data":{},
-			"items":{}
-		},
-		"Depleted Roiling Incant": {
-			"name": "Depleted Roiling Incant",
-			"publicNotes": "<p>Though many spellcasters can harness the forces of magic in a consistent manner, such power can't always be controlled, especially in the hands of reckless researchers, megalomaniacal villains, or untested novices. When magical accidents result in large-scale property damage and the loss of life, these forces sometimes take on lives of their own, forming a dangerous amalgamation of ongoing magical energy known as a roiling incant.</p>\n<p>A roiling incant's appearance depends on the type of magic it sprang forth from, though it always carries with it an echo of the destruction it has caused. A fiery evocation roiling incant might look like a storm of burning ashes echoing with the sounds of crackling timber, while a necromancy roiling incant could be mistaken for ghostly tendrils puppeteering shambling corpses. No matter what it looks like, a roiling incant roams mindlessly, attacking everything it encounters, heedless of further carnage it causes.</p>",
-			"blurb": "Variant roiling incant",
-			"data":{},
-			"items":{}
-		},
 		"Dero Stalker (PFS 4-05)": {
 			"name": "癫儒潜行者 Dero Stalker (PFS 4-05)",
 			"publicNotes": "<p>癫儒潜行者负责在夜间探索地表世界并寻找潜在的绑架目标。</p>\n<hr />\n<p>癫儒是矮小精瘦的类人生物，他们生有乳白色的眼瞳，灰白色的皮肤和杂乱的米白或灰色的头发。这些神秘精类的后裔被遗弃在格拉利昂（Golarion）最深邃黑暗的洞穴中，对于世上绝大多数的地表种族来说，癫儒是恐怖故事和民间传说的主题。他们潜伏在大都会地区的下方，强行对被俘生物执行残忍且扭曲的实验。癫儒通常有3尺高，重约70磅。</p>",
@@ -236,32 +152,6 @@
                     "description": "<p>癫儒潜行者对措手不及的生物造成额外1d6点精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
                 }
 			}
-		},
-		"Dig-Widget (PFS 4-07)": {
-			"name": "Dig-Widget (PFS 4-07)",
-			"publicNotes": "<p>Thieves covet dig-widgets, specialized constructs built for infiltration. Each dig-widget contains numerous simple tools, including a set of mechanical devices that function as thieves' tools, two arms with drills, and two arms with corkscrews for attaching to and climbing surfaces. Once activated, these devices propel themselves forward. Though they have the full faculties typical of a construct, they usually follow a simple routine: avoid notice, pick any lock barring the path, dig past obstacles, and attack if caught. They're rarely left unattended, as a thief needs to be nearby to follow after-both to steal goods and to stop the dig-widget from engaging in further larceny once it's achieved its goal.</p>\n<p>The source of a dig-widget's power is as much mechanical as it is magical. The gears and springs that provide a dig-widget mobility are an improvement over more primitive true clockwork creations (whose functions require constant winding to remain mobile), but at the cost of security, for a dig-widget's moving parts can be dismantled quickly by thieves and others with the proper training.</p>",
-			"blurb": "Variant dig-widget",
-			"data":{},
-			"items":{}
-		},
-		"Dorenea": {
-			"name": "Dorenea",
-			"publicNotes": "<p>Simple to create and varied in purpose, these shambling undead are often used for their strength and endless stamina to conduct boring, repetitive tasks.</p>",
-			"blurb": "Variant withered",
-			"data":{},
-			"items":{}
-		},
-		"Dream of Doom": {
-			"name": "Dream of Doom",
-			"publicNotes": "<p>An animate dream coalesces from centuries of stray fragments of reverie and dream left behind as slumbering minds drift through the Dimension of Dreams. In most cases, these fragments simply disperse on their own, but when dreamers flee from nightmares back to the waking world, these fragments can take on a supernatural life of their own. They have little reasoning and intent except to seek similar fragments, absorb them, and grow. When enough of them gather together, they merge into a horrific form as an animate dream.</p>\n<p>Individually, animate dreams can hold a wide range of appearances, but most take on rudimentary shapes akin to the living forms of the minds that spawned them. Animate dreams that rise from slumbering humanoids, the most commonly encountered, thus appear humanoid, but with distorted, nightmarish shapes that incorporate additional twisted limbs and frightening features. In these forms, animate dreams find their way out of the Dreamlands and into the waking world, only to discover they have no way of returning and suffer a relentless hunger that only new nightmares can sate.</p>\n<p>An animate dream thrives on the terror fueled by nightmares and fear and uses its supernatural abilities to invoke such feelings in the minds of its victims, cursing its prey by creating a permanent link to that individual's dreams. Thereafter, the victim is subjected to all manner of reoccurring nightmares. As the nightmares continue, the victim finds it more and more difficult to remain awake. In the end, the victim plunges into an accursed slumber from which it cannot return. These victims provide the animate dream with the purest form of fear and are its preferred sustenance.</p>\n<p>An animate dream can subsist on the ambient fear generated by regular nightmares, but these lesser fears aren't as satisfying, often driving the animate dream to seek out new victims. Left without a source of fear, an animate dream won't starve to death, but it will grow increasingly violent and desperate. Famished animate dreams are the ones most often encountered, as they have been forced to abandon subtlety to pursue more blatant methods of harvesting fear. Yet such animate dreams also tend to be the least powerful of their kind. Those who have grown metaphysically fat on fear have generally done so by adopting a specific nightmare theme, such as being buried alive, being swept away by ocean waves, or being consumed by wild beasts. Such animate dreams often have similarly themed innate spells to augment their powers.</p>",
-			"data":{},
-			"items":{}
-		},
-		"Elite Cave Bear (PFS 4-07)": {
-			"name": "Elite Cave Bear (PFS 4-07)",
-			"publicNotes": "<p>Larger, stronger, and far more aggressive than its smaller cousins, the cave bear is a behemoth that avoids civilized lands, preferring to dwell in remote places. As its name might suggest, the cave bear makes its den in natural caves, and like the grizzly bear, a cave bear is fiercely territorial. Unlike a grizzly bear, however, a cave bear is short tempered and will make sure its foe is dead before moving on, usually feasting on its prey's soft flesh once it has been incapacitated. Cave bears are often regarded as powerful guardian spirits by remote-dwelling people, while they are utilized as beasts of war by orcs or even giants-stone giants in particular have an affinity for keeping trained cave bears as pets or guardians for their homes.</p>\n<hr />\n<p>Bears are ferocious predators typically found in cold or temperate woodlands and hills. Many species of bear exist in addition to the two presented below, such as the smaller (but no less dangerous) black bear or the arctic-dwelling polar bear.</p>",
-			"data":{},
-			"items":{}
 		},
 		"Enormous Rat": {
 			"name": "硕鼠 Enormous Rat",
@@ -305,12 +195,6 @@
 				}
 			}
 		},
-		"Greater Barghest (PFS 4-07)": {
-			"name": "Greater Barghest (PFS 4-07)",
-			"publicNotes": "<p>Once a barghest has eaten enough to grow into a greater barghest, it typically seeks a method to leave the Material Plane and return to the Abyss, there joining other fiends as yet another of that plane's horrors. As barghests have no innate ability to travel the planes, though, the time it takes for most greater barghests to engineer such a return can usually be measured in years, if not decades. During that time, greater barghests continue to play the roles of gluttons, hunters of humanity, and tyrants of goblinoid tribes. More than a few grow accustomed to such lives on the Material Plane and wholly abandon the end goal of returning to the Abyss, despite the fact that those who do make such a return home often grow even more powerful over time, gaining eerie new abilities and qualities absorbed from the raw chaos of the Abyss itself.</p>\n<p>In addition to greater barghests being more powerful than typical barghests, the process of transforming into a greater barghest results in hideous mutations that often grant deadly abilities. Some barghests grow large bat-like wings upon their transformation. Others develop toxic breath or vestigial limbs. The options detailed in the stats below represent only the tip of the proverbial iceberg for barghest mutations-feel free to use these as inspiration for coming up with new mutations of your own design.</p>\n<hr />\n<p>Barghests are lupine fiends with goblinoid faces and humanoid hands. They stalk the Material Plane in search of souls to sate their demonic hunger. Eons ago, barghests dwelled in the pits of Hell and served Asmodeus, but after Lamashtu abducted and adopted the four most powerful of their kind to serve as pets (and in time, as a pantheon of hero-gods worshipped by evil goblins), barghests' loyalties and philosophical nature changed significantly. Today, while barghests retain their connection to goblinoids, they serve none but their own appetites.</p>",
-			"data":{},
-			"items":{}
-		},
 		"Grim Rictus Bridge Guard": {
 			"name": "歪嘴帮守桥者 Grim Rictus Bridge Guard",
 			"senses": "(搜索隐藏物品 +8)",
@@ -330,50 +214,6 @@
 					"description": "<p>当三个或更多强盗相邻时，每个强盗在进行@UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{推撞 Shove}所需的运动检定、攻击检定和伤害检定上都获得+1环境加值。</p>"
 				}
 			}
-		},
-		"Harpy Forager": {
-			"name": "Harpy Forager",
-			"publicNotes": "<p>Harpies are filthy amalgamations of human and bird, resembling feral humans with wings, talons, and mouths full of sharp teeth. They use captivating songs to lure creatures in, then murder them while they stand transfixed. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey-humans and elves are their favorite. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies. Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Harpies live in family groups or larger clans. They are lightweight despite their size, standing 5 feet tall and weighing only around 90 pounds. While most use relatively simple weapons, some harpies take pride in learning and mastering the use of more complex tools of war such as swords and slings. Those who master the use of the bow, in particular, are often regarded as heroes among their kind and terrors among their victims.</p>",
-			"blurb": "Variant harpy",
-			"data":{},
-			"items":{}
-		},
-		"Harpy Wailer": {
-			"name": "Harpy Wailer",
-			"publicNotes": "<p>Harpies are filthy amalgamations of human and bird, resembling feral humans with wings, talons, and mouths full of sharp teeth. They use captivating songs to lure creatures in, then murder them while they stand transfixed. They enjoy causing confusion and fear in their prey before they strike, believing it creates a savory flavor in the flesh. Harpies can eat most creatures but strongly prefer sapient prey-humans and elves are their favorite. Although harpies will eat goblins if sufficiently hungry, they dislike their flavor and avoid eating them if possible. This doesn't comfort goblins, of course, who have a particularly strong fear of harpies. Because their aeries often reek with the gore of their kills and careless spatters of guano, harpies carry a distinctly vile scent that canny travelers associate with danger. Harpies who roost close to civilization make better efforts to keep clean, though these efforts have mixed results.</p>\n<p>Harpies live in family groups or larger clans. They are lightweight despite their size, standing 5 feet tall and weighing only around 90 pounds. While most use relatively simple weapons, some harpies take pride in learning and mastering the use of more complex tools of war such as swords and slings. Those who master the use of the bow, in particular, are often regarded as heroes among their kind and terrors among their victims.</p>",
-			"blurb": "Variant harpy",
-			"data":{},
-			"items":{}
-		},
-		"Infested Clockwork Heap": {
-			"name": "Infested Clockwork Heap",
-			"data":{},
-			"items":{}
-		},
-		"Infested Clockwork Vessel": {
-			"name": "Infested Clockwork Vessel",
-			"publicNotes": "<p>Intricate, complex machines, clockworks are built with care by highly skilled engineers. Though their creation involves some amount of magic, they're primarily mechanical, packed with precision-tuned gears and springs working in concert.</p>\n<p>The sturdy mainspring within a clockwork must be wound to provide the energy needed to power the device. Some larger clockworks contain a series of springs for different limbs that each need to be wound. A clockwork's crafter creates a unique metal key while building the clockwork; winding the clockwork usually involves inserting the key into the machine's back and turning clockwise. Larger clockworks require greater strength to turn the key, and typically have larger keys to allow for more torque-some even accommodating a team of winders rather than an individual. Programming a clockwork requires both the key and the knowledge to set the program correctly, information usually reserved for the clockwork's creator or owner.</p>",
-			"blurb": "Variant clockwork soldier",
-			"data":{},
-			"items":{}
-		},
-		"Larcius": {
-			"name": "Larcius",
-			"data":{},
-			"items":{}
-		},
-		"Living Boulder (PFS 4-04)": {
-			"name": "Living Boulder (PFS 4-04)",
-			"publicNotes": "<p>Living boulders roll and glide through the Plane of Earth, gathering gemstones and metal shards until their surfaces resemble a ship's hull covered in barnacles. Barely more intelligent than many animals, living boulders fill much the same role on the Plane of Earth as the great herd animals found on Material Plane worlds.</p>",
-			"data":{},
-			"items":{}
-		},
-		"Mutated Scorpion": {
-			"name": "Mutated Scorpion",
-			"publicNotes": "<p>These massive, terrifying arachnids are typically 8 feet long from head to the base of the tail. Giant scorpions are the favored pack animals and war beasts of various desert-dwelling monsters, particularly gnolls. They are most commonly encountered in the wild, however. There they lair in mountainside caves or burrow beneath shallow layers of sand where they lie in wait for prey to wander near. Sleek, pallid subterranean scorpions also exist, as do still larger species.</p>\n<hr />\n<p>Chitinous scourges of deserts, forests, savannas, and badlands, scorpions are deadly arachnids with powerful pincers and a painful sting. Scorpions can be found in nearly every climate, where they hunt their prey with a mixture of patient stealth and raw strength. Most scorpions live in underground burrows, either as lone hunters or part of a larger colony. These arachnids are so feared and dangerous that in many cultures, they are treated as deities or dualistic symbols of both death and protection from said death.</p>",
-			"blurb": "Variant giant scorpion",
-			"data":{},
-			"items":{}
 		},
 		"Overtaxed Vrisk": {
 			"name": "过度加班的弗里斯克 Overworked Vrisk",
@@ -396,40 +236,6 @@
 					"description": "<p>如果弗里斯克成为<em>@UUID[Compendium.pf2e.spells-srd.Item.ifXNOhtmU4fKL68v]{篡辑术 Redact}</em>的目标或者被任何其他擦除文字的法术命中，他必须通过@Check[type:will|dc:18]豁免否则就会因为额头的符文被擦除而被立即摧毁。</p>"
 				}
 			}
-		},
-		"Patched Up Automaton": {
-			"name": "Patched Up Automaton",
-			"data":{},
-			"items":{}
-		},
-		"Possessed Clockwork Heap": {
-			"name": "Possessed Clockwork Heap",
-			"data":{},
-			"items":{}
-		},
-		"Possessed Clockwork Vessel": {
-			"name": "Possessed Clockwork Vessel",
-			"publicNotes": "<p>Intricate, complex machines, clockworks are built with care by highly skilled engineers. Though their creation involves some amount of magic, they're primarily mechanical, packed with precision-tuned gears and springs working in concert.</p>\n<p>The sturdy mainspring within a clockwork must be wound to provide the energy needed to power the device. Some larger clockworks contain a series of springs for different limbs that each need to be wound. A clockwork's crafter creates a unique metal key while building the clockwork; winding the clockwork usually involves inserting the key into the machine's back and turning clockwise. Larger clockworks require greater strength to turn the key, and typically have larger keys to allow for more torque-some even accommodating a team of winders rather than an individual. Programming a clockwork requires both the key and the knowledge to set the program correctly, information usually reserved for the clockwork's creator or owner.</p>",
-			"blurb": "Variant clockwork soldier",
-			"data":{},
-			"items":{}
-		},
-		"Pups": {
-			"name": "Pups",
-			"publicNotes": "<p>Bonds of loyalty that endure beyond death reanimate pets to crawl from their graves within days of dying, returning to the side of their past owners, family, or pack. Unfortunately, death irrevocably changes a risen pet. They return as aggressive, predatory beasts, difficult to control and easy to anger. Even the most friendly and docile of pets becomes sadistic and violent in undeath— fixating first on those it views as competition for the attention of its owners. When a risen pet is jilted, rebuffed, or offended by its owner, it turns on them.</p>",
-			"blurb": "Variant scorned hound",
-			"data":{},
-			"items":{}
-		},
-		"Revna the Brave (5-6)": {
-			"name": "Revna the Brave (5-6)",
-			"data":{},
-			"items":{}
-		},
-		"Revna the Brave (7-8)": {
-			"name": "Revna the Brave (7-8)",
-			"data":{},
-			"items":{}
 		},
 		"Seldrick Dralston (1-2)": {
 			"name": "塞德里克·德拉斯顿 Seldrick Dralston (1-2)",
@@ -528,40 +334,6 @@
 					"description": "<p>潜伏客的打击对措手不及的生物造成额外1d6点精准伤害。</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
 				}
 			}
-		},
-		"Sounrel (3-4)": {
-			"name": "Sounrel (3-4)",
-			"data":{},
-			"items":{}
-		},
-		"Sounrel (5-6)": {
-			"name": "Sounrel (5-6)",
-			"data":{},
-			"items":{}
-		},
-		"Stabilized Black Pudding": {
-			"name": "Stabilized Black Pudding",
-			"publicNotes": "<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
-			"blurb": "Variant black pudding",
-			"data":{},
-			"items":{}
-		},
-		"Stabilized Ochre Jelly": {
-			"name": "Stabilized Ochre Jelly",
-			"publicNotes": "<p>Slimes, molds, and other oozes can be found in dank dungeons and shadowed forests. While not necessarily evil, some grow to enormous sizes and have insatiable appetites.</p>",
-			"blurb": "Variant ochre jelly",
-			"data":{},
-			"items":{}
-		},
-		"Ulfen Soldier": {
-			"name": "Ulfen Soldier",
-			"data":{},
-			"items":{}
-		},
-		"Veteran Ulfen Soldier": {
-			"name": "Veteran Ulfen Soldier",
-			"data":{},
-			"items":{}
 		},
 		"Vrisk": {
 			"name": "弗里斯克 Vrisk",
@@ -671,6 +443,85 @@
 				"Necromantic Discharge":{
 					"name": "死灵释放 Necromantic Discharge",
 					"description": "<p><strong>触发</strong> 生物进入房间。</p>\n<hr />\n<p><strong>效果</strong> 房间里涌动的死灵能量像闪电一样散发出去，淹没房间里或房间外三格走廊上的所有生物。这些区域内的每个生物必须因被黑暗能量笼罩而尝试@Check[type:fortitude|dc:21|traits:damaging-effect]豁免，它造成@Damage[(2d8+5)[negative]]伤害，或对有负能量治疗的生物造成@Damage[(2d8+5)[positive]]伤害。</p>\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物受到一半伤害，陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，持续1小时。</p>\n<p><strong>失败</strong> 生物受到完整伤害，陷入力竭1，持续1小时。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害，陷入力竭1，持续1天。</p>"
+				}
+			}
+		},
+		"Witch of the Owl": {
+			"name": "猫头鹰女巫 Witch of the Owl",
+			"data":{},
+			"items":{}
+		},
+		"Witch's Eye": {
+			"name": "女巫的眼线 Witch's Eye",
+			"data":{},
+			"items":{
+				"Bloodletting":{
+					"name": "放血 Bloodletting",
+					"description": "<p>女巫的眼线对@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}目标造成穿刺或挥砍伤害时，还会造成1点持续性流血伤害。</p>"
+				}
+			}
+		},
+		"Witch's Gaze": {
+			"name": "女巫的监视者 Witch's Gaze",
+			"data":{},
+			"items":{
+				"Bloodletting":{
+					"name": "放血 Bloodletting",
+					"description": "<p>女巫的监视者对@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}目标造成穿刺或挥砍伤害时，还会造成1d4点持续性流血伤害。 </p>"
+				}
+			}
+		},
+		"Witch's Talon": {
+			"name": "女巫之爪 Witch's Talon",
+			"data":{},
+			"items":{
+				"Lay Down Your Lives":{
+					"name": "保命 Lay Down Your Lives",
+					"description": "<p><strong>触发</strong> 30尺内女巫之爪的盟友受到生命值伤害</p>\n<hr />\n<p><strong>效果</strong> 该盟友受到一半生命值伤害，女巫之爪承受剩余的伤害。</p>"
+				}
+			}
+		},
+		"Witch's Wing": {
+			"name": "女巫之翼 Witch's Wing",
+			"data":{},
+			"items":{
+				"You're Next":{
+					"name": "下个到你 You're Next",
+					"description": "<p><strong>触发</strong> 女巫之翼将一个生物的生命值降到0点</p>\n<hr />\n<p><strong>效果</strong> 女巫之翼对一个彼此可以互相看见的生物尝试威吓检定以@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{挫败士气 Demoralize}，并具有+2环境加值。/p>"
+				}
+			}
+		},
+		"Butterfly's Breath Trap (1-2)": {
+			"name": "蝶息陷阱 Butterfly's Breath Trap (1-2)",
+			"disable": "<p>@Check[type:survival|dc:17]以闭气避免闻到香水，@Check[type:occultism|dc:16] (受训)以凭空画出守护符文来驱散毒素，或<em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (1环；反制DC15)以反制毒素。</p>",
+			"hazarddescription": "<p>甜腻的香气在议会大楼外的空气中飘荡，袭击所有吸入者的感官。</p>",
+			"stealthdetails": "<p>(受训)</p>",
+			"data":{},
+			"items":{
+				"Goodnight Kiss":{
+					"name": "晚安吻 Goodnight Kiss",
+					"description": "<p><strong>触发</strong> 生物打开色嘉达议会大楼的门</p>\n<hr />\n<p><strong>效果</strong> 10尺内所有生物暴露于蝶息毒素。</p>"
+				},
+				"Butterfly's Breath":{
+					"name": "蝶息 Butterfly's Breath",
+					"description": "<p><strong>豁免检定/strong> @Check[type:fortitude|dc:18]</p>\n<hr />\n<p><strong>潜伏期</strong> 10分钟</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (6小时)</p>\n<p><strong>阶段2</strong> 呆滞1 (12小时)</p>\n<p><strong>阶段3</strong> 呆滞1 (24小时)</p>"
+				}
+			}
+		},
+		"Butterfly's Breath Trap (3-4)": {
+			"name": "蝶息陷阱 Butterfly's Breath Trap (3-4)",
+			"disable": "<p>@Check[type:survival|dc:20]以闭气避免闻到香水，@Check[type:occultism|dc:19] (受训)以凭空画出守护符文来驱散毒素，或<em>@UUID[Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG]{解除魔法 Dispel Magic}</em> (2级；反制DC17)以反制毒素。</p>",
+			"hazarddescription": "<p>甜腻的香气在议会大楼外的空气中飘荡，袭击所有吸入者的感官。</p>",
+			"stealthdetails": "<p>(受训)</p>",
+			"data":{},
+			"items":{
+				"Goodnight Kiss":{
+					"name": "晚安吻 Goodnight Kiss",
+					"description": "<p><strong>触发</strong> 生物打开色嘉达议会大楼的门</p>\n<hr />\n<p><strong>效果</strong> 10尺内所有生物暴露于蝶息毒素。</p>"
+				},
+				"Butterfly's Breath":{
+					"name": "蝶息 Butterfly's Breath",
+					"description": "<p><strong>豁免检定/strong> @Check[type:fortitude|dc:21]</p>\n<hr />\n<p><strong>潜伏期</strong> 10分钟</p>\n<p><strong>阶段1</strong> @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1} (6小时)</p>\n<p><strong>阶段2</strong> 呆滞1 (12小时)</p>\n<p><strong>阶段3</strong> 呆滞1 (24小时)</p>"
 				}
 			}
 		}
