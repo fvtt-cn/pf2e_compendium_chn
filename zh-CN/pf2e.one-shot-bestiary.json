@@ -36,25 +36,25 @@
     },
 	"entries": {
 		"Auldegrund Grimcarver": {
-			"name": "Auldegrund Grimcarver",
+			"name": "奥尔德格伦·格里姆卡弗 Auldegrund Grimcarver",
 			"data":{},
 			"items":{
-				"equipment-Infernal Contract":{
-			        "name": "Infernal Contract",
-			        "description": "<p>Auldegrund's infernal contract with Alocer.</p>"
-			    },
-		        "equipment-Lionlodge Key Ring":{
-		            "name": "Lionlodge Key Ring",
-		            "description": "<p>Key ring for every door in <span style=\"color: var(--body); font-size: 1em;\">Lionlodge.</span></p>"
-		        },
-		        "Invoke Alocer":{
-		        	"name": "Invoke Alocer",
-		        	"description": "<p><strong>触发</strong> Auldegrund is reduced to 60 or fewer Hit Points</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> Auldegrund calls out, in Infernal, \"Give me the strength to slay these foes in your name, almighty Alocer!\" As he does so, his skin darkens to red, diabolic horns jut from his brow, a flaming lion-like mane appears around his head, burning wings burst from his shoulders, and his weapons ignite with black fire.</p>\n<p>He immediately heals @Damage[(3d6+7)[healing]]{3d6+7生命值}, gains a fly speed of 25 feet, and deals an additional [[/r (1d6)[fire]]]{1d6火焰伤害} with his melee and ranged Strikes.</p>\n<p>This is a risky gambit, though, for Alocer is not patient. At the end of each of Auldegrund's turns, he must attempt a @Check[type:flat|dc:11|name:End Invoke Alocer] (the DC of this flat check increases by 1 each轮). On a failure, Alocer grows disappointed that Auldegrund has not defeated his foes and the effects of Invoke Alocer end immediately. This deals [[/r (3d6+7}]]{3d6+7 damage} to Auldegrund, removes his fly speed and additional fire damage to weapon Strikes, and causes Auldegrund to become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>"
-		        },
-		        "Cruel Shot":{
-		        	"name": "Cruel Shot",
-		        	"description": "<p>Auldegrund takes time to line up a shot with his bow and smiles cruelly as he makes a ranged Strike with it.</p>\n<p>If he hits, he deals [[/r (2d6)[precision]]]{2d6 precision damage} and @Localize[PF2E.PersistentDamage.Bleed1d6.success]. Even if he misses, he still deals [[/r 2d6]] damage from the glancing blow. Only on a critical miss does his cruel shot deal no damage.</p>"
-		        }
+				"Invoke Alocer": {
+					"description": "<p><strong>触发</strong> 奥尔德格伦的生命值降低到60以下</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 奥尔德格伦用炼狱语喊道：“全能的阿洛瑟赐予我力量，以你的名义杀死这些敌人！”</p>\n<p>之后他会立刻治疗[[/r (3d6+7)[healing]]]{3d6+7生命值}，获得25尺的飞行速度，并且近战和远程打击额外造成@Damage[1d6[fire]]伤害。</p>\n<p>不过，这么做是要承担风险的，因为阿洛瑟并没有什么耐心。每当奥尔德格伦的回合结束时，他都必须进行@Check[type:flat|dc:11|name:呼唤阿洛瑟]检定（该纯骰检定的DC每轮增加1点）。如果失败，阿洛瑟就会对奥尔德格伦没能击败他的敌人感到失望，呼唤阿洛瑟的效果会立刻结束。此时奥尔德格伦会受到[[/r {3d6+7}]]{3d6+7伤害}，飞行速度和武器打击的额外火焰伤害也会消失，并且导致奥尔德格伦陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 3}。</p>",
+					"name": "呼唤阿洛瑟 Invoke Alocer"
+				},
+				"Cruel Shot": {
+					"description": "<p>奥尔德格伦花时间瞄准，并且残忍地微笑着用弓进行远程打击。</p>\n<p>如果命中，他将造成2d6精准伤害和1d6流血伤害。即便他未能命中，也会由于掠袭而过的箭矢造成[[/r 2d6]]伤害。残忍射击只有大失败时才不会造成任何伤害。</p>",
+					"name": "残忍射击 Cruel Shot"
+				},
+				"equipment-Infernal Contract": {
+					"description": "<p>奥尔德格伦和阿洛瑟的地狱契约。</p>",
+					"name": "地狱契约 Infernal Contract"
+				},
+				"equipment-Lionlodge Key Ring": {
+					"description": "<p>可以开启<span style=\"color: var(--body); font-size: 1em;\">狮屋</span>所有锁的钥匙环。</p>",
+					"name": "狮屋钥匙环 Lionlodge Key Ring"
+				}
 			}
 		},
 		"Bad Vibrations": {
@@ -87,7 +87,7 @@
 			}
 		},
 		"Cultist of Alocer": {
-			"name": "Cultist of Alocer",
+			"name": "阿洛瑟教徒 Cultist of Alocer",
 			"data":{},
 			"items":{}
 		},
@@ -155,23 +155,23 @@
 			}
 		},
 		"Giant Pirate Skeleton": {
-			"name": "Giant Pirate Skeleton",
+			"name": "巨型海盗骷髅 Giant Pirate Skeleton",
 			"data":{},
 			"items":{
-				"BHl8dYHvfw3wudwe":{
-					"name": "Gaff Hook"
+				"Easily Distracted": {
+					"description": "<p>巨型海盗骷髅的视力不佳，很容易被夹击它的生物分散注意力。如果它因被夹击而陷入措手不及，其AC的减值增加到-4。</p>",
+					"name": "容易分神 Easily Distracted"
 				},
-				"Easily Distracted":{
-					"name": "Easily Distracted",
-					"description": "<p>The giant pirate skeleton's poor vision makes it easily distracted by creatures that flank it. Whenever it has the Off-Guard condition from being flanked, increase the penalty to its AC to -4.</p>"
+				"Impaling Hook": {
+					"description": "<p>被巨型海盗骷髅用鱼叉钩造成重击的生物会被刺穿。</p>\n<p>T该生物会被巨型海盗骷髅@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}，每当巨型海盗骷髅维持擒抱时，该生物都会因为伤口的疼痛受到@Damage[(1d10+10)[piercing]]伤害。</p>",
+					"name": "铁钩穿刺 Impaling Hook"
 				},
-				"Focused Assault":{
-					"name": "Focused Assault",
-					"description": "<p>The giant pirate skeleton makes two Strikes with its claw against one foe. The multiple attack penalty doesn't increase until after both attacks are resolved.</p>\n<p>The giant pirate skeleton doesn't use this ability if there is more than one creature within its reach that it can see.</p>"
+				"strike-Gaff Hook": {
+					"name": "鱼叉钩 Gaff Hook"
 				},
-				"Impaling Hook":{
-					"name": "Impaling Hook",
-					"description": "<p>A creature critically hit by the giant pirate skeleton's gaff hook is impaled upon it.</p>\n<p>The creature is @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed} by the giant pirate skeleton and whenever the giant pirate skeleton maintains the grab, the creature takes @Damage[(1d10+10)[piercing]]{1d10+10 piercing damage} from the agonizing wound.</p>"
+				"Focused Assault": {
+					"description": "<p>巨型海盗骷髅用爪子对一个敌人发动两次打击。两次攻击完成后才会增加多重攻击减值。</p>\n<p>如果有一个以上生物在它的触及范围内，它就不会使用这项能力。</p>",
+					"name": "专注突袭 Focused Assault"
 				}
 			}
 		},
@@ -364,23 +364,24 @@
 			}
 		},
 		"Poisoned Lock (Lionlodge)": {
-			"name": "Poisoned Lock (Lionlodge)",
-			"disable": "<p>@Check[type:thievery|dc:23|name:Disable Thievery] (专家) on the spring mechanism.</p>",
-			"hazarddescription": "<p>A spring-loaded, poisoned needle is hidden near the drawer's keyhole. Disabling or breaking the trap does not disable or break the lock.</p>",
+			"name": "毒锁 Poisoned Lock (狮屋)",
+			"disable": "<p>@Check[type:thievery|dc:23|name:Disable Thievery] (专家) 可以解除弹簧</p>",
+			"hazarddescription": "<p>这把锁的钥匙孔附近藏着一根带有弹簧的毒刺。解除或破坏陷阱并不能解除或者破坏这把锁。</p>",
 			"stealthdetails": "<p>(专家)</p>",
 			"data":{},
 			"items":{
 				"Spring":{
-					"name": "Spring",
-					"description": "<p><strong>触发</strong> A creature tries to unlock or @UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{Pick the Lock}</p>\n<hr />\n<p><strong>效果</strong> The needle extends to attack the triggering creature.</p>"
+					"name": "弹簧 Spring",
+					"description": "<p><strong>触发</strong> 一个生物尝试解锁或@UUID[Compendium.pf2e.actionspf2e.Item.2EE4aF4SZpYf0R6H]{开锁 Pick the Lock}</p>\n<hr />\n<p><strong>效果</strong> 毒针刺出，攻击该生物。</p>"
 				},
-				"F7pAqbfwb5BHQasS":{
-					"name": "Needle",
-					"description": "<p>plus Enhanced Hunting Spider Venom</p>"
+				"strike-Needle":{
+					"name": "毒针 Needle",
+					"description": "<p>附带增强猎蛛毒</p>"
 				},
 				"Enhanced Hunting Spider Venom":{
-					"name": "Enhanced Hunting Spider Venom",
-					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> [[/r (1d10)[poison]]]{1d10 poison damage} and @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> [[/r (1d12)[poison]]]{1d12 poison damage}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}, and Off-Guard (1轮)</p>\n<p><strong>阶段3</strong> [[/r (2d6)[poison]]]{2d6 poison damage}, @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}, and Off-Guard (1轮).</p>\n<hr />\n<p><strong>Note</strong> The clumsy condition caused by this venom persists for 24 hours before fading.</p>"
+					"name": "增强猎蛛毒 Enhanced Hunting Spider Venom",
+					"description": "<p><strong>豁免检定</strong> @Check[type:fortitude|dc:23|basic:true]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<hr />\n<p><strong>阶段1</strong> @Damage[1d10[poison]]伤害和@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard} (1轮)</p>\n<p><strong>阶段2</strong> @Damage[1d12[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和措手不及 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[2d6[poison]]伤害，@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和措手不及 (1轮).</p>\n<hr />\n<p><strong>注意</strong> 这种毒素引起的笨拙状态会持续24小时才消退。</p>"
+
 				}
 			}
 		},
@@ -434,11 +435,11 @@
 			}
 		},
 		"Simulacrum": {
-			"name": "Simulacrum",
+			"name": "拟像 Simulacrum",
 			"data":{},
 			"items":{
 				"equipment-Key Ring":{
-					"name": "Key Ring"
+					"name": "钥匙环 Key Ring"
 				}
 			}
 		},
