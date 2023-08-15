@@ -3,7 +3,7 @@
     "entries": {
         "(Golem) Golem Antimagic": {
             "name": "魔像抗魔 Golem Antimagic",
-            "description": "<p>被伤害：[damageType] ([[/r {0d8}]]{0d8伤害}，区域效果或持续伤害则为[[/r {0d4}]]{0d4伤害}；被治疗：[damageType] (区域效果@Damage[0d4[healing]]{0d4生命值})；被减速：[damageType]</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+            "description": "<p>被伤害：[damageType] ([[/r {0d8}]]{0d8伤害}，区域效果或持续伤害则为[[/r {0d4}]]{0d4伤害}；被治疗：[damageType] (区域效果@Damage[0d4[healing]]生命值)；被减速：[damageType]</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
         },
         "(Ghost) Cold Spot": {
             "description": "<p>@Template[type:emanation|distance:5|damaging:yes]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>幽灵5尺范围内的空气异常寒冷。如果角色进入幽灵的灵光范围或在其中开始自身回合，那么幽灵每具有3等级对其造成@Damage[1d6[cold]]伤害（@Check[type:fortitude|dc:|basic:true]豁免）。</p>",
@@ -63,7 +63,7 @@
         },
         "(Graveknight) Channel Magic": {
             "name": "(死墓骑士)引导魔法 Channel Magic",
-            "description": "<p>死墓骑士通过护甲引导魔法能量，这让它能通过攻击施法。</p>\n<p>死墓骑士施放一个1-2动作且需要一次法术攻击骰的法术。法术效果不会立刻发生，而是被灌注进一次攻击。死墓骑士接着用武器或无武装攻击进行一次近战打击。法术被附加在攻击上，使用攻击检定结果来决定打击和法术效果。</p>\n<p>这在计算多重攻击减值时被计算为两次攻击，但直到引导魔法结束不增加多重攻击减值。</p>\n<p>死墓骑士无法在[[/br 1d4 #rounds]]{1d4轮}内再次使用引导魔法。</p>"
+            "description": "<p>死墓骑士通过护甲引导魔法能量，这让它能通过攻击施法。</p>\n<p>死墓骑士施放一个1-2动作且需要一次法术攻击骰的法术。法术效果不会立刻发生，而是被灌注进一次攻击。死墓骑士接着用武器或无武装攻击进行一次近战打击。法术被附加在攻击上，使用攻击检定结果来决定打击和法术效果。</p>\n<p>这在计算多重攻击减值时被计算为两次攻击，但直到引导魔法结束不增加多重攻击减值。</p>\n<p>死墓骑士无法在[[/br 1d4 #Recharge Channel Magic]]{1d4轮}内再次使用引导魔法。</p>"
         },
         "(Graveknight) Clutching Armor": {
             "name": "(死墓骑士)缠结护甲 Clutching Armor",
@@ -763,7 +763,7 @@
         },
         "(Cryptid, Experimental) Energy Wave": {
             "name": "(实验性神秘生物)能量波 Energy Wave",
-            "description": "<p>实验性神秘生物释放@Template[type:line|distance:30]能量，该能量类型是实验性神秘生物特有的（通常是电击或火焰）。该区域内的生物受到神秘生物@Damage[1d6[damagetype]]{每个等级1d6的伤害}，@Check[type:reflex|dc:|basic:true]豁免。实验性神秘生物每过[[/r 1d4 #Energy Wave Recharge]]{1d4轮}能使用一次此能力。该动作具有和对应伤害类型的特征。如果塑造该生物的实验是魔法实验，该动作还具有塑能系特征以及和该次实验的魔法根源相匹配的特征（奥术、神术、异能或原能）。</p>"
+            "description": "<p>实验性神秘生物释放@Template[type:line|distance:30]能量，该能量类型是实验性神秘生物特有的（通常是电击或火焰）。该区域内的生物受到神秘生物@Damage[1d6[damagetype]]{每个等级1d6的伤害}，@Check[type:reflex|dc:|basic:true]豁免。实验性神秘生物每过[[/r 1d4 #Recharge Energy Wave]]{1d4轮}能使用一次此能力。该动作具有和对应伤害类型的特征。如果塑造该生物的实验是魔法实验，该动作还具有塑能系特征以及和该次实验的魔法根源相匹配的特征（奥术、神术、异能或原能）。</p>"
         },
         "(Cryptid, Experimental) Operational Flaw": {
             "name": "(实验性神秘生物)调整缺陷 Operational Flaw",
