@@ -3959,7 +3959,7 @@
         },
         "Redirect Elements": {
             "name": "元素偏转 Redirect Elements",
-            "description": "<p><strong>触发</strong> 敌人的具有元素特征的法术以你为目标作出法术攻击检定，且投掷出失败或大失败时</p>\n<hr />\n<p>你夺取了向你发射的法术的元素精华，并将法术重定向至法术区域内你所选择的一名生物。攻击者要重掷法术的攻击检定对抗新目标。</p>",
+            "description": "<p><strong>触发</strong> 敌人的具有元素特征的法术以你为目标作出法术攻击检定投掷出失败或大失败，且该元素特征是你的元素哲学</p>\n<hr />\n<p>你夺取了向你发射的法术的元素精华，并将法术重定向至法术区域内你所选择的一名生物。攻击者要重掷法术的攻击检定对抗新目标。</p>",
             "prerequisites": [
                 {
                     "value": "元素使入门"
@@ -10162,7 +10162,7 @@
         },
         "Lore Seeker": {
             "name": "学识探求者 Lore Seeker",
-            "description": "<p>你能看到他人不能见之物，并开发了用以探究隐藏真实的魔法技巧。你每天能以内在法术的形式施放<em>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{通晓语言 Comprehend Language}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Et8RSCLx8w7uOLvo]{复原感官 Restore Senses}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{识破无形 See the Unseen}</em>各一次。若你原本就可施放法术，则这些内在法术与你施放的法术拥有同种根源。若你原本没有施放法术的额能力，则该些法术为奥术内在法术，智力为它们的施法属性，你同时在奥术的法术攻击与DC上受训。</p>",
+            "description": "<p>你能看到他人不能见之物，并开发了用以探究隐藏真实的魔法技巧。你每天能以内在法术的形式施放<em>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{通晓语言 Translate}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Et8RSCLx8w7uOLvo]{复原感官 Restore Senses}</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{识破无形 See the Unseen}</em>各一次。若你原本就可施放法术，则这些内在法术与你施放的法术拥有同种根源。若你原本没有施放法术的额能力，则该些法术为奥术内在法术，智力为它们的施法属性，你同时在奥术的法术攻击与DC上受训。</p>",
             "prerequisites": [
                 {
                     "value": "卷宗大师入门"
@@ -12723,7 +12723,7 @@
         },
         "Heart of the Kaiju": {
             "name": "怪兽之心 Heart of the Kaiju",
-            "description": "<p>在近距离目睹了怪兽王魔加鲁（Mogaru），阿尔鲁（Alru），托拉洛亚（Toraloa）的伟力之后，唤醒了你内心的凶暴。当你使用@UUID[Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz]{魔兽变身 Monstrosity Shape}变形时，你可以使用怪兽形态。当你获得此专长时，选择强酸，寒冷，电击，火焰或音波伤害；这将是你的吐息武器所造成的伤害类型。你之后无法修改此项。战斗形态是有着以下特殊能力的巨型体型；伤害值已经包含了作为9环法术所提供的额外伤害骰。</p>\n<p><strong>怪兽</strong> 40尺；物理抗力 5；</p>\n<p><strong>近战 </strong> <span class=\"pf2-icon\">1</span> 颚咬(触及20 尺), <strong>伤害</strong> @Damage[(3d12+20)[piercing]]; </p>\n<p><strong>近战</strong> <span class=\"pf2-icon\">1</span> 爪抓(灵巧, 触及20尺)， <strong>伤害</strong> @Damage[(3d8+20)[slashing]]</p>\n<p><strong>吐息武器</strong><span class=\"pf2-icon\">2</span> （塑能系，原能）60尺锥形范围内所有生物受到[[/r 15d6]]{15d6伤害}（你所选择的伤害类型），进行@Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true]豁免对抗你的法术DC。启动后，你的吐息武器不能在[[/r 1d4 #Breath Weapon Recharge]]{1d4轮}内再次使用。</p>",
+            "description": "<p>在近距离目睹了怪兽王魔加鲁（Mogaru），阿尔鲁（Alru），托拉洛亚（Toraloa）的伟力之后，唤醒了你内心的凶暴。当你使用@UUID[Compendium.pf2e.feats-srd.Item.54JzsYCx3uoj7Wlz]{魔兽变身 Monstrosity Shape}变形时，你可以使用怪兽形态。当你获得此专长时，选择强酸，寒冷，电击，火焰或音波伤害；这将是你的吐息武器所造成的伤害类型。你之后无法修改此项。战斗形态是有着以下特殊能力的巨型体型；伤害值已经包含了作为9环法术所提供的额外伤害骰。</p>\n<p><strong>怪兽</strong> 40尺；物理抗力 5；</p>\n<p><strong>近战 </strong> <span class=\"pf2-icon\">1</span> 颚咬(触及20 尺), <strong>伤害</strong> @Damage[(3d12+20)[piercing]]; </p>\n<p><strong>近战</strong> <span class=\"pf2-icon\">1</span> 爪抓(灵巧, 触及20尺)， <strong>伤害</strong> @Damage[(3d8+20)[slashing]]</p>\n<p><strong>吐息武器</strong><span class=\"pf2-icon\">2</span> （塑能系，原能）60尺锥形范围内所有生物受到[[/r 15d6]]{15d6伤害}（你所选择的伤害类型），进行@Check[type:reflex|dc:resolve(@actor.attributes.spellDC.value)|basic:true]豁免对抗你的法术DC。启动后，你的吐息武器不能在[[/r 1d4 #Recharge Breath Weapon]]{1d4轮}内再次使用。</p>",
             "prerequisites": [
                 {
                     "value": "魔兽变身"
@@ -13577,7 +13577,7 @@
         },
         "Replenishment of War": {
             "name": "战时回复 Replenishment of War",
-            "description": "<p>击倒敌人会从你的神祇处获得赞美和庇佑。当你使用你的神祇的偏好武器，通过打击伤害一个生物，你获得等于你的等级一半的临时生命值，如果打击为重击，则等于你的等级。这些临时生命值持续到你的下个回合开始。</p>",
+            "description": "<p>击倒敌人会从你的神祇处获得赞美和庇佑。当你使用你的神祇的偏好武器，通过打击伤害一个生物，你获得等于你的等级一半的临时生命值，如果打击为重击，则等于你的等级。这些临时生命值持续到你的下个回合开始。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.BJc494USeyM011p3]{效果：战时回复}</p>",
             "prerequisites": [
                 {
                     "value": "你信仰的神祇的偏好武器熟练度为专家"
@@ -14719,7 +14719,7 @@
         },
         "Reveal True Name": {
             "name": "揭示真名 Reveal True Name",
-            "description": "<p>你通过自己得知其真名来威胁一个生物，并且试图让他按你的意愿行动。你必须知道并且说出该生物的真名，同时说出想让这个生物做些什么。尝试一次威吓检定对抗目标的意志DC。</p>\n<hr />\n<p><strong>大成功</strong> 目标出于自我保护的意识而按照你所说的行动，并且不会以任何方式伤害自身。他变为不友善（如果他还没有不友善或敌对），但仍会在一天内保持顺从。目标因为太过害怕你，以至于不敢报复或者逃跑，确信自己无论跑到天涯海角都会被你找到。</p>\n<p><strong>成功</strong> 如同大成功，但是一旦目标变为不友善，他们就会避开你，并且可能以一种间接的方式与你作对，例如警示你的敌人你所处的位置。</p>\n<p><strong>失败</strong> 目标拒绝服从，并且通常都会逃离你的所在，以避免你进一步使用他们的真名。如果他们还没有不友善或敌对，他们变为不友善。他们会在日后避开你，并且可能会采取间接的行动来对与你作对。</p>\n<p><strong>大失败</strong> 目标拒绝服从，并且变为敌对。他们觉得你是如此的软弱，以至于可能会攻击你；要么，他们可能会逃跑以避免你进一步使用他们的真名。</p>",
+            "description": "<p>你通过自己得知其真名来威胁一个生物，并且试图让他按你的意愿行动。你必须知道并且说出该生物的真名，同时说出想让这个生物做些什么。尝试一次@Check[type:intimidation|defense:will]检定对抗目标的意志DC。</p>\n<hr />\n<p><strong>大成功</strong> 目标出于自我保护的意识而按照你所说的行动，并且不会以任何方式伤害自身。他变为不友善（如果他还没有不友善或敌对），但仍会在一天内保持顺从。目标因为太过害怕你，以至于不敢报复或者逃跑，确信自己无论跑到天涯海角都会被你找到。</p>\n<p><strong>成功</strong> 如同大成功，但是一旦目标变为不友善，他们就会避开你，并且可能以一种间接的方式与你作对，例如警示你的敌人你所处的位置。</p>\n<p><strong>失败</strong> 目标拒绝服从，并且通常都会逃离你的所在，以避免你进一步使用他们的真名。如果他们还没有不友善或敌对，他们变为不友善。他们会在日后避开你，并且可能会采取间接的行动来对与你作对。</p>\n<p><strong>大失败</strong> 目标拒绝服从，并且变为敌对。他们觉得你是如此的软弱，以至于可能会攻击你；要么，他们可能会逃跑以避免你进一步使用他们的真名。</p>",
             "prerequisites": [
                 {
                     "value": "威吓技能熟练度为受训"
@@ -15751,7 +15751,7 @@
         },
         "Root Magic": {
             "name": "最初的魔法 Root Magic",
-            "description": "<p>你的护身符能抵御污秽的魔力。在你进行每日准备时，你可以缝合好一个装有香草、头发、圣油和其它仪式材料的香囊，并将其给与一位盟友。</p>\n<p>该盟友当天第一次对法术或作祟进行豁免检定时，获得+1环境加值。若你的神秘技能为专家，则环境加值为+2，若你的神秘技能为传奇，则环境加值为+3。</p>",
+            "description": "<p>你的护身符能抵御污秽的魔力。在你进行每日准备时，你可以缝合好一个装有香草、头发、圣油和其它仪式材料的香囊，并将其给与一位盟友。</p>\n<p>该盟友当天第一次对法术或作祟进行豁免检定时，获得+1环境加值。若你的神秘技能为专家，则环境加值为+2，若你的神秘技能为传奇，则环境加值为+3。</p>\n<p>@UUID[Compendium.pf2e.feat-effects.Item.jO7wMhnjT7yoAtQg]{效果：最初的魔法}</p>",
             "prerequisites": [
                 {
                     "value": "神秘技能熟练度为受训"
@@ -27844,7 +27844,7 @@
         },
         "Thunder Clap": {
             "name": "雷鸣掌 Thunder Clap",
-            "description": "<p>你猛拍双手，发出震耳欲聋的爆炸声。@Template[type:cone|distance:15]{15尺锥形}范围内的生物受到@Damage[3d6[sonic]]伤害，@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免，对抗你的职业DC。豁免失败的生物还会@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}一分钟。你的双手需要从雷鸣般的爆炸中恢复，因此[[/r 1d4 #Thunder Clap Cooldown]]{1d4轮}内无法再次使用此能力。</p>\n<p>8级和之后每2级，雷鸣掌的伤害增加[[/r 1d6]]{1d6}。(<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">[[/r floor(@actor.level/2)d6[sonic]]]{按等级计算的音波伤害})<br /></span></p>",
+            "description": "<p>你猛拍双手，发出震耳欲聋的爆炸声。@Template[type:cone|distance:15]{15尺锥形}范围内的生物受到@Damage[3d6[sonic]]伤害，@Check[type:fortitude|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免，对抗你的职业DC。豁免失败的生物还会@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}一分钟。你的双手需要从雷鸣般的爆炸中恢复，因此[[/r 1d4 #Recharge Thunder Clap]]{1d4轮}内无法再次使用此能力。</p>\n<p>8级和之后每2级，雷鸣掌的伤害增加[[/r 1d6]]{1d6}。(<span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">[[/r floor(@actor.level/2)d6[sonic]]]{按等级计算的音波伤害})<br /></span></p>",
             "prerequisites": [
                 {
                     "value": "火药拳架势"
@@ -28899,7 +28899,7 @@
         },
         "Greater Magical Edification": {
             "name": "高等启迪魔力 Greater Magical Edification",
-            "description": "<p>你继续拓展了用于编译知识的工具列表。你能够施放<em>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{通晓语言 Comprehend Language}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.D442XMADp01qJ7Cs]{讯息传递 Mindlink}</em>和<em>@UUID[Compendium.pf2e.spells-srd.Item.VVAZPCvd4d90qVA1]{秘密文页 Secret Page}</em>作为内在异能法术，每个每日可以施放一次。当你施放<em>秘密文页</em>时，它会自动升阶，提升至与你在启迪魔力（Magical Edification）中获得的戏法相同的环级。</p>",
+            "description": "<p>你继续拓展了用于编译知识的工具列表。你能够施放<em>@UUID[Compendium.pf2e.spells-srd.Item.vTQvfYu2llKQedmY]{通晓语言 Translate}</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.D442XMADp01qJ7Cs]{讯息传递 Mindlink}</em>和<em>@UUID[Compendium.pf2e.spells-srd.Item.VVAZPCvd4d90qVA1]{秘密文页 Secret Page}</em>作为内在异能法术，每个每日可以施放一次。当你施放<em>秘密文页</em>时，它会自动升阶，提升至与你在启迪魔力（Magical Edification）中获得的戏法相同的环级。</p>",
             "prerequisites": [
                 {
                     "value": "启迪魔力"
