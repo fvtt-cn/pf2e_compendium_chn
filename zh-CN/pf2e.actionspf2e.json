@@ -1111,7 +1111,7 @@
         },
         "Fling Magic": {
             "name": "杖掷 Fling Magic",
-            "description": "<p><strong>需求</strong> 你持握着你的杖奇具。</p>\n<hr />\n<p>你对一个60尺内的目标投掷魔法能量，对目标造成的伤害等于1d4+你的魅力调整值，对抗你职业DC的@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免。该伤害的伤害类型是你在获得你的杖奇具时所选择的类型。在3级和之后的每两级，伤害提升1d4。</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{按等级计算的伤害}</p>\n<p>你可以花费比通常更多的能量来激发杖掷动作的效果，造成d6而非d4的伤害。当你这么做时，杖需花费[[/r 1d4 #Wand recharge]]{1d4轮}轮以重新充能，在这段时间内你无法激发杖的伤害，但可以继续正常使用杖掷动作。如果你的一次打击重击，你的杖立刻充能完成，因为它从冲击中汲取了力量。</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{按等级计算的增幅伤害}</p>\n<hr />\n<p><strong>特殊</strong> 这个行动拥有对应于你所选伤害类型的特征。</p>"
+            "description": "<p><strong>需求</strong> 你持握着你的杖奇具。</p>\n<hr />\n<p>你对一个60尺内的目标投掷魔法能量，对目标造成的伤害等于1d4+你的魅力调整值，对抗你职业DC的@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免。该伤害的伤害类型是你在获得你的杖奇具时所选择的类型。在3级和之后的每两级，伤害提升1d4。</p>\n<p>[[/r (ceil(@actor.level/2)d4+@actor.abilities.cha.mod)]]{按等级计算的伤害}</p>\n<p>你可以花费比通常更多的能量来激发杖掷动作的效果，造成d6而非d4的伤害。当你这么做时，杖需花费[[/r 1d4 #Recharge Wand]]{1d4轮}轮以重新充能，在这段时间内你无法激发杖的伤害，但可以继续正常使用杖掷动作。如果你的一次打击重击，你的杖立刻充能完成，因为它从冲击中汲取了力量。</p>\n<p>[[/r (ceil(@actor.level/2)d6+@actor.abilities.cha.mod)]]{按等级计算的增幅伤害}</p>\n<hr />\n<p><strong>特殊</strong> 这个行动拥有对应于你所选伤害类型的特征。</p>"
         },
         "Implement's Interruption": {
             "name": "兵断 Implement's Interruption",
