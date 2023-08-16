@@ -87,7 +87,7 @@
         },
         "Acid Spitter": {
             "name": "喷酸蜥蜴 Acid Spitter",
-            "description": "<p>当有生物移动到这只锡制的发条蜥蜴相邻方格时，它就会启动，吐出一团酸液。目标必须成功进行@Check[type:reflex|dc:20]豁免，否则会受到@Damage[3d6[acid]]伤害。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响</p>\n<p><strong>成功</strong> 生物受到完整伤害</p>\n<p><strong>失败</strong> 生物受到完整伤害和[[/r 5[persistent,acid]]]伤害。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害和[[/r 10[persistent,acid]]]伤害。</p>"
+            "description": "<p>当有生物移动到这只锡制的发条蜥蜴相邻方格时，它就会启动，吐出一团酸液。目标必须成功进行@Check[type:reflex|dc:20]豁免，否则会受到@Damage[3d6[acid]]伤害。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响</p>\n<p><strong>成功</strong> 生物受到完整伤害</p>\n<p><strong>失败</strong> 生物受到完整伤害和@Damage[5[persistent,acid]]伤害。</p>\n<p><strong>大失败</strong> 生物受到双倍伤害和@Damage[10[persistent,acid]]伤害。</p>"
         },
         "Acrobat's Staff": {
             "description": "<p>这根<em>+1强击长棒</em>特别长，使它可以作为平衡杆使用。当你挥舞它的时候，杂耍长棒会释放粉笔灰，使你抓得更牢，使你在试图对你卸武的反射豁免获得 +1 环境加值。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">R</span> 命令</p>\n<p><strong>触发</strong> 你在保持平衡的特技检定中失败或大失败并且会坠落</p>\n<hr />\n<p><strong>效果</strong> 重骰特技检定，并取较好的结果。</p>",
@@ -1108,7 +1108,7 @@
         },
         "Caltrops": {
             "name": "铁蒺藜 Caltrops",
-            "description": "<p>这些四尖金属钉可能会对生物的脚造成伤害。你可以使用【交互动作】在与你相邻的一个空方格中散布铁蒺藜。进入该方格的第一个生物必须成功进行@Check[type:acrobatics|dc:14|name:Avoid Caltrops]检定，否则就会受到1d4穿刺伤害和[[/r 1[bleed]]]伤害。受到来自铁蒺藜的持续流血伤害的生物受到-5尺的速度减值。花费一个【交互动作】来拔除铁蒺藜可以降低停止流血的DC。 一旦一个生物受到来自铁蒺藜的伤害，足够多的铁蒺藜会被毁掉，后续的其他生物进入这个方格是安全的。如果没有生物受到伤害，可以回收散布的铁蒺藜以再次使用。否则足够多的铁蒺藜会被破坏，这样无法回收。</p>"
+            "description": "<p>这些四尖金属钉可能会对生物的脚造成伤害。你可以使用【交互动作】在与你相邻的一个空方格中散布铁蒺藜。进入该方格的第一个生物必须成功进行@Check[type:acrobatics|dc:14|name:Avoid Caltrops]检定，否则就会受到1d4穿刺伤害和@Damage[1[bleed]]伤害。受到来自铁蒺藜的持续流血伤害的生物受到-5尺的速度减值。花费一个【交互动作】来拔除铁蒺藜可以降低停止流血的DC。 一旦一个生物受到来自铁蒺藜的伤害，足够多的铁蒺藜会被毁掉，后续的其他生物进入这个方格是安全的。如果没有生物受到伤害，可以回收散布的铁蒺藜以再次使用。否则足够多的铁蒺藜会被破坏，这样无法回收。</p>"
         },
         "Camouflage Suit": {
             "name": "伪装服 Camouflage Suit",
@@ -1775,7 +1775,7 @@
         },
         "Corrosive Ammunition": {
             "name": "腐蚀弹药 Corrosive Ammunition",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种奇怪的弹药表面上包裹着奇怪的黄土，并在任何触碰到的物体上留下一块污渍。当启动的腐蚀弹药命中一个目标，它能溶穿目标的盔甲。盔甲承受[[/r 1d8[persistent,acid]]]伤害 ，该伤害忽视盔甲的硬度；如果目标没有着甲，则目标自身承受酸液伤害。该伤害会在目标回合结束时起效。</p>\n<p>目标生物可以通过花费一个交互动作擦去腐蚀尘土来终止该效果，否则该效果持续到盔甲破损为止。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种奇怪的弹药表面上包裹着奇怪的黄土，并在任何触碰到的物体上留下一块污渍。当启动的腐蚀弹药命中一个目标，它能溶穿目标的盔甲。盔甲承受@Damage[1d8[persistent,acid]]伤害 ，该伤害忽视盔甲的硬度；如果目标没有着甲，则目标自身承受酸液伤害。该伤害会在目标回合结束时起效。</p>\n<p>目标生物可以通过花费一个交互动作擦去腐蚀尘土来终止该效果，否则该效果持续到盔甲破损为止。</p>"
         },
         "Coyote Cloak": {
             "name": "郊狼披风 Coyote Cloak",
@@ -1823,7 +1823,7 @@
         },
         "Crown of the Companion": {
             "name": "伙伴之冠 Crown of the Companion",
-            "description": "<p>故事讲述了一位被遗忘的国王，他曾经非常爱他的臣民，甚至愿意通过<em>伙伴之冠</em>为他们献出自己的生命能量。无论真假，这顶庄严的木质王冠上以精美的浮雕再现了那个故事。它的四面都描绘了同一位国王的形象，他将自己越来越多地奉献给一群需要帮助的臣民。当你佩戴这顶王冠时，你在交涉检定中获得+1物品加值。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，Interact</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你向30尺内的盟友鞠躬，在你们俩之间创造出魔法纽带。你以盟友为目标施放<em>@UUID[Compendium.pf2e.spells-srd.Item.d7Lwx6KAs47MtF0q]{护卫他人 Shield Other}</em>。即使你离开他超过30尺距离，这种纽带依然存在。在法术持续时间结束时，你的盟友恢复@Damage[4d8[healing]]{4d8生命值}，而你恢复该数值的一半。</p>"
+            "description": "<p>故事讲述了一位被遗忘的国王，他曾经非常爱他的臣民，甚至愿意通过<em>伙伴之冠</em>为他们献出自己的生命能量。无论真假，这顶庄严的木质王冠上以精美的浮雕再现了那个故事。它的四面都描绘了同一位国王的形象，他将自己越来越多地奉献给一群需要帮助的臣民。当你佩戴这顶王冠时，你在交涉检定中获得+1物品加值。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，Interact</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你向30尺内的盟友鞠躬，在你们俩之间创造出魔法纽带。你以盟友为目标施放<em>@UUID[Compendium.pf2e.spells-srd.Item.d7Lwx6KAs47MtF0q]{护卫他人 Shield Other}</em>。即使你离开他超过30尺距离，这种纽带依然存在。在法术持续时间结束时，你的盟友恢复[[/r 4d8[healing]]]{4d8生命值}，而你恢复该数值的一半。</p>"
         },
         "Crown of the Fire Eater": {
             "name": "吞火者之冠 Crown of the Fire Eater",
@@ -1851,7 +1851,7 @@
         },
         "Cryomister (Greater)": {
             "name": "高等制冷器 Cryomister (Greater)",
-            "description": "<p><strong>启动</strong><span class=\"pf2-icon\">a </span>交互</p>\n<hr />\n<p>当你启动制冷器时，你可以把它放在相邻的方格里，也可以将它抛掷到20尺外。一旦你这样做了，这个金属装置会立即散布浓雾，雾气会迅速凝结到附近的表面上，形成一层冰。制冷器根据类型不同拥有不同的爆发范围，能将作用范围内变成困难地形，持续1分钟。然而，根据GM的裁定，在高温环境下该持续时间可能会缩短，在严寒环境中改持续时间可能会增加。如果受影响的方格受到火焰伤害，困难地形将被移除。虽然制冷器不是作为武器设计的，但快速冷冻的雾气在启动时能对范围内的生物造成寒冷溅射伤害，伤害值取决于制冷器的类型。试图穿过影响范围的生物能尝试一次特技检定，DC取决于制冷器的类型，如果成功则能无视困难地形并以正常速度穿过。如果把制冷器扔到液体表面，就会产生一块浮冰，根据类型不同能支撑一个或多个所列大小的生物。</p>\n<hr />\n<p>范围为@Template[type:burst|distance:15]{15尺爆发}，检定为@Check[type:acrobatics|dc:30|name:Acrobatics]伤害为[[/r 5[cold]]]{5点寒冷溅射伤害}。浮冰能支持一个超大型生物，或2个大型生物，或4个体型不超过中型的生物。</p>"
+            "description": "<p><strong>启动</strong><span class=\"pf2-icon\">a </span>交互</p>\n<hr />\n<p>当你启动制冷器时，你可以把它放在相邻的方格里，也可以将它抛掷到20尺外。一旦你这样做了，这个金属装置会立即散布浓雾，雾气会迅速凝结到附近的表面上，形成一层冰。制冷器根据类型不同拥有不同的爆发范围，能将作用范围内变成困难地形，持续1分钟。然而，根据GM的裁定，在高温环境下该持续时间可能会缩短，在严寒环境中改持续时间可能会增加。如果受影响的方格受到火焰伤害，困难地形将被移除。虽然制冷器不是作为武器设计的，但快速冷冻的雾气在启动时能对范围内的生物造成寒冷溅射伤害，伤害值取决于制冷器的类型。试图穿过影响范围的生物能尝试一次特技检定，DC取决于制冷器的类型，如果成功则能无视困难地形并以正常速度穿过。如果把制冷器扔到液体表面，就会产生一块浮冰，根据类型不同能支撑一个或多个所列大小的生物。</p>\n<hr />\n<p>范围为@Template[type:burst|distance:15]{15尺爆发}，检定为@Check[type:acrobatics|dc:30|name:Acrobatics]伤害为@Damage[5[cold]]{5点寒冷溅射伤害}。浮冰能支持一个超大型生物，或2个大型生物，或4个体型不超过中型的生物。</p>"
         },
         "Cryomister (Lesser)": {
             "name": "次等制冰器 Cryomister (Lesser)",
@@ -1863,7 +1863,7 @@
         },
         "Cryomister (Moderate)": {
             "name": "中等制冰器 Cryomister (Moderate)",
-            "description": "<p><strong>启动</strong><span class=\"pf2-icon\">a </span>交互</p>\n<hr />\n<p>当你启动制冷器时，你可以把它放在相邻的方格里，也可以将它抛掷到20尺外。一旦你这样做了，这个金属装置会立即散布浓雾，雾气会迅速凝结到附近的表面上，形成一层冰。制冷器根据类型不同拥有不同的爆发范围，能将作用范围内变成困难地形，持续1分钟。然而，根据GM的裁定，在高温环境下该持续时间可能会缩短，在严寒环境中改持续时间可能会增加。如果受影响的方格受到火焰伤害，困难地形将被移除。虽然制冷器不是作为武器设计的，但快速冷冻的雾气在启动时能对范围内的生物造成寒冷溅射伤害，伤害值取决于制冷器的类型。试图穿过影响范围的生物能尝试一次特技检定，DC取决于制冷器的类型，如果成功则能无视困难地形并以正常速度穿过。如果把制冷器扔到液体表面，就会产生一块浮冰，根据类型不同能支撑一个或多个所列大小的生物。</p>\n<hr />\n<p>范围为@Template[type:burst|distance:10]{10尺爆发}，检定为@Check[type:acrobatics|dc:21|name:Acrobatics]伤害为[[/r 3[cold]]]{3点寒冷溅射伤害}。浮冰能支持一个大型生物，或2个体型不超过中型的生物。</p>"
+            "description": "<p><strong>启动</strong><span class=\"pf2-icon\">a </span>交互</p>\n<hr />\n<p>当你启动制冷器时，你可以把它放在相邻的方格里，也可以将它抛掷到20尺外。一旦你这样做了，这个金属装置会立即散布浓雾，雾气会迅速凝结到附近的表面上，形成一层冰。制冷器根据类型不同拥有不同的爆发范围，能将作用范围内变成困难地形，持续1分钟。然而，根据GM的裁定，在高温环境下该持续时间可能会缩短，在严寒环境中改持续时间可能会增加。如果受影响的方格受到火焰伤害，困难地形将被移除。虽然制冷器不是作为武器设计的，但快速冷冻的雾气在启动时能对范围内的生物造成寒冷溅射伤害，伤害值取决于制冷器的类型。试图穿过影响范围的生物能尝试一次特技检定，DC取决于制冷器的类型，如果成功则能无视困难地形并以正常速度穿过。如果把制冷器扔到液体表面，就会产生一块浮冰，根据类型不同能支撑一个或多个所列大小的生物。</p>\n<hr />\n<p>范围为@Template[type:burst|distance:10]{10尺爆发}，检定为@Check[type:acrobatics|dc:21|name:Acrobatics]伤害为@Damage[3[cold]]{3点寒冷溅射伤害}。浮冰能支持一个大型生物，或2个体型不超过中型的生物。</p>"
         },
         "Crystal Ball (Clear Quartz)": {
             "name": "水晶球（透明水晶） Crystal Ball (Clear Quartz)",
@@ -2663,15 +2663,15 @@
         },
         "Elixir of Life (Major)": {
             "name": "上等生命灵药 Elixir of Life (Major)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复@Damage[(8d6+21)[healing]]{8d6+21 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+3物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.PpLxndUSgzgs6dd0]{效果: 上等生命灵药}</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复[[/r (8d6+21)[healing]]]{8d6+21 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+3物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.PpLxndUSgzgs6dd0]{效果: 上等生命灵药}</p>"
         },
         "Elixir of Life (Minor)": {
             "name": "下等生命灵药 Elixir of Life (Minor)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复@Damage[1d6[healing]]{1d6 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+1物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{效果: 下等生命灵药}</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复[[/r 1d6[healing]]]{1d6 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+1物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.lPRuIRbu0rHBkoKY]{效果: 下等生命灵药}</p>"
         },
         "Elixir of Life (Moderate)": {
             "name": "中等生命灵药 Elixir of Life (Moderate)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复@Damage[(5d6+12)[healing]]{5d6+12 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+2物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{效果: 中等生命灵药}</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互 Interact</p>\n<p>生命灵药能够加速身体的自然治愈进程并增强免疫系统。在饮用生命灵药后，你恢复[[/r (5d6+12)[healing]]]{5d6+12 生命值} 并于10分钟内在对抗疾病和毒素的豁免检定上获得+2物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Yxssrnh9UZJAM0V7]{效果: 中等生命灵药}</p>"
         },
         "Elixir of Life (True)": {
             "name": "真实生命灵药 Elixir of Life (True)",
@@ -2821,7 +2821,7 @@
         },
         "Enveloping Light (Greater)": {
             "name": "高等缠身辉光 Enveloping Light (Greater)",
-            "description": "<p>这个刺青是六个同心圆，无论在什么肤色上都是柔和的黄色，里面的保护力能支撑你的身体与灵魂。每次有人尝试为你治疗伤害，并掷出大失败时，视为普通的失败。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你的全身开始发光，如同4环级<em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{光亮术 Light}</em>的效果，持续5轮。在这段时间内，你在每个回合结束时回复@Damage[2d8[healing]]{2d8生命值}。</p>"
+            "description": "<p>这个刺青是六个同心圆，无论在什么肤色上都是柔和的黄色，里面的保护力能支撑你的身体与灵魂。每次有人尝试为你治疗伤害，并掷出大失败时，视为普通的失败。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你的全身开始发光，如同4环级<em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{光亮术 Light}</em>的效果，持续5轮。在这段时间内，你在每个回合结束时回复[[/r 2d8[healing]]]{2d8生命值}。</p>"
         },
         "Envenomed Snare": {
             "name": "涂毒陷阱 Envenomed Snare",
@@ -3311,7 +3311,7 @@
         },
         "Fleshgem (Earthspeaker)": {
             "name": "地语者血肉宝石 Fleshgem (Earthspeaker)",
-            "description": "<p><em>血肉宝石</em>最初是土元素裔（oreads）为了修饰身体而发明的，它是一种能嵌入任何族裔皮肤中的水晶。虽然<em>血肉宝石</em>可以嵌入身体的任何部位以达到装饰的目的，但冒险者最爱的用法是将它们嵌入指关节根部，将其作为黄铜指虎那样使用。</p>\n<p>你汲取<em>血肉宝石</em>的力量，你周围的大地会喷发出水晶石笋。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> to <span class=\"pf2-icon\">2</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你站立在地面</p>\n<hr />\n<p><strong>效果</strong> 你周围@Template[type:burst|distance:10]范围内的地面会喷出及膝盖那么高的水晶碎片，存在1轮。如果你使用两个动作来启动，则持续1分钟。对于除你之外的其他生物来说，该区域为困难地形，也是危险地形。生物在水晶碎片的区域内移动时将会受到[[/r 2[piercing]]]伤害。</p>"
+            "description": "<p><em>血肉宝石</em>最初是土元素裔（oreads）为了修饰身体而发明的，它是一种能嵌入任何族裔皮肤中的水晶。虽然<em>血肉宝石</em>可以嵌入身体的任何部位以达到装饰的目的，但冒险者最爱的用法是将它们嵌入指关节根部，将其作为黄铜指虎那样使用。</p>\n<p>你汲取<em>血肉宝石</em>的力量，你周围的大地会喷发出水晶石笋。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> to <span class=\"pf2-icon\">2</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你站立在地面</p>\n<hr />\n<p><strong>效果</strong> 你周围@Template[type:burst|distance:10]范围内的地面会喷出及膝盖那么高的水晶碎片，存在1轮。如果你使用两个动作来启动，则持续1分钟。对于除你之外的其他生物来说，该区域为困难地形，也是危险地形。生物在水晶碎片的区域内移动时将会受到@Damage[2[piercing]]伤害。</p>"
         },
         "Flingflenser": {
             "name": "碎肉枪 Flingflenser",
@@ -3800,7 +3800,7 @@
         },
         "Golden Blade of Mzali": {
             "name": "玛扎利黄金之刃 Golden Blade of Mzali",
-            "description": "<p>这些黄金之矛都乃锻造于太阳王统治下的旧玛扎利时代。它们中的大多数都已遗失，与战士们一同被埋葬于坟墓与寺庙之中，亦或是在瓦尔克纳的法令下遭到封存。瓦尔克纳留下了其中的一把黄金之刃，并且将其授予了他的长矛大师。</p>\n<p>这把<em>+2高等强击回力矛</em>镀有一层璀璨的黄金，枪杆上刻有精致的雕纹，描绘的乃是太阳自玛扎利城天际线升起与下落时的场景。此矛散发着4环<em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{光亮术 Light}</em>的效果。你能通过一个具有专注特征的单动作来抑制或恢复该光芒。当你用该矛命中一名生物时，其将受到 1d6 额外火焰伤害。当你用该矛对一名生物造成重击时，该生物还会因为血液开始灼烧沸腾，而受到[[/r 1d8[persistent,fire]]]伤害和@Damage[1d8[bleed]]伤害。与通常情况不同的是，一名生物只需要成功通过一次纯骰检定，便能摆脱上述效果所带来的两种持续伤害。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你以该武器对一名生物造成重击</p>\n<hr />\n<p><strong>效果</strong> 你呼唤矛之光芒以引导这名生物远离暴力。该生物必须从下列选项中选择一个：</p>\n<ul>\n<li>该生物投降，立即受到<em>@UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{安神术 Calm}</em>以及<em>@UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{麻痹术 Paralyze}</em>大失败效果的影响。</li>\n<li>·此武器对该生物施放一次@Check[type:fortitude|dc:34|name:Blindness|traits:incapacitation,necromancy]的7环<em>@UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{目盲术 Blindness}</em>。</li>\n</ul>\n<p>无论最终选择了何种选项，该矛都会在失去其发光的能力，直到你的下一次每日准备。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 该矛对你施放一次7环<em>@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}</em>，元素特征为火。该矛失去其额外火焰伤害，直到你的下一次每日准备。</p>"
+            "description": "<p>这些黄金之矛都乃锻造于太阳王统治下的旧玛扎利时代。它们中的大多数都已遗失，与战士们一同被埋葬于坟墓与寺庙之中，亦或是在瓦尔克纳的法令下遭到封存。瓦尔克纳留下了其中的一把黄金之刃，并且将其授予了他的长矛大师。</p>\n<p>这把<em>+2高等强击回力矛</em>镀有一层璀璨的黄金，枪杆上刻有精致的雕纹，描绘的乃是太阳自玛扎利城天际线升起与下落时的场景。此矛散发着4环<em>@UUID[Compendium.pf2e.spells-srd.Item.WBmvzNDfpwka3qT4]{光亮术 Light}</em>的效果。你能通过一个具有专注特征的单动作来抑制或恢复该光芒。当你用该矛命中一名生物时，其将受到 1d6 额外火焰伤害。当你用该矛对一名生物造成重击时，该生物还会因为血液开始灼烧沸腾，而受到@Damage[1d8[persistent,fire]]伤害和@Damage[1d8[bleed]]伤害。与通常情况不同的是，一名生物只需要成功通过一次纯骰检定，便能摆脱上述效果所带来的两种持续伤害。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你以该武器对一名生物造成重击</p>\n<hr />\n<p><strong>效果</strong> 你呼唤矛之光芒以引导这名生物远离暴力。该生物必须从下列选项中选择一个：</p>\n<ul>\n<li>该生物投降，立即受到<em>@UUID[Compendium.pf2e.spells-srd.Item.b515AZlB0sridKSq]{安神术 Calm}</em>以及<em>@UUID[Compendium.pf2e.spells-srd.Item.DCQHaLrYXMI37dvW]{麻痹术 Paralyze}</em>大失败效果的影响。</li>\n<li>·此武器对该生物施放一次@Check[type:fortitude|dc:34|name:Blindness|traits:incapacitation,necromancy]的7环<em>@UUID[Compendium.pf2e.spells-srd.Item.VosLNn2M8S7JH67D]{目盲术 Blindness}</em>。</li>\n</ul>\n<p>无论最终选择了何种选项，该矛都会在失去其发光的能力，直到你的下一次每日准备。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 该矛对你施放一次7环<em>@UUID[Compendium.pf2e.spells-srd.Item.1K6AYGisvo9gqdhs]{元素形态 Elemental Form}</em>，元素特征为火。该矛失去其额外火焰伤害，直到你的下一次每日准备。</p>"
         },
         "Golden Chyrsalis": {
             "name": "Golden Chyrsalis",
@@ -3970,7 +3970,7 @@
         },
         "Guiding Star": {
             "name": "引路星 Guiding Star",
-            "description": "<p>这把+1强击回力星刃由深蓝色金属制成，上面覆盖着熔融石英的烟熏斑点。当你施放塑能系法术后，本回合中以这把星刃进行下一次攻击时，会抵消目标的掩蔽效果，将强效掩蔽减少为标准掩蔽，或无视标准掩蔽和弱效掩蔽。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 想象</p>\n<p><strong>频率</strong> 每10分钟一次</p>\n<p><strong>触发</strong> 你以引路星进行投掷打击，并成功命中目标</p>\n<hr />\n<p><strong>效果</strong> 柔和的光线勾勒出目标的轮廓。在你下一回合开始时，引路星的的刀刃会分离并变成数枚星镖向敌人射去，飞行最多40尺远并准确无误地击中目标，在星刃重聚成型之前，星镖总计造成[[/r 4[piercing]]]和[[/r 1[good]]]伤害。当星刃拥有高等强击符文时，星镖造成[[/r 6[piercing]]]伤害。当星刃拥有上等强击符文时，星镖造成[[/r 8[piercing]]]伤害。</p>"
+            "description": "<p>这把+1强击回力星刃由深蓝色金属制成，上面覆盖着熔融石英的烟熏斑点。当你施放塑能系法术后，本回合中以这把星刃进行下一次攻击时，会抵消目标的掩蔽效果，将强效掩蔽减少为标准掩蔽，或无视标准掩蔽和弱效掩蔽。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 想象</p>\n<p><strong>频率</strong> 每10分钟一次</p>\n<p><strong>触发</strong> 你以引路星进行投掷打击，并成功命中目标</p>\n<hr />\n<p><strong>效果</strong> 柔和的光线勾勒出目标的轮廓。在你下一回合开始时，引路星的的刀刃会分离并变成数枚星镖向敌人射去，飞行最多40尺远并准确无误地击中目标，在星刃重聚成型之前，星镖总计造成@Damage[4[piercing]]和@Damage[1[good]]伤害。当星刃拥有高等强击符文时，星镖造成@Damage[6[piercing]]伤害。当星刃拥有上等强击符文时，星镖造成@Damage[8[piercing]]伤害。</p>"
         },
         "Guisarme": {
             "name": "长勾刀 Guisarme",
@@ -4148,7 +4148,7 @@
         },
         "Healer's Gloves (Greater)": {
             "name": "高等医者手套 Healer's Gloves (Greater)",
-            "description": "<p>这双干净的白手套永远不会粘上血迹，即使正在用来缝合伤口或治疗其他疾病时。它们在医疗检定上提供+2物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你能愈合一个自愿、存活且邻接的生物的伤口，为其恢复@Damage[(4d6+15)[healing]]{4d6+15生命值}。这是一个正能量的治疗效果。你不能利用这次治疗伤害不死生物。</p>"
+            "description": "<p>这双干净的白手套永远不会粘上血迹，即使正在用来缝合伤口或治疗其他疾病时。它们在医疗检定上提供+2物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你能愈合一个自愿、存活且邻接的生物的伤口，为其恢复[[/r (4d6+15)[healing]]]{4d6+15生命值}。这是一个正能量的治疗效果。你不能利用这次治疗伤害不死生物。</p>"
         },
         "Healer's Tools": {
             "name": "医疗工具 Healer's Tools",
@@ -4164,7 +4164,7 @@
         },
         "Healing Potion (Lesser)": {
             "name": "次等治疗药水 Healing Potion (Lesser)",
-            "description": "<p>治疗药水是一瓶宝石红色的液体，饮用者的伤口会迅速康复，并带来一阵刺痛。当你喝下治疗药水后，你恢复@Damage[(2d8+5)[healing]]{2d8+5 生命值}.</p>"
+            "description": "<p>治疗药水是一瓶宝石红色的液体，饮用者的伤口会迅速康复，并带来一阵刺痛。当你喝下治疗药水后，你恢复[[/r (2d8+5)[healing]]]{2d8+5 生命值}.</p>"
         },
         "Healing Potion (Major)": {
             "name": "上等治疗药水 Healing Potion (Major)",
@@ -4172,11 +4172,11 @@
         },
         "Healing Potion (Minor)": {
             "name": "下等治疗药水 Healing Potion (Minor)",
-            "description": "<p>治疗药水是一瓶宝石红色的液体，饮用者的伤口会迅速康复，并带来一阵刺痛。当你喝下治疗药水后，你恢复@Damage[1d8[healing]]{1d8 生命值}.</p>"
+            "description": "<p>治疗药水是一瓶宝石红色的液体，饮用者的伤口会迅速康复，并带来一阵刺痛。当你喝下治疗药水后，你恢复[[/r 1d8[healing]]]{1d8 生命值}.</p>"
         },
         "Healing Potion (Moderate)": {
             "name": "中等治疗药水 Healing Potion (Moderate)",
-            "description": "<p>治疗药水是一瓶宝石红色的液体，饮用者的伤口会迅速康复，并带来一阵刺痛。当你喝下治疗药水后，你恢复@Damage[(3d8+10)[healing]]{3d8+10 生命值}.</p>"
+            "description": "<p>治疗药水是一瓶宝石红色的液体，饮用者的伤口会迅速康复，并带来一阵刺痛。当你喝下治疗药水后，你恢复[[/r (3d8+10)[healing]]]{3d8+10 生命值}.</p>"
         },
         "Heartstone": {
             "name": "心石 Heartstone",
@@ -4374,7 +4374,7 @@
         },
         "Immolation Clan Pistol": {
             "name": "祭品氏族手枪 Immolation Clan Pistol",
-            "description": "<p>这件焦黑发暗的<em>+2强击氏族手枪</em>被涂上了一层厚实的煤烟与油脂，它的声响听起来令人不适得就像是尖啸。显然是因为走火，这件武器在被做完时就夺走了其矮人制作者的生命，然后就被一个痛苦的魂魄附身了。这个不断燃烧的魂魄让火器无论周围环境如何摸起来都是暖的。</p>\n<p>无论你如何清洁维护它，祭品氏族手枪总是有哑火的风险，避免哑火的纯骰DC为7而非5。哑火时，<em>祭品氏族手枪</em>会爆炸出一团集中的火焰，对你造成@Damage[2d6[fire]]和[[/r 2d6[persistent,fire]]]伤害。</p>\n<p><em>祭品氏族手枪</em>会在你第一次击发它时候与你结合。当你与<em>祭品氏族手枪</em>结合时，这个痛苦的魂魄会在你的梦中作祟，强迫你在每个夜里经历他的死亡。如果你当天击发过<em>祭品氏族手枪</em>，你就不会受到这些梦境的袭扰。如果你当年没有击发<em>祭品氏族手枪</em>，且仍然持有它，你醒来时就会陷入疲乏状态。如果你没有持有<em>祭品氏族手枪</em>，那矮人铁匠的魂魄就会因为你的怠慢而愤怒；你醒来时会陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态，且会燃烧起来，承受[[/r 2d6[persistent,fire]]]伤害。</p>\n<p>无论如何，这些噩梦都回包括魂魄生前的线索。如果你将祭品氏族手枪带回其制造场所，用属于饱受折磨的魂魄的工具修复它，你或许就能破除诅咒。魂魄得到解脱，这把武器变为一件没有其他能力或诅咒的+2高等强击炽焰氏族手枪。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你允许附结在氏族手枪中被献祭的魂魄部分占据你自身。1分钟内，你看上去就像一具烧焦的尸体。持续时间内，你在威吓检定上获得+2状态加值，<em>祭品氏族手枪</em>变为一把<em>+2强击炽焰手炮</em>。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bri7UVNCfHhCIvXN]{效果: 祭品氏族手枪}</p>"
+            "description": "<p>这件焦黑发暗的<em>+2强击氏族手枪</em>被涂上了一层厚实的煤烟与油脂，它的声响听起来令人不适得就像是尖啸。显然是因为走火，这件武器在被做完时就夺走了其矮人制作者的生命，然后就被一个痛苦的魂魄附身了。这个不断燃烧的魂魄让火器无论周围环境如何摸起来都是暖的。</p>\n<p>无论你如何清洁维护它，祭品氏族手枪总是有哑火的风险，避免哑火的纯骰DC为7而非5。哑火时，<em>祭品氏族手枪</em>会爆炸出一团集中的火焰，对你造成@Damage[2d6[fire]]和@Damage[2d6[persistent,fire]]伤害。</p>\n<p><em>祭品氏族手枪</em>会在你第一次击发它时候与你结合。当你与<em>祭品氏族手枪</em>结合时，这个痛苦的魂魄会在你的梦中作祟，强迫你在每个夜里经历他的死亡。如果你当天击发过<em>祭品氏族手枪</em>，你就不会受到这些梦境的袭扰。如果你当年没有击发<em>祭品氏族手枪</em>，且仍然持有它，你醒来时就会陷入疲乏状态。如果你没有持有<em>祭品氏族手枪</em>，那矮人铁匠的魂魄就会因为你的怠慢而愤怒；你醒来时会陷入@UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{疲乏 Fatigued}状态，且会燃烧起来，承受@Damage[2d6[persistent,fire]]伤害。</p>\n<p>无论如何，这些噩梦都回包括魂魄生前的线索。如果你将祭品氏族手枪带回其制造场所，用属于饱受折磨的魂魄的工具修复它，你或许就能破除诅咒。魂魄得到解脱，这把武器变为一件没有其他能力或诅咒的+2高等强击炽焰氏族手枪。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你允许附结在氏族手枪中被献祭的魂魄部分占据你自身。1分钟内，你看上去就像一具烧焦的尸体。持续时间内，你在威吓检定上获得+2状态加值，<em>祭品氏族手枪</em>变为一把<em>+2强击炽焰手炮</em>。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.bri7UVNCfHhCIvXN]{效果: 祭品氏族手枪}</p>"
         },
         "Immovable Arm": {
             "name": "不动之臂 Immovable Arm",
@@ -4544,7 +4544,7 @@
         },
         "Iris of the Sky": {
             "name": "空中虹光 Iris of the Sky",
-            "description": "<p>这把<em>+1强击杰撒伊火枪</em>使用炽热的金属制作，在橡木枪托上嵌有一枚红宝石。当<em>空中虹光</em>哑火时，你受到[[/r 5[persistent,fire]]]伤害。</p>\n<p>第一把这种类型的火器是由一名枪手向火巨灵许愿获得沙漠烈阳之力的结果。这把武器持续不断地燃烧发出明亮的强光。这件火器后来被无数人使用过，并被复制过几次，不过这件武器的使用者，无论是用的原版还是复制品，最后都只会在战斗中或是在不寻常的意外事故中被火焰烧死，剩下一具烧焦的空壳，没人能解释为什么，也许火巨灵可以。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 你将封存于红宝石中的太阳之力以一道阳炎释射出，而非射出一枚子弹。使用<em>空中虹光</em>进行一次打击。此次打击全部伤害为火焰伤害，目标承受一次额外@Damage[1d6[fire]]与[[/r 1d6[persistent,fire]]]伤害。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，想象（幸运）</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 你向<em>空中虹光</em>许愿，希望它能克敌机先，然后开火。使用<em>空中虹光</em>打击一个敌人，投掷两次攻击骰，然后取更好的结果。如果此次攻击失败，你受到[[/r 5[persistent,fire]]]伤害。</p>"
+            "description": "<p>这把<em>+1强击杰撒伊火枪</em>使用炽热的金属制作，在橡木枪托上嵌有一枚红宝石。当<em>空中虹光</em>哑火时，你受到@Damage[5[persistent,fire]]伤害。</p>\n<p>第一把这种类型的火器是由一名枪手向火巨灵许愿获得沙漠烈阳之力的结果。这把武器持续不断地燃烧发出明亮的强光。这件火器后来被无数人使用过，并被复制过几次，不过这件武器的使用者，无论是用的原版还是复制品，最后都只会在战斗中或是在不寻常的意外事故中被火焰烧死，剩下一具烧焦的空壳，没人能解释为什么，也许火巨灵可以。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 你将封存于红宝石中的太阳之力以一道阳炎释射出，而非射出一枚子弹。使用<em>空中虹光</em>进行一次打击。此次打击全部伤害为火焰伤害，目标承受一次额外@Damage[1d6[fire]]与@Damage[1d6[persistent,fire]]伤害。</p>\n<hr />\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 命令，想象（幸运）</p>\n<p><strong>频率</strong> 每分钟一次</p>\n<hr />\n<p><strong>效果</strong> 你向<em>空中虹光</em>许愿，希望它能克敌机先，然后开火。使用<em>空中虹光</em>打击一个敌人，投掷两次攻击骰，然后取更好的结果。如果此次攻击失败，你受到@Damage[5[persistent,fire]]伤害。</p>"
         },
         "Iron Cube": {
             "name": "铁方块 Iron Cube",
@@ -5769,7 +5769,7 @@
         },
         "Oil of Unlife (Lesser)": {
             "name": "次等无命油 Oil of Unlife (Lesser)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种稀薄的黑色液体透露出刺入骨髓的冷彻，能够快速修复一个不死生物的物理或灵魂形态。当你将无命油泼在一个不死生物，或具有负能量治疗能力的活体生物身上时，油会快速吸收进该生物的身体内，且该生物恢复@Damage[(2d8+5)[healing]]{2d8+5生命值}。你也可以将无命油泼到虚体不死生物上，此时该生物也能将无命油吸入其中。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种稀薄的黑色液体透露出刺入骨髓的冷彻，能够快速修复一个不死生物的物理或灵魂形态。当你将无命油泼在一个不死生物，或具有负能量治疗能力的活体生物身上时，油会快速吸收进该生物的身体内，且该生物恢复[[/r (2d8+5)[healing]]]{2d8+5生命值}。你也可以将无命油泼到虚体不死生物上，此时该生物也能将无命油吸入其中。</p>"
         },
         "Oil of Unlife (Major)": {
             "name": "上等无命油 Oil of Unlife (Major)",
@@ -5777,7 +5777,7 @@
         },
         "Oil of Unlife (Minor)": {
             "name": "下等无命油 Oil of Unlife (Minor)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种稀薄的黑色液体透露出刺入骨髓的冷彻，能够快速修复一个不死生物的物理或灵魂形态。当你将无命油泼在一个不死生物，或具有负能量治疗能力的活体生物身上时，油会快速吸收进该生物的身体内，且该生物恢复@Damage[1d8[healing]]{1d8生命值}。你也可以将无命油泼到虚体不死生物上，此时该生物也能将无命油吸入其中。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这种稀薄的黑色液体透露出刺入骨髓的冷彻，能够快速修复一个不死生物的物理或灵魂形态。当你将无命油泼在一个不死生物，或具有负能量治疗能力的活体生物身上时，油会快速吸收进该生物的身体内，且该生物恢复[[/r 1d8[healing]]]{1d8生命值}。你也可以将无命油泼到虚体不死生物上，此时该生物也能将无命油吸入其中。</p>"
         },
         "Oil of Unlife (Moderate)": {
             "name": "中等无命油 Oil of Unlife (Moderate)",
@@ -6252,7 +6252,7 @@
         },
         "Potion of Acid Retaliation (Minor)": {
             "name": "下等酸液报复药水 Potion of Acid Retaliation (Minor)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>报复药水有四种类别：酸液、寒冷、电击和火焰。每种药水的内部都显现了对应能量的朦胧现象。喝下报复药水后的一分钟内，你散发出对应能量的微弱灵光，且接触到你的生物（例如对你进行了近战无武装攻击，或对你使用了射程为接触的法术）会承受对应能量的伤害。中等、高等和上等版本的报复药水也能伤害到使用近战武器打击你的邻接生物。</p>\n<p>灵光造成[[/r 1[acid]]]伤害。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>报复药水有四种类别：酸液、寒冷、电击和火焰。每种药水的内部都显现了对应能量的朦胧现象。喝下报复药水后的一分钟内，你散发出对应能量的微弱灵光，且接触到你的生物（例如对你进行了近战无武装攻击，或对你使用了射程为接触的法术）会承受对应能量的伤害。中等、高等和上等版本的报复药水也能伤害到使用近战武器打击你的邻接生物。</p>\n<p>灵光造成@Damage[1[acid]]伤害。</p>"
         },
         "Potion of Acid Retaliation (Moderate)": {
             "name": "中等酸液报复药水 Potion of Acid Retaliation (Moderate)",
@@ -7696,7 +7696,7 @@
         },
         "Shot of the First Vault": {
             "name": "原初宝库之弹 Shot of the First Vault",
-            "description": "<p>有传说，一些久远到被遗忘的神明窃取了原属阿巴达尔仓库的最初一捆原初宝库之弹。从那以后，零散的弹药就出现在整个多元宇宙。当你见到原初宝库，它立刻重塑自身来与任何远程武器一同运作并直到另一个生物捡起它前认定你为它的主人。作为它的主人，你可以在用它射击后使用弹药的单动作启动选项。</p>\n<p>取代掷武器伤害骰，原初宝库之弹造成25加上任意加值或者额外的伤害，就好像武器伤害骰结果为25一样；伤害类型和武器通常造成的类型相匹配。在对一个生物造成伤害时，原初宝库之弹会破碎，而它的碎片会弹射攻击30尺内任意其他敌人，进行一个相同攻击加值的攻击骰。裂开的碎片会留在受伤的生物体内；这个生物会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，只要碎片依然在体内。需要共3个具有操作特征动作才能将碎片从你或临近生物体内取出；或者，单动作并成功通过@Check[type:medicine|dc:30|name:Remove Fragments]检定。这次医疗检定的大失败则对体内有碎片的生物造成[[/r 10[bleed]]]伤害。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 命令</p>\n<hr />\n<p><strong>效果</strong> 你召回<em>原初宝库之弹</em>，其自动装填自身到你的武器上。如果弹药已经破碎，碎片会强行脱离，对每个体内含有的生物造成[[/r 15[bleed]]]伤害。碎片随后结合重构<em>原初宝库之弹</em>，自动装填自身到你的武器上。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">T</span> 交互</p>\n<p><strong>需求</strong> 弹药已经装填在你的远程武器中，亦或是你的远程武器装填为0其已在你手中</p>\n<hr />\n<p><strong>效果</strong> 你进行一次朝向原初宝库的完美瞄准射击。你打击 Strike 一个生物，随后<em>原初宝库之弹</em>尝试携带着你的目标一同归回原初宝库。除非你的攻击骰结果为大失败，这个生物必须进行一次@Check[type:reflex|dc:45]豁免；这个效果具有失能特征。无论如何，<em>原初宝库之弹</em>返回原初宝库。</p>\n<hr />\n<p><strong>大成功</strong> 这个生物不受影响。</p>\n<p><strong>成功</strong> 这个生物向你开火的方向移动 1d20 × 50 尺。如果这造成它撞到一个固体，它受到50点钝击伤害。</p>\n<p><strong>失败</strong> 这个生物被传送到轴心城的任意地点。</p>\n<p><strong>大失败</strong> 这个生物被传送到原初宝库。除非它能躲避阿巴达尔的预防措施，否则它很可能无法自行逃脱宝库。</p>\n<p><strong>摧毁</strong> 如果10发<em>原初宝库之弹</em>在彼此相隔1分钟内全都射击同一群科科塔尔或者伊兹菲塔尔幻蛇，每发都击中，并且其后所有子弹都被召回，这些子弹会在尝试重构时冲突然后碎成灰烬。</p>"
+            "description": "<p>有传说，一些久远到被遗忘的神明窃取了原属阿巴达尔仓库的最初一捆原初宝库之弹。从那以后，零散的弹药就出现在整个多元宇宙。当你见到原初宝库，它立刻重塑自身来与任何远程武器一同运作并直到另一个生物捡起它前认定你为它的主人。作为它的主人，你可以在用它射击后使用弹药的单动作启动选项。</p>\n<p>取代掷武器伤害骰，原初宝库之弹造成25加上任意加值或者额外的伤害，就好像武器伤害骰结果为25一样；伤害类型和武器通常造成的类型相匹配。在对一个生物造成伤害时，原初宝库之弹会破碎，而它的碎片会弹射攻击30尺内任意其他敌人，进行一个相同攻击加值的攻击骰。裂开的碎片会留在受伤的生物体内；这个生物会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}，只要碎片依然在体内。需要共3个具有操作特征动作才能将碎片从你或临近生物体内取出；或者，单动作并成功通过@Check[type:medicine|dc:30|name:Remove Fragments]检定。这次医疗检定的大失败则对体内有碎片的生物造成@Damage[10[bleed]]伤害。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 命令</p>\n<hr />\n<p><strong>效果</strong> 你召回<em>原初宝库之弹</em>，其自动装填自身到你的武器上。如果弹药已经破碎，碎片会强行脱离，对每个体内含有的生物造成@Damage[15[bleed]]伤害。碎片随后结合重构<em>原初宝库之弹</em>，自动装填自身到你的武器上。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">T</span> 交互</p>\n<p><strong>需求</strong> 弹药已经装填在你的远程武器中，亦或是你的远程武器装填为0其已在你手中</p>\n<hr />\n<p><strong>效果</strong> 你进行一次朝向原初宝库的完美瞄准射击。你打击 Strike 一个生物，随后<em>原初宝库之弹</em>尝试携带着你的目标一同归回原初宝库。除非你的攻击骰结果为大失败，这个生物必须进行一次@Check[type:reflex|dc:45]豁免；这个效果具有失能特征。无论如何，<em>原初宝库之弹</em>返回原初宝库。</p>\n<hr />\n<p><strong>大成功</strong> 这个生物不受影响。</p>\n<p><strong>成功</strong> 这个生物向你开火的方向移动 1d20 × 50 尺。如果这造成它撞到一个固体，它受到50点钝击伤害。</p>\n<p><strong>失败</strong> 这个生物被传送到轴心城的任意地点。</p>\n<p><strong>大失败</strong> 这个生物被传送到原初宝库。除非它能躲避阿巴达尔的预防措施，否则它很可能无法自行逃脱宝库。</p>\n<p><strong>摧毁</strong> 如果10发<em>原初宝库之弹</em>在彼此相隔1分钟内全都射击同一群科科塔尔或者伊兹菲塔尔幻蛇，每发都击中，并且其后所有子弹都被召回，这些子弹会在尝试重构时冲突然后碎成灰烬。</p>"
         },
         "Shrapnel Snare": {
             "name": "霰弹圈套 Shrapnel Snare",
@@ -8357,7 +8357,7 @@
         },
         "Spiderfoot Brew (Greater)": {
             "name": "高等蛛脚醇酿 Spiderfoot Brew (Greater)",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>这种粘稠的液体是由巨型蜘蛛的丝腺制成。当你饮用蛛脚醇酿时，你的手与腿上会长出细小的绒毛，在10分钟内授予你25尺攀爬速度并在用于攀爬的运动检定上获得+3物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.YI7QQqXO6nosaAKr]{效果: 高等蛛脚醇酿}</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>这种粘稠的液体是由巨型蜘蛛的丝腺制成。当你饮用蛛脚醇酿时，你的手与腿上会长出细小的绒毛，在1小时内授予你25尺攀爬速度并在用于攀爬的运动检定上获得+3物品加值。</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.4JULykNCgQoypsu8]{效果: 高等蛛脚醇酿}</p>"
         },
         "Spiderfoot Brew (Lesser)": {
             "name": "次等蛛脚醇酿 Spiderfoot Brew (Lesser)",
@@ -8808,7 +8808,7 @@
         },
         "Static Snare": {
             "name": "静电圈套 Static Snare",
-            "description": "<p>你在陷阱里藏了绝缘的水晶或其他类似材料，当第一个生物进入圈套的方格时，圈套会释放出强烈的静电。该生物必须进行一个@Check[type:reflex|dc:18|traits:uncommon|showDC:all]豁免。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标受到[[/r 1[persistent,electricity]]]伤害，并且在持续电击伤害持续的时间内，对电击效果的豁免上受到-1的环境减值。</p>\n<p><strong>大失败</strong> 与失败一样，而且目标会吸引附近的泥土和灰尘。如果目标是隐形的或变得@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{不可见 Invisible}，对于有视觉精确感官的生物来说它只是@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的。这个效果的持续时间与持续电击伤害的持续时间相同。</p>"
+            "description": "<p>你在陷阱里藏了绝缘的水晶或其他类似材料，当第一个生物进入圈套的方格时，圈套会释放出强烈的静电。该生物必须进行一个@Check[type:reflex|dc:18|traits:uncommon|showDC:all]豁免。</p>\n<hr />\n<p><strong>成功</strong> 目标不受影响。</p>\n<p><strong>失败</strong> 目标受到@Damage[1[persistent,electricity]]伤害，并且在持续电击伤害持续的时间内，对电击效果的豁免上受到-1的环境减值。</p>\n<p><strong>大失败</strong> 与失败一样，而且目标会吸引附近的泥土和灰尘。如果目标是隐形的或变得@UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{不可见 Invisible}，对于有视觉精确感官的生物来说它只是@UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{藏匿 Hidden}的。这个效果的持续时间与持续电击伤害的持续时间相同。</p>"
         },
         "Steam Winch": {
             "name": "蒸汽绞车 Steam Winch",
@@ -9034,7 +9034,7 @@
         },
         "Swarmeater's Clasp": {
             "name": "食虫者胸针 Swarmeater's Clasp",
-            "description": "<p><em>食虫者胸针</em>上雕刻着成群的害虫。当你穿戴胸针时，你获得 10 针点对集群生物的物理抗力。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">2 </span>想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 一个集群生物在你的触及范围内</p>\n<hr />\n<p><strong>效果</strong> 你将双手伸进集群中，抓出一群蠕动着的害虫，然后将其吞下。你恢复[[/r 3d10+8[healing]]]生命值，并对蜂群造成等量的钝击伤害。该恢复效果是正能量治疗效果。</p>"
+            "description": "<p><em>食虫者胸针</em>上雕刻着成群的害虫。当你穿戴胸针时，你获得 10 针点对集群生物的物理抗力。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">2 </span>想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 一个集群生物在你的触及范围内</p>\n<hr />\n<p><strong>效果</strong> 你将双手伸进集群中，抓出一群蠕动着的害虫，然后将其吞下。你恢复[[/r (3d10+8)[healing]]]生命值，并对蜂群造成等量的钝击伤害。该恢复效果是正能量治疗效果。</p>"
         },
         "Swarmform Collar": {
             "name": "集群形态项圈 Swarmform Collar",
@@ -9885,7 +9885,7 @@
         },
         "Wand of Slaying (7th-Level Spell)": {
             "name": "7环杀生魔杖 Wand of Slaying (7th-Level Spell)",
-            "description": "<p>这根锃亮的黑色魔杖顶端有一颗绿色宝石，任何人凝视宝石的人，只会看到一个咧嘴大笑的头骨，而不是他们的脸。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上超载</p>\n<hr />\n<p><strong>效果</strong> 你施放7环 <em>@UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{死亡一指 Finger of Death}</em>法术。</p>\n<p>若该法术击杀目标，尸体会放出 @Template[type:emanation|distance:20]弥漫的负能量，造成等于法术环级双倍数额的负能量伤害。 ([[/r 14[negative]]])。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一次对应环级的死亡一指施法。</p>"
+            "description": "<p>这根锃亮的黑色魔杖顶端有一颗绿色宝石，任何人凝视宝石的人，只会看到一个咧嘴大笑的头骨，而不是他们的脸。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上超载</p>\n<hr />\n<p><strong>效果</strong> 你施放7环 <em>@UUID[Compendium.pf2e.spells-srd.Item.Z9OrRXKgAPv6Hn5l]{死亡一指 Finger of Death}</em>法术。</p>\n<p>若该法术击杀目标，尸体会放出 @Template[type:emanation|distance:20]弥漫的负能量，造成等于法术环级双倍数额的负能量伤害。 (@Damage[14[negative]])。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一次对应环级的死亡一指施法。</p>"
         },
         "Wand of Slaying (8th-Level Spell)": {
             "name": "8环杀生魔杖 Wand of Slaying (8th-Level Spell)",
@@ -9897,7 +9897,7 @@
         },
         "Wand of Smoldering Fireballs (3rd-Level Spell)": {
             "name": "3环阴燃火球魔杖 Wand of Smoldering Fireballs (3rd-Level Spell)",
-            "description": "<p>这根焦黑的魔杖闻起来有点蝙蝠粪的气味。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上超载</p>\n<hr />\n<p><strong>效果</strong> 你施放3环级的<em>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{火球术 Fireball}</em> 法术。</p>\n<p>每个豁免失败的生物会受到 [[/r 1d6[persistent,fire]]]伤害。</p>\n<p><strong>制造需求</strong> 提供一次对应环级的火球术施法。</p>"
+            "description": "<p>这根焦黑的魔杖闻起来有点蝙蝠粪的气味。</p>\n<p><strong>启动</strong> 施放法术</p>\n<p><strong>频率</strong> 每天一次，加上超载</p>\n<hr />\n<p><strong>效果</strong> 你施放3环级的<em>@UUID[Compendium.pf2e.spells-srd.Item.sxQZ6yqTn0czJxVd]{火球术 Fireball}</em> 法术。</p>\n<p>每个豁免失败的生物会受到@Damage[1d6[persistent,fire]]伤害。</p>\n<p><strong>制造需求</strong> 提供一次对应环级的火球术施法。</p>"
         },
         "Wand of Smoldering Fireballs (5th-Level Spell)": {
             "name": "5环阴燃火球魔杖 Wand of Smoldering Fireballs (5th-Level Spell)",
@@ -10803,7 +10803,7 @@
             "name": "先祖回响 Ancestral Echoing"
         },
         "Bloodbane": {
-            "description": "<p><em>血煞</em>氏族匕首对矮人族裔的敌人们尤其凶残。当你用武器伤害某种合适的生物时，该生物将承受[[/r 1[bleed]]]伤害。其针对的生物类型取决于制造匕首的氏族，但通常为卓尔、灰矮人、巨人或兽人。</p>\n<p>此外，当你用<em>血煞</em>武器造成持续流血伤害时（无论是以内在能力或其他方式），武器还会留下撕裂的伤口。对方必须通过@Check[type:fortitude|dc:25]检定否则陷入恶心1。之后生物在1小时内对此临时免疫。</p>",
+            "description": "<p><em>血煞</em>氏族匕首对矮人族裔的敌人们尤其凶残。当你用武器伤害某种合适的生物时，该生物将承受@Damage[1[bleed]]伤害。其针对的生物类型取决于制造匕首的氏族，但通常为卓尔、灰矮人、巨人或兽人。</p>\n<p>此外，当你用<em>血煞</em>武器造成持续流血伤害时（无论是以内在能力或其他方式），武器还会留下撕裂的伤口。对方必须通过@Check[type:fortitude|dc:25]检定否则陷入恶心1。之后生物在1小时内对此临时免疫。</p>",
             "name": "血煞 Bloodbane"
         },
         "Bloodbane (Greater)": {
@@ -10906,7 +10906,7 @@
             "name": "高等毒性孢子炸弹 Pernicious Spore Bomb (Greater)"
         },
         "Pernicious Spore Bomb (Moderate)": {
-            "description": "<p>这个烧瓶里装有快速生长的霉菌孢子，它们会迅速生根，但也会迅速腐烂。你的攻击骰获得+1物品加值。炸弹造成[[/r 2[poison]]]，[[/r 2d4[persistent,piercing]]]和[[/r (2[splash])[poison]]]伤害。除非大失败，否则目标生物所在的一个方格会被增生的孢子覆盖，变为困难地形，持续1轮。</p>",
+            "description": "<p>这个烧瓶里装有快速生长的霉菌孢子，它们会迅速生根，但也会迅速腐烂。你的攻击骰获得+1物品加值。炸弹造成@Damage[2[poison]]，@Damage[2d4[persistent,piercing]]和[[/r (2[splash])[poison]]]伤害。除非大失败，否则目标生物所在的一个方格会被增生的孢子覆盖，变为困难地形，持续1轮。</p>",
             "name": "中等毒性孢子炸弹 Pernicious Spore Bomb (Moderate)"
         },
         "Quickmelt Slick (Greater)": {
@@ -11046,7 +11046,7 @@
             "name": "乌木魔偶 Ebon Marionette"
         },
         "Skeletal Claw": {
-            "description": "<p>这把<em>+1强击手甲钩</em> 类似于一副适合你手掌大小的骷髅手爪。白骨手背上镶嵌着一块由细银链固定的缟玛瑙宝石。当爪子撕裂活物时，宝石会发出负能量脉冲。骷髅爪能对活物造成额外[[/r 1d4[persistent,negative]]]伤害（重击时[[/r 1d10[persistent,negative]]]伤害）。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 命令</p>\n<hr />\n<p><strong>频率</strong> 每日一次</p>\n<p><strong>触发</strong> 你施展法术召唤一个具有骨骼的不死生物，类似<em>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{操纵死尸 Animate Dead}</em></p>\n<hr />\n<p><strong>效果</strong> 触发的不死生物拥有10临时生命值，持续1分钟。当这些临时生命值存在时，骷髅爪不会造成额外负能量伤害。</p>",
+            "description": "<p>这把<em>+1强击手甲钩</em> 类似于一副适合你手掌大小的骷髅手爪。白骨手背上镶嵌着一块由细银链固定的缟玛瑙宝石。当爪子撕裂活物时，宝石会发出负能量脉冲。骷髅爪能对活物造成额外@Damage[1d4[persistent,negative]]伤害（重击时@Damage[1d10[persistent,negative]]伤害）。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 命令</p>\n<hr />\n<p><strong>频率</strong> 每日一次</p>\n<p><strong>触发</strong> 你施展法术召唤一个具有骨骼的不死生物，类似<em>@UUID[Compendium.pf2e.spells-srd.Item.9WGeBwIIbbUuWKq0]{操纵死尸 Animate Dead}</em></p>\n<hr />\n<p><strong>效果</strong> 触发的不死生物拥有10临时生命值，持续1分钟。当这些临时生命值存在时，骷髅爪不会造成额外负能量伤害。</p>",
             "name": "骷髅爪 Skeletal Claw"
         },
         "War Blood Mutagen (Major)": {
@@ -11095,7 +11095,7 @@
         },
         "Pernicious Spore Bomb (Lesser)": {
             "name": "次等毒性孢子炸弹 Pernicious Spore Bomb (Lesser)",
-            "description": "<p>这个烧瓶里装有快速生长的霉菌孢子，它们会迅速生根，但也会迅速腐烂。炸弹造成[[/r 1[poison]]]，[[/r 1d4[persistent,piercing]]]和[[/r (1[splash])[poison]]]伤害。除非大失败，否则目标生物所在的一个方格会被增生的孢子覆盖，变为困难地形，持续1轮。</p>"
+            "description": "<p>这个烧瓶里装有快速生长的霉菌孢子，它们会迅速生根，但也会迅速腐烂。炸弹造成@Damage[1[poison]]，@Damage[1d4[persistent,piercing]]和[[/r (1[splash])[poison]]]伤害。除非大失败，否则目标生物所在的一个方格会被增生的孢子覆盖，变为困难地形，持续1轮。</p>"
         },
         "Searing Suture (Lesser)": {
             "name": "次等灼烧缝合线 Searing Suture (Lesser)",
@@ -11151,7 +11151,7 @@
         },
         "Irritating Thorn Snare": {
             "name": "恼人荆棘圈套 Irritating Thorn Snare",
-            "description": "<p>你将荆棘或松针浸泡在一种能引起皮肤刺激和肿胀的温和毒素中，然后将其绑成一团。当一个生物进入圈套所在方格时，刺球将被掷向该生物，造成@Damage[3d8[piercing]]伤害。该生物必须尝试@Check[type:reflex|dc:19|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标受到一半伤害。</p>\n<p><strong>失败</strong> 目标受到全伤害和[[/r 1d6[persistent,poison]]]。</p>\n<p><strong>大失败</strong> 目标受到双倍伤害和[[/r 2d6[persistent,poison]]]。</p>"
+            "description": "<p>你将荆棘或松针浸泡在一种能引起皮肤刺激和肿胀的温和毒素中，然后将其绑成一团。当一个生物进入圈套所在方格时，刺球将被掷向该生物，造成@Damage[3d8[piercing]]伤害。该生物必须尝试@Check[type:reflex|dc:19|traits:damaging-effect]豁免。</p>\n<hr />\n<p><strong>大成功</strong> 目标不受影响。</p>\n<p><strong>成功</strong> 目标受到一半伤害。</p>\n<p><strong>失败</strong> 目标受到全伤害和@Damage[1d6[persistent,poison]]。</p>\n<p><strong>大失败</strong> 目标受到双倍伤害和@Damage[2d6[persistent,poison]]。</p>"
         },
         "Liquid Gold (Greater)": {
             "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">f</span> 交互</p>\n<p><strong>触发</strong> 你投掷先攻</p>\n<p><strong>需求</strong> 你的隐秘达到专家熟练度</p>\n<hr />\n<p>这个装有金色液体的玻璃瓶被一条金链固定在武器上。</p>\n<p>你以自由动作而不是反应动作来拔出附着的武器，同时装填子弹。</p>",
@@ -11191,7 +11191,7 @@
         },
         "Pernicious Spore Bomb (Major)": {
             "name": "上等毒性孢子炸弹 Pernicious Spore Bomb (Major)",
-            "description": "<p>这个烧瓶里装有快速生长的霉菌孢子，它们会迅速生根，但也会迅速腐烂。你的攻击骰获得+3物品加值。炸弹造成[[/r 4[poison]]]，[[/r 4d4[persistent,piercing]]]和 [[/r (4[splash])[poison]]]伤害。除非大失败，否则目标生物所在的一个方格会被增生的孢子覆盖，变为困难地形，持续1轮。</p>"
+            "description": "<p>这个烧瓶里装有快速生长的霉菌孢子，它们会迅速生根，但也会迅速腐烂。你的攻击骰获得+3物品加值。炸弹造成@Damage[4[poison]]，@Damage[4d4[persistent,piercing]]和[[/r (4[splash])[poison]]]伤害。除非大失败，否则目标生物所在的一个方格会被增生的孢子覆盖，变为困难地形，持续1轮。</p>"
         },
         "Raven Band": {
             "name": "渡鸦缎带 Raven Band",
@@ -11314,7 +11314,7 @@
         },
         "Self-Immolating Note": {
             "name": "自燃便条 Self-Immolating Note",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> Interact</p>\n<p><strong>许可</strong> Member of a secret society</p>\n<hr />\n<p>这种纸是用一种不寻常的配方制成的，当它暴露在空气中5分钟后会自燃。当信封被打开后，这件物品会自动启动，这通常需要一个交互操作。任何持有纸张的人在着火时都会受到[[/r 1[fire]]]伤害。通常，这种便签是作为恶作剧或某种威胁给出的，但秘密结社发现在传递关于即将举行的会议信息或其他相关要闻时它非常有用。这种便签必须迅速写下，并且需要使用随附的信封，以防止空气与纸张发生反应，直到信封的封蜡被破坏。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> Interact</p>\n<p><strong>许可</strong> Member of a secret society</p>\n<hr />\n<p>这种纸是用一种不寻常的配方制成的，当它暴露在空气中5分钟后会自燃。当信封被打开后，这件物品会自动启动，这通常需要一个交互操作。任何持有纸张的人在着火时都会受到@Damage[1[fire]]伤害。通常，这种便签是作为恶作剧或某种威胁给出的，但秘密结社发现在传递关于即将举行的会议信息或其他相关要闻时它非常有用。这种便签必须迅速写下，并且需要使用随附的信封，以防止空气与纸张发生反应，直到信封的封蜡被破坏。</p>"
         },
         "Glittering Scarab": {
             "name": "闪亮圣甲虫 Glittering Scarab",
@@ -11433,7 +11433,7 @@
             "name": "鼬鼠袋 Bag of Weasels"
         },
         "Bottled Sunlight (Greater)": {
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这个光滑的小瓶含有两种互不相容的溶剂，各自包含不同的化学物质。晃动瓶子会引起化学反应，让瓶子发光。在一个小时内，瓶子能在20尺范围内散发明亮光照（在接下来的40尺范围内内散发出昏暗光照）。</p>\n<p>在这一小时中，它可以像炸弹一样被投掷出去。这需要一个单独的打击动作来启动它，就像其他炸弹一样，并且造成下面列出的伤害。如果它在第一次启动后的一个小时内没有被掷出，它就会无害地哑火并被消耗掉。</p>\n<p>炸弹造成3d4正能量伤害、3正能量溅射伤害，和3d4额外火焰伤害。和通常情况一样，正能量只能伤害不死生物和其他具有负能量治疗的生物。对具有阳光易伤不死生物（例如吸血鬼或缚灵）受到炸弹的正能量伤害时取满（例如3d4直接会造成[[/r 12[positive]]]点伤害）。对于那些基于武器伤害骰数量的能力来说，瓶装阳光只计算正能量伤害骰的数量。</p>",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这个光滑的小瓶含有两种互不相容的溶剂，各自包含不同的化学物质。晃动瓶子会引起化学反应，让瓶子发光。在一个小时内，瓶子能在20尺范围内散发明亮光照（在接下来的40尺范围内内散发出昏暗光照）。</p>\n<p>在这一小时中，它可以像炸弹一样被投掷出去。这需要一个单独的打击动作来启动它，就像其他炸弹一样，并且造成下面列出的伤害。如果它在第一次启动后的一个小时内没有被掷出，它就会无害地哑火并被消耗掉。</p>\n<p>炸弹造成3d4正能量伤害、3正能量溅射伤害，和3d4额外火焰伤害。和通常情况一样，正能量只能伤害不死生物和其他具有负能量治疗的生物。对具有阳光易伤不死生物（例如吸血鬼或缚灵）受到炸弹的正能量伤害时取满（例如3d4直接会造成@Damage[12[positive]]点伤害）。对于那些基于武器伤害骰数量的能力来说，瓶装阳光只计算正能量伤害骰的数量。</p>",
             "name": "高等瓶装阳光 Bottled Sunlight (Greater)"
         },
         "Dawnlight (Greater)": {
@@ -11465,7 +11465,7 @@
             "name": "III型吞食袋 Bag of Devouring Type III"
         },
         "Bottled Sunlight (Lesser)": {
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这个光滑的小瓶含有两种互不相容的溶剂，各自包含不同的化学物质。晃动瓶子会引起化学反应，让瓶子发光。在一个小时内，瓶子能在20尺范围内散发明亮光照（在接下来的40尺范围内内散发出昏暗光照）。</p>\n<p>在这一小时中，它可以像炸弹一样被投掷出去。这需要一个单独的打击动作来启动它，就像其他炸弹一样，并且造成下面列出的伤害。如果它在第一次启动后的一个小时内没有被掷出，它就会无害地哑火并被消耗掉。</p>\n<p>炸弹造成1d4正能量伤害和1正能量溅射伤害，还有1d4额外火焰伤害。和通常情况一样，正能量只能伤害不死生物和其他具有负能量治疗的生物。对具有阳光易伤不死生物（例如吸血鬼或缚灵）受到炸弹的正能量伤害时取满（例如1d4直接会造成[[/r 4[positive]]]点伤害）。对于那些基于武器伤害骰数量的能力来说，瓶装阳光只计算正能量伤害骰的数量。</p>",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>这个光滑的小瓶含有两种互不相容的溶剂，各自包含不同的化学物质。晃动瓶子会引起化学反应，让瓶子发光。在一个小时内，瓶子能在20尺范围内散发明亮光照（在接下来的40尺范围内内散发出昏暗光照）。</p>\n<p>在这一小时中，它可以像炸弹一样被投掷出去。这需要一个单独的打击动作来启动它，就像其他炸弹一样，并且造成下面列出的伤害。如果它在第一次启动后的一个小时内没有被掷出，它就会无害地哑火并被消耗掉。</p>\n<p>炸弹造成1d4正能量伤害和1正能量溅射伤害，还有1d4额外火焰伤害。和通常情况一样，正能量只能伤害不死生物和其他具有负能量治疗的生物。对具有阳光易伤不死生物（例如吸血鬼或缚灵）受到炸弹的正能量伤害时取满（例如1d4直接会造成@Damage[4[positive]]点伤害）。对于那些基于武器伤害骰数量的能力来说，瓶装阳光只计算正能量伤害骰的数量。</p>",
             "name": "次等瓶装阳光 Bottled Sunlight (Lesser)"
         },
         "Celestial Peachwood Sword": {
@@ -11610,14 +11610,14 @@
         },
         "Hex Blaster": {
             "name": "灾厄爆裂枪 Hex Blaster",
-            "description": "<p>这把<em>+2强击可怖重型火绳枪</em>由扭曲变形的木头制成，上面刻有怪异符文。 当武器开火时，爆炸声有时听起来像是恶毒女巫的咯咯笑声。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你用劫数将至的灾厄来折磨一个你能看见的生物。灾厄持续1分钟。只要生物中了灾厄，只要你用灾厄爆裂枪射出的子弹击中它，该生物必须在你的回合结束时尝试一次@Check[type:will|dc:28]豁免；无论你击中它多少次，该目标都只尝试一次意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。它还会受到[[/r 1d6[persistent,mental]]]伤害。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。它还会受到[[/r 2d6[persistent,mental]]]伤害。</p>\n<p><strong>大失败</strong> 生物陷入惊惧2和1分钟的@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。生物还受到[[/r 4d6[persistent,mental]]]伤害和诅咒劫数将至（impending doom）的影响。如果目标因为受到此次打击伤害或持续心灵伤害而陷入@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，它会失去意识一整天直到诅咒被解除。在一天之后，如果生物依然失去意识，它必须尝试@Check[type:fortitude|dc:28|traits:death,incapacitation]豁免，否则死亡；此效果带有死亡和失能特征。</p>"
+            "description": "<p>这把<em>+2强击可怖重型火绳枪</em>由扭曲变形的木头制成，上面刻有怪异符文。 当武器开火时，爆炸声有时听起来像是恶毒女巫的咯咯笑声。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你用劫数将至的灾厄来折磨一个你能看见的生物。灾厄持续1分钟。只要生物中了灾厄，只要你用灾厄爆裂枪射出的子弹击中它，该生物必须在你的回合结束时尝试一次@Check[type:will|dc:28]豁免；无论你击中它多少次，该目标都只尝试一次意志豁免。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。它还会受到@Damage[1d6[persistent,mental]]伤害。</p>\n<p><strong>失败</strong> 生物陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。它还会受到@Damage[2d6[persistent,mental]]伤害。</p>\n<p><strong>大失败</strong> 生物陷入惊惧2和1分钟的@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}。生物还受到@Damage[4d6[persistent,mental]]伤害和诅咒劫数将至（impending doom）的影响。如果目标因为受到此次打击伤害或持续心灵伤害而陷入@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，它会失去意识一整天直到诅咒被解除。在一天之后，如果生物依然失去意识，它必须尝试@Check[type:fortitude|dc:28|traits:death,incapacitation]豁免，否则死亡；此效果带有死亡和失能特征。</p>"
         },
         "Lawbringer's Lasso": {
             "description": "<p>这根附魔套索是一张@UUID[Compendium.pf2e.equipment-srd.Item.T8EopYZLT137CsdW]{网 Net}，能用来@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}最多30尺远的生物。目标生物必须通过@Check[type:athletics|dc:18|traits:action:force-open]检定@UUID[Compendium.pf2e.actionspf2e.Item.SjmKHgI7a5Z9JzBx]{破拆 Force Open}套索，或尝试DC 18的@UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{逃脱 Escape}。它永远和一根30尺绳索相连。当你用执法者的套索擒抱目标时，如果目标带有混乱特征，则你的擒抱检定有+1物品加值。如果你在使用执法者的套索擒抱混乱生物时掷出大失败，你得到失败的结果。</p>",
             "name": "执法者的套索 Lawbringer's Lasso"
         },
         "Redeemer's Pistol": {
-            "description": "<p>这把<em>+2强击决斗手枪</em>由银色的钢制成，散发着耀眼的光芒。你可以选择使用救赎者手枪进行非致命攻击而不会受到-2减值；如果你如此做，该次攻击会造成1d6额外心灵伤害。你还可以召唤这把枪中的救赎之魂来审判你的敌人。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个30内的敌人对你造成伤害</p>\n<hr />\n<p><strong>效果</strong> 枪中的保护性灵魂在敌人心中投射出救赎的愿景。敌人必须选择以下选项之一。</p>\n<ul>\n<li>你不受触发伤害的影响。</li>\n<li>你针对触发的伤害，获得等同于2+你等级的全伤害抗力。在伤害效果结算之后，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直到它的下个回合结束，并且还受到[[/r 4[persistent,good]]]伤害。</li>\n</ul>",
+            "description": "<p>这把<em>+2强击决斗手枪</em>由银色的钢制成，散发着耀眼的光芒。你可以选择使用救赎者手枪进行非致命攻击而不会受到-2减值；如果你如此做，该次攻击会造成1d6额外心灵伤害。你还可以召唤这把枪中的救赎之魂来审判你的敌人。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">r</span> 命令</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个30内的敌人对你造成伤害</p>\n<hr />\n<p><strong>效果</strong> 枪中的保护性灵魂在敌人心中投射出救赎的愿景。敌人必须选择以下选项之一。</p>\n<ul>\n<li>你不受触发伤害的影响。</li>\n<li>你针对触发的伤害，获得等同于2+你等级的全伤害抗力。在伤害效果结算之后，敌人陷入@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直到它的下个回合结束，并且还受到@Damage[4[persistent,good]]伤害。</li>\n</ul>",
             "name": "救赎者手枪 Redeemer's Pistol"
         },
         "Blast Lance": {
@@ -11876,7 +11876,7 @@
             "name": "冰锥之千难符箓 Thousand-Pains Fulu (Icicle)"
         },
         "Thousand-Pains Fulu (Needle)": {
-            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:27|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>拿起这张符箓的感觉就好像手被针扎了一般。符箓会如同头发、指甲和结缔组织刺入到体内一般造成@Damage[7d6[piercing]]伤害。失败或大失败时，若目标采取具有移动特征的动作，就会承受[[/r 2d6[persistent,piercing]]]伤害。</p>",
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:27|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>拿起这张符箓的感觉就好像手被针扎了一般。符箓会如同头发、指甲和结缔组织刺入到体内一般造成@Damage[7d6[piercing]]伤害。失败或大失败时，若目标采取具有移动特征的动作，就会承受@Damage[2d6[persistent,piercing]]伤害。</p>",
             "name": "针之千难符箓 Thousand-Pains Fulu (Needle)"
         },
         "Amazing Pop-up Book": {
@@ -11884,7 +11884,7 @@
             "name": "惊奇立体书 Amazing Pop-up Book"
         },
         "Thousand-Pains Fulu (Stone)": {
-            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:19|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>符箓所使用的黄色羊皮纸摸起来坚硬且表面好似布满灰尘。符箓会宛若肿胀的肌肉挤压到关节与骨头一般造成@Damage[3d6[bludgeoning]]伤害。失败或大失败时，若目标承受电击伤害，它就会同时承受[[/r 1d6[persistent,bludgeoning]]]伤害。</p>",
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:19|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>符箓所使用的黄色羊皮纸摸起来坚硬且表面好似布满灰尘。符箓会宛若肿胀的肌肉挤压到关节与骨头一般造成@Damage[3d6[bludgeoning]]伤害。失败或大失败时，若目标承受电击伤害，它就会同时承受@Damage[1d6[persistent,bludgeoning]]伤害。</p>",
             "name": "石之千难符箓 Thousand-Pains Fulu (Stone)"
         },
         "Book of Warding Prayers": {
@@ -12112,7 +12112,7 @@
             "name": "高等舒缓粉 Soothing Powder (Greater)"
         },
         "Sparkler": {
-            "description": "<p><strong>许可</strong> 烟花棒在天夏和伏陀罗很常见，可以由那些专门制作烟花的人制造。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>烟花棒发出彩色的火花，燃烧1分钟。它在10尺半径范围内投下明亮光照（在接下来的10尺范围内投下昏暗光照）。当烟花棒燃烧时，你可以将它作为临时武器使用，在命中时造成1点火焰伤害。重击时目标还会@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p>你能将烟花棒靠近易燃物，这可以作为你启动烟花棒的交互动作的一部分，也可以在烟花棒燃烧时花费一个交互动作。如果你如此做，烟花棒会点燃它，就像火柴一样。</p>",
+            "description": "<p><strong>许可</strong> 烟花棒在天夏和伏陀罗很常见，可以由那些专门制作烟花的人制造。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>烟花棒发出彩色的火花，燃烧1分钟。它在10尺半径范围内投下明亮光照（在接下来的10尺范围内投下昏暗光照）。当烟花棒燃烧时，你可以将它作为临时武器使用，在命中时造成@Damage[1[fire]]伤害。重击时目标还会@UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}1轮。</p>\n<p>你能将烟花棒靠近易燃物，这可以作为你启动烟花棒的交互动作的一部分，也可以在烟花棒燃烧时花费一个交互动作。如果你如此做，烟花棒会点燃它，就像火柴一样。</p>",
             "name": "烟花棒 Sparkler"
         },
         "Bottled Roc": {
@@ -12405,7 +12405,7 @@
         },
         "Thousand-Pains Fulu (Void)": {
             "name": "虚之千难符箓 Thousand-Pains Fulu (Void)",
-            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:38|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>这张紫色符箓正中的黑点就好像无底洞一般吸取着能量。符箓打散了目标的气，从而造成@Damage[12d10[negative]]伤害。失败或大失败时，若目标在1分钟内承受任何其他伤害，它就会同时承受[[/r 2d10[persistent,negative]]]伤害。该效果具有死亡和负能量特征。每当目标承受该持续伤害时，距离目标30尺范围内的任意生物都能够使用反应动作来获取临时生命值，可用的临时生命值数值等同于该持续伤害造成的伤害数值，该可用的临时生命值会分配给所有采取反应动作的生物。若贴符箓的生物位于30尺范围内，且该生物愿意的话，它能直接获得所有可用临时生命值（而非分配给那些使用动作的生物）。这些临时生命值会在1分钟后消失。</p>"
+            "description": "<p><strong>持续时间</strong> 1分钟</p>\n<p><em>千难符箓</em>由一名为了寻求无尽生命而抛弃道德的医师创造，这种符箓阻断了体内五行元素的自然流动。被贴上符箓的生物必须尝试一次@Check[type:fortitude|dc:38|basic:true]豁免，根据符箓的类型对抗相应的伤害。失败或者大失败会使得目标承受由特定条件触发的持续伤害，该特定条件必须在符箓的持续时间内得到满足才会触发伤害。</p>\n<p>这张紫色符箓正中的黑点就好像无底洞一般吸取着能量。符箓打散了目标的气，从而造成@Damage[12d10[negative]]伤害。失败或大失败时，若目标在1分钟内承受任何其他伤害，它就会同时承受@Damage[2d10[persistent,negative]]伤害。该效果具有死亡和负能量特征。每当目标承受该持续伤害时，距离目标30尺范围内的任意生物都能够使用反应动作来获取临时生命值，可用的临时生命值数值等同于该持续伤害造成的伤害数值，该可用的临时生命值会分配给所有采取反应动作的生物。若贴符箓的生物位于30尺范围内，且该生物愿意的话，它能直接获得所有可用临时生命值（而非分配给那些使用动作的生物）。这些临时生命值会在1分钟后消失。</p>"
         },
         "Tome of Restorative Cleansing (Lesser)": {
             "name": "次等滋补清洁书卷 Tome of Restorative Cleansing (Lesser)",
@@ -12879,7 +12879,7 @@
             "description": "<p>这把巨大重锤的锤头上沿着其主要的打击面熔铸了许多沉重的金属楔，让它能轻易的撕裂盾牌和盔甲。</p>"
         },
         "Eldritch Flare": {
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>这种毒药从受害者的魔法中汲取力量。如果一个生物在诡奇耀光的作用下施法，溢出的魔法能量将反馈到毒药中，使得当轮毒药的豁免DC上升2点。除此之外，如果该法术造成了伤害，毒药将造成与造成伤害法术伤害类型相同的一半伤害（另一半仍是毒素伤害）。如果受害者对法术的伤害类型免疫或有抗力，毒药将造成一半的心灵伤害取代之。如果受害者在受到毒素影响的轮内未释放法术，毒药仍造成它的毒素伤害。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:35]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[4d6[poison],4d6[fire]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[5d6[poison],5d6[fire]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[6d6[poison],6d6[fire]]伤害 (1轮)</p>\n<p><em>注意: 伤害骰默认设置为一半火焰伤害</em></p>",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>这种毒药从受害者的魔法中汲取力量。如果一个生物在诡奇耀光的作用下施法，溢出的魔法能量将反馈到毒药中，使得当轮毒药的豁免DC上升2点。除此之外，如果该法术造成了伤害，毒药将造成与造成伤害法术伤害类型相同的一半伤害（另一半仍是毒素伤害）。如果受害者对法术的伤害类型免疫或有抗力，毒药将造成一半的心灵伤害取代之。如果受害者在受到毒素影响的轮内未释放法术，毒药仍造成它的毒素伤害。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:35]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[8d6[poison]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[10d6[poison]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[12d6[poison]]伤害 (1轮)</p>",
             "name": "诡奇耀光 Eldritch Flare"
         },
         "Falcata": {
@@ -12931,7 +12931,7 @@
             "description": "<p>分层皮甲是一种复合甲。将细小的长方形上漆皮条用高质量的绳子绑在一起后就能制成分层皮甲。通常会和内衬一起穿戴。</p>"
         },
         "Lodestone Bomb (Greater)": {
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 打击</p>\n<p>磁石炸弹将活性电离矿物保存在休眠状态，直到爆炸。炸弹给与攻击骰+3物品加值，并且造成4d4力场伤害和3力场溅射伤害。此外，主要由金属构成、穿戴金属盔甲或使用金属武器的目标会受到[[/r 3d4[persistent,force]]]伤害，并且在受到持续伤害期间还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。持续伤害最多持续1分钟。</p>",
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 打击</p>\n<p>磁石炸弹将活性电离矿物保存在休眠状态，直到爆炸。炸弹给与攻击骰+3物品加值，并且造成4d4力场伤害和3力场溅射伤害。此外，主要由金属构成、穿戴金属盔甲或使用金属武器的目标会受到@Damage[3d4[persistent,force]]伤害，并且在受到持续伤害期间还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。持续伤害最多持续1分钟。</p>",
             "name": "高等磁石炸弹 Lodestone Bomb (Greater)"
         },
         "Long Hammer": {
@@ -13188,7 +13188,7 @@
         },
         "Lodestone Bomb": {
             "name": "磁石炸弹 Lodestone Bomb",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 打击</p>\n<p>磁石炸弹将活性电离矿物保存在休眠状态，直到爆炸。炸弹给与攻击骰+2物品加值，并且造成3d4力场伤害和2力场溅射伤害。此外，主要由金属构成、穿戴金属盔甲或使用金属武器的目标会受到[[/r 2d4[persistent,force]]]伤害，并且在受到持续伤害期间还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。持续伤害最多持续1分钟。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 打击</p>\n<p>磁石炸弹将活性电离矿物保存在休眠状态，直到爆炸。炸弹给与攻击骰+2物品加值，并且造成3d4力场伤害和2力场溅射伤害。此外，主要由金属构成、穿戴金属盔甲或使用金属武器的目标会受到@Damage[2d4[persistent,force]]伤害，并且在受到持续伤害期间还会陷入@UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。持续伤害最多持续1分钟。</p>"
         },
         "Mantis Shell": {
             "name": "螳螂壳 Mantis Shell",
@@ -13259,7 +13259,7 @@
             "name": "龙鳞杖 Dragonscale Staff"
         },
         "Elemental Ammunition (Moderate)": {
-            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>当元素弹药中的炼金试剂被启动时，会在撞击时雾化，对目标造成[[/r 2d4[persistent,damageType]]]酸液、寒冷、电击、火焰或毒素伤害，并且在造成正常伤害的基础上造成[[/r (2[splash])[damageType]]]{2溅射伤害}。每种伤害类型都的弹药需要不同的公式，弹药获得和伤害类型相匹配的特征。</p>",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>当元素弹药中的炼金试剂被启动时，会在撞击时雾化，对目标造成@Damage[2d4[persistent,damageType]]酸液、寒冷、电击、火焰或毒素伤害，并且在造成正常伤害的基础上造成[[/r (2[splash])[damageType]]]{2溅射伤害}。每种伤害类型都的弹药需要不同的公式，弹药获得和伤害类型相匹配的特征。</p>",
             "name": "中等元素弹药 Elemental Ammunition (Moderate)"
         },
         "Ghostcaller's Planchette (Greater)": {
@@ -13327,7 +13327,7 @@
             "description": "<p>车队守卫使用这把<em>+1强击重型火绳枪</em>来非致命地——但威力强大地——阻止大批来犯的土匪。射击时，这把星光枪造成心灵伤害并在攻击中添加非致命特征。每把心灵长枪也安装了一个能从该火器上所有基础符文中获益的加固枪托。当你在使用心灵长枪进行的一次攻击骰中达成大成功，目标陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}，除非它成功通过一次@Check[type:will|dc:24]豁免。</p>"
         },
         "Ooze Ammunition (Lesser)": {
-            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>泥怪弹药含有黏性物质胶囊。如果你用被启动的泥怪弹药击中一个生物，它会造成酸液伤害，取代原本的伤害类型，然后该生物会受到-5尺速度减值和[[/r 1d4[persistent,acid]]]伤害，直到效果结束。重击时，除了其他效果之外，生物还会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。目标可以通过逃脱粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸液伤害。结束效果的生物依然会受到本回合的持续性伤害。</p>",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>泥怪弹药含有黏性物质胶囊。如果你用被启动的泥怪弹药击中一个生物，它会造成酸液伤害，取代原本的伤害类型，然后该生物会受到-5尺速度减值和@Damage[1d4[persistent,acid]]伤害，直到效果结束。重击时，除了其他效果之外，生物还会被@UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{禁足 Immobilized}1轮。目标可以通过逃脱粘性泡沫来结束效果。其他生物也可以提供这些动作，尽管这样做会对帮忙的生物造成一半的持续性酸液伤害。结束效果的生物依然会受到本回合的持续性伤害。</p>",
             "name": "次等泥怪弹药 Ooze Ammunition (Lesser)"
         },
         "Ooze Ammunition (Major)": {
@@ -13495,7 +13495,7 @@
             "name": "上等上古龙爪 Wyrm Claw (Major)"
         },
         "Bane Ammunition (Lesser)": {
-            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>怪物猎人们喜欢痛苦弹药，这种弹药带有种针对特定类型生物试剂的胶囊。特定种类包括[异怪]、[动物]、[魔兽]、[龙类]、[精类]、[巨人]、[泥怪]以及[植物]和[真菌]（这俩算作一类）。每种类型需要不同的公式。被启动的毒害弹药命中特定类别的目标时，它除了能造成正常伤害外，还能造成[[/r 1d4[persistent,poison]]]伤害。</p>",
+            "description": "<p><strong>弹药</strong> 任意</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<hr />\n<p>怪物猎人们喜欢痛苦弹药，这种弹药带有种针对特定类型生物试剂的胶囊。特定种类包括[异怪]、[动物]、[魔兽]、[龙类]、[精类]、[巨人]、[泥怪]以及[植物]和[真菌]（这俩算作一类）。每种类型需要不同的公式。被启动的毒害弹药命中特定类别的目标时，它除了能造成正常伤害外，还能造成@Damage[1d4[persistent,poison]]伤害。</p>",
             "name": "次等痛苦弹药 Bane Ammunition (Lesser)"
         },
         "Bane Ammunition (Moderate)": {
@@ -15051,7 +15051,7 @@
             "name": "本能头冠 Instinct Crown (龙类)"
         },
         "Instinct Crown (Giant)": {
-            "description": "<p><em>本能头冠</em>是一种魔法头饰，注入了野蛮人在战斗中依赖的本能精华。每个头冠都被设计成代表其所连接的本能，比如动物本能头冠上有一只狼头，或是一个有着巨人符文的简单头盔作为<em>巨人本能头冠</em>。佩戴头冠后，你可以进一步发挥自己的本能，如果头冠的精华与你的本能相匹配，则可以获得更大的好处。你必须能够狂暴才能使用头冠的启动效果。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你骰先攻；</p>\n<hr />\n<p><strong>效果</strong> 你狂暴，并且获得10点额外临时生命值。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">2</span> 命令，想象</p>\n<p><strong>需求</strong> 头冠的本能与你的本能相同；</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你狂暴，如果你有足够空间并且还没有变成大型，你将变成大型生物。你的装备和你一同变大，但如果脱下装备就会恢复原来的大小。你的触及增加5尺（如果你原来是超小型生物，则增加10尺）。使用更大的武器时你额外造成[[/r 2[additional]]]伤害。此外，当你行走时，你可以用脚步破坏地面，你经过的所有方格都变成困难地形。你可以忽略你创造的困难地形。当你的狂暴结束时，地面恢复正常。</p>",
+            "description": "<p><em>本能头冠</em>是一种魔法头饰，注入了野蛮人在战斗中依赖的本能精华。每个头冠都被设计成代表其所连接的本能，比如动物本能头冠上有一只狼头，或是一个有着巨人符文的简单头盔作为<em>巨人本能头冠</em>。佩戴头冠后，你可以进一步发挥自己的本能，如果头冠的精华与你的本能相匹配，则可以获得更大的好处。你必须能够狂暴才能使用头冠的启动效果。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你骰先攻；</p>\n<hr />\n<p><strong>效果</strong> 你狂暴，并且获得10点额外临时生命值。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">2</span> 命令，想象</p>\n<p><strong>需求</strong> 头冠的本能与你的本能相同；</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你狂暴，如果你有足够空间并且还没有变成大型，你将变成大型生物。你的装备和你一同变大，但如果脱下装备就会恢复原来的大小。你的触及增加5尺（如果你原来是超小型生物，则增加10尺）。使用更大的武器时你造成2点额外伤害。此外，当你行走时，你可以用脚步破坏地面，你经过的所有方格都变成困难地形。你可以忽略你创造的困难地形。当你的狂暴结束时，地面恢复正常。</p>",
             "name": "本能头冠 Instinct Crown (巨人)"
         },
         "Life-Boosting Oil (Moderate)": {
@@ -15071,7 +15071,7 @@
             "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 交互</p>\n<p>你可以用产权油涂抹6负载以下的物体，有人又将其称作“抓脏油”。一旦被使用，这种透明的油可以保持启动24小时。任何接触涂抹这种油的物体的人，会沾上红色的污迹，24小时内无法被清洗掉。</p>"
         },
         "Oracular Crown": {
-            "description": "<p>你的<em> 先知皇冠</em>上镶嵌着与你的诅咒相关的图案。随着你诅咒的加重，皇冠的外观也会变化，出现极端的角度、更强烈的颜色或其他表明你诅咒强度的迹象。同样地，当你减轻诅咒的影响时，皇冠的外观也会回归到其自然形态。你宗教检定获得+2的物品加值。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你获得1点聚能点，你只能用它来使用先知启示法术。如果在你的回合结束前没有使用的话，这点聚能点则自动消失。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 命令（治疗，死灵系，正能量）</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的先知诅咒处于低阶或者更高</p>\n<hr />\n<p><strong>效果</strong> 你回复@Damage[3d8[healing]]生命值。如果你的诅咒处于中阶则回复@Damage[5d8[healing]]生命值, 如果你的诅咒处于高阶则回复@Damage[7d8[healing]]生命值。如果你具有负能量治疗，那么这个启动具有负能量特征而不是治疗和正能量特征。</p>\n<hr />\n<p><strong>制造需求</strong> 你是一名先知。</p>",
+            "description": "<p>你的<em> 先知皇冠</em>上镶嵌着与你的诅咒相关的图案。随着你诅咒的加重，皇冠的外观也会变化，出现极端的角度、更强烈的颜色或其他表明你诅咒强度的迹象。同样地，当你减轻诅咒的影响时，皇冠的外观也会回归到其自然形态。你宗教检定获得+2的物品加值。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">F</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你获得1点聚能点，你只能用它来使用先知启示法术。如果在你的回合结束前没有使用的话，这点聚能点则自动消失。</p>\n<hr />\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 命令（治疗，死灵系，正能量）</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>需求</strong> 你的先知诅咒处于低阶或者更高</p>\n<hr />\n<p><strong>效果</strong> 你回复[[/r 3d8[healing]]]生命值。如果你的诅咒处于中阶则回复[[/r 5d8[healing]]]生命值, 如果你的诅咒处于高阶则回复[[/r 7d8[healing]]]生命值。如果你具有负能量治疗，那么这个启动具有负能量特征而不是治疗和正能量特征。</p>\n<hr />\n<p><strong>制造需求</strong> 你是一名先知。</p>",
             "name": "先知皇冠 Oracular Crown"
         },
         "Tactician's Helm": {
@@ -15243,7 +15243,7 @@
             "name": "滚火溅焰魔杖 Wand of Rolling Flames (3环)"
         },
         "Wand of Rolling Flames (4th-level)": {
-            "description": "<p>黑曜石魔杖的裂隙间透着橙红色的火光，整根魔杖就好似一束渐冷的岩浆。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次，外加过载</p>\n<hr />\n<p><strong>效果</strong> 你施放4环<em>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{炽焰法球 Flaming Sphere}</em>法术。直到你的下一个回合开始，法球所在方格和所有邻接的方格都被滚动的烈焰所席卷。滚焰方格属于困难地形以及有害地形。在地面上移动的生物会在每次进入一个滚焰方格时受到[[/r 3[fire]]]伤害。滚焰中的生物若在其回合内没有移动，那么该生物将会在其回合结束时受到其所在方格所带来的伤害。当你每轮首次维持该法术时，法球将会在新的位置重新创造滚焰（若你选择不移动法球，那么它将会停留在其原本的位置)。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一次对应环级的<em>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{炽焰法球 Flaming Sphere}</em>施法。</p>",
+            "description": "<p>黑曜石魔杖的裂隙间透着橙红色的火光，整根魔杖就好似一束渐冷的岩浆。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次，外加过载</p>\n<hr />\n<p><strong>效果</strong> 你施放4环<em>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{炽焰法球 Flaming Sphere}</em>法术。直到你的下一个回合开始，法球所在方格和所有邻接的方格都被滚动的烈焰所席卷。滚焰方格属于困难地形以及有害地形。在地面上移动的生物会在每次进入一个滚焰方格时受到@Damage[3[fire]]伤害。滚焰中的生物若在其回合内没有移动，那么该生物将会在其回合结束时受到其所在方格所带来的伤害。当你每轮首次维持该法术时，法球将会在新的位置重新创造滚焰（若你选择不移动法球，那么它将会停留在其原本的位置)。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一次对应环级的<em>@UUID[Compendium.pf2e.spells-srd.Item.2ZdHjnpEQJuqOYSG]{炽焰法球 Flaming Sphere}</em>施法。</p>",
             "name": "滚火溅焰魔杖 Wand of Rolling Flames (4环)"
         },
         "Wand of Rolling Flames (8th-level)": {
@@ -15295,7 +15295,7 @@
             "name": "娇惯宠物魔杖 Wand of the Pampered Pet"
         },
         "Wand of Tormented Slumber": {
-            "description": "<p>这根魔杖是由魔兽的利爪雕琢而成，其具体来源无法辨认。血迹斑斑的破布包裹着利爪较厚的部分，使得其能够充当杖柄供人持握。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次，外加过载</p>\n<hr />\n<p><strong>效果</strong> 你施放4环<em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>，不过昏睡的生物将会遇见可怕的噩梦。一名因该法术@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}的生物将会受到[[/r 1d6[persistent,mental]]]伤害。只有当该持续伤害在单次掷骰中造成了4点或更高的伤害时，才会将生物从失去意识中唤醒。若该生物因为受到伤害（无论是否是该效果所造成的持续心灵伤害）而苏醒，其将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。若该生物是在他自己的回合因受到伤害而苏醒，那么其惊惧状态不会在那一回合自动衰减。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一次4环<em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>施法。</p>",
+            "description": "<p>这根魔杖是由魔兽的利爪雕琢而成，其具体来源无法辨认。血迹斑斑的破布包裹着利爪较厚的部分，使得其能够充当杖柄供人持握。</p>\n<p><strong>启动</strong> 施法</p>\n<p><strong>频率</strong> 每天一次，外加过载</p>\n<hr />\n<p><strong>效果</strong> 你施放4环<em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>，不过昏睡的生物将会遇见可怕的噩梦。一名因该法术@UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}的生物将会受到@Damage[1d6[persistent,mental]]伤害。只有当该持续伤害在单次掷骰中造成了4点或更高的伤害时，才会将生物从失去意识中唤醒。若该生物因为受到伤害（无论是否是该效果所造成的持续心灵伤害）而苏醒，其将陷入@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}状态。若该生物是在他自己的回合因受到伤害而苏醒，那么其惊惧状态不会在那一回合自动衰减。</p>\n<hr />\n<p><strong>制造需求</strong> 提供一次4环<em>@UUID[Compendium.pf2e.spells-srd.Item.o4lRVTwSxnOOn5vl]{睡眠术 Sleep}</em>施法。</p>",
             "name": "惊魂噩梦魔杖 Wand of Tormented Slumber"
         },
         "Wand of Toxic Blades (7th-level)": {
@@ -16183,7 +16183,7 @@
             "name": "复仇利刃 Vengeful Arm"
         },
         "Venomed Tongue": {
-            "description": "<p>无论多么痛苦，秘密都必须被隐藏。这一如辫长舌形状的纹身赋予你在欺骗检定上的+1物品加值。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 阿巴拉克萨斯令你的舌头充满毒素，让你说出的谎言能使敌人中毒。你通过欺骗检定来进行一次@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]，@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]或@UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]。选择一个被你成功欺骗的目标，其受到[[/r 2d6[persistent,poison]]]伤害。</p>",
+            "description": "<p>无论多么痛苦，秘密都必须被隐藏。这一如辫长舌形状的纹身赋予你在欺骗检定上的+1物品加值。</p>\n<p><strong>启动</strong><span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 阿巴拉克萨斯令你的舌头充满毒素，让你说出的谎言能使敌人中毒。你通过欺骗检定来进行一次@UUID[Compendium.pf2e.actionspf2e.Item.GkmbTGfg8KcgynOA]，@UUID[Compendium.pf2e.actionspf2e.Item.QNAVeNKtHA0EUw4X]或@UUID[Compendium.pf2e.actionspf2e.Item.ewwCglB7XOPLUz72]。选择一个被你成功欺骗的目标，其受到@Damage[2d6[persistent,poison]]伤害。</p>",
             "name": "恶毒喉舌 Venomed Tongue"
         },
         "Goo Grenade (Lesser)": {
@@ -16466,7 +16466,7 @@
             "name": "蚀金者 Rustbringer"
         },
         "Silver Snake Cane": {
-            "description": "<p>这种闪亮的金属手杖是一种辅助装置，也是许多金巨灵所喜爱的伙伴。这种手杖的所有者可以花费1分钟时间喂手杖一瓶灵药或一剂量的摄入或伤口毒素，以填满银蛇的毒囊。手杖同一时间只能储存一份这样的炼金物品，并且会在24小时后，或被喂入了一份新的炼金物品时，将已储存的炼金物品排出。</p>\n<hr />\n<p><strong>启动-银蛇剑</strong><span class=\"pf2-icon\">1</span> (专注，变形)</p>\n<p><strong>效果</strong> 银蛇手杖变成一根<em>+1强击银剑杖</em>，持续10分钟。如果它已经储存了一份带有伤口特征的毒素，毒素会自动应用到该武器上。如果该毒素在手杖变回通常形态时还没有被消耗，它仍然会储存在手杖内。你可以解消该启动。</p>\n<hr />\n<p><strong>启动-银蛇血清</strong> <span class=\"pf2-icon\">1</span> (专注)</p>\n<p><strong>需求</strong> 银蛇手杖内储存了一剂量的炼金物品</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你选择一个你触及内的自愿目标，让银蛇手杖咬他，造成[[/r 1[piercing]]]伤害并注入所储存的炼金物品。该物品被花费，且如果这是一份灵药或摄入毒素，目标就如同消耗了该物品一样受到影响。</p>\n<hr />\n<p><strong>启动-真之银蛇</strong><span class=\"pf2-icon\">1</span> (专注)</p>\n<p><strong>先决条件</strong> 你是一个金巨灵</p>\n<p><strong>效果</strong> 手杖变成了一只由银制成的巨蝰。它的所有打击都是银质的。它可以独立行动但会服从于你。你可以解消该启动。</p>",
+            "description": "<p>这种闪亮的金属手杖是一种辅助装置，也是许多金巨灵所喜爱的伙伴。这种手杖的所有者可以花费1分钟时间喂手杖一瓶灵药或一剂量的摄入或伤口毒素，以填满银蛇的毒囊。手杖同一时间只能储存一份这样的炼金物品，并且会在24小时后，或被喂入了一份新的炼金物品时，将已储存的炼金物品排出。</p>\n<hr />\n<p><strong>启动-银蛇剑</strong><span class=\"pf2-icon\">1</span> (专注，变形)</p>\n<p><strong>效果</strong> 银蛇手杖变成一根<em>+1强击银剑杖</em>，持续10分钟。如果它已经储存了一份带有伤口特征的毒素，毒素会自动应用到该武器上。如果该毒素在手杖变回通常形态时还没有被消耗，它仍然会储存在手杖内。你可以解消该启动。</p>\n<hr />\n<p><strong>启动-银蛇血清</strong> <span class=\"pf2-icon\">1</span> (专注)</p>\n<p><strong>需求</strong> 银蛇手杖内储存了一剂量的炼金物品</p>\n<p><strong>频率</strong> 每天一次</p>\n<p><strong>效果</strong> 你选择一个你触及内的自愿目标，让银蛇手杖咬他，造成@Damage[1[piercing]]伤害并注入所储存的炼金物品。该物品被花费，且如果这是一份灵药或摄入毒素，目标就如同消耗了该物品一样受到影响。</p>\n<hr />\n<p><strong>启动-真之银蛇</strong><span class=\"pf2-icon\">1</span> (专注)</p>\n<p><strong>先决条件</strong> 你是一个金巨灵</p>\n<p><strong>效果</strong> 手杖变成了一只由银制成的巨蝰。它的所有打击都是银质的。它可以独立行动但会服从于你。你可以解消该启动。</p>",
             "name": "银蛇手杖 Silver Snake Cane"
         },
         "Spellsap Grenade": {
@@ -16542,7 +16542,7 @@
             "name": "灼热铁手套 Scalding Gauntlets"
         },
         "Scalding Gauntlets (Major)": {
-            "description": "<p>喜欢用拳头战斗的火元素裔巨灵子嗣十分喜爱<em>上等灼热铁手套</em>，这是一对<em>+2高等强击炽焰带刺铁手套</em>。这种错综复杂的黄金铁手套上用火元素语铭刻着对烈焰支配者荣耀的赞美之词，而且还装饰着闪闪发光的黑色和红色宝石。你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[type:fortitude|dc:32]豁免，否则承受[[/r 3d6[persistent,fire]]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>上等灼热铁手套</em>的恶心。</p>",
+            "description": "<p>喜欢用拳头战斗的火元素裔巨灵子嗣十分喜爱<em>上等灼热铁手套</em>，这是一对<em>+2高等强击炽焰带刺铁手套</em>。这种错综复杂的黄金铁手套上用火元素语铭刻着对烈焰支配者荣耀的赞美之词，而且还装饰着闪闪发光的黑色和红色宝石。你在穿戴该铁手套时擒抱或束缚的生物必须成功通过@Check[type:fortitude|dc:32]豁免，否则承受@Damage[3d6[persistent,fire]]伤害并因疼痛而陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}；他之后会在1小时内临时免疫来自<em>上等灼热铁手套</em>的恶心。</p>",
             "name": "上等灼热铁手套 Scalding Gauntlets (Major)"
         },
         "Scalding Gauntlets (True)": {
@@ -16630,7 +16630,7 @@
             "name": "次等章鱼药剂 Octopus Potion (Lesser)"
         },
         "Octopus Potion (Greater)": {
-            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+22 #Athletics]]{+22}，逃脱 DC 30。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的[[/r 13[bludgeoning]]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>",
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+22 #Athletics]]{+22}，逃脱 DC 30。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的@Damage[13[bludgeoning]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>",
             "name": "高等章鱼药剂 Octopus Potion (Greater)"
         },
         "Sharkskin Robe": {
@@ -16847,7 +16847,7 @@
         },
         "Octopus Potion (Moderate)": {
             "name": "中等章鱼药剂 Octopus Potion (Moderate)",
-            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+17 #Athletics]]{+17}，逃脱 DC 25。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的[[/r 9[bludgeoning]]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>"
+            "description": "<p>启动 <span class=\"pf2-icon\">1</span> (操作)</p>\n<p>当你饮下这瓶药剂时，会有八只长满吸盘的章鱼触手挥舞着从你的身体两侧冒出。这些触手共享你的多重攻击减值，并尝试@UUID[Compendium.pf2e.actionspf2e.Item.PMbdMWc2QroouFGD]{擒拿 Grapple}距离你15尺内的一名随机敌人。成功后，掷[[/r 1d4 #额外效果]]来确定触手的额外效果，该效果会持续到目标不再被触手@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}或@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}为止。在随后的回合中，你可以使用一个带有攻击特征的单动作来让触手擒抱目前被擒抱或束缚的生物（没有额外效果），或者释放它们目前抓住的任何生物，并重复它们的初始效果。1分钟后，触手消失，药剂的效果结束。</p>\n<p>运动技能调整值为[[/r 1d20+17 #Athletics]]{+17}，逃脱 DC 25。</p>\n<table>\n<thead>\n<tr>\n<td>1d4</td>\n<td>额外效果</td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>触手遮住眼睛；目标也陷入@UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUbl5Z2]{目盲 Blinded}状态。</td>\n</tr>\n<tr>\n<td>2</td>\n<td>触手遮住嘴巴；目标无法说话。</td>\n</tr>\n<tr>\n<td>3</td>\n<td>触手缠绕四肢；目标在被触手抓取时进行操作动作的纯骰检定为@Check[type:flat|dc:7]，而不是DC 5。</td>\n</tr>\n<tr>\n<td>4</td>\n<td>触手碾碎你的敌人；目标立即受到等于药剂等级的@Damage[9[bludgeoning]]{钝击伤害}，并在每个回合结束时再次受到该伤害。</td>\n</tr>\n</tbody>\n</table>"
         },
         "Spun Cloud (Black)": {
             "name": "黑织云 Spun Cloud (Black)",
