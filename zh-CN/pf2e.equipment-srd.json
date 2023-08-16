@@ -4782,7 +4782,7 @@
         },
         "Lantern (Bull's Eye)": {
             "name": "提灯(牛眼) Lantern (Bull's Eye)",
-            "description": "<p>一盏提灯提供明亮光线并且需要1品脱油才能燃烧6小时。一个牛眼提灯在一个60尺的锥形内发出光芒。一个附盖提灯在30尺半径范围内散发光线并配有百叶窗，你可以关闭它以阻挡光线。关闭或打开百叶窗需要一个【交互动作】。</p>"
+            "description": "<p>一盏提灯提供明亮光线并且需要1品脱油才能燃烧6小时。一个牛眼提灯在一个60尺的锥形内发出光芒（且为更远的60尺内提供昏暗光线）。</p>"
         },
         "Lantern (Hooded)": {
             "name": "提灯(附盖) Lantern (Hooded)",
@@ -5602,7 +5602,7 @@
         },
         "Nectar of Purification": {
             "name": "净化之蜜 Nectar of Purification",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p><em>净化之蜜</em>是一种闪闪发光的液体，通常保存在像是用来装酒醋的瓶子里。这种油会对它撒上的任何食物和饮品施展一次1环的 <em>@UUID[Compendium.pf2e.spells-srd.Item.qXTB7Ec9yYh5JPPV]{净化粮食 Purify Food and Drink}</em>。这种花蜜在生效之后就会挥发，食物和饮品的外貌和味道都不会发生改变。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">A</span> 交互</p>\n<p><em>净化之蜜</em>是一种闪闪发光的液体，通常保存在像是用来装酒醋的瓶子里。这种油会对它撒上的任何食物和饮品施展一次1环的 <em>@UUID[Compendium.pf2e.spells-srd.Item.qXTB7Ec9yYh5JPPV]{净化菜肴 Cleanse Cuisine}</em>。这种花蜜在生效之后就会挥发，食物和饮品的外貌和味道都不会发生改变。</p>"
         },
         "Net": {
             "name": "网 Net",
@@ -12848,7 +12848,7 @@
         },
         "Clubhead Poison": {
             "name": "棒头毒 Clubhead Poison",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>这种毒药以用于提炼毒药的真菌菌株命名。幻象会不断侵袭受害者的意识，使他们看到虚假的敌人。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[3d8[poison]]伤害、@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}并无法使用反应动作 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[4d8[poison]]伤害、fl措手不及，无法使用反应动作，@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1} (1轮)</p>\n<p><strong>阶段3</strong> @Damage[5d8[poison]]伤害、措手不及，无法使用反应动作，震慑1 (1轮)</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 交互</p>\n<p>这种毒药以用于提炼毒药的真菌菌株命名。幻象会不断侵袭受害者的意识，使他们看到虚假的敌人。</p>\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:32]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[3d8[poison]]伤害、@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}并无法使用反应动作 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[4d8[poison]]伤害、措手不及，无法使用反应动作，@UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1} (1轮)</p>\n<p><strong>阶段3</strong> @Damage[5d8[poison]]伤害、措手不及，无法使用反应动作，震慑1 (1轮)</p>"
         },
         "Coral Armor": {
             "name": "珊瑚甲 Coral Armor",
@@ -16015,7 +16015,7 @@
             "name": "黄铜矮人 The Brass Dwarf"
         },
         "The Empty Throne": {
-            "description": "<p><strong>牌组</strong> 冠（魅力）</p>\n<p><strong>阵营</strong> 守序善良</p>\n<hr />\n<p><em>空王座</em>代表那些已逝之人所带来的巨大的损失和他们的智慧。只要你绑定<em>空王座</em>，它会授予你在社群和对已逝之人的回忆知识（例如涉及塔尔多历史上的创建者的检定，但涉及其现任女皇便不行）上+2物品加值。如果你至少17级，这会增加到+3物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你用无助和失落感吞没一个60尺的可见目标。目标必须尝试一次意志豁免，DC等同于你的职业DC@Check[type:will|dc:resolve(@actor.attributes.classDC.value)]。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物不能从环境和状态加值中受益，持续1轮。</p>\n<p><strong>失败</strong> 生物不能从环境和状态加值中受益，持续1天，并且目标的盟友在目标15尺内时不能从环境和状态加值中受益。</p>\n<p><strong>大失败</strong> 同失败，但持续时间为1周。</p>",
+            "description": "<p><strong>牌组</strong> 冠（魅力）</p>\n<p><strong>阵营</strong> 守序善良</p>\n<hr />\n<p><em>空王座</em>代表那些已逝之人所带来的巨大的损失和他们的智慧。只要你绑定<em>空王座</em>，它会授予你在社群和对已逝之人的回忆知识（例如涉及塔尔多历史上的创建者的检定，但涉及其现任女皇便不行）上+2物品加值。如果你至少17级，这会增加到+3物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">1</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你用无助和失落感吞没一个60尺的可见目标。目标必须尝试一次@Check[type:will|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免，DC等同于你的职业DC或法术DC。</p>\n<hr />\n<p><strong>大成功</strong> 生物不受影响。</p>\n<p><strong>成功</strong> 生物不能从环境和状态加值中受益，持续1轮。</p>\n<p><strong>失败</strong> 生物不能从环境和状态加值中受益，持续1天，并且目标的盟友在目标15尺内时不能从环境和状态加值中受益。</p>\n<p><strong>大失败</strong> 同失败，但持续时间为1周。</p>",
             "name": "空王座 The Empty Throne"
         },
         "The Rabbit Prince": {
@@ -16100,7 +16100,7 @@
         },
         "The Snakebite": {
             "name": "蛇咬 The Snakebite",
-            "description": "<p><strong>花色</strong> 书（智力）</p>\n<p><strong>阵营</strong> 混乱邪恶</p>\n<hr />\n<p><em>蛇咬</em>象征着毒素，暗杀，与不和。只要你绑定<em>蛇咬</em>，你在用作先攻的欺骗和潜行检定上获得+2物品加值。如果你至少17级，提升为+3物品加值。当你对目标施毒时，你的毒素生效DC对对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的目标有+1物品加值（目标对抗持续效果的后续豁免时DC保留此加值，即便目标不再对你措手不及）。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你对触及范围内的一个生物施放<em>@UUID[Compendium.pf2e.spells-srd.Item.ayRXv0wQH00TTNZe]{紫虫毒刺 Purple Worm Sting}</em>，DC等同于你的职业DC。</p>"
+            "description": "<p><strong>花色</strong> 书（智力）</p>\n<p><strong>阵营</strong> 混乱邪恶</p>\n<hr />\n<p><em>蛇咬</em>象征着毒素，暗杀，与不和。只要你绑定<em>蛇咬</em>，你在用作先攻的欺骗和潜行检定上获得+2物品加值。如果你至少17级，提升为+3物品加值。当你对目标施毒时，你的毒素生效DC对对你@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{措手不及 Off-Guard}的目标有+1物品加值（目标对抗持续效果的后续豁免时DC保留此加值，即便目标不再对你措手不及）。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，交互</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 你对触及范围内的一个生物施放<em>@UUID[Compendium.pf2e.spells-srd.Item.ayRXv0wQH00TTNZe]{紫虫毒刺 Purple Worm Sting}</em>，DC等同于你的职业DC或法术DC(@Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|traits:necromancy,poison,spell])。</p>"
         },
         "The Theater": {
             "name": "剧场 The Theater",
@@ -16108,7 +16108,7 @@
         },
         "The Trumpet": {
             "name": "小号 The Trumpet",
-            "description": "<p><strong>花色</strong> 盾（体质）</p>\n<p><strong>阵营</strong> 守序善良</p>\n<hr />\n<p><em>小号</em>象征着及时的警告。一旦你绑定<em>小号</em>，你（以及只有你）能够在将要被攻击时听到小号声。这使得你在先攻检定时使用基于听觉的察觉检定上获得+2物品加值。如果你至少17级，提升为+3物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 一道激励人心的响声从卡牌中以@Template[type:cone|distance:60]范围发出。区域内的生物受到@Damage[14d6[sonic]]伤害（具有基础强韧豁免，DC等同于你的职业DC）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}一轮（大失败时为1分钟）。如果你至少13级，伤害提升为16d6，15级提升为18d6，17级提升为20d6，19级提升为22d6。</p>"
+            "description": "<p><strong>花色</strong> 盾（体质）</p>\n<p><strong>阵营</strong> 守序善良</p>\n<hr />\n<p><em>小号</em>象征着及时的警告。一旦你绑定<em>小号</em>，你（以及只有你）能够在将要被攻击时听到小号声。这使得你在先攻检定时使用基于听觉的察觉检定上获得+2物品加值。如果你至少17级，提升为+3物品加值。</p>\n<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象</p>\n<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p><strong>效果</strong> 一道激励人心的响声从卡牌中以@Template[type:cone|distance:60]范围发出。区域内的生物受到@Damage[14d6[sonic]]伤害（@Check[type:fortitude|dc:resolve(@actor.system.attributes.classOrSpellDC.value)|basic:true]豁免，DC等同于你的职业DC或法术DC）。豁免失败的生物陷入@UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR]{耳聋 Deafened}一轮（大失败时为1分钟）。如果你至少13级，伤害提升为16d6，15级提升为18d6，17级提升为20d6，19级提升为22d6。</p>"
         },
         "The Vision": {
             "name": "幻景 The Vision",
@@ -16387,7 +16387,7 @@
         },
         "Charm of the Ordinary": {
             "name": "凡俗坠饰 Charm of the Ordinary",
-            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，交互</p>\n<hr />\n<p>这块由厚木板雕成的小型挂坠形如扫帚，木桶，灯架或是其它某种日用物品。当被启动时，这块坠饰变为与原物相同大小的，其代表的物品，而你融入该物品当中，如同<em>@UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]</em>法术的效果，不同的是该物品并不必须是石制的，且其体积也不一定要足够容下你和你的全身行头。当融入该物品时，你可以正常聆听但不能视物；与融身入石不同，你在此期间无法施放法术。此效果持续10分钟或直到你解除该效果，此时你被强制驱逐出外，并且此物品变为一件真正的对应凡物。</p>"
+            "description": "<p><strong>启动</strong> <span class=\"pf2-icon\">2</span> 想象，交互</p>\n<hr />\n<p>这块由厚木板雕成的小型挂坠形如扫帚，木桶，灯架或是其它某种日用物品。当被启动时，这块坠饰变为与原物相同大小的，其代表的物品，而你融入该物品当中，如同<em>@UUID[Compendium.pf2e.spells-srd.Item.vh1RpbWfqdNC4L3P]{化身顽石 One with Stone}</em>法术的效果，不同的是该物品并不必须是石制的，且其体积也不一定要足够容下你和你的全身行头。当融入该物品时，你可以正常聆听但不能视物；与<em>化身顽石</em>不同，你在此期间无法施放法术。此效果持续10分钟或直到你解除该效果，此时你被强制驱逐出外，并且此物品变为一件真正的对应凡物。</p>"
         },
         "Cape of Illumination (Lesser)": {
             "name": "次等启明斗篷 Cape of Illumination (Lesser)",
