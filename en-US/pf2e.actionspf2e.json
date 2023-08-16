@@ -270,7 +270,7 @@
             "name": "Airy Step"
         },
         "Blood Feast": {
-            "description": "<p>Your vampiric animal companion attacks a bleeding foe and drinks its blood. Your companion attempts a Strike against a creature currently taking persistent bleed damage. The Strike deals @Damage[2d8[additional]]. If the Strike hits and deals damage, your vampiric animal companion gains temporary Hit Points equal to half your level that last for up to 1 minute.</p>",
+            "description": "<p>Your vampiric animal companion attacks a bleeding foe and drinks its blood. Your companion attempts a Strike against a creature currently taking persistent bleed damage. The Strike deals 2d8 additional. If the Strike hits and deals damage, your vampiric animal companion gains temporary Hit Points equal to half your level that last for up to 1 minute.</p>",
             "name": "Blood Feast"
         },
         "Invoke Celestial Privilege": {
@@ -290,7 +290,7 @@
             "name": "Banshee Cry"
         },
         "Salt Wound": {
-            "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature that has blood and is not at its maximum Hit Points hits you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You channel salt and brine from your blood into the creature's wounds. The creature must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] using your class DC or spell DC, whichever is higher. On a failure, the creature takes [[/r 1d6[persistent,acid]]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the pain. On a critical failure, it instead takes [[/r 2d6[persistent,acid]]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
+            "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> A creature that has blood and is not at its maximum Hit Points hits you with a melee Strike</p>\n<hr />\n<p><strong>Effect</strong> You channel salt and brine from your blood into the creature's wounds. The creature must attempt a @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)] using your class DC or spell DC, whichever is higher. On a failure, the creature takes @Damage[1d6[persistent,acid]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} by the pain. On a critical failure, it instead takes @Damage[2d6[persistent,acid]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p>",
             "name": "Salt Wound"
         },
         "Venom Draw": {
@@ -918,7 +918,7 @@
             "name": "Dragon Breath"
         },
         "Barbed Quills": {
-            "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are hit with an unarmed strike or a strike with a non-reach melee weapon.</p>\n<hr />\n<p>You break off quills in your attacker's flesh. You deal @Damage[1d8[piercing]] damage to the triggering creature (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher.) On a critical failure, the creature also takes @Damage[1d4[bleed]] as your quills hook into its flesh. At 3rd level, and every 2 levels thereafter, this damage increases by 1d8 and the persistent piercing damage increases by 1.</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{Leveled} piercing damage</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{Leveled} bleed damage</p>\n<hr />\n<p><em>Note: +1 bonus from Bristle is not added automatically</em></p>",
+            "description": "<p><strong>Frequency</strong> once per day</p>\n<p><strong>Trigger</strong> You are hit with an unarmed strike or a strike with a non-reach melee weapon.</p>\n<hr />\n<p>You break off quills in your attacker's flesh. You deal @Damage[ceil(@actor.level/2)d8[piercing]] damage to the triggering creature (@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true] save using your class DC or spell DC, whichever is higher.) On a critical failure, the creature also takes @Damage[(1d4+ceil(@actor.level/2)-1)[bleed]] as your quills hook into its flesh. At 3rd level, and every 2 levels thereafter, this damage increases by 1d8 and the persistent piercing damage increases by 1.</p>",
             "name": "Barbed Quills"
         },
         "Stand": {
@@ -1086,7 +1086,7 @@
             "name": "Change Tradition Focus"
         },
         "Envenom": {
-            "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal [[/r 1[slashing]]] damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage (1 round)</p>",
+            "description": "<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p>Through use of either saliva or blood, you use your innate toxins to apply vishkanyan venom to your weapon or a piece of ammunition. To use your blood, you must be injured, or you can deal @Damage[1[slashing]] damage to yourself as part of the action. The vishkanyan venom remains potent until the end of your next turn, or until you expend it as normal for an injury poison by either hitting a target or critically failing an attack roll.</p>\n<p><strong>Minor Vishkanyan Venom</strong> (injury, poison)</p>\n<hr />\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d4[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[1d4[poison]] damage (1 round)</p>",
             "name": "Envenom"
         },
         "Absorb into the Aegis": {
