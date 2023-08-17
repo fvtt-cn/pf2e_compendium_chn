@@ -351,19 +351,19 @@
         },
         "Effect: Energized Cartridge (Acid)": {
             "name": "效果: 能量弹仓(酸液) Energized Cartridge (Acid)",
-            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为酸液伤害，打击造成酸液伤害而非正常伤害，重击时还造成[[/r 1d6[persistent,acid]]]伤害。</p>"
+            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为酸液伤害，打击造成酸液伤害而非正常伤害，重击时还造成@Damage[1d6[persistent,acid]]伤害。</p>"
         },
         "Effect: Energized Cartridge (Cold)": {
             "name": "效果: 能量弹仓(寒冷) Energized Cartridge (Cold)",
-            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为寒冷伤害，打击造成寒冷伤害而非正常伤害，重击时还造成[[/r 1d6[persistent,cold]]]伤害。</p>"
+            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为寒冷伤害，打击造成寒冷伤害而非正常伤害，重击时还造成@Damage[1d6[persistent,cold]]伤害。</p>"
         },
         "Effect: Energized Cartridge (Electricity)": {
             "name": "效果: 能量弹仓(电击) Energized Cartridge (Electricity)",
-            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为电击伤害，打击造成电击伤害而非正常伤害，重击时还造成[[/r 1d6[persistent,electricity]]]伤害。</p>"
+            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为电击伤害，打击造成电击伤害而非正常伤害，重击时还造成@Damage[1d6[persistent,electricity]]伤害。</p>"
         },
         "Effect: Energized Cartridge (Fire)": {
             "name": "效果: 能量弹仓(火焰) Energized Cartridge (Fire)",
-            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为火焰伤害，打击造成火焰伤害而非正常伤害，重击时还造成[[/r 1d6[persistent,fire]]]伤害。</p>"
+            "description": "<p>下一次打击时，弹药使附着武器中装填的弹药转化为火焰伤害，打击造成火焰伤害而非正常伤害，重击时还造成@Damage[1d6[persistent,fire]]伤害。</p>"
         },
         "Effect: Energizing Rune (Acid)": {
             "name": "效果: 充能符文(酸液) Energizing Rune (Acid)",
@@ -853,7 +853,7 @@
         },
         "Effect: Spiderfoot Brew (Greater)": {
             "name": "效果: 高等蛛脚醇酿 Spiderfoot Brew (Greater)",
-            "description": "<p>当你饮用蛛脚醇酿时，你的手与腿上会长出细小的绒毛，在10分钟内授予你25尺攀爬速度并在用于攀爬的运动检定上获得+3物品加值。</p>"
+            "description": "<p>当你饮用蛛脚醇酿时，你的手与腿上会长出细小的绒毛，在1小时内授予你25尺攀爬速度并在用于攀爬的运动检定上获得+3物品加值。</p>"
         },
         "Effect: Spiderfoot Brew (Lesser)": {
             "name": "效果: 次等蛛脚醇酿 Spiderfoot Brew (Lesser)",
@@ -1010,7 +1010,7 @@
         },
         "Effect: Elixir of Life (Major)": {
             "name": "效果: 上等生命灵药 Elixir of Life (Major)",
-            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]{上等生命灵药 Elixir of Life (Major)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+3物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r 8d6+21[healing]]]{8d6+21点生命值}</li>\n</ul>"
+            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.AmxSqEoFhRLMYd1W]{上等生命灵药 Elixir of Life (Major)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+3物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r (8d6+21)[healing]]]{8d6+21点生命值}</li>\n</ul>"
         },
         "Effect: Energy Mutagen (Major)": {
             "name": "效果: 上等能量突变药剂 Energy Mutagen (Major)",
@@ -1026,7 +1026,7 @@
         },
         "Effect: Elixir of Life (Minor)": {
             "name": "效果: 下等生命灵药 Elixir of Life (Minor)",
-            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]{下等生命灵药 Elixir of Life (Minor)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+1物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复@Damage[1d6[healing]]{1d6点生命值}</li>\n</ul>"
+            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.hDLbR56Id2OtU318]{下等生命灵药 Elixir of Life (Minor)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+1物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r 1d6[healing]]]{1d6点生命值}</li>\n</ul>"
         },
         "Effect: Sixfingers Elixir (Moderate)": {
             "name": "效果: 中等六指灵药 Sixfingers Elixir (Moderate)",
@@ -1042,7 +1042,7 @@
         },
         "Effect: Elixir of Life (Moderate)": {
             "name": "效果: 中等生命灵药 Elixir of Life (Moderate)",
-            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]{中等生命灵药 Elixir of Life (Moderate)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+2物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r 5d6+12[healing]]]{5d6+12点生命值}</li>\n</ul>"
+            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.c21stU5rhN4F2fZl]{中等生命灵药 Elixir of Life (Moderate)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+2物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r (5d6+12)[healing]]]{5d6+12点生命值}</li>\n</ul>"
         },
         "Effect: Stone Body Mutagen (Moderate)": {
             "name": "效果: 中等石躯突变药剂 Stone Body Mutagen (Moderate)",
@@ -1133,7 +1133,7 @@
         },
         "Effect: Elixir of Life (Lesser)": {
             "name": "效果: 次等生命灵药 Elixir of Life (Lesser)",
-            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{次等生命灵药 Elixir of Life (Lesser)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+1物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r 3d6+6[healing]]]{3d6+6点生命值}</li>\n</ul>"
+            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.TZUskLT7yvP7N2co]{次等生命灵药 Elixir of Life (Lesser)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+1物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r (3d6+6)[healing]]]{3d6+6点生命值}</li>\n</ul>"
         },
         "Effect: Stone Body Mutagen (Lesser)": {
             "name": "效果: 次等石躯突变药剂 Stone Body Mutagen (Lesser)",
@@ -1173,7 +1173,7 @@
         },
         "Effect: Elixir of Life (True)": {
             "name": "效果: 真实生命灵药 Elixir of Life (True)",
-            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]{真实生命灵药 Elixir of Life (True)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+4物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r 10d6+27[healing]]]{10d6+27点生命值}</li>\n</ul>"
+            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.qK964kZz1ALcysOa]{真实生命灵药 Elixir of Life (True)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+4物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r (10d6+27)[healing]]]{10d6+27点生命值}</li>\n</ul>"
         },
         "Effect: Holy Steam Ball": {
             "name": "效果: 神圣蒸汽球 Holy Steam Ball",
@@ -1245,7 +1245,7 @@
         },
         "Effect: Elixir of Life (Greater)": {
             "name": "效果: 高等生命灵药 Elixir of Life (Greater)",
-            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{高等生命灵药 Elixir of Life (Greater)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+2物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r 7d6+18[healing]]]{7d6+18点生命值}</li>\n</ul>"
+            "description": "<p>效果来自@UUID[Compendium.pf2e.equipment-srd.Item.mYozcVg9fQY6zO7C]{高等生命灵药 Elixir of Life (Greater)}</p>\n<p>执行效果：</p>\n<ul>\n<li>在对抗疾病和毒素的豁免检定上获得+2物品加值。</li>\n</ul>\n<p>未执行效果:</p>\n<ul>\n<li>恢复[[/r (7d6+18)[healing]]]{7d6+18点生命值}</li>\n</ul>"
         },
         "Effect: Stone Body Mutagen (Greater)": {
             "name": "效果: 高等石躯突变药剂 Stone Body Mutagen (Greater)",
