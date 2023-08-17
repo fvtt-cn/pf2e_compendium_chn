@@ -75,7 +75,7 @@
         },
         "Barbed Quills": {
             "name": "带刺羽尖 Barbed Quills",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成@Damage[1d8[piercing]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Damage[1d4[bleed]]伤害。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>\n<p>[[/r ceil(@actor.level/2)d8[piercing]]]{按等级计算的}穿刺伤害</p>\n<p>[[/r (1d4+ceil(@actor.level/2)-1)[bleed]]]{根据等级计算的伤害}</p>\n<hr />\n<p><em>注意：炸毛的+1加值不会自动添加</em></p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 你被以无武装攻击或是一把非长触及近战武器发起的打击命中</p>\n<hr />\n<p>你将尖刺留在敌人的血肉之中。你对触发反应的生物造成@Damage[ceil(@actor.level/2)d8[piercing]]伤害（使用你职业DC或法术DC中较高者的@Check[type:reflex|dc:resolve(@actor.attributes.classOrSpellDC.value)|basic:true]豁免）。如果豁免大失败，由于你的尖刺深深扎进了血肉之中，该生物还会受到@Damage[(1d4+ceil(@actor.level/2)-1)[bleed]]伤害。在3级及之后的每2级，这一伤害提高1d8，持续穿刺伤害提高1。</p>"
         },
         "Basic Finisher": {
             "name": "基础终结技 Basic Finisher",
@@ -827,7 +827,7 @@
         },
         "Salt Wound": {
             "name": "伤口涂盐 Salt Wound",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个有血液，且生命值不满的生物以近战攻击击中你</p>\n<hr />\n<p><strong>效果</strong> 你将你血液中的盐和盐水导入该生物的伤口。该生物必须尝试进行对抗你的等级DC或法术DC（以较高者为准）的@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免。如果失败，该生物会受到[[/r 1d6[persistent,acid]]]伤害，并因疼痛而受到@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。在大失败的情况下，它将受到[[/r 2d6[persistent,acid]]]伤害，并@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<p><strong>触发</strong> 一个有血液，且生命值不满的生物以近战攻击击中你</p>\n<hr />\n<p><strong>效果</strong> 你将你血液中的盐和盐水导入该生物的伤口。该生物必须尝试进行对抗你的等级DC或法术DC（以较高者为准）的@Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)]豁免。如果失败，该生物会受到@Damage[1d6[persistent,acid]]伤害，并因疼痛而受到@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}。在大失败的情况下，它将受到@Damage[2d6[persistent,acid]]伤害，并@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}。</p>"
         },
         "Scout": {
             "name": "侦察 Scout",
@@ -1363,7 +1363,7 @@
         },
         "Envenom": {
             "name": "下毒 Envenom",
-            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成[[/r 1[slashing]]]伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[1d4[poison]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[1d4[poison]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[1d4[poison]]伤害 (1轮)</p>"
+            "description": "<p><strong>频率</strong> 每天一次</p>\n<hr />\n<p>通过使用唾液或血液，你可以将腹血裔毒液涂到你的武器或弹药上。要使用你的血液，你必须受伤，或者作为行动的一部分对自己造成@Damage[1[slashing]]伤害。在你的下一回合结束之前，或者直到你因为命中或大失败消耗掉毒液，腹血裔毒液会一直保持效力。</p>\n<p><strong>次等腹血裔毒液</strong> (伤口，毒素)</p>\n<hr />\n<p><strong>豁免检定</strong> @Check[type:fortitude|dc:resolve(@actor.attributes.classOrSpellDC.value)|traits:injury,poison,damaging-effect]</p>\n<p><strong>最大持续时间</strong> 6轮</p>\n<p><strong>阶段1</strong> @Damage[1d4[poison]]伤害 (1轮)</p>\n<p><strong>阶段2</strong> @Damage[1d4[poison]]伤害 (1轮)</p>\n<p><strong>阶段3</strong> @Damage[1d4[poison]]伤害 (1轮)</p>"
         },
         "Venom Draw": {
             "name": "涂毒备战 Venom Draw",
@@ -1410,7 +1410,7 @@
             "name": "小试一口 Take a Taste"
         },
         "Blood Feast": {
-            "description": "<p>你的吸血野兽伙伴攻击一个流血敌人并痛饮它的鲜血。你的伙伴尝试打击一个正在承受持续流血伤害的生物。这次打击额外造成[[/r 2d8]]伤害。如果这次打击命中并造成伤害，你的吸血野兽伙伴获得等同于你等级一半数值的临时生命值，持续最多1分钟。</p>",
+            "description": "<p>你的吸血野兽伙伴攻击一个流血敌人并痛饮它的鲜血。你的伙伴尝试打击一个正在承受持续流血伤害的生物。这次打击额外造成2d8额外伤害。如果这次打击命中并造成伤害，你的吸血野兽伙伴获得等同于你等级一半数值的临时生命值，持续最多1分钟。</p>",
             "name": "血宴 Blood Feast"
         },
         "Telekinetic Assault": {
