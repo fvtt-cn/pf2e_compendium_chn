@@ -3,7 +3,7 @@
     "entries": {
         "(Golem) Golem Antimagic": {
             "name": "魔像抗魔 Golem Antimagic",
-            "description": "<p>被伤害：[damageType] ([[/r {0d8}]]{0d8伤害}，区域效果或持续伤害则为[[/r {0d4}]]{0d4伤害}；被治疗：[damageType] (区域效果@Damage[0d4[healing]]生命值)；被减速：[damageType]</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
+            "description": "<p>被伤害：[damageType] ([[/r {0d8}]]{0d8伤害}，区域效果或持续伤害则为[[/r {0d4}]]{0d4伤害}；被治疗：[damageType] (区域效果[[/r 0d4[healing]]]生命值)；被减速：[damageType]</p>\n<hr />\n<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p>\n<ul>\n<li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li>\n<li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li>\n<li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/br 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li>\n<li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li>\n</ul>"
         },
         "(Ghost) Cold Spot": {
             "description": "<p>@Template[type:emanation|distance:5|damaging:yes]{5尺} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{灵光}</p>\n<hr />\n<p>幽灵5尺范围内的空气异常寒冷。如果角色进入幽灵的灵光范围或在其中开始自身回合，那么幽灵每具有3等级对其造成@Damage[1d6[cold]]伤害（@Check[type:fortitude|dc:|basic:true]豁免）。</p>",
@@ -39,7 +39,7 @@
         },
         "(Ghost) Memento Mori": {
             "name": "(幽灵)死亡回放 Memento Mori",
-            "description": "<p>幽灵使得30尺内的一个生物重新体验幽灵的死法。</p>\n<p>目标必须成功通过@Check[type:will|dc:]豁免，否则会看到、感受到幽灵的经历，幽灵每具有2个等级造成[[/r 1d4[persistent,mental]]]伤害。</p>\n<p>直到持续伤害结束之前，所有其他生物对于目标都处于@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
+            "description": "<p>幽灵使得30尺内的一个生物重新体验幽灵的死法。</p>\n<p>目标必须成功通过@Check[type:will|dc:]豁免，否则会看到、感受到幽灵的经历，幽灵每具有2个等级造成@Damage[1d4[persistent,mental]]伤害。</p>\n<p>直到持续伤害结束之前，所有其他生物对于目标都处于@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}状态。</p>"
         },
         "(Ghost) Pyre's Memory": {
             "name": "(幽灵)燃火回忆 Pyre's Memory",
@@ -475,7 +475,7 @@
         },
         "(Ghoul) Consume Flesh": {
             "name": "(食尸鬼)啃食尸体 Consume Flesh",
-            "description": "<p><strong>需求</strong> 食尸鬼与刚死亡1小时内的生物尸体相邻。</p>\n<hr />\n<p><strong>效果</strong> 食尸鬼吞食一大块尸体并恢复@Damage[1d6[healing]]生命值外加每2个食尸鬼具有的等级1d6点生命值。</p>\n<p>食尸鬼从每具尸体上只能获取一次生命值恢复。</p>"
+            "description": "<p><strong>需求</strong> 食尸鬼与刚死亡1小时内的生物尸体相邻。</p>\n<hr />\n<p><strong>效果</strong> 食尸鬼吞食一大块尸体并恢复[[/r 1d6[healing]]]生命值外加每2个食尸鬼具有的等级1d6点生命值。</p>\n<p>食尸鬼从每具尸体上只能获取一次生命值恢复。</p>"
         },
         "(Greater Barghest) Mutation - Vestigial Arm Strike": {
             "name": "(高等犬魔)突变-增生副肢打击 Mutation - Vestigial Arm Strike",
@@ -495,7 +495,7 @@
         },
         "(Ghast) Consume Flesh": {
             "name": "(妖鬼)啃食尸体 Consume Flesh",
-            "description": "<p><strong>需求</strong> 妖鬼与刚死亡1小时内的生物尸体相邻</p>\n<hr />\n<p><strong>效果</strong> 妖鬼吞食一大块尸体并恢复@Damage[2d6[healing]]生命值外加每2个妖鬼具有的等级1d6点生命值。</p>\n<p>妖鬼从每具尸体上只能获取一次生命值恢复。</p>"
+            "description": "<p><strong>需求</strong> 妖鬼与刚死亡1小时内的生物尸体相邻</p>\n<hr />\n<p><strong>效果</strong> 妖鬼吞食一大块尸体并恢复[[/r 2d6[healing]]]生命值外加每2个妖鬼具有的等级1d6点生命值。</p>\n<p>妖鬼从每具尸体上只能获取一次生命值恢复。</p>"
         },
         "(Ghost) Rejuvenation": {
             "name": "(幽灵)复生 Rejuvenation",
@@ -551,7 +551,7 @@
         },
         "(Skeleton) Bone Powder": {
             "name": "(骷髅)击骨扬灰 Bone Powder",
-            "description": "<p>当骷髅受到物理重击伤害时，其中一根骨头碎成细粉。</p>\n<p>@Template[type:emanation|distance:5]范围内需要呼吸的生物受到[[/r 1d6[persistent,poison]]]伤害（骷髅每有6级伤害额外加1d6）。</p>"
+            "description": "<p>当骷髅受到物理重击伤害时，其中一根骨头碎成细粉。</p>\n<p>@Template[type:emanation|distance:5]范围内需要呼吸的生物受到@Damage[1d6[persistent,poison]]伤害（骷髅每有6级伤害额外加1d6）。</p>"
         },
         "(Skeleton) Crumbling Bones": {
             "name": "(骷髅)破碎骨架 Crumbling Bones",
@@ -627,7 +627,7 @@
         },
         "(Zombie) Spitting Zombie": {
             "name": "(丧尸)吐酸丧尸 Spitting Zombie",
-            "description": "<p>丧尸具有吐酸远程打击，射程30尺。此打击的攻击加值等同于丧尸已有的攻击加值中最高的；丧尸每有3级，该打击就造成@Damage[1d12[acid]]伤害（若丧尸等级低于3则造成@Damage[1d6[acid]]伤害）。该打击重击时，目标还会受到每3级丧尸等级[[/r 1d4[persistent,acid]]]伤害。一旦使用，丧尸就需要花费一个动作来咳出足够的酸液才能再次使用此技能。</p>"
+            "description": "<p>丧尸具有吐酸远程打击，射程30尺。此打击的攻击加值等同于丧尸已有的攻击加值中最高的；丧尸每有3级，该打击就造成@Damage[1d12[acid]]伤害（若丧尸等级低于3则造成@Damage[1d6[acid]]伤害）。该打击重击时，目标还会受到每3级丧尸等级@Damage[1d4[persistent,acid]]伤害。一旦使用，丧尸就需要花费一个动作来咳出足够的酸液才能再次使用此技能。</p>"
         },
         "(Zombie) Persistent Limbs": {
             "description": "<p>当丧尸第一次受到近战或远程重击时，它的一条肢体脱离躯干并继续攻击。这条肢体以该丧尸的先攻行动；每轮它能移动至多原丧尸的半速并进行一次打击。这条肢体使用并增加丧尸的多重攻击减值。</p>",
