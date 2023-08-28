@@ -1,5 +1,5 @@
 # Foundry VTT PF2e 合集包中文化
-![downloads](https://img.shields.io/github/downloads/AlphaStarguide/pf2e_compendium_chn/total)
+![downloads](https://img.shields.io/github/downloads/fvtt-cn/pf2e_compendium_chn/total)
 
 本模组为 FVTT 的 Pathfinder 2e 系统合集包提供了中文翻译。
 **需搭配 [PF2 系统汉化](https://github.com/losyky/pf2e_cn)一同使用以达到完整的汉化效果**。
