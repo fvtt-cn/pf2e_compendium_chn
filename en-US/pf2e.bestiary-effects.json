@@ -100,6 +100,10 @@
             "description": "<p>All good-aligned creatures in the aura have fast healing 30 for as long as they remain in range, and they gain a +2 status bonus to attack rolls and damage rolls.</p>",
             "name": "Effect: Bastion Aura"
         },
+        "Effect: Fold Form": {
+            "description": "<p>The kinzaruk swiftly unfolds and refolds its body into a new shape chosen from the options of animal form. This grants it the movement Speeds and Strikes of the chosen form, but none of the other benefits. Its attack bonus is unchanged, and its damage bonus is +3.</p>",
+            "name": "Effect: Fold Form"
+        },
         "Effect: Caustic Drool": {
             "description": "<p>The abyssal warhound's jaws Strike deals an additional 2 points of acid damage on a successful attack, or 4 points on a critical success.</p>",
             "name": "Effect: Caustic Drool"
@@ -140,6 +144,10 @@
             "description": "<p>The creature gains 5 temporary Hit Points.</p>",
             "name": "Effect: Sting of the Lash"
         },
+        "Effect: Beacon of the Rowan Guard": {
+            "description": "<p>While within the emanation, a creature with the elemental trait and either the plant trait or wood trait gains fast healing 10 and a +2 circumstance bonus to all attack and damage rolls.</p>",
+            "name": "Effect: Beacon of the Rowan Guard"
+        },
         "Effect: Graveknight's Curse": {
             "description": "<p>The creature's Speed is reduced by 10.</p>",
             "name": "Effect: Graveknight's Curse"
@@ -161,8 +169,12 @@
             "name": "Effect: Harrowing Misfortune"
         },
         "Effect: Volcanic Purge": {
-            "description": "<p>The target takes [[/r 4d6[persistent,fire]]] damage, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>",
+            "description": "<p>The target takes @Damage[4d6[persistent,fire]] damage, and as long as it has this persistent fire damage, it also takes a -10-foot status penalty to its Speeds.</p>",
             "name": "Effect: Volcanic Purge"
+        },
+        "Effect: Viscous Breath": {
+            "description": "<p>Creatures in the aura take a –2 status penalty to any non-magical physical attacks they attempt.</p>",
+            "name": "Effect: Viscous Breath"
         },
         "Effect: Focused Assault": {
             "description": "<p>The creature deals additional damage based on the amount of longswords it wields.</p>",
@@ -379,7 +391,7 @@
             "name": "Effect: Pulse of Rage"
         },
         "Effect: Bully the Departed": {
-            "description": "<p>The creature gains regeneration 15 (deactivated by force or good), and deals an extra [[/r 1d8[evil]]] damage on its Strikes.</p>",
+            "description": "<p>The creature gains regeneration 15 (deactivated by force or good), and deals an extra @Damage[1d8[evil]] damage on its Strikes.</p>",
             "name": "Effect: Bully the Departed"
         },
         "Effect: Impaling Chain": {
@@ -429,7 +441,7 @@
             "name": "Effect: Song of the Swamp"
         },
         "Effect: Breach the Abyss - Fire": {
-            "description": "<p>The creature deals an extra [[/r 2d6[fire]]] damage with its weapon.</p>",
+            "description": "<p>The creature deals an extra @Damage[2d6[fire]] damage with its weapon.</p>",
             "name": "Effect: Breach the Abyss - Fire"
         },
         "Effect: Hurtful Critique": {
@@ -508,6 +520,10 @@
             "description": "<p>The creature takes a status penalty to its Speeds based on its save result.</p>",
             "name": "Effect: Share Pain"
         },
+        "Effect: Roast": {
+            "description": "<p>Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve.</p>",
+            "name": "Effect: Roast"
+        },
         "Effect: Stoke the Fervent - High Tormentor": {
             "description": "<p>Each ally that hears the call gains a +4 status bonus to attack rolls and damage rolls, a +2 status bonus to saving throws, and takes a -2 status penalty to AC. Affected allies must use at least one of their actions to Strike each round, if they are able (even if it means attacking an ally, object, or thin air).</p>\n<p>The effect duration has been set to the average duration for [[/br 2d4 #rounds]]{2d4 rounds}. Set the duration to the correct value when the effect is added.</p>",
             "name": "Effect: Stoke the Fervent - High Tormentor"
@@ -545,7 +561,7 @@
             "name": "Effect: Transfer Protection"
         },
         "Effect: Necrotic Field": {
-            "description": "<p>Undead within the aura deal an additional [[/r 1d6[negative]]] damage with their natural attacks.</p>",
+            "description": "<p>Undead within the aura deal an additional @Damage[1d6[negative]] damage with their natural attacks.</p>",
             "name": "Effect: Necrotic Field"
         },
         "Effect: Phalanx Fighter": {
@@ -591,6 +607,10 @@
         "Effect: Blood Fury": {
             "description": "<p>The creature gains a +1 status bonus to attack rolls.</p>",
             "name": "Effect: Blood Fury"
+        },
+        "Effect: Dust Eternal": {
+            "description": "<p>Everything in the aura is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed}.</p>",
+            "name": "Effect: Dust Eternal"
         },
         "Effect: Lost Plates": {
             "description": "<p>The creature takes a status penalty to AC equal to the number of lost plates.</p>",
@@ -962,11 +982,11 @@
             "name": "Effect: Hydra Heads"
         },
         "Effect: Breach the Abyss - Acid": {
-            "description": "<p>The creature deals an extra [[/r 2d6[acid]]] damage with its weapon.</p>",
+            "description": "<p>The creature deals an extra @Damage[2d6[acid]] damage with its weapon.</p>",
             "name": "Effect: Breach the Abyss - Acid"
         },
         "Effect: Call to Blood": {
-            "description": "<p>The creature gains a +2 status bonus to attack rolls against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} creatures.</p>",
+            "description": "<p>The creature gains a +2 status bonus to attack rolls against @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} creatures.</p>",
             "name": "Effect: Call to Blood"
         },
         "Effect: Vulnerable to Curved Space": {
@@ -990,7 +1010,7 @@
             "name": "Effect: Curse of Fire"
         },
         "Effect: Breach the Abyss - Cold": {
-            "description": "<p>The creature deals an extra [[/r 2d6[cold]]] damage with its weapon.</p>",
+            "description": "<p>The creature deals an extra @Damage[2d6[cold]] damage with its weapon.</p>",
             "name": "Effect: Breach the Abyss - Cold"
         },
         "Effect: Rune of Destruction (Longspear)": {
@@ -998,7 +1018,7 @@
             "name": "Effect: Rune of Destruction (Longspear)"
         },
         "Effect: Breach the Abyss - Electricity": {
-            "description": "<p>The creature deals an extra [[/r 2d6[electricity]]] damage with its weapon.</p>",
+            "description": "<p>The creature deals an extra @Damage[2d6[electricity]] damage with its weapon.</p>",
             "name": "Effect: Breach the Abyss - Electricity"
         },
         "Effect: Gird in Prayer": {
@@ -1014,11 +1034,14 @@
             "name": "Effect: Mortal Reflection"
         },
         "Effect: Breach the Abyss - Negative": {
-            "description": "<p>The creature deals an extra [[/r 2d6[negative]]] damage with its weapon.</p>",
+            "description": "<p>The creature deals an extra @Damage[2d6[negative]] damage with its weapon.</p>",
             "name": "Effect: Breach the Abyss - Negative"
         },
         "Effect: Scraping Clamor": {
             "name": "Effect: Scraping Clamor"
+        },
+        "Effect: Psychic Daze": {
+            "name": "Effect: Psychic Daze"
         },
         "Effect: Bosun's Command - Attack Bonus": {
             "description": "<p>The creature gains a +2 status bonus to attack rolls.</p>",
@@ -1029,7 +1052,7 @@
             "name": "Effect: Ancestral Journey"
         },
         "Effect: Fiddle": {
-            "description": "<p>A catchy fiddling tune compels the creature to dance about.</p>\n<p><strong>Failure</strong> Flat-footed and -10-foot status penalty to Speeds<br /><strong>Critical Failure</strong> As failure, and also slowed 1</p>",
+            "description": "<p>A catchy fiddling tune compels the creature to dance about.</p>\n<p><strong>Failure</strong> Off-guard and -10-foot status penalty to Speeds<br /><strong>Critical Failure</strong> As failure, and also slowed 1</p>",
             "name": "Effect: Fiddle"
         },
         "Effect: Drink Emotions": {
@@ -1057,12 +1080,12 @@
             "name": "Effect: Field of Undeath"
         },
         "Effect: Haywire": {
-            "description": "<p>The creature takes a -1 circumstance penalty to Strikes but deals an additional [[/r 1d6[bludgeoning]]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}.</p>",
+            "description": "<p>The creature takes a -1 circumstance penalty to Strikes but deals an additional @Damage[1d6[bludgeoning]] damage plus @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.BCLvAx4Pz4MLa2pu]{Knockdown}.</p>",
             "name": "Effect: Haywire"
         },
-        "Effect: Replenishment of War": {
+        "Effect: Replenishment of War (Endlo)": {
             "description": "<p>When Endlo damages a creature with a greatsword Strike, he gains 6 temporary Hit Points until the start of his next turn. If the Strike was a critical hit, he instead gains 12 temporary Hit Points.</p>",
-            "name": "Effect: Replenishment of War"
+            "name": "Effect: Replenishment of War (Endlo)"
         },
         "Effect: Motivating Assault": {
             "description": "<p>You gain a +1 status bonus to attack rolls, damage rolls, and saves against fear effects.</p>",
@@ -1159,6 +1182,10 @@
             "description": "<p>The hall fills with violet fog that imposes a -2 circumstance penalty to Perception checks to all creatures within it and exposes anyone who enters it to phantasmagoric fog.</p>",
             "name": "Effect: Phantasmagoric Fog"
         },
+        "Effect: Downcast": {
+            "description": "<p>The creature takes a –1 status penalty to attack rolls</p>",
+            "name": "Effect: Downcast"
+        },
         "Effect: Vengeful Fibers": {
             "description": "<p>The target takes a –10-foot circumstance penalty to Speed</p>",
             "name": "Effect: Vengeful Fibers"
@@ -1168,7 +1195,7 @@
             "name": "Effect: Share Defenses"
         },
         "Effect: Cat Sith's Mark": {
-            "description": "<p>Whenever the cursed creature rolls a critical success on a skill check or saving throw, it gets a success instead. Each day, a cursed creature can attempt a @Check[type:flat|dc:10|trait:curse,misfortune|name:Break Cat Sith's Mark] check to break the curse.</p>",
+            "description": "<p>Whenever the cursed creature rolls a critical success on a skill check or saving throw, it gets a success instead. Each day, a cursed creature can attempt a @Check[type:flat|dc:10|traits:curse,misfortune|name:Break Cat Sith's Mark] check to break the curse.</p>",
             "name": "Effect: Cat Sith's Mark"
         },
         "Effect: Sixfold Flurry": {

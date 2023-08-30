@@ -97,12 +97,12 @@
             "description": "<p>The creature takes a -15-foot status penalty to its Speeds until the end of its next turn.</p>",
             "name": "Effect: Frost Vial (Major)"
         },
-        "Effect: Spiderfoot Brew (Major)": {
+        "Effect: Spiderfoot Brew (Greater)": {
             "description": "<p>When you drink a spiderfoot brew, tiny clinging hairs grow on your hands and feet, granting you a climb Speed of 25 feet and a +3 item bonus to athletics checks made to climb for 1 hour.</p>",
-            "name": "Effect: Spiderfoot Brew (Major)"
+            "name": "Effect: Spiderfoot Brew (Greater)"
         },
         "Effect: Dragon Turtle Scale": {
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.GnXKCkgZQG0UmuHz]{Dragon Turtle Scale}</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.GnXKCkgZQG0UmuHz]{Dragon Turtle Scale}</p>\n<p>When you activate the scale, for 1 minute you gain a swim Speed equal to half your land Speed.</p>",
             "name": "Effect: Dragon Turtle Scale"
         },
         "Effect: Nosoi Charm (Diplomacy)": {
@@ -160,6 +160,10 @@
         "Effect: Stalk Goggles (Major)": {
             "description": "<p>You gain a +2 item bonus to Perception checks involving sight, low-light vision, and can't be flanked.</p>",
             "name": "Effect: Stalk Goggles (Major)"
+        },
+        "Effect: Bloodseeker Beak": {
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.k6D64EAjcKMf8NZB]{Bloodseeker Beak}</p>\n<p>When you activate the beak, you deal an extra 1d4 precision damage on your damage roll.</p>",
+            "name": "Effect: Bloodseeker Beak"
         },
         "Effect: Serene Mutagen (Lesser)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.bOPQDM54W8ZDoULY]{Serene Mutagen (Lesser)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+1 item bonus to Will saves</li>\n<li>+2 item bonus to Will saves against mental effects</li>\n<li>+1 item bonus to Perception checks</li>\n<li>+1 item bonus to Medicine, Nature, Religion and Survival checks</li>\n<li>-1 penalty to attack rolls</li>\n</ul>\n<p>Unimplemented effects:</p>\n<ul>\n<li>-1 penalty to save DCs of offensive spells</li>\n<li>-1 penalty per damage die to all weapon, unarmed attack and spell damage rolls</li>\n</ul>",
@@ -329,7 +333,7 @@
             "name": "Effect: Darkvision Elixir (Moderate)"
         },
         "Effect: Clockwork Goggles (Major)": {
-            "description": "<p>You gain low-light vision, darkvision, and <em>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See Invisibility}</em> for 10 minutes.</p>",
+            "description": "<p>You gain low-light vision, darkvision, and <em>@UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</em> for 10 minutes.</p>",
             "name": "Effect: Clockwork Goggles (Major)"
         },
         "Effect: Numbing Tonic (True)": {
@@ -384,6 +388,10 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.VmmlkU5qJHcTunXV]{Five-Feather Wreath (Major)}</p>\n<p>You gain a +2 item bonus to Acrobatics checks and resistance 10 to falling damage.</p>",
             "name": "Effect: Five-Feather Wreath - Armor (Major)"
         },
+        "Effect: Storm Breath": {
+            "description": "<p>You gain resistance 5 to both electricity and sonic.</p>",
+            "name": "Effect: Storm Breath"
+        },
         "Effect: Jolt Coil - Weapon (Major)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.TucjFO5NQHvUUc7a]{Jolt Coil (Major)}</p>\n<p>After you cast an electricity spell by activating the <em>coil</em>, your Strikes with the weapon deal an additional 1d8 electricity damage until the end of your next turn.</p>",
             "name": "Effect: Jolt Coil - Weapon (Major)"
@@ -417,7 +425,7 @@
             "name": "Effect: Tanglefoot Bag (Greater)"
         },
         "Effect: Bronze Bull Pendant": {
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.nXStoLxPrrP2b6WB]{Bronze Bull Pendant}</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.nXStoLxPrrP2b6WB]{Bronze Bull Pendant}</p>\n<p>When you activate the pendant, you gain a +2 status bonus to the Athletics check to Shove, and if you roll a critical failure on the check, you get a failure instead.</p>",
             "name": "Effect: Bronze Bull Pendant"
         },
         "Effect: Suit of Armoire Frustration": {
@@ -525,7 +533,7 @@
             "name": "Effect: Immortal Bastion"
         },
         "Effect: Energized Cartridge (Electricity)": {
-            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into electricity, dealing electricity damage instead of its usual damage as well as [[/r 1d6[persistent,electricity]]] damage on a critical hit.</p>",
+            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into electricity, dealing electricity damage instead of its usual damage as well as @Damage[1d6[persistent,electricity]] damage on a critical hit.</p>",
             "name": "Effect: Energized Cartridge (Electricity)"
         },
         "Effect: Elixir of Life (Lesser)": {
@@ -537,7 +545,7 @@
             "name": "Effect: Glaive of the Artist"
         },
         "Effect: Beastmaster's Sigil - Ranged Weapon": {
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.JWFR4O5V06UUvx6W]{Beastmaster's Sigil}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes [[/r 1d6[bleed]]]{1d6 persistent bleed} damage.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.JWFR4O5V06UUvx6W]{Beastmaster's Sigil}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes @Damage[1d6[bleed]]{1d6 persistent bleed} damage.</p>",
             "name": "Effect: Beastmaster's Sigil - Ranged Weapon"
         },
         "Effect: South Wind's Scorch Song (Speed Boost)": {
@@ -569,7 +577,7 @@
             "name": "Effect: Protective Barrier"
         },
         "Effect: Azarim": {
-            "description": "<p><em>Azarim</em> gains the effects of an anarchic weapon rune for 1 minute. When wielded by a character who's at least 11th level, <em>Azarim</em> becomes a +2 striking anarchic shifting rapier, and instead this activation can be applied to another weapon that's in physical contact with <em>Azarim</em>.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.KoyxJDibsKJh24am]{Azarim}</p>\n<p><em>Azarim</em> gains the effects of an <em>anarchic</em> weapon rune for 1 minute. When wielded by a character who's at least 11th level, <em>Azarim</em> becomes a <em>+2 striking anarchic shifting rapier</em>, and instead this activation can be applied to another weapon that's in physical contact with <em>Azarim</em>.</p>",
             "name": "Effect: Azarim"
         },
         "Effect: Dragon's Blood Pudding (Greater)": {
@@ -612,6 +620,10 @@
             "description": "<p>You position your weapon defensively, gaining a +1 circumstance bonus to AC until the start of your next turn.</p>",
             "name": "Effect: Parry"
         },
+        "Effect: Nimbus Breath": {
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.NLUsrnvQsYK0CYp3]{Nimbus Breath}</p>\n<p>You gain resistance 5 to electricity and gain a fly speed equal to your land speed or 20, whichever is higher.</p>",
+            "name": "Effect: Nimbus Breath"
+        },
         "Effect: Polished Demon Horn - Armor": {
             "description": "<p>You gain resistance 2 to evil and chaotic.</p>",
             "name": "Effect: Polished Demon Horn - Armor"
@@ -623,6 +635,10 @@
         "Effect: Juggernaut Mutagen (Moderate)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.mj9i9GeQTADByNPZ]{Juggernaut Mutagen (Moderate)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+2 item bonus to Fortitude saves</li>\n<li>Gain 10 temporary Hit Points</li>\n<li>-2 penalty to Will saves</li>\n<li>-2 penalty to Perception checks</li>\n<li>-2 penalty to initiative rolls</li>\n</ul>\n<p>Unimplemented effects:</p>\n<ul>\n<li>Whenever you are at maximum Hit Points for at least 1 full minute, you regain the temporary Hit Points.</li>\n</ul>",
             "name": "Effect: Juggernaut Mutagen (Moderate)"
+        },
+        "Effect: Spun Cloud (Blue)": {
+            "description": "<p>Creatures gain resistance 5 to electricity while in the cloud.</p>",
+            "name": "Effect: Spun Cloud (Blue)"
         },
         "Effect: Taljjae's Mask (The Hero)": {
             "description": "<p>The Hero grants its wearer a +3 status bonus to attack rolls with bows for 1 minute.</p>",
@@ -726,6 +742,10 @@
         "Effect: Antiplague (Moderate)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.biRbqKo2C97XLfQ0]{Antiplague (Moderate)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+3 item bonus to Fortitude saves against diseases</li>\n</ul>",
             "name": "Effect: Antiplague (Moderate)"
+        },
+        "Effect: Sairazul Blue": {
+            "description": "<p>You gain resistance 5 to poison damage and void damage.</p>",
+            "name": "Effect: Sairazul Blue"
         },
         "Effect: Choker-Arm Mutagen (Greater)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.RsAoEbp28Za4hlLH]{Choker-Arm Mutagen (Greater)}</p>\n<p><strong>Implemented Effects</strong></p>\n<ul>\n<li>+10 foot reach</li>\n<li>+3 item bonus to Acrobatics checks to @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escape}, @UUID[Compendium.pf2e.actionspf2e.Item.kMcV8e5EZUxa6evt]{Squeeze}, and @UUID[Compendium.pf2e.actionspf2e.Item.21WIfSu7Xd7uKqV8]{Tumble Through}</li>\n<li>-1 penalty to Athletics checks, Stealth checks, Thievery checks, and attack rolls</li>\n<li>-1 penalty per damage die to all weapon and unarmed attack damage.</li>\n</ul>",
@@ -874,6 +894,10 @@
             "description": "<p>For 30 minutes after the meal, you gain a +3 item bonus to your Deception checks to Impersonate, as well as to Lie to convince others that you possess knowledge about the type of item that the cake resembles.</p>",
             "name": "Effect: Impossible Cake (Greater)"
         },
+        "Effect: Sharkskin Robe": {
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.qFgIZQhyn5JOYkKr]{Sharkskin Robe}</p>\n<p>For 1 minute, any time you make a Strike, your weapon or unarmed attack gains the benefit of the <em>underwater</em> weapon property rune.</p>",
+            "name": "Effect: Sharkskin Robe"
+        },
         "Effect: Feyfoul (Greater)": {
             "description": "<p>The wearer gains a +3 item bonus to Will saving throws against mental effects generated by fey creatures.</p>",
             "name": "Effect: Feyfoul (Greater)"
@@ -935,7 +959,7 @@
             "name": "Effect: Rhino Shot"
         },
         "Effect: Energized Cartridge (Fire)": {
-            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into fire, dealing fire damage instead of its usual damage as well as [[/r 1d6[persistent,fire]]] damage on a critical hit.</p>",
+            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into fire, dealing fire damage instead of its usual damage as well as @Damage[1d6[persistent,fire]] damage on a critical hit.</p>",
             "name": "Effect: Energized Cartridge (Fire)"
         },
         "Effect: Potion of Acid Resistance (Moderate)": {
@@ -1042,6 +1066,10 @@
             "description": "<p>For 1 minute after you deal damage to a creature with an activated exsanguinating ammunition that creature gains weakness 5 to persistent bleed damage. In addition, the DC of any flat checks to end persistent bleed damage increases from 15 to 17 (from 10 to 12 when receiving particularly effective assistance) for the duration.</p>",
             "name": "Effect: Exsanguinating Ammunition (Major)"
         },
+        "Effect: Blight Breath": {
+            "description": "<p>You gain resistance 10 to poison.</p>",
+            "name": "Effect: Blight Breath"
+        },
         "Effect: Breastplate of the Mountain": {
             "name": "Effect: Breastplate of the Mountain"
         },
@@ -1054,7 +1082,7 @@
             "name": "Effect: Skyrider Sword"
         },
         "Effect: Whispering Staff (Enemy)": {
-            "description": "<p>Through the staff's strange whispering, you gain a glimpse into the mind and desires of one creature you can see within 30 feet. Until the end of your next turn, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Flat-Footed} to you and takes a –2 circumstance penalty to saving throws against your spells.</p>",
+            "description": "<p>Through the staff's strange whispering, you gain a glimpse into the mind and desires of one creature you can see within 30 feet. Until the end of your next turn, that creature is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to you and takes a –2 circumstance penalty to saving throws against your spells.</p>",
             "name": "Effect: Whispering Staff (Enemy)"
         },
         "Effect: Pickled Demon Tongue - Weapon (Greater)": {
@@ -1109,6 +1137,10 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.WXnGIl4d62detRlf]{Cold Iron Blanch (Greater)}</p>",
             "name": "Effect: Cold Iron Blanch (Greater)"
         },
+        "Effect: Strum of Thunder": {
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.PGBAg9ywfdlJCoCl]{Resonant Guitar}</p>\n<p>This item gains the <em>thundering</em> rune for 1 hour.</p>",
+            "name": "Effect: Strum of Thunder"
+        },
         "Effect: Impossible Cake (Major)": {
             "description": "<p>For 1 hour after the meal, you gain a +4 item bonus to your Deception checks to Impersonate, as well as to Lie to convince others that you possess knowledge about the type of item that the cake resembles.</p>",
             "name": "Effect: Impossible Cake (Major)"
@@ -1116,6 +1148,10 @@
         "Effect: Blast Boots (Major)": {
             "description": "<p>For 1 minute, the <em>major blast boots</em> remain active, allowing you to clumsily fly through the air for the duration. You gain a 30-foot Fly speed for the duration, but any time you @UUID[Compendium.pf2e.actionspf2e.Item.cS9nfDRGD83bNU1p]{Fly}, you are @UUID[Compendium.pf2e.conditionitems.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of your next turn.</p>",
             "name": "Effect: Blast Boots (Major)"
+        },
+        "Effect: Guardian Staff": {
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.UQ0h9IVtHla8gWT7]{Guardian Staff}, @UUID[Compendium.pf2e.equipment-srd.Item.jIX2T21YvEsRaaqp]{Guardian Staff (Greater)}, @UUID[Compendium.pf2e.equipment-srd.Item.REvrniIEqBykkWyI]{Guardian Staff (Major)}</p>\n<p>A ruby-colored plane of force appears like a shield near the ally, granting them a +1 circumstance bonus to AC until the start of your next turn.</p>",
+            "name": "Effect: Guardian Staff"
         },
         "Effect: Potion of Sonic Resistance (Moderate)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.kbjspHV7kwKKULmd]{Potion of Sonic Resistance (Moderate)}</p>\n<p>Drinking this thick, fortifying potion grants resistance 10 against sonic damage for 1 hour.</p>",
@@ -1176,6 +1212,10 @@
         "Effect: Phantasmal Doorknob - Armor": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.IISieImYvSQ8AqmC]{Phantasmal Doorknob}</p>\n<p>You gain a +1 item bonus to Thievery checks to Pick a Lock.</p>",
             "name": "Effect: Phantasmal Doorknob - Armor"
+        },
+        "Effect: Voice of Oceans": {
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.cvO0dLw2B1Zno8rv]{Conch of Otherworldly Seas}</p>\n<p>You hold the horn to your ear and can understand and speak Thalassic as long as it remains there.</p>",
+            "name": "Effect: Voice of Oceans"
         },
         "Effect: Bracers of Missile Deflection": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.eurAnvH8bK0ZctOR]{Bracers of Missile Deflection}</p>",
@@ -1308,6 +1348,10 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.FMtUVzTDiTbxXMN9]{Flaming Star (Greater)}</p>\n<p>You gain resistance 5 to fire.</p>",
             "name": "Effect: Flaming Star - Armor (Greater)"
         },
+        "Effect: Frost Breath": {
+            "description": "<p>You gain resistance 5 to cold.</p>",
+            "name": "Effect: Frost Breath"
+        },
         "Effect: Potency Crystal": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.ZCsksGf6NPUKz2Uw]{Potency Crystal}</p>\n<p>The weapon becomes a <em>+1 striking weapon</em> for the rest of the turn, gaining a +1 item bonus to the attack roll and increasing the damage on a hit to two weapon damage dice.</p>",
             "name": "Effect: Potency Crystal"
@@ -1317,7 +1361,7 @@
             "name": "Effect: Energizing Rune"
         },
         "Effect: Heartripper Blade": {
-            "description": "<p>Strikes with the <em>heartripper blade</em> inflict an additional [[/r 1d6[negative]]] damage to living creatures.</p>",
+            "description": "<p>Strikes with the <em>heartripper blade</em> inflict an additional @Damage[1d6[negative]] damage to living creatures.</p>",
             "name": "Effect: Heartripper Blade"
         },
         "Effect: Beastmaster's Sigil - Melee Weapon": {
@@ -1409,7 +1453,7 @@
             "name": "Effect: Enhanced Hearing Aids"
         },
         "Effect: Beastmaster's Sigil - Ranged Weapon (Major)": {
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.ZxOoQ4cHfJXXbP9F]{Beastmaster's Sigil (Major)}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes [[/r 3d6[bleed]]]{3d6 persistent bleed} damage.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.ZxOoQ4cHfJXXbP9F]{Beastmaster's Sigil (Major)}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes @Damage[3d6[bleed]]{3d6 persistent bleed} damage.</p>",
             "name": "Effect: Beastmaster's Sigil - Ranged Weapon (Major)"
         },
         "Effect: Deadweight Mutagen (Lesser)": {
@@ -1445,7 +1489,7 @@
             "name": "Effect: Sixfingers Elixir (Greater)"
         },
         "Effect: Energized Cartridge (Cold)": {
-            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into ice, dealing cold damage instead of its usual damage as well as [[/r 1d6[persistent,cold]]] damage on a critical hit.</p>",
+            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into ice, dealing cold damage instead of its usual damage as well as @Damage[1d6[persistent,cold]] damage on a critical hit.</p>",
             "name": "Effect: Energized Cartridge (Cold)"
         },
         "Effect: Star of Cynosure": {
@@ -1465,7 +1509,7 @@
             "name": "Effect: Applereed Mutagen (Greater)"
         },
         "Effect: Beastmaster's Sigil - Ranged Weapon (Greater)": {
-            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.fWgH0JxNCOpI7SVr]{Beastmaster's Sigil (Greater)}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes [[/r 2d6[bleed]]]{2d6 persistent bleed} damage.</p>",
+            "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.fWgH0JxNCOpI7SVr]{Beastmaster's Sigil (Greater)}</p>\n<p>If you critically hit with the affixed weapon, and the target is adjacent to a creature summoned with the <em>sigil</em>, the target takes @Damage[2d6[bleed]]{2d6 persistent bleed} damage.</p>",
             "name": "Effect: Beastmaster's Sigil - Ranged Weapon (Greater)"
         },
         "Effect: Ebon Fulcrum Lens (2 Action)": {
@@ -1485,7 +1529,7 @@
             "name": "Effect: Clandestine Cloak"
         },
         "Effect: Storm Chair": {
-            "description": "<p>For 1 minute, you gain a fly Speed equal to your Speed, and adjacent creatures that hit you with a melee attack, as well as creatures that touch or hit you with an unarmed attack, take [[/r 2d6[electricity]]] damage each time. As normal, this applies to creatures who choose to touch you, not when you touch or attack another creature.</p>",
+            "description": "<p>For 1 minute, you gain a fly Speed equal to your Speed, and adjacent creatures that hit you with a melee attack, as well as creatures that touch or hit you with an unarmed attack, take @Damage[2d6[electricity]] damage each time. As normal, this applies to creatures who choose to touch you, not when you touch or attack another creature.</p>",
             "name": "Effect: Storm Chair"
         },
         "Effect: Red-Rib Gill Mask (Lesser)": {
@@ -1577,7 +1621,7 @@
             "name": "Effect: Whispering Staff (Ally)"
         },
         "Effect: Energized Cartridge (Acid)": {
-            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into acid, dealing acid damage instead of its usual damage as well as [[/r 1d6[persistent,acid]]] damage on a critical hit.</p>",
+            "description": "<p>For the next strike, the ammunition fired from the affixed weapon to transforms into acid, dealing acid damage instead of its usual damage as well as @Damage[1d6[persistent,acid]] damage on a critical hit.</p>",
             "name": "Effect: Energized Cartridge (Acid)"
         },
         "Effect: Blaze": {
@@ -1707,6 +1751,10 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.oCuwJ9IUDAuzsUwa]{Bravo's Brew (Moderate)}</p>\n<p>Implemented effects:</p>\n<ul>\n<li>+2 item bonus to Will saves</li>\n<li>+3 item bonus to Will saves against fear</li>\n</ul>",
             "name": "Effect: Bravo's Brew (Moderate)"
         },
+        "Effect: Thawing Candle": {
+            "description": "<p>Creatures in the area gain cold resistance 10.</p>",
+            "name": "Effect: Thawing Candle"
+        },
         "Effect: Goggles of Night (Major)": {
             "description": "<p>Granted by activating @UUID[Compendium.pf2e.equipment-srd.Item.rXXNw6dwVn96giDi]{Goggles of Night (Major)}</p>\n<hr />\n<p>You gain greater darkvision, which lasts until you rotate the lenses back or the item is no longer invested by you, whicever comes first.</p>",
             "name": "Effect: Goggles of Night (Major)"
@@ -1787,9 +1835,9 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.auEm7vmpG9V8xpAJ]{Jolt Coil (Greater)}</p>\n<p>You gain resistance 3 to electricity.</p>",
             "name": "Effect: Jolt Coil - Armor (Greater)"
         },
-        "Effect: Spiderfoot Brew (Greater)": {
+        "Effect: Spiderfoot Brew (Moderate)": {
             "description": "<p>When you drink a spiderfoot brew, tiny clinging hairs grow on your hands and feet, granting you a climb Speed of 20 feet and a +2 item bonus to athletics checks made to climb for 10 minutes.</p>",
-            "name": "Effect: Spiderfoot Brew (Greater)"
+            "name": "Effect: Spiderfoot Brew (Moderate)"
         },
         "Effect: Fire and Iceberg (Major)": {
             "description": "<p>You gain resistance 15 to fire and cold for 10 minutes.</p>",
@@ -1831,7 +1879,7 @@
             "name": "Effect: Disarm (Success)"
         },
         "Effect: Phoenix Flask": {
-            "description": "<p>For 1 minute, you gain a Fly speed of 40 feet. The first time each round that you Fly (including to hover in place), you shed burning feathers that deal [[/r 3d4[fire]]] damage to all creatures in a @Template[type:emanation|distance:10] at the end of your movement (@Check[type:reflex|dc:29|basic:true|name:Phoenix Flask Fire Feathers|traits:consumable,evocation,fire,magical,potion|showDC:all] save).</p>",
+            "description": "<p>For 1 minute, you gain a Fly speed of 40 feet. The first time each round that you Fly (including to hover in place), you shed burning feathers that deal @Damage[3d4[fire]] damage to all creatures in a @Template[type:emanation|distance:10] at the end of your movement (@Check[type:reflex|dc:29|basic:true|name:Phoenix Flask Fire Feathers|traits:consumable,evocation,fire,magical,potion|showDC:all] save).</p>",
             "name": "Effect: Phoenix Flask"
         },
         "Effect: Elixir of Life (Greater)": {
@@ -1870,6 +1918,10 @@
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.v6LpzpIA0BmKvEtK]{Spellguard Blade}</p>",
             "name": "Effect: Spellguard Blade"
         },
+        "Effect: Brass Dwarf Weakness": {
+            "description": "<p>You gain weakness equal to half your level to the previous energy type of <em>The Brass Dwarf</em>.</p>",
+            "name": "Effect: Brass Dwarf Weakness"
+        },
         "Effect: Cognitive Mutagen (Moderate)": {
             "description": "<p>Granted by @UUID[Compendium.pf2e.equipment-srd.Item.qpzL9UnTi4cDhy6J]{Cognitive Mutagen (Moderate)}</p>\n<p><strong>Implemented effects</strong></p>\n<ul>\n<li>+2 item bonus to Arcana, Crafting, Lore, Occultism and Society checks</li>\n<li>+2 item bonus to all Recall Knowledge checks</li>\n<li>-2 penalty to to Athletics and Acrobatics checks</li>\n<li>-2 penalty to weapon and unarmed attacks</li>\n<li>Treat Recall Knowledge critical failures as failures</li>\n<li>You can carry 2 less Bulk than normal before becoming encumbered</li>\n<li>The maximum Bulk you can carry is reduced by 4</li>\n</ul>",
             "name": "Effect: Cognitive Mutagen (Moderate)"
@@ -1879,7 +1931,7 @@
             "name": "Effect: Grit (Stage 3)"
         },
         "Effect: Oath of the Devoted": {
-            "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 status bonus to Will saves. Choose a weapon or an unarmed Strike; your chosen attack deals an extra [[/r 1d6[fire]]] damage for the next 1 minute.</p>",
+            "description": "<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> command</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You gain a +1 status bonus to Will saves. Choose a weapon or an unarmed Strike; your chosen attack deals an extra @Damage[1d6[fire]] damage for the next 1 minute.</p>",
             "name": "Effect: Oath of the Devoted"
         },
         "Effect: Mask of Allure": {
