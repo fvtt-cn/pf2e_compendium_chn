@@ -30882,7 +30882,7 @@
         },
         "Aerial Boomerang": {
             "name": "气流回旋镖 Aerial Boomerang",
-            "description": "<p>一道锐利风刃从你激射而出，范围@Template[type:line|distance:60]。区域中的每个生物受到@Damage[(floor((@actor.level-1)/2) +2)d4[slashing]]伤害，以@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免对抗你的职业DC。在线型范围的最后一个方格，回旋镖会在原地旋转，持续到你的下个回合结束。任何在该方格内结束他的回合的生物，必须对回旋镖进行豁免。</p>\n<p>在你的下个回合，你可以使用一个具有专注特征的单动作，让回旋镖返回你。它沿着直线从停留方格回到你的当前位置，和初始线型效果相同，然后涌动结束。你必须和回旋镖之间有效果线，并且距离它不能超过60尺。</p>\n<hr />\n<p><strong>等级 (+2)</strong> 伤害增加1d4。</p>"
+            "description": "<p>一道锐利风刃从你激射而出，范围@Template[type:line|distance:60]。区域中的每个生物受到@Damage[(floor((@actor.level -1)/2) +2)d4[slashing]]伤害，以@Check[type:reflex|dc:resolve(@actor.attributes.classDC.value)|basic:true]豁免对抗你的职业DC。在线型范围的最后一个方格，回旋镖会在原地旋转，持续到你的下个回合结束。任何在该方格内结束他的回合的生物，必须对回旋镖进行豁免。</p>\n<p>在你的下个回合，你可以使用一个具有专注特征的单动作，让回旋镖返回你。它沿着直线从停留方格回到你的当前位置，和初始线型效果相同，然后涌动结束。你必须和回旋镖之间有效果线，并且距离它不能超过60尺。</p>\n<hr />\n<p><strong>等级 (+2)</strong> 伤害增加1d4。</p>"
         },
         "Elemental Transformation": {
             "prerequisites": [
@@ -31294,7 +31294,7 @@
         },
         "Ash Strider": {
             "name": "灰烬行者 Ash Strider",
-            "description": "<p>你化为一团旋转的灰烬，然后行走一次。如果你有飞行速度，你可以飞行。该行动不会触发反应动作，你能穿过被占据的空间和微小的缝隙，你可以忽略任何不会阻碍烟雾的困难地形和高等困难地形。第一个被你穿过的生物受到@Damage[(floor((@actor.level-6)/2)+3)d6[fire]]伤害，尝试@Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true]豁免对抗你的职业DC。移动完成之后，灰烬会在你周围徘徊，让你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，直到你的下个回合开始。</p>\n<hr />\n<p><strong>等级 (+2)</strong> 伤害增加1d6。</p>"
+            "description": "<p>你化为一团旋转的灰烬，然后行走一次。如果你有飞行速度，你可以飞行。该行动不会触发反应动作，你能穿过被占据的空间和微小的缝隙，你可以忽略任何不会阻碍烟雾的困难地形和高等困难地形。第一个被你穿过的生物受到@Damage[(floor((@actor.level -6)/2)+3)d6[fire]]伤害，尝试@Check[type:reflex|dc:resolve(@actor.system.proficiencies.classDCs.kineticist.dc)|basic:true]豁免对抗你的职业DC。移动完成之后，灰烬会在你周围徘徊，让你获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}，直到你的下个回合开始。</p>\n<hr />\n<p><strong>等级 (+2)</strong> 伤害增加1d6。</p>"
         },
         "Swim Through Earth": {
             "name": "地行术 Swim Through Earth",
