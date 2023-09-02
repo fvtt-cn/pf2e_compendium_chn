@@ -268,16 +268,16 @@
                     "description": "<p>20尺</p>\n<hr />\n<p><strong>需求</strong> 盐生潜伏者位于水体中</p>\n<hr />\n<p><strong>效果</strong> 盐生潜伏者的含盐皮肤层层剥落，融入周围的水中。在灵光中结束回合的生物受到@Damage[2d6[acid]]伤害，@Check[type:reflex|dc:30|basic:true]豁免；带有两栖或水栖特征的生物免疫。</p>"
                 },
                 "Salty Clutch": {
-                    "name": "Salty Clutch",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The stalkers reach out to Grab their foes and drag them underwater. Each enemy in a @Template[type:emanation|distance:5] must succeed at a @Check[type:reflex|dc:33] save or be @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed} by the stalkers (or @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained} on a critical success). For the rest of the current turn, the saltborn stalkers can move toward water or in water without ending the grab, carrying any grabbed or restrained creatures along with them.</p>"
+                    "name": "盐之握 Salty Clutch",
+                    "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 盐生潜伏者尝试攫抓敌人并将其拖入水下。@Template[type:emanation|distance:5]范围内的所有敌人必须尝试@Check[type:reflex|dc:33]豁免，否则被盐生潜伏者@UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{擒抱 Grabbed}（大失败被@UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{束缚 Restrained}）。在当前回合的余下时间里，盐生潜伏者可以向水中移动，这不会导致攫抓结束，同时能带着任何被擒抱或束缚的生物和他们一同移动。</p>"
                 },
                 "Scour the Bones": {
-                    "name": "Scour the Bones",
-                    "description": "<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The saltborn stalkers use their teeth and claws to vivisect each enemy within 5 feet (@Check[type:reflex|dc:30|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[2d10[slashing]] damage</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(3d10+8)[slashing]] damage</p>\n<p><span class=\"pf2-icon\">3</span> @Damage[(3d10+16)[slashing]] damage</p>"
+                    "name": "刮骨 Scour the Bones",
+                    "description": "<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 盐生追踪者用牙和爪子剖开5尺内的每个敌人（@Check[type:reflex|dc:30|basic:true]豁免）。伤害取决于动作数量。</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[2d10[slashing]]伤害</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(3d10+8)[slashing]]伤害</p>\n<p><span class=\"pf2-icon\">3</span> @Damage[(3d10+16)[slashing]]伤害</p>"
                 },
                 "Troop Movement": {
-                    "name": "Troop Movement",
-                    "description": "<p>Whenever the saltborn stalkers Stride or Swim, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move. This works just like a Gargantuan creature moving; for instance, if any of the stalkers' squares enter difficult terrain, the extra movement cost applies to the whole troop.</p>"
+                    "name": "部队移动 Troop Movement",
+                    "description": "<p>当盐生潜伏者行走或游泳时，它首先以一个自由动作重整队列，聚集成20尺*20尺方格的队列（减去任何损失的方格），然后最多以满速度移动。它在移动时如同一个巨形生物那般；举例来说，如果任何方格进入了困难地形，则整个部队都需要花费额外的移动力。</p>"
                 }
             }
         },
@@ -1583,29 +1583,29 @@
             }
         },
         "Harvest Regiment": {
-            "name": "Harvest Regiment",
-            "publicNotes": "<p>Great fruiting trees grow in massive orderly rows in a region of the Plane of Wood called Armory Grove. Over the course of decades, a regiment tree's branches grow heavy, laden with fruits uncannily shaped like people. They're cultivated by retired warriors whose tireless work ensures that these fruits grow into a form suitable for battle. Their efforts instill tactical knowledge in these fruit warriors so they're prepared to fight as soon as they fall from the tree—which they do simultaneously, forming one battle-ready unit. Each soldier is equal in skill and similar in form, with a wooden outer shell that splits into portions as the flesh of the fruit inside ripens. A slain warrior contains seeds within its body that can slowly germinate in rich soil with enough water—or blood. Every battlefield can become a new garden.</p>",
-            "hp": "Thresholds: 90, 45",
+            "name": "收获战团 Harvest Regiment",
+            "publicNotes": "<p>巨大的果树长满了木元素位面一个叫做“军械库林”（Armory Grove）的地方。经过几十年的成长，这些战团树的树枝会变得很重，上面结满了人形的奇异果实。这些树木由退役的战士种植，他们不知疲倦的工作确保了这些果实长成适合战斗的形状。他们的努力向这些水果战士们灌输战术知识，这样这些果子就能在落地时立刻做好转斗准备——同时形成一个准备好的战斗单位。每个水果士兵的技能相同，外形相似，都有一个木制的外壳，随着水果成熟，外壳会裂成几瓣。被杀的战士体内含有种子，这些种子可以在水分或血液浸染的肥沃土壤中慢慢发芽。每个战场结束后都会变出一座新的花园。</p>",
+            "hp": "阙值: 90, 45",
             "items": {
                 "Juice Shower": {
-                    "name": "Juice Shower",
-                    "description": "<p>When a harvest regiment is critically hit or critically fails a save against a damaging effect, sticky fruit juices splash out. This affects all creatures in a @Template[type:emanation|distance:5]. A splashed creature takes a –10-foot status penalty to its Speeds and everything is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} to it. A creature can Interact to clear off the juice.</p>"
+                    "name": "果汁雨 Juice Shower",
+                    "description": "<p>当收获战团被重击，或者对伤害效果的豁免大失败时，黏性果汁会飞溅出来。这影响@Template[type:emanation|distance:5]范围所有生物。被溅射的生物速度有-10尺状态减值，并且所有事物对它@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{隐蔽 Concealed}。生物能以交互动作移除果汁。</p>"
                 },
                 "Raise Shells": {
-                    "name": "Raise Shells",
-                    "description": "<p>The troop raises fragments of their shells shaped like shields to gain a +2 circumstance bonus to AC until the start of their next turn.</p>"
+                    "name": "举起硬壳 Raise Shells",
+                    "description": "<p>部队举起形似盾牌的硬壳，AC+2环境加值，直到它的下个回合开始。</p>"
                 },
                 "Seed Volley": {
-                    "name": "Seed Volley",
-                    "description": "<p>The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a @Template[type:burst|distance:10] within 120 feet that deals @Damage[3d10[bludgeoning]] damage (@Check[type:reflex|dc:23|basic:true] save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
+                    "name": "种子齐射 Seed Volley",
+                    "description": "<p>收获战团从身体里吐出一连串坚硬种子。该齐射在120尺的@Template[type:burst|distance:10]范围造成@Damage[3d10[bludgeoning]]伤害（@Check[type:reflex|dc:23|basic:true]豁免）。当收获战团减少至8个或更少方格，该区域减少为@Template[type:burst|distance:5]。</p>"
                 },
                 "Shell Smash": {
-                    "name": "Shell Smash",
-                    "description": "<p><span class=\"pf2-icon\">1</span> to <span class=\"pf2-icon\">3</span></p>\n<p><strong>Frequency</strong> once per round;</p>\n<hr />\n<p><strong>Effect</strong> The harvest regiment engages in a coordinated melee attack against each enemy within 5 feet, with a @Check[type:reflex|dc:23|basic:true] save. The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[(1d8+3)[bludgeoning]] damage</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(2d8+9)[bludgeoning]] damage</p>\n<p><span class=\"pf2-icon\">3</span> @Damage[(2d8+12)[bludgeoning]] damage</p>"
+                    "name": "硬壳猛击 Shell Smash",
+                    "description": "<p><span class=\"pf2-icon\">1</span> 到 <span class=\"pf2-icon\">3</span></p>\n<p><strong>频率</strong> 每轮一次</p>\n<hr />\n<p><strong>效果</strong> 收获战团步调一致地对5尺内每个敌人进行近战攻击，@Check[type:reflex|dc:23|basic:true]豁免。伤害取决于动作数量。</p>\n<p><span class=\"pf2-icon\">1</span> @Damage[(1d8+3)[bludgeoning]]伤害</p>\n<p><span class=\"pf2-icon\">2</span> @Damage[(2d8+9)[bludgeoning]]伤害</p>\n<p><span class=\"pf2-icon\">3</span> @Damage[(2d8+12)[bludgeoning]]伤害</p>"
                 },
                 "Troop Movement": {
-                    "name": "Troop Movement",
-                    "description": "<p>Whenever the harvest regiment Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving.</p>"
+                    "name": "部队移动 Troop Movement",
+                    "description": "<p>当收获战团行走时，它首先以一个自由动作重整队列，聚集成20尺*20尺方格的队列（减去任何损失的方格），然后最多以满速度移动。它在移动时如同一个巨形生物那般；举例来说，如果任何方格进入了困难地形，则整个部队都需要花费额外的移动力。</p>"
                 }
             }
         },
